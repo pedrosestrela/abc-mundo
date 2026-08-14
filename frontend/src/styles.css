@@ -672,6 +672,58 @@ body {
   margin: 0 auto;
 }
 
+.drum-kit-wrap {
+  max-width: 480px;
+  margin: 16px auto;
+}
+
+.drum-kit-piece {
+  stroke-width: 2;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 0.08s ease, filter 0.08s ease;
+  cursor: pointer;
+}
+
+.drum-kit-piece.hit {
+  transform: scale(1.12);
+  filter: brightness(1.35);
+}
+
+.drum-kit-cymbal {
+  fill: var(--yellow, #f5c542);
+  fill-opacity: 0.55;
+  stroke: var(--yellow, #f5c542);
+}
+
+.drum-kit-stand {
+  stroke: var(--text, #333);
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+.drum-kit-tom {
+  fill: var(--blue, #3aa0ff);
+  fill-opacity: 0.5;
+  stroke: var(--blue, #3aa0ff);
+}
+
+.drum-kit-snare {
+  fill: var(--pink, #ff6b9d);
+  fill-opacity: 0.5;
+  stroke: var(--pink, #ff6b9d);
+}
+
+.drum-kit-kick {
+  fill: var(--purple, #8e6bd8);
+  fill-opacity: 0.5;
+  stroke: var(--purple, #8e6bd8);
+}
+
+.drum-kit-head {
+  fill-opacity: 0.85;
+}
+
 .instrument-visual-wrap {
   max-width: 480px;
   margin: 16px auto;
