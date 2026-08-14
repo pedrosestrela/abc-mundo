@@ -1,8 +1,14 @@
-// Tiny procedural background-music generator using the Web Audio API.
-// No audio files are used (avoids copyright issues) — a simple looping
-// major-scale arpeggio + soft bass note plays quietly under the sung lyrics.
-// The piano page also uses these helpers to play individual notes with a
-// choice of a few procedurally-synthesised instrument timbres.
+// Background-music generator + per-instrument note player for the Music
+// page. The piano now plays real recorded piano samples (Salamander Grand
+// Piano, CC BY 3.0 — see public/audio/piano/NOTICE.md for full provenance
+// and license) pitch-shifted across the keyboard, with an automatic
+// fallback to the original procedurally-synthesised piano timbre if a
+// sample fails to load (offline-before-cache-warms, blocked network, etc).
+// Every other instrument (and the looping background melody) still uses
+// layered/detuned Web Audio oscillator synthesis — no sample files exist
+// for them — tuned to approximate each instrument's real overtone
+// character (see the per-instrument functions below for the specific
+// technique used for each).
 
 // Two octaves, C4 to C6, so songs have room to move beyond one octave.
 export const NOTE_FREQS = {
@@ -39,6 +45,7 @@ export const INSTRUMENTS = [
   { id: "accordion", icon: "🪗" },
   { id: "concertina", icon: "🎐" },
   { id: "harp", icon: "🎶" },
+  { id: "viola", icon: "🎻" },
 ];
 
 // Simple tappable pads for the drum instrument — no musical scale, just a
@@ -113,6 +120,114 @@ function getSaturationCurve() {
   }
   saturationCurve = curve;
   return curve;
+}
+
+// --- Real piano samples (with synthesis fallback) --------------------------
+// One real recorded note every minor third (C, D#, F#, A) across octaves
+// 1-8 of a Salamander Grand Piano (CC BY 3.0 — see
+// public/audio/piano/NOTICE.md), bundled locally under public/audio/piano/
+// so playback works fully offline once cached (the app's service worker
+// cache-first-caches every same-origin GET, including these files, on
+// first fetch). Notes that fall between two recorded samples are pitch
+// shifted from the nearest one via AudioBufferSourceNode.playbackRate —
+// standard technique to cover a full keyboard from a sparse sample set.
+const PIANO_SAMPLE_BASE = "/audio/piano/";
+const SEMITONE_INDEX = { C: 0, "C#": 1, D: 2, "D#": 3, E: 4, F: 5, "F#": 6, G: 7, "G#": 8, A: 9, "A#": 10, B: 11 };
+
+function noteToMidi(note) {
+  const m = /^([A-G]#?)(\d)$/.exec(note);
+  if (!m) return null;
+  return Number(m[2]) * 12 + SEMITONE_INDEX[m[1]];
+}
+
+// Matches the actual files shipped in public/audio/piano/ (A0-A7, C1-C8,
+// D#1-D#7 as "Ds", F#1-F#7 as "Fs" — sharps spelled without "#" in the
+// filename to keep URLs simple).
+function buildPianoSampleList() {
+  const letters = [
+    { letter: "A", semitone: 9, octaves: [0, 1, 2, 3, 4, 5, 6, 7] },
+    { letter: "C", semitone: 0, octaves: [1, 2, 3, 4, 5, 6, 7, 8] },
+    { letter: "Ds", semitone: 3, octaves: [1, 2, 3, 4, 5, 6, 7] },
+    { letter: "Fs", semitone: 6, octaves: [1, 2, 3, 4, 5, 6, 7] },
+  ];
+  const list = [];
+  letters.forEach(({ letter, semitone, octaves }) => {
+    octaves.forEach((oct) => {
+      list.push({ midi: oct * 12 + semitone, file: `${letter}${oct}v10.mp3` });
+    });
+  });
+  return list.sort((a, b) => a.midi - b.midi);
+}
+const PIANO_SAMPLES = buildPianoSampleList();
+
+function nearestPianoSample(midi) {
+  let best = null;
+  let bestDist = Infinity;
+  for (const sample of PIANO_SAMPLES) {
+    const dist = Math.abs(sample.midi - midi);
+    if (dist < bestDist) {
+      bestDist = dist;
+      best = sample;
+    }
+  }
+  return best;
+}
+
+// file -> Promise<AudioBuffer|null>, so concurrent/repeated requests for the
+// same sample share one fetch+decode instead of re-downloading, and a
+// failure (offline before cache warms, decode error, etc.) is remembered as
+// "no sample" so callers fall back to synthesis instantly next time.
+const pianoBufferCache = new Map();
+
+function loadPianoBuffer(ctx, file) {
+  if (pianoBufferCache.has(file)) return pianoBufferCache.get(file);
+  const promise = fetch(PIANO_SAMPLE_BASE + file)
+    .then((res) => {
+      if (!res.ok) throw new Error("piano sample fetch failed: " + file);
+      return res.arrayBuffer();
+    })
+    .then((data) => new Promise((resolve, reject) => ctx.decodeAudioData(data, resolve, reject)))
+    .catch(() => null);
+  pianoBufferCache.set(file, promise);
+  return promise;
+}
+
+// Plays a real recorded piano note (pitch-shifted from the nearest sample),
+// falling back to the synthesized piano voice (playPianoNoteSynth, defined
+// below) if no AudioBuffer is available yet or the fetch/decode failed.
+function playPianoNoteSampled(ctx, note, freq, duration) {
+  const midi = noteToMidi(note);
+  const sample = midi != null ? nearestPianoSample(midi) : null;
+  if (!sample) {
+    playPianoNoteSynth(ctx, freq, duration);
+    return;
+  }
+  loadPianoBuffer(ctx, sample.file).then((buffer) => {
+    if (!buffer) {
+      playPianoNoteSynth(ctx, freq, duration);
+      return;
+    }
+    const now = ctx.currentTime;
+    const source = ctx.createBufferSource();
+    source.buffer = buffer;
+    source.playbackRate.value = Math.pow(2, (midi - sample.midi) / 12);
+
+    const gain = ctx.createGain();
+    const peak = 0.55;
+    const sustainEnd = now + Math.max(duration - 0.05, 0.05);
+    gain.gain.setValueAtTime(0, now);
+    gain.gain.linearRampToValueAtTime(peak, now + 0.006);
+    gain.gain.setValueAtTime(peak, sustainEnd);
+    // Real piano notes ring out naturally past the nominal duration instead
+    // of cutting off sharply — let the recorded decay tail play out.
+    gain.gain.exponentialRampToValueAtTime(0.0008, now + duration + 1.1);
+
+    source.connect(gain);
+    connectWithReverb(ctx, gain, 1);
+    source.start(now);
+    source.stop(now + duration + 1.3);
+    scheduledNodes.push(source);
+  });
 }
 
 // Builds a small "voice": 2-3 detuned oscillators (fundamental + slightly
@@ -202,10 +317,12 @@ function playNote(ctx, freq, startTime, duration, gainValue, type) {
 
 // --- Per-instrument single-note synthesis -----------------------------------
 
-function playPianoNote(ctx, freq, duration) {
-  // Warm and round: fundamental + detuned unison triangle + a soft sine
-  // sub-octave, gently filtered and saturated, with a proper ADSR envelope
-  // (soft attack, decay into a lower sustain, natural release).
+// Fallback synth voice used only when the real piano sample can't be
+// loaded/decoded (see playPianoNoteSampled above) — warm and round:
+// fundamental + detuned unison triangle + a soft sine sub-octave, gently
+// filtered and saturated, with a proper ADSR envelope (soft attack, decay
+// into a lower sustain, natural release).
+function playPianoNoteSynth(ctx, freq, duration) {
   const now = ctx.currentTime;
   const voice = buildVoice(ctx, freq, { type: "triangle", detuneCents: 6, subLevel: 0.22, filterFreq: 3800, satAmount: 0.1 });
   const gain = ctx.createGain();
@@ -307,6 +424,36 @@ function playViolinNote(ctx, freq, duration) {
   vibrato.stop(now + duration + 0.2);
   scheduledNodes.push(vibrato);
   startStopVoice(voice, now, now + duration + 0.2);
+}
+
+function playViolaNote(ctx, freq, duration) {
+  // Bowed string like the violin, but pitched and voiced to sound like the
+  // viola's darker, larger body: the same freq is dropped an octave first
+  // (violas are read/played roughly an octave below where a violin note of
+  // the same on-screen key would sit) plus a lower lowpass cutoff (less
+  // top-end shimmer than the violin), a slower/deeper vibrato, and a softer
+  // sub-octave layer for extra body weight.
+  const now = ctx.currentTime;
+  const violaFreq = freq / 2;
+  const voice = buildVoice(ctx, violaFreq, { type: "sawtooth", detuneCents: 7, subLevel: 0.28, filterFreq: 1900, satAmount: 0.12 });
+  const vibrato = ctx.createOscillator();
+  const vibratoGain = ctx.createGain();
+  vibrato.type = "sine";
+  vibrato.frequency.value = 5;
+  vibratoGain.gain.value = violaFreq * 0.007;
+  vibrato.connect(vibratoGain);
+  voice.oscillators.slice(0, 2).forEach((osc) => vibratoGain.connect(osc.frequency));
+  const gain = ctx.createGain();
+  gain.gain.setValueAtTime(0, now);
+  gain.gain.linearRampToValueAtTime(0.22, now + 0.2);
+  gain.gain.linearRampToValueAtTime(0.17, now + Math.max(duration - 0.1, 0.22));
+  gain.gain.linearRampToValueAtTime(0, now + duration + 0.18);
+  voice.output.connect(gain);
+  connectWithReverb(ctx, gain, 1);
+  vibrato.start(now);
+  vibrato.stop(now + duration + 0.22);
+  scheduledNodes.push(vibrato);
+  startStopVoice(voice, now, now + duration + 0.22);
 }
 
 function playCavaquinhoNote(ctx, freq, duration) {
@@ -497,6 +644,9 @@ export function playInstrumentNote(instrument, note, duration = 0.5) {
     case "violin":
       playViolinNote(ctx, freq, duration);
       break;
+    case "viola":
+      playViolaNote(ctx, freq, duration);
+      break;
     case "cavaquinho":
       playCavaquinhoNote(ctx, freq, duration);
       break;
@@ -517,7 +667,7 @@ export function playInstrumentNote(instrument, note, duration = 0.5) {
       break;
     case "piano":
     default:
-      playPianoNote(ctx, freq, duration);
+      playPianoNoteSampled(ctx, note, freq, duration);
       break;
   }
 }

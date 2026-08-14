@@ -51,7 +51,6 @@ function ledgerLineYs(note) {
 
 export default function MusicStaff({ note }) {
   const lines = Array.from({ length: STAFF_LINES }, (_, i) => BOTTOM_LINE_Y - i * LINE_GAP);
-  const topY = lines[lines.length - 1];
   const svgHeight = 220;
 
   const y = note ? noteY(note) : null;
@@ -71,10 +70,27 @@ export default function MusicStaff({ note }) {
           <line key={i} x1={STAFF_LEFT} y1={ly} x2={STAFF_RIGHT} y2={ly} className="staff-line" />
         ))}
 
-        {/* Treble clef glyph */}
-        <text x={16} y={topY + LINE_GAP * 2 + 6} className="staff-clef">
-          𝄞
-        </text>
+        {/* Treble (G) clef, hand-drawn as an SVG path rather than relying on
+            the Unicode musical symbol U+1D11E (𝄞) — that codepoint sits
+            outside the Basic Multilingual Plane and many mobile/webview
+            fonts have no glyph for it, so it was rendering as nothing (an
+            invisible/blank clef) on exactly the devices this children's app
+            targets. A drawn path always renders, in every browser/font. */}
+        <path
+          d={`M ${STAFF_LEFT - 34} ${BOTTOM_LINE_Y + 26}
+              C ${STAFF_LEFT - 42} ${BOTTOM_LINE_Y + 6}, ${STAFF_LEFT - 20} ${BOTTOM_LINE_Y - 4}, ${STAFF_LEFT - 20} ${BOTTOM_LINE_Y - LINE_GAP}
+              C ${STAFF_LEFT - 20} ${BOTTOM_LINE_Y - LINE_GAP * 2 - 4}, ${STAFF_LEFT - 40} ${BOTTOM_LINE_Y - LINE_GAP * 2 - 4}, ${STAFF_LEFT - 40} ${BOTTOM_LINE_Y - LINE_GAP * 3}
+              C ${STAFF_LEFT - 40} ${BOTTOM_LINE_Y - LINE_GAP * 4 + 4}, ${STAFF_LEFT - 16} ${BOTTOM_LINE_Y - LINE_GAP * 4 + 2}, ${STAFF_LEFT - 18} ${BOTTOM_LINE_Y - LINE_GAP * 5}
+              C ${STAFF_LEFT - 19} ${BOTTOM_LINE_Y - LINE_GAP * 5 - 10}, ${STAFF_LEFT - 30} ${BOTTOM_LINE_Y - LINE_GAP * 5 - 12}, ${STAFF_LEFT - 36} ${BOTTOM_LINE_Y - LINE_GAP * 5 - 4}
+              C ${STAFF_LEFT - 42} ${BOTTOM_LINE_Y - LINE_GAP * 5 + 4}, ${STAFF_LEFT - 38} ${BOTTOM_LINE_Y - LINE_GAP * 5 + 14}, ${STAFF_LEFT - 26} ${BOTTOM_LINE_Y - LINE_GAP * 5 + 20}
+              L ${STAFF_LEFT - 22} ${BOTTOM_LINE_Y - LINE_GAP * 3.4}
+              C ${STAFF_LEFT - 46} ${BOTTOM_LINE_Y - LINE_GAP * 2.6}, ${STAFF_LEFT - 48} ${BOTTOM_LINE_Y - LINE_GAP + 2}, ${STAFF_LEFT - 30} ${BOTTOM_LINE_Y - 2}
+              C ${STAFF_LEFT - 16} ${BOTTOM_LINE_Y - 10}, ${STAFF_LEFT - 16} ${BOTTOM_LINE_Y + 14}, ${STAFF_LEFT - 30} ${BOTTOM_LINE_Y + 22}
+              C ${STAFF_LEFT - 40} ${BOTTOM_LINE_Y + 27}, ${STAFF_LEFT - 46} ${BOTTOM_LINE_Y + 18}, ${STAFF_LEFT - 40} ${BOTTOM_LINE_Y + 10}
+              L ${STAFF_LEFT - 34} ${BOTTOM_LINE_Y + 26} Z`}
+          className="staff-clef-path"
+        />
+        <circle cx={STAFF_LEFT - 34} cy={BOTTOM_LINE_Y} r={3.4} className="staff-clef-dot" />
 
         {ledgers.map((ly, i) => (
           <line

@@ -706,8 +706,14 @@ body {
   stroke-width: 1.5;
 }
 
-.staff-clef {
-  font-size: 44px;
+.staff-clef-path {
+  fill: var(--purple);
+  stroke: var(--purple);
+  stroke-width: 3;
+  stroke-linejoin: round;
+}
+
+.staff-clef-dot {
   fill: var(--purple);
 }
 
