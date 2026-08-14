@@ -1,16 +1,43 @@
 // Tiny procedural background-music generator using the Web Audio API.
 // No audio files are used (avoids copyright issues) — a simple looping
 // major-scale arpeggio + soft bass note plays quietly under the sung lyrics.
+// The piano page also uses these helpers to play individual notes with a
+// choice of a few procedurally-synthesised instrument timbres.
 
+// Two octaves, C4 to C6, so songs have room to move beyond one octave.
 export const NOTE_FREQS = {
   C4: 261.63, "C#4": 277.18, D4: 293.66, "D#4": 311.13, E4: 329.63, F4: 349.23,
-  "F#4": 369.99, G4: 392.0, "G#4": 415.3, A4: 440.0, "A#4": 466.16, B4: 493.88, C5: 523.25,
+  "F#4": 369.99, G4: 392.0, "G#4": 415.3, A4: 440.0, "A#4": 466.16, B4: 493.88,
+  C5: 523.25, "C#5": 554.37, D5: 587.33, "D#5": 622.25, E5: 659.25, F5: 698.46,
+  "F#5": 739.99, G5: 783.99, "G#5": 830.61, A5: 880.0, "A#5": 932.33, B5: 987.77,
+  C6: 1046.5,
 };
 
-export const SOLFEGE_PT = { C4: "Dó", D4: "Ré", E4: "Mi", F4: "Fá", G4: "Sol", A4: "Lá", B4: "Si", C5: "Dó" };
+export const SOLFEGE_PT = {
+  C4: "Dó", D4: "Ré", E4: "Mi", F4: "Fá", G4: "Sol", A4: "Lá", B4: "Si",
+  C5: "Dó", D5: "Ré", E5: "Mi", F5: "Fá", G5: "Sol", A5: "Lá", B5: "Si",
+  C6: "Dó",
+};
 
 const MELODY = ["C4", "E4", "G4", "C5", "G4", "E4", "D4", "F4", "A4", "F4", "D4", "C4"];
 const BASS = ["C4", "G4"];
+
+// --- Instrument definitions -------------------------------------------------
+// Every instrument is a distinct Web Audio timbre: oscillator type + envelope
+// shape (attack/decay) + optional extras (pitch bend, vibrato, noise burst).
+// No sample files are used anywhere.
+
+export const INSTRUMENTS = [
+  { id: "piano", icon: "🎹" },
+  { id: "xylophone", icon: "🎼" },
+  { id: "guitar", icon: "🎸" },
+  { id: "flute", icon: "🪈" },
+  { id: "drum", icon: "🥁" },
+];
+
+// Simple tappable pads for the drum instrument — no musical scale, just a
+// few percussive hits, each a filtered noise burst at a different tone.
+export const DRUM_PADS = ["kick", "snare", "hihat", "tom"];
 
 let audioCtx = null;
 let scheduledNodes = [];
@@ -39,13 +66,171 @@ function playNote(ctx, freq, startTime, duration, gainValue, type) {
   scheduledNodes.push(osc);
 }
 
-export function playNoteOnce(note, duration = 0.5) {
+// --- Per-instrument single-note synthesis -----------------------------------
+
+function playPianoNote(ctx, freq, duration) {
+  // Triangle wave, medium attack/decay — warm and round, close to the
+  // background-music timbre already used elsewhere in the app.
+  const now = ctx.currentTime;
+  const osc = ctx.createOscillator();
+  const gain = ctx.createGain();
+  osc.type = "triangle";
+  osc.frequency.value = freq;
+  gain.gain.setValueAtTime(0, now);
+  gain.gain.linearRampToValueAtTime(0.22, now + 0.02);
+  gain.gain.exponentialRampToValueAtTime(0.001, now + duration);
+  osc.connect(gain);
+  gain.connect(ctx.destination);
+  osc.start(now);
+  osc.stop(now + duration + 0.05);
+  scheduledNodes.push(osc);
+}
+
+function playXylophoneNote(ctx, freq, duration) {
+  // Sine wave, fast decay, a small downward pitch bend right at the start —
+  // mimics the bright "clack" of a struck wooden bar.
+  const now = ctx.currentTime;
+  const osc = ctx.createOscillator();
+  const gain = ctx.createGain();
+  osc.type = "sine";
+  osc.frequency.setValueAtTime(freq * 1.06, now);
+  osc.frequency.exponentialRampToValueAtTime(freq, now + 0.06);
+  gain.gain.setValueAtTime(0, now);
+  gain.gain.linearRampToValueAtTime(0.3, now + 0.008);
+  gain.gain.exponentialRampToValueAtTime(0.001, now + Math.min(duration, 0.35));
+  osc.connect(gain);
+  gain.connect(ctx.destination);
+  osc.start(now);
+  osc.stop(now + 0.45);
+  scheduledNodes.push(osc);
+}
+
+function playGuitarNote(ctx, freq, duration) {
+  // Sawtooth wave with a very fast attack and a plucky exponential decay,
+  // filtered slightly to soften the buzz.
+  const now = ctx.currentTime;
+  const osc = ctx.createOscillator();
+  const filter = ctx.createBiquadFilter();
+  const gain = ctx.createGain();
+  osc.type = "sawtooth";
+  osc.frequency.value = freq;
+  filter.type = "lowpass";
+  filter.frequency.value = 2200;
+  gain.gain.setValueAtTime(0, now);
+  gain.gain.linearRampToValueAtTime(0.25, now + 0.006);
+  gain.gain.exponentialRampToValueAtTime(0.001, now + Math.max(duration, 0.4));
+  osc.connect(filter);
+  filter.connect(gain);
+  gain.connect(ctx.destination);
+  osc.start(now);
+  osc.stop(now + Math.max(duration, 0.4) + 0.05);
+  scheduledNodes.push(osc);
+}
+
+function playFluteNote(ctx, freq, duration) {
+  // Sine wave with a slower attack and a gentle vibrato (LFO modulating
+  // frequency), like a breathy sustained tone.
+  const now = ctx.currentTime;
+  const osc = ctx.createOscillator();
+  const gain = ctx.createGain();
+  const vibrato = ctx.createOscillator();
+  const vibratoGain = ctx.createGain();
+  osc.type = "sine";
+  osc.frequency.value = freq;
+  vibrato.type = "sine";
+  vibrato.frequency.value = 5.5;
+  vibratoGain.gain.value = freq * 0.012;
+  vibrato.connect(vibratoGain);
+  vibratoGain.connect(osc.frequency);
+  gain.gain.setValueAtTime(0, now);
+  gain.gain.linearRampToValueAtTime(0.2, now + 0.14);
+  gain.gain.linearRampToValueAtTime(0.16, now + Math.max(duration - 0.1, 0.15));
+  gain.gain.linearRampToValueAtTime(0, now + duration + 0.1);
+  osc.connect(gain);
+  gain.connect(ctx.destination);
+  vibrato.start(now);
+  osc.start(now);
+  vibrato.stop(now + duration + 0.15);
+  osc.stop(now + duration + 0.15);
+  scheduledNodes.push(osc, vibrato);
+}
+
+// Filtered white-noise burst used for both the drum pads and as the
+// "drum" instrument's stand-in for a musical note.
+function playNoiseBurst(ctx, { filterType = "bandpass", freq = 800, q = 1, duration = 0.15, gainValue = 0.35 } = {}) {
+  const now = ctx.currentTime;
+  const bufferSize = Math.ceil(ctx.sampleRate * duration);
+  const buffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate);
+  const data = buffer.getChannelData(0);
+  for (let i = 0; i < bufferSize; i++) {
+    data[i] = Math.random() * 2 - 1;
+  }
+  const noise = ctx.createBufferSource();
+  noise.buffer = buffer;
+  const filter = ctx.createBiquadFilter();
+  filter.type = filterType;
+  filter.frequency.value = freq;
+  filter.Q.value = q;
+  const gain = ctx.createGain();
+  gain.gain.setValueAtTime(gainValue, now);
+  gain.gain.exponentialRampToValueAtTime(0.001, now + duration);
+  noise.connect(filter);
+  filter.connect(gain);
+  gain.connect(ctx.destination);
+  noise.start(now);
+  noise.stop(now + duration + 0.02);
+  scheduledNodes.push(noise);
+}
+
+const DRUM_PAD_SOUNDS = {
+  kick: { filterType: "lowpass", freq: 120, q: 0.7, duration: 0.28, gainValue: 0.55 },
+  snare: { filterType: "highpass", freq: 900, q: 0.8, duration: 0.18, gainValue: 0.4 },
+  hihat: { filterType: "highpass", freq: 6000, q: 0.6, duration: 0.08, gainValue: 0.25 },
+  tom: { filterType: "bandpass", freq: 300, q: 1.2, duration: 0.22, gainValue: 0.45 },
+};
+
+export function playDrumPad(padId) {
+  const ctx = getContext();
+  if (!ctx) return;
+  if (ctx.state === "suspended") ctx.resume();
+  const sound = DRUM_PAD_SOUNDS[padId] || DRUM_PAD_SOUNDS.tom;
+  playNoiseBurst(ctx, sound);
+}
+
+// Plays a single pitched note with the given instrument's timbre. `drum`
+// falls back to a generic percussive hit (no pitch), since drums use pads
+// instead of a musical scale in the UI.
+export function playInstrumentNote(instrument, note, duration = 0.5) {
   const ctx = getContext();
   if (!ctx) return;
   if (ctx.state === "suspended") ctx.resume();
   const freq = NOTE_FREQS[note];
   if (!freq) return;
-  playNote(ctx, freq, ctx.currentTime, duration, 0.18, "triangle");
+
+  switch (instrument) {
+    case "xylophone":
+      playXylophoneNote(ctx, freq, duration);
+      break;
+    case "guitar":
+      playGuitarNote(ctx, freq, duration);
+      break;
+    case "flute":
+      playFluteNote(ctx, freq, duration);
+      break;
+    case "drum":
+      playNoiseBurst(ctx, { filterType: "bandpass", freq: freq / 2, q: 1, duration: 0.2, gainValue: 0.4 });
+      break;
+    case "piano":
+    default:
+      playPianoNote(ctx, freq, duration);
+      break;
+  }
+}
+
+// Kept for backwards compatibility with any existing callers — plays a note
+// with the classic piano timbre.
+export function playNoteOnce(note, duration = 0.5) {
+  playInstrumentNote("piano", note, duration);
 }
 
 export function isMusicAvailable() {

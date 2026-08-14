@@ -12,9 +12,51 @@
     "lyrics": ["Dó", "Ré", "Mi", "Fá", "Sol", "Lá", "Si", "Dó"]
   },
   {
+    "id": "escala-dupla",
+    "title": "A Escala Grande: Dó a Dó",
+    "notes": ["C4", "D4", "E4", "F4", "G4", "A4", "B4", "C5", "D5", "E5", "F5", "G5", "A5", "B5", "C6"],
+    "lyrics": ["Dó", "Ré", "Mi", "Fá", "Sol", "Lá", "Si", "Dó", "Ré", "Mi", "Fá", "Sol", "Lá", "Si", "Dó"]
+  },
+  {
     "id": "ode-alegria",
     "title": "Ode à Alegria (Beethoven, excerto)",
     "notes": ["E4", "E4", "F4", "G4", "G4", "F4", "E4", "D4"],
     "lyrics": ["la", "la", "la", "la", "la", "la", "la", "la"]
+  },
+  {
+    "id": "fumfum",
+    "title": "Fumfum e o Gigante",
+    "notes": ["C4", "C4", "C4", "D4", "E4", "E4", "D4", "C4", "E4", "E4", "D4", "D4", "C4"],
+    "lyrics": ["Fum", "fum", "fum", "vem", "aí", "o", "gi", "gan", "te", "grande", "e", "for", "te"]
+  },
+  {
+    "id": "papagaio-louro",
+    "title": "Papagaio Louro",
+    "notes": ["G4", "G4", "A4", "G4", "F4", "E4", "G4", "G4", "A4", "G4", "F4", "E4"],
+    "lyrics": ["Pa", "pa", "gai", "o", "lou", "ro", "pa", "pa", "gai", "o", "real", "hoje"]
+  },
+  {
+    "id": "carneirinho",
+    "title": "Carneirinho, Carneirão",
+    "notes": ["C4", "D4", "E4", "C4", "C4", "D4", "E4", "C4", "E4", "F4", "G4", "E4", "F4", "G4"],
+    "lyrics": ["Car", "nei", "ri", "nho", "car", "nei", "rão", "vem", "brin", "car", "co", "mi", "go", "já"]
+  },
+  {
+    "id": "mary-had-a-little-lamb",
+    "title": "Mary Had a Little Lamb",
+    "notes": ["E4", "D4", "C4", "D4", "E4", "E4", "E4", "D4", "D4", "D4", "E4", "G4", "G4"],
+    "lyrics": ["Mary", "had", "a", "little", "lamb", "little", "lamb", "little", "lamb", "Mary", "had", "a", "lamb"]
+  },
+  {
+    "id": "pombinha-branca",
+    "title": "Pombinha Branca",
+    "notes": ["C4", "E4", "G4", "G4", "A4", "G4", "F4", "E4", "D4", "C4"],
+    "lyrics": ["Pom", "bi", "nha", "bran", "ca", "vo", "a", "no", "cé", "u"]
+  },
+  {
+    "id": "arco-iris-notas",
+    "title": "Arco-Íris de Notas",
+    "notes": ["C4", "D4", "E4", "F4", "G4", "F4", "E4", "D4", "C4", "E4", "G4", "C5", "G4", "E4", "C4"],
+    "lyrics": ["Dó", "Ré", "Mi", "Fá", "Sol", "Fá", "Mi", "Ré", "Dó", "sobe", "e", "desce", "no", "ar", "co"]
   }
 ]
