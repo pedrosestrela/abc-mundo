@@ -9,6 +9,9 @@ export default function NavBar() {
       <NavLink to="/" end className="nav-link">
         🏠 {t("nav.home")}
       </NavLink>
+      <NavLink to="/" end className="nav-link" title={t("home.switchProfile")}>
+        🔄 {t("home.switchProfile")}
+      </NavLink>
       <NavLink to="/languages" className="nav-link">
         🌐 {t("nav.language")}
       </NavLink>

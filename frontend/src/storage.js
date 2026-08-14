@@ -4,21 +4,105 @@
 const PROFILE_KEY = "abcmundo.profile";
 const LANG_PAIR_KEY = "abcmundo.langPair";
 
-export function getProfile() {
+// --- Multi-profile support ---
+// Newer, richer storage: an array of profile objects plus a pointer to
+// whichever one is currently "active". `getProfile()`/`setProfile()` below
+// are kept as the stable public API every page already calls — internally
+// they now read/write whichever profile is active in this array, so ~20
+// call sites across the app need no changes at all.
+
+const PROFILES_KEY = "abcmundo.profiles";
+const ACTIVE_PROFILE_KEY = "abcmundo.activeProfileName";
+
+// Returns the array of saved profiles. On a device that still has the old
+// single-profile key (`abcmundo.profile`) but has never had the new
+// `abcmundo.profiles` array created yet, this transparently migrates that
+// one profile into the array (one-time, on first read) so existing users
+// never lose data. After migration it also makes that profile the active
+// one, matching pre-migration behaviour exactly.
+export function getProfiles() {
   try {
-    const raw = localStorage.getItem(PROFILE_KEY);
-    return raw ? JSON.parse(raw) : null;
+    const raw = localStorage.getItem(PROFILES_KEY);
+    if (raw) return JSON.parse(raw);
+  } catch {
+    // fall through to migration attempt below
+  }
+
+  // No profiles array yet — check for an old-style single profile to migrate.
+  try {
+    const oldRaw = localStorage.getItem(PROFILE_KEY);
+    if (oldRaw) {
+      const oldProfile = JSON.parse(oldRaw);
+      if (oldProfile) {
+        const migrated = [oldProfile];
+        localStorage.setItem(PROFILES_KEY, JSON.stringify(migrated));
+        if (!localStorage.getItem(ACTIVE_PROFILE_KEY) && oldProfile.name) {
+          localStorage.setItem(ACTIVE_PROFILE_KEY, oldProfile.name);
+        }
+        return migrated;
+      }
+    }
+  } catch {
+    // ignore, fall through to empty array
+  }
+
+  return [];
+}
+
+function saveProfiles(profiles) {
+  try {
+    localStorage.setItem(PROFILES_KEY, JSON.stringify(profiles));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+// Adds (or, if a profile with the same name exists, replaces) a profile in
+// the multi-profile array. Does not change which profile is active.
+export function addProfile(profile) {
+  const profiles = getProfiles();
+  const idx = profiles.findIndex((p) => p.name === profile.name);
+  if (idx >= 0) {
+    profiles[idx] = profile;
+  } else {
+    profiles.push(profile);
+  }
+  saveProfiles(profiles);
+  return profiles;
+}
+
+export function getActiveProfileName() {
+  try {
+    return localStorage.getItem(ACTIVE_PROFILE_KEY) || null;
   } catch {
     return null;
   }
 }
 
-export function setProfile(profile) {
+export function setActiveProfileName(name) {
   try {
-    localStorage.setItem(PROFILE_KEY, JSON.stringify(profile));
+    localStorage.setItem(ACTIVE_PROFILE_KEY, name);
   } catch {
     // ignore quota / privacy-mode errors
   }
+}
+
+// Backward-compatible API used unchanged by ~20 pages across the app.
+// Internally these now resolve to whichever profile is "active" in the
+// new multi-profile store, so switching profiles just works everywhere
+// without touching any of those call sites.
+export function getProfile() {
+  const profiles = getProfiles();
+  if (profiles.length === 0) return null;
+
+  const activeName = getActiveProfileName();
+  const active = activeName ? profiles.find((p) => p.name === activeName) : null;
+  return active || profiles[0];
+}
+
+export function setProfile(profile) {
+  addProfile(profile);
+  setActiveProfileName(profile.name);
 }
 
 export function getLangPair() {

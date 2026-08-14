@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { getProfile, setProfile, pingProgress } from "../storage.js";
+import { getProfiles, setProfile, pingProgress } from "../storage.js";
 
 const AVATARS = [
   "🦸", "🦸‍♀️", "🦹", "🧙", "🧚", "🧞", "🥷", "🤖",
@@ -12,22 +12,64 @@ const AGES = [5, 6, 7, 8, 9, 10];
 export default function Home() {
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const existing = getProfile();
-  const [name, setName] = useState(existing?.name || "");
-  const [avatar, setAvatar] = useState(existing?.avatar || AVATARS[0]);
-  const [age, setAge] = useState(existing?.age || AGES[0]);
+  const profiles = getProfiles();
+  const [showForm, setShowForm] = useState(profiles.length === 0);
+  const [name, setName] = useState("");
+  const [avatar, setAvatar] = useState(AVATARS[0]);
+  const [age, setAge] = useState(AGES[0]);
 
-  function handleStart() {
-    const profile = { name: name.trim() || "Explorer", avatar, age };
+  function selectProfile(profile) {
     setProfile(profile);
     pingProgress({ profileName: profile.name, module: "home", event: "profile_selected" });
     navigate("/languages");
+  }
+
+  function handleStart() {
+    const profile = { name: name.trim() || "Explorer", avatar, age };
+    selectProfile(profile);
+  }
+
+  if (!showForm) {
+    return (
+      <div className="page home-page">
+        <h1 className="app-title">ABC Mundo 🌍✨</h1>
+        <h2>{t("home.pickExistingProfile")}</h2>
+
+        <div className="avatar-grid">
+          {profiles.map((p) => (
+            <button
+              key={p.name}
+              type="button"
+              className="profile-btn"
+              onClick={() => selectProfile(p)}
+            >
+              <span className="profile-btn-avatar">{p.avatar}</span>
+              <span>{p.name}</span>
+            </button>
+          ))}
+          <button
+            type="button"
+            className="profile-btn new-profile-btn"
+            onClick={() => setShowForm(true)}
+          >
+            <span className="profile-btn-avatar">➕</span>
+            <span>{t("home.addNewProfile")}</span>
+          </button>
+        </div>
+      </div>
+    );
   }
 
   return (
     <div className="page home-page">
       <h1 className="app-title">ABC Mundo 🌍✨</h1>
       <h2>{t("home.pickProfile")}</h2>
+
+      {profiles.length > 0 && (
+        <button type="button" className="nav-link" onClick={() => setShowForm(false)}>
+          ← {t("home.switchProfile")}
+        </button>
+      )}
 
       <label className="field">
         {t("home.name")}
