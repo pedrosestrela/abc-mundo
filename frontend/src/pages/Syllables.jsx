@@ -208,11 +208,31 @@ export default function Syllables() {
                     <span className="reading-word">{m.exampleWord}</span>
                     <SpeakButton text={m.hint} langCode={pair.mother} />
                   </div>
+                  {Array.isArray(m.syllables) && m.syllables.length >= 2 && (
+                    <div className="syllable-breakdown">
+                      {m.syllables.map((chunk, idx) => (
+                        <React.Fragment key={idx}>
+                          {idx > 0 && <span className="syllable-sep">-</span>}
+                          <span className="syllable-part">{chunk}</span>
+                        </React.Fragment>
+                      ))}
+                    </div>
+                  )}
                   <div className="reading-word-row secondary">
                     <span className="syllable-badge secondary">{s.syllable}</span>
                     <span className="reading-word">{s.exampleWord}</span>
                     <SpeakButton text={s.hint} langCode={pair.secondary} />
                   </div>
+                  {Array.isArray(s.syllables) && s.syllables.length >= 2 && (
+                    <div className="syllable-breakdown secondary">
+                      {s.syllables.map((chunk, idx) => (
+                        <React.Fragment key={idx}>
+                          {idx > 0 && <span className="syllable-sep">-</span>}
+                          <span className="syllable-part">{chunk}</span>
+                        </React.Fragment>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
             );
