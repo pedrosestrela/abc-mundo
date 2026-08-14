@@ -7,6 +7,7 @@ import SpeakButton from "../components/SpeakButton.jsx";
 import MusicStaff from "../components/MusicStaff.jsx";
 import HelpButton from "../components/HelpButton.jsx";
 import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
+import InstrumentVisual, { getInstrumentFamily } from "../components/InstrumentVisual.jsx";
 
 const WHITE_LETTERS = ["C", "D", "E", "F", "G", "A", "B"];
 
@@ -52,6 +53,31 @@ function randomFrom(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
+// Ear-training rounds (levels 1-3) pick a random pitched instrument to play
+// each round on, instead of always using the piano — the drum has no pitch
+// so it's excluded from this pool.
+function pickPitchedInstrument() {
+  const pool = INSTRUMENTS.filter((i) => i.id !== "drum");
+  return randomFrom(pool).id;
+}
+
+// Ordered from most to least contrasting so that widening the choice pool
+// (as the child succeeds) keeps introducing progressively subtler timbre
+// differences, mirroring the level-3 "which note" widening.
+const WHICH_INSTRUMENT_POOL = [
+  "piano",
+  "drum",
+  "flute",
+  "violin",
+  "guitar",
+  "accordion",
+  "xylophone",
+  "harp",
+  "cavaquinho",
+  "portugueseGuitar",
+  "concertina",
+];
+
 // Builds a round for level 1 (same/different): 50% chance of two identical
 // notes, otherwise two notes at least a third apart so the difference is
 // clearly audible to a young child.
@@ -63,7 +89,7 @@ function buildLevel1Round() {
     const others = EAR_SCALE.filter((n) => n !== a);
     b = randomFrom(others);
   }
-  return { a, b, answer: same ? "same" : "different" };
+  return { a, b, answer: same ? "same" : "different", instrument: pickPitchedInstrument() };
 }
 
 // Builds a round for level 2 (low/high): two distinct notes, answer is
@@ -73,7 +99,7 @@ function buildLevel2Round() {
   let b = randomFrom(EAR_SCALE);
   while (b === a) b = randomFrom(EAR_SCALE);
   const answer = NOTE_FREQS[a] > NOTE_FREQS[b] ? "first" : "second";
-  return { a, b, answer };
+  return { a, b, answer, instrument: pickPitchedInstrument() };
 }
 
 // Builds a round for level 3 (which note?): picks a target note from the
@@ -82,7 +108,17 @@ function buildLevel2Round() {
 function buildLevel3Round(choiceCount) {
   const pool = EAR_SCALE.slice(0, choiceCount);
   const target = randomFrom(pool);
-  return { target, options: pool };
+  return { target, options: pool, instrument: pickPitchedInstrument() };
+}
+
+// Builds a round for level 5 ("Que instrumento é este?"): picks a target
+// instrument from the first `choiceCount` entries of WHICH_INSTRUMENT_POOL
+// (most contrasting first), plus a random note to play it on.
+function buildLevel5Round(choiceCount) {
+  const pool = WHICH_INSTRUMENT_POOL.slice(0, choiceCount);
+  const targetInstrument = randomFrom(pool);
+  const note = randomFrom(EAR_SCALE);
+  return { targetInstrument, note, options: pool };
 }
 
 // Builds a round for level 4 (melody recall): a short 3-4 note snippet
@@ -115,6 +151,7 @@ export default function Music({ defaultInstrument = "piano" }) {
   const [earLevel, setEarLevel] = useState(1);
   const [earStreak, setEarStreak] = useState(0);
   const [earLevel3ChoiceCount, setEarLevel3ChoiceCount] = useState(2);
+  const [earLevel5ChoiceCount, setEarLevel5ChoiceCount] = useState(3);
   const [earRound, setEarRound] = useState(null);
   const [earResult, setEarResult] = useState(null); // null | "correct" | "wrong"
   const [earMelodyInput, setEarMelodyInput] = useState([]);
@@ -125,7 +162,8 @@ export default function Music({ defaultInstrument = "piano" }) {
 
   function pingEar(event) {
     const profile = getProfile();
-    pingProgress({ profileName: profile?.name, module: "music", event: `ear_training_level${earLevel}:${event}` });
+    const eventModule = earLevel === 5 ? "ear_training_instrument" : `ear_training_level${earLevel}`;
+    pingProgress({ profileName: profile?.name, module: "music", event: `${eventModule}:${event}` });
   }
 
   function registerEarResult(correct) {
@@ -141,7 +179,12 @@ export default function Music({ defaultInstrument = "piano" }) {
           setEarLevel3ChoiceCount((c) => Math.min(EAR_SCALE.length, c + 1));
         }
       }
-      if (nextStreak >= 3 && unlockedLevel <= earLevel && earLevel < 4) {
+      if (earLevel === 5) {
+        if (nextStreak % 3 === 0) {
+          setEarLevel5ChoiceCount((c) => Math.min(WHICH_INSTRUMENT_POOL.length, c + 1));
+        }
+      }
+      if (nextStreak >= 3 && unlockedLevel <= earLevel && earLevel < 5) {
         setUnlockedLevel(earLevel + 1);
       }
     } else {
@@ -156,7 +199,8 @@ export default function Music({ defaultInstrument = "piano" }) {
     if (level === 1) setEarRound(buildLevel1Round());
     else if (level === 2) setEarRound(buildLevel2Round());
     else if (level === 3) setEarRound(buildLevel3Round(earLevel3ChoiceCount));
-    else setEarRound(buildLevel4Round());
+    else if (level === 4) setEarRound(buildLevel4Round());
+    else setEarRound(buildLevel5Round(earLevel5ChoiceCount));
   }
 
   function handleSelectEarLevel(level) {
@@ -167,14 +211,16 @@ export default function Music({ defaultInstrument = "piano" }) {
   function playEarRound() {
     if (!earRound) return;
     if (earLevel === 1 || earLevel === 2) {
-      playInstrumentNote("piano", earRound.a, 0.5);
-      window.setTimeout(() => playInstrumentNote("piano", earRound.b, 0.5), 650);
+      playInstrumentNote(earRound.instrument, earRound.a, 0.5);
+      window.setTimeout(() => playInstrumentNote(earRound.instrument, earRound.b, 0.5), 650);
     } else if (earLevel === 3) {
-      playInstrumentNote("piano", earRound.target, 0.6);
+      playInstrumentNote(earRound.instrument, earRound.target, 0.6);
     } else if (earLevel === 4) {
       earRound.sequence.forEach((note, i) => {
         window.setTimeout(() => playInstrumentNote("piano", note, 0.45), i * 550);
       });
+    } else if (earLevel === 5) {
+      playInstrumentNote(earRound.targetInstrument, earRound.note, 0.6);
     }
   }
 
@@ -186,6 +232,11 @@ export default function Music({ defaultInstrument = "piano" }) {
   function handleEarNoteChoice(note) {
     if (!earRound || earResult) return;
     registerEarResult(note === earRound.target);
+  }
+
+  function handleEarInstrumentChoice(instrumentId) {
+    if (!earRound || earResult) return;
+    registerEarResult(instrumentId === earRound.targetInstrument);
   }
 
   function handleEarMelodyTap(note) {
@@ -299,7 +350,7 @@ export default function Music({ defaultInstrument = "piano" }) {
           <p className="page-intro">{t("modules.earTrainingIntro")}</p>
 
           <div className="phonics-tabs">
-            {[1, 2, 3, 4].map((level) => (
+            {[1, 2, 3, 4, 5].map((level) => (
               <button
                 key={level}
                 type="button"
@@ -396,6 +447,25 @@ export default function Music({ defaultInstrument = "piano" }) {
                       </span>
                     ))}
                   </p>
+                </div>
+              )}
+
+              {earLevel === 5 && earRound && (
+                <div className="ear-answers">
+                  {earRound.options.map((instId) => {
+                    const inst = INSTRUMENTS.find((i) => i.id === instId);
+                    return (
+                      <button
+                        key={instId}
+                        type="button"
+                        className="big-btn"
+                        disabled={!!earResult}
+                        onClick={() => handleEarInstrumentChoice(instId)}
+                      >
+                        {inst?.icon} {t(`modules.pianoInstrument_${instId}`)}
+                      </button>
+                    );
+                  })}
                 </div>
               )}
 
@@ -501,33 +571,39 @@ export default function Music({ defaultInstrument = "piano" }) {
         </div>
       ) : (
         <>
-          <div className="piano-wrap">
-            <div className="piano-white-keys">
-              {WHITE_KEYS.map((note) => (
-                <button
-                  key={note}
-                  type="button"
-                  className={"piano-key white" + (nextNote === note ? " highlight" : "")}
-                  onClick={() => handleKeyPress(note)}
-                >
-                  <span className="piano-key-label">{SOLFEGE_PT[note] || note}</span>
-                </button>
-              ))}
+          {getInstrumentFamily(instrument) ? (
+            <div className="instrument-visual-wrap">
+              <InstrumentVisual instrument={instrument} activeNote={activeNote} onPress={handleKeyPress} />
             </div>
-            <div className="piano-black-keys">
-              {BLACK_KEYS.map((key) => (
-                <button
-                  key={key.note}
-                  type="button"
-                  style={{
-                    left: `${(key.offset + 1) * (100 / WHITE_KEY_COUNT) - 100 / (2 * WHITE_KEY_COUNT)}%`,
-                  }}
-                  className={"piano-key black" + (nextNote === key.note ? " highlight" : "")}
-                  onClick={() => handleKeyPress(key.note)}
-                />
-              ))}
+          ) : (
+            <div className="piano-wrap">
+              <div className="piano-white-keys">
+                {WHITE_KEYS.map((note) => (
+                  <button
+                    key={note}
+                    type="button"
+                    className={"piano-key white" + (nextNote === note ? " highlight" : "")}
+                    onClick={() => handleKeyPress(note)}
+                  >
+                    <span className="piano-key-label">{SOLFEGE_PT[note] || note}</span>
+                  </button>
+                ))}
+              </div>
+              <div className="piano-black-keys">
+                {BLACK_KEYS.map((key) => (
+                  <button
+                    key={key.note}
+                    type="button"
+                    style={{
+                      left: `${(key.offset + 1) * (100 / WHITE_KEY_COUNT) - 100 / (2 * WHITE_KEY_COUNT)}%`,
+                    }}
+                    className={"piano-key black" + (nextNote === key.note ? " highlight" : "")}
+                    onClick={() => handleKeyPress(key.note)}
+                  />
+                ))}
+              </div>
             </div>
-          </div>
+          )}
 
           <h2 className="songs-heading">{t("modules.pianoSongsHeading")}</h2>
           <div className="song-list">
