@@ -241,6 +241,22 @@ import thinkingZh from "./thinking.zh.json";
 import thinkingEs from "./thinking.es.json";
 import thinkingIt from "./thinking.it.json";
 
+import newsroomPt from "./newsroom.pt.json";
+import newsroomEn from "./newsroom.en.json";
+import newsroomDe from "./newsroom.de.json";
+import newsroomFr from "./newsroom.fr.json";
+import newsroomZh from "./newsroom.zh.json";
+import newsroomEs from "./newsroom.es.json";
+import newsroomIt from "./newsroom.it.json";
+
+import communicationPt from "./communication.pt.json";
+import communicationEn from "./communication.en.json";
+import communicationDe from "./communication.de.json";
+import communicationFr from "./communication.fr.json";
+import communicationZh from "./communication.zh.json";
+import communicationEs from "./communication.es.json";
+import communicationIt from "./communication.it.json";
+
 export const SUPPORTED_LANGUAGES = [
   { code: "pt", label: "Português", flag: "🇵🇹" },
   { code: "en", label: "English", flag: "🇬🇧" },
@@ -276,6 +292,8 @@ const SHOPPING = { pt: shoppingPt, en: shoppingEn, de: shoppingDe, fr: shoppingF
 const AD_LITERACY = { pt: adLiteracyPt, en: adLiteracyEn, de: adLiteracyDe, fr: adLiteracyFr, zh: adLiteracyZh, es: adLiteracyEs, it: adLiteracyIt };
 const FINANCIAL_ACTIVITIES = { pt: financialActivitiesPt, en: financialActivitiesEn, de: financialActivitiesDe, fr: financialActivitiesFr, zh: financialActivitiesZh, es: financialActivitiesEs, it: financialActivitiesIt };
 const THINKING = { pt: thinkingPt, en: thinkingEn, de: thinkingDe, fr: thinkingFr, zh: thinkingZh, es: thinkingEs, it: thinkingIt };
+const NEWSROOM = { pt: newsroomPt, en: newsroomEn, de: newsroomDe, fr: newsroomFr, zh: newsroomZh, es: newsroomEs, it: newsroomIt };
+const COMMUNICATION = { pt: communicationPt, en: communicationEn, de: communicationDe, fr: communicationFr, zh: communicationZh, es: communicationEs, it: communicationIt };
 const RHYMES = { pt: rhymesPt, en: rhymesEn, de: rhymesDe, fr: rhymesFr, zh: rhymesZh, es: rhymesEs, it: rhymesIt };
 const HOUSE_SYSTEMS = { pt: houseSystemsPt, en: houseSystemsEn, de: houseSystemsDe, fr: houseSystemsFr, zh: houseSystemsZh, es: houseSystemsEs, it: houseSystemsIt };
 const CITY_SYSTEMS = { pt: citySystemsPt, en: citySystemsEn, de: citySystemsDe, fr: citySystemsFr, zh: citySystemsZh, es: citySystemsEs, it: citySystemsIt };
@@ -393,6 +411,14 @@ export function getFinancialActivities(langCode) {
 
 export function getThinking(langCode) {
   return THINKING[langCode] || THINKING.pt;
+}
+
+export function getNewsroom(langCode) {
+  return NEWSROOM[langCode] || NEWSROOM.pt;
+}
+
+export function getCommunication(langCode) {
+  return COMMUNICATION[langCode] || COMMUNICATION.pt;
 }
 
 export function getHouseSystems(langCode) {

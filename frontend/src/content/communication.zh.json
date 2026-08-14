@@ -1,0 +1,50 @@
+[
+  {
+    "id": "cm-sandes",
+    "emoji": "🥪",
+    "task": "教机器人怎么做一份芝士火腿三明治。",
+    "steps": [
+      { "id": "cm-sandes-1", "precise": "拿两片面包。", "vague": "拿点面包。", "vagueQuestion": "几片？什么样的面包？" },
+      { "id": "cm-sandes-2", "precise": "在一片面包上放一片芝士和一片火腿。", "vague": "放点芝士。", "vagueQuestion": "芝士放在哪里？只放芝士，还是也要放别的？" },
+      { "id": "cm-sandes-3", "precise": "盖上另一片面包，再把三明治切成两半。", "vague": "把三明治合上。", "vagueQuestion": "怎么合上？合上之后要不要切开？" }
+    ],
+    "distractors": ["打开电视。", "去外面玩。"],
+    "successMessage": "机器人做出了完美的三明治！🥪✅"
+  },
+  {
+    "id": "cm-brinquedo",
+    "emoji": "🧸",
+    "task": "教机器人怎么收拾一个玩具。",
+    "steps": [
+      { "id": "cm-brinquedo-1", "precise": "找到玩具箱。", "vague": "去拿箱子。", "vagueQuestion": "哪个箱子？在哪里？" },
+      { "id": "cm-brinquedo-2", "precise": "捡起地上的那个玩具。", "vague": "拿起玩具。", "vagueQuestion": "哪个玩具？它在哪里？" },
+      { "id": "cm-brinquedo-3", "precise": "把玩具放进箱子里，然后盖上盖子。", "vague": "把玩具收起来。", "vagueQuestion": "收到哪里？要盖上盖子吗？" }
+    ],
+    "distractors": ["刷牙。", "穿上外套。"],
+    "successMessage": "机器人把玩具收拾得完美无缺！🧸✅"
+  },
+  {
+    "id": "cm-dentes",
+    "emoji": "🦷",
+    "task": "教机器人怎么刷牙。",
+    "steps": [
+      { "id": "cm-dentes-1", "precise": "在牙刷上挤一些牙膏。", "vague": "用牙刷。", "vagueQuestion": "要先在牙刷上放点什么吗？" },
+      { "id": "cm-dentes-2", "precise": "用轻柔的动作刷全部牙齿，刷两分钟。", "vague": "刷牙齿。", "vagueQuestion": "刷多长时间？牙刷要怎么动？" },
+      { "id": "cm-dentes-3", "precise": "用水漱口，然后清洗牙刷。", "vague": "把一切洗干净。", "vagueQuestion": "洗什么？嘴巴、牙刷，还是两个都洗？" }
+    ],
+    "distractors": ["整理床铺。", "吃早餐。"],
+    "successMessage": "机器人把牙刷得完美无缺！🦷✨"
+  },
+  {
+    "id": "cm-casaco",
+    "emoji": "🧥",
+    "task": "教机器人怎么穿上外套。",
+    "steps": [
+      { "id": "cm-casaco-1", "precise": "找到挂在衣钩上的外套。", "vague": "去拿外套。", "vagueQuestion": "外套在哪里？" },
+      { "id": "cm-casaco-2", "precise": "把一只手臂伸进外套的每一个袖子里。", "vague": "穿上外套。", "vagueQuestion": "怎么穿？一次一只手臂，还是两只一起？" },
+      { "id": "cm-casaco-3", "precise": "拉上外套的拉链或扣上纽扣。", "vague": "把外套合上。", "vagueQuestion": "用什么合上？拉链、纽扣，还是魔术贴？" }
+    ],
+    "distractors": ["收拾玩具。", "吃早餐。"],
+    "successMessage": "机器人把外套穿得完美无缺！🧥✅"
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "id": "cm-sandes",
+    "emoji": "🥪",
+    "task": "Explica ao robô como fazer uma sanduíche de queijo e fiambre.",
+    "steps": [
+      {
+        "id": "cm-sandes-1",
+        "precise": "Pega em duas fatias de pão.",
+        "vague": "Pega em pão.",
+        "vagueQuestion": "Quantas fatias? Que tipo de pão?"
+      },
+      {
+        "id": "cm-sandes-2",
+        "precise": "Põe uma fatia de queijo e uma fatia de fiambre em cima de uma fatia de pão.",
+        "vague": "Põe queijo.",
+        "vagueQuestion": "Onde ponho o queijo? Só queijo, ou mais alguma coisa?"
+      },
+      {
+        "id": "cm-sandes-3",
+        "precise": "Tapa com a outra fatia de pão e corta a sanduíche ao meio.",
+        "vague": "Fecha a sanduíche.",
+        "vagueQuestion": "Como fecho? E depois corto, ou não?"
+      }
+    ],
+    "distractors": ["Liga a televisão.", "Vai brincar lá fora."],
+    "successMessage": "O robô fez a sanduíche perfeita! 🥪✅"
+  },
+  {
+    "id": "cm-brinquedo",
+    "emoji": "🧸",
+    "task": "Explica ao robô como arrumar um brinquedo.",
+    "steps": [
+      {
+        "id": "cm-brinquedo-1",
+        "precise": "Encontra a caixa dos brinquedos.",
+        "vague": "Vai buscar a caixa.",
+        "vagueQuestion": "Qual caixa? Onde está?"
+      },
+      {
+        "id": "cm-brinquedo-2",
+        "precise": "Pega no brinquedo que está no chão.",
+        "vague": "Pega no brinquedo.",
+        "vagueQuestion": "Qual brinquedo? Onde está ele?"
+      },
+      {
+        "id": "cm-brinquedo-3",
+        "precise": "Coloca o brinquedo dentro da caixa e fecha a tampa.",
+        "vague": "Guarda o brinquedo.",
+        "vagueQuestion": "Guardo onde? Fecho a tampa ou não?"
+      }
+    ],
+    "distractors": ["Escova os dentes.", "Veste o casaco."],
+    "successMessage": "O robô arrumou o brinquedo na perfeição! 🧸✅"
+  },
+  {
+    "id": "cm-dentes",
+    "emoji": "🦷",
+    "task": "Explica ao robô como escovar os dentes.",
+    "steps": [
+      {
+        "id": "cm-dentes-1",
+        "precise": "Põe pasta de dentes na escova.",
+        "vague": "Usa a escova.",
+        "vagueQuestion": "Ponho alguma coisa na escova primeiro?"
+      },
+      {
+        "id": "cm-dentes-2",
+        "precise": "Escova todos os dentes com movimentos suaves, durante dois minutos.",
+        "vague": "Escova os dentes.",
+        "vagueQuestion": "Durante quanto tempo? Como devo mexer a escova?"
+      },
+      {
+        "id": "cm-dentes-3",
+        "precise": "Enxagua a boca com água e limpa a escova.",
+        "vague": "Lava tudo.",
+        "vagueQuestion": "Lavo o quê? A boca, a escova, ou as duas coisas?"
+      }
+    ],
+    "distractors": ["Faz a cama.", "Come o pequeno-almoço."],
+    "successMessage": "O robô escovou os dentes na perfeição! 🦷✨"
+  },
+  {
+    "id": "cm-casaco",
+    "emoji": "🧥",
+    "task": "Explica ao robô como vestir um casaco.",
+    "steps": [
+      {
+        "id": "cm-casaco-1",
+        "precise": "Encontra o casaco pendurado no cabide.",
+        "vague": "Vai buscar o casaco.",
+        "vagueQuestion": "Onde está o casaco?"
+      },
+      {
+        "id": "cm-casaco-2",
+        "precise": "Enfia um braço em cada manga do casaco.",
+        "vague": "Veste o casaco.",
+        "vagueQuestion": "Como visto? Um braço de cada vez, ou os dois ao mesmo tempo?"
+      },
+      {
+        "id": "cm-casaco-3",
+        "precise": "Fecha o fecho ou os botões do casaco.",
+        "vague": "Fecha o casaco.",
+        "vagueQuestion": "Fecho com quê? Um fecho de correr, botões, ou velcro?"
+      }
+    ],
+    "distractors": ["Arruma os brinquedos.", "Toma o pequeno-almoço."],
+    "successMessage": "O robô vestiu o casaco na perfeição! 🧥✅"
+  }
+]
