@@ -47,6 +47,45 @@ export function getDifficultyTier(age) {
   return 3;
 }
 
+// --- Real-world missions ("Passaporte do Conhecimento") ---
+// Completed missions are tracked separately from skill XP: they represent
+// something the child actually did away from the screen, confirmed by an
+// adult, not a quiz answer — so they're stored as a simple id list per profile.
+
+const MISSIONS_KEY = "abcmundo.missionsDone";
+
+function loadMissionsDone() {
+  try {
+    const raw = localStorage.getItem(MISSIONS_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveMissionsDone(all) {
+  try {
+    localStorage.setItem(MISSIONS_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getCompletedMissions(profileName) {
+  const all = loadMissionsDone();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function completeMission(profileName, missionId) {
+  const name = profileName || "Explorer";
+  const all = loadMissionsDone();
+  const done = new Set(all[name] || []);
+  done.add(missionId);
+  all[name] = Array.from(done);
+  saveMissionsDone(all);
+  return all[name];
+}
+
 export function pingProgress({ profileName, module, event }) {
   try {
     fetch("/api/progress/ping", {

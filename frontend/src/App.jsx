@@ -16,6 +16,7 @@ import Financial from "./pages/Financial.jsx";
 import ParentDashboard from "./pages/ParentDashboard.jsx";
 import Achievements from "./pages/Achievements.jsx";
 import Phonics from "./pages/Phonics.jsx";
+import Missions from "./pages/Missions.jsx";
 
 export default function App() {
   return (
@@ -37,6 +38,7 @@ export default function App() {
           <Route path="/financial" element={<Financial />} />
           <Route path="/parents" element={<ParentDashboard />} />
           <Route path="/achievements" element={<Achievements />} />
+          <Route path="/missions" element={<Missions />} />
         </Routes>
       </main>
       <NavBar />
