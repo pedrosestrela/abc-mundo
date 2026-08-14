@@ -106,6 +106,14 @@ import scienceZh from "./science.zh.json";
 import scienceEs from "./science.es.json";
 import scienceIt from "./science.it.json";
 
+import lifeSkillsPt from "./lifeSkills.pt.json";
+import lifeSkillsEn from "./lifeSkills.en.json";
+import lifeSkillsDe from "./lifeSkills.de.json";
+import lifeSkillsFr from "./lifeSkills.fr.json";
+import lifeSkillsZh from "./lifeSkills.zh.json";
+import lifeSkillsEs from "./lifeSkills.es.json";
+import lifeSkillsIt from "./lifeSkills.it.json";
+
 export const SUPPORTED_LANGUAGES = [
   { code: "pt", label: "Português", flag: "🇵🇹" },
   { code: "en", label: "English", flag: "🇬🇧" },
@@ -129,6 +137,7 @@ const DETECTIVE = { pt: detectivePt, en: detectiveEn, de: detectiveDe, fr: detec
 const WHYS = { pt: whysPt, en: whysEn, de: whysDe, fr: whysFr, zh: whysZh, es: whysEs, it: whysIt };
 const ART_PROMPTS = { pt: artPromptsPt, en: artPromptsEn, de: artPromptsDe, fr: artPromptsFr, zh: artPromptsZh, es: artPromptsEs, it: artPromptsIt };
 const SCIENCE = { pt: sciencePt, en: scienceEn, de: scienceDe, fr: scienceFr, zh: scienceZh, es: scienceEs, it: scienceIt };
+const LIFE_SKILLS = { pt: lifeSkillsPt, en: lifeSkillsEn, de: lifeSkillsDe, fr: lifeSkillsFr, zh: lifeSkillsZh, es: lifeSkillsEs, it: lifeSkillsIt };
 
 // Normalizes zh's different shape ({hanzi,...}) to the same shape used by
 // the Latin-alphabet languages ({letter, lower, upper, exampleWord, emoji}).
@@ -188,6 +197,10 @@ export function getArtPrompts(langCode) {
 
 export function getScience(langCode) {
   return SCIENCE[langCode] || [];
+}
+
+export function getLifeSkills(langCode) {
+  return LIFE_SKILLS[langCode] || [];
 }
 
 // Countries are language-agnostic in shape (name/fact are per-language

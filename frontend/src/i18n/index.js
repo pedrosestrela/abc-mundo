@@ -5,7 +5,7 @@ const resources = {
   pt: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Início", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Leitura", phrases: "Frases", songs: "Canções", game: "Jogo", piano: "Piano", language: "Idiomas" , stories: "Histórias" , math: "Matemática" , financial: "Dinheiro" , parents: "Pais" , achievements: "Conquistas" , phonics: "Sons" , missions: "Missões" , world: "Mundo" , detective: "Detetive" , whys: "Porquês" , robots: "Robôs" , art: "Ateliê" , science: "Ciência" , history: "História" },
+      nav: { home: "Início", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Leitura", phrases: "Frases", songs: "Canções", game: "Jogo", piano: "Piano", language: "Idiomas" , stories: "Histórias" , math: "Matemática" , financial: "Dinheiro" , parents: "Pais" , achievements: "Conquistas" , phonics: "Sons" , missions: "Missões" , world: "Mundo" , detective: "Detetive" , whys: "Porquês" , robots: "Robôs" , art: "Ateliê" , science: "Ciência" , history: "História" , lifeskills: "Vida" },
       home: {
         pickProfile: "Escolhe o teu perfil",
         newProfile: "Novo perfil",
@@ -155,13 +155,18 @@ const resources = {
         historyExplored: "Épocas exploradas",
         historyQuiz: "Jogo",
         historyLocked: "O jogo abre um pouco mais tarde, quando fores maior. Continua a explorar a linha do tempo! 🙂",
+        lifeSkillsTitle: "Escola da Vida",
+        lifeSkillsIntro: "Aprende tarefas do dia a dia — algumas fazes sozinho/a, outras só com um adulto por perto!",
+        lifeSkillsTried: "Aprendidas",
+        lifeSkillsWithAdult: "Faz com um adulto",
+        lifeSkillsAlone: "Podes fazer sozinho/a",
       },
     },
   },
   en: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Home", alphabet: "Alphabet", syllables: "Syllables", reading: "Reading", phrases: "Phrases", songs: "Songs", game: "Game", piano: "Piano", language: "Languages" , stories: "Stories" , math: "Math" , financial: "Money" , parents: "Parents" , achievements: "Achievements" , phonics: "Sounds" , missions: "Missions" , world: "World" , detective: "Detective" , whys: "Whys" , robots: "Robots" , art: "Art Studio" , science: "Science" , history: "History" },
+      nav: { home: "Home", alphabet: "Alphabet", syllables: "Syllables", reading: "Reading", phrases: "Phrases", songs: "Songs", game: "Game", piano: "Piano", language: "Languages" , stories: "Stories" , math: "Math" , financial: "Money" , parents: "Parents" , achievements: "Achievements" , phonics: "Sounds" , missions: "Missions" , world: "World" , detective: "Detective" , whys: "Whys" , robots: "Robots" , art: "Art Studio" , science: "Science" , history: "History" , lifeskills: "Life Skills" },
       home: {
         pickProfile: "Pick your profile",
         newProfile: "New profile",
@@ -311,13 +316,18 @@ const resources = {
         historyExplored: "Eras explored",
         historyQuiz: "Game",
         historyLocked: "The game unlocks a bit later, when you're older. Keep exploring the timeline! 🙂",
+        lifeSkillsTitle: "Life Skills School",
+        lifeSkillsIntro: "Learn everyday tasks — some you can do alone, others only with an adult nearby!",
+        lifeSkillsTried: "Learned",
+        lifeSkillsWithAdult: "Do this with an adult",
+        lifeSkillsAlone: "You can do this alone",
       },
     },
   },
   de: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Start", alphabet: "Alphabet", syllables: "Silben", reading: "Lesen", phrases: "Sätze", songs: "Lieder", game: "Spiel", piano: "Klavier", language: "Sprachen" , stories: "Geschichten" , math: "Mathe" , financial: "Geld" , parents: "Eltern" , achievements: "Erfolge" , phonics: "Laute" , missions: "Missionen" , world: "Welt" , detective: "Detektiv" , whys: "Warums" , robots: "Roboter" , art: "Atelier" , science: "Wissenschaft" , history: "Geschichte" },
+      nav: { home: "Start", alphabet: "Alphabet", syllables: "Silben", reading: "Lesen", phrases: "Sätze", songs: "Lieder", game: "Spiel", piano: "Klavier", language: "Sprachen" , stories: "Geschichten" , math: "Mathe" , financial: "Geld" , parents: "Eltern" , achievements: "Erfolge" , phonics: "Laute" , missions: "Missionen" , world: "Welt" , detective: "Detektiv" , whys: "Warums" , robots: "Roboter" , art: "Atelier" , science: "Wissenschaft" , history: "Geschichte" , lifeskills: "Lebenskompetenz" },
       home: {
         pickProfile: "Wähle dein Profil",
         newProfile: "Neues Profil",
@@ -467,13 +477,18 @@ const resources = {
         historyExplored: "Erkundete Epochen",
         historyQuiz: "Spiel",
         historyLocked: "Das Spiel wird etwas später freigeschaltet, wenn du älter bist. Erkunde weiter die Zeitleiste! 🙂",
+        lifeSkillsTitle: "Schule des Lebens",
+        lifeSkillsIntro: "Lerne Alltagsaufgaben — manche machst du allein, andere nur mit einem Erwachsenen in der Nähe!",
+        lifeSkillsTried: "Gelernt",
+        lifeSkillsWithAdult: "Mach das mit einem Erwachsenen",
+        lifeSkillsAlone: "Das kannst du allein machen",
       },
     },
   },
   fr: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Accueil", alphabet: "Alphabet", syllables: "Syllabes", reading: "Lecture", phrases: "Phrases", songs: "Chansons", game: "Jeu", piano: "Piano", language: "Langues" , stories: "Histoires" , math: "Maths" , financial: "Argent" , parents: "Parents" , achievements: "Réussites" , phonics: "Sons" , missions: "Missions" , world: "Monde" , detective: "Détective" , whys: "Pourquoi" , robots: "Robots" , art: "Atelier" , science: "Sciences" , history: "Histoire" },
+      nav: { home: "Accueil", alphabet: "Alphabet", syllables: "Syllabes", reading: "Lecture", phrases: "Phrases", songs: "Chansons", game: "Jeu", piano: "Piano", language: "Langues" , stories: "Histoires" , math: "Maths" , financial: "Argent" , parents: "Parents" , achievements: "Réussites" , phonics: "Sons" , missions: "Missions" , world: "Monde" , detective: "Détective" , whys: "Pourquoi" , robots: "Robots" , art: "Atelier" , science: "Sciences" , history: "Histoire" , lifeskills: "Vie Pratique" },
       home: {
         pickProfile: "Choisis ton profil",
         newProfile: "Nouveau profil",
@@ -623,13 +638,18 @@ const resources = {
         historyExplored: "Époques explorées",
         historyQuiz: "Jeu",
         historyLocked: "Le jeu se débloque un peu plus tard, quand tu seras plus grand(e). Continue à explorer la ligne du temps ! 🙂",
+        lifeSkillsTitle: "École de la Vie",
+        lifeSkillsIntro: "Apprends des tâches du quotidien — certaines seul(e), d'autres seulement avec un adulte à proximité !",
+        lifeSkillsTried: "Apprises",
+        lifeSkillsWithAdult: "Fais-le avec un adulte",
+        lifeSkillsAlone: "Tu peux le faire seul(e)",
       },
     },
   },
   zh: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "首页", alphabet: "字母表", syllables: "音节", reading: "阅读", phrases: "句子", songs: "歌曲", game: "游戏", piano: "钢琴", language: "语言" , stories: "故事" , math: "数学" , financial: "金钱" , parents: "家长" , achievements: "成就" , phonics: "语音" , missions: "任务" , world: "世界" , detective: "侦探" , whys: "为什么" , robots: "机器人" , art: "创意工坊" , science: "科学" , history: "历史" },
+      nav: { home: "首页", alphabet: "字母表", syllables: "音节", reading: "阅读", phrases: "句子", songs: "歌曲", game: "游戏", piano: "钢琴", language: "语言" , stories: "故事" , math: "数学" , financial: "金钱" , parents: "家长" , achievements: "成就" , phonics: "语音" , missions: "任务" , world: "世界" , detective: "侦探" , whys: "为什么" , robots: "机器人" , art: "创意工坊" , science: "科学" , history: "历史" , lifeskills: "生活技能" },
       home: {
         pickProfile: "选择你的档案",
         newProfile: "新档案",
@@ -779,13 +799,18 @@ const resources = {
         historyExplored: "已探索的时代",
         historyQuiz: "游戏",
         historyLocked: "这个游戏要等你再大一点才会解锁哦。继续探索时间线吧！🙂",
+        lifeSkillsTitle: "生活学堂",
+        lifeSkillsIntro: "学习日常小任务——有些你可以自己做，有些需要大人在旁边陪着！",
+        lifeSkillsTried: "已学会",
+        lifeSkillsWithAdult: "请和大人一起做",
+        lifeSkillsAlone: "你可以自己完成",
       },
     },
   },
   es: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Inicio", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Lectura", phrases: "Frases", songs: "Canciones", game: "Juego", piano: "Piano", language: "Idiomas" , stories: "Cuentos" , math: "Matemáticas" , financial: "Dinero" , parents: "Padres" , achievements: "Logros" , phonics: "Sonidos" , missions: "Misiones" , world: "Mundo" , detective: "Detective" , whys: "Porqués" , robots: "Robots" , art: "Taller" , science: "Ciencia" , history: "Historia" },
+      nav: { home: "Inicio", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Lectura", phrases: "Frases", songs: "Canciones", game: "Juego", piano: "Piano", language: "Idiomas" , stories: "Cuentos" , math: "Matemáticas" , financial: "Dinero" , parents: "Padres" , achievements: "Logros" , phonics: "Sonidos" , missions: "Misiones" , world: "Mundo" , detective: "Detective" , whys: "Porqués" , robots: "Robots" , art: "Taller" , science: "Ciencia" , history: "Historia" , lifeskills: "Vida Práctica" },
       home: {
         pickProfile: "Elige tu perfil",
         newProfile: "Nuevo perfil",
@@ -935,13 +960,18 @@ const resources = {
         historyExplored: "Épocas exploradas",
         historyQuiz: "Juego",
         historyLocked: "El juego se desbloquea un poco más tarde, cuando seas mayor. ¡Sigue explorando la línea del tiempo! 🙂",
+        lifeSkillsTitle: "Escuela de la Vida",
+        lifeSkillsIntro: "Aprende tareas del día a día — algunas las haces solo/a, otras solo con un adulto cerca!",
+        lifeSkillsTried: "Aprendidas",
+        lifeSkillsWithAdult: "Hazlo con un adulto",
+        lifeSkillsAlone: "Puedes hacerlo solo/a",
       },
     },
   },
   it: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Home", alphabet: "Alfabeto", syllables: "Sillabe", reading: "Lettura", phrases: "Frasi", songs: "Canzoni", game: "Gioco", piano: "Piano", language: "Lingue" , stories: "Storie" , math: "Matematica" , financial: "Denaro" , parents: "Genitori" , achievements: "Traguardi" , phonics: "Suoni" , missions: "Missioni" , world: "Mondo" , detective: "Detective" , whys: "Perché" , robots: "Robots" , art: "Atelier" , science: "Scienza" , history: "Storia" },
+      nav: { home: "Home", alphabet: "Alfabeto", syllables: "Sillabe", reading: "Lettura", phrases: "Frasi", songs: "Canzoni", game: "Gioco", piano: "Piano", language: "Lingue" , stories: "Storie" , math: "Matematica" , financial: "Denaro" , parents: "Genitori" , achievements: "Traguardi" , phonics: "Suoni" , missions: "Missioni" , world: "Mondo" , detective: "Detective" , whys: "Perché" , robots: "Robots" , art: "Atelier" , science: "Scienza" , history: "Storia" , lifeskills: "Vita Pratica" },
       home: {
         pickProfile: "Scegli il tuo profilo",
         newProfile: "Nuovo profilo",
@@ -1091,6 +1121,11 @@ const resources = {
         historyExplored: "Epoche esplorate",
         historyQuiz: "Gioco",
         historyLocked: "Il gioco si sblocca un po' più tardi, quando sarai più grande. Continua a esplorare la linea del tempo! 🙂",
+        lifeSkillsTitle: "Scuola della Vita",
+        lifeSkillsIntro: "Impara i compiti quotidiani — alcuni da solo/a, altri solo con un adulto vicino!",
+        lifeSkillsTried: "Imparate",
+        lifeSkillsWithAdult: "Fallo con un adulto",
+        lifeSkillsAlone: "Puoi farlo da solo/a",
       },
     },
   },

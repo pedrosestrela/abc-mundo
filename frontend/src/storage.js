@@ -486,3 +486,41 @@ export function getWeakestSkills(profileName, limit = 3) {
 export function getAllProfilesProgress() {
   return loadAllProgress();
 }
+
+// --- Escola da Vida (Life Skills) ---
+// Tracks which life-skill card ids the child has opened/tried, separate
+// from quiz skill tracking, mirroring exploreScienceCard/getExploredScience.
+
+const TRIED_LIFE_SKILLS_KEY = "abcmundo.triedLifeSkills";
+
+function loadTriedLifeSkills() {
+  try {
+    const raw = localStorage.getItem(TRIED_LIFE_SKILLS_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveTriedLifeSkills(all) {
+  try {
+    localStorage.setItem(TRIED_LIFE_SKILLS_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getTriedLifeSkills(profileName) {
+  const all = loadTriedLifeSkills();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function tryLifeSkill(profileName, skillId) {
+  const name = profileName || "Explorer";
+  const all = loadTriedLifeSkills();
+  const tried = new Set(all[name] || []);
+  tried.add(skillId);
+  all[name] = Array.from(tried);
+  saveTriedLifeSkills(all);
+  return all[name];
+}
