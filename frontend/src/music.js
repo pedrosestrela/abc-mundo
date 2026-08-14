@@ -33,6 +33,11 @@ export const INSTRUMENTS = [
   { id: "guitar", icon: "🎸" },
   { id: "flute", icon: "🪈" },
   { id: "drum", icon: "🥁" },
+  { id: "violin", icon: "🎻" },
+  { id: "cavaquinho", icon: "🪕" },
+  { id: "portugueseGuitar", icon: "🎸" },
+  { id: "accordion", icon: "🪗" },
+  { id: "concertina", icon: "🎐" },
 ];
 
 // Simple tappable pads for the drum instrument — no musical scale, just a
@@ -155,6 +160,155 @@ function playFluteNote(ctx, freq, duration) {
   scheduledNodes.push(osc, vibrato);
 }
 
+function playViolinNote(ctx, freq, duration) {
+  // Sawtooth wave with a slow bowed attack (much slower than the guitar's
+  // pluck) plus a light vibrato — rate/depth deliberately different from
+  // the flute's, so the two "sustained" timbres don't sound alike.
+  const now = ctx.currentTime;
+  const osc = ctx.createOscillator();
+  const filter = ctx.createBiquadFilter();
+  const gain = ctx.createGain();
+  const vibrato = ctx.createOscillator();
+  const vibratoGain = ctx.createGain();
+  osc.type = "sawtooth";
+  osc.frequency.value = freq;
+  filter.type = "lowpass";
+  filter.frequency.value = 3200;
+  vibrato.type = "sine";
+  vibrato.frequency.value = 6.5;
+  vibratoGain.gain.value = freq * 0.006;
+  vibrato.connect(vibratoGain);
+  vibratoGain.connect(osc.frequency);
+  gain.gain.setValueAtTime(0, now);
+  gain.gain.linearRampToValueAtTime(0.2, now + 0.18);
+  gain.gain.linearRampToValueAtTime(0.16, now + Math.max(duration - 0.1, 0.2));
+  gain.gain.linearRampToValueAtTime(0, now + duration + 0.15);
+  osc.connect(filter);
+  filter.connect(gain);
+  gain.connect(ctx.destination);
+  vibrato.start(now);
+  osc.start(now);
+  vibrato.stop(now + duration + 0.2);
+  osc.stop(now + duration + 0.2);
+  scheduledNodes.push(osc, vibrato);
+}
+
+function playCavaquinhoNote(ctx, freq, duration) {
+  // Bright plucked timbre: sawtooth through a higher lowpass cutoff than
+  // the guitar (more high-frequency content, small-body "jangly" sound)
+  // and a faster decay, since a cavaquinho's strings ring out quickly.
+  const now = ctx.currentTime;
+  const osc = ctx.createOscillator();
+  const filter = ctx.createBiquadFilter();
+  const gain = ctx.createGain();
+  osc.type = "sawtooth";
+  osc.frequency.value = freq;
+  filter.type = "lowpass";
+  filter.frequency.value = 4200;
+  gain.gain.setValueAtTime(0, now);
+  gain.gain.linearRampToValueAtTime(0.24, now + 0.004);
+  gain.gain.exponentialRampToValueAtTime(0.001, now + Math.min(duration, 0.28));
+  osc.connect(filter);
+  filter.connect(gain);
+  gain.connect(ctx.destination);
+  osc.start(now);
+  osc.stop(now + 0.35);
+  scheduledNodes.push(osc);
+}
+
+function playPortugueseGuitarNote(ctx, freq, duration) {
+  // Distinct metallic/ringing plucked timbre for the "guitarra portuguesa":
+  // a square wave (harder, more nasal edge than the guitar's sawtooth or
+  // the cavaquinho's soft sawtooth) through a resonant bandpass filter that
+  // emphasises upper harmonics, with a long, slowly fading ring.
+  const now = ctx.currentTime;
+  const osc = ctx.createOscillator();
+  const filter = ctx.createBiquadFilter();
+  const gain = ctx.createGain();
+  osc.type = "square";
+  osc.frequency.value = freq;
+  filter.type = "bandpass";
+  filter.frequency.value = freq * 3;
+  filter.Q.value = 4;
+  gain.gain.setValueAtTime(0, now);
+  gain.gain.linearRampToValueAtTime(0.16, now + 0.003);
+  gain.gain.exponentialRampToValueAtTime(0.001, now + Math.max(duration, 0.6));
+  osc.connect(filter);
+  filter.connect(gain);
+  gain.connect(ctx.destination);
+  osc.start(now);
+  osc.stop(now + Math.max(duration, 0.6) + 0.05);
+  scheduledNodes.push(osc);
+}
+
+function playAccordionNote(ctx, freq, duration) {
+  // Reed-like sustained tone: soft square wave through a lowpass filter,
+  // a slower attack than piano, and a gentle tremolo (amplitude LFO)
+  // approximating the "breathing" of accordion bellows.
+  const now = ctx.currentTime;
+  const sustain = Math.max(duration, 0.7);
+  const osc = ctx.createOscillator();
+  const filter = ctx.createBiquadFilter();
+  const gain = ctx.createGain();
+  const tremolo = ctx.createOscillator();
+  const tremoloGain = ctx.createGain();
+  osc.type = "square";
+  osc.frequency.value = freq;
+  filter.type = "lowpass";
+  filter.frequency.value = 1800;
+  tremolo.type = "sine";
+  tremolo.frequency.value = 5;
+  tremoloGain.gain.value = 0.04;
+  tremolo.connect(tremoloGain);
+  gain.gain.setValueAtTime(0, now);
+  gain.gain.linearRampToValueAtTime(0.16, now + 0.12);
+  gain.gain.linearRampToValueAtTime(0.14, now + sustain - 0.15);
+  gain.gain.linearRampToValueAtTime(0, now + sustain + 0.1);
+  tremoloGain.connect(gain.gain);
+  osc.connect(filter);
+  filter.connect(gain);
+  gain.connect(ctx.destination);
+  tremolo.start(now);
+  osc.start(now);
+  tremolo.stop(now + sustain + 0.15);
+  osc.stop(now + sustain + 0.15);
+  scheduledNodes.push(osc, tremolo);
+}
+
+function playConcertinaNote(ctx, freq, duration) {
+  // Same reedy family as the accordion but higher/brighter: sawtooth (more
+  // harmonic content than the accordion's square) through a brighter filter
+  // cutoff, a snappier attack, and a faster, shallower tremolo.
+  const now = ctx.currentTime;
+  const sustain = Math.max(duration, 0.55);
+  const osc = ctx.createOscillator();
+  const filter = ctx.createBiquadFilter();
+  const gain = ctx.createGain();
+  const tremolo = ctx.createOscillator();
+  const tremoloGain = ctx.createGain();
+  osc.type = "sawtooth";
+  osc.frequency.value = freq;
+  filter.type = "lowpass";
+  filter.frequency.value = 3000;
+  tremolo.type = "sine";
+  tremolo.frequency.value = 7.5;
+  tremoloGain.gain.value = 0.025;
+  tremolo.connect(tremoloGain);
+  gain.gain.setValueAtTime(0, now);
+  gain.gain.linearRampToValueAtTime(0.15, now + 0.05);
+  gain.gain.linearRampToValueAtTime(0.12, now + sustain - 0.12);
+  gain.gain.linearRampToValueAtTime(0, now + sustain + 0.08);
+  tremoloGain.connect(gain.gain);
+  osc.connect(filter);
+  filter.connect(gain);
+  gain.connect(ctx.destination);
+  tremolo.start(now);
+  osc.start(now);
+  tremolo.stop(now + sustain + 0.12);
+  osc.stop(now + sustain + 0.12);
+  scheduledNodes.push(osc, tremolo);
+}
+
 // Filtered white-noise burst used for both the drum pads and as the
 // "drum" instrument's stand-in for a musical note.
 function playNoiseBurst(ctx, { filterType = "bandpass", freq = 800, q = 1, duration = 0.15, gainValue = 0.35 } = {}) {
@@ -216,6 +370,21 @@ export function playInstrumentNote(instrument, note, duration = 0.5) {
       break;
     case "flute":
       playFluteNote(ctx, freq, duration);
+      break;
+    case "violin":
+      playViolinNote(ctx, freq, duration);
+      break;
+    case "cavaquinho":
+      playCavaquinhoNote(ctx, freq, duration);
+      break;
+    case "portugueseGuitar":
+      playPortugueseGuitarNote(ctx, freq, duration);
+      break;
+    case "accordion":
+      playAccordionNote(ctx, freq, duration);
+      break;
+    case "concertina":
+      playConcertinaNote(ctx, freq, duration);
       break;
     case "drum":
       playNoiseBurst(ctx, { filterType: "bandpass", freq: freq / 2, q: 1, duration: 0.2, gainValue: 0.4 });

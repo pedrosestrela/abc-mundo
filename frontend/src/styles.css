@@ -645,6 +645,29 @@ body {
   margin: 10px 0;
 }
 
+.ear-training-wrap {
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ear-training-round {
+  margin-top: 12px;
+}
+
+.ear-streak {
+  font-weight: bold;
+  color: var(--purple);
+}
+
+.ear-answers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 14px 0;
+}
+
 .rhythm-success {
   color: var(--green, #2e9e5b);
 }
