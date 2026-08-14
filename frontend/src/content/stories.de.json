@@ -3947,5 +3947,470 @@
         "emoji": "💫"
       }
     ]
+  },
+  {
+    "id": "underwater-treasure-hunt",
+    "title": "Die Unterwasser-Schatzsuche",
+    "emoji": "🤿",
+    "pages": [
+      {
+        "text": "Zwei kleine Fischfreundinnen, Bia und Nina, hörten von einem versunkenen Schatz.",
+        "emoji": "🤿"
+      },
+      {
+        "text": "Sie schwammen durch bunte Korallen auf der Suche nach einer alten Truhe.",
+        "emoji": "🪸"
+      },
+      {
+        "text": "Sie fanden die Truhe zwischen Felsen, verschlossen mit einem rostigen Schloss.",
+        "emoji": "🔒"
+      },
+      {
+        "text": "Gemeinsam schoben und zogen sie, bis sich das Schloss löste.",
+        "emoji": "💪"
+      },
+      {
+        "text": "Drinnen waren nur glänzende Muscheln und kleine Perlen, kein Gold.",
+        "emoji": "✨"
+      },
+      {
+        "text": "Sie merkten, dass das wahre Abenteuer das gemeinsame Erkunden war.",
+        "emoji": "🤝"
+      }
+    ]
+  },
+  {
+    "id": "cloud-that-was-afraid-of-storms",
+    "title": "Die Wolke, die Angst vor Gewittern Hatte",
+    "emoji": "⛈️",
+    "pages": [
+      {
+        "text": "Die kleine Wolke hatte Angst vor Donner und versteckte sich hinter den Bergen.",
+        "emoji": "☁️"
+      },
+      {
+        "text": "Die anderen Wolken sagten, Donnern gehöre einfach dazu, wenn man eine Regenwolke sei.",
+        "emoji": "⛈️"
+      },
+      {
+        "text": "Eines Tages wurden die Felder trocken und brauchten dringend Regen.",
+        "emoji": "🌾"
+      },
+      {
+        "text": "Die kleine Wolke atmete tief durch und ließ ihren ersten leisen Donner los.",
+        "emoji": "🌩️"
+      },
+      {
+        "text": "Sie merkte, dass der Klang sie erschreckte, aber den Pflanzen half zu wachsen.",
+        "emoji": "🌱"
+      },
+      {
+        "text": "Von da an donnerte sie stolz, wann immer die Erde Wasser brauchte.",
+        "emoji": "💧"
+      }
+    ]
+  },
+  {
+    "id": "two-chameleons-different-colors",
+    "title": "Die Zwei Chamäleons mit Verschiedenen Farben",
+    "emoji": "🦎",
+    "pages": [
+      {
+        "text": "Farbe und Chamäleon waren zwei befreundete Chamäleons, die ständig die Farbe wechselten.",
+        "emoji": "🦎"
+      },
+      {
+        "text": "Farbe blieb gerne grün, und Chamäleon lieber violett.",
+        "emoji": "🟣"
+      },
+      {
+        "text": "Eines Tages stritten sie, welche Farbe im Wald die schönste sei.",
+        "emoji": "😤"
+      },
+      {
+        "text": "Eine Eule sagte: „Farben gibt es nur, weil sie sich voneinander unterscheiden.\"",
+        "emoji": "🦉"
+      },
+      {
+        "text": "Sie merkten, dass Grün und Violett zusammen den Wald noch schöner machten.",
+        "emoji": "🌳"
+      },
+      {
+        "text": "Seitdem wechseln sie Seite an Seite die Farbe, ohne je wieder zu streiten.",
+        "emoji": "💚"
+      }
+    ]
+  },
+  {
+    "id": "little-explorer-finds-cave",
+    "title": "Der Kleine Entdecker Findet eine Höhle",
+    "emoji": "🔦",
+    "pages": [
+      {
+        "text": "Tief im Wald fand der kleine Entdecker Filipe eine Höhle hinter einem Wasserfall versteckt.",
+        "emoji": "🔦"
+      },
+      {
+        "text": "Mit eingeschalteter Taschenlampe trat er langsam ein, das Herz schlug ihm schnell.",
+        "emoji": "💓"
+      },
+      {
+        "text": "Die Höhlenwände glitzerten mit winzigen rosa Kristallen.",
+        "emoji": "💎"
+      },
+      {
+        "text": "Er hörte tropfendes Wasser und folgte dem Klang zu einem kleinen unterirdischen See.",
+        "emoji": "🌊"
+      },
+      {
+        "text": "Blinde, blassweiße Fische schwammen langsam im dunklen Wasser.",
+        "emoji": "🐟"
+      },
+      {
+        "text": "Filipe ging erstaunt hinaus und versprach, eines Tages tiefer zu erkunden.",
+        "emoji": "🗺️"
+      }
+    ]
+  },
+  {
+    "id": "summer-picnic-ants",
+    "title": "Das Sommerpicknick und die Ameisen",
+    "emoji": "🧺",
+    "pages": [
+      {
+        "text": "Die Familie Costa packte für einen Sommertag ein riesiges Picknick.",
+        "emoji": "🧺"
+      },
+      {
+        "text": "Sie breiteten die Decke unter einem Baum aus und öffneten die Essenskörbe.",
+        "emoji": "🍉"
+      },
+      {
+        "text": "Ohne es zu merken, marschierte eine Ameisenkolonne direkt auf den Kuchen zu.",
+        "emoji": "🐜"
+      },
+      {
+        "text": "Der kleine Zé schrie auf, als er die Ameisen auf die Decke klettern sah.",
+        "emoji": "😲"
+      },
+      {
+        "text": "Statt sich zu ärgern, ließ er ihnen ein paar Krümel in einer Ecke liegen.",
+        "emoji": "🍞"
+      },
+      {
+        "text": "Die Ameisen trugen die Krümel davon, und alle genossen ihr Picknick weiter in Ruhe.",
+        "emoji": "😊"
+      }
+    ]
+  },
+  {
+    "id": "shy-robot-first-day",
+    "title": "Der Erste Tag des Schüchternen Roboters",
+    "emoji": "🤖",
+    "pages": [
+      {
+        "text": "Der Roboter Zip wurde zum ersten Mal in einem Klassenzimmer voller Kinder eingeschaltet.",
+        "emoji": "🤖"
+      },
+      {
+        "text": "Er fühlte sich schüchtern, weil so viele Augen ihn gleichzeitig ansahen.",
+        "emoji": "😳"
+      },
+      {
+        "text": "Er stand still in einer Ecke und wusste nicht, was er sagen sollte.",
+        "emoji": "🔇"
+      },
+      {
+        "text": "Ein Mädchen kam zu ihm und fragte: „Willst du mit uns spielen?\"",
+        "emoji": "👧"
+      },
+      {
+        "text": "Zip piepte leise, seine schüchterne Art, Ja zu sagen.",
+        "emoji": "🔊"
+      },
+      {
+        "text": "Am Ende des Tages hatte er eine ganze Reihe neuer Freunde gefunden.",
+        "emoji": "🤝"
+      }
+    ]
+  },
+  {
+    "id": "recipe-for-happiness",
+    "title": "Das Rezept für Glück",
+    "emoji": "🍮",
+    "pages": [
+      {
+        "text": "Oma Fernanda hatte eine kleine Konditorei, in der sie Pudding-Törtchen backte.",
+        "emoji": "🍮"
+      },
+      {
+        "text": "Ihre Enkelin Joana fragte, was das Geheimnis des besonderen Rezepts sei.",
+        "emoji": "👧"
+      },
+      {
+        "text": "„Das Geheimnis ist nicht nur der Zimt\", sagte Oma, „sondern sie mit Liebe zu machen.\"",
+        "emoji": "❤️"
+      },
+      {
+        "text": "Gemeinsam mischten sie den Teig, füllten die Förmchen und stellten sie in den heißen Ofen.",
+        "emoji": "🔥"
+      },
+      {
+        "text": "Die Törtchen kamen oben goldbraun heraus, mit süßen dunklen Sprenkeln.",
+        "emoji": "🍯"
+      },
+      {
+        "text": "Joana erkannte, dass das wahre Rezept für Glück darin bestand, den Moment zu teilen.",
+        "emoji": "💛"
+      }
+    ]
+  },
+  {
+    "id": "snail-who-was-frustrated",
+    "title": "Die Frustrierte Schnecke",
+    "emoji": "🐌",
+    "pages": [
+      {
+        "text": "Die Schnecke Caco wollte den Garten vor Sonnenuntergang überqueren.",
+        "emoji": "🐌"
+      },
+      {
+        "text": "So sehr sie sich auch anstrengte, sie bewegte sich sehr, sehr langsam.",
+        "emoji": "😩"
+      },
+      {
+        "text": "Sie wurde frustriert, als eine Nacktschnecke sie leicht überholte.",
+        "emoji": "😤"
+      },
+      {
+        "text": "Ein Marienkäfer sagte: „Vergleich dich nicht mit anderen, jeder hat sein eigenes Tempo.\"",
+        "emoji": "🐞"
+      },
+      {
+        "text": "Caco ging weiter langsam, ohne sich Sorgen darüber zu machen, wer vorne war.",
+        "emoji": "🐢"
+      },
+      {
+        "text": "Sie kam gerade rechtzeitig auf der anderen Seite an, um den schönen Sonnenuntergang zu sehen.",
+        "emoji": "🌅"
+      }
+    ]
+  },
+  {
+    "id": "stars-that-counted-sheep",
+    "title": "Die Sterne, die Schafe Zählten",
+    "emoji": "⭐",
+    "pages": [
+      {
+        "text": "Jede Nacht zählten die Sterne am Himmel gern die Schafe des Hirten Nuno.",
+        "emoji": "🐑"
+      },
+      {
+        "text": "„Eins, zwei, drei ...\", blinzelten sie langsam, eins nach dem anderen, beim Zählen.",
+        "emoji": "⭐"
+      },
+      {
+        "text": "Eines Nachts lief ein freches Schaf von der Herde weg, um das Feld zu erkunden.",
+        "emoji": "🐏"
+      },
+      {
+        "text": "Die Sterne bemerkten, dass eines fehlte, und blinkten hell, um den Hirten zu warnen.",
+        "emoji": "✨"
+      },
+      {
+        "text": "Nuno folgte dem Sternenlicht, bis er das verlorene Schaf an einem Bach fand.",
+        "emoji": "🏞️"
+      },
+      {
+        "text": "Er zählte seine Schafe erneut, jetzt mit der glitzernden Hilfe des ganzen Himmels.",
+        "emoji": "🌌"
+      }
+    ]
+  },
+  {
+    "id": "rain-boots-adventure",
+    "title": "Das Abenteuer mit den Gummistiefeln",
+    "emoji": "👢",
+    "pages": [
+      {
+        "text": "Nach vielen Regentagen füllte sich der Garten mit riesigen Pfützen.",
+        "emoji": "🌧️"
+      },
+      {
+        "text": "Die kleine Iris zog ihre roten Gummistiefel an, bereit für ein Abenteuer.",
+        "emoji": "👢"
+      },
+      {
+        "text": "Sie hüpfte von Pfütze zu Pfütze und tat so, als wäre jede ein anderer Ozean.",
+        "emoji": "🌊"
+      },
+      {
+        "text": "In einer Pfütze fand sie Kaulquappen, die voller Energie im Kreis schwammen.",
+        "emoji": "🐸"
+      },
+      {
+        "text": "Sie beobachtete sie genau, ohne sie zu erschrecken, um zu lernen, wie sie sich bewegten.",
+        "emoji": "👀"
+      },
+      {
+        "text": "Sie kam mit schlammigen Stiefeln und einem Kopf voller neuer Entdeckungen nach Hause.",
+        "emoji": "🏡"
+      }
+    ]
+  },
+  {
+    "id": "proud-of-my-painting",
+    "title": "Stolz auf Mein Gemälde",
+    "emoji": "🖼️",
+    "pages": [
+      {
+        "text": "Im Kunstunterricht malte Matilde ein Bild mit all ihren Lieblingsfarben.",
+        "emoji": "🖼️"
+      },
+      {
+        "text": "Ein Mitschüler lachte und sagte, der Himmel könne nicht rosa sein.",
+        "emoji": "😕"
+      },
+      {
+        "text": "Matilde war einen Moment lang traurig, dachte aber dann daran, was ihr wirklich gefiel.",
+        "emoji": "🤔"
+      },
+      {
+        "text": "Die Lehrerin hängte das Bild an die Wand, neben all die anderen.",
+        "emoji": "🖌️"
+      },
+      {
+        "text": "Viele Mitschüler blieben stehen, um den wunderbar originellen rosa Himmel zu bewundern.",
+        "emoji": "👀"
+      },
+      {
+        "text": "Matilde lernte, dass ihre eigene Fantasie wirklich etwas wert war.",
+        "emoji": "🌟"
+      }
+    ]
+  },
+  {
+    "id": "two-bears-share-cave",
+    "title": "Die Zwei Bären, die sich eine Höhle Teilten",
+    "emoji": "🐻",
+    "pages": [
+      {
+        "text": "Zwei kleine Bären, Bruno und Bela, fanden dieselbe gemütliche Höhle zum Überwintern.",
+        "emoji": "🐻"
+      },
+      {
+        "text": "Zuerst stritten sie, wer zuerst angekommen war und wem sie gehörte.",
+        "emoji": "😤"
+      },
+      {
+        "text": "Draußen begann es immer stärker zu schneien.",
+        "emoji": "❄️"
+      },
+      {
+        "text": "Sie merkten, dass ihnen allein kalt wäre, aber zusammen würden sie warm bleiben.",
+        "emoji": "🥶"
+      },
+      {
+        "text": "Sie beschlossen, sich die Höhle zu teilen und sich aneinander zu kuscheln, um sich zu wärmen.",
+        "emoji": "🤗"
+      },
+      {
+        "text": "Sie verbrachten den ganzen Winter zusammen und wurden die besten Freunde des Waldes.",
+        "emoji": "💕"
+      }
+    ]
+  },
+  {
+    "id": "curious-chick-hatches",
+    "title": "Das Neugierige Küken Schlüpft",
+    "emoji": "🐣",
+    "pages": [
+      {
+        "text": "In einem weißen Ei klopfte ein neugieriges Küken langsam gegen die Schale.",
+        "emoji": "🥚"
+      },
+      {
+        "text": "„Ist es draußen wirklich so groß, wie es scheint?\", fragte es sich.",
+        "emoji": "🤔"
+      },
+      {
+        "text": "Mit einem letzten Klopfen zerbrach die Schale, und das Licht strömte auf einmal herein.",
+        "emoji": "☀️"
+      },
+      {
+        "text": "Das Küken piepste überrascht, als es die Mutterhenne warten sah.",
+        "emoji": "🐣"
+      },
+      {
+        "text": "Es erkundete den Hühnerstall mit kleinen Schritten und entdeckte Stroh, Mais und Wasser.",
+        "emoji": "🌾"
+      },
+      {
+        "text": "Am Ende des Tages kuschelte es sich unter Mutters Flügel, glücklich über seine neue Welt.",
+        "emoji": "🐔"
+      }
+    ]
+  },
+  {
+    "id": "portuguese-fishing-village",
+    "title": "Das Portugiesische Fischerdorf",
+    "emoji": "🎣",
+    "pages": [
+      {
+        "text": "Im kleinen Dorf Nazaré wachte der kleine Tó immer mit dem Geruch des Meeres auf.",
+        "emoji": "🎣"
+      },
+      {
+        "text": "Sein Großvater war Fischer und fuhr jeden Morgen vor Sonnenaufgang mit dem Boot hinaus.",
+        "emoji": "⛵"
+      },
+      {
+        "text": "Eines Tages durfte er mitkommen, mit einer fest verschnürten Schwimmweste.",
+        "emoji": "🦺"
+      },
+      {
+        "text": "Tó half, die Netze voller silberner, in der Sonne glänzender Fische einzuholen.",
+        "emoji": "🐟"
+      },
+      {
+        "text": "Sein Großvater erzählte ihm von den riesigen Wellen, die Nazaré berühmt machen.",
+        "emoji": "🌊"
+      },
+      {
+        "text": "Sie kehrten bei Sonnenuntergang nach Hause zurück, und Tó fühlte sich stolz, ein Kind des Meeres zu sein.",
+        "emoji": "🌅"
+      }
+    ]
+  },
+  {
+    "id": "jealous-little-star",
+    "title": "Der Eifersüchtige Kleine Stern",
+    "emoji": "⭐",
+    "pages": [
+      {
+        "text": "Der kleine Stern Nina leuchtete am Himmel, blickte aber immer neidisch zum riesigen Mond.",
+        "emoji": "⭐"
+      },
+      {
+        "text": "„Alle schauen nur ihn an, niemand bemerkt mich\", dachte sie traurig.",
+        "emoji": "😞"
+      },
+      {
+        "text": "Eines Nachts versteckte sich der Mond hinter dicken, dunklen Wolken.",
+        "emoji": "☁️"
+      },
+      {
+        "text": "Ohne das Licht des Mondes half Ninas kleiner Schein einem verlorenen Seemann, den Hafen zu finden.",
+        "emoji": "⛵"
+      },
+      {
+        "text": "Der Seemann bedankte sich laut bei dem kleinen Stern, der für ihn geleuchtet hatte.",
+        "emoji": "🙏"
+      },
+      {
+        "text": "Nina erkannte, dass sie nicht die Größte sein musste, um wichtig zu sein.",
+        "emoji": "✨"
+      }
+    ]
   }
 ]
