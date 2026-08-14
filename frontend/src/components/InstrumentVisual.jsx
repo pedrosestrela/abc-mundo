@@ -14,6 +14,7 @@ export const INSTRUMENT_FAMILY = {
   accordion: "bellows",
   concertina: "bellows",
   harp: "harp",
+  xylophone: "mallet",
 };
 
 export function getInstrumentFamily(instrumentId) {
@@ -209,6 +210,46 @@ function HarpVisual({ notes, activeNote, onPress }) {
   );
 }
 
+// Colorful mallet bars for the xylophone: longer bars for lower notes,
+// shorter for higher ones, laid out side by side like a real instrument
+// instead of reusing the piano-keyboard UI.
+const BAR_COLORS = ["#ff6b6b", "#ff9f45", "#ffd93d", "#6bcb77", "#4d96ff", "#9b5de5", "#ff5c8d"];
+
+function MalletVisual({ notes, activeNote, onPress }) {
+  const width = 320;
+  const height = 190;
+  const barGap = width / notes.length;
+  const barWidth = barGap * 0.72;
+  const maxBarHeight = height - 40;
+  return (
+    <svg className="instrument-visual-svg mallet-visual" viewBox={`0 0 ${width} ${height}`} width="100%" role="img" aria-label="Xilofone">
+      <rect x={4} y={height - 26} width={width - 8} height={18} rx={8} className="instrument-body mallet-frame" />
+      {notes.map((note, i) => {
+        const barHeight = maxBarHeight - i * (maxBarHeight / (notes.length + 1.5));
+        const bx = barGap * i + (barGap - barWidth) / 2;
+        const by = height - 26 - barHeight;
+        return (
+          <g key={note} className="instrument-hit-area" onClick={() => onPress(note)}>
+            <rect
+              x={bx}
+              y={by}
+              width={barWidth}
+              height={barHeight}
+              rx={6}
+              fill={BAR_COLORS[i % BAR_COLORS.length]}
+              className={"mallet-bar" + (activeNote === note ? " active" : "")}
+            />
+            <circle cx={bx + barWidth / 2} cy={by + 14} r={3.5} className="mallet-bar-hole" />
+            <text x={bx + barWidth / 2} y={height - 4} textAnchor="middle" className="instrument-note-label">
+              {noteLabel(note)}
+            </text>
+          </g>
+        );
+      })}
+    </svg>
+  );
+}
+
 // Small drum-kit layout for the Percussão pads: distinct shapes (round bass
 // drum, cylindrical snare, cymbal, smaller tom) arranged spatially like a
 // real kit, with a brief scale/flash "hit" animation on tap. Purely visual —
@@ -288,5 +329,6 @@ export default function InstrumentVisual({ instrument, activeNote, onPress }) {
   if (family === "wind") return <WindVisual notes={NOTES} activeNote={activeNote} onPress={onPress} />;
   if (family === "bellows") return <BellowsVisual notes={NOTES} activeNote={activeNote} onPress={onPress} />;
   if (family === "harp") return <HarpVisual notes={NOTES} activeNote={activeNote} onPress={onPress} />;
+  if (family === "mallet") return <MalletVisual notes={NOTES} activeNote={activeNote} onPress={onPress} />;
   return null;
 }
