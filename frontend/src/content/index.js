@@ -65,6 +65,14 @@ import storiesZh from "./stories.zh.json";
 import storiesEs from "./stories.es.json";
 import storiesIt from "./stories.it.json";
 
+import detectivePt from "./detective.pt.json";
+import detectiveEn from "./detective.en.json";
+import detectiveDe from "./detective.de.json";
+import detectiveFr from "./detective.fr.json";
+import detectiveZh from "./detective.zh.json";
+import detectiveEs from "./detective.es.json";
+import detectiveIt from "./detective.it.json";
+
 import financialPt from "./financial.pt.json";
 import financialEn from "./financial.en.json";
 import financialDe from "./financial.de.json";
@@ -92,6 +100,7 @@ const STORIES = { pt: storiesPt, en: storiesEn, de: storiesDe, fr: storiesFr, zh
 const FINANCIAL = { pt: financialPt, en: financialEn, de: financialDe, fr: financialFr, zh: financialZh, es: financialEs, it: financialIt };
 const PHONICS = { pt: phonicsPt, en: phonicsEn, de: phonicsDe, fr: phonicsFr, zh: phonicsZh, es: phonicsEs, it: phonicsIt };
 const MISSIONS = { pt: missionsPt, en: missionsEn, de: missionsDe, fr: missionsFr, zh: missionsZh, es: missionsEs, it: missionsIt };
+const DETECTIVE = { pt: detectivePt, en: detectiveEn, de: detectiveDe, fr: detectiveFr, zh: detectiveZh, es: detectiveEs, it: detectiveIt };
 
 // Normalizes zh's different shape ({hanzi,...}) to the same shape used by
 // the Latin-alphabet languages ({letter, lower, upper, exampleWord, emoji}).
@@ -139,6 +148,10 @@ export function getPhonics(langCode) {
 
 export function getMissions(langCode) {
   return MISSIONS[langCode] || [];
+}
+
+export function getDetectiveCards(langCode) {
+  return DETECTIVE[langCode] || [];
 }
 
 // Countries are language-agnostic in shape (name/fact are per-language
