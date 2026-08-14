@@ -6,8 +6,11 @@
 único `backend/main.py`), Docker + Fly.io + Litestream + GitHub Actions
 (deploy), PWA (manifest + service worker), pasta `android/` com scaffold TWA.
 
-**Frontend — 13 módulos ativos**, todos ligados por rota + item de nav +
-traduções nos 7 idiomas (`frontend/src/i18n/index.js`):
+**Frontend — 21 módulos ativos**, todos ligados por rota + item de nav +
+traduções nos 7 idiomas (`frontend/src/i18n/index.js`). A ordem na barra de
+navegação segue a sequência pedagógica sugerida (sons → letras → sílabas →
+leitura → ... → mundos de conhecimento → literacia financeira → missões →
+conquistas → pais):
 
 | Módulo | Rota | Conteúdo |
 |---|---|---|
@@ -16,16 +19,25 @@ traduções nos 7 idiomas (`frontend/src/i18n/index.js`):
 | Sílabas | `/syllables` | `content/syllables.<lang>.json` |
 | Leitura | `/reading` | `content/reading.<lang>.json` |
 | Frases | `/phrases` | `content/phrases.<lang>.json` |
-| Canções | `/songs` | `content/songs.<lang>.json` |
-| Jogo (quiz) | `/game` | gerado a partir de `reading.<lang>.json` |
-| Piano | `/piano` | `content/pianoSongs.json` |
 | Histórias | `/stories` | `content/stories.<lang>.json` |
+| Jogo (quiz) | `/game` | gerado a partir de `reading.<lang>.json` |
 | Matemática | `/math` | gerado (contar/números/soma-subtração) |
+| Canções | `/songs` | `content/songs.<lang>.json` |
+| Piano | `/piano` | `content/pianoSongs.json` |
+| Mundo dos Exploradores (geografia) | `/world` | `content/countries.json` (20 países) + globo 3D |
+| Detetive da Verdade (pensamento crítico) | `/detective` | `content/detective.<lang>.json` |
+| Castelo do Tempo (História de Portugal) | `/history` | `content/portugalHistory.json` (20 eras) |
+| Laboratório das Descobertas (Ciências) | `/science` | `content/science.<lang>.json` |
+| Planeta dos Robôs (programação) | `/robots` | níveis gerados (grelha/algoritmos) |
+| Atelier da Imaginação (arte) | `/art` | `content/artPrompts.<lang>.json` + canvas |
+| Grande Livro dos Porquês | `/whys` | `content/whys.<lang>.json` |
 | Literacia Financeira | `/financial` | `content/financial.<lang>.json` |
-| Mundo dos Exploradores (geografia) | `/world` | `content/countries.json` (20 países) |
 | Missões (mundo real) | `/missions` | `content/missions.<lang>.json` |
 | Modo Pais | `/parents` | lê `storage.js` (motor de progresso) |
 | Conquistas | `/achievements` | lê `storage.js` |
+
+Adicional: `SessionEndOverlay` (sugestão gentil para sair do ecrã ao fim de
+~15 min de sessão, não bloqueante).
 
 **Idiomas**: pt (Portugal), en, de, fr, es, it, zh — 7 idiomas, par
 "idioma principal / idioma a aprender" escolhido pelo utilizador.
