@@ -1,6 +1,14 @@
 import React, { useEffect, useRef } from "react";
 import Globe from "globe.gl";
-import { MeshPhongMaterial, Color, CanvasTexture, DirectionalLight, AmbientLight } from "three";
+import {
+  MeshStandardMaterial,
+  Color,
+  CanvasTexture,
+  DirectionalLight,
+  AmbientLight,
+  SphereGeometry,
+  Mesh,
+} from "three";
 import { feature } from "topojson-client";
 // Land shapes come from the "world-atlas" npm package, bundled locally by Vite
 // at build time (no runtime CDN/network fetch needed). This keeps the globe
@@ -8,11 +16,14 @@ import { feature } from "topojson-client";
 // service worker has cached the build), while still drawing real, filled
 // continent shapes with lit shading instead of a flat ocean-blue sphere.
 //
-// countries-110m.json (instead of land-110m.json's single merged "land"
-// object) has one Feature per country, each keyed by its ISO 3166-1 NUMERIC
-// id — this is what lets us draw visible per-country border lines and make
+// countries-50m.json (instead of the old countries-110m.json) has one
+// Feature per country at 1:50-million-scale resolution — noticeably more
+// detailed coastlines/borders than the old 110m data, while still a compact
+// bundled JSON (~740KB raw vs ~108KB for 110m; still tiny compared to the
+// 10m variant at ~3.6MB, which would be overkill for a stylized kids' globe).
+// This is what lets us draw visible per-country border lines and make
 // each country's whole outline clickable, not just its pin marker.
-import countriesTopo from "world-atlas/countries-110m.json";
+import countriesTopo from "world-atlas/countries-50m.json";
 
 const countryFeatures = feature(countriesTopo, countriesTopo.objects.countries).features;
 
@@ -32,43 +43,167 @@ const ISO_NUMERIC_BY_ALPHA2 = {
   AT: 40, RU: 643, VN: 704, SA: 682, IS: 352,
 };
 
-// Builds a small ocean-color canvas texture procedurally (no network fetch):
-// a vertical gradient from deep navy at the "poles" to a brighter tropical
-// blue at the "equator" band, giving the ocean visible depth instead of one
-// flat color. Cheap (256x128) so it stays light on iPad-class GPUs.
+// Simple deterministic pseudo-random helper (mulberry32) so the procedural
+// noise below is stable across renders instead of flickering on re-mount.
+function mulberry32(seed) {
+  let a = seed;
+  return function () {
+    a |= 0;
+    a = (a + 0x6d2b79f5) | 0;
+    let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+// Cheap layered "value noise": scatter semi-transparent soft-edged blobs of
+// varying size/opacity across the canvas. Layering a handful of these at
+// different scales gives an organic depth-variation look (patchy currents,
+// subtle color drift) without a real Perlin-noise implementation or any
+// external texture asset.
+function paintBlobNoise(ctx, width, height, rng, { count, minR, maxR, color, alpha }) {
+  for (let i = 0; i < count; i++) {
+    const x = rng() * width;
+    const y = rng() * height;
+    const r = minR + rng() * (maxR - minR);
+    const a = alpha * (0.4 + rng() * 0.6);
+    const grad = ctx.createRadialGradient(x, y, 0, x, y, r);
+    grad.addColorStop(0, `rgba(${color},${a})`);
+    grad.addColorStop(1, `rgba(${color},0)`);
+    ctx.fillStyle = grad;
+    ctx.beginPath();
+    ctx.arc(x, y, r, 0, Math.PI * 2);
+    ctx.fill();
+  }
+}
+
+// Builds a high-resolution ocean-color canvas texture procedurally (no
+// network fetch): a vertical gradient from deep navy at the "poles" to a
+// brighter tropical blue at the "equator" band, plus layered soft-blob noise
+// for visible depth/current variation instead of one flat color, plus faint
+// lat/long grid lines for a "map" feel. 2048x1024 keeps it sharp under zoom
+// while remaining a single cheap 2D-canvas draw (no per-frame cost), so it
+// stays light on iPad-class GPUs.
 function buildOceanTexture() {
+  const width = 2048;
+  const height = 1024;
   const canvas = document.createElement("canvas");
-  canvas.width = 256;
-  canvas.height = 128;
+  canvas.width = width;
+  canvas.height = height;
   const ctx = canvas.getContext("2d");
-  const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
-  gradient.addColorStop(0, "#0a2f52");
-  gradient.addColorStop(0.35, "#124a78");
-  gradient.addColorStop(0.5, "#1f6fa8");
-  gradient.addColorStop(0.65, "#124a78");
-  gradient.addColorStop(1, "#0a2f52");
+
+  const gradient = ctx.createLinearGradient(0, 0, 0, height);
+  gradient.addColorStop(0, "#081f38");
+  gradient.addColorStop(0.35, "#0f3f66");
+  gradient.addColorStop(0.5, "#1c6a9c");
+  gradient.addColorStop(0.65, "#0f3f66");
+  gradient.addColorStop(1, "#081f38");
   ctx.fillStyle = gradient;
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.fillRect(0, 0, width, height);
+
+  const rng = mulberry32(20260814);
+  // Large slow "current" blobs, then finer texture on top.
+  paintBlobNoise(ctx, width, height, rng, {
+    count: 40,
+    minR: 120,
+    maxR: 320,
+    color: "60,150,190",
+    alpha: 0.12,
+  });
+  paintBlobNoise(ctx, width, height, rng, {
+    count: 40,
+    minR: 60,
+    maxR: 150,
+    color: "10,30,55",
+    alpha: 0.14,
+  });
+  paintBlobNoise(ctx, width, height, rng, {
+    count: 120,
+    minR: 10,
+    maxR: 40,
+    color: "140,210,235",
+    alpha: 0.06,
+  });
 
   // Faint lat/long grid lines for a "map" feel.
-  ctx.strokeStyle = "rgba(255,255,255,0.08)";
-  ctx.lineWidth = 1;
-  for (let x = 0; x <= canvas.width; x += canvas.width / 12) {
+  ctx.strokeStyle = "rgba(255,255,255,0.07)";
+  ctx.lineWidth = 1.5;
+  for (let x = 0; x <= width; x += width / 24) {
     ctx.beginPath();
     ctx.moveTo(x, 0);
-    ctx.lineTo(x, canvas.height);
+    ctx.lineTo(x, height);
     ctx.stroke();
   }
-  for (let y = 0; y <= canvas.height; y += canvas.height / 6) {
+  for (let y = 0; y <= height; y += height / 12) {
     ctx.beginPath();
     ctx.moveTo(0, y);
-    ctx.lineTo(canvas.width, y);
+    ctx.lineTo(width, y);
     ctx.stroke();
   }
 
   const texture = new CanvasTexture(canvas);
   texture.needsUpdate = true;
   return texture;
+}
+
+// A subtle land-fill noise texture is not used for the polygon cap color
+// (globe.gl's polygon layer takes a flat CSS color per feature, not a UV-
+// mapped material), so land "texture" instead comes from a slightly richer
+// two-tone palette (see polygonCapColor below) plus the per-country stroke
+// lines and altitude/hover lift already in place — a real bump/roughness
+// map would require switching the polygon layer to custom mesh geometry,
+// out of scope for this pass.
+
+// Builds a soft, wispy cloud-cluster texture on a transparent background:
+// clusters of overlapping translucent white blobs, so a slightly-larger
+// sphere textured with this and rendered above the globe reads as patchy
+// cloud cover. Procedural + cheap (1 canvas draw at mount, independent slow
+// rotation afterwards costs nothing but a per-frame rotation.y increment).
+function buildCloudTexture() {
+  const width = 1024;
+  const height = 512;
+  const canvas = document.createElement("canvas");
+  canvas.width = width;
+  canvas.height = height;
+  const ctx = canvas.getContext("2d");
+  ctx.clearRect(0, 0, width, height);
+
+  const rng = mulberry32(4242);
+  const clusterCount = 26;
+  for (let c = 0; c < clusterCount; c++) {
+    const cx = rng() * width;
+    const cy = rng() * height * 0.85 + height * 0.075;
+    const puffs = 4 + Math.floor(rng() * 6);
+    for (let p = 0; p < puffs; p++) {
+      const x = cx + (rng() - 0.5) * 60;
+      const y = cy + (rng() - 0.5) * 30;
+      const r = 12 + rng() * 28;
+      const alpha = 0.05 + rng() * 0.1;
+      const grad = ctx.createRadialGradient(x, y, 0, x, y, r);
+      grad.addColorStop(0, `rgba(255,255,255,${alpha})`);
+      grad.addColorStop(1, "rgba(255,255,255,0)");
+      ctx.fillStyle = grad;
+      ctx.beginPath();
+      ctx.arc(x, y, r, 0, Math.PI * 2);
+      ctx.fill();
+    }
+  }
+
+  const texture = new CanvasTexture(canvas);
+  texture.needsUpdate = true;
+  return texture;
+}
+
+// Land fill is a flat CSS color per globe.gl polygon feature (the layer
+// isn't a UV-mapped mesh, so a real bump/noise texture isn't available
+// here) — so instead we give each country a small deterministic hue/
+// lightness jitter off the base green, seeded by its numeric id. This
+// breaks up the "one flat cutout color" look into a subtle patchwork, a
+// cheap stand-in for real biome variation without needing elevation data.
+const LAND_PALETTE = ["#3fa066", "#3c9a72", "#47a45e", "#399372", "#43a35a"];
+function landFillColor(feature) {
+  const id = Number(feature.id) || 0;
+  return LAND_PALETTE[id % LAND_PALETTE.length];
 }
 
 // Thin wrapper around globe.gl (three.js under the hood): a rotatable,
@@ -97,11 +232,15 @@ export default function Globe3D({ countries, visited, onSelect }) {
       if (numeric != null) countryByNumericId.set(String(numeric), c);
     }
 
-    const oceanMaterial = new MeshPhongMaterial({
+    // MeshStandardMaterial (physically-based roughness/metalness workflow)
+    // instead of the old MeshPhongMaterial: reacts to the scene's directional
+    // + ambient lights with a softer, more "real water" falloff than Phong's
+    // specular highlight model, at no extra runtime cost.
+    const oceanMaterial = new MeshStandardMaterial({
       map: buildOceanTexture(),
       color: new Color("#ffffff"),
-      specular: new Color("#bfe4ff"),
-      shininess: 22,
+      roughness: 0.62,
+      metalness: 0.08,
     });
 
     const globe = Globe()(containerRef.current)
@@ -119,7 +258,7 @@ export default function Globe3D({ countries, visited, onSelect }) {
       // everything else stays background-only (visible land, not tappable).
       .polygonsData(countryFeatures)
       .polygonCapColor((f) =>
-        hoveredIdRef.current === f.id ? "#5cc98a" : "#3fa066"
+        hoveredIdRef.current === f.id ? "#5cc98a" : landFillColor(f)
       )
       .polygonSideColor(() => "rgba(30,80,50,0.6)")
       .polygonStrokeColor((f) => (countryByNumericId.has(String(f.id)) ? "#173d28" : "#245c3d"))
@@ -175,6 +314,39 @@ export default function Globe3D({ countries, visited, onSelect }) {
     sun.position.set(1, 0.6, 1);
     globe.lights([ambient, sun]);
 
+    // Renderer sharpness: globe.gl already enables antialias by default, but
+    // pixelRatio is uncapped, which on a high-DPI tablet (iPad) both wastes
+    // fill-rate for no visible benefit past ~2x and risks frame stutter.
+    // Cap it explicitly for a good sharpness/performance balance.
+    const renderer = globe.renderer();
+    if (renderer) {
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+    }
+
+    // Subtle cloud layer: a slightly-larger transparent sphere textured with
+    // a procedurally-generated wispy-cloud canvas, rotating independently
+    // (and a little faster than the globe's own auto-rotate) for a simple
+    // but effective "polished 3D planet" cue. Cheap: one extra low-poly
+    // sphere + one static canvas texture, no per-frame texture regeneration.
+    const globeRadius = globe.getGlobeRadius();
+    const cloudGeometry = new SphereGeometry(globeRadius * 1.008, 48, 48);
+    const cloudMaterial = new MeshStandardMaterial({
+      map: buildCloudTexture(),
+      transparent: true,
+      opacity: 0.55,
+      depthWrite: false,
+      roughness: 1,
+    });
+    const cloudMesh = new Mesh(cloudGeometry, cloudMaterial);
+    globe.scene().add(cloudMesh);
+
+    let animationFrameId;
+    function animateClouds() {
+      cloudMesh.rotation.y += 0.0006;
+      animationFrameId = requestAnimationFrame(animateClouds);
+    }
+    animateClouds();
+
     globe.controls().autoRotate = true;
     globe.controls().autoRotateSpeed = 0.6;
     globe.controls().enableDamping = true;
@@ -188,6 +360,9 @@ export default function Globe3D({ countries, visited, onSelect }) {
 
     return () => {
       window.removeEventListener("resize", handleResize);
+      if (animationFrameId) cancelAnimationFrame(animationFrameId);
+      cloudGeometry.dispose();
+      cloudMaterial.dispose();
       if (containerRef.current) containerRef.current.innerHTML = "";
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
