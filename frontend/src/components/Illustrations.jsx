@@ -75,11 +75,45 @@ export function StarryNight() {
   );
 }
 
+export function CountingBlocks() {
+  const blocks = [
+    { n: 1, color: "#ff6b6b" },
+    { n: 2, color: "#ffd93d" },
+    { n: 3, color: "#6bcb77" },
+    { n: 4, color: "#4d96ff" },
+    { n: 5, color: "#9b5de5" },
+  ];
+  return (
+    <svg viewBox="0 0 200 100" width="100%" height="auto" role="img" aria-label="Counting blocks">
+      {blocks.map((b, i) => (
+        <g key={b.n}>
+          <rect x={10 + i * 38} y="30" width="30" height="30" rx="6" fill={b.color} />
+          <text x={25 + i * 38} y="52" fontSize="16" fontWeight="bold" fill="#fff" textAnchor="middle">
+            {b.n}
+          </text>
+        </g>
+      ))}
+    </svg>
+  );
+}
+
+export function ShapesFun() {
+  return (
+    <svg viewBox="0 0 200 100" width="100%" height="auto" role="img" aria-label="Shapes">
+      <circle cx="35" cy="50" r="26" fill="#ff6b6b" />
+      <rect x="80" y="24" width="52" height="52" fill="#4d96ff" />
+      <polygon points="170,20 195,75 145,75" fill="#6bcb77" />
+    </svg>
+  );
+}
+
 const ILLUSTRATIONS = {
   "sun-friends": SunFriends,
   "jumping-letters": JumpingLetters,
   "alphabet-circle": AlphabetCircle,
   "starry-night": StarryNight,
+  "counting-blocks": CountingBlocks,
+  "shapes-fun": ShapesFun,
 };
 
 export default function Illustration({ illustrationId }) {
