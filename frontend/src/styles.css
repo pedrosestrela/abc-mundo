@@ -1092,9 +1092,131 @@ body {
   align-self: flex-start;
 }
 
+.robots-progress {
+  font-weight: bold;
+  color: #888;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.robots-grid {
+  display: grid;
+  gap: 4px;
+  justify-content: center;
+  margin: 16px auto;
+  background: #eef2ff;
+  border: 4px solid var(--blue);
+  border-radius: 16px;
+  padding: 8px;
+  width: fit-content;
+}
+
+.robots-cell {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.robots-cell.robots-obstacle {
+  background: #f2e3d3;
+}
+
+.robots-cell.robots-goal {
+  background: #fff6cc;
+}
+
+.robots-palette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 16px 0;
+}
+
+.robots-palette-btn {
+  font-size: 1.6rem;
+  padding: 10px 16px;
+  border-radius: 16px;
+  border: 3px solid var(--purple);
+  background: #fff;
+  cursor: pointer;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+.robots-palette-btn:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+.robots-program {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  min-height: 48px;
+  margin: 12px auto;
+  padding: 10px;
+  background: #fff;
+  border-radius: 16px;
+  border: 3px dashed var(--green);
+  max-width: 420px;
+}
+
+.robots-program-step {
+  font-size: 1.3rem;
+}
+
+.robots-program-empty {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.robots-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 12px 0;
+}
+
+.robots-feedback {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: var(--green);
+}
+
+.robots-feedback.robots-feedback-retry {
+  color: var(--pink);
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background: linear-gradient(180deg, #201a2b, #2a1c22);
+    color: #f0e9ff;
+  }
+  .robots-grid {
+    background: #241f33;
+    border-color: var(--blue);
+  }
+  .robots-cell {
+    background: #2f2a40;
+  }
+  .robots-cell.robots-obstacle {
+    background: #4a3a2c;
+  }
+  .robots-cell.robots-goal {
+    background: #4a4326;
+  }
+  .robots-palette-btn,
+  .robots-program {
+    background: #2f2a40;
     color: #f0e9ff;
   }
   .letter-card,

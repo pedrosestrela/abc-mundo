@@ -48,6 +48,9 @@ export default function NavBar() {
       <NavLink to="/detective" className="nav-link">
         🕵️ {t("nav.detective")}
       </NavLink>
+      <NavLink to="/robots" className="nav-link">
+        🤖 {t("nav.robots")}
+      </NavLink>
       <NavLink to="/whys" className="nav-link">
         ❓ {t("nav.whys")}
       </NavLink>

@@ -21,6 +21,7 @@ import World from "./pages/World.jsx";
 import SessionEndOverlay from "./components/SessionEndOverlay.jsx";
 import Detective from "./pages/Detective.jsx";
 import Whys from "./pages/Whys.jsx";
+import Robots from "./pages/Robots.jsx";
 
 export default function App() {
   return (
@@ -46,6 +47,7 @@ export default function App() {
           <Route path="/world" element={<World />} />
           <Route path="/detective" element={<Detective />} />
           <Route path="/whys" element={<Whys />} />
+          <Route path="/robots" element={<Robots />} />
         </Routes>
       </main>
       <NavBar />
