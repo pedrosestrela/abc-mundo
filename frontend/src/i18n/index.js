@@ -5,7 +5,7 @@ const resources = {
   pt: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Início", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Leitura", phrases: "Frases", songs: "Canções", game: "Jogo", language: "Idiomas" },
+      nav: { home: "Início", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Leitura", phrases: "Frases", songs: "Canções", game: "Jogo", piano: "Piano", language: "Idiomas" },
       home: {
         pickProfile: "Escolhe o teu perfil",
         newProfile: "Novo perfil",
@@ -35,13 +35,18 @@ const resources = {
         gamePrompt: "Qual é a palavra certa?",
         gameScore: "Pontuação",
         gamePlayAgain: "Jogar outra vez",
+        pianoTitle: "Piano",
+        pianoIntro: "Toca nas teclas para ouvir as notas: Dó, Ré, Mi, Fá, Sol, Lá, Si.",
+        pianoSongsHeading: "Aprende a tocar",
+        pianoFollow: "Segue a tecla amarela",
+        pianoLearnSong: "Aprender esta música",
       },
     },
   },
   en: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Home", alphabet: "Alphabet", syllables: "Syllables", reading: "Reading", phrases: "Phrases", songs: "Songs", game: "Game", language: "Languages" },
+      nav: { home: "Home", alphabet: "Alphabet", syllables: "Syllables", reading: "Reading", phrases: "Phrases", songs: "Songs", game: "Game", piano: "Piano", language: "Languages" },
       home: {
         pickProfile: "Pick your profile",
         newProfile: "New profile",
@@ -71,13 +76,18 @@ const resources = {
         gamePrompt: "Which word is correct?",
         gameScore: "Score",
         gamePlayAgain: "Play again",
+        pianoTitle: "Piano",
+        pianoIntro: "Tap the keys to hear the notes: Do, Re, Mi, Fa, Sol, La, Ti.",
+        pianoSongsHeading: "Learn to play",
+        pianoFollow: "Follow the yellow key",
+        pianoLearnSong: "Learn this song",
       },
     },
   },
   de: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Start", alphabet: "Alphabet", syllables: "Silben", reading: "Lesen", phrases: "Sätze", songs: "Lieder", game: "Spiel", language: "Sprachen" },
+      nav: { home: "Start", alphabet: "Alphabet", syllables: "Silben", reading: "Lesen", phrases: "Sätze", songs: "Lieder", game: "Spiel", piano: "Klavier", language: "Sprachen" },
       home: {
         pickProfile: "Wähle dein Profil",
         newProfile: "Neues Profil",
@@ -107,13 +117,18 @@ const resources = {
         gamePrompt: "Welches Wort ist richtig?",
         gameScore: "Punktzahl",
         gamePlayAgain: "Nochmal spielen",
+        pianoTitle: "Klavier",
+        pianoIntro: "Tippe auf die Tasten, um die Noten zu hören: Do, Re, Mi, Fa, Sol, La, Ti.",
+        pianoSongsHeading: "Spielen lernen",
+        pianoFollow: "Folge der gelben Taste",
+        pianoLearnSong: "Dieses Lied lernen",
       },
     },
   },
   fr: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Accueil", alphabet: "Alphabet", syllables: "Syllabes", reading: "Lecture", phrases: "Phrases", songs: "Chansons", game: "Jeu", language: "Langues" },
+      nav: { home: "Accueil", alphabet: "Alphabet", syllables: "Syllabes", reading: "Lecture", phrases: "Phrases", songs: "Chansons", game: "Jeu", piano: "Piano", language: "Langues" },
       home: {
         pickProfile: "Choisis ton profil",
         newProfile: "Nouveau profil",
@@ -143,13 +158,18 @@ const resources = {
         gamePrompt: "Quel est le bon mot ?",
         gameScore: "Score",
         gamePlayAgain: "Rejouer",
+        pianoTitle: "Piano",
+        pianoIntro: "Touche les touches pour entendre les notes : Do, Ré, Mi, Fa, Sol, La, Si.",
+        pianoSongsHeading: "Apprendre à jouer",
+        pianoFollow: "Suis la touche jaune",
+        pianoLearnSong: "Apprendre cette chanson",
       },
     },
   },
   zh: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "首页", alphabet: "字母表", syllables: "音节", reading: "阅读", phrases: "句子", songs: "歌曲", game: "游戏", language: "语言" },
+      nav: { home: "首页", alphabet: "字母表", syllables: "音节", reading: "阅读", phrases: "句子", songs: "歌曲", game: "游戏", piano: "钢琴", language: "语言" },
       home: {
         pickProfile: "选择你的档案",
         newProfile: "新档案",
@@ -179,13 +199,18 @@ const resources = {
         gamePrompt: "哪个词是对的？",
         gameScore: "得分",
         gamePlayAgain: "再玩一次",
+        pianoTitle: "钢琴",
+        pianoIntro: "点击琴键听听音符：Do Re Mi Fa Sol La Ti。",
+        pianoSongsHeading: "学习演奏",
+        pianoFollow: "跟着黄色琴键",
+        pianoLearnSong: "学这首歌",
       },
     },
   },
   es: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Inicio", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Lectura", phrases: "Frases", songs: "Canciones", game: "Juego", language: "Idiomas" },
+      nav: { home: "Inicio", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Lectura", phrases: "Frases", songs: "Canciones", game: "Juego", piano: "Piano", language: "Idiomas" },
       home: {
         pickProfile: "Elige tu perfil",
         newProfile: "Nuevo perfil",
@@ -215,13 +240,18 @@ const resources = {
         gamePrompt: "¿Cuál es la palabra correcta?",
         gameScore: "Puntuación",
         gamePlayAgain: "Jugar otra vez",
+        pianoTitle: "Piano",
+        pianoIntro: "Toca las teclas para escuchar las notas: Do, Re, Mi, Fa, Sol, La, Si.",
+        pianoSongsHeading: "Aprende a tocar",
+        pianoFollow: "Sigue la tecla amarilla",
+        pianoLearnSong: "Aprender esta canción",
       },
     },
   },
   it: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Home", alphabet: "Alfabeto", syllables: "Sillabe", reading: "Lettura", phrases: "Frasi", songs: "Canzoni", game: "Gioco", language: "Lingue" },
+      nav: { home: "Home", alphabet: "Alfabeto", syllables: "Sillabe", reading: "Lettura", phrases: "Frasi", songs: "Canzoni", game: "Gioco", piano: "Piano", language: "Lingue" },
       home: {
         pickProfile: "Scegli il tuo profilo",
         newProfile: "Nuovo profilo",
@@ -251,6 +281,11 @@ const resources = {
         gamePrompt: "Qual è la parola giusta?",
         gameScore: "Punteggio",
         gamePlayAgain: "Gioca ancora",
+        pianoTitle: "Piano",
+        pianoIntro: "Tocca i tasti per sentire le note: Do, Re, Mi, Fa, Sol, La, Si.",
+        pianoSongsHeading: "Impara a suonare",
+        pianoFollow: "Segui il tasto giallo",
+        pianoLearnSong: "Impara questa canzone",
       },
     },
   },

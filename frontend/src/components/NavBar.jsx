@@ -30,6 +30,9 @@ export default function NavBar() {
       <NavLink to="/game" className="nav-link">
         🎮 {t("nav.game")}
       </NavLink>
+      <NavLink to="/piano" className="nav-link">
+        🎹 {t("nav.piano")}
+      </NavLink>
     </nav>
   );
 }

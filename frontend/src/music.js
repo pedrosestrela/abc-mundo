@@ -2,9 +2,12 @@
 // No audio files are used (avoids copyright issues) — a simple looping
 // major-scale arpeggio + soft bass note plays quietly under the sung lyrics.
 
-const NOTE_FREQS = {
-  C4: 261.63, D4: 293.66, E4: 329.63, F4: 349.23, G4: 392.0, A4: 440.0, B4: 493.88, C5: 523.25,
+export const NOTE_FREQS = {
+  C4: 261.63, "C#4": 277.18, D4: 293.66, "D#4": 311.13, E4: 329.63, F4: 349.23,
+  "F#4": 369.99, G4: 392.0, "G#4": 415.3, A4: 440.0, "A#4": 466.16, B4: 493.88, C5: 523.25,
 };
+
+export const SOLFEGE_PT = { C4: "Dó", D4: "Ré", E4: "Mi", F4: "Fá", G4: "Sol", A4: "Lá", B4: "Si", C5: "Dó" };
 
 const MELODY = ["C4", "E4", "G4", "C5", "G4", "E4", "D4", "F4", "A4", "F4", "D4", "C4"];
 const BASS = ["C4", "G4"];
@@ -34,6 +37,15 @@ function playNote(ctx, freq, startTime, duration, gainValue, type) {
   osc.start(startTime);
   osc.stop(startTime + duration + 0.05);
   scheduledNodes.push(osc);
+}
+
+export function playNoteOnce(note, duration = 0.5) {
+  const ctx = getContext();
+  if (!ctx) return;
+  if (ctx.state === "suspended") ctx.resume();
+  const freq = NOTE_FREQS[note];
+  if (!freq) return;
+  playNote(ctx, freq, ctx.currentTime, duration, 0.18, "triangle");
 }
 
 export function isMusicAvailable() {
