@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from "react";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { getPortugalHistory } from "../content/index.js";
 import { getLangPair, getProfile, getVisitedEras, visitEra, getDifficultyTier, pingProgress, recordSkillEvent } from "../storage.js";
@@ -158,6 +159,24 @@ export default function PortugalHistory() {
                         {era.description}
                         <SpeakButton text={era.description} langCode={pair.mother} />
                       </p>
+                      {era.relatedSong && (
+                        <div className="history-related-song">
+                          <h3>{t("modules.historySongSection")}</h3>
+                          <p className="history-related-song-title">
+                            🎵 {era.relatedSong.title}
+                            {era.relatedSong.composer ? ` — ${era.relatedSong.composer}` : ""}
+                          </p>
+                          <p className="mission-text">
+                            {era.relatedSong.historicalNote}
+                            <SpeakButton text={era.relatedSong.historicalNote} langCode={pair.mother} />
+                          </p>
+                          {era.relatedSong.canPlayFull && (
+                            <Link className="big-btn" to="/songs">
+                              {t("modules.historySongListenFull")}
+                            </Link>
+                          )}
+                        </div>
+                      )}
                     </div>
                   )}
                 </div>
