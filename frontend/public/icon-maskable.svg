@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff8a65"/>
+      <stop offset="55%" stop-color="#ff5c8d"/>
+      <stop offset="100%" stop-color="#9b5de5"/>
+    </linearGradient>
+    <linearGradient id="page" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fff7e6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background fills the full canvas (safe to bleed to edges — only the
+       foreground artwork below needs to stay inside the ~80% safe zone that
+       maskable-icon consumers may crop to a circle/rounded square). -->
+  <rect width="512" height="512" fill="url(#bg)"/>
+
+  <!-- Foreground artwork scaled ~78% and centered, same layout as icon.svg,
+       so nothing important is lost when the OS applies its mask shape. -->
+  <g transform="translate(256 256) scale(0.78) translate(-256 -256)">
+    <g fill="#ffe066">
+      <circle cx="96" cy="108" r="9"/>
+      <circle cx="430" cy="150" r="6"/>
+      <circle cx="120" cy="410" r="6"/>
+    </g>
+
+    <g transform="translate(256 300)">
+      <path d="M -170 -40 C -110 -70 -50 -70 0 -30 C 50 -70 110 -70 170 -40 L 170 90 C 110 60 50 60 0 100 C -50 60 -110 60 -170 90 Z"
+            fill="url(#page)" stroke="#ffffff" stroke-width="2"/>
+      <line x1="0" y1="-30" x2="0" y2="100" stroke="#e8d9c0" stroke-width="4"/>
+    </g>
+
+    <text x="50%" y="63%" font-family="Trebuchet MS, Verdana, sans-serif" font-size="120" font-weight="bold"
+          fill="#ff5c8d" text-anchor="middle" dominant-baseline="middle">ABC</text>
+
+    <g transform="translate(256 140)">
+      <circle r="54" fill="#4d96ff"/>
+      <ellipse rx="54" ry="20" fill="none" stroke="#eaf4ff" stroke-width="4"/>
+      <ellipse rx="20" ry="54" fill="none" stroke="#eaf4ff" stroke-width="4"/>
+      <path d="M -54 0 A 54 54 0 0 1 54 0" fill="none" stroke="#eaf4ff" stroke-width="4"/>
+      <circle cx="-16" cy="-18" r="10" fill="#6bcb77"/>
+      <circle cx="18" cy="10" r="14" fill="#6bcb77"/>
+      <circle cx="-6" cy="24" r="7" fill="#6bcb77"/>
+    </g>
+  </g>
+</svg>
