@@ -1,0 +1,12 @@
+{
+  "intro": "Tu vas apprendre à un robot à distinguer les cercles des carrés ! Montre-lui des formes et dis-lui ce qu'elles sont.",
+  "trainInstructions": "Touche le bon nom pour chaque forme afin d'apprendre au robot.",
+  "goodDataIntro": "Le robot a appris grâce à tes réponses. Voyons s'il reconnaît bien de nouvelles formes !",
+  "goodDataExplain": "Le robot a bien appris parce que tu lui as donné de bons exemples. Les bons exemples rendent le robot intelligent !",
+  "badDataIntro": "Entraînons maintenant un autre robot. Cette fois, un assistant distrait avait déjà étiqueté quelques formes avant que tu arrives — et il en a mélangé quelques-unes par erreur !",
+  "badDataExplain": "Tu as remarqué ? Certaines formes d'entraînement étaient mélangées (ce n'est pas ta faute !). C'est pour ça que le robot s'est trompé et a fait plus d'erreurs cette fois.",
+  "conclusion": "Ça arrive avec tous les robots et ordinateurs qui apprennent : si les exemples qu'on leur donne sont faux, ils apprennent de mauvaises choses. De bons exemples font des robots intelligents !",
+  "circleLabel": "Cercle",
+  "squareLabel": "Carré",
+  "mislabeledNote": "🤖 déjà étiqueté par un assistant"
+}

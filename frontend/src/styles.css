@@ -384,6 +384,80 @@ body {
   letter-spacing: 4px;
 }
 
+.math-scenario-text {
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 8px 0 16px;
+}
+
+.math-mode-toggle {
+  flex-direction: row;
+  margin-bottom: 12px;
+}
+
+.math-mode-toggle .game-option {
+  flex: 1;
+}
+
+.math-count-objects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.math-count-icon {
+  font-size: 2rem;
+  line-height: 1;
+  background: none;
+  border: none;
+  padding: 6px;
+  cursor: pointer;
+  border-radius: 12px;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.math-count-icon:hover:not(:disabled) {
+  background: var(--light-blue, rgba(0, 0, 0, 0.05));
+}
+
+.math-count-icon.removed {
+  opacity: 0.25;
+  text-decoration: line-through;
+}
+
+.math-count-icon.added {
+  opacity: 1;
+}
+
+.math-count-pool .math-count-icon:not(.added) {
+  opacity: 0.5;
+}
+
+.math-count-label {
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--text-secondary, #666);
+  margin: 4px 0;
+}
+
+.math-count-total {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 12px 0;
+}
+
+.math-count-confirm.correct {
+  background: var(--green);
+}
+
+.math-count-confirm.wrong {
+  background: var(--red, #e74c3c);
+}
+
 .game-options {
   display: flex;
   flex-direction: column;
@@ -844,6 +918,7 @@ body {
 }
 
 .story-reader {
+  position: relative;
   background: #fff;
   border-radius: 20px;
   padding: 20px;
@@ -916,6 +991,81 @@ body {
 
 .story-close {
   background: var(--purple);
+}
+
+.story-page-body {
+  position: relative;
+}
+
+.story-page-scene,
+.story-page-body > .story-page-row {
+  position: relative;
+  z-index: 2;
+}
+
+.story-page-scene {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 88px;
+}
+
+.story-page-deco {
+  position: absolute;
+  left: 8px;
+  top: -6px;
+  font-size: 2.4rem;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.15s ease;
+  z-index: 3;
+}
+
+.story-page-deco:hover {
+  transform: scale(1.1);
+}
+
+.story-page-deco.poked {
+  animation: story-deco-bounce 0.6s ease;
+}
+
+@keyframes story-deco-bounce {
+  0% { transform: scale(1) rotate(0deg); }
+  25% { transform: scale(1.35) rotate(-12deg); }
+  50% { transform: scale(1.15) rotate(10deg); }
+  75% { transform: scale(1.3) rotate(-6deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+.story-word {
+  transition: background 0.15s ease;
+  border-radius: 4px;
+  padding: 0 1px;
+}
+
+.story-word.active {
+  background: #ffe066;
+}
+
+.story-tap-zones {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.story-tap-zone {
+  flex: 1;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.story-tap-zone:disabled {
+  cursor: default;
+  pointer-events: none;
 }
 
 .game-progress {
@@ -1454,6 +1604,69 @@ body {
   cursor: default;
 }
 
+.game-option.wrong {
+  background: #ccc;
+  color: #777;
+  opacity: 0.6;
+}
+
+.syllable-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 12px 0;
+}
+
+.syllable-chip {
+  border: none;
+  border-radius: 14px;
+  padding: 10px 16px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  background: var(--blue);
+  color: #fff;
+  cursor: pointer;
+}
+
+.syllable-chip.used {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.syllable-chip.wrong {
+  background: #ccc;
+  color: #777;
+  opacity: 0.6;
+}
+
+.syllable-slots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.syllable-slot {
+  min-width: 48px;
+  min-height: 40px;
+  border: 2px dashed var(--purple);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 4px 8px;
+  background: #fff;
+}
+
+.syllable-slot.blank {
+  background: var(--yellow);
+  border-style: solid;
+}
+
 .game-option-emoji {
   font-size: 1.8rem;
 }
@@ -1738,6 +1951,118 @@ body {
 
 .mission-tile.active {
   border: 2px solid var(--blue);
+}
+
+.writing-section-tabs {
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.writing-target-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 12px 0;
+}
+
+.writing-nav-btn {
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background: #eee6ff;
+  color: var(--blue, #3b3b6d);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.writing-target-card {
+  background: #fff;
+  border-radius: 20px;
+  border: 3px solid var(--purple);
+  padding: 12px 24px;
+  text-align: center;
+  min-width: 160px;
+}
+
+.writing-target-letter {
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 1;
+  color: var(--blue, #3b3b6d);
+}
+
+.writing-target-word {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 1.1rem;
+  margin-top: 6px;
+}
+
+.writing-canvas-wrap {
+  position: relative;
+  max-width: 480px;
+  height: 320px;
+  margin: 16px auto;
+  border-radius: 18px;
+  border: 3px solid var(--purple);
+  overflow: hidden;
+  background: #fff;
+}
+
+.writing-guide-char {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14rem;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 3px #d8d8f0;
+  pointer-events: none;
+  user-select: none;
+}
+
+.writing-canvas {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  display: block;
+  background: transparent;
+}
+
+.writing-clear-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 2;
+}
+
+.writing-done-btn {
+  display: block;
+  margin: 12px auto;
+}
+
+.writing-feedback {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--blue, #3b3b6d);
+}
+
+.writing-count-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  justify-content: center;
+  margin: 8px 0;
+  font-size: 1.4rem;
 }
 
 .science-card {
@@ -2246,6 +2571,81 @@ body {
 
 .world-tile.visited {
   border-color: var(--green);
+}
+
+.world-tile.correct {
+  border-color: var(--green);
+  background: #e9f9ec;
+}
+
+.world-tile.wrong {
+  border-color: #e05c5c;
+  background: #fdecec;
+}
+
+.world-trip-pickers {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 12px 0;
+}
+
+.world-trip-pickers label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+.world-trip-pickers select {
+  font-size: 1rem;
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: 2px solid var(--border, #ddd);
+}
+
+.world-trip-arrow {
+  font-size: 1.5rem;
+  align-self: flex-end;
+  margin-bottom: 6px;
+}
+
+.world-timezone-here {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0 20px;
+  font-weight: bold;
+}
+
+.world-timezone-here input[type="range"] {
+  width: 100%;
+  max-width: 420px;
+}
+
+.world-timezone-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.world-timezone-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 12px 8px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.world-timezone-phase {
+  margin-top: 6px;
+  font-size: 0.85rem;
 }
 
 .world-tile-flag {

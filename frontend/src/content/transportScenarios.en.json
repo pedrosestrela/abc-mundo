@@ -1,0 +1,67 @@
+[
+  {
+    "id": "school",
+    "icon": "🏫",
+    "prompt": "Go to school at the end of the street.",
+    "modes": [
+      "walk",
+      "bike",
+      "car",
+      "plane"
+    ],
+    "correct": "walk",
+    "explanation": "For very short distances, walking is fast, healthy and uses no energy at all!"
+  },
+  {
+    "id": "grandparents",
+    "icon": "🏘️",
+    "prompt": "Visit grandparents who live in the next neighborhood.",
+    "modes": [
+      "bike",
+      "car",
+      "train",
+      "ship"
+    ],
+    "correct": "bike",
+    "explanation": "For a short distance within the city, a bike is a great choice: fast and no pollution."
+  },
+  {
+    "id": "othercity",
+    "icon": "🏙️",
+    "prompt": "Go to another city in the country for vacation.",
+    "modes": [
+      "walk",
+      "train",
+      "car",
+      "ship"
+    ],
+    "correct": "train",
+    "explanation": "To travel between cities, the train is comfortable and fast, and you couldn't walk or bike that far."
+  },
+  {
+    "id": "othercontinent",
+    "icon": "🌍",
+    "prompt": "Go to another continent to visit a new country.",
+    "modes": [
+      "bike",
+      "car",
+      "train",
+      "plane"
+    ],
+    "correct": "plane",
+    "explanation": "To cross oceans and continents quickly, the airplane is the right transport."
+  },
+  {
+    "id": "cargo",
+    "icon": "📦",
+    "prompt": "Send a container full of toys to another continent.",
+    "modes": [
+      "car",
+      "train",
+      "plane",
+      "ship"
+    ],
+    "correct": "ship",
+    "explanation": "To carry very heavy cargo across the ocean, ships are used most — slower, but they carry much more and use less energy per item."
+  }
+]

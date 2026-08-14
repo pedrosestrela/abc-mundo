@@ -8,37 +8,68 @@ import SessionEndOverlay from "./components/SessionEndOverlay.jsx";
 import Home from "./pages/Home.jsx";
 import LanguagePicker from "./pages/LanguagePicker.jsx";
 
+// Deploys happen often and each one changes the hashed chunk filenames, so
+// a tab left open across a deploy can try to dynamic-import a JS chunk that
+// no longer exists on the server ("Loading failed for the module..."). Wrap
+// every lazy import so a failed chunk load triggers exactly one full page
+// reload (picking up the fresh index.html + current chunk map) instead of
+// leaving the child stuck on a red error screen. The sessionStorage flag
+// stops an infinite reload loop if the failure isn't actually stale-deploy
+// related (e.g. offline).
+function lazyWithReload(factory) {
+  return lazy(() =>
+    factory().catch((err) => {
+      const key = "chunk-reload-attempted";
+      if (!window.sessionStorage.getItem(key)) {
+        window.sessionStorage.setItem(key, "1");
+        window.location.reload();
+        // Never resolves — the reload is already in flight.
+        return new Promise(() => {});
+      }
+      throw err;
+    })
+  );
+}
+
 // All other pages are route-level code-split: each only downloads when the
 // child actually navigates there, shrinking the initial main bundle.
-const Alphabet = lazy(() => import("./pages/Alphabet.jsx"));
-const Syllables = lazy(() => import("./pages/Syllables.jsx"));
-const Reading = lazy(() => import("./pages/Reading.jsx"));
-const Phrases = lazy(() => import("./pages/Phrases.jsx"));
-const Songs = lazy(() => import("./pages/Songs.jsx"));
-const Game = lazy(() => import("./pages/Game.jsx"));
-const Music = lazy(() => import("./pages/Music.jsx"));
-const Stories = lazy(() => import("./pages/Stories.jsx"));
-const Rhymes = lazy(() => import("./pages/Rhymes.jsx"));
-const MathGame = lazy(() => import("./pages/MathGame.jsx"));
-const Financial = lazy(() => import("./pages/Financial.jsx"));
-const ParentDashboard = lazy(() => import("./pages/ParentDashboard.jsx"));
-const Achievements = lazy(() => import("./pages/Achievements.jsx"));
-const Phonics = lazy(() => import("./pages/Phonics.jsx"));
-const Missions = lazy(() => import("./pages/Missions.jsx"));
-const World = lazy(() => import("./pages/World.jsx"));
-const Detective = lazy(() => import("./pages/Detective.jsx"));
-const Whys = lazy(() => import("./pages/Whys.jsx"));
-const Robots = lazy(() => import("./pages/Robots.jsx"));
-const Art = lazy(() => import("./pages/Art.jsx"));
-const Science = lazy(() => import("./pages/Science.jsx"));
-const PortugalHistory = lazy(() => import("./pages/PortugalHistory.jsx"));
-const LifeSkills = lazy(() => import("./pages/LifeSkills.jsx"));
-const Computing = lazy(() => import("./pages/Computing.jsx"));
-const City = lazy(() => import("./pages/City.jsx"));
-const Mundos = lazy(() => import("./pages/Mundos.jsx"));
-const Thinking = lazy(() => import("./pages/Thinking.jsx"));
+const Alphabet = lazyWithReload(() => import("./pages/Alphabet.jsx"));
+const Syllables = lazyWithReload(() => import("./pages/Syllables.jsx"));
+const Reading = lazyWithReload(() => import("./pages/Reading.jsx"));
+const Phrases = lazyWithReload(() => import("./pages/Phrases.jsx"));
+const Songs = lazyWithReload(() => import("./pages/Songs.jsx"));
+const Game = lazyWithReload(() => import("./pages/Game.jsx"));
+const Music = lazyWithReload(() => import("./pages/Music.jsx"));
+const Stories = lazyWithReload(() => import("./pages/Stories.jsx"));
+const Rhymes = lazyWithReload(() => import("./pages/Rhymes.jsx"));
+const MathGame = lazyWithReload(() => import("./pages/MathGame.jsx"));
+const Financial = lazyWithReload(() => import("./pages/Financial.jsx"));
+const ParentDashboard = lazyWithReload(() => import("./pages/ParentDashboard.jsx"));
+const Achievements = lazyWithReload(() => import("./pages/Achievements.jsx"));
+const Phonics = lazyWithReload(() => import("./pages/Phonics.jsx"));
+const Missions = lazyWithReload(() => import("./pages/Missions.jsx"));
+const World = lazyWithReload(() => import("./pages/World.jsx"));
+const Detective = lazyWithReload(() => import("./pages/Detective.jsx"));
+const Whys = lazyWithReload(() => import("./pages/Whys.jsx"));
+const Robots = lazyWithReload(() => import("./pages/Robots.jsx"));
+const Art = lazyWithReload(() => import("./pages/Art.jsx"));
+const Science = lazyWithReload(() => import("./pages/Science.jsx"));
+const PortugalHistory = lazyWithReload(() => import("./pages/PortugalHistory.jsx"));
+const LifeSkills = lazyWithReload(() => import("./pages/LifeSkills.jsx"));
+const Computing = lazyWithReload(() => import("./pages/Computing.jsx"));
+const City = lazyWithReload(() => import("./pages/City.jsx"));
+const Mundos = lazyWithReload(() => import("./pages/Mundos.jsx"));
+const Thinking = lazyWithReload(() => import("./pages/Thinking.jsx"));
+const NatureDiary = lazyWithReload(() => import("./pages/NatureDiary.jsx"));
+const Writing = lazyWithReload(() => import("./pages/Writing.jsx"));
 
 export default function App() {
+  // A successful render means the current chunk map is good — clear the
+  // reload guard so a *future* deploy can still trigger one recovery reload.
+  React.useEffect(() => {
+    window.sessionStorage.removeItem("chunk-reload-attempted");
+  }, []);
+
   return (
     <div className="app-shell">
       <main className="app-main">
@@ -74,6 +105,8 @@ export default function App() {
             <Route path="/computing" element={<Computing />} />
             <Route path="/thinking" element={<Thinking />} />
             <Route path="/city" element={<City />} />
+            <Route path="/nature-diary" element={<NatureDiary />} />
+            <Route path="/writing" element={<Writing />} />
           </Routes>
         </Suspense>
       </main>

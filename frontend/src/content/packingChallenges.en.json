@@ -1,0 +1,277 @@
+[
+  {
+    "id": "beach",
+    "icon": "🏖️",
+    "name": "Beach",
+    "items": [
+      {
+        "id": "swimsuit",
+        "icon": "🩱",
+        "name": "Swimsuit",
+        "correct": true
+      },
+      {
+        "id": "sunscreen",
+        "icon": "🧴",
+        "name": "Sunscreen",
+        "correct": true
+      },
+      {
+        "id": "sunglasses",
+        "icon": "🕶️",
+        "name": "Sunglasses",
+        "correct": true
+      },
+      {
+        "id": "flipflops",
+        "icon": "🩴",
+        "name": "Flip-flops",
+        "correct": true
+      },
+      {
+        "id": "coat",
+        "icon": "🧥",
+        "name": "Winter coat",
+        "correct": false
+      },
+      {
+        "id": "snowboots",
+        "icon": "🥾",
+        "name": "Snow boots",
+        "correct": false
+      },
+      {
+        "id": "gloves",
+        "icon": "🧤",
+        "name": "Gloves",
+        "correct": false
+      },
+      {
+        "id": "scarf",
+        "icon": "🧣",
+        "name": "Scarf",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "mountain",
+    "icon": "🏔️",
+    "name": "Mountain",
+    "items": [
+      {
+        "id": "jacket",
+        "icon": "🧥",
+        "name": "Warm jacket",
+        "correct": true
+      },
+      {
+        "id": "hikingboots",
+        "icon": "🥾",
+        "name": "Hiking boots",
+        "correct": true
+      },
+      {
+        "id": "backpack",
+        "icon": "🎒",
+        "name": "Backpack",
+        "correct": true
+      },
+      {
+        "id": "waterbottle",
+        "icon": "🚰",
+        "name": "Water bottle",
+        "correct": true
+      },
+      {
+        "id": "swimsuit",
+        "icon": "🩱",
+        "name": "Swimsuit",
+        "correct": false
+      },
+      {
+        "id": "flipflops",
+        "icon": "🩴",
+        "name": "Flip-flops",
+        "correct": false
+      },
+      {
+        "id": "umbrella-open",
+        "icon": "☔",
+        "name": "Big umbrella",
+        "correct": false
+      },
+      {
+        "id": "highheels",
+        "icon": "👠",
+        "name": "High heels",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "rainy",
+    "icon": "🌧️",
+    "name": "Rainy City",
+    "items": [
+      {
+        "id": "umbrella",
+        "icon": "☂️",
+        "name": "Umbrella",
+        "correct": true
+      },
+      {
+        "id": "raincoat",
+        "icon": "🧥",
+        "name": "Raincoat",
+        "correct": true
+      },
+      {
+        "id": "rainboots",
+        "icon": "🥾",
+        "name": "Rain boots",
+        "correct": true
+      },
+      {
+        "id": "sweater",
+        "icon": "🧶",
+        "name": "Warm sweater",
+        "correct": true
+      },
+      {
+        "id": "swimsuit",
+        "icon": "🩱",
+        "name": "Swimsuit",
+        "correct": false
+      },
+      {
+        "id": "sunglasses",
+        "icon": "🕶️",
+        "name": "Sunglasses",
+        "correct": false
+      },
+      {
+        "id": "flipflops",
+        "icon": "🩴",
+        "name": "Flip-flops",
+        "correct": false
+      },
+      {
+        "id": "sunhat",
+        "icon": "👒",
+        "name": "Sun hat",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "desert",
+    "icon": "🏜️",
+    "name": "Desert",
+    "items": [
+      {
+        "id": "sunhat",
+        "icon": "👒",
+        "name": "Sun hat",
+        "correct": true
+      },
+      {
+        "id": "sunglasses",
+        "icon": "🕶️",
+        "name": "Sunglasses",
+        "correct": true
+      },
+      {
+        "id": "lightclothes",
+        "icon": "👕",
+        "name": "Light clothes",
+        "correct": true
+      },
+      {
+        "id": "waterbottle",
+        "icon": "🚰",
+        "name": "Water bottle",
+        "correct": true
+      },
+      {
+        "id": "snowboots",
+        "icon": "🥾",
+        "name": "Snow boots",
+        "correct": false
+      },
+      {
+        "id": "heavycoat",
+        "icon": "🧥",
+        "name": "Heavy coat",
+        "correct": false
+      },
+      {
+        "id": "umbrella",
+        "icon": "☂️",
+        "name": "Umbrella",
+        "correct": false
+      },
+      {
+        "id": "gloves",
+        "icon": "🧤",
+        "name": "Gloves",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "snow",
+    "icon": "❄️",
+    "name": "Snow",
+    "items": [
+      {
+        "id": "coat",
+        "icon": "🧥",
+        "name": "Winter coat",
+        "correct": true
+      },
+      {
+        "id": "gloves",
+        "icon": "🧤",
+        "name": "Gloves",
+        "correct": true
+      },
+      {
+        "id": "snowboots",
+        "icon": "🥾",
+        "name": "Snow boots",
+        "correct": true
+      },
+      {
+        "id": "scarf",
+        "icon": "🧣",
+        "name": "Scarf",
+        "correct": true
+      },
+      {
+        "id": "swimsuit",
+        "icon": "🩱",
+        "name": "Swimsuit",
+        "correct": false
+      },
+      {
+        "id": "flipflops",
+        "icon": "🩴",
+        "name": "Flip-flops",
+        "correct": false
+      },
+      {
+        "id": "shorts",
+        "icon": "🩳",
+        "name": "Shorts",
+        "correct": false
+      },
+      {
+        "id": "sunhat",
+        "icon": "👒",
+        "name": "Sun hat",
+        "correct": false
+      }
+    ]
+  }
+]

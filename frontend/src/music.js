@@ -48,6 +48,8 @@ export const DRUM_PADS = ["kick", "snare", "hihat", "tom"];
 let audioCtx = null;
 let scheduledNodes = [];
 let loopTimer = null;
+let reverbImpulseBuffer = null;
+let sharedReverb = null;
 
 function getContext() {
   if (typeof window === "undefined") return null;
@@ -57,206 +59,304 @@ function getContext() {
   return audioCtx;
 }
 
+// --- Shared "warmth" helpers -------------------------------------------------
+// A handful of small, cheap building blocks reused by every instrument so
+// notes sound layered/resonant instead of a single bare oscillator, without
+// growing the per-note DSP graph enough to glitch on quick successive notes.
+
+// Procedurally generates a short exponentially-decaying noise burst as an
+// impulse response for ConvolverNode — a tiny bit of algorithmic "room" with
+// no external audio file involved.
+function getReverbImpulse(ctx) {
+  if (reverbImpulseBuffer && reverbImpulseBuffer.sampleRate === ctx.sampleRate) {
+    return reverbImpulseBuffer;
+  }
+  const duration = 0.9;
+  const length = Math.ceil(ctx.sampleRate * duration);
+  const buffer = ctx.createBuffer(2, length, ctx.sampleRate);
+  for (let ch = 0; ch < 2; ch++) {
+    const data = buffer.getChannelData(ch);
+    for (let i = 0; i < length; i++) {
+      const decay = Math.pow(1 - i / length, 2.5);
+      data[i] = (Math.random() * 2 - 1) * decay;
+    }
+  }
+  reverbImpulseBuffer = buffer;
+  return buffer;
+}
+
+// A single shared, subtle reverb send bus — one ConvolverNode for the whole
+// app instead of one per note, kept quiet so it adds gentle space without
+// turning a children's app into a concert hall.
+function getReverbSend(ctx) {
+  if (sharedReverb && sharedReverb.context === ctx) return sharedReverb;
+  const convolver = ctx.createConvolver();
+  convolver.buffer = getReverbImpulse(ctx);
+  const wetGain = ctx.createGain();
+  wetGain.gain.value = 0.1;
+  convolver.connect(wetGain);
+  wetGain.connect(ctx.destination);
+  sharedReverb = { context: ctx, input: convolver };
+  return sharedReverb;
+}
+
+// Gentle soft-clip curve used for a touch of analog-style saturation —
+// rounds off the harshest edges of sawtooth/square waves.
+let saturationCurve = null;
+function getSaturationCurve() {
+  if (saturationCurve) return saturationCurve;
+  const n = 1024;
+  const curve = new Float32Array(n);
+  for (let i = 0; i < n; i++) {
+    const x = (i / (n - 1)) * 2 - 1;
+    curve[i] = Math.tanh(x * 1.5);
+  }
+  saturationCurve = curve;
+  return curve;
+}
+
+// Builds a small "voice": 2-3 detuned oscillators (fundamental + slightly
+// detuned unison + a soft sub-octave or harmonic layer) summed into one
+// gain node, then routed through a lowpass filter and a touch of soft
+// saturation before the caller applies its own ADSR envelope and connects
+// to the destination/reverb. This is the core trick that makes notes sound
+// "layered" instead of a single bare beep, while staying cheap (a few
+// oscillators + 1-2 filter nodes per note).
+function buildVoice(ctx, freq, { type = "triangle", detuneCents = 6, subLevel = 0.25, subType = "sine", filterFreq = 3500, satAmount = 0.15 } = {}) {
+  const voiceGain = ctx.createGain();
+  voiceGain.gain.value = 1;
+
+  const osc1 = ctx.createOscillator();
+  osc1.type = type;
+  osc1.frequency.value = freq;
+
+  const osc2 = ctx.createOscillator();
+  osc2.type = type;
+  osc2.frequency.value = freq;
+  osc2.detune.value = detuneCents;
+
+  const osc2Gain = ctx.createGain();
+  osc2Gain.gain.value = 0.55;
+
+  const subOsc = ctx.createOscillator();
+  subOsc.type = subType;
+  subOsc.frequency.value = freq / 2;
+  const subGain = ctx.createGain();
+  subGain.gain.value = subLevel;
+
+  osc1.connect(voiceGain);
+  osc2.connect(osc2Gain);
+  osc2Gain.connect(voiceGain);
+  subOsc.connect(subGain);
+  subGain.connect(voiceGain);
+
+  const filter = ctx.createBiquadFilter();
+  filter.type = "lowpass";
+  filter.frequency.value = filterFreq;
+  filter.Q.value = 0.7;
+
+  const shaper = ctx.createWaveShaper();
+  shaper.curve = getSaturationCurve();
+  shaper.oversample = "2x";
+
+  const satMix = ctx.createGain();
+  satMix.gain.value = 1 + satAmount * 0.3;
+
+  voiceGain.connect(filter);
+  filter.connect(shaper);
+  shaper.connect(satMix);
+
+  return { output: satMix, oscillators: [osc1, osc2, subOsc] };
+}
+
+// Connects a voice's output to both the dry destination and a quiet reverb
+// send, so every instrument gets a touch of natural space "for free".
+function connectWithReverb(ctx, node, dryLevel = 1) {
+  const dry = ctx.createGain();
+  dry.gain.value = dryLevel;
+  node.connect(dry);
+  dry.connect(ctx.destination);
+  const reverb = getReverbSend(ctx);
+  node.connect(reverb.input);
+}
+
+function startStopVoice(voice, startTime, stopTime) {
+  voice.oscillators.forEach((osc) => {
+    osc.start(startTime);
+    osc.stop(stopTime);
+  });
+  scheduledNodes.push(...voice.oscillators);
+}
+
 function playNote(ctx, freq, startTime, duration, gainValue, type) {
-  const osc = ctx.createOscillator();
+  const voice = buildVoice(ctx, freq, { type, detuneCents: 5, subLevel: 0.18, filterFreq: 2600 });
   const gain = ctx.createGain();
-  osc.type = type;
-  osc.frequency.value = freq;
   gain.gain.setValueAtTime(0, startTime);
-  gain.gain.linearRampToValueAtTime(gainValue, startTime + 0.03);
+  gain.gain.linearRampToValueAtTime(gainValue, startTime + 0.025);
+  gain.gain.exponentialRampToValueAtTime(Math.max(gainValue * 0.15, 0.0001), startTime + duration * 0.85);
   gain.gain.linearRampToValueAtTime(0, startTime + duration);
-  osc.connect(gain);
-  gain.connect(ctx.destination);
-  osc.start(startTime);
-  osc.stop(startTime + duration + 0.05);
-  scheduledNodes.push(osc);
+  voice.output.connect(gain);
+  connectWithReverb(ctx, gain, 1);
+  startStopVoice(voice, startTime, startTime + duration + 0.05);
 }
 
 // --- Per-instrument single-note synthesis -----------------------------------
 
 function playPianoNote(ctx, freq, duration) {
-  // Triangle wave, medium attack/decay — warm and round, close to the
-  // background-music timbre already used elsewhere in the app.
+  // Warm and round: fundamental + detuned unison triangle + a soft sine
+  // sub-octave, gently filtered and saturated, with a proper ADSR envelope
+  // (soft attack, decay into a lower sustain, natural release).
   const now = ctx.currentTime;
-  const osc = ctx.createOscillator();
+  const voice = buildVoice(ctx, freq, { type: "triangle", detuneCents: 6, subLevel: 0.22, filterFreq: 3800, satAmount: 0.1 });
   const gain = ctx.createGain();
-  osc.type = "triangle";
-  osc.frequency.value = freq;
+  const peak = 0.22;
+  const sustainLevel = peak * 0.35;
+  const sustainEnd = now + Math.max(duration - 0.08, 0.05);
   gain.gain.setValueAtTime(0, now);
-  gain.gain.linearRampToValueAtTime(0.22, now + 0.02);
-  gain.gain.exponentialRampToValueAtTime(0.001, now + duration);
-  osc.connect(gain);
-  gain.connect(ctx.destination);
-  osc.start(now);
-  osc.stop(now + duration + 0.05);
-  scheduledNodes.push(osc);
+  gain.gain.linearRampToValueAtTime(peak, now + 0.015);
+  gain.gain.exponentialRampToValueAtTime(Math.max(sustainLevel, 0.0001), now + 0.18);
+  gain.gain.setValueAtTime(sustainLevel, sustainEnd);
+  gain.gain.exponentialRampToValueAtTime(0.0001, now + duration + 0.05);
+  voice.output.connect(gain);
+  connectWithReverb(ctx, gain, 1);
+  startStopVoice(voice, now, now + duration + 0.08);
 }
 
 function playXylophoneNote(ctx, freq, duration) {
-  // Sine wave, fast decay, a small downward pitch bend right at the start —
-  // mimics the bright "clack" of a struck wooden bar.
+  // Bright "clack" of a struck wooden bar: sine fundamental + a quiet
+  // detuned partner + a touch of the octave-above harmonic (via sub-level
+  // trick inverted through frequency), fast attack and a small downward
+  // pitch bend right at the start, quick exponential decay.
   const now = ctx.currentTime;
-  const osc = ctx.createOscillator();
+  const voice = buildVoice(ctx, freq, { type: "sine", detuneCents: 9, subLevel: 0.12, subType: "triangle", filterFreq: 6000, satAmount: 0.05 });
+  voice.oscillators[0].frequency.setValueAtTime(freq * 1.06, now);
+  voice.oscillators[0].frequency.exponentialRampToValueAtTime(freq, now + 0.06);
   const gain = ctx.createGain();
-  osc.type = "sine";
-  osc.frequency.setValueAtTime(freq * 1.06, now);
-  osc.frequency.exponentialRampToValueAtTime(freq, now + 0.06);
   gain.gain.setValueAtTime(0, now);
-  gain.gain.linearRampToValueAtTime(0.3, now + 0.008);
+  gain.gain.linearRampToValueAtTime(0.3, now + 0.006);
   gain.gain.exponentialRampToValueAtTime(0.001, now + Math.min(duration, 0.35));
-  osc.connect(gain);
-  gain.connect(ctx.destination);
-  osc.start(now);
-  osc.stop(now + 0.45);
-  scheduledNodes.push(osc);
+  voice.output.connect(gain);
+  connectWithReverb(ctx, gain, 1);
+  startStopVoice(voice, now, now + 0.45);
 }
 
 function playGuitarNote(ctx, freq, duration) {
-  // Sawtooth wave with a very fast attack and a plucky exponential decay,
-  // filtered slightly to soften the buzz.
+  // Layered sawtooth (fundamental + detuned unison + sub-octave body),
+  // very fast attack, plucky exponential decay, softened by the shared
+  // lowpass + saturation stage so the buzz feels warm rather than harsh.
   const now = ctx.currentTime;
-  const osc = ctx.createOscillator();
-  const filter = ctx.createBiquadFilter();
+  const sustain = Math.max(duration, 0.4);
+  const voice = buildVoice(ctx, freq, { type: "sawtooth", detuneCents: 7, subLevel: 0.2, filterFreq: 2200, satAmount: 0.15 });
   const gain = ctx.createGain();
-  osc.type = "sawtooth";
-  osc.frequency.value = freq;
-  filter.type = "lowpass";
-  filter.frequency.value = 2200;
   gain.gain.setValueAtTime(0, now);
   gain.gain.linearRampToValueAtTime(0.25, now + 0.006);
-  gain.gain.exponentialRampToValueAtTime(0.001, now + Math.max(duration, 0.4));
-  osc.connect(filter);
-  filter.connect(gain);
-  gain.connect(ctx.destination);
-  osc.start(now);
-  osc.stop(now + Math.max(duration, 0.4) + 0.05);
-  scheduledNodes.push(osc);
+  gain.gain.exponentialRampToValueAtTime(0.001, now + sustain);
+  voice.output.connect(gain);
+  connectWithReverb(ctx, gain, 1);
+  startStopVoice(voice, now, now + sustain + 0.05);
 }
 
 function playFluteNote(ctx, freq, duration) {
-  // Sine wave with a slower attack and a gentle vibrato (LFO modulating
-  // frequency), like a breathy sustained tone.
+  // Sine fundamental + a quiet detuned partner + a whisper of sub-octave
+  // "breath" body, gentle vibrato (LFO modulating both oscillators'
+  // frequency) and a slow, breathy ADSR attack/release.
   const now = ctx.currentTime;
-  const osc = ctx.createOscillator();
-  const gain = ctx.createGain();
+  const voice = buildVoice(ctx, freq, { type: "sine", detuneCents: 4, subLevel: 0.1, filterFreq: 2600, satAmount: 0.03 });
   const vibrato = ctx.createOscillator();
   const vibratoGain = ctx.createGain();
-  osc.type = "sine";
-  osc.frequency.value = freq;
   vibrato.type = "sine";
   vibrato.frequency.value = 5.5;
   vibratoGain.gain.value = freq * 0.012;
   vibrato.connect(vibratoGain);
-  vibratoGain.connect(osc.frequency);
+  voice.oscillators.slice(0, 2).forEach((osc) => vibratoGain.connect(osc.frequency));
+  const gain = ctx.createGain();
   gain.gain.setValueAtTime(0, now);
   gain.gain.linearRampToValueAtTime(0.2, now + 0.14);
   gain.gain.linearRampToValueAtTime(0.16, now + Math.max(duration - 0.1, 0.15));
   gain.gain.linearRampToValueAtTime(0, now + duration + 0.1);
-  osc.connect(gain);
-  gain.connect(ctx.destination);
+  voice.output.connect(gain);
+  connectWithReverb(ctx, gain, 1);
   vibrato.start(now);
-  osc.start(now);
   vibrato.stop(now + duration + 0.15);
-  osc.stop(now + duration + 0.15);
-  scheduledNodes.push(osc, vibrato);
+  scheduledNodes.push(vibrato);
+  startStopVoice(voice, now, now + duration + 0.15);
 }
 
 function playViolinNote(ctx, freq, duration) {
-  // Sawtooth wave with a slow bowed attack (much slower than the guitar's
-  // pluck) plus a light vibrato — rate/depth deliberately different from
-  // the flute's, so the two "sustained" timbres don't sound alike.
+  // Layered sawtooth (fundamental + detuned unison + soft sub-octave body)
+  // with a slow bowed attack (much slower than the guitar's pluck) plus a
+  // light vibrato — rate/depth deliberately different from the flute's, so
+  // the two "sustained" timbres don't sound alike.
   const now = ctx.currentTime;
-  const osc = ctx.createOscillator();
-  const filter = ctx.createBiquadFilter();
-  const gain = ctx.createGain();
+  const voice = buildVoice(ctx, freq, { type: "sawtooth", detuneCents: 6, subLevel: 0.12, filterFreq: 3200, satAmount: 0.08 });
   const vibrato = ctx.createOscillator();
   const vibratoGain = ctx.createGain();
-  osc.type = "sawtooth";
-  osc.frequency.value = freq;
-  filter.type = "lowpass";
-  filter.frequency.value = 3200;
   vibrato.type = "sine";
   vibrato.frequency.value = 6.5;
   vibratoGain.gain.value = freq * 0.006;
   vibrato.connect(vibratoGain);
-  vibratoGain.connect(osc.frequency);
+  voice.oscillators.slice(0, 2).forEach((osc) => vibratoGain.connect(osc.frequency));
+  const gain = ctx.createGain();
   gain.gain.setValueAtTime(0, now);
   gain.gain.linearRampToValueAtTime(0.2, now + 0.18);
   gain.gain.linearRampToValueAtTime(0.16, now + Math.max(duration - 0.1, 0.2));
   gain.gain.linearRampToValueAtTime(0, now + duration + 0.15);
-  osc.connect(filter);
-  filter.connect(gain);
-  gain.connect(ctx.destination);
+  voice.output.connect(gain);
+  connectWithReverb(ctx, gain, 1);
   vibrato.start(now);
-  osc.start(now);
   vibrato.stop(now + duration + 0.2);
-  osc.stop(now + duration + 0.2);
-  scheduledNodes.push(osc, vibrato);
+  scheduledNodes.push(vibrato);
+  startStopVoice(voice, now, now + duration + 0.2);
 }
 
 function playCavaquinhoNote(ctx, freq, duration) {
-  // Bright plucked timbre: sawtooth through a higher lowpass cutoff than
-  // the guitar (more high-frequency content, small-body "jangly" sound)
-  // and a faster decay, since a cavaquinho's strings ring out quickly.
+  // Bright plucked timbre: layered sawtooth through a higher lowpass cutoff
+  // than the guitar (more high-frequency content, small-body "jangly"
+  // sound) and a faster decay, since a cavaquinho's strings ring out
+  // quickly. Kept a lighter sub-layer than the guitar to stay bright.
   const now = ctx.currentTime;
-  const osc = ctx.createOscillator();
-  const filter = ctx.createBiquadFilter();
+  const voice = buildVoice(ctx, freq, { type: "sawtooth", detuneCents: 8, subLevel: 0.08, filterFreq: 4200, satAmount: 0.12 });
   const gain = ctx.createGain();
-  osc.type = "sawtooth";
-  osc.frequency.value = freq;
-  filter.type = "lowpass";
-  filter.frequency.value = 4200;
   gain.gain.setValueAtTime(0, now);
   gain.gain.linearRampToValueAtTime(0.24, now + 0.004);
   gain.gain.exponentialRampToValueAtTime(0.001, now + Math.min(duration, 0.28));
-  osc.connect(filter);
-  filter.connect(gain);
-  gain.connect(ctx.destination);
-  osc.start(now);
-  osc.stop(now + 0.35);
-  scheduledNodes.push(osc);
+  voice.output.connect(gain);
+  connectWithReverb(ctx, gain, 1);
+  startStopVoice(voice, now, now + 0.35);
 }
 
 function playPortugueseGuitarNote(ctx, freq, duration) {
   // Distinct metallic/ringing plucked timbre for the "guitarra portuguesa":
-  // a square wave (harder, more nasal edge than the guitar's sawtooth or
-  // the cavaquinho's soft sawtooth) through a resonant bandpass filter that
-  // emphasises upper harmonics, with a long, slowly fading ring.
+  // detuned square waves (harder, more nasal edge than the guitar's
+  // sawtooth or the cavaquinho's soft sawtooth) through a resonant bandpass
+  // filter that emphasises upper harmonics, with a long, slowly fading ring.
   const now = ctx.currentTime;
-  const osc = ctx.createOscillator();
-  const filter = ctx.createBiquadFilter();
+  const sustain = Math.max(duration, 0.6);
+  const voice = buildVoice(ctx, freq, { type: "square", detuneCents: 5, subLevel: 0.06, filterFreq: freq * 4, satAmount: 0.1 });
+  const bandpass = ctx.createBiquadFilter();
+  bandpass.type = "bandpass";
+  bandpass.frequency.value = freq * 3;
+  bandpass.Q.value = 4;
   const gain = ctx.createGain();
-  osc.type = "square";
-  osc.frequency.value = freq;
-  filter.type = "bandpass";
-  filter.frequency.value = freq * 3;
-  filter.Q.value = 4;
   gain.gain.setValueAtTime(0, now);
   gain.gain.linearRampToValueAtTime(0.16, now + 0.003);
-  gain.gain.exponentialRampToValueAtTime(0.001, now + Math.max(duration, 0.6));
-  osc.connect(filter);
-  filter.connect(gain);
-  gain.connect(ctx.destination);
-  osc.start(now);
-  osc.stop(now + Math.max(duration, 0.6) + 0.05);
-  scheduledNodes.push(osc);
+  gain.gain.exponentialRampToValueAtTime(0.001, now + sustain);
+  voice.output.connect(bandpass);
+  bandpass.connect(gain);
+  connectWithReverb(ctx, gain, 1);
+  startStopVoice(voice, now, now + sustain + 0.05);
 }
 
 function playAccordionNote(ctx, freq, duration) {
-  // Reed-like sustained tone: soft square wave through a lowpass filter,
-  // a slower attack than piano, and a gentle tremolo (amplitude LFO)
-  // approximating the "breathing" of accordion bellows.
+  // Reed-like sustained tone: layered square waves through a lowpass
+  // filter, a slower attack than piano, and a gentle tremolo (amplitude
+  // LFO) approximating the "breathing" of accordion bellows.
   const now = ctx.currentTime;
   const sustain = Math.max(duration, 0.7);
-  const osc = ctx.createOscillator();
-  const filter = ctx.createBiquadFilter();
+  const voice = buildVoice(ctx, freq, { type: "square", detuneCents: 4, subLevel: 0.15, filterFreq: 1800, satAmount: 0.06 });
   const gain = ctx.createGain();
   const tremolo = ctx.createOscillator();
   const tremoloGain = ctx.createGain();
-  osc.type = "square";
-  osc.frequency.value = freq;
-  filter.type = "lowpass";
-  filter.frequency.value = 1800;
   tremolo.type = "sine";
   tremolo.frequency.value = 5;
   tremoloGain.gain.value = 0.04;
@@ -266,31 +366,25 @@ function playAccordionNote(ctx, freq, duration) {
   gain.gain.linearRampToValueAtTime(0.14, now + sustain - 0.15);
   gain.gain.linearRampToValueAtTime(0, now + sustain + 0.1);
   tremoloGain.connect(gain.gain);
-  osc.connect(filter);
-  filter.connect(gain);
-  gain.connect(ctx.destination);
+  voice.output.connect(gain);
+  connectWithReverb(ctx, gain, 1);
   tremolo.start(now);
-  osc.start(now);
   tremolo.stop(now + sustain + 0.15);
-  osc.stop(now + sustain + 0.15);
-  scheduledNodes.push(osc, tremolo);
+  scheduledNodes.push(tremolo);
+  startStopVoice(voice, now, now + sustain + 0.15);
 }
 
 function playConcertinaNote(ctx, freq, duration) {
-  // Same reedy family as the accordion but higher/brighter: sawtooth (more
-  // harmonic content than the accordion's square) through a brighter filter
-  // cutoff, a snappier attack, and a faster, shallower tremolo.
+  // Same reedy family as the accordion but higher/brighter: layered
+  // sawtooth (more harmonic content than the accordion's square) through a
+  // brighter filter cutoff, a snappier attack, and a faster, shallower
+  // tremolo.
   const now = ctx.currentTime;
   const sustain = Math.max(duration, 0.55);
-  const osc = ctx.createOscillator();
-  const filter = ctx.createBiquadFilter();
+  const voice = buildVoice(ctx, freq, { type: "sawtooth", detuneCents: 5, subLevel: 0.1, filterFreq: 3000, satAmount: 0.08 });
   const gain = ctx.createGain();
   const tremolo = ctx.createOscillator();
   const tremoloGain = ctx.createGain();
-  osc.type = "sawtooth";
-  osc.frequency.value = freq;
-  filter.type = "lowpass";
-  filter.frequency.value = 3000;
   tremolo.type = "sine";
   tremolo.frequency.value = 7.5;
   tremoloGain.gain.value = 0.025;
@@ -300,14 +394,12 @@ function playConcertinaNote(ctx, freq, duration) {
   gain.gain.linearRampToValueAtTime(0.12, now + sustain - 0.12);
   gain.gain.linearRampToValueAtTime(0, now + sustain + 0.08);
   tremoloGain.connect(gain.gain);
-  osc.connect(filter);
-  filter.connect(gain);
-  gain.connect(ctx.destination);
+  voice.output.connect(gain);
+  connectWithReverb(ctx, gain, 1);
   tremolo.start(now);
-  osc.start(now);
   tremolo.stop(now + sustain + 0.12);
-  osc.stop(now + sustain + 0.12);
-  scheduledNodes.push(osc, tremolo);
+  scheduledNodes.push(tremolo);
+  startStopVoice(voice, now, now + sustain + 0.12);
 }
 
 function playHarpNote(ctx, freq, duration) {
@@ -361,7 +453,7 @@ function playNoiseBurst(ctx, { filterType = "bandpass", freq = 800, q = 1, durat
   gain.gain.exponentialRampToValueAtTime(0.001, now + duration);
   noise.connect(filter);
   filter.connect(gain);
-  gain.connect(ctx.destination);
+  connectWithReverb(ctx, gain, 1);
   noise.start(now);
   noise.stop(now + duration + 0.02);
   scheduledNodes.push(noise);
