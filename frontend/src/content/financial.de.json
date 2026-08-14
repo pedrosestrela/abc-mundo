@@ -1,0 +1,10 @@
+[
+  { "id": "poupar-gastar", "concept": "Sparen und Ausgeben", "emoji": "🐷", "explanation": "Sparen heißt, Geld für später aufzuheben. Ausgeben heißt, Geld zu benutzen, um jetzt etwas zu kaufen. Ein bisschen von beidem ist gut!" },
+  { "id": "precisar-querer", "concept": "Brauchen und Wollen", "emoji": "🎁", "explanation": "Etwas, das wir brauchen, können wir nicht entbehren, wie Essen oder Schuhe. Etwas, das wir wollen, hätten wir gern, wie ein neues Spielzeug." },
+  { "id": "moedas-notas", "concept": "Münzen und Scheine", "emoji": "🪙", "explanation": "Wir benutzen Euro. Es gibt kleine Münzen, die Cent, und Euro-Münzen und -Scheine. Zusammen helfen sie uns beim Bezahlen." },
+  { "id": "paciencia", "concept": "Geduldig Sparen", "emoji": "⏳", "explanation": "Manchmal müssen wir warten und jeden Tag ein wenig sparen, bis wir genug Geld für etwas Besonderes haben." },
+  { "id": "mealheiro", "concept": "Das Sparschwein", "emoji": "🐖", "explanation": "Ein Sparschwein ist eine kleine Box, in der wir unsere Münzen aufbewahren. Jede gesparte Münze bringt uns unserem Ziel näher." },
+  { "id": "trocar", "concept": "Wechselgeld", "emoji": "🔄", "explanation": "Wenn wir mit mehr Geld bezahlen, als etwas kostet, bekommen wir Wechselgeld zurück: das zusätzliche Geld, das wir zurückerhalten." },
+  { "id": "trabalho-dinheiro", "concept": "Arbeit und Geld", "emoji": "🧹", "explanation": "Menschen arbeiten, um Geld zu verdienen. Zuhause zu helfen kann uns auch den Wert von Anstrengung lehren." },
+  { "id": "partilhar", "concept": "Teilen und Helfen", "emoji": "🤝", "explanation": "Wir können etwas von unserem Geld benutzen, um anderen zu helfen, zum Beispiel einem Freund ein Geschenk zu machen." }
+]

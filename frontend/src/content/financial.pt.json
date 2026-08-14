@@ -1,0 +1,10 @@
+[
+  { "id": "poupar-gastar", "concept": "Poupar e Gastar", "emoji": "🐷", "explanation": "Poupar é guardar dinheiro para mais tarde. Gastar é usar o dinheiro para comprar algo agora. É bom fazer um bocadinho dos dois!" },
+  { "id": "precisar-querer", "concept": "Precisar e Querer", "emoji": "🎁", "explanation": "Precisar é algo que não podemos viver sem, como comida ou sapatos. Querer é algo que gostávamos de ter, como um brinquedo novo." },
+  { "id": "moedas-notas", "concept": "Moedas e Notas de Euro", "emoji": "🪙", "explanation": "Em Portugal usamos euros. Há moedas pequenas, os cêntimos, e moedas e notas de euros. Juntos ajudam-nos a pagar as coisas." },
+  { "id": "paciencia", "concept": "A Paciência de Poupar", "emoji": "⏳", "explanation": "Às vezes temos de esperar e poupar um pouco todos os dias até termos dinheiro suficiente para comprar algo especial." },
+  { "id": "mealheiro", "concept": "O Mealheiro", "emoji": "🐖", "explanation": "Um mealheiro é uma caixinha onde guardamos as nossas moedas. Cada vez que poupamos uma moeda, ficamos mais perto do nosso objetivo." },
+  { "id": "trocar", "concept": "Fazer Troco", "emoji": "🔄", "explanation": "Quando pagamos com mais dinheiro do que o preço da coisa, recebemos troco: o dinheiro a mais que nos devolvem." },
+  { "id": "trabalho-dinheiro", "concept": "Trabalho e Dinheiro", "emoji": "🧹", "explanation": "As pessoas trabalham para ganhar dinheiro. Ajudar em casa também nos pode ensinar o valor do esforço." },
+  { "id": "partilhar", "concept": "Partilhar e Ajudar", "emoji": "🤝", "explanation": "Podemos usar um pouco do nosso dinheiro para ajudar os outros, como oferecer um presente a um amigo." }
+]

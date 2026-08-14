@@ -485,6 +485,23 @@ body {
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
 }
 
+.section-title {
+  text-align: center;
+  color: var(--purple);
+  font-size: 1.3rem;
+  margin: 24px 0 12px;
+}
+
+.financial-explanation {
+  font-size: 0.95rem;
+  margin: 2px 0 8px;
+  color: #555;
+}
+
+.financial-explanation.secondary {
+  color: #888;
+}
+
 .story-page-emoji {
   font-size: 4rem;
   margin-bottom: 8px;
@@ -533,6 +550,92 @@ body {
   background: var(--purple);
 }
 
+.game-progress {
+  font-weight: bold;
+  color: var(--purple);
+  margin-bottom: 12px;
+}
+
+.game-prompt {
+  margin: 16px 0;
+}
+
+.coin-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.coin-pair {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.coin-emoji {
+  font-size: 2.4rem;
+}
+
+.coin-label {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--blue);
+}
+
+.coin-plus {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--pink);
+  margin: 0 6px;
+}
+
+.game-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.game-option-btn {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 14px 20px;
+  border-radius: 16px;
+  border: 3px solid var(--blue);
+  background: #fff;
+  min-width: 72px;
+  min-height: 56px;
+  cursor: pointer;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.game-option-btn.correct {
+  border-color: var(--green);
+  background: var(--yellow);
+}
+
+.game-option-btn:disabled {
+  cursor: not-allowed;
+}
+
+.game-feedback {
+  font-size: 2rem;
+  margin: 12px 0 0;
+}
+
+.game-result {
+  padding: 12px 0;
+}
+
+.game-score {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--purple);
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background: linear-gradient(180deg, #201a2b, #2a1c22);
@@ -544,11 +647,23 @@ body {
   .story-reader,
   .avatar-btn,
   .lang-btn,
-  .letter-tile {
+  .letter-tile,
+  .game-card,
+  .game-option-btn {
     background: #362a44;
     color: #f0e9ff;
   }
   .navbar {
     background: #251f33ee;
+  }
+  .financial-explanation {
+    color: #d8cbee;
+  }
+  .financial-explanation.secondary {
+    color: #b3a3cc;
+  }
+  .game-option-btn.correct {
+    background: var(--yellow);
+    color: #333;
   }
 }

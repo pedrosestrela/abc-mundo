@@ -5,7 +5,7 @@ const resources = {
   pt: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Início", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Leitura", phrases: "Frases", songs: "Canções", game: "Jogo", piano: "Piano", language: "Idiomas" , stories: "Histórias" , math: "Matemática" },
+      nav: { home: "Início", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Leitura", phrases: "Frases", songs: "Canções", game: "Jogo", piano: "Piano", language: "Idiomas" , stories: "Histórias" , math: "Matemática" , financial: "Dinheiro" },
       home: {
         pickProfile: "Escolhe o teu perfil",
         newProfile: "Novo perfil",
@@ -51,13 +51,18 @@ const resources = {
         mathLocked: "Ainda não! Primeiro vamos aprender a contar 🙂",
         mathScore: "Pontuação",
         mathPlayAgain: "Jogar outra vez",
+        financialTitle: "Literacia Financeira",
+        financialConcepts: "Conceitos",
+        financialCoinGame: "Jogo das Moedas",
+        financialScore: "Pontos",
+        financialPlayAgain: "Jogar Outra Vez",
       },
     },
   },
   en: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Home", alphabet: "Alphabet", syllables: "Syllables", reading: "Reading", phrases: "Phrases", songs: "Songs", game: "Game", piano: "Piano", language: "Languages" , stories: "Stories" , math: "Math" },
+      nav: { home: "Home", alphabet: "Alphabet", syllables: "Syllables", reading: "Reading", phrases: "Phrases", songs: "Songs", game: "Game", piano: "Piano", language: "Languages" , stories: "Stories" , math: "Math" , financial: "Money" },
       home: {
         pickProfile: "Pick your profile",
         newProfile: "New profile",
@@ -103,13 +108,18 @@ const resources = {
         mathLocked: "Not yet! Let's learn to count first 🙂",
         mathScore: "Score",
         mathPlayAgain: "Play again",
+        financialTitle: "Financial Literacy",
+        financialConcepts: "Concepts",
+        financialCoinGame: "Coin Game",
+        financialScore: "Score",
+        financialPlayAgain: "Play Again",
       },
     },
   },
   de: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Start", alphabet: "Alphabet", syllables: "Silben", reading: "Lesen", phrases: "Sätze", songs: "Lieder", game: "Spiel", piano: "Klavier", language: "Sprachen" , stories: "Geschichten" , math: "Mathe" },
+      nav: { home: "Start", alphabet: "Alphabet", syllables: "Silben", reading: "Lesen", phrases: "Sätze", songs: "Lieder", game: "Spiel", piano: "Klavier", language: "Sprachen" , stories: "Geschichten" , math: "Mathe" , financial: "Geld" },
       home: {
         pickProfile: "Wähle dein Profil",
         newProfile: "Neues Profil",
@@ -155,13 +165,18 @@ const resources = {
         mathLocked: "Noch nicht! Zuerst lernen wir zählen 🙂",
         mathScore: "Punktzahl",
         mathPlayAgain: "Nochmal spielen",
+        financialTitle: "Finanzielle Bildung",
+        financialConcepts: "Konzepte",
+        financialCoinGame: "Münzspiel",
+        financialScore: "Punkte",
+        financialPlayAgain: "Nochmal Spielen",
       },
     },
   },
   fr: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Accueil", alphabet: "Alphabet", syllables: "Syllabes", reading: "Lecture", phrases: "Phrases", songs: "Chansons", game: "Jeu", piano: "Piano", language: "Langues" , stories: "Histoires" , math: "Maths" },
+      nav: { home: "Accueil", alphabet: "Alphabet", syllables: "Syllabes", reading: "Lecture", phrases: "Phrases", songs: "Chansons", game: "Jeu", piano: "Piano", language: "Langues" , stories: "Histoires" , math: "Maths" , financial: "Argent" },
       home: {
         pickProfile: "Choisis ton profil",
         newProfile: "Nouveau profil",
@@ -207,13 +222,18 @@ const resources = {
         mathLocked: "Pas encore ! Apprenons d'abord à compter 🙂",
         mathScore: "Score",
         mathPlayAgain: "Rejouer",
+        financialTitle: "Éducation Financière",
+        financialConcepts: "Concepts",
+        financialCoinGame: "Jeu des Pièces",
+        financialScore: "Score",
+        financialPlayAgain: "Rejouer",
       },
     },
   },
   zh: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "首页", alphabet: "字母表", syllables: "音节", reading: "阅读", phrases: "句子", songs: "歌曲", game: "游戏", piano: "钢琴", language: "语言" , stories: "故事" , math: "数学" },
+      nav: { home: "首页", alphabet: "字母表", syllables: "音节", reading: "阅读", phrases: "句子", songs: "歌曲", game: "游戏", piano: "钢琴", language: "语言" , stories: "故事" , math: "数学" , financial: "金钱" },
       home: {
         pickProfile: "选择你的档案",
         newProfile: "新档案",
@@ -259,13 +279,18 @@ const resources = {
         mathLocked: "还不行哦！我们先学数数 🙂",
         mathScore: "得分",
         mathPlayAgain: "再玩一次",
+        financialTitle: "理财启蒙",
+        financialConcepts: "概念",
+        financialCoinGame: "硬币游戏",
+        financialScore: "分数",
+        financialPlayAgain: "再玩一次",
       },
     },
   },
   es: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Inicio", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Lectura", phrases: "Frases", songs: "Canciones", game: "Juego", piano: "Piano", language: "Idiomas" , stories: "Cuentos" , math: "Matemáticas" },
+      nav: { home: "Inicio", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Lectura", phrases: "Frases", songs: "Canciones", game: "Juego", piano: "Piano", language: "Idiomas" , stories: "Cuentos" , math: "Matemáticas" , financial: "Dinero" },
       home: {
         pickProfile: "Elige tu perfil",
         newProfile: "Nuevo perfil",
@@ -311,13 +336,18 @@ const resources = {
         mathLocked: "¡Todavía no! Primero aprendamos a contar 🙂",
         mathScore: "Puntuación",
         mathPlayAgain: "Jugar otra vez",
+        financialTitle: "Educación Financiera",
+        financialConcepts: "Conceptos",
+        financialCoinGame: "Juego de Monedas",
+        financialScore: "Puntos",
+        financialPlayAgain: "Jugar de Nuevo",
       },
     },
   },
   it: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Home", alphabet: "Alfabeto", syllables: "Sillabe", reading: "Lettura", phrases: "Frasi", songs: "Canzoni", game: "Gioco", piano: "Piano", language: "Lingue" , stories: "Storie" , math: "Matematica" },
+      nav: { home: "Home", alphabet: "Alfabeto", syllables: "Sillabe", reading: "Lettura", phrases: "Frasi", songs: "Canzoni", game: "Gioco", piano: "Piano", language: "Lingue" , stories: "Storie" , math: "Matematica" , financial: "Denaro" },
       home: {
         pickProfile: "Scegli il tuo profilo",
         newProfile: "Nuovo profilo",
@@ -363,6 +393,11 @@ const resources = {
         mathLocked: "Non ancora! Prima impariamo a contare 🙂",
         mathScore: "Punteggio",
         mathPlayAgain: "Gioca ancora",
+        financialTitle: "Educazione Finanziaria",
+        financialConcepts: "Concetti",
+        financialCoinGame: "Gioco delle Monete",
+        financialScore: "Punteggio",
+        financialPlayAgain: "Gioca Ancora",
       },
     },
   },

@@ -12,6 +12,7 @@ import Game from "./pages/Game.jsx";
 import Piano from "./pages/Piano.jsx";
 import Stories from "./pages/Stories.jsx";
 import MathGame from "./pages/MathGame.jsx";
+import Financial from "./pages/Financial.jsx";
 
 export default function App() {
   return (
@@ -29,6 +30,7 @@ export default function App() {
           <Route path="/piano" element={<Piano />} />
           <Route path="/stories" element={<Stories />} />
           <Route path="/math" element={<MathGame />} />
+          <Route path="/financial" element={<Financial />} />
         </Routes>
       </main>
       <NavBar />

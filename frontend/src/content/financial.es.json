@@ -1,0 +1,10 @@
+[
+  { "id": "poupar-gastar", "concept": "Ahorrar y Gastar", "emoji": "🐷", "explanation": "Ahorrar es guardar dinero para más tarde. Gastar es usar el dinero para comprar algo ahora. ¡Está bien hacer un poco de las dos cosas!" },
+  { "id": "precisar-querer", "concept": "Necesitar y Querer", "emoji": "🎁", "explanation": "Necesitar es algo sin lo que no podemos vivir, como comida o zapatos. Querer es algo que nos gustaría tener, como un juguete nuevo." },
+  { "id": "moedas-notas", "concept": "Monedas y Billetes", "emoji": "🪙", "explanation": "Usamos euros. Hay monedas pequeñas, los céntimos, y monedas y billetes de euros. Juntos nos ayudan a pagar las cosas." },
+  { "id": "paciencia", "concept": "La Paciencia de Ahorrar", "emoji": "⏳", "explanation": "A veces hay que esperar y ahorrar un poquito cada día hasta tener suficiente dinero para comprar algo especial." },
+  { "id": "mealheiro", "concept": "La Hucha", "emoji": "🐖", "explanation": "Una hucha es una cajita donde guardamos nuestras monedas. Cada moneda ahorrada nos acerca a nuestra meta." },
+  { "id": "trocar", "concept": "Recibir Cambio", "emoji": "🔄", "explanation": "Cuando pagamos con más dinero del que cuesta algo, recibimos cambio: el dinero de más que nos devuelven." },
+  { "id": "trabalho-dinheiro", "concept": "Trabajo y Dinero", "emoji": "🧹", "explanation": "Las personas trabajan para ganar dinero. Ayudar en casa también nos puede enseñar el valor del esfuerzo." },
+  { "id": "partilhar", "concept": "Compartir y Ayudar", "emoji": "🤝", "explanation": "Podemos usar un poco de nuestro dinero para ayudar a otros, como regalar algo a un amigo." }
+]
