@@ -6,6 +6,7 @@ import LanguagePicker from "./pages/LanguagePicker.jsx";
 import Alphabet from "./pages/Alphabet.jsx";
 import Reading from "./pages/Reading.jsx";
 import Songs from "./pages/Songs.jsx";
+import SessionEndOverlay from "./components/SessionEndOverlay.jsx";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         </Routes>
       </main>
       <NavBar />
+      <SessionEndOverlay />
     </div>
   );
 }

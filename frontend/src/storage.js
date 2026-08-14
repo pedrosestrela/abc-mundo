@@ -38,6 +38,22 @@ export function setLangPair(pair) {
   }
 }
 
+// Session-length tracking, kept in memory only (never persisted). A
+// "session" is just however long this tab has been open — reloading the
+// page starts a fresh session. Used by the gentle session-end nudge.
+let sessionStartTime = null;
+
+export function getSessionStartTime() {
+  if (sessionStartTime === null) {
+    sessionStartTime = Date.now();
+  }
+  return sessionStartTime;
+}
+
+export function getSessionElapsedMinutes() {
+  return (Date.now() - getSessionStartTime()) / 60000;
+}
+
 export function pingProgress({ profileName, module, event }) {
   try {
     fetch("/api/progress/ping", {
