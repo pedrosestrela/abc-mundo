@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { getReading } from "../content/index.js";
 import { getLangPair, getProfile, pingProgress, recordSkillEvent } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
+import HelpButton from "../components/HelpButton.jsx";
 
 export default function Reading() {
   const { t } = useTranslation();
@@ -20,6 +21,9 @@ export default function Reading() {
   return (
     <div className="page">
       <h1>{t("modules.readingTitle")} 📖</h1>
+      <div className="help-btn-corner">
+        <HelpButton text={t("modules.readingHelpMain")} langCode={pair.mother} />
+      </div>
       <div className="reading-list">
         {Array.from({ length: count }).map((_, i) => {
           const m = motherWords[i];

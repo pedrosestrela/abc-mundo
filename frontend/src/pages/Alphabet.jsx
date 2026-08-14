@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { getAlphabet, SUPPORTED_LANGUAGES } from "../content/index.js";
 import { getLangPair, getProfile, pingProgress, recordSkillEvent } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
+import HelpButton from "../components/HelpButton.jsx";
 
 function labelFor(code) {
   return SUPPORTED_LANGUAGES.find((l) => l.code === code)?.label || code;
@@ -30,6 +31,9 @@ export default function Alphabet() {
   return (
     <div className="page">
       <h1>{t("modules.alphabetTitle")} 🔤</h1>
+      <div className="help-btn-corner">
+        <HelpButton text={t("modules.alphabetHelp")} langCode={pair.mother} />
+      </div>
 
       <div className="letter-card">
         <div className="letter-forms">

@@ -4,6 +4,7 @@ import { getArtPrompts } from "../content/index.js";
 import { getLangPair, getProfile, getTriedArtPrompts, tryArtPrompt, pingProgress } from "../storage.js";
 import DrawingCanvas from "../components/DrawingCanvas.jsx";
 import SpeakButton from "../components/SpeakButton.jsx";
+import HelpButton from "../components/HelpButton.jsx";
 
 // Picks a deterministic "prompt of the day" so it doesn't change every
 // re-render, but still rotates day to day without needing a backend.
@@ -50,6 +51,9 @@ export default function Art() {
   return (
     <div className="page">
       <h1>{t("modules.artTitle")} 🎨</h1>
+      <div className="help-btn-corner">
+        <HelpButton text={t("modules.artHelpMain")} langCode={pair.mother} />
+      </div>
       <p className="page-intro">{t("modules.artIntro")}</p>
 
       <div className="mission-card mission-card-today art-active-card">

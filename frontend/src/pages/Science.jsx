@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { getScience } from "../content/index.js";
 import { getLangPair, getProfile, getExploredScience, exploreScienceCard, recordSkillEvent, pingProgress } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
+import HelpButton from "../components/HelpButton.jsx";
 
 const TOPIC_ICONS = {
   biology: "🧬",
@@ -39,6 +40,9 @@ export default function Science() {
   return (
     <div className="page">
       <h1>{t("modules.scienceTitle")} 🔬</h1>
+      <div className="help-btn-corner">
+        <HelpButton text={t("modules.scienceHelpMain")} langCode={pair.mother} />
+      </div>
       <p className="page-intro">{t("modules.scienceIntro")}</p>
 
       <h2 className="songs-heading">

@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { getStories } from "../content/index.js";
 import { getLangPair, getProfile, pingProgress, recordSkillEvent } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
+import HelpButton from "../components/HelpButton.jsx";
 
 export default function Stories() {
   const { t } = useTranslation();
@@ -91,6 +92,9 @@ export default function Stories() {
   return (
     <div className="page">
       <h1>{t("modules.storiesTitle")} 📚</h1>
+      <div className="help-btn-corner">
+        <HelpButton text={t("modules.storiesHelpMain")} langCode={pair.mother} />
+      </div>
       <div className="song-list">
         {Array.from({ length: count }).map((_, i) => {
           const s = secondaryStories[i];

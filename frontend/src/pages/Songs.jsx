@@ -5,6 +5,7 @@ import { getLangPair, getProfile, pingProgress } from "../storage.js";
 import { isSpeechAvailable, speakSequence } from "../speech.js";
 import { startBackgroundMusic, stopBackgroundMusic } from "../music.js";
 import Illustration from "../components/Illustrations.jsx";
+import HelpButton from "../components/HelpButton.jsx";
 
 export default function Songs() {
   const { t } = useTranslation();
@@ -24,6 +25,9 @@ export default function Songs() {
   return (
     <div className="page">
       <h1>{t("modules.songsTitle")} 🎵</h1>
+      <div className="help-btn-corner">
+        <HelpButton text={t("modules.songsHelpMain")} langCode={pair.secondary} />
+      </div>
       {!isSpeechAvailable() && <p className="speech-unavailable">{t("modules.speechUnavailable")}</p>}
       <div className="song-list">
         {songs.map((song) => (
