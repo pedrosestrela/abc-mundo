@@ -8,5 +8,17 @@
   { "word": "月", "emoji": "🌙", "hint": "yuè" },
   { "word": "小", "emoji": "🐭", "hint": "xiǎo" },
   { "word": "花", "emoji": "🌸", "hint": "huā" },
-  { "word": "好", "emoji": "👍", "hint": "hǎo" }
+  { "word": "好", "emoji": "👍", "hint": "hǎo" },
+  { "word": "妈妈", "emoji": "👩", "hint": "māma" },
+  { "word": "爸爸", "emoji": "👨", "hint": "bàba" },
+  { "word": "牛", "emoji": "🐄", "hint": "niú" },
+  { "word": "马", "emoji": "🐴", "hint": "mǎ" },
+  { "word": "鸟", "emoji": "🐦", "hint": "niǎo" },
+  { "word": "鱼", "emoji": "🐟", "hint": "yú" },
+  { "word": "雨", "emoji": "🌧️", "hint": "yǔ" },
+  { "word": "雪", "emoji": "❄️", "hint": "xuě" },
+  { "word": "家", "emoji": "🏠", "hint": "jiā" },
+  { "word": "朋友", "emoji": "🤝", "hint": "péngyǒu" },
+  { "word": "笑", "emoji": "😄", "hint": "xiào" },
+  { "word": "书", "emoji": "📖", "hint": "shū" }
 ]

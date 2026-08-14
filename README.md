@@ -81,19 +81,25 @@ que está em produção.
   variables → Actions).
 - Criar a app no Fly.io: `fly apps create abc-mundo-api`.
 - Criar o volume de dados: `fly volumes create abcmundo_data --size 1 -a abc-mundo-api -r lhr`.
-- Gerar ícones PNG reais a partir do placeholder SVG (`frontend/public/icon.svg`)
-  para melhor compatibilidade com lojas de apps e alguns launchers Android.
 - (Opcional/futuro) substituir os placeholders SVG e as canções sintetizadas
   por voz por ilustrações e áudio/vídeo reais gravados.
 
 ## Estado do projeto
 
-Isto é um **scaffold v1**:
+Isto é um **scaffold v2**, pronto para deploy assim que os passos manuais
+acima forem feitos:
 
-- Os 5 idiomas estão estruturalmente ligados (seletor, conteúdo, UI).
-- O Mandarim é um conjunto inicial de ~30 caracteres comuns, pensado para
-  ser expandido (não é um "alfabeto" completo — o Mandarim não tem
-  alfabeto no sentido ocidental).
+- Os 7 idiomas estão estruturalmente ligados (seletor, conteúdo, UI).
+- Cada idioma latino tem ~22 palavras de leitura (antes 10) e 3 canções.
+- O Mandarim tem agora ~50 caracteres comuns (antes ~30) e 22 palavras de
+  leitura, pensado para continuar a ser expandido (não é um "alfabeto"
+  completo — o Mandarim não tem alfabeto no sentido ocidental).
+- Ícones PNG reais (192×192, 512×512, e uma variante "maskable") foram
+  gerados a partir do SVG e ligados ao `manifest.json` e ao `index.html`
+  (`apple-touch-icon`), para melhor compatibilidade com PWA installability
+  em Android/iOS.
+- Build de produção do frontend (`npm run build`) e import do backend
+  (`backend/main.py`) foram validados localmente.
 - Todo o áudio usa a Web Speech API do navegador (`speechSynthesis`) e
   todas as ilustrações das canções são SVG inline — nada foi descarregado
   ou reutilizado de fontes com direitos de autor. Estes podem ser

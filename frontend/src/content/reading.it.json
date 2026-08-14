@@ -8,5 +8,17 @@
   { "word": "MELA", "emoji": "🍎", "hint": "M come Mela" },
   { "word": "TIGRE", "emoji": "🐯", "hint": "T come Tigre" },
   { "word": "MUCCA", "emoji": "🐄", "hint": "M come Mucca" },
-  { "word": "ZEBRA", "emoji": "🦓", "hint": "Z come Zebra" }
+  { "word": "ZEBRA", "emoji": "🦓", "hint": "Z come Zebra" },
+  { "word": "ALBERO", "emoji": "🌳", "hint": "A come Albero" },
+  { "word": "BALENA", "emoji": "🐳", "hint": "B come Balena" },
+  { "word": "DADO", "emoji": "🎲", "hint": "D come Dado" },
+  { "word": "ELEFANTE", "emoji": "🐘", "hint": "E come Elefante" },
+  { "word": "FIORE", "emoji": "🌸", "hint": "F come Fiore" },
+  { "word": "GUFO", "emoji": "🦉", "hint": "G come Gufo" },
+  { "word": "ISOLA", "emoji": "🏝️", "hint": "I come Isola" },
+  { "word": "NUVOLA", "emoji": "☁️", "hint": "N come Nuvola" },
+  { "word": "OCA", "emoji": "🦢", "hint": "O come Oca" },
+  { "word": "RANA", "emoji": "🐸", "hint": "R come Rana" },
+  { "word": "UOVO", "emoji": "🥚", "hint": "U come Uovo" },
+  { "word": "VOLPE", "emoji": "🦊", "hint": "V come Volpe" }
 ]
