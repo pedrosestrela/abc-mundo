@@ -461,5 +461,14 @@ export function getPortugalHistory(langCode) {
     emoji: e.emoji,
     title: e.title[langCode] || e.title.pt,
     description: e.description[langCode] || e.description.pt,
+    relatedSong: e.relatedSong
+      ? {
+          title: e.relatedSong.title,
+          composer: e.relatedSong.composer,
+          canPlayFull: e.relatedSong.canPlayFull,
+          songId: e.relatedSong.songId,
+          historicalNote: e.relatedSong.historicalNote[langCode] || e.relatedSong.historicalNote.pt,
+        }
+      : null,
   }));
 }
