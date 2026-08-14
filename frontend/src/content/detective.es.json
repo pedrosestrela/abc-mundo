@@ -173,5 +173,269 @@
     "emoji": "💻",
     "isFact": false,
     "explanation": "¡Es un mito y una broma! Pasar mucho tiempo frente a pantallas puede cansar los ojos, pero no cambia su forma. Aun así, es importante hacer pausas."
+  },
+  {
+    "id": "d26",
+    "type": "observation",
+    "emoji": "👣",
+    "title": "El Caso de las Huellas",
+    "scene": "Se encontraron huellas de barro en el pasillo de la escuela hasta el aula, y la ventana del aula estaba abierta.",
+    "clues": [
+      {
+        "id": "c1",
+        "emoji": "👟",
+        "text": "Huellas de barro grandes en el suelo"
+      },
+      {
+        "id": "c2",
+        "emoji": "🪟",
+        "text": "La ventana estaba abierta"
+      },
+      {
+        "id": "c3",
+        "emoji": "🎒",
+        "text": "Una mochila azul junto a la puerta"
+      }
+    ],
+    "question": "¿Qué pista muestra por dónde entró quien ensució el suelo?",
+    "correctClueId": "c1",
+    "explanation": "Las huellas son la pista más directa: muestran exactamente el camino de quien entró con los zapatos sucios. La ventana abierta o la mochila pueden no tener nada que ver con el caso."
+  },
+  {
+    "id": "d27",
+    "type": "observation",
+    "emoji": "🥀",
+    "title": "El Misterio de la Planta Marchita",
+    "scene": "La planta del aula se marchitó después del fin de semana, aunque fue regada el viernes antes de que todos se fueran.",
+    "clues": [
+      {
+        "id": "c1",
+        "emoji": "☀️",
+        "text": "La maceta estaba cerca de la ventana, con sol fuerte"
+      },
+      {
+        "id": "c2",
+        "emoji": "💧",
+        "text": "La tierra estaba seca y agrietada"
+      },
+      {
+        "id": "c3",
+        "emoji": "🪴",
+        "text": "La maceta es de barro rojo"
+      }
+    ],
+    "question": "¿Qué pista explica mejor por qué se marchitó la planta?",
+    "correctClueId": "c2",
+    "explanation": "La tierra seca y agrietada muestra que el agua se evaporó rápido con el calor del fin de semana. Fue la falta de agua, no el color de la maceta, lo que marchitó la planta."
+  },
+  {
+    "id": "d28",
+    "type": "observation",
+    "emoji": "🍦",
+    "title": "La Foto Engañosa",
+    "scene": "Una foto muestra la mano de un niño sosteniendo un helado que parece gigante, más grande que su cabeza.",
+    "clues": [
+      {
+        "id": "c1",
+        "emoji": "📷",
+        "text": "La foto se tomó muy cerca del helado"
+      },
+      {
+        "id": "c2",
+        "emoji": "🧒",
+        "text": "No se ve el resto del cuerpo del niño en la foto"
+      },
+      {
+        "id": "c3",
+        "emoji": "🍨",
+        "text": "El helado tiene varias bolas de colores"
+      }
+    ],
+    "question": "¿Qué pista explica por qué el helado parece tan gigante?",
+    "correctClueId": "c1",
+    "explanation": "Cuando algo está muy cerca de la cámara, parece más grande de lo que realmente es. Las fotos solo muestran una parte de la realidad — siempre vale la pena pensar en lo que queda fuera de la imagen."
+  },
+  {
+    "id": "d29",
+    "type": "deduction",
+    "emoji": "🎂",
+    "title": "¿Quién Se Comió el Pastel?",
+    "setup": "¡El pastel de chocolate desapareció de la cocina! Hay tres sospechosos.",
+    "suspects": [
+      {
+        "id": "tomas",
+        "name": "Tomás",
+        "emoji": "🧒"
+      },
+      {
+        "id": "ines",
+        "name": "Inés",
+        "emoji": "👧"
+      },
+      {
+        "id": "bobi",
+        "name": "Bobi",
+        "emoji": "🐶"
+      }
+    ],
+    "statements": [
+      "Tomás estuvo jugando a la pelota en el jardín toda la tarde.",
+      "Inés tenía chocolate alrededor de la boca cuando llegó mamá.",
+      "Bobi estuvo durmiendo en su cama todo el día."
+    ],
+    "question": "¿Quién se comió el pastel?",
+    "solutionId": "ines",
+    "explanation": "Tomás estaba en el jardín y Bobi estaba durmiendo — ninguno de los dos pudo haberlo comido. Inés tenía chocolate en la boca, una pista clara de que fue ella."
+  },
+  {
+    "id": "d30",
+    "type": "deduction",
+    "emoji": "🏺",
+    "title": "¿Quién Rompió el Jarrón?",
+    "setup": "El jarrón de la sala se rompió mientras los padres estaban trabajando. Hay tres sospechosos.",
+    "suspects": [
+      {
+        "id": "whiskers",
+        "name": "Whiskers",
+        "emoji": "🐱"
+      },
+      {
+        "id": "maria",
+        "name": "María",
+        "emoji": "👧"
+      },
+      {
+        "id": "pedro",
+        "name": "Pedro",
+        "emoji": "🧒"
+      }
+    ],
+    "statements": [
+      "El gato Whiskers estuvo encerrado fuera todo el día.",
+      "María estuvo en la escuela hasta las 17h, cuando el jarrón aún estaba entero.",
+      "Pedro se quedó solo en casa jugando a la pelota dentro de la sala."
+    ],
+    "question": "¿Quién rompió el jarrón?",
+    "solutionId": "pedro",
+    "explanation": "Whiskers estaba encerrado fuera y María estaba en la escuela cuando el jarrón aún estaba entero — ninguno de los dos pudo haber sido. Solo Pedro estuvo en casa jugando a la pelota dentro de la sala."
+  },
+  {
+    "id": "d31",
+    "type": "deduction",
+    "emoji": "🍪",
+    "title": "¿Quién Se Comió las Galletas?",
+    "setup": "Las galletas de chocolate desaparecieron del tarro. Hay tres sospechosos.",
+    "suspects": [
+      {
+        "id": "avo",
+        "name": "Abuela",
+        "emoji": "👵"
+      },
+      {
+        "id": "bebe",
+        "name": "Bebé",
+        "emoji": "👶"
+      },
+      {
+        "id": "irmao",
+        "name": "Hermano mayor",
+        "emoji": "🧑"
+      }
+    ],
+    "statements": [
+      "A la abuela no le gustan las galletas de chocolate y nunca las come.",
+      "El bebé todavía no tiene dientes para comer galletas duras.",
+      "El hermano mayor tenía migas de galleta en el bolsillo."
+    ],
+    "question": "¿Quién se comió las galletas?",
+    "solutionId": "irmao",
+    "explanation": "A la abuela no le gustan esas galletas y el bebé no puede masticarlas — ninguno de los dos pudo haber sido. Las migas en el bolsillo del hermano son la pista que lo delata."
+  },
+  {
+    "id": "d32",
+    "type": "sources",
+    "emoji": "🍫",
+    "title": "¿Será Verdad? — El Chocolate Mágico",
+    "claim": "Un compañero dijo que si comes chocolate todos los días obtienes superpoderes.",
+    "sourceA": {
+      "label": "Un amigo de la escuela",
+      "text": "Dijo que lo escuchó de otro amigo, pero no sabe dónde se confirmó.",
+      "credible": false
+    },
+    "sourceB": {
+      "label": "Un libro de ciencia sobre el cuerpo humano",
+      "text": "Explica cómo la alimentación afecta la salud, pero nunca habla de superpoderes.",
+      "credible": true
+    },
+    "correctSourceId": "b",
+    "explanation": "Un libro de ciencia está escrito por expertos y revisado con cuidado, por eso es más fiable que un rumor entre amigos. Cuando algo parece demasiado bueno para ser verdad, vale la pena comprobarlo en una fuente seria."
+  },
+  {
+    "id": "d33",
+    "type": "sources",
+    "emoji": "📅",
+    "title": "¿Será Verdad? — El Feriado Secreto",
+    "claim": "Un mensaje en internet dice que mañana no hay clases por un feriado secreto.",
+    "sourceA": {
+      "label": "Un mensaje reenviado por desconocidos en un grupo",
+      "text": "Nadie sabe quién lo escribió primero ni de dónde vino la información.",
+      "credible": false
+    },
+    "sourceB": {
+      "label": "El sitio web oficial de la escuela",
+      "text": "Publica siempre el calendario escolar oficial y confirmado.",
+      "credible": true
+    },
+    "correctSourceId": "b",
+    "explanation": "El sitio web oficial de la escuela es la fuente que realmente decide el calendario — siempre es más fiable que un mensaje que pasó por muchas personas y pudo haber cambiado en el camino."
+  },
+  {
+    "id": "d34",
+    "type": "sources",
+    "emoji": "🦖",
+    "title": "¿Será Verdad? — El Dinosaurio Vivo",
+    "claim": "Alguien en redes sociales dice que vio un dinosaurio vivo en un bosque.",
+    "sourceA": {
+      "label": "Un vídeo sin explicación de dónde fue filmado",
+      "text": "No muestra pruebas ni contexto sobre el lugar o la fecha.",
+      "credible": false
+    },
+    "sourceB": {
+      "label": "Un museo de ciencias naturales",
+      "text": "Explica que los dinosaurios no aviares se extinguieron hace millones de años, con muchas pruebas fósiles.",
+      "credible": true
+    },
+    "correctSourceId": "b",
+    "explanation": "Un museo de ciencias se basa en muchas pruebas estudiadas por expertos durante años. Un solo vídeo, sin explicación ni contexto, fácilmente puede ser un engaño o un montaje."
+  },
+  {
+    "id": "d35",
+    "type": "aiError",
+    "emoji": "🕷️",
+    "title": "La IA Se Equivocó — Las Patas de la Araña",
+    "aiQuestion": "¿Cuántas patas tiene una araña?",
+    "aiAnswer": "Una araña tiene 6 patas, igual que un insecto.",
+    "correctAnswer": "Una araña tiene 8 patas — por eso no es un insecto, es un arácnido.",
+    "explanation": "¡La IA respondió mal! Las arañas tienen 8 patas, no 6. Incluso las computadoras y la inteligencia artificial pueden equivocarse, así que siempre vale la pena confirmar con lo que ya sabes o con un libro."
+  },
+  {
+    "id": "d36",
+    "type": "aiError",
+    "emoji": "🏙️",
+    "title": "La IA Se Equivocó — La Capital de Portugal",
+    "aiQuestion": "¿Cuál es la capital de Portugal?",
+    "aiAnswer": "La capital de Portugal es Oporto.",
+    "correctAnswer": "La capital de Portugal es Lisboa.",
+    "explanation": "¡La IA respondió mal! La capital de Portugal es Lisboa, no Oporto. Comprobar datos importantes en un libro, atlas o con un adulto ayuda a detectar estos errores."
+  },
+  {
+    "id": "d37",
+    "type": "aiError",
+    "emoji": "📅",
+    "title": "La IA Se Equivocó — Los Días de la Semana",
+    "aiQuestion": "¿Cuántos días tiene una semana?",
+    "aiAnswer": "Una semana tiene 5 días.",
+    "correctAnswer": "Una semana tiene 7 días.",
+    "explanation": "¡La IA respondió mal! Una semana siempre tiene 7 días. Es un buen recordatorio de que vale la pena pensar por ti mismo antes de aceptar cualquier respuesta, incluso de una computadora."
   }
 ]

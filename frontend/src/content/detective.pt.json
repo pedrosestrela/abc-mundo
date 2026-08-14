@@ -173,5 +173,269 @@
     "emoji": "💻",
     "isFact": false,
     "explanation": "É um mito e uma brincadeira! Passar muito tempo ao ecrã pode cansar os olhos, mas não muda a sua forma. Ainda assim, é importante fazer pausas."
+  },
+  {
+    "id": "d26",
+    "type": "observation",
+    "emoji": "👣",
+    "title": "O Caso das Pegadas",
+    "scene": "Encontraram-se pegadas de lama no corredor da escola até à sala de aula, e a janela da sala estava aberta.",
+    "clues": [
+      {
+        "id": "c1",
+        "emoji": "👟",
+        "text": "Pegadas de lama grandes no chão"
+      },
+      {
+        "id": "c2",
+        "emoji": "🪟",
+        "text": "A janela estava aberta"
+      },
+      {
+        "id": "c3",
+        "emoji": "🎒",
+        "text": "Uma mochila azul ao lado da porta"
+      }
+    ],
+    "question": "Qual pista mostra por onde entrou quem sujou o chão?",
+    "correctClueId": "c1",
+    "explanation": "As pegadas são a pista mais direta: mostram exatamente o trajeto de quem entrou com os sapatos sujos. A janela aberta ou a mochila podem não ter nada a ver com o caso."
+  },
+  {
+    "id": "d27",
+    "type": "observation",
+    "emoji": "🥀",
+    "title": "O Mistério da Planta Murcha",
+    "scene": "A planta da sala de aula ficou murcha depois do fim de semana, mesmo tendo sido regada na sexta-feira antes de todos saírem.",
+    "clues": [
+      {
+        "id": "c1",
+        "emoji": "☀️",
+        "text": "O vaso estava perto da janela, ao sol forte"
+      },
+      {
+        "id": "c2",
+        "emoji": "💧",
+        "text": "A terra estava seca e rachada"
+      },
+      {
+        "id": "c3",
+        "emoji": "🪴",
+        "text": "O vaso é de barro vermelho"
+      }
+    ],
+    "question": "Qual pista explica melhor porque a planta murchou?",
+    "correctClueId": "c2",
+    "explanation": "A terra seca e rachada mostra que a água evaporou depressa com o calor do fim de semana. Foi a falta de água, não a cor do vaso, que fez a planta murchar."
+  },
+  {
+    "id": "d28",
+    "type": "observation",
+    "emoji": "🍦",
+    "title": "A Fotografia Enganadora",
+    "scene": "Uma foto mostra a mão de uma criança a segurar um gelado que parece gigante, maior do que a cabeça dela.",
+    "clues": [
+      {
+        "id": "c1",
+        "emoji": "📷",
+        "text": "A foto foi tirada bem perto do gelado"
+      },
+      {
+        "id": "c2",
+        "emoji": "🧒",
+        "text": "Não se vê o resto do corpo da criança na foto"
+      },
+      {
+        "id": "c3",
+        "emoji": "🍨",
+        "text": "O gelado tem várias bolas coloridas"
+      }
+    ],
+    "question": "Qual pista explica porque o gelado parece tão gigante?",
+    "correctClueId": "c1",
+    "explanation": "Quando uma coisa está muito perto da câmara, parece maior do que realmente é. As fotos só mostram uma parte da realidade — por isso vale sempre a pena pensar no que fica fora da imagem."
+  },
+  {
+    "id": "d29",
+    "type": "deduction",
+    "emoji": "🎂",
+    "title": "Quem Comeu o Bolo?",
+    "setup": "O bolo de chocolate desapareceu da cozinha! Há três suspeitos.",
+    "suspects": [
+      {
+        "id": "tomas",
+        "name": "Tomás",
+        "emoji": "🧒"
+      },
+      {
+        "id": "ines",
+        "name": "Inês",
+        "emoji": "👧"
+      },
+      {
+        "id": "bobi",
+        "name": "Bobi",
+        "emoji": "🐶"
+      }
+    ],
+    "statements": [
+      "O Tomás estava a jogar à bola no jardim durante toda a tarde.",
+      "A Inês tinha chocolate à volta da boca quando a mãe chegou.",
+      "O Bobi esteve a dormir na sua caminha o dia todo."
+    ],
+    "question": "Quem comeu o bolo?",
+    "solutionId": "ines",
+    "explanation": "O Tomás estava no jardim e o Bobi estava a dormir — nenhum dos dois podia ter comido o bolo. A Inês tinha chocolate na boca, uma pista clara de que foi ela."
+  },
+  {
+    "id": "d30",
+    "type": "deduction",
+    "emoji": "🏺",
+    "title": "Quem Partiu o Vaso?",
+    "setup": "O vaso da sala partiu-se enquanto os pais estavam a trabalhar. Há três suspeitos.",
+    "suspects": [
+      {
+        "id": "whiskers",
+        "name": "Whiskers",
+        "emoji": "🐱"
+      },
+      {
+        "id": "maria",
+        "name": "Maria",
+        "emoji": "👧"
+      },
+      {
+        "id": "pedro",
+        "name": "Pedro",
+        "emoji": "🧒"
+      }
+    ],
+    "statements": [
+      "O gato Whiskers esteve fechado lá fora o dia todo.",
+      "A Maria esteve na escola até às 17h, quando o vaso ainda estava inteiro.",
+      "O Pedro ficou em casa sozinho a jogar à bola dentro da sala."
+    ],
+    "question": "Quem partiu o vaso?",
+    "solutionId": "pedro",
+    "explanation": "O Whiskers estava fechado lá fora e a Maria estava na escola quando o vaso ainda estava inteiro — nenhum dos dois pode ter sido. Só o Pedro esteve em casa a jogar à bola dentro da sala."
+  },
+  {
+    "id": "d31",
+    "type": "deduction",
+    "emoji": "🍪",
+    "title": "Quem Comeu os Biscoitos?",
+    "setup": "Os biscoitos de chocolate desapareceram do frasco. Há três suspeitos.",
+    "suspects": [
+      {
+        "id": "avo",
+        "name": "Avó",
+        "emoji": "👵"
+      },
+      {
+        "id": "bebe",
+        "name": "Bebé",
+        "emoji": "👶"
+      },
+      {
+        "id": "irmao",
+        "name": "Irmão mais velho",
+        "emoji": "🧑"
+      }
+    ],
+    "statements": [
+      "A avó não gosta de biscoitos de chocolate e nunca os come.",
+      "O bebé ainda não tem dentes para comer biscoitos duros.",
+      "O irmão mais velho tinha migalhas de biscoito no bolso."
+    ],
+    "question": "Quem comeu os biscoitos?",
+    "solutionId": "irmao",
+    "explanation": "A avó não gosta desses biscoitos e o bebé não consegue mastigá-los — nenhum dos dois pode ter sido. As migalhas no bolso do irmão são a pista que o denuncia."
+  },
+  {
+    "id": "d32",
+    "type": "sources",
+    "emoji": "🍫",
+    "title": "Será Verdade? — O Chocolate Mágico",
+    "claim": "Um colega disse que se comeres chocolate todos os dias ficas com super poderes.",
+    "sourceA": {
+      "label": "Um amigo da escola",
+      "text": "Disse que ouviu de outro amigo, mas não sabe onde isso foi confirmado.",
+      "credible": false
+    },
+    "sourceB": {
+      "label": "Um livro de ciência sobre o corpo humano",
+      "text": "Explica como a alimentação afeta a saúde, mas nunca fala de super poderes.",
+      "credible": true
+    },
+    "correctSourceId": "b",
+    "explanation": "Um livro de ciência é escrito por especialistas e revisto com cuidado, por isso é mais fiável do que um boato entre amigos. Quando algo parece bom demais para ser verdade, vale a pena verificar numa fonte séria."
+  },
+  {
+    "id": "d33",
+    "type": "sources",
+    "emoji": "📅",
+    "title": "Será Verdade? — O Feriado Secreto",
+    "claim": "Uma mensagem na internet diz que amanhã não há aulas por causa de um feriado secreto.",
+    "sourceA": {
+      "label": "Uma mensagem reenviada por desconhecidos num grupo",
+      "text": "Ninguém sabe quem a escreveu primeiro nem de onde veio a informação.",
+      "credible": false
+    },
+    "sourceB": {
+      "label": "O site oficial da escola",
+      "text": "Publica sempre o calendário escolar oficial e confirmado.",
+      "credible": true
+    },
+    "correctSourceId": "b",
+    "explanation": "O site oficial da escola é a fonte que realmente decide o calendário — é sempre mais fiável do que uma mensagem que já passou por muitas pessoas e pode ter mudado pelo caminho."
+  },
+  {
+    "id": "d34",
+    "type": "sources",
+    "emoji": "🦖",
+    "title": "Será Verdade? — O Dinossauro Vivo",
+    "claim": "Uma pessoa nas redes sociais diz que viu um dinossauro vivo numa floresta.",
+    "sourceA": {
+      "label": "Um vídeo sem explicação de onde foi filmado",
+      "text": "Não mostra provas nem contexto sobre o local ou a data.",
+      "credible": false
+    },
+    "sourceB": {
+      "label": "Um museu de ciências naturais",
+      "text": "Explica que os dinossauros não-aves foram extintos há milhões de anos, com muitas provas fósseis.",
+      "credible": true
+    },
+    "correctSourceId": "b",
+    "explanation": "Um museu de ciências baseia-se em muitas provas estudadas por especialistas durante anos. Um vídeo sozinho, sem explicação nem contexto, pode facilmente ser um engano ou uma montagem."
+  },
+  {
+    "id": "d35",
+    "type": "aiError",
+    "emoji": "🕷️",
+    "title": "A IA Enganou-se — As Patas da Aranha",
+    "aiQuestion": "Quantas patas tem uma aranha?",
+    "aiAnswer": "Uma aranha tem 6 patas, tal como um inseto.",
+    "correctAnswer": "Uma aranha tem 8 patas — por isso não é um inseto, é um aracnídeo.",
+    "explanation": "A IA respondeu errado! As aranhas têm 8 patas, não 6. Mesmo os computadores e a inteligência artificial podem errar, por isso vale sempre a pena confirmar com o que já sabes ou com um livro."
+  },
+  {
+    "id": "d36",
+    "type": "aiError",
+    "emoji": "🏙️",
+    "title": "A IA Enganou-se — A Capital de Portugal",
+    "aiQuestion": "Qual é a capital de Portugal?",
+    "aiAnswer": "A capital de Portugal é o Porto.",
+    "correctAnswer": "A capital de Portugal é Lisboa.",
+    "explanation": "A IA respondeu errado! A capital de Portugal é Lisboa, não o Porto. Confirmar factos importantes num livro, atlas ou com um adulto ajuda a apanhar estes erros."
+  },
+  {
+    "id": "d37",
+    "type": "aiError",
+    "emoji": "📅",
+    "title": "A IA Enganou-se — Os Dias da Semana",
+    "aiQuestion": "Quantos dias tem uma semana?",
+    "aiAnswer": "Uma semana tem 5 dias.",
+    "correctAnswer": "Uma semana tem 7 dias.",
+    "explanation": "A IA respondeu errado! Uma semana tem sempre 7 dias. É um bom lembrete de que vale a pena pensar por ti mesmo antes de aceitar qualquer resposta, mesmo de um computador."
   }
 ]

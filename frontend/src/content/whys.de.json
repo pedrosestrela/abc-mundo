@@ -5,7 +5,12 @@
     "question": "Warum regnet es?",
     "quickAnswer": "Wasser aus dem Meer, aus Flüssen und Seen verdunstet, steigt in den Himmel und bildet Wolken. Wenn die Wolken zu voll mit Wasser sind, fällt es als Regen herunter.",
     "moreAnswer": "Die Sonne erwärmt das Wasser und verwandelt es in unsichtbaren Dampf, der in der Luft aufsteigt. Weiter oben ist es kälter, deshalb kondensiert der Dampf zu winzigen Tröpfchen, die Wolken bilden. Wenn die Tröpfchen sich verbinden und zu schwer werden, fallen sie als Regen herab. Danach kehrt alles zum Meer und zu den Flüssen zurück, und der Kreislauf beginnt von vorn — man nennt es den Wasserkreislauf.",
-    "experiment": "Beobachte an einem heißen Tag morgens eine Pfütze in der Sonne und schau, wie sie im Laufe des Tages verschwindet. Wohin ist das Wasser gegangen?"
+    "experiment": "Beobachte an einem heißen Tag morgens eine Pfütze in der Sonne und schau, wie sie im Laufe des Tages verschwindet. Wohin ist das Wasser gegangen?",
+    "relatedQuestionIds": [
+      "vento-origem",
+      "mar-salgado",
+      "gelo-flutua"
+    ]
   },
   {
     "id": "ceu-azul",
@@ -13,7 +18,12 @@
     "question": "Warum ist der Himmel blau?",
     "quickAnswer": "Sonnenlicht enthält alle Farben gemischt. Wenn es in die Atmosphäre eintritt, streut sich Blau viel stärker als die anderen Farben, deshalb sehen wir einen blauen Himmel.",
     "moreAnswer": "Sonnenlicht sieht weiß aus, besteht aber eigentlich aus mehreren Farben, wie ein Regenbogen. Luft besteht aus winzigen Teilchen, die das Licht in alle Richtungen ablenken — man nennt das Streuung. Blaues Licht hat kürzere Wellen und streut viel stärker als Rot oder Gelb, deshalb wirkt der Himmel tagsüber blau.",
-    "experiment": "Beobachte bei Sonnenuntergang, wie der Himmel orange und rot statt blau wird. Das passiert, weil das Licht dann durch mehr Atmosphäre reisen muss."
+    "experiment": "Beobachte bei Sonnenuntergang, wie der Himmel orange und rot statt blau wird. Das passiert, weil das Licht dann durch mehr Atmosphäre reisen muss.",
+    "relatedQuestionIds": [
+      "arco-iris",
+      "arco-iris-formacao",
+      "estrelas-brilham"
+    ]
   },
   {
     "id": "dormir",
@@ -21,7 +31,12 @@
     "question": "Warum schlafen wir?",
     "quickAnswer": "Schlaf lässt Körper und Gehirn sich ausruhen, hilft uns zu wachsen und alles zu speichern, was wir tagsüber gelernt haben.",
     "moreAnswer": "Während wir schlafen, ordnet das Gehirn alles, was wir gelernt und erlebt haben, so wie man eine Schublade voller Dinge aufräumt. Der Körper nutzt diese Zeit, um Muskeln zu reparieren, Wachstumshormone zu produzieren und das Immunsystem zu stärken. Ohne genug Schlaf werden wir müde, vergesslich und werden leichter krank.",
-    "experiment": "Führe eine Woche lang Buch darüber, wie viele Stunden du schläfst, und beobachte, wie du dich an Tagen mit mehr oder weniger Schlaf fühlst."
+    "experiment": "Führe eine Woche lang Buch darüber, wie viele Stunden du schläfst, und beobachte, wie du dich an Tagen mit mehr oder weniger Schlaf fühlst.",
+    "relatedQuestionIds": [
+      "sono-necessidade",
+      "bocejo",
+      "coracao"
+    ]
   },
   {
     "id": "coracao",
@@ -29,7 +44,12 @@
     "question": "Warum schlägt das Herz?",
     "quickAnswer": "Das Herz schlägt, um Blut durch den ganzen Körper zu pumpen und jedem Teil von dir Sauerstoff und Nahrung zu bringen.",
     "moreAnswer": "Das Herz ist ein ganz besonderer Muskel, der sich ununterbrochen zusammenzieht und entspannt, wie eine Pumpe. Jeder Schlag drückt sauerstoffreiches Blut zu Lunge, Muskeln und Gehirn. Wenn du rennst oder dich erschrickst, schlägt dein Herz schneller, weil dein Körper mehr Sauerstoff braucht.",
-    "experiment": "Laufe eine Minute lang auf der Stelle und lege dann die Hand auf die Brust. Spürst du, wie dein Herz schneller schlägt?"
+    "experiment": "Laufe eine Minute lang auf der Stelle und lege dann die Hand auf die Brust. Spürst du, wie dein Herz schneller schlägt?",
+    "relatedQuestionIds": [
+      "dormir",
+      "frio",
+      "bocejo"
+    ]
   },
   {
     "id": "aviao",
@@ -37,7 +57,11 @@
     "question": "Wie fliegt ein Flugzeug?",
     "quickAnswer": "Die Tragflächen eines Flugzeugs haben eine besondere Form, durch die die Luft oben schneller strömt als unten — das erzeugt eine Kraft, die das Flugzeug nach oben drückt.",
     "moreAnswer": "Diese Kraft nennt man Auftrieb. Die Tragfläche ist oben gewölbt und unten flacher, sodass die Luft oben einen längeren Weg zurücklegt und weniger Druck erzeugt. Der höhere Druck von unten drückt die Tragfläche nach oben in die Luft. Die Triebwerke liefern die nötige Geschwindigkeit dafür.",
-    "experiment": "Puste über einen Papierstreifen, den du nah am Mund hältst, und beobachte, wie er sich hebt — das ist derselbe Auftrieb!"
+    "experiment": "Puste über einen Papierstreifen, den du nah am Mund hältst, und beobachte, wie er sich hebt — das ist derselbe Auftrieb!",
+    "relatedQuestionIds": [
+      "vento-origem",
+      "barco"
+    ]
   },
   {
     "id": "barco",
@@ -45,7 +69,12 @@
     "question": "Warum schwimmt ein Boot?",
     "quickAnswer": "Ein Boot schwimmt, weil es mehr Wasser verdrängt, als es selbst wiegt, und das Wasser es nach oben drückt.",
     "moreAnswer": "Das nennt man das Archimedische Prinzip: Jeder Gegenstand im Wasser erfährt eine Kraft nach oben, die genauso groß ist wie das Gewicht des verdrängten Wassers. Ein Boot hat eine breite, hohle Form, deshalb verdrängt es viel Wasser, obwohl es schwer ist, und diese Kraft reicht aus, um es schwimmen zu lassen.",
-    "experiment": "Bastle ein kleines Boot aus Alufolie und lass es in einer Schüssel schwimmen. Knülle es dann zu einer Kugel — warum sinkt es jetzt?"
+    "experiment": "Bastle ein kleines Boot aus Alufolie und lass es in einer Schüssel schwimmen. Knülle es dann zu einer Kugel — warum sinkt es jetzt?",
+    "relatedQuestionIds": [
+      "aviao",
+      "gelo-flutua",
+      "mar-salgado"
+    ]
   },
   {
     "id": "eletricidade",
@@ -53,7 +82,10 @@
     "question": "Woher kommt der Strom?",
     "quickAnswer": "Strom wird in Kraftwerken erzeugt, die andere Energieformen wie Wind, Wasser oder Sonnenlicht in elektrische Energie umwandeln.",
     "moreAnswer": "In Kraftwerken bringt etwas eine Turbine sehr schnell zum Drehen — das kann fallendes Wasser, starker Wind oder heißer Dampf sein. Die Turbine ist mit einem Generator verbunden, der diese Bewegung in Strom umwandelt. Danach reist der Strom über Kabel bis zu unseren Häusern.",
-    "experiment": "Suche in deiner Nähe eine Windmühle oder eine Solaranlage und beobachte, wie sie Wind oder Sonnenlicht nutzen."
+    "experiment": "Suche in deiner Nähe eine Windmühle oder eine Solaranlage und beobachte, wie sie Wind oder Sonnenlicht nutzen.",
+    "relatedQuestionIds": [
+      "vento-origem"
+    ]
   },
   {
     "id": "dinossauros",
@@ -61,7 +93,10 @@
     "question": "Warum sind die Dinosaurier verschwunden?",
     "quickAnswer": "Wissenschaftler glauben, dass vor Millionen von Jahren ein riesiger Asteroid auf die Erde traf und das Klima so schnell veränderte, dass die Dinosaurier nicht überleben konnten.",
     "moreAnswer": "Vor etwa 66 Millionen Jahren schlug ein riesiger Asteroid auf der Erde ein. Der Einschlag wirbelte so viel Staub und Asche in die Luft, dass es lange dunkel blieb und der Planet kalt wurde, ohne genug Licht für Pflanzen zum Wachsen. Ohne Nahrung überlebten die meisten Dinosaurier nicht. Nur wenige kleine Tiere, wie die Vorfahren der Vögel, konnten sich durchschlagen.",
-    "experiment": null
+    "experiment": null,
+    "relatedQuestionIds": [
+      "aves-migracao"
+    ]
   },
   {
     "id": "sombra",
@@ -69,7 +104,11 @@
     "question": "Warum haben wir einen Schatten?",
     "quickAnswer": "Ein Schatten entsteht, wenn dein Körper das Licht blockiert und es nicht auf den Boden hinter dir treffen lässt.",
     "moreAnswer": "Licht bewegt sich immer geradlinig. Wenn ein undurchsichtiger Gegenstand, wie dein Körper, im Weg steht, kann das Licht nicht hindurch, deshalb bleibt auf der anderen Seite ein dunkler Bereich — der Schatten. Je näher die Lichtquelle bei dir ist, desto größer und schärfer wird der Schatten.",
-    "experiment": "Betrachte an einem sonnigen Tag deinen Schatten morgens, mittags und nachmittags. Beobachte, wie sich Größe und Richtung verändern."
+    "experiment": "Betrachte an einem sonnigen Tag deinen Schatten morgens, mittags und nachmittags. Beobachte, wie sich Größe und Richtung verändern.",
+    "relatedQuestionIds": [
+      "ceu-azul",
+      "arco-iris"
+    ]
   },
   {
     "id": "lua",
@@ -77,7 +116,11 @@
     "question": "Warum ändert der Mond seine Form?",
     "quickAnswer": "Der Mond ändert seine Form gar nicht wirklich — wir sehen nur unterschiedliche Teile von ihm, die von der Sonne beleuchtet werden, je nach seiner Position zur Erde.",
     "moreAnswer": "Der Mond hat kein eigenes Licht; er spiegelt das Licht der Sonne. Während der Mond die Erde umkreist, sehen wir unterschiedliche beleuchtete Teile: manchmal sehen wir ihn ganz (Vollmond), manchmal nur ein schmales Stück (Neumond oder Sichelmond). Dieser ganze Zyklus dauert etwa 29 Tage.",
-    "experiment": "Beobachte den Mond zwei Wochen lang jeden Abend und zeichne die Form, die du jeden Tag siehst."
+    "experiment": "Beobachte den Mond zwei Wochen lang jeden Abend und zeichne die Form, die du jeden Tag siehst.",
+    "relatedQuestionIds": [
+      "sombra",
+      "estrelas-brilham"
+    ]
   },
   {
     "id": "frio",
@@ -85,7 +128,11 @@
     "question": "Warum frieren wir?",
     "quickAnswer": "Wir frieren, wenn der Körper schneller Wärme verliert, als er erzeugen kann, und die Haut das dem Gehirn meldet.",
     "moreAnswer": "Unsere Haut hat Sensoren, die die Temperatur um uns herum wahrnehmen. Wenn es kalt ist, verliert der Körper Wärme an die Luft, und diese Sensoren senden ein Signal ans Gehirn. Das Gehirn reagiert, indem es uns zittern lässt — das erzeugt durch Muskelbewegung Wärme — und indem es die Durchblutung nahe der Haut verringert, um die Wärme im Körperinneren zu halten.",
-    "experiment": "Halte eine Hand gleichzeitig in warmes und die andere in kaltes Wasser. Wie fühlt sich jede an?"
+    "experiment": "Halte eine Hand gleichzeitig in warmes und die andere in kaltes Wasser. Wie fühlt sich jede an?",
+    "relatedQuestionIds": [
+      "coracao",
+      "dormir"
+    ]
   },
   {
     "id": "peixes",
@@ -93,7 +140,11 @@
     "question": "Warum ertrinken Fische nicht?",
     "quickAnswer": "Fische haben Kiemen, ein besonderes Organ, das Sauerstoff direkt aus dem Wasser holt, deshalb müssen sie keine Luft atmen wie wir.",
     "moreAnswer": "Während wir mit Lungen atmen und Luft brauchen, benutzen Fische Kiemen, die sich an den Seiten des Kopfes befinden. Wenn Wasser über die Kiemen strömt, entnehmen sie den im Wasser gelösten Sauerstoff und lassen ihn ins Blut des Fisches gelangen. Deshalb kann ein Fisch außerhalb des Wassers nicht atmen, genauso wie wir ohne Hilfe nicht unter Wasser atmen können.",
-    "experiment": "Beobachte einen Fisch in einem Aquarium und achte auf die ständige Bewegung von Maul und Kiemen — so atmet er."
+    "experiment": "Beobachte einen Fisch in einem Aquarium und achte auf die ständige Bewegung von Maul und Kiemen — so atmet er.",
+    "relatedQuestionIds": [
+      "mar-salgado",
+      "gelo-flutua"
+    ]
   },
   {
     "id": "arco-iris",
@@ -101,7 +152,12 @@
     "question": "Warum erscheint ein Regenbogen?",
     "quickAnswer": "Ein Regenbogen entsteht, wenn Sonnenlicht durch Regentropfen in der Luft geht und sich in die verschiedenen Farben aufteilt, aus denen es besteht.",
     "moreAnswer": "Weißes Sonnenlicht ist eigentlich eine Mischung mehrerer Farben. Wenn Sonnenstrahlen in einen Wassertropfen eintreten, brechen sie sich, spiegeln sich im Tropfen und treten wieder aus, wobei sie sich in verschiedene Farben aufteilen, wie ein kleines Prisma. Deshalb erscheinen Regenbögen nur, wenn Sonne und Regen gleichzeitig da sind.",
-    "experiment": "Mit dem Rücken zur Sonne kannst du mit einem Gartenschlauch oder einer Sprühflasche einen kleinen Regenbogen erzeugen."
+    "experiment": "Mit dem Rücken zur Sonne kannst du mit einem Gartenschlauch oder einer Sprühflasche einen kleinen Regenbogen erzeugen.",
+    "relatedQuestionIds": [
+      "ceu-azul",
+      "arco-iris-formacao",
+      "sombra"
+    ]
   },
   {
     "id": "formigas",
@@ -117,7 +173,11 @@
     "question": "Warum haben wir Schluckauf?",
     "quickAnswer": "Schluckauf entsteht, wenn sich das Zwerchfell, der Muskel, der uns beim Atmen hilft, plötzlich unwillkürlich zusammenzieht.",
     "moreAnswer": "Das Zwerchfell ist der Muskel unter der Lunge, der sich bei jedem Atemzug bewegt. Manchmal, wenn man zu schnell isst, viel lacht oder etwas Kohlensäurehaltiges trinkt, zieht sich das Zwerchfell plötzlich und unerwartet zusammen. Dadurch strömt Luft schlagartig ein und die Stimmbänder schließen sich, wodurch das „Hicks\"-Geräusch entsteht. Schluckauf verschwindet meist nach ein paar Minuten von selbst.",
-    "experiment": "Trink das nächste Mal, wenn du Schluckauf hast, langsam kleine Schlucke Wasser und schau, ob das hilft."
+    "experiment": "Trink das nächste Mal, wenn du Schluckauf hast, langsam kleine Schlucke Wasser und schau, ob das hilft.",
+    "relatedQuestionIds": [
+      "coracao",
+      "bocejo"
+    ]
   },
   {
     "id": "gato-ronronar",
@@ -133,7 +193,12 @@
     "question": "Woher kommt der Wind?",
     "quickAnswer": "Wind ist Luft in Bewegung. Er entsteht, wenn warme Luft aufsteigt und kühle Luft nachströmt, um ihren Platz einzunehmen.",
     "moreAnswer": "Die Sonne erwärmt die Erde nicht überall gleich stark — manche Orte werden wärmer, andere bleiben kühler. Warme Luft ist leichter und steigt auf, während kühlere, schwerere Luft absinkt, um den freien Platz zu füllen. Diese Luftbewegung von einem Ort zum anderen ist der Wind. Je größer der Temperaturunterschied zwischen zwei Orten, desto stärker weht der Wind.",
-    "experiment": "Bastle ein Papierwindrad und trage es an verschiedene Orte im Haus oder Garten. Wo dreht es sich am schnellsten?"
+    "experiment": "Bastle ein Papierwindrad und trage es an verschiedene Orte im Haus oder Garten. Wo dreht es sich am schnellsten?",
+    "relatedQuestionIds": [
+      "chuva",
+      "aviao",
+      "eletricidade"
+    ]
   },
   {
     "id": "estrelas-brilham",
@@ -141,7 +206,11 @@
     "question": "Warum leuchten Sterne nachts, aber nicht am Tag?",
     "quickAnswer": "Sterne stehen immer am Himmel, aber tagsüber ist das Licht der Sonne so stark, dass das schwache Licht der Sterne verborgen bleibt.",
     "moreAnswer": "Die Sonne ist der uns am nächsten stehende Stern, deshalb erreicht uns ihr Licht viel stärker als das jedes anderen Sterns, die Lichtjahre entfernt sind. Tagsüber verteilt sich das Sonnenlicht in der Atmosphäre und erhellt alles, wodurch der Himmel zu hell ist, um das schwache Licht der weit entfernten Sterne zu sehen. Nachts, ohne dass die Sonne alles überstrahlt, können wir endlich die Sterne funkeln sehen.",
-    "experiment": "Zähle in einer wolkenlosen Nacht, möglichst fernab von Stadtlichtern, wie viele Sterne du in 1 Minute sehen kannst."
+    "experiment": "Zähle in einer wolkenlosen Nacht, möglichst fernab von Stadtlichtern, wie viele Sterne du in 1 Minute sehen kannst.",
+    "relatedQuestionIds": [
+      "ceu-azul",
+      "lua"
+    ]
   },
   {
     "id": "gelo-flutua",
@@ -149,7 +218,12 @@
     "question": "Warum schwimmt Eis auf dem Wasser?",
     "quickAnswer": "Eis schwimmt, weil Wasser beim Gefrieren mehr Platz einnimmt und weniger dicht wird als flüssiges Wasser.",
     "moreAnswer": "Die meisten Stoffe werden beim Abkühlen kompakter, aber Wasser ist anders: Beim Gefrieren ordnen sich seine Moleküle in einer Struktur an, die mehr Platz braucht, wodurch Eis weniger dicht ist als flüssiges Wasser. Weil es weniger dicht ist, schwimmt Eis statt zu sinken. Das ist sehr wichtig für das Leben in kalten Seen und Meeren — das Eis bildet eine Schicht an der Oberfläche, die die darunter lebenden Tiere vor der extremen Kälte schützt.",
-    "experiment": "Leg einen Eiswürfel in ein Glas Wasser und beobachte, wie viel davon über und unter der Oberfläche bleibt."
+    "experiment": "Leg einen Eiswürfel in ein Glas Wasser und beobachte, wie viel davon über und unter der Oberfläche bleibt.",
+    "relatedQuestionIds": [
+      "chuva",
+      "peixes",
+      "barco"
+    ]
   },
   {
     "id": "aves-migracao",
@@ -157,7 +231,10 @@
     "question": "Woher wissen Vögel, wohin sie ziehen sollen?",
     "quickAnswer": "Vögel nutzen die Sonne, die Sterne, das Magnetfeld der Erde und sogar Landmarken am Boden, um sich auf ihren langen Reisen zu orientieren.",
     "moreAnswer": "Viele Vogelarten legen jedes Jahr riesige Strecken zurück, auf der Suche nach milderem Klima oder mehr Nahrung. Zur Orientierung nutzen sie mehrere Hinweise gleichzeitig: die Stellung der Sonne am Tag, die Sterne in der Nacht, und sie können sogar das Magnetfeld der Erde spüren, fast wie ein eingebauter Kompass. Manche erkennen auch Flüsse, Berge und Küsten, die sie schon einmal überflogen haben. Jüngere Vögel lernen die Route oft, indem sie neben älteren Vögeln fliegen.",
-    "experiment": "Wenn du einen Vogelschwarm in V-Formation fliegen siehst, beobachte, wie sie sich organisieren — diese Formation hilft ihnen, während der Reise Energie zu sparen."
+    "experiment": "Wenn du einen Vogelschwarm in V-Formation fliegen siehst, beobachte, wie sie sich organisieren — diese Formation hilft ihnen, während der Reise Energie zu sparen.",
+    "relatedQuestionIds": [
+      "dinossauros"
+    ]
   },
   {
     "id": "bocejo",
@@ -165,7 +242,12 @@
     "question": "Warum gähnen wir?",
     "quickAnswer": "Wir gähnen, wenn wir müde oder gelangweilt sind, und Wissenschaftler denken, dass es hilft, das Gehirn abzukühlen und aufzuwecken.",
     "moreAnswer": "Niemand weiß mit Sicherheit, warum wir gähnen, aber eine der am meisten akzeptierten Ideen ist, dass Gähnen hilft, das Gehirn abzukühlen und wacher zu machen. Wir gähnen auch mehr, wenn wir müde oder gelangweilt sind, oder sogar nur wenn wir jemand anderen gähnen sehen — Gähnen ist sehr ansteckend! Das könnte daran liegen, dass unser Gehirn „Spiegelneuronen\" hat, die uns automatisch bestimmte Verhaltensweisen der Menschen um uns herum nachahmen lassen.",
-    "experiment": "Versuch, in der Nähe eines Familienmitglieds zu gähnen, und schau, wie lange es dauert, bis diese Person auch gähnt."
+    "experiment": "Versuch, in der Nähe eines Familienmitglieds zu gähnen, und schau, wie lange es dauert, bis diese Person auch gähnt.",
+    "relatedQuestionIds": [
+      "dormir",
+      "soluco",
+      "coracao"
+    ]
   },
   {
     "id": "mar-salgado",
@@ -173,7 +255,12 @@
     "question": "Warum ist das Meer salzig?",
     "quickAnswer": "Das Meer ist salzig, weil Flüsse, die über Felsen und Land fließen, kleine Mengen Salz mit sich ins Meer bringen, und verdunstendes Wasser das Salz zurücklässt.",
     "moreAnswer": "Wenn es regnet, fließt Wasser durch Flüsse über Felsen und Boden und löst dabei winzige Mengen an Mineralien und Salzen. Diese Flüsse tragen das Salz bis ins Meer. Im Meer lässt die Sonne das Wasser verdunsten (das zu Dampf wird und wieder als Regen fällt), aber das Salz verdunstet nicht — es bleibt zurück. Das geschieht schon seit Millionen von Jahren, weshalb sich immer mehr Salz im Meerwasser angesammelt hat.",
-    "experiment": "Bitte einen Erwachsenen, dir zu helfen, einen Löffel Salz in einem Glas Wasser aufzulösen, und probiere vorsichtig einen winzigen Tropfen. So ungefähr, nur viel konzentrierter, schmeckt Meerwasser."
+    "experiment": "Bitte einen Erwachsenen, dir zu helfen, einen Löffel Salz in einem Glas Wasser aufzulösen, und probiere vorsichtig einen winzigen Tropfen. So ungefähr, nur viel konzentrierter, schmeckt Meerwasser.",
+    "relatedQuestionIds": [
+      "chuva",
+      "barco",
+      "peixes"
+    ]
   },
   {
     "id": "arco-iris-formacao",
@@ -181,7 +268,11 @@
     "question": "Wie entstehen Regenbögen?",
     "quickAnswer": "Regenbögen entstehen, wenn Sonnenlicht durch Regentropfen fällt und sich wie in einem Prisma in seine Farben auftrennt.",
     "moreAnswer": "Sonnenlicht sieht weiß aus, besteht aber eigentlich aus mehreren gemischten Farben. Wenn ein Sonnenstrahl in einen Regentropfen eintritt, wird er gebrochen (er ändert seine Richtung), im Inneren des Tropfens reflektiert und tritt wieder aus, wobei er sich erneut bricht. Dabei wird jede Farbe etwas anders gebrochen, sodass sich die Farben trennen und den Farbbogen bilden, den wir sehen: Rot, Orange, Gelb, Grün, Blau, Indigo und Violett. Deshalb sehen wir einen Regenbogen nur, wenn Sonne und Regen gleichzeitig da sind, und immer mit dem Rücken zur Sonne.",
-    "experiment": "Nutze mit dem Rücken zur Sonne einen Gartenschlauch oder eine Sprühflasche, um deinen eigenen Regenbogen zu erzeugen."
+    "experiment": "Nutze mit dem Rücken zur Sonne einen Gartenschlauch oder eine Sprühflasche, um deinen eigenen Regenbogen zu erzeugen.",
+    "relatedQuestionIds": [
+      "arco-iris",
+      "ceu-azul"
+    ]
   },
   {
     "id": "sono-necessidade",
@@ -189,6 +280,10 @@
     "question": "Warum müssen wir schlafen?",
     "quickAnswer": "Wir müssen schlafen, damit sich der Körper ausruhen kann, das Gehirn speichert, was wir gelernt haben, und wir gesund und stark heranwachsen.",
     "moreAnswer": "Während wir schlafen, passieren sehr wichtige Dinge, die wir nicht sehen können: Das Gehirn ordnet die Erinnerungen des Tages, als würde es eine Schublade voller neuer Informationen aufräumen. Der Körper nutzt diese Zeit, um Muskeln zu reparieren, Wachstumshormone zu produzieren und die Abwehrkräfte gegen Krankheiten zu stärken. Kinder brauchen sogar noch mehr Schlaf als Erwachsene, weil sie noch wachsen und ihr Gehirn ständig Neues lernt. Ohne genug Schlaf werden wir müde, vergesslich und schlechter gelaunt.",
-    "experiment": "Notiere eine Woche lang, wann du ins Bett gehst und aufwachst. Fühlst du dich an Tagen, an denen du mehr geschlafen hast, anders?"
+    "experiment": "Notiere eine Woche lang, wann du ins Bett gehst und aufwachst. Fühlst du dich an Tagen, an denen du mehr geschlafen hast, anders?",
+    "relatedQuestionIds": [
+      "dormir",
+      "bocejo"
+    ]
   }
 ]
