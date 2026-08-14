@@ -601,3 +601,87 @@ export function completeThinkingExercise(profileName, exerciseId) {
   saveCompletedThinking(all);
   return all[name];
 }
+
+// --- Diário da Natureza (Nature Diary) ---
+// An ongoing, time-based observation log the child adds to over days/weeks:
+// plants, birds, insects, weather, seasons. Each entry is either a drawing
+// (a data URL from DrawingCanvas) or a picked preset icon — never a photo or
+// location, per the privacy-first design of this module. Stored as an
+// append-only list per profile, mirroring the id-list pattern used elsewhere
+// in this file but keeping full entry objects since order/date matters here.
+
+const NATURE_DIARY_KEY = "abcmundo.natureDiary";
+
+function loadNatureDiary() {
+  try {
+    const raw = localStorage.getItem(NATURE_DIARY_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveNatureDiary(all) {
+  try {
+    localStorage.setItem(NATURE_DIARY_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getNatureDiary(profileName) {
+  const all = loadNatureDiary();
+  return all[profileName || "Explorer"] || [];
+}
+
+// entry: { id, category, date, drawing?: dataURL, icon?: string }
+export function addNatureDiaryEntry(profileName, entry) {
+  const name = profileName || "Explorer";
+  const all = loadNatureDiary();
+  const list = all[name] || [];
+  const withId = { id: entry.id || `nd-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`, ...entry };
+  all[name] = [withId, ...list];
+  saveNatureDiary(all);
+  return all[name];
+}
+
+// --- Diário da Lua (Moon Diary) ---
+// A month-long observation activity: the child picks or draws the Moon's
+// current shape once a day. Same append-only, per-profile storage shape as
+// the Nature Diary above, kept separate since the two logs are browsed and
+// reflected on independently (moon phase pattern-finding needs its own list).
+
+const MOON_DIARY_KEY = "abcmundo.moonDiary";
+
+function loadMoonDiary() {
+  try {
+    const raw = localStorage.getItem(MOON_DIARY_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveMoonDiary(all) {
+  try {
+    localStorage.setItem(MOON_DIARY_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getMoonDiary(profileName) {
+  const all = loadMoonDiary();
+  return all[profileName || "Explorer"] || [];
+}
+
+// entry: { id, date, phase?: string, drawing?: dataURL }
+export function addMoonDiaryEntry(profileName, entry) {
+  const name = profileName || "Explorer";
+  const all = loadMoonDiary();
+  const list = all[name] || [];
+  const withId = { id: entry.id || `md-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`, ...entry };
+  all[name] = [withId, ...list];
+  saveMoonDiary(all);
+  return all[name];
+}
