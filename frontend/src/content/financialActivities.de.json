@@ -1,0 +1,91 @@
+{
+  "wantsNeeds": [
+    { "id": "wn1", "emoji": "🍞", "name": "Brot zum Essen", "isNeed": true },
+    { "id": "wn2", "emoji": "🧸", "name": "Neues Spielzeug", "isNeed": false },
+    { "id": "wn3", "emoji": "👟", "name": "Schuhe für die Füße", "isNeed": true },
+    { "id": "wn4", "emoji": "🍬", "name": "Süßigkeiten", "isNeed": false },
+    { "id": "wn5", "emoji": "🧥", "name": "Winterjacke", "isNeed": true },
+    { "id": "wn6", "emoji": "🎮", "name": "Neues Videospiel", "isNeed": false },
+    { "id": "wn7", "emoji": "💧", "name": "Wasser zum Trinken", "isNeed": true },
+    { "id": "wn8", "emoji": "🃏", "name": "Sammelkarten", "isNeed": false },
+    { "id": "wn9", "emoji": "🛏️", "name": "Bett zum Schlafen", "isNeed": true },
+    { "id": "wn10", "emoji": "🍦", "name": "Extra Eis", "isNeed": false }
+  ],
+  "savingsDecision": {
+    "scenarioText": "Du hast diese Woche 6€ Taschengeld bekommen. Im Laden siehst du ein Spielzeug und ein Buch, die dir beide sehr gefallen. Dein Geld reicht nur für eines von beiden.",
+    "budget": 600,
+    "items": [
+      { "id": "toy", "emoji": "🧸", "name": "Spielzeug", "price": 500 },
+      { "id": "book", "emoji": "📖", "name": "Buch", "price": 350 }
+    ]
+  },
+  "piggyBank": {
+    "intro": "Jede Woche kannst du ein paar Münzen in dein Sparschwein legen. Schau, wie das Geld nach und nach wächst!",
+    "coinTurns": [50, 20, 100, 30, 50],
+    "goal": 300,
+    "outro": "Siehst du? Ein bisschen sparen, mit Geduld, wird zu einer Menge gespartem Geld!"
+  },
+  "discountAds": [
+    {
+      "id": "da1",
+      "emoji": "🛴",
+      "product": "Spielzeug-Roller",
+      "fakeOriginalPrice": 4000,
+      "discountPercent": 50,
+      "sellingPrice": 2000,
+      "usualPrice": 2000,
+      "isGoodDeal": false,
+      "explanation": "Der 'alte' Preis von 40€ wurde erfunden, um wie ein riesiger Rabatt auszusehen. Aber in anderen Läden kostet dieser Roller immer 20€ — du sparst also gar nichts!"
+    },
+    {
+      "id": "da2",
+      "emoji": "📖",
+      "product": "Abenteuerbuch",
+      "fakeOriginalPrice": 1000,
+      "discountPercent": 30,
+      "sellingPrice": 700,
+      "usualPrice": 1000,
+      "isGoodDeal": true,
+      "explanation": "Dieser Rabatt ist echt: Das Buch kostete wirklich 10€ und jetzt sind es 7€. Du sparst wirklich 3€!"
+    },
+    {
+      "id": "da3",
+      "emoji": "🎧",
+      "product": "Bunte Kopfhörer",
+      "fakeOriginalPrice": 6000,
+      "discountPercent": 70,
+      "sellingPrice": 1800,
+      "usualPrice": 1800,
+      "isGoodDeal": false,
+      "explanation": "70% Rabatt klingt fantastisch, aber der 'immer'-Preis von 60€ ist erfunden. Dieses Modell kostet überall immer etwa 18€."
+    },
+    {
+      "id": "da4",
+      "emoji": "🧩",
+      "product": "Puzzle mit 100 Teilen",
+      "fakeOriginalPrice": 1500,
+      "discountPercent": 20,
+      "sellingPrice": 1200,
+      "usualPrice": 1500,
+      "isGoodDeal": true,
+      "explanation": "Dieses Puzzle kostete die letzten Wochen wirklich 15€ und jetzt sind es 12€. Das ist ein echter Rabatt von 3€."
+    }
+  ],
+  "interestExample": {
+    "principal": 1000,
+    "yearlyBonus": 100,
+    "years": 2,
+    "intro": "Wenn du Geld auf die Bank bringst, gibt dir die Bank manchmal etwas mehr dafür, dass du es dort gelassen hast. Das nennt man Zinsen.",
+    "explanation": "Wenn du 10€ auf die Bank bringst und sie dir jedes Jahr 1€ mehr gibt, hast du nach 1 Jahr 11€. Nach 2 Jahren hast du 12€. Dein Geld wächst von selbst, während es gespart wird!"
+  },
+  "safety": [
+    { "id": "fs1", "emoji": "💳", "scenario": "Jemand, den du online kennengelernt hast, fragt dich nach der Bankkartennummer deiner Eltern.", "isSafe": false, "explanation": "Bitte einen Erwachsenen um Hilfe! Die Kartennummer ist geheim und wird nie mit Fremden geteilt, auch nicht online." },
+    { "id": "fs2", "emoji": "🛍️", "scenario": "Du möchtest in einem Online-Shop etwas kaufen und bittest vor dem Bezahlen einen Erwachsenen um Hilfe.", "isSafe": true, "explanation": "Super! Einen Erwachsenen vor dem Online-Kauf um Hilfe zu bitten schützt dich vor Betrug." },
+    { "id": "fs3", "emoji": "🏆", "scenario": "Du bekommst die Nachricht 'DU HAST EINEN PREIS GEWONNEN! Sende jetzt deine Kartendaten' und schickst sie los.", "isSafe": false, "explanation": "Bitte einen Erwachsenen um Hilfe! Preise, die nach Kartendaten fragen, sind fast immer Betrug — sende diese Daten nie." },
+    { "id": "fs4", "emoji": "🔢", "scenario": "Den PIN-Code der Karte kennen nur du und deine Eltern.", "isSafe": true, "explanation": "Super! Der PIN ist ein Geheimnis, das nur deine vertraute Familie kennen sollte." },
+    { "id": "fs5", "emoji": "🤝", "scenario": "Ein Freund aus der Schule fragt 'nur zum Ausprobieren' nach dem PIN deiner Eltern und du sagst ihn ihm.", "isSafe": false, "explanation": "Bitte einen Erwachsenen um Hilfe! Teile den PIN nie mit jemandem, auch nicht mit Freunden." },
+    { "id": "fs6", "emoji": "👨‍👩‍👧", "scenario": "Ein vertrauter Erwachsener ist bei dir, während ihr zusammen online einkauft.", "isSafe": true, "explanation": "Perfekt! Online einkaufen mit einem vertrauten Erwachsenen in der Nähe ist am sichersten." },
+    { "id": "fs7", "emoji": "⏰", "scenario": "Eine Nachricht sagt 'ZAHLE JETZT oder du verlierst dein Konto!' und du zahlst schnell, ohne jemanden zu fragen.", "isSafe": false, "explanation": "Bitte einen Erwachsenen um Hilfe! Nachrichten, die dich unter Druck setzen, sind meist Betrug. Frag immer vor dem Bezahlen." },
+    { "id": "fs8", "emoji": "🕵️", "scenario": "Du siehst ein tolles Gratis-Geld-Angebot und fragst einen Erwachsenen, ob es echt ist, bevor du es glaubst.", "isSafe": true, "explanation": "Sehr clever! Angebote, die zu gut klingen, um wahr zu sein, sind es meistens auch nicht. Zuerst fragen schützt dich." }
+  ]
+}

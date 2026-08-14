@@ -342,6 +342,31 @@ body {
   background: #ffd6e0;
 }
 
+.syllable-breakdown {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.syllable-breakdown .syllable-part {
+  background: var(--yellow);
+  color: #333;
+  border-radius: 6px;
+  padding: 1px 6px;
+}
+
+.syllable-breakdown.secondary .syllable-part {
+  background: #ffd6e0;
+}
+
+.syllable-breakdown .syllable-sep {
+  color: #999;
+  font-weight: normal;
+}
+
 .phrase-row {
   font-size: 1.15rem !important;
 }
@@ -456,6 +481,63 @@ body {
 
 .math-count-confirm.wrong {
   background: var(--red, #e74c3c);
+}
+
+.math-count-icon.selected {
+  background: var(--light-blue, rgba(0, 0, 0, 0.08));
+  box-shadow: 0 0 0 2px var(--purple, #7c5cff) inset;
+}
+
+.math-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.math-group-row {
+  margin-bottom: 0;
+  padding: 4px 8px;
+  border-radius: 12px;
+  background: var(--light-blue, rgba(0, 0, 0, 0.04));
+}
+
+.math-buckets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 12px 0;
+}
+
+.math-bucket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  min-width: 84px;
+  padding: 8px;
+  border: 2px dashed var(--purple, #7c5cff);
+  border-radius: 14px;
+  background: none;
+  cursor: pointer;
+}
+
+.math-bucket-label {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.math-bucket-items {
+  font-size: 1.4rem;
+  min-height: 1.6em;
+  word-break: break-word;
+}
+
+.math-bucket-count {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--purple);
 }
 
 .game-options {
@@ -649,8 +731,14 @@ body {
   stroke-width: 1.5;
 }
 
-.staff-clef {
-  font-size: 44px;
+.staff-clef-path {
+  fill: var(--purple);
+  stroke: var(--purple);
+  stroke-width: 3;
+  stroke-linejoin: round;
+}
+
+.staff-clef-dot {
   fill: var(--purple);
 }
 
@@ -670,6 +758,58 @@ body {
 .drum-pads-wrap {
   max-width: 480px;
   margin: 0 auto;
+}
+
+.drum-kit-wrap {
+  max-width: 480px;
+  margin: 16px auto;
+}
+
+.drum-kit-piece {
+  stroke-width: 2;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 0.08s ease, filter 0.08s ease;
+  cursor: pointer;
+}
+
+.drum-kit-piece.hit {
+  transform: scale(1.12);
+  filter: brightness(1.35);
+}
+
+.drum-kit-cymbal {
+  fill: var(--yellow, #f5c542);
+  fill-opacity: 0.55;
+  stroke: var(--yellow, #f5c542);
+}
+
+.drum-kit-stand {
+  stroke: var(--text, #333);
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+.drum-kit-tom {
+  fill: var(--blue, #3aa0ff);
+  fill-opacity: 0.5;
+  stroke: var(--blue, #3aa0ff);
+}
+
+.drum-kit-snare {
+  fill: var(--pink, #ff6b9d);
+  fill-opacity: 0.5;
+  stroke: var(--pink, #ff6b9d);
+}
+
+.drum-kit-kick {
+  fill: var(--purple, #8e6bd8);
+  fill-opacity: 0.5;
+  stroke: var(--purple, #8e6bd8);
+}
+
+.drum-kit-head {
+  fill-opacity: 0.85;
 }
 
 .instrument-visual-wrap {

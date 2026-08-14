@@ -7,7 +7,7 @@ import SpeakButton from "../components/SpeakButton.jsx";
 import MusicStaff from "../components/MusicStaff.jsx";
 import HelpButton from "../components/HelpButton.jsx";
 import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
-import InstrumentVisual, { getInstrumentFamily } from "../components/InstrumentVisual.jsx";
+import InstrumentVisual, { getInstrumentFamily, DrumKitVisual } from "../components/InstrumentVisual.jsx";
 
 const WHITE_LETTERS = ["C", "D", "E", "F", "G", "A", "B"];
 
@@ -76,6 +76,7 @@ const WHICH_INSTRUMENT_POOL = [
   "cavaquinho",
   "portugueseGuitar",
   "concertina",
+  "viola",
 ];
 
 // Builds a round for level 1 (same/different): 50% chance of two identical
@@ -139,6 +140,7 @@ export default function Music({ defaultInstrument = "piano" }) {
   const [step, setStep] = useState(0);
   const [playing, setPlaying] = useState(false);
   const [activeNote, setActiveNote] = useState(null);
+  const [activePad, setActivePad] = useState(null);
 
   const [rhythmPattern, setRhythmPattern] = useState(null);
   const [rhythmInput, setRhythmInput] = useState([]);
@@ -297,6 +299,8 @@ export default function Music({ defaultInstrument = "piano" }) {
 
   function handleDrumPad(padId) {
     playDrumPad(padId);
+    setActivePad(padId);
+    window.setTimeout(() => setActivePad((cur) => (cur === padId ? null : cur)), 180);
     const profile = getProfile();
     pingProgress({ profileName: profile?.name, module: "music", event: `drum_pad:${padId}` });
   }
@@ -312,6 +316,7 @@ export default function Music({ defaultInstrument = "piano" }) {
     setPlaying(false);
     setStep(0);
     setActiveNote(null);
+    setActivePad(null);
     setRhythmPattern(null);
     setRhythmInput([]);
     setRhythmResult(null);
@@ -504,17 +509,13 @@ export default function Music({ defaultInstrument = "piano" }) {
       {isDrum ? (
         <div className="drum-pads-wrap">
           <h2 className="songs-heading">{t("modules.pianoDrumHeading")}</h2>
-          <div className="drum-pads">
-            {DRUM_PADS.map((padId) => (
-              <button
-                key={padId}
-                type="button"
-                className={"drum-pad drum-pad-" + padId}
-                onClick={() => handleDrumPad(padId)}
-              >
-                {t(`modules.pianoDrumPad_${padId}`)}
-              </button>
-            ))}
+          <div className="drum-kit-wrap">
+            <DrumKitVisual
+              pads={DRUM_PADS}
+              activePad={activePad}
+              onPress={handleDrumPad}
+              labels={Object.fromEntries(DRUM_PADS.map((padId) => [padId, t(`modules.pianoDrumPad_${padId}`)]))}
+            />
           </div>
 
           <h2 className="songs-heading">{t("modules.musicRhythmGameHeading")}</h2>

@@ -210,6 +210,14 @@ import shoppingZh from "./shopping.zh.json";
 import shoppingEs from "./shopping.es.json";
 import shoppingIt from "./shopping.it.json";
 
+import financialActivitiesPt from "./financialActivities.pt.json";
+import financialActivitiesEn from "./financialActivities.en.json";
+import financialActivitiesDe from "./financialActivities.de.json";
+import financialActivitiesFr from "./financialActivities.fr.json";
+import financialActivitiesZh from "./financialActivities.zh.json";
+import financialActivitiesEs from "./financialActivities.es.json";
+import financialActivitiesIt from "./financialActivities.it.json";
+
 import adLiteracyPt from "./adLiteracy.pt.json";
 import adLiteracyEn from "./adLiteracy.en.json";
 import adLiteracyDe from "./adLiteracy.de.json";
@@ -266,6 +274,7 @@ const AI_LAB = { pt: aiLabPt, en: aiLabEn, de: aiLabDe, fr: aiLabFr, zh: aiLabZh
 const LEMONADE_STAND = { pt: lemonadeStandPt, en: lemonadeStandEn, de: lemonadeStandDe, fr: lemonadeStandFr, zh: lemonadeStandZh, es: lemonadeStandEs, it: lemonadeStandIt };
 const SHOPPING = { pt: shoppingPt, en: shoppingEn, de: shoppingDe, fr: shoppingFr, zh: shoppingZh, es: shoppingEs, it: shoppingIt };
 const AD_LITERACY = { pt: adLiteracyPt, en: adLiteracyEn, de: adLiteracyDe, fr: adLiteracyFr, zh: adLiteracyZh, es: adLiteracyEs, it: adLiteracyIt };
+const FINANCIAL_ACTIVITIES = { pt: financialActivitiesPt, en: financialActivitiesEn, de: financialActivitiesDe, fr: financialActivitiesFr, zh: financialActivitiesZh, es: financialActivitiesEs, it: financialActivitiesIt };
 const THINKING = { pt: thinkingPt, en: thinkingEn, de: thinkingDe, fr: thinkingFr, zh: thinkingZh, es: thinkingEs, it: thinkingIt };
 const RHYMES = { pt: rhymesPt, en: rhymesEn, de: rhymesDe, fr: rhymesFr, zh: rhymesZh, es: rhymesEs, it: rhymesIt };
 const HOUSE_SYSTEMS = { pt: houseSystemsPt, en: houseSystemsEn, de: houseSystemsDe, fr: houseSystemsFr, zh: houseSystemsZh, es: houseSystemsEs, it: houseSystemsIt };
@@ -373,6 +382,15 @@ export function getAdLiteracy(langCode) {
   return AD_LITERACY[langCode] || [];
 }
 
+// Deeper financial-literacy activities beyond the basic concept cards: wants
+// vs needs sorting, a save-vs-spend consequence scenario, a growing piggy
+// bank, misleading-discount ad reasoning, a concrete simple-interest example
+// (tier-gated in the UI), and a money-safety mini quiz. Falls back to pt
+// since every language file mirrors the same id order/shape.
+export function getFinancialActivities(langCode) {
+  return FINANCIAL_ACTIVITIES[langCode] || FINANCIAL_ACTIVITIES.pt;
+}
+
 export function getThinking(langCode) {
   return THINKING[langCode] || THINKING.pt;
 }
@@ -415,10 +433,14 @@ export function getCountries(langCode) {
     greeting: c.greeting,
     greetingTranslation: c.greetingTranslation ? c.greetingTranslation[langCode] || c.greetingTranslation.en : undefined,
     animal: c.animal ? { emoji: c.animal.emoji, name: c.animal.name[langCode] || c.animal.name.en } : undefined,
+    additionalAnimal: c.additionalAnimal ? { emoji: c.additionalAnimal.emoji, name: c.additionalAnimal.name[langCode] || c.additionalAnimal.name.en } : undefined,
     tradition: c.tradition ? c.tradition[langCode] || c.tradition.en : undefined,
     emojiScene: c.emojiScene,
     landmark: c.landmark ? c.landmark[langCode] || c.landmark.en : undefined,
     food: c.food ? c.food[langCode] || c.food.en : undefined,
+    climate: c.climate ? c.climate[langCode] || c.climate.en : undefined,
+    population: c.population ? c.population[langCode] || c.population.en : undefined,
+    funCuriosity: c.funCuriosity ? c.funCuriosity[langCode] || c.funCuriosity.en : undefined,
     nativeName: c.nativeName,
     nativeLangCode: c.nativeLangCode,
   }));

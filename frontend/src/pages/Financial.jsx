@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { getFinancial, getLemonadeStand, getShopping, getAdLiteracy } from "../content/index.js";
-import { getDifficultyTier, getLangPair, getProfile, pingProgress } from "../storage.js";
+import { getFinancial, getLemonadeStand, getShopping, getAdLiteracy, getFinancialActivities } from "../content/index.js";
+import { getDifficultyTier, getLangPair, getProfile, pingProgress, recordSkillEvent } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
 import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
 import HelpButton from "../components/HelpButton.jsx";
@@ -266,6 +266,191 @@ export default function Financial() {
     setAdScore(0);
   }
 
+  // --- Deeper financial activities (wants/needs, save-vs-spend, piggy
+  // bank, discount detective, interest, safety) ---
+  const activities = getFinancialActivities(pair.mother);
+
+  // Wants vs Needs sorting: sequential binary classification. Wrong taps
+  // disable that option (anti-guessing); full XP only counts on the first
+  // attempt of each round.
+  const wnItems = useMemo(() => shuffle(activities.wantsNeeds), [activities]);
+  const [wnStep, setWnStep] = useState(0);
+  const [wnScore, setWnScore] = useState(0);
+  const [wnWrongPick, setWnWrongPick] = useState(null);
+  const [wnFirstTry, setWnFirstTry] = useState(true);
+  const wnItem = wnItems[wnStep];
+  const wnFinished = wnStep >= wnItems.length;
+
+  function handleWnAnswer(pickedNeed) {
+    const correct = pickedNeed === wnItem.isNeed;
+    if (correct) {
+      if (wnFirstTry) setWnScore((s) => s + 1);
+      recordSkillEvent(profile?.name, "financial-wants-needs", wnFirstTry);
+      pingProgress({ profileName: profile?.name, module: "financial", event: "financial_wants_needs:correct" });
+      setTimeout(() => {
+        setWnStep((s) => s + 1);
+        setWnWrongPick(null);
+        setWnFirstTry(true);
+      }, 700);
+    } else {
+      setWnWrongPick(pickedNeed);
+      setWnFirstTry(false);
+      pingProgress({ profileName: profile?.name, module: "financial", event: "financial_wants_needs:wrong" });
+    }
+  }
+
+  function handleWnRestart() {
+    setWnStep(0);
+    setWnScore(0);
+    setWnWrongPick(null);
+    setWnFirstTry(true);
+  }
+
+  // Save vs Spend: one consequence-based scenario. No "wrong" choice - each
+  // pick shows a concrete tradeoff explanation instead of a right/wrong mark.
+  const saveSpend = activities.savingsDecision;
+  const [ssChoice, setSsChoice] = useState(null);
+
+  function handleSaveSpendChoose(item) {
+    if (ssChoice) return;
+    setSsChoice(item);
+    pingProgress({ profileName: profile?.name, module: "financial", event: `financial_save_spend:chose_${item.id}` });
+    recordSkillEvent(profile?.name, "financial-save-spend", true);
+  }
+
+  function handleSaveSpendRestart() {
+    setSsChoice(null);
+  }
+
+  const ssOtherItem = ssChoice ? saveSpend.items.find((i) => i.id !== ssChoice.id) : null;
+
+  // Piggy bank: tap through several turns, watching the total grow.
+  const piggy = activities.piggyBank;
+  const [piggyTurn, setPiggyTurn] = useState(0);
+  const [piggyTotal, setPiggyTotal] = useState(0);
+  const piggyFinished = piggyTurn >= piggy.coinTurns.length;
+
+  function handlePiggyAddCoin() {
+    if (piggyFinished) return;
+    const amount = piggy.coinTurns[piggyTurn];
+    setPiggyTotal((t) => t + amount);
+    setPiggyTurn((t) => t + 1);
+    pingProgress({ profileName: profile?.name, module: "financial", event: "financial_piggybank:coin_added" });
+    if (piggyTurn === piggy.coinTurns.length - 1) {
+      recordSkillEvent(profile?.name, "financial-savings-goal", true);
+    }
+  }
+
+  function handlePiggyRestart() {
+    setPiggyTurn(0);
+    setPiggyTotal(0);
+  }
+
+  // Discount detective: reason about whether an inflated "was" price makes
+  // the sale a real deal or an advertising trick.
+  const discountCards = useMemo(() => shuffle(activities.discountAds), [activities]);
+  const [discStep, setDiscStep] = useState(0);
+  const [discScore, setDiscScore] = useState(0);
+  const [discWrongPick, setDiscWrongPick] = useState(null);
+  const [discFirstTry, setDiscFirstTry] = useState(true);
+  const [discAnswered, setDiscAnswered] = useState(false);
+  const discCard = discountCards[discStep];
+  const discFinished = discStep >= discountCards.length;
+
+  function handleDiscAnswer(saysGoodDeal) {
+    if (discAnswered) return;
+    const correct = saysGoodDeal === discCard.isGoodDeal;
+    if (correct) {
+      if (discFirstTry) setDiscScore((s) => s + 1);
+      recordSkillEvent(profile?.name, "financial-discounts", discFirstTry);
+      pingProgress({ profileName: profile?.name, module: "financial", event: "financial_discount:correct" });
+      setDiscAnswered(true);
+    } else {
+      setDiscWrongPick(saysGoodDeal);
+      setDiscFirstTry(false);
+      pingProgress({ profileName: profile?.name, module: "financial", event: "financial_discount:wrong" });
+    }
+  }
+
+  function handleDiscNext() {
+    setDiscStep((s) => s + 1);
+    setDiscWrongPick(null);
+    setDiscFirstTry(true);
+    setDiscAnswered(false);
+  }
+
+  function handleDiscRestart() {
+    setDiscStep(0);
+    setDiscScore(0);
+    setDiscWrongPick(null);
+    setDiscFirstTry(true);
+    setDiscAnswered(false);
+  }
+
+  // Simple interest walkthrough (tier 2+ only, soft-gated via AgeAdvisory).
+  const interest = activities.interestExample;
+  const [interestAdvisoryDone, setInterestAdvisoryDone] = useState(tier >= 2);
+  const [interestYear, setInterestYear] = useState(0);
+  const interestTotals = useMemo(() => {
+    const totals = [interest.principal];
+    for (let y = 1; y <= interest.years; y++) totals.push(totals[y - 1] + interest.yearlyBonus);
+    return totals;
+  }, [interest]);
+  const interestFinished = interestYear >= interest.years;
+
+  function handleInterestNext() {
+    if (interestFinished) return;
+    setInterestYear((y) => y + 1);
+    if (interestYear + 1 === interest.years) {
+      recordSkillEvent(profile?.name, "financial-interest", true);
+      pingProgress({ profileName: profile?.name, module: "financial", event: "financial_interest:complete" });
+    }
+  }
+
+  function handleInterestRestart() {
+    setInterestYear(0);
+  }
+
+  // Money-safety mini quiz, mirroring the computingSafety pattern.
+  const safetyCards = useMemo(() => shuffle(activities.safety), [activities]);
+  const [safeStep, setSafeStep] = useState(0);
+  const [safeScore, setSafeScore] = useState(0);
+  const [safeWrongPick, setSafeWrongPick] = useState(null);
+  const [safeFirstTry, setSafeFirstTry] = useState(true);
+  const [safeAnswered, setSafeAnswered] = useState(false);
+  const safeCard = safetyCards[safeStep];
+  const safeFinished = safeStep >= safetyCards.length;
+
+  function handleSafeAnswer(saysSafe) {
+    if (safeAnswered) return;
+    const correct = saysSafe === safeCard.isSafe;
+    if (correct) {
+      if (safeFirstTry) setSafeScore((s) => s + 1);
+      recordSkillEvent(profile?.name, "financial-safety", safeFirstTry);
+      pingProgress({ profileName: profile?.name, module: "financial", event: "financial_safety:correct" });
+      setSafeAnswered(true);
+    } else {
+      setSafeWrongPick(saysSafe);
+      setSafeFirstTry(false);
+      pingProgress({ profileName: profile?.name, module: "financial", event: "financial_safety:wrong" });
+    }
+  }
+
+  function handleSafeNext() {
+    setSafeStep((s) => s + 1);
+    setSafeWrongPick(null);
+    setSafeFirstTry(true);
+    setSafeAnswered(false);
+  }
+
+  function handleSafeRestart() {
+    setSafeStep(0);
+    setSafeScore(0);
+    setSafeWrongPick(null);
+    setSafeFirstTry(true);
+    setSafeAnswered(false);
+  }
+
   return (
     <div className="page">
       <h1>{t("modules.financialTitle")} 💰</h1>
@@ -322,6 +507,66 @@ export default function Financial() {
           <span className="phonics-tab-inner">
             📢 {t("modules.financialAdsTitle")}
             <TabSpeakIcon text={t("modules.financialAdsTitle")} langCode={pair.mother} />
+          </span>
+        </button>
+        <button
+          type="button"
+          className={"phonics-tab" + (activeTab === "wantsneeds" ? " selected" : "")}
+          onClick={() => setActiveTab("wantsneeds")}
+        >
+          <span className="phonics-tab-inner">
+            🧦 {t("modules.financialWantsNeedsTitle")}
+            <TabSpeakIcon text={t("modules.financialWantsNeedsTitle")} langCode={pair.mother} />
+          </span>
+        </button>
+        <button
+          type="button"
+          className={"phonics-tab" + (activeTab === "savespend" ? " selected" : "")}
+          onClick={() => setActiveTab("savespend")}
+        >
+          <span className="phonics-tab-inner">
+            ⚖️ {t("modules.financialSaveSpendTitle")}
+            <TabSpeakIcon text={t("modules.financialSaveSpendTitle")} langCode={pair.mother} />
+          </span>
+        </button>
+        <button
+          type="button"
+          className={"phonics-tab" + (activeTab === "piggy" ? " selected" : "")}
+          onClick={() => setActiveTab("piggy")}
+        >
+          <span className="phonics-tab-inner">
+            🐷 {t("modules.financialPiggyBankTitle")}
+            <TabSpeakIcon text={t("modules.financialPiggyBankTitle")} langCode={pair.mother} />
+          </span>
+        </button>
+        <button
+          type="button"
+          className={"phonics-tab" + (activeTab === "discount" ? " selected" : "")}
+          onClick={() => setActiveTab("discount")}
+        >
+          <span className="phonics-tab-inner">
+            🕵️ {t("modules.financialDiscountTitle")}
+            <TabSpeakIcon text={t("modules.financialDiscountTitle")} langCode={pair.mother} />
+          </span>
+        </button>
+        <button
+          type="button"
+          className={"phonics-tab" + (activeTab === "interest" ? " selected" : "")}
+          onClick={() => setActiveTab("interest")}
+        >
+          <span className="phonics-tab-inner">
+            📈 {t("modules.financialInterestTitle")}
+            <TabSpeakIcon text={t("modules.financialInterestTitle")} langCode={pair.mother} />
+          </span>
+        </button>
+        <button
+          type="button"
+          className={"phonics-tab" + (activeTab === "safety" ? " selected" : "")}
+          onClick={() => setActiveTab("safety")}
+        >
+          <span className="phonics-tab-inner">
+            🛡️ {t("modules.financialSafetyTitle")}
+            <TabSpeakIcon text={t("modules.financialSafetyTitle")} langCode={pair.mother} />
           </span>
         </button>
       </div>
@@ -605,6 +850,311 @@ export default function Financial() {
                   {t("modules.financialScore")}: {adScore} / {adCards.length}
                 </p>
                 <button type="button" className="big-btn" onClick={handleAdRestart}>
+                  {t("modules.financialPlayAgain")}
+                </button>
+              </div>
+            )}
+          </div>
+        </>
+      )}
+
+      {activeTab === "wantsneeds" && (
+        <>
+          <h2 className="section-title">{t("modules.financialWantsNeedsTitle")} 🧦</h2>
+          <p className="page-intro">{t("modules.financialWantsNeedsIntro")}</p>
+          <div className="game-card">
+            {!wnFinished ? (
+              <>
+                <div className="game-progress">
+                  {wnStep + 1} / {wnItems.length} · ⭐ {wnScore}
+                </div>
+                <div className="game-emoji">{wnItem.emoji}</div>
+                <p className="page-intro">
+                  {wnItem.name}
+                  <SpeakButton text={wnItem.name} langCode={pair.mother} />
+                </p>
+                <div className="game-options">
+                  <button
+                    type="button"
+                    className="big-btn game-option"
+                    disabled={wnWrongPick === true}
+                    onClick={() => handleWnAnswer(true)}
+                  >
+                    🙋 {t("modules.financialNeed")}
+                  </button>
+                  <button
+                    type="button"
+                    className="big-btn game-option"
+                    disabled={wnWrongPick === false}
+                    onClick={() => handleWnAnswer(false)}
+                  >
+                    💭 {t("modules.financialWant")}
+                  </button>
+                </div>
+                {wnWrongPick != null && <p className="game-feedback wrong">❌</p>}
+              </>
+            ) : (
+              <div className="game-card">
+                <div className="game-emoji">🏆</div>
+                <p className="game-result">
+                  {t("modules.financialScore")}: {wnScore} / {wnItems.length}
+                </p>
+                <button type="button" className="big-btn" onClick={handleWnRestart}>
+                  {t("modules.financialPlayAgain")}
+                </button>
+              </div>
+            )}
+          </div>
+        </>
+      )}
+
+      {activeTab === "savespend" && (
+        <>
+          <h2 className="section-title">{t("modules.financialSaveSpendTitle")} ⚖️</h2>
+          <div className="game-card">
+            <p className="page-intro">
+              {saveSpend.scenarioText}
+              <SpeakButton text={saveSpend.scenarioText} langCode={pair.mother} />
+            </p>
+            {!ssChoice ? (
+              <div className="game-options">
+                {saveSpend.items.map((item) => (
+                  <button
+                    key={item.id}
+                    type="button"
+                    className="big-btn game-option"
+                    onClick={() => handleSaveSpendChoose(item)}
+                  >
+                    {item.emoji} {item.name} — {formatValue(item.price)}
+                  </button>
+                ))}
+              </div>
+            ) : (
+              <div className="game-result">
+                <p className="page-intro">
+                  {t("modules.financialSaveSpendResultBought")} {ssChoice.emoji} {ssChoice.name}.
+                </p>
+                <p className="page-intro">
+                  {t("modules.financialSaveSpendResultCant")} {ssOtherItem?.emoji} {ssOtherItem?.name}.
+                </p>
+                <p className="financial-explanation">{t("modules.financialSaveSpendResultTip")}</p>
+                <button type="button" className="big-btn" onClick={handleSaveSpendRestart}>
+                  {t("modules.financialPlayAgain")}
+                </button>
+              </div>
+            )}
+          </div>
+        </>
+      )}
+
+      {activeTab === "piggy" && (
+        <>
+          <h2 className="section-title">{t("modules.financialPiggyBankTitle")} 🐷</h2>
+          <div className="game-card">
+            <p className="page-intro">
+              {piggy.intro}
+              <SpeakButton text={piggy.intro} langCode={pair.mother} />
+            </p>
+            <div className="game-progress">
+              {t("modules.financialPiggyBankTotal")}: {formatValue(piggyTotal)}
+            </div>
+            {!piggyFinished ? (
+              <button type="button" className="big-btn" onClick={handlePiggyAddCoin}>
+                🪙 {t("modules.financialPiggyBankAddCoin")} ({formatValue(piggy.coinTurns[piggyTurn])})
+              </button>
+            ) : (
+              <div className="game-result">
+                <div className="game-emoji">🏆</div>
+                <p className="game-score">
+                  {t("modules.financialPiggyBankGoalReached")} {formatValue(piggyTotal)}
+                </p>
+                <p className="financial-explanation">
+                  {piggy.outro}
+                  <SpeakButton text={piggy.outro} langCode={pair.mother} />
+                </p>
+                <button type="button" className="big-btn" onClick={handlePiggyRestart}>
+                  {t("modules.financialPlayAgain")}
+                </button>
+              </div>
+            )}
+          </div>
+        </>
+      )}
+
+      {activeTab === "discount" && (
+        <>
+          <h2 className="section-title">{t("modules.financialDiscountTitle")} 🕵️</h2>
+          <p className="page-intro">{t("modules.financialDiscountIntro")}</p>
+          <div className="game-card">
+            {!discFinished ? (
+              <>
+                <div className="game-progress">
+                  {discStep + 1} / {discountCards.length} · ⭐ {discScore}
+                </div>
+                <div className="game-emoji">{discCard.emoji}</div>
+                <p className="page-intro">{discCard.product}</p>
+                <p className="financial-explanation">
+                  {t("modules.financialDiscountFakePrice")}: <s>{formatValue(discCard.fakeOriginalPrice)}</s> (-{discCard.discountPercent}%)
+                  {" · "}
+                  {t("modules.financialDiscountSellingPrice")}: {formatValue(discCard.sellingPrice)}
+                </p>
+                {!discAnswered ? (
+                  <>
+                    <p className="page-intro">{t("modules.financialDiscountAskGoodDeal")}</p>
+                    <div className="game-options">
+                      <button
+                        type="button"
+                        className="big-btn game-option"
+                        disabled={discWrongPick === true}
+                        onClick={() => handleDiscAnswer(true)}
+                      >
+                        👍 {t("modules.financialDiscountYes")}
+                      </button>
+                      <button
+                        type="button"
+                        className="big-btn game-option"
+                        disabled={discWrongPick === false}
+                        onClick={() => handleDiscAnswer(false)}
+                      >
+                        👎 {t("modules.financialDiscountNo")}
+                      </button>
+                    </div>
+                    {discWrongPick != null && <p className="game-feedback wrong">❌</p>}
+                  </>
+                ) : (
+                  <div className="game-card">
+                    <p className="game-result">
+                      ⭐ {discCard.isGoodDeal ? t("modules.financialDiscountGoodDeal") : t("modules.financialDiscountBadDeal")}
+                    </p>
+                    <p className="financial-explanation">
+                      {discCard.explanation}
+                      <SpeakButton text={discCard.explanation} langCode={pair.mother} />
+                    </p>
+                    <button type="button" className="big-btn" onClick={handleDiscNext}>
+                      ➡️
+                    </button>
+                  </div>
+                )}
+              </>
+            ) : (
+              <div className="game-card">
+                <div className="game-emoji">🏆</div>
+                <p className="game-result">
+                  {t("modules.financialScore")}: {discScore} / {discountCards.length}
+                </p>
+                <button type="button" className="big-btn" onClick={handleDiscRestart}>
+                  {t("modules.financialPlayAgain")}
+                </button>
+              </div>
+            )}
+          </div>
+        </>
+      )}
+
+      {activeTab === "interest" && (
+        <>
+          <h2 className="section-title">{t("modules.financialInterestTitle")} 📈</h2>
+          {tier === 1 && !interestAdvisoryDone ? (
+            <AgeAdvisory
+              langCode={pair.mother}
+              onAccept={() => setInterestAdvisoryDone(true)}
+              onDecline={() => setActiveTab("concepts")}
+            />
+          ) : (
+            <div className="game-card">
+              <p className="page-intro">
+                {interest.intro}
+                <SpeakButton text={interest.intro} langCode={pair.mother} />
+              </p>
+              <div className="reading-list">
+                {interestTotals.slice(0, interestYear + 1).map((total, y) => (
+                  <div className="reading-card" key={y}>
+                    <div className="reading-emoji">🏦</div>
+                    <div className="reading-words">
+                      <span className="reading-word">
+                        {y === 0 ? t("modules.financialPiggyBankTotal") : `${t("modules.financialInterestYear")} ${y}`}
+                      </span>
+                      <p className="financial-explanation">{formatValue(total)}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              {!interestFinished ? (
+                <button type="button" className="big-btn" onClick={handleInterestNext}>
+                  ➡️ {t("modules.financialInterestYear")} {interestYear + 1}
+                </button>
+              ) : (
+                <div className="game-result">
+                  <p className="financial-explanation">
+                    {interest.explanation}
+                    <SpeakButton text={interest.explanation} langCode={pair.mother} />
+                  </p>
+                  <button type="button" className="big-btn" onClick={handleInterestRestart}>
+                    {t("modules.financialPlayAgain")}
+                  </button>
+                </div>
+              )}
+            </div>
+          )}
+        </>
+      )}
+
+      {activeTab === "safety" && (
+        <>
+          <h2 className="section-title">{t("modules.financialSafetyTitle")} 🛡️</h2>
+          <p className="page-intro">{t("modules.financialSafetyIntro")}</p>
+          <div className="game-card">
+            {!safeFinished ? (
+              <>
+                <div className="game-progress">
+                  {safeStep + 1} / {safetyCards.length} · ⭐ {safeScore}
+                </div>
+                <div className="game-emoji">{safeCard.emoji}</div>
+                <p className="page-intro">
+                  {safeCard.scenario}
+                  <SpeakButton text={safeCard.scenario} langCode={pair.mother} />
+                </p>
+                {!safeAnswered ? (
+                  <>
+                    <div className="game-options">
+                      <button
+                        type="button"
+                        className="big-btn game-option"
+                        disabled={safeWrongPick === true}
+                        onClick={() => handleSafeAnswer(true)}
+                      >
+                        ✅ {t("modules.financialSafetySafe")}
+                      </button>
+                      <button
+                        type="button"
+                        className="big-btn game-option"
+                        disabled={safeWrongPick === false}
+                        onClick={() => handleSafeAnswer(false)}
+                      >
+                        ⚠️ {t("modules.financialSafetyUnsafe")}
+                      </button>
+                    </div>
+                    {safeWrongPick != null && <p className="game-feedback wrong">❌</p>}
+                  </>
+                ) : (
+                  <div className="game-card">
+                    <p className="game-result">
+                      ⭐ {safeCard.explanation}
+                      <SpeakButton text={safeCard.explanation} langCode={pair.mother} />
+                    </p>
+                    <button type="button" className="big-btn" onClick={handleSafeNext}>
+                      ➡️
+                    </button>
+                  </div>
+                )}
+              </>
+            ) : (
+              <div className="game-card">
+                <div className="game-emoji">🏆</div>
+                <p className="game-result">
+                  {t("modules.financialScore")}: {safeScore} / {safetyCards.length}
+                </p>
+                <button type="button" className="big-btn" onClick={handleSafeRestart}>
                   {t("modules.financialPlayAgain")}
                 </button>
               </div>

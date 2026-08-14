@@ -9,6 +9,7 @@ export const INSTRUMENT_FAMILY = {
   cavaquinho: "strings",
   portugueseGuitar: "strings",
   violin: "bowed",
+  viola: "bowed",
   flute: "wind",
   accordion: "bellows",
   concertina: "bellows",
@@ -200,6 +201,78 @@ function HarpVisual({ notes, activeNote, onPress }) {
             />
             <text x={bx} y={214} textAnchor="middle" className="instrument-note-label">
               {noteLabel(note)}
+            </text>
+          </g>
+        );
+      })}
+    </svg>
+  );
+}
+
+// Small drum-kit layout for the Percussão pads: distinct shapes (round bass
+// drum, cylindrical snare, cymbal, smaller tom) arranged spatially like a
+// real kit, with a brief scale/flash "hit" animation on tap. Purely visual —
+// the caller still owns playDrumPad/DRUM_PADS and passes them in unchanged.
+export function DrumKitVisual({ pads, activePad, onPress, labels = {} }) {
+  const width = 320;
+  const height = 220;
+  const layout = {
+    hihat: { cx: 70, cy: 60, shape: "cymbal" },
+    tom: { cx: 190, cy: 55, shape: "tom" },
+    snare: { cx: 250, cy: 120, shape: "snare" },
+    kick: { cx: 140, cy: 165, shape: "kick" },
+  };
+
+  return (
+    <svg
+      className="instrument-visual-svg drum-kit-visual"
+      viewBox={`0 0 ${width} ${height}`}
+      width="100%"
+      role="img"
+      aria-label="Bateria"
+    >
+      {pads.map((padId) => {
+        const pos = layout[padId] || { cx: width / 2, cy: height / 2, shape: "tom" };
+        const isActive = activePad === padId;
+        const hitClass = "drum-kit-piece drum-kit-" + pos.shape + (isActive ? " hit" : "");
+        return (
+          <g
+            key={padId}
+            className="instrument-hit-area"
+            onClick={() => onPress(padId)}
+            role="button"
+            aria-label={labels[padId] || padId}
+          >
+            {pos.shape === "cymbal" && (
+              <>
+                <line x1={pos.cx} y1={pos.cy + 18} x2={pos.cx} y2={pos.cy + 55} className="drum-kit-stand" />
+                <ellipse cx={pos.cx} cy={pos.cy} rx={44} ry={14} className={hitClass} />
+              </>
+            )}
+            {pos.shape === "tom" && (
+              <>
+                <rect x={pos.cx - 30} y={pos.cy} width={60} height={40} rx={8} className={hitClass} />
+                <ellipse cx={pos.cx} cy={pos.cy} rx={30} ry={10} className={hitClass + " drum-kit-head"} />
+              </>
+            )}
+            {pos.shape === "snare" && (
+              <>
+                <rect x={pos.cx - 36} y={pos.cy} width={72} height={46} rx={8} className={hitClass} />
+                <ellipse cx={pos.cx} cy={pos.cy} rx={36} ry={11} className={hitClass + " drum-kit-head"} />
+              </>
+            )}
+            {pos.shape === "kick" && (
+              <ellipse cx={pos.cx} cy={pos.cy} rx={54} ry={50} className={hitClass} />
+            )}
+            <rect
+              x={pos.cx - 55}
+              y={pos.cy - 40}
+              width={110}
+              height={110}
+              fill="transparent"
+            />
+            <text x={pos.cx} y={pos.cy + (pos.shape === "kick" ? 6 : 66)} textAnchor="middle" className="instrument-note-label">
+              {labels[padId] || padId}
             </text>
           </g>
         );

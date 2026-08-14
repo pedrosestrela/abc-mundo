@@ -209,6 +209,63 @@ function buildMultiplicationRounds(tier) {
   return rounds;
 }
 
+// Tier -> array/groups visual range for multiplication's counting mode.
+// Kept deliberately small at tier 1 (per product owner: 2x2 to 3x4) and
+// scaled up gradually so the array never gets too large to count by eye.
+const MUL_GROUPS_CONFIG = {
+  1: { groupsMin: 2, groupsMax: 3, perMin: 2, perMax: 4, rounds: 5 },
+  2: { groupsMin: 2, groupsMax: 4, perMin: 2, perMax: 5, rounds: 6 },
+  3: { groupsMin: 3, groupsMax: 5, perMin: 2, perMax: 6, rounds: 6 },
+};
+
+function buildMultiplicationCountingRounds(tier) {
+  const config = MUL_GROUPS_CONFIG[tier] || MUL_GROUPS_CONFIG[1];
+  const rounds = [];
+  for (let i = 0; i < config.rounds; i++) {
+    const groups = randInt(config.groupsMin, config.groupsMax);
+    const perGroup = randInt(config.perMin, config.perMax);
+    const scenarioObj = pickScenarioObject();
+    rounds.push({
+      groups,
+      perGroup,
+      correct: groups * perGroup,
+      character: pickCharacter(),
+      scenarioEmoji: scenarioObj.emoji,
+      scenarioObjKey: scenarioObj.key,
+    });
+  }
+  return rounds;
+}
+
+// Tier -> sharing/partition visual range for division's counting mode.
+// Only evenly-divisible totals are generated (no remainders), as requested,
+// so every object always finds a bucket and "each friend gets N" is exact.
+const DIV_SHARE_CONFIG = {
+  1: { friendsMin: 2, friendsMax: 3, perMin: 2, perMax: 3, rounds: 5 },
+  2: { friendsMin: 2, friendsMax: 4, perMin: 2, perMax: 4, rounds: 6 },
+  3: { friendsMin: 2, friendsMax: 5, perMin: 2, perMax: 6, rounds: 6 },
+};
+
+function buildDivisionCountingRounds(tier) {
+  const config = DIV_SHARE_CONFIG[tier] || DIV_SHARE_CONFIG[1];
+  const rounds = [];
+  for (let i = 0; i < config.rounds; i++) {
+    const friends = randInt(config.friendsMin, config.friendsMax);
+    const perFriend = randInt(config.perMin, config.perMax);
+    const scenarioObj = pickScenarioObject();
+    rounds.push({
+      friends,
+      perFriend,
+      total: friends * perFriend,
+      correct: perFriend,
+      character: pickCharacter(),
+      scenarioEmoji: scenarioObj.emoji,
+      scenarioObjKey: scenarioObj.key,
+    });
+  }
+  return rounds;
+}
+
 function buildDivisionRounds(tier) {
   const config = DIV_CONFIG[tier] || DIV_CONFIG[1];
   const rounds = [];
@@ -473,6 +530,295 @@ function CountingModeQuiz({ rounds, moduleEvent, skillId, profile, t, onDone }) 
   );
 }
 
+// Array/groups visual mode for multiplication: the child sees `groups` rows
+// of `perGroup` icons each (e.g. "3 groups of 4 apples") and taps every icon
+// in turn to build a running total, making "multiplication is repeated
+// addition of equal groups" visible instead of an abstract fact to recall.
+function MultiplicationCountingQuiz({ rounds, moduleEvent, skillId, profile, t, onDone }) {
+  const [step, setStep] = useState(0);
+  const [score, setScore] = useState(0);
+  const [tapped, setTapped] = useState(() => new Set());
+  const [feedback, setFeedback] = useState(null);
+  const [wrongTries, setWrongTries] = useState(0);
+
+  const round = rounds[step];
+  const finished = step >= rounds.length;
+
+  if (!round && !finished) return null;
+
+  if (finished) {
+    return (
+      <div className="game-card">
+        <div className="game-emoji">🏆</div>
+        <p className="game-result">
+          {t("modules.mathScore")}: {score} / {rounds.length}
+        </p>
+        <button type="button" className="big-btn" onClick={onDone}>
+          {t("modules.mathPlayAgain")} 🔁
+        </button>
+      </div>
+    );
+  }
+
+  const objetoLabel = t(`modules.${round.scenarioObjKey}`);
+  const scenarioText = fillScenario(t("modules.mathScenarioMultiplication"), {
+    character: round.character,
+    a: round.groups,
+    b: round.perGroup,
+    objeto: objetoLabel,
+  });
+
+  function resetRoundState() {
+    setTapped(new Set());
+    setFeedback(null);
+  }
+
+  function handleConfirm() {
+    if (feedback) return;
+    const correct = tapped.size === round.correct;
+    setFeedback(correct ? "correct" : "wrong");
+    if (correct) {
+      setScore((s) => s + 1);
+      if (skillId) recordSkillEvent(profile?.name, skillId, wrongTries < 2);
+    } else {
+      setWrongTries((c) => c + 1);
+    }
+    pingProgress({
+      profileName: profile?.name,
+      module: moduleEvent,
+      event: correct ? "quiz_correct" : "quiz_wrong",
+    });
+    if (correct) {
+      setTimeout(() => {
+        resetRoundState();
+        setWrongTries(0);
+        setStep((s) => s + 1);
+      }, 900);
+    } else {
+      setTimeout(() => setFeedback(null), 500);
+    }
+  }
+
+  return (
+    <div className="game-card">
+      <div className="game-progress">
+        {step + 1} / {rounds.length} · ⭐ {score}
+      </div>
+      <p className="math-scenario-text">
+        {round.scenarioEmoji} {scenarioText}
+      </p>
+      <p className="math-count-label">{t("modules.mathTapToCount")}</p>
+
+      <div className="math-groups">
+        {Array.from({ length: round.groups }).map((_, g) => (
+          <div key={"group-" + g} className="math-count-objects math-group-row">
+            {Array.from({ length: round.perGroup }).map((_, j) => {
+              const idx = g * round.perGroup + j;
+              const isTapped = tapped.has(idx);
+              return (
+                <button
+                  key={"item-" + idx}
+                  type="button"
+                  className={"math-count-icon" + (isTapped ? " added" : "")}
+                  disabled={isTapped || !!feedback}
+                  onClick={() => setTapped((prev) => new Set(prev).add(idx))}
+                >
+                  {round.scenarioEmoji}
+                </button>
+              );
+            })}
+          </div>
+        ))}
+      </div>
+
+      <div className="math-count-total">
+        {t("modules.mathRunningTotal").replace("{count}", tapped.size)}
+      </div>
+
+      <button
+        type="button"
+        className={
+          "big-btn math-count-confirm" +
+          (feedback === "correct" ? " correct" : "") +
+          (feedback === "wrong" ? " wrong" : "")
+        }
+        onClick={handleConfirm}
+        disabled={!!feedback}
+      >
+        {t("modules.mathConfirm")} ✅
+      </button>
+    </div>
+  );
+}
+
+// Sharing/partition visual mode for division: the child sees `total` objects
+// in a pool and `friends` buckets. Tap an object, then tap a bucket, to
+// distribute items one at a time (partitive division) until every object is
+// placed, revealing "each friend gets N" - no drag-and-drop, tap-only.
+function DivisionCountingQuiz({ rounds, moduleEvent, skillId, profile, t, onDone }) {
+  const [step, setStep] = useState(0);
+  const [score, setScore] = useState(0);
+  // assignments[i] = bucket index the i-th item was placed into, or null
+  const [assignments, setAssignments] = useState(() => []);
+  const [selected, setSelected] = useState(null);
+  const [feedback, setFeedback] = useState(null);
+  const [wrongTries, setWrongTries] = useState(0);
+
+  const round = rounds[step];
+  const finished = step >= rounds.length;
+
+  if (!round && !finished) return null;
+
+  if (finished) {
+    return (
+      <div className="game-card">
+        <div className="game-emoji">🏆</div>
+        <p className="game-result">
+          {t("modules.mathScore")}: {score} / {rounds.length}
+        </p>
+        <button type="button" className="big-btn" onClick={onDone}>
+          {t("modules.mathPlayAgain")} 🔁
+        </button>
+      </div>
+    );
+  }
+
+  const objetoLabel = t(`modules.${round.scenarioObjKey}`);
+  const scenarioText = fillScenario(t("modules.mathScenarioDivision"), {
+    character: round.character,
+    a: round.total,
+    b: round.friends,
+    objeto: objetoLabel,
+  });
+
+  const bucketCounts = Array.from({ length: round.friends }).map(
+    (_, b) => assignments.filter((v) => v === b).length
+  );
+  const allPlaced = assignments.length === round.total && assignments.every((v) => v !== null);
+
+  function resetRoundState() {
+    setAssignments([]);
+    setSelected(null);
+    setFeedback(null);
+  }
+
+  function handleItemTap(idx) {
+    if (feedback) return;
+    if (assignments[idx] != null) {
+      // Tapping an already-placed item returns it to the pool for correction.
+      setAssignments((prev) => {
+        const next = [...prev];
+        next[idx] = null;
+        return next;
+      });
+      return;
+    }
+    setSelected(idx);
+  }
+
+  function handleBucketTap(b) {
+    if (feedback || selected == null) return;
+    setAssignments((prev) => {
+      const next = [...prev];
+      next[selected] = b;
+      return next;
+    });
+    setSelected(null);
+  }
+
+  function handleConfirm() {
+    if (feedback || !allPlaced) return;
+    const correct = bucketCounts.every((c) => c === round.correct);
+    setFeedback(correct ? "correct" : "wrong");
+    if (correct) {
+      setScore((s) => s + 1);
+      if (skillId) recordSkillEvent(profile?.name, skillId, wrongTries < 2);
+    } else {
+      setWrongTries((c) => c + 1);
+    }
+    pingProgress({
+      profileName: profile?.name,
+      module: moduleEvent,
+      event: correct ? "quiz_correct" : "quiz_wrong",
+    });
+    if (correct) {
+      setTimeout(() => {
+        resetRoundState();
+        setWrongTries(0);
+        setStep((s) => s + 1);
+      }, 900);
+    } else {
+      setTimeout(() => setFeedback(null), 500);
+    }
+  }
+
+  return (
+    <div className="game-card">
+      <div className="game-progress">
+        {step + 1} / {rounds.length} · ⭐ {score}
+      </div>
+      <p className="math-scenario-text">
+        {round.scenarioEmoji} {scenarioText}
+      </p>
+      <p className="math-count-label">
+        {selected == null ? t("modules.mathTapItemFirst") : t("modules.mathTapBucket")}
+      </p>
+
+      <div className="game-emoji math-count-objects">
+        {Array.from({ length: round.total }).map((_, i) => {
+          const placed = assignments[i] != null;
+          return (
+            <button
+              key={"item-" + i}
+              type="button"
+              className={
+                "math-count-icon" +
+                (placed ? " removed" : "") +
+                (selected === i ? " selected" : "")
+              }
+              disabled={!!feedback}
+              onClick={() => handleItemTap(i)}
+            >
+              {round.scenarioEmoji}
+            </button>
+          );
+        })}
+      </div>
+
+      <div className="math-buckets">
+        {Array.from({ length: round.friends }).map((_, b) => (
+          <button
+            key={"bucket-" + b}
+            type="button"
+            className="math-bucket"
+            disabled={!!feedback}
+            onClick={() => handleBucketTap(b)}
+          >
+            <div className="math-bucket-label">🧒 {b + 1}</div>
+            <div className="math-bucket-items">
+              {round.scenarioEmoji.repeat(bucketCounts[b])}
+            </div>
+            <div className="math-bucket-count">{bucketCounts[b]}</div>
+          </button>
+        ))}
+      </div>
+
+      <button
+        type="button"
+        className={
+          "big-btn math-count-confirm" +
+          (feedback === "correct" ? " correct" : "") +
+          (feedback === "wrong" ? " wrong" : "")
+        }
+        onClick={handleConfirm}
+        disabled={!!feedback || !allPlaced}
+      >
+        {t("modules.mathConfirm")} ✅
+      </button>
+    </div>
+  );
+}
+
 const HELP_KEY_BY_ACTIVITY = {
   counting: "mathHelpCounting",
   numbers: "mathHelpNumbers",
@@ -495,6 +841,20 @@ export default function MathGame() {
   // Addition/subtraction offers two interaction styles: pick a
   // multiple-choice answer, or tap objects to count them directly.
   const [addSubMode, setAddSubMode] = useState("choice");
+  // Multiplication offers multiple-choice or the array/groups counting mode;
+  // division offers multiple-choice or the sharing/partition counting mode.
+  const [mulMode, setMulMode] = useState("choice");
+  const [divMode, setDivMode] = useState("choice");
+
+  function helpKeyFor(key) {
+    if (key === "multiplication") {
+      return mulMode === "choice" ? "mathHelpMultiplication" : "mathHelpMultiplicationGroups";
+    }
+    if (key === "division") {
+      return divMode === "choice" ? "mathHelpDivision" : "mathHelpDivisionShare";
+    }
+    return HELP_KEY_BY_ACTIVITY[key];
+  }
 
   const tabs = [
     { key: "counting", label: t("modules.mathCounting"), emoji: "🔢" },
@@ -524,7 +884,7 @@ export default function MathGame() {
     <div className="page">
       <h1>{t("modules.mathTitle")} 🔢</h1>
       <div className="help-btn-corner">
-        <HelpButton text={t(`modules.${HELP_KEY_BY_ACTIVITY[activity]}`)} langCode={pair.mother} />
+        <HelpButton text={t(`modules.${helpKeyFor(activity)}`)} langCode={pair.mother} />
       </div>
 
       <div className="game-options">
@@ -538,7 +898,7 @@ export default function MathGame() {
               {tab.emoji} {tab.label}
             </button>
             <TabSpeakIcon
-              text={`${tab.label}. ${t(`modules.${HELP_KEY_BY_ACTIVITY[tab.key]}`)}`}
+              text={`${tab.label}. ${t(`modules.${helpKeyFor(tab.key)}`)}`}
               langCode={pair.mother}
             />
           </div>
@@ -650,47 +1010,111 @@ export default function MathGame() {
       )}
 
       {activity === "multiplication" && (
-        <QuizRunner
-          key={"multiplication-" + seed}
-          rounds={buildMultiplicationRounds(tier)}
-          profile={profile}
-          t={t}
-          moduleEvent="math_multiplication"
-          onDone={restart}
-          renderPrompt={(round) => (
-            <>
-              <div className="game-emoji">
-                {Array.from({ length: round.a }).map((_, i) => (
-                  <span key={i} style={{ marginRight: "0.5em" }}>
-                    {round.emoji.repeat(round.b)}
-                  </span>
-                ))}
-              </div>
-              <div className="math-expression">
-                {round.a} × {round.b} = ?
-              </div>
-            </>
+        <>
+          <div className="game-options math-mode-toggle">
+            <button
+              type="button"
+              className={"big-btn game-option" + (mulMode === "choice" ? " correct" : "")}
+              onClick={() => setMulMode("choice")}
+            >
+              🔘 {t("modules.mathModeChoice")}
+            </button>
+            <button
+              type="button"
+              className={"big-btn game-option" + (mulMode === "groups" ? " correct" : "")}
+              onClick={() => setMulMode("groups")}
+            >
+              👆 {t("modules.mathModeGroups")}
+            </button>
+          </div>
+
+          {mulMode === "choice" ? (
+            <QuizRunner
+              key={"multiplication-choice-" + seed}
+              rounds={buildMultiplicationRounds(tier)}
+              profile={profile}
+              t={t}
+              moduleEvent="math_multiplication"
+              skillId="math-multiplication"
+              onDone={restart}
+              renderPrompt={(round) => (
+                <>
+                  <div className="game-emoji">
+                    {Array.from({ length: round.a }).map((_, i) => (
+                      <span key={i} style={{ marginRight: "0.5em" }}>
+                        {round.emoji.repeat(round.b)}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="math-expression">
+                    {round.a} × {round.b} = ?
+                  </div>
+                </>
+              )}
+            />
+          ) : (
+            <MultiplicationCountingQuiz
+              key={"multiplication-groups-" + seed}
+              rounds={buildMultiplicationCountingRounds(tier)}
+              profile={profile}
+              t={t}
+              moduleEvent="math_multiplication"
+              skillId="math-multiplication"
+              onDone={restart}
+            />
           )}
-        />
+        </>
       )}
 
       {activity === "division" && (
-        <QuizRunner
-          key={"division-" + seed}
-          rounds={buildDivisionRounds(tier)}
-          profile={profile}
-          t={t}
-          moduleEvent="math_division"
-          onDone={restart}
-          renderPrompt={(round) => (
-            <>
-              <div className="game-emoji">{round.emoji.repeat(round.dividend)}</div>
-              <div className="math-expression">
-                {round.dividend} ÷ {round.divisor} = ?
-              </div>
-            </>
+        <>
+          <div className="game-options math-mode-toggle">
+            <button
+              type="button"
+              className={"big-btn game-option" + (divMode === "choice" ? " correct" : "")}
+              onClick={() => setDivMode("choice")}
+            >
+              🔘 {t("modules.mathModeChoice")}
+            </button>
+            <button
+              type="button"
+              className={"big-btn game-option" + (divMode === "share" ? " correct" : "")}
+              onClick={() => setDivMode("share")}
+            >
+              👆 {t("modules.mathModeShare")}
+            </button>
+          </div>
+
+          {divMode === "choice" ? (
+            <QuizRunner
+              key={"division-choice-" + seed}
+              rounds={buildDivisionRounds(tier)}
+              profile={profile}
+              t={t}
+              moduleEvent="math_division"
+              skillId="math-division"
+              onDone={restart}
+              renderPrompt={(round) => (
+                <>
+                  <div className="game-emoji">{round.emoji.repeat(round.dividend)}</div>
+                  <div className="math-expression">
+                    {round.dividend} ÷ {round.divisor} = ?
+                  </div>
+                </>
+              )}
+            />
+          ) : (
+            <DivisionCountingQuiz
+              key={"division-share-" + seed}
+              rounds={buildDivisionCountingRounds(tier)}
+              profile={profile}
+              t={t}
+              moduleEvent="math_division"
+              skillId="math-division"
+              onDone={restart}
+            />
           )}
-        />
+        </>
       )}
     </div>
   );

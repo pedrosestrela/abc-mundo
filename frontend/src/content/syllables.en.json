@@ -143,12 +143,13 @@
     "digraph": true
   },
   {
-    "syllable": "SHOE",
-    "exampleWord": "SHOE",
-    "emoji": "👟",
-    "hint": "SH for Shoe",
+    "syllable": "SHOW",
+    "exampleWord": "SHOWER",
+    "emoji": "🚿",
+    "hint": "SHOW for Shower",
     "syllables": [
-      "SHOE"
+      "SHOW",
+      "ER"
     ],
     "digraph": true
   },
@@ -164,12 +165,13 @@
     "digraph": true
   },
   {
-    "syllable": "THUMB",
-    "exampleWord": "THUMB",
-    "emoji": "👍",
-    "hint": "TH for Thumb",
+    "syllable": "THUN",
+    "exampleWord": "THUNDER",
+    "emoji": "⛈️",
+    "hint": "THUN for Thunder",
     "syllables": [
-      "THUMB"
+      "THUN",
+      "DER"
     ],
     "digraph": true
   },
@@ -185,22 +187,24 @@
     "digraph": true
   },
   {
-    "syllable": "WHALE",
-    "exampleWord": "WHALE",
-    "emoji": "🐳",
-    "hint": "WH for Whale",
+    "syllable": "WHIS",
+    "exampleWord": "WHISTLE",
+    "emoji": "🎵",
+    "hint": "WHIS for Whistle",
     "syllables": [
-      "WHALE"
+      "WHIS",
+      "TLE"
     ],
     "digraph": true
   },
   {
-    "syllable": "SHIRT",
-    "exampleWord": "SHIRT",
-    "emoji": "👕",
-    "hint": "SH for Shirt",
+    "syllable": "SHER",
+    "exampleWord": "SHERIFF",
+    "emoji": "🤠",
+    "hint": "SHER for Sheriff",
     "syllables": [
-      "SHIRT"
+      "SHER",
+      "IFF"
     ],
     "digraph": true
   },
@@ -267,6 +271,354 @@
     "syllables": [
       "SPI",
       "DER"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "BAS",
+    "exampleWord": "BASKET",
+    "emoji": "🧺",
+    "hint": "BAS for Basket",
+    "syllables": [
+      "BAS",
+      "KET"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "CAR",
+    "exampleWord": "CARPET",
+    "emoji": "🟫",
+    "hint": "CAR for Carpet",
+    "syllables": [
+      "CAR",
+      "PET"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "MAG",
+    "exampleWord": "MAGNET",
+    "emoji": "🧲",
+    "hint": "MAG for Magnet",
+    "syllables": [
+      "MAG",
+      "NET"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "PEN",
+    "exampleWord": "PENCIL",
+    "emoji": "✏️",
+    "hint": "PEN for Pencil",
+    "syllables": [
+      "PEN",
+      "CIL"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "TI",
+    "exampleWord": "TIGER",
+    "emoji": "🐯",
+    "hint": "TI for Tiger",
+    "syllables": [
+      "TI",
+      "GER"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "ZE",
+    "exampleWord": "ZEBRA",
+    "emoji": "🦓",
+    "hint": "ZE for Zebra",
+    "syllables": [
+      "ZE",
+      "BRA"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "DOL",
+    "exampleWord": "DOLPHIN",
+    "emoji": "🐬",
+    "hint": "DOL for Dolphin",
+    "syllables": [
+      "DOL",
+      "PHIN"
+    ],
+    "digraph": true
+  },
+  {
+    "syllable": "E",
+    "exampleWord": "ELEPHANT",
+    "emoji": "🐘",
+    "hint": "E for Elephant",
+    "syllables": [
+      "E",
+      "LE",
+      "PHANT"
+    ],
+    "digraph": true
+  },
+  {
+    "syllable": "BUT",
+    "exampleWord": "BUTTERFLY",
+    "emoji": "🦋",
+    "hint": "BUT for Butterfly",
+    "syllables": [
+      "BUT",
+      "TER",
+      "FLY"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "CROC",
+    "exampleWord": "CROCODILE",
+    "emoji": "🐊",
+    "hint": "CROC for Crocodile",
+    "syllables": [
+      "CROC",
+      "O",
+      "DILE"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "DI",
+    "exampleWord": "DINOSAUR",
+    "emoji": "🦖",
+    "hint": "DI for Dinosaur",
+    "syllables": [
+      "DI",
+      "NO",
+      "SAUR"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "HOS",
+    "exampleWord": "HOSPITAL",
+    "emoji": "🏥",
+    "hint": "HOS for Hospital",
+    "syllables": [
+      "HOS",
+      "PI",
+      "TAL"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "FOOT",
+    "exampleWord": "FOOTBALL",
+    "emoji": "⚽",
+    "hint": "FOOT for Football",
+    "syllables": [
+      "FOOT",
+      "BALL"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "TEA",
+    "exampleWord": "TEACHER",
+    "emoji": "👩‍🏫",
+    "hint": "TEA for Teacher",
+    "syllables": [
+      "TEA",
+      "CHER"
+    ],
+    "digraph": true
+  },
+  {
+    "syllable": "CHIL",
+    "exampleWord": "CHILDREN",
+    "emoji": "🧒",
+    "hint": "CHIL for Children",
+    "syllables": [
+      "CHIL",
+      "DREN"
+    ],
+    "digraph": true
+  },
+  {
+    "syllable": "BATH",
+    "exampleWord": "BATHROOM",
+    "emoji": "🚽",
+    "hint": "BATH for Bathroom",
+    "syllables": [
+      "BATH",
+      "ROOM"
+    ],
+    "digraph": true
+  },
+  {
+    "syllable": "TOOTH",
+    "exampleWord": "TOOTHBRUSH",
+    "emoji": "🪥",
+    "hint": "TOOTH for Toothbrush",
+    "syllables": [
+      "TOOTH",
+      "BRUSH"
+    ],
+    "digraph": true
+  },
+  {
+    "syllable": "SHOUL",
+    "exampleWord": "SHOULDER",
+    "emoji": "🤷",
+    "hint": "SHOUL for Shoulder",
+    "syllables": [
+      "SHOUL",
+      "DER"
+    ],
+    "digraph": true
+  },
+  {
+    "syllable": "CHOC",
+    "exampleWord": "CHOCOLATE",
+    "emoji": "🍫",
+    "hint": "CHOC for Chocolate",
+    "syllables": [
+      "CHOC",
+      "O",
+      "LATE"
+    ],
+    "digraph": true
+  },
+  {
+    "syllable": "THIRS",
+    "exampleWord": "THIRSTY",
+    "emoji": "🥤",
+    "hint": "THIRS for Thirsty",
+    "syllables": [
+      "THIRS",
+      "TY"
+    ],
+    "digraph": true
+  },
+  {
+    "syllable": "SHOP",
+    "exampleWord": "SHOPPING",
+    "emoji": "🛍️",
+    "hint": "SHOP for Shopping",
+    "syllables": [
+      "SHOP",
+      "PING"
+    ],
+    "digraph": true
+  },
+  {
+    "syllable": "PHO",
+    "exampleWord": "PHOTOGRAPH",
+    "emoji": "📷",
+    "hint": "PHO for Photograph",
+    "syllables": [
+      "PHO",
+      "TO",
+      "GRAPH"
+    ],
+    "digraph": true
+  },
+  {
+    "syllable": "CHAM",
+    "exampleWord": "CHAMPION",
+    "emoji": "🏆",
+    "hint": "CHAM for Champion",
+    "syllables": [
+      "CHAM",
+      "PI",
+      "ON"
+    ],
+    "digraph": true
+  },
+  {
+    "syllable": "BAS",
+    "exampleWord": "BASKETBALL",
+    "emoji": "🏀",
+    "hint": "BAS for Basketball",
+    "syllables": [
+      "BAS",
+      "KET",
+      "BALL"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "STRAW",
+    "exampleWord": "STRAWBERRY",
+    "emoji": "🍓",
+    "hint": "STRAW for Strawberry",
+    "syllables": [
+      "STRAW",
+      "BER",
+      "RY"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "UM",
+    "exampleWord": "UMBRELLA",
+    "emoji": "☂️",
+    "hint": "UM for Umbrella",
+    "syllables": [
+      "UM",
+      "BREL",
+      "LA"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "CAT",
+    "exampleWord": "CATERPILLAR",
+    "emoji": "🐛",
+    "hint": "CAT for Caterpillar",
+    "syllables": [
+      "CAT",
+      "ER",
+      "PIL",
+      "LAR"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "WA",
+    "exampleWord": "WATERMELON",
+    "emoji": "🍉",
+    "hint": "WA for Watermelon",
+    "syllables": [
+      "WA",
+      "TER",
+      "MEL",
+      "ON"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "KAN",
+    "exampleWord": "KANGAROO",
+    "emoji": "🦘",
+    "hint": "KAN for Kangaroo",
+    "syllables": [
+      "KAN",
+      "GA",
+      "ROO"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "AL",
+    "exampleWord": "ALLIGATOR",
+    "emoji": "🐊",
+    "hint": "AL for Alligator",
+    "syllables": [
+      "AL",
+      "LI",
+      "GA",
+      "TOR"
     ],
     "digraph": false
   }
