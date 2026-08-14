@@ -11,6 +11,7 @@ const GROUPS = [
       { to: "/alphabet", emoji: "🔤", nav: "alphabet", sub: "sub_alphabet" },
       { to: "/syllables", emoji: "🧩", nav: "syllables", sub: "sub_syllables" },
       { to: "/reading", emoji: "📖", nav: "reading", sub: "sub_reading" },
+      { to: "/writing", emoji: "✏️", nav: "writing", sub: "sub_writing" },
       { to: "/phrases", emoji: "💬", nav: "phrases", sub: "sub_phrases" },
       { to: "/stories", emoji: "📚", nav: "stories", sub: "sub_stories" },
     ],

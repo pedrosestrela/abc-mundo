@@ -1611,6 +1611,118 @@ body {
   border: 2px solid var(--blue);
 }
 
+.writing-section-tabs {
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.writing-target-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 12px 0;
+}
+
+.writing-nav-btn {
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background: #eee6ff;
+  color: var(--blue, #3b3b6d);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.writing-target-card {
+  background: #fff;
+  border-radius: 20px;
+  border: 3px solid var(--purple);
+  padding: 12px 24px;
+  text-align: center;
+  min-width: 160px;
+}
+
+.writing-target-letter {
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 1;
+  color: var(--blue, #3b3b6d);
+}
+
+.writing-target-word {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 1.1rem;
+  margin-top: 6px;
+}
+
+.writing-canvas-wrap {
+  position: relative;
+  max-width: 480px;
+  height: 320px;
+  margin: 16px auto;
+  border-radius: 18px;
+  border: 3px solid var(--purple);
+  overflow: hidden;
+  background: #fff;
+}
+
+.writing-guide-char {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14rem;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 3px #d8d8f0;
+  pointer-events: none;
+  user-select: none;
+}
+
+.writing-canvas {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  display: block;
+  background: transparent;
+}
+
+.writing-clear-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 2;
+}
+
+.writing-done-btn {
+  display: block;
+  margin: 12px auto;
+}
+
+.writing-feedback {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--blue, #3b3b6d);
+}
+
+.writing-count-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  justify-content: center;
+  margin: 8px 0;
+  font-size: 1.4rem;
+}
+
 .science-card {
   border-color: var(--purple);
 }
