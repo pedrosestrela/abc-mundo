@@ -8,7 +8,9 @@ import HelpButton from "../components/HelpButton.jsx";
 export default function Whys() {
   const { t } = useTranslation();
   const pair = getLangPair() || { mother: "pt", secondary: "en" };
-  const whys = getWhys(pair.secondary);
+  const motherWhys = getWhys(pair.mother);
+  const secondaryWhys = getWhys(pair.secondary);
+  const whys = motherWhys.map((m, i) => ({ ...m, secondary: secondaryWhys[i] }));
   const profile = getProfile();
   const [explored, setExplored] = useState(() => getExploredWhys(profile?.name));
   const [openId, setOpenId] = useState(null);
@@ -49,7 +51,10 @@ export default function Whys() {
             <div className={`why-card${isOpen ? " why-card-open" : ""}`} key={why.id}>
               <button type="button" className="why-question-btn" onClick={() => handleOpen(why)}>
                 <span className="why-emoji">{why.emoji}</span>
-                <span className="why-question">{why.question}</span>
+                <span className="why-question">
+                  {why.question}
+                  {why.secondary && <span className="why-question-secondary">{why.secondary.question}</span>}
+                </span>
               </button>
               {isOpen && (
                 <div className="why-detail">
@@ -57,8 +62,14 @@ export default function Whys() {
                     <strong>⚡ {t("modules.whysQuickAnswer")}</strong>
                     <div className="why-tier-header">
                       <p>{why.quickAnswer}</p>
-                      <SpeakButton text={why.quickAnswer} langCode={pair.secondary} />
+                      <SpeakButton text={why.quickAnswer} langCode={pair.mother} />
                     </div>
+                    {why.secondary && (
+                      <div className="why-tier-header secondary">
+                        <p>{why.secondary.quickAnswer}</p>
+                        <SpeakButton text={why.secondary.quickAnswer} langCode={pair.secondary} />
+                      </div>
+                    )}
                   </div>
 
                   {!tierState.more && (
@@ -71,8 +82,14 @@ export default function Whys() {
                       <strong>🔎 {t("modules.whysMoreAnswer")}</strong>
                       <div className="why-tier-header">
                         <p>{why.moreAnswer}</p>
-                        <SpeakButton text={why.moreAnswer} langCode={pair.secondary} />
+                        <SpeakButton text={why.moreAnswer} langCode={pair.mother} />
                       </div>
+                      {why.secondary && (
+                        <div className="why-tier-header secondary">
+                          <p>{why.secondary.moreAnswer}</p>
+                          <SpeakButton text={why.secondary.moreAnswer} langCode={pair.secondary} />
+                        </div>
+                      )}
                     </div>
                   )}
 
@@ -90,8 +107,14 @@ export default function Whys() {
                       <strong>🧪 {t("modules.whysExperiment")}</strong>
                       <div className="why-tier-header">
                         <p>{why.experiment}</p>
-                        <SpeakButton text={why.experiment} langCode={pair.secondary} />
+                        <SpeakButton text={why.experiment} langCode={pair.mother} />
                       </div>
+                      {why.secondary?.experiment && (
+                        <div className="why-tier-header secondary">
+                          <p>{why.secondary.experiment}</p>
+                          <SpeakButton text={why.secondary.experiment} langCode={pair.secondary} />
+                        </div>
+                      )}
                     </div>
                   )}
                 </div>
