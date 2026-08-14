@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { getWhys } from "../content/index.js";
 import { getLangPair, getProfile, pingProgress, exploreWhy, getExploredWhys } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
+import HelpButton from "../components/HelpButton.jsx";
 
 export default function Whys() {
   const { t } = useTranslation();
@@ -33,6 +34,9 @@ export default function Whys() {
   return (
     <div className="page">
       <h1>{t("modules.whysTitle")} ❓</h1>
+      <div className="help-btn-corner">
+        <HelpButton text={t("modules.whysHelpMain")} langCode={pair.secondary} />
+      </div>
       <p className="page-intro">{t("modules.whysIntro")}</p>
       <div className="whys-progress">
         {t("modules.whysExplored")}: {explored.length} / {whys.length}

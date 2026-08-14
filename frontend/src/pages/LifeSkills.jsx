@@ -3,6 +3,8 @@ import { useTranslation } from "react-i18next";
 import { getLifeSkills } from "../content/index.js";
 import { getLangPair, getProfile, getTriedLifeSkills, tryLifeSkill, pingProgress } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
+import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
+import HelpButton from "../components/HelpButton.jsx";
 
 const CATEGORY_ICONS = {
   cozinha: "🍳",
@@ -49,6 +51,9 @@ export default function LifeSkills() {
   return (
     <div className="page">
       <h1>{t("modules.lifeSkillsTitle")} 🌱</h1>
+      <div className="help-btn-corner">
+        <HelpButton text={t("modules.lifeSkillsHelpMain")} langCode={pair.mother} />
+      </div>
       <p className="page-intro">{t("modules.lifeSkillsIntro")}</p>
 
       <h2 className="songs-heading">
@@ -61,7 +66,10 @@ export default function LifeSkills() {
           className={"phonics-tab" + (category === "all" ? " selected" : "")}
           onClick={() => setCategory("all")}
         >
-          🌟 {t("nav.lifeskills")}
+          <span className="phonics-tab-inner">
+            🌟 {t("nav.lifeskills")}
+            <TabSpeakIcon text={t("nav.lifeskills")} langCode={pair.mother} />
+          </span>
         </button>
         {categories.map((cat) => (
           <button
@@ -70,7 +78,10 @@ export default function LifeSkills() {
             className={"phonics-tab" + (category === cat ? " selected" : "")}
             onClick={() => setCategory(cat)}
           >
-            {CATEGORY_ICONS[cat] || "✨"} {cat}
+            <span className="phonics-tab-inner">
+              {CATEGORY_ICONS[cat] || "✨"} {cat}
+              <TabSpeakIcon text={cat} langCode={pair.mother} />
+            </span>
           </button>
         ))}
       </div>

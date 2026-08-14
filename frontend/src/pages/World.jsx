@@ -3,6 +3,8 @@ import { useTranslation } from "react-i18next";
 import { getCountries } from "../content/index.js";
 import { getLangPair, getProfile, getVisitedCountries, visitCountry, getDifficultyTier, pingProgress, recordSkillEvent } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
+import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
+import HelpButton from "../components/HelpButton.jsx";
 
 // Lazy-loaded: pulls in three.js/globe.gl (~650KB gzipped), only needed
 // when the child actually opens the 3D Globe tab.
@@ -82,20 +84,39 @@ export default function World() {
   const quizFinished = quizMode && step >= rounds.length;
   const round = rounds[step];
 
+  const helpTextByTab = {
+    globe: t("modules.worldHelpGlobe"),
+    explore: t("modules.worldHelpExplore"),
+    quiz: t("modules.worldHelpQuiz"),
+  };
+
   return (
     <div className="page">
       <h1>{t("modules.worldTitle")} 🗺️</h1>
 
       <div className="phonics-tabs">
         <button type="button" className={"phonics-tab" + (tab === "globe" ? " selected" : "")} onClick={() => setTab("globe")}>
-          🌐 {t("modules.worldGlobe")}
+          <span className="phonics-tab-inner">
+            🌐 {t("modules.worldGlobe")}
+            <TabSpeakIcon text={`${t("modules.worldGlobe")}. ${helpTextByTab.globe}`} langCode={pair.mother} />
+          </span>
         </button>
         <button type="button" className={"phonics-tab" + (tab === "explore" ? " selected" : "")} onClick={() => { setTab("explore"); setQuizMode(null); }}>
-          🔎 {t("modules.worldExplore")}
+          <span className="phonics-tab-inner">
+            🔎 {t("modules.worldExplore")}
+            <TabSpeakIcon text={`${t("modules.worldExplore")}. ${helpTextByTab.explore}`} langCode={pair.mother} />
+          </span>
         </button>
         <button type="button" className={"phonics-tab" + (tab === "quiz" ? " selected" : "")} onClick={() => setTab("quiz")}>
-          🎮 {t("modules.worldQuiz")}
+          <span className="phonics-tab-inner">
+            🎮 {t("modules.worldQuiz")}
+            <TabSpeakIcon text={`${t("modules.worldQuiz")}. ${helpTextByTab.quiz}`} langCode={pair.mother} />
+          </span>
         </button>
+      </div>
+
+      <div className="help-btn-corner">
+        <HelpButton text={helpTextByTab[tab]} langCode={pair.mother} />
       </div>
 
       <p className="page-intro">

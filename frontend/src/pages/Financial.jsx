@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { getFinancial } from "../content/index.js";
 import { getDifficultyTier, getLangPair, getProfile, pingProgress } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
+import HelpButton from "../components/HelpButton.jsx";
 
 // Coin values used to build quiz rounds. Plain emoji + label, no real
 // currency imagery needed.
@@ -128,6 +129,9 @@ export default function Financial() {
   return (
     <div className="page">
       <h1>{t("modules.financialTitle")} 💰</h1>
+      <div className="help-btn-corner">
+        <HelpButton text={t("modules.financialHelp")} langCode={pair.mother} />
+      </div>
 
       <h2 className="section-title">{t("modules.financialConcepts")}</h2>
       <div className="reading-list">

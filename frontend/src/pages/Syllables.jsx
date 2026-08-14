@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { getSyllables } from "../content/index.js";
 import { getLangPair, getProfile, pingProgress, recordSkillEvent } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
+import HelpButton from "../components/HelpButton.jsx";
 
 export default function Syllables() {
   const { t } = useTranslation();
@@ -20,6 +21,9 @@ export default function Syllables() {
   return (
     <div className="page">
       <h1>{t("modules.syllablesTitle")} 🧩</h1>
+      <div className="help-btn-corner">
+        <HelpButton text={t("modules.syllablesHelpMain")} langCode={pair.mother} />
+      </div>
       <p className="page-intro">{t("modules.syllablesIntro")}</p>
       <div className="reading-list">
         {Array.from({ length: count }).map((_, i) => {

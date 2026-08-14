@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { getMissions } from "../content/index.js";
 import { getLangPair, getProfile, getCompletedMissions, completeMission, pingProgress } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
+import HelpButton from "../components/HelpButton.jsx";
 
 // Picks a deterministic "mission of the day" so it doesn't change every
 // re-render, but still rotates day to day without needing a backend.
@@ -45,6 +46,9 @@ export default function Missions() {
   return (
     <div className="page">
       <h1>{t("modules.missionsTitle")} 🧭</h1>
+      <div className="help-btn-corner">
+        <HelpButton text={t("modules.missionsHelpMain")} langCode={pair.mother} />
+      </div>
       <p className="page-intro">{t("modules.missionsIntro")}</p>
 
       <div className="mission-card mission-card-today">
