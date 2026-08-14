@@ -1,0 +1,12 @@
+[
+  { "syllable": "人", "exampleWord": "人 (pessoa)", "emoji": "🧑", "hint": "rén" },
+  { "syllable": "大", "exampleWord": "大 (grande)", "emoji": "🐘", "hint": "dà" },
+  { "syllable": "山", "exampleWord": "山 (montanha)", "emoji": "⛰️", "hint": "shān" },
+  { "syllable": "水", "exampleWord": "水 (água)", "emoji": "💧", "hint": "shuǐ" },
+  { "syllable": "火", "exampleWord": "火 (fogo)", "emoji": "🔥", "hint": "huǒ" },
+  { "syllable": "日", "exampleWord": "日 (sol)", "emoji": "☀️", "hint": "rì" },
+  { "syllable": "月", "exampleWord": "月 (lua)", "emoji": "🌙", "hint": "yuè" },
+  { "syllable": "妈", "exampleWord": "妈妈 (mãe)", "emoji": "👩", "hint": "mā" },
+  { "syllable": "爸", "exampleWord": "爸爸 (pai)", "emoji": "👨", "hint": "bà" },
+  { "syllable": "好", "exampleWord": "好 (bom)", "emoji": "👍", "hint": "hǎo" }
+]

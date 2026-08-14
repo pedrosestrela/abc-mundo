@@ -5,7 +5,7 @@ const resources = {
   pt: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Início", alphabet: "Alfabeto", reading: "Leitura", songs: "Canções", language: "Idiomas" },
+      nav: { home: "Início", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Leitura", phrases: "Frases", songs: "Canções", language: "Idiomas" },
       home: {
         pickProfile: "Escolhe o teu perfil",
         newProfile: "Novo perfil",
@@ -27,13 +27,16 @@ const resources = {
         speechUnavailable: "O áudio de voz não está disponível neste dispositivo.",
         printForm: "Letra de imprensa",
         handwrittenForm: "Letra manuscrita",
+        syllablesTitle: "Sílabas",
+        syllablesIntro: "Junta as letras e forma sílabas — o primeiro passo para ler palavras.",
+        phrasesTitle: "Frases",
       },
     },
   },
   en: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Home", alphabet: "Alphabet", reading: "Reading", songs: "Songs", language: "Languages" },
+      nav: { home: "Home", alphabet: "Alphabet", syllables: "Syllables", reading: "Reading", phrases: "Phrases", songs: "Songs", language: "Languages" },
       home: {
         pickProfile: "Pick your profile",
         newProfile: "New profile",
@@ -55,13 +58,16 @@ const resources = {
         speechUnavailable: "Voice audio is not available on this device.",
         printForm: "Printed letter",
         handwrittenForm: "Handwritten letter",
+        syllablesTitle: "Syllables",
+        syllablesIntro: "Blend letters into syllables — the first step to reading words.",
+        phrasesTitle: "Phrases",
       },
     },
   },
   de: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Start", alphabet: "Alphabet", reading: "Lesen", songs: "Lieder", language: "Sprachen" },
+      nav: { home: "Start", alphabet: "Alphabet", syllables: "Silben", reading: "Lesen", phrases: "Sätze", songs: "Lieder", language: "Sprachen" },
       home: {
         pickProfile: "Wähle dein Profil",
         newProfile: "Neues Profil",
@@ -83,13 +89,16 @@ const resources = {
         speechUnavailable: "Sprachausgabe ist auf diesem Gerät nicht verfügbar.",
         printForm: "Druckbuchstabe",
         handwrittenForm: "Handschrift",
+        syllablesTitle: "Silben",
+        syllablesIntro: "Verbinde Buchstaben zu Silben — der erste Schritt zum Wörterlesen.",
+        phrasesTitle: "Sätze",
       },
     },
   },
   fr: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Accueil", alphabet: "Alphabet", reading: "Lecture", songs: "Chansons", language: "Langues" },
+      nav: { home: "Accueil", alphabet: "Alphabet", syllables: "Syllabes", reading: "Lecture", phrases: "Phrases", songs: "Chansons", language: "Langues" },
       home: {
         pickProfile: "Choisis ton profil",
         newProfile: "Nouveau profil",
@@ -111,13 +120,16 @@ const resources = {
         speechUnavailable: "L'audio vocal n'est pas disponible sur cet appareil.",
         printForm: "Lettre imprimée",
         handwrittenForm: "Lettre manuscrite",
+        syllablesTitle: "Syllabes",
+        syllablesIntro: "Assemble les lettres en syllabes — la première étape pour lire des mots.",
+        phrasesTitle: "Phrases",
       },
     },
   },
   zh: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "首页", alphabet: "字母表", reading: "阅读", songs: "歌曲", language: "语言" },
+      nav: { home: "首页", alphabet: "字母表", syllables: "音节", reading: "阅读", phrases: "句子", songs: "歌曲", language: "语言" },
       home: {
         pickProfile: "选择你的档案",
         newProfile: "新档案",
@@ -139,13 +151,16 @@ const resources = {
         speechUnavailable: "此设备不支持语音朗读。",
         printForm: "印刷体",
         handwrittenForm: "手写体",
+        syllablesTitle: "音节",
+        syllablesIntro: "把字连成音节——学习读词的第一步。",
+        phrasesTitle: "句子",
       },
     },
   },
   es: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Inicio", alphabet: "Alfabeto", reading: "Lectura", songs: "Canciones", language: "Idiomas" },
+      nav: { home: "Inicio", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Lectura", phrases: "Frases", songs: "Canciones", language: "Idiomas" },
       home: {
         pickProfile: "Elige tu perfil",
         newProfile: "Nuevo perfil",
@@ -167,13 +182,16 @@ const resources = {
         speechUnavailable: "El audio de voz no está disponible en este dispositivo.",
         printForm: "Letra de imprenta",
         handwrittenForm: "Letra manuscrita",
+        syllablesTitle: "Sílabas",
+        syllablesIntro: "Une letras para formar sílabas — el primer paso para leer palabras.",
+        phrasesTitle: "Frases",
       },
     },
   },
   it: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Home", alphabet: "Alfabeto", reading: "Lettura", songs: "Canzoni", language: "Lingue" },
+      nav: { home: "Home", alphabet: "Alfabeto", syllables: "Sillabe", reading: "Lettura", phrases: "Frasi", songs: "Canzoni", language: "Lingue" },
       home: {
         pickProfile: "Scegli il tuo profilo",
         newProfile: "Nuovo profilo",
@@ -195,6 +213,9 @@ const resources = {
         speechUnavailable: "L'audio vocale non è disponibile su questo dispositivo.",
         printForm: "Lettera stampata",
         handwrittenForm: "Lettera corsiva",
+        syllablesTitle: "Sillabe",
+        syllablesIntro: "Unisci le lettere in sillabe — il primo passo per leggere le parole.",
+        phrasesTitle: "Frasi",
       },
     },
   },

@@ -15,8 +15,14 @@ export default function NavBar() {
       <NavLink to="/alphabet" className="nav-link">
         🔤 {t("nav.alphabet")}
       </NavLink>
+      <NavLink to="/syllables" className="nav-link">
+        🧩 {t("nav.syllables")}
+      </NavLink>
       <NavLink to="/reading" className="nav-link">
         📖 {t("nav.reading")}
+      </NavLink>
+      <NavLink to="/phrases" className="nav-link">
+        💬 {t("nav.phrases")}
       </NavLink>
       <NavLink to="/songs" className="nav-link">
         🎵 {t("nav.songs")}

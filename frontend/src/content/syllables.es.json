@@ -1,0 +1,12 @@
+[
+  { "syllable": "MA", "exampleWord": "MANO", "emoji": "✋", "hint": "MA de Mano" },
+  { "syllable": "ME", "exampleWord": "MESA", "emoji": "🪑", "hint": "ME de Mesa" },
+  { "syllable": "MI", "exampleWord": "MIEL", "emoji": "🍯", "hint": "MI de Miel" },
+  { "syllable": "MO", "exampleWord": "MOTO", "emoji": "🏍️", "hint": "MO de Moto" },
+  { "syllable": "MU", "exampleWord": "MURO", "emoji": "🧱", "hint": "MU de Muro" },
+  { "syllable": "PA", "exampleWord": "PAPÁ", "emoji": "👨", "hint": "PA de Papá" },
+  { "syllable": "PE", "exampleWord": "PEZ", "emoji": "🐟", "hint": "PE de Pez" },
+  { "syllable": "PI", "exampleWord": "PIZZA", "emoji": "🍕", "hint": "PI de Pizza" },
+  { "syllable": "PO", "exampleWord": "POLLO", "emoji": "🐔", "hint": "PO de Pollo" },
+  { "syllable": "PU", "exampleWord": "PUERTA", "emoji": "🚪", "hint": "PU de Puerta" }
+]

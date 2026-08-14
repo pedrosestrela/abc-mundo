@@ -15,6 +15,22 @@ import readingZh from "./reading.zh.json";
 import readingEs from "./reading.es.json";
 import readingIt from "./reading.it.json";
 
+import syllablesPt from "./syllables.pt.json";
+import syllablesEn from "./syllables.en.json";
+import syllablesDe from "./syllables.de.json";
+import syllablesFr from "./syllables.fr.json";
+import syllablesZh from "./syllables.zh.json";
+import syllablesEs from "./syllables.es.json";
+import syllablesIt from "./syllables.it.json";
+
+import phrasesPt from "./phrases.pt.json";
+import phrasesEn from "./phrases.en.json";
+import phrasesDe from "./phrases.de.json";
+import phrasesFr from "./phrases.fr.json";
+import phrasesZh from "./phrases.zh.json";
+import phrasesEs from "./phrases.es.json";
+import phrasesIt from "./phrases.it.json";
+
 import songsPt from "./songs.pt.json";
 import songsEn from "./songs.en.json";
 import songsDe from "./songs.de.json";
@@ -35,6 +51,8 @@ export const SUPPORTED_LANGUAGES = [
 
 const ALPHABET = { pt: alphabetPt, en: alphabetEn, de: alphabetDe, fr: alphabetFr, zh: alphabetZh, es: alphabetEs, it: alphabetIt };
 const READING = { pt: readingPt, en: readingEn, de: readingDe, fr: readingFr, zh: readingZh, es: readingEs, it: readingIt };
+const SYLLABLES = { pt: syllablesPt, en: syllablesEn, de: syllablesDe, fr: syllablesFr, zh: syllablesZh, es: syllablesEs, it: syllablesIt };
+const PHRASES = { pt: phrasesPt, en: phrasesEn, de: phrasesDe, fr: phrasesFr, zh: phrasesZh, es: phrasesEs, it: phrasesIt };
 const SONGS = { pt: songsPt, en: songsEn, de: songsDe, fr: songsFr, zh: songsZh, es: songsEs, it: songsIt };
 
 // Normalizes zh's different shape ({hanzi,...}) to the same shape used by
@@ -55,6 +73,14 @@ export function getAlphabet(langCode) {
 
 export function getReading(langCode) {
   return READING[langCode] || [];
+}
+
+export function getSyllables(langCode) {
+  return SYLLABLES[langCode] || [];
+}
+
+export function getPhrases(langCode) {
+  return PHRASES[langCode] || [];
 }
 
 export function getSongs(langCode) {
