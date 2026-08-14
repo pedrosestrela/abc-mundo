@@ -60,6 +60,9 @@ export default function NavBar() {
       <NavLink to="/detective" className="nav-link">
         🕵️ {t("nav.detective")}
       </NavLink>
+      <NavLink to="/robots" className="nav-link">
+        🤖 {t("nav.robots")}
+      </NavLink>
     </nav>
   );
 }
