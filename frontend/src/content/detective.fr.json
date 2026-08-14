@@ -1,0 +1,107 @@
+[
+  {
+    "id": "d1",
+    "statement": "La Terre tourne autour du Soleil.",
+    "emoji": "🌍",
+    "isFact": true,
+    "explanation": "C'est un fait : les scientifiques l'ont vérifié depuis des siècles avec des observations et des calculs. Un fait est quelque chose qu'on peut vérifier."
+  },
+  {
+    "id": "d2",
+    "statement": "La glace au chocolat est le meilleur parfum du monde.",
+    "emoji": "🍫",
+    "isFact": false,
+    "explanation": "C'est une opinion ! Chaque personne peut aimer un parfum différent, et tout le monde a raison sur son propre goût. Les opinions parlent de préférences, elles ne peuvent pas être 'justes' ou 'fausses' comme les faits."
+  },
+  {
+    "id": "d3",
+    "statement": "Les chauves-souris sont aveugles.",
+    "emoji": "🦇",
+    "isFact": false,
+    "explanation": "C'est un mythe très répandu ! Les chauves-souris voient très bien — elles utilisent aussi l'écholocation (les sons) pour se repérer dans le noir. Quand tu entends quelque chose de surprenant sur les animaux, ça vaut la peine de vérifier dans un livre ou de demander à un adulte."
+  },
+  {
+    "id": "d4",
+    "statement": "L'eau bout à 100 degrés Celsius au niveau de la mer.",
+    "emoji": "🌡️",
+    "isFact": true,
+    "explanation": "C'est un fait que tu peux tester avec un thermomètre. N'importe où, on obtient le même résultat dans les mêmes conditions — c'est ce qui rend une chose vérifiable."
+  },
+  {
+    "id": "d5",
+    "statement": "Les livres d'aventure sont plus amusants que les livres de science.",
+    "emoji": "📚",
+    "isFact": false,
+    "explanation": "Opinion ! Cela dépend de ce que chacun aime lire. Il n'y a pas une seule bonne réponse — et c'est normal de ne pas être d'accord avec ses amis là-dessus."
+  },
+  {
+    "id": "d6",
+    "statement": "Une publicité dit qu'un jouet va 'te rendre le plus rapide de l'école'. Comment pourrais-tu vérifier si c'est vrai ?",
+    "emoji": "📺",
+    "isFact": false,
+    "explanation": "Les publicités veulent vendre des choses, donc elles exagèrent parfois. Tu peux demander : 'Qui a dit ça ? Y a-t-il des preuves ?' Demander à un adulte ou comparer avec ce que tu sais déjà t'aide à décider si c'est un fait ou juste de la publicité."
+  },
+  {
+    "id": "d7",
+    "statement": "Il y a sept continents sur Terre.",
+    "emoji": "🗺️",
+    "isFact": true,
+    "explanation": "C'est un fait géographique que tu peux confirmer sur un atlas ou un globe — de nombreuses sources indépendantes sont d'accord sur ce nombre."
+  },
+  {
+    "id": "d8",
+    "statement": "Chanter est plus amusant que dessiner.",
+    "emoji": "🎤",
+    "isFact": false,
+    "explanation": "Opinion ! Certains adorent chanter, d'autres préfèrent dessiner. Aucune réponse n'est 'la bonne' — cela dépend de la personne."
+  },
+  {
+    "id": "d9",
+    "statement": "Les plantes produisent de l'oxygène grâce à la photosynthèse.",
+    "emoji": "🌱",
+    "isFact": true,
+    "explanation": "C'est un fait scientifique, prouvé par des expériences que n'importe qui peut répéter et obtenir le même résultat."
+  },
+  {
+    "id": "d10",
+    "statement": "Une vidéo sur internet montre un chien qui parle parfaitement. Faut-il y croire tout de suite ?",
+    "emoji": "🐶",
+    "isFact": false,
+    "explanation": "Bonne chose à vérifier ! Les choses très surprenantes sur internet peuvent être truquées, des blagues, ou même faites par ordinateur. Avant de croire ou de partager, ça vaut la peine de penser 'est-ce que ça semble vraiment possible ?' et de demander à un adulte."
+  },
+  {
+    "id": "d11",
+    "statement": "Le Portugal se trouve en Europe.",
+    "emoji": "🇵🇹",
+    "isFact": true,
+    "explanation": "C'est un fait géographique — tu peux le confirmer sur n'importe quelle carte du monde ou atlas."
+  },
+  {
+    "id": "d12",
+    "statement": "Le football est le sport le plus amusant qui existe.",
+    "emoji": "⚽",
+    "isFact": false,
+    "explanation": "Opinion ! Certains préfèrent la natation, la danse ou le basketball. Les goûts sportifs varient d'une personne à l'autre."
+  },
+  {
+    "id": "d13",
+    "statement": "Un robot d'intelligence artificielle a répondu à une question et s'est trompé. Est-ce que ça peut arriver ?",
+    "emoji": "🤖",
+    "isFact": true,
+    "explanation": "Oui, ça peut arriver ! Les ordinateurs et l'intelligence artificielle peuvent aussi faire des erreurs, tout comme les gens. C'est pourquoi il est toujours bon de vérifier les informations importantes avec un livre, un adulte de confiance ou une autre source."
+  },
+  {
+    "id": "d14",
+    "statement": "Le corps humain adulte compte 206 os.",
+    "emoji": "🦴",
+    "isFact": true,
+    "explanation": "C'est un fait vérifiable dans les livres de science et par les médecins — le nombre reste le même quand plusieurs sources le confirment."
+  },
+  {
+    "id": "d15",
+    "statement": "Les épinards sont le légume le plus délicieux.",
+    "emoji": "🥬",
+    "isFact": false,
+    "explanation": "Opinion ! Les goûts sont personnels — ce qui est délicieux pour certains peut ne pas l'être pour d'autres, et ce n'est pas grave du tout."
+  }
+]

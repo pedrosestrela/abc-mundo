@@ -1,0 +1,107 @@
+[
+  {
+    "id": "d1",
+    "statement": "Die Erde umkreist die Sonne.",
+    "emoji": "🌍",
+    "isFact": true,
+    "explanation": "Das ist eine Tatsache: Wissenschaftler haben es seit Jahrhunderten mit Beobachtungen und Berechnungen überprüft. Eine Tatsache ist etwas, das man nachprüfen kann."
+  },
+  {
+    "id": "d2",
+    "statement": "Schokoladeneis ist die beste Eissorte der Welt.",
+    "emoji": "🍫",
+    "isFact": false,
+    "explanation": "Das ist eine Meinung! Verschiedene Menschen mögen verschiedene Sorten, und alle haben recht mit ihrem eigenen Geschmack. Meinungen handeln von Vorlieben, sie können nicht 'richtig' oder 'falsch' sein wie Tatsachen."
+  },
+  {
+    "id": "d3",
+    "statement": "Fledermäuse sind blind.",
+    "emoji": "🦇",
+    "isFact": false,
+    "explanation": "Das ist ein sehr verbreiteter Mythos! Fledermäuse können tatsächlich gut sehen — sie nutzen zusätzlich Echoortung (Töne), um sich im Dunkeln zurechtzufinden. Wenn du etwas Überraschendes über Tiere hörst, lohnt es sich, in einem Buch nachzuschauen oder einen Erwachsenen zu fragen."
+  },
+  {
+    "id": "d4",
+    "statement": "Wasser kocht auf Meereshöhe bei 100 Grad Celsius.",
+    "emoji": "🌡️",
+    "isFact": true,
+    "explanation": "Das ist eine Tatsache, die du mit einem Thermometer testen kannst. Überall bekommt man unter denselben Bedingungen dasselbe Ergebnis — das macht etwas überprüfbar."
+  },
+  {
+    "id": "d5",
+    "statement": "Abenteuerbücher sind lustiger als Sachbücher über Wissenschaft.",
+    "emoji": "📚",
+    "isFact": false,
+    "explanation": "Meinung! Das hängt davon ab, was jeder gerne liest. Es gibt keine einzige richtige Antwort — und es ist okay, mit Freunden darüber uneinig zu sein."
+  },
+  {
+    "id": "d6",
+    "statement": "Eine Werbung sagt, ein Spielzeug macht dich 'zum schnellsten Kind der Schule'. Wie könntest du prüfen, ob das stimmt?",
+    "emoji": "📺",
+    "isFact": false,
+    "explanation": "Werbung will Dinge verkaufen, deshalb übertreibt sie manchmal. Du kannst fragen: 'Wer sagt das? Gibt es Beweise?' Einen Erwachsenen zu fragen oder es mit dem zu vergleichen, was du schon weißt, hilft dir zu entscheiden, ob es eine Tatsache oder nur Werbung ist."
+  },
+  {
+    "id": "d7",
+    "statement": "Es gibt sieben Kontinente auf der Erde.",
+    "emoji": "🗺️",
+    "isFact": true,
+    "explanation": "Das ist eine geografische Tatsache, die du in einem Atlas oder Globus bestätigen kannst — viele unabhängige Quellen stimmen bei dieser Zahl überein."
+  },
+  {
+    "id": "d8",
+    "statement": "Singen macht mehr Spaß als Malen.",
+    "emoji": "🎤",
+    "isFact": false,
+    "explanation": "Meinung! Manche lieben Singen, andere malen lieber. Keine Antwort ist 'die richtige' — es kommt auf die Person an."
+  },
+  {
+    "id": "d9",
+    "statement": "Pflanzen erzeugen Sauerstoff durch Fotosynthese.",
+    "emoji": "🌱",
+    "isFact": true,
+    "explanation": "Das ist eine wissenschaftliche Tatsache, bewiesen durch Experimente, die jeder wiederholen und dasselbe Ergebnis bekommen kann."
+  },
+  {
+    "id": "d10",
+    "statement": "Ein Video im Internet zeigt einen Hund, der perfekt spricht. Solltest du es sofort glauben?",
+    "emoji": "🐶",
+    "isFact": false,
+    "explanation": "Gute Sache zum Nachforschen! Sehr überraschende Dinge im Internet können bearbeitet, Scherze oder sogar am Computer gemacht sein. Bevor du etwas glaubst oder teilst, lohnt es sich zu überlegen 'wirkt das wirklich möglich?' und einen Erwachsenen zu fragen."
+  },
+  {
+    "id": "d11",
+    "statement": "Portugal liegt in Europa.",
+    "emoji": "🇵🇹",
+    "isFact": true,
+    "explanation": "Das ist eine geografische Tatsache — du kannst sie auf jeder Weltkarte oder in jedem Atlas bestätigen."
+  },
+  {
+    "id": "d12",
+    "statement": "Fußball ist der lustigste Sport überhaupt.",
+    "emoji": "⚽",
+    "isFact": false,
+    "explanation": "Meinung! Manche bevorzugen Schwimmen, Tanzen oder Basketball. Der Sportgeschmack ist von Person zu Person unterschiedlich."
+  },
+  {
+    "id": "d13",
+    "statement": "Ein KI-Chatbot hat eine Frage falsch beantwortet. Kann das passieren?",
+    "emoji": "🤖",
+    "isFact": true,
+    "explanation": "Ja, das kann passieren! Computer und KI können genau wie Menschen Fehler machen. Deshalb ist es immer gut, wichtige Informationen mit einem Buch, einem vertrauenswürdigen Erwachsenen oder einer anderen Quelle zu überprüfen."
+  },
+  {
+    "id": "d14",
+    "statement": "Der erwachsene menschliche Körper hat 206 Knochen.",
+    "emoji": "🦴",
+    "isFact": true,
+    "explanation": "Das ist eine Tatsache, die du in Wissenschaftsbüchern und bei Ärzten überprüfen kannst — die Zahl bleibt gleich, wenn viele Quellen sie bestätigen."
+  },
+  {
+    "id": "d15",
+    "statement": "Spinat ist das leckerste Gemüse.",
+    "emoji": "🥬",
+    "isFact": false,
+    "explanation": "Meinung! Geschmack ist persönlich — was für manche lecker ist, muss es für andere nicht sein, und das ist völlig in Ordnung."
+  }
+]

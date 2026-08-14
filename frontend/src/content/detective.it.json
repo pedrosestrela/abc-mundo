@@ -1,0 +1,107 @@
+[
+  {
+    "id": "d1",
+    "statement": "La Terra gira intorno al Sole.",
+    "emoji": "🌍",
+    "isFact": true,
+    "explanation": "È un fatto: gli scienziati lo hanno verificato per secoli con osservazioni e calcoli. Un fatto è qualcosa che si può verificare."
+  },
+  {
+    "id": "d2",
+    "statement": "Il gelato al cioccolato è il gusto migliore del mondo.",
+    "emoji": "🍫",
+    "isFact": false,
+    "explanation": "È un'opinione! Ogni persona può preferire un gusto diverso, e tutti hanno ragione sul proprio gusto. Le opinioni parlano di preferenze, non possono essere 'giuste' o 'sbagliate' come i fatti."
+  },
+  {
+    "id": "d3",
+    "statement": "I pipistrelli sono ciechi.",
+    "emoji": "🦇",
+    "isFact": false,
+    "explanation": "È un mito molto diffuso! I pipistrelli vedono benissimo — usano anche l'ecolocalizzazione (i suoni) per orientarsi al buio. Quando senti qualcosa di sorprendente sugli animali, vale la pena controllare in un libro o chiedere a un adulto."
+  },
+  {
+    "id": "d4",
+    "statement": "L'acqua bolle a 100 gradi Celsius a livello del mare.",
+    "emoji": "🌡️",
+    "isFact": true,
+    "explanation": "È un fatto che puoi testare con un termometro. Ovunque si ottiene lo stesso risultato nelle stesse condizioni — è questo che rende una cosa verificabile."
+  },
+  {
+    "id": "d5",
+    "statement": "I libri di avventura sono più divertenti di quelli di scienza.",
+    "emoji": "📚",
+    "isFact": false,
+    "explanation": "Opinione! Dipende da cosa piace leggere a ciascuno. Non c'è un'unica risposta giusta — ed è normale non essere d'accordo con gli amici su questo."
+  },
+  {
+    "id": "d6",
+    "statement": "Una pubblicità dice che un giocattolo ti renderà 'il più veloce della scuola'. Come potresti verificare se è vero?",
+    "emoji": "📺",
+    "isFact": false,
+    "explanation": "Le pubblicità vogliono vendere cose, quindi a volte esagerano. Puoi chiederti: 'Chi lo dice? Ci sono prove?' Chiedere a un adulto o confrontarlo con ciò che già sai ti aiuta a decidere se è un fatto o solo pubblicità."
+  },
+  {
+    "id": "d7",
+    "statement": "Sulla Terra ci sono sette continenti.",
+    "emoji": "🗺️",
+    "isFact": true,
+    "explanation": "È un fatto geografico che puoi confermare su un atlante o un mappamondo — molte fonti indipendenti concordano su questo numero."
+  },
+  {
+    "id": "d8",
+    "statement": "Cantare è più divertente che disegnare.",
+    "emoji": "🎤",
+    "isFact": false,
+    "explanation": "Opinione! A qualcuno piace cantare, altri preferiscono disegnare. Nessuna risposta è 'quella giusta' — dipende dalla persona."
+  },
+  {
+    "id": "d9",
+    "statement": "Le piante producono ossigeno tramite la fotosintesi.",
+    "emoji": "🌱",
+    "isFact": true,
+    "explanation": "È un fatto scientifico, dimostrato da esperimenti che chiunque può ripetere ottenendo lo stesso risultato."
+  },
+  {
+    "id": "d10",
+    "statement": "Un video su internet mostra un cane che parla perfettamente. Dovresti crederci subito?",
+    "emoji": "🐶",
+    "isFact": false,
+    "explanation": "Bella cosa da investigare! Le cose molto sorprendenti su internet possono essere montaggi, scherzi o persino fatte al computer. Prima di crederci o condividerle, vale la pena pensare 'sembra davvero possibile?' e chiedere a un adulto."
+  },
+  {
+    "id": "d11",
+    "statement": "Il Portogallo si trova in Europa.",
+    "emoji": "🇵🇹",
+    "isFact": true,
+    "explanation": "È un fatto geografico — puoi confermarlo su qualsiasi mappa del mondo o atlante."
+  },
+  {
+    "id": "d12",
+    "statement": "Il calcio è lo sport più divertente che esista.",
+    "emoji": "⚽",
+    "isFact": false,
+    "explanation": "Opinione! Alcuni preferiscono il nuoto, la danza o la pallacanestro. I gusti sportivi variano da persona a persona."
+  },
+  {
+    "id": "d13",
+    "statement": "Un robot di intelligenza artificiale ha risposto a una domanda sbagliando. Può succedere?",
+    "emoji": "🤖",
+    "isFact": true,
+    "explanation": "Sì, può succedere! I computer e l'intelligenza artificiale possono commettere errori, proprio come le persone. Per questo è sempre bene controllare le informazioni importanti con un libro, un adulto di fiducia o un'altra fonte."
+  },
+  {
+    "id": "d14",
+    "statement": "Il corpo umano adulto ha 206 ossa.",
+    "emoji": "🦴",
+    "isFact": true,
+    "explanation": "È un fatto verificabile nei libri di scienze e dai medici — il numero rimane lo stesso quando più fonti lo confermano."
+  },
+  {
+    "id": "d15",
+    "statement": "Gli spinaci sono la verdura più gustosa.",
+    "emoji": "🥬",
+    "isFact": false,
+    "explanation": "Opinione! I gusti sono personali — ciò che è delizioso per alcuni può non esserlo per altri, e va benissimo così."
+  }
+]

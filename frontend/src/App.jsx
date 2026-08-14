@@ -19,6 +19,7 @@ import Phonics from "./pages/Phonics.jsx";
 import Missions from "./pages/Missions.jsx";
 import World from "./pages/World.jsx";
 import SessionEndOverlay from "./components/SessionEndOverlay.jsx";
+import Detective from "./pages/Detective.jsx";
 
 export default function App() {
   return (
@@ -42,6 +43,7 @@ export default function App() {
           <Route path="/achievements" element={<Achievements />} />
           <Route path="/missions" element={<Missions />} />
           <Route path="/world" element={<World />} />
+          <Route path="/detective" element={<Detective />} />
         </Routes>
       </main>
       <NavBar />
