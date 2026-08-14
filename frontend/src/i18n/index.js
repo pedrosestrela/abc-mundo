@@ -9,6 +9,9 @@ const resources = {
       home: {
         pickProfile: "Escolhe o teu perfil",
         newProfile: "Novo perfil",
+        pickExistingProfile: "Quem vai aprender hoje?",
+        addNewProfile: "+ Novo perfil",
+        switchProfile: "Trocar de perfil",
         name: "Nome",
         start: "Começar",
         chooseAvatar: "Escolhe um avatar",
@@ -162,6 +165,9 @@ const resources = {
       home: {
         pickProfile: "Pick your profile",
         newProfile: "New profile",
+        pickExistingProfile: "Who's learning today?",
+        addNewProfile: "+ New profile",
+        switchProfile: "Switch profile",
         name: "Name",
         start: "Start",
         chooseAvatar: "Choose an avatar",
@@ -315,6 +321,9 @@ const resources = {
       home: {
         pickProfile: "Wähle dein Profil",
         newProfile: "Neues Profil",
+        pickExistingProfile: "Wer lernt heute?",
+        addNewProfile: "+ Neues Profil",
+        switchProfile: "Profil wechseln",
         name: "Name",
         start: "Starten",
         chooseAvatar: "Wähle einen Avatar",
@@ -468,6 +477,9 @@ const resources = {
       home: {
         pickProfile: "Choisis ton profil",
         newProfile: "Nouveau profil",
+        pickExistingProfile: "Qui apprend aujourd'hui ?",
+        addNewProfile: "+ Nouveau profil",
+        switchProfile: "Changer de profil",
         name: "Nom",
         start: "Commencer",
         chooseAvatar: "Choisis un avatar",
@@ -621,6 +633,9 @@ const resources = {
       home: {
         pickProfile: "选择你的档案",
         newProfile: "新档案",
+        pickExistingProfile: "今天谁来学习？",
+        addNewProfile: "+ 新档案",
+        switchProfile: "切换档案",
         name: "名字",
         start: "开始",
         chooseAvatar: "选择一个头像",
@@ -774,6 +789,9 @@ const resources = {
       home: {
         pickProfile: "Elige tu perfil",
         newProfile: "Nuevo perfil",
+        pickExistingProfile: "¿Quién va a aprender hoy?",
+        addNewProfile: "+ Nuevo perfil",
+        switchProfile: "Cambiar de perfil",
         name: "Nombre",
         start: "Empezar",
         chooseAvatar: "Elige un avatar",
@@ -927,6 +945,9 @@ const resources = {
       home: {
         pickProfile: "Scegli il tuo profilo",
         newProfile: "Nuovo profilo",
+        pickExistingProfile: "Chi impara oggi?",
+        addNewProfile: "+ Nuovo profilo",
+        switchProfile: "Cambia profilo",
         name: "Nome",
         start: "Inizia",
         chooseAvatar: "Scegli un avatar",
