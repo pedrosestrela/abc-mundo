@@ -15,6 +15,7 @@ import MathGame from "./pages/MathGame.jsx";
 import Financial from "./pages/Financial.jsx";
 import ParentDashboard from "./pages/ParentDashboard.jsx";
 import Achievements from "./pages/Achievements.jsx";
+import Phonics from "./pages/Phonics.jsx";
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/languages" element={<LanguagePicker />} />
+          <Route path="/phonics" element={<Phonics />} />
           <Route path="/alphabet" element={<Alphabet />} />
           <Route path="/syllables" element={<Syllables />} />
           <Route path="/reading" element={<Reading />} />

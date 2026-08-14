@@ -31,6 +31,14 @@ import phrasesZh from "./phrases.zh.json";
 import phrasesEs from "./phrases.es.json";
 import phrasesIt from "./phrases.it.json";
 
+import phonicsPt from "./phonics.pt.json";
+import phonicsEn from "./phonics.en.json";
+import phonicsDe from "./phonics.de.json";
+import phonicsFr from "./phonics.fr.json";
+import phonicsZh from "./phonics.zh.json";
+import phonicsEs from "./phonics.es.json";
+import phonicsIt from "./phonics.it.json";
+
 import songsPt from "./songs.pt.json";
 import songsEn from "./songs.en.json";
 import songsDe from "./songs.de.json";
@@ -72,6 +80,7 @@ const PHRASES = { pt: phrasesPt, en: phrasesEn, de: phrasesDe, fr: phrasesFr, zh
 const SONGS = { pt: songsPt, en: songsEn, de: songsDe, fr: songsFr, zh: songsZh, es: songsEs, it: songsIt };
 const STORIES = { pt: storiesPt, en: storiesEn, de: storiesDe, fr: storiesFr, zh: storiesZh, es: storiesEs, it: storiesIt };
 const FINANCIAL = { pt: financialPt, en: financialEn, de: financialDe, fr: financialFr, zh: financialZh, es: financialEs, it: financialIt };
+const PHONICS = { pt: phonicsPt, en: phonicsEn, de: phonicsDe, fr: phonicsFr, zh: phonicsZh, es: phonicsEs, it: phonicsIt };
 
 // Normalizes zh's different shape ({hanzi,...}) to the same shape used by
 // the Latin-alphabet languages ({letter, lower, upper, exampleWord, emoji}).
@@ -111,4 +120,8 @@ export function getStories(langCode) {
 
 export function getFinancial(langCode) {
   return FINANCIAL[langCode] || [];
+}
+
+export function getPhonics(langCode) {
+  return PHONICS[langCode] || [];
 }

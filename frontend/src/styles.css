@@ -591,6 +591,45 @@ body {
   margin: 0 6px;
 }
 
+.phonics-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.phonics-tab {
+  flex: 1 1 auto;
+  border: none;
+  border-radius: 16px;
+  padding: 10px 12px;
+  background: #eee6ff;
+  color: var(--blue, #3b3b6d);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.phonics-tab.selected {
+  background: var(--blue, #6a5acd);
+  color: #fff;
+}
+
+.game-prompt {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.game-prompt-word {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
 .game-options {
   display: flex;
   flex-wrap: wrap;
@@ -880,6 +919,26 @@ body {
   }
 }
 
+.game-options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.game-option:disabled {
+  cursor: default;
+}
+
+.game-option-emoji {
+  font-size: 1.8rem;
+}
+
+.game-round-count {
+  margin-top: 12px;
+  color: #888;
+  font-size: 0.9rem;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background: linear-gradient(180deg, #201a2b, #2a1c22);
@@ -907,7 +966,9 @@ body {
   .achievement-badge.unlocked {
     background: linear-gradient(160deg, #3d3350, #4a3020);
   }
-  .achievements-pill {
+  .achievements-pill,
+  .game-option,
+  .phonics-tab {
     background: #4a3d5c;
     color: #f0e9ff;
   }

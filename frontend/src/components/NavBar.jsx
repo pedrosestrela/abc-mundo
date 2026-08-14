@@ -12,6 +12,9 @@ export default function NavBar() {
       <NavLink to="/languages" className="nav-link">
         🌐 {t("nav.language")}
       </NavLink>
+      <NavLink to="/phonics" className="nav-link">
+        👂 {t("nav.phonics")}
+      </NavLink>
       <NavLink to="/alphabet" className="nav-link">
         🔤 {t("nav.alphabet")}
       </NavLink>
