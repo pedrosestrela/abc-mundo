@@ -1,0 +1,20 @@
+[
+  { "id": "computador", "emoji": "🖥️", "topic": "hardware", "term": "Ordenador", "explanation": "Es una máquina que nos ayuda a escribir, dibujar, jugar y aprender. Sigue las instrucciones que le damos, una a una, muy rápido." },
+  { "id": "ecra", "emoji": "🖥️", "topic": "hardware", "term": "Pantalla", "explanation": "Es la parte del ordenador donde vemos imágenes, letras y vídeos. Así es como el ordenador nos muestra lo que está haciendo." },
+  { "id": "teclado", "emoji": "⌨️", "topic": "hardware", "term": "Teclado", "explanation": "Tiene muchas teclas con letras y números. Las pulsamos para escribir palabras en el ordenador." },
+  { "id": "rato", "emoji": "🖱️", "topic": "hardware", "term": "Ratón", "explanation": "Es el aparato que movemos con la mano para señalar y hacer clic en las cosas que vemos en la pantalla." },
+  { "id": "hardware", "emoji": "🔧", "topic": "hardware", "term": "Hardware", "explanation": "Son todas las partes del ordenador que podemos tocar, como la pantalla, el teclado y el ratón." },
+  { "id": "software", "emoji": "💽", "topic": "software", "term": "Software", "explanation": "Son los programas que le dicen al ordenador qué hacer. No se pueden tocar, pero hacen que el ordenador funcione." },
+  { "id": "aplicacao", "emoji": "📱", "topic": "software", "term": "Aplicación", "explanation": "Es un programa pequeño hecho para una tarea, como dibujar, jugar o escuchar música. También se llama 'app'." },
+  { "id": "ficheiro", "emoji": "📄", "topic": "software", "term": "Archivo", "explanation": "Es donde guardamos un trabajo, un dibujo o una foto en el ordenador, para poder abrirlo otra vez más tarde." },
+  { "id": "pasta", "emoji": "📁", "topic": "software", "term": "Carpeta", "explanation": "Sirve para guardar varios archivos juntos, igual que una carpeta guarda varias hojas de papel juntas." },
+  { "id": "internet", "emoji": "🌐", "topic": "internet", "term": "Internet", "explanation": "Es una gran red que conecta ordenadores de todo el mundo, para poder ver páginas, enviar mensajes y aprender cosas nuevas." },
+  { "id": "wifi", "emoji": "📶", "topic": "internet", "term": "Wi-Fi", "explanation": "Es una forma de conectar el ordenador o el móvil a internet sin usar ningún cable." },
+  { "id": "browser", "emoji": "🧭", "topic": "internet", "term": "Navegador", "explanation": "Es el programa que usamos para abrir y ver páginas de internet, como una ventana al mundo online." },
+  { "id": "website", "emoji": "🔎", "topic": "internet", "term": "Sitio web", "explanation": "Es una página que podemos visitar en internet, llena de texto, imágenes o vídeos sobre un tema." },
+  { "id": "password", "emoji": "🔑", "topic": "safety", "term": "Contraseña", "explanation": "Es un secreto hecho de letras y números que protege nuestras cuentas. Nunca se comparte con amigos o desconocidos, solo con los padres." },
+  { "id": "info-pessoal", "emoji": "🙅", "topic": "safety", "term": "Información personal", "explanation": "Tu nombre completo, dirección, colegio o fotos son privados. Nunca los compartas online sin hablar antes con un adulto." },
+  { "id": "adulto-confianca", "emoji": "🧑‍🤝‍🧑", "topic": "safety", "term": "Adulto de confianza", "explanation": "Si algo online te hace sentir confundido, asustado o extraño, cuéntaselo siempre a un adulto de confianza. Nunca lo guardes tú solo." },
+  { "id": "nem-tudo-verdade", "emoji": "🤔", "topic": "safety", "term": "No todo es verdad", "explanation": "No todo lo que vemos en internet es verdad. Antes de creer o compartir algo, vale la pena preguntar a un adulto o comprobarlo en otro lugar." },
+  { "id": "tempo-ecra", "emoji": "⏳", "topic": "safety", "term": "Tiempo de pantalla", "explanation": "Las pantallas son divertidas, pero nuestro cuerpo también necesita jugar fuera, leer libros y descansar los ojos. ¡El equilibrio es la clave!" }
+]

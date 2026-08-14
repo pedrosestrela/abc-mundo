@@ -1412,9 +1412,56 @@ body {
   padding: 0 14px 14px;
 }
 
+.computing-card {
+  border-color: var(--blue);
+}
+
+.computing-card.done {
+  border-color: var(--green);
+}
+
+.computing-topic-badge {
+  text-transform: capitalize;
+}
+
+.computing-explanation {
+  margin-top: 8px;
+}
+
+.computing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 10px;
+  max-width: 640px;
+  margin: 0 auto 16px;
+}
+
+.computing-term-btn {
+  background: #fff;
+  border-radius: 16px;
+  border: 3px solid var(--blue);
+  padding: 14px 8px;
+  text-align: center;
+  cursor: pointer;
+  font: inherit;
+}
+
+.computing-term-btn.done {
+  border-color: var(--green);
+}
+
+.computing-term-emoji {
+  font-size: 1.8rem;
+  display: block;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background: linear-gradient(180deg, #201a2b, #2a1c22);
+    color: #f0e9ff;
+  }
+  .computing-term-btn {
+    background: #362a44;
     color: #f0e9ff;
   }
   .robots-grid {
