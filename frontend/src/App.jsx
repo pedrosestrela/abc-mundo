@@ -38,6 +38,7 @@ const City = lazy(() => import("./pages/City.jsx"));
 const Mundos = lazy(() => import("./pages/Mundos.jsx"));
 const Thinking = lazy(() => import("./pages/Thinking.jsx"));
 const Writing = lazy(() => import("./pages/Writing.jsx"));
+const NatureDiary = lazy(() => import("./pages/NatureDiary.jsx"));
 
 export default function App() {
   return (
@@ -76,6 +77,7 @@ export default function App() {
             <Route path="/thinking" element={<Thinking />} />
             <Route path="/city" element={<City />} />
             <Route path="/writing" element={<Writing />} />
+            <Route path="/nature-diary" element={<NatureDiary />} />
           </Routes>
         </Suspense>
       </main>
