@@ -1,0 +1,28 @@
+[
+  {
+    "id": "curious-fox",
+    "title": "El Zorro Curioso",
+    "emoji": "🦊",
+    "pages": [
+      { "text": "Había una vez un pequeño zorro llamado Mimi.", "emoji": "🦊" },
+      { "text": "A Mimi le encantaba explorar el bosque todos los días.", "emoji": "🌳" },
+      { "text": "Un día encontró un río brillando bajo el sol.", "emoji": "🌊" },
+      { "text": "Vio un pececito y se puso muy curiosa.", "emoji": "🐟" },
+      { "text": "Mimi aprendió que el mundo tiene muchas sorpresas.", "emoji": "✨" },
+      { "text": "Volvió a casa feliz, llena de nuevas historias.", "emoji": "🏡" }
+    ]
+  },
+  {
+    "id": "kind-friends",
+    "title": "Los Amigos Bondadosos",
+    "emoji": "🐻",
+    "pages": [
+      { "text": "El osito Bruno perdió su pelota en el parque.", "emoji": "🐻" },
+      { "text": "El conejo Tito vio a Bruno triste y fue a ayudarlo.", "emoji": "🐰" },
+      { "text": "Juntos buscaron detrás de los árboles y las flores.", "emoji": "🌸" },
+      { "text": "Por fin encontraron la pelota debajo de un banco.", "emoji": "⚽" },
+      { "text": "Bruno sonrió y agradeció a su amigo Tito.", "emoji": "😊" },
+      { "text": "Aprendieron que ayudar a los amigos se siente muy bien.", "emoji": "💛" }
+    ]
+  }
+]

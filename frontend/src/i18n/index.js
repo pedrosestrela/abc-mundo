@@ -5,7 +5,7 @@ const resources = {
   pt: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Início", alphabet: "Alfabeto", reading: "Leitura", songs: "Canções", language: "Idiomas" },
+      nav: { home: "Início", alphabet: "Alfabeto", reading: "Leitura", songs: "Canções", language: "Idiomas", stories: "Histórias" },
       home: {
         pickProfile: "Escolhe o teu perfil",
         newProfile: "Novo perfil",
@@ -25,13 +25,17 @@ const resources = {
         songsTitle: "Canções",
         play: "Ouvir",
         speechUnavailable: "O áudio de voz não está disponível neste dispositivo.",
+        storiesTitle: "Histórias",
+        storiesNext: "Seguinte",
+        storiesPrev: "Anterior",
+        storiesPage: "Página",
       },
     },
   },
   en: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Home", alphabet: "Alphabet", reading: "Reading", songs: "Songs", language: "Languages" },
+      nav: { home: "Home", alphabet: "Alphabet", reading: "Reading", songs: "Songs", language: "Languages", stories: "Stories" },
       home: {
         pickProfile: "Pick your profile",
         newProfile: "New profile",
@@ -51,13 +55,17 @@ const resources = {
         songsTitle: "Songs",
         play: "Listen",
         speechUnavailable: "Voice audio is not available on this device.",
+        storiesTitle: "Stories",
+        storiesNext: "Next",
+        storiesPrev: "Previous",
+        storiesPage: "Page",
       },
     },
   },
   de: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Start", alphabet: "Alphabet", reading: "Lesen", songs: "Lieder", language: "Sprachen" },
+      nav: { home: "Start", alphabet: "Alphabet", reading: "Lesen", songs: "Lieder", language: "Sprachen", stories: "Geschichten" },
       home: {
         pickProfile: "Wähle dein Profil",
         newProfile: "Neues Profil",
@@ -77,13 +85,17 @@ const resources = {
         songsTitle: "Lieder",
         play: "Anhören",
         speechUnavailable: "Sprachausgabe ist auf diesem Gerät nicht verfügbar.",
+        storiesTitle: "Geschichten",
+        storiesNext: "Weiter",
+        storiesPrev: "Zurück",
+        storiesPage: "Seite",
       },
     },
   },
   fr: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Accueil", alphabet: "Alphabet", reading: "Lecture", songs: "Chansons", language: "Langues" },
+      nav: { home: "Accueil", alphabet: "Alphabet", reading: "Lecture", songs: "Chansons", language: "Langues", stories: "Histoires" },
       home: {
         pickProfile: "Choisis ton profil",
         newProfile: "Nouveau profil",
@@ -103,13 +115,17 @@ const resources = {
         songsTitle: "Chansons",
         play: "Écouter",
         speechUnavailable: "L'audio vocal n'est pas disponible sur cet appareil.",
+        storiesTitle: "Histoires",
+        storiesNext: "Suivant",
+        storiesPrev: "Précédent",
+        storiesPage: "Page",
       },
     },
   },
   zh: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "首页", alphabet: "字母表", reading: "阅读", songs: "歌曲", language: "语言" },
+      nav: { home: "首页", alphabet: "字母表", reading: "阅读", songs: "歌曲", language: "语言", stories: "故事" },
       home: {
         pickProfile: "选择你的档案",
         newProfile: "新档案",
@@ -129,13 +145,17 @@ const resources = {
         songsTitle: "歌曲",
         play: "播放",
         speechUnavailable: "此设备不支持语音朗读。",
+        storiesTitle: "故事",
+        storiesNext: "下一页",
+        storiesPrev: "上一页",
+        storiesPage: "第",
       },
     },
   },
   es: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Inicio", alphabet: "Alfabeto", reading: "Lectura", songs: "Canciones", language: "Idiomas" },
+      nav: { home: "Inicio", alphabet: "Alfabeto", reading: "Lectura", songs: "Canciones", language: "Idiomas", stories: "Cuentos" },
       home: {
         pickProfile: "Elige tu perfil",
         newProfile: "Nuevo perfil",
@@ -155,13 +175,17 @@ const resources = {
         songsTitle: "Canciones",
         play: "Escuchar",
         speechUnavailable: "El audio de voz no está disponible en este dispositivo.",
+        storiesTitle: "Cuentos",
+        storiesNext: "Siguiente",
+        storiesPrev: "Anterior",
+        storiesPage: "Página",
       },
     },
   },
   it: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Home", alphabet: "Alfabeto", reading: "Lettura", songs: "Canzoni", language: "Lingue" },
+      nav: { home: "Home", alphabet: "Alfabeto", reading: "Lettura", songs: "Canzoni", language: "Lingue", stories: "Storie" },
       home: {
         pickProfile: "Scegli il tuo profilo",
         newProfile: "Nuovo profilo",
@@ -181,6 +205,10 @@ const resources = {
         songsTitle: "Canzoni",
         play: "Ascolta",
         speechUnavailable: "L'audio vocale non è disponibile su questo dispositivo.",
+        storiesTitle: "Storie",
+        storiesNext: "Avanti",
+        storiesPrev: "Indietro",
+        storiesPage: "Pagina",
       },
     },
   },

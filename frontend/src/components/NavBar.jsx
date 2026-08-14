@@ -21,6 +21,9 @@ export default function NavBar() {
       <NavLink to="/songs" className="nav-link">
         🎵 {t("nav.songs")}
       </NavLink>
+      <NavLink to="/stories" className="nav-link">
+        📚 {t("nav.stories")}
+      </NavLink>
     </nav>
   );
 }

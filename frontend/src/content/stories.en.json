@@ -1,0 +1,28 @@
+[
+  {
+    "id": "curious-fox",
+    "title": "The Curious Fox",
+    "emoji": "🦊",
+    "pages": [
+      { "text": "Once upon a time, there was a little fox named Mimi.", "emoji": "🦊" },
+      { "text": "Mimi loved exploring the forest every day.", "emoji": "🌳" },
+      { "text": "One day, she found a river sparkling in the sun.", "emoji": "🌊" },
+      { "text": "She saw a tiny fish and grew very curious.", "emoji": "🐟" },
+      { "text": "Mimi learned that the world has many surprises.", "emoji": "✨" },
+      { "text": "She went home happy, full of new stories.", "emoji": "🏡" }
+    ]
+  },
+  {
+    "id": "kind-friends",
+    "title": "The Kind Friends",
+    "emoji": "🐻",
+    "pages": [
+      { "text": "Bruno the bear cub lost his ball in the park.", "emoji": "🐻" },
+      { "text": "Tito the rabbit saw Bruno sad and came to help.", "emoji": "🐰" },
+      { "text": "Together they looked behind trees and flowers.", "emoji": "🌸" },
+      { "text": "At last they found the ball under a bench.", "emoji": "⚽" },
+      { "text": "Bruno smiled and thanked his friend Tito.", "emoji": "😊" },
+      { "text": "They learned that helping friends feels wonderful.", "emoji": "💛" }
+    ]
+  }
+]
