@@ -78,6 +78,41 @@
     "intro": "Quando pões dinheiro no banco, às vezes o banco dá-te um pouco mais por o teres deixado lá guardado. Chama-se juro.",
     "explanation": "Se puseres 10€ no banco e ele te der 1€ a mais por cada ano, ao fim de 1 ano tens 11€. Ao fim de 2 anos tens 12€. O teu dinheiro cresce sozinho enquanto está guardado!"
   },
+  "weeklyBudget": [
+    {
+      "id": "wb1",
+      "allowance": 1000,
+      "goal": { "emoji": "📖", "name": "um livro novo", "amount": 500 },
+      "days": [
+        { "id": "d1", "dayLabel": "Segunda-feira", "type": "expense", "emoji": "🚌", "label": "Transporte", "amount": 100 },
+        { "id": "d2", "dayLabel": "Terça-feira", "type": "optional", "emoji": "🍦", "label": "Queres comprar um gelado?", "amount": 100 },
+        { "id": "d3", "dayLabel": "Quarta-feira", "type": "surprise", "emoji": "🚰", "label": "Perdeste a tua garrafa de água! Precisas de comprar outra.", "amount": 200 },
+        { "id": "d4", "dayLabel": "Quinta-feira", "type": "expense", "emoji": "🥪", "label": "Lanche", "amount": 150 }
+      ]
+    },
+    {
+      "id": "wb2",
+      "allowance": 800,
+      "goal": { "emoji": "🧸", "name": "um brinquedo novo", "amount": 400 },
+      "days": [
+        { "id": "d1", "dayLabel": "Segunda-feira", "type": "expense", "emoji": "🚌", "label": "Transporte", "amount": 80 },
+        { "id": "d2", "dayLabel": "Terça-feira", "type": "expense", "emoji": "🥪", "label": "Lanche", "amount": 120 },
+        { "id": "d3", "dayLabel": "Quarta-feira", "type": "optional", "emoji": "🃏", "label": "Queres comprar cromos de coleção?", "amount": 100 },
+        { "id": "d4", "dayLabel": "Quinta-feira", "type": "surprise", "emoji": "🎒", "label": "A tua mochila rasgou-se! Precisas de comprar um saco novo.", "amount": 150 }
+      ]
+    },
+    {
+      "id": "wb3",
+      "allowance": 1200,
+      "goal": { "emoji": "🎁", "name": "um presente especial", "amount": 600 },
+      "days": [
+        { "id": "d1", "dayLabel": "Segunda-feira", "type": "expense", "emoji": "🚌", "label": "Transporte", "amount": 100 },
+        { "id": "d2", "dayLabel": "Terça-feira", "type": "surprise", "emoji": "✏️", "label": "Perdeste a tua caneta! Precisas de comprar uma nova.", "amount": 150 },
+        { "id": "d3", "dayLabel": "Quarta-feira", "type": "optional", "emoji": "📗", "label": "Queres comprar uma revista de banda desenhada?", "amount": 250 },
+        { "id": "d4", "dayLabel": "Quinta-feira", "type": "expense", "emoji": "🥪", "label": "Lanche", "amount": 200 }
+      ]
+    }
+  ],
   "safety": [
     { "id": "fs1", "emoji": "💳", "scenario": "Alguém que conheceste online pede-te o número do cartão de banco dos teus pais.", "isSafe": false, "explanation": "Pede ajuda a um adulto! O número do cartão é secreto e nunca se partilha com desconhecidos, mesmo online." },
     { "id": "fs2", "emoji": "🛍️", "scenario": "Queres comprar algo numa loja online e pedes a um adulto para o ajudar antes de pagar.", "isSafe": true, "explanation": "Muito bem! Pedir ajuda a um adulto antes de comprar online protege-te de enganos." },

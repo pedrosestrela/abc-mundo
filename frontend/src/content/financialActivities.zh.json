@@ -78,6 +78,41 @@
     "intro": "当你把钱存进银行时，银行有时会因为你把钱留在那里而多给你一点钱。这叫做利息。",
     "explanation": "如果你把10欧元存进银行，银行每年多给你1欧元，那么1年后你有11欧元。2年后你有12欧元。你的钱在储蓄的同时会自己增长！"
   },
+  "weeklyBudget": [
+    {
+      "id": "wb1",
+      "allowance": 1000,
+      "goal": { "emoji": "📖", "name": "一本新书", "amount": 500 },
+      "days": [
+        { "id": "d1", "dayLabel": "星期一", "type": "expense", "emoji": "🚌", "label": "交通费", "amount": 100 },
+        { "id": "d2", "dayLabel": "星期二", "type": "optional", "emoji": "🍦", "label": "你想买一个冰淇淋吗？", "amount": 100 },
+        { "id": "d3", "dayLabel": "星期三", "type": "surprise", "emoji": "🚰", "label": "你的水壶丢了！你需要买一个新的。", "amount": 200 },
+        { "id": "d4", "dayLabel": "星期四", "type": "expense", "emoji": "🥪", "label": "点心", "amount": 150 }
+      ]
+    },
+    {
+      "id": "wb2",
+      "allowance": 800,
+      "goal": { "emoji": "🧸", "name": "一个新玩具", "amount": 400 },
+      "days": [
+        { "id": "d1", "dayLabel": "星期一", "type": "expense", "emoji": "🚌", "label": "交通费", "amount": 80 },
+        { "id": "d2", "dayLabel": "星期二", "type": "expense", "emoji": "🥪", "label": "点心", "amount": 120 },
+        { "id": "d3", "dayLabel": "星期三", "type": "optional", "emoji": "🃏", "label": "你想买收藏卡吗？", "amount": 100 },
+        { "id": "d4", "dayLabel": "星期四", "type": "surprise", "emoji": "🎒", "label": "你的书包破了！你需要买一个新的。", "amount": 150 }
+      ]
+    },
+    {
+      "id": "wb3",
+      "allowance": 1200,
+      "goal": { "emoji": "🎁", "name": "一份特别的礼物", "amount": 600 },
+      "days": [
+        { "id": "d1", "dayLabel": "星期一", "type": "expense", "emoji": "🚌", "label": "交通费", "amount": 100 },
+        { "id": "d2", "dayLabel": "星期二", "type": "surprise", "emoji": "✏️", "label": "你的笔丢了！你需要买一支新的。", "amount": 150 },
+        { "id": "d3", "dayLabel": "星期三", "type": "optional", "emoji": "📗", "label": "你想买一本漫画书吗？", "amount": 250 },
+        { "id": "d4", "dayLabel": "星期四", "type": "expense", "emoji": "🥪", "label": "点心", "amount": 200 }
+      ]
+    }
+  ],
   "safety": [
     { "id": "fs1", "emoji": "💳", "scenario": "一个你在网上认识的人向你要你父母的银行卡号。", "isSafe": false, "explanation": "请大人帮忙！银行卡号是秘密，永远不要和陌生人分享，即使是在网上。" },
     { "id": "fs2", "emoji": "🛍️", "scenario": "你想在网上商店买东西，付款前你请大人帮忙。", "isSafe": true, "explanation": "很好！网购前请大人帮忙可以保护你不被骗。" },

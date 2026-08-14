@@ -78,6 +78,41 @@
     "intro": "Quando metti i soldi in banca, a volte la banca ti dà un po' di più per averli lasciati lì. Si chiama interesse.",
     "explanation": "Se metti 10€ in banca e ti dà 1€ in più ogni anno, dopo 1 anno hai 11€. Dopo 2 anni hai 12€. I tuoi soldi crescono da soli mentre sono risparmiati!"
   },
+  "weeklyBudget": [
+    {
+      "id": "wb1",
+      "allowance": 1000,
+      "goal": { "emoji": "📖", "name": "un libro nuovo", "amount": 500 },
+      "days": [
+        { "id": "d1", "dayLabel": "Lunedì", "type": "expense", "emoji": "🚌", "label": "Trasporto", "amount": 100 },
+        { "id": "d2", "dayLabel": "Martedì", "type": "optional", "emoji": "🍦", "label": "Vuoi comprare un gelato?", "amount": 100 },
+        { "id": "d3", "dayLabel": "Mercoledì", "type": "surprise", "emoji": "🚰", "label": "Hai perso la tua borraccia! Devi comprarne una nuova.", "amount": 200 },
+        { "id": "d4", "dayLabel": "Giovedì", "type": "expense", "emoji": "🥪", "label": "Merenda", "amount": 150 }
+      ]
+    },
+    {
+      "id": "wb2",
+      "allowance": 800,
+      "goal": { "emoji": "🧸", "name": "un giocattolo nuovo", "amount": 400 },
+      "days": [
+        { "id": "d1", "dayLabel": "Lunedì", "type": "expense", "emoji": "🚌", "label": "Trasporto", "amount": 80 },
+        { "id": "d2", "dayLabel": "Martedì", "type": "expense", "emoji": "🥪", "label": "Merenda", "amount": 120 },
+        { "id": "d3", "dayLabel": "Mercoledì", "type": "optional", "emoji": "🃏", "label": "Vuoi comprare delle figurine?", "amount": 100 },
+        { "id": "d4", "dayLabel": "Giovedì", "type": "surprise", "emoji": "🎒", "label": "Il tuo zaino si è strappato! Devi comprarne uno nuovo.", "amount": 150 }
+      ]
+    },
+    {
+      "id": "wb3",
+      "allowance": 1200,
+      "goal": { "emoji": "🎁", "name": "un regalo speciale", "amount": 600 },
+      "days": [
+        { "id": "d1", "dayLabel": "Lunedì", "type": "expense", "emoji": "🚌", "label": "Trasporto", "amount": 100 },
+        { "id": "d2", "dayLabel": "Martedì", "type": "surprise", "emoji": "✏️", "label": "Hai perso la tua penna! Devi comprarne una nuova.", "amount": 150 },
+        { "id": "d3", "dayLabel": "Mercoledì", "type": "optional", "emoji": "📗", "label": "Vuoi comprare un fumetto?", "amount": 250 },
+        { "id": "d4", "dayLabel": "Giovedì", "type": "expense", "emoji": "🥪", "label": "Merenda", "amount": 200 }
+      ]
+    }
+  ],
   "safety": [
     { "id": "fs1", "emoji": "💳", "scenario": "Qualcuno che hai conosciuto online ti chiede il numero della carta bancaria dei tuoi genitori.", "isSafe": false, "explanation": "Chiedi aiuto a un adulto! Il numero della carta è segreto e non si condivide mai con sconosciuti, nemmeno online." },
     { "id": "fs2", "emoji": "🛍️", "scenario": "Vuoi comprare qualcosa in un negozio online e chiedi a un adulto di aiutarti prima di pagare.", "isSafe": true, "explanation": "Bravo! Chiedere aiuto a un adulto prima di comprare online ti protegge dagli imbrogli." },
