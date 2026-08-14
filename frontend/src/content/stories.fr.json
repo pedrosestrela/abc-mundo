@@ -3947,5 +3947,470 @@
         "emoji": "💫"
       }
     ]
+  },
+  {
+    "id": "underwater-treasure-hunt",
+    "title": "La Chasse au Trésor Sous-Marin",
+    "emoji": "🤿",
+    "pages": [
+      {
+        "text": "Deux petites amies poissons, Bia et Nina, entendirent parler d'un trésor englouti.",
+        "emoji": "🤿"
+      },
+      {
+        "text": "Elles nagèrent parmi les coraux colorés à la recherche d'un vieux coffre.",
+        "emoji": "🪸"
+      },
+      {
+        "text": "Elles trouvèrent le coffre coincé entre des rochers, fermé par un cadenas rouillé.",
+        "emoji": "🔒"
+      },
+      {
+        "text": "Ensemble, elles poussèrent et tirèrent jusqu'à ce que le cadenas cède.",
+        "emoji": "💪"
+      },
+      {
+        "text": "À l'intérieur, il n'y avait que des coquillages brillants et de petites perles, pas d'or.",
+        "emoji": "✨"
+      },
+      {
+        "text": "Elles comprirent que la vraie aventure avait été d'explorer ensemble.",
+        "emoji": "🤝"
+      }
+    ]
+  },
+  {
+    "id": "cloud-that-was-afraid-of-storms",
+    "title": "Le Nuage Qui Avait Peur des Orages",
+    "emoji": "⛈️",
+    "pages": [
+      {
+        "text": "Le petit Nuage avait peur du tonnerre et se cachait derrière les montagnes.",
+        "emoji": "☁️"
+      },
+      {
+        "text": "Les autres nuages disaient que tonner faisait partie d'être un nuage de pluie.",
+        "emoji": "⛈️"
+      },
+      {
+        "text": "Un jour, les champs devinrent secs et eurent désespérément besoin de pluie.",
+        "emoji": "🌾"
+      },
+      {
+        "text": "Le petit Nuage respira profondément et laissa échapper son premier tonnerre, tout doux.",
+        "emoji": "🌩️"
+      },
+      {
+        "text": "Il comprit que le son lui faisait peur, mais aidait les plantes à pousser.",
+        "emoji": "🌱"
+      },
+      {
+        "text": "Depuis, il tonnait fièrement chaque fois que la terre avait besoin d'eau.",
+        "emoji": "💧"
+      }
+    ]
+  },
+  {
+    "id": "two-chameleons-different-colors",
+    "title": "Les Deux Caméléons aux Couleurs Différentes",
+    "emoji": "🦎",
+    "pages": [
+      {
+        "text": "Couleur et Caméléon étaient deux amis caméléons qui changeaient toujours de couleur.",
+        "emoji": "🦎"
+      },
+      {
+        "text": "Couleur aimait rester vert et Caméléon préférait rester violet.",
+        "emoji": "🟣"
+      },
+      {
+        "text": "Un jour, ils se disputèrent pour savoir quelle était la plus belle couleur de la forêt.",
+        "emoji": "😤"
+      },
+      {
+        "text": "Un hibou dit : « Les couleurs n'existent que parce qu'elles sont différentes les unes des autres. »",
+        "emoji": "🦉"
+      },
+      {
+        "text": "Ils comprirent qu'ensemble, le vert et le violet rendaient la forêt plus belle.",
+        "emoji": "🌳"
+      },
+      {
+        "text": "Depuis, ils changent de couleur côte à côte, sans jamais plus se disputer.",
+        "emoji": "💚"
+      }
+    ]
+  },
+  {
+    "id": "little-explorer-finds-cave",
+    "title": "Le Petit Explorateur Trouve une Grotte",
+    "emoji": "🔦",
+    "pages": [
+      {
+        "text": "Au cœur de la forêt, le petit explorateur Filipe trouva une grotte cachée derrière une cascade.",
+        "emoji": "🔦"
+      },
+      {
+        "text": "Lampe allumée, il entra lentement, le cœur battant fort.",
+        "emoji": "💓"
+      },
+      {
+        "text": "Les parois de la grotte scintillaient de petits cristaux roses.",
+        "emoji": "💎"
+      },
+      {
+        "text": "Il entendit de l'eau goutter et suivit le son jusqu'à un petit lac souterrain.",
+        "emoji": "🌊"
+      },
+      {
+        "text": "Des poissons aveugles et blancs nageaient lentement dans l'eau sombre.",
+        "emoji": "🐟"
+      },
+      {
+        "text": "Filipe repartit émerveillé, promettant de revenir explorer plus loin un jour.",
+        "emoji": "🗺️"
+      }
+    ]
+  },
+  {
+    "id": "summer-picnic-ants",
+    "title": "Le Pique-nique d'Été et les Fourmis",
+    "emoji": "🧺",
+    "pages": [
+      {
+        "text": "La famille Costa prépara un immense pique-nique pour une journée d'été.",
+        "emoji": "🧺"
+      },
+      {
+        "text": "Ils étendirent la couverture sous un arbre et ouvrirent les paniers de nourriture.",
+        "emoji": "🍉"
+      },
+      {
+        "text": "Sans le remarquer, une file de fourmis marcha droit vers le gâteau.",
+        "emoji": "🐜"
+      },
+      {
+        "text": "Le petit Zé cria en voyant les fourmis grimper sur la couverture.",
+        "emoji": "😲"
+      },
+      {
+        "text": "Au lieu de se fâcher, il décida de leur laisser quelques miettes dans un coin.",
+        "emoji": "🍞"
+      },
+      {
+        "text": "Les fourmis emportèrent les miettes, et tous continuèrent leur pique-nique en paix.",
+        "emoji": "😊"
+      }
+    ]
+  },
+  {
+    "id": "shy-robot-first-day",
+    "title": "Le Premier Jour du Robot Timide",
+    "emoji": "🤖",
+    "pages": [
+      {
+        "text": "Le robot Zip fut allumé pour la première fois dans une classe pleine d'enfants.",
+        "emoji": "🤖"
+      },
+      {
+        "text": "Il se sentit timide avec tant d'yeux braqués sur lui en même temps.",
+        "emoji": "😳"
+      },
+      {
+        "text": "Il resta immobile dans un coin, ne sachant pas quoi dire.",
+        "emoji": "🔇"
+      },
+      {
+        "text": "Une fille s'approcha et demanda : « Tu veux jouer avec nous ? »",
+        "emoji": "👧"
+      },
+      {
+        "text": "Zip fit un petit bip doux, sa façon timide de dire oui.",
+        "emoji": "🔊"
+      },
+      {
+        "text": "À la fin de la journée, il s'était fait toute une rangée de nouveaux amis.",
+        "emoji": "🤝"
+      }
+    ]
+  },
+  {
+    "id": "recipe-for-happiness",
+    "title": "La Recette du Bonheur",
+    "emoji": "🍮",
+    "pages": [
+      {
+        "text": "Grand-mère Fernanda avait une petite pâtisserie où elle faisait des pastéis de nata.",
+        "emoji": "🍮"
+      },
+      {
+        "text": "Sa petite-fille Joana demanda quel était le secret de cette recette si spéciale.",
+        "emoji": "👧"
+      },
+      {
+        "text": "« Le secret n'est pas seulement la cannelle », dit grand-mère, « c'est de les faire avec amour. »",
+        "emoji": "❤️"
+      },
+      {
+        "text": "Ensemble, elles mélangèrent la pâte, remplirent les moules et les mirent au four chaud.",
+        "emoji": "🔥"
+      },
+      {
+        "text": "Les pâtisseries sortirent dorées dessus, avec de douces taches sombres.",
+        "emoji": "🍯"
+      },
+      {
+        "text": "Joana comprit que la vraie recette du bonheur était de partager ce moment.",
+        "emoji": "💛"
+      }
+    ]
+  },
+  {
+    "id": "snail-who-was-frustrated",
+    "title": "L'Escargot Frustré",
+    "emoji": "🐌",
+    "pages": [
+      {
+        "text": "L'escargot Caco voulait traverser le jardin avant le coucher du soleil.",
+        "emoji": "🐌"
+      },
+      {
+        "text": "Malgré tous ses efforts, il avançait très, très lentement.",
+        "emoji": "😩"
+      },
+      {
+        "text": "Il se frustra en voyant une limace le dépasser facilement.",
+        "emoji": "😤"
+      },
+      {
+        "text": "Une coccinelle dit : « Ne te compare pas aux autres, chacun a son propre rythme. »",
+        "emoji": "🐞"
+      },
+      {
+        "text": "Caco continua doucement, sans se soucier de qui était devant.",
+        "emoji": "🐢"
+      },
+      {
+        "text": "Il arriva de l'autre côté juste à temps pour voir le magnifique coucher de soleil.",
+        "emoji": "🌅"
+      }
+    ]
+  },
+  {
+    "id": "stars-that-counted-sheep",
+    "title": "Les Étoiles Qui Comptaient les Moutons",
+    "emoji": "⭐",
+    "pages": [
+      {
+        "text": "Chaque nuit, les étoiles du ciel aimaient compter les moutons du berger Nuno.",
+        "emoji": "🐑"
+      },
+      {
+        "text": "« Un, deux, trois... » clignotaient-elles lentement, une à une, en comptant.",
+        "emoji": "⭐"
+      },
+      {
+        "text": "Une nuit, un mouton espiègle s'éloigna du troupeau pour explorer le champ.",
+        "emoji": "🐏"
+      },
+      {
+        "text": "Les étoiles remarquèrent qu'il en manquait un et clignotèrent fort pour avertir le berger.",
+        "emoji": "✨"
+      },
+      {
+        "text": "Nuno suivit la lumière des étoiles jusqu'à trouver le mouton perdu près d'un ruisseau.",
+        "emoji": "🏞️"
+      },
+      {
+        "text": "Il recompta ses moutons, aidé cette fois par tout le ciel scintillant.",
+        "emoji": "🌌"
+      }
+    ]
+  },
+  {
+    "id": "rain-boots-adventure",
+    "title": "L'Aventure des Bottes de Pluie",
+    "emoji": "👢",
+    "pages": [
+      {
+        "text": "Après plusieurs jours de pluie, le jardin se remplit d'énormes flaques.",
+        "emoji": "🌧️"
+      },
+      {
+        "text": "La petite Iris enfila ses bottes de pluie rouges, prête pour l'aventure.",
+        "emoji": "👢"
+      },
+      {
+        "text": "Elle sauta de flaque en flaque, imaginant que chacune était un océan différent.",
+        "emoji": "🌊"
+      },
+      {
+        "text": "Dans une flaque, elle trouva des têtards nageant en cercles, pleins d'énergie.",
+        "emoji": "🐸"
+      },
+      {
+        "text": "Elle les observa attentivement, sans les effrayer, juste pour apprendre comment ils bougeaient.",
+        "emoji": "👀"
+      },
+      {
+        "text": "Elle rentra chez elle avec des bottes boueuses et la tête pleine de découvertes.",
+        "emoji": "🏡"
+      }
+    ]
+  },
+  {
+    "id": "proud-of-my-painting",
+    "title": "Fière de Mon Tableau",
+    "emoji": "🖼️",
+    "pages": [
+      {
+        "text": "En cours d'arts plastiques, Matilde peignit un tableau avec toutes ses couleurs préférées.",
+        "emoji": "🖼️"
+      },
+      {
+        "text": "Un camarade rit et dit que le ciel ne pouvait pas être rose.",
+        "emoji": "😕"
+      },
+      {
+        "text": "Matilde fut triste un instant, puis pensa à ce qu'elle aimait vraiment.",
+        "emoji": "🤔"
+      },
+      {
+        "text": "La maîtresse accrocha le tableau au mur, à côté de tous les autres.",
+        "emoji": "🖌️"
+      },
+      {
+        "text": "Beaucoup de camarades s'arrêtèrent pour admirer ce ciel rose si original.",
+        "emoji": "👀"
+      },
+      {
+        "text": "Matilde apprit que sa propre imagination en valait vraiment la peine.",
+        "emoji": "🌟"
+      }
+    ]
+  },
+  {
+    "id": "two-bears-share-cave",
+    "title": "Les Deux Ours Qui Partagèrent une Grotte",
+    "emoji": "🐻",
+    "pages": [
+      {
+        "text": "Deux petits ours, Bruno et Bela, trouvèrent la même grotte douillette pour hiberner.",
+        "emoji": "🐻"
+      },
+      {
+        "text": "Au début, ils se disputèrent pour savoir qui était arrivé le premier et à qui elle appartenait.",
+        "emoji": "😤"
+      },
+      {
+        "text": "Dehors, la neige se mit à tomber de plus en plus fort.",
+        "emoji": "❄️"
+      },
+      {
+        "text": "Ils comprirent que seuls ils auraient froid, mais qu'ensemble ils resteraient au chaud.",
+        "emoji": "🥶"
+      },
+      {
+        "text": "Ils décidèrent de partager la grotte, blottis l'un contre l'autre pour se réchauffer.",
+        "emoji": "🤗"
+      },
+      {
+        "text": "Ils passèrent tout l'hiver ensemble et devinrent les meilleurs amis de la forêt.",
+        "emoji": "💕"
+      }
+    ]
+  },
+  {
+    "id": "curious-chick-hatches",
+    "title": "Le Poussin Curieux Éclot",
+    "emoji": "🐣",
+    "pages": [
+      {
+        "text": "Dans un œuf blanc, un petit poussin curieux tapotait lentement contre la coquille.",
+        "emoji": "🥚"
+      },
+      {
+        "text": "« Le monde dehors est-il vraiment aussi grand qu'il en a l'air ? » se demandait-il.",
+        "emoji": "🤔"
+      },
+      {
+        "text": "D'un dernier coup, la coquille se brisa et la lumière entra d'un seul coup.",
+        "emoji": "☀️"
+      },
+      {
+        "text": "Le poussin piailla de surprise en voyant sa mère poule qui l'attendait.",
+        "emoji": "🐣"
+      },
+      {
+        "text": "Il explora le poulailler à petits pas, découvrant paille, maïs et eau.",
+        "emoji": "🌾"
+      },
+      {
+        "text": "À la fin de la journée, il se blottit sous l'aile de sa mère, heureux de son nouveau monde.",
+        "emoji": "🐔"
+      }
+    ]
+  },
+  {
+    "id": "portuguese-fishing-village",
+    "title": "Le Village de Pêcheurs Portugais",
+    "emoji": "🎣",
+    "pages": [
+      {
+        "text": "Dans le petit village de Nazaré, le petit Tó se réveillait toujours avec l'odeur de la mer.",
+        "emoji": "🎣"
+      },
+      {
+        "text": "Son grand-père était pêcheur et sortait en bateau chaque matin avant le lever du soleil.",
+        "emoji": "⛵"
+      },
+      {
+        "text": "Un jour, son grand-père le laissa venir, avec un gilet de sauvetage bien serré.",
+        "emoji": "🦺"
+      },
+      {
+        "text": "Tó aida à tirer les filets pleins de poissons argentés scintillant au soleil.",
+        "emoji": "🐟"
+      },
+      {
+        "text": "Son grand-père lui raconta des histoires sur les vagues géantes qui rendent Nazaré célèbre.",
+        "emoji": "🌊"
+      },
+      {
+        "text": "Ils rentrèrent chez eux au coucher du soleil, et Tó se sentit fier d'être un enfant de la mer.",
+        "emoji": "🌅"
+      }
+    ]
+  },
+  {
+    "id": "jealous-little-star",
+    "title": "La Petite Étoile Jalouse",
+    "emoji": "⭐",
+    "pages": [
+      {
+        "text": "La petite étoile Nina brillait dans le ciel, mais regardait toujours l'immense Lune avec envie.",
+        "emoji": "⭐"
+      },
+      {
+        "text": "« Tout le monde ne regarde qu'elle, personne ne me remarque », pensait-elle tristement.",
+        "emoji": "😞"
+      },
+      {
+        "text": "Une nuit, la Lune se cacha derrière d'épais nuages sombres.",
+        "emoji": "☁️"
+      },
+      {
+        "text": "Sans la lumière de la Lune, c'est la petite lueur de Nina qui aida un marin perdu à trouver le port.",
+        "emoji": "⛵"
+      },
+      {
+        "text": "Le marin remercia à voix haute la petite étoile qui avait brillé pour lui.",
+        "emoji": "🙏"
+      },
+      {
+        "text": "Nina comprit qu'elle n'avait pas besoin d'être la plus grande pour être importante.",
+        "emoji": "✨"
+      }
+    ]
   }
 ]
