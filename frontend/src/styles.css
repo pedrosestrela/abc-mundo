@@ -3136,3 +3136,106 @@ body {
   animation: badge-pulse 1.4s ease infinite;
 }
 
+
+/* --- Robots: debug mode tappable step (cycle-through-directions) --- */
+.robots-debug-step {
+  border: 2px solid var(--red, #e74c3c);
+  background: #fff5f5;
+  border-radius: 10px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+.robots-debug-step:active {
+  transform: scale(0.95);
+}
+
+/* --- Art: pixel art grid --- */
+.pixel-art-grid {
+  display: grid;
+  gap: 2px;
+  justify-content: center;
+  margin: 12px auto;
+  background: #ddd;
+  padding: 4px;
+  border-radius: 10px;
+  max-width: 100%;
+  width: fit-content;
+}
+.pixel-art-cell {
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  padding: 0;
+}
+.pixel-art-palette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin: 10px auto;
+}
+.pixel-art-swatch {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  cursor: pointer;
+  padding: 0;
+}
+.pixel-art-swatch.active {
+  border-color: var(--green, #2ecc71);
+}
+
+/* --- Art: character builder --- */
+.char-builder-stage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  min-height: 140px;
+  background: #fff;
+  border-radius: 20px;
+  border: 3px dashed var(--green, #2ecc71);
+  margin: 12px auto;
+  max-width: 320px;
+  position: relative;
+}
+.char-builder-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 10px auto;
+}
+.char-builder-part-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 12px;
+  border-radius: 14px;
+  border: 2px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+.char-builder-part-label {
+  font-size: 0.75rem;
+  color: #666;
+}
+.char-builder-saved-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 10px auto;
+}
+.char-builder-saved-item {
+  font-size: 2.4rem;
+  background: #fff;
+  border-radius: 14px;
+  border: 2px solid #eee;
+  padding: 8px 12px;
+}
