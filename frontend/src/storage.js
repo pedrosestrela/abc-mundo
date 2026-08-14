@@ -124,6 +124,44 @@ export function visitCountry(profileName, iso) {
   return all[name];
 }
 
+// --- Atelier da Imaginação ("Art") ---
+// Tracks which creative prompt ids the child has opened/tried, separate from
+// skill XP — there's no right/wrong answer here, just exploration.
+
+const ART_PROMPTS_TRIED_KEY = "abcmundo.artPromptsTried";
+
+function loadArtPromptsTried() {
+  try {
+    const raw = localStorage.getItem(ART_PROMPTS_TRIED_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveArtPromptsTried(all) {
+  try {
+    localStorage.setItem(ART_PROMPTS_TRIED_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getTriedArtPrompts(profileName) {
+  const all = loadArtPromptsTried();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function tryArtPrompt(profileName, promptId) {
+  const name = profileName || "Explorer";
+  const all = loadArtPromptsTried();
+  const tried = new Set(all[name] || []);
+  tried.add(promptId);
+  all[name] = Array.from(tried);
+  saveArtPromptsTried(all);
+  return all[name];
+}
+
 // Session-length tracking, kept in memory only (never persisted). A
 // "session" is just however long this tab has been open — reloading the
 // page starts a fresh session. Used by the gentle session-end nudge.
