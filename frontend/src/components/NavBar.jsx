@@ -27,38 +27,41 @@ export default function NavBar() {
       <NavLink to="/phrases" className="nav-link">
         💬 {t("nav.phrases")}
       </NavLink>
-      <NavLink to="/songs" className="nav-link">
-        🎵 {t("nav.songs")}
+      <NavLink to="/stories" className="nav-link">
+        📚 {t("nav.stories")}
       </NavLink>
       <NavLink to="/game" className="nav-link">
         🎮 {t("nav.game")}
       </NavLink>
-      <NavLink to="/piano" className="nav-link">
-        🎹 {t("nav.piano")}
-      </NavLink>
-      <NavLink to="/stories" className="nav-link">
-        📚 {t("nav.stories")}
-      </NavLink>
       <NavLink to="/math" className="nav-link">
         🔢 {t("nav.math")}
       </NavLink>
-      <NavLink to="/financial" className="nav-link">
-        💰 {t("nav.financial")}
+      <NavLink to="/songs" className="nav-link">
+        🎵 {t("nav.songs")}
       </NavLink>
-      <NavLink to="/parents" className="nav-link">
-        👪 {t("nav.parents")}
-      </NavLink>
-      <NavLink to="/achievements" className="nav-link">
-        🏆 {t("nav.achievements")}
-      </NavLink>
-      <NavLink to="/missions" className="nav-link">
-        🧭 {t("nav.missions")}
+      <NavLink to="/piano" className="nav-link">
+        🎹 {t("nav.piano")}
       </NavLink>
       <NavLink to="/world" className="nav-link">
         🗺️ {t("nav.world")}
       </NavLink>
       <NavLink to="/detective" className="nav-link">
         🕵️ {t("nav.detective")}
+      </NavLink>
+      <NavLink to="/whys" className="nav-link">
+        ❓ {t("nav.whys")}
+      </NavLink>
+      <NavLink to="/financial" className="nav-link">
+        💰 {t("nav.financial")}
+      </NavLink>
+      <NavLink to="/missions" className="nav-link">
+        🧭 {t("nav.missions")}
+      </NavLink>
+      <NavLink to="/achievements" className="nav-link">
+        🏆 {t("nav.achievements")}
+      </NavLink>
+      <NavLink to="/parents" className="nav-link">
+        👪 {t("nav.parents")}
       </NavLink>
     </nav>
   );

@@ -1,0 +1,114 @@
+[
+  {
+    "id": "chuva",
+    "emoji": "🌧️",
+    "question": "Perché piove?",
+    "quickAnswer": "L'acqua del mare, dei fiumi e dei laghi evapora, sale in cielo e forma le nuvole. Quando le nuvole sono troppo piene d'acqua, questa cade come pioggia.",
+    "moreAnswer": "Il Sole riscalda l'acqua e la trasforma in vapore invisibile che sale nell'aria. Più in alto fa più freddo, quindi il vapore si condensa in minuscole goccioline che formano le nuvole. Quando le goccioline si uniscono e diventano troppo pesanti, cadono come pioggia. Poi tutto torna al mare e ai fiumi, e il ciclo ricomincia: si chiama il ciclo dell'acqua.",
+    "experiment": "In una giornata calda, osserva una pozzanghera al sole di mattina e guarda come scompare durante il giorno. Dov'è andata l'acqua?"
+  },
+  {
+    "id": "ceu-azul",
+    "emoji": "🌤️",
+    "question": "Perché il cielo è azzurro?",
+    "quickAnswer": "La luce del Sole ha tutti i colori mescolati insieme. Quando entra nell'atmosfera, l'azzurro si diffonde molto più delle altre colori, per questo vediamo il cielo azzurro.",
+    "moreAnswer": "La luce del Sole sembra bianca, ma in realtà è composta da diversi colori, come un arcobaleno. L'aria è fatta di piccolissime particelle che fanno rimbalzare la luce in tutte le direzioni, un fenomeno chiamato diffusione. La luce blu ha onde più corte e si diffonde molto di più del rosso o del giallo, per questo il cielo appare azzurro di giorno.",
+    "experiment": "Al tramonto, osserva come il cielo diventa arancione e rosso invece che azzurro. Questo succede perché la luce attraversa più atmosfera in quel momento."
+  },
+  {
+    "id": "dormir",
+    "emoji": "😴",
+    "question": "Perché dormiamo?",
+    "quickAnswer": "Dormire permette al corpo e al cervello di riposare, ci aiuta a crescere e a conservare nella memoria tutto ciò che abbiamo imparato durante il giorno.",
+    "moreAnswer": "Mentre dormiamo, il cervello riordina tutto ciò che abbiamo imparato e vissuto, come se sistemasse un cassetto pieno di cose. Il corpo approfitta di questo tempo per riparare i muscoli, produrre ormoni della crescita e rafforzare il sistema immunitario. Senza dormire abbastanza, ci sentiamo stanchi, smemorati e ci ammaliamo più facilmente.",
+    "experiment": "Tieni un diario per una settimana di quante ore dormi e osserva come ti senti nei giorni in cui hai dormito di più o di meno."
+  },
+  {
+    "id": "coracao",
+    "emoji": "❤️",
+    "question": "Perché batte il cuore?",
+    "quickAnswer": "Il cuore batte per pompare il sangue in tutto il corpo, portando ossigeno e nutrimento a ogni parte di te.",
+    "moreAnswer": "Il cuore è un muscolo molto speciale che si contrae e si rilassa senza sosta, come una pompa. Ogni battito spinge sangue ricco di ossigeno verso i polmoni, i muscoli e il cervello. Quando corri o ti spaventi, il tuo cuore batte più velocemente perché il tuo corpo ha bisogno di più ossigeno.",
+    "experiment": "Corri sul posto per un minuto e poi metti la mano sul petto. Senti il cuore battere più velocemente?"
+  },
+  {
+    "id": "aviao",
+    "emoji": "✈️",
+    "question": "Come vola un aereo?",
+    "quickAnswer": "Le ali di un aereo hanno una forma speciale che fa muovere l'aria più velocemente sopra che sotto, creando una forza che spinge l'aereo verso l'alto.",
+    "moreAnswer": "Questa forza si chiama portanza. L'ala è curva sopra e più piatta sotto, quindi l'aria che passa sopra percorre una distanza maggiore e crea meno pressione. La pressione maggiore sotto spinge l'ala verso l'alto nell'aria. I motori forniscono la velocità necessaria perché questo funzioni.",
+    "experiment": "Soffia sopra una striscia di carta tenuta vicino alla bocca e guardala sollevarsi: è lo stesso principio della portanza!"
+  },
+  {
+    "id": "barco",
+    "emoji": "⛵",
+    "question": "Perché galleggia una barca?",
+    "quickAnswer": "Una barca galleggia perché sposta di lato più acqua di quanta ne pesi, e l'acqua la spinge verso l'alto.",
+    "moreAnswer": "Questo si chiama principio di Archimede: qualsiasi oggetto nell'acqua riceve una forza verso l'alto pari al peso dell'acqua che sposta. Una barca ha una forma larga e cava, quindi sposta molta acqua anche se è pesante, e questa forza basta a mantenerla a galla.",
+    "experiment": "Costruisci una piccola barca con la carta stagnola e provala a far galleggiare in una bacinella. Poi accartocciala in una palla: perché adesso affonda?"
+  },
+  {
+    "id": "eletricidade",
+    "emoji": "⚡",
+    "question": "Da dove viene l'elettricità?",
+    "quickAnswer": "L'elettricità viene prodotta in centrali che trasformano altre forme di energia, come il vento, l'acqua o il sole, in energia elettrica.",
+    "moreAnswer": "Nelle centrali elettriche, qualcosa fa girare una turbina molto velocemente: può essere acqua che cade, vento forte o vapore caldo. La turbina è collegata a un generatore che trasforma quel movimento in elettricità. Poi l'elettricità viaggia attraverso i cavi fino alle nostre case.",
+    "experiment": "Cerca un mulino a vento o un pannello solare vicino a te e osserva come sfruttano il vento o il sole."
+  },
+  {
+    "id": "dinossauros",
+    "emoji": "🦕",
+    "question": "Perché sono scomparsi i dinosauri?",
+    "quickAnswer": "Gli scienziati pensano che un enorme asteroide abbia colpito la Terra milioni di anni fa e abbia cambiato il clima così in fretta che i dinosauri non sono riusciti a sopravvivere.",
+    "moreAnswer": "Circa 66 milioni di anni fa, un gigantesco asteroide si è schiantato sulla Terra. L'impatto ha sollevato così tanta polvere e cenere nell'aria da oscurare il cielo per molto tempo, lasciando il pianeta freddo e senza abbastanza luce perché le piante potessero crescere. Senza cibo, la maggior parte dei dinosauri non è sopravvissuta. Solo pochi piccoli animali, come gli antenati degli uccelli, sono riusciti a resistere.",
+    "experiment": null
+  },
+  {
+    "id": "sombra",
+    "emoji": "🌗",
+    "question": "Perché abbiamo l'ombra?",
+    "quickAnswer": "L'ombra appare quando il tuo corpo blocca la luce e non la lascia arrivare al terreno dietro di te.",
+    "moreAnswer": "La luce viaggia sempre in linea retta. Quando un oggetto opaco, come il tuo corpo, si mette sul suo percorso, la luce non riesce ad attraversarlo, e così rimane una zona scura dall'altra parte: l'ombra. Più la fonte di luce è vicina a te, più grande e nitida diventa l'ombra.",
+    "experiment": "In una giornata di sole, osserva la tua ombra al mattino, a mezzogiorno e nel pomeriggio. Nota come cambiano dimensione e direzione."
+  },
+  {
+    "id": "lua",
+    "emoji": "🌙",
+    "question": "Perché la Luna cambia forma?",
+    "quickAnswer": "La Luna in realtà non cambia forma: quello che vediamo sono parti diverse di essa illuminate dal Sole, a seconda della sua posizione rispetto alla Terra.",
+    "moreAnswer": "La Luna non ha luce propria; riflette la luce del Sole. Mentre la Luna gira intorno alla Terra, vediamo parti diverse illuminate: a volte la vediamo tutta intera (Luna piena), a volte solo un piccolo spicchio (Luna nuova o crescente). Questo ciclo completo dura circa 29 giorni.",
+    "experiment": "Osserva la Luna ogni sera per due settimane e disegna la forma che vedi ogni giorno."
+  },
+  {
+    "id": "frio",
+    "emoji": "🥶",
+    "question": "Perché sentiamo freddo?",
+    "quickAnswer": "Sentiamo freddo quando il corpo perde calore più velocemente di quanto riesca a produrne, e la pelle avvisa il cervello.",
+    "moreAnswer": "La nostra pelle ha dei sensori che rilevano la temperatura intorno a noi. Quando fa freddo, il corpo perde calore verso l'aria, e questi sensori inviano un segnale al cervello. Il cervello risponde facendoci tremare, cosa che genera calore attraverso il movimento dei muscoli, e riducendo il sangue vicino alla pelle per conservare il calore all'interno del corpo.",
+    "experiment": "Metti una mano in acqua tiepida e l'altra in acqua fredda allo stesso tempo. Come si sente ciascuna?"
+  },
+  {
+    "id": "peixes",
+    "emoji": "🐟",
+    "question": "Perché i pesci non annegano?",
+    "quickAnswer": "I pesci hanno le branchie, un organo speciale che estrae l'ossigeno direttamente dall'acqua, quindi non hanno bisogno di respirare aria come noi.",
+    "moreAnswer": "Mentre noi respiriamo con i polmoni e abbiamo bisogno di aria, i pesci usano le branchie, che si trovano ai lati della testa. Quando l'acqua passa sopra le branchie, esse estraggono l'ossigeno disciolto nell'acqua e lo fanno entrare nel sangue del pesce. Per questo un pesce fuori dall'acqua non riesce a respirare, proprio come noi non riusciamo a respirare sott'acqua senza aiuto.",
+    "experiment": "Osserva un pesce in un acquario e nota il movimento costante della bocca e delle branchie: è così che respira."
+  },
+  {
+    "id": "arco-iris",
+    "emoji": "🌈",
+    "question": "Perché appare l'arcobaleno?",
+    "quickAnswer": "L'arcobaleno appare quando la luce del Sole attraversa le gocce di pioggia nell'aria e si separa nei vari colori che la compongono.",
+    "moreAnswer": "La luce bianca del Sole è in realtà una miscela di diversi colori. Quando i raggi del sole entrano in una goccia d'acqua, si piegano, si riflettono all'interno della goccia ed escono di nuovo, separandosi in colori diversi, come un piccolo prisma. Per questo l'arcobaleno appare solo quando c'è sole e pioggia allo stesso tempo.",
+    "experiment": "Con le spalle al Sole, usa un tubo da giardino o uno spruzzatore d'acqua per creare un piccolo arcobaleno."
+  },
+  {
+    "id": "formigas",
+    "emoji": "🐜",
+    "question": "Perché le formiche camminano in fila?",
+    "quickAnswer": "Le formiche lasciano una traccia di odore sul percorso verso il cibo, e le altre formiche seguono quell'odore, formando una fila.",
+    "moreAnswer": "Quando una formica trova del cibo, sulla via del ritorno al formicaio lascia sul terreno una sostanza chiamata feromone, con un odore che solo le formiche riescono a percepire. Le altre formiche seguono quell'odore per raggiungere lo stesso cibo, e camminando lasciano anch'esse altro feromone, rinforzando la traccia. Così si forma la fila ordinata.",
+    "experiment": "Se vedi una fila di formiche, osserva con attenzione (senza disturbarle) il percorso che fanno: di solito è sempre lo stesso tragitto."
+  }
+]

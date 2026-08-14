@@ -1,0 +1,114 @@
+[
+  {
+    "id": "chuva",
+    "emoji": "🌧️",
+    "question": "Pourquoi pleut-il ?",
+    "quickAnswer": "L'eau de la mer, des rivières et des lacs s'évapore, monte dans le ciel et forme des nuages. Quand les nuages sont trop pleins d'eau, elle retombe sous forme de pluie.",
+    "moreAnswer": "Le Soleil réchauffe l'eau et la transforme en vapeur invisible qui monte dans l'air. Là-haut, il fait plus froid, alors la vapeur se condense en minuscules gouttelettes qui forment les nuages. Quand les gouttelettes se rejoignent et deviennent trop lourdes, elles retombent en pluie. Ensuite tout retourne à la mer et aux rivières, et le cycle recommence — on l'appelle le cycle de l'eau.",
+    "experiment": "Un jour de chaleur, observe une flaque d'eau au soleil le matin et regarde comment elle disparaît au cours de la journée. Où est passée l'eau ?"
+  },
+  {
+    "id": "ceu-azul",
+    "emoji": "🌤️",
+    "question": "Pourquoi le ciel est-il bleu ?",
+    "quickAnswer": "La lumière du Soleil contient toutes les couleurs mélangées. En entrant dans l'atmosphère, le bleu se disperse beaucoup plus que les autres couleurs, c'est pourquoi le ciel nous paraît bleu.",
+    "moreAnswer": "La lumière du Soleil paraît blanche, mais elle est en fait composée de plusieurs couleurs, comme un arc-en-ciel. L'air est fait de minuscules particules qui font rebondir la lumière dans toutes les directions, un phénomène appelé diffusion. La lumière bleue a des ondes plus courtes et se disperse beaucoup plus que le rouge ou le jaune, c'est pourquoi le ciel paraît bleu pendant la journée.",
+    "experiment": "Au coucher du soleil, observe comment le ciel devient orange et rouge au lieu de bleu. Cela arrive parce que la lumière traverse plus d'atmosphère à ce moment-là."
+  },
+  {
+    "id": "dormir",
+    "emoji": "😴",
+    "question": "Pourquoi dormons-nous ?",
+    "quickAnswer": "Dormir permet au corps et au cerveau de se reposer, nous aide à grandir et à garder en mémoire tout ce que nous avons appris pendant la journée.",
+    "moreAnswer": "Pendant que nous dormons, le cerveau range tout ce que nous avons appris et vécu, comme s'il rangeait un tiroir plein de choses. Le corps profite de ce temps pour réparer les muscles, produire des hormones de croissance et renforcer le système immunitaire. Sans assez de sommeil, on se sent fatigué, on oublie plus facilement et on tombe plus souvent malade.",
+    "experiment": "Note pendant une semaine combien d'heures tu dors et observe comment tu te sens les jours où tu as plus ou moins dormi."
+  },
+  {
+    "id": "coracao",
+    "emoji": "❤️",
+    "question": "Pourquoi le cœur bat-il ?",
+    "quickAnswer": "Le cœur bat pour pomper le sang dans tout le corps, apportant de l'oxygène et de la nourriture à chaque partie de toi.",
+    "moreAnswer": "Le cœur est un muscle très spécial qui se contracte et se relâche sans arrêt, comme une pompe. Chaque battement pousse du sang riche en oxygène vers les poumons, les muscles et le cerveau. Quand tu cours ou que tu as peur, ton cœur bat plus vite parce que ton corps a besoin de plus d'oxygène.",
+    "experiment": "Cours sur place pendant une minute puis pose ta main sur ta poitrine. Sens-tu ton cœur battre plus vite ?"
+  },
+  {
+    "id": "aviao",
+    "emoji": "✈️",
+    "question": "Comment vole un avion ?",
+    "quickAnswer": "Les ailes d'un avion ont une forme spéciale qui fait passer l'air plus vite au-dessus qu'en dessous, ce qui crée une force qui pousse l'avion vers le haut.",
+    "moreAnswer": "Cette force s'appelle la portance. L'aile est courbée sur le dessus et plus plate en dessous, donc l'air qui passe au-dessus parcourt une distance plus longue et crée moins de pression. La pression plus forte en dessous pousse l'aile vers le haut dans l'air. Les moteurs fournissent la vitesse nécessaire pour que cela fonctionne.",
+    "experiment": "Souffle au-dessus d'une bande de papier tenue près de ta bouche et regarde-la se soulever — c'est le même principe de portance !"
+  },
+  {
+    "id": "barco",
+    "emoji": "⛵",
+    "question": "Pourquoi un bateau flotte-t-il ?",
+    "quickAnswer": "Un bateau flotte parce qu'il repousse sur les côtés plus d'eau qu'il ne pèse, et l'eau le repousse vers le haut.",
+    "moreAnswer": "On appelle cela le principe d'Archimède : tout objet dans l'eau subit une force vers le haut égale au poids de l'eau qu'il déplace. Un bateau a une forme large et creuse, donc il déplace beaucoup d'eau même s'il est lourd, et cette force suffit à le maintenir à la surface.",
+    "experiment": "Fabrique un petit bateau en papier aluminium et fais-le flotter dans une bassine. Puis écrase-le en boule — pourquoi coule-t-il maintenant ?"
+  },
+  {
+    "id": "eletricidade",
+    "emoji": "⚡",
+    "question": "D'où vient l'électricité ?",
+    "quickAnswer": "L'électricité est produite dans des centrales qui transforment d'autres formes d'énergie, comme le vent, l'eau ou le soleil, en énergie électrique.",
+    "moreAnswer": "Dans les centrales électriques, quelque chose fait tourner une turbine très vite — cela peut être de l'eau qui tombe, du vent fort ou de la vapeur chaude. La turbine est reliée à un générateur qui transforme ce mouvement en électricité. Ensuite l'électricité voyage par des câbles jusqu'à nos maisons.",
+    "experiment": "Cherche une éolienne ou un panneau solaire près de chez toi et observe comment ils captent le vent ou le soleil."
+  },
+  {
+    "id": "dinossauros",
+    "emoji": "🦕",
+    "question": "Pourquoi les dinosaures ont-ils disparu ?",
+    "quickAnswer": "Les scientifiques pensent qu'un énorme astéroïde a percuté la Terre il y a des millions d'années et a changé le climat si vite que les dinosaures n'ont pas pu survivre.",
+    "moreAnswer": "Il y a environ 66 millions d'années, un astéroïde géant s'est écrasé sur la Terre. L'impact a projeté tant de poussière et de cendres dans l'air que le ciel est resté sombre longtemps, rendant la planète froide et privant les plantes de lumière pour pousser. Sans nourriture, la plupart des dinosaures n'ont pas survécu. Seuls quelques petits animaux, comme les ancêtres des oiseaux, ont réussi à s'en sortir.",
+    "experiment": null
+  },
+  {
+    "id": "sombra",
+    "emoji": "🌗",
+    "question": "Pourquoi avons-nous une ombre ?",
+    "quickAnswer": "Une ombre apparaît quand ton corps bloque la lumière et l'empêche d'atteindre le sol derrière toi.",
+    "moreAnswer": "La lumière voyage toujours en ligne droite. Quand un objet opaque, comme ton corps, se met sur son chemin, elle ne peut pas le traverser, et il reste alors une zone sombre de l'autre côté — l'ombre. Plus la source de lumière est proche de toi, plus l'ombre devient grande et nette.",
+    "experiment": "Un jour ensoleillé, regarde ton ombre le matin, à midi et l'après-midi. Observe comment elle change de taille et de direction."
+  },
+  {
+    "id": "lua",
+    "emoji": "🌙",
+    "question": "Pourquoi la Lune change-t-elle de forme ?",
+    "quickAnswer": "La Lune ne change pas vraiment de forme — ce que nous voyons, ce sont des parties différentes d'elle éclairées par le Soleil, selon sa position par rapport à la Terre.",
+    "moreAnswer": "La Lune n'a pas de lumière propre ; elle reflète la lumière du Soleil. Pendant que la Lune tourne autour de la Terre, nous voyons différentes parties éclairées : parfois nous la voyons en entier (pleine lune), parfois juste un petit croissant (nouvelle lune ou croissant). Ce cycle complet dure environ 29 jours.",
+    "experiment": "Observe la Lune chaque soir pendant deux semaines et dessine la forme que tu vois chaque jour."
+  },
+  {
+    "id": "frio",
+    "emoji": "🥶",
+    "question": "Pourquoi avons-nous froid ?",
+    "quickAnswer": "Nous avons froid quand le corps perd de la chaleur plus vite qu'il n'en produit, et la peau en avertit le cerveau.",
+    "moreAnswer": "Notre peau a des capteurs qui détectent la température autour de nous. Quand il fait froid, le corps perd de la chaleur dans l'air, et ces capteurs envoient un signal au cerveau. Le cerveau répond en nous faisant trembler, ce qui produit de la chaleur grâce au mouvement des muscles, et en réduisant le sang près de la peau pour garder la chaleur à l'intérieur du corps.",
+    "experiment": "Mets une main dans de l'eau tiède et l'autre dans de l'eau froide en même temps. Comment se sent chacune d'elles ?"
+  },
+  {
+    "id": "peixes",
+    "emoji": "🐟",
+    "question": "Pourquoi les poissons ne se noient-ils pas ?",
+    "quickAnswer": "Les poissons ont des branchies, un organe spécial qui extrait l'oxygène directement de l'eau, ils n'ont donc pas besoin de respirer de l'air comme nous.",
+    "moreAnswer": "Alors que nous respirons avec des poumons et avons besoin d'air, les poissons utilisent des branchies, situées sur les côtés de la tête. Quand l'eau passe sur les branchies, elles récupèrent l'oxygène dissous dans l'eau et le font entrer dans le sang du poisson. C'est pourquoi un poisson hors de l'eau ne peut pas respirer, tout comme nous ne pouvons pas respirer sous l'eau sans aide.",
+    "experiment": "Observe un poisson dans un aquarium et remarque le mouvement constant de sa bouche et de ses branchies — c'est ainsi qu'il respire."
+  },
+  {
+    "id": "arco-iris",
+    "emoji": "🌈",
+    "question": "Pourquoi voit-on un arc-en-ciel ?",
+    "quickAnswer": "Un arc-en-ciel apparaît quand la lumière du Soleil traverse des gouttes de pluie dans l'air et se sépare en différentes couleurs qui la composent.",
+    "moreAnswer": "La lumière blanche du Soleil est en fait un mélange de plusieurs couleurs. Quand les rayons du soleil entrent dans une goutte d'eau, ils se courbent, se réfléchissent à l'intérieur de la goutte et ressortent, se séparant en différentes couleurs, comme un petit prisme. C'est pourquoi les arcs-en-ciel n'apparaissent que quand il y a du soleil et de la pluie en même temps.",
+    "experiment": "Dos au Soleil, utilise un tuyau d'arrosage ou un vaporisateur d'eau pour créer un petit arc-en-ciel."
+  },
+  {
+    "id": "formigas",
+    "emoji": "🐜",
+    "question": "Pourquoi les fourmis marchent-elles en file ?",
+    "quickAnswer": "Les fourmis laissent une piste odorante sur le chemin vers la nourriture, et les autres fourmis suivent cette odeur, formant une file.",
+    "moreAnswer": "Quand une fourmi trouve de la nourriture, sur le chemin du retour vers la fourmilière, elle laisse au sol une substance appelée phéromone, dont l'odeur n'est détectable que par les fourmis. Les autres fourmis suivent cette odeur pour atteindre la même nourriture, et en marchant elles laissent elles aussi plus de phéromone, renforçant la piste. C'est ainsi que se forme la file organisée.",
+    "experiment": "Si tu vois une file de fourmis, observe attentivement (sans les déranger) le chemin qu'elles empruntent — c'est souvent toujours le même trajet."
+  }
+]

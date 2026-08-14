@@ -81,6 +81,14 @@ import financialZh from "./financial.zh.json";
 import financialEs from "./financial.es.json";
 import financialIt from "./financial.it.json";
 
+import whysPt from "./whys.pt.json";
+import whysEn from "./whys.en.json";
+import whysDe from "./whys.de.json";
+import whysFr from "./whys.fr.json";
+import whysZh from "./whys.zh.json";
+import whysEs from "./whys.es.json";
+import whysIt from "./whys.it.json";
+
 export const SUPPORTED_LANGUAGES = [
   { code: "pt", label: "Português", flag: "🇵🇹" },
   { code: "en", label: "English", flag: "🇬🇧" },
@@ -101,6 +109,7 @@ const FINANCIAL = { pt: financialPt, en: financialEn, de: financialDe, fr: finan
 const PHONICS = { pt: phonicsPt, en: phonicsEn, de: phonicsDe, fr: phonicsFr, zh: phonicsZh, es: phonicsEs, it: phonicsIt };
 const MISSIONS = { pt: missionsPt, en: missionsEn, de: missionsDe, fr: missionsFr, zh: missionsZh, es: missionsEs, it: missionsIt };
 const DETECTIVE = { pt: detectivePt, en: detectiveEn, de: detectiveDe, fr: detectiveFr, zh: detectiveZh, es: detectiveEs, it: detectiveIt };
+const WHYS = { pt: whysPt, en: whysEn, de: whysDe, fr: whysFr, zh: whysZh, es: whysEs, it: whysIt };
 
 // Normalizes zh's different shape ({hanzi,...}) to the same shape used by
 // the Latin-alphabet languages ({letter, lower, upper, exampleWord, emoji}).
@@ -168,4 +177,8 @@ export function getCountries(langCode) {
     name: c.name[langCode] || c.name.en,
     fact: c.fact[langCode] || c.fact.en,
   }));
+}
+
+export function getWhys(langCode) {
+  return WHYS[langCode] || [];
 }
