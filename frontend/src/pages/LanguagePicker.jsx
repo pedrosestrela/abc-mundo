@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import i18n from "../i18n/index.js";
-import { SUPPORTED_LANGUAGES } from "../content/index.js";
+import { SUPPORTED_LANGUAGES } from "../content/languages.js";
 import { getLangPair, setLangPair, pingProgress } from "../storage.js";
 import { getProfile } from "../storage.js";
 
