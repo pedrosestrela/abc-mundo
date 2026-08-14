@@ -1,8 +1,12 @@
-import React, { useMemo, useState } from "react";
+import React, { Suspense, lazy, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { getCountries } from "../content/index.js";
 import { getLangPair, getProfile, getVisitedCountries, visitCountry, getDifficultyTier, pingProgress } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
+
+// Lazy-loaded: pulls in three.js/globe.gl (~650KB gzipped), only needed
+// when the child actually opens the 3D Globe tab.
+const Globe3D = lazy(() => import("../components/Globe3D.jsx"));
 
 const CONTINENTS = ["europe", "asia", "africa", "north-america", "south-america", "oceania"];
 
@@ -82,6 +86,9 @@ export default function World() {
       <h1>{t("modules.worldTitle")} 🗺️</h1>
 
       <div className="phonics-tabs">
+        <button type="button" className={"phonics-tab" + (tab === "globe" ? " selected" : "")} onClick={() => setTab("globe")}>
+          🌐 {t("modules.worldGlobe")}
+        </button>
         <button type="button" className={"phonics-tab" + (tab === "explore" ? " selected" : "")} onClick={() => { setTab("explore"); setQuizMode(null); }}>
           🔎 {t("modules.worldExplore")}
         </button>
@@ -90,11 +97,34 @@ export default function World() {
         </button>
       </div>
 
+      <p className="page-intro">
+        {t("modules.worldPassport")}: {visited.length}/{countries.length}
+      </p>
+
+      {tab === "globe" && (
+        <>
+          <Suspense fallback={<div className="globe-3d-container globe-3d-loading">🌐</div>}>
+            <Globe3D countries={countries} visited={visited} onSelect={openCountry} />
+          </Suspense>
+          {selected && (
+            <div className="mission-card country-card">
+              <div className="mission-emoji">{selected.flag}</div>
+              <h2>{selected.name}</h2>
+              <div className="country-facts-row">
+                <span>🏛️ {selected.capital}</span>
+                <span>💰 {selected.currency}</span>
+              </div>
+              <p className="mission-text">
+                {selected.fact}
+                <SpeakButton text={selected.fact} langCode={pair.mother} />
+              </p>
+            </div>
+          )}
+        </>
+      )}
+
       {tab === "explore" && (
         <>
-          <p className="page-intro">
-            {t("modules.worldPassport")}: {visited.length}/{countries.length}
-          </p>
           <div className="world-grid">
             {countries.map((c) => (
               <button

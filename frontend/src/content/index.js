@@ -150,6 +150,8 @@ export function getCountries(langCode) {
     capital: c.capital,
     continent: c.continent,
     currency: c.currency,
+    lat: c.lat,
+    lng: c.lng,
     name: c.name[langCode] || c.name.en,
     fact: c.fact[langCode] || c.fact.en,
   }));

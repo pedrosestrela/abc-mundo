@@ -1,7 +1,19 @@
 [
   {
-    "iso": "PT", "flag": "🇵🇹", "capital": "Lisboa", "continent": "europe", "currency": "EUR (€)",
-    "name": { "pt": "Portugal", "en": "Portugal", "de": "Portugal", "fr": "Portugal", "es": "Portugal", "it": "Portogallo", "zh": "葡萄牙" },
+    "iso": "PT",
+    "flag": "🇵🇹",
+    "capital": "Lisboa",
+    "continent": "europe",
+    "currency": "EUR (€)",
+    "name": {
+      "pt": "Portugal",
+      "en": "Portugal",
+      "de": "Portugal",
+      "fr": "Portugal",
+      "es": "Portugal",
+      "it": "Portogallo",
+      "zh": "葡萄牙"
+    },
     "fact": {
       "pt": "Portugal foi o primeiro país a explorar os oceanos à volta de África até à Índia.",
       "en": "Portugal was the first country to sail around Africa all the way to India.",
@@ -10,11 +22,25 @@
       "es": "Portugal fue el primer país en navegar alrededor de África hasta la India.",
       "it": "Il Portogallo fu il primo paese a navigare intorno all'Africa fino in India.",
       "zh": "葡萄牙是第一个绕过非洲航行到印度的国家。"
-    }
+    },
+    "lat": 38.72,
+    "lng": -9.14
   },
   {
-    "iso": "ES", "flag": "🇪🇸", "capital": "Madrid", "continent": "europe", "currency": "EUR (€)",
-    "name": { "pt": "Espanha", "en": "Spain", "de": "Spanien", "fr": "Espagne", "es": "España", "it": "Spagna", "zh": "西班牙" },
+    "iso": "ES",
+    "flag": "🇪🇸",
+    "capital": "Madrid",
+    "continent": "europe",
+    "currency": "EUR (€)",
+    "name": {
+      "pt": "Espanha",
+      "en": "Spain",
+      "de": "Spanien",
+      "fr": "Espagne",
+      "es": "España",
+      "it": "Spagna",
+      "zh": "西班牙"
+    },
     "fact": {
       "pt": "Em Espanha há uma festa onde as pessoas atiram tomates uns aos outros!",
       "en": "In Spain there's a festival where people throw tomatoes at each other!",
@@ -23,11 +49,25 @@
       "es": "En España hay una fiesta donde la gente se lanza tomates.",
       "it": "In Spagna c'è una festa in cui la gente si lancia pomodori!",
       "zh": "在西班牙有一个节日,人们互相扔西红柿!"
-    }
+    },
+    "lat": 40.42,
+    "lng": -3.7
   },
   {
-    "iso": "FR", "flag": "🇫🇷", "capital": "Paris", "continent": "europe", "currency": "EUR (€)",
-    "name": { "pt": "França", "en": "France", "de": "Frankreich", "fr": "France", "es": "Francia", "it": "Francia", "zh": "法国" },
+    "iso": "FR",
+    "flag": "🇫🇷",
+    "capital": "Paris",
+    "continent": "europe",
+    "currency": "EUR (€)",
+    "name": {
+      "pt": "França",
+      "en": "France",
+      "de": "Frankreich",
+      "fr": "France",
+      "es": "Francia",
+      "it": "Francia",
+      "zh": "法国"
+    },
     "fact": {
       "pt": "A Torre Eiffel em Paris fica um pouco mais alta no verão por causa do calor.",
       "en": "The Eiffel Tower in Paris gets a little taller in summer because of the heat.",
@@ -36,11 +76,25 @@
       "es": "La torre Eiffel en París se vuelve un poco más alta en verano por el calor.",
       "it": "La Torre Eiffel a Parigi diventa un po' più alta d'estate per il calore.",
       "zh": "巴黎的埃菲尔铁塔在夏天因为炎热会变得稍微高一点。"
-    }
+    },
+    "lat": 48.86,
+    "lng": 2.35
   },
   {
-    "iso": "DE", "flag": "🇩🇪", "capital": "Berlim", "continent": "europe", "currency": "EUR (€)",
-    "name": { "pt": "Alemanha", "en": "Germany", "de": "Deutschland", "fr": "Allemagne", "es": "Alemania", "it": "Germania", "zh": "德国" },
+    "iso": "DE",
+    "flag": "🇩🇪",
+    "capital": "Berlim",
+    "continent": "europe",
+    "currency": "EUR (€)",
+    "name": {
+      "pt": "Alemanha",
+      "en": "Germany",
+      "de": "Deutschland",
+      "fr": "Allemagne",
+      "es": "Alemania",
+      "it": "Germania",
+      "zh": "德国"
+    },
     "fact": {
       "pt": "Na Alemanha há um castelo tão bonito que inspirou o castelo da Cinderela.",
       "en": "Germany has a castle so beautiful it inspired Cinderella's castle.",
@@ -49,11 +103,25 @@
       "es": "En Alemania hay un castillo tan bonito que inspiró el castillo de Cenicienta.",
       "it": "In Germania c'è un castello così bello da aver ispirato il castello di Cenerentola.",
       "zh": "德国有一座非常美丽的城堡,启发了灰姑娘城堡的设计。"
-    }
+    },
+    "lat": 52.52,
+    "lng": 13.4
   },
   {
-    "iso": "IT", "flag": "🇮🇹", "capital": "Roma", "continent": "europe", "currency": "EUR (€)",
-    "name": { "pt": "Itália", "en": "Italy", "de": "Italien", "fr": "Italie", "es": "Italia", "it": "Italia", "zh": "意大利" },
+    "iso": "IT",
+    "flag": "🇮🇹",
+    "capital": "Roma",
+    "continent": "europe",
+    "currency": "EUR (€)",
+    "name": {
+      "pt": "Itália",
+      "en": "Italy",
+      "de": "Italien",
+      "fr": "Italie",
+      "es": "Italia",
+      "it": "Italia",
+      "zh": "意大利"
+    },
     "fact": {
       "pt": "A Torre de Pisa em Itália é inclinada há mais de 800 anos!",
       "en": "The Leaning Tower of Pisa in Italy has been tilted for over 800 years!",
@@ -62,11 +130,25 @@
       "es": "La Torre de Pisa en Italia está inclinada desde hace más de 800 años.",
       "it": "La Torre di Pisa in Italia è inclinata da oltre 800 anni!",
       "zh": "意大利的比萨斜塔已经倾斜了800多年!"
-    }
+    },
+    "lat": 41.9,
+    "lng": 12.5
   },
   {
-    "iso": "GB", "flag": "🇬🇧", "capital": "Londres", "continent": "europe", "currency": "GBP (£)",
-    "name": { "pt": "Reino Unido", "en": "United Kingdom", "de": "Vereinigtes Königreich", "fr": "Royaume-Uni", "es": "Reino Unido", "it": "Regno Unito", "zh": "英国" },
+    "iso": "GB",
+    "flag": "🇬🇧",
+    "capital": "Londres",
+    "continent": "europe",
+    "currency": "GBP (£)",
+    "name": {
+      "pt": "Reino Unido",
+      "en": "United Kingdom",
+      "de": "Vereinigtes Königreich",
+      "fr": "Royaume-Uni",
+      "es": "Reino Unido",
+      "it": "Regno Unito",
+      "zh": "英国"
+    },
     "fact": {
       "pt": "Em Londres, o relógio famoso chama-se Big Ben, mas esse é o nome do sino, não da torre.",
       "en": "In London, the famous clock is called Big Ben — but that's actually the name of the bell, not the tower.",
@@ -75,11 +157,25 @@
       "es": "En Londres, el reloj famoso se llama Big Ben, pero ese es el nombre de la campana, no de la torre.",
       "it": "A Londra, il famoso orologio si chiama Big Ben, ma è il nome della campana, non della torre.",
       "zh": "伦敦著名的大本钟其实是钟的名字,不是塔的名字。"
-    }
+    },
+    "lat": 51.51,
+    "lng": -0.13
   },
   {
-    "iso": "US", "flag": "🇺🇸", "capital": "Washington D.C.", "continent": "north-america", "currency": "USD ($)",
-    "name": { "pt": "Estados Unidos", "en": "United States", "de": "Vereinigte Staaten", "fr": "États-Unis", "es": "Estados Unidos", "it": "Stati Uniti", "zh": "美国" },
+    "iso": "US",
+    "flag": "🇺🇸",
+    "capital": "Washington D.C.",
+    "continent": "north-america",
+    "currency": "USD ($)",
+    "name": {
+      "pt": "Estados Unidos",
+      "en": "United States",
+      "de": "Vereinigte Staaten",
+      "fr": "États-Unis",
+      "es": "Estados Unidos",
+      "it": "Stati Uniti",
+      "zh": "美国"
+    },
     "fact": {
       "pt": "O Grand Canyon nos Estados Unidos é tão grande que se vê do espaço!",
       "en": "The Grand Canyon in the United States is so big you can see it from space!",
@@ -88,11 +184,25 @@
       "es": "El Gran Cañón en Estados Unidos es tan grande que se ve desde el espacio.",
       "it": "Il Grand Canyon negli Stati Uniti è così grande che si vede dallo spazio!",
       "zh": "美国的大峡谷非常大,从太空都能看到!"
-    }
+    },
+    "lat": 38.9,
+    "lng": -77.04
   },
   {
-    "iso": "BR", "flag": "🇧🇷", "capital": "Brasília", "continent": "south-america", "currency": "BRL (R$)",
-    "name": { "pt": "Brasil", "en": "Brazil", "de": "Brasilien", "fr": "Brésil", "es": "Brasil", "it": "Brasile", "zh": "巴西" },
+    "iso": "BR",
+    "flag": "🇧🇷",
+    "capital": "Brasília",
+    "continent": "south-america",
+    "currency": "BRL (R$)",
+    "name": {
+      "pt": "Brasil",
+      "en": "Brazil",
+      "de": "Brasilien",
+      "fr": "Brésil",
+      "es": "Brasil",
+      "it": "Brasile",
+      "zh": "巴西"
+    },
     "fact": {
       "pt": "A floresta Amazónia no Brasil produz cerca de 20% do oxigénio da Terra.",
       "en": "The Amazon rainforest in Brazil produces about 20% of Earth's oxygen.",
@@ -101,11 +211,25 @@
       "es": "La selva amazónica en Brasil produce cerca del 20% del oxígeno de la Tierra.",
       "it": "La foresta amazzonica in Brasile produce circa il 20% dell'ossigeno della Terra.",
       "zh": "巴西的亚马逊雨林产生了地球约20%的氧气。"
-    }
+    },
+    "lat": -15.79,
+    "lng": -47.88
   },
   {
-    "iso": "CN", "flag": "🇨🇳", "capital": "Pequim", "continent": "asia", "currency": "CNY (¥)",
-    "name": { "pt": "China", "en": "China", "de": "China", "fr": "Chine", "es": "China", "it": "Cina", "zh": "中国" },
+    "iso": "CN",
+    "flag": "🇨🇳",
+    "capital": "Pequim",
+    "continent": "asia",
+    "currency": "CNY (¥)",
+    "name": {
+      "pt": "China",
+      "en": "China",
+      "de": "China",
+      "fr": "Chine",
+      "es": "China",
+      "it": "Cina",
+      "zh": "中国"
+    },
     "fact": {
       "pt": "A Grande Muralha da China tem milhares de quilómetros de comprimento.",
       "en": "The Great Wall of China is thousands of kilometers long.",
@@ -114,11 +238,25 @@
       "es": "La Gran Muralla China tiene miles de kilómetros de longitud.",
       "it": "La Grande Muraglia Cinese è lunga migliaia di chilometri.",
       "zh": "中国的长城长达数千公里。"
-    }
+    },
+    "lat": 39.9,
+    "lng": 116.4
   },
   {
-    "iso": "JP", "flag": "🇯🇵", "capital": "Tóquio", "continent": "asia", "currency": "JPY (¥)",
-    "name": { "pt": "Japão", "en": "Japan", "de": "Japan", "fr": "Japon", "es": "Japón", "it": "Giappone", "zh": "日本" },
+    "iso": "JP",
+    "flag": "🇯🇵",
+    "capital": "Tóquio",
+    "continent": "asia",
+    "currency": "JPY (¥)",
+    "name": {
+      "pt": "Japão",
+      "en": "Japan",
+      "de": "Japan",
+      "fr": "Japon",
+      "es": "Japón",
+      "it": "Giappone",
+      "zh": "日本"
+    },
     "fact": {
       "pt": "No Japão há comboios tão rápidos que se chamam \"comboios-bala\".",
       "en": "In Japan there are trains so fast they're called \"bullet trains\".",
@@ -127,11 +265,25 @@
       "es": "En Japón hay trenes tan rápidos que se llaman \"trenes bala\".",
       "it": "In Giappone ci sono treni così veloci che si chiamano \"treni proiettile\".",
       "zh": "在日本有一种非常快的火车,叫做\"子弹头列车\"。"
-    }
+    },
+    "lat": 35.68,
+    "lng": 139.69
   },
   {
-    "iso": "IN", "flag": "🇮🇳", "capital": "Nova Deli", "continent": "asia", "currency": "INR (₹)",
-    "name": { "pt": "Índia", "en": "India", "de": "Indien", "fr": "Inde", "es": "India", "it": "India", "zh": "印度" },
+    "iso": "IN",
+    "flag": "🇮🇳",
+    "capital": "Nova Deli",
+    "continent": "asia",
+    "currency": "INR (₹)",
+    "name": {
+      "pt": "Índia",
+      "en": "India",
+      "de": "Indien",
+      "fr": "Inde",
+      "es": "India",
+      "it": "India",
+      "zh": "印度"
+    },
     "fact": {
       "pt": "O Taj Mahal na Índia foi construído por um imperador em memória da sua esposa.",
       "en": "The Taj Mahal in India was built by an emperor in memory of his wife.",
@@ -140,11 +292,25 @@
       "es": "El Taj Mahal en la India fue construido por un emperador en memoria de su esposa.",
       "it": "Il Taj Mahal in India fu costruito da un imperatore in memoria di sua moglie.",
       "zh": "印度的泰姬陵是一位皇帝为纪念他的妻子而建造的。"
-    }
+    },
+    "lat": 28.61,
+    "lng": 77.21
   },
   {
-    "iso": "EG", "flag": "🇪🇬", "capital": "Cairo", "continent": "africa", "currency": "EGP (£E)",
-    "name": { "pt": "Egito", "en": "Egypt", "de": "Ägypten", "fr": "Égypte", "es": "Egipto", "it": "Egitto", "zh": "埃及" },
+    "iso": "EG",
+    "flag": "🇪🇬",
+    "capital": "Cairo",
+    "continent": "africa",
+    "currency": "EGP (£E)",
+    "name": {
+      "pt": "Egito",
+      "en": "Egypt",
+      "de": "Ägypten",
+      "fr": "Égypte",
+      "es": "Egipto",
+      "it": "Egitto",
+      "zh": "埃及"
+    },
     "fact": {
       "pt": "As pirâmides do Egito têm mais de 4000 anos.",
       "en": "The pyramids of Egypt are more than 4,000 years old.",
@@ -153,11 +319,25 @@
       "es": "Las pirámides de Egipto tienen más de 4000 años.",
       "it": "Le piramidi d'Egitto hanno più di 4000 anni.",
       "zh": "埃及的金字塔已有4000多年的历史。"
-    }
+    },
+    "lat": 30.04,
+    "lng": 31.24
   },
   {
-    "iso": "ZA", "flag": "🇿🇦", "capital": "Pretória", "continent": "africa", "currency": "ZAR (R)",
-    "name": { "pt": "África do Sul", "en": "South Africa", "de": "Südafrika", "fr": "Afrique du Sud", "es": "Sudáfrica", "it": "Sudafrica", "zh": "南非" },
+    "iso": "ZA",
+    "flag": "🇿🇦",
+    "capital": "Pretória",
+    "continent": "africa",
+    "currency": "ZAR (R)",
+    "name": {
+      "pt": "África do Sul",
+      "en": "South Africa",
+      "de": "Südafrika",
+      "fr": "Afrique du Sud",
+      "es": "Sudáfrica",
+      "it": "Sudafrica",
+      "zh": "南非"
+    },
     "fact": {
       "pt": "A África do Sul tem três capitais diferentes!",
       "en": "South Africa has three different capital cities!",
@@ -166,11 +346,25 @@
       "es": "Sudáfrica tiene tres capitales diferentes.",
       "it": "Il Sudafrica ha tre capitali diverse!",
       "zh": "南非有三个不同的首都!"
-    }
+    },
+    "lat": -25.75,
+    "lng": 28.19
   },
   {
-    "iso": "AU", "flag": "🇦🇺", "capital": "Camberra", "continent": "oceania", "currency": "AUD ($)",
-    "name": { "pt": "Austrália", "en": "Australia", "de": "Australien", "fr": "Australie", "es": "Australia", "it": "Australia", "zh": "澳大利亚" },
+    "iso": "AU",
+    "flag": "🇦🇺",
+    "capital": "Camberra",
+    "continent": "oceania",
+    "currency": "AUD ($)",
+    "name": {
+      "pt": "Austrália",
+      "en": "Australia",
+      "de": "Australien",
+      "fr": "Australie",
+      "es": "Australia",
+      "it": "Australia",
+      "zh": "澳大利亚"
+    },
     "fact": {
       "pt": "Na Austrália vivem cangurus, coalas e outros animais que não existem em mais lado nenhum.",
       "en": "Australia is home to kangaroos, koalas, and other animals that live nowhere else.",
@@ -179,11 +373,25 @@
       "es": "En Australia viven canguros, koalas y otros animales que no existen en ningún otro lugar.",
       "it": "In Australia vivono canguri, koala e altri animali che non esistono altrove.",
       "zh": "澳大利亚生活着袋鼠、考拉和其他地方没有的动物。"
-    }
+    },
+    "lat": -35.28,
+    "lng": 149.13
   },
   {
-    "iso": "CA", "flag": "🇨🇦", "capital": "Otava", "continent": "north-america", "currency": "CAD ($)",
-    "name": { "pt": "Canadá", "en": "Canada", "de": "Kanada", "fr": "Canada", "es": "Canadá", "it": "Canada", "zh": "加拿大" },
+    "iso": "CA",
+    "flag": "🇨🇦",
+    "capital": "Otava",
+    "continent": "north-america",
+    "currency": "CAD ($)",
+    "name": {
+      "pt": "Canadá",
+      "en": "Canada",
+      "de": "Kanada",
+      "fr": "Canada",
+      "es": "Canadá",
+      "it": "Canada",
+      "zh": "加拿大"
+    },
     "fact": {
       "pt": "O Canadá tem mais lagos do que qualquer outro país do mundo.",
       "en": "Canada has more lakes than any other country in the world.",
@@ -192,11 +400,25 @@
       "es": "Canadá tiene más lagos que cualquier otro país del mundo.",
       "it": "Il Canada ha più laghi di qualsiasi altro paese al mondo.",
       "zh": "加拿大的湖泊数量比世界上任何其他国家都多。"
-    }
+    },
+    "lat": 45.42,
+    "lng": -75.7
   },
   {
-    "iso": "MX", "flag": "🇲🇽", "capital": "Cidade do México", "continent": "north-america", "currency": "MXN ($)",
-    "name": { "pt": "México", "en": "Mexico", "de": "Mexiko", "fr": "Mexique", "es": "México", "it": "Messico", "zh": "墨西哥" },
+    "iso": "MX",
+    "flag": "🇲🇽",
+    "capital": "Cidade do México",
+    "continent": "north-america",
+    "currency": "MXN ($)",
+    "name": {
+      "pt": "México",
+      "en": "Mexico",
+      "de": "Mexiko",
+      "fr": "Mexique",
+      "es": "México",
+      "it": "Messico",
+      "zh": "墨西哥"
+    },
     "fact": {
       "pt": "O chocolate foi descoberto pelos povos antigos do México.",
       "en": "Chocolate was first discovered by ancient peoples in Mexico.",
@@ -205,11 +427,25 @@
       "es": "El chocolate fue descubierto por los antiguos pueblos de México.",
       "it": "Il cioccolato fu scoperto dagli antichi popoli del Messico.",
       "zh": "巧克力最早是由墨西哥的古代民族发现的。"
-    }
+    },
+    "lat": 19.43,
+    "lng": -99.13
   },
   {
-    "iso": "KR", "flag": "🇰🇷", "capital": "Seul", "continent": "asia", "currency": "KRW (₩)",
-    "name": { "pt": "Coreia do Sul", "en": "South Korea", "de": "Südkorea", "fr": "Corée du Sud", "es": "Corea del Sur", "it": "Corea del Sud", "zh": "韩国" },
+    "iso": "KR",
+    "flag": "🇰🇷",
+    "capital": "Seul",
+    "continent": "asia",
+    "currency": "KRW (₩)",
+    "name": {
+      "pt": "Coreia do Sul",
+      "en": "South Korea",
+      "de": "Südkorea",
+      "fr": "Corée du Sud",
+      "es": "Corea del Sur",
+      "it": "Corea del Sud",
+      "zh": "韩国"
+    },
     "fact": {
       "pt": "Na Coreia do Sul, as crianças usam colheres e pauzinhos de metal para comer.",
       "en": "In South Korea, children use metal spoons and chopsticks to eat.",
@@ -218,11 +454,25 @@
       "es": "En Corea del Sur, los niños comen con cucharas y palillos de metal.",
       "it": "In Corea del Sud, i bambini mangiano con cucchiai e bacchette di metallo.",
       "zh": "在韩国,孩子们用金属勺子和筷子吃饭。"
-    }
+    },
+    "lat": 37.57,
+    "lng": 126.98
   },
   {
-    "iso": "GR", "flag": "🇬🇷", "capital": "Atenas", "continent": "europe", "currency": "EUR (€)",
-    "name": { "pt": "Grécia", "en": "Greece", "de": "Griechenland", "fr": "Grèce", "es": "Grecia", "it": "Grecia", "zh": "希腊" },
+    "iso": "GR",
+    "flag": "🇬🇷",
+    "capital": "Atenas",
+    "continent": "europe",
+    "currency": "EUR (€)",
+    "name": {
+      "pt": "Grécia",
+      "en": "Greece",
+      "de": "Griechenland",
+      "fr": "Grèce",
+      "es": "Grecia",
+      "it": "Grecia",
+      "zh": "希腊"
+    },
     "fact": {
       "pt": "Os Jogos Olímpicos começaram na Grécia Antiga, há milhares de anos.",
       "en": "The Olympic Games began in Ancient Greece, thousands of years ago.",
@@ -231,11 +481,25 @@
       "es": "Los Juegos Olímpicos comenzaron en la Antigua Grecia, hace miles de años.",
       "it": "I Giochi Olimpici iniziarono nell'Antica Grecia, migliaia di anni fa.",
       "zh": "奥林匹克运动会起源于几千年前的古希腊。"
-    }
+    },
+    "lat": 37.98,
+    "lng": 23.73
   },
   {
-    "iso": "KE", "flag": "🇰🇪", "capital": "Nairóbi", "continent": "africa", "currency": "KES (KSh)",
-    "name": { "pt": "Quénia", "en": "Kenya", "de": "Kenia", "fr": "Kenya", "es": "Kenia", "it": "Kenya", "zh": "肯尼亚" },
+    "iso": "KE",
+    "flag": "🇰🇪",
+    "capital": "Nairóbi",
+    "continent": "africa",
+    "currency": "KES (KSh)",
+    "name": {
+      "pt": "Quénia",
+      "en": "Kenya",
+      "de": "Kenia",
+      "fr": "Kenya",
+      "es": "Kenia",
+      "it": "Kenya",
+      "zh": "肯尼亚"
+    },
     "fact": {
       "pt": "No Quénia, milhões de zebras e gnus migram juntos todos os anos.",
       "en": "In Kenya, millions of zebras and wildebeest migrate together every year.",
@@ -244,11 +508,25 @@
       "es": "En Kenia, millones de cebras y ñus migran juntos cada año.",
       "it": "In Kenya, milioni di zebre e gnu migrano insieme ogni anno.",
       "zh": "在肯尼亚,每年有数百万斑马和角马一起迁徙。"
-    }
+    },
+    "lat": -1.29,
+    "lng": 36.82
   },
   {
-    "iso": "SE", "flag": "🇸🇪", "capital": "Estocolmo", "continent": "europe", "currency": "SEK (kr)",
-    "name": { "pt": "Suécia", "en": "Sweden", "de": "Schweden", "fr": "Suède", "es": "Suecia", "it": "Svezia", "zh": "瑞典" },
+    "iso": "SE",
+    "flag": "🇸🇪",
+    "capital": "Estocolmo",
+    "continent": "europe",
+    "currency": "SEK (kr)",
+    "name": {
+      "pt": "Suécia",
+      "en": "Sweden",
+      "de": "Schweden",
+      "fr": "Suède",
+      "es": "Suecia",
+      "it": "Svezia",
+      "zh": "瑞典"
+    },
     "fact": {
       "pt": "Na Suécia, no verão, o sol quase não se põe em algumas regiões.",
       "en": "In Sweden, during summer, the sun barely sets in some regions.",
@@ -257,6 +535,8 @@
       "es": "En Suecia, en verano, el sol casi no se pone en algunas regiones.",
       "it": "In Svezia, d'estate, il sole quasi non tramonta in alcune regioni.",
       "zh": "在瑞典,夏天的时候有些地区太阳几乎不落下。"
-    }
+    },
+    "lat": 59.33,
+    "lng": 18.07
   }
 ]
