@@ -1,0 +1,53 @@
+{
+  "bridge": {
+    "title": "The Bear's Bridge",
+    "emoji": "🌉",
+    "prompt": "🐻 The bear needs to cross the river. Build a bridge!",
+    "materials": [
+      { "id": "wood", "emoji": "🪵", "label": "Wood" },
+      { "id": "stone", "emoji": "🧱", "label": "Stone" },
+      { "id": "rope", "emoji": "🧵", "label": "Rope" },
+      { "id": "paper", "emoji": "📄", "label": "Paper" }
+    ],
+    "outcomes": {
+      "wood": { "success": true, "text": "Wood is strong and light. The bridge holds the bear and it crosses safely!" },
+      "stone": { "success": false, "text": "Stone is too heavy for a simple bridge and it collapses before the bear crosses." },
+      "rope": { "success": false, "text": "Rope alone sags under the bear's weight — it falls into the water!" },
+      "paper": { "success": false, "text": "The paper tears as soon as the bear puts a paw on it." }
+    }
+  },
+  "tower": {
+    "title": "The Tallest Tower",
+    "emoji": "🗼",
+    "prompt": "🚩 Build a tower tall enough to touch the flag!",
+    "materials": [
+      { "id": "wood", "emoji": "🪵", "label": "Wood" },
+      { "id": "stone", "emoji": "🧱", "label": "Stone" },
+      { "id": "rope", "emoji": "🧵", "label": "Rope" },
+      { "id": "paper", "emoji": "📄", "label": "Paper" }
+    ],
+    "outcomes": {
+      "wood": { "success": true, "text": "Wooden blocks stack up firmly — the tower reaches the flag!" },
+      "stone": { "success": true, "text": "Stone is heavy but stable at the base — the tower stands firm and reaches the flag!" },
+      "rope": { "success": false, "text": "Rope can't stand up on its own — the tower never rises." },
+      "paper": { "success": false, "text": "Paper bends under the weight and the tower collapses." }
+    }
+  },
+  "boat": {
+    "title": "The Floating Boat",
+    "emoji": "⛵",
+    "prompt": "⛵ Build a boat that floats and carries the toys to the other shore!",
+    "materials": [
+      { "id": "wood", "emoji": "🪵", "label": "Wood" },
+      { "id": "stone", "emoji": "🧱", "label": "Stone" },
+      { "id": "rope", "emoji": "🧵", "label": "Rope" },
+      { "id": "paper", "emoji": "📄", "label": "Paper" }
+    ],
+    "outcomes": {
+      "wood": { "success": true, "text": "Wood floats really well — the boat sails smoothly!" },
+      "stone": { "success": false, "text": "Stone is too dense and sinks as soon as it touches the water." },
+      "rope": { "success": false, "text": "Rope doesn't form a hull — water gets in and the boat sinks." },
+      "paper": { "success": false, "text": "Paper soaks up water, goes soft, and dissolves." }
+    }
+  }
+}

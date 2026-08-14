@@ -1,0 +1,44 @@
+{
+  "plant": {
+    "title": "La Plante Mystérieuse",
+    "emoji": "🌱",
+    "question": "Règle la lumière et l'eau et regarde ce qui arrive à la plante !",
+    "lightLabel": "Lumière",
+    "waterLabel": "Eau",
+    "levels": ["Peu", "Normal", "Beaucoup"],
+    "outcomes": {
+      "0-0": { "emoji": "💀", "text": "Sans lumière ni eau, la plante flétrit et meurt rapidement." },
+      "0-1": { "emoji": "🥀", "text": "Sans lumière, la plante devient faible et jaune même avec assez d'eau." },
+      "0-2": { "emoji": "🥀", "text": "Trop d'eau sans lumière noie les racines et la plante ne survit pas." },
+      "1-0": { "emoji": "🥀", "text": "Il y a de la lumière, mais sans eau la plante sèche et flétrit." },
+      "1-1": { "emoji": "🌿", "text": "Lumière et eau équilibrées ! La plante pousse saine et verte." },
+      "1-2": { "emoji": "🥀", "text": "Lumière normale mais trop d'eau fait pourrir les racines." },
+      "2-0": { "emoji": "🥀", "text": "Beaucoup de lumière sans eau assèche vite la plante." },
+      "2-1": { "emoji": "🌻", "text": "Beaucoup de lumière et eau normale — la plante pousse forte et fleurit !" },
+      "2-2": { "emoji": "🌿", "text": "Beaucoup de lumière et beaucoup d'eau gardent la plante luxuriante, mais attention à ne pas trop l'arroser." }
+    }
+  },
+  "gravity": {
+    "title": "Sauter dans l'Espace",
+    "emoji": "🪐",
+    "question": "Choisis une planète et vois comment la gravité change ton saut !",
+    "jumpLabel": "Hauteur du saut",
+    "planets": [
+      { "id": "moon", "emoji": "🌕", "label": "Lune", "jumpMultiplier": 6, "text": "Sur la Lune, la gravité est bien plus faible. Tu sauterais environ 6 fois plus haut !" },
+      { "id": "earth", "emoji": "🌍", "label": "Terre", "jumpMultiplier": 1, "text": "Sur Terre, c'est ton saut normal." },
+      { "id": "jupiter", "emoji": "🟠", "label": "Jupiter", "jumpMultiplier": 0.4, "text": "Sur Jupiter, la gravité est bien plus forte. Ton saut serait bien plus bas !" }
+    ]
+  },
+  "water": {
+    "title": "Les Trois États de l'Eau",
+    "emoji": "💧",
+    "question": "Déplace la température et observe l'eau changer d'état !",
+    "tempLabel": "Température",
+    "levels": ["Très froide", "Température ambiante", "Très chaude"],
+    "outcomes": {
+      "0": { "emoji": "🧊", "text": "L'eau gèle et devient solide : de la glace !" },
+      "1": { "emoji": "💧", "text": "À température ambiante, l'eau est liquide." },
+      "2": { "emoji": "💨", "text": "L'eau bout et se transforme en vapeur : un gaz !" }
+    }
+  }
+}

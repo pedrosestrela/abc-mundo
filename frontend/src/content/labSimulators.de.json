@@ -1,0 +1,44 @@
+{
+  "plant": {
+    "title": "Die geheimnisvolle Pflanze",
+    "emoji": "🌱",
+    "question": "Stelle Licht und Wasser ein und sieh, was mit der Pflanze passiert!",
+    "lightLabel": "Licht",
+    "waterLabel": "Wasser",
+    "levels": ["Wenig", "Normal", "Viel"],
+    "outcomes": {
+      "0-0": { "emoji": "💀", "text": "Ohne Licht und ohne Wasser welkt die Pflanze und stirbt schnell." },
+      "0-1": { "emoji": "🥀", "text": "Ohne Licht wird die Pflanze schwach und gelb, selbst mit genug Wasser." },
+      "0-2": { "emoji": "🥀", "text": "Zu viel Wasser ohne Licht ertränkt die Wurzeln und die Pflanze überlebt nicht." },
+      "1-0": { "emoji": "🥀", "text": "Es gibt Licht, aber ohne Wasser trocknet die Pflanze aus und welkt." },
+      "1-1": { "emoji": "🌿", "text": "Licht und Wasser im Gleichgewicht! Die Pflanze wächst gesund und grün." },
+      "1-2": { "emoji": "🥀", "text": "Normales Licht, aber zu viel Wasser lässt die Wurzeln verfaulen." },
+      "2-0": { "emoji": "🥀", "text": "Viel Licht ohne Wasser trocknet die Pflanze schnell aus." },
+      "2-1": { "emoji": "🌻", "text": "Viel Licht und normales Wasser — die Pflanze wächst kräftig und blüht!" },
+      "2-2": { "emoji": "🌿", "text": "Viel Licht und viel Wasser halten die Pflanze üppig, aber Vorsicht vor zu viel Nässe." }
+    }
+  },
+  "gravity": {
+    "title": "Springen im Weltraum",
+    "emoji": "🪐",
+    "question": "Wähle einen Planeten und sieh, wie die Schwerkraft deinen Sprung verändert!",
+    "jumpLabel": "Sprunghöhe",
+    "planets": [
+      { "id": "moon", "emoji": "🌕", "label": "Mond", "jumpMultiplier": 6, "text": "Auf dem Mond ist die Schwerkraft viel schwächer. Du würdest etwa 6-mal höher springen!" },
+      { "id": "earth", "emoji": "🌍", "label": "Erde", "jumpMultiplier": 1, "text": "Auf der Erde ist das dein normaler Sprung." },
+      { "id": "jupiter", "emoji": "🟠", "label": "Jupiter", "jumpMultiplier": 0.4, "text": "Auf dem Jupiter ist die Schwerkraft viel stärker. Dein Sprung wäre viel niedriger!" }
+    ]
+  },
+  "water": {
+    "title": "Die drei Zustände des Wassers",
+    "emoji": "💧",
+    "question": "Bewege die Temperatur und beobachte, wie Wasser seinen Zustand ändert!",
+    "tempLabel": "Temperatur",
+    "levels": ["Sehr kalt", "Zimmertemperatur", "Sehr heiß"],
+    "outcomes": {
+      "0": { "emoji": "🧊", "text": "Das Wasser gefriert und wird fest: Eis!" },
+      "1": { "emoji": "💧", "text": "Bei Zimmertemperatur ist Wasser flüssig." },
+      "2": { "emoji": "💨", "text": "Das Wasser kocht und wird zu Dampf: ein Gas!" }
+    }
+  }
+}

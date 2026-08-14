@@ -1,0 +1,44 @@
+{
+  "plant": {
+    "title": "The Mystery Plant",
+    "emoji": "🌱",
+    "question": "Adjust the light and water and see what happens to the plant!",
+    "lightLabel": "Light",
+    "waterLabel": "Water",
+    "levels": ["Little", "Normal", "A lot"],
+    "outcomes": {
+      "0-0": { "emoji": "💀", "text": "With no light and no water, the plant wilts and dies quickly." },
+      "0-1": { "emoji": "🥀", "text": "Without light, the plant grows weak and yellow even with enough water." },
+      "0-2": { "emoji": "🥀", "text": "Too much water without light drowns the roots and the plant doesn't survive." },
+      "1-0": { "emoji": "🥀", "text": "There is light, but without water the plant dries out and wilts." },
+      "1-1": { "emoji": "🌿", "text": "Balanced light and water! The plant grows healthy and green." },
+      "1-2": { "emoji": "🥀", "text": "Normal light but too much water rots the roots." },
+      "2-0": { "emoji": "🥀", "text": "A lot of light without water dries the plant out fast." },
+      "2-1": { "emoji": "🌻", "text": "Lots of light and normal water — the plant grows strong and blooms!" },
+      "2-2": { "emoji": "🌿", "text": "Lots of light and lots of water keep the plant lush, but be careful not to overwater it." }
+    }
+  },
+  "gravity": {
+    "title": "Jumping in Space",
+    "emoji": "🪐",
+    "question": "Pick a planet and see how gravity changes your jump!",
+    "jumpLabel": "Jump height",
+    "planets": [
+      { "id": "moon", "emoji": "🌕", "label": "Moon", "jumpMultiplier": 6, "text": "On the Moon gravity is much weaker. You would jump about 6 times higher!" },
+      { "id": "earth", "emoji": "🌍", "label": "Earth", "jumpMultiplier": 1, "text": "On Earth this is your normal jump." },
+      { "id": "jupiter", "emoji": "🟠", "label": "Jupiter", "jumpMultiplier": 0.4, "text": "On Jupiter gravity is much stronger. Your jump would be much lower!" }
+    ]
+  },
+  "water": {
+    "title": "The Three States of Water",
+    "emoji": "💧",
+    "question": "Move the temperature and watch water change state!",
+    "tempLabel": "Temperature",
+    "levels": ["Very cold", "Room temperature", "Very hot"],
+    "outcomes": {
+      "0": { "emoji": "🧊", "text": "The water freezes and turns solid: ice!" },
+      "1": { "emoji": "💧", "text": "At room temperature water is liquid." },
+      "2": { "emoji": "💨", "text": "The water boils and turns into steam: a gas!" }
+    }
+  }
+}

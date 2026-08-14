@@ -1,0 +1,44 @@
+{
+  "plant": {
+    "title": "La Planta Misteriosa",
+    "emoji": "🌱",
+    "question": "¡Ajusta la luz y el agua y mira qué le pasa a la planta!",
+    "lightLabel": "Luz",
+    "waterLabel": "Agua",
+    "levels": ["Poca", "Normal", "Mucha"],
+    "outcomes": {
+      "0-0": { "emoji": "💀", "text": "Sin luz y sin agua, la planta se marchita y muere rápidamente." },
+      "0-1": { "emoji": "🥀", "text": "Sin luz, la planta se debilita y amarillea aunque tenga suficiente agua." },
+      "0-2": { "emoji": "🥀", "text": "Demasiada agua sin luz ahoga las raíces y la planta no sobrevive." },
+      "1-0": { "emoji": "🥀", "text": "Hay luz, pero sin agua la planta se seca y marchita." },
+      "1-1": { "emoji": "🌿", "text": "¡Luz y agua equilibradas! La planta crece sana y verde." },
+      "1-2": { "emoji": "🥀", "text": "Luz normal pero demasiada agua pudre las raíces." },
+      "2-0": { "emoji": "🥀", "text": "Mucha luz sin agua seca la planta rápidamente." },
+      "2-1": { "emoji": "🌻", "text": "¡Mucha luz y agua normal — la planta crece fuerte y florece!" },
+      "2-2": { "emoji": "🌿", "text": "Mucha luz y mucha agua mantienen la planta frondosa, pero cuidado con encharcarla demasiado." }
+    }
+  },
+  "gravity": {
+    "title": "Saltos en el Espacio",
+    "emoji": "🪐",
+    "question": "¡Elige un planeta y mira cómo la gravedad cambia tu salto!",
+    "jumpLabel": "Altura del salto",
+    "planets": [
+      { "id": "moon", "emoji": "🌕", "label": "Luna", "jumpMultiplier": 6, "text": "En la Luna la gravedad es mucho más débil. ¡Saltarías unas 6 veces más alto!" },
+      { "id": "earth", "emoji": "🌍", "label": "Tierra", "jumpMultiplier": 1, "text": "En la Tierra este es tu salto normal." },
+      { "id": "jupiter", "emoji": "🟠", "label": "Júpiter", "jumpMultiplier": 0.4, "text": "En Júpiter la gravedad es mucho más fuerte. ¡Tu salto sería mucho más bajo!" }
+    ]
+  },
+  "water": {
+    "title": "Los Tres Estados del Agua",
+    "emoji": "💧",
+    "question": "¡Mueve la temperatura y observa al agua cambiar de estado!",
+    "tempLabel": "Temperatura",
+    "levels": ["Muy fría", "Temperatura ambiente", "Muy caliente"],
+    "outcomes": {
+      "0": { "emoji": "🧊", "text": "¡El agua se congela y se vuelve sólida: hielo!" },
+      "1": { "emoji": "💧", "text": "A temperatura ambiente el agua es líquida." },
+      "2": { "emoji": "💨", "text": "¡El agua hierve y se convierte en vapor: un gas!" }
+    }
+  }
+}

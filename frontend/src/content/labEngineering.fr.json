@@ -1,0 +1,53 @@
+{
+  "bridge": {
+    "title": "Le Pont de l'Ours",
+    "emoji": "🌉",
+    "prompt": "🐻 L'ours doit traverser la rivière. Construis un pont !",
+    "materials": [
+      { "id": "wood", "emoji": "🪵", "label": "Bois" },
+      { "id": "stone", "emoji": "🧱", "label": "Pierre" },
+      { "id": "rope", "emoji": "🧵", "label": "Corde" },
+      { "id": "paper", "emoji": "📄", "label": "Papier" }
+    ],
+    "outcomes": {
+      "wood": { "success": true, "text": "Le bois est solide et léger. Le pont supporte l'ours et il traverse en toute sécurité !" },
+      "stone": { "success": false, "text": "La pierre est trop lourde pour un pont simple et il s'effondre avant que l'ours ne passe." },
+      "rope": { "success": false, "text": "La corde seule s'affaisse sous le poids de l'ours — il tombe à l'eau !" },
+      "paper": { "success": false, "text": "Le papier se déchire dès que l'ours pose une patte dessus." }
+    }
+  },
+  "tower": {
+    "title": "La Plus Haute Tour",
+    "emoji": "🗼",
+    "prompt": "🚩 Construis une tour assez haute pour toucher le drapeau !",
+    "materials": [
+      { "id": "wood", "emoji": "🪵", "label": "Bois" },
+      { "id": "stone", "emoji": "🧱", "label": "Pierre" },
+      { "id": "rope", "emoji": "🧵", "label": "Corde" },
+      { "id": "paper", "emoji": "📄", "label": "Papier" }
+    ],
+    "outcomes": {
+      "wood": { "success": true, "text": "Les blocs de bois s'empilent fermement — la tour atteint le drapeau !" },
+      "stone": { "success": true, "text": "La pierre est lourde mais stable à la base — la tour tient bien et atteint le drapeau !" },
+      "rope": { "success": false, "text": "La corde ne peut pas tenir debout toute seule — la tour ne s'élève jamais." },
+      "paper": { "success": false, "text": "Le papier plie sous le poids et la tour s'écroule." }
+    }
+  },
+  "boat": {
+    "title": "Le Bateau Flottant",
+    "emoji": "⛵",
+    "prompt": "⛵ Construis un bateau qui flotte et transporte les jouets vers l'autre rive !",
+    "materials": [
+      { "id": "wood", "emoji": "🪵", "label": "Bois" },
+      { "id": "stone", "emoji": "🧱", "label": "Pierre" },
+      { "id": "rope", "emoji": "🧵", "label": "Corde" },
+      { "id": "paper", "emoji": "📄", "label": "Papier" }
+    ],
+    "outcomes": {
+      "wood": { "success": true, "text": "Le bois flotte très bien — le bateau navigue tranquillement !" },
+      "stone": { "success": false, "text": "La pierre est trop dense et coule dès qu'elle touche l'eau." },
+      "rope": { "success": false, "text": "La corde ne forme pas de coque — l'eau entre et le bateau coule." },
+      "paper": { "success": false, "text": "Le papier absorbe l'eau, ramollit et se dissout." }
+    }
+  }
+}

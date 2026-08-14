@@ -106,6 +106,22 @@ import scienceZh from "./science.zh.json";
 import scienceEs from "./science.es.json";
 import scienceIt from "./science.it.json";
 
+import labSimulatorsPt from "./labSimulators.pt.json";
+import labSimulatorsEn from "./labSimulators.en.json";
+import labSimulatorsDe from "./labSimulators.de.json";
+import labSimulatorsFr from "./labSimulators.fr.json";
+import labSimulatorsZh from "./labSimulators.zh.json";
+import labSimulatorsEs from "./labSimulators.es.json";
+import labSimulatorsIt from "./labSimulators.it.json";
+
+import labEngineeringPt from "./labEngineering.pt.json";
+import labEngineeringEn from "./labEngineering.en.json";
+import labEngineeringDe from "./labEngineering.de.json";
+import labEngineeringFr from "./labEngineering.fr.json";
+import labEngineeringZh from "./labEngineering.zh.json";
+import labEngineeringEs from "./labEngineering.es.json";
+import labEngineeringIt from "./labEngineering.it.json";
+
 import lifeSkillsPt from "./lifeSkills.pt.json";
 import lifeSkillsEn from "./lifeSkills.en.json";
 import lifeSkillsDe from "./lifeSkills.de.json";
@@ -152,6 +168,8 @@ const MISSIONS = { pt: missionsPt, en: missionsEn, de: missionsDe, fr: missionsF
 const DETECTIVE = { pt: detectivePt, en: detectiveEn, de: detectiveDe, fr: detectiveFr, zh: detectiveZh, es: detectiveEs, it: detectiveIt };
 const WHYS = { pt: whysPt, en: whysEn, de: whysDe, fr: whysFr, zh: whysZh, es: whysEs, it: whysIt };
 const ART_PROMPTS = { pt: artPromptsPt, en: artPromptsEn, de: artPromptsDe, fr: artPromptsFr, zh: artPromptsZh, es: artPromptsEs, it: artPromptsIt };
+const LAB_SIMULATORS = { pt: labSimulatorsPt, en: labSimulatorsEn, de: labSimulatorsDe, fr: labSimulatorsFr, zh: labSimulatorsZh, es: labSimulatorsEs, it: labSimulatorsIt };
+const LAB_ENGINEERING = { pt: labEngineeringPt, en: labEngineeringEn, de: labEngineeringDe, fr: labEngineeringFr, zh: labEngineeringZh, es: labEngineeringEs, it: labEngineeringIt };
 const SCIENCE = { pt: sciencePt, en: scienceEn, de: scienceDe, fr: scienceFr, zh: scienceZh, es: scienceEs, it: scienceIt };
 const LIFE_SKILLS = { pt: lifeSkillsPt, en: lifeSkillsEn, de: lifeSkillsDe, fr: lifeSkillsFr, zh: lifeSkillsZh, es: lifeSkillsEs, it: lifeSkillsIt };
 const COMPUTING = { pt: computingPt, en: computingEn, de: computingDe, fr: computingFr, zh: computingZh, es: computingEs, it: computingIt };
@@ -215,6 +233,14 @@ export function getArtPrompts(langCode) {
 
 export function getScience(langCode) {
   return SCIENCE[langCode] || [];
+}
+
+export function getLabSimulators(langCode) {
+  return LAB_SIMULATORS[langCode] || LAB_SIMULATORS.pt;
+}
+
+export function getLabEngineering(langCode) {
+  return LAB_ENGINEERING[langCode] || LAB_ENGINEERING.pt;
 }
 
 export function getLifeSkills(langCode) {
