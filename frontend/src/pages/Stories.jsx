@@ -34,14 +34,35 @@ function splitWords(text) {
 export default function Stories() {
   const { t } = useTranslation();
   const pair = getLangPair() || { mother: "pt", secondary: "en" };
-  const motherStories = getStories(pair.mother);
-  const secondaryStories = getStories(pair.secondary);
+
+  const [motherStories, setMotherStories] = useState([]);
+  const [secondaryStories, setSecondaryStories] = useState([]);
+  const [loading, setLoading] = useState(true);
   const count = Math.min(motherStories.length, secondaryStories.length);
 
   const [openIndex, setOpenIndex] = useState(null);
   const [pageIndex, setPageIndex] = useState(0);
   const [activeWord, setActiveWord] = useState(-1);
   const [poked, setPoked] = useState(false);
+
+  useEffect(() => {
+    let cancelled = false;
+    setLoading(true);
+    Promise.all([getStories(pair.mother), getStories(pair.secondary)]).then(
+      ([mother, secondary]) => {
+        if (cancelled) return;
+        setMotherStories(mother);
+        setSecondaryStories(secondary);
+        setLoading(false);
+        setOpenIndex(null);
+        setPageIndex(0);
+      }
+    );
+    return () => {
+      cancelled = true;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pair.mother, pair.secondary]);
 
   const motherStory = openIndex !== null ? motherStories[openIndex] : null;
   const secondaryStory = openIndex !== null ? secondaryStories[openIndex] : null;
@@ -102,6 +123,15 @@ export default function Stories() {
       else break;
     }
     setActiveWord(idx);
+  }
+
+  if (loading) {
+    return (
+      <div className="page">
+        <h1>{t("modules.storiesTitle")} 📚</h1>
+        <p>...</p>
+      </div>
+    );
   }
 
   if (openIndex !== null && motherStory && secondaryStory) {

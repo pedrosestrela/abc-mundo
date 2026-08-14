@@ -90,14 +90,6 @@ import songsZh from "./songs.zh.json";
 import songsEs from "./songs.es.json";
 import songsIt from "./songs.it.json";
 
-import storiesPt from "./stories.pt.json";
-import storiesEn from "./stories.en.json";
-import storiesDe from "./stories.de.json";
-import storiesFr from "./stories.fr.json";
-import storiesZh from "./stories.zh.json";
-import storiesEs from "./stories.es.json";
-import storiesIt from "./stories.it.json";
-
 import detectivePt from "./detective.pt.json";
 import detectiveEn from "./detective.en.json";
 import detectiveDe from "./detective.de.json";
@@ -283,7 +275,6 @@ const READING = { pt: readingPt, en: readingEn, de: readingDe, fr: readingFr, zh
 const SYLLABLES = { pt: syllablesPt, en: syllablesEn, de: syllablesDe, fr: syllablesFr, zh: syllablesZh, es: syllablesEs, it: syllablesIt };
 const PHRASES = { pt: phrasesPt, en: phrasesEn, de: phrasesDe, fr: phrasesFr, zh: phrasesZh, es: phrasesEs, it: phrasesIt };
 const SONGS = { pt: songsPt, en: songsEn, de: songsDe, fr: songsFr, zh: songsZh, es: songsEs, it: songsIt };
-const STORIES = { pt: storiesPt, en: storiesEn, de: storiesDe, fr: storiesFr, zh: storiesZh, es: storiesEs, it: storiesIt };
 const FINANCIAL = { pt: financialPt, en: financialEn, de: financialDe, fr: financialFr, zh: financialZh, es: financialEs, it: financialIt };
 const PHONICS = { pt: phonicsPt, en: phonicsEn, de: phonicsDe, fr: phonicsFr, zh: phonicsZh, es: phonicsEs, it: phonicsIt };
 const MISSIONS = { pt: missionsPt, en: missionsEn, de: missionsDe, fr: missionsFr, zh: missionsZh, es: missionsEs, it: missionsIt };
@@ -345,8 +336,27 @@ export function getSongs(langCode) {
   return SONGS[langCode] || [];
 }
 
-export function getStories(langCode) {
-  return STORIES[langCode] || [];
+// Stories content is by far the largest per-language dataset (~130KB per
+// language, ~930KB combined), and has a single consumer (Stories.jsx). It is
+// lazy-loaded per language via a dynamic import (Vite code-splits each
+// stories.<lang>.json into its own tiny chunk) instead of being bundled
+// statically into this module like every other content type here, so
+// visiting any other content page no longer pulls in all 7 languages' worth
+// of story text. Results are cached per language so repeat calls (e.g.
+// re-renders, switching back to a previously-loaded language) don't re-fetch.
+const storiesCache = new Map();
+
+export async function getStories(langCode) {
+  if (storiesCache.has(langCode)) return storiesCache.get(langCode);
+  let data;
+  try {
+    const mod = await import(`./stories.${langCode}.json`);
+    data = mod.default || [];
+  } catch {
+    data = [];
+  }
+  storiesCache.set(langCode, data);
+  return data;
 }
 
 export function getFinancial(langCode) {

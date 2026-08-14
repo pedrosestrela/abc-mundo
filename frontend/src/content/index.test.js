@@ -28,7 +28,6 @@ const PER_LANGUAGE_GETTERS = {
   getSyllables,
   getPhrases,
   getSongs,
-  getStories,
   getFinancial,
   getPhonics,
   getMissions,
@@ -49,6 +48,20 @@ describe.each(Object.entries(PER_LANGUAGE_GETTERS))("%s", (name, getter) => {
     const result = getter(code);
     expect(Array.isArray(result)).toBe(true);
     expect(result.length).toBeGreaterThan(0);
+  });
+});
+
+describe("getStories", () => {
+  test.each(LANG_CODES)("returns a non-empty array for lang=%s", async (code) => {
+    const result = await getStories(code);
+    expect(Array.isArray(result)).toBe(true);
+    expect(result.length).toBeGreaterThan(0);
+  });
+
+  test("caches results for repeated calls with the same language", async () => {
+    const first = await getStories("pt");
+    const second = await getStories("pt");
+    expect(second).toBe(first);
   });
 });
 
