@@ -2022,6 +2022,24 @@ body {
   margin-bottom: 4px;
 }
 
+.why-tier-header.secondary {
+  padding-top: 6px;
+  margin-top: 4px;
+  border-top: 2px dashed rgba(0, 0, 0, 0.1);
+}
+
+.why-tier-header.secondary p {
+  color: var(--pink);
+}
+
+.why-question-secondary {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: normal;
+  color: var(--pink);
+  margin-top: 2px;
+}
+
 .why-reveal-btn {
   align-self: flex-start;
 }
