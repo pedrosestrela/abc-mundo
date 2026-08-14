@@ -40,5 +40,40 @@
       "1": { "emoji": "💧", "text": "A temperatura ambiente el agua es líquida." },
       "2": { "emoji": "💨", "text": "¡El agua hierve y se convierte en vapor: un gas!" }
     }
+  },
+  "electric": {
+    "title": "Laboratorio Eléctrico",
+    "emoji": "🔋",
+    "question": "¡Elige qué conecta la pila con la bombilla y descubre si se enciende!",
+    "middleLabel": "¿Qué conecta la pila con la bombilla?",
+    "options": [
+      { "id": "wire", "emoji": "🔌", "label": "Cable entero" },
+      { "id": "broken", "emoji": "✂️", "label": "Cable cortado" },
+      { "id": "none", "emoji": "❌", "label": "Nada" }
+    ],
+    "outcomes": {
+      "wire": { "success": true, "text": "¡El circuito está completo! La corriente eléctrica fluye desde la pila, pasa por el cable, enciende la bombilla y vuelve a la pila." },
+      "broken": { "success": false, "text": "El cable está cortado — hay un hueco en el medio. La corriente eléctrica no puede cruzar ese hueco, así que la bombilla no se enciende." },
+      "none": { "success": false, "text": "Sin nada que conecte la pila con la bombilla, el circuito queda abierto. Sin un camino cerrado, la corriente no puede fluir." }
+    }
+  },
+  "light": {
+    "title": "Laboratorio de la Luz",
+    "emoji": "🔦",
+    "question": "¡Elige dos luces de colores diferentes y adivina qué color sale de la mezcla!",
+    "pickLabel": "Elige 2 luces",
+    "sameWarning": "¡Elige dos colores diferentes!",
+    "guessLabel": "¿Qué color crees que va a aparecer?",
+    "lights": [
+      { "id": "red", "emoji": "🔴", "label": "Rojo", "color": "#ff3b3b" },
+      { "id": "green", "emoji": "🟢", "label": "Verde", "color": "#2ecc71" },
+      { "id": "blue", "emoji": "🔵", "label": "Azul", "color": "#3b82f6" }
+    ],
+    "distractor": { "label": "Blanco", "color": "#f4f4f4" },
+    "combos": {
+      "red-green": { "resultLabel": "Amarillo", "color": "#ffe135", "text": "¡Luz roja + luz verde = luz amarilla! Mezclar colores de LUZ es diferente de mezclar pintura — la luz se suma y se hace más clara." },
+      "red-blue": { "resultLabel": "Magenta", "color": "#ff3bd4", "text": "¡Luz roja + luz azul = magenta! Cada luz de color lleva una parte de la luz blanca del sol." },
+      "green-blue": { "resultLabel": "Cian", "color": "#3bf0ff", "text": "¡Luz verde + luz azul = cian! Junta las tres (rojo, verde y azul) y obtienes luz blanca." }
+    }
   }
 }

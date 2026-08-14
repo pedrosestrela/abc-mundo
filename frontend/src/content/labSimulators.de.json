@@ -40,5 +40,40 @@
       "1": { "emoji": "💧", "text": "Bei Zimmertemperatur ist Wasser flüssig." },
       "2": { "emoji": "💨", "text": "Das Wasser kocht und wird zu Dampf: ein Gas!" }
     }
+  },
+  "electric": {
+    "title": "Elektro-Labor",
+    "emoji": "🔋",
+    "question": "Wähle, was die Batterie mit der Glühbirne verbindet, und finde heraus, ob sie leuchtet!",
+    "middleLabel": "Was verbindet die Batterie mit der Glühbirne?",
+    "options": [
+      { "id": "wire", "emoji": "🔌", "label": "Ganzer Draht" },
+      { "id": "broken", "emoji": "✂️", "label": "Kaputter Draht" },
+      { "id": "none", "emoji": "❌", "label": "Nichts" }
+    ],
+    "outcomes": {
+      "wire": { "success": true, "text": "Der Stromkreis ist geschlossen! Der elektrische Strom fließt von der Batterie durch den Draht, bringt die Glühbirne zum Leuchten und kehrt zur Batterie zurück." },
+      "broken": { "success": false, "text": "Der Draht ist kaputt — in der Mitte ist eine Lücke. Der Strom kann diese Lücke nicht überqueren, deshalb leuchtet die Glühbirne nicht." },
+      "none": { "success": false, "text": "Ohne etwas, das die Batterie mit der Glühbirne verbindet, bleibt der Stromkreis offen. Ohne geschlossenen Weg kann kein Strom fließen." }
+    }
+  },
+  "light": {
+    "title": "Licht-Labor",
+    "emoji": "🔦",
+    "question": "Wähle zwei verschiedenfarbige Lichter und rate, welche Farbe bei der Mischung entsteht!",
+    "pickLabel": "Wähle 2 Lichter",
+    "sameWarning": "Wähle zwei unterschiedliche Farben!",
+    "guessLabel": "Welche Farbe glaubst du, wird erscheinen?",
+    "lights": [
+      { "id": "red", "emoji": "🔴", "label": "Rot", "color": "#ff3b3b" },
+      { "id": "green", "emoji": "🟢", "label": "Grün", "color": "#2ecc71" },
+      { "id": "blue", "emoji": "🔵", "label": "Blau", "color": "#3b82f6" }
+    ],
+    "distractor": { "label": "Weiß", "color": "#f4f4f4" },
+    "combos": {
+      "red-green": { "resultLabel": "Gelb", "color": "#ffe135", "text": "Rotes Licht + grünes Licht = gelbes Licht! Farben aus LICHT zu mischen ist anders als Farbe zu mischen — Licht addiert sich und wird heller." },
+      "red-blue": { "resultLabel": "Magenta", "color": "#ff3bd4", "text": "Rotes Licht + blaues Licht = Magenta! Jedes farbige Licht trägt einen Teil des weißen Sonnenlichts." },
+      "green-blue": { "resultLabel": "Cyan", "color": "#3bf0ff", "text": "Grünes Licht + blaues Licht = Cyan! Vereine alle drei (Rot, Grün und Blau) und du erhältst weißes Licht." }
+    }
   }
 }

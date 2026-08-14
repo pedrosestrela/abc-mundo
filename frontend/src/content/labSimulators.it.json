@@ -40,5 +40,40 @@
       "1": { "emoji": "💧", "text": "A temperatura ambiente l'acqua è liquida." },
       "2": { "emoji": "💨", "text": "L'acqua bolle e si trasforma in vapore: un gas!" }
     }
+  },
+  "electric": {
+    "title": "Laboratorio Elettrico",
+    "emoji": "🔋",
+    "question": "Scegli cosa collega la batteria alla lampadina e scopri se si accende!",
+    "middleLabel": "Cosa collega la batteria alla lampadina?",
+    "options": [
+      { "id": "wire", "emoji": "🔌", "label": "Filo intero" },
+      { "id": "broken", "emoji": "✂️", "label": "Filo tagliato" },
+      { "id": "none", "emoji": "❌", "label": "Niente" }
+    ],
+    "outcomes": {
+      "wire": { "success": true, "text": "Il circuito è completo! La corrente elettrica scorre dalla batteria, attraversa il filo, accende la lampadina e torna alla batteria." },
+      "broken": { "success": false, "text": "Il filo è tagliato — c'è uno spazio vuoto nel mezzo. La corrente elettrica non può attraversare quello spazio, quindi la lampadina non si accende." },
+      "none": { "success": false, "text": "Senza niente che colleghi la batteria alla lampadina, il circuito resta aperto. Senza un percorso chiuso, la corrente non può scorrere." }
+    }
+  },
+  "light": {
+    "title": "Laboratorio della Luce",
+    "emoji": "🔦",
+    "question": "Scegli due luci di colori diversi e indovina che colore esce dalla miscela!",
+    "pickLabel": "Scegli 2 luci",
+    "sameWarning": "Scegli due colori diversi!",
+    "guessLabel": "Che colore pensi apparirà?",
+    "lights": [
+      { "id": "red", "emoji": "🔴", "label": "Rosso", "color": "#ff3b3b" },
+      { "id": "green", "emoji": "🟢", "label": "Verde", "color": "#2ecc71" },
+      { "id": "blue", "emoji": "🔵", "label": "Blu", "color": "#3b82f6" }
+    ],
+    "distractor": { "label": "Bianco", "color": "#f4f4f4" },
+    "combos": {
+      "red-green": { "resultLabel": "Giallo", "color": "#ffe135", "text": "Luce rossa + luce verde = luce gialla! Mescolare colori di LUCE è diverso dal mescolare la pittura — la luce si somma e diventa più chiara." },
+      "red-blue": { "resultLabel": "Magenta", "color": "#ff3bd4", "text": "Luce rossa + luce blu = magenta! Ogni luce colorata trasporta una parte della luce bianca del sole." },
+      "green-blue": { "resultLabel": "Ciano", "color": "#3bf0ff", "text": "Luce verde + luce blu = ciano! Unisci tutte e tre (rosso, verde e blu) e ottieni luce bianca." }
+    }
   }
 }
