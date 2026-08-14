@@ -3279,3 +3279,162 @@ body {
   border: 2px solid #eee;
   padding: 8px 12px;
 }
+
+/* --- Maze Treasure Hunt (original maze-chase mini-game) --- */
+.maze-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.maze-hud {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.maze-board {
+  display: flex;
+  flex-direction: column;
+  background: #2b2b45;
+  border-radius: 12px;
+  padding: 4px;
+  max-width: 100%;
+  overflow-x: auto;
+}
+.maze-row {
+  display: flex;
+}
+.maze-cell {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex: 0 0 auto;
+}
+.maze-wall {
+  background: #4b4b78;
+  border-radius: 3px;
+}
+.maze-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #ffd54f;
+  display: inline-block;
+}
+.maze-player {
+  font-size: 1.1rem;
+  line-height: 1;
+  z-index: 2;
+}
+.maze-chaser {
+  width: 18px;
+  height: 16px;
+  border-radius: 9px 9px 3px 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  position: absolute;
+}
+.maze-chaser-eye {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #fff;
+}
+.maze-chaser-teal {
+  background: #26a69a;
+}
+.maze-chaser-violet {
+  background: #8e6fd6;
+}
+.maze-chaser-coral {
+  background: #ff8a65;
+}
+.maze-dpad {
+  display: grid;
+  grid-template-columns: repeat(3, 56px);
+  grid-template-rows: repeat(2, 56px);
+  gap: 6px;
+  justify-content: center;
+}
+.maze-dpad-btn {
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 14px;
+  background: #eee6ff;
+  cursor: pointer;
+}
+.maze-dpad-up {
+  grid-column: 2;
+  grid-row: 1;
+}
+.maze-dpad-left {
+  grid-column: 1;
+  grid-row: 2;
+}
+.maze-dpad-right {
+  grid-column: 3;
+  grid-row: 2;
+}
+.maze-dpad-down {
+  grid-column: 2;
+  grid-row: 2;
+}
+.maze-result {
+  text-align: center;
+}
+
+/* --- Memory / concentration card-matching mini-game --- */
+.memory-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.memory-hud {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.memory-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 64px);
+  gap: 8px;
+  justify-content: center;
+}
+.memory-card {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  border: none;
+  background: var(--blue, #6a5acd);
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.memory-card.flipped {
+  background: #fff;
+  border: 2px solid #eee6ff;
+}
+.memory-card.matched {
+  background: #d7f5df;
+  border: 2px solid #4caf50;
+  cursor: default;
+}
+.memory-result {
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .maze-cell {
+    width: 22px;
+    height: 22px;
+  }
+  .memory-grid {
+    grid-template-columns: repeat(3, 60px);
+  }
+}
