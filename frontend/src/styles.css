@@ -636,6 +636,131 @@ body {
   color: var(--purple);
 }
 
+.parent-page h1 {
+  font-size: clamp(1.4rem, 4vw, 1.9rem);
+}
+
+.parent-header-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 14px 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  margin-bottom: 16px;
+}
+
+.parent-avatar {
+  font-size: 2.2rem;
+}
+
+.parent-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.parent-stats-row {
+  display: flex;
+  gap: 12px;
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 4px;
+}
+
+.parent-section {
+  margin: 18px 0;
+}
+
+.parent-section h2 {
+  font-size: 1rem;
+  color: var(--purple);
+  margin-bottom: 8px;
+}
+
+.parent-empty,
+.parent-muted {
+  color: #777;
+  font-size: 0.95rem;
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+.parent-summary-grid {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.parent-summary-tile {
+  flex: 1;
+  min-width: 130px;
+  background: #fff;
+  border-radius: 14px;
+  padding: 12px 14px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.parent-summary-value {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--blue);
+}
+
+.parent-summary-label {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.parent-bar-track {
+  margin-top: 6px;
+  height: 8px;
+  border-radius: 6px;
+  background: #eee;
+  overflow: hidden;
+}
+
+.parent-bar-fill {
+  height: 100%;
+  background: var(--green);
+  border-radius: 6px;
+}
+
+.parent-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.parent-list-item {
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.parent-list-item-good {
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.parent-list-meta {
+  color: #777;
+  font-size: 0.8rem;
+}
+
+.parent-history-list .parent-list-item {
+  font-size: 0.82rem;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background: linear-gradient(180deg, #201a2b, #2a1c22);
@@ -649,7 +774,12 @@ body {
   .lang-btn,
   .letter-tile,
   .game-card,
-  .game-option-btn {
+  .game-option-btn,
+  .parent-header-card,
+  .parent-empty,
+  .parent-muted,
+  .parent-summary-tile,
+  .parent-list-item {
     background: #362a44;
     color: #f0e9ff;
   }
@@ -665,5 +795,13 @@ body {
   .game-option-btn.correct {
     background: var(--yellow);
     color: #333;
+  }
+  .parent-stats-row,
+  .parent-summary-label,
+  .parent-list-meta {
+    color: #cfc3e6;
+  }
+  .parent-bar-track {
+    background: #4a3d5c;
   }
 }

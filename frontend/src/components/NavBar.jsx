@@ -42,6 +42,9 @@ export default function NavBar() {
       <NavLink to="/financial" className="nav-link">
         💰 {t("nav.financial")}
       </NavLink>
+      <NavLink to="/parents" className="nav-link">
+        👪 {t("nav.parents")}
+      </NavLink>
     </nav>
   );
 }
