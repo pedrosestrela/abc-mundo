@@ -1,0 +1,10 @@
+[
+  { "id": "poupar-gastar", "concept": "储蓄与花钱", "emoji": "🐷", "explanation": "储蓄就是把钱留到以后用。花钱就是现在用钱买东西。两样都做一点是很好的!" },
+  { "id": "precisar-querer", "concept": "需要与想要", "emoji": "🎁", "explanation": "需要是我们生活中不能缺少的东西,比如食物或鞋子。想要是我们希望拥有的东西,比如一个新玩具。" },
+  { "id": "moedas-notas", "concept": "硬币与纸币", "emoji": "🪙", "explanation": "钱有小小的硬币,也有大大的纸币。它们一起帮助我们支付想要和需要的东西。" },
+  { "id": "paciencia", "concept": "储蓄的耐心", "emoji": "⏳", "explanation": "有时候我们需要等待,每天存一点点钱,直到攒够钱买一件特别的东西。" },
+  { "id": "mealheiro", "concept": "存钱罐", "emoji": "🐖", "explanation": "存钱罐是一个用来保存硬币的小盒子。每存一枚硬币,我们就离目标更近一步。" },
+  { "id": "trocar", "concept": "找零钱", "emoji": "🔄", "explanation": "当我们付的钱比东西的价格多时,我们会拿到找零:多付的钱会还给我们。" },
+  { "id": "trabalho-dinheiro", "concept": "工作与金钱", "emoji": "🧹", "explanation": "人们通过工作来赚钱。在家里帮忙也能教会我们努力的价值。" },
+  { "id": "partilhar", "concept": "分享与帮助", "emoji": "🤝", "explanation": "我们可以用一点钱来帮助别人,比如给朋友一份礼物。" }
+]

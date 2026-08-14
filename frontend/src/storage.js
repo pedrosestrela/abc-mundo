@@ -38,6 +38,13 @@ export function setLangPair(pair) {
   }
 }
 
+export function getDifficultyTier(age) {
+  const a = Number(age);
+  if (!Number.isFinite(a) || a <= 6) return 1;
+  if (a <= 8) return 2;
+  return 3;
+}
+
 export function pingProgress({ profileName, module, event }) {
   try {
     fetch("/api/progress/ping", {

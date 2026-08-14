@@ -1,0 +1,10 @@
+[
+  { "id": "poupar-gastar", "concept": "Risparmiare e Spendere", "emoji": "🐷", "explanation": "Risparmiare vuol dire mettere via i soldi per dopo. Spendere vuol dire usare i soldi per comprare qualcosa adesso. Fare un po' di entrambe le cose va bene!" },
+  { "id": "precisar-querer", "concept": "Bisogni e Desideri", "emoji": "🎁", "explanation": "Un bisogno è qualcosa senza cui non possiamo vivere, come il cibo o le scarpe. Un desiderio è qualcosa che ci piacerebbe avere, come un giocattolo nuovo." },
+  { "id": "moedas-notas", "concept": "Monete e Banconote", "emoji": "🪙", "explanation": "Usiamo gli euro. Ci sono monete piccole, i centesimi, e monete e banconote da euro. Insieme ci aiutano a pagare le cose." },
+  { "id": "paciencia", "concept": "La Pazienza di Risparmiare", "emoji": "⏳", "explanation": "A volte bisogna aspettare e risparmiare un po' ogni giorno finché non abbiamo abbastanza soldi per comprare qualcosa di speciale." },
+  { "id": "mealheiro", "concept": "Il Salvadanaio", "emoji": "🐖", "explanation": "Il salvadanaio è una scatolina dove teniamo le nostre monete. Ogni moneta risparmiata ci avvicina al nostro obiettivo." },
+  { "id": "trocar", "concept": "Ricevere il Resto", "emoji": "🔄", "explanation": "Quando paghiamo con più soldi di quanto costa qualcosa, riceviamo il resto: i soldi in più che ci vengono restituiti." },
+  { "id": "trabalho-dinheiro", "concept": "Lavoro e Denaro", "emoji": "🧹", "explanation": "Le persone lavorano per guadagnare denaro. Aiutare in casa può anche insegnarci il valore dell'impegno." },
+  { "id": "partilhar", "concept": "Condividere e Aiutare", "emoji": "🤝", "explanation": "Possiamo usare un po' dei nostri soldi per aiutare gli altri, come fare un regalo a un amico." }
+]

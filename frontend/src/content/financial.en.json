@@ -1,0 +1,10 @@
+[
+  { "id": "poupar-gastar", "concept": "Saving and Spending", "emoji": "🐷", "explanation": "Saving means keeping money for later. Spending means using money to buy something now. It's good to do a little of both!" },
+  { "id": "precisar-querer", "concept": "Needs and Wants", "emoji": "🎁", "explanation": "A need is something we can't live without, like food or shoes. A want is something we would like to have, like a new toy." },
+  { "id": "moedas-notas", "concept": "Coins and Notes", "emoji": "🪙", "explanation": "Money comes in small coins and bigger notes. Together they help us pay for things we need and want." },
+  { "id": "paciencia", "concept": "The Patience of Saving", "emoji": "⏳", "explanation": "Sometimes we have to wait and save a little every day until we have enough money to buy something special." },
+  { "id": "mealheiro", "concept": "The Piggy Bank", "emoji": "🐖", "explanation": "A piggy bank is a little box where we keep our coins. Every time we save a coin, we get closer to our goal." },
+  { "id": "trocar", "concept": "Getting Change", "emoji": "🔄", "explanation": "When we pay with more money than something costs, we get change back: the extra money that is returned to us." },
+  { "id": "trabalho-dinheiro", "concept": "Work and Money", "emoji": "🧹", "explanation": "People work to earn money. Helping at home can also teach us the value of effort." },
+  { "id": "partilhar", "concept": "Sharing and Helping", "emoji": "🤝", "explanation": "We can use a little of our money to help others, like giving a gift to a friend." }
+]
