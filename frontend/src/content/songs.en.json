@@ -1,6 +1,6 @@
 [
   {
-    "id": "abc-sunshine-song",
+    "id": "cancao-do-abc",
     "title": "The ABC Sunshine Song",
     "lyrics": [
       "A, B, C, come sing with me",
@@ -11,7 +11,7 @@
     "illustrationId": "sun-friends"
   },
   {
-    "id": "hopping-letters",
+    "id": "letras-saltitantes",
     "title": "The Hopping Letters",
     "lyrics": [
       "Hop goes M, hop goes N too",
@@ -22,7 +22,7 @@
     "illustrationId": "jumping-letters"
   },
   {
-    "id": "alphabet-friends-circle",
+    "id": "amigos-do-alfabeto",
     "title": "Alphabet Friends Circle",
     "lyrics": [
       "W, X, Y hold hands and grin",
@@ -33,7 +33,7 @@
     "illustrationId": "alphabet-circle"
   },
   {
-    "id": "moon-and-stars-song",
+    "id": "cancao-da-lua",
     "title": "The Moon and Stars Song",
     "lyrics": [
       "The moon shines bright, the letters go to sleep",
@@ -42,5 +42,225 @@
       "Tomorrow we'll play, just wait and see"
     ],
     "illustrationId": "starry-night"
+  },
+  {
+    "id": "cancao-de-contar",
+    "title": "The Counting Song",
+    "lyrics": [
+      "One, two, three, let's count today",
+      "Four, five, six, keep going, hey",
+      "Seven, eight, nine, ten's on the way",
+      "Counting numbers, hip hooray"
+    ],
+    "illustrationId": "counting-blocks"
+  },
+  {
+    "id": "cancao-das-formas",
+    "title": "The Shapes Song",
+    "lyrics": [
+      "Round is the circle, it rolls all day",
+      "Four equal sides, the square's here to stay",
+      "Three points has the happy triangle's way",
+      "Shapes in the world, learn them today"
+    ],
+    "illustrationId": "shapes-fun"
+  },
+  {
+    "id": "cancao-dos-dias",
+    "title": "The Days of the Week Song",
+    "lyrics": [
+      "Monday, Tuesday, Wednesday pass on by",
+      "Thursday, Friday, almost time to fly",
+      "Saturday and Sunday, weekend's nigh",
+      "Seven happy days, oh my, oh my"
+    ],
+    "illustrationId": "sun-friends"
+  },
+  {
+    "id": "festa-das-vogais",
+    "title": "The Vowel Party",
+    "lyrics": [
+      "A, A, A, open your mouth and sing away",
+      "E, E, E, a smile on display",
+      "I, I, I, lips pulled tight all day",
+      "O, O, O, round and loud, hooray",
+      "U, U, U, lips kiss and sway",
+      "Five little vowels, together they play!"
+    ],
+    "illustrationId": "sun-friends"
+  },
+  {
+    "id": "comboio-das-silabas-song",
+    "title": "The Syllable Train Song",
+    "lyrics": [
+      "MA, ME, MI, MO, MU, the train goes rolling by",
+      "PA, PE, PI, PO, PU, watch the syllables fly",
+      "TA, TE, TI, TO, TU, sing it, don't be shy",
+      "Put them together and words start to fly",
+      "Join two syllables and a new word is born",
+      "Come along with me, learning every morn!"
+    ],
+    "illustrationId": "jumping-letters"
+  },
+  {
+    "id": "um-dois-tres-contar",
+    "title": "One, Two, Three, Let's Count",
+    "lyrics": [
+      "One, two, three, let's count with glee",
+      "Four, five, six, as easy as can be",
+      "Seven, eight, nine, fingers you can see",
+      "Ten little fingers, ready and free",
+      "Count it again, counting's the key",
+      "Numbers all around us, come and see!"
+    ],
+    "illustrationId": "counting-blocks"
+  },
+  {
+    "id": "dez-dedos-matematicos",
+    "title": "Ten Math Fingers",
+    "lyrics": [
+      "Two plus two, put them together, makes four, that's true",
+      "Five minus two, three remain, easy to do",
+      "Ten little fingers help us count things through",
+      "Take some away, subtracting is easy too",
+      "Math is fun when you sing it, me and you",
+      "Add, take away, count well, come on, let's continue!"
+    ],
+    "illustrationId": "counting-blocks"
+  },
+  {
+    "id": "planetas-a-girar",
+    "title": "The Spinning Planets",
+    "lyrics": [
+      "Mercury is closest, spins fast around the sun",
+      "Venus is scorching, glowing like it's on the run",
+      "Earth is our home, blue and full of life and fun",
+      "Mars is red and dusty, that's how it's begun",
+      "Jupiter is giant, the biggest, number one",
+      "Saturn's rings sparkle, shining bright as spun",
+      "Uranus and Neptune, blue and far, they run",
+      "Eight planets dancing round our shining sun!"
+    ],
+    "illustrationId": "starry-night"
+  },
+  {
+    "id": "viagem-da-gota-song",
+    "title": "The Drop's Journey",
+    "lyrics": [
+      "In the sea I was born, wet and full of glee",
+      "The sun warmed me up, I rose up so free",
+      "I turned to a white cloud, high up you'll see",
+      "Then fell as the rain over land, look and see",
+      "I ran through a river, flowing endlessly",
+      "And went back to the sea, that's how it should be",
+      "The water cycle, forever running free",
+      "An eternal journey, come and sing with me!"
+    ],
+    "illustrationId": "sun-friends"
+  },
+  {
+    "id": "meu-corpo-maquina",
+    "title": "My Body Is a Machine",
+    "lyrics": [
+      "My heart goes thump-thump, it never stops or rests",
+      "My blood keeps flowing, carrying life at its best",
+      "My lungs fill with air, a breath is my request",
+      "My brain keeps thinking, sending orders, I'm impressed",
+      "My muscles pull and stretch, they help me move and jest",
+      "My bones are strong and tall, they help me pass the test",
+      "My body is a machine, an amazing little quest",
+      "I take care of it each day, it's simply the best!"
+    ],
+    "illustrationId": "shapes-fun"
+  },
+  {
+    "id": "poupar-para-depois",
+    "title": "Saving for Later",
+    "lyrics": [
+      "I have a piggy bank, pink and shiny and small",
+      "Every coin I earn, inside it I install",
+      "I don't spend it all at once, patience is my call",
+      "One day I'll have enough for something big and tall",
+      "Saving means choosing what I really want at all",
+      "Instead of spending fast before the coins can fall",
+      "Slowly all the coins keep adding, one and all",
+      "And one day my biggest dream, I'll finally recall!"
+    ],
+    "illustrationId": "counting-blocks"
+  },
+  {
+    "id": "bandeiras-do-mundo",
+    "title": "The Flags of the World",
+    "lyrics": [
+      "Green and red, Portugal shining bright",
+      "Blue, white and red, France sings with delight",
+      "Black, red and yellow, Germany stands upright",
+      "Red and yellow, Spain dances all night",
+      "Green, white and red, Italy jumps with might",
+      "Red with stars, China marches in sight",
+      "Every flag tells a story, day and night",
+      "The world is so colorful, let's celebrate the sight!"
+    ],
+    "illustrationId": "alphabet-circle"
+  },
+  {
+    "id": "norte-sul-este-oeste",
+    "title": "North, South, East and West",
+    "lyrics": [
+      "A compass has a needle that always points the way",
+      "To the North, where the pole star shines, they say",
+      "The South is straight ahead, the opposite display",
+      "The East is where the morning sun starts its day",
+      "The West is where the sun sets, fading away",
+      "North, south, east, west, learn to find your way",
+      "With a map in hand, you'll never go astray",
+      "An explorer of the world, that's what you'll be someday!"
+    ],
+    "illustrationId": "shapes-fun"
+  },
+  {
+    "id": "liga-o-circuito",
+    "title": "Turn On the Circuit!",
+    "lyrics": [
+      "A battery gives power, now you know just why",
+      "The wires conduct it, connected side by side",
+      "The bulb lights up whenever the circuit's tied",
+      "If there's a gap, the light will fade and hide",
+      "Never touch a real outlet, it's not safe to try",
+      "Always ask a grown-up to help you decide",
+      "Electricity is useful, but treat it with pride",
+      "Learn it safely, with science as your guide!"
+    ],
+    "illustrationId": "jumping-letters"
+  },
+  {
+    "id": "robo-faz-o-que-eu-mandar",
+    "title": "The Robot Does What I Say",
+    "lyrics": [
+      "First step, then the second, in the right way",
+      "The robot only does what I say",
+      "If I say \"go\", it will go and stay",
+      "If I say \"stop\", it will stop right away",
+      "The order of the steps matters every day",
+      "An algorithm's a recipe, in its own way",
+      "Step by step, none skipped along the way",
+      "That's how I learn to program and play!"
+    ],
+    "illustrationId": "jumping-letters"
+  },
+  {
+    "id": "encontra-alguma-coisa-azul",
+    "title": "Find Something Blue",
+    "lyrics": [
+      "Stop for a moment, take a deep breath, hey",
+      "Put the screen down, look around today",
+      "Find something blue in the room where you play",
+      "It could be a book, a mug, or a tray",
+      "Now find something round along the way",
+      "And something soft you can hold and sway",
+      "The real world has so much to display",
+      "Go explore, then come tell me all, okay!"
+    ],
+    "illustrationId": "shapes-fun"
   }
 ]

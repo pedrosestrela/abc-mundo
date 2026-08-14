@@ -1,6 +1,6 @@
 [
   {
-    "id": "taiyang-ge",
+    "id": "cancao-do-abc",
     "title": "太阳歌 (Canção do Sol)",
     "lyrics": [
       "一二三，一起来唱歌",
@@ -11,7 +11,7 @@
     "illustrationId": "sun-friends"
   },
   {
-    "id": "tiaowu-zi-ge",
+    "id": "letras-saltitantes",
     "title": "跳舞字歌 (Letras Dançarinas)",
     "lyrics": [
       "山水火，一起跳一跳",
@@ -22,7 +22,7 @@
     "illustrationId": "jumping-letters"
   },
   {
-    "id": "pengyou-quan",
+    "id": "amigos-do-alfabeto",
     "title": "朋友圈 (Círculo de Amigos)",
     "lyrics": [
       "手拉手，围成一个圈",
@@ -33,7 +33,7 @@
     "illustrationId": "alphabet-circle"
   },
   {
-    "id": "yueliang-xing-ge",
+    "id": "cancao-da-lua",
     "title": "月亮星星歌 (Canção da Lua e das Estrelas)",
     "lyrics": [
       "月亮亮，星星眨眨眼",
@@ -42,5 +42,225 @@
       "明天早上，再来玩耍"
     ],
     "illustrationId": "starry-night"
+  },
+  {
+    "id": "cancao-de-contar",
+    "title": "数数歌",
+    "lyrics": [
+      "一二三 一起来数数",
+      "四五六 继续不停步",
+      "七八九 十马上就到",
+      "数数字 大家哈哈笑"
+    ],
+    "illustrationId": "counting-blocks"
+  },
+  {
+    "id": "cancao-das-formas",
+    "title": "形状之歌",
+    "lyrics": [
+      "圆圆的是圆形 一直转不停",
+      "四边一样长 那是正方形",
+      "三个角尖尖 快乐的三角形",
+      "世界的形状 快来学一学"
+    ],
+    "illustrationId": "shapes-fun"
+  },
+  {
+    "id": "cancao-dos-dias",
+    "title": "星期之歌",
+    "lyrics": [
+      "星期一 星期二 星期三快过去",
+      "星期四 星期五 就快到周末啦",
+      "星期六 星期天 是周末的假期",
+      "快乐的七天 大家笑嘻嘻"
+    ],
+    "illustrationId": "sun-friends"
+  },
+  {
+    "id": "festa-das-vogais",
+    "title": "元音派对",
+    "lyrics": [
+      "A A A 张开嘴巴唱起来",
+      "E E E 微笑露出来",
+      "I I I 嘴唇抿起来",
+      "O O O 圆圆响起来",
+      "U U U 嘴唇撅起来",
+      "五个元音，一起唱起来！"
+    ],
+    "illustrationId": "sun-friends"
+  },
+  {
+    "id": "comboio-das-silabas-song",
+    "title": "音节小火车之歌",
+    "lyrics": [
+      "MA ME MI MO MU 火车开过来",
+      "PA PE PI PO PU 大家唱起来",
+      "TA TE TI TO TU 一起不要停",
+      "音节拼一拼 新词就出生",
+      "两个音节碰一碰 变成新词汇",
+      "快来跟我学 每天进步最珍贵！"
+    ],
+    "illustrationId": "jumping-letters"
+  },
+  {
+    "id": "um-dois-tres-contar",
+    "title": "一二三，一起数",
+    "lyrics": [
+      "一二三 一起数得欢",
+      "四五六 数字不间断",
+      "七八九 手指举起来",
+      "十根手指 准备来游玩",
+      "再数一遍 数数真好玩",
+      "数字无处不在 一起来发现！"
+    ],
+    "illustrationId": "counting-blocks"
+  },
+  {
+    "id": "dez-dedos-matematicos",
+    "title": "十个数学手指",
+    "lyrics": [
+      "二加二 合起来是四",
+      "五减二 还剩三 很简单",
+      "十根手指 帮忙做加法",
+      "拿走几个 学会做减法",
+      "唱着歌 数学变得不难",
+      "加加减减 一起继续玩！"
+    ],
+    "illustrationId": "counting-blocks"
+  },
+  {
+    "id": "planetas-a-girar",
+    "title": "旋转的行星",
+    "lyrics": [
+      "水星最近 绕着太阳转得快",
+      "金星炎热 闪闪发光真奇怪",
+      "地球是家 蓝色又充满生机",
+      "火星红色 尘土永远不停息",
+      "木星最大 是行星里的巨人",
+      "土星有环 一直闪耀又迷人",
+      "天王海王 蓝色又遥远",
+      "八大行星 绕着太阳转呀转！"
+    ],
+    "illustrationId": "starry-night"
+  },
+  {
+    "id": "viagem-da-gota-song",
+    "title": "水滴的旅程",
+    "lyrics": [
+      "我出生在大海 湿润又快乐",
+      "太阳把我晒暖 慢慢往上飘",
+      "变成白云一朵 飘在天空高",
+      "又变成雨滴 落在大地飘",
+      "我流过河流 一直不停跑",
+      "又回到大海 重新来一遭",
+      "水的循环 永远不停停",
+      "永恒的旅程 一起来唱吟！"
+    ],
+    "illustrationId": "sun-friends"
+  },
+  {
+    "id": "meu-corpo-maquina",
+    "title": "我的身体是一台机器",
+    "lyrics": [
+      "心脏怦怦跳 一直不停歇",
+      "血液在流动 输送到全身",
+      "肺部吸满气 呼吸不停歇",
+      "大脑在思考 发出各种指令",
+      "肌肉拉一拉 帮我动一动",
+      "骨头很坚固 帮我快长大",
+      "我的身体像机器 真是奇妙无比",
+      "每天都要爱护它 珍惜我自己！"
+    ],
+    "illustrationId": "shapes-fun"
+  },
+  {
+    "id": "poupar-para-depois",
+    "title": "为以后存钱",
+    "lyrics": [
+      "我有一个粉色的存钱罐",
+      "每一枚硬币都存进里面",
+      "不马上花光 学会等待",
+      "总有一天 存够钱去买",
+      "存钱是选择 真正想要的东西",
+      "而不是马上花光 一分不剩",
+      "硬币慢慢积攒 从不停歇",
+      "总有一天 我的梦想会实现！"
+    ],
+    "illustrationId": "counting-blocks"
+  },
+  {
+    "id": "bandeiras-do-mundo",
+    "title": "世界的旗帜",
+    "lyrics": [
+      "绿色红色 葡萄牙在闪耀",
+      "蓝白红色 法国在歌唱",
+      "黑红黄色 德国站得高",
+      "红色黄色 西班牙在舞蹈",
+      "绿白红色 意大利在跳跃",
+      "红底星星 中国在前行",
+      "每面旗帜 都有故事在诉说",
+      "世界多彩缤纷 一起来庆祝！"
+    ],
+    "illustrationId": "alphabet-circle"
+  },
+  {
+    "id": "norte-sul-este-oeste",
+    "title": "东南西北",
+    "lyrics": [
+      "指南针的指针 永远指向一方",
+      "指向北方 那里有北极星闪亮",
+      "南方就在对面 方向正相反",
+      "东方是清晨太阳升起的地方",
+      "西方是太阳落下的地方",
+      "东南西北 学会辨别方向",
+      "手拿地图 永远不会迷路",
+      "世界探险家 你也可以当！"
+    ],
+    "illustrationId": "shapes-fun"
+  },
+  {
+    "id": "liga-o-circuito",
+    "title": "启动电路吧！",
+    "lyrics": [
+      "电池提供能量 你知道为什么",
+      "电线来传导 一个接一个",
+      "灯泡会发亮 只要电路闭合",
+      "如果有缺口 灯光就会熄灭",
+      "千万别碰真的插座 那很危险",
+      "记得请大人 来帮忙引导",
+      "电很有用处 但要懂得尊重",
+      "小心学习 科学是最好向导！"
+    ],
+    "illustrationId": "jumping-letters"
+  },
+  {
+    "id": "robo-faz-o-que-eu-mandar",
+    "title": "机器人听我指挥",
+    "lyrics": [
+      "第一步 然后第二步 不能弄错顺序",
+      "机器人只听我的指挥去做事",
+      "如果我说\"走\" 它就会走起来",
+      "如果我说\"停\" 它就会停下来",
+      "步骤的顺序 非常非常重要",
+      "算法就像一份菜谱 从头到尾",
+      "一步一步来 不能跳过任何一步",
+      "这就是我学习编程的方法！"
+    ],
+    "illustrationId": "jumping-letters"
+  },
+  {
+    "id": "encontra-alguma-coisa-azul",
+    "title": "找一样蓝色的东西",
+    "lyrics": [
+      "停下来一会儿 深深吸一口气",
+      "放下屏幕 看看你的周围",
+      "在房间里找一样蓝色的东西",
+      "可以是一本书 一个杯子或箱子",
+      "现在再找一样圆圆的东西",
+      "还有一样摸起来软软的东西",
+      "真实的世界有好多值得发现",
+      "去探索吧 然后回来告诉我，好吗！"
+    ],
+    "illustrationId": "shapes-fun"
   }
 ]

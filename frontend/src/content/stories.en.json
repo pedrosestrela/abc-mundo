@@ -4,12 +4,30 @@
     "title": "The Curious Fox",
     "emoji": "🦊",
     "pages": [
-      { "text": "Once upon a time, there was a little fox named Mimi.", "emoji": "🦊" },
-      { "text": "Mimi loved exploring the forest every day.", "emoji": "🌳" },
-      { "text": "One day, she found a river sparkling in the sun.", "emoji": "🌊" },
-      { "text": "She saw a tiny fish and grew very curious.", "emoji": "🐟" },
-      { "text": "Mimi learned that the world has many surprises.", "emoji": "✨" },
-      { "text": "She went home happy, full of new stories.", "emoji": "🏡" }
+      {
+        "text": "Once upon a time, there was a little fox named Mimi.",
+        "emoji": "🦊"
+      },
+      {
+        "text": "Mimi loved exploring the forest every day.",
+        "emoji": "🌳"
+      },
+      {
+        "text": "One day, she found a river sparkling in the sun.",
+        "emoji": "🌊"
+      },
+      {
+        "text": "She saw a tiny fish and grew very curious.",
+        "emoji": "🐟"
+      },
+      {
+        "text": "Mimi learned that the world has many surprises.",
+        "emoji": "✨"
+      },
+      {
+        "text": "She went home happy, full of new stories.",
+        "emoji": "🏡"
+      }
     ]
   },
   {
@@ -17,12 +35,957 @@
     "title": "The Kind Friends",
     "emoji": "🐻",
     "pages": [
-      { "text": "Bruno the bear cub lost his ball in the park.", "emoji": "🐻" },
-      { "text": "Tito the rabbit saw Bruno sad and came to help.", "emoji": "🐰" },
-      { "text": "Together they looked behind trees and flowers.", "emoji": "🌸" },
-      { "text": "At last they found the ball under a bench.", "emoji": "⚽" },
-      { "text": "Bruno smiled and thanked his friend Tito.", "emoji": "😊" },
-      { "text": "They learned that helping friends feels wonderful.", "emoji": "💛" }
+      {
+        "text": "Bruno the bear cub lost his ball in the park.",
+        "emoji": "🐻"
+      },
+      {
+        "text": "Tito the rabbit saw Bruno sad and came to help.",
+        "emoji": "🐰"
+      },
+      {
+        "text": "Together they looked behind trees and flowers.",
+        "emoji": "🌸"
+      },
+      {
+        "text": "At last they found the ball under a bench.",
+        "emoji": "⚽"
+      },
+      {
+        "text": "Bruno smiled and thanked his friend Tito.",
+        "emoji": "😊"
+      },
+      {
+        "text": "They learned that helping friends feels wonderful.",
+        "emoji": "💛"
+      }
+    ]
+  },
+  {
+    "id": "vowel-lost-voice",
+    "title": "The Vowel Who Lost Her Voice",
+    "emoji": "🔤",
+    "pages": [
+      {
+        "text": "The letter A loved singing louder than all the other letters.",
+        "emoji": "🔤"
+      },
+      {
+        "text": "One morning, A opened her mouth and no sound came out at all.",
+        "emoji": "😮"
+      },
+      {
+        "text": "Sad and worried, A went to ask her friends E, I, O and U for help.",
+        "emoji": "😢"
+      },
+      {
+        "text": "E said, \"Drink some water and rest your throat, little friend.\"",
+        "emoji": "💧"
+      },
+      {
+        "text": "I brought warm honey, and O told a silly joke to make A smile.",
+        "emoji": "🍯"
+      },
+      {
+        "text": "U hummed softly beside her until she fell fast asleep.",
+        "emoji": "🌙"
+      },
+      {
+        "text": "The next morning, A woke up and shouted \"Aaaaa!\" with all her might.",
+        "emoji": "🎉"
+      },
+      {
+        "text": "From that day on, A always sings with her vowel friends close by.",
+        "emoji": "🤝"
+      }
+    ]
+  },
+  {
+    "id": "syllable-train",
+    "title": "The Syllable Train",
+    "emoji": "🚂",
+    "pages": [
+      {
+        "text": "The Syllable Train left the Letter Station every single day.",
+        "emoji": "🚂"
+      },
+      {
+        "text": "The first carriage carried MA, ME, MI, MO and MU on a trip.",
+        "emoji": "🚃"
+      },
+      {
+        "text": "At the next stop, PA, PE, PI, PO and PU jumped aboard, excited.",
+        "emoji": "🚉"
+      },
+      {
+        "text": "The train crossed a bridge and the syllables joined together: MA-PA!",
+        "emoji": "🌉"
+      },
+      {
+        "text": "That is how the word \"mapa\" (map) was born, and everyone clapped.",
+        "emoji": "👏"
+      },
+      {
+        "text": "The train kept going, building new words at every single stop.",
+        "emoji": "✨"
+      }
+    ]
+  },
+  {
+    "id": "mimi-letter-m",
+    "title": "Mimi and the Letter M",
+    "emoji": "🐭",
+    "pages": [
+      {
+        "text": "Mimi was a little mouse who only found things starting with M.",
+        "emoji": "🐭"
+      },
+      {
+        "text": "In the morning, she munched melon and mixed berries with honey.",
+        "emoji": "🍎"
+      },
+      {
+        "text": "Then she went to the meadow to pick marigolds with her friend Mia.",
+        "emoji": "🌼"
+      },
+      {
+        "text": "At night, she slept under the moon, wrapped in a soft, warm blanket.",
+        "emoji": "🌙"
+      },
+      {
+        "text": "Mimi always said, \"M for me, M for magic, M for my world!\"",
+        "emoji": "✨"
+      },
+      {
+        "text": "She fell asleep happy, dreaming of more words starting with M.",
+        "emoji": "😴"
+      }
+    ]
+  },
+  {
+    "id": "cat-cant-meow",
+    "title": "The Cat Who Couldn't Meow",
+    "emoji": "🐱",
+    "pages": [
+      {
+        "text": "Little Felix the cat tried to meow, but only \"woof\" came out, like a dog.",
+        "emoji": "🐱"
+      },
+      {
+        "text": "The other cats giggled quietly, and Felix felt very embarrassed.",
+        "emoji": "😳"
+      },
+      {
+        "text": "A dog named Rex heard him and said, \"That's okay, everyone has their own voice.\"",
+        "emoji": "🐶"
+      },
+      {
+        "text": "Felix practiced every day, all alone beside the river.",
+        "emoji": "🌊"
+      },
+      {
+        "text": "One morning, he opened his mouth and out came a clear, lovely \"meow.\"",
+        "emoji": "🎶"
+      },
+      {
+        "text": "All the cats came to celebrate, and Felix learned that practice pays off.",
+        "emoji": "🎉"
+      }
+    ]
+  },
+  {
+    "id": "party-of-colors",
+    "title": "The Party of Colors",
+    "emoji": "🎨",
+    "pages": [
+      {
+        "text": "Red invited all the colors to a big party in the sky.",
+        "emoji": "🎨"
+      },
+      {
+        "text": "Yellow brought the sun and lit up the whole room.",
+        "emoji": "☀️"
+      },
+      {
+        "text": "Blue brought the sea, and Green brought the leaves from the trees.",
+        "emoji": "🌊"
+      },
+      {
+        "text": "When Blue and Yellow danced together, they made bright Green.",
+        "emoji": "💃"
+      },
+      {
+        "text": "Red and Blue mixed together, and elegant Purple appeared.",
+        "emoji": "💜"
+      },
+      {
+        "text": "At the end of the party, a huge rainbow appeared in the sky, all colors together.",
+        "emoji": "🌈"
+      }
+    ]
+  },
+  {
+    "id": "five-lost-ducklings",
+    "title": "Five Lost Ducklings",
+    "emoji": "🦆",
+    "pages": [
+      {
+        "text": "Mother duck had five ducklings, and they all went for a walk by the lake.",
+        "emoji": "🦆"
+      },
+      {
+        "text": "One duckling stopped to look at a yellow flower and fell behind.",
+        "emoji": "🌼"
+      },
+      {
+        "text": "Another duckling followed a butterfly and got lost among the reeds.",
+        "emoji": "🦋"
+      },
+      {
+        "text": "Mother duck counted her babies: only three! She grew worried.",
+        "emoji": "😟"
+      },
+      {
+        "text": "She called \"quack-quack\" loudly, and the two ducklings heard and ran back.",
+        "emoji": "📢"
+      },
+      {
+        "text": "They all gathered together again, and mother said, \"Always stay close to me.\"",
+        "emoji": "🤗"
+      },
+      {
+        "text": "The five ducklings swam happily behind their mother, all the way home.",
+        "emoji": "🏡"
+      }
+    ]
+  },
+  {
+    "id": "impatient-seed",
+    "title": "The Impatient Seed",
+    "emoji": "🌱",
+    "pages": [
+      {
+        "text": "A little seed was planted in the dark, moist soil.",
+        "emoji": "🌱"
+      },
+      {
+        "text": "\"I want to grow right now!\" she said, stomping her tiny roots.",
+        "emoji": "😤"
+      },
+      {
+        "text": "The rain fell gently and said, \"Be patient, I will help you grow.\"",
+        "emoji": "🌧️"
+      },
+      {
+        "text": "The sun shone every day and warmed the soil all around her.",
+        "emoji": "☀️"
+      },
+      {
+        "text": "Day after day, the seed felt bigger, but still saw nothing.",
+        "emoji": "📅"
+      },
+      {
+        "text": "Finally, a tiny green sprout pushed through the earth and saw the light.",
+        "emoji": "🌿"
+      },
+      {
+        "text": "The seed had become a plant, and learned that growing takes time.",
+        "emoji": "🌻"
+      }
+    ]
+  },
+  {
+    "id": "moon-disappeared",
+    "title": "The Day the Moon Disappeared",
+    "emoji": "🌕",
+    "pages": [
+      {
+        "text": "One night, the children looked up at the sky and the moon wasn't there.",
+        "emoji": "🌌"
+      },
+      {
+        "text": "Everyone was scared: without the moon, the sky looked very dark.",
+        "emoji": "😨"
+      },
+      {
+        "text": "A wise owl said, \"The moon hasn't disappeared, she's just changing shape.\"",
+        "emoji": "🦉"
+      },
+      {
+        "text": "The next night, a thin sliver of moon appeared, like a smile in the sky.",
+        "emoji": "🌙"
+      },
+      {
+        "text": "Each night, the moon grew a little bigger, until she was round again.",
+        "emoji": "🌔"
+      },
+      {
+        "text": "The children learned the moon always makes this journey, month after month.",
+        "emoji": "📖"
+      },
+      {
+        "text": "Now, every night, they look up to see the moon's new shape.",
+        "emoji": "✨"
+      }
+    ]
+  },
+  {
+    "id": "baltasar-first-school-day",
+    "title": "Baltasar's First Day of School",
+    "emoji": "🎒",
+    "pages": [
+      {
+        "text": "Baltasar woke up very early, nervous: it was his first day of school.",
+        "emoji": "🎒"
+      },
+      {
+        "text": "He put on his new sweater and his backpack, his heart beating fast.",
+        "emoji": "👕"
+      },
+      {
+        "text": "At the school door, he held his mom's hand tightly and didn't want to go in.",
+        "emoji": "🚪"
+      },
+      {
+        "text": "A girl named Sofia smiled and said, \"Want to play with me?\"",
+        "emoji": "😊"
+      },
+      {
+        "text": "Together, they built a tower of blocks and drew a blue dragon.",
+        "emoji": "🧱"
+      },
+      {
+        "text": "When his mom came back, Baltasar didn't even want to leave — he'd made so many friends.",
+        "emoji": "🤗"
+      },
+      {
+        "text": "That night, he told his family everything, excited for the next day.",
+        "emoji": "🌙"
+      }
+    ]
+  },
+  {
+    "id": "monster-afraid-of-dark",
+    "title": "The Monster Who Was Afraid of the Dark",
+    "emoji": "👹",
+    "pages": [
+      {
+        "text": "Grunf was a furry monster who lived under a bed.",
+        "emoji": "👹"
+      },
+      {
+        "text": "Everyone thought monsters weren't afraid of anything, but Grunf was afraid of the dark.",
+        "emoji": "🌑"
+      },
+      {
+        "text": "When the light went out, Grunf trembled and hid under a blanket.",
+        "emoji": "😰"
+      },
+      {
+        "text": "One night, a girl named Ana heard him shaking and asked, \"Are you okay?\"",
+        "emoji": "👧"
+      },
+      {
+        "text": "Grunf confessed his secret, and Ana brought him a small night light.",
+        "emoji": "💡"
+      },
+      {
+        "text": "With the little light on, Grunf saw that the dark was just... dark, nothing more.",
+        "emoji": "🕯️"
+      },
+      {
+        "text": "Since then, Grunf and Ana are friends and sleep peacefully with the soft light on.",
+        "emoji": "🤝"
+      }
+    ]
+  },
+  {
+    "id": "leonor-forgotten-castle",
+    "title": "Leonor and the Forgotten Castle",
+    "emoji": "🏰",
+    "pages": [
+      {
+        "text": "Leonor was visiting her grandparents when she found a stone gate hidden among the brambles.",
+        "emoji": "🏰"
+      },
+      {
+        "text": "On the other side stood an old castle, its towers covered in green moss.",
+        "emoji": "🌿"
+      },
+      {
+        "text": "A very old guard in rusty armor limped out to greet her.",
+        "emoji": "🛡️"
+      },
+      {
+        "text": "\"This castle was built seven hundred years ago, when King Afonso Henriques fought to make Portugal a kingdom,\" he said.",
+        "emoji": "👑"
+      },
+      {
+        "text": "Leonor asked why it was so forgotten, and the guard sighed: \"No one comes to hear the old stories anymore.\"",
+        "emoji": "😔"
+      },
+      {
+        "text": "She explored the great hall, where a huge map showed how Portugal grew over the centuries.",
+        "emoji": "🗺️"
+      },
+      {
+        "text": "In the courtyard, she saw a replica of the caravel ships Portuguese explorers once sailed around the world.",
+        "emoji": "⛵"
+      },
+      {
+        "text": "As she left, Leonor promised to return with her school friends, so the castle's stories would never be forgotten again.",
+        "emoji": "🤝"
+      }
+    ]
+  },
+  {
+    "id": "tomas-human-body",
+    "title": "Tomás Travels Through the Human Body",
+    "emoji": "🫀",
+    "pages": [
+      {
+        "text": "Tomás drank his scientist grandfather's magic potion and shrank to the size of a grain of rice!",
+        "emoji": "🫀"
+      },
+      {
+        "text": "He slid down his throat and landed in a pink pool: the stomach, full of juices dissolving food.",
+        "emoji": "🍽️"
+      },
+      {
+        "text": "Then he traveled through a long tube, the intestines, where nutrients passed into the blood.",
+        "emoji": "🌀"
+      },
+      {
+        "text": "A red river appeared: blood, traveling through blood vessels all over the body.",
+        "emoji": "🩸"
+      },
+      {
+        "text": "Tomás reached a room that went \"thump-thump\": the heart, pumping blood nonstop.",
+        "emoji": "❤️"
+      },
+      {
+        "text": "He climbed up to two pink balloons that filled and emptied: the lungs, trading fresh air for used air.",
+        "emoji": "🫁"
+      },
+      {
+        "text": "Finally, he saw thousands of electric wires in the brain, sending orders to the whole body.",
+        "emoji": "🧠"
+      },
+      {
+        "text": "When the potion wore off, Tomás returned to normal size and told his grandfather everything, amazed.",
+        "emoji": "😃"
+      }
+    ]
+  },
+  {
+    "id": "traveling-water-drop",
+    "title": "The Traveling Drop",
+    "emoji": "💧",
+    "pages": [
+      {
+        "text": "Little Drop lived in the sea, swimming among colorful fish, happy and salty.",
+        "emoji": "🌊"
+      },
+      {
+        "text": "One day, the sun warmed her so much she turned into vapor and rose into the sky.",
+        "emoji": "☀️"
+      },
+      {
+        "text": "Up there, she met thousands of other droplets, and together they formed a big white cloud.",
+        "emoji": "☁️"
+      },
+      {
+        "text": "When the cloud got too heavy, Little Drop fell as rain over a green mountain.",
+        "emoji": "🌧️"
+      },
+      {
+        "text": "She slid down a stream, joined a river, and passed through a city full of bridges.",
+        "emoji": "🏞️"
+      },
+      {
+        "text": "A family collected some river water, cleaned it, and Little Drop came out of a kitchen tap.",
+        "emoji": "🚰"
+      },
+      {
+        "text": "A girl drank Little Drop from a cup, and later she returned to the sea through the rivers, ready to start again.",
+        "emoji": "🔄"
+      }
+    ]
+  },
+  {
+    "id": "night-dinosaur-museum",
+    "title": "A Night at the Dinosaur Museum",
+    "emoji": "🦕",
+    "pages": [
+      {
+        "text": "Inês hid in the museum after closing time, to see the dinosaurs just a little longer.",
+        "emoji": "🦕"
+      },
+      {
+        "text": "When the lights went out, the Tyrannosaurus Rex bones began to glow softly.",
+        "emoji": "✨"
+      },
+      {
+        "text": "A voice whispered, \"Don't be scared, I'm just the museum's night guardian, Professor Bruno.\"",
+        "emoji": "👨‍🏫"
+      },
+      {
+        "text": "He explained dinosaurs lived over 65 million years ago, long before humans existed.",
+        "emoji": "📅"
+      },
+      {
+        "text": "He showed the Triceratops, with three horns for protection, and the Pteranodon, which flew but wasn't a true dinosaur.",
+        "emoji": "🦴"
+      },
+      {
+        "text": "A huge fossil footprint showed how a Brachiosaurus was as tall as a five-story building.",
+        "emoji": "🐾"
+      },
+      {
+        "text": "Professor Bruno explained a giant meteorite hit Earth and changed the climate forever, ending the dinosaurs' time.",
+        "emoji": "☄️"
+      },
+      {
+        "text": "In the morning, Inês was found asleep beside the skeleton, dreaming of giant creatures.",
+        "emoji": "😴"
+      }
+    ]
+  },
+  {
+    "id": "mystery-missing-magnet",
+    "title": "The Mystery of the Missing Magnet",
+    "emoji": "🧲",
+    "pages": [
+      {
+        "text": "During science class, the horseshoe-shaped magnet vanished from the teacher's desk.",
+        "emoji": "🧲"
+      },
+      {
+        "text": "Diana, the most curious kid in class, decided to investigate like a real detective.",
+        "emoji": "🔍"
+      },
+      {
+        "text": "First, she remembered magnets attract iron, steel, and nickel, but not wood or plastic.",
+        "emoji": "🔩"
+      },
+      {
+        "text": "She scanned the room and saw paper clips oddly sticking to her classmate Rui's backpack.",
+        "emoji": "📎"
+      },
+      {
+        "text": "She carefully opened the backpack, and there was the magnet, hidden under a book.",
+        "emoji": "📚"
+      },
+      {
+        "text": "Rui confessed he'd taken it to try at home, but forgot to bring it back.",
+        "emoji": "😅"
+      },
+      {
+        "text": "The teacher explained magnets have two poles, North and South, and like poles repel while opposite poles attract.",
+        "emoji": "🧭"
+      },
+      {
+        "text": "In the end, everyone did an experiment together, watching the magnet pull small nails, and Diana felt like a real scientist.",
+        "emoji": "🎉"
+      }
+    ]
+  },
+  {
+    "id": "traveling-euro",
+    "title": "The Traveling Euro",
+    "emoji": "💶",
+    "pages": [
+      {
+        "text": "The one-euro coin was born in a factory and kept in a bank, shiny and new.",
+        "emoji": "💶"
+      },
+      {
+        "text": "One day, it was given to Mr. Manuel as change for buying bread at the bakery.",
+        "emoji": "🍞"
+      },
+      {
+        "text": "Mr. Manuel kept it in his pocket and later gave it to his granddaughter Carlota as allowance.",
+        "emoji": "👵"
+      },
+      {
+        "text": "Carlota wanted to buy ice cream, but decided to save half the money in her piggy bank.",
+        "emoji": "🐷"
+      },
+      {
+        "text": "The other coin went for ice cream, and the traveling euro stayed in the ice cream seller's pocket.",
+        "emoji": "🍦"
+      },
+      {
+        "text": "The seller used it to pay the shop's electricity bill, and it traveled on to an energy company.",
+        "emoji": "💡"
+      },
+      {
+        "text": "The coin learned that money passes from hand to hand, helping people trade things they need.",
+        "emoji": "🔄"
+      },
+      {
+        "text": "Meanwhile, in Carlota's piggy bank, the other half of the money slowly grew towards a bigger dream: a new bicycle.",
+        "emoji": "🚲"
+      }
+    ]
+  },
+  {
+    "id": "red-backpack-world-trip",
+    "title": "The Red Backpack's Trip Around the World",
+    "emoji": "🎒",
+    "pages": [
+      {
+        "text": "Marta's red backpack was magic: every time she slept, it took her to a different country.",
+        "emoji": "🎒"
+      },
+      {
+        "text": "On the first night, she woke up in France, near the Eiffel Tower, and learned to say \"bonjour\" to everyone.",
+        "emoji": "🗼"
+      },
+      {
+        "text": "She ate warm croissants and watched painters working by the Seine river.",
+        "emoji": "🥐"
+      },
+      {
+        "text": "On the second night, she arrived in Japan, where she saw pink mountains covered in cherry blossoms.",
+        "emoji": "🌸"
+      },
+      {
+        "text": "She learned to bow to say hello and tried eating with chopsticks for the first time.",
+        "emoji": "🥢"
+      },
+      {
+        "text": "On the third night, she went to Egypt, where she saw giant pyramids and heard stories of ancient pharaohs.",
+        "emoji": "🏜️"
+      },
+      {
+        "text": "A guide told her the pyramids are over four thousand years old, built with huge stone blocks.",
+        "emoji": "🐫"
+      },
+      {
+        "text": "On the last night, she arrived in Brazil, danced samba at a colorful party, and tasted sweet fruit under the hot sun.",
+        "emoji": "🎉"
+      },
+      {
+        "text": "When Marta woke up in her own bed, she smiled: the backpack had shown her the world is huge and full of wonderful things.",
+        "emoji": "🌍"
+      }
+    ]
+  },
+  {
+    "id": "science-detectives",
+    "title": "The Science Detectives",
+    "emoji": "🔬",
+    "pages": [
+      {
+        "text": "At the Science Club, three friends — Rita, Zé and Nuno — solved mysteries using only observation and experiments.",
+        "emoji": "🔬"
+      },
+      {
+        "text": "One day, the plants in the school garden began wilting with no explanation, and the teacher asked the trio for help.",
+        "emoji": "🌱"
+      },
+      {
+        "text": "Rita suggested forming a hypothesis: maybe they lacked water, or maybe there was too much sun.",
+        "emoji": "❓"
+      },
+      {
+        "text": "Zé measured how much water each plant received, while Nuno noted the hours of sunlight on each bed.",
+        "emoji": "📝"
+      },
+      {
+        "text": "They discovered the wiltiest plants were near a pipe with a small hole, letting all the water leak out.",
+        "emoji": "🚿"
+      },
+      {
+        "text": "They fixed the pipe with the gardener's help, and two weeks later the plants bloomed again.",
+        "emoji": "🌻"
+      },
+      {
+        "text": "The trio learned science begins with a good question, follows with careful tests, and ends with conclusions based on evidence.",
+        "emoji": "✅"
+      },
+      {
+        "text": "Since then, the Science Club became known at school as \"the detectives who solve any mystery with the scientific method.\"",
+        "emoji": "🏆"
+      }
+    ]
+  },
+  {
+    "id": "portuguese-time-machine",
+    "title": "The Portuguese Time Machine",
+    "emoji": "⏳",
+    "pages": [
+      {
+        "text": "In grandma's attic, Duarte found an old pocket watch that, when opened, created a swirl of light.",
+        "emoji": "⏳"
+      },
+      {
+        "text": "Without meaning to, he touched the hands and was transported to 1140, when King Afonso Henriques fought to separate Portugal from the Kingdom of León.",
+        "emoji": "⚔️"
+      },
+      {
+        "text": "He saw soldiers building stone castles and heard stories about the Battle of São Mamede, decisive for independence.",
+        "emoji": "🏰"
+      },
+      {
+        "text": "The watch spun again and Duarte appeared in 1497, at the Lisbon docks, beside Vasco da Gama, about to sail toward India.",
+        "emoji": "⛵"
+      },
+      {
+        "text": "He learned about navigation instruments, like the astrolabe, which helped sailors find their way by the stars.",
+        "emoji": "🧭"
+      },
+      {
+        "text": "Next, he traveled to 1755, the day of the great Lisbon earthquake, and saw how the city was rebuilt by the Marquis of Pombal.",
+        "emoji": "🏙️"
+      },
+      {
+        "text": "Finally, he arrived in 1974, witnessing the Carnation Revolution, when people placed flowers in soldiers' guns to ask for peace and freedom.",
+        "emoji": "🌹"
+      },
+      {
+        "text": "When he returned to the attic, Duarte realized Portugal's history was made of courage, discovery, and hope.",
+        "emoji": "🇵🇹"
+      }
+    ]
+  },
+  {
+    "id": "expedition-planet-earth",
+    "title": "Expedition Planet Earth",
+    "emoji": "🌍",
+    "pages": [
+      {
+        "text": "The young explorers set off on an expedition to discover Earth's most incredible ecosystems.",
+        "emoji": "🌍"
+      },
+      {
+        "text": "First, they crossed the Amazon Rainforest, learning it produces about 20% of the planet's oxygen.",
+        "emoji": "🌳"
+      },
+      {
+        "text": "They saw monkeys, toucans, and leafcutter ants, and understood how each species depends on the others to survive.",
+        "emoji": "🐒"
+      },
+      {
+        "text": "Then they headed to the Sahara Desert, where daytime temperatures can pass 45 degrees, but nights get very cold.",
+        "emoji": "🏜️"
+      },
+      {
+        "text": "A Bedouin guide explained how camels store fat in their humps and can travel days without drinking water.",
+        "emoji": "🐫"
+      },
+      {
+        "text": "The expedition continued to Antarctica, where the explorers saw huge icebergs and emperor penguins protecting their eggs from the extreme cold.",
+        "emoji": "🐧"
+      },
+      {
+        "text": "Finally, they dove into the Great Barrier Reef in Australia and were amazed by the amount of life hidden underwater.",
+        "emoji": "🐠"
+      },
+      {
+        "text": "At the end of the trip, everyone agreed: protecting these places means protecting the balance of the whole planet.",
+        "emoji": "💚"
+      }
+    ]
+  },
+  {
+    "id": "inventors-club",
+    "title": "The Inventors Club",
+    "emoji": "💡",
+    "pages": [
+      {
+        "text": "Every Friday, a group of kids met in Sara's garage to invent new things.",
+        "emoji": "💡"
+      },
+      {
+        "text": "That week's goal was to create something to help Miguel's grandmother, who struggled reaching high objects.",
+        "emoji": "👵"
+      },
+      {
+        "text": "First, they brainstormed, writing every idea on the board, even the craziest ones.",
+        "emoji": "📋"
+      },
+      {
+        "text": "Then they picked the best idea: an extendable arm made from PVC pipes and a recycled claw.",
+        "emoji": "🦾"
+      },
+      {
+        "text": "They built a first prototype, but it broke while trying to reach a cereal box.",
+        "emoji": "💥"
+      },
+      {
+        "text": "Instead of giving up, they analyzed what went wrong and reinforced the joint with extra-strong tape.",
+        "emoji": "🔧"
+      },
+      {
+        "text": "On the second try, the extendable arm worked perfectly, and Miguel's grandmother loved the gift.",
+        "emoji": "🎁"
+      },
+      {
+        "text": "They learned engineering's most important lesson: failure isn't the end, just a step toward a better idea.",
+        "emoji": "🌟"
+      }
+    ]
+  },
+  {
+    "id": "internet-guardians",
+    "title": "The Internet Guardians",
+    "emoji": "🛡️",
+    "pages": [
+      {
+        "text": "Leandro received a message from a stranger asking for his address and his parents' phone number.",
+        "emoji": "🛡️"
+      },
+      {
+        "text": "Not knowing what to do, he showed the message to his older sister Carolina, part of a group called \"Internet Guardians.\"",
+        "emoji": "👧"
+      },
+      {
+        "text": "Carolina explained the first rule: never share personal info, like address, school, or phone, with strangers online.",
+        "emoji": "🔒"
+      },
+      {
+        "text": "The second rule was that a strong password mixes letters, numbers and symbols, and should never be shared, even with friends.",
+        "emoji": "🔑"
+      },
+      {
+        "text": "She also explained that not everything online is true, and you should always confirm information with a trusted adult.",
+        "emoji": "🤔"
+      },
+      {
+        "text": "Together, they blocked the stranger and reported the message on the app, exactly as a trusted adult had taught them.",
+        "emoji": "🚫"
+      },
+      {
+        "text": "Carolina reminded Leandro: \"If something online makes you uncomfortable, always tell a trusted adult, without fear.\"",
+        "emoji": "💬"
+      },
+      {
+        "text": "From that day on, Leandro also became an Internet Guardian, helping other classmates browse safely.",
+        "emoji": "🌐"
+      }
+    ]
+  },
+  {
+    "id": "fake-news-agency",
+    "title": "The Fake News Agency",
+    "emoji": "📰",
+    "pages": [
+      {
+        "text": "A rumor started spreading at school: \"the cafeteria is closing forever next week!\"",
+        "emoji": "📰"
+      },
+      {
+        "text": "The journalism club, led by Beatriz, decided to investigate before believing or spreading the news.",
+        "emoji": "🔍"
+      },
+      {
+        "text": "First they asked: \"Who said this? Where was it published? Is there a reliable source?\"",
+        "emoji": "❓"
+      },
+      {
+        "text": "They found the news came from an authorless message, shared phone to phone, with no proof at all.",
+        "emoji": "📱"
+      },
+      {
+        "text": "They went to talk directly with the school principal, the most reliable source on this matter.",
+        "emoji": "🏫"
+      },
+      {
+        "text": "The principal explained the cafeteria would only close for two days for cleaning, not forever.",
+        "emoji": "🧹"
+      },
+      {
+        "text": "Beatriz and her team wrote a short article for the school newspaper, explaining the truth with clear facts.",
+        "emoji": "✍️"
+      },
+      {
+        "text": "Everyone learned the golden rule: always check the source before sharing news, and never spread something without being sure.",
+        "emoji": "✅"
+      }
+    ]
+  },
+  {
+    "id": "mission-mars",
+    "title": "Mission Mars",
+    "emoji": "🚀",
+    "pages": [
+      {
+        "text": "The crew of the ship Hope prepared for the hardest landing of their mission: touching down on Mars.",
+        "emoji": "🚀"
+      },
+      {
+        "text": "Commander Alice told the crew the journey had taken seven months, covering about 480 million kilometers.",
+        "emoji": "🌌"
+      },
+      {
+        "text": "As the ship entered the Martian atmosphere, it shook hard: Mars's air is much thinner than Earth's, making braking harder.",
+        "emoji": "💨"
+      },
+      {
+        "text": "After a perfect landing, the crew stepped out and saw an orange sky, covered in fine dust that gives Mars its reddish color.",
+        "emoji": "🟠"
+      },
+      {
+        "text": "They collected rock samples near an ancient dry riverbed, looking for signs that Mars once had liquid water.",
+        "emoji": "🪨"
+      },
+      {
+        "text": "Engineer Tomás tested a small robot that extracted oxygen from carbon dioxide in the Martian air, an important step for future human missions.",
+        "emoji": "🤖"
+      },
+      {
+        "text": "At night, they saw Mars's two small moons, Phobos and Deimos, crossing the dark sky much faster than our Moon.",
+        "emoji": "🌙"
+      },
+      {
+        "text": "Before leaving, Commander Alice left a plaque: \"We were here, on behalf of all humankind, in search of knowledge.\"",
+        "emoji": "🏳️"
+      }
+    ]
+  },
+  {
+    "id": "mystery-seven-capitals",
+    "title": "The Mystery of the Seven Capitals",
+    "emoji": "🗺️",
+    "pages": [
+      {
+        "text": "An old geographer left a riddle hidden in a chest: seven clues leading to seven capital cities of the world.",
+        "emoji": "🗺️"
+      },
+      {
+        "text": "The first clue read: \"Where the Tagus meets the ocean, and streets climb up hills.\" It was Lisbon, capital of Portugal.",
+        "emoji": "🇵🇹"
+      },
+      {
+        "text": "The second: \"An iron tower points to the sky, in a city cut by a famous river.\" It was Paris, France.",
+        "emoji": "🇫🇷"
+      },
+      {
+        "text": "The third spoke of \"a great wall nearby and a forbidden palace in the heart of the city\" — Beijing, China.",
+        "emoji": "🇨🇳"
+      },
+      {
+        "text": "The fourth described \"seven ancient hills and ruins where gladiators once fought\" — Rome, Italy.",
+        "emoji": "🇮🇹"
+      },
+      {
+        "text": "The fifth mentioned \"old gates and a wall that once split a city in two\" — Berlin, Germany.",
+        "emoji": "🇩🇪"
+      },
+      {
+        "text": "The sixth spoke of \"squares full of dancing and a museum with famous master paintings\" — Madrid, Spain.",
+        "emoji": "🇪🇸"
+      },
+      {
+        "text": "The last clue led to \"a river called the Thames and a giant clock that chimes every hour\" — London, England.",
+        "emoji": "🇬🇧"
+      },
+      {
+        "text": "At the bottom of the chest, the explorers found a world map and a note: \"Each capital holds a story; go meet them with respect.\"",
+        "emoji": "🌍"
+      }
     ]
   }
 ]
