@@ -21,6 +21,9 @@ export default function NavBar() {
       <NavLink to="/songs" className="nav-link">
         🎵 {t("nav.songs")}
       </NavLink>
+      <NavLink to="/whys" className="nav-link">
+        ❓ {t("nav.whys")}
+      </NavLink>
     </nav>
   );
 }

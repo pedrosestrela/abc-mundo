@@ -6,6 +6,7 @@ import LanguagePicker from "./pages/LanguagePicker.jsx";
 import Alphabet from "./pages/Alphabet.jsx";
 import Reading from "./pages/Reading.jsx";
 import Songs from "./pages/Songs.jsx";
+import Whys from "./pages/Whys.jsx";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="/alphabet" element={<Alphabet />} />
           <Route path="/reading" element={<Reading />} />
           <Route path="/songs" element={<Songs />} />
+          <Route path="/whys" element={<Whys />} />
         </Routes>
       </main>
       <NavBar />

@@ -5,7 +5,7 @@ const resources = {
   pt: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Início", alphabet: "Alfabeto", reading: "Leitura", songs: "Canções", language: "Idiomas" },
+      nav: { home: "Início", alphabet: "Alfabeto", reading: "Leitura", songs: "Canções", language: "Idiomas", whys: "Porquês" },
       home: {
         pickProfile: "Escolhe o teu perfil",
         newProfile: "Novo perfil",
@@ -25,13 +25,19 @@ const resources = {
         songsTitle: "Canções",
         play: "Ouvir",
         speechUnavailable: "O áudio de voz não está disponível neste dispositivo.",
+        whysTitle: "O Grande Livro dos Porquês",
+        whysIntro: "Explora perguntas curiosas sobre o mundo e descobre as respostas passo a passo!",
+        whysQuickAnswer: "Resposta rápida",
+        whysMoreAnswer: "Quero saber mais",
+        whysExperiment: "Quero experimentar",
+        whysExplored: "Perguntas exploradas",
       },
     },
   },
   en: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Home", alphabet: "Alphabet", reading: "Reading", songs: "Songs", language: "Languages" },
+      nav: { home: "Home", alphabet: "Alphabet", reading: "Reading", songs: "Songs", language: "Languages", whys: "Whys" },
       home: {
         pickProfile: "Pick your profile",
         newProfile: "New profile",
@@ -51,13 +57,19 @@ const resources = {
         songsTitle: "Songs",
         play: "Listen",
         speechUnavailable: "Voice audio is not available on this device.",
+        whysTitle: "The Great Book of Whys",
+        whysIntro: "Explore curious questions about the world and discover the answers step by step!",
+        whysQuickAnswer: "Quick answer",
+        whysMoreAnswer: "I want to know more",
+        whysExperiment: "I want to try it",
+        whysExplored: "Questions explored",
       },
     },
   },
   de: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Start", alphabet: "Alphabet", reading: "Lesen", songs: "Lieder", language: "Sprachen" },
+      nav: { home: "Start", alphabet: "Alphabet", reading: "Lesen", songs: "Lieder", language: "Sprachen", whys: "Warums" },
       home: {
         pickProfile: "Wähle dein Profil",
         newProfile: "Neues Profil",
@@ -77,13 +89,19 @@ const resources = {
         songsTitle: "Lieder",
         play: "Anhören",
         speechUnavailable: "Sprachausgabe ist auf diesem Gerät nicht verfügbar.",
+        whysTitle: "Das große Buch der Warums",
+        whysIntro: "Entdecke neugierige Fragen über die Welt und finde Schritt für Schritt die Antworten!",
+        whysQuickAnswer: "Kurze Antwort",
+        whysMoreAnswer: "Ich will mehr wissen",
+        whysExperiment: "Ich will es ausprobieren",
+        whysExplored: "Erforschte Fragen",
       },
     },
   },
   fr: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Accueil", alphabet: "Alphabet", reading: "Lecture", songs: "Chansons", language: "Langues" },
+      nav: { home: "Accueil", alphabet: "Alphabet", reading: "Lecture", songs: "Chansons", language: "Langues", whys: "Pourquoi" },
       home: {
         pickProfile: "Choisis ton profil",
         newProfile: "Nouveau profil",
@@ -103,13 +121,19 @@ const resources = {
         songsTitle: "Chansons",
         play: "Écouter",
         speechUnavailable: "L'audio vocal n'est pas disponible sur cet appareil.",
+        whysTitle: "Le Grand Livre des Pourquoi",
+        whysIntro: "Explore des questions curieuses sur le monde et découvre les réponses étape par étape !",
+        whysQuickAnswer: "Réponse rapide",
+        whysMoreAnswer: "Je veux en savoir plus",
+        whysExperiment: "Je veux essayer",
+        whysExplored: "Questions explorées",
       },
     },
   },
   zh: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "首页", alphabet: "字母表", reading: "阅读", songs: "歌曲", language: "语言" },
+      nav: { home: "首页", alphabet: "字母表", reading: "阅读", songs: "歌曲", language: "语言", whys: "为什么" },
       home: {
         pickProfile: "选择你的档案",
         newProfile: "新档案",
@@ -129,13 +153,19 @@ const resources = {
         songsTitle: "歌曲",
         play: "播放",
         speechUnavailable: "此设备不支持语音朗读。",
+        whysTitle: "为什么大百科",
+        whysIntro: "探索关于世界的有趣问题，一步一步发现答案！",
+        whysQuickAnswer: "快速答案",
+        whysMoreAnswer: "我想知道更多",
+        whysExperiment: "我想试一试",
+        whysExplored: "已探索的问题",
       },
     },
   },
   es: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Inicio", alphabet: "Alfabeto", reading: "Lectura", songs: "Canciones", language: "Idiomas" },
+      nav: { home: "Inicio", alphabet: "Alfabeto", reading: "Lectura", songs: "Canciones", language: "Idiomas", whys: "Porqués" },
       home: {
         pickProfile: "Elige tu perfil",
         newProfile: "Nuevo perfil",
@@ -155,13 +185,19 @@ const resources = {
         songsTitle: "Canciones",
         play: "Escuchar",
         speechUnavailable: "El audio de voz no está disponible en este dispositivo.",
+        whysTitle: "El Gran Libro de los Porqués",
+        whysIntro: "¡Explora preguntas curiosas sobre el mundo y descubre las respuestas paso a paso!",
+        whysQuickAnswer: "Respuesta rápida",
+        whysMoreAnswer: "Quiero saber más",
+        whysExperiment: "Quiero experimentar",
+        whysExplored: "Preguntas exploradas",
       },
     },
   },
   it: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Home", alphabet: "Alfabeto", reading: "Lettura", songs: "Canzoni", language: "Lingue" },
+      nav: { home: "Home", alphabet: "Alfabeto", reading: "Lettura", songs: "Canzoni", language: "Lingue", whys: "Perché" },
       home: {
         pickProfile: "Scegli il tuo profilo",
         newProfile: "Nuovo profilo",
@@ -181,6 +217,12 @@ const resources = {
         songsTitle: "Canzoni",
         play: "Ascolta",
         speechUnavailable: "L'audio vocale non è disponibile su questo dispositivo.",
+        whysTitle: "Il Grande Libro dei Perché",
+        whysIntro: "Esplora domande curiose sul mondo e scopri le risposte passo dopo passo!",
+        whysQuickAnswer: "Risposta rapida",
+        whysMoreAnswer: "Voglio saperne di più",
+        whysExperiment: "Voglio provare",
+        whysExplored: "Domande esplorate",
       },
     },
   },

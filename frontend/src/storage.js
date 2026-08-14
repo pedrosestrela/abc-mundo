@@ -38,6 +38,32 @@ export function setLangPair(pair) {
   }
 }
 
+const EXPLORED_WHYS_KEY = "abcmundo.exploredWhys";
+
+export function exploreWhy(profileName, whyId) {
+  try {
+    const raw = localStorage.getItem(EXPLORED_WHYS_KEY);
+    const all = raw ? JSON.parse(raw) : {};
+    const list = all[profileName] || [];
+    if (!list.includes(whyId)) {
+      all[profileName] = [...list, whyId];
+      localStorage.setItem(EXPLORED_WHYS_KEY, JSON.stringify(all));
+    }
+  } catch {
+    // ignore
+  }
+}
+
+export function getExploredWhys(profileName) {
+  try {
+    const raw = localStorage.getItem(EXPLORED_WHYS_KEY);
+    const all = raw ? JSON.parse(raw) : {};
+    return all[profileName] || [];
+  } catch {
+    return [];
+  }
+}
+
 export function pingProgress({ profileName, module, event }) {
   try {
     fetch("/api/progress/ping", {

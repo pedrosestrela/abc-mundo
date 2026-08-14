@@ -1,0 +1,114 @@
+[
+  {
+    "id": "chuva",
+    "emoji": "🌧️",
+    "question": "Why does it rain?",
+    "quickAnswer": "Water from the sea, rivers and lakes evaporates, rises into the sky and forms clouds. When the clouds get too full of water, it falls as rain.",
+    "moreAnswer": "The Sun heats the water and turns it into invisible vapour that rises through the air. It is colder up high, so the vapour condenses into tiny droplets that form clouds. When the droplets join together and get too heavy, they fall as rain. Then it all goes back to the sea and rivers, and the cycle starts again — it's called the water cycle.",
+    "experiment": "On a hot day, watch a puddle in the sun in the morning and see how it disappears during the day. Where did the water go?"
+  },
+  {
+    "id": "ceu-azul",
+    "emoji": "🌤️",
+    "question": "Why is the sky blue?",
+    "quickAnswer": "Sunlight has every colour mixed together. When it enters the atmosphere, blue spreads out far more than the other colours, so we see a blue sky.",
+    "moreAnswer": "Sunlight looks white, but it's actually made of several colours, like a rainbow. Air is made of tiny particles that bounce light around in every direction, a process called scattering. Blue light has shorter waves and scatters much more than red or yellow, which is why the sky looks blue during the day.",
+    "experiment": "At sunset, notice how the sky turns orange and red instead of blue. That happens because the light travels through more atmosphere at that time."
+  },
+  {
+    "id": "dormir",
+    "emoji": "😴",
+    "question": "Why do we sleep?",
+    "quickAnswer": "Sleep lets the body and brain rest, helps us grow, and helps us store in memory everything we learned during the day.",
+    "moreAnswer": "While we sleep, the brain sorts through everything we learned and experienced, like tidying a drawer full of things. The body uses this time to repair muscles, produce growth hormones and strengthen the immune system. Without enough sleep, we feel tired, forgetful and get sick more easily.",
+    "experiment": "Keep a log of how many hours you sleep for a week, and notice how you feel on the days you slept more or less."
+  },
+  {
+    "id": "coracao",
+    "emoji": "❤️",
+    "question": "Why does the heart beat?",
+    "quickAnswer": "The heart beats to pump blood all around the body, carrying oxygen and food to every part of you.",
+    "moreAnswer": "The heart is a very special muscle that squeezes and relaxes non-stop, like a pump. Each beat pushes oxygen-rich blood to the lungs, muscles and brain. When you run or get scared, your heart beats faster because your body needs more oxygen.",
+    "experiment": "Run in place for one minute, then put your hand on your chest. Can you feel your heart beating faster?"
+  },
+  {
+    "id": "aviao",
+    "emoji": "✈️",
+    "question": "How does a plane fly?",
+    "quickAnswer": "A plane's wings have a special shape that makes air move faster over the top than underneath, creating a force that pushes the plane upward.",
+    "moreAnswer": "That force is called lift. The wing is curved on top and flatter underneath, so the air passing over the top travels a longer distance and creates less pressure. The higher pressure underneath pushes the wing up into the air. The engines provide the speed needed to make this work.",
+    "experiment": "Blow across the top of a strip of paper held near your mouth and watch it rise — that's the same lift principle!"
+  },
+  {
+    "id": "barco",
+    "emoji": "⛵",
+    "question": "Why does a boat float?",
+    "quickAnswer": "A boat floats because it pushes aside more water than it weighs, and the water pushes back up on it.",
+    "moreAnswer": "This is called Archimedes' principle: any object in water feels an upward force equal to the weight of the water it pushes out of the way. A boat has a wide, hollow shape, so it pushes aside a lot of water even though it's heavy, and that force is enough to keep it afloat.",
+    "experiment": "Make a small boat out of aluminium foil and try floating it in a basin. Then scrunch it into a ball — why does it sink now?"
+  },
+  {
+    "id": "eletricidade",
+    "emoji": "⚡",
+    "question": "Where does electricity come from?",
+    "quickAnswer": "Electricity is made in power plants that turn other kinds of energy, like wind, water or sunlight, into electrical energy.",
+    "moreAnswer": "In power plants, something spins a turbine very fast — it could be falling water, strong wind or hot steam. The turbine is connected to a generator that turns that motion into electricity. Then the electricity travels through cables all the way to our homes.",
+    "experiment": "Look for a windmill or a solar panel near you and see how they capture wind or sunlight."
+  },
+  {
+    "id": "dinossauros",
+    "emoji": "🦕",
+    "question": "Why did the dinosaurs disappear?",
+    "quickAnswer": "Scientists believe a huge asteroid hit the Earth millions of years ago and changed the climate so fast that the dinosaurs couldn't survive.",
+    "moreAnswer": "About 66 million years ago, a giant asteroid crashed into the Earth. The impact threw so much dust and ash into the air that it darkened the sky for a long time, leaving the planet cold and without enough light for plants to grow. Without food, most dinosaurs did not survive. Only a few small animals, like the ancestors of birds, managed to make it through.",
+    "experiment": null
+  },
+  {
+    "id": "sombra",
+    "emoji": "🌗",
+    "question": "Why do we have shadows?",
+    "quickAnswer": "A shadow appears when your body blocks light and stops it from reaching the ground behind you.",
+    "moreAnswer": "Light always travels in a straight line. When an opaque object, like your body, gets in the way, the light can't pass through it, so a dark patch is left on the other side — the shadow. The closer the light source is to you, the bigger and sharper the shadow becomes.",
+    "experiment": "On a sunny day, look at your shadow in the morning, at noon and in the afternoon. Notice how it changes size and direction."
+  },
+  {
+    "id": "lua",
+    "emoji": "🌙",
+    "question": "Why does the Moon change shape?",
+    "quickAnswer": "The Moon doesn't really change shape — what we see are different parts of it lit up by the Sun, depending on its position relative to Earth.",
+    "moreAnswer": "The Moon has no light of its own; it reflects the Sun's light. As the Moon orbits the Earth, we see different parts of it lit up: sometimes we see all of it (full moon), sometimes just a small sliver (new or crescent moon). This whole cycle takes about 29 days.",
+    "experiment": "Watch the Moon every night for two weeks and draw the shape you see each day."
+  },
+  {
+    "id": "frio",
+    "emoji": "🥶",
+    "question": "Why do we feel cold?",
+    "quickAnswer": "We feel cold when the body loses heat faster than it can make it, and the skin warns the brain about it.",
+    "moreAnswer": "Our skin has sensors that detect the temperature around us. When it's cold, the body loses heat to the air, and those sensors send a signal to the brain. The brain responds by making us shiver, which creates heat through muscle movement, and by reducing blood flow near the skin to keep heat inside the body.",
+    "experiment": "Put one hand in warm water and the other in cold water at the same time. How does each one feel?"
+  },
+  {
+    "id": "peixes",
+    "emoji": "🐟",
+    "question": "Why don't fish drown?",
+    "quickAnswer": "Fish have gills, a special organ that takes oxygen straight from the water, so they don't need to breathe air like we do.",
+    "moreAnswer": "While we breathe with lungs and need air, fish use gills, which are found on the sides of their head. As water passes over the gills, they pull the oxygen dissolved in the water and let it enter the fish's blood. That's why a fish out of water can't breathe, just like we can't breathe underwater without help.",
+    "experiment": "Watch a fish in a tank and notice the constant movement of its mouth and gills — that's how it breathes."
+  },
+  {
+    "id": "arco-iris",
+    "emoji": "🌈",
+    "question": "Why does a rainbow appear?",
+    "quickAnswer": "A rainbow appears when sunlight passes through raindrops in the air and splits into the different colours it's made of.",
+    "moreAnswer": "White sunlight is actually a mix of several colours. When sunbeams enter a water droplet, they bend, bounce inside the droplet and come back out, splitting into different colours, like a tiny prism. That's why rainbows only appear when there's sun and rain at the same time.",
+    "experiment": "With your back to the Sun, use a hose or spray bottle to make a small rainbow."
+  },
+  {
+    "id": "formigas",
+    "emoji": "🐜",
+    "question": "Why do ants walk in a line?",
+    "quickAnswer": "Ants leave a scent trail on the way to food, and other ants follow that scent, forming a line.",
+    "moreAnswer": "When an ant finds food, on its way back to the nest it leaves a substance on the ground called a pheromone, with a scent only ants can detect. Other ants follow that scent to reach the same food, and as they walk they leave more pheromone too, reinforcing the trail. That's how the neat line forms.",
+    "experiment": "If you spot a line of ants, watch carefully (without disturbing them) the path they take — it's usually always the same route."
+  }
+]
