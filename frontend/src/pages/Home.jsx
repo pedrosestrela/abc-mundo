@@ -3,7 +3,10 @@ import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { getProfile, setProfile, pingProgress } from "../storage.js";
 
-const AVATARS = ["🦊", "🐼", "🦁", "🐸", "🐵", "🐧", "🦄", "🐝"];
+const AVATARS = [
+  "🦸", "🦸‍♀️", "🦹", "🧙", "🧚", "🧞", "🥷", "🤖",
+  "👽", "🐉", "🦊", "🐼", "🦁", "🐸", "🦄", "🐝",
+];
 const AGES = [5, 6, 7, 8, 9, 10];
 
 export default function Home() {
