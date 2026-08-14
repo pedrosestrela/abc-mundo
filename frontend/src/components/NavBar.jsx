@@ -45,6 +45,9 @@ export default function NavBar() {
       <NavLink to="/parents" className="nav-link">
         👪 {t("nav.parents")}
       </NavLink>
+      <NavLink to="/achievements" className="nav-link">
+        🏆 {t("nav.achievements")}
+      </NavLink>
     </nav>
   );
 }

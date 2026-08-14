@@ -14,6 +14,7 @@ import Stories from "./pages/Stories.jsx";
 import MathGame from "./pages/MathGame.jsx";
 import Financial from "./pages/Financial.jsx";
 import ParentDashboard from "./pages/ParentDashboard.jsx";
+import Achievements from "./pages/Achievements.jsx";
 
 export default function App() {
   return (
@@ -33,6 +34,7 @@ export default function App() {
           <Route path="/math" element={<MathGame />} />
           <Route path="/financial" element={<Financial />} />
           <Route path="/parents" element={<ParentDashboard />} />
+          <Route path="/achievements" element={<Achievements />} />
         </Routes>
       </main>
       <NavBar />
