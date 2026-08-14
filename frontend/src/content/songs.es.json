@@ -1,0 +1,35 @@
+[
+  {
+    "id": "cancion-del-sol-abc",
+    "title": "La Canción del Sol ABC",
+    "lyrics": [
+      "A, B, C, ven a cantar así",
+      "D, E, F, qué alegría sentí",
+      "G, H, I, el sol sonríe aquí",
+      "J, K, L, bailamos sin fin"
+    ],
+    "illustrationId": "sun-friends"
+  },
+  {
+    "id": "letras-saltarinas",
+    "title": "Las Letras Saltarinas",
+    "lyrics": [
+      "Salta la M, salta la N también",
+      "O y P saltan, qué lindo vaivén",
+      "Q, R, S corren por el jardín",
+      "T, U, V cantan sin fin"
+    ],
+    "illustrationId": "jumping-letters"
+  },
+  {
+    "id": "circulo-de-amigos-abecedario",
+    "title": "El Círculo de Amigos del Abecedario",
+    "lyrics": [
+      "W, X, Y se dan la mano",
+      "Z cierra el círculo, qué bien hermano",
+      "Veintisiete amigos cantan a coro",
+      "Nuestro abecedario es un tesoro"
+    ],
+    "illustrationId": "alphabet-circle"
+  }
+]

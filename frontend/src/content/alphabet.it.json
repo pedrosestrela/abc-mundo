@@ -1,0 +1,170 @@
+[
+  {
+    "letter": "A",
+    "lower": "a",
+    "upper": "A",
+    "exampleWord": "Ape",
+    "emoji": "🐝",
+    "pronunciationHint": "A come Ape"
+  },
+  {
+    "letter": "B",
+    "lower": "b",
+    "upper": "B",
+    "exampleWord": "Balena",
+    "emoji": "🐳",
+    "pronunciationHint": "B come Balena"
+  },
+  {
+    "letter": "C",
+    "lower": "c",
+    "upper": "C",
+    "exampleWord": "Cane",
+    "emoji": "🐶",
+    "pronunciationHint": "C come Cane"
+  },
+  {
+    "letter": "D",
+    "lower": "d",
+    "upper": "D",
+    "exampleWord": "Delfino",
+    "emoji": "🐬",
+    "pronunciationHint": "D come Delfino"
+  },
+  {
+    "letter": "E",
+    "lower": "e",
+    "upper": "E",
+    "exampleWord": "Elefante",
+    "emoji": "🐘",
+    "pronunciationHint": "E come Elefante"
+  },
+  {
+    "letter": "F",
+    "lower": "f",
+    "upper": "F",
+    "exampleWord": "Fiore",
+    "emoji": "🌸",
+    "pronunciationHint": "F come Fiore"
+  },
+  {
+    "letter": "G",
+    "lower": "g",
+    "upper": "G",
+    "exampleWord": "Giraffa",
+    "emoji": "🦒",
+    "pronunciationHint": "G come Giraffa"
+  },
+  {
+    "letter": "H",
+    "lower": "h",
+    "upper": "H",
+    "exampleWord": "Hotel",
+    "emoji": "🏨",
+    "pronunciationHint": "H come Hotel"
+  },
+  {
+    "letter": "I",
+    "lower": "i",
+    "upper": "I",
+    "exampleWord": "Isola",
+    "emoji": "🏝️",
+    "pronunciationHint": "I come Isola"
+  },
+  {
+    "letter": "L",
+    "lower": "l",
+    "upper": "L",
+    "exampleWord": "Leone",
+    "emoji": "🦁",
+    "pronunciationHint": "L come Leone"
+  },
+  {
+    "letter": "M",
+    "lower": "m",
+    "upper": "M",
+    "exampleWord": "Mela",
+    "emoji": "🍎",
+    "pronunciationHint": "M come Mela"
+  },
+  {
+    "letter": "N",
+    "lower": "n",
+    "upper": "N",
+    "exampleWord": "Nuvola",
+    "emoji": "☁️",
+    "pronunciationHint": "N come Nuvola"
+  },
+  {
+    "letter": "O",
+    "lower": "o",
+    "upper": "O",
+    "exampleWord": "Orso",
+    "emoji": "🐻",
+    "pronunciationHint": "O come Orso"
+  },
+  {
+    "letter": "P",
+    "lower": "p",
+    "upper": "P",
+    "exampleWord": "Pesce",
+    "emoji": "🐟",
+    "pronunciationHint": "P come Pesce"
+  },
+  {
+    "letter": "Q",
+    "lower": "q",
+    "upper": "Q",
+    "exampleWord": "Quadro",
+    "emoji": "🖼️",
+    "pronunciationHint": "Q come Quadro"
+  },
+  {
+    "letter": "R",
+    "lower": "r",
+    "upper": "R",
+    "exampleWord": "Rana",
+    "emoji": "🐸",
+    "pronunciationHint": "R come Rana"
+  },
+  {
+    "letter": "S",
+    "lower": "s",
+    "upper": "S",
+    "exampleWord": "Sole",
+    "emoji": "☀️",
+    "pronunciationHint": "S come Sole"
+  },
+  {
+    "letter": "T",
+    "lower": "t",
+    "upper": "T",
+    "exampleWord": "Tigre",
+    "emoji": "🐯",
+    "pronunciationHint": "T come Tigre"
+  },
+  {
+    "letter": "U",
+    "lower": "u",
+    "upper": "U",
+    "exampleWord": "Uva",
+    "emoji": "🍇",
+    "pronunciationHint": "U come Uva"
+  },
+  {
+    "letter": "V",
+    "lower": "v",
+    "upper": "V",
+    "exampleWord": "Volpe",
+    "emoji": "🦊",
+    "pronunciationHint": "V come Volpe"
+  },
+  {
+    "letter": "Z",
+    "lower": "z",
+    "upper": "Z",
+    "exampleWord": "Zebra",
+    "emoji": "🦓",
+    "pronunciationHint": "Z come Zebra"
+  }
+]

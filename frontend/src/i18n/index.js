@@ -132,6 +132,58 @@ const resources = {
       },
     },
   },
+  es: {
+    translation: {
+      appName: "ABC Mundo",
+      nav: { home: "Inicio", alphabet: "Alfabeto", reading: "Lectura", songs: "Canciones", language: "Idiomas" },
+      home: {
+        pickProfile: "Elige tu perfil",
+        newProfile: "Nuevo perfil",
+        name: "Nombre",
+        start: "Empezar",
+        chooseAvatar: "Elige un avatar",
+      },
+      languagePicker: {
+        title: "Elige tus idiomas",
+        mother: "Idioma principal",
+        secondary: "Idioma a aprender",
+        continue: "Continuar",
+      },
+      modules: {
+        alphabetTitle: "Alfabeto",
+        readingTitle: "Lectura",
+        songsTitle: "Canciones",
+        play: "Escuchar",
+        speechUnavailable: "El audio de voz no está disponible en este dispositivo.",
+      },
+    },
+  },
+  it: {
+    translation: {
+      appName: "ABC Mundo",
+      nav: { home: "Home", alphabet: "Alfabeto", reading: "Lettura", songs: "Canzoni", language: "Lingue" },
+      home: {
+        pickProfile: "Scegli il tuo profilo",
+        newProfile: "Nuovo profilo",
+        name: "Nome",
+        start: "Inizia",
+        chooseAvatar: "Scegli un avatar",
+      },
+      languagePicker: {
+        title: "Scegli le tue lingue",
+        mother: "Lingua principale",
+        secondary: "Lingua da imparare",
+        continue: "Continua",
+      },
+      modules: {
+        alphabetTitle: "Alfabeto",
+        readingTitle: "Lettura",
+        songsTitle: "Canzoni",
+        play: "Ascolta",
+        speechUnavailable: "L'audio vocale non è disponibile su questo dispositivo.",
+      },
+    },
+  },
 };
 
 i18n.use(initReactI18next).init({

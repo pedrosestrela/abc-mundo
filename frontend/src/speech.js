@@ -6,6 +6,8 @@ const LANG_TO_BCP47 = {
   de: "de-DE",
   fr: "fr-FR",
   zh: "zh-CN",
+  es: "es-ES",
+  it: "it-IT",
 };
 
 export function isSpeechAvailable() {

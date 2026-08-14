@@ -2,7 +2,7 @@
 
 ABC Mundo é uma aplicação web de literacia infantil, no estilo Khan Kids,
 que ensina o reconhecimento de letras maiúsculas/minúsculas, leitura e
-escrita em 5 idiomas: Português, Inglês, Alemão, Francês e Mandarim.
+escrita em 7 idiomas: Português, Inglês, Alemão, Francês, Mandarim, Espanhol e Italiano.
 
 Os pais/professores escolhem um "idioma principal" (interface) e um
 "idioma secundário" (idioma a aprender), e a app mostra sempre os dois em

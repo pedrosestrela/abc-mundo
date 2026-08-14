@@ -1,0 +1,35 @@
+[
+  {
+    "id": "canzone-del-sole-abc",
+    "title": "La Canzone del Sole ABC",
+    "lyrics": [
+      "A, B, C, vieni a cantare con me",
+      "D, E, F, che allegria che c'è",
+      "G, H, I, il sole sorride qui",
+      "L, M, N, balliamo così"
+    ],
+    "illustrationId": "sun-friends"
+  },
+  {
+    "id": "lettere-saltellanti",
+    "title": "Le Lettere Saltellanti",
+    "lyrics": [
+      "Salta la O, salta la P anche tu",
+      "Q e R saltellano, che bel tutù",
+      "S, T, U corrono nel giardino",
+      "V, Z cantano il ritornello piccino"
+    ],
+    "illustrationId": "jumping-letters"
+  },
+  {
+    "id": "cerchio-degli-amici-alfabeto",
+    "title": "Il Cerchio degli Amici dell'Alfabeto",
+    "lyrics": [
+      "Le lettere si danno la mano",
+      "Il cerchio si chiude piano piano",
+      "Tanti amici cantano in coro",
+      "Il nostro alfabeto è un tesoro"
+    ],
+    "illustrationId": "alphabet-circle"
+  }
+]

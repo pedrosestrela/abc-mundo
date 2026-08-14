@@ -1,0 +1,218 @@
+[
+  {
+    "letter": "A",
+    "lower": "a",
+    "upper": "A",
+    "exampleWord": "Abeja",
+    "emoji": "🐝",
+    "pronunciationHint": "A de Abeja"
+  },
+  {
+    "letter": "B",
+    "lower": "b",
+    "upper": "B",
+    "exampleWord": "Barco",
+    "emoji": "⛵",
+    "pronunciationHint": "B de Barco"
+  },
+  {
+    "letter": "C",
+    "lower": "c",
+    "upper": "C",
+    "exampleWord": "Casa",
+    "emoji": "🏠",
+    "pronunciationHint": "C de Casa"
+  },
+  {
+    "letter": "D",
+    "lower": "d",
+    "upper": "D",
+    "exampleWord": "Delfín",
+    "emoji": "🐬",
+    "pronunciationHint": "D de Delfín"
+  },
+  {
+    "letter": "E",
+    "lower": "e",
+    "upper": "E",
+    "exampleWord": "Elefante",
+    "emoji": "🐘",
+    "pronunciationHint": "E de Elefante"
+  },
+  {
+    "letter": "F",
+    "lower": "f",
+    "upper": "F",
+    "exampleWord": "Flor",
+    "emoji": "🌸",
+    "pronunciationHint": "F de Flor"
+  },
+  {
+    "letter": "G",
+    "lower": "g",
+    "upper": "G",
+    "exampleWord": "Girasol",
+    "emoji": "🌻",
+    "pronunciationHint": "G de Girasol"
+  },
+  {
+    "letter": "H",
+    "lower": "h",
+    "upper": "H",
+    "exampleWord": "Hormiga",
+    "emoji": "🐜",
+    "pronunciationHint": "H de Hormiga"
+  },
+  {
+    "letter": "I",
+    "lower": "i",
+    "upper": "I",
+    "exampleWord": "Iglú",
+    "emoji": "🧊",
+    "pronunciationHint": "I de Iglú"
+  },
+  {
+    "letter": "J",
+    "lower": "j",
+    "upper": "J",
+    "exampleWord": "Jirafa",
+    "emoji": "🦒",
+    "pronunciationHint": "J de Jirafa"
+  },
+  {
+    "letter": "K",
+    "lower": "k",
+    "upper": "K",
+    "exampleWord": "Kiwi",
+    "emoji": "🥝",
+    "pronunciationHint": "K de Kiwi"
+  },
+  {
+    "letter": "L",
+    "lower": "l",
+    "upper": "L",
+    "exampleWord": "León",
+    "emoji": "🦁",
+    "pronunciationHint": "L de León"
+  },
+  {
+    "letter": "M",
+    "lower": "m",
+    "upper": "M",
+    "exampleWord": "Mariposa",
+    "emoji": "🦋",
+    "pronunciationHint": "M de Mariposa"
+  },
+  {
+    "letter": "N",
+    "lower": "n",
+    "upper": "N",
+    "exampleWord": "Nube",
+    "emoji": "☁️",
+    "pronunciationHint": "N de Nube"
+  },
+  {
+    "letter": "Ñ",
+    "lower": "ñ",
+    "upper": "Ñ",
+    "exampleWord": "Ñandú",
+    "emoji": "🦤",
+    "pronunciationHint": "Ñ de Ñandú"
+  },
+  {
+    "letter": "O",
+    "lower": "o",
+    "upper": "O",
+    "exampleWord": "Oso",
+    "emoji": "🐻",
+    "pronunciationHint": "O de Oso"
+  },
+  {
+    "letter": "P",
+    "lower": "p",
+    "upper": "P",
+    "exampleWord": "Pez",
+    "emoji": "🐟",
+    "pronunciationHint": "P de Pez"
+  },
+  {
+    "letter": "Q",
+    "lower": "q",
+    "upper": "Q",
+    "exampleWord": "Queso",
+    "emoji": "🧀",
+    "pronunciationHint": "Q de Queso"
+  },
+  {
+    "letter": "R",
+    "lower": "r",
+    "upper": "R",
+    "exampleWord": "Ratón",
+    "emoji": "🐭",
+    "pronunciationHint": "R de Ratón"
+  },
+  {
+    "letter": "S",
+    "lower": "s",
+    "upper": "S",
+    "exampleWord": "Sol",
+    "emoji": "☀️",
+    "pronunciationHint": "S de Sol"
+  },
+  {
+    "letter": "T",
+    "lower": "t",
+    "upper": "T",
+    "exampleWord": "Tigre",
+    "emoji": "🐯",
+    "pronunciationHint": "T de Tigre"
+  },
+  {
+    "letter": "U",
+    "lower": "u",
+    "upper": "U",
+    "exampleWord": "Uva",
+    "emoji": "🍇",
+    "pronunciationHint": "U de Uva"
+  },
+  {
+    "letter": "V",
+    "lower": "v",
+    "upper": "V",
+    "exampleWord": "Vaca",
+    "emoji": "🐄",
+    "pronunciationHint": "V de Vaca"
+  },
+  {
+    "letter": "W",
+    "lower": "w",
+    "upper": "W",
+    "exampleWord": "Wafle",
+    "emoji": "🧇",
+    "pronunciationHint": "W de Wafle"
+  },
+  {
+    "letter": "X",
+    "lower": "x",
+    "upper": "X",
+    "exampleWord": "Xilófono",
+    "emoji": "🎼",
+    "pronunciationHint": "X de Xilófono"
+  },
+  {
+    "letter": "Y",
+    "lower": "y",
+    "upper": "Y",
+    "exampleWord": "Yate",
+    "emoji": "🛥️",
+    "pronunciationHint": "Y de Yate"
+  },
+  {
+    "letter": "Z",
+    "lower": "z",
+    "upper": "Z",
+    "exampleWord": "Zorro",
+    "emoji": "🦊",
+    "pronunciationHint": "Z de Zorro"
+  }
+]
