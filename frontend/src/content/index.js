@@ -32,6 +32,7 @@ import phrasesEs from "./phrases.es.json";
 import phrasesIt from "./phrases.it.json";
 
 import countries from "./countries.json";
+import portugalHistory from "./portugalHistory.json";
 
 import missionsPt from "./missions.pt.json";
 import missionsEn from "./missions.en.json";
@@ -167,5 +168,19 @@ export function getCountries(langCode) {
     lng: c.lng,
     name: c.name[langCode] || c.name.en,
     fact: c.fact[langCode] || c.fact.en,
+  }));
+}
+
+// Portugal history timeline entries: same language-agnostic shape as
+// countries (title/description are per-language dictionaries); langCode
+// picks which strings to surface. Falls back to pt since the content is
+// written primarily for Portuguese children.
+export function getPortugalHistory(langCode) {
+  return portugalHistory.map((e) => ({
+    id: e.id,
+    year: e.year,
+    emoji: e.emoji,
+    title: e.title[langCode] || e.title.pt,
+    description: e.description[langCode] || e.description.pt,
   }));
 }

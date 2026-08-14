@@ -5,7 +5,7 @@ const resources = {
   pt: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Início", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Leitura", phrases: "Frases", songs: "Canções", game: "Jogo", piano: "Piano", language: "Idiomas" , stories: "Histórias" , math: "Matemática" , financial: "Dinheiro" , parents: "Pais" , achievements: "Conquistas" , phonics: "Sons" , missions: "Missões" , world: "Mundo" , detective: "Detetive" },
+      nav: { home: "Início", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Leitura", phrases: "Frases", songs: "Canções", game: "Jogo", piano: "Piano", language: "Idiomas" , stories: "Histórias" , math: "Matemática" , financial: "Dinheiro" , parents: "Pais" , achievements: "Conquistas" , phonics: "Sons" , missions: "Missões" , world: "Mundo" , detective: "Detetive" , history: "História" },
       home: {
         pickProfile: "Escolhe o teu perfil",
         newProfile: "Novo perfil",
@@ -120,13 +120,18 @@ const resources = {
         detectiveLocked: "Este módulo abre um pouco mais tarde, quando fores maior. Continua a explorar os outros jogos! 🙂",
         detectiveScore: "Pontuação",
         detectivePlayAgain: "Jogar outra vez",
+        historyTitle: "Castelo do Tempo",
+        historyIntro: "Viaja pela linha do tempo e descobre a história de Portugal!",
+        historyExplored: "Épocas exploradas",
+        historyQuiz: "Jogo",
+        historyLocked: "O jogo abre um pouco mais tarde, quando fores maior. Continua a explorar a linha do tempo! 🙂",
       },
     },
   },
   en: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Home", alphabet: "Alphabet", syllables: "Syllables", reading: "Reading", phrases: "Phrases", songs: "Songs", game: "Game", piano: "Piano", language: "Languages" , stories: "Stories" , math: "Math" , financial: "Money" , parents: "Parents" , achievements: "Achievements" , phonics: "Sounds" , missions: "Missions" , world: "World" , detective: "Detective" },
+      nav: { home: "Home", alphabet: "Alphabet", syllables: "Syllables", reading: "Reading", phrases: "Phrases", songs: "Songs", game: "Game", piano: "Piano", language: "Languages" , stories: "Stories" , math: "Math" , financial: "Money" , parents: "Parents" , achievements: "Achievements" , phonics: "Sounds" , missions: "Missions" , world: "World" , detective: "Detective" , history: "History" },
       home: {
         pickProfile: "Pick your profile",
         newProfile: "New profile",
@@ -241,13 +246,18 @@ const resources = {
         detectiveLocked: "This module unlocks a bit later, when you're older. Keep exploring the other games! 🙂",
         detectiveScore: "Score",
         detectivePlayAgain: "Play again",
+        historyTitle: "Castle of Time",
+        historyIntro: "Travel through the timeline and discover the history of Portugal!",
+        historyExplored: "Eras explored",
+        historyQuiz: "Game",
+        historyLocked: "The game unlocks a bit later, when you're older. Keep exploring the timeline! 🙂",
       },
     },
   },
   de: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Start", alphabet: "Alphabet", syllables: "Silben", reading: "Lesen", phrases: "Sätze", songs: "Lieder", game: "Spiel", piano: "Klavier", language: "Sprachen" , stories: "Geschichten" , math: "Mathe" , financial: "Geld" , parents: "Eltern" , achievements: "Erfolge" , phonics: "Laute" , missions: "Missionen" , world: "Welt" , detective: "Detektiv" },
+      nav: { home: "Start", alphabet: "Alphabet", syllables: "Silben", reading: "Lesen", phrases: "Sätze", songs: "Lieder", game: "Spiel", piano: "Klavier", language: "Sprachen" , stories: "Geschichten" , math: "Mathe" , financial: "Geld" , parents: "Eltern" , achievements: "Erfolge" , phonics: "Laute" , missions: "Missionen" , world: "Welt" , detective: "Detektiv" , history: "Geschichte" },
       home: {
         pickProfile: "Wähle dein Profil",
         newProfile: "Neues Profil",
@@ -362,13 +372,18 @@ const resources = {
         detectiveLocked: "Dieses Modul wird etwas später freigeschaltet, wenn du älter bist. Erkunde weiter die anderen Spiele! 🙂",
         detectiveScore: "Punktzahl",
         detectivePlayAgain: "Nochmal spielen",
+        historyTitle: "Schloss der Zeit",
+        historyIntro: "Reise durch die Zeitleiste und entdecke die Geschichte Portugals!",
+        historyExplored: "Erkundete Epochen",
+        historyQuiz: "Spiel",
+        historyLocked: "Das Spiel wird etwas später freigeschaltet, wenn du älter bist. Erkunde weiter die Zeitleiste! 🙂",
       },
     },
   },
   fr: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Accueil", alphabet: "Alphabet", syllables: "Syllabes", reading: "Lecture", phrases: "Phrases", songs: "Chansons", game: "Jeu", piano: "Piano", language: "Langues" , stories: "Histoires" , math: "Maths" , financial: "Argent" , parents: "Parents" , achievements: "Réussites" , phonics: "Sons" , missions: "Missions" , world: "Monde" , detective: "Détective" },
+      nav: { home: "Accueil", alphabet: "Alphabet", syllables: "Syllabes", reading: "Lecture", phrases: "Phrases", songs: "Chansons", game: "Jeu", piano: "Piano", language: "Langues" , stories: "Histoires" , math: "Maths" , financial: "Argent" , parents: "Parents" , achievements: "Réussites" , phonics: "Sons" , missions: "Missions" , world: "Monde" , detective: "Détective" , history: "Histoire" },
       home: {
         pickProfile: "Choisis ton profil",
         newProfile: "Nouveau profil",
@@ -483,13 +498,18 @@ const resources = {
         detectiveLocked: "Ce module se débloque un peu plus tard, quand tu seras plus grand(e). Continue à explorer les autres jeux ! 🙂",
         detectiveScore: "Score",
         detectivePlayAgain: "Rejouer",
+        historyTitle: "Château du Temps",
+        historyIntro: "Voyage dans la ligne du temps et découvre l'histoire du Portugal !",
+        historyExplored: "Époques explorées",
+        historyQuiz: "Jeu",
+        historyLocked: "Le jeu se débloque un peu plus tard, quand tu seras plus grand(e). Continue à explorer la ligne du temps ! 🙂",
       },
     },
   },
   zh: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "首页", alphabet: "字母表", syllables: "音节", reading: "阅读", phrases: "句子", songs: "歌曲", game: "游戏", piano: "钢琴", language: "语言" , stories: "故事" , math: "数学" , financial: "金钱" , parents: "家长" , achievements: "成就" , phonics: "语音" , missions: "任务" , world: "世界" , detective: "侦探" },
+      nav: { home: "首页", alphabet: "字母表", syllables: "音节", reading: "阅读", phrases: "句子", songs: "歌曲", game: "游戏", piano: "钢琴", language: "语言" , stories: "故事" , math: "数学" , financial: "金钱" , parents: "家长" , achievements: "成就" , phonics: "语音" , missions: "任务" , world: "世界" , detective: "侦探" , history: "历史" },
       home: {
         pickProfile: "选择你的档案",
         newProfile: "新档案",
@@ -604,13 +624,18 @@ const resources = {
         detectiveLocked: "这个模块要等你再大一点才会解锁哦。继续探索其他游戏吧！🙂",
         detectiveScore: "得分",
         detectivePlayAgain: "再玩一次",
+        historyTitle: "时光城堡",
+        historyIntro: "穿越时间线，探索葡萄牙的历史吧！",
+        historyExplored: "已探索的时代",
+        historyQuiz: "游戏",
+        historyLocked: "这个游戏要等你再大一点才会解锁哦。继续探索时间线吧！🙂",
       },
     },
   },
   es: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Inicio", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Lectura", phrases: "Frases", songs: "Canciones", game: "Juego", piano: "Piano", language: "Idiomas" , stories: "Cuentos" , math: "Matemáticas" , financial: "Dinero" , parents: "Padres" , achievements: "Logros" , phonics: "Sonidos" , missions: "Misiones" , world: "Mundo" , detective: "Detective" },
+      nav: { home: "Inicio", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Lectura", phrases: "Frases", songs: "Canciones", game: "Juego", piano: "Piano", language: "Idiomas" , stories: "Cuentos" , math: "Matemáticas" , financial: "Dinero" , parents: "Padres" , achievements: "Logros" , phonics: "Sonidos" , missions: "Misiones" , world: "Mundo" , detective: "Detective" , history: "Historia" },
       home: {
         pickProfile: "Elige tu perfil",
         newProfile: "Nuevo perfil",
@@ -725,13 +750,18 @@ const resources = {
         detectiveLocked: "Este módulo se desbloquea un poco más tarde, cuando seas mayor. ¡Sigue explorando los otros juegos! 🙂",
         detectiveScore: "Puntuación",
         detectivePlayAgain: "Jugar otra vez",
+        historyTitle: "Castillo del Tiempo",
+        historyIntro: "¡Viaja por la línea del tiempo y descubre la historia de Portugal!",
+        historyExplored: "Épocas exploradas",
+        historyQuiz: "Juego",
+        historyLocked: "El juego se desbloquea un poco más tarde, cuando seas mayor. ¡Sigue explorando la línea del tiempo! 🙂",
       },
     },
   },
   it: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Home", alphabet: "Alfabeto", syllables: "Sillabe", reading: "Lettura", phrases: "Frasi", songs: "Canzoni", game: "Gioco", piano: "Piano", language: "Lingue" , stories: "Storie" , math: "Matematica" , financial: "Denaro" , parents: "Genitori" , achievements: "Traguardi" , phonics: "Suoni" , missions: "Missioni" , world: "Mondo" , detective: "Detective" },
+      nav: { home: "Home", alphabet: "Alfabeto", syllables: "Sillabe", reading: "Lettura", phrases: "Frasi", songs: "Canzoni", game: "Gioco", piano: "Piano", language: "Lingue" , stories: "Storie" , math: "Matematica" , financial: "Denaro" , parents: "Genitori" , achievements: "Traguardi" , phonics: "Suoni" , missions: "Missioni" , world: "Mondo" , detective: "Detective" , history: "Storia" },
       home: {
         pickProfile: "Scegli il tuo profilo",
         newProfile: "Nuovo profilo",
@@ -846,6 +876,11 @@ const resources = {
         detectiveLocked: "Questo modulo si sblocca un po' più avanti, quando sarai più grande. Continua a esplorare gli altri giochi! 🙂",
         detectiveScore: "Punteggio",
         detectivePlayAgain: "Gioca ancora",
+        historyTitle: "Castello del Tempo",
+        historyIntro: "Viaggia lungo la linea del tempo e scopri la storia del Portogallo!",
+        historyExplored: "Epoche esplorate",
+        historyQuiz: "Gioco",
+        historyLocked: "Il gioco si sblocca un po' più tardi, quando sarai più grande. Continua a esplorare la linea del tempo! 🙂",
       },
     },
   },
