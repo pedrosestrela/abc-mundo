@@ -1,0 +1,122 @@
+[
+  {
+    "id": "is1",
+    "theme": "passwords",
+    "emoji": "🔑",
+    "scenario": "Deine Freundin aus der Schule fragt nach deinem Spiel-Passwort, damit ihr zusammen spielen könnt.",
+    "options": [
+      { "text": "Ich gebe ihr mein Passwort, sie ist doch meine Freundin.", "correct": false, "feedback": "Dein Passwort ist ein Geheimnis nur für dich (oder deine Eltern) — nicht einmal enge Freunde sollten es kennen." },
+      { "text": "Ich sage, dass ich mein Passwort nicht teilen kann, aber wir können trotzdem zusammen spielen.", "correct": true, "feedback": "Tolle Entscheidung! Ein Passwort schützt dein Konto. Ihr findet bestimmt einen anderen Weg, zusammen zu spielen." }
+    ]
+  },
+  {
+    "id": "is2",
+    "theme": "passwords",
+    "emoji": "🔒",
+    "scenario": "Du erstellst ein neues Passwort für eine App. Welches wählst du?",
+    "options": [
+      { "text": "123456", "correct": false, "feedback": "Das ist leicht zu erraten! Es ist besser, mit Hilfe eines Erwachsenen ein schwierigeres Passwort zu wählen." },
+      { "text": "Ein langes Passwort mit Buchstaben und Zahlen, gemeinsam mit einem Erwachsenen erstellt.", "correct": true, "feedback": "Ausgezeichnet! Lange, schwer zu erratende Passwörter schützen dein Konto besser." }
+    ]
+  },
+  {
+    "id": "is3",
+    "theme": "privacy",
+    "emoji": "📷",
+    "scenario": "Eine neue App möchte deine Kamera benutzen und wissen, wo du dich befindest. Was machst du?",
+    "options": [
+      { "text": "Ich stimme schnell allem zu, damit ich sofort spielen kann.", "correct": false, "feedback": "Warte! Bitte einen Erwachsenen, sich die Anfrage mit dir anzusehen, bevor du zustimmst — nicht jede App braucht das alles." },
+      { "text": "Ich hole einen Erwachsenen dazu, damit wir gemeinsam entscheiden können, was wir erlauben.", "correct": true, "feedback": "Gut gemacht! Ein Erwachsener kann dir helfen zu verstehen, ob es sicher ist, der App diese Informationen zu geben." }
+    ]
+  },
+  {
+    "id": "is4",
+    "theme": "photos",
+    "emoji": "🏫",
+    "scenario": "Du hast in der Pause ein lustiges Foto gemacht und möchtest es posten, mit dem Namen deiner Schule gut sichtbar.",
+    "options": [
+      { "text": "Ich poste es sofort, es ist doch nur ein lustiges Foto.", "correct": false, "feedback": "Fotos, auf denen deine Schule oder Straße zu sehen ist, können verraten, wo du bist. Frag immer einen Erwachsenen, bevor du etwas postest." },
+      { "text": "Ich zeige das Foto zuerst einem Erwachsenen und frage, ob es sicher ist, es zu posten.", "correct": true, "feedback": "Gute Idee! Ein Erwachsener kann dir helfen zu entscheiden, was sicher zu teilen ist und was besser nur für dich bleibt." }
+    ]
+  },
+  {
+    "id": "is5",
+    "theme": "photos",
+    "emoji": "🙈",
+    "scenario": "Ein Klassenkamerad bittet dich, ihm ein peinliches Foto von dir zu schicken, nur zwischen euch beiden.",
+    "options": [
+      { "text": "Ich schicke es, das ist doch nur ein Spaß zwischen uns.", "correct": false, "feedback": "Auch unter Freunden kann ein Foto an andere weitergeschickt werden, ohne dass du das willst. Am besten schickst du es nicht und erzählst es einem Erwachsenen, wenn er darauf besteht." },
+      { "text": "Ich sage, dass ich es lieber nicht schicke, und erzähle es einem Erwachsenen, wenn er weiter fragt.", "correct": true, "feedback": "Gut gemacht! Du musst niemals Fotos verschicken, auch nicht an Freunde. Es einem Erwachsenen zu erzählen ist immer eine gute Idee." }
+    ]
+  },
+  {
+    "id": "is6",
+    "theme": "location",
+    "emoji": "📍",
+    "scenario": "Ein Spiel fragt, ob es allen anderen Spielern deinen Standort zeigen darf.",
+    "options": [
+      { "text": "Ich sage ja, dann können meine Freunde sehen, wo ich bin.", "correct": false, "feedback": "Deinen Standort mit Fremden zu teilen kann riskant sein. Frag immer einen Erwachsenen, bevor du das erlaubst." },
+      { "text": "Ich bitte einen Erwachsenen um Hilfe, bevor ich entscheide.", "correct": true, "feedback": "Tolle Entscheidung! Dein Standort ist eine wichtige persönliche Information — ein Erwachsener kann dir helfen, sicher zu entscheiden." }
+    ]
+  },
+  {
+    "id": "is7",
+    "theme": "strangers",
+    "emoji": "🎮",
+    "scenario": "Jemand, den du in einem Spiel kennengelernt hast, fragt, wo du wohnst. Was machst du?",
+    "options": [
+      { "text": "Ich sage ihm meine Straße, er wirkt nett.", "correct": false, "feedback": "Bitte einen Erwachsenen um Hilfe! Teile deine Adresse niemals mit Personen, die du nur online kennst, auch wenn sie freundlich wirken." },
+      { "text": "Ich antworte nicht und erzähle einem Erwachsenen, was passiert ist.", "correct": true, "feedback": "Gut gemacht! Es ist immer sicher, auf solche Fragen nicht zu antworten und es jemandem zu erzählen, dem du vertraust." }
+    ]
+  },
+  {
+    "id": "is8",
+    "theme": "cyberbullying",
+    "emoji": "💬",
+    "scenario": "Jemand schickt dir gemeine Nachrichten in einem Gruppenchat.",
+    "options": [
+      { "text": "Ich schicke auch gemeine Nachrichten zurück, damit sie aufhören.", "correct": false, "feedback": "Genauso zu antworten macht die Sache meistens noch schlimmer. Besser ist es, die Nachrichten aufzuheben und einem Erwachsenen zu zeigen." },
+      { "text": "Ich hebe die Nachrichten auf und erzähle es einem Erwachsenen, dem ich vertraue.", "correct": true, "feedback": "Ausgezeichnete Reaktion! Es einem Erwachsenen zu erzählen hilft, die Situation zu klären, und es ist niemals deine Schuld." }
+    ]
+  },
+  {
+    "id": "is9",
+    "theme": "cyberbullying",
+    "emoji": "😟",
+    "scenario": "Du siehst, wie ein Klassenkamerad in einem Online-Spiel von anderen verspottet wird. Es geht nicht um dich, aber du bekommst es mit.",
+    "options": [
+      { "text": "Ich schaue nur zu, es geht ja nicht um mich.", "correct": false, "feedback": "Du kannst helfen! Einem Erwachsenen zu erzählen, was du gesehen hast, kann für die verletzte Person wirklich etwas verändern." },
+      { "text": "Ich erzähle einem Erwachsenen, was ich bei meinem Klassenkameraden gesehen habe.", "correct": true, "feedback": "Gut gemacht! Jemandem in Not zu helfen, auch nur indem man es einem Erwachsenen erzählt, ist mutig und freundlich." }
+    ]
+  },
+  {
+    "id": "is10",
+    "theme": "scams",
+    "emoji": "🎁",
+    "scenario": "Eine blinkende Nachricht erscheint: \"Glückwunsch! Du hast einen Preis gewonnen, klick jetzt hier!\"",
+    "options": [
+      { "text": "Ich klicke sofort, ich will den Preis nicht verpassen!", "correct": false, "feedback": "Dinge, die zu gut klingen, um wahr zu sein, sind meistens Fallen. Echte Preise verlangen nie, dass du schnell und heimlich klickst." },
+      { "text": "Ich frage einen Erwachsenen, bevor ich irgendwo klicke.", "correct": true, "feedback": "Sehr vernünftig! Vor dem Klicken zu fragen schützt dich vor versteckten Fallen und Viren." }
+    ]
+  },
+  {
+    "id": "is11",
+    "theme": "ads",
+    "emoji": "📢",
+    "scenario": "Während du spielst, erscheint ein großer Knopf mit \"JETZT SPIELEN\", der nicht zum echten Spiel gehört, aber sehr ähnlich aussieht.",
+    "options": [
+      { "text": "Ich klicke drauf, es sieht aus wie der Spiel-Knopf.", "correct": false, "feedback": "Viele Werbeanzeigen sehen genauso aus wie Spiel-Knöpfe, um dich reinzulegen. Schau genau hin, bevor du klickst, oder frag einen Erwachsenen um Hilfe." },
+      { "text": "Ich halte inne und frage einen Erwachsenen, ob das Werbung ist.", "correct": true, "feedback": "Gut! Werbung versucht, wie ein Teil des Spiels auszusehen. Bei einem Erwachsenen nachzufragen verhindert Klicks, die du nicht wolltest." }
+    ]
+  },
+  {
+    "id": "is12",
+    "theme": "deepfakes",
+    "emoji": "🎭",
+    "scenario": "Du siehst ein seltsames Video, in dem eine berühmte Person etwas zu sagen scheint, das überhaupt keinen Sinn ergibt.",
+    "options": [
+      { "text": "Ich glaube es sofort und teile es gleich mit meinen Freunden.", "correct": false, "feedback": "Heutzutage gibt es computergemachte Videos, die echt aussehen, aber erfunden sind. Bevor du es glaubst, frag einen Erwachsenen." },
+      { "text": "Ich frage einen Erwachsenen, ob dieses Video wirklich echt sein könnte.", "correct": true, "feedback": "Gut gemacht! Nicht alles, was du online siehst, ist echt — manche Videos werden von Computern gemacht. Bei einem Erwachsenen nachzufragen ist das, was ein guter Detektiv tut." }
+    ]
+  }
+]

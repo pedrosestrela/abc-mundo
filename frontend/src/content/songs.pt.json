@@ -262,5 +262,18 @@
       "Sai, explora, e depois vem-me contar tudo, sim!"
     ],
     "illustrationId": "shapes-fun"
+  },
+  {
+    "id": "abecedario-pt",
+    "title": "O Abecedário",
+    "lyrics": [
+      "A, B, C, D, vem cantar comigo",
+      "E, F, G, H, o meu grande amigo",
+      "I, J, K, L, M, N, sempre a rimar",
+      "O, P, Q, R, S, T, sem nunca parar",
+      "U, V, W, X, quase a chegar ao fim",
+      "Y, Z, terminei, o abecedário é assim!"
+    ],
+    "illustrationId": "alphabet-circle"
   }
 ]
