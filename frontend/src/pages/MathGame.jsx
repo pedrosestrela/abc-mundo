@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { getProfile, getDifficultyTier, pingProgress } from "../storage.js";
+import { getProfile, getDifficultyTier, pingProgress, getLangPair } from "../storage.js";
+import HelpButton from "../components/HelpButton.jsx";
+import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
+import AgeAdvisory from "../components/AgeAdvisory.jsx";
 
 // Tier -> { max: highest count/number, rounds: quiz length }
 const TIER_CONFIG = {
@@ -154,13 +157,22 @@ function QuizRunner({ rounds, renderPrompt, moduleEvent, profile, t, onDone }) {
   );
 }
 
+const HELP_KEY_BY_ACTIVITY = {
+  counting: "mathHelpCounting",
+  numbers: "mathHelpNumbers",
+  addsub: "mathHelpAddSub",
+};
+
 export default function MathGame() {
   const { t } = useTranslation();
+  const pair = getLangPair() || { mother: "pt", secondary: "en" };
   const profile = getProfile();
   const tier = getDifficultyTier(profile?.age);
 
   const [activity, setActivity] = useState("counting");
   const [seed, setSeed] = useState(0);
+  const [addSubConfirmed, setAddSubConfirmed] = useState(false);
+  const [showAdvisory, setShowAdvisory] = useState(false);
 
   const tabs = [
     { key: "counting", label: t("modules.mathCounting"), emoji: "🔢" },
@@ -169,6 +181,10 @@ export default function MathGame() {
   ];
 
   function switchActivity(key) {
+    if (key === "addsub" && tier === 1 && !addSubConfirmed) {
+      setShowAdvisory(true);
+      return;
+    }
     setActivity(key);
     setSeed((s) => s + 1);
   }
@@ -180,19 +196,40 @@ export default function MathGame() {
   return (
     <div className="page">
       <h1>{t("modules.mathTitle")} 🔢</h1>
+      <div className="help-btn-corner">
+        <HelpButton text={t(`modules.${HELP_KEY_BY_ACTIVITY[activity]}`)} langCode={pair.mother} />
+      </div>
 
       <div className="game-options">
         {tabs.map((tab) => (
-          <button
-            key={tab.key}
-            type="button"
-            className={"big-btn game-option" + (activity === tab.key ? " correct" : "")}
-            onClick={() => switchActivity(tab.key)}
-          >
-            {tab.emoji} {tab.label}
-          </button>
+          <div key={tab.key} className="game-option-row">
+            <button
+              type="button"
+              className={"big-btn game-option" + (activity === tab.key ? " correct" : "")}
+              onClick={() => switchActivity(tab.key)}
+            >
+              {tab.emoji} {tab.label}
+            </button>
+            <TabSpeakIcon
+              text={`${tab.label}. ${t(`modules.${HELP_KEY_BY_ACTIVITY[tab.key]}`)}`}
+              langCode={pair.mother}
+            />
+          </div>
         ))}
       </div>
+
+      {showAdvisory && (
+        <AgeAdvisory
+          langCode={pair.mother}
+          onAccept={() => {
+            setAddSubConfirmed(true);
+            setShowAdvisory(false);
+            setActivity("addsub");
+            setSeed((s) => s + 1);
+          }}
+          onDecline={() => setShowAdvisory(false)}
+        />
+      )}
 
       {activity === "counting" && (
         <QuizRunner
@@ -222,27 +259,21 @@ export default function MathGame() {
         />
       )}
 
-      {activity === "addsub" &&
-        (tier === 1 ? (
-          <div className="game-card">
-            <div className="game-emoji">🔒</div>
-            <p className="game-result">{t("modules.mathLocked")}</p>
-          </div>
-        ) : (
-          <QuizRunner
-            key={"addsub-" + seed}
-            rounds={buildAddSubRounds(tier)}
-            profile={profile}
-            t={t}
-            moduleEvent="math_addsub"
-            onDone={restart}
-            renderPrompt={(round) => (
-              <div className="game-emoji math-expression">
-                {round.a} {round.op} {round.b} = ?
-              </div>
-            )}
-          />
-        ))}
+      {activity === "addsub" && (
+        <QuizRunner
+          key={"addsub-" + seed}
+          rounds={buildAddSubRounds(tier)}
+          profile={profile}
+          t={t}
+          moduleEvent="math_addsub"
+          onDone={restart}
+          renderPrompt={(round) => (
+            <div className="game-emoji math-expression">
+              {round.a} {round.op} {round.b} = ?
+            </div>
+          )}
+        />
+      )}
     </div>
   );
 }

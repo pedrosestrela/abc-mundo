@@ -5,6 +5,8 @@ import { getProfile, pingProgress, getLangPair } from "../storage.js";
 import pianoSongs from "../content/pianoSongs.json";
 import SpeakButton from "../components/SpeakButton.jsx";
 import MusicStaff from "../components/MusicStaff.jsx";
+import HelpButton from "../components/HelpButton.jsx";
+import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
 
 const WHITE_LETTERS = ["C", "D", "E", "F", "G", "A", "B"];
 
@@ -126,20 +128,27 @@ export default function Music({ defaultInstrument = "piano" }) {
   return (
     <div className="page">
       <h1>{t("modules.musicTitle")} 🎶</h1>
+      <div className="help-btn-corner">
+        <HelpButton text={isDrum ? t("modules.musicHelpDrum") : t("modules.musicHelpPiano")} langCode={pair.mother} />
+      </div>
       <p className="page-intro">{t("modules.musicIntro")}</p>
 
       <div className="instrument-switcher phonics-tabs">
-        {INSTRUMENTS.map((inst) => (
-          <button
-            key={inst.id}
-            type="button"
-            className={"instrument-btn" + (instrument === inst.id ? " active" : "")}
-            onClick={() => handleSelectInstrument(inst.id)}
-          >
-            <span className="instrument-icon">{inst.icon}</span>
-            <span>{t(`modules.pianoInstrument_${inst.id}`)}</span>
-          </button>
-        ))}
+        {INSTRUMENTS.map((inst) => {
+          const helpText = inst.id === "drum" ? t("modules.musicHelpDrum") : t("modules.musicHelpPiano");
+          return (
+            <button
+              key={inst.id}
+              type="button"
+              className={"instrument-btn" + (instrument === inst.id ? " active" : "")}
+              onClick={() => handleSelectInstrument(inst.id)}
+            >
+              <span className="instrument-icon">{inst.icon}</span>
+              <span>{t(`modules.pianoInstrument_${inst.id}`)}</span>
+              <TabSpeakIcon text={`${t(`modules.pianoInstrument_${inst.id}`)}. ${helpText}`} langCode={pair.mother} />
+            </button>
+          );
+        })}
       </div>
 
       {!isDrum && <MusicStaff note={activeNote} />}

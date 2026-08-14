@@ -3,6 +3,8 @@ import { useTranslation } from "react-i18next";
 import { getPhonics } from "../content/index.js";
 import { getLangPair, getProfile, getDifficultyTier, recordSkillEvent, pingProgress } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
+import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
+import HelpButton from "../components/HelpButton.jsx";
 
 function shuffle(arr) {
   const a = [...arr];
@@ -112,6 +114,13 @@ export default function Phonics() {
 
   const [game, setGame] = useState("initial");
 
+  const helpTextByGame = {
+    initial: t("modules.phonicsHelpInitial"),
+    rhyme: t("modules.phonicsHelpRhyme"),
+    syllables: t("modules.phonicsHelpSyllables"),
+    oddOneOut: t("modules.phonicsHelpOddOneOut"),
+  };
+
   const initialRounds = useMemo(() => buildInitialSoundRounds(words, config.rounds, config.optionCount), [words, config, game]);
   const rhymeRounds = useMemo(() => buildRhymeRounds(words, config.rounds, config.optionCount), [words, config, game]);
   const syllableRounds = useMemo(() => buildSyllableRounds(words, config.rounds), [words, config, game]);
@@ -124,17 +133,33 @@ export default function Phonics() {
 
       <div className="phonics-tabs">
         <button type="button" className={"phonics-tab" + (game === "initial" ? " selected" : "")} onClick={() => setGame("initial")}>
-          🔊 {t("modules.phonicsInitialSound")}
+          <span className="phonics-tab-inner">
+            🔊 {t("modules.phonicsInitialSound")}
+            <TabSpeakIcon text={`${t("modules.phonicsInitialSound")}. ${helpTextByGame.initial}`} langCode={pair.mother} />
+          </span>
         </button>
         <button type="button" className={"phonics-tab" + (game === "rhyme" ? " selected" : "")} onClick={() => setGame("rhyme")}>
-          🎶 {t("modules.phonicsRhyme")}
+          <span className="phonics-tab-inner">
+            🎶 {t("modules.phonicsRhyme")}
+            <TabSpeakIcon text={`${t("modules.phonicsRhyme")}. ${helpTextByGame.rhyme}`} langCode={pair.mother} />
+          </span>
         </button>
         <button type="button" className={"phonics-tab" + (game === "syllables" ? " selected" : "")} onClick={() => setGame("syllables")}>
-          👏 {t("modules.phonicsSyllableCount")}
+          <span className="phonics-tab-inner">
+            👏 {t("modules.phonicsSyllableCount")}
+            <TabSpeakIcon text={`${t("modules.phonicsSyllableCount")}. ${helpTextByGame.syllables}`} langCode={pair.mother} />
+          </span>
         </button>
         <button type="button" className={"phonics-tab" + (game === "oddOneOut" ? " selected" : "")} onClick={() => setGame("oddOneOut")}>
-          🕵️ {t("modules.phonicsOddOneOut")}
+          <span className="phonics-tab-inner">
+            🕵️ {t("modules.phonicsOddOneOut")}
+            <TabSpeakIcon text={`${t("modules.phonicsOddOneOut")}. ${helpTextByGame.oddOneOut}`} langCode={pair.mother} />
+          </span>
         </button>
+      </div>
+
+      <div className="help-btn-corner">
+        <HelpButton text={helpTextByGame[game]} langCode={pair.mother} />
       </div>
 
       {game === "initial" && (

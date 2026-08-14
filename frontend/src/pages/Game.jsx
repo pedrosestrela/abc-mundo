@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { getReading } from "../content/index.js";
 import { getLangPair, getProfile, getDifficultyTier, pingProgress } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
+import HelpButton from "../components/HelpButton.jsx";
 
 // Tier -> { poolSize: how many words to draw questions from, rounds: quiz length }
 const TIER_CONFIG = {
@@ -74,6 +75,9 @@ export default function Game() {
   return (
     <div className="page">
       <h1>{t("modules.gameTitle")} 🎮</h1>
+      <div className="help-btn-corner">
+        <HelpButton text={t("modules.gameHelp")} langCode={pair.mother} />
+      </div>
 
       {!finished ? (
         <div className="game-card">

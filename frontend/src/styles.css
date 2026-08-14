@@ -820,6 +820,25 @@ body {
   color: #fff;
 }
 
+.phonics-tab-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.phonics-tab-speak {
+  background: rgba(255, 255, 255, 0.6);
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 0.85rem;
+  line-height: 1;
+  cursor: pointer;
+  flex: 0 0 auto;
+}
+
 .game-prompt {
   font-size: 1.6rem;
   font-weight: bold;
@@ -860,6 +879,79 @@ body {
 .game-option-btn.correct {
   border-color: var(--green);
   background: var(--yellow);
+}
+
+.help-btn-corner {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.help-btn-wrap {
+  position: relative;
+  display: inline-block;
+  margin: 4px 0 8px;
+}
+
+.help-btn {
+  font-size: 0.85rem;
+  font-weight: bold;
+  background: #fff3cd;
+  color: #7a5c00;
+  border: 2px solid var(--yellow, #ffcc33);
+  border-radius: 999px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.help-btn-bubble {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 20;
+  margin-top: 6px;
+  background: #fff;
+  border: 3px solid var(--yellow, #ffcc33);
+  border-radius: 16px;
+  padding: 10px 12px;
+  width: 240px;
+  max-width: 70vw;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  font-size: 0.85rem;
+  color: #444;
+}
+
+.help-btn-bubble p {
+  margin: 0 0 6px;
+}
+
+.help-btn-bubble-speak {
+  width: 32px;
+  height: 32px;
+  font-size: 1rem;
+}
+
+.age-advisory-body-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.age-advisory-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.age-advisory-choice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 .session-end-backdrop {

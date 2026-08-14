@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { getProfile, getDifficultyTier, recordSkillEvent, pingProgress } from "../storage.js";
+import { getProfile, getDifficultyTier, recordSkillEvent, pingProgress, getLangPair } from "../storage.js";
+import HelpButton from "../components/HelpButton.jsx";
 
 // Each level: grid size, start [row,col], goal [row,col], obstacles [[row,col],...],
 // and minTier (level only introduces the repeat block once tier allows it — but the
@@ -38,6 +39,7 @@ function cellKey(r, c) {
 
 export default function Robots() {
   const { t } = useTranslation();
+  const pair = getLangPair() || { mother: "pt", secondary: "en" };
   const profile = getProfile();
   const tier = getDifficultyTier(profile?.age);
 
@@ -166,6 +168,9 @@ export default function Robots() {
   return (
     <div className="page">
       <h1>{t("modules.robotsTitle")} 🤖</h1>
+      <div className="help-btn-corner">
+        <HelpButton text={t("modules.robotsHelp")} langCode={pair.mother} />
+      </div>
       <p className="page-intro">{t("modules.robotsIntro")}</p>
 
       <div className="robots-progress">

@@ -3,6 +3,9 @@ import { useTranslation } from "react-i18next";
 import { getPortugalHistory } from "../content/index.js";
 import { getLangPair, getProfile, getVisitedEras, visitEra, getDifficultyTier, pingProgress, recordSkillEvent } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
+import HelpButton from "../components/HelpButton.jsx";
+import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
+import AgeAdvisory from "../components/AgeAdvisory.jsx";
 
 function shuffle(arr) {
   const copy = [...arr];
@@ -39,8 +42,10 @@ export default function PortugalHistory() {
   const [score, setScore] = useState(0);
   const [feedback, setFeedback] = useState(null);
   const [quizStarted, setQuizStarted] = useState(false);
+  const [quizConfirmed, setQuizConfirmed] = useState(tier >= 2);
+  const [showAdvisory, setShowAdvisory] = useState(false);
 
-  const canQuiz = tier >= 2;
+  const canQuiz = true;
 
   function toggleEra(era) {
     const opening = openId !== era.id;
@@ -84,18 +89,47 @@ export default function PortugalHistory() {
   return (
     <div className="page">
       <h1>{t("modules.historyTitle")} 🏰</h1>
+      <div className="help-btn-corner">
+        <HelpButton text={tab === "quiz" ? t("modules.historyHelpQuiz") : t("modules.historyHelpTimeline")} langCode={pair.mother} />
+      </div>
       <p className="page-intro">{t("modules.historyIntro")}</p>
 
-      {canQuiz && (
-        <div className="phonics-tabs">
-          <button type="button" className={"phonics-tab" + (tab === "timeline" ? " selected" : "")} onClick={() => { setTab("timeline"); setQuizStarted(false); }}>
-            🕰️ {t("modules.historyTitle")}
-          </button>
-          <button type="button" className={"phonics-tab" + (tab === "quiz" ? " selected" : "")} onClick={() => setTab("quiz")}>
-            🎮 {t("modules.historyQuiz")}
-          </button>
-        </div>
+      {showAdvisory && (
+        <AgeAdvisory
+          langCode={pair.mother}
+          onAccept={() => {
+            setQuizConfirmed(true);
+            setShowAdvisory(false);
+            setTab("quiz");
+          }}
+          onDecline={() => setShowAdvisory(false)}
+        />
       )}
+
+      <div className="phonics-tabs">
+        <button type="button" className={"phonics-tab" + (tab === "timeline" ? " selected" : "")} onClick={() => { setTab("timeline"); setQuizStarted(false); }}>
+          <span className="phonics-tab-inner">
+            🕰️ {t("modules.historyTitle")}
+            <TabSpeakIcon text={`${t("modules.historyTitle")}. ${t("modules.historyHelpTimeline")}`} langCode={pair.mother} />
+          </span>
+        </button>
+        <button
+          type="button"
+          className={"phonics-tab" + (tab === "quiz" ? " selected" : "")}
+          onClick={() => {
+            if (tier < 2 && !quizConfirmed) {
+              setShowAdvisory(true);
+              return;
+            }
+            setTab("quiz");
+          }}
+        >
+          <span className="phonics-tab-inner">
+            🎮 {t("modules.historyQuiz")}
+            <TabSpeakIcon text={`${t("modules.historyQuiz")}. ${t("modules.historyHelpQuiz")}`} langCode={pair.mother} />
+          </span>
+        </button>
+      </div>
 
       {tab === "timeline" && (
         <>

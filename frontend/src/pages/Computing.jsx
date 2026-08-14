@@ -11,6 +11,8 @@ import {
   pingProgress,
 } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
+import HelpButton from "../components/HelpButton.jsx";
+import AgeAdvisory from "../components/AgeAdvisory.jsx";
 
 const TOPIC_ICONS = {
   hardware: "🔧",
@@ -56,6 +58,8 @@ export default function Computing() {
   const [step, setStep] = useState(0);
   const [score, setScore] = useState(0);
   const [answered, setAnswered] = useState(null);
+  const [safetyConfirmed, setSafetyConfirmed] = useState(tier > 1);
+  const [showAdvisory, setShowAdvisory] = useState(false);
 
   function handleOpen(card) {
     const nowOpen = card.id !== openId;
@@ -97,6 +101,9 @@ export default function Computing() {
   return (
     <div className="page">
       <h1>{t("modules.computingTitle")} 💻</h1>
+      <div className="help-btn-corner">
+        <HelpButton text={t("modules.computingHelpConcepts")} langCode={pair.mother} />
+      </div>
       <p className="page-intro">{t("modules.computingIntro")}</p>
 
       <h2 className="songs-heading">🧠 {t("modules.computingConcepts")}</h2>
@@ -143,11 +150,27 @@ export default function Computing() {
         ))}
 
       <h2 className="songs-heading">🕵️ {t("modules.computingSafetyGame")}</h2>
+      <div className="help-btn-corner">
+        <HelpButton text={t("modules.computingHelpSafety")} langCode={pair.mother} />
+      </div>
 
-      {tier === 1 ? (
+      {showAdvisory && (
+        <AgeAdvisory
+          langCode={pair.mother}
+          onAccept={() => {
+            setSafetyConfirmed(true);
+            setShowAdvisory(false);
+          }}
+          onDecline={() => setShowAdvisory(false)}
+        />
+      )}
+
+      {tier === 1 && !safetyConfirmed ? (
         <div className="game-card">
-          <div className="game-emoji">🔒</div>
-          <p className="game-result">{t("modules.computingLocked")}</p>
+          <div className="game-emoji">🕵️</div>
+          <button type="button" className="big-btn" onClick={() => setShowAdvisory(true)}>
+            ▶️ {t("modules.computingSafetyGame")}
+          </button>
         </div>
       ) : !finished ? (
         <div className="game-card">

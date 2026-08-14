@@ -3,6 +3,9 @@ import { useTranslation } from "react-i18next";
 import { getDetectiveCards } from "../content/index.js";
 import { getLangPair, getProfile, getDifficultyTier, recordSkillEvent, pingProgress } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
+import HelpButton from "../components/HelpButton.jsx";
+import AgeAdvisory from "../components/AgeAdvisory.jsx";
+import { useNavigate } from "react-router-dom";
 
 // Tier -> rounds: this module only makes sense from tier 2 (age 7+) up.
 const TIER_CONFIG = {
@@ -27,6 +30,7 @@ function buildRounds(cards, tier) {
 
 export default function Detective() {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const pair = getLangPair() || { mother: "pt", secondary: "en" };
   const profile = getProfile();
   const tier = getDifficultyTier(profile?.age);
@@ -36,15 +40,17 @@ export default function Detective() {
   const [step, setStep] = useState(0);
   const [score, setScore] = useState(0);
   const [answered, setAnswered] = useState(null);
+  const [confirmed, setConfirmed] = useState(tier > 1);
 
-  if (tier === 1) {
+  if (tier === 1 && !confirmed) {
     return (
       <div className="page">
         <h1>{t("modules.detectiveTitle")} 🕵️</h1>
-        <div className="game-card">
-          <div className="game-emoji">🔒</div>
-          <p className="game-result">{t("modules.detectiveLocked")}</p>
-        </div>
+        <AgeAdvisory
+          langCode={pair.mother}
+          onAccept={() => setConfirmed(true)}
+          onDecline={() => navigate("/mundos")}
+        />
       </div>
     );
   }
@@ -79,6 +85,9 @@ export default function Detective() {
   return (
     <div className="page">
       <h1>{t("modules.detectiveTitle")} 🕵️</h1>
+      <div className="help-btn-corner">
+        <HelpButton text={t("modules.detectiveHelp")} langCode={pair.mother} />
+      </div>
       <p className="page-intro">{t("modules.detectiveIntro")}</p>
 
       {!finished ? (
