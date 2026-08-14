@@ -1,0 +1,22 @@
+[
+  { "id": "animal-novo", "emoji": "🦄", "prompt": "Desenha um animal que ainda não existe. Dá-lhe um nome!", "category": "draw" },
+  { "id": "cor-nova", "emoji": "🌈", "prompt": "Se pudesses inventar uma nova cor, como se chamaria e o que tornaria especial?", "category": "imagine" },
+  { "id": "casa-sonhos", "emoji": "🏰", "prompt": "Desenha a tua casa dos sonhos.", "category": "draw" },
+  { "id": "super-heroi", "emoji": "🦸", "prompt": "Inventa uma personagem super-herói e o seu poder.", "category": "imagine" },
+  { "id": "voar-um-dia", "emoji": "🕊️", "prompt": "Desenha o que farias se pudesses voar por um dia.", "category": "draw" },
+  { "id": "construir-caixas", "emoji": "📦", "prompt": "Constrói algo com objetos que encontrares em casa (blocos, caixas, o que houver).", "category": "build" },
+  { "id": "planeta-novo", "emoji": "🪐", "prompt": "Inventa um planeta novo. Quem vive lá e como é?", "category": "imagine" },
+  { "id": "monstro-simpatico", "emoji": "👹", "prompt": "Desenha um monstro simpático que só quer fazer amigos.", "category": "draw" },
+  { "id": "historia-tres-palavras", "emoji": "📖", "prompt": "Inventa uma história curta com estas três palavras: nuvem, sapato, dragão.", "category": "story" },
+  { "id": "maquina-doida", "emoji": "⚙️", "prompt": "Constrói uma máquina maluca com o que tiveres em casa. Para que serve?", "category": "build" },
+  { "id": "jardim-magico", "emoji": "🌻", "prompt": "Desenha um jardim mágico onde as flores fazem música.", "category": "draw" },
+  { "id": "carta-futuro", "emoji": "✉️", "prompt": "Inventa uma história sobre ti daqui a 20 anos.", "category": "story" },
+  { "id": "roupa-maluca", "emoji": "👗", "prompt": "Desenha uma roupa maluca que gostavas de usar num dia especial.", "category": "draw" },
+  { "id": "castelo-areia", "emoji": "🏖️", "prompt": "Constrói um castelo com o que encontrares (areia, blocos, almofadas).", "category": "build" },
+  { "id": "amigo-imaginario", "emoji": "👻", "prompt": "Inventa um amigo imaginário. Como se chama e o que gosta de fazer?", "category": "imagine" },
+  { "id": "cidade-nuvens", "emoji": "☁️", "prompt": "Desenha uma cidade que flutua nas nuvens.", "category": "draw" },
+  { "id": "aventura-oceano", "emoji": "🐙", "prompt": "Inventa uma aventura no fundo do oceano com uma criatura misteriosa.", "category": "story" },
+  { "id": "forte-almofadas", "emoji": "🛋️", "prompt": "Constrói um forte com almofadas e cobertores. Dá-lhe um nome secreto.", "category": "build" },
+  { "id": "autorretrato-super", "emoji": "🖼️", "prompt": "Desenha-te a ti próprio/a como uma personagem de banda desenhada.", "category": "draw" },
+  { "id": "musica-inventada", "emoji": "🎶", "prompt": "Inventa uma canção curta sobre o teu dia. Podes cantá-la a alguém!", "category": "imagine" }
+]

@@ -20,6 +20,7 @@ import Missions from "./pages/Missions.jsx";
 import World from "./pages/World.jsx";
 import SessionEndOverlay from "./components/SessionEndOverlay.jsx";
 import Detective from "./pages/Detective.jsx";
+import Art from "./pages/Art.jsx";
 
 export default function App() {
   return (
@@ -44,6 +45,7 @@ export default function App() {
           <Route path="/missions" element={<Missions />} />
           <Route path="/world" element={<World />} />
           <Route path="/detective" element={<Detective />} />
+          <Route path="/art" element={<Art />} />
         </Routes>
       </main>
       <NavBar />

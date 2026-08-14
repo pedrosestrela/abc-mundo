@@ -1,0 +1,22 @@
+[
+  { "id": "animal-novo", "emoji": "🦄", "prompt": "Zeichne ein Tier, das es noch nicht gibt. Gib ihm einen Namen!", "category": "draw" },
+  { "id": "cor-nova", "emoji": "🌈", "prompt": "Wenn du eine neue Farbe erfinden könntest, wie würde sie heißen und was würde sie besonders machen?", "category": "imagine" },
+  { "id": "casa-sonhos", "emoji": "🏰", "prompt": "Zeichne dein Traumhaus.", "category": "draw" },
+  { "id": "super-heroi", "emoji": "🦸", "prompt": "Erfinde eine Superheldenfigur und ihre Superkraft.", "category": "imagine" },
+  { "id": "voar-um-dia", "emoji": "🕊️", "prompt": "Zeichne, was du tun würdest, wenn du einen Tag lang fliegen könntest.", "category": "draw" },
+  { "id": "construir-caixas", "emoji": "📦", "prompt": "Baue etwas mit Dingen, die du zu Hause findest (Bauklötze, Kartons, was da ist).", "category": "build" },
+  { "id": "planeta-novo", "emoji": "🪐", "prompt": "Erfinde einen neuen Planeten. Wer lebt dort und wie sieht es aus?", "category": "imagine" },
+  { "id": "monstro-simpatico", "emoji": "👹", "prompt": "Zeichne ein freundliches Monster, das nur Freunde finden möchte.", "category": "draw" },
+  { "id": "historia-tres-palavras", "emoji": "📖", "prompt": "Erfinde eine kurze Geschichte mit diesen drei Wörtern: Wolke, Schuh, Drache.", "category": "story" },
+  { "id": "maquina-doida", "emoji": "⚙️", "prompt": "Baue eine verrückte Maschine mit Dingen von zu Hause. Wozu dient sie?", "category": "build" },
+  { "id": "jardim-magico", "emoji": "🌻", "prompt": "Zeichne einen Zaubergarten, in dem die Blumen Musik machen.", "category": "draw" },
+  { "id": "carta-futuro", "emoji": "✉️", "prompt": "Erfinde eine Geschichte darüber, wer du in 20 Jahren sein wirst.", "category": "story" },
+  { "id": "roupa-maluca", "emoji": "👗", "prompt": "Zeichne ein verrücktes Outfit, das du an einem besonderen Tag tragen möchtest.", "category": "draw" },
+  { "id": "castelo-areia", "emoji": "🏖️", "prompt": "Baue eine Burg mit allem, was du findest (Sand, Bauklötze, Kissen).", "category": "build" },
+  { "id": "amigo-imaginario", "emoji": "👻", "prompt": "Erfinde einen imaginären Freund. Wie heißt er und was macht er gerne?", "category": "imagine" },
+  { "id": "cidade-nuvens", "emoji": "☁️", "prompt": "Zeichne eine Stadt, die in den Wolken schwebt.", "category": "draw" },
+  { "id": "aventura-oceano", "emoji": "🐙", "prompt": "Erfinde ein Abenteuer am Meeresgrund mit einem geheimnisvollen Wesen.", "category": "story" },
+  { "id": "forte-almofadas", "emoji": "🛋️", "prompt": "Baue eine Festung aus Kissen und Decken. Gib ihr einen geheimen Namen.", "category": "build" },
+  { "id": "autorretrato-super", "emoji": "🖼️", "prompt": "Zeichne dich selbst als Comicfigur.", "category": "draw" },
+  { "id": "musica-inventada", "emoji": "🎶", "prompt": "Erfinde ein kurzes Lied über deinen Tag. Du kannst es jemandem vorsingen!", "category": "imagine" }
+]

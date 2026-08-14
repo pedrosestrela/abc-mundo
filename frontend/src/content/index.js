@@ -81,6 +81,14 @@ import financialZh from "./financial.zh.json";
 import financialEs from "./financial.es.json";
 import financialIt from "./financial.it.json";
 
+import artPromptsPt from "./artPrompts.pt.json";
+import artPromptsEn from "./artPrompts.en.json";
+import artPromptsDe from "./artPrompts.de.json";
+import artPromptsFr from "./artPrompts.fr.json";
+import artPromptsZh from "./artPrompts.zh.json";
+import artPromptsEs from "./artPrompts.es.json";
+import artPromptsIt from "./artPrompts.it.json";
+
 export const SUPPORTED_LANGUAGES = [
   { code: "pt", label: "Português", flag: "🇵🇹" },
   { code: "en", label: "English", flag: "🇬🇧" },
@@ -101,6 +109,7 @@ const FINANCIAL = { pt: financialPt, en: financialEn, de: financialDe, fr: finan
 const PHONICS = { pt: phonicsPt, en: phonicsEn, de: phonicsDe, fr: phonicsFr, zh: phonicsZh, es: phonicsEs, it: phonicsIt };
 const MISSIONS = { pt: missionsPt, en: missionsEn, de: missionsDe, fr: missionsFr, zh: missionsZh, es: missionsEs, it: missionsIt };
 const DETECTIVE = { pt: detectivePt, en: detectiveEn, de: detectiveDe, fr: detectiveFr, zh: detectiveZh, es: detectiveEs, it: detectiveIt };
+const ART_PROMPTS = { pt: artPromptsPt, en: artPromptsEn, de: artPromptsDe, fr: artPromptsFr, zh: artPromptsZh, es: artPromptsEs, it: artPromptsIt };
 
 // Normalizes zh's different shape ({hanzi,...}) to the same shape used by
 // the Latin-alphabet languages ({letter, lower, upper, exampleWord, emoji}).
@@ -152,6 +161,10 @@ export function getMissions(langCode) {
 
 export function getDetectiveCards(langCode) {
   return DETECTIVE[langCode] || [];
+}
+
+export function getArtPrompts(langCode) {
+  return ART_PROMPTS[langCode] || [];
 }
 
 // Countries are language-agnostic in shape (name/fact are per-language

@@ -5,7 +5,7 @@ const resources = {
   pt: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Início", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Leitura", phrases: "Frases", songs: "Canções", game: "Jogo", piano: "Piano", language: "Idiomas" , stories: "Histórias" , math: "Matemática" , financial: "Dinheiro" , parents: "Pais" , achievements: "Conquistas" , phonics: "Sons" , missions: "Missões" , world: "Mundo" , detective: "Detetive" },
+      nav: { home: "Início", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Leitura", phrases: "Frases", songs: "Canções", game: "Jogo", piano: "Piano", language: "Idiomas" , stories: "Histórias" , math: "Matemática" , financial: "Dinheiro" , parents: "Pais" , achievements: "Conquistas" , phonics: "Sons" , missions: "Missões" , world: "Mundo" , detective: "Detetive" , art: "Ateliê" },
       home: {
         pickProfile: "Escolhe o teu perfil",
         newProfile: "Novo perfil",
@@ -120,13 +120,18 @@ const resources = {
         detectiveLocked: "Este módulo abre um pouco mais tarde, quando fores maior. Continua a explorar os outros jogos! 🙂",
         detectiveScore: "Pontuação",
         detectivePlayAgain: "Jogar outra vez",
+        artTitle: "Ateliê da Imaginação",
+        artIntro: "Não há resposta certa aqui — desenha, imagina e diverte-te à tua maneira!",
+        artPromptOfDay: "Ideia de hoje",
+        artClear: "Limpar",
+        artTried: "Experimentadas",
       },
     },
   },
   en: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Home", alphabet: "Alphabet", syllables: "Syllables", reading: "Reading", phrases: "Phrases", songs: "Songs", game: "Game", piano: "Piano", language: "Languages" , stories: "Stories" , math: "Math" , financial: "Money" , parents: "Parents" , achievements: "Achievements" , phonics: "Sounds" , missions: "Missions" , world: "World" , detective: "Detective" },
+      nav: { home: "Home", alphabet: "Alphabet", syllables: "Syllables", reading: "Reading", phrases: "Phrases", songs: "Songs", game: "Game", piano: "Piano", language: "Languages" , stories: "Stories" , math: "Math" , financial: "Money" , parents: "Parents" , achievements: "Achievements" , phonics: "Sounds" , missions: "Missions" , world: "World" , detective: "Detective" , art: "Art Studio" },
       home: {
         pickProfile: "Pick your profile",
         newProfile: "New profile",
@@ -241,13 +246,18 @@ const resources = {
         detectiveLocked: "This module unlocks a bit later, when you're older. Keep exploring the other games! 🙂",
         detectiveScore: "Score",
         detectivePlayAgain: "Play again",
+        artTitle: "Imagination Studio",
+        artIntro: "There's no right answer here — draw, imagine, and have fun your own way!",
+        artPromptOfDay: "Today's idea",
+        artClear: "Clear",
+        artTried: "Tried",
       },
     },
   },
   de: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Start", alphabet: "Alphabet", syllables: "Silben", reading: "Lesen", phrases: "Sätze", songs: "Lieder", game: "Spiel", piano: "Klavier", language: "Sprachen" , stories: "Geschichten" , math: "Mathe" , financial: "Geld" , parents: "Eltern" , achievements: "Erfolge" , phonics: "Laute" , missions: "Missionen" , world: "Welt" , detective: "Detektiv" },
+      nav: { home: "Start", alphabet: "Alphabet", syllables: "Silben", reading: "Lesen", phrases: "Sätze", songs: "Lieder", game: "Spiel", piano: "Klavier", language: "Sprachen" , stories: "Geschichten" , math: "Mathe" , financial: "Geld" , parents: "Eltern" , achievements: "Erfolge" , phonics: "Laute" , missions: "Missionen" , world: "Welt" , detective: "Detektiv" , art: "Atelier" },
       home: {
         pickProfile: "Wähle dein Profil",
         newProfile: "Neues Profil",
@@ -362,13 +372,18 @@ const resources = {
         detectiveLocked: "Dieses Modul wird etwas später freigeschaltet, wenn du älter bist. Erkunde weiter die anderen Spiele! 🙂",
         detectiveScore: "Punktzahl",
         detectivePlayAgain: "Nochmal spielen",
+        artTitle: "Atelier der Fantasie",
+        artIntro: "Hier gibt es keine richtige Antwort — zeichne, träume und hab Spaß auf deine Art!",
+        artPromptOfDay: "Idee des Tages",
+        artClear: "Löschen",
+        artTried: "Ausprobiert",
       },
     },
   },
   fr: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Accueil", alphabet: "Alphabet", syllables: "Syllabes", reading: "Lecture", phrases: "Phrases", songs: "Chansons", game: "Jeu", piano: "Piano", language: "Langues" , stories: "Histoires" , math: "Maths" , financial: "Argent" , parents: "Parents" , achievements: "Réussites" , phonics: "Sons" , missions: "Missions" , world: "Monde" , detective: "Détective" },
+      nav: { home: "Accueil", alphabet: "Alphabet", syllables: "Syllabes", reading: "Lecture", phrases: "Phrases", songs: "Chansons", game: "Jeu", piano: "Piano", language: "Langues" , stories: "Histoires" , math: "Maths" , financial: "Argent" , parents: "Parents" , achievements: "Réussites" , phonics: "Sons" , missions: "Missions" , world: "Monde" , detective: "Détective" , art: "Atelier" },
       home: {
         pickProfile: "Choisis ton profil",
         newProfile: "Nouveau profil",
@@ -483,13 +498,18 @@ const resources = {
         detectiveLocked: "Ce module se débloque un peu plus tard, quand tu seras plus grand(e). Continue à explorer les autres jeux ! 🙂",
         detectiveScore: "Score",
         detectivePlayAgain: "Rejouer",
+        artTitle: "Atelier de l'Imagination",
+        artIntro: "Il n'y a pas de bonne réponse ici — dessine, imagine et amuse-toi à ta façon !",
+        artPromptOfDay: "Idée du jour",
+        artClear: "Effacer",
+        artTried: "Essayées",
       },
     },
   },
   zh: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "首页", alphabet: "字母表", syllables: "音节", reading: "阅读", phrases: "句子", songs: "歌曲", game: "游戏", piano: "钢琴", language: "语言" , stories: "故事" , math: "数学" , financial: "金钱" , parents: "家长" , achievements: "成就" , phonics: "语音" , missions: "任务" , world: "世界" , detective: "侦探" },
+      nav: { home: "首页", alphabet: "字母表", syllables: "音节", reading: "阅读", phrases: "句子", songs: "歌曲", game: "游戏", piano: "钢琴", language: "语言" , stories: "故事" , math: "数学" , financial: "金钱" , parents: "家长" , achievements: "成就" , phonics: "语音" , missions: "任务" , world: "世界" , detective: "侦探" , art: "创意工坊" },
       home: {
         pickProfile: "选择你的档案",
         newProfile: "新档案",
@@ -604,13 +624,18 @@ const resources = {
         detectiveLocked: "这个模块要等你再大一点才会解锁哦。继续探索其他游戏吧！🙂",
         detectiveScore: "得分",
         detectivePlayAgain: "再玩一次",
+        artTitle: "想象力工坊",
+        artIntro: "这里没有标准答案——尽情画画、想象，用你自己的方式玩耍！",
+        artPromptOfDay: "今日灵感",
+        artClear: "清除",
+        artTried: "已尝试",
       },
     },
   },
   es: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Inicio", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Lectura", phrases: "Frases", songs: "Canciones", game: "Juego", piano: "Piano", language: "Idiomas" , stories: "Cuentos" , math: "Matemáticas" , financial: "Dinero" , parents: "Padres" , achievements: "Logros" , phonics: "Sonidos" , missions: "Misiones" , world: "Mundo" , detective: "Detective" },
+      nav: { home: "Inicio", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Lectura", phrases: "Frases", songs: "Canciones", game: "Juego", piano: "Piano", language: "Idiomas" , stories: "Cuentos" , math: "Matemáticas" , financial: "Dinero" , parents: "Padres" , achievements: "Logros" , phonics: "Sonidos" , missions: "Misiones" , world: "Mundo" , detective: "Detective" , art: "Taller" },
       home: {
         pickProfile: "Elige tu perfil",
         newProfile: "Nuevo perfil",
@@ -725,13 +750,18 @@ const resources = {
         detectiveLocked: "Este módulo se desbloquea un poco más tarde, cuando seas mayor. ¡Sigue explorando los otros juegos! 🙂",
         detectiveScore: "Puntuación",
         detectivePlayAgain: "Jugar otra vez",
+        artTitle: "Taller de la Imaginación",
+        artIntro: "Aquí no hay una respuesta correcta: dibuja, imagina y diviértete a tu manera.",
+        artPromptOfDay: "Idea de hoy",
+        artClear: "Borrar",
+        artTried: "Probadas",
       },
     },
   },
   it: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Home", alphabet: "Alfabeto", syllables: "Sillabe", reading: "Lettura", phrases: "Frasi", songs: "Canzoni", game: "Gioco", piano: "Piano", language: "Lingue" , stories: "Storie" , math: "Matematica" , financial: "Denaro" , parents: "Genitori" , achievements: "Traguardi" , phonics: "Suoni" , missions: "Missioni" , world: "Mondo" , detective: "Detective" },
+      nav: { home: "Home", alphabet: "Alfabeto", syllables: "Sillabe", reading: "Lettura", phrases: "Frasi", songs: "Canzoni", game: "Gioco", piano: "Piano", language: "Lingue" , stories: "Storie" , math: "Matematica" , financial: "Denaro" , parents: "Genitori" , achievements: "Traguardi" , phonics: "Suoni" , missions: "Missioni" , world: "Mondo" , detective: "Detective" , art: "Atelier" },
       home: {
         pickProfile: "Scegli il tuo profilo",
         newProfile: "Nuovo profilo",
@@ -846,6 +876,11 @@ const resources = {
         detectiveLocked: "Questo modulo si sblocca un po' più avanti, quando sarai più grande. Continua a esplorare gli altri giochi! 🙂",
         detectiveScore: "Punteggio",
         detectivePlayAgain: "Gioca ancora",
+        artTitle: "Atelier dell'Immaginazione",
+        artIntro: "Qui non c'è una risposta giusta — disegna, immagina e divertiti a modo tuo!",
+        artPromptOfDay: "Idea di oggi",
+        artClear: "Cancella",
+        artTried: "Provate",
       },
     },
   },
