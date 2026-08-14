@@ -38,6 +38,62 @@ export function setLangPair(pair) {
   }
 }
 
+const PROGRESS_KEY = "abcmundo.progress";
+
+// Age-based difficulty tier for exercises: tier 1 = youngest (fewer/simpler
+// rounds), tier 3 = oldest (more/harder rounds).
+export function getDifficultyTier(age) {
+  const a = Number(age);
+  if (!a || a <= 6) return 1;
+  if (a <= 8) return 2;
+  return 3;
+}
+
+function loadAllProgress() {
+  try {
+    const raw = localStorage.getItem(PROGRESS_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveAllProgress(all) {
+  try {
+    localStorage.setItem(PROGRESS_KEY, JSON.stringify(all));
+  } catch {
+    // ignore
+  }
+}
+
+// Records one exercise attempt for a given skill under the given profile.
+// Correct answers grant more XP than incorrect ones (participation still
+// counts a little, to keep young children encouraged).
+export function recordSkillEvent(profileName, skill, correct) {
+  const key = profileName || "guest";
+  const all = loadAllProgress();
+  const entry = all[key] || { xp: 0, skills: {} };
+  const skillEntry = entry.skills[skill] || { correct: 0, attempts: 0 };
+  skillEntry.attempts += 1;
+  if (correct) skillEntry.correct += 1;
+  entry.skills[skill] = skillEntry;
+  entry.xp += correct ? 10 : 2;
+  all[key] = entry;
+  saveAllProgress(all);
+  return entry;
+}
+
+export function getProgress(profileName) {
+  const key = profileName || "guest";
+  const all = loadAllProgress();
+  return all[key] || { xp: 0, skills: {} };
+}
+
+// Simple level curve: 100xp per level, starting at level 1.
+export function getLevel(xp) {
+  return Math.floor((xp || 0) / 100) + 1;
+}
+
 export function pingProgress({ profileName, module, event }) {
   try {
     fetch("/api/progress/ping", {

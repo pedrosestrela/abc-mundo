@@ -15,6 +15,14 @@ import readingZh from "./reading.zh.json";
 import readingEs from "./reading.es.json";
 import readingIt from "./reading.it.json";
 
+import phonicsPt from "./phonics.pt.json";
+import phonicsEn from "./phonics.en.json";
+import phonicsDe from "./phonics.de.json";
+import phonicsFr from "./phonics.fr.json";
+import phonicsZh from "./phonics.zh.json";
+import phonicsEs from "./phonics.es.json";
+import phonicsIt from "./phonics.it.json";
+
 import songsPt from "./songs.pt.json";
 import songsEn from "./songs.en.json";
 import songsDe from "./songs.de.json";
@@ -36,6 +44,7 @@ export const SUPPORTED_LANGUAGES = [
 const ALPHABET = { pt: alphabetPt, en: alphabetEn, de: alphabetDe, fr: alphabetFr, zh: alphabetZh, es: alphabetEs, it: alphabetIt };
 const READING = { pt: readingPt, en: readingEn, de: readingDe, fr: readingFr, zh: readingZh, es: readingEs, it: readingIt };
 const SONGS = { pt: songsPt, en: songsEn, de: songsDe, fr: songsFr, zh: songsZh, es: songsEs, it: songsIt };
+const PHONICS = { pt: phonicsPt, en: phonicsEn, de: phonicsDe, fr: phonicsFr, zh: phonicsZh, es: phonicsEs, it: phonicsIt };
 
 // Normalizes zh's different shape ({hanzi,...}) to the same shape used by
 // the Latin-alphabet languages ({letter, lower, upper, exampleWord, emoji}).
@@ -59,4 +68,8 @@ export function getReading(langCode) {
 
 export function getSongs(langCode) {
   return SONGS[langCode] || [];
+}
+
+export function getPhonics(langCode) {
+  return PHONICS[langCode] || [];
 }
