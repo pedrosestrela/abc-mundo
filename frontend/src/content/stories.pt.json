@@ -3809,6 +3809,41 @@
     ]
   },
   {
+    "id": "splitting-the-last-cookie",
+    "title": "Partilhar a Última Bolacha",
+    "emoji": "🍪",
+    "pages": [
+      {
+        "text": "Só sobrava uma bolacha no prato, e Tiago e Sara queriam-na os dois.",
+        "emoji": "🍪"
+      },
+      {
+        "text": "\"É minha!\" disse Tiago, a segurar o prato com força.",
+        "emoji": "😤"
+      },
+      {
+        "text": "\"Eu também a quero!\" respondeu Sara, com os olhos tristes.",
+        "emoji": "😢"
+      },
+      {
+        "text": "A avó sugeriu: \"Porque não partem a bolacha ao meio?\"",
+        "emoji": "👵"
+      },
+      {
+        "text": "Tiago partiu a bolacha com cuidado em duas metades iguais.",
+        "emoji": "✂️"
+      },
+      {
+        "text": "Comeram juntos no sofá, a rir das migalhas.",
+        "emoji": "😄"
+      },
+      {
+        "text": "Perceberam que partilhar sabia ainda melhor do que comer sozinho.",
+        "emoji": "💛"
+      }
+    ]
+  },
+  {
     "id": "azulejo-tile-painter",
     "title": "O Pequeno Pintor de Azulejos",
     "emoji": "🎨",
