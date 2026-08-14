@@ -17,6 +17,7 @@ import ParentDashboard from "./pages/ParentDashboard.jsx";
 import Achievements from "./pages/Achievements.jsx";
 import Phonics from "./pages/Phonics.jsx";
 import Missions from "./pages/Missions.jsx";
+import World from "./pages/World.jsx";
 
 export default function App() {
   return (
@@ -39,6 +40,7 @@ export default function App() {
           <Route path="/parents" element={<ParentDashboard />} />
           <Route path="/achievements" element={<Achievements />} />
           <Route path="/missions" element={<Missions />} />
+          <Route path="/world" element={<World />} />
         </Routes>
       </main>
       <NavBar />

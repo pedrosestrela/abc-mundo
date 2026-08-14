@@ -31,6 +31,8 @@ import phrasesZh from "./phrases.zh.json";
 import phrasesEs from "./phrases.es.json";
 import phrasesIt from "./phrases.it.json";
 
+import countries from "./countries.json";
+
 import missionsPt from "./missions.pt.json";
 import missionsEn from "./missions.en.json";
 import missionsDe from "./missions.de.json";
@@ -137,4 +139,18 @@ export function getPhonics(langCode) {
 
 export function getMissions(langCode) {
   return MISSIONS[langCode] || [];
+}
+
+// Countries are language-agnostic in shape (name/fact are per-language
+// dictionaries inside each entry); langCode picks which strings to surface.
+export function getCountries(langCode) {
+  return countries.map((c) => ({
+    iso: c.iso,
+    flag: c.flag,
+    capital: c.capital,
+    continent: c.continent,
+    currency: c.currency,
+    name: c.name[langCode] || c.name.en,
+    fact: c.fact[langCode] || c.fact.en,
+  }));
 }

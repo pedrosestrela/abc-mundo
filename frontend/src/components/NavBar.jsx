@@ -54,6 +54,9 @@ export default function NavBar() {
       <NavLink to="/missions" className="nav-link">
         🧭 {t("nav.missions")}
       </NavLink>
+      <NavLink to="/world" className="nav-link">
+        🗺️ {t("nav.world")}
+      </NavLink>
     </nav>
   );
 }

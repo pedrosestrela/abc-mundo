@@ -1079,3 +1079,59 @@ body {
   right: 2px;
   font-size: 0.7rem;
 }
+
+.world-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 10px;
+  max-width: 640px;
+  margin: 0 auto 16px;
+}
+
+.world-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  background: #fff;
+  border: 3px solid transparent;
+  border-radius: 14px;
+  padding: 10px 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.world-tile.visited {
+  border-color: var(--green);
+}
+
+.world-tile-flag {
+  font-size: 1.8rem;
+}
+
+.world-tile-name {
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.country-card {
+  border-color: var(--blue);
+}
+
+.country-facts-row {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  font-weight: bold;
+  color: #666;
+  margin: 8px 0;
+  font-size: 0.9rem;
+}
+
+.world-quiz-picker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}

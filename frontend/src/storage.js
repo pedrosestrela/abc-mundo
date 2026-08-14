@@ -86,6 +86,44 @@ export function completeMission(profileName, missionId) {
   return all[name];
 }
 
+// --- World Explorer ("Passaporte do Explorador") ---
+// Tracks which country ISO codes the child has explored (viewed the detail
+// card for), separate from quiz skill tracking.
+
+const VISITED_COUNTRIES_KEY = "abcmundo.visitedCountries";
+
+function loadVisitedCountries() {
+  try {
+    const raw = localStorage.getItem(VISITED_COUNTRIES_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveVisitedCountries(all) {
+  try {
+    localStorage.setItem(VISITED_COUNTRIES_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getVisitedCountries(profileName) {
+  const all = loadVisitedCountries();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function visitCountry(profileName, iso) {
+  const name = profileName || "Explorer";
+  const all = loadVisitedCountries();
+  const visited = new Set(all[name] || []);
+  visited.add(iso);
+  all[name] = Array.from(visited);
+  saveVisitedCountries(all);
+  return all[name];
+}
+
 export function pingProgress({ profileName, module, event }) {
   try {
     fetch("/api/progress/ping", {
