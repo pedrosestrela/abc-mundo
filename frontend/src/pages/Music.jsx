@@ -76,6 +76,7 @@ const WHICH_INSTRUMENT_POOL = [
   "cavaquinho",
   "portugueseGuitar",
   "concertina",
+  "viola",
 ];
 
 // Builds a round for level 1 (same/different): 50% chance of two identical

@@ -9,6 +9,7 @@ export const INSTRUMENT_FAMILY = {
   cavaquinho: "strings",
   portugueseGuitar: "strings",
   violin: "bowed",
+  viola: "bowed",
   flute: "wind",
   accordion: "bellows",
   concertina: "bellows",
