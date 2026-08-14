@@ -1,14 +1,18 @@
 import React, { useEffect, useRef } from "react";
 import Globe from "globe.gl";
 import { MeshPhongMaterial, Color } from "three";
+import { feature } from "topojson-client";
+// Land shapes come from the "world-atlas" npm package, bundled locally by Vite
+// at build time (no runtime CDN/network fetch needed). This keeps the globe
+// self-contained and network-independent (works offline/on tablets once the PWA
+// service worker has cached the build), while still drawing real continent
+// outlines instead of a flat ocean-blue sphere.
+import landTopo from "world-atlas/land-110m.json";
+
+const landFeatures = feature(landTopo, landTopo.objects.land).features;
 
 // Thin wrapper around globe.gl (three.js under the hood): a rotatable,
-// zoomable Earth with one clickable point per explored country.
-// Deliberately NOT using an external texture image (e.g. from a CDN):
-// that would make the globe depend on a third-party host being reachable
-// at runtime, which is fragile for a PWA meant to work offline/on tablets.
-// Instead the globe uses a solid ocean-blue material + atmosphere glow,
-// self-contained and network-independent.
+// zoomable Earth with land polygons plus one clickable point per explored country.
 
 export default function Globe3D({ countries, visited, onSelect }) {
   const containerRef = useRef(null);
@@ -23,6 +27,11 @@ export default function Globe3D({ countries, visited, onSelect }) {
       .atmosphereColor("#7fd4ff")
       .atmosphereAltitude(0.18)
       .backgroundColor("#0b1024")
+      .polygonsData(landFeatures)
+      .polygonCapColor(() => "#2d8659")
+      .polygonSideColor(() => "rgba(0,0,0,0)")
+      .polygonStrokeColor(() => "#1b5c3f")
+      .polygonAltitude(0.006)
       .pointsData(countries)
       .pointLat("lat")
       .pointLng("lng")

@@ -420,13 +420,15 @@ body {
 
 .piano-wrap {
   position: relative;
-  max-width: 560px;
+  max-width: 900px;
   margin: 16px auto;
+  overflow-x: auto;
 }
 
 .piano-white-keys {
   display: flex;
-  gap: 3px;
+  gap: 2px;
+  min-width: 600px;
 }
 
 .piano-key.white {
@@ -450,7 +452,7 @@ body {
 }
 
 .piano-key-label {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 .piano-black-keys {
@@ -495,6 +497,118 @@ body {
 .piano-progress {
   font-weight: bold;
   color: var(--green);
+}
+
+.instrument-switcher {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 12px auto;
+  max-width: 640px;
+}
+
+.instrument-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 14px;
+  border-radius: 16px;
+  border: 2px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.instrument-btn.active {
+  background: var(--yellow);
+  border-color: var(--pink);
+  color: #333;
+}
+
+.instrument-icon {
+  font-size: 1.6rem;
+}
+
+.music-staff-wrap {
+  max-width: 320px;
+  margin: 8px auto 16px;
+  text-align: center;
+}
+
+.music-staff-svg {
+  background: #fff;
+  border-radius: 12px;
+  border: 2px solid #eee;
+}
+
+.staff-line {
+  stroke: #333;
+  stroke-width: 1.5;
+}
+
+.staff-ledger {
+  stroke: #333;
+  stroke-width: 1.5;
+}
+
+.staff-clef {
+  font-size: 44px;
+  fill: var(--purple);
+}
+
+.staff-notehead {
+  fill: var(--pink);
+  stroke: #a03060;
+  stroke-width: 1;
+}
+
+.music-staff-label {
+  font-weight: bold;
+  color: var(--purple);
+  min-height: 1.4em;
+  margin-top: 4px;
+}
+
+.drum-pads-wrap {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.drum-pads {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin: 16px auto;
+}
+
+.drum-pad {
+  height: 100px;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.drum-pad-kick {
+  background: var(--purple);
+}
+
+.drum-pad-snare {
+  background: var(--pink);
+}
+
+.drum-pad-hihat {
+  background: var(--green);
+}
+
+.drum-pad-tom {
+  background: var(--blue);
 }
 
 .song-card {
