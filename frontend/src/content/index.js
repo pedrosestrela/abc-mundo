@@ -257,15 +257,10 @@ import communicationZh from "./communication.zh.json";
 import communicationEs from "./communication.es.json";
 import communicationIt from "./communication.it.json";
 
-export const SUPPORTED_LANGUAGES = [
-  { code: "pt", label: "Português", flag: "🇵🇹" },
-  { code: "en", label: "English", flag: "🇬🇧" },
-  { code: "de", label: "Deutsch", flag: "🇩🇪" },
-  { code: "fr", label: "Français", flag: "🇫🇷" },
-  { code: "zh", label: "中文", flag: "🇨🇳" },
-  { code: "es", label: "Español", flag: "🇪🇸" },
-  { code: "it", label: "Italiano", flag: "🇮🇹" },
-];
+// Re-exported so existing `import { SUPPORTED_LANGUAGES } from "../content"`
+// call sites keep working unchanged. See content/languages.js for why the
+// actual list lives in its own module.
+export { SUPPORTED_LANGUAGES } from "./languages.js";
 
 const ALPHABET = { pt: alphabetPt, en: alphabetEn, de: alphabetDe, fr: alphabetFr, zh: alphabetZh, es: alphabetEs, it: alphabetIt };
 const READING = { pt: readingPt, en: readingEn, de: readingDe, fr: readingFr, zh: readingZh, es: readingEs, it: readingIt };
