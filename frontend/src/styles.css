@@ -342,6 +342,31 @@ body {
   background: #ffd6e0;
 }
 
+.syllable-breakdown {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.syllable-breakdown .syllable-part {
+  background: var(--yellow);
+  color: #333;
+  border-radius: 6px;
+  padding: 1px 6px;
+}
+
+.syllable-breakdown.secondary .syllable-part {
+  background: #ffd6e0;
+}
+
+.syllable-breakdown .syllable-sep {
+  color: #999;
+  font-weight: normal;
+}
+
 .phrase-row {
   font-size: 1.15rem !important;
 }
