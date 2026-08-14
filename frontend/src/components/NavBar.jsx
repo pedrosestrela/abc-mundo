@@ -69,6 +69,9 @@ export default function NavBar() {
       <NavLink to="/financial" className="nav-link">
         💰 {t("nav.financial")}
       </NavLink>
+      <NavLink to="/lifeskills" className="nav-link">
+        🌱 {t("nav.lifeskills")}
+      </NavLink>
       <NavLink to="/missions" className="nav-link">
         🧭 {t("nav.missions")}
       </NavLink>
