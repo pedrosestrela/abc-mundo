@@ -1,0 +1,14 @@
+// Custom illustration library — a small, hand-authored set of consistent
+// flat-design SVG components used in place of raw emoji across the app.
+//
+// Every component takes { size = 64, className = "" } and renders an inline
+// <svg>. Shared visual language (palette + stroke width) lives in palette.js.
+//
+// Categories:
+//  - animals.jsx: dog, cat, cow, lion, sheep, mouse, duck, frog
+//  - scenery.jsx: house, tree, sun, cloud, river
+//  - icons.jsx: book, pencil, star, heart, clock
+export * from "./animals.jsx";
+export * from "./scenery.jsx";
+export * from "./icons.jsx";
+export { PALETTE, STROKE, STROKE_WIDTH } from "./palette.js";
