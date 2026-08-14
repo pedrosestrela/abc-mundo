@@ -33,7 +33,52 @@
       "es": "Portugal es conocido por el fado, una música tradicional y melancólica cantada con la guitarra portuguesa.",
       "it": "Il Portogallo è noto per il fado, una musica tradizionale e malinconica cantata con la chitarra portoghese.",
       "zh": "葡萄牙以法多音乐闻名，这是一种用葡萄牙吉他伴奏演唱的传统忧伤音乐。"
-    }
+    },
+    "language": {
+      "pt": "Português",
+      "en": "Portuguese",
+      "de": "Portugiesisch",
+      "fr": "Portugais",
+      "es": "Portugués",
+      "it": "Portoghese",
+      "zh": "葡萄牙语"
+    },
+    "greeting": "Olá, como estás?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🐓",
+      "name": {
+        "pt": "Galo de Barcelos",
+        "en": "Rooster of Barcelos",
+        "de": "Hahn von Barcelos",
+        "fr": "Coq de Barcelos",
+        "es": "Gallo de Barcelos",
+        "it": "Gallo di Barcelos",
+        "zh": "巴塞卢什公鸡"
+      }
+    },
+    "tradition": {
+      "pt": "O Galo de Barcelos é um símbolo de sorte em Portugal, ligado a uma lenda antiga.",
+      "en": "The Rooster of Barcelos is a lucky symbol in Portugal, tied to an old legend.",
+      "de": "Der Hahn von Barcelos ist ein Glückssymbol in Portugal, das mit einer alten Legende verbunden ist.",
+      "fr": "Le Coq de Barcelos est un symbole porte-bonheur au Portugal, lié à une vieille légende.",
+      "es": "El Gallo de Barcelos es un símbolo de buena suerte en Portugal, ligado a una vieja leyenda.",
+      "it": "Il Gallo di Barcelos è un simbolo di fortuna in Portogallo, legato a un'antica leggenda.",
+      "zh": "巴塞卢什公鸡是葡萄牙的幸运象征,与一个古老的传说有关。"
+    },
+    "emojiScene": [
+      "🐓",
+      "🥮",
+      "⛵"
+    ]
   },
   {
     "iso": "ES",
@@ -69,7 +114,52 @@
       "es": "En España, el flamenco combina canto, guitarra y baile con mucho ritmo y emoción.",
       "it": "In Spagna, il flamenco unisce canto, chitarra e danza con molto ritmo ed emozione.",
       "zh": "在西班牙，弗拉门戈将歌唱、吉他和舞蹈结合在一起，节奏感和感染力十足。"
-    }
+    },
+    "language": {
+      "pt": "Espanhol",
+      "en": "Spanish",
+      "de": "Spanisch",
+      "fr": "Espagnol",
+      "es": "Español",
+      "it": "Spagnolo",
+      "zh": "西班牙语"
+    },
+    "greeting": "Hola, ¿cómo estás?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🐂",
+      "name": {
+        "pt": "Touro de lide",
+        "en": "Fighting bull",
+        "de": "Kampfstier",
+        "fr": "Taureau de combat",
+        "es": "Toro de lidia",
+        "it": "Toro da corrida",
+        "zh": "斗牛"
+      }
+    },
+    "tradition": {
+      "pt": "Em Espanha há a festa de La Tomatina, onde milhares de pessoas se atiram tomates.",
+      "en": "In Spain there's La Tomatina, a festival where thousands of people throw tomatoes at each other.",
+      "de": "In Spanien gibt es La Tomatina, ein Fest, bei dem Tausende Menschen mit Tomaten werfen.",
+      "fr": "En Espagne, il y a La Tomatina, une fête où des milliers de personnes se lancent des tomates.",
+      "es": "En España está La Tomatina, una fiesta donde miles de personas se lanzan tomates.",
+      "it": "In Spagna c'è La Tomatina, una festa in cui migliaia di persone si lanciano pomodori.",
+      "zh": "西班牙有西红柿节,数千人互相投掷西红柿。"
+    },
+    "emojiScene": [
+      "💃",
+      "🥘",
+      "🎸"
+    ]
   },
   {
     "iso": "FR",
@@ -105,7 +195,52 @@
       "es": "En Francia, el acordeón es un instrumento tradicional muy asociado a la música callejera y a los valses.",
       "it": "In Francia, la fisarmonica è uno strumento tradizionale molto associato alla musica di strada e ai valzer.",
       "zh": "在法国，手风琴是一种传统乐器，常与街头音乐和华尔兹舞曲联系在一起。"
-    }
+    },
+    "language": {
+      "pt": "Francês",
+      "en": "French",
+      "de": "Französisch",
+      "fr": "Français",
+      "es": "Francés",
+      "it": "Francese",
+      "zh": "法语"
+    },
+    "greeting": "Bonjour, comment ça va ?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🐓",
+      "name": {
+        "pt": "Galo gaulês",
+        "en": "Gallic rooster",
+        "de": "Gallischer Hahn",
+        "fr": "Coq gaulois",
+        "es": "Gallo galo",
+        "it": "Gallo gallico",
+        "zh": "高卢雄鸡"
+      }
+    },
+    "tradition": {
+      "pt": "Em França celebra-se o 14 de julho com fogo-de-artifício em todas as cidades.",
+      "en": "In France, July 14th is celebrated with fireworks in every town.",
+      "de": "In Frankreich wird der 14. Juli mit Feuerwerk in jeder Stadt gefeiert.",
+      "fr": "En France, le 14 juillet est célébré avec des feux d'artifice dans chaque ville.",
+      "es": "En Francia se celebra el 14 de julio con fuegos artificiales en cada ciudad.",
+      "it": "In Francia si festeggia il 14 luglio con i fuochi d'artificio in ogni città.",
+      "zh": "法国在7月14日举行烟花庆祝活动。"
+    },
+    "emojiScene": [
+      "🗼",
+      "🥐",
+      "🎨"
+    ]
   },
   {
     "iso": "DE",
@@ -141,7 +276,52 @@
       "es": "En Alemania, la tuba y el acordeón se usan mucho en la música tradicional bávara, tocada en fiestas populares.",
       "it": "In Germania, la tuba e la fisarmonica sono molto usate nella musica tradizionale bavarese, suonata nelle feste popolari.",
       "zh": "在德国，大号和手风琴常用于传统的巴伐利亚音乐，这种音乐会在民间节庆中演奏。"
-    }
+    },
+    "language": {
+      "pt": "Alemão",
+      "en": "German",
+      "de": "Deutsch",
+      "fr": "Allemand",
+      "es": "Alemán",
+      "it": "Tedesco",
+      "zh": "德语"
+    },
+    "greeting": "Hallo, wie geht es dir?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🦅",
+      "name": {
+        "pt": "Águia germânica",
+        "en": "German eagle",
+        "de": "Deutscher Adler",
+        "fr": "Aigle allemand",
+        "es": "Águila alemana",
+        "it": "Aquila tedesca",
+        "zh": "德国鹰"
+      }
+    },
+    "tradition": {
+      "pt": "Na Alemanha há a Oktoberfest, uma grande festa com música e comida tradicional.",
+      "en": "Germany has Oktoberfest, a big festival with music and traditional food.",
+      "de": "In Deutschland gibt es das Oktoberfest, ein großes Fest mit Musik und traditionellem Essen.",
+      "fr": "En Allemagne, il y a l'Oktoberfest, une grande fête avec de la musique et des plats traditionnels.",
+      "es": "En Alemania está el Oktoberfest, una gran fiesta con música y comida tradicional.",
+      "it": "In Germania c'è l'Oktoberfest, una grande festa con musica e cibo tradizionale.",
+      "zh": "德国有慕尼黑啤酒节,有音乐和传统美食。"
+    },
+    "emojiScene": [
+      "🏰",
+      "🥨",
+      "🚗"
+    ]
   },
   {
     "iso": "IT",
@@ -177,7 +357,52 @@
       "es": "En Italia, la ópera nació hace más de 400 años y sigue siendo una forma de arte muy apreciada.",
       "it": "In Italia, l'opera nacque più di 400 anni fa e resta ancora oggi una forma d'arte molto amata.",
       "zh": "在意大利，歌剧诞生于四百多年前，至今仍是一种备受喜爱的艺术形式。"
-    }
+    },
+    "language": {
+      "pt": "Italiano",
+      "en": "Italian",
+      "de": "Italienisch",
+      "fr": "Italien",
+      "es": "Italiano",
+      "it": "Italiano",
+      "zh": "意大利语"
+    },
+    "greeting": "Ciao, come stai?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🐺",
+      "name": {
+        "pt": "Loba de Roma",
+        "en": "She-wolf of Rome",
+        "de": "Wölfin von Rom",
+        "fr": "Louve de Rome",
+        "es": "Loba de Roma",
+        "it": "Lupa di Roma",
+        "zh": "罗马母狼"
+      }
+    },
+    "tradition": {
+      "pt": "Em Itália há o Carnaval de Veneza, com máscaras coloridas e trajes elegantes.",
+      "en": "Italy has the Venice Carnival, with colorful masks and elegant costumes.",
+      "de": "In Italien gibt es den Karneval von Venedig mit bunten Masken und eleganten Kostümen.",
+      "fr": "En Italie, il y a le Carnaval de Venise, avec des masques colorés et des costumes élégants.",
+      "es": "En Italia está el Carnaval de Venecia, con máscaras coloridas y trajes elegantes.",
+      "it": "In Italia c'è il Carnevale di Venezia, con maschere colorate e costumi eleganti.",
+      "zh": "意大利有威尼斯狂欢节,有色彩缤纷的面具和华丽的服装。"
+    },
+    "emojiScene": [
+      "🍕",
+      "🎭",
+      "🏛️"
+    ]
   },
   {
     "iso": "GB",
@@ -213,7 +438,52 @@
       "es": "En el Reino Unido, la gaita escocesa es un instrumento tradicional que se toca en fiestas y ceremonias.",
       "it": "Nel Regno Unito, la cornamusa scozzese è uno strumento tradizionale suonato in feste e cerimonie.",
       "zh": "在英国，苏格兰风笛是一种在庆典和仪式上演奏的传统乐器。"
-    }
+    },
+    "language": {
+      "pt": "Inglês",
+      "en": "English",
+      "de": "Englisch",
+      "fr": "Anglais",
+      "es": "Inglés",
+      "it": "Inglese",
+      "zh": "英语"
+    },
+    "greeting": "Hello, how are you?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🦁",
+      "name": {
+        "pt": "Leão britânico",
+        "en": "British lion",
+        "de": "Britischer Löwe",
+        "fr": "Lion britannique",
+        "es": "León británico",
+        "it": "Leone britannico",
+        "zh": "英国狮"
+      }
+    },
+    "tradition": {
+      "pt": "No Reino Unido celebra-se o chá da tarde, com bolinhos e sanduíches pequenas.",
+      "en": "In the United Kingdom, afternoon tea is celebrated with scones and small sandwiches.",
+      "de": "Im Vereinigten Königreich wird der Afternoon Tea mit Scones und kleinen Sandwiches gefeiert.",
+      "fr": "Au Royaume-Uni, on célèbre le thé de l'après-midi avec des scones et de petits sandwichs.",
+      "es": "En el Reino Unido se celebra el té de la tarde, con bollos y sándwiches pequeños.",
+      "it": "Nel Regno Unito si celebra il tè del pomeriggio con scone e piccoli sandwich.",
+      "zh": "在英国,人们喜欢下午茶,配司康饼和小三明治。"
+    },
+    "emojiScene": [
+      "🎡",
+      "☂️",
+      "🚌"
+    ]
   },
   {
     "iso": "US",
@@ -249,7 +519,52 @@
       "es": "En Estados Unidos, el jazz nació en Nueva Orleans y mezcló influencias africanas, europeas y caribeñas.",
       "it": "Negli Stati Uniti, il jazz nacque a New Orleans e unì influenze africane, europee e caraibiche.",
       "zh": "在美国，爵士乐诞生于新奥尔良，融合了非洲、欧洲和加勒比的音乐元素。"
-    }
+    },
+    "language": {
+      "pt": "Inglês",
+      "en": "English",
+      "de": "Englisch",
+      "fr": "Anglais",
+      "es": "Inglés",
+      "it": "Inglese",
+      "zh": "英语"
+    },
+    "greeting": "Hello, how are you?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🦅",
+      "name": {
+        "pt": "Águia careca",
+        "en": "Bald eagle",
+        "de": "Weißkopfseeadler",
+        "fr": "Aigle à tête blanche",
+        "es": "Águila calva",
+        "it": "Aquila calva",
+        "zh": "白头海雕"
+      }
+    },
+    "tradition": {
+      "pt": "Nos Estados Unidos celebra-se o 4 de julho com fogo-de-artifício e churrascos em família.",
+      "en": "In the United States, July 4th is celebrated with fireworks and family barbecues.",
+      "de": "In den USA wird der 4. Juli mit Feuerwerk und Familiengrillfesten gefeiert.",
+      "fr": "Aux États-Unis, le 4 juillet est célébré avec des feux d'artifice et des barbecues en famille.",
+      "es": "En Estados Unidos se celebra el 4 de julio con fuegos artificiales y barbacoas familiares.",
+      "it": "Negli Stati Uniti si festeggia il 4 luglio con fuochi d'artificio e grigliate in famiglia.",
+      "zh": "美国在7月4日以烟花和家庭烧烤庆祝独立日。"
+    },
+    "emojiScene": [
+      "🗽",
+      "🍔",
+      "🏈"
+    ]
   },
   {
     "iso": "BR",
@@ -285,7 +600,52 @@
       "es": "En Brasil, la samba es una música y un baile animados, muy ligados al Carnaval.",
       "it": "In Brasile, il samba è una musica e una danza vivace, molto legata al Carnevale.",
       "zh": "在巴西，桑巴是一种充满活力的音乐和舞蹈形式，与狂欢节密切相关。"
-    }
+    },
+    "language": {
+      "pt": "Português",
+      "en": "Portuguese",
+      "de": "Portugiesisch",
+      "fr": "Portugais",
+      "es": "Portugués",
+      "it": "Portoghese",
+      "zh": "葡萄牙语"
+    },
+    "greeting": "Olá, como estás?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🦜",
+      "name": {
+        "pt": "Arara",
+        "en": "Macaw",
+        "de": "Ara-Papagei",
+        "fr": "Ara",
+        "es": "Guacamayo",
+        "it": "Ara",
+        "zh": "金刚鹦鹉"
+      }
+    },
+    "tradition": {
+      "pt": "No Brasil há o Carnaval, uma grande festa com desfiles de samba coloridos.",
+      "en": "Brazil has Carnival, a big festival with colorful samba parades.",
+      "de": "In Brasilien gibt es Karneval, ein großes Fest mit bunten Samba-Umzügen.",
+      "fr": "Au Brésil, il y a le Carnaval, une grande fête avec des défilés de samba colorés.",
+      "es": "En Brasil está el Carnaval, una gran fiesta con desfiles de samba coloridos.",
+      "it": "In Brasile c'è il Carnevale, una grande festa con sfilate di samba colorate.",
+      "zh": "巴西有狂欢节,有色彩缤纷的桑巴游行。"
+    },
+    "emojiScene": [
+      "⚽",
+      "🎉",
+      "🌴"
+    ]
   },
   {
     "iso": "CN",
@@ -321,7 +681,52 @@
       "es": "En China, el guzheng es un instrumento de cuerda muy antiguo que todavía se toca hoy en día.",
       "it": "In Cina, il guzheng è uno strumento a corde molto antico, ancora suonato oggi.",
       "zh": "在中国，古筝是一种历史悠久的弦乐器，至今仍在演奏。"
-    }
+    },
+    "language": {
+      "pt": "Mandarim",
+      "en": "Mandarin",
+      "de": "Mandarin",
+      "fr": "Mandarin",
+      "es": "Mandarín",
+      "it": "Mandarino",
+      "zh": "普通话"
+    },
+    "greeting": "你好,你好吗?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🐼",
+      "name": {
+        "pt": "Panda-gigante",
+        "en": "Giant panda",
+        "de": "Großer Panda",
+        "fr": "Panda géant",
+        "es": "Panda gigante",
+        "it": "Panda gigante",
+        "zh": "大熊猫"
+      }
+    },
+    "tradition": {
+      "pt": "Na China celebra-se o Ano Novo Chinês com danças do dragão e fogo-de-artifício.",
+      "en": "China celebrates Chinese New Year with dragon dances and fireworks.",
+      "de": "In China wird das chinesische Neujahr mit Drachentänzen und Feuerwerk gefeiert.",
+      "fr": "En Chine, on célèbre le Nouvel An chinois avec des danses du dragon et des feux d'artifice.",
+      "es": "En China se celebra el Año Nuevo Chino con danzas del dragón y fuegos artificiales.",
+      "it": "In Cina si festeggia il Capodanno cinese con danze del drago e fuochi d'artificio.",
+      "zh": "中国庆祝春节,有舞龙和烟花表演。"
+    },
+    "emojiScene": [
+      "🐉",
+      "🥟",
+      "🏯"
+    ]
   },
   {
     "iso": "JP",
@@ -357,7 +762,52 @@
       "es": "En Japón, el koto es un instrumento de cuerda tradicional utilizado desde hace más de mil años.",
       "it": "In Giappone, il koto è uno strumento a corde tradizionale usato da oltre mille anni.",
       "zh": "在日本，古琴（筝）是一种已使用了一千多年的传统弦乐器。"
-    }
+    },
+    "language": {
+      "pt": "Japonês",
+      "en": "Japanese",
+      "de": "Japanisch",
+      "fr": "Japonais",
+      "es": "Japonés",
+      "it": "Giapponese",
+      "zh": "日语"
+    },
+    "greeting": "こんにちは、元気ですか?",
+    "greetingTranslation": {
+      "pt": "Olá, tudo bem?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🦊",
+      "name": {
+        "pt": "Raposa (Kitsune)",
+        "en": "Fox (Kitsune)",
+        "de": "Fuchs (Kitsune)",
+        "fr": "Renard (Kitsune)",
+        "es": "Zorro (Kitsune)",
+        "it": "Volpe (Kitsune)",
+        "zh": "狐狸(狐)"
+      }
+    },
+    "tradition": {
+      "pt": "No Japão celebra-se o Hanami, quando as famílias admiram as flores de cerejeira.",
+      "en": "Japan celebrates Hanami, when families admire the cherry blossoms.",
+      "de": "In Japan wird Hanami gefeiert, wenn Familien die Kirschblüten bewundern.",
+      "fr": "Au Japon, on célèbre le Hanami, quand les familles admirent les fleurs de cerisier.",
+      "es": "En Japón se celebra el Hanami, cuando las familias admiran los cerezos en flor.",
+      "it": "In Giappone si celebra l'Hanami, quando le famiglie ammirano i fiori di ciliegio.",
+      "zh": "日本人在樱花节赏花,一家人一起欣赏樱花。"
+    },
+    "emojiScene": [
+      "🌸",
+      "🍣",
+      "⛩️"
+    ]
   },
   {
     "iso": "IN",
@@ -393,7 +843,52 @@
       "es": "En la India, el sitar es un instrumento de cuerda muy utilizado en la música clásica india.",
       "it": "In India, il sitar è uno strumento a corde molto usato nella musica classica indiana.",
       "zh": "在印度，西塔琴是印度古典音乐中广泛使用的一种弦乐器。"
-    }
+    },
+    "language": {
+      "pt": "Hindi",
+      "en": "Hindi",
+      "de": "Hindi",
+      "fr": "Hindi",
+      "es": "Hindi",
+      "it": "Hindi",
+      "zh": "印地语"
+    },
+    "greeting": "नमस्ते, आप कैसे हैं?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🐯",
+      "name": {
+        "pt": "Tigre-de-bengala",
+        "en": "Bengal tiger",
+        "de": "Bengaltiger",
+        "fr": "Tigre du Bengale",
+        "es": "Tigre de Bengala",
+        "it": "Tigre del Bengala",
+        "zh": "孟加拉虎"
+      }
+    },
+    "tradition": {
+      "pt": "Na Índia celebra-se o Diwali, o festival das luzes, com lamparinas e fogo-de-artifício.",
+      "en": "India celebrates Diwali, the festival of lights, with oil lamps and fireworks.",
+      "de": "In Indien wird Diwali gefeiert, das Lichterfest, mit Öllampen und Feuerwerk.",
+      "fr": "En Inde, on célèbre Diwali, la fête des lumières, avec des lampes à huile et des feux d'artifice.",
+      "es": "En la India se celebra Diwali, el festival de las luces, con lámparas de aceite y fuegos artificiales.",
+      "it": "In India si celebra il Diwali, la festa delle luci, con lampade a olio e fuochi d'artificio.",
+      "zh": "印度庆祝排灯节,点亮油灯并燃放烟花。"
+    },
+    "emojiScene": [
+      "🕌",
+      "🍛",
+      "🐘"
+    ]
   },
   {
     "iso": "EG",
@@ -429,7 +924,52 @@
       "es": "En Egipto, el laúd oud es un instrumento de cuerda en forma de pera, muy utilizado en la música árabe.",
       "it": "In Egitto, l'oud è uno strumento a corde a forma di pera, molto usato nella musica araba.",
       "zh": "在埃及，乌德琴是一种梨形弦乐器，广泛用于阿拉伯音乐。"
-    }
+    },
+    "language": {
+      "pt": "Árabe",
+      "en": "Arabic",
+      "de": "Arabisch",
+      "fr": "Arabe",
+      "es": "Árabe",
+      "it": "Arabo",
+      "zh": "阿拉伯语"
+    },
+    "greeting": "مرحباً، كيف حالك؟",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🐫",
+      "name": {
+        "pt": "Camelo",
+        "en": "Camel",
+        "de": "Kamel",
+        "fr": "Chameau",
+        "es": "Camello",
+        "it": "Cammello",
+        "zh": "骆驼"
+      }
+    },
+    "tradition": {
+      "pt": "No Egito celebra-se o rio Nilo com festivais tradicionais junto à água.",
+      "en": "Egypt celebrates the Nile River with traditional festivals by the water.",
+      "de": "Ägypten feiert den Nil mit traditionellen Festen am Wasser.",
+      "fr": "L'Égypte célèbre le Nil avec des festivals traditionnels au bord de l'eau.",
+      "es": "Egipto celebra el río Nilo con festivales tradicionales junto al agua.",
+      "it": "L'Egitto celebra il fiume Nilo con festival tradizionali vicino all'acqua.",
+      "zh": "埃及人在尼罗河畔举行传统节庆活动。"
+    },
+    "emojiScene": [
+      "🐫",
+      "🔺",
+      "🏺"
+    ]
   },
   {
     "iso": "ZA",
@@ -465,7 +1005,52 @@
       "es": "En Sudáfrica, los cantos corales como el mbube tienen armonías muy ricas cantadas en grupo.",
       "it": "In Sudafrica, i canti corali come il mbube hanno armonie molto ricche cantate in gruppo.",
       "zh": "在南非，像姆布贝这样的合唱歌曲以团体演唱、和声丰富著称。"
-    }
+    },
+    "language": {
+      "pt": "Zulu",
+      "en": "Zulu",
+      "de": "Zulu",
+      "fr": "Zoulou",
+      "es": "Zulú",
+      "it": "Zulu",
+      "zh": "祖鲁语"
+    },
+    "greeting": "Sawubona, unjani?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🦁",
+      "name": {
+        "pt": "Leão",
+        "en": "Lion",
+        "de": "Löwe",
+        "fr": "Lion",
+        "es": "León",
+        "it": "Leone",
+        "zh": "狮子"
+      }
+    },
+    "tradition": {
+      "pt": "Na África do Sul celebra-se o Dia da Herança, com música, dança e comida de todas as culturas do país.",
+      "en": "South Africa celebrates Heritage Day, with music, dance, and food from all the country's cultures.",
+      "de": "Südafrika feiert den Heritage Day mit Musik, Tanz und Essen aus allen Kulturen des Landes.",
+      "fr": "L'Afrique du Sud célèbre le Heritage Day, avec musique, danse et cuisine de toutes les cultures du pays.",
+      "es": "Sudáfrica celebra el Día del Patrimonio, con música, baile y comida de todas las culturas del país.",
+      "it": "Il Sudafrica celebra l'Heritage Day, con musica, danza e cibo di tutte le culture del paese.",
+      "zh": "南非庆祝传统日,有来自各文化的音乐、舞蹈和美食。"
+    },
+    "emojiScene": [
+      "🦒",
+      "🥘",
+      "🏞️"
+    ]
   },
   {
     "iso": "AU",
@@ -501,7 +1086,52 @@
       "es": "En Australia, el didgeridoo es un instrumento de viento muy antiguo, creado por los pueblos aborígenes.",
       "it": "In Australia, il didgeridoo è uno strumento a fiato molto antico, creato dai popoli aborigeni.",
       "zh": "在澳大利亚，迪吉里杜管是一种由原住民发明的古老吹奏乐器。"
-    }
+    },
+    "language": {
+      "pt": "Inglês",
+      "en": "English",
+      "de": "Englisch",
+      "fr": "Anglais",
+      "es": "Inglés",
+      "it": "Inglese",
+      "zh": "英语"
+    },
+    "greeting": "Hello, how are you?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🦘",
+      "name": {
+        "pt": "Canguru",
+        "en": "Kangaroo",
+        "de": "Känguru",
+        "fr": "Kangourou",
+        "es": "Canguro",
+        "it": "Canguro",
+        "zh": "袋鼠"
+      }
+    },
+    "tradition": {
+      "pt": "Na Austrália celebra-se o Dia da Austrália com churrascos e festas na praia.",
+      "en": "Australia celebrates Australia Day with barbecues and beach parties.",
+      "de": "Australien feiert den Australia Day mit Grillfesten und Strandpartys.",
+      "fr": "L'Australie célèbre l'Australia Day avec des barbecues et des fêtes à la plage.",
+      "es": "Australia celebra el Día de Australia con barbacoas y fiestas en la playa.",
+      "it": "L'Australia celebra l'Australia Day con grigliate e feste in spiaggia.",
+      "zh": "澳大利亚在澳大利亚日举行烧烤和海滩派对庆祝活动。"
+    },
+    "emojiScene": [
+      "🏄",
+      "🐨",
+      "🌊"
+    ]
   },
   {
     "iso": "CA",
@@ -537,7 +1167,52 @@
       "es": "En Canadá, la música folclórica tradicional franco-canadiense utiliza mucho el violín y el zapateo.",
       "it": "In Canada, la musica folk tradizionale franco-canadese utilizza molto il violino e il ballo battuto con i piedi.",
       "zh": "在加拿大，传统的法裔加拿大民谣音乐大量使用小提琴和踢踏舞。"
-    }
+    },
+    "language": {
+      "pt": "Inglês",
+      "en": "English",
+      "de": "Englisch",
+      "fr": "Anglais",
+      "es": "Inglés",
+      "it": "Inglese",
+      "zh": "英语"
+    },
+    "greeting": "Hello, how are you?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🦫",
+      "name": {
+        "pt": "Castor",
+        "en": "Beaver",
+        "de": "Biber",
+        "fr": "Castor",
+        "es": "Castor",
+        "it": "Castoro",
+        "zh": "海狸"
+      }
+    },
+    "tradition": {
+      "pt": "No Canadá celebra-se o Dia do Canadá com fogo-de-artifício e o xarope de ácer é uma tradição doce.",
+      "en": "Canada celebrates Canada Day with fireworks, and maple syrup is a sweet tradition.",
+      "de": "Kanada feiert den Canada Day mit Feuerwerk, und Ahornsirup ist eine süße Tradition.",
+      "fr": "Le Canada célèbre la fête du Canada avec des feux d'artifice, et le sirop d'érable est une tradition sucrée.",
+      "es": "Canadá celebra el Día de Canadá con fuegos artificiales, y el jarabe de arce es una tradición dulce.",
+      "it": "Il Canada celebra il Canada Day con i fuochi d'artificio, e lo sciroppo d'acero è una dolce tradizione.",
+      "zh": "加拿大在加拿大日燃放烟花庆祝,枫糖浆是甜蜜的传统。"
+    },
+    "emojiScene": [
+      "🍁",
+      "🏒",
+      "🐻"
+    ]
   },
   {
     "iso": "MX",
@@ -573,7 +1248,52 @@
       "es": "En México, el mariachi es un estilo musical alegre tocado con violines, trompetas y guitarras.",
       "it": "In Messico, il mariachi è uno stile musicale allegro suonato con violini, trombe e chitarre.",
       "zh": "在墨西哥，马里亚奇是一种由小提琴、小号和吉他演奏的欢快音乐风格。"
-    }
+    },
+    "language": {
+      "pt": "Espanhol",
+      "en": "Spanish",
+      "de": "Spanisch",
+      "fr": "Espagnol",
+      "es": "Español",
+      "it": "Spagnolo",
+      "zh": "西班牙语"
+    },
+    "greeting": "Hola, ¿cómo estás?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🦅",
+      "name": {
+        "pt": "Águia real",
+        "en": "Golden eagle",
+        "de": "Steinadler",
+        "fr": "Aigle royal",
+        "es": "Águila real",
+        "it": "Aquila reale",
+        "zh": "金雕"
+      }
+    },
+    "tradition": {
+      "pt": "No México celebra-se o Dia dos Mortos, uma festa colorida para lembrar os familiares que já partiram.",
+      "en": "Mexico celebrates the Day of the Dead, a colorful festival to remember family members who have passed.",
+      "de": "Mexiko feiert den Tag der Toten, ein buntes Fest, um verstorbene Familienmitglieder zu erinnern.",
+      "fr": "Le Mexique célèbre le Jour des Morts, une fête colorée pour se souvenir des proches disparus.",
+      "es": "México celebra el Día de los Muertos, una fiesta colorida para recordar a los familiares fallecidos.",
+      "it": "Il Messico celebra il Giorno dei Morti, una festa colorata per ricordare i familiari scomparsi.",
+      "zh": "墨西哥庆祝亡灵节,以丰富多彩的方式纪念已故的家人。"
+    },
+    "emojiScene": [
+      "💀",
+      "🌮",
+      "🎉"
+    ]
   },
   {
     "iso": "KR",
@@ -609,7 +1329,52 @@
       "es": "En Corea del Sur, el pungmul es una música tradicional con tambores y gongs tocada en fiestas.",
       "it": "In Corea del Sud, il pungmul è una musica tradizionale con tamburi e gong suonata nelle feste.",
       "zh": "在韩国，农乐是一种由鼓和锣演奏的传统音乐，常在节庆活动中表演。"
-    }
+    },
+    "language": {
+      "pt": "Coreano",
+      "en": "Korean",
+      "de": "Koreanisch",
+      "fr": "Coréen",
+      "es": "Coreano",
+      "it": "Coreano",
+      "zh": "韩语"
+    },
+    "greeting": "안녕하세요, 어떻게 지내세요?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🐯",
+      "name": {
+        "pt": "Tigre coreano",
+        "en": "Korean tiger",
+        "de": "Koreanischer Tiger",
+        "fr": "Tigre coréen",
+        "es": "Tigre coreano",
+        "it": "Tigre coreano",
+        "zh": "韩国虎"
+      }
+    },
+    "tradition": {
+      "pt": "Na Coreia do Sul celebra-se o Chuseok, o festival da colheita, em família.",
+      "en": "South Korea celebrates Chuseok, the harvest festival, with family.",
+      "de": "Südkorea feiert Chuseok, das Erntefest, mit der Familie.",
+      "fr": "La Corée du Sud célèbre Chuseok, la fête des récoltes, en famille.",
+      "es": "Corea del Sur celebra el Chuseok, el festival de la cosecha, en familia.",
+      "it": "La Corea del Sud celebra il Chuseok, la festa del raccolto, in famiglia.",
+      "zh": "韩国与家人一起庆祝秋夕(收获节)。"
+    },
+    "emojiScene": [
+      "🥢",
+      "🏯",
+      "🎎"
+    ]
   },
   {
     "iso": "GR",
@@ -645,7 +1410,52 @@
       "es": "En Grecia, el buzuki es un instrumento de cuerda muy utilizado en la música popular griega.",
       "it": "In Grecia, il bouzouki è uno strumento a corde molto usato nella musica popolare greca.",
       "zh": "在希腊，布祖基琴是希腊流行音乐中广泛使用的一种弦乐器。"
-    }
+    },
+    "language": {
+      "pt": "Grego",
+      "en": "Greek",
+      "de": "Griechisch",
+      "fr": "Grec",
+      "es": "Griego",
+      "it": "Greco",
+      "zh": "希腊语"
+    },
+    "greeting": "Γεια σου, τι κάνεις;",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🦉",
+      "name": {
+        "pt": "Coruja de Atena",
+        "en": "Owl of Athena",
+        "de": "Eule der Athene",
+        "fr": "Chouette d'Athéna",
+        "es": "Búho de Atenea",
+        "it": "Civetta di Atena",
+        "zh": "雅典娜的猫头鹰"
+      }
+    },
+    "tradition": {
+      "pt": "Na Grécia celebra-se a Páscoa Ortodoxa com velas acesas à meia-noite nas igrejas.",
+      "en": "Greece celebrates Orthodox Easter with candles lit at midnight in churches.",
+      "de": "Griechenland feiert das orthodoxe Osterfest mit Kerzen, die um Mitternacht in Kirchen angezündet werden.",
+      "fr": "La Grèce célèbre Pâques orthodoxe avec des bougies allumées à minuit dans les églises.",
+      "es": "Grecia celebra la Pascua Ortodoxa con velas encendidas a medianoche en las iglesias.",
+      "it": "La Grecia celebra la Pasqua Ortodossa con candele accese a mezzanotte nelle chiese.",
+      "zh": "希腊庆祝东正教复活节,教堂里在午夜点燃蜡烛。"
+    },
+    "emojiScene": [
+      "🏛️",
+      "🫒",
+      "⛵"
+    ]
   },
   {
     "iso": "KE",
@@ -681,7 +1491,52 @@
       "es": "En Kenia, los tambores tradicionales y los cantos comunitarios acompañan bailes llenos de ritmo.",
       "it": "In Kenya, i tamburi tradizionali e i canti comunitari accompagnano danze piene di ritmo.",
       "zh": "在肯尼亚，传统鼓乐和集体歌唱为节奏感十足的舞蹈伴奏。"
-    }
+    },
+    "language": {
+      "pt": "Suaíli",
+      "en": "Swahili",
+      "de": "Suaheli",
+      "fr": "Swahili",
+      "es": "Suajili",
+      "it": "Swahili",
+      "zh": "斯瓦希里语"
+    },
+    "greeting": "Habari, u hali gani?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🦓",
+      "name": {
+        "pt": "Zebra",
+        "en": "Zebra",
+        "de": "Zebra",
+        "fr": "Zèbre",
+        "es": "Cebra",
+        "it": "Zebra",
+        "zh": "斑马"
+      }
+    },
+    "tradition": {
+      "pt": "No Quénia, os Masai fazem uma dança de saltos chamada adumu em cerimónias importantes.",
+      "en": "In Kenya, the Maasai perform a jumping dance called adumu at important ceremonies.",
+      "de": "In Kenia führen die Massai bei wichtigen Zeremonien einen Sprungtanz namens Adumu auf.",
+      "fr": "Au Kenya, les Maasaï exécutent une danse de saut appelée adumu lors de cérémonies importantes.",
+      "es": "En Kenia, los masái hacen una danza de saltos llamada adumu en ceremonias importantes.",
+      "it": "In Kenya, i Masai eseguono una danza di salti chiamata adumu nelle cerimonie importanti.",
+      "zh": "在肯尼亚,马赛人会在重要仪式上表演一种叫adumu的跳跃舞。"
+    },
+    "emojiScene": [
+      "🦁",
+      "🏃",
+      "🌅"
+    ]
   },
   {
     "iso": "SE",
@@ -717,7 +1572,52 @@
       "es": "En Suecia, la nyckelharpa es un antiguo instrumento de cuerda que se toca con un teclado y un arco.",
       "it": "In Svezia, la nyckelharpa è un antico strumento a corde suonato con una tastiera e un archetto.",
       "zh": "在瑞典，尼克尔哈帕琴是一种古老的弦乐器，需要用键盘和琴弓来演奏。"
-    }
+    },
+    "language": {
+      "pt": "Sueco",
+      "en": "Swedish",
+      "de": "Schwedisch",
+      "fr": "Suédois",
+      "es": "Sueco",
+      "it": "Svedese",
+      "zh": "瑞典语"
+    },
+    "greeting": "Hej, hur mår du?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🫎",
+      "name": {
+        "pt": "Alce",
+        "en": "Moose",
+        "de": "Elch",
+        "fr": "Élan",
+        "es": "Alce",
+        "it": "Alce",
+        "zh": "驼鹿"
+      }
+    },
+    "tradition": {
+      "pt": "Na Suécia celebra-se o Midsommar, com dança à volta de um mastro decorado com flores.",
+      "en": "Sweden celebrates Midsommar, dancing around a pole decorated with flowers.",
+      "de": "Schweden feiert Midsommar mit Tanz um eine mit Blumen geschmückte Stange.",
+      "fr": "La Suède célèbre la Midsommar, en dansant autour d'un mât décoré de fleurs.",
+      "es": "Suecia celebra el Midsommar, bailando alrededor de un mástil decorado con flores.",
+      "it": "La Svezia celebra il Midsommar, danzando intorno a un palo decorato con fiori.",
+      "zh": "瑞典庆祝仲夏节,人们围着装饰鲜花的柱子跳舞。"
+    },
+    "emojiScene": [
+      "🌲",
+      "❄️",
+      "🚤"
+    ]
   },
   {
     "iso": "MA",
@@ -753,7 +1653,52 @@
       "es": "Marruecos es conocido por la música gnawa, que mezcla ritmos africanos con cánticos espirituales.",
       "it": "Il Marocco è noto per la musica gnawa, che unisce ritmi africani a canti spirituali.",
       "zh": "摩洛哥以格纳瓦音乐闻名，这种音乐融合了非洲节奏与灵性吟唱。"
-    }
+    },
+    "language": {
+      "pt": "Árabe",
+      "en": "Arabic",
+      "de": "Arabisch",
+      "fr": "Arabe",
+      "es": "Árabe",
+      "it": "Arabo",
+      "zh": "阿拉伯语"
+    },
+    "greeting": "مرحباً، كيف حالك؟",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🐪",
+      "name": {
+        "pt": "Dromedário",
+        "en": "Dromedary camel",
+        "de": "Dromedar",
+        "fr": "Dromadaire",
+        "es": "Dromedario",
+        "it": "Dromedario",
+        "zh": "单峰骆驼"
+      }
+    },
+    "tradition": {
+      "pt": "Em Marrocos celebra-se o chá de menta doce, servido a todos os convidados como sinal de boas-vindas.",
+      "en": "Morocco celebrates sweet mint tea, served to every guest as a sign of welcome.",
+      "de": "Marokko feiert süßen Minztee, der jedem Gast als Willkommenszeichen serviert wird.",
+      "fr": "Le Maroc célèbre le thé à la menthe sucré, servi à chaque invité en signe de bienvenue.",
+      "es": "Marruecos celebra el té de menta dulce, servido a cada invitado como señal de bienvenida.",
+      "it": "Il Marocco celebra il tè alla menta dolce, servito a ogni ospite come segno di benvenuto.",
+      "zh": "摩洛哥人用甜薄荷茶招待每位客人,以示欢迎。"
+    },
+    "emojiScene": [
+      "🫖",
+      "🏜️",
+      "🕌"
+    ]
   },
   {
     "iso": "NG",
@@ -789,7 +1734,52 @@
       "es": "Nigeria es la cuna del afrobeat, un estilo musical que mezcla jazz, funk y ritmos tradicionales yoruba.",
       "it": "La Nigeria è la culla dell'afrobeat, uno stile musicale che unisce jazz, funk e ritmi tradizionali yoruba.",
       "zh": "尼日利亚是非洲节拍（Afrobeat）音乐的发源地，这种风格融合了爵士乐、放克乐和约鲁巴传统节奏。"
-    }
+    },
+    "language": {
+      "pt": "Inglês",
+      "en": "English",
+      "de": "Englisch",
+      "fr": "Anglais",
+      "es": "Inglés",
+      "it": "Inglese",
+      "zh": "英语"
+    },
+    "greeting": "Hello, how are you?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🦁",
+      "name": {
+        "pt": "Leão-do-oeste-africano",
+        "en": "West African lion",
+        "de": "Westafrikanischer Löwe",
+        "fr": "Lion d'Afrique de l'Ouest",
+        "es": "León del África occidental",
+        "it": "Leone dell'Africa occidentale",
+        "zh": "西非狮"
+      }
+    },
+    "tradition": {
+      "pt": "Na Nigéria, o festival Durbar reúne cavalos decorados e música em grandes desfiles.",
+      "en": "In Nigeria, the Durbar festival brings together decorated horses and music in big parades.",
+      "de": "In Nigeria vereint das Durbar-Fest geschmückte Pferde und Musik in großen Umzügen.",
+      "fr": "Au Nigeria, le festival Durbar rassemble chevaux décorés et musique dans de grands défilés.",
+      "es": "En Nigeria, el festival Durbar reúne caballos decorados y música en grandes desfiles.",
+      "it": "In Nigeria, il festival Durbar riunisce cavalli decorati e musica in grandi sfilate.",
+      "zh": "在尼日利亚,杜巴节将装饰华丽的马匹和音乐汇聚成盛大游行。"
+    },
+    "emojiScene": [
+      "🥁",
+      "🐎",
+      "🎊"
+    ]
   },
   {
     "iso": "ET",
@@ -825,7 +1815,52 @@
       "es": "La música tradicional etíope suele utilizar el krar, un instrumento de cuerda en forma de cuenco.",
       "it": "La musica tradizionale etiope utilizza spesso il krar, uno strumento a corde a forma di ciotola.",
       "zh": "埃塞俄比亚传统音乐常使用一种碗状弦乐器——克拉尔琴。"
-    }
+    },
+    "language": {
+      "pt": "Inglês",
+      "en": "English",
+      "de": "Englisch",
+      "fr": "Anglais",
+      "es": "Inglés",
+      "it": "Inglese",
+      "zh": "英语"
+    },
+    "greeting": "Hello, how are you?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🦓",
+      "name": {
+        "pt": "Zebra-de-grevy",
+        "en": "Grevy's zebra",
+        "de": "Grevyzebra",
+        "fr": "Zèbre de Grévy",
+        "es": "Cebra de Grevy",
+        "it": "Zebra di Grevy",
+        "zh": "细纹斑马"
+      }
+    },
+    "tradition": {
+      "pt": "Na Etiópia celebra-se a cerimónia do café, onde os grãos são torrados e servidos com muito carinho.",
+      "en": "Ethiopia celebrates the coffee ceremony, where beans are roasted and served with great care.",
+      "de": "Äthiopien feiert die Kaffeezeremonie, bei der Bohnen geröstet und mit viel Sorgfalt serviert werden.",
+      "fr": "L'Éthiopie célèbre la cérémonie du café, où les grains sont torréfiés et servis avec grand soin.",
+      "es": "Etiopía celebra la ceremonia del café, donde los granos se tuestan y se sirven con mucho cariño.",
+      "it": "L'Etiopia celebra la cerimonia del caffè, dove i chicchi vengono tostati e serviti con grande cura.",
+      "zh": "埃塞俄比亚有咖啡仪式的传统,咖啡豆经过烘焙后被精心奉上。"
+    },
+    "emojiScene": [
+      "☕",
+      "🏔️",
+      "🦓"
+    ]
   },
   {
     "iso": "TZ",
@@ -861,7 +1896,52 @@
       "es": "La música tradicional taarab de Tanzania mezcla influencias africanas, árabes e indias con letras poéticas cantadas.",
       "it": "La musica tradizionale taarab della Tanzania unisce influenze africane, arabe e indiane con testi poetici cantati.",
       "zh": "坦桑尼亚传统的塔拉布音乐融合了非洲、阿拉伯和印度的音乐元素，歌词富有诗意。"
-    }
+    },
+    "language": {
+      "pt": "Suaíli",
+      "en": "Swahili",
+      "de": "Suaheli",
+      "fr": "Swahili",
+      "es": "Suajili",
+      "it": "Swahili",
+      "zh": "斯瓦希里语"
+    },
+    "greeting": "Habari, u hali gani?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🦁",
+      "name": {
+        "pt": "Leão",
+        "en": "Lion",
+        "de": "Löwe",
+        "fr": "Lion",
+        "es": "León",
+        "it": "Leone",
+        "zh": "狮子"
+      }
+    },
+    "tradition": {
+      "pt": "Na Tanzânia, milhões de gnus e zebras atravessam o Serengeti na grande migração todos os anos.",
+      "en": "In Tanzania, millions of wildebeest and zebras cross the Serengeti in the Great Migration every year.",
+      "de": "In Tansania überqueren jedes Jahr Millionen von Gnus und Zebras die Serengeti bei der großen Wanderung.",
+      "fr": "En Tanzanie, des millions de gnous et de zèbres traversent le Serengeti lors de la grande migration chaque année.",
+      "es": "En Tanzania, millones de ñus y cebras cruzan el Serengeti en la gran migración cada año.",
+      "it": "In Tanzania, milioni di gnu e zebre attraversano il Serengeti nella grande migrazione ogni anno.",
+      "zh": "在坦桑尼亚,每年数百万角马和斑马穿越塞伦盖蒂大迁徙。"
+    },
+    "emojiScene": [
+      "🦒",
+      "🏔️",
+      "🦁"
+    ]
   },
   {
     "iso": "TH",
@@ -897,7 +1977,52 @@
       "es": "El khaen, un órgano de boca hecho de tubos de bambú, es un instrumento tradicional tailandés.",
       "it": "Il khaen, un organo a bocca fatto di canne di bambù, è uno strumento tradizionale tailandese.",
       "zh": "笙（khaen）是一种由竹管制成的口吹乐器，是泰国的传统乐器。"
-    }
+    },
+    "language": {
+      "pt": "Tailandês",
+      "en": "Thai",
+      "de": "Thailändisch",
+      "fr": "Thaï",
+      "es": "Tailandés",
+      "it": "Tailandese",
+      "zh": "泰语"
+    },
+    "greeting": "สวัสดี สบายดีไหม?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🐘",
+      "name": {
+        "pt": "Elefante-asiático",
+        "en": "Asian elephant",
+        "de": "Asiatischer Elefant",
+        "fr": "Éléphant d'Asie",
+        "es": "Elefante asiático",
+        "it": "Elefante asiatico",
+        "zh": "亚洲象"
+      }
+    },
+    "tradition": {
+      "pt": "Na Tailândia celebra-se o Songkran, o Ano Novo tailandês, com grandes guerras de água.",
+      "en": "Thailand celebrates Songkran, Thai New Year, with big water fights.",
+      "de": "Thailand feiert Songkran, das thailändische Neujahr, mit großen Wasserschlachten.",
+      "fr": "La Thaïlande célèbre Songkran, le Nouvel An thaïlandais, avec de grandes batailles d'eau.",
+      "es": "Tailandia celebra el Songkran, el Año Nuevo tailandés, con grandes guerras de agua.",
+      "it": "La Tailandia celebra il Songkran, il Capodanno thailandese, con grandi battaglie d'acqua.",
+      "zh": "泰国庆祝宋干节(泰国新年),举行盛大的泼水活动。"
+    },
+    "emojiScene": [
+      "💦",
+      "🛕",
+      "🐘"
+    ]
   },
   {
     "iso": "ID",
@@ -933,7 +2058,52 @@
       "es": "Las orquestas de gamelán indonesias usan gongs metálicos y xilófonos para crear una música rica y envolvente.",
       "it": "Le orchestre di gamelan indonesiane usano gong metallici e xilofoni per creare una musica ricca e avvolgente.",
       "zh": "印度尼西亚的加美兰乐团使用金属锣和木琴，创造出层次丰富的音乐。"
-    }
+    },
+    "language": {
+      "pt": "Indonésio",
+      "en": "Indonesian",
+      "de": "Indonesisch",
+      "fr": "Indonésien",
+      "es": "Indonesio",
+      "it": "Indonesiano",
+      "zh": "印尼语"
+    },
+    "greeting": "Halo, apa kabar?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🐅",
+      "name": {
+        "pt": "Orangotango",
+        "en": "Orangutan",
+        "de": "Orang-Utan",
+        "fr": "Orang-outan",
+        "es": "Orangután",
+        "it": "Orango",
+        "zh": "猩猩"
+      }
+    },
+    "tradition": {
+      "pt": "Na Indonésia, os fantoches de sombra chamados wayang contam histórias antigas com música gamelão.",
+      "en": "In Indonesia, shadow puppets called wayang tell ancient stories accompanied by gamelan music.",
+      "de": "In Indonesien erzählen Schattenpuppen namens Wayang alte Geschichten zu Gamelan-Musik.",
+      "fr": "En Indonésie, les marionnettes d'ombre appelées wayang racontent des histoires anciennes en musique de gamelan.",
+      "es": "En Indonesia, las marionetas de sombras llamadas wayang cuentan historias antiguas con música de gamelán.",
+      "it": "In Indonesia, i burattini d'ombra chiamati wayang raccontano storie antiche con la musica gamelan.",
+      "zh": "在印度尼西亚,皮影木偶(哇扬)用甘美兰音乐讲述古老的故事。"
+    },
+    "emojiScene": [
+      "🎎",
+      "🌋",
+      "🥥"
+    ]
   },
   {
     "iso": "TR",
@@ -969,7 +2139,52 @@
       "es": "El saz, un instrumento de cuerda de mástil largo, es fundamental en la música popular tradicional turca.",
       "it": "Il saz, uno strumento a corde dal manico lungo, è centrale nella musica popolare tradizionale turca.",
       "zh": "萨兹琴是一种长颈弦乐器，是土耳其传统民间音乐的核心乐器。"
-    }
+    },
+    "language": {
+      "pt": "Turco",
+      "en": "Turkish",
+      "de": "Türkisch",
+      "fr": "Turc",
+      "es": "Turco",
+      "it": "Turco",
+      "zh": "土耳其语"
+    },
+    "greeting": "Merhaba, nasılsın?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🐈",
+      "name": {
+        "pt": "Gato de Van",
+        "en": "Van cat",
+        "de": "Van-Katze",
+        "fr": "Chat de Van",
+        "es": "Gato de Van",
+        "it": "Gatto di Van",
+        "zh": "梵猫"
+      }
+    },
+    "tradition": {
+      "pt": "Na Turquia bebe-se chá em pequenos copos em forma de tulipa, várias vezes ao dia.",
+      "en": "In Turkey, tea is drunk in small tulip-shaped glasses many times a day.",
+      "de": "In der Türkei trinkt man mehrmals täglich Tee aus kleinen tulpenförmigen Gläsern.",
+      "fr": "En Turquie, on boit du thé dans de petits verres en forme de tulipe plusieurs fois par jour.",
+      "es": "En Turquía se bebe té en pequeños vasos con forma de tulipán varias veces al día.",
+      "it": "In Turchia si beve il tè in piccoli bicchieri a forma di tulipano più volte al giorno.",
+      "zh": "在土耳其,人们一天多次用郁金香形状的小玻璃杯喝茶。"
+    },
+    "emojiScene": [
+      "🍵",
+      "🕌",
+      "🎈"
+    ]
   },
   {
     "iso": "PH",
@@ -1005,7 +2220,52 @@
       "es": "El kulintang, un conjunto de pequeños gongs, es un instrumento tradicional utilizado en el sur de Filipinas.",
       "it": "Il kulintang, un insieme di piccoli gong, è uno strumento tradizionale utilizzato nel sud delle Filippine.",
       "zh": "库林塘是一组小锣，是菲律宾南部地区使用的传统乐器。"
-    }
+    },
+    "language": {
+      "pt": "Inglês",
+      "en": "English",
+      "de": "Englisch",
+      "fr": "Anglais",
+      "es": "Inglés",
+      "it": "Inglese",
+      "zh": "英语"
+    },
+    "greeting": "Hello, how are you?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🐒",
+      "name": {
+        "pt": "Tarsier-das-filipinas",
+        "en": "Philippine tarsier",
+        "de": "Philippinen-Koboldmaki",
+        "fr": "Tarsier des Philippines",
+        "es": "Tarsero filipino",
+        "it": "Tarsio delle Filippine",
+        "zh": "菲律宾眼镜猴"
+      }
+    },
+    "tradition": {
+      "pt": "Nas Filipinas celebra-se o Sinulog, um festival colorido de dança em honra do Santo Niño.",
+      "en": "The Philippines celebrates Sinulog, a colorful dance festival honoring the Santo Niño.",
+      "de": "Die Philippinen feiern Sinulog, ein farbenfrohes Tanzfest zu Ehren des Santo Niño.",
+      "fr": "Les Philippines célèbrent le Sinulog, un festival de danse coloré en l'honneur du Santo Niño.",
+      "es": "Filipinas celebra el Sinulog, un colorido festival de danza en honor al Santo Niño.",
+      "it": "Le Filippine celebrano il Sinulog, un colorato festival di danza in onore del Santo Niño.",
+      "zh": "菲律宾庆祝宿务节(Sinulog),这是一个纪念圣婴的多彩舞蹈节。"
+    },
+    "emojiScene": [
+      "🥥",
+      "🏝️",
+      "🎊"
+    ]
   },
   {
     "iso": "AR",
@@ -1041,7 +2301,52 @@
       "es": "La música de tango, a menudo tocada con el bandoneón, nació en los barrios de Buenos Aires.",
       "it": "La musica del tango, spesso suonata con il bandoneon, nacque nei quartieri di Buenos Aires.",
       "zh": "探戈音乐诞生于布宜诺斯艾利斯的街区，常用班多钮手风琴演奏。"
-    }
+    },
+    "language": {
+      "pt": "Espanhol",
+      "en": "Spanish",
+      "de": "Spanisch",
+      "fr": "Espagnol",
+      "es": "Español",
+      "it": "Spagnolo",
+      "zh": "西班牙语"
+    },
+    "greeting": "Hola, ¿cómo estás?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🐆",
+      "name": {
+        "pt": "Jaguar",
+        "en": "Jaguar",
+        "de": "Jaguar",
+        "fr": "Jaguar",
+        "es": "Jaguar",
+        "it": "Giaguaro",
+        "zh": "美洲豹"
+      }
+    },
+    "tradition": {
+      "pt": "Na Argentina dança-se o tango, um dança apaixonada nascida em Buenos Aires.",
+      "en": "Argentina dances the tango, a passionate dance born in Buenos Aires.",
+      "de": "In Argentinien tanzt man Tango, einen leidenschaftlichen Tanz, der in Buenos Aires entstand.",
+      "fr": "En Argentine, on danse le tango, une danse passionnée née à Buenos Aires.",
+      "es": "En Argentina se baila el tango, una danza apasionada nacida en Buenos Aires.",
+      "it": "In Argentina si balla il tango, una danza appassionata nata a Buenos Aires.",
+      "zh": "阿根廷跳探戈,这是一种源自布宜诺斯艾利斯的热情舞蹈。"
+    },
+    "emojiScene": [
+      "💃",
+      "🥩",
+      "⚽"
+    ]
   },
   {
     "iso": "PE",
@@ -1077,7 +2382,52 @@
       "es": "La música tradicional andina suele utilizar la flauta de pan y el charango, un pequeño instrumento de cuerda.",
       "it": "La musica tradizionale andina utilizza spesso il flauto di Pan e il charango, un piccolo strumento a corde.",
       "zh": "传统的安第斯山区音乐常使用排箫和查兰戈琴（一种小型弦乐器）。"
-    }
+    },
+    "language": {
+      "pt": "Espanhol",
+      "en": "Spanish",
+      "de": "Spanisch",
+      "fr": "Espagnol",
+      "es": "Español",
+      "it": "Spagnolo",
+      "zh": "西班牙语"
+    },
+    "greeting": "Hola, ¿cómo estás?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🦙",
+      "name": {
+        "pt": "Lhama",
+        "en": "Llama",
+        "de": "Lama",
+        "fr": "Lama",
+        "es": "Llama",
+        "it": "Lama",
+        "zh": "羊驼"
+      }
+    },
+    "tradition": {
+      "pt": "No Peru celebra-se o Inti Raymi, a festa do Sol, com danças que homenageiam os Incas.",
+      "en": "Peru celebrates Inti Raymi, the Festival of the Sun, with dances honoring the Incas.",
+      "de": "Peru feiert Inti Raymi, das Sonnenfest, mit Tänzen zu Ehren der Inka.",
+      "fr": "Le Pérou célèbre l'Inti Raymi, la fête du Soleil, avec des danses en l'honneur des Incas.",
+      "es": "Perú celebra el Inti Raymi, la fiesta del Sol, con danzas que honran a los incas.",
+      "it": "Il Perù celebra l'Inti Raymi, la festa del Sole, con danze in onore degli Incas.",
+      "zh": "秘鲁庆祝太阳节(印蒂拉伊米),用舞蹈向印加人致敬。"
+    },
+    "emojiScene": [
+      "🏔️",
+      "🌽",
+      "🦙"
+    ]
   },
   {
     "iso": "CL",
@@ -1113,7 +2463,52 @@
       "es": "La cueca, el baile nacional de Chile, suele ir acompañada de guitarra, acordeón y pañuelos agitados en el aire.",
       "it": "La cueca, la danza nazionale del Cile, è spesso accompagnata da chitarra, fisarmonica e fazzoletti agitati.",
       "zh": "库埃卡舞是智利的国家舞蹈，常以吉他、手风琴伴奏，并挥舞手帕。"
-    }
+    },
+    "language": {
+      "pt": "Espanhol",
+      "en": "Spanish",
+      "de": "Spanisch",
+      "fr": "Espagnol",
+      "es": "Español",
+      "it": "Spagnolo",
+      "zh": "西班牙语"
+    },
+    "greeting": "Hola, ¿cómo estás?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🦙",
+      "name": {
+        "pt": "Guanaco",
+        "en": "Guanaco",
+        "de": "Guanako",
+        "fr": "Guanaco",
+        "es": "Guanaco",
+        "it": "Guanaco",
+        "zh": "原驼"
+      }
+    },
+    "tradition": {
+      "pt": "No Chile celebra-se as Fiestas Patrias em setembro, com danças de cueca e comida tradicional.",
+      "en": "Chile celebrates Fiestas Patrias in September, with cueca dancing and traditional food.",
+      "de": "Chile feiert im September die Fiestas Patrias mit Cueca-Tanz und traditionellem Essen.",
+      "fr": "Le Chili célèbre les Fiestas Patrias en septembre, avec la danse de la cueca et des plats traditionnels.",
+      "es": "Chile celebra las Fiestas Patrias en septiembre, con baile de cueca y comida tradicional.",
+      "it": "Il Cile celebra le Fiestas Patrias a settembre, con danze cueca e cibo tradizionale.",
+      "zh": "智利在九月庆祝国庆节,跳奎卡舞并享用传统美食。"
+    },
+    "emojiScene": [
+      "🏔️",
+      "🍇",
+      "🦙"
+    ]
   },
   {
     "iso": "CO",
@@ -1149,7 +2544,52 @@
       "es": "La cumbia, un ritmo animado tocado con tambores y flautas de gaita, se originó en Colombia.",
       "it": "La cumbia, un ritmo vivace suonato con tamburi e flauti gaita, è nata in Colombia.",
       "zh": "坎比亚舞曲起源于哥伦比亚，是一种用鼓和盖塔笛演奏的欢快节奏音乐。"
-    }
+    },
+    "language": {
+      "pt": "Espanhol",
+      "en": "Spanish",
+      "de": "Spanisch",
+      "fr": "Espagnol",
+      "es": "Español",
+      "it": "Spagnolo",
+      "zh": "西班牙语"
+    },
+    "greeting": "Hola, ¿cómo estás?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🦜",
+      "name": {
+        "pt": "Cóndor-dos-andes",
+        "en": "Andean condor",
+        "de": "Andenkondor",
+        "fr": "Condor des Andes",
+        "es": "Cóndor andino",
+        "it": "Condor delle Ande",
+        "zh": "安第斯神鹰"
+      }
+    },
+    "tradition": {
+      "pt": "Na Colômbia celebra-se o Carnaval de Barranquilla, uma das maiores festas de rua da América do Sul.",
+      "en": "Colombia celebrates the Barranquilla Carnival, one of South America's biggest street parties.",
+      "de": "Kolumbien feiert den Karneval von Barranquilla, eines der größten Straßenfeste Südamerikas.",
+      "fr": "La Colombie célèbre le carnaval de Barranquilla, l'une des plus grandes fêtes de rue d'Amérique du Sud.",
+      "es": "Colombia celebra el Carnaval de Barranquilla, una de las mayores fiestas callejeras de Sudamérica.",
+      "it": "La Colombia celebra il Carnevale di Barranquilla, una delle più grandi feste di strada del Sud America.",
+      "zh": "哥伦比亚庆祝巴兰基亚狂欢节,这是南美洲最大的街头庆典之一。"
+    },
+    "emojiScene": [
+      "☕",
+      "🦜",
+      "🎉"
+    ]
   },
   {
     "iso": "NO",
@@ -1185,7 +2625,52 @@
       "es": "La música folclórica tradicional noruega suele tocarse con el hardingfele, un violín con cuerdas adicionales de resonancia.",
       "it": "La musica folk tradizionale norvegese viene spesso suonata con l'hardingfele, un violino con corde di risonanza aggiuntive.",
       "zh": "挪威传统民间音乐常使用哈丹格尔小提琴演奏，这种小提琴带有额外的共鸣弦。"
-    }
+    },
+    "language": {
+      "pt": "Inglês",
+      "en": "English",
+      "de": "Englisch",
+      "fr": "Anglais",
+      "es": "Inglés",
+      "it": "Inglese",
+      "zh": "英语"
+    },
+    "greeting": "Hello, how are you?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🫎",
+      "name": {
+        "pt": "Alce",
+        "en": "Moose",
+        "de": "Elch",
+        "fr": "Élan",
+        "es": "Alce",
+        "it": "Alce",
+        "zh": "驼鹿"
+      }
+    },
+    "tradition": {
+      "pt": "Na Noruega celebra-se o Dia da Constituição a 17 de maio, com desfiles de crianças por toda a cidade.",
+      "en": "Norway celebrates Constitution Day on May 17th, with children's parades all around the city.",
+      "de": "Norwegen feiert am 17. Mai den Verfassungstag mit Kinderumzügen in der ganzen Stadt.",
+      "fr": "La Norvège célèbre la fête de la Constitution le 17 mai, avec des défilés d'enfants dans toute la ville.",
+      "es": "Noruega celebra el Día de la Constitución el 17 de mayo, con desfiles de niños por toda la ciudad.",
+      "it": "La Norvegia celebra il Giorno della Costituzione il 17 maggio, con sfilate di bambini in tutta la città.",
+      "zh": "挪威在5月17日庆祝宪法日,孩子们在城市各处举行游行。"
+    },
+    "emojiScene": [
+      "🏔️",
+      "🐟",
+      "🎉"
+    ]
   },
   {
     "iso": "NL",
@@ -1221,7 +2706,52 @@
       "es": "La música tradicional neerlandesa incluye el \"levenslied\", un género de canciones emotivas para cantar en grupo, a menudo con acordeón.",
       "it": "La musica tradizionale olandese include il \"levenslied\", un genere di canzoni emotive da cantare in coro, spesso accompagnate dalla fisarmonica.",
       "zh": "荷兰传统音乐包括“levenslied”，一种情感丰富、适合合唱的歌曲，常用手风琴伴奏。"
-    }
+    },
+    "language": {
+      "pt": "Neerlandês",
+      "en": "Dutch",
+      "de": "Niederländisch",
+      "fr": "Néerlandais",
+      "es": "Neerlandés",
+      "it": "Olandese",
+      "zh": "荷兰语"
+    },
+    "greeting": "Hallo, hoe gaat het?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🐄",
+      "name": {
+        "pt": "Vaca frísia",
+        "en": "Friesian cow",
+        "de": "Friesisches Rind",
+        "fr": "Vache frisonne",
+        "es": "Vaca frisona",
+        "it": "Mucca frisona",
+        "zh": "荷斯坦奶牛"
+      }
+    },
+    "tradition": {
+      "pt": "Nos Países Baixos, em abril, celebra-se o Koningsdag (Dia do Rei) vestidos de laranja.",
+      "en": "In the Netherlands, King's Day is celebrated every April, with everyone dressed in orange.",
+      "de": "In den Niederlanden wird jeden April der Koningsdag gefeiert, alle in Orange gekleidet.",
+      "fr": "Aux Pays-Bas, on célèbre chaque avril le Koningsdag, habillés en orange.",
+      "es": "En los Países Bajos, en abril se celebra el Koningsdag vestidos de naranja.",
+      "it": "Nei Paesi Bassi, ad aprile si celebra il Koningsdag, tutti vestiti d'arancione.",
+      "zh": "荷兰在四月庆祝国王节,人们穿着橙色衣服。"
+    },
+    "emojiScene": [
+      "🌷",
+      "🚲",
+      "🧀"
+    ]
   },
   {
     "iso": "PL",
@@ -1257,7 +2787,52 @@
       "es": "La polonesa y la mazurca son danzas tradicionales polacas que inspiraron muchas composiciones de Chopin.",
       "it": "La polacca e la mazurka sono danze tradizionali polacche che ispirarono molte composizioni di Chopin.",
       "zh": "波兰舞曲和玛祖卡舞曲是波兰的传统舞蹈，启发了肖邦的许多作品。"
-    }
+    },
+    "language": {
+      "pt": "Polaco",
+      "en": "Polish",
+      "de": "Polnisch",
+      "fr": "Polonais",
+      "es": "Polaco",
+      "it": "Polacco",
+      "zh": "波兰语"
+    },
+    "greeting": "Cześć, jak się masz?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🦬",
+      "name": {
+        "pt": "Bisonte-europeu",
+        "en": "European bison",
+        "de": "Wisent",
+        "fr": "Bison d'Europe",
+        "es": "Bisonte europeo",
+        "it": "Bisonte europeo",
+        "zh": "欧洲野牛"
+      }
+    },
+    "tradition": {
+      "pt": "Na Polónia pinta-se ovos coloridos, os pisanki, para celebrar a Páscoa.",
+      "en": "In Poland, people paint colorful eggs called pisanki to celebrate Easter.",
+      "de": "In Polen bemalt man bunte Ostereier, die Pisanki, um Ostern zu feiern.",
+      "fr": "En Pologne, on peint des œufs colorés, les pisanki, pour célébrer Pâques.",
+      "es": "En Polonia se pintan huevos coloridos, los pisanki, para celebrar la Pascua.",
+      "it": "In Polonia si dipingono uova colorate, le pisanki, per celebrare la Pasqua.",
+      "zh": "波兰人绘制彩色复活节彩蛋(pisanki)来庆祝复活节。"
+    },
+    "emojiScene": [
+      "🥚",
+      "🏰",
+      "🍲"
+    ]
   },
   {
     "iso": "IE",
@@ -1293,7 +2868,52 @@
       "es": "El violín irlandés y el bodhrán, un tambor de mano, son fundamentales en la música folclórica tradicional irlandesa.",
       "it": "Il violino irlandese e il bodhrán, un tamburo a mano, sono centrali nella musica folk tradizionale irlandese.",
       "zh": "爱尔兰小提琴和邦兰鼓（一种手鼓）是爱尔兰传统民间音乐的核心乐器。"
-    }
+    },
+    "language": {
+      "pt": "Inglês",
+      "en": "English",
+      "de": "Englisch",
+      "fr": "Anglais",
+      "es": "Inglés",
+      "it": "Inglese",
+      "zh": "英语"
+    },
+    "greeting": "Hello, how are you?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🦌",
+      "name": {
+        "pt": "Veado-vermelho",
+        "en": "Red deer",
+        "de": "Rothirsch",
+        "fr": "Cerf élaphe",
+        "es": "Ciervo rojo",
+        "it": "Cervo rosso",
+        "zh": "赤鹿"
+      }
+    },
+    "tradition": {
+      "pt": "Na Irlanda celebra-se o Dia de São Patrício vestido de verde, com desfiles e música tradicional.",
+      "en": "Ireland celebrates St. Patrick's Day dressed in green, with parades and traditional music.",
+      "de": "Irland feiert den St. Patrick's Day in Grün gekleidet, mit Umzügen und traditioneller Musik.",
+      "fr": "L'Irlande célèbre la Saint-Patrick habillée en vert, avec défilés et musique traditionnelle.",
+      "es": "Irlanda celebra el Día de San Patricio vestida de verde, con desfiles y música tradicional.",
+      "it": "L'Irlanda celebra il giorno di San Patrizio vestita di verde, con sfilate e musica tradizionale.",
+      "zh": "爱尔兰人身穿绿色庆祝圣帕特里克节,有游行和传统音乐。"
+    },
+    "emojiScene": [
+      "🍀",
+      "🎻",
+      "🌈"
+    ]
   },
   {
     "iso": "NZ",
@@ -1329,7 +2949,52 @@
       "es": "El haka maorí es un canto y baile tradicional que se realiza con movimientos poderosos y mucho ritmo.",
       "it": "L'haka maori è un canto e una danza tradizionale eseguiti con movimenti potenti e ritmo.",
       "zh": "毛利战舞（哈卡）是一种传统的吟唱与舞蹈，动作有力、节奏感强。"
-    }
+    },
+    "language": {
+      "pt": "Inglês",
+      "en": "English",
+      "de": "Englisch",
+      "fr": "Anglais",
+      "es": "Inglés",
+      "it": "Inglese",
+      "zh": "英语"
+    },
+    "greeting": "Hello, how are you?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🥝",
+      "name": {
+        "pt": "Kiwi",
+        "en": "Kiwi bird",
+        "de": "Kiwi",
+        "fr": "Kiwi",
+        "es": "Kiwi",
+        "it": "Kiwi",
+        "zh": "几维鸟"
+      }
+    },
+    "tradition": {
+      "pt": "Na Nova Zelândia, o povo Maori dança o haka, uma dança forte e ritmada, antes de eventos importantes.",
+      "en": "In New Zealand, the Maori people perform the haka, a powerful rhythmic dance, before important events.",
+      "de": "In Neuseeland führt das Volk der Maori vor wichtigen Ereignissen den Haka auf, einen kraftvollen rhythmischen Tanz.",
+      "fr": "En Nouvelle-Zélande, le peuple maori danse le haka, une danse puissante et rythmée, avant les événements importants.",
+      "es": "En Nueva Zelanda, el pueblo maorí baila el haka, una danza fuerte y rítmica, antes de eventos importantes.",
+      "it": "In Nuova Zelanda, il popolo Maori esegue l'haka, una danza potente e ritmata, prima di eventi importanti.",
+      "zh": "在新西兰,毛利人在重要活动前会跳哈卡舞,这是一种强劲有节奏的舞蹈。"
+    },
+    "emojiScene": [
+      "🥝",
+      "⛰️",
+      "🏉"
+    ]
   },
   {
     "iso": "FJ",
@@ -1365,7 +3030,52 @@
       "es": "Las actuaciones tradicionales de meke en Fiyi combinan cánticos, baile y palmas rítmicas para contar historias.",
       "it": "Le tradizionali esibizioni di meke figiano combinano canti, danza e battiti di mani ritmati per raccontare storie.",
       "zh": "斐济传统的“meke”表演将吟唱、舞蹈和有节奏的拍手结合在一起，用以讲述故事。"
-    }
+    },
+    "language": {
+      "pt": "Inglês",
+      "en": "English",
+      "de": "Englisch",
+      "fr": "Anglais",
+      "es": "Inglés",
+      "it": "Inglese",
+      "zh": "英语"
+    },
+    "greeting": "Hello, how are you?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🐢",
+      "name": {
+        "pt": "Tartaruga-verde",
+        "en": "Green sea turtle",
+        "de": "Grüne Meeresschildkröte",
+        "fr": "Tortue verte",
+        "es": "Tortuga verde",
+        "it": "Tartaruga verde",
+        "zh": "绿海龟"
+      }
+    },
+    "tradition": {
+      "pt": "Nas Fiji, a cerimónia da kava reúne a comunidade para partilhar uma bebida tradicional em sinal de amizade.",
+      "en": "In Fiji, the kava ceremony brings the community together to share a traditional drink as a sign of friendship.",
+      "de": "Auf Fidschi bringt die Kava-Zeremonie die Gemeinschaft zusammen, um ein traditionelles Getränk als Zeichen der Freundschaft zu teilen.",
+      "fr": "Aux Fidji, la cérémonie du kava rassemble la communauté pour partager une boisson traditionnelle en signe d'amitié.",
+      "es": "En Fiyi, la ceremonia de la kava reúne a la comunidad para compartir una bebida tradicional como señal de amistad.",
+      "it": "Alle Fiji, la cerimonia del kava riunisce la comunità per condividere una bevanda tradizionale come segno di amicizia.",
+      "zh": "在斐济,卡瓦仪式将社区聚集在一起,分享传统饮品以示友谊。"
+    },
+    "emojiScene": [
+      "🏝️",
+      "🥥",
+      "🌊"
+    ]
   },
   {
     "iso": "CU",
@@ -1401,7 +3111,52 @@
       "es": "Cuba es la cuna del son cubano, un estilo musical que ayudó a dar forma a la salsa en todo el mundo.",
       "it": "Cuba è la culla del son cubano, uno stile musicale che ha contribuito a plasmare la salsa in tutto il mondo.",
       "zh": "古巴是古巴颂乐的发源地，这种音乐风格深刻影响了世界各地萨尔萨音乐的形成。"
-    }
+    },
+    "language": {
+      "pt": "Espanhol",
+      "en": "Spanish",
+      "de": "Spanisch",
+      "fr": "Espagnol",
+      "es": "Español",
+      "it": "Spagnolo",
+      "zh": "西班牙语"
+    },
+    "greeting": "Hola, ¿cómo estás?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🐦",
+      "name": {
+        "pt": "Tocororo",
+        "en": "Cuban trogon",
+        "de": "Kubatrogon",
+        "fr": "Trogon de Cuba",
+        "es": "Tocororo cubano",
+        "it": "Trogone cubano",
+        "zh": "古巴咬鹃"
+      }
+    },
+    "tradition": {
+      "pt": "Em Cuba, a salsa e o som são estilos de música e dança que fazem toda a gente dançar na rua.",
+      "en": "In Cuba, salsa and son are music and dance styles that get everyone dancing in the street.",
+      "de": "In Kuba sind Salsa und Son Musik- und Tanzstile, bei denen jeder auf der Straße tanzt.",
+      "fr": "À Cuba, la salsa et le son sont des styles de musique et de danse qui font danser tout le monde dans la rue.",
+      "es": "En Cuba, la salsa y el son son estilos de música y baile que hacen bailar a todos en la calle.",
+      "it": "A Cuba, la salsa e il son sono stili di musica e danza che fanno ballare tutti per strada.",
+      "zh": "在古巴,萨尔萨和颂乐让每个人都在街头翩翩起舞。"
+    },
+    "emojiScene": [
+      "🎺",
+      "🚗",
+      "💃"
+    ]
   },
   {
     "iso": "CR",
@@ -1437,6 +3192,987 @@
       "es": "La música tradicional costarricense suele utilizar la marimba, un xilófono de madera considerado instrumento nacional.",
       "it": "La musica tradizionale costaricana utilizza spesso la marimba, uno xilofono di legno considerato strumento nazionale.",
       "zh": "哥斯达黎加传统音乐常使用马林巴琴，这是一种木制木琴，被视为该国的民族乐器。"
-    }
+    },
+    "language": {
+      "pt": "Espanhol",
+      "en": "Spanish",
+      "de": "Spanisch",
+      "fr": "Espagnol",
+      "es": "Español",
+      "it": "Spagnolo",
+      "zh": "西班牙语"
+    },
+    "greeting": "Hola, ¿cómo estás?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🦥",
+      "name": {
+        "pt": "Preguiça",
+        "en": "Sloth",
+        "de": "Faultier",
+        "fr": "Paresseux",
+        "es": "Perezoso",
+        "it": "Bradipo",
+        "zh": "树懒"
+      }
+    },
+    "tradition": {
+      "pt": "Na Costa Rica vive-se ao ritmo de \"pura vida\", uma expressão que celebra a vida simples e feliz.",
+      "en": "Costa Rica lives by \"pura vida\", an expression celebrating a simple and happy life.",
+      "de": "Costa Rica lebt nach \"pura vida\", einem Ausdruck, der ein einfaches und glückliches Leben feiert.",
+      "fr": "Le Costa Rica vit au rythme de \"pura vida\", une expression qui célèbre une vie simple et heureuse.",
+      "es": "Costa Rica vive al ritmo de \"pura vida\", una expresión que celebra una vida sencilla y feliz.",
+      "it": "Il Costa Rica vive al ritmo di \"pura vida\", un'espressione che celebra una vita semplice e felice.",
+      "zh": "哥斯达黎加人以“纯粹生活”(pura vida)的态度生活,庆祝简单快乐的生活方式。"
+    },
+    "emojiScene": [
+      "🌴",
+      "🦥",
+      "🌋"
+    ]
+  },
+  {
+    "iso": "AO",
+    "flag": "🇦🇴",
+    "capital": "Luanda",
+    "continent": "africa",
+    "currency": "AOA (Kz)",
+    "lat": -8.84,
+    "lng": 13.23,
+    "name": {
+      "pt": "Angola",
+      "en": "Angola",
+      "de": "Angola",
+      "fr": "Angola",
+      "es": "Angola",
+      "it": "Angola",
+      "zh": "安哥拉"
+    },
+    "fact": {
+      "pt": "Angola fala português, tal como Portugal, e tem praias enormes junto ao Oceano Atlântico.",
+      "en": "Angola speaks Portuguese, just like Portugal, and has huge beaches along the Atlantic Ocean.",
+      "de": "Angola spricht Portugiesisch, genau wie Portugal, und hat riesige Strände am Atlantik.",
+      "fr": "L'Angola parle portugais, comme le Portugal, et possède d'immenses plages sur l'océan Atlantique.",
+      "es": "Angola habla portugués, igual que Portugal, y tiene playas enormes junto al océano Atlántico.",
+      "it": "L'Angola parla portoghese, come il Portogallo, e ha spiagge enormi sull'Oceano Atlantico.",
+      "zh": "安哥拉说葡萄牙语,和葡萄牙一样,拥有大西洋沿岸广阔的海滩。"
+    },
+    "language": {
+      "pt": "Português",
+      "en": "Portuguese",
+      "de": "Portugiesisch",
+      "fr": "Portugais",
+      "es": "Portugués",
+      "it": "Portoghese",
+      "zh": "葡萄牙语"
+    },
+    "greeting": "Olá, como estás?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🐘",
+      "name": {
+        "pt": "Elefante-de-savana",
+        "en": "Savanna elephant",
+        "de": "Steppenelefant",
+        "fr": "Éléphant de savane",
+        "es": "Elefante de sabana",
+        "it": "Elefante di savana",
+        "zh": "草原象"
+      }
+    },
+    "tradition": {
+      "pt": "Em Angola dança-se a kizomba, um estilo de dança suave nascido no país.",
+      "en": "In Angola people dance kizomba, a smooth dance style born in the country.",
+      "de": "In Angola tanzt man Kizomba, einen sanften Tanzstil, der im Land entstand.",
+      "fr": "En Angola, on danse la kizomba, un style de danse doux né dans le pays.",
+      "es": "En Angola se baila la kizomba, un estilo de baile suave nacido en el país.",
+      "it": "In Angola si balla la kizomba, uno stile di danza morbido nato nel paese.",
+      "zh": "安哥拉人跳金巴舞,这是一种起源于该国的柔和舞蹈。"
+    },
+    "emojiScene": [
+      "🥁",
+      "🌊",
+      "🐘"
+    ]
+  },
+  {
+    "iso": "MZ",
+    "flag": "🇲🇿",
+    "capital": "Maputo",
+    "continent": "africa",
+    "currency": "MZN (MT)",
+    "lat": -25.97,
+    "lng": 32.58,
+    "name": {
+      "pt": "Moçambique",
+      "en": "Mozambique",
+      "de": "Mosambik",
+      "fr": "Mozambique",
+      "es": "Mozambique",
+      "it": "Mozambico",
+      "zh": "莫桑比克"
+    },
+    "fact": {
+      "pt": "Moçambique fala português e tem recifes de coral lindíssimos no Oceano Índico.",
+      "en": "Mozambique speaks Portuguese and has beautiful coral reefs in the Indian Ocean.",
+      "de": "Mosambik spricht Portugiesisch und hat wunderschöne Korallenriffe im Indischen Ozean.",
+      "fr": "Le Mozambique parle portugais et possède de magnifiques récifs coralliens dans l'océan Indien.",
+      "es": "Mozambique habla portugués y tiene hermosos arrecifes de coral en el océano Índico.",
+      "it": "Il Mozambico parla portoghese e ha bellissime barriere coralline nell'Oceano Indiano.",
+      "zh": "莫桑比克说葡萄牙语,印度洋沿岸有美丽的珊瑚礁。"
+    },
+    "language": {
+      "pt": "Português",
+      "en": "Portuguese",
+      "de": "Portugiesisch",
+      "fr": "Portugais",
+      "es": "Portugués",
+      "it": "Portoghese",
+      "zh": "葡萄牙语"
+    },
+    "greeting": "Olá, como estás?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🦏",
+      "name": {
+        "pt": "Rinoceronte",
+        "en": "Rhinoceros",
+        "de": "Nashorn",
+        "fr": "Rhinocéros",
+        "es": "Rinoceronte",
+        "it": "Rinoceronte",
+        "zh": "犀牛"
+      }
+    },
+    "tradition": {
+      "pt": "Em Moçambique, a dança máscara Mapiko é feita por jovens em cerimónias tradicionais.",
+      "en": "In Mozambique, the Mapiko mask dance is performed by young people in traditional ceremonies.",
+      "de": "In Mosambik führen junge Menschen bei traditionellen Zeremonien den Maskentanz Mapiko auf.",
+      "fr": "Au Mozambique, la danse masquée Mapiko est exécutée par les jeunes lors de cérémonies traditionnelles.",
+      "es": "En Mozambique, la danza de máscaras Mapiko la realizan los jóvenes en ceremonias tradicionales.",
+      "it": "In Mozambico, la danza mascherata Mapiko viene eseguita dai giovani in cerimonie tradizionali.",
+      "zh": "在莫桑比克,年轻人在传统仪式上表演马皮科面具舞。"
+    },
+    "emojiScene": [
+      "🐚",
+      "🥭",
+      "🎭"
+    ]
+  },
+  {
+    "iso": "CV",
+    "flag": "🇨🇻",
+    "capital": "Praia",
+    "continent": "africa",
+    "currency": "CVE (Esc)",
+    "lat": 14.93,
+    "lng": -23.51,
+    "name": {
+      "pt": "Cabo Verde",
+      "en": "Cape Verde",
+      "de": "Kap Verde",
+      "fr": "Cap-Vert",
+      "es": "Cabo Verde",
+      "it": "Capo Verde",
+      "zh": "佛得角"
+    },
+    "fact": {
+      "pt": "Cabo Verde é um arquipélago de dez ilhas no Oceano Atlântico onde se fala português.",
+      "en": "Cape Verde is a group of ten islands in the Atlantic Ocean where Portuguese is spoken.",
+      "de": "Kap Verde ist eine Gruppe von zehn Inseln im Atlantik, auf denen Portugiesisch gesprochen wird.",
+      "fr": "Le Cap-Vert est un archipel de dix îles dans l'océan Atlantique où l'on parle portugais.",
+      "es": "Cabo Verde es un archipiélago de diez islas en el océano Atlántico donde se habla portugués.",
+      "it": "Capo Verde è un arcipelago di dieci isole nell'Oceano Atlantico dove si parla portoghese.",
+      "zh": "佛得角是大西洋上由十个岛屿组成的群岛,当地讲葡萄牙语。"
+    },
+    "language": {
+      "pt": "Português",
+      "en": "Portuguese",
+      "de": "Portugiesisch",
+      "fr": "Portugais",
+      "es": "Portugués",
+      "it": "Portoghese",
+      "zh": "葡萄牙语"
+    },
+    "greeting": "Olá, como estás?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🐢",
+      "name": {
+        "pt": "Tartaruga-marinha",
+        "en": "Sea turtle",
+        "de": "Meeresschildkröte",
+        "fr": "Tortue de mer",
+        "es": "Tortuga marina",
+        "it": "Tartaruga marina",
+        "zh": "海龟"
+      }
+    },
+    "tradition": {
+      "pt": "Em Cabo Verde, a morna é um estilo de música e dança triste e bonita, muito querida no país.",
+      "en": "In Cape Verde, morna is a beautiful, wistful style of music and dance loved across the islands.",
+      "de": "Auf Kap Verde ist Morna ein wunderschöner, wehmütiger Musik- und Tanzstil, den die Inseln lieben.",
+      "fr": "Au Cap-Vert, la morna est un style de musique et de danse mélancolique et magnifique, très aimé.",
+      "es": "En Cabo Verde, la morna es un estilo de música y danza triste y hermoso, muy querido en el país.",
+      "it": "A Capo Verde, la morna è uno stile di musica e danza malinconico e bellissimo, molto amato.",
+      "zh": "在佛得角,摩尔纳是一种忧伤而美丽的音乐舞蹈风格,深受喜爱。"
+    },
+    "emojiScene": [
+      "🎶",
+      "🏝️",
+      "🐢"
+    ]
+  },
+  {
+    "iso": "GW",
+    "flag": "🇬🇼",
+    "capital": "Bissau",
+    "continent": "africa",
+    "currency": "XOF (CFA)",
+    "lat": 11.86,
+    "lng": -15.6,
+    "name": {
+      "pt": "Guiné-Bissau",
+      "en": "Guinea-Bissau",
+      "de": "Guinea-Bissau",
+      "fr": "Guinée-Bissau",
+      "es": "Guinea-Bisáu",
+      "it": "Guinea-Bissau",
+      "zh": "几内亚比绍"
+    },
+    "fact": {
+      "pt": "A Guiné-Bissau fala português e tem o belo arquipélago das ilhas Bijagós.",
+      "en": "Guinea-Bissau speaks Portuguese and has the beautiful Bijagós Islands archipelago.",
+      "de": "Guinea-Bissau spricht Portugiesisch und hat den wunderschönen Bijagós-Archipel.",
+      "fr": "La Guinée-Bissau parle portugais et possède le magnifique archipel des îles Bijagos.",
+      "es": "Guinea-Bisáu habla portugués y tiene el hermoso archipiélago de las islas Bijagós.",
+      "it": "La Guinea-Bissau parla portoghese e ha il bellissimo arcipelago delle isole Bijagos.",
+      "zh": "几内亚比绍说葡萄牙语,拥有美丽的比雅古岛群。"
+    },
+    "language": {
+      "pt": "Português",
+      "en": "Portuguese",
+      "de": "Portugiesisch",
+      "fr": "Portugais",
+      "es": "Portugués",
+      "it": "Portoghese",
+      "zh": "葡萄牙语"
+    },
+    "greeting": "Olá, como estás?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🦛",
+      "name": {
+        "pt": "Hipopótamo",
+        "en": "Hippopotamus",
+        "de": "Flusspferd",
+        "fr": "Hippopotame",
+        "es": "Hipopótamo",
+        "it": "Ippopotamo",
+        "zh": "河马"
+      }
+    },
+    "tradition": {
+      "pt": "Na Guiné-Bissau, o Carnaval de Bissau enche as ruas de máscaras e música todos os anos.",
+      "en": "In Guinea-Bissau, the Bissau Carnival fills the streets with masks and music every year.",
+      "de": "In Guinea-Bissau füllt der Karneval von Bissau jedes Jahr die Straßen mit Masken und Musik.",
+      "fr": "En Guinée-Bissau, le carnaval de Bissau remplit les rues de masques et de musique chaque année.",
+      "es": "En Guinea-Bisáu, el Carnaval de Bisáu llena las calles de máscaras y música cada año.",
+      "it": "In Guinea-Bissau, il Carnevale di Bissau riempie le strade di maschere e musica ogni anno.",
+      "zh": "在几内亚比绍,比绍狂欢节每年都以面具和音乐装点街道。"
+    },
+    "emojiScene": [
+      "🎭",
+      "🌴",
+      "🥁"
+    ]
+  },
+  {
+    "iso": "ST",
+    "flag": "🇸🇹",
+    "capital": "São Tomé",
+    "continent": "africa",
+    "currency": "STN (Db)",
+    "lat": 0.34,
+    "lng": 6.73,
+    "name": {
+      "pt": "São Tomé e Príncipe",
+      "en": "São Tomé and Príncipe",
+      "de": "São Tomé und Príncipe",
+      "fr": "Sao Tomé-et-Principe",
+      "es": "Santo Tomé y Príncipe",
+      "it": "São Tomé e Príncipe",
+      "zh": "圣多美和普林西比"
+    },
+    "fact": {
+      "pt": "São Tomé e Príncipe é um pequeno país de ilhas onde se fala português e se cultiva muito cacau.",
+      "en": "São Tomé and Príncipe is a small island country where Portuguese is spoken and lots of cocoa is grown.",
+      "de": "São Tomé und Príncipe ist ein kleines Inselland, in dem Portugiesisch gesprochen und viel Kakao angebaut wird.",
+      "fr": "Sao Tomé-et-Principe est un petit pays insulaire où l'on parle portugais et cultive beaucoup de cacao.",
+      "es": "Santo Tomé y Príncipe es un pequeño país insular donde se habla portugués y se cultiva mucho cacao.",
+      "it": "São Tomé e Príncipe è un piccolo paese insulare dove si parla portoghese e si coltiva molto cacao.",
+      "zh": "圣多美和普林西比是一个讲葡萄牙语、盛产可可的小岛国。"
+    },
+    "language": {
+      "pt": "Português",
+      "en": "Portuguese",
+      "de": "Portugiesisch",
+      "fr": "Portugais",
+      "es": "Portugués",
+      "it": "Portoghese",
+      "zh": "葡萄牙语"
+    },
+    "greeting": "Olá, como estás?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🦎",
+      "name": {
+        "pt": "Osga-gigante",
+        "en": "Giant gecko",
+        "de": "Riesengecko",
+        "fr": "Gecko géant",
+        "es": "Geco gigante",
+        "it": "Geco gigante",
+        "zh": "巨型壁虎"
+      }
+    },
+    "tradition": {
+      "pt": "Em São Tomé e Príncipe, o Danço-Congo é uma dança teatral contada com música e fantasias.",
+      "en": "In São Tomé and Príncipe, Danço-Congo is a theatrical dance told with music and costumes.",
+      "de": "In São Tomé und Príncipe ist der Danço-Congo ein theatralischer Tanz mit Musik und Kostümen.",
+      "fr": "À Sao Tomé-et-Principe, le Danço-Congo est une danse théâtrale racontée en musique et en costumes.",
+      "es": "En Santo Tomé y Príncipe, el Danço-Congo es una danza teatral contada con música y disfraces.",
+      "it": "A São Tomé e Príncipe, il Danço-Congo è una danza teatrale raccontata con musica e costumi.",
+      "zh": "在圣多美和普林西比,刚果舞是一种配有音乐和服装的戏剧舞蹈。"
+    },
+    "emojiScene": [
+      "🍫",
+      "🌋",
+      "🦎"
+    ]
+  },
+  {
+    "iso": "TL",
+    "flag": "🇹🇱",
+    "capital": "Díli",
+    "continent": "asia",
+    "currency": "USD ($)",
+    "lat": -8.56,
+    "lng": 125.57,
+    "name": {
+      "pt": "Timor-Leste",
+      "en": "East Timor",
+      "de": "Osttimor",
+      "fr": "Timor oriental",
+      "es": "Timor Oriental",
+      "it": "Timor Est",
+      "zh": "东帝汶"
+    },
+    "fact": {
+      "pt": "Timor-Leste fala português e tétum, e é um país jovem na Ásia rodeado de mar.",
+      "en": "East Timor speaks Portuguese and Tetum, and is a young country in Asia surrounded by sea.",
+      "de": "Osttimor spricht Portugiesisch und Tetum und ist ein junges Land in Asien, umgeben vom Meer.",
+      "fr": "Le Timor oriental parle portugais et tétum, et est un jeune pays d'Asie entouré par la mer.",
+      "es": "Timor Oriental habla portugués y tetun, y es un país joven en Asia rodeado de mar.",
+      "it": "Timor Est parla portoghese e tetum, ed è un giovane paese asiatico circondato dal mare.",
+      "zh": "东帝汶讲葡萄牙语和德顿语,是亚洲一个被大海环绕的年轻国家。"
+    },
+    "language": {
+      "pt": "Português",
+      "en": "Portuguese",
+      "de": "Portugiesisch",
+      "fr": "Portugais",
+      "es": "Portugués",
+      "it": "Portoghese",
+      "zh": "葡萄牙语"
+    },
+    "greeting": "Olá, como estás?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🐊",
+      "name": {
+        "pt": "Crocodilo-de-água-salgada",
+        "en": "Saltwater crocodile",
+        "de": "Leistenkrokodil",
+        "fr": "Crocodile marin",
+        "es": "Cocodrilo marino",
+        "it": "Coccodrillo marino",
+        "zh": "咸水鳄"
+      }
+    },
+    "tradition": {
+      "pt": "Em Timor-Leste, tecer o tais, um pano tradicional colorido, é um saber passado de geração em geração.",
+      "en": "In East Timor, weaving tais, a colorful traditional cloth, is a skill passed down through generations.",
+      "de": "In Osttimor wird das Weben von Tais, einem farbenfrohen traditionellen Stoff, von Generation zu Generation weitergegeben.",
+      "fr": "Au Timor oriental, tisser le tais, un tissu traditionnel coloré, est un savoir transmis de génération en génération.",
+      "es": "En Timor Oriental, tejer el tais, una tela tradicional colorida, es un saber transmitido de generación en generación.",
+      "it": "A Timor Est, tessere il tais, un tessuto tradizionale colorato, è un sapere tramandato di generazione in generazione.",
+      "zh": "在东帝汶,编织色彩斑斓的传统布料泰斯是代代相传的手艺。"
+    },
+    "emojiScene": [
+      "🧵",
+      "🌊",
+      "🐊"
+    ]
+  },
+  {
+    "iso": "BE",
+    "flag": "🇧🇪",
+    "capital": "Bruxelas",
+    "continent": "europe",
+    "currency": "EUR (€)",
+    "lat": 50.85,
+    "lng": 4.35,
+    "name": {
+      "pt": "Bélgica",
+      "en": "Belgium",
+      "de": "Belgien",
+      "fr": "Belgique",
+      "es": "Bélgica",
+      "it": "Belgio",
+      "zh": "比利时"
+    },
+    "fact": {
+      "pt": "A Bélgica é famosa pelo chocolate e pelos gofres deliciosos.",
+      "en": "Belgium is famous for its chocolate and delicious waffles.",
+      "de": "Belgien ist berühmt für seine Schokolade und leckeren Waffeln.",
+      "fr": "La Belgique est célèbre pour son chocolat et ses délicieuses gaufres.",
+      "es": "Bélgica es famosa por su chocolate y sus deliciosos gofres.",
+      "it": "Il Belgio è famoso per il cioccolato e i deliziosi waffle.",
+      "zh": "比利时以巧克力和美味的华夫饼闻名。"
+    },
+    "language": {
+      "pt": "Francês",
+      "en": "French",
+      "de": "Französisch",
+      "fr": "Français",
+      "es": "Francés",
+      "it": "Francese",
+      "zh": "法语"
+    },
+    "greeting": "Bonjour, comment ça va ?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🐎",
+      "name": {
+        "pt": "Cavalo de tiro belga",
+        "en": "Belgian draft horse",
+        "de": "Belgisches Kaltblut",
+        "fr": "Cheval de trait belge",
+        "es": "Caballo de tiro belga",
+        "it": "Cavallo da tiro belga",
+        "zh": "比利时挽马"
+      }
+    },
+    "tradition": {
+      "pt": "Na Bélgica há um festival de gigantes de pano que desfilam pelas ruas em cidades antigas.",
+      "en": "Belgium has a festival of giant cloth figures that parade through the streets in old towns.",
+      "de": "Belgien hat ein Fest mit riesigen Stoffgestalten, die durch die Straßen alter Städte ziehen.",
+      "fr": "La Belgique a une fête de géants de tissu qui défilent dans les rues des villes anciennes.",
+      "es": "Bélgica tiene un festival de gigantes de tela que desfilan por las calles de ciudades antiguas.",
+      "it": "Il Belgio ha una festa di giganti di stoffa che sfilano per le strade delle città antiche.",
+      "zh": "比利时有布制巨人游行的传统节日,在古城街道上巡游。"
+    },
+    "emojiScene": [
+      "🍫",
+      "🧇",
+      "🎪"
+    ]
+  },
+  {
+    "iso": "CH",
+    "flag": "🇨🇭",
+    "capital": "Berna",
+    "continent": "europe",
+    "currency": "CHF (Fr)",
+    "lat": 46.95,
+    "lng": 7.45,
+    "name": {
+      "pt": "Suíça",
+      "en": "Switzerland",
+      "de": "Schweiz",
+      "fr": "Suisse",
+      "es": "Suiza",
+      "it": "Svizzera",
+      "zh": "瑞士"
+    },
+    "fact": {
+      "pt": "Na Suíça há montanhas altíssimas cobertas de neve o ano todo, os Alpes.",
+      "en": "Switzerland has very tall mountains covered in snow all year, the Alps.",
+      "de": "Die Schweiz hat sehr hohe, das ganze Jahr über schneebedeckte Berge, die Alpen.",
+      "fr": "La Suisse a de très hautes montagnes couvertes de neige toute l'année, les Alpes.",
+      "es": "Suiza tiene montañas muy altas cubiertas de nieve todo el año, los Alpes.",
+      "it": "La Svizzera ha montagne altissime coperte di neve tutto l'anno, le Alpi.",
+      "zh": "瑞士有终年积雪的高山,那就是阿尔卑斯山。"
+    },
+    "language": {
+      "pt": "Alemão",
+      "en": "German",
+      "de": "Deutsch",
+      "fr": "Allemand",
+      "es": "Alemán",
+      "it": "Tedesco",
+      "zh": "德语"
+    },
+    "greeting": "Hallo, wie geht es dir?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🐐",
+      "name": {
+        "pt": "Cabra dos Alpes",
+        "en": "Alpine goat",
+        "de": "Alpenziege",
+        "fr": "Chèvre des Alpes",
+        "es": "Cabra alpina",
+        "it": "Capra alpina",
+        "zh": "阿尔卑斯山羊"
+      }
+    },
+    "tradition": {
+      "pt": "Na Suíça celebra-se a descida do gado das montanhas no outono, com vacas decoradas com flores.",
+      "en": "Switzerland celebrates the cows coming down from the mountains in autumn, decorated with flowers.",
+      "de": "Die Schweiz feiert im Herbst den Alpabzug, wenn die Kühe mit Blumen geschmückt von den Bergen kommen.",
+      "fr": "La Suisse célèbre la désalpe en automne, quand les vaches décorées de fleurs redescendent des montagnes.",
+      "es": "Suiza celebra el descenso del ganado de las montañas en otoño, con vacas decoradas con flores.",
+      "it": "La Svizzera celebra la discesa del bestiame dai monti in autunno, con mucche decorate di fiori.",
+      "zh": "瑞士在秋天庆祝牛群下山,奶牛会被鲜花装饰。"
+    },
+    "emojiScene": [
+      "🏔️",
+      "🧀",
+      "🐄"
+    ]
+  },
+  {
+    "iso": "AT",
+    "flag": "🇦🇹",
+    "capital": "Viena",
+    "continent": "europe",
+    "currency": "EUR (€)",
+    "lat": 48.21,
+    "lng": 16.37,
+    "name": {
+      "pt": "Áustria",
+      "en": "Austria",
+      "de": "Österreich",
+      "fr": "Autriche",
+      "es": "Austria",
+      "it": "Austria",
+      "zh": "奥地利"
+    },
+    "fact": {
+      "pt": "Na Áustria nasceram grandes compositores de música clássica, como Mozart.",
+      "en": "Austria is where great classical music composers were born, like Mozart.",
+      "de": "In Österreich wurden große Komponisten der klassischen Musik geboren, wie Mozart.",
+      "fr": "En Autriche sont nés de grands compositeurs de musique classique, comme Mozart.",
+      "es": "En Austria nacieron grandes compositores de música clásica, como Mozart.",
+      "it": "In Austria sono nati grandi compositori di musica classica, come Mozart.",
+      "zh": "奥地利诞生了许多伟大的古典音乐作曲家,比如莫扎特。"
+    },
+    "language": {
+      "pt": "Alemão",
+      "en": "German",
+      "de": "Deutsch",
+      "fr": "Allemand",
+      "es": "Alemán",
+      "it": "Tedesco",
+      "zh": "德语"
+    },
+    "greeting": "Hallo, wie geht es dir?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🦌",
+      "name": {
+        "pt": "Corço",
+        "en": "Roe deer",
+        "de": "Reh",
+        "fr": "Chevreuil",
+        "es": "Corzo",
+        "it": "Capriolo",
+        "zh": "狍子"
+      }
+    },
+    "tradition": {
+      "pt": "Na Áustria há bailes de valsa elegantes, dançados ao som de música clássica.",
+      "en": "Austria has elegant waltz balls, danced to classical music.",
+      "de": "Österreich hat elegante Walzerbälle, die zu klassischer Musik getanzt werden.",
+      "fr": "L'Autriche a des bals de valse élégants, dansés sur de la musique classique.",
+      "es": "Austria tiene elegantes bailes de vals, bailados al son de música clásica.",
+      "it": "L'Austria ha eleganti balli di valzer, ballati al suono della musica classica.",
+      "zh": "奥地利有优雅的华尔兹舞会,伴随古典音乐起舞。"
+    },
+    "emojiScene": [
+      "🎻",
+      "🏔️",
+      "🍰"
+    ]
+  },
+  {
+    "iso": "RU",
+    "flag": "🇷🇺",
+    "capital": "Moscovo",
+    "continent": "europe",
+    "currency": "RUB (₽)",
+    "lat": 55.75,
+    "lng": 37.62,
+    "name": {
+      "pt": "Rússia",
+      "en": "Russia",
+      "de": "Russland",
+      "fr": "Russie",
+      "es": "Rusia",
+      "it": "Russia",
+      "zh": "俄罗斯"
+    },
+    "fact": {
+      "pt": "A Rússia é o maior país do mundo, tão grande que tem onze fusos horários!",
+      "en": "Russia is the biggest country in the world, so big it has eleven time zones!",
+      "de": "Russland ist das größte Land der Welt und hat sogar elf Zeitzonen!",
+      "fr": "La Russie est le plus grand pays du monde, si grand qu'il a onze fuseaux horaires !",
+      "es": "Rusia es el país más grande del mundo, tan grande que tiene once husos horarios.",
+      "it": "La Russia è il paese più grande del mondo, così grande da avere undici fusi orari!",
+      "zh": "俄罗斯是世界上最大的国家,大到拥有十一个时区!"
+    },
+    "language": {
+      "pt": "Russo",
+      "en": "Russian",
+      "de": "Russisch",
+      "fr": "Russe",
+      "es": "Ruso",
+      "it": "Russo",
+      "zh": "俄语"
+    },
+    "greeting": "Привет, как дела?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🐻",
+      "name": {
+        "pt": "Urso-pardo",
+        "en": "Brown bear",
+        "de": "Braunbär",
+        "fr": "Ours brun",
+        "es": "Oso pardo",
+        "it": "Orso bruno",
+        "zh": "棕熊"
+      }
+    },
+    "tradition": {
+      "pt": "Na Rússia fazem-se as matriosca, bonecas de madeira que se encaixam umas dentro das outras.",
+      "en": "In Russia, people make matryoshka dolls, wooden dolls that nest inside one another.",
+      "de": "In Russland werden Matroschkas hergestellt, Holzpuppen, die ineinander verschachtelt sind.",
+      "fr": "En Russie, on fabrique des matriochkas, des poupées en bois qui s'emboîtent les unes dans les autres.",
+      "es": "En Rusia se hacen las matrioskas, muñecas de madera que se encajan unas dentro de otras.",
+      "it": "In Russia si fanno le matrioske, bambole di legno che si incastrano una dentro l'altra.",
+      "zh": "俄罗斯制作套娃,一个木偶套着一个,层层相叠。"
+    },
+    "emojiScene": [
+      "🪆",
+      "❄️",
+      "🏰"
+    ]
+  },
+  {
+    "iso": "VN",
+    "flag": "🇻🇳",
+    "capital": "Hanói",
+    "continent": "asia",
+    "currency": "VND (₫)",
+    "lat": 21.03,
+    "lng": 105.85,
+    "name": {
+      "pt": "Vietname",
+      "en": "Vietnam",
+      "de": "Vietnam",
+      "fr": "Vietnam",
+      "es": "Vietnam",
+      "it": "Vietnam",
+      "zh": "越南"
+    },
+    "fact": {
+      "pt": "No Vietname há a Baía de Ha Long, com milhares de ilhas de pedra a espreitar do mar.",
+      "en": "Vietnam has Ha Long Bay, with thousands of stone islands rising from the sea.",
+      "de": "In Vietnam gibt es die Halong-Bucht mit Tausenden von Felseninseln, die aus dem Meer ragen.",
+      "fr": "Au Vietnam se trouve la baie d'Ha Long, avec des milliers d'îlots rocheux surgissant de la mer.",
+      "es": "En Vietnam está la Bahía de Ha Long, con miles de islas de piedra que asoman del mar.",
+      "it": "In Vietnam c'è la baia di Ha Long, con migliaia di isole di pietra che emergono dal mare.",
+      "zh": "越南有下龙湾,数千座石岛从海中耸立而起。"
+    },
+    "language": {
+      "pt": "Vietnamita",
+      "en": "Vietnamese",
+      "de": "Vietnamesisch",
+      "fr": "Vietnamien",
+      "es": "Vietnamita",
+      "it": "Vietnamita",
+      "zh": "越南语"
+    },
+    "greeting": "Xin chào, bạn khỏe không?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🐅",
+      "name": {
+        "pt": "Tigre-indochinês",
+        "en": "Indochinese tiger",
+        "de": "Indochinesischer Tiger",
+        "fr": "Tigre d'Indochine",
+        "es": "Tigre de Indochina",
+        "it": "Tigre dell'Indocina",
+        "zh": "印支虎"
+      }
+    },
+    "tradition": {
+      "pt": "No Vietname celebra-se o Tết, o Ano Novo Lunar, com flores de pessegueiro e presentes em envelopes vermelhos.",
+      "en": "Vietnam celebrates Tết, the Lunar New Year, with peach blossoms and gifts in red envelopes.",
+      "de": "Vietnam feiert Tết, das Mondneujahr, mit Pfirsichblüten und Geschenken in roten Umschlägen.",
+      "fr": "Le Vietnam célèbre le Tết, le Nouvel An lunaire, avec des fleurs de pêcher et des cadeaux dans des enveloppes rouges.",
+      "es": "Vietnam celebra el Tết, el Año Nuevo Lunar, con flores de melocotonero y regalos en sobres rojos.",
+      "it": "Il Vietnam celebra il Tết, il Capodanno lunare, con fiori di pesco e regali in buste rosse.",
+      "zh": "越南庆祝春节(Tết),用桃花和红包礼物迎接新年。"
+    },
+    "emojiScene": [
+      "🧧",
+      "🌸",
+      "🚣"
+    ]
+  },
+  {
+    "iso": "SA",
+    "flag": "🇸🇦",
+    "capital": "Riade",
+    "continent": "asia",
+    "currency": "SAR (﷼)",
+    "lat": 24.71,
+    "lng": 46.68,
+    "name": {
+      "pt": "Arábia Saudita",
+      "en": "Saudi Arabia",
+      "de": "Saudi-Arabien",
+      "fr": "Arabie saoudite",
+      "es": "Arabia Saudita",
+      "it": "Arabia Saudita",
+      "zh": "沙特阿拉伯"
+    },
+    "fact": {
+      "pt": "A Arábia Saudita tem grandes desertos de areia e cidades muito antigas escavadas na rocha.",
+      "en": "Saudi Arabia has vast sandy deserts and ancient cities carved into rock.",
+      "de": "Saudi-Arabien hat riesige Sandwüsten und uralte, in Felsen gehauene Städte.",
+      "fr": "L'Arabie saoudite a de vastes déserts de sable et des villes anciennes taillées dans la roche.",
+      "es": "Arabia Saudita tiene grandes desiertos de arena y ciudades muy antiguas talladas en roca.",
+      "it": "L'Arabia Saudita ha vasti deserti di sabbia e antiche città scolpite nella roccia.",
+      "zh": "沙特阿拉伯拥有广阔的沙漠和刻在岩石中的古老城市。"
+    },
+    "language": {
+      "pt": "Árabe",
+      "en": "Arabic",
+      "de": "Arabisch",
+      "fr": "Arabe",
+      "es": "Árabe",
+      "it": "Arabo",
+      "zh": "阿拉伯语"
+    },
+    "greeting": "مرحباً، كيف حالك؟",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🐪",
+      "name": {
+        "pt": "Camelo-árabe",
+        "en": "Arabian camel",
+        "de": "Arabisches Kamel",
+        "fr": "Dromadaire d'Arabie",
+        "es": "Camello árabe",
+        "it": "Cammello arabo",
+        "zh": "阿拉伯骆驼"
+      }
+    },
+    "tradition": {
+      "pt": "Na Arábia Saudita, a dança da espada Ardah é feita por homens em fila, ao som de tambores.",
+      "en": "In Saudi Arabia, the Ardah sword dance is performed by men in a row, to the beat of drums.",
+      "de": "In Saudi-Arabien wird der Ardah-Schwerttanz von Männern in einer Reihe zum Klang von Trommeln aufgeführt.",
+      "fr": "En Arabie saoudite, la danse du sabre Ardah est exécutée par des hommes en ligne, au rythme des tambours.",
+      "es": "En Arabia Saudita, la danza de la espada Ardah la realizan hombres en fila, al ritmo de tambores.",
+      "it": "In Arabia Saudita, la danza della spada Ardah viene eseguita da uomini in fila, al ritmo dei tamburi.",
+      "zh": "在沙特阿拉伯,男子排成一列随鼓点表演阿尔达剑舞。"
+    },
+    "emojiScene": [
+      "🐪",
+      "🏜️",
+      "🕌"
+    ]
+  },
+  {
+    "iso": "IS",
+    "flag": "🇮🇸",
+    "capital": "Reiquiavique",
+    "continent": "europe",
+    "currency": "ISK (kr)",
+    "lat": 64.15,
+    "lng": -21.94,
+    "name": {
+      "pt": "Islândia",
+      "en": "Iceland",
+      "de": "Island",
+      "fr": "Islande",
+      "es": "Islandia",
+      "it": "Islanda",
+      "zh": "冰岛"
+    },
+    "fact": {
+      "pt": "Na Islândia há vulcões, glaciares e géiseres que lançam água a ferver no ar.",
+      "en": "Iceland has volcanoes, glaciers, and geysers that shoot boiling water into the air.",
+      "de": "Island hat Vulkane, Gletscher und Geysire, die kochendes Wasser in die Luft schießen.",
+      "fr": "L'Islande a des volcans, des glaciers et des geysers qui projettent de l'eau bouillante dans les airs.",
+      "es": "Islandia tiene volcanes, glaciares y géiseres que lanzan agua hirviendo al aire.",
+      "it": "L'Islanda ha vulcani, ghiacciai e geyser che sparano acqua bollente nell'aria.",
+      "zh": "冰岛有火山、冰川和会向空中喷出沸水的间歇泉。"
+    },
+    "language": {
+      "pt": "Inglês",
+      "en": "English",
+      "de": "Englisch",
+      "fr": "Anglais",
+      "es": "Inglés",
+      "it": "Inglese",
+      "zh": "英语"
+    },
+    "greeting": "Hello, how are you?",
+    "greetingTranslation": {
+      "pt": "Olá, como estás?",
+      "en": "Hello, how are you?",
+      "de": "Hallo, wie geht es dir?",
+      "fr": "Bonjour, comment ça va ?",
+      "es": "Hola, ¿cómo estás?",
+      "it": "Ciao, come stai?",
+      "zh": "你好,你好吗?"
+    },
+    "animal": {
+      "emoji": "🐴",
+      "name": {
+        "pt": "Cavalo islandês",
+        "en": "Icelandic horse",
+        "de": "Islandpferd",
+        "fr": "Cheval islandais",
+        "es": "Caballo islandés",
+        "it": "Cavallo islandese",
+        "zh": "冰岛马"
+      }
+    },
+    "tradition": {
+      "pt": "Na Islândia contam-se histórias antigas chamadas sagas, sobre heróis vikings de há muito tempo.",
+      "en": "Iceland tells ancient stories called sagas, about Viking heroes from long ago.",
+      "de": "Island erzählt uralte Geschichten namens Sagas über Wikingerhelden aus längst vergangener Zeit.",
+      "fr": "L'Islande raconte d'anciennes histoires appelées sagas, sur des héros vikings d'autrefois.",
+      "es": "Islandia cuenta antiguas historias llamadas sagas, sobre héroes vikingos de hace mucho tiempo.",
+      "it": "L'Islanda racconta antiche storie chiamate saghe, su eroi vichinghi di tanto tempo fa.",
+      "zh": "冰岛流传着古老的萨迦故事,讲述很久以前的维京英雄。"
+    },
+    "emojiScene": [
+      "🌋",
+      "❄️",
+      "🐴"
+    ]
   }
 ]

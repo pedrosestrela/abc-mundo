@@ -242,7 +242,13 @@ export function getCountries(langCode) {
     lng: c.lng,
     name: c.name[langCode] || c.name.en,
     fact: c.fact[langCode] || c.fact.en,
-    music: c.music[langCode] || c.music.en,
+    music: c.music ? c.music[langCode] || c.music.en : undefined,
+    language: c.language ? c.language[langCode] || c.language.en : undefined,
+    greeting: c.greeting,
+    greetingTranslation: c.greetingTranslation ? c.greetingTranslation[langCode] || c.greetingTranslation.en : undefined,
+    animal: c.animal ? { emoji: c.animal.emoji, name: c.animal.name[langCode] || c.animal.name.en } : undefined,
+    tradition: c.tradition ? c.tradition[langCode] || c.tradition.en : undefined,
+    emojiScene: c.emojiScene,
   }));
 }
 

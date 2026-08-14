@@ -1880,6 +1880,12 @@ body {
   font-size: 0.9rem;
 }
 
+.world-emoji-scene {
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 8px 0;
+}
+
 .world-quiz-picker {
   display: flex;
   flex-direction: column;
