@@ -1,10 +1,60 @@
 import React, { Suspense, lazy, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { getCountries } from "../content/index.js";
+import { getCountries, getPackingChallenges, getTransportScenarios } from "../content/index.js";
 import { getLangPair, getProfile, getVisitedCountries, visitCountry, getDifficultyTier, pingProgress, recordSkillEvent } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
 import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
 import HelpButton from "../components/HelpButton.jsx";
+
+const TRANSPORT_MODE_META = {
+  walk: { emoji: "🚶", labelKey: "worldModeWalk" },
+  bike: { emoji: "🚲", labelKey: "worldModeBike" },
+  car: { emoji: "🚗", labelKey: "worldModeCar" },
+  train: { emoji: "🚂", labelKey: "worldModeTrain" },
+  plane: { emoji: "✈️", labelKey: "worldModePlane" },
+  ship: { emoji: "🚢", labelKey: "worldModeShip" },
+};
+
+// Rough great-circle distance (km) from lat/lng — precision doesn't matter,
+// this only drives a coarse "near / medium / far" band for kids.
+function haversineKm(lat1, lng1, lat2, lng2) {
+  const toRad = (d) => (d * Math.PI) / 180;
+  const R = 6371;
+  const dLat = toRad(lat2 - lat1);
+  const dLng = toRad(lng2 - lng1);
+  const a =
+    Math.sin(dLat / 2) ** 2 +
+    Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLng / 2) ** 2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+}
+
+function distanceBand(km) {
+  if (km < 2000) return "near";
+  if (km < 7000) return "medium";
+  return "far";
+}
+
+function climateBand(lat) {
+  const abs = Math.abs(lat);
+  if (abs < 23.5) return "hot";
+  if (abs < 45) return "mild";
+  return "cold";
+}
+
+// Very rough longitude-based UTC offset — real timezones don't follow
+// meridians exactly, but /15 gives kids the right day/night intuition.
+function tzOffsetHours(lng) {
+  return Math.round(lng / 15);
+}
+
+function dayPhase(hour) {
+  const h = ((hour % 24) + 24) % 24;
+  if (h >= 7 && h < 18) return "day";
+  if ((h >= 5 && h < 7) || (h >= 18 && h < 20)) return "dusk";
+  return "night";
+}
+
+const PHASE_EMOJI = { day: "☀️", night: "🌙", dusk: "🌆" };
 
 // Lazy-loaded: pulls in three.js/globe.gl (~650KB gzipped), only needed
 // when the child actually opens the 3D Globe tab.
@@ -48,6 +98,70 @@ export default function World() {
   const [score, setScore] = useState(0);
   const [feedback, setFeedback] = useState(null);
 
+  // --- Trip planner ("Planeia uma Viagem") ---
+  const defaultFrom = countries.find((c) => c.iso === "PT") || countries[0];
+  const defaultTo = countries.find((c) => c.iso !== defaultFrom?.iso) || countries[1] || countries[0];
+  const [fromIso, setFromIso] = useState(defaultFrom?.iso);
+  const [toIso, setToIso] = useState(defaultTo?.iso);
+  const fromCountry = countries.find((c) => c.iso === fromIso) || defaultFrom;
+  const toCountry = countries.find((c) => c.iso === toIso) || defaultTo;
+
+  // --- Timezones ("Hoje no Outro Lado do Mundo") ---
+  const [hourHere, setHourHere] = useState(14);
+  const timezoneCountries = useMemo(() => countries.slice(0, 3), [countries]);
+
+  // --- Packing ("Faz a Mala") ---
+  const packingDestinations = getPackingChallenges(pair.mother);
+  const [packingDestId, setPackingDestId] = useState(null);
+  const [packedItems, setPackedItems] = useState(new Set());
+  const [packingChecked, setPackingChecked] = useState(false);
+  const packingDest = packingDestinations.find((d) => d.id === packingDestId);
+
+  function pickPackingDest(id) {
+    setPackingDestId(id);
+    setPackedItems(new Set());
+    setPackingChecked(false);
+  }
+
+  function togglePackItem(id) {
+    if (packingChecked) return;
+    setPackedItems((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+  }
+
+  function checkPacking() {
+    if (!packingDest) return;
+    const correctCount = packingDest.items.filter((it) => packedItems.has(it.id) === it.correct).length;
+    setPackingChecked(true);
+    pingProgress({ profileName: profile?.name, module: "world", event: `packing_${packingDest.id}:${correctCount}/${packingDest.items.length}` });
+    recordSkillEvent(profile?.name, "world-packing", correctCount === packingDest.items.length);
+  }
+
+  // --- Transport ("Como Chegamos Lá?") ---
+  const transportScenarios = getTransportScenarios(pair.mother);
+  const [transportStep, setTransportStep] = useState(0);
+  const [transportFeedback, setTransportFeedback] = useState(null);
+  const transportScenario = transportScenarios[transportStep];
+  const transportFinished = transportStep >= transportScenarios.length;
+
+  function answerTransport(mode) {
+    if (transportFeedback === "correct" || !transportScenario) return;
+    const correct = mode === transportScenario.correct;
+    setTransportFeedback(correct ? "correct" : "wrong");
+    pingProgress({ profileName: profile?.name, module: "world", event: `transport_${transportScenario.id}_${correct ? "correct" : "wrong"}` });
+    recordSkillEvent(profile?.name, "world-transport", correct);
+    if (correct) {
+      setTimeout(() => {
+        setTransportFeedback(null);
+        setTransportStep((s) => s + 1);
+      }, 1100);
+    }
+  }
+
   function openCountry(c) {
     setSelected(c);
     visitCountry(profile?.name, c.iso);
@@ -88,6 +202,10 @@ export default function World() {
     globe: t("modules.worldHelpGlobe"),
     explore: t("modules.worldHelpExplore"),
     quiz: t("modules.worldHelpQuiz"),
+    trip: t("modules.worldHelpTrip"),
+    timezone: t("modules.worldHelpTimezone"),
+    packing: t("modules.worldHelpPacking"),
+    transport: t("modules.worldHelpTransport"),
   };
 
   return (
@@ -111,6 +229,30 @@ export default function World() {
           <span className="phonics-tab-inner">
             🎮 {t("modules.worldQuiz")}
             <TabSpeakIcon text={`${t("modules.worldQuiz")}. ${helpTextByTab.quiz}`} langCode={pair.mother} />
+          </span>
+        </button>
+        <button type="button" className={"phonics-tab" + (tab === "trip" ? " selected" : "")} onClick={() => setTab("trip")}>
+          <span className="phonics-tab-inner">
+            🧳 {t("modules.worldTripTab")}
+            <TabSpeakIcon text={`${t("modules.worldTripTab")}. ${helpTextByTab.trip}`} langCode={pair.mother} />
+          </span>
+        </button>
+        <button type="button" className={"phonics-tab" + (tab === "timezone" ? " selected" : "")} onClick={() => setTab("timezone")}>
+          <span className="phonics-tab-inner">
+            🕐 {t("modules.worldTimezoneTab")}
+            <TabSpeakIcon text={`${t("modules.worldTimezoneTab")}. ${helpTextByTab.timezone}`} langCode={pair.mother} />
+          </span>
+        </button>
+        <button type="button" className={"phonics-tab" + (tab === "packing" ? " selected" : "")} onClick={() => setTab("packing")}>
+          <span className="phonics-tab-inner">
+            🎒 {t("modules.worldPackingTab")}
+            <TabSpeakIcon text={`${t("modules.worldPackingTab")}. ${helpTextByTab.packing}`} langCode={pair.mother} />
+          </span>
+        </button>
+        <button type="button" className={"phonics-tab" + (tab === "transport" ? " selected" : "")} onClick={() => { setTab("transport"); setTransportStep(0); setTransportFeedback(null); }}>
+          <span className="phonics-tab-inner">
+            🚦 {t("modules.worldTransportTab")}
+            <TabSpeakIcon text={`${t("modules.worldTransportTab")}. ${helpTextByTab.transport}`} langCode={pair.mother} />
           </span>
         </button>
       </div>
@@ -327,6 +469,237 @@ export default function World() {
             {score} / {rounds.length}
           </p>
           <button type="button" className="big-btn" onClick={() => startQuiz(quizMode)}>
+            🔁 {t("modules.gamePlayAgain")}
+          </button>
+        </div>
+      )}
+
+      {tab === "trip" && fromCountry && toCountry && (
+        <div className="mission-card">
+          <h2>{t("modules.worldTripTitle")} 🧳</h2>
+          <div className="world-trip-pickers">
+            <label>
+              {t("modules.worldTripFrom")}
+              <select value={fromIso} onChange={(e) => setFromIso(e.target.value)}>
+                {countries.map((c) => (
+                  <option key={c.iso} value={c.iso}>
+                    {c.flag} {c.name}
+                  </option>
+                ))}
+              </select>
+            </label>
+            <span className="world-trip-arrow">➡️</span>
+            <label>
+              {t("modules.worldTripTo")}
+              <select value={toIso} onChange={(e) => setToIso(e.target.value)}>
+                {countries.map((c) => (
+                  <option key={c.iso} value={c.iso}>
+                    {c.flag} {c.name}
+                  </option>
+                ))}
+              </select>
+            </label>
+          </div>
+
+          {fromIso === toIso ? (
+            <p className="page-intro">{fromCountry.flag} → {toCountry.flag}</p>
+          ) : (
+            (() => {
+              const km = haversineKm(fromCountry.lat, fromCountry.lng, toCountry.lat, toCountry.lng);
+              const band = distanceBand(km);
+              const climate = climateBand(toCountry.lat);
+              let tzDiff = tzOffsetHours(toCountry.lng) - tzOffsetHours(fromCountry.lng);
+              const packSuggestion =
+                climate === "hot"
+                  ? packingDestinations.find((d) => d.id === "beach") || packingDestinations.find((d) => d.id === "desert")
+                  : climate === "cold"
+                  ? packingDestinations.find((d) => d.id === "snow")
+                  : packingDestinations.find((d) => d.id === "mountain") || packingDestinations.find((d) => d.id === "rainy");
+              const travelMode =
+                band === "near" ? "train" : band === "medium" ? "plane" : "plane";
+
+              pingProgress({ profileName: profile?.name, module: "world", event: `trip_planned:${fromIso}->${toIso}` });
+
+              return (
+                <div className="mission-card country-card">
+                  <div className="country-facts-row">
+                    <span>🌍 {t("modules.worldTripContinent")}: {toCountry.continent}</span>
+                    <span>💰 {t("modules.worldTripCurrency")}: {toCountry.currency}</span>
+                  </div>
+                  {toCountry.language && (
+                    <p className="mission-text">{t("modules.worldTripLanguage")}: {toCountry.language}</p>
+                  )}
+                  <p className="mission-text">
+                    {t("modules.worldTripDistance")}: {t(`modules.worldTripDistance${band === "near" ? "Near" : band === "medium" ? "Medium" : "Far"}`)}
+                  </p>
+                  <p className="mission-text">
+                    {t("modules.worldTripTimezone")}:{" "}
+                    {tzDiff === 0
+                      ? t("modules.worldTripTimezoneSame")
+                      : `${Math.abs(tzDiff)} ${tzDiff > 0 ? t("modules.worldTripTimezoneAhead") : t("modules.worldTripTimezoneBehind")}`}
+                  </p>
+                  <p className="mission-text">
+                    {t("modules.worldTripClimate")}: {t(`modules.worldTripClimate${climate === "hot" ? "Hot" : climate === "mild" ? "Mild" : "Cold"}`)}
+                  </p>
+                  {packSuggestion && (
+                    <p className="mission-text">
+                      {t("modules.worldTripPacking")}: {packSuggestion.icon} {packSuggestion.name}
+                    </p>
+                  )}
+                  <p className="mission-text">
+                    {t("modules.worldTripHow")}: {TRANSPORT_MODE_META[travelMode].emoji} {t(`modules.${TRANSPORT_MODE_META[travelMode].labelKey}`)}
+                  </p>
+                </div>
+              );
+            })()
+          )}
+        </div>
+      )}
+
+      {tab === "timezone" && (
+        <div className="mission-card">
+          <h2>{t("modules.worldTimezoneTitle")} 🕐</h2>
+          <p className="page-intro">{t("modules.worldTimezoneIntro")}</p>
+          <div className="world-timezone-here">
+            <span>
+              {PHASE_EMOJI[dayPhase(hourHere)]} {fromCountry?.flag} {t("modules.worldTimezoneHere")}: {String(hourHere).padStart(2, "0")}:00
+            </span>
+            <input
+              type="range"
+              min="0"
+              max="23"
+              value={hourHere}
+              onChange={(e) => setHourHere(Number(e.target.value))}
+            />
+          </div>
+          <div className="world-timezone-grid">
+            {timezoneCountries.map((c) => {
+              const diff = tzOffsetHours(c.lng) - tzOffsetHours(fromCountry?.lng ?? 0);
+              const otherHour = hourHere + diff;
+              const phase = dayPhase(otherHour);
+              return (
+                <div key={c.iso} className="world-timezone-card">
+                  <div className="mission-emoji">{c.flag}</div>
+                  <div>{c.name}</div>
+                  <div className="world-timezone-phase">
+                    {PHASE_EMOJI[phase]}{" "}
+                    {t(`modules.worldTimezone${phase === "day" ? "Day" : phase === "night" ? "Night" : "Dusk"}`)}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
+      {tab === "packing" && !packingDest && (
+        <div className="mission-card">
+          <h2>{t("modules.worldPackingTitle")} 🎒</h2>
+          <p className="page-intro">{t("modules.worldPackingIntro")}</p>
+          <div className="world-quiz-picker">
+            {packingDestinations.map((d) => (
+              <button key={d.id} type="button" className="big-btn" onClick={() => pickPackingDest(d.id)}>
+                {d.icon} {d.name}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {tab === "packing" && packingDest && (
+        <div className="game-card">
+          <div className="game-emoji">{packingDest.icon} {packingDest.name}</div>
+          <div className="world-grid">
+            {packingDest.items.map((it) => {
+              const picked = packedItems.has(it.id);
+              const showFeedback = packingChecked;
+              const good = showFeedback && picked === it.correct;
+              return (
+                <button
+                  key={it.id}
+                  type="button"
+                  className={
+                    "world-tile" +
+                    (picked ? " visited" : "") +
+                    (showFeedback ? (good ? " correct" : " wrong") : "")
+                  }
+                  onClick={() => togglePackItem(it.id)}
+                  disabled={packingChecked}
+                >
+                  <span className="world-tile-flag">{it.icon}</span>
+                  <span className="world-tile-name">{it.name}</span>
+                </button>
+              );
+            })}
+          </div>
+          {!packingChecked ? (
+            <button type="button" className="big-btn" onClick={checkPacking}>
+              🧾 {t("modules.worldPackingCheck")}
+            </button>
+          ) : (
+            <>
+              <p className="game-result">
+                {t("modules.worldPackingResult", {
+                  correct: packingDest.items.filter((it) => packedItems.has(it.id) === it.correct).length,
+                  total: packingDest.items.length,
+                })}
+              </p>
+              <button type="button" className="big-btn" onClick={() => pickPackingDest(null)}>
+                🔁 {t("modules.worldPackingReset")}
+              </button>
+            </>
+          )}
+        </div>
+      )}
+
+      {tab === "transport" && !transportFinished && transportScenario && (
+        <div className="game-card">
+          <div className="game-progress">
+            {transportStep + 1} / {transportScenarios.length}
+          </div>
+          <div className="game-emoji">{transportScenario.icon}</div>
+          <p className="page-intro">
+            {transportScenario.prompt}
+            <SpeakButton text={transportScenario.prompt} langCode={pair.mother} />
+          </p>
+          <div className="game-options">
+            {transportScenario.modes.map((mode) => (
+              <button
+                key={mode}
+                type="button"
+                className={
+                  "big-btn game-option" +
+                  (transportFeedback && mode === transportScenario.correct ? " correct" : "")
+                }
+                onClick={() => answerTransport(mode)}
+                disabled={transportFeedback === "correct"}
+              >
+                {TRANSPORT_MODE_META[mode].emoji} {t(`modules.${TRANSPORT_MODE_META[mode].labelKey}`)}
+              </button>
+            ))}
+          </div>
+          {transportFeedback && (
+            <p className="mission-text">
+              {transportFeedback === "correct" ? "✅ " + t("modules.worldTransportCorrect") : "🤔 " + t("modules.worldTransportWrong")}
+              {" "}
+              {transportScenario.explanation}
+            </p>
+          )}
+        </div>
+      )}
+
+      {tab === "transport" && transportFinished && (
+        <div className="game-card">
+          <div className="game-emoji">🏆</div>
+          <p className="game-result">{t("modules.worldTransportDone")}</p>
+          <button
+            type="button"
+            className="big-btn"
+            onClick={() => {
+              setTransportStep(0);
+              setTransportFeedback(null);
+            }}
+          >
             🔁 {t("modules.gamePlayAgain")}
           </button>
         </div>

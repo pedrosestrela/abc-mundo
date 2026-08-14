@@ -1,0 +1,122 @@
+[
+  {
+    "id": "is1",
+    "theme": "passwords",
+    "emoji": "🔑",
+    "scenario": "Your friend from school asks for your game password so you can play together.",
+    "options": [
+      { "text": "I give them my password, they're my friend.", "correct": false, "feedback": "Your password is a secret just for you (or your parents) — not even close friends should know it." },
+      { "text": "I say I can't share my password, but we can still play together another way.", "correct": true, "feedback": "Great choice! A password protects your account. You can always find another way to play together." }
+    ]
+  },
+  {
+    "id": "is2",
+    "theme": "passwords",
+    "emoji": "🔒",
+    "scenario": "You're creating a new password for an app. Which one do you choose?",
+    "options": [
+      { "text": "123456", "correct": false, "feedback": "That one is easy to guess! It's better to pick a trickier password with help from an adult." },
+      { "text": "A long password with letters and numbers, made together with an adult.", "correct": true, "feedback": "Excellent! Long, hard-to-guess passwords keep your account safer." }
+    ]
+  },
+  {
+    "id": "is3",
+    "theme": "privacy",
+    "emoji": "📷",
+    "scenario": "A new app asks to use your camera and to know where you are. What do you do?",
+    "options": [
+      { "text": "I accept everything quickly so I can play right away.", "correct": false, "feedback": "Wait! Ask an adult to look at the request with you before accepting — not every app needs all of that." },
+      { "text": "I call an adult so we can decide together what to accept.", "correct": true, "feedback": "Well done! An adult can help you understand if it's safe to give the app that information." }
+    ]
+  },
+  {
+    "id": "is4",
+    "theme": "photos",
+    "emoji": "🏫",
+    "scenario": "You took a funny photo at recess and want to post it with your school's name clearly visible.",
+    "options": [
+      { "text": "I post it right away, it's just a fun photo.", "correct": false, "feedback": "Photos showing your school or street can reveal where you are. Always check with an adult before posting." },
+      { "text": "I show the photo to an adult first and ask if it's safe to post.", "correct": true, "feedback": "Good idea! An adult can help you decide what's safe to share and what's better to keep just for you." }
+    ]
+  },
+  {
+    "id": "is5",
+    "theme": "photos",
+    "emoji": "🙈",
+    "scenario": "A classmate asks you to send an embarrassing photo of yourself, just between the two of you.",
+    "options": [
+      { "text": "I send it, it's just a joke between us.", "correct": false, "feedback": "Even between friends, a photo can get sent to others without you wanting it to. It's best not to send it and tell an adult if they insist." },
+      { "text": "I say I'd rather not send it and tell an adult if they keep asking.", "correct": true, "feedback": "Well done! You never have to send photos, even to friends. Telling an adult is always a good idea." }
+    ]
+  },
+  {
+    "id": "is6",
+    "theme": "location",
+    "emoji": "📍",
+    "scenario": "A game asks if it can show your location to all the other players.",
+    "options": [
+      { "text": "I say yes, that way my friends can see where I am.", "correct": false, "feedback": "Sharing your location with strangers can be risky. Always ask an adult before turning that on." },
+      { "text": "I ask an adult for help before deciding.", "correct": true, "feedback": "Great choice! Your location is important personal information — an adult can help you decide safely." }
+    ]
+  },
+  {
+    "id": "is7",
+    "theme": "strangers",
+    "emoji": "🎮",
+    "scenario": "Someone you met in a game asks where you live. What do you do?",
+    "options": [
+      { "text": "I tell them my street, they seem nice.", "correct": false, "feedback": "Ask an adult for help! Never share your address with people you only know online, even if they seem friendly." },
+      { "text": "I don't answer and tell an adult what happened.", "correct": true, "feedback": "Well done! It's always safe not to answer that kind of question and to tell someone you trust." }
+    ]
+  },
+  {
+    "id": "is8",
+    "theme": "cyberbullying",
+    "emoji": "💬",
+    "scenario": "Someone sends you mean messages in a group chat.",
+    "options": [
+      { "text": "I send mean messages back so they stop.", "correct": false, "feedback": "Answering the same way usually makes things worse. It's better to keep the messages and show them to an adult." },
+      { "text": "I keep the messages and tell an adult I trust.", "correct": true, "feedback": "Excellent attitude! Telling an adult helps sort out the situation, and it's never your fault." }
+    ]
+  },
+  {
+    "id": "is9",
+    "theme": "cyberbullying",
+    "emoji": "😟",
+    "scenario": "You see a classmate being made fun of by others in an online game. It's not about you, but you see it happening.",
+    "options": [
+      { "text": "I just watch, it's not about me.", "correct": false, "feedback": "You can help! Telling an adult what you saw can make a real difference for the person being hurt." },
+      { "text": "I tell an adult what I saw happen to my classmate.", "correct": true, "feedback": "Well done! Helping someone in need, even just by telling an adult, is a brave and kind thing to do." }
+    ]
+  },
+  {
+    "id": "is10",
+    "theme": "scams",
+    "emoji": "🎁",
+    "scenario": "A flashing message pops up: \"Congratulations! You won a prize, click here now!\"",
+    "options": [
+      { "text": "I click right away, I don't want to miss the prize!", "correct": false, "feedback": "Things that seem too good to be true usually are traps. Real prizes never ask you to click fast in secret." },
+      { "text": "I ask an adult before clicking on anything.", "correct": true, "feedback": "Very sensible! Asking before clicking protects you from hidden traps and viruses." }
+    ]
+  },
+  {
+    "id": "is11",
+    "theme": "ads",
+    "emoji": "📢",
+    "scenario": "While you're playing, a big button appears saying \"PLAY NOW\" that isn't part of the real game, but looks very similar.",
+    "options": [
+      { "text": "I click it, it looks like the game's button.", "correct": false, "feedback": "Many ads copy the look of game buttons to trick you. Look carefully before clicking, or ask an adult for help." },
+      { "text": "I stop and check with an adult if it's an ad.", "correct": true, "feedback": "Good! Ads try to look like part of the game. Checking with an adult avoids clicks you didn't mean to make." }
+    ]
+  },
+  {
+    "id": "is12",
+    "theme": "deepfakes",
+    "emoji": "🎭",
+    "scenario": "You see a strange video where a famous person seems to say something that doesn't make sense at all.",
+    "options": [
+      { "text": "I believe it and share it with my friends right away.", "correct": false, "feedback": "Nowadays there are computer-made videos that look real but are made up. Before believing it, ask an adult." },
+      { "text": "I ask an adult if that video could really be true.", "correct": true, "feedback": "Well done! Not everything you see online is real — some videos are made by computers. Checking with an adult is what a good detective does." }
+    ]
+  }
+]

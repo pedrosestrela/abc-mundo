@@ -1,0 +1,12 @@
+{
+  "intro": "Du wirst einem Roboter beibringen, Kreise von Quadraten zu unterscheiden! Zeig ihm ein paar Formen und sag ihm, was sie sind.",
+  "trainInstructions": "Tippe für jede Form auf den richtigen Namen, um den Roboter zu unterrichten.",
+  "goodDataIntro": "Der Roboter hat aus deinen Antworten gelernt. Mal sehen, ob er neue Formen richtig erkennt!",
+  "goodDataExplain": "Der Roboter hat gut gelernt, weil du ihm richtige Beispiele gegeben hast. Gute Beispiele machen den Roboter schlau!",
+  "badDataIntro": "Jetzt trainieren wir einen anderen Roboter. Diesmal hat ein abgelenkter Helfer schon ein paar Formen beschriftet, bevor du kamst — und dabei versehentlich einige vertauscht!",
+  "badDataExplain": "Hast du es bemerkt? Ein paar Trainingsformen wurden vertauscht (nicht deine Schuld!). Deshalb war der Roboter verwirrt und hat diesmal mehr Fehler gemacht.",
+  "conclusion": "Das passiert bei jedem Roboter und Computer, der lernt: Wenn die Beispiele, die wir ihnen geben, falsch sind, lernen sie die falschen Dinge. Gute Beispiele machen schlaue Roboter!",
+  "circleLabel": "Kreis",
+  "squareLabel": "Quadrat",
+  "mislabeledNote": "🤖 bereits von einem Helfer beschriftet"
+}

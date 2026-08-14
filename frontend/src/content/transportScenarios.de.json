@@ -1,0 +1,67 @@
+[
+  {
+    "id": "school",
+    "icon": "🏫",
+    "prompt": "Zur Schule am Ende der Straße gehen.",
+    "modes": [
+      "walk",
+      "bike",
+      "car",
+      "plane"
+    ],
+    "correct": "walk",
+    "explanation": "Für sehr kurze Strecken ist Gehen schnell, gesund und braucht keine Energie!"
+  },
+  {
+    "id": "grandparents",
+    "icon": "🏘️",
+    "prompt": "Die Großeltern besuchen, die im Nachbarviertel wohnen.",
+    "modes": [
+      "bike",
+      "car",
+      "train",
+      "ship"
+    ],
+    "correct": "bike",
+    "explanation": "Für eine kurze Strecke in der Stadt ist das Fahrrad eine tolle Wahl: schnell und ohne Verschmutzung."
+  },
+  {
+    "id": "othercity",
+    "icon": "🏙️",
+    "prompt": "In eine andere Stadt im Land in den Urlaub fahren.",
+    "modes": [
+      "walk",
+      "train",
+      "car",
+      "ship"
+    ],
+    "correct": "train",
+    "explanation": "Um zwischen Städten zu reisen, ist der Zug bequem und schnell — zu Fuß oder mit dem Rad wäre das zu weit."
+  },
+  {
+    "id": "othercontinent",
+    "icon": "🌍",
+    "prompt": "Auf einen anderen Kontinent reisen, um ein neues Land kennenzulernen.",
+    "modes": [
+      "bike",
+      "car",
+      "train",
+      "plane"
+    ],
+    "correct": "plane",
+    "explanation": "Um Ozeane und Kontinente schnell zu überqueren, ist das Flugzeug das richtige Verkehrsmittel."
+  },
+  {
+    "id": "cargo",
+    "icon": "📦",
+    "prompt": "Einen Container voller Spielzeug auf einen anderen Kontinent schicken.",
+    "modes": [
+      "car",
+      "train",
+      "plane",
+      "ship"
+    ],
+    "correct": "ship",
+    "explanation": "Um sehr schwere Fracht über den Ozean zu transportieren, werden meist Schiffe genutzt — langsamer, aber sie transportieren viel mehr und verbrauchen weniger Energie pro Stück."
+  }
+]
