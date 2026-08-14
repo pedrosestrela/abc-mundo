@@ -1631,6 +1631,15 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+.page-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  font-size: 3rem;
+  animation: badge-pulse 1.4s ease infinite;
+}
+
 .globe-3d-loading {
   display: flex;
   align-items: center;
