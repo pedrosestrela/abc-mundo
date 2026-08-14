@@ -1,0 +1,114 @@
+[
+  {
+    "id": "nr-cao-parque",
+    "emoji": "🐕",
+    "facts": "🐕 Un cane. 🏞️ Nel parco. 🕐 Al mattino. 🎾 Ha trovato una palla.",
+    "questions": [
+      { "type": "who", "question": "Di chi parla questa notizia?", "options": ["Di un cane", "Di un gatto", "Di un bambino"], "correctIndex": 0 },
+      { "type": "what", "question": "Cosa è successo?", "options": ["Ha trovato una palla", "Si è perso", "Ha abbaiato forte"], "correctIndex": 0 },
+      { "type": "where", "question": "Dove è successa la storia?", "options": ["Nel parco", "A scuola", "A casa"], "correctIndex": 0 },
+      { "type": "when", "question": "Quando è successo?", "options": ["Al mattino", "Di notte", "Nel fine settimana"], "correctIndex": 0 }
+    ],
+    "factCheck": {
+      "statement": "Il cane era molto felice di aver trovato la palla.",
+      "isFact": false,
+      "explanation": "È una supposizione: la notizia dice che ha trovato una palla, ma non dice come si sentiva — stiamo solo immaginando che fosse felice."
+    }
+  },
+  {
+    "id": "nr-queques-escola",
+    "emoji": "🧁",
+    "facts": "👩‍🍳 Una cuoca. 🏫 A scuola. 🕒 Nel pomeriggio. 🧁 Ha fatto 50 muffin.",
+    "questions": [
+      { "type": "who", "question": "Di chi parla questa notizia?", "options": ["Di una cuoca", "Di un giardiniere", "Di un pompiere"], "correctIndex": 0 },
+      { "type": "what", "question": "Cosa è successo?", "options": ["Ha fatto 50 muffin", "Ha dipinto un quadro", "Ha lavato i piatti"], "correctIndex": 0 },
+      { "type": "where", "question": "Dove è successa la storia?", "options": ["A scuola", "In ospedale", "Nel parco"], "correctIndex": 0 },
+      { "type": "when", "question": "Quando è successo?", "options": ["Nel pomeriggio", "Molto presto al mattino", "Dopo mezzanotte"], "correctIndex": 0 }
+    ],
+    "factCheck": {
+      "statement": "I muffin erano deliziosi.",
+      "isFact": false,
+      "explanation": "È una supposizione: sappiamo che ha fatto 50 muffin, ma nessuno ha ancora detto che sapore avevano."
+    }
+  },
+  {
+    "id": "nr-gato-arvore",
+    "emoji": "🐱",
+    "facts": "🚒 I pompieri. 🌳 Su un albero alto. 🕐 A mezzogiorno. 🐱 Hanno salvato un gatto.",
+    "questions": [
+      { "type": "who", "question": "Di chi parla questa notizia?", "options": ["Dei pompieri", "Dei maestri", "Dei medici"], "correctIndex": 0 },
+      { "type": "what", "question": "Cosa è successo?", "options": ["Hanno salvato un gatto", "Hanno spento un incendio", "Hanno piantato alberi"], "correctIndex": 0 },
+      { "type": "where", "question": "Dove è successa la storia?", "options": ["Su un albero alto", "Dentro un'auto", "Sul tetto di una casa"], "correctIndex": 0 },
+      { "type": "when", "question": "Quando è successo?", "options": ["A mezzogiorno", "All'alba", "A mezzanotte"], "correctIndex": 0 }
+    ],
+    "factCheck": {
+      "statement": "Il gatto aveva paura perché soffriva di vertigini.",
+      "isFact": false,
+      "explanation": "È una supposizione: sappiamo che il gatto era su un albero alto, ma nessuno ha detto perché, né come si sentiva il gatto."
+    }
+  },
+  {
+    "id": "nr-tartarugas-praia",
+    "emoji": "🐢",
+    "facts": "👧👦 Un gruppo di bambini. 🏖️ Sulla spiaggia. 🌅 Al tramonto. 🐢 Ha liberato delle tartarughe appena nate.",
+    "questions": [
+      { "type": "who", "question": "Di chi parla questa notizia?", "options": ["Di un gruppo di bambini", "Di un gruppo di pirati", "Di un gruppo di pescatori"], "correctIndex": 0 },
+      { "type": "what", "question": "Cosa è successo?", "options": ["Ha liberato delle tartarughe appena nate", "Ha costruito un castello di sabbia", "Ha raccolto conchiglie"], "correctIndex": 0 },
+      { "type": "where", "question": "Dove è successa la storia?", "options": ["Sulla spiaggia", "Su una montagna", "Vicino al fiume"], "correctIndex": 0 },
+      { "type": "when", "question": "Quando è successo?", "options": ["Al tramonto", "All'alba", "Nel cuore della notte"], "correctIndex": 0 }
+    ],
+    "factCheck": {
+      "statement": "Le tartarughe erano molto contente della loro libertà.",
+      "isFact": false,
+      "explanation": "È una supposizione: le tartarughe sono state liberate, ma nessuno può sapere davvero come si sente un animale."
+    }
+  },
+  {
+    "id": "nr-cenouras-campo",
+    "emoji": "🥕",
+    "facts": "👨‍🌾 Un agricoltore. 🌾 Nel campo. 🌧️ Dopo la pioggia. 🥕 Ha raccolto tante carote.",
+    "questions": [
+      { "type": "who", "question": "Di chi parla questa notizia?", "options": ["Di un agricoltore", "Di un pescatore", "Di un pilota"], "correctIndex": 0 },
+      { "type": "what", "question": "Cosa è successo?", "options": ["Ha raccolto tante carote", "Ha piantato fiori", "Ha venduto uova"], "correctIndex": 0 },
+      { "type": "where", "question": "Dove è successa la storia?", "options": ["Nel campo", "Al mercato", "In città"], "correctIndex": 0 },
+      { "type": "when", "question": "Quando è successo?", "options": ["Dopo la pioggia", "Durante una tempesta di neve", "Prima dell'inverno"], "correctIndex": 0 }
+    ],
+    "factCheck": {
+      "statement": "L'agricoltore ha raccolto esattamente 200 carote.",
+      "isFact": false,
+      "explanation": "È una supposizione: la notizia dice 'tante carote', ma non dà il numero esatto — non sappiamo se erano 200 o un'altra quantità."
+    }
+  },
+  {
+    "id": "nr-astronauta-espaco",
+    "emoji": "🛰️",
+    "facts": "👩‍🚀 Un'astronauta. 🛰️ Sulla stazione spaziale. 📅 Lunedì. 📸 Ha scattato una foto della Terra.",
+    "questions": [
+      { "type": "who", "question": "Di chi parla questa notizia?", "options": ["Di un'astronauta", "Di una ballerina", "Di una scienziata in laboratorio"], "correctIndex": 0 },
+      { "type": "what", "question": "Cosa è successo?", "options": ["Ha scattato una foto della Terra", "È atterrata sulla Luna", "Ha riparato un razzo"], "correctIndex": 0 },
+      { "type": "where", "question": "Dove è successa la storia?", "options": ["Sulla stazione spaziale", "In un aeroporto", "In un osservatorio sulla Terra"], "correctIndex": 0 },
+      { "type": "when", "question": "Quando è successo?", "options": ["Lunedì", "Il giorno di Natale", "L'ultimo giorno dell'anno"], "correctIndex": 0 }
+    ],
+    "factCheck": {
+      "statement": "Un'astronauta ha scattato una foto della Terra lunedì.",
+      "isFact": true,
+      "explanation": "Questo è un fatto: è esattamente ciò che dice la notizia, non serve immaginare nulla."
+    }
+  },
+  {
+    "id": "nr-biblioteca-escola",
+    "emoji": "📚",
+    "facts": "👨‍🏫 Un maestro. 🏫 In classe. 📅 Venerdì. 📚 Ha aperto una nuova biblioteca.",
+    "questions": [
+      { "type": "who", "question": "Di chi parla questa notizia?", "options": ["Di un maestro", "Di un bibliotecario di un'altra città", "Di un autore famoso"], "correctIndex": 0 },
+      { "type": "what", "question": "Cosa è successo?", "options": ["Ha aperto una nuova biblioteca", "Ha scritto un libro", "Ha organizzato un concerto"], "correctIndex": 0 },
+      { "type": "where", "question": "Dove è successa la storia?", "options": ["In classe", "In palestra", "Nel cortile della scuola"], "correctIndex": 0 },
+      { "type": "when", "question": "Quando è successo?", "options": ["Venerdì", "Durante le vacanze estive", "Il giorno di Natale"], "correctIndex": 0 }
+    ],
+    "factCheck": {
+      "statement": "Un maestro ha aperto una nuova biblioteca in classe, venerdì.",
+      "isFact": true,
+      "explanation": "Questo è un fatto: è esattamente ciò che dice la notizia, non serve indovinare nulla."
+    }
+  }
+]

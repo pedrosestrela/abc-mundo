@@ -602,6 +602,83 @@ export function completeThinkingExercise(profileName, exerciseId) {
   return all[name];
 }
 
+// --- Redação ABC (Newsroom) ---
+// Tracks which news scenario ids the child has fully completed (all
+// who/what/where/when questions plus the fact-vs-assumption question),
+// mirroring completeThinkingExercise's shape.
+
+const COMPLETED_NEWSROOM_KEY = "abcmundo.completedNewsroom";
+
+function loadCompletedNewsroom() {
+  try {
+    const raw = localStorage.getItem(COMPLETED_NEWSROOM_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveCompletedNewsroom(all) {
+  try {
+    localStorage.setItem(COMPLETED_NEWSROOM_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getCompletedNewsroom(profileName) {
+  const all = loadCompletedNewsroom();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function completeNewsroomScenario(profileName, scenarioId) {
+  const name = profileName || "Explorer";
+  const all = loadCompletedNewsroom();
+  const done = new Set(all[name] || []);
+  done.add(scenarioId);
+  all[name] = Array.from(done);
+  saveCompletedNewsroom(all);
+  return all[name];
+}
+
+// --- Academia da Comunicação (Communication Academy) ---
+// Tracks which instruction-sequencing challenge ids the child has solved
+// (given the robot a fully clear, correctly ordered set of steps).
+
+const COMPLETED_ACADEMY_KEY = "abcmundo.completedAcademy";
+
+function loadCompletedAcademy() {
+  try {
+    const raw = localStorage.getItem(COMPLETED_ACADEMY_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveCompletedAcademy(all) {
+  try {
+    localStorage.setItem(COMPLETED_ACADEMY_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getCompletedAcademy(profileName) {
+  const all = loadCompletedAcademy();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function completeAcademyChallenge(profileName, challengeId) {
+  const name = profileName || "Explorer";
+  const all = loadCompletedAcademy();
+  const done = new Set(all[name] || []);
+  done.add(challengeId);
+  all[name] = Array.from(done);
+  saveCompletedAcademy(all);
+  return all[name];
+}
+
 // --- Diário da Natureza (Nature Diary) ---
 // An ongoing, time-based observation log the child adds to over days/weeks:
 // plants, birds, insects, weather, seasons. Each entry is either a drawing

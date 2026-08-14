@@ -1,0 +1,50 @@
+[
+  {
+    "id": "cm-sandes",
+    "emoji": "🥪",
+    "task": "Spiega al robot come preparare un panino con formaggio e prosciutto.",
+    "steps": [
+      { "id": "cm-sandes-1", "precise": "Prendi due fette di pane.", "vague": "Prendi del pane.", "vagueQuestion": "Quante fette? Che tipo di pane?" },
+      { "id": "cm-sandes-2", "precise": "Metti una fetta di formaggio e una fetta di prosciutto su una fetta di pane.", "vague": "Metti il formaggio.", "vagueQuestion": "Dove metto il formaggio? Solo formaggio, o anche altro?" },
+      { "id": "cm-sandes-3", "precise": "Copri con l'altra fetta di pane e taglia il panino a metà.", "vague": "Chiudi il panino.", "vagueQuestion": "Come lo chiudo? E lo taglio dopo, o no?" }
+    ],
+    "distractors": ["Accendi la televisione.", "Vai a giocare fuori."],
+    "successMessage": "Il robot ha fatto il panino perfetto! 🥪✅"
+  },
+  {
+    "id": "cm-brinquedo",
+    "emoji": "🧸",
+    "task": "Spiega al robot come riordinare un giocattolo.",
+    "steps": [
+      { "id": "cm-brinquedo-1", "precise": "Trova la scatola dei giocattoli.", "vague": "Vai a prendere la scatola.", "vagueQuestion": "Quale scatola? Dov'è?" },
+      { "id": "cm-brinquedo-2", "precise": "Raccogli il giocattolo che è per terra.", "vague": "Prendi il giocattolo.", "vagueQuestion": "Quale giocattolo? Dov'è?" },
+      { "id": "cm-brinquedo-3", "precise": "Metti il giocattolo dentro la scatola e chiudi il coperchio.", "vague": "Riordina il giocattolo.", "vagueQuestion": "Dove lo metto? Chiudo il coperchio o no?" }
+    ],
+    "distractors": ["Lavati i denti.", "Metti il cappotto."],
+    "successMessage": "Il robot ha riordinato il giocattolo alla perfezione! 🧸✅"
+  },
+  {
+    "id": "cm-dentes",
+    "emoji": "🦷",
+    "task": "Spiega al robot come lavarsi i denti.",
+    "steps": [
+      { "id": "cm-dentes-1", "precise": "Metti il dentifricio sullo spazzolino.", "vague": "Usa lo spazzolino.", "vagueQuestion": "Metto prima qualcosa sullo spazzolino?" },
+      { "id": "cm-dentes-2", "precise": "Spazzola tutti i denti con movimenti delicati, per due minuti.", "vague": "Lavati i denti.", "vagueQuestion": "Per quanto tempo? Come devo muovere lo spazzolino?" },
+      { "id": "cm-dentes-3", "precise": "Sciacqua la bocca con acqua e pulisci lo spazzolino.", "vague": "Lava tutto.", "vagueQuestion": "Lavo cosa? La bocca, lo spazzolino, o entrambi?" }
+    ],
+    "distractors": ["Rifai il letto.", "Fai colazione."],
+    "successMessage": "Il robot si è lavato i denti alla perfezione! 🦷✨"
+  },
+  {
+    "id": "cm-casaco",
+    "emoji": "🧥",
+    "task": "Spiega al robot come indossare un cappotto.",
+    "steps": [
+      { "id": "cm-casaco-1", "precise": "Trova il cappotto appeso all'attaccapanni.", "vague": "Vai a prendere il cappotto.", "vagueQuestion": "Dov'è il cappotto?" },
+      { "id": "cm-casaco-2", "precise": "Infila un braccio in ciascuna manica del cappotto.", "vague": "Indossa il cappotto.", "vagueQuestion": "Come lo indosso? Un braccio alla volta, o entrambi insieme?" },
+      { "id": "cm-casaco-3", "precise": "Chiudi la cerniera o i bottoni del cappotto.", "vague": "Chiudi il cappotto.", "vagueQuestion": "Con cosa lo chiudo? Cerniera, bottoni, o velcro?" }
+    ],
+    "distractors": ["Riordina i giocattoli.", "Fai colazione."],
+    "successMessage": "Il robot ha indossato il cappotto alla perfezione! 🧥✅"
+  }
+]

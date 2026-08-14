@@ -1,0 +1,114 @@
+[
+  {
+    "id": "nr-cao-parque",
+    "emoji": "🐕",
+    "facts": "🐕 一只狗。 🏞️ 在公园里。 🕐 早上。 🎾 找到了一个球。",
+    "questions": [
+      { "type": "who", "question": "这个故事的主角是谁？", "options": ["一只狗", "一只猫", "一个小孩"], "correctIndex": 0 },
+      { "type": "what", "question": "发生了什么事？", "options": ["找到了一个球", "迷路了", "大声叫了起来"], "correctIndex": 0 },
+      { "type": "where", "question": "故事发生在哪里？", "options": ["在公园里", "在学校里", "在家里"], "correctIndex": 0 },
+      { "type": "when", "question": "这是什么时候发生的？", "options": ["早上", "晚上", "周末"], "correctIndex": 0 }
+    ],
+    "factCheck": {
+      "statement": "那只狗找到球后非常开心。",
+      "isFact": false,
+      "explanation": "这是一个推测：故事说它找到了一个球，但没有说它的感受——我们只是想象它很开心。"
+    }
+  },
+  {
+    "id": "nr-queques-escola",
+    "emoji": "🧁",
+    "facts": "👩‍🍳 一位厨师。 🏫 在学校。 🕒 下午。 🧁 做了50个纸杯蛋糕。",
+    "questions": [
+      { "type": "who", "question": "这个故事的主角是谁？", "options": ["一位厨师", "一位园丁", "一位消防员"], "correctIndex": 0 },
+      { "type": "what", "question": "发生了什么事？", "options": ["做了50个纸杯蛋糕", "画了一幅画", "洗了盘子"], "correctIndex": 0 },
+      { "type": "where", "question": "故事发生在哪里？", "options": ["在学校", "在医院", "在公园"], "correctIndex": 0 },
+      { "type": "when", "question": "这是什么时候发生的？", "options": ["下午", "清晨很早", "午夜之后"], "correctIndex": 0 }
+    ],
+    "factCheck": {
+      "statement": "那些纸杯蛋糕非常美味。",
+      "isFact": false,
+      "explanation": "这是一个推测：我们知道她做了50个纸杯蛋糕，但还没有人说过它们的味道如何。"
+    }
+  },
+  {
+    "id": "nr-gato-arvore",
+    "emoji": "🐱",
+    "facts": "🚒 消防员。 🌳 在一棵高树上。 🕐 中午。 🐱 救了一只猫。",
+    "questions": [
+      { "type": "who", "question": "这个故事的主角是谁？", "options": ["消防员", "老师", "医生"], "correctIndex": 0 },
+      { "type": "what", "question": "发生了什么事？", "options": ["救了一只猫", "扑灭了一场火", "种了树"], "correctIndex": 0 },
+      { "type": "where", "question": "故事发生在哪里？", "options": ["在一棵高树上", "在一辆车里", "在房子的屋顶上"], "correctIndex": 0 },
+      { "type": "when", "question": "这是什么时候发生的？", "options": ["中午", "日出时", "午夜"], "correctIndex": 0 }
+    ],
+    "factCheck": {
+      "statement": "那只猫很害怕，因为它有恐高症。",
+      "isFact": false,
+      "explanation": "这是一个推测：我们知道猫在一棵高树上，但没有人说过原因，也没人知道猫当时的感受。"
+    }
+  },
+  {
+    "id": "nr-tartarugas-praia",
+    "emoji": "🐢",
+    "facts": "👧👦 一群小孩。 🏖️ 在海滩上。 🌅 日落时分。 🐢 放生了小海龟。",
+    "questions": [
+      { "type": "who", "question": "这个故事的主角是谁？", "options": ["一群小孩", "一群海盗", "一群渔夫"], "correctIndex": 0 },
+      { "type": "what", "question": "发生了什么事？", "options": ["放生了小海龟", "建了一座沙堡", "捡了贝壳"], "correctIndex": 0 },
+      { "type": "where", "question": "故事发生在哪里？", "options": ["在海滩上", "在山上", "在河边"], "correctIndex": 0 },
+      { "type": "when", "question": "这是什么时候发生的？", "options": ["日落时分", "日出时分", "深夜"], "correctIndex": 0 }
+    ],
+    "factCheck": {
+      "statement": "小海龟们对获得自由感到非常高兴。",
+      "isFact": false,
+      "explanation": "这是一个推测：小海龟被放生了，但没有人能真正知道动物的感受。"
+    }
+  },
+  {
+    "id": "nr-cenouras-campo",
+    "emoji": "🥕",
+    "facts": "👨‍🌾 一位农夫。 🌾 在田里。 🌧️ 雨后。 🥕 收获了很多胡萝卜。",
+    "questions": [
+      { "type": "who", "question": "这个故事的主角是谁？", "options": ["一位农夫", "一位渔夫", "一位飞行员"], "correctIndex": 0 },
+      { "type": "what", "question": "发生了什么事？", "options": ["收获了很多胡萝卜", "种了花", "卖了鸡蛋"], "correctIndex": 0 },
+      { "type": "where", "question": "故事发生在哪里？", "options": ["在田里", "在市场", "在城市里"], "correctIndex": 0 },
+      { "type": "when", "question": "这是什么时候发生的？", "options": ["雨后", "在暴风雪中", "冬天之前"], "correctIndex": 0 }
+    ],
+    "factCheck": {
+      "statement": "那位农夫恰好收获了200根胡萝卜。",
+      "isFact": false,
+      "explanation": "这是一个推测：故事说“很多胡萝卜”，但没有说出确切数字——我们不知道是不是正好200根。"
+    }
+  },
+  {
+    "id": "nr-astronauta-espaco",
+    "emoji": "🛰️",
+    "facts": "👩‍🚀 一位宇航员。 🛰️ 在空间站里。 📅 星期一。 📸 拍了一张地球的照片。",
+    "questions": [
+      { "type": "who", "question": "这个故事的主角是谁？", "options": ["一位宇航员", "一位舞蹈演员", "一位在实验室的科学家"], "correctIndex": 0 },
+      { "type": "what", "question": "发生了什么事？", "options": ["拍了一张地球的照片", "在月球上着陆了", "修好了一枚火箭"], "correctIndex": 0 },
+      { "type": "where", "question": "故事发生在哪里？", "options": ["在空间站里", "在机场", "在地球上的天文台"], "correctIndex": 0 },
+      { "type": "when", "question": "这是什么时候发生的？", "options": ["星期一", "圣诞节那天", "一年的最后一天"], "correctIndex": 0 }
+    ],
+    "factCheck": {
+      "statement": "一位宇航员在星期一拍了一张地球的照片。",
+      "isFact": true,
+      "explanation": "这是一个事实：故事里正是这么写的，我们不需要去想象任何事情。"
+    }
+  },
+  {
+    "id": "nr-biblioteca-escola",
+    "emoji": "📚",
+    "facts": "👨‍🏫 一位老师。 🏫 在教室里。 📅 星期五。 📚 开设了一间新图书馆。",
+    "questions": [
+      { "type": "who", "question": "这个故事的主角是谁？", "options": ["一位老师", "另一个城市的图书管理员", "一位著名作家"], "correctIndex": 0 },
+      { "type": "what", "question": "发生了什么事？", "options": ["开设了一间新图书馆", "写了一本书", "组织了一场音乐会"], "correctIndex": 0 },
+      { "type": "where", "question": "故事发生在哪里？", "options": ["在教室里", "在体育馆", "在学校操场"], "correctIndex": 0 },
+      { "type": "when", "question": "这是什么时候发生的？", "options": ["星期五", "暑假期间", "圣诞节那天"], "correctIndex": 0 }
+    ],
+    "factCheck": {
+      "statement": "一位老师在星期五于教室里开设了一间新图书馆。",
+      "isFact": true,
+      "explanation": "这是一个事实：故事里正是这么写的，我们不需要去猜测任何事情。"
+    }
+  }
+]

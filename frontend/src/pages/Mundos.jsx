@@ -145,6 +145,7 @@ const GROUPS = [
       { to: "/whys", emoji: "❓", nav: "whys", sub: "sub_whys" },
       { to: "/computing", emoji: "💻", nav: "computing", sub: "sub_computing" },
       { to: "/thinking", emoji: "🧠", nav: "thinking", sub: "sub_thinking" },
+      { to: "/communication", emoji: "🗣️", nav: "communication", sub: "sub_communication" },
     ],
   },
   {
