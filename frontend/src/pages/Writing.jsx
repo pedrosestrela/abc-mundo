@@ -5,6 +5,7 @@ import { getLangPair, getProfile, recordSkillEvent, pingProgress } from "../stor
 import SpeakButton from "../components/SpeakButton.jsx";
 import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
 import HelpButton from "../components/HelpButton.jsx";
+import { getStrokes } from "../content/strokeOrder.js";
 
 const DIGITS = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
@@ -15,6 +16,44 @@ const LETTER_MODES = ["upper", "lower", "hand", "print"];
 // `guideChar` rendered as a big low-opacity background letter for the child
 // to trace over. Touch/pointer handling mirrors the original exactly so it
 // keeps working reliably on iPad.
+// Renders faint directional guide lines (with an arrowhead at the end of
+// each stroke and a small number marking its start) so the child can see
+// which way to draw before/while tracing. Purely decorative — sits behind
+// the drawing canvas and never intercepts pointer events.
+function StrokeGuide({ char }) {
+  const strokes = getStrokes(char);
+  if (!strokes || strokes.length === 0) return null;
+
+  return (
+    <svg
+      className="writing-stroke-guide"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+      aria-hidden="true"
+    >
+      {strokes.map((points, i) => {
+        const d = points.map((p, idx) => `${idx === 0 ? "M" : "L"}${p[0]},${p[1]}`).join(" ");
+        const [ex, ey] = points[points.length - 1];
+        const [px, py] = points[points.length - 2] || points[0];
+        const angle = (Math.atan2(ey - py, ex - px) * 180) / Math.PI;
+        const [sx, sy] = points[0];
+        return (
+          <g key={i}>
+            <path d={d} className="writing-stroke-line" />
+            <g transform={`translate(${ex}, ${ey}) rotate(${angle})`}>
+              <polygon points="0,0 -6,-3 -6,3" className="writing-stroke-arrow" />
+            </g>
+            <circle cx={sx} cy={sy} r="4.5" className="writing-stroke-num-bg" />
+            <text x={sx} y={sy} className="writing-stroke-num" textAnchor="middle" dominantBaseline="central">
+              {i + 1}
+            </text>
+          </g>
+        );
+      })}
+    </svg>
+  );
+}
+
 function TraceCanvas({ guideChar, guideFontFamily, guideStroke, resetKey }) {
   const { t } = useTranslation();
   const canvasRef = useRef(null);
@@ -84,6 +123,7 @@ function TraceCanvas({ guideChar, guideFontFamily, guideStroke, resetKey }) {
       >
         {guideChar}
       </div>
+      <StrokeGuide char={guideChar} />
       <canvas
         ref={canvasRef}
         className="writing-canvas"
