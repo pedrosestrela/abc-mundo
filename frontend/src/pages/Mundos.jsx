@@ -13,6 +13,7 @@ const GROUPS = [
       { to: "/reading", emoji: "📖", nav: "reading", sub: "sub_reading" },
       { to: "/phrases", emoji: "💬", nav: "phrases", sub: "sub_phrases" },
       { to: "/stories", emoji: "📚", nav: "stories", sub: "sub_stories" },
+      { to: "/rhymes", emoji: "🎭", nav: "rhymes", sub: "sub_rhymes" },
     ],
   },
   {

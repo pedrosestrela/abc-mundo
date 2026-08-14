@@ -710,6 +710,16 @@ body {
   cursor: pointer;
 }
 
+.rhyme-card {
+  cursor: default;
+}
+
+.rhyme-card .story-page-text {
+  white-space: pre-line;
+  max-width: 420px;
+  text-align: center;
+}
+
 .story-card-emoji {
   font-size: 3rem;
 }

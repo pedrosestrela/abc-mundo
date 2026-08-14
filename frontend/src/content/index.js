@@ -185,6 +185,14 @@ import adLiteracyFr from "./adLiteracy.fr.json";
 import adLiteracyZh from "./adLiteracy.zh.json";
 import adLiteracyEs from "./adLiteracy.es.json";
 import adLiteracyIt from "./adLiteracy.it.json";
+import rhymesPt from "./rhymes.pt.json";
+import rhymesEn from "./rhymes.en.json";
+import rhymesDe from "./rhymes.de.json";
+import rhymesFr from "./rhymes.fr.json";
+import rhymesZh from "./rhymes.zh.json";
+import rhymesEs from "./rhymes.es.json";
+import rhymesIt from "./rhymes.it.json";
+
 import thinkingPt from "./thinking.pt.json";
 import thinkingEn from "./thinking.en.json";
 import thinkingDe from "./thinking.de.json";
@@ -225,6 +233,7 @@ const LEMONADE_STAND = { pt: lemonadeStandPt, en: lemonadeStandEn, de: lemonadeS
 const SHOPPING = { pt: shoppingPt, en: shoppingEn, de: shoppingDe, fr: shoppingFr, zh: shoppingZh, es: shoppingEs, it: shoppingIt };
 const AD_LITERACY = { pt: adLiteracyPt, en: adLiteracyEn, de: adLiteracyDe, fr: adLiteracyFr, zh: adLiteracyZh, es: adLiteracyEs, it: adLiteracyIt };
 const THINKING = { pt: thinkingPt, en: thinkingEn, de: thinkingDe, fr: thinkingFr, zh: thinkingZh, es: thinkingEs, it: thinkingIt };
+const RHYMES = { pt: rhymesPt, en: rhymesEn, de: rhymesDe, fr: rhymesFr, zh: rhymesZh, es: rhymesEs, it: rhymesIt };
 const HOUSE_SYSTEMS = { pt: houseSystemsPt, en: houseSystemsEn, de: houseSystemsDe, fr: houseSystemsFr, zh: houseSystemsZh, es: houseSystemsEs, it: houseSystemsIt };
 const CITY_SYSTEMS = { pt: citySystemsPt, en: citySystemsEn, de: citySystemsDe, fr: citySystemsFr, zh: citySystemsZh, es: citySystemsEs, it: citySystemsIt };
 
@@ -330,6 +339,10 @@ export function getHouseSystems(langCode) {
 
 export function getCitySystems(langCode) {
   return CITY_SYSTEMS[langCode] || [];
+}
+
+export function getRhymes(langCode) {
+  return RHYMES[langCode] || RHYMES.pt;
 }
 
 // Countries are language-agnostic in shape (name/fact are per-language

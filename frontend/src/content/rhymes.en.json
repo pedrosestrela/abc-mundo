@@ -1,0 +1,104 @@
+{
+  "lengalengas": [
+    {
+      "id": "uni-duni-te",
+      "title": "Eeny, Meeny, Miny, Moe",
+      "emoji": "🎈",
+      "text": "Eeny, meeny, miny, moe,\nCatch a tiger by the toe,\nIf he hollers let him go,\nEeny, meeny, miny, moe!"
+    },
+    {
+      "id": "chuva-vai-embora",
+      "title": "Rain, Rain, Go Away",
+      "emoji": "🌧️",
+      "text": "Rain, rain, go away,\nCome again another day,\nLittle children want to play,\nRain, rain, go away!"
+    },
+    {
+      "id": "um-dois-tres",
+      "title": "One, Two, Three",
+      "emoji": "🔢",
+      "text": "One, two, three,\nFour, five, six,\nSeven, eight, nine, ten,\nNow let's count again!"
+    },
+    {
+      "id": "la-vai-o-rato",
+      "title": "Away Goes the Mouse",
+      "emoji": "🐭",
+      "text": "Away goes the mouse down the street,\nWith his tail bouncing neat,\nRun, run, fast and quick,\nThe kittens chase him double-quick!"
+    },
+    {
+      "id": "uma-galinha",
+      "title": "One Little Hen",
+      "emoji": "🐔",
+      "text": "One little hen in the yard,\nLaying eggs, working hard,\nOne, two, three, four, five,\nCount the eggs while they arrive!"
+    }
+  ],
+  "travalinguas": [
+    {
+      "id": "tt-1",
+      "title": "She Sells Seashells",
+      "emoji": "🐚",
+      "text": "She sells seashells by the seashore."
+    },
+    {
+      "id": "tt-2",
+      "title": "Peter Piper",
+      "emoji": "🌶️",
+      "text": "Peter Piper picked a peck of pickled peppers."
+    },
+    {
+      "id": "tt-3",
+      "title": "How Much Wood",
+      "emoji": "🪵",
+      "text": "How much wood would a woodchuck chuck if a woodchuck could chuck wood?"
+    },
+    {
+      "id": "tt-4",
+      "title": "Fuzzy Wuzzy",
+      "emoji": "🐻",
+      "text": "Fuzzy Wuzzy was a bear, Fuzzy Wuzzy had no hair."
+    },
+    {
+      "id": "tt-5",
+      "title": "Betty Botter",
+      "emoji": "🧈",
+      "text": "Betty Botter bought some butter, but she said the butter's bitter."
+    }
+  ],
+  "rimas": [
+    {
+      "id": "gato-manhoso",
+      "title": "The Sneaky Cat",
+      "emoji": "🐱",
+      "text": "My cat is quite the sneaky one,\nSleeps all day, avoids the sun,\nAt night he jumps up, quick and light,\nTo hunt the whole wide world at night!"
+    },
+    {
+      "id": "sol-brilhante",
+      "title": "The Bright Sun",
+      "emoji": "☀️",
+      "text": "The sun wakes up at break of day,\nPaints the sky in golden ray,\nWarms the earth and every hill,\nAnd smiles down on us until."
+    },
+    {
+      "id": "chuva-amiga",
+      "title": "The Friendly Rain",
+      "emoji": "🌦️",
+      "text": "Rain is tapping on the glass,\nTip, tap, tip, so soft and slow,\nWaters garden, waters grass,\nThen off to somewhere new to go."
+    },
+    {
+      "id": "familia-feliz",
+      "title": "My Family",
+      "emoji": "👨‍👩‍👧‍👦",
+      "text": "Mom and dad and sister too,\nTogether make my family true,\nA hug at home, I'm never alone,\nThere's no place better than my home."
+    },
+    {
+      "id": "jardim-flores",
+      "title": "The Flower Garden",
+      "emoji": "🌷",
+      "text": "In the garden, colors bloom,\nRoses, tulips, sweet perfume,\nButterflies dance flower to flower,\nWhile bees hum on for hours."
+    },
+    {
+      "id": "lua-boa-noite",
+      "title": "Good Night, Moon",
+      "emoji": "🌙",
+      "text": "Good night, moon so round and bright,\nLighting up the stars tonight,\nSleep the earth, sleep the sand,\nUntil the sun's new day at hand."
+    }
+  ]
+}

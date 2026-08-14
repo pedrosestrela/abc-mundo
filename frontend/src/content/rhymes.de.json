@@ -1,0 +1,104 @@
+{
+  "lengalengas": [
+    {
+      "id": "uni-duni-te",
+      "title": "Ene Mene Muh",
+      "emoji": "🎈",
+      "text": "Ene, mene, muh,\nUnd raus bist du,\nMit dem Pferdefuß,\nEne, mene, muh!"
+    },
+    {
+      "id": "chuva-vai-embora",
+      "title": "Regen, Geh Vorbei",
+      "emoji": "🌧️",
+      "text": "Regen, Regen, geh vorbei,\nKomm ein andermal herbei,\nKinder wollen draußen spielen,\nRegen, Regen, lass es sein!"
+    },
+    {
+      "id": "um-dois-tres",
+      "title": "Eins, Zwei, Drei",
+      "emoji": "🔢",
+      "text": "Eins, zwei, drei,\nVier, fünf, sechs herbei,\nSieben, acht, neun, zehn,\nJetzt zählen wir nochmal, gehn wir!"
+    },
+    {
+      "id": "la-vai-o-rato",
+      "title": "Die Maus Läuft Fort",
+      "emoji": "🐭",
+      "text": "Die kleine Maus läuft durch die Gasse,\nMit dem Schwänzchen, welch ein Spaß,\nLauf, lauf, schnell und munter,\nDie Kätzchen jagen hinterdrunter!"
+    },
+    {
+      "id": "uma-galinha",
+      "title": "Ein Kleines Huhn",
+      "emoji": "🐔",
+      "text": "Ein kleines Huhn im Hof so froh,\nLegt die Eier, immerzu so,\nEins, zwei, drei, vier, fünf,\nZähl die Eier, was für ein Sinn!"
+    }
+  ],
+  "travalinguas": [
+    {
+      "id": "tt-1",
+      "title": "Fischers Fritz",
+      "emoji": "🐟",
+      "text": "Fischers Fritz fischt frische Fische, frische Fische fischt Fischers Fritz."
+    },
+    {
+      "id": "tt-2",
+      "title": "Blaukraut",
+      "emoji": "🥬",
+      "text": "Blaukraut bleibt Blaukraut und Brautkleid bleibt Brautkleid."
+    },
+    {
+      "id": "tt-3",
+      "title": "Die Schwalben",
+      "emoji": "🐦",
+      "text": "Zwischen zwei Zwetschgenzweigen sitzen zwei zwitschernde Schwalben."
+    },
+    {
+      "id": "tt-4",
+      "title": "Der Zwetschgenzweig",
+      "emoji": "🍑",
+      "text": "Zwanzig Zwerge zeigen zwanzig Zwetschgenzweige."
+    },
+    {
+      "id": "tt-5",
+      "title": "Der Krabbenkorb",
+      "emoji": "🦀",
+      "text": "In Ulm und um Ulm und um Ulm herum."
+    }
+  ],
+  "rimas": [
+    {
+      "id": "gato-manhoso",
+      "title": "Die Schlaue Katze",
+      "emoji": "🐱",
+      "text": "Meine Katze ist sehr schlau,\nSchläft den ganzen Tag genau,\nNachts dann springt sie, leicht und schnell,\nJagt die Welt im Mondlicht hell!"
+    },
+    {
+      "id": "sol-brilhante",
+      "title": "Die Helle Sonne",
+      "emoji": "☀️",
+      "text": "Die Sonne wacht am Morgen auf,\nMalt den Himmel golden drauf,\nWärmt die Erde, Berg und Tal,\nUnd lächelt uns zu jedes Mal."
+    },
+    {
+      "id": "chuva-amiga",
+      "title": "Der Freundliche Regen",
+      "emoji": "🌦️",
+      "text": "Regen klopft ans Fensterglas,\nTropf, tropf, tropf, ganz sacht und sanft,\nGießt den Garten, gießt das Gras,\nDann zieht er weiter, unverhangen."
+    },
+    {
+      "id": "familia-feliz",
+      "title": "Meine Familie",
+      "emoji": "👨‍👩‍👧‍👦",
+      "text": "Mama, Papa, Bruder mein,\nZusammen sind wir groß und klein,\nEine Umarmung, nie allein,\nZu Hause ist's am schönsten sein."
+    },
+    {
+      "id": "jardim-flores",
+      "title": "Der Blumengarten",
+      "emoji": "🌷",
+      "text": "Im Garten blühen tausend Farben,\nRosen, Tulpen, bunte Gaben,\nSchmetterlinge tanzen leicht,\nUnd Bienen summen, bis es reicht."
+    },
+    {
+      "id": "lua-boa-noite",
+      "title": "Gute Nacht, Mond",
+      "emoji": "🌙",
+      "text": "Gute Nacht, du runder Mond,\nZündest Sterne, die dort wohnen,\nSchläft die Erde, schläft der Sand,\nBis die Sonne kommt ins Land."
+    }
+  ]
+}

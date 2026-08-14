@@ -5,7 +5,7 @@ const resources = {
   pt: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Início", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Leitura", phrases: "Frases", songs: "Canções", game: "Jogo", piano: "Piano", music: "Música", language: "Idiomas" , stories: "Histórias" , math: "Matemática" , financial: "Dinheiro" , parents: "Pais" , achievements: "Conquistas" , phonics: "Sons" , missions: "Missões" , world: "Mundo" , detective: "Detetive" , whys: "Porquês" , robots: "Robôs" , art: "Ateliê" , science: "Ciência" , history: "História" , lifeskills: "Vida"  , computing: "Cibercidade" , city: "Como Funciona?" , mundos: "Mundos" , thinking: "Pensar", achievementsNav: "Eu" },
+      nav: { home: "Início", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Leitura", phrases: "Frases", songs: "Canções", game: "Jogo", piano: "Piano", music: "Música", language: "Idiomas" , stories: "Histórias" , rhymes: "Lengalengas" , math: "Matemática" , financial: "Dinheiro" , parents: "Pais" , achievements: "Conquistas" , phonics: "Sons" , missions: "Missões" , world: "Mundo" , detective: "Detetive" , whys: "Porquês" , robots: "Robôs" , art: "Ateliê" , science: "Ciência" , history: "História" , lifeskills: "Vida"  , computing: "Cibercidade" , city: "Como Funciona?" , mundos: "Mundos" , thinking: "Pensar", achievementsNav: "Eu" },
       home: {
         pickProfile: "Escolhe o teu perfil",
         newProfile: "Novo perfil",
@@ -91,6 +91,12 @@ const resources = {
         storiesNext: "Seguinte",
         storiesPrev: "Anterior",
         storiesPage: "Página",
+        rhymesTitle: "Lengalengas e Poemas",
+        rhymesHelpMain: "Escolhe uma aba e ouve lengalengas, trava-línguas e poemas nos dois idiomas!",
+        rhymesIntro: "Rimas, trava-línguas e poemas curtos para brincar com as palavras.",
+        rhymesTabLengalengas: "Lengalengas",
+        rhymesTabTravalinguas: "Trava-Línguas",
+        rhymesTabRimas: "Rimas e Poemas",
         mathTitle: "Matemática",
         mathCounting: "Contar",
         mathNumbers: "Números",
@@ -354,6 +360,7 @@ const resources = {
         sub_reading: "Lê as tuas primeiras palavras",
         sub_phrases: "Constrói frases simples",
         sub_stories: "Lê histórias divertidas",
+        sub_rhymes: "Rimas, trava-línguas e poemas",
         sub_math: "Joga com números",
         sub_financial: "Aprende a poupar e gastar",
         sub_songs: "Canta e ouve canções",
@@ -377,7 +384,7 @@ const resources = {
   en: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Home", alphabet: "Alphabet", syllables: "Syllables", reading: "Reading", phrases: "Phrases", songs: "Songs", game: "Game", piano: "Piano", music: "Music", language: "Languages" , stories: "Stories" , math: "Math" , financial: "Money" , parents: "Parents" , achievements: "Achievements" , phonics: "Sounds" , missions: "Missions" , world: "World" , detective: "Detective" , whys: "Whys" , robots: "Robots" , art: "Art Studio" , science: "Science" , history: "History" , lifeskills: "Life Skills"  , computing: "Cybercity" , city: "How It Works" , mundos: "Worlds" , thinking: "Think", achievementsNav: "Me" },
+      nav: { home: "Home", alphabet: "Alphabet", syllables: "Syllables", reading: "Reading", phrases: "Phrases", songs: "Songs", game: "Game", piano: "Piano", music: "Music", language: "Languages" , stories: "Stories" , rhymes: "Rhymes" , math: "Math" , financial: "Money" , parents: "Parents" , achievements: "Achievements" , phonics: "Sounds" , missions: "Missions" , world: "World" , detective: "Detective" , whys: "Whys" , robots: "Robots" , art: "Art Studio" , science: "Science" , history: "History" , lifeskills: "Life Skills"  , computing: "Cybercity" , city: "How It Works" , mundos: "Worlds" , thinking: "Think", achievementsNav: "Me" },
       home: {
         pickProfile: "Pick your profile",
         newProfile: "New profile",
@@ -463,6 +470,12 @@ const resources = {
         storiesNext: "Next",
         storiesPrev: "Previous",
         storiesPage: "Page",
+        rhymesTitle: "Rhymes & Poems",
+        rhymesHelpMain: "Pick a tab and listen to rhymes, tongue twisters and poems in both languages!",
+        rhymesIntro: "Rhymes, tongue twisters and short poems to play with words.",
+        rhymesTabLengalengas: "Nursery Rhymes",
+        rhymesTabTravalinguas: "Tongue Twisters",
+        rhymesTabRimas: "Rhymes & Poems",
         mathTitle: "Math",
         mathCounting: "Counting",
         mathNumbers: "Numbers",
@@ -726,6 +739,7 @@ const resources = {
         sub_reading: "Read your first words",
         sub_phrases: "Build simple sentences",
         sub_stories: "Read fun stories",
+        sub_rhymes: "Rhymes, tongue twisters and poems",
         sub_math: "Play with numbers",
         sub_financial: "Learn to save and spend",
         sub_songs: "Sing and listen to songs",
@@ -749,7 +763,7 @@ const resources = {
   de: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Start", alphabet: "Alphabet", syllables: "Silben", reading: "Lesen", phrases: "Sätze", songs: "Lieder", game: "Spiel", piano: "Klavier", music: "Musik", language: "Sprachen" , stories: "Geschichten" , math: "Mathe" , financial: "Geld" , parents: "Eltern" , achievements: "Erfolge" , phonics: "Laute" , missions: "Missionen" , world: "Welt" , detective: "Detektiv" , whys: "Warums" , robots: "Roboter" , art: "Atelier" , science: "Wissenschaft" , history: "Geschichte" , lifeskills: "Lebenskompetenz"  , computing: "Cyberstadt" , city: "Wie Funktioniert Das?" , mundos: "Welten" , thinking: "Denken", achievementsNav: "Ich" },
+      nav: { home: "Start", alphabet: "Alphabet", syllables: "Silben", reading: "Lesen", phrases: "Sätze", songs: "Lieder", game: "Spiel", piano: "Klavier", music: "Musik", language: "Sprachen" , stories: "Geschichten" , rhymes: "Reime" , math: "Mathe" , financial: "Geld" , parents: "Eltern" , achievements: "Erfolge" , phonics: "Laute" , missions: "Missionen" , world: "Welt" , detective: "Detektiv" , whys: "Warums" , robots: "Roboter" , art: "Atelier" , science: "Wissenschaft" , history: "Geschichte" , lifeskills: "Lebenskompetenz"  , computing: "Cyberstadt" , city: "Wie Funktioniert Das?" , mundos: "Welten" , thinking: "Denken", achievementsNav: "Ich" },
       home: {
         pickProfile: "Wähle dein Profil",
         newProfile: "Neues Profil",
@@ -835,6 +849,12 @@ const resources = {
         storiesNext: "Weiter",
         storiesPrev: "Zurück",
         storiesPage: "Seite",
+        rhymesTitle: "Reime & Gedichte",
+        rhymesHelpMain: "Wähle eine Registerkarte und höre Reime, Zungenbrecher und Gedichte in beiden Sprachen!",
+        rhymesIntro: "Reime, Zungenbrecher und kurze Gedichte zum Spielen mit Wörtern.",
+        rhymesTabLengalengas: "Kinderreime",
+        rhymesTabTravalinguas: "Zungenbrecher",
+        rhymesTabRimas: "Reime & Gedichte",
         mathTitle: "Mathe",
         mathCounting: "Zählen",
         mathNumbers: "Zahlen",
@@ -1098,6 +1118,7 @@ const resources = {
         sub_reading: "Lies deine ersten Wörter",
         sub_phrases: "Bilde einfache Sätze",
         sub_stories: "Lies lustige Geschichten",
+        sub_rhymes: "Reime, Zungenbrecher und Gedichte",
         sub_math: "Spiele mit Zahlen",
         sub_financial: "Lerne sparen und ausgeben",
         sub_songs: "Singe und höre Lieder",
@@ -1121,7 +1142,7 @@ const resources = {
   fr: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Accueil", alphabet: "Alphabet", syllables: "Syllabes", reading: "Lecture", phrases: "Phrases", songs: "Chansons", game: "Jeu", piano: "Piano", music: "Musique", language: "Langues" , stories: "Histoires" , math: "Maths" , financial: "Argent" , parents: "Parents" , achievements: "Réussites" , phonics: "Sons" , missions: "Missions" , world: "Monde" , detective: "Détective" , whys: "Pourquoi" , robots: "Robots" , art: "Atelier" , science: "Sciences" , history: "Histoire" , lifeskills: "Vie Pratique"  , computing: "Cybercité" , city: "Comment Ça Marche ?" , mundos: "Mondes" , thinking: "Penser", achievementsNav: "Moi" },
+      nav: { home: "Accueil", alphabet: "Alphabet", syllables: "Syllabes", reading: "Lecture", phrases: "Phrases", songs: "Chansons", game: "Jeu", piano: "Piano", music: "Musique", language: "Langues" , stories: "Histoires" , rhymes: "Comptines" , math: "Maths" , financial: "Argent" , parents: "Parents" , achievements: "Réussites" , phonics: "Sons" , missions: "Missions" , world: "Monde" , detective: "Détective" , whys: "Pourquoi" , robots: "Robots" , art: "Atelier" , science: "Sciences" , history: "Histoire" , lifeskills: "Vie Pratique"  , computing: "Cybercité" , city: "Comment Ça Marche ?" , mundos: "Mondes" , thinking: "Penser", achievementsNav: "Moi" },
       home: {
         pickProfile: "Choisis ton profil",
         newProfile: "Nouveau profil",
@@ -1207,6 +1228,12 @@ const resources = {
         storiesNext: "Suivant",
         storiesPrev: "Précédent",
         storiesPage: "Page",
+        rhymesTitle: "Comptines et Poèmes",
+        rhymesHelpMain: "Choisis un onglet et écoute des comptines, des virelangues et des poèmes dans les deux langues !",
+        rhymesIntro: "Comptines, virelangues et courts poèmes pour jouer avec les mots.",
+        rhymesTabLengalengas: "Comptines",
+        rhymesTabTravalinguas: "Virelangues",
+        rhymesTabRimas: "Comptines et Poèmes",
         mathTitle: "Maths",
         mathCounting: "Compter",
         mathNumbers: "Nombres",
@@ -1470,6 +1497,7 @@ const resources = {
         sub_reading: "Lis tes premiers mots",
         sub_phrases: "Construis des phrases simples",
         sub_stories: "Lis des histoires amusantes",
+        sub_rhymes: "Comptines, virelangues et poèmes",
         sub_math: "Joue avec les nombres",
         sub_financial: "Apprends à épargner et dépenser",
         sub_songs: "Chante et écoute des chansons",
@@ -1493,7 +1521,7 @@ const resources = {
   zh: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "首页", alphabet: "字母表", syllables: "音节", reading: "阅读", phrases: "句子", songs: "歌曲", game: "游戏", piano: "钢琴", music: "音乐", language: "语言" , stories: "故事" , math: "数学" , financial: "金钱" , parents: "家长" , achievements: "成就" , phonics: "语音" , missions: "任务" , world: "世界" , detective: "侦探" , whys: "为什么" , robots: "机器人" , art: "创意工坊" , science: "科学" , history: "历史" , lifeskills: "生活技能"  , computing: "电脑城" , city: "如何运作？" , mundos: "世界" , thinking: "思考", achievementsNav: "我" },
+      nav: { home: "首页", alphabet: "字母表", syllables: "音节", reading: "阅读", phrases: "句子", songs: "歌曲", game: "游戏", piano: "钢琴", music: "音乐", language: "语言" , stories: "故事" , rhymes: "童谣" , math: "数学" , financial: "金钱" , parents: "家长" , achievements: "成就" , phonics: "语音" , missions: "任务" , world: "世界" , detective: "侦探" , whys: "为什么" , robots: "机器人" , art: "创意工坊" , science: "科学" , history: "历史" , lifeskills: "生活技能"  , computing: "电脑城" , city: "如何运作？" , mundos: "世界" , thinking: "思考", achievementsNav: "我" },
       home: {
         pickProfile: "选择你的档案",
         newProfile: "新档案",
@@ -1579,6 +1607,12 @@ const resources = {
         storiesNext: "下一页",
         storiesPrev: "上一页",
         storiesPage: "第",
+        rhymesTitle: "童谣与诗歌",
+        rhymesHelpMain: "选择一个标签，用两种语言聆听童谣、绕口令和诗歌！",
+        rhymesIntro: "童谣、绕口令和短诗，一起玩文字游戏。",
+        rhymesTabLengalengas: "童谣",
+        rhymesTabTravalinguas: "绕口令",
+        rhymesTabRimas: "童谣与诗歌",
         mathTitle: "数学",
         mathCounting: "数数",
         mathNumbers: "数字",
@@ -1842,6 +1876,7 @@ const resources = {
         sub_reading: "阅读你的第一个单词",
         sub_phrases: "组成简单的句子",
         sub_stories: "阅读有趣的故事",
+        sub_rhymes: "童谣、绕口令和诗歌",
         sub_math: "玩数字游戏",
         sub_financial: "学习储蓄和消费",
         sub_songs: "唱歌和听歌",
@@ -1865,7 +1900,7 @@ const resources = {
   es: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Inicio", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Lectura", phrases: "Frases", songs: "Canciones", game: "Juego", piano: "Piano", music: "Música", language: "Idiomas" , stories: "Cuentos" , math: "Matemáticas" , financial: "Dinero" , parents: "Padres" , achievements: "Logros" , phonics: "Sonidos" , missions: "Misiones" , world: "Mundo" , detective: "Detective" , whys: "Porqués" , robots: "Robots" , art: "Taller" , science: "Ciencia" , history: "Historia" , lifeskills: "Vida Práctica"  , computing: "Ciberciudad" , city: "¿Cómo Funciona?" , mundos: "Mundos" , thinking: "Pensar", achievementsNav: "Yo" },
+      nav: { home: "Inicio", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Lectura", phrases: "Frases", songs: "Canciones", game: "Juego", piano: "Piano", music: "Música", language: "Idiomas" , stories: "Cuentos" , rhymes: "Rimas" , math: "Matemáticas" , financial: "Dinero" , parents: "Padres" , achievements: "Logros" , phonics: "Sonidos" , missions: "Misiones" , world: "Mundo" , detective: "Detective" , whys: "Porqués" , robots: "Robots" , art: "Taller" , science: "Ciencia" , history: "Historia" , lifeskills: "Vida Práctica"  , computing: "Ciberciudad" , city: "¿Cómo Funciona?" , mundos: "Mundos" , thinking: "Pensar", achievementsNav: "Yo" },
       home: {
         pickProfile: "Elige tu perfil",
         newProfile: "Nuevo perfil",
@@ -1951,6 +1986,12 @@ const resources = {
         storiesNext: "Siguiente",
         storiesPrev: "Anterior",
         storiesPage: "Página",
+        rhymesTitle: "Rimas y Poemas",
+        rhymesHelpMain: "Elige una pestaña y escucha rimas, trabalenguas y poemas en los dos idiomas!",
+        rhymesIntro: "Rimas, trabalenguas y poemas cortos para jugar con las palabras.",
+        rhymesTabLengalengas: "Rimas Infantiles",
+        rhymesTabTravalinguas: "Trabalenguas",
+        rhymesTabRimas: "Rimas y Poemas",
         mathTitle: "Matemáticas",
         mathCounting: "Contar",
         mathNumbers: "Números",
@@ -2214,6 +2255,7 @@ const resources = {
         sub_reading: "Lee tus primeras palabras",
         sub_phrases: "Construye frases simples",
         sub_stories: "Lee cuentos divertidos",
+        sub_rhymes: "Rimas, trabalenguas y poemas",
         sub_math: "Juega con números",
         sub_financial: "Aprende a ahorrar y gastar",
         sub_songs: "Canta y escucha canciones",
@@ -2237,7 +2279,7 @@ const resources = {
   it: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Home", alphabet: "Alfabeto", syllables: "Sillabe", reading: "Lettura", phrases: "Frasi", songs: "Canzoni", game: "Gioco", piano: "Piano", music: "Musica", language: "Lingue" , stories: "Storie" , math: "Matematica" , financial: "Denaro" , parents: "Genitori" , achievements: "Traguardi" , phonics: "Suoni" , missions: "Missioni" , world: "Mondo" , detective: "Detective" , whys: "Perché" , robots: "Robots" , art: "Atelier" , science: "Scienza" , history: "Storia" , lifeskills: "Vita Pratica"  , computing: "Cybercittà" , city: "Come Funziona?" , mundos: "Mondi" , thinking: "Pensare", achievementsNav: "Io" },
+      nav: { home: "Home", alphabet: "Alfabeto", syllables: "Sillabe", reading: "Lettura", phrases: "Frasi", songs: "Canzoni", game: "Gioco", piano: "Piano", music: "Musica", language: "Lingue" , stories: "Storie" , rhymes: "Filastrocche" , math: "Matematica" , financial: "Denaro" , parents: "Genitori" , achievements: "Traguardi" , phonics: "Suoni" , missions: "Missioni" , world: "Mondo" , detective: "Detective" , whys: "Perché" , robots: "Robots" , art: "Atelier" , science: "Scienza" , history: "Storia" , lifeskills: "Vita Pratica"  , computing: "Cybercittà" , city: "Come Funziona?" , mundos: "Mondi" , thinking: "Pensare", achievementsNav: "Io" },
       home: {
         pickProfile: "Scegli il tuo profilo",
         newProfile: "Nuovo profilo",
@@ -2323,6 +2365,12 @@ const resources = {
         storiesNext: "Avanti",
         storiesPrev: "Indietro",
         storiesPage: "Pagina",
+        rhymesTitle: "Filastrocche e Poesie",
+        rhymesHelpMain: "Scegli una scheda e ascolta filastrocche, scioglilingua e poesie in entrambe le lingue!",
+        rhymesIntro: "Filastrocche, scioglilingua e poesie brevi per giocare con le parole.",
+        rhymesTabLengalengas: "Filastrocche",
+        rhymesTabTravalinguas: "Scioglilingua",
+        rhymesTabRimas: "Filastrocche e Poesie",
         mathTitle: "Matematica",
         mathCounting: "Contare",
         mathNumbers: "Numeri",
@@ -2586,6 +2634,7 @@ const resources = {
         sub_reading: "Leggi le tue prime parole",
         sub_phrases: "Costruisci frasi semplici",
         sub_stories: "Leggi storie divertenti",
+        sub_rhymes: "Filastrocche, scioglilingua e poesie",
         sub_math: "Gioca con i numeri",
         sub_financial: "Impara a risparmiare e spendere",
         sub_songs: "Canta e ascolta canzoni",

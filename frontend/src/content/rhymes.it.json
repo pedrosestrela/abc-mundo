@@ -1,0 +1,104 @@
+{
+  "lengalengas": [
+    {
+      "id": "uni-duni-te",
+      "title": "Ambarabà Ciccì Coccò",
+      "emoji": "🎈",
+      "text": "Ambarabà ciccì coccò,\nTre civette sul comò,\nChe facevano l'amore,\nCon la figlia del dottore!"
+    },
+    {
+      "id": "chuva-vai-embora",
+      "title": "Piove, Vattene",
+      "emoji": "🌧️",
+      "text": "Piove, piove, vai via presto,\nTorna un altro giorno, questo,\nI bambini vogliono giocare,\nPiove, piove, fatti in là!"
+    },
+    {
+      "id": "um-dois-tres",
+      "title": "Uno, Due, Tre",
+      "emoji": "🔢",
+      "text": "Uno, due, tre,\nQuattro, cinque, sei con me,\nSette, otto, nove, dieci,\nContiamo ancora, se vuoi anche tu ci sei!"
+    },
+    {
+      "id": "la-vai-o-rato",
+      "title": "Il Topolino Scappa",
+      "emoji": "🐭",
+      "text": "Il topolino corre per la via,\nCon la codina che va via,\nCorri, corri, presto e via,\nI gattini dietro in allegria!"
+    },
+    {
+      "id": "uma-galinha",
+      "title": "Una Gallinella",
+      "emoji": "🐔",
+      "text": "Una gallinella nel cortile,\nFa le uova con stile,\nUno, due, tre, quattro, cinque,\nConta le uova, quante ne vinci!"
+    }
+  ],
+  "travalinguas": [
+    {
+      "id": "tt-1",
+      "title": "Trentatré Trentini",
+      "emoji": "🏃",
+      "text": "Trentatré trentini entrarono a Trento, tutti e trentatré trotterellando."
+    },
+    {
+      "id": "tt-2",
+      "title": "La Capra Sopra la Panca",
+      "emoji": "🐐",
+      "text": "Sopra la panca la capra campa, sotto la panca la capra crepa."
+    },
+    {
+      "id": "tt-3",
+      "title": "Il Portoghese",
+      "emoji": "🍾",
+      "text": "Apelle, figlio di Apollo, fece una palla di pelle di pollo."
+    },
+    {
+      "id": "tt-4",
+      "title": "Chi Ci Va",
+      "emoji": "🚶",
+      "text": "Chi ci va e chi ci resta, chi ci va perde la testa."
+    },
+    {
+      "id": "tt-5",
+      "title": "Trentatré Rane",
+      "emoji": "🐸",
+      "text": "Tre tigri contro tre tigri, tra tre tigri tre giare."
+    }
+  ],
+  "rimas": [
+    {
+      "id": "gato-manhoso",
+      "title": "Il Gatto Furbetto",
+      "emoji": "🐱",
+      "text": "Il mio gatto è tanto furbetto,\nDorme tutto il giorno nel suo letto,\nDi notte salta, agile e lesto,\nA cacciare il mondo, sempre pronto!"
+    },
+    {
+      "id": "sol-brilhante",
+      "title": "Il Sole Splendente",
+      "emoji": "☀️",
+      "text": "Il sole si sveglia al mattino,\nDipinge il cielo color miele fino,\nScalda la terra e ogni collina,\nE ci sorride ogni mattina."
+    },
+    {
+      "id": "chuva-amiga",
+      "title": "La Pioggia Amica",
+      "emoji": "🌦️",
+      "text": "La pioggia bussa alla finestra,\nToc, toc, toc, piano e lesta,\nBagna il giardino, bagna l'erbetta,\nPoi se ne va, così in fretta."
+    },
+    {
+      "id": "familia-feliz",
+      "title": "La Mia Famiglia",
+      "emoji": "👨‍👩‍👧‍👦",
+      "text": "Mamma, papà e il mio fratello,\nInsieme fanno il mio castello,\nUn abbraccio, mai da solo,\nA casa mia mi sento bello."
+    },
+    {
+      "id": "jardim-flores",
+      "title": "Il Giardino Fiorito",
+      "emoji": "🌷",
+      "text": "Nel giardino mille colori,\nRose, tulipani e i loro odori,\nLe farfalle danzano leggere,\nE le api cantano tra le siepi."
+    },
+    {
+      "id": "lua-boa-noite",
+      "title": "Buonanotte, Luna",
+      "emoji": "🌙",
+      "text": "Buonanotte, luna tonda e chiara,\nAccendi le stelle, la notte è cara,\nDorme la terra, dorme la sabbia,\nFino al sole nuovo, che presto raggia."
+    }
+  ]
+}
