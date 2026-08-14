@@ -4,7 +4,7 @@ import React from "react";
 
 export function SunFriends() {
   return (
-    <svg viewBox="0 0 200 140" width="100%" height="auto" role="img" aria-label="Sun and friends">
+    <svg viewBox="0 0 200 140" width="100%" role="img" aria-label="Sun and friends">
       <circle cx="100" cy="60" r="34" fill="#ffd93d" />
       {Array.from({ length: 8 }).map((_, i) => {
         const angle = (i * Math.PI) / 4;
@@ -25,7 +25,7 @@ export function SunFriends() {
 
 export function JumpingLetters() {
   return (
-    <svg viewBox="0 0 200 140" width="100%" height="auto" role="img" aria-label="Jumping letters">
+    <svg viewBox="0 0 200 140" width="100%" role="img" aria-label="Jumping letters">
       <rect x="0" y="110" width="200" height="30" fill="#8ecae6" />
       <text x="30" y="90" fontSize="40" fontWeight="bold" fill="#ff6b6b">M</text>
       <text x="85" y="60" fontSize="40" fontWeight="bold" fill="#ffd93d">N</text>
@@ -38,7 +38,7 @@ export function AlphabetCircle() {
   const letters = ["W", "X", "Y", "Z"];
   const colors = ["#ff6b6b", "#ffd93d", "#6bcb77", "#4d96ff"];
   return (
-    <svg viewBox="0 0 200 200" width="100%" height="auto" role="img" aria-label="Alphabet friends circle">
+    <svg viewBox="0 0 200 200" width="100%" role="img" aria-label="Alphabet friends circle">
       <circle cx="100" cy="100" r="70" fill="none" stroke="#f4a261" strokeWidth="4" strokeDasharray="10 6" />
       {letters.map((l, i) => {
         const angle = (i * Math.PI * 2) / letters.length - Math.PI / 2;
@@ -63,7 +63,7 @@ export function StarryNight() {
     { x: 175, y: 60 }, { x: 20, y: 80 }, { x: 140, y: 100 },
   ];
   return (
-    <svg viewBox="0 0 200 140" width="100%" height="auto" role="img" aria-label="Moon and stars">
+    <svg viewBox="0 0 200 140" width="100%" role="img" aria-label="Moon and stars">
       <rect x="0" y="0" width="200" height="140" fill="#2b2d5c" />
       <circle cx="140" cy="45" r="26" fill="#ffe066" />
       <circle cx="150" cy="38" r="22" fill="#2b2d5c" />
@@ -84,7 +84,7 @@ export function CountingBlocks() {
     { n: 5, color: "#9b5de5" },
   ];
   return (
-    <svg viewBox="0 0 200 100" width="100%" height="auto" role="img" aria-label="Counting blocks">
+    <svg viewBox="0 0 200 100" width="100%" role="img" aria-label="Counting blocks">
       {blocks.map((b, i) => (
         <g key={b.n}>
           <rect x={10 + i * 38} y="30" width="30" height="30" rx="6" fill={b.color} />
@@ -99,7 +99,7 @@ export function CountingBlocks() {
 
 export function ShapesFun() {
   return (
-    <svg viewBox="0 0 200 100" width="100%" height="auto" role="img" aria-label="Shapes">
+    <svg viewBox="0 0 200 100" width="100%" role="img" aria-label="Shapes">
       <circle cx="35" cy="50" r="26" fill="#ff6b6b" />
       <rect x="80" y="24" width="52" height="52" fill="#4d96ff" />
       <polygon points="170,20 195,75 145,75" fill="#6bcb77" />
