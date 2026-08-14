@@ -110,5 +110,85 @@
     "quickAnswer": "Ameisen hinterlassen eine Duftspur auf dem Weg zum Futter, und andere Ameisen folgen diesem Duft, wodurch eine Reihe entsteht.",
     "moreAnswer": "Wenn eine Ameise Futter findet, hinterlässt sie auf dem Rückweg zum Bau eine Substanz namens Pheromon auf dem Boden, deren Duft nur Ameisen wahrnehmen können. Andere Ameisen folgen diesem Duft, um dasselbe Futter zu finden, und hinterlassen beim Laufen ebenfalls mehr Pheromon, wodurch die Spur verstärkt wird. So entsteht die ordentliche Reihe.",
     "experiment": "Wenn du eine Ameisenreihe siehst, beobachte vorsichtig (ohne sie zu stören) den Weg, den sie nehmen — meist ist es immer dieselbe Route."
+  },
+  {
+    "id": "soluco",
+    "emoji": "😅",
+    "question": "Warum haben wir Schluckauf?",
+    "quickAnswer": "Schluckauf entsteht, wenn sich das Zwerchfell, der Muskel, der uns beim Atmen hilft, plötzlich unwillkürlich zusammenzieht.",
+    "moreAnswer": "Das Zwerchfell ist der Muskel unter der Lunge, der sich bei jedem Atemzug bewegt. Manchmal, wenn man zu schnell isst, viel lacht oder etwas Kohlensäurehaltiges trinkt, zieht sich das Zwerchfell plötzlich und unerwartet zusammen. Dadurch strömt Luft schlagartig ein und die Stimmbänder schließen sich, wodurch das „Hicks\"-Geräusch entsteht. Schluckauf verschwindet meist nach ein paar Minuten von selbst.",
+    "experiment": "Trink das nächste Mal, wenn du Schluckauf hast, langsam kleine Schlucke Wasser und schau, ob das hilft."
+  },
+  {
+    "id": "gato-ronronar",
+    "emoji": "🐱",
+    "question": "Warum schnurren Katzen?",
+    "quickAnswer": "Katzen schnurren, um zu zeigen, dass sie glücklich sind, aber auch wenn sie nervös sind oder heilen, weil Schnurren ihnen hilft, sich zu beruhigen.",
+    "moreAnswer": "Wissenschaftler untersuchen noch genau, wie Katzen das Schnurren erzeugen, aber sie glauben, es kommt von sehr schnellen Schwingungen im Kehlkopf, dem Teil des Halses, wo die Stimmbänder sind. Katzen schnurren, wenn sie entspannt und glücklich sind, aber auch wenn sie Schmerzen haben oder Angst — der Klang scheint ihnen zu helfen, sich selbst zu beruhigen. Studien zeigen sogar, dass die Frequenz des Schnurrens helfen kann, Knochen und Muskeln schneller zu heilen.",
+    "experiment": "Wenn du eine Katze hast oder kennst, beobachte, wann sie am meisten schnurrt: beim Schlafen, beim Streicheln oder in der Nähe von Futter?"
+  },
+  {
+    "id": "vento-origem",
+    "emoji": "💨",
+    "question": "Woher kommt der Wind?",
+    "quickAnswer": "Wind ist Luft in Bewegung. Er entsteht, wenn warme Luft aufsteigt und kühle Luft nachströmt, um ihren Platz einzunehmen.",
+    "moreAnswer": "Die Sonne erwärmt die Erde nicht überall gleich stark — manche Orte werden wärmer, andere bleiben kühler. Warme Luft ist leichter und steigt auf, während kühlere, schwerere Luft absinkt, um den freien Platz zu füllen. Diese Luftbewegung von einem Ort zum anderen ist der Wind. Je größer der Temperaturunterschied zwischen zwei Orten, desto stärker weht der Wind.",
+    "experiment": "Bastle ein Papierwindrad und trage es an verschiedene Orte im Haus oder Garten. Wo dreht es sich am schnellsten?"
+  },
+  {
+    "id": "estrelas-brilham",
+    "emoji": "✨",
+    "question": "Warum leuchten Sterne nachts, aber nicht am Tag?",
+    "quickAnswer": "Sterne stehen immer am Himmel, aber tagsüber ist das Licht der Sonne so stark, dass das schwache Licht der Sterne verborgen bleibt.",
+    "moreAnswer": "Die Sonne ist der uns am nächsten stehende Stern, deshalb erreicht uns ihr Licht viel stärker als das jedes anderen Sterns, die Lichtjahre entfernt sind. Tagsüber verteilt sich das Sonnenlicht in der Atmosphäre und erhellt alles, wodurch der Himmel zu hell ist, um das schwache Licht der weit entfernten Sterne zu sehen. Nachts, ohne dass die Sonne alles überstrahlt, können wir endlich die Sterne funkeln sehen.",
+    "experiment": "Zähle in einer wolkenlosen Nacht, möglichst fernab von Stadtlichtern, wie viele Sterne du in 1 Minute sehen kannst."
+  },
+  {
+    "id": "gelo-flutua",
+    "emoji": "🧊",
+    "question": "Warum schwimmt Eis auf dem Wasser?",
+    "quickAnswer": "Eis schwimmt, weil Wasser beim Gefrieren mehr Platz einnimmt und weniger dicht wird als flüssiges Wasser.",
+    "moreAnswer": "Die meisten Stoffe werden beim Abkühlen kompakter, aber Wasser ist anders: Beim Gefrieren ordnen sich seine Moleküle in einer Struktur an, die mehr Platz braucht, wodurch Eis weniger dicht ist als flüssiges Wasser. Weil es weniger dicht ist, schwimmt Eis statt zu sinken. Das ist sehr wichtig für das Leben in kalten Seen und Meeren — das Eis bildet eine Schicht an der Oberfläche, die die darunter lebenden Tiere vor der extremen Kälte schützt.",
+    "experiment": "Leg einen Eiswürfel in ein Glas Wasser und beobachte, wie viel davon über und unter der Oberfläche bleibt."
+  },
+  {
+    "id": "aves-migracao",
+    "emoji": "🦢",
+    "question": "Woher wissen Vögel, wohin sie ziehen sollen?",
+    "quickAnswer": "Vögel nutzen die Sonne, die Sterne, das Magnetfeld der Erde und sogar Landmarken am Boden, um sich auf ihren langen Reisen zu orientieren.",
+    "moreAnswer": "Viele Vogelarten legen jedes Jahr riesige Strecken zurück, auf der Suche nach milderem Klima oder mehr Nahrung. Zur Orientierung nutzen sie mehrere Hinweise gleichzeitig: die Stellung der Sonne am Tag, die Sterne in der Nacht, und sie können sogar das Magnetfeld der Erde spüren, fast wie ein eingebauter Kompass. Manche erkennen auch Flüsse, Berge und Küsten, die sie schon einmal überflogen haben. Jüngere Vögel lernen die Route oft, indem sie neben älteren Vögeln fliegen.",
+    "experiment": "Wenn du einen Vogelschwarm in V-Formation fliegen siehst, beobachte, wie sie sich organisieren — diese Formation hilft ihnen, während der Reise Energie zu sparen."
+  },
+  {
+    "id": "bocejo",
+    "emoji": "🥱",
+    "question": "Warum gähnen wir?",
+    "quickAnswer": "Wir gähnen, wenn wir müde oder gelangweilt sind, und Wissenschaftler denken, dass es hilft, das Gehirn abzukühlen und aufzuwecken.",
+    "moreAnswer": "Niemand weiß mit Sicherheit, warum wir gähnen, aber eine der am meisten akzeptierten Ideen ist, dass Gähnen hilft, das Gehirn abzukühlen und wacher zu machen. Wir gähnen auch mehr, wenn wir müde oder gelangweilt sind, oder sogar nur wenn wir jemand anderen gähnen sehen — Gähnen ist sehr ansteckend! Das könnte daran liegen, dass unser Gehirn „Spiegelneuronen\" hat, die uns automatisch bestimmte Verhaltensweisen der Menschen um uns herum nachahmen lassen.",
+    "experiment": "Versuch, in der Nähe eines Familienmitglieds zu gähnen, und schau, wie lange es dauert, bis diese Person auch gähnt."
+  },
+  {
+    "id": "mar-salgado",
+    "emoji": "🌊",
+    "question": "Warum ist das Meer salzig?",
+    "quickAnswer": "Das Meer ist salzig, weil Flüsse, die über Felsen und Land fließen, kleine Mengen Salz mit sich ins Meer bringen, und verdunstendes Wasser das Salz zurücklässt.",
+    "moreAnswer": "Wenn es regnet, fließt Wasser durch Flüsse über Felsen und Boden und löst dabei winzige Mengen an Mineralien und Salzen. Diese Flüsse tragen das Salz bis ins Meer. Im Meer lässt die Sonne das Wasser verdunsten (das zu Dampf wird und wieder als Regen fällt), aber das Salz verdunstet nicht — es bleibt zurück. Das geschieht schon seit Millionen von Jahren, weshalb sich immer mehr Salz im Meerwasser angesammelt hat.",
+    "experiment": "Bitte einen Erwachsenen, dir zu helfen, einen Löffel Salz in einem Glas Wasser aufzulösen, und probiere vorsichtig einen winzigen Tropfen. So ungefähr, nur viel konzentrierter, schmeckt Meerwasser."
+  },
+  {
+    "id": "arco-iris-formacao",
+    "emoji": "🌈",
+    "question": "Wie entstehen Regenbögen?",
+    "quickAnswer": "Regenbögen entstehen, wenn Sonnenlicht durch Regentropfen fällt und sich wie in einem Prisma in seine Farben auftrennt.",
+    "moreAnswer": "Sonnenlicht sieht weiß aus, besteht aber eigentlich aus mehreren gemischten Farben. Wenn ein Sonnenstrahl in einen Regentropfen eintritt, wird er gebrochen (er ändert seine Richtung), im Inneren des Tropfens reflektiert und tritt wieder aus, wobei er sich erneut bricht. Dabei wird jede Farbe etwas anders gebrochen, sodass sich die Farben trennen und den Farbbogen bilden, den wir sehen: Rot, Orange, Gelb, Grün, Blau, Indigo und Violett. Deshalb sehen wir einen Regenbogen nur, wenn Sonne und Regen gleichzeitig da sind, und immer mit dem Rücken zur Sonne.",
+    "experiment": "Nutze mit dem Rücken zur Sonne einen Gartenschlauch oder eine Sprühflasche, um deinen eigenen Regenbogen zu erzeugen."
+  },
+  {
+    "id": "sono-necessidade",
+    "emoji": "🛌",
+    "question": "Warum müssen wir schlafen?",
+    "quickAnswer": "Wir müssen schlafen, damit sich der Körper ausruhen kann, das Gehirn speichert, was wir gelernt haben, und wir gesund und stark heranwachsen.",
+    "moreAnswer": "Während wir schlafen, passieren sehr wichtige Dinge, die wir nicht sehen können: Das Gehirn ordnet die Erinnerungen des Tages, als würde es eine Schublade voller neuer Informationen aufräumen. Der Körper nutzt diese Zeit, um Muskeln zu reparieren, Wachstumshormone zu produzieren und die Abwehrkräfte gegen Krankheiten zu stärken. Kinder brauchen sogar noch mehr Schlaf als Erwachsene, weil sie noch wachsen und ihr Gehirn ständig Neues lernt. Ohne genug Schlaf werden wir müde, vergesslich und schlechter gelaunt.",
+    "experiment": "Notiere eine Woche lang, wann du ins Bett gehst und aufwachst. Fühlst du dich an Tagen, an denen du mehr geschlafen hast, anders?"
   }
 ]

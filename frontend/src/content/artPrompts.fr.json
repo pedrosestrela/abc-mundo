@@ -1,22 +1,182 @@
 [
-  { "id": "animal-novo", "emoji": "🦄", "prompt": "Dessine un animal qui n'existe pas encore. Donne-lui un nom !", "category": "draw" },
-  { "id": "cor-nova", "emoji": "🌈", "prompt": "Si tu pouvais inventer une nouvelle couleur, comment s'appellerait-elle et qu'est-ce qui la rendrait spéciale ?", "category": "imagine" },
-  { "id": "casa-sonhos", "emoji": "🏰", "prompt": "Dessine la maison de tes rêves.", "category": "draw" },
-  { "id": "super-heroi", "emoji": "🦸", "prompt": "Invente un personnage super-héros et son pouvoir.", "category": "imagine" },
-  { "id": "voar-um-dia", "emoji": "🕊️", "prompt": "Dessine ce que tu ferais si tu pouvais voler pendant une journée.", "category": "draw" },
-  { "id": "construir-caixas", "emoji": "📦", "prompt": "Construis quelque chose avec des objets que tu trouves à la maison (blocs, boîtes, ce qu'il y a).", "category": "build" },
-  { "id": "planeta-novo", "emoji": "🪐", "prompt": "Invente une nouvelle planète. Qui y vit et à quoi ressemble-t-elle ?", "category": "imagine" },
-  { "id": "monstro-simpatico", "emoji": "👹", "prompt": "Dessine un monstre gentil qui veut juste se faire des amis.", "category": "draw" },
-  { "id": "historia-tres-palavras", "emoji": "📖", "prompt": "Invente une petite histoire avec ces trois mots : nuage, chaussure, dragon.", "category": "story" },
-  { "id": "maquina-doida", "emoji": "⚙️", "prompt": "Construis une machine farfelue avec ce que tu as à la maison. À quoi sert-elle ?", "category": "build" },
-  { "id": "jardim-magico", "emoji": "🌻", "prompt": "Dessine un jardin magique où les fleurs font de la musique.", "category": "draw" },
-  { "id": "carta-futuro", "emoji": "✉️", "prompt": "Invente une histoire sur toi dans 20 ans.", "category": "story" },
-  { "id": "roupa-maluca", "emoji": "👗", "prompt": "Dessine une tenue folle que tu aimerais porter un jour spécial.", "category": "draw" },
-  { "id": "castelo-areia", "emoji": "🏖️", "prompt": "Construis un château avec ce que tu trouves (sable, blocs, coussins).", "category": "build" },
-  { "id": "amigo-imaginario", "emoji": "👻", "prompt": "Invente un ami imaginaire. Comment s'appelle-t-il et qu'aime-t-il faire ?", "category": "imagine" },
-  { "id": "cidade-nuvens", "emoji": "☁️", "prompt": "Dessine une ville qui flotte dans les nuages.", "category": "draw" },
-  { "id": "aventura-oceano", "emoji": "🐙", "prompt": "Invente une aventure au fond de l'océan avec une créature mystérieuse.", "category": "story" },
-  { "id": "forte-almofadas", "emoji": "🛋️", "prompt": "Construis un fort avec des coussins et des couvertures. Donne-lui un nom secret.", "category": "build" },
-  { "id": "autorretrato-super", "emoji": "🖼️", "prompt": "Dessine-toi comme un personnage de bande dessinée.", "category": "draw" },
-  { "id": "musica-inventada", "emoji": "🎶", "prompt": "Invente une petite chanson sur ta journée. Tu peux la chanter à quelqu'un !", "category": "imagine" }
+  {
+    "id": "animal-novo",
+    "emoji": "🦄",
+    "prompt": "Dessine un animal qui n'existe pas encore. Donne-lui un nom !",
+    "category": "draw"
+  },
+  {
+    "id": "cor-nova",
+    "emoji": "🌈",
+    "prompt": "Si tu pouvais inventer une nouvelle couleur, comment s'appellerait-elle et qu'est-ce qui la rendrait spéciale ?",
+    "category": "imagine"
+  },
+  {
+    "id": "casa-sonhos",
+    "emoji": "🏰",
+    "prompt": "Dessine la maison de tes rêves.",
+    "category": "draw"
+  },
+  {
+    "id": "super-heroi",
+    "emoji": "🦸",
+    "prompt": "Invente un personnage super-héros et son pouvoir.",
+    "category": "imagine"
+  },
+  {
+    "id": "voar-um-dia",
+    "emoji": "🕊️",
+    "prompt": "Dessine ce que tu ferais si tu pouvais voler pendant une journée.",
+    "category": "draw"
+  },
+  {
+    "id": "construir-caixas",
+    "emoji": "📦",
+    "prompt": "Construis quelque chose avec des objets que tu trouves à la maison (blocs, boîtes, ce qu'il y a).",
+    "category": "build"
+  },
+  {
+    "id": "planeta-novo",
+    "emoji": "🪐",
+    "prompt": "Invente une nouvelle planète. Qui y vit et à quoi ressemble-t-elle ?",
+    "category": "imagine"
+  },
+  {
+    "id": "monstro-simpatico",
+    "emoji": "👹",
+    "prompt": "Dessine un monstre gentil qui veut juste se faire des amis.",
+    "category": "draw"
+  },
+  {
+    "id": "historia-tres-palavras",
+    "emoji": "📖",
+    "prompt": "Invente une petite histoire avec ces trois mots : nuage, chaussure, dragon.",
+    "category": "story"
+  },
+  {
+    "id": "maquina-doida",
+    "emoji": "⚙️",
+    "prompt": "Construis une machine farfelue avec ce que tu as à la maison. À quoi sert-elle ?",
+    "category": "build"
+  },
+  {
+    "id": "jardim-magico",
+    "emoji": "🌻",
+    "prompt": "Dessine un jardin magique où les fleurs font de la musique.",
+    "category": "draw"
+  },
+  {
+    "id": "carta-futuro",
+    "emoji": "✉️",
+    "prompt": "Invente une histoire sur toi dans 20 ans.",
+    "category": "story"
+  },
+  {
+    "id": "roupa-maluca",
+    "emoji": "👗",
+    "prompt": "Dessine une tenue folle que tu aimerais porter un jour spécial.",
+    "category": "draw"
+  },
+  {
+    "id": "castelo-areia",
+    "emoji": "🏖️",
+    "prompt": "Construis un château avec ce que tu trouves (sable, blocs, coussins).",
+    "category": "build"
+  },
+  {
+    "id": "amigo-imaginario",
+    "emoji": "👻",
+    "prompt": "Invente un ami imaginaire. Comment s'appelle-t-il et qu'aime-t-il faire ?",
+    "category": "imagine"
+  },
+  {
+    "id": "cidade-nuvens",
+    "emoji": "☁️",
+    "prompt": "Dessine une ville qui flotte dans les nuages.",
+    "category": "draw"
+  },
+  {
+    "id": "aventura-oceano",
+    "emoji": "🐙",
+    "prompt": "Invente une aventure au fond de l'océan avec une créature mystérieuse.",
+    "category": "story"
+  },
+  {
+    "id": "forte-almofadas",
+    "emoji": "🛋️",
+    "prompt": "Construis un fort avec des coussins et des couvertures. Donne-lui un nom secret.",
+    "category": "build"
+  },
+  {
+    "id": "autorretrato-super",
+    "emoji": "🖼️",
+    "prompt": "Dessine-toi comme un personnage de bande dessinée.",
+    "category": "draw"
+  },
+  {
+    "id": "musica-inventada",
+    "emoji": "🎶",
+    "prompt": "Invente une petite chanson sur ta journée. Tu peux la chanter à quelqu'un !",
+    "category": "imagine"
+  },
+  {
+    "id": "familia-animais",
+    "emoji": "🐾",
+    "prompt": "Dessine ta famille, mais chaque personne est un animal différent.",
+    "category": "draw"
+  },
+  {
+    "id": "invisivel-um-dia",
+    "emoji": "🫥",
+    "prompt": "Si tu pouvais devenir invisible pendant une journée, que ferais-tu ?",
+    "category": "imagine"
+  },
+  {
+    "id": "objeto-fala",
+    "emoji": "🧸",
+    "prompt": "Invente une histoire où ton jouet préféré prend vie et se met à parler.",
+    "category": "story"
+  },
+  {
+    "id": "barco-reciclado",
+    "emoji": "🚢",
+    "prompt": "Construis un bateau avec des matériaux recyclés (bouteilles, bouchons, carton) et teste s'il flotte.",
+    "category": "build"
+  },
+  {
+    "id": "fundo-mar-desenho",
+    "emoji": "🐠",
+    "prompt": "Dessine ce que tu imagines exister au fond de l'océan, dans un endroit encore inexploré.",
+    "category": "draw"
+  },
+  {
+    "id": "maquina-tempo",
+    "emoji": "⏳",
+    "prompt": "Si tu avais une machine à voyager dans le temps, à quelle époque irais-tu et pourquoi ?",
+    "category": "imagine"
+  },
+  {
+    "id": "meia-perdida",
+    "emoji": "🧦",
+    "prompt": "Invente une histoire sur l'endroit où vont les chaussettes qui disparaissent dans la machine à laver.",
+    "category": "story"
+  },
+  {
+    "id": "pista-berlindes",
+    "emoji": "🎢",
+    "prompt": "Construis un circuit pour billes avec des tubes en carton et des boîtes.",
+    "category": "build"
+  },
+  {
+    "id": "eu-idoso",
+    "emoji": "🧓",
+    "prompt": "Dessine-toi tel que tu seras quand tu seras très âgé(e).",
+    "category": "draw"
+  },
+  {
+    "id": "controlar-tempo",
+    "emoji": "🌦️",
+    "prompt": "Si tu pouvais contrôler la météo (pluie, soleil, neige), que choisirais-tu pour aujourd'hui et pourquoi ?",
+    "category": "imagine"
+  }
 ]

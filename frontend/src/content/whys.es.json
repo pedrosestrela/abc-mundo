@@ -110,5 +110,85 @@
     "quickAnswer": "Las hormigas dejan un rastro de olor en el camino hacia la comida, y las demás hormigas siguen ese olor, formando una fila.",
     "moreAnswer": "Cuando una hormiga encuentra comida, en el camino de vuelta al hormiguero deja en el suelo una sustancia llamada feromona, con un olor que solo las hormigas pueden detectar. Las demás hormigas siguen ese olor para llegar a la misma comida, y al caminar también dejan más feromona, reforzando el camino. Así se forma la fila organizada.",
     "experiment": "Si ves una fila de hormigas, observa con cuidado (sin tocarlas) el camino que hacen: suele ser siempre la misma ruta."
+  },
+  {
+    "id": "soluco",
+    "emoji": "😅",
+    "question": "¿Por qué tenemos hipo?",
+    "quickAnswer": "El hipo ocurre cuando el diafragma, el músculo que nos ayuda a respirar, se contrae de repente sin querer.",
+    "moreAnswer": "El diafragma es el músculo debajo de los pulmones que se mueve cada vez que respiramos. A veces, por comer muy rápido, reír mucho o beber algo con gas, el diafragma se contrae de forma brusca e inesperada. Eso hace que entre aire de golpe y las cuerdas vocales se cierren, produciendo el sonido 'hip'. El hipo suele desaparecer solo al cabo de unos minutos.",
+    "experiment": "La próxima vez que tengas hipo, prueba a beber agua a sorbitos pequeños y despacio, y comprueba si ayuda."
+  },
+  {
+    "id": "gato-ronronar",
+    "emoji": "🐱",
+    "question": "¿Por qué ronronean los gatos?",
+    "quickAnswer": "Los gatos ronronean para mostrar que están contentos, pero también cuando están nerviosos o curándose, porque el ronroneo les ayuda a calmarse.",
+    "moreAnswer": "Los científicos todavía estudian cómo producen exactamente los gatos el ronroneo, pero creen que viene de vibraciones muy rápidas en la laringe, la parte de la garganta donde están las cuerdas vocales. Los gatos ronronean cuando están relajados y felices, pero también cuando tienen dolor o miedo: parece que el sonido les ayuda a calmarse a sí mismos. Algunos estudios muestran incluso que la frecuencia del ronroneo puede ayudar a curar huesos y músculos más rápido.",
+    "experiment": "Si tienes o conoces un gato, fíjate en cuándo ronronea más: ¿durmiendo, mientras lo acarician o cerca de la comida?"
+  },
+  {
+    "id": "vento-origem",
+    "emoji": "💨",
+    "question": "¿De dónde viene el viento?",
+    "quickAnswer": "El viento es aire en movimiento. Se forma cuando el aire caliente sube y el aire frío baja para ocupar su lugar.",
+    "moreAnswer": "El Sol no calienta la Tierra de la misma manera en todas partes: algunas zonas se calientan más y otras se quedan más frías. El aire caliente es más ligero y sube, mientras que el aire frío, más pesado, baja para ocupar el espacio que queda libre. Ese movimiento de aire de un lugar a otro es el viento. Cuanto mayor es la diferencia de temperatura entre dos lugares, más fuerte sopla el viento.",
+    "experiment": "Haz un molinillo de papel y llévalo a diferentes lugares de la casa o el jardín. ¿Dónde gira más rápido?"
+  },
+  {
+    "id": "estrelas-brilham",
+    "emoji": "✨",
+    "question": "¿Por qué brillan las estrellas de noche pero no de día?",
+    "quickAnswer": "Las estrellas están siempre en el cielo, pero de día la luz tan fuerte del Sol hace que la luz débil de las estrellas quede escondida.",
+    "moreAnswer": "El Sol es la estrella más cercana a nosotros, por eso su luz llega mucho más fuerte que la de cualquier otra estrella, que está a años luz de distancia. Durante el día, la luz del Sol se extiende por la atmósfera e ilumina todo, haciendo que el cielo esté demasiado brillante para ver la luz débil de las estrellas lejanas. De noche, sin el Sol deslumbrándolo todo, por fin podemos ver brillar las estrellas.",
+    "experiment": "En una noche sin nubes, lejos de las luces de la ciudad si es posible, cuenta cuántas estrellas puedes ver en 1 minuto."
+  },
+  {
+    "id": "gelo-flutua",
+    "emoji": "🧊",
+    "question": "¿Por qué flota el hielo en el agua?",
+    "quickAnswer": "El hielo flota porque, cuando el agua se congela, ocupa más espacio y se vuelve menos densa que el agua líquida.",
+    "moreAnswer": "La mayoría de las sustancias se vuelven más compactas al enfriarse, pero el agua es diferente: al congelarse, sus moléculas se organizan en una estructura que ocupa más espacio, haciendo que el hielo sea menos denso que el agua líquida. Como es menos denso, el hielo flota en lugar de hundirse. Esto es muy importante para la vida en lagos y mares fríos: el hielo forma una capa en la superficie que protege del frío extremo a los animales que viven debajo.",
+    "experiment": "Pon un cubito de hielo en un vaso de agua y observa cuánto queda por encima y por debajo de la superficie."
+  },
+  {
+    "id": "aves-migracao",
+    "emoji": "🦢",
+    "question": "¿Cómo saben las aves hacia dónde migrar?",
+    "quickAnswer": "Las aves usan el Sol, las estrellas, el campo magnético de la Tierra e incluso puntos de referencia en el suelo para orientarse en sus largos viajes.",
+    "moreAnswer": "Muchas especies de aves hacen viajes enormes cada año, buscando un clima más suave o más comida. Para orientarse, usan varias pistas a la vez: la posición del Sol durante el día, las estrellas de noche, e incluso pueden sentir el campo magnético de la Tierra, casi como si tuvieran una brújula dentro del cuerpo. Algunas también reconocen ríos, montañas y costas que ya han sobrevolado antes. Las aves más jóvenes suelen aprender el camino volando junto a las más adultas.",
+    "experiment": "Si ves una bandada de aves volando en forma de V, fíjate cómo se organizan: esa formación les ayuda a ahorrar energía durante el viaje."
+  },
+  {
+    "id": "bocejo",
+    "emoji": "🥱",
+    "question": "¿Por qué bostezamos?",
+    "quickAnswer": "Bostezamos cuando estamos cansados o aburridos, y los científicos creen que eso ayuda a enfriar y despertar el cerebro.",
+    "moreAnswer": "Nadie sabe con total certeza por qué bostezamos, pero una de las ideas más aceptadas es que el bostezo ayuda a enfriar el cerebro, haciéndolo estar más alerta. También bostezamos más cuando estamos cansados, aburridos o incluso solo con ver a otra persona bostezar: ¡el bostezo es muy contagioso! Esto puede ocurrir porque nuestro cerebro tiene \"neuronas espejo\", que nos hacen copiar automáticamente ciertos comportamientos de las personas que nos rodean.",
+    "experiment": "Prueba a bostezar cerca de alguien de tu familia y observa cuánto tarda esa persona en bostezar también."
+  },
+  {
+    "id": "mar-salgado",
+    "emoji": "🌊",
+    "question": "¿Por qué el mar es salado?",
+    "quickAnswer": "El mar es salado porque los ríos, al correr sobre rocas y tierra, arrastran pequeñas cantidades de sal hasta él, y el agua que se evapora deja la sal atrás.",
+    "moreAnswer": "Cuando llueve, el agua que corre por los ríos pasa sobre rocas y suelo, disolviendo minerales y sales muy pequeñas. Esos ríos llevan esa sal hasta el mar. En el mar, el Sol evapora el agua (que se convierte en vapor y vuelve a caer como lluvia), pero la sal no se evapora: se queda allí. Esto ha ocurrido durante millones de años, así que la sal se ha ido acumulando cada vez más en el agua del mar.",
+    "experiment": "Pide a un adulto que te ayude a disolver una cucharada de sal en un vaso de agua y prueba una gotita (con cuidado). Así sabe el agua del mar, pero mucho más concentrada."
+  },
+  {
+    "id": "arco-iris-formacao",
+    "emoji": "🌈",
+    "question": "¿Cómo se forman los arcoíris?",
+    "quickAnswer": "Los arcoíris se forman cuando la luz del Sol atraviesa gotas de lluvia y se separa en los colores que la componen, como un prisma.",
+    "moreAnswer": "La luz del Sol parece blanca, pero en realidad está hecha de varios colores mezclados. Cuando un rayo de sol entra en una gota de lluvia, cambia de dirección (se refracta), se refleja dentro de la gota y sale de nuevo, cambiando otra vez de dirección. En este proceso, cada color se desvía de forma ligeramente distinta, así que los colores se separan, formando el arco de colores que vemos: rojo, naranja, amarillo, verde, azul, añil y violeta. Por eso solo vemos arcoíris cuando hay sol y lluvia al mismo tiempo, y siempre con la espalda hacia el Sol.",
+    "experiment": "Con la espalda hacia el Sol, usa una manguera o un pulverizador de agua para crear tu propio arcoíris."
+  },
+  {
+    "id": "sono-necessidade",
+    "emoji": "🛌",
+    "question": "¿Por qué necesitamos dormir?",
+    "quickAnswer": "Necesitamos dormir para que el cuerpo descanse, el cerebro guarde lo que aprendemos y para crecer sanos y fuertes.",
+    "moreAnswer": "Mientras dormimos, ocurren cosas muy importantes que no podemos ver: el cerebro organiza los recuerdos del día, como si ordenara un cajón lleno de información nueva. El cuerpo aprovecha para reparar los músculos, producir hormonas de crecimiento y reforzar las defensas contra las enfermedades. Los niños necesitan dormir incluso más horas que los adultos, porque están creciendo y su cerebro está siempre aprendiendo cosas nuevas. Sin dormir lo suficiente, nos cansamos, se nos olvidan las cosas y estamos más gruñones.",
+    "experiment": "Durante una semana, apunta a qué hora te acuestas y te levantas. ¿En los días que dormiste más te sientes diferente?"
   }
 ]

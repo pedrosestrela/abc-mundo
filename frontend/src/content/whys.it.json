@@ -110,5 +110,85 @@
     "quickAnswer": "Le formiche lasciano una traccia di odore sul percorso verso il cibo, e le altre formiche seguono quell'odore, formando una fila.",
     "moreAnswer": "Quando una formica trova del cibo, sulla via del ritorno al formicaio lascia sul terreno una sostanza chiamata feromone, con un odore che solo le formiche riescono a percepire. Le altre formiche seguono quell'odore per raggiungere lo stesso cibo, e camminando lasciano anch'esse altro feromone, rinforzando la traccia. Così si forma la fila ordinata.",
     "experiment": "Se vedi una fila di formiche, osserva con attenzione (senza disturbarle) il percorso che fanno: di solito è sempre lo stesso tragitto."
+  },
+  {
+    "id": "soluco",
+    "emoji": "😅",
+    "question": "Perché abbiamo il singhiozzo?",
+    "quickAnswer": "Il singhiozzo si verifica quando il diaframma, il muscolo che ci aiuta a respirare, si contrae improvvisamente senza volerlo.",
+    "moreAnswer": "Il diaframma è il muscolo sotto i polmoni che si muove ogni volta che respiriamo. A volte, mangiando troppo in fretta, ridendo molto o bevendo una bibita gassata, il diaframma si contrae in modo brusco e improvviso. Questo fa entrare aria all'improvviso e le corde vocali si chiudono, producendo il suono \"hic\". Il singhiozzo di solito scompare da solo dopo qualche minuto.",
+    "experiment": "La prossima volta che hai il singhiozzo, prova a bere acqua a piccoli sorsi lentamente e vedi se aiuta."
+  },
+  {
+    "id": "gato-ronronar",
+    "emoji": "🐱",
+    "question": "Perché i gatti fanno le fusa?",
+    "quickAnswer": "I gatti fanno le fusa per mostrare che sono contenti, ma anche quando sono nervosi o si stanno curando, perché le fusa li aiutano a calmarsi.",
+    "moreAnswer": "Gli scienziati stanno ancora studiando esattamente come i gatti producano le fusa, ma credono che derivino da vibrazioni molto rapide nella laringe, la parte della gola dove si trovano le corde vocali. I gatti fanno le fusa quando sono rilassati e felici, ma anche quando hanno dolore o paura: sembra che il suono li aiuti a calmarsi da soli. Alcuni studi mostrano persino che la frequenza delle fusa può aiutare a guarire ossa e muscoli più in fretta.",
+    "experiment": "Se hai o conosci un gatto, osserva quando fa le fusa di più: mentre dorme, mentre viene accarezzato o vicino al cibo?"
+  },
+  {
+    "id": "vento-origem",
+    "emoji": "💨",
+    "question": "Da dove viene il vento?",
+    "quickAnswer": "Il vento è aria in movimento. Si forma quando l'aria calda sale e l'aria fredda scende per prendere il suo posto.",
+    "moreAnswer": "Il Sole non riscalda la Terra allo stesso modo ovunque: alcune zone diventano più calde e altre restano più fredde. L'aria calda è più leggera e sale, mentre l'aria fredda, più pesante, scende per occupare lo spazio lasciato libero. Questo movimento d'aria da un posto all'altro è il vento. Più grande è la differenza di temperatura tra due luoghi, più forte soffia il vento.",
+    "experiment": "Costruisci una girandola di carta e portala in diversi punti della casa o del giardino. Dove gira più veloce?"
+  },
+  {
+    "id": "estrelas-brilham",
+    "emoji": "✨",
+    "question": "Perché le stelle brillano di notte ma non di giorno?",
+    "quickAnswer": "Le stelle sono sempre nel cielo, ma di giorno la luce fortissima del Sole nasconde la luce debole delle stelle.",
+    "moreAnswer": "Il Sole è la stella più vicina a noi, quindi la sua luce ci arriva molto più forte di quella di qualsiasi altra stella, che si trova ad anni luce di distanza. Durante il giorno, la luce del Sole si diffonde nell'atmosfera e illumina tutto, rendendo il cielo troppo luminoso per vedere la debole luce delle stelle lontane. Di notte, senza il Sole che abbaglia tutto, riusciamo finalmente a vedere le stelle brillare.",
+    "experiment": "In una notte senza nuvole, lontano dalle luci della città se possibile, conta quante stelle riesci a vedere in 1 minuto."
+  },
+  {
+    "id": "gelo-flutua",
+    "emoji": "🧊",
+    "question": "Perché il ghiaccio galleggia sull'acqua?",
+    "quickAnswer": "Il ghiaccio galleggia perché, quando l'acqua gela, occupa più spazio e diventa meno denso dell'acqua liquida.",
+    "moreAnswer": "La maggior parte delle sostanze diventa più compatta quando si raffredda, ma l'acqua è diversa: quando gela, le sue molecole si organizzano in una struttura che occupa più spazio, rendendo il ghiaccio meno denso dell'acqua liquida. Essendo meno denso, il ghiaccio galleggia invece di affondare. Questo è molto importante per la vita nei laghi e nei mari freddi: il ghiaccio forma uno strato in superficie che protegge dal freddo estremo gli animali che vivono sotto.",
+    "experiment": "Metti un cubetto di ghiaccio in un bicchiere d'acqua e osserva quanto rimane sopra e sotto la superficie."
+  },
+  {
+    "id": "aves-migracao",
+    "emoji": "🦢",
+    "question": "Come fanno gli uccelli a sapere dove migrare?",
+    "quickAnswer": "Gli uccelli usano il Sole, le stelle, il campo magnetico terrestre e persino punti di riferimento a terra per orientarsi nei loro lunghi viaggi.",
+    "moreAnswer": "Molte specie di uccelli compiono ogni anno viaggi enormi, in cerca di un clima più mite o di più cibo. Per orientarsi, usano diversi indizi contemporaneamente: la posizione del Sole di giorno, le stelle di notte, e riescono persino a percepire il campo magnetico terrestre, quasi come se avessero una bussola incorporata. Alcuni riconoscono anche fiumi, montagne e coste già sorvolate in precedenza. Gli uccelli più giovani spesso imparano il percorso volando accanto a quelli più anziani.",
+    "experiment": "Se vedi uno stormo di uccelli volare a forma di V, osserva come si organizzano: quella formazione li aiuta a risparmiare energia durante il viaggio."
+  },
+  {
+    "id": "bocejo",
+    "emoji": "🥱",
+    "question": "Perché sbadigliamo?",
+    "quickAnswer": "Sbadigliamo quando siamo stanchi o annoiati, e gli scienziati pensano che questo aiuti a raffreddare e risvegliare il cervello.",
+    "moreAnswer": "Nessuno sa con certezza perché sbadigliamo, ma una delle idee più accettate è che lo sbadiglio aiuti a raffreddare il cervello, rendendolo più sveglio. Sbadigliamo anche di più quando siamo stanchi, annoiati, o persino solo vedendo un'altra persona sbadigliare: lo sbadiglio è molto contagioso! Questo può accadere perché il nostro cervello ha \"neuroni specchio\", che ci fanno copiare automaticamente certi comportamenti delle persone intorno a noi.",
+    "experiment": "Prova a sbadigliare vicino a un familiare e osserva quanto tempo impiega anche lui a sbadigliare."
+  },
+  {
+    "id": "mar-salgado",
+    "emoji": "🌊",
+    "question": "Perché il mare è salato?",
+    "quickAnswer": "Il mare è salato perché i fiumi, scorrendo sulle rocce e sulla terra, trasportano piccole quantità di sale fino a lui, e l'acqua che evapora lascia il sale.",
+    "moreAnswer": "Quando piove, l'acqua che scorre nei fiumi passa su rocce e terreno, sciogliendo minerali e sali molto piccoli. Questi fiumi portano quel sale fino al mare. Nel mare, il Sole fa evaporare l'acqua (che diventa vapore e ricade come pioggia), ma il sale non evapora: rimane lì. Questo accade da milioni di anni, quindi il sale si è accumulato sempre di più nell'acqua del mare.",
+    "experiment": "Chiedi a un adulto di aiutarti a sciogliere un cucchiaio di sale in un bicchiere d'acqua e assaggia una goccia (con attenzione). È un po' così, ma molto più concentrata, che sa l'acqua di mare."
+  },
+  {
+    "id": "arco-iris-formacao",
+    "emoji": "🌈",
+    "question": "Come si formano gli arcobaleni?",
+    "quickAnswer": "Gli arcobaleni si formano quando la luce del Sole attraversa le gocce di pioggia e si separa nei colori che la compongono, come un prisma.",
+    "moreAnswer": "La luce del Sole sembra bianca, ma in realtà è composta da diversi colori mescolati. Quando un raggio di sole entra in una goccia di pioggia, cambia direzione (si rifrange), si riflette all'interno della goccia ed esce di nuovo, cambiando ancora direzione. In questo processo, ogni colore devia in modo leggermente diverso, quindi i colori si separano, formando l'arco di colori che vediamo: rosso, arancione, giallo, verde, blu, indaco e viola. Per questo vediamo l'arcobaleno solo quando c'è sole e pioggia insieme, e sempre con le spalle rivolte al Sole.",
+    "experiment": "Con le spalle rivolte al Sole, usa un tubo da giardino o uno spruzzino d'acqua per creare il tuo arcobaleno."
+  },
+  {
+    "id": "sono-necessidade",
+    "emoji": "🛌",
+    "question": "Perché abbiamo bisogno di dormire?",
+    "quickAnswer": "Abbiamo bisogno di dormire perché il corpo si riposi, il cervello memorizzi ciò che abbiamo imparato e per crescere sani e forti.",
+    "moreAnswer": "Mentre dormiamo, succedono cose molto importanti che non possiamo vedere: il cervello organizza i ricordi della giornata, come se sistemasse un cassetto pieno di nuove informazioni. Il corpo ne approfitta per riparare i muscoli, produrre ormoni della crescita e rafforzare le difese contro le malattie. I bambini hanno bisogno di dormire ancora più ore degli adulti, perché stanno crescendo e il loro cervello impara continuamente cose nuove. Senza dormire abbastanza, diventiamo stanchi, smemorati e più irritabili.",
+    "experiment": "Per una settimana, annota a che ora vai a letto e ti svegli. Nei giorni in cui hai dormito di più, ti senti diverso?"
   }
 ]

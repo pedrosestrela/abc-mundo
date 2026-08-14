@@ -103,5 +103,75 @@
     "emoji": "🥬",
     "isFact": false,
     "explanation": "Opinion ! Les goûts sont personnels — ce qui est délicieux pour certains peut ne pas l'être pour d'autres, et ce n'est pas grave du tout."
+  },
+  {
+    "id": "d16",
+    "statement": "Le miel ne se gâte jamais s'il est bien conservé.",
+    "emoji": "🍯",
+    "isFact": true,
+    "explanation": "C'est un fait ! Des archéologues ont trouvé du miel dans des tombes égyptiennes vieilles de plusieurs milliers d'années, encore bon à manger, grâce à sa faible teneur en eau et à son acidité."
+  },
+  {
+    "id": "d17",
+    "statement": "Manger des carottes permet de voir dans le noir.",
+    "emoji": "🥕",
+    "isFact": false,
+    "explanation": "C'est un mythe ! Les carottes contiennent de la vitamine A, bonne pour les yeux, mais elles ne donnent pas de super-vision nocturne. Ce mythe est devenu célèbre pendant la Seconde Guerre mondiale."
+  },
+  {
+    "id": "d18",
+    "statement": "Lire des livres est plus amusant que regarder des dessins animés.",
+    "emoji": "📖",
+    "isFact": false,
+    "explanation": "C'est une opinion ! Certaines personnes préfèrent lire, d'autres préfèrent les dessins animés. Il n'y a pas de bonne réponse — cela dépend des goûts de chacun."
+  },
+  {
+    "id": "d19",
+    "statement": "Les poulpes ont trois cœurs.",
+    "emoji": "🐙",
+    "isFact": true,
+    "explanation": "C'est un fait ! Deux cœurs pompent le sang vers les branchies et le troisième le pompe vers le reste du corps. On peut le vérifier dans des livres de biologie marine."
+  },
+  {
+    "id": "d20",
+    "statement": "Si tu avales un chewing-gum, il reste dans ton estomac pendant 7 ans.",
+    "emoji": "🍬",
+    "isFact": false,
+    "explanation": "C'est un mythe très répandu ! Le corps ne peut pas digérer le chewing-gum, mais il traverse le système digestif comme tout ce qui ne se digère pas, généralement en quelques jours."
+  },
+  {
+    "id": "d21",
+    "statement": "L'été est la meilleure saison de l'année.",
+    "emoji": "☀️",
+    "isFact": false,
+    "explanation": "C'est une opinion ! Certains adorent la chaleur de l'été, d'autres préfèrent le froid de l'hiver ou les couleurs de l'automne. Les préférences sur les saisons varient aussi."
+  },
+  {
+    "id": "d22",
+    "statement": "Le Portugal a été le premier pays à atteindre l'Inde par la mer depuis l'Europe.",
+    "emoji": "⛵",
+    "isFact": true,
+    "explanation": "C'est un fait historique ! Vasco de Gama a atteint l'Inde en 1498, en contournant l'Afrique, et tu peux le vérifier dans des livres d'Histoire."
+  },
+  {
+    "id": "d23",
+    "statement": "La lumière du Soleil met environ 8 minutes à atteindre la Terre.",
+    "emoji": "☀️",
+    "isFact": true,
+    "explanation": "C'est un fait ! On peut le calculer en connaissant la vitesse de la lumière et la distance au Soleil — les scientifiques confirment toujours le même nombre."
+  },
+  {
+    "id": "d24",
+    "statement": "Un message que tu as reçu dit que tu vas gagner un téléphone gratuit si tu cliques sur un lien. Dois-tu le croire ?",
+    "emoji": "📱",
+    "isFact": false,
+    "explanation": "Bon réflexe de te méfier ! Ces messages sont souvent des arnaques pour voler des données ou de l'argent. Ne clique jamais sur ces liens tout seul — montre-les toujours d'abord à un adulte de confiance."
+  },
+  {
+    "id": "d25",
+    "statement": "Si tu passes trop de temps devant l'ordinateur, tes yeux deviennent carrés.",
+    "emoji": "💻",
+    "isFact": false,
+    "explanation": "C'est un mythe et une blague ! Passer beaucoup de temps devant les écrans peut fatiguer les yeux, mais ne change pas leur forme. Il reste quand même important de faire des pauses."
   }
 ]

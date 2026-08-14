@@ -103,5 +103,75 @@
     "emoji": "🥬",
     "isFact": false,
     "explanation": "¡Opinión! Los sabores son personales — lo que es delicioso para unos puede no serlo para otros, y eso está perfectamente bien."
+  },
+  {
+    "id": "d16",
+    "statement": "La miel nunca se estropea si se guarda bien.",
+    "emoji": "🍯",
+    "isFact": true,
+    "explanation": "¡Es un hecho! Los arqueólogos han encontrado miel en tumbas egipcias de miles de años que todavía estaba en buen estado para comer, gracias a su poca agua y a su acidez."
+  },
+  {
+    "id": "d17",
+    "statement": "Comer zanahorias hace que veamos en la oscuridad.",
+    "emoji": "🥕",
+    "isFact": false,
+    "explanation": "¡Es un mito! Las zanahorias tienen vitamina A, buena para los ojos, pero no te dan supervisión en la oscuridad. Este mito se hizo famoso durante la Segunda Guerra Mundial."
+  },
+  {
+    "id": "d18",
+    "statement": "Leer libros es más divertido que ver dibujos animados.",
+    "emoji": "📖",
+    "isFact": false,
+    "explanation": "¡Es una opinión! Unas personas prefieren leer, otras prefieren ver dibujos animados. No hay una respuesta correcta: depende del gusto de cada uno."
+  },
+  {
+    "id": "d19",
+    "statement": "Los pulpos tienen tres corazones.",
+    "emoji": "🐙",
+    "isFact": true,
+    "explanation": "¡Es un hecho! Dos corazones bombean sangre a las branquias y el tercero la bombea al resto del cuerpo. Se puede comprobar en libros de biología marina."
+  },
+  {
+    "id": "d20",
+    "statement": "Si te tragas un chicle, se queda en tu estómago durante 7 años.",
+    "emoji": "🍬",
+    "isFact": false,
+    "explanation": "¡Es un mito muy extendido! El cuerpo no puede digerir el chicle, pero pasa por el sistema digestivo como cualquier otra cosa que no se digiere, normalmente en pocos días."
+  },
+  {
+    "id": "d21",
+    "statement": "El verano es la mejor estación del año.",
+    "emoji": "☀️",
+    "isFact": false,
+    "explanation": "¡Es una opinión! A algunos les encanta el calor del verano y otros prefieren el frío del invierno o los colores del otoño. Los gustos sobre las estaciones también varían."
+  },
+  {
+    "id": "d22",
+    "statement": "Portugal fue el primer país en llegar a la India por mar desde Europa.",
+    "emoji": "⛵",
+    "isFact": true,
+    "explanation": "¡Es un hecho histórico! Vasco da Gama llegó a la India en 1498, bordeando África, y puedes confirmarlo en libros de Historia."
+  },
+  {
+    "id": "d23",
+    "statement": "La luz del Sol tarda unos 8 minutos en llegar a la Tierra.",
+    "emoji": "☀️",
+    "isFact": true,
+    "explanation": "¡Es un hecho! Se puede calcular conociendo la velocidad de la luz y la distancia al Sol; los científicos siempre confirman el mismo número."
+  },
+  {
+    "id": "d24",
+    "statement": "Un mensaje que recibiste dice que ganarás un móvil gratis si haces clic en un enlace. ¿Deberías creerlo?",
+    "emoji": "📱",
+    "isFact": false,
+    "explanation": "¡Buena idea desconfiar! Estos mensajes suelen ser estafas para robar datos o dinero. Nunca hagas clic en esos enlaces tú solo: muéstraselos siempre primero a un adulto de confianza."
+  },
+  {
+    "id": "d25",
+    "statement": "Si pasas mucho tiempo delante del ordenador, los ojos se te ponen cuadrados.",
+    "emoji": "💻",
+    "isFact": false,
+    "explanation": "¡Es un mito y una broma! Pasar mucho tiempo frente a pantallas puede cansar los ojos, pero no cambia su forma. Aun así, es importante hacer pausas."
   }
 ]

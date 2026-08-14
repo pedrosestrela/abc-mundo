@@ -1,24 +1,261 @@
 [
-  { "id": "folhas", "emoji": "🌳", "text": "Geh nach draußen oder ans Fenster und finde 3 verschiedene Blätter.", "category": "natur", "supervision": "allein" },
-  { "id": "letra-c", "emoji": "🔎", "text": "Finde zu Hause 5 Gegenstände, die mit dem Buchstaben C beginnen.", "category": "buchstaben", "supervision": "allein" },
-  { "id": "medir-mesa", "emoji": "📏", "text": "Miss den Küchentisch mit deinen eigenen Schritten. Wie viele Schritte sind es?", "category": "mathe", "supervision": "allein" },
-  { "id": "gelo-derrete", "emoji": "🧊", "text": "Leg einen Eiswürfel auf einen Teller. Wie lange dauert es, bis er schmilzt?", "category": "wissenschaft", "supervision": "erwachsener" },
-  { "id": "procura-lua", "emoji": "🌙", "text": "Suche heute Abend den Mond am Himmel. Welche Form hat er?", "category": "natur", "supervision": "allein" },
-  { "id": "supermercado-2euros", "emoji": "🛒", "text": "Finde im Supermarkt etwas, das weniger als 2€ kostet.", "category": "geld", "supervision": "erwachsener" },
-  { "id": "separar-meias", "emoji": "🧦", "text": "Sortiere die sauberen Socken nach Farben.", "category": "alltag", "supervision": "allein" },
-  { "id": "contar-passaros", "emoji": "🐦", "text": "Setz dich 5 Minuten ans Fenster. Wie viele Vögel siehst du?", "category": "natur", "supervision": "allein" },
-  { "id": "3-palavras-livro", "emoji": "📚", "text": "Wähle ein Buch und finde 3 Wörter, die du schon lesen kannst.", "category": "lesen", "supervision": "allein" },
-  { "id": "dobra-roupa", "emoji": "👕", "text": "Hilf mit, 5 Kleidungsstücke zusammenzulegen.", "category": "alltag", "supervision": "allein" },
-  { "id": "desenha-animal", "emoji": "🎨", "text": "Zeichne ein Tier, das es noch nicht gibt. Gib ihm einen Namen!", "category": "kreativität", "supervision": "allein" },
-  { "id": "salta-10", "emoji": "🏃", "text": "Mach 10 Sprünge und geh dann wie eine Krabbe bis zur Tür.", "category": "bewegung", "supervision": "allein" },
-  { "id": "objeto-vermelho", "emoji": "🔴", "text": "Lauf los und finde 3 rote Dinge zu Hause.", "category": "bewegung", "supervision": "allein" },
-  { "id": "bate-ritmo", "emoji": "🥁", "text": "Klatsche einen Rhythmus. Kann jemand zu Hause ihn nachmachen?", "category": "musik", "supervision": "allein" },
-  { "id": "ponte-papel", "emoji": "🌉", "text": "Baue eine Brücke aus Papier oder Karton zwischen zwei Stühlen.", "category": "technik", "supervision": "allein" },
-  { "id": "flutua-afunda", "emoji": "🛁", "text": "Finde in der Badewanne 3 Dinge, die schwimmen, und 3, die sinken.", "category": "wissenschaft", "supervision": "erwachsener" },
-  { "id": "avo-brincadeira", "emoji": "👴", "text": "Frag Oma oder Opa, welche Spiele sie als Kind gespielt haben.", "category": "familie", "supervision": "allein" },
-  { "id": "arruma-mochila", "emoji": "🎒", "text": "Pack ganz allein deinen Schulranzen für morgen.", "category": "alltag", "supervision": "allein" },
-  { "id": "lanche-simples", "emoji": "🥪", "text": "Bereite mit Hilfe eines Erwachsenen einen einfachen Snack zu (z. B. ein Sandwich).", "category": "kochen", "supervision": "erwachsener" },
-  { "id": "conta-colheres", "emoji": "🥄", "text": "Hilf beim Tischdecken und zähle, wie viele Löffel und Gabeln gebraucht werden.", "category": "kochen", "supervision": "allein" },
-  { "id": "planta-semente", "emoji": "🌱", "text": "Pflanze einen Samen in einen Becher mit Erde und gieße ihn. Beobachte ihn jeden Tag.", "category": "natur", "supervision": "erwachsener" },
-  { "id": "atacadores", "emoji": "👟", "text": "Übe, deine Schuhe allein zuzubinden.", "category": "alltag", "supervision": "allein" }
+  {
+    "id": "folhas",
+    "emoji": "🌳",
+    "text": "Geh nach draußen oder ans Fenster und finde 3 verschiedene Blätter.",
+    "category": "natur",
+    "supervision": "allein"
+  },
+  {
+    "id": "letra-c",
+    "emoji": "🔎",
+    "text": "Finde zu Hause 5 Gegenstände, die mit dem Buchstaben C beginnen.",
+    "category": "buchstaben",
+    "supervision": "allein"
+  },
+  {
+    "id": "medir-mesa",
+    "emoji": "📏",
+    "text": "Miss den Küchentisch mit deinen eigenen Schritten. Wie viele Schritte sind es?",
+    "category": "mathe",
+    "supervision": "allein"
+  },
+  {
+    "id": "gelo-derrete",
+    "emoji": "🧊",
+    "text": "Leg einen Eiswürfel auf einen Teller. Wie lange dauert es, bis er schmilzt?",
+    "category": "wissenschaft",
+    "supervision": "erwachsener"
+  },
+  {
+    "id": "procura-lua",
+    "emoji": "🌙",
+    "text": "Suche heute Abend den Mond am Himmel. Welche Form hat er?",
+    "category": "natur",
+    "supervision": "allein"
+  },
+  {
+    "id": "supermercado-2euros",
+    "emoji": "🛒",
+    "text": "Finde im Supermarkt etwas, das weniger als 2€ kostet.",
+    "category": "geld",
+    "supervision": "erwachsener"
+  },
+  {
+    "id": "separar-meias",
+    "emoji": "🧦",
+    "text": "Sortiere die sauberen Socken nach Farben.",
+    "category": "alltag",
+    "supervision": "allein"
+  },
+  {
+    "id": "contar-passaros",
+    "emoji": "🐦",
+    "text": "Setz dich 5 Minuten ans Fenster. Wie viele Vögel siehst du?",
+    "category": "natur",
+    "supervision": "allein"
+  },
+  {
+    "id": "3-palavras-livro",
+    "emoji": "📚",
+    "text": "Wähle ein Buch und finde 3 Wörter, die du schon lesen kannst.",
+    "category": "lesen",
+    "supervision": "allein"
+  },
+  {
+    "id": "dobra-roupa",
+    "emoji": "👕",
+    "text": "Hilf mit, 5 Kleidungsstücke zusammenzulegen.",
+    "category": "alltag",
+    "supervision": "allein"
+  },
+  {
+    "id": "desenha-animal",
+    "emoji": "🎨",
+    "text": "Zeichne ein Tier, das es noch nicht gibt. Gib ihm einen Namen!",
+    "category": "kreativität",
+    "supervision": "allein"
+  },
+  {
+    "id": "salta-10",
+    "emoji": "🏃",
+    "text": "Mach 10 Sprünge und geh dann wie eine Krabbe bis zur Tür.",
+    "category": "bewegung",
+    "supervision": "allein"
+  },
+  {
+    "id": "objeto-vermelho",
+    "emoji": "🔴",
+    "text": "Lauf los und finde 3 rote Dinge zu Hause.",
+    "category": "bewegung",
+    "supervision": "allein"
+  },
+  {
+    "id": "bate-ritmo",
+    "emoji": "🥁",
+    "text": "Klatsche einen Rhythmus. Kann jemand zu Hause ihn nachmachen?",
+    "category": "musik",
+    "supervision": "allein"
+  },
+  {
+    "id": "ponte-papel",
+    "emoji": "🌉",
+    "text": "Baue eine Brücke aus Papier oder Karton zwischen zwei Stühlen.",
+    "category": "technik",
+    "supervision": "allein"
+  },
+  {
+    "id": "flutua-afunda",
+    "emoji": "🛁",
+    "text": "Finde in der Badewanne 3 Dinge, die schwimmen, und 3, die sinken.",
+    "category": "wissenschaft",
+    "supervision": "erwachsener"
+  },
+  {
+    "id": "avo-brincadeira",
+    "emoji": "👴",
+    "text": "Frag Oma oder Opa, welche Spiele sie als Kind gespielt haben.",
+    "category": "familie",
+    "supervision": "allein"
+  },
+  {
+    "id": "arruma-mochila",
+    "emoji": "🎒",
+    "text": "Pack ganz allein deinen Schulranzen für morgen.",
+    "category": "alltag",
+    "supervision": "allein"
+  },
+  {
+    "id": "lanche-simples",
+    "emoji": "🥪",
+    "text": "Bereite mit Hilfe eines Erwachsenen einen einfachen Snack zu (z. B. ein Sandwich).",
+    "category": "kochen",
+    "supervision": "erwachsener"
+  },
+  {
+    "id": "conta-colheres",
+    "emoji": "🥄",
+    "text": "Hilf beim Tischdecken und zähle, wie viele Löffel und Gabeln gebraucht werden.",
+    "category": "kochen",
+    "supervision": "allein"
+  },
+  {
+    "id": "planta-semente",
+    "emoji": "🌱",
+    "text": "Pflanze einen Samen in einen Becher mit Erde und gieße ihn. Beobachte ihn jeden Tag.",
+    "category": "natur",
+    "supervision": "erwachsener"
+  },
+  {
+    "id": "atacadores",
+    "emoji": "👟",
+    "text": "Übe, deine Schuhe allein zuzubinden.",
+    "category": "alltag",
+    "supervision": "allein"
+  },
+  {
+    "id": "formas-nuvens",
+    "emoji": "☁️",
+    "text": "Leg dich ins Gras oder setz dich ans Fenster und beobachte 5 Minuten lang die Wolken. Welche Formen kannst du erkennen?",
+    "category": "natur",
+    "supervision": "allein"
+  },
+  {
+    "id": "conta-carros",
+    "emoji": "🚗",
+    "text": "Zähle mit einem Erwachsenen an einer Straße, wie viele rote Autos in 5 Minuten vorbeifahren.",
+    "category": "mathe",
+    "supervision": "erwachsener"
+  },
+  {
+    "id": "palavra-nova",
+    "emoji": "🗣️",
+    "text": "Bitte jemanden aus deiner Familie, dir ein neues Wort in einer anderen Sprache beizubringen.",
+    "category": "familie",
+    "supervision": "allein"
+  },
+  {
+    "id": "aviao-papel",
+    "emoji": "✈️",
+    "text": "Bastle ein Papierflugzeug und teste, wie weit es fliegen kann. Versuche, es zu verbessern!",
+    "category": "technik",
+    "supervision": "allein"
+  },
+  {
+    "id": "separa-reciclagem",
+    "emoji": "♻️",
+    "text": "Sortiere mit einem Erwachsenen den Hausmüll in die richtigen Tonnen: Papier, Plastik und Glas.",
+    "category": "alltag",
+    "supervision": "erwachsener"
+  },
+  {
+    "id": "nota-obrigado",
+    "emoji": "💌",
+    "text": "Schreib oder male eine Dankeskarte für jemanden Besonderen und schenke sie ihm.",
+    "category": "kreativität",
+    "supervision": "allein"
+  },
+  {
+    "id": "sombra-contorno",
+    "emoji": "🌗",
+    "text": "Zeichne an einem sonnigen Tag den Umriss deines Schattens mit Kreide auf den Boden. Wie verändert er sich im Laufe des Tages?",
+    "category": "wissenschaft",
+    "supervision": "allein"
+  },
+  {
+    "id": "letras-rua",
+    "emoji": "🚏",
+    "text": "Finde bei einem Spaziergang Schilder oder Ladennamen mit 5 verschiedenen Buchstaben des Alphabets.",
+    "category": "buchstaben",
+    "supervision": "erwachsener"
+  },
+  {
+    "id": "conta-moedas",
+    "emoji": "🪙",
+    "text": "Zähle die Münzen, die du in einem Sparschwein oder einer Schublade findest. Wie viel Geld ist das insgesamt?",
+    "category": "geld",
+    "supervision": "erwachsener"
+  },
+  {
+    "id": "salta-corda",
+    "emoji": "🪢",
+    "text": "Spring 20 Mal hintereinander Seil, ohne anzuhalten. Schaffst du morgen einen neuen Rekord?",
+    "category": "bewegung",
+    "supervision": "allein"
+  },
+  {
+    "id": "instrumento-caseiro",
+    "emoji": "🪇",
+    "text": "Bau mit Hilfe eines Erwachsenen ein Musikinstrument aus einer Flasche und Reis oder Bohnen.",
+    "category": "musik",
+    "supervision": "erwachsener"
+  },
+  {
+    "id": "torre-copos",
+    "emoji": "🥤",
+    "text": "Baue den höchsten Turm, den du kannst, aus Plastikbechern. Wie viele hast du benutzt?",
+    "category": "technik",
+    "supervision": "allein"
+  },
+  {
+    "id": "mapa-tesouro",
+    "emoji": "🗺️",
+    "text": "Zeichne eine Schatzkarte von deinem Zuhause und verstecke einen „Schatz\", den jemand finden soll.",
+    "category": "kreativität",
+    "supervision": "allein"
+  },
+  {
+    "id": "ajuda-receita",
+    "emoji": "🍳",
+    "text": "Hilf einem Erwachsenen, ein einfaches Rezept zuzubereiten, und zähle, wie viele Zutaten ihr benutzt habt.",
+    "category": "kochen",
+    "supervision": "erwachsener"
+  },
+  {
+    "id": "imita-animais",
+    "emoji": "🐾",
+    "text": "Ahme das Geräusch und die Bewegung von 5 verschiedenen Tieren nach. Kann jemand erraten, welche es sind?",
+    "category": "bewegung",
+    "supervision": "allein"
+  }
 ]

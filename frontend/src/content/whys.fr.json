@@ -110,5 +110,85 @@
     "quickAnswer": "Les fourmis laissent une piste odorante sur le chemin vers la nourriture, et les autres fourmis suivent cette odeur, formant une file.",
     "moreAnswer": "Quand une fourmi trouve de la nourriture, sur le chemin du retour vers la fourmilière, elle laisse au sol une substance appelée phéromone, dont l'odeur n'est détectable que par les fourmis. Les autres fourmis suivent cette odeur pour atteindre la même nourriture, et en marchant elles laissent elles aussi plus de phéromone, renforçant la piste. C'est ainsi que se forme la file organisée.",
     "experiment": "Si tu vois une file de fourmis, observe attentivement (sans les déranger) le chemin qu'elles empruntent — c'est souvent toujours le même trajet."
+  },
+  {
+    "id": "soluco",
+    "emoji": "😅",
+    "question": "Pourquoi a-t-on le hoquet ?",
+    "quickAnswer": "Le hoquet arrive quand le diaphragme, le muscle qui t'aide à respirer, se contracte soudainement sans le vouloir.",
+    "moreAnswer": "Le diaphragme est le muscle sous les poumons qui bouge à chaque respiration. Parfois, en mangeant trop vite, en riant beaucoup ou en buvant une boisson gazeuse, le diaphragme se contracte brusquement et sans prévenir. Cela fait entrer l'air d'un coup et les cordes vocales se referment, produisant le son « hic ». Le hoquet disparaît généralement tout seul après quelques minutes.",
+    "experiment": "La prochaine fois que tu as le hoquet, essaie de boire de l'eau à petites gorgées lentement et vois si ça aide."
+  },
+  {
+    "id": "gato-ronronar",
+    "emoji": "🐱",
+    "question": "Pourquoi les chats ronronnent-ils ?",
+    "quickAnswer": "Les chats ronronnent pour montrer qu'ils sont contents, mais aussi quand ils sont nerveux ou en train de guérir, car ronronner les aide à se calmer.",
+    "moreAnswer": "Les scientifiques étudient encore exactement comment les chats produisent ce son, mais ils pensent qu'il vient de vibrations très rapides dans le larynx, la partie de la gorge où se trouvent les cordes vocales. Les chats ronronnent quand ils sont détendus et heureux, mais aussi quand ils ont mal ou peur — le son semble les aider à se rassurer eux-mêmes. Certaines études montrent même que la fréquence du ronronnement pourrait aider à guérir les os et les muscles plus vite.",
+    "experiment": "Si tu as ou connais un chat, observe quand il ronronne le plus : en dormant, en étant caressé ou près de la nourriture ?"
+  },
+  {
+    "id": "vento-origem",
+    "emoji": "💨",
+    "question": "D'où vient le vent ?",
+    "quickAnswer": "Le vent, c'est de l'air en mouvement. Il se forme quand l'air chaud monte et que l'air froid descend pour prendre sa place.",
+    "moreAnswer": "Le Soleil ne réchauffe pas la Terre de la même façon partout — certains endroits deviennent plus chauds, d'autres restent plus froids. L'air chaud est plus léger et monte, tandis que l'air froid, plus lourd, descend pour occuper l'espace laissé. Ce mouvement d'air d'un endroit à un autre, c'est le vent. Plus la différence de température entre deux endroits est grande, plus le vent souffle fort.",
+    "experiment": "Fabrique un moulin à vent en papier et emmène-le dans différents endroits de la maison ou du jardin. Où tourne-t-il le plus vite ?"
+  },
+  {
+    "id": "estrelas-brilham",
+    "emoji": "✨",
+    "question": "Pourquoi les étoiles brillent-elles la nuit mais pas le jour ?",
+    "quickAnswer": "Les étoiles sont toujours dans le ciel, mais le jour, la lumière si forte du Soleil cache leur lumière très faible.",
+    "moreAnswer": "Le Soleil est l'étoile la plus proche de nous, donc sa lumière nous arrive bien plus forte que celle de n'importe quelle autre étoile, situées à des années-lumière. Le jour, la lumière du Soleil se répand dans l'atmosphère et illumine tout, rendant le ciel trop lumineux pour voir la faible lumière des étoiles lointaines. La nuit, sans le Soleil qui éblouit tout, on peut enfin voir les étoiles scintiller.",
+    "experiment": "Par une nuit sans nuages, loin des lumières de la ville si possible, compte combien d'étoiles tu peux voir en 1 minute."
+  },
+  {
+    "id": "gelo-flutua",
+    "emoji": "🧊",
+    "question": "Pourquoi la glace flotte-t-elle sur l'eau ?",
+    "quickAnswer": "La glace flotte parce que, en gelant, l'eau prend plus de place et devient moins dense que l'eau liquide.",
+    "moreAnswer": "La plupart des substances deviennent plus compactes en refroidissant, mais l'eau est différente : en gelant, ses molécules s'organisent en une structure qui prend plus de place, rendant la glace moins dense que l'eau liquide. Comme elle est moins dense, la glace flotte au lieu de couler. C'est très important pour la vie dans les lacs et les mers froides — la glace forme une couche à la surface qui protège du froid extrême les animaux qui vivent en dessous.",
+    "experiment": "Mets un glaçon dans un verre d'eau et observe quelle partie reste au-dessus et en dessous de la surface."
+  },
+  {
+    "id": "aves-migracao",
+    "emoji": "🦢",
+    "question": "Comment les oiseaux savent-ils où migrer ?",
+    "quickAnswer": "Les oiseaux utilisent le Soleil, les étoiles, le champ magnétique de la Terre et même des repères au sol pour s'orienter lors de leurs longs voyages.",
+    "moreAnswer": "De nombreuses espèces d'oiseaux font chaque année d'immenses voyages, à la recherche d'un climat plus doux ou de plus de nourriture. Pour s'orienter, ils utilisent plusieurs indices à la fois : la position du Soleil le jour, les étoiles la nuit, et ils peuvent même percevoir le champ magnétique de la Terre, presque comme s'ils avaient une boussole intégrée. Certains reconnaissent aussi des rivières, des montagnes et des côtes déjà survolées. Les jeunes oiseaux apprennent souvent le trajet en volant aux côtés d'oiseaux plus âgés.",
+    "experiment": "Si tu vois un groupe d'oiseaux voler en formation en V, observe comment ils s'organisent — cette formation les aide à économiser de l'énergie pendant le voyage."
+  },
+  {
+    "id": "bocejo",
+    "emoji": "🥱",
+    "question": "Pourquoi bâille-t-on ?",
+    "quickAnswer": "On bâille quand on est fatigué ou qu'on s'ennuie, et les scientifiques pensent que cela aide à refroidir et réveiller le cerveau.",
+    "moreAnswer": "Personne ne sait avec certitude pourquoi on bâille, mais l'une des idées les plus acceptées est que le bâillement aide à refroidir le cerveau, le rendant plus alerte. On bâille aussi davantage quand on est fatigué, qu'on s'ennuie, ou même juste en voyant quelqu'un d'autre bâiller — le bâillement est très contagieux ! Cela pourrait s'expliquer par le fait que notre cerveau possède des « neurones miroirs », qui nous font copier automatiquement certains comportements des gens autour de nous.",
+    "experiment": "Essaie de bâiller près d'un membre de ta famille et observe combien de temps il met à bâiller aussi."
+  },
+  {
+    "id": "mar-salgado",
+    "emoji": "🌊",
+    "question": "Pourquoi la mer est-elle salée ?",
+    "quickAnswer": "La mer est salée parce que les rivières, en coulant sur les roches et la terre, entraînent de petites quantités de sel jusqu'à elle, et l'eau qui s'évapore laisse le sel derrière elle.",
+    "moreAnswer": "Quand il pleut, l'eau qui coule dans les rivières passe sur des roches et de la terre, dissolvant de tout petits minéraux et sels. Ces rivières transportent ce sel jusqu'à la mer. Dans la mer, le Soleil fait évaporer l'eau (qui se transforme en vapeur et retombe en pluie), mais le sel ne s'évapore pas — il reste. Cela se produit depuis des millions d'années, donc le sel s'est accumulé de plus en plus dans l'eau de mer.",
+    "experiment": "Demande à un adulte de t'aider à dissoudre une cuillère de sel dans un verre d'eau et goûte une toute petite goutte (avec précaution). C'est un peu ce goût-là, en beaucoup plus concentré, qu'a l'eau de mer."
+  },
+  {
+    "id": "arco-iris-formacao",
+    "emoji": "🌈",
+    "question": "Comment se forment les arcs-en-ciel ?",
+    "quickAnswer": "Les arcs-en-ciel se forment quand la lumière du Soleil traverse des gouttes de pluie et se sépare dans les couleurs qui la composent, comme un prisme.",
+    "moreAnswer": "La lumière du Soleil paraît blanche, mais elle est en réalité composée de plusieurs couleurs mélangées. Quand un rayon de soleil entre dans une goutte de pluie, il change de direction (il se réfracte), se réfléchit à l'intérieur de la goutte, puis en ressort en changeant à nouveau de direction. Dans ce processus, chaque couleur dévie d'une manière légèrement différente, donc les couleurs se séparent, formant l'arc de couleurs qu'on observe : rouge, orange, jaune, vert, bleu, indigo et violet. C'est pourquoi on ne voit un arc-en-ciel que lorsqu'il y a du soleil et de la pluie en même temps, et toujours en tournant le dos au Soleil.",
+    "experiment": "En tournant le dos au Soleil, utilise un tuyau d'arrosage ou un vaporisateur d'eau pour créer ton propre arc-en-ciel."
+  },
+  {
+    "id": "sono-necessidade",
+    "emoji": "🛌",
+    "question": "Pourquoi avons-nous besoin de dormir ?",
+    "quickAnswer": "Nous avons besoin de dormir pour que le corps se repose, que le cerveau enregistre ce qu'on a appris, et pour grandir en bonne santé et forts.",
+    "moreAnswer": "Pendant que nous dormons, des choses très importantes se passent sans qu'on les voie : le cerveau organise les souvenirs de la journée, comme s'il rangeait un tiroir plein de nouvelles informations. Le corps en profite pour réparer les muscles, produire des hormones de croissance et renforcer les défenses contre les maladies. Les enfants ont besoin de dormir encore plus longtemps que les adultes, car ils grandissent et leur cerveau apprend sans arrêt de nouvelles choses. Sans assez de sommeil, on devient fatigué, plus étourdi et plus grognon.",
+    "experiment": "Pendant une semaine, note à quelle heure tu te couches et te réveilles. Les jours où tu as dormi plus, te sens-tu différent ?"
   }
 ]

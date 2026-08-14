@@ -110,5 +110,85 @@
     "quickAnswer": "Ants leave a scent trail on the way to food, and other ants follow that scent, forming a line.",
     "moreAnswer": "When an ant finds food, on its way back to the nest it leaves a substance on the ground called a pheromone, with a scent only ants can detect. Other ants follow that scent to reach the same food, and as they walk they leave more pheromone too, reinforcing the trail. That's how the neat line forms.",
     "experiment": "If you spot a line of ants, watch carefully (without disturbing them) the path they take — it's usually always the same route."
+  },
+  {
+    "id": "soluco",
+    "emoji": "😅",
+    "question": "Why do we get hiccups?",
+    "quickAnswer": "Hiccups happen when the diaphragm, the muscle that helps you breathe, suddenly contracts without warning.",
+    "moreAnswer": "The diaphragm is the muscle under your lungs that moves every time you breathe. Sometimes, from eating too fast, laughing hard or drinking something fizzy, the diaphragm contracts suddenly and unexpectedly. That makes air rush in and your vocal cords snap shut, making the 'hic' sound. Hiccups usually go away on their own after a few minutes.",
+    "experiment": "Try taking small slow sips of water next time you have hiccups and see if it helps."
+  },
+  {
+    "id": "gato-ronronar",
+    "emoji": "🐱",
+    "question": "Why do cats purr?",
+    "quickAnswer": "Cats purr to show they're happy, but also when they're nervous or healing, because purring helps them calm down.",
+    "moreAnswer": "Scientists are still studying exactly how cats make the purring sound, but they believe it comes from very fast vibrations in the larynx, the part of the throat where the vocal cords are. Cats purr when they're relaxed and happy, but also when they're in pain or scared — the sound seems to help them soothe themselves. Studies even show the purring frequency may help heal bones and muscles faster.",
+    "experiment": "If you have or know a cat, notice when it purrs the most: while sleeping, being petted, or near food?"
+  },
+  {
+    "id": "vento-origem",
+    "emoji": "💨",
+    "question": "Where does the wind come from?",
+    "quickAnswer": "Wind is air on the move. It forms when warm air rises and cool air rushes in to take its place.",
+    "moreAnswer": "The Sun doesn't heat the Earth the same way everywhere — some places get warmer and others stay cooler. Warm air is lighter and rises, while cooler, heavier air sinks down to fill the space left behind. That movement of air from one place to another is wind. The bigger the temperature difference between two places, the stronger the wind blows.",
+    "experiment": "Make a paper pinwheel and carry it to different spots in the house or garden. Where does it spin fastest?"
+  },
+  {
+    "id": "estrelas-brilham",
+    "emoji": "✨",
+    "question": "Why do stars shine at night but not during the day?",
+    "quickAnswer": "Stars are always in the sky, but during the day the Sun's light is so bright that the faint light of the stars gets hidden.",
+    "moreAnswer": "The Sun is the closest star to us, so its light reaches us far stronger than that of any other star, which are light-years away. During the day, sunlight spreads through the atmosphere and lights everything up, making the sky too bright to see the faint light of distant stars. At night, without the Sun outshining everything, we can finally see the stars twinkle.",
+    "experiment": "On a cloudless night, away from city lights if possible, count how many stars you can see in 1 minute."
+  },
+  {
+    "id": "gelo-flutua",
+    "emoji": "🧊",
+    "question": "Why does ice float on water?",
+    "quickAnswer": "Ice floats because when water freezes, it takes up more space and becomes less dense than liquid water.",
+    "moreAnswer": "Most substances get more compact when they cool down, but water is different: when it freezes, its molecules arrange into a structure that takes up more space, making ice less dense than liquid water. Because it's less dense, ice floats instead of sinking. This is very important for life in cold lakes and seas — the ice forms a layer on the surface that protects the animals living below from the extreme cold.",
+    "experiment": "Put an ice cube in a glass of water and see how much sits above and below the surface."
+  },
+  {
+    "id": "aves-migracao",
+    "emoji": "🦢",
+    "question": "How do birds know where to migrate?",
+    "quickAnswer": "Birds use the Sun, the stars, the Earth's magnetic field, and even landmarks on the ground to find their way on their long journeys.",
+    "moreAnswer": "Many bird species make huge journeys every year, looking for milder weather or more food. To find their way, they use several clues at once: the position of the Sun during the day, the stars at night, and they can even sense the Earth's magnetic field, almost like having a built-in compass. Some also recognize rivers, mountains and coastlines they've flown over before. Younger birds often learn the route by flying alongside older ones.",
+    "experiment": "If you see a flock of birds flying in a V shape, notice how they organize themselves — that formation helps them save energy during the trip."
+  },
+  {
+    "id": "bocejo",
+    "emoji": "🥱",
+    "question": "Why do we yawn?",
+    "quickAnswer": "We yawn when we're tired or bored, and scientists think it helps cool down and wake up the brain.",
+    "moreAnswer": "No one knows for certain why we yawn, but one of the most accepted ideas is that yawning helps cool the brain, making it more alert. We also yawn more when tired, bored, or even just from seeing someone else yawn — yawning is very contagious! That may happen because our brains have 'mirror neurons' that make us automatically copy certain behaviors of the people around us.",
+    "experiment": "Try yawning near a family member and see how long it takes before they yawn too."
+  },
+  {
+    "id": "mar-salgado",
+    "emoji": "🌊",
+    "question": "Why is the sea salty?",
+    "quickAnswer": "The sea is salty because rivers, running over rocks and land, carry small amounts of salt into it, and water that evaporates leaves the salt behind.",
+    "moreAnswer": "When it rains, water flowing through rivers passes over rocks and soil, dissolving tiny amounts of minerals and salts. Rivers carry that salt to the sea. In the sea, the Sun evaporates the water (which turns to vapor and falls again as rain), but the salt doesn't evaporate — it stays behind. This has been happening for millions of years, so the salt has kept building up more and more in seawater.",
+    "experiment": "Ask an adult to help you dissolve a spoon of salt in a glass of water and taste a tiny drop (carefully). That's a bit like sea water, but much more concentrated."
+  },
+  {
+    "id": "arco-iris-formacao",
+    "emoji": "🌈",
+    "question": "How do rainbows form?",
+    "quickAnswer": "Rainbows form when sunlight passes through raindrops and splits into the colors that make it up, like a prism.",
+    "moreAnswer": "Sunlight looks white, but it's actually made of several colors mixed together. When a ray of sunlight enters a raindrop, it bends (refracts), reflects inside the drop, and exits again, bending once more. In this process, each color bends by a slightly different amount, so the colors separate, forming the arc of colors we see: red, orange, yellow, green, blue, indigo and violet. That's why we only see rainbows when there's sun and rain at the same time, and always with our backs to the Sun.",
+    "experiment": "With your back to the Sun, use a hose or a water sprayer to make your own rainbow."
+  },
+  {
+    "id": "sono-necessidade",
+    "emoji": "🛌",
+    "question": "Why do we need to sleep?",
+    "quickAnswer": "We need to sleep so the body can rest, the brain can store what we learned, and so we can grow up healthy and strong.",
+    "moreAnswer": "While we sleep, important things happen that we can't see: the brain organizes the day's memories, as if tidying a drawer full of new information. The body uses this time to repair muscles, produce growth hormones, and strengthen defenses against illness. Children need even more sleep than adults, because they're still growing and their brain is constantly learning new things. Without enough sleep, we get tired, forgetful, and grumpier.",
+    "experiment": "For a week, write down what time you go to bed and wake up. On the days you slept more, do you feel different?"
   }
 ]
