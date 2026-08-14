@@ -207,6 +207,29 @@
     }
   },
   {
+    "id": "peste-negra",
+    "year": "1348",
+    "emoji": "🐀",
+    "title": {
+      "pt": "A Peste Negra em Portugal",
+      "en": "The Black Death in Portugal",
+      "de": "Der Schwarze Tod in Portugal",
+      "fr": "La peste noire au Portugal",
+      "es": "La peste negra en Portugal",
+      "it": "La peste nera in Portogallo",
+      "zh": "葡萄牙的黑死病"
+    },
+    "description": {
+      "pt": "Em 1348, uma doença muito grave chamada peste negra chegou a Portugal através dos navios e espalhou-se rapidamente pelas cidades. Morreu uma grande parte da população, e a doença voltou várias vezes nos anos seguintes, mudando profundamente a vida das pessoas.",
+      "en": "In 1348, a very serious disease called the Black Death arrived in Portugal by ship and spread quickly through the towns. A large part of the population died, and the disease returned several times in the following years, deeply changing people's lives.",
+      "de": "Im Jahr 1348 erreichte eine sehr schwere Krankheit namens Schwarzer Tod Portugal mit Schiffen und breitete sich schnell in den Städten aus. Ein großer Teil der Bevölkerung starb, und die Krankheit kehrte in den folgenden Jahren mehrmals zurück, was das Leben der Menschen tiefgreifend veränderte.",
+      "fr": "En 1348, une maladie très grave appelée peste noire arriva au Portugal par bateau et se propagea rapidement dans les villes. Une grande partie de la population mourut, et la maladie revint plusieurs fois dans les années suivantes, changeant profondément la vie des gens.",
+      "es": "En 1348, una enfermedad muy grave llamada peste negra llegó a Portugal en barco y se extendió rápidamente por las ciudades. Murió una gran parte de la población, y la enfermedad volvió varias veces en los años siguientes, cambiando profundamente la vida de las personas.",
+      "it": "Nel 1348, una malattia molto grave chiamata peste nera arrivò in Portogallo via nave e si diffuse rapidamente nelle città. Morì una grande parte della popolazione, e la malattia tornò più volte negli anni successivi, cambiando profondamente la vita delle persone.",
+      "zh": "1348年，一种叫做黑死病的严重疾病随船只传入葡萄牙，并在各城市迅速蔓延。相当一部分人口因此丧生，此后数年间疫病多次卷土重来，深刻改变了人们的生活。"
+    }
+  },
+  {
     "id": "crise-1383",
     "year": "1383",
     "emoji": "⚖️",
@@ -250,6 +273,52 @@
       "es": "A partir del infante Enrique el Navegante, los portugueses comenzaron a explorar los océanos con carabelas cada vez más lejos: bordearon África, Vasco da Gama llegó a la India en 1498 y Pedro Álvares Cabral llegó a Brasil en 1500. Fue una época de grandes descubrimientos, pero también trajo gran sufrimiento a muchos pueblos, que fueron dominados, esclavizados o perdieron sus tierras.",
       "it": "A partire dall'infante Enrico il Navigatore, i portoghesi iniziarono a esplorare gli oceani con le caravelle, sempre più lontano: circumnavigarono l'Africa, Vasco da Gama raggiunse l'India nel 1498 e Pedro Álvares Cabral raggiunse il Brasile nel 1500. Fu un'epoca di grandi scoperte, ma portò anche grande sofferenza a molti popoli, che furono dominati, ridotti in schiavitù o persero le loro terre.",
       "zh": "从航海家恩里克王子开始，葡萄牙人乘坐轻快帆船不断向更远的海域探索：他们绕过非洲，达伽马于1498年抵达印度，卡布拉尔于1500年抵达巴西。这是一个充满伟大发现的时代，但也给许多民族带来了巨大的苦难——他们被征服、被奴役，或失去了自己的土地。"
+    }
+  },
+  {
+    "id": "joao-ii",
+    "year": "1481",
+    "emoji": "🧭",
+    "title": {
+      "pt": "D. João II e a Consolidação dos Descobrimentos",
+      "en": "King João II and the Consolidation of the Discoveries",
+      "de": "König João II. und die Festigung der Entdeckungen",
+      "fr": "Jean II et la consolidation des Grandes Découvertes",
+      "es": "Juan II y la consolidación de los Descubrimientos",
+      "it": "Giovanni II e il consolidamento delle Grandi Scoperte",
+      "zh": "若昂二世与大航海事业的巩固"
+    },
+    "description": {
+      "pt": "D. João II, conhecido como \"o Príncipe Perfeito\", investiu muito nas viagens de exploração e organizou melhor os negócios com África. No seu reinado, Bartolomeu Dias contornou pela primeira vez o extremo sul de África, em 1488, abrindo caminho para chegar à Índia por mar.",
+      "en": "King João II, known as \"the Perfect Prince\", invested heavily in exploratory voyages and organised trade with Africa more effectively. During his reign, Bartolomeu Dias sailed around the southern tip of Africa for the first time, in 1488, opening the way to reach India by sea.",
+      "de": "König João II., bekannt als „der vollkommene Prinz“, investierte stark in Erkundungsreisen und organisierte den Handel mit Afrika besser. Während seiner Herrschaft umsegelte Bartolomeu Dias 1488 zum ersten Mal die Südspitze Afrikas und ebnete damit den Seeweg nach Indien.",
+      "fr": "Jean II, connu comme « le Prince Parfait », investit beaucoup dans les voyages d'exploration et organisa mieux le commerce avec l'Afrique. Sous son règne, Bartolomeu Dias contourna pour la première fois la pointe sud de l'Afrique, en 1488, ouvrant la voie maritime vers l'Inde.",
+      "es": "Juan II, conocido como \"el Príncipe Perfecto\", invirtió mucho en los viajes de exploración y organizó mejor el comercio con África. Durante su reinado, Bartolomeu Dias bordeó por primera vez el extremo sur de África, en 1488, abriendo el camino marítimo hacia la India.",
+      "it": "Giovanni II, noto come \"il Principe Perfetto\", investì molto nei viaggi di esplorazione e organizzò meglio i commerci con l'Africa. Durante il suo regno, Bartolomeu Dias circumnavigò per la prima volta l'estremità meridionale dell'Africa, nel 1488, aprendo la via marittima verso l'India.",
+      "zh": "被称为“完美王子”的若昂二世大力投资探险航行，并更有效地组织了与非洲的贸易。在他统治期间，巴尔托洛梅乌·迪亚士于1488年首次绕过非洲最南端，为经海路抵达印度开辟了道路。"
+    }
+  },
+  {
+    "id": "alcacer-quibir",
+    "year": "1578",
+    "emoji": "🏜️",
+    "title": {
+      "pt": "A Batalha de Alcácer Quibir",
+      "en": "The Battle of Alcácer Quibir",
+      "de": "Die Schlacht von Alcácer Quibir",
+      "fr": "La bataille d'Alcácer Quibir",
+      "es": "La batalla de Alcazarquivir",
+      "it": "La battaglia di Alcazarquivir",
+      "zh": "阿尔卡塞尔基比尔战役"
+    },
+    "description": {
+      "pt": "Em 1578, o jovem rei D. Sebastião liderou um exército português para Marrocos e foi derrotado na Batalha de Alcácer Quibir. O rei morreu na batalha sem deixar filhos, o que criou uma grande crise sobre quem devia ser o próximo rei de Portugal.",
+      "en": "In 1578, the young King Sebastian led a Portuguese army into Morocco and was defeated at the Battle of Alcácer Quibir. The king died in the battle without leaving any children, which created a major crisis over who should become the next King of Portugal.",
+      "de": "Im Jahr 1578 führte der junge König Sebastian ein portugiesisches Heer nach Marokko und wurde in der Schlacht von Alcácer Quibir besiegt. Der König starb in der Schlacht, ohne Kinder zu hinterlassen, was eine große Krise darüber auslöste, wer der nächste König von Portugal werden sollte.",
+      "fr": "En 1578, le jeune roi Sébastien mena une armée portugaise au Maroc et fut vaincu à la bataille d'Alcácer Quibir. Le roi mourut au combat sans laisser d'enfants, ce qui provoqua une grave crise sur la question de savoir qui devait devenir le prochain roi du Portugal.",
+      "es": "En 1578, el joven rey Sebastián dirigió un ejército portugués a Marruecos y fue derrotado en la batalla de Alcazarquivir. El rey murió en la batalla sin dejar hijos, lo que provocó una gran crisis sobre quién debía ser el próximo rey de Portugal.",
+      "it": "Nel 1578, il giovane re Sebastiano guidò un esercito portoghese in Marocco e fu sconfitto nella battaglia di Alcazarquivir. Il re morì in battaglia senza lasciare figli, il che provocò una grande crisi su chi dovesse diventare il nuovo re del Portogallo.",
+      "zh": "1578年，年轻的塞巴斯蒂昂国王率领葡萄牙军队进入摩洛哥，在阿尔卡塞尔基比尔战役中战败。国王阵亡且没有留下子嗣，这引发了一场关于谁应继任葡萄牙国王的严重危机。"
     }
   },
   {
@@ -322,6 +391,29 @@
     }
   },
   {
+    "id": "pombal-reformas",
+    "year": "1759",
+    "emoji": "🏗️",
+    "title": {
+      "pt": "O Marquês de Pombal e as Reformas",
+      "en": "The Marquis of Pombal and His Reforms",
+      "de": "Der Marquês de Pombal und seine Reformen",
+      "fr": "Le marquis de Pombal et ses réformes",
+      "es": "El marqués de Pombal y sus reformas",
+      "it": "Il marchese di Pombal e le sue riforme",
+      "zh": "庞巴尔侯爵与改革"
+    },
+    "description": {
+      "pt": "Depois do terramoto de 1755, o Marquês de Pombal aproveitou o seu poder como ministro para fazer grandes mudanças em Portugal: modernizou o ensino, reorganizou a economia e reduziu a influência de certos grupos poderosos, como a Companhia de Jesus, que acabou por ser expulsa do país em 1759.",
+      "en": "After the 1755 earthquake, the Marquis of Pombal used his power as minister to make major changes in Portugal: he modernised education, reorganised the economy, and reduced the influence of certain powerful groups, such as the Society of Jesus, which was expelled from the country in 1759.",
+      "de": "Nach dem Erdbeben von 1755 nutzte der Marquês de Pombal seine Macht als Minister, um in Portugal große Veränderungen vorzunehmen: Er modernisierte das Bildungswesen, ordnete die Wirtschaft neu und verringerte den Einfluss bestimmter mächtiger Gruppen wie des Jesuitenordens, der 1759 aus dem Land vertrieben wurde.",
+      "fr": "Après le tremblement de terre de 1755, le marquis de Pombal utilisa son pouvoir de ministre pour apporter de grands changements au Portugal : il modernisa l'éducation, réorganisa l'économie et réduisit l'influence de certains groupes puissants, comme la Compagnie de Jésus, qui fut expulsée du pays en 1759.",
+      "es": "Tras el terremoto de 1755, el marqués de Pombal utilizó su poder como ministro para llevar a cabo grandes cambios en Portugal: modernizó la enseñanza, reorganizó la economía y redujo la influencia de ciertos grupos poderosos, como la Compañía de Jesús, que acabó siendo expulsada del país en 1759.",
+      "it": "Dopo il terremoto del 1755, il marchese di Pombal usò il suo potere di ministro per apportare grandi cambiamenti in Portogallo: modernizzò l'istruzione, riorganizzò l'economia e ridusse l'influenza di alcuni gruppi potenti, come la Compagnia di Gesù, che fu espulsa dal paese nel 1759.",
+      "zh": "1755年地震之后，庞巴尔侯爵利用自己作为大臣的权力，在葡萄牙推行了一系列重大改革：他推动教育现代化、重组经济，并削弱了某些强大团体的影响力，例如耶稣会，该会于1759年被逐出葡萄牙。"
+    }
+  },
+  {
     "id": "invasoes-francesas",
     "year": "1807",
     "emoji": "🪖",
@@ -368,6 +460,29 @@
     }
   },
   {
+    "id": "abolicao-escravatura",
+    "year": "1869",
+    "emoji": "⛓️",
+    "title": {
+      "pt": "A Abolição da Escravatura em Portugal",
+      "en": "The Abolition of Slavery in Portugal",
+      "de": "Die Abschaffung der Sklaverei in Portugal",
+      "fr": "L'abolition de l'esclavage au Portugal",
+      "es": "La abolición de la esclavitud en Portugal",
+      "it": "L'abolizione della schiavitù in Portogallo",
+      "zh": "葡萄牙废除奴隶制"
+    },
+    "description": {
+      "pt": "Durante séculos, Portugal participou no comércio de pessoas escravizadas, sobretudo vindas de África, o que causou enorme sofrimento. Ao longo do século XIX, foram feitas várias leis para acabar com a escravatura, até que em 1869 a escravatura foi finalmente abolida em todo o território português.",
+      "en": "For centuries, Portugal took part in the trade of enslaved people, mostly brought from Africa, which caused enormous suffering. Throughout the 19th century, several laws were passed to end slavery, until it was finally abolished across all Portuguese territory in 1869.",
+      "de": "Jahrhundertelang beteiligte sich Portugal am Handel mit versklavten Menschen, die vor allem aus Afrika stammten, was enormes Leid verursachte. Im Laufe des 19. Jahrhunderts wurden mehrere Gesetze erlassen, um die Sklaverei zu beenden, bis sie 1869 schließlich in ganz Portugal abgeschafft wurde.",
+      "fr": "Pendant des siècles, le Portugal a participé au commerce de personnes réduites en esclavage, venues surtout d'Afrique, ce qui causa d'immenses souffrances. Tout au long du XIXe siècle, plusieurs lois furent adoptées pour mettre fin à l'esclavage, jusqu'à son abolition définitive sur tout le territoire portugais en 1869.",
+      "es": "Durante siglos, Portugal participó en el comercio de personas esclavizadas, sobre todo procedentes de África, lo que causó un enorme sufrimiento. A lo largo del siglo XIX se aprobaron varias leyes para acabar con la esclavitud, hasta que en 1869 fue finalmente abolida en todo el territorio portugués.",
+      "it": "Per secoli, il Portogallo partecipò al commercio di persone ridotte in schiavitù, provenienti soprattutto dall'Africa, causando enormi sofferenze. Nel corso del XIX secolo furono approvate diverse leggi per porre fine alla schiavitù, finché nel 1869 fu finalmente abolita in tutto il territorio portoghese.",
+      "zh": "数百年间，葡萄牙一直参与奴役人口的贸易，被奴役者大多来自非洲，这造成了巨大的苦难。19世纪期间，葡萄牙陆续颁布多项法律以终结奴隶制，直到1869年，奴隶制才在葡萄牙所有领土上被最终废除。"
+    }
+  },
+  {
     "id": "republica-1910",
     "year": "1910",
     "emoji": "🇵🇹",
@@ -388,6 +503,29 @@
       "es": "El 5 de octubre de 1910, una revolución acabó con la monarquía en Portugal y proclamó la República. El último rey, Manuel II, tuvo que partir al exilio. Fue un gran cambio en la forma de gobernar el país.",
       "it": "Il 5 ottobre 1910, una rivoluzione pose fine alla monarchia in Portogallo e proclamò la Repubblica. L'ultimo re, Manuele II, dovette andare in esilio. Fu un grande cambiamento nel modo in cui il paese veniva governato.",
       "zh": "1910年10月5日，一场革命结束了葡萄牙的君主制，宣告共和国成立。末代国王曼努埃尔二世被迫流亡海外。这是葡萄牙治理方式的一次重大变革。"
+    }
+  },
+  {
+    "id": "primeira-guerra-mundial",
+    "year": "1916",
+    "emoji": "🎖️",
+    "title": {
+      "pt": "Portugal na Primeira Guerra Mundial",
+      "en": "Portugal in the First World War",
+      "de": "Portugal im Ersten Weltkrieg",
+      "fr": "Le Portugal dans la Première Guerre mondiale",
+      "es": "Portugal en la Primera Guerra Mundial",
+      "it": "Il Portogallo nella Prima Guerra Mondiale",
+      "zh": "葡萄牙与第一次世界大战"
+    },
+    "description": {
+      "pt": "Portugal entrou oficialmente na Primeira Guerra Mundial em 1916, enviando soldados para lutar na Flandres, na Europa, e defendendo também as suas colónias em África. Foi uma experiência muito dura, com muitas perdas de vidas portuguesas, sobretudo na Batalha de La Lys, em 1918.",
+      "en": "Portugal officially entered the First World War in 1916, sending soldiers to fight in Flanders, in Europe, and also defending its colonies in Africa. It was a very harsh experience, with heavy loss of Portuguese lives, especially at the Battle of La Lys, in 1918.",
+      "de": "Portugal trat 1916 offiziell in den Ersten Weltkrieg ein und schickte Soldaten zum Kampf nach Flandern in Europa sowie zur Verteidigung seiner Kolonien in Afrika. Es war eine sehr harte Erfahrung mit hohen Verlusten portugiesischer Leben, besonders in der Schlacht an der Lys 1918.",
+      "fr": "Le Portugal entra officiellement dans la Première Guerre mondiale en 1916, envoyant des soldats combattre en Flandre, en Europe, tout en défendant également ses colonies en Afrique. Ce fut une expérience très dure, avec de lourdes pertes portugaises, notamment lors de la bataille de la Lys, en 1918.",
+      "es": "Portugal entró oficialmente en la Primera Guerra Mundial en 1916, enviando soldados a luchar en Flandes, en Europa, y también defendiendo sus colonias en África. Fue una experiencia muy dura, con muchas pérdidas de vidas portuguesas, sobre todo en la batalla del Lys, en 1918.",
+      "it": "Il Portogallo entrò ufficialmente nella Prima Guerra Mondiale nel 1916, inviando soldati a combattere nelle Fiandre, in Europa, e difendendo anche le sue colonie in Africa. Fu un'esperienza molto dura, con numerose perdite di vite portoghesi, soprattutto nella battaglia della Lys, nel 1918.",
+      "zh": "葡萄牙于1916年正式参加第一次世界大战，派遣士兵前往欧洲佛兰德斯作战，同时也保卫其在非洲的殖民地。这是一段非常艰难的经历，葡萄牙人在1918年的利斯河战役中遭受了重大伤亡。"
     }
   },
   {
@@ -457,6 +595,75 @@
       "es": "El 1 de enero de 1986, Portugal entró en la Comunidad Económica Europea, que más tarde se convirtió en la Unión Europea. Esto trajo muchos cambios positivos, como nuevas carreteras, escuelas y hospitales, y una mayor relación con los demás países europeos.",
       "it": "Il 1° gennaio 1986, il Portogallo entrò nella Comunità Economica Europea, che in seguito divenne l'Unione Europea. Questo portò molti cambiamenti positivi, come nuove strade, scuole e ospedali, e legami più stretti con gli altri paesi europei.",
       "zh": "1986年1月1日，葡萄牙加入了欧洲经济共同体（后来发展为欧盟）。这带来了许多积极的变化，例如新的道路、学校和医院，以及与其他欧洲国家更紧密的联系。"
+    }
+  },
+  {
+    "id": "adesao-euro",
+    "year": "2002",
+    "emoji": "💶",
+    "title": {
+      "pt": "A Adesão ao Euro",
+      "en": "Joining the Euro",
+      "de": "Die Einführung des Euro",
+      "fr": "L'adoption de l'euro",
+      "es": "La adopción del euro",
+      "it": "L'adozione dell'euro",
+      "zh": "加入欧元区"
+    },
+    "description": {
+      "pt": "Portugal foi um dos primeiros países a adotar o euro como moeda, substituindo o escudo. As notas e moedas em euros entraram em circulação em 2002, facilitando o comércio e as viagens entre Portugal e os outros países da zona euro.",
+      "en": "Portugal was one of the first countries to adopt the euro as its currency, replacing the escudo. Euro banknotes and coins came into circulation in 2002, making trade and travel between Portugal and other eurozone countries easier.",
+      "de": "Portugal war eines der ersten Länder, das den Euro als Währung einführte und den Escudo ersetzte. Euro-Banknoten und -Münzen kamen 2002 in Umlauf und erleichterten Handel und Reisen zwischen Portugal und anderen Ländern der Eurozone.",
+      "fr": "Le Portugal fut l'un des premiers pays à adopter l'euro comme monnaie, remplaçant l'escudo. Les billets et pièces en euros sont entrés en circulation en 2002, facilitant le commerce et les voyages entre le Portugal et les autres pays de la zone euro.",
+      "es": "Portugal fue uno de los primeros países en adoptar el euro como moneda, sustituyendo al escudo. Los billetes y monedas de euro entraron en circulación en 2002, facilitando el comercio y los viajes entre Portugal y los demás países de la zona euro.",
+      "it": "Il Portogallo fu uno dei primi paesi ad adottare l'euro come moneta, sostituendo l'escudo. Le banconote e le monete in euro entrarono in circolazione nel 2002, facilitando il commercio e i viaggi tra il Portogallo e gli altri paesi dell'area euro.",
+      "zh": "葡萄牙是最早采用欧元作为货币的国家之一，取代了原来的埃斯库多。欧元纸币和硬币于2002年正式流通，使葡萄牙与其他欧元区国家之间的贸易和旅行更加便利。"
+    }
+  },
+  {
+    "id": "euro2004",
+    "year": "2004",
+    "emoji": "⚽",
+    "title": {
+      "pt": "Portugal Recebe o Euro 2004",
+      "en": "Portugal Hosts Euro 2004",
+      "de": "Portugal ist Gastgeber der Euro 2004",
+      "fr": "Le Portugal accueille l'Euro 2004",
+      "es": "Portugal es sede de la Eurocopa 2004",
+      "it": "Il Portogallo ospita gli Europei 2004",
+      "zh": "葡萄牙主办2004年欧洲杯"
+    },
+    "description": {
+      "pt": "Em 2004, Portugal organizou o Campeonato Europeu de Futebol, construindo ou remodelando vários estádios em todo o país. Foi um momento de grande orgulho nacional e mostrou Portugal a milhões de pessoas em todo o mundo, mesmo que a seleção portuguesa tenha perdido a final.",
+      "en": "In 2004, Portugal hosted the European Football Championship, building or renovating several stadiums across the country. It was a moment of great national pride and showcased Portugal to millions of people around the world, even though the Portuguese team lost the final.",
+      "de": "Im Jahr 2004 richtete Portugal die Fußball-Europameisterschaft aus und baute oder renovierte dafür mehrere Stadien im ganzen Land. Es war ein Moment großen nationalen Stolzes und zeigte Portugal Millionen von Menschen weltweit, auch wenn die portugiesische Mannschaft das Finale verlor.",
+      "fr": "En 2004, le Portugal organisa le Championnat d'Europe de football, construisant ou rénovant plusieurs stades dans tout le pays. Ce fut un moment de grande fierté nationale qui fit découvrir le Portugal à des millions de personnes dans le monde, même si l'équipe portugaise perdit la finale.",
+      "es": "En 2004, Portugal organizó el Campeonato Europeo de Fútbol, construyendo o remodelando varios estadios en todo el país. Fue un momento de gran orgullo nacional que mostró Portugal a millones de personas en todo el mundo, aunque la selección portuguesa perdió la final.",
+      "it": "Nel 2004, il Portogallo organizzò il Campionato Europeo di Calcio, costruendo o rinnovando diversi stadi in tutto il paese. Fu un momento di grande orgoglio nazionale che mostrò il Portogallo a milioni di persone in tutto il mondo, anche se la nazionale portoghese perse la finale.",
+      "zh": "2004年，葡萄牙主办了欧洲足球锦标赛，在全国修建或翻新了多座体育场。尽管葡萄牙队最终在决赛中告负，但这仍是全国上下引以为豪的时刻，也让全世界数百万人认识了葡萄牙。"
+    }
+  },
+  {
+    "id": "euro2016",
+    "year": "2016",
+    "emoji": "🏆",
+    "title": {
+      "pt": "Portugal Campeão Europeu de Futebol",
+      "en": "Portugal Becomes European Football Champion",
+      "de": "Portugal wird Fußball-Europameister",
+      "fr": "Le Portugal devient champion d'Europe de football",
+      "es": "Portugal, campeón de Europa de fútbol",
+      "it": "Il Portogallo diventa campione europeo di calcio",
+      "zh": "葡萄牙夺得欧洲足球冠军"
+    },
+    "description": {
+      "pt": "Em 2016, a seleção portuguesa de futebol, com o capitão Cristiano Ronaldo, venceu o Campeonato Europeu pela primeira vez, ao ganhar a final contra a França. Foi um momento de enorme alegria e celebração em todo o país.",
+      "en": "In 2016, the Portuguese national football team, captained by Cristiano Ronaldo, won the European Championship for the first time, beating France in the final. It was a moment of enormous joy and celebration across the whole country.",
+      "de": "Im Jahr 2016 gewann die portugiesische Fußballnationalmannschaft unter Kapitän Cristiano Ronaldo erstmals die Europameisterschaft, indem sie das Finale gegen Frankreich gewann. Es war ein Moment großer Freude und Feierlichkeiten im ganzen Land.",
+      "fr": "En 2016, l'équipe nationale portugaise de football, capitaine Cristiano Ronaldo, remporta pour la première fois le Championnat d'Europe en battant la France en finale. Ce fut un moment d'immense joie et de célébration dans tout le pays.",
+      "es": "En 2016, la selección portuguesa de fútbol, con el capitán Cristiano Ronaldo, ganó por primera vez el Campeonato de Europa al vencer a Francia en la final. Fue un momento de enorme alegría y celebración en todo el país.",
+      "it": "Nel 2016, la nazionale portoghese di calcio, capitanata da Cristiano Ronaldo, vinse per la prima volta il Campionato Europeo battendo la Francia in finale. Fu un momento di enorme gioia e festeggiamenti in tutto il paese.",
+      "zh": "2016年，由克里斯蒂亚诺·罗纳尔多担任队长的葡萄牙国家足球队在决赛中击败法国队，首次夺得欧洲足球锦标赛冠军。全国上下为此欢欣鼓舞、举国欢庆。"
     }
   }
 ]

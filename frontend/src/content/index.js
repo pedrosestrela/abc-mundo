@@ -242,6 +242,7 @@ export function getCountries(langCode) {
     lng: c.lng,
     name: c.name[langCode] || c.name.en,
     fact: c.fact[langCode] || c.fact.en,
+    music: c.music[langCode] || c.music.en,
   }));
 }
 

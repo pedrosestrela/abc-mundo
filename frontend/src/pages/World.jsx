@@ -119,6 +119,10 @@ export default function World() {
                 {selected.fact}
                 <SpeakButton text={selected.fact} langCode={pair.mother} />
               </p>
+              <p className="mission-text">
+                🎵 {selected.music}
+                <SpeakButton text={selected.music} langCode={pair.mother} />
+              </p>
             </div>
           )}
         </>
@@ -151,6 +155,10 @@ export default function World() {
               <p className="mission-text">
                 {selected.fact}
                 <SpeakButton text={selected.fact} langCode={pair.mother} />
+              </p>
+              <p className="mission-text">
+                🎵 {selected.music}
+                <SpeakButton text={selected.music} langCode={pair.mother} />
               </p>
             </div>
           )}
