@@ -1,15 +1,275 @@
 [
-  { "id": "gelo-derrete", "emoji": "🧊", "topic": "physics", "question": "Que se passe-t-il, selon toi, avec un glaçon au soleil ?", "prediction_options": ["Il fond", "Il devient plus grand", "Rien ne change"], "explanation": "La glace fond parce que la chaleur du soleil transforme l'eau solide en eau liquide. C'est un changement d'état !", "tryAtHome": "Mets un glaçon au soleil et un autre à l'ombre. Lequel fond en premier ?" },
-  { "id": "planta-luz", "emoji": "🌱", "topic": "biology", "question": "Que se passe-t-il, selon toi, avec une plante gardée dans un placard sombre ?", "prediction_options": ["Elle pousse normalement", "Elle devient faible et pâle", "Elle devient plus verte"], "explanation": "Les plantes ont besoin de lumière pour fabriquer leur propre nourriture. Sans lumière, elles deviennent faibles et pâles.", "tryAtHome": "Couvre une petite plante avec une boîte pendant 3 jours et observe ses feuilles." },
-  { "id": "flutua-afunda", "emoji": "🛁", "topic": "physics", "question": "Penses-tu qu'une pomme flotte ou coule dans l'eau ?", "prediction_options": ["Elle flotte", "Elle coule", "Elle reste au milieu"], "explanation": "Une pomme flotte parce qu'elle contient de l'air, ce qui la rend moins dense que l'eau.", "tryAtHome": "Remplis un bol d'eau et teste différents objets : une cuillère, une balle, une pièce." },
-  { "id": "estados-agua", "emoji": "💧", "topic": "chemistry", "question": "L'eau peut être solide, liquide ou gazeuse. Lequel est de la vapeur d'eau ?", "prediction_options": ["La buée de la douche chaude", "Un glaçon", "L'eau du robinet"], "explanation": "Quand l'eau devient très chaude, elle se transforme en vapeur (un gaz) et se mélange à l'air.", "tryAtHome": "Demande à un adulte de faire bouillir de l'eau et observe la vapeur qui monte de la casserole." },
-  { "id": "imanes", "emoji": "🧲", "topic": "physics", "question": "Un aimant attire-t-il un trombone en métal et un crayon en bois ?", "prediction_options": ["Seulement le trombone", "Seulement le crayon", "Les deux"], "explanation": "Les aimants attirent les métaux comme le fer. Le bois n'est pas attiré car il n'a pas ces propriétés.", "tryAtHome": "Approche un aimant de différents objets à la maison et note lesquels collent." },
-  { "id": "sombras", "emoji": "🌗", "topic": "physics", "question": "Que se passe-t-il avec ton ombre quand tu t'éloignes d'une lampe de poche ?", "prediction_options": ["Elle grandit", "Elle rétrécit", "Elle disparaît"], "explanation": "Plus tu es proche de la lumière, plus ton ombre est grande. Quand tu t'éloignes, elle rétrécit.", "tryAtHome": "Le soir, utilise une lampe de poche et essaie de faire de grandes et petites ombres sur le mur." },
-  { "id": "misturar-cores", "emoji": "🎨", "topic": "chemistry", "question": "Quelle couleur obtient-on, selon toi, en mélangeant du bleu et du jaune ?", "prediction_options": ["Vert", "Violet", "Orange"], "explanation": "Le bleu et le jaune mélangés donnent du vert ! C'est ainsi que les couleurs primaires créent de nouvelles couleurs.", "tryAtHome": "Utilise de la peinture ou des crayons de couleur et mélange des paires de couleurs pour en découvrir de nouvelles." },
-  { "id": "som-vibracao", "emoji": "🔔", "topic": "physics", "question": "Comment le son arrive-t-il jusqu'à tes oreilles ?", "prediction_options": ["Par des vibrations dans l'air", "Par magie", "La lumière transporte le son"], "explanation": "Le son est fait de vibrations qui voyagent dans l'air jusqu'à nos oreilles, qui les transforment en sons que l'on entend.", "tryAtHome": "Mets ta main sur ta gorge en parlant. Sens-tu les vibrations ?" },
-  { "id": "dia-noite", "emoji": "🌞", "topic": "earth", "question": "Pourquoi y a-t-il le jour et la nuit ?", "prediction_options": ["La Terre tourne sur elle-même", "Le Soleil s'éteint la nuit", "Les nuages cachent le Soleil"], "explanation": "La Terre tourne sur elle-même comme une toupie. Le côté face au Soleil a le jour, l'autre a la nuit.", "tryAtHome": "Utilise une lampe de poche et une balle pour mimer la Terre tournant autour du Soleil." },
-  { "id": "estacoes", "emoji": "🍂", "topic": "earth", "question": "Pourquoi y a-t-il des saisons comme l'été et l'hiver ?", "prediction_options": ["La Terre est inclinée pendant qu'elle tourne autour du Soleil", "Le Soleil change de taille", "La Lune contrôle les saisons"], "explanation": "La Terre est inclinée, donc différentes parties reçoivent plus ou moins de lumière solaire au fil de l'année, ce qui crée les saisons.", "tryAtHome": "Observe les arbres dehors pendant plusieurs semaines et note les changements." },
-  { "id": "respirar-plantas", "emoji": "🌳", "topic": "biology", "question": "Les plantes 'respirent'-elles aussi ? Que libèrent-elles dans l'air ?", "prediction_options": ["De l'oxygène", "De la fumée", "Seulement de l'eau"], "explanation": "Les plantes utilisent la lumière pour fabriquer leur nourriture et, dans ce processus, libèrent de l'oxygène, que nous respirons.", "tryAtHome": "Observe une plante aquatique dans un verre d'eau au soleil et cherche de petites bulles sur les feuilles." },
-  { "id": "bicarbonato-vinagre", "emoji": "🌋", "topic": "chemistry", "question": "Que se passe-t-il, selon toi, quand on mélange du bicarbonate de soude avec du vinaigre ?", "prediction_options": ["Ça mousse et ça pétille", "Rien ne se passe", "Ça gèle"], "explanation": "Le bicarbonate et le vinaigre réagissent et créent du gaz (dioxyde de carbone), ce qui forme beaucoup de mousse !", "tryAtHome": "Avec un adulte, mélange un peu de bicarbonate avec du vinaigre dans un verre et observe la réaction." },
-  { "id": "coracao-bate", "emoji": "❤️", "topic": "biology", "question": "Que se passe-t-il avec ton cœur après avoir beaucoup couru ?", "prediction_options": ["Il bat plus vite", "Il bat plus lentement", "Il s'arrête"], "explanation": "Quand on fait de l'exercice, le corps a besoin de plus d'oxygène, donc le cœur bat plus vite pour l'apporter aux muscles.", "tryAtHome": "Saute pendant 1 minute puis mets la main sur ta poitrine pour sentir ton cœur battre." }
+  {
+    "id": "gelo-derrete",
+    "emoji": "🧊",
+    "topic": "physics",
+    "question": "Que se passe-t-il, selon toi, avec un glaçon au soleil ?",
+    "prediction_options": [
+      "Il fond",
+      "Il devient plus grand",
+      "Rien ne change"
+    ],
+    "explanation": "La glace fond parce que la chaleur du soleil transforme l'eau solide en eau liquide. C'est un changement d'état !",
+    "tryAtHome": "Mets un glaçon au soleil et un autre à l'ombre. Lequel fond en premier ?"
+  },
+  {
+    "id": "planta-luz",
+    "emoji": "🌱",
+    "topic": "biology",
+    "question": "Que se passe-t-il, selon toi, avec une plante gardée dans un placard sombre ?",
+    "prediction_options": [
+      "Elle pousse normalement",
+      "Elle devient faible et pâle",
+      "Elle devient plus verte"
+    ],
+    "explanation": "Les plantes ont besoin de lumière pour fabriquer leur propre nourriture. Sans lumière, elles deviennent faibles et pâles.",
+    "tryAtHome": "Couvre une petite plante avec une boîte pendant 3 jours et observe ses feuilles."
+  },
+  {
+    "id": "flutua-afunda",
+    "emoji": "🛁",
+    "topic": "physics",
+    "question": "Penses-tu qu'une pomme flotte ou coule dans l'eau ?",
+    "prediction_options": [
+      "Elle flotte",
+      "Elle coule",
+      "Elle reste au milieu"
+    ],
+    "explanation": "Une pomme flotte parce qu'elle contient de l'air, ce qui la rend moins dense que l'eau.",
+    "tryAtHome": "Remplis un bol d'eau et teste différents objets : une cuillère, une balle, une pièce."
+  },
+  {
+    "id": "estados-agua",
+    "emoji": "💧",
+    "topic": "chemistry",
+    "question": "L'eau peut être solide, liquide ou gazeuse. Lequel est de la vapeur d'eau ?",
+    "prediction_options": [
+      "La buée de la douche chaude",
+      "Un glaçon",
+      "L'eau du robinet"
+    ],
+    "explanation": "Quand l'eau devient très chaude, elle se transforme en vapeur (un gaz) et se mélange à l'air.",
+    "tryAtHome": "Demande à un adulte de faire bouillir de l'eau et observe la vapeur qui monte de la casserole."
+  },
+  {
+    "id": "imanes",
+    "emoji": "🧲",
+    "topic": "physics",
+    "question": "Un aimant attire-t-il un trombone en métal et un crayon en bois ?",
+    "prediction_options": [
+      "Seulement le trombone",
+      "Seulement le crayon",
+      "Les deux"
+    ],
+    "explanation": "Les aimants attirent les métaux comme le fer. Le bois n'est pas attiré car il n'a pas ces propriétés.",
+    "tryAtHome": "Approche un aimant de différents objets à la maison et note lesquels collent."
+  },
+  {
+    "id": "sombras",
+    "emoji": "🌗",
+    "topic": "physics",
+    "question": "Que se passe-t-il avec ton ombre quand tu t'éloignes d'une lampe de poche ?",
+    "prediction_options": [
+      "Elle grandit",
+      "Elle rétrécit",
+      "Elle disparaît"
+    ],
+    "explanation": "Plus tu es proche de la lumière, plus ton ombre est grande. Quand tu t'éloignes, elle rétrécit.",
+    "tryAtHome": "Le soir, utilise une lampe de poche et essaie de faire de grandes et petites ombres sur le mur."
+  },
+  {
+    "id": "misturar-cores",
+    "emoji": "🎨",
+    "topic": "chemistry",
+    "question": "Quelle couleur obtient-on, selon toi, en mélangeant du bleu et du jaune ?",
+    "prediction_options": [
+      "Vert",
+      "Violet",
+      "Orange"
+    ],
+    "explanation": "Le bleu et le jaune mélangés donnent du vert ! C'est ainsi que les couleurs primaires créent de nouvelles couleurs.",
+    "tryAtHome": "Utilise de la peinture ou des crayons de couleur et mélange des paires de couleurs pour en découvrir de nouvelles."
+  },
+  {
+    "id": "som-vibracao",
+    "emoji": "🔔",
+    "topic": "physics",
+    "question": "Comment le son arrive-t-il jusqu'à tes oreilles ?",
+    "prediction_options": [
+      "Par des vibrations dans l'air",
+      "Par magie",
+      "La lumière transporte le son"
+    ],
+    "explanation": "Le son est fait de vibrations qui voyagent dans l'air jusqu'à nos oreilles, qui les transforment en sons que l'on entend.",
+    "tryAtHome": "Mets ta main sur ta gorge en parlant. Sens-tu les vibrations ?"
+  },
+  {
+    "id": "dia-noite",
+    "emoji": "🌞",
+    "topic": "earth",
+    "question": "Pourquoi y a-t-il le jour et la nuit ?",
+    "prediction_options": [
+      "La Terre tourne sur elle-même",
+      "Le Soleil s'éteint la nuit",
+      "Les nuages cachent le Soleil"
+    ],
+    "explanation": "La Terre tourne sur elle-même comme une toupie. Le côté face au Soleil a le jour, l'autre a la nuit.",
+    "tryAtHome": "Utilise une lampe de poche et une balle pour mimer la Terre tournant autour du Soleil."
+  },
+  {
+    "id": "estacoes",
+    "emoji": "🍂",
+    "topic": "earth",
+    "question": "Pourquoi y a-t-il des saisons comme l'été et l'hiver ?",
+    "prediction_options": [
+      "La Terre est inclinée pendant qu'elle tourne autour du Soleil",
+      "Le Soleil change de taille",
+      "La Lune contrôle les saisons"
+    ],
+    "explanation": "La Terre est inclinée, donc différentes parties reçoivent plus ou moins de lumière solaire au fil de l'année, ce qui crée les saisons.",
+    "tryAtHome": "Observe les arbres dehors pendant plusieurs semaines et note les changements."
+  },
+  {
+    "id": "respirar-plantas",
+    "emoji": "🌳",
+    "topic": "biology",
+    "question": "Les plantes 'respirent'-elles aussi ? Que libèrent-elles dans l'air ?",
+    "prediction_options": [
+      "De l'oxygène",
+      "De la fumée",
+      "Seulement de l'eau"
+    ],
+    "explanation": "Les plantes utilisent la lumière pour fabriquer leur nourriture et, dans ce processus, libèrent de l'oxygène, que nous respirons.",
+    "tryAtHome": "Observe une plante aquatique dans un verre d'eau au soleil et cherche de petites bulles sur les feuilles."
+  },
+  {
+    "id": "bicarbonato-vinagre",
+    "emoji": "🌋",
+    "topic": "chemistry",
+    "question": "Que se passe-t-il, selon toi, quand on mélange du bicarbonate de soude avec du vinaigre ?",
+    "prediction_options": [
+      "Ça mousse et ça pétille",
+      "Rien ne se passe",
+      "Ça gèle"
+    ],
+    "explanation": "Le bicarbonate et le vinaigre réagissent et créent du gaz (dioxyde de carbone), ce qui forme beaucoup de mousse !",
+    "tryAtHome": "Avec un adulte, mélange un peu de bicarbonate avec du vinaigre dans un verre et observe la réaction."
+  },
+  {
+    "id": "coracao-bate",
+    "emoji": "❤️",
+    "topic": "biology",
+    "question": "Que se passe-t-il avec ton cœur après avoir beaucoup couru ?",
+    "prediction_options": [
+      "Il bat plus vite",
+      "Il bat plus lentement",
+      "Il s'arrête"
+    ],
+    "explanation": "Quand on fait de l'exercice, le corps a besoin de plus d'oxygène, donc le cœur bat plus vite pour l'apporter aux muscles.",
+    "tryAtHome": "Saute pendant 1 minute puis mets la main sur ta poitrine pour sentir ton cœur battre."
+  },
+  {
+    "id": "arco-iris",
+    "emoji": "🌈",
+    "topic": "physics",
+    "question": "Qu'est-ce qui, selon toi, fait apparaître un arc-en-ciel dans le ciel ?",
+    "prediction_options": [
+      "La lumière du soleil traversant des gouttes de pluie",
+      "Le ciel change de couleur",
+      "Les nuages peignent le ciel"
+    ],
+    "explanation": "Les arcs-en-ciel se forment quand la lumière du soleil traverse des gouttes de pluie et se divise en plusieurs couleurs, comme un prisme.",
+    "tryAtHome": "Par une journée ensoleillée, utilise un tuyau d'arrosage ou un verre d'eau au soleil et cherche un arc-en-ciel."
+  },
+  {
+    "id": "eletricidade-estatica",
+    "emoji": "⚡",
+    "topic": "physics",
+    "question": "Que se passe-t-il si tu frottes un ballon sur tes cheveux et que tu l'approches de petits morceaux de papier ?",
+    "prediction_options": [
+      "Le papier saute et colle au ballon",
+      "Rien ne se passe",
+      "Le ballon éclate"
+    ],
+    "explanation": "Frotter le ballon crée de l'électricité statique, une charge électrique qui attire les objets légers comme le papier.",
+    "tryAtHome": "Frotte un ballon sur tes cheveux et approche-le de petits morceaux de papier ou de tes cheveux."
+  },
+  {
+    "id": "flutuabilidade-objetos",
+    "emoji": "⚓",
+    "topic": "physics",
+    "question": "D'après toi, qu'est-ce qui flotte : un bloc de bois, une cuillère en métal ou un jouet en plastique ?",
+    "prediction_options": [
+      "Le bois et le plastique flottent, la cuillère coule",
+      "Ils flottent tous",
+      "Ils coulent tous"
+    ],
+    "explanation": "Flotter ou couler dépend de la densité de l'objet comparée à celle de l'eau — le bois et le plastique sont souvent moins denses, le métal souvent plus dense.",
+    "tryAtHome": "Rassemble des objets de la maison et teste-les dans une bassine d'eau : lesquels flottent, lesquels coulent ?"
+  },
+  {
+    "id": "fototropismo",
+    "emoji": "🪴",
+    "topic": "biology",
+    "question": "Que fait une plante, selon toi, si la lumière ne vient que d'un côté ?",
+    "prediction_options": [
+      "Elle se courbe et pousse vers la lumière",
+      "Elle pousse loin de la lumière",
+      "Rien ne change"
+    ],
+    "explanation": "Les plantes poussent vers la lumière grâce à un phénomène appelé phototropisme, pour capter plus de lumière et fabriquer leur nourriture.",
+    "tryAtHome": "Place une plante près d'une fenêtre pendant une semaine et observe de quel côté elle penche."
+  },
+  {
+    "id": "ciclo-agua",
+    "emoji": "☁️",
+    "topic": "earth",
+    "question": "D'où vient la pluie ?",
+    "prediction_options": [
+      "L'eau s'évapore, forme des nuages, puis retombe en pluie",
+      "Le ciel fabrique la pluie à partir de rien",
+      "L'océan projette de l'eau vers le haut"
+    ],
+    "explanation": "Le soleil chauffe l'eau, qui s'évapore en vapeur, forme des nuages et retombe sur terre sous forme de pluie — c'est le cycle de l'eau.",
+    "tryAtHome": "Fais bouillir de l'eau avec un adulte et tiens une assiette froide au-dessus de la vapeur pour voir des gouttelettes se former."
+  },
+  {
+    "id": "alavancas",
+    "emoji": "🏗️",
+    "topic": "physics",
+    "question": "Un long bâton peut-il t'aider à soulever une pierre lourde plus facilement ?",
+    "prediction_options": [
+      "Oui, il agit comme un levier",
+      "Non, cela rend la tâche plus difficile",
+      "Cela ne change rien"
+    ],
+    "explanation": "Un levier est une machine simple — une barre qui pivote sur un point d'appui — qui aide à soulever des objets lourds avec moins d'effort.",
+    "tryAtHome": "Équilibre une règle sur un petit objet (comme une gomme) comme une balançoire pour soulever un objet léger."
+  },
+  {
+    "id": "som-materiais",
+    "emoji": "🥁",
+    "topic": "physics",
+    "question": "Le son voyage-t-il mieux dans l'air ou à travers une table solide ?",
+    "prediction_options": [
+      "À travers les solides, comme une table",
+      "Seulement dans l'air",
+      "Le son ne voyage pas dans les solides"
+    ],
+    "explanation": "Le son voyage plus vite dans les solides que dans l'air, car les particules sont plus proches et transmettent les vibrations plus facilement.",
+    "tryAtHome": "Colle ton oreille contre une table pendant que quelqu'un tape doucement à l'autre bout, puis compare avec ce que tu entends dans l'air."
+  },
+  {
+    "id": "folhas-outono",
+    "emoji": "🍁",
+    "topic": "biology",
+    "question": "Pourquoi les feuilles changent-elles de couleur en automne ?",
+    "prediction_options": [
+      "Elles perdent la chlorophylle verte et d'autres couleurs apparaissent",
+      "Elles sont peintes par le gel",
+      "Elles absorbent la couleur du sol"
+    ],
+    "explanation": "En automne, les arbres arrêtent de produire de la chlorophylle verte, révélant les couleurs jaunes et orangées déjà présentes dans les feuilles.",
+    "tryAtHome": "Lors d'une promenade en automne, ramasse des feuilles tombées de différentes couleurs et compare-les."
+  }
 ]

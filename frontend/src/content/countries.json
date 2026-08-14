@@ -24,7 +24,16 @@
       "zh": "葡萄牙是第一个绕过非洲航行到印度的国家。"
     },
     "lat": 38.72,
-    "lng": -9.14
+    "lng": -9.14,
+    "music": {
+      "pt": "Portugal é conhecido pelo fado, uma música tradicional e melancólica cantada com guitarra portuguesa.",
+      "en": "Portugal is known for fado, a traditional and melancholic music sung with the Portuguese guitar.",
+      "de": "Portugal ist bekannt für den Fado, eine traditionelle, melancholische Musik, die mit der portugiesischen Gitarre gesungen wird.",
+      "fr": "Le Portugal est connu pour le fado, une musique traditionnelle et mélancolique chantée avec la guitare portugaise.",
+      "es": "Portugal es conocido por el fado, una música tradicional y melancólica cantada con la guitarra portuguesa.",
+      "it": "Il Portogallo è noto per il fado, una musica tradizionale e malinconica cantata con la chitarra portoghese.",
+      "zh": "葡萄牙以法多音乐闻名，这是一种用葡萄牙吉他伴奏演唱的传统忧伤音乐。"
+    }
   },
   {
     "iso": "ES",
@@ -51,7 +60,16 @@
       "zh": "在西班牙有一个节日,人们互相扔西红柿!"
     },
     "lat": 40.42,
-    "lng": -3.7
+    "lng": -3.7,
+    "music": {
+      "pt": "Em Espanha, o flamenco combina canto, guitarra e dança com muito ritmo e emoção.",
+      "en": "In Spain, flamenco combines singing, guitar and dance with lots of rhythm and emotion.",
+      "de": "In Spanien vereint der Flamenco Gesang, Gitarre und Tanz mit viel Rhythmus und Emotion.",
+      "fr": "En Espagne, le flamenco associe chant, guitare et danse avec beaucoup de rythme et d'émotion.",
+      "es": "En España, el flamenco combina canto, guitarra y baile con mucho ritmo y emoción.",
+      "it": "In Spagna, il flamenco unisce canto, chitarra e danza con molto ritmo ed emozione.",
+      "zh": "在西班牙，弗拉门戈将歌唱、吉他和舞蹈结合在一起，节奏感和感染力十足。"
+    }
   },
   {
     "iso": "FR",
@@ -78,7 +96,16 @@
       "zh": "巴黎的埃菲尔铁塔在夏天因为炎热会变得稍微高一点。"
     },
     "lat": 48.86,
-    "lng": 2.35
+    "lng": 2.35,
+    "music": {
+      "pt": "Em França, o acordeão é um instrumento tradicional muito associado à música de rua e às valsas.",
+      "en": "In France, the accordion is a traditional instrument closely associated with street music and waltzes.",
+      "de": "In Frankreich ist das Akkordeon ein traditionelles Instrument, das eng mit Straßenmusik und Walzern verbunden ist.",
+      "fr": "En France, l'accordéon est un instrument traditionnel très associé à la musique de rue et aux valses.",
+      "es": "En Francia, el acordeón es un instrumento tradicional muy asociado a la música callejera y a los valses.",
+      "it": "In Francia, la fisarmonica è uno strumento tradizionale molto associato alla musica di strada e ai valzer.",
+      "zh": "在法国，手风琴是一种传统乐器，常与街头音乐和华尔兹舞曲联系在一起。"
+    }
   },
   {
     "iso": "DE",
@@ -105,7 +132,16 @@
       "zh": "德国有一座非常美丽的城堡,启发了灰姑娘城堡的设计。"
     },
     "lat": 52.52,
-    "lng": 13.4
+    "lng": 13.4,
+    "music": {
+      "pt": "Na Alemanha, a tuba e o acordeão são muito usados na música tradicional bávara, tocada em festas populares.",
+      "en": "In Germany, the tuba and accordion are widely used in traditional Bavarian music, played at folk festivals.",
+      "de": "In Deutschland werden Tuba und Akkordeon häufig in der traditionellen bayerischen Musik verwendet, die auf Volksfesten gespielt wird.",
+      "fr": "En Allemagne, le tuba et l'accordéon sont très utilisés dans la musique traditionnelle bavaroise, jouée lors de fêtes populaires.",
+      "es": "En Alemania, la tuba y el acordeón se usan mucho en la música tradicional bávara, tocada en fiestas populares.",
+      "it": "In Germania, la tuba e la fisarmonica sono molto usate nella musica tradizionale bavarese, suonata nelle feste popolari.",
+      "zh": "在德国，大号和手风琴常用于传统的巴伐利亚音乐，这种音乐会在民间节庆中演奏。"
+    }
   },
   {
     "iso": "IT",
@@ -132,7 +168,16 @@
       "zh": "意大利的比萨斜塔已经倾斜了800多年!"
     },
     "lat": 41.9,
-    "lng": 12.5
+    "lng": 12.5,
+    "music": {
+      "pt": "Em Itália, a ópera nasceu há mais de 400 anos e continua a ser uma forma de arte muito apreciada.",
+      "en": "In Italy, opera was born more than 400 years ago and is still a much-loved art form.",
+      "de": "In Italien entstand die Oper vor mehr als 400 Jahren und ist bis heute eine sehr geschätzte Kunstform.",
+      "fr": "En Italie, l'opéra est né il y a plus de 400 ans et reste une forme d'art très appréciée.",
+      "es": "En Italia, la ópera nació hace más de 400 años y sigue siendo una forma de arte muy apreciada.",
+      "it": "In Italia, l'opera nacque più di 400 anni fa e resta ancora oggi una forma d'arte molto amata.",
+      "zh": "在意大利，歌剧诞生于四百多年前，至今仍是一种备受喜爱的艺术形式。"
+    }
   },
   {
     "iso": "GB",
@@ -159,7 +204,16 @@
       "zh": "伦敦著名的大本钟其实是钟的名字,不是塔的名字。"
     },
     "lat": 51.51,
-    "lng": -0.13
+    "lng": -0.13,
+    "music": {
+      "pt": "No Reino Unido, a gaita de foles escocesa é um instrumento tradicional tocado em festas e cerimónias.",
+      "en": "In the United Kingdom, the Scottish bagpipe is a traditional instrument played at celebrations and ceremonies.",
+      "de": "Im Vereinigten Königreich ist der schottische Dudelsack ein traditionelles Instrument, das bei Feiern und Zeremonien gespielt wird.",
+      "fr": "Au Royaume-Uni, la cornemuse écossaise est un instrument traditionnel joué lors de fêtes et de cérémonies.",
+      "es": "En el Reino Unido, la gaita escocesa es un instrumento tradicional que se toca en fiestas y ceremonias.",
+      "it": "Nel Regno Unito, la cornamusa scozzese è uno strumento tradizionale suonato in feste e cerimonie.",
+      "zh": "在英国，苏格兰风笛是一种在庆典和仪式上演奏的传统乐器。"
+    }
   },
   {
     "iso": "US",
@@ -186,7 +240,16 @@
       "zh": "美国的大峡谷非常大,从太空都能看到!"
     },
     "lat": 38.9,
-    "lng": -77.04
+    "lng": -77.04,
+    "music": {
+      "pt": "Nos Estados Unidos, o jazz nasceu em Nova Orleães e misturou influências africanas, europeias e caribenhas.",
+      "en": "In the United States, jazz was born in New Orleans and blended African, European and Caribbean influences.",
+      "de": "In den Vereinigten Staaten entstand der Jazz in New Orleans und vermischte afrikanische, europäische und karibische Einflüsse.",
+      "fr": "Aux États-Unis, le jazz est né à La Nouvelle-Orléans et a mêlé des influences africaines, européennes et caribéennes.",
+      "es": "En Estados Unidos, el jazz nació en Nueva Orleans y mezcló influencias africanas, europeas y caribeñas.",
+      "it": "Negli Stati Uniti, il jazz nacque a New Orleans e unì influenze africane, europee e caraibiche.",
+      "zh": "在美国，爵士乐诞生于新奥尔良，融合了非洲、欧洲和加勒比的音乐元素。"
+    }
   },
   {
     "iso": "BR",
@@ -213,7 +276,16 @@
       "zh": "巴西的亚马逊雨林产生了地球约20%的氧气。"
     },
     "lat": -15.79,
-    "lng": -47.88
+    "lng": -47.88,
+    "music": {
+      "pt": "No Brasil, a samba é uma música e dança animada, muito ligada ao Carnaval.",
+      "en": "In Brazil, samba is a lively music and dance style closely linked to Carnival.",
+      "de": "In Brasilien ist der Samba ein lebendiger Musik- und Tanzstil, der eng mit dem Karneval verbunden ist.",
+      "fr": "Au Brésil, la samba est une musique et une danse animées, très liées au Carnaval.",
+      "es": "En Brasil, la samba es una música y un baile animados, muy ligados al Carnaval.",
+      "it": "In Brasile, il samba è una musica e una danza vivace, molto legata al Carnevale.",
+      "zh": "在巴西，桑巴是一种充满活力的音乐和舞蹈形式，与狂欢节密切相关。"
+    }
   },
   {
     "iso": "CN",
@@ -240,7 +312,16 @@
       "zh": "中国的长城长达数千公里。"
     },
     "lat": 39.9,
-    "lng": 116.4
+    "lng": 116.4,
+    "music": {
+      "pt": "Na China, o guzheng é um instrumento de cordas muito antigo, ainda tocado hoje em dia.",
+      "en": "In China, the guzheng is a very ancient string instrument still played today.",
+      "de": "In China ist die Guzheng ein sehr altes Saiteninstrument, das noch heute gespielt wird.",
+      "fr": "En Chine, le guzheng est un instrument à cordes très ancien, encore joué aujourd'hui.",
+      "es": "En China, el guzheng es un instrumento de cuerda muy antiguo que todavía se toca hoy en día.",
+      "it": "In Cina, il guzheng è uno strumento a corde molto antico, ancora suonato oggi.",
+      "zh": "在中国，古筝是一种历史悠久的弦乐器，至今仍在演奏。"
+    }
   },
   {
     "iso": "JP",
@@ -267,7 +348,16 @@
       "zh": "在日本有一种非常快的火车,叫做\"子弹头列车\"。"
     },
     "lat": 35.68,
-    "lng": 139.69
+    "lng": 139.69,
+    "music": {
+      "pt": "No Japão, o koto é um instrumento tradicional de cordas usado há mais de mil anos.",
+      "en": "In Japan, the koto is a traditional string instrument that has been used for over a thousand years.",
+      "de": "In Japan ist das Koto ein traditionelles Saiteninstrument, das seit über tausend Jahren verwendet wird.",
+      "fr": "Au Japon, le koto est un instrument à cordes traditionnel utilisé depuis plus de mille ans.",
+      "es": "En Japón, el koto es un instrumento de cuerda tradicional utilizado desde hace más de mil años.",
+      "it": "In Giappone, il koto è uno strumento a corde tradizionale usato da oltre mille anni.",
+      "zh": "在日本，古琴（筝）是一种已使用了一千多年的传统弦乐器。"
+    }
   },
   {
     "iso": "IN",
@@ -294,7 +384,16 @@
       "zh": "印度的泰姬陵是一位皇帝为纪念他的妻子而建造的。"
     },
     "lat": 28.61,
-    "lng": 77.21
+    "lng": 77.21,
+    "music": {
+      "pt": "Na Índia, o sitar é um instrumento de cordas muito usado na música clássica indiana.",
+      "en": "In India, the sitar is a string instrument widely used in classical Indian music.",
+      "de": "In Indien wird die Sitar, ein Saiteninstrument, häufig in der klassischen indischen Musik verwendet.",
+      "fr": "En Inde, le sitar est un instrument à cordes très utilisé dans la musique classique indienne.",
+      "es": "En la India, el sitar es un instrumento de cuerda muy utilizado en la música clásica india.",
+      "it": "In India, il sitar è uno strumento a corde molto usato nella musica classica indiana.",
+      "zh": "在印度，西塔琴是印度古典音乐中广泛使用的一种弦乐器。"
+    }
   },
   {
     "iso": "EG",
@@ -321,7 +420,16 @@
       "zh": "埃及的金字塔已有4000多年的历史。"
     },
     "lat": 30.04,
-    "lng": 31.24
+    "lng": 31.24,
+    "music": {
+      "pt": "No Egito, o oud é um instrumento de cordas em forma de pera, muito usado na música árabe.",
+      "en": "In Egypt, the oud is a pear-shaped string instrument widely used in Arabic music.",
+      "de": "In Ägypten ist die Oud ein birnenförmiges Saiteninstrument, das häufig in der arabischen Musik verwendet wird.",
+      "fr": "En Égypte, le oud est un instrument à cordes en forme de poire, très utilisé dans la musique arabe.",
+      "es": "En Egipto, el laúd oud es un instrumento de cuerda en forma de pera, muy utilizado en la música árabe.",
+      "it": "In Egitto, l'oud è uno strumento a corde a forma di pera, molto usato nella musica araba.",
+      "zh": "在埃及，乌德琴是一种梨形弦乐器，广泛用于阿拉伯音乐。"
+    }
   },
   {
     "iso": "ZA",
@@ -348,7 +456,16 @@
       "zh": "南非有三个不同的首都!"
     },
     "lat": -25.75,
-    "lng": 28.19
+    "lng": 28.19,
+    "music": {
+      "pt": "Na África do Sul, os cânticos corais como o mbube têm harmonias muito ricas cantadas em grupo.",
+      "en": "In South Africa, choral songs like mbube have very rich harmonies sung in groups.",
+      "de": "In Südafrika haben Chorgesänge wie der Mbube sehr reiche Harmonien, die in Gruppen gesungen werden.",
+      "fr": "En Afrique du Sud, les chants choraux comme le mbube ont des harmonies très riches chantées en groupe.",
+      "es": "En Sudáfrica, los cantos corales como el mbube tienen armonías muy ricas cantadas en grupo.",
+      "it": "In Sudafrica, i canti corali come il mbube hanno armonie molto ricche cantate in gruppo.",
+      "zh": "在南非，像姆布贝这样的合唱歌曲以团体演唱、和声丰富著称。"
+    }
   },
   {
     "iso": "AU",
@@ -375,7 +492,16 @@
       "zh": "澳大利亚生活着袋鼠、考拉和其他地方没有的动物。"
     },
     "lat": -35.28,
-    "lng": 149.13
+    "lng": 149.13,
+    "music": {
+      "pt": "Na Austrália, o didgeridoo é um instrumento de sopro muito antigo, criado pelos povos aborígenes.",
+      "en": "In Australia, the didgeridoo is a very ancient wind instrument created by Aboriginal peoples.",
+      "de": "In Australien ist das Didgeridoo ein sehr altes Blasinstrument, das von den Aborigines erfunden wurde.",
+      "fr": "En Australie, le didgeridoo est un instrument à vent très ancien, créé par les peuples aborigènes.",
+      "es": "En Australia, el didgeridoo es un instrumento de viento muy antiguo, creado por los pueblos aborígenes.",
+      "it": "In Australia, il didgeridoo è uno strumento a fiato molto antico, creato dai popoli aborigeni.",
+      "zh": "在澳大利亚，迪吉里杜管是一种由原住民发明的古老吹奏乐器。"
+    }
   },
   {
     "iso": "CA",
@@ -402,7 +528,16 @@
       "zh": "加拿大的湖泊数量比世界上任何其他国家都多。"
     },
     "lat": 45.42,
-    "lng": -75.7
+    "lng": -75.7,
+    "music": {
+      "pt": "No Canadá, a música folk tradicional franco-canadiana usa muito o violino e a dança de pés.",
+      "en": "In Canada, traditional French-Canadian folk music makes great use of the fiddle and foot-tapping dance.",
+      "de": "In Kanada wird in der traditionellen frankokanadischen Volksmusik häufig die Fiedel sowie Step-Tanz eingesetzt.",
+      "fr": "Au Canada, la musique folk traditionnelle franco-canadienne utilise beaucoup le violon et la gigue.",
+      "es": "En Canadá, la música folclórica tradicional franco-canadiense utiliza mucho el violín y el zapateo.",
+      "it": "In Canada, la musica folk tradizionale franco-canadese utilizza molto il violino e il ballo battuto con i piedi.",
+      "zh": "在加拿大，传统的法裔加拿大民谣音乐大量使用小提琴和踢踏舞。"
+    }
   },
   {
     "iso": "MX",
@@ -429,7 +564,16 @@
       "zh": "巧克力最早是由墨西哥的古代民族发现的。"
     },
     "lat": 19.43,
-    "lng": -99.13
+    "lng": -99.13,
+    "music": {
+      "pt": "No México, o mariachi é um estilo musical alegre tocado com violinos, trompetes e guitarras.",
+      "en": "In Mexico, mariachi is a lively musical style played with violins, trumpets and guitars.",
+      "de": "In Mexiko ist der Mariachi ein fröhlicher Musikstil, der mit Geigen, Trompeten und Gitarren gespielt wird.",
+      "fr": "Au Mexique, le mariachi est un style musical joyeux joué avec des violons, des trompettes et des guitares.",
+      "es": "En México, el mariachi es un estilo musical alegre tocado con violines, trompetas y guitarras.",
+      "it": "In Messico, il mariachi è uno stile musicale allegro suonato con violini, trombe e chitarre.",
+      "zh": "在墨西哥，马里亚奇是一种由小提琴、小号和吉他演奏的欢快音乐风格。"
+    }
   },
   {
     "iso": "KR",
@@ -456,7 +600,16 @@
       "zh": "在韩国,孩子们用金属勺子和筷子吃饭。"
     },
     "lat": 37.57,
-    "lng": 126.98
+    "lng": 126.98,
+    "music": {
+      "pt": "Na Coreia do Sul, o pungmul é uma música tradicional com tambores e gongos tocada em festas.",
+      "en": "In South Korea, pungmul is a traditional music with drums and gongs played at festivals.",
+      "de": "In Südkorea ist Pungmul eine traditionelle Musik mit Trommeln und Gongs, die bei Festen gespielt wird.",
+      "fr": "En Corée du Sud, le pungmul est une musique traditionnelle avec tambours et gongs jouée lors de fêtes.",
+      "es": "En Corea del Sur, el pungmul es una música tradicional con tambores y gongs tocada en fiestas.",
+      "it": "In Corea del Sud, il pungmul è una musica tradizionale con tamburi e gong suonata nelle feste.",
+      "zh": "在韩国，农乐是一种由鼓和锣演奏的传统音乐，常在节庆活动中表演。"
+    }
   },
   {
     "iso": "GR",
@@ -483,7 +636,16 @@
       "zh": "奥林匹克运动会起源于几千年前的古希腊。"
     },
     "lat": 37.98,
-    "lng": 23.73
+    "lng": 23.73,
+    "music": {
+      "pt": "Na Grécia, o bouzouki é um instrumento de cordas muito usado na música popular grega.",
+      "en": "In Greece, the bouzouki is a string instrument widely used in Greek popular music.",
+      "de": "In Griechenland ist die Bouzouki ein Saiteninstrument, das häufig in der griechischen Volksmusik verwendet wird.",
+      "fr": "En Grèce, le bouzouki est un instrument à cordes très utilisé dans la musique populaire grecque.",
+      "es": "En Grecia, el buzuki es un instrumento de cuerda muy utilizado en la música popular griega.",
+      "it": "In Grecia, il bouzouki è uno strumento a corde molto usato nella musica popolare greca.",
+      "zh": "在希腊，布祖基琴是希腊流行音乐中广泛使用的一种弦乐器。"
+    }
   },
   {
     "iso": "KE",
@@ -510,7 +672,16 @@
       "zh": "在肯尼亚,每年有数百万斑马和角马一起迁徙。"
     },
     "lat": -1.29,
-    "lng": 36.82
+    "lng": 36.82,
+    "music": {
+      "pt": "No Quénia, os tambores tradicionais e os cânticos comunitários acompanham danças cheias de ritmo.",
+      "en": "In Kenya, traditional drums and community singing accompany dances full of rhythm.",
+      "de": "In Kenia begleiten traditionelle Trommeln und gemeinschaftlicher Gesang rhythmusreiche Tänze.",
+      "fr": "Au Kenya, les tambours traditionnels et les chants communautaires accompagnent des danses pleines de rythme.",
+      "es": "En Kenia, los tambores tradicionales y los cantos comunitarios acompañan bailes llenos de ritmo.",
+      "it": "In Kenya, i tamburi tradizionali e i canti comunitari accompagnano danze piene di ritmo.",
+      "zh": "在肯尼亚，传统鼓乐和集体歌唱为节奏感十足的舞蹈伴奏。"
+    }
   },
   {
     "iso": "SE",
@@ -537,6 +708,735 @@
       "zh": "在瑞典,夏天的时候有些地区太阳几乎不落下。"
     },
     "lat": 59.33,
-    "lng": 18.07
+    "lng": 18.07,
+    "music": {
+      "pt": "Na Suécia, o nyckelharpa é um antigo instrumento de cordas tocado com um teclado e um arco.",
+      "en": "In Sweden, the nyckelharpa is an ancient string instrument played with a keyboard and a bow.",
+      "de": "In Schweden ist die Nyckelharpa ein altes Saiteninstrument, das mit einer Tastatur und einem Bogen gespielt wird.",
+      "fr": "En Suède, la nyckelharpa est un ancien instrument à cordes joué avec un clavier et un archet.",
+      "es": "En Suecia, la nyckelharpa es un antiguo instrumento de cuerda que se toca con un teclado y un arco.",
+      "it": "In Svezia, la nyckelharpa è un antico strumento a corde suonato con una tastiera e un archetto.",
+      "zh": "在瑞典，尼克尔哈帕琴是一种古老的弦乐器，需要用键盘和琴弓来演奏。"
+    }
+  },
+  {
+    "iso": "MA",
+    "flag": "🇲🇦",
+    "capital": "Rabat",
+    "continent": "africa",
+    "currency": "MAD (DH)",
+    "lat": 34.02,
+    "lng": -6.84,
+    "name": {
+      "pt": "Marrocos",
+      "en": "Morocco",
+      "de": "Marokko",
+      "fr": "Maroc",
+      "es": "Marruecos",
+      "it": "Marocco",
+      "zh": "摩洛哥"
+    },
+    "fact": {
+      "pt": "Marrocos tem uma das universidades mais antigas do mundo, fundada em Fez no ano 859.",
+      "en": "Morocco has one of the world's oldest universities, founded in Fez in the year 859.",
+      "de": "Marokko besitzt eine der ältesten Universitäten der Welt, die im Jahr 859 in Fès gegründet wurde.",
+      "fr": "Le Maroc possède l'une des plus anciennes universités du monde, fondée à Fès en l'an 859.",
+      "es": "Marruecos tiene una de las universidades más antiguas del mundo, fundada en Fez en el año 859.",
+      "it": "Il Marocco ha una delle università più antiche del mondo, fondata a Fes nell'anno 859.",
+      "zh": "摩洛哥拥有世界上最古老的大学之一，于公元859年在非斯创立。"
+    },
+    "music": {
+      "pt": "Marrocos é conhecido pela música gnawa, que mistura ritmos africanos com cânticos espirituais.",
+      "en": "Morocco is known for Gnawa music, which blends African rhythms with spiritual chanting.",
+      "de": "Marokko ist bekannt für die Gnawa-Musik, die afrikanische Rhythmen mit spirituellem Gesang verbindet.",
+      "fr": "Le Maroc est connu pour la musique gnaoua, qui mêle rythmes africains et chants spirituels.",
+      "es": "Marruecos es conocido por la música gnawa, que mezcla ritmos africanos con cánticos espirituales.",
+      "it": "Il Marocco è noto per la musica gnawa, che unisce ritmi africani a canti spirituali.",
+      "zh": "摩洛哥以格纳瓦音乐闻名，这种音乐融合了非洲节奏与灵性吟唱。"
+    }
+  },
+  {
+    "iso": "NG",
+    "flag": "🇳🇬",
+    "capital": "Abuja",
+    "continent": "africa",
+    "currency": "NGN (₦)",
+    "lat": 9.08,
+    "lng": 7.4,
+    "name": {
+      "pt": "Nigéria",
+      "en": "Nigeria",
+      "de": "Nigeria",
+      "fr": "Nigéria",
+      "es": "Nigeria",
+      "it": "Nigeria",
+      "zh": "尼日利亚"
+    },
+    "fact": {
+      "pt": "A Nigéria é o país mais populoso de África e tem a Nollywood, uma das maiores indústrias de cinema do mundo.",
+      "en": "Nigeria is Africa's most populous country and home to Nollywood, one of the world's largest film industries.",
+      "de": "Nigeria ist das bevölkerungsreichste Land Afrikas und Heimat von Nollywood, einer der größten Filmindustrien der Welt.",
+      "fr": "Le Nigéria est le pays le plus peuplé d'Afrique et abrite Nollywood, l'une des plus grandes industries cinématographiques du monde.",
+      "es": "Nigeria es el país más poblado de África y alberga Nollywood, una de las mayores industrias cinematográficas del mundo.",
+      "it": "La Nigeria è il paese più popoloso dell'Africa ed è sede di Nollywood, una delle più grandi industrie cinematografiche del mondo.",
+      "zh": "尼日利亚是非洲人口最多的国家，也是全球最大电影产业之一“尼莱坞”的所在地。"
+    },
+    "music": {
+      "pt": "A Nigéria é o berço do afrobeat, um estilo musical que mistura jazz, funk e ritmos tradicionais iorubás.",
+      "en": "Nigeria is the birthplace of Afrobeat, a musical style mixing jazz, funk and traditional Yoruba rhythms.",
+      "de": "Nigeria ist die Geburtsstätte des Afrobeat, eines Musikstils, der Jazz, Funk und traditionelle Yoruba-Rhythmen vereint.",
+      "fr": "Le Nigéria est le berceau de l'afrobeat, un style musical mêlant jazz, funk et rythmes traditionnels yoruba.",
+      "es": "Nigeria es la cuna del afrobeat, un estilo musical que mezcla jazz, funk y ritmos tradicionales yoruba.",
+      "it": "La Nigeria è la culla dell'afrobeat, uno stile musicale che unisce jazz, funk e ritmi tradizionali yoruba.",
+      "zh": "尼日利亚是非洲节拍（Afrobeat）音乐的发源地，这种风格融合了爵士乐、放克乐和约鲁巴传统节奏。"
+    }
+  },
+  {
+    "iso": "ET",
+    "flag": "🇪🇹",
+    "capital": "Adis Abeba",
+    "continent": "africa",
+    "currency": "ETB (Br)",
+    "lat": 9.03,
+    "lng": 38.74,
+    "name": {
+      "pt": "Etiópia",
+      "en": "Ethiopia",
+      "de": "Äthiopien",
+      "fr": "Éthiopie",
+      "es": "Etiopía",
+      "it": "Etiopia",
+      "zh": "埃塞俄比亚"
+    },
+    "fact": {
+      "pt": "A Etiópia usa o seu próprio calendário, que está cerca de sete ou oito anos atrasado em relação ao usado na maior parte do mundo.",
+      "en": "Ethiopia uses its own calendar, which is about seven or eight years behind the one used in most of the world.",
+      "de": "Äthiopien verwendet seinen eigenen Kalender, der etwa sieben bis acht Jahre hinter dem in den meisten Ländern gebräuchlichen liegt.",
+      "fr": "L'Éthiopie utilise son propre calendrier, qui a environ sept à huit ans de retard sur celui utilisé dans la majeure partie du monde.",
+      "es": "Etiopía utiliza su propio calendario, que va unos siete u ocho años por detrás del que se usa en la mayor parte del mundo.",
+      "it": "L'Etiopia utilizza un proprio calendario, che è indietro di circa sette o otto anni rispetto a quello usato nella maggior parte del mondo.",
+      "zh": "埃塞俄比亚使用自己独特的历法，比世界大多数地区使用的历法晚了大约七到八年。"
+    },
+    "music": {
+      "pt": "A música tradicional etíope usa muitas vezes o krar, um instrumento de cordas em forma de taça.",
+      "en": "Traditional Ethiopian music often features the krar, a bowl-shaped stringed instrument.",
+      "de": "Traditionelle äthiopische Musik verwendet oft die Krar, ein schalenförmiges Saiteninstrument.",
+      "fr": "La musique traditionnelle éthiopienne utilise souvent le krar, un instrument à cordes en forme de bol.",
+      "es": "La música tradicional etíope suele utilizar el krar, un instrumento de cuerda en forma de cuenco.",
+      "it": "La musica tradizionale etiope utilizza spesso il krar, uno strumento a corde a forma di ciotola.",
+      "zh": "埃塞俄比亚传统音乐常使用一种碗状弦乐器——克拉尔琴。"
+    }
+  },
+  {
+    "iso": "TZ",
+    "flag": "🇹🇿",
+    "capital": "Dodoma",
+    "continent": "africa",
+    "currency": "TZS (TSh)",
+    "lat": -6.16,
+    "lng": 35.75,
+    "name": {
+      "pt": "Tanzânia",
+      "en": "Tanzania",
+      "de": "Tansania",
+      "fr": "Tanzanie",
+      "es": "Tanzania",
+      "it": "Tanzania",
+      "zh": "坦桑尼亚"
+    },
+    "fact": {
+      "pt": "A Tanzânia tem o Monte Kilimanjaro, a montanha mais alta de África, e o Serengeti, famoso pelas migrações de animais.",
+      "en": "Tanzania is home to Mount Kilimanjaro, the tallest mountain in Africa, and to the Serengeti, famous for its animal migrations.",
+      "de": "Tansania beherbergt den Kilimandscharo, den höchsten Berg Afrikas, sowie die Serengeti, die für ihre Tierwanderungen berühmt ist.",
+      "fr": "La Tanzanie abrite le mont Kilimandjaro, la plus haute montagne d'Afrique, et le Serengeti, célèbre pour ses migrations animales.",
+      "es": "Tanzania alberga el monte Kilimanjaro, la montaña más alta de África, y el Serengeti, famoso por sus migraciones de animales.",
+      "it": "La Tanzania ospita il monte Kilimangiaro, la montagna più alta d'Africa, e il Serengeti, famoso per le migrazioni degli animali.",
+      "zh": "坦桑尼亚拥有非洲最高峰乞力马扎罗山，以及以动物大迁徙闻名的塞伦盖蒂大草原。"
+    },
+    "music": {
+      "pt": "A música tradicional taarab da Tanzânia mistura influências africanas, árabes e indianas com letras poéticas cantadas.",
+      "en": "Traditional Tanzanian taarab music blends African, Arab and Indian influences with poetic sung lyrics.",
+      "de": "Die traditionelle tansanische Taarab-Musik verbindet afrikanische, arabische und indische Einflüsse mit poetisch gesungenen Texten.",
+      "fr": "La musique traditionnelle taarab de Tanzanie mêle influences africaines, arabes et indiennes avec des paroles poétiques chantées.",
+      "es": "La música tradicional taarab de Tanzania mezcla influencias africanas, árabes e indias con letras poéticas cantadas.",
+      "it": "La musica tradizionale taarab della Tanzania unisce influenze africane, arabe e indiane con testi poetici cantati.",
+      "zh": "坦桑尼亚传统的塔拉布音乐融合了非洲、阿拉伯和印度的音乐元素，歌词富有诗意。"
+    }
+  },
+  {
+    "iso": "TH",
+    "flag": "🇹🇭",
+    "capital": "Banguecoque",
+    "continent": "asia",
+    "currency": "THB (฿)",
+    "lat": 13.75,
+    "lng": 100.5,
+    "name": {
+      "pt": "Tailândia",
+      "en": "Thailand",
+      "de": "Thailand",
+      "fr": "Thaïlande",
+      "es": "Tailandia",
+      "it": "Tailandia",
+      "zh": "泰国"
+    },
+    "fact": {
+      "pt": "A Tailândia é o único país do Sudeste Asiático que nunca foi colonizado por uma potência europeia.",
+      "en": "Thailand is the only country in Southeast Asia that was never colonized by a European power.",
+      "de": "Thailand ist das einzige Land Südostasiens, das nie von einer europäischen Macht kolonisiert wurde.",
+      "fr": "La Thaïlande est le seul pays d'Asie du Sud-Est qui n'a jamais été colonisé par une puissance européenne.",
+      "es": "Tailandia es el único país del Sudeste Asiático que nunca fue colonizado por una potencia europea.",
+      "it": "La Tailandia è l'unico paese del Sud-est asiatico che non è mai stato colonizzato da una potenza europea.",
+      "zh": "泰国是东南亚唯一一个从未被欧洲列强殖民过的国家。"
+    },
+    "music": {
+      "pt": "O khaen, um instrumento de sopro feito de tubos de bambu, é um instrumento tradicional tailandês.",
+      "en": "The khaen, a mouth organ made of bamboo pipes, is a traditional Thai instrument.",
+      "de": "Die Khaen, eine Mundorgel aus Bambusröhren, ist ein traditionelles thailändisches Instrument.",
+      "fr": "Le khaen, un orgue à bouche fait de tuyaux de bambou, est un instrument traditionnel thaïlandais.",
+      "es": "El khaen, un órgano de boca hecho de tubos de bambú, es un instrumento tradicional tailandés.",
+      "it": "Il khaen, un organo a bocca fatto di canne di bambù, è uno strumento tradizionale tailandese.",
+      "zh": "笙（khaen）是一种由竹管制成的口吹乐器，是泰国的传统乐器。"
+    }
+  },
+  {
+    "iso": "ID",
+    "flag": "🇮🇩",
+    "capital": "Jacarta",
+    "continent": "asia",
+    "currency": "IDR (Rp)",
+    "lat": -6.21,
+    "lng": 106.85,
+    "name": {
+      "pt": "Indonésia",
+      "en": "Indonesia",
+      "de": "Indonesien",
+      "fr": "Indonésie",
+      "es": "Indonesia",
+      "it": "Indonesia",
+      "zh": "印度尼西亚"
+    },
+    "fact": {
+      "pt": "A Indonésia é formada por mais de 17 mil ilhas, mais do que qualquer outro país do mundo.",
+      "en": "Indonesia is made up of more than 17,000 islands, more than any other country in the world.",
+      "de": "Indonesien besteht aus mehr als 17.000 Inseln, mehr als jedes andere Land der Welt.",
+      "fr": "L'Indonésie est composée de plus de 17 000 îles, plus que tout autre pays au monde.",
+      "es": "Indonesia está formada por más de 17.000 islas, más que cualquier otro país del mundo.",
+      "it": "L'Indonesia è composta da oltre 17.000 isole, più di qualsiasi altro paese al mondo.",
+      "zh": "印度尼西亚由一万七千多个岛屿组成，是世界上岛屿数量最多的国家。"
+    },
+    "music": {
+      "pt": "As orquestras de gamelão indonésias usam gongos de metal e xilofones para criar uma música rica e envolvente.",
+      "en": "Indonesian gamelan orchestras use metal gongs and xylophones to create rich, layered music.",
+      "de": "Indonesische Gamelan-Orchester nutzen Metallgongs und Xylophone, um eine reiche, vielschichtige Musik zu erschaffen.",
+      "fr": "Les orchestres de gamelan indonésiens utilisent des gongs métalliques et des xylophones pour créer une musique riche et enveloppante.",
+      "es": "Las orquestas de gamelán indonesias usan gongs metálicos y xilófonos para crear una música rica y envolvente.",
+      "it": "Le orchestre di gamelan indonesiane usano gong metallici e xilofoni per creare una musica ricca e avvolgente.",
+      "zh": "印度尼西亚的加美兰乐团使用金属锣和木琴，创造出层次丰富的音乐。"
+    }
+  },
+  {
+    "iso": "TR",
+    "flag": "🇹🇷",
+    "capital": "Ancara",
+    "continent": "asia",
+    "currency": "TRY (₺)",
+    "lat": 39.93,
+    "lng": 32.85,
+    "name": {
+      "pt": "Turquia",
+      "en": "Turkey",
+      "de": "Türkei",
+      "fr": "Turquie",
+      "es": "Turquía",
+      "it": "Turchia",
+      "zh": "土耳其"
+    },
+    "fact": {
+      "pt": "Istambul, a maior cidade da Turquia, é a única cidade do mundo situada em dois continentes, a Europa e a Ásia.",
+      "en": "Istanbul, Turkey's largest city, is the only city in the world located on two continents, Europe and Asia.",
+      "de": "Istanbul, die größte Stadt der Türkei, ist die einzige Stadt der Welt, die auf zwei Kontinenten liegt, Europa und Asien.",
+      "fr": "Istanbul, la plus grande ville de Turquie, est la seule ville au monde située sur deux continents, l'Europe et l'Asie.",
+      "es": "Estambul, la mayor ciudad de Turquía, es la única ciudad del mundo situada en dos continentes, Europa y Asia.",
+      "it": "Istanbul, la città più grande della Turchia, è l'unica città al mondo situata su due continenti, Europa e Asia.",
+      "zh": "伊斯坦布尔是土耳其最大的城市，也是世界上唯一一座横跨欧亚两大洲的城市。"
+    },
+    "music": {
+      "pt": "O saz, um instrumento de cordas de braço comprido, é central na música popular tradicional turca.",
+      "en": "The saz, a long-necked stringed instrument, is central to traditional Turkish folk music.",
+      "de": "Die Saz, ein Saiteninstrument mit langem Hals, steht im Mittelpunkt der traditionellen türkischen Volksmusik.",
+      "fr": "Le saz, un instrument à cordes au long manche, est central dans la musique folklorique traditionnelle turque.",
+      "es": "El saz, un instrumento de cuerda de mástil largo, es fundamental en la música popular tradicional turca.",
+      "it": "Il saz, uno strumento a corde dal manico lungo, è centrale nella musica popolare tradizionale turca.",
+      "zh": "萨兹琴是一种长颈弦乐器，是土耳其传统民间音乐的核心乐器。"
+    }
+  },
+  {
+    "iso": "PH",
+    "flag": "🇵🇭",
+    "capital": "Manila",
+    "continent": "asia",
+    "currency": "PHP (₱)",
+    "lat": 14.6,
+    "lng": 120.98,
+    "name": {
+      "pt": "Filipinas",
+      "en": "Philippines",
+      "de": "Philippinen",
+      "fr": "Philippines",
+      "es": "Filipinas",
+      "it": "Filippine",
+      "zh": "菲律宾"
+    },
+    "fact": {
+      "pt": "As Filipinas são formadas por mais de 7 mil ilhas e falam-se mais de 180 línguas em todo o país.",
+      "en": "The Philippines is made up of more than 7,000 islands and has over 180 languages spoken across the country.",
+      "de": "Die Philippinen bestehen aus mehr als 7.000 Inseln, und im ganzen Land werden über 180 Sprachen gesprochen.",
+      "fr": "Les Philippines sont composées de plus de 7 000 îles et l'on y parle plus de 180 langues.",
+      "es": "Filipinas está formada por más de 7.000 islas y en todo el país se hablan más de 180 lenguas.",
+      "it": "Le Filippine sono composte da oltre 7.000 isole e in tutto il paese si parlano più di 180 lingue.",
+      "zh": "菲律宾由七千多个岛屿组成，全国使用的语言超过180种。"
+    },
+    "music": {
+      "pt": "O kulintang, um conjunto de pequenos gongos, é um instrumento tradicional usado no sul das Filipinas.",
+      "en": "The kulintang, a set of small gongs, is a traditional instrument used in the southern Philippines.",
+      "de": "Das Kulintang, ein Satz kleiner Gongs, ist ein traditionelles Instrument, das im Süden der Philippinen verwendet wird.",
+      "fr": "Le kulintang, un ensemble de petits gongs, est un instrument traditionnel utilisé dans le sud des Philippines.",
+      "es": "El kulintang, un conjunto de pequeños gongs, es un instrumento tradicional utilizado en el sur de Filipinas.",
+      "it": "Il kulintang, un insieme di piccoli gong, è uno strumento tradizionale utilizzato nel sud delle Filippine.",
+      "zh": "库林塘是一组小锣，是菲律宾南部地区使用的传统乐器。"
+    }
+  },
+  {
+    "iso": "AR",
+    "flag": "🇦🇷",
+    "capital": "Buenos Aires",
+    "continent": "south-america",
+    "currency": "ARS ($)",
+    "lat": -34.6,
+    "lng": -58.38,
+    "name": {
+      "pt": "Argentina",
+      "en": "Argentina",
+      "de": "Argentinien",
+      "fr": "Argentine",
+      "es": "Argentina",
+      "it": "Argentina",
+      "zh": "阿根廷"
+    },
+    "fact": {
+      "pt": "A Argentina é o berço do tango, uma dança apaixonada que começou em Buenos Aires no final do século XIX.",
+      "en": "Argentina is home to the tango, a passionate dance that began in Buenos Aires in the late 19th century.",
+      "de": "Argentinien ist die Heimat des Tangos, eines leidenschaftlichen Tanzes, der Ende des 19. Jahrhunderts in Buenos Aires entstand.",
+      "fr": "L'Argentine est le berceau du tango, une danse passionnée née à Buenos Aires à la fin du XIXe siècle.",
+      "es": "Argentina es la cuna del tango, un baile apasionado que comenzó en Buenos Aires a finales del siglo XIX.",
+      "it": "L'Argentina è la culla del tango, una danza appassionata nata a Buenos Aires alla fine del XIX secolo.",
+      "zh": "阿根廷是探戈的故乡，这种充满激情的舞蹈起源于19世纪末的布宜诺斯艾利斯。"
+    },
+    "music": {
+      "pt": "A música de tango, muitas vezes tocada com o bandoneón, nasceu nos bairros de Buenos Aires.",
+      "en": "Tango music, often played with the bandoneon, was born in the neighborhoods of Buenos Aires.",
+      "de": "Die Tango-Musik, oft mit dem Bandoneon gespielt, entstand in den Vierteln von Buenos Aires.",
+      "fr": "La musique de tango, souvent jouée au bandonéon, est née dans les quartiers de Buenos Aires.",
+      "es": "La música de tango, a menudo tocada con el bandoneón, nació en los barrios de Buenos Aires.",
+      "it": "La musica del tango, spesso suonata con il bandoneon, nacque nei quartieri di Buenos Aires.",
+      "zh": "探戈音乐诞生于布宜诺斯艾利斯的街区，常用班多钮手风琴演奏。"
+    }
+  },
+  {
+    "iso": "PE",
+    "flag": "🇵🇪",
+    "capital": "Lima",
+    "continent": "south-america",
+    "currency": "PEN (S/)",
+    "lat": -12.05,
+    "lng": -77.04,
+    "name": {
+      "pt": "Peru",
+      "en": "Peru",
+      "de": "Peru",
+      "fr": "Pérou",
+      "es": "Perú",
+      "it": "Perù",
+      "zh": "秘鲁"
+    },
+    "fact": {
+      "pt": "O Peru tem Machu Picchu, uma antiga cidade inca construída no alto dos Andes há mais de 500 anos.",
+      "en": "Peru is home to Machu Picchu, an ancient Inca city built high in the Andes mountains over 500 years ago.",
+      "de": "Peru beherbergt Machu Picchu, eine alte Inkastadt, die vor über 500 Jahren hoch in den Anden erbaut wurde.",
+      "fr": "Le Pérou abrite le Machu Picchu, une ancienne cité inca construite en altitude dans les Andes il y a plus de 500 ans.",
+      "es": "Perú alberga Machu Picchu, una antigua ciudad inca construida en lo alto de los Andes hace más de 500 años.",
+      "it": "Il Perù ospita Machu Picchu, un'antica città inca costruita in alta quota sulle Ande più di 500 anni fa.",
+      "zh": "秘鲁拥有马丘比丘，这是五百多年前印加人在安第斯山脉高处建造的一座古城。"
+    },
+    "music": {
+      "pt": "A música tradicional andina usa muitas vezes a flauta de pã e o charango, um pequeno instrumento de cordas.",
+      "en": "Traditional Andean music often features the pan flute and the charango, a small stringed instrument.",
+      "de": "Traditionelle Anden-Musik verwendet häufig die Panflöte und die Charango, ein kleines Saiteninstrument.",
+      "fr": "La musique traditionnelle andine utilise souvent la flûte de Pan et le charango, un petit instrument à cordes.",
+      "es": "La música tradicional andina suele utilizar la flauta de pan y el charango, un pequeño instrumento de cuerda.",
+      "it": "La musica tradizionale andina utilizza spesso il flauto di Pan e il charango, un piccolo strumento a corde.",
+      "zh": "传统的安第斯山区音乐常使用排箫和查兰戈琴（一种小型弦乐器）。"
+    }
+  },
+  {
+    "iso": "CL",
+    "flag": "🇨🇱",
+    "capital": "Santiago",
+    "continent": "south-america",
+    "currency": "CLP ($)",
+    "lat": -33.45,
+    "lng": -70.67,
+    "name": {
+      "pt": "Chile",
+      "en": "Chile",
+      "de": "Chile",
+      "fr": "Chili",
+      "es": "Chile",
+      "it": "Cile",
+      "zh": "智利"
+    },
+    "fact": {
+      "pt": "O Chile é um dos países mais compridos e estreitos do mundo, estendendo-se por mais de 4000 quilómetros de norte a sul.",
+      "en": "Chile is one of the longest and narrowest countries in the world, stretching over 4,000 kilometers from north to south.",
+      "de": "Chile ist eines der längsten und schmalsten Länder der Welt und erstreckt sich über 4.000 Kilometer von Norden nach Süden.",
+      "fr": "Le Chili est l'un des pays les plus longs et les plus étroits du monde, s'étendant sur plus de 4 000 kilomètres du nord au sud.",
+      "es": "Chile es uno de los países más largos y estrechos del mundo, extendiéndose más de 4000 kilómetros de norte a sur.",
+      "it": "Il Cile è uno dei paesi più lunghi e stretti al mondo, esteso per oltre 4000 chilometri da nord a sud.",
+      "zh": "智利是世界上最狭长的国家之一，南北绵延超过4000公里。"
+    },
+    "music": {
+      "pt": "A cueca, a dança nacional do Chile, é normalmente acompanhada por guitarra, acordeão e lenços agitados no ar.",
+      "en": "The cueca, Chile's national dance, is often accompanied by guitar, accordion and handkerchief waving.",
+      "de": "Die Cueca, Chiles Nationaltanz, wird oft von Gitarre, Akkordeon und schwenkenden Taschentüchern begleitet.",
+      "fr": "La cueca, danse nationale du Chili, est souvent accompagnée de guitare, d'accordéon et de mouchoirs agités.",
+      "es": "La cueca, el baile nacional de Chile, suele ir acompañada de guitarra, acordeón y pañuelos agitados en el aire.",
+      "it": "La cueca, la danza nazionale del Cile, è spesso accompagnata da chitarra, fisarmonica e fazzoletti agitati.",
+      "zh": "库埃卡舞是智利的国家舞蹈，常以吉他、手风琴伴奏，并挥舞手帕。"
+    }
+  },
+  {
+    "iso": "CO",
+    "flag": "🇨🇴",
+    "capital": "Bogotá",
+    "continent": "south-america",
+    "currency": "COP ($)",
+    "lat": 4.71,
+    "lng": -74.07,
+    "name": {
+      "pt": "Colômbia",
+      "en": "Colombia",
+      "de": "Kolumbien",
+      "fr": "Colombie",
+      "es": "Colombia",
+      "it": "Colombia",
+      "zh": "哥伦比亚"
+    },
+    "fact": {
+      "pt": "A Colômbia é um dos países com maior biodiversidade do planeta e cultiva mais variedades de orquídeas do que quase qualquer outro país.",
+      "en": "Colombia is one of the most biodiverse countries on Earth and grows more varieties of orchids than almost any other country.",
+      "de": "Kolumbien ist eines der artenreichsten Länder der Erde und baut mehr Orchideenarten an als fast jedes andere Land.",
+      "fr": "La Colombie est l'un des pays les plus riches en biodiversité de la planète et cultive plus de variétés d'orchidées que presque tout autre pays.",
+      "es": "Colombia es uno de los países con mayor biodiversidad del planeta y cultiva más variedades de orquídeas que casi cualquier otro país.",
+      "it": "La Colombia è uno dei paesi con la maggiore biodiversità del pianeta e coltiva più varietà di orchidee di quasi ogni altro paese.",
+      "zh": "哥伦比亚是地球上生物多样性最丰富的国家之一，其种植的兰花品种数量几乎超过其他所有国家。"
+    },
+    "music": {
+      "pt": "A cúmbia, um ritmo animado tocado com tambores e flautas de gaita, teve origem na Colômbia.",
+      "en": "Cumbia, a lively rhythm played with drums and gaita flutes, originated in Colombia.",
+      "de": "Cumbia, ein lebhafter Rhythmus, der mit Trommeln und Gaita-Flöten gespielt wird, stammt aus Kolumbien.",
+      "fr": "La cumbia, un rythme entraînant joué avec des tambours et des flûtes gaita, est née en Colombie.",
+      "es": "La cumbia, un ritmo animado tocado con tambores y flautas de gaita, se originó en Colombia.",
+      "it": "La cumbia, un ritmo vivace suonato con tamburi e flauti gaita, è nata in Colombia.",
+      "zh": "坎比亚舞曲起源于哥伦比亚，是一种用鼓和盖塔笛演奏的欢快节奏音乐。"
+    }
+  },
+  {
+    "iso": "NO",
+    "flag": "🇳🇴",
+    "capital": "Oslo",
+    "continent": "europe",
+    "currency": "NOK (kr)",
+    "lat": 59.91,
+    "lng": 10.75,
+    "name": {
+      "pt": "Noruega",
+      "en": "Norway",
+      "de": "Norwegen",
+      "fr": "Norvège",
+      "es": "Noruega",
+      "it": "Norvegia",
+      "zh": "挪威"
+    },
+    "fact": {
+      "pt": "Em partes do norte da Noruega, o sol não se põe durante semanas no verão, o chamado sol da meia-noite.",
+      "en": "In parts of northern Norway, the sun does not set at all for weeks during summer, known as the midnight sun.",
+      "de": "In Teilen Nordnorwegens geht die Sonne im Sommer wochenlang gar nicht unter, bekannt als die Mitternachtssonne.",
+      "fr": "Dans certaines régions du nord de la Norvège, le soleil ne se couche pas pendant des semaines en été, c'est le soleil de minuit.",
+      "es": "En partes del norte de Noruega, el sol no se pone durante semanas en verano, lo que se conoce como el sol de medianoche.",
+      "it": "In alcune zone della Norvegia settentrionale, il sole non tramonta per settimane in estate, il cosiddetto sole di mezzanotte.",
+      "zh": "在挪威北部部分地区，夏季的太阳会连续数周不落，这被称为“午夜太阳”。"
+    },
+    "music": {
+      "pt": "A música tradicional norueguesa é muitas vezes tocada no hardingfele, um violino com cordas extra de ressonância.",
+      "en": "Traditional Norwegian folk music is often played on the hardingfele, a fiddle with extra resonating strings.",
+      "de": "Traditionelle norwegische Volksmusik wird oft auf der Hardangerfiedel gespielt, einer Geige mit zusätzlichen Resonanzsaiten.",
+      "fr": "La musique folklorique traditionnelle norvégienne est souvent jouée au hardingfele, un violon avec des cordes de résonance supplémentaires.",
+      "es": "La música folclórica tradicional noruega suele tocarse con el hardingfele, un violín con cuerdas adicionales de resonancia.",
+      "it": "La musica folk tradizionale norvegese viene spesso suonata con l'hardingfele, un violino con corde di risonanza aggiuntive.",
+      "zh": "挪威传统民间音乐常使用哈丹格尔小提琴演奏，这种小提琴带有额外的共鸣弦。"
+    }
+  },
+  {
+    "iso": "NL",
+    "flag": "🇳🇱",
+    "capital": "Amesterdão",
+    "continent": "europe",
+    "currency": "EUR (€)",
+    "lat": 52.37,
+    "lng": 4.9,
+    "name": {
+      "pt": "Países Baixos",
+      "en": "Netherlands",
+      "de": "Niederlande",
+      "fr": "Pays-Bas",
+      "es": "Países Bajos",
+      "it": "Paesi Bassi",
+      "zh": "荷兰"
+    },
+    "fact": {
+      "pt": "Cerca de um quarto dos Países Baixos fica abaixo do nível do mar, por isso os holandeses construíram diques e moinhos para manter a água afastada.",
+      "en": "About a quarter of the Netherlands lies below sea level, so the Dutch built dikes and windmills to keep the water out.",
+      "de": "Etwa ein Viertel der Niederlande liegt unter dem Meeresspiegel, weshalb die Niederländer Deiche und Windmühlen bauten, um das Wasser fernzuhalten.",
+      "fr": "Environ un quart des Pays-Bas se trouve sous le niveau de la mer, c'est pourquoi les Néerlandais ont construit des digues et des moulins à vent pour repousser l'eau.",
+      "es": "Aproximadamente una cuarta parte de los Países Bajos está por debajo del nivel del mar, por lo que los neerlandeses construyeron diques y molinos para mantener el agua a raya.",
+      "it": "Circa un quarto dei Paesi Bassi si trova sotto il livello del mare, perciò gli olandesi hanno costruito dighe e mulini a vento per tenere lontana l'acqua.",
+      "zh": "荷兰大约四分之一的国土低于海平面，因此荷兰人修建了堤坝和风车来阻挡海水。"
+    },
+    "music": {
+      "pt": "A música tradicional neerlandesa inclui a \"levenslied\", um género de canções emotivas para cantar em grupo, muitas vezes com acordeão.",
+      "en": "Traditional Dutch music includes the \"levenslied\", a genre of emotional sing-along songs often played with accordion.",
+      "de": "Zur traditionellen niederländischen Musik gehört das „Levenslied“, ein Genre gefühlvoller Mitsing-Lieder, oft mit Akkordeon begleitet.",
+      "fr": "La musique traditionnelle néerlandaise inclut le « levenslied », un genre de chansons émouvantes à chanter en chœur, souvent accompagné d'accordéon.",
+      "es": "La música tradicional neerlandesa incluye el \"levenslied\", un género de canciones emotivas para cantar en grupo, a menudo con acordeón.",
+      "it": "La musica tradizionale olandese include il \"levenslied\", un genere di canzoni emotive da cantare in coro, spesso accompagnate dalla fisarmonica.",
+      "zh": "荷兰传统音乐包括“levenslied”，一种情感丰富、适合合唱的歌曲，常用手风琴伴奏。"
+    }
+  },
+  {
+    "iso": "PL",
+    "flag": "🇵🇱",
+    "capital": "Varsóvia",
+    "continent": "europe",
+    "currency": "PLN (zł)",
+    "lat": 52.23,
+    "lng": 21.01,
+    "name": {
+      "pt": "Polónia",
+      "en": "Poland",
+      "de": "Polen",
+      "fr": "Pologne",
+      "es": "Polonia",
+      "it": "Polonia",
+      "zh": "波兰"
+    },
+    "fact": {
+      "pt": "O compositor Frédéric Chopin, um dos pianistas mais famosos da história, nasceu na Polónia.",
+      "en": "The composer Frédéric Chopin, one of the most famous pianists in history, was born in Poland.",
+      "de": "Der Komponist Frédéric Chopin, einer der berühmtesten Pianisten der Geschichte, wurde in Polen geboren.",
+      "fr": "Le compositeur Frédéric Chopin, l'un des pianistes les plus célèbres de l'histoire, est né en Pologne.",
+      "es": "El compositor Frédéric Chopin, uno de los pianistas más famosos de la historia, nació en Polonia.",
+      "it": "Il compositore Fryderyk Chopin, uno dei pianisti più famosi della storia, nacque in Polonia.",
+      "zh": "作曲家肖邦是历史上最著名的钢琴家之一，他出生在波兰。"
+    },
+    "music": {
+      "pt": "A polonaise e a mazurca são danças tradicionais polacas que inspiraram muitas composições de Chopin.",
+      "en": "The polonaise and mazurka are traditional Polish dances that inspired many of Chopin's compositions.",
+      "de": "Die Polonaise und die Mazurka sind traditionelle polnische Tänze, die viele Kompositionen Chopins inspirierten.",
+      "fr": "La polonaise et la mazurka sont des danses traditionnelles polonaises qui ont inspiré de nombreuses compositions de Chopin.",
+      "es": "La polonesa y la mazurca son danzas tradicionales polacas que inspiraron muchas composiciones de Chopin.",
+      "it": "La polacca e la mazurka sono danze tradizionali polacche che ispirarono molte composizioni di Chopin.",
+      "zh": "波兰舞曲和玛祖卡舞曲是波兰的传统舞蹈，启发了肖邦的许多作品。"
+    }
+  },
+  {
+    "iso": "IE",
+    "flag": "🇮🇪",
+    "capital": "Dublin",
+    "continent": "europe",
+    "currency": "EUR (€)",
+    "lat": 53.35,
+    "lng": -6.26,
+    "name": {
+      "pt": "Irlanda",
+      "en": "Ireland",
+      "de": "Irland",
+      "fr": "Irlande",
+      "es": "Irlanda",
+      "it": "Irlanda",
+      "zh": "爱尔兰"
+    },
+    "fact": {
+      "pt": "A Irlanda é conhecida como a \"Ilha Esmeralda\" por causa da sua paisagem verde e exuberante, mantida verde pela chuva frequente.",
+      "en": "Ireland is known as the \"Emerald Isle\" because of its lush green countryside, kept green by frequent rain.",
+      "de": "Irland wird wegen seiner üppig grünen Landschaft, die durch häufigen Regen grün gehalten wird, die „Grüne Insel“ genannt.",
+      "fr": "L'Irlande est connue comme « l'île d'émeraude » en raison de sa campagne verdoyante, entretenue par des pluies fréquentes.",
+      "es": "Irlanda es conocida como la \"Isla Esmeralda\" por su verde y exuberante paisaje, mantenido verde por las frecuentes lluvias.",
+      "it": "L'Irlanda è conosciuta come l'\"Isola Smeralda\" per la sua campagna verde e rigogliosa, mantenuta verde dalle piogge frequenti.",
+      "zh": "爱尔兰因其郁郁葱葱的绿色田野而被称为“翡翠岛”，频繁的降雨使这片土地常年翠绿。"
+    },
+    "music": {
+      "pt": "O violino irlandês e o bodhrán, um tambor de mão, são centrais na música tradicional irlandesa.",
+      "en": "The Irish fiddle and the bodhrán, a hand-held drum, are central to traditional Irish folk music.",
+      "de": "Die irische Fiedel und die Bodhrán, eine Handtrommel, stehen im Zentrum der traditionellen irischen Volksmusik.",
+      "fr": "Le violon irlandais et le bodhrán, un tambour à main, sont au cœur de la musique folklorique traditionnelle irlandaise.",
+      "es": "El violín irlandés y el bodhrán, un tambor de mano, son fundamentales en la música folclórica tradicional irlandesa.",
+      "it": "Il violino irlandese e il bodhrán, un tamburo a mano, sono centrali nella musica folk tradizionale irlandese.",
+      "zh": "爱尔兰小提琴和邦兰鼓（一种手鼓）是爱尔兰传统民间音乐的核心乐器。"
+    }
+  },
+  {
+    "iso": "NZ",
+    "flag": "🇳🇿",
+    "capital": "Wellington",
+    "continent": "oceania",
+    "currency": "NZD ($)",
+    "lat": -41.29,
+    "lng": 174.78,
+    "name": {
+      "pt": "Nova Zelândia",
+      "en": "New Zealand",
+      "de": "Neuseeland",
+      "fr": "Nouvelle-Zélande",
+      "es": "Nueva Zelanda",
+      "it": "Nuova Zelanda",
+      "zh": "新西兰"
+    },
+    "fact": {
+      "pt": "A Nova Zelândia foi uma das últimas grandes áreas de terra do planeta a ser habitada por seres humanos, primeiro por navegadores polinésios.",
+      "en": "New Zealand was one of the last large landmasses on Earth to be settled by humans, first by Polynesian voyagers.",
+      "de": "Neuseeland war eine der letzten großen Landmassen der Erde, die von Menschen besiedelt wurde, zuerst von polynesischen Seefahrern.",
+      "fr": "La Nouvelle-Zélande fut l'une des dernières grandes masses continentales de la Terre à être peuplée par les humains, d'abord par des navigateurs polynésiens.",
+      "es": "Nueva Zelanda fue una de las últimas grandes masas de tierra del planeta en ser habitada por seres humanos, primero por navegantes polinesios.",
+      "it": "La Nuova Zelanda fu una delle ultime grandi masse di terra della Terra a essere abitata dagli esseri umani, prima da navigatori polinesiani.",
+      "zh": "新西兰是地球上最后被人类定居的大片陆地之一，最早由波利尼西亚航海者到达。"
+    },
+    "music": {
+      "pt": "O haka maori é um cântico e dança tradicional executado com movimentos e ritmo poderosos.",
+      "en": "The Māori haka is a traditional chant and dance performed with powerful movements and rhythm.",
+      "de": "Der Māori-Haka ist ein traditioneller Gesang und Tanz, der mit kraftvollen Bewegungen und Rhythmus aufgeführt wird.",
+      "fr": "Le haka maori est un chant et une danse traditionnels exécutés avec des mouvements puissants et un rythme marqué.",
+      "es": "El haka maorí es un canto y baile tradicional que se realiza con movimientos poderosos y mucho ritmo.",
+      "it": "L'haka maori è un canto e una danza tradizionale eseguiti con movimenti potenti e ritmo.",
+      "zh": "毛利战舞（哈卡）是一种传统的吟唱与舞蹈，动作有力、节奏感强。"
+    }
+  },
+  {
+    "iso": "FJ",
+    "flag": "🇫🇯",
+    "capital": "Suva",
+    "continent": "oceania",
+    "currency": "FJD ($)",
+    "lat": -18.14,
+    "lng": 178.44,
+    "name": {
+      "pt": "Fiji",
+      "en": "Fiji",
+      "de": "Fidschi",
+      "fr": "Fidji",
+      "es": "Fiyi",
+      "it": "Figi",
+      "zh": "斐济"
+    },
+    "fact": {
+      "pt": "Fiji é formada por mais de 330 ilhas, mas apenas cerca de um terço delas está habitada.",
+      "en": "Fiji is made up of more than 330 islands, but only about a third of them are inhabited.",
+      "de": "Fidschi besteht aus mehr als 330 Inseln, von denen jedoch nur etwa ein Drittel bewohnt ist.",
+      "fr": "Les Fidji sont composées de plus de 330 îles, mais seulement environ un tiers d'entre elles sont habitées.",
+      "es": "Fiyi está formada por más de 330 islas, pero solo alrededor de un tercio de ellas está habitado.",
+      "it": "Le Figi sono composte da oltre 330 isole, ma solo circa un terzo di esse è abitato.",
+      "zh": "斐济由三百三十多个岛屿组成，但只有大约三分之一有人居住。"
+    },
+    "music": {
+      "pt": "As tradicionais performances meke de Fiji combinam cânticos, dança e palmas ritmadas para contar histórias.",
+      "en": "Traditional Fijian meke performances combine chanting, dancing and rhythmic clapping to tell stories.",
+      "de": "Traditionelle fidschianische Meke-Aufführungen verbinden Gesang, Tanz und rhythmisches Klatschen, um Geschichten zu erzählen.",
+      "fr": "Les représentations traditionnelles de meke fidjien combinent chant, danse et battements de mains rythmés pour raconter des histoires.",
+      "es": "Las actuaciones tradicionales de meke en Fiyi combinan cánticos, baile y palmas rítmicas para contar historias.",
+      "it": "Le tradizionali esibizioni di meke figiano combinano canti, danza e battiti di mani ritmati per raccontare storie.",
+      "zh": "斐济传统的“meke”表演将吟唱、舞蹈和有节奏的拍手结合在一起，用以讲述故事。"
+    }
+  },
+  {
+    "iso": "CU",
+    "flag": "🇨🇺",
+    "capital": "Havana",
+    "continent": "north-america",
+    "currency": "CUP ($)",
+    "lat": 23.13,
+    "lng": -82.38,
+    "name": {
+      "pt": "Cuba",
+      "en": "Cuba",
+      "de": "Kuba",
+      "fr": "Cuba",
+      "es": "Cuba",
+      "it": "Cuba",
+      "zh": "古巴"
+    },
+    "fact": {
+      "pt": "Cuba é a maior ilha das Caraíbas e é famosa pelos seus carros antigos, pintados de cores vivas e ainda usados hoje.",
+      "en": "Cuba is the largest island in the Caribbean and is famous for its brightly painted vintage cars still used today.",
+      "de": "Kuba ist die größte Insel der Karibik und berühmt für seine bunt bemalten Oldtimer, die noch heute genutzt werden.",
+      "fr": "Cuba est la plus grande île des Caraïbes et est célèbre pour ses voitures anciennes aux couleurs vives, encore utilisées aujourd'hui.",
+      "es": "Cuba es la isla más grande del Caribe y es famosa por sus coches antiguos de colores vivos que todavía se usan hoy.",
+      "it": "Cuba è la più grande isola dei Caraibi ed è famosa per le sue auto d'epoca dai colori vivaci, ancora usate oggi.",
+      "zh": "古巴是加勒比海最大的岛屿，以至今仍在使用的色彩鲜艳的老爷车而闻名。"
+    },
+    "music": {
+      "pt": "Cuba é o berço do son cubano, um estilo musical que ajudou a moldar a salsa em todo o mundo.",
+      "en": "Cuba is the birthplace of son cubano, a musical style that helped shape salsa music around the world.",
+      "de": "Kuba ist die Geburtsstätte des Son Cubano, eines Musikstils, der die Salsa-Musik weltweit mitgeprägt hat.",
+      "fr": "Cuba est le berceau du son cubain, un style musical qui a contribué à façonner la salsa dans le monde entier.",
+      "es": "Cuba es la cuna del son cubano, un estilo musical que ayudó a dar forma a la salsa en todo el mundo.",
+      "it": "Cuba è la culla del son cubano, uno stile musicale che ha contribuito a plasmare la salsa in tutto il mondo.",
+      "zh": "古巴是古巴颂乐的发源地，这种音乐风格深刻影响了世界各地萨尔萨音乐的形成。"
+    }
+  },
+  {
+    "iso": "CR",
+    "flag": "🇨🇷",
+    "capital": "São José",
+    "continent": "north-america",
+    "currency": "CRC (₡)",
+    "lat": 9.93,
+    "lng": -84.08,
+    "name": {
+      "pt": "Costa Rica",
+      "en": "Costa Rica",
+      "de": "Costa Rica",
+      "fr": "Costa Rica",
+      "es": "Costa Rica",
+      "it": "Costa Rica",
+      "zh": "哥斯达黎加"
+    },
+    "fact": {
+      "pt": "A Costa Rica não tem exército permanente e alberga cerca de 5% da biodiversidade do planeta, apesar de ser um país pequeno.",
+      "en": "Costa Rica has no standing army and is home to about 5% of the world's biodiversity despite its small size.",
+      "de": "Costa Rica hat kein stehendes Heer und beherbergt trotz seiner geringen Größe etwa 5 % der weltweiten Artenvielfalt.",
+      "fr": "Le Costa Rica n'a pas d'armée permanente et abrite environ 5 % de la biodiversité mondiale malgré sa petite taille.",
+      "es": "Costa Rica no tiene ejército permanente y alberga cerca del 5% de la biodiversidad mundial a pesar de su pequeño tamaño.",
+      "it": "La Costa Rica non ha un esercito permanente e ospita circa il 5% della biodiversità mondiale nonostante le sue piccole dimensioni.",
+      "zh": "哥斯达黎加没有常备军队，尽管国土面积不大，却拥有全球约5%的生物多样性。"
+    },
+    "music": {
+      "pt": "A música tradicional da Costa Rica usa muitas vezes a marimba, um xilofone de madeira considerado instrumento nacional.",
+      "en": "Traditional Costa Rican music often features the marimba, a wooden xylophone considered a national instrument.",
+      "de": "Traditionelle costa-ricanische Musik verwendet oft die Marimba, ein hölzernes Xylophon, das als Nationalinstrument gilt.",
+      "fr": "La musique traditionnelle costaricienne utilise souvent la marimba, un xylophone en bois considéré comme un instrument national.",
+      "es": "La música tradicional costarricense suele utilizar la marimba, un xilófono de madera considerado instrumento nacional.",
+      "it": "La musica tradizionale costaricana utilizza spesso la marimba, uno xilofono di legno considerato strumento nazionale.",
+      "zh": "哥斯达黎加传统音乐常使用马林巴琴，这是一种木制木琴，被视为该国的民族乐器。"
+    }
   }
 ]

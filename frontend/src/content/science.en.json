@@ -1,15 +1,275 @@
 [
-  { "id": "gelo-derrete", "emoji": "🧊", "topic": "physics", "question": "What do you think happens to an ice cube in the sun?", "prediction_options": ["It melts", "It gets bigger", "Nothing changes"], "explanation": "Ice melts because the sun's heat turns solid water into liquid water. That's called a change of state!", "tryAtHome": "Put one ice cube in the sun and one in the shade. Which melts first?" },
-  { "id": "planta-luz", "emoji": "🌱", "topic": "biology", "question": "What do you think happens to a plant kept in a dark cupboard?", "prediction_options": ["It grows just fine", "It becomes weak and pale", "It turns greener"], "explanation": "Plants need light to make their own food. Without light, they become weak and pale.", "tryAtHome": "Cover a small plant with a box for 3 days and see what happens to its leaves." },
-  { "id": "flutua-afunda", "emoji": "🛁", "topic": "physics", "question": "Do you think an apple floats or sinks in water?", "prediction_options": ["Floats", "Sinks", "Stays in the middle"], "explanation": "An apple floats because it has air inside it, making it less dense than water.", "tryAtHome": "Fill a bowl with water and test different objects: a spoon, a ball, a coin." },
-  { "id": "estados-agua", "emoji": "💧", "topic": "chemistry", "question": "Water can be solid, liquid or gas. Which of these is water vapor?", "prediction_options": ["Steam from a hot shower", "An ice cube", "Tap water"], "explanation": "When water gets very hot, it turns into vapor (a gas) and mixes with the air.", "tryAtHome": "Ask an adult to boil water and watch the steam rise from the pot." },
-  { "id": "imanes", "emoji": "🧲", "topic": "physics", "question": "Can a magnet attract a metal paperclip and a wooden pencil?", "prediction_options": ["Only the paperclip", "Only the pencil", "Both"], "explanation": "Magnets attract metals like iron. Wood isn't attracted because it doesn't have those properties.", "tryAtHome": "Move a magnet near different objects at home and note which ones stick." },
-  { "id": "sombras", "emoji": "🌗", "topic": "physics", "question": "What happens to your shadow when you move away from a flashlight?", "prediction_options": ["It gets bigger", "It gets smaller", "It disappears"], "explanation": "The closer you are to the light, the bigger your shadow. As you move away, it gets smaller.", "tryAtHome": "At night, use a flashlight and try making big and small shadows on the wall." },
-  { "id": "misturar-cores", "emoji": "🎨", "topic": "chemistry", "question": "What color do you think blue and yellow make when mixed?", "prediction_options": ["Green", "Purple", "Orange"], "explanation": "Blue and yellow mixed together make green! That's how primary colors create new colors.", "tryAtHome": "Use paints or crayons and mix pairs of colors to discover new ones." },
-  { "id": "som-vibracao", "emoji": "🔔", "topic": "physics", "question": "How does sound travel to your ears?", "prediction_options": ["Through vibrations in the air", "By magic", "Light carries sound"], "explanation": "Sound is made of vibrations that travel through the air to our ears, which turn them into the sounds we hear.", "tryAtHome": "Put your hand on your throat while you talk. Can you feel the vibrations?" },
-  { "id": "dia-noite", "emoji": "🌞", "topic": "earth", "question": "Why do we have day and night?", "prediction_options": ["The Earth spins on itself", "The Sun turns off at night", "Clouds hide the Sun"], "explanation": "The Earth spins on itself like a top. The side facing the Sun has day, the other side has night.", "tryAtHome": "Use a flashlight and a ball to act out the Earth spinning around the Sun." },
-  { "id": "estacoes", "emoji": "🍂", "topic": "earth", "question": "Why do we have seasons like summer and winter?", "prediction_options": ["The Earth tilts as it orbits the Sun", "The Sun changes size", "The Moon controls the seasons"], "explanation": "The Earth is tilted, so different parts get more or less sunlight throughout the year, creating the seasons.", "tryAtHome": "Watch the trees outside over several weeks and write down the changes." },
-  { "id": "respirar-plantas", "emoji": "🌳", "topic": "biology", "question": "Do plants 'breathe' too? What do they release into the air?", "prediction_options": ["Oxygen", "Smoke", "Only water"], "explanation": "Plants use light to make their own food, and in that process they release oxygen, which we breathe.", "tryAtHome": "Watch a water plant in a glass of water in the sun and look for tiny bubbles on the leaves." },
-  { "id": "bicarbonato-vinagre", "emoji": "🌋", "topic": "chemistry", "question": "What do you think happens when you mix baking soda with vinegar?", "prediction_options": ["It fizzes and bubbles", "Nothing happens", "It freezes"], "explanation": "Baking soda and vinegar react and make gas (carbon dioxide), creating lots of fizzy bubbles!", "tryAtHome": "With an adult, mix a little baking soda with vinegar in a cup and watch the reaction." },
-  { "id": "coracao-bate", "emoji": "❤️", "topic": "biology", "question": "What happens to your heart after you run a lot?", "prediction_options": ["It beats faster", "It beats slower", "It stops"], "explanation": "When we exercise, the body needs more oxygen, so the heart beats faster to carry it to the muscles.", "tryAtHome": "Jump for 1 minute, then put your hand on your chest to feel your heart beating." }
+  {
+    "id": "gelo-derrete",
+    "emoji": "🧊",
+    "topic": "physics",
+    "question": "What do you think happens to an ice cube in the sun?",
+    "prediction_options": [
+      "It melts",
+      "It gets bigger",
+      "Nothing changes"
+    ],
+    "explanation": "Ice melts because the sun's heat turns solid water into liquid water. That's called a change of state!",
+    "tryAtHome": "Put one ice cube in the sun and one in the shade. Which melts first?"
+  },
+  {
+    "id": "planta-luz",
+    "emoji": "🌱",
+    "topic": "biology",
+    "question": "What do you think happens to a plant kept in a dark cupboard?",
+    "prediction_options": [
+      "It grows just fine",
+      "It becomes weak and pale",
+      "It turns greener"
+    ],
+    "explanation": "Plants need light to make their own food. Without light, they become weak and pale.",
+    "tryAtHome": "Cover a small plant with a box for 3 days and see what happens to its leaves."
+  },
+  {
+    "id": "flutua-afunda",
+    "emoji": "🛁",
+    "topic": "physics",
+    "question": "Do you think an apple floats or sinks in water?",
+    "prediction_options": [
+      "Floats",
+      "Sinks",
+      "Stays in the middle"
+    ],
+    "explanation": "An apple floats because it has air inside it, making it less dense than water.",
+    "tryAtHome": "Fill a bowl with water and test different objects: a spoon, a ball, a coin."
+  },
+  {
+    "id": "estados-agua",
+    "emoji": "💧",
+    "topic": "chemistry",
+    "question": "Water can be solid, liquid or gas. Which of these is water vapor?",
+    "prediction_options": [
+      "Steam from a hot shower",
+      "An ice cube",
+      "Tap water"
+    ],
+    "explanation": "When water gets very hot, it turns into vapor (a gas) and mixes with the air.",
+    "tryAtHome": "Ask an adult to boil water and watch the steam rise from the pot."
+  },
+  {
+    "id": "imanes",
+    "emoji": "🧲",
+    "topic": "physics",
+    "question": "Can a magnet attract a metal paperclip and a wooden pencil?",
+    "prediction_options": [
+      "Only the paperclip",
+      "Only the pencil",
+      "Both"
+    ],
+    "explanation": "Magnets attract metals like iron. Wood isn't attracted because it doesn't have those properties.",
+    "tryAtHome": "Move a magnet near different objects at home and note which ones stick."
+  },
+  {
+    "id": "sombras",
+    "emoji": "🌗",
+    "topic": "physics",
+    "question": "What happens to your shadow when you move away from a flashlight?",
+    "prediction_options": [
+      "It gets bigger",
+      "It gets smaller",
+      "It disappears"
+    ],
+    "explanation": "The closer you are to the light, the bigger your shadow. As you move away, it gets smaller.",
+    "tryAtHome": "At night, use a flashlight and try making big and small shadows on the wall."
+  },
+  {
+    "id": "misturar-cores",
+    "emoji": "🎨",
+    "topic": "chemistry",
+    "question": "What color do you think blue and yellow make when mixed?",
+    "prediction_options": [
+      "Green",
+      "Purple",
+      "Orange"
+    ],
+    "explanation": "Blue and yellow mixed together make green! That's how primary colors create new colors.",
+    "tryAtHome": "Use paints or crayons and mix pairs of colors to discover new ones."
+  },
+  {
+    "id": "som-vibracao",
+    "emoji": "🔔",
+    "topic": "physics",
+    "question": "How does sound travel to your ears?",
+    "prediction_options": [
+      "Through vibrations in the air",
+      "By magic",
+      "Light carries sound"
+    ],
+    "explanation": "Sound is made of vibrations that travel through the air to our ears, which turn them into the sounds we hear.",
+    "tryAtHome": "Put your hand on your throat while you talk. Can you feel the vibrations?"
+  },
+  {
+    "id": "dia-noite",
+    "emoji": "🌞",
+    "topic": "earth",
+    "question": "Why do we have day and night?",
+    "prediction_options": [
+      "The Earth spins on itself",
+      "The Sun turns off at night",
+      "Clouds hide the Sun"
+    ],
+    "explanation": "The Earth spins on itself like a top. The side facing the Sun has day, the other side has night.",
+    "tryAtHome": "Use a flashlight and a ball to act out the Earth spinning around the Sun."
+  },
+  {
+    "id": "estacoes",
+    "emoji": "🍂",
+    "topic": "earth",
+    "question": "Why do we have seasons like summer and winter?",
+    "prediction_options": [
+      "The Earth tilts as it orbits the Sun",
+      "The Sun changes size",
+      "The Moon controls the seasons"
+    ],
+    "explanation": "The Earth is tilted, so different parts get more or less sunlight throughout the year, creating the seasons.",
+    "tryAtHome": "Watch the trees outside over several weeks and write down the changes."
+  },
+  {
+    "id": "respirar-plantas",
+    "emoji": "🌳",
+    "topic": "biology",
+    "question": "Do plants 'breathe' too? What do they release into the air?",
+    "prediction_options": [
+      "Oxygen",
+      "Smoke",
+      "Only water"
+    ],
+    "explanation": "Plants use light to make their own food, and in that process they release oxygen, which we breathe.",
+    "tryAtHome": "Watch a water plant in a glass of water in the sun and look for tiny bubbles on the leaves."
+  },
+  {
+    "id": "bicarbonato-vinagre",
+    "emoji": "🌋",
+    "topic": "chemistry",
+    "question": "What do you think happens when you mix baking soda with vinegar?",
+    "prediction_options": [
+      "It fizzes and bubbles",
+      "Nothing happens",
+      "It freezes"
+    ],
+    "explanation": "Baking soda and vinegar react and make gas (carbon dioxide), creating lots of fizzy bubbles!",
+    "tryAtHome": "With an adult, mix a little baking soda with vinegar in a cup and watch the reaction."
+  },
+  {
+    "id": "coracao-bate",
+    "emoji": "❤️",
+    "topic": "biology",
+    "question": "What happens to your heart after you run a lot?",
+    "prediction_options": [
+      "It beats faster",
+      "It beats slower",
+      "It stops"
+    ],
+    "explanation": "When we exercise, the body needs more oxygen, so the heart beats faster to carry it to the muscles.",
+    "tryAtHome": "Jump for 1 minute, then put your hand on your chest to feel your heart beating."
+  },
+  {
+    "id": "arco-iris",
+    "emoji": "🌈",
+    "topic": "physics",
+    "question": "What do you think makes a rainbow appear in the sky?",
+    "prediction_options": [
+      "Sunlight passing through raindrops",
+      "The sky changes color",
+      "Clouds paint the sky"
+    ],
+    "explanation": "Rainbows form when sunlight passes through raindrops and splits into different colors, like a prism.",
+    "tryAtHome": "On a sunny day, spray a hose or use a glass of water in the sun and look for a rainbow."
+  },
+  {
+    "id": "eletricidade-estatica",
+    "emoji": "⚡",
+    "topic": "physics",
+    "question": "What happens if you rub a balloon on your hair and bring it close to small paper pieces?",
+    "prediction_options": [
+      "The paper jumps to stick to the balloon",
+      "Nothing happens",
+      "The balloon pops"
+    ],
+    "explanation": "Rubbing the balloon creates static electricity, an electric charge that attracts light objects like paper.",
+    "tryAtHome": "Rub a balloon on your hair and hold it near small pieces of paper or your hair."
+  },
+  {
+    "id": "flutuabilidade-objetos",
+    "emoji": "⚓",
+    "topic": "physics",
+    "question": "Which do you think floats: a wooden block, a metal spoon, or a plastic toy?",
+    "prediction_options": [
+      "The wood and plastic float, the spoon sinks",
+      "They all float",
+      "They all sink"
+    ],
+    "explanation": "Whether something floats depends on its density compared to water — wood and plastic are usually less dense, metal is usually denser.",
+    "tryAtHome": "Gather objects from home and test in a basin of water: which float, which sink?"
+  },
+  {
+    "id": "fototropismo",
+    "emoji": "🪴",
+    "topic": "biology",
+    "question": "What do you think a plant does if the light only comes from one side?",
+    "prediction_options": [
+      "It bends and grows toward the light",
+      "It grows away from the light",
+      "It doesn't change"
+    ],
+    "explanation": "Plants grow toward light in a process called phototropism, so they can capture more sunlight to make food.",
+    "tryAtHome": "Put a plant near a window for a week and watch which way it leans."
+  },
+  {
+    "id": "ciclo-agua",
+    "emoji": "☁️",
+    "topic": "earth",
+    "question": "Where does rain come from?",
+    "prediction_options": [
+      "Water evaporates, forms clouds, and falls back as rain",
+      "The sky makes rain from nothing",
+      "The ocean shoots water up"
+    ],
+    "explanation": "The sun heats water, which evaporates into vapor, forms clouds, and falls back to earth as rain — this is the water cycle.",
+    "tryAtHome": "Boil water with an adult and hold a cold plate above the steam to watch droplets form."
+  },
+  {
+    "id": "alavancas",
+    "emoji": "🏗️",
+    "topic": "physics",
+    "question": "Can a long stick help you lift a heavy rock more easily?",
+    "prediction_options": [
+      "Yes, it works as a lever",
+      "No, it makes it harder",
+      "It has no effect"
+    ],
+    "explanation": "A lever is a simple machine — a bar that pivots on a point — that helps you lift heavy things with less effort.",
+    "tryAtHome": "Use a ruler balanced on a small object (like an eraser) as a seesaw to lift a light object."
+  },
+  {
+    "id": "som-materiais",
+    "emoji": "🥁",
+    "topic": "physics",
+    "question": "Does sound travel better through air or through a solid table?",
+    "prediction_options": [
+      "Through solids, like a table",
+      "Only through air",
+      "Sound doesn't travel through solids"
+    ],
+    "explanation": "Sound travels through solids faster than through air, because the particles are closer together and pass vibrations along more easily.",
+    "tryAtHome": "Put your ear on a table while someone taps the other end gently, then compare with hearing it through the air."
+  },
+  {
+    "id": "folhas-outono",
+    "emoji": "🍁",
+    "topic": "biology",
+    "question": "Why do leaves change color in autumn?",
+    "prediction_options": [
+      "They lose green chlorophyll and other colors show through",
+      "They get painted by frost",
+      "They absorb color from the ground"
+    ],
+    "explanation": "In autumn, trees stop producing green chlorophyll, revealing the yellow and orange colors that were already there in the leaves.",
+    "tryAtHome": "Collect fallen leaves of different colors on a walk in autumn and compare them."
+  }
 ]

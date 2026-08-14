@@ -1,15 +1,275 @@
 [
-  { "id": "gelo-derrete", "emoji": "🧊", "topic": "physics", "question": "Was passiert wohl mit einem Eiswürfel in der Sonne?", "prediction_options": ["Er schmilzt", "Er wird größer", "Nichts ändert sich"], "explanation": "Eis schmilzt, weil die Wärme der Sonne festes Wasser in flüssiges Wasser verwandelt. Das nennt man einen Zustandswechsel!", "tryAtHome": "Lege einen Eiswürfel in die Sonne und einen in den Schatten. Welcher schmilzt zuerst?" },
-  { "id": "planta-luz", "emoji": "🌱", "topic": "biology", "question": "Was passiert wohl mit einer Pflanze, die in einem dunklen Schrank steht?", "prediction_options": ["Sie wächst normal", "Sie wird schwach und blass", "Sie wird grüner"], "explanation": "Pflanzen brauchen Licht, um ihre eigene Nahrung herzustellen. Ohne Licht werden sie schwach und blass.", "tryAtHome": "Decke eine kleine Pflanze 3 Tage lang mit einer Box zu und schau, was mit den Blättern passiert." },
-  { "id": "flutua-afunda", "emoji": "🛁", "topic": "physics", "question": "Schwimmt ein Apfel im Wasser oder sinkt er?", "prediction_options": ["Er schwimmt", "Er sinkt", "Er bleibt in der Mitte"], "explanation": "Ein Apfel schwimmt, weil er Luft enthält und deshalb leichter ist als Wasser.", "tryAtHome": "Fülle eine Schüssel mit Wasser und teste verschiedene Gegenstände: einen Löffel, einen Ball, eine Münze." },
-  { "id": "estados-agua", "emoji": "💧", "topic": "chemistry", "question": "Wasser kann fest, flüssig oder gasförmig sein. Was davon ist Wasserdampf?", "prediction_options": ["Dampf von der heißen Dusche", "Ein Eiswürfel", "Leitungswasser"], "explanation": "Wenn Wasser sehr heiß wird, verwandelt es sich in Dampf (ein Gas) und vermischt sich mit der Luft.", "tryAtHome": "Bitte einen Erwachsenen, Wasser zu kochen, und beobachte den Dampf, der aus dem Topf steigt." },
-  { "id": "imanes", "emoji": "🧲", "topic": "physics", "question": "Zieht ein Magnet eine Metallklammer und einen Holzstift an?", "prediction_options": ["Nur die Klammer", "Nur den Stift", "Beide"], "explanation": "Magnete ziehen Metalle wie Eisen an. Holz wird nicht angezogen, weil es diese Eigenschaften nicht hat.", "tryAtHome": "Bewege einen Magneten an verschiedene Gegenstände zu Hause und notiere, welche kleben bleiben." },
-  { "id": "sombras", "emoji": "🌗", "topic": "physics", "question": "Was passiert mit deinem Schatten, wenn du dich von einer Taschenlampe entfernst?", "prediction_options": ["Er wird größer", "Er wird kleiner", "Er verschwindet"], "explanation": "Je näher du am Licht bist, desto größer ist dein Schatten. Wenn du dich entfernst, wird er kleiner.", "tryAtHome": "Nutze abends eine Taschenlampe und mache große und kleine Schatten an der Wand." },
-  { "id": "misturar-cores", "emoji": "🎨", "topic": "chemistry", "question": "Welche Farbe entsteht wohl, wenn man Blau und Gelb mischt?", "prediction_options": ["Grün", "Lila", "Orange"], "explanation": "Blau und Gelb zusammen ergeben Grün! So entstehen aus Grundfarben neue Farben.", "tryAtHome": "Nutze Farben oder Buntstifte und mische Farbpaare, um neue Farben zu entdecken." },
-  { "id": "som-vibracao", "emoji": "🔔", "topic": "physics", "question": "Wie gelangt Schall zu deinen Ohren?", "prediction_options": ["Durch Schwingungen in der Luft", "Durch Zauberei", "Licht trägt den Schall"], "explanation": "Schall besteht aus Schwingungen, die durch die Luft zu unseren Ohren reisen, die sie in Töne verwandeln, die wir hören.", "tryAtHome": "Lege deine Hand an den Hals, während du sprichst. Spürst du die Schwingungen?" },
-  { "id": "dia-noite", "emoji": "🌞", "topic": "earth", "question": "Warum gibt es Tag und Nacht?", "prediction_options": ["Die Erde dreht sich um sich selbst", "Die Sonne geht nachts aus", "Wolken verdecken die Sonne"], "explanation": "Die Erde dreht sich wie ein Kreisel um sich selbst. Die Seite, die zur Sonne zeigt, hat Tag, die andere hat Nacht.", "tryAtHome": "Nutze eine Taschenlampe und einen Ball, um die Erdrotation um die Sonne nachzuspielen." },
-  { "id": "estacoes", "emoji": "🍂", "topic": "earth", "question": "Warum gibt es Jahreszeiten wie Sommer und Winter?", "prediction_options": ["Die Erde ist geneigt, während sie um die Sonne kreist", "Die Sonne ändert ihre Größe", "Der Mond steuert die Jahreszeiten"], "explanation": "Die Erde ist geneigt, deshalb bekommen verschiedene Teile im Jahresverlauf mehr oder weniger Sonnenlicht — so entstehen die Jahreszeiten.", "tryAtHome": "Beobachte die Bäume draußen über mehrere Wochen und schreibe die Veränderungen auf." },
-  { "id": "respirar-plantas", "emoji": "🌳", "topic": "biology", "question": "Atmen Pflanzen auch? Was geben sie an die Luft ab?", "prediction_options": ["Sauerstoff", "Rauch", "Nur Wasser"], "explanation": "Pflanzen nutzen Licht, um ihre eigene Nahrung herzustellen, und geben dabei Sauerstoff ab, den wir atmen.", "tryAtHome": "Beobachte eine Wasserpflanze in einem Glas Wasser in der Sonne und suche nach kleinen Blasen an den Blättern." },
-  { "id": "bicarbonato-vinagre", "emoji": "🌋", "topic": "chemistry", "question": "Was passiert wohl, wenn man Natron mit Essig mischt?", "prediction_options": ["Es schäumt und sprudelt", "Nichts passiert", "Es gefriert"], "explanation": "Natron und Essig reagieren und erzeugen Gas (Kohlendioxid) — es entsteht viel Schaum!", "tryAtHome": "Mische mit einem Erwachsenen etwas Natron mit Essig in einem Becher und beobachte die Reaktion." },
-  { "id": "coracao-bate", "emoji": "❤️", "topic": "biology", "question": "Was passiert mit deinem Herzen, nachdem du viel gerannt bist?", "prediction_options": ["Es schlägt schneller", "Es schlägt langsamer", "Es hört auf"], "explanation": "Beim Sport braucht der Körper mehr Sauerstoff, deshalb schlägt das Herz schneller, um ihn zu den Muskeln zu bringen.", "tryAtHome": "Springe 1 Minute lang und lege dann die Hand auf die Brust, um dein Herz schlagen zu fühlen." }
+  {
+    "id": "gelo-derrete",
+    "emoji": "🧊",
+    "topic": "physics",
+    "question": "Was passiert wohl mit einem Eiswürfel in der Sonne?",
+    "prediction_options": [
+      "Er schmilzt",
+      "Er wird größer",
+      "Nichts ändert sich"
+    ],
+    "explanation": "Eis schmilzt, weil die Wärme der Sonne festes Wasser in flüssiges Wasser verwandelt. Das nennt man einen Zustandswechsel!",
+    "tryAtHome": "Lege einen Eiswürfel in die Sonne und einen in den Schatten. Welcher schmilzt zuerst?"
+  },
+  {
+    "id": "planta-luz",
+    "emoji": "🌱",
+    "topic": "biology",
+    "question": "Was passiert wohl mit einer Pflanze, die in einem dunklen Schrank steht?",
+    "prediction_options": [
+      "Sie wächst normal",
+      "Sie wird schwach und blass",
+      "Sie wird grüner"
+    ],
+    "explanation": "Pflanzen brauchen Licht, um ihre eigene Nahrung herzustellen. Ohne Licht werden sie schwach und blass.",
+    "tryAtHome": "Decke eine kleine Pflanze 3 Tage lang mit einer Box zu und schau, was mit den Blättern passiert."
+  },
+  {
+    "id": "flutua-afunda",
+    "emoji": "🛁",
+    "topic": "physics",
+    "question": "Schwimmt ein Apfel im Wasser oder sinkt er?",
+    "prediction_options": [
+      "Er schwimmt",
+      "Er sinkt",
+      "Er bleibt in der Mitte"
+    ],
+    "explanation": "Ein Apfel schwimmt, weil er Luft enthält und deshalb leichter ist als Wasser.",
+    "tryAtHome": "Fülle eine Schüssel mit Wasser und teste verschiedene Gegenstände: einen Löffel, einen Ball, eine Münze."
+  },
+  {
+    "id": "estados-agua",
+    "emoji": "💧",
+    "topic": "chemistry",
+    "question": "Wasser kann fest, flüssig oder gasförmig sein. Was davon ist Wasserdampf?",
+    "prediction_options": [
+      "Dampf von der heißen Dusche",
+      "Ein Eiswürfel",
+      "Leitungswasser"
+    ],
+    "explanation": "Wenn Wasser sehr heiß wird, verwandelt es sich in Dampf (ein Gas) und vermischt sich mit der Luft.",
+    "tryAtHome": "Bitte einen Erwachsenen, Wasser zu kochen, und beobachte den Dampf, der aus dem Topf steigt."
+  },
+  {
+    "id": "imanes",
+    "emoji": "🧲",
+    "topic": "physics",
+    "question": "Zieht ein Magnet eine Metallklammer und einen Holzstift an?",
+    "prediction_options": [
+      "Nur die Klammer",
+      "Nur den Stift",
+      "Beide"
+    ],
+    "explanation": "Magnete ziehen Metalle wie Eisen an. Holz wird nicht angezogen, weil es diese Eigenschaften nicht hat.",
+    "tryAtHome": "Bewege einen Magneten an verschiedene Gegenstände zu Hause und notiere, welche kleben bleiben."
+  },
+  {
+    "id": "sombras",
+    "emoji": "🌗",
+    "topic": "physics",
+    "question": "Was passiert mit deinem Schatten, wenn du dich von einer Taschenlampe entfernst?",
+    "prediction_options": [
+      "Er wird größer",
+      "Er wird kleiner",
+      "Er verschwindet"
+    ],
+    "explanation": "Je näher du am Licht bist, desto größer ist dein Schatten. Wenn du dich entfernst, wird er kleiner.",
+    "tryAtHome": "Nutze abends eine Taschenlampe und mache große und kleine Schatten an der Wand."
+  },
+  {
+    "id": "misturar-cores",
+    "emoji": "🎨",
+    "topic": "chemistry",
+    "question": "Welche Farbe entsteht wohl, wenn man Blau und Gelb mischt?",
+    "prediction_options": [
+      "Grün",
+      "Lila",
+      "Orange"
+    ],
+    "explanation": "Blau und Gelb zusammen ergeben Grün! So entstehen aus Grundfarben neue Farben.",
+    "tryAtHome": "Nutze Farben oder Buntstifte und mische Farbpaare, um neue Farben zu entdecken."
+  },
+  {
+    "id": "som-vibracao",
+    "emoji": "🔔",
+    "topic": "physics",
+    "question": "Wie gelangt Schall zu deinen Ohren?",
+    "prediction_options": [
+      "Durch Schwingungen in der Luft",
+      "Durch Zauberei",
+      "Licht trägt den Schall"
+    ],
+    "explanation": "Schall besteht aus Schwingungen, die durch die Luft zu unseren Ohren reisen, die sie in Töne verwandeln, die wir hören.",
+    "tryAtHome": "Lege deine Hand an den Hals, während du sprichst. Spürst du die Schwingungen?"
+  },
+  {
+    "id": "dia-noite",
+    "emoji": "🌞",
+    "topic": "earth",
+    "question": "Warum gibt es Tag und Nacht?",
+    "prediction_options": [
+      "Die Erde dreht sich um sich selbst",
+      "Die Sonne geht nachts aus",
+      "Wolken verdecken die Sonne"
+    ],
+    "explanation": "Die Erde dreht sich wie ein Kreisel um sich selbst. Die Seite, die zur Sonne zeigt, hat Tag, die andere hat Nacht.",
+    "tryAtHome": "Nutze eine Taschenlampe und einen Ball, um die Erdrotation um die Sonne nachzuspielen."
+  },
+  {
+    "id": "estacoes",
+    "emoji": "🍂",
+    "topic": "earth",
+    "question": "Warum gibt es Jahreszeiten wie Sommer und Winter?",
+    "prediction_options": [
+      "Die Erde ist geneigt, während sie um die Sonne kreist",
+      "Die Sonne ändert ihre Größe",
+      "Der Mond steuert die Jahreszeiten"
+    ],
+    "explanation": "Die Erde ist geneigt, deshalb bekommen verschiedene Teile im Jahresverlauf mehr oder weniger Sonnenlicht — so entstehen die Jahreszeiten.",
+    "tryAtHome": "Beobachte die Bäume draußen über mehrere Wochen und schreibe die Veränderungen auf."
+  },
+  {
+    "id": "respirar-plantas",
+    "emoji": "🌳",
+    "topic": "biology",
+    "question": "Atmen Pflanzen auch? Was geben sie an die Luft ab?",
+    "prediction_options": [
+      "Sauerstoff",
+      "Rauch",
+      "Nur Wasser"
+    ],
+    "explanation": "Pflanzen nutzen Licht, um ihre eigene Nahrung herzustellen, und geben dabei Sauerstoff ab, den wir atmen.",
+    "tryAtHome": "Beobachte eine Wasserpflanze in einem Glas Wasser in der Sonne und suche nach kleinen Blasen an den Blättern."
+  },
+  {
+    "id": "bicarbonato-vinagre",
+    "emoji": "🌋",
+    "topic": "chemistry",
+    "question": "Was passiert wohl, wenn man Natron mit Essig mischt?",
+    "prediction_options": [
+      "Es schäumt und sprudelt",
+      "Nichts passiert",
+      "Es gefriert"
+    ],
+    "explanation": "Natron und Essig reagieren und erzeugen Gas (Kohlendioxid) — es entsteht viel Schaum!",
+    "tryAtHome": "Mische mit einem Erwachsenen etwas Natron mit Essig in einem Becher und beobachte die Reaktion."
+  },
+  {
+    "id": "coracao-bate",
+    "emoji": "❤️",
+    "topic": "biology",
+    "question": "Was passiert mit deinem Herzen, nachdem du viel gerannt bist?",
+    "prediction_options": [
+      "Es schlägt schneller",
+      "Es schlägt langsamer",
+      "Es hört auf"
+    ],
+    "explanation": "Beim Sport braucht der Körper mehr Sauerstoff, deshalb schlägt das Herz schneller, um ihn zu den Muskeln zu bringen.",
+    "tryAtHome": "Springe 1 Minute lang und lege dann die Hand auf die Brust, um dein Herz schlagen zu fühlen."
+  },
+  {
+    "id": "arco-iris",
+    "emoji": "🌈",
+    "topic": "physics",
+    "question": "Was, glaubst du, lässt einen Regenbogen am Himmel erscheinen?",
+    "prediction_options": [
+      "Sonnenlicht, das durch Regentropfen fällt",
+      "Der Himmel wechselt die Farbe",
+      "Wolken malen den Himmel an"
+    ],
+    "explanation": "Regenbögen entstehen, wenn Sonnenlicht durch Regentropfen fällt und sich in verschiedene Farben aufspaltet, wie bei einem Prisma.",
+    "tryAtHome": "Nutze an einem sonnigen Tag einen Gartenschlauch oder ein Glas Wasser in der Sonne und suche nach einem Regenbogen."
+  },
+  {
+    "id": "eletricidade-estatica",
+    "emoji": "⚡",
+    "topic": "physics",
+    "question": "Was passiert, wenn du einen Luftballon an deinen Haaren reibst und ihn kleinen Papierschnipseln näherst?",
+    "prediction_options": [
+      "Das Papier springt und bleibt am Ballon kleben",
+      "Es passiert nichts",
+      "Der Ballon platzt"
+    ],
+    "explanation": "Durch das Reiben entsteht statische Elektrizität, eine elektrische Ladung, die leichte Gegenstände wie Papier anzieht.",
+    "tryAtHome": "Reibe einen Ballon an deinen Haaren und halte ihn nah an kleine Papierschnipsel oder deine Haare."
+  },
+  {
+    "id": "flutuabilidade-objetos",
+    "emoji": "⚓",
+    "topic": "physics",
+    "question": "Was schwimmt deiner Meinung nach: ein Holzklotz, ein Metalllöffel oder ein Plastikspielzeug?",
+    "prediction_options": [
+      "Holz und Plastik schwimmen, der Löffel sinkt",
+      "Alle schwimmen",
+      "Alle sinken"
+    ],
+    "explanation": "Ob etwas schwimmt oder sinkt, hängt von seiner Dichte im Vergleich zu Wasser ab – Holz und Plastik sind meist weniger dicht, Metall meist dichter.",
+    "tryAtHome": "Sammle Gegenstände von zu Hause und teste sie in einer Schüssel mit Wasser: Was schwimmt, was sinkt?"
+  },
+  {
+    "id": "fototropismo",
+    "emoji": "🪴",
+    "topic": "biology",
+    "question": "Was macht eine Pflanze deiner Meinung nach, wenn das Licht nur von einer Seite kommt?",
+    "prediction_options": [
+      "Sie biegt sich und wächst zum Licht hin",
+      "Sie wächst vom Licht weg",
+      "Es ändert sich nichts"
+    ],
+    "explanation": "Pflanzen wachsen dem Licht entgegen, ein Vorgang namens Fototropismus, damit sie mehr Sonnenlicht einfangen können, um Nahrung herzustellen.",
+    "tryAtHome": "Stelle eine Pflanze eine Woche lang neben ein Fenster und beobachte, zu welcher Seite sie sich neigt."
+  },
+  {
+    "id": "ciclo-agua",
+    "emoji": "☁️",
+    "topic": "earth",
+    "question": "Woher kommt der Regen?",
+    "prediction_options": [
+      "Wasser verdunstet, bildet Wolken und fällt als Regen zurück",
+      "Der Himmel macht Regen aus dem Nichts",
+      "Der Ozean schießt Wasser nach oben"
+    ],
+    "explanation": "Die Sonne erwärmt das Wasser, das verdunstet, zu Dampf wird, Wolken bildet und als Regen zur Erde zurückfällt – das nennt man den Wasserkreislauf.",
+    "tryAtHome": "Koche mit einem Erwachsenen Wasser und halte einen kalten Teller über den Dampf, um Tröpfchen entstehen zu sehen."
+  },
+  {
+    "id": "alavancas",
+    "emoji": "🏗️",
+    "topic": "physics",
+    "question": "Kann dir ein langer Stock helfen, einen schweren Stein leichter anzuheben?",
+    "prediction_options": [
+      "Ja, er wirkt wie ein Hebel",
+      "Nein, es wird schwerer",
+      "Es macht keinen Unterschied"
+    ],
+    "explanation": "Ein Hebel ist eine einfache Maschine – ein Stab, der sich um einen Punkt dreht – der hilft, schwere Dinge mit weniger Kraft zu heben.",
+    "tryAtHome": "Balanciere ein Lineal auf einem kleinen Gegenstand (wie einem Radiergummi) wie eine Wippe, um einen leichten Gegenstand zu heben."
+  },
+  {
+    "id": "som-materiais",
+    "emoji": "🥁",
+    "topic": "physics",
+    "question": "Reist der Schall besser durch die Luft oder durch einen festen Tisch?",
+    "prediction_options": [
+      "Durch feste Stoffe, wie einen Tisch",
+      "Nur durch die Luft",
+      "Schall reist nicht durch feste Stoffe"
+    ],
+    "explanation": "Schall reist durch feste Stoffe schneller als durch Luft, weil die Teilchen näher beieinander sind und Schwingungen leichter weitergeben.",
+    "tryAtHome": "Lege dein Ohr auf einen Tisch, während jemand sanft auf das andere Ende klopft, und vergleiche es mit dem Hören durch die Luft."
+  },
+  {
+    "id": "folhas-outono",
+    "emoji": "🍁",
+    "topic": "biology",
+    "question": "Warum verändern Blätter im Herbst ihre Farbe?",
+    "prediction_options": [
+      "Sie verlieren das grüne Chlorophyll, sodass andere Farben sichtbar werden",
+      "Sie werden vom Frost bemalt",
+      "Sie nehmen Farbe aus dem Boden auf"
+    ],
+    "explanation": "Im Herbst stellen Bäume die Produktion von grünem Chlorophyll ein, wodurch die gelben und orangefarbenen Farben sichtbar werden, die schon in den Blättern waren.",
+    "tryAtHome": "Sammle bei einem Herbstspaziergang heruntergefallene Blätter in verschiedenen Farben und vergleiche sie."
+  }
 ]

@@ -1,15 +1,275 @@
 [
-  { "id": "gelo-derrete", "emoji": "🧊", "topic": "physics", "question": "O que achas que acontece a um cubo de gelo ao sol?", "prediction_options": ["Derrete", "Fica maior", "Não muda"], "explanation": "O gelo derrete porque o calor do sol faz a água sólida passar a líquida. Chama-se a isto mudança de estado!", "tryAtHome": "Põe um cubo de gelo num prato ao sol e outro à sombra. Qual derrete primeiro?" },
-  { "id": "planta-luz", "emoji": "🌱", "topic": "biology", "question": "O que achas que acontece a uma planta guardada num armário escuro?", "prediction_options": ["Cresce na mesma", "Fica fraca e amarela", "Fica mais verde"], "explanation": "As plantas precisam de luz para fazer o seu alimento. Sem luz, ficam fracas e pálidas.", "tryAtHome": "Cobre uma planta pequena com uma caixa durante 3 dias e vê o que acontece às folhas." },
-  { "id": "flutua-afunda", "emoji": "🛁", "topic": "physics", "question": "Achas que uma maçã flutua ou afunda na água?", "prediction_options": ["Flutua", "Afunda", "Fica no meio"], "explanation": "A maçã flutua porque tem ar dentro dela e é menos densa do que a água.", "tryAtHome": "Enche uma bacia com água e testa objetos diferentes: uma colher, uma bola, uma moeda." },
-  { "id": "estados-agua", "emoji": "💧", "topic": "chemistry", "question": "A água pode ser sólida, líquida e gasosa. Qual destes é vapor de água?", "prediction_options": ["O nevoeiro da casa de banho quente", "Um cubo de gelo", "A água da torneira"], "explanation": "Quando a água aquece muito, transforma-se em vapor (gás) e mistura-se com o ar.", "tryAtHome": "Pede a um adulto para ferver água e observa o vapor a subir da panela." },
-  { "id": "imanes", "emoji": "🧲", "topic": "physics", "question": "Um íman consegue atrair um clip de metal ou um lápis de madeira?", "prediction_options": ["Só o clip", "Só o lápis", "Os dois"], "explanation": "Os ímanes atraem metais como o ferro. A madeira não é atraída porque não tem essas propriedades.", "tryAtHome": "Passa um íman perto de vários objetos de casa e regista quais colam." },
-  { "id": "sombras", "emoji": "🌗", "topic": "physics", "question": "O que acontece à tua sombra quando te afastas de uma lanterna?", "prediction_options": ["Fica maior", "Fica mais pequena", "Desaparece"], "explanation": "Quanto mais perto da luz estiveres, maior é a sombra. Ao afastares-te, ela fica mais pequena.", "tryAtHome": "À noite, usa uma lanterna e experimenta fazer sombras grandes e pequenas na parede." },
-  { "id": "misturar-cores", "emoji": "🎨", "topic": "chemistry", "question": "Que cor achas que sai de misturar azul com amarelo?", "prediction_options": ["Verde", "Roxo", "Laranja"], "explanation": "Azul e amarelo misturados dão verde! É assim que as cores primárias criam novas cores.", "tryAtHome": "Usa tintas ou lápis de cor e mistura pares de cores para descobrir novas cores." },
-  { "id": "som-vibracao", "emoji": "🔔", "topic": "physics", "question": "Como é que o som chega até aos teus ouvidos?", "prediction_options": ["Por vibrações no ar", "Por magia", "A luz transporta o som"], "explanation": "O som é feito de vibrações que viajam pelo ar até aos nossos ouvidos, que as transformam em sons que ouvimos.", "tryAtHome": "Põe a mão na garganta enquanto falas. Sentes as vibrações?" },
-  { "id": "dia-noite", "emoji": "🌞", "topic": "earth", "question": "Porque é que há dia e noite?", "prediction_options": ["A Terra roda sobre si mesma", "O Sol apaga-se à noite", "As nuvens escondem o Sol"], "explanation": "A Terra gira sobre si mesma como um pião. O lado virado para o Sol tem dia, o outro tem noite.", "tryAtHome": "Usa uma lanterna e uma bola para simular a Terra a girar à volta do Sol." },
-  { "id": "estacoes", "emoji": "🍂", "topic": "earth", "question": "Porque é que existem estações como o verão e o inverno?", "prediction_options": ["A Terra inclina-se enquanto orbita o Sol", "O Sol muda de tamanho", "A Lua controla as estações"], "explanation": "A Terra está inclinada, por isso diferentes partes recebem mais ou menos luz solar ao longo do ano, criando as estações.", "tryAtHome": "Observa as árvores lá fora ao longo de várias semanas e anota as mudanças." },
-  { "id": "respirar-plantas", "emoji": "🌳", "topic": "biology", "question": "As plantas também 'respiram'? O que libertam para o ar?", "prediction_options": ["Oxigénio", "Fumo", "Água apenas"], "explanation": "As plantas usam a luz para produzir o seu alimento e, nesse processo, libertam oxigénio, que nós respiramos.", "tryAtHome": "Observa uma planta aquática num copo de água ao sol e procura pequenas bolhas nas folhas." },
-  { "id": "bicarbonato-vinagre", "emoji": "🌋", "topic": "chemistry", "question": "O que achas que acontece quando misturas bicarbonato de sódio com vinagre?", "prediction_options": ["Faz espuma e borbulhas", "Não acontece nada", "Fica gelado"], "explanation": "O bicarbonato e o vinagre reagem e criam gás (dióxido de carbono), formando muita espuma!", "tryAtHome": "Com um adulto, mistura um pouco de bicarbonato com vinagre num copo e observa a reação." },
-  { "id": "coracao-bate", "emoji": "❤️", "topic": "biology", "question": "O que acontece ao teu coração depois de correres muito?", "prediction_options": ["Bate mais depressa", "Bate mais devagar", "Para"], "explanation": "Quando fazemos exercício, o corpo precisa de mais oxigénio, por isso o coração bate mais rápido para o levar até aos músculos.", "tryAtHome": "Salta durante 1 minuto e depois põe a mão no peito para sentires o coração a bater." }
+  {
+    "id": "gelo-derrete",
+    "emoji": "🧊",
+    "topic": "physics",
+    "question": "O que achas que acontece a um cubo de gelo ao sol?",
+    "prediction_options": [
+      "Derrete",
+      "Fica maior",
+      "Não muda"
+    ],
+    "explanation": "O gelo derrete porque o calor do sol faz a água sólida passar a líquida. Chama-se a isto mudança de estado!",
+    "tryAtHome": "Põe um cubo de gelo num prato ao sol e outro à sombra. Qual derrete primeiro?"
+  },
+  {
+    "id": "planta-luz",
+    "emoji": "🌱",
+    "topic": "biology",
+    "question": "O que achas que acontece a uma planta guardada num armário escuro?",
+    "prediction_options": [
+      "Cresce na mesma",
+      "Fica fraca e amarela",
+      "Fica mais verde"
+    ],
+    "explanation": "As plantas precisam de luz para fazer o seu alimento. Sem luz, ficam fracas e pálidas.",
+    "tryAtHome": "Cobre uma planta pequena com uma caixa durante 3 dias e vê o que acontece às folhas."
+  },
+  {
+    "id": "flutua-afunda",
+    "emoji": "🛁",
+    "topic": "physics",
+    "question": "Achas que uma maçã flutua ou afunda na água?",
+    "prediction_options": [
+      "Flutua",
+      "Afunda",
+      "Fica no meio"
+    ],
+    "explanation": "A maçã flutua porque tem ar dentro dela e é menos densa do que a água.",
+    "tryAtHome": "Enche uma bacia com água e testa objetos diferentes: uma colher, uma bola, uma moeda."
+  },
+  {
+    "id": "estados-agua",
+    "emoji": "💧",
+    "topic": "chemistry",
+    "question": "A água pode ser sólida, líquida e gasosa. Qual destes é vapor de água?",
+    "prediction_options": [
+      "O nevoeiro da casa de banho quente",
+      "Um cubo de gelo",
+      "A água da torneira"
+    ],
+    "explanation": "Quando a água aquece muito, transforma-se em vapor (gás) e mistura-se com o ar.",
+    "tryAtHome": "Pede a um adulto para ferver água e observa o vapor a subir da panela."
+  },
+  {
+    "id": "imanes",
+    "emoji": "🧲",
+    "topic": "physics",
+    "question": "Um íman consegue atrair um clip de metal ou um lápis de madeira?",
+    "prediction_options": [
+      "Só o clip",
+      "Só o lápis",
+      "Os dois"
+    ],
+    "explanation": "Os ímanes atraem metais como o ferro. A madeira não é atraída porque não tem essas propriedades.",
+    "tryAtHome": "Passa um íman perto de vários objetos de casa e regista quais colam."
+  },
+  {
+    "id": "sombras",
+    "emoji": "🌗",
+    "topic": "physics",
+    "question": "O que acontece à tua sombra quando te afastas de uma lanterna?",
+    "prediction_options": [
+      "Fica maior",
+      "Fica mais pequena",
+      "Desaparece"
+    ],
+    "explanation": "Quanto mais perto da luz estiveres, maior é a sombra. Ao afastares-te, ela fica mais pequena.",
+    "tryAtHome": "À noite, usa uma lanterna e experimenta fazer sombras grandes e pequenas na parede."
+  },
+  {
+    "id": "misturar-cores",
+    "emoji": "🎨",
+    "topic": "chemistry",
+    "question": "Que cor achas que sai de misturar azul com amarelo?",
+    "prediction_options": [
+      "Verde",
+      "Roxo",
+      "Laranja"
+    ],
+    "explanation": "Azul e amarelo misturados dão verde! É assim que as cores primárias criam novas cores.",
+    "tryAtHome": "Usa tintas ou lápis de cor e mistura pares de cores para descobrir novas cores."
+  },
+  {
+    "id": "som-vibracao",
+    "emoji": "🔔",
+    "topic": "physics",
+    "question": "Como é que o som chega até aos teus ouvidos?",
+    "prediction_options": [
+      "Por vibrações no ar",
+      "Por magia",
+      "A luz transporta o som"
+    ],
+    "explanation": "O som é feito de vibrações que viajam pelo ar até aos nossos ouvidos, que as transformam em sons que ouvimos.",
+    "tryAtHome": "Põe a mão na garganta enquanto falas. Sentes as vibrações?"
+  },
+  {
+    "id": "dia-noite",
+    "emoji": "🌞",
+    "topic": "earth",
+    "question": "Porque é que há dia e noite?",
+    "prediction_options": [
+      "A Terra roda sobre si mesma",
+      "O Sol apaga-se à noite",
+      "As nuvens escondem o Sol"
+    ],
+    "explanation": "A Terra gira sobre si mesma como um pião. O lado virado para o Sol tem dia, o outro tem noite.",
+    "tryAtHome": "Usa uma lanterna e uma bola para simular a Terra a girar à volta do Sol."
+  },
+  {
+    "id": "estacoes",
+    "emoji": "🍂",
+    "topic": "earth",
+    "question": "Porque é que existem estações como o verão e o inverno?",
+    "prediction_options": [
+      "A Terra inclina-se enquanto orbita o Sol",
+      "O Sol muda de tamanho",
+      "A Lua controla as estações"
+    ],
+    "explanation": "A Terra está inclinada, por isso diferentes partes recebem mais ou menos luz solar ao longo do ano, criando as estações.",
+    "tryAtHome": "Observa as árvores lá fora ao longo de várias semanas e anota as mudanças."
+  },
+  {
+    "id": "respirar-plantas",
+    "emoji": "🌳",
+    "topic": "biology",
+    "question": "As plantas também 'respiram'? O que libertam para o ar?",
+    "prediction_options": [
+      "Oxigénio",
+      "Fumo",
+      "Água apenas"
+    ],
+    "explanation": "As plantas usam a luz para produzir o seu alimento e, nesse processo, libertam oxigénio, que nós respiramos.",
+    "tryAtHome": "Observa uma planta aquática num copo de água ao sol e procura pequenas bolhas nas folhas."
+  },
+  {
+    "id": "bicarbonato-vinagre",
+    "emoji": "🌋",
+    "topic": "chemistry",
+    "question": "O que achas que acontece quando misturas bicarbonato de sódio com vinagre?",
+    "prediction_options": [
+      "Faz espuma e borbulhas",
+      "Não acontece nada",
+      "Fica gelado"
+    ],
+    "explanation": "O bicarbonato e o vinagre reagem e criam gás (dióxido de carbono), formando muita espuma!",
+    "tryAtHome": "Com um adulto, mistura um pouco de bicarbonato com vinagre num copo e observa a reação."
+  },
+  {
+    "id": "coracao-bate",
+    "emoji": "❤️",
+    "topic": "biology",
+    "question": "O que acontece ao teu coração depois de correres muito?",
+    "prediction_options": [
+      "Bate mais depressa",
+      "Bate mais devagar",
+      "Para"
+    ],
+    "explanation": "Quando fazemos exercício, o corpo precisa de mais oxigénio, por isso o coração bate mais rápido para o levar até aos músculos.",
+    "tryAtHome": "Salta durante 1 minuto e depois põe a mão no peito para sentires o coração a bater."
+  },
+  {
+    "id": "arco-iris",
+    "emoji": "🌈",
+    "topic": "physics",
+    "question": "O que achas que faz aparecer um arco-íris no céu?",
+    "prediction_options": [
+      "A luz do sol a passar pelas gotas de chuva",
+      "O céu muda de cor",
+      "As nuvens pintam o céu"
+    ],
+    "explanation": "Os arco-íris formam-se quando a luz do sol passa pelas gotas de chuva e se divide em várias cores, como um prisma.",
+    "tryAtHome": "Num dia de sol, usa uma mangueira ou um copo de água ao sol e procura um arco-íris."
+  },
+  {
+    "id": "eletricidade-estatica",
+    "emoji": "⚡",
+    "topic": "physics",
+    "question": "O que acontece se esfregares um balão no cabelo e o aproximares de pedacinhos de papel?",
+    "prediction_options": [
+      "O papel salta e cola-se ao balão",
+      "Não acontece nada",
+      "O balão rebenta"
+    ],
+    "explanation": "Ao esfregar o balão cria-se eletricidade estática, uma carga elétrica que atrai objetos leves como o papel.",
+    "tryAtHome": "Esfrega um balão no cabelo e aproxima-o de pedacinhos de papel ou do teu cabelo."
+  },
+  {
+    "id": "flutuabilidade-objetos",
+    "emoji": "⚓",
+    "topic": "physics",
+    "question": "O que achas que flutua: um bloco de madeira, uma colher de metal ou um brinquedo de plástico?",
+    "prediction_options": [
+      "A madeira e o plástico flutuam, a colher afunda",
+      "Flutuam todos",
+      "Afundam todos"
+    ],
+    "explanation": "Flutuar ou afundar depende da densidade do objeto comparada com a da água — a madeira e o plástico costumam ser menos densos, o metal costuma ser mais denso.",
+    "tryAtHome": "Reúne objetos de casa e testa-os numa bacia com água: quais flutuam e quais afundam?"
+  },
+  {
+    "id": "fototropismo",
+    "emoji": "🪴",
+    "topic": "biology",
+    "question": "O que achas que faz uma planta se a luz vem só de um lado?",
+    "prediction_options": [
+      "Dobra-se e cresce em direção à luz",
+      "Cresce para longe da luz",
+      "Não muda nada"
+    ],
+    "explanation": "As plantas crescem em direção à luz num processo chamado fototropismo, para conseguirem captar mais luz e produzir o seu alimento.",
+    "tryAtHome": "Põe uma planta perto de uma janela durante uma semana e observa para que lado se inclina."
+  },
+  {
+    "id": "ciclo-agua",
+    "emoji": "☁️",
+    "topic": "earth",
+    "question": "De onde vem a chuva?",
+    "prediction_options": [
+      "A água evapora, forma nuvens e cai depois como chuva",
+      "O céu cria chuva do nada",
+      "O oceano lança água para cima"
+    ],
+    "explanation": "O sol aquece a água, que evapora e se transforma em vapor, forma nuvens e cai de novo como chuva — chama-se a isto o ciclo da água.",
+    "tryAtHome": "Ferve água com um adulto e segura um prato frio por cima do vapor para veres as gotinhas a formarem-se."
+  },
+  {
+    "id": "alavancas",
+    "emoji": "🏗️",
+    "topic": "physics",
+    "question": "Um pau comprido pode ajudar-te a levantar uma pedra pesada mais facilmente?",
+    "prediction_options": [
+      "Sim, funciona como uma alavanca",
+      "Não, torna-se mais difícil",
+      "Não faz diferença nenhuma"
+    ],
+    "explanation": "Uma alavanca é uma máquina simples — uma barra que gira num ponto de apoio — que ajuda a levantar coisas pesadas com menos esforço.",
+    "tryAtHome": "Usa uma régua equilibrada num objeto pequeno (como uma borracha) como um baloiço para levantar um objeto leve."
+  },
+  {
+    "id": "som-materiais",
+    "emoji": "🥁",
+    "topic": "physics",
+    "question": "O som viaja melhor pelo ar ou por uma mesa sólida?",
+    "prediction_options": [
+      "Por sólidos, como uma mesa",
+      "Só pelo ar",
+      "O som não viaja por sólidos"
+    ],
+    "explanation": "O som viaja mais depressa pelos sólidos do que pelo ar, porque as partículas estão mais próximas e passam as vibrações mais facilmente.",
+    "tryAtHome": "Encosta o ouvido a uma mesa enquanto alguém bate suavemente na outra ponta e depois compara com ouvir pelo ar."
+  },
+  {
+    "id": "folhas-outono",
+    "emoji": "🍁",
+    "topic": "biology",
+    "question": "Porque é que as folhas mudam de cor no outono?",
+    "prediction_options": [
+      "Perdem a clorofila verde e aparecem outras cores",
+      "São pintadas pela geada",
+      "Absorvem cor do solo"
+    ],
+    "explanation": "No outono, as árvores deixam de produzir clorofila verde, revelando as cores amarelas e alaranjadas que já estavam nas folhas.",
+    "tryAtHome": "Numa caminhada de outono, apanha folhas caídas de cores diferentes e compara-as."
+  }
 ]
