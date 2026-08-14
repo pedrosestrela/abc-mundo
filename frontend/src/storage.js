@@ -322,6 +322,44 @@ export function exploreComputingCard(profileName, cardId) {
   return all[name];
 }
 
+// --- O Mundo por Dentro (how things work) ---
+// Tracks which part ids (as "objectId:partId") the child has explored, for
+// each object of the "how things work" module.
+
+const EXPLORED_THING_PARTS_KEY = "abcmundo.exploredThingParts";
+
+function loadExploredThingParts() {
+  try {
+    const raw = localStorage.getItem(EXPLORED_THING_PARTS_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveExploredThingParts(all) {
+  try {
+    localStorage.setItem(EXPLORED_THING_PARTS_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getExploredThingParts(profileName) {
+  const all = loadExploredThingParts();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function exploreThingPart(profileName, objectId, partId) {
+  const name = profileName || "Explorer";
+  const all = loadExploredThingParts();
+  const explored = new Set(all[name] || []);
+  explored.add(`${objectId}:${partId}`);
+  all[name] = Array.from(explored);
+  saveExploredThingParts(all);
+  return all[name];
+}
+
 // --- Portugal History Timeline ("Castelo do Tempo") ---
 // Tracks which era ids the child has explored (opened the detail card for).
 

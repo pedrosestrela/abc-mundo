@@ -178,6 +178,14 @@ import computingSafetyZh from "./computingSafety.zh.json";
 import computingSafetyEs from "./computingSafety.es.json";
 import computingSafetyIt from "./computingSafety.it.json";
 
+import howThingsWorkPt from "./howThingsWork.pt.json";
+import howThingsWorkEn from "./howThingsWork.en.json";
+import howThingsWorkDe from "./howThingsWork.de.json";
+import howThingsWorkFr from "./howThingsWork.fr.json";
+import howThingsWorkZh from "./howThingsWork.zh.json";
+import howThingsWorkEs from "./howThingsWork.es.json";
+import howThingsWorkIt from "./howThingsWork.it.json";
+
 import internetSafetyPt from "./internetSafety.pt.json";
 import internetSafetyEn from "./internetSafety.en.json";
 import internetSafetyDe from "./internetSafety.de.json";
@@ -285,6 +293,7 @@ const SCIENCE = { pt: sciencePt, en: scienceEn, de: scienceDe, fr: scienceFr, zh
 const LIFE_SKILLS = { pt: lifeSkillsPt, en: lifeSkillsEn, de: lifeSkillsDe, fr: lifeSkillsFr, zh: lifeSkillsZh, es: lifeSkillsEs, it: lifeSkillsIt };
 const COMPUTING = { pt: computingPt, en: computingEn, de: computingDe, fr: computingFr, zh: computingZh, es: computingEs, it: computingIt };
 const COMPUTING_SAFETY = { pt: computingSafetyPt, en: computingSafetyEn, de: computingSafetyDe, fr: computingSafetyFr, zh: computingSafetyZh, es: computingSafetyEs, it: computingSafetyIt };
+const HOW_THINGS_WORK = { pt: howThingsWorkPt, en: howThingsWorkEn, de: howThingsWorkDe, fr: howThingsWorkFr, zh: howThingsWorkZh, es: howThingsWorkEs, it: howThingsWorkIt };
 const INTERNET_SAFETY = { pt: internetSafetyPt, en: internetSafetyEn, de: internetSafetyDe, fr: internetSafetyFr, zh: internetSafetyZh, es: internetSafetyEs, it: internetSafetyIt };
 const AI_LAB = { pt: aiLabPt, en: aiLabEn, de: aiLabDe, fr: aiLabFr, zh: aiLabZh, es: aiLabEs, it: aiLabIt };
 const LEMONADE_STAND = { pt: lemonadeStandPt, en: lemonadeStandEn, de: lemonadeStandDe, fr: lemonadeStandFr, zh: lemonadeStandZh, es: lemonadeStandEs, it: lemonadeStandIt };
@@ -378,6 +387,10 @@ export function getComputing(langCode) {
 
 export function getComputingSafety(langCode) {
   return COMPUTING_SAFETY[langCode] || [];
+}
+
+export function getHowThingsWork(langCode) {
+  return HOW_THINGS_WORK[langCode] || HOW_THINGS_WORK.pt || [];
 }
 
 export function getInternetSafety(langCode) {

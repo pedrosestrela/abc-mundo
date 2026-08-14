@@ -57,6 +57,7 @@ const Science = lazyWithReload(() => import("./pages/Science.jsx"));
 const PortugalHistory = lazyWithReload(() => import("./pages/PortugalHistory.jsx"));
 const LifeSkills = lazyWithReload(() => import("./pages/LifeSkills.jsx"));
 const Computing = lazyWithReload(() => import("./pages/Computing.jsx"));
+const HowThingsWork = lazyWithReload(() => import("./pages/HowThingsWork.jsx"));
 const City = lazyWithReload(() => import("./pages/City.jsx"));
 const Mundos = lazyWithReload(() => import("./pages/Mundos.jsx"));
 const Thinking = lazyWithReload(() => import("./pages/Thinking.jsx"));
@@ -104,6 +105,7 @@ export default function App() {
             <Route path="/history" element={<PortugalHistory />} />
             <Route path="/lifeskills" element={<LifeSkills />} />
             <Route path="/computing" element={<Computing />} />
+            <Route path="/how-it-works" element={<HowThingsWork />} />
             <Route path="/thinking" element={<Thinking />} />
             <Route path="/city" element={<City />} />
             <Route path="/nature-diary" element={<NatureDiary />} />
