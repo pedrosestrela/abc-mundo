@@ -1,0 +1,53 @@
+{
+  "bridge": {
+    "title": "小熊的桥",
+    "emoji": "🌉",
+    "prompt": "🐻 小熊需要过河。搭一座桥吧！",
+    "materials": [
+      { "id": "wood", "emoji": "🪵", "label": "木头" },
+      { "id": "stone", "emoji": "🧱", "label": "石头" },
+      { "id": "rope", "emoji": "🧵", "label": "绳子" },
+      { "id": "paper", "emoji": "📄", "label": "纸" }
+    ],
+    "outcomes": {
+      "wood": { "success": true, "text": "木头又结实又轻。桥承受住了小熊的重量，它安全地过河了！" },
+      "stone": { "success": false, "text": "石头对于简易桥来说太重了，小熊还没走过去桥就塌了。" },
+      "rope": { "success": false, "text": "只用绳子撑不住小熊的重量——它掉进水里了！" },
+      "paper": { "success": false, "text": "小熊的爪子一踩上去，纸就破了。" }
+    }
+  },
+  "tower": {
+    "title": "最高的塔",
+    "emoji": "🗼",
+    "prompt": "🚩 搭一座足够高的塔，够到旗子！",
+    "materials": [
+      { "id": "wood", "emoji": "🪵", "label": "木头" },
+      { "id": "stone", "emoji": "🧱", "label": "石头" },
+      { "id": "rope", "emoji": "🧵", "label": "绳子" },
+      { "id": "paper", "emoji": "📄", "label": "纸" }
+    ],
+    "outcomes": {
+      "wood": { "success": true, "text": "木块稳稳地叠了起来——塔够到了旗子！" },
+      "stone": { "success": true, "text": "石头虽重，但底部很稳——塔立得很稳，够到了旗子！" },
+      "rope": { "success": false, "text": "绳子自己立不起来——塔根本无法建起来。" },
+      "paper": { "success": false, "text": "纸承受不住重量弯折了，塔倒塌了。" }
+    }
+  },
+  "boat": {
+    "title": "会漂浮的船",
+    "emoji": "⛵",
+    "prompt": "⛵ 造一艘能漂浮的船，把玩具运到对岸！",
+    "materials": [
+      { "id": "wood", "emoji": "🪵", "label": "木头" },
+      { "id": "stone", "emoji": "🧱", "label": "石头" },
+      { "id": "rope", "emoji": "🧵", "label": "绳子" },
+      { "id": "paper", "emoji": "📄", "label": "纸" }
+    ],
+    "outcomes": {
+      "wood": { "success": true, "text": "木头浮力很好——船平稳地航行了！" },
+      "stone": { "success": false, "text": "石头密度太大，一碰到水就沉下去了。" },
+      "rope": { "success": false, "text": "绳子无法形成船身——水灌了进去，船沉了。" },
+      "paper": { "success": false, "text": "纸吸水后变软，最后化开了。" }
+    }
+  }
+}

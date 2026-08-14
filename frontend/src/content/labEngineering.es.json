@@ -1,0 +1,53 @@
+{
+  "bridge": {
+    "title": "El Puente del Oso",
+    "emoji": "🌉",
+    "prompt": "🐻 El oso necesita cruzar el río. ¡Construye un puente!",
+    "materials": [
+      { "id": "wood", "emoji": "🪵", "label": "Madera" },
+      { "id": "stone", "emoji": "🧱", "label": "Piedra" },
+      { "id": "rope", "emoji": "🧵", "label": "Cuerda" },
+      { "id": "paper", "emoji": "📄", "label": "Papel" }
+    ],
+    "outcomes": {
+      "wood": { "success": true, "text": "¡La madera es fuerte y ligera. El puente aguanta al oso y cruza a salvo!" },
+      "stone": { "success": false, "text": "La piedra es demasiado pesada para un puente sencillo y se derrumba antes de que el oso pase." },
+      "rope": { "success": false, "text": "¡La cuerda sola se hunde con el peso del oso — cae al agua!" },
+      "paper": { "success": false, "text": "El papel se rasga en cuanto el oso apoya una pata." }
+    }
+  },
+  "tower": {
+    "title": "La Torre Más Alta",
+    "emoji": "🗼",
+    "prompt": "🚩 ¡Construye una torre lo bastante alta para tocar la bandera!",
+    "materials": [
+      { "id": "wood", "emoji": "🪵", "label": "Madera" },
+      { "id": "stone", "emoji": "🧱", "label": "Piedra" },
+      { "id": "rope", "emoji": "🧵", "label": "Cuerda" },
+      { "id": "paper", "emoji": "📄", "label": "Papel" }
+    ],
+    "outcomes": {
+      "wood": { "success": true, "text": "¡Los bloques de madera se apilan firmes — la torre llega a la bandera!" },
+      "stone": { "success": true, "text": "¡La piedra es pesada pero estable en la base — la torre queda firme y alcanza la bandera!" },
+      "rope": { "success": false, "text": "La cuerda no puede sostenerse sola — la torre nunca se levanta." },
+      "paper": { "success": false, "text": "El papel se dobla con el peso y la torre se derrumba." }
+    }
+  },
+  "boat": {
+    "title": "El Barco Flotante",
+    "emoji": "⛵",
+    "prompt": "⛵ ¡Construye un barco que flote y lleve los juguetes a la otra orilla!",
+    "materials": [
+      { "id": "wood", "emoji": "🪵", "label": "Madera" },
+      { "id": "stone", "emoji": "🧱", "label": "Piedra" },
+      { "id": "rope", "emoji": "🧵", "label": "Cuerda" },
+      { "id": "paper", "emoji": "📄", "label": "Papel" }
+    ],
+    "outcomes": {
+      "wood": { "success": true, "text": "¡La madera flota muy bien — el barco navega tranquilamente!" },
+      "stone": { "success": false, "text": "La piedra es demasiado densa y se hunde en cuanto toca el agua." },
+      "rope": { "success": false, "text": "La cuerda no forma un casco — entra agua y el barco se hunde." },
+      "paper": { "success": false, "text": "El papel absorbe agua, se ablanda y se disuelve." }
+    }
+  }
+}
