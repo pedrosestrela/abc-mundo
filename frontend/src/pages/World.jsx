@@ -115,14 +115,39 @@ export default function World() {
                 <span>🏛️ {selected.capital}</span>
                 <span>💰 {selected.currency}</span>
               </div>
+              {selected.emojiScene && (
+                <div className="world-emoji-scene">{selected.emojiScene.join(" ")}</div>
+              )}
               <p className="mission-text">
                 {selected.fact}
                 <SpeakButton text={selected.fact} langCode={pair.mother} />
               </p>
-              <p className="mission-text">
-                🎵 {selected.music}
-                <SpeakButton text={selected.music} langCode={pair.mother} />
-              </p>
+              {selected.music && (
+                <p className="mission-text">
+                  🎵 {selected.music}
+                  <SpeakButton text={selected.music} langCode={pair.mother} />
+                </p>
+              )}
+              {selected.animal && (
+                <p className="mission-text">
+                  {t("modules.worldAnimal")}: {selected.animal.emoji} {selected.animal.name}
+                </p>
+              )}
+              {selected.tradition && (
+                <p className="mission-text">
+                  {t("modules.worldTradition")}: {selected.tradition}
+                  <SpeakButton text={selected.tradition} langCode={pair.mother} />
+                </p>
+              )}
+              {selected.language && selected.greeting && (
+                <p className="mission-text">
+                  {t("modules.worldLanguage")}: {selected.language} — {t("modules.worldGreeting")}: “{selected.greeting}”
+                  <SpeakButton text={selected.greeting} langCode={pair.mother} />
+                  {selected.greetingTranslation && (
+                    <> ({t("modules.worldGreetingMeaning")}: “{selected.greetingTranslation}”)</>
+                  )}
+                </p>
+              )}
             </div>
           )}
         </>
@@ -152,14 +177,39 @@ export default function World() {
                 <span>🏛️ {selected.capital}</span>
                 <span>💰 {selected.currency}</span>
               </div>
+              {selected.emojiScene && (
+                <div className="world-emoji-scene">{selected.emojiScene.join(" ")}</div>
+              )}
               <p className="mission-text">
                 {selected.fact}
                 <SpeakButton text={selected.fact} langCode={pair.mother} />
               </p>
-              <p className="mission-text">
-                🎵 {selected.music}
-                <SpeakButton text={selected.music} langCode={pair.mother} />
-              </p>
+              {selected.music && (
+                <p className="mission-text">
+                  🎵 {selected.music}
+                  <SpeakButton text={selected.music} langCode={pair.mother} />
+                </p>
+              )}
+              {selected.animal && (
+                <p className="mission-text">
+                  {t("modules.worldAnimal")}: {selected.animal.emoji} {selected.animal.name}
+                </p>
+              )}
+              {selected.tradition && (
+                <p className="mission-text">
+                  {t("modules.worldTradition")}: {selected.tradition}
+                  <SpeakButton text={selected.tradition} langCode={pair.mother} />
+                </p>
+              )}
+              {selected.language && selected.greeting && (
+                <p className="mission-text">
+                  {t("modules.worldLanguage")}: {selected.language} — {t("modules.worldGreeting")}: “{selected.greeting}”
+                  <SpeakButton text={selected.greeting} langCode={pair.mother} />
+                  {selected.greetingTranslation && (
+                    <> ({t("modules.worldGreetingMeaning")}: “{selected.greetingTranslation}”)</>
+                  )}
+                </p>
+              )}
             </div>
           )}
         </>
