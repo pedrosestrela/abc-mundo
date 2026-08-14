@@ -275,6 +275,10 @@ export function getCountries(langCode) {
     animal: c.animal ? { emoji: c.animal.emoji, name: c.animal.name[langCode] || c.animal.name.en } : undefined,
     tradition: c.tradition ? c.tradition[langCode] || c.tradition.en : undefined,
     emojiScene: c.emojiScene,
+    landmark: c.landmark ? c.landmark[langCode] || c.landmark.en : undefined,
+    food: c.food ? c.food[langCode] || c.food.en : undefined,
+    nativeName: c.nativeName,
+    nativeLangCode: c.nativeLangCode,
   }));
 }
 

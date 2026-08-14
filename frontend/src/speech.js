@@ -45,7 +45,10 @@ export function isSpeechAvailable() {
 }
 
 function buildUtterance(text, langCode) {
-  const bcp47 = LANG_TO_BCP47[langCode] || "en-US";
+  // langCode is usually one of our short app codes ("pt", "en", ...), but
+  // callers may also pass an already-fully-qualified BCP-47 tag directly
+  // (e.g. a country's nativeLangCode like "ja-JP") — use it as-is.
+  const bcp47 = langCode && langCode.includes("-") ? langCode : LANG_TO_BCP47[langCode] || "en-US";
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = bcp47;
   const voice = pickVoice(bcp47);
