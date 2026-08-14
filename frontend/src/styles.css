@@ -1280,6 +1280,28 @@ body {
   border: 2px solid var(--blue);
 }
 
+.science-card {
+  border-color: var(--purple);
+}
+
+.science-topic-badge {
+  text-transform: capitalize;
+}
+
+.science-explanation {
+  margin-top: 8px;
+}
+
+.science-try-home {
+  font-size: 0.95rem;
+  font-weight: normal;
+  color: #666;
+}
+
+.science-card.done {
+  border-color: var(--green);
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background: linear-gradient(180deg, #201a2b, #2a1c22);
@@ -1367,6 +1389,13 @@ body {
   }
   .drawing-size-dot {
     background: #f0e9ff;
+  }
+  .science-card {
+    background: #362a44;
+    color: #f0e9ff;
+  }
+  .science-try-home {
+    color: #cfc3e6;
   }
 }
 

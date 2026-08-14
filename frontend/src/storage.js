@@ -162,6 +162,44 @@ export function tryArtPrompt(profileName, promptId) {
   return all[name];
 }
 
+// --- Science Lab ("Laboratório das Descobertas") ---
+// Tracks which experiment ids the child has explored (opened the prediction
+// + explanation for), separate from quiz skill tracking.
+
+const EXPLORED_SCIENCE_KEY = "abcmundo.exploredScience";
+
+function loadExploredScience() {
+  try {
+    const raw = localStorage.getItem(EXPLORED_SCIENCE_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveExploredScience(all) {
+  try {
+    localStorage.setItem(EXPLORED_SCIENCE_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getExploredScience(profileName) {
+  const all = loadExploredScience();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function exploreScienceCard(profileName, cardId) {
+  const name = profileName || "Explorer";
+  const all = loadExploredScience();
+  const explored = new Set(all[name] || []);
+  explored.add(cardId);
+  all[name] = Array.from(explored);
+  saveExploredScience(all);
+  return all[name];
+}
+
 // Session-length tracking, kept in memory only (never persisted). A
 // "session" is just however long this tab has been open — reloading the
 // page starts a fresh session. Used by the gentle session-end nudge.

@@ -1,0 +1,15 @@
+[
+  { "id": "gelo-derrete", "emoji": "🧊", "topic": "physics", "question": "你觉得冰块放在太阳下会怎样？", "prediction_options": ["会融化", "会变大", "不会改变"], "explanation": "冰块会融化，是因为太阳的热量把固态的水变成了液态的水。这就叫做“状态变化”！", "tryAtHome": "把一块冰放在阳光下，另一块放在阴凉处，看看哪个先融化。" },
+  { "id": "planta-luz", "emoji": "🌱", "topic": "biology", "question": "你觉得一株被放在黑暗柜子里的植物会怎样？", "prediction_options": ["正常生长", "会变弱、变黄", "会更绿"], "explanation": "植物需要阳光来制造自己的养分。没有光，它们会变得虚弱、颜色变浅。", "tryAtHome": "用箱子把一株小植物盖住3天，看看叶子会有什么变化。" },
+  { "id": "flutua-afunda", "emoji": "🛁", "topic": "physics", "question": "你觉得苹果放进水里会浮起来还是沉下去？", "prediction_options": ["会浮起来", "会沉下去", "停在水中间"], "explanation": "苹果会浮起来，因为它里面有空气，所以比水的密度小。", "tryAtHome": "在盆里装满水，试试不同的物品：勺子、球、硬币。" },
+  { "id": "estados-agua", "emoji": "💧", "topic": "chemistry", "question": "水可以是固态、液态或气态。下面哪个是水蒸气？", "prediction_options": ["热水澡时的蒸汽", "一块冰", "水龙头里的水"], "explanation": "当水变得很热时，会变成水蒸气（气体），并与空气混合在一起。", "tryAtHome": "请大人烧一壶水，观察从锅里升起的蒸汽。" },
+  { "id": "imanes", "emoji": "🧲", "topic": "physics", "question": "磁铁能吸住金属回形针和木头铅笔吗？", "prediction_options": ["只能吸回形针", "只能吸铅笔", "两个都能吸"], "explanation": "磁铁能吸住铁这样的金属。木头不会被吸住，因为它没有这样的性质。", "tryAtHome": "拿磁铁靠近家里不同的物品，记录哪些会被吸住。" },
+  { "id": "sombras", "emoji": "🌗", "topic": "physics", "question": "当你远离手电筒时，你的影子会怎样？", "prediction_options": ["变大", "变小", "消失"], "explanation": "离光源越近，影子越大；离得越远，影子就越小。", "tryAtHome": "晚上用手电筒试着在墙上做出大大小小的影子。" },
+  { "id": "misturar-cores", "emoji": "🎨", "topic": "chemistry", "question": "你觉得蓝色和黄色混在一起会变成什么颜色？", "prediction_options": ["绿色", "紫色", "橙色"], "explanation": "蓝色和黄色混合后会变成绿色！这就是三原色创造新颜色的方式。", "tryAtHome": "用颜料或彩色铅笔，把不同颜色两两混合，看看会得到什么新颜色。" },
+  { "id": "som-vibracao", "emoji": "🔔", "topic": "physics", "question": "声音是怎么传到你耳朵里的？", "prediction_options": ["通过空气中的振动", "靠魔法", "光把声音带过去"], "explanation": "声音是由振动组成的，它通过空气传到我们的耳朵，耳朵再把振动变成我们听到的声音。", "tryAtHome": "说话的时候把手放在喉咙上，能感觉到振动吗？" },
+  { "id": "dia-noite", "emoji": "🌞", "topic": "earth", "question": "为什么会有白天和黑夜？", "prediction_options": ["地球在自转", "太阳晚上会熄灭", "云朵挡住了太阳"], "explanation": "地球像陀螺一样自己转动。朝向太阳的一面是白天，另一面是黑夜。", "tryAtHome": "用手电筒和一个球来模拟地球绕太阳转动的样子。" },
+  { "id": "estacoes", "emoji": "🍂", "topic": "earth", "question": "为什么会有夏天和冬天这样的季节？", "prediction_options": ["地球绕太阳转动时是倾斜的", "太阳会改变大小", "月亮控制着季节"], "explanation": "地球是倾斜的，所以一年中不同地方获得的阳光有多有少，这就形成了季节。", "tryAtHome": "连续几周观察窗外的树木，把变化记录下来。" },
+  { "id": "respirar-plantas", "emoji": "🌳", "topic": "biology", "question": "植物也会“呼吸”吗？它们会向空气中释放什么？", "prediction_options": ["氧气", "烟", "只有水"], "explanation": "植物利用阳光制造养分，在这个过程中会释放出氧气，供我们呼吸。", "tryAtHome": "把一株水生植物放在阳光下的一杯水里，看看叶子上会不会冒出小气泡。" },
+  { "id": "bicarbonato-vinagre", "emoji": "🌋", "topic": "chemistry", "question": "你觉得把小苏打和醋混在一起会发生什么？", "prediction_options": ["会冒泡起泡沫", "什么都不会发生", "会结冰"], "explanation": "小苏打和醋会发生反应，产生气体（二氧化碳），形成很多泡沫！", "tryAtHome": "请大人陪同，把一点小苏打和醋倒进杯子里混合，观察发生的反应。" },
+  { "id": "coracao-bate", "emoji": "❤️", "topic": "biology", "question": "跑了很多路之后，你的心脏会怎样？", "prediction_options": ["跳得更快", "跳得更慢", "停止跳动"], "explanation": "运动时身体需要更多氧气，所以心脏会跳得更快，把氧气送到肌肉里。", "tryAtHome": "跳1分钟，然后把手放在胸口，感受心脏跳动。" }
+]

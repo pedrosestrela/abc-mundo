@@ -5,7 +5,7 @@ const resources = {
   pt: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Início", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Leitura", phrases: "Frases", songs: "Canções", game: "Jogo", piano: "Piano", language: "Idiomas" , stories: "Histórias" , math: "Matemática" , financial: "Dinheiro" , parents: "Pais" , achievements: "Conquistas" , phonics: "Sons" , missions: "Missões" , world: "Mundo" , detective: "Detetive" , whys: "Porquês" , robots: "Robôs" , art: "Ateliê" },
+      nav: { home: "Início", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Leitura", phrases: "Frases", songs: "Canções", game: "Jogo", piano: "Piano", language: "Idiomas" , stories: "Histórias" , math: "Matemática" , financial: "Dinheiro" , parents: "Pais" , achievements: "Conquistas" , phonics: "Sons" , missions: "Missões" , world: "Mundo" , detective: "Detetive" , whys: "Porquês" , robots: "Robôs" , art: "Ateliê" , science: "Ciência" },
       home: {
         pickProfile: "Escolhe o teu perfil",
         newProfile: "Novo perfil",
@@ -141,13 +141,19 @@ const resources = {
         artPromptOfDay: "Ideia de hoje",
         artClear: "Limpar",
         artTried: "Experimentadas",
+        scienceTitle: "Laboratório das Descobertas",
+        scienceIntro: "Faz uma pergunta, arrisca uma previsão e descobre a resposta como um verdadeiro cientista!",
+        sciencePredict: "O que achas que vai acontecer?",
+        scienceExplanation: "Explicação",
+        scienceTryAtHome: "Experimenta em casa",
+        scienceExplored: "Experiências exploradas",
       },
     },
   },
   en: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Home", alphabet: "Alphabet", syllables: "Syllables", reading: "Reading", phrases: "Phrases", songs: "Songs", game: "Game", piano: "Piano", language: "Languages" , stories: "Stories" , math: "Math" , financial: "Money" , parents: "Parents" , achievements: "Achievements" , phonics: "Sounds" , missions: "Missions" , world: "World" , detective: "Detective" , whys: "Whys" , robots: "Robots" , art: "Art Studio" },
+      nav: { home: "Home", alphabet: "Alphabet", syllables: "Syllables", reading: "Reading", phrases: "Phrases", songs: "Songs", game: "Game", piano: "Piano", language: "Languages" , stories: "Stories" , math: "Math" , financial: "Money" , parents: "Parents" , achievements: "Achievements" , phonics: "Sounds" , missions: "Missions" , world: "World" , detective: "Detective" , whys: "Whys" , robots: "Robots" , art: "Art Studio" , science: "Science" },
       home: {
         pickProfile: "Pick your profile",
         newProfile: "New profile",
@@ -283,13 +289,19 @@ const resources = {
         artPromptOfDay: "Today's idea",
         artClear: "Clear",
         artTried: "Tried",
+        scienceTitle: "Discovery Lab",
+        scienceIntro: "Ask a question, make a prediction, and find out the answer like a real scientist!",
+        sciencePredict: "What do you think will happen?",
+        scienceExplanation: "Explanation",
+        scienceTryAtHome: "Try it at home",
+        scienceExplored: "Experiments explored",
       },
     },
   },
   de: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Start", alphabet: "Alphabet", syllables: "Silben", reading: "Lesen", phrases: "Sätze", songs: "Lieder", game: "Spiel", piano: "Klavier", language: "Sprachen" , stories: "Geschichten" , math: "Mathe" , financial: "Geld" , parents: "Eltern" , achievements: "Erfolge" , phonics: "Laute" , missions: "Missionen" , world: "Welt" , detective: "Detektiv" , whys: "Warums" , robots: "Roboter" , art: "Atelier" },
+      nav: { home: "Start", alphabet: "Alphabet", syllables: "Silben", reading: "Lesen", phrases: "Sätze", songs: "Lieder", game: "Spiel", piano: "Klavier", language: "Sprachen" , stories: "Geschichten" , math: "Mathe" , financial: "Geld" , parents: "Eltern" , achievements: "Erfolge" , phonics: "Laute" , missions: "Missionen" , world: "Welt" , detective: "Detektiv" , whys: "Warums" , robots: "Roboter" , art: "Atelier" , science: "Wissenschaft" },
       home: {
         pickProfile: "Wähle dein Profil",
         newProfile: "Neues Profil",
@@ -425,13 +437,19 @@ const resources = {
         artPromptOfDay: "Idee des Tages",
         artClear: "Löschen",
         artTried: "Ausprobiert",
+        scienceTitle: "Entdeckerlabor",
+        scienceIntro: "Stelle eine Frage, wage eine Vorhersage und finde die Antwort wie ein echter Wissenschaftler heraus!",
+        sciencePredict: "Was, glaubst du, wird passieren?",
+        scienceExplanation: "Erklärung",
+        scienceTryAtHome: "Zu Hause ausprobieren",
+        scienceExplored: "Erkundete Experimente",
       },
     },
   },
   fr: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Accueil", alphabet: "Alphabet", syllables: "Syllabes", reading: "Lecture", phrases: "Phrases", songs: "Chansons", game: "Jeu", piano: "Piano", language: "Langues" , stories: "Histoires" , math: "Maths" , financial: "Argent" , parents: "Parents" , achievements: "Réussites" , phonics: "Sons" , missions: "Missions" , world: "Monde" , detective: "Détective" , whys: "Pourquoi" , robots: "Robots" , art: "Atelier" },
+      nav: { home: "Accueil", alphabet: "Alphabet", syllables: "Syllabes", reading: "Lecture", phrases: "Phrases", songs: "Chansons", game: "Jeu", piano: "Piano", language: "Langues" , stories: "Histoires" , math: "Maths" , financial: "Argent" , parents: "Parents" , achievements: "Réussites" , phonics: "Sons" , missions: "Missions" , world: "Monde" , detective: "Détective" , whys: "Pourquoi" , robots: "Robots" , art: "Atelier" , science: "Sciences" },
       home: {
         pickProfile: "Choisis ton profil",
         newProfile: "Nouveau profil",
@@ -567,13 +585,19 @@ const resources = {
         artPromptOfDay: "Idée du jour",
         artClear: "Effacer",
         artTried: "Essayées",
+        scienceTitle: "Laboratoire des Découvertes",
+        scienceIntro: "Pose une question, fais une prédiction et découvre la réponse comme un vrai scientifique !",
+        sciencePredict: "Que penses-tu qu'il va se passer ?",
+        scienceExplanation: "Explication",
+        scienceTryAtHome: "Essaie à la maison",
+        scienceExplored: "Expériences explorées",
       },
     },
   },
   zh: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "首页", alphabet: "字母表", syllables: "音节", reading: "阅读", phrases: "句子", songs: "歌曲", game: "游戏", piano: "钢琴", language: "语言" , stories: "故事" , math: "数学" , financial: "金钱" , parents: "家长" , achievements: "成就" , phonics: "语音" , missions: "任务" , world: "世界" , detective: "侦探" , whys: "为什么" , robots: "机器人" , art: "创意工坊" },
+      nav: { home: "首页", alphabet: "字母表", syllables: "音节", reading: "阅读", phrases: "句子", songs: "歌曲", game: "游戏", piano: "钢琴", language: "语言" , stories: "故事" , math: "数学" , financial: "金钱" , parents: "家长" , achievements: "成就" , phonics: "语音" , missions: "任务" , world: "世界" , detective: "侦探" , whys: "为什么" , robots: "机器人" , art: "创意工坊" , science: "科学" },
       home: {
         pickProfile: "选择你的档案",
         newProfile: "新档案",
@@ -709,13 +733,19 @@ const resources = {
         artPromptOfDay: "今日灵感",
         artClear: "清除",
         artTried: "已尝试",
+        scienceTitle: "发现实验室",
+        scienceIntro: "提出问题，做出预测，像真正的科学家一样找出答案！",
+        sciencePredict: "你觉得会发生什么？",
+        scienceExplanation: "解释",
+        scienceTryAtHome: "在家试一试",
+        scienceExplored: "已探索的实验",
       },
     },
   },
   es: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Inicio", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Lectura", phrases: "Frases", songs: "Canciones", game: "Juego", piano: "Piano", language: "Idiomas" , stories: "Cuentos" , math: "Matemáticas" , financial: "Dinero" , parents: "Padres" , achievements: "Logros" , phonics: "Sonidos" , missions: "Misiones" , world: "Mundo" , detective: "Detective" , whys: "Porqués" , robots: "Robots" , art: "Taller" },
+      nav: { home: "Inicio", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Lectura", phrases: "Frases", songs: "Canciones", game: "Juego", piano: "Piano", language: "Idiomas" , stories: "Cuentos" , math: "Matemáticas" , financial: "Dinero" , parents: "Padres" , achievements: "Logros" , phonics: "Sonidos" , missions: "Misiones" , world: "Mundo" , detective: "Detective" , whys: "Porqués" , robots: "Robots" , art: "Taller" , science: "Ciencia" },
       home: {
         pickProfile: "Elige tu perfil",
         newProfile: "Nuevo perfil",
@@ -851,13 +881,19 @@ const resources = {
         artPromptOfDay: "Idea de hoy",
         artClear: "Borrar",
         artTried: "Probadas",
+        scienceTitle: "Laboratorio de los Descubrimientos",
+        scienceIntro: "¡Haz una pregunta, arriesga una predicción y descubre la respuesta como un verdadero científico!",
+        sciencePredict: "¿Qué crees que va a pasar?",
+        scienceExplanation: "Explicación",
+        scienceTryAtHome: "Pruébalo en casa",
+        scienceExplored: "Experimentos explorados",
       },
     },
   },
   it: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Home", alphabet: "Alfabeto", syllables: "Sillabe", reading: "Lettura", phrases: "Frasi", songs: "Canzoni", game: "Gioco", piano: "Piano", language: "Lingue" , stories: "Storie" , math: "Matematica" , financial: "Denaro" , parents: "Genitori" , achievements: "Traguardi" , phonics: "Suoni" , missions: "Missioni" , world: "Mondo" , detective: "Detective" , whys: "Perché" , robots: "Robots" , art: "Atelier" },
+      nav: { home: "Home", alphabet: "Alfabeto", syllables: "Sillabe", reading: "Lettura", phrases: "Frasi", songs: "Canzoni", game: "Gioco", piano: "Piano", language: "Lingue" , stories: "Storie" , math: "Matematica" , financial: "Denaro" , parents: "Genitori" , achievements: "Traguardi" , phonics: "Suoni" , missions: "Missioni" , world: "Mondo" , detective: "Detective" , whys: "Perché" , robots: "Robots" , art: "Atelier" , science: "Scienza" },
       home: {
         pickProfile: "Scegli il tuo profilo",
         newProfile: "Nuovo profilo",
@@ -993,6 +1029,12 @@ const resources = {
         artPromptOfDay: "Idea di oggi",
         artClear: "Cancella",
         artTried: "Provate",
+        scienceTitle: "Laboratorio delle Scoperte",
+        scienceIntro: "Fai una domanda, azzarda una previsione e scopri la risposta come un vero scienziato!",
+        sciencePredict: "Cosa pensi che succederà?",
+        scienceExplanation: "Spiegazione",
+        scienceTryAtHome: "Provalo a casa",
+        scienceExplored: "Esperimenti esplorati",
       },
     },
   },

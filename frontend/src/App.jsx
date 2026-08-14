@@ -23,6 +23,7 @@ import Detective from "./pages/Detective.jsx";
 import Whys from "./pages/Whys.jsx";
 import Robots from "./pages/Robots.jsx";
 import Art from "./pages/Art.jsx";
+import Science from "./pages/Science.jsx";
 
 export default function App() {
   return (
@@ -50,6 +51,7 @@ export default function App() {
           <Route path="/whys" element={<Whys />} />
           <Route path="/robots" element={<Robots />} />
           <Route path="/art" element={<Art />} />
+          <Route path="/science" element={<Science />} />
         </Routes>
       </main>
       <NavBar />
