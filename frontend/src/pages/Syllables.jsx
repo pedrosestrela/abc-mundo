@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { getSyllables } from "../content/index.js";
-import { getLangPair, getProfile, pingProgress } from "../storage.js";
+import { getLangPair, getProfile, pingProgress, recordSkillEvent } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
 
 export default function Syllables() {
@@ -14,6 +14,7 @@ export default function Syllables() {
   function handleView(syllable) {
     const profile = getProfile();
     pingProgress({ profileName: profile?.name, module: "syllables", event: `syllable_viewed:${syllable}` });
+    recordSkillEvent(profile?.name, "syllable-viewed", true);
   }
 
   return (

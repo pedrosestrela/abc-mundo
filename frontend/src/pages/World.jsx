@@ -1,7 +1,7 @@
 import React, { Suspense, lazy, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { getCountries } from "../content/index.js";
-import { getLangPair, getProfile, getVisitedCountries, visitCountry, getDifficultyTier, pingProgress } from "../storage.js";
+import { getLangPair, getProfile, getVisitedCountries, visitCountry, getDifficultyTier, pingProgress, recordSkillEvent } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
 
 // Lazy-loaded: pulls in three.js/globe.gl (~650KB gzipped), only needed
@@ -50,6 +50,7 @@ export default function World() {
     setSelected(c);
     visitCountry(profile?.name, c.iso);
     pingProgress({ profileName: profile?.name, module: "world", event: `country_visited:${c.iso}` });
+    recordSkillEvent(profile?.name, "world-country-viewed", true);
     setVisitedVersion((v) => v + 1);
   }
 

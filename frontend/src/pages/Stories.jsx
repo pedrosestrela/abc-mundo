@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { getStories } from "../content/index.js";
-import { getLangPair, getProfile, pingProgress } from "../storage.js";
+import { getLangPair, getProfile, pingProgress, recordSkillEvent } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
 
 export default function Stories() {
@@ -25,6 +25,7 @@ export default function Stories() {
       module: "stories",
       event: `page_viewed:${secondaryStory.id}:${pageIndex}`,
     });
+    recordSkillEvent(profile?.name, "story-page-viewed", true);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [openIndex, pageIndex]);
 

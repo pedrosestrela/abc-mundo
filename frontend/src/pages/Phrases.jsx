@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { getPhrases } from "../content/index.js";
-import { getLangPair, getProfile, pingProgress } from "../storage.js";
+import { getLangPair, getProfile, pingProgress, recordSkillEvent } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
 
 export default function Phrases() {
@@ -14,6 +14,7 @@ export default function Phrases() {
   function handleView(phrase) {
     const profile = getProfile();
     pingProgress({ profileName: profile?.name, module: "phrases", event: `phrase_viewed:${phrase}` });
+    recordSkillEvent(profile?.name, "phrase-viewed", true);
   }
 
   return (

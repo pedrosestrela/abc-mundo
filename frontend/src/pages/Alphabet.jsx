@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { getAlphabet, SUPPORTED_LANGUAGES } from "../content/index.js";
-import { getLangPair, getProfile, pingProgress } from "../storage.js";
+import { getLangPair, getProfile, pingProgress, recordSkillEvent } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
 
 function labelFor(code) {
@@ -22,6 +22,7 @@ export default function Alphabet() {
     setIndex(i);
     const profile = getProfile();
     pingProgress({ profileName: profile?.name, module: "alphabet", event: "letter_viewed" });
+    recordSkillEvent(profile?.name, "alphabet-letter", true);
   }
 
   if (!motherLetter || !secondaryLetter) return null;
