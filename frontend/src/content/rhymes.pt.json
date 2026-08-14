@@ -1,0 +1,104 @@
+{
+  "lengalengas": [
+    {
+      "id": "uni-duni-te",
+      "title": "Uni Duni Tê",
+      "emoji": "🎈",
+      "text": "Uni duni tê,\nSalamê minguê,\nUm sorvete colorê,\nO escolhido foi você!"
+    },
+    {
+      "id": "chuva-vai-embora",
+      "title": "Chuva, Vai-te Embora",
+      "emoji": "🌧️",
+      "text": "Chuva, chuva, vai-te embora,\nVem cá sol da minha terra,\nBrinca a criançada toda,\nQuando o céu de azul se veste!"
+    },
+    {
+      "id": "um-dois-tres",
+      "title": "Um, Dois, Três",
+      "emoji": "🔢",
+      "text": "Um, dois, três,\nQuatro, cinco, seis,\nSete, oito, nove, dez,\nEscolhido foste tu outra vez!"
+    },
+    {
+      "id": "la-vai-o-rato",
+      "title": "Lá Vai o Rato",
+      "emoji": "🐭",
+      "text": "Lá vai o rato pela rua,\nCom o rabo aos pulinhos,\nFoge, foge, corre, corre,\nAtrás dele vão os gatinhos!"
+    },
+    {
+      "id": "uma-galinha",
+      "title": "Uma Galinha",
+      "emoji": "🐔",
+      "text": "Uma galinha no quintal,\nPunha ovos sem parar,\nUm, dois, três, quatro, cinco,\nQuantos ovos vais contar?"
+    }
+  ],
+  "travalinguas": [
+    {
+      "id": "tt-1",
+      "title": "O Rato e a Rolha",
+      "emoji": "🐀",
+      "text": "O rato roeu a rolha da garrafa do rei da Rússia."
+    },
+    {
+      "id": "tt-2",
+      "title": "Os Três Tigres",
+      "emoji": "🐯",
+      "text": "Um tigre, dois tigres, três tigres."
+    },
+    {
+      "id": "tt-3",
+      "title": "Três Pratos de Trigo",
+      "emoji": "🌾",
+      "text": "Três pratos de trigo para três tigres tristes."
+    },
+    {
+      "id": "tt-4",
+      "title": "O Pé de Pedro",
+      "emoji": "🦶",
+      "text": "O peito do pé de Pedro é preto."
+    },
+    {
+      "id": "tt-5",
+      "title": "A Aranha e a Rã",
+      "emoji": "🕷️",
+      "text": "A aranha arranha a rã, a rã arranha a aranha."
+    }
+  ],
+  "rimas": [
+    {
+      "id": "gato-manhoso",
+      "title": "O Gato Manhoso",
+      "emoji": "🐱",
+      "text": "O meu gato é manhoso,\nDorme o dia todo, preguiçoso,\nÀ noite salta, ligeiro,\nA caçar o mundo inteiro!"
+    },
+    {
+      "id": "sol-brilhante",
+      "title": "O Sol Brilhante",
+      "emoji": "☀️",
+      "text": "O sol acorda de manhã,\nPinta o céu de cor-de-mel,\nAquece a terra e a montanha,\nE sorri lá do seu céu."
+    },
+    {
+      "id": "chuva-amiga",
+      "title": "A Chuva Amiga",
+      "emoji": "🌦️",
+      "text": "Pinga a chuva na janela,\nToc, toc, toc, devagarinho,\nRega a horta, a rosa, a espinela,\nE segue o seu caminho."
+    },
+    {
+      "id": "familia-feliz",
+      "title": "A Minha Família",
+      "emoji": "👨‍👩‍👧‍👦",
+      "text": "Mãe, pai, irmão, avó,\nJuntos formam o meu lar,\nUm abraço, e não estou só,\nÉ tão bom em casa estar."
+    },
+    {
+      "id": "jardim-flores",
+      "title": "O Jardim de Flores",
+      "emoji": "🌷",
+      "text": "No jardim há mil cores,\nRosas, tulipas a abrir,\nBorboletas entre as flores,\nE abelhas a zumbir."
+    },
+    {
+      "id": "lua-boa-noite",
+      "title": "Boa Noite, Lua",
+      "emoji": "🌙",
+      "text": "Boa noite, lua cheia,\nAcende as estrelas no céu,\nDorme a terra, dorme a areia,\nAté o sol novo, meu bem."
+    }
+  ]
+}

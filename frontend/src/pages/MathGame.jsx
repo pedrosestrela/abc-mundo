@@ -17,6 +17,20 @@ const ARITH_CONFIG = {
   3: { max: 20, rounds: 10 },
 };
 
+// Tier -> multiplication table range and quiz length
+const MUL_CONFIG = {
+  1: { max: 5, rounds: 6 },
+  2: { max: 5, rounds: 8 },
+  3: { max: 10, rounds: 10 },
+};
+
+// Tier -> division range (dividend up to max*max/divisor stays exact) and quiz length
+const DIV_CONFIG = {
+  1: { max: 5, rounds: 6 },
+  2: { max: 5, rounds: 8 },
+  3: { max: 10, rounds: 10 },
+};
+
 const COUNT_EMOJI = ["🍎", "⭐", "🐣", "🎈", "🍀", "🐟", "🌸", "🚗"];
 
 function shuffle(arr) {
@@ -83,6 +97,44 @@ function buildAddSubRounds(tier) {
       op = "-";
     }
     rounds.push({ a, b, op, correct, options: numberOptions(correct, config.max, 4) });
+  }
+  return rounds;
+}
+
+function buildMultiplicationRounds(tier) {
+  const config = MUL_CONFIG[tier] || MUL_CONFIG[1];
+  const rounds = [];
+  for (let i = 0; i < config.rounds; i++) {
+    const a = randInt(1, config.max);
+    const b = randInt(1, config.max);
+    const correct = a * b;
+    const emoji = COUNT_EMOJI[randInt(0, COUNT_EMOJI.length - 1)];
+    rounds.push({
+      a,
+      b,
+      correct,
+      emoji,
+      options: numberOptions(correct, config.max * config.max, 4),
+    });
+  }
+  return rounds;
+}
+
+function buildDivisionRounds(tier) {
+  const config = DIV_CONFIG[tier] || DIV_CONFIG[1];
+  const rounds = [];
+  for (let i = 0; i < config.rounds; i++) {
+    const divisor = randInt(2, config.max);
+    const quotient = randInt(1, config.max);
+    const dividend = divisor * quotient;
+    const emoji = COUNT_EMOJI[randInt(0, COUNT_EMOJI.length - 1)];
+    rounds.push({
+      dividend,
+      divisor,
+      correct: quotient,
+      emoji,
+      options: numberOptions(quotient, config.max, 4),
+    });
   }
   return rounds;
 }
@@ -161,6 +213,8 @@ const HELP_KEY_BY_ACTIVITY = {
   counting: "mathHelpCounting",
   numbers: "mathHelpNumbers",
   addsub: "mathHelpAddSub",
+  multiplication: "mathHelpMultiplication",
+  division: "mathHelpDivision",
 };
 
 export default function MathGame() {
@@ -173,15 +227,21 @@ export default function MathGame() {
   const [seed, setSeed] = useState(0);
   const [addSubConfirmed, setAddSubConfirmed] = useState(false);
   const [showAdvisory, setShowAdvisory] = useState(false);
+  const [pendingActivity, setPendingActivity] = useState("addsub");
 
   const tabs = [
     { key: "counting", label: t("modules.mathCounting"), emoji: "🔢" },
     { key: "numbers", label: t("modules.mathNumbers"), emoji: "🔠" },
     { key: "addsub", label: t("modules.mathAddSub"), emoji: "➕" },
+    { key: "multiplication", label: t("modules.mathMultiplication"), emoji: "✖️" },
+    { key: "division", label: t("modules.mathDivision"), emoji: "➗" },
   ];
 
+  const GATED_ACTIVITIES = ["addsub", "multiplication", "division"];
+
   function switchActivity(key) {
-    if (key === "addsub" && tier === 1 && !addSubConfirmed) {
+    if (GATED_ACTIVITIES.includes(key) && tier === 1 && !addSubConfirmed) {
+      setPendingActivity(key);
       setShowAdvisory(true);
       return;
     }
@@ -224,7 +284,7 @@ export default function MathGame() {
           onAccept={() => {
             setAddSubConfirmed(true);
             setShowAdvisory(false);
-            setActivity("addsub");
+            setActivity(pendingActivity);
             setSeed((s) => s + 1);
           }}
           onDecline={() => setShowAdvisory(false)}
@@ -271,6 +331,50 @@ export default function MathGame() {
             <div className="game-emoji math-expression">
               {round.a} {round.op} {round.b} = ?
             </div>
+          )}
+        />
+      )}
+
+      {activity === "multiplication" && (
+        <QuizRunner
+          key={"multiplication-" + seed}
+          rounds={buildMultiplicationRounds(tier)}
+          profile={profile}
+          t={t}
+          moduleEvent="math_multiplication"
+          onDone={restart}
+          renderPrompt={(round) => (
+            <>
+              <div className="game-emoji">
+                {Array.from({ length: round.a }).map((_, i) => (
+                  <span key={i} style={{ marginRight: "0.5em" }}>
+                    {round.emoji.repeat(round.b)}
+                  </span>
+                ))}
+              </div>
+              <div className="math-expression">
+                {round.a} × {round.b} = ?
+              </div>
+            </>
+          )}
+        />
+      )}
+
+      {activity === "division" && (
+        <QuizRunner
+          key={"division-" + seed}
+          rounds={buildDivisionRounds(tier)}
+          profile={profile}
+          t={t}
+          moduleEvent="math_division"
+          onDone={restart}
+          renderPrompt={(round) => (
+            <>
+              <div className="game-emoji">{round.emoji.repeat(round.dividend)}</div>
+              <div className="math-expression">
+                {round.dividend} ÷ {round.divisor} = ?
+              </div>
+            </>
           )}
         />
       )}

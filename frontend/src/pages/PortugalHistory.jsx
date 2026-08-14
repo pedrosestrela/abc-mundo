@@ -6,6 +6,7 @@ import SpeakButton from "../components/SpeakButton.jsx";
 import HelpButton from "../components/HelpButton.jsx";
 import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
 import AgeAdvisory from "../components/AgeAdvisory.jsx";
+import Illustration from "../components/Illustrations.jsx";
 
 function shuffle(arr) {
   const copy = [...arr];
@@ -150,6 +151,9 @@ export default function PortugalHistory() {
                   </button>
                   {isOpen && (
                     <div className="history-era-body">
+                      <div className="history-era-illustration">
+                        <Illustration illustrationId={era.id} />
+                      </div>
                       <p className="mission-text">
                         {era.description}
                         <SpeakButton text={era.description} langCode={pair.mother} />

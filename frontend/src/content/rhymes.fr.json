@@ -1,0 +1,104 @@
+{
+  "lengalengas": [
+    {
+      "id": "uni-duni-te",
+      "title": "Am Stram Gram",
+      "emoji": "🎈",
+      "text": "Am stram gram,\nPic et pic et colegram,\nBour et bour et ratatam,\nAm stram gram!"
+    },
+    {
+      "id": "chuva-vai-embora",
+      "title": "Pluie, Va-t'en",
+      "emoji": "🌧️",
+      "text": "Pluie, pluie, va-t'en vite,\nReviens un autre jour, petite,\nLes enfants veulent jouer dehors,\nPluie, pluie, va-t'en encore!"
+    },
+    {
+      "id": "um-dois-tres",
+      "title": "Un, Deux, Trois",
+      "emoji": "🔢",
+      "text": "Un, deux, trois,\nQuatre, cinq, six, à toi,\nSept, huit, neuf, dix,\nOn recompte, c'est permis!"
+    },
+    {
+      "id": "la-vai-o-rato",
+      "title": "La Souris s'en Va",
+      "emoji": "🐭",
+      "text": "La souris file dans la ruelle,\nSa petite queue s'agite, elle,\nCours, cours, vite et léger,\nLes chatons vont la chasser!"
+    },
+    {
+      "id": "uma-galinha",
+      "title": "Une Petite Poule",
+      "emoji": "🐔",
+      "text": "Une petite poule dans la cour,\nPond des œufs tout le jour,\nUn, deux, trois, quatre, cinq,\nCompte les œufs, c'est malin!"
+    }
+  ],
+  "travalinguas": [
+    {
+      "id": "tt-1",
+      "title": "L'Archiduchesse",
+      "emoji": "🧦",
+      "text": "Les chaussettes de l'archiduchesse sont-elles sèches, archi-sèches?"
+    },
+    {
+      "id": "tt-2",
+      "title": "Le Chasseur",
+      "emoji": "🐕",
+      "text": "Un chasseur sachant chasser doit savoir chasser sans son chien."
+    },
+    {
+      "id": "tt-3",
+      "title": "Les Cyprès",
+      "emoji": "🌳",
+      "text": "Si six scies scient six cyprès, six cent six scies scient six cent six cyprès."
+    },
+    {
+      "id": "tt-4",
+      "title": "Didon",
+      "emoji": "🦆",
+      "text": "Didon dîna, dit-on, du dos d'un dodu dindon."
+    },
+    {
+      "id": "tt-5",
+      "title": "Le Ver Vert",
+      "emoji": "🐛",
+      "text": "Un ver vert va vers un verre vert."
+    }
+  ],
+  "rimas": [
+    {
+      "id": "gato-manhoso",
+      "title": "Le Chat Malicieux",
+      "emoji": "🐱",
+      "text": "Mon chat est un peu malicieux,\nIl dort tout le jour, paresseux,\nLa nuit il saute, vif et leste,\nChasser le monde, quel geste!"
+    },
+    {
+      "id": "sol-brilhante",
+      "title": "Le Soleil Brillant",
+      "emoji": "☀️",
+      "text": "Le soleil se lève chaque matin,\nPeint le ciel de miel et de lin,\nRéchauffe la terre et la colline,\nEt nous sourit, tout illumine."
+    },
+    {
+      "id": "chuva-amiga",
+      "title": "La Pluie Amie",
+      "emoji": "🌦️",
+      "text": "La pluie tombe sur la fenêtre,\nToc, toc, toc, tout doucement,\nArrose le jardin, l'herbe naît,\nPuis s'en va, tranquillement."
+    },
+    {
+      "id": "familia-feliz",
+      "title": "Ma Famille",
+      "emoji": "👨‍👩‍👧‍👦",
+      "text": "Maman, papa et mon frère,\nEnsemble forment mon univers,\nUn câlin, jamais solitaire,\nChez moi, rien de plus cher."
+    },
+    {
+      "id": "jardim-flores",
+      "title": "Le Jardin Fleuri",
+      "emoji": "🌷",
+      "text": "Dans le jardin, mille couleurs,\nRoses, tulipes en douceur,\nLes papillons dansent de fleur en fleur,\nEt les abeilles chantent leur bonheur."
+    },
+    {
+      "id": "lua-boa-noite",
+      "title": "Bonne Nuit, Lune",
+      "emoji": "🌙",
+      "text": "Bonne nuit, lune toute ronde,\nAllume les étoiles du monde,\nDort la terre, dort le sable,\nJusqu'au soleil, jour semblable."
+    }
+  ]
+}

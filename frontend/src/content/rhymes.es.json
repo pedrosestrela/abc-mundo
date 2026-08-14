@@ -1,0 +1,104 @@
+{
+  "lengalengas": [
+    {
+      "id": "uni-duni-te",
+      "title": "Pin Marín",
+      "emoji": "🎈",
+      "text": "Pin marín de don Pingüé,\nCúcara mácara títere fue,\nYo no fui, fue Teté,\nPégale, pégale que ella fue!"
+    },
+    {
+      "id": "chuva-vai-embora",
+      "title": "Que Llueva, Que Llueva",
+      "emoji": "🌧️",
+      "text": "Que llueva, que llueva,\nLa vieja está en la cueva,\nLos pajaritos cantan,\nY el sol pronto se levanta!"
+    },
+    {
+      "id": "um-dois-tres",
+      "title": "Uno, Dos, Tres",
+      "emoji": "🔢",
+      "text": "Uno, dos, tres,\nCuatro, cinco, seis,\nSiete, ocho, nueve, diez,\nA contar otra vez!"
+    },
+    {
+      "id": "la-vai-o-rato",
+      "title": "Se Va el Ratón",
+      "emoji": "🐭",
+      "text": "Se va el ratón por la calle,\nCon su colita a saltar y baile,\nCorre, corre, rápido y ligero,\nLos gatitos van tras él, certero!"
+    },
+    {
+      "id": "uma-galinha",
+      "title": "Una Gallinita",
+      "emoji": "🐔",
+      "text": "Una gallinita en el corral,\nPone huevos sin parar,\nUno, dos, tres, cuatro, cinco,\nCuenta los huevos, es un buen brinco!"
+    }
+  ],
+  "travalinguas": [
+    {
+      "id": "tt-1",
+      "title": "Tres Tristes Tigres",
+      "emoji": "🐯",
+      "text": "Tres tristes tigres tragaban trigo en un trigal."
+    },
+    {
+      "id": "tt-2",
+      "title": "El Cielo Enladrillado",
+      "emoji": "🧱",
+      "text": "El cielo está enladrillado, ¿quién lo desenladrillará?"
+    },
+    {
+      "id": "tt-3",
+      "title": "Pablito",
+      "emoji": "🔨",
+      "text": "Pablito clavó un clavito, ¿qué clavito clavó Pablito?"
+    },
+    {
+      "id": "tt-4",
+      "title": "El Perro de Rita",
+      "emoji": "🐶",
+      "text": "Erre con erre, cigarro, erre con erre, barril, rápido ruedan los carros sobre los rieles del ferrocarril."
+    },
+    {
+      "id": "tt-5",
+      "title": "Como Poco Coco Como",
+      "emoji": "🥥",
+      "text": "Como poco coco como, poco coco compro."
+    }
+  ],
+  "rimas": [
+    {
+      "id": "gato-manhoso",
+      "title": "El Gato Astuto",
+      "emoji": "🐱",
+      "text": "Mi gato es muy astuto y fiel,\nDuerme el día entero, sin cuartel,\nDe noche salta, ágil y presto,\nA cazar el mundo, siempre listo!"
+    },
+    {
+      "id": "sol-brilhante",
+      "title": "El Sol Brillante",
+      "emoji": "☀️",
+      "text": "El sol despierta por la mañana,\nPinta de miel toda la sabana,\nCalienta la tierra y la montaña,\nY nos sonríe, dulce y con maña."
+    },
+    {
+      "id": "chuva-amiga",
+      "title": "La Lluvia Amiga",
+      "emoji": "🌦️",
+      "text": "Cae la lluvia en la ventana,\nToc, toc, toc, muy despacito,\nRiega el jardín, riega la grama,\nY sigue luego su caminito."
+    },
+    {
+      "id": "familia-feliz",
+      "title": "Mi Familia",
+      "emoji": "👨‍👩‍👧‍👦",
+      "text": "Mamá, papá y mi hermanito,\nJuntos forman mi rinconcito,\nUn abrazo, nunca solito,\nEn mi casa vivo tranquilito."
+    },
+    {
+      "id": "jardim-flores",
+      "title": "El Jardín de Flores",
+      "emoji": "🌷",
+      "text": "En el jardín hay mil colores,\nRosas, tulipanes y primores,\nLas mariposas bailan sin parar,\nY las abejas zumban al pasar."
+    },
+    {
+      "id": "lua-boa-noite",
+      "title": "Buenas Noches, Luna",
+      "emoji": "🌙",
+      "text": "Buenas noches, luna llena,\nEnciende estrellas en su melena,\nDuerme la tierra, duerme la arena,\nHasta que el sol nuevo despierte serena."
+    }
+  ]
+}
