@@ -1,0 +1,12 @@
+{
+  "intro": "Vais ensinar um robô a distinguir círculos de quadrados! Mostra-lhe algumas formas e diz-lhe o que são.",
+  "trainInstructions": "Toca no nome certo para cada forma, para ensinares o robô.",
+  "goodDataIntro": "O robô aprendeu com as tuas respostas. Vamos ver se ele acerta em formas novas!",
+  "goodDataExplain": "O robô aprendeu bem porque lhe deste exemplos certos. Quando os exemplos são bons, o robô fica esperto!",
+  "badDataIntro": "Agora vamos treinar outro robô. Desta vez, um ajudante distraído já etiquetou algumas formas antes de chegares — sem querer, trocou-se em algumas!",
+  "badDataExplain": "Reparaste? Algumas formas de treino estavam trocadas (não foi culpa tua!). Por isso o robô ficou confuso e errou mais desta vez.",
+  "conclusion": "Isto acontece com todos os robôs e computadores que aprendem: se os exemplos que lhes damos estiverem errados, eles aprendem coisas erradas. Exemplos bons fazem robôs espertos!",
+  "circleLabel": "Círculo",
+  "squareLabel": "Quadrado",
+  "mislabeledNote": "🤖 já etiquetado por um ajudante"
+}

@@ -672,6 +672,125 @@ body {
   margin: 0 auto;
 }
 
+.instrument-visual-wrap {
+  max-width: 480px;
+  margin: 16px auto;
+}
+
+.instrument-visual-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  user-select: none;
+}
+
+.instrument-hit-area {
+  cursor: pointer;
+}
+
+.instrument-body {
+  fill: var(--purple, #8e6bd8);
+  fill-opacity: 0.15;
+  stroke: var(--purple, #8e6bd8);
+  stroke-width: 2;
+}
+
+.instrument-string {
+  stroke: var(--blue, #3aa0ff);
+  stroke-width: 4;
+  stroke-linecap: round;
+  fill: none;
+  transition: stroke 0.15s ease, stroke-width 0.15s ease;
+}
+
+.instrument-string.active {
+  stroke: var(--pink, #ff6b9d);
+  stroke-width: 6;
+}
+
+.bowed-string.active {
+  stroke: var(--pink, #ff6b9d);
+}
+
+.harp-string {
+  stroke: var(--green, #35c46a);
+}
+
+.harp-frame {
+  fill: var(--purple, #8e6bd8);
+  fill-opacity: 0.12;
+}
+
+.instrument-note-label {
+  font-size: 11px;
+  fill: var(--text, #333);
+  pointer-events: none;
+}
+
+.instrument-hole {
+  fill: var(--blue, #3aa0ff);
+  fill-opacity: 0.4;
+  stroke: var(--blue, #3aa0ff);
+  stroke-width: 2;
+  transition: fill 0.15s ease;
+}
+
+.instrument-hole.active {
+  fill: var(--pink, #ff6b9d);
+  stroke: var(--pink, #ff6b9d);
+}
+
+.flute-body {
+  fill: var(--yellow, #f5c542);
+  fill-opacity: 0.2;
+}
+
+.bellows-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.bellows-side {
+  fill: var(--purple, #8e6bd8);
+  fill-opacity: 0.25;
+}
+
+.bellows-fold-line {
+  stroke: var(--purple, #8e6bd8);
+  stroke-width: 3;
+  transition: transform 0.2s ease;
+}
+
+.bellows-wrap.pulsing .bellows-fold-line {
+  transform: scaleX(0.7);
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.bellows-buttons {
+  display: grid;
+  gap: 8px;
+  width: 100%;
+}
+
+.bellows-button {
+  height: 48px;
+  border-radius: 12px;
+  border: none;
+  background: var(--blue, #3aa0ff);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.1s ease, background 0.15s ease;
+}
+
+.bellows-button.active {
+  background: var(--pink, #ff6b9d);
+  transform: scale(0.95);
+}
+
 .drum-pads {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

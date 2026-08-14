@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { getComputing, getComputingSafety } from "../content/index.js";
+import { getComputing, getComputingSafety, getInternetSafety, getAiLab } from "../content/index.js";
 import {
   getLangPair,
   getProfile,
@@ -27,6 +27,13 @@ const TIER_CONFIG = {
   3: { rounds: 9 },
 };
 
+// The Internet School scenarios are for older kids (tier 2+), same as the
+// safety quiz - richer multiple-choice scenarios instead of a binary quiz.
+const SCHOOL_TIER_CONFIG = {
+  2: { rounds: 8 },
+  3: { rounds: 12 },
+};
+
 function shuffle(arr) {
   const copy = [...arr];
   for (let i = copy.length - 1; i > 0; i--) {
@@ -36,10 +43,46 @@ function shuffle(arr) {
   return copy;
 }
 
-function buildRounds(cards, tier) {
-  const config = TIER_CONFIG[tier] || TIER_CONFIG[2];
+function buildRounds(cards, tier, tierConfig) {
+  const config = tierConfig[tier] || tierConfig[2];
   const count = Math.min(config.rounds, cards.length);
   return shuffle(cards).slice(0, count);
+}
+
+// --- AI Lab shape data --------------------------------------------------
+// Small fixed set of shapes (emoji stand-ins for circle/square) used to
+// teach the "garbage in, garbage out" intuition. Not a real ML simulation -
+// just one clear, playable "aha" moment.
+const TRAIN_SHAPES = [
+  { id: "t1", type: "circle", emoji: "⭕" },
+  { id: "t2", type: "square", emoji: "🔲" },
+  { id: "t3", type: "circle", emoji: "🟠" },
+  { id: "t4", type: "square", emoji: "🟪" },
+  { id: "t5", type: "circle", emoji: "🔵" },
+  { id: "t6", type: "square", emoji: "🟨" },
+];
+// Indices (within TRAIN_SHAPES) that get secretly mislabeled in round 2 -
+// simulating a distracted helper, never the child's own mistake.
+const MISLABELED_INDEXES = [1, 4];
+
+const TEST_SHAPES = [
+  { id: "x1", type: "circle", emoji: "🟢" },
+  { id: "x2", type: "square", emoji: "🟥" },
+  { id: "x3", type: "circle", emoji: "⚪" },
+  { id: "x4", type: "square", emoji: "⬛" },
+  { id: "x5", type: "circle", emoji: "🔴" },
+  { id: "x6", type: "square", emoji: "🟦" },
+];
+
+function buildAiLabRound(mislabel) {
+  return TRAIN_SHAPES.map((shape, idx) => {
+    const forced = mislabel && MISLABELED_INDEXES.includes(idx);
+    return {
+      ...shape,
+      forcedWrong: forced,
+      forcedLabel: forced ? (shape.type === "circle" ? "square" : "circle") : null,
+    };
+  });
 }
 
 export default function Computing() {
@@ -49,17 +92,36 @@ export default function Computing() {
   const tier = getDifficultyTier(profile?.age);
   const cards = getComputing(pair.mother);
   const safetyCards = getComputingSafety(pair.mother);
+  const schoolScenarios = getInternetSafety(pair.mother);
+  const aiLabText = getAiLab(pair.mother);
+
+  const [tab, setTab] = useState("concepts");
 
   const [openId, setOpenId] = useState(null);
   const [version, setVersion] = useState(0);
   const explored = useMemo(() => getExploredComputing(profile?.name), [profile?.name, version]);
 
-  const [rounds] = useState(() => buildRounds(safetyCards, tier));
+  const [rounds] = useState(() => buildRounds(safetyCards, tier, TIER_CONFIG));
   const [step, setStep] = useState(0);
   const [score, setScore] = useState(0);
   const [answered, setAnswered] = useState(null);
   const [safetyConfirmed, setSafetyConfirmed] = useState(tier > 1);
   const [showAdvisory, setShowAdvisory] = useState(false);
+
+  const [schoolRounds] = useState(() => buildRounds(schoolScenarios, tier, SCHOOL_TIER_CONFIG));
+  const [schoolStep, setSchoolStep] = useState(0);
+  const [schoolScore, setSchoolScore] = useState(0);
+  const [schoolAnswered, setSchoolAnswered] = useState(null);
+  const [schoolConfirmed, setSchoolConfirmed] = useState(tier > 1);
+  const [showSchoolAdvisory, setShowSchoolAdvisory] = useState(false);
+
+  // AI Lab state machine: train1 -> test1 -> train2 -> test2 -> done
+  const [labPhase, setLabPhase] = useState("train1");
+  const [labTrainIdx, setLabTrainIdx] = useState(0);
+  const [labTags, setLabTags] = useState([]);
+  const [labTestIdx, setLabTestIdx] = useState(0);
+  const [labTestResults, setLabTestResults] = useState([]);
+  const labRound = useMemo(() => buildAiLabRound(labPhase === "train2" || labPhase === "test2"), [labPhase === "train2" || labPhase === "test2"]);
 
   function handleOpen(card) {
     const nowOpen = card.id !== openId;
@@ -95,8 +157,87 @@ export default function Computing() {
     window.location.reload();
   }
 
+  function handleSchoolAnswer(option) {
+    if (schoolAnswered) return;
+    setSchoolAnswered(option);
+    if (option.correct) setSchoolScore((s) => s + 1);
+    recordSkillEvent(profile?.name, "internet-safety", !!option.correct);
+    pingProgress({
+      profileName: profile?.name,
+      module: "computing",
+      event: option.correct ? "internet_school_correct" : "internet_school_wrong",
+    });
+  }
+
+  function handleSchoolNext() {
+    setSchoolAnswered(null);
+    setSchoolStep((s) => s + 1);
+  }
+
+  // --- AI Lab handlers ---
+  function handleLabTag(tag) {
+    const shape = labRound[labTrainIdx];
+    if (shape.forcedWrong) return; // locked, pre-labeled example
+    const nextTags = [...labTags, { shapeId: shape.id, type: shape.type, tag }];
+    setLabTags(nextTags);
+    if (labTrainIdx + 1 < labRound.length) {
+      setLabTrainIdx(labTrainIdx + 1);
+    } else {
+      // Move into testing this "robot" using the accuracy of its training data.
+      runLabTest(nextTags, labRound);
+    }
+  }
+
+  function runLabTest(tags, round) {
+    const forcedEntries = round
+      .filter((s) => s.forcedWrong)
+      .map((s) => ({ shapeId: s.id, type: s.type, tag: s.forcedLabel }));
+    const allTraining = [...tags, ...forcedEntries];
+    const correctCount = allTraining.filter((entry) => entry.tag === entry.type).length;
+    const accuracy = allTraining.length ? correctCount / allTraining.length : 1;
+
+    // Deterministically apply the training accuracy to the test set so the
+    // number of correct predictions matches the demonstrated accuracy.
+    const wrongCount = Math.round((1 - accuracy) * TEST_SHAPES.length);
+    const shuffledIdx = shuffle(TEST_SHAPES.map((_, i) => i)).slice(0, wrongCount);
+    const results = TEST_SHAPES.map((shape, idx) => {
+      const wrong = shuffledIdx.includes(idx);
+      const predicted = wrong ? (shape.type === "circle" ? "square" : "circle") : shape.type;
+      return { ...shape, predicted, correct: predicted === shape.type };
+    });
+    setLabTestResults(results);
+    setLabPhase(labPhase === "train1" ? "test1" : "test2");
+    pingProgress({
+      profileName: profile?.name,
+      module: "computing",
+      event: labPhase === "train1" ? "ai_lab_round1" : "ai_lab_round2",
+    });
+    recordSkillEvent(profile?.name, "ai-lab", labPhase === "train1");
+  }
+
+  function startRound2() {
+    setLabPhase("train2");
+    setLabTrainIdx(0);
+    setLabTags([]);
+  }
+
+  function handleLabRestart() {
+    setLabPhase("train1");
+    setLabTrainIdx(0);
+    setLabTags([]);
+    setLabTestIdx(0);
+    setLabTestResults([]);
+  }
+
   const round = rounds[step];
   const finished = step >= rounds.length;
+
+  const schoolRound = schoolRounds[schoolStep];
+  const schoolFinished = schoolStep >= schoolRounds.length;
+
+  const labAccuracyPct = labTestResults.length
+    ? Math.round((labTestResults.filter((r) => r.correct).length / labTestResults.length) * 100)
+    : null;
 
   return (
     <div className="page">
@@ -106,114 +247,306 @@ export default function Computing() {
       </div>
       <p className="page-intro">{t("modules.computingIntro")}</p>
 
-      <h2 className="songs-heading">🧠 {t("modules.computingConcepts")}</h2>
-      <h3 className="songs-heading">
-        {t("modules.computingExplored")} ({explored.length}/{cards.length})
-      </h3>
-
-      <div className="computing-grid">
-        {cards.map((card) => {
-          const wasExplored = explored.includes(card.id);
-          return (
-            <button
-              key={card.id}
-              type="button"
-              className={"computing-term-btn" + (wasExplored ? " done" : "")}
-              onClick={() => handleOpen(card)}
-            >
-              <span className="computing-term-emoji">{card.emoji}</span>
-              {card.term}
-            </button>
-          );
-        })}
+      <div className="phonics-tabs">
+        <button type="button" className={"phonics-tab" + (tab === "concepts" ? " selected" : "")} onClick={() => setTab("concepts")}>
+          <span className="phonics-tab-inner">🧠 {t("modules.computingTabConcepts")}</span>
+        </button>
+        <button type="button" className={"phonics-tab" + (tab === "safety" ? " selected" : "")} onClick={() => setTab("safety")}>
+          <span className="phonics-tab-inner">🕵️ {t("modules.computingTabSafety")}</span>
+        </button>
+        <button type="button" className={"phonics-tab" + (tab === "school" ? " selected" : "")} onClick={() => setTab("school")}>
+          <span className="phonics-tab-inner">🏫 {t("modules.computingTabInternetSchool")}</span>
+        </button>
+        <button type="button" className={"phonics-tab" + (tab === "ailab" ? " selected" : "")} onClick={() => setTab("ailab")}>
+          <span className="phonics-tab-inner">🤖 {t("modules.computingTabAiLab")}</span>
+        </button>
       </div>
 
-      {cards
-        .filter((card) => card.id === openId)
-        .map((card) => (
-          <div key={card.id} className={"game-card computing-card done"}>
-            <div className="mission-badge computing-topic-badge">
-              {TOPIC_ICONS[card.topic] || "💻"} {card.topic}
-            </div>
-            <div className="game-emoji">{card.emoji}</div>
-            <p className="mission-text">{card.term}</p>
-            <div className="computing-explanation">
-              <p className="game-result">{card.explanation}</p>
-              <SpeakButton text={card.explanation} langCode={pair.mother} />
-            </div>
-            <div>
-              <button type="button" className="big-btn" onClick={() => handleOpen(card)}>
-                ✅
-              </button>
-            </div>
+      {tab === "concepts" && (
+        <>
+          <h3 className="songs-heading">
+            {t("modules.computingExplored")} ({explored.length}/{cards.length})
+          </h3>
+
+          <div className="computing-grid">
+            {cards.map((card) => {
+              const wasExplored = explored.includes(card.id);
+              return (
+                <button
+                  key={card.id}
+                  type="button"
+                  className={"computing-term-btn" + (wasExplored ? " done" : "")}
+                  onClick={() => handleOpen(card)}
+                >
+                  <span className="computing-term-emoji">{card.emoji}</span>
+                  {card.term}
+                </button>
+              );
+            })}
           </div>
-        ))}
 
-      <h2 className="songs-heading">🕵️ {t("modules.computingSafetyGame")}</h2>
-      <div className="help-btn-corner">
-        <HelpButton text={t("modules.computingHelpSafety")} langCode={pair.mother} />
-      </div>
-
-      {showAdvisory && (
-        <AgeAdvisory
-          langCode={pair.mother}
-          onAccept={() => {
-            setSafetyConfirmed(true);
-            setShowAdvisory(false);
-          }}
-          onDecline={() => setShowAdvisory(false)}
-        />
+          {cards
+            .filter((card) => card.id === openId)
+            .map((card) => (
+              <div key={card.id} className={"game-card computing-card done"}>
+                <div className="mission-badge computing-topic-badge">
+                  {TOPIC_ICONS[card.topic] || "💻"} {card.topic}
+                </div>
+                <div className="game-emoji">{card.emoji}</div>
+                <p className="mission-text">{card.term}</p>
+                <div className="computing-explanation">
+                  <p className="game-result">{card.explanation}</p>
+                  <SpeakButton text={card.explanation} langCode={pair.mother} />
+                </div>
+                <div>
+                  <button type="button" className="big-btn" onClick={() => handleOpen(card)}>
+                    ✅
+                  </button>
+                </div>
+              </div>
+            ))}
+        </>
       )}
 
-      {tier === 1 && !safetyConfirmed ? (
-        <div className="game-card">
-          <div className="game-emoji">🕵️</div>
-          <button type="button" className="big-btn" onClick={() => setShowAdvisory(true)}>
-            ▶️ {t("modules.computingSafetyGame")}
-          </button>
-        </div>
-      ) : !finished ? (
-        <div className="game-card">
-          <div className="game-progress">
-            {step + 1} / {rounds.length} · ⭐ {score}
+      {tab === "safety" && (
+        <>
+          <div className="help-btn-corner">
+            <HelpButton text={t("modules.computingHelpSafety")} langCode={pair.mother} />
           </div>
-          <div className="game-emoji">{round.emoji}</div>
-          <p className="page-intro">
-            {round.scenario}
-            <SpeakButton text={round.scenario} langCode={pair.mother} />
-          </p>
 
-          {!answered ? (
-            <div className="game-options">
-              <button type="button" className="big-btn game-option" onClick={() => handleAnswer(true)}>
-                {t("modules.computingSafe")}
+          {showAdvisory && (
+            <AgeAdvisory
+              langCode={pair.mother}
+              onAccept={() => {
+                setSafetyConfirmed(true);
+                setShowAdvisory(false);
+              }}
+              onDecline={() => setShowAdvisory(false)}
+            />
+          )}
+
+          {tier === 1 && !safetyConfirmed ? (
+            <div className="game-card">
+              <div className="game-emoji">🕵️</div>
+              <button type="button" className="big-btn" onClick={() => setShowAdvisory(true)}>
+                ▶️ {t("modules.computingSafetyGame")}
               </button>
-              <button type="button" className="big-btn game-option" onClick={() => handleAnswer(false)}>
-                {t("modules.computingAskAdult")}
-              </button>
+            </div>
+          ) : !finished ? (
+            <div className="game-card">
+              <div className="game-progress">
+                {step + 1} / {rounds.length} · ⭐ {score}
+              </div>
+              <div className="game-emoji">{round.emoji}</div>
+              <p className="page-intro">
+                {round.scenario}
+                <SpeakButton text={round.scenario} langCode={pair.mother} />
+              </p>
+
+              {!answered ? (
+                <div className="game-options">
+                  <button type="button" className="big-btn game-option" onClick={() => handleAnswer(true)}>
+                    {t("modules.computingSafe")}
+                  </button>
+                  <button type="button" className="big-btn game-option" onClick={() => handleAnswer(false)}>
+                    {t("modules.computingAskAdult")}
+                  </button>
+                </div>
+              ) : (
+                <div className="game-card">
+                  <p className="game-result">
+                    {answered.correct ? "⭐" : "🤔"} {round.explanation}
+                    <SpeakButton text={round.explanation} langCode={pair.mother} />
+                  </p>
+                  <button type="button" className="big-btn" onClick={handleNext}>
+                    ➡️
+                  </button>
+                </div>
+              )}
             </div>
           ) : (
             <div className="game-card">
+              <div className="game-emoji">🏆</div>
               <p className="game-result">
-                {answered.correct ? "⭐" : "🤔"} {round.explanation}
-                <SpeakButton text={round.explanation} langCode={pair.mother} />
+                {t("modules.computingScore")}: {score} / {rounds.length}
               </p>
-              <button type="button" className="big-btn" onClick={handleNext}>
-                ➡️
+              <button type="button" className="big-btn" onClick={handleRestart}>
+                {t("modules.computingPlayAgain")} 🔁
               </button>
             </div>
           )}
-        </div>
-      ) : (
-        <div className="game-card">
-          <div className="game-emoji">🏆</div>
-          <p className="game-result">
-            {t("modules.computingScore")}: {score} / {rounds.length}
+        </>
+      )}
+
+      {tab === "school" && (
+        <>
+          <p className="page-intro">
+            {t("modules.internetSchoolIntro")}
+            <SpeakButton text={t("modules.internetSchoolIntro")} langCode={pair.mother} />
           </p>
-          <button type="button" className="big-btn" onClick={handleRestart}>
-            {t("modules.computingPlayAgain")} 🔁
-          </button>
-        </div>
+          <div className="help-btn-corner">
+            <HelpButton text={t("modules.internetSchoolHelp")} langCode={pair.mother} />
+          </div>
+
+          {showSchoolAdvisory && (
+            <AgeAdvisory
+              langCode={pair.mother}
+              onAccept={() => {
+                setSchoolConfirmed(true);
+                setShowSchoolAdvisory(false);
+              }}
+              onDecline={() => setShowSchoolAdvisory(false)}
+            />
+          )}
+
+          {tier === 1 && !schoolConfirmed ? (
+            <div className="game-card">
+              <div className="game-emoji">🏫</div>
+              <button type="button" className="big-btn" onClick={() => setShowSchoolAdvisory(true)}>
+                ▶️ {t("modules.internetSchoolTitle")}
+              </button>
+            </div>
+          ) : schoolRounds.length === 0 ? null : !schoolFinished ? (
+            <div className="game-card">
+              <div className="game-progress">
+                {schoolStep + 1} / {schoolRounds.length} · ⭐ {schoolScore}
+              </div>
+              <div className="game-emoji">{schoolRound.emoji}</div>
+              <p className="page-intro">
+                {schoolRound.scenario}
+                <SpeakButton text={schoolRound.scenario} langCode={pair.mother} />
+              </p>
+
+              {!schoolAnswered ? (
+                <>
+                  <p className="mission-text">{t("modules.internetSchoolQuestion")}</p>
+                  <div className="game-options">
+                    {schoolRound.options.map((opt, i) => (
+                      <button
+                        key={i}
+                        type="button"
+                        className="big-btn game-option"
+                        onClick={() => handleSchoolAnswer(opt)}
+                      >
+                        {opt.text}
+                      </button>
+                    ))}
+                  </div>
+                </>
+              ) : (
+                <div className="game-card">
+                  <p className="game-result">
+                    {schoolAnswered.correct ? "⭐" : "🤔"} {schoolAnswered.feedback}
+                    <SpeakButton text={schoolAnswered.feedback} langCode={pair.mother} />
+                  </p>
+                  <button type="button" className="big-btn" onClick={handleSchoolNext}>
+                    ➡️ {t("modules.internetSchoolNext")}
+                  </button>
+                </div>
+              )}
+            </div>
+          ) : (
+            <div className="game-card">
+              <div className="game-emoji">🏆</div>
+              <p className="game-result">{t("modules.internetSchoolDone")}</p>
+              <p className="game-result">
+                {t("modules.internetSchoolScore")}: {schoolScore} / {schoolRounds.length}
+              </p>
+              <button type="button" className="big-btn" onClick={handleRestart}>
+                {t("modules.internetSchoolRestart")} 🔁
+              </button>
+            </div>
+          )}
+        </>
+      )}
+
+      {tab === "ailab" && (
+        <>
+          <p className="page-intro">
+            {aiLabText.intro}
+            <SpeakButton text={aiLabText.intro} langCode={pair.mother} />
+          </p>
+          <div className="help-btn-corner">
+            <HelpButton text={t("modules.aiLabHelp")} langCode={pair.mother} />
+          </div>
+
+          {(labPhase === "train1" || labPhase === "train2") && (
+            <div className="game-card">
+              <p className="mission-text">
+                {t(labPhase === "train1" ? "modules.aiLabTrainTitle" : "modules.aiLabTrainTitle2")}
+              </p>
+              <p className="page-intro">
+                {labPhase === "train1" ? aiLabText.trainInstructions : aiLabText.badDataIntro}
+              </p>
+              <div className="game-progress">
+                {labTrainIdx + 1} / {labRound.length}
+              </div>
+              <div className="game-emoji">{labRound[labTrainIdx].emoji}</div>
+              {labRound[labTrainIdx].forcedWrong ? (
+                <p className="game-result">
+                  {aiLabText.mislabeledNote}: {labRound[labTrainIdx].forcedLabel === "circle" ? aiLabText.circleLabel : aiLabText.squareLabel}
+                </p>
+              ) : (
+                <div className="game-options">
+                  <button type="button" className="big-btn game-option" onClick={() => handleLabTag("circle")}>
+                    ⭕ {aiLabText.circleLabel}
+                  </button>
+                  <button type="button" className="big-btn game-option" onClick={() => handleLabTag("square")}>
+                    🔲 {aiLabText.squareLabel}
+                  </button>
+                </div>
+              )}
+              {labRound[labTrainIdx].forcedWrong && (
+                <button
+                  type="button"
+                  className="big-btn"
+                  onClick={() => {
+                    if (labTrainIdx + 1 < labRound.length) setLabTrainIdx(labTrainIdx + 1);
+                    else runLabTest(labTags, labRound);
+                  }}
+                >
+                  ➡️ {t("modules.aiLabContinue")}
+                </button>
+              )}
+            </div>
+          )}
+
+          {(labPhase === "test1" || labPhase === "test2") && (
+            <div className="game-card">
+              <p className="mission-text">{t("modules.aiLabTestTitle")}</p>
+              <div className="computing-grid">
+                {labTestResults.map((r) => (
+                  <div key={r.id} className={"computing-term-btn done"}>
+                    <span className="computing-term-emoji">{r.emoji}</span>
+                    {r.correct ? "✅" : "❌"}
+                  </div>
+                ))}
+              </div>
+              <p className="game-result">
+                🤖 {t("modules.aiLabAccuracy")}: {labAccuracyPct}%
+              </p>
+              <p className="page-intro">
+                {labPhase === "test1" ? aiLabText.goodDataExplain : aiLabText.badDataExplain}
+                <SpeakButton text={labPhase === "test1" ? aiLabText.goodDataExplain : aiLabText.badDataExplain} langCode={pair.mother} />
+              </p>
+              {labPhase === "test1" ? (
+                <button type="button" className="big-btn" onClick={startRound2}>
+                  ➡️ {t("modules.aiLabContinue")}
+                </button>
+              ) : (
+                <>
+                  <p className="page-intro">
+                    {aiLabText.conclusion}
+                    <SpeakButton text={aiLabText.conclusion} langCode={pair.mother} />
+                  </p>
+                  <button type="button" className="big-btn" onClick={handleLabRestart}>
+                    {t("modules.aiLabRestart")} 🔁
+                  </button>
+                </>
+              )}
+            </div>
+          )}
+        </>
       )}
     </div>
   );

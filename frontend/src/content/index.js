@@ -178,6 +178,22 @@ import computingSafetyZh from "./computingSafety.zh.json";
 import computingSafetyEs from "./computingSafety.es.json";
 import computingSafetyIt from "./computingSafety.it.json";
 
+import internetSafetyPt from "./internetSafety.pt.json";
+import internetSafetyEn from "./internetSafety.en.json";
+import internetSafetyDe from "./internetSafety.de.json";
+import internetSafetyFr from "./internetSafety.fr.json";
+import internetSafetyZh from "./internetSafety.zh.json";
+import internetSafetyEs from "./internetSafety.es.json";
+import internetSafetyIt from "./internetSafety.it.json";
+
+import aiLabPt from "./aiLab.pt.json";
+import aiLabEn from "./aiLab.en.json";
+import aiLabDe from "./aiLab.de.json";
+import aiLabFr from "./aiLab.fr.json";
+import aiLabZh from "./aiLab.zh.json";
+import aiLabEs from "./aiLab.es.json";
+import aiLabIt from "./aiLab.it.json";
+
 import lemonadeStandPt from "./lemonadeStand.pt.json";
 import lemonadeStandEn from "./lemonadeStand.en.json";
 import lemonadeStandDe from "./lemonadeStand.de.json";
@@ -245,6 +261,8 @@ const SCIENCE = { pt: sciencePt, en: scienceEn, de: scienceDe, fr: scienceFr, zh
 const LIFE_SKILLS = { pt: lifeSkillsPt, en: lifeSkillsEn, de: lifeSkillsDe, fr: lifeSkillsFr, zh: lifeSkillsZh, es: lifeSkillsEs, it: lifeSkillsIt };
 const COMPUTING = { pt: computingPt, en: computingEn, de: computingDe, fr: computingFr, zh: computingZh, es: computingEs, it: computingIt };
 const COMPUTING_SAFETY = { pt: computingSafetyPt, en: computingSafetyEn, de: computingSafetyDe, fr: computingSafetyFr, zh: computingSafetyZh, es: computingSafetyEs, it: computingSafetyIt };
+const INTERNET_SAFETY = { pt: internetSafetyPt, en: internetSafetyEn, de: internetSafetyDe, fr: internetSafetyFr, zh: internetSafetyZh, es: internetSafetyEs, it: internetSafetyIt };
+const AI_LAB = { pt: aiLabPt, en: aiLabEn, de: aiLabDe, fr: aiLabFr, zh: aiLabZh, es: aiLabEs, it: aiLabIt };
 const LEMONADE_STAND = { pt: lemonadeStandPt, en: lemonadeStandEn, de: lemonadeStandDe, fr: lemonadeStandFr, zh: lemonadeStandZh, es: lemonadeStandEs, it: lemonadeStandIt };
 const SHOPPING = { pt: shoppingPt, en: shoppingEn, de: shoppingDe, fr: shoppingFr, zh: shoppingZh, es: shoppingEs, it: shoppingIt };
 const AD_LITERACY = { pt: adLiteracyPt, en: adLiteracyEn, de: adLiteracyDe, fr: adLiteracyFr, zh: adLiteracyZh, es: adLiteracyEs, it: adLiteracyIt };
@@ -333,6 +351,14 @@ export function getComputing(langCode) {
 
 export function getComputingSafety(langCode) {
   return COMPUTING_SAFETY[langCode] || [];
+}
+
+export function getInternetSafety(langCode) {
+  return INTERNET_SAFETY[langCode] || INTERNET_SAFETY.en || [];
+}
+
+export function getAiLab(langCode) {
+  return AI_LAB[langCode] || AI_LAB.en || {};
 }
 
 export function getLemonadeStand(langCode) {

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "is1",
+    "theme": "passwords",
+    "emoji": "🔑",
+    "scenario": "Tu amigo del colegio te pide tu contraseña del juego para poder jugar juntos.",
+    "options": [
+      { "text": "Le doy mi contraseña, es mi amigo.", "correct": false, "feedback": "Tu contraseña es un secreto solo para ti (o tus padres) — ni siquiera tus mejores amigos deben conocerla." },
+      { "text": "Le digo que no puedo compartir mi contraseña, pero que podemos jugar juntos de otra forma.", "correct": true, "feedback": "¡Muy bien! Una contraseña protege tu cuenta. Siempre puedes encontrar otra manera de jugar juntos." }
+    ]
+  },
+  {
+    "id": "is2",
+    "theme": "passwords",
+    "emoji": "🔒",
+    "scenario": "Estás creando una nueva contraseña para una app. ¿Cuál eliges?",
+    "options": [
+      { "text": "123456", "correct": false, "feedback": "¡Esa es muy fácil de adivinar! Es mejor elegir una contraseña más difícil con ayuda de un adulto." },
+      { "text": "Una contraseña larga con letras y números, creada junto con un adulto.", "correct": true, "feedback": "¡Excelente! Las contraseñas largas y difíciles de adivinar mantienen tu cuenta más segura." }
+    ]
+  },
+  {
+    "id": "is3",
+    "theme": "privacy",
+    "emoji": "📷",
+    "scenario": "Una app nueva pide usar tu cámara y saber dónde estás. ¿Qué haces?",
+    "options": [
+      { "text": "Acepto todo rápido para poder jugar enseguida.", "correct": false, "feedback": "¡Espera! Pide a un adulto que revise la solicitud contigo antes de aceptar — no todas las apps necesitan todo eso." },
+      { "text": "Llamo a un adulto para decidir juntos qué aceptar.", "correct": true, "feedback": "¡Muy bien hecho! Un adulto puede ayudarte a entender si es seguro darle esa información a la app." }
+    ]
+  },
+  {
+    "id": "is4",
+    "theme": "photos",
+    "emoji": "🏫",
+    "scenario": "Tomaste una foto divertida en el recreo y quieres publicarla mostrando claramente el nombre de tu colegio.",
+    "options": [
+      { "text": "La publico enseguida, es solo una foto divertida.", "correct": false, "feedback": "Las fotos que muestran tu colegio o tu calle pueden revelar dónde estás. Siempre consulta con un adulto antes de publicar." },
+      { "text": "Primero le muestro la foto a un adulto y le pregunto si es seguro publicarla.", "correct": true, "feedback": "¡Buena idea! Un adulto puede ayudarte a decidir qué es seguro compartir y qué es mejor guardar solo para ti." }
+    ]
+  },
+  {
+    "id": "is5",
+    "theme": "photos",
+    "emoji": "🙈",
+    "scenario": "Un compañero de clase te pide que le envíes una foto tuya vergonzosa, solo entre los dos.",
+    "options": [
+      { "text": "Se la envío, es solo una broma entre nosotros.", "correct": false, "feedback": "Incluso entre amigos, una foto puede terminar enviándose a otras personas sin que tú lo quieras. Es mejor no enviarla y contárselo a un adulto si insiste." },
+      { "text": "Le digo que prefiero no enviarla y se lo cuento a un adulto si sigue insistiendo.", "correct": true, "feedback": "¡Muy bien hecho! Nunca tienes que enviar fotos, ni siquiera a tus amigos. Contárselo a un adulto siempre es una buena idea." }
+    ]
+  },
+  {
+    "id": "is6",
+    "theme": "location",
+    "emoji": "📍",
+    "scenario": "Un juego pregunta si puede mostrar tu ubicación a todos los demás jugadores.",
+    "options": [
+      { "text": "Digo que sí, así mis amigos pueden ver dónde estoy.", "correct": false, "feedback": "Compartir tu ubicación con desconocidos puede ser arriesgado. Pregunta siempre a un adulto antes de activar eso." },
+      { "text": "Pido ayuda a un adulto antes de decidir.", "correct": true, "feedback": "¡Muy buena elección! Tu ubicación es información personal importante — un adulto puede ayudarte a decidir con seguridad." }
+    ]
+  },
+  {
+    "id": "is7",
+    "theme": "strangers",
+    "emoji": "🎮",
+    "scenario": "Alguien que conociste en un juego te pregunta dónde vives. ¿Qué haces?",
+    "options": [
+      { "text": "Le digo mi calle, parece buena persona.", "correct": false, "feedback": "¡Pide ayuda a un adulto! Nunca compartas tu dirección con personas que solo conoces en línea, aunque parezcan simpáticas." },
+      { "text": "No respondo y le cuento a un adulto lo que pasó.", "correct": true, "feedback": "¡Muy bien hecho! Siempre es seguro no responder ese tipo de preguntas y contárselo a alguien de confianza." }
+    ]
+  },
+  {
+    "id": "is8",
+    "theme": "cyberbullying",
+    "emoji": "💬",
+    "scenario": "Alguien te envía mensajes desagradables en un chat grupal.",
+    "options": [
+      { "text": "Le respondo con mensajes desagradables para que pare.", "correct": false, "feedback": "Responder de la misma manera suele empeorar las cosas. Es mejor guardar los mensajes y mostrárselos a un adulto." },
+      { "text": "Guardo los mensajes y se lo cuento a un adulto de confianza.", "correct": true, "feedback": "¡Excelente actitud! Contárselo a un adulto ayuda a resolver la situación, y nunca es culpa tuya." }
+    ]
+  },
+  {
+    "id": "is9",
+    "theme": "cyberbullying",
+    "emoji": "😟",
+    "scenario": "Ves que otros se burlan de un compañero de clase en un juego en línea. No se trata de ti, pero lo estás viendo.",
+    "options": [
+      { "text": "Solo miro, no es conmigo.", "correct": false, "feedback": "¡Tú puedes ayudar! Contarle a un adulto lo que viste puede marcar una gran diferencia para la persona que está sufriendo." },
+      { "text": "Le cuento a un adulto lo que le vi pasar a mi compañero.", "correct": true, "feedback": "¡Muy bien hecho! Ayudar a alguien que lo necesita, aunque sea solo contándoselo a un adulto, es algo valiente y bondadoso." }
+    ]
+  },
+  {
+    "id": "is10",
+    "theme": "scams",
+    "emoji": "🎁",
+    "scenario": "Aparece un mensaje parpadeante que dice: «¡Felicidades! Ganaste un premio, haz clic aquí ahora».",
+    "options": [
+      { "text": "Hago clic enseguida, ¡no quiero perder el premio!", "correct": false, "feedback": "Las cosas que parecen demasiado buenas para ser verdad suelen ser trampas. Los premios de verdad nunca te piden hacer clic rápido y en secreto." },
+      { "text": "Le pregunto a un adulto antes de hacer clic en cualquier cosa.", "correct": true, "feedback": "¡Muy sensato! Preguntar antes de hacer clic te protege de trampas ocultas y virus." }
+    ]
+  },
+  {
+    "id": "is11",
+    "theme": "ads",
+    "emoji": "📢",
+    "scenario": "Mientras juegas, aparece un botón grande que dice «JUGAR AHORA» que no es parte del juego de verdad, pero se ve muy parecido.",
+    "options": [
+      { "text": "Hago clic, se parece al botón del juego.", "correct": false, "feedback": "Muchos anuncios copian el aspecto de los botones del juego para engañarte. Mira con cuidado antes de hacer clic, o pide ayuda a un adulto." },
+      { "text": "Me detengo y le pregunto a un adulto si es un anuncio.", "correct": true, "feedback": "¡Bien! Los anuncios intentan parecer parte del juego. Consultar con un adulto evita clics que no querías hacer." }
+    ]
+  },
+  {
+    "id": "is12",
+    "theme": "deepfakes",
+    "emoji": "🎭",
+    "scenario": "Ves un video extraño donde una persona famosa parece decir algo que no tiene ningún sentido.",
+    "options": [
+      { "text": "Lo creo y lo comparto con mis amigos enseguida.", "correct": false, "feedback": "Hoy en día existen videos hechos por computadora que parecen reales pero son inventados. Antes de creerlo, pregúntale a un adulto." },
+      { "text": "Le pregunto a un adulto si ese video podría ser real de verdad.", "correct": true, "feedback": "¡Muy bien hecho! No todo lo que ves en línea es real — algunos videos están hechos por computadoras. Consultar con un adulto es lo que haría un buen detective." }
+    ]
+  }
+]

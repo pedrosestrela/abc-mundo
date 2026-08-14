@@ -2,13 +2,17 @@ import React, { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 // A simple in-browser freehand drawing canvas for the "Atelier da
-// Imaginação" art module. No save/export: this is for in-the-moment
-// creative play, not persisted artwork (there's no backend image storage).
+// Imaginação" art module. By default there's no save/export: it's for
+// in-the-moment creative play, not persisted artwork (there's no backend
+// image storage). Callers that DO want to keep the drawing (e.g. the Nature
+// Diary / Moon Diary observation logs) can pass an `onSave` callback and an
+// optional `saveLabel` — this renders an extra button that exports the
+// canvas as a local data URL (never uploaded anywhere) via toDataURL().
 
 const COLORS = ["#2d2d2d", "#e63946", "#f4a300", "#ffd93d", "#4caf50", "#3d87ff", "#8b5cf6", "#ff6fae"];
 const SIZES = { small: 3, medium: 8, large: 16 };
 
-export default function DrawingCanvas() {
+export default function DrawingCanvas({ onSave, saveLabel }) {
   const { t } = useTranslation();
   const canvasRef = useRef(null);
   const drawingRef = useRef(false);
@@ -72,6 +76,12 @@ export default function DrawingCanvas() {
     ctx.fillRect(0, 0, canvas.width / dpr, canvas.height / dpr);
   }
 
+  function handleSave() {
+    const canvas = canvasRef.current;
+    if (!canvas || !onSave) return;
+    onSave(canvas.toDataURL("image/png"));
+  }
+
   return (
     <div className="drawing-canvas-wrap">
       <div className="drawing-toolbar">
@@ -102,6 +112,11 @@ export default function DrawingCanvas() {
         <button type="button" className="drawing-clear-btn" onClick={handleClear}>
           🧹 {t("modules.artClear")}
         </button>
+        {onSave && (
+          <button type="button" className="drawing-clear-btn" onClick={handleSave}>
+            💾 {saveLabel || t("modules.artClear")}
+          </button>
+        )}
       </div>
       <canvas
         ref={canvasRef}

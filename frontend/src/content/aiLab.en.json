@@ -1,0 +1,12 @@
+{
+  "intro": "You're going to teach a robot to tell circles from squares! Show it some shapes and tell it what they are.",
+  "trainInstructions": "Tap the right name for each shape to teach the robot.",
+  "goodDataIntro": "The robot learned from your answers. Let's see if it gets new shapes right!",
+  "goodDataExplain": "The robot learned well because you gave it correct examples. Good examples make the robot smart!",
+  "badDataIntro": "Now let's train another robot. This time, a distracted helper already labeled a few shapes before you got here — and mixed some up by accident!",
+  "badDataExplain": "Did you notice? Some of the training shapes were mixed up (not your fault!). That's why the robot got confused and made more mistakes this time.",
+  "conclusion": "This happens with every robot and computer that learns: if the examples we give them are wrong, they learn the wrong things. Good examples make smart robots!",
+  "circleLabel": "Circle",
+  "squareLabel": "Square",
+  "mislabeledNote": "🤖 already labeled by a helper"
+}
