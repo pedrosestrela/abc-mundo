@@ -1,2 +1,8 @@
 fastapi
 uvicorn[standard]
+
+# Test-only dependencies (used by test_main.py via pytest + FastAPI TestClient).
+# Kept in this file rather than a separate requirements-dev.txt to keep the
+# project setup simple; httpx is required by fastapi.testclient.TestClient.
+pytest
+httpx
