@@ -173,5 +173,269 @@
     "emoji": "💻",
     "isFact": false,
     "explanation": "Das ist ein Mythos und ein Scherz! Viel Zeit vor Bildschirmen kann die Augen ermüden, aber ändert nicht ihre Form. Trotzdem ist es wichtig, Pausen zu machen."
+  },
+  {
+    "id": "d26",
+    "type": "observation",
+    "emoji": "👣",
+    "title": "Der Fall der Fußspuren",
+    "scene": "Im Schulflur wurden schlammige Fußspuren bis zum Klassenzimmer gefunden, und das Fenster des Klassenzimmers stand offen.",
+    "clues": [
+      {
+        "id": "c1",
+        "emoji": "👟",
+        "text": "Große schlammige Fußspuren auf dem Boden"
+      },
+      {
+        "id": "c2",
+        "emoji": "🪟",
+        "text": "Das Fenster war offen"
+      },
+      {
+        "id": "c3",
+        "emoji": "🎒",
+        "text": "Ein blauer Rucksack neben der Tür"
+      }
+    ],
+    "question": "Welcher Hinweis zeigt den Weg von jemandem, der den Boden schmutzig gemacht hat?",
+    "correctClueId": "c1",
+    "explanation": "Die Fußspuren sind der direkteste Hinweis: Sie zeigen genau den Weg von jemandem mit schmutzigen Schuhen. Das offene Fenster oder der Rucksack haben vielleicht nichts mit dem Fall zu tun."
+  },
+  {
+    "id": "d27",
+    "type": "observation",
+    "emoji": "🥀",
+    "title": "Das Rätsel der welken Pflanze",
+    "scene": "Die Pflanze im Klassenzimmer war nach dem Wochenende welk, obwohl sie am Freitag gegossen wurde, bevor alle gingen.",
+    "clues": [
+      {
+        "id": "c1",
+        "emoji": "☀️",
+        "text": "Der Topf stand nahe am Fenster, in starker Sonne"
+      },
+      {
+        "id": "c2",
+        "emoji": "💧",
+        "text": "Die Erde war trocken und rissig"
+      },
+      {
+        "id": "c3",
+        "emoji": "🪴",
+        "text": "Der Topf ist aus rotem Ton"
+      }
+    ],
+    "question": "Welcher Hinweis erklärt am besten, warum die Pflanze verwelkt ist?",
+    "correctClueId": "c2",
+    "explanation": "Die trockene, rissige Erde zeigt, dass das Wasser bei der Wochenendhitze schnell verdunstet ist. Der Wassermangel, nicht die Farbe des Topfes, ließ die Pflanze verwelken."
+  },
+  {
+    "id": "d28",
+    "type": "observation",
+    "emoji": "🍦",
+    "title": "Das trügerische Foto",
+    "scene": "Ein Foto zeigt die Hand eines Kindes, das ein Eis hält, das riesig aussieht, größer als sein Kopf.",
+    "clues": [
+      {
+        "id": "c1",
+        "emoji": "📷",
+        "text": "Das Foto wurde sehr nah am Eis aufgenommen"
+      },
+      {
+        "id": "c2",
+        "emoji": "🧒",
+        "text": "Man sieht den Rest des Körpers des Kindes auf dem Foto nicht"
+      },
+      {
+        "id": "c3",
+        "emoji": "🍨",
+        "text": "Das Eis hat mehrere bunte Kugeln"
+      }
+    ],
+    "question": "Welcher Hinweis erklärt, warum das Eis so riesig aussieht?",
+    "correctClueId": "c1",
+    "explanation": "Wenn etwas sehr nah an der Kamera ist, sieht es größer aus, als es wirklich ist. Fotos zeigen nur einen Teil der Wirklichkeit — es lohnt sich immer, darüber nachzudenken, was außerhalb des Bildes liegt."
+  },
+  {
+    "id": "d29",
+    "type": "deduction",
+    "emoji": "🎂",
+    "title": "Wer Hat den Kuchen Gegessen?",
+    "setup": "Der Schokoladenkuchen ist aus der Küche verschwunden! Es gibt drei Verdächtige.",
+    "suspects": [
+      {
+        "id": "tomas",
+        "name": "Tomas",
+        "emoji": "🧒"
+      },
+      {
+        "id": "ines",
+        "name": "Ines",
+        "emoji": "👧"
+      },
+      {
+        "id": "bobi",
+        "name": "Bobi",
+        "emoji": "🐶"
+      }
+    ],
+    "statements": [
+      "Tomas spielte den ganzen Nachmittag im Garten Ball.",
+      "Ines hatte Schokolade um den Mund, als Mama ankam.",
+      "Bobi schlief den ganzen Tag in seinem Körbchen."
+    ],
+    "question": "Wer hat den Kuchen gegessen?",
+    "solutionId": "ines",
+    "explanation": "Tomas war im Garten und Bobi hat geschlafen — keiner von beiden kann den Kuchen gegessen haben. Ines hatte Schokolade am Mund, ein klarer Hinweis, dass sie es war."
+  },
+  {
+    "id": "d30",
+    "type": "deduction",
+    "emoji": "🏺",
+    "title": "Wer Hat die Vase Zerbrochen?",
+    "setup": "Die Vase im Wohnzimmer zerbrach, während die Eltern bei der Arbeit waren. Es gibt drei Verdächtige.",
+    "suspects": [
+      {
+        "id": "whiskers",
+        "name": "Whiskers",
+        "emoji": "🐱"
+      },
+      {
+        "id": "maria",
+        "name": "Maria",
+        "emoji": "👧"
+      },
+      {
+        "id": "pedro",
+        "name": "Pedro",
+        "emoji": "🧒"
+      }
+    ],
+    "statements": [
+      "Die Katze Whiskers war den ganzen Tag draußen eingeschlossen.",
+      "Maria war bis 17 Uhr in der Schule, als die Vase noch ganz war.",
+      "Pedro war allein zu Hause und spielte im Wohnzimmer Ball."
+    ],
+    "question": "Wer hat die Vase zerbrochen?",
+    "solutionId": "pedro",
+    "explanation": "Whiskers war draußen eingeschlossen und Maria war in der Schule, als die Vase noch ganz war — keiner von beiden kann es gewesen sein. Nur Pedro war zu Hause und spielte im Wohnzimmer Ball."
+  },
+  {
+    "id": "d31",
+    "type": "deduction",
+    "emoji": "🍪",
+    "title": "Wer Hat die Kekse Gegessen?",
+    "setup": "Die Schokoladenkekse sind aus dem Glas verschwunden. Es gibt drei Verdächtige.",
+    "suspects": [
+      {
+        "id": "avo",
+        "name": "Oma",
+        "emoji": "👵"
+      },
+      {
+        "id": "bebe",
+        "name": "Baby",
+        "emoji": "👶"
+      },
+      {
+        "id": "irmao",
+        "name": "Großer Bruder",
+        "emoji": "🧑"
+      }
+    ],
+    "statements": [
+      "Oma mag keine Schokoladenkekse und isst sie nie.",
+      "Das Baby hat noch keine Zähne, um harte Kekse zu essen.",
+      "Der große Bruder hatte Keksbrösel in der Tasche."
+    ],
+    "question": "Wer hat die Kekse gegessen?",
+    "solutionId": "irmao",
+    "explanation": "Oma mag diese Kekse nicht und das Baby kann sie nicht kauen — keiner von beiden kann es gewesen sein. Die Krümel in der Tasche des großen Bruders sind der verräterische Hinweis."
+  },
+  {
+    "id": "d32",
+    "type": "sources",
+    "emoji": "🍫",
+    "title": "Ist Das Wahr? — Die Zauberschokolade",
+    "claim": "Ein Mitschüler sagte, wenn man jeden Tag Schokolade isst, bekommt man Superkräfte.",
+    "sourceA": {
+      "label": "Ein Freund aus der Schule",
+      "text": "Sagte, er habe es von einem anderen Freund gehört, weiß aber nicht, wo das bestätigt wurde.",
+      "credible": false
+    },
+    "sourceB": {
+      "label": "Ein Wissenschaftsbuch über den menschlichen Körper",
+      "text": "Erklärt, wie Ernährung die Gesundheit beeinflusst, spricht aber nie von Superkräften.",
+      "credible": true
+    },
+    "correctSourceId": "b",
+    "explanation": "Ein Wissenschaftsbuch wird von Experten geschrieben und sorgfältig geprüft, deshalb ist es zuverlässiger als ein Gerücht unter Freunden. Wenn etwas zu gut klingt, um wahr zu sein, lohnt es sich, eine seriöse Quelle zu prüfen."
+  },
+  {
+    "id": "d33",
+    "type": "sources",
+    "emoji": "📅",
+    "title": "Ist Das Wahr? — Der Geheime Feiertag",
+    "claim": "Eine Nachricht im Internet sagt, morgen sei wegen eines geheimen Feiertags keine Schule.",
+    "sourceA": {
+      "label": "Eine von Fremden in einer Gruppe weitergeleitete Nachricht",
+      "text": "Niemand weiß, wer sie zuerst geschrieben hat oder woher die Information kommt.",
+      "credible": false
+    },
+    "sourceB": {
+      "label": "Die offizielle Website der Schule",
+      "text": "Veröffentlicht immer den offiziellen, bestätigten Schulkalender.",
+      "credible": true
+    },
+    "correctSourceId": "b",
+    "explanation": "Die offizielle Website der Schule ist die Quelle, die den Kalender wirklich festlegt — sie ist immer zuverlässiger als eine Nachricht, die durch viele Hände ging und sich unterwegs verändert haben könnte."
+  },
+  {
+    "id": "d34",
+    "type": "sources",
+    "emoji": "🦖",
+    "title": "Ist Das Wahr? — Der Lebende Dinosaurier",
+    "claim": "Jemand in sozialen Medien sagt, er habe einen lebenden Dinosaurier in einem Wald gesehen.",
+    "sourceA": {
+      "label": "Ein Video ohne Erklärung, wo es gedreht wurde",
+      "text": "Zeigt keine Beweise oder Zusammenhang zu Ort oder Datum.",
+      "credible": false
+    },
+    "sourceB": {
+      "label": "Ein Naturkundemuseum",
+      "text": "Erklärt, dass nicht-avische Dinosaurier vor Millionen von Jahren ausgestorben sind, mit vielen Fossilbeweisen.",
+      "credible": true
+    },
+    "correctSourceId": "b",
+    "explanation": "Ein Wissenschaftsmuseum stützt sich auf viele Beweise, die von Experten über Jahre untersucht wurden. Ein einzelnes Video ohne Erklärung oder Zusammenhang kann leicht ein Scherz oder eine Montage sein."
+  },
+  {
+    "id": "d35",
+    "type": "aiError",
+    "emoji": "🕷️",
+    "title": "Die KI Hat Sich Geirrt — Die Beine der Spinne",
+    "aiQuestion": "Wie viele Beine hat eine Spinne?",
+    "aiAnswer": "Eine Spinne hat 6 Beine, genau wie ein Insekt.",
+    "correctAnswer": "Eine Spinne hat 8 Beine — deshalb ist sie kein Insekt, sondern eine Spinnentier.",
+    "explanation": "Die KI hat sich geirrt! Spinnen haben 8 Beine, nicht 6. Auch Computer und künstliche Intelligenz können Fehler machen, deshalb lohnt es sich immer, mit dem zu vergleichen, was du schon weißt, oder mit einem Buch."
+  },
+  {
+    "id": "d36",
+    "type": "aiError",
+    "emoji": "🏙️",
+    "title": "Die KI Hat Sich Geirrt — Die Hauptstadt Portugals",
+    "aiQuestion": "Was ist die Hauptstadt von Portugal?",
+    "aiAnswer": "Die Hauptstadt von Portugal ist Porto.",
+    "correctAnswer": "Die Hauptstadt von Portugal ist Lissabon.",
+    "explanation": "Die KI hat sich geirrt! Portugals Hauptstadt ist Lissabon, nicht Porto. Wichtige Fakten in einem Buch, Atlas oder mit einem Erwachsenen zu prüfen hilft, solche Fehler zu erkennen."
+  },
+  {
+    "id": "d37",
+    "type": "aiError",
+    "emoji": "📅",
+    "title": "Die KI Hat Sich Geirrt — Die Wochentage",
+    "aiQuestion": "Wie viele Tage hat eine Woche?",
+    "aiAnswer": "Eine Woche hat 5 Tage.",
+    "correctAnswer": "Eine Woche hat 7 Tage.",
+    "explanation": "Die KI hat sich geirrt! Eine Woche hat immer 7 Tage. Das ist eine gute Erinnerung, selbst nachzudenken, bevor man eine Antwort akzeptiert, auch von einem Computer."
   }
 ]

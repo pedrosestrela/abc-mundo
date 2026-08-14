@@ -11,10 +11,15 @@ export default function Whys() {
   const motherWhys = getWhys(pair.mother);
   const secondaryWhys = getWhys(pair.secondary);
   const whys = motherWhys.map((m, i) => ({ ...m, secondary: secondaryWhys[i] }));
+  const whyById = {};
+  whys.forEach((w) => {
+    whyById[w.id] = w;
+  });
   const profile = getProfile();
   const [explored, setExplored] = useState(() => getExploredWhys(profile?.name));
   const [openId, setOpenId] = useState(null);
   const [tiers, setTiers] = useState({}); // { [whyId]: { more: bool, experiment: bool } }
+  const cardRefs = React.useRef({});
 
   function handleOpen(why) {
     const alreadyOpen = openId === why.id;
@@ -23,6 +28,21 @@ export default function Whys() {
       exploreWhy(profile?.name, why.id);
       pingProgress({ profileName: profile?.name, module: "whys", event: `why_explored:${why.id}` });
       setExplored((prev) => [...prev, why.id]);
+    }
+  }
+
+  function handleRelatedTap(relatedId) {
+    const target = whyById[relatedId];
+    if (!target) return;
+    setOpenId(target.id);
+    if (!explored.includes(target.id)) {
+      exploreWhy(profile?.name, target.id);
+      pingProgress({ profileName: profile?.name, module: "whys", event: `why_explored:${target.id}` });
+      setExplored((prev) => [...prev, target.id]);
+    }
+    const el = cardRefs.current[relatedId];
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "center" });
     }
   }
 
@@ -48,7 +68,13 @@ export default function Whys() {
           const isOpen = openId === why.id;
           const tierState = tiers[why.id] || {};
           return (
-            <div className={`why-card${isOpen ? " why-card-open" : ""}`} key={why.id}>
+            <div
+              className={`why-card${isOpen ? " why-card-open" : ""}`}
+              key={why.id}
+              ref={(el) => {
+                cardRefs.current[why.id] = el;
+              }}
+            >
               <button type="button" className="why-question-btn" onClick={() => handleOpen(why)}>
                 <span className="why-emoji">{why.emoji}</span>
                 <span className="why-question">
@@ -115,6 +141,28 @@ export default function Whys() {
                           <SpeakButton text={why.secondary.experiment} langCode={pair.secondary} />
                         </div>
                       )}
+                    </div>
+                  )}
+
+                  {why.relatedQuestionIds && why.relatedQuestionIds.length > 0 && (
+                    <div className="why-related">
+                      <strong>🔗 {t("modules.whysRelated")}</strong>
+                      <div className="why-related-chips">
+                        {why.relatedQuestionIds.map((relId) => {
+                          const related = whyById[relId];
+                          if (!related) return null;
+                          return (
+                            <button
+                              type="button"
+                              key={relId}
+                              className="why-related-chip"
+                              onClick={() => handleRelatedTap(relId)}
+                            >
+                              {related.emoji} {related.question}
+                            </button>
+                          );
+                        })}
+                      </div>
                     </div>
                   )}
                 </div>

@@ -5,7 +5,12 @@
     "question": "Pourquoi pleut-il ?",
     "quickAnswer": "L'eau de la mer, des rivières et des lacs s'évapore, monte dans le ciel et forme des nuages. Quand les nuages sont trop pleins d'eau, elle retombe sous forme de pluie.",
     "moreAnswer": "Le Soleil réchauffe l'eau et la transforme en vapeur invisible qui monte dans l'air. Là-haut, il fait plus froid, alors la vapeur se condense en minuscules gouttelettes qui forment les nuages. Quand les gouttelettes se rejoignent et deviennent trop lourdes, elles retombent en pluie. Ensuite tout retourne à la mer et aux rivières, et le cycle recommence — on l'appelle le cycle de l'eau.",
-    "experiment": "Un jour de chaleur, observe une flaque d'eau au soleil le matin et regarde comment elle disparaît au cours de la journée. Où est passée l'eau ?"
+    "experiment": "Un jour de chaleur, observe une flaque d'eau au soleil le matin et regarde comment elle disparaît au cours de la journée. Où est passée l'eau ?",
+    "relatedQuestionIds": [
+      "vento-origem",
+      "mar-salgado",
+      "gelo-flutua"
+    ]
   },
   {
     "id": "ceu-azul",
@@ -13,7 +18,12 @@
     "question": "Pourquoi le ciel est-il bleu ?",
     "quickAnswer": "La lumière du Soleil contient toutes les couleurs mélangées. En entrant dans l'atmosphère, le bleu se disperse beaucoup plus que les autres couleurs, c'est pourquoi le ciel nous paraît bleu.",
     "moreAnswer": "La lumière du Soleil paraît blanche, mais elle est en fait composée de plusieurs couleurs, comme un arc-en-ciel. L'air est fait de minuscules particules qui font rebondir la lumière dans toutes les directions, un phénomène appelé diffusion. La lumière bleue a des ondes plus courtes et se disperse beaucoup plus que le rouge ou le jaune, c'est pourquoi le ciel paraît bleu pendant la journée.",
-    "experiment": "Au coucher du soleil, observe comment le ciel devient orange et rouge au lieu de bleu. Cela arrive parce que la lumière traverse plus d'atmosphère à ce moment-là."
+    "experiment": "Au coucher du soleil, observe comment le ciel devient orange et rouge au lieu de bleu. Cela arrive parce que la lumière traverse plus d'atmosphère à ce moment-là.",
+    "relatedQuestionIds": [
+      "arco-iris",
+      "arco-iris-formacao",
+      "estrelas-brilham"
+    ]
   },
   {
     "id": "dormir",
@@ -21,7 +31,12 @@
     "question": "Pourquoi dormons-nous ?",
     "quickAnswer": "Dormir permet au corps et au cerveau de se reposer, nous aide à grandir et à garder en mémoire tout ce que nous avons appris pendant la journée.",
     "moreAnswer": "Pendant que nous dormons, le cerveau range tout ce que nous avons appris et vécu, comme s'il rangeait un tiroir plein de choses. Le corps profite de ce temps pour réparer les muscles, produire des hormones de croissance et renforcer le système immunitaire. Sans assez de sommeil, on se sent fatigué, on oublie plus facilement et on tombe plus souvent malade.",
-    "experiment": "Note pendant une semaine combien d'heures tu dors et observe comment tu te sens les jours où tu as plus ou moins dormi."
+    "experiment": "Note pendant une semaine combien d'heures tu dors et observe comment tu te sens les jours où tu as plus ou moins dormi.",
+    "relatedQuestionIds": [
+      "sono-necessidade",
+      "bocejo",
+      "coracao"
+    ]
   },
   {
     "id": "coracao",
@@ -29,7 +44,12 @@
     "question": "Pourquoi le cœur bat-il ?",
     "quickAnswer": "Le cœur bat pour pomper le sang dans tout le corps, apportant de l'oxygène et de la nourriture à chaque partie de toi.",
     "moreAnswer": "Le cœur est un muscle très spécial qui se contracte et se relâche sans arrêt, comme une pompe. Chaque battement pousse du sang riche en oxygène vers les poumons, les muscles et le cerveau. Quand tu cours ou que tu as peur, ton cœur bat plus vite parce que ton corps a besoin de plus d'oxygène.",
-    "experiment": "Cours sur place pendant une minute puis pose ta main sur ta poitrine. Sens-tu ton cœur battre plus vite ?"
+    "experiment": "Cours sur place pendant une minute puis pose ta main sur ta poitrine. Sens-tu ton cœur battre plus vite ?",
+    "relatedQuestionIds": [
+      "dormir",
+      "frio",
+      "bocejo"
+    ]
   },
   {
     "id": "aviao",
@@ -37,7 +57,11 @@
     "question": "Comment vole un avion ?",
     "quickAnswer": "Les ailes d'un avion ont une forme spéciale qui fait passer l'air plus vite au-dessus qu'en dessous, ce qui crée une force qui pousse l'avion vers le haut.",
     "moreAnswer": "Cette force s'appelle la portance. L'aile est courbée sur le dessus et plus plate en dessous, donc l'air qui passe au-dessus parcourt une distance plus longue et crée moins de pression. La pression plus forte en dessous pousse l'aile vers le haut dans l'air. Les moteurs fournissent la vitesse nécessaire pour que cela fonctionne.",
-    "experiment": "Souffle au-dessus d'une bande de papier tenue près de ta bouche et regarde-la se soulever — c'est le même principe de portance !"
+    "experiment": "Souffle au-dessus d'une bande de papier tenue près de ta bouche et regarde-la se soulever — c'est le même principe de portance !",
+    "relatedQuestionIds": [
+      "vento-origem",
+      "barco"
+    ]
   },
   {
     "id": "barco",
@@ -45,7 +69,12 @@
     "question": "Pourquoi un bateau flotte-t-il ?",
     "quickAnswer": "Un bateau flotte parce qu'il repousse sur les côtés plus d'eau qu'il ne pèse, et l'eau le repousse vers le haut.",
     "moreAnswer": "On appelle cela le principe d'Archimède : tout objet dans l'eau subit une force vers le haut égale au poids de l'eau qu'il déplace. Un bateau a une forme large et creuse, donc il déplace beaucoup d'eau même s'il est lourd, et cette force suffit à le maintenir à la surface.",
-    "experiment": "Fabrique un petit bateau en papier aluminium et fais-le flotter dans une bassine. Puis écrase-le en boule — pourquoi coule-t-il maintenant ?"
+    "experiment": "Fabrique un petit bateau en papier aluminium et fais-le flotter dans une bassine. Puis écrase-le en boule — pourquoi coule-t-il maintenant ?",
+    "relatedQuestionIds": [
+      "aviao",
+      "gelo-flutua",
+      "mar-salgado"
+    ]
   },
   {
     "id": "eletricidade",
@@ -53,7 +82,10 @@
     "question": "D'où vient l'électricité ?",
     "quickAnswer": "L'électricité est produite dans des centrales qui transforment d'autres formes d'énergie, comme le vent, l'eau ou le soleil, en énergie électrique.",
     "moreAnswer": "Dans les centrales électriques, quelque chose fait tourner une turbine très vite — cela peut être de l'eau qui tombe, du vent fort ou de la vapeur chaude. La turbine est reliée à un générateur qui transforme ce mouvement en électricité. Ensuite l'électricité voyage par des câbles jusqu'à nos maisons.",
-    "experiment": "Cherche une éolienne ou un panneau solaire près de chez toi et observe comment ils captent le vent ou le soleil."
+    "experiment": "Cherche une éolienne ou un panneau solaire près de chez toi et observe comment ils captent le vent ou le soleil.",
+    "relatedQuestionIds": [
+      "vento-origem"
+    ]
   },
   {
     "id": "dinossauros",
@@ -61,7 +93,10 @@
     "question": "Pourquoi les dinosaures ont-ils disparu ?",
     "quickAnswer": "Les scientifiques pensent qu'un énorme astéroïde a percuté la Terre il y a des millions d'années et a changé le climat si vite que les dinosaures n'ont pas pu survivre.",
     "moreAnswer": "Il y a environ 66 millions d'années, un astéroïde géant s'est écrasé sur la Terre. L'impact a projeté tant de poussière et de cendres dans l'air que le ciel est resté sombre longtemps, rendant la planète froide et privant les plantes de lumière pour pousser. Sans nourriture, la plupart des dinosaures n'ont pas survécu. Seuls quelques petits animaux, comme les ancêtres des oiseaux, ont réussi à s'en sortir.",
-    "experiment": null
+    "experiment": null,
+    "relatedQuestionIds": [
+      "aves-migracao"
+    ]
   },
   {
     "id": "sombra",
@@ -69,7 +104,11 @@
     "question": "Pourquoi avons-nous une ombre ?",
     "quickAnswer": "Une ombre apparaît quand ton corps bloque la lumière et l'empêche d'atteindre le sol derrière toi.",
     "moreAnswer": "La lumière voyage toujours en ligne droite. Quand un objet opaque, comme ton corps, se met sur son chemin, elle ne peut pas le traverser, et il reste alors une zone sombre de l'autre côté — l'ombre. Plus la source de lumière est proche de toi, plus l'ombre devient grande et nette.",
-    "experiment": "Un jour ensoleillé, regarde ton ombre le matin, à midi et l'après-midi. Observe comment elle change de taille et de direction."
+    "experiment": "Un jour ensoleillé, regarde ton ombre le matin, à midi et l'après-midi. Observe comment elle change de taille et de direction.",
+    "relatedQuestionIds": [
+      "ceu-azul",
+      "arco-iris"
+    ]
   },
   {
     "id": "lua",
@@ -77,7 +116,11 @@
     "question": "Pourquoi la Lune change-t-elle de forme ?",
     "quickAnswer": "La Lune ne change pas vraiment de forme — ce que nous voyons, ce sont des parties différentes d'elle éclairées par le Soleil, selon sa position par rapport à la Terre.",
     "moreAnswer": "La Lune n'a pas de lumière propre ; elle reflète la lumière du Soleil. Pendant que la Lune tourne autour de la Terre, nous voyons différentes parties éclairées : parfois nous la voyons en entier (pleine lune), parfois juste un petit croissant (nouvelle lune ou croissant). Ce cycle complet dure environ 29 jours.",
-    "experiment": "Observe la Lune chaque soir pendant deux semaines et dessine la forme que tu vois chaque jour."
+    "experiment": "Observe la Lune chaque soir pendant deux semaines et dessine la forme que tu vois chaque jour.",
+    "relatedQuestionIds": [
+      "sombra",
+      "estrelas-brilham"
+    ]
   },
   {
     "id": "frio",
@@ -85,7 +128,11 @@
     "question": "Pourquoi avons-nous froid ?",
     "quickAnswer": "Nous avons froid quand le corps perd de la chaleur plus vite qu'il n'en produit, et la peau en avertit le cerveau.",
     "moreAnswer": "Notre peau a des capteurs qui détectent la température autour de nous. Quand il fait froid, le corps perd de la chaleur dans l'air, et ces capteurs envoient un signal au cerveau. Le cerveau répond en nous faisant trembler, ce qui produit de la chaleur grâce au mouvement des muscles, et en réduisant le sang près de la peau pour garder la chaleur à l'intérieur du corps.",
-    "experiment": "Mets une main dans de l'eau tiède et l'autre dans de l'eau froide en même temps. Comment se sent chacune d'elles ?"
+    "experiment": "Mets une main dans de l'eau tiède et l'autre dans de l'eau froide en même temps. Comment se sent chacune d'elles ?",
+    "relatedQuestionIds": [
+      "coracao",
+      "dormir"
+    ]
   },
   {
     "id": "peixes",
@@ -93,7 +140,11 @@
     "question": "Pourquoi les poissons ne se noient-ils pas ?",
     "quickAnswer": "Les poissons ont des branchies, un organe spécial qui extrait l'oxygène directement de l'eau, ils n'ont donc pas besoin de respirer de l'air comme nous.",
     "moreAnswer": "Alors que nous respirons avec des poumons et avons besoin d'air, les poissons utilisent des branchies, situées sur les côtés de la tête. Quand l'eau passe sur les branchies, elles récupèrent l'oxygène dissous dans l'eau et le font entrer dans le sang du poisson. C'est pourquoi un poisson hors de l'eau ne peut pas respirer, tout comme nous ne pouvons pas respirer sous l'eau sans aide.",
-    "experiment": "Observe un poisson dans un aquarium et remarque le mouvement constant de sa bouche et de ses branchies — c'est ainsi qu'il respire."
+    "experiment": "Observe un poisson dans un aquarium et remarque le mouvement constant de sa bouche et de ses branchies — c'est ainsi qu'il respire.",
+    "relatedQuestionIds": [
+      "mar-salgado",
+      "gelo-flutua"
+    ]
   },
   {
     "id": "arco-iris",
@@ -101,7 +152,12 @@
     "question": "Pourquoi voit-on un arc-en-ciel ?",
     "quickAnswer": "Un arc-en-ciel apparaît quand la lumière du Soleil traverse des gouttes de pluie dans l'air et se sépare en différentes couleurs qui la composent.",
     "moreAnswer": "La lumière blanche du Soleil est en fait un mélange de plusieurs couleurs. Quand les rayons du soleil entrent dans une goutte d'eau, ils se courbent, se réfléchissent à l'intérieur de la goutte et ressortent, se séparant en différentes couleurs, comme un petit prisme. C'est pourquoi les arcs-en-ciel n'apparaissent que quand il y a du soleil et de la pluie en même temps.",
-    "experiment": "Dos au Soleil, utilise un tuyau d'arrosage ou un vaporisateur d'eau pour créer un petit arc-en-ciel."
+    "experiment": "Dos au Soleil, utilise un tuyau d'arrosage ou un vaporisateur d'eau pour créer un petit arc-en-ciel.",
+    "relatedQuestionIds": [
+      "ceu-azul",
+      "arco-iris-formacao",
+      "sombra"
+    ]
   },
   {
     "id": "formigas",
@@ -117,7 +173,11 @@
     "question": "Pourquoi a-t-on le hoquet ?",
     "quickAnswer": "Le hoquet arrive quand le diaphragme, le muscle qui t'aide à respirer, se contracte soudainement sans le vouloir.",
     "moreAnswer": "Le diaphragme est le muscle sous les poumons qui bouge à chaque respiration. Parfois, en mangeant trop vite, en riant beaucoup ou en buvant une boisson gazeuse, le diaphragme se contracte brusquement et sans prévenir. Cela fait entrer l'air d'un coup et les cordes vocales se referment, produisant le son « hic ». Le hoquet disparaît généralement tout seul après quelques minutes.",
-    "experiment": "La prochaine fois que tu as le hoquet, essaie de boire de l'eau à petites gorgées lentement et vois si ça aide."
+    "experiment": "La prochaine fois que tu as le hoquet, essaie de boire de l'eau à petites gorgées lentement et vois si ça aide.",
+    "relatedQuestionIds": [
+      "coracao",
+      "bocejo"
+    ]
   },
   {
     "id": "gato-ronronar",
@@ -133,7 +193,12 @@
     "question": "D'où vient le vent ?",
     "quickAnswer": "Le vent, c'est de l'air en mouvement. Il se forme quand l'air chaud monte et que l'air froid descend pour prendre sa place.",
     "moreAnswer": "Le Soleil ne réchauffe pas la Terre de la même façon partout — certains endroits deviennent plus chauds, d'autres restent plus froids. L'air chaud est plus léger et monte, tandis que l'air froid, plus lourd, descend pour occuper l'espace laissé. Ce mouvement d'air d'un endroit à un autre, c'est le vent. Plus la différence de température entre deux endroits est grande, plus le vent souffle fort.",
-    "experiment": "Fabrique un moulin à vent en papier et emmène-le dans différents endroits de la maison ou du jardin. Où tourne-t-il le plus vite ?"
+    "experiment": "Fabrique un moulin à vent en papier et emmène-le dans différents endroits de la maison ou du jardin. Où tourne-t-il le plus vite ?",
+    "relatedQuestionIds": [
+      "chuva",
+      "aviao",
+      "eletricidade"
+    ]
   },
   {
     "id": "estrelas-brilham",
@@ -141,7 +206,11 @@
     "question": "Pourquoi les étoiles brillent-elles la nuit mais pas le jour ?",
     "quickAnswer": "Les étoiles sont toujours dans le ciel, mais le jour, la lumière si forte du Soleil cache leur lumière très faible.",
     "moreAnswer": "Le Soleil est l'étoile la plus proche de nous, donc sa lumière nous arrive bien plus forte que celle de n'importe quelle autre étoile, situées à des années-lumière. Le jour, la lumière du Soleil se répand dans l'atmosphère et illumine tout, rendant le ciel trop lumineux pour voir la faible lumière des étoiles lointaines. La nuit, sans le Soleil qui éblouit tout, on peut enfin voir les étoiles scintiller.",
-    "experiment": "Par une nuit sans nuages, loin des lumières de la ville si possible, compte combien d'étoiles tu peux voir en 1 minute."
+    "experiment": "Par une nuit sans nuages, loin des lumières de la ville si possible, compte combien d'étoiles tu peux voir en 1 minute.",
+    "relatedQuestionIds": [
+      "ceu-azul",
+      "lua"
+    ]
   },
   {
     "id": "gelo-flutua",
@@ -149,7 +218,12 @@
     "question": "Pourquoi la glace flotte-t-elle sur l'eau ?",
     "quickAnswer": "La glace flotte parce que, en gelant, l'eau prend plus de place et devient moins dense que l'eau liquide.",
     "moreAnswer": "La plupart des substances deviennent plus compactes en refroidissant, mais l'eau est différente : en gelant, ses molécules s'organisent en une structure qui prend plus de place, rendant la glace moins dense que l'eau liquide. Comme elle est moins dense, la glace flotte au lieu de couler. C'est très important pour la vie dans les lacs et les mers froides — la glace forme une couche à la surface qui protège du froid extrême les animaux qui vivent en dessous.",
-    "experiment": "Mets un glaçon dans un verre d'eau et observe quelle partie reste au-dessus et en dessous de la surface."
+    "experiment": "Mets un glaçon dans un verre d'eau et observe quelle partie reste au-dessus et en dessous de la surface.",
+    "relatedQuestionIds": [
+      "chuva",
+      "peixes",
+      "barco"
+    ]
   },
   {
     "id": "aves-migracao",
@@ -157,7 +231,10 @@
     "question": "Comment les oiseaux savent-ils où migrer ?",
     "quickAnswer": "Les oiseaux utilisent le Soleil, les étoiles, le champ magnétique de la Terre et même des repères au sol pour s'orienter lors de leurs longs voyages.",
     "moreAnswer": "De nombreuses espèces d'oiseaux font chaque année d'immenses voyages, à la recherche d'un climat plus doux ou de plus de nourriture. Pour s'orienter, ils utilisent plusieurs indices à la fois : la position du Soleil le jour, les étoiles la nuit, et ils peuvent même percevoir le champ magnétique de la Terre, presque comme s'ils avaient une boussole intégrée. Certains reconnaissent aussi des rivières, des montagnes et des côtes déjà survolées. Les jeunes oiseaux apprennent souvent le trajet en volant aux côtés d'oiseaux plus âgés.",
-    "experiment": "Si tu vois un groupe d'oiseaux voler en formation en V, observe comment ils s'organisent — cette formation les aide à économiser de l'énergie pendant le voyage."
+    "experiment": "Si tu vois un groupe d'oiseaux voler en formation en V, observe comment ils s'organisent — cette formation les aide à économiser de l'énergie pendant le voyage.",
+    "relatedQuestionIds": [
+      "dinossauros"
+    ]
   },
   {
     "id": "bocejo",
@@ -165,7 +242,12 @@
     "question": "Pourquoi bâille-t-on ?",
     "quickAnswer": "On bâille quand on est fatigué ou qu'on s'ennuie, et les scientifiques pensent que cela aide à refroidir et réveiller le cerveau.",
     "moreAnswer": "Personne ne sait avec certitude pourquoi on bâille, mais l'une des idées les plus acceptées est que le bâillement aide à refroidir le cerveau, le rendant plus alerte. On bâille aussi davantage quand on est fatigué, qu'on s'ennuie, ou même juste en voyant quelqu'un d'autre bâiller — le bâillement est très contagieux ! Cela pourrait s'expliquer par le fait que notre cerveau possède des « neurones miroirs », qui nous font copier automatiquement certains comportements des gens autour de nous.",
-    "experiment": "Essaie de bâiller près d'un membre de ta famille et observe combien de temps il met à bâiller aussi."
+    "experiment": "Essaie de bâiller près d'un membre de ta famille et observe combien de temps il met à bâiller aussi.",
+    "relatedQuestionIds": [
+      "dormir",
+      "soluco",
+      "coracao"
+    ]
   },
   {
     "id": "mar-salgado",
@@ -173,7 +255,12 @@
     "question": "Pourquoi la mer est-elle salée ?",
     "quickAnswer": "La mer est salée parce que les rivières, en coulant sur les roches et la terre, entraînent de petites quantités de sel jusqu'à elle, et l'eau qui s'évapore laisse le sel derrière elle.",
     "moreAnswer": "Quand il pleut, l'eau qui coule dans les rivières passe sur des roches et de la terre, dissolvant de tout petits minéraux et sels. Ces rivières transportent ce sel jusqu'à la mer. Dans la mer, le Soleil fait évaporer l'eau (qui se transforme en vapeur et retombe en pluie), mais le sel ne s'évapore pas — il reste. Cela se produit depuis des millions d'années, donc le sel s'est accumulé de plus en plus dans l'eau de mer.",
-    "experiment": "Demande à un adulte de t'aider à dissoudre une cuillère de sel dans un verre d'eau et goûte une toute petite goutte (avec précaution). C'est un peu ce goût-là, en beaucoup plus concentré, qu'a l'eau de mer."
+    "experiment": "Demande à un adulte de t'aider à dissoudre une cuillère de sel dans un verre d'eau et goûte une toute petite goutte (avec précaution). C'est un peu ce goût-là, en beaucoup plus concentré, qu'a l'eau de mer.",
+    "relatedQuestionIds": [
+      "chuva",
+      "barco",
+      "peixes"
+    ]
   },
   {
     "id": "arco-iris-formacao",
@@ -181,7 +268,11 @@
     "question": "Comment se forment les arcs-en-ciel ?",
     "quickAnswer": "Les arcs-en-ciel se forment quand la lumière du Soleil traverse des gouttes de pluie et se sépare dans les couleurs qui la composent, comme un prisme.",
     "moreAnswer": "La lumière du Soleil paraît blanche, mais elle est en réalité composée de plusieurs couleurs mélangées. Quand un rayon de soleil entre dans une goutte de pluie, il change de direction (il se réfracte), se réfléchit à l'intérieur de la goutte, puis en ressort en changeant à nouveau de direction. Dans ce processus, chaque couleur dévie d'une manière légèrement différente, donc les couleurs se séparent, formant l'arc de couleurs qu'on observe : rouge, orange, jaune, vert, bleu, indigo et violet. C'est pourquoi on ne voit un arc-en-ciel que lorsqu'il y a du soleil et de la pluie en même temps, et toujours en tournant le dos au Soleil.",
-    "experiment": "En tournant le dos au Soleil, utilise un tuyau d'arrosage ou un vaporisateur d'eau pour créer ton propre arc-en-ciel."
+    "experiment": "En tournant le dos au Soleil, utilise un tuyau d'arrosage ou un vaporisateur d'eau pour créer ton propre arc-en-ciel.",
+    "relatedQuestionIds": [
+      "arco-iris",
+      "ceu-azul"
+    ]
   },
   {
     "id": "sono-necessidade",
@@ -189,6 +280,10 @@
     "question": "Pourquoi avons-nous besoin de dormir ?",
     "quickAnswer": "Nous avons besoin de dormir pour que le corps se repose, que le cerveau enregistre ce qu'on a appris, et pour grandir en bonne santé et forts.",
     "moreAnswer": "Pendant que nous dormons, des choses très importantes se passent sans qu'on les voie : le cerveau organise les souvenirs de la journée, comme s'il rangeait un tiroir plein de nouvelles informations. Le corps en profite pour réparer les muscles, produire des hormones de croissance et renforcer les défenses contre les maladies. Les enfants ont besoin de dormir encore plus longtemps que les adultes, car ils grandissent et leur cerveau apprend sans arrêt de nouvelles choses. Sans assez de sommeil, on devient fatigué, plus étourdi et plus grognon.",
-    "experiment": "Pendant une semaine, note à quelle heure tu te couches et te réveilles. Les jours où tu as dormi plus, te sens-tu différent ?"
+    "experiment": "Pendant une semaine, note à quelle heure tu te couches et te réveilles. Les jours où tu as dormi plus, te sens-tu différent ?",
+    "relatedQuestionIds": [
+      "dormir",
+      "bocejo"
+    ]
   }
 ]

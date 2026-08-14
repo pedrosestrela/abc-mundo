@@ -2139,6 +2139,29 @@ body {
   align-self: flex-start;
 }
 
+.why-related {
+  margin-top: 12px;
+  border-top: 1px dashed rgba(0, 0, 0, 0.15);
+  padding-top: 10px;
+}
+
+.why-related-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.why-related-chip {
+  border: none;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  background: var(--blue);
+  color: #fff;
+  cursor: pointer;
+}
+
 .robots-progress {
   font-weight: bold;
   color: #888;
@@ -2494,6 +2517,23 @@ body {
 
 .science-card.done {
   border-color: var(--green);
+}
+
+.detective-statement-list {
+  list-style: none;
+  margin: 8px 0;
+  padding: 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.detective-statement {
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-size: 0.95rem;
 }
 
 .history-timeline {
