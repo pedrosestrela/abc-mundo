@@ -40,5 +40,40 @@
       "1": { "emoji": "💧", "text": "À température ambiante, l'eau est liquide." },
       "2": { "emoji": "💨", "text": "L'eau bout et se transforme en vapeur : un gaz !" }
     }
+  },
+  "electric": {
+    "title": "Laboratoire Électrique",
+    "emoji": "🔋",
+    "question": "Choisis ce qui relie la pile à l'ampoule et découvre si elle s'allume !",
+    "middleLabel": "Qu'est-ce qui relie la pile à l'ampoule ?",
+    "options": [
+      { "id": "wire", "emoji": "🔌", "label": "Fil entier" },
+      { "id": "broken", "emoji": "✂️", "label": "Fil coupé" },
+      { "id": "none", "emoji": "❌", "label": "Rien" }
+    ],
+    "outcomes": {
+      "wire": { "success": true, "text": "Le circuit est complet ! Le courant électrique circule de la pile, passe par le fil, allume l'ampoule et revient à la pile." },
+      "broken": { "success": false, "text": "Le fil est coupé — il y a un espace vide au milieu. Le courant électrique ne peut pas traverser cet espace, donc l'ampoule ne s'allume pas." },
+      "none": { "success": false, "text": "Sans rien pour relier la pile à l'ampoule, le circuit reste ouvert. Sans chemin fermé, le courant ne peut pas circuler." }
+    }
+  },
+  "light": {
+    "title": "Laboratoire de la Lumière",
+    "emoji": "🔦",
+    "question": "Choisis deux lumières de couleurs différentes et devine quelle couleur sort du mélange !",
+    "pickLabel": "Choisis 2 lumières",
+    "sameWarning": "Choisis deux couleurs différentes !",
+    "guessLabel": "Quelle couleur penses-tu voir apparaître ?",
+    "lights": [
+      { "id": "red", "emoji": "🔴", "label": "Rouge", "color": "#ff3b3b" },
+      { "id": "green", "emoji": "🟢", "label": "Vert", "color": "#2ecc71" },
+      { "id": "blue", "emoji": "🔵", "label": "Bleu", "color": "#3b82f6" }
+    ],
+    "distractor": { "label": "Blanc", "color": "#f4f4f4" },
+    "combos": {
+      "red-green": { "resultLabel": "Jaune", "color": "#ffe135", "text": "Lumière rouge + lumière verte = lumière jaune ! Mélanger des couleurs de LUMIÈRE est différent de mélanger de la peinture — la lumière s'additionne et devient plus claire." },
+      "red-blue": { "resultLabel": "Magenta", "color": "#ff3bd4", "text": "Lumière rouge + lumière bleue = magenta ! Chaque lumière colorée transporte une partie de la lumière blanche du soleil." },
+      "green-blue": { "resultLabel": "Cyan", "color": "#3bf0ff", "text": "Lumière verte + lumière bleue = cyan ! Réunis les trois (rouge, vert et bleu) et tu obtiens de la lumière blanche." }
+    }
   }
 }

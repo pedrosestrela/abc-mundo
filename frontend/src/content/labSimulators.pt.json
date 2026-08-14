@@ -40,5 +40,40 @@
       "1": { "emoji": "💧", "text": "À temperatura ambiente a água é líquida." },
       "2": { "emoji": "💨", "text": "A água ferve e transforma-se em vapor: um gás!" }
     }
+  },
+  "electric": {
+    "title": "Laboratório Elétrico",
+    "emoji": "🔋",
+    "question": "Escolhe o que vai ligar a bateria à lâmpada e descobre se ela acende!",
+    "middleLabel": "O que liga a bateria à lâmpada?",
+    "options": [
+      { "id": "wire", "emoji": "🔌", "label": "Fio inteiro" },
+      { "id": "broken", "emoji": "✂️", "label": "Fio cortado" },
+      { "id": "none", "emoji": "❌", "label": "Nada" }
+    ],
+    "outcomes": {
+      "wire": { "success": true, "text": "O circuito está completo! A corrente elétrica flui da bateria, passa pelo fio, acende a lâmpada e regressa à bateria." },
+      "broken": { "success": false, "text": "O fio está cortado — há um espaço vazio no meio. A corrente elétrica não consegue atravessar esse espaço, por isso a lâmpada não acende." },
+      "none": { "success": false, "text": "Sem nada a ligar a bateria à lâmpada, o circuito fica aberto. Sem um caminho fechado, a corrente não flui." }
+    }
+  },
+  "light": {
+    "title": "Laboratório da Luz",
+    "emoji": "🔦",
+    "question": "Escolhe duas luzes de cores diferentes e adivinha que cor sai da mistura!",
+    "pickLabel": "Escolhe 2 luzes",
+    "sameWarning": "Escolhe duas cores diferentes!",
+    "guessLabel": "Que cor achas que vai aparecer?",
+    "lights": [
+      { "id": "red", "emoji": "🔴", "label": "Vermelho", "color": "#ff3b3b" },
+      { "id": "green", "emoji": "🟢", "label": "Verde", "color": "#2ecc71" },
+      { "id": "blue", "emoji": "🔵", "label": "Azul", "color": "#3b82f6" }
+    ],
+    "distractor": { "label": "Branco", "color": "#f4f4f4" },
+    "combos": {
+      "red-green": { "resultLabel": "Amarelo", "color": "#ffe135", "text": "Luz vermelha + luz verde = luz amarela! Misturar cores de LUZ é diferente de misturar tintas — a luz soma-se e fica mais clara." },
+      "red-blue": { "resultLabel": "Magenta", "color": "#ff3bd4", "text": "Luz vermelha + luz azul = magenta! Cada luz colorida transporta uma parte da luz branca do sol." },
+      "green-blue": { "resultLabel": "Ciano", "color": "#3bf0ff", "text": "Luz verde + luz azul = ciano! Junta as três (vermelho, verde e azul) e obténs luz branca." }
+    }
   }
 }

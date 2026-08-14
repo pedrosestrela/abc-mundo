@@ -40,5 +40,40 @@
       "1": { "emoji": "💧", "text": "At room temperature water is liquid." },
       "2": { "emoji": "💨", "text": "The water boils and turns into steam: a gas!" }
     }
+  },
+  "electric": {
+    "title": "Electric Lab",
+    "emoji": "🔋",
+    "question": "Choose what connects the battery to the bulb and find out if it lights up!",
+    "middleLabel": "What connects the battery to the bulb?",
+    "options": [
+      { "id": "wire", "emoji": "🔌", "label": "Whole wire" },
+      { "id": "broken", "emoji": "✂️", "label": "Broken wire" },
+      { "id": "none", "emoji": "❌", "label": "Nothing" }
+    ],
+    "outcomes": {
+      "wire": { "success": true, "text": "The circuit is complete! Electric current flows from the battery, through the wire, lights the bulb, and returns to the battery." },
+      "broken": { "success": false, "text": "The wire is broken — there is a gap in the middle. Electric current cannot cross that gap, so the bulb doesn't light up." },
+      "none": { "success": false, "text": "With nothing connecting the battery to the bulb, the circuit stays open. Without a closed path, current can't flow." }
+    }
+  },
+  "light": {
+    "title": "Light Lab",
+    "emoji": "🔦",
+    "question": "Pick two different colored lights and guess what color comes out of the mix!",
+    "pickLabel": "Pick 2 lights",
+    "sameWarning": "Pick two different colors!",
+    "guessLabel": "What color do you think will appear?",
+    "lights": [
+      { "id": "red", "emoji": "🔴", "label": "Red", "color": "#ff3b3b" },
+      { "id": "green", "emoji": "🟢", "label": "Green", "color": "#2ecc71" },
+      { "id": "blue", "emoji": "🔵", "label": "Blue", "color": "#3b82f6" }
+    ],
+    "distractor": { "label": "White", "color": "#f4f4f4" },
+    "combos": {
+      "red-green": { "resultLabel": "Yellow", "color": "#ffe135", "text": "Red light + green light = yellow light! Mixing LIGHT colors is different from mixing paint — light adds up and gets brighter." },
+      "red-blue": { "resultLabel": "Magenta", "color": "#ff3bd4", "text": "Red light + blue light = magenta! Each colored light carries part of the sun's white light." },
+      "green-blue": { "resultLabel": "Cyan", "color": "#3bf0ff", "text": "Green light + blue light = cyan! Combine all three (red, green, and blue) and you get white light." }
+    }
   }
 }

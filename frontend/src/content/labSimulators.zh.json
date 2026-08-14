@@ -40,5 +40,40 @@
       "1": { "emoji": "💧", "text": "在室温下，水是液体。" },
       "2": { "emoji": "💨", "text": "水沸腾变成水蒸气：一种气体！" }
     }
+  },
+  "electric": {
+    "title": "电学实验室",
+    "emoji": "🔋",
+    "question": "选择用什么连接电池和灯泡，看看灯泡会不会亮！",
+    "middleLabel": "用什么连接电池和灯泡？",
+    "options": [
+      { "id": "wire", "emoji": "🔌", "label": "完整电线" },
+      { "id": "broken", "emoji": "✂️", "label": "断开的电线" },
+      { "id": "none", "emoji": "❌", "label": "什么都没有" }
+    ],
+    "outcomes": {
+      "wire": { "success": true, "text": "电路完整了！电流从电池流出，经过电线，点亮灯泡，再回到电池。" },
+      "broken": { "success": false, "text": "电线断了——中间有个缺口。电流无法通过这个缺口，所以灯泡不会亮。" },
+      "none": { "success": false, "text": "没有东西连接电池和灯泡，电路是断开的。没有闭合的路径，电流无法流动。" }
+    }
+  },
+  "light": {
+    "title": "光学实验室",
+    "emoji": "🔦",
+    "question": "选择两种不同颜色的光，猜猜混合后会出现什么颜色！",
+    "pickLabel": "选择2种光",
+    "sameWarning": "请选择两种不同的颜色！",
+    "guessLabel": "你觉得会出现什么颜色？",
+    "lights": [
+      { "id": "red", "emoji": "🔴", "label": "红色", "color": "#ff3b3b" },
+      { "id": "green", "emoji": "🟢", "label": "绿色", "color": "#2ecc71" },
+      { "id": "blue", "emoji": "🔵", "label": "蓝色", "color": "#3b82f6" }
+    ],
+    "distractor": { "label": "白色", "color": "#f4f4f4" },
+    "combos": {
+      "red-green": { "resultLabel": "黄色", "color": "#ffe135", "text": "红光+绿光=黄光！混合光的颜色和混合颜料不一样——光是叠加的，会变得更亮。" },
+      "red-blue": { "resultLabel": "品红色", "color": "#ff3bd4", "text": "红光+蓝光=品红色！每种彩色光都携带着太阳白光的一部分。" },
+      "green-blue": { "resultLabel": "青色", "color": "#3bf0ff", "text": "绿光+蓝光=青色！把三种颜色（红、绿、蓝）都合在一起，就会得到白光。" }
+    }
   }
 }
