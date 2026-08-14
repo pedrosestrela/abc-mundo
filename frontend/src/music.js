@@ -38,6 +38,7 @@ export const INSTRUMENTS = [
   { id: "portugueseGuitar", icon: "🎸" },
   { id: "accordion", icon: "🪗" },
   { id: "concertina", icon: "🎐" },
+  { id: "harp", icon: "🎶" },
 ];
 
 // Simple tappable pads for the drum instrument — no musical scale, just a
@@ -309,6 +310,36 @@ function playConcertinaNote(ctx, freq, duration) {
   scheduledNodes.push(osc, tremolo);
 }
 
+function playHarpNote(ctx, freq, duration) {
+  // Plucked-string family like guitar/cavaquinho, but sparklier and more
+  // resonant: a triangle fundamental plus a slightly detuned sine an octave
+  // up (the detune creates a soft shimmering beat), and a long smooth
+  // exponential decay for a resonant "ring" the others don't have.
+  const now = ctx.currentTime;
+  const sustain = Math.max(duration, 1.1);
+  const osc1 = ctx.createOscillator();
+  const osc2 = ctx.createOscillator();
+  const gain = ctx.createGain();
+  const gain2 = ctx.createGain();
+  osc1.type = "triangle";
+  osc2.type = "sine";
+  osc1.frequency.value = freq;
+  osc2.frequency.value = freq * 2.003;
+  gain2.gain.value = 0.35;
+  gain.gain.setValueAtTime(0, now);
+  gain.gain.linearRampToValueAtTime(0.22, now + 0.008);
+  gain.gain.exponentialRampToValueAtTime(0.001, now + sustain);
+  osc1.connect(gain);
+  osc2.connect(gain2);
+  gain2.connect(gain);
+  gain.connect(ctx.destination);
+  osc1.start(now);
+  osc2.start(now);
+  osc1.stop(now + sustain + 0.1);
+  osc2.stop(now + sustain + 0.1);
+  scheduledNodes.push(osc1, osc2);
+}
+
 // Filtered white-noise burst used for both the drum pads and as the
 // "drum" instrument's stand-in for a musical note.
 function playNoiseBurst(ctx, { filterType = "bandpass", freq = 800, q = 1, duration = 0.15, gainValue = 0.35 } = {}) {
@@ -385,6 +416,9 @@ export function playInstrumentNote(instrument, note, duration = 0.5) {
       break;
     case "concertina":
       playConcertinaNote(ctx, freq, duration);
+      break;
+    case "harp":
+      playHarpNote(ctx, freq, duration);
       break;
     case "drum":
       playNoiseBurst(ctx, { filterType: "bandpass", freq: freq / 2, q: 1, duration: 0.2, gainValue: 0.4 });

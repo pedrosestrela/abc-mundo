@@ -58,5 +58,65 @@
     "title": "Arco-Íris de Notas",
     "notes": ["C4", "D4", "E4", "F4", "G4", "F4", "E4", "D4", "C4", "E4", "G4", "C5", "G4", "E4", "C4"],
     "lyrics": ["Dó", "Ré", "Mi", "Fá", "Sol", "Fá", "Mi", "Ré", "Dó", "sobe", "e", "desce", "no", "ar", "co"]
+  },
+  {
+    "id": "frere-jacques",
+    "title": "Frère Jacques (excerto)",
+    "notes": ["C4", "D4", "E4", "C4", "C4", "D4", "E4", "C4", "E4", "F4", "G4", "E4", "F4", "G4"],
+    "lyrics": ["la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la"]
+  },
+  {
+    "id": "hot-cross-buns",
+    "title": "Hot Cross Buns",
+    "notes": ["E4", "D4", "C4", "E4", "D4", "C4", "C4", "C4", "C4", "D4", "D4", "D4", "D4", "E4", "D4", "C4"],
+    "lyrics": ["la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la"]
+  },
+  {
+    "id": "london-bridge",
+    "title": "London Bridge",
+    "notes": ["G4", "A4", "G4", "F4", "E4", "F4", "G4", "D4", "E4", "F4", "E4", "F4", "G4"],
+    "lyrics": ["la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la"]
+  },
+  {
+    "id": "row-row-row",
+    "title": "Row, Row, Row Your Boat",
+    "notes": ["C4", "C4", "C4", "D4", "E4", "E4", "D4", "E4", "F4", "G4", "C5", "G4", "E4", "C4"],
+    "lyrics": ["la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la"]
+  },
+  {
+    "id": "old-macdonald",
+    "title": "Old MacDonald Had a Farm",
+    "notes": ["C4", "C4", "C4", "G4", "A4", "A4", "G4", "E4", "E4", "D4", "D4", "C4"],
+    "lyrics": ["la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la"]
+  },
+  {
+    "id": "this-old-man",
+    "title": "This Old Man",
+    "notes": ["G4", "E4", "G4", "E4", "F4", "D4", "C4", "D4", "E4", "F4", "G4"],
+    "lyrics": ["la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la"]
+  },
+  {
+    "id": "three-blind-mice",
+    "title": "Three Blind Mice",
+    "notes": ["E4", "D4", "C4", "E4", "D4", "C4", "G4", "F4", "F4", "E4", "G4", "F4", "F4", "E4"],
+    "lyrics": ["la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la"]
+  },
+  {
+    "id": "baa-baa-black-sheep",
+    "title": "Baa, Baa, Black Sheep",
+    "notes": ["C4", "C4", "G4", "G4", "A4", "A4", "G4", "F4", "F4", "E4", "E4", "D4", "D4", "C4"],
+    "lyrics": ["la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la"]
+  },
+  {
+    "id": "pop-goes-the-weasel",
+    "title": "Pop Goes the Weasel",
+    "notes": ["C4", "E4", "G4", "C5", "C4", "E4", "A4", "G4", "C4", "E4", "G4", "C5", "D5", "C5", "B4", "G4"],
+    "lyrics": ["la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la"]
+  },
+  {
+    "id": "jingle-bells",
+    "title": "Jingle Bells (excerto)",
+    "notes": ["E4", "E4", "E4", "E4", "E4", "E4", "E4", "G4", "C4", "D4", "E4"],
+    "lyrics": ["la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la"]
   }
 ]
