@@ -1,11 +1,11 @@
-// Minimal cache-first service worker for static app-shell assets.
-const CACHE_NAME = "abcmundo-v1";
-const APP_SHELL = ["/", "/index.html", "/manifest.json", "/icon.svg"];
+// Network-first for HTML navigation (so a new deploy is always picked up
+// instead of serving a stale index.html that references pruned hashed
+// bundle filenames — that mismatch is what causes a blank screen after an
+// update). Cache-first for hashed static assets (JS/CSS/images), which are
+// safe to cache forever since their filename changes whenever content does.
+const CACHE_NAME = "abcmundo-v2";
 
 self.addEventListener("install", (event) => {
-  event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll(APP_SHELL)).catch(() => {})
-  );
   self.skipWaiting();
 });
 
@@ -23,6 +23,21 @@ self.addEventListener("fetch", (event) => {
   if (request.method !== "GET") return;
   // Never cache API calls; always go to network for those.
   if (request.url.includes("/api/")) return;
+
+  if (request.mode === "navigate") {
+    event.respondWith(
+      fetch(request)
+        .then((response) => {
+          if (response && response.status === 200) {
+            const clone = response.clone();
+            caches.open(CACHE_NAME).then((cache) => cache.put(request, clone));
+          }
+          return response;
+        })
+        .catch(() => caches.match(request).then((cached) => cached || caches.match("/index.html")))
+    );
+    return;
+  }
 
   event.respondWith(
     caches.match(request).then((cached) => {
