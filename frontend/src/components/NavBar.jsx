@@ -36,6 +36,9 @@ export default function NavBar() {
       <NavLink to="/stories" className="nav-link">
         📚 {t("nav.stories")}
       </NavLink>
+      <NavLink to="/math" className="nav-link">
+        🔢 {t("nav.math")}
+      </NavLink>
     </nav>
   );
 }
