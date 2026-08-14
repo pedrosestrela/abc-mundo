@@ -31,24 +31,64 @@ const BLACK_KEYS = [...buildBlackKeys(4, 0), ...buildBlackKeys(5, 7)];
 
 const WHITE_KEY_COUNT = WHITE_KEYS.length;
 
-export default function Piano() {
+// 4-beat rhythm patterns for the drum "repeat this rhythm" mini-game, using
+// the same pad ids as the tappable drum pads.
+const RHYTHM_PATTERNS = [
+  ["kick", "kick", "snare", "hihat"],
+  ["kick", "hihat", "snare", "hihat"],
+  ["kick", "snare", "kick", "snare"],
+  ["hihat", "hihat", "kick", "snare"],
+];
+
+const PAD_EMOJI = { kick: "🥁", snare: "🪘", hihat: "🎩", tom: "🛢️" };
+
+export default function Music({ defaultInstrument = "piano" }) {
   const { t } = useTranslation();
   const pair = getLangPair() || { mother: "pt", secondary: "en" };
-  const [instrument, setInstrument] = useState("piano");
+  const [instrument, setInstrument] = useState(defaultInstrument);
   const [songId, setSongId] = useState(pianoSongs[0].id);
   const [step, setStep] = useState(0);
   const [playing, setPlaying] = useState(false);
   const [activeNote, setActiveNote] = useState(null);
 
+  const [rhythmPattern, setRhythmPattern] = useState(null);
+  const [rhythmInput, setRhythmInput] = useState([]);
+  const [rhythmResult, setRhythmResult] = useState(null); // null | "success" | "fail"
+
   const song = pianoSongs.find((s) => s.id === songId);
   const nextNote = playing ? song.notes[step] : null;
   const isDrum = instrument === "drum";
+
+  function handleStartRhythm() {
+    const pattern = RHYTHM_PATTERNS[Math.floor(Math.random() * RHYTHM_PATTERNS.length)];
+    setRhythmPattern(pattern);
+    setRhythmInput([]);
+    setRhythmResult(null);
+  }
+
+  function handleRhythmPadTap(padId) {
+    if (!rhythmPattern || rhythmResult) return;
+    const next = [...rhythmInput, padId];
+    setRhythmInput(next);
+    const idx = next.length - 1;
+    if (padId !== rhythmPattern[idx]) {
+      setRhythmResult("fail");
+      const profile = getProfile();
+      pingProgress({ profileName: profile?.name, module: "music", event: "drum_rhythm:fail" });
+      return;
+    }
+    if (next.length === rhythmPattern.length) {
+      setRhythmResult("success");
+      const profile = getProfile();
+      pingProgress({ profileName: profile?.name, module: "music", event: "drum_rhythm:success" });
+    }
+  }
 
   function handleKeyPress(note) {
     playInstrumentNote(instrument, note);
     setActiveNote(note);
     const profile = getProfile();
-    pingProgress({ profileName: profile?.name, module: "piano", event: `note_played:${instrument}:${note}` });
+    pingProgress({ profileName: profile?.name, module: "music", event: `note_played:${instrument}:${note}` });
 
     if (playing && note === song.notes[step]) {
       const next = step + 1;
@@ -64,7 +104,7 @@ export default function Piano() {
   function handleDrumPad(padId) {
     playDrumPad(padId);
     const profile = getProfile();
-    pingProgress({ profileName: profile?.name, module: "piano", event: `drum_pad:${padId}` });
+    pingProgress({ profileName: profile?.name, module: "music", event: `drum_pad:${padId}` });
   }
 
   function handleStartSong(id) {
@@ -78,14 +118,17 @@ export default function Piano() {
     setPlaying(false);
     setStep(0);
     setActiveNote(null);
+    setRhythmPattern(null);
+    setRhythmInput([]);
+    setRhythmResult(null);
   }
 
   return (
     <div className="page">
-      <h1>{t("modules.pianoTitle")} 🎹</h1>
-      <p className="page-intro">{t("modules.pianoIntro")}</p>
+      <h1>{t("modules.musicTitle")} 🎶</h1>
+      <p className="page-intro">{t("modules.musicIntro")}</p>
 
-      <div className="instrument-switcher">
+      <div className="instrument-switcher phonics-tabs">
         {INSTRUMENTS.map((inst) => (
           <button
             key={inst.id}
@@ -116,6 +159,58 @@ export default function Piano() {
               </button>
             ))}
           </div>
+
+          <h2 className="songs-heading">{t("modules.musicRhythmGameHeading")}</h2>
+          <p className="page-intro">{t("modules.musicRhythmGameIntro")}</p>
+          {!rhythmPattern ? (
+            <button type="button" className="big-btn" onClick={handleStartRhythm}>
+              ▶️ {t("modules.musicRhythmGameStart")}
+            </button>
+          ) : (
+            <div className="rhythm-game">
+              <div className="rhythm-pattern">
+                {rhythmPattern.map((padId, i) => (
+                  <span key={i} className="rhythm-pattern-icon">
+                    {PAD_EMOJI[padId]}
+                  </span>
+                ))}
+              </div>
+              <div className="rhythm-input">
+                {rhythmPattern.map((_, i) => (
+                  <span key={i} className="rhythm-input-slot">
+                    {rhythmInput[i] ? PAD_EMOJI[rhythmInput[i]] : "•"}
+                  </span>
+                ))}
+              </div>
+              <div className="drum-pads">
+                {DRUM_PADS.map((padId) => (
+                  <button
+                    key={padId}
+                    type="button"
+                    className={"drum-pad drum-pad-" + padId}
+                    onClick={() => handleRhythmPadTap(padId)}
+                  >
+                    {t(`modules.pianoDrumPad_${padId}`)}
+                  </button>
+                ))}
+              </div>
+              {rhythmResult === "success" && (
+                <p className="rhythm-feedback rhythm-success">
+                  🎉 {t("modules.musicRhythmGameSuccess")}
+                </p>
+              )}
+              {rhythmResult === "fail" && (
+                <p className="rhythm-feedback rhythm-fail">
+                  🙂 {t("modules.musicRhythmGameFail")}
+                </p>
+              )}
+              {rhythmResult && (
+                <button type="button" className="big-btn" onClick={handleStartRhythm}>
+                  🔁 {t("modules.musicRhythmGameStart")}
+                </button>
+              )}
+            </div>
+          )}
         </div>
       ) : (
         <>

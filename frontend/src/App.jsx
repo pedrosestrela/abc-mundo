@@ -16,7 +16,7 @@ const Reading = lazy(() => import("./pages/Reading.jsx"));
 const Phrases = lazy(() => import("./pages/Phrases.jsx"));
 const Songs = lazy(() => import("./pages/Songs.jsx"));
 const Game = lazy(() => import("./pages/Game.jsx"));
-const Piano = lazy(() => import("./pages/Piano.jsx"));
+const Music = lazy(() => import("./pages/Music.jsx"));
 const Stories = lazy(() => import("./pages/Stories.jsx"));
 const MathGame = lazy(() => import("./pages/MathGame.jsx"));
 const Financial = lazy(() => import("./pages/Financial.jsx"));
@@ -51,7 +51,8 @@ export default function App() {
             <Route path="/phrases" element={<Phrases />} />
             <Route path="/songs" element={<Songs />} />
             <Route path="/game" element={<Game />} />
-            <Route path="/piano" element={<Piano />} />
+            <Route path="/music" element={<Music />} />
+            <Route path="/piano" element={<Music defaultInstrument="piano" />} />
             <Route path="/stories" element={<Stories />} />
             <Route path="/math" element={<MathGame />} />
             <Route path="/financial" element={<Financial />} />

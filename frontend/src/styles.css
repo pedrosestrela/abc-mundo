@@ -385,6 +385,16 @@ body {
   background: var(--blue);
 }
 
+.game-option-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.game-option-row .game-option {
+  flex: 1;
+}
+
 .game-option.correct {
   background: var(--green);
 }
@@ -609,6 +619,38 @@ body {
 
 .drum-pad-tom {
   background: var(--blue);
+}
+
+.rhythm-game {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.rhythm-pattern,
+.rhythm-input {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.rhythm-input-slot {
+  color: var(--purple, #7b5fd6);
+  min-width: 1.2em;
+}
+
+.rhythm-feedback {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.rhythm-success {
+  color: var(--green, #2e9e5b);
+}
+
+.rhythm-fail {
+  color: var(--pink, #d6417b);
 }
 
 .song-card {

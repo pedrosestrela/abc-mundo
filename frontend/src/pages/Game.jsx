@@ -2,6 +2,7 @@ import React, { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { getReading } from "../content/index.js";
 import { getLangPair, getProfile, getDifficultyTier, pingProgress } from "../storage.js";
+import SpeakButton from "../components/SpeakButton.jsx";
 
 // Tier -> { poolSize: how many words to draw questions from, rounds: quiz length }
 const TIER_CONFIG = {
@@ -83,19 +84,21 @@ export default function Game() {
           <p className="page-intro">{t("modules.gamePrompt")}</p>
           <div className="game-options">
             {round.options.map((opt) => (
-              <button
-                key={opt.word}
-                type="button"
-                className={
-                  "big-btn game-option" +
-                  (feedback && opt.word === round.correct.word ? " correct" : "") +
-                  (feedback === "wrong" && opt.word !== round.correct.word ? "" : "")
-                }
-                onClick={() => handleAnswer(opt)}
-                disabled={!!feedback}
-              >
-                {opt.word}
-              </button>
+              <div className="game-option-row" key={opt.word}>
+                <button
+                  type="button"
+                  className={
+                    "big-btn game-option" +
+                    (feedback && opt.word === round.correct.word ? " correct" : "") +
+                    (feedback === "wrong" && opt.word !== round.correct.word ? "" : "")
+                  }
+                  onClick={() => handleAnswer(opt)}
+                  disabled={!!feedback}
+                >
+                  {opt.word}
+                </button>
+                <SpeakButton text={opt.word} langCode={pair.mother} />
+              </div>
             ))}
           </div>
         </div>
