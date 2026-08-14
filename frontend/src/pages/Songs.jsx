@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { getSongs } from "../content/index.js";
 import { getLangPair, getProfile, pingProgress } from "../storage.js";
 import { isSpeechAvailable, speakSequence } from "../speech.js";
+import { startBackgroundMusic, stopBackgroundMusic } from "../music.js";
 import Illustration from "../components/Illustrations.jsx";
 
 export default function Songs() {
@@ -10,10 +11,14 @@ export default function Songs() {
   const pair = getLangPair() || { mother: "pt", secondary: "en" };
   const songs = getSongs(pair.secondary);
 
-  function handlePlay(song) {
+  useEffect(() => stopBackgroundMusic, []);
+
+  async function handlePlay(song) {
     const profile = getProfile();
     pingProgress({ profileName: profile?.name, module: "songs", event: `song_played:${song.id}` });
-    speakSequence(song.lyrics, pair.secondary);
+    startBackgroundMusic();
+    await speakSequence(song.lyrics, pair.secondary);
+    stopBackgroundMusic();
   }
 
   return (
