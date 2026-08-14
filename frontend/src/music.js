@@ -1,14 +1,17 @@
 // Background-music generator + per-instrument note player for the Music
-// page. The piano now plays real recorded piano samples (Salamander Grand
-// Piano, CC BY 3.0 — see public/audio/piano/NOTICE.md for full provenance
-// and license) pitch-shifted across the keyboard, with an automatic
-// fallback to the original procedurally-synthesised piano timbre if a
-// sample fails to load (offline-before-cache-warms, blocked network, etc).
-// Every other instrument (and the looping background melody) still uses
-// layered/detuned Web Audio oscillator synthesis — no sample files exist
-// for them — tuned to approximate each instrument's real overtone
-// character (see the per-instrument functions below for the specific
-// technique used for each).
+// page. Five instruments now play real recorded samples, each pitch-shifted
+// across the keyboard via AudioBufferSourceNode.playbackRate, with an
+// automatic fallback to the original procedurally-synthesised timbre if a
+// sample fails to load (offline-before-cache-warms, blocked network, etc):
+//   - piano: Salamander Grand Piano, CC BY 3.0 (public/audio/piano/NOTICE.md)
+//   - xylophone, guitar, flute, violin: tonejs-instruments sample library,
+//     CC BY 3.0 (public/audio/<instrument>/NOTICE.md)
+// Every other instrument (viola, cavaquinho, portugueseGuitar, accordion,
+// concertina, harp, drum, and the looping background melody) still uses
+// layered/detuned Web Audio oscillator synthesis — no clean/verifiable
+// permissively-licensed sample pack was found for them — tuned to
+// approximate each instrument's real overtone character (see the
+// per-instrument functions below for the specific technique used for each).
 
 // Two octaves, C4 to C6, so songs have room to move beyond one octave.
 export const NOTE_FREQS = {
@@ -313,6 +316,137 @@ function playNote(ctx, freq, startTime, duration, gainValue, type) {
   voice.output.connect(gain);
   connectWithReverb(ctx, gain, 1);
   startStopVoice(voice, startTime, startTime + duration + 0.05);
+}
+
+// --- Real samples for xylophone / guitar / flute / violin (with synthesis
+// fallback) -------------------------------------------------------------
+// Same architecture as the piano samples above: a sparse set of real
+// recorded notes per instrument (from the CC BY 3.0 `tonejs-instruments`
+// sample library, bundled locally under public/audio/<instrument>/ — see
+// each folder's NOTICE.md for full provenance/license), pitch-shifted via
+// AudioBufferSourceNode.playbackRate to cover every note in between, with
+// an automatic fallback to the original synthesized voice if a sample
+// fails to load/decode.
+
+// filename uses "s" instead of "#" for sharps (matches the tonejs-instruments
+// package's own file naming), everything else is identical to the note name.
+function toneFileName(note) {
+  return note.replace("#", "s") + ".mp3";
+}
+
+function buildToneSampleList(notes) {
+  return notes
+    .map((note) => ({ midi: noteToMidi(note), file: toneFileName(note) }))
+    .sort((a, b) => a.midi - b.midi);
+}
+
+const SAMPLE_INSTRUMENTS = {
+  xylophone: {
+    base: "/audio/xylophone/",
+    samples: buildToneSampleList(["C5", "C6", "C7", "C8", "G4", "G5", "G6", "G7"]),
+    peak: 0.32,
+    attack: 0.004,
+    decayEnd: 0.35,
+    tail: 0.5,
+  },
+  guitar: {
+    base: "/audio/guitar/",
+    samples: buildToneSampleList(["A2", "A#3", "B4", "C#3", "D3", "D#3", "E4", "F#2", "G3", "G#4"]),
+    peak: 0.28,
+    attack: 0.004,
+    decayEnd: 0.8,
+    tail: 1.0,
+  },
+  flute: {
+    base: "/audio/flute/",
+    samples: buildToneSampleList(["A4", "A5", "A6", "C4", "C5", "C6", "C7", "E4", "E5", "E6"]),
+    peak: 0.24,
+    attack: 0.06,
+    decayEnd: 0.9,
+    tail: 0.3,
+  },
+  violin: {
+    base: "/audio/violin/",
+    samples: buildToneSampleList([
+      "A3", "A4", "A5", "A6", "C4", "C5", "C6", "C7", "E4", "E5", "E6", "G3", "G4", "G5", "G6",
+    ]),
+    peak: 0.26,
+    attack: 0.08,
+    decayEnd: 0.85,
+    tail: 0.6,
+  },
+};
+
+// instrumentId -> file -> Promise<AudioBuffer|null>, one cache Map per
+// instrument (mirrors pianoBufferCache above).
+const sampleBufferCaches = new Map();
+
+function loadSampleBuffer(ctx, instrumentId, base, file) {
+  let cache = sampleBufferCaches.get(instrumentId);
+  if (!cache) {
+    cache = new Map();
+    sampleBufferCaches.set(instrumentId, cache);
+  }
+  if (cache.has(file)) return cache.get(file);
+  const promise = fetch(base + file)
+    .then((res) => {
+      if (!res.ok) throw new Error(`${instrumentId} sample fetch failed: ${file}`);
+      return res.arrayBuffer();
+    })
+    .then((data) => new Promise((resolve, reject) => ctx.decodeAudioData(data, resolve, reject)))
+    .catch(() => null);
+  cache.set(file, promise);
+  return promise;
+}
+
+function nearestSample(samples, midi) {
+  let best = null;
+  let bestDist = Infinity;
+  for (const sample of samples) {
+    const dist = Math.abs(sample.midi - midi);
+    if (dist < bestDist) {
+      bestDist = dist;
+      best = sample;
+    }
+  }
+  return best;
+}
+
+// Plays a real recorded note for the given sampled instrument, pitch-shifted
+// from the nearest sample, falling back to `synthFn(ctx, freq, duration)` if
+// no note-to-MIDI mapping, no nearby sample, or the fetch/decode failed.
+function playSampledNote(instrumentId, ctx, note, freq, duration, synthFn) {
+  const config = SAMPLE_INSTRUMENTS[instrumentId];
+  const midi = noteToMidi(note);
+  const sample = config && midi != null ? nearestSample(config.samples, midi) : null;
+  if (!sample) {
+    synthFn(ctx, freq, duration);
+    return;
+  }
+  loadSampleBuffer(ctx, instrumentId, config.base, sample.file).then((buffer) => {
+    if (!buffer) {
+      synthFn(ctx, freq, duration);
+      return;
+    }
+    const now = ctx.currentTime;
+    const source = ctx.createBufferSource();
+    source.buffer = buffer;
+    source.playbackRate.value = Math.pow(2, (midi - sample.midi) / 12);
+
+    const gain = ctx.createGain();
+    const peak = config.peak;
+    const sustainEnd = now + Math.max(duration - 0.05, 0.05);
+    gain.gain.setValueAtTime(0, now);
+    gain.gain.linearRampToValueAtTime(peak, now + config.attack);
+    gain.gain.setValueAtTime(peak, sustainEnd);
+    gain.gain.exponentialRampToValueAtTime(0.0008, now + duration + config.decayEnd);
+
+    source.connect(gain);
+    connectWithReverb(ctx, gain, 1);
+    source.start(now);
+    source.stop(now + duration + config.decayEnd + config.tail);
+    scheduledNodes.push(source);
+  });
 }
 
 // --- Per-instrument single-note synthesis -----------------------------------
@@ -633,16 +767,16 @@ export function playInstrumentNote(instrument, note, duration = 0.5) {
 
   switch (instrument) {
     case "xylophone":
-      playXylophoneNote(ctx, freq, duration);
+      playSampledNote("xylophone", ctx, note, freq, duration, playXylophoneNote);
       break;
     case "guitar":
-      playGuitarNote(ctx, freq, duration);
+      playSampledNote("guitar", ctx, note, freq, duration, playGuitarNote);
       break;
     case "flute":
-      playFluteNote(ctx, freq, duration);
+      playSampledNote("flute", ctx, note, freq, duration, playFluteNote);
       break;
     case "violin":
-      playViolinNote(ctx, freq, duration);
+      playSampledNote("violin", ctx, note, freq, duration, playViolinNote);
       break;
     case "viola":
       playViolaNote(ctx, freq, duration);
