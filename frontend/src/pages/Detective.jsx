@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { getDetectiveCards } from "../content/index.js";
 import { getLangPair, getProfile, getDifficultyTier, recordSkillEvent, pingProgress } from "../storage.js";
+import SpeakButton from "../components/SpeakButton.jsx";
 
 // Tier -> rounds: this module only makes sense from tier 2 (age 7+) up.
 const TIER_CONFIG = {
@@ -86,7 +87,10 @@ export default function Detective() {
             {step + 1} / {rounds.length} · ⭐ {score}
           </div>
           <div className="game-emoji">{round.emoji}</div>
-          <p className="page-intro">{round.statement}</p>
+          <p className="page-intro">
+            {round.statement}
+            <SpeakButton text={round.statement} langCode={pair.mother} />
+          </p>
 
           {!answered ? (
             <div className="game-options">
@@ -107,7 +111,10 @@ export default function Detective() {
             </div>
           ) : (
             <div className="game-card">
-              <p className="game-result">{answered.correct ? "⭐" : "🤔"} {round.explanation}</p>
+              <p className="game-result">
+                {answered.correct ? "⭐" : "🤔"} {round.explanation}
+                <SpeakButton text={round.explanation} langCode={pair.mother} />
+              </p>
               <button type="button" className="big-btn" onClick={handleNext}>
                 ➡️
               </button>

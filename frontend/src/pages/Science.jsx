@@ -54,7 +54,10 @@ export default function Science() {
               {TOPIC_ICONS[card.topic] || "🔬"} {card.topic}
             </div>
             <div className="game-emoji">{card.emoji}</div>
-            <p className="mission-text">{card.question}</p>
+            <p className="mission-text">
+              {card.question}
+              <SpeakButton text={card.question} langCode={pair.mother} />
+            </p>
 
             {!isOpen && (
               <button type="button" className="big-btn" onClick={() => handleOpen(card)}>

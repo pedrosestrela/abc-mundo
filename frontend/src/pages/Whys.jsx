@@ -50,11 +50,11 @@ export default function Whys() {
               {isOpen && (
                 <div className="why-detail">
                   <div className="why-tier">
+                    <strong>⚡ {t("modules.whysQuickAnswer")}</strong>
                     <div className="why-tier-header">
-                      <strong>⚡ {t("modules.whysQuickAnswer")}</strong>
+                      <p>{why.quickAnswer}</p>
                       <SpeakButton text={why.quickAnswer} langCode={pair.secondary} />
                     </div>
-                    <p>{why.quickAnswer}</p>
                   </div>
 
                   {!tierState.more && (
@@ -64,11 +64,11 @@ export default function Whys() {
                   )}
                   {tierState.more && (
                     <div className="why-tier">
+                      <strong>🔎 {t("modules.whysMoreAnswer")}</strong>
                       <div className="why-tier-header">
-                        <strong>🔎 {t("modules.whysMoreAnswer")}</strong>
+                        <p>{why.moreAnswer}</p>
                         <SpeakButton text={why.moreAnswer} langCode={pair.secondary} />
                       </div>
-                      <p>{why.moreAnswer}</p>
                     </div>
                   )}
 
@@ -83,11 +83,11 @@ export default function Whys() {
                   )}
                   {tierState.experiment && why.experiment && (
                     <div className="why-tier">
+                      <strong>🧪 {t("modules.whysExperiment")}</strong>
                       <div className="why-tier-header">
-                        <strong>🧪 {t("modules.whysExperiment")}</strong>
+                        <p>{why.experiment}</p>
                         <SpeakButton text={why.experiment} langCode={pair.secondary} />
                       </div>
-                      <p>{why.experiment}</p>
                     </div>
                   )}
                 </div>

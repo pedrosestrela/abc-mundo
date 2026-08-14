@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { getArtPrompts } from "../content/index.js";
 import { getLangPair, getProfile, getTriedArtPrompts, tryArtPrompt, pingProgress } from "../storage.js";
 import DrawingCanvas from "../components/DrawingCanvas.jsx";
+import SpeakButton from "../components/SpeakButton.jsx";
 
 // Picks a deterministic "prompt of the day" so it doesn't change every
 // re-render, but still rotates day to day without needing a backend.
@@ -56,7 +57,10 @@ export default function Art() {
           {activePrompt ? t("modules.artPromptOfDay") : t("modules.artPromptOfDay")}
         </div>
         <div className="mission-emoji">{shown.emoji}</div>
-        <p className="mission-text">{shown.prompt}</p>
+        <p className="mission-text">
+          {shown.prompt}
+          <SpeakButton text={shown.prompt} langCode={pair.mother} />
+        </p>
         {!tried.includes(shown.id) && (
           <button type="button" className="big-btn" onClick={() => handleSelectPrompt(shown)}>
             🎨 {t("modules.artTried")}
