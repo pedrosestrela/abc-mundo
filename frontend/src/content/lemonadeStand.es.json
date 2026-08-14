@@ -1,0 +1,14 @@
+{
+  "ingredients": [
+    { "id": "lemons", "emoji": "🍋", "name": "Limones", "cost": 20 },
+    { "id": "sugar", "emoji": "🍬", "name": "Azúcar", "cost": 15 },
+    { "id": "water", "emoji": "💧", "name": "Agua", "cost": 5 },
+    { "id": "cups", "emoji": "🥤", "name": "Vasos", "cost": 10 }
+  ],
+  "priceOptions": [50, 75, 100, 150],
+  "tips": [
+    "Si el precio es muy bajo, vendes muchos vasos pero ganas poco por vaso.",
+    "Si el precio es muy alto, ganas más por vaso, pero algunas personas no comprarán.",
+    "El beneficio es el dinero que queda después de pagar los ingredientes."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "ingredients": [
+    { "id": "lemons", "emoji": "🍋", "name": "Zitronen", "cost": 20 },
+    { "id": "sugar", "emoji": "🍬", "name": "Zucker", "cost": 15 },
+    { "id": "water", "emoji": "💧", "name": "Wasser", "cost": 5 },
+    { "id": "cups", "emoji": "🥤", "name": "Becher", "cost": 10 }
+  ],
+  "priceOptions": [50, 75, 100, 150],
+  "tips": [
+    "Wenn der Preis zu niedrig ist, verkaufst du viele Becher, verdienst aber wenig pro Becher.",
+    "Wenn der Preis zu hoch ist, verdienst du mehr pro Becher, aber manche kaufen nicht.",
+    "Der Gewinn ist das Geld, das übrig bleibt, nachdem du die Zutaten bezahlt hast."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "budget": 1000,
+  "items": [
+    { "id": "apple", "emoji": "🍎", "name": "Mela", "price": 80 },
+    { "id": "banana", "emoji": "🍌", "name": "Banana", "price": 60 },
+    { "id": "juice", "emoji": "🧃", "name": "Succo", "price": 150 },
+    { "id": "bread", "emoji": "🍞", "name": "Pane", "price": 120 },
+    { "id": "cheese", "emoji": "🧀", "name": "Formaggio", "price": 250 },
+    { "id": "cookie", "emoji": "🍪", "name": "Biscotto", "price": 100 },
+    { "id": "icecream", "emoji": "🍦", "name": "Gelato", "price": 200 },
+    { "id": "ball", "emoji": "⚽", "name": "Palla", "price": 500 },
+    { "id": "book", "emoji": "📖", "name": "Libro", "price": 350 },
+    { "id": "toycar", "emoji": "🚗", "name": "Macchinina", "price": 450 }
+  ]
+}

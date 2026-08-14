@@ -1,0 +1,14 @@
+{
+  "ingredients": [
+    { "id": "lemons", "emoji": "🍋", "name": "Limões", "cost": 20 },
+    { "id": "sugar", "emoji": "🍬", "name": "Açúcar", "cost": 15 },
+    { "id": "water", "emoji": "💧", "name": "Água", "cost": 5 },
+    { "id": "cups", "emoji": "🥤", "name": "Copos", "cost": 10 }
+  ],
+  "priceOptions": [50, 75, 100, 150],
+  "tips": [
+    "Se o preço for muito baixo, vendes muitos copos mas ganhas pouco por copo.",
+    "Se o preço for muito alto, ganhas mais por copo, mas algumas pessoas não compram.",
+    "O lucro é o dinheiro que sobra depois de pagares os ingredientes."
+  ]
+}

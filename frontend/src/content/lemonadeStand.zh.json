@@ -1,0 +1,14 @@
+{
+  "ingredients": [
+    { "id": "lemons", "emoji": "🍋", "name": "柠檬", "cost": 20 },
+    { "id": "sugar", "emoji": "🍬", "name": "糖", "cost": 15 },
+    { "id": "water", "emoji": "💧", "name": "水", "cost": 5 },
+    { "id": "cups", "emoji": "🥤", "name": "杯子", "cost": 10 }
+  ],
+  "priceOptions": [50, 75, 100, 150],
+  "tips": [
+    "如果价格太低，你会卖出很多杯，但每杯赚得很少。",
+    "如果价格太高，每杯赚得更多，但有些人不会购买。",
+    "利润是付清材料费之后剩下的钱。"
+  ]
+}

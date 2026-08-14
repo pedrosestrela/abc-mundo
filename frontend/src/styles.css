@@ -294,6 +294,16 @@ body {
   cursor: pointer;
 }
 
+.reading-card.done {
+  background: #eafbea;
+  box-shadow: 0 3px 8px rgba(60, 180, 90, 0.18);
+}
+
+.reading-card.disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
 .reading-emoji {
   font-size: 3rem;
 }

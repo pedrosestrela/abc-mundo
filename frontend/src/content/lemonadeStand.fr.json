@@ -1,0 +1,14 @@
+{
+  "ingredients": [
+    { "id": "lemons", "emoji": "🍋", "name": "Citrons", "cost": 20 },
+    { "id": "sugar", "emoji": "🍬", "name": "Sucre", "cost": 15 },
+    { "id": "water", "emoji": "💧", "name": "Eau", "cost": 5 },
+    { "id": "cups", "emoji": "🥤", "name": "Gobelets", "cost": 10 }
+  ],
+  "priceOptions": [50, 75, 100, 150],
+  "tips": [
+    "Si le prix est trop bas, tu vends beaucoup de gobelets mais tu gagnes peu par gobelet.",
+    "Si le prix est trop haut, tu gagnes plus par gobelet, mais certaines personnes n'achètent pas.",
+    "Le profit, c'est l'argent qui reste après avoir payé les ingrédients."
+  ]
+}

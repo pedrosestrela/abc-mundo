@@ -1,0 +1,10 @@
+[
+  { "id": "ad1", "emoji": "🌟", "text": "🌟🌟🌟 世界上最好的玩具！！！仅限今天！！！", "isAd": true, "explanation": "\"世界上最好\"是一种观点，没有人能证明这一点。而\"仅限今天\"是想让你赶快购买。" },
+  { "id": "fact1", "emoji": "📏", "text": "这个玩具高20厘米。", "isAd": false, "explanation": "这是一个事实：你可以用尺子量一量确认。" },
+  { "id": "ad2", "emoji": "😱", "text": "你会比以前尝试过的任何东西都更喜欢它！", "isAd": true, "explanation": "没有人知道你会有什么感受。这是一种夸张的观点，用来让你兴奋。" },
+  { "id": "fact2", "emoji": "🔋", "text": "这个手电筒使用两节5号电池。", "isAd": false, "explanation": "这是一个事实，你可以打开手电筒来验证。" },
+  { "id": "ad3", "emoji": "⏰", "text": "最后几件！现在就买，不然就没了！", "isAd": true, "explanation": "制造紧迫感（\"最后几件\"、\"现在\"）是一种广告技巧，让你不假思索地做决定。" },
+  { "id": "fact3", "emoji": "🍫", "text": "这块巧克力重100克。", "isAd": false, "explanation": "这是一个事实：你可以用秤称一称。" },
+  { "id": "ad4", "emoji": "🏆", "text": "所有小朋友都选择的第一名口味！", "isAd": true, "explanation": "\"所有小朋友\"是夸张说法——不可能问到世界上每一个小朋友。" },
+  { "id": "fact4", "emoji": "🎨", "text": "这支蜡笔是红色的。", "isAd": false, "explanation": "这是一个简单的事实，任何人都能看到并确认。" }
+]

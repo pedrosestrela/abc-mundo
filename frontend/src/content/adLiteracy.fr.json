@@ -1,0 +1,10 @@
+[
+  { "id": "ad1", "emoji": "🌟", "text": "🌟🌟🌟 LE MEILLEUR JOUET DU MONDE !!! Aujourd'hui seulement !!!", "isAd": true, "explanation": "\"Le meilleur du monde\" est une opinion, personne ne peut le prouver. Et \"aujourd'hui seulement\" veut te presser d'acheter vite." },
+  { "id": "fact1", "emoji": "📏", "text": "Ce jouet mesure 20 centimètres de haut.", "isAd": false, "explanation": "C'est un fait : tu peux prendre une règle et vérifier la mesure." },
+  { "id": "ad2", "emoji": "😱", "text": "Tu vas adorer ça PLUS que tout ce que tu as essayé !", "isAd": true, "explanation": "Personne ne sait ce que tu vas ressentir. C'est une opinion exagérée pour t'enthousiasmer." },
+  { "id": "fact2", "emoji": "🔋", "text": "Cette lampe de poche utilise deux piles AA.", "isAd": false, "explanation": "C'est un fait que tu peux vérifier en ouvrant la lampe." },
+  { "id": "ad3", "emoji": "⏰", "text": "Dernières pièces ! Achète MAINTENANT avant qu'il n'y en ait plus !", "isAd": true, "explanation": "Créer de l'urgence (\"dernières pièces\", \"maintenant\") est une technique publicitaire pour te faire décider sans réfléchir." },
+  { "id": "fact3", "emoji": "🍫", "text": "Cette tablette de chocolat pèse 100 grammes.", "isAd": false, "explanation": "C'est un fait : tu peux peser la tablette sur une balance." },
+  { "id": "ad4", "emoji": "🏆", "text": "Le goût numéro 1 choisi par TOUS les enfants !", "isAd": true, "explanation": "\"Tous les enfants\" est une exagération — impossible de demander à chaque enfant du monde." },
+  { "id": "fact4", "emoji": "🎨", "text": "Ce crayon de couleur est rouge.", "isAd": false, "explanation": "C'est un fait simple que tout le monde peut voir et vérifier." }
+]

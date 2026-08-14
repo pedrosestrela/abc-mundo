@@ -1,0 +1,14 @@
+{
+  "ingredients": [
+    { "id": "lemons", "emoji": "🍋", "name": "Limoni", "cost": 20 },
+    { "id": "sugar", "emoji": "🍬", "name": "Zucchero", "cost": 15 },
+    { "id": "water", "emoji": "💧", "name": "Acqua", "cost": 5 },
+    { "id": "cups", "emoji": "🥤", "name": "Bicchieri", "cost": 10 }
+  ],
+  "priceOptions": [50, 75, 100, 150],
+  "tips": [
+    "Se il prezzo è troppo basso, vendi tanti bicchieri ma guadagni poco per bicchiere.",
+    "Se il prezzo è troppo alto, guadagni di più per bicchiere, ma alcune persone non comprano.",
+    "Il profitto è il denaro che resta dopo aver pagato gli ingredienti."
+  ]
+}

@@ -1,0 +1,10 @@
+[
+  { "id": "ad1", "emoji": "🌟", "text": "🌟🌟🌟 THE BEST TOY IN THE WORLD!!! Today only!!!", "isAd": true, "explanation": "\"Best in the world\" is an opinion — nobody can prove that. And \"today only\" tries to rush you into buying fast." },
+  { "id": "fact1", "emoji": "📏", "text": "This toy is 20 centimeters tall.", "isAd": false, "explanation": "This is a fact: you can grab a ruler and check the measurement." },
+  { "id": "ad2", "emoji": "😱", "text": "You'll love this MORE than anything you've ever tried!", "isAd": true, "explanation": "Nobody knows what you'll feel. It's an exaggerated opinion meant to excite you." },
+  { "id": "fact2", "emoji": "🔋", "text": "This flashlight uses two AA batteries.", "isAd": false, "explanation": "This is a fact you can check by opening the flashlight." },
+  { "id": "ad3", "emoji": "⏰", "text": "Last units left! Buy NOW before it's gone!", "isAd": true, "explanation": "Creating urgency (\"last units\", \"now\") is an advertising technique to make you decide without thinking." },
+  { "id": "fact3", "emoji": "🍫", "text": "This chocolate bar weighs 100 grams.", "isAd": false, "explanation": "It's a fact: you can weigh the bar on a scale." },
+  { "id": "ad4", "emoji": "🏆", "text": "The number 1 flavor chosen by ALL kids!", "isAd": true, "explanation": "\"All kids\" is an exaggeration — it's impossible to ask every child in the world." },
+  { "id": "fact4", "emoji": "🎨", "text": "This crayon is red.", "isAd": false, "explanation": "It's a simple fact that anyone can see and confirm." }
+]

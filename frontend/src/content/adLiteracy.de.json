@@ -1,0 +1,10 @@
+[
+  { "id": "ad1", "emoji": "🌟", "text": "🌟🌟🌟 DAS BESTE SPIELZEUG DER WELT!!! Nur heute!!!", "isAd": true, "explanation": "\"Das Beste der Welt\" ist eine Meinung, das kann niemand beweisen. Und \"nur heute\" will dich zum schnellen Kaufen drängen." },
+  { "id": "fact1", "emoji": "📏", "text": "Dieses Spielzeug ist 20 Zentimeter hoch.", "isAd": false, "explanation": "Das ist eine Tatsache: Du kannst ein Lineal nehmen und es nachmessen." },
+  { "id": "ad2", "emoji": "😱", "text": "Du wirst das MEHR lieben als alles, was du je ausprobiert hast!", "isAd": true, "explanation": "Niemand weiß, was du fühlen wirst. Das ist eine übertriebene Meinung, um dich zu begeistern." },
+  { "id": "fact2", "emoji": "🔋", "text": "Diese Taschenlampe braucht zwei AA-Batterien.", "isAd": false, "explanation": "Das ist eine Tatsache, die du überprüfen kannst, indem du die Lampe öffnest." },
+  { "id": "ad3", "emoji": "⏰", "text": "Letzte Stücke! Kauf JETZT, bevor es weg ist!", "isAd": true, "explanation": "Dringlichkeit zu erzeugen (\"letzte Stücke\", \"jetzt\") ist eine Werbetechnik, damit du ohne Nachdenken entscheidest." },
+  { "id": "fact3", "emoji": "🍫", "text": "Diese Schokoladentafel wiegt 100 Gramm.", "isAd": false, "explanation": "Das ist eine Tatsache: Du kannst die Tafel auf einer Waage wiegen." },
+  { "id": "ad4", "emoji": "🏆", "text": "Der Geschmack Nr. 1, gewählt von ALLEN Kindern!", "isAd": true, "explanation": "\"Alle Kinder\" ist übertrieben — man kann unmöglich jedes Kind der Welt fragen." },
+  { "id": "fact4", "emoji": "🎨", "text": "Dieser Buntstift ist rot.", "isAd": false, "explanation": "Das ist eine einfache Tatsache, die jeder sehen und bestätigen kann." }
+]

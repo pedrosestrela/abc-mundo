@@ -1,0 +1,10 @@
+[
+  { "id": "ad1", "emoji": "🌟", "text": "🌟🌟🌟 ¡EL MEJOR JUGUETE DEL MUNDO!!! ¡Solo hoy!!!", "isAd": true, "explanation": "\"El mejor del mundo\" es una opinión, nadie puede probarlo. Y \"solo hoy\" quiere apurarte a comprar rápido." },
+  { "id": "fact1", "emoji": "📏", "text": "Este juguete mide 20 centímetros de alto.", "isAd": false, "explanation": "Esto es un hecho: puedes coger una regla y comprobar la medida." },
+  { "id": "ad2", "emoji": "😱", "text": "¡Te va a encantar MÁS que todo lo que has probado!", "isAd": true, "explanation": "Nadie sabe lo que vas a sentir. Es una opinión exagerada para entusiasmarte." },
+  { "id": "fact2", "emoji": "🔋", "text": "Esta linterna usa dos pilas AA.", "isAd": false, "explanation": "Esto es un hecho que puedes comprobar abriendo la linterna." },
+  { "id": "ad3", "emoji": "⏰", "text": "¡Últimas unidades! ¡Compra YA antes de que se acabe!", "isAd": true, "explanation": "Crear urgencia (\"últimas unidades\", \"ya\") es una técnica publicitaria para que decidas sin pensar." },
+  { "id": "fact3", "emoji": "🍫", "text": "Esta tableta de chocolate pesa 100 gramos.", "isAd": false, "explanation": "Es un hecho: puedes pesar la tableta en una balanza." },
+  { "id": "ad4", "emoji": "🏆", "text": "¡El sabor número 1 elegido por TODOS los niños!", "isAd": true, "explanation": "\"Todos los niños\" es una exageración — es imposible preguntar a cada niño del mundo." },
+  { "id": "fact4", "emoji": "🎨", "text": "Este lápiz de color es rojo.", "isAd": false, "explanation": "Es un hecho simple que cualquiera puede ver y confirmar." }
+]

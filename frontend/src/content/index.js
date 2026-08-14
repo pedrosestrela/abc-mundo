@@ -146,6 +146,30 @@ import computingSafetyZh from "./computingSafety.zh.json";
 import computingSafetyEs from "./computingSafety.es.json";
 import computingSafetyIt from "./computingSafety.it.json";
 
+import lemonadeStandPt from "./lemonadeStand.pt.json";
+import lemonadeStandEn from "./lemonadeStand.en.json";
+import lemonadeStandDe from "./lemonadeStand.de.json";
+import lemonadeStandFr from "./lemonadeStand.fr.json";
+import lemonadeStandZh from "./lemonadeStand.zh.json";
+import lemonadeStandEs from "./lemonadeStand.es.json";
+import lemonadeStandIt from "./lemonadeStand.it.json";
+
+import shoppingPt from "./shopping.pt.json";
+import shoppingEn from "./shopping.en.json";
+import shoppingDe from "./shopping.de.json";
+import shoppingFr from "./shopping.fr.json";
+import shoppingZh from "./shopping.zh.json";
+import shoppingEs from "./shopping.es.json";
+import shoppingIt from "./shopping.it.json";
+
+import adLiteracyPt from "./adLiteracy.pt.json";
+import adLiteracyEn from "./adLiteracy.en.json";
+import adLiteracyDe from "./adLiteracy.de.json";
+import adLiteracyFr from "./adLiteracy.fr.json";
+import adLiteracyZh from "./adLiteracy.zh.json";
+import adLiteracyEs from "./adLiteracy.es.json";
+import adLiteracyIt from "./adLiteracy.it.json";
+
 export const SUPPORTED_LANGUAGES = [
   { code: "pt", label: "Português", flag: "🇵🇹" },
   { code: "en", label: "English", flag: "🇬🇧" },
@@ -174,6 +198,9 @@ const SCIENCE = { pt: sciencePt, en: scienceEn, de: scienceDe, fr: scienceFr, zh
 const LIFE_SKILLS = { pt: lifeSkillsPt, en: lifeSkillsEn, de: lifeSkillsDe, fr: lifeSkillsFr, zh: lifeSkillsZh, es: lifeSkillsEs, it: lifeSkillsIt };
 const COMPUTING = { pt: computingPt, en: computingEn, de: computingDe, fr: computingFr, zh: computingZh, es: computingEs, it: computingIt };
 const COMPUTING_SAFETY = { pt: computingSafetyPt, en: computingSafetyEn, de: computingSafetyDe, fr: computingSafetyFr, zh: computingSafetyZh, es: computingSafetyEs, it: computingSafetyIt };
+const LEMONADE_STAND = { pt: lemonadeStandPt, en: lemonadeStandEn, de: lemonadeStandDe, fr: lemonadeStandFr, zh: lemonadeStandZh, es: lemonadeStandEs, it: lemonadeStandIt };
+const SHOPPING = { pt: shoppingPt, en: shoppingEn, de: shoppingDe, fr: shoppingFr, zh: shoppingZh, es: shoppingEs, it: shoppingIt };
+const AD_LITERACY = { pt: adLiteracyPt, en: adLiteracyEn, de: adLiteracyDe, fr: adLiteracyFr, zh: adLiteracyZh, es: adLiteracyEs, it: adLiteracyIt };
 
 // Normalizes zh's different shape ({hanzi,...}) to the same shape used by
 // the Latin-alphabet languages ({letter, lower, upper, exampleWord, emoji}).
@@ -253,6 +280,18 @@ export function getComputing(langCode) {
 
 export function getComputingSafety(langCode) {
   return COMPUTING_SAFETY[langCode] || [];
+}
+
+export function getLemonadeStand(langCode) {
+  return LEMONADE_STAND[langCode] || LEMONADE_STAND.pt;
+}
+
+export function getShopping(langCode) {
+  return SHOPPING[langCode] || SHOPPING.pt;
+}
+
+export function getAdLiteracy(langCode) {
+  return AD_LITERACY[langCode] || [];
 }
 
 // Countries are language-agnostic in shape (name/fact are per-language
