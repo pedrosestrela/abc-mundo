@@ -1693,6 +1693,11 @@ body {
   padding: 0 14px 14px;
 }
 
+.history-era-illustration {
+  max-width: 220px;
+  margin: 0 auto 10px;
+}
+
 .computing-card {
   border-color: var(--blue);
 }
