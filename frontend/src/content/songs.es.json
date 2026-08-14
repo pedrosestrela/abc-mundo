@@ -31,5 +31,16 @@
       "Nuestro abecedario es un tesoro"
     ],
     "illustrationId": "alphabet-circle"
+  },
+  {
+    "id": "cancion-de-la-luna",
+    "title": "La Canción de la Luna y las Estrellas",
+    "lyrics": [
+      "La luna brilla, las letras van a dormir",
+      "Una por una, empiezan a sonreír",
+      "Buenas noches, A, buenas noches, Z",
+      "Mañana jugamos otra vez"
+    ],
+    "illustrationId": "starry-night"
   }
 ]

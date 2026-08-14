@@ -1,0 +1,114 @@
+[
+  {
+    "id": "chuva",
+    "emoji": "🌧️",
+    "question": "¿Por qué llueve?",
+    "quickAnswer": "El agua del mar, de los ríos y de los lagos se evapora, sube al cielo y forma nubes. Cuando las nubes se llenan demasiado de agua, esta cae en forma de lluvia.",
+    "moreAnswer": "El Sol calienta el agua y la convierte en vapor invisible que sube por el aire. Allí arriba hace más frío, así que el vapor se condensa en gotitas diminutas que forman las nubes. Cuando las gotitas se juntan y pesan demasiado, caen como lluvia. Después todo vuelve al mar y a los ríos, y el ciclo empieza otra vez: se llama el ciclo del agua.",
+    "experiment": "Un día caluroso, observa un charco de agua al sol por la mañana y mira cómo desaparece a lo largo del día. ¿A dónde fue el agua?"
+  },
+  {
+    "id": "ceu-azul",
+    "emoji": "🌤️",
+    "question": "¿Por qué el cielo es azul?",
+    "quickAnswer": "La luz del Sol tiene todos los colores mezclados. Al entrar en la atmósfera, el azul se dispersa mucho más que los demás colores, por eso vemos el cielo azul.",
+    "moreAnswer": "La luz del Sol parece blanca, pero en realidad está formada por varios colores, como un arcoíris. El aire está hecho de partículas diminutas que hacen que la luz rebote en todas las direcciones, un fenómeno llamado dispersión. La luz azul tiene ondas más cortas y se dispersa mucho más que el rojo o el amarillo, por eso el cielo parece azul durante el día.",
+    "experiment": "Al atardecer, observa cómo el cielo se vuelve naranja y rojo en lugar de azul. Eso ocurre porque la luz atraviesa más atmósfera en ese momento."
+  },
+  {
+    "id": "dormir",
+    "emoji": "😴",
+    "question": "¿Por qué dormimos?",
+    "quickAnswer": "Dormir permite que el cuerpo y el cerebro descansen, nos ayuda a crecer y a guardar en la memoria todo lo que aprendimos durante el día.",
+    "moreAnswer": "Mientras dormimos, el cerebro ordena todo lo que aprendimos y vivimos, como si organizara un cajón lleno de cosas. El cuerpo aprovecha ese tiempo para reparar los músculos, producir hormonas de crecimiento y fortalecer el sistema inmunitario. Sin dormir lo suficiente, nos sentimos cansados, olvidadizos y enfermamos con más facilidad.",
+    "experiment": "Anota durante una semana cuántas horas duermes y observa cómo te sientes los días que dormiste más o menos."
+  },
+  {
+    "id": "coracao",
+    "emoji": "❤️",
+    "question": "¿Por qué late el corazón?",
+    "quickAnswer": "El corazón late para bombear la sangre por todo el cuerpo, llevando oxígeno y alimento a cada parte de ti.",
+    "moreAnswer": "El corazón es un músculo muy especial que se contrae y se relaja sin parar, como una bomba. Cada latido empuja sangre rica en oxígeno hacia los pulmones, los músculos y el cerebro. Cuando corres o te asustas, tu corazón late más rápido porque tu cuerpo necesita más oxígeno.",
+    "experiment": "Corre en el sitio durante un minuto y luego pon la mano en el pecho. ¿Sientes cómo late más rápido tu corazón?"
+  },
+  {
+    "id": "aviao",
+    "emoji": "✈️",
+    "question": "¿Cómo vuela un avión?",
+    "quickAnswer": "Las alas de un avión tienen una forma especial que hace que el aire se mueva más rápido por encima que por debajo, creando una fuerza que empuja el avión hacia arriba.",
+    "moreAnswer": "Esa fuerza se llama sustentación. El ala es curva por encima y más plana por debajo, así que el aire que pasa por arriba recorre una distancia mayor y crea menos presión. La presión más alta de abajo empuja el ala hacia el aire. Los motores dan la velocidad necesaria para que esto funcione.",
+    "experiment": "Sopla por encima de una tira de papel sujeta cerca de tu boca y observa cómo se eleva. ¡Es el mismo principio de la sustentación!"
+  },
+  {
+    "id": "barco",
+    "emoji": "⛵",
+    "question": "¿Por qué flota un barco?",
+    "quickAnswer": "Un barco flota porque desplaza hacia los lados más agua de la que pesa, y el agua lo empuja de vuelta hacia arriba.",
+    "moreAnswer": "A esto se le llama el principio de Arquímedes: cualquier objeto en el agua recibe una fuerza hacia arriba igual al peso del agua que desplaza. Un barco tiene una forma ancha y hueca, así que desplaza mucha agua aunque pese mucho, y esa fuerza es suficiente para mantenerlo a flote.",
+    "experiment": "Haz un pequeño barco con papel de aluminio e intenta hacerlo flotar en un recipiente con agua. Luego arrúgalo formando una bola: ¿por qué se hunde ahora?"
+  },
+  {
+    "id": "eletricidade",
+    "emoji": "⚡",
+    "question": "¿De dónde viene la electricidad?",
+    "quickAnswer": "La electricidad se produce en centrales que transforman otras formas de energía, como el viento, el agua o el sol, en energía eléctrica.",
+    "moreAnswer": "En las centrales eléctricas, algo hace girar una turbina muy rápido: puede ser agua que cae, viento fuerte o vapor caliente. La turbina está conectada a un generador que transforma ese movimiento en electricidad. Después la electricidad viaja por cables hasta nuestras casas.",
+    "experiment": "Busca un molino de viento o un panel solar cerca de ti y observa cómo aprovechan el viento o el sol."
+  },
+  {
+    "id": "dinossauros",
+    "emoji": "🦕",
+    "question": "¿Por qué desaparecieron los dinosaurios?",
+    "quickAnswer": "Los científicos creen que un enorme asteroide chocó contra la Tierra hace millones de años y cambió el clima tan rápido que los dinosaurios no pudieron sobrevivir.",
+    "moreAnswer": "Hace unos 66 millones de años, un asteroide gigante impactó contra la Tierra. El impacto lanzó tanto polvo y ceniza al aire que oscureció el cielo durante mucho tiempo, dejando el planeta frío y sin luz suficiente para que crecieran las plantas. Sin alimento, la mayoría de los dinosaurios no sobrevivió. Solo algunos animales pequeños, como los antepasados de las aves, lograron resistir.",
+    "experiment": null
+  },
+  {
+    "id": "sombra",
+    "emoji": "🌗",
+    "question": "¿Por qué tenemos sombra?",
+    "quickAnswer": "La sombra aparece cuando tu cuerpo bloquea la luz y no la deja llegar al suelo detrás de ti.",
+    "moreAnswer": "La luz siempre viaja en línea recta. Cuando un objeto opaco, como tu cuerpo, se pone en su camino, no puede atravesarlo, y por eso queda un espacio oscuro del otro lado: la sombra. Cuanto más cerca esté la luz de ti, más grande y nítida será la sombra.",
+    "experiment": "Un día soleado, observa tu sombra por la mañana, al mediodía y por la tarde. Fíjate cómo cambia de tamaño y dirección."
+  },
+  {
+    "id": "lua",
+    "emoji": "🌙",
+    "question": "¿Por qué la Luna cambia de forma?",
+    "quickAnswer": "La Luna no cambia de forma de verdad: lo que vemos son partes distintas de ella iluminadas por el Sol, según su posición respecto a la Tierra.",
+    "moreAnswer": "La Luna no tiene luz propia; refleja la luz del Sol. Mientras la Luna gira alrededor de la Tierra, vemos diferentes partes iluminadas: a veces la vemos entera (Luna llena), a veces solo un pedacito (Luna nueva o creciente). Este ciclo completo dura unos 29 días.",
+    "experiment": "Observa la Luna todas las noches durante dos semanas y dibuja la forma que ves cada día."
+  },
+  {
+    "id": "frio",
+    "emoji": "🥶",
+    "question": "¿Por qué sentimos frío?",
+    "quickAnswer": "Sentimos frío cuando el cuerpo pierde calor más rápido de lo que puede producirlo, y la piel avisa de eso al cerebro.",
+    "moreAnswer": "Nuestra piel tiene sensores que detectan la temperatura a nuestro alrededor. Cuando hace frío, el cuerpo pierde calor hacia el aire, y esos sensores envían una señal al cerebro. El cerebro responde haciéndonos temblar, lo que genera calor mediante el movimiento de los músculos, y reduciendo la sangre cerca de la piel para conservar el calor dentro del cuerpo.",
+    "experiment": "Pon una mano en agua tibia y la otra en agua fría al mismo tiempo. ¿Cómo se siente cada una?"
+  },
+  {
+    "id": "peixes",
+    "emoji": "🐟",
+    "question": "¿Por qué los peces no se ahogan?",
+    "quickAnswer": "Los peces tienen branquias, un órgano especial que extrae el oxígeno directamente del agua, así que no necesitan respirar aire como nosotros.",
+    "moreAnswer": "Mientras nosotros respiramos con pulmones y necesitamos aire, los peces usan branquias, situadas a los lados de la cabeza. Cuando el agua pasa por las branquias, estas extraen el oxígeno disuelto en el agua y lo dejan entrar en la sangre del pez. Por eso un pez fuera del agua no puede respirar, igual que nosotros no podemos respirar bajo el agua sin ayuda.",
+    "experiment": "Observa un pez en un acuario y fíjate en el movimiento constante de la boca y las branquias: así es como respira."
+  },
+  {
+    "id": "arco-iris",
+    "emoji": "🌈",
+    "question": "¿Por qué aparece el arcoíris?",
+    "quickAnswer": "El arcoíris aparece cuando la luz del Sol atraviesa gotas de lluvia en el aire y se separa en los distintos colores que la componen.",
+    "moreAnswer": "La luz blanca del Sol es en realidad una mezcla de varios colores. Cuando los rayos de sol entran en una gota de agua, se curvan, se reflejan dentro de la gota y salen de nuevo, separándose en distintos colores, como un pequeño prisma. Por eso el arcoíris solo aparece cuando hay sol y lluvia al mismo tiempo.",
+    "experiment": "De espaldas al Sol, usa una manguera o un rociador de agua para crear un pequeño arcoíris."
+  },
+  {
+    "id": "formigas",
+    "emoji": "🐜",
+    "question": "¿Por qué las hormigas caminan en fila?",
+    "quickAnswer": "Las hormigas dejan un rastro de olor en el camino hacia la comida, y las demás hormigas siguen ese olor, formando una fila.",
+    "moreAnswer": "Cuando una hormiga encuentra comida, en el camino de vuelta al hormiguero deja en el suelo una sustancia llamada feromona, con un olor que solo las hormigas pueden detectar. Las demás hormigas siguen ese olor para llegar a la misma comida, y al caminar también dejan más feromona, reforzando el camino. Así se forma la fila organizada.",
+    "experiment": "Si ves una fila de hormigas, observa con cuidado (sin tocarlas) el camino que hacen: suele ser siempre la misma ruta."
+  }
+]

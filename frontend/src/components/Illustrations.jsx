@@ -57,10 +57,63 @@ export function AlphabetCircle() {
   );
 }
 
+export function StarryNight() {
+  const stars = [
+    { x: 30, y: 30 }, { x: 60, y: 15 }, { x: 160, y: 25 },
+    { x: 175, y: 60 }, { x: 20, y: 80 }, { x: 140, y: 100 },
+  ];
+  return (
+    <svg viewBox="0 0 200 140" width="100%" height="auto" role="img" aria-label="Moon and stars">
+      <rect x="0" y="0" width="200" height="140" fill="#2b2d5c" />
+      <circle cx="140" cy="45" r="26" fill="#ffe066" />
+      <circle cx="150" cy="38" r="22" fill="#2b2d5c" />
+      {stars.map((s, i) => (
+        <text key={i} x={s.x} y={s.y} fontSize="16" fill="#fff9c4">★</text>
+      ))}
+      <path d="M20 130 Q100 100 180 130 L180 140 L20 140 Z" fill="#4d96ff" />
+    </svg>
+  );
+}
+
+export function CountingBlocks() {
+  const blocks = [
+    { n: 1, color: "#ff6b6b" },
+    { n: 2, color: "#ffd93d" },
+    { n: 3, color: "#6bcb77" },
+    { n: 4, color: "#4d96ff" },
+    { n: 5, color: "#9b5de5" },
+  ];
+  return (
+    <svg viewBox="0 0 200 100" width="100%" height="auto" role="img" aria-label="Counting blocks">
+      {blocks.map((b, i) => (
+        <g key={b.n}>
+          <rect x={10 + i * 38} y="30" width="30" height="30" rx="6" fill={b.color} />
+          <text x={25 + i * 38} y="52" fontSize="16" fontWeight="bold" fill="#fff" textAnchor="middle">
+            {b.n}
+          </text>
+        </g>
+      ))}
+    </svg>
+  );
+}
+
+export function ShapesFun() {
+  return (
+    <svg viewBox="0 0 200 100" width="100%" height="auto" role="img" aria-label="Shapes">
+      <circle cx="35" cy="50" r="26" fill="#ff6b6b" />
+      <rect x="80" y="24" width="52" height="52" fill="#4d96ff" />
+      <polygon points="170,20 195,75 145,75" fill="#6bcb77" />
+    </svg>
+  );
+}
+
 const ILLUSTRATIONS = {
   "sun-friends": SunFriends,
   "jumping-letters": JumpingLetters,
   "alphabet-circle": AlphabetCircle,
+  "starry-night": StarryNight,
+  "counting-blocks": CountingBlocks,
+  "shapes-fun": ShapesFun,
 };
 
 export default function Illustration({ illustrationId }) {

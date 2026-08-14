@@ -31,5 +31,49 @@
       "O nosso alfabeto nunca vai parar"
     ],
     "illustrationId": "alphabet-circle"
+  },
+  {
+    "id": "cancao-da-lua",
+    "title": "A Canção da Lua e das Estrelas",
+    "lyrics": [
+      "A lua brilha, as letras vão dormir",
+      "Uma a uma, começam a sorrir",
+      "Boa noite, A, boa noite, Z",
+      "Amanhã brincamos outra vez"
+    ],
+    "illustrationId": "starry-night"
+  },
+  {
+    "id": "cancao-de-contar",
+    "title": "A Canção de Contar",
+    "lyrics": [
+      "Um, dois, três, vamos contar",
+      "Quatro, cinco, seis, sem parar",
+      "Sete, oito, nove, chegou o dez",
+      "Contar números é uma vez"
+    ],
+    "illustrationId": "counting-blocks"
+  },
+  {
+    "id": "cancao-das-formas",
+    "title": "A Canção das Formas",
+    "lyrics": [
+      "Redondo é o círculo, roda que gira",
+      "Quatro lados iguais, o quadrado admira",
+      "Três pontas tem o triângulo feliz",
+      "Formas no mundo, aprende quem quis"
+    ],
+    "illustrationId": "shapes-fun"
+  },
+  {
+    "id": "cancao-dos-dias",
+    "title": "A Canção dos Dias da Semana",
+    "lyrics": [
+      "Segunda, terça, quarta a passar",
+      "Quinta, sexta, quase a chegar",
+      "Sábado e domingo, é fim de semana",
+      "Sete dias felizes, que festa galana"
+    ],
+    "illustrationId": "sun-friends"
   }
 ]

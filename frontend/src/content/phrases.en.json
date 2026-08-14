@@ -1,0 +1,10 @@
+[
+  { "phrase": "THE SUN IS YELLOW.", "emoji": "☀️", "hint": "The sun is yellow." },
+  { "phrase": "THE CAT SLEEPS.", "emoji": "🐱", "hint": "The cat sleeps." },
+  { "phrase": "I LIKE YOU.", "emoji": "❤️", "hint": "I like you." },
+  { "phrase": "THE MOON IS ROUND.", "emoji": "🌙", "hint": "The moon is round." },
+  { "phrase": "THE DOG RUNS IN THE GARDEN.", "emoji": "🐶", "hint": "The dog runs in the garden." },
+  { "phrase": "I AM HAPPY.", "emoji": "😄", "hint": "I am happy." },
+  { "phrase": "THE APPLE IS RED.", "emoji": "🍎", "hint": "The apple is red." },
+  { "phrase": "LET'S PLAY.", "emoji": "🧸", "hint": "Let's play." }
+]

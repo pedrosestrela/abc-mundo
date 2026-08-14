@@ -1,0 +1,28 @@
+[
+  {
+    "id": "curious-fox",
+    "title": "A Raposa Curiosa",
+    "emoji": "🦊",
+    "pages": [
+      { "text": "Era uma vez uma pequena raposa chamada Mimi.", "emoji": "🦊" },
+      { "text": "Mimi adorava explorar a floresta todos os dias.", "emoji": "🌳" },
+      { "text": "Um dia, encontrou um rio a brilhar ao sol.", "emoji": "🌊" },
+      { "text": "Ela viu um peixinho e ficou muito curiosa.", "emoji": "🐟" },
+      { "text": "Mimi aprendeu que o mundo tem muitas surpresas.", "emoji": "✨" },
+      { "text": "Voltou a casa feliz, cheia de novas histórias.", "emoji": "🏡" }
+    ]
+  },
+  {
+    "id": "kind-friends",
+    "title": "Os Amigos Bondosos",
+    "emoji": "🐻",
+    "pages": [
+      { "text": "O ursinho Bruno perdeu a sua bola no parque.", "emoji": "🐻" },
+      { "text": "O coelho Tito viu Bruno triste e foi ajudar.", "emoji": "🐰" },
+      { "text": "Juntos procuraram atrás das árvores e das flores.", "emoji": "🌸" },
+      { "text": "Finalmente encontraram a bola debaixo de um banco.", "emoji": "⚽" },
+      { "text": "Bruno sorriu e agradeceu ao amigo Tito.", "emoji": "😊" },
+      { "text": "Aprenderam que ajudar os amigos é muito bom.", "emoji": "💛" }
+    ]
+  }
+]

@@ -31,5 +31,16 @@
       "Notre alphabet est notre destin"
     ],
     "illustrationId": "alphabet-circle"
+  },
+  {
+    "id": "chanson-de-la-lune",
+    "title": "La Chanson de la Lune et des Étoiles",
+    "lyrics": [
+      "La lune brille, les lettres vont dormir",
+      "Une par une, elles vont sourire",
+      "Bonne nuit, A, bonne nuit, Z",
+      "Demain on joue, sans tarder"
+    ],
+    "illustrationId": "starry-night"
   }
 ]

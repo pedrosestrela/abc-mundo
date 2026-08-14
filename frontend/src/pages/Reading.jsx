@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { getReading } from "../content/index.js";
-import { getLangPair, getProfile, pingProgress } from "../storage.js";
+import { getLangPair, getProfile, pingProgress, recordSkillEvent } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
 
 export default function Reading() {
@@ -14,6 +14,7 @@ export default function Reading() {
   function handleView(word) {
     const profile = getProfile();
     pingProgress({ profileName: profile?.name, module: "reading", event: `word_viewed:${word}` });
+    recordSkillEvent(profile?.name, "reading-word", true);
   }
 
   return (

@@ -1,5 +1,5 @@
 {
-  "_note": "Starter subset of ~30 common Mandarin characters (not a full alphabet — Chinese has no alphabet). Meant to be expanded over time with more characters, tones, and stroke-order data.",
+  "_note": "Extended subset of ~50 common Mandarin characters (not a full alphabet — Chinese has no alphabet). Meant to be expanded over time with more characters, tones, and stroke-order data.",
   "characters": [
     { "hanzi": "人", "pinyin": "rén", "exampleWord": "人 (pessoa/person)", "emoji": "🧑" },
     { "hanzi": "口", "pinyin": "kǒu", "exampleWord": "口 (boca/mouth)", "emoji": "👄" },
@@ -30,6 +30,27 @@
     { "hanzi": "门", "pinyin": "mén", "exampleWord": "门 (porta/door)", "emoji": "🚪" },
     { "hanzi": "车", "pinyin": "chē", "exampleWord": "车 (carro/car)", "emoji": "🚗" },
     { "hanzi": "书", "pinyin": "shū", "exampleWord": "书 (livro/book)", "emoji": "📖" },
-    { "hanzi": "好", "pinyin": "hǎo", "exampleWord": "好 (bom/good)", "emoji": "👍" }
+    { "hanzi": "好", "pinyin": "hǎo", "exampleWord": "好 (bom/good)", "emoji": "👍" },
+    { "hanzi": "妈", "pinyin": "mā", "exampleWord": "妈妈 (mãe/mom)", "emoji": "👩" },
+    { "hanzi": "爸", "pinyin": "bà", "exampleWord": "爸爸 (pai/dad)", "emoji": "👨" },
+    { "hanzi": "牛", "pinyin": "niú", "exampleWord": "牛 (vaca/cow)", "emoji": "🐄" },
+    { "hanzi": "羊", "pinyin": "yáng", "exampleWord": "羊 (ovelha/sheep)", "emoji": "🐑" },
+    { "hanzi": "马", "pinyin": "mǎ", "exampleWord": "马 (cavalo/horse)", "emoji": "🐴" },
+    { "hanzi": "米", "pinyin": "mǐ", "exampleWord": "米 (arroz/rice)", "emoji": "🍚" },
+    { "hanzi": "茶", "pinyin": "chá", "exampleWord": "茶 (chá/tea)", "emoji": "🍵" },
+    { "hanzi": "雨", "pinyin": "yǔ", "exampleWord": "雨 (chuva/rain)", "emoji": "🌧️" },
+    { "hanzi": "云", "pinyin": "yún", "exampleWord": "云 (nuvem/cloud)", "emoji": "☁️" },
+    { "hanzi": "风", "pinyin": "fēng", "exampleWord": "风 (vento/wind)", "emoji": "💨" },
+    { "hanzi": "雪", "pinyin": "xuě", "exampleWord": "雪 (neve/snow)", "emoji": "❄️" },
+    { "hanzi": "红", "pinyin": "hóng", "exampleWord": "红色 (vermelho/red)", "emoji": "🔴" },
+    { "hanzi": "白", "pinyin": "bái", "exampleWord": "白色 (branco/white)", "emoji": "⚪" },
+    { "hanzi": "黑", "pinyin": "hēi", "exampleWord": "黑色 (preto/black)", "emoji": "⚫" },
+    { "hanzi": "笑", "pinyin": "xiào", "exampleWord": "笑 (sorrir/smile)", "emoji": "😄" },
+    { "hanzi": "哭", "pinyin": "kū", "exampleWord": "哭 (chorar/cry)", "emoji": "😢" },
+    { "hanzi": "走", "pinyin": "zǒu", "exampleWord": "走 (andar/walk)", "emoji": "🚶" },
+    { "hanzi": "飞", "pinyin": "fēi", "exampleWord": "飞 (voar/fly)", "emoji": "🕊️" },
+    { "hanzi": "吃", "pinyin": "chī", "exampleWord": "吃 (comer/eat)", "emoji": "🍽️" },
+    { "hanzi": "家", "pinyin": "jiā", "exampleWord": "家 (casa/home)", "emoji": "🏠" },
+    { "hanzi": "友", "pinyin": "yǒu", "exampleWord": "朋友 (amigo/friend)", "emoji": "🤝" }
   ]
 }

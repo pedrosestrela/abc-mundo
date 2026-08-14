@@ -1,0 +1,107 @@
+[
+  {
+    "id": "d1",
+    "statement": "The Earth orbits the Sun.",
+    "emoji": "🌍",
+    "isFact": true,
+    "explanation": "That's a fact: scientists have checked it with observations and calculations for centuries. A fact is something you can verify."
+  },
+  {
+    "id": "d2",
+    "statement": "Chocolate ice cream is the best flavor in the world.",
+    "emoji": "🍫",
+    "isFact": false,
+    "explanation": "That's an opinion! Different people like different flavors, and they're all correct about their own taste. Opinions are about preference, they can't be 'right' or 'wrong' like facts."
+  },
+  {
+    "id": "d3",
+    "statement": "Bats are blind.",
+    "emoji": "🦇",
+    "isFact": false,
+    "explanation": "That's a very common myth! Bats actually see just fine — they also use echolocation (sound) to get around in the dark. When you hear something surprising about animals, it's worth checking a book or asking an adult."
+  },
+  {
+    "id": "d4",
+    "statement": "Water boils at 100 degrees Celsius at sea level.",
+    "emoji": "🌡️",
+    "isFact": true,
+    "explanation": "That's a fact you can test with a thermometer. Anyone, anywhere, gets the same result under the same conditions — that's what makes something verifiable."
+  },
+  {
+    "id": "d5",
+    "statement": "Adventure books are more fun than science books.",
+    "emoji": "📚",
+    "isFact": false,
+    "explanation": "Opinion! It depends what each person enjoys reading. There's no single right answer — and it's fine to disagree with friends about this."
+  },
+  {
+    "id": "d6",
+    "statement": "An ad says a toy will 'make you the fastest kid at school.' How could you check if that's true?",
+    "emoji": "📺",
+    "isFact": false,
+    "explanation": "Ads want to sell things, so they sometimes exaggerate. You can ask: 'Who said this? Is there proof?' Asking an adult or comparing it to what you already know helps you decide if it's a fact or just advertising."
+  },
+  {
+    "id": "d7",
+    "statement": "There are seven continents on Earth.",
+    "emoji": "🗺️",
+    "isFact": true,
+    "explanation": "That's a geography fact you can confirm on an atlas or globe — many independent sources agree on the same number."
+  },
+  {
+    "id": "d8",
+    "statement": "Singing is more fun than drawing.",
+    "emoji": "🎤",
+    "isFact": false,
+    "explanation": "Opinion! Some people love singing, others prefer drawing. Neither answer is 'the right one' — it depends on the person."
+  },
+  {
+    "id": "d9",
+    "statement": "Plants make oxygen through photosynthesis.",
+    "emoji": "🌱",
+    "isFact": true,
+    "explanation": "That's a scientific fact, proven by experiments that anyone can repeat and get the same result."
+  },
+  {
+    "id": "d10",
+    "statement": "A video online shows a dog talking perfectly. Should you believe it right away?",
+    "emoji": "🐶",
+    "isFact": false,
+    "explanation": "Good thing to investigate! Very surprising things online can be edited, jokes, or even computer-made. Before believing or sharing, it's worth thinking 'does this actually seem possible?' and asking an adult."
+  },
+  {
+    "id": "d11",
+    "statement": "Portugal is located in Europe.",
+    "emoji": "🇵🇹",
+    "isFact": true,
+    "explanation": "That's a geography fact — you can confirm it on any world map or atlas."
+  },
+  {
+    "id": "d12",
+    "statement": "Soccer is the most fun sport there is.",
+    "emoji": "⚽",
+    "isFact": false,
+    "explanation": "Opinion! Some people prefer swimming, dance, or basketball. Taste in sports differs from person to person."
+  },
+  {
+    "id": "d13",
+    "statement": "An AI chatbot answered a question and got it wrong. Can that happen?",
+    "emoji": "🤖",
+    "isFact": true,
+    "explanation": "Yes, it can! Computers and AI can make mistakes too, just like people. That's why it's always good to double-check important information with a book, a trusted adult, or another source."
+  },
+  {
+    "id": "d14",
+    "statement": "The adult human body has 206 bones.",
+    "emoji": "🦴",
+    "isFact": true,
+    "explanation": "That's a fact you can verify in science books and with doctors — the number stays the same when many sources confirm it."
+  },
+  {
+    "id": "d15",
+    "statement": "Spinach is the tastiest vegetable.",
+    "emoji": "🥬",
+    "isFact": false,
+    "explanation": "Opinion! Tastes are personal — what's delicious to some may not be to others, and that's perfectly fine."
+  }
+]

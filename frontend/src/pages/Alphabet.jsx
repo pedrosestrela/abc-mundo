@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { getAlphabet, SUPPORTED_LANGUAGES } from "../content/index.js";
-import { getLangPair, getProfile, pingProgress } from "../storage.js";
+import { getLangPair, getProfile, pingProgress, recordSkillEvent } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
 
 function labelFor(code) {
@@ -22,6 +22,7 @@ export default function Alphabet() {
     setIndex(i);
     const profile = getProfile();
     pingProgress({ profileName: profile?.name, module: "alphabet", event: "letter_viewed" });
+    recordSkillEvent(profile?.name, "alphabet-letter", true);
   }
 
   if (!motherLetter || !secondaryLetter) return null;
@@ -31,9 +32,21 @@ export default function Alphabet() {
       <h1>{t("modules.alphabetTitle")} 🔤</h1>
 
       <div className="letter-card">
-        <div className="letter-big">
-          <span>{motherLetter.upper}</span>
-          <span className="letter-lower">{motherLetter.lower}</span>
+        <div className="letter-forms">
+          <div className="letter-form">
+            <div className="letter-big">
+              <span>{motherLetter.upper}</span>
+              <span className="letter-lower">{motherLetter.lower}</span>
+            </div>
+            <div className="letter-form-label">{t("modules.printForm")}</div>
+          </div>
+          <div className="letter-form">
+            <div className="letter-big font-handwritten">
+              <span>{motherLetter.upper}</span>
+              <span className="letter-lower">{motherLetter.lower}</span>
+            </div>
+            <div className="letter-form-label">{t("modules.handwrittenForm")}</div>
+          </div>
         </div>
         <div className="letter-emoji">{motherLetter.emoji}</div>
         <div className="letter-word">
@@ -46,9 +59,21 @@ export default function Alphabet() {
       <div className="letter-divider">/</div>
 
       <div className="letter-card secondary">
-        <div className="letter-big">
-          <span>{secondaryLetter.upper}</span>
-          <span className="letter-lower">{secondaryLetter.lower}</span>
+        <div className="letter-forms">
+          <div className="letter-form">
+            <div className="letter-big">
+              <span>{secondaryLetter.upper}</span>
+              <span className="letter-lower">{secondaryLetter.lower}</span>
+            </div>
+            <div className="letter-form-label">{t("modules.printForm")}</div>
+          </div>
+          <div className="letter-form">
+            <div className="letter-big font-handwritten">
+              <span>{secondaryLetter.upper}</span>
+              <span className="letter-lower">{secondaryLetter.lower}</span>
+            </div>
+            <div className="letter-form-label">{t("modules.handwrittenForm")}</div>
+          </div>
         </div>
         <div className="letter-emoji">{secondaryLetter.emoji}</div>
         <div className="letter-word">

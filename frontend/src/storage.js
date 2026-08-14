@@ -38,6 +38,247 @@ export function setLangPair(pair) {
   }
 }
 
+// Maps a child's age to a difficulty tier used to size/scale game content:
+// tier 1 (5-6y): small pools, short quizzes; tier 2 (7-8y): medium; tier 3 (9y+): full pools, longer quizzes.
+export function getDifficultyTier(age) {
+  const a = Number(age);
+  if (!Number.isFinite(a) || a <= 6) return 1;
+  if (a <= 8) return 2;
+  return 3;
+}
+
+// --- Real-world missions ("Passaporte do Conhecimento") ---
+// Completed missions are tracked separately from skill XP: they represent
+// something the child actually did away from the screen, confirmed by an
+// adult, not a quiz answer — so they're stored as a simple id list per profile.
+
+const MISSIONS_KEY = "abcmundo.missionsDone";
+
+function loadMissionsDone() {
+  try {
+    const raw = localStorage.getItem(MISSIONS_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveMissionsDone(all) {
+  try {
+    localStorage.setItem(MISSIONS_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getCompletedMissions(profileName) {
+  const all = loadMissionsDone();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function completeMission(profileName, missionId) {
+  const name = profileName || "Explorer";
+  const all = loadMissionsDone();
+  const done = new Set(all[name] || []);
+  done.add(missionId);
+  all[name] = Array.from(done);
+  saveMissionsDone(all);
+  return all[name];
+}
+
+// --- World Explorer ("Passaporte do Explorador") ---
+// Tracks which country ISO codes the child has explored (viewed the detail
+// card for), separate from quiz skill tracking.
+
+const VISITED_COUNTRIES_KEY = "abcmundo.visitedCountries";
+
+function loadVisitedCountries() {
+  try {
+    const raw = localStorage.getItem(VISITED_COUNTRIES_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveVisitedCountries(all) {
+  try {
+    localStorage.setItem(VISITED_COUNTRIES_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getVisitedCountries(profileName) {
+  const all = loadVisitedCountries();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function visitCountry(profileName, iso) {
+  const name = profileName || "Explorer";
+  const all = loadVisitedCountries();
+  const visited = new Set(all[name] || []);
+  visited.add(iso);
+  all[name] = Array.from(visited);
+  saveVisitedCountries(all);
+  return all[name];
+}
+
+// --- Atelier da Imaginação ("Art") ---
+// Tracks which creative prompt ids the child has opened/tried, separate from
+// skill XP — there's no right/wrong answer here, just exploration.
+
+const ART_PROMPTS_TRIED_KEY = "abcmundo.artPromptsTried";
+
+function loadArtPromptsTried() {
+  try {
+    const raw = localStorage.getItem(ART_PROMPTS_TRIED_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveArtPromptsTried(all) {
+  try {
+    localStorage.setItem(ART_PROMPTS_TRIED_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getTriedArtPrompts(profileName) {
+  const all = loadArtPromptsTried();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function tryArtPrompt(profileName, promptId) {
+  const name = profileName || "Explorer";
+  const all = loadArtPromptsTried();
+  const tried = new Set(all[name] || []);
+  tried.add(promptId);
+  all[name] = Array.from(tried);
+  saveArtPromptsTried(all);
+  return all[name];
+}
+
+// --- Science Lab ("Laboratório das Descobertas") ---
+// Tracks which experiment ids the child has explored (opened the prediction
+// + explanation for), separate from quiz skill tracking.
+
+const EXPLORED_SCIENCE_KEY = "abcmundo.exploredScience";
+
+function loadExploredScience() {
+  try {
+    const raw = localStorage.getItem(EXPLORED_SCIENCE_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveExploredScience(all) {
+  try {
+    localStorage.setItem(EXPLORED_SCIENCE_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getExploredScience(profileName) {
+  const all = loadExploredScience();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function exploreScienceCard(profileName, cardId) {
+  const name = profileName || "Explorer";
+  const all = loadExploredScience();
+  const explored = new Set(all[name] || []);
+  explored.add(cardId);
+  all[name] = Array.from(explored);
+  saveExploredScience(all);
+  return all[name];
+}
+
+// --- Portugal History Timeline ("Castelo do Tempo") ---
+// Tracks which era ids the child has explored (opened the detail card for).
+
+const VISITED_ERAS_KEY = "abcmundo.visitedEras";
+
+function loadVisitedEras() {
+  try {
+    const raw = localStorage.getItem(VISITED_ERAS_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveVisitedEras(all) {
+  try {
+    localStorage.setItem(VISITED_ERAS_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getVisitedEras(profileName) {
+  const all = loadVisitedEras();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function visitEra(profileName, eraId) {
+  const name = profileName || "Explorer";
+  const all = loadVisitedEras();
+  const visited = new Set(all[name] || []);
+  visited.add(eraId);
+  all[name] = Array.from(visited);
+  saveVisitedEras(all);
+  return all[name];
+}
+
+// Session-length tracking, kept in memory only (never persisted). A
+// "session" is just however long this tab has been open — reloading the
+// page starts a fresh session. Used by the gentle session-end nudge.
+let sessionStartTime = null;
+
+export function getSessionStartTime() {
+  if (sessionStartTime === null) {
+    sessionStartTime = Date.now();
+  }
+  return sessionStartTime;
+}
+
+export function getSessionElapsedMinutes() {
+  return (Date.now() - getSessionStartTime()) / 60000;
+}
+
+const EXPLORED_WHYS_KEY = "abcmundo.exploredWhys";
+
+export function exploreWhy(profileName, whyId) {
+  try {
+    const raw = localStorage.getItem(EXPLORED_WHYS_KEY);
+    const all = raw ? JSON.parse(raw) : {};
+    const list = all[profileName] || [];
+    if (!list.includes(whyId)) {
+      all[profileName] = [...list, whyId];
+      localStorage.setItem(EXPLORED_WHYS_KEY, JSON.stringify(all));
+    }
+  } catch {
+    // ignore
+  }
+}
+
+export function getExploredWhys(profileName) {
+  try {
+    const raw = localStorage.getItem(EXPLORED_WHYS_KEY);
+    const all = raw ? JSON.parse(raw) : {};
+    return all[profileName] || [];
+  } catch {
+    return [];
+  }
+}
+
 export function pingProgress({ profileName, module, event }) {
   try {
     fetch("/api/progress/ping", {
@@ -48,4 +289,116 @@ export function pingProgress({ profileName, module, event }) {
   } catch {
     // Never let progress logging break the app.
   }
+}
+
+// --- Local progress engine (XP, daily streak, per-skill mastery) ---
+// Everything here is stored client-side in localStorage, keyed by the
+// current profile's name, so it works fully offline and needs no backend.
+
+const PROGRESS_KEY = "abcmundo.progress";
+const XP_PER_CORRECT = 10;
+const MASTERY_THRESHOLD = 5; // consecutive-ish correct answers to consider a skill "mastered"
+
+function todayStr() {
+  // Uses the profile-independent local date, format YYYY-MM-DD.
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+}
+
+function loadAllProgress() {
+  try {
+    const raw = localStorage.getItem(PROGRESS_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveAllProgress(all) {
+  try {
+    localStorage.setItem(PROGRESS_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+function emptyProgress() {
+  return { xp: 0, lastActiveDate: null, streak: 0, skills: {}, history: [] };
+}
+
+export function getProgress(profileName) {
+  const all = loadAllProgress();
+  return all[profileName || "Explorer"] || emptyProgress();
+}
+
+// Bumps the daily streak: +1 if the child was last active yesterday, keeps
+// the streak if already active today, resets to 1 after a gap of 2+ days.
+function bumpStreak(progress) {
+  const today = todayStr();
+  if (progress.lastActiveDate === today) return progress;
+  const yesterday = new Date(Date.now() - 86400000);
+  const yStr = `${yesterday.getFullYear()}-${String(yesterday.getMonth() + 1).padStart(2, "0")}-${String(yesterday.getDate()).padStart(2, "0")}`;
+  progress.streak = progress.lastActiveDate === yStr ? progress.streak + 1 : 1;
+  progress.lastActiveDate = today;
+  return progress;
+}
+
+// Records one exercise attempt for a skill (e.g. "alphabet", "syllable-ma",
+// "phonics-initial-sound"). Awards XP for correct answers, tracks a rolling
+// per-skill correct/total count, and marks the skill "mastered" once its
+// recent accuracy crosses MASTERY_THRESHOLD consecutive-ish correct answers.
+export function recordSkillEvent(profileName, skill, correct) {
+  const name = profileName || "Explorer";
+  const all = loadAllProgress();
+  const progress = all[name] || emptyProgress();
+  bumpStreak(progress);
+
+  if (!progress.skills[skill]) {
+    progress.skills[skill] = { correct: 0, attempts: 0, streak: 0, mastered: false };
+  }
+  const s = progress.skills[skill];
+  s.attempts += 1;
+  if (correct) {
+    s.correct += 1;
+    s.streak += 1;
+    progress.xp += XP_PER_CORRECT;
+  } else {
+    s.streak = 0;
+  }
+  if (s.streak >= MASTERY_THRESHOLD) s.mastered = true;
+
+  progress.history.push({ date: todayStr(), skill, correct });
+  if (progress.history.length > 500) progress.history = progress.history.slice(-500);
+
+  all[name] = progress;
+  saveAllProgress(all);
+  return progress;
+}
+
+// Simple level curve: 100 XP per level, level 1 minimum.
+export function getLevel(xp) {
+  return Math.max(1, Math.floor((xp || 0) / 100) + 1);
+}
+
+export function getMasteredSkills(profileName) {
+  const progress = getProgress(profileName);
+  return Object.entries(progress.skills)
+    .filter(([, v]) => v.mastered)
+    .map(([skill]) => skill);
+}
+
+// Weakest skills = attempted skills with the lowest accuracy, used to drive
+// the adaptive "give more practice on what's failing" behaviour without
+// ever exposing it to the child as a penalty.
+export function getWeakestSkills(profileName, limit = 3) {
+  const progress = getProgress(profileName);
+  return Object.entries(progress.skills)
+    .filter(([, v]) => v.attempts >= 3 && !v.mastered)
+    .map(([skill, v]) => ({ skill, accuracy: v.correct / v.attempts, attempts: v.attempts }))
+    .sort((a, b) => a.accuracy - b.accuracy)
+    .slice(0, limit);
+}
+
+export function getAllProfilesProgress() {
+  return loadAllProgress();
 }

@@ -1,0 +1,10 @@
+[
+  { "phrase": "太阳是黄色的。", "emoji": "☀️", "hint": "tàiyáng shì huángsè de." },
+  { "phrase": "猫在睡觉。", "emoji": "🐱", "hint": "māo zài shuìjiào." },
+  { "phrase": "我喜欢你。", "emoji": "❤️", "hint": "wǒ xǐhuān nǐ." },
+  { "phrase": "月亮是圆的。", "emoji": "🌙", "hint": "yuèliang shì yuán de." },
+  { "phrase": "狗在花园里跑。", "emoji": "🐶", "hint": "gǒu zài huāyuán lǐ pǎo." },
+  { "phrase": "我很快乐。", "emoji": "😄", "hint": "wǒ hěn kuàilè." },
+  { "phrase": "苹果是红色的。", "emoji": "🍎", "hint": "píngguǒ shì hóngsè de." },
+  { "phrase": "我们去玩吧。", "emoji": "🧸", "hint": "wǒmen qù wán ba." }
+]

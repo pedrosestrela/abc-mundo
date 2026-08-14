@@ -1,0 +1,28 @@
+[
+  {
+    "id": "curious-fox",
+    "title": "La Volpe Curiosa",
+    "emoji": "🦊",
+    "pages": [
+      { "text": "C'era una volta una piccola volpe di nome Mimi.", "emoji": "🦊" },
+      { "text": "A Mimi piaceva esplorare il bosco ogni giorno.", "emoji": "🌳" },
+      { "text": "Un giorno trovò un fiume che brillava al sole.", "emoji": "🌊" },
+      { "text": "Vide un piccolo pesce e diventò molto curiosa.", "emoji": "🐟" },
+      { "text": "Mimi imparò che il mondo ha tante sorprese.", "emoji": "✨" },
+      { "text": "Tornò a casa felice, piena di nuove storie.", "emoji": "🏡" }
+    ]
+  },
+  {
+    "id": "kind-friends",
+    "title": "Gli Amici Gentili",
+    "emoji": "🐻",
+    "pages": [
+      { "text": "L'orsetto Bruno perse la sua palla nel parco.", "emoji": "🐻" },
+      { "text": "Il coniglio Tito vide Bruno triste e andò ad aiutarlo.", "emoji": "🐰" },
+      { "text": "Insieme cercarono dietro gli alberi e i fiori.", "emoji": "🌸" },
+      { "text": "Alla fine trovarono la palla sotto una panchina.", "emoji": "⚽" },
+      { "text": "Bruno sorrise e ringraziò il suo amico Tito.", "emoji": "😊" },
+      { "text": "Impararono che aiutare gli amici fa sentire bene.", "emoji": "💛" }
+    ]
+  }
+]

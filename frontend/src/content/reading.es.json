@@ -8,5 +8,17 @@
   { "word": "MANZANA", "emoji": "🍎", "hint": "M de Manzana" },
   { "word": "TIGRE", "emoji": "🐯", "hint": "T de Tigre" },
   { "word": "VACA", "emoji": "🐄", "hint": "V de Vaca" },
-  { "word": "ZORRO", "emoji": "🦊", "hint": "Z de Zorro" }
+  { "word": "ZORRO", "emoji": "🦊", "hint": "Z de Zorro" },
+  { "word": "ÁRBOL", "emoji": "🌳", "hint": "Á de Árbol" },
+  { "word": "DADO", "emoji": "🎲", "hint": "D de Dado" },
+  { "word": "ELEFANTE", "emoji": "🐘", "hint": "E de Elefante" },
+  { "word": "FLOR", "emoji": "🌸", "hint": "F de Flor" },
+  { "word": "IGLESIA", "emoji": "⛪", "hint": "I de Iglesia" },
+  { "word": "JIRAFA", "emoji": "🦒", "hint": "J de Jirafa" },
+  { "word": "ÑU", "emoji": "🐃", "hint": "Ñ de Ñu" },
+  { "word": "OSO", "emoji": "🐻", "hint": "O de Oso" },
+  { "word": "QUESO", "emoji": "🧀", "hint": "Q de Queso" },
+  { "word": "RATÓN", "emoji": "🐭", "hint": "R de Ratón" },
+  { "word": "UVA", "emoji": "🍇", "hint": "U de Uva" },
+  { "word": "XILÓFONO", "emoji": "🎼", "hint": "X de Xilófono" }
 ]

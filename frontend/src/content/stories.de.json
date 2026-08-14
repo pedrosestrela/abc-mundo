@@ -1,0 +1,28 @@
+[
+  {
+    "id": "curious-fox",
+    "title": "Der Neugierige Fuchs",
+    "emoji": "🦊",
+    "pages": [
+      { "text": "Es war einmal ein kleiner Fuchs namens Mimi.", "emoji": "🦊" },
+      { "text": "Mimi erkundete jeden Tag gerne den Wald.", "emoji": "🌳" },
+      { "text": "Eines Tages fand sie einen Fluss, der in der Sonne glitzerte.", "emoji": "🌊" },
+      { "text": "Sie sah einen kleinen Fisch und wurde sehr neugierig.", "emoji": "🐟" },
+      { "text": "Mimi lernte, dass die Welt viele Überraschungen hat.", "emoji": "✨" },
+      { "text": "Sie ging glücklich nach Hause, voller neuer Geschichten.", "emoji": "🏡" }
+    ]
+  },
+  {
+    "id": "kind-friends",
+    "title": "Die Freundlichen Freunde",
+    "emoji": "🐻",
+    "pages": [
+      { "text": "Der Bärenjunge Bruno verlor seinen Ball im Park.", "emoji": "🐻" },
+      { "text": "Der Hase Tito sah Bruno traurig und half ihm.", "emoji": "🐰" },
+      { "text": "Gemeinsam suchten sie hinter Bäumen und Blumen.", "emoji": "🌸" },
+      { "text": "Endlich fanden sie den Ball unter einer Bank.", "emoji": "⚽" },
+      { "text": "Bruno lächelte und dankte seinem Freund Tito.", "emoji": "😊" },
+      { "text": "Sie lernten, dass Freunden helfen sich wunderbar anfühlt.", "emoji": "💛" }
+    ]
+  }
+]

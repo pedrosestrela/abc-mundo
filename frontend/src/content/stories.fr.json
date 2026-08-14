@@ -1,0 +1,28 @@
+[
+  {
+    "id": "curious-fox",
+    "title": "Le Renard Curieux",
+    "emoji": "🦊",
+    "pages": [
+      { "text": "Il était une fois un petit renard nommé Mimi.", "emoji": "🦊" },
+      { "text": "Mimi adorait explorer la forêt chaque jour.", "emoji": "🌳" },
+      { "text": "Un jour, elle trouva une rivière qui brillait au soleil.", "emoji": "🌊" },
+      { "text": "Elle vit un petit poisson et devint très curieuse.", "emoji": "🐟" },
+      { "text": "Mimi apprit que le monde a beaucoup de surprises.", "emoji": "✨" },
+      { "text": "Elle rentra chez elle heureuse, pleine de nouvelles histoires.", "emoji": "🏡" }
+    ]
+  },
+  {
+    "id": "kind-friends",
+    "title": "Les Amis Gentils",
+    "emoji": "🐻",
+    "pages": [
+      { "text": "L'ourson Bruno perdit son ballon dans le parc.", "emoji": "🐻" },
+      { "text": "Le lapin Tito vit Bruno triste et vint l'aider.", "emoji": "🐰" },
+      { "text": "Ensemble, ils cherchèrent derrière les arbres et les fleurs.", "emoji": "🌸" },
+      { "text": "Enfin, ils trouvèrent le ballon sous un banc.", "emoji": "⚽" },
+      { "text": "Bruno sourit et remercia son ami Tito.", "emoji": "😊" },
+      { "text": "Ils apprirent qu'aider ses amis fait beaucoup de bien.", "emoji": "💛" }
+    ]
+  }
+]

@@ -3,7 +3,11 @@ import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { getProfile, setProfile, pingProgress } from "../storage.js";
 
-const AVATARS = ["🦊", "🐼", "🦁", "🐸", "🐵", "🐧", "🦄", "🐝"];
+const AVATARS = [
+  "🦸", "🦸‍♀️", "🦹", "🧙", "🧚", "🧞", "🥷", "🤖",
+  "👽", "🐉", "🦊", "🐼", "🦁", "🐸", "🦄", "🐝",
+];
+const AGES = [5, 6, 7, 8, 9, 10];
 
 export default function Home() {
   const { t } = useTranslation();
@@ -11,9 +15,10 @@ export default function Home() {
   const existing = getProfile();
   const [name, setName] = useState(existing?.name || "");
   const [avatar, setAvatar] = useState(existing?.avatar || AVATARS[0]);
+  const [age, setAge] = useState(existing?.age || AGES[0]);
 
   function handleStart() {
-    const profile = { name: name.trim() || "Explorer", avatar };
+    const profile = { name: name.trim() || "Explorer", avatar, age };
     setProfile(profile);
     pingProgress({ profileName: profile.name, module: "home", event: "profile_selected" });
     navigate("/languages");
@@ -39,6 +44,21 @@ export default function Home() {
             onClick={() => setAvatar(a)}
           >
             {a}
+          </button>
+        ))}
+      </div>
+
+      <p>{t("home.chooseAge")}</p>
+      <div className="avatar-grid">
+        {AGES.map((a) => (
+          <button
+            key={a}
+            type="button"
+            className={"avatar-btn age-btn" + (age === a ? " selected" : "")}
+            onClick={() => setAge(a)}
+          >
+            {a}
+            {a === 10 ? "+" : ""}
           </button>
         ))}
       </div>

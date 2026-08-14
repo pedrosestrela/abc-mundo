@@ -31,5 +31,16 @@
       "一起学习，快乐每一天"
     ],
     "illustrationId": "alphabet-circle"
+  },
+  {
+    "id": "yueliang-xing-ge",
+    "title": "月亮星星歌 (Canção da Lua e das Estrelas)",
+    "lyrics": [
+      "月亮亮，星星眨眨眼",
+      "晚安啦，大家要睡觉",
+      "闭上眼，做个好梦吧",
+      "明天早上，再来玩耍"
+    ],
+    "illustrationId": "starry-night"
   }
 ]

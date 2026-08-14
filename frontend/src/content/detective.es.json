@@ -1,0 +1,107 @@
+[
+  {
+    "id": "d1",
+    "statement": "La Tierra gira alrededor del Sol.",
+    "emoji": "🌍",
+    "isFact": true,
+    "explanation": "Es un hecho: los científicos lo han comprobado durante siglos con observaciones y cálculos. Un hecho es algo que se puede verificar."
+  },
+  {
+    "id": "d2",
+    "statement": "El helado de chocolate es el mejor sabor del mundo.",
+    "emoji": "🍫",
+    "isFact": false,
+    "explanation": "¡Es una opinión! Cada persona puede preferir un sabor diferente, y todas tienen razón sobre su propio gusto. Las opiniones hablan de preferencias, no pueden ser 'correctas' o 'incorrectas' como los hechos."
+  },
+  {
+    "id": "d3",
+    "statement": "Los murciélagos son ciegos.",
+    "emoji": "🦇",
+    "isFact": false,
+    "explanation": "¡Es un mito muy común! Los murciélagos ven perfectamente bien — también usan la ecolocalización (sonidos) para orientarse en la oscuridad. Cuando escuches algo sorprendente sobre animales, vale la pena comprobarlo en un libro o preguntar a un adulto."
+  },
+  {
+    "id": "d4",
+    "statement": "El agua hierve a 100 grados Celsius al nivel del mar.",
+    "emoji": "🌡️",
+    "isFact": true,
+    "explanation": "Es un hecho que puedes comprobar con un termómetro. En cualquier lugar se obtiene el mismo resultado en las mismas condiciones — eso es lo que hace que algo sea verificable."
+  },
+  {
+    "id": "d5",
+    "statement": "Los libros de aventuras son más divertidos que los de ciencia.",
+    "emoji": "📚",
+    "isFact": false,
+    "explanation": "¡Opinión! Depende de lo que a cada uno le guste leer. No hay una única respuesta correcta — y está bien no estar de acuerdo con tus amigos en esto."
+  },
+  {
+    "id": "d6",
+    "statement": "Un anuncio dice que un juguete te hará 'el más rápido de la escuela'. ¿Cómo podrías comprobar si eso es verdad?",
+    "emoji": "📺",
+    "isFact": false,
+    "explanation": "Los anuncios quieren vender cosas, así que a veces exageran. Puedes preguntar: '¿Quién lo dijo? ¿Hay pruebas?' Preguntar a un adulto o comparar con lo que ya sabes te ayuda a decidir si es un hecho o solo publicidad."
+  },
+  {
+    "id": "d7",
+    "statement": "Existen siete continentes en la Tierra.",
+    "emoji": "🗺️",
+    "isFact": true,
+    "explanation": "Es un hecho geográfico que puedes confirmar en un atlas o globo terráqueo — muchas fuentes independientes coinciden en ese número."
+  },
+  {
+    "id": "d8",
+    "statement": "Cantar es más divertido que dibujar.",
+    "emoji": "🎤",
+    "isFact": false,
+    "explanation": "¡Opinión! A unos les encanta cantar, otros prefieren dibujar. Ninguna respuesta es 'la correcta' — depende de la persona."
+  },
+  {
+    "id": "d9",
+    "statement": "Las plantas producen oxígeno mediante la fotosíntesis.",
+    "emoji": "🌱",
+    "isFact": true,
+    "explanation": "Es un hecho científico, comprobado por experimentos que cualquier persona puede repetir y obtener el mismo resultado."
+  },
+  {
+    "id": "d10",
+    "statement": "Un vídeo en internet muestra a un perro hablando perfectamente. ¿Deberías creerlo enseguida?",
+    "emoji": "🐶",
+    "isFact": false,
+    "explanation": "¡Buena cosa para investigar! Las cosas muy sorprendentes en internet pueden ser montajes, bromas o incluso hechas por ordenador. Antes de creer o compartir algo, vale la pena pensar '¿esto parece realmente posible?' y preguntar a un adulto."
+  },
+  {
+    "id": "d11",
+    "statement": "Portugal está en Europa.",
+    "emoji": "🇵🇹",
+    "isFact": true,
+    "explanation": "Es un hecho geográfico — puedes confirmarlo en cualquier mapa mundial o atlas."
+  },
+  {
+    "id": "d12",
+    "statement": "El fútbol es el deporte más divertido que existe.",
+    "emoji": "⚽",
+    "isFact": false,
+    "explanation": "¡Opinión! Algunas personas prefieren la natación, el baile o el baloncesto. Los gustos deportivos varían de persona a persona."
+  },
+  {
+    "id": "d13",
+    "statement": "Un robot de inteligencia artificial respondió a una pregunta y se equivocó. ¿Puede pasar eso?",
+    "emoji": "🤖",
+    "isFact": true,
+    "explanation": "¡Sí, puede pasar! Los ordenadores y la inteligencia artificial también pueden cometer errores, igual que las personas. Por eso siempre es bueno comprobar la información importante con un libro, un adulto de confianza u otra fuente."
+  },
+  {
+    "id": "d14",
+    "statement": "El cuerpo humano adulto tiene 206 huesos.",
+    "emoji": "🦴",
+    "isFact": true,
+    "explanation": "Es un hecho verificable en libros de ciencia y por médicos — el número se mantiene igual cuando varias fuentes lo confirman."
+  },
+  {
+    "id": "d15",
+    "statement": "Las espinacas son el vegetal más sabroso.",
+    "emoji": "🥬",
+    "isFact": false,
+    "explanation": "¡Opinión! Los sabores son personales — lo que es delicioso para unos puede no serlo para otros, y eso está perfectamente bien."
+  }
+]

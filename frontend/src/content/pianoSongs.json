@@ -1,0 +1,20 @@
+[
+  {
+    "id": "estrelinha",
+    "title": "Brilha, Brilha, Estrelinha",
+    "notes": ["C4", "C4", "G4", "G4", "A4", "A4", "G4"],
+    "lyrics": ["Brilha", "brilha", "estrelinha", "como", "eu", "gosto", "de ti"]
+  },
+  {
+    "id": "escala-do-re-mi",
+    "title": "A Escala: Dó Ré Mi",
+    "notes": ["C4", "D4", "E4", "F4", "G4", "A4", "B4", "C5"],
+    "lyrics": ["Dó", "Ré", "Mi", "Fá", "Sol", "Lá", "Si", "Dó"]
+  },
+  {
+    "id": "ode-alegria",
+    "title": "Ode à Alegria (Beethoven, excerto)",
+    "notes": ["E4", "E4", "F4", "G4", "G4", "F4", "E4", "D4"],
+    "lyrics": ["la", "la", "la", "la", "la", "la", "la", "la"]
+  }
+]

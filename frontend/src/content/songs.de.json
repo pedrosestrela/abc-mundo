@@ -31,5 +31,16 @@
       "Unser Alphabet ist wunderbar so"
     ],
     "illustrationId": "alphabet-circle"
+  },
+  {
+    "id": "mond-und-sterne-lied",
+    "title": "Das Mond-und-Sterne-Lied",
+    "lyrics": [
+      "Der Mond scheint hell, die Buchstaben schlafen ein",
+      "Einer nach dem andern, ganz allein",
+      "Gute Nacht, A, gute Nacht, Z",
+      "Morgen spielen wir wieder, versprochen, o je"
+    ],
+    "illustrationId": "starry-night"
   }
 ]

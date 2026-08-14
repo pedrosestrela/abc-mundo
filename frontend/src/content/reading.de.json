@@ -8,5 +8,17 @@
   { "word": "APFEL", "emoji": "🍎", "hint": "A wie Apfel" },
   { "word": "TIGER", "emoji": "🐯", "hint": "T wie Tiger" },
   { "word": "LÖWE", "emoji": "🦁", "hint": "L wie Löwe" },
-  { "word": "ZEBRA", "emoji": "🦓", "hint": "Z wie Zebra" }
+  { "word": "ZEBRA", "emoji": "🦓", "hint": "Z wie Zebra" },
+  { "word": "ENTE", "emoji": "🦆", "hint": "E wie Ente" },
+  { "word": "GIRAFFE", "emoji": "🦒", "hint": "G wie Giraffe" },
+  { "word": "IGEL", "emoji": "🦔", "hint": "I wie Igel" },
+  { "word": "JACKE", "emoji": "🧥", "hint": "J wie Jacke" },
+  { "word": "KÄSE", "emoji": "🧀", "hint": "K wie Käse" },
+  { "word": "NEST", "emoji": "🪺", "hint": "N wie Nest" },
+  { "word": "OHR", "emoji": "👂", "hint": "O wie Ohr" },
+  { "word": "PFERD", "emoji": "🐴", "hint": "P wie Pferd" },
+  { "word": "REGEN", "emoji": "🌧️", "hint": "R wie Regen" },
+  { "word": "UHU", "emoji": "🦉", "hint": "U wie Uhu" },
+  { "word": "VOGEL", "emoji": "🐦", "hint": "V wie Vogel" },
+  { "word": "WOLKE", "emoji": "☁️", "hint": "W wie Wolke" }
 ]

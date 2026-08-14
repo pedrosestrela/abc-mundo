@@ -8,5 +8,17 @@
   { "word": "MOON", "emoji": "🌙", "hint": "M for Moon" },
   { "word": "TIGER", "emoji": "🐯", "hint": "T for Tiger" },
   { "word": "LION", "emoji": "🦁", "hint": "L for Lion" },
-  { "word": "ZEBRA", "emoji": "🦓", "hint": "Z for Zebra" }
+  { "word": "ZEBRA", "emoji": "🦓", "hint": "Z for Zebra" },
+  { "word": "APPLE", "emoji": "🍎", "hint": "A for Apple" },
+  { "word": "BALL", "emoji": "⚽", "hint": "B for Ball" },
+  { "word": "EGG", "emoji": "🥚", "hint": "E for Egg" },
+  { "word": "GRAPE", "emoji": "🍇", "hint": "G for Grape" },
+  { "word": "ICE", "emoji": "🧊", "hint": "I for Ice" },
+  { "word": "JUICE", "emoji": "🧃", "hint": "J for Juice" },
+  { "word": "KITE", "emoji": "🪁", "hint": "K for Kite" },
+  { "word": "NEST", "emoji": "🪺", "hint": "N for Nest" },
+  { "word": "OWL", "emoji": "🦉", "hint": "O for Owl" },
+  { "word": "QUEEN", "emoji": "👑", "hint": "Q for Queen" },
+  { "word": "RABBIT", "emoji": "🐰", "hint": "R for Rabbit" },
+  { "word": "UMBRELLA", "emoji": "☂️", "hint": "U for Umbrella" }
 ]
