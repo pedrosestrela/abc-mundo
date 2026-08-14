@@ -1,0 +1,67 @@
+[
+  {
+    "id": "school",
+    "icon": "🏫",
+    "prompt": "去街尾的学校上学。",
+    "modes": [
+      "walk",
+      "bike",
+      "car",
+      "plane"
+    ],
+    "correct": "walk",
+    "explanation": "对于很短的距离，走路又快又健康，还完全不消耗能源！"
+  },
+  {
+    "id": "grandparents",
+    "icon": "🏘️",
+    "prompt": "去隔壁社区探望祖父母。",
+    "modes": [
+      "bike",
+      "car",
+      "train",
+      "ship"
+    ],
+    "correct": "bike",
+    "explanation": "在城市里的短距离，骑自行车是很棒的选择：快速又不污染。"
+  },
+  {
+    "id": "othercity",
+    "icon": "🏙️",
+    "prompt": "去国内另一个城市度假。",
+    "modes": [
+      "walk",
+      "train",
+      "car",
+      "ship"
+    ],
+    "correct": "train",
+    "explanation": "在城市之间旅行，火车既舒适又快捷——走路或骑车根本到不了那么远。"
+  },
+  {
+    "id": "othercontinent",
+    "icon": "🌍",
+    "prompt": "去另一个大洲认识一个新国家。",
+    "modes": [
+      "bike",
+      "car",
+      "train",
+      "plane"
+    ],
+    "correct": "plane",
+    "explanation": "要快速跨越海洋和大陆，飞机是正确的交通方式。"
+  },
+  {
+    "id": "cargo",
+    "icon": "📦",
+    "prompt": "把装满玩具的集装箱运到另一个大洲。",
+    "modes": [
+      "car",
+      "train",
+      "plane",
+      "ship"
+    ],
+    "correct": "ship",
+    "explanation": "要运输跨越海洋的非常重的货物，最常用的是轮船——虽然慢，但能运更多，而且每件物品消耗的能源更少。"
+  }
+]

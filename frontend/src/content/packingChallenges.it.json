@@ -1,0 +1,277 @@
+[
+  {
+    "id": "beach",
+    "icon": "🏖️",
+    "name": "Spiaggia",
+    "items": [
+      {
+        "id": "swimsuit",
+        "icon": "🩱",
+        "name": "Costume da bagno",
+        "correct": true
+      },
+      {
+        "id": "sunscreen",
+        "icon": "🧴",
+        "name": "Crema solare",
+        "correct": true
+      },
+      {
+        "id": "sunglasses",
+        "icon": "🕶️",
+        "name": "Occhiali da sole",
+        "correct": true
+      },
+      {
+        "id": "flipflops",
+        "icon": "🩴",
+        "name": "Infradito",
+        "correct": true
+      },
+      {
+        "id": "coat",
+        "icon": "🧥",
+        "name": "Cappotto invernale",
+        "correct": false
+      },
+      {
+        "id": "snowboots",
+        "icon": "🥾",
+        "name": "Stivali da neve",
+        "correct": false
+      },
+      {
+        "id": "gloves",
+        "icon": "🧤",
+        "name": "Guanti",
+        "correct": false
+      },
+      {
+        "id": "scarf",
+        "icon": "🧣",
+        "name": "Sciarpa",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "mountain",
+    "icon": "🏔️",
+    "name": "Montagna",
+    "items": [
+      {
+        "id": "jacket",
+        "icon": "🧥",
+        "name": "Giacca calda",
+        "correct": true
+      },
+      {
+        "id": "hikingboots",
+        "icon": "🥾",
+        "name": "Scarponi da trekking",
+        "correct": true
+      },
+      {
+        "id": "backpack",
+        "icon": "🎒",
+        "name": "Zaino",
+        "correct": true
+      },
+      {
+        "id": "waterbottle",
+        "icon": "🚰",
+        "name": "Borraccia",
+        "correct": true
+      },
+      {
+        "id": "swimsuit",
+        "icon": "🩱",
+        "name": "Costume da bagno",
+        "correct": false
+      },
+      {
+        "id": "flipflops",
+        "icon": "🩴",
+        "name": "Infradito",
+        "correct": false
+      },
+      {
+        "id": "umbrella-open",
+        "icon": "☔",
+        "name": "Ombrello grande",
+        "correct": false
+      },
+      {
+        "id": "highheels",
+        "icon": "👠",
+        "name": "Tacchi alti",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "rainy",
+    "icon": "🌧️",
+    "name": "Città Piovosa",
+    "items": [
+      {
+        "id": "umbrella",
+        "icon": "☂️",
+        "name": "Ombrello",
+        "correct": true
+      },
+      {
+        "id": "raincoat",
+        "icon": "🧥",
+        "name": "Impermeabile",
+        "correct": true
+      },
+      {
+        "id": "rainboots",
+        "icon": "🥾",
+        "name": "Stivali di gomma",
+        "correct": true
+      },
+      {
+        "id": "sweater",
+        "icon": "🧶",
+        "name": "Maglione caldo",
+        "correct": true
+      },
+      {
+        "id": "swimsuit",
+        "icon": "🩱",
+        "name": "Costume da bagno",
+        "correct": false
+      },
+      {
+        "id": "sunglasses",
+        "icon": "🕶️",
+        "name": "Occhiali da sole",
+        "correct": false
+      },
+      {
+        "id": "flipflops",
+        "icon": "🩴",
+        "name": "Infradito",
+        "correct": false
+      },
+      {
+        "id": "sunhat",
+        "icon": "👒",
+        "name": "Cappello da sole",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "desert",
+    "icon": "🏜️",
+    "name": "Deserto",
+    "items": [
+      {
+        "id": "sunhat",
+        "icon": "👒",
+        "name": "Cappello da sole",
+        "correct": true
+      },
+      {
+        "id": "sunglasses",
+        "icon": "🕶️",
+        "name": "Occhiali da sole",
+        "correct": true
+      },
+      {
+        "id": "lightclothes",
+        "icon": "👕",
+        "name": "Vestiti leggeri",
+        "correct": true
+      },
+      {
+        "id": "waterbottle",
+        "icon": "🚰",
+        "name": "Borraccia",
+        "correct": true
+      },
+      {
+        "id": "snowboots",
+        "icon": "🥾",
+        "name": "Stivali da neve",
+        "correct": false
+      },
+      {
+        "id": "heavycoat",
+        "icon": "🧥",
+        "name": "Cappotto pesante",
+        "correct": false
+      },
+      {
+        "id": "umbrella",
+        "icon": "☂️",
+        "name": "Ombrello",
+        "correct": false
+      },
+      {
+        "id": "gloves",
+        "icon": "🧤",
+        "name": "Guanti",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "snow",
+    "icon": "❄️",
+    "name": "Neve",
+    "items": [
+      {
+        "id": "coat",
+        "icon": "🧥",
+        "name": "Cappotto invernale",
+        "correct": true
+      },
+      {
+        "id": "gloves",
+        "icon": "🧤",
+        "name": "Guanti",
+        "correct": true
+      },
+      {
+        "id": "snowboots",
+        "icon": "🥾",
+        "name": "Stivali da neve",
+        "correct": true
+      },
+      {
+        "id": "scarf",
+        "icon": "🧣",
+        "name": "Sciarpa",
+        "correct": true
+      },
+      {
+        "id": "swimsuit",
+        "icon": "🩱",
+        "name": "Costume da bagno",
+        "correct": false
+      },
+      {
+        "id": "flipflops",
+        "icon": "🩴",
+        "name": "Infradito",
+        "correct": false
+      },
+      {
+        "id": "shorts",
+        "icon": "🩳",
+        "name": "Pantaloncini",
+        "correct": false
+      },
+      {
+        "id": "sunhat",
+        "icon": "👒",
+        "name": "Cappello da sole",
+        "correct": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "id": "school",
+    "icon": "🏫",
+    "prompt": "Aller à l'école au bout de la rue.",
+    "modes": [
+      "walk",
+      "bike",
+      "car",
+      "plane"
+    ],
+    "correct": "walk",
+    "explanation": "Pour de très courtes distances, marcher est rapide, sain et ne consomme aucune énergie !"
+  },
+  {
+    "id": "grandparents",
+    "icon": "🏘️",
+    "prompt": "Rendre visite aux grands-parents qui habitent le quartier voisin.",
+    "modes": [
+      "bike",
+      "car",
+      "train",
+      "ship"
+    ],
+    "correct": "bike",
+    "explanation": "Pour une courte distance en ville, le vélo est un excellent choix : rapide et sans pollution."
+  },
+  {
+    "id": "othercity",
+    "icon": "🏙️",
+    "prompt": "Aller dans une autre ville du pays pour les vacances.",
+    "modes": [
+      "walk",
+      "train",
+      "car",
+      "ship"
+    ],
+    "correct": "train",
+    "explanation": "Pour voyager entre les villes, le train est confortable et rapide — impossible d'y aller à pied ou à vélo."
+  },
+  {
+    "id": "othercontinent",
+    "icon": "🌍",
+    "prompt": "Aller sur un autre continent pour découvrir un nouveau pays.",
+    "modes": [
+      "bike",
+      "car",
+      "train",
+      "plane"
+    ],
+    "correct": "plane",
+    "explanation": "Pour traverser rapidement les océans et les continents, l'avion est le bon moyen de transport."
+  },
+  {
+    "id": "cargo",
+    "icon": "📦",
+    "prompt": "Envoyer un conteneur plein de jouets vers un autre continent.",
+    "modes": [
+      "car",
+      "train",
+      "plane",
+      "ship"
+    ],
+    "correct": "ship",
+    "explanation": "Pour transporter des charges très lourdes à travers l'océan, le bateau est le plus utilisé — plus lent, mais il transporte beaucoup plus et consomme moins d'énergie par objet."
+  }
+]

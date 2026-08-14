@@ -50,6 +50,22 @@ import citySystemsZh from "./citySystems.zh.json";
 import citySystemsEs from "./citySystems.es.json";
 import citySystemsIt from "./citySystems.it.json";
 
+import packingChallengesPt from "./packingChallenges.pt.json";
+import packingChallengesEn from "./packingChallenges.en.json";
+import packingChallengesDe from "./packingChallenges.de.json";
+import packingChallengesFr from "./packingChallenges.fr.json";
+import packingChallengesZh from "./packingChallenges.zh.json";
+import packingChallengesEs from "./packingChallenges.es.json";
+import packingChallengesIt from "./packingChallenges.it.json";
+
+import transportScenariosPt from "./transportScenarios.pt.json";
+import transportScenariosEn from "./transportScenarios.en.json";
+import transportScenariosDe from "./transportScenarios.de.json";
+import transportScenariosFr from "./transportScenarios.fr.json";
+import transportScenariosZh from "./transportScenarios.zh.json";
+import transportScenariosEs from "./transportScenarios.es.json";
+import transportScenariosIt from "./transportScenarios.it.json";
+
 import missionsPt from "./missions.pt.json";
 import missionsEn from "./missions.en.json";
 import missionsDe from "./missions.de.json";
@@ -236,6 +252,8 @@ const THINKING = { pt: thinkingPt, en: thinkingEn, de: thinkingDe, fr: thinkingF
 const RHYMES = { pt: rhymesPt, en: rhymesEn, de: rhymesDe, fr: rhymesFr, zh: rhymesZh, es: rhymesEs, it: rhymesIt };
 const HOUSE_SYSTEMS = { pt: houseSystemsPt, en: houseSystemsEn, de: houseSystemsDe, fr: houseSystemsFr, zh: houseSystemsZh, es: houseSystemsEs, it: houseSystemsIt };
 const CITY_SYSTEMS = { pt: citySystemsPt, en: citySystemsEn, de: citySystemsDe, fr: citySystemsFr, zh: citySystemsZh, es: citySystemsEs, it: citySystemsIt };
+const PACKING_CHALLENGES = { pt: packingChallengesPt, en: packingChallengesEn, de: packingChallengesDe, fr: packingChallengesFr, zh: packingChallengesZh, es: packingChallengesEs, it: packingChallengesIt };
+const TRANSPORT_SCENARIOS = { pt: transportScenariosPt, en: transportScenariosEn, de: transportScenariosDe, fr: transportScenariosFr, zh: transportScenariosZh, es: transportScenariosEs, it: transportScenariosIt };
 
 // Normalizes zh's different shape ({hanzi,...}) to the same shape used by
 // the Latin-alphabet languages ({letter, lower, upper, exampleWord, emoji}).
@@ -343,6 +361,14 @@ export function getCitySystems(langCode) {
 
 export function getRhymes(langCode) {
   return RHYMES[langCode] || RHYMES.pt;
+}
+
+export function getPackingChallenges(langCode) {
+  return PACKING_CHALLENGES[langCode] || PACKING_CHALLENGES.pt;
+}
+
+export function getTransportScenarios(langCode) {
+  return TRANSPORT_SCENARIOS[langCode] || TRANSPORT_SCENARIOS.pt;
 }
 
 // Countries are language-agnostic in shape (name/fact are per-language

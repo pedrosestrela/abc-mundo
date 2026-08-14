@@ -1,0 +1,277 @@
+[
+  {
+    "id": "beach",
+    "icon": "🏖️",
+    "name": "海滩",
+    "items": [
+      {
+        "id": "swimsuit",
+        "icon": "🩱",
+        "name": "泳衣",
+        "correct": true
+      },
+      {
+        "id": "sunscreen",
+        "icon": "🧴",
+        "name": "防晒霜",
+        "correct": true
+      },
+      {
+        "id": "sunglasses",
+        "icon": "🕶️",
+        "name": "太阳镜",
+        "correct": true
+      },
+      {
+        "id": "flipflops",
+        "icon": "🩴",
+        "name": "人字拖",
+        "correct": true
+      },
+      {
+        "id": "coat",
+        "icon": "🧥",
+        "name": "冬季外套",
+        "correct": false
+      },
+      {
+        "id": "snowboots",
+        "icon": "🥾",
+        "name": "雪地靴",
+        "correct": false
+      },
+      {
+        "id": "gloves",
+        "icon": "🧤",
+        "name": "手套",
+        "correct": false
+      },
+      {
+        "id": "scarf",
+        "icon": "🧣",
+        "name": "围巾",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "mountain",
+    "icon": "🏔️",
+    "name": "山区",
+    "items": [
+      {
+        "id": "jacket",
+        "icon": "🧥",
+        "name": "保暖夹克",
+        "correct": true
+      },
+      {
+        "id": "hikingboots",
+        "icon": "🥾",
+        "name": "登山靴",
+        "correct": true
+      },
+      {
+        "id": "backpack",
+        "icon": "🎒",
+        "name": "背包",
+        "correct": true
+      },
+      {
+        "id": "waterbottle",
+        "icon": "🚰",
+        "name": "水壶",
+        "correct": true
+      },
+      {
+        "id": "swimsuit",
+        "icon": "🩱",
+        "name": "泳衣",
+        "correct": false
+      },
+      {
+        "id": "flipflops",
+        "icon": "🩴",
+        "name": "人字拖",
+        "correct": false
+      },
+      {
+        "id": "umbrella-open",
+        "icon": "☔",
+        "name": "大雨伞",
+        "correct": false
+      },
+      {
+        "id": "highheels",
+        "icon": "👠",
+        "name": "高跟鞋",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "rainy",
+    "icon": "🌧️",
+    "name": "多雨城市",
+    "items": [
+      {
+        "id": "umbrella",
+        "icon": "☂️",
+        "name": "雨伞",
+        "correct": true
+      },
+      {
+        "id": "raincoat",
+        "icon": "🧥",
+        "name": "雨衣",
+        "correct": true
+      },
+      {
+        "id": "rainboots",
+        "icon": "🥾",
+        "name": "雨靴",
+        "correct": true
+      },
+      {
+        "id": "sweater",
+        "icon": "🧶",
+        "name": "保暖毛衣",
+        "correct": true
+      },
+      {
+        "id": "swimsuit",
+        "icon": "🩱",
+        "name": "泳衣",
+        "correct": false
+      },
+      {
+        "id": "sunglasses",
+        "icon": "🕶️",
+        "name": "太阳镜",
+        "correct": false
+      },
+      {
+        "id": "flipflops",
+        "icon": "🩴",
+        "name": "人字拖",
+        "correct": false
+      },
+      {
+        "id": "sunhat",
+        "icon": "👒",
+        "name": "遮阳帽",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "desert",
+    "icon": "🏜️",
+    "name": "沙漠",
+    "items": [
+      {
+        "id": "sunhat",
+        "icon": "👒",
+        "name": "遮阳帽",
+        "correct": true
+      },
+      {
+        "id": "sunglasses",
+        "icon": "🕶️",
+        "name": "太阳镜",
+        "correct": true
+      },
+      {
+        "id": "lightclothes",
+        "icon": "👕",
+        "name": "轻便衣物",
+        "correct": true
+      },
+      {
+        "id": "waterbottle",
+        "icon": "🚰",
+        "name": "水壶",
+        "correct": true
+      },
+      {
+        "id": "snowboots",
+        "icon": "🥾",
+        "name": "雪地靴",
+        "correct": false
+      },
+      {
+        "id": "heavycoat",
+        "icon": "🧥",
+        "name": "厚外套",
+        "correct": false
+      },
+      {
+        "id": "umbrella",
+        "icon": "☂️",
+        "name": "雨伞",
+        "correct": false
+      },
+      {
+        "id": "gloves",
+        "icon": "🧤",
+        "name": "手套",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "snow",
+    "icon": "❄️",
+    "name": "雪地",
+    "items": [
+      {
+        "id": "coat",
+        "icon": "🧥",
+        "name": "冬季外套",
+        "correct": true
+      },
+      {
+        "id": "gloves",
+        "icon": "🧤",
+        "name": "手套",
+        "correct": true
+      },
+      {
+        "id": "snowboots",
+        "icon": "🥾",
+        "name": "雪地靴",
+        "correct": true
+      },
+      {
+        "id": "scarf",
+        "icon": "🧣",
+        "name": "围巾",
+        "correct": true
+      },
+      {
+        "id": "swimsuit",
+        "icon": "🩱",
+        "name": "泳衣",
+        "correct": false
+      },
+      {
+        "id": "flipflops",
+        "icon": "🩴",
+        "name": "人字拖",
+        "correct": false
+      },
+      {
+        "id": "shorts",
+        "icon": "🩳",
+        "name": "短裤",
+        "correct": false
+      },
+      {
+        "id": "sunhat",
+        "icon": "👒",
+        "name": "遮阳帽",
+        "correct": false
+      }
+    ]
+  }
+]
