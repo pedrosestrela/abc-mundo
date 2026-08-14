@@ -2,6 +2,7 @@ import React, { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { getPhonics } from "../content/index.js";
 import { getLangPair, getProfile, getDifficultyTier, recordSkillEvent, pingProgress } from "../storage.js";
+import SpeakButton from "../components/SpeakButton.jsx";
 
 function shuffle(arr) {
   const a = [...arr];
@@ -203,19 +204,24 @@ function InitialSoundGame({ rounds, pair, profile, t }) {
 
   return (
     <div className="game-card" key={key}>
-      <p className="game-prompt">/{round.sound.toLowerCase()}/ ...?</p>
+      <div className="game-prompt-row">
+        <p className="game-prompt">/{round.sound.toLowerCase()}/ ...?</p>
+        <SpeakButton text={round.sound} langCode={pair.mother} />
+      </div>
       <div className="game-options">
         {round.options.map((opt) => (
-          <button
-            key={opt.word}
-            type="button"
-            className={"game-option" + (feedback && opt.word === round.target.word ? " correct" : "")}
-            onClick={() => handleAnswer(opt)}
-            disabled={!!feedback}
-          >
-            <span className="game-option-emoji">{opt.emoji}</span>
-            <span>{opt.word}</span>
-          </button>
+          <div key={opt.word} className="game-option-wrap">
+            <button
+              type="button"
+              className={"game-option" + (feedback && opt.word === round.target.word ? " correct" : "")}
+              onClick={() => handleAnswer(opt)}
+              disabled={!!feedback}
+            >
+              <span className="game-option-emoji">{opt.emoji}</span>
+              <span>{opt.word}</span>
+            </button>
+            <SpeakButton text={opt.word} langCode={pair.mother} />
+          </div>
         ))}
       </div>
       {!done && (
@@ -263,19 +269,22 @@ function RhymeGame({ rounds, pair, profile, t }) {
       <div className="game-prompt-word">
         <span className="game-option-emoji">{round.prompt.emoji}</span>
         <span>{round.prompt.word}</span>
+        <SpeakButton text={round.prompt.word} langCode={pair.mother} />
       </div>
       <div className="game-options">
         {round.options.map((opt) => (
-          <button
-            key={opt.word}
-            type="button"
-            className={"game-option" + (feedback && opt.word === round.target.word ? " correct" : "")}
-            onClick={() => handleAnswer(opt)}
-            disabled={!!feedback}
-          >
-            <span className="game-option-emoji">{opt.emoji}</span>
-            <span>{opt.word}</span>
-          </button>
+          <div key={opt.word} className="game-option-wrap">
+            <button
+              type="button"
+              className={"game-option" + (feedback && opt.word === round.target.word ? " correct" : "")}
+              onClick={() => handleAnswer(opt)}
+              disabled={!!feedback}
+            >
+              <span className="game-option-emoji">{opt.emoji}</span>
+              <span>{opt.word}</span>
+            </button>
+            <SpeakButton text={opt.word} langCode={pair.mother} />
+          </div>
         ))}
       </div>
       {!done && (
@@ -323,6 +332,7 @@ function SyllableGame({ rounds, pair, profile, t }) {
       <div className="game-prompt-word">
         <span className="game-option-emoji">{round.target.emoji}</span>
         <span>{round.target.word}</span>
+        <SpeakButton text={round.target.word} langCode={pair.mother} />
       </div>
       <div className="game-options">
         {round.options.map((count) => (
@@ -381,16 +391,18 @@ function OddOneOutGame({ rounds, pair, profile, t }) {
     <div className="game-card" key={key}>
       <div className="game-options game-options-grid">
         {round.options.map((opt) => (
-          <button
-            key={opt.word}
-            type="button"
-            className={"game-option" + (feedback && opt.word === round.oddWord.word ? " correct" : "")}
-            onClick={() => handleAnswer(opt)}
-            disabled={!!feedback}
-          >
-            <span className="game-option-emoji">{opt.emoji}</span>
-            <span>{opt.word}</span>
-          </button>
+          <div key={opt.word} className="game-option-wrap">
+            <button
+              type="button"
+              className={"game-option" + (feedback && opt.word === round.oddWord.word ? " correct" : "")}
+              onClick={() => handleAnswer(opt)}
+              disabled={!!feedback}
+            >
+              <span className="game-option-emoji">{opt.emoji}</span>
+              <span>{opt.word}</span>
+            </button>
+            <SpeakButton text={opt.word} langCode={pair.mother} />
+          </div>
         ))}
       </div>
       {!done && (

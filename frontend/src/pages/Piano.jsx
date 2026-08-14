@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { playNoteOnce, SOLFEGE_PT } from "../music.js";
-import { getProfile, pingProgress } from "../storage.js";
+import { getProfile, pingProgress, getLangPair } from "../storage.js";
 import pianoSongs from "../content/pianoSongs.json";
+import SpeakButton from "../components/SpeakButton.jsx";
 
 const WHITE_KEYS = ["C4", "D4", "E4", "F4", "G4", "A4", "B4", "C5"];
 const BLACK_KEYS = [
@@ -16,6 +17,7 @@ const BLACK_KEYS = [
 
 export default function Piano() {
   const { t } = useTranslation();
+  const pair = getLangPair() || { mother: "pt", secondary: "en" };
   const [songId, setSongId] = useState(pianoSongs[0].id);
   const [step, setStep] = useState(0);
   const [playing, setPlaying] = useState(false);
@@ -85,7 +87,10 @@ export default function Piano() {
         {pianoSongs.map((s) => (
           <div className="song-card piano-song-card" key={s.id}>
             <h3>{s.title}</h3>
-            <p className="piano-song-lyrics">{s.lyrics.join(" · ")}</p>
+            <div className="piano-song-lyrics-row">
+              <p className="piano-song-lyrics">{s.lyrics.join(" · ")}</p>
+              <SpeakButton text={s.lyrics.join(", ")} langCode={pair.mother} />
+            </div>
             {playing && songId === s.id ? (
               <p className="piano-progress">
                 {t("modules.pianoFollow")}: {step + 1} / {s.notes.length}
