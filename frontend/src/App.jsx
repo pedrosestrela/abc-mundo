@@ -61,6 +61,7 @@ const City = lazyWithReload(() => import("./pages/City.jsx"));
 const Mundos = lazyWithReload(() => import("./pages/Mundos.jsx"));
 const Thinking = lazyWithReload(() => import("./pages/Thinking.jsx"));
 const NatureDiary = lazyWithReload(() => import("./pages/NatureDiary.jsx"));
+const Writing = lazyWithReload(() => import("./pages/Writing.jsx"));
 
 export default function App() {
   // A successful render means the current chunk map is good — clear the
@@ -105,6 +106,7 @@ export default function App() {
             <Route path="/thinking" element={<Thinking />} />
             <Route path="/city" element={<City />} />
             <Route path="/nature-diary" element={<NatureDiary />} />
+            <Route path="/writing" element={<Writing />} />
           </Routes>
         </Suspense>
       </main>

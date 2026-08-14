@@ -1,12 +1,267 @@
 [
-  { "syllable": "MA", "exampleWord": "MAUS", "emoji": "🐭", "hint": "MA wie Maus" },
-  { "syllable": "ME", "exampleWord": "MEER", "emoji": "🌊", "hint": "ME wie Meer" },
-  { "syllable": "MI", "exampleWord": "MILCH", "emoji": "🥛", "hint": "MI wie Milch" },
-  { "syllable": "MO", "exampleWord": "MOND", "emoji": "🌙", "hint": "MO wie Mond" },
-  { "syllable": "MU", "exampleWord": "MUSCHEL", "emoji": "🐚", "hint": "MU wie Muschel" },
-  { "syllable": "PA", "exampleWord": "PAPA", "emoji": "👨", "hint": "PA wie Papa" },
-  { "syllable": "PE", "exampleWord": "PFERD", "emoji": "🐴", "hint": "PE wie Pferd" },
-  { "syllable": "PI", "exampleWord": "PILZ", "emoji": "🍄", "hint": "PI wie Pilz" },
-  { "syllable": "PO", "exampleWord": "POST", "emoji": "📮", "hint": "PO wie Post" },
-  { "syllable": "PU", "exampleWord": "PUPPE", "emoji": "🪆", "hint": "PU wie Puppe" }
+  {
+    "syllable": "MA",
+    "exampleWord": "MAUS",
+    "emoji": "🐭",
+    "hint": "MA wie Maus",
+    "syllables": [
+      "MAUS"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "ME",
+    "exampleWord": "MEER",
+    "emoji": "🌊",
+    "hint": "ME wie Meer",
+    "syllables": [
+      "MEER"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "MI",
+    "exampleWord": "MILCH",
+    "emoji": "🥛",
+    "hint": "MI wie Milch",
+    "syllables": [
+      "MILCH"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "MO",
+    "exampleWord": "MOND",
+    "emoji": "🌙",
+    "hint": "MO wie Mond",
+    "syllables": [
+      "MOND"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "MU",
+    "exampleWord": "MUSCHEL",
+    "emoji": "🐚",
+    "hint": "MU wie Muschel",
+    "syllables": [
+      "MU",
+      "SCHEL"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "PA",
+    "exampleWord": "PAPA",
+    "emoji": "👨",
+    "hint": "PA wie Papa",
+    "syllables": [
+      "PA",
+      "PA"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "PE",
+    "exampleWord": "PFERD",
+    "emoji": "🐴",
+    "hint": "PE wie Pferd",
+    "syllables": [
+      "PFERD"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "PI",
+    "exampleWord": "PILZ",
+    "emoji": "🍄",
+    "hint": "PI wie Pilz",
+    "syllables": [
+      "PILZ"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "PO",
+    "exampleWord": "POST",
+    "emoji": "📮",
+    "hint": "PO wie Post",
+    "syllables": [
+      "POST"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "PU",
+    "exampleWord": "PUPPE",
+    "emoji": "🪆",
+    "hint": "PU wie Puppe",
+    "syllables": [
+      "PUP",
+      "PE"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "AP",
+    "exampleWord": "APFEL",
+    "emoji": "🍎",
+    "hint": "AP wie Apfel",
+    "syllables": [
+      "AP",
+      "FEL"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "TISCH",
+    "exampleWord": "TISCH",
+    "emoji": "🪑",
+    "hint": "TISCH wie Tisch",
+    "syllables": [
+      "TISCH"
+    ],
+    "digraph": true
+  },
+  {
+    "syllable": "FISCH",
+    "exampleWord": "FISCH",
+    "emoji": "🐟",
+    "hint": "FISCH wie Fisch",
+    "syllables": [
+      "FISCH"
+    ],
+    "digraph": true
+  },
+  {
+    "syllable": "KIR",
+    "exampleWord": "KIRSCHE",
+    "emoji": "🍒",
+    "hint": "KIR wie Kirsche",
+    "syllables": [
+      "KIR",
+      "SCHE"
+    ],
+    "digraph": true
+  },
+  {
+    "syllable": "KU",
+    "exampleWord": "KUCHEN",
+    "emoji": "🎂",
+    "hint": "KU wie Kuchen",
+    "syllables": [
+      "KU",
+      "CHEN"
+    ],
+    "digraph": true
+  },
+  {
+    "syllable": "BUCH",
+    "exampleWord": "BUCH",
+    "emoji": "📖",
+    "hint": "BUCH wie Buch",
+    "syllables": [
+      "BUCH"
+    ],
+    "digraph": true
+  },
+  {
+    "syllable": "SCHUH",
+    "exampleWord": "SCHUH",
+    "emoji": "👞",
+    "hint": "SCHUH wie Schuh",
+    "syllables": [
+      "SCHUH"
+    ],
+    "digraph": true
+  },
+  {
+    "syllable": "SCHU",
+    "exampleWord": "SCHULE",
+    "emoji": "🏫",
+    "hint": "SCHU wie Schule",
+    "syllables": [
+      "SCHU",
+      "LE"
+    ],
+    "digraph": true
+  },
+  {
+    "syllable": "LA",
+    "exampleWord": "LACHEN",
+    "emoji": "😄",
+    "hint": "LA wie Lachen",
+    "syllables": [
+      "LA",
+      "CHEN"
+    ],
+    "digraph": true
+  },
+  {
+    "syllable": "GAR",
+    "exampleWord": "GARTEN",
+    "emoji": "🌷",
+    "hint": "GAR wie Garten",
+    "syllables": [
+      "GAR",
+      "TEN"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "FEN",
+    "exampleWord": "FENSTER",
+    "emoji": "🪟",
+    "hint": "FEN wie Fenster",
+    "syllables": [
+      "FEN",
+      "STER"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "HA",
+    "exampleWord": "HASE",
+    "emoji": "🐰",
+    "hint": "HA wie Hase",
+    "syllables": [
+      "HA",
+      "SE"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "AF",
+    "exampleWord": "AFFE",
+    "emoji": "🐒",
+    "hint": "AF wie Affe",
+    "syllables": [
+      "AF",
+      "FE"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "SPIN",
+    "exampleWord": "SPINNE",
+    "emoji": "🕷️",
+    "hint": "SPIN wie Spinne",
+    "syllables": [
+      "SPIN",
+      "NE"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "BA",
+    "exampleWord": "BANANE",
+    "emoji": "🍌",
+    "hint": "BA wie Banane",
+    "syllables": [
+      "BA",
+      "NA",
+      "NE"
+    ],
+    "digraph": false
+  }
 ]

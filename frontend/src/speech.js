@@ -56,13 +56,25 @@ function buildUtterance(text, langCode) {
   return utterance;
 }
 
-export function speak(text, langCode) {
+// `onWordBoundary(charIndex)` is optional: when provided, it's wired to the
+// utterance's `onboundary` event (fired per word/character on browsers/voices
+// that support it) so callers can highlight the word being spoken. Not all
+// browsers/voices fire this event — when it never fires, the callback simply
+// never runs, so playback itself is unaffected either way.
+export function speak(text, langCode, onWordBoundary) {
   if (!isSpeechAvailable() || !text) return;
   try {
     window.speechSynthesis.cancel();
     const utterance = buildUtterance(text, langCode);
     utterance.rate = 0.9;
     utterance.pitch = 1.1;
+    if (typeof onWordBoundary === "function") {
+      utterance.onboundary = (event) => {
+        if (event.name === "word" || event.name === undefined) {
+          onWordBoundary(event.charIndex);
+        }
+      };
+    }
     window.speechSynthesis.speak(utterance);
   } catch (e) {
     // Speech is a progressive enhancement; failures are non-fatal.

@@ -1,0 +1,93 @@
+/* Lightweight CSS-only animation for mascot illustrations: a gentle idle
+   bob plus a twinkle/blink pulse on accent details. Kept purely presentational
+   so a single hand-authored SVG per character still feels alive without
+   needing multiple drawn poses. */
+
+.mascot-bob {
+  transform-origin: 50px 55px;
+  animation: mascot-bob-anim 2.6s ease-in-out infinite;
+}
+
+@keyframes mascot-bob-anim {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-2.5px); }
+}
+
+.mascot-twinkle {
+  animation: mascot-twinkle-anim 1.6s ease-in-out infinite;
+}
+
+@keyframes mascot-twinkle-anim {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
+.mascot-mood-happy .mascot-bob {
+  animation-name: mascot-bounce-anim;
+  animation-duration: 0.9s;
+}
+
+@keyframes mascot-bounce-anim {
+  0%, 100% { transform: translateY(0); }
+  30% { transform: translateY(-6px); }
+  60% { transform: translateY(1px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mascot-bob,
+  .mascot-twinkle {
+    animation: none;
+  }
+}
+
+.mascot-bubble {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  max-width: 32rem;
+}
+
+.mascot-bubble__figure {
+  flex-shrink: 0;
+}
+
+.mascot-bubble__balloon {
+  position: relative;
+  background: var(--mascot-bubble-bg, #fff8ec);
+  border: 3px solid var(--mascot-bubble-border, #2b2340);
+  border-radius: 1.1rem;
+  padding: 0.65rem 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mascot-bubble__balloon::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 18px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 10px solid var(--mascot-bubble-border, #2b2340);
+}
+
+.mascot-bubble__balloon::after {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 18px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 10px solid var(--mascot-bubble-bg, #fff8ec);
+}
+
+.mascot-bubble__text {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.35;
+}
