@@ -98,7 +98,46 @@
       "zh": "葡式蛋挞"
     },
     "nativeName": "Portugal",
-    "nativeLangCode": "pt-PT"
+    "nativeLangCode": "pt-PT",
+    "climate": {
+      "pt": "Portugal tem um clima ameno, com verões quentes e secos e invernos suaves e chuvosos.",
+      "en": "Portugal's climate is mild, with hot dry summers and cool rainy winters.",
+      "de": "Das Klima in Portugal ist mild, mit heißen, trockenen Sommern und milden, regnerischen Wintern.",
+      "fr": "Portugal a un climat doux, avec des étés chauds et secs et des hivers doux et pluvieux.",
+      "es": "Portugal tiene un clima templado, con veranos calurosos y secos e inviernos suaves y lluviosos.",
+      "it": "Portogallo ha un clima mite, con estati calde e secche e inverni miti e piovosi.",
+      "zh": "葡萄牙的气候特点是温和，夏季炎热干燥，冬季温和多雨。"
+    },
+    "population": {
+      "pt": "Portugal tem cerca de 11 milhões de habitantes.",
+      "en": "Portugal has about 11 million people.",
+      "de": "Portugal hat etwa 11 Millionen Einwohner.",
+      "fr": "Portugal compte environ 11 millions d'habitants.",
+      "es": "Portugal tiene alrededor de 11 millones de habitantes.",
+      "it": "Portogallo ha circa 11 milioni di abitanti.",
+      "zh": "葡萄牙人口大约有1100万。"
+    },
+    "funCuriosity": {
+      "pt": "Portugal tem a livraria mais antiga do mundo ainda em funcionamento, aberta em 1732.",
+      "en": "Portugal has the world's oldest bookshop still in operation, opened in 1732.",
+      "de": "Portugal hat die älteste noch geöffnete Buchhandlung der Welt, die 1732 eröffnet wurde.",
+      "fr": "Le Portugal possède la plus ancienne librairie du monde encore en activité, ouverte en 1732.",
+      "es": "Portugal tiene la librería más antigua del mundo que sigue abierta, inaugurada en 1732.",
+      "it": "Il Portogallo ha la libreria più antica del mondo ancora in attività, aperta nel 1732.",
+      "zh": "葡萄牙拥有世界上仍在营业的最古老书店，开业于1732年。"
+    },
+    "additionalAnimal": {
+      "emoji": "🐺",
+      "name": {
+        "pt": "Lobo-ibérico",
+        "en": "Iberian wolf",
+        "de": "Iberischer Wolf",
+        "fr": "Loup ibérique",
+        "es": "Lobo ibérico",
+        "it": "Lupo iberico",
+        "zh": "伊比利亚狼"
+      }
+    }
   },
   {
     "iso": "ES",
@@ -199,7 +238,46 @@
       "zh": "西班牙海鲜饭"
     },
     "nativeName": "España",
-    "nativeLangCode": "es-ES"
+    "nativeLangCode": "es-ES",
+    "climate": {
+      "pt": "Espanha tem um clima ameno, com verões quentes e secos e invernos suaves e chuvosos.",
+      "en": "Spain's climate is mild, with hot dry summers and cool rainy winters.",
+      "de": "Das Klima in Spanien ist mild, mit heißen, trockenen Sommern und milden, regnerischen Wintern.",
+      "fr": "Espagne a un climat doux, avec des étés chauds et secs et des hivers doux et pluvieux.",
+      "es": "España tiene un clima templado, con veranos calurosos y secos e inviernos suaves y lluviosos.",
+      "it": "Spagna ha un clima mite, con estati calde e secche e inverni miti e piovosi.",
+      "zh": "西班牙的气候特点是温和，夏季炎热干燥，冬季温和多雨。"
+    },
+    "population": {
+      "pt": "Espanha tem cerca de 48 milhões de habitantes.",
+      "en": "Spain has about 48 million people.",
+      "de": "Spanien hat etwa 48 Millionen Einwohner.",
+      "fr": "Espagne compte environ 48 millions d'habitants.",
+      "es": "España tiene alrededor de 48 millones de habitantes.",
+      "it": "Spagna ha circa 48 milioni di abitanti.",
+      "zh": "西班牙人口大约有4800万。"
+    },
+    "funCuriosity": {
+      "pt": "Espanha tem mais Locais Património Mundial da UNESCO do que quase qualquer outro país.",
+      "en": "Spain has more UNESCO World Heritage Sites than almost any other country.",
+      "de": "Spanien hat mehr UNESCO-Welterbestätten als fast jedes andere Land.",
+      "fr": "L'Espagne compte plus de sites du patrimoine mondial de l'UNESCO que presque tout autre pays.",
+      "es": "España tiene más Lugares Patrimonio de la Humanidad de la UNESCO que casi cualquier otro país.",
+      "it": "La Spagna ha più siti Patrimonio dell'Umanità UNESCO di quasi ogni altro paese.",
+      "zh": "西班牙拥有的联合国教科文组织世界遗产数量几乎超过其他任何国家。"
+    },
+    "additionalAnimal": {
+      "emoji": "🐈",
+      "name": {
+        "pt": "Lince-ibérico",
+        "en": "Iberian lynx",
+        "de": "Pardelluchs",
+        "fr": "Lynx ibérique",
+        "es": "Lince ibérico",
+        "it": "Lince iberica",
+        "zh": "伊比利亚猞猁"
+      }
+    }
   },
   {
     "iso": "FR",
@@ -300,7 +378,46 @@
       "zh": "羊角面包"
     },
     "nativeName": "France",
-    "nativeLangCode": "fr-FR"
+    "nativeLangCode": "fr-FR",
+    "climate": {
+      "pt": "França tem um clima temperado marítimo, com verões amenos, invernos suaves e chuva ao longo do ano.",
+      "en": "France's climate is temperate maritime, with mild summers and winters and rain throughout the year.",
+      "de": "Das Klima in Frankreich ist gemäßigt-maritim, mit milden Sommern und Wintern und Regen das ganze Jahr über.",
+      "fr": "France a un climat tempéré océanique, avec des étés doux, des hivers doux et de la pluie toute l'année.",
+      "es": "Francia tiene un clima templado oceánico, con veranos e inviernos suaves y lluvia durante todo el año.",
+      "it": "Francia ha un clima temperato oceanico, con estati e inverni miti e piogge tutto l'anno.",
+      "zh": "法国的气候特点是温带海洋性气候，夏季和冬季都较温和，全年降雨较多。"
+    },
+    "population": {
+      "pt": "França tem cerca de 68 milhões de habitantes.",
+      "en": "France has about 68 million people.",
+      "de": "Frankreich hat etwa 68 Millionen Einwohner.",
+      "fr": "France compte environ 68 millions d'habitants.",
+      "es": "Francia tiene alrededor de 68 millones de habitantes.",
+      "it": "Francia ha circa 68 milioni di abitanti.",
+      "zh": "法国人口大约有6800万。"
+    },
+    "funCuriosity": {
+      "pt": "A França é o país mais visitado do mundo, recebendo mais de 100 milhões de turistas por ano.",
+      "en": "France is the most visited country in the world, welcoming over 100 million tourists a year.",
+      "de": "Frankreich ist das meistbesuchte Land der Welt und empfängt jährlich über 100 Millionen Touristen.",
+      "fr": "La France est le pays le plus visité au monde, accueillant plus de 100 millions de touristes par an.",
+      "es": "Francia es el país más visitado del mundo, con más de 100 millones de turistas al año.",
+      "it": "La Francia è il paese più visitato al mondo, con oltre 100 milioni di turisti all'anno.",
+      "zh": "法国是世界上游客最多的国家，每年接待超过一亿游客。"
+    },
+    "additionalAnimal": {
+      "emoji": "🦌",
+      "name": {
+        "pt": "Camurça-dos-Alpes",
+        "en": "Alpine chamois",
+        "de": "Alpengämse",
+        "fr": "Chamois des Alpes",
+        "es": "Rebeco alpino",
+        "it": "Camoscio alpino",
+        "zh": "阿尔卑斯岩羚"
+      }
+    }
   },
   {
     "iso": "DE",
@@ -401,7 +518,46 @@
       "zh": "椒盐卷饼"
     },
     "nativeName": "Deutschland",
-    "nativeLangCode": "de-DE"
+    "nativeLangCode": "de-DE",
+    "climate": {
+      "pt": "Alemanha tem um clima continental, com verões quentes e invernos frios e nevados.",
+      "en": "Germany's climate is continental, with warm summers and cold, snowy winters.",
+      "de": "Das Klima in Deutschland ist kontinental, mit warmen Sommern und kalten, schneereichen Wintern.",
+      "fr": "Allemagne a un climat continental, avec des étés chauds et des hivers froids et neigeux.",
+      "es": "Alemania tiene un clima continental, con veranos cálidos e inviernos fríos y nevados.",
+      "it": "Germania ha un clima continentale, con estati calde e inverni freddi e nevosi.",
+      "zh": "德国的气候特点是大陆性气候，夏季温暖，冬季寒冷多雪。"
+    },
+    "population": {
+      "pt": "Alemanha tem cerca de 84 milhões de habitantes.",
+      "en": "Germany has about 84 million people.",
+      "de": "Deutschland hat etwa 84 Millionen Einwohner.",
+      "fr": "Allemagne compte environ 84 millions d'habitants.",
+      "es": "Alemania tiene alrededor de 84 millones de habitantes.",
+      "it": "Germania ha circa 84 milioni di abitanti.",
+      "zh": "德国人口大约有8400万。"
+    },
+    "funCuriosity": {
+      "pt": "A Alemanha tem mais de 400 jardins zoológicos, mais do que qualquer outro país do mundo.",
+      "en": "Germany has more than 400 zoos, more than any other country in the world.",
+      "de": "Deutschland hat mehr als 400 Zoos, mehr als jedes andere Land der Welt.",
+      "fr": "L'Allemagne compte plus de 400 zoos, plus que tout autre pays au monde.",
+      "es": "Alemania tiene más de 400 zoológicos, más que cualquier otro país del mundo.",
+      "it": "La Germania ha più di 400 zoo, più di qualsiasi altro paese al mondo.",
+      "zh": "德国拥有超过400家动物园，比世界上任何其他国家都多。"
+    },
+    "additionalAnimal": {
+      "emoji": "🐻",
+      "name": {
+        "pt": "Urso-pardo",
+        "en": "Brown bear",
+        "de": "Braunbär",
+        "fr": "Ours brun",
+        "es": "Oso pardo",
+        "it": "Orso bruno",
+        "zh": "棕熊"
+      }
+    }
   },
   {
     "iso": "IT",
@@ -502,7 +658,46 @@
       "zh": "披萨"
     },
     "nativeName": "Italia",
-    "nativeLangCode": "it-IT"
+    "nativeLangCode": "it-IT",
+    "climate": {
+      "pt": "Itália tem um clima ameno, com verões quentes e secos e invernos suaves e chuvosos.",
+      "en": "Italy's climate is mild, with hot dry summers and cool rainy winters.",
+      "de": "Das Klima in Italien ist mild, mit heißen, trockenen Sommern und milden, regnerischen Wintern.",
+      "fr": "Italie a un climat doux, avec des étés chauds et secs et des hivers doux et pluvieux.",
+      "es": "Italia tiene un clima templado, con veranos calurosos y secos e inviernos suaves y lluviosos.",
+      "it": "Italia ha un clima mite, con estati calde e secche e inverni miti e piovosi.",
+      "zh": "意大利的气候特点是温和，夏季炎热干燥，冬季温和多雨。"
+    },
+    "population": {
+      "pt": "Itália tem cerca de 59 milhões de habitantes.",
+      "en": "Italy has about 59 million people.",
+      "de": "Italien hat etwa 59 Millionen Einwohner.",
+      "fr": "Italie compte environ 59 millions d'habitants.",
+      "es": "Italia tiene alrededor de 59 millones de habitantes.",
+      "it": "Italia ha circa 59 milioni di abitanti.",
+      "zh": "意大利人口大约有5900万。"
+    },
+    "funCuriosity": {
+      "pt": "A Itália tem mais vulcões ativos do que qualquer outro país da Europa.",
+      "en": "Italy has more active volcanoes than any other country in Europe.",
+      "de": "Italien hat mehr aktive Vulkane als jedes andere Land in Europa.",
+      "fr": "L'Italie compte plus de volcans actifs que tout autre pays d'Europe.",
+      "es": "Italia tiene más volcanes activos que cualquier otro país de Europa.",
+      "it": "L'Italia ha più vulcani attivi di qualsiasi altro paese d'Europa.",
+      "zh": "意大利拥有的活火山数量超过欧洲其他任何国家。"
+    },
+    "additionalAnimal": {
+      "emoji": "🐿️",
+      "name": {
+        "pt": "Marmota-dos-Alpes",
+        "en": "Alpine marmot",
+        "de": "Alpenmurmeltier",
+        "fr": "Marmotte des Alpes",
+        "es": "Marmota alpina",
+        "it": "Marmotta alpina",
+        "zh": "阿尔卑斯旱獭"
+      }
+    }
   },
   {
     "iso": "GB",
@@ -603,7 +798,46 @@
       "zh": "炸鱼薯条"
     },
     "nativeName": "United Kingdom",
-    "nativeLangCode": "en-GB"
+    "nativeLangCode": "en-GB",
+    "climate": {
+      "pt": "Reino Unido tem um clima temperado marítimo, com verões amenos, invernos suaves e chuva ao longo do ano.",
+      "en": "United Kingdom's climate is temperate maritime, with mild summers and winters and rain throughout the year.",
+      "de": "Das Klima in Vereinigtes Königreich ist gemäßigt-maritim, mit milden Sommern und Wintern und Regen das ganze Jahr über.",
+      "fr": "Royaume-Uni a un climat tempéré océanique, avec des étés doux, des hivers doux et de la pluie toute l'année.",
+      "es": "Reino Unido tiene un clima templado oceánico, con veranos e inviernos suaves y lluvia durante todo el año.",
+      "it": "Regno Unito ha un clima temperato oceanico, con estati e inverni miti e piogge tutto l'anno.",
+      "zh": "英国的气候特点是温带海洋性气候，夏季和冬季都较温和，全年降雨较多。"
+    },
+    "population": {
+      "pt": "Reino Unido tem cerca de 67 milhões de habitantes.",
+      "en": "United Kingdom has about 67 million people.",
+      "de": "Vereinigtes Königreich hat etwa 67 Millionen Einwohner.",
+      "fr": "Royaume-Uni compte environ 67 millions d'habitants.",
+      "es": "Reino Unido tiene alrededor de 67 millones de habitantes.",
+      "it": "Regno Unito ha circa 67 milioni di abitanti.",
+      "zh": "英国人口大约有6700万。"
+    },
+    "funCuriosity": {
+      "pt": "No Reino Unido só existe uma cobra venenosa nativa, a víbora-europeia.",
+      "en": "The United Kingdom has only one native venomous snake, the adder.",
+      "de": "Im Vereinigten Königreich gibt es nur eine einheimische Giftschlange, die Kreuzotter.",
+      "fr": "Au Royaume-Uni, il n'existe qu'un seul serpent venimeux indigène, la vipère péliade.",
+      "es": "En el Reino Unido solo hay una serpiente venenosa autóctona, la víbora europea.",
+      "it": "Nel Regno Unito esiste un solo serpente velenoso autoctono, la vipera comune.",
+      "zh": "英国本土只有一种毒蛇，就是欧洲蝮蛇。"
+    },
+    "additionalAnimal": {
+      "emoji": "🦔",
+      "name": {
+        "pt": "Ouriço-cacheiro",
+        "en": "Hedgehog",
+        "de": "Igel",
+        "fr": "Hérisson",
+        "es": "Erizo",
+        "it": "Riccio",
+        "zh": "刺猬"
+      }
+    }
   },
   {
     "iso": "US",
@@ -704,7 +938,46 @@
       "zh": "汉堡包"
     },
     "nativeName": "United States",
-    "nativeLangCode": "en-US"
+    "nativeLangCode": "en-US",
+    "climate": {
+      "pt": "Estados Unidos tem um clima continental, com verões quentes e invernos frios e nevados.",
+      "en": "United States's climate is continental, with warm summers and cold, snowy winters.",
+      "de": "Das Klima in Vereinigte Staaten ist kontinental, mit warmen Sommern und kalten, schneereichen Wintern.",
+      "fr": "États-Unis a un climat continental, avec des étés chauds et des hivers froids et neigeux.",
+      "es": "Estados Unidos tiene un clima continental, con veranos cálidos e inviernos fríos y nevados.",
+      "it": "Stati Uniti ha un clima continentale, con estati calde e inverni freddi e nevosi.",
+      "zh": "美国的气候特点是大陆性气候，夏季温暖，冬季寒冷多雪。"
+    },
+    "population": {
+      "pt": "Estados Unidos tem cerca de 335 milhões de habitantes.",
+      "en": "United States has about 335 million people.",
+      "de": "Vereinigte Staaten hat etwa 335 Millionen Einwohner.",
+      "fr": "États-Unis compte environ 335 millions d'habitants.",
+      "es": "Estados Unidos tiene alrededor de 335 millones de habitantes.",
+      "it": "Stati Uniti ha circa 335 milioni di abitanti.",
+      "zh": "美国人口大约有33500万。"
+    },
+    "funCuriosity": {
+      "pt": "Os Estados Unidos têm mais parques nacionais do que a maioria dos países, incluindo o primeiro do mundo, Yellowstone.",
+      "en": "The United States has more national parks than most countries, including the world's first, Yellowstone.",
+      "de": "Die Vereinigten Staaten haben mehr Nationalparks als die meisten Länder, darunter den ersten der Welt, Yellowstone.",
+      "fr": "Les États-Unis comptent plus de parcs nationaux que la plupart des pays, dont le premier au monde, Yellowstone.",
+      "es": "Estados Unidos tiene más parques nacionales que la mayoría de los países, incluido el primero del mundo, Yellowstone.",
+      "it": "Gli Stati Uniti hanno più parchi nazionali della maggior parte dei paesi, incluso il primo al mondo, Yellowstone.",
+      "zh": "美国拥有的国家公园比大多数国家都多，包括世界上第一个国家公园——黄石公园。"
+    },
+    "additionalAnimal": {
+      "emoji": "🦬",
+      "name": {
+        "pt": "Bisonte-americano",
+        "en": "American bison",
+        "de": "Amerikanischer Bison",
+        "fr": "Bison d'Amérique",
+        "es": "Bisonte americano",
+        "it": "Bisonte americano",
+        "zh": "美洲野牛"
+      }
+    }
   },
   {
     "iso": "BR",
@@ -805,7 +1078,46 @@
       "zh": "黑豆炖肉"
     },
     "nativeName": "Brasil",
-    "nativeLangCode": "pt-BR"
+    "nativeLangCode": "pt-BR",
+    "climate": {
+      "pt": "Brasil tem um clima tropical, quente e húmido durante todo o ano.",
+      "en": "Brazil's climate is tropical, hot and humid all year round.",
+      "de": "Das Klima in Brasilien ist tropisch, das ganze Jahr über heiß und feucht.",
+      "fr": "Brésil a un climat tropical, chaud et humide toute l'année.",
+      "es": "Brasil tiene un clima tropical, cálido y húmedo durante todo el año.",
+      "it": "Brasile ha un clima tropicale, caldo e umido tutto l'anno.",
+      "zh": "巴西的气候特点是热带气候，全年炎热潮湿。"
+    },
+    "population": {
+      "pt": "Brasil tem cerca de 216 milhões de habitantes.",
+      "en": "Brazil has about 216 million people.",
+      "de": "Brasilien hat etwa 216 Millionen Einwohner.",
+      "fr": "Brésil compte environ 216 millions d'habitants.",
+      "es": "Brasil tiene alrededor de 216 millones de habitantes.",
+      "it": "Brasile ha circa 216 milioni di abitanti.",
+      "zh": "巴西人口大约有21600万。"
+    },
+    "funCuriosity": {
+      "pt": "O Brasil tem mais espécies de macacos do que qualquer outro país.",
+      "en": "Brazil is home to more species of monkeys than any other country.",
+      "de": "Brasilien beherbergt mehr Affenarten als jedes andere Land.",
+      "fr": "Le Brésil abrite plus d'espèces de singes que tout autre pays.",
+      "es": "Brasil alberga más especies de monos que cualquier otro país.",
+      "it": "Il Brasile ospita più specie di scimmie di qualsiasi altro paese.",
+      "zh": "巴西拥有的猴子物种比其他任何国家都多。"
+    },
+    "additionalAnimal": {
+      "emoji": "🐆",
+      "name": {
+        "pt": "Onça-pintada",
+        "en": "Jaguar",
+        "de": "Jaguar",
+        "fr": "Jaguar",
+        "es": "Jaguar",
+        "it": "Giaguaro",
+        "zh": "美洲豹"
+      }
+    }
   },
   {
     "iso": "CN",
@@ -906,7 +1218,46 @@
       "zh": "饺子"
     },
     "nativeName": "中国",
-    "nativeLangCode": "zh-CN"
+    "nativeLangCode": "zh-CN",
+    "climate": {
+      "pt": "China tem um clima continental, com verões quentes e invernos frios e nevados.",
+      "en": "China's climate is continental, with warm summers and cold, snowy winters.",
+      "de": "Das Klima in China ist kontinental, mit warmen Sommern und kalten, schneereichen Wintern.",
+      "fr": "Chine a un climat continental, avec des étés chauds et des hivers froids et neigeux.",
+      "es": "China tiene un clima continental, con veranos cálidos e inviernos fríos y nevados.",
+      "it": "Cina ha un clima continentale, con estati calde e inverni freddi e nevosi.",
+      "zh": "中国的气候特点是大陆性气候，夏季温暖，冬季寒冷多雪。"
+    },
+    "population": {
+      "pt": "A China tem mais de mil e quatrocentos milhões de habitantes, o país mais populoso do mundo.",
+      "en": "China has more than 1.4 billion people, making it one of the most populous countries in the world.",
+      "de": "China hat mehr als 1,4 Milliarden Einwohner und ist damit eines der bevölkerungsreichsten Länder der Welt.",
+      "fr": "La Chine compte plus de 1,4 milliard d'habitants, l'un des pays les plus peuplés du monde.",
+      "es": "China tiene más de 1400 millones de habitantes, uno de los países más poblados del mundo.",
+      "it": "La Cina ha più di 1,4 miliardi di abitanti, uno dei paesi più popolosi al mondo.",
+      "zh": "中国人口超过14亿，是世界上人口最多的国家之一。"
+    },
+    "funCuriosity": {
+      "pt": "Ao contrário do que muitos pensam, a Grande Muralha da China não se vê a olho nu do espaço.",
+      "en": "Contrary to popular myth, the Great Wall of China cannot actually be seen from space with the naked eye.",
+      "de": "Entgegen einem verbreiteten Mythos ist die Chinesische Mauer mit bloßem Auge nicht aus dem Weltall zu sehen.",
+      "fr": "Contrairement à la légende, la Grande Muraille de Chine n'est pas visible à l'œil nu depuis l'espace.",
+      "es": "Al contrario de lo que se cree, la Gran Muralla China no se puede ver a simple vista desde el espacio.",
+      "it": "Contrariamente al mito diffuso, la Grande Muraglia Cinese non si vede a occhio nudo dallo spazio.",
+      "zh": "与流传的说法不同，长城其实无法用肉眼从太空看到。"
+    },
+    "additionalAnimal": {
+      "emoji": "🐅",
+      "name": {
+        "pt": "Tigre-do-sul-da-china",
+        "en": "South China tiger",
+        "de": "Südchinesischer Tiger",
+        "fr": "Tigre de Chine méridionale",
+        "es": "Tigre de China meridional",
+        "it": "Tigre della Cina meridionale",
+        "zh": "华南虎"
+      }
+    }
   },
   {
     "iso": "JP",
@@ -1007,7 +1358,46 @@
       "zh": "寿司"
     },
     "nativeName": "日本",
-    "nativeLangCode": "ja-JP"
+    "nativeLangCode": "ja-JP",
+    "climate": {
+      "pt": "Japão tem um clima subtropical, com verões quentes e húmidos e invernos suaves.",
+      "en": "Japan's climate is subtropical, with hot, humid summers and mild winters.",
+      "de": "Das Klima in Japan ist subtropisch, mit heißen, feuchten Sommern und milden Wintern.",
+      "fr": "Japon a un climat subtropical, avec des étés chauds et humides et des hivers doux.",
+      "es": "Japón tiene un clima subtropical, con veranos calurosos y húmedos e inviernos suaves.",
+      "it": "Giappone ha un clima subtropicale, con estati calde e umide e inverni miti.",
+      "zh": "日本的气候特点是亚热带气候，夏季炎热潮湿，冬季温和。"
+    },
+    "population": {
+      "pt": "Japão tem cerca de 124 milhões de habitantes.",
+      "en": "Japan has about 124 million people.",
+      "de": "Japan hat etwa 124 Millionen Einwohner.",
+      "fr": "Japon compte environ 124 millions d'habitants.",
+      "es": "Japón tiene alrededor de 124 millones de habitantes.",
+      "it": "Giappone ha circa 124 milioni di abitanti.",
+      "zh": "日本人口大约有12400万。"
+    },
+    "funCuriosity": {
+      "pt": "O Japão é formado por mais de 6800 ilhas.",
+      "en": "Japan is made up of more than 6,800 islands.",
+      "de": "Japan besteht aus mehr als 6800 Inseln.",
+      "fr": "Le Japon est composé de plus de 6 800 îles.",
+      "es": "Japón está formado por más de 6800 islas.",
+      "it": "Il Giappone è composto da oltre 6800 isole.",
+      "zh": "日本由超过6800个岛屿组成。"
+    },
+    "additionalAnimal": {
+      "emoji": "🐒",
+      "name": {
+        "pt": "Macaco-das-neves",
+        "en": "Japanese macaque",
+        "de": "Japanmakak",
+        "fr": "Macaque du Japon",
+        "es": "Macaco japonés",
+        "it": "Macaco giapponese",
+        "zh": "日本猕猴"
+      }
+    }
   },
   {
     "iso": "IN",
@@ -1108,7 +1498,46 @@
       "zh": "咖喱"
     },
     "nativeName": "भारत",
-    "nativeLangCode": "hi-IN"
+    "nativeLangCode": "hi-IN",
+    "climate": {
+      "pt": "Índia tem um clima tropical de monções, com uma estação seca e uma estação muito chuvosa.",
+      "en": "India's climate is tropical monsoon, with a dry season and a very rainy season.",
+      "de": "Das Klima in Indien ist tropisches Monsunklima, mit einer Trockenzeit und einer sehr regenreichen Regenzeit.",
+      "fr": "Inde a un climat tropical de mousson, avec une saison sèche et une saison très pluvieuse.",
+      "es": "India tiene un clima tropical monzónico, con una estación seca y una estación muy lluviosa.",
+      "it": "India ha un clima tropicale monsonico, con una stagione secca e una stagione molto piovosa.",
+      "zh": "印度的气候特点是热带季风气候，有旱季和降雨量很大的雨季。"
+    },
+    "population": {
+      "pt": "A Índia tem mais de mil e quatrocentos milhões de habitantes, o país mais populoso do mundo.",
+      "en": "India has more than 1.4 billion people, the most populous country in the world.",
+      "de": "Indien hat mehr als 1,4 Milliarden Einwohner, das bevölkerungsreichste Land der Welt.",
+      "fr": "L'Inde compte plus de 1,4 milliard d'habitants, le pays le plus peuplé du monde.",
+      "es": "India tiene más de 1400 millones de habitantes, el país más poblado del mundo.",
+      "it": "L'India ha più di 1,4 miliardi di abitanti, il paese più popoloso al mondo.",
+      "zh": "印度人口超过14亿，是世界上人口最多的国家。"
+    },
+    "funCuriosity": {
+      "pt": "A Índia tem a maior rede postal do mundo, com mais de 150 mil estações de correio.",
+      "en": "India has the largest postal network in the world, with over 150,000 post offices.",
+      "de": "Indien hat das größte Postnetz der Welt mit über 150.000 Postämtern.",
+      "fr": "L'Inde possède le plus grand réseau postal du monde, avec plus de 150 000 bureaux de poste.",
+      "es": "India tiene la red postal más grande del mundo, con más de 150 000 oficinas de correos.",
+      "it": "L'India ha la rete postale più grande del mondo, con oltre 150.000 uffici postali.",
+      "zh": "印度拥有世界上最大的邮政网络，邮局超过15万家。"
+    },
+    "additionalAnimal": {
+      "emoji": "🐘",
+      "name": {
+        "pt": "Elefante-asiático",
+        "en": "Asian elephant",
+        "de": "Asiatischer Elefant",
+        "fr": "Éléphant d'Asie",
+        "es": "Elefante asiático",
+        "it": "Elefante asiatico",
+        "zh": "亚洲象"
+      }
+    }
   },
   {
     "iso": "EG",
@@ -1209,7 +1638,46 @@
       "zh": "炸豆丸子"
     },
     "nativeName": "مصر",
-    "nativeLangCode": "ar-EG"
+    "nativeLangCode": "ar-EG",
+    "climate": {
+      "pt": "Egito tem um clima desértico, muito quente e seco durante o dia, com noites frias.",
+      "en": "Egypt's climate is desert, very hot and dry during the day, with cool nights.",
+      "de": "Das Klima in Ägypten ist wüstenhaft, tagsüber sehr heiß und trocken, mit kühlen Nächten.",
+      "fr": "Égypte a un climat désertique, très chaud et sec le jour, avec des nuits fraîches.",
+      "es": "Egipto tiene un clima desértico, muy caluroso y seco durante el día, con noches frescas.",
+      "it": "Egitto ha un clima desertico, molto caldo e secco di giorno, con notti fresche.",
+      "zh": "埃及的气候特点是沙漠气候，白天酷热干燥，夜晚凉爽。"
+    },
+    "population": {
+      "pt": "Egito tem cerca de 112 milhões de habitantes.",
+      "en": "Egypt has about 112 million people.",
+      "de": "Ägypten hat etwa 112 Millionen Einwohner.",
+      "fr": "Égypte compte environ 112 millions d'habitants.",
+      "es": "Egipto tiene alrededor de 112 millones de habitantes.",
+      "it": "Egitto ha circa 112 milioni di abitanti.",
+      "zh": "埃及人口大约有11200万。"
+    },
+    "funCuriosity": {
+      "pt": "O Egito tem o rio mais comprido do mundo, o Nilo.",
+      "en": "Egypt is home to the longest river in the world, the Nile.",
+      "de": "Ägypten beherbergt den längsten Fluss der Welt, den Nil.",
+      "fr": "L'Égypte abrite le plus long fleuve du monde, le Nil.",
+      "es": "Egipto alberga el río más largo del mundo, el Nilo.",
+      "it": "L'Egitto ospita il fiume più lungo del mondo, il Nilo.",
+      "zh": "埃及拥有世界上最长的河流——尼罗河。"
+    },
+    "additionalAnimal": {
+      "emoji": "🐊",
+      "name": {
+        "pt": "Crocodilo-do-Nilo",
+        "en": "Nile crocodile",
+        "de": "Nilkrokodil",
+        "fr": "Crocodile du Nil",
+        "es": "Cocodrilo del Nilo",
+        "it": "Coccodrillo del Nilo",
+        "zh": "尼罗鳄"
+      }
+    }
   },
   {
     "iso": "ZA",
@@ -1310,7 +1778,46 @@
       "zh": "波波蒂"
     },
     "nativeName": "South Africa",
-    "nativeLangCode": "en-ZA"
+    "nativeLangCode": "en-ZA",
+    "climate": {
+      "pt": "África do Sul tem um clima de savana, com uma estação seca e uma estação chuvosa bem marcadas.",
+      "en": "South Africa's climate is savanna, with a clearly marked dry season and rainy season.",
+      "de": "Das Klima in Südafrika ist Savannenklima, mit einer ausgeprägten Trocken- und Regenzeit.",
+      "fr": "Afrique du Sud a un climat de savane, avec une saison sèche et une saison des pluies bien marquées.",
+      "es": "Sudáfrica tiene un clima de sabana, con una estación seca y una estación lluviosa bien marcadas.",
+      "it": "Sudafrica ha un clima da savana, con una stagione secca e una stagione delle piogge ben distinte.",
+      "zh": "南非的气候特点是热带草原气候，旱季和雨季分明。"
+    },
+    "population": {
+      "pt": "África do Sul tem cerca de 60 milhões de habitantes.",
+      "en": "South Africa has about 60 million people.",
+      "de": "Südafrika hat etwa 60 Millionen Einwohner.",
+      "fr": "Afrique du Sud compte environ 60 millions d'habitants.",
+      "es": "Sudáfrica tiene alrededor de 60 millones de habitantes.",
+      "it": "Sudafrica ha circa 60 milioni di abitanti.",
+      "zh": "南非人口大约有6000万。"
+    },
+    "funCuriosity": {
+      "pt": "A África do Sul é o único país do mundo com três capitais.",
+      "en": "South Africa is the only country in the world with three capital cities.",
+      "de": "Südafrika ist das einzige Land der Welt mit drei Hauptstädten.",
+      "fr": "L'Afrique du Sud est le seul pays au monde à avoir trois capitales.",
+      "es": "Sudáfrica es el único país del mundo con tres capitales.",
+      "it": "Il Sudafrica è l'unico paese al mondo con tre capitali.",
+      "zh": "南非是世界上唯一拥有三个首都的国家。"
+    },
+    "additionalAnimal": {
+      "emoji": "🦒",
+      "name": {
+        "pt": "Girafa",
+        "en": "Giraffe",
+        "de": "Giraffe",
+        "fr": "Girafe",
+        "es": "Jirafa",
+        "it": "Giraffa",
+        "zh": "长颈鹿"
+      }
+    }
   },
   {
     "iso": "AU",
@@ -1411,7 +1918,46 @@
       "zh": "帕夫洛娃蛋糕"
     },
     "nativeName": "Australia",
-    "nativeLangCode": "en-AU"
+    "nativeLangCode": "en-AU",
+    "climate": {
+      "pt": "Austrália tem um clima desértico, muito quente e seco durante o dia, com noites frias.",
+      "en": "Australia's climate is desert, very hot and dry during the day, with cool nights.",
+      "de": "Das Klima in Australien ist wüstenhaft, tagsüber sehr heiß und trocken, mit kühlen Nächten.",
+      "fr": "Australie a un climat désertique, très chaud et sec le jour, avec des nuits fraîches.",
+      "es": "Australia tiene un clima desértico, muy caluroso y seco durante el día, con noches frescas.",
+      "it": "Australia ha un clima desertico, molto caldo e secco di giorno, con notti fresche.",
+      "zh": "澳大利亚的气候特点是沙漠气候，白天酷热干燥，夜晚凉爽。"
+    },
+    "population": {
+      "pt": "Austrália tem cerca de 26 milhões de habitantes.",
+      "en": "Australia has about 26 million people.",
+      "de": "Australien hat etwa 26 Millionen Einwohner.",
+      "fr": "Australie compte environ 26 millions d'habitants.",
+      "es": "Australia tiene alrededor de 26 millones de habitantes.",
+      "it": "Australia ha circa 26 milioni di abitanti.",
+      "zh": "澳大利亚人口大约有2600万。"
+    },
+    "funCuriosity": {
+      "pt": "A Austrália tem mais espécies de cobras venenosas do que qualquer outro país.",
+      "en": "Australia is home to more venomous snake species than any other country.",
+      "de": "Australien beherbergt mehr Giftschlangenarten als jedes andere Land.",
+      "fr": "L'Australie abrite plus d'espèces de serpents venimeux que tout autre pays.",
+      "es": "Australia alberga más especies de serpientes venenosas que cualquier otro país.",
+      "it": "L'Australia ospita più specie di serpenti velenosi di qualsiasi altro paese.",
+      "zh": "澳大利亚拥有的毒蛇物种比其他任何国家都多。"
+    },
+    "additionalAnimal": {
+      "emoji": "🐨",
+      "name": {
+        "pt": "Coala",
+        "en": "Koala",
+        "de": "Koala",
+        "fr": "Koala",
+        "es": "Koala",
+        "it": "Koala",
+        "zh": "考拉"
+      }
+    }
   },
   {
     "iso": "CA",
@@ -1512,7 +2058,46 @@
       "zh": "肉汁奶酪薯条"
     },
     "nativeName": "Canada",
-    "nativeLangCode": "en-CA"
+    "nativeLangCode": "en-CA",
+    "climate": {
+      "pt": "Canadá tem um clima frio, com invernos longos e rigorosos e verões curtos e frescos.",
+      "en": "Canada's climate is cold, with long harsh winters and short, cool summers.",
+      "de": "Das Klima in Kanada ist kalt, mit langen, strengen Wintern und kurzen, kühlen Sommern.",
+      "fr": "Canada a un climat froid, avec des hivers longs et rigoureux et des étés courts et frais.",
+      "es": "Canadá tiene un clima frío, con inviernos largos y rigurosos y veranos cortos y frescos.",
+      "it": "Canada ha un clima freddo, con inverni lunghi e rigidi ed estati brevi e fresche.",
+      "zh": "加拿大的气候特点是寒冷气候，冬季漫长严酷，夏季短暂凉爽。"
+    },
+    "population": {
+      "pt": "Canadá tem cerca de 39 milhões de habitantes.",
+      "en": "Canada has about 39 million people.",
+      "de": "Kanada hat etwa 39 Millionen Einwohner.",
+      "fr": "Canada compte environ 39 millions d'habitants.",
+      "es": "Canadá tiene alrededor de 39 millones de habitantes.",
+      "it": "Canada ha circa 39 milioni di abitanti.",
+      "zh": "加拿大人口大约有3900万。"
+    },
+    "funCuriosity": {
+      "pt": "O Canadá tem mais lagos do que todo o resto do mundo junto.",
+      "en": "Canada has more lakes than the rest of the world combined.",
+      "de": "Kanada hat mehr Seen als der Rest der Welt zusammen.",
+      "fr": "Le Canada compte plus de lacs que le reste du monde réuni.",
+      "es": "Canadá tiene más lagos que el resto del mundo junto.",
+      "it": "Il Canada ha più laghi di tutto il resto del mondo messo insieme.",
+      "zh": "加拿大的湖泊数量比世界其他地方加起来还多。"
+    },
+    "additionalAnimal": {
+      "emoji": "🦫",
+      "name": {
+        "pt": "Castor",
+        "en": "Beaver",
+        "de": "Biber",
+        "fr": "Castor",
+        "es": "Castor",
+        "it": "Castoro",
+        "zh": "河狸"
+      }
+    }
   },
   {
     "iso": "MX",
@@ -1613,7 +2198,46 @@
       "zh": "塔可饼"
     },
     "nativeName": "México",
-    "nativeLangCode": "es-MX"
+    "nativeLangCode": "es-MX",
+    "climate": {
+      "pt": "México tem um clima desértico, muito quente e seco durante o dia, com noites frias.",
+      "en": "Mexico's climate is desert, very hot and dry during the day, with cool nights.",
+      "de": "Das Klima in Mexiko ist wüstenhaft, tagsüber sehr heiß und trocken, mit kühlen Nächten.",
+      "fr": "Mexique a un climat désertique, très chaud et sec le jour, avec des nuits fraîches.",
+      "es": "México tiene un clima desértico, muy caluroso y seco durante el día, con noches frescas.",
+      "it": "Messico ha un clima desertico, molto caldo e secco di giorno, con notti fresche.",
+      "zh": "墨西哥的气候特点是沙漠气候，白天酷热干燥，夜晚凉爽。"
+    },
+    "population": {
+      "pt": "México tem cerca de 128 milhões de habitantes.",
+      "en": "Mexico has about 128 million people.",
+      "de": "Mexiko hat etwa 128 Millionen Einwohner.",
+      "fr": "Mexique compte environ 128 millions d'habitants.",
+      "es": "México tiene alrededor de 128 millones de habitantes.",
+      "it": "Messico ha circa 128 milioni di abitanti.",
+      "zh": "墨西哥人口大约有12800万。"
+    },
+    "funCuriosity": {
+      "pt": "O México tem mais pirâmides do que o Egito.",
+      "en": "Mexico is home to more pyramids than Egypt.",
+      "de": "In Mexiko gibt es mehr Pyramiden als in Ägypten.",
+      "fr": "Le Mexique compte plus de pyramides que l'Égypte.",
+      "es": "México tiene más pirámides que Egipto.",
+      "it": "Il Messico ha più piramidi dell'Egitto.",
+      "zh": "墨西哥的金字塔数量比埃及还多。"
+    },
+    "additionalAnimal": {
+      "emoji": "🦅",
+      "name": {
+        "pt": "Águia-real",
+        "en": "Golden eagle",
+        "de": "Steinadler",
+        "fr": "Aigle royal",
+        "es": "Águila real",
+        "it": "Aquila reale",
+        "zh": "金雕"
+      }
+    }
   },
   {
     "iso": "KR",
@@ -1714,7 +2338,46 @@
       "zh": "泡菜"
     },
     "nativeName": "대한민국",
-    "nativeLangCode": "ko-KR"
+    "nativeLangCode": "ko-KR",
+    "climate": {
+      "pt": "Coreia do Sul tem um clima continental, com verões quentes e invernos frios e nevados.",
+      "en": "South Korea's climate is continental, with warm summers and cold, snowy winters.",
+      "de": "Das Klima in Südkorea ist kontinental, mit warmen Sommern und kalten, schneereichen Wintern.",
+      "fr": "Corée du Sud a un climat continental, avec des étés chauds et des hivers froids et neigeux.",
+      "es": "Corea del Sur tiene un clima continental, con veranos cálidos e inviernos fríos y nevados.",
+      "it": "Corea del Sud ha un clima continentale, con estati calde e inverni freddi e nevosi.",
+      "zh": "韩国的气候特点是大陆性气候，夏季温暖，冬季寒冷多雪。"
+    },
+    "population": {
+      "pt": "Coreia do Sul tem cerca de 52 milhões de habitantes.",
+      "en": "South Korea has about 52 million people.",
+      "de": "Südkorea hat etwa 52 Millionen Einwohner.",
+      "fr": "Corée du Sud compte environ 52 millions d'habitants.",
+      "es": "Corea del Sur tiene alrededor de 52 millones de habitantes.",
+      "it": "Corea del Sud ha circa 52 milioni di abitanti.",
+      "zh": "韩国人口大约有5200万。"
+    },
+    "funCuriosity": {
+      "pt": "A Coreia do Sul tem uma das redes de internet mais rápidas do mundo.",
+      "en": "South Korea has one of the fastest internet networks in the world.",
+      "de": "Südkorea hat eines der schnellsten Internetnetze der Welt.",
+      "fr": "La Corée du Sud possède l'un des réseaux internet les plus rapides du monde.",
+      "es": "Corea del Sur tiene una de las redes de internet más rápidas del mundo.",
+      "it": "La Corea del Sud ha una delle reti internet più veloci al mondo.",
+      "zh": "韩国拥有世界上最快的互联网网络之一。"
+    },
+    "additionalAnimal": {
+      "emoji": "🐯",
+      "name": {
+        "pt": "Tigre-siberiano",
+        "en": "Siberian tiger",
+        "de": "Sibirischer Tiger",
+        "fr": "Tigre de Sibérie",
+        "es": "Tigre siberiano",
+        "it": "Tigre siberiana",
+        "zh": "西伯利亚虎"
+      }
+    }
   },
   {
     "iso": "GR",
@@ -1815,7 +2478,46 @@
       "zh": "希腊烤肉串"
     },
     "nativeName": "Ελλάδα",
-    "nativeLangCode": "el-GR"
+    "nativeLangCode": "el-GR",
+    "climate": {
+      "pt": "Grécia tem um clima ameno, com verões quentes e secos e invernos suaves e chuvosos.",
+      "en": "Greece's climate is mild, with hot dry summers and cool rainy winters.",
+      "de": "Das Klima in Griechenland ist mild, mit heißen, trockenen Sommern und milden, regnerischen Wintern.",
+      "fr": "Grèce a un climat doux, avec des étés chauds et secs et des hivers doux et pluvieux.",
+      "es": "Grecia tiene un clima templado, con veranos calurosos y secos e inviernos suaves y lluviosos.",
+      "it": "Grecia ha un clima mite, con estati calde e secche e inverni miti e piovosi.",
+      "zh": "希腊的气候特点是温和，夏季炎热干燥，冬季温和多雨。"
+    },
+    "population": {
+      "pt": "Grécia tem cerca de 10 milhões de habitantes.",
+      "en": "Greece has about 10 million people.",
+      "de": "Griechenland hat etwa 10 Millionen Einwohner.",
+      "fr": "Grèce compte environ 10 millions d'habitants.",
+      "es": "Grecia tiene alrededor de 10 millones de habitantes.",
+      "it": "Grecia ha circa 10 milioni di abitanti.",
+      "zh": "希腊人口大约有1000万。"
+    },
+    "funCuriosity": {
+      "pt": "A Grécia tem mais museus arqueológicos do que qualquer outro país do mundo.",
+      "en": "Greece has more archaeological museums than any other country in the world.",
+      "de": "Griechenland hat mehr archäologische Museen als jedes andere Land der Welt.",
+      "fr": "La Grèce compte plus de musées archéologiques que tout autre pays au monde.",
+      "es": "Grecia tiene más museos arqueológicos que cualquier otro país del mundo.",
+      "it": "La Grecia ha più musei archeologici di qualsiasi altro paese al mondo.",
+      "zh": "希腊拥有的考古博物馆比世界上任何其他国家都多。"
+    },
+    "additionalAnimal": {
+      "emoji": "🐐",
+      "name": {
+        "pt": "Cabra-montesa",
+        "en": "Wild goat",
+        "de": "Wildziege",
+        "fr": "Chèvre sauvage",
+        "es": "Cabra montés",
+        "it": "Capra selvatica",
+        "zh": "野山羊"
+      }
+    }
   },
   {
     "iso": "KE",
@@ -1916,7 +2618,46 @@
       "zh": "乌加黎玉米糊"
     },
     "nativeName": "Kenya",
-    "nativeLangCode": "sw-KE"
+    "nativeLangCode": "sw-KE",
+    "climate": {
+      "pt": "Quénia tem um clima ameno de altitude, com temperaturas suaves durante todo o ano graças à altitude.",
+      "en": "Kenya's climate is mild highland climate, with temperatures staying pleasant year-round thanks to the altitude.",
+      "de": "Das Klima in Kenia ist mildes Hochlandklima, mit dank der Höhenlage das ganze Jahr über angenehmen Temperaturen.",
+      "fr": "Kenya a un climat tempéré d'altitude, avec des températures agréables toute l'année grâce à l'altitude.",
+      "es": "Kenia tiene un clima templado de altitud, con temperaturas agradables durante todo el año gracias a la altitud.",
+      "it": "Kenya ha un clima temperato d'alta quota, con temperature miti tutto l'anno grazie all'altitudine.",
+      "zh": "肯尼亚的气候特点是高原温和气候，因海拔较高，全年气温较为宜人。"
+    },
+    "population": {
+      "pt": "Quénia tem cerca de 55 milhões de habitantes.",
+      "en": "Kenya has about 55 million people.",
+      "de": "Kenia hat etwa 55 Millionen Einwohner.",
+      "fr": "Kenya compte environ 55 millions d'habitants.",
+      "es": "Kenia tiene alrededor de 55 millones de habitantes.",
+      "it": "Kenya ha circa 55 milioni di abitanti.",
+      "zh": "肯尼亚人口大约有5500万。"
+    },
+    "funCuriosity": {
+      "pt": "O Quénia é o palco da Grande Migração, o maior movimento de animais selvagens da Terra.",
+      "en": "Kenya is home to the Great Migration, the largest movement of wildlife on Earth.",
+      "de": "Kenia beherbergt die Große Migration, die größte Tierwanderung der Erde.",
+      "fr": "Le Kenya abrite la Grande Migration, le plus grand déplacement d'animaux sauvages sur Terre.",
+      "es": "Kenia alberga la Gran Migración, el mayor movimiento de vida silvestre de la Tierra.",
+      "it": "Il Kenya ospita la Grande Migrazione, il più grande spostamento di fauna selvatica della Terra.",
+      "zh": "肯尼亚是地球上最大规模野生动物大迁徙的发生地。"
+    },
+    "additionalAnimal": {
+      "emoji": "🦒",
+      "name": {
+        "pt": "Girafa",
+        "en": "Giraffe",
+        "de": "Giraffe",
+        "fr": "Girafe",
+        "es": "Jirafa",
+        "it": "Giraffa",
+        "zh": "长颈鹿"
+      }
+    }
   },
   {
     "iso": "SE",
@@ -2017,7 +2758,46 @@
       "zh": "瑞典肉丸"
     },
     "nativeName": "Sverige",
-    "nativeLangCode": "sv-SE"
+    "nativeLangCode": "sv-SE",
+    "climate": {
+      "pt": "Suécia tem um clima frio, com invernos longos e rigorosos e verões curtos e frescos.",
+      "en": "Sweden's climate is cold, with long harsh winters and short, cool summers.",
+      "de": "Das Klima in Schweden ist kalt, mit langen, strengen Wintern und kurzen, kühlen Sommern.",
+      "fr": "Suède a un climat froid, avec des hivers longs et rigoureux et des étés courts et frais.",
+      "es": "Suecia tiene un clima frío, con inviernos largos y rigurosos y veranos cortos y frescos.",
+      "it": "Svezia ha un clima freddo, con inverni lunghi e rigidi ed estati brevi e fresche.",
+      "zh": "瑞典的气候特点是寒冷气候，冬季漫长严酷，夏季短暂凉爽。"
+    },
+    "population": {
+      "pt": "Suécia tem cerca de 11 milhões de habitantes.",
+      "en": "Sweden has about 11 million people.",
+      "de": "Schweden hat etwa 11 Millionen Einwohner.",
+      "fr": "Suède compte environ 11 millions d'habitants.",
+      "es": "Suecia tiene alrededor de 11 millones de habitantes.",
+      "it": "Svezia ha circa 11 milioni di abitanti.",
+      "zh": "瑞典人口大约有1100万。"
+    },
+    "funCuriosity": {
+      "pt": "Na Suécia existe o direito de 'Allemansrätten', que permite a todos caminhar livremente na natureza.",
+      "en": "Sweden has a right called 'Allemansrätten' that lets everyone roam freely in nature.",
+      "de": "In Schweden gibt es das Recht 'Allemansrätten', das es jedem erlaubt, sich frei in der Natur zu bewegen.",
+      "fr": "En Suède, le droit du 'Allemansrätten' permet à chacun de se déplacer librement dans la nature.",
+      "es": "En Suecia existe el derecho llamado 'Allemansrätten', que permite a todos moverse libremente por la naturaleza.",
+      "it": "In Svezia esiste il diritto 'Allemansrätten', che permette a tutti di muoversi liberamente nella natura.",
+      "zh": "瑞典拥有一项名为“自由通行权”的权利，让每个人都能自由地在大自然中漫步。"
+    },
+    "additionalAnimal": {
+      "emoji": "🦌",
+      "name": {
+        "pt": "Alce",
+        "en": "Moose",
+        "de": "Elch",
+        "fr": "Élan",
+        "es": "Alce",
+        "it": "Alce",
+        "zh": "驼鹿"
+      }
+    }
   },
   {
     "iso": "MA",
@@ -2118,7 +2898,46 @@
       "zh": "库斯库斯"
     },
     "nativeName": "المغرب",
-    "nativeLangCode": "ar-MA"
+    "nativeLangCode": "ar-MA",
+    "climate": {
+      "pt": "Marrocos tem um clima ameno, com verões quentes e secos e invernos suaves e chuvosos.",
+      "en": "Morocco's climate is mild, with hot dry summers and cool rainy winters.",
+      "de": "Das Klima in Marokko ist mild, mit heißen, trockenen Sommern und milden, regnerischen Wintern.",
+      "fr": "Maroc a un climat doux, avec des étés chauds et secs et des hivers doux et pluvieux.",
+      "es": "Marruecos tiene un clima templado, con veranos calurosos y secos e inviernos suaves y lluviosos.",
+      "it": "Marocco ha un clima mite, con estati calde e secche e inverni miti e piovosi.",
+      "zh": "摩洛哥的气候特点是温和，夏季炎热干燥，冬季温和多雨。"
+    },
+    "population": {
+      "pt": "Marrocos tem cerca de 37 milhões de habitantes.",
+      "en": "Morocco has about 37 million people.",
+      "de": "Marokko hat etwa 37 Millionen Einwohner.",
+      "fr": "Maroc compte environ 37 millions d'habitants.",
+      "es": "Marruecos tiene alrededor de 37 millones de habitantes.",
+      "it": "Marocco ha circa 37 milioni di abitanti.",
+      "zh": "摩洛哥人口大约有3700万。"
+    },
+    "funCuriosity": {
+      "pt": "O deserto do Sara em Marrocos tem dunas de areia com mais de 150 metros de altura.",
+      "en": "Morocco's Sahara Desert has sand dunes over 150 meters tall.",
+      "de": "Die Sahara in Marokko hat Sanddünen von über 150 Metern Höhe.",
+      "fr": "Le désert du Sahara au Maroc a des dunes de sable de plus de 150 mètres de haut.",
+      "es": "El desierto del Sahara en Marruecos tiene dunas de arena de más de 150 metros de altura.",
+      "it": "Il deserto del Sahara in Marocco ha dune di sabbia alte oltre 150 metri.",
+      "zh": "摩洛哥的撒哈拉沙漠拥有高达150多米的沙丘。"
+    },
+    "additionalAnimal": {
+      "emoji": "🦁",
+      "name": {
+        "pt": "Leão-do-atlas",
+        "en": "Barbary lion",
+        "de": "Berberlöwe",
+        "fr": "Lion de l'Atlas",
+        "es": "León del Atlas",
+        "it": "Leone dell'Atlante",
+        "zh": "巴巴里狮"
+      }
+    }
   },
   {
     "iso": "NG",
@@ -2219,7 +3038,46 @@
       "zh": "焦罗夫饭"
     },
     "nativeName": "Nigeria",
-    "nativeLangCode": "en-NG"
+    "nativeLangCode": "en-NG",
+    "climate": {
+      "pt": "Nigéria tem um clima de savana, com uma estação seca e uma estação chuvosa bem marcadas.",
+      "en": "Nigeria's climate is savanna, with a clearly marked dry season and rainy season.",
+      "de": "Das Klima in Nigeria ist Savannenklima, mit einer ausgeprägten Trocken- und Regenzeit.",
+      "fr": "Nigéria a un climat de savane, avec une saison sèche et une saison des pluies bien marquées.",
+      "es": "Nigeria tiene un clima de sabana, con una estación seca y una estación lluviosa bien marcadas.",
+      "it": "Nigeria ha un clima da savana, con una stagione secca e una stagione delle piogge ben distinte.",
+      "zh": "尼日利亚的气候特点是热带草原气候，旱季和雨季分明。"
+    },
+    "population": {
+      "pt": "Nigéria tem cerca de 223 milhões de habitantes.",
+      "en": "Nigeria has about 223 million people.",
+      "de": "Nigeria hat etwa 223 Millionen Einwohner.",
+      "fr": "Nigéria compte environ 223 millions d'habitants.",
+      "es": "Nigeria tiene alrededor de 223 millones de habitantes.",
+      "it": "Nigeria ha circa 223 milioni di abitanti.",
+      "zh": "尼日利亚人口大约有22300万。"
+    },
+    "funCuriosity": {
+      "pt": "A Nigéria é o país mais populoso de África.",
+      "en": "Nigeria is Africa's most populous country.",
+      "de": "Nigeria ist das bevölkerungsreichste Land Afrikas.",
+      "fr": "Le Nigeria est le pays le plus peuplé d'Afrique.",
+      "es": "Nigeria es el país más poblado de África.",
+      "it": "La Nigeria è il paese più popoloso dell'Africa.",
+      "zh": "尼日利亚是非洲人口最多的国家。"
+    },
+    "additionalAnimal": {
+      "emoji": "🐆",
+      "name": {
+        "pt": "Leopardo",
+        "en": "Leopard",
+        "de": "Leopard",
+        "fr": "Léopard",
+        "es": "Leopardo",
+        "it": "Leopardo",
+        "zh": "豹"
+      }
+    }
   },
   {
     "iso": "ET",
@@ -2320,7 +3178,46 @@
       "zh": "英吉拉薄饼"
     },
     "nativeName": "ኢትዮጵያ",
-    "nativeLangCode": "am-ET"
+    "nativeLangCode": "am-ET",
+    "climate": {
+      "pt": "Etiópia tem um clima ameno de altitude, com temperaturas suaves durante todo o ano graças à altitude.",
+      "en": "Ethiopia's climate is mild highland climate, with temperatures staying pleasant year-round thanks to the altitude.",
+      "de": "Das Klima in Äthiopien ist mildes Hochlandklima, mit dank der Höhenlage das ganze Jahr über angenehmen Temperaturen.",
+      "fr": "Éthiopie a un climat tempéré d'altitude, avec des températures agréables toute l'année grâce à l'altitude.",
+      "es": "Etiopía tiene un clima templado de altitud, con temperaturas agradables durante todo el año gracias a la altitud.",
+      "it": "Etiopia ha un clima temperato d'alta quota, con temperature miti tutto l'anno grazie all'altitudine.",
+      "zh": "埃塞俄比亚的气候特点是高原温和气候，因海拔较高，全年气温较为宜人。"
+    },
+    "population": {
+      "pt": "Etiópia tem cerca de 126 milhões de habitantes.",
+      "en": "Ethiopia has about 126 million people.",
+      "de": "Äthiopien hat etwa 126 Millionen Einwohner.",
+      "fr": "Éthiopie compte environ 126 millions d'habitants.",
+      "es": "Etiopía tiene alrededor de 126 millones de habitantes.",
+      "it": "Etiopia ha circa 126 milioni di abitanti.",
+      "zh": "埃塞俄比亚人口大约有12600万。"
+    },
+    "funCuriosity": {
+      "pt": "A Etiópia é o único país africano que nunca foi colonizado.",
+      "en": "Ethiopia is the only African country that was never colonized.",
+      "de": "Äthiopien ist das einzige afrikanische Land, das nie kolonisiert wurde.",
+      "fr": "L'Éthiopie est le seul pays africain qui n'a jamais été colonisé.",
+      "es": "Etiopía es el único país africano que nunca fue colonizado.",
+      "it": "L'Etiopia è l'unico paese africano che non è mai stato colonizzato.",
+      "zh": "埃塞俄比亚是非洲唯一从未被殖民过的国家。"
+    },
+    "additionalAnimal": {
+      "emoji": "🦓",
+      "name": {
+        "pt": "Zebra",
+        "en": "Zebra",
+        "de": "Zebra",
+        "fr": "Zèbre",
+        "es": "Cebra",
+        "it": "Zebra",
+        "zh": "斑马"
+      }
+    }
   },
   {
     "iso": "TZ",
@@ -2421,7 +3318,46 @@
       "zh": "乌加黎玉米糊"
     },
     "nativeName": "Tanzania",
-    "nativeLangCode": "sw-TZ"
+    "nativeLangCode": "sw-TZ",
+    "climate": {
+      "pt": "Tanzânia tem um clima de savana, com uma estação seca e uma estação chuvosa bem marcadas.",
+      "en": "Tanzania's climate is savanna, with a clearly marked dry season and rainy season.",
+      "de": "Das Klima in Tansania ist Savannenklima, mit einer ausgeprägten Trocken- und Regenzeit.",
+      "fr": "Tanzanie a un climat de savane, avec une saison sèche et une saison des pluies bien marquées.",
+      "es": "Tanzania tiene un clima de sabana, con una estación seca y una estación lluviosa bien marcadas.",
+      "it": "Tanzania ha un clima da savana, con una stagione secca e una stagione delle piogge ben distinte.",
+      "zh": "坦桑尼亚的气候特点是热带草原气候，旱季和雨季分明。"
+    },
+    "population": {
+      "pt": "Tanzânia tem cerca de 67 milhões de habitantes.",
+      "en": "Tanzania has about 67 million people.",
+      "de": "Tansania hat etwa 67 Millionen Einwohner.",
+      "fr": "Tanzanie compte environ 67 millions d'habitants.",
+      "es": "Tanzania tiene alrededor de 67 millones de habitantes.",
+      "it": "Tanzania ha circa 67 milioni di abitanti.",
+      "zh": "坦桑尼亚人口大约有6700万。"
+    },
+    "funCuriosity": {
+      "pt": "A Tanzânia tem o Monte Quilimanjaro, a montanha mais alta de África.",
+      "en": "Tanzania is home to Mount Kilimanjaro, Africa's tallest mountain.",
+      "de": "In Tansania liegt der Kilimandscharo, Afrikas höchster Berg.",
+      "fr": "La Tanzanie abrite le Kilimandjaro, la plus haute montagne d'Afrique.",
+      "es": "Tanzania alberga el monte Kilimanjaro, la montaña más alta de África.",
+      "it": "In Tanzania si trova il Kilimangiaro, la montagna più alta dell'Africa.",
+      "zh": "坦桑尼亚拥有非洲最高的山峰——乞力马扎罗山。"
+    },
+    "additionalAnimal": {
+      "emoji": "🦁",
+      "name": {
+        "pt": "Leão",
+        "en": "Lion",
+        "de": "Löwe",
+        "fr": "Lion",
+        "es": "León",
+        "it": "Leone",
+        "zh": "狮子"
+      }
+    }
   },
   {
     "iso": "TH",
@@ -2522,7 +3458,46 @@
       "zh": "泰式炒河粉"
     },
     "nativeName": "ประเทศไทย",
-    "nativeLangCode": "th-TH"
+    "nativeLangCode": "th-TH",
+    "climate": {
+      "pt": "Tailândia tem um clima tropical de monções, com uma estação seca e uma estação muito chuvosa.",
+      "en": "Thailand's climate is tropical monsoon, with a dry season and a very rainy season.",
+      "de": "Das Klima in Thailand ist tropisches Monsunklima, mit einer Trockenzeit und einer sehr regenreichen Regenzeit.",
+      "fr": "Thaïlande a un climat tropical de mousson, avec une saison sèche et une saison très pluvieuse.",
+      "es": "Tailandia tiene un clima tropical monzónico, con una estación seca y una estación muy lluviosa.",
+      "it": "Tailandia ha un clima tropicale monsonico, con una stagione secca e una stagione molto piovosa.",
+      "zh": "泰国的气候特点是热带季风气候，有旱季和降雨量很大的雨季。"
+    },
+    "population": {
+      "pt": "Tailândia tem cerca de 72 milhões de habitantes.",
+      "en": "Thailand has about 72 million people.",
+      "de": "Thailand hat etwa 72 Millionen Einwohner.",
+      "fr": "Thaïlande compte environ 72 millions d'habitants.",
+      "es": "Tailandia tiene alrededor de 72 millones de habitantes.",
+      "it": "Tailandia ha circa 72 milioni di abitanti.",
+      "zh": "泰国人口大约有7200万。"
+    },
+    "funCuriosity": {
+      "pt": "O nome oficial da Tailândia significa 'Terra dos Livres'.",
+      "en": "Thailand's official name means 'Land of the Free'.",
+      "de": "Der offizielle Name Thailands bedeutet 'Land der Freien'.",
+      "fr": "Le nom officiel de la Thaïlande signifie 'Terre des Hommes Libres'.",
+      "es": "El nombre oficial de Tailandia significa 'Tierra de los Libres'.",
+      "it": "Il nome ufficiale della Thailandia significa 'Terra dei Liberi'.",
+      "zh": "泰国的正式名称意为“自由之地”。"
+    },
+    "additionalAnimal": {
+      "emoji": "🐘",
+      "name": {
+        "pt": "Elefante",
+        "en": "Elephant",
+        "de": "Elefant",
+        "fr": "Éléphant",
+        "es": "Elefante",
+        "it": "Elefante",
+        "zh": "大象"
+      }
+    }
   },
   {
     "iso": "ID",
@@ -2623,7 +3598,46 @@
       "zh": "印尼炒饭"
     },
     "nativeName": "Indonesia",
-    "nativeLangCode": "id-ID"
+    "nativeLangCode": "id-ID",
+    "climate": {
+      "pt": "Indonésia tem um clima tropical, quente e húmido durante todo o ano.",
+      "en": "Indonesia's climate is tropical, hot and humid all year round.",
+      "de": "Das Klima in Indonesien ist tropisch, das ganze Jahr über heiß und feucht.",
+      "fr": "Indonésie a un climat tropical, chaud et humide toute l'année.",
+      "es": "Indonesia tiene un clima tropical, cálido y húmedo durante todo el año.",
+      "it": "Indonesia ha un clima tropicale, caldo e umido tutto l'anno.",
+      "zh": "印度尼西亚的气候特点是热带气候，全年炎热潮湿。"
+    },
+    "population": {
+      "pt": "Indonésia tem cerca de 280 milhões de habitantes.",
+      "en": "Indonesia has about 280 million people.",
+      "de": "Indonesien hat etwa 280 Millionen Einwohner.",
+      "fr": "Indonésie compte environ 280 millions d'habitants.",
+      "es": "Indonesia tiene alrededor de 280 millones de habitantes.",
+      "it": "Indonesia ha circa 280 milioni di abitanti.",
+      "zh": "印度尼西亚人口大约有28000万。"
+    },
+    "funCuriosity": {
+      "pt": "A Indonésia tem mais ilhas do que qualquer outro país, cerca de 17 mil.",
+      "en": "Indonesia has more islands than any other country, around 17,000.",
+      "de": "Indonesien hat mehr Inseln als jedes andere Land, etwa 17.000.",
+      "fr": "L'Indonésie compte plus d'îles que tout autre pays, environ 17 000.",
+      "es": "Indonesia tiene más islas que cualquier otro país, unas 17 000.",
+      "it": "L'Indonesia ha più isole di qualsiasi altro paese, circa 17.000.",
+      "zh": "印度尼西亚拥有的岛屿数量超过其他任何国家，约有1.7万个。"
+    },
+    "additionalAnimal": {
+      "emoji": "🐉",
+      "name": {
+        "pt": "Dragão-de-komodo",
+        "en": "Komodo dragon",
+        "de": "Komodowaran",
+        "fr": "Dragon de Komodo",
+        "es": "Dragón de Komodo",
+        "it": "Drago di Komodo",
+        "zh": "科莫多巨蜥"
+      }
+    }
   },
   {
     "iso": "TR",
@@ -2724,7 +3738,46 @@
       "zh": "烤肉串"
     },
     "nativeName": "Türkiye",
-    "nativeLangCode": "tr-TR"
+    "nativeLangCode": "tr-TR",
+    "climate": {
+      "pt": "Turquia tem um clima ameno, com verões quentes e secos e invernos suaves e chuvosos.",
+      "en": "Turkey's climate is mild, with hot dry summers and cool rainy winters.",
+      "de": "Das Klima in Türkei ist mild, mit heißen, trockenen Sommern und milden, regnerischen Wintern.",
+      "fr": "Turquie a un climat doux, avec des étés chauds et secs et des hivers doux et pluvieux.",
+      "es": "Turquía tiene un clima templado, con veranos calurosos y secos e inviernos suaves y lluviosos.",
+      "it": "Turchia ha un clima mite, con estati calde e secche e inverni miti e piovosi.",
+      "zh": "土耳其的气候特点是温和，夏季炎热干燥，冬季温和多雨。"
+    },
+    "population": {
+      "pt": "Turquia tem cerca de 85 milhões de habitantes.",
+      "en": "Turkey has about 85 million people.",
+      "de": "Türkei hat etwa 85 Millionen Einwohner.",
+      "fr": "Turquie compte environ 85 millions d'habitants.",
+      "es": "Turquía tiene alrededor de 85 millones de habitantes.",
+      "it": "Turchia ha circa 85 milioni di abitanti.",
+      "zh": "土耳其人口大约有8500万。"
+    },
+    "funCuriosity": {
+      "pt": "A Turquia é o único país do mundo que se estende por dois continentes, a Europa e a Ásia.",
+      "en": "Turkey is the only country that spans two continents, Europe and Asia.",
+      "de": "Die Türkei ist das einzige Land, das sich über zwei Kontinente erstreckt, Europa und Asien.",
+      "fr": "La Turquie est le seul pays à s'étendre sur deux continents, l'Europe et l'Asie.",
+      "es": "Turquía es el único país que se extiende por dos continentes, Europa y Asia.",
+      "it": "La Turchia è l'unico paese che si estende su due continenti, Europa e Asia.",
+      "zh": "土耳其是唯一横跨欧亚两大洲的国家。"
+    },
+    "additionalAnimal": {
+      "emoji": "🐈",
+      "name": {
+        "pt": "Gato-de-van",
+        "en": "Van cat",
+        "de": "Vankatze",
+        "fr": "Chat de Van",
+        "es": "Gato de Van",
+        "it": "Gatto di Van",
+        "zh": "梵猫"
+      }
+    }
   },
   {
     "iso": "PH",
@@ -2825,7 +3878,46 @@
       "zh": "阿多波炖肉"
     },
     "nativeName": "Pilipinas",
-    "nativeLangCode": "fil-PH"
+    "nativeLangCode": "fil-PH",
+    "climate": {
+      "pt": "Filipinas tem um clima tropical de monções, com uma estação seca e uma estação muito chuvosa.",
+      "en": "Philippines's climate is tropical monsoon, with a dry season and a very rainy season.",
+      "de": "Das Klima in Philippinen ist tropisches Monsunklima, mit einer Trockenzeit und einer sehr regenreichen Regenzeit.",
+      "fr": "Philippines a un climat tropical de mousson, avec une saison sèche et une saison très pluvieuse.",
+      "es": "Filipinas tiene un clima tropical monzónico, con una estación seca y una estación muy lluviosa.",
+      "it": "Filippine ha un clima tropicale monsonico, con una stagione secca e una stagione molto piovosa.",
+      "zh": "菲律宾的气候特点是热带季风气候，有旱季和降雨量很大的雨季。"
+    },
+    "population": {
+      "pt": "Filipinas tem cerca de 117 milhões de habitantes.",
+      "en": "Philippines has about 117 million people.",
+      "de": "Philippinen hat etwa 117 Millionen Einwohner.",
+      "fr": "Philippines compte environ 117 millions d'habitants.",
+      "es": "Filipinas tiene alrededor de 117 millones de habitantes.",
+      "it": "Filippine ha circa 117 milioni di abitanti.",
+      "zh": "菲律宾人口大约有11700万。"
+    },
+    "funCuriosity": {
+      "pt": "As Filipinas são formadas por mais de 7 mil ilhas.",
+      "en": "The Philippines is made up of more than 7,000 islands.",
+      "de": "Die Philippinen bestehen aus mehr als 7000 Inseln.",
+      "fr": "Les Philippines sont composées de plus de 7 000 îles.",
+      "es": "Filipinas está formada por más de 7000 islas.",
+      "it": "Le Filippine sono composte da oltre 7000 isole.",
+      "zh": "菲律宾由超过7000个岛屿组成。"
+    },
+    "additionalAnimal": {
+      "emoji": "🐃",
+      "name": {
+        "pt": "Búfalo-carabao",
+        "en": "Carabao",
+        "de": "Carabao-Büffel",
+        "fr": "Carabao",
+        "es": "Carabao",
+        "it": "Bufalo carabao",
+        "zh": "水牛"
+      }
+    }
   },
   {
     "iso": "AR",
@@ -2926,7 +4018,46 @@
       "zh": "阿根廷烤肉"
     },
     "nativeName": "Argentina",
-    "nativeLangCode": "es-AR"
+    "nativeLangCode": "es-AR",
+    "climate": {
+      "pt": "Argentina tem um clima continental, com verões quentes e invernos frios e nevados.",
+      "en": "Argentina's climate is continental, with warm summers and cold, snowy winters.",
+      "de": "Das Klima in Argentinien ist kontinental, mit warmen Sommern und kalten, schneereichen Wintern.",
+      "fr": "Argentine a un climat continental, avec des étés chauds et des hivers froids et neigeux.",
+      "es": "Argentina tiene un clima continental, con veranos cálidos e inviernos fríos y nevados.",
+      "it": "Argentina ha un clima continentale, con estati calde e inverni freddi e nevosi.",
+      "zh": "阿根廷的气候特点是大陆性气候，夏季温暖，冬季寒冷多雪。"
+    },
+    "population": {
+      "pt": "Argentina tem cerca de 46 milhões de habitantes.",
+      "en": "Argentina has about 46 million people.",
+      "de": "Argentinien hat etwa 46 Millionen Einwohner.",
+      "fr": "Argentine compte environ 46 millions d'habitants.",
+      "es": "Argentina tiene alrededor de 46 millones de habitantes.",
+      "it": "Argentina ha circa 46 milioni di abitanti.",
+      "zh": "阿根廷人口大约有4600万。"
+    },
+    "funCuriosity": {
+      "pt": "A Argentina tem a avenida mais larga do mundo, a Avenida 9 de Julho, em Buenos Aires.",
+      "en": "Argentina has the widest avenue in the world, Avenida 9 de Julio in Buenos Aires.",
+      "de": "Argentinien hat die breiteste Allee der Welt, die Avenida 9 de Julio in Buenos Aires.",
+      "fr": "L'Argentine possède l'avenue la plus large du monde, l'Avenida 9 de Julio à Buenos Aires.",
+      "es": "Argentina tiene la avenida más ancha del mundo, la Avenida 9 de Julio, en Buenos Aires.",
+      "it": "L'Argentina ha il viale più largo del mondo, l'Avenida 9 de Julio, a Buenos Aires.",
+      "zh": "阿根廷拥有世界上最宽的大道——布宜诺斯艾利斯的七月九日大道。"
+    },
+    "additionalAnimal": {
+      "emoji": "🐆",
+      "name": {
+        "pt": "Onça-pintada",
+        "en": "Jaguar",
+        "de": "Jaguar",
+        "fr": "Jaguar",
+        "es": "Jaguar",
+        "it": "Giaguaro",
+        "zh": "美洲豹"
+      }
+    }
   },
   {
     "iso": "PE",
@@ -3027,7 +4158,46 @@
       "zh": "酸橘汁腌鱼"
     },
     "nativeName": "Perú",
-    "nativeLangCode": "es-PE"
+    "nativeLangCode": "es-PE",
+    "climate": {
+      "pt": "Peru tem um clima ameno de altitude, com temperaturas suaves durante todo o ano graças à altitude.",
+      "en": "Peru's climate is mild highland climate, with temperatures staying pleasant year-round thanks to the altitude.",
+      "de": "Das Klima in Peru ist mildes Hochlandklima, mit dank der Höhenlage das ganze Jahr über angenehmen Temperaturen.",
+      "fr": "Pérou a un climat tempéré d'altitude, avec des températures agréables toute l'année grâce à l'altitude.",
+      "es": "Perú tiene un clima templado de altitud, con temperaturas agradables durante todo el año gracias a la altitud.",
+      "it": "Perù ha un clima temperato d'alta quota, con temperature miti tutto l'anno grazie all'altitudine.",
+      "zh": "秘鲁的气候特点是高原温和气候，因海拔较高，全年气温较为宜人。"
+    },
+    "population": {
+      "pt": "Peru tem cerca de 34 milhões de habitantes.",
+      "en": "Peru has about 34 million people.",
+      "de": "Peru hat etwa 34 Millionen Einwohner.",
+      "fr": "Pérou compte environ 34 millions d'habitants.",
+      "es": "Perú tiene alrededor de 34 millones de habitantes.",
+      "it": "Perù ha circa 34 milioni di abitanti.",
+      "zh": "秘鲁人口大约有3400万。"
+    },
+    "funCuriosity": {
+      "pt": "O Peru é o país de Machu Picchu, uma das Sete Maravilhas do Mundo Moderno.",
+      "en": "Peru is home to Machu Picchu, one of the New Seven Wonders of the World.",
+      "de": "Peru beherbergt Machu Picchu, eines der neuen sieben Weltwunder.",
+      "fr": "Le Pérou abrite le Machu Picchu, l'une des sept nouvelles merveilles du monde.",
+      "es": "Perú alberga Machu Picchu, una de las nuevas siete maravillas del mundo.",
+      "it": "Il Perù ospita Machu Picchu, una delle nuove sette meraviglie del mondo.",
+      "zh": "秘鲁拥有马丘比丘，是世界新七大奇迹之一。"
+    },
+    "additionalAnimal": {
+      "emoji": "🦙",
+      "name": {
+        "pt": "Lama",
+        "en": "Llama",
+        "de": "Lama",
+        "fr": "Lama",
+        "es": "Llama",
+        "it": "Lama",
+        "zh": "美洲驼"
+      }
+    }
   },
   {
     "iso": "CL",
@@ -3128,7 +4298,46 @@
       "zh": "智利肉馅饼"
     },
     "nativeName": "Chile",
-    "nativeLangCode": "es-CL"
+    "nativeLangCode": "es-CL",
+    "climate": {
+      "pt": "Chile tem um clima ameno, com verões quentes e secos e invernos suaves e chuvosos.",
+      "en": "Chile's climate is mild, with hot dry summers and cool rainy winters.",
+      "de": "Das Klima in Chile ist mild, mit heißen, trockenen Sommern und milden, regnerischen Wintern.",
+      "fr": "Chili a un climat doux, avec des étés chauds et secs et des hivers doux et pluvieux.",
+      "es": "Chile tiene un clima templado, con veranos calurosos y secos e inviernos suaves y lluviosos.",
+      "it": "Cile ha un clima mite, con estati calde e secche e inverni miti e piovosi.",
+      "zh": "智利的气候特点是温和，夏季炎热干燥，冬季温和多雨。"
+    },
+    "population": {
+      "pt": "Chile tem cerca de 20 milhões de habitantes.",
+      "en": "Chile has about 20 million people.",
+      "de": "Chile hat etwa 20 Millionen Einwohner.",
+      "fr": "Chili compte environ 20 millions d'habitants.",
+      "es": "Chile tiene alrededor de 20 millones de habitantes.",
+      "it": "Cile ha circa 20 milioni di abitanti.",
+      "zh": "智利人口大约有2000万。"
+    },
+    "funCuriosity": {
+      "pt": "O Chile tem o deserto mais seco do mundo, o Atacama.",
+      "en": "Chile has the driest desert in the world, the Atacama.",
+      "de": "Chile hat die trockenste Wüste der Welt, die Atacama.",
+      "fr": "Le Chili possède le désert le plus sec du monde, l'Atacama.",
+      "es": "Chile tiene el desierto más seco del mundo, el Atacama.",
+      "it": "Il Cile ha il deserto più secco al mondo, l'Atacama.",
+      "zh": "智利拥有世界上最干燥的沙漠——阿塔卡马沙漠。"
+    },
+    "additionalAnimal": {
+      "emoji": "🐧",
+      "name": {
+        "pt": "Pinguim-de-humboldt",
+        "en": "Humboldt penguin",
+        "de": "Humboldt-Pinguin",
+        "fr": "Manchot de Humboldt",
+        "es": "Pingüino de Humboldt",
+        "it": "Pinguino di Humboldt",
+        "zh": "洪堡企鹅"
+      }
+    }
   },
   {
     "iso": "CO",
@@ -3229,7 +4438,46 @@
       "zh": "阿雷帕玉米饼"
     },
     "nativeName": "Colombia",
-    "nativeLangCode": "es-CO"
+    "nativeLangCode": "es-CO",
+    "climate": {
+      "pt": "Colômbia tem um clima ameno de altitude, com temperaturas suaves durante todo o ano graças à altitude.",
+      "en": "Colombia's climate is mild highland climate, with temperatures staying pleasant year-round thanks to the altitude.",
+      "de": "Das Klima in Kolumbien ist mildes Hochlandklima, mit dank der Höhenlage das ganze Jahr über angenehmen Temperaturen.",
+      "fr": "Colombie a un climat tempéré d'altitude, avec des températures agréables toute l'année grâce à l'altitude.",
+      "es": "Colombia tiene un clima templado de altitud, con temperaturas agradables durante todo el año gracias a la altitud.",
+      "it": "Colombia ha un clima temperato d'alta quota, con temperature miti tutto l'anno grazie all'altitudine.",
+      "zh": "哥伦比亚的气候特点是高原温和气候，因海拔较高，全年气温较为宜人。"
+    },
+    "population": {
+      "pt": "Colômbia tem cerca de 52 milhões de habitantes.",
+      "en": "Colombia has about 52 million people.",
+      "de": "Kolumbien hat etwa 52 Millionen Einwohner.",
+      "fr": "Colombie compte environ 52 millions d'habitants.",
+      "es": "Colombia tiene alrededor de 52 millones de habitantes.",
+      "it": "Colombia ha circa 52 milioni di abitanti.",
+      "zh": "哥伦比亚人口大约有5200万。"
+    },
+    "funCuriosity": {
+      "pt": "A Colômbia tem mais espécies de aves do que qualquer outro país do mundo.",
+      "en": "Colombia has more bird species than any other country in the world.",
+      "de": "Kolumbien hat mehr Vogelarten als jedes andere Land der Welt.",
+      "fr": "La Colombie compte plus d'espèces d'oiseaux que tout autre pays au monde.",
+      "es": "Colombia tiene más especies de aves que cualquier otro país del mundo.",
+      "it": "La Colombia ha più specie di uccelli di qualsiasi altro paese al mondo.",
+      "zh": "哥伦比亚的鸟类物种数量超过世界上任何其他国家。"
+    },
+    "additionalAnimal": {
+      "emoji": "🐆",
+      "name": {
+        "pt": "Onça-pintada",
+        "en": "Jaguar",
+        "de": "Jaguar",
+        "fr": "Jaguar",
+        "es": "Jaguar",
+        "it": "Giaguaro",
+        "zh": "美洲豹"
+      }
+    }
   },
   {
     "iso": "NO",
@@ -3330,7 +4578,46 @@
       "zh": "三文鱼"
     },
     "nativeName": "Norge",
-    "nativeLangCode": "no-NO"
+    "nativeLangCode": "no-NO",
+    "climate": {
+      "pt": "Noruega tem um clima frio, com invernos longos e rigorosos e verões curtos e frescos.",
+      "en": "Norway's climate is cold, with long harsh winters and short, cool summers.",
+      "de": "Das Klima in Norwegen ist kalt, mit langen, strengen Wintern und kurzen, kühlen Sommern.",
+      "fr": "Norvège a un climat froid, avec des hivers longs et rigoureux et des étés courts et frais.",
+      "es": "Noruega tiene un clima frío, con inviernos largos y rigurosos y veranos cortos y frescos.",
+      "it": "Norvegia ha un clima freddo, con inverni lunghi e rigidi ed estati brevi e fresche.",
+      "zh": "挪威的气候特点是寒冷气候，冬季漫长严酷，夏季短暂凉爽。"
+    },
+    "population": {
+      "pt": "Noruega tem cerca de 5.5 milhões de habitantes.",
+      "en": "Norway has about 5.5 million people.",
+      "de": "Norwegen hat etwa 5.5 Millionen Einwohner.",
+      "fr": "Norvège compte environ 5.5 millions d'habitants.",
+      "es": "Noruega tiene alrededor de 5.5 millones de habitantes.",
+      "it": "Norvegia ha circa 5.5 milioni di abitanti.",
+      "zh": "挪威人口大约有550万。"
+    },
+    "funCuriosity": {
+      "pt": "Na Noruega existe o sol da meia-noite, quando o sol não se põe durante semanas no verão.",
+      "en": "Norway is home to the midnight sun, when the sun doesn't set for weeks in summer.",
+      "de": "In Norwegen gibt es die Mitternachtssonne, bei der die Sonne im Sommer wochenlang nicht untergeht.",
+      "fr": "La Norvège connaît le soleil de minuit, quand le soleil ne se couche pas pendant des semaines en été.",
+      "es": "En Noruega existe el sol de medianoche, cuando el sol no se pone durante semanas en verano.",
+      "it": "In Norvegia c'è il sole di mezzanotte, quando il sole non tramonta per settimane in estate.",
+      "zh": "挪威有极昼现象，夏季太阳数周都不会落下。"
+    },
+    "additionalAnimal": {
+      "emoji": "🦌",
+      "name": {
+        "pt": "Rena",
+        "en": "Reindeer",
+        "de": "Rentier",
+        "fr": "Renne",
+        "es": "Reno",
+        "it": "Renna",
+        "zh": "驯鹿"
+      }
+    }
   },
   {
     "iso": "NL",
@@ -3431,7 +4718,46 @@
       "zh": "焦糖华夫饼"
     },
     "nativeName": "Nederland",
-    "nativeLangCode": "nl-NL"
+    "nativeLangCode": "nl-NL",
+    "climate": {
+      "pt": "Países Baixos tem um clima temperado marítimo, com verões amenos, invernos suaves e chuva ao longo do ano.",
+      "en": "Netherlands's climate is temperate maritime, with mild summers and winters and rain throughout the year.",
+      "de": "Das Klima in Niederlande ist gemäßigt-maritim, mit milden Sommern und Wintern und Regen das ganze Jahr über.",
+      "fr": "Pays-Bas a un climat tempéré océanique, avec des étés doux, des hivers doux et de la pluie toute l'année.",
+      "es": "Países Bajos tiene un clima templado oceánico, con veranos e inviernos suaves y lluvia durante todo el año.",
+      "it": "Paesi Bassi ha un clima temperato oceanico, con estati e inverni miti e piogge tutto l'anno.",
+      "zh": "荷兰的气候特点是温带海洋性气候，夏季和冬季都较温和，全年降雨较多。"
+    },
+    "population": {
+      "pt": "Países Baixos tem cerca de 18 milhões de habitantes.",
+      "en": "Netherlands has about 18 million people.",
+      "de": "Niederlande hat etwa 18 Millionen Einwohner.",
+      "fr": "Pays-Bas compte environ 18 millions d'habitants.",
+      "es": "Países Bajos tiene alrededor de 18 millones de habitantes.",
+      "it": "Paesi Bassi ha circa 18 milioni di abitanti.",
+      "zh": "荷兰人口大约有1800万。"
+    },
+    "funCuriosity": {
+      "pt": "Cerca de um quarto dos Países Baixos fica abaixo do nível do mar.",
+      "en": "About a quarter of the Netherlands lies below sea level.",
+      "de": "Etwa ein Viertel der Niederlande liegt unter dem Meeresspiegel.",
+      "fr": "Environ un quart des Pays-Bas se trouve sous le niveau de la mer.",
+      "es": "Cerca de una cuarta parte de los Países Bajos está bajo el nivel del mar.",
+      "it": "Circa un quarto dei Paesi Bassi si trova sotto il livello del mare.",
+      "zh": "荷兰约四分之一的国土低于海平面。"
+    },
+    "additionalAnimal": {
+      "emoji": "🐄",
+      "name": {
+        "pt": "Vaca-leiteira",
+        "en": "Dairy cow",
+        "de": "Milchkuh",
+        "fr": "Vache laitière",
+        "es": "Vaca lechera",
+        "it": "Mucca da latte",
+        "zh": "奶牛"
+      }
+    }
   },
   {
     "iso": "PL",
@@ -3532,7 +4858,46 @@
       "zh": "波兰饺子"
     },
     "nativeName": "Polska",
-    "nativeLangCode": "pl-PL"
+    "nativeLangCode": "pl-PL",
+    "climate": {
+      "pt": "Polónia tem um clima continental, com verões quentes e invernos frios e nevados.",
+      "en": "Poland's climate is continental, with warm summers and cold, snowy winters.",
+      "de": "Das Klima in Polen ist kontinental, mit warmen Sommern und kalten, schneereichen Wintern.",
+      "fr": "Pologne a un climat continental, avec des étés chauds et des hivers froids et neigeux.",
+      "es": "Polonia tiene un clima continental, con veranos cálidos e inviernos fríos y nevados.",
+      "it": "Polonia ha un clima continentale, con estati calde e inverni freddi e nevosi.",
+      "zh": "波兰的气候特点是大陆性气候，夏季温暖，冬季寒冷多雪。"
+    },
+    "population": {
+      "pt": "Polónia tem cerca de 37 milhões de habitantes.",
+      "en": "Poland has about 37 million people.",
+      "de": "Polen hat etwa 37 Millionen Einwohner.",
+      "fr": "Pologne compte environ 37 millions d'habitants.",
+      "es": "Polonia tiene alrededor de 37 millones de habitantes.",
+      "it": "Polonia ha circa 37 milioni di abitanti.",
+      "zh": "波兰人口大约有3700万。"
+    },
+    "funCuriosity": {
+      "pt": "A Polónia tem uma das últimas florestas primitivas da Europa, lar do bisonte-europeu.",
+      "en": "Poland has one of Europe's last primeval forests, home to the European bison.",
+      "de": "Polen hat einen der letzten Urwälder Europas, die Heimat des Wisents.",
+      "fr": "La Pologne possède l'une des dernières forêts primitives d'Europe, refuge du bison d'Europe.",
+      "es": "Polonia tiene uno de los últimos bosques primigenios de Europa, hogar del bisonte europeo.",
+      "it": "La Polonia ha una delle ultime foreste primordiali d'Europa, casa del bisonte europeo.",
+      "zh": "波兰拥有欧洲最后的原始森林之一，是欧洲野牛的家园。"
+    },
+    "additionalAnimal": {
+      "emoji": "🦬",
+      "name": {
+        "pt": "Bisonte-europeu",
+        "en": "European bison",
+        "de": "Wisent",
+        "fr": "Bison d'Europe",
+        "es": "Bisonte europeo",
+        "it": "Bisonte europeo",
+        "zh": "欧洲野牛"
+      }
+    }
   },
   {
     "iso": "IE",
@@ -3633,7 +4998,46 @@
       "zh": "爱尔兰炖肉"
     },
     "nativeName": "Éire",
-    "nativeLangCode": "en-IE"
+    "nativeLangCode": "en-IE",
+    "climate": {
+      "pt": "Irlanda tem um clima temperado marítimo, com verões amenos, invernos suaves e chuva ao longo do ano.",
+      "en": "Ireland's climate is temperate maritime, with mild summers and winters and rain throughout the year.",
+      "de": "Das Klima in Irland ist gemäßigt-maritim, mit milden Sommern und Wintern und Regen das ganze Jahr über.",
+      "fr": "Irlande a un climat tempéré océanique, avec des étés doux, des hivers doux et de la pluie toute l'année.",
+      "es": "Irlanda tiene un clima templado oceánico, con veranos e inviernos suaves y lluvia durante todo el año.",
+      "it": "Irlanda ha un clima temperato oceanico, con estati e inverni miti e piogge tutto l'anno.",
+      "zh": "爱尔兰的气候特点是温带海洋性气候，夏季和冬季都较温和，全年降雨较多。"
+    },
+    "population": {
+      "pt": "Irlanda tem cerca de 5.3 milhões de habitantes.",
+      "en": "Ireland has about 5.3 million people.",
+      "de": "Irland hat etwa 5.3 Millionen Einwohner.",
+      "fr": "Irlande compte environ 5.3 millions d'habitants.",
+      "es": "Irlanda tiene alrededor de 5.3 millones de habitantes.",
+      "it": "Irlanda ha circa 5.3 milioni di abitanti.",
+      "zh": "爱尔兰人口大约有530万。"
+    },
+    "funCuriosity": {
+      "pt": "A Irlanda é conhecida como a Ilha Esmeralda por causa da sua paisagem verde.",
+      "en": "Ireland is known as the Emerald Isle because of its green landscape.",
+      "de": "Irland ist wegen seiner grünen Landschaft als die Grüne Insel bekannt.",
+      "fr": "L'Irlande est surnommée l'Île d'Émeraude en raison de son paysage verdoyant.",
+      "es": "Irlanda es conocida como la Isla Esmeralda por su paisaje verde.",
+      "it": "L'Irlanda è conosciuta come l'Isola Smeralda per il suo paesaggio verde.",
+      "zh": "爱尔兰因其翠绿的风景而被称为“翡翠岛”。"
+    },
+    "additionalAnimal": {
+      "emoji": "🐑",
+      "name": {
+        "pt": "Ovelha",
+        "en": "Sheep",
+        "de": "Schaf",
+        "fr": "Mouton",
+        "es": "Oveja",
+        "it": "Pecora",
+        "zh": "绵羊"
+      }
+    }
   },
   {
     "iso": "NZ",
@@ -3734,7 +5138,46 @@
       "zh": "毛利地窖烤肉"
     },
     "nativeName": "Aotearoa",
-    "nativeLangCode": "en-NZ"
+    "nativeLangCode": "en-NZ",
+    "climate": {
+      "pt": "Nova Zelândia tem um clima temperado marítimo, com verões amenos, invernos suaves e chuva ao longo do ano.",
+      "en": "New Zealand's climate is temperate maritime, with mild summers and winters and rain throughout the year.",
+      "de": "Das Klima in Neuseeland ist gemäßigt-maritim, mit milden Sommern und Wintern und Regen das ganze Jahr über.",
+      "fr": "Nouvelle-Zélande a un climat tempéré océanique, avec des étés doux, des hivers doux et de la pluie toute l'année.",
+      "es": "Nueva Zelanda tiene un clima templado oceánico, con veranos e inviernos suaves y lluvia durante todo el año.",
+      "it": "Nuova Zelanda ha un clima temperato oceanico, con estati e inverni miti e piogge tutto l'anno.",
+      "zh": "新西兰的气候特点是温带海洋性气候，夏季和冬季都较温和，全年降雨较多。"
+    },
+    "population": {
+      "pt": "Nova Zelândia tem cerca de 5.2 milhões de habitantes.",
+      "en": "New Zealand has about 5.2 million people.",
+      "de": "Neuseeland hat etwa 5.2 Millionen Einwohner.",
+      "fr": "Nouvelle-Zélande compte environ 5.2 millions d'habitants.",
+      "es": "Nueva Zelanda tiene alrededor de 5.2 millones de habitantes.",
+      "it": "Nuova Zelanda ha circa 5.2 milioni di abitanti.",
+      "zh": "新西兰人口大约有520万。"
+    },
+    "funCuriosity": {
+      "pt": "A Nova Zelândia foi o primeiro país a dar às mulheres o direito de voto, em 1893.",
+      "en": "New Zealand was the first country to give women the right to vote, in 1893.",
+      "de": "Neuseeland war 1893 das erste Land, das Frauen das Wahlrecht gab.",
+      "fr": "La Nouvelle-Zélande a été le premier pays à accorder le droit de vote aux femmes, en 1893.",
+      "es": "Nueva Zelanda fue el primer país en dar a las mujeres el derecho al voto, en 1893.",
+      "it": "La Nuova Zelanda fu il primo paese a concedere alle donne il diritto di voto, nel 1893.",
+      "zh": "新西兰是世界上第一个给予女性投票权的国家，时间是1893年。"
+    },
+    "additionalAnimal": {
+      "emoji": "🐑",
+      "name": {
+        "pt": "Ovelha",
+        "en": "Sheep",
+        "de": "Schaf",
+        "fr": "Mouton",
+        "es": "Oveja",
+        "it": "Pecora",
+        "zh": "绵羊"
+      }
+    }
   },
   {
     "iso": "FJ",
@@ -3835,7 +5278,46 @@
       "zh": "科科达生鱼"
     },
     "nativeName": "Viti",
-    "nativeLangCode": "en-FJ"
+    "nativeLangCode": "en-FJ",
+    "climate": {
+      "pt": "Fiji tem um clima tropical, quente e húmido durante todo o ano.",
+      "en": "Fiji's climate is tropical, hot and humid all year round.",
+      "de": "Das Klima in Fidschi ist tropisch, das ganze Jahr über heiß und feucht.",
+      "fr": "Fidji a un climat tropical, chaud et humide toute l'année.",
+      "es": "Fiyi tiene un clima tropical, cálido y húmedo durante todo el año.",
+      "it": "Figi ha un clima tropicale, caldo e umido tutto l'anno.",
+      "zh": "斐济的气候特点是热带气候，全年炎热潮湿。"
+    },
+    "population": {
+      "pt": "Fiji tem cerca de 900 mil habitantes.",
+      "en": "Fiji has about 900 thousand people.",
+      "de": "Fidschi hat etwa 900 Tausend Einwohner.",
+      "fr": "Fidji compte environ 900 mille habitants.",
+      "es": "Fiyi tiene alrededor de 900 mil habitantes.",
+      "it": "Figi ha circa 900 mila abitanti.",
+      "zh": "斐济人口大约有90万。"
+    },
+    "funCuriosity": {
+      "pt": "As ilhas Fiji são formadas por mais de 300 ilhas.",
+      "en": "Fiji is made up of more than 300 islands.",
+      "de": "Fidschi besteht aus mehr als 300 Inseln.",
+      "fr": "Les Fidji sont composées de plus de 300 îles.",
+      "es": "Fiyi está formado por más de 300 islas.",
+      "it": "Le Fiji sono composte da oltre 300 isole.",
+      "zh": "斐济由超过300个岛屿组成。"
+    },
+    "additionalAnimal": {
+      "emoji": "🦈",
+      "name": {
+        "pt": "Tubarão",
+        "en": "Shark",
+        "de": "Hai",
+        "fr": "Requin",
+        "es": "Tiburón",
+        "it": "Squalo",
+        "zh": "鲨鱼"
+      }
+    }
   },
   {
     "iso": "CU",
@@ -3936,7 +5418,46 @@
       "zh": "古巴牛肉丝"
     },
     "nativeName": "Cuba",
-    "nativeLangCode": "es-CU"
+    "nativeLangCode": "es-CU",
+    "climate": {
+      "pt": "Cuba tem um clima tropical, quente e húmido durante todo o ano.",
+      "en": "Cuba's climate is tropical, hot and humid all year round.",
+      "de": "Das Klima in Kuba ist tropisch, das ganze Jahr über heiß und feucht.",
+      "fr": "Cuba a un climat tropical, chaud et humide toute l'année.",
+      "es": "Cuba tiene un clima tropical, cálido y húmedo durante todo el año.",
+      "it": "Cuba ha un clima tropicale, caldo e umido tutto l'anno.",
+      "zh": "古巴的气候特点是热带气候，全年炎热潮湿。"
+    },
+    "population": {
+      "pt": "Cuba tem cerca de 11 milhões de habitantes.",
+      "en": "Cuba has about 11 million people.",
+      "de": "Kuba hat etwa 11 Millionen Einwohner.",
+      "fr": "Cuba compte environ 11 millions d'habitants.",
+      "es": "Cuba tiene alrededor de 11 millones de habitantes.",
+      "it": "Cuba ha circa 11 milioni di abitanti.",
+      "zh": "古巴人口大约有1100万。"
+    },
+    "funCuriosity": {
+      "pt": "Em Cuba ainda circulam nas ruas carros clássicos americanos dos anos 1950.",
+      "en": "Cuba's classic American cars from the 1950s are still driven on its streets today.",
+      "de": "In Kuba fahren noch heute klassische amerikanische Autos aus den 1950er Jahren auf den Straßen.",
+      "fr": "À Cuba, de vieilles voitures américaines des années 1950 circulent encore dans les rues.",
+      "es": "En Cuba todavía circulan por las calles autos clásicos estadounidenses de los años 1950.",
+      "it": "A Cuba circolano ancora per le strade auto classiche americane degli anni '50.",
+      "zh": "古巴街头至今仍行驶着20世纪50年代的经典美国老爷车。"
+    },
+    "additionalAnimal": {
+      "emoji": "🐊",
+      "name": {
+        "pt": "Crocodilo-cubano",
+        "en": "Cuban crocodile",
+        "de": "Kubakrokodil",
+        "fr": "Crocodile de Cuba",
+        "es": "Cocodrilo cubano",
+        "it": "Coccodrillo cubano",
+        "zh": "古巴鳄"
+      }
+    }
   },
   {
     "iso": "CR",
@@ -4037,7 +5558,46 @@
       "zh": "加约品托饭豆"
     },
     "nativeName": "Costa Rica",
-    "nativeLangCode": "es-CR"
+    "nativeLangCode": "es-CR",
+    "climate": {
+      "pt": "Costa Rica tem um clima tropical, quente e húmido durante todo o ano.",
+      "en": "Costa Rica's climate is tropical, hot and humid all year round.",
+      "de": "Das Klima in Costa Rica ist tropisch, das ganze Jahr über heiß und feucht.",
+      "fr": "Costa Rica a un climat tropical, chaud et humide toute l'année.",
+      "es": "Costa Rica tiene un clima tropical, cálido y húmedo durante todo el año.",
+      "it": "Costa Rica ha un clima tropicale, caldo e umido tutto l'anno.",
+      "zh": "哥斯达黎加的气候特点是热带气候，全年炎热潮湿。"
+    },
+    "population": {
+      "pt": "Costa Rica tem cerca de 5.2 milhões de habitantes.",
+      "en": "Costa Rica has about 5.2 million people.",
+      "de": "Costa Rica hat etwa 5.2 Millionen Einwohner.",
+      "fr": "Costa Rica compte environ 5.2 millions d'habitants.",
+      "es": "Costa Rica tiene alrededor de 5.2 millones de habitantes.",
+      "it": "Costa Rica ha circa 5.2 milioni di abitanti.",
+      "zh": "哥斯达黎加人口大约有520万。"
+    },
+    "funCuriosity": {
+      "pt": "A Costa Rica não tem exército; foi abolido em 1948.",
+      "en": "Costa Rica has no standing army; it was abolished in 1948.",
+      "de": "Costa Rica hat kein stehendes Heer; es wurde 1948 abgeschafft.",
+      "fr": "Le Costa Rica n'a pas d'armée permanente ; elle a été abolie en 1948.",
+      "es": "Costa Rica no tiene ejército permanente; fue abolido en 1948.",
+      "it": "La Costa Rica non ha un esercito permanente; fu abolito nel 1948.",
+      "zh": "哥斯达黎加没有常备军队，军队于1948年被废除。"
+    },
+    "additionalAnimal": {
+      "emoji": "🦥",
+      "name": {
+        "pt": "Preguiça",
+        "en": "Sloth",
+        "de": "Faultier",
+        "fr": "Paresseux",
+        "es": "Perezoso",
+        "it": "Bradipo",
+        "zh": "树懒"
+      }
+    }
   },
   {
     "iso": "AO",
@@ -4129,7 +5689,46 @@
       "zh": "安哥拉鸡肉炖菜"
     },
     "nativeName": "Angola",
-    "nativeLangCode": "pt-PT"
+    "nativeLangCode": "pt-PT",
+    "climate": {
+      "pt": "Angola tem um clima tropical, quente e húmido durante todo o ano.",
+      "en": "Angola's climate is tropical, hot and humid all year round.",
+      "de": "Das Klima in Angola ist tropisch, das ganze Jahr über heiß und feucht.",
+      "fr": "Angola a un climat tropical, chaud et humide toute l'année.",
+      "es": "Angola tiene un clima tropical, cálido y húmedo durante todo el año.",
+      "it": "Angola ha un clima tropicale, caldo e umido tutto l'anno.",
+      "zh": "安哥拉的气候特点是热带气候，全年炎热潮湿。"
+    },
+    "population": {
+      "pt": "Angola tem cerca de 36 milhões de habitantes.",
+      "en": "Angola has about 36 million people.",
+      "de": "Angola hat etwa 36 Millionen Einwohner.",
+      "fr": "Angola compte environ 36 millions d'habitants.",
+      "es": "Angola tiene alrededor de 36 millones de habitantes.",
+      "it": "Angola ha circa 36 milioni di abitanti.",
+      "zh": "安哥拉人口大约有3600万。"
+    },
+    "funCuriosity": {
+      "pt": "As Quedas de Kalandula, em Angola, estão entre as maiores cataratas de África.",
+      "en": "Angola's Kalandula Falls are among the largest waterfalls in Africa.",
+      "de": "Die Kalandula-Wasserfälle in Angola gehören zu den größten Wasserfällen Afrikas.",
+      "fr": "Les chutes de Kalandula en Angola comptent parmi les plus grandes chutes d'eau d'Afrique.",
+      "es": "Las cataratas de Kalandula, en Angola, están entre las más grandes de África.",
+      "it": "Le cascate di Kalandula, in Angola, sono tra le più grandi cascate d'Africa.",
+      "zh": "安哥拉的卡兰杜拉瀑布是非洲最大的瀑布之一。"
+    },
+    "additionalAnimal": {
+      "emoji": "🐘",
+      "name": {
+        "pt": "Elefante-africano",
+        "en": "African elephant",
+        "de": "Afrikanischer Elefant",
+        "fr": "Éléphant d'Afrique",
+        "es": "Elefante africano",
+        "it": "Elefante africano",
+        "zh": "非洲象"
+      }
+    }
   },
   {
     "iso": "MZ",
@@ -4221,7 +5820,46 @@
       "zh": "赞比西烤鸡"
     },
     "nativeName": "Moçambique",
-    "nativeLangCode": "pt-PT"
+    "nativeLangCode": "pt-PT",
+    "climate": {
+      "pt": "Moçambique tem um clima tropical, quente e húmido durante todo o ano.",
+      "en": "Mozambique's climate is tropical, hot and humid all year round.",
+      "de": "Das Klima in Mosambik ist tropisch, das ganze Jahr über heiß und feucht.",
+      "fr": "Mozambique a un climat tropical, chaud et humide toute l'année.",
+      "es": "Mozambique tiene un clima tropical, cálido y húmedo durante todo el año.",
+      "it": "Mozambico ha un clima tropicale, caldo e umido tutto l'anno.",
+      "zh": "莫桑比克的气候特点是热带气候，全年炎热潮湿。"
+    },
+    "population": {
+      "pt": "Moçambique tem cerca de 33 milhões de habitantes.",
+      "en": "Mozambique has about 33 million people.",
+      "de": "Mosambik hat etwa 33 Millionen Einwohner.",
+      "fr": "Mozambique compte environ 33 millions d'habitants.",
+      "es": "Mozambique tiene alrededor de 33 millones de habitantes.",
+      "it": "Mozambico ha circa 33 milioni di abitanti.",
+      "zh": "莫桑比克人口大约有3300万。"
+    },
+    "funCuriosity": {
+      "pt": "Moçambique tem uma das costas mais longas de África, com mais de 2500 km.",
+      "en": "Mozambique has one of the longest coastlines in Africa, over 2,500 km.",
+      "de": "Mosambik hat eine der längsten Küsten Afrikas mit über 2500 km.",
+      "fr": "Le Mozambique possède l'une des côtes les plus longues d'Afrique, plus de 2 500 km.",
+      "es": "Mozambique tiene una de las costas más largas de África, con más de 2500 km.",
+      "it": "Il Mozambico ha una delle coste più lunghe dell'Africa, oltre 2500 km.",
+      "zh": "莫桑比克拥有非洲最长的海岸线之一，超过2500公里。"
+    },
+    "additionalAnimal": {
+      "emoji": "🐆",
+      "name": {
+        "pt": "Leopardo",
+        "en": "Leopard",
+        "de": "Leopard",
+        "fr": "Léopard",
+        "es": "Leopardo",
+        "it": "Leopardo",
+        "zh": "豹"
+      }
+    }
   },
   {
     "iso": "CV",
@@ -4313,7 +5951,46 @@
       "zh": "卡楚帕炖菜"
     },
     "nativeName": "Cabo Verde",
-    "nativeLangCode": "pt-PT"
+    "nativeLangCode": "pt-PT",
+    "climate": {
+      "pt": "Cabo Verde tem um clima desértico, muito quente e seco durante o dia, com noites frias.",
+      "en": "Cape Verde's climate is desert, very hot and dry during the day, with cool nights.",
+      "de": "Das Klima in Kap Verde ist wüstenhaft, tagsüber sehr heiß und trocken, mit kühlen Nächten.",
+      "fr": "Cap-Vert a un climat désertique, très chaud et sec le jour, avec des nuits fraîches.",
+      "es": "Cabo Verde tiene un clima desértico, muy caluroso y seco durante el día, con noches frescas.",
+      "it": "Capo Verde ha un clima desertico, molto caldo e secco di giorno, con notti fresche.",
+      "zh": "佛得角的气候特点是沙漠气候，白天酷热干燥，夜晚凉爽。"
+    },
+    "population": {
+      "pt": "Cabo Verde tem cerca de 600 mil habitantes.",
+      "en": "Cape Verde has about 600 thousand people.",
+      "de": "Kap Verde hat etwa 600 Tausend Einwohner.",
+      "fr": "Cap-Vert compte environ 600 mille habitants.",
+      "es": "Cabo Verde tiene alrededor de 600 mil habitantes.",
+      "it": "Capo Verde ha circa 600 mila abitanti.",
+      "zh": "佛得角人口大约有60万。"
+    },
+    "funCuriosity": {
+      "pt": "Cabo Verde é um arquipélago vulcânico formado por 10 ilhas.",
+      "en": "Cape Verde is a volcanic archipelago made up of 10 islands.",
+      "de": "Kap Verde ist ein vulkanischer Archipel aus 10 Inseln.",
+      "fr": "Le Cap-Vert est un archipel volcanique composé de 10 îles.",
+      "es": "Cabo Verde es un archipiélago volcánico formado por 10 islas.",
+      "it": "Capo Verde è un arcipelago vulcanico composto da 10 isole.",
+      "zh": "佛得角是由10个岛屿组成的火山群岛。"
+    },
+    "additionalAnimal": {
+      "emoji": "🐢",
+      "name": {
+        "pt": "Tartaruga-comum",
+        "en": "Loggerhead turtle",
+        "de": "Unechte Karettschildkröte",
+        "fr": "Tortue caouanne",
+        "es": "Tortuga boba",
+        "it": "Tartaruga marina comune",
+        "zh": "红海龟"
+      }
+    }
   },
   {
     "iso": "GW",
@@ -4405,7 +6082,46 @@
       "zh": "鱼焦罗夫饭"
     },
     "nativeName": "Guiné-Bissau",
-    "nativeLangCode": "pt-PT"
+    "nativeLangCode": "pt-PT",
+    "climate": {
+      "pt": "Guiné-Bissau tem um clima tropical, quente e húmido durante todo o ano.",
+      "en": "Guinea-Bissau's climate is tropical, hot and humid all year round.",
+      "de": "Das Klima in Guinea-Bissau ist tropisch, das ganze Jahr über heiß und feucht.",
+      "fr": "Guinée-Bissau a un climat tropical, chaud et humide toute l'année.",
+      "es": "Guinea-Bisáu tiene un clima tropical, cálido y húmedo durante todo el año.",
+      "it": "Guinea-Bissau ha un clima tropicale, caldo e umido tutto l'anno.",
+      "zh": "几内亚比绍的气候特点是热带气候，全年炎热潮湿。"
+    },
+    "population": {
+      "pt": "Guiné-Bissau tem cerca de 2.1 milhões de habitantes.",
+      "en": "Guinea-Bissau has about 2.1 million people.",
+      "de": "Guinea-Bissau hat etwa 2.1 Millionen Einwohner.",
+      "fr": "Guinée-Bissau compte environ 2.1 millions d'habitants.",
+      "es": "Guinea-Bisáu tiene alrededor de 2.1 millones de habitantes.",
+      "it": "Guinea-Bissau ha circa 2.1 milioni di abitanti.",
+      "zh": "几内亚比绍人口大约有210万。"
+    },
+    "funCuriosity": {
+      "pt": "O Arquipélago dos Bijagós, na Guiné-Bissau, é uma Reserva da Biosfera da UNESCO com dezenas de ilhas.",
+      "en": "Guinea-Bissau's Bijagós Archipelago is a UNESCO Biosphere Reserve with dozens of islands.",
+      "de": "Der Bijagós-Archipel in Guinea-Bissau ist ein UNESCO-Biosphärenreservat mit Dutzenden von Inseln.",
+      "fr": "L'archipel des Bijagos, en Guinée-Bissau, est une réserve de biosphère de l'UNESCO comptant des dizaines d'îles.",
+      "es": "El archipiélago de los Bijagós, en Guinea-Bisáu, es una Reserva de la Biosfera de la UNESCO con decenas de islas.",
+      "it": "L'arcipelago delle Bijagós, in Guinea-Bissau, è una Riserva della Biosfera UNESCO con decine di isole.",
+      "zh": "几内亚比绍的比雅古群岛是联合国教科文组织生物圈保护区，拥有数十个岛屿。"
+    },
+    "additionalAnimal": {
+      "emoji": "🐒",
+      "name": {
+        "pt": "Chimpanzé",
+        "en": "Chimpanzee",
+        "de": "Schimpanse",
+        "fr": "Chimpanzé",
+        "es": "Chimpancé",
+        "it": "Scimpanzé",
+        "zh": "黑猩猩"
+      }
+    }
   },
   {
     "iso": "ST",
@@ -4497,7 +6213,46 @@
       "zh": "卡卢卢炖菜"
     },
     "nativeName": "São Tomé e Príncipe",
-    "nativeLangCode": "pt-PT"
+    "nativeLangCode": "pt-PT",
+    "climate": {
+      "pt": "São Tomé e Príncipe tem um clima tropical, quente e húmido durante todo o ano.",
+      "en": "São Tomé and Príncipe's climate is tropical, hot and humid all year round.",
+      "de": "Das Klima in São Tomé und Príncipe ist tropisch, das ganze Jahr über heiß und feucht.",
+      "fr": "Sao Tomé-et-Principe a un climat tropical, chaud et humide toute l'année.",
+      "es": "Santo Tomé y Príncipe tiene un clima tropical, cálido y húmedo durante todo el año.",
+      "it": "São Tomé e Príncipe ha un clima tropicale, caldo e umido tutto l'anno.",
+      "zh": "圣多美和普林西比的气候特点是热带气候，全年炎热潮湿。"
+    },
+    "population": {
+      "pt": "São Tomé e Príncipe tem cerca de 220 mil habitantes.",
+      "en": "São Tomé and Príncipe has about 220 thousand people.",
+      "de": "São Tomé und Príncipe hat etwa 220 Tausend Einwohner.",
+      "fr": "Sao Tomé-et-Principe compte environ 220 mille habitants.",
+      "es": "Santo Tomé y Príncipe tiene alrededor de 220 mil habitantes.",
+      "it": "São Tomé e Príncipe ha circa 220 mila abitanti.",
+      "zh": "圣多美和普林西比人口大约有22万。"
+    },
+    "funCuriosity": {
+      "pt": "São Tomé e Príncipe é o segundo país mais pequeno de África.",
+      "en": "São Tomé and Príncipe is Africa's second-smallest country.",
+      "de": "São Tomé und Príncipe ist das zweitkleinste Land Afrikas.",
+      "fr": "São Tomé-et-Príncipe est le deuxième plus petit pays d'Afrique.",
+      "es": "Santo Tomé y Príncipe es el segundo país más pequeño de África.",
+      "it": "São Tomé e Príncipe è il secondo paese più piccolo dell'Africa.",
+      "zh": "圣多美和普林西比是非洲第二小的国家。"
+    },
+    "additionalAnimal": {
+      "emoji": "🐢",
+      "name": {
+        "pt": "Tartaruga-marinha",
+        "en": "Sea turtle",
+        "de": "Meeresschildkröte",
+        "fr": "Tortue de mer",
+        "es": "Tortuga marina",
+        "it": "Tartaruga marina",
+        "zh": "海龟"
+      }
+    }
   },
   {
     "iso": "TL",
@@ -4589,7 +6344,46 @@
       "zh": "香蕉叶蒸鱼"
     },
     "nativeName": "Timor-Leste",
-    "nativeLangCode": "pt-PT"
+    "nativeLangCode": "pt-PT",
+    "climate": {
+      "pt": "Timor-Leste tem um clima tropical de monções, com uma estação seca e uma estação muito chuvosa.",
+      "en": "East Timor's climate is tropical monsoon, with a dry season and a very rainy season.",
+      "de": "Das Klima in Osttimor ist tropisches Monsunklima, mit einer Trockenzeit und einer sehr regenreichen Regenzeit.",
+      "fr": "Timor oriental a un climat tropical de mousson, avec une saison sèche et une saison très pluvieuse.",
+      "es": "Timor Oriental tiene un clima tropical monzónico, con una estación seca y una estación muy lluviosa.",
+      "it": "Timor Est ha un clima tropicale monsonico, con una stagione secca e una stagione molto piovosa.",
+      "zh": "东帝汶的气候特点是热带季风气候，有旱季和降雨量很大的雨季。"
+    },
+    "population": {
+      "pt": "Timor-Leste tem cerca de 1.3 milhões de habitantes.",
+      "en": "East Timor has about 1.3 million people.",
+      "de": "Osttimor hat etwa 1.3 Millionen Einwohner.",
+      "fr": "Timor oriental compte environ 1.3 millions d'habitants.",
+      "es": "Timor Oriental tiene alrededor de 1.3 millones de habitantes.",
+      "it": "Timor Est ha circa 1.3 milioni di abitanti.",
+      "zh": "东帝汶人口大约有130万。"
+    },
+    "funCuriosity": {
+      "pt": "Timor-Leste tornou-se o país mais novo da Ásia quando ganhou a independência em 2002.",
+      "en": "East Timor became the world's newest country in Asia when it gained independence in 2002.",
+      "de": "Osttimor wurde 2002 mit der Unabhängigkeit zum jüngsten Land Asiens.",
+      "fr": "Le Timor oriental est devenu le plus jeune pays d'Asie lors de son indépendance en 2002.",
+      "es": "Timor Oriental se convirtió en el país más joven de Asia al independizarse en 2002.",
+      "it": "Timor Est è diventato il paese più giovane dell'Asia con l'indipendenza nel 2002.",
+      "zh": "东帝汶在2002年独立后成为亚洲最年轻的国家。"
+    },
+    "additionalAnimal": {
+      "emoji": "🐬",
+      "name": {
+        "pt": "Golfinho",
+        "en": "Dolphin",
+        "de": "Delfin",
+        "fr": "Dauphin",
+        "es": "Delfín",
+        "it": "Delfino",
+        "zh": "海豚"
+      }
+    }
   },
   {
     "iso": "BE",
@@ -4681,7 +6475,46 @@
       "zh": "比利时华夫饼"
     },
     "nativeName": "België",
-    "nativeLangCode": "nl-BE"
+    "nativeLangCode": "nl-BE",
+    "climate": {
+      "pt": "Bélgica tem um clima temperado marítimo, com verões amenos, invernos suaves e chuva ao longo do ano.",
+      "en": "Belgium's climate is temperate maritime, with mild summers and winters and rain throughout the year.",
+      "de": "Das Klima in Belgien ist gemäßigt-maritim, mit milden Sommern und Wintern und Regen das ganze Jahr über.",
+      "fr": "Belgique a un climat tempéré océanique, avec des étés doux, des hivers doux et de la pluie toute l'année.",
+      "es": "Bélgica tiene un clima templado oceánico, con veranos e inviernos suaves y lluvia durante todo el año.",
+      "it": "Belgio ha un clima temperato oceanico, con estati e inverni miti e piogge tutto l'anno.",
+      "zh": "比利时的气候特点是温带海洋性气候，夏季和冬季都较温和，全年降雨较多。"
+    },
+    "population": {
+      "pt": "Bélgica tem cerca de 12 milhões de habitantes.",
+      "en": "Belgium has about 12 million people.",
+      "de": "Belgien hat etwa 12 Millionen Einwohner.",
+      "fr": "Belgique compte environ 12 millions d'habitants.",
+      "es": "Bélgica tiene alrededor de 12 millones de habitantes.",
+      "it": "Belgio ha circa 12 milioni di abitanti.",
+      "zh": "比利时人口大约有1200万。"
+    },
+    "funCuriosity": {
+      "pt": "A Bélgica tem mais de 1500 tipos diferentes de cerveja.",
+      "en": "Belgium is home to more than 1,500 different kinds of beer.",
+      "de": "Belgien beherbergt mehr als 1500 verschiedene Biersorten.",
+      "fr": "La Belgique compte plus de 1 500 sortes de bières différentes.",
+      "es": "Bélgica alberga más de 1500 tipos diferentes de cerveza.",
+      "it": "Il Belgio ospita più di 1500 tipi diversi di birra.",
+      "zh": "比利时拥有超过1500种不同的啤酒。"
+    },
+    "additionalAnimal": {
+      "emoji": "🐴",
+      "name": {
+        "pt": "Cavalo-belga",
+        "en": "Belgian draft horse",
+        "de": "Belgisches Kaltblut",
+        "fr": "Cheval de trait belge",
+        "es": "Caballo de tiro belga",
+        "it": "Cavallo da tiro belga",
+        "zh": "比利时挽马"
+      }
+    }
   },
   {
     "iso": "CH",
@@ -4773,7 +6606,46 @@
       "zh": "奶酪火锅"
     },
     "nativeName": "Schweiz",
-    "nativeLangCode": "de-CH"
+    "nativeLangCode": "de-CH",
+    "climate": {
+      "pt": "Suíça tem um clima continental, com verões quentes e invernos frios e nevados.",
+      "en": "Switzerland's climate is continental, with warm summers and cold, snowy winters.",
+      "de": "Das Klima in Schweiz ist kontinental, mit warmen Sommern und kalten, schneereichen Wintern.",
+      "fr": "Suisse a un climat continental, avec des étés chauds et des hivers froids et neigeux.",
+      "es": "Suiza tiene un clima continental, con veranos cálidos e inviernos fríos y nevados.",
+      "it": "Svizzera ha un clima continentale, con estati calde e inverni freddi e nevosi.",
+      "zh": "瑞士的气候特点是大陆性气候，夏季温暖，冬季寒冷多雪。"
+    },
+    "population": {
+      "pt": "Suíça tem cerca de 8.8 milhões de habitantes.",
+      "en": "Switzerland has about 8.8 million people.",
+      "de": "Schweiz hat etwa 8.8 Millionen Einwohner.",
+      "fr": "Suisse compte environ 8.8 millions d'habitants.",
+      "es": "Suiza tiene alrededor de 8.8 millones de habitantes.",
+      "it": "Svizzera ha circa 8.8 milioni di abitanti.",
+      "zh": "瑞士人口大约有880万。"
+    },
+    "funCuriosity": {
+      "pt": "A Suíça tem mais de 1500 lagos.",
+      "en": "Switzerland has more than 1,500 lakes.",
+      "de": "Die Schweiz hat mehr als 1500 Seen.",
+      "fr": "La Suisse compte plus de 1 500 lacs.",
+      "es": "Suiza tiene más de 1500 lagos.",
+      "it": "La Svizzera ha più di 1500 laghi.",
+      "zh": "瑞士拥有超过1500个湖泊。"
+    },
+    "additionalAnimal": {
+      "emoji": "🐐",
+      "name": {
+        "pt": "Cabra-alpina",
+        "en": "Alpine goat",
+        "de": "Alpenziege",
+        "fr": "Chèvre alpine",
+        "es": "Cabra alpina",
+        "it": "Capra alpina",
+        "zh": "阿尔卑斯山羊"
+      }
+    }
   },
   {
     "iso": "AT",
@@ -4865,7 +6737,46 @@
       "zh": "维也纳炸肉排"
     },
     "nativeName": "Österreich",
-    "nativeLangCode": "de-AT"
+    "nativeLangCode": "de-AT",
+    "climate": {
+      "pt": "Áustria tem um clima continental, com verões quentes e invernos frios e nevados.",
+      "en": "Austria's climate is continental, with warm summers and cold, snowy winters.",
+      "de": "Das Klima in Österreich ist kontinental, mit warmen Sommern und kalten, schneereichen Wintern.",
+      "fr": "Autriche a un climat continental, avec des étés chauds et des hivers froids et neigeux.",
+      "es": "Austria tiene un clima continental, con veranos cálidos e inviernos fríos y nevados.",
+      "it": "Austria ha un clima continentale, con estati calde e inverni freddi e nevosi.",
+      "zh": "奥地利的气候特点是大陆性气候，夏季温暖，冬季寒冷多雪。"
+    },
+    "population": {
+      "pt": "Áustria tem cerca de 9.1 milhões de habitantes.",
+      "en": "Austria has about 9.1 million people.",
+      "de": "Österreich hat etwa 9.1 Millionen Einwohner.",
+      "fr": "Autriche compte environ 9.1 millions d'habitants.",
+      "es": "Austria tiene alrededor de 9.1 millones de habitantes.",
+      "it": "Austria ha circa 9.1 milioni di abitanti.",
+      "zh": "奥地利人口大约有910万。"
+    },
+    "funCuriosity": {
+      "pt": "A Áustria tem mais de 26 mil quilómetros de trilhos de caminhada.",
+      "en": "Austria is home to more than 26,000 kilometers of hiking trails.",
+      "de": "Österreich verfügt über mehr als 26.000 Kilometer an Wanderwegen.",
+      "fr": "L'Autriche compte plus de 26 000 kilomètres de sentiers de randonnée.",
+      "es": "Austria cuenta con más de 26 000 kilómetros de senderos para caminar.",
+      "it": "L'Austria conta più di 26.000 chilometri di sentieri escursionistici.",
+      "zh": "奥地利拥有超过2.6万公里的徒步小径。"
+    },
+    "additionalAnimal": {
+      "emoji": "🦌",
+      "name": {
+        "pt": "Veado",
+        "en": "Red deer",
+        "de": "Rothirsch",
+        "fr": "Cerf élaphe",
+        "es": "Ciervo rojo",
+        "it": "Cervo nobile",
+        "zh": "赤鹿"
+      }
+    }
   },
   {
     "iso": "RU",
@@ -4957,7 +6868,46 @@
       "zh": "罗宋汤"
     },
     "nativeName": "Россия",
-    "nativeLangCode": "ru-RU"
+    "nativeLangCode": "ru-RU",
+    "climate": {
+      "pt": "Rússia tem um clima frio, com invernos longos e rigorosos e verões curtos e frescos.",
+      "en": "Russia's climate is cold, with long harsh winters and short, cool summers.",
+      "de": "Das Klima in Russland ist kalt, mit langen, strengen Wintern und kurzen, kühlen Sommern.",
+      "fr": "Russie a un climat froid, avec des hivers longs et rigoureux et des étés courts et frais.",
+      "es": "Rusia tiene un clima frío, con inviernos largos y rigurosos y veranos cortos y frescos.",
+      "it": "Russia ha un clima freddo, con inverni lunghi e rigidi ed estati brevi e fresche.",
+      "zh": "俄罗斯的气候特点是寒冷气候，冬季漫长严酷，夏季短暂凉爽。"
+    },
+    "population": {
+      "pt": "Rússia tem cerca de 144 milhões de habitantes.",
+      "en": "Russia has about 144 million people.",
+      "de": "Russland hat etwa 144 Millionen Einwohner.",
+      "fr": "Russie compte environ 144 millions d'habitants.",
+      "es": "Rusia tiene alrededor de 144 millones de habitantes.",
+      "it": "Russia ha circa 144 milioni di abitanti.",
+      "zh": "俄罗斯人口大约有14400万。"
+    },
+    "funCuriosity": {
+      "pt": "A Rússia é tão grande que se estende por 11 fusos horários.",
+      "en": "Russia is so large it spans 11 time zones.",
+      "de": "Russland ist so groß, dass es sich über 11 Zeitzonen erstreckt.",
+      "fr": "La Russie est si grande qu'elle s'étend sur 11 fuseaux horaires.",
+      "es": "Rusia es tan grande que abarca 11 husos horarios.",
+      "it": "La Russia è così grande da estendersi su 11 fusi orari.",
+      "zh": "俄罗斯幅员辽阔，横跨11个时区。"
+    },
+    "additionalAnimal": {
+      "emoji": "🐻",
+      "name": {
+        "pt": "Urso-pardo",
+        "en": "Brown bear",
+        "de": "Braunbär",
+        "fr": "Ours brun",
+        "es": "Oso pardo",
+        "it": "Orso bruno",
+        "zh": "棕熊"
+      }
+    }
   },
   {
     "iso": "VN",
@@ -5049,7 +6999,46 @@
       "zh": "越南河粉"
     },
     "nativeName": "Việt Nam",
-    "nativeLangCode": "vi-VN"
+    "nativeLangCode": "vi-VN",
+    "climate": {
+      "pt": "Vietname tem um clima tropical de monções, com uma estação seca e uma estação muito chuvosa.",
+      "en": "Vietnam's climate is tropical monsoon, with a dry season and a very rainy season.",
+      "de": "Das Klima in Vietnam ist tropisches Monsunklima, mit einer Trockenzeit und einer sehr regenreichen Regenzeit.",
+      "fr": "Vietnam a un climat tropical de mousson, avec une saison sèche et une saison très pluvieuse.",
+      "es": "Vietnam tiene un clima tropical monzónico, con una estación seca y una estación muy lluviosa.",
+      "it": "Vietnam ha un clima tropicale monsonico, con una stagione secca e una stagione molto piovosa.",
+      "zh": "越南的气候特点是热带季风气候，有旱季和降雨量很大的雨季。"
+    },
+    "population": {
+      "pt": "Vietname tem cerca de 100 milhões de habitantes.",
+      "en": "Vietnam has about 100 million people.",
+      "de": "Vietnam hat etwa 100 Millionen Einwohner.",
+      "fr": "Vietnam compte environ 100 millions d'habitants.",
+      "es": "Vietnam tiene alrededor de 100 millones de habitantes.",
+      "it": "Vietnam ha circa 100 milioni di abitanti.",
+      "zh": "越南人口大约有10000万。"
+    },
+    "funCuriosity": {
+      "pt": "O Vietname é o segundo maior exportador de café do mundo.",
+      "en": "Vietnam is the world's second-largest exporter of coffee.",
+      "de": "Vietnam ist der zweitgrößte Kaffeeexporteur der Welt.",
+      "fr": "Le Vietnam est le deuxième plus grand exportateur de café au monde.",
+      "es": "Vietnam es el segundo mayor exportador de café del mundo.",
+      "it": "Il Vietnam è il secondo maggiore esportatore di caffè al mondo.",
+      "zh": "越南是世界第二大咖啡出口国。"
+    },
+    "additionalAnimal": {
+      "emoji": "🐃",
+      "name": {
+        "pt": "Búfalo-de-água",
+        "en": "Water buffalo",
+        "de": "Wasserbüffel",
+        "fr": "Buffle d'eau",
+        "es": "Búfalo de agua",
+        "it": "Bufalo d'acqua",
+        "zh": "水牛"
+      }
+    }
   },
   {
     "iso": "SA",
@@ -5141,7 +7130,46 @@
       "zh": "卡布萨香饭"
     },
     "nativeName": "السعودية",
-    "nativeLangCode": "ar-SA"
+    "nativeLangCode": "ar-SA",
+    "climate": {
+      "pt": "Arábia Saudita tem um clima desértico, muito quente e seco durante o dia, com noites frias.",
+      "en": "Saudi Arabia's climate is desert, very hot and dry during the day, with cool nights.",
+      "de": "Das Klima in Saudi-Arabien ist wüstenhaft, tagsüber sehr heiß und trocken, mit kühlen Nächten.",
+      "fr": "Arabie saoudite a un climat désertique, très chaud et sec le jour, avec des nuits fraîches.",
+      "es": "Arabia Saudita tiene un clima desértico, muy caluroso y seco durante el día, con noches frescas.",
+      "it": "Arabia Saudita ha un clima desertico, molto caldo e secco di giorno, con notti fresche.",
+      "zh": "沙特阿拉伯的气候特点是沙漠气候，白天酷热干燥，夜晚凉爽。"
+    },
+    "population": {
+      "pt": "Arábia Saudita tem cerca de 36 milhões de habitantes.",
+      "en": "Saudi Arabia has about 36 million people.",
+      "de": "Saudi-Arabien hat etwa 36 Millionen Einwohner.",
+      "fr": "Arabie saoudite compte environ 36 millions d'habitants.",
+      "es": "Arabia Saudita tiene alrededor de 36 millones de habitantes.",
+      "it": "Arabia Saudita ha circa 36 milioni di abitanti.",
+      "zh": "沙特阿拉伯人口大约有3600万。"
+    },
+    "funCuriosity": {
+      "pt": "A Arábia Saudita tem o maior deserto de areia do mundo, o Rub' al Khali.",
+      "en": "Saudi Arabia is home to the world's largest sand desert, the Empty Quarter.",
+      "de": "Saudi-Arabien beherbergt die größte Sandwüste der Welt, das Rub al-Chali.",
+      "fr": "L'Arabie saoudite abrite le plus grand désert de sable du monde, le Rub' al Khali.",
+      "es": "Arabia Saudita alberga el desierto de arena más grande del mundo, el Rub al Jali.",
+      "it": "L'Arabia Saudita ospita il più grande deserto di sabbia del mondo, il Rub' al-Khali.",
+      "zh": "沙特阿拉伯拥有世界上最大的沙质沙漠——鲁卜哈利沙漠。"
+    },
+    "additionalAnimal": {
+      "emoji": "🐪",
+      "name": {
+        "pt": "Dromedário",
+        "en": "Dromedary camel",
+        "de": "Dromedar",
+        "fr": "Dromadaire",
+        "es": "Dromedario",
+        "it": "Dromedario",
+        "zh": "单峰骆驼"
+      }
+    }
   },
   {
     "iso": "IS",
@@ -5233,6 +7261,45 @@
       "zh": "斯基尔酸奶"
     },
     "nativeName": "Ísland",
-    "nativeLangCode": "is-IS"
+    "nativeLangCode": "is-IS",
+    "climate": {
+      "pt": "Islândia tem um clima frio, com invernos longos e rigorosos e verões curtos e frescos.",
+      "en": "Iceland's climate is cold, with long harsh winters and short, cool summers.",
+      "de": "Das Klima in Island ist kalt, mit langen, strengen Wintern und kurzen, kühlen Sommern.",
+      "fr": "Islande a un climat froid, avec des hivers longs et rigoureux et des étés courts et frais.",
+      "es": "Islandia tiene un clima frío, con inviernos largos y rigurosos y veranos cortos y frescos.",
+      "it": "Islanda ha un clima freddo, con inverni lunghi e rigidi ed estati brevi e fresche.",
+      "zh": "冰岛的气候特点是寒冷气候，冬季漫长严酷，夏季短暂凉爽。"
+    },
+    "population": {
+      "pt": "Islândia tem cerca de 400 mil habitantes.",
+      "en": "Iceland has about 400 thousand people.",
+      "de": "Island hat etwa 400 Tausend Einwohner.",
+      "fr": "Islande compte environ 400 mille habitants.",
+      "es": "Islandia tiene alrededor de 400 mil habitantes.",
+      "it": "Islanda ha circa 400 mila abitanti.",
+      "zh": "冰岛人口大约有40万。"
+    },
+    "funCuriosity": {
+      "pt": "A Islândia não tem mosquitos.",
+      "en": "Iceland has no mosquitoes.",
+      "de": "In Island gibt es keine Mücken.",
+      "fr": "L'Islande ne compte aucun moustique.",
+      "es": "Islandia no tiene mosquitos.",
+      "it": "L'Islanda non ha zanzare.",
+      "zh": "冰岛没有蚊子。"
+    },
+    "additionalAnimal": {
+      "emoji": "🐎",
+      "name": {
+        "pt": "Cavalo-islandês",
+        "en": "Icelandic horse",
+        "de": "Islandpferd",
+        "fr": "Cheval islandais",
+        "es": "Caballo islandés",
+        "it": "Cavallo islandese",
+        "zh": "冰岛马"
+      }
+    }
   }
 ]

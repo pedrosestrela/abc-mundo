@@ -307,24 +307,49 @@ export default function World() {
               {selected.landmark && (
                 <p className="mission-text">
                   {t("modules.worldLandmark")}: 🏛️ {selected.landmark}
-                  <SpeakButton text={selected.landmark} langCode={pair.mother} />
+                  <SpeakButton text={t("modules.worldLandmarkSentence", { landmark: selected.landmark })} langCode={pair.mother} />
                 </p>
               )}
               {selected.food && (
                 <p className="mission-text">
                   {t("modules.worldFood")}: 🍽️ {selected.food}
-                  <SpeakButton text={selected.food} langCode={pair.mother} />
+                  <SpeakButton text={t("modules.worldFoodSentence", { food: selected.food })} langCode={pair.mother} />
                 </p>
               )}
               {selected.animal && (
                 <p className="mission-text">
                   {t("modules.worldAnimal")}: {selected.animal.emoji} {selected.animal.name}
+                  <SpeakButton text={t("modules.worldAnimalSentence", { animal: selected.animal.name })} langCode={pair.mother} />
+                </p>
+              )}
+              {selected.additionalAnimal && (
+                <p className="mission-text">
+                  {t("modules.worldAdditionalAnimal")}: {selected.additionalAnimal.emoji} {selected.additionalAnimal.name}
+                  <SpeakButton text={t("modules.worldAnimalSentence", { animal: selected.additionalAnimal.name })} langCode={pair.mother} />
                 </p>
               )}
               {selected.tradition && (
                 <p className="mission-text">
-                  {t("modules.worldTradition")}: {selected.tradition}
+                  {t("modules.worldTradition")}: 🎉 {selected.tradition}
                   <SpeakButton text={selected.tradition} langCode={pair.mother} />
+                </p>
+              )}
+              {selected.climate && (
+                <p className="mission-text">
+                  {t("modules.worldClimate")}: 🌡️ {selected.climate}
+                  <SpeakButton text={selected.climate} langCode={pair.mother} />
+                </p>
+              )}
+              {selected.population && (
+                <p className="mission-text">
+                  {t("modules.worldPopulation")}: 👥 {selected.population}
+                  <SpeakButton text={selected.population} langCode={pair.mother} />
+                </p>
+              )}
+              {selected.funCuriosity && (
+                <p className="mission-text">
+                  {t("modules.worldFunCuriosity")}: 💡 {selected.funCuriosity}
+                  <SpeakButton text={selected.funCuriosity} langCode={pair.mother} />
                 </p>
               )}
               {selected.language && selected.greeting && (
@@ -394,24 +419,49 @@ export default function World() {
               {selected.landmark && (
                 <p className="mission-text">
                   {t("modules.worldLandmark")}: 🏛️ {selected.landmark}
-                  <SpeakButton text={selected.landmark} langCode={pair.mother} />
+                  <SpeakButton text={t("modules.worldLandmarkSentence", { landmark: selected.landmark })} langCode={pair.mother} />
                 </p>
               )}
               {selected.food && (
                 <p className="mission-text">
                   {t("modules.worldFood")}: 🍽️ {selected.food}
-                  <SpeakButton text={selected.food} langCode={pair.mother} />
+                  <SpeakButton text={t("modules.worldFoodSentence", { food: selected.food })} langCode={pair.mother} />
                 </p>
               )}
               {selected.animal && (
                 <p className="mission-text">
                   {t("modules.worldAnimal")}: {selected.animal.emoji} {selected.animal.name}
+                  <SpeakButton text={t("modules.worldAnimalSentence", { animal: selected.animal.name })} langCode={pair.mother} />
+                </p>
+              )}
+              {selected.additionalAnimal && (
+                <p className="mission-text">
+                  {t("modules.worldAdditionalAnimal")}: {selected.additionalAnimal.emoji} {selected.additionalAnimal.name}
+                  <SpeakButton text={t("modules.worldAnimalSentence", { animal: selected.additionalAnimal.name })} langCode={pair.mother} />
                 </p>
               )}
               {selected.tradition && (
                 <p className="mission-text">
-                  {t("modules.worldTradition")}: {selected.tradition}
+                  {t("modules.worldTradition")}: 🎉 {selected.tradition}
                   <SpeakButton text={selected.tradition} langCode={pair.mother} />
+                </p>
+              )}
+              {selected.climate && (
+                <p className="mission-text">
+                  {t("modules.worldClimate")}: 🌡️ {selected.climate}
+                  <SpeakButton text={selected.climate} langCode={pair.mother} />
+                </p>
+              )}
+              {selected.population && (
+                <p className="mission-text">
+                  {t("modules.worldPopulation")}: 👥 {selected.population}
+                  <SpeakButton text={selected.population} langCode={pair.mother} />
+                </p>
+              )}
+              {selected.funCuriosity && (
+                <p className="mission-text">
+                  {t("modules.worldFunCuriosity")}: 💡 {selected.funCuriosity}
+                  <SpeakButton text={selected.funCuriosity} langCode={pair.mother} />
                 </p>
               )}
               {selected.language && selected.greeting && (
