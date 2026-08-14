@@ -31,5 +31,16 @@
       "Our alphabet family is here to stay"
     ],
     "illustrationId": "alphabet-circle"
+  },
+  {
+    "id": "moon-and-stars-song",
+    "title": "The Moon and Stars Song",
+    "lyrics": [
+      "The moon shines bright, the letters go to sleep",
+      "One by one, sweet dreams they keep",
+      "Goodnight, A, goodnight, Z",
+      "Tomorrow we'll play, just wait and see"
+    ],
+    "illustrationId": "starry-night"
   }
 ]

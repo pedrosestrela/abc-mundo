@@ -31,5 +31,16 @@
       "Il nostro alfabeto è un tesoro"
     ],
     "illustrationId": "alphabet-circle"
+  },
+  {
+    "id": "canzone-della-luna",
+    "title": "La Canzone della Luna e delle Stelle",
+    "lyrics": [
+      "La luna splende, le lettere vanno a dormire",
+      "Una per una, iniziano a sorridere",
+      "Buonanotte, A, buonanotte, Z",
+      "Domani giochiamo ancora, sì"
+    ],
+    "illustrationId": "starry-night"
   }
 ]

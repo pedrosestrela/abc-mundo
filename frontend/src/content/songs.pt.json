@@ -31,5 +31,16 @@
       "O nosso alfabeto nunca vai parar"
     ],
     "illustrationId": "alphabet-circle"
+  },
+  {
+    "id": "cancao-da-lua",
+    "title": "A Canção da Lua e das Estrelas",
+    "lyrics": [
+      "A lua brilha, as letras vão dormir",
+      "Uma a uma, começam a sorrir",
+      "Boa noite, A, boa noite, Z",
+      "Amanhã brincamos outra vez"
+    ],
+    "illustrationId": "starry-night"
   }
 ]
