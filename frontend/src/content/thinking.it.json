@@ -1,0 +1,282 @@
+{
+  "factOrAssumption": [
+    {
+      "id": "fa-atraso",
+      "emoji": "🏫",
+      "scenario": "Giovanni è arrivato in ritardo a scuola questa mattina.",
+      "statement": "È in ritardo perché pioveva forte.",
+      "isFact": false,
+      "explanation": "Questa è una supposizione: sappiamo che è arrivato in ritardo, ma non sappiamo ancora perché. Potrebbe essere la pioggia, o potrebbe essere altro."
+    },
+    {
+      "id": "fa-relogio",
+      "emoji": "⏰",
+      "scenario": "L'orologio dell'aula segna le 8 e Giovanni è entrato alle 8:15.",
+      "statement": "Giovanni è entrato 15 minuti dopo le 8.",
+      "isFact": true,
+      "explanation": "Questo è un fatto: possiamo verificarlo semplicemente guardando l'ora, senza immaginare nulla."
+    },
+    {
+      "id": "fa-planta",
+      "emoji": "🌱",
+      "scenario": "Una pianta sul davanzale dell'aula è più alta rispetto a una settimana fa.",
+      "statement": "La pianta è cresciuta perché qualcuno l'ha innaffiata ogni giorno.",
+      "isFact": false,
+      "explanation": "È una supposizione: sappiamo che è cresciuta, ma non conosciamo ancora la causa esatta — potrebbe essere l'acqua, la luce o altro."
+    },
+    {
+      "id": "fa-medida",
+      "emoji": "📏",
+      "scenario": "Hai misurato la pianta lunedì ed era alta 12 cm. Oggi misura 15 cm.",
+      "statement": "La pianta è cresciuta di 3 cm questa settimana.",
+      "isFact": true,
+      "explanation": "Questo è un fatto: è il risultato di una misurazione che chiunque può ripetere e confermare."
+    },
+    {
+      "id": "fa-amigo",
+      "emoji": "😞",
+      "scenario": "La tua amica non ti ha risposto al messaggio oggi.",
+      "statement": "Deve essere arrabbiata con te.",
+      "isFact": false,
+      "explanation": "È una supposizione: potrebbero esserci molte ragioni — forse è occupata, senza telefono o sta dormendo. Ancora non lo sai."
+    },
+    {
+      "id": "fa-nuvem",
+      "emoji": "☁️",
+      "scenario": "Il cielo è pieno di nuvole scure.",
+      "statement": "Tra poco pioverà.",
+      "isFact": false,
+      "explanation": "È una supposizione ragionevole, ma non ancora certa — le nuvole scure non portano sempre pioggia."
+    }
+  ],
+  "causeOrCoincidence": [
+    {
+      "id": "cc-gelado",
+      "emoji": "🍦",
+      "scenario": "Hai lasciato un gelato al sole per mezz'ora e, tornando, era sciolto.",
+      "isCause": true,
+      "explanation": "Il calore del sole scioglie il ghiaccio — c'è un legame diretto e conosciuto tra il calore e lo scioglimento."
+    },
+    {
+      "id": "cc-camisola",
+      "emoji": "👕",
+      "scenario": "Ogni volta che Maria indossa il suo maglione blu, la sua squadra di calcio vince la partita.",
+      "isCause": false,
+      "explanation": "Un maglione non può influenzare il risultato di una partita. È solo una coincidenza — è successo così alcune volte per caso."
+    },
+    {
+      "id": "cc-planta-agua",
+      "emoji": "🌵",
+      "scenario": "Hai smesso di innaffiare un cactus per un mese e ha iniziato ad appassire.",
+      "isCause": true,
+      "explanation": "Le piante hanno bisogno di acqua per vivere. La mancanza d'acqua spiega direttamente perché il cactus è appassito."
+    },
+    {
+      "id": "cc-numero",
+      "emoji": "🔢",
+      "scenario": "Il giorno in cui hai indossato i calzini gialli, hai preso un bel voto al test.",
+      "isCause": false,
+      "explanation": "Il colore dei calzini non ha alcun legame con il risultato di un test. È solo coincidenza."
+    },
+    {
+      "id": "cc-dor-dente",
+      "emoji": "🦷",
+      "scenario": "Hai mangiato molti dolci questa settimana e ora hai mal di denti.",
+      "isCause": true,
+      "explanation": "Lo zucchero favorisce le carie, che provocano il mal di denti — c'è un legame conosciuto tra le due cose."
+    },
+    {
+      "id": "cc-guarda-chuva",
+      "emoji": "☂️",
+      "scenario": "Ogni volta che porti l'ombrello non piove; quando lo dimentichi a casa, piove.",
+      "isCause": false,
+      "explanation": "Portare o dimenticare l'ombrello non influenza il tempo. Notiamo di più queste coincidenze rispetto alle volte in cui non accadono."
+    }
+  ],
+  "missingInfo": [
+    {
+      "id": "mi-plantas",
+      "emoji": "🌱",
+      "scenario": "Due piante uguali sono state piantate lo stesso giorno. Una è cresciuta bene, l'altra quasi per niente.",
+      "question": "Quale di queste domande ti aiuterebbe di più a scoprire cosa è successo?",
+      "options": [
+        { "text": "☀️ Le due piante hanno ricevuto la stessa quantità di luce?", "correct": true },
+        { "text": "🎨 Di che colore è il vaso di ciascuna pianta?", "correct": false },
+        { "text": "📅 In quale giorno della settimana è stata piantata ciascuna?", "correct": false }
+      ],
+      "afterNote": "Potresti anche chiedere dell'acqua o della temperatura — l'importante è cercare cosa è diverso tra le due piante."
+    },
+    {
+      "id": "mi-atraso-onibus",
+      "emoji": "🚌",
+      "scenario": "Lo scuolabus non è arrivato all'orario abituale questa mattina.",
+      "question": "Quale di queste domande ti aiuterebbe di più a scoprire perché?",
+      "options": [
+        { "text": "🚦 C'era molto traffico o un problema sulla strada?", "correct": true },
+        { "text": "🎒 Di che colore è il tuo zaino oggi?", "correct": false },
+        { "text": "🍎 Cosa hai mangiato a colazione?", "correct": false }
+      ],
+      "afterNote": "Chiedere del traffico, di un guasto o del percorso aiuta ad avvicinarsi alla causa reale."
+    },
+    {
+      "id": "mi-peixe",
+      "emoji": "🐟",
+      "scenario": "Il pesciolino dell'acquario della classe è stato trovato a galleggiare a pancia in su questa mattina.",
+      "question": "Quale di queste domande ti aiuterebbe di più a capire cosa è successo?",
+      "options": [
+        { "text": "🌡️ L'acqua dell'acquario ha cambiato temperatura o pulizia?", "correct": true },
+        { "text": "🖍️ Chi ha disegnato l'acquario sul muro dell'aula?", "correct": false },
+        { "text": "📖 Quante pagine ha il libro sui pesci?", "correct": false }
+      ],
+      "afterNote": "Chiedere dell'acqua, del cibo o da quanto tempo succede aiuta a trovare indizi utili."
+    },
+    {
+      "id": "mi-bolo",
+      "emoji": "🎂",
+      "scenario": "La torta che la nonna ha fatto oggi non è lievitata nel forno come al solito.",
+      "question": "Quale di queste domande ti aiuterebbe di più a scoprire il motivo?",
+      "options": [
+        { "text": "🧁 Sono stati usati gli stessi ingredienti e le stesse quantità di sempre?", "correct": true },
+        { "text": "🎵 Che musica suonava in cucina?", "correct": false },
+        { "text": "🧦 Di che colore erano i calzini della nonna?", "correct": false }
+      ],
+      "afterNote": "Chiedere degli ingredienti, della temperatura del forno o del tempo di cottura sono buoni indizi da indagare."
+    },
+    {
+      "id": "mi-jogo",
+      "emoji": "⚽",
+      "scenario": "La squadra della scuola ha perso la partita di ieri, dopo aver vinto le tre partite precedenti.",
+      "question": "Quale di queste domande ti aiuterebbe di più a capire cosa è cambiato?",
+      "options": [
+        { "text": "🩹 Un giocatore importante era infortunato o assente dalla partita?", "correct": true },
+        { "text": "🌈 Di che colore era il cielo durante la partita?", "correct": false },
+        { "text": "🕐 A che ora si sono svegliati i giocatori tre giorni prima?", "correct": false }
+      ],
+      "afterNote": "Confrontare cosa è cambiato da una partita all'altra — giocatori, avversario, stanchezza — aiuta a trovare spiegazioni."
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "ct-gato",
+      "emoji": "🐈",
+      "statementA": "Il gatto di Anna è completamente nero, senza nessun altro colore.",
+      "statementB": "Il gatto di Anna ha una macchia bianca sulla zampa.",
+      "contradicts": true,
+      "explanation": "Se il gatto è completamente nero, non può avere anche una macchia bianca — le due frasi non possono essere entrambe vere."
+    },
+    {
+      "id": "ct-idade",
+      "emoji": "🎂",
+      "statementA": "Pietro ha 8 anni.",
+      "statementB": "Pietro è più piccolo di sua sorella, che ha 10 anni.",
+      "contradicts": false,
+      "explanation": "Non c'è contraddizione: è perfettamente possibile avere 8 anni e avere una sorella maggiore di 10 anni."
+    },
+    {
+      "id": "ct-tempo",
+      "emoji": "🌦️",
+      "statementA": "Non è caduta nemmeno una goccia di pioggia in tutto il giorno.",
+      "statementB": "Le strade erano fradice d'acqua nel pomeriggio.",
+      "contradicts": true,
+      "explanation": "Se non è piovuto per niente, è strano che le strade siano fradice — a meno che non ci sia un'altra spiegazione, le frasi si contraddicono."
+    },
+    {
+      "id": "ct-livro",
+      "emoji": "📚",
+      "statementA": "Questo libro ha 120 pagine.",
+      "statementB": "Non l'ho ancora finito, sono solo a pagina 80.",
+      "contradicts": false,
+      "explanation": "Non c'è contraddizione: un libro può avere 120 pagine mentre qualcuno è ancora a metà, a pagina 80."
+    },
+    {
+      "id": "ct-corrida",
+      "emoji": "🏃",
+      "statementA": "Sofia è stata la prima a tagliare il traguardo della corsa.",
+      "statementB": "Tre compagni hanno tagliato il traguardo prima di Sofia.",
+      "contradicts": true,
+      "explanation": "Se Sofia è stata la prima, nessuno può essere arrivato prima di lei — le due frasi non possono essere entrambe vere."
+    },
+    {
+      "id": "ct-cor",
+      "emoji": "🎨",
+      "statementA": "Il maglione di Michele è blu scuro.",
+      "statementB": "Alla luce del sole, il maglione di Michele sembra quasi nero.",
+      "contradicts": false,
+      "explanation": "Non c'è contraddizione: un blu molto scuro può davvero sembrare quasi nero con una certa luce."
+    }
+  ],
+  "estimation": [
+    {
+      "id": "es-elefantes",
+      "emoji": "🐘",
+      "question": "Più o meno quanti elefanti pensi che entrerebbero, uno accanto all'altro, nella tua aula?",
+      "answer": 3,
+      "tolerance": 2,
+      "unit": "elefanti"
+    },
+    {
+      "id": "es-passos",
+      "emoji": "👣",
+      "question": "Quanti passi pensi servano per attraversare un campo di calcio, da una porta all'altra?",
+      "answer": 100,
+      "tolerance": 40,
+      "unit": "passi"
+    },
+    {
+      "id": "es-livros",
+      "emoji": "📚",
+      "question": "Quanti libri pensi che entrino, impilati, dal pavimento fino alla tua vita?",
+      "answer": 15,
+      "tolerance": 8,
+      "unit": "libri"
+    },
+    {
+      "id": "es-lapis",
+      "emoji": "✏️",
+      "question": "Quante matite in fila pensi servano per coprire la lunghezza di un banco di scuola?",
+      "answer": 12,
+      "tolerance": 5,
+      "unit": "matite"
+    },
+    {
+      "id": "es-minutos",
+      "emoji": "🦷",
+      "question": "Quanti minuti pensi che impieghi, più o meno, a lavarti bene i denti?",
+      "answer": 2,
+      "tolerance": 2,
+      "unit": "minuti"
+    }
+  ],
+  "puzzles": [
+    {
+      "id": "pz-dez",
+      "emoji": "🔟",
+      "prompt": "In quanti modi diversi puoi arrivare al numero 10, usando somme o sottrazioni?",
+      "examples": ["4 + 6 = 10", "20 - 10 = 10", "5 + 5 = 10", "2 + 2 + 2 + 2 + 2 = 10", "15 - 3 - 2 = 10"]
+    },
+    {
+      "id": "pz-atravessar",
+      "emoji": "🌉",
+      "prompt": "In quanti modi diversi puoi attraversare una strada in sicurezza?",
+      "examples": ["Usare le strisce pedonali e guardare da entrambi i lati", "Chiedere a un adulto di attraversare con te", "Usare un semaforo pedonale", "Usare un sottopassaggio o un ponte", "Aspettare il segnale di un vigile"]
+    },
+    {
+      "id": "pz-torre",
+      "emoji": "🏗️",
+      "prompt": "In quanti modi diversi puoi costruire una torre alta e stabile con i blocchi?",
+      "examples": ["Base larga e cima stretta", "Blocchi grandi in basso, piccoli in alto", "Disporre i pezzi a triangolo per dare equilibrio", "Costruire vicino a un muro per appoggiarsi", "Usare blocchi tutti della stessa dimensione a strati"]
+    },
+    {
+      "id": "pz-mensagem",
+      "emoji": "✉️",
+      "prompt": "In quanti modi diversi puoi mandare un messaggio a un amico senza parlare?",
+      "examples": ["Scrivere una lettera o un biglietto", "Disegnare un'immagine", "Fare dei gesti con le mani", "Inviare un messaggio di testo", "Usare segnali concordati in anticipo"]
+    },
+    {
+      "id": "pz-agua",
+      "emoji": "💧",
+      "prompt": "In quanti modi diversi puoi risparmiare acqua in casa?",
+      "examples": ["Chiudere il rubinetto mentre ti lavi i denti", "Fare docce più brevi", "Riutilizzare l'acqua piovana per innaffiare le piante", "Avvisare un adulto se un rubinetto gocciola", "Riempire bene la lavatrice prima di accenderla"]
+    }
+  ]
+}

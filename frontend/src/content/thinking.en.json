@@ -1,0 +1,282 @@
+{
+  "factOrAssumption": [
+    {
+      "id": "fa-atraso",
+      "emoji": "🏫",
+      "scenario": "John was late for school this morning.",
+      "statement": "He was late because it was raining hard.",
+      "isFact": false,
+      "explanation": "This is an assumption: we know he was late, but we don't know why yet. It could be the rain, or it could be something else."
+    },
+    {
+      "id": "fa-relogio",
+      "emoji": "⏰",
+      "scenario": "The classroom clock shows 8 o'clock and John walked in at 8:15.",
+      "statement": "John walked in 15 minutes after 8 o'clock.",
+      "isFact": true,
+      "explanation": "This is a fact: we can check it just by looking at the time, without imagining anything."
+    },
+    {
+      "id": "fa-planta",
+      "emoji": "🌱",
+      "scenario": "A plant on the classroom windowsill is taller than it was a week ago.",
+      "statement": "The plant grew because someone watered it every day.",
+      "isFact": false,
+      "explanation": "This is an assumption: we know it grew, but we don't yet know the exact cause — it could be the water, the light, or something else."
+    },
+    {
+      "id": "fa-medida",
+      "emoji": "📏",
+      "scenario": "You measured the plant on Monday and it was 12 cm. Today it measures 15 cm.",
+      "statement": "The plant grew 3 cm this week.",
+      "isFact": true,
+      "explanation": "This is a fact: it's the result of a measurement anyone could repeat and confirm."
+    },
+    {
+      "id": "fa-amigo",
+      "emoji": "😞",
+      "scenario": "Your friend didn't reply to your message today.",
+      "statement": "She must be angry with you.",
+      "isFact": false,
+      "explanation": "This is an assumption: there could be many reasons — maybe she's busy, without a phone, or asleep. You don't know yet."
+    },
+    {
+      "id": "fa-nuvem",
+      "emoji": "☁️",
+      "scenario": "The sky is full of dark clouds.",
+      "statement": "It's going to rain soon.",
+      "isFact": false,
+      "explanation": "This is a reasonable assumption, but it's not certain yet — dark clouds don't always bring rain."
+    }
+  ],
+  "causeOrCoincidence": [
+    {
+      "id": "cc-gelado",
+      "emoji": "🍦",
+      "scenario": "You left an ice cream in the sun for half an hour, and when you came back it had melted.",
+      "isCause": true,
+      "explanation": "The sun's heat melts ice — there is a direct, well-known link between heat and melting."
+    },
+    {
+      "id": "cc-camisola",
+      "emoji": "👕",
+      "scenario": "Whenever Maria wears her blue jumper, her football team wins the game.",
+      "isCause": false,
+      "explanation": "A jumper can't influence the result of a game. It's just coincidence — it happened to line up a few times by chance."
+    },
+    {
+      "id": "cc-planta-agua",
+      "emoji": "🌵",
+      "scenario": "You stopped watering a cactus for a month and it started to wilt.",
+      "isCause": true,
+      "explanation": "Plants need water to live. Missing water directly explains why the cactus wilted."
+    },
+    {
+      "id": "cc-numero",
+      "emoji": "🔢",
+      "scenario": "On the day you wore yellow socks, you got a good grade on your test.",
+      "isCause": false,
+      "explanation": "The colour of your socks has no connection to a test result. It's just coincidence."
+    },
+    {
+      "id": "cc-dor-dente",
+      "emoji": "🦷",
+      "scenario": "You ate lots of sweets this week and now you have a toothache.",
+      "isCause": true,
+      "explanation": "Sugar helps create cavities, which cause toothaches — there is a known link between the two."
+    },
+    {
+      "id": "cc-guarda-chuva",
+      "emoji": "☂️",
+      "scenario": "Whenever you bring your umbrella, it doesn't rain; when you forget it at home, it rains.",
+      "isCause": false,
+      "explanation": "Bringing or forgetting an umbrella doesn't influence the weather. We just notice these coincidences more than the times they don't happen."
+    }
+  ],
+  "missingInfo": [
+    {
+      "id": "mi-plantas",
+      "emoji": "🌱",
+      "scenario": "Two identical plants were planted on the same day. One grew well, the other barely grew at all.",
+      "question": "Which of these questions would help you most to figure out what happened?",
+      "options": [
+        { "text": "☀️ Did both plants get the same amount of light?", "correct": true },
+        { "text": "🎨 What colour is each plant's pot?", "correct": false },
+        { "text": "📅 What day of the week was each one planted?", "correct": false }
+      ],
+      "afterNote": "You could also ask about water or temperature — the important thing is looking for what's different between the two plants."
+    },
+    {
+      "id": "mi-atraso-onibus",
+      "emoji": "🚌",
+      "scenario": "The school bus didn't arrive at its usual time this morning.",
+      "question": "Which of these questions would help you most to find out why?",
+      "options": [
+        { "text": "🚦 Was there heavy traffic or a problem on the road?", "correct": true },
+        { "text": "🎒 What colour is your backpack today?", "correct": false },
+        { "text": "🍎 What did you have for breakfast?", "correct": false }
+      ],
+      "afterNote": "Asking about traffic, a breakdown, or the route helps you get closer to the real cause."
+    },
+    {
+      "id": "mi-peixe",
+      "emoji": "🐟",
+      "scenario": "The classroom's pet fish was found floating belly-up this morning.",
+      "question": "Which of these questions would help you most to understand what happened?",
+      "options": [
+        { "text": "🌡️ Did the tank's water change temperature or cleanliness?", "correct": true },
+        { "text": "🖍️ Who drew the fish tank on the classroom wall?", "correct": false },
+        { "text": "📖 How many pages does the book about fish have?", "correct": false }
+      ],
+      "afterNote": "Asking about the water, the food, or how long this has been going on helps you find useful clues."
+    },
+    {
+      "id": "mi-bolo",
+      "emoji": "🎂",
+      "scenario": "The cake grandma baked today didn't rise in the oven like it usually does.",
+      "question": "Which of these questions would help you most to figure out why?",
+      "options": [
+        { "text": "🧁 Were the same ingredients and amounts used as usual?", "correct": true },
+        { "text": "🎵 What music was playing in the kitchen?", "correct": false },
+        { "text": "🧦 What colour were grandma's socks?", "correct": false }
+      ],
+      "afterNote": "Asking about the ingredients, the oven temperature, or the baking time are good clues to investigate."
+    },
+    {
+      "id": "mi-jogo",
+      "emoji": "⚽",
+      "scenario": "The school team lost yesterday's game, after winning the three games before it.",
+      "question": "Which of these questions would help you most understand what was different?",
+      "options": [
+        { "text": "🩹 Was an important player injured or missing from the game?", "correct": true },
+        { "text": "🌈 What colour was the sky during the game?", "correct": false },
+        { "text": "🕐 What time did the players wake up three days earlier?", "correct": false }
+      ],
+      "afterNote": "Comparing what changed from one game to the next — players, opponent, tiredness — helps you find explanations."
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "ct-gato",
+      "emoji": "🐈",
+      "statementA": "Ana's cat is completely black, with no other colour at all.",
+      "statementB": "Ana's cat has a white patch on its paw.",
+      "contradicts": true,
+      "explanation": "If the cat is completely black, it can't also have a white patch — both statements can't be true at the same time."
+    },
+    {
+      "id": "ct-idade",
+      "emoji": "🎂",
+      "statementA": "Pedro is 8 years old.",
+      "statementB": "Pedro is younger than his sister, who is 10.",
+      "contradicts": false,
+      "explanation": "There's no contradiction: it's perfectly possible to be 8 and have an older sister who is 10."
+    },
+    {
+      "id": "ct-tempo",
+      "emoji": "🌦️",
+      "statementA": "Not a single drop of rain fell all day.",
+      "statementB": "The streets were soaked with water by the afternoon.",
+      "contradicts": true,
+      "explanation": "If it didn't rain at all, it's strange for the streets to be soaked — unless there's another explanation, the statements contradict each other."
+    },
+    {
+      "id": "ct-livro",
+      "emoji": "📚",
+      "statementA": "This book has 120 pages.",
+      "statementB": "I still haven't finished it, I'm only on page 80.",
+      "contradicts": false,
+      "explanation": "There's no contradiction: a book can have 120 pages while someone is still halfway through, on page 80."
+    },
+    {
+      "id": "ct-corrida",
+      "emoji": "🏃",
+      "statementA": "Sofia was the first to reach the finish line of the race.",
+      "statementB": "Three classmates reached the finish line before Sofia.",
+      "contradicts": true,
+      "explanation": "If Sofia was first, no one could have arrived before her — the two statements can't both be true."
+    },
+    {
+      "id": "ct-cor",
+      "emoji": "🎨",
+      "statementA": "Miguel's jumper is dark blue.",
+      "statementB": "In sunlight, Miguel's jumper looks almost black.",
+      "contradicts": false,
+      "explanation": "There's no contradiction: a very dark blue can indeed look almost black in certain light."
+    }
+  ],
+  "estimation": [
+    {
+      "id": "es-elefantes",
+      "emoji": "🐘",
+      "question": "Roughly how many elephants do you think would fit, side by side, inside your classroom?",
+      "answer": 3,
+      "tolerance": 2,
+      "unit": "elephants"
+    },
+    {
+      "id": "es-passos",
+      "emoji": "👣",
+      "question": "How many steps do you think it takes to walk across a football pitch, from one goal to the other?",
+      "answer": 100,
+      "tolerance": 40,
+      "unit": "steps"
+    },
+    {
+      "id": "es-livros",
+      "emoji": "📚",
+      "question": "How many books do you think would fit, stacked up, from the floor to your waist?",
+      "answer": 15,
+      "tolerance": 8,
+      "unit": "books"
+    },
+    {
+      "id": "es-lapis",
+      "emoji": "✏️",
+      "question": "How many pencils lined up end to end do you think it would take to cover the length of a classroom desk?",
+      "answer": 12,
+      "tolerance": 5,
+      "unit": "pencils"
+    },
+    {
+      "id": "es-minutos",
+      "emoji": "🦷",
+      "question": "How many minutes do you think it takes you to brush your teeth well?",
+      "answer": 2,
+      "tolerance": 2,
+      "unit": "minutes"
+    }
+  ],
+  "puzzles": [
+    {
+      "id": "pz-dez",
+      "emoji": "🔟",
+      "prompt": "In how many different ways can you reach the number 10, using addition or subtraction?",
+      "examples": ["4 + 6 = 10", "20 - 10 = 10", "5 + 5 = 10", "2 + 2 + 2 + 2 + 2 = 10", "15 - 3 - 2 = 10"]
+    },
+    {
+      "id": "pz-atravessar",
+      "emoji": "🌉",
+      "prompt": "In how many different ways can you cross a street safely?",
+      "examples": ["Use the crosswalk and look both ways", "Ask an adult to cross with you", "Use a pedestrian traffic light", "Use an underpass or a bridge", "Wait for a police officer to signal"]
+    },
+    {
+      "id": "pz-torre",
+      "emoji": "🏗️",
+      "prompt": "In how many different ways can you build a tall, sturdy tower out of blocks?",
+      "examples": ["Wide base, narrow top", "Big blocks at the bottom, small ones on top", "Arrange pieces in a triangle shape for balance", "Build next to a wall to lean on", "Use blocks all the same size in layers"]
+    },
+    {
+      "id": "pz-mensagem",
+      "emoji": "✉️",
+      "prompt": "In how many different ways can you send a message to a friend without speaking?",
+      "examples": ["Write a letter or note", "Draw a picture", "Use hand gestures", "Send a text message", "Use signals agreed on beforehand"]
+    },
+    {
+      "id": "pz-agua",
+      "emoji": "💧",
+      "prompt": "In how many different ways can you save water at home?",
+      "examples": ["Turn off the tap while brushing your teeth", "Take shorter showers", "Reuse rainwater to water plants", "Tell an adult if a tap is dripping", "Fill the washing machine fully before running it"]
+    }
+  ]
+}

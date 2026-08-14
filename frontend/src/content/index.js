@@ -130,6 +130,14 @@ import computingSafetyZh from "./computingSafety.zh.json";
 import computingSafetyEs from "./computingSafety.es.json";
 import computingSafetyIt from "./computingSafety.it.json";
 
+import thinkingPt from "./thinking.pt.json";
+import thinkingEn from "./thinking.en.json";
+import thinkingDe from "./thinking.de.json";
+import thinkingFr from "./thinking.fr.json";
+import thinkingZh from "./thinking.zh.json";
+import thinkingEs from "./thinking.es.json";
+import thinkingIt from "./thinking.it.json";
+
 export const SUPPORTED_LANGUAGES = [
   { code: "pt", label: "Português", flag: "🇵🇹" },
   { code: "en", label: "English", flag: "🇬🇧" },
@@ -156,6 +164,7 @@ const SCIENCE = { pt: sciencePt, en: scienceEn, de: scienceDe, fr: scienceFr, zh
 const LIFE_SKILLS = { pt: lifeSkillsPt, en: lifeSkillsEn, de: lifeSkillsDe, fr: lifeSkillsFr, zh: lifeSkillsZh, es: lifeSkillsEs, it: lifeSkillsIt };
 const COMPUTING = { pt: computingPt, en: computingEn, de: computingDe, fr: computingFr, zh: computingZh, es: computingEs, it: computingIt };
 const COMPUTING_SAFETY = { pt: computingSafetyPt, en: computingSafetyEn, de: computingSafetyDe, fr: computingSafetyFr, zh: computingSafetyZh, es: computingSafetyEs, it: computingSafetyIt };
+const THINKING = { pt: thinkingPt, en: thinkingEn, de: thinkingDe, fr: thinkingFr, zh: thinkingZh, es: thinkingEs, it: thinkingIt };
 
 // Normalizes zh's different shape ({hanzi,...}) to the same shape used by
 // the Latin-alphabet languages ({letter, lower, upper, exampleWord, emoji}).
@@ -227,6 +236,10 @@ export function getComputing(langCode) {
 
 export function getComputingSafety(langCode) {
   return COMPUTING_SAFETY[langCode] || [];
+}
+
+export function getThinking(langCode) {
+  return THINKING[langCode] || THINKING.pt;
 }
 
 // Countries are language-agnostic in shape (name/fact are per-language

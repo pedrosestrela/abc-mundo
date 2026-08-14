@@ -562,3 +562,42 @@ export function tryLifeSkill(profileName, skillId) {
   saveTriedLifeSkills(all);
   return all[name];
 }
+
+// --- Academia do Pensamento (Thinking Academy) ---
+// Tracks which exercise ids the child has completed, across all exercise
+// types (fact-or-assumption, cause-or-coincidence, missing-info,
+// contradiction, estimation, puzzles), mirroring exploreScienceCard's shape.
+
+const COMPLETED_THINKING_KEY = "abcmundo.completedThinking";
+
+function loadCompletedThinking() {
+  try {
+    const raw = localStorage.getItem(COMPLETED_THINKING_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveCompletedThinking(all) {
+  try {
+    localStorage.setItem(COMPLETED_THINKING_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getCompletedThinking(profileName) {
+  const all = loadCompletedThinking();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function completeThinkingExercise(profileName, exerciseId) {
+  const name = profileName || "Explorer";
+  const all = loadCompletedThinking();
+  const done = new Set(all[name] || []);
+  done.add(exerciseId);
+  all[name] = Array.from(done);
+  saveCompletedThinking(all);
+  return all[name];
+}
