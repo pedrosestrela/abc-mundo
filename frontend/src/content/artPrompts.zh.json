@@ -1,22 +1,182 @@
 [
-  { "id": "animal-novo", "emoji": "🦄", "prompt": "画一只还不存在的动物，给它起个名字！", "category": "draw" },
-  { "id": "cor-nova", "emoji": "🌈", "prompt": "如果你能发明一种新颜色，它会叫什么名字？有什么特别之处？", "category": "imagine" },
-  { "id": "casa-sonhos", "emoji": "🏰", "prompt": "画出你梦想中的房子。", "category": "draw" },
-  { "id": "super-heroi", "emoji": "🦸", "prompt": "发明一个超级英雄角色和他的超能力。", "category": "imagine" },
-  { "id": "voar-um-dia", "emoji": "🕊️", "prompt": "画出如果你能飞一天，你会做什么。", "category": "draw" },
-  { "id": "construir-caixas", "emoji": "📦", "prompt": "用家里能找到的东西（积木、盒子，任何有的东西）搭建点什么。", "category": "build" },
-  { "id": "planeta-novo", "emoji": "🪐", "prompt": "发明一个新星球。谁住在那里？它是什么样子的？", "category": "imagine" },
-  { "id": "monstro-simpatico", "emoji": "👹", "prompt": "画一个只想交朋友的友善怪物。", "category": "draw" },
-  { "id": "historia-tres-palavras", "emoji": "📖", "prompt": "用这三个词编一个小故事：云、鞋子、龙。", "category": "story" },
-  { "id": "maquina-doida", "emoji": "⚙️", "prompt": "用家里的东西搭建一台疯狂的机器。它是用来做什么的？", "category": "build" },
-  { "id": "jardim-magico", "emoji": "🌻", "prompt": "画一个花朵会演奏音乐的魔法花园。", "category": "draw" },
-  { "id": "carta-futuro", "emoji": "✉️", "prompt": "编一个关于20年后的你的故事。", "category": "story" },
-  { "id": "roupa-maluca", "emoji": "👗", "prompt": "画一套你想在特别的日子穿的疯狂服装。", "category": "draw" },
-  { "id": "castelo-areia", "emoji": "🏖️", "prompt": "用你能找到的东西（沙子、积木、靠垫）搭建一座城堡。", "category": "build" },
-  { "id": "amigo-imaginario", "emoji": "👻", "prompt": "发明一个想象中的朋友。他叫什么名字？喜欢做什么？", "category": "imagine" },
-  { "id": "cidade-nuvens", "emoji": "☁️", "prompt": "画一座漂浮在云端的城市。", "category": "draw" },
-  { "id": "aventura-oceano", "emoji": "🐙", "prompt": "编一个关于海底神秘生物的冒险故事。", "category": "story" },
-  { "id": "forte-almofadas", "emoji": "🛋️", "prompt": "用靠垫和毯子搭一个堡垒，给它起一个秘密名字。", "category": "build" },
-  { "id": "autorretrato-super", "emoji": "🖼️", "prompt": "把自己画成一个漫画人物。", "category": "draw" },
-  { "id": "musica-inventada", "emoji": "🎶", "prompt": "编一首关于你今天的小歌，可以唱给别人听！", "category": "imagine" }
+  {
+    "id": "animal-novo",
+    "emoji": "🦄",
+    "prompt": "画一只还不存在的动物，给它起个名字！",
+    "category": "draw"
+  },
+  {
+    "id": "cor-nova",
+    "emoji": "🌈",
+    "prompt": "如果你能发明一种新颜色，它会叫什么名字？有什么特别之处？",
+    "category": "imagine"
+  },
+  {
+    "id": "casa-sonhos",
+    "emoji": "🏰",
+    "prompt": "画出你梦想中的房子。",
+    "category": "draw"
+  },
+  {
+    "id": "super-heroi",
+    "emoji": "🦸",
+    "prompt": "发明一个超级英雄角色和他的超能力。",
+    "category": "imagine"
+  },
+  {
+    "id": "voar-um-dia",
+    "emoji": "🕊️",
+    "prompt": "画出如果你能飞一天，你会做什么。",
+    "category": "draw"
+  },
+  {
+    "id": "construir-caixas",
+    "emoji": "📦",
+    "prompt": "用家里能找到的东西（积木、盒子，任何有的东西）搭建点什么。",
+    "category": "build"
+  },
+  {
+    "id": "planeta-novo",
+    "emoji": "🪐",
+    "prompt": "发明一个新星球。谁住在那里？它是什么样子的？",
+    "category": "imagine"
+  },
+  {
+    "id": "monstro-simpatico",
+    "emoji": "👹",
+    "prompt": "画一个只想交朋友的友善怪物。",
+    "category": "draw"
+  },
+  {
+    "id": "historia-tres-palavras",
+    "emoji": "📖",
+    "prompt": "用这三个词编一个小故事：云、鞋子、龙。",
+    "category": "story"
+  },
+  {
+    "id": "maquina-doida",
+    "emoji": "⚙️",
+    "prompt": "用家里的东西搭建一台疯狂的机器。它是用来做什么的？",
+    "category": "build"
+  },
+  {
+    "id": "jardim-magico",
+    "emoji": "🌻",
+    "prompt": "画一个花朵会演奏音乐的魔法花园。",
+    "category": "draw"
+  },
+  {
+    "id": "carta-futuro",
+    "emoji": "✉️",
+    "prompt": "编一个关于20年后的你的故事。",
+    "category": "story"
+  },
+  {
+    "id": "roupa-maluca",
+    "emoji": "👗",
+    "prompt": "画一套你想在特别的日子穿的疯狂服装。",
+    "category": "draw"
+  },
+  {
+    "id": "castelo-areia",
+    "emoji": "🏖️",
+    "prompt": "用你能找到的东西（沙子、积木、靠垫）搭建一座城堡。",
+    "category": "build"
+  },
+  {
+    "id": "amigo-imaginario",
+    "emoji": "👻",
+    "prompt": "发明一个想象中的朋友。他叫什么名字？喜欢做什么？",
+    "category": "imagine"
+  },
+  {
+    "id": "cidade-nuvens",
+    "emoji": "☁️",
+    "prompt": "画一座漂浮在云端的城市。",
+    "category": "draw"
+  },
+  {
+    "id": "aventura-oceano",
+    "emoji": "🐙",
+    "prompt": "编一个关于海底神秘生物的冒险故事。",
+    "category": "story"
+  },
+  {
+    "id": "forte-almofadas",
+    "emoji": "🛋️",
+    "prompt": "用靠垫和毯子搭一个堡垒，给它起一个秘密名字。",
+    "category": "build"
+  },
+  {
+    "id": "autorretrato-super",
+    "emoji": "🖼️",
+    "prompt": "把自己画成一个漫画人物。",
+    "category": "draw"
+  },
+  {
+    "id": "musica-inventada",
+    "emoji": "🎶",
+    "prompt": "编一首关于你今天的小歌，可以唱给别人听！",
+    "category": "imagine"
+  },
+  {
+    "id": "familia-animais",
+    "emoji": "🐾",
+    "prompt": "画出你的家人,但每个人都是一种不同的动物。",
+    "category": "draw"
+  },
+  {
+    "id": "invisivel-um-dia",
+    "emoji": "🫥",
+    "prompt": "如果你能隐身一整天,你会做什么?",
+    "category": "imagine"
+  },
+  {
+    "id": "objeto-fala",
+    "emoji": "🧸",
+    "prompt": "编一个故事,讲你最喜欢的玩具活了过来,还会说话。",
+    "category": "story"
+  },
+  {
+    "id": "barco-reciclado",
+    "emoji": "🚢",
+    "prompt": "用回收材料(瓶子、瓶塞、纸板)造一艘小船,试试它能不能浮起来。",
+    "category": "build"
+  },
+  {
+    "id": "fundo-mar-desenho",
+    "emoji": "🐠",
+    "prompt": "画出你想象中还没被探索过的海底世界。",
+    "category": "draw"
+  },
+  {
+    "id": "maquina-tempo",
+    "emoji": "⏳",
+    "prompt": "如果你有一台时光机,你想穿越到哪个时代?为什么?",
+    "category": "imagine"
+  },
+  {
+    "id": "meia-perdida",
+    "emoji": "🧦",
+    "prompt": "编一个故事,讲讲那些在洗衣机里消失的袜子到底去了哪里。",
+    "category": "story"
+  },
+  {
+    "id": "pista-berlindes",
+    "emoji": "🎢",
+    "prompt": "用纸筒和盒子搭一条弹珠滚道。",
+    "category": "build"
+  },
+  {
+    "id": "eu-idoso",
+    "emoji": "🧓",
+    "prompt": "画出你想象中自己年纪很大很大时的样子。",
+    "category": "draw"
+  },
+  {
+    "id": "controlar-tempo",
+    "emoji": "🌦️",
+    "prompt": "如果你能控制天气(下雨、晴天、下雪),你今天想选哪种天气?为什么?",
+    "category": "imagine"
+  }
 ]

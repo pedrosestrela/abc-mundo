@@ -103,5 +103,75 @@
     "emoji": "🥬",
     "isFact": false,
     "explanation": "Opinione! I gusti sono personali — ciò che è delizioso per alcuni può non esserlo per altri, e va benissimo così."
+  },
+  {
+    "id": "d16",
+    "statement": "Il miele non si guasta mai se conservato bene.",
+    "emoji": "🍯",
+    "isFact": true,
+    "explanation": "È un fatto! Gli archeologi hanno trovato miele nelle tombe egizie di migliaia di anni fa che era ancora buono da mangiare, grazie alla sua bassa quantità d'acqua e alla sua acidità."
+  },
+  {
+    "id": "d17",
+    "statement": "Mangiare carote permette di vedere al buio.",
+    "emoji": "🥕",
+    "isFact": false,
+    "explanation": "È un mito! Le carote contengono vitamina A, utile per gli occhi, ma non danno una super-vista al buio. Questo mito divenne famoso durante la Seconda Guerra Mondiale."
+  },
+  {
+    "id": "d18",
+    "statement": "Leggere libri è più divertente che guardare i cartoni animati.",
+    "emoji": "📖",
+    "isFact": false,
+    "explanation": "È un'opinione! Alcune persone preferiscono leggere, altre preferiscono i cartoni animati. Non c'è una risposta giusta: dipende dai gusti di ciascuno."
+  },
+  {
+    "id": "d19",
+    "statement": "I polpi hanno tre cuori.",
+    "emoji": "🐙",
+    "isFact": true,
+    "explanation": "È un fatto! Due cuori pompano sangue verso le branchie e il terzo lo pompa verso il resto del corpo. Si può verificare nei libri di biologia marina."
+  },
+  {
+    "id": "d20",
+    "statement": "Se ingoi una gomma da masticare, resta nello stomaco per 7 anni.",
+    "emoji": "🍬",
+    "isFact": false,
+    "explanation": "È un mito molto diffuso! Il corpo non riesce a digerire la gomma, ma questa attraversa l'apparato digerente come qualsiasi altra cosa non digeribile, di solito in pochi giorni."
+  },
+  {
+    "id": "d21",
+    "statement": "L'estate è la stagione migliore dell'anno.",
+    "emoji": "☀️",
+    "isFact": false,
+    "explanation": "È un'opinione! C'è chi adora il caldo dell'estate e chi preferisce il freddo dell'inverno o i colori dell'autunno. Anche i gusti sulle stagioni variano."
+  },
+  {
+    "id": "d22",
+    "statement": "Il Portogallo fu il primo paese a raggiungere l'India via mare partendo dall'Europa.",
+    "emoji": "⛵",
+    "isFact": true,
+    "explanation": "È un fatto storico! Vasco da Gama raggiunse l'India nel 1498, circumnavigando l'Africa, e puoi confermarlo nei libri di Storia."
+  },
+  {
+    "id": "d23",
+    "statement": "La luce del Sole impiega circa 8 minuti a raggiungere la Terra.",
+    "emoji": "☀️",
+    "isFact": true,
+    "explanation": "È un fatto! Si può calcolare conoscendo la velocità della luce e la distanza dal Sole: gli scienziati confermano sempre lo stesso numero."
+  },
+  {
+    "id": "d24",
+    "statement": "Un messaggio che hai ricevuto dice che vincerai un telefono gratis se clicchi su un link. Dovresti crederci?",
+    "emoji": "📱",
+    "isFact": false,
+    "explanation": "Bella idea diffidare! Questi messaggi sono spesso truffe per rubare dati o denaro. Non cliccare mai da solo su quei link: mostrali sempre prima a un adulto di fiducia."
+  },
+  {
+    "id": "d25",
+    "statement": "Se stai troppo tempo al computer, gli occhi diventano quadrati.",
+    "emoji": "💻",
+    "isFact": false,
+    "explanation": "È un mito ed è uno scherzo! Passare molto tempo davanti agli schermi può stancare gli occhi, ma non ne cambia la forma. Comunque è importante fare delle pause."
   }
 ]

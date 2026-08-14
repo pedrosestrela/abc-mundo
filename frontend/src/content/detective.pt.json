@@ -103,5 +103,75 @@
     "emoji": "🥬",
     "isFact": false,
     "explanation": "Opinião! Sabores são pessoais — o que é delicioso para uns pode não ser para outros, e não há problema nenhum nisso."
+  },
+  {
+    "id": "d16",
+    "statement": "O mel nunca se estraga se for bem guardado.",
+    "emoji": "🍯",
+    "isFact": true,
+    "explanation": "É um facto! Arqueólogos encontraram mel em túmulos egípcios com milhares de anos que ainda estava bom para comer, graças à pouca água e à acidez do mel."
+  },
+  {
+    "id": "d17",
+    "statement": "Comer cenouras faz-nos ver no escuro.",
+    "emoji": "🥕",
+    "isFact": false,
+    "explanation": "É um mito muito comum! As cenouras têm vitamina A, boa para os olhos, mas não te dão super-visão no escuro. Este mito ficou famoso durante a 2ª Guerra Mundial."
+  },
+  {
+    "id": "d18",
+    "statement": "Ler livros é mais divertido do que ver desenhos animados.",
+    "emoji": "📖",
+    "isFact": false,
+    "explanation": "Opinião! Umas pessoas preferem ler, outras preferem ver desenhos animados. Não há uma resposta certa — depende do gosto de cada um."
+  },
+  {
+    "id": "d19",
+    "statement": "Os polvos têm três corações.",
+    "emoji": "🐙",
+    "isFact": true,
+    "explanation": "É um facto! Dois corações bombeiam sangue para as guelras e o terceiro bombeia para o resto do corpo. É verificável em livros de biologia marinha."
+  },
+  {
+    "id": "d20",
+    "statement": "Se engolires uma pastilha elástica, ela fica no teu estômago durante 7 anos.",
+    "emoji": "🍬",
+    "isFact": false,
+    "explanation": "É um mito muito espalhado! O corpo não consegue digerir a pastilha elástica, mas ela passa pelo sistema digestivo como qualquer outra coisa que não se digere, normalmente em poucos dias."
+  },
+  {
+    "id": "d21",
+    "statement": "O verão é a melhor estação do ano.",
+    "emoji": "☀️",
+    "isFact": false,
+    "explanation": "Opinião! Há quem adore o calor do verão e há quem prefira o frio do inverno ou as cores do outono. Gostos sobre estações também variam."
+  },
+  {
+    "id": "d22",
+    "statement": "Portugal foi o primeiro país a chegar por mar à Índia vindo da Europa.",
+    "emoji": "⛵",
+    "isFact": true,
+    "explanation": "É um facto histórico! Vasco da Gama chegou à Índia em 1498, contornando África, e podes confirmar isto em livros de História."
+  },
+  {
+    "id": "d23",
+    "statement": "A luz do Sol demora cerca de 8 minutos a chegar à Terra.",
+    "emoji": "☀️",
+    "isFact": true,
+    "explanation": "É um facto! Podes calculá-lo sabendo a velocidade da luz e a distância até ao Sol — cientistas confirmam sempre o mesmo número."
+  },
+  {
+    "id": "d24",
+    "statement": "Uma mensagem que recebeste diz que vais ganhar um telemóvel grátis se clicares num link. Deves acreditar?",
+    "emoji": "📱",
+    "isFact": false,
+    "explanation": "Boa pergunta para desconfiar! Estas mensagens costumam ser burlas para roubar dados ou dinheiro. Nunca cliques nesses links sozinho — mostra sempre a um adulto de confiança primeiro."
+  },
+  {
+    "id": "d25",
+    "statement": "Se ficares muito tempo ao computador, os olhos ficam quadrados.",
+    "emoji": "💻",
+    "isFact": false,
+    "explanation": "É um mito e uma brincadeira! Passar muito tempo ao ecrã pode cansar os olhos, mas não muda a sua forma. Ainda assim, é importante fazer pausas."
   }
 ]

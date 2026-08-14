@@ -103,5 +103,75 @@
     "emoji": "🥬",
     "isFact": false,
     "explanation": "Meinung! Geschmack ist persönlich — was für manche lecker ist, muss es für andere nicht sein, und das ist völlig in Ordnung."
+  },
+  {
+    "id": "d16",
+    "statement": "Honig verdirbt nie, wenn er richtig aufbewahrt wird.",
+    "emoji": "🍯",
+    "isFact": true,
+    "explanation": "Das ist eine Tatsache! Archäologen haben in Jahrtausende alten ägyptischen Gräbern Honig gefunden, der noch essbar war — dank des geringen Wassergehalts und der Säure des Honigs."
+  },
+  {
+    "id": "d17",
+    "statement": "Karotten essen lässt einen im Dunkeln sehen.",
+    "emoji": "🥕",
+    "isFact": false,
+    "explanation": "Das ist ein Mythos! Karotten enthalten Vitamin A, das gut für die Augen ist, aber sie geben dir keine Nachtsicht-Superkraft. Dieser Mythos wurde im Zweiten Weltkrieg berühmt."
+  },
+  {
+    "id": "d18",
+    "statement": "Bücher lesen macht mehr Spaß als Zeichentrickfilme schauen.",
+    "emoji": "📖",
+    "isFact": false,
+    "explanation": "Das ist eine Meinung! Manche Menschen lesen lieber, andere schauen lieber Zeichentrickfilme. Es gibt keine richtige Antwort — es hängt vom Geschmack jedes Einzelnen ab."
+  },
+  {
+    "id": "d19",
+    "statement": "Kraken haben drei Herzen.",
+    "emoji": "🐙",
+    "isFact": true,
+    "explanation": "Das ist eine Tatsache! Zwei Herzen pumpen Blut zu den Kiemen und das dritte pumpt es in den Rest des Körpers. Das kannst du in Meeresbiologie-Büchern nachprüfen."
+  },
+  {
+    "id": "d20",
+    "statement": "Wenn du Kaugummi schluckst, bleibt er 7 Jahre lang in deinem Magen.",
+    "emoji": "🍬",
+    "isFact": false,
+    "explanation": "Das ist ein weitverbreiteter Mythos! Der Körper kann Kaugummi nicht verdauen, aber er wandert wie alles Unverdauliche durch das Verdauungssystem, meist innerhalb weniger Tage."
+  },
+  {
+    "id": "d21",
+    "statement": "Der Sommer ist die beste Jahreszeit.",
+    "emoji": "☀️",
+    "isFact": false,
+    "explanation": "Das ist eine Meinung! Manche lieben die Sommerhitze, andere bevorzugen die Winterkälte oder die Herbstfarben. Auch Vorlieben für Jahreszeiten sind unterschiedlich."
+  },
+  {
+    "id": "d22",
+    "statement": "Portugal war das erste Land, das von Europa aus auf dem Seeweg Indien erreichte.",
+    "emoji": "⛵",
+    "isFact": true,
+    "explanation": "Das ist eine historische Tatsache! Vasco da Gama erreichte 1498 Indien, indem er um Afrika herumsegelte, und du kannst das in Geschichtsbüchern nachprüfen."
+  },
+  {
+    "id": "d23",
+    "statement": "Sonnenlicht braucht etwa 8 Minuten, um die Erde zu erreichen.",
+    "emoji": "☀️",
+    "isFact": true,
+    "explanation": "Das ist eine Tatsache! Man kann es berechnen, wenn man die Lichtgeschwindigkeit und die Entfernung zur Sonne kennt — Wissenschaftler bestätigen immer dieselbe Zahl."
+  },
+  {
+    "id": "d24",
+    "statement": "Eine Nachricht, die du erhalten hast, sagt, du gewinnst ein kostenloses Handy, wenn du auf einen Link klickst. Solltest du das glauben?",
+    "emoji": "📱",
+    "isFact": false,
+    "explanation": "Gut, dass du misstrauisch bist! Solche Nachrichten sind meist Betrug, um Daten oder Geld zu stehlen. Klicke nie allein auf solche Links — zeig sie immer zuerst einem vertrauten Erwachsenen."
+  },
+  {
+    "id": "d25",
+    "statement": "Wenn du zu lange am Computer bist, werden deine Augen eckig.",
+    "emoji": "💻",
+    "isFact": false,
+    "explanation": "Das ist ein Mythos und ein Scherz! Viel Zeit vor Bildschirmen kann die Augen ermüden, aber ändert nicht ihre Form. Trotzdem ist es wichtig, Pausen zu machen."
   }
 ]

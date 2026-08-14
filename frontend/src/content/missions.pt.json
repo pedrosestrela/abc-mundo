@@ -1,24 +1,261 @@
 [
-  { "id": "folhas", "emoji": "🌳", "text": "Vai lá fora ou à janela e encontra 3 folhas diferentes.", "category": "natureza", "supervision": "sozinho" },
-  { "id": "letra-c", "emoji": "🔎", "text": "Procura em casa 5 objetos que começam pela letra C.", "category": "letras", "supervision": "sozinho" },
-  { "id": "medir-mesa", "emoji": "📏", "text": "Mede a mesa da cozinha com passos teus. Quantos passos são?", "category": "matemática", "supervision": "sozinho" },
-  { "id": "gelo-derrete", "emoji": "🧊", "text": "Põe um cubo de gelo num prato. Quanto tempo demora a derreter?", "category": "ciência", "supervision": "adulto" },
-  { "id": "procura-lua", "emoji": "🌙", "text": "Hoje à noite procura a Lua no céu. Como é a forma dela?", "category": "natureza", "supervision": "sozinho" },
-  { "id": "supermercado-2euros", "emoji": "🛒", "text": "No supermercado, encontra algo que custe menos de 2€.", "category": "dinheiro", "supervision": "adulto" },
-  { "id": "separar-meias", "emoji": "🧦", "text": "Separa as meias da roupa lavada por cores.", "category": "vida-prática", "supervision": "sozinho" },
-  { "id": "contar-passaros", "emoji": "🐦", "text": "Fica 5 minutos à janela. Quantos pássaros consegues ver?", "category": "natureza", "supervision": "sozinho" },
-  { "id": "3-palavras-livro", "emoji": "📚", "text": "Escolhe um livro e encontra 3 palavras que já sabes ler.", "category": "leitura", "supervision": "sozinho" },
-  { "id": "dobra-roupa", "emoji": "👕", "text": "Ajuda a dobrar 5 peças de roupa.", "category": "vida-prática", "supervision": "sozinho" },
-  { "id": "desenha-animal", "emoji": "🎨", "text": "Desenha um animal que ainda não existe. Dá-lhe um nome!", "category": "criatividade", "supervision": "sozinho" },
-  { "id": "salta-10", "emoji": "🏃", "text": "Dá 10 saltos e depois anda como um caranguejo até à porta.", "category": "movimento", "supervision": "sozinho" },
-  { "id": "objeto-vermelho", "emoji": "🔴", "text": "Corre e encontra 3 coisas vermelhas em casa.", "category": "movimento", "supervision": "sozinho" },
-  { "id": "bate-ritmo", "emoji": "🥁", "text": "Bate um ritmo com as mãos. Alguém em casa consegue repeti-lo?", "category": "música", "supervision": "sozinho" },
-  { "id": "ponte-papel", "emoji": "🌉", "text": "Constrói uma ponte de papel ou cartão entre duas cadeiras.", "category": "engenharia", "supervision": "sozinho" },
-  { "id": "flutua-afunda", "emoji": "🛁", "text": "No banho, descobre 3 objetos que flutuam e 3 que afundam.", "category": "ciência", "supervision": "adulto" },
-  { "id": "avo-brincadeira", "emoji": "👴", "text": "Pergunta a um avô ou avó que brincadeira fazia quando era pequeno/a.", "category": "família", "supervision": "sozinho" },
-  { "id": "arruma-mochila", "emoji": "🎒", "text": "Arruma sozinho/a a tua mochila para amanhã.", "category": "vida-prática", "supervision": "sozinho" },
-  { "id": "lanche-simples", "emoji": "🥪", "text": "Prepara um lanche simples (ex. sandes) com ajuda de um adulto.", "category": "cozinha", "supervision": "adulto" },
-  { "id": "conta-colheres", "emoji": "🥄", "text": "Ajuda a pôr a mesa e conta quantas colheres e garfos são precisos.", "category": "cozinha", "supervision": "sozinho" },
-  { "id": "planta-semente", "emoji": "🌱", "text": "Planta uma semente num copo com terra e rega-a. Observa-a todos os dias.", "category": "natureza", "supervision": "adulto" },
-  { "id": "atacadores", "emoji": "👟", "text": "Pratica atar os atacadores dos teus ténis sozinho/a.", "category": "vida-prática", "supervision": "sozinho" }
+  {
+    "id": "folhas",
+    "emoji": "🌳",
+    "text": "Vai lá fora ou à janela e encontra 3 folhas diferentes.",
+    "category": "natureza",
+    "supervision": "sozinho"
+  },
+  {
+    "id": "letra-c",
+    "emoji": "🔎",
+    "text": "Procura em casa 5 objetos que começam pela letra C.",
+    "category": "letras",
+    "supervision": "sozinho"
+  },
+  {
+    "id": "medir-mesa",
+    "emoji": "📏",
+    "text": "Mede a mesa da cozinha com passos teus. Quantos passos são?",
+    "category": "matemática",
+    "supervision": "sozinho"
+  },
+  {
+    "id": "gelo-derrete",
+    "emoji": "🧊",
+    "text": "Põe um cubo de gelo num prato. Quanto tempo demora a derreter?",
+    "category": "ciência",
+    "supervision": "adulto"
+  },
+  {
+    "id": "procura-lua",
+    "emoji": "🌙",
+    "text": "Hoje à noite procura a Lua no céu. Como é a forma dela?",
+    "category": "natureza",
+    "supervision": "sozinho"
+  },
+  {
+    "id": "supermercado-2euros",
+    "emoji": "🛒",
+    "text": "No supermercado, encontra algo que custe menos de 2€.",
+    "category": "dinheiro",
+    "supervision": "adulto"
+  },
+  {
+    "id": "separar-meias",
+    "emoji": "🧦",
+    "text": "Separa as meias da roupa lavada por cores.",
+    "category": "vida-prática",
+    "supervision": "sozinho"
+  },
+  {
+    "id": "contar-passaros",
+    "emoji": "🐦",
+    "text": "Fica 5 minutos à janela. Quantos pássaros consegues ver?",
+    "category": "natureza",
+    "supervision": "sozinho"
+  },
+  {
+    "id": "3-palavras-livro",
+    "emoji": "📚",
+    "text": "Escolhe um livro e encontra 3 palavras que já sabes ler.",
+    "category": "leitura",
+    "supervision": "sozinho"
+  },
+  {
+    "id": "dobra-roupa",
+    "emoji": "👕",
+    "text": "Ajuda a dobrar 5 peças de roupa.",
+    "category": "vida-prática",
+    "supervision": "sozinho"
+  },
+  {
+    "id": "desenha-animal",
+    "emoji": "🎨",
+    "text": "Desenha um animal que ainda não existe. Dá-lhe um nome!",
+    "category": "criatividade",
+    "supervision": "sozinho"
+  },
+  {
+    "id": "salta-10",
+    "emoji": "🏃",
+    "text": "Dá 10 saltos e depois anda como um caranguejo até à porta.",
+    "category": "movimento",
+    "supervision": "sozinho"
+  },
+  {
+    "id": "objeto-vermelho",
+    "emoji": "🔴",
+    "text": "Corre e encontra 3 coisas vermelhas em casa.",
+    "category": "movimento",
+    "supervision": "sozinho"
+  },
+  {
+    "id": "bate-ritmo",
+    "emoji": "🥁",
+    "text": "Bate um ritmo com as mãos. Alguém em casa consegue repeti-lo?",
+    "category": "música",
+    "supervision": "sozinho"
+  },
+  {
+    "id": "ponte-papel",
+    "emoji": "🌉",
+    "text": "Constrói uma ponte de papel ou cartão entre duas cadeiras.",
+    "category": "engenharia",
+    "supervision": "sozinho"
+  },
+  {
+    "id": "flutua-afunda",
+    "emoji": "🛁",
+    "text": "No banho, descobre 3 objetos que flutuam e 3 que afundam.",
+    "category": "ciência",
+    "supervision": "adulto"
+  },
+  {
+    "id": "avo-brincadeira",
+    "emoji": "👴",
+    "text": "Pergunta a um avô ou avó que brincadeira fazia quando era pequeno/a.",
+    "category": "família",
+    "supervision": "sozinho"
+  },
+  {
+    "id": "arruma-mochila",
+    "emoji": "🎒",
+    "text": "Arruma sozinho/a a tua mochila para amanhã.",
+    "category": "vida-prática",
+    "supervision": "sozinho"
+  },
+  {
+    "id": "lanche-simples",
+    "emoji": "🥪",
+    "text": "Prepara um lanche simples (ex. sandes) com ajuda de um adulto.",
+    "category": "cozinha",
+    "supervision": "adulto"
+  },
+  {
+    "id": "conta-colheres",
+    "emoji": "🥄",
+    "text": "Ajuda a pôr a mesa e conta quantas colheres e garfos são precisos.",
+    "category": "cozinha",
+    "supervision": "sozinho"
+  },
+  {
+    "id": "planta-semente",
+    "emoji": "🌱",
+    "text": "Planta uma semente num copo com terra e rega-a. Observa-a todos os dias.",
+    "category": "natureza",
+    "supervision": "adulto"
+  },
+  {
+    "id": "atacadores",
+    "emoji": "👟",
+    "text": "Pratica atar os atacadores dos teus ténis sozinho/a.",
+    "category": "vida-prática",
+    "supervision": "sozinho"
+  },
+  {
+    "id": "formas-nuvens",
+    "emoji": "☁️",
+    "text": "Deita-te na relva ou senta-te à janela e observa as nuvens durante 5 minutos. Que formas consegues ver?",
+    "category": "natureza",
+    "supervision": "sozinho"
+  },
+  {
+    "id": "conta-carros",
+    "emoji": "🚗",
+    "text": "Com um adulto perto de uma rua, conta quantos carros vermelhos passam em 5 minutos.",
+    "category": "matemática",
+    "supervision": "adulto"
+  },
+  {
+    "id": "palavra-nova",
+    "emoji": "🗣️",
+    "text": "Pede a alguém da família para te ensinar uma palavra nova numa língua diferente.",
+    "category": "família",
+    "supervision": "sozinho"
+  },
+  {
+    "id": "aviao-papel",
+    "emoji": "✈️",
+    "text": "Faz um avião de papel e testa até onde consegue voar. Tenta melhorá-lo!",
+    "category": "engenharia",
+    "supervision": "sozinho"
+  },
+  {
+    "id": "separa-reciclagem",
+    "emoji": "♻️",
+    "text": "Com um adulto, separa o lixo de casa nos ecopontos certos: papel, plástico e vidro.",
+    "category": "vida-prática",
+    "supervision": "adulto"
+  },
+  {
+    "id": "nota-obrigado",
+    "emoji": "💌",
+    "text": "Escreve ou desenha um bilhete de agradecimento para alguém especial e entrega-lho.",
+    "category": "criatividade",
+    "supervision": "sozinho"
+  },
+  {
+    "id": "sombra-contorno",
+    "emoji": "🌗",
+    "text": "Num dia de sol, desenha o contorno da tua sombra no chão com giz. Como muda ao longo do dia?",
+    "category": "ciência",
+    "supervision": "sozinho"
+  },
+  {
+    "id": "letras-rua",
+    "emoji": "🚏",
+    "text": "Num passeio, encontra placas ou letreiros com 5 letras diferentes do alfabeto.",
+    "category": "letras",
+    "supervision": "adulto"
+  },
+  {
+    "id": "conta-moedas",
+    "emoji": "🪙",
+    "text": "Conta as moedas que encontrares num mealheiro ou gaveta. Quanto dinheiro é ao todo?",
+    "category": "dinheiro",
+    "supervision": "adulto"
+  },
+  {
+    "id": "salta-corda",
+    "emoji": "🪢",
+    "text": "Salta à corda 20 vezes seguidas sem parar. Consegues bater o teu recorde amanhã?",
+    "category": "movimento",
+    "supervision": "sozinho"
+  },
+  {
+    "id": "instrumento-caseiro",
+    "emoji": "🪇",
+    "text": "Com ajuda de um adulto, cria um instrumento musical com uma garrafa e arroz ou feijão.",
+    "category": "música",
+    "supervision": "adulto"
+  },
+  {
+    "id": "torre-copos",
+    "emoji": "🥤",
+    "text": "Constrói a torre mais alta que conseguires com copos de plástico. Quantos usaste?",
+    "category": "engenharia",
+    "supervision": "sozinho"
+  },
+  {
+    "id": "mapa-tesouro",
+    "emoji": "🗺️",
+    "text": "Desenha um mapa do tesouro da tua casa e esconde um \"tesouro\" para alguém encontrar.",
+    "category": "criatividade",
+    "supervision": "sozinho"
+  },
+  {
+    "id": "ajuda-receita",
+    "emoji": "🍳",
+    "text": "Ajuda um adulto a preparar uma receita simples e conta quantos ingredientes usaram.",
+    "category": "cozinha",
+    "supervision": "adulto"
+  },
+  {
+    "id": "imita-animais",
+    "emoji": "🐾",
+    "text": "Imita o som e o movimento de 5 animais diferentes. Alguém consegue adivinhar quais são?",
+    "category": "movimento",
+    "supervision": "sozinho"
+  }
 ]

@@ -103,5 +103,75 @@
     "emoji": "🥬",
     "isFact": false,
     "explanation": "Opinion! Tastes are personal — what's delicious to some may not be to others, and that's perfectly fine."
+  },
+  {
+    "id": "d16",
+    "statement": "Honey never spoils if stored properly.",
+    "emoji": "🍯",
+    "isFact": true,
+    "explanation": "That's a fact! Archaeologists have found honey in Egyptian tombs thousands of years old that was still good to eat, thanks to its low water content and acidity."
+  },
+  {
+    "id": "d17",
+    "statement": "Eating carrots lets you see in the dark.",
+    "emoji": "🥕",
+    "isFact": false,
+    "explanation": "That's a myth! Carrots have vitamin A, which is good for your eyes, but they don't give you night super-vision. This myth became famous during World War II."
+  },
+  {
+    "id": "d18",
+    "statement": "Reading books is more fun than watching cartoons.",
+    "emoji": "📖",
+    "isFact": false,
+    "explanation": "That's an opinion! Some people prefer reading, others prefer cartoons. There's no right answer — it depends on what each person enjoys."
+  },
+  {
+    "id": "d19",
+    "statement": "Octopuses have three hearts.",
+    "emoji": "🐙",
+    "isFact": true,
+    "explanation": "That's a fact! Two hearts pump blood to the gills, and the third pumps it to the rest of the body. You can verify it in marine biology books."
+  },
+  {
+    "id": "d20",
+    "statement": "If you swallow chewing gum, it stays in your stomach for 7 years.",
+    "emoji": "🍬",
+    "isFact": false,
+    "explanation": "That's a very widespread myth! Your body can't digest gum, but it passes through your digestive system like anything else that doesn't get digested, usually within a few days."
+  },
+  {
+    "id": "d21",
+    "statement": "Summer is the best season of the year.",
+    "emoji": "☀️",
+    "isFact": false,
+    "explanation": "That's an opinion! Some people love summer heat, others prefer winter cold or autumn colors. Preferences about seasons vary too."
+  },
+  {
+    "id": "d22",
+    "statement": "Portugal was the first country to reach India by sea from Europe.",
+    "emoji": "⛵",
+    "isFact": true,
+    "explanation": "That's a historical fact! Vasco da Gama reached India in 1498, sailing around Africa, and you can confirm this in history books."
+  },
+  {
+    "id": "d23",
+    "statement": "Sunlight takes about 8 minutes to reach Earth.",
+    "emoji": "☀️",
+    "isFact": true,
+    "explanation": "That's a fact! You can calculate it knowing the speed of light and the distance to the Sun — scientists always confirm the same number."
+  },
+  {
+    "id": "d24",
+    "statement": "A message you received says you'll win a free phone if you click a link. Should you believe it?",
+    "emoji": "📱",
+    "isFact": false,
+    "explanation": "Good instinct to question it! These messages are usually scams to steal your data or money. Never click those links by yourself — always show them to a trusted adult first."
+  },
+  {
+    "id": "d25",
+    "statement": "If you spend too much time on the computer, your eyes turn square.",
+    "emoji": "💻",
+    "isFact": false,
+    "explanation": "That's a myth and a joke! Spending a lot of time on screens can tire your eyes, but it doesn't change their shape. Still, it's important to take breaks."
   }
 ]

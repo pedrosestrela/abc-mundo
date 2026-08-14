@@ -1,24 +1,261 @@
 [
-  { "id": "folhas", "emoji": "🌳", "text": "到外面或窗边找3片不一样的树叶。", "category": "自然", "supervision": "自己" },
-  { "id": "letra-c", "emoji": "🔎", "text": "在家里找5个以字母C开头的东西。", "category": "字母", "supervision": "自己" },
-  { "id": "medir-mesa", "emoji": "📏", "text": "用你的脚步量一量厨房的桌子,一共几步?", "category": "数学", "supervision": "自己" },
-  { "id": "gelo-derrete", "emoji": "🧊", "text": "把一块冰放在盘子上,看看要多久才会融化。", "category": "科学", "supervision": "大人" },
-  { "id": "procura-lua", "emoji": "🌙", "text": "今晚在天上找月亮,它是什么形状的?", "category": "自然", "supervision": "自己" },
-  { "id": "supermercado-2euros", "emoji": "🛒", "text": "在超市里,找一样价格少于2欧元的东西。", "category": "金钱", "supervision": "大人" },
-  { "id": "separar-meias", "emoji": "🧦", "text": "把干净的袜子按颜色分类。", "category": "生活技能", "supervision": "自己" },
-  { "id": "contar-passaros", "emoji": "🐦", "text": "在窗边坐5分钟,你能看到几只鸟?", "category": "自然", "supervision": "自己" },
-  { "id": "3-palavras-livro", "emoji": "📚", "text": "选一本书,找出3个你已经会读的字。", "category": "阅读", "supervision": "自己" },
-  { "id": "dobra-roupa", "emoji": "👕", "text": "帮忙叠5件衣服。", "category": "生活技能", "supervision": "自己" },
-  { "id": "desenha-animal", "emoji": "🎨", "text": "画一只还不存在的动物,给它取个名字!", "category": "创意", "supervision": "自己" },
-  { "id": "salta-10", "emoji": "🏃", "text": "跳10下,然后像螃蟹一样走到门口。", "category": "运动", "supervision": "自己" },
-  { "id": "objeto-vermelho", "emoji": "🔴", "text": "跑一跑,在家里找3样红色的东西。", "category": "运动", "supervision": "自己" },
-  { "id": "bate-ritmo", "emoji": "🥁", "text": "用手拍一个节奏,家里有人能重复吗?", "category": "音乐", "supervision": "自己" },
-  { "id": "ponte-papel", "emoji": "🌉", "text": "用纸或纸板在两把椅子之间搭一座桥。", "category": "工程", "supervision": "自己" },
-  { "id": "flutua-afunda", "emoji": "🛁", "text": "在浴缸里,找出3样会浮起来和3样会沉下去的东西。", "category": "科学", "supervision": "大人" },
-  { "id": "avo-brincadeira", "emoji": "👴", "text": "问问爷爷奶奶小时候玩什么游戏。", "category": "家庭", "supervision": "自己" },
-  { "id": "arruma-mochila", "emoji": "🎒", "text": "自己整理明天要用的书包。", "category": "生活技能", "supervision": "自己" },
-  { "id": "lanche-simples", "emoji": "🥪", "text": "在大人的帮助下准备一份简单的点心(例如三明治)。", "category": "烹饪", "supervision": "大人" },
-  { "id": "conta-colheres", "emoji": "🥄", "text": "帮忙摆餐具,数一数需要几个勺子和叉子。", "category": "烹饪", "supervision": "自己" },
-  { "id": "planta-semente", "emoji": "🌱", "text": "把种子种在装了泥土的杯子里并浇水,每天观察它。", "category": "自然", "supervision": "大人" },
-  { "id": "atacadores", "emoji": "👟", "text": "练习自己系鞋带。", "category": "生活技能", "supervision": "自己" }
+  {
+    "id": "folhas",
+    "emoji": "🌳",
+    "text": "到外面或窗边找3片不一样的树叶。",
+    "category": "自然",
+    "supervision": "自己"
+  },
+  {
+    "id": "letra-c",
+    "emoji": "🔎",
+    "text": "在家里找5个以字母C开头的东西。",
+    "category": "字母",
+    "supervision": "自己"
+  },
+  {
+    "id": "medir-mesa",
+    "emoji": "📏",
+    "text": "用你的脚步量一量厨房的桌子,一共几步?",
+    "category": "数学",
+    "supervision": "自己"
+  },
+  {
+    "id": "gelo-derrete",
+    "emoji": "🧊",
+    "text": "把一块冰放在盘子上,看看要多久才会融化。",
+    "category": "科学",
+    "supervision": "大人"
+  },
+  {
+    "id": "procura-lua",
+    "emoji": "🌙",
+    "text": "今晚在天上找月亮,它是什么形状的?",
+    "category": "自然",
+    "supervision": "自己"
+  },
+  {
+    "id": "supermercado-2euros",
+    "emoji": "🛒",
+    "text": "在超市里,找一样价格少于2欧元的东西。",
+    "category": "金钱",
+    "supervision": "大人"
+  },
+  {
+    "id": "separar-meias",
+    "emoji": "🧦",
+    "text": "把干净的袜子按颜色分类。",
+    "category": "生活技能",
+    "supervision": "自己"
+  },
+  {
+    "id": "contar-passaros",
+    "emoji": "🐦",
+    "text": "在窗边坐5分钟,你能看到几只鸟?",
+    "category": "自然",
+    "supervision": "自己"
+  },
+  {
+    "id": "3-palavras-livro",
+    "emoji": "📚",
+    "text": "选一本书,找出3个你已经会读的字。",
+    "category": "阅读",
+    "supervision": "自己"
+  },
+  {
+    "id": "dobra-roupa",
+    "emoji": "👕",
+    "text": "帮忙叠5件衣服。",
+    "category": "生活技能",
+    "supervision": "自己"
+  },
+  {
+    "id": "desenha-animal",
+    "emoji": "🎨",
+    "text": "画一只还不存在的动物,给它取个名字!",
+    "category": "创意",
+    "supervision": "自己"
+  },
+  {
+    "id": "salta-10",
+    "emoji": "🏃",
+    "text": "跳10下,然后像螃蟹一样走到门口。",
+    "category": "运动",
+    "supervision": "自己"
+  },
+  {
+    "id": "objeto-vermelho",
+    "emoji": "🔴",
+    "text": "跑一跑,在家里找3样红色的东西。",
+    "category": "运动",
+    "supervision": "自己"
+  },
+  {
+    "id": "bate-ritmo",
+    "emoji": "🥁",
+    "text": "用手拍一个节奏,家里有人能重复吗?",
+    "category": "音乐",
+    "supervision": "自己"
+  },
+  {
+    "id": "ponte-papel",
+    "emoji": "🌉",
+    "text": "用纸或纸板在两把椅子之间搭一座桥。",
+    "category": "工程",
+    "supervision": "自己"
+  },
+  {
+    "id": "flutua-afunda",
+    "emoji": "🛁",
+    "text": "在浴缸里,找出3样会浮起来和3样会沉下去的东西。",
+    "category": "科学",
+    "supervision": "大人"
+  },
+  {
+    "id": "avo-brincadeira",
+    "emoji": "👴",
+    "text": "问问爷爷奶奶小时候玩什么游戏。",
+    "category": "家庭",
+    "supervision": "自己"
+  },
+  {
+    "id": "arruma-mochila",
+    "emoji": "🎒",
+    "text": "自己整理明天要用的书包。",
+    "category": "生活技能",
+    "supervision": "自己"
+  },
+  {
+    "id": "lanche-simples",
+    "emoji": "🥪",
+    "text": "在大人的帮助下准备一份简单的点心(例如三明治)。",
+    "category": "烹饪",
+    "supervision": "大人"
+  },
+  {
+    "id": "conta-colheres",
+    "emoji": "🥄",
+    "text": "帮忙摆餐具,数一数需要几个勺子和叉子。",
+    "category": "烹饪",
+    "supervision": "自己"
+  },
+  {
+    "id": "planta-semente",
+    "emoji": "🌱",
+    "text": "把种子种在装了泥土的杯子里并浇水,每天观察它。",
+    "category": "自然",
+    "supervision": "大人"
+  },
+  {
+    "id": "atacadores",
+    "emoji": "👟",
+    "text": "练习自己系鞋带。",
+    "category": "生活技能",
+    "supervision": "自己"
+  },
+  {
+    "id": "formas-nuvens",
+    "emoji": "☁️",
+    "text": "躺在草地上或坐在窗边,观察云朵5分钟,你能看到什么形状?",
+    "category": "自然",
+    "supervision": "自己"
+  },
+  {
+    "id": "conta-carros",
+    "emoji": "🚗",
+    "text": "和大人一起在马路边,数一数5分钟内有多少辆红色的车经过。",
+    "category": "数学",
+    "supervision": "大人"
+  },
+  {
+    "id": "palavra-nova",
+    "emoji": "🗣️",
+    "text": "请一位家人教你一个其他语言的新单词。",
+    "category": "家庭",
+    "supervision": "自己"
+  },
+  {
+    "id": "aviao-papel",
+    "emoji": "✈️",
+    "text": "折一架纸飞机,试试它能飞多远,再想办法让它飞得更远!",
+    "category": "工程",
+    "supervision": "自己"
+  },
+  {
+    "id": "separa-reciclagem",
+    "emoji": "♻️",
+    "text": "和大人一起把家里的垃圾分类放进正确的回收箱:纸张、塑料和玻璃。",
+    "category": "生活技能",
+    "supervision": "大人"
+  },
+  {
+    "id": "nota-obrigado",
+    "emoji": "💌",
+    "text": "写一张或画一张感谢卡给一个特别的人,并送给他/她。",
+    "category": "创意",
+    "supervision": "自己"
+  },
+  {
+    "id": "sombra-contorno",
+    "emoji": "🌗",
+    "text": "在晴天用粉笔描出你影子的轮廓,看看它在一天中是怎么变化的。",
+    "category": "科学",
+    "supervision": "自己"
+  },
+  {
+    "id": "letras-rua",
+    "emoji": "🚏",
+    "text": "散步时,找出招牌或标志上5个不同的字母。",
+    "category": "字母",
+    "supervision": "大人"
+  },
+  {
+    "id": "conta-moedas",
+    "emoji": "🪙",
+    "text": "数一数储钱罐或抽屉里的硬币,一共有多少钱?",
+    "category": "金钱",
+    "supervision": "大人"
+  },
+  {
+    "id": "salta-corda",
+    "emoji": "🪢",
+    "text": "连续跳绳20下不停,明天能打破自己的记录吗?",
+    "category": "运动",
+    "supervision": "自己"
+  },
+  {
+    "id": "instrumento-caseiro",
+    "emoji": "🪇",
+    "text": "在大人的帮助下,用瓶子和米粒或豆子做一个乐器。",
+    "category": "音乐",
+    "supervision": "大人"
+  },
+  {
+    "id": "torre-copos",
+    "emoji": "🥤",
+    "text": "用塑料杯搭一座尽可能高的塔,你用了多少个杯子?",
+    "category": "工程",
+    "supervision": "自己"
+  },
+  {
+    "id": "mapa-tesouro",
+    "emoji": "🗺️",
+    "text": "画一张家里的藏宝图,藏一个\"宝藏\"让别人来找。",
+    "category": "创意",
+    "supervision": "自己"
+  },
+  {
+    "id": "ajuda-receita",
+    "emoji": "🍳",
+    "text": "帮大人做一道简单的菜,数一数用了多少种食材。",
+    "category": "烹饪",
+    "supervision": "大人"
+  },
+  {
+    "id": "imita-animais",
+    "emoji": "🐾",
+    "text": "模仿5种不同动物的声音和动作,看看有没有人能猜出是什么动物。",
+    "category": "运动",
+    "supervision": "自己"
+  }
 ]
