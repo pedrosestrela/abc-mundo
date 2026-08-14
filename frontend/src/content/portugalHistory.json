@@ -1,0 +1,462 @@
+[
+  {
+    "id": "prehistoria",
+    "year": "-400000",
+    "emoji": "🪨",
+    "title": {
+      "pt": "Pré-História na Península Ibérica",
+      "en": "Prehistory in the Iberian Peninsula",
+      "de": "Vorgeschichte auf der Iberischen Halbinsel",
+      "fr": "La préhistoire dans la péninsule Ibérique",
+      "es": "La prehistoria en la península ibérica",
+      "it": "La preistoria nella penisola iberica",
+      "zh": "伊比利亚半岛的史前时代"
+    },
+    "description": {
+      "pt": "Há milhares de anos, os primeiros seres humanos já viviam no território que hoje é Portugal, caçando, apanhando plantas e pintando em grutas. Um dos locais mais famosos é o Vale do Côa, com desenhos de animais feitos há mais de 20 mil anos.",
+      "en": "Thousands of years ago, the first humans already lived in the territory that is now Portugal, hunting, gathering plants and painting on cave and rock walls. One of the most famous sites is the Côa Valley, with animal drawings made more than 20,000 years ago.",
+      "de": "Vor Tausenden von Jahren lebten die ersten Menschen bereits in dem Gebiet, das heute Portugal ist. Sie jagten, sammelten Pflanzen und malten an Höhlen- und Felswände. Einer der berühmtesten Orte ist das Côa-Tal mit Tierzeichnungen, die vor mehr als 20.000 Jahren entstanden.",
+      "fr": "Il y a des milliers d'années, les premiers humains vivaient déjà sur le territoire qui est aujourd'hui le Portugal, chassant, cueillant des plantes et peignant sur les parois des grottes et des rochers. L'un des sites les plus célèbres est la vallée du Côa, avec des dessins d'animaux réalisés il y a plus de 20 000 ans.",
+      "es": "Hace miles de años, los primeros seres humanos ya vivían en el territorio que hoy es Portugal, cazando, recolectando plantas y pintando en cuevas y rocas. Uno de los lugares más famosos es el valle del Côa, con dibujos de animales hechos hace más de 20.000 años.",
+      "it": "Migliaia di anni fa, i primi esseri umani vivevano già nel territorio che oggi è il Portogallo, cacciando, raccogliendo piante e dipingendo su pareti di grotte e rocce. Uno dei siti più famosi è la Valle del Côa, con disegni di animali fatti più di 20.000 anni fa.",
+      "zh": "几千年前，最早的人类就已经生活在如今葡萄牙所在的这片土地上，他们狩猎、采集植物，并在洞穴和岩壁上作画。最著名的遗址之一是科阿河谷，那里有两万多年前绘制的动物图画。"
+    }
+  },
+  {
+    "id": "lusitanos-celtas",
+    "year": "-1000",
+    "emoji": "🛡️",
+    "title": {
+      "pt": "Povos Antigos: Lusitanos e Celtas",
+      "en": "Ancient Peoples: Lusitanians and Celts",
+      "de": "Alte Völker: Lusitanier und Kelten",
+      "fr": "Peuples anciens : Lusitaniens et Celtes",
+      "es": "Pueblos antiguos: lusitanos y celtas",
+      "it": "Popoli antichi: lusitani e celti",
+      "zh": "古老的民族：卢西塔尼亚人和凯尔特人"
+    },
+    "description": {
+      "pt": "Antes dos romanos chegarem, viviam aqui vários povos, como os Lusitanos e povos de origem celta. Os Lusitanos ficaram famosos pela resistência do seu chefe Viriato contra os romanos, no século II a.C.",
+      "en": "Before the Romans arrived, several peoples lived here, such as the Lusitanians and peoples of Celtic origin. The Lusitanians became famous for the resistance of their leader Viriathus against the Romans, in the 2nd century BC.",
+      "de": "Bevor die Römer ankamen, lebten hier verschiedene Völker, wie die Lusitanier und Völker keltischen Ursprungs. Die Lusitanier wurden berühmt für den Widerstand ihres Anführers Viriatus gegen die Römer im 2. Jahrhundert v. Chr.",
+      "fr": "Avant l'arrivée des Romains, plusieurs peuples vivaient ici, comme les Lusitaniens et des peuples d'origine celtique. Les Lusitaniens sont devenus célèbres pour la résistance de leur chef Viriathe contre les Romains, au IIe siècle avant J.-C.",
+      "es": "Antes de que llegaran los romanos, aquí vivían varios pueblos, como los lusitanos y pueblos de origen celta. Los lusitanos se hicieron famosos por la resistencia de su jefe Viriato contra los romanos, en el siglo II a.C.",
+      "it": "Prima dell'arrivo dei romani, qui vivevano vari popoli, come i lusitani e popoli di origine celtica. I lusitani divennero famosi per la resistenza del loro capo Viriato contro i romani, nel II secolo a.C.",
+      "zh": "在罗马人到来之前，这里生活着卢西塔尼亚人和凯尔特起源的各个民族。卢西塔尼亚人因其首领维里亚图斯在公元前2世纪抵抗罗马人而闻名。"
+    }
+  },
+  {
+    "id": "romanos",
+    "year": "-138",
+    "emoji": "🏛️",
+    "title": {
+      "pt": "Os Romanos",
+      "en": "The Romans",
+      "de": "Die Römer",
+      "fr": "Les Romains",
+      "es": "Los romanos",
+      "it": "I romani",
+      "zh": "罗马人"
+    },
+    "description": {
+      "pt": "Os romanos conquistaram esta região e ficaram cerca de 600 anos. Construíram estradas, pontes, templos e cidades, e trouxeram a língua latina, que deu origem ao português. Ainda hoje há ruínas romanas em vários locais, como Conímbriga.",
+      "en": "The Romans conquered this region and stayed for about 600 years. They built roads, bridges, temples and cities, and brought the Latin language, which gave rise to Portuguese. Roman ruins can still be found today in several places, such as Conímbriga.",
+      "de": "Die Römer eroberten diese Region und blieben etwa 600 Jahre. Sie bauten Straßen, Brücken, Tempel und Städte und brachten die lateinische Sprache, aus der das Portugiesische entstand. Noch heute gibt es römische Ruinen an vielen Orten, wie in Conímbriga.",
+      "fr": "Les Romains ont conquis cette région et y sont restés environ 600 ans. Ils ont construit des routes, des ponts, des temples et des villes, et ont apporté la langue latine, qui a donné naissance au portugais. Il existe encore aujourd'hui des ruines romaines à plusieurs endroits, comme à Conímbriga.",
+      "es": "Los romanos conquistaron esta región y permanecieron unos 600 años. Construyeron carreteras, puentes, templos y ciudades, y trajeron la lengua latina, que dio origen al portugués. Todavía hoy hay ruinas romanas en varios lugares, como Conímbriga.",
+      "it": "I romani conquistarono questa regione e vi rimasero per circa 600 anni. Costruirono strade, ponti, templi e città, e portarono la lingua latina, da cui nacque il portoghese. Ancora oggi si trovano rovine romane in diversi luoghi, come a Conímbriga.",
+      "zh": "罗马人征服了这片地区，统治了约六百年。他们修建了道路、桥梁、神庙和城市，还带来了拉丁语，葡萄牙语正是由此而来。如今在科尼姆布里加等地仍能看到罗马遗迹。"
+    }
+  },
+  {
+    "id": "visigodos",
+    "year": "411",
+    "emoji": "⚔️",
+    "title": {
+      "pt": "Os Visigodos",
+      "en": "The Visigoths",
+      "de": "Die Westgoten",
+      "fr": "Les Wisigoths",
+      "es": "Los visigodos",
+      "it": "I visigoti",
+      "zh": "西哥特人"
+    },
+    "description": {
+      "pt": "Quando o Império Romano ficou mais fraco, povos germânicos como os Suevos e depois os Visigodos ocuparam a Península Ibérica. Os Visigodos criaram o seu próprio reino e governaram durante quase 300 anos.",
+      "en": "As the Roman Empire grew weaker, Germanic peoples such as the Suebi and later the Visigoths occupied the Iberian Peninsula. The Visigoths created their own kingdom and ruled for almost 300 years.",
+      "de": "Als das Römische Reich schwächer wurde, besetzten germanische Völker wie die Sueben und später die Westgoten die Iberische Halbinsel. Die Westgoten gründeten ihr eigenes Königreich und herrschten fast 300 Jahre lang.",
+      "fr": "Alors que l'Empire romain s'affaiblissait, des peuples germaniques comme les Suèves puis les Wisigoths ont occupé la péninsule Ibérique. Les Wisigoths ont créé leur propre royaume et ont régné pendant près de 300 ans.",
+      "es": "Cuando el Imperio Romano se debilitó, pueblos germánicos como los suevos y después los visigodos ocuparon la península ibérica. Los visigodos crearon su propio reino y gobernaron durante casi 300 años.",
+      "it": "Quando l'Impero Romano si indebolì, popoli germanici come gli Svevi e poi i Visigoti occuparono la penisola iberica. I Visigoti crearono il proprio regno e governarono per quasi 300 anni.",
+      "zh": "随着罗马帝国日渐衰弱，苏维汇人以及后来的西哥特人占据了伊比利亚半岛。西哥特人建立了自己的王国，统治了近三百年。"
+    }
+  },
+  {
+    "id": "al-andalus",
+    "year": "711",
+    "emoji": "🌙",
+    "title": {
+      "pt": "Presença Islâmica (Al-Andalus)",
+      "en": "Islamic Presence (Al-Andalus)",
+      "de": "Islamische Präsenz (Al-Andalus)",
+      "fr": "Présence islamique (Al-Andalus)",
+      "es": "Presencia islámica (Al-Ándalus)",
+      "it": "Presenza islamica (Al-Andalus)",
+      "zh": "伊斯兰统治时期（安达卢斯）"
+    },
+    "description": {
+      "pt": "Em 711, exércitos muçulmanos vindos do Norte de África conquistaram quase toda a Península Ibérica, que passou a chamar-se Al-Andalus. Durante séculos, viveram aqui muçulmanos, cristãos e judeus, e ficaram-nos palavras árabes que ainda usamos hoje, como \"almofada\" ou \"azeite\".",
+      "en": "In 711, Muslim armies from North Africa conquered almost the entire Iberian Peninsula, which became known as Al-Andalus. For centuries, Muslims, Christians and Jews lived here together, and many Arabic words we still use today, like \"almofada\" (pillow) or \"azeite\" (olive oil), come from this time.",
+      "de": "Im Jahr 711 eroberten muslimische Heere aus Nordafrika fast die gesamte Iberische Halbinsel, die fortan Al-Andalus genannt wurde. Jahrhundertelang lebten hier Muslime, Christen und Juden zusammen, und viele arabische Wörter, die wir noch heute verwenden, wie „almofada“ (Kissen) oder „azeite“ (Olivenöl), stammen aus dieser Zeit.",
+      "fr": "En 711, des armées musulmanes venues d'Afrique du Nord ont conquis presque toute la péninsule Ibérique, qui a pris le nom d'Al-Andalus. Pendant des siècles, musulmans, chrétiens et juifs y ont vécu ensemble, et de nombreux mots arabes que nous utilisons encore aujourd'hui, comme « almofada » (coussin) ou « azeite » (huile d'olive), datent de cette époque.",
+      "es": "En 711, ejércitos musulmanes procedentes del norte de África conquistaron casi toda la península ibérica, que pasó a llamarse Al-Ándalus. Durante siglos, musulmanes, cristianos y judíos vivieron aquí juntos, y de esa época vienen palabras árabes que aún usamos hoy, como \"almohada\" o \"aceite\".",
+      "it": "Nel 711, eserciti musulmani provenienti dal Nord Africa conquistarono quasi tutta la penisola iberica, che divenne nota come Al-Andalus. Per secoli, musulmani, cristiani ed ebrei vissero qui insieme, e molte parole arabe che usiamo ancora oggi, come \"cuscino\" o legate all'olio, risalgono a questo periodo.",
+      "zh": "公元711年，来自北非的穆斯林军队征服了伊比利亚半岛的大部分地区，此地被称为安达卢斯。此后数百年间，穆斯林、基督徒和犹太人共同生活在这里，如今我们仍在使用的一些词语（如“枕头”“橄榄油”对应的葡语词）便源自那个时期的阿拉伯语。"
+    }
+  },
+  {
+    "id": "condado-portucalense",
+    "year": "1096",
+    "emoji": "🏰",
+    "title": {
+      "pt": "O Condado Portucalense",
+      "en": "The County of Portucale",
+      "de": "Die Grafschaft Portucale",
+      "fr": "Le comté de Portucale",
+      "es": "El condado Portucalense",
+      "it": "La Contea di Portucale",
+      "zh": "波图卡伦西伯爵领地"
+    },
+    "description": {
+      "pt": "Durante a Reconquista cristã, formou-se um pequeno território chamado Condado Portucalense, com centro perto do rio Douro. Foi dado por um rei de Leão e Castela ao cavaleiro D. Henrique de Borgonha, em troca da sua ajuda a lutar contra os muçulmanos.",
+      "en": "During the Christian Reconquest, a small territory called the County of Portucale was formed, centred near the Douro River. It was given by a king of León and Castile to the knight Henry of Burgundy, in exchange for his help fighting the Muslims.",
+      "de": "Während der christlichen Reconquista entstand ein kleines Gebiet namens Grafschaft Portucale, mit einem Zentrum in der Nähe des Douro. Es wurde von einem König von León und Kastilien dem Ritter Heinrich von Burgund im Austausch für seine Hilfe im Kampf gegen die Muslime übergeben.",
+      "fr": "Pendant la Reconquête chrétienne, un petit territoire appelé comté de Portucale s'est formé, centré près du fleuve Douro. Il fut donné par un roi de León et de Castille au chevalier Henri de Bourgogne, en échange de son aide dans la lutte contre les musulmans.",
+      "es": "Durante la Reconquista cristiana se formó un pequeño territorio llamado condado Portucalense, centrado cerca del río Duero. Fue entregado por un rey de León y Castilla al caballero Enrique de Borgoña, a cambio de su ayuda en la lucha contra los musulmanes.",
+      "it": "Durante la Reconquista cristiana si formò un piccolo territorio chiamato Contea di Portucale, con centro vicino al fiume Douro. Fu dato da un re di León e Castiglia al cavaliere Enrico di Borgogna, in cambio del suo aiuto nella lotta contro i musulmani.",
+      "zh": "在基督教收复失地运动期间，杜罗河附近形成了一个名为“波图卡伦西伯爵领地”的小territory。莱昂和卡斯蒂利亚国王将其赐予骑士勃艮第的恩里克，以酬谢他协助对抗穆斯林。"
+    }
+  },
+  {
+    "id": "afonso-henriques",
+    "year": "1143",
+    "emoji": "👑",
+    "title": {
+      "pt": "D. Afonso Henriques e o Nascimento de Portugal",
+      "en": "King Afonso Henriques and the Birth of Portugal",
+      "de": "König Afonso Henriques und die Geburt Portugals",
+      "fr": "Afonso Henriques et la naissance du Portugal",
+      "es": "Afonso Henriques y el nacimiento de Portugal",
+      "it": "Alfonso Henriques e la nascita del Portogallo",
+      "zh": "阿方索·恩里克斯与葡萄牙的诞生"
+    },
+    "description": {
+      "pt": "O filho de D. Henrique, chamado Afonso Henriques, lutou pela independência do território e declarou-se o primeiro rei de Portugal. Em 1143, pelo Tratado de Zamora, o reino de Portugal foi reconhecido como independente.",
+      "en": "Henry's son, Afonso Henriques, fought for the territory's independence and declared himself the first King of Portugal. In 1143, through the Treaty of Zamora, the Kingdom of Portugal was recognised as independent.",
+      "de": "Heinrichs Sohn, Afonso Henriques, kämpfte für die Unabhängigkeit des Gebiets und erklärte sich selbst zum ersten König von Portugal. Im Jahr 1143 wurde das Königreich Portugal durch den Vertrag von Zamora als unabhängig anerkannt.",
+      "fr": "Le fils d'Henri, Afonso Henriques, s'est battu pour l'indépendance du territoire et s'est proclamé premier roi du Portugal. En 1143, par le traité de Zamora, le royaume du Portugal fut reconnu comme indépendant.",
+      "es": "El hijo de Enrique, Afonso Henriques, luchó por la independencia del territorio y se proclamó primer rey de Portugal. En 1143, mediante el Tratado de Zamora, el reino de Portugal fue reconocido como independiente.",
+      "it": "Il figlio di Enrico, Alfonso Henriques, combatté per l'indipendenza del territorio e si proclamò primo re del Portogallo. Nel 1143, con il Trattato di Zamora, il Regno del Portogallo fu riconosciuto come indipendente.",
+      "zh": "恩里克的儿子阿方索·恩里克斯为领土独立而战，并自立为葡萄牙第一位国王。1143年，通过《萨莫拉条约》，葡萄牙王国的独立地位得到承认。"
+    }
+  },
+  {
+    "id": "reconquista",
+    "year": "1249",
+    "emoji": "🗡️",
+    "title": {
+      "pt": "O Fim da Reconquista",
+      "en": "The End of the Reconquest",
+      "de": "Das Ende der Reconquista",
+      "fr": "La fin de la Reconquête",
+      "es": "El fin de la Reconquista",
+      "it": "La fine della Reconquista",
+      "zh": "收复失地运动的结束"
+    },
+    "description": {
+      "pt": "Ao longo de vários séculos, os reis cristãos foram conquistando território aos reinos muçulmanos, região a região. Em 1249, com a conquista do Algarve pelo rei D. Afonso III, Portugal ficou com as fronteiras muito parecidas às de hoje.",
+      "en": "Over several centuries, Christian kings gradually took territory from Muslim kingdoms, region by region. In 1249, with the conquest of the Algarve by King Afonso III, Portugal's borders became very similar to today's.",
+      "de": "Im Laufe mehrerer Jahrhunderte eroberten christliche Könige Gebiet für Gebiet von den muslimischen Königreichen zurück. Im Jahr 1249, mit der Eroberung der Algarve durch König Afonso III., erhielt Portugal Grenzen, die den heutigen sehr ähnlich sind.",
+      "fr": "Au cours de plusieurs siècles, les rois chrétiens ont progressivement conquis des territoires aux royaumes musulmans, région par région. En 1249, avec la conquête de l'Algarve par le roi Afonso III, les frontières du Portugal sont devenues très proches de celles d'aujourd'hui.",
+      "es": "A lo largo de varios siglos, los reyes cristianos fueron conquistando territorio a los reinos musulmanes, región a región. En 1249, con la conquista del Algarve por el rey Afonso III, Portugal quedó con fronteras muy parecidas a las de hoy.",
+      "it": "Nel corso di diversi secoli, i re cristiani conquistarono territorio ai regni musulmani, regione dopo regione. Nel 1249, con la conquista dell'Algarve da parte del re Alfonso III, il Portogallo ottenne confini molto simili a quelli attuali.",
+      "zh": "在几个世纪的时间里，基督教国王们逐步从穆斯林王国手中夺回一个又一个地区。1249年，阿方索三世国王征服阿尔加维地区后，葡萄牙的疆界已与今天非常相似。"
+    }
+  },
+  {
+    "id": "dom-dinis",
+    "year": "1279",
+    "emoji": "🌾",
+    "title": {
+      "pt": "D. Dinis, o Rei Lavrador",
+      "en": "King Dinis, the Farmer King",
+      "de": "König Dinis, der Bauernkönig",
+      "fr": "Le roi Dinis, le roi laboureur",
+      "es": "El rey Dinis, el rey labrador",
+      "it": "Il re Dinis, il re contadino",
+      "zh": "农夫王迪尼斯"
+    },
+    "description": {
+      "pt": "D. Dinis foi um rei importante que mandou plantar florestas, incentivou a agricultura e fundou a primeira universidade portuguesa, em 1290. Também tornou o português a língua oficial dos documentos do reino, em vez do latim.",
+      "en": "Dinis was an important king who ordered forests to be planted, encouraged farming, and founded the first Portuguese university in 1290. He also made Portuguese the official language of the kingdom's documents, instead of Latin.",
+      "de": "Dinis war ein wichtiger König, der die Bepflanzung von Wäldern anordnete, die Landwirtschaft förderte und 1290 die erste portugiesische Universität gründete. Außerdem machte er Portugiesisch zur offiziellen Sprache der Urkunden des Königreichs, anstelle von Latein.",
+      "fr": "Dinis fut un roi important qui fit planter des forêts, encouragea l'agriculture et fonda la première université portugaise en 1290. Il fit également du portugais la langue officielle des documents du royaume, à la place du latin.",
+      "es": "Dinis fue un rey importante que mandó plantar bosques, impulsó la agricultura y fundó la primera universidad portuguesa en 1290. También convirtió el portugués en la lengua oficial de los documentos del reino, en lugar del latín.",
+      "it": "Dinis fu un re importante che fece piantare foreste, incoraggiò l'agricoltura e fondò la prima università portoghese nel 1290. Rese inoltre il portoghese la lingua ufficiale dei documenti del regno, al posto del latino.",
+      "zh": "迪尼斯是一位重要的国王，他下令植树造林、鼓励农业发展，并于1290年创办了葡萄牙第一所大学。他还将葡萄牙语定为王国文书的官方语言，取代了拉丁语。"
+    }
+  },
+  {
+    "id": "crise-1383",
+    "year": "1383",
+    "emoji": "⚖️",
+    "title": {
+      "pt": "A Crise de 1383-85",
+      "en": "The 1383-85 Crisis",
+      "de": "Die Krise von 1383-85",
+      "fr": "La crise de 1383-85",
+      "es": "La crisis de 1383-85",
+      "it": "La crisi del 1383-85",
+      "zh": "1383—1385年危机"
+    },
+    "description": {
+      "pt": "Quando o rei D. Fernando morreu sem deixar um filho homem, houve uma disputa sobre quem devia governar Portugal, incluindo o rei de Castela. O povo apoiou D. João, Mestre de Avis, que venceu a Batalha de Aljubarrota em 1385 e garantiu a independência de Portugal.",
+      "en": "When King Fernando died without leaving a son, there was a dispute over who should rule Portugal, including the King of Castile. The people supported John, Master of Aviz, who won the Battle of Aljubarrota in 1385 and secured Portugal's independence.",
+      "de": "Als König Fernando starb, ohne einen Sohn zu hinterlassen, kam es zu einem Streit darüber, wer Portugal regieren sollte, darunter auch der König von Kastilien. Das Volk unterstützte Johann, den Meister von Avis, der 1385 die Schlacht von Aljubarrota gewann und Portugals Unabhängigkeit sicherte.",
+      "fr": "Lorsque le roi Fernando mourut sans laisser de fils, une dispute éclata pour savoir qui devait gouverner le Portugal, y compris le roi de Castille. Le peuple soutint Jean, maître d'Avis, qui remporta la bataille d'Aljubarrota en 1385 et assura l'indépendance du Portugal.",
+      "es": "Cuando el rey Fernando murió sin dejar un hijo varón, hubo una disputa sobre quién debía gobernar Portugal, incluido el rey de Castilla. El pueblo apoyó a Juan, Maestre de Avís, que ganó la batalla de Aljubarrota en 1385 y aseguró la independencia de Portugal.",
+      "it": "Quando il re Fernando morì senza lasciare un figlio maschio, sorse una disputa su chi dovesse governare il Portogallo, incluso il re di Castiglia. Il popolo sostenne Giovanni, Maestro di Avis, che vinse la battaglia di Aljubarrota nel 1385 e garantì l'indipendenza del Portogallo.",
+      "zh": "费尔南多国王去世后没有留下儿子，由谁统治葡萄牙引发了争议，卡斯蒂利亚国王也参与其中。民众支持阿维什骑士团团长若昂，他在1385年的阿尔茹巴罗塔战役中获胜，确保了葡萄牙的独立。"
+    }
+  },
+  {
+    "id": "descobrimentos",
+    "year": "1415",
+    "emoji": "⛵",
+    "title": {
+      "pt": "Os Descobrimentos",
+      "en": "The Age of Discoveries",
+      "de": "Das Zeitalter der Entdeckungen",
+      "fr": "Les Grandes Découvertes",
+      "es": "Los Descubrimientos",
+      "it": "Le Grandi Scoperte",
+      "zh": "大航海时代"
+    },
+    "description": {
+      "pt": "A partir do Infante D. Henrique, os portugueses começaram a explorar os oceanos com caravelas cada vez mais longe: contornaram África, e Vasco da Gama chegou à Índia em 1498, e Pedro Álvares Cabral chegou ao Brasil em 1500. Foi uma época de grandes descobertas, mas também trouxe grande sofrimento a muitos povos, que foram dominados, escravizados ou perderam as suas terras.",
+      "en": "Starting with Prince Henry the Navigator, the Portuguese began exploring the oceans in caravels, going ever further: they sailed around Africa, Vasco da Gama reached India in 1498, and Pedro Álvares Cabral reached Brazil in 1500. It was a time of great discoveries, but it also brought great suffering to many peoples, who were dominated, enslaved, or lost their lands.",
+      "de": "Beginnend mit Heinrich dem Seefahrer erkundeten die Portugiesen mit Karavellen die Ozeane, immer weiter: Sie umsegelten Afrika, Vasco da Gama erreichte 1498 Indien, und Pedro Álvares Cabral erreichte 1500 Brasilien. Es war eine Zeit großer Entdeckungen, brachte aber auch großes Leid für viele Völker, die unterworfen, versklavt oder ihres Landes beraubt wurden.",
+      "fr": "À partir de l'infant Henri le Navigateur, les Portugais ont commencé à explorer les océans avec des caravelles, toujours plus loin : ils ont contourné l'Afrique, Vasco de Gama a atteint l'Inde en 1498, et Pedro Álvares Cabral a atteint le Brésil en 1500. Ce fut une époque de grandes découvertes, mais elle a aussi apporté beaucoup de souffrance à de nombreux peuples, dominés, réduits en esclavage ou dépossédés de leurs terres.",
+      "es": "A partir del infante Enrique el Navegante, los portugueses comenzaron a explorar los océanos con carabelas cada vez más lejos: bordearon África, Vasco da Gama llegó a la India en 1498 y Pedro Álvares Cabral llegó a Brasil en 1500. Fue una época de grandes descubrimientos, pero también trajo gran sufrimiento a muchos pueblos, que fueron dominados, esclavizados o perdieron sus tierras.",
+      "it": "A partire dall'infante Enrico il Navigatore, i portoghesi iniziarono a esplorare gli oceani con le caravelle, sempre più lontano: circumnavigarono l'Africa, Vasco da Gama raggiunse l'India nel 1498 e Pedro Álvares Cabral raggiunse il Brasile nel 1500. Fu un'epoca di grandi scoperte, ma portò anche grande sofferenza a molti popoli, che furono dominati, ridotti in schiavitù o persero le loro terre.",
+      "zh": "从航海家恩里克王子开始，葡萄牙人乘坐轻快帆船不断向更远的海域探索：他们绕过非洲，达伽马于1498年抵达印度，卡布拉尔于1500年抵达巴西。这是一个充满伟大发现的时代，但也给许多民族带来了巨大的苦难——他们被征服、被奴役，或失去了自己的土地。"
+    }
+  },
+  {
+    "id": "uniao-iberica",
+    "year": "1580",
+    "emoji": "🔗",
+    "title": {
+      "pt": "A União Ibérica",
+      "en": "The Iberian Union",
+      "de": "Die Iberische Union",
+      "fr": "L'Union ibérique",
+      "es": "La Unión Ibérica",
+      "it": "L'Unione Iberica",
+      "zh": "伊比利亚联合"
+    },
+    "description": {
+      "pt": "Depois de o jovem rei D. Sebastião morrer numa batalha em Marrocos sem deixar herdeiro, a coroa portuguesa passou para o rei de Espanha, Filipe II. Durante 60 anos, Portugal e Espanha tiveram o mesmo rei, mas continuaram a ser reinos diferentes.",
+      "en": "After the young King Sebastian died in a battle in Morocco without leaving an heir, the Portuguese crown passed to the King of Spain, Philip II. For 60 years, Portugal and Spain shared the same king, though they remained separate kingdoms.",
+      "de": "Nachdem der junge König Sebastian in einer Schlacht in Marokko starb, ohne einen Erben zu hinterlassen, ging die portugiesische Krone an den König von Spanien, Philipp II., über. 60 Jahre lang hatten Portugal und Spanien denselben König, blieben aber unterschiedliche Königreiche.",
+      "fr": "Après la mort du jeune roi Sébastien lors d'une bataille au Maroc sans laisser d'héritier, la couronne portugaise est passée au roi d'Espagne, Philippe II. Pendant 60 ans, le Portugal et l'Espagne ont eu le même roi, tout en restant des royaumes distincts.",
+      "es": "Tras la muerte del joven rey Sebastián en una batalla en Marruecos sin dejar heredero, la corona portuguesa pasó al rey de España, Felipe II. Durante 60 años, Portugal y España tuvieron el mismo rey, aunque siguieron siendo reinos distintos.",
+      "it": "Dopo che il giovane re Sebastiano morì in una battaglia in Marocco senza lasciare un erede, la corona portoghese passò al re di Spagna, Filippo II. Per 60 anni, Portogallo e Spagna ebbero lo stesso re, pur restando regni distinti.",
+      "zh": "年轻的塞巴斯蒂昂国王在摩洛哥的一场战役中阵亡，未留下继承人，葡萄牙王位因此传给了西班牙国王腓力二世。此后六十年间，葡萄牙和西班牙共用同一位国王，但仍是两个不同的王国。"
+    }
+  },
+  {
+    "id": "restauracao",
+    "year": "1640",
+    "emoji": "🎉",
+    "title": {
+      "pt": "A Restauração da Independência",
+      "en": "The Restoration of Independence",
+      "de": "Die Wiederherstellung der Unabhängigkeit",
+      "fr": "La Restauration de l'indépendance",
+      "es": "La Restauración de la Independencia",
+      "it": "La Restaurazione dell'Indipendenza",
+      "zh": "独立恢复运动"
+    },
+    "description": {
+      "pt": "No dia 1 de dezembro de 1640, um grupo de nobres portugueses organizou uma revolta contra o domínio espanhol e proclamou D. João IV como novo rei de Portugal. Portugal voltou a ser um reino independente, e esse dia é ainda hoje celebrado.",
+      "en": "On 1 December 1640, a group of Portuguese nobles organised a revolt against Spanish rule and proclaimed John IV as the new King of Portugal. Portugal became an independent kingdom again, and this day is still celebrated today.",
+      "de": "Am 1. Dezember 1640 organisierte eine Gruppe portugiesischer Adliger einen Aufstand gegen die spanische Herrschaft und rief Johann IV. zum neuen König von Portugal aus. Portugal wurde wieder ein unabhängiges Königreich, und dieser Tag wird noch heute gefeiert.",
+      "fr": "Le 1er décembre 1640, un groupe de nobles portugais organisa une révolte contre la domination espagnole et proclama Jean IV nouveau roi du Portugal. Le Portugal redevint un royaume indépendant, et ce jour est encore célébré aujourd'hui.",
+      "es": "El 1 de diciembre de 1640, un grupo de nobles portugueses organizó una revuelta contra el dominio español y proclamó a Juan IV como nuevo rey de Portugal. Portugal volvió a ser un reino independiente, y ese día todavía se celebra hoy.",
+      "it": "Il 1° dicembre 1640, un gruppo di nobili portoghesi organizzò una rivolta contro il dominio spagnolo e proclamò Giovanni IV nuovo re del Portogallo. Il Portogallo tornò a essere un regno indipendente, e questo giorno è ancora celebrato oggi.",
+      "zh": "1640年12月1日，一群葡萄牙贵族发动起义，反抗西班牙的统治，并拥立若昂四世为葡萄牙新国王。葡萄牙重新成为独立王国，这一天至今仍被人们纪念。"
+    }
+  },
+  {
+    "id": "terramoto-1755",
+    "year": "1755",
+    "emoji": "🌊",
+    "title": {
+      "pt": "O Terramoto de 1755",
+      "en": "The 1755 Earthquake",
+      "de": "Das Erdbeben von 1755",
+      "fr": "Le tremblement de terre de 1755",
+      "es": "El terremoto de 1755",
+      "it": "Il terremoto del 1755",
+      "zh": "1755年大地震"
+    },
+    "description": {
+      "pt": "No dia 1 de novembro de 1755, um terramoto muito forte destruiu grande parte de Lisboa, seguido de um tsunami e de incêndios. Milhares de pessoas morreram. O Marquês de Pombal organizou a reconstrução da cidade de forma rápida e moderna para a época.",
+      "en": "On 1 November 1755, a very powerful earthquake destroyed much of Lisbon, followed by a tsunami and fires. Thousands of people died. The Marquis of Pombal organised the rebuilding of the city quickly and in a modern way for the time.",
+      "de": "Am 1. November 1755 zerstörte ein sehr starkes Erdbeben große Teile Lissabons, gefolgt von einem Tsunami und Bränden. Tausende Menschen starben. Der Marquês de Pombal organisierte den schnellen und für die damalige Zeit modernen Wiederaufbau der Stadt.",
+      "fr": "Le 1er novembre 1755, un très violent tremblement de terre a détruit une grande partie de Lisbonne, suivi d'un tsunami et d'incendies. Des milliers de personnes sont mortes. Le marquis de Pombal a organisé la reconstruction rapide et moderne de la ville pour l'époque.",
+      "es": "El 1 de noviembre de 1755, un terremoto muy fuerte destruyó gran parte de Lisboa, seguido de un tsunami e incendios. Miles de personas murieron. El marqués de Pombal organizó la reconstrucción rápida y moderna de la ciudad para la época.",
+      "it": "Il 1° novembre 1755, un fortissimo terremoto distrusse gran parte di Lisbona, seguito da uno tsunami e da incendi. Migliaia di persone morirono. Il marchese di Pombal organizzò la ricostruzione rapida e moderna della città per l'epoca.",
+      "zh": "1755年11月1日，一场强烈的地震摧毁了里斯本的大部分地区，随后又发生了海啸和火灾，数千人丧生。庞巴尔侯爵组织了城市重建，重建速度快，方式在当时相当现代化。"
+    }
+  },
+  {
+    "id": "invasoes-francesas",
+    "year": "1807",
+    "emoji": "🪖",
+    "title": {
+      "pt": "As Invasões Francesas",
+      "en": "The French Invasions",
+      "de": "Die französischen Invasionen",
+      "fr": "Les invasions françaises",
+      "es": "Las Invasiones Francesas",
+      "it": "Le invasioni francesi",
+      "zh": "法国入侵"
+    },
+    "description": {
+      "pt": "Entre 1807 e 1811, os exércitos de Napoleão Bonaparte invadiram Portugal três vezes. A família real portuguesa fugiu para o Brasil, e o país sofreu muito com a guerra até os invasores serem finalmente expulsos com ajuda britânica.",
+      "en": "Between 1807 and 1811, Napoleon Bonaparte's armies invaded Portugal three times. The Portuguese royal family fled to Brazil, and the country suffered greatly from the war until the invaders were finally driven out with British help.",
+      "de": "Zwischen 1807 und 1811 fielen die Armeen Napoleon Bonapartes dreimal in Portugal ein. Die portugiesische Königsfamilie floh nach Brasilien, und das Land litt sehr unter dem Krieg, bis die Eindringlinge schließlich mit britischer Hilfe vertrieben wurden.",
+      "fr": "Entre 1807 et 1811, les armées de Napoléon Bonaparte envahirent le Portugal à trois reprises. La famille royale portugaise s'enfuit au Brésil, et le pays souffrit beaucoup de la guerre jusqu'à ce que les envahisseurs soient finalement chassés avec l'aide britannique.",
+      "es": "Entre 1807 y 1811, los ejércitos de Napoleón Bonaparte invadieron Portugal tres veces. La familia real portuguesa huyó a Brasil, y el país sufrió mucho por la guerra hasta que los invasores fueron finalmente expulsados con ayuda británica.",
+      "it": "Tra il 1807 e il 1811, gli eserciti di Napoleone Bonaparte invasero il Portogallo tre volte. La famiglia reale portoghese fuggì in Brasile, e il paese soffrì molto a causa della guerra finché gli invasori non furono infine cacciati con l'aiuto britannico.",
+      "zh": "1807年至1811年间，拿破仑·波拿巴的军队三次入侵葡萄牙。葡萄牙王室逃往巴西，国家因战争遭受了巨大苦难，最终在英国的帮助下才将侵略者驱逐出境。"
+    }
+  },
+  {
+    "id": "liberalismo",
+    "year": "1834",
+    "emoji": "📜",
+    "title": {
+      "pt": "O Liberalismo e a Monarquia Constitucional",
+      "en": "Liberalism and the Constitutional Monarchy",
+      "de": "Der Liberalismus und die konstitutionelle Monarchie",
+      "fr": "Le libéralisme et la monarchie constitutionnelle",
+      "es": "El liberalismo y la monarquía constitucional",
+      "it": "Il liberalismo e la monarchia costituzionale",
+      "zh": "自由主义与君主立宪制"
+    },
+    "description": {
+      "pt": "No início do século XIX, houve uma guerra civil entre quem queria um rei com poder absoluto e quem queria uma monarquia com uma constituição e leis para todos. Os liberais venceram em 1834, e Portugal passou a ser governado com uma constituição.",
+      "en": "In the early 19th century, there was a civil war between those who wanted a king with absolute power and those who wanted a monarchy governed by a constitution and laws for everyone. The liberals won in 1834, and Portugal began to be governed under a constitution.",
+      "de": "Im frühen 19. Jahrhundert kam es zu einem Bürgerkrieg zwischen denen, die einen König mit absoluter Macht wollten, und denen, die eine Monarchie mit Verfassung und Gesetzen für alle wollten. Die Liberalen siegten 1834, und Portugal wurde fortan nach einer Verfassung regiert.",
+      "fr": "Au début du XIXe siècle, une guerre civile éclata entre ceux qui voulaient un roi au pouvoir absolu et ceux qui voulaient une monarchie régie par une constitution et des lois pour tous. Les libéraux l'emportèrent en 1834, et le Portugal commença à être gouverné selon une constitution.",
+      "es": "A principios del siglo XIX hubo una guerra civil entre quienes querían un rey con poder absoluto y quienes querían una monarquía con una constitución y leyes para todos. Los liberales vencieron en 1834, y Portugal pasó a gobernarse con una constitución.",
+      "it": "All'inizio del XIX secolo scoppiò una guerra civile tra chi voleva un re con potere assoluto e chi voleva una monarchia governata da una costituzione e leggi per tutti. I liberali vinsero nel 1834, e il Portogallo iniziò a essere governato secondo una costituzione.",
+      "zh": "19世纪初，主张国王拥有绝对权力的一方与主张实行宪法、法律面前人人平等的君主立宪制的一方之间爆发了内战。1834年，自由派获胜，葡萄牙自此按照宪法进行治理。"
+    }
+  },
+  {
+    "id": "republica-1910",
+    "year": "1910",
+    "emoji": "🇵🇹",
+    "title": {
+      "pt": "A Implantação da República",
+      "en": "The Founding of the Republic",
+      "de": "Die Ausrufung der Republik",
+      "fr": "L'instauration de la République",
+      "es": "La instauración de la República",
+      "it": "La proclamazione della Repubblica",
+      "zh": "共和国的建立"
+    },
+    "description": {
+      "pt": "No dia 5 de outubro de 1910, uma revolução acabou com a monarquia em Portugal e proclamou a República. O último rei, D. Manuel II, teve de partir para o exílio. Foi uma grande mudança na forma como o país era governado.",
+      "en": "On 5 October 1910, a revolution ended the monarchy in Portugal and proclaimed the Republic. The last king, Manuel II, had to go into exile. It was a major change in how the country was governed.",
+      "de": "Am 5. Oktober 1910 beendete eine Revolution die Monarchie in Portugal und rief die Republik aus. Der letzte König, Manuel II., musste ins Exil gehen. Es war eine große Veränderung in der Art, wie das Land regiert wurde.",
+      "fr": "Le 5 octobre 1910, une révolution mit fin à la monarchie au Portugal et proclama la République. Le dernier roi, Manuel II, dut partir en exil. Ce fut un grand changement dans la manière dont le pays était gouverné.",
+      "es": "El 5 de octubre de 1910, una revolución acabó con la monarquía en Portugal y proclamó la República. El último rey, Manuel II, tuvo que partir al exilio. Fue un gran cambio en la forma de gobernar el país.",
+      "it": "Il 5 ottobre 1910, una rivoluzione pose fine alla monarchia in Portogallo e proclamò la Repubblica. L'ultimo re, Manuele II, dovette andare in esilio. Fu un grande cambiamento nel modo in cui il paese veniva governato.",
+      "zh": "1910年10月5日，一场革命结束了葡萄牙的君主制，宣告共和国成立。末代国王曼努埃尔二世被迫流亡海外。这是葡萄牙治理方式的一次重大变革。"
+    }
+  },
+  {
+    "id": "estado-novo",
+    "year": "1933",
+    "emoji": "🚫",
+    "title": {
+      "pt": "O Estado Novo",
+      "en": "The Estado Novo Dictatorship",
+      "de": "Die Diktatur des Estado Novo",
+      "fr": "La dictature de l'Estado Novo",
+      "es": "La dictadura del Estado Novo",
+      "it": "La dittatura dell'Estado Novo",
+      "zh": "新国家独裁统治"
+    },
+    "description": {
+      "pt": "Depois de anos de instabilidade, instalou-se em Portugal uma ditadura chamada Estado Novo, liderada durante muito tempo por António de Oliveira Salazar. Durante décadas, as pessoas não podiam escolher livremente os seus governantes nem falar livremente contra o regime.",
+      "en": "After years of instability, a dictatorship called the Estado Novo was established in Portugal, led for a long time by António de Oliveira Salazar. For decades, people could not freely choose their leaders or speak freely against the regime.",
+      "de": "Nach Jahren der Instabilität wurde in Portugal eine Diktatur namens Estado Novo errichtet, die lange Zeit von António de Oliveira Salazar geführt wurde. Jahrzehntelang konnten die Menschen ihre Regierenden nicht frei wählen und sich nicht frei gegen das Regime äußern.",
+      "fr": "Après des années d'instabilité, une dictature appelée Estado Novo s'installa au Portugal, dirigée pendant longtemps par António de Oliveira Salazar. Pendant des décennies, les gens ne pouvaient pas choisir librement leurs dirigeants ni s'exprimer librement contre le régime.",
+      "es": "Tras años de inestabilidad, se instaló en Portugal una dictadura llamada Estado Novo, liderada durante mucho tiempo por António de Oliveira Salazar. Durante décadas, la gente no pudo elegir libremente a sus gobernantes ni hablar libremente en contra del régimen.",
+      "it": "Dopo anni di instabilità, in Portogallo si instaurò una dittatura chiamata Estado Novo, guidata a lungo da António de Oliveira Salazar. Per decenni, le persone non poterono scegliere liberamente i propri governanti né parlare liberamente contro il regime.",
+      "zh": "经历多年动荡后，葡萄牙建立了一个名为“新国家”的独裁政权，由安东尼奥·德·奥利维拉·萨拉查长期领导。几十年间，人民无法自由选择自己的领导人，也不能自由地对政权发表批评意见。"
+    }
+  },
+  {
+    "id": "revolucao-abril",
+    "year": "1974",
+    "emoji": "🌺",
+    "title": {
+      "pt": "O 25 de Abril de 1974",
+      "en": "The 25th of April, 1974",
+      "de": "Der 25. April 1974",
+      "fr": "Le 25 avril 1974",
+      "es": "El 25 de abril de 1974",
+      "it": "Il 25 aprile 1974",
+      "zh": "1974年4月25日"
+    },
+    "description": {
+      "pt": "No dia 25 de abril de 1974, um grupo de militares fez uma revolução quase sem violência que acabou com a ditadura. O povo saiu à rua e ofereceu cravos aos soldados, por isso se chama Revolução dos Cravos. Portugal voltou a ser um país livre e democrático.",
+      "en": "On 25 April 1974, a group of military officers carried out a revolution with almost no violence that ended the dictatorship. People took to the streets and gave carnations to the soldiers, which is why it's called the Carnation Revolution. Portugal became a free, democratic country again.",
+      "de": "Am 25. April 1974 führte eine Gruppe von Militärs eine fast gewaltfreie Revolution durch, die die Diktatur beendete. Die Menschen gingen auf die Straße und schenkten den Soldaten Nelken, weshalb sie Nelkenrevolution genannt wird. Portugal wurde wieder ein freies, demokratisches Land.",
+      "fr": "Le 25 avril 1974, un groupe de militaires mena une révolution presque sans violence qui mit fin à la dictature. Le peuple descendit dans la rue et offrit des œillets aux soldats, d'où le nom de Révolution des Œillets. Le Portugal redevint un pays libre et démocratique.",
+      "es": "El 25 de abril de 1974, un grupo de militares llevó a cabo una revolución casi sin violencia que puso fin a la dictadura. La gente salió a la calle y regaló claveles a los soldados, por eso se llama la Revolución de los Claveles. Portugal volvió a ser un país libre y democrático.",
+      "it": "Il 25 aprile 1974, un gruppo di militari compì una rivoluzione quasi senza violenza che pose fine alla dittatura. La gente scese in strada e offrì garofani ai soldati, per questo è chiamata Rivoluzione dei Garofani. Il Portogallo tornò a essere un paese libero e democratico.",
+      "zh": "1974年4月25日，一群军官发动了一场几乎不流血的革命，结束了独裁统治。民众走上街头，向士兵们献上康乃馨，因此这场革命被称为“康乃馨革命”。葡萄牙重新成为一个自由民主的国家。"
+    }
+  },
+  {
+    "id": "adesao-cee",
+    "year": "1986",
+    "emoji": "⭐",
+    "title": {
+      "pt": "A Entrada na CEE (hoje União Europeia)",
+      "en": "Joining the EEC (today's European Union)",
+      "de": "Der Beitritt zur EWG (heute Europäische Union)",
+      "fr": "L'adhésion à la CEE (aujourd'hui Union européenne)",
+      "es": "La entrada en la CEE (hoy Unión Europea)",
+      "it": "L'ingresso nella CEE (oggi Unione Europea)",
+      "zh": "加入欧共体（今欧盟）"
+    },
+    "description": {
+      "pt": "Em 1 de janeiro de 1986, Portugal entrou na Comunidade Económica Europeia, que mais tarde se tornou a União Europeia. Isso trouxe muitas mudanças positivas, como novas estradas, escolas e hospitais, e uma maior ligação com os outros países europeus.",
+      "en": "On 1 January 1986, Portugal joined the European Economic Community, which later became the European Union. This brought many positive changes, such as new roads, schools and hospitals, and closer ties with other European countries.",
+      "de": "Am 1. Januar 1986 trat Portugal der Europäischen Wirtschaftsgemeinschaft bei, die später zur Europäischen Union wurde. Das brachte viele positive Veränderungen mit sich, wie neue Straßen, Schulen und Krankenhäuser, sowie engere Beziehungen zu anderen europäischen Ländern.",
+      "fr": "Le 1er janvier 1986, le Portugal adhéra à la Communauté économique européenne, devenue plus tard l'Union européenne. Cela apporta de nombreux changements positifs, comme de nouvelles routes, écoles et hôpitaux, et des liens plus étroits avec les autres pays européens.",
+      "es": "El 1 de enero de 1986, Portugal entró en la Comunidad Económica Europea, que más tarde se convirtió en la Unión Europea. Esto trajo muchos cambios positivos, como nuevas carreteras, escuelas y hospitales, y una mayor relación con los demás países europeos.",
+      "it": "Il 1° gennaio 1986, il Portogallo entrò nella Comunità Economica Europea, che in seguito divenne l'Unione Europea. Questo portò molti cambiamenti positivi, come nuove strade, scuole e ospedali, e legami più stretti con gli altri paesi europei.",
+      "zh": "1986年1月1日，葡萄牙加入了欧洲经济共同体（后来发展为欧盟）。这带来了许多积极的变化，例如新的道路、学校和医院，以及与其他欧洲国家更紧密的联系。"
+    }
+  }
+]

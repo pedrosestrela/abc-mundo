@@ -200,6 +200,43 @@ export function exploreScienceCard(profileName, cardId) {
   return all[name];
 }
 
+// --- Portugal History Timeline ("Castelo do Tempo") ---
+// Tracks which era ids the child has explored (opened the detail card for).
+
+const VISITED_ERAS_KEY = "abcmundo.visitedEras";
+
+function loadVisitedEras() {
+  try {
+    const raw = localStorage.getItem(VISITED_ERAS_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveVisitedEras(all) {
+  try {
+    localStorage.setItem(VISITED_ERAS_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getVisitedEras(profileName) {
+  const all = loadVisitedEras();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function visitEra(profileName, eraId) {
+  const name = profileName || "Explorer";
+  const all = loadVisitedEras();
+  const visited = new Set(all[name] || []);
+  visited.add(eraId);
+  all[name] = Array.from(visited);
+  saveVisitedEras(all);
+  return all[name];
+}
+
 // Session-length tracking, kept in memory only (never persisted). A
 // "session" is just however long this tab has been open — reloading the
 // page starts a fresh session. Used by the gentle session-end nudge.

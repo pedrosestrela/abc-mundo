@@ -48,6 +48,9 @@ export default function NavBar() {
       <NavLink to="/detective" className="nav-link">
         🕵️ {t("nav.detective")}
       </NavLink>
+      <NavLink to="/history" className="nav-link">
+        🏰 {t("nav.history")}
+      </NavLink>
       <NavLink to="/science" className="nav-link">
         🔬 {t("nav.science")}
       </NavLink>
