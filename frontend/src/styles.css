@@ -384,6 +384,80 @@ body {
   letter-spacing: 4px;
 }
 
+.math-scenario-text {
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 8px 0 16px;
+}
+
+.math-mode-toggle {
+  flex-direction: row;
+  margin-bottom: 12px;
+}
+
+.math-mode-toggle .game-option {
+  flex: 1;
+}
+
+.math-count-objects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.math-count-icon {
+  font-size: 2rem;
+  line-height: 1;
+  background: none;
+  border: none;
+  padding: 6px;
+  cursor: pointer;
+  border-radius: 12px;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.math-count-icon:hover:not(:disabled) {
+  background: var(--light-blue, rgba(0, 0, 0, 0.05));
+}
+
+.math-count-icon.removed {
+  opacity: 0.25;
+  text-decoration: line-through;
+}
+
+.math-count-icon.added {
+  opacity: 1;
+}
+
+.math-count-pool .math-count-icon:not(.added) {
+  opacity: 0.5;
+}
+
+.math-count-label {
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--text-secondary, #666);
+  margin: 4px 0;
+}
+
+.math-count-total {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 12px 0;
+}
+
+.math-count-confirm.correct {
+  background: var(--green);
+}
+
+.math-count-confirm.wrong {
+  background: var(--red, #e74c3c);
+}
+
 .game-options {
   display: flex;
   flex-direction: column;
