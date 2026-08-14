@@ -1,71 +1,78 @@
 [
   {
     "syllable": "人",
-    "exampleWord": "人 (pessoa)",
+    "exampleWord": "大人 (adulto)",
     "emoji": "🧑",
     "hint": "rén",
     "syllables": [
+      "大",
       "人"
     ],
     "digraph": false
   },
   {
     "syllable": "大",
-    "exampleWord": "大 (grande)",
+    "exampleWord": "大象 (elefante)",
     "emoji": "🐘",
     "hint": "dà",
     "syllables": [
-      "大"
+      "大",
+      "象"
     ],
     "digraph": false
   },
   {
     "syllable": "山",
-    "exampleWord": "山 (montanha)",
-    "emoji": "⛰️",
+    "exampleWord": "火山 (vulcão)",
+    "emoji": "🌋",
     "hint": "shān",
     "syllables": [
+      "火",
       "山"
     ],
     "digraph": false
   },
   {
     "syllable": "水",
-    "exampleWord": "水 (água)",
-    "emoji": "💧",
+    "exampleWord": "水果 (fruta)",
+    "emoji": "🍉",
     "hint": "shuǐ",
     "syllables": [
-      "水"
+      "水",
+      "果"
     ],
     "digraph": false
   },
   {
     "syllable": "火",
-    "exampleWord": "火 (fogo)",
-    "emoji": "🔥",
+    "exampleWord": "火车 (comboio)",
+    "emoji": "🚂",
     "hint": "huǒ",
     "syllables": [
-      "火"
+      "火",
+      "车"
     ],
     "digraph": false
   },
   {
     "syllable": "日",
-    "exampleWord": "日 (sol)",
-    "emoji": "☀️",
+    "exampleWord": "生日 (aniversário)",
+    "emoji": "🎂",
     "hint": "rì",
     "syllables": [
+      "生",
       "日"
     ],
     "digraph": false
   },
   {
     "syllable": "月",
-    "exampleWord": "月 (lua)",
-    "emoji": "🌙",
+    "exampleWord": "月饼 (bolo lunar)",
+    "emoji": "🥮",
     "hint": "yuè",
     "syllables": [
-      "月"
+      "月",
+      "饼"
     ],
     "digraph": false
   },
@@ -75,6 +82,7 @@
     "emoji": "👩",
     "hint": "mā",
     "syllables": [
+      "妈",
       "妈"
     ],
     "digraph": false
@@ -85,16 +93,18 @@
     "emoji": "👨",
     "hint": "bà",
     "syllables": [
+      "爸",
       "爸"
     ],
     "digraph": false
   },
   {
     "syllable": "好",
-    "exampleWord": "好 (bom)",
-    "emoji": "👍",
+    "exampleWord": "你好 (olá)",
+    "emoji": "👋",
     "hint": "hǎo",
     "syllables": [
+      "你",
       "好"
     ],
     "digraph": false
@@ -134,50 +144,55 @@
   },
   {
     "syllable": "狗",
-    "exampleWord": "狗 (cachorro)",
+    "exampleWord": "小狗 (cachorrinho)",
     "emoji": "🐶",
     "hint": "gǒu",
     "syllables": [
+      "小",
       "狗"
     ],
     "digraph": false
   },
   {
     "syllable": "猫",
-    "exampleWord": "猫 (gato)",
+    "exampleWord": "小猫 (gatinho)",
     "emoji": "🐱",
     "hint": "māo",
     "syllables": [
+      "小",
       "猫"
     ],
     "digraph": false
   },
   {
     "syllable": "鱼",
-    "exampleWord": "鱼 (peixe)",
-    "emoji": "🐟",
+    "exampleWord": "金鱼 (peixinho dourado)",
+    "emoji": "🐠",
     "hint": "yú",
     "syllables": [
+      "金",
       "鱼"
     ],
     "digraph": false
   },
   {
     "syllable": "花",
-    "exampleWord": "花 (flor)",
-    "emoji": "🌸",
+    "exampleWord": "花园 (jardim)",
+    "emoji": "🌷",
     "hint": "huā",
     "syllables": [
-      "花"
+      "花",
+      "园"
     ],
     "digraph": false
   },
   {
     "syllable": "树",
-    "exampleWord": "树 (árvore)",
+    "exampleWord": "大树 (árvore grande)",
     "emoji": "🌳",
     "hint": "shù",
     "syllables": [
+      "大",
       "树"
     ],
     "digraph": false
@@ -256,6 +271,341 @@
     "syllables": [
       "房",
       "子"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "象",
+    "exampleWord": "大象 (elefante)",
+    "emoji": "🐘",
+    "hint": "xiàng",
+    "syllables": [
+      "大",
+      "象"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "蝴",
+    "exampleWord": "蝴蝶 (borboleta)",
+    "emoji": "🦋",
+    "hint": "hú",
+    "syllables": [
+      "蝴",
+      "蝶"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "龟",
+    "exampleWord": "乌龟 (tartaruga)",
+    "emoji": "🐢",
+    "hint": "guī",
+    "syllables": [
+      "乌",
+      "龟"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "羊",
+    "exampleWord": "绵羊 (ovelha)",
+    "emoji": "🐑",
+    "hint": "yáng",
+    "syllables": [
+      "绵",
+      "羊"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "蜂",
+    "exampleWord": "蜜蜂 (abelha)",
+    "emoji": "🐝",
+    "hint": "fēng",
+    "syllables": [
+      "蜜",
+      "蜂"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "膝",
+    "exampleWord": "膝盖 (joelho)",
+    "emoji": "🦵",
+    "hint": "xī",
+    "syllables": [
+      "膝",
+      "盖"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "书",
+    "exampleWord": "图书馆 (biblioteca)",
+    "emoji": "📚",
+    "hint": "shū",
+    "syllables": [
+      "图",
+      "书",
+      "馆"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "脑",
+    "exampleWord": "电脑 (computador)",
+    "emoji": "💻",
+    "hint": "nǎo",
+    "syllables": [
+      "电",
+      "脑"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "车",
+    "exampleWord": "自行车 (bicicleta)",
+    "emoji": "🚲",
+    "hint": "chē",
+    "syllables": [
+      "自",
+      "行",
+      "车"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "阳",
+    "exampleWord": "太阳花 (girassol)",
+    "emoji": "🌻",
+    "hint": "yáng",
+    "syllables": [
+      "太",
+      "阳",
+      "花"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "林",
+    "exampleWord": "森林 (floresta)",
+    "emoji": "🌲",
+    "hint": "lín",
+    "syllables": [
+      "森",
+      "林"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "镜",
+    "exampleWord": "镜子 (espelho)",
+    "emoji": "🪞",
+    "hint": "jìng",
+    "syllables": [
+      "镜",
+      "子"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "牛",
+    "exampleWord": "奶牛 (vaca)",
+    "emoji": "🐮",
+    "hint": "niú",
+    "syllables": [
+      "奶",
+      "牛"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "酪",
+    "exampleWord": "奶酪 (queijo)",
+    "emoji": "🧀",
+    "hint": "lào",
+    "syllables": [
+      "奶",
+      "酪"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "米",
+    "exampleWord": "米饭 (arroz)",
+    "emoji": "🍚",
+    "hint": "mǐ",
+    "syllables": [
+      "米",
+      "饭"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "庭",
+    "exampleWord": "家庭 (família)",
+    "emoji": "👨‍👩‍👧",
+    "hint": "tíng",
+    "syllables": [
+      "家",
+      "庭"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "伞",
+    "exampleWord": "雨伞 (guarda-chuva)",
+    "emoji": "☂️",
+    "hint": "sǎn",
+    "syllables": [
+      "雨",
+      "伞"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "熊",
+    "exampleWord": "袋鼠 (canguru)",
+    "emoji": "🦘",
+    "hint": "shǔ",
+    "syllables": [
+      "袋",
+      "鼠"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "瓜",
+    "exampleWord": "西瓜 (melancia)",
+    "emoji": "🍉",
+    "hint": "guā",
+    "syllables": [
+      "西",
+      "瓜"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "莓",
+    "exampleWord": "草莓 (morango)",
+    "emoji": "🍓",
+    "hint": "méi",
+    "syllables": [
+      "草",
+      "莓"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "牛奶",
+    "exampleWord": "牛奶 (leite)",
+    "emoji": "🥛",
+    "hint": "niúnǎi",
+    "syllables": [
+      "牛",
+      "奶"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "巧",
+    "exampleWord": "巧克力 (chocolate)",
+    "emoji": "🍫",
+    "hint": "qiǎo",
+    "syllables": [
+      "巧",
+      "克",
+      "力"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "鸭",
+    "exampleWord": "鸭子 (pato)",
+    "emoji": "🦆",
+    "hint": "yā",
+    "syllables": [
+      "鸭",
+      "子"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "鸟",
+    "exampleWord": "小鸟 (pássaro)",
+    "emoji": "🐦",
+    "hint": "niǎo",
+    "syllables": [
+      "小",
+      "鸟"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "虫",
+    "exampleWord": "毛毛虫 (lagarta)",
+    "emoji": "🐛",
+    "hint": "chóng",
+    "syllables": [
+      "毛",
+      "毛",
+      "虫"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "猴",
+    "exampleWord": "猴子 (macaco)",
+    "emoji": "🐒",
+    "hint": "hóu",
+    "syllables": [
+      "猴",
+      "子"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "狮",
+    "exampleWord": "狮子 (leão)",
+    "emoji": "🦁",
+    "hint": "shī",
+    "syllables": [
+      "狮",
+      "子"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "虎",
+    "exampleWord": "老虎 (tigre)",
+    "emoji": "🐯",
+    "hint": "hǔ",
+    "syllables": [
+      "老",
+      "虎"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "熊猫",
+    "exampleWord": "熊猫 (panda)",
+    "emoji": "🐼",
+    "hint": "xióngmāo",
+    "syllables": [
+      "熊",
+      "猫"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "河马",
+    "exampleWord": "河马 (hipopótamo)",
+    "emoji": "🦛",
+    "hint": "hémǎ",
+    "syllables": [
+      "河",
+      "马"
     ],
     "digraph": false
   }
