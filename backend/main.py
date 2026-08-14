@@ -10,6 +10,7 @@ from datetime import datetime, timezone
 from typing import Optional
 
 from fastapi import FastAPI
+from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
@@ -101,5 +102,19 @@ def progress_summary():
 
 # Serve built frontend (if present) at "/". Must not crash if missing,
 # since this file may be imported/run before the frontend is built.
-if os.path.isdir("static"):
-    app.mount("/", StaticFiles(directory="static", html=True), name="static")
+# A catch-all (rather than StaticFiles(html=True) mounted at "/") is needed
+# so that deep links into React Router routes (e.g. /phonics, /piano) return
+# index.html instead of a 404 — StaticFiles only auto-serves index.html for
+# "/", not for unknown sub-paths.
+STATIC_DIR = "static"
+if os.path.isdir(STATIC_DIR):
+    assets_dir = os.path.join(STATIC_DIR, "assets")
+    if os.path.isdir(assets_dir):
+        app.mount("/assets", StaticFiles(directory=assets_dir), name="assets")
+
+    @app.get("/{full_path:path}")
+    def spa_fallback(full_path: str):
+        candidate = os.path.join(STATIC_DIR, full_path)
+        if full_path and os.path.isfile(candidate):
+            return FileResponse(candidate)
+        return FileResponse(os.path.join(STATIC_DIR, "index.html"))
