@@ -322,6 +322,45 @@ export function exploreComputingCard(profileName, cardId) {
   return all[name];
 }
 
+// --- Aprender a Aprender (learning strategies / metacognition) ---
+// Tracks which learning-activity ids (as "type:id") the child has completed
+// across the module's five areas (memory, attention, error, strategy,
+// teach-back), mirroring the exploredComputing pattern above.
+
+const COMPLETED_LEARNING_ACTIVITIES_KEY = "abcmundo.completedLearningActivities";
+
+function loadCompletedLearningActivities() {
+  try {
+    const raw = localStorage.getItem(COMPLETED_LEARNING_ACTIVITIES_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveCompletedLearningActivities(all) {
+  try {
+    localStorage.setItem(COMPLETED_LEARNING_ACTIVITIES_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getCompletedLearningActivities(profileName) {
+  const all = loadCompletedLearningActivities();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function completeLearningActivity(profileName, activityId) {
+  const name = profileName || "Explorer";
+  const all = loadCompletedLearningActivities();
+  const completed = new Set(all[name] || []);
+  completed.add(activityId);
+  all[name] = Array.from(completed);
+  saveCompletedLearningActivities(all);
+  return all[name];
+}
+
 // --- O Mundo por Dentro (how things work) ---
 // Tracks which part ids (as "objectId:partId") the child has explored, for
 // each object of the "how things work" module.

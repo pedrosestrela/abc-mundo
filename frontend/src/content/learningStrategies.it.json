@@ -1,0 +1,463 @@
+{
+  "memory": [
+    {
+      "id": "m1",
+      "emoji": "🎈",
+      "items": [
+        "🍎",
+        "🚗",
+        "⭐",
+        "🐶",
+        "🎵"
+      ],
+      "technique": "Dire gli elementi ad alta voce ci aiuta a ricordarli più a lungo!"
+    },
+    {
+      "id": "m2",
+      "emoji": "🎈",
+      "items": [
+        "🌙",
+        "🐟",
+        "🍩",
+        "🚀",
+        "🌵"
+      ],
+      "technique": "Immaginare un'immagine buffa con gli elementi insieme aiuta a fissarli nella memoria."
+    },
+    {
+      "id": "m3",
+      "emoji": "🎈",
+      "items": [
+        "🦋",
+        "🔑",
+        "🧸",
+        "🎯",
+        "🍇"
+      ],
+      "technique": "Raggruppare gli elementi in coppie più piccole li rende più facili da ricordare."
+    },
+    {
+      "id": "m4",
+      "emoji": "🎈",
+      "items": [
+        "🐢",
+        "🎁",
+        "🌈",
+        "🧦",
+        "🍓",
+        "🚲"
+      ],
+      "technique": "Inventare una piccola storia che collega gli elementi ci aiuta a ricordare l'ordine."
+    },
+    {
+      "id": "m5",
+      "emoji": "🎈",
+      "items": [
+        "🥕",
+        "🐝",
+        "🎨",
+        "🥁"
+      ],
+      "technique": "Dire gli elementi ad alta voce ci aiuta a ricordarli più a lungo!"
+    },
+    {
+      "id": "m6",
+      "emoji": "🎈",
+      "items": [
+        "🦉",
+        "🧊",
+        "🎪",
+        "🍋",
+        "🧩"
+      ],
+      "technique": "Immaginare un'immagine buffa con gli elementi insieme aiuta a fissarli nella memoria."
+    },
+    {
+      "id": "m7",
+      "emoji": "🎈",
+      "items": [
+        "🐧",
+        "🎻",
+        "🥨",
+        "🛼",
+        "🌻",
+        "🧭"
+      ],
+      "technique": "Raggruppare gli elementi in coppie più piccole li rende più facili da ricordare."
+    },
+    {
+      "id": "m8",
+      "emoji": "🎈",
+      "items": [
+        "🐬",
+        "🎲",
+        "🧵",
+        "🍄"
+      ],
+      "technique": "Inventare una piccola storia che collega gli elementi ci aiuta a ricordare l'ordine."
+    },
+    {
+      "id": "m9",
+      "emoji": "🎈",
+      "items": [
+        "🦖",
+        "🎧",
+        "🥥",
+        "🧦",
+        "🚂"
+      ],
+      "technique": "Dire gli elementi ad alta voce ci aiuta a ricordarli più a lungo!"
+    },
+    {
+      "id": "m10",
+      "emoji": "🎈",
+      "items": [
+        "🐌",
+        "🎺",
+        "🧃",
+        "🍉",
+        "🧶",
+        "🚁"
+      ],
+      "technique": "Immaginare un'immagine buffa con gli elementi insieme aiuta a fissarli nella memoria."
+    }
+  ],
+  "attention": [
+    {
+      "id": "a1",
+      "scene": "🌳🌳🌳🐿️🌳🌳🌳🌳",
+      "question": "Trova l'animale nascosto tra gli alberi.",
+      "targetEmoji": "🐿️",
+      "hint": "Cerca qualcosa che non sia un albero."
+    },
+    {
+      "id": "a2",
+      "scene": "☁️☁️🐦☁️☁️☁️☁️☁️",
+      "question": "Trova l'uccello nascosto tra le nuvole.",
+      "targetEmoji": "🐦",
+      "hint": "Solo un elemento è diverso."
+    },
+    {
+      "id": "a3",
+      "scene": "🍪🍪🍪🍪🍩🍪🍪🍪",
+      "question": "Trova la ciambella tra i biscotti.",
+      "targetEmoji": "🍩",
+      "hint": "Ha un buco nel mezzo."
+    },
+    {
+      "id": "a4",
+      "scene": "🚗🚗🚗🚙🚗🚗🚗🚗",
+      "question": "Trova l'auto diversa dalle altre.",
+      "targetEmoji": "🚙",
+      "hint": "È un po' più alta delle altre."
+    },
+    {
+      "id": "a5",
+      "scene": "⚽⚽⚽⚽🏀⚽⚽⚽",
+      "question": "Trova il pallone da basket tra i palloni da calcio.",
+      "targetEmoji": "🏀",
+      "hint": "Ha un colore diverso."
+    },
+    {
+      "id": "a6",
+      "scene": "🐝🐝🐝🦋🐝🐝🐝🐝",
+      "question": "Trova la farfalla tra le api.",
+      "targetEmoji": "🦋",
+      "hint": "Non ronza."
+    },
+    {
+      "id": "a7",
+      "scene": "🌸🌸🌸🌸🌵🌸🌸🌸",
+      "question": "Trova il cactus tra i fiori.",
+      "targetEmoji": "🌵",
+      "hint": "Ha le spine."
+    },
+    {
+      "id": "a8",
+      "scene": "🍎🍎🍏🍎🍎🍎🍎🍎",
+      "question": "Trova la mela verde tra quelle rosse.",
+      "targetEmoji": "🍏",
+      "hint": "È il colore a cambiare."
+    },
+    {
+      "id": "a9",
+      "scene": "⭐⭐⭐🌟⭐⭐⭐⭐",
+      "question": "Trova la stella più luminosa tra le altre.",
+      "targetEmoji": "🌟",
+      "hint": "Nota il bagliore intorno."
+    },
+    {
+      "id": "a10",
+      "scene": "🐟🐟🐟🐡🐟🐟🐟🐟",
+      "question": "Trova il pesce palla tra i pesciolini.",
+      "targetEmoji": "🐡",
+      "hint": "È più tondo degli altri."
+    }
+  ],
+  "errors": [
+    {
+      "id": "e1",
+      "character": "🧒",
+      "scenario": "Tom ha provato a impilare i blocchi, ma la torre è caduta quando ha messo il blocco più grande in cima.",
+      "reflectionPrompts": [
+        "Cosa pensi sia successo alla torre?",
+        "Cosa potrebbe provare Tom la prossima volta?",
+        "Pensi che riprovare possa aiutare a imparare?"
+      ]
+    },
+    {
+      "id": "e2",
+      "character": "👧",
+      "scenario": "Ines ha provato a disegnare un gatto, ma le orecchie sono venute troppo grandi e non le è piaciuto il risultato.",
+      "reflectionPrompts": [
+        "Cosa ha imparato Ines sul disegnare le orecchie?",
+        "Cosa potrebbe fare diversamente nel prossimo disegno?",
+        "Pensi che anche gli artisti facciano disegni che non gli piacciono all'inizio?"
+      ]
+    },
+    {
+      "id": "e3",
+      "character": "🧒",
+      "scenario": "Rui ha sommato 3 + 4 e ha detto che faceva 6, ma la risposta corretta era in realtà 7.",
+      "reflectionPrompts": [
+        "Dove pensi che Rui possa essersi sbagliato a contare?",
+        "Che strategia potrebbe usare per controllare il calcolo?",
+        "Cosa ci mostra questo errore che possiamo ancora praticare?"
+      ]
+    },
+    {
+      "id": "e4",
+      "character": "👦",
+      "scenario": "Diogo ha provato ad andare in bici senza rotelle ed è caduto subito dopo aver iniziato a pedalare.",
+      "reflectionPrompts": [
+        "Cosa pensi stesse imparando il corpo di Diogo cadendo?",
+        "A cosa potrebbe aggrapparsi meglio la prossima volta?",
+        "Pensi che chi va bene in bici sia caduto qualche volta imparando?"
+      ]
+    },
+    {
+      "id": "e5",
+      "character": "👧",
+      "scenario": "Maria ha detto alla maestra che la capitale del Portogallo era Porto, ma la risposta giusta era Lisbona.",
+      "reflectionPrompts": [
+        "Perché pensi che possa aver confuso le città?",
+        "Come può Maria ricordare meglio la risposta giusta?",
+        "Una risposta sbagliata significa che non sappiamo nulla?"
+      ]
+    },
+    {
+      "id": "e6",
+      "character": "🧒",
+      "scenario": "Pedro ha provato a fare un puzzle e ha messo un pezzo nel posto sbagliato più volte.",
+      "reflectionPrompts": [
+        "Cosa potrebbe aver scoperto Pedro sulla forma del pezzo?",
+        "Quale altro modo di guardare il pezzo potrebbe aiutare?",
+        "Pensi che provare pezzi diversi sia un buon modo di imparare?"
+      ]
+    },
+    {
+      "id": "e7",
+      "character": "👦",
+      "scenario": "Miguel ha scritto la parola 'gato' (gatto) come 'gatu' sul quaderno.",
+      "reflectionPrompts": [
+        "Quale suono pensi che Miguel abbia confuso?",
+        "Come può controllare la parola la prossima volta?",
+        "Cosa ci insegna questo tipo di errore sulle vocali?"
+      ]
+    },
+    {
+      "id": "e8",
+      "character": "👧",
+      "scenario": "Sofia ha provato a cantare una canzone nuova e ha scambiato l'ordine di due parti del testo.",
+      "reflectionPrompts": [
+        "Cosa pensi aiuterebbe Sofia a ricordare l'ordine giusto?",
+        "Pensi che cantarla di nuovo, più lentamente, potrebbe aiutare?",
+        "È normale sbagliare quando si impara qualcosa di nuovo?"
+      ]
+    },
+    {
+      "id": "e9",
+      "character": "🧒",
+      "scenario": "Tiago ha provato a costruire una torre di carte, ma è caduta appena ha toccato l'ultima carta.",
+      "reflectionPrompts": [
+        "Cosa pensi abbia fatto cadere la torre questa volta?",
+        "Cosa potrebbe cambiare Tiago nel modo di posizionare le carte?",
+        "Come ti senti quando qualcosa che provi non funziona subito?"
+      ]
+    },
+    {
+      "id": "e10",
+      "character": "👦",
+      "scenario": "André ha scelto il percorso più corto sulla mappa del tesoro, ma quel percorso in realtà aveva un fiume nel mezzo.",
+      "reflectionPrompts": [
+        "Cosa ha imparato André sull'osservare bene la mappa?",
+        "Cosa potrebbe fare prima di scegliere il percorso la prossima volta?",
+        "Un percorso che non funziona può comunque insegnarci qualcosa?"
+      ]
+    }
+  ],
+  "strategy": [
+    {
+      "id": "s1",
+      "prompt": "Come puoi attraversare il fiume senza bagnarti i piedi?",
+      "firstTry": "Hai provato a saltare di pietra in pietra, ma una delle pietre traballa molto.",
+      "hint1": "E se chiedessi aiuto a qualcuno che conosce già la strada?",
+      "hint2": "E se cercassi un ponte un po' più avanti?",
+      "answer": "Potresti cercare un ponte, chiedere aiuto a qualcuno, o costruire un piccolo sentiero con pietre extra."
+    },
+    {
+      "id": "s2",
+      "prompt": "Come puoi aprire un barattolo con il coperchio molto stretto?",
+      "firstTry": "Hai provato a girare il coperchio con le mani, ma non si allentava.",
+      "hint1": "E se usassi un panno per avere più presa?",
+      "hint2": "E se chiedessi aiuto a un adulto?",
+      "answer": "Potresti usare un panno per la presa, passare il coperchio sotto l'acqua tiepida, o chiedere aiuto."
+    },
+    {
+      "id": "s3",
+      "prompt": "Come puoi raggiungere un libro su uno scaffale alto?",
+      "firstTry": "Hai provato ad allungare il braccio il più possibile, ma non ci arrivavi.",
+      "hint1": "E se usassi uno sgabello sicuro per salire?",
+      "hint2": "E se chiedessi a qualcuno più alto di aiutarti?",
+      "answer": "Potresti usare uno sgabello sicuro, chiedere aiuto a qualcuno più alto, o usare un bastone lungo con cautela."
+    },
+    {
+      "id": "s4",
+      "prompt": "Come puoi scoprire quante biglie entrano in un barattolo senza contarle una per una?",
+      "firstTry": "Hai provato a contarle una per una, ma hai perso il conto a metà.",
+      "hint1": "E se le contassi in gruppi di 10 invece che una per una?",
+      "hint2": "E se chiedessi a qualcuno di contare insieme a te?",
+      "answer": "Potresti contare in gruppi (di 5 o 10), chiedere aiuto, o dividere le biglie in mucchietti più piccoli."
+    },
+    {
+      "id": "s5",
+      "prompt": "Come puoi montare una tenda da campeggio da solo?",
+      "firstTry": "Hai provato ad andare a memoria, ma i pali non si incastravano bene.",
+      "hint1": "E se cercassi le istruzioni fornite con la tenda?",
+      "hint2": "E se chiedessi a qualcuno di tenere una parte mentre monti l'altra?",
+      "answer": "Potresti leggere con calma le istruzioni, chiedere aiuto, o montarla un pezzo alla volta."
+    },
+    {
+      "id": "s6",
+      "prompt": "Come puoi ricordarti di portare tutto ciò che serve per la scuola domani?",
+      "firstTry": "Hai provato a fidarti solo della memoria, ma hai dimenticato la merenda.",
+      "hint1": "E se facessi una lista e la controllassi prima di uscire?",
+      "hint2": "E se preparassi lo zaino la sera prima, con calma?",
+      "answer": "Potresti fare una lista, preparare lo zaino la sera prima, o chiedere a qualcuno di aiutarti a controllare."
+    },
+    {
+      "id": "s7",
+      "prompt": "Come puoi risolvere una discussione con un amico su quale gioco fare?",
+      "firstTry": "Hai provato a insistere solo sul tuo gioco preferito, ma il tuo amico si è rattristato.",
+      "hint1": "E se proponessi di giocare a un gioco oggi e a un altro domani?",
+      "hint2": "E se decideste a sorte con qualcosa di semplice, come pari o dispari?",
+      "answer": "Potreste alternare i giochi, decidere a sorte, o trovare un terzo gioco che piace a entrambi."
+    },
+    {
+      "id": "s8",
+      "prompt": "Come puoi rendere una torre di blocchi più alta senza farla cadere?",
+      "firstTry": "Hai provato a impilare tutto velocemente, ma la torre è caduta prima di finire.",
+      "hint1": "E se mettessi i blocchi più grandi in basso e quelli più piccoli in cima?",
+      "hint2": "E se costruissi più lentamente, controllando l'equilibrio ad ogni blocco?",
+      "answer": "Potresti mettere i blocchi più grandi alla base, costruire lentamente, o allargare la base della torre."
+    },
+    {
+      "id": "s9",
+      "prompt": "Come puoi decorare un disegno in un modo diverso da come hai già fatto?",
+      "firstTry": "Hai provato a usare sempre gli stessi colori, ma volevi qualcosa di diverso.",
+      "hint1": "E se provassi un colore che non hai mai usato per questo tipo di disegno?",
+      "hint2": "E se chiedessi un'idea a qualcuno e la mescolassi con la tua?",
+      "answer": "Potresti provare colori nuovi, chiedere idee a un'altra persona, o mescolare due stili diversi."
+    },
+    {
+      "id": "s10",
+      "prompt": "Come puoi memorizzare una breve poesia che stai imparando per la scuola?",
+      "firstTry": "Hai provato a leggere la poesia una volta e a recitarla, ma ne hai dimenticato metà.",
+      "hint1": "E se dividessi la poesia in piccole parti e ne imparassi una alla volta?",
+      "hint2": "E se dicessi la poesia ad alta voce più volte, invece di leggerla in silenzio?",
+      "answer": "Potresti impararla a parti, ripeterla ad alta voce, o chiedere a qualcuno di ascoltarti recitarla."
+    }
+  ],
+  "teachback": [
+    {
+      "id": "t1",
+      "concept": "Perché dire qualcosa ad alta voce ci aiuta a ricordarla?",
+      "options": [
+        "Perché parlare forte spaventa la dimenticanza.",
+        "Perché sentirla e dirla allo stesso tempo dà al nostro cervello due modi per conservare l'informazione.",
+        "Perché è più divertente urlare."
+      ],
+      "bestIndex": 1
+    },
+    {
+      "id": "t2",
+      "concept": "Perché prestare attenzione a un dettaglio importante aiuta a risolvere i problemi?",
+      "options": [
+        "Perché il dettaglio giusto ci dà l'indizio di cui abbiamo bisogno per capire il resto.",
+        "Perché guardare con attenzione stanca meno gli occhi.",
+        "Perché i dettagli sono sempre la parte più bella."
+      ],
+      "bestIndex": 0
+    },
+    {
+      "id": "t3",
+      "concept": "Perché gli errori ci aiutano a imparare?",
+      "options": [
+        "Perché sbagliare ci mostra esattamente cosa non sappiamo ancora, così possiamo esercitarci.",
+        "Perché gli errori sono sempre colpa di qualcun altro.",
+        "Perché chi sbaglia deve smettere di provare."
+      ],
+      "bestIndex": 0
+    },
+    {
+      "id": "t4",
+      "concept": "Perché vale la pena provare un'altra strategia quando una non funziona?",
+      "options": [
+        "Perché arrendersi è sempre l'opzione più veloce.",
+        "Perché nessuna strategia funziona davvero.",
+        "Perché un problema spesso si può risolvere in più di un buon modo."
+      ],
+      "bestIndex": 2
+    },
+    {
+      "id": "t5",
+      "concept": "Perché spiegare qualcosa a un amico ci aiuta a imparare meglio?",
+      "options": [
+        "Perché spiegare ci obbliga a organizzare le idee nella testa.",
+        "Perché parlare molto stanca la gola.",
+        "Perché agli amici piace sempre ascoltare storie."
+      ],
+      "bestIndex": 0
+    },
+    {
+      "id": "t6",
+      "concept": "Perché raggruppare le informazioni in piccoli blocchi aiuta la memoria?",
+      "options": [
+        "Perché i gruppi piccoli sono più facili da ricordare rispetto a una lunga lista tutta insieme.",
+        "Perché al cervello piacciono solo i numeri pari.",
+        "Perché raggruppare rende tutto più colorato."
+      ],
+      "bestIndex": 0
+    },
+    {
+      "id": "t7",
+      "concept": "Perché di solito funziona meglio riprovare dopo un errore?",
+      "options": [
+        "Perché ripetere senza pensare garantisce sempre il successo.",
+        "Perché sappiamo già cosa non ha funzionato e possiamo aggiustare il prossimo tentativo.",
+        "Perché il secondo tentativo è sempre più facile per fortuna."
+      ],
+      "bestIndex": 1
+    },
+    {
+      "id": "t8",
+      "concept": "Perché fare domande su un errore è meglio che dire solo 'sbagliato'?",
+      "options": [
+        "Perché le domande ci aiutano a pensare a cosa è successo e a scoprire la soluzione da soli.",
+        "Perché le domande fanno sparire l'errore.",
+        "Perché è più veloce che spiegare."
+      ],
+      "bestIndex": 0
+    }
+  ]
+}

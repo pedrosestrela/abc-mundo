@@ -1,0 +1,463 @@
+{
+  "memory": [
+    {
+      "id": "m1",
+      "emoji": "🎈",
+      "items": [
+        "🍎",
+        "🚗",
+        "⭐",
+        "🐶",
+        "🎵"
+      ],
+      "technique": "Die Dinge laut zu sagen hilft uns, sie länger zu behalten!"
+    },
+    {
+      "id": "m2",
+      "emoji": "🎈",
+      "items": [
+        "🌙",
+        "🐟",
+        "🍩",
+        "🚀",
+        "🌵"
+      ],
+      "technique": "Sich ein lustiges Bild mit den Dingen zusammen vorzustellen hilft, sie im Gedächtnis zu behalten."
+    },
+    {
+      "id": "m3",
+      "emoji": "🎈",
+      "items": [
+        "🦋",
+        "🔑",
+        "🧸",
+        "🎯",
+        "🍇"
+      ],
+      "technique": "Die Dinge in kleinere Paare zu gruppieren macht es leichter, sich an sie zu erinnern."
+    },
+    {
+      "id": "m4",
+      "emoji": "🎈",
+      "items": [
+        "🐢",
+        "🎁",
+        "🌈",
+        "🧦",
+        "🍓",
+        "🚲"
+      ],
+      "technique": "Sich eine kleine Geschichte auszudenken, die die Dinge verbindet, hilft uns, die Reihenfolge zu merken."
+    },
+    {
+      "id": "m5",
+      "emoji": "🎈",
+      "items": [
+        "🥕",
+        "🐝",
+        "🎨",
+        "🥁"
+      ],
+      "technique": "Die Dinge laut zu sagen hilft uns, sie länger zu behalten!"
+    },
+    {
+      "id": "m6",
+      "emoji": "🎈",
+      "items": [
+        "🦉",
+        "🧊",
+        "🎪",
+        "🍋",
+        "🧩"
+      ],
+      "technique": "Sich ein lustiges Bild mit den Dingen zusammen vorzustellen hilft, sie im Gedächtnis zu behalten."
+    },
+    {
+      "id": "m7",
+      "emoji": "🎈",
+      "items": [
+        "🐧",
+        "🎻",
+        "🥨",
+        "🛼",
+        "🌻",
+        "🧭"
+      ],
+      "technique": "Die Dinge in kleinere Paare zu gruppieren macht es leichter, sich an sie zu erinnern."
+    },
+    {
+      "id": "m8",
+      "emoji": "🎈",
+      "items": [
+        "🐬",
+        "🎲",
+        "🧵",
+        "🍄"
+      ],
+      "technique": "Sich eine kleine Geschichte auszudenken, die die Dinge verbindet, hilft uns, die Reihenfolge zu merken."
+    },
+    {
+      "id": "m9",
+      "emoji": "🎈",
+      "items": [
+        "🦖",
+        "🎧",
+        "🥥",
+        "🧦",
+        "🚂"
+      ],
+      "technique": "Die Dinge laut zu sagen hilft uns, sie länger zu behalten!"
+    },
+    {
+      "id": "m10",
+      "emoji": "🎈",
+      "items": [
+        "🐌",
+        "🎺",
+        "🧃",
+        "🍉",
+        "🧶",
+        "🚁"
+      ],
+      "technique": "Sich ein lustiges Bild mit den Dingen zusammen vorzustellen hilft, sie im Gedächtnis zu behalten."
+    }
+  ],
+  "attention": [
+    {
+      "id": "a1",
+      "scene": "🌳🌳🌳🐿️🌳🌳🌳🌳",
+      "question": "Finde das Tier, das sich zwischen den Bäumen versteckt.",
+      "targetEmoji": "🐿️",
+      "hint": "Suche nach etwas, das kein Baum ist."
+    },
+    {
+      "id": "a2",
+      "scene": "☁️☁️🐦☁️☁️☁️☁️☁️",
+      "question": "Finde den Vogel, der sich in den Wolken versteckt.",
+      "targetEmoji": "🐦",
+      "hint": "Nur ein Element ist anders."
+    },
+    {
+      "id": "a3",
+      "scene": "🍪🍪🍪🍪🍩🍪🍪🍪",
+      "question": "Finde den Donut zwischen den Keksen.",
+      "targetEmoji": "🍩",
+      "hint": "Es hat ein Loch in der Mitte."
+    },
+    {
+      "id": "a4",
+      "scene": "🚗🚗🚗🚙🚗🚗🚗🚗",
+      "question": "Finde das Auto, das anders ist als die anderen.",
+      "targetEmoji": "🚙",
+      "hint": "Es ist etwas höher als die anderen."
+    },
+    {
+      "id": "a5",
+      "scene": "⚽⚽⚽⚽🏀⚽⚽⚽",
+      "question": "Finde den Basketball zwischen den Fußbällen.",
+      "targetEmoji": "🏀",
+      "hint": "Es hat eine andere Farbe."
+    },
+    {
+      "id": "a6",
+      "scene": "🐝🐝🐝🦋🐝🐝🐝🐝",
+      "question": "Finde den Schmetterling zwischen den Bienen.",
+      "targetEmoji": "🦋",
+      "hint": "Es summt nicht."
+    },
+    {
+      "id": "a7",
+      "scene": "🌸🌸🌸🌸🌵🌸🌸🌸",
+      "question": "Finde den Kaktus zwischen den Blumen.",
+      "targetEmoji": "🌵",
+      "hint": "Es hat Stacheln."
+    },
+    {
+      "id": "a8",
+      "scene": "🍎🍎🍏🍎🍎🍎🍎🍎",
+      "question": "Finde den grünen Apfel zwischen den roten.",
+      "targetEmoji": "🍏",
+      "hint": "Die Farbe ist das, was sich ändert."
+    },
+    {
+      "id": "a9",
+      "scene": "⭐⭐⭐🌟⭐⭐⭐⭐",
+      "question": "Finde den helleren Stern zwischen den anderen.",
+      "targetEmoji": "🌟",
+      "hint": "Achte auf den Glanz drumherum."
+    },
+    {
+      "id": "a10",
+      "scene": "🐟🐟🐟🐡🐟🐟🐟🐟",
+      "question": "Finde den Kugelfisch zwischen den kleinen Fischen.",
+      "targetEmoji": "🐡",
+      "hint": "Er ist runder als die anderen."
+    }
+  ],
+  "errors": [
+    {
+      "id": "e1",
+      "character": "🧒",
+      "scenario": "Tom versuchte, die Bauklötze zu stapeln, aber der Turm fiel um, als er den größeren Block obenauf setzte.",
+      "reflectionPrompts": [
+        "Was glaubst du, ist mit dem Turm passiert?",
+        "Was könnte Tom beim nächsten Mal versuchen?",
+        "Glaubst du, es erneut zu versuchen kann helfen zu lernen?"
+      ]
+    },
+    {
+      "id": "e2",
+      "character": "👧",
+      "scenario": "Ines wollte eine Katze zeichnen, aber die Ohren wurden zu groß und sie mochte das Ergebnis nicht.",
+      "reflectionPrompts": [
+        "Was hat Ines über das Zeichnen von Ohren gelernt?",
+        "Was könnte sie beim nächsten Bild anders machen?",
+        "Glaubst du, dass auch Künstler Bilder machen, die ihnen zunächst nicht gefallen?"
+      ]
+    },
+    {
+      "id": "e3",
+      "character": "🧒",
+      "scenario": "Rui rechnete 3 + 4 und sagte, es sei 6, aber die richtige Antwort war eigentlich 7.",
+      "reflectionPrompts": [
+        "Wo, glaubst du, könnte sich Rui verzählt haben?",
+        "Welche Strategie könnte er nutzen, um die Rechnung zu prüfen?",
+        "Was zeigt uns dieser Fehler, das wir noch üben können?"
+      ]
+    },
+    {
+      "id": "e4",
+      "character": "👦",
+      "scenario": "Diogo versuchte, ohne Stützräder Rad zu fahren, und fiel gleich nach den ersten Tritten hin.",
+      "reflectionPrompts": [
+        "Was, glaubst du, hat Diogos Körper beim Hinfallen gelernt?",
+        "Woran könnte er sich beim nächsten Mal besser festhalten?",
+        "Glaubst du, dass auch gute Radfahrer beim Lernen hingefallen sind?"
+      ]
+    },
+    {
+      "id": "e5",
+      "character": "👧",
+      "scenario": "Maria sagte der Lehrerin, die Hauptstadt Portugals sei Porto, aber die richtige Antwort war Lissabon.",
+      "reflectionPrompts": [
+        "Warum, glaubst du, könnte sie die Städte verwechselt haben?",
+        "Wie kann Maria sich die richtige Antwort besser merken?",
+        "Bedeutet eine falsche Antwort, dass wir gar nichts wissen?"
+      ]
+    },
+    {
+      "id": "e6",
+      "character": "🧒",
+      "scenario": "Pedro versuchte ein Puzzle zu lösen und setzte ein Teil mehrmals an die falsche Stelle.",
+      "reflectionPrompts": [
+        "Was könnte Pedro über die Form des Teils entdeckt haben?",
+        "Welche andere Art, das Teil zu betrachten, könnte helfen?",
+        "Glaubst du, verschiedene Teile auszuprobieren ist eine gute Art zu lernen?"
+      ]
+    },
+    {
+      "id": "e7",
+      "character": "👦",
+      "scenario": "Miguel schrieb das Wort 'gato' (Katze) als 'gatu' in sein Heft.",
+      "reflectionPrompts": [
+        "Welchen Laut, glaubst du, hat Miguel verwechselt?",
+        "Wie kann er das Wort beim nächsten Mal prüfen?",
+        "Was lehrt uns diese Art von Fehler über Vokale?"
+      ]
+    },
+    {
+      "id": "e8",
+      "character": "👧",
+      "scenario": "Sofia versuchte ein neues Lied zu singen und vertauschte die Reihenfolge zweier Textteile.",
+      "reflectionPrompts": [
+        "Was, glaubst du, würde Sofia helfen, sich die richtige Reihenfolge zu merken?",
+        "Glaubst du, es langsamer noch einmal zu singen könnte helfen?",
+        "Ist es normal, Fehler zu machen, wenn man etwas Neues lernt?"
+      ]
+    },
+    {
+      "id": "e9",
+      "character": "🧒",
+      "scenario": "Tiago versuchte einen Kartenturm zu bauen, aber er fiel um, sobald er die letzte Karte berührte.",
+      "reflectionPrompts": [
+        "Was, glaubst du, hat den Turm dieses Mal umfallen lassen?",
+        "Was könnte Tiago daran ändern, wie er die Karten platziert?",
+        "Wie fühlst du dich, wenn etwas, das du versuchst, nicht sofort klappt?"
+      ]
+    },
+    {
+      "id": "e10",
+      "character": "👦",
+      "scenario": "Andre wählte den kürzesten Weg auf der Schatzkarte, aber auf diesem Weg lag mitten drin ein Fluss.",
+      "reflectionPrompts": [
+        "Was hat Andre darüber gelernt, die Karte genau zu betrachten?",
+        "Was könnte er beim nächsten Mal vor der Wegwahl tun?",
+        "Kann ein Weg, der nicht funktioniert, uns trotzdem etwas lehren?"
+      ]
+    }
+  ],
+  "strategy": [
+    {
+      "id": "s1",
+      "prompt": "Wie kannst du den Fluss überqueren, ohne dir die Füße nass zu machen?",
+      "firstTry": "Du hast versucht, von Stein zu Stein zu springen, aber einer der Steine wackelt stark.",
+      "hint1": "Was, wenn du jemanden um Hilfe bittest, der den Weg schon kennt?",
+      "hint2": "Was, wenn du etwas weiter vorne nach einer Brücke suchst?",
+      "answer": "Du könntest eine Brücke suchen, jemanden um Hilfe bitten oder mit zusätzlichen Steinen einen kleinen Weg bauen."
+    },
+    {
+      "id": "s2",
+      "prompt": "Wie kannst du ein Glas öffnen, dessen Deckel sehr fest sitzt?",
+      "firstTry": "Du hast versucht, den Deckel mit den Händen zu drehen, aber er löste sich nicht.",
+      "hint1": "Was, wenn du ein Tuch benutzt, um besseren Halt zu bekommen?",
+      "hint2": "Was, wenn du einen Erwachsenen um Hilfe bittest?",
+      "answer": "Du könntest ein Tuch zum Festhalten benutzen, den Deckel unter warmes Wasser halten oder um Hilfe bitten."
+    },
+    {
+      "id": "s3",
+      "prompt": "Wie kannst du an ein Buch in einem hohen Regal kommen?",
+      "firstTry": "Du hast versucht, so weit wie möglich zu greifen, aber du kamst nicht dran.",
+      "hint1": "Was, wenn du einen sicheren kleinen Hocker zum Hochsteigen benutzt?",
+      "hint2": "Was, wenn du jemand Größeren um Hilfe bittest?",
+      "answer": "Du könntest einen sicheren Hocker benutzen, jemand Größeren um Hilfe bitten oder vorsichtig einen langen Stock verwenden."
+    },
+    {
+      "id": "s4",
+      "prompt": "Wie kannst du herausfinden, wie viele Murmeln in ein Glas passen, ohne sie einzeln zu zählen?",
+      "firstTry": "Du hast versucht, sie einzeln zu zählen, aber auf halbem Weg den Überblick verloren.",
+      "hint1": "Was, wenn du sie in Zehnergruppen statt einzeln zählst?",
+      "hint2": "Was, wenn du jemanden bittest, mit dir zu zählen?",
+      "answer": "Du könntest in Gruppen (zu 5 oder 10) zählen, um Hilfe bitten oder die Murmeln in kleinere Häufchen teilen."
+    },
+    {
+      "id": "s5",
+      "prompt": "Wie kannst du ein Zelt allein aufbauen?",
+      "firstTry": "Du hast es aus dem Gedächtnis versucht, aber die Stangen passten nicht gut zusammen.",
+      "hint1": "Was, wenn du nach der Anleitung suchst, die mit dem Zelt kam?",
+      "hint2": "Was, wenn du jemanden bittest, einen Teil zu halten, während du den anderen aufbaust?",
+      "answer": "Du könntest die Anleitung in Ruhe lesen, um Hilfe bitten oder es Stück für Stück aufbauen."
+    },
+    {
+      "id": "s6",
+      "prompt": "Wie kannst du dich daran erinnern, morgen alles für die Schule mitzubringen?",
+      "firstTry": "Du hast dich nur auf dein Gedächtnis verlassen, aber dein Pausenbrot vergessen.",
+      "hint1": "Was, wenn du eine Liste machst und sie vor dem Losgehen prüfst?",
+      "hint2": "Was, wenn du deine Tasche schon am Vorabend in Ruhe packst?",
+      "answer": "Du könntest eine Liste machen, die Tasche am Vorabend packen oder jemanden bitten, dir beim Prüfen zu helfen."
+    },
+    {
+      "id": "s7",
+      "prompt": "Wie kannst du einen Streit mit einem Freund darüber lösen, welches Spiel ihr spielt?",
+      "firstTry": "Du hast nur auf dein Lieblingsspiel bestanden, aber dein Freund war traurig.",
+      "hint1": "Was, wenn du vorschlägst, heute ein Spiel und morgen ein anderes zu spielen?",
+      "hint2": "Was, wenn ihr einfach auslost, zum Beispiel mit gerade oder ungerade?",
+      "answer": "Ihr könntet abwechselnd Spiele wählen, auslosen oder ein drittes Spiel finden, das euch beiden gefällt."
+    },
+    {
+      "id": "s8",
+      "prompt": "Wie kannst du einen Turm aus Bauklötzen höher bauen, ohne dass er umfällt?",
+      "firstTry": "Du hast versucht, schnell alles zu stapeln, aber der Turm fiel um, bevor du fertig warst.",
+      "hint1": "Was, wenn du die größeren Blöcke unten und die kleineren oben platzierst?",
+      "hint2": "Was, wenn du langsamer baust und bei jedem Block das Gleichgewicht prüfst?",
+      "answer": "Du könntest größere Blöcke an die Basis setzen, langsam bauen oder die Basis breiter machen."
+    },
+    {
+      "id": "s9",
+      "prompt": "Wie kannst du ein Bild auf eine andere Weise verzieren als bisher?",
+      "firstTry": "Du hast immer die gleichen Farben benutzt, wolltest aber etwas anderes.",
+      "hint1": "Was, wenn du eine Farbe ausprobierst, die du für diese Art Bild noch nie benutzt hast?",
+      "hint2": "Was, wenn du jemanden um eine Idee bittest und sie mit deiner eigenen mischst?",
+      "answer": "Du könntest neue Farben ausprobieren, jemanden um Ideen bitten oder zwei verschiedene Stile mischen."
+    },
+    {
+      "id": "s10",
+      "prompt": "Wie kannst du dir ein kurzes Gedicht merken, das du für die Schule lernst?",
+      "firstTry": "Du hast das Gedicht einmal gelesen und versucht, es aufzusagen, aber die Hälfte vergessen.",
+      "hint1": "Was, wenn du das Gedicht in kleine Teile aufteilst und einen nach dem anderen lernst?",
+      "hint2": "Was, wenn du das Gedicht mehrmals laut sagst, statt es still zu lesen?",
+      "answer": "Du könntest es in Teilen lernen, es laut wiederholen oder jemanden bitten, dir zuzuhören."
+    }
+  ],
+  "teachback": [
+    {
+      "id": "t1",
+      "concept": "Warum hilft es, etwas laut zu sagen, um es sich zu merken?",
+      "options": [
+        "Weil lautes Sprechen das Vergessen verscheucht.",
+        "Weil Hören und Sagen zugleich unserem Gehirn zwei Wege gibt, die Information zu speichern.",
+        "Weil es mehr Spaß macht zu schreien."
+      ],
+      "bestIndex": 1
+    },
+    {
+      "id": "t2",
+      "concept": "Warum hilft es, auf ein wichtiges Detail zu achten, um Probleme zu lösen?",
+      "options": [
+        "Weil das richtige Detail uns den Hinweis gibt, den wir brauchen, um den Rest zu verstehen.",
+        "Weil genaues Hinsehen die Augen weniger ermüdet.",
+        "Weil Details immer der schönste Teil sind."
+      ],
+      "bestIndex": 0
+    },
+    {
+      "id": "t3",
+      "concept": "Warum helfen uns Fehler beim Lernen?",
+      "options": [
+        "Weil ein Fehler uns genau zeigt, was wir noch nicht wissen, damit wir es üben können.",
+        "Weil Fehler immer die Schuld einer anderen Person sind.",
+        "Weil man aufhören muss, es zu versuchen, wenn man einen Fehler macht."
+      ],
+      "bestIndex": 0
+    },
+    {
+      "id": "t4",
+      "concept": "Warum lohnt es sich, eine andere Strategie zu versuchen, wenn eine nicht funktioniert?",
+      "options": [
+        "Weil aufgeben immer die schnellste Option ist.",
+        "Weil keine Strategie wirklich funktioniert.",
+        "Weil ein Problem oft auf mehr als eine gute Weise gelöst werden kann."
+      ],
+      "bestIndex": 2
+    },
+    {
+      "id": "t5",
+      "concept": "Warum hilft es uns, besser zu lernen, wenn wir etwas einem Freund erklären?",
+      "options": [
+        "Weil das Erklären uns zwingt, die Ideen im Kopf zu ordnen.",
+        "Weil viel Reden den Hals müde macht.",
+        "Weil Freunde immer gerne Geschichten hören."
+      ],
+      "bestIndex": 0
+    },
+    {
+      "id": "t6",
+      "concept": "Warum hilft es dem Gedächtnis, Informationen in kleine Gruppen zu ordnen?",
+      "options": [
+        "Weil kleine Gruppen leichter zu behalten sind als eine lange Liste auf einmal.",
+        "Weil das Gehirn nur gerade Zahlen mag.",
+        "Weil Gruppieren alles bunter macht."
+      ],
+      "bestIndex": 0
+    },
+    {
+      "id": "t7",
+      "concept": "Warum funktioniert es meist besser, nach einem Fehler erneut zu üben?",
+      "options": [
+        "Weil gedankenloses Wiederholen immer Erfolg garantiert.",
+        "Weil wir jetzt wissen, was nicht funktioniert hat, und den nächsten Versuch anpassen können.",
+        "Weil der zweite Versuch immer aus Glück leichter ist."
+      ],
+      "bestIndex": 1
+    },
+    {
+      "id": "t8",
+      "concept": "Warum ist es besser, Fragen zu einem Fehler zu stellen, statt nur 'falsch' zu sagen?",
+      "options": [
+        "Weil Fragen uns helfen, über das Geschehene nachzudenken und die Lösung selbst zu finden.",
+        "Weil Fragen den Fehler verschwinden lassen.",
+        "Weil es schneller ist als zu erklären."
+      ],
+      "bestIndex": 0
+    }
+  ]
+}

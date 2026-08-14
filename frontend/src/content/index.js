@@ -257,6 +257,14 @@ import newsroomZh from "./newsroom.zh.json";
 import newsroomEs from "./newsroom.es.json";
 import newsroomIt from "./newsroom.it.json";
 
+import learningStrategiesPt from "./learningStrategies.pt.json";
+import learningStrategiesEn from "./learningStrategies.en.json";
+import learningStrategiesDe from "./learningStrategies.de.json";
+import learningStrategiesFr from "./learningStrategies.fr.json";
+import learningStrategiesZh from "./learningStrategies.zh.json";
+import learningStrategiesEs from "./learningStrategies.es.json";
+import learningStrategiesIt from "./learningStrategies.it.json";
+
 import communicationPt from "./communication.pt.json";
 import communicationEn from "./communication.en.json";
 import communicationDe from "./communication.de.json";
@@ -298,6 +306,7 @@ const FINANCIAL_ACTIVITIES = { pt: financialActivitiesPt, en: financialActivitie
 const THINKING = { pt: thinkingPt, en: thinkingEn, de: thinkingDe, fr: thinkingFr, zh: thinkingZh, es: thinkingEs, it: thinkingIt };
 const NEWSROOM = { pt: newsroomPt, en: newsroomEn, de: newsroomDe, fr: newsroomFr, zh: newsroomZh, es: newsroomEs, it: newsroomIt };
 const COMMUNICATION = { pt: communicationPt, en: communicationEn, de: communicationDe, fr: communicationFr, zh: communicationZh, es: communicationEs, it: communicationIt };
+const LEARNING_STRATEGIES = { pt: learningStrategiesPt, en: learningStrategiesEn, de: learningStrategiesDe, fr: learningStrategiesFr, zh: learningStrategiesZh, es: learningStrategiesEs, it: learningStrategiesIt };
 const RHYMES = { pt: rhymesPt, en: rhymesEn, de: rhymesDe, fr: rhymesFr, zh: rhymesZh, es: rhymesEs, it: rhymesIt };
 const HOUSE_SYSTEMS = { pt: houseSystemsPt, en: houseSystemsEn, de: houseSystemsDe, fr: houseSystemsFr, zh: houseSystemsZh, es: houseSystemsEs, it: houseSystemsIt };
 const CITY_SYSTEMS = { pt: citySystemsPt, en: citySystemsEn, de: citySystemsDe, fr: citySystemsFr, zh: citySystemsZh, es: citySystemsEs, it: citySystemsIt };
@@ -427,6 +436,10 @@ export function getNewsroom(langCode) {
 
 export function getCommunication(langCode) {
   return COMMUNICATION[langCode] || COMMUNICATION.pt;
+}
+
+export function getLearningStrategies(langCode) {
+  return LEARNING_STRATEGIES[langCode] || LEARNING_STRATEGIES.pt;
 }
 
 export function getHouseSystems(langCode) {
