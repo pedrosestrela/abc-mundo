@@ -1,6 +1,6 @@
 [
   {
-    "id": "chanson-du-soleil-abc",
+    "id": "cancao-do-abc",
     "title": "La Chanson du Soleil ABC",
     "lyrics": [
       "A, B, C, viens chanter gaiement",
@@ -11,7 +11,7 @@
     "illustrationId": "sun-friends"
   },
   {
-    "id": "lettres-sauteuses",
+    "id": "letras-saltitantes",
     "title": "Les Lettres Sauteuses",
     "lyrics": [
       "Saute le M, saute le N aussi",
@@ -22,7 +22,7 @@
     "illustrationId": "jumping-letters"
   },
   {
-    "id": "cercle-des-amis-alphabet",
+    "id": "amigos-do-alfabeto",
     "title": "Le Cercle des Amis de l'Alphabet",
     "lyrics": [
       "W, X, Y se donnent la main",
@@ -33,7 +33,7 @@
     "illustrationId": "alphabet-circle"
   },
   {
-    "id": "chanson-de-la-lune",
+    "id": "cancao-da-lua",
     "title": "La Chanson de la Lune et des Étoiles",
     "lyrics": [
       "La lune brille, les lettres vont dormir",
@@ -42,5 +42,225 @@
       "Demain on joue, sans tarder"
     ],
     "illustrationId": "starry-night"
+  },
+  {
+    "id": "cancao-de-contar",
+    "title": "La Chanson pour Compter",
+    "lyrics": [
+      "Un, deux, trois, comptons sans arrêt",
+      "Quatre, cinq, six, on continuait",
+      "Sept, huit, neuf, dix arrivait",
+      "Compter les nombres, quel régal complet"
+    ],
+    "illustrationId": "counting-blocks"
+  },
+  {
+    "id": "cancao-das-formas",
+    "title": "La Chanson des Formes",
+    "lyrics": [
+      "Rond est le cercle, il roule sans cesse",
+      "Quatre côtés égaux, le carré sans faiblesse",
+      "Trois pointes a le triangle plein d'allégresse",
+      "Des formes dans le monde, apprends-les sans paresse"
+    ],
+    "illustrationId": "shapes-fun"
+  },
+  {
+    "id": "cancao-dos-dias",
+    "title": "La Chanson des Jours de la Semaine",
+    "lyrics": [
+      "Lundi, mardi, mercredi passent vite",
+      "Jeudi, vendredi, le week-end s'invite",
+      "Samedi et dimanche, la fête est écrite",
+      "Sept jours heureux, quelle jolie suite"
+    ],
+    "illustrationId": "sun-friends"
+  },
+  {
+    "id": "festa-das-vogais",
+    "title": "La Fête des Voyelles",
+    "lyrics": [
+      "A, A, A, ouvre la bouche et chante avec moi",
+      "E, E, E, un sourire, tu vois",
+      "I, I, I, les lèvres serrées, ma foi",
+      "O, O, O, bien rond, quelle joie",
+      "U, U, U, les lèvres en émoi",
+      "Cinq voyelles dansent, regarde-les !"
+    ],
+    "illustrationId": "sun-friends"
+  },
+  {
+    "id": "comboio-das-silabas-song",
+    "title": "La Chanson du Train des Syllabes",
+    "lyrics": [
+      "MA, ME, MI, MO, MU, le train passe devant",
+      "PA, PE, PI, PO, PU, chante en avançant",
+      "TA, TE, TI, TO, TU, tout le monde chantant",
+      "Assemble-les vite, un mot naît maintenant",
+      "Deux syllabes ensemble font un mot vivant",
+      "Viens apprendre avec moi, joyeusement !"
+    ],
+    "illustrationId": "jumping-letters"
+  },
+  {
+    "id": "um-dois-tres-contar",
+    "title": "Un, Deux, Trois, Comptons",
+    "lyrics": [
+      "Un, deux, trois, comptons avec joie",
+      "Quatre, cinq, six, regarde-moi",
+      "Sept, huit, neuf, doigts en émoi",
+      "Dix petits doigts prêts à chaque fois",
+      "Recompte encore, c'est un jeu, tu vois",
+      "Des nombres partout, viens avec moi !"
+    ],
+    "illustrationId": "counting-blocks"
+  },
+  {
+    "id": "dez-dedos-matematicos",
+    "title": "Dix Doigts Mathématiques",
+    "lyrics": [
+      "Deux plus deux, ensemble ça fait quatre, tu vois",
+      "Cinq moins deux, il en reste trois, ma foi",
+      "Dix petits doigts aident à compter à chaque fois",
+      "Enlève-en, soustraire est facile, crois-moi",
+      "Les maths sont amusantes quand on chante avec joie",
+      "Additionne, enlève, compte bien, continuons ensemble !"
+    ],
+    "illustrationId": "counting-blocks"
+  },
+  {
+    "id": "planetas-a-girar",
+    "title": "Les Planètes qui Tournent",
+    "lyrics": [
+      "Mercure est le plus proche, tourne vite autour du soleil",
+      "Vénus est brûlante, brille comme un vermeil",
+      "La Terre est notre maison, bleue, pleine de vie et de soleil",
+      "Mars est rouge et poussiéreuse, sans pareil",
+      "Jupiter est géante, la plus grande, sans réveil",
+      "Saturne a des anneaux, brillant sans sommeil",
+      "Uranus et Neptune, bleues, loin du soleil",
+      "Huit planètes dansent, quelle merveille !"
+    ],
+    "illustrationId": "starry-night"
+  },
+  {
+    "id": "viagem-da-gota-song",
+    "title": "Le Voyage de la Goutte",
+    "lyrics": [
+      "Dans la mer je suis né, mouillée et joyeuse",
+      "Le soleil m'a réchauffée, montée, gracieuse",
+      "Devenue nuage blanc là-haut, curieuse",
+      "Puis tombée en pluie sur la terre, vertueuse",
+      "J'ai coulé dans la rivière, silencieuse",
+      "Et suis retournée à la mer, généreuse",
+      "Le cycle de l'eau, jamais paresseuse",
+      "Un voyage éternel, chante, joyeuse !"
+    ],
+    "illustrationId": "sun-friends"
+  },
+  {
+    "id": "meu-corpo-maquina",
+    "title": "Mon Corps est une Machine",
+    "lyrics": [
+      "Mon cœur fait boum-boum, sans jamais s'arrêter",
+      "Mon sang circule et va tout transporter",
+      "Mes poumons se remplissent d'air à respirer",
+      "Mon cerveau pense et donne des ordres sans cesser",
+      "Mes muscles tirent pour me faire bouger",
+      "Mes os sont solides, ils m'aident à grandir sans tarder",
+      "Mon corps est une machine, quel émerveillement",
+      "J'en prends soin chaque jour, tendrement !"
+    ],
+    "illustrationId": "shapes-fun"
+  },
+  {
+    "id": "poupar-para-depois",
+    "title": "Économiser pour Plus Tard",
+    "lyrics": [
+      "J'ai une tirelire, rose et brillante aussi",
+      "Chaque pièce gagnée, je la mets ici",
+      "Je ne dépense pas tout, j'attends, c'est ainsi",
+      "Un jour j'aurai assez pour un beau souci",
+      "Économiser, c'est choisir ce que je veux vraiment ici",
+      "Au lieu de tout dépenser d'un coup, aujourd'hui",
+      "Doucement les pièces s'accumulent, réunies",
+      "Et mon plus grand rêve, un jour, sera accompli !"
+    ],
+    "illustrationId": "counting-blocks"
+  },
+  {
+    "id": "bandeiras-do-mundo",
+    "title": "Les Drapeaux du Monde",
+    "lyrics": [
+      "Vert et rouge, le Portugal brille fort",
+      "Bleu, blanc et rouge, la France chante encore",
+      "Noir, rouge et jaune, l'Allemagne est le décor",
+      "Rouge et jaune, l'Espagne danse alors",
+      "Vert, blanc et rouge, l'Italie prend son essor",
+      "Rouge à étoiles, la Chine défile encore",
+      "Chaque drapeau raconte une histoire, un trésor",
+      "Le monde est coloré, célébrons-le, d'accord !"
+    ],
+    "illustrationId": "alphabet-circle"
+  },
+  {
+    "id": "norte-sul-este-oeste",
+    "title": "Nord, Sud, Est et Ouest",
+    "lyrics": [
+      "Une boussole a une aiguille qui montre toujours",
+      "Le Nord, où l'étoile polaire brille un jour",
+      "Le Sud est juste en face, dans son détour",
+      "L'Est est où le soleil se lève à son tour",
+      "L'Ouest est où le soleil se couche sans retour",
+      "Nord, sud, est, ouest, apprends ton parcours",
+      "Avec une carte en main, jamais perdu, toujours",
+      "Un explorateur du monde, voilà ton amour !"
+    ],
+    "illustrationId": "shapes-fun"
+  },
+  {
+    "id": "liga-o-circuito",
+    "title": "Allume le Circuit !",
+    "lyrics": [
+      "La pile donne l'énergie, tu sais bien pourquoi",
+      "Les fils la conduisent, reliés côte à côte, ma foi",
+      "L'ampoule s'allume quand le circuit est droit",
+      "S'il y a un trou, la lumière s'éteint, tu vois",
+      "Ne touche jamais une vraie prise, c'est risqué, crois-moi",
+      "Demande toujours à un adulte, c'est la loi",
+      "L'électricité est utile, mais respecte-la, je crois",
+      "Apprends prudemment, la science est ta voie !"
+    ],
+    "illustrationId": "jumping-letters"
+  },
+  {
+    "id": "robo-faz-o-que-eu-mandar",
+    "title": "Le Robot Fait ce que je Dis",
+    "lyrics": [
+      "Premier pas, puis le deuxième, sans erreur",
+      "Le robot fait juste ce que je dis, avec ardeur",
+      "Si je dis \"marche\", il avance en douceur",
+      "Si je dis \"stop\", il s'arrête sans peur",
+      "L'ordre des étapes compte, c'est un bonheur",
+      "Un algorithme est une recette, une saveur",
+      "Pas à pas, sans en sauter un seul, avec honneur",
+      "C'est ainsi que j'apprends à programmer, quelle valeur !"
+    ],
+    "illustrationId": "jumping-letters"
+  },
+  {
+    "id": "encontra-alguma-coisa-azul",
+    "title": "Trouve Quelque Chose de Bleu",
+    "lyrics": [
+      "Arrête-toi un instant, respire un bon coup",
+      "Pose l'écran, regarde autour de toi, debout",
+      "Trouve quelque chose de bleu, cherche partout",
+      "Un livre, une tasse, ou un coffre à ton goût",
+      "Trouve maintenant un objet rond, où que tu sois",
+      "Et une chose douce que tu tiens dans tes doigts",
+      "Le monde réel a tant de choses à voir, je crois",
+      "Va explorer, puis reviens tout me raconter, à la fois !"
+    ],
+    "illustrationId": "shapes-fun"
   }
 ]

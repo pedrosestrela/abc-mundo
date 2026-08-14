@@ -1,6 +1,6 @@
 [
   {
-    "id": "cancion-del-sol-abc",
+    "id": "cancao-do-abc",
     "title": "La Canción del Sol ABC",
     "lyrics": [
       "A, B, C, ven a cantar así",
@@ -11,7 +11,7 @@
     "illustrationId": "sun-friends"
   },
   {
-    "id": "letras-saltarinas",
+    "id": "letras-saltitantes",
     "title": "Las Letras Saltarinas",
     "lyrics": [
       "Salta la M, salta la N también",
@@ -22,7 +22,7 @@
     "illustrationId": "jumping-letters"
   },
   {
-    "id": "circulo-de-amigos-abecedario",
+    "id": "amigos-do-alfabeto",
     "title": "El Círculo de Amigos del Abecedario",
     "lyrics": [
       "W, X, Y se dan la mano",
@@ -33,7 +33,7 @@
     "illustrationId": "alphabet-circle"
   },
   {
-    "id": "cancion-de-la-luna",
+    "id": "cancao-da-lua",
     "title": "La Canción de la Luna y las Estrellas",
     "lyrics": [
       "La luna brilla, las letras van a dormir",
@@ -42,5 +42,225 @@
       "Mañana jugamos otra vez"
     ],
     "illustrationId": "starry-night"
+  },
+  {
+    "id": "cancao-de-contar",
+    "title": "La Canción de Contar",
+    "lyrics": [
+      "Uno, dos, tres, vamos a contar",
+      "Cuatro, cinco, seis, sin parar",
+      "Siete, ocho, nueve, llegó el diez",
+      "Contar números, otra vez"
+    ],
+    "illustrationId": "counting-blocks"
+  },
+  {
+    "id": "cancao-das-formas",
+    "title": "La Canción de las Formas",
+    "lyrics": [
+      "Redondo es el círculo, rueda sin parar",
+      "Cuatro lados iguales, el cuadrado va a admirar",
+      "Tres puntas tiene el triángulo feliz",
+      "Formas en el mundo, aprende quien quiz"
+    ],
+    "illustrationId": "shapes-fun"
+  },
+  {
+    "id": "cancao-dos-dias",
+    "title": "La Canción de los Días de la Semana",
+    "lyrics": [
+      "Lunes, martes, miércoles al pasar",
+      "Jueves, viernes, ya casi va a llegar",
+      "Sábado y domingo, es fin de semana",
+      "Siete días felices, qué fiesta galana"
+    ],
+    "illustrationId": "sun-friends"
+  },
+  {
+    "id": "festa-das-vogais",
+    "title": "La Fiesta de las Vocales",
+    "lyrics": [
+      "A, A, A, abre la boca y a cantar",
+      "E, E, E, sonríe sin parar",
+      "I, I, I, los labios van a apretar",
+      "O, O, O, redondita al sonar",
+      "U, U, U, los labios van a besar",
+      "¡Las cinco vocales, vamos a festejar!"
+    ],
+    "illustrationId": "sun-friends"
+  },
+  {
+    "id": "comboio-das-silabas-song",
+    "title": "La Canción del Tren de las Sílabas",
+    "lyrics": [
+      "MA, ME, MI, MO, MU, el tren va a pasar",
+      "PA, PE, PI, PO, PU, nadie lo va a parar",
+      "TA, TE, TI, TO, TU, todos a cantar",
+      "Las sílabas se juntan sin nunca fallar",
+      "Únelas deprisa y las palabras van a nacer",
+      "¡Ven conmigo ahora, es hora de aprender!"
+    ],
+    "illustrationId": "jumping-letters"
+  },
+  {
+    "id": "um-dois-tres-contar",
+    "title": "Uno, Dos, Tres, Vamos a Contar",
+    "lyrics": [
+      "Uno, dos, tres, vamos a contar",
+      "Cuatro, cinco, seis, sin parar",
+      "Siete, ocho, nueve dedos en el aire",
+      "Diez deditos, listos para jugar",
+      "Cuenta otra vez, es divertido contar",
+      "Números por todas partes, vamos a explorar!"
+    ],
+    "illustrationId": "counting-blocks"
+  },
+  {
+    "id": "dez-dedos-matematicos",
+    "title": "Diez Dedos Matemáticos",
+    "lyrics": [
+      "Dos más dos, se juntan bien, da cuatro al final",
+      "Cinco menos dos, quedan tres, es normal",
+      "Diez deditos ayudan siempre a sumar",
+      "Quita algunos, vas a aprender a restar",
+      "Las matemáticas son fáciles al cantar",
+      "¡Suma, resta, cuenta bien, vamos a continuar!"
+    ],
+    "illustrationId": "counting-blocks"
+  },
+  {
+    "id": "planetas-a-girar",
+    "title": "Los Planetas Girando",
+    "lyrics": [
+      "Mercurio es el más cerca, gira veloz del sol",
+      "Venus está caliente, brilla como un farol",
+      "La Tierra es nuestro hogar, azul y llena de vida",
+      "Marte es rojo y polvoriento, nunca se olvida",
+      "Júpiter es gigante, el más grande al girar",
+      "Saturno tiene anillos que no dejan de brillar",
+      "Urano y Neptuno, azules, lejos están",
+      "¡Ocho planetas bailan alrededor del sol, vamos ya!"
+    ],
+    "illustrationId": "starry-night"
+  },
+  {
+    "id": "viagem-da-gota-song",
+    "title": "El Viaje de la Gota",
+    "lyrics": [
+      "En el mar nací, mojadita y feliz",
+      "El sol me calentó, subí despacito, así",
+      "Me volví nube blanca allá en el cielo, mira",
+      "Luego caí como lluvia sobre la tierra, gira",
+      "Corrí por el río, siempre caminando",
+      "Y volví al mar, para seguir empezando",
+      "El ciclo del agua, sin parar, cantando",
+      "¡Un viaje eterno, ven y ve cantando!"
+    ],
+    "illustrationId": "sun-friends"
+  },
+  {
+    "id": "meu-corpo-maquina",
+    "title": "Mi Cuerpo es una Máquina",
+    "lyrics": [
+      "Mi corazón late, bum-bum, sin parar",
+      "Mi sangre viaja, todo va a llevar",
+      "Mis pulmones se llenan de aire al respirar",
+      "Mi cerebro piensa y órdenes va a mandar",
+      "Mis músculos tiran para hacerme mover",
+      "Mis huesos son fuertes, me ayudan a crecer",
+      "Mi cuerpo es una máquina, un verdadero asombro",
+      "¡Lo cuido cada día, con cariño en mi mundo!"
+    ],
+    "illustrationId": "shapes-fun"
+  },
+  {
+    "id": "poupar-para-depois",
+    "title": "Ahorrar para Después",
+    "lyrics": [
+      "Tengo una alcancía, rosadita a brillar",
+      "Cada moneda que gano, allí voy a guardar",
+      "No gasto todo enseguida, sé bien esperar",
+      "Un día tendré suficiente para comprar",
+      "Ahorrar es elegir lo que realmente quiero",
+      "En vez de gastar todo en el día primero",
+      "Despacito las monedas se juntan sin parar",
+      "¡Y mi sueño más grande un día voy a alcanzar!"
+    ],
+    "illustrationId": "counting-blocks"
+  },
+  {
+    "id": "bandeiras-do-mundo",
+    "title": "Las Banderas del Mundo",
+    "lyrics": [
+      "Verde y rojo, Portugal a brillar",
+      "Azul, blanco y rojo, Francia va a cantar",
+      "Negro, rojo y amarillo, Alemania en su lugar",
+      "Rojo y amarillo, España va a bailar",
+      "Verde, blanco y rojo, Italia va a saltar",
+      "Roja con estrellas, China va a marchar",
+      "Cada bandera cuenta una historia sin parar",
+      "¡El mundo es colorido, vamos todos a celebrar!"
+    ],
+    "illustrationId": "alphabet-circle"
+  },
+  {
+    "id": "norte-sul-este-oeste",
+    "title": "Norte, Sur, Este y Oeste",
+    "lyrics": [
+      "La brújula tiene una aguja que siempre va a marcar",
+      "El Norte, donde la estrella polar vamos a encontrar",
+      "El Sur está enfrente, hacia allá va a mirar",
+      "El Este es donde el sol de mañana va a brillar",
+      "El Oeste es donde el sol se va a acostar",
+      "Norte, sur, este, oeste, aprende a orientar",
+      "Con un mapa en la mano, nunca te vas a perder",
+      "¡Explorador del mundo, eso vas a ser!"
+    ],
+    "illustrationId": "shapes-fun"
+  },
+  {
+    "id": "liga-o-circuito",
+    "title": "¡Enciende el Circuito!",
+    "lyrics": [
+      "La pila da energía, sabes bien por qué",
+      "Los cables conducen, unidos, ya lo ves",
+      "La bombilla se enciende cuando el circuito ves",
+      "Si hay un espacio, la luz se apaga, no te fíes",
+      "Nunca toques enchufes de verdad, ¡ojo con ese envés!",
+      "Pide siempre a un adulto que te ayude, ¿ves?",
+      "La electricidad es útil, pero respeto merece",
+      "Aprende con cuidado, con la ciencia se aprende!"
+    ],
+    "illustrationId": "jumping-letters"
+  },
+  {
+    "id": "robo-faz-o-que-eu-mandar",
+    "title": "El Robot Hace lo que Yo Mando",
+    "lyrics": [
+      "Primer paso, luego el segundo, sin cambiar",
+      "El robot solo hace lo que yo voy a mandar",
+      "Si digo \"anda\", él va a caminar",
+      "Si digo \"para\", él va a parar",
+      "El orden de los pasos es muy importante, sí",
+      "Un algoritmo es una receta, de principio a fin",
+      "Paso a paso, sin ninguno saltar",
+      "¡Así es como aprendo a programar!"
+    ],
+    "illustrationId": "jumping-letters"
+  },
+  {
+    "id": "encontra-alguma-coisa-azul",
+    "title": "Encuentra Algo Azul",
+    "lyrics": [
+      "Detente un momento, respira profundo, ya",
+      "Suelta la pantalla, mira a tu alrededor, verás",
+      "Busca en el cuarto algo de color azul",
+      "Puede ser un libro, una taza o un baúl",
+      "Ahora encuentra algo redondo por el suelo",
+      "Y otra cosa suave que quepa en tu mano, ¡al vuelo!",
+      "El mundo real tiene tanto por descubrir",
+      "¡Sal, explora, y luego ven a contarme, sí!"
+    ],
+    "illustrationId": "shapes-fun"
   }
 ]

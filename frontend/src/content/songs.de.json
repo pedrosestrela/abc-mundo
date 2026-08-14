@@ -1,6 +1,6 @@
 [
   {
-    "id": "abc-sonnenlied",
+    "id": "cancao-do-abc",
     "title": "Das ABC Sonnenlied",
     "lyrics": [
       "A, B, C, sing mit mir heut",
@@ -11,7 +11,7 @@
     "illustrationId": "sun-friends"
   },
   {
-    "id": "huepfende-buchstaben",
+    "id": "letras-saltitantes",
     "title": "Die Hüpfenden Buchstaben",
     "lyrics": [
       "Hüpft das M, hüpft auch das N",
@@ -22,7 +22,7 @@
     "illustrationId": "jumping-letters"
   },
   {
-    "id": "alphabet-freundeskreis",
+    "id": "amigos-do-alfabeto",
     "title": "Der Alphabet-Freundeskreis",
     "lyrics": [
       "W, X, Y halten sich an der Hand",
@@ -33,7 +33,7 @@
     "illustrationId": "alphabet-circle"
   },
   {
-    "id": "mond-und-sterne-lied",
+    "id": "cancao-da-lua",
     "title": "Das Mond-und-Sterne-Lied",
     "lyrics": [
       "Der Mond scheint hell, die Buchstaben schlafen ein",
@@ -42,5 +42,225 @@
       "Morgen spielen wir wieder, versprochen, o je"
     ],
     "illustrationId": "starry-night"
+  },
+  {
+    "id": "cancao-de-contar",
+    "title": "Das Zähllied",
+    "lyrics": [
+      "Eins, zwei, drei, lasst uns zählen frei",
+      "Vier, fünf, sechs, es geht vorbei",
+      "Sieben, acht, neun, zehn ist dabei",
+      "Zahlen zählen, hurra, dabei"
+    ],
+    "illustrationId": "counting-blocks"
+  },
+  {
+    "id": "cancao-das-formas",
+    "title": "Das Formenlied",
+    "lyrics": [
+      "Rund ist der Kreis, er rollt den ganzen Tag",
+      "Vier gleiche Seiten, das Quadrat, was für ein Schlag",
+      "Drei Ecken hat das fröhliche Dreieck, sag",
+      "Formen in der Welt, lern sie, jeden Tag"
+    ],
+    "illustrationId": "shapes-fun"
+  },
+  {
+    "id": "cancao-dos-dias",
+    "title": "Das Wochentagslied",
+    "lyrics": [
+      "Montag, Dienstag, Mittwoch geht vorbei",
+      "Donnerstag, Freitag, fast schon frei",
+      "Samstag und Sonntag, Wochenend dabei",
+      "Sieben frohe Tage, hurra, juhei"
+    ],
+    "illustrationId": "sun-friends"
+  },
+  {
+    "id": "festa-das-vogais",
+    "title": "Das Vokal-Fest",
+    "lyrics": [
+      "A, A, A, öffne den Mund und sing mit mir",
+      "E, E, E, ein Lächeln zeig dafür",
+      "I, I, I, die Lippen eng, probier",
+      "O, O, O, rund und laut, spür",
+      "U, U, U, die Lippen küssen schier",
+      "Fünf kleine Vokale feiern hier!"
+    ],
+    "illustrationId": "sun-friends"
+  },
+  {
+    "id": "comboio-das-silabas-song",
+    "title": "Das Silbenzug-Lied",
+    "lyrics": [
+      "MA, ME, MI, MO, MU, der Zug fährt vorbei",
+      "PA, PE, PI, PO, PU, sing laut und frei",
+      "TA, TE, TI, TO, TU, alle sind dabei",
+      "Setz sie zusammen, ein Wort wird neu",
+      "Zwei Silben verbinden, ein Wort steht bereit",
+      "Komm mit mir lernen, es ist soweit!"
+    ],
+    "illustrationId": "jumping-letters"
+  },
+  {
+    "id": "um-dois-tres-contar",
+    "title": "Eins, Zwei, Drei, Lasst uns Zählen",
+    "lyrics": [
+      "Eins, zwei, drei, lasst uns zählen frei",
+      "Vier, fünf, sechs, es ist einerlei",
+      "Sieben, acht, neun, Finger stehn dabei",
+      "Zehn kleine Finger, alle sind dabei",
+      "Zähl noch einmal, das macht Freude neu",
+      "Zahlen überall, komm, sei dabei!"
+    ],
+    "illustrationId": "counting-blocks"
+  },
+  {
+    "id": "dez-dedos-matematicos",
+    "title": "Zehn Mathe-Finger",
+    "lyrics": [
+      "Zwei plus zwei, zusammen sind's vier, so schön",
+      "Fünf minus zwei bleiben drei, ganz zu verstehn",
+      "Zehn kleine Finger helfen beim Zählen gehen",
+      "Nimm ein paar weg, das Abziehen macht auch schön",
+      "Mathe macht Spaß, wenn wir singend gehen",
+      "Addieren, abziehen, weiter geht's, wir sehn!"
+    ],
+    "illustrationId": "counting-blocks"
+  },
+  {
+    "id": "planetas-a-girar",
+    "title": "Die Kreisenden Planeten",
+    "lyrics": [
+      "Merkur ist am nächsten, schnell um die Sonne dreht",
+      "Venus glüht heiß, ihr Schein weit übersteht",
+      "Erde ist zuhause, blau und voller Leben steht",
+      "Mars ist rot und staubig, wie's der Wind verweht",
+      "Jupiter, der Riese, dreht sich, wie's sich dreht",
+      "Saturns Ringe glänzen, wenn man sie besieht",
+      "Uranus und Neptun, blau und fern verweht",
+      "Acht Planeten tanzen, wo die Sonne steht!"
+    ],
+    "illustrationId": "starry-night"
+  },
+  {
+    "id": "viagem-da-gota-song",
+    "title": "Die Reise des Tropfens",
+    "lyrics": [
+      "Im Meer bin ich geboren, nass und froh dabei",
+      "Die Sonne wärmte mich, ich stieg empor, frei",
+      "Ich wurde eine weiße Wolke hoch im Himmel dabei",
+      "Dann fiel ich als Regen, über Land vorbei",
+      "Ich floss durch einen Fluss, immer weiter, treu",
+      "Und kehrte zurück ins Meer, wieder ganz neu",
+      "Der Wasserkreislauf dreht sich, ohne Reu",
+      "Eine ewige Reise, sing mit mir dabei!"
+    ],
+    "illustrationId": "sun-friends"
+  },
+  {
+    "id": "meu-corpo-maquina",
+    "title": "Mein Körper ist eine Maschine",
+    "lyrics": [
+      "Mein Herz pocht bum-bum, es hört nie auf",
+      "Mein Blut fließt weiter, im ganzen Körper drauf",
+      "Die Lungen füllen sich mit Luft im Lauf",
+      "Mein Hirn denkt nach und schickt Befehle hinauf",
+      "Die Muskeln ziehen, damit ich mich beweg auf",
+      "Die Knochen sind stark, sie tragen mich hinauf",
+      "Mein Körper ist Maschine, ein Wunder im Verlauf",
+      "Ich pflege ihn jeden Tag, das ist mein Lauf!"
+    ],
+    "illustrationId": "shapes-fun"
+  },
+  {
+    "id": "poupar-para-depois",
+    "title": "Sparen für Später",
+    "lyrics": [
+      "Ich hab ein Sparschwein, rosa und ganz klein",
+      "Jede Münze, die ich verdien, kommt hinein",
+      "Ich geb nicht alles aus, ich kann geduldig sein",
+      "Eines Tages reicht es für was ganz Fein",
+      "Sparen heißt zu wählen, was mir wichtig sein",
+      "Statt alles auszugeben, klein für klein",
+      "Langsam wachsen die Münzen, jede allein",
+      "Und eines Tages wird mein großer Traum mein sein!"
+    ],
+    "illustrationId": "counting-blocks"
+  },
+  {
+    "id": "bandeiras-do-mundo",
+    "title": "Die Flaggen der Welt",
+    "lyrics": [
+      "Grün und Rot, Portugal so hell",
+      "Blau, Weiß und Rot, Frankreich singt schnell",
+      "Schwarz, Rot und Gelb, Deutschland zur Stell'",
+      "Rot und Gelb, Spanien tanzt zur Stell'",
+      "Grün, Weiß und Rot, Italien springt so schnell",
+      "Rot mit Sternen, China marschiert schnell",
+      "Jede Flagge erzählt Geschichten, so grell",
+      "Die Welt ist bunt, feiern wir zur Stell'!"
+    ],
+    "illustrationId": "alphabet-circle"
+  },
+  {
+    "id": "norte-sul-este-oeste",
+    "title": "Norden, Süden, Osten und Westen",
+    "lyrics": [
+      "Ein Kompass hat eine Nadel, die immer zeigt",
+      "Zum Norden, wo der Polarstern sich neigt",
+      "Der Süden liegt genau gegenüber geneigt",
+      "Der Osten ist, wo die Sonne aufsteigt",
+      "Der Westen ist, wo sie sich verabschiedet, geneigt",
+      "Nord, Süd, Ost, West, lern, wohin's dich zeigt",
+      "Mit einer Karte in der Hand, nie mehr verzweigt",
+      "Ein Weltentdecker wirst du, wie's sich zeigt!"
+    ],
+    "illustrationId": "shapes-fun"
+  },
+  {
+    "id": "liga-o-circuito",
+    "title": "Schalte den Stromkreis Ein!",
+    "lyrics": [
+      "Die Batterie gibt Energie, jetzt weißt du warum",
+      "Die Drähte leiten sie, verbunden ringsherum",
+      "Die Lampe leuchtet, wenn der Kreis sich schließt darum",
+      "Ist eine Lücke da, wird's dunkel, ganz stumm",
+      "Fass niemals eine echte Steckdose an, sei nicht dumm",
+      "Bitte immer einen Erwachsenen, das ist klug",
+      "Strom ist nützlich, doch verdient Respekt genug",
+      "Lern es sicher, mit Wissenschaft als Zug!"
+    ],
+    "illustrationId": "jumping-letters"
+  },
+  {
+    "id": "robo-faz-o-que-eu-mandar",
+    "title": "Der Roboter Tut, Was Ich Sage",
+    "lyrics": [
+      "Erster Schritt, dann der zweite, ganz genau",
+      "Der Roboter tut nur, was ich sag, schau",
+      "Sag ich \"geh\", geht er los im Nu",
+      "Sag ich \"halt\", hält er sofort, im Nu",
+      "Die Reihenfolge der Schritte zählt genau",
+      "Ein Algorithmus ist ein Rezept, im Nu",
+      "Schritt für Schritt, kein Überspringen im Bau",
+      "So lerne ich programmieren, schau!"
+    ],
+    "illustrationId": "jumping-letters"
+  },
+  {
+    "id": "encontra-alguma-coisa-azul",
+    "title": "Finde Etwas Blaues",
+    "lyrics": [
+      "Halt einen Moment inne, atme tief ein, ja",
+      "Leg den Bildschirm weg, schau dich um, sofort",
+      "Finde etwas Blaues im Zimmer, an jedem Ort",
+      "Ein Buch, eine Tasse, oder ein anderer Hort",
+      "Finde jetzt was Rundes am Boden, wo du bist",
+      "Und etwas Weiches, das du in der Hand hältst",
+      "Die echte Welt hat so viel zu entdecken, gewiss",
+      "Geh raus, erkunde, erzähl mir dann, was du siehst!"
+    ],
+    "illustrationId": "shapes-fun"
   }
 ]
