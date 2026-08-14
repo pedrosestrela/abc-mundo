@@ -110,7 +110,20 @@ export default function World() {
           {selected && (
             <div className="mission-card country-card">
               <div className="mission-emoji">{selected.flag}</div>
-              <h2>{selected.name}</h2>
+              <h2>
+                {selected.name}
+                <SpeakButton text={selected.name} langCode={pair.mother} />
+                {selected.nativeName && selected.nativeLangCode && (
+                  <SpeakButton
+                    text={selected.nativeName}
+                    langCode={selected.nativeLangCode}
+                    label={selected.nativeName}
+                  />
+                )}
+              </h2>
+              {selected.nativeName && selected.nativeName !== selected.name && (
+                <p className="country-native-name">{selected.nativeName}</p>
+              )}
               <div className="country-facts-row">
                 <span>🏛️ {selected.capital}</span>
                 <span>💰 {selected.currency}</span>
@@ -126,6 +139,18 @@ export default function World() {
                 <p className="mission-text">
                   🎵 {selected.music}
                   <SpeakButton text={selected.music} langCode={pair.mother} />
+                </p>
+              )}
+              {selected.landmark && (
+                <p className="mission-text">
+                  {t("modules.worldLandmark")}: 🏛️ {selected.landmark}
+                  <SpeakButton text={selected.landmark} langCode={pair.mother} />
+                </p>
+              )}
+              {selected.food && (
+                <p className="mission-text">
+                  {t("modules.worldFood")}: 🍽️ {selected.food}
+                  <SpeakButton text={selected.food} langCode={pair.mother} />
                 </p>
               )}
               {selected.animal && (
@@ -172,7 +197,20 @@ export default function World() {
           {selected && (
             <div className="mission-card country-card">
               <div className="mission-emoji">{selected.flag}</div>
-              <h2>{selected.name}</h2>
+              <h2>
+                {selected.name}
+                <SpeakButton text={selected.name} langCode={pair.mother} />
+                {selected.nativeName && selected.nativeLangCode && (
+                  <SpeakButton
+                    text={selected.nativeName}
+                    langCode={selected.nativeLangCode}
+                    label={selected.nativeName}
+                  />
+                )}
+              </h2>
+              {selected.nativeName && selected.nativeName !== selected.name && (
+                <p className="country-native-name">{selected.nativeName}</p>
+              )}
               <div className="country-facts-row">
                 <span>🏛️ {selected.capital}</span>
                 <span>💰 {selected.currency}</span>
@@ -188,6 +226,18 @@ export default function World() {
                 <p className="mission-text">
                   🎵 {selected.music}
                   <SpeakButton text={selected.music} langCode={pair.mother} />
+                </p>
+              )}
+              {selected.landmark && (
+                <p className="mission-text">
+                  {t("modules.worldLandmark")}: 🏛️ {selected.landmark}
+                  <SpeakButton text={selected.landmark} langCode={pair.mother} />
+                </p>
+              )}
+              {selected.food && (
+                <p className="mission-text">
+                  {t("modules.worldFood")}: 🍽️ {selected.food}
+                  <SpeakButton text={selected.food} langCode={pair.mother} />
                 </p>
               )}
               {selected.animal && (

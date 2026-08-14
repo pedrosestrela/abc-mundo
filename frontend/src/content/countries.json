@@ -78,7 +78,27 @@
       "🐓",
       "🥮",
       "⛵"
-    ]
+    ],
+    "landmark": {
+      "pt": "Torre de Belém",
+      "en": "Belém Tower",
+      "de": "Turm von Belém",
+      "fr": "Tour de Belém",
+      "es": "Torre de Belém",
+      "it": "Torre di Belém",
+      "zh": "贝伦塔"
+    },
+    "food": {
+      "pt": "Pastel de nata",
+      "en": "Pastel de nata",
+      "de": "Pastel de nata",
+      "fr": "Pastel de nata",
+      "es": "Pastel de nata",
+      "it": "Pastel de nata",
+      "zh": "葡式蛋挞"
+    },
+    "nativeName": "Portugal",
+    "nativeLangCode": "pt-PT"
   },
   {
     "iso": "ES",
@@ -159,7 +179,27 @@
       "💃",
       "🥘",
       "🎸"
-    ]
+    ],
+    "landmark": {
+      "pt": "Sagrada Família",
+      "en": "Sagrada Família",
+      "de": "Sagrada Família",
+      "fr": "Sagrada Família",
+      "es": "Sagrada Família",
+      "it": "Sagrada Família",
+      "zh": "圣家堂"
+    },
+    "food": {
+      "pt": "Paella",
+      "en": "Paella",
+      "de": "Paella",
+      "fr": "Paella",
+      "es": "Paella",
+      "it": "Paella",
+      "zh": "西班牙海鲜饭"
+    },
+    "nativeName": "España",
+    "nativeLangCode": "es-ES"
   },
   {
     "iso": "FR",
@@ -240,7 +280,27 @@
       "🗼",
       "🥐",
       "🎨"
-    ]
+    ],
+    "landmark": {
+      "pt": "Torre Eiffel",
+      "en": "Eiffel Tower",
+      "de": "Eiffelturm",
+      "fr": "Tour Eiffel",
+      "es": "Torre Eiffel",
+      "it": "Torre Eiffel",
+      "zh": "埃菲尔铁塔"
+    },
+    "food": {
+      "pt": "Croissant",
+      "en": "Croissant",
+      "de": "Croissant",
+      "fr": "Croissant",
+      "es": "Croissant",
+      "it": "Croissant",
+      "zh": "羊角面包"
+    },
+    "nativeName": "France",
+    "nativeLangCode": "fr-FR"
   },
   {
     "iso": "DE",
@@ -321,7 +381,27 @@
       "🏰",
       "🥨",
       "🚗"
-    ]
+    ],
+    "landmark": {
+      "pt": "Portão de Brandemburgo",
+      "en": "Brandenburg Gate",
+      "de": "Brandenburger Tor",
+      "fr": "Porte de Brandebourg",
+      "es": "Puerta de Brandeburgo",
+      "it": "Porta di Brandeburgo",
+      "zh": "勃兰登堡门"
+    },
+    "food": {
+      "pt": "Pretzel",
+      "en": "Pretzel",
+      "de": "Brezel",
+      "fr": "Bretzel",
+      "es": "Pretzel",
+      "it": "Pretzel",
+      "zh": "椒盐卷饼"
+    },
+    "nativeName": "Deutschland",
+    "nativeLangCode": "de-DE"
   },
   {
     "iso": "IT",
@@ -402,7 +482,27 @@
       "🍕",
       "🎭",
       "🏛️"
-    ]
+    ],
+    "landmark": {
+      "pt": "Coliseu",
+      "en": "Colosseum",
+      "de": "Kolosseum",
+      "fr": "Colisée",
+      "es": "Coliseo",
+      "it": "Colosseo",
+      "zh": "斗兽场"
+    },
+    "food": {
+      "pt": "Pizza",
+      "en": "Pizza",
+      "de": "Pizza",
+      "fr": "Pizza",
+      "es": "Pizza",
+      "it": "Pizza",
+      "zh": "披萨"
+    },
+    "nativeName": "Italia",
+    "nativeLangCode": "it-IT"
   },
   {
     "iso": "GB",
@@ -483,7 +583,27 @@
       "🎡",
       "☂️",
       "🚌"
-    ]
+    ],
+    "landmark": {
+      "pt": "Big Ben",
+      "en": "Big Ben",
+      "de": "Big Ben",
+      "fr": "Big Ben",
+      "es": "Big Ben",
+      "it": "Big Ben",
+      "zh": "大本钟"
+    },
+    "food": {
+      "pt": "Fish and chips",
+      "en": "Fish and chips",
+      "de": "Fish and Chips",
+      "fr": "Fish and chips",
+      "es": "Fish and chips",
+      "it": "Fish and chips",
+      "zh": "炸鱼薯条"
+    },
+    "nativeName": "United Kingdom",
+    "nativeLangCode": "en-GB"
   },
   {
     "iso": "US",
@@ -564,7 +684,27 @@
       "🗽",
       "🍔",
       "🏈"
-    ]
+    ],
+    "landmark": {
+      "pt": "Estátua da Liberdade",
+      "en": "Statue of Liberty",
+      "de": "Freiheitsstatue",
+      "fr": "Statue de la Liberté",
+      "es": "Estatua de la Libertad",
+      "it": "Statua della Libertà",
+      "zh": "自由女神像"
+    },
+    "food": {
+      "pt": "Hambúrguer",
+      "en": "Hamburger",
+      "de": "Hamburger",
+      "fr": "Hamburger",
+      "es": "Hamburguesa",
+      "it": "Hamburger",
+      "zh": "汉堡包"
+    },
+    "nativeName": "United States",
+    "nativeLangCode": "en-US"
   },
   {
     "iso": "BR",
@@ -645,7 +785,27 @@
       "⚽",
       "🎉",
       "🌴"
-    ]
+    ],
+    "landmark": {
+      "pt": "Cristo Redentor",
+      "en": "Christ the Redeemer",
+      "de": "Christus der Erlöser",
+      "fr": "Christ Rédempteur",
+      "es": "Cristo Redentor",
+      "it": "Cristo Redentore",
+      "zh": "救世基督像"
+    },
+    "food": {
+      "pt": "Feijoada",
+      "en": "Feijoada",
+      "de": "Feijoada",
+      "fr": "Feijoada",
+      "es": "Feijoada",
+      "it": "Feijoada",
+      "zh": "黑豆炖肉"
+    },
+    "nativeName": "Brasil",
+    "nativeLangCode": "pt-BR"
   },
   {
     "iso": "CN",
@@ -726,7 +886,27 @@
       "🐉",
       "🥟",
       "🏯"
-    ]
+    ],
+    "landmark": {
+      "pt": "Grande Muralha da China",
+      "en": "Great Wall of China",
+      "de": "Chinesische Mauer",
+      "fr": "Grande Muraille de Chine",
+      "es": "Gran Muralla China",
+      "it": "Grande Muraglia Cinese",
+      "zh": "长城"
+    },
+    "food": {
+      "pt": "Bolinhos de massa",
+      "en": "Dumplings",
+      "de": "Jiaozi",
+      "fr": "Raviolis chinois",
+      "es": "Dumplings",
+      "it": "Ravioli cinesi",
+      "zh": "饺子"
+    },
+    "nativeName": "中国",
+    "nativeLangCode": "zh-CN"
   },
   {
     "iso": "JP",
@@ -807,7 +987,27 @@
       "🌸",
       "🍣",
       "⛩️"
-    ]
+    ],
+    "landmark": {
+      "pt": "Monte Fuji",
+      "en": "Mount Fuji",
+      "de": "Fuji-Berg",
+      "fr": "Mont Fuji",
+      "es": "Monte Fuji",
+      "it": "Monte Fuji",
+      "zh": "富士山"
+    },
+    "food": {
+      "pt": "Sushi",
+      "en": "Sushi",
+      "de": "Sushi",
+      "fr": "Sushi",
+      "es": "Sushi",
+      "it": "Sushi",
+      "zh": "寿司"
+    },
+    "nativeName": "日本",
+    "nativeLangCode": "ja-JP"
   },
   {
     "iso": "IN",
@@ -888,7 +1088,27 @@
       "🕌",
       "🍛",
       "🐘"
-    ]
+    ],
+    "landmark": {
+      "pt": "Taj Mahal",
+      "en": "Taj Mahal",
+      "de": "Taj Mahal",
+      "fr": "Taj Mahal",
+      "es": "Taj Mahal",
+      "it": "Taj Mahal",
+      "zh": "泰姬陵"
+    },
+    "food": {
+      "pt": "Curry",
+      "en": "Curry",
+      "de": "Curry",
+      "fr": "Curry",
+      "es": "Curry",
+      "it": "Curry",
+      "zh": "咖喱"
+    },
+    "nativeName": "भारत",
+    "nativeLangCode": "hi-IN"
   },
   {
     "iso": "EG",
@@ -969,7 +1189,27 @@
       "🐫",
       "🔺",
       "🏺"
-    ]
+    ],
+    "landmark": {
+      "pt": "Pirâmides de Gizé",
+      "en": "Pyramids of Giza",
+      "de": "Pyramiden von Gizeh",
+      "fr": "Pyramides de Gizeh",
+      "es": "Pirámides de Giza",
+      "it": "Piramidi di Giza",
+      "zh": "吉萨金字塔"
+    },
+    "food": {
+      "pt": "Falafel",
+      "en": "Falafel",
+      "de": "Falafel",
+      "fr": "Falafel",
+      "es": "Falafel",
+      "it": "Falafel",
+      "zh": "炸豆丸子"
+    },
+    "nativeName": "مصر",
+    "nativeLangCode": "ar-EG"
   },
   {
     "iso": "ZA",
@@ -1050,7 +1290,27 @@
       "🦒",
       "🥘",
       "🏞️"
-    ]
+    ],
+    "landmark": {
+      "pt": "Table Mountain",
+      "en": "Table Mountain",
+      "de": "Tafelberg",
+      "fr": "Montagne de la Table",
+      "es": "Montaña de la Mesa",
+      "it": "Table Mountain",
+      "zh": "桌山"
+    },
+    "food": {
+      "pt": "Bobotie",
+      "en": "Bobotie",
+      "de": "Bobotie",
+      "fr": "Bobotie",
+      "es": "Bobotie",
+      "it": "Bobotie",
+      "zh": "波波蒂"
+    },
+    "nativeName": "South Africa",
+    "nativeLangCode": "en-ZA"
   },
   {
     "iso": "AU",
@@ -1131,7 +1391,27 @@
       "🏄",
       "🐨",
       "🌊"
-    ]
+    ],
+    "landmark": {
+      "pt": "Ópera de Sydney",
+      "en": "Sydney Opera House",
+      "de": "Opernhaus Sydney",
+      "fr": "Opéra de Sydney",
+      "es": "Ópera de Sídney",
+      "it": "Teatro dell'Opera di Sydney",
+      "zh": "悉尼歌剧院"
+    },
+    "food": {
+      "pt": "Pavlova",
+      "en": "Pavlova",
+      "de": "Pavlova",
+      "fr": "Pavlova",
+      "es": "Pavlova",
+      "it": "Pavlova",
+      "zh": "帕夫洛娃蛋糕"
+    },
+    "nativeName": "Australia",
+    "nativeLangCode": "en-AU"
   },
   {
     "iso": "CA",
@@ -1212,7 +1492,27 @@
       "🍁",
       "🏒",
       "🐻"
-    ]
+    ],
+    "landmark": {
+      "pt": "Cataratas do Niágara",
+      "en": "Niagara Falls",
+      "de": "Niagarafälle",
+      "fr": "Chutes du Niagara",
+      "es": "Cataratas del Niágara",
+      "it": "Cascate del Niagara",
+      "zh": "尼亚加拉大瀑布"
+    },
+    "food": {
+      "pt": "Poutine",
+      "en": "Poutine",
+      "de": "Poutine",
+      "fr": "Poutine",
+      "es": "Poutine",
+      "it": "Poutine",
+      "zh": "肉汁奶酪薯条"
+    },
+    "nativeName": "Canada",
+    "nativeLangCode": "en-CA"
   },
   {
     "iso": "MX",
@@ -1293,7 +1593,27 @@
       "💀",
       "🌮",
       "🎉"
-    ]
+    ],
+    "landmark": {
+      "pt": "Chichén Itzá",
+      "en": "Chichén Itzá",
+      "de": "Chichén Itzá",
+      "fr": "Chichén Itzá",
+      "es": "Chichén Itzá",
+      "it": "Chichén Itzá",
+      "zh": "奇琴伊察"
+    },
+    "food": {
+      "pt": "Tacos",
+      "en": "Tacos",
+      "de": "Tacos",
+      "fr": "Tacos",
+      "es": "Tacos",
+      "it": "Tacos",
+      "zh": "塔可饼"
+    },
+    "nativeName": "México",
+    "nativeLangCode": "es-MX"
   },
   {
     "iso": "KR",
@@ -1374,7 +1694,27 @@
       "🥢",
       "🏯",
       "🎎"
-    ]
+    ],
+    "landmark": {
+      "pt": "Palácio Gyeongbokgung",
+      "en": "Gyeongbokgung Palace",
+      "de": "Gyeongbokgung-Palast",
+      "fr": "Palais Gyeongbokgung",
+      "es": "Palacio Gyeongbokgung",
+      "it": "Palazzo Gyeongbokgung",
+      "zh": "景福宫"
+    },
+    "food": {
+      "pt": "Kimchi",
+      "en": "Kimchi",
+      "de": "Kimchi",
+      "fr": "Kimchi",
+      "es": "Kimchi",
+      "it": "Kimchi",
+      "zh": "泡菜"
+    },
+    "nativeName": "대한민국",
+    "nativeLangCode": "ko-KR"
   },
   {
     "iso": "GR",
@@ -1455,7 +1795,27 @@
       "🏛️",
       "🫒",
       "⛵"
-    ]
+    ],
+    "landmark": {
+      "pt": "Acrópole de Atenas",
+      "en": "Acropolis of Athens",
+      "de": "Akropolis von Athen",
+      "fr": "Acropole d'Athènes",
+      "es": "Acrópolis de Atenas",
+      "it": "Acropoli di Atene",
+      "zh": "雅典卫城"
+    },
+    "food": {
+      "pt": "Souvlaki",
+      "en": "Souvlaki",
+      "de": "Souvlaki",
+      "fr": "Souvlaki",
+      "es": "Souvlaki",
+      "it": "Souvlaki",
+      "zh": "希腊烤肉串"
+    },
+    "nativeName": "Ελλάδα",
+    "nativeLangCode": "el-GR"
   },
   {
     "iso": "KE",
@@ -1536,7 +1896,27 @@
       "🦁",
       "🏃",
       "🌅"
-    ]
+    ],
+    "landmark": {
+      "pt": "Monte Quénia",
+      "en": "Mount Kenya",
+      "de": "Mount Kenya",
+      "fr": "Mont Kenya",
+      "es": "Monte Kenia",
+      "it": "Monte Kenya",
+      "zh": "肯尼亚山"
+    },
+    "food": {
+      "pt": "Ugali",
+      "en": "Ugali",
+      "de": "Ugali",
+      "fr": "Ugali",
+      "es": "Ugali",
+      "it": "Ugali",
+      "zh": "乌加黎玉米糊"
+    },
+    "nativeName": "Kenya",
+    "nativeLangCode": "sw-KE"
   },
   {
     "iso": "SE",
@@ -1617,7 +1997,27 @@
       "🌲",
       "❄️",
       "🚤"
-    ]
+    ],
+    "landmark": {
+      "pt": "Palácio Real de Estocolmo",
+      "en": "Stockholm Royal Palace",
+      "de": "Königsschloss Stockholm",
+      "fr": "Palais royal de Stockholm",
+      "es": "Palacio Real de Estocolmo",
+      "it": "Palazzo Reale di Stoccolma",
+      "zh": "斯德哥尔摩王宫"
+    },
+    "food": {
+      "pt": "Almôndegas suecas",
+      "en": "Swedish meatballs",
+      "de": "Schwedische Fleischbällchen",
+      "fr": "Boulettes suédoises",
+      "es": "Albóndigas suecas",
+      "it": "Polpette svedesi",
+      "zh": "瑞典肉丸"
+    },
+    "nativeName": "Sverige",
+    "nativeLangCode": "sv-SE"
   },
   {
     "iso": "MA",
@@ -1698,7 +2098,27 @@
       "🫖",
       "🏜️",
       "🕌"
-    ]
+    ],
+    "landmark": {
+      "pt": "Mesquita Koutoubia",
+      "en": "Koutoubia Mosque",
+      "de": "Koutoubia-Moschee",
+      "fr": "Mosquée Koutoubia",
+      "es": "Mezquita Koutoubia",
+      "it": "Moschea Koutoubia",
+      "zh": "库图比亚清真寺"
+    },
+    "food": {
+      "pt": "Cuscuz",
+      "en": "Couscous",
+      "de": "Couscous",
+      "fr": "Couscous",
+      "es": "Cuscús",
+      "it": "Couscous",
+      "zh": "库斯库斯"
+    },
+    "nativeName": "المغرب",
+    "nativeLangCode": "ar-MA"
   },
   {
     "iso": "NG",
@@ -1779,7 +2199,27 @@
       "🥁",
       "🐎",
       "🎊"
-    ]
+    ],
+    "landmark": {
+      "pt": "Rocha Zuma",
+      "en": "Zuma Rock",
+      "de": "Zuma-Felsen",
+      "fr": "Rocher de Zuma",
+      "es": "Roca Zuma",
+      "it": "Roccia di Zuma",
+      "zh": "祖玛岩"
+    },
+    "food": {
+      "pt": "Jollof rice",
+      "en": "Jollof rice",
+      "de": "Jollof-Reis",
+      "fr": "Riz jollof",
+      "es": "Arroz jollof",
+      "it": "Riso jollof",
+      "zh": "焦罗夫饭"
+    },
+    "nativeName": "Nigeria",
+    "nativeLangCode": "en-NG"
   },
   {
     "iso": "ET",
@@ -1860,7 +2300,27 @@
       "☕",
       "🏔️",
       "🦓"
-    ]
+    ],
+    "landmark": {
+      "pt": "Igrejas de Lalibela",
+      "en": "Churches of Lalibela",
+      "de": "Kirchen von Lalibela",
+      "fr": "Églises de Lalibela",
+      "es": "Iglesias de Lalibela",
+      "it": "Chiese di Lalibela",
+      "zh": "拉利贝拉岩石教堂"
+    },
+    "food": {
+      "pt": "Injera",
+      "en": "Injera",
+      "de": "Injera",
+      "fr": "Injera",
+      "es": "Injera",
+      "it": "Injera",
+      "zh": "英吉拉薄饼"
+    },
+    "nativeName": "ኢትዮጵያ",
+    "nativeLangCode": "am-ET"
   },
   {
     "iso": "TZ",
@@ -1941,7 +2401,27 @@
       "🦒",
       "🏔️",
       "🦁"
-    ]
+    ],
+    "landmark": {
+      "pt": "Monte Kilimanjaro",
+      "en": "Mount Kilimanjaro",
+      "de": "Kilimandscharo",
+      "fr": "Mont Kilimandjaro",
+      "es": "Monte Kilimanjaro",
+      "it": "Monte Kilimangiaro",
+      "zh": "乞力马扎罗山"
+    },
+    "food": {
+      "pt": "Ugali",
+      "en": "Ugali",
+      "de": "Ugali",
+      "fr": "Ugali",
+      "es": "Ugali",
+      "it": "Ugali",
+      "zh": "乌加黎玉米糊"
+    },
+    "nativeName": "Tanzania",
+    "nativeLangCode": "sw-TZ"
   },
   {
     "iso": "TH",
@@ -2022,7 +2502,27 @@
       "💦",
       "🛕",
       "🐘"
-    ]
+    ],
+    "landmark": {
+      "pt": "Grande Palácio de Banguecoque",
+      "en": "Grand Palace of Bangkok",
+      "de": "Großer Palast von Bangkok",
+      "fr": "Grand Palais de Bangkok",
+      "es": "Gran Palacio de Bangkok",
+      "it": "Gran Palazzo di Bangkok",
+      "zh": "曼谷大王宫"
+    },
+    "food": {
+      "pt": "Pad thai",
+      "en": "Pad thai",
+      "de": "Pad Thai",
+      "fr": "Pad thaï",
+      "es": "Pad thai",
+      "it": "Pad thai",
+      "zh": "泰式炒河粉"
+    },
+    "nativeName": "ประเทศไทย",
+    "nativeLangCode": "th-TH"
   },
   {
     "iso": "ID",
@@ -2103,7 +2603,27 @@
       "🎎",
       "🌋",
       "🥥"
-    ]
+    ],
+    "landmark": {
+      "pt": "Templo de Borobudur",
+      "en": "Borobudur Temple",
+      "de": "Borobudur-Tempel",
+      "fr": "Temple de Borobudur",
+      "es": "Templo de Borobudur",
+      "it": "Tempio di Borobudur",
+      "zh": "婆罗浮屠"
+    },
+    "food": {
+      "pt": "Nasi goreng",
+      "en": "Nasi goreng",
+      "de": "Nasi Goreng",
+      "fr": "Nasi goreng",
+      "es": "Nasi goreng",
+      "it": "Nasi goreng",
+      "zh": "印尼炒饭"
+    },
+    "nativeName": "Indonesia",
+    "nativeLangCode": "id-ID"
   },
   {
     "iso": "TR",
@@ -2184,7 +2704,27 @@
       "🍵",
       "🕌",
       "🎈"
-    ]
+    ],
+    "landmark": {
+      "pt": "Hagia Sophia",
+      "en": "Hagia Sophia",
+      "de": "Hagia Sophia",
+      "fr": "Sainte-Sophie",
+      "es": "Santa Sofía",
+      "it": "Santa Sofia",
+      "zh": "圣索菲亚大教堂"
+    },
+    "food": {
+      "pt": "Kebab",
+      "en": "Kebab",
+      "de": "Kebab",
+      "fr": "Kebab",
+      "es": "Kebab",
+      "it": "Kebab",
+      "zh": "烤肉串"
+    },
+    "nativeName": "Türkiye",
+    "nativeLangCode": "tr-TR"
   },
   {
     "iso": "PH",
@@ -2265,7 +2805,27 @@
       "🥥",
       "🏝️",
       "🎊"
-    ]
+    ],
+    "landmark": {
+      "pt": "Terraços de arroz de Banaue",
+      "en": "Banaue Rice Terraces",
+      "de": "Reisterrassen von Banaue",
+      "fr": "Rizières en terrasses de Banaue",
+      "es": "Terrazas de arroz de Banaue",
+      "it": "Terrazze di riso di Banaue",
+      "zh": "巴纳韦梯田"
+    },
+    "food": {
+      "pt": "Adobo",
+      "en": "Adobo",
+      "de": "Adobo",
+      "fr": "Adobo",
+      "es": "Adobo",
+      "it": "Adobo",
+      "zh": "阿多波炖肉"
+    },
+    "nativeName": "Pilipinas",
+    "nativeLangCode": "fil-PH"
   },
   {
     "iso": "AR",
@@ -2346,7 +2906,27 @@
       "💃",
       "🥩",
       "⚽"
-    ]
+    ],
+    "landmark": {
+      "pt": "Cataratas do Iguaçu",
+      "en": "Iguazu Falls",
+      "de": "Iguazú-Wasserfälle",
+      "fr": "Chutes d'Iguaçu",
+      "es": "Cataratas del Iguazú",
+      "it": "Cascate dell'Iguazú",
+      "zh": "伊瓜苏瀑布"
+    },
+    "food": {
+      "pt": "Asado",
+      "en": "Asado",
+      "de": "Asado",
+      "fr": "Asado",
+      "es": "Asado",
+      "it": "Asado",
+      "zh": "阿根廷烤肉"
+    },
+    "nativeName": "Argentina",
+    "nativeLangCode": "es-AR"
   },
   {
     "iso": "PE",
@@ -2427,7 +3007,27 @@
       "🏔️",
       "🌽",
       "🦙"
-    ]
+    ],
+    "landmark": {
+      "pt": "Machu Picchu",
+      "en": "Machu Picchu",
+      "de": "Machu Picchu",
+      "fr": "Machu Picchu",
+      "es": "Machu Picchu",
+      "it": "Machu Picchu",
+      "zh": "马丘比丘"
+    },
+    "food": {
+      "pt": "Ceviche",
+      "en": "Ceviche",
+      "de": "Ceviche",
+      "fr": "Ceviche",
+      "es": "Ceviche",
+      "it": "Ceviche",
+      "zh": "酸橘汁腌鱼"
+    },
+    "nativeName": "Perú",
+    "nativeLangCode": "es-PE"
   },
   {
     "iso": "CL",
@@ -2508,7 +3108,27 @@
       "🏔️",
       "🍇",
       "🦙"
-    ]
+    ],
+    "landmark": {
+      "pt": "Ilha de Páscoa",
+      "en": "Easter Island",
+      "de": "Osterinsel",
+      "fr": "Île de Pâques",
+      "es": "Isla de Pascua",
+      "it": "Isola di Pasqua",
+      "zh": "复活节岛"
+    },
+    "food": {
+      "pt": "Empanada",
+      "en": "Empanada",
+      "de": "Empanada",
+      "fr": "Empanada",
+      "es": "Empanada",
+      "it": "Empanada",
+      "zh": "智利肉馅饼"
+    },
+    "nativeName": "Chile",
+    "nativeLangCode": "es-CL"
   },
   {
     "iso": "CO",
@@ -2589,7 +3209,27 @@
       "☕",
       "🦜",
       "🎉"
-    ]
+    ],
+    "landmark": {
+      "pt": "Cidade Perdida",
+      "en": "Lost City",
+      "de": "Ciudad Perdida",
+      "fr": "Cité perdue",
+      "es": "Ciudad Perdida",
+      "it": "Città Perduta",
+      "zh": "失落之城"
+    },
+    "food": {
+      "pt": "Arepa",
+      "en": "Arepa",
+      "de": "Arepa",
+      "fr": "Arepa",
+      "es": "Arepa",
+      "it": "Arepa",
+      "zh": "阿雷帕玉米饼"
+    },
+    "nativeName": "Colombia",
+    "nativeLangCode": "es-CO"
   },
   {
     "iso": "NO",
@@ -2670,7 +3310,27 @@
       "🏔️",
       "🐟",
       "🎉"
-    ]
+    ],
+    "landmark": {
+      "pt": "Fiorde de Geiranger",
+      "en": "Geirangerfjord",
+      "de": "Geirangerfjord",
+      "fr": "Fjord de Geiranger",
+      "es": "Fiordo de Geiranger",
+      "it": "Fiordo di Geiranger",
+      "zh": "盖朗厄尔峡湾"
+    },
+    "food": {
+      "pt": "Salmão",
+      "en": "Salmon",
+      "de": "Lachs",
+      "fr": "Saumon",
+      "es": "Salmón",
+      "it": "Salmone",
+      "zh": "三文鱼"
+    },
+    "nativeName": "Norge",
+    "nativeLangCode": "no-NO"
   },
   {
     "iso": "NL",
@@ -2751,7 +3411,27 @@
       "🌷",
       "🚲",
       "🧀"
-    ]
+    ],
+    "landmark": {
+      "pt": "Moinhos de Kinderdijk",
+      "en": "Kinderdijk Windmills",
+      "de": "Windmühlen von Kinderdijk",
+      "fr": "Moulins de Kinderdijk",
+      "es": "Molinos de Kinderdijk",
+      "it": "Mulini di Kinderdijk",
+      "zh": "小孩堤防风车"
+    },
+    "food": {
+      "pt": "Stroopwafel",
+      "en": "Stroopwafel",
+      "de": "Stroopwafel",
+      "fr": "Stroopwafel",
+      "es": "Stroopwafel",
+      "it": "Stroopwafel",
+      "zh": "焦糖华夫饼"
+    },
+    "nativeName": "Nederland",
+    "nativeLangCode": "nl-NL"
   },
   {
     "iso": "PL",
@@ -2832,7 +3512,27 @@
       "🥚",
       "🏰",
       "🍲"
-    ]
+    ],
+    "landmark": {
+      "pt": "Castelo de Wawel",
+      "en": "Wawel Castle",
+      "de": "Wawel-Schloss",
+      "fr": "Château du Wawel",
+      "es": "Castillo de Wawel",
+      "it": "Castello del Wawel",
+      "zh": "瓦维尔城堡"
+    },
+    "food": {
+      "pt": "Pierogi",
+      "en": "Pierogi",
+      "de": "Pierogi",
+      "fr": "Pierogi",
+      "es": "Pierogi",
+      "it": "Pierogi",
+      "zh": "波兰饺子"
+    },
+    "nativeName": "Polska",
+    "nativeLangCode": "pl-PL"
   },
   {
     "iso": "IE",
@@ -2913,7 +3613,27 @@
       "🍀",
       "🎻",
       "🌈"
-    ]
+    ],
+    "landmark": {
+      "pt": "Penhascos de Moher",
+      "en": "Cliffs of Moher",
+      "de": "Cliffs of Moher",
+      "fr": "Falaises de Moher",
+      "es": "Acantilados de Moher",
+      "it": "Scogliere di Moher",
+      "zh": "莫赫悬崖"
+    },
+    "food": {
+      "pt": "Irish stew",
+      "en": "Irish stew",
+      "de": "Irish Stew",
+      "fr": "Ragoût irlandais",
+      "es": "Estofado irlandés",
+      "it": "Stufato irlandese",
+      "zh": "爱尔兰炖肉"
+    },
+    "nativeName": "Éire",
+    "nativeLangCode": "en-IE"
   },
   {
     "iso": "NZ",
@@ -2994,7 +3714,27 @@
       "🥝",
       "⛰️",
       "🏉"
-    ]
+    ],
+    "landmark": {
+      "pt": "Monte Cook",
+      "en": "Mount Cook",
+      "de": "Mount Cook",
+      "fr": "Mont Cook",
+      "es": "Monte Cook",
+      "it": "Monte Cook",
+      "zh": "库克山"
+    },
+    "food": {
+      "pt": "Hangi",
+      "en": "Hangi",
+      "de": "Hangi",
+      "fr": "Hangi",
+      "es": "Hangi",
+      "it": "Hangi",
+      "zh": "毛利地窖烤肉"
+    },
+    "nativeName": "Aotearoa",
+    "nativeLangCode": "en-NZ"
   },
   {
     "iso": "FJ",
@@ -3075,7 +3815,27 @@
       "🏝️",
       "🥥",
       "🌊"
-    ]
+    ],
+    "landmark": {
+      "pt": "Ilha de Taveuni",
+      "en": "Taveuni Island",
+      "de": "Taveuni-Insel",
+      "fr": "Île de Taveuni",
+      "es": "Isla de Taveuni",
+      "it": "Isola di Taveuni",
+      "zh": "塔韦乌尼岛"
+    },
+    "food": {
+      "pt": "Kokoda",
+      "en": "Kokoda",
+      "de": "Kokoda",
+      "fr": "Kokoda",
+      "es": "Kokoda",
+      "it": "Kokoda",
+      "zh": "科科达生鱼"
+    },
+    "nativeName": "Viti",
+    "nativeLangCode": "en-FJ"
   },
   {
     "iso": "CU",
@@ -3156,7 +3916,27 @@
       "🎺",
       "🚗",
       "💃"
-    ]
+    ],
+    "landmark": {
+      "pt": "Havana Velha",
+      "en": "Old Havana",
+      "de": "Altstadt von Havanna",
+      "fr": "Vieille Havane",
+      "es": "La Habana Vieja",
+      "it": "L'Avana Vecchia",
+      "zh": "哈瓦那老城"
+    },
+    "food": {
+      "pt": "Ropa vieja",
+      "en": "Ropa vieja",
+      "de": "Ropa Vieja",
+      "fr": "Ropa vieja",
+      "es": "Ropa vieja",
+      "it": "Ropa vieja",
+      "zh": "古巴牛肉丝"
+    },
+    "nativeName": "Cuba",
+    "nativeLangCode": "es-CU"
   },
   {
     "iso": "CR",
@@ -3237,7 +4017,27 @@
       "🌴",
       "🦥",
       "🌋"
-    ]
+    ],
+    "landmark": {
+      "pt": "Vulcão Arenal",
+      "en": "Arenal Volcano",
+      "de": "Arenal-Vulkan",
+      "fr": "Volcan Arenal",
+      "es": "Volcán Arenal",
+      "it": "Vulcano Arenal",
+      "zh": "阿雷纳尔火山"
+    },
+    "food": {
+      "pt": "Gallo pinto",
+      "en": "Gallo pinto",
+      "de": "Gallo Pinto",
+      "fr": "Gallo pinto",
+      "es": "Gallo pinto",
+      "it": "Gallo pinto",
+      "zh": "加约品托饭豆"
+    },
+    "nativeName": "Costa Rica",
+    "nativeLangCode": "es-CR"
   },
   {
     "iso": "AO",
@@ -3309,7 +4109,27 @@
       "🥁",
       "🌊",
       "🐘"
-    ]
+    ],
+    "landmark": {
+      "pt": "Miradouro da Lua",
+      "en": "Miradouro da Lua",
+      "de": "Miradouro da Lua",
+      "fr": "Miradouro da Lua",
+      "es": "Miradouro da Lua",
+      "it": "Miradouro da Lua",
+      "zh": "月亮谷观景台"
+    },
+    "food": {
+      "pt": "Muamba de galinha",
+      "en": "Muamba de galinha",
+      "de": "Muamba de galinha",
+      "fr": "Muamba de galinha",
+      "es": "Muamba de galinha",
+      "it": "Muamba de galinha",
+      "zh": "安哥拉鸡肉炖菜"
+    },
+    "nativeName": "Angola",
+    "nativeLangCode": "pt-PT"
   },
   {
     "iso": "MZ",
@@ -3381,7 +4201,27 @@
       "🐚",
       "🥭",
       "🎭"
-    ]
+    ],
+    "landmark": {
+      "pt": "Ilha de Moçambique",
+      "en": "Mozambique Island",
+      "de": "Insel Mosambik",
+      "fr": "Île du Mozambique",
+      "es": "Isla de Mozambique",
+      "it": "Isola di Mozambico",
+      "zh": "莫桑比克岛"
+    },
+    "food": {
+      "pt": "Frango à Zambeziana",
+      "en": "Frango à Zambeziana",
+      "de": "Frango à Zambeziana",
+      "fr": "Frango à Zambeziana",
+      "es": "Frango à Zambeziana",
+      "it": "Frango à Zambeziana",
+      "zh": "赞比西烤鸡"
+    },
+    "nativeName": "Moçambique",
+    "nativeLangCode": "pt-PT"
   },
   {
     "iso": "CV",
@@ -3453,7 +4293,27 @@
       "🎶",
       "🏝️",
       "🐢"
-    ]
+    ],
+    "landmark": {
+      "pt": "Pico do Fogo",
+      "en": "Pico do Fogo",
+      "de": "Pico do Fogo",
+      "fr": "Pico do Fogo",
+      "es": "Pico do Fogo",
+      "it": "Pico do Fogo",
+      "zh": "福戈火山"
+    },
+    "food": {
+      "pt": "Cachupa",
+      "en": "Cachupa",
+      "de": "Cachupa",
+      "fr": "Cachupa",
+      "es": "Cachupa",
+      "it": "Cachupa",
+      "zh": "卡楚帕炖菜"
+    },
+    "nativeName": "Cabo Verde",
+    "nativeLangCode": "pt-PT"
   },
   {
     "iso": "GW",
@@ -3525,7 +4385,27 @@
       "🎭",
       "🌴",
       "🥁"
-    ]
+    ],
+    "landmark": {
+      "pt": "Ilhas Bijagós",
+      "en": "Bijagós Islands",
+      "de": "Bijagós-Inseln",
+      "fr": "Îles Bijagós",
+      "es": "Islas Bijagós",
+      "it": "Isole Bijagós",
+      "zh": "比雅戈斯群岛"
+    },
+    "food": {
+      "pt": "Jollof de peixe",
+      "en": "Fish jollof",
+      "de": "Fisch-Jollof",
+      "fr": "Jollof de poisson",
+      "es": "Jollof de pescado",
+      "it": "Jollof di pesce",
+      "zh": "鱼焦罗夫饭"
+    },
+    "nativeName": "Guiné-Bissau",
+    "nativeLangCode": "pt-PT"
   },
   {
     "iso": "ST",
@@ -3597,7 +4477,27 @@
       "🍫",
       "🌋",
       "🦎"
-    ]
+    ],
+    "landmark": {
+      "pt": "Pico Cão Grande",
+      "en": "Cão Grande Peak",
+      "de": "Cão-Grande-Gipfel",
+      "fr": "Pic Cão Grande",
+      "es": "Pico Cão Grande",
+      "it": "Picco Cão Grande",
+      "zh": "大狗峰"
+    },
+    "food": {
+      "pt": "Calulu",
+      "en": "Calulu",
+      "de": "Calulu",
+      "fr": "Calulu",
+      "es": "Calulu",
+      "it": "Calulu",
+      "zh": "卡卢卢炖菜"
+    },
+    "nativeName": "São Tomé e Príncipe",
+    "nativeLangCode": "pt-PT"
   },
   {
     "iso": "TL",
@@ -3669,7 +4569,27 @@
       "🧵",
       "🌊",
       "🐊"
-    ]
+    ],
+    "landmark": {
+      "pt": "Cristo Rei de Díli",
+      "en": "Cristo Rei of Dili",
+      "de": "Cristo Rei von Dili",
+      "fr": "Cristo Rei de Dili",
+      "es": "Cristo Rei de Dili",
+      "it": "Cristo Rei di Dili",
+      "zh": "帝力基督像"
+    },
+    "food": {
+      "pt": "Ikan pepes",
+      "en": "Ikan pepes",
+      "de": "Ikan Pepes",
+      "fr": "Ikan pepes",
+      "es": "Ikan pepes",
+      "it": "Ikan pepes",
+      "zh": "香蕉叶蒸鱼"
+    },
+    "nativeName": "Timor-Leste",
+    "nativeLangCode": "pt-PT"
   },
   {
     "iso": "BE",
@@ -3741,7 +4661,27 @@
       "🍫",
       "🧇",
       "🎪"
-    ]
+    ],
+    "landmark": {
+      "pt": "Grote Markt de Bruxelas",
+      "en": "Brussels Grand Place",
+      "de": "Grote Markt Brüssel",
+      "fr": "Grand-Place de Bruxelles",
+      "es": "Grand Place de Bruselas",
+      "it": "Grand Place di Bruxelles",
+      "zh": "布鲁塞尔大广场"
+    },
+    "food": {
+      "pt": "Waffle belga",
+      "en": "Belgian waffle",
+      "de": "Belgische Waffel",
+      "fr": "Gaufre belge",
+      "es": "Gofre belga",
+      "it": "Waffel belga",
+      "zh": "比利时华夫饼"
+    },
+    "nativeName": "België",
+    "nativeLangCode": "nl-BE"
   },
   {
     "iso": "CH",
@@ -3813,7 +4753,27 @@
       "🏔️",
       "🧀",
       "🐄"
-    ]
+    ],
+    "landmark": {
+      "pt": "Matterhorn",
+      "en": "Matterhorn",
+      "de": "Matterhorn",
+      "fr": "Cervin",
+      "es": "Cervino",
+      "it": "Cervino",
+      "zh": "马特洪峰"
+    },
+    "food": {
+      "pt": "Fondue",
+      "en": "Fondue",
+      "de": "Fondue",
+      "fr": "Fondue",
+      "es": "Fondue",
+      "it": "Fonduta",
+      "zh": "奶酪火锅"
+    },
+    "nativeName": "Schweiz",
+    "nativeLangCode": "de-CH"
   },
   {
     "iso": "AT",
@@ -3885,7 +4845,27 @@
       "🎻",
       "🏔️",
       "🍰"
-    ]
+    ],
+    "landmark": {
+      "pt": "Palácio de Schönbrunn",
+      "en": "Schönbrunn Palace",
+      "de": "Schloss Schönbrunn",
+      "fr": "Château de Schönbrunn",
+      "es": "Palacio de Schönbrunn",
+      "it": "Castello di Schönbrunn",
+      "zh": "美泉宫"
+    },
+    "food": {
+      "pt": "Wiener Schnitzel",
+      "en": "Wiener Schnitzel",
+      "de": "Wiener Schnitzel",
+      "fr": "Escalope viennoise",
+      "es": "Escalope vienés",
+      "it": "Cotoletta viennese",
+      "zh": "维也纳炸肉排"
+    },
+    "nativeName": "Österreich",
+    "nativeLangCode": "de-AT"
   },
   {
     "iso": "RU",
@@ -3957,7 +4937,27 @@
       "🪆",
       "❄️",
       "🏰"
-    ]
+    ],
+    "landmark": {
+      "pt": "Praça Vermelha",
+      "en": "Red Square",
+      "de": "Roter Platz",
+      "fr": "Place Rouge",
+      "es": "Plaza Roja",
+      "it": "Piazza Rossa",
+      "zh": "红场"
+    },
+    "food": {
+      "pt": "Borscht",
+      "en": "Borscht",
+      "de": "Borschtsch",
+      "fr": "Bortsch",
+      "es": "Borsch",
+      "it": "Borsch",
+      "zh": "罗宋汤"
+    },
+    "nativeName": "Россия",
+    "nativeLangCode": "ru-RU"
   },
   {
     "iso": "VN",
@@ -4029,7 +5029,27 @@
       "🧧",
       "🌸",
       "🚣"
-    ]
+    ],
+    "landmark": {
+      "pt": "Baía de Ha Long",
+      "en": "Ha Long Bay",
+      "de": "Ha-Long-Bucht",
+      "fr": "Baie d'Ha Long",
+      "es": "Bahía de Ha Long",
+      "it": "Baia di Ha Long",
+      "zh": "下龙湾"
+    },
+    "food": {
+      "pt": "Pho",
+      "en": "Pho",
+      "de": "Pho",
+      "fr": "Pho",
+      "es": "Pho",
+      "it": "Pho",
+      "zh": "越南河粉"
+    },
+    "nativeName": "Việt Nam",
+    "nativeLangCode": "vi-VN"
   },
   {
     "iso": "SA",
@@ -4101,7 +5121,27 @@
       "🐪",
       "🏜️",
       "🕌"
-    ]
+    ],
+    "landmark": {
+      "pt": "Al-Ula",
+      "en": "AlUla",
+      "de": "AlUla",
+      "fr": "AlUla",
+      "es": "AlUla",
+      "it": "AlUla",
+      "zh": "阿勒欧拉"
+    },
+    "food": {
+      "pt": "Kabsa",
+      "en": "Kabsa",
+      "de": "Kabsa",
+      "fr": "Kabsa",
+      "es": "Kabsa",
+      "it": "Kabsa",
+      "zh": "卡布萨香饭"
+    },
+    "nativeName": "السعودية",
+    "nativeLangCode": "ar-SA"
   },
   {
     "iso": "IS",
@@ -4173,6 +5213,26 @@
       "🌋",
       "❄️",
       "🐴"
-    ]
+    ],
+    "landmark": {
+      "pt": "Cascata Gullfoss",
+      "en": "Gullfoss Waterfall",
+      "de": "Gullfoss-Wasserfall",
+      "fr": "Cascade de Gullfoss",
+      "es": "Cascada de Gullfoss",
+      "it": "Cascata di Gullfoss",
+      "zh": "古佛斯瀑布"
+    },
+    "food": {
+      "pt": "Skyr",
+      "en": "Skyr",
+      "de": "Skyr",
+      "fr": "Skyr",
+      "es": "Skyr",
+      "it": "Skyr",
+      "zh": "斯基尔酸奶"
+    },
+    "nativeName": "Ísland",
+    "nativeLangCode": "is-IS"
   }
 ]
