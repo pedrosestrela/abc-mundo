@@ -362,6 +362,29 @@ body {
   background: var(--green);
 }
 
+.game-option-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.game-option-wrap .game-option {
+  flex: 1;
+}
+
+.game-prompt-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.piano-song-lyrics-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .game-result {
   font-size: 1.4rem;
   font-weight: bold;
