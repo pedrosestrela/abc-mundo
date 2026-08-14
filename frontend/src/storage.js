@@ -800,3 +800,91 @@ export function addMoonDiaryEntry(profileName, entry) {
   saveMoonDiary(all);
   return all[name];
 }
+
+// --- Ateliê: Pixel Art ---
+// Tracks which pixel-art grids the child has saved, per profile. Mirrors
+// the exploreComputingCard/getExploredComputing pair shape (list of ids),
+// but here the "id" is a self-generated save id since pixel art pieces
+// aren't drawn from a fixed content bank.
+
+const ART_PIXEL_SAVES_KEY = "abcmundo.artPixelSaves";
+
+function loadArtPixelSaves() {
+  try {
+    const raw = localStorage.getItem(ART_PIXEL_SAVES_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveArtPixelSaves(all) {
+  try {
+    localStorage.setItem(ART_PIXEL_SAVES_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getArtPixelArtSaves(profileName) {
+  const all = loadArtPixelSaves();
+  return all[profileName || "Explorer"] || [];
+}
+
+// entry: { id, grid: string[] (cell colors), createdAt }
+export function saveArtPixelArt(profileName, entry) {
+  const name = profileName || "Explorer";
+  const all = loadArtPixelSaves();
+  const list = all[name] || [];
+  const withId = {
+    id: entry.id || `pa-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+    createdAt: entry.createdAt || Date.now(),
+    ...entry,
+  };
+  all[name] = [withId, ...list];
+  saveArtPixelSaves(all);
+  return all[name];
+}
+
+// --- Ateliê: Criar Personagem (character builder) ---
+// Tracks custom characters the child has assembled and saved, per profile.
+// Same append-only shape as the pixel art saves above.
+
+const ART_CHARACTER_SAVES_KEY = "abcmundo.artCharacterSaves";
+
+function loadArtCharacterSaves() {
+  try {
+    const raw = localStorage.getItem(ART_CHARACTER_SAVES_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveArtCharacterSaves(all) {
+  try {
+    localStorage.setItem(ART_CHARACTER_SAVES_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getArtCharacterSaves(profileName) {
+  const all = loadArtCharacterSaves();
+  return all[profileName || "Explorer"] || [];
+}
+
+// entry: { id, head, eyes, mouth, color, accessory, createdAt }
+export function saveArtCharacter(profileName, entry) {
+  const name = profileName || "Explorer";
+  const all = loadArtCharacterSaves();
+  const list = all[name] || [];
+  const withId = {
+    id: entry.id || `ac-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+    createdAt: entry.createdAt || Date.now(),
+    ...entry,
+  };
+  all[name] = [withId, ...list];
+  saveArtCharacterSaves(all);
+  return all[name];
+}
