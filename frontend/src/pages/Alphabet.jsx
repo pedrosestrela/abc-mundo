@@ -31,9 +31,21 @@ export default function Alphabet() {
       <h1>{t("modules.alphabetTitle")} 🔤</h1>
 
       <div className="letter-card">
-        <div className="letter-big">
-          <span>{motherLetter.upper}</span>
-          <span className="letter-lower">{motherLetter.lower}</span>
+        <div className="letter-forms">
+          <div className="letter-form">
+            <div className="letter-big">
+              <span>{motherLetter.upper}</span>
+              <span className="letter-lower">{motherLetter.lower}</span>
+            </div>
+            <div className="letter-form-label">{t("modules.printForm")}</div>
+          </div>
+          <div className="letter-form">
+            <div className="letter-big font-handwritten">
+              <span>{motherLetter.upper}</span>
+              <span className="letter-lower">{motherLetter.lower}</span>
+            </div>
+            <div className="letter-form-label">{t("modules.handwrittenForm")}</div>
+          </div>
         </div>
         <div className="letter-emoji">{motherLetter.emoji}</div>
         <div className="letter-word">
@@ -46,9 +58,21 @@ export default function Alphabet() {
       <div className="letter-divider">/</div>
 
       <div className="letter-card secondary">
-        <div className="letter-big">
-          <span>{secondaryLetter.upper}</span>
-          <span className="letter-lower">{secondaryLetter.lower}</span>
+        <div className="letter-forms">
+          <div className="letter-form">
+            <div className="letter-big">
+              <span>{secondaryLetter.upper}</span>
+              <span className="letter-lower">{secondaryLetter.lower}</span>
+            </div>
+            <div className="letter-form-label">{t("modules.printForm")}</div>
+          </div>
+          <div className="letter-form">
+            <div className="letter-big font-handwritten">
+              <span>{secondaryLetter.upper}</span>
+              <span className="letter-lower">{secondaryLetter.lower}</span>
+            </div>
+            <div className="letter-form-label">{t("modules.handwrittenForm")}</div>
+          </div>
         </div>
         <div className="letter-emoji">{secondaryLetter.emoji}</div>
         <div className="letter-word">
