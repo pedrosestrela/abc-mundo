@@ -1,0 +1,91 @@
+{
+  "wantsNeeds": [
+    { "id": "wn1", "emoji": "🍞", "name": "要吃的面包", "isNeed": true },
+    { "id": "wn2", "emoji": "🧸", "name": "新玩具", "isNeed": false },
+    { "id": "wn3", "emoji": "👟", "name": "穿的鞋子", "isNeed": true },
+    { "id": "wn4", "emoji": "🍬", "name": "糖果", "isNeed": false },
+    { "id": "wn5", "emoji": "🧥", "name": "冬天的外套", "isNeed": true },
+    { "id": "wn6", "emoji": "🎮", "name": "新电子游戏", "isNeed": false },
+    { "id": "wn7", "emoji": "💧", "name": "要喝的水", "isNeed": true },
+    { "id": "wn8", "emoji": "🃏", "name": "收藏卡片", "isNeed": false },
+    { "id": "wn9", "emoji": "🛏️", "name": "睡觉的床", "isNeed": true },
+    { "id": "wn10", "emoji": "🍦", "name": "额外的冰淇淋", "isNeed": false }
+  ],
+  "savingsDecision": {
+    "scenarioText": "你这星期得到了6欧元的零用钱。在商店里你看到一个玩具和一本书，你都很喜欢。你的钱只够买其中一样。",
+    "budget": 600,
+    "items": [
+      { "id": "toy", "emoji": "🧸", "name": "玩具", "price": 500 },
+      { "id": "book", "emoji": "📖", "name": "书", "price": 350 }
+    ]
+  },
+  "piggyBank": {
+    "intro": "每个星期你都可以往存钱罐里放几个硬币。看看钱是怎么一点点变多的！",
+    "coinTurns": [50, 20, 100, 30, 50],
+    "goal": 300,
+    "outro": "看到了吗？耐心地一点点储蓄，会变成很多存下来的钱！"
+  },
+  "discountAds": [
+    {
+      "id": "da1",
+      "emoji": "🛴",
+      "product": "玩具滑板车",
+      "fakeOriginalPrice": 4000,
+      "discountPercent": 50,
+      "sellingPrice": 2000,
+      "usualPrice": 2000,
+      "isGoodDeal": false,
+      "explanation": "40欧元的\"原价\"是编出来的，让折扣看起来很大。但在其他商店，这辆滑板车一直都是20欧元——你根本没有省到钱！"
+    },
+    {
+      "id": "da2",
+      "emoji": "📖",
+      "product": "冒险故事书",
+      "fakeOriginalPrice": 1000,
+      "discountPercent": 30,
+      "sellingPrice": 700,
+      "usualPrice": 1000,
+      "isGoodDeal": true,
+      "explanation": "这个折扣是真的：这本书以前真的卖10欧元，现在卖7欧元。你真的省了3欧元！"
+    },
+    {
+      "id": "da3",
+      "emoji": "🎧",
+      "product": "彩色耳机",
+      "fakeOriginalPrice": 6000,
+      "discountPercent": 70,
+      "sellingPrice": 1800,
+      "usualPrice": 1800,
+      "isGoodDeal": false,
+      "explanation": "打七折听起来很棒，但60欧元的\"一直以来\"价格是编造的。这款耳机在任何商店一直都只要约18欧元。"
+    },
+    {
+      "id": "da4",
+      "emoji": "🧩",
+      "product": "100片拼图",
+      "fakeOriginalPrice": 1500,
+      "discountPercent": 20,
+      "sellingPrice": 1200,
+      "usualPrice": 1500,
+      "isGoodDeal": true,
+      "explanation": "这个拼图最近几个星期真的卖15欧元，现在卖12欧元。这是真正省了3欧元的折扣。"
+    }
+  ],
+  "interestExample": {
+    "principal": 1000,
+    "yearlyBonus": 100,
+    "years": 2,
+    "intro": "当你把钱存进银行时，银行有时会因为你把钱留在那里而多给你一点钱。这叫做利息。",
+    "explanation": "如果你把10欧元存进银行，银行每年多给你1欧元，那么1年后你有11欧元。2年后你有12欧元。你的钱在储蓄的同时会自己增长！"
+  },
+  "safety": [
+    { "id": "fs1", "emoji": "💳", "scenario": "一个你在网上认识的人向你要你父母的银行卡号。", "isSafe": false, "explanation": "请大人帮忙！银行卡号是秘密，永远不要和陌生人分享，即使是在网上。" },
+    { "id": "fs2", "emoji": "🛍️", "scenario": "你想在网上商店买东西，付款前你请大人帮忙。", "isSafe": true, "explanation": "很好！网购前请大人帮忙可以保护你不被骗。" },
+    { "id": "fs3", "emoji": "🏆", "scenario": "你收到一条消息\"你中奖了！现在发送卡片信息来领取\"，你正准备发送。", "isSafe": false, "explanation": "请大人帮忙！要求卡片信息的奖品几乎都是骗局——永远不要发送这些信息。" },
+    { "id": "fs4", "emoji": "🔢", "scenario": "银行卡的PIN密码只有你和父母知道。", "isSafe": true, "explanation": "太棒了！PIN密码是只有信任的家人才应该知道的秘密。" },
+    { "id": "fs5", "emoji": "🤝", "scenario": "一个学校的朋友说\"只是想试试\"，向你要父母的PIN密码，你告诉了他。", "isSafe": false, "explanation": "请大人帮忙！永远不要和任何人分享PIN密码，即使是朋友也不行。" },
+    { "id": "fs6", "emoji": "👨‍👩‍👧", "scenario": "一起网购时，一个信任的大人就在你身边。", "isSafe": true, "explanation": "太好了！有信任的大人在旁边一起网购是最安全的方式。" },
+    { "id": "fs7", "emoji": "⏰", "scenario": "一条消息说\"现在付款，否则你的账户会被取消！\"，你没有问任何人就赶紧付了款。", "isSafe": false, "explanation": "请大人帮忙！催促你赶紧行动的消息通常是骗局。付款前一定要先问一问。" },
+    { "id": "fs8", "emoji": "🕵️", "scenario": "你看到一个好得难以置信的免费送钱广告，相信之前先问了大人是不是真的。", "isSafe": true, "explanation": "非常聪明！好得难以置信的优惠通常都是假的。先问一问可以保护你。" }
+  ]
+}
