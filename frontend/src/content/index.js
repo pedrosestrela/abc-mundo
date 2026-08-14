@@ -114,6 +114,22 @@ import lifeSkillsZh from "./lifeSkills.zh.json";
 import lifeSkillsEs from "./lifeSkills.es.json";
 import lifeSkillsIt from "./lifeSkills.it.json";
 
+import computingPt from "./computing.pt.json";
+import computingEn from "./computing.en.json";
+import computingDe from "./computing.de.json";
+import computingFr from "./computing.fr.json";
+import computingZh from "./computing.zh.json";
+import computingEs from "./computing.es.json";
+import computingIt from "./computing.it.json";
+
+import computingSafetyPt from "./computingSafety.pt.json";
+import computingSafetyEn from "./computingSafety.en.json";
+import computingSafetyDe from "./computingSafety.de.json";
+import computingSafetyFr from "./computingSafety.fr.json";
+import computingSafetyZh from "./computingSafety.zh.json";
+import computingSafetyEs from "./computingSafety.es.json";
+import computingSafetyIt from "./computingSafety.it.json";
+
 export const SUPPORTED_LANGUAGES = [
   { code: "pt", label: "Português", flag: "🇵🇹" },
   { code: "en", label: "English", flag: "🇬🇧" },
@@ -138,6 +154,8 @@ const WHYS = { pt: whysPt, en: whysEn, de: whysDe, fr: whysFr, zh: whysZh, es: w
 const ART_PROMPTS = { pt: artPromptsPt, en: artPromptsEn, de: artPromptsDe, fr: artPromptsFr, zh: artPromptsZh, es: artPromptsEs, it: artPromptsIt };
 const SCIENCE = { pt: sciencePt, en: scienceEn, de: scienceDe, fr: scienceFr, zh: scienceZh, es: scienceEs, it: scienceIt };
 const LIFE_SKILLS = { pt: lifeSkillsPt, en: lifeSkillsEn, de: lifeSkillsDe, fr: lifeSkillsFr, zh: lifeSkillsZh, es: lifeSkillsEs, it: lifeSkillsIt };
+const COMPUTING = { pt: computingPt, en: computingEn, de: computingDe, fr: computingFr, zh: computingZh, es: computingEs, it: computingIt };
+const COMPUTING_SAFETY = { pt: computingSafetyPt, en: computingSafetyEn, de: computingSafetyDe, fr: computingSafetyFr, zh: computingSafetyZh, es: computingSafetyEs, it: computingSafetyIt };
 
 // Normalizes zh's different shape ({hanzi,...}) to the same shape used by
 // the Latin-alphabet languages ({letter, lower, upper, exampleWord, emoji}).
@@ -201,6 +219,14 @@ export function getScience(langCode) {
 
 export function getLifeSkills(langCode) {
   return LIFE_SKILLS[langCode] || [];
+}
+
+export function getComputing(langCode) {
+  return COMPUTING[langCode] || [];
+}
+
+export function getComputingSafety(langCode) {
+  return COMPUTING_SAFETY[langCode] || [];
 }
 
 // Countries are language-agnostic in shape (name/fact are per-language

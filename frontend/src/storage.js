@@ -284,6 +284,44 @@ export function exploreScienceCard(profileName, cardId) {
   return all[name];
 }
 
+// --- Cybercidade (digital literacy) ---
+// Tracks which computing concept card ids the child has explored (opened
+// the explanation for), separate from quiz skill tracking.
+
+const EXPLORED_COMPUTING_KEY = "abcmundo.exploredComputing";
+
+function loadExploredComputing() {
+  try {
+    const raw = localStorage.getItem(EXPLORED_COMPUTING_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveExploredComputing(all) {
+  try {
+    localStorage.setItem(EXPLORED_COMPUTING_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getExploredComputing(profileName) {
+  const all = loadExploredComputing();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function exploreComputingCard(profileName, cardId) {
+  const name = profileName || "Explorer";
+  const all = loadExploredComputing();
+  const explored = new Set(all[name] || []);
+  explored.add(cardId);
+  all[name] = Array.from(explored);
+  saveExploredComputing(all);
+  return all[name];
+}
+
 // --- Portugal History Timeline ("Castelo do Tempo") ---
 // Tracks which era ids the child has explored (opened the detail card for).
 
