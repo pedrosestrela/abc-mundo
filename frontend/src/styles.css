@@ -2615,6 +2615,41 @@ body {
     background: #362a44;
     color: #f0e9ff;
   }
+  .mundos-place-village {
+    background: linear-gradient(180deg, #4a3a10 0%, #3a2d0a 100%);
+    color: #ffd98a;
+  }
+  .mundos-place-island {
+    background: linear-gradient(180deg, #0f3a40 0%, #0a2b30 100%);
+    color: #8fe4ef;
+  }
+  .mundos-place-music {
+    background: linear-gradient(180deg, #3a1e4a 0%, #2c1638 100%);
+    color: #e6bdfa;
+  }
+  .mundos-place-castle {
+    background: linear-gradient(180deg, #1c2450 0%, #141a3a 100%);
+    color: #b6c4ff;
+  }
+  .mundos-place-lab {
+    background: linear-gradient(180deg, #123a24 0%, #0c2b1a 100%);
+    color: #a7e8bd;
+  }
+  .mundos-place-life {
+    background: linear-gradient(180deg, #4a2413 0%, #391b0d 100%);
+    color: #ffc4a3;
+  }
+  .session-end-card {
+    background: #362a44;
+    color: #f0e9ff;
+  }
+  .session-end-body {
+    color: #d9cdee;
+  }
+  .session-end-activity-btn {
+    background: #2a1f38;
+    color: #f0e9ff;
+  }
 }
 
 .mission-card {
@@ -2764,33 +2799,6 @@ body {
 .mundos-place-life {
   background: linear-gradient(180deg, #ffe0d6 0%, #ffc7b3 100%);
   color: #a0431a;
-}
-
-@media (prefers-color-scheme: dark) {
-  .mundos-place-village {
-    background: linear-gradient(180deg, #4a3a10 0%, #3a2d0a 100%);
-    color: #ffd98a;
-  }
-  .mundos-place-island {
-    background: linear-gradient(180deg, #0f3a40 0%, #0a2b30 100%);
-    color: #8fe4ef;
-  }
-  .mundos-place-music {
-    background: linear-gradient(180deg, #3a1e4a 0%, #2c1638 100%);
-    color: #e6bdfa;
-  }
-  .mundos-place-castle {
-    background: linear-gradient(180deg, #1c2450 0%, #141a3a 100%);
-    color: #b6c4ff;
-  }
-  .mundos-place-lab {
-    background: linear-gradient(180deg, #123a24 0%, #0c2b1a 100%);
-    color: #a7e8bd;
-  }
-  .mundos-place-life {
-    background: linear-gradient(180deg, #4a2413 0%, #391b0d 100%);
-    color: #ffc4a3;
-  }
 }
 
 .mission-badge {
@@ -3033,16 +3041,3 @@ body {
   animation: badge-pulse 1.4s ease infinite;
 }
 
-@media (prefers-color-scheme: dark) {
-  .session-end-card {
-    background: #362a44;
-    color: #f0e9ff;
-  }
-  .session-end-body {
-    color: #d9cdee;
-  }
-  .session-end-activity-btn {
-    background: #2a1f38;
-    color: #f0e9ff;
-  }
-}
