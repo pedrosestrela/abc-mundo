@@ -282,5 +282,362 @@
       "NA"
     ],
     "digraph": false
+  },
+  {
+    "syllable": "BA",
+    "exampleWord": "BANANA",
+    "emoji": "🍌",
+    "hint": "BA come Banana",
+    "syllables": [
+      "BA",
+      "NA",
+      "NA"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "E",
+    "exampleWord": "ELEFANTE",
+    "emoji": "🐘",
+    "hint": "E come Elefante",
+    "syllables": [
+      "E",
+      "LE",
+      "FAN",
+      "TE"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "FAR",
+    "exampleWord": "FARFALLA",
+    "emoji": "🦋",
+    "hint": "FAR come Farfalla",
+    "syllables": [
+      "FAR",
+      "FAL",
+      "LA"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "TAR",
+    "exampleWord": "TARTARUGA",
+    "emoji": "🐢",
+    "hint": "TAR come Tartaruga",
+    "syllables": [
+      "TAR",
+      "TA",
+      "RU",
+      "GA"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "PIOG",
+    "exampleWord": "PIOGGIA",
+    "emoji": "🌧️",
+    "hint": "PIOG come Pioggia",
+    "syllables": [
+      "PIOG",
+      "GIA"
+    ],
+    "digraph": true
+  },
+  {
+    "syllable": "PE",
+    "exampleWord": "PECORA",
+    "emoji": "🐑",
+    "hint": "PE come Pecora",
+    "syllables": [
+      "PE",
+      "CO",
+      "RA"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "A",
+    "exampleWord": "APE",
+    "emoji": "🐝",
+    "hint": "A come Ape",
+    "syllables": [
+      "A",
+      "PE"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "GI",
+    "exampleWord": "GINOCCHIO",
+    "emoji": "🦵",
+    "hint": "GI come Ginocchio",
+    "syllables": [
+      "GI",
+      "NOC",
+      "CHIO"
+    ],
+    "digraph": true
+  },
+  {
+    "syllable": "LI",
+    "exampleWord": "LIBRO",
+    "emoji": "📖",
+    "hint": "LI come Libro",
+    "syllables": [
+      "LI",
+      "BRO"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "COM",
+    "exampleWord": "COMPUTER",
+    "emoji": "💻",
+    "hint": "COM come Computer",
+    "syllables": [
+      "COM",
+      "PU",
+      "TER"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "BI",
+    "exampleWord": "BICICLETTA",
+    "emoji": "🚲",
+    "hint": "BI come Bicicletta",
+    "syllables": [
+      "BI",
+      "CI",
+      "CLET",
+      "TA"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "GI",
+    "exampleWord": "GIRASOLE",
+    "emoji": "🌻",
+    "hint": "GI come Girasole",
+    "syllables": [
+      "GI",
+      "RA",
+      "SO",
+      "LE"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "BOS",
+    "exampleWord": "BOSCO",
+    "emoji": "🌲",
+    "hint": "BOS come Bosco",
+    "syllables": [
+      "BOS",
+      "CO"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "STEL",
+    "exampleWord": "STELLA",
+    "emoji": "⭐",
+    "hint": "STEL come Stella",
+    "syllables": [
+      "STEL",
+      "LA"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "LU",
+    "exampleWord": "LUNA",
+    "emoji": "🌙",
+    "hint": "LU come Luna",
+    "syllables": [
+      "LU",
+      "NA"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "UC",
+    "exampleWord": "UCCELLO",
+    "emoji": "🐦",
+    "hint": "UC come Uccello",
+    "syllables": [
+      "UC",
+      "CEL",
+      "LO"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "MUC",
+    "exampleWord": "MUCCA",
+    "emoji": "🐮",
+    "hint": "MUC come Mucca",
+    "syllables": [
+      "MUC",
+      "CA"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "FOR",
+    "exampleWord": "FORMAGGIO",
+    "emoji": "🧀",
+    "hint": "FOR come Formaggio",
+    "syllables": [
+      "FOR",
+      "MAG",
+      "GIO"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "RI",
+    "exampleWord": "RISO",
+    "emoji": "🍚",
+    "hint": "RI come Riso",
+    "syllables": [
+      "RI",
+      "SO"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "SCUO",
+    "exampleWord": "SCUOLA",
+    "emoji": "🏫",
+    "hint": "SCUO come Scuola",
+    "syllables": [
+      "SCUO",
+      "LA"
+    ],
+    "digraph": true
+  },
+  {
+    "syllable": "FA",
+    "exampleWord": "FAMIGLIA",
+    "emoji": "👨‍👩‍👧",
+    "hint": "FA come Famiglia",
+    "syllables": [
+      "FA",
+      "MI",
+      "GLIA"
+    ],
+    "digraph": true
+  },
+  {
+    "syllable": "COC",
+    "exampleWord": "COCCODRILLO",
+    "emoji": "🐊",
+    "hint": "COC come Coccodrillo",
+    "syllables": [
+      "COC",
+      "CO",
+      "DRIL",
+      "LO"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "OM",
+    "exampleWord": "OMBRELLO",
+    "emoji": "☂️",
+    "hint": "OM come Ombrello",
+    "syllables": [
+      "OM",
+      "BREL",
+      "LO"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "BI",
+    "exampleWord": "BIBLIOTECA",
+    "emoji": "📚",
+    "hint": "BI come Biblioteca",
+    "syllables": [
+      "BI",
+      "BLIO",
+      "TE",
+      "CA"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "CAN",
+    "exampleWord": "CANGURO",
+    "emoji": "🦘",
+    "hint": "CAN come Canguro",
+    "syllables": [
+      "CAN",
+      "GU",
+      "RO"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "AN",
+    "exampleWord": "ANGURIA",
+    "emoji": "🍉",
+    "hint": "AN come Anguria",
+    "syllables": [
+      "AN",
+      "GU",
+      "RIA"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "FRA",
+    "exampleWord": "FRAGOLA",
+    "emoji": "🍓",
+    "hint": "FRA come Fragola",
+    "syllables": [
+      "FRA",
+      "GO",
+      "LA"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "LU",
+    "exampleWord": "LUMACA",
+    "emoji": "🐌",
+    "hint": "LU come Lumaca",
+    "syllables": [
+      "LU",
+      "MA",
+      "CA"
+    ],
+    "digraph": false
+  },
+  {
+    "syllable": "SPEC",
+    "exampleWord": "SPECCHIO",
+    "emoji": "🪞",
+    "hint": "SPEC come Specchio",
+    "syllables": [
+      "SPEC",
+      "CHIO"
+    ],
+    "digraph": true
+  },
+  {
+    "syllable": "CIOC",
+    "exampleWord": "CIOCCOLATO",
+    "emoji": "🍫",
+    "hint": "CIOC come Cioccolato",
+    "syllables": [
+      "CIOC",
+      "CO",
+      "LA",
+      "TO"
+    ],
+    "digraph": true
   }
 ]
