@@ -33,6 +33,9 @@ export default function NavBar() {
       <NavLink to="/piano" className="nav-link">
         🎹 {t("nav.piano")}
       </NavLink>
+      <NavLink to="/math" className="nav-link">
+        🔢 {t("nav.math")}
+      </NavLink>
     </nav>
   );
 }
