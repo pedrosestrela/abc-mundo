@@ -1,0 +1,65 @@
+[
+  {
+    "id": "agua",
+    "icon": "🚰",
+    "name": "Wasser",
+    "prompt": "🚰 Woher kommt das Wasser, das gleichzeitig Tausende Häuser erreicht?",
+    "steps": [
+      "1. Die Stadt sammelt Wasser aus Flüssen, Stauseen oder tiefen Brunnen.",
+      "2. Ein großes Wasserwerk reinigt das Wasser für alle Menschen in der Stadt.",
+      "3. Das Wasser fließt durch ein riesiges Rohrnetz unter den Straßen.",
+      "4. Es erreicht Häuser, Schulen, Krankenhäuser und Geschäfte gleichzeitig, jeden Tag."
+    ]
+  },
+  {
+    "id": "eletricidade",
+    "icon": "💡",
+    "name": "Strom",
+    "prompt": "💡 Du hast eine Lampe angeschaltet. Woher kam die Energie?",
+    "steps": [
+      "1. Kraftwerke oder Solar- und Windparks erzeugen Energie für die ganze Stadt.",
+      "2. Die Energie reist über große Hochspannungsleitungen zu den Umspannwerken der Stadtteile.",
+      "3. Von dort fließt sie über kleinere Kabel zu jeder Straße und jedem Haus.",
+      "4. Ein Klick am Schalter genügt, und die Energie erreicht deine Lampe, fast mit Lichtgeschwindigkeit!"
+    ]
+  },
+  {
+    "id": "lixo",
+    "icon": "🗑️",
+    "name": "Müll und Recycling",
+    "prompt": "🗑️ Du hast eine Flasche in den Recyclingbehälter geworfen. Wohin geht sie jetzt?",
+    "steps": [
+      "1. Ein Müllwagen kommt vorbei und holt den Inhalt des Recyclingbehälters ab.",
+      "2. Die Flasche gelangt zu einer Sortieranlage, wo Maschinen und Menschen Glas, Papier, Plastik und Metall trennen.",
+      "3. Jedes Material geht zu seiner eigenen Recyclinganlage.",
+      "4. Dort wird es zu neuem Rohmaterial verarbeitet, das wieder... eine neue Flasche werden kann! Recycling spart Ressourcen und schützt den Planeten."
+    ]
+  },
+  {
+    "id": "transportes",
+    "icon": "🚌",
+    "name": "Verkehr",
+    "prompt": "🚌 Woher wissen Busse und Züge, wohin sie fahren und wann sie halten müssen?",
+    "steps": [
+      "Städte planen Routen und Fahrpläne für Busse, Züge und U-Bahnen, um Stadtteile, Schulen und Arbeitsplätze zu verbinden. Fahrer und Kontrollsysteme sorgen dafür, dass alles sicher läuft, damit Menschen sich fortbewegen können, ohne immer ein Auto zu brauchen."
+    ]
+  },
+  {
+    "id": "hospitais",
+    "icon": "🏥",
+    "name": "Krankenhäuser",
+    "prompt": "🏥 Wofür ist ein Krankenhaus da, und wer arbeitet dort?",
+    "steps": [
+      "Ein Krankenhaus ist ein Ort, an dem Ärzte, Pflegekräfte und andere Mitarbeiter sich um Menschen kümmern, wenn sie krank oder verletzt sind, damit es ihnen wieder besser geht. Tag und Nacht ist immer jemand im Dienst, damit niemand ohne Hilfe bleibt, wenn er sie braucht. Es ist ein Ort, an dem man sich umsorgt und sicher fühlt."
+    ]
+  },
+  {
+    "id": "bombeiros",
+    "icon": "🚒",
+    "name": "Feuerwehr",
+    "prompt": "🚒 Was macht die Feuerwehr, wenn du die Sirene hörst?",
+    "steps": [
+      "Die Feuerwehr hilft, Brände zu löschen, Menschen und Tiere zu retten und in Notfällen zu helfen. Sie ist immer bereit, mit Fahrzeug und Ausrüstung vorbereitet, um so schnell wie möglich bei denen zu sein, die Hilfe brauchen."
+    ]
+  }
+]

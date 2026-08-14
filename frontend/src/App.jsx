@@ -33,6 +33,7 @@ const Science = lazy(() => import("./pages/Science.jsx"));
 const PortugalHistory = lazy(() => import("./pages/PortugalHistory.jsx"));
 const LifeSkills = lazy(() => import("./pages/LifeSkills.jsx"));
 const Computing = lazy(() => import("./pages/Computing.jsx"));
+const City = lazy(() => import("./pages/City.jsx"));
 const Mundos = lazy(() => import("./pages/Mundos.jsx"));
 
 export default function App() {
@@ -68,6 +69,7 @@ export default function App() {
             <Route path="/history" element={<PortugalHistory />} />
             <Route path="/lifeskills" element={<LifeSkills />} />
             <Route path="/computing" element={<Computing />} />
+            <Route path="/city" element={<City />} />
           </Routes>
         </Suspense>
       </main>

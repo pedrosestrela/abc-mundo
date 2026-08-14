@@ -1,0 +1,74 @@
+[
+  {
+    "id": "agua",
+    "icon": "🚰",
+    "name": "Wasser",
+    "prompt": "🚿 Dreh die Dusche auf! Wohin fließt das Wasser, und woher kam es?",
+    "steps": [
+      "1. Das Wasser beginnt in einem Stausee oder einem Brunnen, wo es gesammelt wird.",
+      "2. Es fließt zu einem Wasserwerk, wo es gereinigt und trinkbar gemacht wird.",
+      "3. Es fließt durch Rohre unter der Erde bis zu deinem Haus.",
+      "4. Du drehst die Dusche auf, und das Wasser hilft dir beim Waschen!",
+      "5. Nach der Benutzung fließt es durch ein Abflussrohr aus dem Haus.",
+      "6. Es wird in einer Kläranlage noch einmal gereinigt, bevor es sauberer in den Fluss oder ins Meer zurückkehrt."
+    ]
+  },
+  {
+    "id": "eletricidade",
+    "icon": "⚡",
+    "name": "Strom",
+    "prompt": "💡 Du hast das Licht angeschaltet! Woher kam die Energie?",
+    "steps": [
+      "1. Strom wird in einem Kraftwerk erzeugt (mit Wasser, Wind, Sonne oder anderen Quellen) oder von Solarpaneelen auf dem Dach.",
+      "2. Er reist durch sehr große Stromleitungen, sogenannte Hochspannungsleitungen.",
+      "3. Er durchläuft ein Umspannwerk, das die Stromstärke sicher herabsetzt.",
+      "4. Er kommt über den Stromzähler ins Haus und dann durch Kabel in den Wänden.",
+      "5. Er erreicht den Schalter und die Lampe — und das Licht geht an!"
+    ]
+  },
+  {
+    "id": "aquecimento",
+    "icon": "🔥",
+    "name": "Heizung",
+    "prompt": "🔥 Wie bleibt dein Haus im Winter warm?",
+    "steps": [
+      "Ein Heizkessel, eine elektrische Heizung oder eine Zentralheizung erwärmt Wasser oder Luft. Rohre oder Kanäle bringen diese Wärme dann zu den Heizkörpern oder Lüftungsschlitzen in jedem Zimmer, sodass das Haus warm und gemütlich bleibt."
+    ]
+  },
+  {
+    "id": "ventilacao",
+    "icon": "🌬️",
+    "name": "Lüftung",
+    "prompt": "🌬️ Wie bleibt die Luft im Haus frisch?",
+    "steps": [
+      "Häuser haben kleine Öffnungen und Kanäle, durch die frische Luft hinein- und verbrauchte Luft (mit Kochdampf oder Badezimmerfeuchtigkeit) hinausströmt. So bleibt die Luft im Haus nicht stickig, und wir atmen besser."
+    ]
+  },
+  {
+    "id": "internet",
+    "icon": "🌐",
+    "name": "Internet",
+    "prompt": "🌐 Wie kommen Videos und Nachrichten auf deinen Bildschirm?",
+    "steps": [
+      "Informationen reisen durch besondere Kabel (oft Glasfaser, dünn wie ein Haar), die dein Haus mit einem großen Rechenzentrum verbinden. Dort werden sie geordnet und in Sekunden zurückgeschickt — so kannst du ein Video sehen, das tausende Kilometer entfernt ist."
+    ]
+  },
+  {
+    "id": "saneamento",
+    "icon": "🚽",
+    "name": "Abwasser",
+    "prompt": "🚽 Was passiert, wenn du die Toilette spülst?",
+    "steps": [
+      "Schmutziges Wasser verlässt das Haus durch versteckte Rohre und fließt in das städtische Kanalnetz unter den Straßen. Danach reist es zu einer Kläranlage, wo es gereinigt wird, bevor es zurück in die Natur gelangt und Flüsse und Meere schützt."
+    ]
+  },
+  {
+    "id": "solar",
+    "icon": "☀️",
+    "name": "Solarenergie",
+    "prompt": "☀️ Wofür sind diese Paneele auf dem Dach?",
+    "steps": [
+      "Solarpaneele fangen Sonnenlicht ein und wandeln es in Strom um, ganz ohne Rauch oder Verschmutzung. Diese Energie kann Lichter einschalten, Geräte aufladen oder sogar in Batterien gespeichert werden, um sie nachts zu nutzen."
+    ]
+  }
+]

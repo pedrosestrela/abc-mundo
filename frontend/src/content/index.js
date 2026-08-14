@@ -34,6 +34,22 @@ import phrasesIt from "./phrases.it.json";
 import countries from "./countries.json";
 import portugalHistory from "./portugalHistory.json";
 
+import houseSystemsPt from "./houseSystems.pt.json";
+import houseSystemsEn from "./houseSystems.en.json";
+import houseSystemsDe from "./houseSystems.de.json";
+import houseSystemsFr from "./houseSystems.fr.json";
+import houseSystemsZh from "./houseSystems.zh.json";
+import houseSystemsEs from "./houseSystems.es.json";
+import houseSystemsIt from "./houseSystems.it.json";
+
+import citySystemsPt from "./citySystems.pt.json";
+import citySystemsEn from "./citySystems.en.json";
+import citySystemsDe from "./citySystems.de.json";
+import citySystemsFr from "./citySystems.fr.json";
+import citySystemsZh from "./citySystems.zh.json";
+import citySystemsEs from "./citySystems.es.json";
+import citySystemsIt from "./citySystems.it.json";
+
 import missionsPt from "./missions.pt.json";
 import missionsEn from "./missions.en.json";
 import missionsDe from "./missions.de.json";
@@ -201,6 +217,8 @@ const COMPUTING_SAFETY = { pt: computingSafetyPt, en: computingSafetyEn, de: com
 const LEMONADE_STAND = { pt: lemonadeStandPt, en: lemonadeStandEn, de: lemonadeStandDe, fr: lemonadeStandFr, zh: lemonadeStandZh, es: lemonadeStandEs, it: lemonadeStandIt };
 const SHOPPING = { pt: shoppingPt, en: shoppingEn, de: shoppingDe, fr: shoppingFr, zh: shoppingZh, es: shoppingEs, it: shoppingIt };
 const AD_LITERACY = { pt: adLiteracyPt, en: adLiteracyEn, de: adLiteracyDe, fr: adLiteracyFr, zh: adLiteracyZh, es: adLiteracyEs, it: adLiteracyIt };
+const HOUSE_SYSTEMS = { pt: houseSystemsPt, en: houseSystemsEn, de: houseSystemsDe, fr: houseSystemsFr, zh: houseSystemsZh, es: houseSystemsEs, it: houseSystemsIt };
+const CITY_SYSTEMS = { pt: citySystemsPt, en: citySystemsEn, de: citySystemsDe, fr: citySystemsFr, zh: citySystemsZh, es: citySystemsEs, it: citySystemsIt };
 
 // Normalizes zh's different shape ({hanzi,...}) to the same shape used by
 // the Latin-alphabet languages ({letter, lower, upper, exampleWord, emoji}).
@@ -292,6 +310,14 @@ export function getShopping(langCode) {
 
 export function getAdLiteracy(langCode) {
   return AD_LITERACY[langCode] || [];
+}
+
+export function getHouseSystems(langCode) {
+  return HOUSE_SYSTEMS[langCode] || [];
+}
+
+export function getCitySystems(langCode) {
+  return CITY_SYSTEMS[langCode] || [];
 }
 
 // Countries are language-agnostic in shape (name/fact are per-language

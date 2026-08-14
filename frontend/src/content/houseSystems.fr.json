@@ -1,0 +1,74 @@
+[
+  {
+    "id": "agua",
+    "icon": "🚰",
+    "name": "Eau",
+    "prompt": "🚿 Ouvre la douche ! Où va l'eau, et d'où vient-elle ?",
+    "steps": [
+      "1. L'eau commence dans un barrage ou un puits, où elle est recueillie.",
+      "2. Elle va vers une station de traitement, où elle est nettoyée et rendue potable.",
+      "3. Elle voyage dans des tuyaux sous la terre jusqu'à ta maison.",
+      "4. Tu ouvres la douche et l'eau t'aide à te laver !",
+      "5. Après utilisation, elle repart par une canalisation d'évacuation hors de la maison.",
+      "6. Elle est traitée à nouveau dans une station d'épuration avant de retourner à la rivière ou à la mer, bien plus propre."
+    ]
+  },
+  {
+    "id": "eletricidade",
+    "icon": "⚡",
+    "name": "Électricité",
+    "prompt": "💡 Tu as allumé la lumière ! D'où venait l'énergie ?",
+    "steps": [
+      "1. L'électricité est produite dans une centrale (qui utilise l'eau, le vent, le soleil ou d'autres sources) ou par des panneaux solaires sur le toit.",
+      "2. Elle voyage dans de très grandes lignes électriques, appelées lignes à haute tension.",
+      "3. Elle passe par un poste électrique qui réduit la force de l'électricité pour la rendre sûre.",
+      "4. Elle entre dans ta maison par le compteur électrique, puis par les fils dans les murs.",
+      "5. Elle atteint l'interrupteur et la lampe — et la lumière s'allume !"
+    ]
+  },
+  {
+    "id": "aquecimento",
+    "icon": "🔥",
+    "name": "Chauffage",
+    "prompt": "🔥 Comment ta maison reste-t-elle chaude en hiver ?",
+    "steps": [
+      "Une chaudière, un chauffage électrique ou un système central chauffe l'eau ou l'air. Des tuyaux ou des conduits transportent ensuite cette chaleur vers les radiateurs ou les bouches d'aération de chaque pièce, gardant la maison chaude et confortable."
+    ]
+  },
+  {
+    "id": "ventilacao",
+    "icon": "🌬️",
+    "name": "Ventilation",
+    "prompt": "🌬️ Comment l'air à l'intérieur de la maison reste-t-il frais ?",
+    "steps": [
+      "Les maisons ont de petites ouvertures et conduits qui laissent entrer l'air frais et sortir l'air utilisé (avec la fumée de cuisine ou l'humidité de la salle de bain). Ainsi, l'air à l'intérieur ne devient pas lourd, et on respire mieux."
+    ]
+  },
+  {
+    "id": "internet",
+    "icon": "🌐",
+    "name": "Internet",
+    "prompt": "🌐 Comment les vidéos et les messages arrivent-ils sur ton écran ?",
+    "steps": [
+      "L'information voyage dans des câbles spéciaux (souvent en fibre optique, fins comme un cheveu) qui relient ta maison à un grand centre de données. Là-bas, l'information est organisée et renvoyée en quelques secondes — c'est pour ça que tu peux voir une vidéo qui est à des milliers de kilomètres."
+    ]
+  },
+  {
+    "id": "saneamento",
+    "icon": "🚽",
+    "name": "Assainissement",
+    "prompt": "🚽 Que se passe-t-il quand tu tires la chasse d'eau ?",
+    "steps": [
+      "L'eau sale sort de la maison par des tuyaux cachés et rejoint le réseau d'égouts de la ville, qui circule sous les rues. Elle voyage ensuite jusqu'à une station d'épuration, où elle est nettoyée avant de retourner dans la nature, protégeant les rivières et la mer."
+    ]
+  },
+  {
+    "id": "solar",
+    "icon": "☀️",
+    "name": "Énergie Solaire",
+    "prompt": "☀️ À quoi servent ces panneaux sur le toit ?",
+    "steps": [
+      "Les panneaux solaires captent la lumière du soleil et la transforment en électricité, sans fumée ni pollution. Cette énergie peut allumer les lumières, recharger des appareils, ou même être stockée dans des batteries pour l'utiliser la nuit."
+    ]
+  }
+]

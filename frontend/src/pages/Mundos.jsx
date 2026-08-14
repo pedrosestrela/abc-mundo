@@ -35,6 +35,7 @@ const GROUPS = [
       { to: "/world", emoji: "🗺️", nav: "world", sub: "sub_world" },
       { to: "/history", emoji: "🏰", nav: "history", sub: "sub_history" },
       { to: "/science", emoji: "🔬", nav: "science", sub: "sub_science" },
+      { to: "/city", emoji: "🏙️", nav: "city", sub: "sub_city" },
     ],
   },
   {
