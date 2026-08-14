@@ -26,7 +26,7 @@ const GROUPS = [
     heading: "groupMusic",
     tiles: [
       { to: "/songs", emoji: "🎵", nav: "songs", sub: "sub_songs" },
-      { to: "/music", emoji: "🎹", nav: "piano", sub: "sub_piano" },
+      { to: "/music", emoji: "🎶", nav: "music", sub: "sub_music" },
     ],
   },
   {

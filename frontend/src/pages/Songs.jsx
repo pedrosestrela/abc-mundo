@@ -10,15 +10,17 @@ import HelpButton from "../components/HelpButton.jsx";
 export default function Songs() {
   const { t } = useTranslation();
   const pair = getLangPair() || { mother: "pt", secondary: "en" };
-  const songs = getSongs(pair.secondary);
+  const motherSongs = getSongs(pair.mother);
+  const secondarySongs = getSongs(pair.secondary);
+  const count = Math.min(motherSongs.length, secondarySongs.length);
 
   useEffect(() => stopBackgroundMusic, []);
 
-  async function handlePlay(song) {
+  async function handlePlay(song, langCode) {
     const profile = getProfile();
-    pingProgress({ profileName: profile?.name, module: "songs", event: `song_played:${song.id}` });
+    pingProgress({ profileName: profile?.name, module: "songs", event: `song_played:${song.id}:${langCode}` });
     startBackgroundMusic();
-    await speakSequence(song.lyrics, pair.secondary);
+    await speakSequence(song.lyrics, langCode);
     stopBackgroundMusic();
   }
 
@@ -30,27 +32,49 @@ export default function Songs() {
       </div>
       {!isSpeechAvailable() && <p className="speech-unavailable">{t("modules.speechUnavailable")}</p>}
       <div className="song-list">
-        {songs.map((song) => (
-          <div className="song-card" key={song.id}>
-            <div className="song-illustration">
-              <Illustration illustrationId={song.illustrationId} />
+        {Array.from({ length: count }).map((_, i) => {
+          const m = motherSongs[i];
+          const s = secondarySongs[i];
+          return (
+            <div className="song-card" key={m.id}>
+              <div className="song-illustration">
+                <Illustration illustrationId={m.illustrationId} />
+              </div>
+              <h2>{m.title}</h2>
+              <ul className="song-lyrics">
+                {m.lyrics.map((line, idx) => (
+                  <li key={idx}>{line}</li>
+                ))}
+              </ul>
+              <button
+                type="button"
+                className="big-btn"
+                onClick={() => handlePlay(m, pair.mother)}
+                disabled={!isSpeechAvailable()}
+              >
+                ▶️ {t("modules.play")}
+              </button>
+              {pair.secondary !== pair.mother ? (
+                <>
+                  <h2 className="song-secondary-title">{s.title}</h2>
+                  <ul className="song-lyrics secondary">
+                    {s.lyrics.map((line, idx) => (
+                      <li key={idx}>{line}</li>
+                    ))}
+                  </ul>
+                  <button
+                    type="button"
+                    className="big-btn secondary-btn"
+                    onClick={() => handlePlay(s, pair.secondary)}
+                    disabled={!isSpeechAvailable()}
+                  >
+                    ▶️ {t("modules.play")}
+                  </button>
+                </>
+              ) : null}
             </div>
-            <h2>{song.title}</h2>
-            <ul className="song-lyrics">
-              {song.lyrics.map((line, i) => (
-                <li key={i}>{line}</li>
-              ))}
-            </ul>
-            <button
-              type="button"
-              className="big-btn"
-              onClick={() => handlePlay(song)}
-              disabled={!isSpeechAvailable()}
-            >
-              ▶️ {t("modules.play")}
-            </button>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );
