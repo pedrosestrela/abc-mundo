@@ -147,6 +147,7 @@ const GROUPS = [
       { to: "/how-it-works", emoji: "🔧", nav: "howThingsWork", sub: "sub_howThingsWork" },
       { to: "/thinking", emoji: "🧠", nav: "thinking", sub: "sub_thinking" },
       { to: "/communication", emoji: "🗣️", nav: "communication", sub: "sub_communication" },
+      { to: "/learning-strategies", emoji: "🧠✨", nav: "learningStrategies", sub: "sub_learningStrategies" },
     ],
   },
   {

@@ -1,0 +1,463 @@
+{
+  "memory": [
+    {
+      "id": "m1",
+      "emoji": "🎈",
+      "items": [
+        "🍎",
+        "🚗",
+        "⭐",
+        "🐶",
+        "🎵"
+      ],
+      "technique": "Saying the items out loud helps us remember them for longer!"
+    },
+    {
+      "id": "m2",
+      "emoji": "🎈",
+      "items": [
+        "🌙",
+        "🐟",
+        "🍩",
+        "🚀",
+        "🌵"
+      ],
+      "technique": "Picturing a funny image with the items together helps them stick in memory."
+    },
+    {
+      "id": "m3",
+      "emoji": "🎈",
+      "items": [
+        "🦋",
+        "🔑",
+        "🧸",
+        "🎯",
+        "🍇"
+      ],
+      "technique": "Grouping the items into smaller pairs makes them easier to recall."
+    },
+    {
+      "id": "m4",
+      "emoji": "🎈",
+      "items": [
+        "🐢",
+        "🎁",
+        "🌈",
+        "🧦",
+        "🍓",
+        "🚲"
+      ],
+      "technique": "Making up a little story that links the items helps us remember the order."
+    },
+    {
+      "id": "m5",
+      "emoji": "🎈",
+      "items": [
+        "🥕",
+        "🐝",
+        "🎨",
+        "🥁"
+      ],
+      "technique": "Saying the items out loud helps us remember them for longer!"
+    },
+    {
+      "id": "m6",
+      "emoji": "🎈",
+      "items": [
+        "🦉",
+        "🧊",
+        "🎪",
+        "🍋",
+        "🧩"
+      ],
+      "technique": "Picturing a funny image with the items together helps them stick in memory."
+    },
+    {
+      "id": "m7",
+      "emoji": "🎈",
+      "items": [
+        "🐧",
+        "🎻",
+        "🥨",
+        "🛼",
+        "🌻",
+        "🧭"
+      ],
+      "technique": "Grouping the items into smaller pairs makes them easier to recall."
+    },
+    {
+      "id": "m8",
+      "emoji": "🎈",
+      "items": [
+        "🐬",
+        "🎲",
+        "🧵",
+        "🍄"
+      ],
+      "technique": "Making up a little story that links the items helps us remember the order."
+    },
+    {
+      "id": "m9",
+      "emoji": "🎈",
+      "items": [
+        "🦖",
+        "🎧",
+        "🥥",
+        "🧦",
+        "🚂"
+      ],
+      "technique": "Saying the items out loud helps us remember them for longer!"
+    },
+    {
+      "id": "m10",
+      "emoji": "🎈",
+      "items": [
+        "🐌",
+        "🎺",
+        "🧃",
+        "🍉",
+        "🧶",
+        "🚁"
+      ],
+      "technique": "Picturing a funny image with the items together helps them stick in memory."
+    }
+  ],
+  "attention": [
+    {
+      "id": "a1",
+      "scene": "🌳🌳🌳🐿️🌳🌳🌳🌳",
+      "question": "Find the animal hidden among the trees.",
+      "targetEmoji": "🐿️",
+      "hint": "Look for something that isn't a tree."
+    },
+    {
+      "id": "a2",
+      "scene": "☁️☁️🐦☁️☁️☁️☁️☁️",
+      "question": "Find the bird hidden in the clouds.",
+      "targetEmoji": "🐦",
+      "hint": "There's only one element that's different."
+    },
+    {
+      "id": "a3",
+      "scene": "🍪🍪🍪🍪🍩🍪🍪🍪",
+      "question": "Find the donut among the cookies.",
+      "targetEmoji": "🍩",
+      "hint": "It has a hole in the middle."
+    },
+    {
+      "id": "a4",
+      "scene": "🚗🚗🚗🚙🚗🚗🚗🚗",
+      "question": "Find the car that's different from the others.",
+      "targetEmoji": "🚙",
+      "hint": "It's a bit taller than the others."
+    },
+    {
+      "id": "a5",
+      "scene": "⚽⚽⚽⚽🏀⚽⚽⚽",
+      "question": "Find the basketball among the footballs.",
+      "targetEmoji": "🏀",
+      "hint": "It has a different colour."
+    },
+    {
+      "id": "a6",
+      "scene": "🐝🐝🐝🦋🐝🐝🐝🐝",
+      "question": "Find the butterfly among the bees.",
+      "targetEmoji": "🦋",
+      "hint": "It doesn't buzz."
+    },
+    {
+      "id": "a7",
+      "scene": "🌸🌸🌸🌸🌵🌸🌸🌸",
+      "question": "Find the cactus among the flowers.",
+      "targetEmoji": "🌵",
+      "hint": "It has spikes."
+    },
+    {
+      "id": "a8",
+      "scene": "🍎🍎🍏🍎🍎🍎🍎🍎",
+      "question": "Find the green apple among the red ones.",
+      "targetEmoji": "🍏",
+      "hint": "The colour is what changes."
+    },
+    {
+      "id": "a9",
+      "scene": "⭐⭐⭐🌟⭐⭐⭐⭐",
+      "question": "Find the brighter star among the others.",
+      "targetEmoji": "🌟",
+      "hint": "Notice the glow around it."
+    },
+    {
+      "id": "a10",
+      "scene": "🐟🐟🐟🐡🐟🐟🐟🐟",
+      "question": "Find the pufferfish among the little fish.",
+      "targetEmoji": "🐡",
+      "hint": "It's rounder than the others."
+    }
+  ],
+  "errors": [
+    {
+      "id": "e1",
+      "character": "🧒",
+      "scenario": "Tom tried to stack the blocks, but the tower fell when he put the bigger block on top.",
+      "reflectionPrompts": [
+        "What do you think happened to the tower?",
+        "What could Tom try next time?",
+        "Do you think trying again can help you learn?"
+      ]
+    },
+    {
+      "id": "e2",
+      "character": "👧",
+      "scenario": "Ines tried to draw a cat, but the ears came out too big and she didn't like the result.",
+      "reflectionPrompts": [
+        "What did Ines learn about drawing ears?",
+        "What could she do differently in the next drawing?",
+        "Do you think artists also make drawings they don't like at first?"
+      ]
+    },
+    {
+      "id": "e3",
+      "character": "🧒",
+      "scenario": "Rui added 3 + 4 and said it was 6, but the correct answer was actually 7.",
+      "reflectionPrompts": [
+        "Where do you think Rui might have miscounted?",
+        "What strategy could he use to check the sum?",
+        "What does this mistake show us we can still practise?"
+      ]
+    },
+    {
+      "id": "e4",
+      "character": "👦",
+      "scenario": "Diogo tried to ride a bike without training wheels and fell right after he started pedalling.",
+      "reflectionPrompts": [
+        "What do you think Diogo's body was learning as he fell?",
+        "What could he try to hold onto better next time?",
+        "Do you think people who ride well ever fell while learning?"
+      ]
+    },
+    {
+      "id": "e5",
+      "character": "👧",
+      "scenario": "Maria told the teacher that the capital of Portugal was Porto, but the right answer was Lisbon.",
+      "reflectionPrompts": [
+        "Why do you think she might have mixed up the cities?",
+        "How can Maria remember the right answer better?",
+        "Does one wrong answer mean we know nothing?"
+      ]
+    },
+    {
+      "id": "e6",
+      "character": "🧒",
+      "scenario": "Pedro tried to do a puzzle and put a piece in the wrong spot several times.",
+      "reflectionPrompts": [
+        "What might Pedro have discovered about the piece's shape?",
+        "What other way of looking at the piece could help?",
+        "Do you think trying different pieces is a good way to learn?"
+      ]
+    },
+    {
+      "id": "e7",
+      "character": "👦",
+      "scenario": "Miguel wrote the word 'gato' (cat) as 'gatu' in his notebook.",
+      "reflectionPrompts": [
+        "Which sound do you think Miguel mixed up?",
+        "How can he check the word next time?",
+        "What does this kind of mistake teach us about vowels?"
+      ]
+    },
+    {
+      "id": "e8",
+      "character": "👧",
+      "scenario": "Sofia tried to sing a new song and swapped the order of two parts of the lyrics.",
+      "reflectionPrompts": [
+        "What do you think would help Sofia remember the right order?",
+        "Do you think singing it again, more slowly, could help?",
+        "Is it normal to make mistakes when learning something new?"
+      ]
+    },
+    {
+      "id": "e9",
+      "character": "🧒",
+      "scenario": "Tiago tried to build a tower of cards, but it fell as soon as he touched the last card.",
+      "reflectionPrompts": [
+        "What do you think made the tower fall this time?",
+        "What could Tiago change about how he places the cards?",
+        "How do you feel when something you try doesn't work right away?"
+      ]
+    },
+    {
+      "id": "e10",
+      "character": "👦",
+      "scenario": "Andre picked the shortest path on the treasure map, but that path actually had a river in the middle.",
+      "reflectionPrompts": [
+        "What did Andre learn about looking closely at the map?",
+        "What could he do before choosing the path next time?",
+        "Can a path that doesn't work still teach us something?"
+      ]
+    }
+  ],
+  "strategy": [
+    {
+      "id": "s1",
+      "prompt": "How can you cross the river without getting your feet wet?",
+      "firstTry": "You tried jumping from stone to stone, but one of the stones wobbles a lot.",
+      "hint1": "What if you asked someone who already knows the way for help?",
+      "hint2": "What if you looked for a bridge a bit further along?",
+      "answer": "You could look for a bridge, ask someone for help, or build a small path with extra stones."
+    },
+    {
+      "id": "s2",
+      "prompt": "How can you open a jar whose lid is very tight?",
+      "firstTry": "You tried turning the lid with your hands, but it wouldn't loosen.",
+      "hint1": "What if you used a cloth to get a better grip?",
+      "hint2": "What if you asked an adult for help?",
+      "answer": "You could use a cloth for grip, run the lid under warm water, or ask for help."
+    },
+    {
+      "id": "s3",
+      "prompt": "How can you reach a book on a high shelf?",
+      "firstTry": "You tried stretching your arm as far as you could, but you couldn't reach it.",
+      "hint1": "What if you used a safe little stool to climb up?",
+      "hint2": "What if you asked someone taller to help?",
+      "answer": "You could use a safe stool, ask someone taller for help, or use a long stick carefully."
+    },
+    {
+      "id": "s4",
+      "prompt": "How can you find out how many marbles fit in a jar without counting them one by one?",
+      "firstTry": "You tried counting one by one, but lost count halfway through.",
+      "hint1": "What if you counted them in groups of 10 instead of one by one?",
+      "hint2": "What if you asked someone to count along with you?",
+      "answer": "You could count in groups (of 5 or 10), ask for help, or split the marbles into smaller piles."
+    },
+    {
+      "id": "s5",
+      "prompt": "How can you set up a camping tent by yourself?",
+      "firstTry": "You tried going from memory, but the poles didn't fit together well.",
+      "hint1": "What if you looked for the instructions that came with the tent?",
+      "hint2": "What if you asked someone to hold one part while you set up the other?",
+      "answer": "You could read the instructions calmly, ask for help, or set it up piece by piece."
+    },
+    {
+      "id": "s6",
+      "prompt": "How can you remember to bring everything you need for school tomorrow?",
+      "firstTry": "You tried relying only on memory, but forgot your lunch.",
+      "hint1": "What if you made a list and checked it before leaving?",
+      "hint2": "What if you packed your bag the night before, calmly?",
+      "answer": "You could make a list, pack the bag the night before, or ask someone to help you check."
+    },
+    {
+      "id": "s7",
+      "prompt": "How can you settle an argument with a friend about which game to play?",
+      "firstTry": "You tried insisting only on your favourite game, but your friend got upset.",
+      "hint1": "What if you suggested playing one game today and another tomorrow?",
+      "hint2": "What if you used a simple draw, like odds or evens?",
+      "answer": "You could take turns choosing games, draw lots, or find a third game you both like."
+    },
+    {
+      "id": "s8",
+      "prompt": "How can you make a tower of blocks taller without it falling?",
+      "firstTry": "You tried stacking everything quickly, but the tower fell before you finished.",
+      "hint1": "What if you put the bigger blocks at the bottom and smaller ones on top?",
+      "hint2": "What if you built more slowly, checking the balance with each block?",
+      "answer": "You could put bigger blocks at the base, build slowly, or make the base wider."
+    },
+    {
+      "id": "s9",
+      "prompt": "How can you decorate a drawing in a different way than you've done before?",
+      "firstTry": "You tried using the same colours as always, but wanted something different.",
+      "hint1": "What if you tried a colour you've never used for this kind of drawing?",
+      "hint2": "What if you asked someone for an idea and mixed it with your own?",
+      "answer": "You could try new colours, ask someone for ideas, or mix two different styles."
+    },
+    {
+      "id": "s10",
+      "prompt": "How can you memorise a short poem you're learning for school?",
+      "firstTry": "You tried reading the poem once and reciting it, but forgot half of it.",
+      "hint1": "What if you split the poem into small parts and learned one at a time?",
+      "hint2": "What if you said the poem out loud several times instead of reading it silently?",
+      "answer": "You could learn it in parts, repeat it out loud, or ask someone to listen to you say it."
+    }
+  ],
+  "teachback": [
+    {
+      "id": "t1",
+      "concept": "Why does saying something out loud help us remember?",
+      "options": [
+        "Because speaking loudly scares forgetting away.",
+        "Because hearing and saying it at the same time gives our brain two ways to store the information.",
+        "Because it's more fun to shout."
+      ],
+      "bestIndex": 1
+    },
+    {
+      "id": "t2",
+      "concept": "Why does paying attention to an important detail help us solve problems?",
+      "options": [
+        "Because the right detail gives us the clue we need to understand the rest.",
+        "Because looking closely tires the eyes less.",
+        "Because details are always the prettiest part."
+      ],
+      "bestIndex": 0
+    },
+    {
+      "id": "t3",
+      "concept": "Why do mistakes help us learn?",
+      "options": [
+        "Because making a mistake shows us exactly what we don't know yet, so we can practise it.",
+        "Because mistakes are always someone else's fault.",
+        "Because whoever makes a mistake has to stop trying."
+      ],
+      "bestIndex": 0
+    },
+    {
+      "id": "t4",
+      "concept": "Why is it worth trying another strategy when one doesn't work?",
+      "options": [
+        "Because giving up is always the fastest option.",
+        "Because no strategy ever really works.",
+        "Because a problem can often be solved in more than one good way."
+      ],
+      "bestIndex": 2
+    },
+    {
+      "id": "t5",
+      "concept": "Why does explaining something to a friend help us learn better?",
+      "options": [
+        "Because explaining forces us to organise the ideas in our head.",
+        "Because talking a lot tires the throat.",
+        "Because friends always like hearing stories."
+      ],
+      "bestIndex": 0
+    },
+    {
+      "id": "t6",
+      "concept": "Why does grouping information into small chunks help memory?",
+      "options": [
+        "Because small groups are easier to hold onto than one long list all at once.",
+        "Because the brain only likes even numbers.",
+        "Because grouping makes everything more colourful."
+      ],
+      "bestIndex": 0
+    },
+    {
+      "id": "t7",
+      "concept": "Why does practising again after a mistake usually work better?",
+      "options": [
+        "Because repeating without thinking always guarantees success.",
+        "Because we already know what didn't work, so we can adjust our next try.",
+        "Because the second try is always easier by luck."
+      ],
+      "bestIndex": 1
+    },
+    {
+      "id": "t8",
+      "concept": "Why is asking questions about a mistake better than just saying 'wrong'?",
+      "options": [
+        "Because questions help us think about what happened and figure out the solution ourselves.",
+        "Because questions make the mistake disappear.",
+        "Because it's quicker than explaining."
+      ],
+      "bestIndex": 0
+    }
+  ]
+}
