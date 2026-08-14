@@ -455,6 +455,72 @@ body {
   line-height: 1.8;
 }
 
+.story-card {
+  cursor: pointer;
+}
+
+.story-card-emoji {
+  font-size: 3rem;
+}
+
+.story-reader {
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 480px;
+  margin: 12px auto;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.story-page-emoji {
+  font-size: 4rem;
+  margin-bottom: 8px;
+}
+
+.story-page-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--blue);
+  margin: 10px 0;
+}
+
+.story-page-row.secondary {
+  color: var(--pink);
+  font-size: 1.05rem;
+  font-weight: normal;
+}
+
+.story-page-text {
+  max-width: 320px;
+}
+
+.story-page-indicator {
+  color: #888;
+  font-size: 0.9rem;
+  margin: 8px 0;
+}
+
+.story-nav {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.story-nav .big-btn {
+  margin: 8px 0;
+  flex: 1;
+  max-width: 160px;
+}
+
+.story-close {
+  background: var(--purple);
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background: linear-gradient(180deg, #201a2b, #2a1c22);
@@ -463,6 +529,7 @@ body {
   .letter-card,
   .reading-card,
   .song-card,
+  .story-reader,
   .avatar-btn,
   .lang-btn,
   .letter-tile {

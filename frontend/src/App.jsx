@@ -10,6 +10,7 @@ import Phrases from "./pages/Phrases.jsx";
 import Songs from "./pages/Songs.jsx";
 import Game from "./pages/Game.jsx";
 import Piano from "./pages/Piano.jsx";
+import Stories from "./pages/Stories.jsx";
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
           <Route path="/songs" element={<Songs />} />
           <Route path="/game" element={<Game />} />
           <Route path="/piano" element={<Piano />} />
+          <Route path="/stories" element={<Stories />} />
         </Routes>
       </main>
       <NavBar />

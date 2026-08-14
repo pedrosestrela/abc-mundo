@@ -5,7 +5,7 @@ const resources = {
   pt: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Início", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Leitura", phrases: "Frases", songs: "Canções", game: "Jogo", piano: "Piano", language: "Idiomas" },
+      nav: { home: "Início", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Leitura", phrases: "Frases", songs: "Canções", game: "Jogo", piano: "Piano", language: "Idiomas" , stories: "Histórias" },
       home: {
         pickProfile: "Escolhe o teu perfil",
         newProfile: "Novo perfil",
@@ -40,13 +40,17 @@ const resources = {
         pianoSongsHeading: "Aprende a tocar",
         pianoFollow: "Segue a tecla amarela",
         pianoLearnSong: "Aprender esta música",
+        storiesTitle: "Histórias",
+        storiesNext: "Seguinte",
+        storiesPrev: "Anterior",
+        storiesPage: "Página",
       },
     },
   },
   en: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Home", alphabet: "Alphabet", syllables: "Syllables", reading: "Reading", phrases: "Phrases", songs: "Songs", game: "Game", piano: "Piano", language: "Languages" },
+      nav: { home: "Home", alphabet: "Alphabet", syllables: "Syllables", reading: "Reading", phrases: "Phrases", songs: "Songs", game: "Game", piano: "Piano", language: "Languages" , stories: "Stories" },
       home: {
         pickProfile: "Pick your profile",
         newProfile: "New profile",
@@ -81,13 +85,17 @@ const resources = {
         pianoSongsHeading: "Learn to play",
         pianoFollow: "Follow the yellow key",
         pianoLearnSong: "Learn this song",
+        storiesTitle: "Stories",
+        storiesNext: "Next",
+        storiesPrev: "Previous",
+        storiesPage: "Page",
       },
     },
   },
   de: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Start", alphabet: "Alphabet", syllables: "Silben", reading: "Lesen", phrases: "Sätze", songs: "Lieder", game: "Spiel", piano: "Klavier", language: "Sprachen" },
+      nav: { home: "Start", alphabet: "Alphabet", syllables: "Silben", reading: "Lesen", phrases: "Sätze", songs: "Lieder", game: "Spiel", piano: "Klavier", language: "Sprachen" , stories: "Geschichten" },
       home: {
         pickProfile: "Wähle dein Profil",
         newProfile: "Neues Profil",
@@ -122,13 +130,17 @@ const resources = {
         pianoSongsHeading: "Spielen lernen",
         pianoFollow: "Folge der gelben Taste",
         pianoLearnSong: "Dieses Lied lernen",
+        storiesTitle: "Geschichten",
+        storiesNext: "Weiter",
+        storiesPrev: "Zurück",
+        storiesPage: "Seite",
       },
     },
   },
   fr: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Accueil", alphabet: "Alphabet", syllables: "Syllabes", reading: "Lecture", phrases: "Phrases", songs: "Chansons", game: "Jeu", piano: "Piano", language: "Langues" },
+      nav: { home: "Accueil", alphabet: "Alphabet", syllables: "Syllabes", reading: "Lecture", phrases: "Phrases", songs: "Chansons", game: "Jeu", piano: "Piano", language: "Langues" , stories: "Histoires" },
       home: {
         pickProfile: "Choisis ton profil",
         newProfile: "Nouveau profil",
@@ -163,13 +175,17 @@ const resources = {
         pianoSongsHeading: "Apprendre à jouer",
         pianoFollow: "Suis la touche jaune",
         pianoLearnSong: "Apprendre cette chanson",
+        storiesTitle: "Histoires",
+        storiesNext: "Suivant",
+        storiesPrev: "Précédent",
+        storiesPage: "Page",
       },
     },
   },
   zh: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "首页", alphabet: "字母表", syllables: "音节", reading: "阅读", phrases: "句子", songs: "歌曲", game: "游戏", piano: "钢琴", language: "语言" },
+      nav: { home: "首页", alphabet: "字母表", syllables: "音节", reading: "阅读", phrases: "句子", songs: "歌曲", game: "游戏", piano: "钢琴", language: "语言" , stories: "故事" },
       home: {
         pickProfile: "选择你的档案",
         newProfile: "新档案",
@@ -204,13 +220,17 @@ const resources = {
         pianoSongsHeading: "学习演奏",
         pianoFollow: "跟着黄色琴键",
         pianoLearnSong: "学这首歌",
+        storiesTitle: "故事",
+        storiesNext: "下一页",
+        storiesPrev: "上一页",
+        storiesPage: "第",
       },
     },
   },
   es: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Inicio", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Lectura", phrases: "Frases", songs: "Canciones", game: "Juego", piano: "Piano", language: "Idiomas" },
+      nav: { home: "Inicio", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Lectura", phrases: "Frases", songs: "Canciones", game: "Juego", piano: "Piano", language: "Idiomas" , stories: "Cuentos" },
       home: {
         pickProfile: "Elige tu perfil",
         newProfile: "Nuevo perfil",
@@ -245,13 +265,17 @@ const resources = {
         pianoSongsHeading: "Aprende a tocar",
         pianoFollow: "Sigue la tecla amarilla",
         pianoLearnSong: "Aprender esta canción",
+        storiesTitle: "Cuentos",
+        storiesNext: "Siguiente",
+        storiesPrev: "Anterior",
+        storiesPage: "Página",
       },
     },
   },
   it: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Home", alphabet: "Alfabeto", syllables: "Sillabe", reading: "Lettura", phrases: "Frasi", songs: "Canzoni", game: "Gioco", piano: "Piano", language: "Lingue" },
+      nav: { home: "Home", alphabet: "Alfabeto", syllables: "Sillabe", reading: "Lettura", phrases: "Frasi", songs: "Canzoni", game: "Gioco", piano: "Piano", language: "Lingue" , stories: "Storie" },
       home: {
         pickProfile: "Scegli il tuo profilo",
         newProfile: "Nuovo profilo",
@@ -286,6 +310,10 @@ const resources = {
         pianoSongsHeading: "Impara a suonare",
         pianoFollow: "Segui il tasto giallo",
         pianoLearnSong: "Impara questa canzone",
+        storiesTitle: "Storie",
+        storiesNext: "Avanti",
+        storiesPrev: "Indietro",
+        storiesPage: "Pagina",
       },
     },
   },
