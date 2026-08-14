@@ -1,0 +1,74 @@
+[
+  {
+    "id": "agua",
+    "icon": "🚰",
+    "name": "Acqua",
+    "prompt": "🚿 Apri la doccia! Dove va l'acqua, e da dove è venuta?",
+    "steps": [
+      "1. L'acqua inizia in una diga o in un pozzo, dove viene raccolta.",
+      "2. Va a un impianto di trattamento, dove viene pulita e resa potabile.",
+      "3. Viaggia in tubi sotto terra fino ad arrivare a casa tua.",
+      "4. Apri la doccia e l'acqua ti aiuta a lavarti!",
+      "5. Dopo essere stata usata, esce di casa attraverso un tubo di scarico.",
+      "6. Viene trattata di nuovo in un impianto di depurazione prima di tornare al fiume o al mare, molto più pulita."
+    ]
+  },
+  {
+    "id": "eletricidade",
+    "icon": "⚡",
+    "name": "Elettricità",
+    "prompt": "💡 Hai acceso la luce! Da dove è venuta l'energia?",
+    "steps": [
+      "1. L'elettricità nasce in una centrale (che può usare acqua, vento, sole o altre fonti) o in pannelli solari sul tetto.",
+      "2. Viaggia in grandissimi cavi elettrici, chiamati linee ad alta tensione.",
+      "3. Passa per una sottostazione che riduce la forza dell'elettricità per renderla sicura.",
+      "4. Entra in casa tua attraverso il contatore elettrico, poi nei fili dentro i muri.",
+      "5. Arriva all'interruttore e alla lampada — e la luce si accende!"
+    ]
+  },
+  {
+    "id": "aquecimento",
+    "icon": "🔥",
+    "name": "Riscaldamento",
+    "prompt": "🔥 Come resta calda la tua casa in inverno?",
+    "steps": [
+      "Una caldaia, un riscaldatore elettrico o un sistema centrale riscalda l'acqua o l'aria. Poi tubi o condotti portano quel calore ai radiatori o alle bocchette di ogni stanza, mantenendo la casa calda e accogliente."
+    ]
+  },
+  {
+    "id": "ventilacao",
+    "icon": "🌬️",
+    "name": "Ventilazione",
+    "prompt": "🌬️ Come rimane fresca l'aria dentro casa?",
+    "steps": [
+      "Le case hanno piccole aperture e condotti che fanno entrare aria fresca e uscire l'aria usata (con il fumo di cucina o l'umidità del bagno). Così l'aria dentro casa non ristagna, e respiriamo meglio."
+    ]
+  },
+  {
+    "id": "internet",
+    "icon": "🌐",
+    "name": "Internet",
+    "prompt": "🌐 Come arrivano i video e i messaggi sul tuo schermo?",
+    "steps": [
+      "Le informazioni viaggiano in cavi speciali (spesso in fibra ottica, sottili come un capello) che collegano casa tua a un grande centro dati. Lì le informazioni vengono organizzate e rimandate in pochi secondi — per questo puoi vedere un video che si trova a migliaia di chilometri di distanza."
+    ]
+  },
+  {
+    "id": "saneamento",
+    "icon": "🚽",
+    "name": "Fognature",
+    "prompt": "🚽 Cosa succede quando tiri lo sciacquone?",
+    "steps": [
+      "L'acqua sporca esce di casa attraverso tubi nascosti e si unisce alla rete fognaria della città, che scorre sotto le strade. Poi viaggia fino a un impianto di depurazione, dove viene pulita prima di tornare in natura, proteggendo fiumi e mare."
+    ]
+  },
+  {
+    "id": "solar",
+    "icon": "☀️",
+    "name": "Energia Solare",
+    "prompt": "☀️ A cosa servono quei pannelli sul tetto?",
+    "steps": [
+      "I pannelli solari catturano la luce del sole e la trasformano in elettricità, senza fumo né inquinamento. Quell'energia può accendere le luci, caricare gli apparecchi, o essere conservata in batterie per usarla di notte."
+    ]
+  }
+]

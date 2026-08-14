@@ -1,0 +1,65 @@
+[
+  {
+    "id": "agua",
+    "icon": "🚰",
+    "name": "Water",
+    "prompt": "🚰 Where does the water that reaches thousands of houses at once come from?",
+    "steps": [
+      "1. The city collects water from rivers, dams, or deep wells.",
+      "2. A big treatment plant cleans the water for everyone in the city.",
+      "3. The water travels through a huge network of pipes under the streets.",
+      "4. It reaches homes, schools, hospitals, and shops at the same time, every day."
+    ]
+  },
+  {
+    "id": "eletricidade",
+    "icon": "💡",
+    "name": "Electricity",
+    "prompt": "💡 You turned on a lamp. Where did the energy come from?",
+    "steps": [
+      "1. Power plants or solar and wind farms produce energy for the whole city.",
+      "2. The energy travels through big high-voltage lines to neighborhood substations.",
+      "3. From there, it flows through smaller cables to every street and every house.",
+      "4. Just flip the switch and the energy reaches your lamp, almost at the speed of light!"
+    ]
+  },
+  {
+    "id": "lixo",
+    "icon": "🗑️",
+    "name": "Trash and Recycling",
+    "prompt": "🗑️ You put a bottle in the recycling bin. Where does it go now?",
+    "steps": [
+      "1. A collection truck comes by and picks up the recycling bin's contents.",
+      "2. The bottle travels to a sorting facility, where machines and people separate glass, paper, plastic, and metal.",
+      "3. Each material goes to its own recycling plant.",
+      "4. There, it is turned into new raw material, which can become... a new bottle again! Recycling saves resources and protects the planet."
+    ]
+  },
+  {
+    "id": "transportes",
+    "icon": "🚌",
+    "name": "Transport",
+    "prompt": "🚌 How do buses and trains know where to go and when to stop?",
+    "steps": [
+      "Cities plan routes and schedules for buses, trains, and metro lines to connect neighborhoods, schools, and workplaces. Drivers and control systems keep everything running safely, so people can get around without always needing a car."
+    ]
+  },
+  {
+    "id": "hospitais",
+    "icon": "🏥",
+    "name": "Hospitals",
+    "prompt": "🏥 What is a hospital for, and who works there?",
+    "steps": [
+      "A hospital is a place where doctors, nurses, and other staff take care of people when they are sick or hurt, to help them get better. Someone is always on duty, day and night, so no one is left without help when they need it. It's a place to feel cared for and safe."
+    ]
+  },
+  {
+    "id": "bombeiros",
+    "icon": "🚒",
+    "name": "Firefighters",
+    "prompt": "🚒 What do firefighters do when you hear the siren?",
+    "steps": [
+      "Firefighters help put out fires, rescue people and animals, and assist anyone who needs help in an emergency. They are always ready, with their truck and equipment prepared, to reach whoever needs help as fast as possible."
+    ]
+  }
+]

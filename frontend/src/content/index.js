@@ -34,6 +34,22 @@ import phrasesIt from "./phrases.it.json";
 import countries from "./countries.json";
 import portugalHistory from "./portugalHistory.json";
 
+import houseSystemsPt from "./houseSystems.pt.json";
+import houseSystemsEn from "./houseSystems.en.json";
+import houseSystemsDe from "./houseSystems.de.json";
+import houseSystemsFr from "./houseSystems.fr.json";
+import houseSystemsZh from "./houseSystems.zh.json";
+import houseSystemsEs from "./houseSystems.es.json";
+import houseSystemsIt from "./houseSystems.it.json";
+
+import citySystemsPt from "./citySystems.pt.json";
+import citySystemsEn from "./citySystems.en.json";
+import citySystemsDe from "./citySystems.de.json";
+import citySystemsFr from "./citySystems.fr.json";
+import citySystemsZh from "./citySystems.zh.json";
+import citySystemsEs from "./citySystems.es.json";
+import citySystemsIt from "./citySystems.it.json";
+
 import missionsPt from "./missions.pt.json";
 import missionsEn from "./missions.en.json";
 import missionsDe from "./missions.de.json";
@@ -165,6 +181,8 @@ const LIFE_SKILLS = { pt: lifeSkillsPt, en: lifeSkillsEn, de: lifeSkillsDe, fr: 
 const COMPUTING = { pt: computingPt, en: computingEn, de: computingDe, fr: computingFr, zh: computingZh, es: computingEs, it: computingIt };
 const COMPUTING_SAFETY = { pt: computingSafetyPt, en: computingSafetyEn, de: computingSafetyDe, fr: computingSafetyFr, zh: computingSafetyZh, es: computingSafetyEs, it: computingSafetyIt };
 const THINKING = { pt: thinkingPt, en: thinkingEn, de: thinkingDe, fr: thinkingFr, zh: thinkingZh, es: thinkingEs, it: thinkingIt };
+const HOUSE_SYSTEMS = { pt: houseSystemsPt, en: houseSystemsEn, de: houseSystemsDe, fr: houseSystemsFr, zh: houseSystemsZh, es: houseSystemsEs, it: houseSystemsIt };
+const CITY_SYSTEMS = { pt: citySystemsPt, en: citySystemsEn, de: citySystemsDe, fr: citySystemsFr, zh: citySystemsZh, es: citySystemsEs, it: citySystemsIt };
 
 // Normalizes zh's different shape ({hanzi,...}) to the same shape used by
 // the Latin-alphabet languages ({letter, lower, upper, exampleWord, emoji}).
@@ -242,6 +260,14 @@ export function getThinking(langCode) {
   return THINKING[langCode] || THINKING.pt;
 }
 
+export function getHouseSystems(langCode) {
+  return HOUSE_SYSTEMS[langCode] || [];
+}
+
+export function getCitySystems(langCode) {
+  return CITY_SYSTEMS[langCode] || [];
+}
+
 // Countries are language-agnostic in shape (name/fact are per-language
 // dictionaries inside each entry); langCode picks which strings to surface.
 export function getCountries(langCode) {
@@ -262,6 +288,10 @@ export function getCountries(langCode) {
     animal: c.animal ? { emoji: c.animal.emoji, name: c.animal.name[langCode] || c.animal.name.en } : undefined,
     tradition: c.tradition ? c.tradition[langCode] || c.tradition.en : undefined,
     emojiScene: c.emojiScene,
+    landmark: c.landmark ? c.landmark[langCode] || c.landmark.en : undefined,
+    food: c.food ? c.food[langCode] || c.food.en : undefined,
+    nativeName: c.nativeName,
+    nativeLangCode: c.nativeLangCode,
   }));
 }
 

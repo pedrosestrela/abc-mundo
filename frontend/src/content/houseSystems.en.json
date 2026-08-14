@@ -1,0 +1,74 @@
+[
+  {
+    "id": "agua",
+    "icon": "🚰",
+    "name": "Water",
+    "prompt": "🚿 Turn on the shower! Where does the water go, and where did it come from?",
+    "steps": [
+      "1. Water starts at a dam or a well, where it is collected.",
+      "2. It travels to a treatment plant, where it is cleaned and made safe to drink.",
+      "3. It flows through pipes under the ground until it reaches your house.",
+      "4. You turn on the shower and the water helps you wash!",
+      "5. After it is used, it flows through a drain pipe out of the house.",
+      "6. It is treated again at a wastewater plant before going back to the river or the sea, much cleaner."
+    ]
+  },
+  {
+    "id": "eletricidade",
+    "icon": "⚡",
+    "name": "Electricity",
+    "prompt": "💡 You turned on the light! Where did the energy come from?",
+    "steps": [
+      "1. Electricity is made at a power plant (which may use water, wind, sun, or other sources) or by solar panels on the roof.",
+      "2. It travels through very large power lines, called high-voltage lines.",
+      "3. It passes through a substation that lowers the strength of the electricity to make it safe.",
+      "4. It enters your house through the electric meter, then through wires inside the walls.",
+      "5. It reaches the switch and the lamp — and the light turns on!"
+    ]
+  },
+  {
+    "id": "aquecimento",
+    "icon": "🔥",
+    "name": "Heating",
+    "prompt": "🔥 How does your house stay warm in winter?",
+    "steps": [
+      "A boiler, an electric heater, or a central system heats water or air. Then pipes or ducts carry that heat to radiators or vents in each room, keeping the house warm and cozy."
+    ]
+  },
+  {
+    "id": "ventilacao",
+    "icon": "🌬️",
+    "name": "Ventilation",
+    "prompt": "🌬️ How does the air inside a house stay fresh?",
+    "steps": [
+      "Houses have small openings and ducts that let fresh air in and let used air (with cooking smoke or bathroom moisture) out. This keeps the air inside from getting stale, so we breathe better."
+    ]
+  },
+  {
+    "id": "internet",
+    "icon": "🌐",
+    "name": "Internet",
+    "prompt": "🌐 How do videos and messages reach your screen?",
+    "steps": [
+      "Information travels through special cables (often fiber optic, as thin as a hair) that connect your house to a big data center. There, the information is organized and sent back in seconds — that's how you can watch a video that is thousands of kilometers away."
+    ]
+  },
+  {
+    "id": "saneamento",
+    "icon": "🚽",
+    "name": "Sanitation",
+    "prompt": "🚽 What happens when you flush the toilet?",
+    "steps": [
+      "Dirty water leaves the house through hidden pipes and joins the city's sewer network, which runs under the streets. It then travels to a treatment plant, where it is cleaned before returning to nature, protecting rivers and the sea."
+    ]
+  },
+  {
+    "id": "solar",
+    "icon": "☀️",
+    "name": "Solar Energy",
+    "prompt": "☀️ What are those panels on the roof for?",
+    "steps": [
+      "Solar panels capture sunlight and turn it into electricity, without any smoke or pollution. That energy can power lights, charge devices, or even be stored in batteries to use at night."
+    ]
+  }
+]
