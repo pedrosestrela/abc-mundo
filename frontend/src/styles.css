@@ -715,6 +715,7 @@ body {
 }
 
 .story-reader {
+  position: relative;
   background: #fff;
   border-radius: 20px;
   padding: 20px;
@@ -787,6 +788,81 @@ body {
 
 .story-close {
   background: var(--purple);
+}
+
+.story-page-body {
+  position: relative;
+}
+
+.story-page-scene,
+.story-page-body > .story-page-row {
+  position: relative;
+  z-index: 2;
+}
+
+.story-page-scene {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 88px;
+}
+
+.story-page-deco {
+  position: absolute;
+  left: 8px;
+  top: -6px;
+  font-size: 2.4rem;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.15s ease;
+  z-index: 3;
+}
+
+.story-page-deco:hover {
+  transform: scale(1.1);
+}
+
+.story-page-deco.poked {
+  animation: story-deco-bounce 0.6s ease;
+}
+
+@keyframes story-deco-bounce {
+  0% { transform: scale(1) rotate(0deg); }
+  25% { transform: scale(1.35) rotate(-12deg); }
+  50% { transform: scale(1.15) rotate(10deg); }
+  75% { transform: scale(1.3) rotate(-6deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+.story-word {
+  transition: background 0.15s ease;
+  border-radius: 4px;
+  padding: 0 1px;
+}
+
+.story-word.active {
+  background: #ffe066;
+}
+
+.story-tap-zones {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.story-tap-zone {
+  flex: 1;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.story-tap-zone:disabled {
+  cursor: default;
+  pointer-events: none;
 }
 
 .game-progress {
