@@ -56,3 +56,15 @@ def test_progress_summary_reflects_logged_events():
     assert resp.status_code == 200
     summary = resp.json()["summary"]
     assert any(row["module"] == "reading" and row["event"] == "word_read" for row in summary)
+
+
+def test_resolve_static_path_rejects_traversal():
+    assert main.resolve_static_path("static", "../../../../etc/passwd") is None
+    assert main.resolve_static_path("static", "..%2f..%2fetc/passwd") is not None  # not decoded here; literal chars stay inside static/
+    assert main.resolve_static_path("static", "../secret.env") is None
+
+
+def test_resolve_static_path_allows_normal_files():
+    resolved = main.resolve_static_path("static", "assets/index.js")
+    assert resolved is not None
+    assert resolved.endswith(os.path.join("static", "assets", "index.js"))

@@ -107,6 +107,18 @@ def progress_summary():
 # index.html instead of a 404 — StaticFiles only auto-serves index.html for
 # "/", not for unknown sub-paths.
 STATIC_DIR = "static"
+
+
+def resolve_static_path(static_dir, requested_path):
+    """Resolve a client-requested path against static_dir, rejecting any
+    result that escapes it (e.g. via "../" traversal) so the SPA fallback
+    route can never be used to read arbitrary files off the container."""
+    static_root = os.path.abspath(static_dir)
+    candidate = os.path.abspath(os.path.join(static_root, requested_path))
+    is_contained = candidate == static_root or candidate.startswith(static_root + os.sep)
+    return candidate if is_contained else None
+
+
 if os.path.isdir(STATIC_DIR):
     assets_dir = os.path.join(STATIC_DIR, "assets")
     if os.path.isdir(assets_dir):
@@ -114,7 +126,7 @@ if os.path.isdir(STATIC_DIR):
 
     @app.get("/{full_path:path}")
     def spa_fallback(full_path: str):
-        candidate = os.path.join(STATIC_DIR, full_path)
-        if full_path and os.path.isfile(candidate):
+        candidate = resolve_static_path(STATIC_DIR, full_path) if full_path else None
+        if candidate and os.path.isfile(candidate):
             return FileResponse(candidate)
         return FileResponse(os.path.join(STATIC_DIR, "index.html"))
