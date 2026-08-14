@@ -1,0 +1,282 @@
+{
+  "factOrAssumption": [
+    {
+      "id": "fa-atraso",
+      "emoji": "🏫",
+      "scenario": "小明今天早上上学迟到了。",
+      "statement": "他迟到是因为雨下得很大。",
+      "isFact": false,
+      "explanation": "这是一个猜测：我们知道他迟到了，但还不知道原因。可能是因为下雨，也可能是别的原因。"
+    },
+    {
+      "id": "fa-relogio",
+      "emoji": "⏰",
+      "scenario": "教室的钟显示8点，小明8点15分才进教室。",
+      "statement": "小明比8点晚了15分钟才进教室。",
+      "isFact": true,
+      "explanation": "这是一个事实：我们只要看时钟就能核实，不需要猜测。"
+    },
+    {
+      "id": "fa-planta",
+      "emoji": "🌱",
+      "scenario": "教室窗台上的一盆植物比一星期前长高了。",
+      "statement": "植物长高是因为有人每天给它浇水。",
+      "isFact": false,
+      "explanation": "这是一个猜测：我们知道它长高了，但还不确定具体原因——可能是水、阳光，或者别的因素。"
+    },
+    {
+      "id": "fa-medida",
+      "emoji": "📏",
+      "scenario": "你星期一量过这株植物，高12厘米。今天量是15厘米。",
+      "statement": "这株植物这星期长高了3厘米。",
+      "isFact": true,
+      "explanation": "这是一个事实：这是任何人都可以重新测量并确认的结果。"
+    },
+    {
+      "id": "fa-amigo",
+      "emoji": "😞",
+      "scenario": "你的朋友今天没有回复你的信息。",
+      "statement": "她一定是在生你的气。",
+      "isFact": false,
+      "explanation": "这是一个猜测：可能有很多原因——也许她在忙，没带手机，或者在睡觉。你还不知道真正的原因。"
+    },
+    {
+      "id": "fa-nuvem",
+      "emoji": "☁️",
+      "scenario": "天空布满了乌云。",
+      "statement": "很快就要下雨了。",
+      "isFact": false,
+      "explanation": "这是一个合理的猜测，但还不确定——乌云并不总是带来雨水。"
+    }
+  ],
+  "causeOrCoincidence": [
+    {
+      "id": "cc-gelado",
+      "emoji": "🍦",
+      "scenario": "你把冰淇淋放在太阳下半个小时，回来时它已经融化了。",
+      "isCause": true,
+      "explanation": "太阳的热量会使冰融化——热量和融化之间有着直接且众所周知的联系。"
+    },
+    {
+      "id": "cc-camisola",
+      "emoji": "👕",
+      "scenario": "每次玛丽亚穿蓝色毛衣，她的足球队就会赢球。",
+      "isCause": false,
+      "explanation": "毛衣不可能影响比赛的结果。这只是巧合——碰巧有几次这样发生了。"
+    },
+    {
+      "id": "cc-planta-agua",
+      "emoji": "🌵",
+      "scenario": "你一个月没给仙人掌浇水，它开始枯萎了。",
+      "isCause": true,
+      "explanation": "植物需要水才能生存。缺水直接解释了仙人掌为什么枯萎。"
+    },
+    {
+      "id": "cc-numero",
+      "emoji": "🔢",
+      "scenario": "你穿黄袜子的那天，考试得了好成绩。",
+      "isCause": false,
+      "explanation": "袜子的颜色和考试成绩没有任何关系。这只是巧合。"
+    },
+    {
+      "id": "cc-dor-dente",
+      "emoji": "🦷",
+      "scenario": "你这星期吃了很多糖果，现在牙齿疼了。",
+      "isCause": true,
+      "explanation": "糖分容易导致蛀牙，蛀牙会引起牙痛——这两者之间有已知的联系。"
+    },
+    {
+      "id": "cc-guarda-chuva",
+      "emoji": "☂️",
+      "scenario": "每次你带伞就不下雨；忘记带伞留在家里时就下雨。",
+      "isCause": false,
+      "explanation": "带不带伞并不会影响天气。我们只是更容易注意到这些巧合，而忽略了没发生的那些次数。"
+    }
+  ],
+  "missingInfo": [
+    {
+      "id": "mi-plantas",
+      "emoji": "🌱",
+      "scenario": "两盆一样的植物在同一天种下。一盆长得很好，另一盆几乎没长。",
+      "question": "下面哪个问题最能帮你弄清楚发生了什么？",
+      "options": [
+        { "text": "☀️ 两盆植物接受的光照量一样吗？", "correct": true },
+        { "text": "🎨 每盆植物的花盆是什么颜色？", "correct": false },
+        { "text": "📅 它们分别是星期几种下的？", "correct": false }
+      ],
+      "afterNote": "你也可以问关于水或温度的问题——重要的是找出两盆植物之间的不同之处。"
+    },
+    {
+      "id": "mi-atraso-onibus",
+      "emoji": "🚌",
+      "scenario": "今天早上校车没有按平常的时间到达。",
+      "question": "下面哪个问题最能帮你找出原因？",
+      "options": [
+        { "text": "🚦 是不是交通拥堵或路上出了问题？", "correct": true },
+        { "text": "🎒 你今天的书包是什么颜色？", "correct": false },
+        { "text": "🍎 你早餐吃了什么？", "correct": false }
+      ],
+      "afterNote": "询问交通、故障或路线有助于更接近真正的原因。"
+    },
+    {
+      "id": "mi-peixe",
+      "emoji": "🐟",
+      "scenario": "今天早上，教室鱼缸里的小鱼被发现肚皮朝上漂浮着。",
+      "question": "下面哪个问题最能帮你理解发生了什么？",
+      "options": [
+        { "text": "🌡️ 鱼缸的水温或清洁程度是否发生了变化？", "correct": true },
+        { "text": "🖍️ 是谁在教室墙上画了鱼缸？", "correct": false },
+        { "text": "📖 关于鱼的那本书有多少页？", "correct": false }
+      ],
+      "afterNote": "询问水、食物或这种情况持续了多久，有助于找到有用的线索。"
+    },
+    {
+      "id": "mi-bolo",
+      "emoji": "🎂",
+      "scenario": "奶奶今天烤的蛋糕在烤箱里没有像平常那样蓬松起来。",
+      "question": "下面哪个问题最能帮你弄清楚原因？",
+      "options": [
+        { "text": "🧁 用的是不是和平常一样的材料和分量？", "correct": true },
+        { "text": "🎵 厨房里当时放的是什么音乐？", "correct": false },
+        { "text": "🧦 奶奶穿的袜子是什么颜色？", "correct": false }
+      ],
+      "afterNote": "询问材料、烤箱温度或烘烤时间是值得调查的好线索。"
+    },
+    {
+      "id": "mi-jogo",
+      "emoji": "⚽",
+      "scenario": "学校球队在赢了前三场比赛后，昨天输掉了比赛。",
+      "question": "下面哪个问题最能帮你理解发生了什么变化？",
+      "options": [
+        { "text": "🩹 有没有重要球员受伤或缺席比赛？", "correct": true },
+        { "text": "🌈 比赛时天空是什么颜色？", "correct": false },
+        { "text": "🕐 三天前球员们是几点起床的？", "correct": false }
+      ],
+      "afterNote": "比较两场比赛之间发生的变化——球员、对手、疲劳程度——有助于找到解释。"
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "ct-gato",
+      "emoji": "🐈",
+      "statementA": "安娜的猫全身都是黑色，没有其他颜色。",
+      "statementB": "安娜的猫的爪子上有一块白斑。",
+      "contradicts": true,
+      "explanation": "如果猫全身都是黑色，就不可能同时有白斑——这两句话不能同时都是真的。"
+    },
+    {
+      "id": "ct-idade",
+      "emoji": "🎂",
+      "statementA": "佩德罗8岁。",
+      "statementB": "佩德罗比他10岁的姐姐小。",
+      "contradicts": false,
+      "explanation": "这没有矛盾：完全有可能一个人8岁，同时有一个10岁的姐姐。"
+    },
+    {
+      "id": "ct-tempo",
+      "emoji": "🌦️",
+      "statementA": "一整天都没有下过一滴雨。",
+      "statementB": "下午街道被水浸湿了。",
+      "contradicts": true,
+      "explanation": "如果一点雨都没下，街道却湿透了，这很奇怪——除非有别的解释，否则这两句话是矛盾的。"
+    },
+    {
+      "id": "ct-livro",
+      "emoji": "📚",
+      "statementA": "这本书有120页。",
+      "statementB": "我还没读完，才读到第80页。",
+      "contradicts": false,
+      "explanation": "这没有矛盾：一本书可以有120页，同时有人还读到第80页，还没读完。"
+    },
+    {
+      "id": "ct-corrida",
+      "emoji": "🏃",
+      "statementA": "索菲亚是第一个跑到比赛终点的人。",
+      "statementB": "有三个同学比索菲亚先到达终点。",
+      "contradicts": true,
+      "explanation": "如果索菲亚是第一名，就不可能有人比她先到——这两句话不能同时成立。"
+    },
+    {
+      "id": "ct-cor",
+      "emoji": "🎨",
+      "statementA": "米格尔的毛衣是深蓝色的。",
+      "statementB": "在阳光下，米格尔的毛衣看起来几乎是黑色的。",
+      "contradicts": false,
+      "explanation": "这没有矛盾：非常深的蓝色在某些光线下看起来确实可能接近黑色。"
+    }
+  ],
+  "estimation": [
+    {
+      "id": "es-elefantes",
+      "emoji": "🐘",
+      "question": "你觉得大概能有多少头大象并排站进你的教室？",
+      "answer": 3,
+      "tolerance": 2,
+      "unit": "头大象"
+    },
+    {
+      "id": "es-passos",
+      "emoji": "👣",
+      "question": "你觉得从足球场的一个球门走到另一个球门，大概需要走多少步？",
+      "answer": 100,
+      "tolerance": 40,
+      "unit": "步"
+    },
+    {
+      "id": "es-livros",
+      "emoji": "📚",
+      "question": "你觉得从地上叠到你腰部的高度，大概能放多少本书？",
+      "answer": 15,
+      "tolerance": 8,
+      "unit": "本书"
+    },
+    {
+      "id": "es-lapis",
+      "emoji": "✏️",
+      "question": "你觉得要盖满一张课桌的长度，大概需要排多少支铅笔？",
+      "answer": 12,
+      "tolerance": 5,
+      "unit": "支铅笔"
+    },
+    {
+      "id": "es-minutos",
+      "emoji": "🦷",
+      "question": "你觉得好好刷牙大概需要几分钟？",
+      "answer": 2,
+      "tolerance": 2,
+      "unit": "分钟"
+    }
+  ],
+  "puzzles": [
+    {
+      "id": "pz-dez",
+      "emoji": "🔟",
+      "prompt": "用加法或减法，你能用多少种不同的方式得到数字10？",
+      "examples": ["4 + 6 = 10", "20 - 10 = 10", "5 + 5 = 10", "2 + 2 + 2 + 2 + 2 = 10", "15 - 3 - 2 = 10"]
+    },
+    {
+      "id": "pz-atravessar",
+      "emoji": "🌉",
+      "prompt": "你能用多少种不同的方式安全地过马路？",
+      "examples": ["走人行横道并左右看", "请大人陪你一起过马路", "使用人行横道信号灯", "走地下通道或天桥", "等警察指挥"]
+    },
+    {
+      "id": "pz-torre",
+      "emoji": "🏗️",
+      "prompt": "你能用多少种不同的方式用积木搭一座又高又稳的塔？",
+      "examples": ["底部宽，顶部窄", "大块放在下面，小块放在上面", "把积木摆成三角形以保持平衡", "靠着墙搭建以获得支撑", "使用大小一致的积木分层搭建"]
+    },
+    {
+      "id": "pz-mensagem",
+      "emoji": "✉️",
+      "prompt": "不说话，你能用多少种不同的方式给朋友传递信息？",
+      "examples": ["写一封信或一张便条", "画一幅画", "用手势表示", "发短信", "使用事先约定好的信号"]
+    },
+    {
+      "id": "pz-agua",
+      "emoji": "💧",
+      "prompt": "你能用多少种不同的方式在家里节约用水？",
+      "examples": ["刷牙时关掉水龙头", "淋浴时间缩短一些", "用雨水来浇花", "如果水龙头漏水，告诉大人", "洗衣机装满衣物后再启动"]
+    }
+  ]
+}

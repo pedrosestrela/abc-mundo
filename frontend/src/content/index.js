@@ -185,6 +185,13 @@ import adLiteracyFr from "./adLiteracy.fr.json";
 import adLiteracyZh from "./adLiteracy.zh.json";
 import adLiteracyEs from "./adLiteracy.es.json";
 import adLiteracyIt from "./adLiteracy.it.json";
+import thinkingPt from "./thinking.pt.json";
+import thinkingEn from "./thinking.en.json";
+import thinkingDe from "./thinking.de.json";
+import thinkingFr from "./thinking.fr.json";
+import thinkingZh from "./thinking.zh.json";
+import thinkingEs from "./thinking.es.json";
+import thinkingIt from "./thinking.it.json";
 
 export const SUPPORTED_LANGUAGES = [
   { code: "pt", label: "Português", flag: "🇵🇹" },
@@ -217,6 +224,7 @@ const COMPUTING_SAFETY = { pt: computingSafetyPt, en: computingSafetyEn, de: com
 const LEMONADE_STAND = { pt: lemonadeStandPt, en: lemonadeStandEn, de: lemonadeStandDe, fr: lemonadeStandFr, zh: lemonadeStandZh, es: lemonadeStandEs, it: lemonadeStandIt };
 const SHOPPING = { pt: shoppingPt, en: shoppingEn, de: shoppingDe, fr: shoppingFr, zh: shoppingZh, es: shoppingEs, it: shoppingIt };
 const AD_LITERACY = { pt: adLiteracyPt, en: adLiteracyEn, de: adLiteracyDe, fr: adLiteracyFr, zh: adLiteracyZh, es: adLiteracyEs, it: adLiteracyIt };
+const THINKING = { pt: thinkingPt, en: thinkingEn, de: thinkingDe, fr: thinkingFr, zh: thinkingZh, es: thinkingEs, it: thinkingIt };
 const HOUSE_SYSTEMS = { pt: houseSystemsPt, en: houseSystemsEn, de: houseSystemsDe, fr: houseSystemsFr, zh: houseSystemsZh, es: houseSystemsEs, it: houseSystemsIt };
 const CITY_SYSTEMS = { pt: citySystemsPt, en: citySystemsEn, de: citySystemsDe, fr: citySystemsFr, zh: citySystemsZh, es: citySystemsEs, it: citySystemsIt };
 
@@ -310,6 +318,10 @@ export function getShopping(langCode) {
 
 export function getAdLiteracy(langCode) {
   return AD_LITERACY[langCode] || [];
+}
+
+export function getThinking(langCode) {
+  return THINKING[langCode] || THINKING.pt;
 }
 
 export function getHouseSystems(langCode) {

@@ -35,6 +35,7 @@ const LifeSkills = lazy(() => import("./pages/LifeSkills.jsx"));
 const Computing = lazy(() => import("./pages/Computing.jsx"));
 const City = lazy(() => import("./pages/City.jsx"));
 const Mundos = lazy(() => import("./pages/Mundos.jsx"));
+const Thinking = lazy(() => import("./pages/Thinking.jsx"));
 
 export default function App() {
   return (
@@ -69,6 +70,7 @@ export default function App() {
             <Route path="/history" element={<PortugalHistory />} />
             <Route path="/lifeskills" element={<LifeSkills />} />
             <Route path="/computing" element={<Computing />} />
+            <Route path="/thinking" element={<Thinking />} />
             <Route path="/city" element={<City />} />
           </Routes>
         </Suspense>
