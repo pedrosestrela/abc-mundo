@@ -1,0 +1,35 @@
+[
+  {
+    "id": "abc-sunshine-song",
+    "title": "The ABC Sunshine Song",
+    "lyrics": [
+      "A, B, C, come sing with me",
+      "D, E, F, as happy as can be",
+      "G, H, I, the sun shines bright",
+      "J, K, L, letters dance with delight"
+    ],
+    "illustrationId": "sun-friends"
+  },
+  {
+    "id": "hopping-letters",
+    "title": "The Hopping Letters",
+    "lyrics": [
+      "Hop goes M, hop goes N too",
+      "O and P are jumping, just like you",
+      "Q, R, S run around the park",
+      "T, U, V sing loud past dark"
+    ],
+    "illustrationId": "jumping-letters"
+  },
+  {
+    "id": "alphabet-friends-circle",
+    "title": "Alphabet Friends Circle",
+    "lyrics": [
+      "W, X, Y hold hands and grin",
+      "Z closes the circle, let's spin, spin, spin",
+      "Twenty-six friends singing all day",
+      "Our alphabet family is here to stay"
+    ],
+    "illustrationId": "alphabet-circle"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "id": "cancao-do-abc",
+    "title": "A Canção do ABC",
+    "lyrics": [
+      "A, B, C, vem cantar comigo",
+      "D, E, F, um sorriso amigo",
+      "G, H, I, o sol vai brilhar",
+      "J, K, L, vamos aprender e voar"
+    ],
+    "illustrationId": "sun-friends"
+  },
+  {
+    "id": "letras-saltitantes",
+    "title": "As Letras Saltitantes",
+    "lyrics": [
+      "Salta a letra M, salta o N também",
+      "O e P dançando, ninguém os detém",
+      "Q, R, S, correm no jardim",
+      "T, U, V, cantam sem fim"
+    ],
+    "illustrationId": "jumping-letters"
+  },
+  {
+    "id": "amigos-do-alfabeto",
+    "title": "Os Amigos do Alfabeto",
+    "lyrics": [
+      "W, X, Y, de mãos dadas a rir",
+      "E o Z fecha a roda, feliz a seguir",
+      "Vinte e seis amigos, juntos a cantar",
+      "O nosso alfabeto nunca vai parar"
+    ],
+    "illustrationId": "alphabet-circle"
+  }
+]

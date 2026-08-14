@@ -1,0 +1,210 @@
+[
+  {
+    "letter": "A",
+    "lower": "a",
+    "upper": "A",
+    "exampleWord": "Abelha",
+    "emoji": "🐝",
+    "pronunciationHint": "A de Abelha"
+  },
+  {
+    "letter": "B",
+    "lower": "b",
+    "upper": "B",
+    "exampleWord": "Bola",
+    "emoji": "⚽",
+    "pronunciationHint": "B de Bola"
+  },
+  {
+    "letter": "C",
+    "lower": "c",
+    "upper": "C",
+    "exampleWord": "Casa",
+    "emoji": "🏠",
+    "pronunciationHint": "C de Casa"
+  },
+  {
+    "letter": "D",
+    "lower": "d",
+    "upper": "D",
+    "exampleWord": "Dado",
+    "emoji": "🎲",
+    "pronunciationHint": "D de Dado"
+  },
+  {
+    "letter": "E",
+    "lower": "e",
+    "upper": "E",
+    "exampleWord": "Elefante",
+    "emoji": "🐘",
+    "pronunciationHint": "E de Elefante"
+  },
+  {
+    "letter": "F",
+    "lower": "f",
+    "upper": "F",
+    "exampleWord": "Flor",
+    "emoji": "🌸",
+    "pronunciationHint": "F de Flor"
+  },
+  {
+    "letter": "G",
+    "lower": "g",
+    "upper": "G",
+    "exampleWord": "Gato",
+    "emoji": "🐱",
+    "pronunciationHint": "G de Gato"
+  },
+  {
+    "letter": "H",
+    "lower": "h",
+    "upper": "H",
+    "exampleWord": "Hipopótamo",
+    "emoji": "🦛",
+    "pronunciationHint": "H de Hipopótamo"
+  },
+  {
+    "letter": "I",
+    "lower": "i",
+    "upper": "I",
+    "exampleWord": "Igreja",
+    "emoji": "⛪",
+    "pronunciationHint": "I de Igreja"
+  },
+  {
+    "letter": "J",
+    "lower": "j",
+    "upper": "J",
+    "exampleWord": "Jacaré",
+    "emoji": "🐊",
+    "pronunciationHint": "J de Jacaré"
+  },
+  {
+    "letter": "K",
+    "lower": "k",
+    "upper": "K",
+    "exampleWord": "Kiwi",
+    "emoji": "🥝",
+    "pronunciationHint": "K de Kiwi"
+  },
+  {
+    "letter": "L",
+    "lower": "l",
+    "upper": "L",
+    "exampleWord": "Lua",
+    "emoji": "🌙",
+    "pronunciationHint": "L de Lua"
+  },
+  {
+    "letter": "M",
+    "lower": "m",
+    "upper": "M",
+    "exampleWord": "Maçã",
+    "emoji": "🍎",
+    "pronunciationHint": "M de Maçã"
+  },
+  {
+    "letter": "N",
+    "lower": "n",
+    "upper": "N",
+    "exampleWord": "Nuvem",
+    "emoji": "☁️",
+    "pronunciationHint": "N de Nuvem"
+  },
+  {
+    "letter": "O",
+    "lower": "o",
+    "upper": "O",
+    "exampleWord": "Ovo",
+    "emoji": "🥚",
+    "pronunciationHint": "O de Ovo"
+  },
+  {
+    "letter": "P",
+    "lower": "p",
+    "upper": "P",
+    "exampleWord": "Pato",
+    "emoji": "🦆",
+    "pronunciationHint": "P de Pato"
+  },
+  {
+    "letter": "Q",
+    "lower": "q",
+    "upper": "Q",
+    "exampleWord": "Queijo",
+    "emoji": "🧀",
+    "pronunciationHint": "Q de Queijo"
+  },
+  {
+    "letter": "R",
+    "lower": "r",
+    "upper": "R",
+    "exampleWord": "Rato",
+    "emoji": "🐭",
+    "pronunciationHint": "R de Rato"
+  },
+  {
+    "letter": "S",
+    "lower": "s",
+    "upper": "S",
+    "exampleWord": "Sol",
+    "emoji": "☀️",
+    "pronunciationHint": "S de Sol"
+  },
+  {
+    "letter": "T",
+    "lower": "t",
+    "upper": "T",
+    "exampleWord": "Tigre",
+    "emoji": "🐯",
+    "pronunciationHint": "T de Tigre"
+  },
+  {
+    "letter": "U",
+    "lower": "u",
+    "upper": "U",
+    "exampleWord": "Uva",
+    "emoji": "🍇",
+    "pronunciationHint": "U de Uva"
+  },
+  {
+    "letter": "V",
+    "lower": "v",
+    "upper": "V",
+    "exampleWord": "Vaca",
+    "emoji": "🐄",
+    "pronunciationHint": "V de Vaca"
+  },
+  {
+    "letter": "W",
+    "lower": "w",
+    "upper": "W",
+    "exampleWord": "Wi-Fi",
+    "emoji": "📶",
+    "pronunciationHint": "W de Wi-Fi"
+  },
+  {
+    "letter": "X",
+    "lower": "x",
+    "upper": "X",
+    "exampleWord": "Xadrez",
+    "emoji": "♟️",
+    "pronunciationHint": "X de Xadrez"
+  },
+  {
+    "letter": "Y",
+    "lower": "y",
+    "upper": "Y",
+    "exampleWord": "Yoga",
+    "emoji": "🧘",
+    "pronunciationHint": "Y de Yoga"
+  },
+  {
+    "letter": "Z",
+    "lower": "z",
+    "upper": "Z",
+    "exampleWord": "Zebra",
+    "emoji": "🦓",
+    "pronunciationHint": "Z de Zebra"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "packageId": "com.abcmundo.app",
+  "host": "abc-mundo-api.fly.dev",
+  "name": "ABC Mundo",
+  "launcherName": "ABC Mundo",
+  "display": "standalone",
+  "themeColor": "#ff6b6b",
+  "navigationColor": "#ff6b6b",
+  "backgroundColor": "#fff7e6",
+  "startUrl": "/",
+  "iconUrl": "https://abc-mundo-api.fly.dev/icon.svg",
+  "maskableIconUrl": "https://abc-mundo-api.fly.dev/icon.svg",
+  "shortcuts": [],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "https://abc-mundo-api.fly.dev/manifest.json",
+  "fallbackType": "customtabs",
+  "features": {
+    "playBilling": { "enabled": false },
+    "notifications": { "enabled": false }
+  },
+  "enableNotifications": false
+}

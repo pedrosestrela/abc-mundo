@@ -1,0 +1,12 @@
+[
+  { "word": "SONNE", "emoji": "☀️", "hint": "S wie Sonne" },
+  { "word": "KATZE", "emoji": "🐱", "hint": "K wie Katze" },
+  { "word": "HUND", "emoji": "🐶", "hint": "H wie Hund" },
+  { "word": "BALL", "emoji": "⚽", "hint": "B wie Ball" },
+  { "word": "MAUS", "emoji": "🐭", "hint": "M wie Maus" },
+  { "word": "FISCH", "emoji": "🐟", "hint": "F wie Fisch" },
+  { "word": "APFEL", "emoji": "🍎", "hint": "A wie Apfel" },
+  { "word": "TIGER", "emoji": "🐯", "hint": "T wie Tiger" },
+  { "word": "LÖWE", "emoji": "🦁", "hint": "L wie Löwe" },
+  { "word": "ZEBRA", "emoji": "🦓", "hint": "Z wie Zebra" }
+]

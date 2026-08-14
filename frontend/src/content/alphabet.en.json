@@ -1,0 +1,210 @@
+[
+  {
+    "letter": "A",
+    "lower": "a",
+    "upper": "A",
+    "exampleWord": "Ant",
+    "emoji": "🐜",
+    "pronunciationHint": "A for Ant"
+  },
+  {
+    "letter": "B",
+    "lower": "b",
+    "upper": "B",
+    "exampleWord": "Ball",
+    "emoji": "⚽",
+    "pronunciationHint": "B for Ball"
+  },
+  {
+    "letter": "C",
+    "lower": "c",
+    "upper": "C",
+    "exampleWord": "Cat",
+    "emoji": "🐱",
+    "pronunciationHint": "C for Cat"
+  },
+  {
+    "letter": "D",
+    "lower": "d",
+    "upper": "D",
+    "exampleWord": "Dog",
+    "emoji": "🐶",
+    "pronunciationHint": "D for Dog"
+  },
+  {
+    "letter": "E",
+    "lower": "e",
+    "upper": "E",
+    "exampleWord": "Elephant",
+    "emoji": "🐘",
+    "pronunciationHint": "E for Elephant"
+  },
+  {
+    "letter": "F",
+    "lower": "f",
+    "upper": "F",
+    "exampleWord": "Fish",
+    "emoji": "🐟",
+    "pronunciationHint": "F for Fish"
+  },
+  {
+    "letter": "G",
+    "lower": "g",
+    "upper": "G",
+    "exampleWord": "Grape",
+    "emoji": "🍇",
+    "pronunciationHint": "G for Grape"
+  },
+  {
+    "letter": "H",
+    "lower": "h",
+    "upper": "H",
+    "exampleWord": "Hat",
+    "emoji": "🎩",
+    "pronunciationHint": "H for Hat"
+  },
+  {
+    "letter": "I",
+    "lower": "i",
+    "upper": "I",
+    "exampleWord": "Ice cream",
+    "emoji": "🍦",
+    "pronunciationHint": "I for Ice cream"
+  },
+  {
+    "letter": "J",
+    "lower": "j",
+    "upper": "J",
+    "exampleWord": "Jam",
+    "emoji": "🍯",
+    "pronunciationHint": "J for Jam"
+  },
+  {
+    "letter": "K",
+    "lower": "k",
+    "upper": "K",
+    "exampleWord": "Kite",
+    "emoji": "🪁",
+    "pronunciationHint": "K for Kite"
+  },
+  {
+    "letter": "L",
+    "lower": "l",
+    "upper": "L",
+    "exampleWord": "Lion",
+    "emoji": "🦁",
+    "pronunciationHint": "L for Lion"
+  },
+  {
+    "letter": "M",
+    "lower": "m",
+    "upper": "M",
+    "exampleWord": "Moon",
+    "emoji": "🌙",
+    "pronunciationHint": "M for Moon"
+  },
+  {
+    "letter": "N",
+    "lower": "n",
+    "upper": "N",
+    "exampleWord": "Nest",
+    "emoji": "🪺",
+    "pronunciationHint": "N for Nest"
+  },
+  {
+    "letter": "O",
+    "lower": "o",
+    "upper": "O",
+    "exampleWord": "Orange",
+    "emoji": "🍊",
+    "pronunciationHint": "O for Orange"
+  },
+  {
+    "letter": "P",
+    "lower": "p",
+    "upper": "P",
+    "exampleWord": "Pig",
+    "emoji": "🐷",
+    "pronunciationHint": "P for Pig"
+  },
+  {
+    "letter": "Q",
+    "lower": "q",
+    "upper": "Q",
+    "exampleWord": "Queen",
+    "emoji": "👸",
+    "pronunciationHint": "Q for Queen"
+  },
+  {
+    "letter": "R",
+    "lower": "r",
+    "upper": "R",
+    "exampleWord": "Rabbit",
+    "emoji": "🐰",
+    "pronunciationHint": "R for Rabbit"
+  },
+  {
+    "letter": "S",
+    "lower": "s",
+    "upper": "S",
+    "exampleWord": "Sun",
+    "emoji": "☀️",
+    "pronunciationHint": "S for Sun"
+  },
+  {
+    "letter": "T",
+    "lower": "t",
+    "upper": "T",
+    "exampleWord": "Tiger",
+    "emoji": "🐯",
+    "pronunciationHint": "T for Tiger"
+  },
+  {
+    "letter": "U",
+    "lower": "u",
+    "upper": "U",
+    "exampleWord": "Umbrella",
+    "emoji": "☂️",
+    "pronunciationHint": "U for Umbrella"
+  },
+  {
+    "letter": "V",
+    "lower": "v",
+    "upper": "V",
+    "exampleWord": "Violin",
+    "emoji": "🎻",
+    "pronunciationHint": "V for Violin"
+  },
+  {
+    "letter": "W",
+    "lower": "w",
+    "upper": "W",
+    "exampleWord": "Whale",
+    "emoji": "🐳",
+    "pronunciationHint": "W for Whale"
+  },
+  {
+    "letter": "X",
+    "lower": "x",
+    "upper": "X",
+    "exampleWord": "Xylophone",
+    "emoji": "🎼",
+    "pronunciationHint": "X for Xylophone"
+  },
+  {
+    "letter": "Y",
+    "lower": "y",
+    "upper": "Y",
+    "exampleWord": "Yo-yo",
+    "emoji": "🪀",
+    "pronunciationHint": "Y for Yo-yo"
+  },
+  {
+    "letter": "Z",
+    "lower": "z",
+    "upper": "Z",
+    "exampleWord": "Zebra",
+    "emoji": "🦓",
+    "pronunciationHint": "Z for Zebra"
+  }
+]

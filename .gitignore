@@ -1,0 +1,11 @@
+.claude/
+node_modules/
+__pycache__/
+*.pyc
+*.db
+dist/
+.env
+.DS_Store
+android/app/build/
+*.keystore
+*.jks

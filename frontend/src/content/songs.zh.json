@@ -1,0 +1,35 @@
+[
+  {
+    "id": "taiyang-ge",
+    "title": "太阳歌 (Canção do Sol)",
+    "lyrics": [
+      "一二三，一起来唱歌",
+      "四五六，太阳笑呵呵",
+      "七八九，大家手拉手",
+      "十个朋友，一起走一走"
+    ],
+    "illustrationId": "sun-friends"
+  },
+  {
+    "id": "tiaowu-zi-ge",
+    "title": "跳舞字歌 (Letras Dançarinas)",
+    "lyrics": [
+      "山水火，一起跳一跳",
+      "大小门，笑着抱一抱",
+      "花和鸟，飞过小花园",
+      "人人快乐，唱歌又向前"
+    ],
+    "illustrationId": "jumping-letters"
+  },
+  {
+    "id": "pengyou-quan",
+    "title": "朋友圈 (Círculo de Amigos)",
+    "lyrics": [
+      "手拉手，围成一个圈",
+      "月亮星星，挂在天边",
+      "好朋友，天天笑开颜",
+      "一起学习，快乐每一天"
+    ],
+    "illustrationId": "alphabet-circle"
+  }
+]

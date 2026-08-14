@@ -1,0 +1,35 @@
+[
+  {
+    "id": "chanson-du-soleil-abc",
+    "title": "La Chanson du Soleil ABC",
+    "lyrics": [
+      "A, B, C, viens chanter gaiement",
+      "D, E, F, tout est amusant",
+      "G, H, I, le soleil sourit",
+      "J, K, L, dansons toute la vie"
+    ],
+    "illustrationId": "sun-friends"
+  },
+  {
+    "id": "lettres-sauteuses",
+    "title": "Les Lettres Sauteuses",
+    "lyrics": [
+      "Saute le M, saute le N aussi",
+      "O et P sautillent, quelle jolie vie",
+      "Q, R, S courent dans le jardin",
+      "T, U, V chantent le refrain"
+    ],
+    "illustrationId": "jumping-letters"
+  },
+  {
+    "id": "cercle-des-amis-alphabet",
+    "title": "Le Cercle des Amis de l'Alphabet",
+    "lyrics": [
+      "W, X, Y se donnent la main",
+      "Z ferme le cercle, quel beau festin",
+      "Vingt-six amis chantent sans fin",
+      "Notre alphabet est notre destin"
+    ],
+    "illustrationId": "alphabet-circle"
+  }
+]

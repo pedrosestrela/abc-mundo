@@ -1,0 +1,35 @@
+[
+  {
+    "id": "abc-sonnenlied",
+    "title": "Das ABC Sonnenlied",
+    "lyrics": [
+      "A, B, C, sing mit mir heut",
+      "D, E, F, das macht uns Freude",
+      "G, H, I, die Sonne lacht",
+      "J, K, L, wir tanzen mit Pracht"
+    ],
+    "illustrationId": "sun-friends"
+  },
+  {
+    "id": "huepfende-buchstaben",
+    "title": "Die Hüpfenden Buchstaben",
+    "lyrics": [
+      "Hüpft das M, hüpft auch das N",
+      "O und P, die springen sich schön",
+      "Q, R, S, laufen im Park",
+      "T, U, V, singen so stark"
+    ],
+    "illustrationId": "jumping-letters"
+  },
+  {
+    "id": "alphabet-freundeskreis",
+    "title": "Der Alphabet-Freundeskreis",
+    "lyrics": [
+      "W, X, Y halten sich an der Hand",
+      "Z schließt den Kreis, der ist bekannt",
+      "Sechsundzwanzig Freunde, singen froh",
+      "Unser Alphabet ist wunderbar so"
+    ],
+    "illustrationId": "alphabet-circle"
+  }
+]

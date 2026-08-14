@@ -1,0 +1,12 @@
+{
+  "name": "ABC Mundo",
+  "short_name": "ABC Mundo",
+  "description": "Children's literacy app teaching letters, reading and songs in 5 languages.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff7e6",
+  "theme_color": "#ff6b6b",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

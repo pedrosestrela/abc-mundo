@@ -1,0 +1,210 @@
+[
+  {
+    "letter": "A",
+    "lower": "a",
+    "upper": "A",
+    "exampleWord": "Apfel",
+    "emoji": "🍎",
+    "pronunciationHint": "A wie Apfel"
+  },
+  {
+    "letter": "B",
+    "lower": "b",
+    "upper": "B",
+    "exampleWord": "Ball",
+    "emoji": "⚽",
+    "pronunciationHint": "B wie Ball"
+  },
+  {
+    "letter": "C",
+    "lower": "c",
+    "upper": "C",
+    "exampleWord": "Clown",
+    "emoji": "🤡",
+    "pronunciationHint": "C wie Clown"
+  },
+  {
+    "letter": "D",
+    "lower": "d",
+    "upper": "D",
+    "exampleWord": "Delfin",
+    "emoji": "🐬",
+    "pronunciationHint": "D wie Delfin"
+  },
+  {
+    "letter": "E",
+    "lower": "e",
+    "upper": "E",
+    "exampleWord": "Elefant",
+    "emoji": "🐘",
+    "pronunciationHint": "E wie Elefant"
+  },
+  {
+    "letter": "F",
+    "lower": "f",
+    "upper": "F",
+    "exampleWord": "Fisch",
+    "emoji": "🐟",
+    "pronunciationHint": "F wie Fisch"
+  },
+  {
+    "letter": "G",
+    "lower": "g",
+    "upper": "G",
+    "exampleWord": "Giraffe",
+    "emoji": "🦒",
+    "pronunciationHint": "G wie Giraffe"
+  },
+  {
+    "letter": "H",
+    "lower": "h",
+    "upper": "H",
+    "exampleWord": "Hund",
+    "emoji": "🐶",
+    "pronunciationHint": "H wie Hund"
+  },
+  {
+    "letter": "I",
+    "lower": "i",
+    "upper": "I",
+    "exampleWord": "Igel",
+    "emoji": "🦔",
+    "pronunciationHint": "I wie Igel"
+  },
+  {
+    "letter": "J",
+    "lower": "j",
+    "upper": "J",
+    "exampleWord": "Jacke",
+    "emoji": "🧥",
+    "pronunciationHint": "J wie Jacke"
+  },
+  {
+    "letter": "K",
+    "lower": "k",
+    "upper": "K",
+    "exampleWord": "Katze",
+    "emoji": "🐱",
+    "pronunciationHint": "K wie Katze"
+  },
+  {
+    "letter": "L",
+    "lower": "l",
+    "upper": "L",
+    "exampleWord": "Löwe",
+    "emoji": "🦁",
+    "pronunciationHint": "L wie Löwe"
+  },
+  {
+    "letter": "M",
+    "lower": "m",
+    "upper": "M",
+    "exampleWord": "Maus",
+    "emoji": "🐭",
+    "pronunciationHint": "M wie Maus"
+  },
+  {
+    "letter": "N",
+    "lower": "n",
+    "upper": "N",
+    "exampleWord": "Nest",
+    "emoji": "🪺",
+    "pronunciationHint": "N wie Nest"
+  },
+  {
+    "letter": "O",
+    "lower": "o",
+    "upper": "O",
+    "exampleWord": "Orange",
+    "emoji": "🍊",
+    "pronunciationHint": "O wie Orange"
+  },
+  {
+    "letter": "P",
+    "lower": "p",
+    "upper": "P",
+    "exampleWord": "Pinguin",
+    "emoji": "🐧",
+    "pronunciationHint": "P wie Pinguin"
+  },
+  {
+    "letter": "Q",
+    "lower": "q",
+    "upper": "Q",
+    "exampleWord": "Qualle",
+    "emoji": "🎐",
+    "pronunciationHint": "Q wie Qualle"
+  },
+  {
+    "letter": "R",
+    "lower": "r",
+    "upper": "R",
+    "exampleWord": "Rakete",
+    "emoji": "🚀",
+    "pronunciationHint": "R wie Rakete"
+  },
+  {
+    "letter": "S",
+    "lower": "s",
+    "upper": "S",
+    "exampleWord": "Sonne",
+    "emoji": "☀️",
+    "pronunciationHint": "S wie Sonne"
+  },
+  {
+    "letter": "T",
+    "lower": "t",
+    "upper": "T",
+    "exampleWord": "Tiger",
+    "emoji": "🐯",
+    "pronunciationHint": "T wie Tiger"
+  },
+  {
+    "letter": "U",
+    "lower": "u",
+    "upper": "U",
+    "exampleWord": "Uhr",
+    "emoji": "⏰",
+    "pronunciationHint": "U wie Uhr"
+  },
+  {
+    "letter": "V",
+    "lower": "v",
+    "upper": "V",
+    "exampleWord": "Vogel",
+    "emoji": "🐦",
+    "pronunciationHint": "V wie Vogel"
+  },
+  {
+    "letter": "W",
+    "lower": "w",
+    "upper": "W",
+    "exampleWord": "Wal",
+    "emoji": "🐳",
+    "pronunciationHint": "W wie Wal"
+  },
+  {
+    "letter": "X",
+    "lower": "x",
+    "upper": "X",
+    "exampleWord": "Xylofon",
+    "emoji": "🎼",
+    "pronunciationHint": "X wie Xylofon"
+  },
+  {
+    "letter": "Y",
+    "lower": "y",
+    "upper": "Y",
+    "exampleWord": "Yoga",
+    "emoji": "🧘",
+    "pronunciationHint": "Y wie Yoga"
+  },
+  {
+    "letter": "Z",
+    "lower": "z",
+    "upper": "Z",
+    "exampleWord": "Zebra",
+    "emoji": "🦓",
+    "pronunciationHint": "Z wie Zebra"
+  }
+]
