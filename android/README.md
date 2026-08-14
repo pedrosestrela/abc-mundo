@@ -30,9 +30,31 @@ O ficheiro `twa-manifest.json` já define:
    npx @bubblewrap/cli build
    ```
 
-4. Assinar e publicar seguindo as instruções normais da Google Play Console.
+4. **Digital Asset Links (obrigatório, senão mostra a barra do browser):**
+   1. Obtém o SHA-256 do certificado:
+      ```
+      keytool -list -v -keystore android.keystore -alias android
+      ```
+      (ou, depois de ativares o Play App Signing, usa o fingerprint em
+      Play Console → Configuração → Integridade da app)
+   2. Substitui `SUBSTITUIR_PELO_SHA256_DO_TEU_KEYSTORE` em
+      `frontend/public/.well-known/assetlinks.json` pelo valor real.
+   3. Faz deploy (push para `main`) — o ficheiro fica servido em
+      `https://abc-mundo-api.fly.dev/.well-known/assetlinks.json`.
+
+5. Assinar e publicar seguindo as instruções normais da Google Play Console.
    O ficheiro de keystore gerado (`*.keystore` / `*.jks`) NÃO deve ser
-   commitado (já está no `.gitignore` da raiz do projeto).
+   commitado (já está no `.gitignore` da raiz do projeto). **Guarda a
+   password da keystore em local seguro** — perdê-la impede publicar
+   futuras atualizações da mesma app.
+
+## Pré-requisitos que faltam nesta máquina
+
+- **JDK 17+** (o Bubblewrap pode instalar automaticamente se não existir,
+  ou instala manualmente: `winget install EclipseAdoptium.Temurin.17.JDK`)
+- **Android SDK** (o Bubblewrap também consegue descarregar/configurar)
+- **Conta Google Play Console** (taxa única de $25) — só necessária para
+  publicar, não para gerar o `.aab` localmente.
 
 ## Notas
 
