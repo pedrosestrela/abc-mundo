@@ -6,7 +6,7 @@
 único `backend/main.py`), Docker + Fly.io + Litestream + GitHub Actions
 (deploy), PWA (manifest + service worker), pasta `android/` com scaffold TWA.
 
-**Frontend — 11 módulos ativos**, todos ligados por rota + item de nav +
+**Frontend — 13 módulos ativos**, todos ligados por rota + item de nav +
 traduções nos 7 idiomas (`frontend/src/i18n/index.js`):
 
 | Módulo | Rota | Conteúdo |
@@ -22,9 +22,10 @@ traduções nos 7 idiomas (`frontend/src/i18n/index.js`):
 | Histórias | `/stories` | `content/stories.<lang>.json` |
 | Matemática | `/math` | gerado (contar/números/soma-subtração) |
 | Literacia Financeira | `/financial` | `content/financial.<lang>.json` |
+| Mundo dos Exploradores (geografia) | `/world` | `content/countries.json` (20 países) |
+| Missões (mundo real) | `/missions` | `content/missions.<lang>.json` |
 | Modo Pais | `/parents` | lê `storage.js` (motor de progresso) |
 | Conquistas | `/achievements` | lê `storage.js` |
-| Missões (mundo real) | `/missions` | `content/missions.<lang>.json` |
 
 **Idiomas**: pt (Portugal), en, de, fr, es, it, zh — 7 idiomas, par
 "idioma principal / idioma a aprender" escolhido pelo utilizador.
@@ -84,7 +85,20 @@ por fases:
 2. **Generalizar `recordSkillEvent`** a todos os módulos (hoje só 4 de 11
    o chamam) — pré-requisito para Modo Pais/Conquistas terem dados reais.
 3. **Multi-perfil familiar** (hoje só há 1 perfil por dispositivo).
-4. Só depois: novos Mundos (Ciências, História de Portugal, Geografia,
+4. Só depois: novos Mundos (Ciências, História de Portugal, Tecnologia,
    Programação) e projetos de vários dias (horta, estação meteorológica).
+
+### Decisão técnica: globo 3D adiado
+
+O pedido inclui um globo terrestre 3D interativo (WebGL, ex. `three.js`
+ou `globe.gl`) para o Mundo dos Exploradores. Implementei em vez disso
+uma versão 2D (grelha de países + cartão de detalhe + quizzes de
+bandeiras/capitais) — é a própria regra de fallback do pedido ("se WebGL
+não estiver disponível, mostrar mapa 2D funcional"). Um globo 3D real
+exige: escolher e testar a biblioteca WebGL, dados geográficos
+(fronteiras/coordenadas) num formato compatível, otimização de
+performance em tablets, e fallback automático para dispositivos fracos —
+isto é um projeto à parte, não uma tarde de trabalho. Fica como item de
+fase futura.
 
 Este documento deve ser atualizado à medida que a arquitetura evolui.
