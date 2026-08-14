@@ -1411,6 +1411,69 @@ body {
   cursor: default;
 }
 
+.game-option.wrong {
+  background: #ccc;
+  color: #777;
+  opacity: 0.6;
+}
+
+.syllable-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 12px 0;
+}
+
+.syllable-chip {
+  border: none;
+  border-radius: 14px;
+  padding: 10px 16px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  background: var(--blue);
+  color: #fff;
+  cursor: pointer;
+}
+
+.syllable-chip.used {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.syllable-chip.wrong {
+  background: #ccc;
+  color: #777;
+  opacity: 0.6;
+}
+
+.syllable-slots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.syllable-slot {
+  min-width: 48px;
+  min-height: 40px;
+  border: 2px dashed var(--purple);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 4px 8px;
+  background: #fff;
+}
+
+.syllable-slot.blank {
+  background: var(--yellow);
+  border-style: solid;
+}
+
 .game-option-emoji {
   font-size: 1.8rem;
 }
