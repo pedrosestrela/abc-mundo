@@ -371,6 +371,34 @@ body {
   font-size: 1.15rem !important;
 }
 
+.phrase-syllable-word {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 6px;
+}
+
+.phrase-syllable-toggle-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.phrase-syllable-toggle {
+  background: var(--yellow);
+  color: #333;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.phrase-syllable-toggle:active {
+  transform: translateY(1px);
+}
+
 .phrase-card {
   align-items: flex-start;
 }
