@@ -8,6 +8,7 @@ import Syllables from "./pages/Syllables.jsx";
 import Reading from "./pages/Reading.jsx";
 import Phrases from "./pages/Phrases.jsx";
 import Songs from "./pages/Songs.jsx";
+import Game from "./pages/Game.jsx";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="/reading" element={<Reading />} />
           <Route path="/phrases" element={<Phrases />} />
           <Route path="/songs" element={<Songs />} />
+          <Route path="/game" element={<Game />} />
         </Routes>
       </main>
       <NavBar />

@@ -5,13 +5,14 @@ const resources = {
   pt: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Início", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Leitura", phrases: "Frases", songs: "Canções", language: "Idiomas" },
+      nav: { home: "Início", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Leitura", phrases: "Frases", songs: "Canções", game: "Jogo", language: "Idiomas" },
       home: {
         pickProfile: "Escolhe o teu perfil",
         newProfile: "Novo perfil",
         name: "Nome",
         start: "Começar",
         chooseAvatar: "Escolhe um avatar",
+        chooseAge: "Quantos anos tens?",
       },
       languagePicker: {
         title: "Escolhe os teus idiomas",
@@ -30,19 +31,24 @@ const resources = {
         syllablesTitle: "Sílabas",
         syllablesIntro: "Junta as letras e forma sílabas — o primeiro passo para ler palavras.",
         phrasesTitle: "Frases",
+        gameTitle: "Jogo",
+        gamePrompt: "Qual é a palavra certa?",
+        gameScore: "Pontuação",
+        gamePlayAgain: "Jogar outra vez",
       },
     },
   },
   en: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Home", alphabet: "Alphabet", syllables: "Syllables", reading: "Reading", phrases: "Phrases", songs: "Songs", language: "Languages" },
+      nav: { home: "Home", alphabet: "Alphabet", syllables: "Syllables", reading: "Reading", phrases: "Phrases", songs: "Songs", game: "Game", language: "Languages" },
       home: {
         pickProfile: "Pick your profile",
         newProfile: "New profile",
         name: "Name",
         start: "Start",
         chooseAvatar: "Choose an avatar",
+        chooseAge: "How old are you?",
       },
       languagePicker: {
         title: "Choose your languages",
@@ -61,19 +67,24 @@ const resources = {
         syllablesTitle: "Syllables",
         syllablesIntro: "Blend letters into syllables — the first step to reading words.",
         phrasesTitle: "Phrases",
+        gameTitle: "Game",
+        gamePrompt: "Which word is correct?",
+        gameScore: "Score",
+        gamePlayAgain: "Play again",
       },
     },
   },
   de: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Start", alphabet: "Alphabet", syllables: "Silben", reading: "Lesen", phrases: "Sätze", songs: "Lieder", language: "Sprachen" },
+      nav: { home: "Start", alphabet: "Alphabet", syllables: "Silben", reading: "Lesen", phrases: "Sätze", songs: "Lieder", game: "Spiel", language: "Sprachen" },
       home: {
         pickProfile: "Wähle dein Profil",
         newProfile: "Neues Profil",
         name: "Name",
         start: "Starten",
         chooseAvatar: "Wähle einen Avatar",
+        chooseAge: "Wie alt bist du?",
       },
       languagePicker: {
         title: "Wähle deine Sprachen",
@@ -92,19 +103,24 @@ const resources = {
         syllablesTitle: "Silben",
         syllablesIntro: "Verbinde Buchstaben zu Silben — der erste Schritt zum Wörterlesen.",
         phrasesTitle: "Sätze",
+        gameTitle: "Spiel",
+        gamePrompt: "Welches Wort ist richtig?",
+        gameScore: "Punktzahl",
+        gamePlayAgain: "Nochmal spielen",
       },
     },
   },
   fr: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Accueil", alphabet: "Alphabet", syllables: "Syllabes", reading: "Lecture", phrases: "Phrases", songs: "Chansons", language: "Langues" },
+      nav: { home: "Accueil", alphabet: "Alphabet", syllables: "Syllabes", reading: "Lecture", phrases: "Phrases", songs: "Chansons", game: "Jeu", language: "Langues" },
       home: {
         pickProfile: "Choisis ton profil",
         newProfile: "Nouveau profil",
         name: "Nom",
         start: "Commencer",
         chooseAvatar: "Choisis un avatar",
+        chooseAge: "Quel âge as-tu ?",
       },
       languagePicker: {
         title: "Choisis tes langues",
@@ -123,19 +139,24 @@ const resources = {
         syllablesTitle: "Syllabes",
         syllablesIntro: "Assemble les lettres en syllabes — la première étape pour lire des mots.",
         phrasesTitle: "Phrases",
+        gameTitle: "Jeu",
+        gamePrompt: "Quel est le bon mot ?",
+        gameScore: "Score",
+        gamePlayAgain: "Rejouer",
       },
     },
   },
   zh: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "首页", alphabet: "字母表", syllables: "音节", reading: "阅读", phrases: "句子", songs: "歌曲", language: "语言" },
+      nav: { home: "首页", alphabet: "字母表", syllables: "音节", reading: "阅读", phrases: "句子", songs: "歌曲", game: "游戏", language: "语言" },
       home: {
         pickProfile: "选择你的档案",
         newProfile: "新档案",
         name: "名字",
         start: "开始",
         chooseAvatar: "选择一个头像",
+        chooseAge: "你几岁了？",
       },
       languagePicker: {
         title: "选择你的语言",
@@ -154,19 +175,24 @@ const resources = {
         syllablesTitle: "音节",
         syllablesIntro: "把字连成音节——学习读词的第一步。",
         phrasesTitle: "句子",
+        gameTitle: "游戏",
+        gamePrompt: "哪个词是对的？",
+        gameScore: "得分",
+        gamePlayAgain: "再玩一次",
       },
     },
   },
   es: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Inicio", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Lectura", phrases: "Frases", songs: "Canciones", language: "Idiomas" },
+      nav: { home: "Inicio", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Lectura", phrases: "Frases", songs: "Canciones", game: "Juego", language: "Idiomas" },
       home: {
         pickProfile: "Elige tu perfil",
         newProfile: "Nuevo perfil",
         name: "Nombre",
         start: "Empezar",
         chooseAvatar: "Elige un avatar",
+        chooseAge: "¿Cuántos años tienes?",
       },
       languagePicker: {
         title: "Elige tus idiomas",
@@ -185,19 +211,24 @@ const resources = {
         syllablesTitle: "Sílabas",
         syllablesIntro: "Une letras para formar sílabas — el primer paso para leer palabras.",
         phrasesTitle: "Frases",
+        gameTitle: "Juego",
+        gamePrompt: "¿Cuál es la palabra correcta?",
+        gameScore: "Puntuación",
+        gamePlayAgain: "Jugar otra vez",
       },
     },
   },
   it: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Home", alphabet: "Alfabeto", syllables: "Sillabe", reading: "Lettura", phrases: "Frasi", songs: "Canzoni", language: "Lingue" },
+      nav: { home: "Home", alphabet: "Alfabeto", syllables: "Sillabe", reading: "Lettura", phrases: "Frasi", songs: "Canzoni", game: "Gioco", language: "Lingue" },
       home: {
         pickProfile: "Scegli il tuo profilo",
         newProfile: "Nuovo profilo",
         name: "Nome",
         start: "Inizia",
         chooseAvatar: "Scegli un avatar",
+        chooseAge: "Quanti anni hai?",
       },
       languagePicker: {
         title: "Scegli le tue lingue",
@@ -216,6 +247,10 @@ const resources = {
         syllablesTitle: "Sillabe",
         syllablesIntro: "Unisci le lettere in sillabe — il primo passo per leggere le parole.",
         phrasesTitle: "Frasi",
+        gameTitle: "Gioco",
+        gamePrompt: "Qual è la parola giusta?",
+        gameScore: "Punteggio",
+        gamePlayAgain: "Gioca ancora",
       },
     },
   },

@@ -38,6 +38,14 @@ export function setLangPair(pair) {
   }
 }
 
+// Maps a child's age to a difficulty tier used to size/scale game content:
+// tier 1 (5-6y): small pools, short quizzes; tier 2 (7-8y): medium; tier 3 (9y+): full pools, longer quizzes.
+export function getDifficultyTier(age) {
+  if (!age || age <= 6) return 1;
+  if (age <= 8) return 2;
+  return 3;
+}
+
 export function pingProgress({ profileName, module, event }) {
   try {
     fetch("/api/progress/ping", {

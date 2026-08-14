@@ -27,6 +27,9 @@ export default function NavBar() {
       <NavLink to="/songs" className="nav-link">
         🎵 {t("nav.songs")}
       </NavLink>
+      <NavLink to="/game" className="nav-link">
+        🎮 {t("nav.game")}
+      </NavLink>
     </nav>
   );
 }
