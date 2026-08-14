@@ -1,0 +1,74 @@
+[
+  {
+    "id": "agua",
+    "icon": "🚰",
+    "name": "Agua",
+    "prompt": "🚿 ¡Abre la ducha! ¿A dónde va el agua, y de dónde vino?",
+    "steps": [
+      "1. El agua comienza en una presa o en un pozo, donde se recoge.",
+      "2. Va hasta una planta de tratamiento, donde se limpia y se hace potable.",
+      "3. Viaja por tuberías bajo tierra hasta llegar a tu casa.",
+      "4. ¡Abres la ducha y el agua te ayuda a lavarte!",
+      "5. Después de usarla, sale de casa por una tubería de desagüe.",
+      "6. Se trata otra vez en una planta de aguas residuales antes de volver al río o al mar, mucho más limpia."
+    ]
+  },
+  {
+    "id": "eletricidade",
+    "icon": "⚡",
+    "name": "Electricidad",
+    "prompt": "💡 ¡Encendiste la luz! ¿De dónde vino la energía?",
+    "steps": [
+      "1. La electricidad se produce en una central (que puede usar agua, viento, sol u otras fuentes) o en paneles solares en el tejado.",
+      "2. Viaja por unas líneas eléctricas muy grandes, llamadas líneas de alta tensión.",
+      "3. Pasa por una subestación que reduce la fuerza de la electricidad para que sea segura.",
+      "4. Entra en tu casa por el contador eléctrico, y luego por los cables en las paredes.",
+      "5. Llega al interruptor y a la lámpara — ¡y la luz se enciende!"
+    ]
+  },
+  {
+    "id": "aquecimento",
+    "icon": "🔥",
+    "name": "Calefacción",
+    "prompt": "🔥 ¿Cómo se mantiene calentita tu casa en invierno?",
+    "steps": [
+      "Una caldera, un calefactor eléctrico o un sistema central calienta el agua o el aire. Luego, tuberías o conductos llevan ese calor a los radiadores o rejillas de cada habitación, manteniendo la casa calentita y acogedora."
+    ]
+  },
+  {
+    "id": "ventilacao",
+    "icon": "🌬️",
+    "name": "Ventilación",
+    "prompt": "🌬️ ¿Cómo se mantiene fresco el aire dentro de la casa?",
+    "steps": [
+      "Las casas tienen pequeñas aberturas y conductos que dejan entrar el aire fresco y salir el aire usado (con humo de cocinar o humedad del baño). Así, el aire dentro de casa no se queda pesado, y respiramos mejor."
+    ]
+  },
+  {
+    "id": "internet",
+    "icon": "🌐",
+    "name": "Internet",
+    "prompt": "🌐 ¿Cómo llegan los vídeos y los mensajes hasta tu pantalla?",
+    "steps": [
+      "La información viaja por cables especiales (muchas veces de fibra óptica, finos como un cabello) que conectan tu casa con un gran centro de datos. Allí, la información se organiza y se envía de vuelta en segundos — por eso puedes ver un vídeo que está a miles de kilómetros de distancia."
+    ]
+  },
+  {
+    "id": "saneamento",
+    "icon": "🚽",
+    "name": "Saneamiento",
+    "prompt": "🚽 ¿Qué pasa cuando tiras de la cadena?",
+    "steps": [
+      "El agua sucia sale de casa por tuberías escondidas y se une a la red de alcantarillado de la ciudad, que corre bajo las calles. Después viaja hasta una planta de tratamiento, donde se limpia antes de volver a la naturaleza, protegiendo ríos y mares."
+    ]
+  },
+  {
+    "id": "solar",
+    "icon": "☀️",
+    "name": "Energía Solar",
+    "prompt": "☀️ ¿Para qué sirven esos paneles en el tejado?",
+    "steps": [
+      "Los paneles solares captan la luz del sol y la convierten en electricidad, sin humo ni contaminación. Esa energía puede encender las luces, cargar aparatos, o incluso guardarse en baterías para usarla de noche."
+    ]
+  }
+]

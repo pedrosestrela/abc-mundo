@@ -34,6 +34,22 @@ import phrasesIt from "./phrases.it.json";
 import countries from "./countries.json";
 import portugalHistory from "./portugalHistory.json";
 
+import houseSystemsPt from "./houseSystems.pt.json";
+import houseSystemsEn from "./houseSystems.en.json";
+import houseSystemsDe from "./houseSystems.de.json";
+import houseSystemsFr from "./houseSystems.fr.json";
+import houseSystemsZh from "./houseSystems.zh.json";
+import houseSystemsEs from "./houseSystems.es.json";
+import houseSystemsIt from "./houseSystems.it.json";
+
+import citySystemsPt from "./citySystems.pt.json";
+import citySystemsEn from "./citySystems.en.json";
+import citySystemsDe from "./citySystems.de.json";
+import citySystemsFr from "./citySystems.fr.json";
+import citySystemsZh from "./citySystems.zh.json";
+import citySystemsEs from "./citySystems.es.json";
+import citySystemsIt from "./citySystems.it.json";
+
 import missionsPt from "./missions.pt.json";
 import missionsEn from "./missions.en.json";
 import missionsDe from "./missions.de.json";
@@ -156,6 +172,8 @@ const SCIENCE = { pt: sciencePt, en: scienceEn, de: scienceDe, fr: scienceFr, zh
 const LIFE_SKILLS = { pt: lifeSkillsPt, en: lifeSkillsEn, de: lifeSkillsDe, fr: lifeSkillsFr, zh: lifeSkillsZh, es: lifeSkillsEs, it: lifeSkillsIt };
 const COMPUTING = { pt: computingPt, en: computingEn, de: computingDe, fr: computingFr, zh: computingZh, es: computingEs, it: computingIt };
 const COMPUTING_SAFETY = { pt: computingSafetyPt, en: computingSafetyEn, de: computingSafetyDe, fr: computingSafetyFr, zh: computingSafetyZh, es: computingSafetyEs, it: computingSafetyIt };
+const HOUSE_SYSTEMS = { pt: houseSystemsPt, en: houseSystemsEn, de: houseSystemsDe, fr: houseSystemsFr, zh: houseSystemsZh, es: houseSystemsEs, it: houseSystemsIt };
+const CITY_SYSTEMS = { pt: citySystemsPt, en: citySystemsEn, de: citySystemsDe, fr: citySystemsFr, zh: citySystemsZh, es: citySystemsEs, it: citySystemsIt };
 
 // Normalizes zh's different shape ({hanzi,...}) to the same shape used by
 // the Latin-alphabet languages ({letter, lower, upper, exampleWord, emoji}).
@@ -227,6 +245,14 @@ export function getComputing(langCode) {
 
 export function getComputingSafety(langCode) {
   return COMPUTING_SAFETY[langCode] || [];
+}
+
+export function getHouseSystems(langCode) {
+  return HOUSE_SYSTEMS[langCode] || [];
+}
+
+export function getCitySystems(langCode) {
+  return CITY_SYSTEMS[langCode] || [];
 }
 
 // Countries are language-agnostic in shape (name/fact are per-language

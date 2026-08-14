@@ -1,0 +1,65 @@
+[
+  {
+    "id": "agua",
+    "icon": "🚰",
+    "name": "Agua",
+    "prompt": "🚰 ¿De dónde viene el agua que llega a miles de casas al mismo tiempo?",
+    "steps": [
+      "1. La ciudad recoge agua de ríos, presas o pozos profundos.",
+      "2. Una gran planta de tratamiento limpia el agua para todas las personas de la ciudad.",
+      "3. El agua viaja por una enorme red de tuberías bajo las calles.",
+      "4. Llega a casas, escuelas, hospitales y tiendas al mismo tiempo, todos los días."
+    ]
+  },
+  {
+    "id": "eletricidade",
+    "icon": "💡",
+    "name": "Electricidad",
+    "prompt": "💡 Encendiste una lámpara. ¿De dónde vino la energía?",
+    "steps": [
+      "1. Centrales eléctricas o parques solares y eólicos producen energía para toda la ciudad.",
+      "2. La energía viaja por grandes líneas de alta tensión hasta las subestaciones de los barrios.",
+      "3. Desde allí, circula por cables más pequeños hasta cada calle y cada casa.",
+      "4. Basta con pulsar el interruptor para que la energía llegue a tu lámpara, ¡casi a la velocidad de la luz!"
+    ]
+  },
+  {
+    "id": "lixo",
+    "icon": "🗑️",
+    "name": "Basura y Reciclaje",
+    "prompt": "🗑️ Pusiste una botella en el contenedor de reciclaje. ¿A dónde va ahora?",
+    "steps": [
+      "1. Pasa un camión de recogida y recoge el contenido del contenedor.",
+      "2. La botella viaja hasta una planta de clasificación, donde máquinas y personas separan vidrio, papel, plástico y metal.",
+      "3. Cada material va a su propia fábrica de reciclaje.",
+      "4. Allí se convierte en materia prima nueva, que puede volver a ser... ¡una botella nueva! Reciclar ahorra recursos y protege el planeta."
+    ]
+  },
+  {
+    "id": "transportes",
+    "icon": "🚌",
+    "name": "Transporte",
+    "prompt": "🚌 ¿Cómo saben los autobuses y los trenes a dónde ir y cuándo parar?",
+    "steps": [
+      "Las ciudades planifican rutas y horarios para autobuses, trenes y metro, para conectar barrios, escuelas y lugares de trabajo. Los conductores y los sistemas de control hacen que todo circule con seguridad, para que las personas se puedan mover sin necesitar siempre un coche."
+    ]
+  },
+  {
+    "id": "hospitais",
+    "icon": "🏥",
+    "name": "Hospitales",
+    "prompt": "🏥 ¿Para qué sirve un hospital y quién trabaja allí?",
+    "steps": [
+      "Un hospital es un lugar donde médicos, enfermeros y otros profesionales cuidan a las personas cuando están enfermas o heridas, para ayudarlas a mejorar. Siempre hay alguien de guardia, de día y de noche, para que nadie se quede sin ayuda cuando la necesita. Es un lugar para sentirse cuidado y seguro."
+    ]
+  },
+  {
+    "id": "bombeiros",
+    "icon": "🚒",
+    "name": "Bomberos",
+    "prompt": "🚒 ¿Qué hacen los bomberos cuando oyes la sirena?",
+    "steps": [
+      "Los bomberos ayudan a apagar incendios, rescatar a personas y animales, y auxiliar a quien lo necesita en emergencias. Siempre están preparados, con el camión y el equipo listos, para llegar lo antes posible a quien necesita ayuda."
+    ]
+  }
+]
