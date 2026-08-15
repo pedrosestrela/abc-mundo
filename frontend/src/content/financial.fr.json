@@ -1,10 +1,98 @@
 [
-  { "id": "poupar-gastar", "concept": "Épargner et Dépenser", "emoji": "🐷", "explanation": "Épargner, c'est garder de l'argent pour plus tard. Dépenser, c'est utiliser de l'argent pour acheter quelque chose maintenant. C'est bien de faire un peu des deux !" },
-  { "id": "precisar-querer", "concept": "Besoins et Envies", "emoji": "🎁", "explanation": "Un besoin est quelque chose dont on ne peut pas se passer, comme la nourriture ou des chaussures. Une envie est quelque chose qu'on aimerait avoir, comme un nouveau jouet." },
-  { "id": "moedas-notas", "concept": "Pièces et Billets", "emoji": "🪙", "explanation": "On utilise des euros. Il y a de petites pièces, les centimes, et des pièces et billets d'euros. Ensemble, ils nous aident à payer." },
-  { "id": "paciencia", "concept": "La Patience d'Épargner", "emoji": "⏳", "explanation": "Parfois, il faut attendre et épargner un peu chaque jour jusqu'à avoir assez d'argent pour acheter quelque chose de spécial." },
-  { "id": "mealheiro", "concept": "La Tirelire", "emoji": "🐖", "explanation": "Une tirelire est une petite boîte où l'on garde ses pièces. Chaque pièce épargnée nous rapproche de notre objectif." },
-  { "id": "trocar", "concept": "Rendre la Monnaie", "emoji": "🔄", "explanation": "Quand on paie avec plus d'argent que le prix, on reçoit de la monnaie : l'argent en trop qu'on nous rend." },
-  { "id": "trabalho-dinheiro", "concept": "Travail et Argent", "emoji": "🧹", "explanation": "Les gens travaillent pour gagner de l'argent. Aider à la maison peut aussi nous apprendre la valeur de l'effort." },
-  { "id": "partilhar", "concept": "Partager et Aider", "emoji": "🤝", "explanation": "On peut utiliser un peu de son argent pour aider les autres, comme offrir un cadeau à un ami." }
+  {
+    "id": "poupar-gastar",
+    "concept": "Épargner et Dépenser",
+    "emoji": "🐷",
+    "explanation": "Épargner, c'est garder de l'argent pour plus tard. Dépenser, c'est utiliser de l'argent pour acheter quelque chose maintenant. C'est bien de faire un peu des deux !"
+  },
+  {
+    "id": "precisar-querer",
+    "concept": "Besoins et Envies",
+    "emoji": "🎁",
+    "explanation": "Un besoin est quelque chose dont on ne peut pas se passer, comme la nourriture ou des chaussures. Une envie est quelque chose qu'on aimerait avoir, comme un nouveau jouet."
+  },
+  {
+    "id": "moedas-notas",
+    "concept": "Pièces et Billets",
+    "emoji": "🪙",
+    "explanation": "On utilise des euros. Il y a de petites pièces, les centimes, et des pièces et billets d'euros. Ensemble, ils nous aident à payer."
+  },
+  {
+    "id": "paciencia",
+    "concept": "La Patience d'Épargner",
+    "emoji": "⏳",
+    "explanation": "Parfois, il faut attendre et épargner un peu chaque jour jusqu'à avoir assez d'argent pour acheter quelque chose de spécial."
+  },
+  {
+    "id": "mealheiro",
+    "concept": "La Tirelire",
+    "emoji": "🐖",
+    "explanation": "Une tirelire est une petite boîte où l'on garde ses pièces. Chaque pièce épargnée nous rapproche de notre objectif."
+  },
+  {
+    "id": "trocar",
+    "concept": "Rendre la Monnaie",
+    "emoji": "🔄",
+    "explanation": "Quand on paie avec plus d'argent que le prix, on reçoit de la monnaie : l'argent en trop qu'on nous rend."
+  },
+  {
+    "id": "trabalho-dinheiro",
+    "concept": "Travail et Argent",
+    "emoji": "🧹",
+    "explanation": "Les gens travaillent pour gagner de l'argent. Aider à la maison peut aussi nous apprendre la valeur de l'effort."
+  },
+  {
+    "id": "partilhar",
+    "concept": "Partager et Aider",
+    "emoji": "🤝",
+    "explanation": "On peut utiliser un peu de son argent pour aider les autres, comme offrir un cadeau à un ami."
+  },
+  {
+    "id": "orcamento",
+    "concept": "Faire un Budget",
+    "emoji": "📝",
+    "explanation": "Un budget est un plan qui montre combien d'argent nous avons et comment nous allons le dépenser ou l'épargner. Il nous aide à ne pas dépenser plus que ce que nous avons."
+  },
+  {
+    "id": "banco",
+    "concept": "La Banque",
+    "emoji": "🏦",
+    "explanation": "La banque est un endroit sûr où les gens gardent leur argent. Elle peut aussi nous aider à épargner et à faire grandir notre argent."
+  },
+  {
+    "id": "comparar-precos",
+    "concept": "Comparer les Prix",
+    "emoji": "🔍",
+    "explanation": "Avant d'acheter, il est malin de vérifier le prix de la même chose dans différents magasins. Ainsi, on choisit l'option la moins chère."
+  },
+  {
+    "id": "desconto",
+    "concept": "Qu'est-ce qu'une Réduction",
+    "emoji": "🏷️",
+    "explanation": "Une réduction, c'est quand un magasin baisse le prix de quelque chose pendant un moment. Mais il faut vérifier si c'est une vraie économie."
+  },
+  {
+    "id": "objetivo-poupanca",
+    "concept": "Avoir un Objectif d'Épargne",
+    "emoji": "🎯",
+    "explanation": "Un objectif d'épargne, c'est décider pour quoi on veut garder de l'argent, comme un jouet ou un voyage. Avoir un objectif nous donne envie d'épargner davantage."
+  },
+  {
+    "id": "dinheiro-digital",
+    "concept": "L'Argent Numérique",
+    "emoji": "💳",
+    "explanation": "De nos jours, l'argent peut aussi être numérique, gardé sur une carte ou un téléphone au lieu de pièces et de billets. C'est toujours de l'argent réel !"
+  },
+  {
+    "id": "emprestar",
+    "concept": "Emprunter et Rembourser",
+    "emoji": "🤲",
+    "explanation": "Parfois, on emprunte de l'argent à quelqu'un et on promet de le rembourser plus tard. Il est important de toujours tenir cette promesse."
+  },
+  {
+    "id": "valor-do-dinheiro",
+    "concept": "La Valeur de l'Argent",
+    "emoji": "⚖️",
+    "explanation": "Tout ne coûte pas le même prix. Connaître la valeur de l'argent nous aide à savoir si quelque chose est cher ou pas cher pour ce qu'il offre."
+  }
 ]

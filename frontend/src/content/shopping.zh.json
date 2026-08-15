@@ -1,15 +1,178 @@
 {
-  "budget": 1000,
-  "items": [
-    { "id": "apple", "emoji": "🍎", "name": "苹果", "price": 80 },
-    { "id": "banana", "emoji": "🍌", "name": "香蕉", "price": 60 },
-    { "id": "juice", "emoji": "🧃", "name": "果汁", "price": 150 },
-    { "id": "bread", "emoji": "🍞", "name": "面包", "price": 120 },
-    { "id": "cheese", "emoji": "🧀", "name": "奶酪", "price": 250 },
-    { "id": "cookie", "emoji": "🍪", "name": "饼干", "price": 100 },
-    { "id": "icecream", "emoji": "🍦", "name": "冰淇淋", "price": 200 },
-    { "id": "ball", "emoji": "⚽", "name": "球", "price": 500 },
-    { "id": "book", "emoji": "📖", "name": "书", "price": 350 },
-    { "id": "toycar", "emoji": "🚗", "name": "玩具车", "price": 450 }
+  "scenarios": [
+    {
+      "id": "grocery",
+      "emoji": "🛒",
+      "storeName": "杂货店",
+      "budget": 1000,
+      "items": [
+        {
+          "id": "apple",
+          "emoji": "🍎",
+          "name": "苹果",
+          "price": 80
+        },
+        {
+          "id": "banana",
+          "emoji": "🍌",
+          "name": "香蕉",
+          "price": 60
+        },
+        {
+          "id": "juice",
+          "emoji": "🧃",
+          "name": "果汁",
+          "price": 150
+        },
+        {
+          "id": "bread",
+          "emoji": "🍞",
+          "name": "面包",
+          "price": 120
+        },
+        {
+          "id": "cheese",
+          "emoji": "🧀",
+          "name": "奶酪",
+          "price": 250
+        },
+        {
+          "id": "cookie",
+          "emoji": "🍪",
+          "name": "饼干",
+          "price": 100
+        },
+        {
+          "id": "icecream",
+          "emoji": "🍦",
+          "name": "冰淇淋",
+          "price": 200
+        },
+        {
+          "id": "ball",
+          "emoji": "⚽",
+          "name": "球",
+          "price": 500
+        },
+        {
+          "id": "book",
+          "emoji": "📖",
+          "name": "书",
+          "price": 350
+        },
+        {
+          "id": "toycar",
+          "emoji": "🚗",
+          "name": "玩具车",
+          "price": 450
+        }
+      ]
+    },
+    {
+      "id": "stationery",
+      "emoji": "✏️",
+      "storeName": "文具店",
+      "budget": 800,
+      "items": [
+        {
+          "id": "pencil",
+          "emoji": "✏️",
+          "name": "铅笔",
+          "price": 50
+        },
+        {
+          "id": "eraser",
+          "emoji": "🧽",
+          "name": "橡皮擦",
+          "price": 40
+        },
+        {
+          "id": "notebook",
+          "emoji": "📓",
+          "name": "笔记本",
+          "price": 180
+        },
+        {
+          "id": "crayons",
+          "emoji": "🖍️",
+          "name": "蜡笔",
+          "price": 220
+        },
+        {
+          "id": "ruler",
+          "emoji": "📏",
+          "name": "尺子",
+          "price": 90
+        },
+        {
+          "id": "glue",
+          "emoji": "🧴",
+          "name": "胶水",
+          "price": 70
+        },
+        {
+          "id": "scissors",
+          "emoji": "✂️",
+          "name": "剪刀",
+          "price": 150
+        },
+        {
+          "id": "stickers",
+          "emoji": "⭐",
+          "name": "贴纸",
+          "price": 120
+        }
+      ]
+    },
+    {
+      "id": "toystore",
+      "emoji": "🧸",
+      "storeName": "玩具店",
+      "budget": 1500,
+      "items": [
+        {
+          "id": "kite",
+          "emoji": "🪁",
+          "name": "风筝",
+          "price": 300
+        },
+        {
+          "id": "puzzle",
+          "emoji": "🧩",
+          "name": "拼图",
+          "price": 380
+        },
+        {
+          "id": "yoyo",
+          "emoji": "🪀",
+          "name": "悠悠球",
+          "price": 150
+        },
+        {
+          "id": "robot",
+          "emoji": "🤖",
+          "name": "机器人",
+          "price": 600
+        },
+        {
+          "id": "doll",
+          "emoji": "🪆",
+          "name": "娃娃",
+          "price": 420
+        },
+        {
+          "id": "blocks",
+          "emoji": "🧱",
+          "name": "积木",
+          "price": 350
+        },
+        {
+          "id": "balloon",
+          "emoji": "🎈",
+          "name": "气球",
+          "price": 50
+        }
+      ]
+    }
   ]
 }

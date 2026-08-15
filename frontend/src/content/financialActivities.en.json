@@ -1,27 +1,172 @@
 {
   "wantsNeeds": [
-    { "id": "wn1", "emoji": "🍞", "name": "Bread to eat", "isNeed": true },
-    { "id": "wn2", "emoji": "🧸", "name": "New toy", "isNeed": false },
-    { "id": "wn3", "emoji": "👟", "name": "Shoes for your feet", "isNeed": true },
-    { "id": "wn4", "emoji": "🍬", "name": "Candy", "isNeed": false },
-    { "id": "wn5", "emoji": "🧥", "name": "Winter coat", "isNeed": true },
-    { "id": "wn6", "emoji": "🎮", "name": "New video game", "isNeed": false },
-    { "id": "wn7", "emoji": "💧", "name": "Water to drink", "isNeed": true },
-    { "id": "wn8", "emoji": "🃏", "name": "Collectible cards", "isNeed": false },
-    { "id": "wn9", "emoji": "🛏️", "name": "Bed to sleep in", "isNeed": true },
-    { "id": "wn10", "emoji": "🍦", "name": "Extra ice cream", "isNeed": false }
+    {
+      "id": "wn1",
+      "emoji": "🍞",
+      "name": "Bread to eat",
+      "isNeed": true
+    },
+    {
+      "id": "wn2",
+      "emoji": "🧸",
+      "name": "New toy",
+      "isNeed": false
+    },
+    {
+      "id": "wn3",
+      "emoji": "👟",
+      "name": "Shoes for your feet",
+      "isNeed": true
+    },
+    {
+      "id": "wn4",
+      "emoji": "🍬",
+      "name": "Candy",
+      "isNeed": false
+    },
+    {
+      "id": "wn5",
+      "emoji": "🧥",
+      "name": "Winter coat",
+      "isNeed": true
+    },
+    {
+      "id": "wn6",
+      "emoji": "🎮",
+      "name": "New video game",
+      "isNeed": false
+    },
+    {
+      "id": "wn7",
+      "emoji": "💧",
+      "name": "Water to drink",
+      "isNeed": true
+    },
+    {
+      "id": "wn8",
+      "emoji": "🃏",
+      "name": "Collectible cards",
+      "isNeed": false
+    },
+    {
+      "id": "wn9",
+      "emoji": "🛏️",
+      "name": "Bed to sleep in",
+      "isNeed": true
+    },
+    {
+      "id": "wn10",
+      "emoji": "🍦",
+      "name": "Extra ice cream",
+      "isNeed": false
+    },
+    {
+      "id": "wn11",
+      "emoji": "🥕",
+      "name": "Vegetables to eat",
+      "isNeed": true
+    },
+    {
+      "id": "wn12",
+      "emoji": "🎪",
+      "name": "Circus ticket",
+      "isNeed": false
+    },
+    {
+      "id": "wn13",
+      "emoji": "🧴",
+      "name": "Soap to wash hands",
+      "isNeed": true
+    },
+    {
+      "id": "wn14",
+      "emoji": "🎧",
+      "name": "New headphones",
+      "isNeed": false
+    },
+    {
+      "id": "wn15",
+      "emoji": "🩹",
+      "name": "Bandages for a cut",
+      "isNeed": true
+    },
+    {
+      "id": "wn16",
+      "emoji": "🎨",
+      "name": "A third set of markers",
+      "isNeed": false
+    }
   ],
-  "savingsDecision": {
-    "scenarioText": "You earned €6 allowance this week. In the shop you see a toy and a book you both really like. You only have enough for one of them.",
-    "budget": 600,
-    "items": [
-      { "id": "toy", "emoji": "🧸", "name": "Toy", "price": 500 },
-      { "id": "book", "emoji": "📖", "name": "Book", "price": 350 }
-    ]
-  },
+  "savingsDecisions": [
+    {
+      "id": "ss1",
+      "scenarioText": "You earned €6 allowance this week. In the shop you see a toy and a book you both really like. You only have enough for one of them.",
+      "budget": 600,
+      "items": [
+        {
+          "id": "toy",
+          "emoji": "🧸",
+          "name": "Toy",
+          "price": 500
+        },
+        {
+          "id": "book",
+          "emoji": "📖",
+          "name": "Book",
+          "price": 350
+        }
+      ]
+    },
+    {
+      "id": "ss2",
+      "scenarioText": "You got €8 as a gift. You see a board game and skates that you love. The money is only enough for one.",
+      "budget": 800,
+      "items": [
+        {
+          "id": "boardgame",
+          "emoji": "🎲",
+          "name": "Board Game",
+          "price": 600
+        },
+        {
+          "id": "skates",
+          "emoji": "🛼",
+          "name": "Skates",
+          "price": 750
+        }
+      ]
+    },
+    {
+      "id": "ss3",
+      "scenarioText": "You saved €10 over the month. In a shop you see a toy bicycle and a handheld console. You can only pick one.",
+      "budget": 1000,
+      "items": [
+        {
+          "id": "bike",
+          "emoji": "🚲",
+          "name": "Toy Bicycle",
+          "price": 900
+        },
+        {
+          "id": "console",
+          "emoji": "🎮",
+          "name": "Handheld Console",
+          "price": 950
+        }
+      ]
+    }
+  ],
   "piggyBank": {
     "intro": "Every week you can put a few coins in your piggy bank. Watch how the money grows little by little!",
-    "coinTurns": [50, 20, 100, 30, 50],
+    "coinTurns": [
+      50,
+      20,
+      100,
+      30,
+      50,
+      40,
+      60
+    ],
     "goal": 300,
     "outro": "See that? Saving a little at a time, with patience, turns into a lot of saved money!"
   },
@@ -69,6 +214,50 @@
       "usualPrice": 1500,
       "isGoodDeal": true,
       "explanation": "This puzzle really has cost €15 for the last few weeks and is now €12. That's a real €3 discount."
+    },
+    {
+      "id": "da5",
+      "emoji": "🎮",
+      "product": "Game controller",
+      "fakeOriginalPrice": 3000,
+      "discountPercent": 25,
+      "sellingPrice": 2250,
+      "usualPrice": 2250,
+      "isGoodDeal": false,
+      "explanation": "The 'old' price of €30 is made up. This controller always costs €22.50 in any shop — there's no real discount."
+    },
+    {
+      "id": "da6",
+      "emoji": "👕",
+      "product": "Printed t-shirt",
+      "fakeOriginalPrice": 1200,
+      "discountPercent": 40,
+      "sellingPrice": 720,
+      "usualPrice": 720,
+      "isGoodDeal": true,
+      "explanation": "This discount is real: the t-shirt really cost €12 and now it's €7.20. You save €4.80 for real!"
+    },
+    {
+      "id": "da7",
+      "emoji": "🚲",
+      "product": "Small bicycle",
+      "fakeOriginalPrice": 15000,
+      "discountPercent": 60,
+      "sellingPrice": 6000,
+      "usualPrice": 6000,
+      "isGoodDeal": false,
+      "explanation": "60% off sounds amazing, but the 'original' price of €150 never existed. This bicycle always costs around €60."
+    },
+    {
+      "id": "da8",
+      "emoji": "🧸",
+      "product": "Giant plush toy",
+      "fakeOriginalPrice": 2500,
+      "discountPercent": 15,
+      "sellingPrice": 2125,
+      "usualPrice": 2500,
+      "isGoodDeal": false,
+      "explanation": "The selling price of €21.25 is only €1.75 cheaper than the usual €25 price — much less saving than the 15% off suggests."
     }
   ],
   "interestExample": {
@@ -82,45 +271,289 @@
     {
       "id": "wb1",
       "allowance": 1000,
-      "goal": { "emoji": "📖", "name": "a new book", "amount": 500 },
+      "goal": {
+        "emoji": "📖",
+        "name": "a new book",
+        "amount": 500
+      },
       "days": [
-        { "id": "d1", "dayLabel": "Monday", "type": "expense", "emoji": "🚌", "label": "Transport", "amount": 100 },
-        { "id": "d2", "dayLabel": "Tuesday", "type": "optional", "emoji": "🍦", "label": "Do you want to buy an ice cream?", "amount": 100 },
-        { "id": "d3", "dayLabel": "Wednesday", "type": "surprise", "emoji": "🚰", "label": "You lost your water bottle! You need to buy a new one.", "amount": 200 },
-        { "id": "d4", "dayLabel": "Thursday", "type": "expense", "emoji": "🥪", "label": "Snack", "amount": 150 }
+        {
+          "id": "d1",
+          "dayLabel": "Monday",
+          "type": "expense",
+          "emoji": "🚌",
+          "label": "Transport",
+          "amount": 100
+        },
+        {
+          "id": "d2",
+          "dayLabel": "Tuesday",
+          "type": "optional",
+          "emoji": "🍦",
+          "label": "Do you want to buy an ice cream?",
+          "amount": 100
+        },
+        {
+          "id": "d3",
+          "dayLabel": "Wednesday",
+          "type": "surprise",
+          "emoji": "🚰",
+          "label": "You lost your water bottle! You need to buy a new one.",
+          "amount": 200
+        },
+        {
+          "id": "d4",
+          "dayLabel": "Thursday",
+          "type": "expense",
+          "emoji": "🥪",
+          "label": "Snack",
+          "amount": 150
+        }
       ]
     },
     {
       "id": "wb2",
       "allowance": 800,
-      "goal": { "emoji": "🧸", "name": "a new toy", "amount": 400 },
+      "goal": {
+        "emoji": "🧸",
+        "name": "a new toy",
+        "amount": 400
+      },
       "days": [
-        { "id": "d1", "dayLabel": "Monday", "type": "expense", "emoji": "🚌", "label": "Transport", "amount": 80 },
-        { "id": "d2", "dayLabel": "Tuesday", "type": "expense", "emoji": "🥪", "label": "Snack", "amount": 120 },
-        { "id": "d3", "dayLabel": "Wednesday", "type": "optional", "emoji": "🃏", "label": "Do you want to buy trading cards?", "amount": 100 },
-        { "id": "d4", "dayLabel": "Thursday", "type": "surprise", "emoji": "🎒", "label": "Your backpack tore! You need to buy a new bag.", "amount": 150 }
+        {
+          "id": "d1",
+          "dayLabel": "Monday",
+          "type": "expense",
+          "emoji": "🚌",
+          "label": "Transport",
+          "amount": 80
+        },
+        {
+          "id": "d2",
+          "dayLabel": "Tuesday",
+          "type": "expense",
+          "emoji": "🥪",
+          "label": "Snack",
+          "amount": 120
+        },
+        {
+          "id": "d3",
+          "dayLabel": "Wednesday",
+          "type": "optional",
+          "emoji": "🃏",
+          "label": "Do you want to buy trading cards?",
+          "amount": 100
+        },
+        {
+          "id": "d4",
+          "dayLabel": "Thursday",
+          "type": "surprise",
+          "emoji": "🎒",
+          "label": "Your backpack tore! You need to buy a new bag.",
+          "amount": 150
+        }
       ]
     },
     {
       "id": "wb3",
       "allowance": 1200,
-      "goal": { "emoji": "🎁", "name": "a special gift", "amount": 600 },
+      "goal": {
+        "emoji": "🎁",
+        "name": "a special gift",
+        "amount": 600
+      },
       "days": [
-        { "id": "d1", "dayLabel": "Monday", "type": "expense", "emoji": "🚌", "label": "Transport", "amount": 100 },
-        { "id": "d2", "dayLabel": "Tuesday", "type": "surprise", "emoji": "✏️", "label": "You lost your pen! You need to buy a new one.", "amount": 150 },
-        { "id": "d3", "dayLabel": "Wednesday", "type": "optional", "emoji": "📗", "label": "Do you want to buy a comic book?", "amount": 250 },
-        { "id": "d4", "dayLabel": "Thursday", "type": "expense", "emoji": "🥪", "label": "Snack", "amount": 200 }
+        {
+          "id": "d1",
+          "dayLabel": "Monday",
+          "type": "expense",
+          "emoji": "🚌",
+          "label": "Transport",
+          "amount": 100
+        },
+        {
+          "id": "d2",
+          "dayLabel": "Tuesday",
+          "type": "surprise",
+          "emoji": "✏️",
+          "label": "You lost your pen! You need to buy a new one.",
+          "amount": 150
+        },
+        {
+          "id": "d3",
+          "dayLabel": "Wednesday",
+          "type": "optional",
+          "emoji": "📗",
+          "label": "Do you want to buy a comic book?",
+          "amount": 250
+        },
+        {
+          "id": "d4",
+          "dayLabel": "Thursday",
+          "type": "expense",
+          "emoji": "🥪",
+          "label": "Snack",
+          "amount": 200
+        }
+      ]
+    },
+    {
+      "id": "wb4",
+      "allowance": 900,
+      "goal": {
+        "emoji": "🎧",
+        "name": "headphones",
+        "amount": 450
+      },
+      "days": [
+        {
+          "id": "d1",
+          "dayLabel": "Monday",
+          "type": "expense",
+          "emoji": "🚌",
+          "label": "Transport",
+          "amount": 90
+        },
+        {
+          "id": "d2",
+          "dayLabel": "Tuesday",
+          "type": "surprise",
+          "emoji": "🌂",
+          "label": "It rained and you lost your umbrella! You need to buy a new one.",
+          "amount": 120
+        },
+        {
+          "id": "d3",
+          "dayLabel": "Wednesday",
+          "type": "optional",
+          "emoji": "🍿",
+          "label": "Do you want to buy popcorn at the cinema?",
+          "amount": 100
+        },
+        {
+          "id": "d4",
+          "dayLabel": "Thursday",
+          "type": "expense",
+          "emoji": "🥪",
+          "label": "Snack",
+          "amount": 130
+        }
+      ]
+    },
+    {
+      "id": "wb5",
+      "allowance": 1100,
+      "goal": {
+        "emoji": "🎨",
+        "name": "a painting kit",
+        "amount": 550
+      },
+      "days": [
+        {
+          "id": "d1",
+          "dayLabel": "Monday",
+          "type": "expense",
+          "emoji": "🚌",
+          "label": "Transport",
+          "amount": 100
+        },
+        {
+          "id": "d2",
+          "dayLabel": "Tuesday",
+          "type": "expense",
+          "emoji": "🥪",
+          "label": "Snack",
+          "amount": 140
+        },
+        {
+          "id": "d3",
+          "dayLabel": "Wednesday",
+          "type": "surprise",
+          "emoji": "🧦",
+          "label": "Your socks got a hole! You need to buy new ones.",
+          "amount": 130
+        },
+        {
+          "id": "d4",
+          "dayLabel": "Thursday",
+          "type": "optional",
+          "emoji": "🍭",
+          "label": "Do you want to buy a giant lollipop?",
+          "amount": 90
+        }
       ]
     }
   ],
   "safety": [
-    { "id": "fs1", "emoji": "💳", "scenario": "Someone you met online asks you for your parents' bank card number.", "isSafe": false, "explanation": "Ask an adult for help! The card number is secret and never gets shared with strangers, even online." },
-    { "id": "fs2", "emoji": "🛍️", "scenario": "You want to buy something in an online shop, so you ask an adult to help before paying.", "isSafe": true, "explanation": "Great! Asking an adult for help before buying online protects you from being tricked." },
-    { "id": "fs3", "emoji": "🏆", "scenario": "You get a message 'YOU WON A PRIZE! Send your card details now to receive it' and you go to send them.", "isSafe": false, "explanation": "Ask an adult for help! Prizes that ask for card details are almost always scams — never send that information." },
-    { "id": "fs4", "emoji": "🔢", "scenario": "The card PIN code is known only by you and your parents.", "isSafe": true, "explanation": "Great! The PIN is a secret that only your trusted family should know." },
-    { "id": "fs5", "emoji": "🤝", "scenario": "A friend from school asks for your parents' card PIN 'just to try it' and you tell them.", "isSafe": false, "explanation": "Ask an adult for help! Never share the PIN with anyone, not even friends." },
-    { "id": "fs6", "emoji": "👨‍👩‍👧", "scenario": "A trusted adult is beside you while you shop online together.", "isSafe": true, "explanation": "Perfect! Shopping online with a trusted adult nearby is the safest way." },
-    { "id": "fs7", "emoji": "⏰", "scenario": "A message says 'PAY NOW or you lose your account!' and you pay quickly without asking anyone.", "isSafe": false, "explanation": "Ask an adult for help! Messages that rush you are usually scams. Always ask before paying." },
-    { "id": "fs8", "emoji": "🕵️", "scenario": "You see an amazing free-money offer and ask an adult if it's real before believing it.", "isSafe": true, "explanation": "Very smart! Offers that seem too good to be true usually are. Asking first protects you." }
+    {
+      "id": "fs1",
+      "emoji": "💳",
+      "scenario": "Someone you met online asks you for your parents' bank card number.",
+      "isSafe": false,
+      "explanation": "Ask an adult for help! The card number is secret and never gets shared with strangers, even online."
+    },
+    {
+      "id": "fs2",
+      "emoji": "🛍️",
+      "scenario": "You want to buy something in an online shop, so you ask an adult to help before paying.",
+      "isSafe": true,
+      "explanation": "Great! Asking an adult for help before buying online protects you from being tricked."
+    },
+    {
+      "id": "fs3",
+      "emoji": "🏆",
+      "scenario": "You get a message 'YOU WON A PRIZE! Send your card details now to receive it' and you go to send them.",
+      "isSafe": false,
+      "explanation": "Ask an adult for help! Prizes that ask for card details are almost always scams — never send that information."
+    },
+    {
+      "id": "fs4",
+      "emoji": "🔢",
+      "scenario": "The card PIN code is known only by you and your parents.",
+      "isSafe": true,
+      "explanation": "Great! The PIN is a secret that only your trusted family should know."
+    },
+    {
+      "id": "fs5",
+      "emoji": "🤝",
+      "scenario": "A friend from school asks for your parents' card PIN 'just to try it' and you tell them.",
+      "isSafe": false,
+      "explanation": "Ask an adult for help! Never share the PIN with anyone, not even friends."
+    },
+    {
+      "id": "fs6",
+      "emoji": "👨‍👩‍👧",
+      "scenario": "A trusted adult is beside you while you shop online together.",
+      "isSafe": true,
+      "explanation": "Perfect! Shopping online with a trusted adult nearby is the safest way."
+    },
+    {
+      "id": "fs7",
+      "emoji": "⏰",
+      "scenario": "A message says 'PAY NOW or you lose your account!' and you pay quickly without asking anyone.",
+      "isSafe": false,
+      "explanation": "Ask an adult for help! Messages that rush you are usually scams. Always ask before paying."
+    },
+    {
+      "id": "fs8",
+      "emoji": "🕵️",
+      "scenario": "You see an amazing free-money offer and ask an adult if it's real before believing it.",
+      "isSafe": true,
+      "explanation": "Very smart! Offers that seem too good to be true usually are. Asking first protects you."
+    },
+    {
+      "id": "fs9",
+      "emoji": "📱",
+      "scenario": "You install an app that asks for your parents' card number just to 'try the game'.",
+      "isSafe": false,
+      "explanation": "Ask an adult for help! Real games don't need card details for you to try them."
+    },
+    {
+      "id": "fs10",
+      "emoji": "🔒",
+      "scenario": "You see the online shop has a lock icon in the address and an adult confirms it's safe before you buy.",
+      "isSafe": true,
+      "explanation": "Great! Checking that a site is safe with an adult's help is a good habit before buying."
+    }
   ]
 }

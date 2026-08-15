@@ -1,14 +1,130 @@
 {
-  "ingredients": [
-    { "id": "lemons", "emoji": "🍋", "name": "Limoni", "cost": 20 },
-    { "id": "sugar", "emoji": "🍬", "name": "Zucchero", "cost": 15 },
-    { "id": "water", "emoji": "💧", "name": "Acqua", "cost": 5 },
-    { "id": "cups", "emoji": "🥤", "name": "Bicchieri", "cost": 10 }
-  ],
-  "priceOptions": [50, 75, 100, 150],
-  "tips": [
-    "Se il prezzo è troppo basso, vendi tanti bicchieri ma guadagni poco per bicchiere.",
-    "Se il prezzo è troppo alto, guadagni di più per bicchiere, ma alcune persone non comprano.",
-    "Il profitto è il denaro che resta dopo aver pagato gli ingredienti."
+  "scenarios": [
+    {
+      "id": "lemonade",
+      "emoji": "🍋",
+      "productName": "Bancarella di Limonata",
+      "ingredients": [
+        {
+          "id": "lemons",
+          "emoji": "🍋",
+          "name": "Limoni",
+          "cost": 20
+        },
+        {
+          "id": "sugar",
+          "emoji": "🍬",
+          "name": "Zucchero",
+          "cost": 15
+        },
+        {
+          "id": "water",
+          "emoji": "💧",
+          "name": "Acqua",
+          "cost": 5
+        },
+        {
+          "id": "cups",
+          "emoji": "🥤",
+          "name": "Bicchieri",
+          "cost": 10
+        }
+      ],
+      "priceOptions": [
+        50,
+        75,
+        100,
+        150
+      ],
+      "tips": [
+        "Se il prezzo è troppo basso, vendi tanti bicchieri ma guadagni poco per bicchiere.",
+        "Se il prezzo è troppo alto, guadagni di più per bicchiere, ma alcune persone non comprano.",
+        "Il profitto è il denaro che resta dopo aver pagato gli ingredienti."
+      ]
+    },
+    {
+      "id": "orangejuice",
+      "emoji": "🍊",
+      "productName": "Bancarella di Succo d'Arancia",
+      "ingredients": [
+        {
+          "id": "oranges",
+          "emoji": "🍊",
+          "name": "Arance",
+          "cost": 25
+        },
+        {
+          "id": "sugar",
+          "emoji": "🍬",
+          "name": "Zucchero",
+          "cost": 15
+        },
+        {
+          "id": "water",
+          "emoji": "💧",
+          "name": "Acqua",
+          "cost": 5
+        },
+        {
+          "id": "cups",
+          "emoji": "🥤",
+          "name": "Bicchieri",
+          "cost": 10
+        }
+      ],
+      "priceOptions": [
+        60,
+        90,
+        120,
+        160
+      ],
+      "tips": [
+        "In estate, più persone hanno sete e vogliono una bevanda fresca!",
+        "Le arance costano un po' di più dei limoni, quindi il tuo costo è maggiore.",
+        "Una giornata calda e soleggiata può aiutarti a vendere più bicchieri."
+      ]
+    },
+    {
+      "id": "hotchocolate",
+      "emoji": "🍫",
+      "productName": "Bancarella di Cioccolata Calda",
+      "ingredients": [
+        {
+          "id": "cocoa",
+          "emoji": "🍫",
+          "name": "Cacao",
+          "cost": 30
+        },
+        {
+          "id": "milk",
+          "emoji": "🥛",
+          "name": "Latte",
+          "cost": 20
+        },
+        {
+          "id": "sugar",
+          "emoji": "🍬",
+          "name": "Zucchero",
+          "cost": 15
+        },
+        {
+          "id": "cups",
+          "emoji": "🥤",
+          "name": "Bicchieri",
+          "cost": 10
+        }
+      ],
+      "priceOptions": [
+        80,
+        100,
+        130,
+        180
+      ],
+      "tips": [
+        "In inverno, alle persone piacciono le bevande calde per scaldarsi.",
+        "Cacao e latte costano di più, quindi devi vendere a un buon prezzo.",
+        "Nei giorni freddi, potresti vendere più cioccolata calda di quanto pensi!"
+      ]
+    }
   ]
 }

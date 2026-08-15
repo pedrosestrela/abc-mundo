@@ -151,7 +151,13 @@ export default function Financial() {
   const promptCoins = useMemo(() => round.prompt.coins, [round]);
 
   // --- Lemonade Stand state ---
-  const lemonade = getLemonadeStand(pair.mother);
+  // Multiple business scenarios (lemonade / orange juice / hot chocolate)
+  // live under `scenarios`; one is picked at random per playthrough, mirroring
+  // the weekly-budget tab's scenario-rotation pattern below.
+  const lemonadePool = getLemonadeStand(pair.mother).scenarios;
+  const [lemonade, setLemonade] = useState(
+    () => lemonadePool[Math.floor(Math.random() * lemonadePool.length)]
+  );
   const [lemonAdvisoryDone, setLemonAdvisoryDone] = useState(tier >= 2);
   const [lemonRound, setLemonRound] = useState(1);
   const [lemonPrice, setLemonPrice] = useState(null);
@@ -191,6 +197,7 @@ export default function Financial() {
   }
 
   function handleRestartLemonade() {
+    setLemonade(lemonadePool[Math.floor(Math.random() * lemonadePool.length)]);
     setLemonRound(1);
     setLemonPrice(null);
     setLemonResult(null);
@@ -199,7 +206,13 @@ export default function Financial() {
   }
 
   // --- Shopping / budget game state ---
-  const shopping = getShopping(pair.mother);
+  // Multiple store scenarios (grocery / stationery / toy shop) live under
+  // `scenarios`; one is picked at random per playthrough, same rotation
+  // pattern as the lemonade stand and weekly-budget tabs.
+  const shoppingPool = getShopping(pair.mother).scenarios;
+  const [shopping, setShopping] = useState(
+    () => shoppingPool[Math.floor(Math.random() * shoppingPool.length)]
+  );
   const [cart, setCart] = useState([]);
   const [shopFeedback, setShopFeedback] = useState(null);
 
@@ -230,6 +243,7 @@ export default function Financial() {
   }
 
   function handleResetShopping() {
+    setShopping(shoppingPool[Math.floor(Math.random() * shoppingPool.length)]);
     setCart([]);
     setShopFeedback(null);
   }
@@ -306,9 +320,14 @@ export default function Financial() {
     setWnFirstTry(true);
   }
 
-  // Save vs Spend: one consequence-based scenario. No "wrong" choice - each
-  // pick shows a concrete tradeoff explanation instead of a right/wrong mark.
-  const saveSpend = activities.savingsDecision;
+  // Save vs Spend: one consequence-based scenario, picked at random from a
+  // pool for replay variety (same rotation pattern as lemonade/shopping).
+  // No "wrong" choice - each pick shows a concrete tradeoff explanation
+  // instead of a right/wrong mark.
+  const savingsDecisionsPool = activities.savingsDecisions;
+  const [saveSpend, setSaveSpend] = useState(
+    () => savingsDecisionsPool[Math.floor(Math.random() * savingsDecisionsPool.length)]
+  );
   const [ssChoice, setSsChoice] = useState(null);
 
   function handleSaveSpendChoose(item) {
@@ -319,6 +338,7 @@ export default function Financial() {
   }
 
   function handleSaveSpendRestart() {
+    setSaveSpend(savingsDecisionsPool[Math.floor(Math.random() * savingsDecisionsPool.length)]);
     setSsChoice(null);
   }
 
@@ -742,7 +762,9 @@ export default function Financial() {
             />
           ) : (
             <div className="game-card">
-              <p className="page-intro">{t("modules.financialLemonadeIntro")}</p>
+              <p className="page-intro">
+                {t("modules.financialLemonadeIntro")} {lemonade.emoji} {lemonade.productName}
+              </p>
               {!lemonDone ? (
                 <>
                   <div className="game-progress">
@@ -831,7 +853,9 @@ export default function Financial() {
         <>
           <h2 className="section-title">{t("modules.financialShoppingTitle")} 🛒</h2>
           <div className="game-card">
-            <p className="page-intro">{t("modules.financialShoppingIntro")}</p>
+            <p className="page-intro">
+              {t("modules.financialShoppingIntro")} {shopping.emoji} {shopping.storeName}
+            </p>
             <div className="game-progress">
               {t("modules.financialShoppingBudget")}: {formatValue(shopping.budget)} · {t("modules.financialShoppingRemaining")}:{" "}
               {formatValue(Math.max(0, remainingBudget))}

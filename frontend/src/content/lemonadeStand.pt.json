@@ -1,14 +1,130 @@
 {
-  "ingredients": [
-    { "id": "lemons", "emoji": "🍋", "name": "Limões", "cost": 20 },
-    { "id": "sugar", "emoji": "🍬", "name": "Açúcar", "cost": 15 },
-    { "id": "water", "emoji": "💧", "name": "Água", "cost": 5 },
-    { "id": "cups", "emoji": "🥤", "name": "Copos", "cost": 10 }
-  ],
-  "priceOptions": [50, 75, 100, 150],
-  "tips": [
-    "Se o preço for muito baixo, vendes muitos copos mas ganhas pouco por copo.",
-    "Se o preço for muito alto, ganhas mais por copo, mas algumas pessoas não compram.",
-    "O lucro é o dinheiro que sobra depois de pagares os ingredientes."
+  "scenarios": [
+    {
+      "id": "lemonade",
+      "emoji": "🍋",
+      "productName": "Banca de Limonada",
+      "ingredients": [
+        {
+          "id": "lemons",
+          "emoji": "🍋",
+          "name": "Limões",
+          "cost": 20
+        },
+        {
+          "id": "sugar",
+          "emoji": "🍬",
+          "name": "Açúcar",
+          "cost": 15
+        },
+        {
+          "id": "water",
+          "emoji": "💧",
+          "name": "Água",
+          "cost": 5
+        },
+        {
+          "id": "cups",
+          "emoji": "🥤",
+          "name": "Copos",
+          "cost": 10
+        }
+      ],
+      "priceOptions": [
+        50,
+        75,
+        100,
+        150
+      ],
+      "tips": [
+        "Se o preço for muito baixo, vendes muitos copos mas ganhas pouco por copo.",
+        "Se o preço for muito alto, ganhas mais por copo, mas algumas pessoas não compram.",
+        "O lucro é o dinheiro que sobra depois de pagares os ingredientes."
+      ]
+    },
+    {
+      "id": "orangejuice",
+      "emoji": "🍊",
+      "productName": "Banca de Sumo de Laranja",
+      "ingredients": [
+        {
+          "id": "oranges",
+          "emoji": "🍊",
+          "name": "Laranjas",
+          "cost": 25
+        },
+        {
+          "id": "sugar",
+          "emoji": "🍬",
+          "name": "Açúcar",
+          "cost": 15
+        },
+        {
+          "id": "water",
+          "emoji": "💧",
+          "name": "Água",
+          "cost": 5
+        },
+        {
+          "id": "cups",
+          "emoji": "🥤",
+          "name": "Copos",
+          "cost": 10
+        }
+      ],
+      "priceOptions": [
+        60,
+        90,
+        120,
+        160
+      ],
+      "tips": [
+        "No verão, mais pessoas têm sede e querem uma bebida fresquinha!",
+        "Laranjas custam um pouco mais do que limões, por isso o teu custo é maior.",
+        "Um dia de sol quente pode ajudar-te a vender mais copos."
+      ]
+    },
+    {
+      "id": "hotchocolate",
+      "emoji": "🍫",
+      "productName": "Banca de Chocolate Quente",
+      "ingredients": [
+        {
+          "id": "cocoa",
+          "emoji": "🍫",
+          "name": "Cacau",
+          "cost": 30
+        },
+        {
+          "id": "milk",
+          "emoji": "🥛",
+          "name": "Leite",
+          "cost": 20
+        },
+        {
+          "id": "sugar",
+          "emoji": "🍬",
+          "name": "Açúcar",
+          "cost": 15
+        },
+        {
+          "id": "cups",
+          "emoji": "🥤",
+          "name": "Copos",
+          "cost": 10
+        }
+      ],
+      "priceOptions": [
+        80,
+        100,
+        130,
+        180
+      ],
+      "tips": [
+        "No inverno, as pessoas gostam de bebidas quentes para se aquecerem.",
+        "O cacau e o leite custam mais, por isso precisas de vender a um bom preço.",
+        "Em dias frios, podes vender mais chocolates quentes do que imaginas!"
+      ]
+    }
   ]
 }

@@ -1,14 +1,130 @@
 {
-  "ingredients": [
-    { "id": "lemons", "emoji": "🍋", "name": "Zitronen", "cost": 20 },
-    { "id": "sugar", "emoji": "🍬", "name": "Zucker", "cost": 15 },
-    { "id": "water", "emoji": "💧", "name": "Wasser", "cost": 5 },
-    { "id": "cups", "emoji": "🥤", "name": "Becher", "cost": 10 }
-  ],
-  "priceOptions": [50, 75, 100, 150],
-  "tips": [
-    "Wenn der Preis zu niedrig ist, verkaufst du viele Becher, verdienst aber wenig pro Becher.",
-    "Wenn der Preis zu hoch ist, verdienst du mehr pro Becher, aber manche kaufen nicht.",
-    "Der Gewinn ist das Geld, das übrig bleibt, nachdem du die Zutaten bezahlt hast."
+  "scenarios": [
+    {
+      "id": "lemonade",
+      "emoji": "🍋",
+      "productName": "Limonadenstand",
+      "ingredients": [
+        {
+          "id": "lemons",
+          "emoji": "🍋",
+          "name": "Zitronen",
+          "cost": 20
+        },
+        {
+          "id": "sugar",
+          "emoji": "🍬",
+          "name": "Zucker",
+          "cost": 15
+        },
+        {
+          "id": "water",
+          "emoji": "💧",
+          "name": "Wasser",
+          "cost": 5
+        },
+        {
+          "id": "cups",
+          "emoji": "🥤",
+          "name": "Becher",
+          "cost": 10
+        }
+      ],
+      "priceOptions": [
+        50,
+        75,
+        100,
+        150
+      ],
+      "tips": [
+        "Wenn der Preis zu niedrig ist, verkaufst du viele Becher, verdienst aber wenig pro Becher.",
+        "Wenn der Preis zu hoch ist, verdienst du mehr pro Becher, aber manche kaufen nicht.",
+        "Der Gewinn ist das Geld, das übrig bleibt, nachdem du die Zutaten bezahlt hast."
+      ]
+    },
+    {
+      "id": "orangejuice",
+      "emoji": "🍊",
+      "productName": "Orangensaftstand",
+      "ingredients": [
+        {
+          "id": "oranges",
+          "emoji": "🍊",
+          "name": "Orangen",
+          "cost": 25
+        },
+        {
+          "id": "sugar",
+          "emoji": "🍬",
+          "name": "Zucker",
+          "cost": 15
+        },
+        {
+          "id": "water",
+          "emoji": "💧",
+          "name": "Wasser",
+          "cost": 5
+        },
+        {
+          "id": "cups",
+          "emoji": "🥤",
+          "name": "Becher",
+          "cost": 10
+        }
+      ],
+      "priceOptions": [
+        60,
+        90,
+        120,
+        160
+      ],
+      "tips": [
+        "Im Sommer haben mehr Leute Durst und wollen ein kühles Getränk!",
+        "Orangen kosten etwas mehr als Zitronen, also sind deine Kosten höher.",
+        "Ein heißer, sonniger Tag kann dir helfen, mehr Becher zu verkaufen."
+      ]
+    },
+    {
+      "id": "hotchocolate",
+      "emoji": "🍫",
+      "productName": "Heiße-Schokolade-Stand",
+      "ingredients": [
+        {
+          "id": "cocoa",
+          "emoji": "🍫",
+          "name": "Kakao",
+          "cost": 30
+        },
+        {
+          "id": "milk",
+          "emoji": "🥛",
+          "name": "Milch",
+          "cost": 20
+        },
+        {
+          "id": "sugar",
+          "emoji": "🍬",
+          "name": "Zucker",
+          "cost": 15
+        },
+        {
+          "id": "cups",
+          "emoji": "🥤",
+          "name": "Becher",
+          "cost": 10
+        }
+      ],
+      "priceOptions": [
+        80,
+        100,
+        130,
+        180
+      ],
+      "tips": [
+        "Im Winter mögen die Leute warme Getränke, um sich aufzuwärmen.",
+        "Kakao und Milch kosten mehr, also musst du zu einem guten Preis verkaufen.",
+        "An kalten Tagen verkaufst du vielleicht mehr heiße Schokolade, als du denkst!"
+      ]
+    }
   ]
 }
