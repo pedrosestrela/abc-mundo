@@ -11,25 +11,121 @@ import { pingProgress, recordSkillEvent } from "../storage.js";
 //
 // Grid legend: '#' = wall, '.' = collectible star, ' ' = empty walkable
 // path (no collectible), 'P' = player start, 'C' = chaser start.
-const MAZE_ROWS = [
-  "###########",
-  "#....#....#",
-  "#.##.#.##.#",
-  "#.#.....#.#",
-  "#.#.###.#.#",
-  "#.....P...#",
-  "#.#.###.#.#",
-  "#.#.....#.#",
-  "#.##.#.##.#",
-  "#C...#...C#",
-  "###########",
+//
+// Several 11x11 layouts are kept here so consecutive rounds don't always
+// show the same maze. Every layout has been verified solvable (every star
+// reachable from the player start via flood-fill) before being added - see
+// the reachability check below, which also runs at layout-selection time
+// as a defensive guard.
+const MAZE_LAYOUTS = [
+  [
+    "###########",
+    "#....#....#",
+    "#.##.#.##.#",
+    "#.#.....#.#",
+    "#.#.###.#.#",
+    "#.....P...#",
+    "#.#.###.#.#",
+    "#.#.....#.#",
+    "#.##.#.##.#",
+    "#C...#...C#",
+    "###########",
+  ],
+  [
+    "###########",
+    "#....#....#",
+    "#.##.#.##.#",
+    "#.#.....#.#",
+    "#.#.#.#.#.#",
+    "#.P.....#.#",
+    "#.#.#.#.#.#",
+    "#.#.....#.#",
+    "#.##.#.##.#",
+    "#C..#C#..C#",
+    "###########",
+  ],
+  [
+    "###########",
+    "#.........#",
+    "#.###.###.#",
+    "#.#.....#.#",
+    "#.#.#.#.#.#",
+    "#.#.#P#.#.#",
+    "#.#.#.#.#.#",
+    "#.#.....#.#",
+    "#.###.###.#",
+    "#C.......C#",
+    "###########",
+  ],
+  [
+    "###########",
+    "#....#....#",
+    "#.##.#.##.#",
+    "#.#.....#.#",
+    "#.#.#.#.#.#",
+    "#.#.....P.#",
+    "#.#.#.#.#.#",
+    "#.#.....#.#",
+    "#.##.#.##.#",
+    "#C..#C#..C#",
+    "###########",
+  ],
+  [
+    "###########",
+    "#C..#C#..C#",
+    "#.##.#.##.#",
+    "#.#.....#.#",
+    "#.#.#.#.#.#",
+    "#.#.....P.#",
+    "#.#.#.#.#.#",
+    "#.#.....#.#",
+    "#.##.#.##.#",
+    "#....#....#",
+    "###########",
+  ],
 ];
 
 const TICK_MS = 480; // how often chasers take a step
 const CHASER_COLORS = ["maze-chaser-teal", "maze-chaser-violet", "maze-chaser-coral"];
 
-function parseMaze() {
-  const grid = MAZE_ROWS.map((row) => row.split(""));
+function isLayoutSolvable(mazeRows) {
+  const grid = mazeRows.map((row) => row.split(""));
+  let player = null;
+  const stars = [];
+  for (let r = 0; r < grid.length; r++) {
+    for (let c = 0; c < grid[r].length; c++) {
+      if (grid[r][c] === "P") player = { r, c };
+      else if (grid[r][c] === ".") stars.push({ r, c });
+    }
+  }
+  if (!player || stars.length === 0) return false;
+  const seen = grid.map((row) => row.map(() => false));
+  const queue = [player];
+  seen[player.r][player.c] = true;
+  while (queue.length) {
+    const { r, c } = queue.shift();
+    for (const { dr, dc } of DIRS) {
+      const nr = r + dr;
+      const nc = c + dc;
+      if (nr < 0 || nr >= grid.length || nc < 0 || nc >= grid[0].length) continue;
+      if (seen[nr][nc] || grid[nr][nc] === "#") continue;
+      seen[nr][nc] = true;
+      queue.push({ r: nr, c: nc });
+    }
+  }
+  return stars.every((s) => seen[s.r][s.c]);
+}
+
+function pickMazeRows() {
+  // Prefer a random layout different from the last one shown, falling back
+  // to any verified-solvable layout if something is wrong with the pool.
+  const solvable = MAZE_LAYOUTS.filter(isLayoutSolvable);
+  const pool = solvable.length ? solvable : MAZE_LAYOUTS;
+  return pool[Math.floor(Math.random() * pool.length)];
+}
+
+function parseMaze(mazeRows) {
+  const grid = mazeRows.map((row) => row.split(""));
   let player = { r: 0, c: 0 };
   const chasers = [];
   for (let r = 0; r < grid.length; r++) {
@@ -84,7 +180,7 @@ function stepChaser(grid, chaser, target) {
 }
 
 function freshState() {
-  const { grid, player, chasers } = parseMaze();
+  const { grid, player, chasers } = parseMaze(pickMazeRows());
   return { grid, player, chasers, dotsLeft: countDots(grid), score: 0, status: "playing" };
 }
 

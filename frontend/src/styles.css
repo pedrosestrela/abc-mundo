@@ -3452,6 +3452,25 @@ body {
   font-weight: bold;
   font-size: 1.1rem;
 }
+.memory-theme-picker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+}
+.memory-theme-btn {
+  border: 2px solid #eee6ff;
+  background: #fff;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.memory-theme-btn.active {
+  border-color: var(--blue, #6a5acd);
+  background: #ece7ff;
+  font-weight: bold;
+}
 .memory-grid {
   display: grid;
   grid-template-columns: repeat(4, 64px);

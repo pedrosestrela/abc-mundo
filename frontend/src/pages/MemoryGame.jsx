@@ -5,8 +5,18 @@ import { pingProgress, recordSkillEvent } from "../storage.js";
 // Classic concentration / card-matching mini-game. Bounded at 6 pairs (12
 // cards) per round so it has a natural stopping point - no escalating
 // difficulty or infinite replay loop.
-const FACE_POOL = ["🍎", "⭐", "🐣", "🎈", "🍀", "🐟", "🌸", "🚗", "🐝", "🍪"];
+//
+// Several themed icon sets are offered so replays don't always show the
+// same 6 icons. Each set has exactly PAIR_COUNT visually distinct emoji.
 const PAIR_COUNT = 6;
+
+const THEMES = [
+  { id: "classic", labelKey: "modules.memoryThemeClassic", icons: ["🍎", "⭐", "🐣", "🎈", "🍀", "🐟"] },
+  { id: "animals", labelKey: "modules.memoryThemeAnimals", icons: ["🐶", "🐱", "🦁", "🐘", "🦊", "🐻"] },
+  { id: "food", labelKey: "modules.memoryThemeFood", icons: ["🍎", "🍌", "🍕", "🍰", "🍓", "🥕"] },
+  { id: "space", labelKey: "modules.memoryThemeSpace", icons: ["🚀", "🌙", "⭐", "🪐", "☄️", "🛸"] },
+  { id: "nature", labelKey: "modules.memoryThemeNature", icons: ["🌳", "🌸", "🌈", "☀️", "🍄", "🌊"] },
+];
 
 function shuffle(arr) {
   const copy = [...arr];
@@ -17,8 +27,9 @@ function shuffle(arr) {
   return copy;
 }
 
-function buildDeck() {
-  const faces = shuffle(FACE_POOL).slice(0, PAIR_COUNT);
+function buildDeck(themeId) {
+  const theme = THEMES.find((th) => th.id === themeId) || THEMES[0];
+  const faces = shuffle(theme.icons).slice(0, PAIR_COUNT);
   const cards = shuffle([...faces, ...faces]).map((face, idx) => ({
     id: idx,
     face,
@@ -29,7 +40,8 @@ function buildDeck() {
 
 export default function MemoryGame({ profileName }) {
   const { t } = useTranslation();
-  const [cards, setCards] = useState(buildDeck);
+  const [themeId, setThemeId] = useState(THEMES[0].id);
+  const [cards, setCards] = useState(() => buildDeck(THEMES[0].id));
   const [flipped, setFlipped] = useState([]);
   const [moves, setMoves] = useState(0);
   const [busy, setBusy] = useState(false);
@@ -68,12 +80,19 @@ export default function MemoryGame({ profileName }) {
     }
   }
 
-  function restart() {
-    setCards(buildDeck());
+  function restart(nextThemeId) {
+    const useThemeId = nextThemeId || themeId;
+    setThemeId(useThemeId);
+    setCards(buildDeck(useThemeId));
     setFlipped([]);
     setMoves(0);
     setBusy(false);
     setLoggedWin(false);
+  }
+
+  function selectTheme(id) {
+    if (id === themeId) return;
+    restart(id);
   }
 
   return (
@@ -82,6 +101,18 @@ export default function MemoryGame({ profileName }) {
         <span>
           🃏 {t("modules.memoryMovesLabel")}: {moves}
         </span>
+      </div>
+      <div className="memory-theme-picker" role="group" aria-label={t("modules.memoryThemeLabel")}>
+        {THEMES.map((theme) => (
+          <button
+            type="button"
+            key={theme.id}
+            className={"memory-theme-btn" + (theme.id === themeId ? " active" : "")}
+            onClick={() => selectTheme(theme.id)}
+          >
+            <span aria-hidden="true">{theme.icons[0]}</span> {t(theme.labelKey)}
+          </button>
+        ))}
       </div>
       <div className="memory-grid">
         {cards.map((card) => {
@@ -105,7 +136,7 @@ export default function MemoryGame({ profileName }) {
         <div className="memory-result">
           <div className="game-emoji">🎉</div>
           <p className="game-result">{t("modules.memoryWin")}</p>
-          <button type="button" className="big-btn" onClick={restart}>
+          <button type="button" className="big-btn" onClick={() => restart()}>
             {t("modules.gamePlayAgain")} 🔁
           </button>
         </div>
