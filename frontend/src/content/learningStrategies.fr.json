@@ -120,6 +120,102 @@
         "🚁"
       ],
       "technique": "Imaginer une image amusante avec les éléments ensemble aide à les fixer dans la mémoire."
+    },
+    {
+      "id": "m11",
+      "emoji": "🎈",
+      "items": [
+        "🍌",
+        "🥐",
+        "🧀",
+        "🍒",
+        "🥝"
+      ],
+      "technique": "Dire les éléments à voix haute nous aide à nous en souvenir plus longtemps !"
+    },
+    {
+      "id": "m12",
+      "emoji": "🎈",
+      "items": [
+        "🔴",
+        "🔵",
+        "🟡",
+        "🟢"
+      ],
+      "technique": "Imaginer une image amusante avec les éléments ensemble aide à les fixer dans la mémoire."
+    },
+    {
+      "id": "m13",
+      "emoji": "🎈",
+      "items": [
+        "🔑",
+        "🧦",
+        "🕶️",
+        "🧢",
+        "🖊️",
+        "🎒"
+      ],
+      "technique": "Regrouper les éléments en petites paires les rend plus faciles à mémoriser."
+    },
+    {
+      "id": "m14",
+      "emoji": "🎈",
+      "items": [
+        "🦁",
+        "🐘",
+        "🦒",
+        "🐍",
+        "🐒"
+      ],
+      "technique": "Inventer une petite histoire qui relie les éléments nous aide à nous rappeler leur ordre."
+    },
+    {
+      "id": "m15",
+      "emoji": "🎈",
+      "items": [
+        "🍕",
+        "🌮",
+        "🍔",
+        "🍟"
+      ],
+      "technique": "Dire les éléments à voix haute nous aide à nous en souvenir plus longtemps !"
+    },
+    {
+      "id": "m16",
+      "emoji": "🎈",
+      "items": [
+        "🟣",
+        "⚪",
+        "⚫",
+        "🟤",
+        "🔺"
+      ],
+      "technique": "Imaginer une image amusante avec les éléments ensemble aide à les fixer dans la mémoire."
+    },
+    {
+      "id": "m17",
+      "emoji": "🎈",
+      "items": [
+        "📱",
+        "💻",
+        "🖨️",
+        "📷",
+        "🔋",
+        "🔌"
+      ],
+      "technique": "Regrouper les éléments en petites paires les rend plus faciles à mémoriser."
+    },
+    {
+      "id": "m18",
+      "emoji": "🎈",
+      "items": [
+        "🐴",
+        "🐮",
+        "🐷",
+        "🐔",
+        "🐑"
+      ],
+      "technique": "Inventer une petite histoire qui relie les éléments nous aide à nous rappeler leur ordre."
     }
   ],
   "attention": [
@@ -192,6 +288,62 @@
       "question": "Trouve le poisson-globe parmi les petits poissons.",
       "targetEmoji": "🐡",
       "hint": "Il est plus rond que les autres."
+    },
+    {
+      "id": "a11",
+      "scene": "🍇🍇🍇🍒🍇🍇🍇🍇",
+      "question": "Trouve la cerise parmi les raisins.",
+      "targetEmoji": "🍒",
+      "hint": "Elle a une tige différente."
+    },
+    {
+      "id": "a12",
+      "scene": "🎈🎈🎈🎀🎈🎈🎈🎈",
+      "question": "Trouve le ruban parmi les ballons.",
+      "targetEmoji": "🎀",
+      "hint": "Il n'est pas rond comme les autres."
+    },
+    {
+      "id": "a13",
+      "scene": "🐱🐱🐱🐯🐱🐱🐱🐱",
+      "question": "Trouve le tigre parmi les chats.",
+      "targetEmoji": "🐯",
+      "hint": "Il a des rayures."
+    },
+    {
+      "id": "a14",
+      "scene": "🍊🍊🍊🍑🍊🍊🍊🍊",
+      "question": "Trouve la pêche parmi les oranges.",
+      "targetEmoji": "🍑",
+      "hint": "La forme est un peu différente."
+    },
+    {
+      "id": "a15",
+      "scene": "🚌🚌🚌🚐🚌🚌🚌🚌",
+      "question": "Trouve le minibus parmi les autobus.",
+      "targetEmoji": "🚐",
+      "hint": "Il est plus petit que les autres."
+    },
+    {
+      "id": "a16",
+      "scene": "🦆🦆🦆🦢🦆🦆🦆🦆",
+      "question": "Trouve le cygne parmi les canards.",
+      "targetEmoji": "🦢",
+      "hint": "Il a un cou plus long."
+    },
+    {
+      "id": "a17",
+      "scene": "🌰🌰🌰🥜🌰🌰🌰🌰",
+      "question": "Trouve la cacahuète parmi les châtaignes.",
+      "targetEmoji": "🥜",
+      "hint": "Elle est plus petite et allongée."
+    },
+    {
+      "id": "a18",
+      "scene": "🎲🎲🎲🎯🎲🎲🎲🎲",
+      "question": "Trouve la cible parmi les dés.",
+      "targetEmoji": "🎯",
+      "hint": "Elle a des cercles colorés."
     }
   ],
   "errors": [
@@ -294,6 +446,86 @@
         "Que pourrait-il faire avant de choisir le chemin la prochaine fois ?",
         "Un chemin qui ne marche pas peut-il quand même nous apprendre quelque chose ?"
       ]
+    },
+    {
+      "id": "e11",
+      "character": "👧",
+      "scenario": "Bia a essayé de lire le mot « igreja » (église) à voix haute, mais elle a confondu le son du « g » et l'a mal dit.",
+      "reflectionPrompts": [
+        "Quel son penses-tu que Bia a confondu ?",
+        "Comment peut-elle réentraîner ce son ?",
+        "Lire à voix haute nous aide-t-il à remarquer nos propres erreurs ?"
+      ]
+    },
+    {
+      "id": "e12",
+      "character": "🧒",
+      "scenario": "Nuno a essayé de calculer 12 - 5 et a dit que ça faisait 8, mais la bonne réponse était 7.",
+      "reflectionPrompts": [
+        "Où penses-tu que Nuno s'est trompé en comptant ?",
+        "Quelle stratégie pourrait-il utiliser pour vérifier le calcul ?",
+        "Vérifier ses calculs à nouveau peut-il nous aider à apprendre ?"
+      ]
+    },
+    {
+      "id": "e13",
+      "character": "👦",
+      "scenario": "Gustavo a construit un garage en Lego, mais le toit s'est effondré car les murs étaient trop fins.",
+      "reflectionPrompts": [
+        "Pourquoi penses-tu que le toit est tombé cette fois ?",
+        "Que pourrait changer Gustavo au niveau des murs ?",
+        "Tester et reconstruire est-il une bonne façon d'apprendre à construire ?"
+      ]
+    },
+    {
+      "id": "e14",
+      "character": "👧",
+      "scenario": "Carolina a dit sans le vouloir que le dessin de son amie était laid, et son amie a été triste.",
+      "reflectionPrompts": [
+        "Comment penses-tu que l'amie de Carolina s'est sentie ?",
+        "Que pourrait dire Carolina pour montrer qu'elle est désolée ?",
+        "Qu'apprenons-nous quand nos mots blessent quelqu'un sans le vouloir ?"
+      ]
+    },
+    {
+      "id": "e15",
+      "character": "🧒",
+      "scenario": "Vasco a avancé son pion de deux cases au lieu de trois et a dû reculer.",
+      "reflectionPrompts": [
+        "Qu'est-ce que Vasco a oublié de faire avant de jouer, selon toi ?",
+        "Comment peut-il faire plus attention à son prochain coup ?",
+        "Bien lire les règles avant de commencer peut-il aider ?"
+      ]
+    },
+    {
+      "id": "e16",
+      "character": "👦",
+      "scenario": "Bruno avait prédit que la plante pousserait plus vite à l'ombre, mais elle a en fait plus poussé au soleil.",
+      "reflectionPrompts": [
+        "Qu'a appris Bruno grâce à cette expérience ?",
+        "Les prédictions fausses en science nous apprennent-elles aussi quelque chose ?",
+        "Comment pourrait-il retester pour être sûr ?"
+      ]
+    },
+    {
+      "id": "e17",
+      "character": "👧",
+      "scenario": "Leonor a joué la mauvaise note au milieu d'un morceau de piano et a dû s'arrêter.",
+      "reflectionPrompts": [
+        "Qu'est-ce qui aiderait Leonor à jouer la bonne note, selon toi ?",
+        "Jouer plus lentement peut-il aider à apprendre un morceau ?",
+        "Les musiciens jouent-ils aussi de fausses notes en s'entraînant ?"
+      ]
+    },
+    {
+      "id": "e18",
+      "character": "🧒",
+      "scenario": "Simao a tiré au but au football, mais le ballon est passé au-dessus de la barre transversale.",
+      "reflectionPrompts": [
+        "Que pourrait ajuster Simao pour son prochain tir ?",
+        "Rater un tir signifie-t-il qu'il joue mal ?",
+        "Comment te sentirais-tu en réessayant tout de suite après ?"
+      ]
     }
   ],
   "strategy": [
@@ -376,6 +608,70 @@
       "hint1": "Et si tu divisais le poème en petites parties et en apprenais une à la fois ?",
       "hint2": "Et si tu disais le poème à voix haute plusieurs fois, au lieu de le lire en silence ?",
       "answer": "Tu pourrais l'apprendre par parties, le répéter à voix haute, ou demander à quelqu'un de t'écouter le réciter."
+    },
+    {
+      "id": "s11",
+      "prompt": "Comment peux-tu faire passer une grande boîte par une porte étroite ?",
+      "firstTry": "Tu as essayé de pousser la boîte tout droit, mais elle ne passe pas par la porte.",
+      "hint1": "Et si tu tournais la boîte sur le côté pour qu'elle soit plus étroite ?",
+      "hint2": "Et si tu enlevais d'abord quelques objets de la boîte ?",
+      "answer": "Tu pourrais tourner la boîte sur le côté, la vider un peu, ou demander de l'aide pour l'incliner avec précaution."
+    },
+    {
+      "id": "s12",
+      "prompt": "Comment peux-tu découvrir à quel nombre pense ton ami, entre 1 et 20 ?",
+      "firstTry": "Tu as essayé de deviner des nombres au hasard, mais tu n'as pas encore trouvé.",
+      "hint1": "Et si tu demandais si le nombre est plus grand ou plus petit que 10 ?",
+      "hint2": "Et si tu continuais à couper l'intervalle en deux à chaque question ?",
+      "answer": "Tu pourrais demander « plus grand ou plus petit », couper l'intervalle en deux à chaque fois, ou demander un indice supplémentaire."
+    },
+    {
+      "id": "s13",
+      "prompt": "Comment peux-tu faire des biscuits en suivant les bonnes étapes ?",
+      "firstTry": "Tu as essayé de tout mélanger en même temps, mais la pâte est devenue bizarre.",
+      "hint1": "Et si tu regardais la recette et suivais une étape à la fois ?",
+      "hint2": "Et si tu séparais d'abord les ingrédients secs des liquides ?",
+      "answer": "Tu pourrais suivre la recette étape par étape, séparer les ingrédients avant, ou demander à un adulte de vérifier chaque étape."
+    },
+    {
+      "id": "s14",
+      "prompt": "Comment peux-tu trouver le chemin le plus court dans un labyrinthe dessiné sur papier ?",
+      "firstTry": "Tu as suivi le premier chemin que tu as vu, mais il s'est terminé en impasse.",
+      "hint1": "Et si tu commençais par la fin du labyrinthe et remontais à rebours ?",
+      "hint2": "Et si tu utilisais ton doigt pour marquer les chemins déjà essayés ?",
+      "answer": "Tu pourrais commencer par la fin et remonter à rebours, marquer les chemins déjà essayés, ou écarter calmement les impasses en premier."
+    },
+    {
+      "id": "s15",
+      "prompt": "Comment peux-tu découvrir lequel de ces objets n'appartient pas au groupe ?",
+      "firstTry": "Tu as regardé les couleurs, mais tous semblaient correspondre d'une manière ou d'une autre.",
+      "hint1": "Et si tu pensais à la taille de chaque objet plutôt qu'à la couleur ?",
+      "hint2": "Et si tu pensais à l'utilité de chaque objet ?",
+      "answer": "Tu pourrais comparer la taille, la forme ou l'usage de chaque objet pour trouver celui qui n'appartient pas au groupe."
+    },
+    {
+      "id": "s16",
+      "prompt": "Comment peux-tu t'habiller dans le bon ordre un jour très froid ?",
+      "firstTry": "Tu as essayé de mettre ton manteau en premier, mais tu n'arrivais plus à mettre le pull en dessous.",
+      "hint1": "Et si tu pensais d'abord à ce qui est le plus proche de ton corps ?",
+      "hint2": "Et si tu imaginais les couches comme un oignon, de l'intérieur vers l'extérieur ?",
+      "answer": "Tu pourrais mettre d'abord ce qui touche ta peau, puis les couches du milieu, et le manteau en dernier."
+    },
+    {
+      "id": "s17",
+      "prompt": "Comment peux-tu disposer les meubles de ta salle de jeux sans que ce soit trop serré ?",
+      "firstTry": "Tu as placé chaque chose où elle rentrait, mais ensuite il n'y avait plus de place pour marcher.",
+      "hint1": "Et si tu dessinais d'abord un petit plan de la pièce ?",
+      "hint2": "Et si tu plaçais d'abord les grands meubles puis les petits autour ?",
+      "answer": "Tu pourrais dessiner un plan avant, placer d'abord les grands meubles, ou mesurer l'espace libre avant de décider."
+    },
+    {
+      "id": "s18",
+      "prompt": "Comment peux-tu découvrir lequel de deux jouets est le plus lourd sans balance ?",
+      "firstTry": "Tu as essayé de deviner juste en regardant, mais tu n'étais pas sûr.",
+      "hint1": "Et si tu en prenais un dans chaque main pour sentir le poids ?",
+      "hint2": "Et si tu utilisais une règle en équilibre sur un crayon comme balance improvisée ?",
+      "answer": "Tu pourrais comparer le poids dans tes mains, utiliser une balance improvisée, ou demander à un adulte une balance de cuisine."
     }
   ],
   "teachback": [
@@ -456,6 +752,106 @@
         "Parce que les questions nous aident à réfléchir à ce qui s'est passé et à trouver la solution nous-mêmes.",
         "Parce que les questions font disparaître l'erreur.",
         "Parce que c'est plus rapide qu'expliquer."
+      ],
+      "bestIndex": 0
+    },
+    {
+      "id": "t9",
+      "concept": "Pourquoi épeler les lettres d'un mot nous aide-t-il à le lire ?",
+      "options": [
+        "Parce qu'assembler chaque son nous aide à trouver le mot complet, étape par étape.",
+        "Parce que les lettres aiment être dites à voix haute.",
+        "Parce qu'épeler rend le mot plus court."
+      ],
+      "bestIndex": 0
+    },
+    {
+      "id": "t10",
+      "concept": "Pourquoi est-ce une bonne idée de revérifier notre calcul de maths ?",
+      "options": [
+        "Parce que vérifier fatigue le cerveau, donc on apprend plus.",
+        "Parce que revérifier nous aide à trouver des erreurs qu'on n'avait pas vues la première fois.",
+        "Parce que le deuxième calcul est toujours le bon."
+      ],
+      "bestIndex": 1
+    },
+    {
+      "id": "t11",
+      "concept": "Pourquoi faire une prédiction avant une expérience scientifique aide-t-il à apprendre ?",
+      "options": [
+        "Parce que prédire rend l'expérience plus rapide.",
+        "Parce que comparer notre prédiction avec ce qui s'est réellement passé nous aide à mieux comprendre le résultat.",
+        "Parce que les prédictions sont toujours justes."
+      ],
+      "bestIndex": 1
+    },
+    {
+      "id": "t12",
+      "concept": "Pourquoi s'entraîner à écrire un mot plusieurs fois nous aide-t-il à bien l'écrire ?",
+      "options": [
+        "Parce qu'écrire beaucoup fatigue la main, donc on arrête de se tromper.",
+        "Parce que s'entraîner aide notre cerveau à se souvenir de la bonne forme du mot.",
+        "Parce que la dernière fois qu'on l'écrit est toujours la meilleure, par chance."
+      ],
+      "bestIndex": 1
+    },
+    {
+      "id": "t13",
+      "concept": "Pourquoi dessiner un problème de maths peut-il nous aider à le résoudre ?",
+      "options": [
+        "Parce que dessiner est toujours plus amusant que compter.",
+        "Parce qu'un dessin montre le problème de façon visuelle, ce qui rend plus facile de voir quoi faire.",
+        "Parce que dessiner remplace le besoin de réfléchir."
+      ],
+      "bestIndex": 1
+    },
+    {
+      "id": "t14",
+      "concept": "Pourquoi demander « pourquoi » nous aide-t-il à mieux comprendre les sciences ?",
+      "options": [
+        "Parce que demander « pourquoi » nous pousse à chercher la raison derrière ce qu'on observe.",
+        "Parce que poser beaucoup de questions fatigue le professeur.",
+        "Parce que les questions font disparaître le sujet."
+      ],
+      "bestIndex": 0
+    },
+    {
+      "id": "t15",
+      "concept": "Pourquoi relire une phrase qu'on n'a pas bien comprise nous aide-t-il à comprendre l'histoire ?",
+      "options": [
+        "Parce que relire nous donne une autre chance de remarquer des mots ou des idées qu'on avait manqués.",
+        "Parce que relire rend l'histoire plus courte.",
+        "Parce que la deuxième lecture est toujours exactement pareille à la première."
+      ],
+      "bestIndex": 0
+    },
+    {
+      "id": "t16",
+      "concept": "Pourquoi utiliser ses doigts ou des objets pour compter aide-t-il quand on apprend les maths ?",
+      "options": [
+        "Parce que compter avec des objets rend les nombres plus concrets et plus faciles à imaginer.",
+        "Parce que les doigts connaissent toujours la bonne réponse.",
+        "Parce que compter avec des objets est plus lent, donc c'est mieux."
+      ],
+      "bestIndex": 0
+    },
+    {
+      "id": "t17",
+      "concept": "Pourquoi observer attentivement nous aide-t-il à faire des découvertes en sciences ?",
+      "options": [
+        "Parce que bien observer nous aide à remarquer des détails qui peuvent expliquer ce qui se passe.",
+        "Parce qu'observer remplace l'expérience.",
+        "Parce que celui qui observe le plus vite découvre toujours le plus."
+      ],
+      "bestIndex": 0
+    },
+    {
+      "id": "t18",
+      "concept": "Pourquoi raconter une histoire avec nos propres mots nous aide-t-il à mieux comprendre ce qu'on lit ?",
+      "options": [
+        "Parce que résumer avec nos propres mots nous montre si on a vraiment compris l'histoire.",
+        "Parce que raconter à nouveau rend l'histoire plus longue.",
+        "Parce que nos propres mots sont toujours meilleurs que ceux du livre."
       ],
       "bestIndex": 0
     }
