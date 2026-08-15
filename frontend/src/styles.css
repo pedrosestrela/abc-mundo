@@ -3502,6 +3502,126 @@ body {
   text-align: center;
 }
 
+/* --- Tic-tac-toe ("Jogo do Galo") --- */
+.ttt-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.ttt-board {
+  display: grid;
+  grid-template-columns: repeat(3, 76px);
+  grid-template-rows: repeat(3, 76px);
+  gap: 6px;
+  margin: 8px auto;
+}
+.ttt-cell {
+  width: 76px;
+  height: 76px;
+  border-radius: 14px;
+  border: 2px solid #eee6ff;
+  background: #fff;
+  font-size: 2.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue, #6a5acd);
+}
+.ttt-cell:disabled {
+  cursor: default;
+}
+.ttt-cell.ttt-filled {
+  background: #f7f5ff;
+}
+.ttt-cell.ttt-win {
+  background: #d7f5df;
+  border-color: #4caf50;
+}
+.ttt-result {
+  text-align: center;
+}
+
+/* --- Hangman ("Jogo da Forca") --- */
+.hangman-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.hangman-word-choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+.hangman-handoff,
+.hangman-picking,
+.hangman-result {
+  text-align: center;
+}
+.hangman-balloon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+.hangman-balloon-emoji {
+  font-size: 3.2rem;
+  transition: opacity 0.3s ease;
+}
+.hangman-balloon-count {
+  font-size: 0.85rem;
+  color: #888;
+  font-weight: bold;
+}
+.hangman-word {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  min-height: 2.2rem;
+}
+.hangman-letter-slot {
+  min-width: 1.4rem;
+  border-bottom: 3px solid var(--blue, #6a5acd);
+  text-align: center;
+}
+.hangman-alphabet {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+  max-width: 420px;
+}
+.hangman-key {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  border: 2px solid #eee6ff;
+  background: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.hangman-key:disabled {
+  cursor: default;
+}
+.hangman-key-correct {
+  background: #d7f5df;
+  border-color: #4caf50;
+  color: #2e7d32;
+}
+.hangman-key-wrong {
+  background: #ffe2e2;
+  border-color: #e57373;
+  color: #c62828;
+}
+
 @media (max-width: 480px) {
   .maze-cell {
     width: 22px;
@@ -3509,5 +3629,19 @@ body {
   }
   .memory-grid {
     grid-template-columns: repeat(3, 60px);
+  }
+  .ttt-board {
+    grid-template-columns: repeat(3, 64px);
+    grid-template-rows: repeat(3, 64px);
+  }
+  .ttt-cell {
+    width: 64px;
+    height: 64px;
+    font-size: 1.8rem;
+  }
+  .hangman-key {
+    width: 32px;
+    height: 32px;
+    font-size: 0.85rem;
   }
 }

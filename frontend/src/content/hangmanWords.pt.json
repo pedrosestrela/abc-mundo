@@ -1,0 +1,42 @@
+{
+  "animais": [
+    { "word": "GATO", "emoji": "🐱" },
+    { "word": "CÃO", "emoji": "🐶" },
+    { "word": "PATO", "emoji": "🦆" },
+    { "word": "PEIXE", "emoji": "🐟" },
+    { "word": "COELHO", "emoji": "🐰" },
+    { "word": "GALINHA", "emoji": "🐔" }
+  ],
+  "casa": [
+    { "word": "MESA", "emoji": "🪑" },
+    { "word": "CADEIRA", "emoji": "🪑" },
+    { "word": "PORTA", "emoji": "🚪" },
+    { "word": "JANELA", "emoji": "🪟" },
+    { "word": "CAMA", "emoji": "🛏️" },
+    { "word": "COPO", "emoji": "🥤" }
+  ],
+  "escola": [
+    { "word": "LIVRO", "emoji": "📖" },
+    { "word": "LÁPIS", "emoji": "✏️" },
+    { "word": "CANETA", "emoji": "🖊️" },
+    { "word": "MOCHILA", "emoji": "🎒" },
+    { "word": "RÉGUA", "emoji": "📏" },
+    { "word": "QUADRO", "emoji": "🖼️" }
+  ],
+  "natureza": [
+    { "word": "SOL", "emoji": "☀️" },
+    { "word": "LUA", "emoji": "🌙" },
+    { "word": "ÁRVORE", "emoji": "🌳" },
+    { "word": "FLOR", "emoji": "🌸" },
+    { "word": "RIO", "emoji": "🏞️" },
+    { "word": "MONTANHA", "emoji": "⛰️" }
+  ],
+  "comida": [
+    { "word": "PÃO", "emoji": "🍞" },
+    { "word": "LEITE", "emoji": "🥛" },
+    { "word": "MAÇÃ", "emoji": "🍎" },
+    { "word": "BANANA", "emoji": "🍌" },
+    { "word": "QUEIJO", "emoji": "🧀" },
+    { "word": "SOPA", "emoji": "🍲" }
+  ]
+}
