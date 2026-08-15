@@ -26,18 +26,46 @@ if (typeof window !== "undefined" && "speechSynthesis" in window) {
   window.speechSynthesis.onvoiceschanged = loadVoices;
 }
 
+// Name-pattern hints for the higher-quality voice tiers that browsers/OSes ship
+// alongside the always-available "compact"/robotic default per language:
+//  - iOS/macOS Safari: "Enhanced" or "Premium" suffix on system voices (e.g.
+//    "Joana (Enhanced)"), plus Siri voices ("Siri Voice 1/2/3") which are
+//    consistently higher quality than the classic compact voices.
+//  - Chrome/Android: "Natural" (e.g. "Google US English Natural"), and on
+//    Android the "Neural"/"Enhanced" network/on-device WaveNet-style voices.
+//  - Windows/Edge: "Online (Natural)" suffix on Microsoft neural voices, or
+//    plain "Neural" in the name (e.g. "Microsoft Ana Online (Natural)").
+// This is heuristic, not authoritative — the Web Speech API exposes no
+// standard "quality tier" field, only `name`, so we match known conventions.
+const HIGH_QUALITY_VOICE_PATTERN = /enhanced|premium|siri|natural|neural|online \(natural\)|wavenet/i;
+
+function rankVoice(voice) {
+  return HIGH_QUALITY_VOICE_PATTERN.test(voice.name) ? 1 : 0;
+}
+
+// Picks the best-quality voice among a candidate list: highest quality tier
+// first (per rankVoice), stable otherwise (keeps the browser's own ordering
+// among voices of equal tier).
+function bestOf(candidates) {
+  if (!candidates.length) return null;
+  return candidates.reduce((best, v) => (rankVoice(v) > rankVoice(best) ? v : best), candidates[0]);
+}
+
 // Prefers an exact BCP-47 match (e.g. "pt-PT"), then any voice starting with the
-// same base language, then falls back to the browser's default for that utterance.lang.
+// same base language, then falls back to null (caller leaves utterance.voice
+// unset so the browser uses its own default for that utterance.lang).
+// Within each match tier, prefers known higher-quality voice names (Enhanced/
+// Premium/Siri/Natural/Neural/WaveNet — see HIGH_QUALITY_VOICE_PATTERN above)
+// over the plain/compact voice that's always available.
 function pickVoice(bcp47) {
   const voices = loadVoices();
   if (!voices.length) return null;
   const base = bcp47.split("-")[0];
-  const exact = voices.find((v) => v.lang.toLowerCase() === bcp47.toLowerCase());
-  if (exact) return exact;
+  const exactMatches = voices.filter((v) => v.lang.toLowerCase() === bcp47.toLowerCase());
+  if (exactMatches.length) return bestOf(exactMatches);
   const sameBase = voices.filter((v) => v.lang.toLowerCase().startsWith(base + "-") || v.lang.toLowerCase() === base);
   if (!sameBase.length) return null;
-  const enhanced = sameBase.find((v) => /natural|enhanced|premium|neural/i.test(v.name));
-  return enhanced || sameBase[0];
+  return bestOf(sameBase);
 }
 
 export function isSpeechAvailable() {
