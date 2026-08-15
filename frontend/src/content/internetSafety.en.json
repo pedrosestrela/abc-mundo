@@ -118,5 +118,65 @@
       { "text": "I believe it and share it with my friends right away.", "correct": false, "feedback": "Nowadays there are computer-made videos that look real but are made up. Before believing it, ask an adult." },
       { "text": "I ask an adult if that video could really be true.", "correct": true, "feedback": "Well done! Not everything you see online is real — some videos are made by computers. Checking with an adult is what a good detective does." }
     ]
+  },
+  {
+    "id": "is13",
+    "theme": "friend-requests",
+    "emoji": "➕",
+    "scenario": "You get a friend request from someone you don't know at all.",
+    "options": [
+      { "text": "I accept, the more friends the better.", "correct": false, "feedback": "Accepting strangers can be risky. It's always better to ask an adult before accepting." },
+      { "text": "I don't accept and ask an adult what to do.", "correct": true, "feedback": "Well done! It's only safe to accept requests from people you actually know in real life, and always with an adult's help." }
+    ]
+  },
+  {
+    "id": "is14",
+    "theme": "downloads",
+    "emoji": "⬇️",
+    "scenario": "You see a new game that looks really cool and want to install it by yourself, without asking anyone.",
+    "options": [
+      { "text": "I install it right away, it looks fun.", "correct": false, "feedback": "Installing unknown apps by yourself can cause problems on the device. Always ask an adult for permission first." },
+      { "text": "I ask an adult to check the game with me before installing.", "correct": true, "feedback": "Great idea! An adult can help you figure out if the app is safe before you install it." }
+    ]
+  },
+  {
+    "id": "is15",
+    "theme": "purchases",
+    "emoji": "💳",
+    "scenario": "Inside a game, a button offers special coins at a very low price, just for today.",
+    "options": [
+      { "text": "I click and buy, it's a special offer.", "correct": false, "feedback": "In-game purchases cost real money, even if they seem cheap. Always ask an adult before buying anything." },
+      { "text": "I call an adult before clicking to buy anything.", "correct": true, "feedback": "Very sensible! An adult always decides with you whether it's worth spending real money in a game." }
+    ]
+  },
+  {
+    "id": "is16",
+    "theme": "screen-time",
+    "emoji": "⏰",
+    "scenario": "You've been playing on the tablet for a long time and your eyes feel tired.",
+    "options": [
+      { "text": "I keep playing a bit longer, just one more level.", "correct": false, "feedback": "Feeling tired eyes is a sign to take a break. Continuing without stopping isn't good for you." },
+      { "text": "I take a break, rest my eyes, and go do something else.", "correct": true, "feedback": "Well done! Noticing when you need a break from the screen is a really healthy habit." }
+    ]
+  },
+  {
+    "id": "is17",
+    "theme": "trusted-adult",
+    "emoji": "🙋",
+    "scenario": "Something you saw online left you confused or uncomfortable, but you're not sure if it matters.",
+    "options": [
+      { "text": "I say nothing, it's probably not a big deal.", "correct": false, "feedback": "Even if you think it's nothing, it's always better to tell someone. An adult can help you understand the situation better." },
+      { "text": "I tell a trusted adult, even without being sure it's important.", "correct": true, "feedback": "Perfect attitude! Telling a trusted adult whenever something feels uncomfortable online is always the right choice." }
+    ]
+  },
+  {
+    "id": "is18",
+    "theme": "sharing-others",
+    "emoji": "👥",
+    "scenario": "You have a funny photo with your friends and want to post it online.",
+    "options": [
+      { "text": "I post it right away, the photo turned out great.", "correct": false, "feedback": "Before posting photos with other people, it's important to ask if they also want the photo shared." },
+      { "text": "I ask my friends and an adult before posting.", "correct": true, "feedback": "Well done! Respecting your friends' wishes and checking with an adult is always the right thing to do." }
+    ]
   }
 ]
