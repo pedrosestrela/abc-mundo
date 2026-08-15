@@ -363,6 +363,44 @@ export function exploreComputingCard(profileName, cardId) {
   return all[name];
 }
 
+// Tracks which "Como funciona a Internet?" journey step ids the child has
+// tapped/explored, mirroring the exploreComputingCard/getExploredComputing
+// pair shape above.
+
+const EXPLORED_INTERNET_JOURNEY_KEY = "abcmundo.exploredInternetJourney";
+
+function loadExploredInternetJourney() {
+  try {
+    const raw = localStorage.getItem(EXPLORED_INTERNET_JOURNEY_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveExploredInternetJourney(all) {
+  try {
+    localStorage.setItem(EXPLORED_INTERNET_JOURNEY_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getExploredInternetJourney(profileName) {
+  const all = loadExploredInternetJourney();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function exploreInternetJourneyStep(profileName, stepId) {
+  const name = profileName || "Explorer";
+  const all = loadExploredInternetJourney();
+  const explored = new Set(all[name] || []);
+  explored.add(stepId);
+  all[name] = Array.from(explored);
+  saveExploredInternetJourney(all);
+  return all[name];
+}
+
 // --- Aprender a Aprender (learning strategies / metacognition) ---
 // Tracks which learning-activity ids (as "type:id") the child has completed
 // across the module's five areas (memory, attention, error, strategy,

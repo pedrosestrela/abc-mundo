@@ -1,0 +1,8 @@
+[
+  { "id": "step1", "icon": "📱", "label": "Tablet", "prompt": "You tap a video on the tablet. What do you think happens next?", "explanation": "The tablet sends a request: 'I want to watch this video!'. That request has to leave the device before the video appears." },
+  { "id": "step2", "icon": "📶", "label": "Wi-Fi / Router", "prompt": "The request reaches the router at home. How does it travel there?", "explanation": "Wi-Fi carries the request from the tablet to the router, with no wires, using invisible waves through the air." },
+  { "id": "step3", "icon": "🔌", "label": "Cable / Fiber", "prompt": "The router receives the request. Where does it send it now?", "explanation": "The router sends the request through a cable (often fiber-optic) that leaves the house and travels under the street." },
+  { "id": "step4", "icon": "🌐", "label": "Internet", "prompt": "The request is traveling through many cables and cities. What is the Internet, anyway?", "explanation": "The Internet is a giant network of cables and computers connected all over the world, passing messages to each other until they reach the right place." },
+  { "id": "step5", "icon": "🖥️", "label": "Server", "prompt": "The request reaches a very big computer, somewhere far away. What does that computer do?", "explanation": "It's called a server. It stores the video you wanted to watch and gets it ready to send back to your tablet." },
+  { "id": "step6", "icon": "↩️", "label": "Reply comes back", "prompt": "The server has prepared the video. How does it reach your screen?", "explanation": "The video travels back the same way — cables, router, Wi-Fi — and reaches the tablet in a few seconds. It's not magic, it's a very fast trip!" }
+]

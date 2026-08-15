@@ -1,17 +1,20 @@
 import React, { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { getComputing, getComputingSafety, getInternetSafety, getAiLab } from "../content/index.js";
+import { getComputing, getComputingSafety, getInternetSafety, getAiLab, getComputingPasswords, getComputingInternetJourney } from "../content/index.js";
 import {
   getLangPair,
   getProfile,
   getDifficultyTier,
   getExploredComputing,
   exploreComputingCard,
+  getExploredInternetJourney,
+  exploreInternetJourneyStep,
   recordSkillEvent,
   pingProgress,
 } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
 import HelpButton from "../components/HelpButton.jsx";
+import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
 import AgeAdvisory from "../components/AgeAdvisory.jsx";
 import MascotBubble from "../components/mascots/MascotBubble.jsx";
 
@@ -95,6 +98,9 @@ export default function Computing() {
   const safetyCards = getComputingSafety(pair.mother);
   const schoolScenarios = getInternetSafety(pair.mother);
   const aiLabText = getAiLab(pair.mother);
+  const passwordCards = getComputingPasswords(pair.mother);
+  const journeySteps = getComputingInternetJourney(pair.mother);
+  const matchPairs = useMemo(() => cards.filter((c) => !!c.match), [cards]);
 
   const [tab, setTab] = useState("concepts");
 
@@ -123,6 +129,33 @@ export default function Computing() {
   const [labTestIdx, setLabTestIdx] = useState(0);
   const [labTestResults, setLabTestResults] = useState([]);
   const labRound = useMemo(() => buildAiLabRound(labPhase === "train2" || labPhase === "test2"), [labPhase === "train2" || labPhase === "test2"]);
+
+  // --- "Liga as peças" hardware matching state ---
+  const [shuffledTerms] = useState(() => shuffle(matchPairs));
+  const [shuffledDefs] = useState(() => shuffle(matchPairs));
+  const [matchSelectedId, setMatchSelectedId] = useState(null);
+  const [matchedIds, setMatchedIds] = useState([]);
+  const [matchWrongDefs, setMatchWrongDefs] = useState({}); // { termId: Set(defId) }
+  const [matchAttempts, setMatchAttempts] = useState({}); // { termId: count }
+  const [matchScore, setMatchScore] = useState(0);
+  const matchFinished = matchPairs.length > 0 && matchedIds.length === matchPairs.length;
+
+  // --- "Password forte ou fraca?" state ---
+  const [pwOrder] = useState(() => shuffle(passwordCards));
+  const [pwStep, setPwStep] = useState(0);
+  const [pwScore, setPwScore] = useState(0);
+  const [pwAnswered, setPwAnswered] = useState(null);
+  const [pwAttempts, setPwAttempts] = useState(0);
+  const pwFinished = pwStep >= pwOrder.length;
+
+  // --- "Como funciona a Internet?" journey state ---
+  const [journeyOpenId, setJourneyOpenId] = useState(null);
+  const [journeyRevealed, setJourneyRevealed] = useState([]);
+  const [journeyVersion, setJourneyVersion] = useState(0);
+  const journeyExplored = useMemo(
+    () => getExploredInternetJourney(profile?.name),
+    [profile?.name, journeyVersion]
+  );
 
   function handleOpen(card) {
     const nowOpen = card.id !== openId;
@@ -230,6 +263,85 @@ export default function Computing() {
     setLabTestResults([]);
   }
 
+  // --- Match handlers ---
+  function handleMatchTermTap(termId) {
+    if (matchedIds.includes(termId)) return;
+    setMatchSelectedId(termId === matchSelectedId ? null : termId);
+  }
+
+  function handleMatchDefTap(defCard) {
+    if (!matchSelectedId) return;
+    if (matchedIds.includes(matchSelectedId)) return;
+    const wrongSet = matchWrongDefs[matchSelectedId] || new Set();
+    if (wrongSet.has(defCard.id)) return; // already tried & wrong - disabled
+
+    const correct = defCard.id === matchSelectedId;
+    const attemptsSoFar = matchAttempts[matchSelectedId] || 0;
+    if (correct) {
+      // Full XP only within the first attempt for this pair (anti-guessing).
+      const firstTry = attemptsSoFar === 0;
+      setMatchedIds((ids) => [...ids, matchSelectedId]);
+      setMatchScore((s) => s + (firstTry ? 1 : 0.5));
+      recordSkillEvent(profile?.name, "computing-match", firstTry);
+      pingProgress({ profileName: profile?.name, module: "computing", event: "match_correct" });
+      setMatchSelectedId(null);
+    } else {
+      const nextWrong = new Set(wrongSet);
+      nextWrong.add(defCard.id);
+      setMatchWrongDefs((all) => ({ ...all, [matchSelectedId]: nextWrong }));
+      setMatchAttempts((all) => ({ ...all, [matchSelectedId]: attemptsSoFar + 1 }));
+      recordSkillEvent(profile?.name, "computing-match", false);
+    }
+  }
+
+  function handleMatchRestart() {
+    window.location.reload();
+  }
+
+  // --- Password strength handlers ---
+  function handlePwAnswer(guessStrong) {
+    if (pwAnswered) return;
+    const card = pwOrder[pwStep];
+    const correct = guessStrong === (card.strength === "strong");
+    setPwAnswered({ correct });
+    if (correct) {
+      // Full XP only within the first 1-2 attempts on this round overall.
+      setPwScore((s) => s + (pwAttempts < 2 ? 1 : 0.5));
+    }
+    recordSkillEvent(profile?.name, "computing-password", correct);
+    pingProgress({
+      profileName: profile?.name,
+      module: "computing",
+      event: correct ? "password_correct" : "password_wrong",
+    });
+    if (!correct) setPwAttempts((a) => a + 1);
+  }
+
+  function handlePwNext() {
+    setPwAnswered(null);
+    setPwStep((s) => s + 1);
+  }
+
+  function handlePwRestart() {
+    window.location.reload();
+  }
+
+  // --- Journey handlers ---
+  function handleJourneyOpen(stepItem) {
+    const nowOpen = stepItem.id !== journeyOpenId;
+    setJourneyOpenId(nowOpen ? stepItem.id : null);
+  }
+
+  function handleJourneyReveal(stepItem) {
+    if (!journeyRevealed.includes(stepItem.id)) {
+      setJourneyRevealed((r) => [...r, stepItem.id]);
+      exploreInternetJourneyStep(profile?.name, stepItem.id);
+      recordSkillEvent(profile?.name, "computing-internet-journey", true);
+      pingProgress({ profileName: profile?.name, module: "computing", event: `journey_step:${stepItem.id}` });
+      setJourneyVersion((v) => v + 1);
+    }
+  }
+
   const round = rounds[step];
   const finished = step >= rounds.length;
 
@@ -263,6 +375,24 @@ export default function Computing() {
         </button>
         <button type="button" className={"phonics-tab" + (tab === "ailab" ? " selected" : "")} onClick={() => setTab("ailab")}>
           <span className="phonics-tab-inner">🤖 {t("modules.computingTabAiLab")}</span>
+        </button>
+        <button type="button" className={"phonics-tab" + (tab === "match" ? " selected" : "")} onClick={() => setTab("match")}>
+          <span className="phonics-tab-inner">
+            🧩 {t("modules.computingTabMatch")}
+            <TabSpeakIcon text={`${t("modules.computingTabMatch")}. ${t("modules.computingMatchHelp")}`} langCode={pair.mother} />
+          </span>
+        </button>
+        <button type="button" className={"phonics-tab" + (tab === "password" ? " selected" : "")} onClick={() => setTab("password")}>
+          <span className="phonics-tab-inner">
+            🔐 {t("modules.computingTabPassword")}
+            <TabSpeakIcon text={`${t("modules.computingTabPassword")}. ${t("modules.computingPasswordHelp")}`} langCode={pair.mother} />
+          </span>
+        </button>
+        <button type="button" className={"phonics-tab" + (tab === "journey" ? " selected" : "")} onClick={() => setTab("journey")}>
+          <span className="phonics-tab-inner">
+            🌐 {t("modules.computingTabJourney")}
+            <TabSpeakIcon text={`${t("modules.computingTabJourney")}. ${t("modules.computingJourneyHelp")}`} langCode={pair.mother} />
+          </span>
         </button>
       </div>
 
@@ -550,6 +680,185 @@ export default function Computing() {
               )}
             </div>
           )}
+        </>
+      )}
+
+      {tab === "match" && (
+        <>
+          <p className="page-intro">
+            {t("modules.computingMatchIntro")}
+            <SpeakButton text={t("modules.computingMatchIntro")} langCode={pair.mother} />
+          </p>
+          <div className="help-btn-corner">
+            <HelpButton text={t("modules.computingMatchHelp")} langCode={pair.mother} />
+          </div>
+
+          {matchPairs.length === 0 ? null : !matchFinished ? (
+            <div className="game-card">
+              <div className="game-progress">
+                {matchedIds.length} / {matchPairs.length} · ⭐ {matchScore}
+              </div>
+              <div className="computing-grid">
+                {shuffledTerms.map((card) => {
+                  const done = matchedIds.includes(card.id);
+                  const selected = matchSelectedId === card.id;
+                  return (
+                    <button
+                      key={card.id}
+                      type="button"
+                      disabled={done}
+                      className={
+                        "computing-term-btn" +
+                        (done ? " done" : "") +
+                        (selected ? " selected" : "")
+                      }
+                      onClick={() => handleMatchTermTap(card.id)}
+                    >
+                      <span className="computing-term-emoji">{card.emoji}</span>
+                      {card.term}
+                    </button>
+                  );
+                })}
+              </div>
+              <div className="computing-grid">
+                {shuffledDefs.map((card) => {
+                  const done = matchedIds.includes(card.id);
+                  const wrong = matchSelectedId && (matchWrongDefs[matchSelectedId] || new Set()).has(card.id);
+                  return (
+                    <button
+                      key={"def-" + card.id}
+                      type="button"
+                      disabled={done || wrong}
+                      className={"computing-term-btn" + (done ? " done" : "") + (wrong ? " wrong" : "")}
+                      onClick={() => handleMatchDefTap(card)}
+                    >
+                      {card.match}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          ) : (
+            <div className="game-card">
+              <div className="game-emoji">🏆</div>
+              <p className="game-result">
+                {t("modules.computingMatchDone")} ⭐ {matchScore}/{matchPairs.length}
+              </p>
+              <button type="button" className="big-btn" onClick={handleMatchRestart}>
+                {t("modules.computingMatchPlayAgain")} 🔁
+              </button>
+            </div>
+          )}
+        </>
+      )}
+
+      {tab === "password" && (
+        <>
+          <p className="page-intro">
+            {t("modules.computingPasswordIntro")}
+            <SpeakButton text={t("modules.computingPasswordIntro")} langCode={pair.mother} />
+          </p>
+          <div className="help-btn-corner">
+            <HelpButton text={t("modules.computingPasswordHelp")} langCode={pair.mother} />
+          </div>
+
+          {pwOrder.length === 0 ? null : !pwFinished ? (
+            <div className="game-card">
+              <div className="game-progress">
+                {pwStep + 1} / {pwOrder.length} · ⭐ {pwScore}
+              </div>
+              <p className="mission-text">
+                🔑 <code>{pwOrder[pwStep].password}</code>
+              </p>
+              <p className="page-intro">{t("modules.computingPasswordQuestion")}</p>
+
+              {!pwAnswered ? (
+                <div className="game-options">
+                  <button type="button" className="big-btn game-option" onClick={() => handlePwAnswer(false)}>
+                    {t("modules.computingPasswordWeak")}
+                  </button>
+                  <button type="button" className="big-btn game-option" onClick={() => handlePwAnswer(true)}>
+                    {t("modules.computingPasswordStrong")}
+                  </button>
+                </div>
+              ) : (
+                <div className="game-card">
+                  <p className="game-result">
+                    {pwAnswered.correct ? "⭐" : "🤔"} {pwOrder[pwStep].reason}
+                    <SpeakButton text={pwOrder[pwStep].reason} langCode={pair.mother} />
+                  </p>
+                  <button type="button" className="big-btn" onClick={handlePwNext}>
+                    ➡️
+                  </button>
+                </div>
+              )}
+            </div>
+          ) : (
+            <div className="game-card">
+              <div className="game-emoji">🏆</div>
+              <p className="game-result">
+                {t("modules.computingPasswordDone")} ⭐ {pwScore}/{pwOrder.length}
+              </p>
+              <button type="button" className="big-btn" onClick={handlePwRestart}>
+                {t("modules.computingPasswordPlayAgain")} 🔁
+              </button>
+            </div>
+          )}
+        </>
+      )}
+
+      {tab === "journey" && (
+        <>
+          <p className="page-intro">
+            {t("modules.computingJourneyIntro")}
+            <SpeakButton text={t("modules.computingJourneyIntro")} langCode={pair.mother} />
+          </p>
+          <div className="help-btn-corner">
+            <HelpButton text={t("modules.computingJourneyHelp")} langCode={pair.mother} />
+          </div>
+
+          <h3 className="songs-heading">
+            {journeyExplored.length}/{journeySteps.length}
+          </h3>
+
+          <div className="computing-grid">
+            {journeySteps.map((step, idx) => {
+              const wasExplored = journeyExplored.includes(step.id);
+              return (
+                <button
+                  key={step.id}
+                  type="button"
+                  className={"computing-term-btn" + (wasExplored ? " done" : "")}
+                  onClick={() => handleJourneyOpen(step)}
+                >
+                  <span className="computing-term-emoji">{step.icon}</span>
+                  {idx + 1}. {step.label}
+                </button>
+              );
+            })}
+          </div>
+
+          {journeySteps
+            .filter((step) => step.id === journeyOpenId)
+            .map((step) => (
+              <div key={step.id} className="game-card computing-card done">
+                <div className="game-emoji">{step.icon}</div>
+                <p className="mission-text">
+                  {step.prompt}
+                  <SpeakButton text={step.prompt} langCode={pair.mother} />
+                </p>
+                {!journeyRevealed.includes(step.id) ? (
+                  <button type="button" className="big-btn" onClick={() => handleJourneyReveal(step)}>
+                    🔎 {t("modules.computingJourneyReveal")}
+                  </button>
+                ) : (
+                  <div className="computing-explanation">
+                    <p className="game-result">{step.explanation}</p>
+                    <SpeakButton text={step.explanation} langCode={pair.mother} />
+                  </div>
+                )}
+              </div>
+            ))}
         </>
       )}
     </div>

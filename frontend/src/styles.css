@@ -2639,6 +2639,16 @@ body {
   border-color: var(--green);
 }
 
+.computing-term-btn.selected {
+  border-color: var(--orange, #f0a500);
+  box-shadow: 0 0 0 3px rgba(240, 165, 0, 0.35);
+}
+
+.computing-term-btn.wrong {
+  border-color: #d94848;
+  opacity: 0.5;
+}
+
 .computing-term-emoji {
   font-size: 1.8rem;
   display: block;
