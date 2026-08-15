@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import i18n from "../i18n/index.js";
 import { getProfiles, setProfile, pingProgress } from "../storage.js";
 // PLACEHOLDER smoke-test integration (illustration/mascot library task) —
 // future agents working on Home.jsx are free to remove, replace, or build on this.
 import MascotBubble from "../components/mascots/MascotBubble.jsx";
 import { IllustrationSun, IllustrationStar } from "../components/illustrations/index.js";
+import HelpButton from "../components/HelpButton.jsx";
 
 const AVATARS = [
   "🦸", "🦸‍♀️", "🦹", "🧙", "🧚", "🧞", "🥷", "🤖",
@@ -37,11 +39,14 @@ export default function Home() {
     return (
       <div className="page home-page">
         <h1 className="app-title">ABC Mundo 🌍✨</h1>
+        <div className="help-btn-corner">
+          <HelpButton text={t("home.helpMain")} langCode={i18n.language} />
+        </div>
         {/* PLACEHOLDER smoke-test — illustration/mascot library, safe to remove */}
         <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "0.5rem" }}>
           <IllustrationSun size={40} />
           <IllustrationStar size={40} />
-          <MascotBubble character="lumi" mood="happy">Olá! Vamos aprender juntos?</MascotBubble>
+          <MascotBubble character="lumi" mood="happy" langCode={i18n.language}>Olá! Vamos aprender juntos?</MascotBubble>
         </div>
         <h2>{t("home.pickExistingProfile")}</h2>
 
@@ -73,6 +78,9 @@ export default function Home() {
   return (
     <div className="page home-page">
       <h1 className="app-title">ABC Mundo 🌍✨</h1>
+      <div className="help-btn-corner">
+        <HelpButton text={t("home.helpMain")} langCode={i18n.language} />
+      </div>
       <h2>{t("home.pickProfile")}</h2>
 
       {profiles.length > 0 && (
