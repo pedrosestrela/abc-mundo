@@ -1,10 +1,98 @@
 [
-  { "id": "poupar-gastar", "concept": "Saving and Spending", "emoji": "🐷", "explanation": "Saving means keeping money for later. Spending means using money to buy something now. It's good to do a little of both!" },
-  { "id": "precisar-querer", "concept": "Needs and Wants", "emoji": "🎁", "explanation": "A need is something we can't live without, like food or shoes. A want is something we would like to have, like a new toy." },
-  { "id": "moedas-notas", "concept": "Coins and Notes", "emoji": "🪙", "explanation": "Money comes in small coins and bigger notes. Together they help us pay for things we need and want." },
-  { "id": "paciencia", "concept": "The Patience of Saving", "emoji": "⏳", "explanation": "Sometimes we have to wait and save a little every day until we have enough money to buy something special." },
-  { "id": "mealheiro", "concept": "The Piggy Bank", "emoji": "🐖", "explanation": "A piggy bank is a little box where we keep our coins. Every time we save a coin, we get closer to our goal." },
-  { "id": "trocar", "concept": "Getting Change", "emoji": "🔄", "explanation": "When we pay with more money than something costs, we get change back: the extra money that is returned to us." },
-  { "id": "trabalho-dinheiro", "concept": "Work and Money", "emoji": "🧹", "explanation": "People work to earn money. Helping at home can also teach us the value of effort." },
-  { "id": "partilhar", "concept": "Sharing and Helping", "emoji": "🤝", "explanation": "We can use a little of our money to help others, like giving a gift to a friend." }
+  {
+    "id": "poupar-gastar",
+    "concept": "Saving and Spending",
+    "emoji": "🐷",
+    "explanation": "Saving means keeping money for later. Spending means using money to buy something now. It's good to do a little of both!"
+  },
+  {
+    "id": "precisar-querer",
+    "concept": "Needs and Wants",
+    "emoji": "🎁",
+    "explanation": "A need is something we can't live without, like food or shoes. A want is something we would like to have, like a new toy."
+  },
+  {
+    "id": "moedas-notas",
+    "concept": "Coins and Notes",
+    "emoji": "🪙",
+    "explanation": "Money comes in small coins and bigger notes. Together they help us pay for things we need and want."
+  },
+  {
+    "id": "paciencia",
+    "concept": "The Patience of Saving",
+    "emoji": "⏳",
+    "explanation": "Sometimes we have to wait and save a little every day until we have enough money to buy something special."
+  },
+  {
+    "id": "mealheiro",
+    "concept": "The Piggy Bank",
+    "emoji": "🐖",
+    "explanation": "A piggy bank is a little box where we keep our coins. Every time we save a coin, we get closer to our goal."
+  },
+  {
+    "id": "trocar",
+    "concept": "Getting Change",
+    "emoji": "🔄",
+    "explanation": "When we pay with more money than something costs, we get change back: the extra money that is returned to us."
+  },
+  {
+    "id": "trabalho-dinheiro",
+    "concept": "Work and Money",
+    "emoji": "🧹",
+    "explanation": "People work to earn money. Helping at home can also teach us the value of effort."
+  },
+  {
+    "id": "partilhar",
+    "concept": "Sharing and Helping",
+    "emoji": "🤝",
+    "explanation": "We can use a little of our money to help others, like giving a gift to a friend."
+  },
+  {
+    "id": "orcamento",
+    "concept": "Making a Budget",
+    "emoji": "📝",
+    "explanation": "A budget is a plan that shows how much money we have and how we will spend or save it. It helps us avoid spending more than we have."
+  },
+  {
+    "id": "banco",
+    "concept": "The Bank",
+    "emoji": "🏦",
+    "explanation": "A bank is a safe place where people keep their money. It can also help us save and make our money grow."
+  },
+  {
+    "id": "comparar-precos",
+    "concept": "Comparing Prices",
+    "emoji": "🔍",
+    "explanation": "Before buying, it's smart to check the price of the same thing at different stores. That way we pick the cheaper option."
+  },
+  {
+    "id": "desconto",
+    "concept": "What Is a Discount",
+    "emoji": "🏷️",
+    "explanation": "A discount happens when a store lowers the price of something for a while. But it's worth checking if it's really a true saving."
+  },
+  {
+    "id": "objetivo-poupanca",
+    "concept": "Having a Savings Goal",
+    "emoji": "🎯",
+    "explanation": "A savings goal is deciding what we want to save money for, like a toy or a trip. Having a goal helps us want to save more."
+  },
+  {
+    "id": "dinheiro-digital",
+    "concept": "Digital Money",
+    "emoji": "💳",
+    "explanation": "Nowadays, money can also be digital, kept on a card or phone instead of coins and notes. It's still real money!"
+  },
+  {
+    "id": "emprestar",
+    "concept": "Borrowing and Paying Back",
+    "emoji": "🤲",
+    "explanation": "Sometimes we borrow money from someone and promise to pay it back later. It's important to always keep that promise."
+  },
+  {
+    "id": "valor-do-dinheiro",
+    "concept": "The Value of Money",
+    "emoji": "⚖️",
+    "explanation": "Not everything costs the same. Knowing the value of money helps us tell if something is expensive or cheap for what it offers."
+  }
 ]

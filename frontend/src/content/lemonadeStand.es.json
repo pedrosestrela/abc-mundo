@@ -1,14 +1,130 @@
 {
-  "ingredients": [
-    { "id": "lemons", "emoji": "🍋", "name": "Limones", "cost": 20 },
-    { "id": "sugar", "emoji": "🍬", "name": "Azúcar", "cost": 15 },
-    { "id": "water", "emoji": "💧", "name": "Agua", "cost": 5 },
-    { "id": "cups", "emoji": "🥤", "name": "Vasos", "cost": 10 }
-  ],
-  "priceOptions": [50, 75, 100, 150],
-  "tips": [
-    "Si el precio es muy bajo, vendes muchos vasos pero ganas poco por vaso.",
-    "Si el precio es muy alto, ganas más por vaso, pero algunas personas no comprarán.",
-    "El beneficio es el dinero que queda después de pagar los ingredientes."
+  "scenarios": [
+    {
+      "id": "lemonade",
+      "emoji": "🍋",
+      "productName": "Puesto de Limonada",
+      "ingredients": [
+        {
+          "id": "lemons",
+          "emoji": "🍋",
+          "name": "Limones",
+          "cost": 20
+        },
+        {
+          "id": "sugar",
+          "emoji": "🍬",
+          "name": "Azúcar",
+          "cost": 15
+        },
+        {
+          "id": "water",
+          "emoji": "💧",
+          "name": "Agua",
+          "cost": 5
+        },
+        {
+          "id": "cups",
+          "emoji": "🥤",
+          "name": "Vasos",
+          "cost": 10
+        }
+      ],
+      "priceOptions": [
+        50,
+        75,
+        100,
+        150
+      ],
+      "tips": [
+        "Si el precio es muy bajo, vendes muchos vasos pero ganas poco por vaso.",
+        "Si el precio es muy alto, ganas más por vaso, pero algunas personas no comprarán.",
+        "El beneficio es el dinero que queda después de pagar los ingredientes."
+      ]
+    },
+    {
+      "id": "orangejuice",
+      "emoji": "🍊",
+      "productName": "Puesto de Zumo de Naranja",
+      "ingredients": [
+        {
+          "id": "oranges",
+          "emoji": "🍊",
+          "name": "Naranjas",
+          "cost": 25
+        },
+        {
+          "id": "sugar",
+          "emoji": "🍬",
+          "name": "Azúcar",
+          "cost": 15
+        },
+        {
+          "id": "water",
+          "emoji": "💧",
+          "name": "Agua",
+          "cost": 5
+        },
+        {
+          "id": "cups",
+          "emoji": "🥤",
+          "name": "Vasos",
+          "cost": 10
+        }
+      ],
+      "priceOptions": [
+        60,
+        90,
+        120,
+        160
+      ],
+      "tips": [
+        "¡En verano, más personas tienen sed y quieren una bebida fresca!",
+        "Las naranjas cuestan un poco más que los limones, así que tu coste es mayor.",
+        "Un día caluroso y soleado puede ayudarte a vender más vasos."
+      ]
+    },
+    {
+      "id": "hotchocolate",
+      "emoji": "🍫",
+      "productName": "Puesto de Chocolate Caliente",
+      "ingredients": [
+        {
+          "id": "cocoa",
+          "emoji": "🍫",
+          "name": "Cacao",
+          "cost": 30
+        },
+        {
+          "id": "milk",
+          "emoji": "🥛",
+          "name": "Leche",
+          "cost": 20
+        },
+        {
+          "id": "sugar",
+          "emoji": "🍬",
+          "name": "Azúcar",
+          "cost": 15
+        },
+        {
+          "id": "cups",
+          "emoji": "🥤",
+          "name": "Vasos",
+          "cost": 10
+        }
+      ],
+      "priceOptions": [
+        80,
+        100,
+        130,
+        180
+      ],
+      "tips": [
+        "En invierno, a la gente le encantan las bebidas calientes para entrar en calor.",
+        "El cacao y la leche cuestan más, así que necesitas vender a buen precio.",
+        "¡En días fríos, podrías vender más chocolate caliente de lo que crees!"
+      ]
+    }
   ]
 }

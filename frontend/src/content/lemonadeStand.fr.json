@@ -1,14 +1,130 @@
 {
-  "ingredients": [
-    { "id": "lemons", "emoji": "🍋", "name": "Citrons", "cost": 20 },
-    { "id": "sugar", "emoji": "🍬", "name": "Sucre", "cost": 15 },
-    { "id": "water", "emoji": "💧", "name": "Eau", "cost": 5 },
-    { "id": "cups", "emoji": "🥤", "name": "Gobelets", "cost": 10 }
-  ],
-  "priceOptions": [50, 75, 100, 150],
-  "tips": [
-    "Si le prix est trop bas, tu vends beaucoup de gobelets mais tu gagnes peu par gobelet.",
-    "Si le prix est trop haut, tu gagnes plus par gobelet, mais certaines personnes n'achètent pas.",
-    "Le profit, c'est l'argent qui reste après avoir payé les ingrédients."
+  "scenarios": [
+    {
+      "id": "lemonade",
+      "emoji": "🍋",
+      "productName": "Stand de Limonade",
+      "ingredients": [
+        {
+          "id": "lemons",
+          "emoji": "🍋",
+          "name": "Citrons",
+          "cost": 20
+        },
+        {
+          "id": "sugar",
+          "emoji": "🍬",
+          "name": "Sucre",
+          "cost": 15
+        },
+        {
+          "id": "water",
+          "emoji": "💧",
+          "name": "Eau",
+          "cost": 5
+        },
+        {
+          "id": "cups",
+          "emoji": "🥤",
+          "name": "Gobelets",
+          "cost": 10
+        }
+      ],
+      "priceOptions": [
+        50,
+        75,
+        100,
+        150
+      ],
+      "tips": [
+        "Si le prix est trop bas, tu vends beaucoup de gobelets mais tu gagnes peu par gobelet.",
+        "Si le prix est trop haut, tu gagnes plus par gobelet, mais certaines personnes n'achètent pas.",
+        "Le profit, c'est l'argent qui reste après avoir payé les ingrédients."
+      ]
+    },
+    {
+      "id": "orangejuice",
+      "emoji": "🍊",
+      "productName": "Stand de Jus d'Orange",
+      "ingredients": [
+        {
+          "id": "oranges",
+          "emoji": "🍊",
+          "name": "Oranges",
+          "cost": 25
+        },
+        {
+          "id": "sugar",
+          "emoji": "🍬",
+          "name": "Sucre",
+          "cost": 15
+        },
+        {
+          "id": "water",
+          "emoji": "💧",
+          "name": "Eau",
+          "cost": 5
+        },
+        {
+          "id": "cups",
+          "emoji": "🥤",
+          "name": "Gobelets",
+          "cost": 10
+        }
+      ],
+      "priceOptions": [
+        60,
+        90,
+        120,
+        160
+      ],
+      "tips": [
+        "En été, plus de gens ont soif et veulent une boisson fraîche !",
+        "Les oranges coûtent un peu plus cher que les citrons, donc ton coût est plus élevé.",
+        "Une journée chaude et ensoleillée peut t'aider à vendre plus de gobelets."
+      ]
+    },
+    {
+      "id": "hotchocolate",
+      "emoji": "🍫",
+      "productName": "Stand de Chocolat Chaud",
+      "ingredients": [
+        {
+          "id": "cocoa",
+          "emoji": "🍫",
+          "name": "Cacao",
+          "cost": 30
+        },
+        {
+          "id": "milk",
+          "emoji": "🥛",
+          "name": "Lait",
+          "cost": 20
+        },
+        {
+          "id": "sugar",
+          "emoji": "🍬",
+          "name": "Sucre",
+          "cost": 15
+        },
+        {
+          "id": "cups",
+          "emoji": "🥤",
+          "name": "Gobelets",
+          "cost": 10
+        }
+      ],
+      "priceOptions": [
+        80,
+        100,
+        130,
+        180
+      ],
+      "tips": [
+        "En hiver, les gens aiment les boissons chaudes pour se réchauffer.",
+        "Le cacao et le lait coûtent plus cher, donc tu dois vendre à un bon prix.",
+        "Les jours froids, tu pourrais vendre plus de chocolat chaud que tu ne le penses !"
+      ]
+    }
   ]
 }

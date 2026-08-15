@@ -1,10 +1,98 @@
 [
-  { "id": "poupar-gastar", "concept": "Sparen und Ausgeben", "emoji": "🐷", "explanation": "Sparen heißt, Geld für später aufzuheben. Ausgeben heißt, Geld zu benutzen, um jetzt etwas zu kaufen. Ein bisschen von beidem ist gut!" },
-  { "id": "precisar-querer", "concept": "Brauchen und Wollen", "emoji": "🎁", "explanation": "Etwas, das wir brauchen, können wir nicht entbehren, wie Essen oder Schuhe. Etwas, das wir wollen, hätten wir gern, wie ein neues Spielzeug." },
-  { "id": "moedas-notas", "concept": "Münzen und Scheine", "emoji": "🪙", "explanation": "Wir benutzen Euro. Es gibt kleine Münzen, die Cent, und Euro-Münzen und -Scheine. Zusammen helfen sie uns beim Bezahlen." },
-  { "id": "paciencia", "concept": "Geduldig Sparen", "emoji": "⏳", "explanation": "Manchmal müssen wir warten und jeden Tag ein wenig sparen, bis wir genug Geld für etwas Besonderes haben." },
-  { "id": "mealheiro", "concept": "Das Sparschwein", "emoji": "🐖", "explanation": "Ein Sparschwein ist eine kleine Box, in der wir unsere Münzen aufbewahren. Jede gesparte Münze bringt uns unserem Ziel näher." },
-  { "id": "trocar", "concept": "Wechselgeld", "emoji": "🔄", "explanation": "Wenn wir mit mehr Geld bezahlen, als etwas kostet, bekommen wir Wechselgeld zurück: das zusätzliche Geld, das wir zurückerhalten." },
-  { "id": "trabalho-dinheiro", "concept": "Arbeit und Geld", "emoji": "🧹", "explanation": "Menschen arbeiten, um Geld zu verdienen. Zuhause zu helfen kann uns auch den Wert von Anstrengung lehren." },
-  { "id": "partilhar", "concept": "Teilen und Helfen", "emoji": "🤝", "explanation": "Wir können etwas von unserem Geld benutzen, um anderen zu helfen, zum Beispiel einem Freund ein Geschenk zu machen." }
+  {
+    "id": "poupar-gastar",
+    "concept": "Sparen und Ausgeben",
+    "emoji": "🐷",
+    "explanation": "Sparen heißt, Geld für später aufzuheben. Ausgeben heißt, Geld zu benutzen, um jetzt etwas zu kaufen. Ein bisschen von beidem ist gut!"
+  },
+  {
+    "id": "precisar-querer",
+    "concept": "Brauchen und Wollen",
+    "emoji": "🎁",
+    "explanation": "Etwas, das wir brauchen, können wir nicht entbehren, wie Essen oder Schuhe. Etwas, das wir wollen, hätten wir gern, wie ein neues Spielzeug."
+  },
+  {
+    "id": "moedas-notas",
+    "concept": "Münzen und Scheine",
+    "emoji": "🪙",
+    "explanation": "Wir benutzen Euro. Es gibt kleine Münzen, die Cent, und Euro-Münzen und -Scheine. Zusammen helfen sie uns beim Bezahlen."
+  },
+  {
+    "id": "paciencia",
+    "concept": "Geduldig Sparen",
+    "emoji": "⏳",
+    "explanation": "Manchmal müssen wir warten und jeden Tag ein wenig sparen, bis wir genug Geld für etwas Besonderes haben."
+  },
+  {
+    "id": "mealheiro",
+    "concept": "Das Sparschwein",
+    "emoji": "🐖",
+    "explanation": "Ein Sparschwein ist eine kleine Box, in der wir unsere Münzen aufbewahren. Jede gesparte Münze bringt uns unserem Ziel näher."
+  },
+  {
+    "id": "trocar",
+    "concept": "Wechselgeld",
+    "emoji": "🔄",
+    "explanation": "Wenn wir mit mehr Geld bezahlen, als etwas kostet, bekommen wir Wechselgeld zurück: das zusätzliche Geld, das wir zurückerhalten."
+  },
+  {
+    "id": "trabalho-dinheiro",
+    "concept": "Arbeit und Geld",
+    "emoji": "🧹",
+    "explanation": "Menschen arbeiten, um Geld zu verdienen. Zuhause zu helfen kann uns auch den Wert von Anstrengung lehren."
+  },
+  {
+    "id": "partilhar",
+    "concept": "Teilen und Helfen",
+    "emoji": "🤝",
+    "explanation": "Wir können etwas von unserem Geld benutzen, um anderen zu helfen, zum Beispiel einem Freund ein Geschenk zu machen."
+  },
+  {
+    "id": "orcamento",
+    "concept": "Ein Budget Erstellen",
+    "emoji": "📝",
+    "explanation": "Ein Budget ist ein Plan, der zeigt, wie viel Geld wir haben und wie wir es ausgeben oder sparen. Er hilft uns, nicht mehr auszugeben, als wir haben."
+  },
+  {
+    "id": "banco",
+    "concept": "Die Bank",
+    "emoji": "🏦",
+    "explanation": "Eine Bank ist ein sicherer Ort, an dem Menschen ihr Geld aufbewahren. Sie kann uns auch helfen zu sparen und unser Geld wachsen zu lassen."
+  },
+  {
+    "id": "comparar-precos",
+    "concept": "Preise Vergleichen",
+    "emoji": "🔍",
+    "explanation": "Vor dem Kauf ist es klug, den Preis derselben Sache in verschiedenen Geschäften zu vergleichen. So wählen wir die günstigere Option."
+  },
+  {
+    "id": "desconto",
+    "concept": "Was ist ein Rabatt",
+    "emoji": "🏷️",
+    "explanation": "Ein Rabatt bedeutet, dass ein Geschäft den Preis von etwas für eine Weile senkt. Es lohnt sich aber zu prüfen, ob es wirklich eine echte Ersparnis ist."
+  },
+  {
+    "id": "objetivo-poupanca",
+    "concept": "Ein Sparziel Haben",
+    "emoji": "🎯",
+    "explanation": "Ein Sparziel bedeutet zu entscheiden, wofür wir Geld sparen wollen, wie ein Spielzeug oder eine Reise. Ein Ziel hilft uns, mit mehr Freude zu sparen."
+  },
+  {
+    "id": "dinheiro-digital",
+    "concept": "Digitales Geld",
+    "emoji": "💳",
+    "explanation": "Heutzutage kann Geld auch digital sein, auf einer Karte oder einem Handy statt in Münzen und Scheinen. Es ist trotzdem echtes Geld!"
+  },
+  {
+    "id": "emprestar",
+    "concept": "Leihen und Zurückzahlen",
+    "emoji": "🤲",
+    "explanation": "Manchmal leihen wir uns Geld von jemandem und versprechen, es später zurückzuzahlen. Es ist wichtig, dieses Versprechen immer zu halten."
+  },
+  {
+    "id": "valor-do-dinheiro",
+    "concept": "Der Wert des Geldes",
+    "emoji": "⚖️",
+    "explanation": "Nicht alles kostet gleich viel. Den Wert des Geldes zu kennen hilft uns zu verstehen, ob etwas teuer oder günstig ist für das, was es bietet."
+  }
 ]

@@ -1,10 +1,98 @@
 [
-  { "id": "poupar-gastar", "concept": "Ahorrar y Gastar", "emoji": "🐷", "explanation": "Ahorrar es guardar dinero para más tarde. Gastar es usar el dinero para comprar algo ahora. ¡Está bien hacer un poco de las dos cosas!" },
-  { "id": "precisar-querer", "concept": "Necesitar y Querer", "emoji": "🎁", "explanation": "Necesitar es algo sin lo que no podemos vivir, como comida o zapatos. Querer es algo que nos gustaría tener, como un juguete nuevo." },
-  { "id": "moedas-notas", "concept": "Monedas y Billetes", "emoji": "🪙", "explanation": "Usamos euros. Hay monedas pequeñas, los céntimos, y monedas y billetes de euros. Juntos nos ayudan a pagar las cosas." },
-  { "id": "paciencia", "concept": "La Paciencia de Ahorrar", "emoji": "⏳", "explanation": "A veces hay que esperar y ahorrar un poquito cada día hasta tener suficiente dinero para comprar algo especial." },
-  { "id": "mealheiro", "concept": "La Hucha", "emoji": "🐖", "explanation": "Una hucha es una cajita donde guardamos nuestras monedas. Cada moneda ahorrada nos acerca a nuestra meta." },
-  { "id": "trocar", "concept": "Recibir Cambio", "emoji": "🔄", "explanation": "Cuando pagamos con más dinero del que cuesta algo, recibimos cambio: el dinero de más que nos devuelven." },
-  { "id": "trabalho-dinheiro", "concept": "Trabajo y Dinero", "emoji": "🧹", "explanation": "Las personas trabajan para ganar dinero. Ayudar en casa también nos puede enseñar el valor del esfuerzo." },
-  { "id": "partilhar", "concept": "Compartir y Ayudar", "emoji": "🤝", "explanation": "Podemos usar un poco de nuestro dinero para ayudar a otros, como regalar algo a un amigo." }
+  {
+    "id": "poupar-gastar",
+    "concept": "Ahorrar y Gastar",
+    "emoji": "🐷",
+    "explanation": "Ahorrar es guardar dinero para más tarde. Gastar es usar el dinero para comprar algo ahora. ¡Está bien hacer un poco de las dos cosas!"
+  },
+  {
+    "id": "precisar-querer",
+    "concept": "Necesitar y Querer",
+    "emoji": "🎁",
+    "explanation": "Necesitar es algo sin lo que no podemos vivir, como comida o zapatos. Querer es algo que nos gustaría tener, como un juguete nuevo."
+  },
+  {
+    "id": "moedas-notas",
+    "concept": "Monedas y Billetes",
+    "emoji": "🪙",
+    "explanation": "Usamos euros. Hay monedas pequeñas, los céntimos, y monedas y billetes de euros. Juntos nos ayudan a pagar las cosas."
+  },
+  {
+    "id": "paciencia",
+    "concept": "La Paciencia de Ahorrar",
+    "emoji": "⏳",
+    "explanation": "A veces hay que esperar y ahorrar un poquito cada día hasta tener suficiente dinero para comprar algo especial."
+  },
+  {
+    "id": "mealheiro",
+    "concept": "La Hucha",
+    "emoji": "🐖",
+    "explanation": "Una hucha es una cajita donde guardamos nuestras monedas. Cada moneda ahorrada nos acerca a nuestra meta."
+  },
+  {
+    "id": "trocar",
+    "concept": "Recibir Cambio",
+    "emoji": "🔄",
+    "explanation": "Cuando pagamos con más dinero del que cuesta algo, recibimos cambio: el dinero de más que nos devuelven."
+  },
+  {
+    "id": "trabalho-dinheiro",
+    "concept": "Trabajo y Dinero",
+    "emoji": "🧹",
+    "explanation": "Las personas trabajan para ganar dinero. Ayudar en casa también nos puede enseñar el valor del esfuerzo."
+  },
+  {
+    "id": "partilhar",
+    "concept": "Compartir y Ayudar",
+    "emoji": "🤝",
+    "explanation": "Podemos usar un poco de nuestro dinero para ayudar a otros, como regalar algo a un amigo."
+  },
+  {
+    "id": "orcamento",
+    "concept": "Hacer un Presupuesto",
+    "emoji": "📝",
+    "explanation": "Un presupuesto es un plan que muestra cuánto dinero tenemos y cómo lo vamos a gastar o ahorrar. Nos ayuda a no gastar más de lo que tenemos."
+  },
+  {
+    "id": "banco",
+    "concept": "El Banco",
+    "emoji": "🏦",
+    "explanation": "El banco es un lugar seguro donde las personas guardan su dinero. También puede ayudarnos a ahorrar y a hacer crecer nuestro dinero."
+  },
+  {
+    "id": "comparar-precos",
+    "concept": "Comparar Precios",
+    "emoji": "🔍",
+    "explanation": "Antes de comprar, es inteligente revisar el precio de lo mismo en tiendas diferentes. Así elegimos la opción más barata."
+  },
+  {
+    "id": "desconto",
+    "concept": "Qué es un Descuento",
+    "emoji": "🏷️",
+    "explanation": "Un descuento ocurre cuando una tienda baja el precio de algo por un tiempo. Pero conviene comprobar si es un ahorro real."
+  },
+  {
+    "id": "objetivo-poupanca",
+    "concept": "Tener una Meta de Ahorro",
+    "emoji": "🎯",
+    "explanation": "Una meta de ahorro es decidir para qué queremos guardar dinero, como un juguete o un viaje. Tener una meta nos ayuda a querer ahorrar más."
+  },
+  {
+    "id": "dinheiro-digital",
+    "concept": "El Dinero Digital",
+    "emoji": "💳",
+    "explanation": "Hoy en día, el dinero también puede ser digital, guardado en una tarjeta o teléfono en vez de monedas y billetes. ¡Sigue siendo dinero de verdad!"
+  },
+  {
+    "id": "emprestar",
+    "concept": "Pedir Prestado y Devolver",
+    "emoji": "🤲",
+    "explanation": "A veces pedimos dinero prestado a alguien y prometemos devolverlo después. Es importante cumplir siempre esa promesa."
+  },
+  {
+    "id": "valor-do-dinheiro",
+    "concept": "El Valor del Dinero",
+    "emoji": "⚖️",
+    "explanation": "No todo cuesta lo mismo. Saber el valor del dinero nos ayuda a entender si algo es caro o barato por lo que ofrece."
+  }
 ]
