@@ -273,5 +273,390 @@
         "correct": false
       }
     ]
+  },
+  {
+    "id": "city",
+    "icon": "🏙️",
+    "name": "Voyage en ville",
+    "items": [
+      {
+        "id": "comfortableshoes",
+        "icon": "👟",
+        "name": "Chaussures confortables",
+        "correct": true
+      },
+      {
+        "id": "citymap",
+        "icon": "🗺️",
+        "name": "Plan de la ville",
+        "correct": true
+      },
+      {
+        "id": "camera",
+        "icon": "📷",
+        "name": "Appareil photo",
+        "correct": true
+      },
+      {
+        "id": "lightjacket",
+        "icon": "🧥",
+        "name": "Veste légère",
+        "correct": true
+      },
+      {
+        "id": "swimsuit",
+        "icon": "🩱",
+        "name": "Maillot de bain",
+        "correct": false
+      },
+      {
+        "id": "snowboots",
+        "icon": "🥾",
+        "name": "Bottes de neige",
+        "correct": false
+      },
+      {
+        "id": "heavycoat",
+        "icon": "🧥",
+        "name": "Manteau lourd",
+        "correct": false
+      },
+      {
+        "id": "umbrella-open",
+        "icon": "☔",
+        "name": "Grand parapluie",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "camping",
+    "icon": "🏕️",
+    "name": "Camping",
+    "items": [
+      {
+        "id": "tent",
+        "icon": "⛺",
+        "name": "Tente",
+        "correct": true
+      },
+      {
+        "id": "sleepingbag",
+        "icon": "🛌",
+        "name": "Sac de couchage",
+        "correct": true
+      },
+      {
+        "id": "flashlight",
+        "icon": "🔦",
+        "name": "Lampe de poche",
+        "correct": true
+      },
+      {
+        "id": "insectrepellent",
+        "icon": "🦟",
+        "name": "Répulsif anti-insectes",
+        "correct": true
+      },
+      {
+        "id": "highheels",
+        "icon": "👠",
+        "name": "Chaussures à talons",
+        "correct": false
+      },
+      {
+        "id": "formaldress",
+        "icon": "👗",
+        "name": "Robe habillée",
+        "correct": false
+      },
+      {
+        "id": "hairdryer",
+        "icon": "💇",
+        "name": "Sèche-cheveux",
+        "correct": false
+      },
+      {
+        "id": "umbrella-open",
+        "icon": "☔",
+        "name": "Grand parapluie",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "jungle",
+    "icon": "🌴",
+    "name": "Forêt tropicale",
+    "items": [
+      {
+        "id": "raincoat",
+        "icon": "🧥",
+        "name": "Imperméable",
+        "correct": true
+      },
+      {
+        "id": "insectrepellent",
+        "icon": "🦟",
+        "name": "Répulsif anti-insectes",
+        "correct": true
+      },
+      {
+        "id": "hikingboots",
+        "icon": "🥾",
+        "name": "Chaussures de randonnée",
+        "correct": true
+      },
+      {
+        "id": "waterbottle",
+        "icon": "🚰",
+        "name": "Bouteille d'eau",
+        "correct": true
+      },
+      {
+        "id": "snowboots",
+        "icon": "🥾",
+        "name": "Bottes de neige",
+        "correct": false
+      },
+      {
+        "id": "heavycoat",
+        "icon": "🧥",
+        "name": "Manteau lourd",
+        "correct": false
+      },
+      {
+        "id": "gloves",
+        "icon": "🧤",
+        "name": "Gants en laine",
+        "correct": false
+      },
+      {
+        "id": "scarf",
+        "icon": "🧣",
+        "name": "Écharpe",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "farm",
+    "icon": "🚜",
+    "name": "Visite à la ferme",
+    "items": [
+      {
+        "id": "rubberboots",
+        "icon": "🥾",
+        "name": "Bottes en caoutchouc",
+        "correct": true
+      },
+      {
+        "id": "oldclothes",
+        "icon": "👕",
+        "name": "Vieux vêtements",
+        "correct": true
+      },
+      {
+        "id": "hat",
+        "icon": "👒",
+        "name": "Chapeau",
+        "correct": true
+      },
+      {
+        "id": "waterbottle",
+        "icon": "🚰",
+        "name": "Bouteille d'eau",
+        "correct": true
+      },
+      {
+        "id": "swimsuit",
+        "icon": "🩱",
+        "name": "Maillot de bain",
+        "correct": false
+      },
+      {
+        "id": "highheels",
+        "icon": "👠",
+        "name": "Chaussures à talons",
+        "correct": false
+      },
+      {
+        "id": "formaldress",
+        "icon": "👗",
+        "name": "Robe habillée",
+        "correct": false
+      },
+      {
+        "id": "laptop",
+        "icon": "💻",
+        "name": "Ordinateur portable",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "cruise",
+    "icon": "🛳️",
+    "name": "Croisière",
+    "items": [
+      {
+        "id": "motionsicknesspills",
+        "icon": "💊",
+        "name": "Comprimés contre le mal de mer",
+        "correct": true
+      },
+      {
+        "id": "lightclothes",
+        "icon": "👕",
+        "name": "Vêtements légers",
+        "correct": true
+      },
+      {
+        "id": "sunglasses",
+        "icon": "🕶️",
+        "name": "Lunettes de soleil",
+        "correct": true
+      },
+      {
+        "id": "camera",
+        "icon": "📷",
+        "name": "Appareil photo",
+        "correct": true
+      },
+      {
+        "id": "snowboots",
+        "icon": "🥾",
+        "name": "Bottes de neige",
+        "correct": false
+      },
+      {
+        "id": "heavycoat",
+        "icon": "🧥",
+        "name": "Manteau lourd",
+        "correct": false
+      },
+      {
+        "id": "hikingboots",
+        "icon": "🥾",
+        "name": "Chaussures de randonnée",
+        "correct": false
+      },
+      {
+        "id": "gloves",
+        "icon": "🧤",
+        "name": "Gants en laine",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "sports",
+    "icon": "🏅",
+    "name": "Tournoi sportif",
+    "items": [
+      {
+        "id": "sneakers",
+        "icon": "👟",
+        "name": "Chaussures de sport",
+        "correct": true
+      },
+      {
+        "id": "sportswear",
+        "icon": "🎽",
+        "name": "Tenue de sport",
+        "correct": true
+      },
+      {
+        "id": "waterbottle",
+        "icon": "🚰",
+        "name": "Bouteille d'eau",
+        "correct": true
+      },
+      {
+        "id": "towel",
+        "icon": "🧺",
+        "name": "Serviette",
+        "correct": true
+      },
+      {
+        "id": "swimsuit",
+        "icon": "🩱",
+        "name": "Maillot de bain",
+        "correct": false
+      },
+      {
+        "id": "heavycoat",
+        "icon": "🧥",
+        "name": "Manteau lourd",
+        "correct": false
+      },
+      {
+        "id": "highheels",
+        "icon": "👠",
+        "name": "Chaussures à talons",
+        "correct": false
+      },
+      {
+        "id": "umbrella-open",
+        "icon": "☔",
+        "name": "Grand parapluie",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "roadtrip",
+    "icon": "🚗",
+    "name": "Road trip",
+    "items": [
+      {
+        "id": "snacks",
+        "icon": "🍪",
+        "name": "Collations",
+        "correct": true
+      },
+      {
+        "id": "pillow",
+        "icon": "🛏️",
+        "name": "Oreiller",
+        "correct": true
+      },
+      {
+        "id": "books",
+        "icon": "📚",
+        "name": "Livres",
+        "correct": true
+      },
+      {
+        "id": "comfyclothes",
+        "icon": "👕",
+        "name": "Vêtements confortables",
+        "correct": true
+      },
+      {
+        "id": "swimsuit",
+        "icon": "🩱",
+        "name": "Maillot de bain",
+        "correct": false
+      },
+      {
+        "id": "snowboots",
+        "icon": "🥾",
+        "name": "Bottes de neige",
+        "correct": false
+      },
+      {
+        "id": "hikingboots",
+        "icon": "🥾",
+        "name": "Chaussures de randonnée",
+        "correct": false
+      },
+      {
+        "id": "heavycoat",
+        "icon": "🧥",
+        "name": "Manteau lourd",
+        "correct": false
+      }
+    ]
   }
 ]

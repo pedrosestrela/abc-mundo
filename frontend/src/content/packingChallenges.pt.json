@@ -4,14 +4,54 @@
     "icon": "🏖️",
     "name": "Praia",
     "items": [
-      { "id": "swimsuit", "icon": "🩱", "name": "Fato de banho", "correct": true },
-      { "id": "sunscreen", "icon": "🧴", "name": "Protetor solar", "correct": true },
-      { "id": "sunglasses", "icon": "🕶️", "name": "Óculos de sol", "correct": true },
-      { "id": "flipflops", "icon": "🩴", "name": "Chinelos", "correct": true },
-      { "id": "coat", "icon": "🧥", "name": "Casaco de inverno", "correct": false },
-      { "id": "snowboots", "icon": "🥾", "name": "Botas de neve", "correct": false },
-      { "id": "gloves", "icon": "🧤", "name": "Luvas", "correct": false },
-      { "id": "scarf", "icon": "🧣", "name": "Cachecol", "correct": false }
+      {
+        "id": "swimsuit",
+        "icon": "🩱",
+        "name": "Fato de banho",
+        "correct": true
+      },
+      {
+        "id": "sunscreen",
+        "icon": "🧴",
+        "name": "Protetor solar",
+        "correct": true
+      },
+      {
+        "id": "sunglasses",
+        "icon": "🕶️",
+        "name": "Óculos de sol",
+        "correct": true
+      },
+      {
+        "id": "flipflops",
+        "icon": "🩴",
+        "name": "Chinelos",
+        "correct": true
+      },
+      {
+        "id": "coat",
+        "icon": "🧥",
+        "name": "Casaco de inverno",
+        "correct": false
+      },
+      {
+        "id": "snowboots",
+        "icon": "🥾",
+        "name": "Botas de neve",
+        "correct": false
+      },
+      {
+        "id": "gloves",
+        "icon": "🧤",
+        "name": "Luvas",
+        "correct": false
+      },
+      {
+        "id": "scarf",
+        "icon": "🧣",
+        "name": "Cachecol",
+        "correct": false
+      }
     ]
   },
   {
@@ -19,14 +59,54 @@
     "icon": "🏔️",
     "name": "Montanha",
     "items": [
-      { "id": "jacket", "icon": "🧥", "name": "Casaco quente", "correct": true },
-      { "id": "hikingboots", "icon": "🥾", "name": "Botas de caminhada", "correct": true },
-      { "id": "backpack", "icon": "🎒", "name": "Mochila", "correct": true },
-      { "id": "waterbottle", "icon": "🚰", "name": "Garrafa de água", "correct": true },
-      { "id": "swimsuit", "icon": "🩱", "name": "Fato de banho", "correct": false },
-      { "id": "flipflops", "icon": "🩴", "name": "Chinelos", "correct": false },
-      { "id": "umbrella-open", "icon": "☔", "name": "Guarda-chuva grande", "correct": false },
-      { "id": "highheels", "icon": "👠", "name": "Sapatos de salto", "correct": false }
+      {
+        "id": "jacket",
+        "icon": "🧥",
+        "name": "Casaco quente",
+        "correct": true
+      },
+      {
+        "id": "hikingboots",
+        "icon": "🥾",
+        "name": "Botas de caminhada",
+        "correct": true
+      },
+      {
+        "id": "backpack",
+        "icon": "🎒",
+        "name": "Mochila",
+        "correct": true
+      },
+      {
+        "id": "waterbottle",
+        "icon": "🚰",
+        "name": "Garrafa de água",
+        "correct": true
+      },
+      {
+        "id": "swimsuit",
+        "icon": "🩱",
+        "name": "Fato de banho",
+        "correct": false
+      },
+      {
+        "id": "flipflops",
+        "icon": "🩴",
+        "name": "Chinelos",
+        "correct": false
+      },
+      {
+        "id": "umbrella-open",
+        "icon": "☔",
+        "name": "Guarda-chuva grande",
+        "correct": false
+      },
+      {
+        "id": "highheels",
+        "icon": "👠",
+        "name": "Sapatos de salto",
+        "correct": false
+      }
     ]
   },
   {
@@ -34,14 +114,54 @@
     "icon": "🌧️",
     "name": "Cidade Chuvosa",
     "items": [
-      { "id": "umbrella", "icon": "☂️", "name": "Guarda-chuva", "correct": true },
-      { "id": "raincoat", "icon": "🧥", "name": "Impermeável", "correct": true },
-      { "id": "rainboots", "icon": "🥾", "name": "Botas de água", "correct": true },
-      { "id": "sweater", "icon": "🧶", "name": "Camisola quente", "correct": true },
-      { "id": "swimsuit", "icon": "🩱", "name": "Fato de banho", "correct": false },
-      { "id": "sunglasses", "icon": "🕶️", "name": "Óculos de sol", "correct": false },
-      { "id": "flipflops", "icon": "🩴", "name": "Chinelos", "correct": false },
-      { "id": "sunhat", "icon": "👒", "name": "Chapéu de sol", "correct": false }
+      {
+        "id": "umbrella",
+        "icon": "☂️",
+        "name": "Guarda-chuva",
+        "correct": true
+      },
+      {
+        "id": "raincoat",
+        "icon": "🧥",
+        "name": "Impermeável",
+        "correct": true
+      },
+      {
+        "id": "rainboots",
+        "icon": "🥾",
+        "name": "Botas de água",
+        "correct": true
+      },
+      {
+        "id": "sweater",
+        "icon": "🧶",
+        "name": "Camisola quente",
+        "correct": true
+      },
+      {
+        "id": "swimsuit",
+        "icon": "🩱",
+        "name": "Fato de banho",
+        "correct": false
+      },
+      {
+        "id": "sunglasses",
+        "icon": "🕶️",
+        "name": "Óculos de sol",
+        "correct": false
+      },
+      {
+        "id": "flipflops",
+        "icon": "🩴",
+        "name": "Chinelos",
+        "correct": false
+      },
+      {
+        "id": "sunhat",
+        "icon": "👒",
+        "name": "Chapéu de sol",
+        "correct": false
+      }
     ]
   },
   {
@@ -49,14 +169,54 @@
     "icon": "🏜️",
     "name": "Deserto",
     "items": [
-      { "id": "sunhat", "icon": "👒", "name": "Chapéu de sol", "correct": true },
-      { "id": "sunglasses", "icon": "🕶️", "name": "Óculos de sol", "correct": true },
-      { "id": "lightclothes", "icon": "👕", "name": "Roupa leve", "correct": true },
-      { "id": "waterbottle", "icon": "🚰", "name": "Garrafa de água", "correct": true },
-      { "id": "snowboots", "icon": "🥾", "name": "Botas de neve", "correct": false },
-      { "id": "heavycoat", "icon": "🧥", "name": "Casaco pesado", "correct": false },
-      { "id": "umbrella", "icon": "☂️", "name": "Guarda-chuva", "correct": false },
-      { "id": "gloves", "icon": "🧤", "name": "Luvas de lã", "correct": false }
+      {
+        "id": "sunhat",
+        "icon": "👒",
+        "name": "Chapéu de sol",
+        "correct": true
+      },
+      {
+        "id": "sunglasses",
+        "icon": "🕶️",
+        "name": "Óculos de sol",
+        "correct": true
+      },
+      {
+        "id": "lightclothes",
+        "icon": "👕",
+        "name": "Roupa leve",
+        "correct": true
+      },
+      {
+        "id": "waterbottle",
+        "icon": "🚰",
+        "name": "Garrafa de água",
+        "correct": true
+      },
+      {
+        "id": "snowboots",
+        "icon": "🥾",
+        "name": "Botas de neve",
+        "correct": false
+      },
+      {
+        "id": "heavycoat",
+        "icon": "🧥",
+        "name": "Casaco pesado",
+        "correct": false
+      },
+      {
+        "id": "umbrella",
+        "icon": "☂️",
+        "name": "Guarda-chuva",
+        "correct": false
+      },
+      {
+        "id": "gloves",
+        "icon": "🧤",
+        "name": "Luvas de lã",
+        "correct": false
+      }
     ]
   },
   {
@@ -64,14 +224,439 @@
     "icon": "❄️",
     "name": "Neve",
     "items": [
-      { "id": "coat", "icon": "🧥", "name": "Casaco de inverno", "correct": true },
-      { "id": "gloves", "icon": "🧤", "name": "Luvas", "correct": true },
-      { "id": "snowboots", "icon": "🥾", "name": "Botas de neve", "correct": true },
-      { "id": "scarf", "icon": "🧣", "name": "Cachecol", "correct": true },
-      { "id": "swimsuit", "icon": "🩱", "name": "Fato de banho", "correct": false },
-      { "id": "flipflops", "icon": "🩴", "name": "Chinelos", "correct": false },
-      { "id": "shorts", "icon": "🩳", "name": "Calções", "correct": false },
-      { "id": "sunhat", "icon": "👒", "name": "Chapéu de sol", "correct": false }
+      {
+        "id": "coat",
+        "icon": "🧥",
+        "name": "Casaco de inverno",
+        "correct": true
+      },
+      {
+        "id": "gloves",
+        "icon": "🧤",
+        "name": "Luvas",
+        "correct": true
+      },
+      {
+        "id": "snowboots",
+        "icon": "🥾",
+        "name": "Botas de neve",
+        "correct": true
+      },
+      {
+        "id": "scarf",
+        "icon": "🧣",
+        "name": "Cachecol",
+        "correct": true
+      },
+      {
+        "id": "swimsuit",
+        "icon": "🩱",
+        "name": "Fato de banho",
+        "correct": false
+      },
+      {
+        "id": "flipflops",
+        "icon": "🩴",
+        "name": "Chinelos",
+        "correct": false
+      },
+      {
+        "id": "shorts",
+        "icon": "🩳",
+        "name": "Calções",
+        "correct": false
+      },
+      {
+        "id": "sunhat",
+        "icon": "👒",
+        "name": "Chapéu de sol",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "city",
+    "icon": "🏙️",
+    "name": "Cidade",
+    "items": [
+      {
+        "id": "comfortableshoes",
+        "icon": "👟",
+        "name": "Sapatilhas confortáveis",
+        "correct": true
+      },
+      {
+        "id": "citymap",
+        "icon": "🗺️",
+        "name": "Mapa da cidade",
+        "correct": true
+      },
+      {
+        "id": "camera",
+        "icon": "📷",
+        "name": "Máquina fotográfica",
+        "correct": true
+      },
+      {
+        "id": "lightjacket",
+        "icon": "🧥",
+        "name": "Casaco leve",
+        "correct": true
+      },
+      {
+        "id": "swimsuit",
+        "icon": "🩱",
+        "name": "Fato de banho",
+        "correct": false
+      },
+      {
+        "id": "snowboots",
+        "icon": "🥾",
+        "name": "Botas de neve",
+        "correct": false
+      },
+      {
+        "id": "heavycoat",
+        "icon": "🧥",
+        "name": "Casaco pesado",
+        "correct": false
+      },
+      {
+        "id": "umbrella-open",
+        "icon": "☔",
+        "name": "Guarda-chuva grande",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "camping",
+    "icon": "🏕️",
+    "name": "Campismo",
+    "items": [
+      {
+        "id": "tent",
+        "icon": "⛺",
+        "name": "Tenda de campismo",
+        "correct": true
+      },
+      {
+        "id": "sleepingbag",
+        "icon": "🛌",
+        "name": "Saco-cama",
+        "correct": true
+      },
+      {
+        "id": "flashlight",
+        "icon": "🔦",
+        "name": "Lanterna",
+        "correct": true
+      },
+      {
+        "id": "insectrepellent",
+        "icon": "🦟",
+        "name": "Repelente de insetos",
+        "correct": true
+      },
+      {
+        "id": "highheels",
+        "icon": "👠",
+        "name": "Sapatos de salto",
+        "correct": false
+      },
+      {
+        "id": "formaldress",
+        "icon": "👗",
+        "name": "Vestido elegante",
+        "correct": false
+      },
+      {
+        "id": "hairdryer",
+        "icon": "💇",
+        "name": "Secador de cabelo",
+        "correct": false
+      },
+      {
+        "id": "umbrella-open",
+        "icon": "☔",
+        "name": "Guarda-chuva grande",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "jungle",
+    "icon": "🌴",
+    "name": "Selva Tropical",
+    "items": [
+      {
+        "id": "raincoat",
+        "icon": "🧥",
+        "name": "Impermeável",
+        "correct": true
+      },
+      {
+        "id": "insectrepellent",
+        "icon": "🦟",
+        "name": "Repelente de insetos",
+        "correct": true
+      },
+      {
+        "id": "hikingboots",
+        "icon": "🥾",
+        "name": "Botas de caminhada",
+        "correct": true
+      },
+      {
+        "id": "waterbottle",
+        "icon": "🚰",
+        "name": "Garrafa de água",
+        "correct": true
+      },
+      {
+        "id": "snowboots",
+        "icon": "🥾",
+        "name": "Botas de neve",
+        "correct": false
+      },
+      {
+        "id": "heavycoat",
+        "icon": "🧥",
+        "name": "Casaco pesado",
+        "correct": false
+      },
+      {
+        "id": "gloves",
+        "icon": "🧤",
+        "name": "Luvas de lã",
+        "correct": false
+      },
+      {
+        "id": "scarf",
+        "icon": "🧣",
+        "name": "Cachecol",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "farm",
+    "icon": "🚜",
+    "name": "Quinta",
+    "items": [
+      {
+        "id": "rubberboots",
+        "icon": "🥾",
+        "name": "Botas de borracha",
+        "correct": true
+      },
+      {
+        "id": "oldclothes",
+        "icon": "👕",
+        "name": "Roupa velha",
+        "correct": true
+      },
+      {
+        "id": "hat",
+        "icon": "👒",
+        "name": "Chapéu",
+        "correct": true
+      },
+      {
+        "id": "waterbottle",
+        "icon": "🚰",
+        "name": "Garrafa de água",
+        "correct": true
+      },
+      {
+        "id": "swimsuit",
+        "icon": "🩱",
+        "name": "Fato de banho",
+        "correct": false
+      },
+      {
+        "id": "highheels",
+        "icon": "👠",
+        "name": "Sapatos de salto",
+        "correct": false
+      },
+      {
+        "id": "formaldress",
+        "icon": "👗",
+        "name": "Vestido elegante",
+        "correct": false
+      },
+      {
+        "id": "laptop",
+        "icon": "💻",
+        "name": "Computador portátil",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "cruise",
+    "icon": "🛳️",
+    "name": "Cruzeiro",
+    "items": [
+      {
+        "id": "motionsicknesspills",
+        "icon": "💊",
+        "name": "Comprimidos para o enjoo",
+        "correct": true
+      },
+      {
+        "id": "lightclothes",
+        "icon": "👕",
+        "name": "Roupa leve",
+        "correct": true
+      },
+      {
+        "id": "sunglasses",
+        "icon": "🕶️",
+        "name": "Óculos de sol",
+        "correct": true
+      },
+      {
+        "id": "camera",
+        "icon": "📷",
+        "name": "Máquina fotográfica",
+        "correct": true
+      },
+      {
+        "id": "snowboots",
+        "icon": "🥾",
+        "name": "Botas de neve",
+        "correct": false
+      },
+      {
+        "id": "heavycoat",
+        "icon": "🧥",
+        "name": "Casaco pesado",
+        "correct": false
+      },
+      {
+        "id": "hikingboots",
+        "icon": "🥾",
+        "name": "Botas de caminhada",
+        "correct": false
+      },
+      {
+        "id": "gloves",
+        "icon": "🧤",
+        "name": "Luvas de lã",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "sports",
+    "icon": "🏅",
+    "name": "Torneio Desportivo",
+    "items": [
+      {
+        "id": "sneakers",
+        "icon": "👟",
+        "name": "Sapatilhas de desporto",
+        "correct": true
+      },
+      {
+        "id": "sportswear",
+        "icon": "🎽",
+        "name": "Roupa de desporto",
+        "correct": true
+      },
+      {
+        "id": "waterbottle",
+        "icon": "🚰",
+        "name": "Garrafa de água",
+        "correct": true
+      },
+      {
+        "id": "towel",
+        "icon": "🧺",
+        "name": "Toalha",
+        "correct": true
+      },
+      {
+        "id": "swimsuit",
+        "icon": "🩱",
+        "name": "Fato de banho",
+        "correct": false
+      },
+      {
+        "id": "heavycoat",
+        "icon": "🧥",
+        "name": "Casaco pesado",
+        "correct": false
+      },
+      {
+        "id": "highheels",
+        "icon": "👠",
+        "name": "Sapatos de salto",
+        "correct": false
+      },
+      {
+        "id": "umbrella-open",
+        "icon": "☔",
+        "name": "Guarda-chuva grande",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "roadtrip",
+    "icon": "🚗",
+    "name": "Viagem de Carro",
+    "items": [
+      {
+        "id": "snacks",
+        "icon": "🍪",
+        "name": "Snacks",
+        "correct": true
+      },
+      {
+        "id": "pillow",
+        "icon": "🛏️",
+        "name": "Almofada",
+        "correct": true
+      },
+      {
+        "id": "books",
+        "icon": "📚",
+        "name": "Livros",
+        "correct": true
+      },
+      {
+        "id": "comfyclothes",
+        "icon": "👕",
+        "name": "Roupa confortável",
+        "correct": true
+      },
+      {
+        "id": "swimsuit",
+        "icon": "🩱",
+        "name": "Fato de banho",
+        "correct": false
+      },
+      {
+        "id": "snowboots",
+        "icon": "🥾",
+        "name": "Botas de neve",
+        "correct": false
+      },
+      {
+        "id": "hikingboots",
+        "icon": "🥾",
+        "name": "Botas de caminhada",
+        "correct": false
+      },
+      {
+        "id": "heavycoat",
+        "icon": "🧥",
+        "name": "Casaco pesado",
+        "correct": false
+      }
     ]
   }
 ]

@@ -70,5 +70,44 @@
     "steps": [
       "Solar panels capture sunlight and turn it into electricity, without any smoke or pollution. That energy can power lights, charge devices, or even be stored in batteries to use at night."
     ]
+  },
+  {
+    "id": "deteccaofumo",
+    "icon": "🚨",
+    "name": "Smoke Detectors",
+    "prompt": "🚨 What is that round device on the ceiling for?",
+    "steps": [
+      "The smoke detector has a sensor that recognizes smoke in the air. If there's a fire, it makes a very loud sound to warn everyone quickly, giving time to leave the house safely."
+    ]
+  },
+  {
+    "id": "isolamento",
+    "icon": "🧱",
+    "name": "Insulation",
+    "prompt": "🧱 Why do some houses stay warmer in winter than others?",
+    "steps": [
+      "Walls, roofs, and windows can have special insulation materials that keep heat from escaping in winter and from coming in during summer. A well-insulated house uses less energy for heating or cooling."
+    ]
+  },
+  {
+    "id": "reciclagem",
+    "icon": "♻️",
+    "name": "Recycling at Home",
+    "prompt": "♻️ How is trash sorted at home before it goes out?",
+    "steps": [
+      "1. At home, we sort trash into different bins: paper, plastic and metal, glass, and general waste.",
+      "2. Each type of trash has a different colored bin outside.",
+      "3. When the bin at home is full, someone takes the bag to the right bin on the street.",
+      "4. This makes it easier for the city to recycle everything afterward."
+    ]
+  },
+  {
+    "id": "seguranca",
+    "icon": "🔒",
+    "name": "Home Security",
+    "prompt": "🔒 How does the door lock keep your house safe?",
+    "steps": [
+      "Locks and keys make sure only the right people can open the front door. Many houses also have doorbells and peepholes, so you can see who's outside before opening the door."
+    ]
   }
 ]

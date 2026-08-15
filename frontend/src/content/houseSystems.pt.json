@@ -70,5 +70,44 @@
     "steps": [
       "Os painéis solares apanham a luz do sol e transformam-na em eletricidade, sem produzir fumo nem poluição. Essa energia pode acender as luzes, carregar aparelhos ou até ser guardada em baterias para usar à noite."
     ]
+  },
+  {
+    "id": "deteccaofumo",
+    "icon": "🚨",
+    "name": "Deteção de Fumo",
+    "prompt": "🚨 Para que serve aquele aparelho redondo no teto?",
+    "steps": [
+      "O detetor de fumo tem um sensor que reconhece fumo no ar. Se houver um incêndio, ele faz um som muito alto para avisar toda a gente rapidamente, dando tempo para sair de casa em segurança."
+    ]
+  },
+  {
+    "id": "isolamento",
+    "icon": "🧱",
+    "name": "Isolamento",
+    "prompt": "🧱 Porque é que umas casas ficam mais quentes no inverno do que outras?",
+    "steps": [
+      "As paredes, o telhado e as janelas podem ter materiais especiais de isolamento, que impedem o calor de sair no inverno e de entrar no verão. Uma casa bem isolada gasta menos energia a aquecer ou a arrefecer."
+    ]
+  },
+  {
+    "id": "reciclagem",
+    "icon": "♻️",
+    "name": "Reciclagem em Casa",
+    "prompt": "♻️ Como se organiza o lixo dentro de casa antes de sair?",
+    "steps": [
+      "1. Em casa, separamos o lixo em diferentes caixotes: papel, plástico e metal, vidro, e lixo comum.",
+      "2. Cada tipo de lixo tem uma cor de ecoponto diferente lá fora.",
+      "3. Quando o caixote de casa enche, alguém leva o saco até ao ecoponto certo na rua.",
+      "4. Assim, é mais fácil para a cidade reciclar tudo depois."
+    ]
+  },
+  {
+    "id": "seguranca",
+    "icon": "🔒",
+    "name": "Segurança",
+    "prompt": "🔒 Como é que a fechadura da porta mantém a tua casa segura?",
+    "steps": [
+      "As fechaduras e as chaves fazem com que só as pessoas certas possam abrir a porta de casa. Muitas casas também têm campainhas e olhos mágicos, para veres quem está lá fora antes de abrir a porta."
+    ]
   }
 ]

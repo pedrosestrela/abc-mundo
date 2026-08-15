@@ -63,5 +63,109 @@
     ],
     "correct": "ship",
     "explanation": "Per trasportare carichi molto pesanti attraverso l'oceano, la nave è la più usata — più lenta, ma trasporta molto di più e consuma meno energia per oggetto."
+  },
+  {
+    "id": "park",
+    "icon": "🚸",
+    "prompt": "Andare al parco in fondo alla strada.",
+    "modes": [
+      "walk",
+      "bike",
+      "car",
+      "plane"
+    ],
+    "correct": "walk",
+    "explanation": "Per un posto così vicino, camminare è il modo più semplice e sano per arrivarci."
+  },
+  {
+    "id": "bakery",
+    "icon": "🥖",
+    "prompt": "Andare al forno a comprare pane fresco al mattino.",
+    "modes": [
+      "walk",
+      "bike",
+      "car",
+      "train"
+    ],
+    "correct": "walk",
+    "explanation": "Il forno è proprio lì vicino; andare a piedi è veloce e respiri anche l'aria fresca del mattino."
+  },
+  {
+    "id": "islandferry",
+    "icon": "🏝️",
+    "prompt": "Attraversare un piccolo braccio di mare per raggiungere un'isola vicino alla costa.",
+    "modes": [
+      "car",
+      "train",
+      "plane",
+      "ship"
+    ],
+    "correct": "ship",
+    "explanation": "Per attraversare l'acqua fino a un'isola vicina, una nave (o traghetto) è la scelta giusta — non ci sono strade né binari sopra il mare."
+  },
+  {
+    "id": "citycommute",
+    "icon": "🏢",
+    "prompt": "Andare al lavoro ogni giorno dall'altra parte della città.",
+    "modes": [
+      "walk",
+      "bike",
+      "car",
+      "plane"
+    ],
+    "correct": "car",
+    "explanation": "Per una lunga distanza attraverso la città, ogni giorno, l'auto è più pratica che camminare o andare in bicicletta."
+  },
+  {
+    "id": "studyabroad",
+    "icon": "🎓",
+    "prompt": "Andare a studiare per un anno in un paese dall'altra parte dell'oceano.",
+    "modes": [
+      "car",
+      "train",
+      "ship",
+      "plane"
+    ],
+    "correct": "plane",
+    "explanation": "Per viaggiare velocemente su una distanza molto lunga, attraversando l'oceano, l'aereo è la scelta giusta."
+  },
+  {
+    "id": "exportcars",
+    "icon": "🚘",
+    "prompt": "Inviare centinaia di auto nuove da una fabbrica per venderle in un altro continente.",
+    "modes": [
+      "car",
+      "train",
+      "plane",
+      "ship"
+    ],
+    "correct": "ship",
+    "explanation": "Per trasportare un carico molto pesante e ingombrante attraverso l'oceano, la nave è la più usata — trasporta molto di più in una volta."
+  },
+  {
+    "id": "medicine",
+    "icon": "💊",
+    "prompt": "Inviare un medicinale urgente a un ospedale dall'altra parte del mondo.",
+    "modes": [
+      "train",
+      "ship",
+      "car",
+      "plane"
+    ],
+    "correct": "plane",
+    "explanation": "Quando la velocità conta più del prezzo, come in un'emergenza, l'aereo arriva molto più velocemente di una nave."
+  },
+  {
+    "id": "campingtrip",
+    "icon": "🏕️",
+    "prompt": "Andare in campeggio con la famiglia in una foresta a qualche ora da casa.",
+    "modes": [
+      "walk",
+      "bike",
+      "car",
+      "plane"
+    ],
+    "correct": "car",
+    "explanation": "Con così tanti bagagli — tenda, sacchi a pelo, cibo — l'auto è la scelta più pratica per un viaggio di queste dimensioni."
   }
 ]

@@ -63,5 +63,109 @@
     ],
     "correct": "ship",
     "explanation": "To carry very heavy cargo across the ocean, ships are used most — slower, but they carry much more and use less energy per item."
+  },
+  {
+    "id": "park",
+    "icon": "🚸",
+    "prompt": "Go to the park at the end of the street.",
+    "modes": [
+      "walk",
+      "bike",
+      "car",
+      "plane"
+    ],
+    "correct": "walk",
+    "explanation": "For somewhere so close, walking is the simplest and healthiest way to get there."
+  },
+  {
+    "id": "bakery",
+    "icon": "🥖",
+    "prompt": "Go to the bakery to buy fresh bread in the morning.",
+    "modes": [
+      "walk",
+      "bike",
+      "car",
+      "train"
+    ],
+    "correct": "walk",
+    "explanation": "The bakery is right there; walking is quick and you get some fresh morning air too."
+  },
+  {
+    "id": "islandferry",
+    "icon": "🏝️",
+    "prompt": "Cross a narrow stretch of sea to reach an island near the coast.",
+    "modes": [
+      "car",
+      "train",
+      "plane",
+      "ship"
+    ],
+    "correct": "ship",
+    "explanation": "To cross water to a nearby island, a ship (or ferry) is the right choice — there's no road or track over the sea."
+  },
+  {
+    "id": "citycommute",
+    "icon": "🏢",
+    "prompt": "Go to work every day on the other side of the city.",
+    "modes": [
+      "walk",
+      "bike",
+      "car",
+      "plane"
+    ],
+    "correct": "car",
+    "explanation": "For a long distance across the city, every day, a car is more practical than walking or biking."
+  },
+  {
+    "id": "studyabroad",
+    "icon": "🎓",
+    "prompt": "Go study for a year in a country across the ocean.",
+    "modes": [
+      "car",
+      "train",
+      "ship",
+      "plane"
+    ],
+    "correct": "plane",
+    "explanation": "To travel quickly over a very long distance, crossing the ocean, the plane is the right choice."
+  },
+  {
+    "id": "exportcars",
+    "icon": "🚘",
+    "prompt": "Send hundreds of new cars from a factory to be sold on another continent.",
+    "modes": [
+      "car",
+      "train",
+      "plane",
+      "ship"
+    ],
+    "correct": "ship",
+    "explanation": "To carry very heavy and bulky cargo across the ocean, ships are used most — they carry much more at once."
+  },
+  {
+    "id": "medicine",
+    "icon": "💊",
+    "prompt": "Send urgent medicine to a hospital on the other side of the world.",
+    "modes": [
+      "train",
+      "ship",
+      "car",
+      "plane"
+    ],
+    "correct": "plane",
+    "explanation": "When speed matters more than cost, like in an emergency, a plane arrives much faster than a ship."
+  },
+  {
+    "id": "campingtrip",
+    "icon": "🏕️",
+    "prompt": "Go camping with the family in a forest a few hours from home.",
+    "modes": [
+      "walk",
+      "bike",
+      "car",
+      "plane"
+    ],
+    "correct": "car",
+    "explanation": "With so much gear — tent, sleeping bags, food — a car is the most practical choice for a trip this size."
   }
 ]
