@@ -3441,6 +3441,49 @@ body {
   text-align: center;
 }
 
+/* --- Traffic School driving simulation ("Vamos Conduzir!") --- */
+.drive-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.drive-board {
+  display: flex;
+  flex-direction: column;
+  background: #6b6b6b;
+  border-radius: 12px;
+  padding: 4px;
+  max-width: 100%;
+  overflow-x: auto;
+}
+.drive-row {
+  display: flex;
+}
+.drive-cell {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex: 0 0 auto;
+  font-size: 1rem;
+}
+.drive-road {
+  background: #4a4a4a;
+  border-radius: 3px;
+}
+.drive-no-entry {
+  background: #7a3b3b;
+  border-radius: 3px;
+}
+.drive-car {
+  font-size: 1.2rem;
+  line-height: 1;
+  z-index: 2;
+}
+
 /* --- Memory / concentration card-matching mini-game --- */
 .memory-wrap {
   display: flex;
@@ -3506,6 +3549,10 @@ body {
   .maze-cell {
     width: 22px;
     height: 22px;
+  }
+  .drive-cell {
+    width: 26px;
+    height: 26px;
   }
   .memory-grid {
     grid-template-columns: repeat(3, 60px);

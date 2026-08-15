@@ -159,6 +159,7 @@ const GROUPS = [
     Motif: LifeMotif,
     tiles: [
       { to: "/lifeskills", emoji: "🌱", nav: "lifeskills", sub: "sub_lifeskills" },
+      { to: "/traffic-school", emoji: "🚦", nav: "trafficSchool", sub: "sub_trafficSchool" },
     ],
   },
 ];

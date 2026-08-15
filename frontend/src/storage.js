@@ -1006,3 +1006,42 @@ export function saveArtCharacter(profileName, entry) {
   saveArtCharacterSaves(all);
   return all[name];
 }
+
+// --- Escola de Trânsito: explored traffic signs ---
+// Tracks which traffic-sign card ids the child has tapped/revealed (i.e. read
+// the explanation for), mirroring the exploreComputingCard/getExploredComputing
+// pair shape exactly.
+
+const EXPLORED_TRAFFIC_SIGNS_KEY = "abcmundo.exploredTrafficSigns";
+
+function loadExploredTrafficSigns() {
+  try {
+    const raw = localStorage.getItem(EXPLORED_TRAFFIC_SIGNS_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveExploredTrafficSigns(all) {
+  try {
+    localStorage.setItem(EXPLORED_TRAFFIC_SIGNS_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getExploredTrafficSigns(profileName) {
+  const all = loadExploredTrafficSigns();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function exploreTrafficSign(profileName, signId) {
+  const name = profileName || "Explorer";
+  const all = loadExploredTrafficSigns();
+  const explored = new Set(all[name] || []);
+  explored.add(signId);
+  all[name] = Array.from(explored);
+  saveExploredTrafficSigns(all);
+  return all[name];
+}

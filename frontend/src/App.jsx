@@ -65,6 +65,7 @@ const LearningStrategies = lazyWithReload(() => import("./pages/LearningStrategi
 const NatureDiary = lazyWithReload(() => import("./pages/NatureDiary.jsx"));
 const Writing = lazyWithReload(() => import("./pages/Writing.jsx"));
 const Communication = lazyWithReload(() => import("./pages/Communication.jsx"));
+const TrafficSchool = lazyWithReload(() => import("./pages/TrafficSchool.jsx"));
 
 export default function App() {
   // A successful render means the current chunk map is good — clear the
@@ -112,6 +113,7 @@ export default function App() {
             <Route path="/nature-diary" element={<NatureDiary />} />
             <Route path="/writing" element={<Writing />} />
             <Route path="/communication" element={<Communication />} />
+            <Route path="/traffic-school" element={<TrafficSchool />} />
           </Routes>
         </Suspense>
       </main>

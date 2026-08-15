@@ -1,0 +1,18 @@
+[
+  {"id": "stop", "emoji": "🛑", "name": "Sinal de STOP", "meaning": "Tens de parar completamente antes de continuares. Olha bem para os dois lados antes de avançar.", "category": "driver"},
+  {"id": "cedencia-passagem", "emoji": "🔺", "name": "Cedência de Passagem", "meaning": "Tens de abrandar e deixar passar primeiro quem vem na outra estrada, antes de continuares.", "category": "driver"},
+  {"id": "passadeira", "emoji": "🚶", "name": "Passadeira", "meaning": "É o lugar certo para atravessares a rua a pé. Olha para os dois lados antes de atravessar.", "category": "pedestrian"},
+  {"id": "sentido-proibido", "emoji": "⛔", "name": "Sentido Proibido", "meaning": "Não podes entrar nesta rua. É como uma porta fechada só para carros e bicicletas.", "category": "driver"},
+  {"id": "limite-velocidade", "emoji": "🚸", "name": "Limite de Velocidade", "meaning": "Mostra a velocidade máxima permitida nesta estrada. Ir mais devagar é sempre mais seguro perto de casas e escolas.", "category": "driver"},
+  {"id": "sentido-unico", "emoji": "➡️", "name": "Sentido Único", "meaning": "Nesta rua só se pode andar numa direção. Se fores no sentido contrário, podes bater noutros carros.", "category": "driver"},
+  {"id": "semaforo-vermelho", "emoji": "🔴", "name": "Semáforo Vermelho", "meaning": "Vermelho significa PARA. Ninguém pode andar, nem carros nem peões, até a luz mudar.", "category": "pedestrian"},
+  {"id": "semaforo-amarelo", "emoji": "🟡", "name": "Semáforo Amarelo", "meaning": "Amarelo significa atenção, prepara-te para parar. A luz vai ficar vermelha a seguir.", "category": "pedestrian"},
+  {"id": "semaforo-verde", "emoji": "🟢", "name": "Semáforo Verde", "meaning": "Verde significa que podes seguir, mas continua a olhar à tua volta antes de avançar.", "category": "pedestrian"},
+  {"id": "zona-escolar", "emoji": "🏫", "name": "Zona Escolar", "meaning": "Avisa que há uma escola perto. Os carros devem andar mais devagar porque podem aparecer crianças a atravessar.", "category": "pedestrian"},
+  {"id": "proibido-estacionar", "emoji": "🅿️", "name": "Proibido Estacionar", "meaning": "Os carros não podem ficar parados aqui. O sítio tem de ficar livre.", "category": "driver"},
+  {"id": "rotunda", "emoji": "🔄", "name": "Rotunda", "meaning": "É uma praça redonda onde os carros dão a volta. Quem já está dentro da rotunda tem sempre prioridade.", "category": "driver"},
+  {"id": "ciclovia", "emoji": "🚲", "name": "Ciclovia", "meaning": "É um caminho só para bicicletas. Os carros não devem andar nem estacionar aqui.", "category": "pedestrian"},
+  {"id": "cruzamento", "emoji": "✖️", "name": "Cruzamento", "meaning": "Avisa que duas estradas se vão cruzar à frente. É preciso ter mais atenção e abrandar.", "category": "driver"},
+  {"id": "lomba", "emoji": "🐫", "name": "Lomba", "meaning": "Há um pequeno monte na estrada que obriga os carros a andar devagar. Serve para proteger quem atravessa a pé.", "category": "pedestrian"},
+  {"id": "perigo-geral", "emoji": "⚠️", "name": "Perigo Geral", "meaning": "Este triângulo avisa que há um perigo à frente. Presta muita atenção e abranda.", "category": "driver"}
+]

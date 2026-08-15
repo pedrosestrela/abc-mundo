@@ -1,0 +1,18 @@
+[
+  {"id": "stop", "emoji": "🛑", "name": "停车标志", "meaning": "你必须完全停下来，然后才能继续前进。再出发前要看看两边。", "category": "driver"},
+  {"id": "cedencia-passagem", "emoji": "🔺", "name": "让路标志", "meaning": "你要放慢速度，先让其他方向的车辆通过，然后才能继续前进。", "category": "driver"},
+  {"id": "passadeira", "emoji": "🚶", "name": "人行横道", "meaning": "这是步行过马路的正确地方。过马路前要看看两边。", "category": "pedestrian"},
+  {"id": "sentido-proibido", "emoji": "⛔", "name": "禁止驶入", "meaning": "你不能进入这条街道。这就像一扇只对汽车和自行车关闭的门。", "category": "driver"},
+  {"id": "limite-velocidade", "emoji": "🚸", "name": "限速标志", "meaning": "显示这条路允许的最快速度。在住宅区和学校附近开慢一点总是更安全。", "category": "driver"},
+  {"id": "sentido-unico", "emoji": "➡️", "name": "单行道", "meaning": "这条街只能朝一个方向走。走反方向可能会撞到其他车。", "category": "driver"},
+  {"id": "semaforo-vermelho", "emoji": "🔴", "name": "红灯", "meaning": "红灯表示停。在灯变色之前，无论是汽车还是行人都不能通过。", "category": "pedestrian"},
+  {"id": "semaforo-amarelo", "emoji": "🟡", "name": "黄灯", "meaning": "黄灯表示要准备停下来。灯马上就要变红了。", "category": "pedestrian"},
+  {"id": "semaforo-verde", "emoji": "🟢", "name": "绿灯", "meaning": "绿灯表示你可以走了，但出发前还是要看看周围。", "category": "pedestrian"},
+  {"id": "zona-escolar", "emoji": "🏫", "name": "学校区域", "meaning": "提醒附近有一所学校。汽车必须减速，因为可能有孩子过马路。", "category": "pedestrian"},
+  {"id": "proibido-estacionar", "emoji": "🅿️", "name": "禁止停车", "meaning": "汽车不能停在这里。这个地方必须保持畅通。", "category": "driver"},
+  {"id": "rotunda", "emoji": "🔄", "name": "环岛", "meaning": "这是一个圆形广场，汽车绕着它转。已经在环岛里面的车辆永远享有优先权。", "category": "driver"},
+  {"id": "ciclovia", "emoji": "🚲", "name": "自行车道", "meaning": "这是一条只给自行车使用的道路。汽车不应该在这里行驶或停车。", "category": "pedestrian"},
+  {"id": "cruzamento", "emoji": "✖️", "name": "十字路口", "meaning": "提醒前方有两条道路会交叉。需要更加注意并减速。", "category": "driver"},
+  {"id": "lomba", "emoji": "🐫", "name": "减速带", "meaning": "路上有一个小土坡，迫使汽车慢慢行驶。它可以保护步行过马路的人。", "category": "pedestrian"},
+  {"id": "perigo-geral", "emoji": "⚠️", "name": "一般危险", "meaning": "这个三角形提醒前方有危险。要特别注意并减速。", "category": "driver"}
+]
