@@ -5,10 +5,34 @@
     "category": "transporte",
     "title": "Bicycle",
     "parts": [
-      { "id": "pedais", "emoji": "🦵", "label": "Pedals", "predictionPrompt": "What do you think the pedals do?", "explanation": "When you push the pedals with your feet, you spin a toothed wheel. This is where all the force that moves the bike begins." },
-      { "id": "corrente", "emoji": "⚙️", "label": "Chain", "predictionPrompt": "What do you think the chain does?", "explanation": "The chain connects the pedals to the back wheel. When the pedal gear turns, the chain pulls another gear and spins the back wheel too." },
-      { "id": "rodas", "emoji": "🎡", "label": "Wheels", "predictionPrompt": "What do you think the wheels do?", "explanation": "The wheels spin and roll along the ground, turning the force from your feet into forward movement." },
-      { "id": "travoes", "emoji": "🛑", "label": "Brakes", "predictionPrompt": "What do you think the brakes do?", "explanation": "When you squeeze the levers, the brakes grip the wheels and make them stop spinning, so the bike slows down or stops." }
+      {
+        "id": "pedais",
+        "emoji": "🦵",
+        "label": "Pedals",
+        "predictionPrompt": "What do you think the pedals do?",
+        "explanation": "When you push the pedals with your feet, you spin a toothed wheel. This is where all the force that moves the bike begins."
+      },
+      {
+        "id": "corrente",
+        "emoji": "⚙️",
+        "label": "Chain",
+        "predictionPrompt": "What do you think the chain does?",
+        "explanation": "The chain connects the pedals to the back wheel. When the pedal gear turns, the chain pulls another gear and spins the back wheel too."
+      },
+      {
+        "id": "rodas",
+        "emoji": "🎡",
+        "label": "Wheels",
+        "predictionPrompt": "What do you think the wheels do?",
+        "explanation": "The wheels spin and roll along the ground, turning the force from your feet into forward movement."
+      },
+      {
+        "id": "travoes",
+        "emoji": "🛑",
+        "label": "Brakes",
+        "predictionPrompt": "What do you think the brakes do?",
+        "explanation": "When you squeeze the levers, the brakes grip the wheels and make them stop spinning, so the bike slows down or stops."
+      }
     ],
     "summary": "Now you know how it works! The pedals give force, the chain carries that force to the back wheel, the wheels spin forward, and the brakes stop everything when you need them to."
   },
@@ -18,10 +42,34 @@
     "category": "transporte",
     "title": "Car",
     "parts": [
-      { "id": "motor", "emoji": "🔧", "label": "Engine", "predictionPrompt": "What do you think the engine does?", "explanation": "The engine burns fuel or uses electric energy to create force. It is the car's heart, making the energy that moves everything." },
-      { "id": "volante", "emoji": "🎡", "label": "Steering wheel", "predictionPrompt": "What do you think the steering wheel does?", "explanation": "The steering wheel is connected to the front wheels. When the driver turns it, the wheels turn that way and the car changes direction." },
-      { "id": "rodas-carro", "emoji": "🛞", "label": "Wheels", "predictionPrompt": "What do you think the car's wheels do?", "explanation": "The wheels get the force from the engine and spin on the road, making the car move forward." },
-      { "id": "travoes-carro", "emoji": "🛑", "label": "Brakes", "predictionPrompt": "What do you think the car's brakes do?", "explanation": "When the driver presses the brake pedal, discs squeeze the wheels tightly and the car slows down or stops." }
+      {
+        "id": "motor",
+        "emoji": "🔧",
+        "label": "Engine",
+        "predictionPrompt": "What do you think the engine does?",
+        "explanation": "The engine burns fuel or uses electric energy to create force. It is the car's heart, making the energy that moves everything."
+      },
+      {
+        "id": "volante",
+        "emoji": "🎡",
+        "label": "Steering wheel",
+        "predictionPrompt": "What do you think the steering wheel does?",
+        "explanation": "The steering wheel is connected to the front wheels. When the driver turns it, the wheels turn that way and the car changes direction."
+      },
+      {
+        "id": "rodas-carro",
+        "emoji": "🛞",
+        "label": "Wheels",
+        "predictionPrompt": "What do you think the car's wheels do?",
+        "explanation": "The wheels get the force from the engine and spin on the road, making the car move forward."
+      },
+      {
+        "id": "travoes-carro",
+        "emoji": "🛑",
+        "label": "Brakes",
+        "predictionPrompt": "What do you think the car's brakes do?",
+        "explanation": "When the driver presses the brake pedal, discs squeeze the wheels tightly and the car slows down or stops."
+      }
     ],
     "summary": "Now you know how it works! The engine makes the force, the steering wheel chooses the direction, the wheels carry the car forward, and the brakes stop everything safely."
   },
@@ -31,10 +79,34 @@
     "category": "casa",
     "title": "Clock",
     "parts": [
-      { "id": "pilha", "emoji": "🔋", "label": "Battery", "predictionPrompt": "What do you think the battery does?", "explanation": "The battery gives electric energy to the clock, just like food gives energy to us. Without a battery, the clock stops." },
-      { "id": "engrenagens", "emoji": "⚙️", "label": "Gears", "predictionPrompt": "What do you think the gears do?", "explanation": "Gears are small toothed wheels inside the clock. Energy from the battery spins one, and it spins the next, always at the right pace." },
-      { "id": "ponteiros", "emoji": "🕐", "label": "Hands", "predictionPrompt": "What do you think the hands do?", "explanation": "The hands are connected to the gears. They move slowly and precisely to show us the hours, minutes, and seconds." },
-      { "id": "mostrador", "emoji": "🔢", "label": "Dial", "predictionPrompt": "What do you think the dial does?", "explanation": "The dial has the numbers around it. It's where we read the position of the hands to know what time it is." }
+      {
+        "id": "pilha",
+        "emoji": "🔋",
+        "label": "Battery",
+        "predictionPrompt": "What do you think the battery does?",
+        "explanation": "The battery gives electric energy to the clock, just like food gives energy to us. Without a battery, the clock stops."
+      },
+      {
+        "id": "engrenagens",
+        "emoji": "⚙️",
+        "label": "Gears",
+        "predictionPrompt": "What do you think the gears do?",
+        "explanation": "Gears are small toothed wheels inside the clock. Energy from the battery spins one, and it spins the next, always at the right pace."
+      },
+      {
+        "id": "ponteiros",
+        "emoji": "🕐",
+        "label": "Hands",
+        "predictionPrompt": "What do you think the hands do?",
+        "explanation": "The hands are connected to the gears. They move slowly and precisely to show us the hours, minutes, and seconds."
+      },
+      {
+        "id": "mostrador",
+        "emoji": "🔢",
+        "label": "Dial",
+        "predictionPrompt": "What do you think the dial does?",
+        "explanation": "The dial has the numbers around it. It's where we read the position of the hands to know what time it is."
+      }
     ],
     "summary": "Now you know how it works! The battery gives energy, the gears spin at the right pace, the hands move slowly, and the dial helps you read the time."
   },
@@ -44,10 +116,34 @@
     "category": "tecnologia",
     "title": "Smartphone",
     "parts": [
-      { "id": "bateria-phone", "emoji": "🔋", "label": "Battery", "predictionPrompt": "What do you think the battery does?", "explanation": "The battery stores electric energy and powers every part of the phone, so it works even far from an outlet." },
-      { "id": "processador", "emoji": "🧠", "label": "Processor", "predictionPrompt": "What do you think the processor does?", "explanation": "The processor is like the phone's brain. It makes millions of calculations every second to open apps, games, and messages." },
-      { "id": "ecra-tatil", "emoji": "🖐️", "label": "Touchscreen", "predictionPrompt": "What do you think the touchscreen does?", "explanation": "The screen shows images and also senses your fingers touching it, so it knows where you want to tap and what to open." },
-      { "id": "antena", "emoji": "📶", "label": "Antenna", "predictionPrompt": "What do you think the antenna does?", "explanation": "The antenna sends and receives invisible signals through the air, connecting the phone to the internet and letting you make calls." }
+      {
+        "id": "bateria-phone",
+        "emoji": "🔋",
+        "label": "Battery",
+        "predictionPrompt": "What do you think the battery does?",
+        "explanation": "The battery stores electric energy and powers every part of the phone, so it works even far from an outlet."
+      },
+      {
+        "id": "processador",
+        "emoji": "🧠",
+        "label": "Processor",
+        "predictionPrompt": "What do you think the processor does?",
+        "explanation": "The processor is like the phone's brain. It makes millions of calculations every second to open apps, games, and messages."
+      },
+      {
+        "id": "ecra-tatil",
+        "emoji": "🖐️",
+        "label": "Touchscreen",
+        "predictionPrompt": "What do you think the touchscreen does?",
+        "explanation": "The screen shows images and also senses your fingers touching it, so it knows where you want to tap and what to open."
+      },
+      {
+        "id": "antena",
+        "emoji": "📶",
+        "label": "Antenna",
+        "predictionPrompt": "What do you think the antenna does?",
+        "explanation": "The antenna sends and receives invisible signals through the air, connecting the phone to the internet and letting you make calls."
+      }
     ],
     "summary": "Now you know how it works! The battery gives energy, the processor thinks, the screen shows and senses touch, and the antenna connects the phone to the world."
   },
@@ -57,10 +153,34 @@
     "category": "casa",
     "title": "Refrigerator",
     "parts": [
-      { "id": "compressor", "emoji": "⚙️", "label": "Compressor", "predictionPrompt": "What do you think the compressor does?", "explanation": "The compressor is the fridge's engine. It squeezes a special gas, making it flow through pipes and become very cold." },
-      { "id": "gas-refrigerante", "emoji": "❄️", "label": "Refrigerant gas", "predictionPrompt": "What do you think the refrigerant gas does?", "explanation": "That cold gas flows through the walls inside the fridge and soaks up the heat from inside, keeping the food fresh." },
-      { "id": "termostato", "emoji": "🌡️", "label": "Thermostat", "predictionPrompt": "What do you think the thermostat does?", "explanation": "The thermostat is like a smart thermometer. It measures the temperature inside and turns the compressor on or off to keep it just right." },
-      { "id": "isolamento", "emoji": "🚪", "label": "Insulated door", "predictionPrompt": "What do you think the insulated door does?", "explanation": "The fridge's walls and door have a special material that stops the cold from escaping and the heat from getting in." }
+      {
+        "id": "compressor",
+        "emoji": "⚙️",
+        "label": "Compressor",
+        "predictionPrompt": "What do you think the compressor does?",
+        "explanation": "The compressor is the fridge's engine. It squeezes a special gas, making it flow through pipes and become very cold."
+      },
+      {
+        "id": "gas-refrigerante",
+        "emoji": "❄️",
+        "label": "Refrigerant gas",
+        "predictionPrompt": "What do you think the refrigerant gas does?",
+        "explanation": "That cold gas flows through the walls inside the fridge and soaks up the heat from inside, keeping the food fresh."
+      },
+      {
+        "id": "termostato",
+        "emoji": "🌡️",
+        "label": "Thermostat",
+        "predictionPrompt": "What do you think the thermostat does?",
+        "explanation": "The thermostat is like a smart thermometer. It measures the temperature inside and turns the compressor on or off to keep it just right."
+      },
+      {
+        "id": "isolamento",
+        "emoji": "🚪",
+        "label": "Insulated door",
+        "predictionPrompt": "What do you think the insulated door does?",
+        "explanation": "The fridge's walls and door have a special material that stops the cold from escaping and the heat from getting in."
+      }
     ],
     "summary": "Now you know how it works! The compressor moves the gas, the gas steals the heat from inside, the thermostat keeps the right temperature, and the insulated door keeps the cold in."
   },
@@ -70,10 +190,34 @@
     "category": "casa",
     "title": "Elevator",
     "parts": [
-      { "id": "botoes", "emoji": "🔘", "label": "Buttons", "predictionPrompt": "What do you think the buttons do?", "explanation": "When you press a button, you tell the elevator which floor you want to go to. The system receives that request." },
-      { "id": "motor-elevador", "emoji": "⚙️", "label": "Motor", "predictionPrompt": "What do you think the elevator's motor does?", "explanation": "The motor pulls the steel cables up or lets them slide down, making the cabin go up or down." },
-      { "id": "cabos", "emoji": "🪢", "label": "Steel cables", "predictionPrompt": "What do you think the steel cables do?", "explanation": "The cables are very strong and hold up the cabin, connecting it to the motor above, so it never falls." },
-      { "id": "cabina", "emoji": "🚪", "label": "Cabin", "predictionPrompt": "What do you think the cabin does?", "explanation": "The cabin is the box you step into. It slides along vertical rails and stops exactly at each floor's height." }
+      {
+        "id": "botoes",
+        "emoji": "🔘",
+        "label": "Buttons",
+        "predictionPrompt": "What do you think the buttons do?",
+        "explanation": "When you press a button, you tell the elevator which floor you want to go to. The system receives that request."
+      },
+      {
+        "id": "motor-elevador",
+        "emoji": "⚙️",
+        "label": "Motor",
+        "predictionPrompt": "What do you think the elevator's motor does?",
+        "explanation": "The motor pulls the steel cables up or lets them slide down, making the cabin go up or down."
+      },
+      {
+        "id": "cabos",
+        "emoji": "🪢",
+        "label": "Steel cables",
+        "predictionPrompt": "What do you think the steel cables do?",
+        "explanation": "The cables are very strong and hold up the cabin, connecting it to the motor above, so it never falls."
+      },
+      {
+        "id": "cabina",
+        "emoji": "🚪",
+        "label": "Cabin",
+        "predictionPrompt": "What do you think the cabin does?",
+        "explanation": "The cabin is the box you step into. It slides along vertical rails and stops exactly at each floor's height."
+      }
     ],
     "summary": "Now you know how it works! The buttons say which floor, the motor pulls the cables, the cables hold the cabin, and the cabin carries you right to the floor you chose."
   },
@@ -83,10 +227,34 @@
     "category": "casa",
     "title": "Tap",
     "parts": [
-      { "id": "cano", "emoji": "🚿", "label": "Water pipe", "predictionPrompt": "What do you think the water pipe does?", "explanation": "A pipe beneath the tap brings water from the house's pipes, always under pressure, waiting to come out." },
-      { "id": "valvula", "emoji": "🔧", "label": "Valve", "predictionPrompt": "What do you think the valve does?", "explanation": "When you turn or lift the tap's handle, a valve inside opens a passage so water can flow through." },
-      { "id": "vedante", "emoji": "🔘", "label": "Seal", "predictionPrompt": "What do you think the seal does?", "explanation": "A small rubber ring closes the gaps tightly, so the water only comes out the spout and doesn't drip elsewhere." },
-      { "id": "bica", "emoji": "💧", "label": "Spout", "predictionPrompt": "What do you think the spout does?", "explanation": "The spout is the final exit. It's where the water leaves the tap, ready for you to wash your hands or fill a cup." }
+      {
+        "id": "cano",
+        "emoji": "🚿",
+        "label": "Water pipe",
+        "predictionPrompt": "What do you think the water pipe does?",
+        "explanation": "A pipe beneath the tap brings water from the house's pipes, always under pressure, waiting to come out."
+      },
+      {
+        "id": "valvula",
+        "emoji": "🔧",
+        "label": "Valve",
+        "predictionPrompt": "What do you think the valve does?",
+        "explanation": "When you turn or lift the tap's handle, a valve inside opens a passage so water can flow through."
+      },
+      {
+        "id": "vedante",
+        "emoji": "🔘",
+        "label": "Seal",
+        "predictionPrompt": "What do you think the seal does?",
+        "explanation": "A small rubber ring closes the gaps tightly, so the water only comes out the spout and doesn't drip elsewhere."
+      },
+      {
+        "id": "bica",
+        "emoji": "💧",
+        "label": "Spout",
+        "predictionPrompt": "What do you think the spout does?",
+        "explanation": "The spout is the final exit. It's where the water leaves the tap, ready for you to wash your hands or fill a cup."
+      }
     ],
     "summary": "Now you know how it works! The pipe brings the water, the valve opens the passage when you turn the tap, the seal stops leaks, and the spout lets the water out."
   },
@@ -96,10 +264,34 @@
     "category": "casa",
     "title": "Toilet flush",
     "parts": [
-      { "id": "botao-autoclismo", "emoji": "🔘", "label": "Flush button", "predictionPrompt": "What do you think the flush button does?", "explanation": "When you press the button, you open a valve inside the water tank that sits above or behind the toilet." },
-      { "id": "descarga", "emoji": "🌊", "label": "Water flush", "predictionPrompt": "What do you think happens when the water rushes down?", "explanation": "The water stored in the tank rushes down all at once with force, pushing everything in the bowl out through the drain pipe." },
-      { "id": "boia", "emoji": "🎈", "label": "Float", "predictionPrompt": "What do you think the float does?", "explanation": "After the flush, a float inside the tank rises slowly with the new water and, when it reaches the top, closes the valve that fills the tank." },
-      { "id": "sifao", "emoji": "🌀", "label": "Trap", "predictionPrompt": "What do you think the curved pipe does?", "explanation": "The S-shaped pipe always holds a bit of water, creating a barrier that stops bad smells from rising up from the sewers." }
+      {
+        "id": "botao-autoclismo",
+        "emoji": "🔘",
+        "label": "Flush button",
+        "predictionPrompt": "What do you think the flush button does?",
+        "explanation": "When you press the button, you open a valve inside the water tank that sits above or behind the toilet."
+      },
+      {
+        "id": "descarga",
+        "emoji": "🌊",
+        "label": "Water flush",
+        "predictionPrompt": "What do you think happens when the water rushes down?",
+        "explanation": "The water stored in the tank rushes down all at once with force, pushing everything in the bowl out through the drain pipe."
+      },
+      {
+        "id": "boia",
+        "emoji": "🎈",
+        "label": "Float",
+        "predictionPrompt": "What do you think the float does?",
+        "explanation": "After the flush, a float inside the tank rises slowly with the new water and, when it reaches the top, closes the valve that fills the tank."
+      },
+      {
+        "id": "sifao",
+        "emoji": "🌀",
+        "label": "Trap",
+        "predictionPrompt": "What do you think the curved pipe does?",
+        "explanation": "The S-shaped pipe always holds a bit of water, creating a barrier that stops bad smells from rising up from the sewers."
+      }
     ],
     "summary": "Now you know how it works! The button opens the valve, the water rushes down and cleans the bowl, the float refills the tank, and the trap holds water to block the smells."
   },
@@ -109,10 +301,34 @@
     "category": "tecnologia",
     "title": "Camera",
     "parts": [
-      { "id": "lente", "emoji": "🔍", "label": "Lens", "predictionPrompt": "What do you think the lens does?", "explanation": "The lens is like a glass eye. It bends the light coming from the outside world and focuses it inside the camera." },
-      { "id": "obturador", "emoji": "⏱️", "label": "Shutter", "predictionPrompt": "What do you think the shutter does?", "explanation": "The shutter is a curtain that opens and closes very fast, letting light in for just an instant, the right time to take the picture." },
-      { "id": "sensor", "emoji": "📸", "label": "Sensor", "predictionPrompt": "What do you think the sensor does?", "explanation": "The sensor is inside and captures the light that passed through the lens, turning it into a digital image." },
-      { "id": "botao-camara", "emoji": "🔘", "label": "Shutter button", "predictionPrompt": "What do you think the shutter button does?", "explanation": "When you press this button, you tell the camera the exact moment: open the shutter, let light in, and save the picture." }
+      {
+        "id": "lente",
+        "emoji": "🔍",
+        "label": "Lens",
+        "predictionPrompt": "What do you think the lens does?",
+        "explanation": "The lens is like a glass eye. It bends the light coming from the outside world and focuses it inside the camera."
+      },
+      {
+        "id": "obturador",
+        "emoji": "⏱️",
+        "label": "Shutter",
+        "predictionPrompt": "What do you think the shutter does?",
+        "explanation": "The shutter is a curtain that opens and closes very fast, letting light in for just an instant, the right time to take the picture."
+      },
+      {
+        "id": "sensor",
+        "emoji": "📸",
+        "label": "Sensor",
+        "predictionPrompt": "What do you think the sensor does?",
+        "explanation": "The sensor is inside and captures the light that passed through the lens, turning it into a digital image."
+      },
+      {
+        "id": "botao-camara",
+        "emoji": "🔘",
+        "label": "Shutter button",
+        "predictionPrompt": "What do you think the shutter button does?",
+        "explanation": "When you press this button, you tell the camera the exact moment: open the shutter, let light in, and save the picture."
+      }
     ],
     "summary": "Now you know how it works! The lens bends the light, the shutter opens for an instant, the sensor captures the image, and the button chooses the right moment to take the photo."
   },
@@ -122,11 +338,220 @@
     "category": "energia",
     "title": "Solar panel",
     "parts": [
-      { "id": "luz-sol", "emoji": "☀️", "label": "Sunlight", "predictionPrompt": "What do you think happens when sunlight hits the panel?", "explanation": "Sunlight is made of tiny packets of energy. When they hit the panel, that energy begins to be transformed." },
-      { "id": "celulas", "emoji": "🔲", "label": "Solar cells", "predictionPrompt": "What do you think the solar cells do?", "explanation": "The cells are made of a special material that releases electrons and creates electricity when light hits it." },
-      { "id": "inversor", "emoji": "🔌", "label": "Inverter", "predictionPrompt": "What do you think the inverter does?", "explanation": "The electricity that comes out of the panel isn't the right kind for the house. The inverter turns it into the kind of electricity we use in outlets." },
-      { "id": "fios", "emoji": "⚡", "label": "Wires", "predictionPrompt": "What do you think the electric wires do?", "explanation": "The wires carry the transformed electricity to the house, so you can turn on lights, watch TV, or charge your phone." }
+      {
+        "id": "luz-sol",
+        "emoji": "☀️",
+        "label": "Sunlight",
+        "predictionPrompt": "What do you think happens when sunlight hits the panel?",
+        "explanation": "Sunlight is made of tiny packets of energy. When they hit the panel, that energy begins to be transformed."
+      },
+      {
+        "id": "celulas",
+        "emoji": "🔲",
+        "label": "Solar cells",
+        "predictionPrompt": "What do you think the solar cells do?",
+        "explanation": "The cells are made of a special material that releases electrons and creates electricity when light hits it."
+      },
+      {
+        "id": "inversor",
+        "emoji": "🔌",
+        "label": "Inverter",
+        "predictionPrompt": "What do you think the inverter does?",
+        "explanation": "The electricity that comes out of the panel isn't the right kind for the house. The inverter turns it into the kind of electricity we use in outlets."
+      },
+      {
+        "id": "fios",
+        "emoji": "⚡",
+        "label": "Wires",
+        "predictionPrompt": "What do you think the electric wires do?",
+        "explanation": "The wires carry the transformed electricity to the house, so you can turn on lights, watch TV, or charge your phone."
+      }
     ],
     "summary": "Now you know how it works! Sunlight reaches the cells, the cells create electricity, the inverter turns it into the right kind, and the wires carry it to the house."
+  },
+  {
+    "id": "aspirador",
+    "emoji": "🧹",
+    "category": "casa",
+    "title": "Vacuum Cleaner",
+    "parts": [
+      {
+        "id": "motor-aspirador",
+        "emoji": "🔧",
+        "label": "Motor",
+        "predictionPrompt": "What do you think the vacuum's motor does?",
+        "explanation": "The motor spins very fast and creates strong suction, pulling air (and dust) into the vacuum."
+      },
+      {
+        "id": "filtro",
+        "emoji": "🌬️",
+        "label": "Filter",
+        "predictionPrompt": "What do you think the filter does?",
+        "explanation": "The filter lets air pass through but traps dust and dirt, so they don't blow back into the room."
+      },
+      {
+        "id": "escova",
+        "emoji": "🧽",
+        "label": "Brush",
+        "predictionPrompt": "What do you think the brush does?",
+        "explanation": "The brush rubs against the floor and loosens dust and hair, so they can be sucked up more easily through the tube."
+      },
+      {
+        "id": "saco",
+        "emoji": "🗑️",
+        "label": "Dust Bag",
+        "predictionPrompt": "What do you think the dust bag does?",
+        "explanation": "All the sucked-up dust is stored inside this bag (or container), until you empty it."
+      }
+    ],
+    "summary": "Now you know how it works! The motor sucks in air, the brush loosens dust from the floor, the filter cleans the air, and the bag holds all the dirt."
+  },
+  {
+    "id": "impressora",
+    "emoji": "🖨️",
+    "category": "tecnologia",
+    "title": "Printer",
+    "parts": [
+      {
+        "id": "cartucho",
+        "emoji": "🖋️",
+        "label": "Ink Cartridge",
+        "predictionPrompt": "What do you think the ink cartridge does?",
+        "explanation": "The ink cartridge holds the coloured or black ink that will draw the letters and images on the paper."
+      },
+      {
+        "id": "cabeca-impressao",
+        "emoji": "🎯",
+        "label": "Print Head",
+        "predictionPrompt": "What do you think the print head does?",
+        "explanation": "The print head slides back and forth and drops tiny drops of ink exactly where they're needed."
+      },
+      {
+        "id": "rolos",
+        "emoji": "🎡",
+        "label": "Rollers",
+        "predictionPrompt": "What do you think the rollers do?",
+        "explanation": "The rollers spin and slowly pull the paper into the printer, sheet by sheet."
+      },
+      {
+        "id": "papel",
+        "emoji": "📄",
+        "label": "Paper",
+        "predictionPrompt": "What do you think happens to the paper?",
+        "explanation": "The paper passes under the print head, receives the ink, and comes out already printed with the drawing or text."
+      }
+    ],
+    "summary": "Now you know how it works! The cartridge holds the ink, the print head spreads it in the right spot, the rollers pull the paper, and it comes out ready with what you printed."
+  },
+  {
+    "id": "semaforo",
+    "emoji": "🚦",
+    "category": "cidade",
+    "title": "Traffic Light",
+    "parts": [
+      {
+        "id": "sensor-transito",
+        "emoji": "🚗",
+        "label": "Sensor",
+        "predictionPrompt": "What do you think the traffic light's sensor does?",
+        "explanation": "Some traffic lights have a sensor that detects cars or people waiting, to know when the light needs to change."
+      },
+      {
+        "id": "controlador",
+        "emoji": "⏱️",
+        "label": "Controller",
+        "predictionPrompt": "What do you think the controller does?",
+        "explanation": "The controller is like a small computer that counts time and decides when each light should turn on."
+      },
+      {
+        "id": "luzes",
+        "emoji": "🔴",
+        "label": "Lights",
+        "predictionPrompt": "What do you think the lights do?",
+        "explanation": "The red, yellow, and green lights turn on in order, telling cars and people when to stop or go."
+      },
+      {
+        "id": "fios-semaforo",
+        "emoji": "⚡",
+        "label": "Electric Wires",
+        "predictionPrompt": "What do you think the electric wires do?",
+        "explanation": "The wires carry electricity to the traffic light, so the lights can turn on and the controller can work."
+      }
+    ],
+    "summary": "Now you know how it works! The sensor notices who's waiting, the controller decides the right moment, the lights turn on in order, and the wires power them all."
+  },
+  {
+    "id": "comboio",
+    "emoji": "🚆",
+    "category": "transporte",
+    "title": "Train",
+    "parts": [
+      {
+        "id": "motor-comboio",
+        "emoji": "🔧",
+        "label": "Engine",
+        "predictionPrompt": "What do you think the train's engine does?",
+        "explanation": "The engine turns electricity or fuel into force, spinning the wheels with a lot of power."
+      },
+      {
+        "id": "carris",
+        "emoji": "🛤️",
+        "label": "Rails",
+        "predictionPrompt": "What do you think the rails do?",
+        "explanation": "The rails are two metal tracks that guide the train, always keeping it on the right path."
+      },
+      {
+        "id": "rodas-comboio",
+        "emoji": "🎡",
+        "label": "Wheels",
+        "predictionPrompt": "What do you think the train's wheels do?",
+        "explanation": "The train's wheels are metal and fit perfectly onto the rails, spinning to move the train forward without leaving the track."
+      },
+      {
+        "id": "pantografo",
+        "emoji": "⚡",
+        "label": "Pantograph",
+        "predictionPrompt": "What do you think this part on top of the train does?",
+        "explanation": "The pantograph touches the electric wires above the line and brings the electricity down to the train's engine."
+      }
+    ],
+    "summary": "Now you know how it works! The engine creates the force, the rails guide the way, the wheels keep the train on the rails, and the pantograph brings the electricity."
+  },
+  {
+    "id": "escada-rolante",
+    "emoji": "🪜",
+    "category": "cidade",
+    "title": "Escalator",
+    "parts": [
+      {
+        "id": "motor-escada",
+        "emoji": "⚙️",
+        "label": "Motor",
+        "predictionPrompt": "What do you think the escalator's motor does?",
+        "explanation": "The motor keeps spinning nonstop and moves the whole escalator, so the steps can go up or down continuously."
+      },
+      {
+        "id": "corrente-escada",
+        "emoji": "⛓️",
+        "label": "Chain",
+        "predictionPrompt": "What do you think the chain does?",
+        "explanation": "A strong chain connects the motor to the steps, passing the movement along to the whole escalator."
+      },
+      {
+        "id": "degraus",
+        "emoji": "🪜",
+        "label": "Steps",
+        "predictionPrompt": "What do you think the steps do?",
+        "explanation": "The steps are attached to the chain and form a continuous staircase, appearing flat at the bottom and rising with edges as they climb."
+      },
+      {
+        "id": "corrimao",
+        "emoji": "🤚",
+        "label": "Handrail",
+        "predictionPrompt": "What do you think the handrail does?",
+        "explanation": "The handrail moves at the same speed as the steps, so you can rest your hand on it safely while going up or down."
+      }
+    ],
+    "summary": "Now you know how it works! The motor never stops spinning, the chain moves the steps, the steps form the staircase, and the handrail moves at the same pace so you can hold on."
   }
 ]

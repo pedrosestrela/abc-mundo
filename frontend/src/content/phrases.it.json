@@ -1,10 +1,142 @@
 [
-  { "phrase": "IL SOLE È GIALLO.", "emoji": "☀️", "hint": "Il sole è giallo." },
-  { "phrase": "IL GATTO DORME.", "emoji": "🐱", "hint": "Il gatto dorme." },
-  { "phrase": "TU MI PIACI.", "emoji": "❤️", "hint": "Tu mi piaci." },
-  { "phrase": "LA LUNA È ROTONDA.", "emoji": "🌙", "hint": "La luna è rotonda." },
-  { "phrase": "IL CANE CORRE NEL GIARDINO.", "emoji": "🐶", "hint": "Il cane corre nel giardino." },
-  { "phrase": "IO SONO FELICE.", "emoji": "😄", "hint": "Io sono felice." },
-  { "phrase": "LA MELA È ROSSA.", "emoji": "🍎", "hint": "La mela è rossa." },
-  { "phrase": "ANDIAMO A GIOCARE.", "emoji": "🧸", "hint": "Andiamo a giocare." }
+  {
+    "phrase": "IL SOLE È GIALLO.",
+    "emoji": "☀️",
+    "hint": "Il sole è giallo."
+  },
+  {
+    "phrase": "IL GATTO DORME.",
+    "emoji": "🐱",
+    "hint": "Il gatto dorme."
+  },
+  {
+    "phrase": "TU MI PIACI.",
+    "emoji": "❤️",
+    "hint": "Tu mi piaci."
+  },
+  {
+    "phrase": "LA LUNA È ROTONDA.",
+    "emoji": "🌙",
+    "hint": "La luna è rotonda."
+  },
+  {
+    "phrase": "IL CANE CORRE NEL GIARDINO.",
+    "emoji": "🐶",
+    "hint": "Il cane corre nel giardino."
+  },
+  {
+    "phrase": "IO SONO FELICE.",
+    "emoji": "😄",
+    "hint": "Io sono felice."
+  },
+  {
+    "phrase": "LA MELA È ROSSA.",
+    "emoji": "🍎",
+    "hint": "La mela è rossa."
+  },
+  {
+    "phrase": "ANDIAMO A GIOCARE.",
+    "emoji": "🧸",
+    "hint": "Andiamo a giocare."
+  },
+  {
+    "phrase": "LA MIA MAMMA CANTA.",
+    "emoji": "🎤",
+    "hint": "La mia mamma canta."
+  },
+  {
+    "phrase": "IL MIO PAPÀ LAVORA.",
+    "emoji": "👷",
+    "hint": "Il mio papà lavora."
+  },
+  {
+    "phrase": "LA NONNA FA I BISCOTTI.",
+    "emoji": "🍪",
+    "hint": "La nonna fa i biscotti."
+  },
+  {
+    "phrase": "IL FRATELLO STUDIA.",
+    "emoji": "📚",
+    "hint": "Il fratello studia."
+  },
+  {
+    "phrase": "LA BAMBINA VA A SCUOLA.",
+    "emoji": "🎒",
+    "hint": "La bambina va a scuola."
+  },
+  {
+    "phrase": "IL MAESTRO INSEGNA.",
+    "emoji": "👩‍🏫",
+    "hint": "Il maestro insegna."
+  },
+  {
+    "phrase": "CHI È IL TUO AMICO?",
+    "emoji": "🧑‍🤝‍🧑",
+    "hint": "Chi è il tuo amico?"
+  },
+  {
+    "phrase": "TI PIACE LA PIZZA?",
+    "emoji": "🍕",
+    "hint": "Ti piace la pizza?"
+  },
+  {
+    "phrase": "IO MANGIO PANE A COLAZIONE.",
+    "emoji": "🍞",
+    "hint": "Io mangio pane a colazione."
+  },
+  {
+    "phrase": "LA ZUPPA È CALDA.",
+    "emoji": "🍲",
+    "hint": "La zuppa è calda."
+  },
+  {
+    "phrase": "CHE GIORNO È OGGI?",
+    "emoji": "📅",
+    "hint": "Che giorno è oggi?"
+  },
+  {
+    "phrase": "STA PIOVENDO.",
+    "emoji": "🌧️",
+    "hint": "Sta piovendo."
+  },
+  {
+    "phrase": "FA MOLTO CALDO.",
+    "emoji": "🥵",
+    "hint": "Fa molto caldo."
+  },
+  {
+    "phrase": "C'È NEVE SULLA MONTAGNA.",
+    "emoji": "⛄",
+    "hint": "C'è neve sulla montagna."
+  },
+  {
+    "phrase": "IL PESCE NUOTA NEL MARE.",
+    "emoji": "🐠",
+    "hint": "Il pesce nuota nel mare."
+  },
+  {
+    "phrase": "L'UCCELLO CANTA SULL'ALBERO.",
+    "emoji": "🐦",
+    "hint": "L'uccello canta sull'albero."
+  },
+  {
+    "phrase": "LA FARFALLA VOLA.",
+    "emoji": "🦋",
+    "hint": "La farfalla vola."
+  },
+  {
+    "phrase": "HO PAURA.",
+    "emoji": "😨",
+    "hint": "Ho paura."
+  },
+  {
+    "phrase": "SONO STANCO.",
+    "emoji": "😴",
+    "hint": "Sono stanco."
+  },
+  {
+    "phrase": "OGGI SONO TRISTE.",
+    "emoji": "😢",
+    "hint": "Oggi sono triste."
+  }
 ]

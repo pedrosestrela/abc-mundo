@@ -1,10 +1,142 @@
 [
-  { "phrase": "太阳是黄色的。", "emoji": "☀️", "hint": "tàiyáng shì huángsè de." },
-  { "phrase": "猫在睡觉。", "emoji": "🐱", "hint": "māo zài shuìjiào." },
-  { "phrase": "我喜欢你。", "emoji": "❤️", "hint": "wǒ xǐhuān nǐ." },
-  { "phrase": "月亮是圆的。", "emoji": "🌙", "hint": "yuèliang shì yuán de." },
-  { "phrase": "狗在花园里跑。", "emoji": "🐶", "hint": "gǒu zài huāyuán lǐ pǎo." },
-  { "phrase": "我很快乐。", "emoji": "😄", "hint": "wǒ hěn kuàilè." },
-  { "phrase": "苹果是红色的。", "emoji": "🍎", "hint": "píngguǒ shì hóngsè de." },
-  { "phrase": "我们去玩吧。", "emoji": "🧸", "hint": "wǒmen qù wán ba." }
+  {
+    "phrase": "太阳是黄色的。",
+    "emoji": "☀️",
+    "hint": "tàiyáng shì huángsè de."
+  },
+  {
+    "phrase": "猫在睡觉。",
+    "emoji": "🐱",
+    "hint": "māo zài shuìjiào."
+  },
+  {
+    "phrase": "我喜欢你。",
+    "emoji": "❤️",
+    "hint": "wǒ xǐhuān nǐ."
+  },
+  {
+    "phrase": "月亮是圆的。",
+    "emoji": "🌙",
+    "hint": "yuèliang shì yuán de."
+  },
+  {
+    "phrase": "狗在花园里跑。",
+    "emoji": "🐶",
+    "hint": "gǒu zài huāyuán lǐ pǎo."
+  },
+  {
+    "phrase": "我很快乐。",
+    "emoji": "😄",
+    "hint": "wǒ hěn kuàilè."
+  },
+  {
+    "phrase": "苹果是红色的。",
+    "emoji": "🍎",
+    "hint": "píngguǒ shì hóngsè de."
+  },
+  {
+    "phrase": "我们去玩吧。",
+    "emoji": "🧸",
+    "hint": "wǒmen qù wán ba."
+  },
+  {
+    "phrase": "我妈妈在唱歌。",
+    "emoji": "🎤",
+    "hint": "wǒ māma zài chànggē."
+  },
+  {
+    "phrase": "我爸爸在工作。",
+    "emoji": "👷",
+    "hint": "wǒ bàba zài gōngzuò."
+  },
+  {
+    "phrase": "奶奶做饼干。",
+    "emoji": "🍪",
+    "hint": "nǎinai zuò bǐnggān."
+  },
+  {
+    "phrase": "哥哥在学习。",
+    "emoji": "📚",
+    "hint": "gēge zài xuéxí."
+  },
+  {
+    "phrase": "女孩去上学。",
+    "emoji": "🎒",
+    "hint": "nǚhái qù shàngxué."
+  },
+  {
+    "phrase": "老师在教课。",
+    "emoji": "👩‍🏫",
+    "hint": "lǎoshī zài jiāokè."
+  },
+  {
+    "phrase": "你的朋友是谁？",
+    "emoji": "🧑‍🤝‍🧑",
+    "hint": "nǐ de péngyou shì shéi?"
+  },
+  {
+    "phrase": "你喜欢比萨吗？",
+    "emoji": "🍕",
+    "hint": "nǐ xǐhuan bǐsà ma?"
+  },
+  {
+    "phrase": "我早餐吃面包。",
+    "emoji": "🍞",
+    "hint": "wǒ zǎocān chī miànbāo."
+  },
+  {
+    "phrase": "汤很热。",
+    "emoji": "🍲",
+    "hint": "tāng hěn rè."
+  },
+  {
+    "phrase": "今天星期几？",
+    "emoji": "📅",
+    "hint": "jīntiān xīngqī jǐ?"
+  },
+  {
+    "phrase": "正在下雨。",
+    "emoji": "🌧️",
+    "hint": "zhèngzài xiàyǔ."
+  },
+  {
+    "phrase": "天气很热。",
+    "emoji": "🥵",
+    "hint": "tiānqì hěn rè."
+  },
+  {
+    "phrase": "山上有雪。",
+    "emoji": "⛄",
+    "hint": "shān shàng yǒu xuě."
+  },
+  {
+    "phrase": "鱼在海里游。",
+    "emoji": "🐠",
+    "hint": "yú zài hǎi lǐ yóu."
+  },
+  {
+    "phrase": "小鸟在树上唱歌。",
+    "emoji": "🐦",
+    "hint": "xiǎoniǎo zài shù shàng chànggē."
+  },
+  {
+    "phrase": "蝴蝶在飞。",
+    "emoji": "🦋",
+    "hint": "húdié zài fēi."
+  },
+  {
+    "phrase": "我害怕。",
+    "emoji": "😨",
+    "hint": "wǒ hàipà."
+  },
+  {
+    "phrase": "我很累。",
+    "emoji": "😴",
+    "hint": "wǒ hěn lèi."
+  },
+  {
+    "phrase": "今天我很难过。",
+    "emoji": "😢",
+    "hint": "jīntiān wǒ hěn nánguò."
+  }
 ]
