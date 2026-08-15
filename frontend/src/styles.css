@@ -1160,6 +1160,10 @@ body {
   line-height: 1.8;
 }
 
+.song-lyric-line.active {
+  font-weight: 700;
+}
+
 .story-card {
   cursor: pointer;
 }

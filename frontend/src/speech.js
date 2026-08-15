@@ -110,15 +110,48 @@ export function speak(text, langCode, onWordBoundary) {
   }
 }
 
-export async function speakSequence(lines, langCode) {
+// Speaks `lines` one phrase at a time (e.g. song lyric lines), with a short
+// pause between phrases so the result reads as rhythmic phrasing rather than
+// one run-on paragraph. This is still plain TTS — the Web Speech API has no
+// way to carry a melody or lock pitch to a backing track's key — but pacing
+// speech line-by-line with brief gaps, plus a slightly warmer/more varied
+// pitch than narration defaults, is the closest approximation reachable
+// on-device with no paid service.
+//
+// `options`:
+//  - onLineStart(index): called right before each line starts speaking, so
+//    callers can highlight the current lyric line.
+//  - onWordBoundary(charIndex): forwarded from the current line's utterance
+//    `onboundary` event (see `speak()` above), for word-level highlighting
+//    within the active line. charIndex is relative to that line's text.
+//  - pauseMs: silence between lines (default 450ms — a reasonable fixed
+//    approximation of a song beat; music.js's background loop doesn't expose
+//    a reusable BPM, only a fixed 0.4s-per-note melody loop).
+//  - rate / pitch: song-specific prosody defaults, tuned a little warmer/more
+//    melodic-sounding than narration's speak() defaults (rate 0.9 / pitch 1.1).
+export async function speakSequence(lines, langCode, options = {}) {
+  const { onLineStart, onWordBoundary, pauseMs = 450, rate = 0.85, pitch = 1.15 } = options;
   if (!isSpeechAvailable()) return;
-  for (const line of lines) {
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    if (typeof onLineStart === "function") onLineStart(i);
     await new Promise((resolve) => {
       const utterance = buildUtterance(line, langCode);
-      utterance.rate = 0.85;
+      utterance.rate = rate;
+      utterance.pitch = pitch;
+      if (typeof onWordBoundary === "function") {
+        utterance.onboundary = (event) => {
+          if (event.name === "word" || event.name === undefined) {
+            onWordBoundary(event.charIndex);
+          }
+        };
+      }
       utterance.onend = resolve;
       utterance.onerror = resolve;
       window.speechSynthesis.speak(utterance);
     });
+    if (pauseMs > 0 && i < lines.length - 1) {
+      await new Promise((resolve) => setTimeout(resolve, pauseMs));
+    }
   }
 }
