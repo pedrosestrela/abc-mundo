@@ -29,6 +29,66 @@
       "title": "Une Petite Poule",
       "emoji": "🐔",
       "text": "Une petite poule dans la cour,\nPond des œufs tout le jour,\nUn, deux, trois, quatre, cinq,\nCompte les œufs, c'est malin!"
+    },
+    {
+      "id": "leng-06",
+      "title": "Am Stram Gram",
+      "emoji": "🔢",
+      "text": "Am, stram, gram,\npic et pic et colegram,\nbour et bour et ratatam,\nam, stram, gram!"
+    },
+    {
+      "id": "leng-07",
+      "title": "Une Poule Sur Un Mur",
+      "emoji": "🐔",
+      "text": "Une poule sur un mur,\nqui picore du pain dur,\npicoti, picota,\nlève la queue et puis s'en va!"
+    },
+    {
+      "id": "leng-08",
+      "title": "Ainsi Font, Font, Font",
+      "emoji": "🎎",
+      "text": "Ainsi font, font, font,\nles petites marionnettes,\nainsi font, font, font,\ntrois petits tours et puis s'en vont!"
+    },
+    {
+      "id": "leng-09",
+      "title": "Meunier, Tu Dors",
+      "emoji": "🌾",
+      "text": "Meunier, tu dors,\nton moulin, ton moulin va trop vite,\nmeunier, tu dors,\nton moulin, ton moulin va trop fort!"
+    },
+    {
+      "id": "leng-10",
+      "title": "Un, Deux, Trois",
+      "emoji": "🌳",
+      "text": "Un, deux, trois,\nnous irons au bois,\nquatre, cinq, six,\ncueillir des cerises!"
+    },
+    {
+      "id": "leng-11",
+      "title": "Il Court, Il Court, Le Furet",
+      "emoji": "🦡",
+      "text": "Il court, il court, le furet,\nle furet du bois, mesdames,\nil court, il court, le furet,\nle furet du bois joli!"
+    },
+    {
+      "id": "leng-12",
+      "title": "Savez-vous Planter Les Choux",
+      "emoji": "🥬",
+      "text": "Savez-vous planter les choux,\nà la mode, à la mode,\nsavez-vous planter les choux,\nà la mode de chez nous?"
+    },
+    {
+      "id": "leng-13",
+      "title": "Dodo, l'Enfant Do",
+      "emoji": "🌙",
+      "text": "Dodo, l'enfant do,\nl'enfant dormira bientôt,\nun, deux, trois,\nferme les yeux, c'est pour toi!"
+    },
+    {
+      "id": "leng-14",
+      "title": "La Souris Verte",
+      "emoji": "🐁",
+      "text": "Une souris verte,\nqui courait dans l'herbe,\nje l'attrape par la queue,\nje la montre à ces messieurs!"
+    },
+    {
+      "id": "leng-15",
+      "title": "Compère Guilleri",
+      "emoji": "🏹",
+      "text": "Il était un petit homme,\nqui s'appelait Guilleri,\ncarabi,\nil s'en fut à la chasse, à la chasse aux perdrix!"
     }
   ],
   "travalinguas": [
@@ -61,6 +121,66 @@
       "title": "Le Ver Vert",
       "emoji": "🐛",
       "text": "Un ver vert va vers un verre vert."
+    },
+    {
+      "id": "tt-6",
+      "title": "Les Chaussettes de l'Archiduchesse",
+      "emoji": "🧦",
+      "text": "Les chaussettes de l'archiduchesse sont-elles sèches, archi-sèches?"
+    },
+    {
+      "id": "tt-7",
+      "title": "Un Chasseur Sachant Chasser",
+      "emoji": "🏹",
+      "text": "Un chasseur sachant chasser doit savoir chasser sans son chien."
+    },
+    {
+      "id": "tt-8",
+      "title": "Six Saucissons Secs",
+      "emoji": "🌭",
+      "text": "Six cent six saucissons secs suspendus au plafond."
+    },
+    {
+      "id": "tt-9",
+      "title": "Les Cyprès",
+      "emoji": "🌲",
+      "text": "Ces cyprès sont si loin qu'on ne sait si c'en sont."
+    },
+    {
+      "id": "tt-10",
+      "title": "Le Dragon Gradé",
+      "emoji": "🐉",
+      "text": "Un dragon gradé dégrade un gradé dragon."
+    },
+    {
+      "id": "tt-11",
+      "title": "Trois Gros Rats Gris",
+      "emoji": "🐀",
+      "text": "Trois gros rats gris dans trois gros trous ronds rongent trois gros crotons."
+    },
+    {
+      "id": "tt-12",
+      "title": "Cinq Chiens",
+      "emoji": "🐕",
+      "text": "Cinq chiens chassent six chats."
+    },
+    {
+      "id": "tt-13",
+      "title": "Didon Dîna",
+      "emoji": "🦆",
+      "text": "Didon dîna, dit-on, du dos d'un dodu dindon."
+    },
+    {
+      "id": "tt-14",
+      "title": "Ton Thé",
+      "emoji": "🍵",
+      "text": "Ton thé t'a-t-il ôté ta toux?"
+    },
+    {
+      "id": "tt-15",
+      "title": "Gros Gras Grain d'Orge",
+      "emoji": "🌾",
+      "text": "Gros gras grand grain d'orge, quand te dégraingraingraingraineras-tu?"
     }
   ],
   "rimas": [
@@ -99,6 +219,60 @@
       "title": "Bonne Nuit, Lune",
       "emoji": "🌙",
       "text": "Bonne nuit, lune toute ronde,\nAllume les étoiles du monde,\nDort la terre, dort le sable,\nJusqu'au soleil, jour semblable."
+    },
+    {
+      "id": "rima-07",
+      "title": "L'oiseau matinal",
+      "emoji": "🐦",
+      "text": "L'oiseau chante au petit jour,\nIl annonce le jour qui vient,\nIl vole haut, plein d'amour,\nDans le ciel bleu qui devient sien."
+    },
+    {
+      "id": "rima-08",
+      "title": "L'automne doré",
+      "emoji": "🍂",
+      "text": "Les feuilles tombent doucement,\nPeignant le sol d'or et de brun,\nLe vent joue tout gaiement,\nAvec chaque feuille, un à un."
+    },
+    {
+      "id": "rima-09",
+      "title": "L'hiver froid",
+      "emoji": "❄️",
+      "text": "L'hiver apporte l'air glacé,\nCouvre la terre de blanc pur,\nOn boit du chocolat bien chaud,\nEt on regarde les flocons sûrs."
+    },
+    {
+      "id": "rima-10",
+      "title": "Le printemps arrive",
+      "emoji": "🌸",
+      "text": "Le printemps s'éveille en douceur,\nLes arbres fleurissent, gais et beaux,\nLe champ embaume avec bonheur,\nUne saison chaude et nouveau."
+    },
+    {
+      "id": "rima-11",
+      "title": "L'été à la plage",
+      "emoji": "🏖️",
+      "text": "En été on va à la mer,\nJouer dans le sable et les vagues,\nLe soleil brille, l'air est clair,\nUne invitation qui nous ravage."
+    },
+    {
+      "id": "rima-12",
+      "title": "Mon chien fidèle",
+      "emoji": "🐶",
+      "text": "Mon chien court et aboie joyeux,\nCourant après la balle, hardi,\nIl remue la queue, c'est merveilleux,\nMon meilleur ami, toujours ici."
+    },
+    {
+      "id": "rima-13",
+      "title": "Le poisson doré",
+      "emoji": "🐠",
+      "text": "Dans l'aquarium il nage doux,\nUn petit poisson couleur soleil,\nIl aime l'eau, va où bon lui semble,\nNageant tranquille, sans pareil."
+    },
+    {
+      "id": "rima-14",
+      "title": "Chère grand-mère",
+      "emoji": "👵",
+      "text": "Grand-mère raconte chaque soir,\nD'une voix douce, un câlin chaud,\nElle garde toujours un bonbon noir,\nPlein d'amour pour tous les mots."
+    },
+    {
+      "id": "rima-15",
+      "title": "Balade en forêt",
+      "emoji": "🌳",
+      "text": "Dans la forêt le vent soupire,\nEntre les arbres hauts et verts,\nL'écureuil saute sans rien dire,\nEt la rivière suit son cours, fier."
     }
   ]
 }

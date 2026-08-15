@@ -29,6 +29,66 @@
       "title": "Una Gallinella",
       "emoji": "🐔",
       "text": "Una gallinella nel cortile,\nFa le uova con stile,\nUno, due, tre, quattro, cinque,\nConta le uova, quante ne vinci!"
+    },
+    {
+      "id": "leng-06",
+      "title": "Ambarabà Ciccì Coccò",
+      "emoji": "🦉",
+      "text": "Ambarabà, ciccì, coccò,\ntre civette sul comò,\nche facevano l'amore,\ncon la figlia del dottore!"
+    },
+    {
+      "id": "leng-07",
+      "title": "Girotondo",
+      "emoji": "🌍",
+      "text": "Giro giro tondo,\ncasca il mondo,\ncasca la terra,\ntutti giù per terra!"
+    },
+    {
+      "id": "leng-08",
+      "title": "Batti Batti le Manine",
+      "emoji": "🙌",
+      "text": "Batti, batti le manine,\nche domani viene Santa Caterina,\ncol vestito delle rose,\nbatti, batti tutte due!"
+    },
+    {
+      "id": "leng-09",
+      "title": "Din Don Campanon",
+      "emoji": "🔔",
+      "text": "Din, don, campanon,\ntre galline e un cappon,\nvanno in chiesa a passeggiare,\ndin, don, campanon!"
+    },
+    {
+      "id": "leng-10",
+      "title": "La Vecchina",
+      "emoji": "🧶",
+      "text": "C'era una vecchina,\nche filava la lanina,\ncon il fuso e la conocchia,\nfilando fin di notte!"
+    },
+    {
+      "id": "leng-11",
+      "title": "Uno, Due, Tre",
+      "emoji": "⭐",
+      "text": "Uno, due, tre,\nstella, stellina,\nquattro, cinque, sei,\nchi conta indovina!"
+    },
+    {
+      "id": "leng-12",
+      "title": "Pasqualino",
+      "emoji": "🍩",
+      "text": "Pasqualino, ohi Pasqualino,\ndove sei stato stamattino?\nSono stato dalla nonna,\na mangiar la buona ciambella!"
+    },
+    {
+      "id": "leng-13",
+      "title": "Il Gatto e la Volpe",
+      "emoji": "🦊",
+      "text": "Un gatto e una volpe,\ncamminavano per la via,\nuno, due, tre passi,\nchi arriva primo, vince l'allegria!"
+    },
+    {
+      "id": "leng-14",
+      "title": "Sotto la Cappa del Camino",
+      "emoji": "🧦",
+      "text": "Sotto la cappa del camino,\nc'è un vecchietto piccolino,\nche fa le scarpe alla Regina,\nun, due, tre, la sua manina!"
+    },
+    {
+      "id": "leng-15",
+      "title": "La Filastrocca delle Stelle",
+      "emoji": "⭐",
+      "text": "Una stella, due stelle,\nbrillano su nel ciel,\ntre, quattro, tante belle,\nconta insieme a me, fratel!"
     }
   ],
   "travalinguas": [
@@ -61,6 +121,66 @@
       "title": "Trentatré Rane",
       "emoji": "🐸",
       "text": "Tre tigri contro tre tigri, tra tre tigri tre giare."
+    },
+    {
+      "id": "tt-6",
+      "title": "Trentatré Trentini",
+      "emoji": "🎪",
+      "text": "Trentatré trentini entrarono a Trento, tutti e trentatré trotterellando."
+    },
+    {
+      "id": "tt-7",
+      "title": "Sopra la Panca",
+      "emoji": "🐐",
+      "text": "Sopra la panca la capra campa, sotto la panca la capra crepa."
+    },
+    {
+      "id": "tt-8",
+      "title": "Apelle Figlio di Apollo",
+      "emoji": "⚽",
+      "text": "Apelle figlio di Apollo fece una palla di pelle di pollo."
+    },
+    {
+      "id": "tt-9",
+      "title": "Il Cane Corridore",
+      "emoji": "🐕",
+      "text": "Orrore, orrore, un cane corre in un corridoio e rincorre un core."
+    },
+    {
+      "id": "tt-10",
+      "title": "L'Aglio Nascosto",
+      "emoji": "🧄",
+      "text": "Sotto un cespuglio di rose nascoste cresce l'aglio."
+    },
+    {
+      "id": "tt-11",
+      "title": "L'Arcivescovo",
+      "emoji": "⛪",
+      "text": "L'arcivescovo di Costantinopoli si disarcivescoviscostantinopolizzò."
+    },
+    {
+      "id": "tt-12",
+      "title": "Tigri Contro Tori",
+      "emoji": "🐯",
+      "text": "Trentatré tigri contro trentatré tori."
+    },
+    {
+      "id": "tt-13",
+      "title": "Sei Scienziati",
+      "emoji": "🎿",
+      "text": "Sei scienziati scesero a sciare sugli sci di Sisto."
+    },
+    {
+      "id": "tt-14",
+      "title": "Il Ramarro Marrone",
+      "emoji": "🦎",
+      "text": "Un ramarro marrone corre nel prato rado."
+    },
+    {
+      "id": "tt-15",
+      "title": "Il Rospo Rospante",
+      "emoji": "🐸",
+      "text": "Un rospo rospante rospava rospando sopra un ramo."
     }
   ],
   "rimas": [
@@ -99,6 +219,60 @@
       "title": "Buonanotte, Luna",
       "emoji": "🌙",
       "text": "Buonanotte, luna tonda e chiara,\nAccendi le stelle, la notte è cara,\nDorme la terra, dorme la sabbia,\nFino al sole nuovo, che presto raggia."
+    },
+    {
+      "id": "rima-07",
+      "title": "L'uccellino mattiniero",
+      "emoji": "🐦",
+      "text": "L'uccellino canta all'alba chiara,\nAnnuncia che il giorno arriva,\nVola in alto, senza paura,\nNel cielo azzurro che si ravviva."
+    },
+    {
+      "id": "rima-08",
+      "title": "L'autunno dorato",
+      "emoji": "🍂",
+      "text": "Le foglie cadono piano piano,\nDipingono il suolo d'oro e marrone,\nIl vento gioca con la sua mano,\nCon ogni foglia, una canzone."
+    },
+    {
+      "id": "rima-09",
+      "title": "L'inverno freddo",
+      "emoji": "❄️",
+      "text": "L'inverno porta l'aria gelata,\nCopre la terra di bianco puro,\nBeviamo cioccolata profumata,\nGuardando la neve nel cielo scuro."
+    },
+    {
+      "id": "rima-10",
+      "title": "La primavera arriva",
+      "emoji": "🌸",
+      "text": "La primavera si sveglia lieta,\nGli alberi in fiore, dolce calore,\nIl campo profuma, quieta,\nUna stagione nuova e in fiore."
+    },
+    {
+      "id": "rima-11",
+      "title": "L'estate in spiaggia",
+      "emoji": "🏖️",
+      "text": "D'estate andiamo verso il mare,\nA giocare sulla sabbia e l'onda,\nIl sole splende, l'aria è chiara,\nUn invito che ci circonda."
+    },
+    {
+      "id": "rima-12",
+      "title": "Il mio cane fedele",
+      "emoji": "🐶",
+      "text": "Il mio cane corre e abbaia allegro,\nDietro la palla salta e va,\nScodinzola, non è mai stanco,\nÈ il mio migliore amico qua."
+    },
+    {
+      "id": "rima-13",
+      "title": "Il pesciolino dorato",
+      "emoji": "🐠",
+      "text": "Nell'acquario nuota piano piano,\nUn pesciolino color del sole,\nAma l'acqua, va lontano,\nNuotando dolce, senza cruccio."
+    },
+    {
+      "id": "rima-14",
+      "title": "Cara nonnina",
+      "emoji": "👵",
+      "text": "La nonna racconta ogni sera,\nCon voce dolce, un abbraccio caldo,\nHa sempre un dolcetto che spera,\nPieno d'amore, sempre saldo."
+    },
+    {
+      "id": "rima-15",
+      "title": "Passeggiata nel bosco",
+      "emoji": "🌳",
+      "text": "Nel bosco il vento sospira piano,\nTra gli alberi alti e verdi va,\nLo scoiattolo salta con la mano,\nMentre il fiume il suo corso fa."
     }
   ]
 }

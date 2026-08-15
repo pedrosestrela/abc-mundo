@@ -29,6 +29,66 @@
       "title": "One Little Hen",
       "emoji": "🐔",
       "text": "One little hen in the yard,\nLaying eggs, working hard,\nOne, two, three, four, five,\nCount the eggs while they arrive!"
+    },
+    {
+      "id": "leng-06",
+      "title": "One Potato, Two Potato",
+      "emoji": "🥔",
+      "text": "One potato, two potato, three potato, four,\nFive potato, six potato, seven potato, more!"
+    },
+    {
+      "id": "leng-07",
+      "title": "Ring Around the Rosie",
+      "emoji": "🌹",
+      "text": "Ring around the rosie,\nA pocket full of posies,\nAshes, ashes,\nWe all fall down!"
+    },
+    {
+      "id": "leng-08",
+      "title": "Engine, Engine Number Nine",
+      "emoji": "🚂",
+      "text": "Engine, engine, number nine,\nRunning down Chicago line,\nIf the train runs off the track,\nDo you want your money back?"
+    },
+    {
+      "id": "leng-09",
+      "title": "Bubble Gum",
+      "emoji": "🍬",
+      "text": "Bubble gum, bubble gum, in a dish,\nHow many pieces do you wish?"
+    },
+    {
+      "id": "leng-10",
+      "title": "Star Light, Star Bright",
+      "emoji": "⭐",
+      "text": "Star light, star bright,\nFirst star I see tonight,\nI wish I may, I wish I might,\nHave the wish I wish tonight."
+    },
+    {
+      "id": "leng-11",
+      "title": "Doctor Foster",
+      "emoji": "☔",
+      "text": "Doctor Foster went to Gloucester,\nIn a shower of rain,\nHe stepped in a puddle right up to his middle,\nAnd never went there again."
+    },
+    {
+      "id": "leng-12",
+      "title": "Hickory Dickory Dock",
+      "emoji": "🕰️",
+      "text": "Hickory dickory dock,\nThe mouse ran up the clock,\nThe clock struck one,\nThe mouse ran down, hickory dickory dock!"
+    },
+    {
+      "id": "leng-13",
+      "title": "This Little Piggy",
+      "emoji": "🐷",
+      "text": "This little piggy went to market,\nThis little piggy stayed home,\nThis little piggy had roast beef,\nThis little piggy had none."
+    },
+    {
+      "id": "leng-14",
+      "title": "Rain Before Seven",
+      "emoji": "🌦️",
+      "text": "Rain before seven,\nClear by eleven,\nSun in the morning,\nA sunny day's warning."
+    },
+    {
+      "id": "leng-15",
+      "title": "One, Two, Buckle My Shoe",
+      "emoji": "👟",
+      "text": "One, two, buckle my shoe,\nThree, four, knock at the door,\nFive, six, pick up sticks,\nSeven, eight, lay them straight!"
     }
   ],
   "travalinguas": [
@@ -61,6 +121,66 @@
       "title": "Betty Botter",
       "emoji": "🧈",
       "text": "Betty Botter bought some butter, but she said the butter's bitter."
+    },
+    {
+      "id": "tt-6",
+      "title": "Six Slippery Snails",
+      "emoji": "🐌",
+      "text": "Six slippery snails slid slowly seaward."
+    },
+    {
+      "id": "tt-7",
+      "title": "Red Lorry, Yellow Lorry",
+      "emoji": "🚚",
+      "text": "Red lorry, yellow lorry, red lorry, yellow lorry."
+    },
+    {
+      "id": "tt-8",
+      "title": "Unique New York",
+      "emoji": "🗽",
+      "text": "Unique New York, unique New York, unique New York."
+    },
+    {
+      "id": "tt-9",
+      "title": "Toy Boat",
+      "emoji": "🚤",
+      "text": "Toy boat, toy boat, toy boat."
+    },
+    {
+      "id": "tt-10",
+      "title": "Black Bug's Blood",
+      "emoji": "🐞",
+      "text": "A black bug bit a big black bear."
+    },
+    {
+      "id": "tt-11",
+      "title": "Chuck's Truck",
+      "emoji": "🚛",
+      "text": "Chuck's truck struck a truck full of stuck trucks."
+    },
+    {
+      "id": "tt-12",
+      "title": "Greek Grapes",
+      "emoji": "🍇",
+      "text": "Greek grapes, Greek grapes, Greek grapes."
+    },
+    {
+      "id": "tt-13",
+      "title": "She Sees Cheese",
+      "emoji": "🧀",
+      "text": "She sees cheese, she seeks cheese."
+    },
+    {
+      "id": "tt-14",
+      "title": "Truly Rural",
+      "emoji": "🌾",
+      "text": "Truly rural, truly rural, truly rural."
+    },
+    {
+      "id": "tt-15",
+      "title": "Freshly Fried Fish",
+      "emoji": "🐟",
+      "text": "Freshly fried fish, freshly fried fish, freshly fried fish."
     }
   ],
   "rimas": [
@@ -99,6 +219,60 @@
       "title": "Good Night, Moon",
       "emoji": "🌙",
       "text": "Good night, moon so round and bright,\nLighting up the stars tonight,\nSleep the earth, sleep the sand,\nUntil the sun's new day at hand."
+    },
+    {
+      "id": "rima-07",
+      "title": "The Early Bird",
+      "emoji": "🐦",
+      "text": "The little bird sings at dawn's first light,\nAnnouncing that the day's in sight,\nIt flies up high, brave and free,\nInto the bluest sky I see."
+    },
+    {
+      "id": "rima-08",
+      "title": "Golden Autumn",
+      "emoji": "🍂",
+      "text": "The leaves fall softly, gold and brown,\nThey paint a carpet on the ground,\nThe wind loves playing all around,\nWith every leaf that flutters down."
+    },
+    {
+      "id": "rima-09",
+      "title": "Cold Winter",
+      "emoji": "❄️",
+      "text": "Winter brings the frosty air,\nCovers the earth in white so fair,\nWe sip warm cocoa by the fire,\nAnd watch the snowflakes drift up higher."
+    },
+    {
+      "id": "rima-10",
+      "title": "Spring Has Come",
+      "emoji": "🌸",
+      "text": "Springtime wakes with gentle cheer,\nThe trees are blooming, flowers near,\nThe fields smell sweet, the sun feels near,\nA warmer season now is here."
+    },
+    {
+      "id": "rima-11",
+      "title": "Summer at the Beach",
+      "emoji": "🏖️",
+      "text": "In summer we go to the shore,\nTo play in sand and waves galore,\nThe sun shines bright, the tide will pour,\nAn invitation to explore."
+    },
+    {
+      "id": "rima-12",
+      "title": "My Faithful Dog",
+      "emoji": "🐶",
+      "text": "My dog runs fast and barks with glee,\nChasing balls so happily,\nHe wags his tail, never tired,\nMy best friend, always admired."
+    },
+    {
+      "id": "rima-13",
+      "title": "The Golden Fish",
+      "emoji": "🐠",
+      "text": "In the tank it swims so slow,\nA little fish with sunny glow,\nIt loves the water, to and fro,\nSwimming gently, soft and low."
+    },
+    {
+      "id": "rima-14",
+      "title": "Dear Grandma",
+      "emoji": "👵",
+      "text": "Grandma tells stories every night,\nWith a soft voice and a hug so tight,\nShe always keeps a sweet treat near,\nFull of love for all so dear."
+    },
+    {
+      "id": "rima-15",
+      "title": "Forest Walk",
+      "emoji": "🌳",
+      "text": "In the forest the wind does blow,\nAmong the trees so tall, they grow,\nThe squirrel jumps and won't stay slow,\nWhile the river keeps its flow."
     }
   ]
 }
