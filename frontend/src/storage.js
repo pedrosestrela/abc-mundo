@@ -160,14 +160,55 @@ export function getCompletedMissions(profileName) {
   return all[profileName || "Explorer"] || [];
 }
 
-export function completeMission(profileName, missionId) {
+export function completeMission(profileName, missionId, reaction) {
   const name = profileName || "Explorer";
   const all = loadMissionsDone();
   const done = new Set(all[name] || []);
   done.add(missionId);
   all[name] = Array.from(done);
   saveMissionsDone(all);
+  if (reaction) {
+    saveMissionReaction(name, missionId, reaction);
+  }
   return all[name];
+}
+
+// Optional "como foi?" reaction (emoji) the child picks after completing a
+// mission, stored separately from the plain completed-id list above so the
+// existing completeMission/getCompletedMissions shape never changes for
+// callers that don't care about reactions.
+const MISSION_REACTIONS_KEY = "abcmundo.missionReactions";
+
+function loadMissionReactions() {
+  try {
+    const raw = localStorage.getItem(MISSION_REACTIONS_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveMissionReactionsAll(all) {
+  try {
+    localStorage.setItem(MISSION_REACTIONS_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+function saveMissionReaction(profileName, missionId, reaction) {
+  const name = profileName || "Explorer";
+  const all = loadMissionReactions();
+  const forProfile = all[name] || {};
+  forProfile[missionId] = reaction;
+  all[name] = forProfile;
+  saveMissionReactionsAll(all);
+  return all[name];
+}
+
+export function getMissionReactions(profileName) {
+  const all = loadMissionReactions();
+  return all[profileName || "Explorer"] || {};
 }
 
 // --- World Explorer ("Passaporte do Explorador") ---

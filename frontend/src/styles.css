@@ -3005,6 +3005,84 @@ body {
   font-size: 0.7rem;
 }
 
+.mission-hook {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #6b5a1e;
+  background: #fff8e0;
+  border-radius: 12px;
+  padding: 8px 12px;
+  margin: 8px 0;
+}
+
+.mission-hook-small {
+  font-size: 0.85rem;
+  padding: 6px 10px;
+}
+
+.mission-reflection {
+  margin-top: 8px;
+}
+
+.mission-reflection-prompt {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.mission-reaction-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.mission-reaction-btn {
+  font-size: 1.8rem;
+  background: #fff;
+  border: 2px solid var(--yellow);
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.mission-reaction-btn:hover,
+.mission-reaction-btn:focus-visible {
+  transform: scale(1.1);
+}
+
+.mission-reflection-skip {
+  background: none;
+  border: none;
+  color: #888;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.mission-reaction-tag {
+  font-size: 1.1rem;
+}
+
+.mission-featured-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  max-width: 960px;
+  margin: 0 auto 16px;
+}
+
+.mission-card-featured {
+  max-width: 260px;
+  margin: 0;
+}
+
+.mission-text-small {
+  font-size: 1rem;
+}
+
 .world-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
