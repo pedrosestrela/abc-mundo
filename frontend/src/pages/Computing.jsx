@@ -13,6 +13,7 @@ import {
 import SpeakButton from "../components/SpeakButton.jsx";
 import HelpButton from "../components/HelpButton.jsx";
 import AgeAdvisory from "../components/AgeAdvisory.jsx";
+import MascotBubble from "../components/mascots/MascotBubble.jsx";
 
 const TOPIC_ICONS = {
   hardware: "🔧",
@@ -246,6 +247,9 @@ export default function Computing() {
         <HelpButton text={t("modules.computingHelpConcepts")} langCode={pair.mother} />
       </div>
       <p className="page-intro">{t("modules.computingIntro")}</p>
+      <MascotBubble character="bit" mood="happy" langCode={pair.mother}>
+        {t("modules.computingMascotIntro")}
+      </MascotBubble>
 
       <div className="phonics-tabs">
         <button type="button" className={"phonics-tab" + (tab === "concepts" ? " selected" : "")} onClick={() => setTab("concepts")}>

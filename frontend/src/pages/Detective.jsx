@@ -6,6 +6,7 @@ import SpeakButton from "../components/SpeakButton.jsx";
 import HelpButton from "../components/HelpButton.jsx";
 import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
 import AgeAdvisory from "../components/AgeAdvisory.jsx";
+import MascotBubble from "../components/mascots/MascotBubble.jsx";
 import { useNavigate } from "react-router-dom";
 
 // Tier -> rounds: this module only makes sense from tier 2 (age 7+) up.
@@ -446,6 +447,9 @@ export default function Detective() {
         <HelpButton text={t("modules." + activeTab.helpKey)} langCode={pair.mother} />
       </div>
       <p className="page-intro">{t("modules.detectiveIntro")}</p>
+      <MascotBubble character="lumi" mood="thinking" langCode={pair.mother}>
+        {t("modules.detectiveMascotIntro")}
+      </MascotBubble>
 
       <div className="phonics-tabs">
         {MODE_TABS.map((m) => (

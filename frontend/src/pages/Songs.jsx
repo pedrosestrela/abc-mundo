@@ -6,6 +6,7 @@ import { isSpeechAvailable, speakSequence } from "../speech.js";
 import { startBackgroundMusic, stopBackgroundMusic } from "../music.js";
 import Illustration from "../components/Illustrations.jsx";
 import HelpButton from "../components/HelpButton.jsx";
+import MascotBubble from "../components/mascots/MascotBubble.jsx";
 
 export default function Songs() {
   const { t } = useTranslation();
@@ -31,6 +32,9 @@ export default function Songs() {
         <HelpButton text={t("modules.songsHelpMain")} langCode={pair.secondary} />
       </div>
       {!isSpeechAvailable() && <p className="speech-unavailable">{t("modules.speechUnavailable")}</p>}
+      <MascotBubble character="milo" mood="happy" langCode={pair.mother}>
+        {t("modules.songsMascotIntro")}
+      </MascotBubble>
       <div className="song-list">
         {Array.from({ length: count }).map((_, i) => {
           const m = motherSongs[i];

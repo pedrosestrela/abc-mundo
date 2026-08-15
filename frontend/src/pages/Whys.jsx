@@ -4,6 +4,7 @@ import { getWhys } from "../content/index.js";
 import { getLangPair, getProfile, pingProgress, exploreWhy, getExploredWhys } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
 import HelpButton from "../components/HelpButton.jsx";
+import MascotBubble from "../components/mascots/MascotBubble.jsx";
 
 export default function Whys() {
   const { t } = useTranslation();
@@ -60,6 +61,9 @@ export default function Whys() {
         <HelpButton text={t("modules.whysHelpMain")} langCode={pair.secondary} />
       </div>
       <p className="page-intro">{t("modules.whysIntro")}</p>
+      <MascotBubble character="lumi" mood="thinking" langCode={pair.mother}>
+        {t("modules.whysMascotIntro")}
+      </MascotBubble>
       <div className="whys-progress">
         {t("modules.whysExplored")}: {explored.length} / {whys.length}
       </div>

@@ -4,6 +4,8 @@ import { getMissions } from "../content/index.js";
 import { getLangPair, getProfile, getCompletedMissions, completeMission, pingProgress } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
 import HelpButton from "../components/HelpButton.jsx";
+import MascotBubble from "../components/mascots/MascotBubble.jsx";
+import { IllustrationTree, IllustrationSun } from "../components/illustrations/index.js";
 
 // Picks a deterministic "mission of the day" so it doesn't change every
 // re-render, but still rotates day to day without needing a backend.
@@ -50,6 +52,13 @@ export default function Missions() {
         <HelpButton text={t("modules.missionsHelpMain")} langCode={pair.mother} />
       </div>
       <p className="page-intro">{t("modules.missionsIntro")}</p>
+      <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+        <IllustrationSun size={36} />
+        <IllustrationTree size={36} />
+      </div>
+      <MascotBubble character="lumi" mood="happy" langCode={pair.mother}>
+        {t("modules.missionsMascotIntro")}
+      </MascotBubble>
 
       <div className="mission-card mission-card-today">
         <div className="mission-badge">{t("modules.missionsToday")}</div>

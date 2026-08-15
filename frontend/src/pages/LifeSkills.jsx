@@ -5,6 +5,7 @@ import { getLangPair, getProfile, getTriedLifeSkills, tryLifeSkill, pingProgress
 import SpeakButton from "../components/SpeakButton.jsx";
 import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
 import HelpButton from "../components/HelpButton.jsx";
+import { IllustrationHouse, IllustrationHeart } from "../components/illustrations/index.js";
 
 const CATEGORY_ICONS = {
   cozinha: "🍳",
@@ -55,6 +56,10 @@ export default function LifeSkills() {
         <HelpButton text={t("modules.lifeSkillsHelpMain")} langCode={pair.mother} />
       </div>
       <p className="page-intro">{t("modules.lifeSkillsIntro")}</p>
+      <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+        <IllustrationHouse size={36} />
+        <IllustrationHeart size={36} />
+      </div>
 
       <h2 className="songs-heading">
         {t("modules.lifeSkillsTried")} ({tried.length}/{cards.length})

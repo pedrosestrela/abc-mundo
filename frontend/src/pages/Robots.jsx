@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { getProfile, getDifficultyTier, recordSkillEvent, pingProgress, getLangPair } from "../storage.js";
 import HelpButton from "../components/HelpButton.jsx";
 import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
+import MascotBubble from "../components/mascots/MascotBubble.jsx";
 
 // Each level: grid size, start [row,col], goal [row,col], obstacles [[row,col],...],
 // and minTier (level only introduces the repeat block once tier allows it — but the
@@ -146,6 +147,9 @@ export default function Robots() {
         />
       </div>
       <p className="page-intro">{t("modules.robotsIntro")}</p>
+      <MascotBubble character="bit" mood="happy" langCode={pair.mother}>
+        {t("modules.robotsMascotIntro")}
+      </MascotBubble>
 
       <div className="robots-controls">
         {MODES.map((m) => (

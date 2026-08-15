@@ -8,6 +8,7 @@ import HelpButton from "../components/HelpButton.jsx";
 import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
 import AgeAdvisory from "../components/AgeAdvisory.jsx";
 import Illustration from "../components/Illustrations.jsx";
+import MascotBubble from "../components/mascots/MascotBubble.jsx";
 
 function shuffle(arr) {
   const copy = [...arr];
@@ -95,6 +96,9 @@ export default function PortugalHistory() {
         <HelpButton text={tab === "quiz" ? t("modules.historyHelpQuiz") : t("modules.historyHelpTimeline")} langCode={pair.mother} />
       </div>
       <p className="page-intro">{t("modules.historyIntro")}</p>
+      <MascotBubble character="vasco" mood="happy" langCode={pair.mother}>
+        {t("modules.historyMascotIntro")}
+      </MascotBubble>
 
       {showAdvisory && (
         <AgeAdvisory

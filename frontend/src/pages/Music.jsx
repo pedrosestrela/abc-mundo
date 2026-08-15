@@ -8,6 +8,7 @@ import MusicStaff from "../components/MusicStaff.jsx";
 import HelpButton from "../components/HelpButton.jsx";
 import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
 import InstrumentVisual, { getInstrumentFamily, DrumKitVisual } from "../components/InstrumentVisual.jsx";
+import MascotBubble from "../components/mascots/MascotBubble.jsx";
 
 const WHITE_LETTERS = ["C", "D", "E", "F", "G", "A", "B"];
 
@@ -329,6 +330,9 @@ export default function Music({ defaultInstrument = "piano" }) {
         <HelpButton text={isDrum ? t("modules.musicHelpDrum") : t("modules.musicHelpPiano")} langCode={pair.mother} />
       </div>
       <p className="page-intro">{t("modules.musicIntro")}</p>
+      <MascotBubble character="milo" mood="happy" langCode={pair.mother}>
+        {t("modules.musicMascotIntro")}
+      </MascotBubble>
 
       <div className="phonics-tabs">
         <button
