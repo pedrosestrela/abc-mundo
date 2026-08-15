@@ -4,258 +4,359 @@
     "emoji": "🌳",
     "text": "Vai fuori o guarda dalla finestra e trova 3 foglie diverse.",
     "category": "natura",
-    "supervision": "da solo"
+    "supervision": "da solo",
+    "hook": "Sapevi che ogni albero ha foglie di forme diverse? Scopriamo quante forme riesci a trovare!"
   },
   {
     "id": "letra-c",
     "emoji": "🔎",
     "text": "Trova in casa 5 oggetti che iniziano con la lettera C.",
     "category": "lettere",
-    "supervision": "da solo"
+    "supervision": "da solo",
+    "hook": "La lettera C si nasconde in tante parole intorno a te. Un cacciatore di lettere riesce a trovarle tutte?"
   },
   {
     "id": "medir-mesa",
     "emoji": "📏",
     "text": "Misura il tavolo della cucina con i tuoi passi. Quanti passi sono?",
     "category": "matematica",
-    "supervision": "da solo"
+    "supervision": "da solo",
+    "hook": "Prima dei righelli, le persone misuravano tutto con il corpo! Facciamo gli esploratori all'antica!"
   },
   {
     "id": "gelo-derrete",
     "emoji": "🧊",
     "text": "Metti un cubetto di ghiaccio in un piatto. Quanto tempo impiega a sciogliersi?",
     "category": "scienza",
-    "supervision": "adulto"
+    "supervision": "adulto",
+    "hook": "Il ghiaccio è acqua diventata molto fredda. Quanto tempo pensi che impieghi per tornare acqua?"
   },
   {
     "id": "procura-lua",
     "emoji": "🌙",
     "text": "Stasera cerca la Luna nel cielo. Che forma ha?",
     "category": "natura",
-    "supervision": "da solo"
+    "supervision": "da solo",
+    "hook": "La Luna cambia forma durante il mese, come se cambiasse sempre vestito. Che forma ha stasera?"
   },
   {
     "id": "supermercado-2euros",
     "emoji": "🛒",
     "text": "Al supermercato, trova qualcosa che costa meno di 2€.",
     "category": "denaro",
-    "supervision": "adulto"
+    "supervision": "adulto",
+    "hook": "Capire il valore del denaro comincia guardando i prezzi. Pensi che sia facile trovare qualcosa così economico?"
   },
   {
     "id": "separar-meias",
     "emoji": "🧦",
     "text": "Dividi i calzini puliti per colore.",
     "category": "vita-pratica",
-    "supervision": "da solo"
+    "supervision": "da solo",
+    "hook": "Ordinare per colori allena il tuo occhio a riconoscere schemi, proprio come un vero detective!"
   },
   {
     "id": "contar-passaros",
     "emoji": "🐦",
     "text": "Resta 5 minuti alla finestra. Quanti uccelli riesci a vedere?",
     "category": "natura",
-    "supervision": "da solo"
+    "supervision": "da solo",
+    "hook": "Esistono centinaia di specie di uccelli nel mondo. Quanti riesci ad avvistare nella tua strada?"
   },
   {
     "id": "3-palavras-livro",
     "emoji": "📚",
     "text": "Scegli un libro e trova 3 parole che sai già leggere.",
     "category": "lettura",
-    "supervision": "da solo"
+    "supervision": "da solo",
+    "hook": "Leggere è come aprire una porta magica verso altri mondi. Quante parole riesci già ad aprire da solo/a?"
   },
   {
     "id": "dobra-roupa",
     "emoji": "👕",
     "text": "Aiuta a piegare 5 capi di vestiario.",
     "category": "vita-pratica",
-    "supervision": "da solo"
+    "supervision": "da solo",
+    "hook": "Piegare i vestiti è un puzzle di forme e misure. Riesci a fare pile ben ordinate?"
   },
   {
     "id": "desenha-animal",
     "emoji": "🎨",
     "text": "Disegna un animale che ancora non esiste. Dagli un nome!",
     "category": "creatività",
-    "supervision": "da solo"
+    "supervision": "da solo",
+    "hook": "Ogni animale esistente è nato come un'idea. E se fossi tu a inventare il prossimo?"
   },
   {
     "id": "salta-10",
     "emoji": "🏃",
     "text": "Fai 10 salti e poi cammina come un granchio fino alla porta.",
     "category": "movimento",
-    "supervision": "da solo"
+    "supervision": "da solo",
+    "hook": "Muovere il corpo in modi diversi aiuta il cervello a diventare più sveglio. Proviamo!"
   },
   {
     "id": "objeto-vermelho",
     "emoji": "🔴",
     "text": "Corri e trova 3 cose rosse in casa.",
     "category": "movimento",
-    "supervision": "da solo"
+    "supervision": "da solo",
+    "hook": "Il rosso è uno dei primi colori che notano i tuoi occhi. Quante cose rosse ci sono in casa?"
   },
   {
     "id": "bate-ritmo",
     "emoji": "🥁",
     "text": "Batti un ritmo con le mani. Qualcuno in casa riesce a ripeterlo?",
     "category": "musica",
-    "supervision": "da solo"
+    "supervision": "da solo",
+    "hook": "La musica nasce da semplici schemi sonori. Riesci a creare un ritmo che nessuno sappia ripetere?"
   },
   {
     "id": "ponte-papel",
     "emoji": "🌉",
     "text": "Costruisci un ponte di carta o cartone tra due sedie.",
     "category": "ingegneria",
-    "supervision": "da solo"
+    "supervision": "da solo",
+    "hook": "Gli ingegneri testano sempre le loro idee prima di costruire ponti veri. Facciamo gli ingegneri!"
   },
   {
     "id": "flutua-afunda",
     "emoji": "🛁",
     "text": "Nella vasca da bagno, scopri 3 oggetti che galleggiano e 3 che affondano.",
     "category": "scienza",
-    "supervision": "adulto"
+    "supervision": "adulto",
+    "hook": "Non tutto ciò che è pesante affonda, e non tutto ciò che è leggero galleggia. Scopriamo perché!"
   },
   {
     "id": "avo-brincadeira",
     "emoji": "👴",
     "text": "Chiedi a un nonno o una nonna a cosa giocava da piccolo/a.",
     "category": "famiglia",
-    "supervision": "da solo"
+    "supervision": "da solo",
+    "hook": "Prima dei telefoni, le persone inventavano giochi incredibili. Scopri una storia della tua famiglia!"
   },
   {
     "id": "arruma-mochila",
     "emoji": "🎒",
     "text": "Prepara da solo/a lo zaino per domani.",
     "category": "vita-pratica",
-    "supervision": "da solo"
+    "supervision": "da solo",
+    "hook": "Organizzare le tue cose è un superpotere che ti aiuta ogni giorno. Esercitiamoci!"
   },
   {
     "id": "lanche-simples",
     "emoji": "🥪",
     "text": "Prepara una merenda semplice (es. un panino) con l'aiuto di un adulto.",
     "category": "cucina",
-    "supervision": "adulto"
+    "supervision": "adulto",
+    "hook": "Preparare da mangiare è un mix di scienza e arte. Creiamo insieme qualcosa di delizioso!"
   },
   {
     "id": "conta-colheres",
     "emoji": "🥄",
     "text": "Aiuta ad apparecchiare e conta quanti cucchiai e forchette servono.",
     "category": "cucina",
-    "supervision": "da solo"
+    "supervision": "da solo",
+    "hook": "Contare gli oggetti di tutti i giorni è matematica nascosta ovunque. Aiuta ad apparecchiare e conta!"
   },
   {
     "id": "planta-semente",
     "emoji": "🌱",
     "text": "Pianta un seme in un bicchiere di terra e innaffialo. Osservalo ogni giorno.",
     "category": "natura",
-    "supervision": "adulto"
+    "supervision": "adulto",
+    "hook": "Dentro un piccolo seme si nasconde una pianta intera. Aiutiamola a crescere!"
   },
   {
     "id": "atacadores",
     "emoji": "👟",
     "text": "Fai pratica ad allacciarti le scarpe da solo/a.",
     "category": "vita-pratica",
-    "supervision": "da solo"
+    "supervision": "da solo",
+    "hook": "Allacciare le scarpe sembra difficile, ma con la pratica le mani imparano da sole. Alleniamoci!"
   },
   {
     "id": "formas-nuvens",
     "emoji": "☁️",
     "text": "Sdraiati sull'erba o siediti alla finestra e osserva le nuvole per 5 minuti. Che forme riesci a vedere?",
     "category": "natura",
-    "supervision": "da solo"
+    "supervision": "da solo",
+    "hook": "Le nuvole cambiano forma continuamente, come un libro illustrato nel cielo. Cosa vedi oggi?"
   },
   {
     "id": "conta-carros",
     "emoji": "🚗",
     "text": "Con un adulto vicino a una strada, conta quante auto rosse passano in 5 minuti.",
     "category": "matematica",
-    "supervision": "adulto"
+    "supervision": "adulto",
+    "hook": "Contare e classificare aiuta il cervello a ordinare il mondo. Quante auto rosse passano?"
   },
   {
     "id": "palavra-nova",
     "emoji": "🗣️",
     "text": "Chiedi a qualcuno della tua famiglia di insegnarti una nuova parola in un'altra lingua.",
     "category": "famiglia",
-    "supervision": "da solo"
+    "supervision": "da solo",
+    "hook": "Ogni lingua è un modo diverso di vedere il mondo. Quale nuova parola scoprirai oggi?"
   },
   {
     "id": "aviao-papel",
     "emoji": "✈️",
     "text": "Fai un aeroplanino di carta e prova fino a dove riesce a volare. Cerca di migliorarlo!",
     "category": "ingegneria",
-    "supervision": "da solo"
+    "supervision": "da solo",
+    "hook": "Anche il primo vero aereo è iniziato con tanti tentativi. Riesci a far volare il tuo più lontano?"
   },
   {
     "id": "separa-reciclagem",
     "emoji": "♻️",
     "text": "Con un adulto, dividi i rifiuti di casa nei bidoni giusti: carta, plastica e vetro.",
     "category": "vita-pratica",
-    "supervision": "adulto"
+    "supervision": "adulto",
+    "hook": "Separare i rifiuti è un modo per prendersi cura del pianeta ogni giorno. Sai in quale bidone va ogni cosa?"
   },
   {
     "id": "nota-obrigado",
     "emoji": "💌",
     "text": "Scrivi o disegna un bigliettino di ringraziamento per qualcuno di speciale e consegnaglielo.",
     "category": "creatività",
-    "supervision": "da solo"
+    "supervision": "da solo",
+    "hook": "Un semplice grazie scritto può regalare un grande sorriso a qualcuno. A chi lo scriverai?"
   },
   {
     "id": "sombra-contorno",
     "emoji": "🌗",
     "text": "In una giornata di sole, disegna il contorno della tua ombra a terra con un gessetto. Come cambia durante il giorno?",
     "category": "scienza",
-    "supervision": "da solo"
+    "supervision": "da solo",
+    "hook": "La tua ombra si muove nel corso della giornata perché il Sole cambia posizione nel cielo. Vediamo come cambia!"
   },
   {
     "id": "letras-rua",
     "emoji": "🚏",
     "text": "Durante una passeggiata, trova cartelli o insegne con 5 lettere diverse dell'alfabeto.",
     "category": "lettere",
-    "supervision": "adulto"
+    "supervision": "adulto",
+    "hook": "Le lettere sono sparse per tutta la strada, su cartelli e insegne. Riesci a trovarle tutte?"
   },
   {
     "id": "conta-moedas",
     "emoji": "🪙",
     "text": "Conta le monete che trovi in un salvadanaio o in un cassetto. Quanto denaro c'è in totale?",
     "category": "denaro",
-    "supervision": "adulto"
+    "supervision": "adulto",
+    "hook": "Contare le monete ti aiuta a capire come funziona il denaro. Quanto pensi di trovare?"
   },
   {
     "id": "salta-corda",
     "emoji": "🪢",
     "text": "Salta la corda 20 volte di fila senza fermarti. Riesci a battere il tuo record domani?",
     "category": "movimento",
-    "supervision": "da solo"
+    "supervision": "da solo",
+    "hook": "Saltare la corda allena corpo e concentrazione insieme. Riesci ad arrivare a 20?"
   },
   {
     "id": "instrumento-caseiro",
     "emoji": "🪇",
     "text": "Con l'aiuto di un adulto, crea uno strumento musicale con una bottiglia e riso o fagioli.",
     "category": "musica",
-    "supervision": "adulto"
+    "supervision": "adulto",
+    "hook": "Molti strumenti musicali nel mondo sono nati da materiali semplici. Creiamo il tuo!"
   },
   {
     "id": "torre-copos",
     "emoji": "🥤",
     "text": "Costruisci la torre più alta che riesci con dei bicchieri di plastica. Quanti ne hai usati?",
     "category": "ingegneria",
-    "supervision": "da solo"
+    "supervision": "da solo",
+    "hook": "Costruire torri alte ti insegna l'equilibrio, come agli ingegneri edili. Fin dove riesci ad arrivare?"
   },
   {
     "id": "mapa-tesouro",
     "emoji": "🗺️",
     "text": "Disegna una mappa del tesoro di casa tua e nascondi un \"tesoro\" da far trovare a qualcuno.",
     "category": "creatività",
-    "supervision": "da solo"
+    "supervision": "da solo",
+    "hook": "Le mappe hanno aiutato gli esploratori a trovare luoghi incredibili per secoli. Quale tesoro nasconderai?"
   },
   {
     "id": "ajuda-receita",
     "emoji": "🍳",
     "text": "Aiuta un adulto a preparare una ricetta semplice e conta quanti ingredienti avete usato.",
     "category": "cucina",
-    "supervision": "adulto"
+    "supervision": "adulto",
+    "hook": "Cucinare è una ricetta fatta di matematica, scienza e pazienza insieme. Contiamo gli ingredienti!"
   },
   {
     "id": "imita-animais",
     "emoji": "🐾",
     "text": "Imita il suono e il movimento di 5 animali diversi. Qualcuno riesce a indovinare quali sono?",
     "category": "movimento",
-    "supervision": "da solo"
+    "supervision": "da solo",
+    "hook": "Imitare gli animali ti aiuta a capire come si muovono e comunicano. Chi sarai per primo?"
+  },
+  {
+    "id": "conta-degraus",
+    "emoji": "🪜",
+    "text": "Conta quanti gradini ci sono tra due piani di casa tua o di un edificio.",
+    "category": "matematica",
+    "supervision": "da solo",
+    "hook": "Contare i gradini è matematica che usiamo ogni giorno senza accorgercene. Quanti ce ne sono a casa tua?"
+  },
+  {
+    "id": "sombra-animal",
+    "emoji": "🕯️",
+    "text": "Con una torcia e le mani, crea 3 ombre diverse che sembrino animali.",
+    "category": "creatività",
+    "supervision": "da solo",
+    "hook": "Con le mani e una luce puoi creare ombre che sembrano animali veri. Proviamo!"
+  },
+  {
+    "id": "nomes-plantas",
+    "emoji": "🌿",
+    "text": "Chiedi a un adulto il nome di 3 piante vicino a casa tua.",
+    "category": "natura",
+    "supervision": "da solo",
+    "hook": "Ogni pianta ha un proprio nome, proprio come le persone. Quante riesci a scoprire intorno a te?"
+  },
+  {
+    "id": "peso-objetos",
+    "emoji": "⚖️",
+    "text": "Prendi 2 oggetti di casa e prova a indovinare qual è più pesante usando solo le mani.",
+    "category": "matematica",
+    "supervision": "da solo",
+    "hook": "Riesci a capire qual è più pesante usando solo le mani, senza bilancia? Mettiamo alla prova il tuo senso del peso!"
+  },
+  {
+    "id": "carta-familia",
+    "emoji": "✉️",
+    "text": "Scrivi o disegna una piccola lettera per un familiare che vive lontano.",
+    "category": "famiglia",
+    "supervision": "da solo",
+    "hook": "Una lettera scritta a mano è un regalo che si conserva per sempre. A chi scriverai oggi?"
+  },
+  {
+    "id": "torre-livros",
+    "emoji": "📖",
+    "text": "Impila libri per costruire la torre più alta e stabile possibile.",
+    "category": "ingegneria",
+    "supervision": "da solo",
+    "hook": "Impilare libri con attenzione ti insegna l'equilibrio e il baricentro. Fin dove riesci ad arrivare?"
+  },
+  {
+    "id": "sons-casa",
+    "emoji": "👂",
+    "text": "Chiudi gli occhi per 1 minuto e conta quanti suoni diversi riesci a sentire in casa.",
+    "category": "scienza",
+    "supervision": "da solo",
+    "hook": "Chiudi gli occhi e ascolta: la tua casa è piena di suoni che di solito non noti. Quanti riesci a identificare?"
+  },
+  {
+    "id": "conta-historia",
+    "emoji": "📔",
+    "text": "Scegli un oggetto qualsiasi di casa tua e inventa una breve storia su di esso.",
+    "category": "creatività",
+    "supervision": "da solo",
+    "hook": "Qualsiasi oggetto può essere l'inizio di una storia incredibile, se usi la fantasia. Inventiamone una!"
   }
 ]
