@@ -2,8 +2,8 @@
   {
     "id": "estrelinha",
     "title": "Brilha, Brilha, Estrelinha",
-    "notes": ["C4", "C4", "G4", "G4", "A4", "A4", "G4"],
-    "lyrics": ["Brilha", "brilha", "estrelinha", "como", "eu", "gosto", "de ti"]
+    "notes": ["C4","C4","G4","G4","A4","A4","G4","F4","F4","E4","E4","D4","D4","C4","G4","G4","F4","F4","E4","E4","D4","G4","G4","F4","F4","E4","E4","D4","C4","C4","G4","G4","A4","A4","G4","F4","F4","E4","E4","D4","D4","C4"],
+    "lyrics": ["Brilha","brilha","estrelinha","como","eu","gosto","de ti","pareces","um","diamante","no","céu","a","brilhar","no","alto","do","céu","tão","longe","além","guias","quem","viaja","à noite","escura","e","fria","Brilha","brilha","estrelinha","como","eu","gosto","de ti","pareces","um","diamante","no","céu","a","brilhar"]
   },
   {
     "id": "escala-do-re-mi",
@@ -20,50 +20,50 @@
   {
     "id": "ode-alegria",
     "title": "Ode à Alegria (Beethoven, excerto)",
-    "notes": ["E4", "E4", "F4", "G4", "G4", "F4", "E4", "D4"],
-    "lyrics": ["la", "la", "la", "la", "la", "la", "la", "la"]
+    "notes": ["E4","E4","F4","G4","G4","F4","E4","D4","C4","C4","D4","E4","E4","D4","D4","E4","E4","F4","G4","G4","F4","E4","D4","C4","C4","D4","E4","D4","C4","C4"],
+    "lyrics": ["la","la","la","la","la","la","la","la","la","la","la","la","la","la","la","la","la","la","la","la","la","la","la","la","la","la","la","la","la","la"]
   },
   {
     "id": "fumfum",
     "title": "Fumfum e o Gigante",
-    "notes": ["C4", "C4", "C4", "D4", "E4", "E4", "D4", "C4", "E4", "E4", "D4", "D4", "C4"],
-    "lyrics": ["Fum", "fum", "fum", "vem", "aí", "o", "gi", "gan", "te", "grande", "e", "for", "te"]
+    "notes": ["C4","C4","C4","D4","E4","E4","D4","C4","E4","E4","D4","D4","C4","G4","G4","G4","A4","G4","F4","E4","E4","E4","D4","D4","C4"],
+    "lyrics": ["Fum","fum","fum","vem","aí","o","gi","gan","te","grande","e","for","te","Fum","fum","fum","vem","o","Na","tal","com","a","le","gri","a"]
   },
   {
     "id": "papagaio-louro",
     "title": "Papagaio Louro",
-    "notes": ["G4", "G4", "A4", "G4", "F4", "E4", "G4", "G4", "A4", "G4", "F4", "E4"],
-    "lyrics": ["Pa", "pa", "gai", "o", "lou", "ro", "pa", "pa", "gai", "o", "real", "hoje"]
+    "notes": ["G4","G4","A4","G4","F4","E4","G4","G4","A4","G4","F4","E4","E4","E4","F4","E4","D4","C4","E4","E4","F4","E4","D4","C4"],
+    "lyrics": ["Pa","pa","gai","o","lou","ro","pa","pa","gai","o","real","hoje","Pa","pa","gai","o","lou","ro","can","ta","bem","ba","ni","to"]
   },
   {
     "id": "carneirinho",
     "title": "Carneirinho, Carneirão",
-    "notes": ["C4", "D4", "E4", "C4", "C4", "D4", "E4", "C4", "E4", "F4", "G4", "E4", "F4", "G4"],
-    "lyrics": ["Car", "nei", "ri", "nho", "car", "nei", "rão", "vem", "brin", "car", "co", "mi", "go", "já"]
+    "notes": ["C4","D4","E4","C4","C4","D4","E4","C4","E4","F4","G4","E4","F4","G4","G4","F4","E4","C4","C4","D4","E4","C4","E4","F4","G4","E4","D4","C4"],
+    "lyrics": ["Car","nei","ri","nho","car","nei","rão","vem","brin","car","co","mi","go","já","Vem","cor","rer","no","pra","do","ver","de","com","a","luz","do","sol","já"]
   },
   {
     "id": "mary-had-a-little-lamb",
     "title": "Mary Had a Little Lamb",
-    "notes": ["E4", "D4", "C4", "D4", "E4", "E4", "E4", "D4", "D4", "D4", "E4", "G4", "G4"],
-    "lyrics": ["Mary", "had", "a", "little", "lamb", "little", "lamb", "little", "lamb", "Mary", "had", "a", "lamb"]
+    "notes": ["E4","D4","C4","D4","E4","E4","E4","D4","D4","D4","E4","G4","G4","E4","D4","C4","D4","E4","E4","E4","E4","D4","D4","E4","D4","C4"],
+    "lyrics": ["Mary","had","a","little","lamb","little","lamb","little","lamb","Mary","had","a","little","lamb","its","fleece","was","white","as","snow","and","every","where","that","Ma","ry-went"]
   },
   {
     "id": "pombinha-branca",
     "title": "Pombinha Branca",
-    "notes": ["C4", "E4", "G4", "G4", "A4", "G4", "F4", "E4", "D4", "C4"],
-    "lyrics": ["Pom", "bi", "nha", "bran", "ca", "vo", "a", "no", "cé", "u"]
+    "notes": ["C4","E4","G4","G4","A4","G4","F4","E4","D4","C4","D4","E4","F4","G4","A4","G4","F4","E4","D4","C4"],
+    "lyrics": ["Pom","bi","nha","bran","ca","vo","a","no","cé","u","Vo","an","do","le","ve","no","ar","a","zul","lá"]
   },
   {
     "id": "arco-iris-notas",
     "title": "Arco-Íris de Notas",
-    "notes": ["C4", "D4", "E4", "F4", "G4", "F4", "E4", "D4", "C4", "E4", "G4", "C5", "G4", "E4", "C4"],
-    "lyrics": ["Dó", "Ré", "Mi", "Fá", "Sol", "Fá", "Mi", "Ré", "Dó", "sobe", "e", "desce", "no", "ar", "co"]
+    "notes": ["C4","D4","E4","F4","G4","F4","E4","D4","C4","E4","G4","C5","G4","E4","C4","D5","C5","B4","A4","G4","F4","E4","D4","C4"],
+    "lyrics": ["Dó","Ré","Mi","Fá","Sol","Fá","Mi","Ré","Dó","sobe","e","desce","no","ar","co","su","be","mais","al","to","no","ar","co","íris"]
   },
   {
     "id": "frere-jacques",
-    "title": "Frère Jacques (excerto)",
-    "notes": ["C4", "D4", "E4", "C4", "C4", "D4", "E4", "C4", "E4", "F4", "G4", "E4", "F4", "G4"],
-    "lyrics": ["la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la"]
+    "title": "Frère Jacques",
+    "notes": ["C4","D4","E4","C4","C4","D4","E4","C4","E4","F4","G4","E4","F4","G4","G4","A4","G4","F4","E4","C4","G4","A4","G4","F4","E4","C4","C4","G4","C4","C4","G4","C4"],
+    "lyrics": ["Frè","re","Jac","ques","Frè","re","Jac","ques","Dor","mez","vous","Dor","mez","vous","Son","nez","les","ma","ti","nes","Son","nez","les","ma","ti","nes","Ding","dang","dong","Ding","dang","dong"]
   },
   {
     "id": "hot-cross-buns",
@@ -74,49 +74,49 @@
   {
     "id": "london-bridge",
     "title": "London Bridge",
-    "notes": ["G4", "A4", "G4", "F4", "E4", "F4", "G4", "D4", "E4", "F4", "E4", "F4", "G4"],
-    "lyrics": ["la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la"]
+    "notes": ["G4","A4","G4","F4","E4","F4","G4","D4","E4","F4","G4","A4","G4","F4","E4","F4","G4","D4","G4","E4","C4"],
+    "lyrics": ["London","Bridge","is","falling","down","fall","ing","down","down","down","London","Bridge","is","falling","down","my","fair","la","dy","oh","no"]
   },
   {
     "id": "row-row-row",
     "title": "Row, Row, Row Your Boat",
-    "notes": ["C4", "C4", "C4", "D4", "E4", "E4", "D4", "E4", "F4", "G4", "C5", "G4", "E4", "C4"],
-    "lyrics": ["la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la"]
+    "notes": ["C4","C4","C4","D4","E4","E4","D4","E4","F4","G4","C4","C4","C4","G4","G4","G4","E4","E4","E4","C4","C4","C4","G4","F4","E4","D4","C4"],
+    "lyrics": ["Row","row","row","your","boat","gent","ly","down","the","stream","mer","ri","ly","mer","ri","ly","mer","ri","ly","mer","ri","ly","life","is","but","a","dream"]
   },
   {
     "id": "old-macdonald",
     "title": "Old MacDonald Had a Farm",
-    "notes": ["C4", "C4", "C4", "G4", "A4", "A4", "G4", "E4", "E4", "D4", "D4", "C4"],
-    "lyrics": ["la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la"]
+    "notes": ["C4","C4","C4","G4","A4","A4","G4","E4","E4","D4","D4","C4","G4","G4","D4","D4","E4","E4","D4","C4","C4","A4","A4","G4","F4","F4","E4","D4"],
+    "lyrics": ["Old","Mac","Don","ald","had","a","farm","E","I","E","I","O","And","on","his","farm","he","had","a","cow","E","I","E","I","O","moo","moo","here"]
   },
   {
     "id": "this-old-man",
     "title": "This Old Man",
-    "notes": ["G4", "E4", "G4", "E4", "F4", "D4", "C4", "D4", "E4", "F4", "G4"],
-    "lyrics": ["la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la"]
+    "notes": ["G4","E4","G4","E4","F4","D4","C4","D4","E4","F4","G4","G4","G4","E4","E4","D4","D4","C4","G4","A4","G4","F4","E4","D4"],
+    "lyrics": ["This","old","man","he","played","one","he","played","knick","knack","on","my","thumb","knick","knack","pad","dy","whack","give","a","dog","a","bone","home"]
   },
   {
     "id": "three-blind-mice",
     "title": "Three Blind Mice",
-    "notes": ["E4", "D4", "C4", "E4", "D4", "C4", "G4", "F4", "F4", "E4", "G4", "F4", "F4", "E4"],
-    "lyrics": ["la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la"]
+    "notes": ["E4","D4","C4","E4","D4","C4","G4","G4","F4","F4","E4","G4","G4","F4","F4","E4","C4","G4","G4","G4","A4","G4","F4","E4","C4"],
+    "lyrics": ["Three","blind","mice","three","blind","mice","see","how","they","run","see","how","they","run","they","all","ran","after","the","farm","er's","wife","who","cut","off"]
   },
   {
     "id": "baa-baa-black-sheep",
     "title": "Baa, Baa, Black Sheep",
-    "notes": ["C4", "C4", "G4", "G4", "A4", "A4", "G4", "F4", "F4", "E4", "E4", "D4", "D4", "C4"],
-    "lyrics": ["la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la"]
+    "notes": ["C4","C4","G4","G4","A4","A4","G4","F4","F4","E4","E4","D4","D4","C4","G4","G4","F4","F4","E4","E4","D4","G4","G4","F4","F4","E4","E4","D4","C4","C4","G4","G4","A4","A4","G4","F4","F4","E4","E4","D4","D4","C4"],
+    "lyrics": ["Baa","baa","black","sheep","have","you","any","wool","Yes","sir","yes","sir","three","bags","full","One","for","the","mas","ter","One","for","the","dame","One","for","the","lit","tle","boy","who","lives","down","the","lane","Baa","baa","black","sheep","have","you","any"]
   },
   {
     "id": "pop-goes-the-weasel",
     "title": "Pop Goes the Weasel",
-    "notes": ["C4", "E4", "G4", "C5", "C4", "E4", "A4", "G4", "C4", "E4", "G4", "C5", "D5", "C5", "B4", "G4"],
-    "lyrics": ["la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la"]
+    "notes": ["C4","E4","G4","C5","C4","E4","A4","G4","C4","E4","G4","C5","D5","C5","B4","G4","C4","E4","G4","C5","C4","E4","A4","G4","C4","D4","E4","F4","G4","A4","B4","C5"],
+    "lyrics": ["All","around","the","mul","ber","ry","bush","the","mon","key","chased","the","wea","sel","the","mon","key","thought","twas","all","in","fun","Pop!","goes","the","wea","sel","Pop","goes","the","wea","sel"]
   },
   {
     "id": "jingle-bells",
     "title": "Jingle Bells (excerto)",
-    "notes": ["E4", "E4", "E4", "E4", "E4", "E4", "E4", "G4", "C4", "D4", "E4"],
-    "lyrics": ["la", "la", "la", "la", "la", "la", "la", "la", "la", "la", "la"]
+    "notes": ["E4","E4","E4","E4","E4","E4","E4","G4","C4","D4","E4","F4","F4","F4","F4","F4","E4","E4","E4","E4","D4","D4","E4","D4","G4"],
+    "lyrics": ["Jingle","bells","jingle","bells","jingle","all","the","way","Oh","what","fun","it","is","to","ride","in","a","one","horse","o","pen","sleigh","hey","ho","ho"]
   }
 ]
