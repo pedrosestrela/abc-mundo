@@ -884,41 +884,23 @@ body {
   stroke: var(--green, #35c46a);
 }
 
-/* Per-instrument body colors/shapes so strings-family instruments (guitar,
-   cavaquinho, guitarra portuguesa) don't all look identical. */
+/* Per-instrument body color so the strings-family guitar reads distinctly
+   from the harp/mallet families. */
 .guitar-body {
   fill: #b5651d;
   fill-opacity: 0.28;
   stroke: #b5651d;
 }
 
-.cavaquinho-body {
-  fill: #deb887;
-  fill-opacity: 0.4;
-  stroke: #deb887;
-}
-
-.portuguese-guitar-body {
-  fill: #6b3f1d;
-  fill-opacity: 0.3;
-  stroke: #6b3f1d;
-}
-
-.portuguese-guitar-fan {
-  fill: none;
-  stroke: #6b3f1d;
-  stroke-width: 2;
-  stroke-linecap: round;
-}
-
-/* Violin vs viola: same "bowed" shape, different size/color per instrument. */
+/* Violin vs cello: same "bowed" shape, different size/color per instrument
+   (cello is drawn bigger, in a darker wood tone). */
 .violin-body {
   fill: var(--purple, #8e6bd8);
   fill-opacity: 0.18;
   stroke: #8b4513;
 }
 
-.viola-body {
+.cello-body {
   fill: #6b3f1d;
   fill-opacity: 0.22;
   stroke: #6b3f1d;
@@ -977,79 +959,29 @@ body {
   stroke: var(--pink, #ff6b9d);
 }
 
+/* Wind-family body colors so flute/clarinet/saxophone/trumpet don't look
+   identical despite sharing one hole-tappable silhouette. */
 .flute-body {
   fill: var(--yellow, #f5c542);
   fill-opacity: 0.2;
 }
 
-.bellows-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-.bellows-side {
-  fill: var(--purple, #8e6bd8);
-  fill-opacity: 0.25;
-}
-
-.accordion-side {
-  fill: #b5651d;
-  fill-opacity: 0.28;
-  stroke: #b5651d;
-}
-
-.accordion-key {
-  fill: #333;
-  stroke: #fff;
-  stroke-width: 1;
-}
-
-.concertina-side {
-  fill: var(--green, #35c46a);
+.clarinet-body {
+  fill: #2b2b2b;
   fill-opacity: 0.3;
-  stroke: var(--green, #35c46a);
+  stroke: #2b2b2b;
 }
 
-.concertina-button {
-  fill: #333;
-  stroke: #fff;
-  stroke-width: 1;
+.saxophone-body {
+  fill: #d9a441;
+  fill-opacity: 0.32;
+  stroke: #a97a1f;
 }
 
-.bellows-fold-line {
-  stroke: var(--purple, #8e6bd8);
-  stroke-width: 3;
-  transition: transform 0.2s ease;
-}
-
-.bellows-wrap.pulsing .bellows-fold-line {
-  transform: scaleX(0.7);
-  transform-box: fill-box;
-  transform-origin: center;
-}
-
-.bellows-buttons {
-  display: grid;
-  gap: 8px;
-  width: 100%;
-}
-
-.bellows-button {
-  height: 48px;
-  border-radius: 12px;
-  border: none;
-  background: var(--blue, #3aa0ff);
-  color: #fff;
-  font-weight: bold;
-  cursor: pointer;
-  transition: transform 0.1s ease, background 0.15s ease;
-}
-
-.bellows-button.active {
-  background: var(--pink, #ff6b9d);
-  transform: scale(0.95);
+.trumpet-body {
+  fill: #e8c15a;
+  fill-opacity: 0.35;
+  stroke: #b8860b;
 }
 
 .drum-pads {

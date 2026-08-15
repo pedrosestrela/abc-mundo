@@ -1,22 +1,32 @@
 // Background-music generator + per-instrument note player for the Music
-// page. Seven instruments now play real recorded samples, each pitch-shifted
-// across the keyboard via AudioBufferSourceNode.playbackRate (or, for drum
-// pads, played back at fixed pitch like a real kit), with an automatic
-// fallback to the original procedurally-synthesised timbre if a sample
-// fails to load (offline-before-cache-warms, blocked network, etc):
+// page. Eleven pitched instruments play real recorded samples, each
+// pitch-shifted across the keyboard via AudioBufferSourceNode.playbackRate
+// (or, for drum pads, played back at fixed pitch like a real kit), with an
+// automatic fallback to a procedurally-synthesised timbre if a sample fails
+// to load (offline-before-cache-warms, blocked network, etc):
 //   - piano: Salamander Grand Piano, CC BY 3.0 (public/audio/piano/NOTICE.md)
-//   - xylophone, guitar, flute, violin, harp: tonejs-instruments sample
-//     library, CC BY 3.0 (public/audio/<instrument>/NOTICE.md)
+//   - xylophone, guitar, flute, violin, harp, cello, trumpet, clarinet,
+//     saxophone: tonejs-instruments sample library, CC BY 3.0
+//     (public/audio/<instrument>/NOTICE.md)
 //   - drum (pads): Sonic Pi sample library, CC0-1.0 / public domain, via
 //     the `supersonic-scsynth-samples` npm package (public/audio/drum/NOTICE.md)
-// Every other instrument (viola, cavaquinho, portugueseGuitar, accordion,
-// concertina, and the looping background melody) still uses layered/detuned
-// Web Audio oscillator synthesis — a genuinely thorough search (npm registry
-// search + direct package-name probing for Iberian/folk-instrument and reed
-// sample libraries) turned up no clean/verifiable permissively-licensed
-// sample pack for them — tuned to approximate each instrument's real
-// overtone character (see the per-instrument functions below for the
-// specific technique used for each).
+// Every instrument here is a real recorded sample. The previous synthesis-
+// only instruments (viola, cavaquinho, portugueseGuitar, accordion,
+// concertina) were removed because they were not faithful to their real
+// acoustic instruments — a genuinely thorough search (npm registry search +
+// direct package-name probing for Iberian/folk-instrument and reed sample
+// libraries) turned up no clean/verifiable permissively-licensed sample pack
+// for them. Cello, trumpet, clarinet and saxophone were added in their place
+// since real CC BY 3.0 samples exist for them in the same library already
+// used for guitar/flute/violin/harp/xylophone, and they fill genuine
+// timbre-family gaps (trumpet = the app's first brass instrument; cello =
+// second bowed-string register; clarinet/saxophone = second/third woodwind
+// timbre alongside flute) for the "Ouvido Musical" ear-training mode.
+// The looping background melody still uses layered/detuned Web Audio
+// oscillator synthesis (it's a generic accompaniment, not a named
+// instrument), as does every sample instrument's fallback voice, tuned to
+// approximate each instrument's real overtone character (see the
+// per-instrument functions below for the specific technique used for each).
 
 // Two octaves, C4 to C6, so songs have room to move beyond one octave.
 export const NOTE_FREQS = {
@@ -48,12 +58,11 @@ export const INSTRUMENTS = [
   { id: "flute", icon: "🪈" },
   { id: "drum", icon: "🥁" },
   { id: "violin", icon: "🎻" },
-  { id: "cavaquinho", icon: "🪕" },
-  { id: "portugueseGuitar", icon: "🎸" },
-  { id: "accordion", icon: "🪗" },
-  { id: "concertina", icon: "🎐" },
   { id: "harp", icon: "🎶" },
-  { id: "viola", icon: "🎻" },
+  { id: "cello", icon: "🎻" },
+  { id: "trumpet", icon: "🎺" },
+  { id: "clarinet", icon: "🎷" },
+  { id: "saxophone", icon: "🎷" },
 ];
 
 // Simple tappable pads for the drum instrument — no musical scale, just a
@@ -390,6 +399,42 @@ const SAMPLE_INSTRUMENTS = {
     decayEnd: 1.0,
     tail: 1.1,
   },
+  cello: {
+    base: "/audio/cello/",
+    samples: buildToneSampleList([
+      "C#3", "D3", "D#3", "E3", "F3", "F#3", "G3", "G#3", "A3", "A#3", "B3", "C4", "E4", "G4", "C5",
+    ]),
+    peak: 0.28,
+    attack: 0.07,
+    decayEnd: 0.85,
+    tail: 0.7,
+  },
+  trumpet: {
+    base: "/audio/trumpet/",
+    samples: buildToneSampleList(["C3", "F3", "A3", "A#3", "D#4", "F4", "G4", "D5", "F5", "A5", "C6"]),
+    peak: 0.24,
+    attack: 0.03,
+    decayEnd: 0.5,
+    tail: 0.3,
+  },
+  clarinet: {
+    base: "/audio/clarinet/",
+    samples: buildToneSampleList(["D3", "F3", "A#3", "D4", "F4", "A#4", "D5", "F5", "A#5", "D6", "F#6"]),
+    peak: 0.24,
+    attack: 0.05,
+    decayEnd: 0.7,
+    tail: 0.3,
+  },
+  saxophone: {
+    base: "/audio/saxophone/",
+    samples: buildToneSampleList([
+      "D3", "E3", "F3", "G3", "A#3", "B3", "C4", "D4", "E4", "F4", "G4", "A4", "B4", "C5", "D5", "G5",
+    ]),
+    peak: 0.26,
+    attack: 0.04,
+    decayEnd: 0.7,
+    tail: 0.4,
+  },
 };
 
 // instrumentId -> file -> Promise<AudioBuffer|null>, one cache Map per
@@ -575,21 +620,20 @@ function playViolinNote(ctx, freq, duration) {
   startStopVoice(voice, now, now + duration + 0.2);
 }
 
-function playViolaNote(ctx, freq, duration) {
-  // Bowed string like the violin, but pitched and voiced to sound like the
-  // viola's darker, larger body: the same freq is dropped an octave first
-  // (violas are read/played roughly an octave below where a violin note of
-  // the same on-screen key would sit) plus a lower lowpass cutoff (less
-  // top-end shimmer than the violin), a slower/deeper vibrato, and a softer
-  // sub-octave layer for extra body weight.
+// Fallback synth voice for cello (used only if the real sample fails to
+// load/decode) — same bowed-string technique as the violin, but the freq is
+// dropped an octave first (cello notes at the same on-screen key sit an
+// octave below the violin's) plus a lower lowpass cutoff (less top-end
+// shimmer) and a slower/deeper vibrato, for a darker, larger-body tone.
+function playCelloNote(ctx, freq, duration) {
   const now = ctx.currentTime;
-  const violaFreq = freq / 2;
-  const voice = buildVoice(ctx, violaFreq, { type: "sawtooth", detuneCents: 7, subLevel: 0.28, filterFreq: 1900, satAmount: 0.12 });
+  const celloFreq = freq / 2;
+  const voice = buildVoice(ctx, celloFreq, { type: "sawtooth", detuneCents: 7, subLevel: 0.28, filterFreq: 1900, satAmount: 0.12 });
   const vibrato = ctx.createOscillator();
   const vibratoGain = ctx.createGain();
   vibrato.type = "sine";
   vibrato.frequency.value = 5;
-  vibratoGain.gain.value = violaFreq * 0.007;
+  vibratoGain.gain.value = celloFreq * 0.007;
   vibrato.connect(vibratoGain);
   voice.oscillators.slice(0, 2).forEach((osc) => vibratoGain.connect(osc.frequency));
   const gain = ctx.createGain();
@@ -605,101 +649,73 @@ function playViolaNote(ctx, freq, duration) {
   startStopVoice(voice, now, now + duration + 0.22);
 }
 
-function playCavaquinhoNote(ctx, freq, duration) {
-  // Bright plucked timbre: layered sawtooth through a higher lowpass cutoff
-  // than the guitar (more high-frequency content, small-body "jangly"
-  // sound) and a faster decay, since a cavaquinho's strings ring out
-  // quickly. Kept a lighter sub-layer than the guitar to stay bright.
+// Fallback synth voice for trumpet — bright, brassy square/sawtooth blend
+// with a fast, punchy attack (a real trumpet note "speaks" almost
+// instantly) and a small upward pitch scoop at the very start, mimicking
+// a brass player's attack articulation.
+function playTrumpetNote(ctx, freq, duration) {
   const now = ctx.currentTime;
-  const voice = buildVoice(ctx, freq, { type: "sawtooth", detuneCents: 8, subLevel: 0.08, filterFreq: 4200, satAmount: 0.12 });
+  const sustain = Math.max(duration, 0.35);
+  const voice = buildVoice(ctx, freq, { type: "sawtooth", detuneCents: 6, subLevel: 0.08, filterFreq: freq * 5, satAmount: 0.25 });
+  voice.oscillators[0].frequency.setValueAtTime(freq * 0.97, now);
+  voice.oscillators[0].frequency.exponentialRampToValueAtTime(freq, now + 0.035);
   const gain = ctx.createGain();
   gain.gain.setValueAtTime(0, now);
-  gain.gain.linearRampToValueAtTime(0.24, now + 0.004);
-  gain.gain.exponentialRampToValueAtTime(0.001, now + Math.min(duration, 0.28));
-  voice.output.connect(gain);
-  connectWithReverb(ctx, gain, 1);
-  startStopVoice(voice, now, now + 0.35);
-}
-
-function playPortugueseGuitarNote(ctx, freq, duration) {
-  // Distinct metallic/ringing plucked timbre for the "guitarra portuguesa":
-  // detuned square waves (harder, more nasal edge than the guitar's
-  // sawtooth or the cavaquinho's soft sawtooth) through a resonant bandpass
-  // filter that emphasises upper harmonics, with a long, slowly fading ring.
-  const now = ctx.currentTime;
-  const sustain = Math.max(duration, 0.6);
-  const voice = buildVoice(ctx, freq, { type: "square", detuneCents: 5, subLevel: 0.06, filterFreq: freq * 4, satAmount: 0.1 });
-  const bandpass = ctx.createBiquadFilter();
-  bandpass.type = "bandpass";
-  bandpass.frequency.value = freq * 3;
-  bandpass.Q.value = 4;
-  const gain = ctx.createGain();
-  gain.gain.setValueAtTime(0, now);
-  gain.gain.linearRampToValueAtTime(0.16, now + 0.003);
-  gain.gain.exponentialRampToValueAtTime(0.001, now + sustain);
-  voice.output.connect(bandpass);
-  bandpass.connect(gain);
-  connectWithReverb(ctx, gain, 1);
-  startStopVoice(voice, now, now + sustain + 0.05);
-}
-
-function playAccordionNote(ctx, freq, duration) {
-  // Reed-like sustained tone: layered square waves through a lowpass
-  // filter, a slower attack than piano, and a gentle tremolo (amplitude
-  // LFO) approximating the "breathing" of accordion bellows.
-  const now = ctx.currentTime;
-  const sustain = Math.max(duration, 0.7);
-  const voice = buildVoice(ctx, freq, { type: "square", detuneCents: 4, subLevel: 0.15, filterFreq: 1800, satAmount: 0.06 });
-  const gain = ctx.createGain();
-  const tremolo = ctx.createOscillator();
-  const tremoloGain = ctx.createGain();
-  tremolo.type = "sine";
-  tremolo.frequency.value = 5;
-  tremoloGain.gain.value = 0.04;
-  tremolo.connect(tremoloGain);
-  gain.gain.setValueAtTime(0, now);
-  gain.gain.linearRampToValueAtTime(0.16, now + 0.12);
-  gain.gain.linearRampToValueAtTime(0.14, now + sustain - 0.15);
-  gain.gain.linearRampToValueAtTime(0, now + sustain + 0.1);
-  tremoloGain.connect(gain.gain);
-  voice.output.connect(gain);
-  connectWithReverb(ctx, gain, 1);
-  tremolo.start(now);
-  tremolo.stop(now + sustain + 0.15);
-  scheduledNodes.push(tremolo);
-  startStopVoice(voice, now, now + sustain + 0.15);
-}
-
-function playConcertinaNote(ctx, freq, duration) {
-  // Same reedy family as the accordion but higher/brighter: layered
-  // sawtooth (more harmonic content than the accordion's square) through a
-  // brighter filter cutoff, a snappier attack, and a faster, shallower
-  // tremolo.
-  const now = ctx.currentTime;
-  const sustain = Math.max(duration, 0.55);
-  const voice = buildVoice(ctx, freq, { type: "sawtooth", detuneCents: 5, subLevel: 0.1, filterFreq: 3000, satAmount: 0.08 });
-  const gain = ctx.createGain();
-  const tremolo = ctx.createOscillator();
-  const tremoloGain = ctx.createGain();
-  tremolo.type = "sine";
-  tremolo.frequency.value = 7.5;
-  tremoloGain.gain.value = 0.025;
-  tremolo.connect(tremoloGain);
-  gain.gain.setValueAtTime(0, now);
-  gain.gain.linearRampToValueAtTime(0.15, now + 0.05);
-  gain.gain.linearRampToValueAtTime(0.12, now + sustain - 0.12);
+  gain.gain.linearRampToValueAtTime(0.24, now + 0.02);
+  gain.gain.linearRampToValueAtTime(0.19, now + Math.max(sustain - 0.1, 0.1));
   gain.gain.linearRampToValueAtTime(0, now + sustain + 0.08);
-  tremoloGain.connect(gain.gain);
   voice.output.connect(gain);
   connectWithReverb(ctx, gain, 1);
-  tremolo.start(now);
-  tremolo.stop(now + sustain + 0.12);
-  scheduledNodes.push(tremolo);
+  startStopVoice(voice, now, now + sustain + 0.08);
+}
+
+// Fallback synth voice for clarinet — hollow, reedy tone: a square wave
+// (square waves are dominated by odd harmonics, the classic clarinet
+// "hollow" signature) with a soft, slightly delayed attack and no vibrato
+// (an unaccompanied clarinet note is usually played straight).
+function playClarinetNote(ctx, freq, duration) {
+  const now = ctx.currentTime;
+  const sustain = Math.max(duration, 0.45);
+  const voice = buildVoice(ctx, freq, { type: "square", detuneCents: 3, subLevel: 0.1, filterFreq: 2400, satAmount: 0.05 });
+  const gain = ctx.createGain();
+  gain.gain.setValueAtTime(0, now);
+  gain.gain.linearRampToValueAtTime(0.18, now + 0.08);
+  gain.gain.linearRampToValueAtTime(0.15, now + Math.max(sustain - 0.12, 0.15));
+  gain.gain.linearRampToValueAtTime(0, now + sustain + 0.1);
+  voice.output.connect(gain);
+  connectWithReverb(ctx, gain, 1);
+  startStopVoice(voice, now, now + sustain + 0.1);
+}
+
+// Fallback synth voice for saxophone — reedy but rounder/brighter than the
+// clarinet: layered sawtooth (more overtones than the clarinet's square)
+// with a light, fast vibrato and a slightly breathy soft attack.
+function playSaxophoneNote(ctx, freq, duration) {
+  const now = ctx.currentTime;
+  const sustain = Math.max(duration, 0.4);
+  const voice = buildVoice(ctx, freq, { type: "sawtooth", detuneCents: 5, subLevel: 0.14, filterFreq: 2800, satAmount: 0.1 });
+  const vibrato = ctx.createOscillator();
+  const vibratoGain = ctx.createGain();
+  vibrato.type = "sine";
+  vibrato.frequency.value = 5.8;
+  vibratoGain.gain.value = freq * 0.008;
+  vibrato.connect(vibratoGain);
+  voice.oscillators.slice(0, 2).forEach((osc) => vibratoGain.connect(osc.frequency));
+  const gain = ctx.createGain();
+  gain.gain.setValueAtTime(0, now);
+  gain.gain.linearRampToValueAtTime(0.2, now + 0.05);
+  gain.gain.linearRampToValueAtTime(0.16, now + Math.max(sustain - 0.1, 0.15));
+  gain.gain.linearRampToValueAtTime(0, now + sustain + 0.1);
+  voice.output.connect(gain);
+  connectWithReverb(ctx, gain, 1);
+  vibrato.start(now);
+  vibrato.stop(now + sustain + 0.12);
+  scheduledNodes.push(vibrato);
   startStopVoice(voice, now, now + sustain + 0.12);
 }
 
 function playHarpNote(ctx, freq, duration) {
-  // Plucked-string family like guitar/cavaquinho, but sparklier and more
+  // Plucked-string family like guitar, but sparklier and more
   // resonant: a triangle fundamental plus a slightly detuned sine an octave
   // up (the detune creates a soft shimmering beat), and a long smooth
   // exponential decay for a resonant "ring" the others don't have.
@@ -892,20 +908,17 @@ export function playInstrumentNote(instrument, note, duration = 0.5) {
     case "violin":
       playSampledNote("violin", ctx, note, freq, duration, playViolinNote);
       break;
-    case "viola":
-      playViolaNote(ctx, freq, duration);
+    case "cello":
+      playSampledNote("cello", ctx, note, freq, duration, playCelloNote);
       break;
-    case "cavaquinho":
-      playCavaquinhoNote(ctx, freq, duration);
+    case "trumpet":
+      playSampledNote("trumpet", ctx, note, freq, duration, playTrumpetNote);
       break;
-    case "portugueseGuitar":
-      playPortugueseGuitarNote(ctx, freq, duration);
+    case "clarinet":
+      playSampledNote("clarinet", ctx, note, freq, duration, playClarinetNote);
       break;
-    case "accordion":
-      playAccordionNote(ctx, freq, duration);
-      break;
-    case "concertina":
-      playConcertinaNote(ctx, freq, duration);
+    case "saxophone":
+      playSampledNote("saxophone", ctx, note, freq, duration, playSaxophoneNote);
       break;
     case "harp":
       playSampledNote("harp", ctx, note, freq, duration, playHarpNote);
