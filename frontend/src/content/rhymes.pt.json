@@ -29,6 +29,66 @@
       "title": "Uma Galinha",
       "emoji": "🐔",
       "text": "Uma galinha no quintal,\nPunha ovos sem parar,\nUm, dois, três, quatro, cinco,\nQuantos ovos vais contar?"
+    },
+    {
+      "id": "leng-06",
+      "title": "A Bota Furada",
+      "emoji": "👢",
+      "text": "Sai, sai, bota furada,\nDeixa entrar a nova em folha,\nQuem ficar de fora agora,\nVolta a jogar sem escolha!"
+    },
+    {
+      "id": "leng-07",
+      "title": "A Roda da Cantiga",
+      "emoji": "🎠",
+      "text": "Roda, roda, cai quem for,\nA rodar ao som da flor,\nUm, dois, três, já parou,\nQuem ficou no meio ganhou!"
+    },
+    {
+      "id": "leng-08",
+      "title": "O Comboio dos Números",
+      "emoji": "🚂",
+      "text": "Vem o comboio a apitar,\nUm, dois, três, sem parar,\nQuatro, cinco, seis, sete,\nOito, nove, dez, remete!"
+    },
+    {
+      "id": "leng-09",
+      "title": "A Fada da Escolha",
+      "emoji": "🧚",
+      "text": "Fada, fada, vem contar,\nQuem será a começar,\nAponta o dedo devagar,\nÉ a tua vez de brincar!"
+    },
+    {
+      "id": "leng-10",
+      "title": "O Barquinho de Papel",
+      "emoji": "⛵",
+      "text": "Um barquinho a navegar,\nPelo rio a passear,\nUm, dois, três, a remar,\nQuem sorrir vai já ganhar!"
+    },
+    {
+      "id": "leng-11",
+      "title": "A Formiguinha Contadora",
+      "emoji": "🐜",
+      "text": "Uma formiga a contar,\nGrãos de areia sem parar,\nUm, dois, três, quatro, cinco,\nAté o ninho vai chegar!"
+    },
+    {
+      "id": "leng-12",
+      "title": "O Relógio Maluco",
+      "emoji": "⏰",
+      "text": "Tic-tac, tic-tac, o relógio a bater,\nUma, duas, três horas já é,\nQuatro, cinco, seis a correr,\nQuem contou ganhou outra vez!"
+    },
+    {
+      "id": "leng-13",
+      "title": "A Borboleta Voadora",
+      "emoji": "🦋",
+      "text": "Borboleta a voar,\nDe flor em flor a pousar,\nUm, dois, três a contar,\nQuem apanhar vai ganhar!"
+    },
+    {
+      "id": "leng-14",
+      "title": "O Caracol Contador",
+      "emoji": "🐌",
+      "text": "Caracol, caracol,\nSobe, sobe até ao sol,\nUm, dois, três, devagarinho,\nChega ao topo sozinho!"
+    },
+    {
+      "id": "leng-15",
+      "title": "A Estrela Escolhida",
+      "emoji": "⭐",
+      "text": "No céu há mil estrelas,\nA brilhar sem parar,\nUm, dois, três, quatro, cinco,\nQual delas vais escolher a contar?"
     }
   ],
   "travalinguas": [
@@ -61,6 +121,66 @@
       "title": "A Aranha e a Rã",
       "emoji": "🕷️",
       "text": "A aranha arranha a rã, a rã arranha a aranha."
+    },
+    {
+      "id": "tt-6",
+      "title": "O Ninho de Mafagafos",
+      "emoji": "🐦",
+      "text": "Um ninho de mafagafos com cinco mafagafinhos, quem os desmafagafizar bom desmafagafizador será."
+    },
+    {
+      "id": "tt-7",
+      "title": "O Sabão de Sabina",
+      "emoji": "🧼",
+      "text": "O sabão que a Sabina usa é o sabão que a Sabina sabe usar."
+    },
+    {
+      "id": "tt-8",
+      "title": "As Joias da Judite",
+      "emoji": "💍",
+      "text": "A Judite juntou joias junto à janela."
+    },
+    {
+      "id": "tt-9",
+      "title": "O Chá do Chico",
+      "emoji": "🍵",
+      "text": "Chico Xico chuchou chá, chá chuchado por Chico Xico."
+    },
+    {
+      "id": "tt-10",
+      "title": "A Couve Roxa",
+      "emoji": "🐇",
+      "text": "O coelho manhoso rói a couve roxa no quintal."
+    },
+    {
+      "id": "tt-11",
+      "title": "Os Trocos do Zeca",
+      "emoji": "🪙",
+      "text": "Zé Roque troca os trocos com o Zeca da roça."
+    },
+    {
+      "id": "tt-12",
+      "title": "Se Cá Nevasse",
+      "emoji": "⛷️",
+      "text": "Se cá nevasse, fazia-se cá esqui, mas como cá não neva, não se faz cá esqui."
+    },
+    {
+      "id": "tt-13",
+      "title": "A Chuva na Choça",
+      "emoji": "🌂",
+      "text": "Chove chuva, chove sem parar, na choça o chapéu vai molhar."
+    },
+    {
+      "id": "tt-14",
+      "title": "O Rato Ruca",
+      "emoji": "🐭",
+      "text": "O rato Ruca corre rápido pela rua estreita."
+    },
+    {
+      "id": "tt-15",
+      "title": "A Galinha Choca",
+      "emoji": "🐔",
+      "text": "Xô, xô, galinha choca, não me mexas nessa touca."
     }
   ],
   "rimas": [
@@ -99,6 +219,60 @@
       "title": "Boa Noite, Lua",
       "emoji": "🌙",
       "text": "Boa noite, lua cheia,\nAcende as estrelas no céu,\nDorme a terra, dorme a areia,\nAté o sol novo, meu bem."
+    },
+    {
+      "id": "rima-07",
+      "title": "O Passarinho Madrugador",
+      "emoji": "🐦",
+      "text": "O passarinho canta cedo,\nAnuncia que o dia chegou,\nVoa alto, sem medo,\nAté o céu azulou."
+    },
+    {
+      "id": "rima-08",
+      "title": "O Outono Dourado",
+      "emoji": "🍂",
+      "text": "As folhas caem devagar,\nPintam o chão de castanho e ouro,\nO vento gosta de brincar,\nCom cada folha, um tesouro."
+    },
+    {
+      "id": "rima-09",
+      "title": "O Inverno Frio",
+      "emoji": "❄️",
+      "text": "O inverno traz o frio,\nCobre a terra de branco a rir,\nBebemos chá bem quentinho,\nA olhar a neve cair."
+    },
+    {
+      "id": "rima-10",
+      "title": "A Primavera Chegou",
+      "emoji": "🌸",
+      "text": "A primavera acordou,\nAs árvores cheias de flor,\nO campo se perfumou,\nCom um doce e novo calor."
+    },
+    {
+      "id": "rima-11",
+      "title": "O Verão na Praia",
+      "emoji": "🏖️",
+      "text": "No verão vamos à praia,\nBrincar na areia e no mar,\nO sol brilha, a onda ensaia,\nUm convite a nadar."
+    },
+    {
+      "id": "rima-12",
+      "title": "O Cãozinho Fiel",
+      "emoji": "🐶",
+      "text": "O meu cão corre e ladra,\nAtrás da bola a saltar,\nAbana o rabo, não se cansa,\nÉ o meu melhor par."
+    },
+    {
+      "id": "rima-13",
+      "title": "O Peixinho Dourado",
+      "emoji": "🐠",
+      "text": "No aquário nada devagar,\nUm peixinho cor de sol,\nGosta de água a brincar,\nE de nadar sem farol."
+    },
+    {
+      "id": "rima-14",
+      "title": "A Avózinha Querida",
+      "emoji": "👵",
+      "text": "A avó conta histórias à noite,\nCom voz macia e um abraço quente,\nGuarda sempre um doce açoite,\nDe carinho para toda a gente."
+    },
+    {
+      "id": "rima-15",
+      "title": "O Passeio na Floresta",
+      "emoji": "🌳",
+      "text": "Na floresta o vento sopra,\nEntre as árvores altas e verdes,\nO esquilo salta e não pára,\nEnquanto o rio segue, sempre."
     }
   ]
 }
