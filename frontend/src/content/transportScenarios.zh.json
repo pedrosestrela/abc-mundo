@@ -63,5 +63,109 @@
     ],
     "correct": "ship",
     "explanation": "要运输跨越海洋的非常重的货物，最常用的是轮船——虽然慢，但能运更多，而且每件物品消耗的能源更少。"
+  },
+  {
+    "id": "park",
+    "icon": "🚸",
+    "prompt": "去街尾的公园。",
+    "modes": [
+      "walk",
+      "bike",
+      "car",
+      "plane"
+    ],
+    "correct": "walk",
+    "explanation": "地方这么近，走路是到达那里最简单、最健康的方式。"
+  },
+  {
+    "id": "bakery",
+    "icon": "🥖",
+    "prompt": "早上去面包店买新鲜面包。",
+    "modes": [
+      "walk",
+      "bike",
+      "car",
+      "train"
+    ],
+    "correct": "walk",
+    "explanation": "面包店就在附近；走路既快，还能呼吸早晨的新鲜空气。"
+  },
+  {
+    "id": "islandferry",
+    "icon": "🏝️",
+    "prompt": "穿过一小段海域到达靠近海岸的岛屿。",
+    "modes": [
+      "car",
+      "train",
+      "plane",
+      "ship"
+    ],
+    "correct": "ship",
+    "explanation": "要穿过海水到达附近的岛屿，船（或渡轮）是正确的选择——海面上没有公路也没有铁轨。"
+  },
+  {
+    "id": "citycommute",
+    "icon": "🏢",
+    "prompt": "每天去城市另一边上班。",
+    "modes": [
+      "walk",
+      "bike",
+      "car",
+      "plane"
+    ],
+    "correct": "car",
+    "explanation": "每天要在城市里走很长的距离，开车比走路或骑自行车更实际。"
+  },
+  {
+    "id": "studyabroad",
+    "icon": "🎓",
+    "prompt": "去海洋另一边的国家留学一年。",
+    "modes": [
+      "car",
+      "train",
+      "ship",
+      "plane"
+    ],
+    "correct": "plane",
+    "explanation": "要快速跨越很远的距离、穿越海洋，飞机是正确的选择。"
+  },
+  {
+    "id": "exportcars",
+    "icon": "🚘",
+    "prompt": "把工厂生产的几百辆新车运到另一个大陆去销售。",
+    "modes": [
+      "car",
+      "train",
+      "plane",
+      "ship"
+    ],
+    "correct": "ship",
+    "explanation": "要跨越海洋运输非常重、体积很大的货物，船是最常用的——它一次能运的更多。"
+  },
+  {
+    "id": "medicine",
+    "icon": "💊",
+    "prompt": "把紧急药品送到世界另一端的医院。",
+    "modes": [
+      "train",
+      "ship",
+      "car",
+      "plane"
+    ],
+    "correct": "plane",
+    "explanation": "当速度比价格更重要时，比如紧急情况下，飞机比轮船到达得快得多。"
+  },
+  {
+    "id": "campingtrip",
+    "icon": "🏕️",
+    "prompt": "和家人去几小时车程外的森林露营。",
+    "modes": [
+      "walk",
+      "bike",
+      "car",
+      "plane"
+    ],
+    "correct": "car",
+    "explanation": "要带这么多装备——帐篷、睡袋、食物——开车是这种行程最实际的选择。"
   }
 ]

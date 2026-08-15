@@ -70,5 +70,44 @@
     "steps": [
       "I pannelli solari catturano la luce del sole e la trasformano in elettricità, senza fumo né inquinamento. Quell'energia può accendere le luci, caricare gli apparecchi, o essere conservata in batterie per usarla di notte."
     ]
+  },
+  {
+    "id": "deteccaofumo",
+    "icon": "🚨",
+    "name": "Rilevatori di fumo",
+    "prompt": "🚨 A cosa serve quel dispositivo rotondo sul soffitto?",
+    "steps": [
+      "Il rilevatore di fumo ha un sensore che riconosce il fumo nell'aria. In caso di incendio, emette un suono molto forte per avvertire tutti rapidamente, dando il tempo di uscire di casa in sicurezza."
+    ]
+  },
+  {
+    "id": "isolamento",
+    "icon": "🧱",
+    "name": "Isolamento",
+    "prompt": "🧱 Perché alcune case restano più calde in inverno di altre?",
+    "steps": [
+      "Le pareti, il tetto e le finestre possono avere materiali isolanti speciali, che impediscono al calore di uscire in inverno e di entrare in estate. Una casa ben isolata consuma meno energia per riscaldarsi o raffreddarsi."
+    ]
+  },
+  {
+    "id": "reciclagem",
+    "icon": "♻️",
+    "name": "Riciclo in casa",
+    "prompt": "♻️ Come si organizza la spazzatura in casa prima di uscire?",
+    "steps": [
+      "1. In casa separiamo la spazzatura in diversi bidoni: carta, plastica e metallo, vetro, e rifiuti generici.",
+      "2. Ogni tipo di rifiuto ha un bidone di colore diverso fuori casa.",
+      "3. Quando il bidone di casa si riempie, qualcuno porta il sacchetto al bidone giusto in strada.",
+      "4. Così è più facile per la città riciclare tutto in seguito."
+    ]
+  },
+  {
+    "id": "seguranca",
+    "icon": "🔒",
+    "name": "Sicurezza domestica",
+    "prompt": "🔒 Come fa la serratura della porta a tenere sicura la tua casa?",
+    "steps": [
+      "Le serrature e le chiavi fanno sì che solo le persone giuste possano aprire la porta di casa. Molte case hanno anche campanelli e spioncini, per vedere chi c'è fuori prima di aprire la porta."
+    ]
   }
 ]

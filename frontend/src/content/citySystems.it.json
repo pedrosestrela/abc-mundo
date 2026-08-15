@@ -61,5 +61,56 @@
     "steps": [
       "I vigili del fuoco aiutano a spegnere gli incendi, a salvare persone e animali, e a soccorrere chi ha bisogno in un'emergenza. Sono sempre pronti, con il camion e l'attrezzatura preparati, per arrivare il più in fretta possibile da chi ha bisogno di aiuto."
     ]
+  },
+  {
+    "id": "iluminacao",
+    "icon": "🔆",
+    "name": "Illuminazione stradale",
+    "prompt": "🔆 Come si accendono i lampioni quando fa buio?",
+    "steps": [
+      "1. I sensori di luce rilevano quando il sole tramonta e il cielo si scurisce.",
+      "2. Un sistema centrale accende automaticamente migliaia di lampioni contemporaneamente.",
+      "3. L'elettricità viaggia negli stessi cavi che alimentano le case.",
+      "4. Le strade si illuminano, rendendole più sicure per camminare e guidare di notte."
+    ]
+  },
+  {
+    "id": "internet",
+    "icon": "🌐",
+    "name": "Internet e telecomunicazioni",
+    "prompt": "🌐 Come fa tutta la città ad avere internet contemporaneamente?",
+    "steps": [
+      "1. Cavi in fibra ottica molto lunghi collegano la città a una rete più grande, che raggiunge tutto il paese e il mondo.",
+      "2. Antenne e torri per le telecomunicazioni sparse per la città inviano segnale senza fili a telefoni e case.",
+      "3. Un centro dati conserva e organizza tutte le informazioni che viaggiano nella rete.",
+      "4. Così, migliaia di persone possono usare internet allo stesso tempo senza che la rete smetta di funzionare."
+    ]
+  },
+  {
+    "id": "parques",
+    "icon": "🌳",
+    "name": "Parchi e spazi verdi",
+    "prompt": "🌳 Chi decide dove si trovano i parchi e gli alberi della città?",
+    "steps": [
+      "Ingegneri e urbanisti della città scelgono gli spazi per parchi, giardini e alberi, così le persone hanno luoghi dove giocare, passeggiare e respirare aria più fresca. Gli alberi aiutano anche a rinfrescare la città e a pulire l'aria che respiriamo."
+    ]
+  },
+  {
+    "id": "policia",
+    "icon": "👮",
+    "name": "Polizia",
+    "prompt": "👮 Cosa fanno i poliziotti per mantenere sicura la città?",
+    "steps": [
+      "La polizia aiuta a mantenere sicure le strade, dirige il traffico, aiuta chi si perde e risponde rapidamente quando qualcuno ha bisogno di aiuto in un'emergenza. Sono sempre nei paraggi affinché tutti si sentano più sicuri."
+    ]
+  },
+  {
+    "id": "escolas",
+    "icon": "🏫",
+    "name": "Scuole",
+    "prompt": "🏫 Come organizza la città le scuole per così tanti bambini?",
+    "steps": [
+      "La città costruisce scuole in diversi quartieri affinché i bambini non debbano viaggiare troppo lontano. Gli insegnanti preparano lezioni ogni giorno per aiutare ogni bambino a imparare e crescere."
+    ]
   }
 ]

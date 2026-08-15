@@ -63,5 +63,109 @@
     ],
     "correct": "ship",
     "explanation": "Um sehr schwere Fracht über den Ozean zu transportieren, werden meist Schiffe genutzt — langsamer, aber sie transportieren viel mehr und verbrauchen weniger Energie pro Stück."
+  },
+  {
+    "id": "park",
+    "icon": "🚸",
+    "prompt": "Zum Park am Ende der Straße gehen.",
+    "modes": [
+      "walk",
+      "bike",
+      "car",
+      "plane"
+    ],
+    "correct": "walk",
+    "explanation": "Für einen so nahen Ort ist Gehen die einfachste und gesündeste Art, dorthin zu kommen."
+  },
+  {
+    "id": "bakery",
+    "icon": "🥖",
+    "prompt": "Morgens zur Bäckerei gehen, um frisches Brot zu kaufen.",
+    "modes": [
+      "walk",
+      "bike",
+      "car",
+      "train"
+    ],
+    "correct": "walk",
+    "explanation": "Die Bäckerei ist gleich um die Ecke; zu Fuß gehen ist schnell und du bekommst auch noch frische Morgenluft."
+  },
+  {
+    "id": "islandferry",
+    "icon": "🏝️",
+    "prompt": "Ein schmales Meeresstück überqueren, um eine Insel nahe der Küste zu erreichen.",
+    "modes": [
+      "car",
+      "train",
+      "plane",
+      "ship"
+    ],
+    "correct": "ship",
+    "explanation": "Um Wasser bis zu einer nahen Insel zu überqueren, ist ein Schiff (oder eine Fähre) die richtige Wahl — es gibt keine Straße oder Schiene über das Meer."
+  },
+  {
+    "id": "citycommute",
+    "icon": "🏢",
+    "prompt": "Jeden Tag auf die andere Seite der Stadt zur Arbeit fahren.",
+    "modes": [
+      "walk",
+      "bike",
+      "car",
+      "plane"
+    ],
+    "correct": "car",
+    "explanation": "Für eine große Entfernung quer durch die Stadt, jeden Tag, ist das Auto praktischer als zu Fuß gehen oder Rad fahren."
+  },
+  {
+    "id": "studyabroad",
+    "icon": "🎓",
+    "prompt": "Ein Jahr in einem Land jenseits des Ozeans studieren gehen.",
+    "modes": [
+      "car",
+      "train",
+      "ship",
+      "plane"
+    ],
+    "correct": "plane",
+    "explanation": "Um schnell eine sehr weite Strecke über den Ozean zurückzulegen, ist das Flugzeug die richtige Wahl."
+  },
+  {
+    "id": "exportcars",
+    "icon": "🚘",
+    "prompt": "Hunderte neue Autos von einer Fabrik zum Verkauf auf einem anderen Kontinent schicken.",
+    "modes": [
+      "car",
+      "train",
+      "plane",
+      "ship"
+    ],
+    "correct": "ship",
+    "explanation": "Um sehr schwere und sperrige Fracht über den Ozean zu transportieren, werden meist Schiffe genutzt — sie befördern auf einmal viel mehr."
+  },
+  {
+    "id": "medicine",
+    "icon": "💊",
+    "prompt": "Dringend benötigte Medikamente an ein Krankenhaus auf der anderen Seite der Welt schicken.",
+    "modes": [
+      "train",
+      "ship",
+      "car",
+      "plane"
+    ],
+    "correct": "plane",
+    "explanation": "Wenn Geschwindigkeit wichtiger ist als der Preis, wie in einem Notfall, kommt ein Flugzeug viel schneller an als ein Schiff."
+  },
+  {
+    "id": "campingtrip",
+    "icon": "🏕️",
+    "prompt": "Mit der Familie in einem Wald einige Stunden von zu Hause entfernt zelten gehen.",
+    "modes": [
+      "walk",
+      "bike",
+      "car",
+      "plane"
+    ],
+    "correct": "car",
+    "explanation": "Mit so viel Gepäck — Zelt, Schlafsäcke, Essen — ist das Auto die praktischste Wahl für eine Reise dieser Größe."
   }
 ]

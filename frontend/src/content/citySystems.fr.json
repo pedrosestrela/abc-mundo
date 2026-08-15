@@ -61,5 +61,56 @@
     "steps": [
       "Les pompiers aident à éteindre les incendies, à secourir des personnes et des animaux, et à venir en aide en cas d'urgence. Ils sont toujours prêts, avec le camion et l'équipement préparés, pour arriver le plus vite possible auprès de ceux qui ont besoin d'aide."
     ]
+  },
+  {
+    "id": "iluminacao",
+    "icon": "🔆",
+    "name": "Éclairage public",
+    "prompt": "🔆 Comment les lampadaires s'allument-ils quand il fait nuit ?",
+    "steps": [
+      "1. Des capteurs de lumière détectent le coucher du soleil et l'obscurité.",
+      "2. Un système central allume automatiquement des milliers de lampadaires en même temps.",
+      "3. L'électricité circule dans les mêmes câbles qui alimentent les maisons.",
+      "4. Les rues s'illuminent, ce qui les rend plus sûres pour marcher et conduire la nuit."
+    ]
+  },
+  {
+    "id": "internet",
+    "icon": "🌐",
+    "name": "Internet et télécoms",
+    "prompt": "🌐 Comment toute la ville a-t-elle internet en même temps ?",
+    "steps": [
+      "1. De très longs câbles en fibre optique relient la ville à un réseau plus grand, qui atteint tout le pays et le monde.",
+      "2. Des antennes et des tours de télécommunication réparties dans la ville envoient un signal sans fil aux téléphones et aux maisons.",
+      "3. Un centre de données stocke et organise toutes les informations qui circulent sur le réseau.",
+      "4. Ainsi, des milliers de personnes peuvent utiliser internet en même temps sans que le réseau ne tombe en panne."
+    ]
+  },
+  {
+    "id": "parques",
+    "icon": "🌳",
+    "name": "Parcs et espaces verts",
+    "prompt": "🌳 Qui décide où se trouvent les parcs et les arbres de la ville ?",
+    "steps": [
+      "Les ingénieurs et urbanistes de la ville choisissent des espaces pour les parcs, jardins et arbres, afin que les gens aient des endroits pour jouer, se promener et respirer un air plus frais. Les arbres aident aussi à rafraîchir la ville et à purifier l'air que nous respirons."
+    ]
+  },
+  {
+    "id": "policia",
+    "icon": "👮",
+    "name": "Police",
+    "prompt": "👮 Que font les policiers pour assurer la sécurité de la ville ?",
+    "steps": [
+      "La police aide à sécuriser les rues, régule la circulation, aide les personnes perdues et intervient rapidement quand quelqu'un a besoin d'aide en cas d'urgence. Elle est toujours à proximité pour que chacun se sente plus en sécurité."
+    ]
+  },
+  {
+    "id": "escolas",
+    "icon": "🏫",
+    "name": "Écoles",
+    "prompt": "🏫 Comment la ville organise-t-elle des écoles pour tant d'enfants ?",
+    "steps": [
+      "La ville construit des écoles dans différents quartiers pour que les enfants n'aient pas à voyager loin. Les enseignants préparent des cours chaque jour pour aider chaque enfant à apprendre et grandir."
+    ]
   }
 ]

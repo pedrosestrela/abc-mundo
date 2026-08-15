@@ -70,5 +70,44 @@
     "steps": [
       "Solarpaneele fangen Sonnenlicht ein und wandeln es in Strom um, ganz ohne Rauch oder Verschmutzung. Diese Energie kann Lichter einschalten, Geräte aufladen oder sogar in Batterien gespeichert werden, um sie nachts zu nutzen."
     ]
+  },
+  {
+    "id": "deteccaofumo",
+    "icon": "🚨",
+    "name": "Rauchmelder",
+    "prompt": "🚨 Wofür ist dieses runde Gerät an der Decke?",
+    "steps": [
+      "Der Rauchmelder hat einen Sensor, der Rauch in der Luft erkennt. Bei einem Feuer gibt er ein sehr lautes Signal ab, um alle schnell zu warnen, sodass genug Zeit bleibt, sicher das Haus zu verlassen."
+    ]
+  },
+  {
+    "id": "isolamento",
+    "icon": "🧱",
+    "name": "Dämmung",
+    "prompt": "🧱 Warum bleiben manche Häuser im Winter wärmer als andere?",
+    "steps": [
+      "Wände, Dächer und Fenster können spezielle Dämmmaterialien haben, die verhindern, dass im Winter Wärme entweicht und im Sommer eindringt. Ein gut gedämmtes Haus verbraucht weniger Energie zum Heizen oder Kühlen."
+    ]
+  },
+  {
+    "id": "reciclagem",
+    "icon": "♻️",
+    "name": "Recycling zu Hause",
+    "prompt": "♻️ Wie wird der Müll zu Hause sortiert, bevor er rausgeht?",
+    "steps": [
+      "1. Zu Hause sortieren wir Müll in verschiedene Behälter: Papier, Plastik und Metall, Glas und Restmüll.",
+      "2. Jede Müllart hat draußen einen anders farbigen Container.",
+      "3. Wenn der Behälter zu Hause voll ist, bringt jemand den Sack zum richtigen Container auf der Straße.",
+      "4. So wird es für die Stadt leichter, später alles zu recyceln."
+    ]
+  },
+  {
+    "id": "seguranca",
+    "icon": "🔒",
+    "name": "Sicherheit zu Hause",
+    "prompt": "🔒 Wie hält das Türschloss dein Haus sicher?",
+    "steps": [
+      "Schlösser und Schlüssel sorgen dafür, dass nur die richtigen Personen die Haustür öffnen können. Viele Häuser haben auch Klingeln und Türspione, damit man sehen kann, wer draußen ist, bevor man die Tür öffnet."
+    ]
   }
 ]

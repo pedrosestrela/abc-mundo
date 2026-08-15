@@ -273,5 +273,390 @@
         "correct": false
       }
     ]
+  },
+  {
+    "id": "city",
+    "icon": "🏙️",
+    "name": "City Trip",
+    "items": [
+      {
+        "id": "comfortableshoes",
+        "icon": "👟",
+        "name": "Comfortable shoes",
+        "correct": true
+      },
+      {
+        "id": "citymap",
+        "icon": "🗺️",
+        "name": "City map",
+        "correct": true
+      },
+      {
+        "id": "camera",
+        "icon": "📷",
+        "name": "Camera",
+        "correct": true
+      },
+      {
+        "id": "lightjacket",
+        "icon": "🧥",
+        "name": "Light jacket",
+        "correct": true
+      },
+      {
+        "id": "swimsuit",
+        "icon": "🩱",
+        "name": "Swimsuit",
+        "correct": false
+      },
+      {
+        "id": "snowboots",
+        "icon": "🥾",
+        "name": "Snow boots",
+        "correct": false
+      },
+      {
+        "id": "heavycoat",
+        "icon": "🧥",
+        "name": "Heavy coat",
+        "correct": false
+      },
+      {
+        "id": "umbrella-open",
+        "icon": "☔",
+        "name": "Big umbrella",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "camping",
+    "icon": "🏕️",
+    "name": "Camping",
+    "items": [
+      {
+        "id": "tent",
+        "icon": "⛺",
+        "name": "Tent",
+        "correct": true
+      },
+      {
+        "id": "sleepingbag",
+        "icon": "🛌",
+        "name": "Sleeping bag",
+        "correct": true
+      },
+      {
+        "id": "flashlight",
+        "icon": "🔦",
+        "name": "Flashlight",
+        "correct": true
+      },
+      {
+        "id": "insectrepellent",
+        "icon": "🦟",
+        "name": "Insect repellent",
+        "correct": true
+      },
+      {
+        "id": "highheels",
+        "icon": "👠",
+        "name": "High heels",
+        "correct": false
+      },
+      {
+        "id": "formaldress",
+        "icon": "👗",
+        "name": "Fancy dress",
+        "correct": false
+      },
+      {
+        "id": "hairdryer",
+        "icon": "💇",
+        "name": "Hair dryer",
+        "correct": false
+      },
+      {
+        "id": "umbrella-open",
+        "icon": "☔",
+        "name": "Big umbrella",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "jungle",
+    "icon": "🌴",
+    "name": "Rainforest",
+    "items": [
+      {
+        "id": "raincoat",
+        "icon": "🧥",
+        "name": "Raincoat",
+        "correct": true
+      },
+      {
+        "id": "insectrepellent",
+        "icon": "🦟",
+        "name": "Insect repellent",
+        "correct": true
+      },
+      {
+        "id": "hikingboots",
+        "icon": "🥾",
+        "name": "Hiking boots",
+        "correct": true
+      },
+      {
+        "id": "waterbottle",
+        "icon": "🚰",
+        "name": "Water bottle",
+        "correct": true
+      },
+      {
+        "id": "snowboots",
+        "icon": "🥾",
+        "name": "Snow boots",
+        "correct": false
+      },
+      {
+        "id": "heavycoat",
+        "icon": "🧥",
+        "name": "Heavy coat",
+        "correct": false
+      },
+      {
+        "id": "gloves",
+        "icon": "🧤",
+        "name": "Wool gloves",
+        "correct": false
+      },
+      {
+        "id": "scarf",
+        "icon": "🧣",
+        "name": "Scarf",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "farm",
+    "icon": "🚜",
+    "name": "Farm Visit",
+    "items": [
+      {
+        "id": "rubberboots",
+        "icon": "🥾",
+        "name": "Rubber boots",
+        "correct": true
+      },
+      {
+        "id": "oldclothes",
+        "icon": "👕",
+        "name": "Old clothes",
+        "correct": true
+      },
+      {
+        "id": "hat",
+        "icon": "👒",
+        "name": "Hat",
+        "correct": true
+      },
+      {
+        "id": "waterbottle",
+        "icon": "🚰",
+        "name": "Water bottle",
+        "correct": true
+      },
+      {
+        "id": "swimsuit",
+        "icon": "🩱",
+        "name": "Swimsuit",
+        "correct": false
+      },
+      {
+        "id": "highheels",
+        "icon": "👠",
+        "name": "High heels",
+        "correct": false
+      },
+      {
+        "id": "formaldress",
+        "icon": "👗",
+        "name": "Fancy dress",
+        "correct": false
+      },
+      {
+        "id": "laptop",
+        "icon": "💻",
+        "name": "Laptop",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "cruise",
+    "icon": "🛳️",
+    "name": "Cruise",
+    "items": [
+      {
+        "id": "motionsicknesspills",
+        "icon": "💊",
+        "name": "Motion sickness pills",
+        "correct": true
+      },
+      {
+        "id": "lightclothes",
+        "icon": "👕",
+        "name": "Light clothes",
+        "correct": true
+      },
+      {
+        "id": "sunglasses",
+        "icon": "🕶️",
+        "name": "Sunglasses",
+        "correct": true
+      },
+      {
+        "id": "camera",
+        "icon": "📷",
+        "name": "Camera",
+        "correct": true
+      },
+      {
+        "id": "snowboots",
+        "icon": "🥾",
+        "name": "Snow boots",
+        "correct": false
+      },
+      {
+        "id": "heavycoat",
+        "icon": "🧥",
+        "name": "Heavy coat",
+        "correct": false
+      },
+      {
+        "id": "hikingboots",
+        "icon": "🥾",
+        "name": "Hiking boots",
+        "correct": false
+      },
+      {
+        "id": "gloves",
+        "icon": "🧤",
+        "name": "Wool gloves",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "sports",
+    "icon": "🏅",
+    "name": "Sports Tournament",
+    "items": [
+      {
+        "id": "sneakers",
+        "icon": "👟",
+        "name": "Sports shoes",
+        "correct": true
+      },
+      {
+        "id": "sportswear",
+        "icon": "🎽",
+        "name": "Sportswear",
+        "correct": true
+      },
+      {
+        "id": "waterbottle",
+        "icon": "🚰",
+        "name": "Water bottle",
+        "correct": true
+      },
+      {
+        "id": "towel",
+        "icon": "🧺",
+        "name": "Towel",
+        "correct": true
+      },
+      {
+        "id": "swimsuit",
+        "icon": "🩱",
+        "name": "Swimsuit",
+        "correct": false
+      },
+      {
+        "id": "heavycoat",
+        "icon": "🧥",
+        "name": "Heavy coat",
+        "correct": false
+      },
+      {
+        "id": "highheels",
+        "icon": "👠",
+        "name": "High heels",
+        "correct": false
+      },
+      {
+        "id": "umbrella-open",
+        "icon": "☔",
+        "name": "Big umbrella",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "roadtrip",
+    "icon": "🚗",
+    "name": "Road Trip",
+    "items": [
+      {
+        "id": "snacks",
+        "icon": "🍪",
+        "name": "Snacks",
+        "correct": true
+      },
+      {
+        "id": "pillow",
+        "icon": "🛏️",
+        "name": "Pillow",
+        "correct": true
+      },
+      {
+        "id": "books",
+        "icon": "📚",
+        "name": "Books",
+        "correct": true
+      },
+      {
+        "id": "comfyclothes",
+        "icon": "👕",
+        "name": "Comfortable clothes",
+        "correct": true
+      },
+      {
+        "id": "swimsuit",
+        "icon": "🩱",
+        "name": "Swimsuit",
+        "correct": false
+      },
+      {
+        "id": "snowboots",
+        "icon": "🥾",
+        "name": "Snow boots",
+        "correct": false
+      },
+      {
+        "id": "hikingboots",
+        "icon": "🥾",
+        "name": "Hiking boots",
+        "correct": false
+      },
+      {
+        "id": "heavycoat",
+        "icon": "🧥",
+        "name": "Heavy coat",
+        "correct": false
+      }
+    ]
   }
 ]
