@@ -286,6 +286,14 @@ import communicationZh from "./communication.zh.json";
 import communicationEs from "./communication.es.json";
 import communicationIt from "./communication.it.json";
 
+import trafficSignsPt from "./trafficSigns.pt.json";
+import trafficSignsEn from "./trafficSigns.en.json";
+import trafficSignsDe from "./trafficSigns.de.json";
+import trafficSignsFr from "./trafficSigns.fr.json";
+import trafficSignsZh from "./trafficSigns.zh.json";
+import trafficSignsEs from "./trafficSigns.es.json";
+import trafficSignsIt from "./trafficSigns.it.json";
+
 // Re-exported so existing `import { SUPPORTED_LANGUAGES } from "../content"`
 // call sites keep working unchanged. See content/languages.js for why the
 // actual list lives in its own module.
@@ -327,6 +335,7 @@ const CITY_SYSTEMS = { pt: citySystemsPt, en: citySystemsEn, de: citySystemsDe, 
 const PACKING_CHALLENGES = { pt: packingChallengesPt, en: packingChallengesEn, de: packingChallengesDe, fr: packingChallengesFr, zh: packingChallengesZh, es: packingChallengesEs, it: packingChallengesIt };
 const TRANSPORT_SCENARIOS = { pt: transportScenariosPt, en: transportScenariosEn, de: transportScenariosDe, fr: transportScenariosFr, zh: transportScenariosZh, es: transportScenariosEs, it: transportScenariosIt };
 const HANGMAN_WORDS = { pt: hangmanWordsPt, en: hangmanWordsEn, de: hangmanWordsDe, fr: hangmanWordsFr, zh: hangmanWordsZh, es: hangmanWordsEs, it: hangmanWordsIt };
+const TRAFFIC_SIGNS = { pt: trafficSignsPt, en: trafficSignsEn, de: trafficSignsDe, fr: trafficSignsFr, zh: trafficSignsZh, es: trafficSignsEs, it: trafficSignsIt };
 
 // Normalizes zh's different shape ({hanzi,...}) to the same shape used by
 // the Latin-alphabet languages ({letter, lower, upper, exampleWord, emoji}).
@@ -506,6 +515,10 @@ export function getHangmanWords(langCode) {
 
 export function getTransportScenarios(langCode) {
   return TRANSPORT_SCENARIOS[langCode] || TRANSPORT_SCENARIOS.pt;
+}
+
+export function getTrafficSigns(langCode) {
+  return TRAFFIC_SIGNS[langCode] || TRAFFIC_SIGNS.pt;
 }
 
 // Countries are language-agnostic in shape (name/fact are per-language

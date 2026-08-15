@@ -1,0 +1,18 @@
+[
+  {"id": "stop", "emoji": "🛑", "name": "Panneau STOP", "meaning": "Tu dois t'arrêter complètement avant de continuer. Regarde des deux côtés avant de repartir.", "category": "driver"},
+  {"id": "cedencia-passagem", "emoji": "🔺", "name": "Cédez le Passage", "meaning": "Tu dois ralentir et laisser passer les autres avant de continuer.", "category": "driver"},
+  {"id": "passadeira", "emoji": "🚶", "name": "Passage Piéton", "meaning": "C'est l'endroit idéal pour traverser la rue à pied. Regarde des deux côtés avant de traverser.", "category": "pedestrian"},
+  {"id": "sentido-proibido", "emoji": "⛔", "name": "Sens Interdit", "meaning": "Tu ne peux pas entrer dans cette rue. C'est comme une porte fermée juste pour les voitures et les vélos.", "category": "driver"},
+  {"id": "limite-velocidade", "emoji": "🚸", "name": "Limite de Vitesse", "meaning": "Indique la vitesse maximale autorisée sur cette route. Aller plus lentement est toujours plus sûr près des maisons et des écoles.", "category": "driver"},
+  {"id": "sentido-unico", "emoji": "➡️", "name": "Sens Unique", "meaning": "Sur cette rue, on ne peut aller que dans une direction. Aller dans le mauvais sens peut provoquer un accident.", "category": "driver"},
+  {"id": "semaforo-vermelho", "emoji": "🔴", "name": "Feu Rouge", "meaning": "Le rouge signifie STOP. Personne ne peut avancer, ni les voitures ni les piétons, jusqu'à ce que le feu change.", "category": "pedestrian"},
+  {"id": "semaforo-amarelo", "emoji": "🟡", "name": "Feu Orange", "meaning": "L'orange signifie qu'il faut se préparer à s'arrêter. Le feu va bientôt passer au rouge.", "category": "pedestrian"},
+  {"id": "semaforo-verde", "emoji": "🟢", "name": "Feu Vert", "meaning": "Le vert signifie que tu peux avancer, mais regarde quand même autour de toi avant de partir.", "category": "pedestrian"},
+  {"id": "zona-escolar", "emoji": "🏫", "name": "Zone Scolaire", "meaning": "Prévient qu'une école est proche. Les voitures doivent ralentir car des enfants peuvent traverser.", "category": "pedestrian"},
+  {"id": "proibido-estacionar", "emoji": "🅿️", "name": "Stationnement Interdit", "meaning": "Les voitures ne peuvent pas rester garées ici. L'endroit doit rester libre.", "category": "driver"},
+  {"id": "rotunda", "emoji": "🔄", "name": "Rond-Point", "meaning": "Une place ronde où les voitures tournent. Celui qui est déjà dans le rond-point a toujours la priorité.", "category": "driver"},
+  {"id": "ciclovia", "emoji": "🚲", "name": "Piste Cyclable", "meaning": "Un chemin réservé aux vélos. Les voitures ne doivent ni rouler ni se garer ici.", "category": "pedestrian"},
+  {"id": "cruzamento", "emoji": "✖️", "name": "Carrefour", "meaning": "Prévient que deux routes vont se croiser devant. Il faut être plus attentif et ralentir.", "category": "driver"},
+  {"id": "lomba", "emoji": "🐫", "name": "Ralentisseur", "meaning": "Une petite bosse sur la route qui oblige les voitures à ralentir. Elle protège les personnes qui traversent à pied.", "category": "pedestrian"},
+  {"id": "perigo-geral", "emoji": "⚠️", "name": "Danger Général", "meaning": "Ce triangle prévient qu'il y a un danger devant. Fais très attention et ralentis.", "category": "driver"}
+]
