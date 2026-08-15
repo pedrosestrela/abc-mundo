@@ -118,5 +118,65 @@
       { "text": "Ich glaube es sofort und teile es gleich mit meinen Freunden.", "correct": false, "feedback": "Heutzutage gibt es computergemachte Videos, die echt aussehen, aber erfunden sind. Bevor du es glaubst, frag einen Erwachsenen." },
       { "text": "Ich frage einen Erwachsenen, ob dieses Video wirklich echt sein könnte.", "correct": true, "feedback": "Gut gemacht! Nicht alles, was du online siehst, ist echt — manche Videos werden von Computern gemacht. Bei einem Erwachsenen nachzufragen ist das, was ein guter Detektiv tut." }
     ]
+  },
+  {
+    "id": "is13",
+    "theme": "friend-requests",
+    "emoji": "➕",
+    "scenario": "Du bekommst eine Freundschaftsanfrage von jemandem, den du überhaupt nicht kennst.",
+    "options": [
+      { "text": "Ich nehme sie an, je mehr Freunde, desto besser.", "correct": false, "feedback": "Fremde anzunehmen kann riskant sein. Es ist immer besser, vorher einen Erwachsenen zu fragen." },
+      { "text": "Ich nehme sie nicht an und frage einen Erwachsenen, was ich tun soll.", "correct": true, "feedback": "Gut gemacht! Es ist nur sicher, Anfragen von Personen anzunehmen, die du wirklich im echten Leben kennst, und immer mit Hilfe eines Erwachsenen." }
+    ]
+  },
+  {
+    "id": "is14",
+    "theme": "downloads",
+    "emoji": "⬇️",
+    "scenario": "Du siehst ein neues Spiel, das echt cool aussieht, und willst es allein installieren, ohne jemanden zu fragen.",
+    "options": [
+      { "text": "Ich installiere es sofort, es sieht lustig aus.", "correct": false, "feedback": "Unbekannte Apps allein zu installieren kann Probleme auf dem Gerät verursachen. Bitte immer zuerst einen Erwachsenen um Erlaubnis." },
+      { "text": "Ich bitte einen Erwachsenen, sich das Spiel mit mir anzusehen, bevor ich es installiere.", "correct": true, "feedback": "Tolle Idee! Ein Erwachsener kann dir helfen herauszufinden, ob die App sicher ist, bevor du sie installierst." }
+    ]
+  },
+  {
+    "id": "is15",
+    "theme": "purchases",
+    "emoji": "💳",
+    "scenario": "In einem Spiel bietet ein Knopf spezielle Münzen zu einem sehr niedrigen Preis an, nur heute.",
+    "options": [
+      { "text": "Ich klicke und kaufe, das ist ein besonderes Angebot.", "correct": false, "feedback": "Käufe in Spielen kosten echtes Geld, auch wenn sie billig aussehen. Frag immer einen Erwachsenen, bevor du etwas kaufst." },
+      { "text": "Ich hole einen Erwachsenen, bevor ich irgendetwas kaufe.", "correct": true, "feedback": "Sehr vernünftig! Ein Erwachsener entscheidet immer mit dir zusammen, ob es sich lohnt, echtes Geld in einem Spiel auszugeben." }
+    ]
+  },
+  {
+    "id": "is16",
+    "theme": "screen-time",
+    "emoji": "⏰",
+    "scenario": "Du spielst schon lange auf dem Tablet und deine Augen fühlen sich müde an.",
+    "options": [
+      { "text": "Ich spiele noch ein bisschen weiter, nur noch ein Level.", "correct": false, "feedback": "Müde Augen sind ein Zeichen, eine Pause zu machen. Einfach weiterzumachen tut dir nicht gut." },
+      { "text": "Ich mache eine Pause, lasse meine Augen ausruhen und mache etwas anderes.", "correct": true, "feedback": "Gut gemacht! Zu merken, wann du eine Bildschirmpause brauchst, ist eine wirklich gesunde Gewohnheit." }
+    ]
+  },
+  {
+    "id": "is17",
+    "theme": "trusted-adult",
+    "emoji": "🙋",
+    "scenario": "Etwas, das du online gesehen hast, hat dich verwirrt oder unwohl gefühlt, aber du bist nicht sicher, ob es wichtig ist.",
+    "options": [
+      { "text": "Ich sage nichts, es ist wahrscheinlich nichts Besonderes.", "correct": false, "feedback": "Auch wenn du denkst, es ist nichts, ist es immer besser, es zu erzählen. Ein Erwachsener kann dir helfen, die Situation besser zu verstehen." },
+      { "text": "Ich erzähle es einer Vertrauensperson, auch ohne sicher zu sein, ob es wichtig ist.", "correct": true, "feedback": "Perfekte Einstellung! Einer Vertrauensperson zu erzählen, wenn dir online etwas unangenehm ist, ist immer die richtige Wahl." }
+    ]
+  },
+  {
+    "id": "is18",
+    "theme": "sharing-others",
+    "emoji": "👥",
+    "scenario": "Du hast ein lustiges Foto mit deinen Freunden und möchtest es online posten.",
+    "options": [
+      { "text": "Ich poste es sofort, das Foto ist super geworden.", "correct": false, "feedback": "Bevor du Fotos mit anderen Personen postest, ist es wichtig zu fragen, ob sie auch möchten, dass das Foto geteilt wird." },
+      { "text": "Ich frage meine Freunde und einen Erwachsenen, bevor ich es poste.", "correct": true, "feedback": "Gut gemacht! Die Wünsche deiner Freunde zu respektieren und mit einem Erwachsenen zu sprechen ist immer die richtige Sache." }
+    ]
   }
 ]
