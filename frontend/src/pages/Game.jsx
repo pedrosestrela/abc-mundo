@@ -7,6 +7,7 @@ import HelpButton from "../components/HelpButton.jsx";
 import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
 import MazeGame from "./MazeGame.jsx";
 import MemoryGame from "./MemoryGame.jsx";
+import CheckersGame from "./CheckersGame.jsx";
 
 // Tier -> { poolSize: how many words to draw questions from, rounds: quiz length }
 const TIER_CONFIG = {
@@ -121,6 +122,7 @@ const TABS = [
   { key: "quiz", emoji: "🎮", titleKey: "gameTabQuiz", helpKey: "gameHelp" },
   { key: "maze", emoji: "🦊", titleKey: "gameTabMaze", helpKey: "mazeHelp" },
   { key: "memory", emoji: "🃏", titleKey: "gameTabMemory", helpKey: "memoryHelp" },
+  { key: "checkers", emoji: "⚫", titleKey: "gameTabCheckers", helpKey: "checkersHelp" },
 ];
 
 export default function Game() {
@@ -162,6 +164,7 @@ export default function Game() {
       )}
       {tab === "maze" && <MazeGame key="maze" profileName={profile?.name} />}
       {tab === "memory" && <MemoryGame key="memory" profileName={profile?.name} />}
+      {tab === "checkers" && <CheckersGame key="checkers" profileName={profile?.name} />}
     </div>
   );
 }
