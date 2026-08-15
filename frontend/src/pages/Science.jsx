@@ -5,6 +5,7 @@ import { getLangPair, getProfile, getExploredScience, exploreScienceCard, record
 import SpeakButton from "../components/SpeakButton.jsx";
 import HelpButton from "../components/HelpButton.jsx";
 import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
+import MascotBubble from "../components/mascots/MascotBubble.jsx";
 
 const TOPIC_ICONS = {
   biology: "🧬",
@@ -508,6 +509,9 @@ export default function Science() {
         <HelpButton text={t("modules.scienceHelpMain")} langCode={pair.mother} />
       </div>
       <p className="page-intro">{t("modules.scienceIntro")}</p>
+      <MascotBubble character="nina" mood="happy" langCode={pair.mother}>
+        {t("modules.scienceMascotIntro")}
+      </MascotBubble>
 
       <div className="phonics-tabs">
         <button type="button" className={"phonics-tab" + (tab === "facts" ? " selected" : "")} onClick={() => setTab("facts")}>

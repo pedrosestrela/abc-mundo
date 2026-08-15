@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { getStories } from "../content/index.js";
 import { getLangPair, getProfile, pingProgress, recordSkillEvent } from "../storage.js";
+import MascotBubble from "../components/mascots/MascotBubble.jsx";
 import SpeakButton from "../components/SpeakButton.jsx";
 import HelpButton from "../components/HelpButton.jsx";
 import { playDrumPad } from "../music.js";
@@ -223,6 +224,9 @@ export default function Stories() {
       <div className="help-btn-corner">
         <HelpButton text={t("modules.storiesHelpMain")} langCode={pair.mother} />
       </div>
+      <MascotBubble character="pipa" mood="happy" langCode={pair.mother}>
+        {t("modules.storiesMascotIntro")}
+      </MascotBubble>
       <div className="song-list">
         {Array.from({ length: count }).map((_, i) => {
           const s = secondaryStories[i];

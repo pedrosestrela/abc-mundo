@@ -4,6 +4,7 @@ import { getReading } from "../content/index.js";
 import { getLangPair, getProfile, pingProgress, recordSkillEvent } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
 import HelpButton from "../components/HelpButton.jsx";
+import { IllustrationBook } from "../components/illustrations/index.js";
 
 export default function Reading() {
   const { t } = useTranslation();
@@ -24,6 +25,7 @@ export default function Reading() {
       <div className="help-btn-corner">
         <HelpButton text={t("modules.readingHelpMain")} langCode={pair.mother} />
       </div>
+      <IllustrationBook size={40} />
       <div className="reading-list">
         {Array.from({ length: count }).map((_, i) => {
           const m = motherWords[i];

@@ -4,6 +4,7 @@ import { getProfile, getDifficultyTier, pingProgress, recordSkillEvent, getLangP
 import HelpButton from "../components/HelpButton.jsx";
 import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
 import AgeAdvisory from "../components/AgeAdvisory.jsx";
+import MascotBubble from "../components/mascots/MascotBubble.jsx";
 
 // Small rotating pool of mascot-style character names used only as plain
 // text inside scenario sentences (no illustration import - keeps this page
@@ -886,6 +887,9 @@ export default function MathGame() {
       <div className="help-btn-corner">
         <HelpButton text={t(`modules.${helpKeyFor(activity)}`)} langCode={pair.mother} />
       </div>
+      <MascotBubble character="tomas" mood="happy" langCode={pair.mother}>
+        {t("modules.mathGameMascotIntro")}
+      </MascotBubble>
 
       <div className="game-options">
         {tabs.map((tab) => (

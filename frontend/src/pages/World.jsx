@@ -5,6 +5,7 @@ import { getLangPair, getProfile, getVisitedCountries, visitCountry, getDifficul
 import SpeakButton from "../components/SpeakButton.jsx";
 import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
 import HelpButton from "../components/HelpButton.jsx";
+import MascotBubble from "../components/mascots/MascotBubble.jsx";
 
 const TRANSPORT_MODE_META = {
   walk: { emoji: "🚶", labelKey: "worldModeWalk" },
@@ -336,6 +337,9 @@ export default function World() {
   return (
     <div className="page">
       <h1>{t("modules.worldTitle")} 🗺️</h1>
+      <MascotBubble character="vasco" mood="happy" langCode={pair.mother}>
+        {t("modules.worldMascotIntro")}
+      </MascotBubble>
 
       <div className="phonics-tabs">
         <button type="button" className={"phonics-tab" + (tab === "globe" ? " selected" : "")} onClick={() => setTab("globe")}>

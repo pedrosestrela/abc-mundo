@@ -16,6 +16,7 @@ import DrawingCanvas from "../components/DrawingCanvas.jsx";
 import SpeakButton from "../components/SpeakButton.jsx";
 import HelpButton from "../components/HelpButton.jsx";
 import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
+import MascotBubble from "../components/mascots/MascotBubble.jsx";
 
 const PIXEL_GRID_SIZE = 8;
 const PIXEL_PALETTE = ["#e74c3c", "#f1c40f", "#2ecc71", "#3498db", "#9b59b6", "#e67e22", "#1abc9c", "#2c3e50", "#ffffff"];
@@ -84,6 +85,9 @@ export default function Art() {
         <HelpButton text={activeModeInfo.help} langCode={pair.mother} />
       </div>
       <p className="page-intro">{t("modules.artIntro")}</p>
+      <MascotBubble character="pipa" mood="happy" langCode={pair.mother}>
+        {t("modules.artMascotIntro")}
+      </MascotBubble>
 
       <div className="robots-controls">
         {MODES.map((m) => (
