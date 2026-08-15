@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { getPortugalHistory } from "../content/index.js";
@@ -32,7 +32,18 @@ export default function PortugalHistory() {
   const pair = getLangPair() || { mother: "pt", secondary: "en" };
   const profile = getProfile();
   const tier = getDifficultyTier(profile?.age);
-  const eras = getPortugalHistory(pair.mother);
+  const [eras, setEras] = useState([]);
+
+  useEffect(() => {
+    let cancelled = false;
+    getPortugalHistory(pair.mother).then((data) => {
+      if (!cancelled) setEras(data);
+    });
+    return () => {
+      cancelled = true;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pair.mother]);
 
   const [tab, setTab] = useState("timeline");
   const [openId, setOpenId] = useState(null);

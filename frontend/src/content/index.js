@@ -31,9 +31,6 @@ import phrasesZh from "./phrases.zh.json";
 import phrasesEs from "./phrases.es.json";
 import phrasesIt from "./phrases.it.json";
 
-import countries from "./countries.json";
-import portugalHistory from "./portugalHistory.json";
-
 import houseSystemsPt from "./houseSystems.pt.json";
 import houseSystemsEn from "./houseSystems.en.json";
 import houseSystemsDe from "./houseSystems.de.json";
@@ -474,7 +471,21 @@ export function getTransportScenarios(langCode) {
 
 // Countries are language-agnostic in shape (name/fact are per-language
 // dictionaries inside each entry); langCode picks which strings to surface.
-export function getCountries(langCode) {
+// The whole ~316KB countries.json is a single (not per-language) file, so
+// lazy-loading it doesn't save bandwidth per language the way stories does —
+// it only keeps this ~316KB out of the eagerly-loaded shared content chunk
+// for users who never visit /world. The import promise is cached once (not
+// per-language, since it's one file) so repeated calls don't re-fetch.
+let countriesPromise = null;
+function loadCountries() {
+  if (!countriesPromise) {
+    countriesPromise = import("./countries.json").then((mod) => mod.default || []);
+  }
+  return countriesPromise;
+}
+
+export async function getCountries(langCode) {
+  const countries = await loadCountries();
   return countries.map((c) => ({
     iso: c.iso,
     flag: c.flag,
@@ -510,8 +521,18 @@ export function getWhys(langCode) {
 // Portugal history timeline entries: same language-agnostic shape as
 // countries (title/description are per-language dictionaries); langCode
 // picks which strings to surface. Falls back to pt since the content is
-// written primarily for Portuguese children.
-export function getPortugalHistory(langCode) {
+// written primarily for Portuguese children. Lazy-loaded for the same
+// reason as getCountries above (single ~74KB file, not per-language).
+let portugalHistoryPromise = null;
+function loadPortugalHistory() {
+  if (!portugalHistoryPromise) {
+    portugalHistoryPromise = import("./portugalHistory.json").then((mod) => mod.default || []);
+  }
+  return portugalHistoryPromise;
+}
+
+export async function getPortugalHistory(langCode) {
+  const portugalHistory = await loadPortugalHistory();
   return portugalHistory.map((e) => ({
     id: e.id,
     year: e.year,
