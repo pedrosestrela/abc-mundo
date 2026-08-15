@@ -167,6 +167,22 @@ import computingSafetyZh from "./computingSafety.zh.json";
 import computingSafetyEs from "./computingSafety.es.json";
 import computingSafetyIt from "./computingSafety.it.json";
 
+import computingPasswordsPt from "./computingPasswords.pt.json";
+import computingPasswordsEn from "./computingPasswords.en.json";
+import computingPasswordsDe from "./computingPasswords.de.json";
+import computingPasswordsFr from "./computingPasswords.fr.json";
+import computingPasswordsZh from "./computingPasswords.zh.json";
+import computingPasswordsEs from "./computingPasswords.es.json";
+import computingPasswordsIt from "./computingPasswords.it.json";
+
+import computingInternetJourneyPt from "./computingInternetJourney.pt.json";
+import computingInternetJourneyEn from "./computingInternetJourney.en.json";
+import computingInternetJourneyDe from "./computingInternetJourney.de.json";
+import computingInternetJourneyFr from "./computingInternetJourney.fr.json";
+import computingInternetJourneyZh from "./computingInternetJourney.zh.json";
+import computingInternetJourneyEs from "./computingInternetJourney.es.json";
+import computingInternetJourneyIt from "./computingInternetJourney.it.json";
+
 import howThingsWorkPt from "./howThingsWork.pt.json";
 import howThingsWorkEn from "./howThingsWork.en.json";
 import howThingsWorkDe from "./howThingsWork.de.json";
@@ -284,6 +300,8 @@ const SCIENCE = { pt: sciencePt, en: scienceEn, de: scienceDe, fr: scienceFr, zh
 const LIFE_SKILLS = { pt: lifeSkillsPt, en: lifeSkillsEn, de: lifeSkillsDe, fr: lifeSkillsFr, zh: lifeSkillsZh, es: lifeSkillsEs, it: lifeSkillsIt };
 const COMPUTING = { pt: computingPt, en: computingEn, de: computingDe, fr: computingFr, zh: computingZh, es: computingEs, it: computingIt };
 const COMPUTING_SAFETY = { pt: computingSafetyPt, en: computingSafetyEn, de: computingSafetyDe, fr: computingSafetyFr, zh: computingSafetyZh, es: computingSafetyEs, it: computingSafetyIt };
+const COMPUTING_PASSWORDS = { pt: computingPasswordsPt, en: computingPasswordsEn, de: computingPasswordsDe, fr: computingPasswordsFr, zh: computingPasswordsZh, es: computingPasswordsEs, it: computingPasswordsIt };
+const COMPUTING_INTERNET_JOURNEY = { pt: computingInternetJourneyPt, en: computingInternetJourneyEn, de: computingInternetJourneyDe, fr: computingInternetJourneyFr, zh: computingInternetJourneyZh, es: computingInternetJourneyEs, it: computingInternetJourneyIt };
 const HOW_THINGS_WORK = { pt: howThingsWorkPt, en: howThingsWorkEn, de: howThingsWorkDe, fr: howThingsWorkFr, zh: howThingsWorkZh, es: howThingsWorkEs, it: howThingsWorkIt };
 const INTERNET_SAFETY = { pt: internetSafetyPt, en: internetSafetyEn, de: internetSafetyDe, fr: internetSafetyFr, zh: internetSafetyZh, es: internetSafetyEs, it: internetSafetyIt };
 const AI_LAB = { pt: aiLabPt, en: aiLabEn, de: aiLabDe, fr: aiLabFr, zh: aiLabZh, es: aiLabEs, it: aiLabIt };
@@ -398,6 +416,14 @@ export function getComputing(langCode) {
 
 export function getComputingSafety(langCode) {
   return COMPUTING_SAFETY[langCode] || [];
+}
+
+export function getComputingPasswords(langCode) {
+  return COMPUTING_PASSWORDS[langCode] || [];
+}
+
+export function getComputingInternetJourney(langCode) {
+  return COMPUTING_INTERNET_JOURNEY[langCode] || [];
 }
 
 export function getHowThingsWork(langCode) {
