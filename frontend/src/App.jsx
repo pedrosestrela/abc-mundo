@@ -89,7 +89,6 @@ export default function App() {
             <Route path="/songs" element={<Songs />} />
             <Route path="/game" element={<Game />} />
             <Route path="/music" element={<Music />} />
-            <Route path="/piano" element={<Music defaultInstrument="piano" />} />
             <Route path="/stories" element={<Stories />} />
             <Route path="/rhymes" element={<Rhymes />} />
             <Route path="/math" element={<MathGame />} />
