@@ -5,10 +5,34 @@
     "category": "transporte",
     "title": "自行车",
     "parts": [
-      { "id": "pedais", "emoji": "🦵", "label": "脚踏板", "predictionPrompt": "你觉得脚踏板是做什么的？", "explanation": "当你用脚踩脚踏板时，会带动一个齿轮转动。这里就是让自行车前进的所有力量的起点。" },
-      { "id": "corrente", "emoji": "⚙️", "label": "链条", "predictionPrompt": "你觉得链条是做什么的？", "explanation": "链条把脚踏板和后轮连接起来。脚踏板的齿轮转动时，链条会拉动另一个齿轮，让后轮也跟着转动。" },
-      { "id": "rodas", "emoji": "🎡", "label": "车轮", "predictionPrompt": "你觉得车轮是做什么的？", "explanation": "车轮转动并在地面上滚动，把你双脚的力量变成向前的运动。" },
-      { "id": "travoes", "emoji": "🛑", "label": "刹车", "predictionPrompt": "你觉得刹车是做什么的？", "explanation": "当你捏住刹车把手时，刹车会夹住车轮让它停止转动，使自行车减速或停下来。" }
+      {
+        "id": "pedais",
+        "emoji": "🦵",
+        "label": "脚踏板",
+        "predictionPrompt": "你觉得脚踏板是做什么的？",
+        "explanation": "当你用脚踩脚踏板时，会带动一个齿轮转动。这里就是让自行车前进的所有力量的起点。"
+      },
+      {
+        "id": "corrente",
+        "emoji": "⚙️",
+        "label": "链条",
+        "predictionPrompt": "你觉得链条是做什么的？",
+        "explanation": "链条把脚踏板和后轮连接起来。脚踏板的齿轮转动时，链条会拉动另一个齿轮，让后轮也跟着转动。"
+      },
+      {
+        "id": "rodas",
+        "emoji": "🎡",
+        "label": "车轮",
+        "predictionPrompt": "你觉得车轮是做什么的？",
+        "explanation": "车轮转动并在地面上滚动，把你双脚的力量变成向前的运动。"
+      },
+      {
+        "id": "travoes",
+        "emoji": "🛑",
+        "label": "刹车",
+        "predictionPrompt": "你觉得刹车是做什么的？",
+        "explanation": "当你捏住刹车把手时，刹车会夹住车轮让它停止转动，使自行车减速或停下来。"
+      }
     ],
     "summary": "现在你知道它是怎么运作的了！脚踏板提供力量，链条把力量传到后轮，车轮向前转动，需要的时候刹车会让一切停下来。"
   },
@@ -18,10 +42,34 @@
     "category": "transporte",
     "title": "汽车",
     "parts": [
-      { "id": "motor", "emoji": "🔧", "label": "引擎", "predictionPrompt": "你觉得引擎是做什么的？", "explanation": "引擎燃烧燃料或使用电能来产生动力。它是汽车的心脏，制造让一切运转的能量。" },
-      { "id": "volante", "emoji": "🎡", "label": "方向盘", "predictionPrompt": "你觉得方向盘是做什么的？", "explanation": "方向盘和前轮相连。司机转动方向盘时，车轮会朝那个方向转，汽车就改变了方向。" },
-      { "id": "rodas-carro", "emoji": "🛞", "label": "车轮", "predictionPrompt": "你觉得汽车的车轮是做什么的？", "explanation": "车轮接收引擎传来的动力，在路面上转动，让汽车向前行驶。" },
-      { "id": "travoes-carro", "emoji": "🛑", "label": "刹车", "predictionPrompt": "你觉得汽车的刹车是做什么的？", "explanation": "司机踩下刹车踏板时，刹车片会紧紧夹住车轮，让汽车减速或停下来。" }
+      {
+        "id": "motor",
+        "emoji": "🔧",
+        "label": "引擎",
+        "predictionPrompt": "你觉得引擎是做什么的？",
+        "explanation": "引擎燃烧燃料或使用电能来产生动力。它是汽车的心脏，制造让一切运转的能量。"
+      },
+      {
+        "id": "volante",
+        "emoji": "🎡",
+        "label": "方向盘",
+        "predictionPrompt": "你觉得方向盘是做什么的？",
+        "explanation": "方向盘和前轮相连。司机转动方向盘时，车轮会朝那个方向转，汽车就改变了方向。"
+      },
+      {
+        "id": "rodas-carro",
+        "emoji": "🛞",
+        "label": "车轮",
+        "predictionPrompt": "你觉得汽车的车轮是做什么的？",
+        "explanation": "车轮接收引擎传来的动力，在路面上转动，让汽车向前行驶。"
+      },
+      {
+        "id": "travoes-carro",
+        "emoji": "🛑",
+        "label": "刹车",
+        "predictionPrompt": "你觉得汽车的刹车是做什么的？",
+        "explanation": "司机踩下刹车踏板时，刹车片会紧紧夹住车轮，让汽车减速或停下来。"
+      }
     ],
     "summary": "现在你知道它是怎么运作的了！引擎产生动力，方向盘选择方向，车轮带动汽车前进，刹车能安全地让一切停下来。"
   },
@@ -31,10 +79,34 @@
     "category": "casa",
     "title": "时钟",
     "parts": [
-      { "id": "pilha", "emoji": "🔋", "label": "电池", "predictionPrompt": "你觉得电池是做什么的？", "explanation": "电池给时钟提供电能，就像食物给我们提供能量一样。没有电池，时钟就会停止。" },
-      { "id": "engrenagens", "emoji": "⚙️", "label": "齿轮", "predictionPrompt": "你觉得齿轮是做什么的？", "explanation": "齿轮是时钟内部的小齿轮。电池的能量让一个齿轮转动，它又带动下一个，始终保持正确的节奏。" },
-      { "id": "ponteiros", "emoji": "🕐", "label": "指针", "predictionPrompt": "你觉得指针是做什么的？", "explanation": "指针和齿轮相连。它们缓慢而精准地移动，向我们显示时、分、秒。" },
-      { "id": "mostrador", "emoji": "🔢", "label": "表盘", "predictionPrompt": "你觉得表盘是做什么的？", "explanation": "表盘上有数字排列在周围。我们通过读取指针的位置来知道现在是几点。" }
+      {
+        "id": "pilha",
+        "emoji": "🔋",
+        "label": "电池",
+        "predictionPrompt": "你觉得电池是做什么的？",
+        "explanation": "电池给时钟提供电能，就像食物给我们提供能量一样。没有电池，时钟就会停止。"
+      },
+      {
+        "id": "engrenagens",
+        "emoji": "⚙️",
+        "label": "齿轮",
+        "predictionPrompt": "你觉得齿轮是做什么的？",
+        "explanation": "齿轮是时钟内部的小齿轮。电池的能量让一个齿轮转动，它又带动下一个，始终保持正确的节奏。"
+      },
+      {
+        "id": "ponteiros",
+        "emoji": "🕐",
+        "label": "指针",
+        "predictionPrompt": "你觉得指针是做什么的？",
+        "explanation": "指针和齿轮相连。它们缓慢而精准地移动，向我们显示时、分、秒。"
+      },
+      {
+        "id": "mostrador",
+        "emoji": "🔢",
+        "label": "表盘",
+        "predictionPrompt": "你觉得表盘是做什么的？",
+        "explanation": "表盘上有数字排列在周围。我们通过读取指针的位置来知道现在是几点。"
+      }
     ],
     "summary": "现在你知道它是怎么运作的了！电池提供能量，齿轮以正确的节奏转动，指针缓慢移动，表盘帮助你读出时间。"
   },
@@ -44,10 +116,34 @@
     "category": "tecnologia",
     "title": "智能手机",
     "parts": [
-      { "id": "bateria-phone", "emoji": "🔋", "label": "电池", "predictionPrompt": "你觉得电池是做什么的？", "explanation": "电池储存电能，为手机的每个部分供电，让手机即使远离插座也能工作。" },
-      { "id": "processador", "emoji": "🧠", "label": "处理器", "predictionPrompt": "你觉得处理器是做什么的？", "explanation": "处理器就像手机的大脑。它每秒进行数百万次计算，用来打开应用程序、游戏和消息。" },
-      { "id": "ecra-tatil", "emoji": "🖐️", "label": "触摸屏", "predictionPrompt": "你觉得触摸屏是做什么的？", "explanation": "屏幕显示图像，也能感应你手指的触碰，从而知道你想点哪里、想打开什么。" },
-      { "id": "antena", "emoji": "📶", "label": "天线", "predictionPrompt": "你觉得天线是做什么的？", "explanation": "天线通过空气发送和接收看不见的信号，把手机连接到互联网，也让你能够打电话。" }
+      {
+        "id": "bateria-phone",
+        "emoji": "🔋",
+        "label": "电池",
+        "predictionPrompt": "你觉得电池是做什么的？",
+        "explanation": "电池储存电能，为手机的每个部分供电，让手机即使远离插座也能工作。"
+      },
+      {
+        "id": "processador",
+        "emoji": "🧠",
+        "label": "处理器",
+        "predictionPrompt": "你觉得处理器是做什么的？",
+        "explanation": "处理器就像手机的大脑。它每秒进行数百万次计算，用来打开应用程序、游戏和消息。"
+      },
+      {
+        "id": "ecra-tatil",
+        "emoji": "🖐️",
+        "label": "触摸屏",
+        "predictionPrompt": "你觉得触摸屏是做什么的？",
+        "explanation": "屏幕显示图像，也能感应你手指的触碰，从而知道你想点哪里、想打开什么。"
+      },
+      {
+        "id": "antena",
+        "emoji": "📶",
+        "label": "天线",
+        "predictionPrompt": "你觉得天线是做什么的？",
+        "explanation": "天线通过空气发送和接收看不见的信号，把手机连接到互联网，也让你能够打电话。"
+      }
     ],
     "summary": "现在你知道它是怎么运作的了！电池提供能量，处理器负责思考，屏幕显示画面并感应触摸，天线把手机连接到整个世界。"
   },
@@ -57,10 +153,34 @@
     "category": "casa",
     "title": "冰箱",
     "parts": [
-      { "id": "compressor", "emoji": "⚙️", "label": "压缩机", "predictionPrompt": "你觉得压缩机是做什么的？", "explanation": "压缩机是冰箱的心脏。它压缩一种特殊气体，让它在管道中流动并变得非常冷。" },
-      { "id": "gas-refrigerante", "emoji": "❄️", "label": "制冷剂", "predictionPrompt": "你觉得制冷剂是做什么的？", "explanation": "这种冷气体在冰箱内壁中流动，吸走里面的热量，让食物保持新鲜。" },
-      { "id": "termostato", "emoji": "🌡️", "label": "温控器", "predictionPrompt": "你觉得温控器是做什么的？", "explanation": "温控器就像一个聪明的温度计。它测量冰箱内部的温度，并开关压缩机来保持合适的低温。" },
-      { "id": "isolamento", "emoji": "🚪", "label": "隔热门", "predictionPrompt": "你觉得隔热门是做什么的？", "explanation": "冰箱的箱壁和门有一种特殊材料，能阻止冷气跑出去、热气跑进来。" }
+      {
+        "id": "compressor",
+        "emoji": "⚙️",
+        "label": "压缩机",
+        "predictionPrompt": "你觉得压缩机是做什么的？",
+        "explanation": "压缩机是冰箱的心脏。它压缩一种特殊气体，让它在管道中流动并变得非常冷。"
+      },
+      {
+        "id": "gas-refrigerante",
+        "emoji": "❄️",
+        "label": "制冷剂",
+        "predictionPrompt": "你觉得制冷剂是做什么的？",
+        "explanation": "这种冷气体在冰箱内壁中流动，吸走里面的热量，让食物保持新鲜。"
+      },
+      {
+        "id": "termostato",
+        "emoji": "🌡️",
+        "label": "温控器",
+        "predictionPrompt": "你觉得温控器是做什么的？",
+        "explanation": "温控器就像一个聪明的温度计。它测量冰箱内部的温度，并开关压缩机来保持合适的低温。"
+      },
+      {
+        "id": "isolamento",
+        "emoji": "🚪",
+        "label": "隔热门",
+        "predictionPrompt": "你觉得隔热门是做什么的？",
+        "explanation": "冰箱的箱壁和门有一种特殊材料，能阻止冷气跑出去、热气跑进来。"
+      }
     ],
     "summary": "现在你知道它是怎么运作的了！压缩机让气体流动，气体带走里面的热量，温控器保持合适的温度，隔热门把冷气锁在里面。"
   },
@@ -70,10 +190,34 @@
     "category": "casa",
     "title": "电梯",
     "parts": [
-      { "id": "botoes", "emoji": "🔘", "label": "按钮", "predictionPrompt": "你觉得按钮是做什么的？", "explanation": "当你按下按钮时，你就是在告诉电梯你想去哪一层。系统会接收到这个请求。" },
-      { "id": "motor-elevador", "emoji": "⚙️", "label": "马达", "predictionPrompt": "你觉得电梯的马达是做什么的？", "explanation": "马达把钢缆往上拉，或者让它慢慢往下放，使轿厢上升或下降。" },
-      { "id": "cabos", "emoji": "🪢", "label": "钢缆", "predictionPrompt": "你觉得钢缆是做什么的？", "explanation": "钢缆非常坚固，能吊住轿厢，把它和上方的马达连接起来，这样轿厢就永远不会掉下去。" },
-      { "id": "cabina", "emoji": "🚪", "label": "轿厢", "predictionPrompt": "你觉得轿厢是做什么的？", "explanation": "轿厢就是你走进去的那个箱子。它沿着垂直的轨道滑动，正好停在每一层的高度。" }
+      {
+        "id": "botoes",
+        "emoji": "🔘",
+        "label": "按钮",
+        "predictionPrompt": "你觉得按钮是做什么的？",
+        "explanation": "当你按下按钮时，你就是在告诉电梯你想去哪一层。系统会接收到这个请求。"
+      },
+      {
+        "id": "motor-elevador",
+        "emoji": "⚙️",
+        "label": "马达",
+        "predictionPrompt": "你觉得电梯的马达是做什么的？",
+        "explanation": "马达把钢缆往上拉，或者让它慢慢往下放，使轿厢上升或下降。"
+      },
+      {
+        "id": "cabos",
+        "emoji": "🪢",
+        "label": "钢缆",
+        "predictionPrompt": "你觉得钢缆是做什么的？",
+        "explanation": "钢缆非常坚固，能吊住轿厢，把它和上方的马达连接起来，这样轿厢就永远不会掉下去。"
+      },
+      {
+        "id": "cabina",
+        "emoji": "🚪",
+        "label": "轿厢",
+        "predictionPrompt": "你觉得轿厢是做什么的？",
+        "explanation": "轿厢就是你走进去的那个箱子。它沿着垂直的轨道滑动，正好停在每一层的高度。"
+      }
     ],
     "summary": "现在你知道它是怎么运作的了！按钮告诉电梯要去哪层，马达拉动钢缆，钢缆吊住轿厢，轿厢就把你准确地送到你选的那一层。"
   },
@@ -83,10 +227,34 @@
     "category": "casa",
     "title": "水龙头",
     "parts": [
-      { "id": "cano", "emoji": "🚿", "label": "水管", "predictionPrompt": "你觉得水管是做什么的？", "explanation": "水龙头下方的水管从家里的管道输送水过来，一直保持着压力，等着流出去。" },
-      { "id": "valvula", "emoji": "🔧", "label": "阀门", "predictionPrompt": "你觉得阀门是做什么的？", "explanation": "当你转动或抬起水龙头的把手时，里面的阀门会打开一个通道，让水可以流出来。" },
-      { "id": "vedante", "emoji": "🔘", "label": "密封圈", "predictionPrompt": "你觉得密封圈是做什么的？", "explanation": "一个小小的橡胶圈把缝隙紧紧封住，让水只从出水口流出，不会从别的地方漏出来。" },
-      { "id": "bica", "emoji": "💧", "label": "出水口", "predictionPrompt": "你觉得出水口是做什么的？", "explanation": "出水口是最后的出口。水就是从这里流出水龙头的，可以用来洗手或装满一杯水。" }
+      {
+        "id": "cano",
+        "emoji": "🚿",
+        "label": "水管",
+        "predictionPrompt": "你觉得水管是做什么的？",
+        "explanation": "水龙头下方的水管从家里的管道输送水过来，一直保持着压力，等着流出去。"
+      },
+      {
+        "id": "valvula",
+        "emoji": "🔧",
+        "label": "阀门",
+        "predictionPrompt": "你觉得阀门是做什么的？",
+        "explanation": "当你转动或抬起水龙头的把手时，里面的阀门会打开一个通道，让水可以流出来。"
+      },
+      {
+        "id": "vedante",
+        "emoji": "🔘",
+        "label": "密封圈",
+        "predictionPrompt": "你觉得密封圈是做什么的？",
+        "explanation": "一个小小的橡胶圈把缝隙紧紧封住，让水只从出水口流出，不会从别的地方漏出来。"
+      },
+      {
+        "id": "bica",
+        "emoji": "💧",
+        "label": "出水口",
+        "predictionPrompt": "你觉得出水口是做什么的？",
+        "explanation": "出水口是最后的出口。水就是从这里流出水龙头的，可以用来洗手或装满一杯水。"
+      }
     ],
     "summary": "现在你知道它是怎么运作的了！水管把水送来，转动水龙头时阀门打开通道，密封圈防止漏水，出水口让水流出来。"
   },
@@ -96,10 +264,34 @@
     "category": "casa",
     "title": "马桶冲水",
     "parts": [
-      { "id": "botao-autoclismo", "emoji": "🔘", "label": "冲水按钮", "predictionPrompt": "你觉得冲水按钮是做什么的？", "explanation": "当你按下按钮，就打开了水箱内的一个阀门，这个水箱在马桶的上方或后方。" },
-      { "id": "descarga", "emoji": "🌊", "label": "水流冲下", "predictionPrompt": "你觉得水一下子冲下去会发生什么？", "explanation": "水箱里储存的水一次性用力冲下来，把马桶里的东西都推向排水管。" },
-      { "id": "boia", "emoji": "🎈", "label": "浮球", "predictionPrompt": "你觉得浮球是做什么的？", "explanation": "冲水之后，水箱里的浮球会随着新流入的水慢慢升高，升到顶部时就会关闭给水箱注水的阀门。" },
-      { "id": "sifao", "emoji": "🌀", "label": "存水弯", "predictionPrompt": "你觉得那根弯曲的管子是做什么的？", "explanation": "S形的弯管里总是留有一点水，形成一道屏障，阻止下水道的臭味往上冒。" }
+      {
+        "id": "botao-autoclismo",
+        "emoji": "🔘",
+        "label": "冲水按钮",
+        "predictionPrompt": "你觉得冲水按钮是做什么的？",
+        "explanation": "当你按下按钮，就打开了水箱内的一个阀门，这个水箱在马桶的上方或后方。"
+      },
+      {
+        "id": "descarga",
+        "emoji": "🌊",
+        "label": "水流冲下",
+        "predictionPrompt": "你觉得水一下子冲下去会发生什么？",
+        "explanation": "水箱里储存的水一次性用力冲下来，把马桶里的东西都推向排水管。"
+      },
+      {
+        "id": "boia",
+        "emoji": "🎈",
+        "label": "浮球",
+        "predictionPrompt": "你觉得浮球是做什么的？",
+        "explanation": "冲水之后，水箱里的浮球会随着新流入的水慢慢升高，升到顶部时就会关闭给水箱注水的阀门。"
+      },
+      {
+        "id": "sifao",
+        "emoji": "🌀",
+        "label": "存水弯",
+        "predictionPrompt": "你觉得那根弯曲的管子是做什么的？",
+        "explanation": "S形的弯管里总是留有一点水，形成一道屏障，阻止下水道的臭味往上冒。"
+      }
     ],
     "summary": "现在你知道它是怎么运作的了！按钮打开阀门，水用力冲下清洁马桶，浮球重新给水箱注水，存水弯留住水来挡住臭味。"
   },
@@ -109,10 +301,34 @@
     "category": "tecnologia",
     "title": "照相机",
     "parts": [
-      { "id": "lente", "emoji": "🔍", "label": "镜头", "predictionPrompt": "你觉得镜头是做什么的？", "explanation": "镜头就像一只玻璃眼睛。它把外部世界射来的光线弯曲，聚焦到相机内部。" },
-      { "id": "obturador", "emoji": "⏱️", "label": "快门", "predictionPrompt": "你觉得快门是做什么的？", "explanation": "快门是一个开合非常快的帘子，只让光线进入一瞬间，正好是拍照需要的时间。" },
-      { "id": "sensor", "emoji": "📸", "label": "感光元件", "predictionPrompt": "你觉得感光元件是做什么的？", "explanation": "感光元件在相机内部，捕捉穿过镜头的光线，把它变成一张数字图像。" },
-      { "id": "botao-camara", "emoji": "🔘", "label": "快门按钮", "predictionPrompt": "你觉得快门按钮是做什么的？", "explanation": "当你按下这个按钮，就是在告诉相机确切的时刻：打开快门，让光线进入，并保存这张照片。" }
+      {
+        "id": "lente",
+        "emoji": "🔍",
+        "label": "镜头",
+        "predictionPrompt": "你觉得镜头是做什么的？",
+        "explanation": "镜头就像一只玻璃眼睛。它把外部世界射来的光线弯曲，聚焦到相机内部。"
+      },
+      {
+        "id": "obturador",
+        "emoji": "⏱️",
+        "label": "快门",
+        "predictionPrompt": "你觉得快门是做什么的？",
+        "explanation": "快门是一个开合非常快的帘子，只让光线进入一瞬间，正好是拍照需要的时间。"
+      },
+      {
+        "id": "sensor",
+        "emoji": "📸",
+        "label": "感光元件",
+        "predictionPrompt": "你觉得感光元件是做什么的？",
+        "explanation": "感光元件在相机内部，捕捉穿过镜头的光线，把它变成一张数字图像。"
+      },
+      {
+        "id": "botao-camara",
+        "emoji": "🔘",
+        "label": "快门按钮",
+        "predictionPrompt": "你觉得快门按钮是做什么的？",
+        "explanation": "当你按下这个按钮，就是在告诉相机确切的时刻：打开快门，让光线进入，并保存这张照片。"
+      }
     ],
     "summary": "现在你知道它是怎么运作的了！镜头弯曲光线，快门开合一瞬间，感光元件捕捉图像，按钮选择拍照的正确时刻。"
   },
@@ -122,11 +338,220 @@
     "category": "energia",
     "title": "太阳能板",
     "parts": [
-      { "id": "luz-sol", "emoji": "☀️", "label": "阳光", "predictionPrompt": "你觉得阳光照到太阳能板上会发生什么？", "explanation": "阳光是由许多微小的能量包组成的。当它们照到太阳能板上时，这些能量就开始被转化。" },
-      { "id": "celulas", "emoji": "🔲", "label": "光伏电池", "predictionPrompt": "你觉得光伏电池是做什么的？", "explanation": "电池由一种特殊材料制成，光照到它上面时，会释放出电子并产生电流。" },
-      { "id": "inversor", "emoji": "🔌", "label": "逆变器", "predictionPrompt": "你觉得逆变器是做什么的？", "explanation": "太阳能板产生的电不是家里能直接用的类型。逆变器会把它转变成插座里使用的那种电。" },
-      { "id": "fios", "emoji": "⚡", "label": "电线", "predictionPrompt": "你觉得电线是做什么的？", "explanation": "电线把转化好的电送到家里，这样你就能开灯、看电视，或者给手机充电。" }
+      {
+        "id": "luz-sol",
+        "emoji": "☀️",
+        "label": "阳光",
+        "predictionPrompt": "你觉得阳光照到太阳能板上会发生什么？",
+        "explanation": "阳光是由许多微小的能量包组成的。当它们照到太阳能板上时，这些能量就开始被转化。"
+      },
+      {
+        "id": "celulas",
+        "emoji": "🔲",
+        "label": "光伏电池",
+        "predictionPrompt": "你觉得光伏电池是做什么的？",
+        "explanation": "电池由一种特殊材料制成，光照到它上面时，会释放出电子并产生电流。"
+      },
+      {
+        "id": "inversor",
+        "emoji": "🔌",
+        "label": "逆变器",
+        "predictionPrompt": "你觉得逆变器是做什么的？",
+        "explanation": "太阳能板产生的电不是家里能直接用的类型。逆变器会把它转变成插座里使用的那种电。"
+      },
+      {
+        "id": "fios",
+        "emoji": "⚡",
+        "label": "电线",
+        "predictionPrompt": "你觉得电线是做什么的？",
+        "explanation": "电线把转化好的电送到家里，这样你就能开灯、看电视，或者给手机充电。"
+      }
     ],
     "summary": "现在你知道它是怎么运作的了！阳光照到电池上，电池产生电流，逆变器把它转变成合适的类型，电线把它送到家里。"
+  },
+  {
+    "id": "aspirador",
+    "emoji": "🧹",
+    "category": "casa",
+    "title": "吸尘器",
+    "parts": [
+      {
+        "id": "motor-aspirador",
+        "emoji": "🔧",
+        "label": "马达",
+        "predictionPrompt": "你觉得吸尘器的马达是做什么的？",
+        "explanation": "马达转动得非常快，产生很强的吸力，把空气（还有灰尘）吸进吸尘器里。"
+      },
+      {
+        "id": "filtro",
+        "emoji": "🌬️",
+        "label": "过滤网",
+        "predictionPrompt": "你觉得过滤网是做什么的？",
+        "explanation": "过滤网让空气通过，但会挡住灰尘和污垢，这样它们就不会再飘回房间里。"
+      },
+      {
+        "id": "escova",
+        "emoji": "🧽",
+        "label": "刷头",
+        "predictionPrompt": "你觉得刷头是做什么的？",
+        "explanation": "刷头擦过地面，把灰尘和毛发弄松，这样它们就能更容易地被吸管吸进去。"
+      },
+      {
+        "id": "saco",
+        "emoji": "🗑️",
+        "label": "集尘袋",
+        "predictionPrompt": "你觉得集尘袋是做什么的？",
+        "explanation": "所有被吸进去的灰尘都会存放在这个袋子（或集尘盒）里，直到你把它清空。"
+      }
+    ],
+    "summary": "现在你知道它是怎么运作的了！马达吸入空气，刷头把地上的灰尘弄松，过滤网清洁空气，集尘袋收集所有的污垢。"
+  },
+  {
+    "id": "impressora",
+    "emoji": "🖨️",
+    "category": "tecnologia",
+    "title": "打印机",
+    "parts": [
+      {
+        "id": "cartucho",
+        "emoji": "🖋️",
+        "label": "墨盒",
+        "predictionPrompt": "你觉得墨盒是做什么的？",
+        "explanation": "墨盒里装着彩色或黑色的墨水，会把文字和图片印在纸上。"
+      },
+      {
+        "id": "cabeca-impressao",
+        "emoji": "🎯",
+        "label": "打印头",
+        "predictionPrompt": "你觉得打印头是做什么的？",
+        "explanation": "打印头左右滑动，把小小的墨滴精准地滴在需要的位置上。"
+      },
+      {
+        "id": "rolos",
+        "emoji": "🎡",
+        "label": "滚轮",
+        "predictionPrompt": "你觉得滚轮是做什么的？",
+        "explanation": "滚轮转动，把纸张一张一张慢慢拉进打印机里。"
+      },
+      {
+        "id": "papel",
+        "emoji": "📄",
+        "label": "纸张",
+        "predictionPrompt": "你觉得纸张会发生什么事？",
+        "explanation": "纸张经过打印头下面，接收墨水，出来的时候已经印好了图案或文字。"
+      }
+    ],
+    "summary": "现在你知道它是怎么运作的了！墨盒装着墨水，打印头把墨水印在正确的位置，滚轮拉动纸张，纸张出来时已经印好了你要打印的内容。"
+  },
+  {
+    "id": "semaforo",
+    "emoji": "🚦",
+    "category": "cidade",
+    "title": "红绿灯",
+    "parts": [
+      {
+        "id": "sensor-transito",
+        "emoji": "🚗",
+        "label": "感应器",
+        "predictionPrompt": "你觉得红绿灯的感应器是做什么的？",
+        "explanation": "有些红绿灯装有感应器，能侦测正在等待的汽车或行人，知道什么时候该换灯了。"
+      },
+      {
+        "id": "controlador",
+        "emoji": "⏱️",
+        "label": "控制器",
+        "predictionPrompt": "你觉得控制器是做什么的？",
+        "explanation": "控制器就像一台小电脑，负责计算时间，并决定每一盏灯什么时候该亮。"
+      },
+      {
+        "id": "luzes",
+        "emoji": "🔴",
+        "label": "灯光",
+        "predictionPrompt": "你觉得灯光是做什么的？",
+        "explanation": "红灯、黄灯和绿灯按顺序亮起，告诉汽车和行人什么时候该停下或前进。"
+      },
+      {
+        "id": "fios-semaforo",
+        "emoji": "⚡",
+        "label": "电线",
+        "predictionPrompt": "你觉得电线是做什么的？",
+        "explanation": "电线把电力送到红绿灯，这样灯才能亮起来，控制器也才能正常工作。"
+      }
+    ],
+    "summary": "现在你知道它是怎么运作的了！感应器发现谁在等待，控制器决定合适的时机，灯光按顺序亮起，电线为它们提供电力。"
+  },
+  {
+    "id": "comboio",
+    "emoji": "🚆",
+    "category": "transporte",
+    "title": "火车",
+    "parts": [
+      {
+        "id": "motor-comboio",
+        "emoji": "🔧",
+        "label": "引擎",
+        "predictionPrompt": "你觉得火车的引擎是做什么的？",
+        "explanation": "引擎把电力或燃料转化成力量，用很大的力气让车轮转动。"
+      },
+      {
+        "id": "carris",
+        "emoji": "🛤️",
+        "label": "铁轨",
+        "predictionPrompt": "你觉得铁轨是做什么的？",
+        "explanation": "铁轨是两条金属轨道，为火车指引方向，让它一直走在正确的路线上。"
+      },
+      {
+        "id": "rodas-comboio",
+        "emoji": "🎡",
+        "label": "车轮",
+        "predictionPrompt": "你觉得火车的车轮是做什么的？",
+        "explanation": "火车的车轮是金属做的，正好卡在铁轨上，转动着让火车向前行驶而不脱轨。"
+      },
+      {
+        "id": "pantografo",
+        "emoji": "⚡",
+        "label": "受电弓",
+        "predictionPrompt": "你觉得火车顶上这个零件是做什么的？",
+        "explanation": "受电弓接触线路上方的电缆，把电力带到火车的引擎里。"
+      }
+    ],
+    "summary": "现在你知道它是怎么运作的了！引擎产生力量，铁轨指引方向，车轮让火车留在轨道上，受电弓把电力带过来。"
+  },
+  {
+    "id": "escada-rolante",
+    "emoji": "🪜",
+    "category": "cidade",
+    "title": "自动扶梯",
+    "parts": [
+      {
+        "id": "motor-escada",
+        "emoji": "⚙️",
+        "label": "马达",
+        "predictionPrompt": "你觉得自动扶梯的马达是做什么的？",
+        "explanation": "马达不停地转动，带动整个扶梯，让台阶不断地向上或向下移动。"
+      },
+      {
+        "id": "corrente-escada",
+        "emoji": "⛓️",
+        "label": "链条",
+        "predictionPrompt": "你觉得链条是做什么的？",
+        "explanation": "一条坚固的链条把马达和台阶连接起来，把动力传递给整个扶梯。"
+      },
+      {
+        "id": "degraus",
+        "emoji": "🪜",
+        "label": "台阶",
+        "predictionPrompt": "你觉得台阶是做什么的？",
+        "explanation": "台阶固定在链条上，组成一条连续的楼梯，在底部是平的，往上走的时候会变得有台阶的样子。"
+      },
+      {
+        "id": "corrimao",
+        "emoji": "🤚",
+        "label": "扶手",
+        "predictionPrompt": "你觉得扶手是做什么的？",
+        "explanation": "扶手以和台阶相同的速度移动，让你在上下扶梯时能安全地扶着它。"
+      }
+    ],
+    "summary": "现在你知道它是怎么运作的了！马达一直转动，链条带动台阶，台阶组成楼梯，扶手以相同的速度移动，让你可以扶着它。"
   }
 ]
