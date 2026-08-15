@@ -16,6 +16,7 @@ import {
   getTriedLifeSkills,
   getExploredComputing,
 } from "../storage.js";
+import HelpButton from "../components/HelpButton.jsx";
 import {
   getAlphabet,
   getMissions,
@@ -267,6 +268,9 @@ export default function Achievements() {
   return (
     <div className="page achievements-page">
       <h1>{t("modules.achievementsTitle")}</h1>
+      <div className="help-btn-corner">
+        <HelpButton text={t("modules.achievementsHelp")} langCode={langPair?.mother} />
+      </div>
       <p className="page-intro">{t("modules.achievementsIntro")}</p>
 
       <div className="achievements-header">
