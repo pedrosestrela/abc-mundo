@@ -4,10 +4,46 @@
     "emoji": "🐕",
     "facts": "🐕 Um cão. 🏞️ No parque. 🕐 De manhã. 🎾 Encontrou uma bola.",
     "questions": [
-      { "type": "who", "question": "Quem é a personagem desta notícia?", "options": ["Um cão", "Um gato", "Uma criança"], "correctIndex": 0 },
-      { "type": "what", "question": "O que aconteceu?", "options": ["Encontrou uma bola", "Perdeu-se", "Ladrou muito alto"], "correctIndex": 0 },
-      { "type": "where", "question": "Onde aconteceu a história?", "options": ["No parque", "Na escola", "Em casa"], "correctIndex": 0 },
-      { "type": "when", "question": "Quando aconteceu?", "options": ["De manhã", "À noite", "Ao fim de semana"], "correctIndex": 0 }
+      {
+        "type": "who",
+        "question": "Quem é a personagem desta notícia?",
+        "options": [
+          "Um cão",
+          "Um gato",
+          "Uma criança"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "what",
+        "question": "O que aconteceu?",
+        "options": [
+          "Encontrou uma bola",
+          "Perdeu-se",
+          "Ladrou muito alto"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "where",
+        "question": "Onde aconteceu a história?",
+        "options": [
+          "No parque",
+          "Na escola",
+          "Em casa"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "when",
+        "question": "Quando aconteceu?",
+        "options": [
+          "De manhã",
+          "À noite",
+          "Ao fim de semana"
+        ],
+        "correctIndex": 0
+      }
     ],
     "factCheck": {
       "statement": "O cão ficou muito feliz por encontrar a bola.",
@@ -20,10 +56,46 @@
     "emoji": "🧁",
     "facts": "👩‍🍳 Uma cozinheira. 🏫 Na escola. 🕒 À tarde. 🧁 Fez 50 queques.",
     "questions": [
-      { "type": "who", "question": "Quem é a personagem desta notícia?", "options": ["Uma cozinheira", "Um jardineiro", "Um bombeiro"], "correctIndex": 0 },
-      { "type": "what", "question": "O que aconteceu?", "options": ["Fez 50 queques", "Pintou um quadro", "Lavou os pratos"], "correctIndex": 0 },
-      { "type": "where", "question": "Onde aconteceu a história?", "options": ["Na escola", "No hospital", "No parque"], "correctIndex": 0 },
-      { "type": "when", "question": "Quando aconteceu?", "options": ["À tarde", "De madrugada", "Depois da meia-noite"], "correctIndex": 0 }
+      {
+        "type": "who",
+        "question": "Quem é a personagem desta notícia?",
+        "options": [
+          "Uma cozinheira",
+          "Um jardineiro",
+          "Um bombeiro"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "what",
+        "question": "O que aconteceu?",
+        "options": [
+          "Fez 50 queques",
+          "Pintou um quadro",
+          "Lavou os pratos"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "where",
+        "question": "Onde aconteceu a história?",
+        "options": [
+          "Na escola",
+          "No hospital",
+          "No parque"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "when",
+        "question": "Quando aconteceu?",
+        "options": [
+          "À tarde",
+          "De madrugada",
+          "Depois da meia-noite"
+        ],
+        "correctIndex": 0
+      }
     ],
     "factCheck": {
       "statement": "Os queques ficaram deliciosos.",
@@ -36,10 +108,46 @@
     "emoji": "🐱",
     "facts": "🚒 Bombeiros. 🌳 Numa árvore alta. 🕐 Ao meio-dia. 🐱 Salvaram um gato.",
     "questions": [
-      { "type": "who", "question": "Quem é a personagem desta notícia?", "options": ["Bombeiros", "Professores", "Médicos"], "correctIndex": 0 },
-      { "type": "what", "question": "O que aconteceu?", "options": ["Salvaram um gato", "Apagaram um incêndio", "Plantaram árvores"], "correctIndex": 0 },
-      { "type": "where", "question": "Onde aconteceu a história?", "options": ["Numa árvore alta", "Dentro de um carro", "No telhado de uma casa"], "correctIndex": 0 },
-      { "type": "when", "question": "Quando aconteceu?", "options": ["Ao meio-dia", "Ao amanhecer", "À meia-noite"], "correctIndex": 0 }
+      {
+        "type": "who",
+        "question": "Quem é a personagem desta notícia?",
+        "options": [
+          "Bombeiros",
+          "Professores",
+          "Médicos"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "what",
+        "question": "O que aconteceu?",
+        "options": [
+          "Salvaram um gato",
+          "Apagaram um incêndio",
+          "Plantaram árvores"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "where",
+        "question": "Onde aconteceu a história?",
+        "options": [
+          "Numa árvore alta",
+          "Dentro de um carro",
+          "No telhado de uma casa"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "when",
+        "question": "Quando aconteceu?",
+        "options": [
+          "Ao meio-dia",
+          "Ao amanhecer",
+          "À meia-noite"
+        ],
+        "correctIndex": 0
+      }
     ],
     "factCheck": {
       "statement": "O gato estava assustado porque tinha medo de altura.",
@@ -52,10 +160,46 @@
     "emoji": "🐢",
     "facts": "👧👦 Um grupo de crianças. 🏖️ Na praia. 🌅 Ao pôr do sol. 🐢 Libertaram tartarugas bebés.",
     "questions": [
-      { "type": "who", "question": "Quem é a personagem desta notícia?", "options": ["Um grupo de crianças", "Um grupo de piratas", "Um grupo de pescadores"], "correctIndex": 0 },
-      { "type": "what", "question": "O que aconteceu?", "options": ["Libertaram tartarugas bebés", "Construíram um castelo de areia", "Apanharam conchas"], "correctIndex": 0 },
-      { "type": "where", "question": "Onde aconteceu a história?", "options": ["Na praia", "Na montanha", "No rio"], "correctIndex": 0 },
-      { "type": "when", "question": "Quando aconteceu?", "options": ["Ao pôr do sol", "Ao nascer do sol", "A meio da noite"], "correctIndex": 0 }
+      {
+        "type": "who",
+        "question": "Quem é a personagem desta notícia?",
+        "options": [
+          "Um grupo de crianças",
+          "Um grupo de piratas",
+          "Um grupo de pescadores"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "what",
+        "question": "O que aconteceu?",
+        "options": [
+          "Libertaram tartarugas bebés",
+          "Construíram um castelo de areia",
+          "Apanharam conchas"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "where",
+        "question": "Onde aconteceu a história?",
+        "options": [
+          "Na praia",
+          "Na montanha",
+          "No rio"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "when",
+        "question": "Quando aconteceu?",
+        "options": [
+          "Ao pôr do sol",
+          "Ao nascer do sol",
+          "A meio da noite"
+        ],
+        "correctIndex": 0
+      }
     ],
     "factCheck": {
       "statement": "As tartarugas ficaram muito contentes com a liberdade.",
@@ -68,10 +212,46 @@
     "emoji": "🥕",
     "facts": "👨‍🌾 Um agricultor. 🌾 No campo. 🌧️ Depois da chuva. 🥕 Colheu muitas cenouras.",
     "questions": [
-      { "type": "who", "question": "Quem é a personagem desta notícia?", "options": ["Um agricultor", "Um pescador", "Um piloto"], "correctIndex": 0 },
-      { "type": "what", "question": "O que aconteceu?", "options": ["Colheu muitas cenouras", "Plantou flores", "Vendeu ovos"], "correctIndex": 0 },
-      { "type": "where", "question": "Onde aconteceu a história?", "options": ["No campo", "No mercado", "Na cidade"], "correctIndex": 0 },
-      { "type": "when", "question": "Quando aconteceu?", "options": ["Depois da chuva", "Durante uma tempestade de neve", "Antes do inverno"], "correctIndex": 0 }
+      {
+        "type": "who",
+        "question": "Quem é a personagem desta notícia?",
+        "options": [
+          "Um agricultor",
+          "Um pescador",
+          "Um piloto"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "what",
+        "question": "O que aconteceu?",
+        "options": [
+          "Colheu muitas cenouras",
+          "Plantou flores",
+          "Vendeu ovos"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "where",
+        "question": "Onde aconteceu a história?",
+        "options": [
+          "No campo",
+          "No mercado",
+          "Na cidade"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "when",
+        "question": "Quando aconteceu?",
+        "options": [
+          "Depois da chuva",
+          "Durante uma tempestade de neve",
+          "Antes do inverno"
+        ],
+        "correctIndex": 0
+      }
     ],
     "factCheck": {
       "statement": "O agricultor colheu exatamente 200 cenouras.",
@@ -84,10 +264,46 @@
     "emoji": "🛰️",
     "facts": "👩‍🚀 Uma astronauta. 🛰️ Na estação espacial. 📅 Na segunda-feira. 📸 Tirou uma fotografia da Terra.",
     "questions": [
-      { "type": "who", "question": "Quem é a personagem desta notícia?", "options": ["Uma astronauta", "Uma bailarina", "Uma cientista no laboratório"], "correctIndex": 0 },
-      { "type": "what", "question": "O que aconteceu?", "options": ["Tirou uma fotografia da Terra", "Aterrou na Lua", "Consertou um foguetão"], "correctIndex": 0 },
-      { "type": "where", "question": "Onde aconteceu a história?", "options": ["Na estação espacial", "Num aeroporto", "Num observatório na Terra"], "correctIndex": 0 },
-      { "type": "when", "question": "Quando aconteceu?", "options": ["Na segunda-feira", "No feriado de Natal", "No último dia do ano"], "correctIndex": 0 }
+      {
+        "type": "who",
+        "question": "Quem é a personagem desta notícia?",
+        "options": [
+          "Uma astronauta",
+          "Uma bailarina",
+          "Uma cientista no laboratório"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "what",
+        "question": "O que aconteceu?",
+        "options": [
+          "Tirou uma fotografia da Terra",
+          "Aterrou na Lua",
+          "Consertou um foguetão"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "where",
+        "question": "Onde aconteceu a história?",
+        "options": [
+          "Na estação espacial",
+          "Num aeroporto",
+          "Num observatório na Terra"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "when",
+        "question": "Quando aconteceu?",
+        "options": [
+          "Na segunda-feira",
+          "No feriado de Natal",
+          "No último dia do ano"
+        ],
+        "correctIndex": 0
+      }
     ],
     "factCheck": {
       "statement": "Uma astronauta tirou uma fotografia da Terra na segunda-feira.",
@@ -100,15 +316,675 @@
     "emoji": "📚",
     "facts": "👨‍🏫 Um professor. 🏫 Na sala de aula. 📅 Na sexta-feira. 📚 Abriu uma nova biblioteca.",
     "questions": [
-      { "type": "who", "question": "Quem é a personagem desta notícia?", "options": ["Um professor", "Um bibliotecário de outra cidade", "Um autor famoso"], "correctIndex": 0 },
-      { "type": "what", "question": "O que aconteceu?", "options": ["Abriu uma nova biblioteca", "Escreveu um livro", "Organizou um concerto"], "correctIndex": 0 },
-      { "type": "where", "question": "Onde aconteceu a história?", "options": ["Na sala de aula", "No ginásio", "No pátio da escola"], "correctIndex": 0 },
-      { "type": "when", "question": "Quando aconteceu?", "options": ["Na sexta-feira", "Nas férias de verão", "No dia de Natal"], "correctIndex": 0 }
+      {
+        "type": "who",
+        "question": "Quem é a personagem desta notícia?",
+        "options": [
+          "Um professor",
+          "Um bibliotecário de outra cidade",
+          "Um autor famoso"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "what",
+        "question": "O que aconteceu?",
+        "options": [
+          "Abriu uma nova biblioteca",
+          "Escreveu um livro",
+          "Organizou um concerto"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "where",
+        "question": "Onde aconteceu a história?",
+        "options": [
+          "Na sala de aula",
+          "No ginásio",
+          "No pátio da escola"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "when",
+        "question": "Quando aconteceu?",
+        "options": [
+          "Na sexta-feira",
+          "Nas férias de verão",
+          "No dia de Natal"
+        ],
+        "correctIndex": 0
+      }
     ],
     "factCheck": {
       "statement": "Um professor abriu uma nova biblioteca na sala de aula, na sexta-feira.",
       "isFact": true,
       "explanation": "Isto é um facto: é exatamente o que a notícia diz, sem precisarmos de adivinhar nada."
+    }
+  },
+  {
+    "id": "nr-panificaria-bairro",
+    "emoji": "🍞",
+    "facts": "👨‍🍳 Um padeiro. 🏘️ No bairro. 🌅 De madrugada. 🍞 Fez cem pães.",
+    "questions": [
+      {
+        "type": "who",
+        "question": "Quem é a personagem desta notícia?",
+        "options": [
+          "Um padeiro",
+          "Um bombeiro",
+          "Um médico"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "what",
+        "question": "O que aconteceu?",
+        "options": [
+          "Fez cem pães",
+          "Pintou uma parede",
+          "Consertou um carro"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "where",
+        "question": "Onde aconteceu a história?",
+        "options": [
+          "No bairro",
+          "Na praia",
+          "No aeroporto"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "when",
+        "question": "Quando aconteceu?",
+        "options": [
+          "De madrugada",
+          "À meia-noite",
+          "No verão"
+        ],
+        "correctIndex": 0
+      }
+    ],
+    "factCheck": {
+      "statement": "Os pães ficaram os mais saborosos do bairro.",
+      "isFact": false,
+      "explanation": "É uma suposição: sabemos que fez cem pães, mas ninguém provou nem comparou o sabor com outros."
+    }
+  },
+  {
+    "id": "nr-ciclista-montanha",
+    "emoji": "🚵",
+    "facts": "🚵 Um ciclista. ⛰️ Na montanha. 🕓 Às quatro da tarde. 🏁 Terminou a corrida.",
+    "questions": [
+      {
+        "type": "who",
+        "question": "Quem é a personagem desta notícia?",
+        "options": [
+          "Um ciclista",
+          "Um nadador",
+          "Um corredor"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "what",
+        "question": "O que aconteceu?",
+        "options": [
+          "Terminou a corrida",
+          "Perdeu a bicicleta",
+          "Caiu no lago"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "where",
+        "question": "Onde aconteceu a história?",
+        "options": [
+          "Na montanha",
+          "No rio",
+          "Na cidade"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "when",
+        "question": "Quando aconteceu?",
+        "options": [
+          "Às quatro da tarde",
+          "Ao amanhecer",
+          "À meia-noite"
+        ],
+        "correctIndex": 0
+      }
+    ],
+    "factCheck": {
+      "statement": "O ciclista ficou muito cansado depois da corrida.",
+      "isFact": false,
+      "explanation": "É uma suposição: sabemos que terminou a corrida, mas ninguém disse como se sentiu depois."
+    }
+  },
+  {
+    "id": "nr-pintora-mural",
+    "emoji": "🎨",
+    "facts": "🧑‍🎨 Uma pintora. 🏫 No muro da escola. 📅 No sábado. 🎨 Pintou um mural colorido.",
+    "questions": [
+      {
+        "type": "who",
+        "question": "Quem é a personagem desta notícia?",
+        "options": [
+          "Uma pintora",
+          "Uma professora",
+          "Uma cantora"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "what",
+        "question": "O que aconteceu?",
+        "options": [
+          "Pintou um mural colorido",
+          "Construiu um banco",
+          "Plantou flores"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "where",
+        "question": "Onde aconteceu a história?",
+        "options": [
+          "No muro da escola",
+          "No parque",
+          "Na praia"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "when",
+        "question": "Quando aconteceu?",
+        "options": [
+          "No sábado",
+          "No feriado de Natal",
+          "No primeiro dia de aulas"
+        ],
+        "correctIndex": 0
+      }
+    ],
+    "factCheck": {
+      "statement": "Uma pintora pintou um mural colorido no muro da escola no sábado.",
+      "isFact": true,
+      "explanation": "Isto é um facto: está escrito exatamente na notícia, não precisamos de imaginar nada."
+    }
+  },
+  {
+    "id": "nr-vendedor-flores",
+    "emoji": "💐",
+    "facts": "🧑‍🌾 Um vendedor de flores. 🏙️ Na praça da cidade. 🕘 Às nove da manhã. 💐 Vendeu todos os ramos.",
+    "questions": [
+      {
+        "type": "who",
+        "question": "Quem é a personagem desta notícia?",
+        "options": [
+          "Um vendedor de flores",
+          "Um vendedor de jornais",
+          "Um músico de rua"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "what",
+        "question": "O que aconteceu?",
+        "options": [
+          "Vendeu todos os ramos",
+          "Regou as plantas",
+          "Comprou uma bicicleta"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "where",
+        "question": "Onde aconteceu a história?",
+        "options": [
+          "Na praça da cidade",
+          "No hospital",
+          "Na estação de comboios"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "when",
+        "question": "Quando aconteceu?",
+        "options": [
+          "Às nove da manhã",
+          "Ao pôr do sol",
+          "À meia-noite"
+        ],
+        "correctIndex": 0
+      }
+    ],
+    "factCheck": {
+      "statement": "As flores eram as mais bonitas da cidade.",
+      "isFact": false,
+      "explanation": "É uma suposição: sabemos que vendeu todos os ramos, mas ninguém comparou as flores com outras da cidade."
+    }
+  },
+  {
+    "id": "nr-cientista-laboratorio",
+    "emoji": "🔬",
+    "facts": "👩‍🔬 Uma cientista. 🏢 No laboratório. 📅 Na quarta-feira. 🔬 Descobriu um novo tipo de rocha.",
+    "questions": [
+      {
+        "type": "who",
+        "question": "Quem é a personagem desta notícia?",
+        "options": [
+          "Uma cientista",
+          "Uma jornalista",
+          "Uma enfermeira"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "what",
+        "question": "O que aconteceu?",
+        "options": [
+          "Descobriu um novo tipo de rocha",
+          "Construiu um robô",
+          "Curou uma doença"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "where",
+        "question": "Onde aconteceu a história?",
+        "options": [
+          "No laboratório",
+          "No museu",
+          "Na montanha"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "when",
+        "question": "Quando aconteceu?",
+        "options": [
+          "Na quarta-feira",
+          "No dia do seu aniversário",
+          "Nas férias"
+        ],
+        "correctIndex": 0
+      }
+    ],
+    "factCheck": {
+      "statement": "Uma cientista descobriu um novo tipo de rocha no laboratório, na quarta-feira.",
+      "isFact": true,
+      "explanation": "Isto é um facto: é exatamente o que a notícia diz, sem precisarmos de adivinhar nada."
+    }
+  },
+  {
+    "id": "nr-musico-rua",
+    "emoji": "🎸",
+    "facts": "🧑‍🎤 Um músico. 🚏 Na paragem de autocarro. 🕔 Às cinco da tarde. 🎸 Tocou três canções.",
+    "questions": [
+      {
+        "type": "who",
+        "question": "Quem é a personagem desta notícia?",
+        "options": [
+          "Um músico",
+          "Um motorista",
+          "Um polícia"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "what",
+        "question": "O que aconteceu?",
+        "options": [
+          "Tocou três canções",
+          "Perdeu o autocarro",
+          "Vendeu bilhetes"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "where",
+        "question": "Onde aconteceu a história?",
+        "options": [
+          "Na paragem de autocarro",
+          "No cinema",
+          "No supermercado"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "when",
+        "question": "Quando aconteceu?",
+        "options": [
+          "Às cinco da tarde",
+          "De madrugada",
+          "Ao meio-dia"
+        ],
+        "correctIndex": 0
+      }
+    ],
+    "factCheck": {
+      "statement": "As pessoas gostaram muito das canções do músico.",
+      "isFact": false,
+      "explanation": "É uma suposição: sabemos que tocou três canções, mas ninguém disse o que as pessoas acharam."
+    }
+  },
+  {
+    "id": "nr-veterinario-clinica",
+    "emoji": "🐾",
+    "facts": "👨‍⚕️ Um veterinário. 🏥 Na clínica de animais. 🕚 Às onze da manhã. 🐾 Tratou de um cachorrinho.",
+    "questions": [
+      {
+        "type": "who",
+        "question": "Quem é a personagem desta notícia?",
+        "options": [
+          "Um veterinário",
+          "Um dentista",
+          "Um cabeleireiro"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "what",
+        "question": "O que aconteceu?",
+        "options": [
+          "Tratou de um cachorrinho",
+          "Cortou o cabelo",
+          "Consertou um telhado"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "where",
+        "question": "Onde aconteceu a história?",
+        "options": [
+          "Na clínica de animais",
+          "Na escola",
+          "No estádio"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "when",
+        "question": "Quando aconteceu?",
+        "options": [
+          "Às onze da manhã",
+          "À noite",
+          "No feriado"
+        ],
+        "correctIndex": 0
+      }
+    ],
+    "factCheck": {
+      "statement": "O cachorrinho ficou com muito medo do veterinário.",
+      "isFact": false,
+      "explanation": "É uma suposição: sabemos que foi tratado, mas ninguém disse como o cachorrinho se sentiu."
+    }
+  },
+  {
+    "id": "nr-piloto-aviao",
+    "emoji": "✈️",
+    "facts": "👩‍✈️ Uma piloto. ✈️ No aeroporto. 🕖 Às sete da manhã. ✈️ Aterrou o avião em segurança.",
+    "questions": [
+      {
+        "type": "who",
+        "question": "Quem é a personagem desta notícia?",
+        "options": [
+          "Uma piloto",
+          "Uma professora",
+          "Uma médica"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "what",
+        "question": "O que aconteceu?",
+        "options": [
+          "Aterrou o avião em segurança",
+          "Perdeu as malas",
+          "Comprou um bilhete"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "where",
+        "question": "Onde aconteceu a história?",
+        "options": [
+          "No aeroporto",
+          "Na estação",
+          "No porto"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "when",
+        "question": "Quando aconteceu?",
+        "options": [
+          "Às sete da manhã",
+          "Ao pôr do sol",
+          "À meia-noite"
+        ],
+        "correctIndex": 0
+      }
+    ],
+    "factCheck": {
+      "statement": "Uma piloto aterrou o avião em segurança no aeroporto, às sete da manhã.",
+      "isFact": true,
+      "explanation": "Isto é um facto: está escrito exatamente na notícia, não precisamos de imaginar nada."
+    }
+  },
+  {
+    "id": "nr-apicultora-quintal",
+    "emoji": "🐝",
+    "facts": "👩‍🌾 Uma apicultora. 🏡 No quintal. 🕑 Às duas da tarde. 🍯 Recolheu mel novo.",
+    "questions": [
+      {
+        "type": "who",
+        "question": "Quem é a personagem desta notícia?",
+        "options": [
+          "Uma apicultora",
+          "Uma jardineira",
+          "Uma costureira"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "what",
+        "question": "O que aconteceu?",
+        "options": [
+          "Recolheu mel novo",
+          "Plantou tomates",
+          "Construiu uma casa"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "where",
+        "question": "Onde aconteceu a história?",
+        "options": [
+          "No quintal",
+          "Na floresta",
+          "No mercado"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "when",
+        "question": "Quando aconteceu?",
+        "options": [
+          "Às duas da tarde",
+          "De madrugada",
+          "No inverno"
+        ],
+        "correctIndex": 0
+      }
+    ],
+    "factCheck": {
+      "statement": "O mel novo era o mais doce que ela já tinha feito.",
+      "isFact": false,
+      "explanation": "É uma suposição: sabemos que recolheu mel novo, mas ninguém provou nem comparou com outros méis."
+    }
+  },
+  {
+    "id": "nr-carteiro-bicicleta",
+    "emoji": "📮",
+    "facts": "🚴 Um carteiro. 🏘️ Na rua principal. 🕙 Às dez da manhã. 📬 Entregou trinta cartas.",
+    "questions": [
+      {
+        "type": "who",
+        "question": "Quem é a personagem desta notícia?",
+        "options": [
+          "Um carteiro",
+          "Um agricultor",
+          "Um pescador"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "what",
+        "question": "O que aconteceu?",
+        "options": [
+          "Entregou trinta cartas",
+          "Consertou uma bicicleta",
+          "Vendeu jornais"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "where",
+        "question": "Onde aconteceu a história?",
+        "options": [
+          "Na rua principal",
+          "No campo",
+          "Na praia"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "when",
+        "question": "Quando aconteceu?",
+        "options": [
+          "Às dez da manhã",
+          "À meia-noite",
+          "No fim de semana"
+        ],
+        "correctIndex": 0
+      }
+    ],
+    "factCheck": {
+      "statement": "Um carteiro entregou trinta cartas na rua principal, às dez da manhã.",
+      "isFact": true,
+      "explanation": "Isto é um facto: é exatamente o que a notícia diz, sem precisarmos de adivinhar nada."
+    }
+  },
+  {
+    "id": "nr-nadadora-piscina",
+    "emoji": "🏊",
+    "facts": "🏊‍♀️ Uma nadadora. 🏊 Na piscina municipal. 🕕 Às seis da manhã. 🥇 Bateu um recorde novo.",
+    "questions": [
+      {
+        "type": "who",
+        "question": "Quem é a personagem desta notícia?",
+        "options": [
+          "Uma nadadora",
+          "Uma ginasta",
+          "Uma tenista"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "what",
+        "question": "O que aconteceu?",
+        "options": [
+          "Bateu um recorde novo",
+          "Perdeu os óculos",
+          "Ensinou uma aula"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "where",
+        "question": "Onde aconteceu a história?",
+        "options": [
+          "Na piscina municipal",
+          "No ginásio",
+          "No mar"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "when",
+        "question": "Quando aconteceu?",
+        "options": [
+          "Às seis da manhã",
+          "Ao anoitecer",
+          "No feriado"
+        ],
+        "correctIndex": 0
+      }
+    ],
+    "factCheck": {
+      "statement": "A nadadora ficou muito orgulhosa por bater o recorde.",
+      "isFact": false,
+      "explanation": "É uma suposição: sabemos que bateu o recorde, mas ninguém disse como ela se sentiu."
+    }
+  },
+  {
+    "id": "nr-marceneiro-oficina",
+    "emoji": "🪑",
+    "facts": "👨‍🔧 Um marceneiro. 🏚️ Na oficina. 🕓 Às quatro da tarde. 🪑 Construiu uma cadeira nova.",
+    "questions": [
+      {
+        "type": "who",
+        "question": "Quem é a personagem desta notícia?",
+        "options": [
+          "Um marceneiro",
+          "Um eletricista",
+          "Um pintor"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "what",
+        "question": "O que aconteceu?",
+        "options": [
+          "Construiu uma cadeira nova",
+          "Pintou a parede",
+          "Reparou a luz"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "where",
+        "question": "Onde aconteceu a história?",
+        "options": [
+          "Na oficina",
+          "No jardim",
+          "Na garagem do vizinho"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "type": "when",
+        "question": "Quando aconteceu?",
+        "options": [
+          "Às quatro da tarde",
+          "De madrugada",
+          "No domingo à noite"
+        ],
+        "correctIndex": 0
+      }
+    ],
+    "factCheck": {
+      "statement": "A cadeira nova era muito confortável.",
+      "isFact": false,
+      "explanation": "É uma suposição: sabemos que construiu a cadeira, mas ninguém se sentou nela nem disse se era confortável."
     }
   }
 ]

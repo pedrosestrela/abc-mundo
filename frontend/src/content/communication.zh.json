@@ -4,11 +4,29 @@
     "emoji": "🥪",
     "task": "教机器人怎么做一份芝士火腿三明治。",
     "steps": [
-      { "id": "cm-sandes-1", "precise": "拿两片面包。", "vague": "拿点面包。", "vagueQuestion": "几片？什么样的面包？" },
-      { "id": "cm-sandes-2", "precise": "在一片面包上放一片芝士和一片火腿。", "vague": "放点芝士。", "vagueQuestion": "芝士放在哪里？只放芝士，还是也要放别的？" },
-      { "id": "cm-sandes-3", "precise": "盖上另一片面包，再把三明治切成两半。", "vague": "把三明治合上。", "vagueQuestion": "怎么合上？合上之后要不要切开？" }
+      {
+        "id": "cm-sandes-1",
+        "precise": "拿两片面包。",
+        "vague": "拿点面包。",
+        "vagueQuestion": "几片？什么样的面包？"
+      },
+      {
+        "id": "cm-sandes-2",
+        "precise": "在一片面包上放一片芝士和一片火腿。",
+        "vague": "放点芝士。",
+        "vagueQuestion": "芝士放在哪里？只放芝士，还是也要放别的？"
+      },
+      {
+        "id": "cm-sandes-3",
+        "precise": "盖上另一片面包，再把三明治切成两半。",
+        "vague": "把三明治合上。",
+        "vagueQuestion": "怎么合上？合上之后要不要切开？"
+      }
     ],
-    "distractors": ["打开电视。", "去外面玩。"],
+    "distractors": [
+      "打开电视。",
+      "去外面玩。"
+    ],
     "successMessage": "机器人做出了完美的三明治！🥪✅"
   },
   {
@@ -16,11 +34,29 @@
     "emoji": "🧸",
     "task": "教机器人怎么收拾一个玩具。",
     "steps": [
-      { "id": "cm-brinquedo-1", "precise": "找到玩具箱。", "vague": "去拿箱子。", "vagueQuestion": "哪个箱子？在哪里？" },
-      { "id": "cm-brinquedo-2", "precise": "捡起地上的那个玩具。", "vague": "拿起玩具。", "vagueQuestion": "哪个玩具？它在哪里？" },
-      { "id": "cm-brinquedo-3", "precise": "把玩具放进箱子里，然后盖上盖子。", "vague": "把玩具收起来。", "vagueQuestion": "收到哪里？要盖上盖子吗？" }
+      {
+        "id": "cm-brinquedo-1",
+        "precise": "找到玩具箱。",
+        "vague": "去拿箱子。",
+        "vagueQuestion": "哪个箱子？在哪里？"
+      },
+      {
+        "id": "cm-brinquedo-2",
+        "precise": "捡起地上的那个玩具。",
+        "vague": "拿起玩具。",
+        "vagueQuestion": "哪个玩具？它在哪里？"
+      },
+      {
+        "id": "cm-brinquedo-3",
+        "precise": "把玩具放进箱子里，然后盖上盖子。",
+        "vague": "把玩具收起来。",
+        "vagueQuestion": "收到哪里？要盖上盖子吗？"
+      }
     ],
-    "distractors": ["刷牙。", "穿上外套。"],
+    "distractors": [
+      "刷牙。",
+      "穿上外套。"
+    ],
     "successMessage": "机器人把玩具收拾得完美无缺！🧸✅"
   },
   {
@@ -28,11 +64,29 @@
     "emoji": "🦷",
     "task": "教机器人怎么刷牙。",
     "steps": [
-      { "id": "cm-dentes-1", "precise": "在牙刷上挤一些牙膏。", "vague": "用牙刷。", "vagueQuestion": "要先在牙刷上放点什么吗？" },
-      { "id": "cm-dentes-2", "precise": "用轻柔的动作刷全部牙齿，刷两分钟。", "vague": "刷牙齿。", "vagueQuestion": "刷多长时间？牙刷要怎么动？" },
-      { "id": "cm-dentes-3", "precise": "用水漱口，然后清洗牙刷。", "vague": "把一切洗干净。", "vagueQuestion": "洗什么？嘴巴、牙刷，还是两个都洗？" }
+      {
+        "id": "cm-dentes-1",
+        "precise": "在牙刷上挤一些牙膏。",
+        "vague": "用牙刷。",
+        "vagueQuestion": "要先在牙刷上放点什么吗？"
+      },
+      {
+        "id": "cm-dentes-2",
+        "precise": "用轻柔的动作刷全部牙齿，刷两分钟。",
+        "vague": "刷牙齿。",
+        "vagueQuestion": "刷多长时间？牙刷要怎么动？"
+      },
+      {
+        "id": "cm-dentes-3",
+        "precise": "用水漱口，然后清洗牙刷。",
+        "vague": "把一切洗干净。",
+        "vagueQuestion": "洗什么？嘴巴、牙刷，还是两个都洗？"
+      }
     ],
-    "distractors": ["整理床铺。", "吃早餐。"],
+    "distractors": [
+      "整理床铺。",
+      "吃早餐。"
+    ],
     "successMessage": "机器人把牙刷得完美无缺！🦷✨"
   },
   {
@@ -40,11 +94,329 @@
     "emoji": "🧥",
     "task": "教机器人怎么穿上外套。",
     "steps": [
-      { "id": "cm-casaco-1", "precise": "找到挂在衣钩上的外套。", "vague": "去拿外套。", "vagueQuestion": "外套在哪里？" },
-      { "id": "cm-casaco-2", "precise": "把一只手臂伸进外套的每一个袖子里。", "vague": "穿上外套。", "vagueQuestion": "怎么穿？一次一只手臂，还是两只一起？" },
-      { "id": "cm-casaco-3", "precise": "拉上外套的拉链或扣上纽扣。", "vague": "把外套合上。", "vagueQuestion": "用什么合上？拉链、纽扣，还是魔术贴？" }
+      {
+        "id": "cm-casaco-1",
+        "precise": "找到挂在衣钩上的外套。",
+        "vague": "去拿外套。",
+        "vagueQuestion": "外套在哪里？"
+      },
+      {
+        "id": "cm-casaco-2",
+        "precise": "把一只手臂伸进外套的每一个袖子里。",
+        "vague": "穿上外套。",
+        "vagueQuestion": "怎么穿？一次一只手臂，还是两只一起？"
+      },
+      {
+        "id": "cm-casaco-3",
+        "precise": "拉上外套的拉链或扣上纽扣。",
+        "vague": "把外套合上。",
+        "vagueQuestion": "用什么合上？拉链、纽扣，还是魔术贴？"
+      }
     ],
-    "distractors": ["收拾玩具。", "吃早餐。"],
+    "distractors": [
+      "收拾玩具。",
+      "吃早餐。"
+    ],
     "successMessage": "机器人把外套穿得完美无缺！🧥✅"
+  },
+  {
+    "id": "cm-atacadores",
+    "emoji": "👟",
+    "task": "教机器人怎么系鞋带。",
+    "steps": [
+      {
+        "id": "cm-atacadores-1",
+        "precise": "把两根鞋带交叉。",
+        "vague": "弄一下鞋带。",
+        "vagueQuestion": "我要拿鞋带做什么?"
+      },
+      {
+        "id": "cm-atacadores-2",
+        "precise": "每根鞋带做一个圈。",
+        "vague": "打圈。",
+        "vagueQuestion": "打几个圈?用什么打?"
+      },
+      {
+        "id": "cm-atacadores-3",
+        "precise": "把一个圈从另一个圈下面穿过并拉紧。",
+        "vague": "拉紧。",
+        "vagueQuestion": "拉紧什么?怎么拉?"
+      }
+    ],
+    "distractors": [
+      "打开电视。",
+      "去外面玩。"
+    ],
+    "successMessage": "机器人完美地系好了鞋带!👟✅"
+  },
+  {
+    "id": "cm-cama",
+    "emoji": "🛏️",
+    "task": "教机器人怎么铺床。",
+    "steps": [
+      {
+        "id": "cm-cama-1",
+        "precise": "把底层床单拉平整。",
+        "vague": "整理一下床。",
+        "vagueQuestion": "先整理什么?"
+      },
+      {
+        "id": "cm-cama-2",
+        "precise": "把毯子铺开并对齐床头。",
+        "vague": "放上毯子。",
+        "vagueQuestion": "放在哪里?对齐什么?"
+      },
+      {
+        "id": "cm-cama-3",
+        "precise": "把枕头靠着床头放好。",
+        "vague": "放上枕头。",
+        "vagueQuestion": "枕头放在哪里?"
+      }
+    ],
+    "distractors": [
+      "吃一个苹果。",
+      "去洗手间。"
+    ],
+    "successMessage": "机器人完美地铺好了床!🛏️✅"
+  },
+  {
+    "id": "cm-planta",
+    "emoji": "🌱",
+    "task": "教机器人怎么浇花。",
+    "steps": [
+      {
+        "id": "cm-planta-1",
+        "precise": "把浇水壶装半壶水。",
+        "vague": "去打水。",
+        "vagueQuestion": "要多少水?用什么装?"
+      },
+      {
+        "id": "cm-planta-2",
+        "precise": "把水慢慢倒在泥土上,不要浇在叶子上。",
+        "vague": "给植物浇水。",
+        "vagueQuestion": "具体浇在哪里?快还是慢?"
+      },
+      {
+        "id": "cm-planta-3",
+        "precise": "检查水没有从花盆里溢出来,然后停止。",
+        "vague": "停下。",
+        "vagueQuestion": "什么时候停?怎么知道够了?"
+      }
+    ],
+    "distractors": [
+      "打开收音机。",
+      "穿上鞋子。"
+    ],
+    "successMessage": "机器人完美地浇好了花!🌱✅"
+  },
+  {
+    "id": "cm-tshirt",
+    "emoji": "👕",
+    "task": "教机器人怎么叠T恤。",
+    "steps": [
+      {
+        "id": "cm-tshirt-1",
+        "precise": "把T恤平铺在桌面上,正面朝上。",
+        "vague": "把T恤放桌上。",
+        "vagueQuestion": "怎么放?哪面朝上?"
+      },
+      {
+        "id": "cm-tshirt-2",
+        "precise": "把两只袖子向内折,叠在T恤的主体上。",
+        "vague": "折袖子。",
+        "vagueQuestion": "往哪边折?"
+      },
+      {
+        "id": "cm-tshirt-3",
+        "precise": "把下摆向上折,一直折到领口。",
+        "vague": "把T恤对折。",
+        "vagueQuestion": "折到哪里?"
+      }
+    ],
+    "distractors": [
+      "打开窗户。",
+      "洗澡。"
+    ],
+    "successMessage": "机器人完美地叠好了T恤!👕✅"
+  },
+  {
+    "id": "cm-telefone",
+    "emoji": "📞",
+    "task": "教机器人怎么礼貌地打电话。",
+    "steps": [
+      {
+        "id": "cm-telefone-1",
+        "precise": "说“早上好”或“下午好”,并说出你的名字。",
+        "vague": "说话。",
+        "vagueQuestion": "先说什么?"
+      },
+      {
+        "id": "cm-telefone-2",
+        "precise": "问对方现在方不方便说话。",
+        "vague": "问点什么。",
+        "vagueQuestion": "问什么?"
+      },
+      {
+        "id": "cm-telefone-3",
+        "precise": "最后要道谢并说“再见”。",
+        "vague": "挂电话。",
+        "vagueQuestion": "就这样挂断,什么都不说吗?"
+      }
+    ],
+    "distractors": [
+      "关上门。",
+      "去洗手。"
+    ],
+    "successMessage": "机器人完美地打了电话!📞✅"
+  },
+  {
+    "id": "cm-caminho",
+    "emoji": "🚪",
+    "task": "教机器人怎么从客厅走到厨房。",
+    "steps": [
+      {
+        "id": "cm-caminho-1",
+        "precise": "从右边的门走出客厅。",
+        "vague": "走出客厅。",
+        "vagueQuestion": "从哪个门出去?"
+      },
+      {
+        "id": "cm-caminho-2",
+        "precise": "沿着走廊一直走到底。",
+        "vague": "走走廊。",
+        "vagueQuestion": "走到哪里?"
+      },
+      {
+        "id": "cm-caminho-3",
+        "precise": "向左转,厨房是第一扇门。",
+        "vague": "转弯进去。",
+        "vagueQuestion": "往哪边转?哪扇门?"
+      }
+    ],
+    "distractors": [
+      "闭上眼睛。",
+      "跳绳。"
+    ],
+    "successMessage": "机器人完美地到达了厨房!🚪✅"
+  },
+  {
+    "id": "cm-dia",
+    "emoji": "📅",
+    "task": "教机器人怎么描述你在学校的一天。",
+    "steps": [
+      {
+        "id": "cm-dia-1",
+        "precise": "说说你几点到学校的。",
+        "vague": "说说早上的事。",
+        "vagueQuestion": "关于早上具体说什么?"
+      },
+      {
+        "id": "cm-dia-2",
+        "precise": "讲一件在课堂上发生的有趣的事。",
+        "vague": "说说上课的事。",
+        "vagueQuestion": "课堂上发生了什么?"
+      },
+      {
+        "id": "cm-dia-3",
+        "precise": "说说一天结束时你的感受以及原因。",
+        "vague": "说说这一天怎么样。",
+        "vagueQuestion": "好还是不好,为什么?"
+      }
+    ],
+    "distractors": [
+      "整理书包。",
+      "去睡觉。"
+    ],
+    "successMessage": "机器人完美地理解了你的一天!📅✅"
+  },
+  {
+    "id": "cm-mesa",
+    "emoji": "🍽️",
+    "task": "教机器人怎么摆餐桌。",
+    "steps": [
+      {
+        "id": "cm-mesa-1",
+        "precise": "在每张椅子前面放一个盘子。",
+        "vague": "放盘子。",
+        "vagueQuestion": "每个盘子放哪里?"
+      },
+      {
+        "id": "cm-mesa-2",
+        "precise": "把叉子放在盘子左边,刀子放在右边。",
+        "vague": "放刀叉。",
+        "vagueQuestion": "叉子放哪边?刀子呢?"
+      },
+      {
+        "id": "cm-mesa-3",
+        "precise": "在每个盘子的右上角放一个杯子。",
+        "vague": "放杯子。",
+        "vagueQuestion": "每个杯子放哪里?"
+      }
+    ],
+    "distractors": [
+      "打开电脑。",
+      "梳头发。"
+    ],
+    "successMessage": "机器人完美地摆好了餐桌!🍽️✅"
+  },
+  {
+    "id": "cm-maos",
+    "emoji": "🧼",
+    "task": "教机器人怎么正确洗手。",
+    "steps": [
+      {
+        "id": "cm-maos-1",
+        "precise": "用温水打湿双手。",
+        "vague": "走到水龙头前。",
+        "vagueQuestion": "在水龙头那里做什么?"
+      },
+      {
+        "id": "cm-maos-2",
+        "precise": "用肥皂搓洗双手二十秒。",
+        "vague": "用肥皂。",
+        "vagueQuestion": "要搓多久?"
+      },
+      {
+        "id": "cm-maos-3",
+        "precise": "把手冲干净并用毛巾擦干。",
+        "vague": "结束。",
+        "vagueQuestion": "怎么结束?冲洗?擦干?"
+      }
+    ],
+    "distractors": [
+      "打开电视。",
+      "去上学。"
+    ],
+    "successMessage": "机器人完美地洗好了手!🧼✅"
+  },
+  {
+    "id": "cm-mochila",
+    "emoji": "🎒",
+    "task": "教机器人怎么准备书包。",
+    "steps": [
+      {
+        "id": "cm-mochila-1",
+        "precise": "查看课表,看明天需要哪些书。",
+        "vague": "看一下课表。",
+        "vagueQuestion": "在课表上找什么?"
+      },
+      {
+        "id": "cm-mochila-2",
+        "precise": "把对应的书本和笔记本放进书包。",
+        "vague": "把书包装满。",
+        "vagueQuestion": "用什么装满?"
+      },
+      {
+        "id": "cm-mochila-3",
+        "precise": "把文具盒和水壶放进侧袋。",
+        "vague": "把剩下的放进去。",
+        "vagueQuestion": "“剩下的”是什么?放哪里?"
+      }
+    ],
+    "distractors": [
+      "吃冰淇淋。",
+      "玩球。"
+    ],
+    "successMessage": "机器人完美地准备好了书包!🎒✅"
   }
 ]

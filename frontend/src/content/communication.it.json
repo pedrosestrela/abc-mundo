@@ -4,11 +4,29 @@
     "emoji": "🥪",
     "task": "Spiega al robot come preparare un panino con formaggio e prosciutto.",
     "steps": [
-      { "id": "cm-sandes-1", "precise": "Prendi due fette di pane.", "vague": "Prendi del pane.", "vagueQuestion": "Quante fette? Che tipo di pane?" },
-      { "id": "cm-sandes-2", "precise": "Metti una fetta di formaggio e una fetta di prosciutto su una fetta di pane.", "vague": "Metti il formaggio.", "vagueQuestion": "Dove metto il formaggio? Solo formaggio, o anche altro?" },
-      { "id": "cm-sandes-3", "precise": "Copri con l'altra fetta di pane e taglia il panino a metà.", "vague": "Chiudi il panino.", "vagueQuestion": "Come lo chiudo? E lo taglio dopo, o no?" }
+      {
+        "id": "cm-sandes-1",
+        "precise": "Prendi due fette di pane.",
+        "vague": "Prendi del pane.",
+        "vagueQuestion": "Quante fette? Che tipo di pane?"
+      },
+      {
+        "id": "cm-sandes-2",
+        "precise": "Metti una fetta di formaggio e una fetta di prosciutto su una fetta di pane.",
+        "vague": "Metti il formaggio.",
+        "vagueQuestion": "Dove metto il formaggio? Solo formaggio, o anche altro?"
+      },
+      {
+        "id": "cm-sandes-3",
+        "precise": "Copri con l'altra fetta di pane e taglia il panino a metà.",
+        "vague": "Chiudi il panino.",
+        "vagueQuestion": "Come lo chiudo? E lo taglio dopo, o no?"
+      }
     ],
-    "distractors": ["Accendi la televisione.", "Vai a giocare fuori."],
+    "distractors": [
+      "Accendi la televisione.",
+      "Vai a giocare fuori."
+    ],
     "successMessage": "Il robot ha fatto il panino perfetto! 🥪✅"
   },
   {
@@ -16,11 +34,29 @@
     "emoji": "🧸",
     "task": "Spiega al robot come riordinare un giocattolo.",
     "steps": [
-      { "id": "cm-brinquedo-1", "precise": "Trova la scatola dei giocattoli.", "vague": "Vai a prendere la scatola.", "vagueQuestion": "Quale scatola? Dov'è?" },
-      { "id": "cm-brinquedo-2", "precise": "Raccogli il giocattolo che è per terra.", "vague": "Prendi il giocattolo.", "vagueQuestion": "Quale giocattolo? Dov'è?" },
-      { "id": "cm-brinquedo-3", "precise": "Metti il giocattolo dentro la scatola e chiudi il coperchio.", "vague": "Riordina il giocattolo.", "vagueQuestion": "Dove lo metto? Chiudo il coperchio o no?" }
+      {
+        "id": "cm-brinquedo-1",
+        "precise": "Trova la scatola dei giocattoli.",
+        "vague": "Vai a prendere la scatola.",
+        "vagueQuestion": "Quale scatola? Dov'è?"
+      },
+      {
+        "id": "cm-brinquedo-2",
+        "precise": "Raccogli il giocattolo che è per terra.",
+        "vague": "Prendi il giocattolo.",
+        "vagueQuestion": "Quale giocattolo? Dov'è?"
+      },
+      {
+        "id": "cm-brinquedo-3",
+        "precise": "Metti il giocattolo dentro la scatola e chiudi il coperchio.",
+        "vague": "Riordina il giocattolo.",
+        "vagueQuestion": "Dove lo metto? Chiudo il coperchio o no?"
+      }
     ],
-    "distractors": ["Lavati i denti.", "Metti il cappotto."],
+    "distractors": [
+      "Lavati i denti.",
+      "Metti il cappotto."
+    ],
     "successMessage": "Il robot ha riordinato il giocattolo alla perfezione! 🧸✅"
   },
   {
@@ -28,11 +64,29 @@
     "emoji": "🦷",
     "task": "Spiega al robot come lavarsi i denti.",
     "steps": [
-      { "id": "cm-dentes-1", "precise": "Metti il dentifricio sullo spazzolino.", "vague": "Usa lo spazzolino.", "vagueQuestion": "Metto prima qualcosa sullo spazzolino?" },
-      { "id": "cm-dentes-2", "precise": "Spazzola tutti i denti con movimenti delicati, per due minuti.", "vague": "Lavati i denti.", "vagueQuestion": "Per quanto tempo? Come devo muovere lo spazzolino?" },
-      { "id": "cm-dentes-3", "precise": "Sciacqua la bocca con acqua e pulisci lo spazzolino.", "vague": "Lava tutto.", "vagueQuestion": "Lavo cosa? La bocca, lo spazzolino, o entrambi?" }
+      {
+        "id": "cm-dentes-1",
+        "precise": "Metti il dentifricio sullo spazzolino.",
+        "vague": "Usa lo spazzolino.",
+        "vagueQuestion": "Metto prima qualcosa sullo spazzolino?"
+      },
+      {
+        "id": "cm-dentes-2",
+        "precise": "Spazzola tutti i denti con movimenti delicati, per due minuti.",
+        "vague": "Lavati i denti.",
+        "vagueQuestion": "Per quanto tempo? Come devo muovere lo spazzolino?"
+      },
+      {
+        "id": "cm-dentes-3",
+        "precise": "Sciacqua la bocca con acqua e pulisci lo spazzolino.",
+        "vague": "Lava tutto.",
+        "vagueQuestion": "Lavo cosa? La bocca, lo spazzolino, o entrambi?"
+      }
     ],
-    "distractors": ["Rifai il letto.", "Fai colazione."],
+    "distractors": [
+      "Rifai il letto.",
+      "Fai colazione."
+    ],
     "successMessage": "Il robot si è lavato i denti alla perfezione! 🦷✨"
   },
   {
@@ -40,11 +94,329 @@
     "emoji": "🧥",
     "task": "Spiega al robot come indossare un cappotto.",
     "steps": [
-      { "id": "cm-casaco-1", "precise": "Trova il cappotto appeso all'attaccapanni.", "vague": "Vai a prendere il cappotto.", "vagueQuestion": "Dov'è il cappotto?" },
-      { "id": "cm-casaco-2", "precise": "Infila un braccio in ciascuna manica del cappotto.", "vague": "Indossa il cappotto.", "vagueQuestion": "Come lo indosso? Un braccio alla volta, o entrambi insieme?" },
-      { "id": "cm-casaco-3", "precise": "Chiudi la cerniera o i bottoni del cappotto.", "vague": "Chiudi il cappotto.", "vagueQuestion": "Con cosa lo chiudo? Cerniera, bottoni, o velcro?" }
+      {
+        "id": "cm-casaco-1",
+        "precise": "Trova il cappotto appeso all'attaccapanni.",
+        "vague": "Vai a prendere il cappotto.",
+        "vagueQuestion": "Dov'è il cappotto?"
+      },
+      {
+        "id": "cm-casaco-2",
+        "precise": "Infila un braccio in ciascuna manica del cappotto.",
+        "vague": "Indossa il cappotto.",
+        "vagueQuestion": "Come lo indosso? Un braccio alla volta, o entrambi insieme?"
+      },
+      {
+        "id": "cm-casaco-3",
+        "precise": "Chiudi la cerniera o i bottoni del cappotto.",
+        "vague": "Chiudi il cappotto.",
+        "vagueQuestion": "Con cosa lo chiudo? Cerniera, bottoni, o velcro?"
+      }
     ],
-    "distractors": ["Riordina i giocattoli.", "Fai colazione."],
+    "distractors": [
+      "Riordina i giocattoli.",
+      "Fai colazione."
+    ],
     "successMessage": "Il robot ha indossato il cappotto alla perfezione! 🧥✅"
+  },
+  {
+    "id": "cm-atacadores",
+    "emoji": "👟",
+    "task": "Spiega al robot come allacciare le scarpe.",
+    "steps": [
+      {
+        "id": "cm-atacadores-1",
+        "precise": "Incrocia le due estremità dei lacci.",
+        "vague": "Fai qualcosa con i lacci.",
+        "vagueQuestion": "Cosa faccio con i lacci?"
+      },
+      {
+        "id": "cm-atacadores-2",
+        "precise": "Fai un cappio con ogni estremità.",
+        "vague": "Fai dei cappi.",
+        "vagueQuestion": "Quanti cappi? Con cosa?"
+      },
+      {
+        "id": "cm-atacadores-3",
+        "precise": "Passa un cappio sotto l'altro e tira forte.",
+        "vague": "Stringi.",
+        "vagueQuestion": "Cosa stringo? Come?"
+      }
+    ],
+    "distractors": [
+      "Accendi la televisione.",
+      "Vai a giocare fuori."
+    ],
+    "successMessage": "Il robot ha allacciato le scarpe alla perfezione! 👟✅"
+  },
+  {
+    "id": "cm-cama",
+    "emoji": "🛏️",
+    "task": "Spiega al robot come rifare il letto.",
+    "steps": [
+      {
+        "id": "cm-cama-1",
+        "precise": "Tira il lenzuolo di sotto finché è ben disteso.",
+        "vague": "Sistema il letto.",
+        "vagueQuestion": "Cosa sistemo per primo?"
+      },
+      {
+        "id": "cm-cama-2",
+        "precise": "Stendi la coperta e allineala con la testata del letto.",
+        "vague": "Metti la coperta.",
+        "vagueQuestion": "Dove la metto? Allineata con cosa?"
+      },
+      {
+        "id": "cm-cama-3",
+        "precise": "Metti i cuscini contro la testiera.",
+        "vague": "Metti i cuscini.",
+        "vagueQuestion": "Dove metto i cuscini?"
+      }
+    ],
+    "distractors": [
+      "Mangia una mela.",
+      "Vai in bagno."
+    ],
+    "successMessage": "Il robot ha rifatto il letto alla perfezione! 🛏️✅"
+  },
+  {
+    "id": "cm-planta",
+    "emoji": "🌱",
+    "task": "Spiega al robot come innaffiare una pianta.",
+    "steps": [
+      {
+        "id": "cm-planta-1",
+        "precise": "Riempi l'annaffiatoio a metà con acqua.",
+        "vague": "Vai a prendere l'acqua.",
+        "vagueQuestion": "Quanta acqua? In cosa?"
+      },
+      {
+        "id": "cm-planta-2",
+        "precise": "Versa l'acqua lentamente sulla terra, non sulle foglie.",
+        "vague": "Metti acqua sulla pianta.",
+        "vagueQuestion": "Dove esattamente? Lentamente o velocemente?"
+      },
+      {
+        "id": "cm-planta-3",
+        "precise": "Controlla che l'acqua non trabocchi dal vaso e fermati.",
+        "vague": "Fermati.",
+        "vagueQuestion": "Quando mi fermo? Come faccio a sapere che basta?"
+      }
+    ],
+    "distractors": [
+      "Accendi la radio.",
+      "Metti le scarpe."
+    ],
+    "successMessage": "Il robot ha innaffiato la pianta alla perfezione! 🌱✅"
+  },
+  {
+    "id": "cm-tshirt",
+    "emoji": "👕",
+    "task": "Spiega al robot come piegare una maglietta.",
+    "steps": [
+      {
+        "id": "cm-tshirt-1",
+        "precise": "Stendi la maglietta su una superficie piana, con il davanti verso l'alto.",
+        "vague": "Metti la maglietta sul tavolo.",
+        "vagueQuestion": "Come? Quale lato verso l'alto?"
+      },
+      {
+        "id": "cm-tshirt-2",
+        "precise": "Piega ogni manica verso l'interno, sopra il corpo della maglietta.",
+        "vague": "Piega le maniche.",
+        "vagueQuestion": "Piego verso quale lato?"
+      },
+      {
+        "id": "cm-tshirt-3",
+        "precise": "Piega la parte inferiore verso l'alto, fino al colletto.",
+        "vague": "Piega la maglietta a metà.",
+        "vagueQuestion": "Fino a dove piego?"
+      }
+    ],
+    "distractors": [
+      "Apri la finestra.",
+      "Fai il bagno."
+    ],
+    "successMessage": "Il robot ha piegato la maglietta alla perfezione! 👕✅"
+  },
+  {
+    "id": "cm-telefone",
+    "emoji": "📞",
+    "task": "Spiega al robot come fare una telefonata educata.",
+    "steps": [
+      {
+        "id": "cm-telefone-1",
+        "precise": "Di' 'Buongiorno' e il tuo nome.",
+        "vague": "Parla.",
+        "vagueQuestion": "Cosa dico per primo?"
+      },
+      {
+        "id": "cm-telefone-2",
+        "precise": "Chiedi se la persona ha un momento per parlare.",
+        "vague": "Chiedi qualcosa.",
+        "vagueQuestion": "Cosa chiedo?"
+      },
+      {
+        "id": "cm-telefone-3",
+        "precise": "Alla fine, ringrazia e di' 'Arrivederci'.",
+        "vague": "Riattacca.",
+        "vagueQuestion": "Riattacco così, senza dire nulla?"
+      }
+    ],
+    "distractors": [
+      "Chiudi la porta.",
+      "Vai a lavarti le mani."
+    ],
+    "successMessage": "Il robot ha fatto la telefonata alla perfezione! 📞✅"
+  },
+  {
+    "id": "cm-caminho",
+    "emoji": "🚪",
+    "task": "Spiega al robot come arrivare in cucina dal soggiorno.",
+    "steps": [
+      {
+        "id": "cm-caminho-1",
+        "precise": "Esci dal soggiorno dalla porta a destra.",
+        "vague": "Esci dal soggiorno.",
+        "vagueQuestion": "Da quale porta esco?"
+      },
+      {
+        "id": "cm-caminho-2",
+        "precise": "Percorri il corridoio fino in fondo.",
+        "vague": "Cammina lungo il corridoio.",
+        "vagueQuestion": "Fino a dove cammino?"
+      },
+      {
+        "id": "cm-caminho-3",
+        "precise": "Gira a sinistra e la cucina è la prima porta.",
+        "vague": "Gira ed entra.",
+        "vagueQuestion": "Giro verso dove? Quale porta?"
+      }
+    ],
+    "distractors": [
+      "Chiudi gli occhi.",
+      "Salta con la corda."
+    ],
+    "successMessage": "Il robot ha raggiunto la cucina alla perfezione! 🚪✅"
+  },
+  {
+    "id": "cm-dia",
+    "emoji": "📅",
+    "task": "Spiega al robot come descrivere la tua giornata a scuola.",
+    "steps": [
+      {
+        "id": "cm-dia-1",
+        "precise": "Di' a che ora sei arrivato a scuola.",
+        "vague": "Parla della mattina.",
+        "vagueQuestion": "Cosa dico esattamente sulla mattina?"
+      },
+      {
+        "id": "cm-dia-2",
+        "precise": "Racconta una cosa interessante successa in una lezione.",
+        "vague": "Parla delle lezioni.",
+        "vagueQuestion": "Cosa è successo a lezione?"
+      },
+      {
+        "id": "cm-dia-3",
+        "precise": "Di' come ti sei sentito alla fine della giornata e perché.",
+        "vague": "Di' com'è andata la giornata.",
+        "vagueQuestion": "È stata bella, brutta, perché?"
+      }
+    ],
+    "distractors": [
+      "Sistema lo zaino.",
+      "Vai a dormire."
+    ],
+    "successMessage": "Il robot ha capito perfettamente la tua giornata! 📅✅"
+  },
+  {
+    "id": "cm-mesa",
+    "emoji": "🍽️",
+    "task": "Spiega al robot come apparecchiare la tavola.",
+    "steps": [
+      {
+        "id": "cm-mesa-1",
+        "precise": "Metti un piatto davanti a ogni sedia.",
+        "vague": "Metti i piatti.",
+        "vagueQuestion": "Dove metto ogni piatto?"
+      },
+      {
+        "id": "cm-mesa-2",
+        "precise": "Metti la forchetta a sinistra del piatto e il coltello a destra.",
+        "vague": "Metti le posate.",
+        "vagueQuestion": "Da che lato va la forchetta? E il coltello?"
+      },
+      {
+        "id": "cm-mesa-3",
+        "precise": "Metti un bicchiere in alto a destra di ogni piatto.",
+        "vague": "Metti i bicchieri.",
+        "vagueQuestion": "Dove metto ogni bicchiere?"
+      }
+    ],
+    "distractors": [
+      "Accendi il computer.",
+      "Pettinati i capelli."
+    ],
+    "successMessage": "Il robot ha apparecchiato la tavola alla perfezione! 🍽️✅"
+  },
+  {
+    "id": "cm-maos",
+    "emoji": "🧼",
+    "task": "Spiega al robot come lavarsi bene le mani.",
+    "steps": [
+      {
+        "id": "cm-maos-1",
+        "precise": "Bagna le mani con acqua tiepida.",
+        "vague": "Vai al rubinetto.",
+        "vagueQuestion": "Cosa faccio al rubinetto?"
+      },
+      {
+        "id": "cm-maos-2",
+        "precise": "Strofina le mani con il sapone per venti secondi.",
+        "vague": "Usa il sapone.",
+        "vagueQuestion": "Per quanto tempo strofino?"
+      },
+      {
+        "id": "cm-maos-3",
+        "precise": "Sciacqua bene le mani e asciugale con un asciugamano.",
+        "vague": "Finisci.",
+        "vagueQuestion": "Come finisco? Sciacquo? Asciugo?"
+      }
+    ],
+    "distractors": [
+      "Accendi la televisione.",
+      "Vai a scuola."
+    ],
+    "successMessage": "Il robot si è lavato le mani alla perfezione! 🧼✅"
+  },
+  {
+    "id": "cm-mochila",
+    "emoji": "🎒",
+    "task": "Spiega al robot come preparare lo zaino per la scuola.",
+    "steps": [
+      {
+        "id": "cm-mochila-1",
+        "precise": "Guarda l'orario per sapere i libri di domani.",
+        "vague": "Guarda l'orario.",
+        "vagueQuestion": "Cosa cerco nell'orario?"
+      },
+      {
+        "id": "cm-mochila-2",
+        "precise": "Metti i libri e i quaderni giusti nello zaino.",
+        "vague": "Riempi lo zaino.",
+        "vagueQuestion": "Con cosa la riempio?"
+      },
+      {
+        "id": "cm-mochila-3",
+        "precise": "Metti l'astuccio e la bottiglia d'acqua in una tasca laterale.",
+        "vague": "Metti il resto.",
+        "vagueQuestion": "Cos'è 'il resto'? Dove lo metto?"
+      }
+    ],
+    "distractors": [
+      "Mangia un gelato.",
+      "Gioca a palla."
+    ],
+    "successMessage": "Il robot ha preparato lo zaino alla perfezione! 🎒✅"
   }
 ]
