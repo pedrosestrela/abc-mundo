@@ -120,6 +120,102 @@
         "🚁"
       ],
       "technique": "Picturing a funny image with the items together helps them stick in memory."
+    },
+    {
+      "id": "m11",
+      "emoji": "🎈",
+      "items": [
+        "🍌",
+        "🥐",
+        "🧀",
+        "🍒",
+        "🥝"
+      ],
+      "technique": "Saying the items out loud helps us remember them for longer!"
+    },
+    {
+      "id": "m12",
+      "emoji": "🎈",
+      "items": [
+        "🔴",
+        "🔵",
+        "🟡",
+        "🟢"
+      ],
+      "technique": "Picturing a funny image with the items together helps them stick in memory."
+    },
+    {
+      "id": "m13",
+      "emoji": "🎈",
+      "items": [
+        "🔑",
+        "🧦",
+        "🕶️",
+        "🧢",
+        "🖊️",
+        "🎒"
+      ],
+      "technique": "Grouping the items into smaller pairs makes them easier to recall."
+    },
+    {
+      "id": "m14",
+      "emoji": "🎈",
+      "items": [
+        "🦁",
+        "🐘",
+        "🦒",
+        "🐍",
+        "🐒"
+      ],
+      "technique": "Making up a little story that links the items helps us remember the order."
+    },
+    {
+      "id": "m15",
+      "emoji": "🎈",
+      "items": [
+        "🍕",
+        "🌮",
+        "🍔",
+        "🍟"
+      ],
+      "technique": "Saying the items out loud helps us remember them for longer!"
+    },
+    {
+      "id": "m16",
+      "emoji": "🎈",
+      "items": [
+        "🟣",
+        "⚪",
+        "⚫",
+        "🟤",
+        "🔺"
+      ],
+      "technique": "Picturing a funny image with the items together helps them stick in memory."
+    },
+    {
+      "id": "m17",
+      "emoji": "🎈",
+      "items": [
+        "📱",
+        "💻",
+        "🖨️",
+        "📷",
+        "🔋",
+        "🔌"
+      ],
+      "technique": "Grouping the items into smaller pairs makes them easier to recall."
+    },
+    {
+      "id": "m18",
+      "emoji": "🎈",
+      "items": [
+        "🐴",
+        "🐮",
+        "🐷",
+        "🐔",
+        "🐑"
+      ],
+      "technique": "Making up a little story that links the items helps us remember the order."
     }
   ],
   "attention": [
@@ -192,6 +288,62 @@
       "question": "Find the pufferfish among the little fish.",
       "targetEmoji": "🐡",
       "hint": "It's rounder than the others."
+    },
+    {
+      "id": "a11",
+      "scene": "🍇🍇🍇🍒🍇🍇🍇🍇",
+      "question": "Find the cherry among the grapes.",
+      "targetEmoji": "🍒",
+      "hint": "It has a different stem."
+    },
+    {
+      "id": "a12",
+      "scene": "🎈🎈🎈🎀🎈🎈🎈🎈",
+      "question": "Find the ribbon among the balloons.",
+      "targetEmoji": "🎀",
+      "hint": "It isn't round like the others."
+    },
+    {
+      "id": "a13",
+      "scene": "🐱🐱🐱🐯🐱🐱🐱🐱",
+      "question": "Find the tiger among the cats.",
+      "targetEmoji": "🐯",
+      "hint": "It has stripes."
+    },
+    {
+      "id": "a14",
+      "scene": "🍊🍊🍊🍑🍊🍊🍊🍊",
+      "question": "Find the peach among the oranges.",
+      "targetEmoji": "🍑",
+      "hint": "The shape is a little different."
+    },
+    {
+      "id": "a15",
+      "scene": "🚌🚌🚌🚐🚌🚌🚌🚌",
+      "question": "Find the van among the buses.",
+      "targetEmoji": "🚐",
+      "hint": "It's smaller than the others."
+    },
+    {
+      "id": "a16",
+      "scene": "🦆🦆🦆🦢🦆🦆🦆🦆",
+      "question": "Find the swan among the ducks.",
+      "targetEmoji": "🦢",
+      "hint": "It has a longer neck."
+    },
+    {
+      "id": "a17",
+      "scene": "🌰🌰🌰🥜🌰🌰🌰🌰",
+      "question": "Find the peanut among the chestnuts.",
+      "targetEmoji": "🥜",
+      "hint": "It's smaller and longer."
+    },
+    {
+      "id": "a18",
+      "scene": "🎲🎲🎲🎯🎲🎲🎲🎲",
+      "question": "Find the target among the dice.",
+      "targetEmoji": "🎯",
+      "hint": "It has coloured rings."
     }
   ],
   "errors": [
@@ -294,6 +446,86 @@
         "What could he do before choosing the path next time?",
         "Can a path that doesn't work still teach us something?"
       ]
+    },
+    {
+      "id": "e11",
+      "character": "👧",
+      "scenario": "Bia tried to read the word 'igreja' (church) out loud, but mixed up the 'g' sound and said it wrong.",
+      "reflectionPrompts": [
+        "Which sound do you think Bia mixed up?",
+        "How can she practise that sound again?",
+        "Does reading out loud help us notice our own mistakes?"
+      ]
+    },
+    {
+      "id": "e12",
+      "character": "🧒",
+      "scenario": "Nuno tried to subtract 12 - 5 and said it was 8, but the correct answer was 7.",
+      "reflectionPrompts": [
+        "Where do you think Nuno miscounted?",
+        "What strategy could he use to check the sum?",
+        "Can checking our sums again help us learn?"
+      ]
+    },
+    {
+      "id": "e13",
+      "character": "👦",
+      "scenario": "Gustavo built a Lego garage, but the roof collapsed because the walls were too thin.",
+      "reflectionPrompts": [
+        "Why do you think the roof fell this time?",
+        "What could Gustavo change about the walls?",
+        "Is testing and rebuilding a good way to learn to build things?"
+      ]
+    },
+    {
+      "id": "e14",
+      "character": "👧",
+      "scenario": "Carolina said without meaning to that her friend's drawing was ugly, and her friend felt sad.",
+      "reflectionPrompts": [
+        "How do you think Carolina's friend felt?",
+        "What could Carolina say to show she's sorry?",
+        "What do we learn when our words hurt someone without meaning to?"
+      ]
+    },
+    {
+      "id": "e15",
+      "character": "🧒",
+      "scenario": "Vasco moved his board game piece two spaces instead of three and had to move back.",
+      "reflectionPrompts": [
+        "What do you think Vasco forgot to do before playing?",
+        "How can he pay more attention to his next move?",
+        "Can reading the rules carefully before starting help?"
+      ]
+    },
+    {
+      "id": "e16",
+      "character": "👦",
+      "scenario": "Bruno predicted the plant would grow faster in the shade, but it actually grew more in the sun.",
+      "reflectionPrompts": [
+        "What did Bruno learn from this experiment?",
+        "Do wrong predictions in science also teach us something?",
+        "How could he test it again to be sure?"
+      ]
+    },
+    {
+      "id": "e17",
+      "character": "👧",
+      "scenario": "Leonor played the wrong note in the middle of a piano piece and had to stop.",
+      "reflectionPrompts": [
+        "What do you think would help Leonor get the note right?",
+        "Can playing more slowly help us learn a piece of music?",
+        "Do musicians also hit wrong notes while practising?"
+      ]
+    },
+    {
+      "id": "e18",
+      "character": "🧒",
+      "scenario": "Simao took a shot at goal in football, but the ball flew over the crossbar.",
+      "reflectionPrompts": [
+        "What could Simao adjust for his next shot?",
+        "Does missing a shot mean he plays badly?",
+        "How would you feel about trying again right away?"
+      ]
     }
   ],
   "strategy": [
@@ -376,6 +608,70 @@
       "hint1": "What if you split the poem into small parts and learned one at a time?",
       "hint2": "What if you said the poem out loud several times instead of reading it silently?",
       "answer": "You could learn it in parts, repeat it out loud, or ask someone to listen to you say it."
+    },
+    {
+      "id": "s11",
+      "prompt": "How can you get a big box through a narrow door?",
+      "firstTry": "You tried pushing the box straight through, but it won't fit through the door.",
+      "hint1": "What if you turned the box sideways to make it narrower?",
+      "hint2": "What if you took a few things out of the box first?",
+      "answer": "You could turn the box sideways, empty it a bit, or ask for help tilting it carefully."
+    },
+    {
+      "id": "s12",
+      "prompt": "How can you find out which number your friend is thinking of, between 1 and 20?",
+      "firstTry": "You tried guessing random numbers, but haven't gotten it right yet.",
+      "hint1": "What if you asked whether the number is higher or lower than 10?",
+      "hint2": "What if you kept splitting the range in half with each question?",
+      "answer": "You could ask 'higher or lower', keep splitting the range in half, or ask for an extra clue."
+    },
+    {
+      "id": "s13",
+      "prompt": "How can you make cookies by following the right steps?",
+      "firstTry": "You tried mixing everything at once, but the dough came out strange.",
+      "hint1": "What if you looked at the recipe and followed one step at a time?",
+      "hint2": "What if you separated the dry ingredients from the wet ones first?",
+      "answer": "You could follow the recipe step by step, separate ingredients first, or ask an adult to check each stage."
+    },
+    {
+      "id": "s14",
+      "prompt": "How can you find the shortest path in a maze drawn on paper?",
+      "firstTry": "You tried following the first path you saw, but it ended in a dead end.",
+      "hint1": "What if you started from the end of the maze and worked backwards?",
+      "hint2": "What if you used your finger to mark the paths you've already tried?",
+      "answer": "You could start from the end and work backwards, mark paths you've tried, or calmly rule out dead ends first."
+    },
+    {
+      "id": "s15",
+      "prompt": "How can you figure out which of these objects doesn't belong in the group?",
+      "firstTry": "You tried looking at the colours, but they all seemed to fit somehow.",
+      "hint1": "What if you thought about the size of each object instead of the colour?",
+      "hint2": "What if you thought about what each object is used for?",
+      "answer": "You could compare size, shape, or use of each object to find the one that doesn't belong."
+    },
+    {
+      "id": "s16",
+      "prompt": "How can you get dressed in the right order on a very cold day?",
+      "firstTry": "You tried putting your coat on first, but then couldn't fit the jumper on underneath.",
+      "hint1": "What if you thought about what goes closest to your body first?",
+      "hint2": "What if you imagined the layers like an onion, from the inside out?",
+      "answer": "You could put on what's closest to your skin first, then the middle layers, and the coat last."
+    },
+    {
+      "id": "s17",
+      "prompt": "How can you arrange the furniture in your playroom so it isn't too cramped?",
+      "firstTry": "You tried placing everything wherever it fit, but then there was no room to walk.",
+      "hint1": "What if you drew a small map of the room first?",
+      "hint2": "What if you placed the bigger furniture first and the small pieces around it?",
+      "answer": "You could draw a plan first, place bigger furniture first, or measure the free space before deciding."
+    },
+    {
+      "id": "s18",
+      "prompt": "How can you find out which of two toys is heavier without a scale?",
+      "firstTry": "You tried guessing just by looking, but weren't sure.",
+      "hint1": "What if you held one in each hand to feel the weight?",
+      "hint2": "What if you used a ruler balanced on a pencil as a makeshift scale?",
+      "answer": "You could compare the weight in your hands, use a makeshift balance, or ask an adult for a kitchen scale."
     }
   ],
   "teachback": [
@@ -456,6 +752,106 @@
         "Because questions help us think about what happened and figure out the solution ourselves.",
         "Because questions make the mistake disappear.",
         "Because it's quicker than explaining."
+      ],
+      "bestIndex": 0
+    },
+    {
+      "id": "t9",
+      "concept": "Why does sounding out the letters of a word help us read it?",
+      "options": [
+        "Because joining each sound helps us work out the whole word, step by step.",
+        "Because letters like being said out loud.",
+        "Because sounding it out makes the word shorter."
+      ],
+      "bestIndex": 0
+    },
+    {
+      "id": "t10",
+      "concept": "Why is it a good idea to check our maths sum again?",
+      "options": [
+        "Because checking tires the brain, so we learn more.",
+        "Because checking again helps us find mistakes we didn't notice the first time.",
+        "Because the second sum is always the right one."
+      ],
+      "bestIndex": 1
+    },
+    {
+      "id": "t11",
+      "concept": "Why does making a prediction before a science experiment help us learn?",
+      "options": [
+        "Because predicting makes the experiment faster.",
+        "Because comparing what we predicted with what actually happened helps us understand the result better.",
+        "Because predictions are always correct."
+      ],
+      "bestIndex": 1
+    },
+    {
+      "id": "t12",
+      "concept": "Why does practising writing a word several times help us write it correctly?",
+      "options": [
+        "Because writing a lot tires the hand, so we stop making mistakes.",
+        "Because practising helps our brain remember the correct shape of the word.",
+        "Because the last time we write it is always the best, by luck."
+      ],
+      "bestIndex": 1
+    },
+    {
+      "id": "t13",
+      "concept": "Why can drawing a maths problem help us solve it?",
+      "options": [
+        "Because drawing is always more fun than counting.",
+        "Because a drawing shows the problem visually, making it easier to see what to do.",
+        "Because drawing replaces the need to think."
+      ],
+      "bestIndex": 1
+    },
+    {
+      "id": "t14",
+      "concept": "Why does asking 'why' help us understand science better?",
+      "options": [
+        "Because asking 'why' makes us look for the reason behind what we observe.",
+        "Because asking a lot tires the teacher out.",
+        "Because questions make the topic disappear."
+      ],
+      "bestIndex": 0
+    },
+    {
+      "id": "t15",
+      "concept": "Why does re-reading a sentence we didn't understand help us understand the story?",
+      "options": [
+        "Because re-reading gives us another chance to notice words or ideas we missed.",
+        "Because re-reading makes the story shorter.",
+        "Because the second reading is always exactly the same as the first."
+      ],
+      "bestIndex": 0
+    },
+    {
+      "id": "t16",
+      "concept": "Why does using fingers or objects to count help when we're learning maths?",
+      "options": [
+        "Because counting with objects makes numbers more concrete and easier to picture.",
+        "Because fingers always know the right answer.",
+        "Because counting with objects is slower, so it's better."
+      ],
+      "bestIndex": 0
+    },
+    {
+      "id": "t17",
+      "concept": "Why does observing carefully help us make discoveries in science?",
+      "options": [
+        "Because observing well helps us notice details that might explain what's happening.",
+        "Because observing replaces the experiment.",
+        "Because whoever observes fastest always discovers the most."
+      ],
+      "bestIndex": 0
+    },
+    {
+      "id": "t18",
+      "concept": "Why does retelling a story in our own words help us understand what we read better?",
+      "options": [
+        "Because summarising in our own words shows us whether we really understood the story.",
+        "Because retelling makes the story longer.",
+        "Because our own words are always better than the book's."
       ],
       "bestIndex": 0
     }
