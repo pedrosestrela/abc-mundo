@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import {
   getProfile,
@@ -173,6 +173,28 @@ export default function Achievements() {
 
   const unlockedCount = badges.filter((b) => b.unlocked).length;
 
+  // getCountries/getPortugalHistory are async (lazy-loaded single-file
+  // datasets, see content/index.js), unlike every other getter used below
+  // in passportStats which stays synchronous. Fetch just their lengths here
+  // in a small dedicated effect and merge the totals into passportStats,
+  // rather than making the whole useMemo async — keeps the sync getters
+  // simple and avoids the Passaporte cards ever rendering NaN/undefined
+  // (they start at 0 and update once the async totals resolve).
+  const [asyncTotals, setAsyncTotals] = useState({ countries: 0, eras: 0 });
+  useEffect(() => {
+    let cancelled = false;
+    const mother = langPair?.mother || "pt";
+    Promise.all([getCountries(mother), getPortugalHistory(mother)]).then(
+      ([countries, eras]) => {
+        if (cancelled) return;
+        setAsyncTotals({ countries: countries.length, eras: eras.length });
+      }
+    );
+    return () => {
+      cancelled = true;
+    };
+  }, [langPair?.mother]);
+
   // --- Passaporte de Competências: a read-only aggregation of every
   // per-module tracker in storage.js, each paired with its content-derived
   // total so it renders as "X / Y" without hardcoding any denominators.
@@ -192,14 +214,14 @@ export default function Achievements() {
         icon: "🌍",
         label: t("modules.passportCountries"),
         count: getVisitedCountries(name).length,
-        total: getCountries(mother).length,
+        total: asyncTotals.countries,
       },
       {
         id: "eras",
         icon: "🏰",
         label: t("modules.passportEras"),
         count: getVisitedEras(name).length,
-        total: getPortugalHistory(mother).length,
+        total: asyncTotals.eras,
       },
       {
         id: "science",
@@ -237,7 +259,7 @@ export default function Achievements() {
         total: getComputing(mother).length,
       },
     ];
-  }, [profile?.name, langPair?.mother, t]);
+  }, [profile?.name, langPair?.mother, t, asyncTotals]);
 
   const masteredSkills = useMemo(() => getMasteredSkills(profile?.name), [profile?.name]);
   const weakestSkills = useMemo(() => getWeakestSkills(profile?.name), [profile?.name]);
