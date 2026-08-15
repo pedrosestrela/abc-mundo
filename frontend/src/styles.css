@@ -984,6 +984,36 @@ body {
   stroke: #b8860b;
 }
 
+/* The 3 real trumpet valves: a static casing plus a piston that visually
+   drops when that valve is pressed for the currently selected note's
+   fingering combination. */
+.trumpet-valve-casing {
+  fill: #b8860b;
+  fill-opacity: 0.25;
+  stroke: #b8860b;
+  stroke-width: 1.5;
+}
+
+.trumpet-valve-piston {
+  fill: var(--blue, #3aa0ff);
+  fill-opacity: 0.5;
+  stroke: var(--blue, #3aa0ff);
+  stroke-width: 1.5;
+  transition: y 0.15s ease, fill 0.15s ease;
+  pointer-events: none;
+}
+
+.trumpet-valve-piston.pressed {
+  fill: var(--pink, #ff6b9d);
+  stroke: var(--pink, #ff6b9d);
+}
+
+.trumpet-valve-caption {
+  font-size: 12px;
+  font-weight: bold;
+  fill: var(--purple, #8e6bd8);
+}
+
 .drum-pads {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

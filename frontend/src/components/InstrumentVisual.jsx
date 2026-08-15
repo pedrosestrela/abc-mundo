@@ -124,17 +124,20 @@ function BowedVisual({ notes, activeNote, onPress, instrument }) {
   );
 }
 
-// Wind-family silhouette (finger-hole/valve body) shared by flute, clarinet,
-// saxophone and trumpet. Each instrument gets its own body color/shape and
-// hit-marker style (round finger holes for the woodwinds, square valve caps
-// for the brass trumpet) so the four don't look identical despite sharing
-// one layout — mirrors how the "bowed" and "strings" families vary a shared
-// silhouette per instrument.
+// Wind-family silhouette shared by flute, clarinet, saxophone and trumpet.
+// Flute keeps the simple "one target per note" hole row (a reasonable
+// simplification of a real flute's finger holes/keys). Clarinet and
+// saxophone use a tone-hole layout with varying hole sizes along the body
+// (roughly true to real woodwinds: more/larger covered holes toward the
+// bottom for lower notes) while still keeping a single forgiving tap target
+// per note — full multi-key fingering charts are out of scope for this age
+// group. Trumpet is rendered by the dedicated TrumpetVisual below, since a
+// real Bb trumpet has only 3 valves played in combination, not one
+// button/hole per note.
 const WIND_CONFIG = {
   flute: { bodyClass: "flute-body", markShape: "hole" },
-  clarinet: { bodyClass: "clarinet-body", markShape: "hole" },
-  saxophone: { bodyClass: "saxophone-body", markShape: "hole" },
-  trumpet: { bodyClass: "trumpet-body", markShape: "valve" },
+  clarinet: { bodyClass: "clarinet-body", markShape: "hole-graduated" },
+  saxophone: { bodyClass: "saxophone-body", markShape: "hole-graduated" },
 };
 
 function WindVisual({ notes, activeNote, onPress, instrument }) {
@@ -142,6 +145,12 @@ function WindVisual({ notes, activeNote, onPress, instrument }) {
   const width = 320;
   const height = 120;
   const gap = width / (notes.length + 1);
+  // For the graduated-hole woodwinds, holes get bigger from left (high
+  // note, fewer holes covered) to right (low note, more/bigger holes
+  // covered) — a rough, honest nod to real tone-hole sizing without
+  // claiming an actual fingering chart.
+  const minR = 8;
+  const maxR = 15;
   return (
     <svg
       className={"instrument-visual-svg wind-visual wind-visual-" + instrument}
@@ -154,22 +163,89 @@ function WindVisual({ notes, activeNote, onPress, instrument }) {
       {notes.map((note, i) => {
         const cx = gap * (i + 1);
         const active = activeNote === note ? " active" : "";
+        const r =
+          cfg.markShape === "hole-graduated"
+            ? minR + ((maxR - minR) * i) / Math.max(1, notes.length - 1)
+            : 13;
         return (
           <g key={note} className="instrument-hit-area" onClick={() => onPress(note)}>
             <circle cx={cx} cy={height / 2} r={20} fill="transparent" />
-            {cfg.markShape === "valve" ? (
-              <rect
-                x={cx - 10}
-                y={height / 2 - 10}
-                width={20}
-                height={20}
-                rx={4}
-                className={"instrument-hole wind-valve" + active}
-              />
-            ) : (
-              <circle cx={cx} cy={height / 2} r={13} className={"instrument-hole" + active} />
-            )}
+            <circle cx={cx} cy={height / 2} r={r} className={"instrument-hole" + active} />
             <text x={cx} y={height - 6} textAnchor="middle" className="instrument-note-label">
+              {noteLabel(note)}
+            </text>
+          </g>
+        );
+      })}
+    </svg>
+  );
+}
+
+// Standard Bb trumpet valve-combination fingering chart for the app's
+// diatonic C4–B4 octave (concert-pitch reference, standard/authoritative
+// fingerings). Valve numbers: 1 = closest to mouthpiece, 2 = middle,
+// 3 = closest to bell. true = pressed.
+const TRUMPET_FINGERING = {
+  C4: [false, false, false], // open (C in the staff, standard open fingering)
+  D4: [true, false, true], // 1st + 3rd
+  E4: [true, true, false], // 1st + 2nd
+  F4: [true, false, false], // 1st
+  G4: [false, false, false], // open (different harmonic than C4, same valves)
+  A4: [true, true, false], // 1st + 2nd
+  B4: [false, true, false], // 2nd
+};
+
+function TrumpetVisual({ notes, activeNote, onPress }) {
+  const width = 320;
+  const height = 140;
+  const gap = width / (notes.length + 1);
+  const valveCombo = TRUMPET_FINGERING[activeNote] || [false, false, false];
+  const valveXs = [width / 2 - 26, width / 2, width / 2 + 26];
+  const valveLabel = valveCombo.some(Boolean)
+    ? valveCombo
+        .map((pressed, i) => (pressed ? String(i + 1) : null))
+        .filter(Boolean)
+        .join("+")
+    : "0";
+  return (
+    <svg
+      className="instrument-visual-svg wind-visual wind-visual-trumpet"
+      viewBox={`0 0 ${width} ${height}`}
+      width="100%"
+      role="img"
+      aria-label="Trompete"
+    >
+      <rect x={10} y={38} width={width - 20} height={30} rx={15} className="instrument-body trumpet-body" />
+      {/* Bell flare on the right */}
+      <path d={`M ${width - 34} 30 L ${width - 6} 8 L ${width - 6} 96 L ${width - 34} 74 Z`} className="instrument-body trumpet-body" />
+      {/* The 3 valves, drawn as pistons on top of the tube body */}
+      {valveXs.map((cx, i) => {
+        const pressed = valveCombo[i];
+        return (
+          <g key={i} className="wind-valve-group">
+            <rect x={cx - 9} y={16} width={18} height={22} rx={3} className="trumpet-valve-casing" />
+            <rect
+              x={cx - 7}
+              y={pressed ? 24 : 18}
+              width={14}
+              height={12}
+              rx={3}
+              className={"trumpet-valve-piston" + (pressed ? " pressed" : "")}
+            />
+          </g>
+        );
+      })}
+      <text x={width / 2} y={14} textAnchor="middle" className="instrument-note-label trumpet-valve-caption">
+        {valveLabel === "0" ? "0 (aberto)" : valveLabel}
+      </text>
+      {notes.map((note, i) => {
+        const cx = gap * (i + 1);
+        const active = activeNote === note ? " active" : "";
+        return (
+          <g key={note} className="instrument-hit-area" onClick={() => onPress(note)}>
+            <rect x={cx - 18} y={90} width={36} height={40} fill="transparent" />
+            <circle cx={cx} cy={106} r={12} className={"instrument-hole" + active} />
+            <text x={cx} y={134} textAnchor="middle" className="instrument-note-label">
               {noteLabel(note)}
             </text>
           </g>
@@ -332,7 +408,10 @@ export default function InstrumentVisual({ instrument, activeNote, onPress }) {
   const family = getInstrumentFamily(instrument);
   if (family === "strings") return <StringsVisual notes={NOTES} activeNote={activeNote} onPress={onPress} instrument={instrument} />;
   if (family === "bowed") return <BowedVisual notes={NOTES} activeNote={activeNote} onPress={onPress} instrument={instrument} />;
-  if (family === "wind") return <WindVisual notes={NOTES} activeNote={activeNote} onPress={onPress} instrument={instrument} />;
+  if (family === "wind") {
+    if (instrument === "trumpet") return <TrumpetVisual notes={NOTES} activeNote={activeNote} onPress={onPress} />;
+    return <WindVisual notes={NOTES} activeNote={activeNote} onPress={onPress} instrument={instrument} />;
+  }
   if (family === "harp") return <HarpVisual notes={NOTES} activeNote={activeNote} onPress={onPress} />;
   if (family === "mallet") return <MalletVisual notes={NOTES} activeNote={activeNote} onPress={onPress} />;
   return null;
