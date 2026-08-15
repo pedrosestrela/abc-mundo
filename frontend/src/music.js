@@ -1,17 +1,22 @@
 // Background-music generator + per-instrument note player for the Music
-// page. Five instruments now play real recorded samples, each pitch-shifted
-// across the keyboard via AudioBufferSourceNode.playbackRate, with an
-// automatic fallback to the original procedurally-synthesised timbre if a
-// sample fails to load (offline-before-cache-warms, blocked network, etc):
+// page. Seven instruments now play real recorded samples, each pitch-shifted
+// across the keyboard via AudioBufferSourceNode.playbackRate (or, for drum
+// pads, played back at fixed pitch like a real kit), with an automatic
+// fallback to the original procedurally-synthesised timbre if a sample
+// fails to load (offline-before-cache-warms, blocked network, etc):
 //   - piano: Salamander Grand Piano, CC BY 3.0 (public/audio/piano/NOTICE.md)
-//   - xylophone, guitar, flute, violin: tonejs-instruments sample library,
-//     CC BY 3.0 (public/audio/<instrument>/NOTICE.md)
+//   - xylophone, guitar, flute, violin, harp: tonejs-instruments sample
+//     library, CC BY 3.0 (public/audio/<instrument>/NOTICE.md)
+//   - drum (pads): Sonic Pi sample library, CC0-1.0 / public domain, via
+//     the `supersonic-scsynth-samples` npm package (public/audio/drum/NOTICE.md)
 // Every other instrument (viola, cavaquinho, portugueseGuitar, accordion,
-// concertina, harp, drum, and the looping background melody) still uses
-// layered/detuned Web Audio oscillator synthesis — no clean/verifiable
-// permissively-licensed sample pack was found for them — tuned to
-// approximate each instrument's real overtone character (see the
-// per-instrument functions below for the specific technique used for each).
+// concertina, and the looping background melody) still uses layered/detuned
+// Web Audio oscillator synthesis — a genuinely thorough search (npm registry
+// search + direct package-name probing for Iberian/folk-instrument and reed
+// sample libraries) turned up no clean/verifiable permissively-licensed
+// sample pack for them — tuned to approximate each instrument's real
+// overtone character (see the per-instrument functions below for the
+// specific technique used for each).
 
 // Two octaves, C4 to C6, so songs have room to move beyond one octave.
 export const NOTE_FREQS = {
@@ -374,6 +379,16 @@ const SAMPLE_INSTRUMENTS = {
     attack: 0.08,
     decayEnd: 0.85,
     tail: 0.6,
+  },
+  harp: {
+    base: "/audio/harp/",
+    samples: buildToneSampleList([
+      "A4", "B3", "B5", "C3", "C5", "D4", "D6", "E3", "E5", "F4", "F6", "G3", "G5",
+    ]),
+    peak: 0.3,
+    attack: 0.008,
+    decayEnd: 1.0,
+    tail: 1.1,
   },
 };
 
@@ -740,19 +755,118 @@ function playNoiseBurst(ctx, { filterType = "bandpass", freq = 800, q = 1, durat
   scheduledNodes.push(noise);
 }
 
-const DRUM_PAD_SOUNDS = {
-  kick: { filterType: "lowpass", freq: 120, q: 0.7, duration: 0.28, gainValue: 0.55 },
-  snare: { filterType: "highpass", freq: 900, q: 0.8, duration: 0.18, gainValue: 0.4 },
-  hihat: { filterType: "highpass", freq: 6000, q: 0.6, duration: 0.08, gainValue: 0.25 },
-  tom: { filterType: "bandpass", freq: 300, q: 1.2, duration: 0.22, gainValue: 0.45 },
-};
+// A short pitch-enveloped oscillator "body" layered under a drum's noise
+// burst — the technique real kick/tom synthesis relies on (a sine that
+// glides sharply downward in pitch reads as a resonant drum shell), which a
+// flat-frequency filtered-noise burst alone can't reproduce.
+function playPitchedThump(ctx, { startFreq, endFreq, duration, gainValue, glideTime }) {
+  const now = ctx.currentTime;
+  const osc = ctx.createOscillator();
+  osc.type = "sine";
+  osc.frequency.setValueAtTime(startFreq, now);
+  osc.frequency.exponentialRampToValueAtTime(Math.max(endFreq, 1), now + glideTime);
+  const gain = ctx.createGain();
+  gain.gain.setValueAtTime(gainValue, now);
+  gain.gain.exponentialRampToValueAtTime(0.001, now + duration);
+  osc.connect(gain);
+  connectWithReverb(ctx, gain, 1);
+  osc.start(now);
+  osc.stop(now + duration + 0.02);
+  scheduledNodes.push(osc);
+}
 
+// Per-drum-type synthesis fallback, each tuned to that drum's real acoustic
+// behaviour instead of one generic filtered-noise burst for everything:
+//   - kick: fast downward pitch sweep (150Hz -> 45Hz) for the shell "thump",
+//     plus a very short low-passed noise click for the beater attack.
+//   - snare: filtered noise "snap" (the wires) layered with a short ~190Hz
+//     tone (the shell) for body under the snap.
+//   - hihat: bright, very short high-passed/bandpassed noise only — no tonal
+//     body, since a hi-hat's sound is almost entirely metallic shimmer.
+//   - tom: same pitch-sweep idea as the kick but higher and slower (220Hz ->
+//     110Hz), so it reads as a bigger drum than the kick without being a
+//     copy of it.
+function playDrumSynth(padId) {
+  const ctx = getContext();
+  if (!ctx) return;
+  switch (padId) {
+    case "kick":
+      playPitchedThump(ctx, { startFreq: 150, endFreq: 45, duration: 0.32, gainValue: 0.6, glideTime: 0.09 });
+      playNoiseBurst(ctx, { filterType: "lowpass", freq: 400, q: 0.5, duration: 0.03, gainValue: 0.25 });
+      break;
+    case "snare":
+      playPitchedThump(ctx, { startFreq: 190, endFreq: 150, duration: 0.09, gainValue: 0.22, glideTime: 0.03 });
+      playNoiseBurst(ctx, { filterType: "bandpass", freq: 2200, q: 0.9, duration: 0.16, gainValue: 0.42 });
+      break;
+    case "hihat":
+      playNoiseBurst(ctx, { filterType: "highpass", freq: 7000, q: 0.7, duration: 0.06, gainValue: 0.22 });
+      playNoiseBurst(ctx, { filterType: "bandpass", freq: 9500, q: 3, duration: 0.09, gainValue: 0.14 });
+      break;
+    case "tom":
+    default:
+      playPitchedThump(ctx, { startFreq: 220, endFreq: 110, duration: 0.34, gainValue: 0.5, glideTime: 0.14 });
+      playNoiseBurst(ctx, { filterType: "bandpass", freq: 350, q: 1, duration: 0.08, gainValue: 0.15 });
+      break;
+  }
+}
+
+// --- Real drum samples (with synthesis fallback) ----------------------------
+// One real recorded one-shot hit per pad (Sonic Pi sample library, CC0-1.0,
+// bundled locally under public/audio/drum/ — see NOTICE.md there for full
+// provenance). Unlike the pitched instruments above, a real drum kit doesn't
+// retune per key, so these play back at a fixed rate — no
+// note-to-frequency/playbackRate math needed, just load-once-and-play.
+const DRUM_PAD_FILES = {
+  kick: { file: "kick.flac", peak: 0.6, tail: 0.6 },
+  snare: { file: "snare.flac", peak: 0.5, tail: 0.5 },
+  hihat: { file: "hihat.flac", peak: 0.4, tail: 0.4 },
+  tom: { file: "tom.flac", peak: 0.55, tail: 0.6 },
+};
+const DRUM_SAMPLE_BASE = "/audio/drum/";
+const drumBufferCache = new Map();
+
+function loadDrumBuffer(ctx, file) {
+  if (drumBufferCache.has(file)) return drumBufferCache.get(file);
+  const promise = fetch(DRUM_SAMPLE_BASE + file)
+    .then((res) => {
+      if (!res.ok) throw new Error("drum sample fetch failed: " + file);
+      return res.arrayBuffer();
+    })
+    .then((data) => new Promise((resolve, reject) => ctx.decodeAudioData(data, resolve, reject)))
+    .catch(() => null);
+  drumBufferCache.set(file, promise);
+  return promise;
+}
+
+// Plays a real recorded drum-pad hit, falling back to the synthesized noise
+// burst (playNoiseBurst) if no sample is configured for this pad or the
+// fetch/decode failed.
 export function playDrumPad(padId) {
   const ctx = getContext();
   if (!ctx) return;
   if (ctx.state === "suspended") ctx.resume();
-  const sound = DRUM_PAD_SOUNDS[padId] || DRUM_PAD_SOUNDS.tom;
-  playNoiseBurst(ctx, sound);
+  const sample = DRUM_PAD_FILES[padId];
+  if (!sample) {
+    playDrumSynth(padId);
+    return;
+  }
+  loadDrumBuffer(ctx, sample.file).then((buffer) => {
+    if (!buffer) {
+      playDrumSynth(padId);
+      return;
+    }
+    const now = ctx.currentTime;
+    const source = ctx.createBufferSource();
+    source.buffer = buffer;
+    const gain = ctx.createGain();
+    gain.gain.setValueAtTime(sample.peak, now);
+    gain.gain.exponentialRampToValueAtTime(0.001, now + buffer.duration + sample.tail);
+    source.connect(gain);
+    connectWithReverb(ctx, gain, 1);
+    source.start(now);
+    source.stop(now + buffer.duration + sample.tail + 0.05);
+    scheduledNodes.push(source);
+  });
 }
 
 // Plays a single pitched note with the given instrument's timbre. `drum`
@@ -794,10 +908,13 @@ export function playInstrumentNote(instrument, note, duration = 0.5) {
       playConcertinaNote(ctx, freq, duration);
       break;
     case "harp":
-      playHarpNote(ctx, freq, duration);
+      playSampledNote("harp", ctx, note, freq, duration, playHarpNote);
       break;
     case "drum":
-      playNoiseBurst(ctx, { filterType: "bandpass", freq: freq / 2, q: 1, duration: 0.2, gainValue: 0.4 });
+      // Drums use pads (DRUM_PADS) rather than the musical scale in the UI;
+      // this pitched-note path exists only for API completeness, so pick
+      // the pad whose synthesized register loosely tracks the note's pitch.
+      playDrumSynth(freq > 440 ? "hihat" : freq > 300 ? "snare" : "tom");
       break;
     case "piano":
     default:
