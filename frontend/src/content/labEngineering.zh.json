@@ -4,16 +4,44 @@
     "emoji": "🌉",
     "prompt": "🐻 小熊需要过河。搭一座桥吧！",
     "materials": [
-      { "id": "wood", "emoji": "🪵", "label": "木头" },
-      { "id": "stone", "emoji": "🧱", "label": "石头" },
-      { "id": "rope", "emoji": "🧵", "label": "绳子" },
-      { "id": "paper", "emoji": "📄", "label": "纸" }
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "木头"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "石头"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "绳子"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "纸"
+      }
     ],
     "outcomes": {
-      "wood": { "success": true, "text": "木头又结实又轻。桥承受住了小熊的重量，它安全地过河了！" },
-      "stone": { "success": false, "text": "石头对于简易桥来说太重了，小熊还没走过去桥就塌了。" },
-      "rope": { "success": false, "text": "只用绳子撑不住小熊的重量——它掉进水里了！" },
-      "paper": { "success": false, "text": "小熊的爪子一踩上去，纸就破了。" }
+      "wood": {
+        "success": true,
+        "text": "木头又结实又轻。桥承受住了小熊的重量，它安全地过河了！"
+      },
+      "stone": {
+        "success": false,
+        "text": "石头对于简易桥来说太重了，小熊还没走过去桥就塌了。"
+      },
+      "rope": {
+        "success": false,
+        "text": "只用绳子撑不住小熊的重量——它掉进水里了！"
+      },
+      "paper": {
+        "success": false,
+        "text": "小熊的爪子一踩上去，纸就破了。"
+      }
     }
   },
   "tower": {
@@ -21,16 +49,44 @@
     "emoji": "🗼",
     "prompt": "🚩 搭一座足够高的塔，够到旗子！",
     "materials": [
-      { "id": "wood", "emoji": "🪵", "label": "木头" },
-      { "id": "stone", "emoji": "🧱", "label": "石头" },
-      { "id": "rope", "emoji": "🧵", "label": "绳子" },
-      { "id": "paper", "emoji": "📄", "label": "纸" }
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "木头"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "石头"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "绳子"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "纸"
+      }
     ],
     "outcomes": {
-      "wood": { "success": true, "text": "木块稳稳地叠了起来——塔够到了旗子！" },
-      "stone": { "success": true, "text": "石头虽重，但底部很稳——塔立得很稳，够到了旗子！" },
-      "rope": { "success": false, "text": "绳子自己立不起来——塔根本无法建起来。" },
-      "paper": { "success": false, "text": "纸承受不住重量弯折了，塔倒塌了。" }
+      "wood": {
+        "success": true,
+        "text": "木块稳稳地叠了起来——塔够到了旗子！"
+      },
+      "stone": {
+        "success": true,
+        "text": "石头虽重，但底部很稳——塔立得很稳，够到了旗子！"
+      },
+      "rope": {
+        "success": false,
+        "text": "绳子自己立不起来——塔根本无法建起来。"
+      },
+      "paper": {
+        "success": false,
+        "text": "纸承受不住重量弯折了，塔倒塌了。"
+      }
     }
   },
   "boat": {
@@ -38,16 +94,179 @@
     "emoji": "⛵",
     "prompt": "⛵ 造一艘能漂浮的船，把玩具运到对岸！",
     "materials": [
-      { "id": "wood", "emoji": "🪵", "label": "木头" },
-      { "id": "stone", "emoji": "🧱", "label": "石头" },
-      { "id": "rope", "emoji": "🧵", "label": "绳子" },
-      { "id": "paper", "emoji": "📄", "label": "纸" }
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "木头"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "石头"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "绳子"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "纸"
+      }
     ],
     "outcomes": {
-      "wood": { "success": true, "text": "木头浮力很好——船平稳地航行了！" },
-      "stone": { "success": false, "text": "石头密度太大，一碰到水就沉下去了。" },
-      "rope": { "success": false, "text": "绳子无法形成船身——水灌了进去，船沉了。" },
-      "paper": { "success": false, "text": "纸吸水后变软，最后化开了。" }
+      "wood": {
+        "success": true,
+        "text": "木头浮力很好——船平稳地航行了！"
+      },
+      "stone": {
+        "success": false,
+        "text": "石头密度太大，一碰到水就沉下去了。"
+      },
+      "rope": {
+        "success": false,
+        "text": "绳子无法形成船身——水灌了进去，船沉了。"
+      },
+      "paper": {
+        "success": false,
+        "text": "纸吸水后变软，最后化开了。"
+      }
+    }
+  },
+  "dam": {
+    "title": "海狸的水坝",
+    "emoji": "🦫",
+    "prompt": "🦫 海狸想挡住河水。建一座水坝吧！",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "木头"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "石头"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "绳子"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "纸"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "水从木头的小缝隙中渗过去——水坝挡不住。"
+      },
+      "stone": {
+        "success": true,
+        "text": "堆叠的石头又重又结实，形成了一堵墙——水坝挡住了河水！"
+      },
+      "rope": {
+        "success": false,
+        "text": "绳子挡不住水，水从绳缝间自由流过。"
+      },
+      "paper": {
+        "success": false,
+        "text": "纸一碰到水就化开了。"
+      }
+    }
+  },
+  "catapult": {
+    "title": "投石机",
+    "emoji": "🎯",
+    "prompt": "🎯 造一台投石机，把球射过墙去！",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "木头"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "石头"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "绳子"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "纸"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": true,
+        "text": "木臂又结实又有弹性——它弯曲后把球弹得很远！"
+      },
+      "stone": {
+        "success": false,
+        "text": "石头太硬了，不能像手臂一样弯曲——什么都射不出去。"
+      },
+      "rope": {
+        "success": false,
+        "text": "绳子很软，但推不动球——球只是掉在旁边。"
+      },
+      "paper": {
+        "success": false,
+        "text": "纸一弯就断，没有力气把球射出去。"
+      }
+    }
+  },
+  "crane": {
+    "title": "起重机",
+    "emoji": "🏗️",
+    "prompt": "🏗️ 造一台起重机，吊起沉重的箱子！",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "木头"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "石头"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "绳子"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "纸"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": true,
+        "text": "木臂又轻又结实——轻松吊起了箱子！"
+      },
+      "stone": {
+        "success": false,
+        "text": "石头太重了，连自己的臂都抬不动——起重机根本动不了。"
+      },
+      "rope": {
+        "success": false,
+        "text": "没有硬臂，绳子只会弯曲——吊不起箱子。"
+      },
+      "paper": {
+        "success": false,
+        "text": "箱子刚绑上去，纸就断了。"
+      }
     }
   }
 }

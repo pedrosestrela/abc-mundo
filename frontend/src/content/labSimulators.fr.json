@@ -5,17 +5,48 @@
     "question": "Règle la lumière et l'eau et regarde ce qui arrive à la plante !",
     "lightLabel": "Lumière",
     "waterLabel": "Eau",
-    "levels": ["Peu", "Normal", "Beaucoup"],
+    "levels": [
+      "Peu",
+      "Normal",
+      "Beaucoup"
+    ],
     "outcomes": {
-      "0-0": { "emoji": "💀", "text": "Sans lumière ni eau, la plante flétrit et meurt rapidement." },
-      "0-1": { "emoji": "🥀", "text": "Sans lumière, la plante devient faible et jaune même avec assez d'eau." },
-      "0-2": { "emoji": "🥀", "text": "Trop d'eau sans lumière noie les racines et la plante ne survit pas." },
-      "1-0": { "emoji": "🥀", "text": "Il y a de la lumière, mais sans eau la plante sèche et flétrit." },
-      "1-1": { "emoji": "🌿", "text": "Lumière et eau équilibrées ! La plante pousse saine et verte." },
-      "1-2": { "emoji": "🥀", "text": "Lumière normale mais trop d'eau fait pourrir les racines." },
-      "2-0": { "emoji": "🥀", "text": "Beaucoup de lumière sans eau assèche vite la plante." },
-      "2-1": { "emoji": "🌻", "text": "Beaucoup de lumière et eau normale — la plante pousse forte et fleurit !" },
-      "2-2": { "emoji": "🌿", "text": "Beaucoup de lumière et beaucoup d'eau gardent la plante luxuriante, mais attention à ne pas trop l'arroser." }
+      "0-0": {
+        "emoji": "💀",
+        "text": "Sans lumière ni eau, la plante flétrit et meurt rapidement."
+      },
+      "0-1": {
+        "emoji": "🥀",
+        "text": "Sans lumière, la plante devient faible et jaune même avec assez d'eau."
+      },
+      "0-2": {
+        "emoji": "🥀",
+        "text": "Trop d'eau sans lumière noie les racines et la plante ne survit pas."
+      },
+      "1-0": {
+        "emoji": "🥀",
+        "text": "Il y a de la lumière, mais sans eau la plante sèche et flétrit."
+      },
+      "1-1": {
+        "emoji": "🌿",
+        "text": "Lumière et eau équilibrées ! La plante pousse saine et verte."
+      },
+      "1-2": {
+        "emoji": "🥀",
+        "text": "Lumière normale mais trop d'eau fait pourrir les racines."
+      },
+      "2-0": {
+        "emoji": "🥀",
+        "text": "Beaucoup de lumière sans eau assèche vite la plante."
+      },
+      "2-1": {
+        "emoji": "🌻",
+        "text": "Beaucoup de lumière et eau normale — la plante pousse forte et fleurit !"
+      },
+      "2-2": {
+        "emoji": "🌿",
+        "text": "Beaucoup de lumière et beaucoup d'eau gardent la plante luxuriante, mais attention à ne pas trop l'arroser."
+      }
     }
   },
   "gravity": {
@@ -24,9 +55,27 @@
     "question": "Choisis une planète et vois comment la gravité change ton saut !",
     "jumpLabel": "Hauteur du saut",
     "planets": [
-      { "id": "moon", "emoji": "🌕", "label": "Lune", "jumpMultiplier": 6, "text": "Sur la Lune, la gravité est bien plus faible. Tu sauterais environ 6 fois plus haut !" },
-      { "id": "earth", "emoji": "🌍", "label": "Terre", "jumpMultiplier": 1, "text": "Sur Terre, c'est ton saut normal." },
-      { "id": "jupiter", "emoji": "🟠", "label": "Jupiter", "jumpMultiplier": 0.4, "text": "Sur Jupiter, la gravité est bien plus forte. Ton saut serait bien plus bas !" }
+      {
+        "id": "moon",
+        "emoji": "🌕",
+        "label": "Lune",
+        "jumpMultiplier": 6,
+        "text": "Sur la Lune, la gravité est bien plus faible. Tu sauterais environ 6 fois plus haut !"
+      },
+      {
+        "id": "earth",
+        "emoji": "🌍",
+        "label": "Terre",
+        "jumpMultiplier": 1,
+        "text": "Sur Terre, c'est ton saut normal."
+      },
+      {
+        "id": "jupiter",
+        "emoji": "🟠",
+        "label": "Jupiter",
+        "jumpMultiplier": 0.4,
+        "text": "Sur Jupiter, la gravité est bien plus forte. Ton saut serait bien plus bas !"
+      }
     ]
   },
   "water": {
@@ -34,11 +83,24 @@
     "emoji": "💧",
     "question": "Déplace la température et observe l'eau changer d'état !",
     "tempLabel": "Température",
-    "levels": ["Très froide", "Température ambiante", "Très chaude"],
+    "levels": [
+      "Très froide",
+      "Température ambiante",
+      "Très chaude"
+    ],
     "outcomes": {
-      "0": { "emoji": "🧊", "text": "L'eau gèle et devient solide : de la glace !" },
-      "1": { "emoji": "💧", "text": "À température ambiante, l'eau est liquide." },
-      "2": { "emoji": "💨", "text": "L'eau bout et se transforme en vapeur : un gaz !" }
+      "0": {
+        "emoji": "🧊",
+        "text": "L'eau gèle et devient solide : de la glace !"
+      },
+      "1": {
+        "emoji": "💧",
+        "text": "À température ambiante, l'eau est liquide."
+      },
+      "2": {
+        "emoji": "💨",
+        "text": "L'eau bout et se transforme en vapeur : un gaz !"
+      }
     }
   },
   "electric": {
@@ -47,14 +109,35 @@
     "question": "Choisis ce qui relie la pile à l'ampoule et découvre si elle s'allume !",
     "middleLabel": "Qu'est-ce qui relie la pile à l'ampoule ?",
     "options": [
-      { "id": "wire", "emoji": "🔌", "label": "Fil entier" },
-      { "id": "broken", "emoji": "✂️", "label": "Fil coupé" },
-      { "id": "none", "emoji": "❌", "label": "Rien" }
+      {
+        "id": "wire",
+        "emoji": "🔌",
+        "label": "Fil entier"
+      },
+      {
+        "id": "broken",
+        "emoji": "✂️",
+        "label": "Fil coupé"
+      },
+      {
+        "id": "none",
+        "emoji": "❌",
+        "label": "Rien"
+      }
     ],
     "outcomes": {
-      "wire": { "success": true, "text": "Le circuit est complet ! Le courant électrique circule de la pile, passe par le fil, allume l'ampoule et revient à la pile." },
-      "broken": { "success": false, "text": "Le fil est coupé — il y a un espace vide au milieu. Le courant électrique ne peut pas traverser cet espace, donc l'ampoule ne s'allume pas." },
-      "none": { "success": false, "text": "Sans rien pour relier la pile à l'ampoule, le circuit reste ouvert. Sans chemin fermé, le courant ne peut pas circuler." }
+      "wire": {
+        "success": true,
+        "text": "Le circuit est complet ! Le courant électrique circule de la pile, passe par le fil, allume l'ampoule et revient à la pile."
+      },
+      "broken": {
+        "success": false,
+        "text": "Le fil est coupé — il y a un espace vide au milieu. Le courant électrique ne peut pas traverser cet espace, donc l'ampoule ne s'allume pas."
+      },
+      "none": {
+        "success": false,
+        "text": "Sans rien pour relier la pile à l'ampoule, le circuit reste ouvert. Sans chemin fermé, le courant ne peut pas circuler."
+      }
     }
   },
   "light": {
@@ -65,15 +148,168 @@
     "sameWarning": "Choisis deux couleurs différentes !",
     "guessLabel": "Quelle couleur penses-tu voir apparaître ?",
     "lights": [
-      { "id": "red", "emoji": "🔴", "label": "Rouge", "color": "#ff3b3b" },
-      { "id": "green", "emoji": "🟢", "label": "Vert", "color": "#2ecc71" },
-      { "id": "blue", "emoji": "🔵", "label": "Bleu", "color": "#3b82f6" }
+      {
+        "id": "red",
+        "emoji": "🔴",
+        "label": "Rouge",
+        "color": "#ff3b3b"
+      },
+      {
+        "id": "green",
+        "emoji": "🟢",
+        "label": "Vert",
+        "color": "#2ecc71"
+      },
+      {
+        "id": "blue",
+        "emoji": "🔵",
+        "label": "Bleu",
+        "color": "#3b82f6"
+      }
     ],
-    "distractor": { "label": "Blanc", "color": "#f4f4f4" },
+    "distractor": {
+      "label": "Blanc",
+      "color": "#f4f4f4"
+    },
     "combos": {
-      "red-green": { "resultLabel": "Jaune", "color": "#ffe135", "text": "Lumière rouge + lumière verte = lumière jaune ! Mélanger des couleurs de LUMIÈRE est différent de mélanger de la peinture — la lumière s'additionne et devient plus claire." },
-      "red-blue": { "resultLabel": "Magenta", "color": "#ff3bd4", "text": "Lumière rouge + lumière bleue = magenta ! Chaque lumière colorée transporte une partie de la lumière blanche du soleil." },
-      "green-blue": { "resultLabel": "Cyan", "color": "#3bf0ff", "text": "Lumière verte + lumière bleue = cyan ! Réunis les trois (rouge, vert et bleu) et tu obtiens de la lumière blanche." }
+      "red-green": {
+        "resultLabel": "Jaune",
+        "color": "#ffe135",
+        "text": "Lumière rouge + lumière verte = lumière jaune ! Mélanger des couleurs de LUMIÈRE est différent de mélanger de la peinture — la lumière s'additionne et devient plus claire."
+      },
+      "red-blue": {
+        "resultLabel": "Magenta",
+        "color": "#ff3bd4",
+        "text": "Lumière rouge + lumière bleue = magenta ! Chaque lumière colorée transporte une partie de la lumière blanche du soleil."
+      },
+      "green-blue": {
+        "resultLabel": "Cyan",
+        "color": "#3bf0ff",
+        "text": "Lumière verte + lumière bleue = cyan ! Réunis les trois (rouge, vert et bleu) et tu obtiens de la lumière blanche."
+      }
+    }
+  },
+  "sound": {
+    "title": "Labo du Son",
+    "emoji": "👂",
+    "question": "Change la distance et écoute comment le son change !",
+    "tempLabel": "Distance",
+    "levels": [
+      "Proche",
+      "Distance moyenne",
+      "Très loin"
+    ],
+    "outcomes": {
+      "0": {
+        "emoji": "🔊",
+        "text": "Près de la source, le son arrive fort et clair."
+      },
+      "1": {
+        "emoji": "🔉",
+        "text": "À une distance moyenne, le son arrive déjà plus faible."
+      },
+      "2": {
+        "emoji": "🔈",
+        "text": "Très loin, le son est à peine audible — il perd de sa force en traversant l'air."
+      }
+    }
+  },
+  "magnetism": {
+    "title": "Labo de l'Aimant",
+    "emoji": "🧲",
+    "question": "Approche l'aimant de différents objets et découvre lesquels sont attirés !",
+    "itemsLabel": "Choisis un objet",
+    "predictQuestion": "Penses-tu que l'aimant va attirer cet objet ?",
+    "successEmoji": "🧲✨",
+    "failEmoji": "🚫",
+    "items": [
+      {
+        "id": "nail",
+        "emoji": "🔩",
+        "label": "Clou en fer"
+      },
+      {
+        "id": "spoon",
+        "emoji": "🥄",
+        "label": "Cuillère en plastique"
+      },
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Bloc de bois"
+      },
+      {
+        "id": "can",
+        "emoji": "🥫",
+        "label": "Canette en aluminium"
+      }
+    ],
+    "outcomes": {
+      "nail": {
+        "success": true,
+        "text": "Le clou est en fer — les aimants attirent le fer et l'acier, il colle donc à l'aimant !"
+      },
+      "spoon": {
+        "success": false,
+        "text": "Le plastique n'est pas attiré par les aimants. La cuillère reste immobile."
+      },
+      "wood": {
+        "success": false,
+        "text": "Le bois n'est pas attiré par les aimants. Le bloc ne bouge pas."
+      },
+      "can": {
+        "success": false,
+        "text": "L'aluminium n'est généralement pas attiré par les aimants ordinaires. La canette reste immobile."
+      }
+    }
+  },
+  "buoyancy": {
+    "title": "Ça Flotte ou Ça Coule ?",
+    "emoji": "🛁",
+    "question": "Choisis un objet et découvre s'il flotte ou coule dans l'eau !",
+    "itemsLabel": "Choisis un objet",
+    "predictQuestion": "Penses-tu que cet objet va flotter ?",
+    "successEmoji": "🫧",
+    "failEmoji": "⬇️",
+    "items": [
+      {
+        "id": "duck",
+        "emoji": "🦆",
+        "label": "Canard en caoutchouc"
+      },
+      {
+        "id": "rock",
+        "emoji": "🪨",
+        "label": "Roche"
+      },
+      {
+        "id": "spoon",
+        "emoji": "🥄",
+        "label": "Cuillère en métal"
+      },
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Bloc de bois"
+      }
+    ],
+    "outcomes": {
+      "duck": {
+        "success": true,
+        "text": "Le canard en caoutchouc est creux et rempli d'air — il flotte facilement à la surface !"
+      },
+      "rock": {
+        "success": false,
+        "text": "La roche est dense et lourde pour sa taille — elle coule directement au fond."
+      },
+      "spoon": {
+        "success": false,
+        "text": "Le métal est dense — la cuillère coule rapidement."
+      },
+      "wood": {
+        "success": true,
+        "text": "Le bois est moins dense que l'eau — il flotte à la surface !"
+      }
     }
   }
 }

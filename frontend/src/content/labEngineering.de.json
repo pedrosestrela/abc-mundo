@@ -4,16 +4,44 @@
     "emoji": "🌉",
     "prompt": "🐻 Der Bär muss den Fluss überqueren. Baue eine Brücke!",
     "materials": [
-      { "id": "wood", "emoji": "🪵", "label": "Holz" },
-      { "id": "stone", "emoji": "🧱", "label": "Stein" },
-      { "id": "rope", "emoji": "🧵", "label": "Seil" },
-      { "id": "paper", "emoji": "📄", "label": "Papier" }
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Holz"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Stein"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Seil"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papier"
+      }
     ],
     "outcomes": {
-      "wood": { "success": true, "text": "Holz ist stark und leicht. Die Brücke trägt den Bären und er überquert sicher!" },
-      "stone": { "success": false, "text": "Stein ist für eine einfache Brücke zu schwer und sie bricht zusammen, bevor der Bär hinüberkommt." },
-      "rope": { "success": false, "text": "Ein Seil allein hängt unter dem Gewicht des Bären durch — er fällt ins Wasser!" },
-      "paper": { "success": false, "text": "Das Papier reißt, sobald der Bär eine Pfote daraufsetzt." }
+      "wood": {
+        "success": true,
+        "text": "Holz ist stark und leicht. Die Brücke trägt den Bären und er überquert sicher!"
+      },
+      "stone": {
+        "success": false,
+        "text": "Stein ist für eine einfache Brücke zu schwer und sie bricht zusammen, bevor der Bär hinüberkommt."
+      },
+      "rope": {
+        "success": false,
+        "text": "Ein Seil allein hängt unter dem Gewicht des Bären durch — er fällt ins Wasser!"
+      },
+      "paper": {
+        "success": false,
+        "text": "Das Papier reißt, sobald der Bär eine Pfote daraufsetzt."
+      }
     }
   },
   "tower": {
@@ -21,16 +49,44 @@
     "emoji": "🗼",
     "prompt": "🚩 Baue einen Turm, der hoch genug ist, um die Fahne zu erreichen!",
     "materials": [
-      { "id": "wood", "emoji": "🪵", "label": "Holz" },
-      { "id": "stone", "emoji": "🧱", "label": "Stein" },
-      { "id": "rope", "emoji": "🧵", "label": "Seil" },
-      { "id": "paper", "emoji": "📄", "label": "Papier" }
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Holz"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Stein"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Seil"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papier"
+      }
     ],
     "outcomes": {
-      "wood": { "success": true, "text": "Holzblöcke stapeln sich fest — der Turm erreicht die Fahne!" },
-      "stone": { "success": true, "text": "Stein ist schwer, aber stabil an der Basis — der Turm steht fest und erreicht die Fahne!" },
-      "rope": { "success": false, "text": "Ein Seil kann nicht von allein stehen — der Turm erhebt sich nie." },
-      "paper": { "success": false, "text": "Papier verbiegt sich unter dem Gewicht und der Turm stürzt ein." }
+      "wood": {
+        "success": true,
+        "text": "Holzblöcke stapeln sich fest — der Turm erreicht die Fahne!"
+      },
+      "stone": {
+        "success": true,
+        "text": "Stein ist schwer, aber stabil an der Basis — der Turm steht fest und erreicht die Fahne!"
+      },
+      "rope": {
+        "success": false,
+        "text": "Ein Seil kann nicht von allein stehen — der Turm erhebt sich nie."
+      },
+      "paper": {
+        "success": false,
+        "text": "Papier verbiegt sich unter dem Gewicht und der Turm stürzt ein."
+      }
     }
   },
   "boat": {
@@ -38,16 +94,179 @@
     "emoji": "⛵",
     "prompt": "⛵ Baue ein Boot, das schwimmt und die Spielsachen ans andere Ufer bringt!",
     "materials": [
-      { "id": "wood", "emoji": "🪵", "label": "Holz" },
-      { "id": "stone", "emoji": "🧱", "label": "Stein" },
-      { "id": "rope", "emoji": "🧵", "label": "Seil" },
-      { "id": "paper", "emoji": "📄", "label": "Papier" }
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Holz"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Stein"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Seil"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papier"
+      }
     ],
     "outcomes": {
-      "wood": { "success": true, "text": "Holz schwimmt sehr gut — das Boot fährt ruhig dahin!" },
-      "stone": { "success": false, "text": "Stein ist zu dicht und sinkt, sobald er das Wasser berührt." },
-      "rope": { "success": false, "text": "Ein Seil bildet keinen Rumpf — Wasser dringt ein und das Boot sinkt." },
-      "paper": { "success": false, "text": "Papier saugt sich mit Wasser voll, wird weich und löst sich auf." }
+      "wood": {
+        "success": true,
+        "text": "Holz schwimmt sehr gut — das Boot fährt ruhig dahin!"
+      },
+      "stone": {
+        "success": false,
+        "text": "Stein ist zu dicht und sinkt, sobald er das Wasser berührt."
+      },
+      "rope": {
+        "success": false,
+        "text": "Ein Seil bildet keinen Rumpf — Wasser dringt ein und das Boot sinkt."
+      },
+      "paper": {
+        "success": false,
+        "text": "Papier saugt sich mit Wasser voll, wird weich und löst sich auf."
+      }
+    }
+  },
+  "dam": {
+    "title": "Der Biberdamm",
+    "emoji": "🦫",
+    "prompt": "🦫 Der Biber will den Fluss aufhalten. Baue einen Damm!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Holz"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Stein"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Seil"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papier"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "Wasser sickert durch kleine Lücken im Holz — der Damm gibt nach."
+      },
+      "stone": {
+        "success": true,
+        "text": "Gestapelter Stein ist schwer und bildet eine feste Wand — der Damm hält den Fluss auf!"
+      },
+      "rope": {
+        "success": false,
+        "text": "Ein Seil kann Wasser nicht stoppen, es fließt einfach zwischen den Fasern durch."
+      },
+      "paper": {
+        "success": false,
+        "text": "Das Papier löst sich auf, sobald es das Wasser berührt."
+      }
+    }
+  },
+  "catapult": {
+    "title": "Die Katapult",
+    "emoji": "🎯",
+    "prompt": "🎯 Baue ein Katapult, um den Ball über die Mauer zu schleudern!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Holz"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Stein"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Seil"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papier"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": true,
+        "text": "Der Holzarm ist stark und biegsam — er federt zurück und schleudert den Ball weit weg!"
+      },
+      "stone": {
+        "success": false,
+        "text": "Stein ist zu starr, um sich wie ein Arm zu biegen — er kann nichts schleudern."
+      },
+      "rope": {
+        "success": false,
+        "text": "Ein Seil ist biegsam, drückt den Ball aber nicht weg — er fällt einfach zur Seite."
+      },
+      "paper": {
+        "success": false,
+        "text": "Papier biegt sich und reißt, ohne Kraft, um den Ball zu schleudern."
+      }
+    }
+  },
+  "crane": {
+    "title": "Der Kran",
+    "emoji": "🏗️",
+    "prompt": "🏗️ Baue einen Kran, um die schwere Kiste zu heben!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Holz"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Stein"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Seil"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papier"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": true,
+        "text": "Der Holzarm ist leicht und stark — er hebt die Kiste mühelos an!"
+      },
+      "stone": {
+        "success": false,
+        "text": "Stein ist zu schwer, um seinen eigenen Arm zu heben — der Kran bewegt sich nicht."
+      },
+      "rope": {
+        "success": false,
+        "text": "Ein Seil biegt sich ohne einen starren Arm — es kann die Kiste nicht heben."
+      },
+      "paper": {
+        "success": false,
+        "text": "Das Papier reißt, sobald die Kiste befestigt wird."
+      }
     }
   }
 }

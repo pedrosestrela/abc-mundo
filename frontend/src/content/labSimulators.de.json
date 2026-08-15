@@ -5,17 +5,48 @@
     "question": "Stelle Licht und Wasser ein und sieh, was mit der Pflanze passiert!",
     "lightLabel": "Licht",
     "waterLabel": "Wasser",
-    "levels": ["Wenig", "Normal", "Viel"],
+    "levels": [
+      "Wenig",
+      "Normal",
+      "Viel"
+    ],
     "outcomes": {
-      "0-0": { "emoji": "💀", "text": "Ohne Licht und ohne Wasser welkt die Pflanze und stirbt schnell." },
-      "0-1": { "emoji": "🥀", "text": "Ohne Licht wird die Pflanze schwach und gelb, selbst mit genug Wasser." },
-      "0-2": { "emoji": "🥀", "text": "Zu viel Wasser ohne Licht ertränkt die Wurzeln und die Pflanze überlebt nicht." },
-      "1-0": { "emoji": "🥀", "text": "Es gibt Licht, aber ohne Wasser trocknet die Pflanze aus und welkt." },
-      "1-1": { "emoji": "🌿", "text": "Licht und Wasser im Gleichgewicht! Die Pflanze wächst gesund und grün." },
-      "1-2": { "emoji": "🥀", "text": "Normales Licht, aber zu viel Wasser lässt die Wurzeln verfaulen." },
-      "2-0": { "emoji": "🥀", "text": "Viel Licht ohne Wasser trocknet die Pflanze schnell aus." },
-      "2-1": { "emoji": "🌻", "text": "Viel Licht und normales Wasser — die Pflanze wächst kräftig und blüht!" },
-      "2-2": { "emoji": "🌿", "text": "Viel Licht und viel Wasser halten die Pflanze üppig, aber Vorsicht vor zu viel Nässe." }
+      "0-0": {
+        "emoji": "💀",
+        "text": "Ohne Licht und ohne Wasser welkt die Pflanze und stirbt schnell."
+      },
+      "0-1": {
+        "emoji": "🥀",
+        "text": "Ohne Licht wird die Pflanze schwach und gelb, selbst mit genug Wasser."
+      },
+      "0-2": {
+        "emoji": "🥀",
+        "text": "Zu viel Wasser ohne Licht ertränkt die Wurzeln und die Pflanze überlebt nicht."
+      },
+      "1-0": {
+        "emoji": "🥀",
+        "text": "Es gibt Licht, aber ohne Wasser trocknet die Pflanze aus und welkt."
+      },
+      "1-1": {
+        "emoji": "🌿",
+        "text": "Licht und Wasser im Gleichgewicht! Die Pflanze wächst gesund und grün."
+      },
+      "1-2": {
+        "emoji": "🥀",
+        "text": "Normales Licht, aber zu viel Wasser lässt die Wurzeln verfaulen."
+      },
+      "2-0": {
+        "emoji": "🥀",
+        "text": "Viel Licht ohne Wasser trocknet die Pflanze schnell aus."
+      },
+      "2-1": {
+        "emoji": "🌻",
+        "text": "Viel Licht und normales Wasser — die Pflanze wächst kräftig und blüht!"
+      },
+      "2-2": {
+        "emoji": "🌿",
+        "text": "Viel Licht und viel Wasser halten die Pflanze üppig, aber Vorsicht vor zu viel Nässe."
+      }
     }
   },
   "gravity": {
@@ -24,9 +55,27 @@
     "question": "Wähle einen Planeten und sieh, wie die Schwerkraft deinen Sprung verändert!",
     "jumpLabel": "Sprunghöhe",
     "planets": [
-      { "id": "moon", "emoji": "🌕", "label": "Mond", "jumpMultiplier": 6, "text": "Auf dem Mond ist die Schwerkraft viel schwächer. Du würdest etwa 6-mal höher springen!" },
-      { "id": "earth", "emoji": "🌍", "label": "Erde", "jumpMultiplier": 1, "text": "Auf der Erde ist das dein normaler Sprung." },
-      { "id": "jupiter", "emoji": "🟠", "label": "Jupiter", "jumpMultiplier": 0.4, "text": "Auf dem Jupiter ist die Schwerkraft viel stärker. Dein Sprung wäre viel niedriger!" }
+      {
+        "id": "moon",
+        "emoji": "🌕",
+        "label": "Mond",
+        "jumpMultiplier": 6,
+        "text": "Auf dem Mond ist die Schwerkraft viel schwächer. Du würdest etwa 6-mal höher springen!"
+      },
+      {
+        "id": "earth",
+        "emoji": "🌍",
+        "label": "Erde",
+        "jumpMultiplier": 1,
+        "text": "Auf der Erde ist das dein normaler Sprung."
+      },
+      {
+        "id": "jupiter",
+        "emoji": "🟠",
+        "label": "Jupiter",
+        "jumpMultiplier": 0.4,
+        "text": "Auf dem Jupiter ist die Schwerkraft viel stärker. Dein Sprung wäre viel niedriger!"
+      }
     ]
   },
   "water": {
@@ -34,11 +83,24 @@
     "emoji": "💧",
     "question": "Bewege die Temperatur und beobachte, wie Wasser seinen Zustand ändert!",
     "tempLabel": "Temperatur",
-    "levels": ["Sehr kalt", "Zimmertemperatur", "Sehr heiß"],
+    "levels": [
+      "Sehr kalt",
+      "Zimmertemperatur",
+      "Sehr heiß"
+    ],
     "outcomes": {
-      "0": { "emoji": "🧊", "text": "Das Wasser gefriert und wird fest: Eis!" },
-      "1": { "emoji": "💧", "text": "Bei Zimmertemperatur ist Wasser flüssig." },
-      "2": { "emoji": "💨", "text": "Das Wasser kocht und wird zu Dampf: ein Gas!" }
+      "0": {
+        "emoji": "🧊",
+        "text": "Das Wasser gefriert und wird fest: Eis!"
+      },
+      "1": {
+        "emoji": "💧",
+        "text": "Bei Zimmertemperatur ist Wasser flüssig."
+      },
+      "2": {
+        "emoji": "💨",
+        "text": "Das Wasser kocht und wird zu Dampf: ein Gas!"
+      }
     }
   },
   "electric": {
@@ -47,14 +109,35 @@
     "question": "Wähle, was die Batterie mit der Glühbirne verbindet, und finde heraus, ob sie leuchtet!",
     "middleLabel": "Was verbindet die Batterie mit der Glühbirne?",
     "options": [
-      { "id": "wire", "emoji": "🔌", "label": "Ganzer Draht" },
-      { "id": "broken", "emoji": "✂️", "label": "Kaputter Draht" },
-      { "id": "none", "emoji": "❌", "label": "Nichts" }
+      {
+        "id": "wire",
+        "emoji": "🔌",
+        "label": "Ganzer Draht"
+      },
+      {
+        "id": "broken",
+        "emoji": "✂️",
+        "label": "Kaputter Draht"
+      },
+      {
+        "id": "none",
+        "emoji": "❌",
+        "label": "Nichts"
+      }
     ],
     "outcomes": {
-      "wire": { "success": true, "text": "Der Stromkreis ist geschlossen! Der elektrische Strom fließt von der Batterie durch den Draht, bringt die Glühbirne zum Leuchten und kehrt zur Batterie zurück." },
-      "broken": { "success": false, "text": "Der Draht ist kaputt — in der Mitte ist eine Lücke. Der Strom kann diese Lücke nicht überqueren, deshalb leuchtet die Glühbirne nicht." },
-      "none": { "success": false, "text": "Ohne etwas, das die Batterie mit der Glühbirne verbindet, bleibt der Stromkreis offen. Ohne geschlossenen Weg kann kein Strom fließen." }
+      "wire": {
+        "success": true,
+        "text": "Der Stromkreis ist geschlossen! Der elektrische Strom fließt von der Batterie durch den Draht, bringt die Glühbirne zum Leuchten und kehrt zur Batterie zurück."
+      },
+      "broken": {
+        "success": false,
+        "text": "Der Draht ist kaputt — in der Mitte ist eine Lücke. Der Strom kann diese Lücke nicht überqueren, deshalb leuchtet die Glühbirne nicht."
+      },
+      "none": {
+        "success": false,
+        "text": "Ohne etwas, das die Batterie mit der Glühbirne verbindet, bleibt der Stromkreis offen. Ohne geschlossenen Weg kann kein Strom fließen."
+      }
     }
   },
   "light": {
@@ -65,15 +148,168 @@
     "sameWarning": "Wähle zwei unterschiedliche Farben!",
     "guessLabel": "Welche Farbe glaubst du, wird erscheinen?",
     "lights": [
-      { "id": "red", "emoji": "🔴", "label": "Rot", "color": "#ff3b3b" },
-      { "id": "green", "emoji": "🟢", "label": "Grün", "color": "#2ecc71" },
-      { "id": "blue", "emoji": "🔵", "label": "Blau", "color": "#3b82f6" }
+      {
+        "id": "red",
+        "emoji": "🔴",
+        "label": "Rot",
+        "color": "#ff3b3b"
+      },
+      {
+        "id": "green",
+        "emoji": "🟢",
+        "label": "Grün",
+        "color": "#2ecc71"
+      },
+      {
+        "id": "blue",
+        "emoji": "🔵",
+        "label": "Blau",
+        "color": "#3b82f6"
+      }
     ],
-    "distractor": { "label": "Weiß", "color": "#f4f4f4" },
+    "distractor": {
+      "label": "Weiß",
+      "color": "#f4f4f4"
+    },
     "combos": {
-      "red-green": { "resultLabel": "Gelb", "color": "#ffe135", "text": "Rotes Licht + grünes Licht = gelbes Licht! Farben aus LICHT zu mischen ist anders als Farbe zu mischen — Licht addiert sich und wird heller." },
-      "red-blue": { "resultLabel": "Magenta", "color": "#ff3bd4", "text": "Rotes Licht + blaues Licht = Magenta! Jedes farbige Licht trägt einen Teil des weißen Sonnenlichts." },
-      "green-blue": { "resultLabel": "Cyan", "color": "#3bf0ff", "text": "Grünes Licht + blaues Licht = Cyan! Vereine alle drei (Rot, Grün und Blau) und du erhältst weißes Licht." }
+      "red-green": {
+        "resultLabel": "Gelb",
+        "color": "#ffe135",
+        "text": "Rotes Licht + grünes Licht = gelbes Licht! Farben aus LICHT zu mischen ist anders als Farbe zu mischen — Licht addiert sich und wird heller."
+      },
+      "red-blue": {
+        "resultLabel": "Magenta",
+        "color": "#ff3bd4",
+        "text": "Rotes Licht + blaues Licht = Magenta! Jedes farbige Licht trägt einen Teil des weißen Sonnenlichts."
+      },
+      "green-blue": {
+        "resultLabel": "Cyan",
+        "color": "#3bf0ff",
+        "text": "Grünes Licht + blaues Licht = Cyan! Vereine alle drei (Rot, Grün und Blau) und du erhältst weißes Licht."
+      }
+    }
+  },
+  "sound": {
+    "title": "Schall-Labor",
+    "emoji": "👂",
+    "question": "Verändere den Abstand und höre, wie sich der Schall verändert!",
+    "tempLabel": "Abstand",
+    "levels": [
+      "Nah",
+      "Mittlere Entfernung",
+      "Sehr weit"
+    ],
+    "outcomes": {
+      "0": {
+        "emoji": "🔊",
+        "text": "Nah an der Quelle kommt der Schall laut und klar an."
+      },
+      "1": {
+        "emoji": "🔉",
+        "text": "Bei mittlerer Entfernung ist der Schall schon leiser."
+      },
+      "2": {
+        "emoji": "🔈",
+        "text": "Sehr weit weg ist der Schall kaum zu hören — er verliert beim Durchqueren der Luft an Kraft."
+      }
+    }
+  },
+  "magnetism": {
+    "title": "Magnet-Labor",
+    "emoji": "🧲",
+    "question": "Halte den Magneten an verschiedene Gegenstände und finde heraus, welche angezogen werden!",
+    "itemsLabel": "Wähle einen Gegenstand",
+    "predictQuestion": "Glaubst du, der Magnet zieht diesen Gegenstand an?",
+    "successEmoji": "🧲✨",
+    "failEmoji": "🚫",
+    "items": [
+      {
+        "id": "nail",
+        "emoji": "🔩",
+        "label": "Eisennagel"
+      },
+      {
+        "id": "spoon",
+        "emoji": "🥄",
+        "label": "Plastiklöffel"
+      },
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Holzklotz"
+      },
+      {
+        "id": "can",
+        "emoji": "🥫",
+        "label": "Aludose"
+      }
+    ],
+    "outcomes": {
+      "nail": {
+        "success": true,
+        "text": "Der Nagel besteht aus Eisen — Magnete ziehen Eisen und Stahl an, also bleibt er am Magneten haften!"
+      },
+      "spoon": {
+        "success": false,
+        "text": "Plastik wird von Magneten nicht angezogen. Der Löffel bleibt liegen."
+      },
+      "wood": {
+        "success": false,
+        "text": "Holz wird von Magneten nicht angezogen. Der Klotz bewegt sich nicht."
+      },
+      "can": {
+        "success": false,
+        "text": "Aluminium wird von gewöhnlichen Magneten meist nicht angezogen. Die Dose bleibt liegen."
+      }
+    }
+  },
+  "buoyancy": {
+    "title": "Schwimmen oder Sinken?",
+    "emoji": "🛁",
+    "question": "Wähle einen Gegenstand und finde heraus, ob er im Wasser schwimmt oder sinkt!",
+    "itemsLabel": "Wähle einen Gegenstand",
+    "predictQuestion": "Glaubst du, dieser Gegenstand wird schwimmen?",
+    "successEmoji": "🫧",
+    "failEmoji": "⬇️",
+    "items": [
+      {
+        "id": "duck",
+        "emoji": "🦆",
+        "label": "Gummiente"
+      },
+      {
+        "id": "rock",
+        "emoji": "🪨",
+        "label": "Stein"
+      },
+      {
+        "id": "spoon",
+        "emoji": "🥄",
+        "label": "Metalllöffel"
+      },
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Holzklotz"
+      }
+    ],
+    "outcomes": {
+      "duck": {
+        "success": true,
+        "text": "Die Gummiente ist hohl und voller Luft — sie schwimmt leicht an der Oberfläche!"
+      },
+      "rock": {
+        "success": false,
+        "text": "Der Stein ist für seine Größe dicht und schwer — er sinkt direkt auf den Grund."
+      },
+      "spoon": {
+        "success": false,
+        "text": "Metall ist dicht — der Löffel sinkt schnell."
+      },
+      "wood": {
+        "success": true,
+        "text": "Holz ist weniger dicht als Wasser — es schwimmt an der Oberfläche!"
+      }
     }
   }
 }

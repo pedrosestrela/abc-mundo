@@ -4,16 +4,44 @@
     "emoji": "🌉",
     "prompt": "🐻 El oso necesita cruzar el río. ¡Construye un puente!",
     "materials": [
-      { "id": "wood", "emoji": "🪵", "label": "Madera" },
-      { "id": "stone", "emoji": "🧱", "label": "Piedra" },
-      { "id": "rope", "emoji": "🧵", "label": "Cuerda" },
-      { "id": "paper", "emoji": "📄", "label": "Papel" }
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Madera"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Piedra"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Cuerda"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papel"
+      }
     ],
     "outcomes": {
-      "wood": { "success": true, "text": "¡La madera es fuerte y ligera. El puente aguanta al oso y cruza a salvo!" },
-      "stone": { "success": false, "text": "La piedra es demasiado pesada para un puente sencillo y se derrumba antes de que el oso pase." },
-      "rope": { "success": false, "text": "¡La cuerda sola se hunde con el peso del oso — cae al agua!" },
-      "paper": { "success": false, "text": "El papel se rasga en cuanto el oso apoya una pata." }
+      "wood": {
+        "success": true,
+        "text": "¡La madera es fuerte y ligera. El puente aguanta al oso y cruza a salvo!"
+      },
+      "stone": {
+        "success": false,
+        "text": "La piedra es demasiado pesada para un puente sencillo y se derrumba antes de que el oso pase."
+      },
+      "rope": {
+        "success": false,
+        "text": "¡La cuerda sola se hunde con el peso del oso — cae al agua!"
+      },
+      "paper": {
+        "success": false,
+        "text": "El papel se rasga en cuanto el oso apoya una pata."
+      }
     }
   },
   "tower": {
@@ -21,16 +49,44 @@
     "emoji": "🗼",
     "prompt": "🚩 ¡Construye una torre lo bastante alta para tocar la bandera!",
     "materials": [
-      { "id": "wood", "emoji": "🪵", "label": "Madera" },
-      { "id": "stone", "emoji": "🧱", "label": "Piedra" },
-      { "id": "rope", "emoji": "🧵", "label": "Cuerda" },
-      { "id": "paper", "emoji": "📄", "label": "Papel" }
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Madera"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Piedra"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Cuerda"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papel"
+      }
     ],
     "outcomes": {
-      "wood": { "success": true, "text": "¡Los bloques de madera se apilan firmes — la torre llega a la bandera!" },
-      "stone": { "success": true, "text": "¡La piedra es pesada pero estable en la base — la torre queda firme y alcanza la bandera!" },
-      "rope": { "success": false, "text": "La cuerda no puede sostenerse sola — la torre nunca se levanta." },
-      "paper": { "success": false, "text": "El papel se dobla con el peso y la torre se derrumba." }
+      "wood": {
+        "success": true,
+        "text": "¡Los bloques de madera se apilan firmes — la torre llega a la bandera!"
+      },
+      "stone": {
+        "success": true,
+        "text": "¡La piedra es pesada pero estable en la base — la torre queda firme y alcanza la bandera!"
+      },
+      "rope": {
+        "success": false,
+        "text": "La cuerda no puede sostenerse sola — la torre nunca se levanta."
+      },
+      "paper": {
+        "success": false,
+        "text": "El papel se dobla con el peso y la torre se derrumba."
+      }
     }
   },
   "boat": {
@@ -38,16 +94,179 @@
     "emoji": "⛵",
     "prompt": "⛵ ¡Construye un barco que flote y lleve los juguetes a la otra orilla!",
     "materials": [
-      { "id": "wood", "emoji": "🪵", "label": "Madera" },
-      { "id": "stone", "emoji": "🧱", "label": "Piedra" },
-      { "id": "rope", "emoji": "🧵", "label": "Cuerda" },
-      { "id": "paper", "emoji": "📄", "label": "Papel" }
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Madera"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Piedra"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Cuerda"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papel"
+      }
     ],
     "outcomes": {
-      "wood": { "success": true, "text": "¡La madera flota muy bien — el barco navega tranquilamente!" },
-      "stone": { "success": false, "text": "La piedra es demasiado densa y se hunde en cuanto toca el agua." },
-      "rope": { "success": false, "text": "La cuerda no forma un casco — entra agua y el barco se hunde." },
-      "paper": { "success": false, "text": "El papel absorbe agua, se ablanda y se disuelve." }
+      "wood": {
+        "success": true,
+        "text": "¡La madera flota muy bien — el barco navega tranquilamente!"
+      },
+      "stone": {
+        "success": false,
+        "text": "La piedra es demasiado densa y se hunde en cuanto toca el agua."
+      },
+      "rope": {
+        "success": false,
+        "text": "La cuerda no forma un casco — entra agua y el barco se hunde."
+      },
+      "paper": {
+        "success": false,
+        "text": "El papel absorbe agua, se ablanda y se disuelve."
+      }
+    }
+  },
+  "dam": {
+    "title": "La Presa del Castor",
+    "emoji": "🦫",
+    "prompt": "🦫 El castor quiere frenar el río. ¡Construye una presa!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Madera"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Piedra"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Cuerda"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papel"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "El agua se filtra por pequeñas grietas en la madera — la presa cede."
+      },
+      "stone": {
+        "success": true,
+        "text": "La piedra apilada es pesada y forma un muro sólido — ¡la presa detiene el río!"
+      },
+      "rope": {
+        "success": false,
+        "text": "La cuerda no puede detener el agua, que pasa libremente entre los hilos."
+      },
+      "paper": {
+        "success": false,
+        "text": "El papel se disuelve en cuanto toca el agua."
+      }
+    }
+  },
+  "catapult": {
+    "title": "La Catapulta",
+    "emoji": "🎯",
+    "prompt": "🎯 ¡Construye una catapulta para lanzar la pelota sobre el muro!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Madera"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Piedra"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Cuerda"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papel"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": true,
+        "text": "El brazo de madera es fuerte y flexible — ¡se dobla y lanza la pelota muy lejos!"
+      },
+      "stone": {
+        "success": false,
+        "text": "La piedra es demasiado rígida para doblarse como un brazo — no puede lanzar nada."
+      },
+      "rope": {
+        "success": false,
+        "text": "La cuerda es flexible pero no empuja la pelota — simplemente cae a un lado."
+      },
+      "paper": {
+        "success": false,
+        "text": "El papel se dobla y se rasga, sin fuerza para lanzar la pelota."
+      }
+    }
+  },
+  "crane": {
+    "title": "La Grúa Elevadora",
+    "emoji": "🏗️",
+    "prompt": "🏗️ ¡Construye una grúa para levantar la caja pesada!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Madera"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Piedra"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Cuerda"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papel"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": true,
+        "text": "El brazo de madera es ligero y fuerte — ¡levanta la caja con facilidad!"
+      },
+      "stone": {
+        "success": false,
+        "text": "La piedra es demasiado pesada para que su propio brazo se levante — la grúa no se mueve."
+      },
+      "rope": {
+        "success": false,
+        "text": "La cuerda se dobla sin un brazo rígido — no puede levantar la caja."
+      },
+      "paper": {
+        "success": false,
+        "text": "El papel se rasga en cuanto se le sujeta la caja."
+      }
     }
   }
 }

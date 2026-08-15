@@ -5,17 +5,48 @@
     "question": "调整光照和水量，看看植物会发生什么变化！",
     "lightLabel": "光照",
     "waterLabel": "水",
-    "levels": ["少", "正常", "多"],
+    "levels": [
+      "少",
+      "正常",
+      "多"
+    ],
     "outcomes": {
-      "0-0": { "emoji": "💀", "text": "没有光照也没有水，植物很快枯萎死亡。" },
-      "0-1": { "emoji": "🥀", "text": "没有光照，即使水分充足，植物也会变得虚弱发黄。" },
-      "0-2": { "emoji": "🥀", "text": "没有光照又浇水过多，根部被淹，植物无法存活。" },
-      "1-0": { "emoji": "🥀", "text": "有光照，但没有水，植物会干枯凋谢。" },
-      "1-1": { "emoji": "🌿", "text": "光照和水分均衡！植物健康茁壮地生长。" },
-      "1-2": { "emoji": "🥀", "text": "光照正常，但水太多会让根部腐烂。" },
-      "2-0": { "emoji": "🥀", "text": "光照很多但没有水，植物很快就会干枯。" },
-      "2-1": { "emoji": "🌻", "text": "光照充足、水量正常——植物茁壮成长并开花！" },
-      "2-2": { "emoji": "🌿", "text": "光照和水都很多，植物会很茂盛，但要小心不要浇水过量。" }
+      "0-0": {
+        "emoji": "💀",
+        "text": "没有光照也没有水，植物很快枯萎死亡。"
+      },
+      "0-1": {
+        "emoji": "🥀",
+        "text": "没有光照，即使水分充足，植物也会变得虚弱发黄。"
+      },
+      "0-2": {
+        "emoji": "🥀",
+        "text": "没有光照又浇水过多，根部被淹，植物无法存活。"
+      },
+      "1-0": {
+        "emoji": "🥀",
+        "text": "有光照，但没有水，植物会干枯凋谢。"
+      },
+      "1-1": {
+        "emoji": "🌿",
+        "text": "光照和水分均衡！植物健康茁壮地生长。"
+      },
+      "1-2": {
+        "emoji": "🥀",
+        "text": "光照正常，但水太多会让根部腐烂。"
+      },
+      "2-0": {
+        "emoji": "🥀",
+        "text": "光照很多但没有水，植物很快就会干枯。"
+      },
+      "2-1": {
+        "emoji": "🌻",
+        "text": "光照充足、水量正常——植物茁壮成长并开花！"
+      },
+      "2-2": {
+        "emoji": "🌿",
+        "text": "光照和水都很多，植物会很茂盛，但要小心不要浇水过量。"
+      }
     }
   },
   "gravity": {
@@ -24,9 +55,27 @@
     "question": "选择一个星球，看看重力如何改变你的跳跃！",
     "jumpLabel": "跳跃高度",
     "planets": [
-      { "id": "moon", "emoji": "🌕", "label": "月球", "jumpMultiplier": 6, "text": "月球上的重力弱得多，你能跳得比地球上高大约6倍！" },
-      { "id": "earth", "emoji": "🌍", "label": "地球", "jumpMultiplier": 1, "text": "在地球上，这是你正常的跳跃高度。" },
-      { "id": "jupiter", "emoji": "🟠", "label": "木星", "jumpMultiplier": 0.4, "text": "木星上的重力强得多，你的跳跃会低很多！" }
+      {
+        "id": "moon",
+        "emoji": "🌕",
+        "label": "月球",
+        "jumpMultiplier": 6,
+        "text": "月球上的重力弱得多，你能跳得比地球上高大约6倍！"
+      },
+      {
+        "id": "earth",
+        "emoji": "🌍",
+        "label": "地球",
+        "jumpMultiplier": 1,
+        "text": "在地球上，这是你正常的跳跃高度。"
+      },
+      {
+        "id": "jupiter",
+        "emoji": "🟠",
+        "label": "木星",
+        "jumpMultiplier": 0.4,
+        "text": "木星上的重力强得多，你的跳跃会低很多！"
+      }
     ]
   },
   "water": {
@@ -34,11 +83,24 @@
     "emoji": "💧",
     "question": "调节温度，观察水变化的状态！",
     "tempLabel": "温度",
-    "levels": ["非常冷", "室温", "非常热"],
+    "levels": [
+      "非常冷",
+      "室温",
+      "非常热"
+    ],
     "outcomes": {
-      "0": { "emoji": "🧊", "text": "水结冰变成固体：冰！" },
-      "1": { "emoji": "💧", "text": "在室温下，水是液体。" },
-      "2": { "emoji": "💨", "text": "水沸腾变成水蒸气：一种气体！" }
+      "0": {
+        "emoji": "🧊",
+        "text": "水结冰变成固体：冰！"
+      },
+      "1": {
+        "emoji": "💧",
+        "text": "在室温下，水是液体。"
+      },
+      "2": {
+        "emoji": "💨",
+        "text": "水沸腾变成水蒸气：一种气体！"
+      }
     }
   },
   "electric": {
@@ -47,14 +109,35 @@
     "question": "选择用什么连接电池和灯泡，看看灯泡会不会亮！",
     "middleLabel": "用什么连接电池和灯泡？",
     "options": [
-      { "id": "wire", "emoji": "🔌", "label": "完整电线" },
-      { "id": "broken", "emoji": "✂️", "label": "断开的电线" },
-      { "id": "none", "emoji": "❌", "label": "什么都没有" }
+      {
+        "id": "wire",
+        "emoji": "🔌",
+        "label": "完整电线"
+      },
+      {
+        "id": "broken",
+        "emoji": "✂️",
+        "label": "断开的电线"
+      },
+      {
+        "id": "none",
+        "emoji": "❌",
+        "label": "什么都没有"
+      }
     ],
     "outcomes": {
-      "wire": { "success": true, "text": "电路完整了！电流从电池流出，经过电线，点亮灯泡，再回到电池。" },
-      "broken": { "success": false, "text": "电线断了——中间有个缺口。电流无法通过这个缺口，所以灯泡不会亮。" },
-      "none": { "success": false, "text": "没有东西连接电池和灯泡，电路是断开的。没有闭合的路径，电流无法流动。" }
+      "wire": {
+        "success": true,
+        "text": "电路完整了！电流从电池流出，经过电线，点亮灯泡，再回到电池。"
+      },
+      "broken": {
+        "success": false,
+        "text": "电线断了——中间有个缺口。电流无法通过这个缺口，所以灯泡不会亮。"
+      },
+      "none": {
+        "success": false,
+        "text": "没有东西连接电池和灯泡，电路是断开的。没有闭合的路径，电流无法流动。"
+      }
     }
   },
   "light": {
@@ -65,15 +148,168 @@
     "sameWarning": "请选择两种不同的颜色！",
     "guessLabel": "你觉得会出现什么颜色？",
     "lights": [
-      { "id": "red", "emoji": "🔴", "label": "红色", "color": "#ff3b3b" },
-      { "id": "green", "emoji": "🟢", "label": "绿色", "color": "#2ecc71" },
-      { "id": "blue", "emoji": "🔵", "label": "蓝色", "color": "#3b82f6" }
+      {
+        "id": "red",
+        "emoji": "🔴",
+        "label": "红色",
+        "color": "#ff3b3b"
+      },
+      {
+        "id": "green",
+        "emoji": "🟢",
+        "label": "绿色",
+        "color": "#2ecc71"
+      },
+      {
+        "id": "blue",
+        "emoji": "🔵",
+        "label": "蓝色",
+        "color": "#3b82f6"
+      }
     ],
-    "distractor": { "label": "白色", "color": "#f4f4f4" },
+    "distractor": {
+      "label": "白色",
+      "color": "#f4f4f4"
+    },
     "combos": {
-      "red-green": { "resultLabel": "黄色", "color": "#ffe135", "text": "红光+绿光=黄光！混合光的颜色和混合颜料不一样——光是叠加的，会变得更亮。" },
-      "red-blue": { "resultLabel": "品红色", "color": "#ff3bd4", "text": "红光+蓝光=品红色！每种彩色光都携带着太阳白光的一部分。" },
-      "green-blue": { "resultLabel": "青色", "color": "#3bf0ff", "text": "绿光+蓝光=青色！把三种颜色（红、绿、蓝）都合在一起，就会得到白光。" }
+      "red-green": {
+        "resultLabel": "黄色",
+        "color": "#ffe135",
+        "text": "红光+绿光=黄光！混合光的颜色和混合颜料不一样——光是叠加的，会变得更亮。"
+      },
+      "red-blue": {
+        "resultLabel": "品红色",
+        "color": "#ff3bd4",
+        "text": "红光+蓝光=品红色！每种彩色光都携带着太阳白光的一部分。"
+      },
+      "green-blue": {
+        "resultLabel": "青色",
+        "color": "#3bf0ff",
+        "text": "绿光+蓝光=青色！把三种颜色（红、绿、蓝）都合在一起，就会得到白光。"
+      }
+    }
+  },
+  "sound": {
+    "title": "声音实验室",
+    "emoji": "👂",
+    "question": "调整距离，听听声音怎么变化！",
+    "tempLabel": "距离",
+    "levels": [
+      "近",
+      "中等距离",
+      "很远"
+    ],
+    "outcomes": {
+      "0": {
+        "emoji": "🔊",
+        "text": "靠近声源时，声音又大又清楚。"
+      },
+      "1": {
+        "emoji": "🔉",
+        "text": "中等距离时，声音已经变小了。"
+      },
+      "2": {
+        "emoji": "🔈",
+        "text": "距离很远时，几乎听不到声音——声音在空气中传播时会损失能量。"
+      }
+    }
+  },
+  "magnetism": {
+    "title": "磁铁实验室",
+    "emoji": "🧲",
+    "question": "把磁铁靠近不同的物体，看看哪些会被吸住！",
+    "itemsLabel": "选择一个物体",
+    "predictQuestion": "你觉得磁铁会吸住这个物体吗？",
+    "successEmoji": "🧲✨",
+    "failEmoji": "🚫",
+    "items": [
+      {
+        "id": "nail",
+        "emoji": "🔩",
+        "label": "铁钉"
+      },
+      {
+        "id": "spoon",
+        "emoji": "🥄",
+        "label": "塑料勺子"
+      },
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "木块"
+      },
+      {
+        "id": "can",
+        "emoji": "🥫",
+        "label": "铝罐"
+      }
+    ],
+    "outcomes": {
+      "nail": {
+        "success": true,
+        "text": "钉子是铁做的——磁铁会吸住铁和钢，所以它被吸住了！"
+      },
+      "spoon": {
+        "success": false,
+        "text": "塑料不会被磁铁吸住。勺子一动不动。"
+      },
+      "wood": {
+        "success": false,
+        "text": "木头不会被磁铁吸住。木块一动不动。"
+      },
+      "can": {
+        "success": false,
+        "text": "普通磁铁通常吸不住铝。罐子一动不动。"
+      }
+    }
+  },
+  "buoyancy": {
+    "title": "漂浮还是下沉？",
+    "emoji": "🛁",
+    "question": "选一个物体，看看它在水里是漂浮还是下沉！",
+    "itemsLabel": "选择一个物体",
+    "predictQuestion": "你觉得这个物体会漂浮吗？",
+    "successEmoji": "🫧",
+    "failEmoji": "⬇️",
+    "items": [
+      {
+        "id": "duck",
+        "emoji": "🦆",
+        "label": "橡皮鸭"
+      },
+      {
+        "id": "rock",
+        "emoji": "🪨",
+        "label": "石头"
+      },
+      {
+        "id": "spoon",
+        "emoji": "🥄",
+        "label": "金属勺子"
+      },
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "木块"
+      }
+    ],
+    "outcomes": {
+      "duck": {
+        "success": true,
+        "text": "橡皮鸭是空心的，里面充满空气——很容易浮在水面上！"
+      },
+      "rock": {
+        "success": false,
+        "text": "石头相对它的大小来说又密又重——直接沉到水底。"
+      },
+      "spoon": {
+        "success": false,
+        "text": "金属密度大——勺子很快就沉下去了。"
+      },
+      "wood": {
+        "success": true,
+        "text": "木头的密度比水小——浮在水面上！"
+      }
     }
   }
 }

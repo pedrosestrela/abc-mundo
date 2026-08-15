@@ -417,6 +417,84 @@ function WaterStateSimulator({ data, pair }) {
   );
 }
 
+function PredictSimulator({ data, pair, t }) {
+  const [itemId, setItemId] = useState(null);
+  const [prediction, setPrediction] = useState(null);
+  const outcome = itemId ? data.outcomes[itemId] : null;
+
+  function pickItem(id) {
+    setItemId(id);
+    setPrediction(null);
+  }
+
+  function reset() {
+    setItemId(null);
+    setPrediction(null);
+  }
+
+  return (
+    <div className="game-card science-card">
+      <div className="game-emoji">{data.emoji}</div>
+      <p className="mission-text">
+        {data.question}
+        <SpeakButton text={data.question} langCode={pair.mother} />
+      </p>
+      <p className="mission-badge science-topic-badge">🔬 {t("modules.scienceExperimentLabel")}</p>
+      <p className="mission-text">{data.itemsLabel}</p>
+      <div className="game-options">
+        {data.items.map((o) => (
+          <button
+            key={o.id}
+            type="button"
+            className={"big-btn game-option" + (itemId === o.id ? " done" : "")}
+            onClick={() => pickItem(o.id)}
+          >
+            {o.emoji} {o.label}
+          </button>
+        ))}
+      </div>
+
+      {itemId && !prediction && (
+        <div className="science-explanation">
+          <p className="mission-badge science-topic-badge">🧪 {t("modules.scienceHypothesisLabel")}</p>
+          <p className="mission-text">
+            {data.predictQuestion}
+            <SpeakButton text={data.predictQuestion} langCode={pair.mother} />
+          </p>
+          <div className="game-options">
+            <button type="button" className="big-btn game-option" onClick={() => setPrediction("yes")}>
+              👍 {t("modules.sciencePredictYes")}
+            </button>
+            <button type="button" className="big-btn game-option" onClick={() => setPrediction("no")}>
+              👎 {t("modules.sciencePredictNo")}
+            </button>
+          </div>
+        </div>
+      )}
+
+      {itemId && prediction && outcome && (
+        <div className="science-explanation">
+          <p className="mission-badge science-topic-badge">👀 {t("modules.scienceObservationLabel")}</p>
+          <div className="game-emoji">{outcome.success ? data.successEmoji : data.failEmoji}</div>
+          <p className="game-result">
+            {(prediction === "yes") === outcome.success
+              ? t("modules.sciencePredictionCorrect")
+              : t("modules.sciencePredictionWrong")}
+          </p>
+          <p className="mission-badge science-topic-badge">💡 {t("modules.scienceExplanationLabel")}</p>
+          <p className="game-result">{outcome.text}</p>
+          <SpeakButton text={outcome.text} langCode={pair.mother} />
+          <div>
+            <button type="button" className="big-btn" onClick={reset}>
+              🔁 {t("modules.scienceTryDifferent")}
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
 function EngineeringChallenge({ id, data, pair, profile, bumpVersion }) {
   const [pickedId, setPickedId] = useState(null);
   const outcome = pickedId ? data.outcomes[pickedId] : null;
@@ -616,13 +694,31 @@ export default function Science() {
               <LightSimulator data={simulators.light} pair={pair} t={t} />
             </>
           )}
+          {simulators.sound && (
+            <>
+              <h2 className="songs-heading">{simulators.sound.title}</h2>
+              <WaterStateSimulator data={simulators.sound} pair={pair} />
+            </>
+          )}
+          {simulators.magnetism && (
+            <>
+              <h2 className="songs-heading">{simulators.magnetism.title}</h2>
+              <PredictSimulator data={simulators.magnetism} pair={pair} t={t} />
+            </>
+          )}
+          {simulators.buoyancy && (
+            <>
+              <h2 className="songs-heading">{simulators.buoyancy.title}</h2>
+              <PredictSimulator data={simulators.buoyancy} pair={pair} t={t} />
+            </>
+          )}
         </>
       )}
 
       {tab === "eng" && (
         <>
           <p className="page-intro">{t("modules.scienceLabEngIntro")}</p>
-          {["bridge", "tower", "boat"].map((id) => (
+          {["bridge", "tower", "boat", "dam", "catapult", "crane"].map((id) => (
             <React.Fragment key={id}>
               <h2 className="songs-heading">{engineering[id].title}</h2>
               <EngineeringChallenge

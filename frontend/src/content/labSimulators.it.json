@@ -5,17 +5,48 @@
     "question": "Regola la luce e l'acqua e guarda cosa succede alla pianta!",
     "lightLabel": "Luce",
     "waterLabel": "Acqua",
-    "levels": ["Poca", "Normale", "Molta"],
+    "levels": [
+      "Poca",
+      "Normale",
+      "Molta"
+    ],
     "outcomes": {
-      "0-0": { "emoji": "💀", "text": "Senza luce e senza acqua, la pianta appassisce e muore velocemente." },
-      "0-1": { "emoji": "🥀", "text": "Senza luce, la pianta diventa debole e gialla anche con abbastanza acqua." },
-      "0-2": { "emoji": "🥀", "text": "Troppa acqua senza luce affoga le radici e la pianta non sopravvive." },
-      "1-0": { "emoji": "🥀", "text": "C'è luce, ma senza acqua la pianta si secca e appassisce." },
-      "1-1": { "emoji": "🌿", "text": "Luce e acqua equilibrate! La pianta cresce sana e verde." },
-      "1-2": { "emoji": "🥀", "text": "Luce normale ma troppa acqua fa marcire le radici." },
-      "2-0": { "emoji": "🥀", "text": "Molta luce senza acqua secca la pianta velocemente." },
-      "2-1": { "emoji": "🌻", "text": "Molta luce e acqua normale — la pianta cresce forte e fiorisce!" },
-      "2-2": { "emoji": "🌿", "text": "Molta luce e molta acqua mantengono la pianta rigogliosa, ma attenzione a non annaffiare troppo." }
+      "0-0": {
+        "emoji": "💀",
+        "text": "Senza luce e senza acqua, la pianta appassisce e muore velocemente."
+      },
+      "0-1": {
+        "emoji": "🥀",
+        "text": "Senza luce, la pianta diventa debole e gialla anche con abbastanza acqua."
+      },
+      "0-2": {
+        "emoji": "🥀",
+        "text": "Troppa acqua senza luce affoga le radici e la pianta non sopravvive."
+      },
+      "1-0": {
+        "emoji": "🥀",
+        "text": "C'è luce, ma senza acqua la pianta si secca e appassisce."
+      },
+      "1-1": {
+        "emoji": "🌿",
+        "text": "Luce e acqua equilibrate! La pianta cresce sana e verde."
+      },
+      "1-2": {
+        "emoji": "🥀",
+        "text": "Luce normale ma troppa acqua fa marcire le radici."
+      },
+      "2-0": {
+        "emoji": "🥀",
+        "text": "Molta luce senza acqua secca la pianta velocemente."
+      },
+      "2-1": {
+        "emoji": "🌻",
+        "text": "Molta luce e acqua normale — la pianta cresce forte e fiorisce!"
+      },
+      "2-2": {
+        "emoji": "🌿",
+        "text": "Molta luce e molta acqua mantengono la pianta rigogliosa, ma attenzione a non annaffiare troppo."
+      }
     }
   },
   "gravity": {
@@ -24,9 +55,27 @@
     "question": "Scegli un pianeta e guarda come la gravità cambia il tuo salto!",
     "jumpLabel": "Altezza del salto",
     "planets": [
-      { "id": "moon", "emoji": "🌕", "label": "Luna", "jumpMultiplier": 6, "text": "Sulla Luna la gravità è molto più debole. Salteresti circa 6 volte più in alto!" },
-      { "id": "earth", "emoji": "🌍", "label": "Terra", "jumpMultiplier": 1, "text": "Sulla Terra questo è il tuo salto normale." },
-      { "id": "jupiter", "emoji": "🟠", "label": "Giove", "jumpMultiplier": 0.4, "text": "Su Giove la gravità è molto più forte. Il tuo salto sarebbe molto più basso!" }
+      {
+        "id": "moon",
+        "emoji": "🌕",
+        "label": "Luna",
+        "jumpMultiplier": 6,
+        "text": "Sulla Luna la gravità è molto più debole. Salteresti circa 6 volte più in alto!"
+      },
+      {
+        "id": "earth",
+        "emoji": "🌍",
+        "label": "Terra",
+        "jumpMultiplier": 1,
+        "text": "Sulla Terra questo è il tuo salto normale."
+      },
+      {
+        "id": "jupiter",
+        "emoji": "🟠",
+        "label": "Giove",
+        "jumpMultiplier": 0.4,
+        "text": "Su Giove la gravità è molto più forte. Il tuo salto sarebbe molto più basso!"
+      }
     ]
   },
   "water": {
@@ -34,11 +83,24 @@
     "emoji": "💧",
     "question": "Muovi la temperatura e osserva l'acqua cambiare stato!",
     "tempLabel": "Temperatura",
-    "levels": ["Molto fredda", "Temperatura ambiente", "Molto calda"],
+    "levels": [
+      "Molto fredda",
+      "Temperatura ambiente",
+      "Molto calda"
+    ],
     "outcomes": {
-      "0": { "emoji": "🧊", "text": "L'acqua congela e diventa solida: ghiaccio!" },
-      "1": { "emoji": "💧", "text": "A temperatura ambiente l'acqua è liquida." },
-      "2": { "emoji": "💨", "text": "L'acqua bolle e si trasforma in vapore: un gas!" }
+      "0": {
+        "emoji": "🧊",
+        "text": "L'acqua congela e diventa solida: ghiaccio!"
+      },
+      "1": {
+        "emoji": "💧",
+        "text": "A temperatura ambiente l'acqua è liquida."
+      },
+      "2": {
+        "emoji": "💨",
+        "text": "L'acqua bolle e si trasforma in vapore: un gas!"
+      }
     }
   },
   "electric": {
@@ -47,14 +109,35 @@
     "question": "Scegli cosa collega la batteria alla lampadina e scopri se si accende!",
     "middleLabel": "Cosa collega la batteria alla lampadina?",
     "options": [
-      { "id": "wire", "emoji": "🔌", "label": "Filo intero" },
-      { "id": "broken", "emoji": "✂️", "label": "Filo tagliato" },
-      { "id": "none", "emoji": "❌", "label": "Niente" }
+      {
+        "id": "wire",
+        "emoji": "🔌",
+        "label": "Filo intero"
+      },
+      {
+        "id": "broken",
+        "emoji": "✂️",
+        "label": "Filo tagliato"
+      },
+      {
+        "id": "none",
+        "emoji": "❌",
+        "label": "Niente"
+      }
     ],
     "outcomes": {
-      "wire": { "success": true, "text": "Il circuito è completo! La corrente elettrica scorre dalla batteria, attraversa il filo, accende la lampadina e torna alla batteria." },
-      "broken": { "success": false, "text": "Il filo è tagliato — c'è uno spazio vuoto nel mezzo. La corrente elettrica non può attraversare quello spazio, quindi la lampadina non si accende." },
-      "none": { "success": false, "text": "Senza niente che colleghi la batteria alla lampadina, il circuito resta aperto. Senza un percorso chiuso, la corrente non può scorrere." }
+      "wire": {
+        "success": true,
+        "text": "Il circuito è completo! La corrente elettrica scorre dalla batteria, attraversa il filo, accende la lampadina e torna alla batteria."
+      },
+      "broken": {
+        "success": false,
+        "text": "Il filo è tagliato — c'è uno spazio vuoto nel mezzo. La corrente elettrica non può attraversare quello spazio, quindi la lampadina non si accende."
+      },
+      "none": {
+        "success": false,
+        "text": "Senza niente che colleghi la batteria alla lampadina, il circuito resta aperto. Senza un percorso chiuso, la corrente non può scorrere."
+      }
     }
   },
   "light": {
@@ -65,15 +148,168 @@
     "sameWarning": "Scegli due colori diversi!",
     "guessLabel": "Che colore pensi apparirà?",
     "lights": [
-      { "id": "red", "emoji": "🔴", "label": "Rosso", "color": "#ff3b3b" },
-      { "id": "green", "emoji": "🟢", "label": "Verde", "color": "#2ecc71" },
-      { "id": "blue", "emoji": "🔵", "label": "Blu", "color": "#3b82f6" }
+      {
+        "id": "red",
+        "emoji": "🔴",
+        "label": "Rosso",
+        "color": "#ff3b3b"
+      },
+      {
+        "id": "green",
+        "emoji": "🟢",
+        "label": "Verde",
+        "color": "#2ecc71"
+      },
+      {
+        "id": "blue",
+        "emoji": "🔵",
+        "label": "Blu",
+        "color": "#3b82f6"
+      }
     ],
-    "distractor": { "label": "Bianco", "color": "#f4f4f4" },
+    "distractor": {
+      "label": "Bianco",
+      "color": "#f4f4f4"
+    },
     "combos": {
-      "red-green": { "resultLabel": "Giallo", "color": "#ffe135", "text": "Luce rossa + luce verde = luce gialla! Mescolare colori di LUCE è diverso dal mescolare la pittura — la luce si somma e diventa più chiara." },
-      "red-blue": { "resultLabel": "Magenta", "color": "#ff3bd4", "text": "Luce rossa + luce blu = magenta! Ogni luce colorata trasporta una parte della luce bianca del sole." },
-      "green-blue": { "resultLabel": "Ciano", "color": "#3bf0ff", "text": "Luce verde + luce blu = ciano! Unisci tutte e tre (rosso, verde e blu) e ottieni luce bianca." }
+      "red-green": {
+        "resultLabel": "Giallo",
+        "color": "#ffe135",
+        "text": "Luce rossa + luce verde = luce gialla! Mescolare colori di LUCE è diverso dal mescolare la pittura — la luce si somma e diventa più chiara."
+      },
+      "red-blue": {
+        "resultLabel": "Magenta",
+        "color": "#ff3bd4",
+        "text": "Luce rossa + luce blu = magenta! Ogni luce colorata trasporta una parte della luce bianca del sole."
+      },
+      "green-blue": {
+        "resultLabel": "Ciano",
+        "color": "#3bf0ff",
+        "text": "Luce verde + luce blu = ciano! Unisci tutte e tre (rosso, verde e blu) e ottieni luce bianca."
+      }
+    }
+  },
+  "sound": {
+    "title": "Laboratorio del Suono",
+    "emoji": "👂",
+    "question": "Cambia la distanza e ascolta come cambia il suono!",
+    "tempLabel": "Distanza",
+    "levels": [
+      "Vicino",
+      "Distanza media",
+      "Molto lontano"
+    ],
+    "outcomes": {
+      "0": {
+        "emoji": "🔊",
+        "text": "Vicino alla fonte, il suono arriva forte e chiaro."
+      },
+      "1": {
+        "emoji": "🔉",
+        "text": "A una distanza media, il suono arriva già più basso."
+      },
+      "2": {
+        "emoji": "🔈",
+        "text": "Molto lontano, il suono si sente a malapena — perde forza attraversando l'aria."
+      }
+    }
+  },
+  "magnetism": {
+    "title": "Laboratorio del Magnete",
+    "emoji": "🧲",
+    "question": "Avvicina il magnete a diversi oggetti e scopri quali vengono attratti!",
+    "itemsLabel": "Scegli un oggetto",
+    "predictQuestion": "Pensi che il magnete attirerà questo oggetto?",
+    "successEmoji": "🧲✨",
+    "failEmoji": "🚫",
+    "items": [
+      {
+        "id": "nail",
+        "emoji": "🔩",
+        "label": "Chiodo di ferro"
+      },
+      {
+        "id": "spoon",
+        "emoji": "🥄",
+        "label": "Cucchiaio di plastica"
+      },
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Blocco di legno"
+      },
+      {
+        "id": "can",
+        "emoji": "🥫",
+        "label": "Lattina di alluminio"
+      }
+    ],
+    "outcomes": {
+      "nail": {
+        "success": true,
+        "text": "Il chiodo è di ferro — i magneti attraggono il ferro e l'acciaio, quindi si attacca al magnete!"
+      },
+      "spoon": {
+        "success": false,
+        "text": "La plastica non è attratta dai magneti. Il cucchiaio resta fermo."
+      },
+      "wood": {
+        "success": false,
+        "text": "Il legno non è attratto dai magneti. Il blocco non si muove."
+      },
+      "can": {
+        "success": false,
+        "text": "L'alluminio di solito non è attratto dai magneti comuni. La lattina resta ferma."
+      }
+    }
+  },
+  "buoyancy": {
+    "title": "Galleggia o Affonda?",
+    "emoji": "🛁",
+    "question": "Scegli un oggetto e scopri se galleggia o affonda nell'acqua!",
+    "itemsLabel": "Scegli un oggetto",
+    "predictQuestion": "Pensi che questo oggetto galleggerà?",
+    "successEmoji": "🫧",
+    "failEmoji": "⬇️",
+    "items": [
+      {
+        "id": "duck",
+        "emoji": "🦆",
+        "label": "Paperella di gomma"
+      },
+      {
+        "id": "rock",
+        "emoji": "🪨",
+        "label": "Roccia"
+      },
+      {
+        "id": "spoon",
+        "emoji": "🥄",
+        "label": "Cucchiaio di metallo"
+      },
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Blocco di legno"
+      }
+    ],
+    "outcomes": {
+      "duck": {
+        "success": true,
+        "text": "La paperella di gomma è cava e piena d'aria — galleggia facilmente in superficie!"
+      },
+      "rock": {
+        "success": false,
+        "text": "La roccia è densa e pesante per le sue dimensioni — affonda subito sul fondo."
+      },
+      "spoon": {
+        "success": false,
+        "text": "Il metallo è denso — il cucchiaio affonda rapidamente."
+      },
+      "wood": {
+        "success": true,
+        "text": "Il legno è meno denso dell'acqua — galleggia in superficie!"
+      }
     }
   }
 }
