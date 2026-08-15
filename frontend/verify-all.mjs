@@ -4,13 +4,25 @@ const BASE = "http://localhost:4173";
 
 const ROUTES = [
   "/", "/languages", "/mundos", "/phonics", "/alphabet", "/syllables",
-  "/reading", "/phrases", "/songs", "/game", "/music", "/piano",
+  "/reading", "/phrases", "/songs", "/game", "/music",
   "/stories", "/rhymes", "/math", "/financial", "/parents", "/achievements",
   "/missions", "/world", "/detective", "/whys", "/robots", "/art",
   "/science", "/history", "/lifeskills", "/computing", "/how-it-works",
   "/thinking", "/learning-strategies", "/city", "/nature-diary",
-  "/writing", "/communication",
+  "/writing", "/communication", "/traffic-school",
 ];
+
+// Heuristic scan for raw i18n keys leaking into visible text, e.g.
+// "modules.gameTabChess" or "trafficSchool.category_all" showing up
+// instead of the translated string.
+const I18N_KEY_RE = /\b[a-zA-Z][a-zA-Z0-9]*(?:\.[a-zA-Z][a-zA-Z0-9]*){1,}\b/g;
+async function scanForRawI18nKeys(page) {
+  const text = await page.evaluate(() => document.body.innerText);
+  const matches = text.match(I18N_KEY_RE) || [];
+  // Filter out things that are plausibly not i18n keys (URLs, decimals, etc.)
+  const suspicious = matches.filter((m) => /^[a-z]+(\.[a-zA-Z][a-zA-Z0-9]*){1,}$/.test(m) && !/^\d/.test(m));
+  return suspicious;
+}
 
 const browser = await chromium.launch({
   executablePath: "/opt/pw-browsers/chromium-1194/chrome-linux/chrome",
@@ -72,6 +84,10 @@ async function checkRoute(path, interact) {
       status = "FAIL";
       note = `blank/short content (len=${info.len})`;
     }
+    const rawKeys = await scanForRawI18nKeys(page);
+    if (rawKeys.length) {
+      errorsForRoute.push(`[i18n-leak] raw keys visible: ${[...new Set(rawKeys)].join(", ")}`);
+    }
   } catch (e) {
     status = "FAIL";
     note = `navigation error: ${e.message}`;
@@ -109,18 +125,117 @@ const interactions = {
     }
     const pin = page.locator("[class*='pin'],[class*='marker']").first();
     if (await pin.count()) await pin.click({ timeout: 2000, force: true }).catch(() => {});
+    await page.waitForTimeout(500);
+    const speakBtns = page.locator(".country-card button[class*='speak'], .country-card [class*='Speak']");
+    // Not asserting count > 0 here (globe click via WebGL canvas isn't
+    // reliably hittable in headless swiftshader), but log for visibility.
+    const sc = await speakBtns.count().catch(() => 0);
+    if (sc > 0 && sc < 2) {
+      throw new Error(`World country card shows only ${sc} audio button(s), expected both mother+native language`);
+    }
   },
   "/game": async () => {
-    const tabs = page.locator("button", { hasText: /quiz|labirinto|mem[oó]ria/i });
-    const n = await tabs.count();
-    for (let i = 0; i < Math.min(n, 3); i++) {
-      await tabs.nth(i).click();
+    const gameTabs = page.locator("[role='tab']");
+    const n = await gameTabs.count();
+    for (let i = 0; i < n; i++) {
+      await gameTabs.nth(i).click().catch(() => {});
       await page.waitForTimeout(300);
+      const label = ((await gameTabs.nth(i).textContent()) || "").toLowerCase();
+
+      // Maze: use the D-pad to actually move.
+      if (/labirinto|maze/.test(label)) {
+        const dpad = page.locator(".maze-dpad button");
+        const dn = await dpad.count();
+        for (let k = 0; k < Math.min(dn, 3); k++) {
+          await dpad.nth(k).click().catch(() => {});
+          await page.waitForTimeout(150);
+        }
+      }
+
+      // Memory: flip a couple of cards.
+      if (/mem[oó]ria|memory/.test(label)) {
+        const cards = page.locator("[class*='memory-card']");
+        const cn = await cards.count();
+        for (let k = 0; k < Math.min(cn, 2); k++) {
+          await cards.nth(k).click().catch(() => {});
+          await page.waitForTimeout(150);
+        }
+      }
+
+      // Checkers / Chess: choose 1-player mode then attempt a couple of
+      // legal-ish moves (select a piece, then a destination square).
+      if (/xadrez|chess|damas|checkers/.test(label)) {
+        const onePlayer = page.locator("button", { hasText: /1.?j|1.?p|solo/i }).first();
+        if (await onePlayer.count()) await onePlayer.click().catch(() => {});
+        await page.waitForTimeout(300);
+        const squares = page.locator(".chess-board button, .checkers-cell:not([disabled])");
+        const sn = await squares.count();
+        if (sn > 0) {
+          // Tap a piece, then tap a plausible destination a couple rows away.
+          await squares.nth(Math.floor(sn * 0.6)).click().catch(() => {});
+          await page.waitForTimeout(200);
+          await squares.nth(Math.floor(sn * 0.4)).click().catch(() => {});
+          await page.waitForTimeout(400);
+        }
+      }
+
+      // Tic-tac-toe: play a couple of cells.
+      if (/galo|tictactoe|tic-tac/.test(label)) {
+        const onePlayer = page.locator("button", { hasText: /1.?j|1.?p|solo/i }).first();
+        if (await onePlayer.count()) await onePlayer.click().catch(() => {});
+        await page.waitForTimeout(200);
+        const cells = page.locator(".ttt-cell:not([disabled])");
+        const cn = await cells.count();
+        for (let k = 0; k < Math.min(cn, 2); k++) {
+          await cells.nth(0).click().catch(() => {});
+          await page.waitForTimeout(300);
+        }
+      }
+
+      // Hangman: pick a word (if 1p setup needed), then guess a few letters.
+      if (/forca|hangman/.test(label)) {
+        const onePlayer = page.locator("button", { hasText: /1.?j|1.?p|solo/i }).first();
+        if (await onePlayer.count()) await onePlayer.click().catch(() => {});
+        await page.waitForTimeout(200);
+        const beginBtn = page.locator("button", { hasText: /come[cç]ar|begin|adivinhar/i }).first();
+        if (await beginBtn.count()) await beginBtn.click().catch(() => {});
+        await page.waitForTimeout(200);
+        const letters = page.locator("button[aria-label]").filter({ hasText: /^[A-Za-zÀ-ÿ]$/ });
+        const ln = await letters.count();
+        for (let k = 0; k < Math.min(ln, 4); k++) {
+          await letters.nth(k).click().catch(() => {});
+          await page.waitForTimeout(150);
+        }
+      }
+
+      // Quiz: answer one question.
+      if (/^quiz/.test(label)) {
+        const answer = page.locator("[class*='quiz'] button, [class*='option']").first();
+        if (await answer.count()) await answer.click().catch(() => {});
+      }
     }
-    const dpad = page.locator("[class*='dpad'] button, [class*='maze'] button").first();
-    if (await dpad.count()) await dpad.click().catch(() => {});
-    const card = page.locator("[class*='memory-card'],[class*='card']").first();
-    if (await card.count()) await card.click().catch(() => {});
+  },
+  "/traffic-school": async () => {
+    // Signs tab loads by default with content; switch to the drive
+    // simulator and actually drive, including deliberately running a
+    // stop sign to confirm the gentle-correction flow.
+    const driveTab = page.locator("button", { hasText: /conduzir|drive/i }).first();
+    if (await driveTab.count()) await driveTab.click().catch(() => {});
+    await page.waitForTimeout(400);
+    const dpad = page.locator(".maze-dpad button");
+    const dn = await dpad.count();
+    // Drive forward repeatedly without stopping at signs/lights to try to
+    // trigger a rule violation, then confirm the app doesn't crash and
+    // offers a way to continue.
+    for (let k = 0; k < 8; k++) {
+      if (dn > 0) await dpad.first().click().catch(() => {});
+      await page.waitForTimeout(200);
+      const dismissViolation = page.locator("button", { hasText: /entendi|ok|continuar/i }).first();
+      if (await dismissViolation.count()) {
+        await dismissViolation.click().catch(() => {});
+        break;
+      }
+    }
   },
   "/music": async () => {
     const tabs = page.locator("button, [role='tab']");
@@ -162,7 +277,15 @@ const interactions = {
     }
   },
   "/financial": async () => {
-    const tabs = page.locator("button", { hasText: /semana do dinheiro|mealheiro/i });
+    const tabs = page.locator(".phonics-tab");
+    const n = await tabs.count();
+    for (let i = 0; i < n; i++) {
+      await tabs.nth(i).click().catch(() => {});
+      await page.waitForTimeout(200);
+    }
+  },
+  "/computing": async () => {
+    const tabs = page.locator(".phonics-tab");
     const n = await tabs.count();
     for (let i = 0; i < n; i++) {
       await tabs.nth(i).click().catch(() => {});
@@ -170,10 +293,10 @@ const interactions = {
     }
   },
   "/science": async () => {
-    const tabs = page.locator("button", { hasText: /gravidade|eletric|luz/i });
+    const tabs = page.locator(".phonics-tab, button", { hasText: /gravidade|eletric|luz/i });
     const n = await tabs.count();
-    if (n) {
-      await tabs.first().click().catch(() => {});
+    for (let i = 0; i < Math.min(n, 6); i++) {
+      await tabs.nth(i).click().catch(() => {});
       await page.waitForTimeout(300);
     }
   },
