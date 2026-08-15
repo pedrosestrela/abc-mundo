@@ -9,6 +9,8 @@ import MazeGame from "./MazeGame.jsx";
 import MemoryGame from "./MemoryGame.jsx";
 import CheckersGame from "./CheckersGame.jsx";
 import ChessGame from "./ChessGame.jsx";
+import TicTacToeGame from "./TicTacToeGame.jsx";
+import HangmanGame from "./HangmanGame.jsx";
 
 // Tier -> { poolSize: how many words to draw questions from, rounds: quiz length }
 const TIER_CONFIG = {
@@ -125,6 +127,8 @@ const TABS = [
   { key: "memory", emoji: "🃏", titleKey: "gameTabMemory", helpKey: "memoryHelp" },
   { key: "checkers", emoji: "⚫", titleKey: "gameTabCheckers", helpKey: "checkersHelp" },
   { key: "chess", emoji: "♟️", titleKey: "gameTabChess", helpKey: "chessHelp" },
+  { key: "tictactoe", emoji: "❌", titleKey: "gameTabTicTacToe", helpKey: "tttHelp" },
+  { key: "hangman", emoji: "🎈", titleKey: "gameTabHangman", helpKey: "hangmanHelp" },
 ];
 
 export default function Game() {
@@ -168,6 +172,8 @@ export default function Game() {
       {tab === "memory" && <MemoryGame key="memory" profileName={profile?.name} />}
       {tab === "checkers" && <CheckersGame key="checkers" profileName={profile?.name} />}
       {tab === "chess" && <ChessGame key="chess" profileName={profile?.name} />}
+      {tab === "tictactoe" && <TicTacToeGame key="tictactoe" profileName={profile?.name} />}
+      {tab === "hangman" && <HangmanGame key="hangman" pair={pair} profileName={profile?.name} />}
     </div>
   );
 }

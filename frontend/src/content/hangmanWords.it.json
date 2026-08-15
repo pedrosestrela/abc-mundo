@@ -1,0 +1,42 @@
+{
+  "animais": [
+    { "word": "GATTO", "emoji": "🐱" },
+    { "word": "CANE", "emoji": "🐶" },
+    { "word": "ANATRA", "emoji": "🦆" },
+    { "word": "PESCE", "emoji": "🐟" },
+    { "word": "CONIGLIO", "emoji": "🐰" },
+    { "word": "GALLINA", "emoji": "🐔" }
+  ],
+  "casa": [
+    { "word": "TAVOLO", "emoji": "🪑" },
+    { "word": "SEDIA", "emoji": "🪑" },
+    { "word": "PORTA", "emoji": "🚪" },
+    { "word": "FINESTRA", "emoji": "🪟" },
+    { "word": "LETTO", "emoji": "🛏️" },
+    { "word": "TAZZA", "emoji": "🥤" }
+  ],
+  "escola": [
+    { "word": "LIBRO", "emoji": "📖" },
+    { "word": "MATITA", "emoji": "✏️" },
+    { "word": "PENNA", "emoji": "🖊️" },
+    { "word": "ZAINO", "emoji": "🎒" },
+    { "word": "RIGA", "emoji": "📏" },
+    { "word": "LAVAGNA", "emoji": "🖼️" }
+  ],
+  "natureza": [
+    { "word": "SOLE", "emoji": "☀️" },
+    { "word": "LUNA", "emoji": "🌙" },
+    { "word": "ALBERO", "emoji": "🌳" },
+    { "word": "FIORE", "emoji": "🌸" },
+    { "word": "FIUME", "emoji": "🏞️" },
+    { "word": "MONTAGNA", "emoji": "⛰️" }
+  ],
+  "comida": [
+    { "word": "PANE", "emoji": "🍞" },
+    { "word": "LATTE", "emoji": "🥛" },
+    { "word": "MELA", "emoji": "🍎" },
+    { "word": "BANANA", "emoji": "🍌" },
+    { "word": "FORMAGGIO", "emoji": "🧀" },
+    { "word": "ZUPPA", "emoji": "🍲" }
+  ]
+}

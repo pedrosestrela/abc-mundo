@@ -63,6 +63,14 @@ import transportScenariosZh from "./transportScenarios.zh.json";
 import transportScenariosEs from "./transportScenarios.es.json";
 import transportScenariosIt from "./transportScenarios.it.json";
 
+import hangmanWordsPt from "./hangmanWords.pt.json";
+import hangmanWordsEn from "./hangmanWords.en.json";
+import hangmanWordsDe from "./hangmanWords.de.json";
+import hangmanWordsFr from "./hangmanWords.fr.json";
+import hangmanWordsZh from "./hangmanWords.zh.json";
+import hangmanWordsEs from "./hangmanWords.es.json";
+import hangmanWordsIt from "./hangmanWords.it.json";
+
 import missionsPt from "./missions.pt.json";
 import missionsEn from "./missions.en.json";
 import missionsDe from "./missions.de.json";
@@ -318,6 +326,7 @@ const HOUSE_SYSTEMS = { pt: houseSystemsPt, en: houseSystemsEn, de: houseSystems
 const CITY_SYSTEMS = { pt: citySystemsPt, en: citySystemsEn, de: citySystemsDe, fr: citySystemsFr, zh: citySystemsZh, es: citySystemsEs, it: citySystemsIt };
 const PACKING_CHALLENGES = { pt: packingChallengesPt, en: packingChallengesEn, de: packingChallengesDe, fr: packingChallengesFr, zh: packingChallengesZh, es: packingChallengesEs, it: packingChallengesIt };
 const TRANSPORT_SCENARIOS = { pt: transportScenariosPt, en: transportScenariosEn, de: transportScenariosDe, fr: transportScenariosFr, zh: transportScenariosZh, es: transportScenariosEs, it: transportScenariosIt };
+const HANGMAN_WORDS = { pt: hangmanWordsPt, en: hangmanWordsEn, de: hangmanWordsDe, fr: hangmanWordsFr, zh: hangmanWordsZh, es: hangmanWordsEs, it: hangmanWordsIt };
 
 // Normalizes zh's different shape ({hanzi,...}) to the same shape used by
 // the Latin-alphabet languages ({letter, lower, upper, exampleWord, emoji}).
@@ -489,6 +498,10 @@ export function getRhymes(langCode) {
 
 export function getPackingChallenges(langCode) {
   return PACKING_CHALLENGES[langCode] || PACKING_CHALLENGES.pt;
+}
+
+export function getHangmanWords(langCode) {
+  return HANGMAN_WORDS[langCode] || HANGMAN_WORDS.pt;
 }
 
 export function getTransportScenarios(langCode) {
