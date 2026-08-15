@@ -130,6 +130,7 @@ const GROUPS = [
       { to: "/world", emoji: "🗺️", nav: "world", sub: "sub_world" },
       { to: "/history", emoji: "🏰", nav: "history", sub: "sub_history" },
       { to: "/science", emoji: "🔬", nav: "science", sub: "sub_science" },
+      { to: "/human-evolution", emoji: "🧬", nav: "humanEvolution", sub: "sub_humanEvolution" },
       { to: "/city", emoji: "🏙️", nav: "city", sub: "sub_city" },
       { to: "/nature-diary", emoji: "📔", nav: "natureDiary", sub: "sub_natureDiary" },
     ],

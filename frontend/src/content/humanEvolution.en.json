@@ -1,0 +1,101 @@
+[
+  {
+    "id": "ancestral-comum",
+    "period": "~7 million years ago",
+    "title": "A Common Ancestor",
+    "emoji": "🌳",
+    "brainSizeCm3": 350,
+    "heightCm": 120,
+    "description": "Many millions of years ago, primates lived in Africa who were the common ancestors of both modern humans and modern chimpanzees. Over time, different groups slowly split apart and changed — that is what we call evolution.",
+    "keyDevelopment": "Life in trees, in groups, in the forests of Africa.",
+    "funFact": "Humans and chimpanzees share a common ancestor, but that doesn't mean we descend from chimpanzees — we're more like very distant cousins!"
+  },
+  {
+    "id": "australopithecus",
+    "period": "~4 million years ago",
+    "title": "Australopithecus (like \"Lucy\")",
+    "emoji": "🚶",
+    "brainSizeCm3": 450,
+    "heightCm": 110,
+    "description": "Australopithecus already walked upright on two legs, though it still spent time in trees. One of the most famous skeletons of this group is nicknamed \"Lucy\" and was found in Ethiopia, Africa.",
+    "keyDevelopment": "Walking upright on two legs (bipedalism).",
+    "funFact": "Walking on two legs freed up the hands — that would later become very important for using tools!"
+  },
+  {
+    "id": "homo-habilis",
+    "period": "~2.4 million years ago",
+    "title": "Homo habilis, the \"Handy Man\"",
+    "emoji": "🪨",
+    "brainSizeCm3": 610,
+    "heightCm": 130,
+    "description": "Homo habilis was one of the first to deliberately make stone tools, chipping stones to create sharp edges. Its brain was starting to grow larger than that of its ancestors.",
+    "keyDevelopment": "Making and using simple stone tools.",
+    "funFact": "The name \"habilis\" means \"handy\" or \"skillful\" — it was given because of its stone tools!"
+  },
+  {
+    "id": "homo-erectus",
+    "period": "~1.9 million years ago",
+    "title": "Homo erectus, the Great Traveler",
+    "emoji": "🔥",
+    "brainSizeCm3": 900,
+    "heightCm": 165,
+    "description": "Homo erectus had a body quite similar to ours and was the first to leave Africa, spreading into Asia and Europe. It also learned to control fire, which changed everything: it gave warmth, light, and protection from animals.",
+    "keyDevelopment": "Controlling fire and migrating out of Africa.",
+    "funFact": "Cooking food with fire helped the body absorb more energy — that may be part of why the brain could grow even bigger!"
+  },
+  {
+    "id": "neandertais",
+    "period": "~400,000 to 40,000 years ago",
+    "title": "Neanderthals, Close Cousins",
+    "emoji": "🦴",
+    "brainSizeCm3": 1500,
+    "heightCm": 165,
+    "description": "Neanderthals lived in Europe and Asia at the same time as the first Homo sapiens, and the two groups even interbred at times. Neanderthals are their own branch of our family tree — close relatives, but not our direct ancestors. They were strong and intelligent, cared for the sick, and buried their dead.",
+    "keyDevelopment": "Group living, caring for one another, and surviving cold climates.",
+    "funFact": "Many people today carry a small amount of Neanderthal DNA, inherited from when the two groups interbred!"
+  },
+  {
+    "id": "homo-sapiens",
+    "period": "~300,000 years ago",
+    "title": "Homo sapiens, Us!",
+    "emoji": "🧠",
+    "brainSizeCm3": 1350,
+    "heightCm": 170,
+    "description": "Homo sapiens — our own species — first appeared in Africa. We had increasingly rich language, the ability to plan ahead, cooperate in large groups, and imagine things that didn't yet exist.",
+    "keyDevelopment": "Complex language and symbolic thinking.",
+    "funFact": "\"Homo sapiens\" means \"wise man\" in Latin!"
+  },
+  {
+    "id": "arte-e-cultura",
+    "period": "~70,000 to 20,000 years ago",
+    "title": "Art in Caves",
+    "emoji": "🎨",
+    "brainSizeCm3": 1350,
+    "heightCm": 170,
+    "description": "Early humans began painting animals and handprints on cave walls, making shell necklaces, and carving small sculptures. This shows imagination, culture, and a desire to tell stories and pass on ideas.",
+    "keyDevelopment": "Art, symbols, and cultural transmission.",
+    "funFact": "In Portugal, in the Côa Valley, there are outdoor rock engravings of animals made more than 20,000 years ago!"
+  },
+  {
+    "id": "agricultura",
+    "period": "~12,000 years ago",
+    "title": "The Big Change: Farming",
+    "emoji": "🌾",
+    "brainSizeCm3": 1350,
+    "heightCm": 168,
+    "description": "For hundreds of thousands of years, humans hunted and gathered plants, moving from place to place. About 12,000 years ago, people began planting seeds and raising animals, and started living in fixed villages.",
+    "keyDevelopment": "Farming, raising animals, and village life.",
+    "funFact": "Farming is what made it possible to build the first towns, and later, the first cities!"
+  },
+  {
+    "id": "humanos-hoje",
+    "period": "Today",
+    "title": "Humans Today",
+    "emoji": "🌍",
+    "brainSizeCm3": 1350,
+    "heightCm": 170,
+    "description": "Today we are all one species, Homo sapiens, spread across the whole planet. We keep changing — not so much in our bodies, but in our ideas, science, and culture, which we inherit and build together, generation after generation.",
+    "keyDevelopment": "Science, technology, and shared culture worldwide.",
+    "funFact": "Evolution hasn't stopped — it keeps happening, very slowly, in every living thing, including us!"
+  }
+]

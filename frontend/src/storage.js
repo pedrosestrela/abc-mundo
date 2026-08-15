@@ -1045,3 +1045,41 @@ export function exploreTrafficSign(profileName, signId) {
   saveExploredTrafficSigns(all);
   return all[name];
 }
+
+// --- A Evolução do Homem: visited timeline stages ---
+// Tracks which human-evolution timeline stage ids the child has tapped/opened,
+// mirroring the exploreComputingCard/getExploredComputing pair shape exactly.
+
+const VISITED_EVOLUTION_STAGES_KEY = "abcmundo.visitedEvolutionStages";
+
+function loadVisitedEvolutionStages() {
+  try {
+    const raw = localStorage.getItem(VISITED_EVOLUTION_STAGES_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveVisitedEvolutionStages(all) {
+  try {
+    localStorage.setItem(VISITED_EVOLUTION_STAGES_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getVisitedEvolutionStages(profileName) {
+  const all = loadVisitedEvolutionStages();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function visitEvolutionStage(profileName, stageId) {
+  const name = profileName || "Explorer";
+  const all = loadVisitedEvolutionStages();
+  const visited = new Set(all[name] || []);
+  visited.add(stageId);
+  all[name] = Array.from(visited);
+  saveVisitedEvolutionStages(all);
+  return all[name];
+}

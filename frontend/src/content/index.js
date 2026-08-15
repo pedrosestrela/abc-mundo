@@ -135,6 +135,14 @@ import scienceZh from "./science.zh.json";
 import scienceEs from "./science.es.json";
 import scienceIt from "./science.it.json";
 
+import humanEvolutionPt from "./humanEvolution.pt.json";
+import humanEvolutionEn from "./humanEvolution.en.json";
+import humanEvolutionDe from "./humanEvolution.de.json";
+import humanEvolutionFr from "./humanEvolution.fr.json";
+import humanEvolutionZh from "./humanEvolution.zh.json";
+import humanEvolutionEs from "./humanEvolution.es.json";
+import humanEvolutionIt from "./humanEvolution.it.json";
+
 import labSimulatorsPt from "./labSimulators.pt.json";
 import labSimulatorsEn from "./labSimulators.en.json";
 import labSimulatorsDe from "./labSimulators.de.json";
@@ -313,6 +321,16 @@ const ART_PROMPTS = { pt: artPromptsPt, en: artPromptsEn, de: artPromptsDe, fr: 
 const LAB_SIMULATORS = { pt: labSimulatorsPt, en: labSimulatorsEn, de: labSimulatorsDe, fr: labSimulatorsFr, zh: labSimulatorsZh, es: labSimulatorsEs, it: labSimulatorsIt };
 const LAB_ENGINEERING = { pt: labEngineeringPt, en: labEngineeringEn, de: labEngineeringDe, fr: labEngineeringFr, zh: labEngineeringZh, es: labEngineeringEs, it: labEngineeringIt };
 const SCIENCE = { pt: sciencePt, en: scienceEn, de: scienceDe, fr: scienceFr, zh: scienceZh, es: scienceEs, it: scienceIt };
+
+const HUMAN_EVOLUTION = {
+  pt: humanEvolutionPt,
+  en: humanEvolutionEn,
+  de: humanEvolutionDe,
+  fr: humanEvolutionFr,
+  zh: humanEvolutionZh,
+  es: humanEvolutionEs,
+  it: humanEvolutionIt,
+};
 const LIFE_SKILLS = { pt: lifeSkillsPt, en: lifeSkillsEn, de: lifeSkillsDe, fr: lifeSkillsFr, zh: lifeSkillsZh, es: lifeSkillsEs, it: lifeSkillsIt };
 const COMPUTING = { pt: computingPt, en: computingEn, de: computingDe, fr: computingFr, zh: computingZh, es: computingEs, it: computingIt };
 const COMPUTING_SAFETY = { pt: computingSafetyPt, en: computingSafetyEn, de: computingSafetyDe, fr: computingSafetyFr, zh: computingSafetyZh, es: computingSafetyEs, it: computingSafetyIt };
@@ -414,6 +432,10 @@ export function getArtPrompts(langCode) {
 
 export function getScience(langCode) {
   return SCIENCE[langCode] || [];
+}
+
+export function getHumanEvolution(langCode) {
+  return HUMAN_EVOLUTION[langCode] || HUMAN_EVOLUTION.pt;
 }
 
 export function getLabSimulators(langCode) {

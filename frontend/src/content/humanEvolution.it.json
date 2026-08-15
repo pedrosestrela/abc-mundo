@@ -1,0 +1,101 @@
+[
+  {
+    "id": "ancestral-comum",
+    "period": "~7 milioni di anni fa",
+    "title": "Un antenato comune",
+    "emoji": "🌳",
+    "brainSizeCm3": 350,
+    "heightCm": 120,
+    "description": "Molti milioni di anni fa, in Africa vivevano primati che erano gli antenati comuni degli esseri umani e degli scimpanzé di oggi. Con il tempo, diversi gruppi si sono separati e sono cambiati molto lentamente — questo si chiama evoluzione.",
+    "keyDevelopment": "Vita sugli alberi, in gruppo, nelle foreste dell'Africa.",
+    "funFact": "Umani e scimpanzé condividono un antenato comune, ma questo non significa che discendiamo dagli scimpanzé — siamo più simili a cugini molto lontani!"
+  },
+  {
+    "id": "australopithecus",
+    "period": "~4 milioni di anni fa",
+    "title": "Australopithecus (come \"Lucy\")",
+    "emoji": "🚶",
+    "brainSizeCm3": 450,
+    "heightCm": 110,
+    "description": "L'Australopithecus camminava già eretto su due gambe, anche se passava ancora tempo sugli alberi. Uno degli scheletri più famosi di questo gruppo si chiama \"Lucy\" ed è stato trovato in Etiopia, in Africa.",
+    "keyDevelopment": "Camminare eretti su due gambe (bipedismo).",
+    "funFact": "Camminare su due gambe ha liberato le mani — sarebbe stato molto importante più avanti per usare gli strumenti!"
+  },
+  {
+    "id": "homo-habilis",
+    "period": "~2,4 milioni di anni fa",
+    "title": "Homo habilis, l'\"uomo abile\"",
+    "emoji": "🪨",
+    "brainSizeCm3": 610,
+    "heightCm": 130,
+    "description": "L'Homo habilis fu uno dei primi a fabbricare intenzionalmente strumenti di pietra, scheggiando le pietre per creare bordi taglienti. Il suo cervello iniziava a diventare più grande di quello dei suoi antenati.",
+    "keyDevelopment": "Fabbricazione e uso di semplici strumenti di pietra.",
+    "funFact": "Il nome \"habilis\" significa \"abile\" — gli fu dato proprio per i suoi strumenti di pietra!"
+  },
+  {
+    "id": "homo-erectus",
+    "period": "~1,9 milioni di anni fa",
+    "title": "Homo erectus, il grande viaggiatore",
+    "emoji": "🔥",
+    "brainSizeCm3": 900,
+    "heightCm": 165,
+    "description": "L'Homo erectus aveva un corpo piuttosto simile al nostro e fu il primo a lasciare l'Africa, diffondendosi in Asia e in Europa. Imparò anche a controllare il fuoco, il che cambiò tutto: dava calore, luce e protezione dagli animali.",
+    "keyDevelopment": "Controllo del fuoco e migrazione fuori dall'Africa.",
+    "funFact": "Cucinare il cibo con il fuoco aiutò il corpo a ricavare più energia — forse anche per questo il cervello poté crescere ancora di più!"
+  },
+  {
+    "id": "neandertais",
+    "period": "da ~400.000 a 40.000 anni fa",
+    "title": "I Neanderthal, cugini stretti",
+    "emoji": "🦴",
+    "brainSizeCm3": 1500,
+    "heightCm": 165,
+    "description": "I Neanderthal vissero in Europa e in Asia nello stesso periodo dei primi Homo sapiens, e i due gruppi arrivarono persino a incrociarsi. I Neanderthal sono un ramo a sé del nostro albero genealogico — parenti stretti, ma non nostri antenati diretti. Erano forti e intelligenti, si prendevano cura dei malati e seppellivano i loro morti.",
+    "keyDevelopment": "Vita di gruppo, cura reciproca e sopravvivenza in climi freddi.",
+    "funFact": "Molte persone oggi portano un po' di DNA neanderthaliano, ereditato da quando i due gruppi si incrociarono!"
+  },
+  {
+    "id": "homo-sapiens",
+    "period": "~300.000 anni fa",
+    "title": "Homo sapiens, noi!",
+    "emoji": "🧠",
+    "brainSizeCm3": 1350,
+    "heightCm": 170,
+    "description": "L'Homo sapiens — la nostra specie — comparve in Africa. Avevamo un linguaggio sempre più ricco, la capacità di pianificare, di cooperare in grandi gruppi e di immaginare cose che ancora non esistevano.",
+    "keyDevelopment": "Linguaggio complesso e pensiero simbolico.",
+    "funFact": "\"Homo sapiens\" significa \"uomo saggio\" in latino!"
+  },
+  {
+    "id": "arte-e-cultura",
+    "period": "da ~70.000 a 20.000 anni fa",
+    "title": "Arte nelle grotte",
+    "emoji": "🎨",
+    "brainSizeCm3": 1350,
+    "heightCm": 170,
+    "description": "I primi esseri umani iniziarono a dipingere animali e mani sulle pareti delle grotte, a creare collane di conchiglie e a scolpire piccole sculture. Questo mostra immaginazione, cultura e il desiderio di raccontare storie e trasmettere idee.",
+    "keyDevelopment": "Arte, simboli e trasmissione culturale.",
+    "funFact": "In Portogallo, nella Valle del Côa, ci sono incisioni rupestri di animali fatte all'aperto più di 20.000 anni fa!"
+  },
+  {
+    "id": "agricultura",
+    "period": "~12.000 anni fa",
+    "title": "Il grande cambiamento: l'agricoltura",
+    "emoji": "🌾",
+    "brainSizeCm3": 1350,
+    "heightCm": 168,
+    "description": "Per centinaia di migliaia di anni, gli esseri umani cacciarono e raccolsero piante, spostandosi da un luogo all'altro. Circa 12.000 anni fa, iniziarono a piantare semi e ad allevare animali, e cominciarono a vivere in villaggi stabili.",
+    "keyDevelopment": "Agricoltura, allevamento di animali e vita di villaggio.",
+    "funFact": "Fu l'agricoltura a rendere possibile la costruzione dei primi villaggi e, più tardi, delle prime città!"
+  },
+  {
+    "id": "humanos-hoje",
+    "period": "Oggi",
+    "title": "Gli esseri umani di oggi",
+    "emoji": "🌍",
+    "brainSizeCm3": 1350,
+    "heightCm": 170,
+    "description": "Oggi siamo tutti la stessa specie, Homo sapiens, diffusa su tutto il pianeta. Continuiamo a cambiare — non tanto nel corpo, ma nelle idee, nella scienza e nella cultura, che ereditiamo e costruiamo insieme, generazione dopo generazione.",
+    "keyDevelopment": "Scienza, tecnologia e cultura condivisa in tutto il mondo.",
+    "funFact": "L'evoluzione non si è fermata — continua ad accadere, molto lentamente, in tutti gli esseri viventi, noi compresi!"
+  }
+]
