@@ -2,6 +2,8 @@ import React, { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Chess } from "chess.js";
 import { pingProgress, recordSkillEvent } from "../storage.js";
+import SpeakButton from "../components/SpeakButton.jsx";
+import ZenToggle from "../components/ZenToggle.jsx";
 
 // Real chess, powered by chess.js (BSD-2-Clause, pure JS, bundled at build
 // time - no runtime network dependency) for all move generation/validation,
@@ -90,7 +92,7 @@ function buildBoardSquares(game) {
   return squares;
 }
 
-export default function ChessGame({ profileName }) {
+export default function ChessGame({ profileName, langCode }) {
   const { t } = useTranslation();
   const [mode, setMode] = useState(null); // null | "1p" | "2p"
   const [game, setGame] = useState(() => new Chess());
@@ -219,9 +221,11 @@ export default function ChessGame({ profileName }) {
 
   return (
     <div className="game-card chess-wrap">
+      <ZenToggle />
       <div className="chess-status" aria-live="polite">
         {statusText}
         {!gameOver && <span className="chess-move-count"> · {moveCount}</span>}
+        {gameOver && <SpeakButton text={statusText} langCode={langCode} />}
       </div>
 
       <div

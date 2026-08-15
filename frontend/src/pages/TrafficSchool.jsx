@@ -12,6 +12,7 @@ import {
 import SpeakButton from "../components/SpeakButton.jsx";
 import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
 import HelpButton from "../components/HelpButton.jsx";
+import ZenToggle from "../components/ZenToggle.jsx";
 
 const CATEGORY_ICONS = {
   pedestrian: "🚶",
@@ -184,7 +185,11 @@ function DrivingGame({ profileName, t, langCode }) {
 
   return (
     <div className="drive-wrap">
-      <p className="page-intro">{t("modules.trafficSchoolDriveIntro")}</p>
+      <ZenToggle />
+      <p className="page-intro">
+        {t("modules.trafficSchoolDriveIntro")}
+        <SpeakButton text={t("modules.trafficSchoolDriveIntro")} langCode={langCode} />
+      </p>
 
       <div className="drive-board" role="img" aria-label={t("modules.trafficSchoolDriveTitle")}>
         {Array.from({ length: layout.rows }).map((_, r) => (
@@ -222,7 +227,10 @@ function DrivingGame({ profileName, t, langCode }) {
 
       {status === "playing" && !violation && waitingAtStop && (
         <div className="game-card">
-          <p className="mission-text">🛑 {t("modules.trafficSchoolStopPrompt")}</p>
+          <p className="mission-text">
+            🛑 {t("modules.trafficSchoolStopPrompt")}
+            <SpeakButton text={t("modules.trafficSchoolStopPrompt")} langCode={langCode} />
+          </p>
           <button type="button" className="big-btn" onClick={confirmStop}>
             ✅ {t("modules.trafficSchoolStopConfirm")}
           </button>
@@ -230,12 +238,18 @@ function DrivingGame({ profileName, t, langCode }) {
       )}
 
       {status === "playing" && !violation && waitingAtLight && !waitingAtStop && (
-        <p className="mission-text">🚦 {t("modules.trafficSchoolWaitLight")}</p>
+        <p className="mission-text">
+          🚦 {t("modules.trafficSchoolWaitLight")}
+          <SpeakButton text={t("modules.trafficSchoolWaitLight")} langCode={langCode} />
+        </p>
       )}
 
       {status === "playing" && violation && (
         <div className="game-card">
-          <p className="mission-text">🦉 {violation.message}</p>
+          <p className="mission-text">
+            🦉 {violation.message}
+            <SpeakButton text={violation.message} langCode={langCode} />
+          </p>
           <button type="button" className="big-btn" onClick={() => setViolation(null)}>
             🔁 {t("modules.trafficSchoolTryAgain")}
           </button>
@@ -262,7 +276,10 @@ function DrivingGame({ profileName, t, langCode }) {
       {status === "won" && (
         <div className="maze-result">
           <div className="game-emoji">🏆</div>
-          <p className="game-result">{t("modules.trafficSchoolDriveWin")}</p>
+          <p className="game-result">
+            {t("modules.trafficSchoolDriveWin")}
+            <SpeakButton text={t("modules.trafficSchoolDriveWin")} langCode={langCode} />
+          </p>
           <button type="button" className="big-btn" onClick={() => restart()}>
             {t("modules.trafficSchoolTryAgain")} 🔁
           </button>

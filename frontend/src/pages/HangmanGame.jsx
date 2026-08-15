@@ -2,6 +2,7 @@ import React, { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { getAlphabet, getHangmanWords } from "../content/index.js";
 import { pingProgress, recordSkillEvent } from "../storage.js";
+import SpeakButton from "../components/SpeakButton.jsx";
 
 // Word-guessing hangman ("Jogo da Forca"). Supports 1 player (computer
 // picks a random word from the language's word bank, child guesses
@@ -189,6 +190,9 @@ export default function HangmanGame({ pair, profileName }) {
                 </span>
               );
             })}
+            {/* Only speakable once the word is fully revealed or the round is
+                lost, so tapping this can never spoil an in-progress guess. */}
+            {finished && <SpeakButton text={entry.word} langCode={langCode} />}
           </div>
 
           {!finished && (
@@ -216,6 +220,10 @@ export default function HangmanGame({ pair, profileName }) {
               <div className="game-emoji">{revealed ? "🏆" : "🌤️"}</div>
               <p className="game-result">
                 {revealed ? t("modules.hangmanWin") : t("modules.hangmanLoss") + " " + entry.word}
+                <SpeakButton
+                  text={revealed ? t("modules.hangmanWin") : t("modules.hangmanLoss") + " " + entry.word}
+                  langCode={langCode}
+                />
               </p>
               <button type="button" className="big-btn" onClick={restart}>
                 {t("modules.gamePlayAgain")} 🔁

@@ -1427,6 +1427,24 @@ body {
   margin: 0 auto;
 }
 
+.zen-toggle-btn {
+  font-size: 1.1rem;
+  background: #f0f0f0;
+  border: 2px solid #ccc;
+  border-radius: 999px;
+  width: 40px;
+  height: 40px;
+  line-height: 1;
+  cursor: pointer;
+  margin: 6px auto;
+  display: block;
+}
+
+.zen-toggle-on {
+  background: #e6f7ff;
+  border-color: #66c2ff;
+}
+
 .help-btn-wrap {
   position: relative;
   display: inline-block;

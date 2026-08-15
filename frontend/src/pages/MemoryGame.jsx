@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { pingProgress, recordSkillEvent } from "../storage.js";
+import SpeakButton from "../components/SpeakButton.jsx";
+import ZenToggle from "../components/ZenToggle.jsx";
 
 // Classic concentration / card-matching mini-game. Bounded at 6 pairs (12
 // cards) per round so it has a natural stopping point - no escalating
@@ -38,7 +40,7 @@ function buildDeck(themeId) {
   return cards;
 }
 
-export default function MemoryGame({ profileName }) {
+export default function MemoryGame({ profileName, langCode }) {
   const { t } = useTranslation();
   const [themeId, setThemeId] = useState(THEMES[0].id);
   const [cards, setCards] = useState(() => buildDeck(THEMES[0].id));
@@ -97,6 +99,7 @@ export default function MemoryGame({ profileName }) {
 
   return (
     <div className="memory-wrap">
+      <ZenToggle />
       <div className="memory-hud">
         <span>
           🃏 {t("modules.memoryMovesLabel")}: {moves}
@@ -135,7 +138,10 @@ export default function MemoryGame({ profileName }) {
       {won && (
         <div className="memory-result">
           <div className="game-emoji">🎉</div>
-          <p className="game-result">{t("modules.memoryWin")}</p>
+          <p className="game-result">
+            {t("modules.memoryWin")}
+            <SpeakButton text={t("modules.memoryWin")} langCode={langCode} />
+          </p>
           <button type="button" className="big-btn" onClick={() => restart()}>
             {t("modules.gamePlayAgain")} 🔁
           </button>

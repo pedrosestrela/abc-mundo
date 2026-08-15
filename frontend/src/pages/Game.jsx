@@ -168,11 +168,11 @@ export default function Game() {
           <QuizGame pair={pair} profile={profile} />
         </div>
       )}
-      {tab === "maze" && <MazeGame key="maze" profileName={profile?.name} />}
-      {tab === "memory" && <MemoryGame key="memory" profileName={profile?.name} />}
-      {tab === "checkers" && <CheckersGame key="checkers" profileName={profile?.name} />}
-      {tab === "chess" && <ChessGame key="chess" profileName={profile?.name} />}
-      {tab === "tictactoe" && <TicTacToeGame key="tictactoe" profileName={profile?.name} />}
+      {tab === "maze" && <MazeGame key="maze" profileName={profile?.name} langCode={pair.mother} />}
+      {tab === "memory" && <MemoryGame key="memory" profileName={profile?.name} langCode={pair.mother} />}
+      {tab === "checkers" && <CheckersGame key="checkers" profileName={profile?.name} langCode={pair.mother} />}
+      {tab === "chess" && <ChessGame key="chess" profileName={profile?.name} langCode={pair.mother} />}
+      {tab === "tictactoe" && <TicTacToeGame key="tictactoe" profileName={profile?.name} langCode={pair.mother} />}
       {tab === "hangman" && <HangmanGame key="hangman" pair={pair} profileName={profile?.name} />}
     </div>
   );

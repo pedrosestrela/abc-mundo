@@ -983,3 +983,107 @@ export function stopBackgroundMusic() {
   });
   scheduledNodes = [];
 }
+
+// --- "Zen" ambient background loop for quiet/contemplative games -----------
+// Separate from startBackgroundMusic() above (the Music page's upbeat looped
+// melody): this is a soft, slow, melodically-inert pad drone meant to sit
+// almost unnoticed under a board game or a treasure-hunt maze. A handful of
+// long, gently overlapping sine/triangle pad tones drawn from a calm chord
+// (no percussion, no melody to "follow"), each faded in/out over several
+// seconds so nothing ever starts or stops abruptly. Kept on its own gain
+// node (zenMasterGain) so callers can duck it (see duckZenAmbience below)
+// while a SpeakButton/HelpButton narration plays, without touching any other
+// audio in the app.
+const ZEN_CHORD = [130.81, 164.81, 196.0, 261.63]; // soft C3-E3-G3-C4 pad
+let zenMasterGain = null;
+let zenTimer = null;
+let zenVoices = [];
+
+function scheduleZenPad(ctx, freq, startTime, duration) {
+  const osc = ctx.createOscillator();
+  osc.type = "sine";
+  osc.frequency.value = freq;
+  const detuned = ctx.createOscillator();
+  detuned.type = "sine";
+  detuned.frequency.value = freq;
+  detuned.detune.value = 4;
+  const gain = ctx.createGain();
+  const peak = 0.045;
+  gain.gain.setValueAtTime(0, startTime);
+  gain.gain.linearRampToValueAtTime(peak, startTime + duration * 0.35);
+  gain.gain.linearRampToValueAtTime(peak, startTime + duration * 0.6);
+  gain.gain.linearRampToValueAtTime(0, startTime + duration);
+  osc.connect(gain);
+  detuned.connect(gain);
+  gain.connect(zenMasterGain);
+  osc.start(startTime);
+  detuned.start(startTime);
+  osc.stop(startTime + duration + 0.1);
+  detuned.stop(startTime + duration + 0.1);
+  zenVoices.push(osc, detuned);
+}
+
+// Starts the zen ambient loop. Like every other sound in this app, this must
+// only ever be called from an explicit tap (e.g. a toggle button the child
+// or parent presses) — never automatically on page load — both to respect
+// the "audio only after a tap" product rule and because browsers block
+// audio autoplay before a user gesture anyway.
+export function startZenAmbience() {
+  const ctx = getContext();
+  if (!ctx) return;
+  if (ctx.state === "suspended") ctx.resume();
+  stopZenAmbience();
+
+  zenMasterGain = ctx.createGain();
+  zenMasterGain.gain.value = 1;
+  zenMasterGain.connect(ctx.destination);
+
+  const padDuration = 6; // seconds per overlapping pad swell
+  const cycleMs = padDuration * 1000 * 0.6;
+
+  function scheduleCycle() {
+    const now = ctx.currentTime + 0.05;
+    // Pick 2 notes from the chord each cycle so the drone slowly shifts
+    // color instead of holding one static chord forever.
+    const notes = [...ZEN_CHORD].sort(() => Math.random() - 0.5).slice(0, 2);
+    notes.forEach((freq, i) => scheduleZenPad(ctx, freq, now + i * 0.4, padDuration));
+  }
+
+  scheduleCycle();
+  zenTimer = window.setInterval(scheduleCycle, cycleMs);
+}
+
+export function stopZenAmbience() {
+  if (zenTimer) {
+    window.clearInterval(zenTimer);
+    zenTimer = null;
+  }
+  zenVoices.forEach((osc) => {
+    try {
+      osc.stop();
+    } catch {
+      // already stopped
+    }
+  });
+  zenVoices = [];
+  zenMasterGain = null;
+}
+
+// Briefly lowers the zen ambient volume (e.g. while a SpeakButton/HelpButton
+// narration plays) and restores it after `ms`, so spoken audio always stays
+// clearly audible over the background pad. No-op if the ambience isn't
+// currently playing.
+export function duckZenAmbience(ms = 2500) {
+  if (!zenMasterGain) return;
+  const ctx = getContext();
+  if (!ctx) return;
+  const now = ctx.currentTime;
+  zenMasterGain.gain.cancelScheduledValues(now);
+  zenMasterGain.gain.setValueAtTime(zenMasterGain.gain.value, now);
+  zenMasterGain.gain.linearRampToValueAtTime(0.25, now + 0.15);
+  zenMasterGain.gain.linearRampToValueAtTime(1, now + ms / 1000);
+}
+
+export function isZenAmbiencePlaying() {
+  return !!zenTimer;
+}

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { pingProgress, recordSkillEvent } from "../storage.js";
+import SpeakButton from "../components/SpeakButton.jsx";
+import ZenToggle from "../components/ZenToggle.jsx";
 
 // Simplified checkers ("Damas"), 8x8, standard starting layout.
 //
@@ -168,7 +170,7 @@ function freshState(mode) {
   };
 }
 
-export default function CheckersGame({ profileName }) {
+export default function CheckersGame({ profileName, langCode }) {
   const { t } = useTranslation();
   const [mode, setMode] = useState(null); // null until chosen
   const [state, setState] = useState(() => freshState("2p"));
@@ -294,6 +296,7 @@ export default function CheckersGame({ profileName }) {
 
   return (
     <div className="checkers-wrap">
+      <ZenToggle />
       {state.status === "playing" && <div className="checkers-hud">{turnLabel}</div>}
 
       <div className="checkers-board" role="img" aria-label={t("modules.checkersTitle")}>
@@ -335,6 +338,10 @@ export default function CheckersGame({ profileName }) {
           <div className="game-emoji">{state.status === "red-wins" ? "🏆" : "🎲"}</div>
           <p className="game-result">
             {state.status === "red-wins" ? t("modules.checkersRedWins") : t("modules.checkersBlackWins")}
+            <SpeakButton
+              text={state.status === "red-wins" ? t("modules.checkersRedWins") : t("modules.checkersBlackWins")}
+              langCode={langCode}
+            />
           </p>
           <button type="button" className="big-btn" onClick={restart}>
             {t("modules.gamePlayAgain")} 🔁

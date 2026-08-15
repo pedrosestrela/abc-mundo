@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { pingProgress, recordSkillEvent } from "../storage.js";
+import SpeakButton from "../components/SpeakButton.jsx";
 
 // Classic 3x3 tic-tac-toe ("Jogo do Galo"). Supports 1 player (vs a simple
 // heuristic computer opponent - not a perfect minimax, just: take an
@@ -60,7 +61,7 @@ function freshCells() {
   return Array(9).fill(null);
 }
 
-export default function TicTacToeGame({ profileName }) {
+export default function TicTacToeGame({ profileName, langCode }) {
   const { t } = useTranslation();
   const [mode, setMode] = useState("1p"); // "1p" | "2p"
   const [cells, setCells] = useState(freshCells);
@@ -172,15 +173,22 @@ export default function TicTacToeGame({ profileName }) {
       {finished && (
         <div className="ttt-result">
           <div className="game-emoji">{result.winner === "draw" ? "🤝" : "🏆"}</div>
-          <p className="game-result">
-            {result.winner === "draw"
-              ? t("modules.tttDraw")
-              : mode === "1p"
-              ? result.winner === humanMark
-                ? t("modules.tttWin")
-                : t("modules.tttLoss")
-              : t("modules.tttWinnerIs") + " " + result.winner}
-          </p>
+          {(() => {
+            const resultText =
+              result.winner === "draw"
+                ? t("modules.tttDraw")
+                : mode === "1p"
+                ? result.winner === humanMark
+                  ? t("modules.tttWin")
+                  : t("modules.tttLoss")
+                : t("modules.tttWinnerIs") + " " + result.winner;
+            return (
+              <p className="game-result">
+                {resultText}
+                <SpeakButton text={resultText} langCode={langCode} />
+              </p>
+            );
+          })()}
           <button type="button" className="big-btn" onClick={restart}>
             {t("modules.gamePlayAgain")} 🔁
           </button>

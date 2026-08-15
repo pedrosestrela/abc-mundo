@@ -1,6 +1,8 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { pingProgress, recordSkillEvent } from "../storage.js";
+import SpeakButton from "../components/SpeakButton.jsx";
+import ZenToggle from "../components/ZenToggle.jsx";
 
 // Original, simplified maze-chase mini-game ("Caça ao Tesouro no Labirinto").
 // This is an ORIGINAL grid layout, using only the generic "navigate a maze,
@@ -184,7 +186,7 @@ function freshState() {
   return { grid, player, chasers, dotsLeft: countDots(grid), score: 0, status: "playing" };
 }
 
-export default function MazeGame({ profileName }) {
+export default function MazeGame({ profileName, langCode }) {
   const { t } = useTranslation();
   const [state, setState] = useState(freshState);
   const statusRef = useRef(state.status);
@@ -246,6 +248,7 @@ export default function MazeGame({ profileName }) {
 
   return (
     <div className="maze-wrap">
+      <ZenToggle />
       <div className="maze-hud">
         <span>⭐ {t("modules.mazeScoreLabel")}: {state.score}</span>
       </div>
@@ -296,7 +299,10 @@ export default function MazeGame({ profileName }) {
       {state.status !== "playing" && (
         <div className="maze-result">
           <div className="game-emoji">{state.status === "won" ? "🏆" : "🦊"}</div>
-          <p className="game-result">{state.status === "won" ? t("modules.mazeWin") : t("modules.mazeCaught")}</p>
+          <p className="game-result">
+            {state.status === "won" ? t("modules.mazeWin") : t("modules.mazeCaught")}
+            <SpeakButton text={state.status === "won" ? t("modules.mazeWin") : t("modules.mazeCaught")} langCode={langCode} />
+          </p>
           <button type="button" className="big-btn" onClick={restart}>
             {t("modules.mazeTryAgain")} 🔁
           </button>
