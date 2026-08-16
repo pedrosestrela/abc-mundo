@@ -48,6 +48,174 @@ const PRODUCTION_ILLUSTRATIONS = {
   nuclear: IllustrationNuclearPlant,
 };
 
+function shuffle(arr) {
+  const copy = [...arr];
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+}
+
+// Simple picture+text multiple-choice mini-quiz shown after a stage's card
+// is opened, built entirely from data already present on the stages (no
+// extra per-language content needed). Anti-guessing: wrong taps disable
+// that option instead of allowing repeated blind clicks. Shared with
+// HumanEvolution's pattern.
+function StageQuiz({ stage, stages, pair, profile, t, skillId, eventPrefix }) {
+  const [options] = useState(() => {
+    const others = shuffle(stages.filter((s) => s.id !== stage.id)).slice(0, 2);
+    return shuffle([stage, ...others]);
+  });
+  const [wrongIds, setWrongIds] = useState([]);
+  const [solved, setSolved] = useState(false);
+
+  function pick(option) {
+    if (solved) return;
+    if (option.id === stage.id) {
+      setSolved(true);
+      recordSkillEvent(profile?.name, skillId, wrongIds.length === 0);
+      pingProgress({ profileName: profile?.name, module: eventPrefix, event: `quiz_solved:${stage.id}` });
+    } else {
+      setWrongIds((prev) => (prev.includes(option.id) ? prev : [...prev, option.id]));
+      pingProgress({ profileName: profile?.name, module: eventPrefix, event: `quiz_attempt:${stage.id}` });
+    }
+  }
+
+  const prompt = t("modules.devQuizPrompt");
+
+  return (
+    <div className="game-card">
+      <div className="game-emoji">❓</div>
+      <p className="mission-badge science-topic-badge">{t("modules.devQuizTitle")}</p>
+      <p className="page-intro">
+        {prompt}
+        <SpeakButton text={prompt} langCode={pair.mother} />
+      </p>
+      <div className="game-options">
+        {options.map((opt) => (
+          <div className="game-option-row" key={opt.id}>
+            <button
+              type="button"
+              disabled={solved || wrongIds.includes(opt.id)}
+              className={
+                "big-btn game-option" +
+                (solved && opt.id === stage.id ? " correct" : "") +
+                (wrongIds.includes(opt.id) ? " wrong" : "")
+              }
+              onClick={() => pick(opt)}
+            >
+              {opt.emoji} {opt.keyDevelopment}
+            </button>
+            <SpeakButton text={opt.keyDevelopment} langCode={pair.mother} />
+          </div>
+        ))}
+      </div>
+      {solved && (
+        <div className="science-explanation">
+          <p className="game-result">⭐ {t("modules.devQuizCorrect")}</p>
+          <SpeakButton text={t("modules.devQuizCorrect")} langCode={pair.mother} />
+        </div>
+      )}
+    </div>
+  );
+}
+
+// Production-tab sorting challenge: extends the renewable/non-renewable
+// filter into a small "classify the energy source" mini-game. Anti-guessing:
+// once a source is answered (right or wrong) it locks in place.
+function EnergySortChallenge({ stages, pair, profile, t }) {
+  const [order] = useState(() => shuffle(stages));
+  const [answers, setAnswers] = useState({});
+  const [step, setStep] = useState(0);
+  const current = order[step];
+  const finished = step >= order.length;
+  const score = Object.values(answers).filter(Boolean).length;
+
+  function answer(choseRenewable) {
+    if (!current || answers[current.id] !== undefined) return;
+    const correct = choseRenewable === current.renewable;
+    setAnswers((prev) => ({ ...prev, [current.id]: correct }));
+    recordSkillEvent(profile?.name, "tech-history-energy-sort", correct);
+    pingProgress({
+      profileName: profile?.name,
+      module: "tech-history",
+      event: correct ? "energy_sort_correct" : "energy_sort_wrong",
+    });
+    setTimeout(() => setStep((s) => s + 1), 900);
+  }
+
+  function restart() {
+    setAnswers({});
+    setStep(0);
+  }
+
+  return (
+    <div className="game-card science-card">
+      <div className="game-emoji">🗂️</div>
+      <p className="mission-badge science-topic-badge">{t("modules.energySortTitle")}</p>
+      {!finished ? (
+        <>
+          <div className="game-progress">
+            {step + 1} / {order.length} · ⭐ {score}
+          </div>
+          <div className="game-emoji">{current.emoji}</div>
+          <p className="page-intro">
+            {current.title}
+            <SpeakButton text={current.title} langCode={pair.mother} />
+          </p>
+          <p className="mission-text">
+            {t("modules.energySortPrompt")}
+            <SpeakButton text={t("modules.energySortPrompt")} langCode={pair.mother} />
+          </p>
+          <div className="game-options">
+            <button
+              type="button"
+              className={
+                "big-btn game-option" +
+                (answers[current.id] !== undefined
+                  ? current.renewable
+                    ? " correct"
+                    : " wrong"
+                  : "")
+              }
+              disabled={answers[current.id] !== undefined}
+              onClick={() => answer(true)}
+            >
+              🌱 {t("modules.techHistoryFilterRenewable")}
+            </button>
+            <button
+              type="button"
+              className={
+                "big-btn game-option" +
+                (answers[current.id] !== undefined
+                  ? !current.renewable
+                    ? " correct"
+                    : " wrong"
+                  : "")
+              }
+              disabled={answers[current.id] !== undefined}
+              onClick={() => answer(false)}
+            >
+              🪨 {t("modules.techHistoryFilterNonRenewable")}
+            </button>
+          </div>
+        </>
+      ) : (
+        <>
+          <div className="game-emoji">🏆</div>
+          <p className="game-result">
+            {t("modules.energySortDone")}: {score} / {order.length}
+          </p>
+          <button type="button" className="big-btn" onClick={restart}>
+            {t("modules.energySortPlayAgain")} 🔁
+          </button>
+        </>
+      )}
+    </div>
+  );
+}
+
 const TOPICS = [
   { id: "automobile", icon: "🚗", illustrations: AUTOMOBILE_ILLUSTRATIONS },
   { id: "electricity", icon: "💡", illustrations: ELECTRICITY_ILLUSTRATIONS },
@@ -203,12 +371,28 @@ export default function TechHistory() {
                     ✨ {t("modules.evolutionFunFact")}: {stage.funFact}
                     <SpeakButton text={`${stage.keyDevelopment} ${stage.funFact}`} langCode={pair.mother} />
                   </p>
+                  {tab !== "production" && (
+                    <StageQuiz
+                      key={stage.id}
+                      stage={stage}
+                      stages={stages}
+                      pair={pair}
+                      profile={profile}
+                      t={t}
+                      skillId={`tech-history-quiz-${tab}`}
+                      eventPrefix="tech-history"
+                    />
+                  )}
                 </div>
               )}
             </div>
           );
         })}
       </div>
+
+      {tab === "production" && stages.length > 0 && (
+        <EnergySortChallenge key="energy-sort" stages={stages} pair={pair} profile={profile} t={t} />
+      )}
     </div>
   );
 }

@@ -80,6 +80,78 @@ function BrainSizeChart({ stages, pair, t }) {
   );
 }
 
+function shuffle(arr) {
+  const copy = [...arr];
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+}
+
+// Simple picture+text multiple-choice mini-quiz shown after a stage's card
+// is opened, built entirely from data already present on the stages (no
+// extra per-language content needed). Anti-guessing: wrong taps disable
+// that option instead of allowing repeated blind clicks.
+function StageQuiz({ stage, stages, pair, profile, t, skillId, eventPrefix }) {
+  const [options] = useState(() => {
+    const others = shuffle(stages.filter((s) => s.id !== stage.id)).slice(0, 2);
+    return shuffle([stage, ...others]);
+  });
+  const [wrongIds, setWrongIds] = useState([]);
+  const [solved, setSolved] = useState(false);
+
+  function pick(option) {
+    if (solved) return;
+    if (option.id === stage.id) {
+      setSolved(true);
+      recordSkillEvent(profile?.name, skillId, wrongIds.length === 0);
+      pingProgress({ profileName: profile?.name, module: eventPrefix, event: `quiz_solved:${stage.id}` });
+    } else {
+      setWrongIds((prev) => (prev.includes(option.id) ? prev : [...prev, option.id]));
+      pingProgress({ profileName: profile?.name, module: eventPrefix, event: `quiz_attempt:${stage.id}` });
+    }
+  }
+
+  const prompt = t("modules.devQuizPrompt");
+
+  return (
+    <div className="game-card">
+      <div className="game-emoji">❓</div>
+      <p className="mission-badge science-topic-badge">{t("modules.devQuizTitle")}</p>
+      <p className="page-intro">
+        {prompt}
+        <SpeakButton text={prompt} langCode={pair.mother} />
+      </p>
+      <div className="game-options">
+        {options.map((opt) => (
+          <div className="game-option-row" key={opt.id}>
+            <button
+              type="button"
+              disabled={solved || wrongIds.includes(opt.id)}
+              className={
+                "big-btn game-option" +
+                (solved && opt.id === stage.id ? " correct" : "") +
+                (wrongIds.includes(opt.id) ? " wrong" : "")
+              }
+              onClick={() => pick(opt)}
+            >
+              {opt.emoji} {opt.keyDevelopment}
+            </button>
+            <SpeakButton text={opt.keyDevelopment} langCode={pair.mother} />
+          </div>
+        ))}
+      </div>
+      {solved && (
+        <div className="science-explanation">
+          <p className="game-result">⭐ {t("modules.devQuizCorrect")}</p>
+          <SpeakButton text={t("modules.devQuizCorrect")} langCode={pair.mother} />
+        </div>
+      )}
+    </div>
+  );
+}
+
 function HeightChart({ stages, pair, t }) {
   const maxHeight = Math.max(...stages.map((s) => s.heightCm));
   return (
@@ -210,6 +282,16 @@ export default function HumanEvolution() {
                         ✨ {t("modules.evolutionFunFact")}: {stage.funFact}
                         <SpeakButton text={`${stage.keyDevelopment} ${stage.funFact}`} langCode={pair.mother} />
                       </p>
+                      <StageQuiz
+                        key={stage.id}
+                        stage={stage}
+                        stages={stages}
+                        pair={pair}
+                        profile={profile}
+                        t={t}
+                        skillId="evolution-quiz"
+                        eventPrefix="human-evolution"
+                      />
                     </div>
                   )}
                 </div>
