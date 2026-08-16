@@ -134,7 +134,7 @@ function NatureDiaryTab({ profile, t }) {
         {entries.map((e) => (
           <div key={e.id} className="mission-card">
             <div className="mission-emoji">
-              {e.icon || (e.drawing ? <img src={e.drawing} alt="" style={{ width: 48, height: 48, objectFit: "cover", borderRadius: 8 }} /> : "🌿")}
+              {e.icon || (e.drawing ? <img src={e.drawing} alt="" loading="lazy" style={{ width: 48, height: 48, objectFit: "cover", borderRadius: 8 }} /> : "🌿")}
             </div>
             <div className="mundos-tile-sub">{t(`modules.natureDiaryCategory_${e.category}`)}</div>
             <div className="mundos-tile-sub">{e.date}</div>
@@ -210,7 +210,7 @@ function MoonDiaryTab({ profile, t }) {
               {e.phase
                 ? MOON_PHASES.find((p) => p.id === e.phase)?.emoji
                 : e.drawing
-                ? <img src={e.drawing} alt="" style={{ width: 48, height: 48, objectFit: "cover", borderRadius: 8 }} />
+                ? <img src={e.drawing} alt="" loading="lazy" style={{ width: 48, height: 48, objectFit: "cover", borderRadius: 8 }} />
                 : "🌙"}
             </div>
             <div className="mundos-tile-sub">{e.date}</div>
