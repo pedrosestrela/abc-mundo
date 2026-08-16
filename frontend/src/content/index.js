@@ -207,6 +207,14 @@ import howThingsWorkZh from "./howThingsWork.zh.json";
 import howThingsWorkEs from "./howThingsWork.es.json";
 import howThingsWorkIt from "./howThingsWork.it.json";
 
+import techHistoryPt from "./techHistory.pt.json";
+import techHistoryEn from "./techHistory.en.json";
+import techHistoryDe from "./techHistory.de.json";
+import techHistoryFr from "./techHistory.fr.json";
+import techHistoryZh from "./techHistory.zh.json";
+import techHistoryEs from "./techHistory.es.json";
+import techHistoryIt from "./techHistory.it.json";
+
 import internetSafetyPt from "./internetSafety.pt.json";
 import internetSafetyEn from "./internetSafety.en.json";
 import internetSafetyDe from "./internetSafety.de.json";
@@ -337,6 +345,7 @@ const COMPUTING_SAFETY = { pt: computingSafetyPt, en: computingSafetyEn, de: com
 const COMPUTING_PASSWORDS = { pt: computingPasswordsPt, en: computingPasswordsEn, de: computingPasswordsDe, fr: computingPasswordsFr, zh: computingPasswordsZh, es: computingPasswordsEs, it: computingPasswordsIt };
 const COMPUTING_INTERNET_JOURNEY = { pt: computingInternetJourneyPt, en: computingInternetJourneyEn, de: computingInternetJourneyDe, fr: computingInternetJourneyFr, zh: computingInternetJourneyZh, es: computingInternetJourneyEs, it: computingInternetJourneyIt };
 const HOW_THINGS_WORK = { pt: howThingsWorkPt, en: howThingsWorkEn, de: howThingsWorkDe, fr: howThingsWorkFr, zh: howThingsWorkZh, es: howThingsWorkEs, it: howThingsWorkIt };
+const TECH_HISTORY = { pt: techHistoryPt, en: techHistoryEn, de: techHistoryDe, fr: techHistoryFr, zh: techHistoryZh, es: techHistoryEs, it: techHistoryIt };
 const INTERNET_SAFETY = { pt: internetSafetyPt, en: internetSafetyEn, de: internetSafetyDe, fr: internetSafetyFr, zh: internetSafetyZh, es: internetSafetyEs, it: internetSafetyIt };
 const AI_LAB = { pt: aiLabPt, en: aiLabEn, de: aiLabDe, fr: aiLabFr, zh: aiLabZh, es: aiLabEs, it: aiLabIt };
 const LEMONADE_STAND = { pt: lemonadeStandPt, en: lemonadeStandEn, de: lemonadeStandDe, fr: lemonadeStandFr, zh: lemonadeStandZh, es: lemonadeStandEs, it: lemonadeStandIt };
@@ -468,6 +477,10 @@ export function getComputingInternetJourney(langCode) {
 
 export function getHowThingsWork(langCode) {
   return HOW_THINGS_WORK[langCode] || HOW_THINGS_WORK.pt || [];
+}
+
+export function getTechHistory(langCode) {
+  return TECH_HISTORY[langCode] || TECH_HISTORY.pt;
 }
 
 export function getInternetSafety(langCode) {

@@ -14,4 +14,5 @@ export * from "./animals.jsx";
 export * from "./scenery.jsx";
 export * from "./icons.jsx";
 export * from "./humanEvolution.jsx";
+export * from "./techHistory.jsx";
 export { PALETTE, STROKE, STROKE_WIDTH } from "./palette.js";

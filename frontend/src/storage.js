@@ -1083,3 +1083,46 @@ export function visitEvolutionStage(profileName, stageId) {
   saveVisitedEvolutionStages(all);
   return all[name];
 }
+
+// --- Tech History (car, lightbulb/electricity, ways to produce electricity):
+// visited timeline/topic stage ids ---
+// Tracks which tech-history stage ids the child has tapped/opened, keyed by
+// profile + topic (e.g. "automobile", "electricity", "production"), mirroring
+// visitEvolutionStage/getVisitedEvolutionStages exactly but scoped per topic.
+
+const VISITED_TECH_HISTORY_KEY = "abcmundo.visitedTechHistory";
+
+function loadVisitedTechHistory() {
+  try {
+    const raw = localStorage.getItem(VISITED_TECH_HISTORY_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveVisitedTechHistory(all) {
+  try {
+    localStorage.setItem(VISITED_TECH_HISTORY_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getVisitedTechHistoryStages(profileName, topicId) {
+  const all = loadVisitedTechHistory();
+  const name = profileName || "Explorer";
+  return (all[name] && all[name][topicId]) || [];
+}
+
+export function visitTechHistoryStage(profileName, topicId, stageId) {
+  const name = profileName || "Explorer";
+  const all = loadVisitedTechHistory();
+  const forName = all[name] || {};
+  const visited = new Set(forName[topicId] || []);
+  visited.add(stageId);
+  forName[topicId] = Array.from(visited);
+  all[name] = forName;
+  saveVisitedTechHistory(all);
+  return forName[topicId];
+}

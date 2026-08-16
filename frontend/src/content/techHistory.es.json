@@ -1,0 +1,143 @@
+{
+  "automobile": [
+    {
+      "id": "carruagens",
+      "period": "Antes de 1880",
+      "title": "Carruajes Tirados por Caballos",
+      "emoji": "🐎",
+      "description": "Durante siglos, para desplazarnos usábamos nuestros propios pies, caballos o carros y carruajes tirados por caballos. Los viajes eran lentos, cansados para los animales, y las carreteras eran de tierra apisonada o piedra.",
+      "keyDevelopment": "Transporte con fuerza animal, sin motor.",
+      "funFact": "¡Un viaje que hoy toma una hora en coche podía tardar un día entero en carruaje!"
+    },
+    {
+      "id": "primeiros-prototipos",
+      "period": "1770 – 1885",
+      "title": "Los Primeros Prototipos",
+      "emoji": "🚂",
+      "description": "Los inventores empezaron a probar vehículos movidos a vapor, grandes máquinas con calderas. Más tarde, Karl Benz construyó uno de los primeros automóviles con motor de combustión, a gasolina, en 1885.",
+      "keyDevelopment": "Primeros motores a vapor y a gasolina en vehículos.",
+      "funFact": "¡El primer coche de Karl Benz tenía solo tres ruedas!"
+    },
+    {
+      "id": "ford-t",
+      "period": "1908",
+      "title": "El Ford Modelo T y la Producción en Masa",
+      "emoji": "🚗",
+      "description": "Henry Ford tuvo una idea genial: construir coches en una línea de montaje, donde cada trabajador hacía siempre la misma tarea. Eso hizo que los coches fueran mucho más rápidos de fabricar y mucho más baratos, para que más familias pudieran comprarlos.",
+      "keyDevelopment": "Línea de montaje y producción en masa.",
+      "funFact": "¡Gracias a la línea de montaje, un nuevo Ford Modelo T salía de la fábrica cada pocos minutos!"
+    },
+    {
+      "id": "carros-modernos",
+      "period": "Siglo XX",
+      "title": "Los Coches Modernos",
+      "emoji": "🚙",
+      "description": "A lo largo del siglo XX, los coches se volvieron más rápidos, más seguros y más cómodos, con cinturones de seguridad, airbags, aire acondicionado y ordenadores de a bordo. Las ciudades también se transformaron alrededor del coche, con más carreteras, garajes y semáforos.",
+      "keyDevelopment": "Más seguridad, comodidad y velocidad.",
+      "funFact": "¡Las luces de freno y los cinturones de seguridad solo se volvieron comunes décadas después del primer automóvil!"
+    },
+    {
+      "id": "carros-eletricos",
+      "period": "Hoy",
+      "title": "Coches Eléctricos",
+      "emoji": "🔋",
+      "description": "Hoy hay cada vez más coches eléctricos, que funcionan con una batería en lugar de quemar combustible. No sueltan humo por un tubo de escape y se pueden cargar en un enchufe especial, igual que cargamos un teléfono.",
+      "keyDevelopment": "Motores eléctricos y baterías recargables.",
+      "funFact": "¡Curiosamente, los coches eléctricos ya existían en el siglo XIX, solo que las baterías de entonces eran muy débiles!"
+    }
+  ],
+  "electricity": [
+    {
+      "id": "velas-candeeiros",
+      "period": "Antes del siglo XIX",
+      "title": "Velas y Lámparas de Aceite",
+      "emoji": "🕯️",
+      "description": "Durante miles de años, cuando oscurecía, la gente usaba velas de cera y lámparas de aceite para tener luz. Era una luz débil y parpadeante, y siempre existía el peligro de provocar incendios.",
+      "keyDevelopment": "Luz hecha con una llama.",
+      "funFact": "¡Antiguamente, familias enteras leían y trabajaban a la luz de una sola vela!"
+    },
+    {
+      "id": "primeiras-experiencias",
+      "period": "1740 – 1800",
+      "title": "Los Primeros Experimentos con la Electricidad",
+      "emoji": "⚡",
+      "description": "Los científicos empezaron a estudiar la electricidad estática, como la que sentimos al frotar un globo en el pelo. En 1800, Alessandro Volta inventó la pila voltaica, la primera forma de guardar electricidad y usarla cuando quisiéramos.",
+      "keyDevelopment": "Descubrimiento y primer almacenamiento de la electricidad.",
+      "funFact": "¡La palabra \"pila\" viene de ahí mismo: Volta apilaba discos de metal, unos encima de otros!"
+    },
+    {
+      "id": "lampada-eletrica",
+      "period": "1878 – 1880",
+      "title": "La Bombilla Eléctrica",
+      "emoji": "💡",
+      "description": "Varios inventores, como Joseph Swan y Thomas Edison, probaron cientos de materiales para encontrar un filamento que brillara mucho tiempo sin quemarse dentro de una bombilla. En 1879-80, lograron crear bombillas que duraban muchas horas.",
+      "keyDevelopment": "Invención de la bombilla incandescente práctica.",
+      "funFact": "¡Se dice que el equipo de Edison probó más de mil materiales diferentes antes de encontrar uno que funcionara bien!"
+    },
+    {
+      "id": "eletrificacao",
+      "period": "Finales del siglo XIX – siglo XX",
+      "title": "La Electrificación de las Casas y las Ciudades",
+      "emoji": "🏙️",
+      "description": "Poco a poco, se construyeron centrales eléctricas y cables que llevaban electricidad hasta las casas, calles y fábricas. Las ciudades ganaron alumbrado público y las familias pudieron, por primera vez, conectar aparatos eléctricos en casa.",
+      "keyDevelopment": "Redes eléctricas que conectan centrales con casas y ciudades.",
+      "funFact": "¡Algunas de las primeras calles del mundo iluminadas con electricidad estaban en Nueva York y Londres!"
+    },
+    {
+      "id": "led-hoje",
+      "period": "Hoy",
+      "title": "Los LED de Hoy",
+      "emoji": "🌟",
+      "description": "Las bombillas de hoy, llamadas LED, gastan mucha menos energía que las antiguas bombillas incandescentes y duran mucho más tiempo. También pueden tener varios colores y se usan en pantallas, semáforos y luces de Navidad.",
+      "keyDevelopment": "Iluminación eficiente con mucho menos desperdicio de energía.",
+      "funFact": "¡Un LED puede durar más de 15 años encendido todos los días, mucho más que una bombilla antigua!"
+    }
+  ],
+  "production": [
+    {
+      "id": "hidroeletrica",
+      "title": "Energía Hidroeléctrica",
+      "emoji": "💧",
+      "renewable": true,
+      "description": "En las presas, el agua que cae de un nivel alto a un nivel bajo hace girar una gran rueda llamada turbina. Esa turbina está conectada a un generador, que transforma el movimiento en electricidad.",
+      "keyDevelopment": "El agua que cae hace girar una turbina.",
+      "funFact": "¡Portugal tiene muchas presas en ríos como el Duero, que producen electricidad para miles de casas!"
+    },
+    {
+      "id": "eolica",
+      "title": "Energía Eólica",
+      "emoji": "🌬️",
+      "renewable": true,
+      "description": "El viento empuja las enormes palas de los aerogeneradores, haciéndolas girar. Ese movimiento de rotación se transforma en electricidad dentro de la torre, igual que ocurre con el agua en las presas.",
+      "keyDevelopment": "El viento hace girar las palas de un molino gigante.",
+      "funFact": "¡Las palas de un aerogenerador grande pueden ser tan largas como un campo de fútbol!"
+    },
+    {
+      "id": "solar",
+      "title": "Energía Solar",
+      "emoji": "☀️",
+      "renewable": true,
+      "description": "Los paneles solares están hechos de un material especial que, cuando la luz del sol los toca, libera pequeñas partículas que se mueven y crean una corriente eléctrica. Cuanto más sol, más electricidad se produce.",
+      "keyDevelopment": "La luz del sol se transforma directamente en electricidad.",
+      "funFact": "¡Existen paneles solares tan pequeños que caben en una calculadora, y tan grandes que cubren campos enteros!"
+    },
+    {
+      "id": "termica",
+      "title": "Energía Térmica (Combustibles Fósiles)",
+      "emoji": "🏭",
+      "renewable": false,
+      "description": "En muchas centrales se quema carbón, gas o petróleo para calentar agua hasta convertirla en vapor. Ese vapor, con mucha fuerza, hace girar una turbina que produce electricidad, pero también libera humo que contamina el aire.",
+      "keyDevelopment": "Quemar combustibles para calentar agua y crear vapor.",
+      "funFact": "¡El carbón, el gas y el petróleo tardan millones de años en formarse dentro de la Tierra, así que no se pueden \"hacer más\" rápido!"
+    },
+    {
+      "id": "nuclear",
+      "title": "Energía Nuclear",
+      "emoji": "☢️",
+      "renewable": false,
+      "description": "En las centrales nucleares, partículas pequeñísimas llamadas átomos se dividen con mucho cuidado, liberando mucho calor. Ese calor calienta agua y crea vapor, que hace girar una turbina, igual que en las centrales térmicas.",
+      "keyDevelopment": "Dividir átomos libera una enorme cantidad de calor.",
+      "funFact": "¡Una pequeña cantidad de combustible nuclear puede producir tanta energía como miles de camiones de carbón!"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "automobile": [
+    {
+      "id": "carruagens",
+      "period": "Avant 1880",
+      "title": "Les Calèches Tirées par des Chevaux",
+      "emoji": "🐎",
+      "description": "Pendant des siècles, pour nous déplacer, nous utilisions nos pieds, des chevaux ou des charrettes et calèches tirées par des chevaux. Les voyages étaient lents, fatigants pour les animaux, et les routes étaient en terre battue ou en pierre.",
+      "keyDevelopment": "Transport avec la force animale, sans moteur.",
+      "funFact": "Un trajet qui prend une heure en voiture aujourd'hui pouvait prendre une journée entière en calèche !"
+    },
+    {
+      "id": "primeiros-prototipos",
+      "period": "1770 – 1885",
+      "title": "Les Premiers Prototypes",
+      "emoji": "🚂",
+      "description": "Des inventeurs ont commencé à tester des véhicules à vapeur, de grandes machines munies de chaudières. Plus tard, Karl Benz a construit l'une des premières voitures à moteur à combustion, fonctionnant à l'essence, en 1885.",
+      "keyDevelopment": "Premiers moteurs à vapeur et à essence dans les véhicules.",
+      "funFact": "La première voiture de Karl Benz n'avait que trois roues !"
+    },
+    {
+      "id": "ford-t",
+      "period": "1908",
+      "title": "La Ford Modèle T et la Production en Masse",
+      "emoji": "🚗",
+      "description": "Henry Ford a eu une idée géniale : construire des voitures sur une chaîne de montage, où chaque ouvrier faisait toujours la même tâche. Cela a rendu les voitures beaucoup plus rapides à fabriquer et beaucoup moins chères, pour que plus de familles puissent les acheter.",
+      "keyDevelopment": "Chaîne de montage et production en masse.",
+      "funFact": "Grâce à la chaîne de montage, une nouvelle Ford Modèle T sortait de l'usine toutes les quelques minutes !"
+    },
+    {
+      "id": "carros-modernos",
+      "period": "XXe siècle",
+      "title": "Les Voitures Modernes",
+      "emoji": "🚙",
+      "description": "Tout au long du XXe siècle, les voitures sont devenues plus rapides, plus sûres et plus confortables, avec ceintures de sécurité, airbags, climatisation et ordinateurs de bord. Les villes se sont aussi transformées autour de la voiture, avec plus de routes, de garages et de feux de circulation.",
+      "keyDevelopment": "Plus de sécurité, de confort et de vitesse.",
+      "funFact": "Les feux de freinage et les ceintures de sécurité ne sont devenus courants que des décennies après la toute première automobile !"
+    },
+    {
+      "id": "carros-eletricos",
+      "period": "Aujourd'hui",
+      "title": "Les Voitures Électriques",
+      "emoji": "🔋",
+      "description": "Aujourd'hui, il y a de plus en plus de voitures électriques, qui fonctionnent avec une batterie au lieu de brûler du carburant. Elles ne rejettent pas de fumée par un pot d'échappement et peuvent être rechargées sur une prise spéciale, tout comme on recharge un téléphone.",
+      "keyDevelopment": "Moteurs électriques et batteries rechargeables.",
+      "funFact": "Fait amusant : des voitures électriques existaient déjà au XIXe siècle — mais les batteries de l'époque étaient très faibles !"
+    }
+  ],
+  "electricity": [
+    {
+      "id": "velas-candeeiros",
+      "period": "Avant le XIXe siècle",
+      "title": "Bougies et Lampes à Huile",
+      "emoji": "🕯️",
+      "description": "Pendant des milliers d'années, quand la nuit tombait, les gens utilisaient des bougies de cire et des lampes à huile pour s'éclairer. C'était une lumière faible et vacillante, avec toujours un risque de provoquer un incendie.",
+      "keyDevelopment": "Une lumière créée par une flamme.",
+      "funFact": "Autrefois, des familles entières lisaient et travaillaient à la lumière d'une seule bougie !"
+    },
+    {
+      "id": "primeiras-experiencias",
+      "period": "1740 – 1800",
+      "title": "Les Premières Expériences avec l'Électricité",
+      "emoji": "⚡",
+      "description": "Des scientifiques ont commencé à étudier l'électricité statique, comme celle que l'on ressent en frottant un ballon sur ses cheveux. En 1800, Alessandro Volta a inventé la pile voltaïque, le premier moyen de stocker l'électricité et de l'utiliser quand on le voulait.",
+      "keyDevelopment": "Découverte et premier stockage de l'électricité.",
+      "funFact": "Le mot « pile » vient bien de là : Volta empilait des disques de métal les uns sur les autres !"
+    },
+    {
+      "id": "lampada-eletrica",
+      "period": "1878 – 1880",
+      "title": "L'Ampoule Électrique",
+      "emoji": "💡",
+      "description": "Plusieurs inventeurs, comme Joseph Swan et Thomas Edison, ont testé des centaines de matériaux pour trouver un filament capable de briller longtemps sans se consumer dans une ampoule. En 1879-80, ils ont réussi à créer des ampoules qui duraient de nombreuses heures.",
+      "keyDevelopment": "Invention de l'ampoule à incandescence pratique.",
+      "funFact": "On dit que l'équipe d'Edison a testé plus de mille matériaux différents avant d'en trouver un qui fonctionnait bien !"
+    },
+    {
+      "id": "eletrificacao",
+      "period": "Fin du XIXe – XXe siècle",
+      "title": "L'Électrification des Maisons et des Villes",
+      "emoji": "🏙️",
+      "description": "Peu à peu, des centrales électriques et des câbles ont été construits pour apporter l'électricité aux maisons, aux rues et aux usines. Les villes ont eu un éclairage public, et les familles ont pu, pour la première fois, brancher des appareils électriques chez elles.",
+      "keyDevelopment": "Réseaux électriques reliant les centrales aux maisons et aux villes.",
+      "funFact": "Certaines des premières rues éclairées à l'électricité au monde se trouvaient à New York et à Londres !"
+    },
+    {
+      "id": "led-hoje",
+      "period": "Aujourd'hui",
+      "title": "Les LED d'Aujourd'hui",
+      "emoji": "🌟",
+      "description": "Les ampoules d'aujourd'hui, appelées LED, consomment beaucoup moins d'énergie que les anciennes ampoules à incandescence et durent beaucoup plus longtemps. Elles peuvent aussi avoir plusieurs couleurs et sont utilisées dans les écrans, les feux de circulation et les guirlandes de Noël.",
+      "keyDevelopment": "Un éclairage efficace avec beaucoup moins d'énergie gaspillée.",
+      "funFact": "Une LED peut rester allumée plus de 15 ans, tous les jours — bien plus longtemps qu'une ancienne ampoule !"
+    }
+  ],
+  "production": [
+    {
+      "id": "hidroeletrica",
+      "title": "Énergie Hydroélectrique",
+      "emoji": "💧",
+      "renewable": true,
+      "description": "Dans les barrages, l'eau qui tombe d'un niveau élevé vers un niveau bas fait tourner une grande roue appelée turbine. Cette turbine est reliée à un générateur, qui transforme le mouvement en électricité.",
+      "keyDevelopment": "L'eau qui tombe fait tourner une turbine.",
+      "funFact": "Le Portugal a de nombreux barrages sur des rivières comme le Douro, qui produisent de l'électricité pour des milliers de maisons !"
+    },
+    {
+      "id": "eolica",
+      "title": "Énergie Éolienne",
+      "emoji": "🌬️",
+      "renewable": true,
+      "description": "Le vent pousse les immenses pales des éoliennes, les faisant tourner. Ce mouvement de rotation est transformé en électricité à l'intérieur de la tour, tout comme l'eau dans les barrages.",
+      "keyDevelopment": "Le vent fait tourner les pales d'un moulin géant.",
+      "funFact": "Les pales d'une grande éolienne peuvent être aussi longues qu'un terrain de football !"
+    },
+    {
+      "id": "solar",
+      "title": "Énergie Solaire",
+      "emoji": "☀️",
+      "renewable": true,
+      "description": "Les panneaux solaires sont faits d'un matériau spécial qui, lorsque la lumière du soleil le frappe, libère de minuscules particules qui bougent et créent un courant électrique. Plus il y a de soleil, plus il y a d'électricité produite.",
+      "keyDevelopment": "La lumière du soleil se transforme directement en électricité.",
+      "funFact": "Il existe des panneaux solaires assez petits pour tenir sur une calculatrice, et d'autres assez grands pour couvrir des champs entiers !"
+    },
+    {
+      "id": "termica",
+      "title": "Énergie Thermique (Combustibles Fossiles)",
+      "emoji": "🏭",
+      "renewable": false,
+      "description": "Dans de nombreuses centrales, on brûle du charbon, du gaz ou du pétrole pour chauffer de l'eau jusqu'à ce qu'elle se transforme en vapeur. Cette vapeur, avec beaucoup de force, fait tourner une turbine qui produit de l'électricité — mais elle libère aussi de la fumée qui pollue l'air.",
+      "keyDevelopment": "Brûler des combustibles pour chauffer l'eau et créer de la vapeur.",
+      "funFact": "Le charbon, le gaz et le pétrole mettent des millions d'années à se former dans la Terre — on ne peut donc pas en « refaire » rapidement !"
+    },
+    {
+      "id": "nuclear",
+      "title": "Énergie Nucléaire",
+      "emoji": "☢️",
+      "renewable": false,
+      "description": "Dans les centrales nucléaires, de minuscules particules appelées atomes sont divisées avec beaucoup de précaution, libérant beaucoup de chaleur. Cette chaleur réchauffe l'eau et crée de la vapeur, qui fait tourner une turbine, tout comme dans les centrales thermiques.",
+      "keyDevelopment": "Diviser des atomes libère une énorme quantité de chaleur.",
+      "funFact": "Une petite quantité de combustible nucléaire peut produire autant d'énergie que des milliers de camions de charbon !"
+    }
+  ]
+}
