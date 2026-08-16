@@ -13,5 +13,21 @@ export default defineConfig({
   },
   build: {
     outDir: "dist",
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes("node_modules")) {
+            if (/[\\/](react|react-dom|scheduler)[\\/]/.test(id)) return "vendor-react";
+            if (id.includes("react-router")) return "vendor-router";
+            if (id.includes("i18next")) return "vendor-i18n";
+            if (id.includes("chess.js")) return "vendor-chess";
+            if (id.includes("three") || id.includes("globe.gl")) return "vendor-three";
+            if (id.includes("topojson") || id.includes("world-atlas")) return "vendor-geo";
+            return "vendor";
+          }
+          if (id.includes("/src/i18n/")) return "i18n-resources";
+        },
+      },
+    },
   },
 });
