@@ -3683,6 +3683,126 @@ body {
   color: #c62828;
 }
 
+/* --- Word search ("Sopa de letras") --- */
+.wordsearch-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.wordsearch-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  align-items: flex-start;
+}
+.wordsearch-grid {
+  display: grid;
+  gap: 3px;
+  max-width: 340px;
+}
+.wordsearch-cell {
+  aspect-ratio: 1 / 1;
+  min-width: 28px;
+  border-radius: 6px;
+  border: 2px solid #eee6ff;
+  background: #fff;
+  font-weight: bold;
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue, #6a5acd);
+}
+.wordsearch-cell:disabled {
+  cursor: default;
+}
+.wordsearch-cell-selected {
+  background: #fff3c4;
+  border-color: #e0b400;
+}
+.wordsearch-cell-found {
+  background: #d7f5df;
+  border-color: #4caf50;
+  color: #2e7d32;
+}
+.wordsearch-bank {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 160px;
+}
+.wordsearch-bank-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: 2px solid #eee6ff;
+  background: #fff;
+}
+.wordsearch-bank-item-found {
+  background: #d7f5df;
+  border-color: #4caf50;
+}
+.wordsearch-bank-emoji {
+  font-size: 1.4rem;
+}
+.wordsearch-bank-word {
+  font-weight: bold;
+}
+.wordsearch-toast {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* --- Jigsaw / puzzle ("Quebra-cabecas") --- */
+.jigsaw-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.jigsaw-board {
+  display: grid;
+  gap: 2px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 3px solid #eee6ff;
+  background: #fff;
+}
+.jigsaw-piece {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background: #f7f5ff;
+}
+.jigsaw-piece:disabled {
+  cursor: default;
+}
+.jigsaw-piece-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+.jigsaw-piece-selected {
+  outline: 3px solid #e0b400;
+  outline-offset: -3px;
+}
+.jigsaw-piece-solved {
+  outline: 3px solid #4caf50;
+  outline-offset: -3px;
+}
+
 @media (max-width: 480px) {
   .maze-cell {
     width: 22px;
