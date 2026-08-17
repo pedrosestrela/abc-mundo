@@ -124,6 +124,29 @@ export function setLangPair(pair) {
 
 // Maps a child's age to a difficulty tier used to size/scale game content:
 // tier 1 (5-6y): small pools, short quizzes; tier 2 (7-8y): medium; tier 3 (9y+): full pools, longer quizzes.
+// --- "Hora de Dormir" (Bedtime / Calm) mode ---
+// A single device-wide, parent-controlled preference (not per-profile,
+// mirroring how LANG_PAIR_KEY works) for the warm/dim low-stimulation
+// visual theme. Defaults OFF.
+
+const BEDTIME_MODE_KEY = "abcmundo.bedtimeMode";
+
+export function getBedtimeMode() {
+  try {
+    return localStorage.getItem(BEDTIME_MODE_KEY) === "1";
+  } catch {
+    return false;
+  }
+}
+
+export function setBedtimeMode(on) {
+  try {
+    localStorage.setItem(BEDTIME_MODE_KEY, on ? "1" : "0");
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
 export function getDifficultyTier(age) {
   const a = Number(age);
   if (!Number.isFinite(a) || a <= 6) return 1;

@@ -4129,3 +4129,94 @@ body {
   0%, 100% { transform: translateX(0); }
   50% { transform: translateX(3px); }
 }
+
+/* --- "Hora de Dormir" (Bedtime / Calm) mode -----------------------------
+ * A parent-controlled, warm/dim/low-stimulation theme for evening use.
+ * Nothing is hidden or disabled: every page, button and feature keeps
+ * working exactly as before — only the color palette gets warmer/dimmer
+ * and a few purely decorative looping animations get gentler.
+ *
+ * The app's accent colors are already tokenized as CSS custom properties
+ * (--pink/--yellow/--green/--blue/--purple) and used throughout styles.css
+ * for borders, text and highlight backgrounds, so re-pointing those five
+ * tokens to a warm, muted amber palette already recolors most of the app.
+ * On top of that, the two surfaces that matter most for a "make the room
+ * feel dim" effect — the page background and the bottom nav bar — get an
+ * explicit warm/dark override, and a soft brightness/saturation filter is
+ * applied to the whole app shell to knock down the many hardcoded white
+ * (#fff) card backgrounds and bright per-component colors without having
+ * to touch every one of them individually (out of scope for this task).
+ */
+:root[data-theme="bedtime"] {
+  --pink: #d98a63;
+  --yellow: #e8b756;
+  --green: #9caa6a;
+  --blue: #8a8ec2;
+  --purple: #a988a6;
+}
+
+[data-theme="bedtime"] body {
+  background: linear-gradient(180deg, #2b2118, #1f1a22);
+  color: #e8d9c5;
+}
+
+[data-theme="bedtime"] .app-shell {
+  filter: saturate(0.72) brightness(0.86) sepia(0.12);
+}
+
+[data-theme="bedtime"] .navbar {
+  background: #241b16ee;
+  border-top-color: var(--yellow);
+}
+
+[data-theme="bedtime"] .nav-link {
+  color: #d8c4ac;
+}
+
+[data-theme="bedtime"] .nav-link.active {
+  background: var(--yellow);
+  color: #241b16;
+}
+
+/* Gentler decorative motion: slow the purely ambient/looping animations
+ * (loading spinners, page-entrance settle) way down. Functional feedback
+ * animations (correct/wrong, badge-pulse on completion, circuit-lab
+ * success cues) are left untouched — they still convey the same signal,
+ * just not screamed at full brightness thanks to the filter above. */
+[data-theme="bedtime"] .page-loading,
+[data-theme="bedtime"] .globe-3d-loading {
+  animation-duration: 2.6s;
+}
+
+[data-theme="bedtime"] .mundos-place {
+  animation-duration: 1.1s;
+}
+
+[data-theme="bedtime"] .story-page-body {
+  animation-duration: 1.2s;
+}
+
+.bedtime-toggle-btn {
+  font-size: 1.1rem;
+  background: #f0f0f0;
+  border: 2px solid #ccc;
+  border-radius: 999px;
+  width: 40px;
+  height: 40px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bedtime-toggle-on {
+  background: #241b16;
+  border-color: var(--yellow, #e8b756);
+}
+
+.navbar-bedtime-toggle {
+  margin: auto 4px auto 0;
+}
+}

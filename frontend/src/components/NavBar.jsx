@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import BedtimeToggle from "./BedtimeToggle.jsx";
 
 export default function NavBar() {
   const { t } = useTranslation();
@@ -21,6 +22,9 @@ export default function NavBar() {
       <NavLink to="/parents" className="nav-link">
         👪 {t("nav.parents")}
       </NavLink>
+      <div className="navbar-bedtime-toggle">
+        <BedtimeToggle />
+      </div>
     </nav>
   );
 }

@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar.jsx";
 import SessionEndOverlay from "./components/SessionEndOverlay.jsx";
+import { getBedtimeMode } from "./storage.js";
 // Home and LanguagePicker stay eager: they are the very first screen every
 // session hits, so lazy-loading them would show a loading flash before the
 // app is even usable.
@@ -76,6 +77,14 @@ export default function App() {
   // reload guard so a *future* deploy can still trigger one recovery reload.
   React.useEffect(() => {
     window.sessionStorage.removeItem("chunk-reload-attempted");
+  }, []);
+
+  // Applies the persisted "Hora de Dormir" (bedtime/calm) theme choice on
+  // first load, before BedtimeToggle mounts (it also stays in sync itself
+  // once toggled). Kept as a plain attribute set rather than state so it
+  // takes effect on the very first paint with no flash of the wrong theme.
+  React.useEffect(() => {
+    document.documentElement.setAttribute("data-theme", getBedtimeMode() ? "bedtime" : "default");
   }, []);
 
   return (
