@@ -1186,6 +1186,163 @@ function saveCompletedCircuits(all) {
   }
 }
 
+// --- Backup / device-to-device sync ---
+// Exports every localStorage key this file owns (all profiles + all their
+// per-module progress data) into one plain JSON-serializable object, and
+// merges such an object back in on the receiving device. Kept intentionally
+// dumb about the *shape* of each key's value — it just carries whatever is
+// already in localStorage across, so it never needs updating when a new
+// module's storage key is added above.
+const SYNC_STORAGE_KEYS = [
+  PROFILES_KEY,
+  ACTIVE_PROFILE_KEY,
+  LANG_PAIR_KEY,
+  MISSIONS_KEY,
+  MISSION_REACTIONS_KEY,
+  VISITED_COUNTRIES_KEY,
+  ART_PROMPTS_TRIED_KEY,
+  EXPLORED_SCIENCE_KEY,
+  EXPLORED_COMPUTING_KEY,
+  EXPLORED_INTERNET_JOURNEY_KEY,
+  COMPLETED_LEARNING_ACTIVITIES_KEY,
+  EXPLORED_THING_PARTS_KEY,
+  VISITED_ERAS_KEY,
+  EXPLORED_WHYS_KEY,
+  PROGRESS_KEY,
+  TRIED_LIFE_SKILLS_KEY,
+  COMPLETED_THINKING_KEY,
+  COMPLETED_NEWSROOM_KEY,
+  COMPLETED_ACADEMY_KEY,
+  NATURE_DIARY_KEY,
+  MOON_DIARY_KEY,
+  ART_PIXEL_SAVES_KEY,
+  ART_CHARACTER_SAVES_KEY,
+  EXPLORED_TRAFFIC_SIGNS_KEY,
+  VISITED_EVOLUTION_STAGES_KEY,
+  VISITED_TECH_HISTORY_KEY,
+  COOKED_RECIPES_KEY,
+  COMPLETED_CIRCUITS_KEY,
+];
+
+// Gathers every profile's full data from this device into one JSON-friendly
+// object, ready to POST to /api/sync/upload.
+export function exportAllData() {
+  const out = {};
+  for (const key of SYNC_STORAGE_KEYS) {
+    try {
+      const raw = localStorage.getItem(key);
+      if (raw !== null) out[key] = JSON.parse(raw);
+    } catch {
+      // skip unreadable key rather than fail the whole export
+    }
+  }
+  return out;
+}
+
+// Merges an object previously produced by exportAllData() (retrieved from
+// /api/sync/download/{code}) into this device's localStorage, without
+// destroying anything already here.
+//
+// Merge strategy:
+// - PROFILES_KEY (array of profile objects): profiles are merged by name.
+//   A name that doesn't exist locally is added as-is. A name that already
+//   exists locally is left untouched if the incoming profile looks
+//   identical (same JSON), otherwise the incoming one is added under a
+//   suffixed name ("Name (2)", "Name (3)", ...) so no data is silently
+//   overwritten or lost.
+// - ACTIVE_PROFILE_KEY / LANG_PAIR_KEY: left untouched if this device
+//   already has a value (these are single-value device settings, not data
+//   to merge); adopted from the import only if unset locally.
+// - Every other key is a "per-profile-name object" (profileName -> data).
+//   Local entries win; a profile name present only in the incoming data is
+//   added. If a profile name was renamed above (collision), the same
+//   renamed key is used here so its progress data stays attached to it.
+export function mergeImportedData(imported) {
+  if (!imported || typeof imported !== "object") {
+    return { importedProfiles: 0, renamedProfiles: [] };
+  }
+
+  const nameRemap = {}; // incoming name -> name actually used locally
+  const renamedProfiles = [];
+  let importedProfiles = 0;
+
+  // 1. Merge profiles first, so we know the final name for every incoming profile.
+  const localProfiles = getProfiles();
+  const localByName = new Map(localProfiles.map((p) => [p.name, p]));
+  const incomingProfiles = Array.isArray(imported[PROFILES_KEY]) ? imported[PROFILES_KEY] : [];
+
+  for (const incoming of incomingProfiles) {
+    if (!incoming || !incoming.name) continue;
+    const existing = localByName.get(incoming.name);
+    if (!existing) {
+      localProfiles.push(incoming);
+      localByName.set(incoming.name, incoming);
+      nameRemap[incoming.name] = incoming.name;
+      importedProfiles += 1;
+      continue;
+    }
+    if (JSON.stringify(existing) === JSON.stringify(incoming)) {
+      // Identical profile already present locally: nothing to do.
+      nameRemap[incoming.name] = incoming.name;
+      continue;
+    }
+    // Name collision with different data: keep both, suffix the incoming one.
+    let n = 2;
+    let candidate = `${incoming.name} (${n})`;
+    while (localByName.has(candidate)) {
+      n += 1;
+      candidate = `${incoming.name} (${n})`;
+    }
+    const renamed = { ...incoming, name: candidate };
+    localProfiles.push(renamed);
+    localByName.set(candidate, renamed);
+    nameRemap[incoming.name] = candidate;
+    renamedProfiles.push({ from: incoming.name, to: candidate });
+    importedProfiles += 1;
+  }
+  saveProfiles(localProfiles);
+
+  if (!getActiveProfileName() && localProfiles.length > 0) {
+    setActiveProfileName(localProfiles[0].name);
+  }
+
+  // 2. Merge every other per-profile-name-keyed object, honoring the same
+  // name remap so a renamed profile's progress stays with it.
+  for (const key of SYNC_STORAGE_KEYS) {
+    if (key === PROFILES_KEY || key === ACTIVE_PROFILE_KEY || key === LANG_PAIR_KEY) continue;
+    const incomingForKey = imported[key];
+    if (!incomingForKey || typeof incomingForKey !== "object") continue;
+
+    let localForKey;
+    try {
+      const raw = localStorage.getItem(key);
+      localForKey = raw ? JSON.parse(raw) : {};
+    } catch {
+      localForKey = {};
+    }
+
+    for (const [profileName, value] of Object.entries(incomingForKey)) {
+      const finalName = nameRemap[profileName] || profileName;
+      if (!(finalName in localForKey)) {
+        localForKey[finalName] = value;
+      }
+      // If it already exists locally, local data wins (no overwrite).
+    }
+
+    try {
+      localStorage.setItem(key, JSON.stringify(localForKey));
+    } catch {
+      // ignore quota / privacy-mode errors
+    }
+  }
+
+  if (!getLangPair() && imported[LANG_PAIR_KEY]) {
+    setLangPair(imported[LANG_PAIR_KEY]);
+  }
+
+  return { importedProfiles, renamedProfiles };
+}
+
 export function getCompletedCircuits(profileName) {
   const all = loadCompletedCircuits();
   return all[profileName || "Explorer"] || [];

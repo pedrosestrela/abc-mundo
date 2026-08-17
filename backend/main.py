@@ -4,12 +4,14 @@ Minimal FastAPI + sqlite3 (stdlib) backend. Serves the built frontend as
 static files (if present) and exposes a tiny best-effort progress-ping API.
 No authentication, no ORM, kept intentionally small.
 """
+import json
 import os
+import secrets
 import sqlite3
-from datetime import datetime, timezone
-from typing import Optional
+from datetime import datetime, timedelta, timezone
+from typing import Any, Optional
 
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
@@ -35,6 +37,16 @@ def init_db() -> None:
                 module TEXT,
                 event TEXT,
                 created_at TEXT
+            )
+            """
+        )
+        conn.execute(
+            """
+            CREATE TABLE IF NOT EXISTS sync_blobs (
+                code TEXT PRIMARY KEY,
+                data TEXT,
+                created_at TEXT,
+                expires_at TEXT
             )
             """
         )
@@ -98,6 +110,74 @@ def progress_summary():
             conn.close()
     except Exception:
         return {"summary": []}
+
+
+SYNC_CODE_ALPHABET = "23456789ABCDEFGHJKMNPQRSTUVWXYZ"  # no 0/O/1/I to avoid confusion
+SYNC_CODE_LENGTH = 6
+SYNC_EXPIRY_HOURS = 48
+
+
+def generate_sync_code() -> str:
+    return "".join(secrets.choice(SYNC_CODE_ALPHABET) for _ in range(SYNC_CODE_LENGTH))
+
+
+class SyncUpload(BaseModel):
+    data: Any
+
+
+@app.post("/api/sync/upload")
+def sync_upload(payload: SyncUpload):
+    now = datetime.now(timezone.utc)
+    expires_at = now + timedelta(hours=SYNC_EXPIRY_HOURS)
+    conn = sqlite3.connect(DB_PATH)
+    try:
+        # Opportunistic cleanup of expired rows on every upload, avoiding the
+        # need for any separate scheduled-job infrastructure.
+        conn.execute("DELETE FROM sync_blobs WHERE expires_at < ?", (now.isoformat(),))
+
+        code = generate_sync_code()
+        # Extremely unlikely, but guard against a code collision.
+        for _ in range(5):
+            existing = conn.execute("SELECT 1 FROM sync_blobs WHERE code = ?", (code,)).fetchone()
+            if not existing:
+                break
+            code = generate_sync_code()
+
+        conn.execute(
+            "INSERT INTO sync_blobs (code, data, created_at, expires_at) VALUES (?, ?, ?, ?)",
+            (code, json.dumps(payload.data), now.isoformat(), expires_at.isoformat()),
+        )
+        conn.commit()
+        return {"code": code, "expires_at": expires_at.isoformat()}
+    finally:
+        conn.close()
+
+
+@app.get("/api/sync/download/{code}")
+def sync_download(code: str):
+    now = datetime.now(timezone.utc)
+    conn = sqlite3.connect(DB_PATH)
+    try:
+        conn.row_factory = sqlite3.Row
+        row = conn.execute(
+            "SELECT code, data, expires_at FROM sync_blobs WHERE code = ?", (code.upper(),)
+        ).fetchone()
+        if row is None:
+            raise HTTPException(status_code=404, detail="Code not found")
+
+        expires_at = row["expires_at"]
+        if expires_at < now.isoformat():
+            conn.execute("DELETE FROM sync_blobs WHERE code = ?", (row["code"],))
+            conn.commit()
+            raise HTTPException(status_code=404, detail="Code expired")
+
+        data = json.loads(row["data"])
+        # One-time-use: delete once successfully retrieved.
+        conn.execute("DELETE FROM sync_blobs WHERE code = ?", (row["code"],))
+        conn.commit()
+        return {"data": data}
+    finally:
+        conn.close()
 
 
 # Serve built frontend (if present) at "/". Must not crash if missing,

@@ -58,6 +58,54 @@ def test_progress_summary_reflects_logged_events():
     assert any(row["module"] == "reading" and row["event"] == "word_read" for row in summary)
 
 
+def test_sync_upload_returns_code_and_download_returns_data():
+    payload = {"data": {"profiles": [{"name": "Ana"}], "progress": {"Ana": {"xp": 10}}}}
+    upload_resp = client.post("/api/sync/upload", json=payload)
+    assert upload_resp.status_code == 200
+    body = upload_resp.json()
+    code = body["code"]
+    assert len(code) == 6
+    assert "expires_at" in body
+
+    download_resp = client.get(f"/api/sync/download/{code}")
+    assert download_resp.status_code == 200
+    assert download_resp.json()["data"] == payload["data"]
+
+
+def test_sync_download_missing_code_returns_404():
+    resp = client.get("/api/sync/download/ZZZZZZ")
+    assert resp.status_code == 404
+
+
+def test_sync_download_code_deleted_after_retrieval():
+    upload_resp = client.post("/api/sync/upload", json={"data": {"foo": "bar"}})
+    code = upload_resp.json()["code"]
+
+    first = client.get(f"/api/sync/download/{code}")
+    assert first.status_code == 200
+
+    second = client.get(f"/api/sync/download/{code}")
+    assert second.status_code == 404
+
+
+def test_sync_download_expired_code_returns_404():
+    upload_resp = client.post("/api/sync/upload", json={"data": {"foo": "bar"}})
+    code = upload_resp.json()["code"]
+
+    # Manually force expiry directly in the DB.
+    import sqlite3
+    from datetime import datetime, timedelta, timezone
+
+    conn = sqlite3.connect(main.DB_PATH)
+    past = (datetime.now(timezone.utc) - timedelta(hours=1)).isoformat()
+    conn.execute("UPDATE sync_blobs SET expires_at = ? WHERE code = ?", (past, code))
+    conn.commit()
+    conn.close()
+
+    resp = client.get(f"/api/sync/download/{code}")
+    assert resp.status_code == 404
+
+
 def test_resolve_static_path_rejects_traversal():
     assert main.resolve_static_path("static", "../../../../etc/passwd") is None
     assert main.resolve_static_path("static", "..%2f..%2fetc/passwd") is not None  # not decoded here; literal chars stay inside static/
