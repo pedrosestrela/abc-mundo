@@ -11,8 +11,16 @@ function humanizeSkill(skill) {
     .join(" ");
 }
 
+function formatReportDate(locale) {
+  try {
+    return new Date().toLocaleDateString(locale, { year: "numeric", month: "long", day: "numeric" });
+  } catch {
+    return new Date().toLocaleDateString();
+  }
+}
+
 export default function ParentDashboard() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const profile = getProfile();
   const progress = getProgress(profile?.name);
 
@@ -55,6 +63,16 @@ export default function ParentDashboard() {
             <p className="parent-empty">{t("modules.parentsEmpty")}</p>
           ) : (
             <>
+              <div className="parent-actions no-print">
+                <button type="button" className="parent-export-btn" onClick={() => window.print()}>
+                  🖨️ {t("modules.parentsExportPdf")}
+                </button>
+              </div>
+
+              <p className="parent-report-date print-only">
+                {t("modules.parentsReportGenerated", { defaultValue: "Relatório gerado em" })} {formatReportDate(i18n.language)}
+              </p>
+
               <section className="parent-section">
                 <h2>{t("modules.parentsSummary")}</h2>
                 <div className="parent-summary-grid">

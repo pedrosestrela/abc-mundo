@@ -1599,6 +1599,30 @@ body {
   font-size: clamp(1.4rem, 4vw, 1.9rem);
 }
 
+.parent-actions {
+  margin-bottom: 16px;
+}
+
+.parent-export-btn {
+  background: var(--purple);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 18px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+.parent-export-btn:hover {
+  filter: brightness(1.05);
+}
+
+.print-only {
+  display: none;
+}
+
 .parent-header-card {
   display: flex;
   align-items: center;
@@ -3930,5 +3954,44 @@ body {
   .checkers-piece {
     width: 26px;
     height: 26px;
+  }
+}
+
+/* Printable parent progress report: hides app chrome (nav, buttons) and
+   turns the parent dashboard into a clean, ink-friendly one/two-page
+   summary when the parent clicks "Export PDF" and uses the browser's
+   print dialog (Save as PDF). */
+@media print {
+  .navbar,
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .app-main {
+    padding: 0;
+  }
+  body,
+  .page,
+  .parent-page {
+    background: #fff !important;
+    color: #000 !important;
+  }
+  .parent-header-card,
+  .parent-summary-tile,
+  .parent-list-item,
+  .parent-empty,
+  .parent-muted {
+    box-shadow: none !important;
+    border: 1px solid #ddd;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .parent-section {
+    break-inside: avoid;
+  }
+  .parent-history-list {
+    display: none;
   }
 }
