@@ -15,4 +15,6 @@ export * from "./scenery.jsx";
 export * from "./icons.jsx";
 export * from "./humanEvolution.jsx";
 export * from "./techHistory.jsx";
+export * from "./kitchen.jsx";
+export * from "./circuits.jsx";
 export { PALETTE, STROKE, STROKE_WIDTH } from "./palette.js";

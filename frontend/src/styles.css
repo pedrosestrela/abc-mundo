@@ -3995,3 +3995,37 @@ body {
     display: none;
   }
 }
+
+/* Circuit Lab */
+.circuit-slots {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  font-size: 2.4rem;
+  margin: 0.8rem 0;
+}
+.circuit-slot {
+  min-width: 1.4em;
+  text-align: center;
+}
+.circuit-success-glow .circuit-slot {
+  animation: circuit-glow 0.9s ease-in-out 2;
+}
+.circuit-success-spin .circuit-slot {
+  animation: circuit-spin 0.7s linear 3;
+}
+.circuit-success-shake .circuit-slot {
+  animation: circuit-buzz 0.15s linear 6;
+}
+@keyframes circuit-glow {
+  0%, 100% { filter: drop-shadow(0 0 0 transparent); transform: scale(1); }
+  50% { filter: drop-shadow(0 0 12px gold); transform: scale(1.15); }
+}
+@keyframes circuit-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@keyframes circuit-buzz {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(3px); }
+}
