@@ -1,10 +1,85 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { getWhys } from "../content/index.js";
-import { getLangPair, getProfile, pingProgress, exploreWhy, getExploredWhys } from "../storage.js";
+import { getLangPair, getProfile, pingProgress, exploreWhy, getExploredWhys, recordSkillEvent } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
 import HelpButton from "../components/HelpButton.jsx";
 import MascotBubble from "../components/mascots/MascotBubble.jsx";
+
+function shuffle(arr) {
+  const copy = [...arr];
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+}
+
+// Simple picture+text multiple-choice mini-quiz shown after a "why" card is
+// opened, built entirely from data already present on the whys (each
+// card's quickAnswer becomes the correct option, two other cards' quick
+// answers become distractors) — no extra per-language content needed.
+// Anti-guessing: wrong taps disable that option instead of allowing
+// repeated blind clicks. Mirrors HumanEvolution/TechHistory's StageQuiz.
+function WhyQuiz({ why, whys, pair, profile, t }) {
+  const [options] = useState(() => {
+    const others = shuffle(whys.filter((w) => w.id !== why.id && w.quickAnswer)).slice(0, 2);
+    return shuffle([why, ...others]);
+  });
+  const [wrongIds, setWrongIds] = useState([]);
+  const [solved, setSolved] = useState(false);
+
+  if (options.length < 3) return null;
+
+  function pick(option) {
+    if (solved) return;
+    if (option.id === why.id) {
+      setSolved(true);
+      recordSkillEvent(profile?.name, "whys-quiz", wrongIds.length === 0);
+      pingProgress({ profileName: profile?.name, module: "whys", event: `quiz_solved:${why.id}` });
+    } else {
+      setWrongIds((prev) => (prev.includes(option.id) ? prev : [...prev, option.id]));
+      pingProgress({ profileName: profile?.name, module: "whys", event: `quiz_attempt:${why.id}` });
+    }
+  }
+
+  const prompt = t("modules.whysQuizPrompt");
+
+  return (
+    <div className="why-tier">
+      <strong>❓ {t("modules.whysQuizTitle")}</strong>
+      <div className="why-tier-header">
+        <p>{prompt}</p>
+        <SpeakButton text={prompt} langCode={pair.mother} />
+      </div>
+      <div className="game-options">
+        {options.map((opt) => (
+          <div className="game-option-row" key={opt.id}>
+            <button
+              type="button"
+              disabled={solved || wrongIds.includes(opt.id)}
+              className={
+                "big-btn game-option" +
+                (solved && opt.id === why.id ? " correct" : "") +
+                (wrongIds.includes(opt.id) ? " wrong" : "")
+              }
+              onClick={() => pick(opt)}
+            >
+              {opt.emoji} {opt.quickAnswer}
+            </button>
+            <SpeakButton text={opt.quickAnswer} langCode={pair.mother} />
+          </div>
+        ))}
+      </div>
+      {solved && (
+        <div className="science-explanation">
+          <p className="game-result">⭐ {t("modules.whysQuizCorrect")}</p>
+          <SpeakButton text={t("modules.whysQuizCorrect")} langCode={pair.mother} />
+        </div>
+      )}
+    </div>
+  );
+}
 
 export default function Whys() {
   const { t } = useTranslation();
@@ -146,6 +221,10 @@ export default function Whys() {
                         </div>
                       )}
                     </div>
+                  )}
+
+                  {tierState.more && (
+                    <WhyQuiz key={why.id} why={why} whys={whys} pair={pair} profile={profile} t={t} />
                   )}
 
                   {why.relatedQuestionIds && why.relatedQuestionIds.length > 0 && (
