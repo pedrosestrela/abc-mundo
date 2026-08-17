@@ -7,7 +7,8 @@ const ROUTES = [
   "/reading", "/phrases", "/songs", "/game", "/music",
   "/stories", "/rhymes", "/math", "/financial", "/parents", "/achievements",
   "/missions", "/world", "/detective", "/whys", "/robots", "/art",
-  "/science", "/history", "/lifeskills", "/computing", "/how-it-works",
+  "/science", "/history", "/human-evolution", "/tech-history", "/lifeskills",
+  "/mini-chef", "/circuit-lab", "/computing", "/how-it-works",
   "/thinking", "/learning-strategies", "/city", "/nature-diary",
   "/writing", "/communication", "/traffic-school",
 ];
@@ -213,6 +214,35 @@ const interactions = {
         const answer = page.locator("[class*='quiz'] button, [class*='option']").first();
         if (await answer.count()) await answer.click().catch(() => {});
       }
+
+      // Word search: tap the first two cells of a straight line to try to
+      // find a word (start + end of a run).
+      if (/sopa|word.?search/.test(label)) {
+        const cells = page.locator(".wordsearch-cell");
+        const cn = await cells.count();
+        if (cn > 0) {
+          await cells.nth(0).click().catch(() => {});
+          await page.waitForTimeout(150);
+          const cols = await page.locator(".wordsearch-grid").getAttribute("style");
+          const match = cols && cols.match(/repeat\((\d+)/);
+          const size = match ? parseInt(match[1], 10) : Math.round(Math.sqrt(cn));
+          // Attempt a horizontal run from the first cell as a plausible word span.
+          await cells.nth(Math.min(size - 1, cn - 1)).click().catch(() => {});
+          await page.waitForTimeout(200);
+        }
+      }
+
+      // Jigsaw: tap two pieces to swap them.
+      if (/quebra|jigsaw|puzzle/.test(label)) {
+        const pieces = page.locator(".jigsaw-piece");
+        const pn = await pieces.count();
+        if (pn > 1) {
+          await pieces.nth(0).click().catch(() => {});
+          await page.waitForTimeout(150);
+          await pieces.nth(1).click().catch(() => {});
+          await page.waitForTimeout(200);
+        }
+      }
     }
   },
   "/traffic-school": async () => {
@@ -348,6 +378,83 @@ const interactions = {
     const text = await page.evaluate(() => document.body.innerText);
     if (/NaN|undefined/i.test(text)) {
       throw new Error("Passaporte de Competencias shows NaN/undefined");
+    }
+  },
+  "/parents": async () => {
+    // Lembretes: flip the enable toggle (may prompt for Notification
+    // permission, which is auto-granted/denied by Chromium in headless
+    // runs without blocking).
+    const reminderToggle = page.locator(".reminder-toggle-row input[type='checkbox']").first();
+    if (await reminderToggle.count()) {
+      await reminderToggle.click().catch(() => {});
+      await page.waitForTimeout(200);
+    }
+
+    // Backup & Sincronizar: exercise a real export round-trip against the
+    // running preview server (which proxies /api to the backend, or the
+    // backend serves the built frontend directly).
+    const exportBtn = page.locator(".sync-export-btn").first();
+    if (await exportBtn.count()) {
+      await exportBtn.click().catch(() => {});
+      await page.waitForTimeout(1500);
+      const codeBox = page.locator(".sync-code-value").first();
+      const errorBox = page.locator(".sync-error").first();
+      if (await errorBox.count()) {
+        throw new Error("Sync export failed: " + (await errorBox.textContent()));
+      }
+      if (await codeBox.count()) {
+        const code = (await codeBox.textContent()).trim();
+        const importInput = page.locator(".sync-import-input").first();
+        await importInput.fill(code);
+        const importBtn = page.locator(".sync-import-btn").first();
+        await importBtn.click().catch(() => {});
+        await page.waitForTimeout(1500);
+        const importError = page.locator(".sync-import ~ * .sync-error, .sync-import .sync-error").first();
+        if (await importError.count()) {
+          throw new Error("Sync import failed: " + (await importError.textContent()));
+        }
+      }
+    }
+  },
+  "/human-evolution": async () => {
+    const compareTab = page.locator(".phonics-tab", { hasText: /compar/i }).first();
+    if (await compareTab.count()) {
+      await compareTab.click().catch(() => {});
+      await page.waitForTimeout(300);
+    }
+  },
+  "/tech-history": async () => {
+    const topicTabs = page.locator(".phonics-tabs").first().locator(".phonics-tab");
+    const n = await topicTabs.count();
+    for (let i = 0; i < Math.min(n, 3); i++) {
+      await topicTabs.nth(i).click().catch(() => {});
+      await page.waitForTimeout(200);
+    }
+    const renewableFilter = page.locator(".phonics-tab", { hasText: /renov|renewable/i }).first();
+    if (await renewableFilter.count()) await renewableFilter.click().catch(() => {});
+  },
+  "/mini-chef": async () => {
+    const recipeCard = page.locator(".computing-term-btn").first();
+    if (await recipeCard.count()) {
+      await recipeCard.click().catch(() => {});
+      await page.waitForTimeout(300);
+      const ingredient = page.locator(".game-options button").first();
+      if (await ingredient.count()) {
+        await ingredient.click().catch(() => {});
+        await page.waitForTimeout(300);
+      }
+    }
+  },
+  "/circuit-lab": async () => {
+    const challengeCard = page.locator(".computing-term-btn").first();
+    if (await challengeCard.count()) {
+      await challengeCard.click().catch(() => {});
+      await page.waitForTimeout(300);
+      const part = page.locator(".game-options button").first();
+      if (await part.count()) {
+        await part.click().catch(() => {});
+        await page.waitForTimeout(300);
+      }
     }
   },
 };
