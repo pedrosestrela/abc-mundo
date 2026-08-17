@@ -106,6 +106,47 @@ def test_sync_download_expired_code_returns_404():
     assert resp.status_code == 404
 
 
+def test_sync_upload_rejects_oversized_payload():
+    huge = {"data": {"blob": "x" * (main.SYNC_MAX_BLOB_BYTES + 1)}}
+    resp = client.post("/api/sync/upload", json=huge)
+    assert resp.status_code == 413
+
+
+def test_sync_upload_accepts_payload_at_limit():
+    # Leave room for the JSON wrapper (`{"blob": "..."}`) so the serialized
+    # size stays at/under the limit.
+    filler = "x" * (main.SYNC_MAX_BLOB_BYTES - 200)
+    resp = client.post("/api/sync/upload", json={"data": {"blob": filler}})
+    assert resp.status_code == 200
+
+
+def test_is_rate_limited_pure_function():
+    hits: dict = {}
+    limit = 3
+    window = 60.0
+    # First `limit` calls within the window are allowed.
+    for i in range(limit):
+        assert main.is_rate_limited(hits, "1.2.3.4", 1000.0 + i, limit, window) is False
+    # The next call within the same window is blocked.
+    assert main.is_rate_limited(hits, "1.2.3.4", 1000.0 + limit, limit, window) is True
+    # A different key has its own independent budget.
+    assert main.is_rate_limited(hits, "5.6.7.8", 1000.0, limit, window) is False
+    # Once the window has fully elapsed, the original key is allowed again.
+    assert main.is_rate_limited(hits, "1.2.3.4", 1000.0 + window + 1, limit, window) is False
+
+
+def test_sync_download_rate_limited_after_threshold():
+    main._sync_download_hits.clear()
+    upload_resp = client.post("/api/sync/upload", json={"data": {"foo": "bar"}})
+    code = upload_resp.json()["code"]
+
+    last_status = None
+    for _ in range(main.SYNC_DOWNLOAD_RATE_LIMIT + 1):
+        last_status = client.get(f"/api/sync/download/{code}").status_code
+    assert last_status == 429
+    main._sync_download_hits.clear()
+
+
 def test_resolve_static_path_rejects_traversal():
     assert main.resolve_static_path("static", "../../../../etc/passwd") is None
     assert main.resolve_static_path("static", "..%2f..%2fetc/passwd") is not None  # not decoded here; literal chars stay inside static/

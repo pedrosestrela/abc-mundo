@@ -11,7 +11,7 @@ import sqlite3
 from datetime import datetime, timedelta, timezone
 from typing import Any, Optional
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
@@ -116,6 +116,45 @@ SYNC_CODE_ALPHABET = "23456789ABCDEFGHJKMNPQRSTUVWXYZ"  # no 0/O/1/I to avoid co
 SYNC_CODE_LENGTH = 6
 SYNC_EXPIRY_HOURS = 48
 
+# Upstream client is a JSON dump of on-device profile/progress data (small).
+# 256KB is generous headroom for that while blocking a buggy/malicious
+# client from filling the disk with an unbounded blob.
+SYNC_MAX_BLOB_BYTES = 256_000
+
+# The sync code space (6 chars, 32-char alphabet = ~1.07 billion codes) is
+# only safe from brute-forcing if lookups are rate-limited; otherwise a
+# script can scan codes fast enough within the 48h expiry window to have a
+# real chance of hitting a live one and stealing another user's synced
+# profile data. Keep this in-process (no extra infra) since the app has a
+# single backend instance and abuse only needs to be slowed, not perfectly
+# blocked.
+SYNC_DOWNLOAD_RATE_LIMIT = 20
+SYNC_DOWNLOAD_RATE_WINDOW_SECONDS = 60
+_sync_download_hits: dict[str, list[float]] = {}
+
+
+def is_rate_limited(
+    hits_by_key: dict[str, list[float]],
+    key: str,
+    now_ts: float,
+    limit: int,
+    window_seconds: float,
+) -> bool:
+    """Pure sliding-window rate limiter. Mutates hits_by_key to record this
+    attempt's timestamp (whether or not it is allowed) and returns True if
+    `key` has already made >= `limit` requests within `window_seconds`
+    before `now_ts`."""
+    window_start = now_ts - window_seconds
+    recent = [t for t in hits_by_key.get(key, []) if t > window_start]
+    limited = len(recent) >= limit
+    recent.append(now_ts)
+    hits_by_key[key] = recent
+    return limited
+
+
+def client_ip(request: Request) -> str:
+    return request.client.host if request.client else "unknown"
+
 
 def generate_sync_code() -> str:
     return "".join(secrets.choice(SYNC_CODE_ALPHABET) for _ in range(SYNC_CODE_LENGTH))
@@ -129,6 +168,11 @@ class SyncUpload(BaseModel):
 def sync_upload(payload: SyncUpload):
     now = datetime.now(timezone.utc)
     expires_at = now + timedelta(hours=SYNC_EXPIRY_HOURS)
+
+    serialized = json.dumps(payload.data)
+    if len(serialized.encode("utf-8")) > SYNC_MAX_BLOB_BYTES:
+        raise HTTPException(status_code=413, detail="Sync data too large")
+
     conn = sqlite3.connect(DB_PATH)
     try:
         # Opportunistic cleanup of expired rows on every upload, avoiding the
@@ -145,7 +189,7 @@ def sync_upload(payload: SyncUpload):
 
         conn.execute(
             "INSERT INTO sync_blobs (code, data, created_at, expires_at) VALUES (?, ?, ?, ?)",
-            (code, json.dumps(payload.data), now.isoformat(), expires_at.isoformat()),
+            (code, serialized, now.isoformat(), expires_at.isoformat()),
         )
         conn.commit()
         return {"code": code, "expires_at": expires_at.isoformat()}
@@ -154,8 +198,18 @@ def sync_upload(payload: SyncUpload):
 
 
 @app.get("/api/sync/download/{code}")
-def sync_download(code: str):
+def sync_download(code: str, request: Request):
     now = datetime.now(timezone.utc)
+
+    if is_rate_limited(
+        _sync_download_hits,
+        client_ip(request),
+        now.timestamp(),
+        SYNC_DOWNLOAD_RATE_LIMIT,
+        SYNC_DOWNLOAD_RATE_WINDOW_SECONDS,
+    ):
+        raise HTTPException(status_code=429, detail="Too many requests, try again later")
+
     conn = sqlite3.connect(DB_PATH)
     try:
         conn.row_factory = sqlite3.Row
