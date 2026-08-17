@@ -1126,3 +1126,77 @@ export function visitTechHistoryStage(profileName, topicId, stageId) {
   saveVisitedTechHistory(all);
   return forName[topicId];
 }
+
+// --- Mini Chef ---
+// Tracks which recipe ids the child has finished cooking, per profile.
+
+const COOKED_RECIPES_KEY = "abcmundo.cookedRecipes";
+
+function loadCookedRecipes() {
+  try {
+    const raw = localStorage.getItem(COOKED_RECIPES_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveCookedRecipes(all) {
+  try {
+    localStorage.setItem(COOKED_RECIPES_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getCookedRecipes(profileName) {
+  const all = loadCookedRecipes();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function cookRecipe(profileName, recipeId) {
+  const name = profileName || "Explorer";
+  const all = loadCookedRecipes();
+  const cooked = new Set(all[name] || []);
+  cooked.add(recipeId);
+  all[name] = Array.from(cooked);
+  saveCookedRecipes(all);
+  return all[name];
+}
+
+// --- Circuit Lab ---
+// Tracks which circuit challenge ids the child has successfully completed.
+
+const COMPLETED_CIRCUITS_KEY = "abcmundo.completedCircuits";
+
+function loadCompletedCircuits() {
+  try {
+    const raw = localStorage.getItem(COMPLETED_CIRCUITS_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveCompletedCircuits(all) {
+  try {
+    localStorage.setItem(COMPLETED_CIRCUITS_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getCompletedCircuits(profileName) {
+  const all = loadCompletedCircuits();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function completeCircuit(profileName, challengeId) {
+  const name = profileName || "Explorer";
+  const all = loadCompletedCircuits();
+  const done = new Set(all[name] || []);
+  done.add(challengeId);
+  all[name] = Array.from(done);
+  saveCompletedCircuits(all);
+  return all[name];
+}

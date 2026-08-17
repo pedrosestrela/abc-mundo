@@ -149,6 +149,7 @@ const GROUPS = [
       { to: "/whys", emoji: "❓", nav: "whys", sub: "sub_whys" },
       { to: "/computing", emoji: "💻", nav: "computing", sub: "sub_computing" },
       { to: "/how-it-works", emoji: "🔧", nav: "howThingsWork", sub: "sub_howThingsWork" },
+      { to: "/circuit-lab", emoji: "🔌", nav: "circuitLab", sub: "sub_circuitLab" },
       { to: "/thinking", emoji: "🧠", nav: "thinking", sub: "sub_thinking" },
       { to: "/communication", emoji: "🗣️", nav: "communication", sub: "sub_communication" },
       { to: "/learning-strategies", emoji: "🧠✨", nav: "learningStrategies", sub: "sub_learningStrategies" },
@@ -161,6 +162,7 @@ const GROUPS = [
     Motif: LifeMotif,
     tiles: [
       { to: "/lifeskills", emoji: "🌱", nav: "lifeskills", sub: "sub_lifeskills" },
+      { to: "/mini-chef", emoji: "👩‍🍳", nav: "miniChef", sub: "sub_miniChef" },
       { to: "/traffic-school", emoji: "🚦", nav: "trafficSchool", sub: "sub_trafficSchool" },
     ],
   },
