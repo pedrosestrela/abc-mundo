@@ -1,14 +1,40 @@
 :root {
-  --pink: #ff6b6b;
+  /* Palette tuned to clear WCAG AA's 3:1 "large text / UI component"
+     contrast ratio against a white background (the vast majority of usages
+     across the app are bold headings, buttons, and badges, all of which
+     qualify as large text or UI components under WCAG 1.4.3/1.4.11).
+     Values are a small nudge (same hue/saturation, slightly deeper) from
+     the original palette, not a redesign - see the accessibility audit
+     notes for the handful of small/normal-weight text usages that still
+     fall short of the stricter 4.5:1 normal-text threshold and were left
+     as documented follow-up work rather than risking a broader palette
+     change. */
+  --pink: #ff5b5b;
   --yellow: #ffd93d;
-  --green: #6bcb77;
-  --blue: #4d96ff;
+  --green: #3ba849;
+  --blue: #4893ff;
   --purple: #9b5de5;
   color-scheme: light;
 }
 
 * {
   box-sizing: border-box;
+}
+
+/* Visible keyboard-focus ring for every interactive element. Nothing was
+   suppressing the browser default before this, but there was also no
+   explicit, consistent style - this guarantees a clear indicator for
+   keyboard/switch-device navigation across every custom button/link/input
+   in the app, using :focus-visible so it only shows for keyboard/assistive
+   input and not for mouse/touch clicks. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--blue, #4893ff);
+  outline-offset: 2px;
 }
 
 body {
@@ -65,6 +91,10 @@ body {
   padding: 8px 6px;
   border-radius: 12px;
   min-width: 56px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -1370,12 +1400,18 @@ body {
   background: rgba(255, 255, 255, 0.6);
   border: none;
   border-radius: 50%;
-  width: 24px;
-  height: 24px;
+  /* Bumped from 24px to the 44px touch-target minimum (Apple HIG) for
+     small motor control; padding keeps the visible icon glyph the same
+     size as before. */
+  width: 44px;
+  height: 44px;
   font-size: 0.85rem;
   line-height: 1;
   cursor: pointer;
   flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .game-prompt {
@@ -1432,8 +1468,8 @@ body {
   background: #f0f0f0;
   border: 2px solid #ccc;
   border-radius: 999px;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   line-height: 1;
   cursor: pointer;
   margin: 6px auto;
@@ -1485,8 +1521,8 @@ body {
 }
 
 .help-btn-bubble-speak {
-  width: 32px;
-  height: 32px;
+  width: 44px;
+  height: 44px;
   font-size: 1rem;
 }
 
@@ -2443,8 +2479,8 @@ body {
 }
 
 .drawing-swatch {
-  width: 28px;
-  height: 28px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   border: 3px solid transparent;
   cursor: pointer;
@@ -2461,8 +2497,8 @@ body {
 }
 
 .drawing-size-btn {
-  width: 32px;
-  height: 32px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   border: 2px solid #ddd;
   background: #fff;
@@ -3462,8 +3498,8 @@ body {
   margin: 10px auto;
 }
 .pixel-art-swatch {
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   border: 3px solid transparent;
   cursor: pointer;
@@ -4250,8 +4286,8 @@ body {
   background: #f0f0f0;
   border: 2px solid #ccc;
   border-radius: 999px;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   line-height: 1;
   cursor: pointer;
   padding: 0;
@@ -4267,5 +4303,4 @@ body {
 
 .navbar-bedtime-toggle {
   margin: auto 4px auto 0;
-}
 }

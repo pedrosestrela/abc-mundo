@@ -63,7 +63,19 @@ export default function Phrases() {
           const m = motherPhrases[i];
           const s = secondaryPhrases[i];
           return (
-            <div className="reading-card phrase-card" key={i} onClick={() => handleView(m.phrase)}>
+            <div
+              className="reading-card phrase-card"
+              key={i}
+              role="button"
+              tabIndex={0}
+              onClick={() => handleView(m.phrase)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  handleView(m.phrase);
+                }
+              }}
+            >
               <div className="reading-emoji">{m.emoji}</div>
               <div className="reading-words">
                 <div className="reading-word-row phrase-row">

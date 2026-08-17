@@ -672,7 +672,19 @@ export default function Financial() {
               const m = motherConcepts[i];
               const s = secondaryConcepts[i];
               return (
-                <div className="reading-card" key={m.id} onClick={() => handleViewConcept(m)}>
+                <div
+                  className="reading-card"
+                  key={m.id}
+                  role="button"
+                  tabIndex={0}
+                  onClick={() => handleViewConcept(m)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" || e.key === " ") {
+                      e.preventDefault();
+                      handleViewConcept(m);
+                    }
+                  }}
+                >
                   <div className="reading-emoji">{m.emoji}</div>
                   <div className="reading-words">
                     <div className="reading-word-row">

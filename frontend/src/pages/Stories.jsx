@@ -231,7 +231,19 @@ export default function Stories() {
         {Array.from({ length: count }).map((_, i) => {
           const s = secondaryStories[i];
           return (
-            <div className="song-card story-card" key={s.id} onClick={() => openStory(i)}>
+            <div
+              className="song-card story-card"
+              key={s.id}
+              role="button"
+              tabIndex={0}
+              onClick={() => openStory(i)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  openStory(i);
+                }
+              }}
+            >
               <div className="story-card-emoji">{s.emoji}</div>
               <h2>{s.title}</h2>
             </div>

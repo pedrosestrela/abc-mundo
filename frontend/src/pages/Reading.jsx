@@ -31,7 +31,19 @@ export default function Reading() {
           const m = motherWords[i];
           const s = secondaryWords[i];
           return (
-            <div className="reading-card" key={i} onClick={() => handleView(m.word)}>
+            <div
+              className="reading-card"
+              key={i}
+              role="button"
+              tabIndex={0}
+              onClick={() => handleView(m.word)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  handleView(m.word);
+                }
+              }}
+            >
               <div className="reading-emoji">{m.emoji}</div>
               <div className="reading-words">
                 <div className="reading-word-row">
