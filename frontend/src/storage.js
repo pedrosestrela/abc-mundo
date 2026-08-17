@@ -1139,6 +1139,44 @@ export function visitEvolutionStage(profileName, stageId) {
   return all[name];
 }
 
+// --- Sistema Solar: visited card ids ---
+// Tracks which solar-system card ids the child has tapped/opened, mirroring
+// visitEvolutionStage/getVisitedEvolutionStages exactly.
+
+const VISITED_SOLAR_SYSTEM_STAGES_KEY = "abcmundo.visitedSolarSystemStages";
+
+function loadVisitedSolarSystemStages() {
+  try {
+    const raw = localStorage.getItem(VISITED_SOLAR_SYSTEM_STAGES_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveVisitedSolarSystemStages(all) {
+  try {
+    localStorage.setItem(VISITED_SOLAR_SYSTEM_STAGES_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getVisitedSolarSystemStages(profileName) {
+  const all = loadVisitedSolarSystemStages();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function visitSolarSystemStage(profileName, stageId) {
+  const name = profileName || "Explorer";
+  const all = loadVisitedSolarSystemStages();
+  const visited = new Set(all[name] || []);
+  visited.add(stageId);
+  all[name] = Array.from(visited);
+  saveVisitedSolarSystemStages(all);
+  return all[name];
+}
+
 // --- Tech History (car, lightbulb/electricity, ways to produce electricity):
 // visited timeline/topic stage ids ---
 // Tracks which tech-history stage ids the child has tapped/opened, keyed by
@@ -1274,6 +1312,7 @@ const SYNC_STORAGE_KEYS = [
   ART_CHARACTER_SAVES_KEY,
   EXPLORED_TRAFFIC_SIGNS_KEY,
   VISITED_EVOLUTION_STAGES_KEY,
+  VISITED_SOLAR_SYSTEM_STAGES_KEY,
   VISITED_TECH_HISTORY_KEY,
   COOKED_RECIPES_KEY,
   COMPLETED_CIRCUITS_KEY,
