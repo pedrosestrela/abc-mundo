@@ -12,6 +12,87 @@ import {
 import SpeakButton from "../components/SpeakButton.jsx";
 import HelpButton from "../components/HelpButton.jsx";
 
+function shuffle(arr) {
+  const copy = [...arr];
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+}
+
+// Simple picture+text multiple-choice mini-quiz shown once every part of an
+// object has been explored, built entirely from data already present on
+// the object's own parts (one part's explanation is the clue, its label
+// the correct option, two sibling parts' labels the distractors) — no
+// extra per-language content needed. Anti-guessing: wrong taps disable
+// that option. Mirrors HumanEvolution/TechHistory's StageQuiz.
+function PartsQuiz({ obj, pair, profile, t }) {
+  const [part] = useState(() => obj.parts[Math.floor(Math.random() * obj.parts.length)]);
+  const [options] = useState(() => {
+    const others = shuffle(obj.parts.filter((p) => p.id !== part.id)).slice(0, 2);
+    return shuffle([part, ...others]);
+  });
+  const [wrongIds, setWrongIds] = useState([]);
+  const [solved, setSolved] = useState(false);
+
+  if (options.length < 3) return null;
+
+  function pick(option) {
+    if (solved) return;
+    if (option.id === part.id) {
+      setSolved(true);
+      recordSkillEvent(profile?.name, "how-things-work-quiz", wrongIds.length === 0);
+      pingProgress({ profileName: profile?.name, module: "howThingsWork", event: `quiz_solved:${obj.id}:${part.id}` });
+    } else {
+      setWrongIds((prev) => (prev.includes(option.id) ? prev : [...prev, option.id]));
+      pingProgress({ profileName: profile?.name, module: "howThingsWork", event: `quiz_attempt:${obj.id}:${part.id}` });
+    }
+  }
+
+  const prompt = t("modules.howThingsWorkQuizPrompt");
+
+  return (
+    <div className="game-card">
+      <div className="game-emoji">❓</div>
+      <p className="mission-badge computing-topic-badge">{t("modules.howThingsWorkQuizTitle")}</p>
+      <p className="page-intro">
+        {prompt}
+        <SpeakButton text={prompt} langCode={pair.mother} />
+      </p>
+      <p className="mission-text">
+        {part.explanation}
+        <SpeakButton text={part.explanation} langCode={pair.mother} />
+      </p>
+      <div className="game-options">
+        {options.map((opt) => (
+          <div className="game-option-row" key={opt.id}>
+            <button
+              type="button"
+              disabled={solved || wrongIds.includes(opt.id)}
+              className={
+                "big-btn game-option" +
+                (solved && opt.id === part.id ? " correct" : "") +
+                (wrongIds.includes(opt.id) ? " wrong" : "")
+              }
+              onClick={() => pick(opt)}
+            >
+              {opt.emoji} {opt.label}
+            </button>
+            <SpeakButton text={opt.label} langCode={pair.mother} />
+          </div>
+        ))}
+      </div>
+      {solved && (
+        <div className="science-explanation">
+          <p className="game-result">⭐ {t("modules.howThingsWorkQuizCorrect")}</p>
+          <SpeakButton text={t("modules.howThingsWorkQuizCorrect")} langCode={pair.mother} />
+        </div>
+      )}
+    </div>
+  );
+}
+
 export default function HowThingsWork() {
   const { t } = useTranslation();
   const pair = getLangPair() || { mother: "pt", secondary: "en" };
@@ -142,6 +223,7 @@ export default function HowThingsWork() {
             {openObject.summary}
             <SpeakButton text={openObject.summary} langCode={pair.mother} />
           </p>
+          <PartsQuiz key={openObject.id} obj={openObject} pair={pair} profile={profile} t={t} />
           <button type="button" className="big-btn" onClick={() => handleOpenObject(openObject)}>
             ✅ {t("modules.howThingsWorkBack")}
           </button>

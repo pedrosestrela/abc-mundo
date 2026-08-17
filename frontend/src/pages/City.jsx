@@ -1,9 +1,86 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { getHouseSystems, getCitySystems } from "../content/index.js";
-import { getLangPair, getProfile, pingProgress } from "../storage.js";
+import { getLangPair, getProfile, pingProgress, recordSkillEvent } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
 import HelpButton from "../components/HelpButton.jsx";
+
+function shuffle(arr) {
+  const copy = [...arr];
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+}
+
+// Simple picture+text multiple-choice mini-quiz shown after a house/city
+// system card is opened, built entirely from data already present on the
+// items (the item's own prompt is the clue, its name/icon the correct
+// option, two sibling items' names the distractors) — no extra
+// per-language content needed. Anti-guessing: wrong taps disable that
+// option. Mirrors HumanEvolution/TechHistory's StageQuiz.
+function SystemQuiz({ item, items, pair, profile, t, skillId, eventPrefix }) {
+  const [options] = useState(() => {
+    const others = shuffle(items.filter((i) => i.id !== item.id)).slice(0, 2);
+    return shuffle([item, ...others]);
+  });
+  const [wrongIds, setWrongIds] = useState([]);
+  const [solved, setSolved] = useState(false);
+
+  if (options.length < 3) return null;
+
+  function pick(option) {
+    if (solved) return;
+    if (option.id === item.id) {
+      setSolved(true);
+      recordSkillEvent(profile?.name, skillId, wrongIds.length === 0);
+      pingProgress({ profileName: profile?.name, module: "city", event: `${eventPrefix}_quiz_solved:${item.id}` });
+    } else {
+      setWrongIds((prev) => (prev.includes(option.id) ? prev : [...prev, option.id]));
+      pingProgress({ profileName: profile?.name, module: "city", event: `${eventPrefix}_quiz_attempt:${item.id}` });
+    }
+  }
+
+  return (
+    <div className="science-explanation">
+      <p className="mission-badge computing-topic-badge">❓ {t("modules.cityQuizTitle")}</p>
+      <p className="mission-text">
+        {t("modules.cityQuizPrompt")}
+        <SpeakButton text={t("modules.cityQuizPrompt")} langCode={pair.mother} />
+      </p>
+      <p className="page-intro">
+        {item.prompt}
+        <SpeakButton text={item.prompt} langCode={pair.mother} />
+      </p>
+      <div className="game-options">
+        {options.map((opt) => (
+          <div className="game-option-row" key={opt.id}>
+            <button
+              type="button"
+              disabled={solved || wrongIds.includes(opt.id)}
+              className={
+                "big-btn game-option" +
+                (solved && opt.id === item.id ? " correct" : "") +
+                (wrongIds.includes(opt.id) ? " wrong" : "")
+              }
+              onClick={() => pick(opt)}
+            >
+              {opt.icon} {opt.name}
+            </button>
+            <SpeakButton text={opt.name} langCode={pair.mother} />
+          </div>
+        ))}
+      </div>
+      {solved && (
+        <div className="science-explanation">
+          <p className="game-result">⭐ {t("modules.cityQuizCorrect")}</p>
+          <SpeakButton text={t("modules.cityQuizCorrect")} langCode={pair.mother} />
+        </div>
+      )}
+    </div>
+  );
+}
 
 export default function City() {
   const { t } = useTranslation();
@@ -96,6 +173,16 @@ export default function City() {
                   ))}
                   <SpeakButton text={item.steps.join(" ")} langCode={pair.mother} />
                 </div>
+                <SystemQuiz
+                  key={item.id}
+                  item={item}
+                  items={house}
+                  pair={pair}
+                  profile={profile}
+                  t={t}
+                  skillId="city-house-quiz"
+                  eventPrefix="house"
+                />
                 <div>
                   <button type="button" className="big-btn" onClick={() => handleOpenHouse(item)}>
                     ✅
@@ -145,6 +232,16 @@ export default function City() {
                   ))}
                   <SpeakButton text={item.steps.join(" ")} langCode={pair.mother} />
                 </div>
+                <SystemQuiz
+                  key={item.id}
+                  item={item}
+                  items={city}
+                  pair={pair}
+                  profile={profile}
+                  t={t}
+                  skillId="city-city-quiz"
+                  eventPrefix="city"
+                />
                 <div>
                   <button type="button" className="big-btn" onClick={() => handleOpenCity(item)}>
                     ✅
