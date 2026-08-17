@@ -11,6 +11,18 @@ export default defineConfig({
       },
     },
   },
+  // `vite preview` (used for local QA and verify-all.mjs) does not inherit
+  // `server.proxy` -- without this, any /api/* fetch (e.g. Backup &
+  // Sincronizar) silently 404s against the preview server instead of
+  // reaching the backend.
+  preview: {
+    proxy: {
+      "/api": {
+        target: "http://127.0.0.1:8099",
+        changeOrigin: true,
+      },
+    },
+  },
   build: {
     outDir: "dist",
     rollupOptions: {
