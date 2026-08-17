@@ -59,6 +59,7 @@ const Art = lazyWithReload(() => import("./pages/Art.jsx"));
 const Science = lazyWithReload(() => import("./pages/Science.jsx"));
 const PortugalHistory = lazyWithReload(() => import("./pages/PortugalHistory.jsx"));
 const HumanEvolution = lazyWithReload(() => import("./pages/HumanEvolution.jsx"));
+const SolarSystem = lazyWithReload(() => import("./pages/SolarSystem.jsx"));
 const TechHistory = lazyWithReload(() => import("./pages/TechHistory.jsx"));
 const LifeSkills = lazyWithReload(() => import("./pages/LifeSkills.jsx"));
 const MiniChef = lazyWithReload(() => import("./pages/MiniChef.jsx"));
@@ -129,6 +130,7 @@ export default function App() {
             <Route path="/science" element={<Science />} />
             <Route path="/history" element={<PortugalHistory />} />
             <Route path="/human-evolution" element={<HumanEvolution />} />
+            <Route path="/solar-system" element={<SolarSystem />} />
             <Route path="/tech-history" element={<TechHistory />} />
             <Route path="/lifeskills" element={<LifeSkills />} />
             <Route path="/mini-chef" element={<MiniChef />} />
