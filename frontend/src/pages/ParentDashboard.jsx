@@ -8,8 +8,72 @@ import {
   getWeakestSkills,
   exportAllData,
   mergeImportedData,
+  getReminderSettings,
+  setReminderSettings,
 } from "../storage.js";
 import HelpButton from "../components/HelpButton.jsx";
+
+function ReminderSection({ t, langCode }) {
+  const [settings, setSettings] = useState(() => getReminderSettings());
+  const supported = typeof Notification !== "undefined";
+  const [permission, setPermission] = useState(supported ? Notification.permission : "unsupported");
+
+  async function handleToggle(enabled) {
+    if (enabled && supported && Notification.permission === "default") {
+      const result = await Notification.requestPermission();
+      setPermission(result);
+      if (result !== "granted") {
+        setSettings(setReminderSettings({ enabled: false }));
+        return;
+      }
+    }
+    setSettings(setReminderSettings({ enabled }));
+  }
+
+  function handleTimeChange(time) {
+    setSettings(setReminderSettings({ time }));
+  }
+
+  return (
+    <section className="parent-section reminder-section">
+      <h2>
+        {t("modules.reminderTitle")}
+        <HelpButton text={t("modules.reminderHelp")} langCode={langCode} />
+      </h2>
+
+      <div className="reminder-controls">
+        <label className="reminder-toggle-row">
+          <input type="checkbox" checked={settings.enabled} onChange={(e) => handleToggle(e.target.checked)} />
+          {t("modules.reminderEnableLabel")}
+        </label>
+
+        <label className="reminder-time-row">
+          {t("modules.reminderTimeLabel")}
+          <input
+            type="time"
+            className="reminder-time-input"
+            value={settings.time}
+            onChange={(e) => handleTimeChange(e.target.value)}
+            disabled={!settings.enabled}
+          />
+        </label>
+      </div>
+
+      {!supported && (
+        <p className="reminder-warning" role="alert">
+          {t("modules.reminderUnsupported")}
+        </p>
+      )}
+      {supported && permission === "denied" && (
+        <p className="reminder-warning" role="alert">
+          {t("modules.reminderPermissionDenied")}
+        </p>
+      )}
+
+      <p className="reminder-limitation-note">{t("modules.reminderLimitationNote")}</p>
+    </section>
+  );
+}
 
 function SyncSection({ t, langCode }) {
   const [exportState, setExportState] = useState({ status: "idle" }); // idle | loading | done | error
@@ -157,6 +221,7 @@ export default function ParentDashboard() {
       <h1>{t("modules.parentsTitle")}</h1>
 
       <div className="no-print">
+        <ReminderSection t={t} langCode={i18n.language} />
         <SyncSection t={t} langCode={i18n.language} />
       </div>
 

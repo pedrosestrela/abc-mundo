@@ -147,6 +147,38 @@ export function setBedtimeMode(on) {
   }
 }
 
+// --- Daily practice reminder ---
+// A single device-wide, parent-controlled preference (not per-profile,
+// mirroring BEDTIME_MODE_KEY above) for the local "time to practice"
+// reminder: whether it's on, what time of day, and the last date a
+// reminder was actually shown (so it only fires once per day). See
+// reminders.js for the mechanism that reads/updates this.
+
+const REMINDER_SETTINGS_KEY = "abcmundo.reminderSettings";
+
+function defaultReminderSettings() {
+  return { enabled: false, time: "17:00", lastShownDate: null };
+}
+
+export function getReminderSettings() {
+  try {
+    const raw = localStorage.getItem(REMINDER_SETTINGS_KEY);
+    return raw ? { ...defaultReminderSettings(), ...JSON.parse(raw) } : defaultReminderSettings();
+  } catch {
+    return defaultReminderSettings();
+  }
+}
+
+export function setReminderSettings(partial) {
+  const next = { ...getReminderSettings(), ...partial };
+  try {
+    localStorage.setItem(REMINDER_SETTINGS_KEY, JSON.stringify(next));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+  return next;
+}
+
 export function getDifficultyTier(age) {
   const a = Number(age);
   if (!Number.isFinite(a) || a <= 6) return 1;

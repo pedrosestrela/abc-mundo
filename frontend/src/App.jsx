@@ -2,7 +2,9 @@ import React, { Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar.jsx";
 import SessionEndOverlay from "./components/SessionEndOverlay.jsx";
+import { useTranslation } from "react-i18next";
 import { getBedtimeMode } from "./storage.js";
+import { startReminderWatcher } from "./reminders.js";
 // Home and LanguagePicker stay eager: they are the very first screen every
 // session hits, so lazy-loading them would show a loading flash before the
 // app is even usable.
@@ -73,11 +75,20 @@ const Communication = lazyWithReload(() => import("./pages/Communication.jsx"));
 const TrafficSchool = lazyWithReload(() => import("./pages/TrafficSchool.jsx"));
 
 export default function App() {
+  const { t } = useTranslation();
+
   // A successful render means the current chunk map is good — clear the
   // reload guard so a *future* deploy can still trigger one recovery reload.
   React.useEffect(() => {
     window.sessionStorage.removeItem("chunk-reload-attempted");
   }, []);
+
+  // Starts the local "time to practice" reminder watcher (see reminders.js
+  // for why this is a foreground/recently-open check rather than real Web
+  // Push). Safe to call on every mount — it clears its own previous timer.
+  React.useEffect(() => {
+    startReminderWatcher(t);
+  }, [t]);
 
   // Applies the persisted "Hora de Dormir" (bedtime/calm) theme choice on
   // first load, before BedtimeToggle mounts (it also stays in sync itself
