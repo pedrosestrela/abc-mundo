@@ -36,7 +36,7 @@ const STRINGS_CONFIG = {
   guitar: { width: 320, height: 220, inset: 4, rx: 22, bodyClass: "guitar-body", stringInset: 18, shape: "figure8" },
 };
 
-function StringsVisual({ notes, activeNote, onPress, instrument }) {
+function StringsVisual({ notes, activeNote, highlightNote, onPress, instrument }) {
   const cfg = STRINGS_CONFIG[instrument] || STRINGS_CONFIG.guitar;
   const { width, height, bodyClass, stringInset, shape } = cfg;
   const gap = height / (notes.length + 1);
@@ -69,7 +69,9 @@ function StringsVisual({ notes, activeNote, onPress, instrument }) {
               y1={y}
               x2={width - stringInset}
               y2={y}
-              className={"instrument-string" + (activeNote === note ? " active" : "")}
+              className={
+                "instrument-string" + (activeNote === note ? " active" : "") + (highlightNote === note ? " highlight" : "")
+              }
             />
             <text x={width - stringInset - 6} y={y + 4} textAnchor="end" className="instrument-note-label">
               {noteLabel(note)}
@@ -89,7 +91,7 @@ const BOWED_CONFIG = {
   cello: { width: 320, height: 230, waist: 36, bodyClass: "cello-body", spread: 26 },
 };
 
-function BowedVisual({ notes, activeNote, onPress, instrument }) {
+function BowedVisual({ notes, activeNote, highlightNote, onPress, instrument }) {
   const cfg = BOWED_CONFIG[instrument] || BOWED_CONFIG.violin;
   const { width, height, waist, bodyClass, spread } = cfg;
   const mid = width / 2;
@@ -112,7 +114,11 @@ function BowedVisual({ notes, activeNote, onPress, instrument }) {
             <rect x={cx - 12} y={0} width={24} height={height} fill="transparent" />
             <path
               d={`M ${cx} 8 C ${cx - 10} ${height / 2}, ${cx + 10} ${height / 2}, ${cx} ${height - 8}`}
-              className={"instrument-string bowed-string" + (activeNote === note ? " active" : "")}
+              className={
+                "instrument-string bowed-string" +
+                (activeNote === note ? " active" : "") +
+                (highlightNote === note ? " highlight" : "")
+              }
             />
             <text x={cx} y={height - 2} textAnchor="middle" className="instrument-note-label">
               {noteLabel(note)}
@@ -140,7 +146,7 @@ const WIND_CONFIG = {
   saxophone: { bodyClass: "saxophone-body", markShape: "hole-graduated" },
 };
 
-function WindVisual({ notes, activeNote, onPress, instrument }) {
+function WindVisual({ notes, activeNote, highlightNote, onPress, instrument }) {
   const cfg = WIND_CONFIG[instrument] || WIND_CONFIG.flute;
   const width = 320;
   const height = 120;
@@ -162,7 +168,7 @@ function WindVisual({ notes, activeNote, onPress, instrument }) {
       <rect x={10} y={height / 2 - 22} width={width - 20} height={44} rx={22} className={"instrument-body " + cfg.bodyClass} />
       {notes.map((note, i) => {
         const cx = gap * (i + 1);
-        const active = activeNote === note ? " active" : "";
+        const active = (activeNote === note ? " active" : "") + (highlightNote === note ? " highlight" : "");
         const r =
           cfg.markShape === "hole-graduated"
             ? minR + ((maxR - minR) * i) / Math.max(1, notes.length - 1)
@@ -195,7 +201,7 @@ const TRUMPET_FINGERING = {
   B4: [false, true, false], // 2nd
 };
 
-function TrumpetVisual({ notes, activeNote, onPress }) {
+function TrumpetVisual({ notes, activeNote, highlightNote, onPress }) {
   const width = 320;
   const height = 140;
   const gap = width / (notes.length + 1);
@@ -240,7 +246,7 @@ function TrumpetVisual({ notes, activeNote, onPress }) {
       </text>
       {notes.map((note, i) => {
         const cx = gap * (i + 1);
-        const active = activeNote === note ? " active" : "";
+        const active = (activeNote === note ? " active" : "") + (highlightNote === note ? " highlight" : "");
         return (
           <g key={note} className="instrument-hit-area" onClick={() => onPress(note)}>
             <rect x={cx - 18} y={90} width={36} height={40} fill="transparent" />
@@ -257,7 +263,7 @@ function TrumpetVisual({ notes, activeNote, onPress }) {
 
 // Angled/vertical fan of strings for the harp — deliberately not horizontal,
 // so it reads as visually distinct from the flat-body "strings" family.
-function HarpVisual({ notes, activeNote, onPress }) {
+function HarpVisual({ notes, activeNote, highlightNote, onPress }) {
   const width = 260;
   const height = 220;
   const topX = 50;
@@ -280,7 +286,11 @@ function HarpVisual({ notes, activeNote, onPress }) {
               y1={ty}
               x2={bx}
               y2={200}
-              className={"instrument-string harp-string" + (activeNote === note ? " active" : "")}
+              className={
+                "instrument-string harp-string" +
+                (activeNote === note ? " active" : "") +
+                (highlightNote === note ? " highlight" : "")
+              }
             />
             <text x={bx} y={214} textAnchor="middle" className="instrument-note-label">
               {noteLabel(note)}
@@ -297,7 +307,7 @@ function HarpVisual({ notes, activeNote, onPress }) {
 // instead of reusing the piano-keyboard UI.
 const BAR_COLORS = ["#ff6b6b", "#ff9f45", "#ffd93d", "#6bcb77", "#4d96ff", "#9b5de5", "#ff5c8d"];
 
-function MalletVisual({ notes, activeNote, onPress }) {
+function MalletVisual({ notes, activeNote, highlightNote, onPress }) {
   const width = 320;
   const height = 190;
   const barGap = width / notes.length;
@@ -319,7 +329,9 @@ function MalletVisual({ notes, activeNote, onPress }) {
               height={barHeight}
               rx={6}
               fill={BAR_COLORS[i % BAR_COLORS.length]}
-              className={"mallet-bar" + (activeNote === note ? " active" : "")}
+              className={
+                "mallet-bar" + (activeNote === note ? " active" : "") + (highlightNote === note ? " highlight" : "")
+              }
             />
             <circle cx={bx + barWidth / 2} cy={by + 14} r={3.5} className="mallet-bar-hole" />
             <text x={bx + barWidth / 2} y={height - 4} textAnchor="middle" className="instrument-note-label">
@@ -404,15 +416,18 @@ export function DrumKitVisual({ pads, activePad, onPress, labels = {} }) {
   );
 }
 
-export default function InstrumentVisual({ instrument, activeNote, onPress }) {
+export default function InstrumentVisual({ instrument, activeNote, highlightNote, onPress }) {
   const family = getInstrumentFamily(instrument);
-  if (family === "strings") return <StringsVisual notes={NOTES} activeNote={activeNote} onPress={onPress} instrument={instrument} />;
-  if (family === "bowed") return <BowedVisual notes={NOTES} activeNote={activeNote} onPress={onPress} instrument={instrument} />;
+  if (family === "strings")
+    return <StringsVisual notes={NOTES} activeNote={activeNote} highlightNote={highlightNote} onPress={onPress} instrument={instrument} />;
+  if (family === "bowed")
+    return <BowedVisual notes={NOTES} activeNote={activeNote} highlightNote={highlightNote} onPress={onPress} instrument={instrument} />;
   if (family === "wind") {
-    if (instrument === "trumpet") return <TrumpetVisual notes={NOTES} activeNote={activeNote} onPress={onPress} />;
-    return <WindVisual notes={NOTES} activeNote={activeNote} onPress={onPress} instrument={instrument} />;
+    if (instrument === "trumpet")
+      return <TrumpetVisual notes={NOTES} activeNote={activeNote} highlightNote={highlightNote} onPress={onPress} />;
+    return <WindVisual notes={NOTES} activeNote={activeNote} highlightNote={highlightNote} onPress={onPress} instrument={instrument} />;
   }
-  if (family === "harp") return <HarpVisual notes={NOTES} activeNote={activeNote} onPress={onPress} />;
-  if (family === "mallet") return <MalletVisual notes={NOTES} activeNote={activeNote} onPress={onPress} />;
+  if (family === "harp") return <HarpVisual notes={NOTES} activeNote={activeNote} highlightNote={highlightNote} onPress={onPress} />;
+  if (family === "mallet") return <MalletVisual notes={NOTES} activeNote={activeNote} highlightNote={highlightNote} onPress={onPress} />;
   return null;
 }

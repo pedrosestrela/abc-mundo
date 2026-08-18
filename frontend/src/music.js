@@ -157,6 +157,18 @@ function noteToMidi(note) {
   return Number(m[2]) * 12 + SEMITONE_INDEX[m[1]];
 }
 
+const MIDI_LETTERS = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"];
+
+// Inverse of noteToMidi — "C4" <-> 48, etc. Used to shift whole song note
+// sequences by octaves so they land inside a given instrument's real
+// sampled range (see transposeNotesToRange below) while keeping every
+// note's letter/pitch-class (and therefore the melody's shape) intact.
+function midiToNote(midi) {
+  const octave = Math.floor(midi / 12);
+  const letter = MIDI_LETTERS[((midi % 12) + 12) % 12];
+  return `${letter}${octave}`;
+}
+
 // Matches the actual files shipped in public/audio/piano/ (A0-A7, C1-C8,
 // D#1-D#7 as "Ds", F#1-F#7 as "Fs" — sharps spelled without "#" in the
 // filename to keep URLs simple).
@@ -436,6 +448,43 @@ const SAMPLE_INSTRUMENTS = {
     tail: 0.4,
   },
 };
+
+// Returns the [min, max] MIDI note numbers a given instrument can actually
+// sound reasonably (i.e. the span of its real recorded samples — playback
+// still works well outside this via pitch-shifting, but staying inside it
+// keeps the pitch-shift modest so the timbre stays faithful). Piano covers
+// the app's full two-octave C4-C6 keyboard natively. Returns null for an
+// instrument with no sample-based range info (e.g. "drum", which isn't
+// pitched at all).
+export function getInstrumentMidiRange(instrumentId) {
+  if (instrumentId === "piano") return { min: noteToMidi("C4"), max: noteToMidi("C6") };
+  const config = SAMPLE_INSTRUMENTS[instrumentId];
+  if (!config || !config.samples.length) return null;
+  const midis = config.samples.map((s) => s.midi);
+  return { min: Math.min(...midis), max: Math.max(...midis) };
+}
+
+// Shifts an entire song's note sequence by whole octaves (never per-note —
+// that would distort the melody's shape) so it sits as close as possible to
+// the center of `instrumentId`'s real playable range. Used so "learn to
+// play the song" plays every pitched instrument (violin, guitar, flute,
+// etc.) in a register that's actually faithful to its real samples, instead
+// of the piano-specific C4-C6 range pianoSongs.json was authored against.
+// Piano and unknown/unpitched instruments (drum) are returned unchanged.
+export function transposeNotesToRange(notes, instrumentId) {
+  const range = getInstrumentMidiRange(instrumentId);
+  if (!range || instrumentId === "piano") return notes;
+  const midis = notes.map(noteToMidi).filter((m) => m != null);
+  if (!midis.length) return notes;
+  const songCenter = (Math.min(...midis) + Math.max(...midis)) / 2;
+  const rangeCenter = (range.min + range.max) / 2;
+  const shiftOctaves = Math.round((rangeCenter - songCenter) / 12);
+  if (!shiftOctaves) return notes;
+  return notes.map((note) => {
+    const midi = noteToMidi(note);
+    return midi == null ? note : midiToNote(midi + shiftOctaves * 12);
+  });
+}
 
 // instrumentId -> file -> Promise<AudioBuffer|null>, one cache Map per
 // instrument (mirrors pianoBufferCache above).

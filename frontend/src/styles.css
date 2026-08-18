@@ -910,6 +910,18 @@ body {
   stroke: var(--pink, #ff6b9d);
 }
 
+/* "highlight" = this is the note to play next (song-following mode);
+   distinct from "active" (a note that was just tapped), same yellow/pink
+   pairing the piano keyboard already uses for its own next-note cue. */
+.instrument-string.highlight {
+  stroke: var(--yellow, #f5c542);
+  stroke-width: 6;
+}
+
+.bowed-string.highlight {
+  stroke: var(--yellow, #f5c542);
+}
+
 .harp-string {
   stroke: var(--green, #35c46a);
 }
@@ -965,6 +977,11 @@ body {
   filter: brightness(1.2);
 }
 
+.mallet-bar.highlight {
+  outline: 3px solid var(--yellow, #f5c542);
+  outline-offset: -3px;
+}
+
 .mallet-bar-hole {
   fill: rgba(0, 0, 0, 0.2);
   pointer-events: none;
@@ -987,6 +1004,11 @@ body {
 .instrument-hole.active {
   fill: var(--pink, #ff6b9d);
   stroke: var(--pink, #ff6b9d);
+}
+
+.instrument-hole.highlight {
+  fill: var(--yellow, #f5c542);
+  stroke: var(--yellow, #f5c542);
 }
 
 /* Wind-family body colors so flute/clarinet/saxophone/trumpet don't look
