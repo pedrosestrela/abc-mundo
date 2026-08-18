@@ -3457,6 +3457,71 @@ body {
   animation: badge-pulse 1.4s ease infinite;
 }
 
+/* Country pin markers rendered by globe.gl's HTML-element layer (Globe3D.jsx).
+   A visible dot plus an expanding "radar ping" pulse ring so kids can spot
+   explorable countries on the sphere at a glance, with a distinct warmer
+   color once a country has actually been visited. */
+.globe-marker {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  transform: translate(-50%, -50%);
+}
+
+.globe-marker-dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffd23f;
+  border: 2px solid #fff;
+  box-shadow: 0 0 8px rgba(255, 210, 63, 0.9), 0 0 2px rgba(0, 0, 0, 0.4);
+  transition: background 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease;
+}
+
+.globe-marker-pulse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 210, 63, 0.55);
+  animation: globe-marker-ping 1.8s cubic-bezier(0.2, 0.6, 0.4, 1) infinite;
+}
+
+.globe-marker:hover .globe-marker-dot {
+  transform: translate(-50%, -50%) scale(1.25);
+  box-shadow: 0 0 14px rgba(255, 210, 63, 1), 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.globe-marker-visited .globe-marker-dot {
+  background: #ff7a5c;
+  box-shadow: 0 0 8px rgba(255, 122, 92, 0.9), 0 0 2px rgba(0, 0, 0, 0.4);
+}
+
+.globe-marker-visited .globe-marker-pulse {
+  background: rgba(255, 122, 92, 0.5);
+}
+
+@keyframes globe-marker-ping {
+  0% {
+    transform: translate(-50%, -50%) scale(0.6);
+    opacity: 0.8;
+  }
+  70% {
+    opacity: 0.15;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2.4);
+    opacity: 0;
+  }
+}
+
 
 /* --- Robots: debug mode tappable step (cycle-through-directions) --- */
 .robots-debug-step {
