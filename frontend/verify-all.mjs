@@ -7,7 +7,7 @@ const ROUTES = [
   "/reading", "/phrases", "/songs", "/game", "/music",
   "/stories", "/rhymes", "/math", "/financial", "/parents", "/achievements",
   "/missions", "/world", "/detective", "/whys", "/robots", "/art",
-  "/science", "/history", "/human-evolution", "/tech-history", "/lifeskills",
+  "/science", "/history", "/human-evolution", "/solar-system", "/tech-history", "/lifeskills",
   "/mini-chef", "/circuit-lab", "/computing", "/how-it-works",
   "/thinking", "/learning-strategies", "/city", "/nature-diary",
   "/writing", "/communication", "/traffic-school",

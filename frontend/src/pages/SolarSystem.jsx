@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { getSolarSystem } from "../content/index.js";
 import { getLangPair, getProfile, getVisitedSolarSystemStages, visitSolarSystemStage, pingProgress, recordSkillEvent } from "../storage.js";
@@ -134,7 +134,19 @@ export default function SolarSystem() {
   const { t } = useTranslation();
   const pair = getLangPair() || { mother: "pt", secondary: "en" };
   const profile = getProfile();
-  const bodies = useMemo(() => getSolarSystem(pair.mother), [pair.mother]);
+  // getSolarSystem is now a dynamic import (see content/index.js) so this
+  // dataset isn't bundled into every other lazy-loaded page's shared chunk;
+  // start empty and fill in once the language's JSON resolves.
+  const [bodies, setBodies] = useState([]);
+  useEffect(() => {
+    let cancelled = false;
+    getSolarSystem(pair.mother).then((data) => {
+      if (!cancelled) setBodies(data || []);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [pair.mother]);
 
   const [openId, setOpenId] = useState(null);
   const [visitedVersion, setVisitedVersion] = useState(0);
