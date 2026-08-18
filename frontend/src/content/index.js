@@ -143,14 +143,6 @@ import humanEvolutionZh from "./humanEvolution.zh.json";
 import humanEvolutionEs from "./humanEvolution.es.json";
 import humanEvolutionIt from "./humanEvolution.it.json";
 
-import solarSystemPt from "./solarSystem.pt.json";
-import solarSystemEn from "./solarSystem.en.json";
-import solarSystemDe from "./solarSystem.de.json";
-import solarSystemFr from "./solarSystem.fr.json";
-import solarSystemZh from "./solarSystem.zh.json";
-import solarSystemEs from "./solarSystem.es.json";
-import solarSystemIt from "./solarSystem.it.json";
-
 import labSimulatorsPt from "./labSimulators.pt.json";
 import labSimulatorsEn from "./labSimulators.en.json";
 import labSimulatorsDe from "./labSimulators.de.json";
@@ -347,15 +339,6 @@ const HUMAN_EVOLUTION = {
   es: humanEvolutionEs,
   it: humanEvolutionIt,
 };
-const SOLAR_SYSTEM = {
-  pt: solarSystemPt,
-  en: solarSystemEn,
-  de: solarSystemDe,
-  fr: solarSystemFr,
-  zh: solarSystemZh,
-  es: solarSystemEs,
-  it: solarSystemIt,
-};
 const LIFE_SKILLS = { pt: lifeSkillsPt, en: lifeSkillsEn, de: lifeSkillsDe, fr: lifeSkillsFr, zh: lifeSkillsZh, es: lifeSkillsEs, it: lifeSkillsIt };
 const COMPUTING = { pt: computingPt, en: computingEn, de: computingDe, fr: computingFr, zh: computingZh, es: computingEs, it: computingIt };
 const COMPUTING_SAFETY = { pt: computingSafetyPt, en: computingSafetyEn, de: computingSafetyDe, fr: computingSafetyFr, zh: computingSafetyZh, es: computingSafetyEs, it: computingSafetyIt };
@@ -464,8 +447,28 @@ export function getHumanEvolution(langCode) {
   return HUMAN_EVOLUTION[langCode] || HUMAN_EVOLUTION.pt;
 }
 
-export function getSolarSystem(langCode) {
-  return SOLAR_SYSTEM[langCode] || SOLAR_SYSTEM.pt;
+// Solar-system content has a single consumer (SolarSystem.jsx) and, at ~10KB
+// per language (~70KB combined), is one of several always-eager datasets
+// bulking out the shared chunk every lazy-loaded page pays for. Lazy-loaded
+// per language via dynamic import (same pattern as getStories above) so
+// visiting any other content page no longer pulls it in. Cached per language.
+const solarSystemCache = new Map();
+
+export async function getSolarSystem(langCode) {
+  if (solarSystemCache.has(langCode)) return solarSystemCache.get(langCode);
+  let data;
+  try {
+    const mod = await import(`./solarSystem.${langCode}.json`);
+    data = mod.default;
+  } catch {
+    data = undefined;
+  }
+  if (!data) {
+    const mod = await import("./solarSystem.pt.json");
+    data = mod.default;
+  }
+  solarSystemCache.set(langCode, data);
+  return data;
 }
 
 export function getLabSimulators(langCode) {
