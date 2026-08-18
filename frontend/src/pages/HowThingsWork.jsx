@@ -179,7 +179,10 @@ export default function HowThingsWork() {
             {partIndex + 1} / {openObject.parts.length}
           </div>
           <div className="game-emoji">{openObject.emoji}</div>
-          <p className="mission-text">{openObject.title}</p>
+          <p className="mission-text">
+            {openObject.title}
+            <SpeakButton text={openObject.title} langCode={pair.mother} />
+          </p>
 
           <div className="mission-badge computing-topic-badge">
             {currentPart.emoji} {currentPart.label}
@@ -208,7 +211,12 @@ export default function HowThingsWork() {
           )}
 
           <div>
-            <button type="button" className="big-btn" onClick={() => handleOpenObject(openObject)}>
+            <button
+              type="button"
+              className="big-btn"
+              onClick={() => handleOpenObject(openObject)}
+              aria-label={t("modules.howThingsWorkBack")}
+            >
               ✅
             </button>
           </div>
