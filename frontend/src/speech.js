@@ -2,6 +2,8 @@
 // Picks the most accurate voice for each language/accent (e.g. pt-PT, not a generic
 // "pt" voice that might default to pt-BR) instead of leaving it to the browser default.
 
+import { duckZenAmbience, isZenAmbiencePlaying } from "./music.js";
+
 const LANG_TO_BCP47 = {
   pt: "pt-PT",
   en: "en-US",
@@ -37,18 +39,39 @@ if (typeof window !== "undefined" && "speechSynthesis" in window) {
 //    plain "Neural" in the name (e.g. "Microsoft Ana Online (Natural)").
 // This is heuristic, not authoritative — the Web Speech API exposes no
 // standard "quality tier" field, only `name`, so we match known conventions.
-const HIGH_QUALITY_VOICE_PATTERN = /enhanced|premium|siri|natural|neural|online \(natural\)|wavenet/i;
+// Ranked highest-to-lowest tier (checked in order, first match wins) rather
+// than a single flat pattern, because some platforms expose more than one
+// elevated-quality voice per language and the tiers aren't equal: on-device
+// neural voices ("Natural"/"Neural"/WaveNet) are generally a clear step up
+// in prosody/clarity over the older "Enhanced"/"Premium" hand-tuned voices,
+// which are themselves a step up from the always-available compact default.
+const VOICE_QUALITY_TIERS = [
+  /natural|neural|wavenet/i,
+  /enhanced|premium|siri/i,
+];
 
 function rankVoice(voice) {
-  return HIGH_QUALITY_VOICE_PATTERN.test(voice.name) ? 1 : 0;
+  for (let i = 0; i < VOICE_QUALITY_TIERS.length; i++) {
+    if (VOICE_QUALITY_TIERS[i].test(voice.name)) return VOICE_QUALITY_TIERS.length - i;
+  }
+  return 0;
 }
 
 // Picks the best-quality voice among a candidate list: highest quality tier
 // first (per rankVoice), stable otherwise (keeps the browser's own ordering
 // among voices of equal tier).
+// Within the same quality tier, prefer an on-device (localService) voice
+// over a network-dependent one: it keeps working offline (this is a PWA)
+// and avoids the extra latency/failure mode of a remote TTS call.
 function bestOf(candidates) {
   if (!candidates.length) return null;
-  return candidates.reduce((best, v) => (rankVoice(v) > rankVoice(best) ? v : best), candidates[0]);
+  return candidates.reduce((best, v) => {
+    const vRank = rankVoice(v);
+    const bestRank = rankVoice(best);
+    if (vRank !== bestRank) return vRank > bestRank ? v : best;
+    if (v.localService !== best.localService) return v.localService ? v : best;
+    return best;
+  }, candidates[0]);
 }
 
 // Prefers an exact BCP-47 match (e.g. "pt-PT"), then any voice starting with the
@@ -103,6 +126,17 @@ export function speak(text, langCode, onWordBoundary) {
         }
       };
     }
+    // Duck the zen ambient pad (see music.js) so narration stays clearly
+    // audible over it, and bring it back up as soon as this utterance ends
+    // (or immediately, if it's a no-op because ambience isn't playing).
+    if (isZenAmbiencePlaying()) {
+      // Generous safety-net duration in case onend/onerror never fires (some
+      // browsers occasionally drop them) — restored sooner below regardless.
+      duckZenAmbience(Math.max(2500, text.length * 90));
+      const restore = () => duckZenAmbience(0);
+      utterance.addEventListener("end", restore);
+      utterance.addEventListener("error", restore);
+    }
     window.speechSynthesis.speak(utterance);
   } catch (e) {
     // Speech is a progressive enhancement; failures are non-fatal.
@@ -132,6 +166,15 @@ export function speak(text, langCode, onWordBoundary) {
 export async function speakSequence(lines, langCode, options = {}) {
   const { onLineStart, onWordBoundary, pauseMs = 450, rate = 0.85, pitch = 1.15 } = options;
   if (!isSpeechAvailable()) return;
+  const zenWasPlaying = isZenAmbiencePlaying();
+  if (zenWasPlaying) {
+    // Duck for the whole sequence up front (a generous estimate covering all
+    // lines) so it doesn't pop back up between lines; restored for sure in
+    // the `finally` below regardless of how the sequence ends.
+    const totalChars = lines.reduce((sum, l) => sum + l.length, 0);
+    duckZenAmbience(Math.max(3000, totalChars * 90 + lines.length * pauseMs));
+  }
+  try {
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
     if (typeof onLineStart === "function") onLineStart(i);
@@ -153,5 +196,8 @@ export async function speakSequence(lines, langCode, options = {}) {
     if (pauseMs > 0 && i < lines.length - 1) {
       await new Promise((resolve) => setTimeout(resolve, pauseMs));
     }
+  }
+  } finally {
+    if (zenWasPlaying) duckZenAmbience(0);
   }
 }
