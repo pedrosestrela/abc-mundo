@@ -27,12 +27,22 @@ const PARTS = {
   ledGreen: { emoji: "🟢", key: "circuitPartLedGreen" },
 };
 
+// Each challenge is a small circuit board: a battery/power spot, one or two
+// connector spots and the "payoff" component spot, laid out around a
+// rounded-square track so the child can SEE the loop shape they are
+// closing, not just fill in a flat row of blanks. "bottom" is always the
+// decorative closing wire (drawn already-connected) unless a challenge
+// claims that slot for itself, e.g. the traffic light's third LED.
 const CHALLENGES = [
   {
     id: "lightbulb",
     emoji: "💡",
     titleKey: "circuitBulbTitle",
-    sequence: ["battery", "wire", "bulb"],
+    slots: [
+      { pos: "left", partId: "battery" },
+      { pos: "top", partId: "wire" },
+      { pos: "right", partId: "bulb" },
+    ],
     successAnim: "circuit-success-glow",
     whyKey: "circuitBulbWhy",
   },
@@ -40,7 +50,11 @@ const CHALLENGES = [
     id: "motor",
     emoji: "🌀",
     titleKey: "circuitMotorTitle",
-    sequence: ["battery", "wire", "motor"],
+    slots: [
+      { pos: "left", partId: "battery" },
+      { pos: "top", partId: "wire" },
+      { pos: "right", partId: "motor" },
+    ],
     successAnim: "circuit-success-spin",
     whyKey: "circuitMotorWhy",
   },
@@ -48,7 +62,11 @@ const CHALLENGES = [
     id: "buzzer",
     emoji: "🔔",
     titleKey: "circuitBuzzerTitle",
-    sequence: ["battery", "switch", "buzzer"],
+    slots: [
+      { pos: "left", partId: "battery" },
+      { pos: "top", partId: "switch" },
+      { pos: "right", partId: "buzzer" },
+    ],
     successAnim: "circuit-success-shake",
     whyKey: "circuitBuzzerWhy",
   },
@@ -56,9 +74,15 @@ const CHALLENGES = [
     id: "traffic-light",
     emoji: "🚦",
     titleKey: "circuitTrafficTitle",
-    sequence: ["ledRed", "ledYellow", "ledGreen"],
+    slots: [
+      { pos: "left", partId: "ledRed" },
+      { pos: "top", partId: "ledYellow" },
+      { pos: "right", partId: "ledGreen" },
+    ],
     successAnim: "circuit-success-glow",
     whyKey: "circuitTrafficWhy",
+    noDecorativeWire: true,
+    decorativeIcon: "🔋",
   },
 ];
 
@@ -71,29 +95,46 @@ function shuffle(arr) {
   return a;
 }
 
-// Tap-to-connect puzzle: pick the circuit components in the right order.
-// A wrong tap never fails the child — it just shakes and lets them retry —
-// and an incomplete circuit shows a gentle "falta uma peça" nudge instead
-// of any error state.
+// Assemble-the-board puzzle: the child taps a part in the tray to pick it
+// up (armed state), then taps the board spot they think it belongs in.
+// This is deliberately tap-to-place rather than real drag-and-drop — the
+// same simplest-robust-interaction choice already proven for touch/mouse
+// in JigsawGame's tap-to-swap tiles — but because the board renders the
+// actual loop shape, the child is still placing pieces spatially onto a
+// circuit they can see, not just tapping options in a flat sequence.
+// A wrong placement never fails the child: the slot gently shakes, the
+// part stays in the tray, and they can try again; an incomplete board
+// shows a soft "falta uma peça" nudge instead of any error state.
 function CircuitPuzzle({ challenge, pair, t, profile, onSolved }) {
-  const scrambled = useMemo(() => {
-    let attempt = shuffle(challenge.sequence.map((id, index) => ({ id, index })));
+  const tray = useMemo(() => {
+    let attempt = shuffle(challenge.slots.map((s, index) => ({ ...s, index })));
     if (attempt.length > 1 && attempt.every((s, i) => s.index === i)) attempt = shuffle(attempt);
     return attempt;
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [challenge.id]);
-  const [placed, setPlaced] = useState([]);
-  const [shake, setShake] = useState(null);
-  const [solved, setSolved] = useState(false);
-  const remaining = scrambled.filter((s) => !placed.includes(s.index));
-  const complete = placed.length === challenge.sequence.length;
 
-  function tapPart(part) {
+  const [placedIndexes, setPlacedIndexes] = useState([]);
+  const [armed, setArmed] = useState(null); // index (into challenge.slots) of the part currently picked up
+  const [shakeSlot, setShakeSlot] = useState(null);
+  const [shakeTray, setShakeTray] = useState(null);
+  const [solved, setSolved] = useState(false);
+
+  const remaining = tray.filter((s) => !placedIndexes.includes(s.index));
+  const complete = placedIndexes.length === challenge.slots.length;
+
+  function pickPart(slotDef) {
     if (complete) return;
-    if (part.index === placed.length) {
-      const next = [...placed, part.index];
-      setPlaced(next);
-      if (next.length === challenge.sequence.length) {
+    setArmed(armed === slotDef.index ? null : slotDef.index);
+  }
+
+  function tapBoardSlot(slotIndex) {
+    if (complete || placedIndexes.includes(slotIndex)) return;
+    if (armed === null) return;
+    if (armed === slotIndex) {
+      const next = [...placedIndexes, slotIndex];
+      setPlacedIndexes(next);
+      setArmed(null);
+      if (next.length === challenge.slots.length) {
         setSolved(true);
         completeCircuit(profile?.name, challenge.id);
         recordSkillEvent(profile?.name, "circuit-lab", true);
@@ -101,8 +142,12 @@ function CircuitPuzzle({ challenge, pair, t, profile, onSolved }) {
         onSolved();
       }
     } else {
-      setShake(part.index);
-      setTimeout(() => setShake(null), 400);
+      setShakeSlot(slotIndex);
+      setShakeTray(armed);
+      setTimeout(() => {
+        setShakeSlot(null);
+        setShakeTray(null);
+      }, 400);
     }
   }
 
@@ -110,34 +155,68 @@ function CircuitPuzzle({ challenge, pair, t, profile, onSolved }) {
     <div className="game-card">
       <p className="mission-badge science-topic-badge">🔧 {t("modules.circuitPlaceHint")}</p>
 
-      <div className={"circuit-slots" + (solved ? " " + challenge.successAnim : "")}>
-        {challenge.sequence.map((partId, i) => {
-          const part = PARTS[partId];
+      <div className={"circuit-board" + (solved ? " " + challenge.successAnim : "")}>
+        {challenge.slots.map((slotDef, i) => {
+          const part = PARTS[slotDef.partId];
+          const isFilled = placedIndexes.includes(i);
+          const isArmedTarget = armed !== null && !isFilled;
           return (
-            <span key={i} className="circuit-slot">
-              {i < placed.length ? part.emoji : "⬜️"}
-            </span>
+            <button
+              key={i}
+              type="button"
+              className={
+                "circuit-board-slot circuit-slot circuit-board-slot-" +
+                slotDef.pos +
+                (isFilled ? " filled" : "") +
+                (isArmedTarget ? " targetable" : "") +
+                (shakeSlot === i ? " wrong-shake" : "")
+              }
+              onClick={() => tapBoardSlot(i)}
+              disabled={isFilled}
+              aria-label={t(`modules.${part.key}`)}
+            >
+              {isFilled ? part.emoji : "○"}
+            </button>
           );
         })}
+        {!challenge.noDecorativeWire && (
+          <span className="circuit-board-slot circuit-slot circuit-board-slot-bottom circuit-board-slot-decorative" aria-hidden="true">
+            🔗
+          </span>
+        )}
+        {challenge.noDecorativeWire && challenge.decorativeIcon && (
+          <span className="circuit-board-slot circuit-slot circuit-board-slot-bottom circuit-board-slot-decorative" aria-hidden="true">
+            {challenge.decorativeIcon}
+          </span>
+        )}
       </div>
 
       {!complete && (
-        <div className="game-options">
-          {remaining.map((s) => {
-            const part = PARTS[challenge.sequence[s.index]];
-            return (
-              <button
-                key={s.index}
-                type="button"
-                className={"big-btn game-option" + (shake === s.index ? " wrong-shake" : "")}
-                onClick={() => tapPart(s)}
-              >
-                {part.emoji} {t(`modules.${part.key}`)}
-                <SpeakButton text={t(`modules.${part.key}`)} langCode={pair.mother} />
-              </button>
-            );
-          })}
-        </div>
+        <>
+          {armed !== null && (
+            <p className="mission-text">✋ {t("modules.circuitChooseSlot")}</p>
+          )}
+          <div className="game-options circuit-tray">
+            {remaining.map((s) => {
+              const part = PARTS[s.partId];
+              return (
+                <button
+                  key={s.index}
+                  type="button"
+                  className={
+                    "big-btn game-option circuit-tray-part" +
+                    (armed === s.index ? " circuit-tray-part-armed" : "") +
+                    (shakeTray === s.index ? " wrong-shake" : "")
+                  }
+                  onClick={() => pickPart(s)}
+                >
+                  {part.emoji} {t(`modules.${part.key}`)}
+                  <SpeakButton text={t(`modules.${part.key}`)} langCode={pair.mother} />
+                </button>
+              );
+            })}
+          </div>
+        </>
       )}
 
       {!complete && <p className="mission-text">🤔 {t("modules.circuitMissingPiece")}</p>}
