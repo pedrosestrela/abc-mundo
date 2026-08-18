@@ -75,7 +75,10 @@ function BrainSizeChart({ stages, pair, t }) {
           );
         })}
       </div>
-      <p className="mission-text">{t("modules.evolutionBrainChartNote")}</p>
+      <p className="mission-text">
+        {t("modules.evolutionBrainChartNote")}
+        <SpeakButton text={t("modules.evolutionBrainChartNote")} langCode={pair.mother} />
+      </p>
     </div>
   );
 }
@@ -303,7 +306,10 @@ export default function HumanEvolution() {
 
       {tab === "compare" && (
         <>
-          <p className="page-intro">{t("modules.evolutionCompareIntro")}</p>
+          <p className="page-intro">
+            {t("modules.evolutionCompareIntro")}
+            <SpeakButton text={t("modules.evolutionCompareIntro")} langCode={pair.mother} />
+          </p>
           <BrainSizeChart stages={stages} pair={pair} t={t} />
           <HeightChart stages={stages} pair={pair} t={t} />
         </>

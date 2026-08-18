@@ -133,6 +133,7 @@ function CircuitPuzzle({ challenge, pair, t, profile, onSolved }) {
                 onClick={() => tapPart(s)}
               >
                 {part.emoji} {t(`modules.${part.key}`)}
+                <SpeakButton text={t(`modules.${part.key}`)} langCode={pair.mother} />
               </button>
             );
           })}

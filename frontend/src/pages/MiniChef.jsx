@@ -116,6 +116,7 @@ function IngredientStage({ recipe, pair, t, onDone }) {
           >
             {ing.emoji} {t(`modules.${ing.key}`)}
             {picked.has(ing.id) ? " ✅" : ""}
+            <SpeakButton text={t(`modules.${ing.key}`)} langCode={pair.mother} />
           </button>
         ))}
       </div>

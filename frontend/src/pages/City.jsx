@@ -184,7 +184,12 @@ export default function City() {
                   eventPrefix="house"
                 />
                 <div>
-                  <button type="button" className="big-btn" onClick={() => handleOpenHouse(item)}>
+                  <button
+                    type="button"
+                    className="big-btn"
+                    onClick={() => handleOpenHouse(item)}
+                    aria-label={t("modules.cityCloseCard")}
+                  >
                     ✅
                   </button>
                 </div>
@@ -243,7 +248,12 @@ export default function City() {
                   eventPrefix="city"
                 />
                 <div>
-                  <button type="button" className="big-btn" onClick={() => handleOpenCity(item)}>
+                  <button
+                    type="button"
+                    className="big-btn"
+                    onClick={() => handleOpenCity(item)}
+                    aria-label={t("modules.cityCloseCard")}
+                  >
                     ✅
                   </button>
                 </div>
