@@ -114,6 +114,32 @@ const SENSOR_LEVELS = [
   },
 ];
 
+// --- Funções mode (higher tier only): the child builds a short sequence,
+// picks an icon to "name" it as a custom block (no reading required), then
+// solves a longer maze by placing that custom block (possibly more than
+// once) instead of retyping the same steps — a kid-friendly intro to
+// functions/reusable code. The custom block is defined once per level and
+// can be used any number of times when building the run program.
+const FUNCTION_ICONS = ["🟣", "🟡", "🟢"];
+
+const FUNCTION_LEVELS = [
+  {
+    size: 5,
+    start: [0, 0],
+    goal: [4, 4],
+    obstacles: [],
+    // Custom block "down,right" used twice = down,right,down,right reaches (2,2)... needs
+    // one more custom-block use to reach (4,4): down,right,down,right,down,right -> (3,3)?
+    // Keep block flexible: child defines any 2-step block and repeats it as needed.
+  },
+  {
+    size: 6,
+    start: [0, 0],
+    goal: [5, 5],
+    obstacles: [[2, 4], [4, 1]],
+  },
+];
+
 export default function Robots() {
   const { t } = useTranslation();
   const pair = getLangPair() || { mother: "pt", secondary: "en" };
@@ -128,6 +154,12 @@ export default function Robots() {
     { id: "debug", label: t("modules.robotsModeDebug"), emoji: "🐞" },
     { id: "sensor", label: t("modules.robotsModeSensor"), emoji: "🔋" },
   ];
+  // Functions/custom-block mode is a more abstract concept (reuse a named
+  // sequence), so it's only offered once the child is in the older tier —
+  // the simpler modes above stay available to everyone regardless of age.
+  if (tier >= 3) {
+    MODES.push({ id: "function", label: t("modules.robotsModeFunction"), emoji: "🧠" });
+  }
 
   return (
     <div className="page">
@@ -141,7 +173,9 @@ export default function Robots() {
               ? t("modules.robotsCondHelp")
               : mode === "debug"
               ? t("modules.robotsDebugHelp")
-              : t("modules.robotsSensorHelp")
+              : mode === "sensor"
+              ? t("modules.robotsSensorHelp")
+              : t("modules.robotsFunctionHelp")
           }
           langCode={pair.mother}
         />
@@ -169,6 +203,7 @@ export default function Robots() {
       {mode === "conditional" && <ConditionalMode t={t} pair={pair} profile={profile} />}
       {mode === "debug" && <DebugMode t={t} pair={pair} profile={profile} />}
       {mode === "sensor" && <SensorMode t={t} pair={pair} profile={profile} />}
+      {mode === "function" && <FunctionMode t={t} pair={pair} profile={profile} />}
     </div>
   );
 }
@@ -935,6 +970,298 @@ function SensorMode({ t, pair, profile }) {
       {result === "retry" && (
         <div className="robots-feedback robots-feedback-retry">{t("modules.robotsTryAgain")}</div>
       )}
+    </div>
+  );
+}
+
+// Two-step wizard per level: 1) define a custom block by building a short
+// (2-3 step) sequence and picking an icon for it, 2) build the run program
+// for the (longer) maze using arrows AND that custom block, which expands
+// to its steps when the program runs. This mirrors "write a function, then
+// call it" without any text syntax.
+function FunctionMode({ t, pair, profile }) {
+  const [levelIndex, setLevelIndex] = useState(0);
+  const [stage, setStage] = useState("define"); // "define" | "build"
+  const [blockSteps, setBlockSteps] = useState([]);
+  const [blockIcon, setBlockIcon] = useState(FUNCTION_ICONS[0]);
+  const [program, setProgram] = useState([]); // array of dir strings or {block:true}
+  const [running, setRunning] = useState(false);
+  const [result, setResult] = useState(null);
+  const [robotPos, setRobotPos] = useState(null);
+
+  const level = FUNCTION_LEVELS[levelIndex];
+  const obstacleSet = useMemo(
+    () => new Set(level.obstacles.map(([r, c]) => cellKey(r, c))),
+    [level]
+  );
+
+  function resetAll(i) {
+    setLevelIndex(i);
+    setStage("define");
+    setBlockSteps([]);
+    setBlockIcon(FUNCTION_ICONS[0]);
+    setProgram([]);
+    setRobotPos(null);
+    setResult(null);
+  }
+
+  function addBlockStep(dir) {
+    if (blockSteps.length >= 3) return;
+    setBlockSteps((s) => [...s, dir]);
+  }
+  function undoBlockStep() {
+    setBlockSteps((s) => s.slice(0, -1));
+  }
+  function confirmBlock() {
+    if (blockSteps.length < 2) return;
+    setStage("build");
+  }
+
+  function addInstruction(dir) {
+    if (running) return;
+    setResult(null);
+    setProgram((p) => [...p, dir]);
+  }
+  function addCustomBlock() {
+    if (running) return;
+    setResult(null);
+    setProgram((p) => [...p, { block: true }]);
+  }
+  function undoLast() {
+    if (running) return;
+    setResult(null);
+    setProgram((p) => p.slice(0, -1));
+  }
+  function clearProgram() {
+    if (running) return;
+    setResult(null);
+    setProgram([]);
+  }
+  function editBlock() {
+    if (running) return;
+    setStage("define");
+    setProgram([]);
+    setResult(null);
+  }
+
+  // Expand the program (arrows + custom-block references) into a flat list
+  // of directions before running, same engine as MazeMode.
+  const expandedProgram = useMemo(() => {
+    const out = [];
+    for (const step of program) {
+      if (step && step.block) out.push(...blockSteps);
+      else out.push(step);
+    }
+    return out;
+  }, [program, blockSteps]);
+
+  function runProgram() {
+    if (running || program.length === 0) return;
+    setRunning(true);
+    setResult(null);
+    let pos = [...level.start];
+    setRobotPos(pos);
+    let step = 0;
+    let hitObstacle = false;
+    const steps = expandedProgram;
+
+    function tick() {
+      if (step >= steps.length) {
+        finish();
+        return;
+      }
+      const [dr, dc] = DIRS[steps[step]];
+      const next = [pos[0] + dr, pos[1] + dc];
+      const inBounds =
+        next[0] >= 0 && next[0] < level.size && next[1] >= 0 && next[1] < level.size;
+      if (inBounds && !obstacleSet.has(cellKey(next[0], next[1]))) {
+        pos = next;
+        setRobotPos(pos);
+      } else {
+        hitObstacle = true;
+      }
+      step += 1;
+      setTimeout(tick, 450);
+    }
+
+    function finish() {
+      const success = !hitObstacle && pos[0] === level.goal[0] && pos[1] === level.goal[1];
+      setResult(success ? "success" : "retry");
+      setRunning(false);
+      recordSkillEvent(profile?.name, "robots-function-" + levelIndex, success);
+      pingProgress({
+        profileName: profile?.name,
+        module: "robots",
+        event: success ? "function_success" : "function_retry",
+      });
+    }
+
+    setTimeout(tick, 450);
+  }
+
+  const displayPos = robotPos || level.start;
+
+  return (
+    <div>
+      <p className="page-intro">{t("modules.robotsFunctionIntro")}</p>
+      <div className="robots-progress">
+        {t("modules.robotsLevel")} {levelIndex + 1} / {FUNCTION_LEVELS.length}
+      </div>
+
+      {stage === "define" && (
+        <div>
+          <p className="page-intro">{t("modules.robotsFunctionDefineHint")}</p>
+          <div className="robots-palette">
+            {FUNCTION_ICONS.map((icon) => (
+              <button
+                key={icon}
+                type="button"
+                className={"robots-palette-btn" + (blockIcon === icon ? " correct" : "")}
+                onClick={() => setBlockIcon(icon)}
+              >
+                {icon}
+              </button>
+            ))}
+          </div>
+          <div className="robots-palette">
+            {Object.keys(DIRS).map((dir) => (
+              <button
+                key={dir}
+                type="button"
+                className="robots-palette-btn"
+                onClick={() => addBlockStep(dir)}
+                disabled={blockSteps.length >= 3}
+              >
+                {ARROW_EMOJI[dir]}
+              </button>
+            ))}
+          </div>
+          <div className="robots-program">
+            {blockSteps.length === 0 ? (
+              <span className="robots-program-empty">…</span>
+            ) : (
+              blockSteps.map((dir, i) => (
+                <span key={i} className="robots-program-step">
+                  {ARROW_EMOJI[dir]}
+                </span>
+              ))
+            )}
+          </div>
+          <div className="robots-controls">
+            <button type="button" className="big-btn" onClick={undoBlockStep} disabled={blockSteps.length === 0}>
+              ↩️ {t("modules.robotsUndo")}
+            </button>
+            <button type="button" className="big-btn" onClick={confirmBlock} disabled={blockSteps.length < 2}>
+              {blockIcon} {t("modules.robotsFunctionSave")}
+            </button>
+          </div>
+        </div>
+      )}
+
+      {stage === "build" && (
+        <div>
+          <div className="robots-feedback">
+            {blockIcon} = {blockSteps.map((d) => ARROW_EMOJI[d]).join(" ")}
+          </div>
+
+          <Grid
+            size={level.size}
+            cellsFor={(r, c) => {
+              const isRobot = displayPos[0] === r && displayPos[1] === c;
+              const isGoal = level.goal[0] === r && level.goal[1] === c;
+              const isObstacle = obstacleSet.has(cellKey(r, c));
+              let content = "";
+              if (isRobot) content = "🤖";
+              else if (isGoal) content = "⭐";
+              else if (isObstacle) content = "🪨";
+              return (
+                <div
+                  key={cellKey(r, c)}
+                  className={
+                    "robots-cell" + (isGoal ? " robots-goal" : "") + (isObstacle ? " robots-obstacle" : "")
+                  }
+                >
+                  {content}
+                </div>
+              );
+            }}
+          />
+
+          <div className="robots-palette">
+            {Object.keys(DIRS).map((dir) => (
+              <button
+                key={dir}
+                type="button"
+                className="robots-palette-btn"
+                onClick={() => addInstruction(dir)}
+                disabled={running}
+              >
+                {ARROW_EMOJI[dir]}
+              </button>
+            ))}
+            <button type="button" className="robots-palette-btn" onClick={addCustomBlock} disabled={running}>
+              {blockIcon} {t("modules.robotsFunctionUseBlock")}
+            </button>
+          </div>
+
+          <div className="robots-program">
+            {program.length === 0 ? (
+              <span className="robots-program-empty">…</span>
+            ) : (
+              program.map((step, i) => (
+                <span key={i} className="robots-program-step">
+                  {step && step.block ? blockIcon : ARROW_EMOJI[step]}
+                </span>
+              ))
+            )}
+          </div>
+
+          <div className="robots-controls">
+            <button type="button" className="big-btn" onClick={runProgram} disabled={running}>
+              ▶️ {t("modules.robotsRun")}
+            </button>
+            <button type="button" className="big-btn" onClick={undoLast} disabled={running}>
+              ↩️ {t("modules.robotsUndo")}
+            </button>
+            <button type="button" className="big-btn" onClick={clearProgram} disabled={running}>
+              🗑️ {t("modules.robotsClear")}
+            </button>
+            <button type="button" className="big-btn" onClick={editBlock} disabled={running}>
+              ✏️ {t("modules.robotsFunctionEdit")}
+            </button>
+          </div>
+
+          {result === "success" && (
+            <div className="robots-feedback">
+              {t("modules.robotsSuccess")}
+              {levelIndex < FUNCTION_LEVELS.length - 1 && (
+                <div style={{ marginTop: 10 }}>
+                  <button type="button" className="big-btn" onClick={() => resetAll(levelIndex + 1)}>
+                    {t("modules.robotsNextLevel")} ➡️
+                  </button>
+                </div>
+              )}
+            </div>
+          )}
+          {result === "retry" && (
+            <div className="robots-feedback robots-feedback-retry">{t("modules.robotsTryAgain")}</div>
+          )}
+        </div>
+      )}
+
+      <div className="robots-controls">
+        {FUNCTION_LEVELS.map((_, i) => (
+          <button
+            key={i}
+            type="button"
+            className={"big-btn game-option" + (i === levelIndex ? " correct" : "")}
+            onClick={() => resetAll(i)}
+            disabled={running}
+          >
+            {i + 1}
+          </button>
+        ))}
+      </div>
     </div>
   );
 }
