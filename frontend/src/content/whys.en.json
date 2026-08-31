@@ -437,5 +437,173 @@
     "quickAnswer": "Cats have a very sharp sense of balance in their inner ear and an extremely flexible spine, which lets them twist their body in the air and land paws-first.",
     "moreAnswer": "When a cat starts to fall, sensors in its inner ear immediately detect that it's upside down. The cat uses this to twist the front of its body first, then the back, thanks to its very flexible spine, without needing anything to push off of — this is called the \"righting reflex.\" They also spread their legs out like a parachute to slow the fall. Even so, a fall from any height can hurt a cat, so it's not safe to test this on purpose.",
     "experiment": null
+  },
+  {
+    "id": "rabo-cachorro",
+    "emoji": "🐶",
+    "question": "Why do dogs wag their tail?",
+    "quickAnswer": "Dogs wag their tail to show how they feel — often happiness, but sometimes nervousness or excitement too.",
+    "moreAnswer": "A dog's tail works like a flag that communicates emotions. A loose, wide wag usually means happiness, while a stiff, fast wag can signal tension or alertness. Even the direction matters: studies show happy dogs tend to wag more to the right.",
+    "experiment": "Watch a dog you know well and notice if its tail changes speed and direction depending on the situation."
+  },
+  {
+    "id": "abelhas-mel",
+    "emoji": "🐝",
+    "question": "How do bees make honey?",
+    "quickAnswer": "Bees collect nectar from flowers, mix it with enzymes in their mouths, and store it in honeycombs, where the water evaporates leaving honey behind.",
+    "moreAnswer": "A bee flies from flower to flower sucking up nectar, a sweet liquid, and carries it in a small pouch inside its body. Back at the hive, it passes the nectar mouth-to-mouth to another bee, mixing it with enzymes that start changing it. Then it's stored in wax honeycombs, and the bees fan their wings to evaporate the extra water until it thickens into honey.",
+    "experiment": "Taste a bit of pure honey and notice its sticky texture and floral smell — they come straight from flower nectar."
+  },
+  {
+    "id": "borboleta-metamorfose",
+    "emoji": "🦋",
+    "question": "Why does a caterpillar turn into a butterfly?",
+    "quickAnswer": "Inside the cocoon, the caterpillar's body breaks down almost completely and rebuilds into a new shape with wings, so it can fly and search for flowers.",
+    "moreAnswer": "This process is called complete metamorphosis. The caterpillar eats a lot and grows until it forms a cocoon around itself. Inside, most of its body dissolves into a kind of soup, and special cells use that material to build the adult's body: thin legs, antennae, and colorful wings. After days or weeks, a completely different butterfly emerges.",
+    "experiment": "If you find a caterpillar in a garden, watch it for a few days (without touching it) and see how it grows before forming its cocoon."
+  },
+  {
+    "id": "aranha-teia",
+    "emoji": "🕷️",
+    "question": "How do spiders spin webs?",
+    "quickAnswer": "Spiders produce a liquid silk thread inside their body, which hardens on contact with air, and use their legs to weave the web in a spiral shape.",
+    "moreAnswer": "Inside its abdomen, a spider has special glands that produce silk in liquid form. As it comes out through tiny openings called spinnerets, the silk hardens instantly on touching the air, forming a very strong and stretchy thread. The spider uses its legs to pull and glue the threads together, first making the main spokes and then the sticky spiral that catches insects.",
+    "experiment": "On a dewy morning, look for spiderwebs in the garden — the little water droplets make the threads much easier to see."
+  },
+  {
+    "id": "camaleao-cor",
+    "emoji": "🦎",
+    "question": "Why do chameleons change color?",
+    "quickAnswer": "Chameleons change color mostly to communicate their mood and temperature, and only a little bit to camouflage.",
+    "moreAnswer": "A chameleon's skin has special layers of cells with tiny crystals that reflect light in different ways. By stretching or relaxing its skin, the chameleon changes the spacing of these crystals, altering the color they reflect. They mostly use this to show emotions, like anger or interest in mating, and to regulate body temperature — darker colors absorb more heat from the sun.",
+    "experiment": null
+  },
+  {
+    "id": "urso-hibernacao",
+    "emoji": "🐻",
+    "question": "Why do bears hibernate?",
+    "quickAnswer": "Bears hibernate to save energy during winter, when food is scarce and it's very cold.",
+    "moreAnswer": "Before winter, bears eat huge amounts of food to build up fat. Then they hide in a den and their body enters a deep resting state: heartbeat and breathing slow down a lot, and body temperature drops slightly. This way, they use much less energy and can survive months without eating, living off the stored fat.",
+    "experiment": null
+  },
+  {
+    "id": "elefante-orelhas",
+    "emoji": "🐘",
+    "question": "Why do elephants have such big ears?",
+    "quickAnswer": "Big ears help elephants cool down, because they're full of blood vessels that release heat when the ears are flapped.",
+    "moreAnswer": "Elephants live in hot climates and don't have many sweat glands, so they need another way to cool off. Their ears are packed with blood vessels close to the skin; flapping them cools the blood flowing inside, and that cooler blood then circulates through the rest of the body. The ears also help them hear distant sounds and communicate with other elephants.",
+    "experiment": null
+  },
+  {
+    "id": "girafa-pescoco",
+    "emoji": "🦒",
+    "question": "Why do giraffes have such long necks?",
+    "quickAnswer": "A long neck lets giraffes reach leaves at the top of trees that other animals can't reach, giving them more food.",
+    "moreAnswer": "Over many generations, giraffes with slightly longer necks could eat higher leaves, survive better, and have more offspring — this process is called natural selection. Despite being so long, a giraffe's neck has the same number of bones as ours: seven vertebrae, just much bigger. The long neck also helps males fight each other by swinging their heads.",
+    "experiment": null
+  },
+  {
+    "id": "pinguim-nao-voa",
+    "emoji": "🐧",
+    "question": "Why can't penguins fly?",
+    "quickAnswer": "Over millions of years, penguins' wings turned into strong flippers, perfect for swimming, but no longer able to fly through the air.",
+    "moreAnswer": "Penguins' ancestors could fly, but they lived in places with lots of food in the water and few predators on land. Over time, it became more useful to swim well than to fly, and their wings became shorter, stiffer, and paddle-like. Today, penguins are excellent swimmers underwater, using their wings like true flippers.",
+    "experiment": null
+  },
+  {
+    "id": "tubarao-dentes",
+    "emoji": "🦈",
+    "question": "Why do sharks have so many teeth?",
+    "quickAnswer": "Sharks constantly lose teeth while hunting and chewing, so their body keeps producing new teeth ready to replace the ones that fall out.",
+    "moreAnswer": "Unlike us, who only have two sets of teeth in our lifetime, sharks have several rows of backup teeth behind the ones they're using. When a tooth breaks or falls out, another moves into place within days. Over its lifetime, a shark can grow thousands of different teeth, which helps a lot since hunting and eating with sharp teeth wears them down quickly.",
+    "experiment": null
+  },
+  {
+    "id": "camelo-corcunda",
+    "emoji": "🐫",
+    "question": "Why do camels have humps?",
+    "quickAnswer": "A camel's hump is made of fat, not water, and serves as an energy reserve to survive many days without food in the desert.",
+    "moreAnswer": "Many people think the hump stores water, but it's actually a fat reserve. When there's no food available in the desert, the camel's body turns that fat into energy and even into water, through a chemical process. Also, having the fat concentrated in one spot, instead of spread across the body, helps the camel release heat more easily through the rest of its skin.",
+    "experiment": null
+  },
+  {
+    "id": "arrepios",
+    "emoji": "🥶",
+    "question": "Why do we get goosebumps?",
+    "quickAnswer": "Goosebumps happen when tiny muscles near our hairs tighten, usually because of cold or a strong emotion like fear or a chill of excitement.",
+    "moreAnswer": "Every hair on the body has a small muscle around it. When we're cold or feel an intense emotion, the brain sends a signal that makes those muscles contract, raising the hair and creating small bumps on the skin. In our furrier ancestors, this helped trap more warm air near the body; today we don't have enough hair for that to work, but the reflex still happens.",
+    "experiment": "Listen to a song you love a lot, or think of a chilling scene, and see if you get goosebumps on your arms."
+  },
+  {
+    "id": "sonhar",
+    "emoji": "💭",
+    "question": "Why do we dream?",
+    "quickAnswer": "We dream mostly during a sleep phase when the brain stays very active, sorting through the day's memories and emotions.",
+    "moreAnswer": "During sleep we go through several stages, and in one called REM, the brain is almost as active as when we're awake, even though the body stays still. Scientists think dreams help process emotions, consolidate important memories, and maybe even practice situations we might face. We don't always remember dreams, because we only recall well the ones happening close to when we wake up.",
+    "experiment": "Keep a notebook by your bed and, when you wake up, try to quickly write down what you dreamed before you forget."
+  },
+  {
+    "id": "espirro",
+    "emoji": "🤧",
+    "question": "Why do we sneeze?",
+    "quickAnswer": "We sneeze when something irritates the inside of the nose, like dust or pollen, and the body forcefully expels that irritant through a sneeze.",
+    "moreAnswer": "Inside the nose there are very sensitive sensors that detect foreign particles, like dust, pollen, or pepper. When this happens, they send a signal to the brain, which orders the lungs, throat, and chest muscles to expel air with great force and speed, carrying the irritant away with it. A sneeze can travel at over 150 km/h!",
+    "experiment": "Next time you sneeze, notice — your eyes always close and you can't help it. Try to figure out why."
+  },
+  {
+    "id": "unhas-crescem",
+    "emoji": "💅",
+    "question": "Why do nails grow?",
+    "quickAnswer": "Nails grow continuously because, at their root, there are living cells that multiply nonstop, pushing the old nail forward.",
+    "moreAnswer": "At the base of the nail there's an area called the matrix, where new cells are produced all the time. These cells fill up with keratin, the same tough protein found in hair, and push the already-formed part of the nail outward. Fingernails grow faster than toenails, and they grow even faster on the middle finger.",
+    "experiment": "Make a small mark with a pen near the base of a nail and measure the distance to the tip over two weeks."
+  },
+  {
+    "id": "cabelo-cresce",
+    "emoji": "💇",
+    "question": "Why does hair grow?",
+    "quickAnswer": "Hair grows because, at the root of each strand, cells divide constantly, pushing the hair out of the scalp.",
+    "moreAnswer": "Each hair strand starts inside a tiny follicle in the skin. At the bottom of the follicle, living cells divide rapidly and turn into keratin, a tough protein, pushing the hair strand further and further out. A hair strand grows about 1 centimeter per month, but after growing for a few years, it falls out and a new strand starts growing in the same follicle.",
+    "experiment": null
+  },
+  {
+    "id": "cocegas",
+    "emoji": "😆",
+    "question": "Why are we ticklish?",
+    "quickAnswer": "Tickling happens because the skin has areas very sensitive to touch, and the brain reacts with laughter, especially when someone else touches us.",
+    "moreAnswer": "Interestingly, we can't tickle ourselves, because the brain already knows in advance where and how we're going to touch. When someone else touches us unexpectedly in sensitive spots, like the feet or armpits, the brain can't predict the touch and reacts more intensely, often with laughter. Some scientists think this reflex may have helped our ancestors protect vulnerable parts of the body.",
+    "experiment": "Try tickling yourself on the palm of your hand, then ask someone else to do it. Do you notice any difference?"
+  },
+  {
+    "id": "lagrimas",
+    "emoji": "😢",
+    "question": "Why do we cry tears?",
+    "quickAnswer": "We cry tears to protect and clean our eyes, but also as a response to strong emotions, like sadness, pain, or even joy.",
+    "moreAnswer": "There are three types of tears: those that keep the eyes moist all the time, those that appear to wash away something irritating, like dust or onion fumes, and emotional tears, which only humans produce in response to strong feelings. These last ones even have a slightly different chemical makeup, with more stress-related hormones, which might explain why crying sometimes makes us feel better.",
+    "experiment": null
+  },
+  {
+    "id": "barriga-ronco",
+    "emoji": "🍽️",
+    "question": "Why does our stomach growl?",
+    "quickAnswer": "Our stomach growls because the muscles in the stomach and intestines contract to move air, fluids, and food, creating gurgling sounds.",
+    "moreAnswer": "The digestive system is always moving, even when we're not eating, in a process called peristalsis, which pushes contents along the digestive tract. When the stomach is empty, there's less food to muffle the sound, so the air and fluids moving inside make more noise. That's why our stomach growls more when we're hungry.",
+    "experiment": "Notice when your stomach growls more: before meals or after them?"
+  },
+  {
+    "id": "dentes-de-leite",
+    "emoji": "🦷",
+    "question": "Why do we lose our baby teeth?",
+    "quickAnswer": "Baby teeth fall out because a child's mouth is too small for the bigger, stronger teeth growing underneath them.",
+    "moreAnswer": "When we're born, we already have baby teeth formed inside our gums, and around 6 months they start coming in. There are 20 in total, but the mouth keeps growing and needs bigger teeth to chew better. Under each baby tooth, a permanent tooth slowly grows, and when it's ready, it pushes on the baby tooth's root until it dissolves, making the tooth fall out on its own.",
+    "experiment": "If you have a wobbly baby tooth, notice how it gets looser and looser over the days."
+  },
+  {
+    "id": "impressao-digital",
+    "emoji": "👆",
+    "question": "Why do we have fingerprints?",
+    "quickAnswer": "Fingerprints are small ridges on the skin of our fingertips that help us grip objects more firmly and feel textures.",
+    "moreAnswer": "These ridges increase friction between the finger and objects, making it easier to hold things without slipping, even when fingers are a little damp. They form before we're even born, inside our mother's belly, and each person's pattern is completely unique — not even identical twins have the same fingerprints.",
+    "experiment": "Rub the tip of a finger with soft colored pencil, press it on paper, and look at the unique pattern it leaves."
   }
 ]

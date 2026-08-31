@@ -437,5 +437,173 @@
     "quickAnswer": "Katzen haben einen sehr feinen Gleichgewichtssinn im Innenohr und eine extrem flexible Wirbelsäule, wodurch sie ihren Körper in der Luft drehen und mit den Pfoten zuerst landen können.",
     "moreAnswer": "Wenn eine Katze zu fallen beginnt, erkennen Sensoren im Innenohr sofort, dass sie kopfüber ist. Die Katze dreht dank ihrer sehr flexiblen Wirbelsäule zuerst den Vorderkörper, dann den Hinterkörper, ohne sich an irgendetwas abstoßen zu müssen – das nennt man den „Aufrichtreflex“. Sie spreizen auch die Beine wie einen Fallschirm, um den Fall zu bremsen. Trotzdem kann ein Sturz aus jeder Höhe eine Katze verletzen, daher ist es nicht sicher, das absichtlich zu testen.",
     "experiment": null
+  },
+  {
+    "id": "rabo-cachorro",
+    "emoji": "🐶",
+    "question": "Warum wedeln Hunde mit dem Schwanz?",
+    "quickAnswer": "Hunde wedeln mit dem Schwanz, um zu zeigen, wie sie sich fühlen – oft vor Freude, manchmal aber auch aus Nervosität oder Aufregung.",
+    "moreAnswer": "Der Schwanz wirkt wie eine Flagge, die Gefühle mitteilt. Ein lockeres, weites Wedeln bedeutet meist Freude, ein steifes, schnelles Wedeln kann Anspannung oder Wachsamkeit zeigen. Sogar die Richtung zählt: Studien zeigen, dass fröhliche Hunde eher nach rechts wedeln.",
+    "experiment": "Beobachte einen Hund, den du gut kennst, und schau, ob sich Geschwindigkeit und Richtung des Schwanzwedelns je nach Situation ändern."
+  },
+  {
+    "id": "abelhas-mel",
+    "emoji": "🐝",
+    "question": "Wie machen Bienen Honig?",
+    "quickAnswer": "Bienen sammeln Nektar von Blüten, vermischen ihn im Mund mit Enzymen und lagern ihn in Waben, wo das Wasser verdunstet und Honig übrig bleibt.",
+    "moreAnswer": "Eine Biene fliegt von Blüte zu Blüte und saugt Nektar, eine süße Flüssigkeit, die sie in einem kleinen Beutel im Körper trägt. Zurück im Bienenstock gibt sie den Nektar von Mund zu Mund an eine andere Biene weiter und vermischt ihn mit Enzymen. Danach wird er in Wachswaben gelagert, und die Bienen fächeln mit den Flügeln, um das überschüssige Wasser zu verdunsten, bis er zu Honig eindickt.",
+    "experiment": "Probiere etwas reinen Honig und achte auf die klebrige Textur und den blumigen Duft – sie stammen direkt aus dem Blütennektar."
+  },
+  {
+    "id": "borboleta-metamorfose",
+    "emoji": "🦋",
+    "question": "Warum verwandelt sich eine Raupe in einen Schmetterling?",
+    "quickAnswer": "Im Kokon löst sich der Körper der Raupe fast vollständig auf und baut sich zu einer neuen Form mit Flügeln um, damit sie fliegen und Blumen suchen kann.",
+    "moreAnswer": "Dieser Vorgang heißt vollständige Metamorphose. Die Raupe frisst viel und wächst, bis sie einen Kokon um sich bildet. Darin löst sich der größte Teil ihres Körpers zu einer Art Brei auf, und spezielle Zellen nutzen dieses Material, um den Körper des erwachsenen Tieres zu bauen: dünne Beine, Fühler und bunte Flügel. Nach Tagen oder Wochen schlüpft ein völlig anderer Schmetterling.",
+    "experiment": "Wenn du eine Raupe im Garten findest, beobachte sie ein paar Tage lang (ohne sie anzufassen) und schau, wie sie wächst, bevor sie einen Kokon bildet."
+  },
+  {
+    "id": "aranha-teia",
+    "emoji": "🕷️",
+    "question": "Wie spinnen Spinnen ihre Netze?",
+    "quickAnswer": "Spinnen erzeugen im Körper einen flüssigen Seidenfaden, der beim Kontakt mit Luft hart wird, und weben mit ihren Beinen das Netz in Spiralform.",
+    "moreAnswer": "Im Hinterleib hat die Spinne besondere Drüsen, die flüssige Seide herstellen. Beim Austritt durch winzige Öffnungen, die Spinnwarzen genannt werden, härtet die Seide sofort beim Kontakt mit der Luft aus und bildet einen sehr reißfesten, elastischen Faden. Die Spinne zieht und klebt die Fäden mit ihren Beinen zusammen und webt zuerst die Speichen und dann die klebrige Spirale, die Insekten fängt.",
+    "experiment": "Suche an einem taufeuchten Morgen im Garten nach Spinnennetzen – die kleinen Wassertropfen machen die Fäden viel besser sichtbar."
+  },
+  {
+    "id": "camaleao-cor",
+    "emoji": "🦎",
+    "question": "Warum wechseln Chamäleons die Farbe?",
+    "quickAnswer": "Chamäleons wechseln die Farbe vor allem, um ihre Stimmung und Temperatur zu zeigen, und nur ein wenig zur Tarnung.",
+    "moreAnswer": "In der Haut des Chamäleons gibt es besondere Zellschichten mit winzigen Kristallen, die Licht auf unterschiedliche Weise reflektieren. Durch Dehnen oder Entspannen der Haut ändert das Chamäleon den Abstand dieser Kristalle und damit die reflektierte Farbe. Meist nutzen sie das, um Gefühle wie Wut oder Paarungsinteresse zu zeigen, und um die Körpertemperatur zu regeln – dunklere Farben nehmen mehr Sonnenwärme auf.",
+    "experiment": null
+  },
+  {
+    "id": "urso-hibernacao",
+    "emoji": "🐻",
+    "question": "Warum halten Bären einen Winterschlaf?",
+    "quickAnswer": "Bären halten Winterschlaf, um im Winter Energie zu sparen, wenn es wenig Nahrung gibt und es sehr kalt ist.",
+    "moreAnswer": "Vor dem Winter fressen Bären riesige Mengen, um Fett aufzubauen. Dann verstecken sie sich in einer Höhle, und ihr Körper geht in einen tiefen Ruhezustand über: Herzschlag und Atmung werden viel langsamer, und die Körpertemperatur sinkt leicht. So verbrauchen sie viel weniger Energie und können Monate ohne Nahrung überleben, indem sie vom gespeicherten Fett zehren.",
+    "experiment": null
+  },
+  {
+    "id": "elefante-orelhas",
+    "emoji": "🐘",
+    "question": "Warum haben Elefanten so große Ohren?",
+    "quickAnswer": "Große Ohren helfen Elefanten, sich abzukühlen, weil sie viele Blutgefäße enthalten, die beim Wedeln Wärme abgeben.",
+    "moreAnswer": "Elefanten leben in heißen Klimazonen und haben nicht viele Schweißdrüsen, daher brauchen sie eine andere Kühlmethode. Ihre Ohren sind voller Blutgefäße nah an der Haut; beim Wedeln kühlt sich das durchfließende Blut ab, und dieses kühlere Blut zirkuliert dann durch den restlichen Körper. Die Ohren helfen ihnen auch, entfernte Geräusche zu hören und mit anderen Elefanten zu kommunizieren.",
+    "experiment": null
+  },
+  {
+    "id": "girafa-pescoco",
+    "emoji": "🦒",
+    "question": "Warum haben Giraffen so lange Hälse?",
+    "quickAnswer": "Der lange Hals lässt Giraffen Blätter in Baumwipfeln erreichen, die andere Tiere nicht erreichen können, was ihnen mehr Nahrung verschafft.",
+    "moreAnswer": "Über viele Generationen hinweg konnten Giraffen mit etwas längerem Hals höher gelegene Blätter fressen, besser überleben und mehr Nachkommen bekommen – dieser Vorgang heißt natürliche Selektion. Trotz seiner Länge hat der Giraffenhals genauso viele Knochen wie unserer: sieben Wirbel, nur jeder viel größer. Der lange Hals hilft Männchen auch, im Kampf mit dem Kopf zuzuschlagen.",
+    "experiment": null
+  },
+  {
+    "id": "pinguim-nao-voa",
+    "emoji": "🐧",
+    "question": "Warum können Pinguine nicht fliegen?",
+    "quickAnswer": "Im Lauf von Millionen Jahren wurden aus den Flügeln der Pinguine kräftige Flossen, perfekt zum Schwimmen, aber nicht mehr zum Fliegen in der Luft.",
+    "moreAnswer": "Die Vorfahren der Pinguine konnten fliegen, lebten aber an Orten mit viel Nahrung im Wasser und wenigen Fressfeinden an Land. Mit der Zeit wurde gutes Schwimmen nützlicher als Fliegen, und die Flügel wurden kürzer, steifer und ruderartig. Heute sind Pinguine hervorragende Schwimmer unter Wasser und nutzen ihre Flügel wie richtige Flossen.",
+    "experiment": null
+  },
+  {
+    "id": "tubarao-dentes",
+    "emoji": "🦈",
+    "question": "Warum haben Haie so viele Zähne?",
+    "quickAnswer": "Haie verlieren beim Jagen und Kauen ständig Zähne, daher produziert ihr Körper immer wieder neue Zähne als Ersatz.",
+    "moreAnswer": "Anders als wir, die nur zwei Zahnreihen im Leben haben, besitzen Haie mehrere Reihen von Ersatzzähnen hinter den benutzten. Bricht ein Zahn ab oder fällt aus, rückt innerhalb weniger Tage ein anderer nach. Im Laufe seines Lebens kann ein Hai Tausende verschiedene Zähne bilden, was sehr hilfreich ist, da scharfe Zähne beim Jagen und Fressen schnell abgenutzt werden.",
+    "experiment": null
+  },
+  {
+    "id": "camelo-corcunda",
+    "emoji": "🐫",
+    "question": "Warum haben Kamele Höcker?",
+    "quickAnswer": "Der Höcker eines Kamels besteht aus Fett, nicht aus Wasser, und dient als Energiereserve, um viele Tage ohne Nahrung in der Wüste zu überleben.",
+    "moreAnswer": "Viele denken, der Höcker speichere Wasser, aber tatsächlich ist es eine Fettreserve. Wenn in der Wüste keine Nahrung verfügbar ist, verwandelt der Körper des Kamels dieses Fett durch einen chemischen Prozess in Energie und sogar in Wasser. Außerdem hilft es dem Kamel, das Fett an einer Stelle konzentriert zu haben statt über den ganzen Körper verteilt, damit es über die restliche Haut leichter Wärme abgeben kann.",
+    "experiment": null
+  },
+  {
+    "id": "arrepios",
+    "emoji": "🥶",
+    "question": "Warum bekommen wir Gänsehaut?",
+    "quickAnswer": "Gänsehaut entsteht, wenn sich winzige Muskeln neben unseren Haaren zusammenziehen, meist wegen Kälte oder einer starken Emotion wie Angst oder einem Schauer der Begeisterung.",
+    "moreAnswer": "Jedes Haar am Körper hat einen kleinen Muskel drumherum. Wenn uns kalt ist oder wir eine starke Emotion spüren, sendet das Gehirn ein Signal, das diese Muskeln zusammenzieht, das Haar aufrichtet und kleine Beulen auf der Haut erzeugt. Bei unseren behaarteren Vorfahren half das, mehr warme Luft nah am Körper zu halten; heute haben wir nicht genug Haare, damit das funktioniert, aber der Reflex passiert trotzdem noch.",
+    "experiment": "Hör ein Lied, das du sehr magst, oder denk an eine gruselige Szene, und schau, ob du Gänsehaut an den Armen bekommst."
+  },
+  {
+    "id": "sonhar",
+    "emoji": "💭",
+    "question": "Warum träumen wir?",
+    "quickAnswer": "Wir träumen hauptsächlich während einer Schlafphase, in der das Gehirn sehr aktiv bleibt und Erinnerungen und Gefühle des Tages ordnet.",
+    "moreAnswer": "Im Schlaf durchlaufen wir mehrere Phasen, und in einer davon, dem REM-Schlaf, ist das Gehirn fast so aktiv wie im Wachzustand, obwohl der Körper still bleibt. Wissenschaftler glauben, dass Träume helfen, Gefühle zu verarbeiten, wichtige Erinnerungen zu festigen und vielleicht sogar Situationen zu üben, die uns bevorstehen könnten. Wir erinnern uns nicht immer an Träume, weil wir uns nur gut an die erinnern, die kurz vor dem Aufwachen passieren.",
+    "experiment": "Leg ein Notizbuch neben dein Bett und versuche beim Aufwachen, schnell aufzuschreiben, was du geträumt hast, bevor du es vergisst."
+  },
+  {
+    "id": "espirro",
+    "emoji": "🤧",
+    "question": "Warum niesen wir?",
+    "quickAnswer": "Wir niesen, wenn etwas das Innere der Nase reizt, wie Staub oder Pollen, und der Körper diesen Reizstoff mit einem Nieser kräftig ausstößt.",
+    "moreAnswer": "In der Nase gibt es sehr empfindliche Sensoren, die fremde Partikel wie Staub, Pollen oder Pfeffer erkennen. Geschieht das, senden sie ein Signal ans Gehirn, das Lunge, Rachen und Brustmuskeln anweist, Luft mit großer Kraft und Geschwindigkeit auszustoßen und dabei den Reizstoff mitzunehmen. Ein Nieser kann über 150 km/h erreichen!",
+    "experiment": "Achte beim nächsten Niesen darauf – deine Augen schließen sich immer, ohne dass du es verhindern kannst. Versuch herauszufinden, warum."
+  },
+  {
+    "id": "unhas-crescem",
+    "emoji": "💅",
+    "question": "Warum wachsen Nägel?",
+    "quickAnswer": "Nägel wachsen ständig, weil an ihrer Wurzel lebende Zellen sich unaufhörlich vermehren und den alten Nagel nach vorne schieben.",
+    "moreAnswer": "An der Nagelbasis gibt es einen Bereich namens Matrix, wo ständig neue Zellen produziert werden. Diese Zellen füllen sich mit Keratin, demselben harten Protein, das auch im Haar vorkommt, und schieben den bereits gebildeten Teil des Nagels nach vorne. Fingernägel wachsen schneller als Fußnägel, und am schnellsten wächst der Nagel am Mittelfinger.",
+    "experiment": "Mache mit einem Stift eine kleine Markierung nahe der Nagelbasis und miss über zwei Wochen den Abstand zur Spitze."
+  },
+  {
+    "id": "cabelo-cresce",
+    "emoji": "💇",
+    "question": "Warum wachsen Haare?",
+    "quickAnswer": "Haare wachsen, weil sich an der Wurzel jedes Haares Zellen ständig teilen und das Haar aus der Kopfhaut herausdrücken.",
+    "moreAnswer": "Jedes Haar entsteht in einem winzigen Follikel in der Haut. Am Grund des Follikels teilen sich lebende Zellen schnell und wandeln sich in Keratin um, ein widerstandsfähiges Protein, das das Haar immer weiter nach außen drückt. Ein Haar wächst etwa 1 Zentimeter pro Monat, aber nach ein paar Jahren Wachstum fällt es aus, und ein neues Haar beginnt im selben Follikel zu wachsen.",
+    "experiment": null
+  },
+  {
+    "id": "cocegas",
+    "emoji": "😆",
+    "question": "Warum sind wir kitzlig?",
+    "quickAnswer": "Kitzeln passiert, weil die Haut Bereiche hat, die sehr berührungsempfindlich sind, und das Gehirn mit Lachen reagiert, besonders wenn uns jemand anderes berührt.",
+    "moreAnswer": "Interessanterweise können wir uns selbst nicht kitzeln, weil das Gehirn schon vorher weiß, wo und wie wir uns berühren werden. Wenn uns jemand anderes unerwartet an empfindlichen Stellen wie Füßen oder Achseln berührt, kann das Gehirn die Berührung nicht vorhersagen und reagiert stärker, oft mit Lachen. Manche Wissenschaftler glauben, dieser Reflex könnte unseren Vorfahren geholfen haben, verletzliche Körperstellen zu schützen.",
+    "experiment": "Versuch, dich selbst an der Handfläche zu kitzeln, und bitte dann jemanden, es zu tun. Merkst du einen Unterschied?"
+  },
+  {
+    "id": "lagrimas",
+    "emoji": "😢",
+    "question": "Warum weinen wir Tränen?",
+    "quickAnswer": "Wir weinen Tränen, um unsere Augen zu schützen und zu reinigen, aber auch als Reaktion auf starke Gefühle wie Traurigkeit, Schmerz oder sogar Freude.",
+    "moreAnswer": "Es gibt drei Arten von Tränen: solche, die die Augen ständig feucht halten, solche, die entstehen, um etwas Reizendes wie Staub oder Zwiebeldämpfe wegzuspülen, und emotionale Tränen, die nur Menschen als Reaktion auf starke Gefühle produzieren. Letztere haben sogar eine leicht andere chemische Zusammensetzung mit mehr stressbezogenen Hormonen, was erklären könnte, warum Weinen manchmal ein besseres Gefühl gibt.",
+    "experiment": null
+  },
+  {
+    "id": "barriga-ronco",
+    "emoji": "🍽️",
+    "question": "Warum knurrt der Magen?",
+    "quickAnswer": "Der Magen knurrt, weil sich die Muskeln in Magen und Darm zusammenziehen, um Luft, Flüssigkeiten und Nahrung zu bewegen, was gluckernde Geräusche erzeugt.",
+    "moreAnswer": "Das Verdauungssystem ist immer in Bewegung, auch wenn wir nicht essen, in einem Vorgang namens Peristaltik, der den Inhalt durch den Verdauungstrakt schiebt. Ist der Magen leer, gibt es weniger Nahrung, um das Geräusch zu dämpfen, daher machen die Luft und Flüssigkeiten darin mehr Lärm. Deshalb knurrt der Magen mehr, wenn wir hungrig sind.",
+    "experiment": "Achte darauf, wann dein Magen mehr knurrt: vor den Mahlzeiten oder danach?"
+  },
+  {
+    "id": "dentes-de-leite",
+    "emoji": "🦷",
+    "question": "Warum verlieren wir unsere Milchzähne?",
+    "quickAnswer": "Milchzähne fallen aus, weil der Mund eines Kindes zu klein für die größeren, stärkeren Zähne ist, die darunter wachsen.",
+    "moreAnswer": "Bei der Geburt haben wir bereits Milchzähne im Zahnfleisch angelegt, und mit etwa 6 Monaten beginnen sie durchzubrechen. Es sind insgesamt 20, aber der Mund wächst weiter und braucht größere Zähne zum besseren Kauen. Unter jedem Milchzahn wächst langsam ein bleibender Zahn, und wenn er bereit ist, drückt er auf die Wurzel des Milchzahns, bis sie sich auflöst und der Zahn von selbst ausfällt.",
+    "experiment": "Wenn du einen wackeligen Milchzahn hast, beobachte, wie er im Laufe der Tage immer lockerer wird."
+  },
+  {
+    "id": "impressao-digital",
+    "emoji": "👆",
+    "question": "Warum haben wir Fingerabdrücke?",
+    "quickAnswer": "Fingerabdrücke sind kleine Rillen auf der Haut unserer Fingerspitzen, die uns helfen, Gegenstände fester zu greifen und Texturen zu spüren.",
+    "moreAnswer": "Diese Rillen erhöhen die Reibung zwischen Finger und Objekten, wodurch man Dinge leichter halten kann, ohne dass sie abrutschen, selbst wenn die Finger etwas feucht sind. Sie bilden sich schon vor der Geburt im Bauch der Mutter, und das Muster jedes Menschen ist völlig einzigartig – nicht einmal eineiige Zwillinge haben gleiche Fingerabdrücke.",
+    "experiment": "Male die Spitze eines Fingers mit einem weichen Buntstift ein, drücke ihn auf Papier und betrachte das einzigartige Muster, das er hinterlässt."
   }
 ]

@@ -437,5 +437,173 @@
     "quickAnswer": "Los gatos tienen un sentido del equilibrio muy preciso en el oído interno y una columna extremadamente flexible, lo que les permite girar el cuerpo en el aire y aterrizar con las patas primero.",
     "moreAnswer": "Cuando un gato empieza a caer, sensores en el oído interno detectan de inmediato que está boca abajo. El gato usa eso para girar primero la parte delantera del cuerpo y luego la trasera, aprovechando su columna vertebral muy flexible, sin necesitar ningún punto de apoyo: a esto se le llama \"reflejo de enderezamiento\". También estiran las patas como un paracaídas para frenar la caída. Aun así, una caída desde cualquier altura puede lastimar a un gato, así que no es seguro probar esto a propósito.",
     "experiment": null
+  },
+  {
+    "id": "rabo-cachorro",
+    "emoji": "🐶",
+    "question": "¿Por qué los perros mueven la cola?",
+    "quickAnswer": "Los perros mueven la cola para mostrar cómo se sienten, muchas veces alegría, pero también pueden estar nerviosos o excitados.",
+    "moreAnswer": "La cola funciona como una bandera que comunica emociones. Un movimiento amplio y suelto suele significar alegría, mientras que uno rígido y rápido puede indicar tensión o alerta. Incluso la dirección importa: los estudios muestran que los perros felices mueven más la cola hacia la derecha.",
+    "experiment": "Observa a un perro que conozcas bien y fíjate si la velocidad y dirección de su cola cambian según la situación."
+  },
+  {
+    "id": "abelhas-mel",
+    "emoji": "🐝",
+    "question": "¿Cómo hacen las abejas la miel?",
+    "quickAnswer": "Las abejas recogen néctar de las flores, lo mezclan con enzimas en la boca y lo guardan en los panales, donde el agua se evapora y queda la miel.",
+    "moreAnswer": "Una abeja va de flor en flor chupando néctar, un líquido dulce, y lo lleva en una bolsita dentro de su cuerpo. De vuelta en la colmena, pasa el néctar boca a boca a otra abeja, mezclándolo con enzimas que comienzan a transformarlo. Luego se guarda en panales de cera, y las abejas abanican las alas para evaporar el agua extra hasta que espesa y se convierte en miel.",
+    "experiment": "Prueba un poco de miel pura y fíjate en su textura pegajosa y su aroma floral: vienen directamente del néctar de las flores."
+  },
+  {
+    "id": "borboleta-metamorfose",
+    "emoji": "🦋",
+    "question": "¿Por qué la oruga se transforma en mariposa?",
+    "quickAnswer": "Dentro del capullo, el cuerpo de la oruga se deshace casi por completo y se reorganiza en una nueva forma, con alas, para poder volar y buscar flores.",
+    "moreAnswer": "Este proceso se llama metamorfosis completa. La oruga come mucho y crece hasta formar un capullo a su alrededor. Dentro, la mayor parte de su cuerpo se disuelve en una especie de papilla, y células especiales usan ese material para construir el cuerpo del adulto: patas finas, antenas y alas coloridas. Tras días o semanas, sale una mariposa completamente diferente.",
+    "experiment": "Si encuentras una oruga en un jardín, obsérvala unos días (sin tocarla) y ve cómo crece antes de formar su capullo."
+  },
+  {
+    "id": "aranha-teia",
+    "emoji": "🕷️",
+    "question": "¿Cómo hacen las arañas sus telarañas?",
+    "quickAnswer": "Las arañas producen un hilo de seda líquida dentro del cuerpo, que se endurece al contacto con el aire, y usan las patas para tejer la telaraña en espiral.",
+    "moreAnswer": "Dentro del abdomen, la araña tiene glándulas especiales que producen seda en estado líquido. Al salir por pequeñas aberturas llamadas hileras, la seda se endurece al instante al tocar el aire, formando un hilo muy resistente y elástico. La araña usa las patas para tirar y pegar los hilos, creando primero los radios principales y luego la espiral pegajosa que atrapa a los insectos.",
+    "experiment": "En una mañana con rocío, busca telarañas en el jardín: las gotitas de agua hacen que los hilos sean mucho más fáciles de ver."
+  },
+  {
+    "id": "camaleao-cor",
+    "emoji": "🦎",
+    "question": "¿Por qué los camaleones cambian de color?",
+    "quickAnswer": "Los camaleones cambian de color sobre todo para comunicar su estado de ánimo y su temperatura, y solo un poco para camuflarse.",
+    "moreAnswer": "En la piel del camaleón hay capas especiales de células con diminutos cristales que reflejan la luz de formas distintas. Al estirar o relajar la piel, el camaleón cambia el espacio entre esos cristales, alterando el color que reflejan. Lo usan sobre todo para mostrar emociones, como enfado o interés en aparearse, y para regular la temperatura corporal: los colores oscuros absorben más calor del sol.",
+    "experiment": null
+  },
+  {
+    "id": "urso-hibernacao",
+    "emoji": "🐻",
+    "question": "¿Por qué los osos hibernan?",
+    "quickAnswer": "Los osos hibernan para ahorrar energía durante el invierno, cuando hay poca comida disponible y hace mucho frío.",
+    "moreAnswer": "Antes del invierno, los osos comen muchísimo para acumular grasa. Luego se esconden en una guarida y su cuerpo entra en un estado de descanso profundo: el latido del corazón y la respiración se hacen mucho más lentos, y la temperatura corporal baja un poco. Así, gastan mucha menos energía y pueden sobrevivir meses sin comer, usando solo la grasa acumulada.",
+    "experiment": null
+  },
+  {
+    "id": "elefante-orelhas",
+    "emoji": "🐘",
+    "question": "¿Por qué los elefantes tienen orejas tan grandes?",
+    "quickAnswer": "Las orejas grandes ayudan a los elefantes a refrescarse, porque tienen muchos vasos sanguíneos que liberan calor cuando se abanican.",
+    "moreAnswer": "Los elefantes viven en climas cálidos y no tienen muchas glándulas sudoríparas, por lo que necesitan otra forma de enfriarse. Sus orejas están llenas de vasos sanguíneos muy cerca de la piel; al abanicarlas, el aire enfría la sangre que circula por dentro, y esa sangre más fresca luego recorre el resto del cuerpo. Las orejas también les ayudan a oír sonidos lejanos y a comunicarse con otros elefantes.",
+    "experiment": null
+  },
+  {
+    "id": "girafa-pescoco",
+    "emoji": "🦒",
+    "question": "¿Por qué las jirafas tienen el cuello tan largo?",
+    "quickAnswer": "El cuello largo permite a las jirafas alcanzar hojas en la copa de los árboles que otros animales no pueden alcanzar, lo que les da más comida.",
+    "moreAnswer": "A lo largo de muchas generaciones, las jirafas con el cuello un poco más largo podían comer hojas más altas, sobrevivir mejor y tener más crías: este proceso se llama selección natural. A pesar de ser tan largo, el cuello de una jirafa tiene el mismo número de huesos que el nuestro: siete vértebras, solo que cada una mucho más grande. El cuello largo también ayuda a los machos a pelear golpeándose con la cabeza.",
+    "experiment": null
+  },
+  {
+    "id": "pinguim-nao-voa",
+    "emoji": "🐧",
+    "question": "¿Por qué los pingüinos no vuelan?",
+    "quickAnswer": "A lo largo de millones de años, las alas de los pingüinos se transformaron en aletas fuertes, perfectas para nadar, pero ya no sirven para volar por el aire.",
+    "moreAnswer": "Los antepasados de los pingüinos podían volar, pero vivían en lugares con mucha comida en el agua y pocos depredadores en tierra. Con el tiempo, resultó más ventajoso nadar bien que volar, y las alas se fueron volviendo más cortas, rígidas y parecidas a remos. Hoy, los pingüinos son excelentes nadadores bajo el agua, usando las alas como verdaderas aletas.",
+    "experiment": null
+  },
+  {
+    "id": "tubarao-dentes",
+    "emoji": "🦈",
+    "question": "¿Por qué los tiburones tienen tantos dientes?",
+    "quickAnswer": "Los tiburones pierden dientes constantemente al cazar y masticar, así que su cuerpo produce siempre dientes nuevos listos para reemplazar los que caen.",
+    "moreAnswer": "A diferencia de nosotros, que solo tenemos dos juegos de dientes en la vida, los tiburones tienen varias filas de dientes de repuesto detrás de los que usan. Cuando un diente se rompe o cae, otro avanza a su lugar en pocos días. A lo largo de su vida, un tiburón puede tener miles de dientes distintos, lo cual ayuda mucho porque cazar y comer con dientes afilados los desgasta rápido.",
+    "experiment": null
+  },
+  {
+    "id": "camelo-corcunda",
+    "emoji": "🐫",
+    "question": "¿Por qué los camellos tienen joroba?",
+    "quickAnswer": "La joroba del camello está hecha de grasa, no de agua, y sirve como reserva de energía para sobrevivir muchos días sin comer en el desierto.",
+    "moreAnswer": "Mucha gente piensa que la joroba guarda agua, pero en realidad es una reserva de grasa. Cuando no hay comida disponible en el desierto, el cuerpo del camello transforma esa grasa en energía e incluso en agua, mediante un proceso químico. Además, tener la grasa concentrada en una sola zona, en vez de repartida por el cuerpo, ayuda al camello a liberar calor más fácilmente por el resto de la piel.",
+    "experiment": null
+  },
+  {
+    "id": "arrepios",
+    "emoji": "🥶",
+    "question": "¿Por qué se nos pone la piel de gallina?",
+    "quickAnswer": "La piel de gallina ocurre cuando pequeños músculos junto a los pelos se contraen, generalmente por el frío o una emoción fuerte, como miedo o emoción intensa.",
+    "moreAnswer": "Cada pelo del cuerpo tiene un pequeño músculo a su alrededor. Cuando tenemos frío o sentimos una emoción intensa, el cerebro envía una señal que hace que esos músculos se contraigan, levantando el pelo y creando pequeños bultos en la piel. En nuestros antepasados más peludos, esto ayudaba a retener más aire caliente cerca del cuerpo; hoy ya no tenemos suficiente pelo para que funcione, pero el reflejo sigue ocurriendo.",
+    "experiment": "Escucha una canción que te guste mucho, o piensa en una escena escalofriante, y fíjate si se te pone la piel de gallina en los brazos."
+  },
+  {
+    "id": "sonhar",
+    "emoji": "💭",
+    "question": "¿Por qué soñamos?",
+    "quickAnswer": "Soñamos principalmente durante una fase del sueño en la que el cerebro sigue muy activo, organizando recuerdos y emociones del día.",
+    "moreAnswer": "Durante el sueño pasamos por varias fases, y en una de ellas, llamada REM, el cerebro está casi tan activo como cuando estamos despiertos, aunque el cuerpo permanece inmóvil. Los científicos creen que los sueños ayudan a procesar emociones, consolidar recuerdos importantes e incluso practicar situaciones que podríamos enfrentar. No siempre recordamos los sueños, porque solo recordamos bien los que ocurren cerca del momento de despertar.",
+    "experiment": "Guarda un cuaderno junto a la cama y, al despertar, intenta escribir rápidamente lo que soñaste antes de olvidarlo."
+  },
+  {
+    "id": "espirro",
+    "emoji": "🤧",
+    "question": "¿Por qué estornudamos?",
+    "quickAnswer": "Estornudamos cuando algo irrita el interior de la nariz, como el polvo o el polen, y el cuerpo expulsa ese irritante con fuerza mediante un estornudo.",
+    "moreAnswer": "Dentro de la nariz hay sensores muy sensibles que detectan partículas extrañas, como polvo, polen o pimienta. Cuando esto ocurre, envían una señal al cerebro, que ordena a los pulmones, la garganta y los músculos del pecho expulsar el aire con mucha fuerza y velocidad, arrastrando consigo el irritante. ¡Un estornudo puede llegar a superar los 150 km/h!",
+    "experiment": "La próxima vez que estornudes, fíjate: siempre cierras los ojos sin poder evitarlo. Intenta averiguar por qué."
+  },
+  {
+    "id": "unhas-crescem",
+    "emoji": "💅",
+    "question": "¿Por qué crecen las uñas?",
+    "quickAnswer": "Las uñas crecen continuamente porque, en su raíz, hay células vivas que se multiplican sin parar, empujando la uña vieja hacia adelante.",
+    "moreAnswer": "En la base de la uña hay una zona llamada matriz, donde se producen nuevas células todo el tiempo. Estas células se llenan de queratina, la misma proteína dura que hay en el cabello, y van empujando hacia adelante la parte ya formada de la uña. Las uñas de las manos crecen más rápido que las de los pies, y crecen aún más rápido en el dedo medio.",
+    "experiment": "Haz una pequeña marca con bolígrafo cerca de la base de una uña y mide la distancia hasta la punta durante dos semanas."
+  },
+  {
+    "id": "cabelo-cresce",
+    "emoji": "💇",
+    "question": "¿Por qué crece el pelo?",
+    "quickAnswer": "El pelo crece porque, en la raíz de cada hebra, hay células que se dividen constantemente, empujando el pelo hacia fuera del cuero cabelludo.",
+    "moreAnswer": "Cada pelo nace dentro de un pequeño folículo en la piel. En el fondo del folículo, células vivas se dividen rápidamente y se transforman en queratina, una proteína resistente, empujando el pelo cada vez más hacia afuera. Un pelo crece cerca de 1 centímetro al mes, pero tras crecer durante unos años, se cae y un nuevo pelo empieza a crecer en el mismo folículo.",
+    "experiment": null
+  },
+  {
+    "id": "cocegas",
+    "emoji": "😆",
+    "question": "¿Por qué tenemos cosquillas?",
+    "quickAnswer": "Las cosquillas ocurren porque la piel tiene zonas muy sensibles al tacto, y el cerebro reacciona con risa, sobre todo cuando es otra persona quien nos toca.",
+    "moreAnswer": "Curiosamente, no podemos hacernos cosquillas a nosotros mismos, porque el cerebro ya sabe de antemano dónde y cómo nos vamos a tocar. Cuando otra persona nos toca de forma inesperada en zonas sensibles, como los pies o las axilas, el cerebro no puede predecir el toque y reacciona con más intensidad, muchas veces con risa. Algunos científicos piensan que este reflejo pudo ayudar a nuestros antepasados a proteger zonas vulnerables del cuerpo.",
+    "experiment": "Intenta hacerte cosquillas en la palma de la mano y luego pide a alguien que lo haga. ¿Notas alguna diferencia?"
+  },
+  {
+    "id": "lagrimas",
+    "emoji": "😢",
+    "question": "¿Por qué lloramos lágrimas?",
+    "quickAnswer": "Lloramos lágrimas para proteger y limpiar los ojos, pero también como respuesta a emociones fuertes, como tristeza, dolor o incluso alegría.",
+    "moreAnswer": "Existen tres tipos de lágrimas: las que mantienen los ojos húmedos todo el tiempo, las que aparecen para lavar algo irritante, como polvo o cebolla, y las lágrimas emocionales, que solo los humanos producen en respuesta a sentimientos fuertes. Estas últimas incluso tienen una composición química ligeramente distinta, con más hormonas relacionadas con el estrés, lo que podría explicar por qué llorar a veces nos hace sentir mejor.",
+    "experiment": null
+  },
+  {
+    "id": "barriga-ronco",
+    "emoji": "🍽️",
+    "question": "¿Por qué nos ruge la barriga?",
+    "quickAnswer": "La barriga ruge porque los músculos del estómago y los intestinos se contraen para mover aire, líquidos y comida, creando sonidos de borboteo.",
+    "moreAnswer": "El aparato digestivo siempre está en movimiento, incluso cuando no estamos comiendo, en un proceso llamado peristaltismo, que empuja el contenido a lo largo del tubo digestivo. Cuando el estómago está vacío, hay menos comida para amortiguar el sonido, así que el aire y los líquidos que se mueven dentro hacen más ruido. Por eso la barriga ruge más cuando tenemos hambre.",
+    "experiment": "Fíjate en cuándo te ruge más la barriga: ¿antes de las comidas o después?"
+  },
+  {
+    "id": "dentes-de-leite",
+    "emoji": "🦷",
+    "question": "¿Por qué perdemos los dientes de leche?",
+    "quickAnswer": "Los dientes de leche se caen porque la boca de un niño es demasiado pequeña para los dientes más grandes y fuertes que crecen debajo de ellos.",
+    "moreAnswer": "Al nacer, ya tenemos dientes de leche formados dentro de las encías, y alrededor de los 6 meses empiezan a salir. Son 20 en total, pero la boca sigue creciendo y necesita dientes más grandes para masticar mejor. Debajo de cada diente de leche, un diente definitivo va creciendo lentamente y, cuando está listo, empuja la raíz del diente de leche hasta que esta se disuelve, haciendo que el diente se caiga solo.",
+    "experiment": "Si tienes un diente de leche que ya se mueve, fíjate en cómo se afloja cada vez más con los días."
+  },
+  {
+    "id": "impressao-digital",
+    "emoji": "👆",
+    "question": "¿Por qué tenemos huellas dactilares?",
+    "quickAnswer": "Las huellas dactilares son pequeños relieves en la piel de las yemas de los dedos que ayudan a agarrar objetos con más firmeza y a sentir texturas.",
+    "moreAnswer": "Esos relieves aumentan la fricción entre el dedo y los objetos, facilitando sujetar cosas sin que resbalen, incluso cuando los dedos están un poco húmedos. Se forman incluso antes de nacer, dentro del vientre de la madre, y el patrón de cada persona es completamente único: ni siquiera los gemelos idénticos tienen las mismas huellas dactilares.",
+    "experiment": "Frota la punta de un dedo con un lápiz de color blando, presiónalo sobre papel y observa el dibujo único que deja."
   }
 ]
