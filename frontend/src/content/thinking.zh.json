@@ -47,6 +47,54 @@
       "statement": "很快就要下雨了。",
       "isFact": false,
       "explanation": "这是一个合理的猜测，但还不确定——乌云并不总是带来雨水。"
+    },
+    {
+      "id": "fa-baloico",
+      "emoji": "🎠",
+      "scenario": "小汤在游乐场荡秋千时摔了下来，膝盖变红了。",
+      "statement": "他摔倒是因为荡得太快了。",
+      "isFact": false,
+      "explanation": "这是一个猜测：我们知道他摔倒了，但不知道确切原因——可能是速度太快，也可能是别的原因。"
+    },
+    {
+      "id": "fa-cheiro",
+      "emoji": "🍳",
+      "scenario": "午饭后厨房里闻到一股烧焦的味道。",
+      "statement": "吐司烧焦是因为烤面包机开的时间太长了。",
+      "isFact": false,
+      "explanation": "这是一个猜测：我们知道有东西烧焦了，但还不确定真正的原因。"
+    },
+    {
+      "id": "fa-cao",
+      "emoji": "🐕",
+      "scenario": "丽塔的狗叫了一整晚。",
+      "statement": "狗叫是因为它看到花园里有一只猫。",
+      "isFact": false,
+      "explanation": "这是一个猜测：狗叫可能有很多原因——我们并不确定就是因为猫。"
+    },
+    {
+      "id": "fa-mochila",
+      "emoji": "🎒",
+      "scenario": "你昨天称过书包，重3公斤。今天称重是4公斤。",
+      "statement": "书包变重了1公斤。",
+      "isFact": true,
+      "explanation": "这是一个事实：这是称重的直接结果，任何人都可以核实。"
+    },
+    {
+      "id": "fa-flores",
+      "emoji": "🌻",
+      "scenario": "学校花园里的花这星期都蔫了。",
+      "statement": "花蔫了是因为没有人浇水。",
+      "isFact": false,
+      "explanation": "这是一个猜测：花蔫掉也可能有别的原因，比如天热或虫害——我们还不确定真正的原因。"
+    },
+    {
+      "id": "fa-teste",
+      "emoji": "📝",
+      "scenario": "你的成绩单显示你数学测验得了18分（满分20分）。",
+      "statement": "你在测验中得了18分（满分20分）。",
+      "isFact": true,
+      "explanation": "这是一个事实：成绩单上写着，任何人都可以核实。"
     }
   ],
   "causeOrCoincidence": [
@@ -91,6 +139,48 @@
       "scenario": "每次你带伞就不下雨；忘记带伞留在家里时就下雨。",
       "isCause": false,
       "explanation": "带不带伞并不会影响天气。我们只是更容易注意到这些巧合，而忽略了没发生的那些次数。"
+    },
+    {
+      "id": "cc-sono",
+      "emoji": "😴",
+      "scenario": "你昨晚只睡了几个小时，今天上课时感觉又累又没精神。",
+      "isCause": true,
+      "explanation": "身体需要睡眠来恢复精力。睡眠不足会直接导致第二天疲惫——这是已知的原因。"
+    },
+    {
+      "id": "cc-numero-sorte",
+      "emoji": "🍀",
+      "scenario": "每次抽奖你选数字7的时候，都觉得自己会中奖——有时候真的中了。",
+      "isCause": false,
+      "explanation": "选择的数字并不会影响随机抽奖的结果。这是巧合：只要尝试次数够多，偶尔中奖是正常的。"
+    },
+    {
+      "id": "cc-protetor",
+      "emoji": "🧴",
+      "scenario": "你去海边前涂了防晒霜，结果没有被晒伤。",
+      "isCause": true,
+      "explanation": "防晒霜能阻挡灼伤皮肤的紫外线——两者之间有直接且被证实的联系。"
+    },
+    {
+      "id": "cc-bone",
+      "emoji": "🧢",
+      "scenario": "每次你戴上红色棒球帽，你的篮球队就会赢球。",
+      "isCause": false,
+      "explanation": "一顶帽子不可能影响由其他人参加的篮球比赛的结果。这只是巧合。"
+    },
+    {
+      "id": "cc-exercicio",
+      "emoji": "🚴",
+      "scenario": "你这星期每天都骑自行车，感觉双腿更有力了。",
+      "isCause": true,
+      "explanation": "经常运动能增强肌肉力量——这是科学已经解释清楚的已知效果。"
+    },
+    {
+      "id": "cc-lua",
+      "emoji": "🌕",
+      "scenario": "奶奶说每逢满月的晚上，狗就会变得更烦躁不安。",
+      "isCause": false,
+      "explanation": "没有任何科学证据表明满月会影响狗的行为。这很可能只是巧合，或者只是一种民间说法。"
     }
   ],
   "missingInfo": [
@@ -153,6 +243,90 @@
         { "text": "🕐 三天前球员们是几点起床的？", "correct": false }
       ],
       "afterNote": "比较两场比赛之间发生的变化——球员、对手、疲劳程度——有助于找到解释。"
+    },
+    {
+      "id": "mi-telemovel",
+      "emoji": "📱",
+      "scenario": "妈妈的手机昨晚充到了100%的电，今天早上只剩20%了。",
+      "question": "下面哪个问题最能帮你找出原因？",
+      "options": [
+        { "text": "📲 是不是有应用程序在后台运行了一整夜？", "correct": true },
+        { "text": "🎨 手机壳是什么颜色？", "correct": false },
+        { "text": "📏 手机有多大？", "correct": false }
+      ],
+      "afterNote": "询问打开的应用程序、屏幕亮度或电池的使用年限，有助于弄清是什么耗尽了电量。"
+    },
+    {
+      "id": "mi-pneu",
+      "emoji": "🚲",
+      "scenario": "小睿的自行车轮胎昨天还是鼓鼓的，今天却完全没气了。",
+      "question": "下面哪个问题最能帮你找出原因？",
+      "options": [
+        { "text": "🔍 轮胎上是不是有洞或扎进了什么尖锐物？", "correct": true },
+        { "text": "🎨 自行车座椅是什么颜色？", "correct": false },
+        { "text": "📆 自行车是哪一年买的？", "correct": false }
+      ],
+      "afterNote": "检查是否有扎孔、气门松动或轮胎没关紧，有助于找到真正的原因。"
+    },
+    {
+      "id": "mi-constipacao",
+      "emoji": "🤧",
+      "scenario": "两兄妹整天都在外面一起玩。第二天，一个感冒了，另一个没有。",
+      "question": "下面哪个问题最能帮你理解这个差异？",
+      "options": [
+        { "text": "🧣 他们中有没有一个在寒冷中待得更久，或者被淋湿了？", "correct": true },
+        { "text": "👟 他们玩的时候穿的什么鞋？", "correct": false },
+        { "text": "📺 那天晚上他们看了什么电视节目？", "correct": false }
+      ],
+      "afterNote": "询问衣着、在寒冷中待的时间，或是否接触过已经生病的人，有助于调查原因。"
+    },
+    {
+      "id": "mi-legumes",
+      "emoji": "🍅",
+      "scenario": "在学校的菜园里，一块地里的番茄长得很好，另一块地里的几乎没长。",
+      "question": "下面哪个问题最能帮你弄清楚原因？",
+      "options": [
+        { "text": "💧 两块地接受的水和阳光量一样吗？", "correct": true },
+        { "text": "🪧 这两块地叫什么名字？", "correct": false },
+        { "text": "🕰️ 学校几点开始上课？", "correct": false }
+      ],
+      "afterNote": "比较两块地之间的水、光照和土壤类型，有助于发现不同之处。"
+    },
+    {
+      "id": "mi-barulho",
+      "emoji": "🔊",
+      "scenario": "老师出去一分钟时听到教室里有声响，但没有人愿意说发生了什么。",
+      "question": "下面哪个问题最能帮你找出真相？",
+      "options": [
+        { "text": "👀 有没有人看到声响发生前的情况？", "correct": true },
+        { "text": "📏 教室里有多少张桌子？", "correct": false },
+        { "text": "🖍️ 黑板是什么颜色？", "correct": false }
+      ],
+      "afterNote": "冷静地询问目击者看到了什么，而不是立刻指责任何人，有助于接近真相。"
+    },
+    {
+      "id": "mi-brinquedo",
+      "emoji": "🧸",
+      "scenario": "你弟弟最喜欢的玩具从他的房间里消失了。",
+      "question": "下面哪个问题最能帮你找到它？",
+      "options": [
+        { "text": "🕵️ 有人记得最后一次看到它是在哪里吗？", "correct": true },
+        { "text": "🎈 那个玩具是什么颜色的？", "correct": false },
+        { "text": "📅 他是几月出生的？", "correct": false }
+      ],
+      "afterNote": "回想最后见到它的地方，并在附近寻找，通常是最好的起点。"
+    },
+    {
+      "id": "mi-febre",
+      "emoji": "🌡️",
+      "scenario": "班上有两个孩子这星期都因为发烧请假了。",
+      "question": "下面哪个问题最能帮你看出是否有关联？",
+      "options": [
+        { "text": "🤝 他们生病前是否彼此接触过，或接触过已经生病的人？", "correct": true },
+        { "text": "🎒 他们的书包是什么牌子的？", "correct": false },
+        { "text": "🔤 他们的名字是以哪个字开头的？", "correct": false }
+      ],
+      "afterNote": "询问最近的接触情况，有助于了解疾病是否在同学之间传播。"
     }
   ],
   "contradictions": [
@@ -203,6 +377,54 @@
       "statementB": "在阳光下，米格尔的毛衣看起来几乎是黑色的。",
       "contradicts": false,
       "explanation": "这没有矛盾：非常深的蓝色在某些光线下看起来确实可能接近黑色。"
+    },
+    {
+      "id": "ct-altura",
+      "emoji": "📏",
+      "statementA": "大卫是全班最高的学生。",
+      "statementB": "大卫比同班的碧翠丝矮。",
+      "contradicts": true,
+      "explanation": "如果大卫是班上最高的，班上就不可能有人比他更高——这两句话不能同时成立。"
+    },
+    {
+      "id": "ct-hora",
+      "emoji": "🕒",
+      "statementA": "这家店早上9点开门，一直营业到晚上6点关门。",
+      "statementB": "我们晚上7点去那家店时，它还开着。",
+      "contradicts": true,
+      "explanation": "如果这家店一直是晚上6点关门，晚上7点就不可能还开着——除非有特殊情况，否则这两句话是矛盾的。"
+    },
+    {
+      "id": "ct-olhos",
+      "emoji": "👀",
+      "statementA": "马可的眼睛是棕色的。",
+      "statementB": "在阳光下，马可的眼睛看起来几乎是金色的。",
+      "contradicts": false,
+      "explanation": "这没有矛盾：浅棕色在强光下确实可能闪现出金色的光泽。"
+    },
+    {
+      "id": "ct-corrida2",
+      "emoji": "🏅",
+      "statementA": "班上没有一个学生能在20秒内跑完100米。",
+      "statementB": "同班的卡拉用18秒跑完了100米。",
+      "contradicts": true,
+      "explanation": "如果卡拉是班上的学生，而她用18秒跑完，那就说明至少有一个学生在20秒内跑完了——这两句话不能同时成立。"
+    },
+    {
+      "id": "ct-tempo2",
+      "emoji": "⛈️",
+      "statementA": "早上是个完美的晴天，天空中没有一丝云。",
+      "statementB": "到了晚上，听到了雷声，也看到了闪电。",
+      "contradicts": false,
+      "explanation": "这没有矛盾：天气会在一天之内变化——早上晴朗、晚上打雷完全正常。"
+    },
+    {
+      "id": "ct-dinheiro",
+      "emoji": "🐷",
+      "statementA": "蒂亚戈的存钱罐星期五有20欧元。",
+      "statementB": "星期六，没有人往里面放钱也没有人拿钱，存钱罐里却有35欧元。",
+      "contradicts": true,
+      "explanation": "如果没有人碰过存钱罐，里面的钱就不可能自己增加——这两句话不能同时成立。"
     }
   ],
   "estimation": [
@@ -245,6 +467,62 @@
       "answer": 2,
       "tolerance": 2,
       "unit": "分钟"
+    },
+    {
+      "id": "es-passaros",
+      "emoji": "🐦",
+      "question": "你觉得大概在公园里10分钟能看到多少只鸟？",
+      "answer": 8,
+      "tolerance": 5,
+      "unit": "只鸟"
+    },
+    {
+      "id": "es-degraus",
+      "emoji": "🪜",
+      "question": "你觉得一栋楼到2楼的楼梯大概有多少级台阶？",
+      "answer": 20,
+      "tolerance": 8,
+      "unit": "级台阶"
+    },
+    {
+      "id": "es-agua",
+      "emoji": "🥤",
+      "question": "你觉得一整天大概应该喝多少杯水？",
+      "answer": 6,
+      "tolerance": 3,
+      "unit": "杯"
+    },
+    {
+      "id": "es-carros",
+      "emoji": "🚗",
+      "question": "你觉得在你所在城市一条繁忙的街道上，5分钟内会经过多少辆车？",
+      "answer": 10,
+      "tolerance": 8,
+      "unit": "辆车"
+    },
+    {
+      "id": "es-peso-mochila",
+      "emoji": "🎒",
+      "question": "你觉得装满东西的上学书包大概有多重？",
+      "answer": 4,
+      "tolerance": 2,
+      "unit": "公斤"
+    },
+    {
+      "id": "es-arvore",
+      "emoji": "🌳",
+      "question": "你觉得手拉手围住一棵大树的树干需要多少个小朋友？",
+      "answer": 4,
+      "tolerance": 2,
+      "unit": "个小朋友"
+    },
+    {
+      "id": "es-duche",
+      "emoji": "🚿",
+      "question": "你觉得洗一次淋浴大概需要多少分钟？",
+      "answer": 8,
+      "tolerance": 4,
+      "unit": "分钟"
     }
   ],
   "puzzles": [
@@ -277,6 +555,48 @@
       "emoji": "💧",
       "prompt": "你能用多少种不同的方式在家里节约用水？",
       "examples": ["刷牙时关掉水龙头", "淋浴时间缩短一些", "用雨水来浇花", "如果水龙头漏水，告诉大人", "洗衣机装满衣物后再启动"]
+    },
+    {
+      "id": "pz-vinte",
+      "emoji": "🔢",
+      "prompt": "用加法、减法或乘法，你能用多少种不同的方式得到数字20？",
+      "examples": ["10 + 10 = 20", "30 - 10 = 20", "4 x 5 = 20", "5 + 5 + 5 + 5 = 20", "25 - 3 - 2 = 20"]
+    },
+    {
+      "id": "pz-brincar-chuva",
+      "emoji": "🌧️",
+      "prompt": "下雨天待在家里，你能想出多少种不同的方式来找乐子？",
+      "examples": ["读一本新书", "拼一幅拼图", "用靠垫搭一个堡垒", "画画", "和家人一起玩桌游"]
+    },
+    {
+      "id": "pz-organizar",
+      "emoji": "📚",
+      "prompt": "你能用多少种不同的方式整理书架上的书？",
+      "examples": ["按书名的字母顺序", "按封面颜色", "按大小从大到小", "按主题——冒险、科学、故事", "把你最喜欢的放在最前面"]
+    },
+    {
+      "id": "pz-ajudar",
+      "emoji": "🤝",
+      "prompt": "你能用多少种不同的方式帮助在学校里难过的同学？",
+      "examples": ["问问发生了什么事", "邀请他和你一起玩", "如果他愿意，给他一个拥抱", "如果需要，去找老师", "安静地坐在他旁边陪伴他"]
+    },
+    {
+      "id": "pz-transportar",
+      "emoji": "📦",
+      "prompt": "你能用多少种不同的方式把很多书从教室搬到图书馆而不掉落？",
+      "examples": ["用箱子或篮子装", "分几次搬，每次少拿一点", "请同学帮忙", "如果有小推车，就用小推车", "用橡皮筋把书捆起来"]
+    },
+    {
+      "id": "pz-festas",
+      "emoji": "🎉",
+      "prompt": "不花钱，你能用多少种不同的方式装饰房间来办生日派对？",
+      "examples": ["在纸上画气球", "把玻璃罐重新利用做花瓶", "用彩纸做一条横幅", "用花园里摘的花", "在卡纸上写有趣的话"]
+    },
+    {
+      "id": "pz-poupar-tempo",
+      "emoji": "⏱️",
+      "prompt": "你能用多少种不同的方式安排自己，做到上学不迟到？",
+      "examples": ["前一天晚上准备好书包", "前一天选好要穿的衣服", "早一点起床", "请大人提醒你时间", "使用闹钟"]
     }
   ]
 }

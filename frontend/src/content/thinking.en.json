@@ -47,6 +47,54 @@
       "statement": "It's going to rain soon.",
       "isFact": false,
       "explanation": "This is a reasonable assumption, but it's not certain yet — dark clouds don't always bring rain."
+    },
+    {
+      "id": "fa-baloico",
+      "emoji": "🎠",
+      "scenario": "Tom fell off the swing at the playground and his knee turned red.",
+      "statement": "He fell because he was swinging too fast.",
+      "isFact": false,
+      "explanation": "This is an assumption: we know he fell, but we don't know the exact reason — it could be speed, or something else."
+    },
+    {
+      "id": "fa-cheiro",
+      "emoji": "🍳",
+      "scenario": "A burnt smell was noticed in the kitchen after lunch.",
+      "statement": "The toast burned because the toaster was left on too long.",
+      "isFact": false,
+      "explanation": "This is an assumption: we know something burned, but we don't yet know for sure what caused it."
+    },
+    {
+      "id": "fa-cao",
+      "emoji": "🐕",
+      "scenario": "Rita's dog barked all night long.",
+      "statement": "The dog barked because it saw a cat in the garden.",
+      "isFact": false,
+      "explanation": "This is an assumption: there could be many reasons the dog barked — we don't know for sure it was a cat."
+    },
+    {
+      "id": "fa-mochila",
+      "emoji": "🎒",
+      "scenario": "You weighed your backpack yesterday and it was 3 kg. Today it weighs 4 kg.",
+      "statement": "The backpack got 1 kg heavier.",
+      "isFact": true,
+      "explanation": "This is a fact: it's the direct result of weighing it, something anyone can check."
+    },
+    {
+      "id": "fa-flores",
+      "emoji": "🌻",
+      "scenario": "The flowers in the school garden are wilted this week.",
+      "statement": "The flowers wilted because nobody watered them.",
+      "isFact": false,
+      "explanation": "This is an assumption: the flowers could have wilted for other reasons too, like heat or pests — we don't know for sure yet."
+    },
+    {
+      "id": "fa-teste",
+      "emoji": "📝",
+      "scenario": "Your report card shows you got 18 out of 20 on the maths test.",
+      "statement": "You got 18 out of 20 on the test.",
+      "isFact": true,
+      "explanation": "This is a fact: it's written on the report card and anyone can check it."
     }
   ],
   "causeOrCoincidence": [
@@ -91,6 +139,48 @@
       "scenario": "Whenever you bring your umbrella, it doesn't rain; when you forget it at home, it rains.",
       "isCause": false,
       "explanation": "Bringing or forgetting an umbrella doesn't influence the weather. We just notice these coincidences more than the times they don't happen."
+    },
+    {
+      "id": "cc-sono",
+      "emoji": "😴",
+      "scenario": "You slept only a few hours last night and today you feel tired and low on energy in class.",
+      "isCause": true,
+      "explanation": "The body needs sleep to recover energy. Sleeping too little directly causes tiredness the next day."
+    },
+    {
+      "id": "cc-numero-sorte",
+      "emoji": "🍀",
+      "scenario": "Whenever you pick the number 7 in a raffle, you feel like you're going to win — and sometimes you do.",
+      "isCause": false,
+      "explanation": "The number you pick doesn't influence a random raffle draw. It's coincidence: with enough tries, winning sometimes was bound to happen."
+    },
+    {
+      "id": "cc-protetor",
+      "emoji": "🧴",
+      "scenario": "You put on sunscreen before going to the beach and didn't get sunburnt.",
+      "isCause": true,
+      "explanation": "Sunscreen blocks the rays that burn skin — there is a direct, well-established link between the two."
+    },
+    {
+      "id": "cc-bone",
+      "emoji": "🧢",
+      "scenario": "Whenever you wear your red cap, your basketball team wins the game.",
+      "isCause": false,
+      "explanation": "A cap can't influence the result of a basketball game played by other people. It's just coincidence."
+    },
+    {
+      "id": "cc-exercicio",
+      "emoji": "🚴",
+      "scenario": "You rode your bike every day this week and your legs feel stronger.",
+      "isCause": true,
+      "explanation": "Regular exercise strengthens muscles — this is a known effect explained by science."
+    },
+    {
+      "id": "cc-lua",
+      "emoji": "🌕",
+      "scenario": "Grandma says the dog gets more restless on full-moon nights.",
+      "isCause": false,
+      "explanation": "There's no scientific proof that the full moon affects dogs' behaviour. It's probably coincidence or just a popular belief."
     }
   ],
   "missingInfo": [
@@ -153,6 +243,90 @@
         { "text": "🕐 What time did the players wake up three days earlier?", "correct": false }
       ],
       "afterNote": "Comparing what changed from one game to the next — players, opponent, tiredness — helps you find explanations."
+    },
+    {
+      "id": "mi-telemovel",
+      "emoji": "📱",
+      "scenario": "Mum's phone was charged to 100% last night and this morning it only had 20%.",
+      "question": "Which of these questions would help you most find out why?",
+      "options": [
+        { "text": "📲 Were apps running all night in the background?", "correct": true },
+        { "text": "🎨 What colour is the phone case?", "correct": false },
+        { "text": "📏 How big is the phone?", "correct": false }
+      ],
+      "afterNote": "Asking about open apps, screen brightness, or battery age helps you understand what used up the energy."
+    },
+    {
+      "id": "mi-pneu",
+      "emoji": "🚲",
+      "scenario": "Rui's bike tyre was nice and full yesterday and today it's completely flat.",
+      "question": "Which of these questions would help you most find the reason?",
+      "options": [
+        { "text": "🔍 Is there a hole or a sharp object stuck in the tyre?", "correct": true },
+        { "text": "🎨 What colour is the bike seat?", "correct": false },
+        { "text": "📆 What year was the bike bought?", "correct": false }
+      ],
+      "afterNote": "Checking for a puncture, a loose valve, or an improperly closed tyre helps you find the real cause."
+    },
+    {
+      "id": "mi-constipacao",
+      "emoji": "🤧",
+      "scenario": "Two siblings played together outside all day. One caught a cold the next day and the other didn't.",
+      "question": "Which of these questions would help you most understand the difference?",
+      "options": [
+        { "text": "🧣 Did one of them spend more time in the cold or get wet?", "correct": true },
+        { "text": "👟 What shoes did they wear while playing?", "correct": false },
+        { "text": "📺 What show did they watch on TV that evening?", "correct": false }
+      ],
+      "afterNote": "Asking about clothing, time spent in the cold, or contact with someone already sick helps you investigate the cause."
+    },
+    {
+      "id": "mi-legumes",
+      "emoji": "🍅",
+      "scenario": "In the school garden, the tomatoes in one bed grew a lot and the ones in another bed barely grew at all.",
+      "question": "Which of these questions would help you most find out why?",
+      "options": [
+        { "text": "💧 Do both beds get the same amount of water and sun?", "correct": true },
+        { "text": "🪧 What names do the garden beds have?", "correct": false },
+        { "text": "🕰️ What time do lessons start?", "correct": false }
+      ],
+      "afterNote": "Comparing water, light, and soil type between the two beds helps you see what's different."
+    },
+    {
+      "id": "mi-barulho",
+      "emoji": "🔊",
+      "scenario": "The teacher heard noise in the classroom when she stepped out for a minute, but no one wants to say what happened.",
+      "question": "Which of these questions would help you most find out the truth?",
+      "options": [
+        { "text": "👀 Did anyone see what happened right before the noise started?", "correct": true },
+        { "text": "📏 How many desks are in the classroom?", "correct": false },
+        { "text": "🖍️ What colour is the whiteboard?", "correct": false }
+      ],
+      "afterNote": "Calmly asking witnesses what they saw, without blaming anyone right away, helps you get closer to the truth."
+    },
+    {
+      "id": "mi-brinquedo",
+      "emoji": "🧸",
+      "scenario": "Your little brother's favourite toy has disappeared from his room.",
+      "question": "Which of these questions would help you most find it?",
+      "options": [
+        { "text": "🕵️ Where was the last place anyone remembers seeing it?", "correct": true },
+        { "text": "🎈 What colour was the toy?", "correct": false },
+        { "text": "📅 What month was he born in?", "correct": false }
+      ],
+      "afterNote": "Remembering the last place it was seen and searching nearby is usually the best place to start."
+    },
+    {
+      "id": "mi-febre",
+      "emoji": "🌡️",
+      "scenario": "Two children in the class missed school this week, both with a fever.",
+      "question": "Which of these questions would help you most see if it's connected?",
+      "options": [
+        { "text": "🤝 Were they close to each other, or to someone already sick, before falling ill?", "correct": true },
+        { "text": "🎒 What brand is their backpack?", "correct": false },
+        { "text": "🔤 What letter does their name start with?", "correct": false }
+      ],
+      "afterNote": "Asking about recent contact helps you understand whether an illness is spreading among classmates."
     }
   ],
   "contradictions": [
@@ -203,6 +377,54 @@
       "statementB": "In sunlight, Miguel's jumper looks almost black.",
       "contradicts": false,
       "explanation": "There's no contradiction: a very dark blue can indeed look almost black in certain light."
+    },
+    {
+      "id": "ct-altura",
+      "emoji": "📏",
+      "statementA": "David is the tallest student in the whole class.",
+      "statementB": "David is shorter than Beatriz, who is in his class.",
+      "contradicts": true,
+      "explanation": "If David is the tallest in the class, no one in the class can be taller than him — both statements can't be true."
+    },
+    {
+      "id": "ct-hora",
+      "emoji": "🕒",
+      "statementA": "The shop opens at 9am and always closes at 6pm.",
+      "statementB": "We went to the shop at 7pm and it was still open.",
+      "contradicts": true,
+      "explanation": "If the shop always closes at 6pm, it couldn't be open at 7pm — unless there was an exception, the statements contradict each other."
+    },
+    {
+      "id": "ct-olhos",
+      "emoji": "👀",
+      "statementA": "Marco's eyes are brown.",
+      "statementB": "In sunlight, Marco's eyes look almost golden.",
+      "contradicts": false,
+      "explanation": "There's no contradiction: a light brown can shine with a golden tone under strong light."
+    },
+    {
+      "id": "ct-corrida2",
+      "emoji": "🏅",
+      "statementA": "No student in the class ran the 100 metres in under 20 seconds.",
+      "statementB": "Carla, who is in that class, ran the 100 metres in 18 seconds.",
+      "contradicts": true,
+      "explanation": "If Carla is in the class and ran it in 18 seconds, then at least one student ran under 20 seconds — the statements can't both be true."
+    },
+    {
+      "id": "ct-tempo2",
+      "emoji": "⛈️",
+      "statementA": "It was a perfectly sunny day in the morning, without a single cloud in the sky.",
+      "statementB": "At night, thunder was heard and a lightning bolt was seen.",
+      "contradicts": false,
+      "explanation": "There's no contradiction: the weather can change throughout the day — starting sunny and ending in a thunderstorm is perfectly normal."
+    },
+    {
+      "id": "ct-dinheiro",
+      "emoji": "🐷",
+      "statementA": "Tiago's piggy bank had 20 euros in it on Friday.",
+      "statementB": "On Saturday, with no one putting money in or taking any out, the piggy bank had 35 euros.",
+      "contradicts": true,
+      "explanation": "If no one touched the piggy bank, the money couldn't have increased on its own — the two statements can't both be true."
     }
   ],
   "estimation": [
@@ -245,6 +467,62 @@
       "answer": 2,
       "tolerance": 2,
       "unit": "minutes"
+    },
+    {
+      "id": "es-passaros",
+      "emoji": "🐦",
+      "question": "Roughly how many birds do you think you'd spot in a park in 10 minutes?",
+      "answer": 8,
+      "tolerance": 5,
+      "unit": "birds"
+    },
+    {
+      "id": "es-degraus",
+      "emoji": "🪜",
+      "question": "How many steps do you think a staircase has up to the 2nd floor of a building?",
+      "answer": 20,
+      "tolerance": 8,
+      "unit": "steps"
+    },
+    {
+      "id": "es-agua",
+      "emoji": "🥤",
+      "question": "Roughly how many glasses of water do you think you should drink in a whole day?",
+      "answer": 6,
+      "tolerance": 3,
+      "unit": "glasses"
+    },
+    {
+      "id": "es-carros",
+      "emoji": "🚗",
+      "question": "How many cars do you think pass along a busy street in your town in 5 minutes?",
+      "answer": 10,
+      "tolerance": 8,
+      "unit": "cars"
+    },
+    {
+      "id": "es-peso-mochila",
+      "emoji": "🎒",
+      "question": "Roughly how many kilograms do you think your full school backpack weighs?",
+      "answer": 4,
+      "tolerance": 2,
+      "unit": "kg"
+    },
+    {
+      "id": "es-arvore",
+      "emoji": "🌳",
+      "question": "How many children holding hands do you think it takes to circle the trunk of a big tree?",
+      "answer": 4,
+      "tolerance": 2,
+      "unit": "children"
+    },
+    {
+      "id": "es-duche",
+      "emoji": "🚿",
+      "question": "Roughly how many minutes do you think you take to have a shower?",
+      "answer": 8,
+      "tolerance": 4,
+      "unit": "minutes"
     }
   ],
   "puzzles": [
@@ -277,6 +555,48 @@
       "emoji": "💧",
       "prompt": "In how many different ways can you save water at home?",
       "examples": ["Turn off the tap while brushing your teeth", "Take shorter showers", "Reuse rainwater to water plants", "Tell an adult if a tap is dripping", "Fill the washing machine fully before running it"]
+    },
+    {
+      "id": "pz-vinte",
+      "emoji": "🔢",
+      "prompt": "In how many different ways can you reach the number 20, using addition, subtraction, or multiplication?",
+      "examples": ["10 + 10 = 20", "30 - 10 = 20", "4 x 5 = 20", "5 + 5 + 5 + 5 = 20", "25 - 3 - 2 = 20"]
+    },
+    {
+      "id": "pz-brincar-chuva",
+      "emoji": "🌧️",
+      "prompt": "In how many different ways can you have fun indoors on a rainy day?",
+      "examples": ["Read a new book", "Do a jigsaw puzzle", "Build a fort out of cushions", "Draw or paint", "Play a board game as a family"]
+    },
+    {
+      "id": "pz-organizar",
+      "emoji": "📚",
+      "prompt": "In how many different ways can you organise the books on your shelf?",
+      "examples": ["Alphabetically by title", "By the colour of the cover", "By size, biggest to smallest", "By topic — adventure, science, stories", "Putting your favourites first"]
+    },
+    {
+      "id": "pz-ajudar",
+      "emoji": "🤝",
+      "prompt": "In how many different ways can you help a classmate who's sad at school?",
+      "examples": ["Ask what happened", "Invite them to play with you", "Give them a hug, if they want one", "Get a teacher if needed", "Sit next to them quietly, just for company"]
+    },
+    {
+      "id": "pz-transportar",
+      "emoji": "📦",
+      "prompt": "In how many different ways can you carry lots of books from the classroom to the library without dropping them?",
+      "examples": ["Use a box or a basket", "Make several trips with fewer books each time", "Ask a classmate for help", "Use a trolley, if there is one", "Tie the books together with an elastic band"]
+    },
+    {
+      "id": "pz-festas",
+      "emoji": "🎉",
+      "prompt": "In how many different ways can you decorate a room for a birthday party without spending money?",
+      "examples": ["Make balloons drawn on paper", "Reuse glass jars as vases", "Make a banner out of coloured paper", "Use flowers picked from the garden", "Write funny messages on card"]
+    },
+    {
+      "id": "pz-poupar-tempo",
+      "emoji": "⏱️",
+      "prompt": "In how many different ways can you get organised so you're not late for school?",
+      "examples": ["Pack your bag the night before", "Choose your clothes the day before", "Wake up a bit earlier", "Ask an adult to remind you of the time", "Use an alarm clock"]
     }
   ]
 }
