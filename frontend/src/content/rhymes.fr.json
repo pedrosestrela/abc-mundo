@@ -89,6 +89,36 @@
       "title": "Compère Guilleri",
       "emoji": "🏹",
       "text": "Il était un petit homme,\nqui s'appelait Guilleri,\ncarabi,\nil s'en fut à la chasse, à la chasse aux perdrix!"
+    },
+    {
+      "id": "l-batatinha",
+      "title": "Petite Pomme de Terre",
+      "emoji": "🥔",
+      "text": "Petite patate quand elle pousse,\nÉtale ses feuilles toutes douces,\nPetite fille quand elle sourit,\nRemplit la maison de son cri joli."
+    },
+    {
+      "id": "l-domingo",
+      "title": "Cloches du Dimanche",
+      "emoji": "🎵",
+      "text": "Aujourd'hui c'est dimanche, la cloche sonne,\nDing et dong, comme elle résonne,\nSonne, sonne, sans s'arrêter,\nDimanche est fait pour jouer!"
+    },
+    {
+      "id": "l-patinhos",
+      "title": "Cinq Petits Canards",
+      "emoji": "🦆",
+      "text": "Cinq petits canards partis un jour,\nPar-dessus la colline, loin de leur tour,\nMaman cane dit coin, coin, coin,\nSeulement quatre canards revinrent enfin!"
+    },
+    {
+      "id": "l-piao",
+      "title": "Tourne, Toupie",
+      "emoji": "🪀",
+      "text": "Tourne, tourne, petite toupie,\nDanse et virevolte, quelle folie,\nQuand tu es lasse, tu tombes bas,\nTourne encore, on aime ça!"
+    },
+    {
+      "id": "l-uva",
+      "title": "Raisins Mûrs",
+      "emoji": "🍇",
+      "text": "Un, deux, trois, quatre, cinq,\nDes raisins mûrs dans mon panier, tiens,\nSix, sept, huit, neuf, dix,\nMange un grain et recompte, petit!"
     }
   ],
   "travalinguas": [
@@ -273,6 +303,42 @@
       "title": "Balade en forêt",
       "emoji": "🌳",
       "text": "Dans la forêt le vent soupire,\nEntre les arbres hauts et verts,\nL'écureuil saute sans rien dire,\nEt la rivière suit son cours, fier."
+    },
+    {
+      "id": "r-mar-azul",
+      "title": "La Mer Bleue",
+      "emoji": "🌊",
+      "text": "La mer est grande, bleue et belle,\nLes vagues dansent, quelle ritournelle,\nCoquillages blancs sur le sable chaud,\nLa mer est amie, quel beau cadeau."
+    },
+    {
+      "id": "r-quinta-animais",
+      "title": "La Ferme aux Animaux",
+      "emoji": "🐄",
+      "text": "À la ferme le coq chante fort,\nLa vache fait meuh, quel beau décor,\nLe cochon grogne, le chien aboie gai,\nBonjour la ferme, quelle joie aujourd'hui!"
+    },
+    {
+      "id": "r-melhor-amigo",
+      "title": "Mon Meilleur Ami",
+      "emoji": "🤝",
+      "text": "J'ai un ami si précieux,\nOn joue ensemble, c'est merveilleux,\nOn partage rires et secrets aussi,\nUne amitié comme celle-ci, quel prix!"
+    },
+    {
+      "id": "r-outono-folhas",
+      "title": "Les Feuilles d'Automne",
+      "emoji": "🍂",
+      "text": "En automne les feuilles tombent douces,\nJaunes et rouges, virevoltent et poussent,\nLe vent souffle, les fait s'envoler,\nL'automne arrive, tout est doré."
+    },
+    {
+      "id": "r-hora-dormir",
+      "title": "L'Heure de Dormir",
+      "emoji": "😴",
+      "text": "Ferme les yeux, tout doucement,\nTire la couette, chaudement,\nLes rêves arrivent en bateau léger,\nBonne nuit, dors bien, sans tarder."
+    },
+    {
+      "id": "r-passarinho-canta",
+      "title": "Le Petit Oiseau Chante",
+      "emoji": "🐦",
+      "text": "Sur l'arbre haut un oiseau chante,\nRéveille le jour de sa voix charmante,\nCui-cui, léger et clair,\nBonjour au monde, à la lumière!"
     }
   ]
 }

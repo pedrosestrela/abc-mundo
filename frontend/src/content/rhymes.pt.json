@@ -89,6 +89,36 @@
       "title": "A Estrela Escolhida",
       "emoji": "⭐",
       "text": "No céu há mil estrelas,\nA brilhar sem parar,\nUm, dois, três, quatro, cinco,\nQual delas vais escolher a contar?"
+    },
+    {
+      "id": "l-batatinha",
+      "title": "Batatinha Quando Nasce",
+      "emoji": "🥔",
+      "text": "Batatinha quando nasce,\nEspalha a rama pelo chão,\nMenina quando é bonita,\nEnche a casa de canção."
+    },
+    {
+      "id": "l-domingo",
+      "title": "Hoje É Domingo",
+      "emoji": "🎵",
+      "text": "Hoje é domingo, pede cor ao sino,\nSino é de ouro, dourado e fino,\nToca, toca, sem parar,\nDomingo é dia de brincar!"
+    },
+    {
+      "id": "l-patinhos",
+      "title": "Cinco Patinhos",
+      "emoji": "🦆",
+      "text": "Cinco patinhos foram passear,\nPor cima da colina, para brincar,\nMamã pata disse: quá, quá, quá,\nSó quatro patinhos voltaram já!"
+    },
+    {
+      "id": "l-piao",
+      "title": "Roda, Pião",
+      "emoji": "🪀",
+      "text": "Roda, roda, pião bailarino,\nGira ligeiro no teu caminho,\nQuando cansares, cais no chão,\nAté rodares outra vez, então!"
+    },
+    {
+      "id": "l-uva",
+      "title": "Uva Madura",
+      "emoji": "🍇",
+      "text": "Uma, duas, três, quatro, cinco,\nUvas maduras no meu cesto lindo,\nSeis, sete, oito, nove, dez,\nComo uma uva de cada vez!"
     }
   ],
   "travalinguas": [
@@ -273,6 +303,42 @@
       "title": "O Passeio na Floresta",
       "emoji": "🌳",
       "text": "Na floresta o vento sopra,\nEntre as árvores altas e verdes,\nO esquilo salta e não pára,\nEnquanto o rio segue, sempre."
+    },
+    {
+      "id": "r-mar-azul",
+      "title": "O Mar Azul",
+      "emoji": "🌊",
+      "text": "O mar é grande, azul e forte,\nAs ondas cantam de sul a norte,\nConchinhas brancas na areia quente,\nO mar é amigo de toda a gente."
+    },
+    {
+      "id": "r-quinta-animais",
+      "title": "A Quinta dos Animais",
+      "emoji": "🐄",
+      "text": "Na quinta o galo canta cedo,\nA vaca muge sem ter medo,\nO porco grunhe, o cão ladra,\nBom dia, quinta, que alegria e algazarra!"
+    },
+    {
+      "id": "r-melhor-amigo",
+      "title": "O Meu Melhor Amigo",
+      "emoji": "🤝",
+      "text": "Tenho um amigo tão especial,\nBrincamos juntos, é genial,\nPartilhamos risos e também segredos,\nAmizade assim não tem medos."
+    },
+    {
+      "id": "r-outono-folhas",
+      "title": "Folhas de Outono",
+      "emoji": "🍂",
+      "text": "No outono as folhas caem devagar,\nAmarelas, vermelhas, a dançar,\nO vento sopra, elas vão a voar,\nÉ bonito o outono a chegar."
+    },
+    {
+      "id": "r-hora-dormir",
+      "title": "Hora de Dormir",
+      "emoji": "😴",
+      "text": "Fecha os olhinhos, devagarinho,\nPuxa o cobertor bem quentinho,\nOs sonhos vêm num barquinho leve,\nBoa noite, dorme, não demore."
+    },
+    {
+      "id": "r-passarinho-canta",
+      "title": "O Passarinho Canta",
+      "emoji": "🐦",
+      "text": "Na árvore alta um passarinho canta,\nAcorda o dia com a sua garganta,\nPio, pio, alegre e ligeiro,\nAnuncia a manhã ao mundo inteiro."
     }
   ]
 }

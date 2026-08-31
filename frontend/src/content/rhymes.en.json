@@ -89,6 +89,36 @@
       "title": "One, Two, Buckle My Shoe",
       "emoji": "👟",
       "text": "One, two, buckle my shoe,\nThree, four, knock at the door,\nFive, six, pick up sticks,\nSeven, eight, lay them straight!"
+    },
+    {
+      "id": "l-batatinha",
+      "title": "Little Potato",
+      "emoji": "🥔",
+      "text": "Little potato when it grows,\nSpreads its leaves in tidy rows,\nA little girl when she's sweet,\nFills the house with songs so neat."
+    },
+    {
+      "id": "l-domingo",
+      "title": "Sunday Bells",
+      "emoji": "🎵",
+      "text": "Today is Sunday, the bells ring gold,\nDing and dong, the story's told,\nRing and ring without a stop,\nSunday's the day for play and hop!"
+    },
+    {
+      "id": "l-patinhos",
+      "title": "Five Little Ducks",
+      "emoji": "🦆",
+      "text": "Five little ducks went out one day,\nOver the hills and far away,\nMother duck said quack, quack, quack,\nOnly four little ducks came back!"
+    },
+    {
+      "id": "l-piao",
+      "title": "Spin, Little Top",
+      "emoji": "🪀",
+      "text": "Spin, spin, dancing top,\nTwirl along and never stop,\nWhen you're tired, down you fall,\nSpin again to please us all!"
+    },
+    {
+      "id": "l-uva",
+      "title": "Ripe Grapes",
+      "emoji": "🍇",
+      "text": "One, two, three, four, five,\nRipe grapes in my basket alive,\nSix, seven, eight, nine, ten,\nEat one grape and count again!"
     }
   ],
   "travalinguas": [
@@ -273,6 +303,42 @@
       "title": "Forest Walk",
       "emoji": "🌳",
       "text": "In the forest the wind does blow,\nAmong the trees so tall, they grow,\nThe squirrel jumps and won't stay slow,\nWhile the river keeps its flow."
+    },
+    {
+      "id": "r-mar-azul",
+      "title": "The Blue Sea",
+      "emoji": "🌊",
+      "text": "The sea is big and blue and grand,\nWaves come dancing to the sand,\nWhite seashells on the shore so warm,\nThe sea's a friend in any storm."
+    },
+    {
+      "id": "r-quinta-animais",
+      "title": "The Animal Farm",
+      "emoji": "🐄",
+      "text": "On the farm the rooster crows,\nThe cow says moo, everybody knows,\nThe pig goes oink, the dog says bark,\nGood morning, farm, what a happy spark!"
+    },
+    {
+      "id": "r-melhor-amigo",
+      "title": "My Best Friend",
+      "emoji": "🤝",
+      "text": "I have a friend so very true,\nWe laugh and play the whole day through,\nWe share our secrets, share our fun,\nA friendship like ours beats the sun."
+    },
+    {
+      "id": "r-outono-folhas",
+      "title": "Autumn Leaves",
+      "emoji": "🍂",
+      "text": "In autumn leaves fall soft and slow,\nYellow, red, in a dancing show,\nThe wind blows gently, off they fly,\nAutumn's beauty fills the sky."
+    },
+    {
+      "id": "r-hora-dormir",
+      "title": "Time to Sleep",
+      "emoji": "😴",
+      "text": "Close your eyes now, nice and slow,\nPull the blanket, warm and low,\nDreams sail in on a gentle boat,\nGood night, sleep tight, safe afloat."
+    },
+    {
+      "id": "r-passarinho-canta",
+      "title": "The Little Bird Sings",
+      "emoji": "🐦",
+      "text": "High in the tree a bird sings clear,\nWaking the day for all to hear,\nTweet, tweet, so bright and light,\nGood morning to the morning light."
     }
   ]
 }

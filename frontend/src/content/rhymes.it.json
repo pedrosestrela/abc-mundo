@@ -89,6 +89,36 @@
       "title": "La Filastrocca delle Stelle",
       "emoji": "⭐",
       "text": "Una stella, due stelle,\nbrillano su nel ciel,\ntre, quattro, tante belle,\nconta insieme a me, fratel!"
+    },
+    {
+      "id": "l-batatinha",
+      "title": "Piccola Patata",
+      "emoji": "🥔",
+      "text": "Piccola patata quando nasce,\nLe sue foglie a terra sparge,\nBimba bella quando sorride,\nEmpie la casa di note liete."
+    },
+    {
+      "id": "l-domingo",
+      "title": "Campane della Domenica",
+      "emoji": "🎵",
+      "text": "Oggi è domenica, la campana suona,\nDin e don, che dolce corona,\nSuona, suona senza fermare,\nDomenica è tempo di giocare!"
+    },
+    {
+      "id": "l-patinhos",
+      "title": "Cinque Anatroccoli",
+      "emoji": "🦆",
+      "text": "Cinque anatroccoli uscirono un dì,\nSopra la collina, lontano di qui,\nMamma anatra disse qua, qua, qua,\nSolo quattro tornarono qua!"
+    },
+    {
+      "id": "l-piao",
+      "title": "Gira, Trottola",
+      "emoji": "🪀",
+      "text": "Gira, gira, piccola trottola,\nBalla veloce, mai una sosta,\nQuando sei stanca, cadi giù,\nGira ancora, non fermarti più!"
+    },
+    {
+      "id": "l-uva",
+      "title": "Uva Matura",
+      "emoji": "🍇",
+      "text": "Uno, due, tre, quattro, cinque,\nUva matura nel mio cestino,\nSei, sette, otto, nove, dieci,\nMangia un chicco e riconta, ecco!"
     }
   ],
   "travalinguas": [
@@ -273,6 +303,42 @@
       "title": "Passeggiata nel bosco",
       "emoji": "🌳",
       "text": "Nel bosco il vento sospira piano,\nTra gli alberi alti e verdi va,\nLo scoiattolo salta con la mano,\nMentre il fiume il suo corso fa."
+    },
+    {
+      "id": "r-mar-azul",
+      "title": "Il Mare Blu",
+      "emoji": "🌊",
+      "text": "Il mare è grande, blu e forte,\nLe onde danzano da nord a sorte,\nConchiglie bianche sulla sabbia calda,\nIl mare è amico, che gioia salda."
+    },
+    {
+      "id": "r-quinta-animais",
+      "title": "La Fattoria degli Animali",
+      "emoji": "🐄",
+      "text": "Nella fattoria il gallo canta presto,\nLa mucca fa muu, con grande gesto,\nIl maiale grugnisce, il cane abbaia forte,\nBuongiorno fattoria, che bella sorte!"
+    },
+    {
+      "id": "r-melhor-amigo",
+      "title": "Il Mio Migliore Amico",
+      "emoji": "🤝",
+      "text": "Ho un amico tanto speciale,\nGiochiamo insieme, è geniale,\nCondividiamo risate e segreti in cuore,\nUn'amicizia così scalda il cuore."
+    },
+    {
+      "id": "r-outono-folhas",
+      "title": "Foglie d'Autunno",
+      "emoji": "🍂",
+      "text": "In autunno le foglie cadono piano,\nGialle e rosse, danzano lontano,\nIl vento soffia e le fa volare,\nChe bello l'autunno al suo arrivare."
+    },
+    {
+      "id": "r-hora-dormir",
+      "title": "L'Ora di Dormire",
+      "emoji": "😴",
+      "text": "Chiudi gli occhi, piano piano,\nTira la coperta con la mano,\nI sogni arrivano su una barchetta,\nBuonanotte, dormi, dolce e in fretta."
+    },
+    {
+      "id": "r-passarinho-canta",
+      "title": "L'Uccellino Canta",
+      "emoji": "🐦",
+      "text": "In cima all'albero un uccellino canta,\nSveglia il giorno con la voce che incanta,\nCip, cip, leggero e chiaro,\nBuongiorno al mondo, splendido e caro."
     }
   ]
 }

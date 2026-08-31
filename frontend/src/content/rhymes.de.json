@@ -89,6 +89,36 @@
       "title": "Sonne, Mond und Sterne",
       "emoji": "⭐",
       "text": "Sonne, Mond und Sterne,\nzählen wir so gerne,\neins, zwei, drei, vier, fünf,\nwer lacht zuerst, der ist flink!"
+    },
+    {
+      "id": "l-batatinha",
+      "title": "Kleine Kartoffel",
+      "emoji": "🥔",
+      "text": "Kleine Kartoffel wächst im Feld,\nBreitet ihr Laub in Reih' gestellt,\nKleines Mädchen, hübsch und fein,\nFüllt das Haus mit Liedlein."
+    },
+    {
+      "id": "l-domingo",
+      "title": "Sonntagsglocken",
+      "emoji": "🎵",
+      "text": "Heute ist Sonntag, die Glocke klingt,\nBim und bam, ein Lied sie singt,\nLäutet, läutet ohne Halt,\nSonntag ist zum Spielen bald!"
+    },
+    {
+      "id": "l-patinhos",
+      "title": "Fünf Kleine Entchen",
+      "emoji": "🦆",
+      "text": "Fünf kleine Entchen zogen aus,\nÜber den Hügel, weit von Haus,\nMutter Ente rief: schnatter, schnatter, schnack,\nNur vier kleine Entchen kamen zurück!"
+    },
+    {
+      "id": "l-piao",
+      "title": "Dreh Dich, Kreisel",
+      "emoji": "🪀",
+      "text": "Dreh dich, dreh dich, kleiner Kreisel,\nTanze munter, ohne Weise,\nWirst du müde, fällst du hin,\nDreh dich wieder, das macht Sinn!"
+    },
+    {
+      "id": "l-uva",
+      "title": "Reife Trauben",
+      "emoji": "🍇",
+      "text": "Eins, zwei, drei, vier, fünf,\nReife Trauben, welch ein Gewinn,\nSechs, sieben, acht, neun, zehn,\nIss eine Traube, dann geht's weiter, gehn!"
     }
   ],
   "travalinguas": [
@@ -273,6 +303,42 @@
       "title": "Waldspaziergang",
       "emoji": "🌳",
       "text": "Im Wald da weht der Wind so sacht,\nZwischen den Bäumen, hoch und grün,\nDas Eichhorn springt, hat's nie bedacht,\nDer Fluss fließt weiter, stets bemüht."
+    },
+    {
+      "id": "r-mar-azul",
+      "title": "Das Blaue Meer",
+      "emoji": "🌊",
+      "text": "Das Meer ist groß und blau und weit,\nDie Wellen tanzen, welch eine Freud,\nMuscheln weiß im warmen Sand,\nDas Meer ist Freund im ganzen Land."
+    },
+    {
+      "id": "r-quinta-animais",
+      "title": "Der Bauernhof",
+      "emoji": "🐄",
+      "text": "Auf dem Hof kräht früh der Hahn,\nDie Kuh macht muh, so gut sie kann,\nDas Schwein grunzt, der Hund bellt froh,\nGuten Morgen, Bauernhof, wie schön ist's so!"
+    },
+    {
+      "id": "r-melhor-amigo",
+      "title": "Mein Bester Freund",
+      "emoji": "🤝",
+      "text": "Ich hab' einen Freund, so treu und wahr,\nWir spielen zusammen, Jahr für Jahr,\nWir teilen Lachen, teilen Geheimnis fein,\nSo eine Freundschaft muss einfach sein."
+    },
+    {
+      "id": "r-outono-folhas",
+      "title": "Herbstblätter",
+      "emoji": "🍂",
+      "text": "Im Herbst die Blätter fallen sacht,\nGelb und rot, ein Tanz mit Pracht,\nDer Wind weht leicht, sie fliegen fern,\nDen Herbst, den hab ich einfach gern."
+    },
+    {
+      "id": "r-hora-dormir",
+      "title": "Zeit zum Schlafen",
+      "emoji": "😴",
+      "text": "Schließ die Augen, ganz sacht und fein,\nZieh die Decke warm hinein,\nTräume segeln leicht heran,\nGute Nacht, schlaf süß fortan."
+    },
+    {
+      "id": "r-passarinho-canta",
+      "title": "Der Kleine Vogel Singt",
+      "emoji": "🐦",
+      "text": "Hoch im Baum ein Vogel singt,\nDer Morgen wacht auf, wie es klingt,\nPiep, piep, so hell und klar,\nGuten Morgen, wunderbar!"
     }
   ]
 }

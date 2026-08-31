@@ -89,6 +89,36 @@
       "title": "Cinco Lobitos",
       "emoji": "🐺",
       "text": "Cinco lobitos tiene la loba,\nblancos y negros detrás de una escoba,\ncinco tenía, cinco criaba,\ny a todos los cinco lechita les daba!"
+    },
+    {
+      "id": "l-batatinha",
+      "title": "Patatita",
+      "emoji": "🥔",
+      "text": "Patatita cuando nace,\nSus hojitas al suelo esparce,\nNiña bonita cuando ríe,\nLlena la casa de alegría."
+    },
+    {
+      "id": "l-domingo",
+      "title": "Campanas del Domingo",
+      "emoji": "🎵",
+      "text": "Hoy es domingo, la campana suena,\nDin y don, qué dulce cadena,\nSuena, suena sin parar,\nDomingo es tiempo de jugar!"
+    },
+    {
+      "id": "l-patinhos",
+      "title": "Cinco Patitos",
+      "emoji": "🦆",
+      "text": "Cinco patitos salieron a pasear,\nPor la colina, lejos de su hogar,\nMamá pata dijo cua, cua, cua,\nSolo cuatro patitos volvieron ya!"
+    },
+    {
+      "id": "l-piao",
+      "title": "Gira, Trompo",
+      "emoji": "🪀",
+      "text": "Gira, gira, trompito veloz,\nBaila sin parar, qué buena voz,\nCuando te canses, al suelo caerás,\nGira otra vez, nos gusta más!"
+    },
+    {
+      "id": "l-uva",
+      "title": "Uvas Maduras",
+      "emoji": "🍇",
+      "text": "Uno, dos, tres, cuatro, cinco,\nUvas maduras en mi canastito,\nSeis, siete, ocho, nueve, diez,\nCome una uva y cuenta otra vez!"
     }
   ],
   "travalinguas": [
@@ -273,6 +303,42 @@
       "title": "Paseo por el bosque",
       "emoji": "🌳",
       "text": "En el bosque el viento sopla,\nEntre los árboles altos y verdes,\nLa ardilla salta, nunca para,\nMientras el río su curso pierde."
+    },
+    {
+      "id": "r-mar-azul",
+      "title": "El Mar Azul",
+      "emoji": "🌊",
+      "text": "El mar es grande, azul y fuerte,\nLas olas bailan de norte a suerte,\nConchitas blancas en la arena calentita,\nEl mar es amigo, qué alegría bonita."
+    },
+    {
+      "id": "r-quinta-animais",
+      "title": "La Granja de Animales",
+      "emoji": "🐄",
+      "text": "En la granja el gallo canta ya,\nLa vaca dice mu, sin parar,\nEl cerdo gruñe, el perro ladra feliz,\nBuenos días, granja, qué lindo país."
+    },
+    {
+      "id": "r-melhor-amigo",
+      "title": "Mi Mejor Amigo",
+      "emoji": "🤝",
+      "text": "Tengo un amigo tan especial,\nJugamos juntos, es genial,\nCompartimos risas y secretos también,\nUna amistad así se quiere bien."
+    },
+    {
+      "id": "r-outono-folhas",
+      "title": "Hojas de Otoño",
+      "emoji": "🍂",
+      "text": "En otoño las hojas caen despacito,\nAmarillas, rojas, en su vuelo bonito,\nEl viento sopla y las hace volar,\nQué lindo es el otoño al llegar."
+    },
+    {
+      "id": "r-hora-dormir",
+      "title": "Hora de Dormir",
+      "emoji": "😴",
+      "text": "Cierra los ojitos, despacito ya,\nTira la manta, calientita está,\nLos sueños llegan en un barco de papel,\nBuenas noches, duerme, dulce como la miel."
+    },
+    {
+      "id": "r-passarinho-canta",
+      "title": "El Pajarito Canta",
+      "emoji": "🐦",
+      "text": "En lo alto del árbol un pájaro canta,\nDespierta el día con su voz que encanta,\nPío, pío, alegre y ligero,\nBuenos días le da al mundo entero."
     }
   ]
 }
