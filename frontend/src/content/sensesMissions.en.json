@@ -1,0 +1,122 @@
+[
+  {
+    "id": "hearing-eyes-closed",
+    "sense": "hearing",
+    "emoji": "👂",
+    "supervision": "sozinho",
+    "text": "Close your eyes for 20 seconds. How many different sounds can you identify?",
+    "hook": "When we close our eyes, our ears pay even closer attention. Let's try it!"
+  },
+  {
+    "id": "hearing-loud-soft",
+    "sense": "hearing",
+    "emoji": "👂",
+    "supervision": "sozinho",
+    "text": "Find a loud sound and a soft sound at home. Which one do you like more?",
+    "hook": "Sounds can be loud like thunder or soft like a whisper."
+  },
+  {
+    "id": "hearing-nature",
+    "sense": "hearing",
+    "emoji": "👂",
+    "supervision": "sozinho",
+    "text": "Go outside or to a window and listen for 1 minute. What nature sounds do you hear?",
+    "hook": "Wind, birds, rain... nature has its own orchestra!"
+  },
+  {
+    "id": "smell-foods",
+    "sense": "smell",
+    "emoji": "👃",
+    "supervision": "adulto",
+    "text": "With an adult, try to identify 3 foods by smell, with your eyes closed.",
+    "hook": "Your nose can recognize thousands of different smells. Let's test yours!"
+  },
+  {
+    "id": "smell-flowers",
+    "sense": "smell",
+    "emoji": "👃",
+    "supervision": "sozinho",
+    "text": "Smell a flower or a fruit. How would you describe that smell in your own words?",
+    "hook": "Every flower and every fruit has its own special smell. Can you describe it?"
+  },
+  {
+    "id": "smell-house",
+    "sense": "smell",
+    "emoji": "👃",
+    "supervision": "sozinho",
+    "text": "Walk around your house and find the nicest smell and the strangest one.",
+    "hook": "Every room in the house has different smells. Let's be smell detectives!"
+  },
+  {
+    "id": "touch-textures",
+    "sense": "touch",
+    "emoji": "✋",
+    "supervision": "sozinho",
+    "text": "Find something rough, something soft, and something cold at home.",
+    "hook": "Your hands can feel very different textures. Let's explore!"
+  },
+  {
+    "id": "touch-blind",
+    "sense": "touch",
+    "emoji": "✋",
+    "supervision": "adulto",
+    "text": "With your eyes closed, ask an adult to give you 3 objects to touch and guess what they are.",
+    "hook": "Without seeing, our hands become our eyes. Can you guess them all?"
+  },
+  {
+    "id": "touch-temperature",
+    "sense": "touch",
+    "emoji": "✋",
+    "supervision": "adulto",
+    "text": "Carefully touch 3 things with different temperatures: cold, warm, and hot.",
+    "hook": "Your skin can feel if something is cold or hot. Always ask an adult for help with hot things!"
+  },
+  {
+    "id": "taste-flavors",
+    "sense": "taste",
+    "emoji": "👅",
+    "supervision": "adulto",
+    "text": "With an adult, taste something sweet, something sour, and something salty.",
+    "hook": "Your tongue can taste different flavors: sweet, sour, salty, and bitter."
+  },
+  {
+    "id": "taste-eyes-closed",
+    "sense": "taste",
+    "emoji": "👅",
+    "supervision": "adulto",
+    "text": "With your eyes closed, taste a food an adult picks and try to guess what it is.",
+    "hook": "Without seeing the food, your taste buds have to work alone. Do you think you can guess?"
+  },
+  {
+    "id": "taste-describe",
+    "sense": "taste",
+    "emoji": "👅",
+    "supervision": "sozinho",
+    "text": "Taste your favorite fruit and describe its flavor in 3 words.",
+    "hook": "Describing a flavor in words is a fun challenge. Let's try it!"
+  },
+  {
+    "id": "sight-colors",
+    "sense": "sight",
+    "emoji": "👀",
+    "supervision": "sozinho",
+    "text": "Count how many red objects you can see around you right now.",
+    "hook": "Our eyes see millions of colors, but sometimes we only notice one at a time."
+  },
+  {
+    "id": "sight-details",
+    "sense": "sight",
+    "emoji": "👀",
+    "supervision": "sozinho",
+    "text": "Look closely at a leaf or a stone for 1 minute. What details do you find?",
+    "hook": "When we look carefully, we discover details that go unnoticed at first glance."
+  },
+  {
+    "id": "sight-far-near",
+    "sense": "sight",
+    "emoji": "👀",
+    "supervision": "sozinho",
+    "text": "Find something very far from you and something very close to you.",
+    "hook": "Our eyes can focus on things near and far. Let's test that magic!"
+  }
+]

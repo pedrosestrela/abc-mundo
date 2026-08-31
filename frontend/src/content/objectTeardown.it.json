@@ -1,0 +1,268 @@
+[
+  {
+    "id": "relogio",
+    "emoji": "⌚",
+    "title": "Orologio",
+    "summary": "Un orologio unisce un piccolo motore, ingranaggi e lancette per mostrarti l'ora tutto il giorno!",
+    "parts": [
+      {
+        "id": "mostrador",
+        "emoji": "🔵",
+        "label": "Quadrante",
+        "why": "È la parte anteriore dell'orologio dove compaiono i numeri e le lancette. Esiste per farti leggere l'ora con chiarezza."
+      },
+      {
+        "id": "ponteiros",
+        "emoji": "➡️",
+        "label": "Lancette",
+        "why": "Indicano i numeri sul quadrante. Esistono per farti sapere l'ora con una semplice occhiata."
+      },
+      {
+        "id": "coroa",
+        "emoji": "🔘",
+        "label": "Corona",
+        "why": "È il piccolo pulsante laterale che si gira. Esiste per poter regolare l'ora o caricare l'orologio."
+      },
+      {
+        "id": "bateria",
+        "emoji": "🔋",
+        "label": "Batteria",
+        "why": "Immagazzina energia elettrica. Esiste per alimentare il piccolo motore che muove le lancette."
+      },
+      {
+        "id": "engrenagens",
+        "emoji": "⚙️",
+        "label": "Ingranaggi",
+        "why": "Sono piccole ruote dentate che si incastrano tra loro. Esistono per trasformare l'energia del motore nel movimento esatto delle lancette."
+      }
+    ]
+  },
+  {
+    "id": "bicicleta",
+    "emoji": "🚲",
+    "title": "Bicicletta",
+    "summary": "Una bicicletta trasforma la forza delle tue gambe in movimento, con ruote, catena e freni che lavorano insieme!",
+    "parts": [
+      {
+        "id": "rodas",
+        "emoji": "🛞",
+        "label": "Ruote",
+        "why": "Sono rotonde per rotolare facilmente. Esistono per far avanzare la bici e mantenerla in equilibrio."
+      },
+      {
+        "id": "pedais",
+        "emoji": "🦶",
+        "label": "Pedali",
+        "why": "È dove metti i piedi per spingere. Esistono per trasformare la forza delle tue gambe in movimento."
+      },
+      {
+        "id": "corrente",
+        "emoji": "🔗",
+        "label": "Catena",
+        "why": "Collega i pedali alla ruota posteriore. Esiste per portare la forza dei pedali fino alla ruota, facendola girare."
+      },
+      {
+        "id": "travoes",
+        "emoji": "🛑",
+        "label": "Freni",
+        "why": "Stringono la ruota quando tiri la leva. Esistono per farti fermare la bici in sicurezza."
+      },
+      {
+        "id": "selim",
+        "emoji": "🪑",
+        "label": "Sella",
+        "why": "È dove ti siedi. Esiste per darti un appoggio comodo mentre pedali."
+      }
+    ]
+  },
+  {
+    "id": "lanterna",
+    "emoji": "🔦",
+    "title": "Torcia",
+    "summary": "Una torcia immagazzina energia elettrica e la trasforma in luce, proprio quando ne hai bisogno!",
+    "parts": [
+      {
+        "id": "led",
+        "emoji": "💡",
+        "label": "Lampadina LED",
+        "why": "È la parte che brilla. Esiste per trasformare l'energia elettrica in luce."
+      },
+      {
+        "id": "pilhas",
+        "emoji": "🔋",
+        "label": "Pile",
+        "why": "Immagazzinano energia elettrica al loro interno. Esistono per alimentare tutta la torcia."
+      },
+      {
+        "id": "interruptor",
+        "emoji": "🔘",
+        "label": "Interruttore",
+        "why": "È il pulsante che premi. Esiste per aprire o chiudere il circuito elettrico, accendendo o spegnendo la luce."
+      },
+      {
+        "id": "refletor",
+        "emoji": "🌟",
+        "label": "Riflettore",
+        "why": "È la parte lucida a forma di coppa intorno alla lampadina. Esiste per raccogliere tutta la luce in un fascio potente."
+      },
+      {
+        "id": "carcaca",
+        "emoji": "📦",
+        "label": "Corpo",
+        "why": "È il corpo esterno della torcia. Esiste per proteggere tutte le parti interne ed essere facile da impugnare."
+      }
+    ]
+  },
+  {
+    "id": "telemovel",
+    "emoji": "📱",
+    "title": "Smartphone",
+    "summary": "Uno smartphone unisce schermo, fotocamera, altoparlante e un piccolo cervello elettronico per fare tante cose insieme!",
+    "parts": [
+      {
+        "id": "ecra",
+        "emoji": "🖼️",
+        "label": "Touchscreen",
+        "why": "Mostra immagini e sente il tuo dito. Esiste per farti vedere e toccare per dare comandi al telefono."
+      },
+      {
+        "id": "bateria-tel",
+        "emoji": "🔋",
+        "label": "Batteria",
+        "why": "Immagazzina energia elettrica al suo interno. Esiste per far funzionare il telefono anche lontano da una presa."
+      },
+      {
+        "id": "camara-tel",
+        "emoji": "📷",
+        "label": "Fotocamera",
+        "why": "Cattura la luce che entra dalla piccola lente. Esiste per farti scattare foto e girare video."
+      },
+      {
+        "id": "altifalante",
+        "emoji": "🔊",
+        "label": "Altoparlante",
+        "why": "Fa vibrare l'aria. Esiste per trasformare segnali elettrici in suono che puoi sentire."
+      },
+      {
+        "id": "processador",
+        "emoji": "🧠",
+        "label": "Processore",
+        "why": "È un chip minuscolo che fa milioni di calcoli al secondo. Esiste per essere il cervello che comanda tutto nel telefono."
+      }
+    ]
+  },
+  {
+    "id": "camara",
+    "emoji": "📷",
+    "title": "Macchina fotografica",
+    "summary": "Una macchina fotografica cattura la luce in un istante e la conserva come immagine per sempre!",
+    "parts": [
+      {
+        "id": "lente",
+        "emoji": "🔍",
+        "label": "Obiettivo",
+        "why": "È il pezzo di vetro curvo davanti. Esiste per piegare la luce e mettere a fuoco l'immagine."
+      },
+      {
+        "id": "sensor",
+        "emoji": "🟩",
+        "label": "Sensore",
+        "why": "Si trova dietro l'obiettivo. Esiste per trasformare la luce ricevuta in informazione digitale, creando la foto."
+      },
+      {
+        "id": "obturador",
+        "emoji": "⏱️",
+        "label": "Otturatore",
+        "why": "È una piccola tenda che si apre e chiude molto in fretta. Esiste per controllare quanto tempo entra la luce nella macchina."
+      },
+      {
+        "id": "botao",
+        "emoji": "🔴",
+        "label": "Pulsante di scatto",
+        "why": "È il pulsante che premi con il dito. Esiste per dire alla macchina il momento esatto di scattare la foto."
+      },
+      {
+        "id": "cartao",
+        "emoji": "💾",
+        "label": "Scheda di memoria",
+        "why": "È una piccola scheda dentro la macchina. Esiste per conservare tutte le foto e i video che scatti."
+      }
+    ]
+  },
+  {
+    "id": "piano",
+    "emoji": "🎹",
+    "title": "Pianoforte",
+    "summary": "Un pianoforte trasforma il tocco delle tue dita in martelletti che colpiscono le corde, creando musica!",
+    "parts": [
+      {
+        "id": "teclas",
+        "emoji": "⬜",
+        "label": "Tasti",
+        "why": "Sono ciò che premi con le dita. Esistono per dare il comando di suonare una nota."
+      },
+      {
+        "id": "martelos",
+        "emoji": "🔨",
+        "label": "Martelletti",
+        "why": "Ogni tasto muove un piccolo martelletto. Esistono per colpire le corde giuste e produrre il suono."
+      },
+      {
+        "id": "cordas-piano",
+        "emoji": "➰",
+        "label": "Corde",
+        "why": "Sono fili tesi dentro il pianoforte. Esistono per vibrare quando il martelletto le colpisce, creando il suono della nota."
+      },
+      {
+        "id": "caixa",
+        "emoji": "📦",
+        "label": "Tavola armonica",
+        "why": "È una grande tavola di legno sotto le corde. Esiste per rendere il suono delle corde molto più forte e ricco."
+      },
+      {
+        "id": "pedais-piano",
+        "emoji": "🦶",
+        "label": "Pedali",
+        "why": "Li premi con i piedi. Esistono per far durare il suono più a lungo o renderlo più morbido."
+      }
+    ]
+  },
+  {
+    "id": "aviao",
+    "emoji": "✈️",
+    "title": "Aereo",
+    "summary": "Un aereo usa ali, motori e timone che lavorano insieme per volare in alto nel cielo!",
+    "parts": [
+      {
+        "id": "asas",
+        "emoji": "🪽",
+        "label": "Ali",
+        "why": "Hanno una forma speciale curva sopra. Esistono per creare portanza e mantenere l'aereo in volo."
+      },
+      {
+        "id": "motores",
+        "emoji": "🌀",
+        "label": "Motori",
+        "why": "Sono appesi sotto le ali. Esistono per spingere l'aereo in avanti con molta forza."
+      },
+      {
+        "id": "cauda",
+        "emoji": "🔺",
+        "label": "Coda e timone",
+        "why": "Si trova nella parte posteriore dell'aereo. Esiste per mantenere l'aereo stabile e aiutarlo a girare."
+      },
+      {
+        "id": "trem",
+        "emoji": "🛞",
+        "label": "Carrello di atterraggio",
+        "why": "Sono le ruote che escono da sotto l'aereo. Esistono per far decollare e atterrare l'aereo in sicurezza."
+      },
+      {
+        "id": "cabine",
+        "emoji": "🧑‍✈️",
+        "label": "Cabina di pilotaggio",
+        "why": "Si trova nella parte anteriore dell'aereo, piena di pulsanti e schermi. Esiste per far controllare tutto ai piloti durante il volo."
+      }
+    ]
+  }
+]

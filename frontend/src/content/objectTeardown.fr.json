@@ -1,0 +1,268 @@
+[
+  {
+    "id": "relogio",
+    "emoji": "⌚",
+    "title": "Montre",
+    "summary": "Une montre combine un tout petit moteur, des engrenages et des aiguilles pour t'indiquer l'heure toute la journée !",
+    "parts": [
+      {
+        "id": "mostrador",
+        "emoji": "🔵",
+        "label": "Cadran",
+        "why": "C'est la face de la montre où apparaissent les chiffres et les aiguilles. Il existe pour que tu puisses lire l'heure clairement."
+      },
+      {
+        "id": "ponteiros",
+        "emoji": "➡️",
+        "label": "Aiguilles",
+        "why": "Elles pointent vers les chiffres du cadran. Elles existent pour qu'un simple coup d'œil te dise l'heure."
+      },
+      {
+        "id": "coroa",
+        "emoji": "🔘",
+        "label": "Couronne",
+        "why": "C'est le petit bouton sur le côté que l'on tourne. Il existe pour régler l'heure ou remonter la montre."
+      },
+      {
+        "id": "bateria",
+        "emoji": "🔋",
+        "label": "Pile",
+        "why": "Elle stocke l'énergie électrique. Elle existe pour alimenter le petit moteur qui fait bouger les aiguilles."
+      },
+      {
+        "id": "engrenagens",
+        "emoji": "⚙️",
+        "label": "Engrenages",
+        "why": "Ce sont de petites roues dentées qui s'emboîtent. Elles existent pour transformer l'énergie du moteur en mouvement précis des aiguilles."
+      }
+    ]
+  },
+  {
+    "id": "bicicleta",
+    "emoji": "🚲",
+    "title": "Vélo",
+    "summary": "Un vélo transforme la force de tes jambes en mouvement, grâce aux roues, à la chaîne et aux freins qui travaillent en équipe !",
+    "parts": [
+      {
+        "id": "rodas",
+        "emoji": "🛞",
+        "label": "Roues",
+        "why": "Elles sont rondes pour rouler facilement. Elles existent pour faire avancer le vélo et le maintenir en équilibre."
+      },
+      {
+        "id": "pedais",
+        "emoji": "🦶",
+        "label": "Pédales",
+        "why": "C'est là où tu mets tes pieds pour pousser. Elles existent pour transformer la force de tes jambes en mouvement."
+      },
+      {
+        "id": "corrente",
+        "emoji": "🔗",
+        "label": "Chaîne",
+        "why": "Elle relie les pédales à la roue arrière. Elle existe pour transmettre la force des pédales à la roue et la faire tourner."
+      },
+      {
+        "id": "travoes",
+        "emoji": "🛑",
+        "label": "Freins",
+        "why": "Ils serrent la roue quand tu tires le levier. Ils existent pour que tu puisses arrêter le vélo en toute sécurité."
+      },
+      {
+        "id": "selim",
+        "emoji": "🪑",
+        "label": "Selle",
+        "why": "C'est là où tu t'assois. Elle existe pour te donner un appui confortable pendant que tu pédales."
+      }
+    ]
+  },
+  {
+    "id": "lanterna",
+    "emoji": "🔦",
+    "title": "Lampe de poche",
+    "summary": "Une lampe de poche stocke de l'énergie électrique et la transforme en lumière, juste quand tu en as besoin !",
+    "parts": [
+      {
+        "id": "led",
+        "emoji": "💡",
+        "label": "Ampoule LED",
+        "why": "C'est la pièce qui brille. Elle existe pour transformer l'énergie électrique en lumière."
+      },
+      {
+        "id": "pilhas",
+        "emoji": "🔋",
+        "label": "Piles",
+        "why": "Elles stockent de l'énergie électrique. Elles existent pour alimenter toute la lampe."
+      },
+      {
+        "id": "interruptor",
+        "emoji": "🔘",
+        "label": "Interrupteur",
+        "why": "C'est le bouton que tu appuies. Il existe pour ouvrir ou fermer le circuit électrique, allumant ou éteignant la lumière."
+      },
+      {
+        "id": "refletor",
+        "emoji": "🌟",
+        "label": "Réflecteur",
+        "why": "C'est la pièce brillante en forme de coupe autour de l'ampoule. Elle existe pour rassembler toute la lumière en un faisceau puissant."
+      },
+      {
+        "id": "carcaca",
+        "emoji": "📦",
+        "label": "Boîtier",
+        "why": "C'est le corps extérieur de la lampe. Il existe pour protéger toutes les pièces à l'intérieur et être facile à tenir."
+      }
+    ]
+  },
+  {
+    "id": "telemovel",
+    "emoji": "📱",
+    "title": "Smartphone",
+    "summary": "Un smartphone combine un écran, un appareil photo, un haut-parleur et un petit cerveau électronique pour faire plein de choses à la fois !",
+    "parts": [
+      {
+        "id": "ecra",
+        "emoji": "🖼️",
+        "label": "Écran tactile",
+        "why": "Il affiche des images et sent ton doigt. Il existe pour que tu puisses voir et toucher pour donner des ordres au téléphone."
+      },
+      {
+        "id": "bateria-tel",
+        "emoji": "🔋",
+        "label": "Batterie",
+        "why": "Elle stocke de l'énergie électrique à l'intérieur. Elle existe pour que le téléphone fonctionne même loin d'une prise."
+      },
+      {
+        "id": "camara-tel",
+        "emoji": "📷",
+        "label": "Appareil photo",
+        "why": "Il capte la lumière qui entre par la petite lentille. Il existe pour que tu puisses prendre des photos et des vidéos."
+      },
+      {
+        "id": "altifalante",
+        "emoji": "🔊",
+        "label": "Haut-parleur",
+        "why": "Il fait vibrer l'air. Il existe pour transformer des signaux électriques en son que tu peux entendre."
+      },
+      {
+        "id": "processador",
+        "emoji": "🧠",
+        "label": "Processeur",
+        "why": "C'est une puce minuscule qui fait des millions de calculs par seconde. Elle existe pour être le cerveau qui commande tout dans le téléphone."
+      }
+    ]
+  },
+  {
+    "id": "camara",
+    "emoji": "📷",
+    "title": "Appareil photo",
+    "summary": "Un appareil photo capture la lumière en un instant et la garde comme une image pour toujours !",
+    "parts": [
+      {
+        "id": "lente",
+        "emoji": "🔍",
+        "label": "Objectif",
+        "why": "C'est la pièce de verre courbée à l'avant. Elle existe pour courber la lumière et faire une image nette."
+      },
+      {
+        "id": "sensor",
+        "emoji": "🟩",
+        "label": "Capteur",
+        "why": "Il se trouve derrière l'objectif. Il existe pour transformer la lumière reçue en information numérique et créer la photo."
+      },
+      {
+        "id": "obturador",
+        "emoji": "⏱️",
+        "label": "Obturateur",
+        "why": "C'est un petit rideau qui s'ouvre et se ferme très vite. Il existe pour contrôler combien de temps la lumière entre dans l'appareil."
+      },
+      {
+        "id": "botao",
+        "emoji": "🔴",
+        "label": "Déclencheur",
+        "why": "C'est le bouton que tu appuies avec le doigt. Il existe pour dire à l'appareil le moment exact de prendre la photo."
+      },
+      {
+        "id": "cartao",
+        "emoji": "💾",
+        "label": "Carte mémoire",
+        "why": "C'est une petite carte à l'intérieur de l'appareil. Elle existe pour garder toutes les photos et vidéos que tu prends."
+      }
+    ]
+  },
+  {
+    "id": "piano",
+    "emoji": "🎹",
+    "title": "Piano",
+    "summary": "Un piano transforme le toucher de tes doigts en marteaux qui frappent des cordes, créant de la musique !",
+    "parts": [
+      {
+        "id": "teclas",
+        "emoji": "⬜",
+        "label": "Touches",
+        "why": "C'est ce que tu appuies avec les doigts. Elles existent pour donner l'ordre de jouer une note."
+      },
+      {
+        "id": "martelos",
+        "emoji": "🔨",
+        "label": "Marteaux",
+        "why": "Chaque touche déplace un petit marteau. Ils existent pour frapper les bonnes cordes et produire le son."
+      },
+      {
+        "id": "cordas-piano",
+        "emoji": "➰",
+        "label": "Cordes",
+        "why": "Ce sont des fils tendus à l'intérieur du piano. Elles existent pour vibrer quand le marteau les frappe, créant le son de la note."
+      },
+      {
+        "id": "caixa",
+        "emoji": "📦",
+        "label": "Table d'harmonie",
+        "why": "C'est une grande planche en bois sous les cordes. Elle existe pour rendre le son des cordes bien plus fort et riche."
+      },
+      {
+        "id": "pedais-piano",
+        "emoji": "🦶",
+        "label": "Pédales",
+        "why": "Tu les appuies avec les pieds. Elles existent pour faire durer le son plus longtemps ou le rendre plus doux."
+      }
+    ]
+  },
+  {
+    "id": "aviao",
+    "emoji": "✈️",
+    "title": "Avion",
+    "summary": "Un avion utilise des ailes, des moteurs et un gouvernail qui travaillent ensemble pour voler haut dans le ciel !",
+    "parts": [
+      {
+        "id": "asas",
+        "emoji": "🪽",
+        "label": "Ailes",
+        "why": "Elles ont une forme spéciale courbée sur le dessus. Elles existent pour créer de la portance et maintenir l'avion en l'air."
+      },
+      {
+        "id": "motores",
+        "emoji": "🌀",
+        "label": "Moteurs",
+        "why": "Ils sont suspendus sous les ailes. Ils existent pour pousser l'avion vers l'avant avec beaucoup de force."
+      },
+      {
+        "id": "cauda",
+        "emoji": "🔺",
+        "label": "Queue et gouvernail",
+        "why": "Elle se trouve à l'arrière de l'avion. Elle existe pour stabiliser l'avion et l'aider à tourner sur les côtés."
+      },
+      {
+        "id": "trem",
+        "emoji": "🛞",
+        "label": "Train d'atterrissage",
+        "why": "Ce sont les roues qui sortent sous l'avion. Elles existent pour que l'avion puisse décoller et atterrir en sécurité."
+      },
+      {
+        "id": "cabine",
+        "emoji": "🧑‍✈️",
+        "label": "Cockpit",
+        "why": "Il est à l'avant de l'avion, plein de boutons et d'écrans. Il existe pour que les pilotes contrôlent et vérifient tout pendant le vol."
+      }
+    ]
+  }
+]

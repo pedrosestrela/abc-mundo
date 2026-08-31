@@ -533,6 +533,85 @@ export function exploreThingPart(profileName, objectId, partId) {
   return all[name];
 }
 
+// --- O Que Há Dentro? (object teardown) ---
+// Tracks which teardown part ids (as "objectId:partId") the child has tapped
+// open, per object of the "object teardown" module. Same shape as
+// exploredThingParts above, kept as its own key since it's a separate module.
+
+const EXPLORED_TEARDOWN_PARTS_KEY = "abcmundo.exploredTeardownParts";
+
+function loadExploredTeardownParts() {
+  try {
+    const raw = localStorage.getItem(EXPLORED_TEARDOWN_PARTS_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveExploredTeardownParts(all) {
+  try {
+    localStorage.setItem(EXPLORED_TEARDOWN_PARTS_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getExploredTeardownParts(profileName) {
+  const all = loadExploredTeardownParts();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function exploreTeardownPart(profileName, objectId, partId) {
+  const name = profileName || "Explorer";
+  const all = loadExploredTeardownParts();
+  const explored = new Set(all[name] || []);
+  explored.add(`${objectId}:${partId}`);
+  all[name] = Array.from(explored);
+  saveExploredTeardownParts(all);
+  return all[name];
+}
+
+// --- Os Cinco Sentidos (senses missions) ---
+// Real-world, trust-based missions like the main Missions module: the child
+// does something away from the screen, then confirms "Já fiz!" — no
+// automated check. Tracked as a separate completed-id list (own storage key)
+// so it doesn't mix with the main mission passport's ids/counts.
+
+const SENSES_MISSIONS_DONE_KEY = "abcmundo.sensesMissionsDone";
+
+function loadSensesMissionsDone() {
+  try {
+    const raw = localStorage.getItem(SENSES_MISSIONS_DONE_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveSensesMissionsDone(all) {
+  try {
+    localStorage.setItem(SENSES_MISSIONS_DONE_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getCompletedSensesMissions(profileName) {
+  const all = loadSensesMissionsDone();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function completeSensesMission(profileName, missionId) {
+  const name = profileName || "Explorer";
+  const all = loadSensesMissionsDone();
+  const done = new Set(all[name] || []);
+  done.add(missionId);
+  all[name] = Array.from(done);
+  saveSensesMissionsDone(all);
+  return all[name];
+}
+
 // --- Portugal History Timeline ("Castelo do Tempo") ---
 // Tracks which era ids the child has explored (opened the detail card for).
 

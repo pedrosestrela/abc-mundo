@@ -1,0 +1,122 @@
+[
+  {
+    "id": "hearing-eyes-closed",
+    "sense": "hearing",
+    "emoji": "👂",
+    "supervision": "sozinho",
+    "text": "Ferme les yeux pendant 20 secondes. Combien de sons différents peux-tu reconnaître ?",
+    "hook": "Quand on ferme les yeux, les oreilles deviennent encore plus attentives. On essaie ?"
+  },
+  {
+    "id": "hearing-loud-soft",
+    "sense": "hearing",
+    "emoji": "👂",
+    "supervision": "sozinho",
+    "text": "Trouve à la maison un son fort et un son doux. Lequel préfères-tu ?",
+    "hook": "Les sons peuvent être forts comme le tonnerre ou doux comme un murmure."
+  },
+  {
+    "id": "hearing-nature",
+    "sense": "hearing",
+    "emoji": "👂",
+    "supervision": "sozinho",
+    "text": "Va dehors ou à la fenêtre et écoute pendant 1 minute. Quels sons de la nature entends-tu ?",
+    "hook": "Le vent, les oiseaux, la pluie... la nature a son propre orchestre !"
+  },
+  {
+    "id": "smell-foods",
+    "sense": "smell",
+    "emoji": "👃",
+    "supervision": "adulto",
+    "text": "Avec un adulte, essaie d'identifier 3 aliments à l'odeur, les yeux fermés.",
+    "hook": "Ton nez peut reconnaître des milliers d'odeurs différentes. Testons le tien !"
+  },
+  {
+    "id": "smell-flowers",
+    "sense": "smell",
+    "emoji": "👃",
+    "supervision": "sozinho",
+    "text": "Sens une fleur ou un fruit. Comment décrirais-tu cette odeur avec tes propres mots ?",
+    "hook": "Chaque fleur et chaque fruit a son odeur bien à lui. Peux-tu la décrire ?"
+  },
+  {
+    "id": "smell-house",
+    "sense": "smell",
+    "emoji": "👃",
+    "supervision": "sozinho",
+    "text": "Promène-toi dans ta maison et trouve la meilleure odeur et la plus étrange.",
+    "hook": "Chaque pièce de la maison a des odeurs différentes. Devenons des détectives des odeurs !"
+  },
+  {
+    "id": "touch-textures",
+    "sense": "touch",
+    "emoji": "✋",
+    "supervision": "sozinho",
+    "text": "Trouve à la maison quelque chose de rugueux, de doux et de froid.",
+    "hook": "Tes mains peuvent sentir des textures très différentes. Explorons !"
+  },
+  {
+    "id": "touch-blind",
+    "sense": "touch",
+    "emoji": "✋",
+    "supervision": "adulto",
+    "text": "Les yeux fermés, demande à un adulte de te donner 3 objets à toucher et à deviner.",
+    "hook": "Sans voir, les mains deviennent nos yeux. Peux-tu tout deviner ?"
+  },
+  {
+    "id": "touch-temperature",
+    "sense": "touch",
+    "emoji": "✋",
+    "supervision": "adulto",
+    "text": "Touche avec précaution 3 choses de températures différentes : froid, tiède et chaud.",
+    "hook": "Ta peau peut sentir si quelque chose est froid ou chaud. Demande toujours de l'aide à un adulte pour les objets chauds !"
+  },
+  {
+    "id": "taste-flavors",
+    "sense": "taste",
+    "emoji": "👅",
+    "supervision": "adulto",
+    "text": "Avec un adulte, goûte quelque chose de sucré, d'acide et de salé.",
+    "hook": "Ta langue peut sentir différentes saveurs : sucré, acide, salé et amer."
+  },
+  {
+    "id": "taste-eyes-closed",
+    "sense": "taste",
+    "emoji": "👅",
+    "supervision": "adulto",
+    "text": "Les yeux fermés, goûte un aliment choisi par un adulte et essaie de deviner ce que c'est.",
+    "hook": "Sans voir la nourriture, le goût doit travailler seul. Penses-tu pouvoir deviner ?"
+  },
+  {
+    "id": "taste-describe",
+    "sense": "taste",
+    "emoji": "👅",
+    "supervision": "sozinho",
+    "text": "Goûte ton fruit préféré et décris sa saveur en 3 mots.",
+    "hook": "Décrire une saveur avec des mots est un défi amusant. On essaie ?"
+  },
+  {
+    "id": "sight-colors",
+    "sense": "sight",
+    "emoji": "👀",
+    "supervision": "sozinho",
+    "text": "Compte combien d'objets rouges tu peux voir autour de toi maintenant.",
+    "hook": "Nos yeux voient des millions de couleurs, mais parfois on n'en remarque qu'une à la fois."
+  },
+  {
+    "id": "sight-details",
+    "sense": "sight",
+    "emoji": "👀",
+    "supervision": "sozinho",
+    "text": "Observe une feuille ou une pierre pendant 1 minute. Quels détails trouves-tu ?",
+    "hook": "Quand on regarde attentivement, on découvre des détails invisibles au premier coup d'œil."
+  },
+  {
+    "id": "sight-far-near",
+    "sense": "sight",
+    "emoji": "👀",
+    "supervision": "sozinho",
+    "text": "Trouve quelque chose de très loin de toi et quelque chose de très proche.",
+    "hook": "Nos yeux peuvent faire le point sur les choses proches et lointaines. Testons cette magie !"
+  }
+]

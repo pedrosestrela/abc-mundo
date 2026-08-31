@@ -1,0 +1,268 @@
+[
+  {
+    "id": "relogio",
+    "emoji": "⌚",
+    "title": "Watch",
+    "summary": "A watch combines a tiny motor, gears, and hands to show you the time all day long!",
+    "parts": [
+      {
+        "id": "mostrador",
+        "emoji": "🔵",
+        "label": "Dial",
+        "why": "It's the face of the watch where the numbers and hands appear. It exists so you can read the time clearly."
+      },
+      {
+        "id": "ponteiros",
+        "emoji": "➡️",
+        "label": "Hands",
+        "why": "They point to the numbers on the dial. They exist so that a single glance tells you what time it is."
+      },
+      {
+        "id": "coroa",
+        "emoji": "🔘",
+        "label": "Crown",
+        "why": "It's the small button on the side that you turn. It exists so you can set the time or wind the watch."
+      },
+      {
+        "id": "bateria",
+        "emoji": "🔋",
+        "label": "Battery",
+        "why": "It stores electrical energy. It exists to power the tiny motor that moves the hands."
+      },
+      {
+        "id": "engrenagens",
+        "emoji": "⚙️",
+        "label": "Gears",
+        "why": "They're small toothed wheels that fit into each other. They exist to turn the motor's energy into the exact movement of the hands."
+      }
+    ]
+  },
+  {
+    "id": "bicicleta",
+    "emoji": "🚲",
+    "title": "Bicycle",
+    "summary": "A bicycle turns the strength of your legs into movement, using wheels, a chain, and brakes working as a team!",
+    "parts": [
+      {
+        "id": "rodas",
+        "emoji": "🛞",
+        "label": "Wheels",
+        "why": "They're round so they roll easily. They exist to carry the bike forward and keep it balanced."
+      },
+      {
+        "id": "pedais",
+        "emoji": "🦶",
+        "label": "Pedals",
+        "why": "They're where you put your feet to push. They exist to turn the strength of your legs into movement."
+      },
+      {
+        "id": "corrente",
+        "emoji": "🔗",
+        "label": "Chain",
+        "why": "It connects the pedals to the back wheel. It exists to carry the force from the pedals to the wheel, making it spin."
+      },
+      {
+        "id": "travoes",
+        "emoji": "🛑",
+        "label": "Brakes",
+        "why": "They grip the wheel when you pull the lever. They exist so you can stop the bike safely."
+      },
+      {
+        "id": "selim",
+        "emoji": "🪑",
+        "label": "Seat",
+        "why": "It's where you sit. It exists to give you comfortable support while you pedal."
+      }
+    ]
+  },
+  {
+    "id": "lanterna",
+    "emoji": "🔦",
+    "title": "Flashlight",
+    "summary": "A flashlight stores electrical energy and turns it into light, exactly when you need it!",
+    "parts": [
+      {
+        "id": "led",
+        "emoji": "💡",
+        "label": "LED bulb",
+        "why": "It's the part that shines. It exists to turn electrical energy into light."
+      },
+      {
+        "id": "pilhas",
+        "emoji": "🔋",
+        "label": "Batteries",
+        "why": "They store electrical energy inside them. They exist to power the whole flashlight."
+      },
+      {
+        "id": "interruptor",
+        "emoji": "🔘",
+        "label": "Switch",
+        "why": "It's the button you press. It exists to open or close the electrical circuit, turning the light on or off."
+      },
+      {
+        "id": "refletor",
+        "emoji": "🌟",
+        "label": "Reflector",
+        "why": "It's the shiny, cup-shaped piece around the bulb. It exists to gather all the light into one strong beam."
+      },
+      {
+        "id": "carcaca",
+        "emoji": "📦",
+        "label": "Case",
+        "why": "It's the outer body of the flashlight. It exists to protect all the parts inside and be easy to hold."
+      }
+    ]
+  },
+  {
+    "id": "telemovel",
+    "emoji": "📱",
+    "title": "Smartphone",
+    "summary": "A smartphone combines a screen, camera, speaker, and a tiny electronic brain to do many things at once!",
+    "parts": [
+      {
+        "id": "ecra",
+        "emoji": "🖼️",
+        "label": "Touchscreen",
+        "why": "It shows images and senses your finger. It exists so you can see and tap to give the phone commands."
+      },
+      {
+        "id": "bateria-tel",
+        "emoji": "🔋",
+        "label": "Battery",
+        "why": "It stores electrical energy inside. It exists so the phone works even far from a plug."
+      },
+      {
+        "id": "camara-tel",
+        "emoji": "📷",
+        "label": "Camera",
+        "why": "It captures the light coming through the tiny lens. It exists so you can take photos and videos."
+      },
+      {
+        "id": "altifalante",
+        "emoji": "🔊",
+        "label": "Speaker",
+        "why": "It makes the air vibrate. It exists to turn electrical signals into sound you can hear."
+      },
+      {
+        "id": "processador",
+        "emoji": "🧠",
+        "label": "Processor",
+        "why": "It's a tiny chip that does millions of calculations every second. It exists to be the brain that runs everything in the phone."
+      }
+    ]
+  },
+  {
+    "id": "camara",
+    "emoji": "📷",
+    "title": "Camera",
+    "summary": "A camera captures light in an instant and saves it as an image forever!",
+    "parts": [
+      {
+        "id": "lente",
+        "emoji": "🔍",
+        "label": "Lens",
+        "why": "It's the curved piece of glass at the front. It exists to bend light and focus the image sharply."
+      },
+      {
+        "id": "sensor",
+        "emoji": "🟩",
+        "label": "Sensor",
+        "why": "It sits behind the lens. It exists to turn the light it receives into digital information, creating the photo."
+      },
+      {
+        "id": "obturador",
+        "emoji": "⏱️",
+        "label": "Shutter",
+        "why": "It's a small curtain that opens and closes very fast. It exists to control how long light enters the camera."
+      },
+      {
+        "id": "botao",
+        "emoji": "🔴",
+        "label": "Shutter button",
+        "why": "It's the button you press with your finger. It exists to tell the camera the exact moment to take the photo."
+      },
+      {
+        "id": "cartao",
+        "emoji": "💾",
+        "label": "Memory card",
+        "why": "It's a small card inside the camera. It exists to store all the photos and videos you take."
+      }
+    ]
+  },
+  {
+    "id": "piano",
+    "emoji": "🎹",
+    "title": "Piano",
+    "summary": "A piano turns the touch of your fingers into hammers striking strings, creating music!",
+    "parts": [
+      {
+        "id": "teclas",
+        "emoji": "⬜",
+        "label": "Keys",
+        "why": "They're what you press with your fingers. They exist so you can give the command to play a note."
+      },
+      {
+        "id": "martelos",
+        "emoji": "🔨",
+        "label": "Hammers",
+        "why": "Each key moves a small hammer. They exist to strike the right strings and make the sound."
+      },
+      {
+        "id": "cordas-piano",
+        "emoji": "➰",
+        "label": "Strings",
+        "why": "They're tight wires inside the piano. They exist to vibrate when the hammer hits them, creating the sound of the note."
+      },
+      {
+        "id": "caixa",
+        "emoji": "📦",
+        "label": "Soundboard",
+        "why": "It's a large wooden board beneath the strings. It exists to make the strings' sound much louder and richer."
+      },
+      {
+        "id": "pedais-piano",
+        "emoji": "🦶",
+        "label": "Pedals",
+        "why": "You press them with your feet. They exist to let the sound last longer or become softer."
+      }
+    ]
+  },
+  {
+    "id": "aviao",
+    "emoji": "✈️",
+    "title": "Airplane",
+    "summary": "An airplane uses wings, engines, and a rudder working together to fly high up in the sky!",
+    "parts": [
+      {
+        "id": "asas",
+        "emoji": "🪽",
+        "label": "Wings",
+        "why": "They have a special curved shape on top. They exist to create lift and keep the plane in the air."
+      },
+      {
+        "id": "motores",
+        "emoji": "🌀",
+        "label": "Engines",
+        "why": "They hang below the wings. They exist to push the plane forward with a lot of force."
+      },
+      {
+        "id": "cauda",
+        "emoji": "🔺",
+        "label": "Tail and rudder",
+        "why": "It's at the back of the plane. It exists to keep the plane stable and help it turn sideways."
+      },
+      {
+        "id": "trem",
+        "emoji": "🛞",
+        "label": "Landing gear",
+        "why": "They're the wheels that come out from under the plane. They exist so the plane can take off and land safely."
+      },
+      {
+        "id": "cabine",
+        "emoji": "🧑‍✈️",
+        "label": "Cockpit",
+        "why": "It's at the front of the plane, full of buttons and screens. It exists for the pilots to control and check everything during the flight."
+      }
+    ]
+  }
+]

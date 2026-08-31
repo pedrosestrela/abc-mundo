@@ -1,0 +1,268 @@
+[
+  {
+    "id": "relogio",
+    "emoji": "⌚",
+    "title": "Uhr",
+    "summary": "Eine Uhr verbindet einen winzigen Motor, Zahnräder und Zeiger, um dir den ganzen Tag die Uhrzeit zu zeigen!",
+    "parts": [
+      {
+        "id": "mostrador",
+        "emoji": "🔵",
+        "label": "Zifferblatt",
+        "why": "Es ist die Vorderseite der Uhr, auf der Zahlen und Zeiger erscheinen. Es gibt sie, damit du die Uhrzeit klar ablesen kannst."
+      },
+      {
+        "id": "ponteiros",
+        "emoji": "➡️",
+        "label": "Zeiger",
+        "why": "Sie zeigen auf die Zahlen des Zifferblatts. Sie gibt es, damit ein Blick genügt, um die Uhrzeit zu wissen."
+      },
+      {
+        "id": "coroa",
+        "emoji": "🔘",
+        "label": "Krone",
+        "why": "Es ist der kleine Knopf an der Seite, den man dreht. Es gibt ihn, damit du die Uhrzeit einstellen oder die Uhr aufziehen kannst."
+      },
+      {
+        "id": "bateria",
+        "emoji": "🔋",
+        "label": "Batterie",
+        "why": "Sie speichert elektrische Energie. Es gibt sie, um den kleinen Motor anzutreiben, der die Zeiger bewegt."
+      },
+      {
+        "id": "engrenagens",
+        "emoji": "⚙️",
+        "label": "Zahnräder",
+        "why": "Es sind kleine gezahnte Räder, die ineinandergreifen. Es gibt sie, um die Energie des Motors in die genaue Bewegung der Zeiger umzuwandeln."
+      }
+    ]
+  },
+  {
+    "id": "bicicleta",
+    "emoji": "🚲",
+    "title": "Fahrrad",
+    "summary": "Ein Fahrrad verwandelt die Kraft deiner Beine in Bewegung, mit Rädern, Kette und Bremsen, die zusammenarbeiten!",
+    "parts": [
+      {
+        "id": "rodas",
+        "emoji": "🛞",
+        "label": "Räder",
+        "why": "Sie sind rund, damit sie leicht rollen. Es gibt sie, um das Fahrrad vorwärtszubewegen und im Gleichgewicht zu halten."
+      },
+      {
+        "id": "pedais",
+        "emoji": "🦶",
+        "label": "Pedale",
+        "why": "Hier stellst du deine Füße hin, um zu treten. Es gibt sie, um die Kraft deiner Beine in Bewegung umzuwandeln."
+      },
+      {
+        "id": "corrente",
+        "emoji": "🔗",
+        "label": "Kette",
+        "why": "Sie verbindet die Pedale mit dem Hinterrad. Es gibt sie, um die Kraft von den Pedalen zum Rad zu übertragen, damit es sich dreht."
+      },
+      {
+        "id": "travoes",
+        "emoji": "🛑",
+        "label": "Bremsen",
+        "why": "Sie klemmen das Rad, wenn du den Hebel ziehst. Es gibt sie, damit du sicher anhalten kannst."
+      },
+      {
+        "id": "selim",
+        "emoji": "🪑",
+        "label": "Sattel",
+        "why": "Hier sitzt du. Es gibt ihn, um dir beim Treten bequemen Halt zu geben."
+      }
+    ]
+  },
+  {
+    "id": "lanterna",
+    "emoji": "🔦",
+    "title": "Taschenlampe",
+    "summary": "Eine Taschenlampe speichert elektrische Energie und verwandelt sie genau dann in Licht, wenn du es brauchst!",
+    "parts": [
+      {
+        "id": "led",
+        "emoji": "💡",
+        "label": "LED-Lampe",
+        "why": "Es ist das Teil, das leuchtet. Es gibt sie, um elektrische Energie in Licht zu verwandeln."
+      },
+      {
+        "id": "pilhas",
+        "emoji": "🔋",
+        "label": "Batterien",
+        "why": "Sie speichern elektrische Energie. Es gibt sie, um die ganze Taschenlampe mit Energie zu versorgen."
+      },
+      {
+        "id": "interruptor",
+        "emoji": "🔘",
+        "label": "Schalter",
+        "why": "Es ist der Knopf, den du drückst. Es gibt ihn, um den Stromkreis zu öffnen oder zu schließen und das Licht an- oder auszuschalten."
+      },
+      {
+        "id": "refletor",
+        "emoji": "🌟",
+        "label": "Reflektor",
+        "why": "Es ist das glänzende, becherförmige Teil um die Lampe. Es gibt sie, um das ganze Licht zu einem starken Strahl zu bündeln."
+      },
+      {
+        "id": "carcaca",
+        "emoji": "📦",
+        "label": "Gehäuse",
+        "why": "Es ist die äußere Hülle der Taschenlampe. Es gibt sie, um alle Teile innen zu schützen und gut greifbar zu sein."
+      }
+    ]
+  },
+  {
+    "id": "telemovel",
+    "emoji": "📱",
+    "title": "Smartphone",
+    "summary": "Ein Smartphone vereint Bildschirm, Kamera, Lautsprecher und ein kleines elektronisches Gehirn, um vieles gleichzeitig zu tun!",
+    "parts": [
+      {
+        "id": "ecra",
+        "emoji": "🖼️",
+        "label": "Touchscreen",
+        "why": "Er zeigt Bilder und spürt deinen Finger. Es gibt ihn, damit du sehen und tippen kannst, um dem Handy Befehle zu geben."
+      },
+      {
+        "id": "bateria-tel",
+        "emoji": "🔋",
+        "label": "Akku",
+        "why": "Er speichert elektrische Energie im Inneren. Es gibt ihn, damit das Handy auch fern der Steckdose funktioniert."
+      },
+      {
+        "id": "camara-tel",
+        "emoji": "📷",
+        "label": "Kamera",
+        "why": "Sie fängt das Licht durch die winzige Linse ein. Es gibt sie, damit du Fotos und Videos machen kannst."
+      },
+      {
+        "id": "altifalante",
+        "emoji": "🔊",
+        "label": "Lautsprecher",
+        "why": "Er lässt die Luft schwingen. Es gibt ihn, um elektrische Signale in hörbaren Klang umzuwandeln."
+      },
+      {
+        "id": "processador",
+        "emoji": "🧠",
+        "label": "Prozessor",
+        "why": "Es ist ein winziger Chip, der Millionen Berechnungen pro Sekunde macht. Es gibt ihn, damit er das Gehirn ist, das alles im Handy steuert."
+      }
+    ]
+  },
+  {
+    "id": "camara",
+    "emoji": "📷",
+    "title": "Kamera",
+    "summary": "Eine Kamera fängt Licht in einem Augenblick ein und speichert es für immer als Bild!",
+    "parts": [
+      {
+        "id": "lente",
+        "emoji": "🔍",
+        "label": "Objektiv",
+        "why": "Es ist das gebogene Glas vorne. Es gibt es, um Licht zu brechen und das Bild scharf zu fokussieren."
+      },
+      {
+        "id": "sensor",
+        "emoji": "🟩",
+        "label": "Sensor",
+        "why": "Er sitzt hinter dem Objektiv. Es gibt ihn, um das empfangene Licht in digitale Informationen umzuwandeln und so das Foto zu erstellen."
+      },
+      {
+        "id": "obturador",
+        "emoji": "⏱️",
+        "label": "Verschluss",
+        "why": "Es ist ein kleiner Vorhang, der sehr schnell öffnet und schließt. Es gibt ihn, um zu steuern, wie lange Licht in die Kamera fällt."
+      },
+      {
+        "id": "botao",
+        "emoji": "🔴",
+        "label": "Auslöser",
+        "why": "Es ist der Knopf, den du drückst. Es gibt ihn, um der Kamera den genauen Moment für das Foto mitzuteilen."
+      },
+      {
+        "id": "cartao",
+        "emoji": "💾",
+        "label": "Speicherkarte",
+        "why": "Es ist eine kleine Karte in der Kamera. Es gibt sie, um alle deine Fotos und Videos zu speichern."
+      }
+    ]
+  },
+  {
+    "id": "piano",
+    "emoji": "🎹",
+    "title": "Klavier",
+    "summary": "Ein Klavier verwandelt die Berührung deiner Finger in Hämmer, die auf Saiten schlagen und Musik erzeugen!",
+    "parts": [
+      {
+        "id": "teclas",
+        "emoji": "⬜",
+        "label": "Tasten",
+        "why": "Sie sind das, was du mit den Fingern drückst. Es gibt sie, damit du den Befehl geben kannst, eine Note zu spielen."
+      },
+      {
+        "id": "martelos",
+        "emoji": "🔨",
+        "label": "Hämmer",
+        "why": "Jede Taste bewegt einen kleinen Hammer. Es gibt sie, um die richtigen Saiten zu schlagen und den Klang zu erzeugen."
+      },
+      {
+        "id": "cordas-piano",
+        "emoji": "➰",
+        "label": "Saiten",
+        "why": "Es sind gespannte Drähte im Klavier. Es gibt sie, um zu schwingen, wenn der Hammer sie trifft, und so den Klang der Note zu erzeugen."
+      },
+      {
+        "id": "caixa",
+        "emoji": "📦",
+        "label": "Resonanzboden",
+        "why": "Es ist eine große Holzplatte unter den Saiten. Es gibt sie, um den Klang der Saiten viel lauter und voller zu machen."
+      },
+      {
+        "id": "pedais-piano",
+        "emoji": "🦶",
+        "label": "Pedale",
+        "why": "Du drückst sie mit den Füßen. Es gibt sie, damit der Klang länger anhält oder leiser wird."
+      }
+    ]
+  },
+  {
+    "id": "aviao",
+    "emoji": "✈️",
+    "title": "Flugzeug",
+    "summary": "Ein Flugzeug nutzt Flügel, Triebwerke und ein Ruder, die zusammenarbeiten, um hoch am Himmel zu fliegen!",
+    "parts": [
+      {
+        "id": "asas",
+        "emoji": "🪽",
+        "label": "Flügel",
+        "why": "Sie haben oben eine besondere gebogene Form. Es gibt sie, um Auftrieb zu erzeugen und das Flugzeug in der Luft zu halten."
+      },
+      {
+        "id": "motores",
+        "emoji": "🌀",
+        "label": "Triebwerke",
+        "why": "Sie hängen unter den Flügeln. Es gibt sie, um das Flugzeug mit viel Kraft nach vorne zu schieben."
+      },
+      {
+        "id": "cauda",
+        "emoji": "🔺",
+        "label": "Leitwerk und Ruder",
+        "why": "Es befindet sich am Heck des Flugzeugs. Es gibt es, um das Flugzeug stabil zu halten und beim seitlichen Abbiegen zu helfen."
+      },
+      {
+        "id": "trem",
+        "emoji": "🛞",
+        "label": "Fahrwerk",
+        "why": "Es sind die Räder, die unter dem Flugzeug herauskommen. Es gibt sie, damit das Flugzeug sicher starten und landen kann."
+      },
+      {
+        "id": "cabine",
+        "emoji": "🧑‍✈️",
+        "label": "Cockpit",
+        "why": "Es ist vorne im Flugzeug, voller Knöpfe und Bildschirme. Es gibt es, damit die Piloten während des Fluges alles steuern und prüfen können."
+      }
+    ]
+  }
+]

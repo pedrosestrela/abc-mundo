@@ -1,0 +1,122 @@
+[
+  {
+    "id": "hearing-eyes-closed",
+    "sense": "hearing",
+    "emoji": "👂",
+    "supervision": "sozinho",
+    "text": "Schließe 20 Sekunden lang die Augen. Wie viele verschiedene Geräusche kannst du erkennen?",
+    "hook": "Wenn wir die Augen schließen, hören unsere Ohren noch genauer hin. Probieren wir es aus!"
+  },
+  {
+    "id": "hearing-loud-soft",
+    "sense": "hearing",
+    "emoji": "👂",
+    "supervision": "sozinho",
+    "text": "Finde zu Hause ein lautes und ein leises Geräusch. Welches gefällt dir besser?",
+    "hook": "Geräusche können laut wie ein Donner oder leise wie ein Flüstern sein."
+  },
+  {
+    "id": "hearing-nature",
+    "sense": "hearing",
+    "emoji": "👂",
+    "supervision": "sozinho",
+    "text": "Geh nach draußen oder ans Fenster und höre 1 Minute lang zu. Welche Naturgeräusche hörst du?",
+    "hook": "Wind, Vögel, Regen... die Natur hat ihr eigenes Orchester!"
+  },
+  {
+    "id": "smell-foods",
+    "sense": "smell",
+    "emoji": "👃",
+    "supervision": "adulto",
+    "text": "Versuche mit einem Erwachsenen, 3 Lebensmittel mit geschlossenen Augen am Geruch zu erkennen.",
+    "hook": "Deine Nase kann Tausende verschiedene Gerüche erkennen. Testen wir deine!"
+  },
+  {
+    "id": "smell-flowers",
+    "sense": "smell",
+    "emoji": "👃",
+    "supervision": "sozinho",
+    "text": "Rieche an einer Blume oder einer Frucht. Wie würdest du diesen Geruch beschreiben?",
+    "hook": "Jede Blume und jede Frucht hat ihren eigenen Geruch. Kannst du ihn beschreiben?"
+  },
+  {
+    "id": "smell-house",
+    "sense": "smell",
+    "emoji": "👃",
+    "supervision": "sozinho",
+    "text": "Gehe durch dein Zuhause und finde den schönsten und den seltsamsten Geruch.",
+    "hook": "Jeder Raum im Haus riecht anders. Werden wir zu Geruchsdetektiven!"
+  },
+  {
+    "id": "touch-textures",
+    "sense": "touch",
+    "emoji": "✋",
+    "supervision": "sozinho",
+    "text": "Finde zu Hause etwas Raues, etwas Weiches und etwas Kaltes.",
+    "hook": "Deine Hände können ganz unterschiedliche Texturen fühlen. Lass uns erkunden!"
+  },
+  {
+    "id": "touch-blind",
+    "sense": "touch",
+    "emoji": "✋",
+    "supervision": "adulto",
+    "text": "Bitte mit geschlossenen Augen einen Erwachsenen, dir 3 Gegenstände zum Anfassen und Erraten zu geben.",
+    "hook": "Ohne zu sehen, werden unsere Hände zu unseren Augen. Kannst du alles erraten?"
+  },
+  {
+    "id": "touch-temperature",
+    "sense": "touch",
+    "emoji": "✋",
+    "supervision": "adulto",
+    "text": "Berühre vorsichtig 3 Dinge mit unterschiedlichen Temperaturen: kalt, lauwarm und warm.",
+    "hook": "Deine Haut kann fühlen, ob etwas kalt oder warm ist. Bitte bei heißen Dingen immer einen Erwachsenen um Hilfe!"
+  },
+  {
+    "id": "taste-flavors",
+    "sense": "taste",
+    "emoji": "👅",
+    "supervision": "adulto",
+    "text": "Probiere mit einem Erwachsenen etwas Süßes, etwas Saures und etwas Salziges.",
+    "hook": "Deine Zunge kann verschiedene Geschmäcker schmecken: süß, sauer, salzig und bitter."
+  },
+  {
+    "id": "taste-eyes-closed",
+    "sense": "taste",
+    "emoji": "👅",
+    "supervision": "adulto",
+    "text": "Probiere mit geschlossenen Augen ein Lebensmittel, das ein Erwachsener auswählt, und errate, was es ist.",
+    "hook": "Ohne das Essen zu sehen, muss dein Geschmackssinn allein arbeiten. Glaubst du, du kannst es erraten?"
+  },
+  {
+    "id": "taste-describe",
+    "sense": "taste",
+    "emoji": "👅",
+    "supervision": "sozinho",
+    "text": "Probiere deine Lieblingsfrucht und beschreibe ihren Geschmack mit 3 Wörtern.",
+    "hook": "Einen Geschmack in Worte zu fassen ist eine lustige Herausforderung. Probieren wir es!"
+  },
+  {
+    "id": "sight-colors",
+    "sense": "sight",
+    "emoji": "👀",
+    "supervision": "sozinho",
+    "text": "Zähle, wie viele rote Gegenstände du gerade um dich herum sehen kannst.",
+    "hook": "Unsere Augen sehen Millionen von Farben, aber manchmal bemerken wir nur eine auf einmal."
+  },
+  {
+    "id": "sight-details",
+    "sense": "sight",
+    "emoji": "👀",
+    "supervision": "sozinho",
+    "text": "Betrachte 1 Minute lang genau ein Blatt oder einen Stein. Welche Details entdeckst du?",
+    "hook": "Wenn wir genau hinschauen, entdecken wir Details, die auf den ersten Blick unbemerkt bleiben."
+  },
+  {
+    "id": "sight-far-near",
+    "sense": "sight",
+    "emoji": "👀",
+    "supervision": "sozinho",
+    "text": "Finde etwas, das ganz weit weg ist, und etwas, das ganz nah bei dir ist.",
+    "hook": "Unsere Augen können sich auf nahe und ferne Dinge einstellen. Testen wir diese Magie!"
+  }
+]

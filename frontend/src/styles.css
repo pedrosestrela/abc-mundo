@@ -4446,3 +4446,53 @@ button.circuit-board-slot:disabled {
 .navbar-bedtime-toggle {
   margin: auto 4px auto 0;
 }
+
+/* --- "O Que Há Dentro?" teardown exploded-view diagram --- */
+.teardown-center-circle {
+  fill: var(--surface, #fff);
+  stroke: var(--text, #333);
+  stroke-opacity: 0.25;
+  stroke-width: 2;
+}
+
+.teardown-leader-line {
+  stroke: var(--text, #333);
+  stroke-opacity: 0.25;
+  stroke-width: 2;
+  transition: stroke 0.15s ease, stroke-opacity 0.15s ease;
+}
+
+.teardown-leader-line.active {
+  stroke: var(--pink, #ff6b9d);
+  stroke-opacity: 0.9;
+}
+
+.teardown-part-circle {
+  fill: var(--blue, #3aa0ff);
+  fill-opacity: 0.18;
+  stroke: var(--blue, #3aa0ff);
+  stroke-width: 2;
+  cursor: pointer;
+  transition: fill 0.15s ease, stroke 0.15s ease;
+}
+
+.teardown-part-circle.active {
+  fill: var(--pink, #ff6b9d);
+  fill-opacity: 0.35;
+  stroke: var(--pink, #ff6b9d);
+}
+
+.teardown-part-circle.explored:not(.active) {
+  fill: var(--green, #4caf50);
+  fill-opacity: 0.25;
+  stroke: var(--green, #4caf50);
+}
+
+.teardown-node:focus-visible .teardown-part-circle {
+  outline: 3px solid var(--yellow, #f5c542);
+  outline-offset: 2px;
+}
+
+.mission-grid-cards {
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}

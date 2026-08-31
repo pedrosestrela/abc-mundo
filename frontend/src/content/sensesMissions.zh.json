@@ -1,0 +1,122 @@
+[
+  {
+    "id": "hearing-eyes-closed",
+    "sense": "hearing",
+    "emoji": "👂",
+    "supervision": "sozinho",
+    "text": "闭上眼睛20秒。你能听出多少种不同的声音？",
+    "hook": "闭上眼睛时，耳朵会听得更仔细。我们来试试吧！"
+  },
+  {
+    "id": "hearing-loud-soft",
+    "sense": "hearing",
+    "emoji": "👂",
+    "supervision": "sozinho",
+    "text": "在家里找一个大声音和一个小声音。你更喜欢哪一个？",
+    "hook": "声音可以像雷声一样响亮，也可以像耳语一样轻柔。"
+  },
+  {
+    "id": "hearing-nature",
+    "sense": "hearing",
+    "emoji": "👂",
+    "supervision": "sozinho",
+    "text": "到外面或窗边听1分钟。你听到了哪些自然的声音？",
+    "hook": "风声、鸟叫、雨声……大自然有自己的乐队！"
+  },
+  {
+    "id": "smell-foods",
+    "sense": "smell",
+    "emoji": "👃",
+    "supervision": "adulto",
+    "text": "和大人一起，闭上眼睛，试着用鼻子分辨3种食物。",
+    "hook": "鼻子能分辨成千上万种气味。我们来测试一下你的鼻子吧！"
+  },
+  {
+    "id": "smell-flowers",
+    "sense": "smell",
+    "emoji": "👃",
+    "supervision": "sozinho",
+    "text": "闻一闻花或水果。你会怎么用自己的话来形容这个气味？",
+    "hook": "每种花和水果都有自己独特的气味。你能描述出来吗？"
+  },
+  {
+    "id": "smell-house",
+    "sense": "smell",
+    "emoji": "👃",
+    "supervision": "sozinho",
+    "text": "在家里走一走，找出最好闻和最奇怪的气味。",
+    "hook": "家里每个房间的气味都不一样。我们来当气味小侦探吧！"
+  },
+  {
+    "id": "touch-textures",
+    "sense": "touch",
+    "emoji": "✋",
+    "supervision": "sozinho",
+    "text": "在家里找一样粗糙的、一样柔软的和一样冰凉的东西。",
+    "hook": "你的手能感受到很多不同的质感。我们来探索一下吧！"
+  },
+  {
+    "id": "touch-blind",
+    "sense": "touch",
+    "emoji": "✋",
+    "supervision": "adulto",
+    "text": "闭上眼睛，请大人给你3样东西，摸一摸猜猜是什么。",
+    "hook": "看不见的时候，手就变成了我们的眼睛。你能全部猜对吗？"
+  },
+  {
+    "id": "touch-temperature",
+    "sense": "touch",
+    "emoji": "✋",
+    "supervision": "adulto",
+    "text": "小心地摸3样温度不同的东西：冷的、温的和热的。",
+    "hook": "皮肤能感觉到东西是冷还是热。摸热的东西时一定要请大人帮忙！"
+  },
+  {
+    "id": "taste-flavors",
+    "sense": "taste",
+    "emoji": "👅",
+    "supervision": "adulto",
+    "text": "和大人一起，尝一尝甜的、酸的和咸的东西。",
+    "hook": "舌头能尝出不同的味道：甜、酸、咸和苦。"
+  },
+  {
+    "id": "taste-eyes-closed",
+    "sense": "taste",
+    "emoji": "👅",
+    "supervision": "adulto",
+    "text": "闭上眼睛，尝一口大人选的食物，猜猜是什么。",
+    "hook": "看不到食物的时候，只能靠味觉来判断。你觉得自己能猜对吗？"
+  },
+  {
+    "id": "taste-describe",
+    "sense": "taste",
+    "emoji": "👅",
+    "supervision": "sozinho",
+    "text": "尝一尝你最喜欢的水果，用3个词形容它的味道。",
+    "hook": "用语言描述味道是个有趣的挑战。我们来试试吧！"
+  },
+  {
+    "id": "sight-colors",
+    "sense": "sight",
+    "emoji": "👀",
+    "supervision": "sozinho",
+    "text": "数一数你周围现在能看到多少个红色的东西。",
+    "hook": "我们的眼睛能看到数百万种颜色，但有时候我们一次只注意到一种。"
+  },
+  {
+    "id": "sight-details",
+    "sense": "sight",
+    "emoji": "👀",
+    "supervision": "sozinho",
+    "text": "仔细看一片叶子或一块石头1分钟。你发现了哪些细节？",
+    "hook": "仔细观察时，我们会发现第一眼没注意到的细节。"
+  },
+  {
+    "id": "sight-far-near",
+    "sense": "sight",
+    "emoji": "👀",
+    "supervision": "sozinho",
+    "text": "找一样离你很远的东西和一样离你很近的东西。",
+    "hook": "眼睛能看清近处和远处的东西。我们来测试一下这个神奇的本领吧！"
+  }
+]

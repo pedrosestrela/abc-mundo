@@ -1,0 +1,122 @@
+[
+  {
+    "id": "hearing-eyes-closed",
+    "sense": "hearing",
+    "emoji": "👂",
+    "supervision": "sozinho",
+    "text": "Chiudi gli occhi per 20 secondi. Quanti suoni diversi riesci a riconoscere?",
+    "hook": "Quando chiudiamo gli occhi, le orecchie diventano ancora più attente. Proviamo!"
+  },
+  {
+    "id": "hearing-loud-soft",
+    "sense": "hearing",
+    "emoji": "👂",
+    "supervision": "sozinho",
+    "text": "Trova in casa un suono forte e uno leggero. Quale ti piace di più?",
+    "hook": "I suoni possono essere forti come un tuono o leggeri come un sussurro."
+  },
+  {
+    "id": "hearing-nature",
+    "sense": "hearing",
+    "emoji": "👂",
+    "supervision": "sozinho",
+    "text": "Vai fuori o alla finestra e ascolta per 1 minuto. Quali suoni della natura senti?",
+    "hook": "Il vento, gli uccelli, la pioggia... la natura ha la sua orchestra!"
+  },
+  {
+    "id": "smell-foods",
+    "sense": "smell",
+    "emoji": "👃",
+    "supervision": "adulto",
+    "text": "Con un adulto, prova a riconoscere 3 alimenti dall'odore, a occhi chiusi.",
+    "hook": "Il tuo naso può riconoscere migliaia di odori diversi. Mettiamolo alla prova!"
+  },
+  {
+    "id": "smell-flowers",
+    "sense": "smell",
+    "emoji": "👃",
+    "supervision": "sozinho",
+    "text": "Annusa un fiore o un frutto. Come descriveresti quell'odore con parole tue?",
+    "hook": "Ogni fiore e ogni frutto ha un profumo tutto suo. Riesci a descriverlo?"
+  },
+  {
+    "id": "smell-house",
+    "sense": "smell",
+    "emoji": "👃",
+    "supervision": "sozinho",
+    "text": "Cammina per casa tua e trova l'odore più bello e quello più strano.",
+    "hook": "Ogni stanza della casa ha odori diversi. Diventiamo detective degli odori!"
+  },
+  {
+    "id": "touch-textures",
+    "sense": "touch",
+    "emoji": "✋",
+    "supervision": "sozinho",
+    "text": "Trova in casa qualcosa di ruvido, qualcosa di morbido e qualcosa di freddo.",
+    "hook": "Le tue mani possono sentire trame molto diverse. Esploriamo!"
+  },
+  {
+    "id": "touch-blind",
+    "sense": "touch",
+    "emoji": "✋",
+    "supervision": "adulto",
+    "text": "A occhi chiusi, chiedi a un adulto di darti 3 oggetti da toccare e indovinare.",
+    "hook": "Senza vedere, le mani diventano i nostri occhi. Riesci a indovinare tutto?"
+  },
+  {
+    "id": "touch-temperature",
+    "sense": "touch",
+    "emoji": "✋",
+    "supervision": "adulto",
+    "text": "Tocca con attenzione 3 cose con temperature diverse: freddo, tiepido e caldo.",
+    "hook": "La tua pelle sente se qualcosa è freddo o caldo. Chiedi sempre aiuto a un adulto con le cose calde!"
+  },
+  {
+    "id": "taste-flavors",
+    "sense": "taste",
+    "emoji": "👅",
+    "supervision": "adulto",
+    "text": "Con un adulto, assaggia qualcosa di dolce, qualcosa di acido e qualcosa di salato.",
+    "hook": "La tua lingua sente sapori diversi: dolce, acido, salato e amaro."
+  },
+  {
+    "id": "taste-eyes-closed",
+    "sense": "taste",
+    "emoji": "👅",
+    "supervision": "adulto",
+    "text": "A occhi chiusi, assaggia un alimento scelto da un adulto e prova a indovinare cos'è.",
+    "hook": "Senza vedere il cibo, il gusto deve lavorare da solo. Pensi di riuscire a indovinare?"
+  },
+  {
+    "id": "taste-describe",
+    "sense": "taste",
+    "emoji": "👅",
+    "supervision": "sozinho",
+    "text": "Assaggia il tuo frutto preferito e descrivi il suo sapore con 3 parole.",
+    "hook": "Descrivere un sapore a parole è una sfida divertente. Proviamo!"
+  },
+  {
+    "id": "sight-colors",
+    "sense": "sight",
+    "emoji": "👀",
+    "supervision": "sozinho",
+    "text": "Conta quanti oggetti rossi riesci a vedere intorno a te adesso.",
+    "hook": "I nostri occhi vedono milioni di colori, ma a volte ne notiamo solo uno alla volta."
+  },
+  {
+    "id": "sight-details",
+    "sense": "sight",
+    "emoji": "👀",
+    "supervision": "sozinho",
+    "text": "Osserva una foglia o un sasso per 1 minuto. Quali dettagli trovi?",
+    "hook": "Quando guardiamo con attenzione, scopriamo dettagli che a prima vista non si notano."
+  },
+  {
+    "id": "sight-far-near",
+    "sense": "sight",
+    "emoji": "👀",
+    "supervision": "sozinho",
+    "text": "Trova qualcosa molto lontano da te e qualcosa molto vicino a te.",
+    "hook": "I nostri occhi riescono a mettere a fuoco cose vicine e lontane. Mettiamo alla prova questa magia!"
+  }
+]
