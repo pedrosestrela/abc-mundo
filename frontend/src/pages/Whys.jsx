@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useLocation } from "react-router-dom";
 import { getWhys } from "../content/index.js";
 import { getLangPair, getProfile, pingProgress, exploreWhy, getExploredWhys, recordSkillEvent } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
 import HelpButton from "../components/HelpButton.jsx";
 import MascotBubble from "../components/mascots/MascotBubble.jsx";
+import TeachBackPrompt from "../components/TeachBackPrompt.jsx";
+import RelatedLinks from "../components/RelatedLinks.jsx";
 
 function shuffle(arr) {
   const copy = [...arr];
@@ -129,6 +132,20 @@ export default function Whys() {
     }));
   }
 
+  // Deep-link support for RelatedLinks: when another module navigates here
+  // with { state: { openId } } (e.g. Science's "flutua-afunda" card linking
+  // to the "barco" why), open that card and scroll it into view.
+  const location = useLocation();
+  React.useEffect(() => {
+    const openId = location.state?.openId;
+    if (openId && whyById[openId]) {
+      handleOpen(whyById[openId]);
+      const el = cardRefs.current[openId];
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [location.state]);
+
   return (
     <div className="page">
       <h1>{t("modules.whysTitle")} ❓</h1>
@@ -247,6 +264,21 @@ export default function Whys() {
                         })}
                       </div>
                     </div>
+                  )}
+
+                  {tierState.more && (
+                    <RelatedLinks module="whys" itemId={why.id} pair={pair} profile={profile} />
+                  )}
+
+                  {tierState.more && (
+                    <TeachBackPrompt
+                      module="whys"
+                      itemId={why.id}
+                      topicText={why.question}
+                      profile={profile}
+                      pair={pair}
+                      character="milo"
+                    />
                   )}
                 </div>
               )}

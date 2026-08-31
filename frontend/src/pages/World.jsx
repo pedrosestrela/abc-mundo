@@ -1,5 +1,6 @@
 import React, { Suspense, lazy, useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useLocation } from "react-router-dom";
 import { getCountries, getPackingChallenges, getTransportScenarios } from "../content/index.js";
 import { getLangPair, getProfile, getVisitedCountries, visitCountry, getDifficultyTier, pingProgress, recordSkillEvent } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
@@ -246,6 +247,22 @@ export default function World() {
     recordSkillEvent(profile?.name, "world-country-viewed", true);
     setVisitedVersion((v) => v + 1);
   }
+
+  // Deep-link support for RelatedLinks: arriving via { state: { openId } }
+  // (e.g. from HowMade's chocolate entry linking to São Tomé e Príncipe,
+  // the country where cacau actually grows) opens that country card once
+  // the country list has finished loading.
+  const location = useLocation();
+  useEffect(() => {
+    const openIso = location.state?.openId;
+    if (!openIso || countries.length === 0) return;
+    const target = countries.find((c) => c.iso === openIso);
+    if (target) {
+      setTab("explore");
+      openCountry(target);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [location.state, countries]);
 
   function startQuiz(mode) {
     setQuizMode(mode);

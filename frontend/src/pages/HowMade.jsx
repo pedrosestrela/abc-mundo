@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useLocation } from "react-router-dom";
 import { getHowMade, getFoodOrigin } from "../content/index.js";
 import { getLangPair, getProfile, pingProgress, recordSkillEvent } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
 import HelpButton from "../components/HelpButton.jsx";
+import TeachBackPrompt from "../components/TeachBackPrompt.jsx";
+import RelatedLinks from "../components/RelatedLinks.jsx";
 
 function shuffle(arr) {
   const copy = [...arr];
@@ -108,6 +111,18 @@ export default function HowMade() {
     }
   }
 
+  // Deep-link support for RelatedLinks: arriving via { state: { openId } }
+  // (e.g. from Science/Whys) opens the matching "how made" chain card.
+  const location = useLocation();
+  useEffect(() => {
+    const openId = location.state?.openId;
+    if (openId && howMade.some((h) => h.id === openId)) {
+      setTab("howMade");
+      setOpenHowMadeId(openId);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [location.state]);
+
   return (
     <div className="page">
       <h1>{t("modules.howMadeTitle")} 🏭</h1>
@@ -181,6 +196,15 @@ export default function HowMade() {
                   t={t}
                   skillId="how-made-quiz"
                   eventPrefix="how_made"
+                />
+                <RelatedLinks module="howMade" itemId={item.id} pair={pair} profile={profile} />
+                <TeachBackPrompt
+                  module="how-made"
+                  itemId={item.id}
+                  topicText={item.prompt}
+                  profile={profile}
+                  pair={pair}
+                  character="tomas"
                 />
                 <div>
                   <button

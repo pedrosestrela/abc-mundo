@@ -14,6 +14,7 @@ import {
 import SpeakButton from "../components/SpeakButton.jsx";
 import HelpButton from "../components/HelpButton.jsx";
 import AgeAdvisory from "../components/AgeAdvisory.jsx";
+import TeachBackPrompt from "../components/TeachBackPrompt.jsx";
 
 // This module leans on reading comprehension and abstract reasoning, so
 // (like Detective) it only really makes sense from tier 2 (age 7+) up.
@@ -266,6 +267,14 @@ function ExerciseRunner({ typeKey, items, tier, pair, profile, onExit }) {
           <p className="game-result">
             {t("modules.thinkingScore")}: {score} / {rounds.length}
           </p>
+          <TeachBackPrompt
+            module="thinking"
+            itemId={typeKey}
+            topicText={t(`modules.thinking_${typeKey}_Title`)}
+            profile={profile}
+            pair={pair}
+            character="vasco"
+          />
           <button type="button" className="big-btn" onClick={onExit}>
             {t("modules.thinkingBackToMenu")} 🧠
           </button>

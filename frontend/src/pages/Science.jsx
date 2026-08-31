@@ -1,11 +1,14 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useLocation } from "react-router-dom";
 import { getScience, getLabSimulators, getLabEngineering } from "../content/index.js";
 import { getLangPair, getProfile, getExploredScience, exploreScienceCard, recordSkillEvent, pingProgress, getDifficultyTier } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
 import HelpButton from "../components/HelpButton.jsx";
 import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
 import MascotBubble from "../components/mascots/MascotBubble.jsx";
+import TeachBackPrompt from "../components/TeachBackPrompt.jsx";
+import RelatedLinks from "../components/RelatedLinks.jsx";
 
 const TOPIC_ICONS = {
   biology: "🧬",
@@ -566,6 +569,19 @@ export default function Science() {
 
   const explored = useMemo(() => getExploredScience(profile?.name), [profile?.name, version]);
 
+  // Deep-link support for RelatedLinks: opens a specific card and switches
+  // to the "facts" tab when arriving via { state: { openId } } from
+  // e.g. Whys' "chuva" question linking to the "ciclo-agua" card.
+  const location = useLocation();
+  useEffect(() => {
+    const openId = location.state?.openId;
+    if (openId && cards.some((c) => c.id === openId)) {
+      setTab("facts");
+      setOpenId(openId);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [location.state]);
+
   function handleOpen(card) {
     setOpenId(card.id === openId ? null : card.id);
     setPrediction(null);
@@ -660,6 +676,15 @@ export default function Science() {
                       🏠 {t("modules.scienceTryAtHome")}: {card.tryAtHome}
                     </p>
                     <SpeakButton text={`${card.explanation} ${card.tryAtHome}`} langCode={pair.mother} />
+                    <RelatedLinks module="science" itemId={card.id} pair={pair} profile={profile} />
+                    <TeachBackPrompt
+                      module="science"
+                      itemId={card.id}
+                      topicText={card.question}
+                      profile={profile}
+                      pair={pair}
+                      character="nina"
+                    />
                     <div>
                       <button type="button" className="big-btn" onClick={() => handleOpen(card)}>
                         ➡️

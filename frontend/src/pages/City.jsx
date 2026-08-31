@@ -4,6 +4,7 @@ import { getHouseSystems, getCitySystems } from "../content/index.js";
 import { getLangPair, getProfile, pingProgress, recordSkillEvent } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
 import HelpButton from "../components/HelpButton.jsx";
+import TeachBackPrompt from "../components/TeachBackPrompt.jsx";
 
 function shuffle(arr) {
   const copy = [...arr];
@@ -183,6 +184,14 @@ export default function City() {
                   skillId="city-house-quiz"
                   eventPrefix="house"
                 />
+                <TeachBackPrompt
+                  module="city"
+                  itemId={item.id}
+                  topicText={item.prompt}
+                  profile={profile}
+                  pair={pair}
+                  character="pipa"
+                />
                 <div>
                   <button
                     type="button"
@@ -246,6 +255,14 @@ export default function City() {
                   t={t}
                   skillId="city-city-quiz"
                   eventPrefix="city"
+                />
+                <TeachBackPrompt
+                  module="city"
+                  itemId={item.id}
+                  topicText={item.prompt}
+                  profile={profile}
+                  pair={pair}
+                  character="pipa"
                 />
                 <div>
                   <button

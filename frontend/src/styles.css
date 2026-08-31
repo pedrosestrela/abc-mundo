@@ -2734,6 +2734,94 @@ body {
   border-color: var(--green);
 }
 
+/* --- "Ensina-me Tu" teach-back ritual --- */
+.teach-back-prompt {
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 2px dashed rgba(0, 0, 0, 0.12);
+  text-align: left;
+}
+
+.teach-back-heading {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.teach-back-start-btn,
+.teach-back-retry-btn {
+  margin-top: 6px;
+}
+
+.teach-back-listening {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 0;
+}
+
+.teach-back-mic-pulse {
+  font-size: 2.2rem;
+  animation: teach-back-pulse 1.1s ease-in-out infinite;
+}
+
+@keyframes teach-back-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.75;
+  }
+  50% {
+    transform: scale(1.25);
+    opacity: 1;
+  }
+}
+
+.teach-back-done-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.teach-back-done-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 600;
+}
+
+/* --- "Ligações" cross-subject related links --- */
+.related-links {
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 2px dashed rgba(0, 0, 0, 0.12);
+  text-align: left;
+}
+
+.related-links-heading {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.related-links-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.related-links-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.95rem;
+  padding: 8px 12px;
+}
+
+.related-links-emoji {
+  font-size: 1.2rem;
+}
+
 .detective-statement-list {
   list-style: none;
   margin: 8px 0;
