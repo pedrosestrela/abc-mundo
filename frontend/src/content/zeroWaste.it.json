@@ -1,0 +1,178 @@
+[
+  {
+    "id": "shopping-bags",
+    "icon": "🛍️",
+    "scene": "La famiglia va a fare la spesa al supermercato.",
+    "prompt": "Portano borse riutilizzabili da casa o chiedono sacchetti nuovi al negozio?",
+    "options": [
+      {
+        "id": "reusable",
+        "icon": "🧺",
+        "label": "Borse riutilizzabili",
+        "best": true
+      },
+      {
+        "id": "new",
+        "icon": "🛍️",
+        "label": "Sacchetti nuovi",
+        "best": false
+      }
+    ],
+    "feedbackBest": "Ottima scelta! Una borsa riutilizzabile può essere usata centinaia di volte invece di finire subito nella spazzatura.",
+    "feedbackGentle": "Bel tentativo! Le borse riutilizzabili riducono ancora di più i rifiuti: vuoi riprovare?"
+  },
+  {
+    "id": "leftovers",
+    "icon": "🍲",
+    "scene": "È avanzato del buon cibo dalla cena di ieri.",
+    "prompt": "Conservano gli avanzi per domani o li buttano subito via?",
+    "options": [
+      {
+        "id": "keep",
+        "icon": "🥡",
+        "label": "Conservare per domani",
+        "best": true
+      },
+      {
+        "id": "toss",
+        "icon": "🗑️",
+        "label": "Buttare via",
+        "best": false
+      }
+    ],
+    "feedbackBest": "Ottima scelta! Conservare gli avanzi in un contenitore li trasforma in un nuovo pasto, senza sprecare nulla.",
+    "feedbackGentle": "Bel tentativo! Conservare gli avanzi evita lo spreco di cibo: vuoi riprovare?"
+  },
+  {
+    "id": "bruised-fruit",
+    "icon": "🍎",
+    "scene": "Una mela nel cestino della frutta ha una piccola macchia, ma dentro è ancora buona.",
+    "prompt": "Tagliano la parte macchiata e mangiano il resto, oppure buttano via tutta la mela?",
+    "options": [
+      {
+        "id": "eat",
+        "icon": "🍏",
+        "label": "Tagliare e mangiare il resto",
+        "best": true
+      },
+      {
+        "id": "toss",
+        "icon": "🗑️",
+        "label": "Buttare via tutto",
+        "best": false
+      }
+    ],
+    "feedbackBest": "Ottima scelta! Una piccola macchia non rovina tutto il frutto: così non si spreca cibo buono.",
+    "feedbackGentle": "Bel tentativo! Usare la parte buona del frutto riduce lo spreco: vuoi riprovare?"
+  },
+  {
+    "id": "brushing-teeth",
+    "icon": "🪥",
+    "scene": "È ora di lavarsi i denti prima di dormire.",
+    "prompt": "Lasciano il rubinetto aperto tutto il tempo o lo chiudono mentre si lavano i denti?",
+    "options": [
+      {
+        "id": "off",
+        "icon": "🚱",
+        "label": "Chiudere il rubinetto",
+        "best": true
+      },
+      {
+        "id": "on",
+        "icon": "🚰",
+        "label": "Lasciare il rubinetto aperto",
+        "best": false
+      }
+    ],
+    "feedbackBest": "Ottima scelta! Chiudere il rubinetto mentre ci si lava i denti risparmia molti litri d'acqua.",
+    "feedbackGentle": "Bel tentativo! Chiudere il rubinetto mentre ci si lava i denti risparmia ancora più acqua: vuoi riprovare?"
+  },
+  {
+    "id": "empty-room",
+    "icon": "💡",
+    "scene": "Da un'ora non c'è nessuno in soggiorno, ma la luce è ancora accesa.",
+    "prompt": "Spengono la luce della stanza vuota o la lasciano accesa?",
+    "options": [
+      {
+        "id": "off",
+        "icon": "🌙",
+        "label": "Spegnere la luce",
+        "best": true
+      },
+      {
+        "id": "on",
+        "icon": "💡",
+        "label": "Lasciare la luce accesa",
+        "best": false
+      }
+    ],
+    "feedbackBest": "Ottima scelta! Spegnere la luce di una stanza vuota risparmia energia senza costare nulla a nessuno.",
+    "feedbackGentle": "Bel tentativo! Spegnere la luce quando non c'è nessuno risparmia energia: vuoi riprovare?"
+  },
+  {
+    "id": "charger",
+    "icon": "🔌",
+    "scene": "Il caricabatterie del telefono ha finito di caricare da tempo.",
+    "prompt": "Staccano il caricabatterie o lo lasciano attaccato senza motivo?",
+    "options": [
+      {
+        "id": "unplug",
+        "icon": "🔋",
+        "label": "Staccarlo",
+        "best": true
+      },
+      {
+        "id": "leave",
+        "icon": "🔌",
+        "label": "Lasciarlo attaccato",
+        "best": false
+      }
+    ],
+    "feedbackBest": "Ottima scelta! Staccare i caricabatterie non in uso evita di sprecare energia inutilmente.",
+    "feedbackGentle": "Bel tentativo! Staccare il caricabatterie quando non serve risparmia energia: vuoi riprovare?"
+  },
+  {
+    "id": "scrap-paper",
+    "icon": "📝",
+    "scene": "Serve un pezzo di carta per fare un disegno veloce.",
+    "prompt": "Usano il retro di un foglio già usato o ne prendono uno nuovo e pulito?",
+    "options": [
+      {
+        "id": "reuse",
+        "icon": "♻️",
+        "label": "Usare il retro di un foglio usato",
+        "best": true
+      },
+      {
+        "id": "fresh",
+        "icon": "📄",
+        "label": "Prendere un foglio nuovo",
+        "best": false
+      }
+    ],
+    "feedbackBest": "Ottima scelta! Riutilizzare il retro di un foglio usato risparmia carta e alberi.",
+    "feedbackGentle": "Bel tentativo! Riutilizzare la carta da riciclo riduce ancora di più lo spreco: vuoi riprovare?"
+  },
+  {
+    "id": "fruit-peels",
+    "icon": "🍌",
+    "scene": "Dopo la merenda, restano bucce di banana e di frutta sul tavolo.",
+    "prompt": "Mettono le bucce nella spazzatura normale o nel compost/organico?",
+    "options": [
+      {
+        "id": "compost",
+        "icon": "🌱",
+        "label": "Nel compost",
+        "best": true
+      },
+      {
+        "id": "trash",
+        "icon": "🗑️",
+        "label": "Nella spazzatura normale",
+        "best": false
+      }
+    ],
+    "feedbackBest": "Ottima scelta! Le bucce diventano concime nel compost invece di occupare spazio nella spazzatura.",
+    "feedbackGentle": "Bel tentativo! Separare le bucce per il compost riduce ancora di più i rifiuti: vuoi riprovare?"
+  }
+]

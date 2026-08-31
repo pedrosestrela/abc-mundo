@@ -1,0 +1,178 @@
+[
+  {
+    "id": "shopping-bags",
+    "icon": "🛍️",
+    "scene": "La famille va faire les courses au supermarché.",
+    "prompt": "Apportent-ils des sacs réutilisables de la maison ou demandent-ils des sacs neufs au magasin ?",
+    "options": [
+      {
+        "id": "reusable",
+        "icon": "🧺",
+        "label": "Sacs réutilisables",
+        "best": true
+      },
+      {
+        "id": "new",
+        "icon": "🛍️",
+        "label": "Sacs neufs",
+        "best": false
+      }
+    ],
+    "feedbackBest": "Excellent choix ! Un sac réutilisable peut servir des centaines de fois au lieu de finir tout de suite à la poubelle.",
+    "feedbackGentle": "Bon essai ! Les sacs réutilisables réduisent encore plus les déchets — tu veux réessayer ?"
+  },
+  {
+    "id": "leftovers",
+    "icon": "🍲",
+    "scene": "Il reste de la bonne nourriture du dîner d'hier.",
+    "prompt": "Gardent-ils les restes pour demain ou les jettent-ils tout de suite ?",
+    "options": [
+      {
+        "id": "keep",
+        "icon": "🥡",
+        "label": "Garder pour demain",
+        "best": true
+      },
+      {
+        "id": "toss",
+        "icon": "🗑️",
+        "label": "Jeter",
+        "best": false
+      }
+    ],
+    "feedbackBest": "Excellent choix ! Ranger les restes dans une boîte en fait un nouveau repas, sans rien gaspiller.",
+    "feedbackGentle": "Bon essai ! Garder les restes évite le gaspillage alimentaire — tu veux réessayer ?"
+  },
+  {
+    "id": "bruised-fruit",
+    "icon": "🍎",
+    "scene": "Une pomme dans la corbeille a une petite tache, mais elle est bonne à l'intérieur.",
+    "prompt": "Coupent-ils la partie tachée pour manger le reste, ou jettent-ils toute la pomme ?",
+    "options": [
+      {
+        "id": "eat",
+        "icon": "🍏",
+        "label": "Couper et manger le reste",
+        "best": true
+      },
+      {
+        "id": "toss",
+        "icon": "🗑️",
+        "label": "Tout jeter",
+        "best": false
+      }
+    ],
+    "feedbackBest": "Excellent choix ! Une petite tache n'abîme pas tout le fruit — ainsi, aucune bonne nourriture n'est gaspillée.",
+    "feedbackGentle": "Bon essai ! Utiliser la bonne partie du fruit réduit le gaspillage — tu veux réessayer ?"
+  },
+  {
+    "id": "brushing-teeth",
+    "icon": "🪥",
+    "scene": "C'est l'heure de se brosser les dents avant de dormir.",
+    "prompt": "Laissent-ils le robinet ouvert tout le temps ou le ferment-ils en se brossant les dents ?",
+    "options": [
+      {
+        "id": "off",
+        "icon": "🚱",
+        "label": "Fermer le robinet",
+        "best": true
+      },
+      {
+        "id": "on",
+        "icon": "🚰",
+        "label": "Laisser le robinet ouvert",
+        "best": false
+      }
+    ],
+    "feedbackBest": "Excellent choix ! Fermer le robinet en se brossant les dents économise beaucoup de litres d'eau.",
+    "feedbackGentle": "Bon essai ! Fermer le robinet en se brossant économise encore plus d'eau — tu veux réessayer ?"
+  },
+  {
+    "id": "empty-room",
+    "icon": "💡",
+    "scene": "Personne n'est dans le salon depuis une heure, mais la lumière est encore allumée.",
+    "prompt": "Éteignent-ils la lumière de la pièce vide ou la laissent-ils allumée ?",
+    "options": [
+      {
+        "id": "off",
+        "icon": "🌙",
+        "label": "Éteindre la lumière",
+        "best": true
+      },
+      {
+        "id": "on",
+        "icon": "💡",
+        "label": "Laisser la lumière allumée",
+        "best": false
+      }
+    ],
+    "feedbackBest": "Excellent choix ! Éteindre la lumière d'une pièce vide économise de l'énergie sans rien coûter à personne.",
+    "feedbackGentle": "Bon essai ! Éteindre la lumière quand personne n'est là économise de l'énergie — tu veux réessayer ?"
+  },
+  {
+    "id": "charger",
+    "icon": "🔌",
+    "scene": "Le chargeur du téléphone a fini de charger depuis longtemps.",
+    "prompt": "Débranchent-ils le chargeur ou le laissent-ils branché sans besoin ?",
+    "options": [
+      {
+        "id": "unplug",
+        "icon": "🔋",
+        "label": "Débrancher",
+        "best": true
+      },
+      {
+        "id": "leave",
+        "icon": "🔌",
+        "label": "Le laisser branché",
+        "best": false
+      }
+    ],
+    "feedbackBest": "Excellent choix ! Débrancher les chargeurs inutilisés évite de gaspiller de l'énergie pour rien.",
+    "feedbackGentle": "Bon essai ! Débrancher le chargeur quand il n'est pas nécessaire économise de l'énergie — tu veux réessayer ?"
+  },
+  {
+    "id": "scrap-paper",
+    "icon": "📝",
+    "scene": "Il faut un bout de papier pour faire un dessin rapide.",
+    "prompt": "Utilisent-ils le dos d'une feuille déjà utilisée ou prennent-ils une feuille neuve ?",
+    "options": [
+      {
+        "id": "reuse",
+        "icon": "♻️",
+        "label": "Utiliser le dos d'une feuille usée",
+        "best": true
+      },
+      {
+        "id": "fresh",
+        "icon": "📄",
+        "label": "Prendre une feuille neuve",
+        "best": false
+      }
+    ],
+    "feedbackBest": "Excellent choix ! Réutiliser le dos d'une feuille usée économise du papier et des arbres.",
+    "feedbackGentle": "Bon essai ! Réutiliser du papier brouillon réduit encore plus le gaspillage — tu veux réessayer ?"
+  },
+  {
+    "id": "fruit-peels",
+    "icon": "🍌",
+    "scene": "Après le goûter, il reste des épluchures de banane et de fruits sur la table.",
+    "prompt": "Mettent-ils les épluchures dans la poubelle normale ou dans le compost/bio-déchets ?",
+    "options": [
+      {
+        "id": "compost",
+        "icon": "🌱",
+        "label": "Dans le compost",
+        "best": true
+      },
+      {
+        "id": "trash",
+        "icon": "🗑️",
+        "label": "Dans la poubelle normale",
+        "best": false
+      }
+    ],
+    "feedbackBest": "Excellent choix ! Les épluchures deviennent de l'engrais dans le compost au lieu d'encombrer la poubelle.",
+    "feedbackGentle": "Bon essai ! Trier les épluchures dans le compost réduit encore plus les déchets — tu veux réessayer ?"
+  }
+]

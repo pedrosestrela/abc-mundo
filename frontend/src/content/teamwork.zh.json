@@ -1,0 +1,72 @@
+{
+  "characters": [
+    {
+      "id": "tomas",
+      "name": "Tomás",
+      "icon": "💪",
+      "trait": "力气很大"
+    },
+    {
+      "id": "ines",
+      "name": "Inês",
+      "icon": "🎨",
+      "trait": "画画很棒"
+    },
+    {
+      "id": "rui",
+      "name": "Rui",
+      "icon": "🏃",
+      "trait": "跑得很快"
+    },
+    {
+      "id": "maria",
+      "name": "Maria",
+      "icon": "📋",
+      "trait": "很擅长组织安排"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "heavy-boxes",
+      "icon": "📦",
+      "task": "把沉重的搬家箱子搬到车上。",
+      "correct": "tomas",
+      "explanation": "托马斯力气很大，所以他最适合搬运重物。"
+    },
+    {
+      "id": "event-poster",
+      "icon": "🖼️",
+      "task": "为学校派对画海报。",
+      "correct": "ines",
+      "explanation": "伊内斯画画很棒，所以她能画出最漂亮的海报。"
+    },
+    {
+      "id": "urgent-message",
+      "icon": "✉️",
+      "task": "把紧急口信迅速送到走廊尽头的房间。",
+      "correct": "rui",
+      "explanation": "鲁伊跑得很快，所以他能最快到达那里。"
+    },
+    {
+      "id": "group-schedule",
+      "icon": "🗓️",
+      "task": "为小组项目安排谁在什么时间做什么。",
+      "correct": "maria",
+      "explanation": "玛丽亚很擅长组织安排，所以她能为大家制定清晰的计划。"
+    },
+    {
+      "id": "move-table",
+      "icon": "🪑",
+      "task": "把一张沉重的桌子搬到房间的另一边。",
+      "correct": "tomas",
+      "explanation": "托马斯力气很大，所以他能轻松搬动桌子。"
+    },
+    {
+      "id": "decorate-drawing",
+      "icon": "🖍️",
+      "task": "画一幅漂亮的画来装饰教室。",
+      "correct": "ines",
+      "explanation": "伊内斯画画很棒，所以她画出的画最漂亮。"
+    }
+  ]
+}

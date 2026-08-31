@@ -1506,6 +1506,129 @@ export function completeExcavation(profileName, scenarioId) {
   return all[name];
 }
 
+// --- Desafio Zero Desperdício ---
+// Tracks which zero-waste scenario ids the child has resolved with the best
+// (greenest) choice, mirroring exploreComputingCard/getExploredComputing's
+// id-list shape. Picking the non-best option is never recorded as a
+// "failure" anywhere — the whole module has no wrong-answer penalty, only a
+// gentle nudge to try again, so there's nothing here to track for that case.
+
+const COMPLETED_ZERO_WASTE_KEY = "abcmundo.completedZeroWaste";
+
+function loadCompletedZeroWaste() {
+  try {
+    const raw = localStorage.getItem(COMPLETED_ZERO_WASTE_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveCompletedZeroWaste(all) {
+  try {
+    localStorage.setItem(COMPLETED_ZERO_WASTE_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getCompletedZeroWaste(profileName) {
+  const all = loadCompletedZeroWaste();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function completeZeroWasteScenario(profileName, scenarioId) {
+  const name = profileName || "Explorer";
+  const all = loadCompletedZeroWaste();
+  const done = new Set(all[name] || []);
+  done.add(scenarioId);
+  all[name] = Array.from(done);
+  saveCompletedZeroWaste(all);
+  return all[name];
+}
+
+// --- Trabalho em Equipa ---
+// Tracks which cooperation scenario ids the child has solved (assigned the
+// best-matching character to the task), same id-list shape as above.
+
+const COMPLETED_TEAMWORK_KEY = "abcmundo.completedTeamwork";
+
+function loadCompletedTeamwork() {
+  try {
+    const raw = localStorage.getItem(COMPLETED_TEAMWORK_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveCompletedTeamwork(all) {
+  try {
+    localStorage.setItem(COMPLETED_TEAMWORK_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getCompletedTeamwork(profileName) {
+  const all = loadCompletedTeamwork();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function completeTeamworkScenario(profileName, scenarioId) {
+  const name = profileName || "Explorer";
+  const all = loadCompletedTeamwork();
+  const done = new Set(all[name] || []);
+  done.add(scenarioId);
+  all[name] = Array.from(done);
+  saveCompletedTeamwork(all);
+  return all[name];
+}
+
+// --- Criador Livre: free-writing story starters ---
+// No scoring, no "correct" story — just an append-only list of story drafts
+// the child has written from a rotating prompt, per profile. Mirrors the
+// Nature Diary / Moon Diary append-only entry shape above.
+
+const FREE_STORIES_KEY = "abcmundo.freeStories";
+
+function loadFreeStories() {
+  try {
+    const raw = localStorage.getItem(FREE_STORIES_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveFreeStories(all) {
+  try {
+    localStorage.setItem(FREE_STORIES_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getFreeStories(profileName) {
+  const all = loadFreeStories();
+  return all[profileName || "Explorer"] || [];
+}
+
+// entry: { id, promptId, text, createdAt }
+export function saveFreeStory(profileName, entry) {
+  const name = profileName || "Explorer";
+  const all = loadFreeStories();
+  const list = all[name] || [];
+  const withId = {
+    id: entry.id || `fs-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+    createdAt: entry.createdAt || Date.now(),
+    ...entry,
+  };
+  all[name] = [withId, ...list];
+  saveFreeStories(all);
+  return all[name];
+}
+
 // --- Backup / device-to-device sync ---
 // Exports every localStorage key this file owns (all profiles + all their
 // per-module progress data) into one plain JSON-serializable object, and
@@ -1545,6 +1668,9 @@ const SYNC_STORAGE_KEYS = [
   COMPLETED_CIRCUITS_KEY,
   EXPLORED_MUSEUM_EXHIBITS_KEY,
   COMPLETED_EXCAVATIONS_KEY,
+  COMPLETED_ZERO_WASTE_KEY,
+  COMPLETED_TEAMWORK_KEY,
+  FREE_STORIES_KEY,
 ];
 
 // Gathers every profile's full data from this device into one JSON-friendly

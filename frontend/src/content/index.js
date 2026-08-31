@@ -382,6 +382,22 @@ import archaeologyZh from "./archaeology.zh.json";
 import archaeologyEs from "./archaeology.es.json";
 import archaeologyIt from "./archaeology.it.json";
 
+import zeroWastePt from "./zeroWaste.pt.json";
+import zeroWasteEn from "./zeroWaste.en.json";
+import zeroWasteDe from "./zeroWaste.de.json";
+import zeroWasteFr from "./zeroWaste.fr.json";
+import zeroWasteZh from "./zeroWaste.zh.json";
+import zeroWasteEs from "./zeroWaste.es.json";
+import zeroWasteIt from "./zeroWaste.it.json";
+
+import teamworkPt from "./teamwork.pt.json";
+import teamworkEn from "./teamwork.en.json";
+import teamworkDe from "./teamwork.de.json";
+import teamworkFr from "./teamwork.fr.json";
+import teamworkZh from "./teamwork.zh.json";
+import teamworkEs from "./teamwork.es.json";
+import teamworkIt from "./teamwork.it.json";
+
 // Re-exported so existing `import { SUPPORTED_LANGUAGES } from "../content"`
 // call sites keep working unchanged. See content/languages.js for why the
 // actual list lives in its own module.
@@ -444,6 +460,8 @@ const MUSEUM = { pt: museumPt, en: museumEn, de: museumDe, fr: museumFr, zh: mus
 const ARCHAEOLOGY = { pt: archaeologyPt, en: archaeologyEn, de: archaeologyDe, fr: archaeologyFr, zh: archaeologyZh, es: archaeologyEs, it: archaeologyIt };
 const HUMAN_BODY = { pt: humanBodyPt, en: humanBodyEn, de: humanBodyDe, fr: humanBodyFr, zh: humanBodyZh, es: humanBodyEs, it: humanBodyIt };
 const TOY_HOSPITAL = { pt: toyHospitalPt, en: toyHospitalEn, de: toyHospitalDe, fr: toyHospitalFr, zh: toyHospitalZh, es: toyHospitalEs, it: toyHospitalIt };
+const ZERO_WASTE = { pt: zeroWastePt, en: zeroWasteEn, de: zeroWasteDe, fr: zeroWasteFr, zh: zeroWasteZh, es: zeroWasteEs, it: zeroWasteIt };
+const TEAMWORK = { pt: teamworkPt, en: teamworkEn, de: teamworkDe, fr: teamworkFr, zh: teamworkZh, es: teamworkEs, it: teamworkIt };
 
 // Normalizes zh's different shape ({hanzi,...}) to the same shape used by
 // the Latin-alphabet languages ({letter, lower, upper, exampleWord, emoji}).
@@ -700,6 +718,19 @@ export function getHumanBody(langCode) {
 
 export function getToyHospital(langCode) {
   return TOY_HOSPITAL[langCode] || TOY_HOSPITAL.pt;
+}
+
+// Desafio Zero Desperdício: a fictional family's day, framed as gentle,
+// guilt-free waste-reduction decision points (food, packaging, water,
+// electricity). Falls back to pt like the other scenario-based content types.
+export function getZeroWaste(langCode) {
+  return ZERO_WASTE[langCode] || ZERO_WASTE.pt;
+}
+
+// Trabalho em Equipa: cooperation scenarios where the child matches a
+// fictional character's strength to a task's needs. Falls back to pt.
+export function getTeamwork(langCode) {
+  return TEAMWORK[langCode] || TEAMWORK.pt;
 }
 
 // Countries are language-agnostic in shape (name/fact are per-language

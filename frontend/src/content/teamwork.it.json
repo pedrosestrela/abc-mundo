@@ -1,0 +1,72 @@
+{
+  "characters": [
+    {
+      "id": "tomas",
+      "name": "Tomás",
+      "icon": "💪",
+      "trait": "è molto forte"
+    },
+    {
+      "id": "ines",
+      "name": "Inês",
+      "icon": "🎨",
+      "trait": "disegna molto bene"
+    },
+    {
+      "id": "rui",
+      "name": "Rui",
+      "icon": "🏃",
+      "trait": "corre molto veloce"
+    },
+    {
+      "id": "maria",
+      "name": "Maria",
+      "icon": "📋",
+      "trait": "è bravissima a organizzare"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "heavy-boxes",
+      "icon": "📦",
+      "task": "Portare scatoloni pesanti del trasloco fino all'auto.",
+      "correct": "tomas",
+      "explanation": "Tomás è molto forte, quindi è il più adatto a sollevare cose pesanti."
+    },
+    {
+      "id": "event-poster",
+      "icon": "🖼️",
+      "task": "Disegnare il cartellone per la festa della scuola.",
+      "correct": "ines",
+      "explanation": "Inês disegna molto bene, quindi può realizzare il cartellone più bello."
+    },
+    {
+      "id": "urgent-message",
+      "icon": "✉️",
+      "task": "Portare velocemente un messaggio urgente nella stanza in fondo al corridoio.",
+      "correct": "rui",
+      "explanation": "Rui corre molto veloce, quindi è lui ad arrivare prima."
+    },
+    {
+      "id": "group-schedule",
+      "icon": "🗓️",
+      "task": "Organizzare chi fa cosa e a che ora, per un progetto di gruppo.",
+      "correct": "maria",
+      "explanation": "Maria è bravissima a organizzare, quindi può creare un piano chiaro per tutti."
+    },
+    {
+      "id": "move-table",
+      "icon": "🪑",
+      "task": "Spostare un tavolo pesante dall'altra parte della stanza.",
+      "correct": "tomas",
+      "explanation": "Tomás è molto forte, quindi può spostare il tavolo senza problemi."
+    },
+    {
+      "id": "decorate-drawing",
+      "icon": "🖍️",
+      "task": "Fare un bel disegno per decorare l'aula.",
+      "correct": "ines",
+      "explanation": "Inês disegna molto bene, quindi è lei a fare il disegno più bello."
+    }
+  ]
+}

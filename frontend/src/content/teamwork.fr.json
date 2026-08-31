@@ -1,0 +1,72 @@
+{
+  "characters": [
+    {
+      "id": "tomas",
+      "name": "Tomás",
+      "icon": "💪",
+      "trait": "est très fort"
+    },
+    {
+      "id": "ines",
+      "name": "Inês",
+      "icon": "🎨",
+      "trait": "dessine très bien"
+    },
+    {
+      "id": "rui",
+      "name": "Rui",
+      "icon": "🏃",
+      "trait": "court très vite"
+    },
+    {
+      "id": "maria",
+      "name": "Maria",
+      "icon": "📋",
+      "trait": "est excellente pour organiser"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "heavy-boxes",
+      "icon": "📦",
+      "task": "Porter de lourds cartons de déménagement jusqu'à la voiture.",
+      "correct": "tomas",
+      "explanation": "Tomás est très fort, il est donc le mieux placé pour porter des choses lourdes."
+    },
+    {
+      "id": "event-poster",
+      "icon": "🖼️",
+      "task": "Dessiner l'affiche pour la fête de l'école.",
+      "correct": "ines",
+      "explanation": "Inês dessine très bien, elle peut donc faire la plus belle affiche."
+    },
+    {
+      "id": "urgent-message",
+      "icon": "✉️",
+      "task": "Porter rapidement un message urgent jusqu'à la salle au bout du couloir.",
+      "correct": "rui",
+      "explanation": "Rui court très vite, c'est donc lui qui y arrivera le plus rapidement."
+    },
+    {
+      "id": "group-schedule",
+      "icon": "🗓️",
+      "task": "Organiser qui fait quoi et à quelle heure, pour un projet de groupe.",
+      "correct": "maria",
+      "explanation": "Maria est excellente pour organiser, elle peut donc établir un plan clair pour tout le monde."
+    },
+    {
+      "id": "move-table",
+      "icon": "🪑",
+      "task": "Déplacer une table lourde de l'autre côté de la pièce.",
+      "correct": "tomas",
+      "explanation": "Tomás est très fort, il peut donc déplacer la table sans problème."
+    },
+    {
+      "id": "decorate-drawing",
+      "icon": "🖍️",
+      "task": "Faire un joli dessin pour décorer la salle de classe.",
+      "correct": "ines",
+      "explanation": "Inês dessine très bien, c'est donc elle qui fait le plus joli dessin."
+    }
+  ]
+}

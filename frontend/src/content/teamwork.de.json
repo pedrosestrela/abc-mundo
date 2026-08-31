@@ -1,0 +1,72 @@
+{
+  "characters": [
+    {
+      "id": "tomas",
+      "name": "Tomás",
+      "icon": "💪",
+      "trait": "ist sehr stark"
+    },
+    {
+      "id": "ines",
+      "name": "Inês",
+      "icon": "🎨",
+      "trait": "zeichnet sehr gut"
+    },
+    {
+      "id": "rui",
+      "name": "Rui",
+      "icon": "🏃",
+      "trait": "rennt sehr schnell"
+    },
+    {
+      "id": "maria",
+      "name": "Maria",
+      "icon": "📋",
+      "trait": "ist super im Organisieren"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "heavy-boxes",
+      "icon": "📦",
+      "task": "Schwere Umzugskartons zum Auto tragen.",
+      "correct": "tomas",
+      "explanation": "Tomás ist sehr stark, deshalb eignet er sich am besten, um schwere Dinge zu heben."
+    },
+    {
+      "id": "event-poster",
+      "icon": "🖼️",
+      "task": "Das Plakat für das Schulfest malen.",
+      "correct": "ines",
+      "explanation": "Inês zeichnet sehr gut, deshalb kann sie das schönste Plakat gestalten."
+    },
+    {
+      "id": "urgent-message",
+      "icon": "✉️",
+      "task": "Eine dringende Nachricht schnell in das Zimmer am Ende des Flurs bringen.",
+      "correct": "rui",
+      "explanation": "Rui rennt sehr schnell, deshalb ist er am schnellsten dort."
+    },
+    {
+      "id": "group-schedule",
+      "icon": "🗓️",
+      "task": "Bei einem Gruppenprojekt festlegen, wer was zu welcher Zeit macht.",
+      "correct": "maria",
+      "explanation": "Maria ist super im Organisieren, deshalb kann sie einen klaren Plan für alle erstellen."
+    },
+    {
+      "id": "move-table",
+      "icon": "🪑",
+      "task": "Einen schweren Tisch auf die andere Seite des Zimmers verschieben.",
+      "correct": "tomas",
+      "explanation": "Tomás ist sehr stark, deshalb kann er den Tisch problemlos verschieben."
+    },
+    {
+      "id": "decorate-drawing",
+      "icon": "🖍️",
+      "task": "Ein schönes Bild malen, um das Klassenzimmer zu schmücken.",
+      "correct": "ines",
+      "explanation": "Inês zeichnet sehr gut, deshalb macht sie das schönste Bild."
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+[
+  {
+    "id": "shopping-bags",
+    "icon": "🛍️",
+    "scene": "La familia va de compras al supermercado.",
+    "prompt": "¿Llevan bolsas reutilizables de casa o piden bolsas nuevas en la tienda?",
+    "options": [
+      {
+        "id": "reusable",
+        "icon": "🧺",
+        "label": "Bolsas reutilizables",
+        "best": true
+      },
+      {
+        "id": "new",
+        "icon": "🛍️",
+        "label": "Bolsas nuevas",
+        "best": false
+      }
+    ],
+    "feedbackBest": "¡Buena elección! Una bolsa reutilizable se puede usar cientos de veces en lugar de acabar en la basura enseguida.",
+    "feedbackGentle": "¡Buen intento! Las bolsas reutilizables reducen aún más la basura. ¿Quieres intentarlo de nuevo?"
+  },
+  {
+    "id": "leftovers",
+    "icon": "🍲",
+    "scene": "Ha sobrado comida buena de la cena de ayer.",
+    "prompt": "¿Guardan las sobras para comer mañana o las tiran enseguida?",
+    "options": [
+      {
+        "id": "keep",
+        "icon": "🥡",
+        "label": "Guardar para mañana",
+        "best": true
+      },
+      {
+        "id": "toss",
+        "icon": "🗑️",
+        "label": "Tirar",
+        "best": false
+      }
+    ],
+    "feedbackBest": "¡Buena elección! Guardar las sobras en un recipiente las convierte en una nueva comida, sin desperdiciar nada.",
+    "feedbackGentle": "¡Buen intento! Guardar las sobras evita desperdiciar comida. ¿Quieres intentarlo de nuevo?"
+  },
+  {
+    "id": "bruised-fruit",
+    "icon": "🍎",
+    "scene": "Una manzana en el frutero tiene una pequeña mancha, pero por dentro está bien.",
+    "prompt": "¿Cortan la parte manchada y se comen el resto, o tiran toda la manzana?",
+    "options": [
+      {
+        "id": "eat",
+        "icon": "🍏",
+        "label": "Cortar y comer el resto",
+        "best": true
+      },
+      {
+        "id": "toss",
+        "icon": "🗑️",
+        "label": "Tirarlo todo",
+        "best": false
+      }
+    ],
+    "feedbackBest": "¡Buena elección! Una pequeña mancha no estropea toda la fruta, así no se desperdicia comida buena.",
+    "feedbackGentle": "¡Buen intento! Aprovechar la parte buena de la fruta reduce el desperdicio. ¿Quieres intentarlo de nuevo?"
+  },
+  {
+    "id": "brushing-teeth",
+    "icon": "🪥",
+    "scene": "Es hora de lavarse los dientes antes de dormir.",
+    "prompt": "¿Dejan el grifo abierto todo el tiempo o lo cierran mientras se cepillan?",
+    "options": [
+      {
+        "id": "off",
+        "icon": "🚱",
+        "label": "Cerrar el grifo",
+        "best": true
+      },
+      {
+        "id": "on",
+        "icon": "🚰",
+        "label": "Dejar el grifo abierto",
+        "best": false
+      }
+    ],
+    "feedbackBest": "¡Buena elección! Cerrar el grifo mientras te cepillas los dientes ahorra muchos litros de agua.",
+    "feedbackGentle": "¡Buen intento! Cerrar el grifo mientras te cepillas ahorra aún más agua. ¿Quieres intentarlo de nuevo?"
+  },
+  {
+    "id": "empty-room",
+    "icon": "💡",
+    "scene": "Nadie ha estado en el salón desde hace una hora, pero la luz sigue encendida.",
+    "prompt": "¿Apagan la luz de la sala vacía o la dejan encendida?",
+    "options": [
+      {
+        "id": "off",
+        "icon": "🌙",
+        "label": "Apagar la luz",
+        "best": true
+      },
+      {
+        "id": "on",
+        "icon": "💡",
+        "label": "Dejar la luz encendida",
+        "best": false
+      }
+    ],
+    "feedbackBest": "¡Buena elección! Apagar la luz de una sala vacía ahorra energía sin que nadie pierda nada.",
+    "feedbackGentle": "¡Buen intento! Apagar la luz cuando no hay nadie ahorra energía. ¿Quieres intentarlo de nuevo?"
+  },
+  {
+    "id": "charger",
+    "icon": "🔌",
+    "scene": "El cargador del móvil terminó de cargar hace mucho rato.",
+    "prompt": "¿Desenchufan el cargador o lo dejan enchufado sin necesidad?",
+    "options": [
+      {
+        "id": "unplug",
+        "icon": "🔋",
+        "label": "Desenchufarlo",
+        "best": true
+      },
+      {
+        "id": "leave",
+        "icon": "🔌",
+        "label": "Dejarlo enchufado",
+        "best": false
+      }
+    ],
+    "feedbackBest": "¡Buena elección! Desenchufar los cargadores que no se usan evita gastar energía en vano.",
+    "feedbackGentle": "¡Buen intento! Desenchufar el cargador cuando no hace falta ahorra energía. ¿Quieres intentarlo de nuevo?"
+  },
+  {
+    "id": "scrap-paper",
+    "icon": "📝",
+    "scene": "Hace falta un trozo de papel para hacer un dibujo rápido.",
+    "prompt": "¿Usan el reverso de una hoja ya usada o cogen una hoja nueva y limpia?",
+    "options": [
+      {
+        "id": "reuse",
+        "icon": "♻️",
+        "label": "Usar el reverso de una hoja usada",
+        "best": true
+      },
+      {
+        "id": "fresh",
+        "icon": "📄",
+        "label": "Coger una hoja nueva",
+        "best": false
+      }
+    ],
+    "feedbackBest": "¡Buena elección! Aprovechar el reverso de una hoja usada ahorra papel y árboles.",
+    "feedbackGentle": "¡Buen intento! Reutilizar papel usado reduce aún más el desperdicio. ¿Quieres intentarlo de nuevo?"
+  },
+  {
+    "id": "fruit-peels",
+    "icon": "🍌",
+    "scene": "Después de la merienda, quedan cáscaras de plátano y fruta en la mesa.",
+    "prompt": "¿Ponen las cáscaras en la basura normal o en el compost/orgánico?",
+    "options": [
+      {
+        "id": "compost",
+        "icon": "🌱",
+        "label": "En el compost",
+        "best": true
+      },
+      {
+        "id": "trash",
+        "icon": "🗑️",
+        "label": "En la basura normal",
+        "best": false
+      }
+    ],
+    "feedbackBest": "¡Buena elección! Las cáscaras se convierten en abono en el compost, en vez de ocupar espacio en la basura.",
+    "feedbackGentle": "¡Buen intento! Separar las cáscaras para el compost reduce aún más la basura. ¿Quieres intentarlo de nuevo?"
+  }
+]

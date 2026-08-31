@@ -1,0 +1,72 @@
+{
+  "characters": [
+    {
+      "id": "tomas",
+      "name": "Tomás",
+      "icon": "💪",
+      "trait": "é muito forte"
+    },
+    {
+      "id": "ines",
+      "name": "Inês",
+      "icon": "🎨",
+      "trait": "desenha muito bem"
+    },
+    {
+      "id": "rui",
+      "name": "Rui",
+      "icon": "🏃",
+      "trait": "corre muito depressa"
+    },
+    {
+      "id": "maria",
+      "name": "Maria",
+      "icon": "📋",
+      "trait": "é ótima a organizar"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "heavy-boxes",
+      "icon": "📦",
+      "task": "Carregar caixas pesadas de mudança para o carro.",
+      "correct": "tomas",
+      "explanation": "O Tomás é muito forte, por isso é o mais indicado para levantar coisas pesadas."
+    },
+    {
+      "id": "event-poster",
+      "icon": "🖼️",
+      "task": "Desenhar o cartaz para a festa da escola.",
+      "correct": "ines",
+      "explanation": "A Inês desenha muito bem, por isso é quem consegue fazer o cartaz mais bonito."
+    },
+    {
+      "id": "urgent-message",
+      "icon": "✉️",
+      "task": "Levar um recado urgente à sala ao fundo do corredor, depressa.",
+      "correct": "rui",
+      "explanation": "O Rui corre muito depressa, por isso é quem chega lá mais rápido."
+    },
+    {
+      "id": "group-schedule",
+      "icon": "🗓️",
+      "task": "Organizar quem faz o quê e a que horas, num projeto de grupo.",
+      "correct": "maria",
+      "explanation": "A Maria é ótima a organizar, por isso consegue montar um plano claro para todos."
+    },
+    {
+      "id": "move-table",
+      "icon": "🪑",
+      "task": "Mover uma mesa pesada para o outro lado da sala.",
+      "correct": "tomas",
+      "explanation": "O Tomás é muito forte, por isso consegue mover a mesa sem problemas."
+    },
+    {
+      "id": "decorate-drawing",
+      "icon": "🖍️",
+      "task": "Fazer um desenho bonito para decorar a sala de aula.",
+      "correct": "ines",
+      "explanation": "A Inês desenha muito bem, por isso é quem faz o desenho mais bonito."
+    }
+  ]
+}

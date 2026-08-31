@@ -1,0 +1,178 @@
+[
+  {
+    "id": "shopping-bags",
+    "icon": "🛍️",
+    "scene": "The family goes shopping at the supermarket.",
+    "prompt": "Do they bring reusable bags from home, or ask for new bags at the store?",
+    "options": [
+      {
+        "id": "reusable",
+        "icon": "🧺",
+        "label": "Reusable bags",
+        "best": true
+      },
+      {
+        "id": "new",
+        "icon": "🛍️",
+        "label": "New bags",
+        "best": false
+      }
+    ],
+    "feedbackBest": "Great choice! A reusable bag can be used hundreds of times instead of being thrown away right away.",
+    "feedbackGentle": "Good try! Reusable bags cut down even more waste — want to try again?"
+  },
+  {
+    "id": "leftovers",
+    "icon": "🍲",
+    "scene": "There's good food left over from last night's dinner.",
+    "prompt": "Do they save the leftovers for tomorrow, or throw them away right away?",
+    "options": [
+      {
+        "id": "keep",
+        "icon": "🥡",
+        "label": "Save for tomorrow",
+        "best": true
+      },
+      {
+        "id": "toss",
+        "icon": "🗑️",
+        "label": "Throw it away",
+        "best": false
+      }
+    ],
+    "feedbackBest": "Great choice! Storing leftovers in a container turns them into a new meal, with nothing wasted.",
+    "feedbackGentle": "Good try! Saving leftovers avoids food waste — want to try again?"
+  },
+  {
+    "id": "bruised-fruit",
+    "icon": "🍎",
+    "scene": "An apple in the fruit basket has a small bruise, but it's fine on the inside.",
+    "prompt": "Do they cut off the bruised part and eat the rest, or throw the whole apple away?",
+    "options": [
+      {
+        "id": "eat",
+        "icon": "🍏",
+        "label": "Cut off and eat the rest",
+        "best": true
+      },
+      {
+        "id": "toss",
+        "icon": "🗑️",
+        "label": "Throw it all away",
+        "best": false
+      }
+    ],
+    "feedbackBest": "Great choice! A small bruise doesn't ruin the whole fruit — this way no good food goes to waste.",
+    "feedbackGentle": "Good try! Using the good part of the fruit cuts down on waste — want to try again?"
+  },
+  {
+    "id": "brushing-teeth",
+    "icon": "🪥",
+    "scene": "It's time to brush teeth before bed.",
+    "prompt": "Do they leave the tap running the whole time, or turn it off while brushing?",
+    "options": [
+      {
+        "id": "off",
+        "icon": "🚱",
+        "label": "Turn off the tap",
+        "best": true
+      },
+      {
+        "id": "on",
+        "icon": "🚰",
+        "label": "Leave the tap running",
+        "best": false
+      }
+    ],
+    "feedbackBest": "Great choice! Turning off the tap while brushing saves many liters of water.",
+    "feedbackGentle": "Good try! Turning off the tap while brushing saves even more water — want to try again?"
+  },
+  {
+    "id": "empty-room",
+    "icon": "💡",
+    "scene": "No one has been in the living room for an hour, but the light is still on.",
+    "prompt": "Do they turn off the light in the empty room, or leave it on?",
+    "options": [
+      {
+        "id": "off",
+        "icon": "🌙",
+        "label": "Turn off the light",
+        "best": true
+      },
+      {
+        "id": "on",
+        "icon": "💡",
+        "label": "Leave the light on",
+        "best": false
+      }
+    ],
+    "feedbackBest": "Great choice! Turning off the light in an empty room saves energy at no cost to anyone.",
+    "feedbackGentle": "Good try! Turning off the light when no one's in the room saves energy — want to try again?"
+  },
+  {
+    "id": "charger",
+    "icon": "🔌",
+    "scene": "The phone charger finished charging a long time ago.",
+    "prompt": "Do they unplug the charger, or leave it plugged in without needing it?",
+    "options": [
+      {
+        "id": "unplug",
+        "icon": "🔋",
+        "label": "Unplug it",
+        "best": true
+      },
+      {
+        "id": "leave",
+        "icon": "🔌",
+        "label": "Leave it plugged in",
+        "best": false
+      }
+    ],
+    "feedbackBest": "Great choice! Unplugging chargers that aren't being used avoids wasting energy for nothing.",
+    "feedbackGentle": "Good try! Unplugging the charger when it's not needed saves energy — want to try again?"
+  },
+  {
+    "id": "scrap-paper",
+    "icon": "📝",
+    "scene": "A piece of paper is needed for a quick drawing.",
+    "prompt": "Do they use the back of an already-used sheet, or grab a fresh new one?",
+    "options": [
+      {
+        "id": "reuse",
+        "icon": "♻️",
+        "label": "Use the back of a used sheet",
+        "best": true
+      },
+      {
+        "id": "fresh",
+        "icon": "📄",
+        "label": "Grab a fresh sheet",
+        "best": false
+      }
+    ],
+    "feedbackBest": "Great choice! Reusing the back of a used sheet saves paper and trees.",
+    "feedbackGentle": "Good try! Reusing scrap paper cuts down even more waste — want to try again?"
+  },
+  {
+    "id": "fruit-peels",
+    "icon": "🍌",
+    "scene": "After the snack, banana and fruit peels are left on the table.",
+    "prompt": "Do they put the peels in the regular trash, or in the compost/organics bin?",
+    "options": [
+      {
+        "id": "compost",
+        "icon": "🌱",
+        "label": "In the compost bin",
+        "best": true
+      },
+      {
+        "id": "trash",
+        "icon": "🗑️",
+        "label": "In the regular trash",
+        "best": false
+      }
+    ],
+    "feedbackBest": "Great choice! Fruit peels turn into fertilizer in the compost instead of taking up space in the trash.",
+    "feedbackGentle": "Good try! Sorting peels into compost cuts down even more waste — want to try again?"
+  }
+]

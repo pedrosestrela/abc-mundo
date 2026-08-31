@@ -158,6 +158,7 @@ const GROUPS = [
       { to: "/thinking", emoji: "🧠", nav: "thinking", sub: "sub_thinking" },
       { to: "/communication", emoji: "🗣️", nav: "communication", sub: "sub_communication" },
       { to: "/learning-strategies", emoji: "🧠✨", nav: "learningStrategies", sub: "sub_learningStrategies" },
+      { to: "/free-creation", emoji: "🎨✨", nav: "freeCreation", sub: "sub_freeCreation" },
     ],
   },
   {
@@ -170,6 +171,8 @@ const GROUPS = [
       { to: "/mini-chef", emoji: "👩‍🍳", nav: "miniChef", sub: "sub_miniChef" },
       { to: "/traffic-school", emoji: "🚦", nav: "trafficSchool", sub: "sub_trafficSchool" },
       { to: "/human-body", emoji: "🫀", nav: "humanBody", sub: "sub_humanBody" },
+      { to: "/zero-waste", emoji: "♻️", nav: "zeroWaste", sub: "sub_zeroWaste" },
+      { to: "/teamwork", emoji: "🤝", nav: "teamwork", sub: "sub_teamwork" },
     ],
   },
 ];

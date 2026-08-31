@@ -1,0 +1,72 @@
+{
+  "characters": [
+    {
+      "id": "tomas",
+      "name": "Tomás",
+      "icon": "💪",
+      "trait": "is very strong"
+    },
+    {
+      "id": "ines",
+      "name": "Inês",
+      "icon": "🎨",
+      "trait": "draws really well"
+    },
+    {
+      "id": "rui",
+      "name": "Rui",
+      "icon": "🏃",
+      "trait": "runs really fast"
+    },
+    {
+      "id": "maria",
+      "name": "Maria",
+      "icon": "📋",
+      "trait": "is great at organizing"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "heavy-boxes",
+      "icon": "📦",
+      "task": "Carry heavy moving boxes to the car.",
+      "correct": "tomas",
+      "explanation": "Tomás is very strong, so he's the best fit for lifting heavy things."
+    },
+    {
+      "id": "event-poster",
+      "icon": "🖼️",
+      "task": "Draw the poster for the school party.",
+      "correct": "ines",
+      "explanation": "Inês draws really well, so she can make the nicest-looking poster."
+    },
+    {
+      "id": "urgent-message",
+      "icon": "✉️",
+      "task": "Take an urgent message to the room at the end of the hallway, quickly.",
+      "correct": "rui",
+      "explanation": "Rui runs really fast, so he's the one who'll get there quickest."
+    },
+    {
+      "id": "group-schedule",
+      "icon": "🗓️",
+      "task": "Organize who does what and at what time, for a group project.",
+      "correct": "maria",
+      "explanation": "Maria is great at organizing, so she can put together a clear plan for everyone."
+    },
+    {
+      "id": "move-table",
+      "icon": "🪑",
+      "task": "Move a heavy table to the other side of the room.",
+      "correct": "tomas",
+      "explanation": "Tomás is very strong, so he can move the table without trouble."
+    },
+    {
+      "id": "decorate-drawing",
+      "icon": "🖍️",
+      "task": "Make a nice drawing to decorate the classroom.",
+      "correct": "ines",
+      "explanation": "Inês draws really well, so she's the one who makes the nicest drawing."
+    }
+  ]
+}

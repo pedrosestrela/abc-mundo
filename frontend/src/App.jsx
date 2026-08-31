@@ -79,6 +79,9 @@ const Writing = lazyWithReload(() => import("./pages/Writing.jsx"));
 const Communication = lazyWithReload(() => import("./pages/Communication.jsx"));
 const TrafficSchool = lazyWithReload(() => import("./pages/TrafficSchool.jsx"));
 const HumanBody = lazyWithReload(() => import("./pages/HumanBody.jsx"));
+const ZeroWaste = lazyWithReload(() => import("./pages/ZeroWaste.jsx"));
+const Teamwork = lazyWithReload(() => import("./pages/Teamwork.jsx"));
+const FreeCreation = lazyWithReload(() => import("./pages/FreeCreation.jsx"));
 
 export default function App() {
   const { t } = useTranslation();
@@ -154,6 +157,9 @@ export default function App() {
             <Route path="/writing" element={<Writing />} />
             <Route path="/communication" element={<Communication />} />
             <Route path="/traffic-school" element={<TrafficSchool />} />
+            <Route path="/zero-waste" element={<ZeroWaste />} />
+            <Route path="/teamwork" element={<Teamwork />} />
+            <Route path="/free-creation" element={<FreeCreation />} />
           </Routes>
         </Suspense>
       </main>

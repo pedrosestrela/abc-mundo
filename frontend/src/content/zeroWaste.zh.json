@@ -1,0 +1,178 @@
+[
+  {
+    "id": "shopping-bags",
+    "icon": "🛍️",
+    "scene": "一家人去超市购物。",
+    "prompt": "他们是从家里带可重复使用的袋子，还是在商店要新袋子？",
+    "options": [
+      {
+        "id": "reusable",
+        "icon": "🧺",
+        "label": "可重复使用的袋子",
+        "best": true
+      },
+      {
+        "id": "new",
+        "icon": "🛍️",
+        "label": "新袋子",
+        "best": false
+      }
+    ],
+    "feedbackBest": "很好的选择！可重复使用的袋子能用上几百次，而不是马上被丢掉。",
+    "feedbackGentle": "很好的尝试！可重复使用的袋子能减少更多垃圾——要再试一次吗？"
+  },
+  {
+    "id": "leftovers",
+    "icon": "🍲",
+    "scene": "昨晚的晚餐还剩下一些好吃的食物。",
+    "prompt": "他们是把剩菜留到明天吃，还是马上扔掉？",
+    "options": [
+      {
+        "id": "keep",
+        "icon": "🥡",
+        "label": "留到明天",
+        "best": true
+      },
+      {
+        "id": "toss",
+        "icon": "🗑️",
+        "label": "扔掉",
+        "best": false
+      }
+    ],
+    "feedbackBest": "很好的选择！把剩菜放进容器里保存，就能变成新的一餐，一点也不浪费。",
+    "feedbackGentle": "很好的尝试！留下剩菜能避免浪费食物——要再试一次吗？"
+  },
+  {
+    "id": "bruised-fruit",
+    "icon": "🍎",
+    "scene": "水果篮里的一个苹果上有一小块斑，但里面还是好的。",
+    "prompt": "他们把有斑的地方切掉，吃剩下的部分，还是把整个苹果都扔掉？",
+    "options": [
+      {
+        "id": "eat",
+        "icon": "🍏",
+        "label": "切掉后吃剩下的",
+        "best": true
+      },
+      {
+        "id": "toss",
+        "icon": "🗑️",
+        "label": "全部扔掉",
+        "best": false
+      }
+    ],
+    "feedbackBest": "很好的选择！一小块斑并不会毁掉整个水果——这样就不会浪费好食物。",
+    "feedbackGentle": "很好的尝试！利用水果好的部分能减少浪费——要再试一次吗？"
+  },
+  {
+    "id": "brushing-teeth",
+    "icon": "🪥",
+    "scene": "该在睡前刷牙了。",
+    "prompt": "他们是一直开着水龙头，还是刷牙时把水关掉？",
+    "options": [
+      {
+        "id": "off",
+        "icon": "🚱",
+        "label": "关掉水龙头",
+        "best": true
+      },
+      {
+        "id": "on",
+        "icon": "🚰",
+        "label": "让水龙头一直开着",
+        "best": false
+      }
+    ],
+    "feedbackBest": "很好的选择！刷牙时关掉水龙头能节省很多水。",
+    "feedbackGentle": "很好的尝试！刷牙时关掉水龙头能节省更多水——要再试一次吗？"
+  },
+  {
+    "id": "empty-room",
+    "icon": "💡",
+    "scene": "客厅里已经一个小时没有人了，但灯还开着。",
+    "prompt": "他们会把空房间的灯关掉，还是让它继续开着？",
+    "options": [
+      {
+        "id": "off",
+        "icon": "🌙",
+        "label": "关灯",
+        "best": true
+      },
+      {
+        "id": "on",
+        "icon": "💡",
+        "label": "让灯继续开着",
+        "best": false
+      }
+    ],
+    "feedbackBest": "很好的选择！关掉空房间的灯能节约能源，对谁都没有影响。",
+    "feedbackGentle": "很好的尝试！没人在的时候关灯能节约能源——要再试一次吗？"
+  },
+  {
+    "id": "charger",
+    "icon": "🔌",
+    "scene": "手机充电器很久以前就充满了。",
+    "prompt": "他们会拔掉充电器，还是让它一直插着没有必要？",
+    "options": [
+      {
+        "id": "unplug",
+        "icon": "🔋",
+        "label": "拔掉插头",
+        "best": true
+      },
+      {
+        "id": "leave",
+        "icon": "🔌",
+        "label": "让它一直插着",
+        "best": false
+      }
+    ],
+    "feedbackBest": "很好的选择！拔掉没在用的充电器能避免白白浪费电。",
+    "feedbackGentle": "很好的尝试！不需要时拔掉充电器能节约能源——要再试一次吗？"
+  },
+  {
+    "id": "scrap-paper",
+    "icon": "📝",
+    "scene": "需要一张纸来画一幅速写。",
+    "prompt": "他们是用已经用过的纸的背面，还是拿一张全新的纸？",
+    "options": [
+      {
+        "id": "reuse",
+        "icon": "♻️",
+        "label": "用用过的纸的背面",
+        "best": true
+      },
+      {
+        "id": "fresh",
+        "icon": "📄",
+        "label": "拿一张新纸",
+        "best": false
+      }
+    ],
+    "feedbackBest": "很好的选择！利用用过的纸的背面能节约纸张，保护树木。",
+    "feedbackGentle": "很好的尝试！重复利用废纸能减少更多浪费——要再试一次吗？"
+  },
+  {
+    "id": "fruit-peels",
+    "icon": "🍌",
+    "scene": "点心后，桌上留下了香蕉皮和水果皮。",
+    "prompt": "他们是把果皮扔进普通垃圾桶，还是放进堆肥／有机垃圾桶？",
+    "options": [
+      {
+        "id": "compost",
+        "icon": "🌱",
+        "label": "放进堆肥桶",
+        "best": true
+      },
+      {
+        "id": "trash",
+        "icon": "🗑️",
+        "label": "扔进普通垃圾桶",
+        "best": false
+      }
+    ],
+    "feedbackBest": "很好的选择！果皮在堆肥里能变成肥料，而不是占用垃圾桶的空间。",
+    "feedbackGentle": "很好的尝试！把果皮分到堆肥能减少更多垃圾——要再试一次吗？"
+  }
+]

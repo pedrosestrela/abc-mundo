@@ -1,0 +1,72 @@
+{
+  "characters": [
+    {
+      "id": "tomas",
+      "name": "Tomás",
+      "icon": "💪",
+      "trait": "es muy fuerte"
+    },
+    {
+      "id": "ines",
+      "name": "Inês",
+      "icon": "🎨",
+      "trait": "dibuja muy bien"
+    },
+    {
+      "id": "rui",
+      "name": "Rui",
+      "icon": "🏃",
+      "trait": "corre muy rápido"
+    },
+    {
+      "id": "maria",
+      "name": "Maria",
+      "icon": "📋",
+      "trait": "es genial organizando"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "heavy-boxes",
+      "icon": "📦",
+      "task": "Cargar cajas pesadas de la mudanza hasta el coche.",
+      "correct": "tomas",
+      "explanation": "Tomás es muy fuerte, así que es el más indicado para levantar cosas pesadas."
+    },
+    {
+      "id": "event-poster",
+      "icon": "🖼️",
+      "task": "Dibujar el cartel para la fiesta del colegio.",
+      "correct": "ines",
+      "explanation": "Inês dibuja muy bien, así que puede hacer el cartel más bonito."
+    },
+    {
+      "id": "urgent-message",
+      "icon": "✉️",
+      "task": "Llevar un mensaje urgente a la sala al final del pasillo, rápido.",
+      "correct": "rui",
+      "explanation": "Rui corre muy rápido, así que es quien llega antes."
+    },
+    {
+      "id": "group-schedule",
+      "icon": "🗓️",
+      "task": "Organizar quién hace qué y a qué hora, en un proyecto de grupo.",
+      "correct": "maria",
+      "explanation": "Maria es genial organizando, así que puede armar un plan claro para todos."
+    },
+    {
+      "id": "move-table",
+      "icon": "🪑",
+      "task": "Mover una mesa pesada al otro lado de la sala.",
+      "correct": "tomas",
+      "explanation": "Tomás es muy fuerte, así que puede mover la mesa sin problema."
+    },
+    {
+      "id": "decorate-drawing",
+      "icon": "🖍️",
+      "task": "Hacer un dibujo bonito para decorar el aula.",
+      "correct": "ines",
+      "explanation": "Inês dibuja muy bien, así que ella hace el dibujo más bonito."
+    }
+  ]
+}

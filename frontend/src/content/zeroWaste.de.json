@@ -1,0 +1,178 @@
+[
+  {
+    "id": "shopping-bags",
+    "icon": "🛍️",
+    "scene": "Die Familie geht im Supermarkt einkaufen.",
+    "prompt": "Nehmen sie wiederverwendbare Taschen von zu Hause mit oder holen sie neue Tüten im Laden?",
+    "options": [
+      {
+        "id": "reusable",
+        "icon": "🧺",
+        "label": "Wiederverwendbare Taschen",
+        "best": true
+      },
+      {
+        "id": "new",
+        "icon": "🛍️",
+        "label": "Neue Tüten",
+        "best": false
+      }
+    ],
+    "feedbackBest": "Gute Wahl! Eine wiederverwendbare Tasche kann hunderte Male benutzt werden, statt gleich im Müll zu landen.",
+    "feedbackGentle": "Guter Versuch! Wiederverwendbare Taschen sparen noch mehr Müll — möchtest du es noch einmal versuchen?"
+  },
+  {
+    "id": "leftovers",
+    "icon": "🍲",
+    "scene": "Vom gestrigen Abendessen ist noch gutes Essen übrig.",
+    "prompt": "Heben sie die Reste für morgen auf oder werfen sie sie gleich weg?",
+    "options": [
+      {
+        "id": "keep",
+        "icon": "🥡",
+        "label": "Für morgen aufheben",
+        "best": true
+      },
+      {
+        "id": "toss",
+        "icon": "🗑️",
+        "label": "Wegwerfen",
+        "best": false
+      }
+    ],
+    "feedbackBest": "Gute Wahl! Reste in einer Dose aufzubewahren macht daraus eine neue Mahlzeit, ohne etwas zu verschwenden.",
+    "feedbackGentle": "Guter Versuch! Reste aufzuheben vermeidet Lebensmittelverschwendung — möchtest du es noch einmal versuchen?"
+  },
+  {
+    "id": "bruised-fruit",
+    "icon": "🍎",
+    "scene": "Ein Apfel im Obstkorb hat einen kleinen Fleck, ist aber innen noch gut.",
+    "prompt": "Schneiden sie den fleckigen Teil ab und essen den Rest, oder werfen sie den ganzen Apfel weg?",
+    "options": [
+      {
+        "id": "eat",
+        "icon": "🍏",
+        "label": "Abschneiden und Rest essen",
+        "best": true
+      },
+      {
+        "id": "toss",
+        "icon": "🗑️",
+        "label": "Alles wegwerfen",
+        "best": false
+      }
+    ],
+    "feedbackBest": "Gute Wahl! Ein kleiner Fleck verdirbt nicht das ganze Obst — so wird kein gutes Essen verschwendet.",
+    "feedbackGentle": "Guter Versuch! Den guten Teil des Obstes zu nutzen verringert Verschwendung — möchtest du es noch einmal versuchen?"
+  },
+  {
+    "id": "brushing-teeth",
+    "icon": "🪥",
+    "scene": "Es ist Zeit, vor dem Schlafengehen Zähne zu putzen.",
+    "prompt": "Lassen sie den Wasserhahn die ganze Zeit laufen oder drehen sie ihn beim Putzen zu?",
+    "options": [
+      {
+        "id": "off",
+        "icon": "🚱",
+        "label": "Wasserhahn zudrehen",
+        "best": true
+      },
+      {
+        "id": "on",
+        "icon": "🚰",
+        "label": "Wasserhahn laufen lassen",
+        "best": false
+      }
+    ],
+    "feedbackBest": "Gute Wahl! Den Hahn beim Zähneputzen zuzudrehen spart viele Liter Wasser.",
+    "feedbackGentle": "Guter Versuch! Den Hahn beim Putzen zuzudrehen spart noch mehr Wasser — möchtest du es noch einmal versuchen?"
+  },
+  {
+    "id": "empty-room",
+    "icon": "💡",
+    "scene": "Seit einer Stunde ist niemand im Wohnzimmer, aber das Licht brennt noch.",
+    "prompt": "Schalten sie das Licht im leeren Zimmer aus oder lassen sie es an?",
+    "options": [
+      {
+        "id": "off",
+        "icon": "🌙",
+        "label": "Licht ausschalten",
+        "best": true
+      },
+      {
+        "id": "on",
+        "icon": "💡",
+        "label": "Licht anlassen",
+        "best": false
+      }
+    ],
+    "feedbackBest": "Gute Wahl! Das Licht in einem leeren Zimmer auszuschalten spart Energie, ohne dass es jemanden etwas kostet.",
+    "feedbackGentle": "Guter Versuch! Das Licht auszuschalten, wenn niemand im Zimmer ist, spart Energie — möchtest du es noch einmal versuchen?"
+  },
+  {
+    "id": "charger",
+    "icon": "🔌",
+    "scene": "Das Handyladegerät ist schon lange fertig mit Laden.",
+    "prompt": "Ziehen sie das Ladegerät aus der Steckdose oder lassen sie es unnötig stecken?",
+    "options": [
+      {
+        "id": "unplug",
+        "icon": "🔋",
+        "label": "Ausstecken",
+        "best": true
+      },
+      {
+        "id": "leave",
+        "icon": "🔌",
+        "label": "Eingesteckt lassen",
+        "best": false
+      }
+    ],
+    "feedbackBest": "Gute Wahl! Ladegeräte auszustecken, die nicht benutzt werden, verhindert unnötigen Energieverbrauch.",
+    "feedbackGentle": "Guter Versuch! Das Ladegerät auszustecken, wenn es nicht gebraucht wird, spart Energie — möchtest du es noch einmal versuchen?"
+  },
+  {
+    "id": "scrap-paper",
+    "icon": "📝",
+    "scene": "Ein Stück Papier wird für eine schnelle Zeichnung gebraucht.",
+    "prompt": "Nehmen sie die Rückseite eines schon benutzten Blattes oder ein neues, sauberes Blatt?",
+    "options": [
+      {
+        "id": "reuse",
+        "icon": "♻️",
+        "label": "Rückseite eines benutzten Blattes nutzen",
+        "best": true
+      },
+      {
+        "id": "fresh",
+        "icon": "📄",
+        "label": "Neues Blatt nehmen",
+        "best": false
+      }
+    ],
+    "feedbackBest": "Gute Wahl! Die Rückseite eines benutzten Blattes zu nutzen spart Papier und Bäume.",
+    "feedbackGentle": "Guter Versuch! Altpapier wiederzuverwenden spart noch mehr — möchtest du es noch einmal versuchen?"
+  },
+  {
+    "id": "fruit-peels",
+    "icon": "🍌",
+    "scene": "Nach dem Snack liegen Bananen- und Obstschalen auf dem Tisch.",
+    "prompt": "Kommen die Schalen in den normalen Müll oder in die Kompost-/Biotonne?",
+    "options": [
+      {
+        "id": "compost",
+        "icon": "🌱",
+        "label": "In die Biotonne",
+        "best": true
+      },
+      {
+        "id": "trash",
+        "icon": "🗑️",
+        "label": "In den normalen Müll",
+        "best": false
+      }
+    ],
+    "feedbackBest": "Gute Wahl! Obstschalen werden im Kompost zu Dünger, statt im Müll Platz wegzunehmen.",
+    "feedbackGentle": "Guter Versuch! Schalen in den Kompost zu sortieren spart noch mehr Müll — möchtest du es noch einmal versuchen?"
+  }
+]
