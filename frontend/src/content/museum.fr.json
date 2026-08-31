@@ -1,0 +1,834 @@
+[
+  {
+    "id": "archaeology",
+    "emoji": "🏺",
+    "title": "Archéologie",
+    "intro": "Des objets très anciens trouvés sous la terre.",
+    "exhibits": [
+      {
+        "id": "amphora",
+        "emoji": "🏺",
+        "name": "Amphore grecque",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Un chapeau",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Conserver l'huile ou le vin",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Un jouet",
+            "correct": false
+          }
+        ],
+        "explanation": "Les amphores étaient de hautes jarres à deux anses utilisées dans la Grèce et la Rome antiques pour transporter et conserver l'huile, le vin et les céréales."
+      },
+      {
+        "id": "arrowhead",
+        "emoji": "🗡️",
+        "name": "Pointe de flèche",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Chasser des animaux",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Couper les cheveux",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Faire de la musique",
+            "correct": false
+          }
+        ],
+        "explanation": "Les pointes de flèche étaient taillées dans la pierre (silex) et fixées à une hampe en bois. Elles servaient à chasser et à se défendre, il y a des milliers d'années."
+      },
+      {
+        "id": "clay-tablet",
+        "emoji": "🪧",
+        "name": "Tablette d'argile",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Un oreiller",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Une assiette",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Écrire des messages et des comptes",
+            "correct": true
+          }
+        ],
+        "explanation": "En Mésopotamie, les gens écrivaient avec un roseau pointu sur de l'argile molle, créant des signes appelés cunéiforme. L'argile séchait ensuite, conservant l'écriture pour toujours."
+      },
+      {
+        "id": "mummy-mask",
+        "emoji": "𓆣",
+        "name": "Masque funéraire",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Un masque de fête",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Protéger le visage de la momie dans l'Égypte antique",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Un miroir",
+            "correct": false
+          }
+        ],
+        "explanation": "Dans l'Égypte antique, un masque était posé sur le visage de la momie pour protéger l'esprit de la personne et l'aider à être reconnue dans l'au-delà."
+      }
+    ]
+  },
+  {
+    "id": "dinosaurs",
+    "emoji": "🦖",
+    "title": "Dinosaures",
+    "intro": "Des reptiles géants qui vivaient il y a des millions d'années.",
+    "exhibits": [
+      {
+        "id": "trex-tooth",
+        "emoji": "🦷",
+        "name": "Dent de T-Rex",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Déchirer la viande d'autres animaux",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Mâcher des plantes",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Creuser des trous",
+            "correct": false
+          }
+        ],
+        "explanation": "Le Tyrannosaurus rex avait d'énormes dents dentelées de jusqu'à 20 cm, faites pour mordre et déchirer la chair d'autres dinosaures. C'était l'un des plus grands prédateurs de tous les temps."
+      },
+      {
+        "id": "triceratops-horn",
+        "emoji": "🦏",
+        "name": "Corne de Tricératops",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Se peigner",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Se défendre contre des prédateurs comme le T-Rex",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Voler",
+            "correct": false
+          }
+        ],
+        "explanation": "Le Tricératops avait trois cornes sur la tête et une grande collerette osseuse sur le cou. Il les utilisait pour se défendre des prédateurs et peut-être pour rivaliser avec d'autres Tricératops."
+      },
+      {
+        "id": "fossil-egg",
+        "emoji": "🥚",
+        "name": "Œuf fossilisé",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Faire des omelettes",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Une balle pour jouer",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Abriter un bébé dinosaure avant l'éclosion",
+            "correct": true
+          }
+        ],
+        "explanation": "Les œufs de dinosaures sont restés enfouis pendant des millions d'années et se sont transformés en pierre. En les étudiant, les scientifiques découvrent comment les bébés dinosaures grandissaient à l'intérieur."
+      },
+      {
+        "id": "pterosaur-wing",
+        "emoji": "🦴",
+        "name": "Os d'aile de ptérosaure",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Voler dans le ciel",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Nager sous l'eau",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Courir très vite",
+            "correct": false
+          }
+        ],
+        "explanation": "Les ptérosaures n'étaient pas des dinosaures, mais des reptiles volants qui vivaient à la même époque. Un doigt très long soutenait une membrane de peau qui faisait office d'aile."
+      }
+    ]
+  },
+  {
+    "id": "history",
+    "emoji": "👑",
+    "title": "Histoire",
+    "intro": "Des objets de rois, de reines et de peuples anciens.",
+    "exhibits": [
+      {
+        "id": "crown",
+        "emoji": "👑",
+        "name": "Couronne royale",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Un chapeau de pluie",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Montrer que la personne était roi ou reine",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Un jouet d'enfant",
+            "correct": false
+          }
+        ],
+        "explanation": "Les couronnes étaient faites d'or et de pierres précieuses pour montrer que celui qui la portait avait le pouvoir de gouverner un royaume. Plus la couronne était riche, plus le roi ou la reine était important."
+      },
+      {
+        "id": "sword",
+        "emoji": "⚔️",
+        "name": "Épée médiévale",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Combattre et se défendre dans les batailles",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Couper le pain",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Se coiffer",
+            "correct": false
+          }
+        ],
+        "explanation": "Les chevaliers médiévaux utilisaient des épées en fer ou en acier pour combattre lors de batailles et de tournois. Beaucoup avaient leur propre nom et étaient transmises de père en fils comme un trésor familial."
+      },
+      {
+        "id": "old-coin",
+        "emoji": "🪙",
+        "name": "Pièce ancienne",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Un bouton de vêtement",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Une décoration murale",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Acheter et vendre des choses",
+            "correct": true
+          }
+        ],
+        "explanation": "Les pièces anciennes étaient faites de métal, souvent frappées du visage du roi. Elles servaient à acheter et vendre des marchandises au marché, au lieu d'échanger directement un objet contre un autre."
+      },
+      {
+        "id": "wax-seal",
+        "emoji": "📜",
+        "name": "Sceau de cire",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Fabriquer des bougies pour éclairer les châteaux",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Fermer des lettres et prouver leur authenticité",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Coller des dessins",
+            "correct": false
+          }
+        ],
+        "explanation": "Avant les enveloppes modernes, une lettre était pliée et de la cire chaude versée dessus, puis estampillée avec une bague spéciale. Si le sceau était brisé, on savait que quelqu'un avait ouvert la lettre."
+      }
+    ]
+  },
+  {
+    "id": "transport",
+    "emoji": "🚂",
+    "title": "Transports",
+    "intro": "Comment les gens voyageaient à travers l'histoire.",
+    "exhibits": [
+      {
+        "id": "steam-locomotive",
+        "emoji": "🚂",
+        "name": "Locomotive à vapeur",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Voler entre les villes",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Nager dans les rivières",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Tirer des trains en brûlant du charbon pour faire de la vapeur",
+            "correct": true
+          }
+        ],
+        "explanation": "Les locomotives à vapeur brûlaient du charbon pour chauffer l'eau et créer de la vapeur, qui poussait les pistons et faisait tourner les roues. Elles ont révolutionné les voyages au XIXe siècle, les rendant bien plus rapides."
+      },
+      {
+        "id": "horse-carriage",
+        "emoji": "🐎",
+        "name": "Calèche",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Transporter des gens avant l'existence des voitures",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Voler au-dessus des montagnes",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Nager dans les lacs",
+            "correct": false
+          }
+        ],
+        "explanation": "Avant l'existence des voitures, les calèches tirées par des chevaux étaient le principal moyen de transport dans les villes et sur les routes, utilisées par les familles riches et pour le courrier."
+      },
+      {
+        "id": "viking-ship",
+        "emoji": "🚢",
+        "name": "Navire viking",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Un jouet de baignoire",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Naviguer sur de longues distances en mer",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Stocker du poisson",
+            "correct": false
+          }
+        ],
+        "explanation": "Les navires vikings avaient une coque fine et flexible et une voile carrée, ce qui leur permettait de naviguer sur des mers agitées et même des rivières peu profondes, allant bien au-delà de la Scandinavie."
+      },
+      {
+        "id": "old-bicycle",
+        "emoji": "🚲",
+        "name": "Vieux vélo",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Pêcher dans la rivière",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Cuisiner",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Se déplacer plus vite sans utiliser d'essence",
+            "correct": true
+          }
+        ],
+        "explanation": "Les premiers vélos, du XIXe siècle, n'avaient ni freins ni pédales comme ceux d'aujourd'hui. Ils furent l'un des premiers moyens de transport personnel propulsés uniquement par la force des jambes."
+      }
+    ]
+  },
+  {
+    "id": "science",
+    "emoji": "🔬",
+    "title": "Science",
+    "intro": "Des instruments qui ont aidé à découvrir le monde.",
+    "exhibits": [
+      {
+        "id": "microscope",
+        "emoji": "🔬",
+        "name": "Vieux microscope",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Regarder les étoiles",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Voir des choses trop petites pour nos yeux",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Entendre des sons faibles",
+            "correct": false
+          }
+        ],
+        "explanation": "Le microscope utilise des lentilles pour agrandir les images de choses minuscules, comme les cellules et les microbes. Grâce à lui, les scientifiques ont découvert qu'il existe des êtres vivants invisibles à l'œil nu."
+      },
+      {
+        "id": "telescope",
+        "emoji": "🔭",
+        "name": "Vieux télescope",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Voir les planètes et les étoiles de près",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Sentir des fleurs à distance",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Faire pleuvoir",
+            "correct": false
+          }
+        ],
+        "explanation": "Le télescope utilise des lentilles ou des miroirs pour capter la lumière d'objets très éloignés et les rendre visibles et plus grands. Galilée a utilisé un télescope pour découvrir les lunes de Jupiter il y a plus de 400 ans."
+      },
+      {
+        "id": "compass-science",
+        "emoji": "🧭",
+        "name": "Vieille boussole",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Mesurer la température",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Donner l'heure",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Trouver où est le Nord",
+            "correct": true
+          }
+        ],
+        "explanation": "La boussole a une aiguille magnétique qui pointe toujours vers le Nord magnétique de la Terre. Elle était essentielle pour que les marins trouvent leur chemin en mer, même sans terre en vue."
+      },
+      {
+        "id": "old-battery",
+        "emoji": "🔋",
+        "name": "Pile voltaïque",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Garder la nourriture fraîche",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Créer pour la première fois un flux continu d'électricité",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Allumer des feux de camp",
+            "correct": false
+          }
+        ],
+        "explanation": "En 1800, Alessandro Volta empila des disques de métaux différents avec un liquide entre eux et créa la première pile électrique de l'histoire, l'ancêtre des piles que nous utilisons aujourd'hui."
+      }
+    ]
+  },
+  {
+    "id": "art",
+    "emoji": "🎨",
+    "title": "Art",
+    "intro": "Œuvres et outils d'artistes du monde entier.",
+    "exhibits": [
+      {
+        "id": "cave-painting",
+        "emoji": "🖼️",
+        "name": "Peinture rupestre",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Raconter des histoires de chasses et d'animaux",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Décorer des chambres d'enfants",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Vendre en magasin",
+            "correct": false
+          }
+        ],
+        "explanation": "Il y a plus de 30 000 ans, les humains peignaient des animaux et des scènes de chasse sur les parois des grottes en utilisant de la terre colorée, du charbon de bois et du sang mélangés à de l'eau ou de la graisse animale."
+      },
+      {
+        "id": "sculpture-chisel",
+        "emoji": "🗿",
+        "name": "Ciseau de sculpteur",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Couper les cheveux",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Sculpter des formes dans la pierre ou le bois",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Écrire des lettres",
+            "correct": false
+          }
+        ],
+        "explanation": "Les sculpteurs utilisent un ciseau et un marteau pour enlever de petits morceaux de pierre ou de bois jusqu'à révéler la forme qu'ils avaient imaginée, comme une statue ou un relief."
+      },
+      {
+        "id": "paint-palette",
+        "emoji": "🎨",
+        "name": "Palette de peintre",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Servir de la nourriture",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Voler comme un jouet",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Mélanger les couleurs avant de peindre",
+            "correct": true
+          }
+        ],
+        "explanation": "La palette est une planche sur laquelle le peintre place de petites quantités de peinture et les mélange avec le pinceau pour créer de nouvelles couleurs avant de les appliquer sur la toile."
+      },
+      {
+        "id": "ancient-mask",
+        "emoji": "🎭",
+        "name": "Masque africain",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Porter lors de danses et cérémonies traditionnelles",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Protéger du froid",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Attraper des poissons",
+            "correct": false
+          }
+        ],
+        "explanation": "De nombreuses cultures africaines créent des masques en bois sculpté portés lors de danses et de cérémonies pour représenter des esprits, des ancêtres, ou raconter des histoires importantes de la communauté."
+      }
+    ]
+  },
+  {
+    "id": "computers",
+    "emoji": "💻",
+    "title": "Vieux ordinateurs",
+    "intro": "À quoi ressemblaient les ordinateurs il y a des décennies.",
+    "exhibits": [
+      {
+        "id": "punch-card",
+        "emoji": "🗃️",
+        "name": "Carte perforée",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Une invitation à une fête",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Donner des instructions aux premiers ordinateurs grâce à des trous",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Un billet de train",
+            "correct": false
+          }
+        ],
+        "explanation": "Avant les claviers, les premiers ordinateurs lisaient des cartes en papier percées de trous à des endroits précis. Chaque motif de trous représentait un nombre, une lettre ou une instruction."
+      },
+      {
+        "id": "floppy-disk",
+        "emoji": "💾",
+        "name": "Disquette",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Écouter de la musique",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Cuire du popcorn",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Stocker des fichiers d'ordinateur",
+            "correct": true
+          }
+        ],
+        "explanation": "Les disquettes stockaient les fichiers informatiques sur un disque magnétique fin et flexible. Une disquette typique contenait très peu de données — aujourd'hui un téléphone en stocke des milliers de fois plus."
+      },
+      {
+        "id": "vacuum-tube",
+        "emoji": "💡",
+        "name": "Tube électronique",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Contrôler le flux d'électricité dans les premiers ordinateurs",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Faire des guirlandes de Noël",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Contenir de l'eau",
+            "correct": false
+          }
+        ],
+        "explanation": "Avant les minuscules puces d'aujourd'hui, les ordinateurs utilisaient des milliers de tubes en verre, semblables à des ampoules, pour contrôler l'électricité. Ils remplissaient des pièces entières et chauffaient beaucoup."
+      },
+      {
+        "id": "mouse-early",
+        "emoji": "🖱️",
+        "name": "Première souris d'ordinateur",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Faire du bruit pour éloigner les chats",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Déplacer le curseur à l'écran en pointant avec la main",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Réchauffer le bureau",
+            "correct": false
+          }
+        ],
+        "explanation": "La première souris d'ordinateur a été inventée en 1964 par Douglas Engelbart. C'était une boîte en bois avec des roues qui, en se déplaçant sur le bureau, déplaçait le curseur à l'écran — une idée révolutionnaire à l'époque."
+      }
+    ]
+  },
+  {
+    "id": "space",
+    "emoji": "🚀",
+    "title": "Espace",
+    "intro": "Des objets utilisés pour explorer l'espace.",
+    "exhibits": [
+      {
+        "id": "space-suit",
+        "emoji": "👨‍🚀",
+        "name": "Combinaison spatiale",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Protéger l'astronaute et lui fournir de l'air à respirer dans l'espace",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Nager plus vite",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Faire du sport",
+            "correct": false
+          }
+        ],
+        "explanation": "La combinaison spatiale protège du vide de l'espace, des températures extrêmes et des radiations, tout en fournissant de l'oxygène à respirer, car il n'y a pas d'air en dehors de la Terre."
+      },
+      {
+        "id": "moon-rock",
+        "emoji": "🌑",
+        "name": "Roche lunaire",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Un jouet de plage",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Aider les scientifiques à étudier la formation de la Lune",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Un simple presse-papiers",
+            "correct": false
+          }
+        ],
+        "explanation": "Les astronautes de la mission Apollo ont rapporté des roches lunaires sur Terre. En les étudiant, les scientifiques ont appris que la Lune s'est formée il y a plus de 4 milliards d'années, probablement après une collision géante."
+      },
+      {
+        "id": "rocket-engine",
+        "emoji": "🚀",
+        "name": "Moteur de fusée",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Chauffer une maison",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Faire du jus",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Propulser la fusée hors de l'atmosphère terrestre",
+            "correct": true
+          }
+        ],
+        "explanation": "Les moteurs de fusée brûlent du carburant à grande vitesse, expulsant des gaz chauds vers l'arrière, ce qui propulse la fusée vers l'avant avec une force suffisante pour vaincre la gravité terrestre."
+      },
+      {
+        "id": "satellite",
+        "emoji": "🛰️",
+        "name": "Satellite",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Orbiter la Terre pour prendre des photos, prévoir la météo et aider les communications",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Servir de maison permanente aux astronautes",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Réchauffer la planète",
+            "correct": false
+          }
+        ],
+        "explanation": "Les satellites orbitent la Terre et nous aident de nombreuses façons : ils photographient la planète, prévoient la météo, transmettent des signaux TV et Internet, et aident le GPS à savoir où nous sommes."
+      }
+    ]
+  }
+]

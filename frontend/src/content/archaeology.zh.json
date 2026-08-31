@@ -1,0 +1,206 @@
+[
+  {
+    "id": "roman-villa",
+    "emoji": "🏛️",
+    "title": "罗马别墅",
+    "intro": "在河边发现的一座古罗马房屋的考古发掘。",
+    "artifacts": [
+      {
+        "id": "amphora-shards",
+        "emoji": "🏺",
+        "name": "双耳瓶碎片",
+        "detail": "几块烧制陶土碎片，内部有橄榄油残留。"
+      },
+      {
+        "id": "mosaic-tile",
+        "emoji": "🟦",
+        "name": "马赛克瓷砖",
+        "detail": "一块小的彩色方块，是装饰地板的一部分。"
+      },
+      {
+        "id": "roman-coin",
+        "emoji": "🪙",
+        "name": "罗马钱币",
+        "detail": "一枚刻有皇帝头像的金属钱币。"
+      },
+      {
+        "id": "fish-bones",
+        "emoji": "🐟",
+        "name": "鱼骨",
+        "detail": "在房屋厨房附近发现的小鱼骨。"
+      }
+    ],
+    "reasoningQuestion": "河边发现的橄榄油双耳瓶、马赛克、钱币和鱼骨。这些线索告诉我们住在这里的是什么样的人？",
+    "options": [
+      {
+        "id": "a",
+        "text": "他们是没有固定住所的非常贫穷的游牧民",
+        "correct": false
+      },
+      {
+        "id": "b",
+        "text": "他们是一个富裕的罗马家庭，饮食丰盛，用货币交易",
+        "correct": true
+      },
+      {
+        "id": "c",
+        "text": "他们是未来制造的机器人",
+        "correct": false
+      }
+    ],
+    "explanation": "考古学家是这样推理的：装饰精美的马赛克和油瓶显示出财富；钱币表明他们用货币购物；河边的鱼骨表明他们捕鱼或购买新鲜鱼类。综合这些线索，我们可以得出结论：这是一户生活在水边、过着舒适生活的富裕家庭。"
+  },
+  {
+    "id": "stone-age-camp",
+    "emoji": "🏕️",
+    "title": "石器时代营地",
+    "intro": "在一个数千年前的古老营地进行的考古发掘。",
+    "artifacts": [
+      {
+        "id": "flint-tools",
+        "emoji": "🔪",
+        "name": "燧石工具",
+        "detail": "为切割肉类和皮革而打磨的锋利石头。"
+      },
+      {
+        "id": "burnt-wood",
+        "emoji": "🔥",
+        "name": "烧焦的木头",
+        "detail": "石圈中的木炭残留物。"
+      },
+      {
+        "id": "animal-bones",
+        "emoji": "🦴",
+        "name": "动物骨骼",
+        "detail": "带有切割痕迹的鹿骨和野猪骨。"
+      },
+      {
+        "id": "bead-necklace",
+        "emoji": "📿",
+        "name": "珠子项链",
+        "detail": "用贝壳制成的小珠子，中间有一个孔。"
+      }
+    ],
+    "reasoningQuestion": "切割工具、火坑、带有切割痕迹的动物骨骼和贝壳项链。我们能从中了解到这些人的什么信息？",
+    "options": [
+      {
+        "id": "a",
+        "text": "他们狩猎动物、用火烹饪，也喜欢制作精美的饰品",
+        "correct": true
+      },
+      {
+        "id": "b",
+        "text": "他们生活在水下",
+        "correct": false
+      },
+      {
+        "id": "c",
+        "text": "他们只吃植物，从不使用工具",
+        "correct": false
+      }
+    ],
+    "explanation": "骨头上的切割痕迹表明他们使用燧石工具来处理猎获的动物。火坑表明他们会烹饪食物。贝壳项链则表明，除了生存之外，他们也在意美和群体认同——艺术和文化早在很久以前就已经存在了！"
+  },
+  {
+    "id": "medieval-village",
+    "emoji": "🏘️",
+    "title": "中世纪村庄",
+    "intro": "在中世纪村庄遗址进行的考古发掘。",
+    "artifacts": [
+      {
+        "id": "stone-wall",
+        "emoji": "🧱",
+        "name": "墙壁遗迹",
+        "detail": "堆叠的石头，构成了房屋的地基。"
+      },
+      {
+        "id": "iron-horseshoe",
+        "emoji": "🧲",
+        "name": "铁马蹄铁",
+        "detail": "一块U形金属，因使用而磨损。"
+      },
+      {
+        "id": "grain-storage",
+        "emoji": "🌾",
+        "name": "小麦种子",
+        "detail": "储存在石砌坑中的干种子。"
+      },
+      {
+        "id": "pottery-jug",
+        "emoji": "🏺",
+        "name": "陶罐",
+        "detail": "一个用来储水的简单陶罐。"
+      }
+    ],
+    "reasoningQuestion": "石墙、马蹄铁、储存的小麦种子和水罐。这些人过着怎样的生活？",
+    "options": [
+      {
+        "id": "a",
+        "text": "以务农为生，种植小麦，用马劳作，居住在固定的房屋中",
+        "correct": true
+      },
+      {
+        "id": "b",
+        "text": "海盗生活，只在海上航行",
+        "correct": false
+      },
+      {
+        "id": "c",
+        "text": "有汽车和电力的城市生活",
+        "correct": false
+      }
+    ],
+    "explanation": "石墙表明这是永久性住所，而非帐篷。马蹄铁表明他们用马来耕地或运输物品。储存的小麦种子表明他们从事农业，并注意为冬天储备食物。水罐则展现了中世纪农业村庄简单的日常生活。"
+  },
+  {
+    "id": "shipwreck",
+    "emoji": "⚓",
+    "title": "沉船",
+    "intro": "在一艘旧船残骸中进行的水下考古发掘。",
+    "artifacts": [
+      {
+        "id": "ship-anchor",
+        "emoji": "⚓",
+        "name": "锚",
+        "detail": "一块覆盖着藻类和铁锈的大铁块。"
+      },
+      {
+        "id": "porcelain-plates",
+        "emoji": "🍽️",
+        "name": "瓷盘",
+        "detail": "来自遥远土地的精美装饰盘子。"
+      },
+      {
+        "id": "spice-jars",
+        "emoji": "🫙",
+        "name": "香料罐",
+        "detail": "装有胡椒和肉桂的密封罐子。"
+      },
+      {
+        "id": "captains-compass",
+        "emoji": "🧭",
+        "name": "船长的指南针",
+        "detail": "用于引导船只的青铜指南针。"
+      }
+    ],
+    "reasoningQuestion": "锚、精美的瓷盘、香料罐和指南针。这些线索告诉我们这次航行的什么信息？",
+    "options": [
+      {
+        "id": "a",
+        "text": "它是附近村庄的一艘小渔船",
+        "correct": false
+      },
+      {
+        "id": "b",
+        "text": "它是一艘远航的商船，运载着珍贵的香料和瓷器",
+        "correct": true
+      },
+      {
+        "id": "c",
+        "text": "它是一艘现代潜艇",
+        "correct": false
+      }
+    ],
+    "explanation": "精美的瓷器和胡椒、肉桂等香料并非本地产物——它们来自非常遥远的地方，这表明这是一艘航行于漫长海路的商船。指南针证实了他们需要在远离海岸的公海上导航。"
+  }
+]

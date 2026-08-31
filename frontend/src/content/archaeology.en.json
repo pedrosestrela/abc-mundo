@@ -1,0 +1,206 @@
+[
+  {
+    "id": "roman-villa",
+    "emoji": "🏛️",
+    "title": "The Roman Villa",
+    "intro": "A dig in an ancient Roman house found near a river.",
+    "artifacts": [
+      {
+        "id": "amphora-shards",
+        "emoji": "🏺",
+        "name": "Amphora Shards",
+        "detail": "Several pieces of fired clay, with olive oil residue inside."
+      },
+      {
+        "id": "mosaic-tile",
+        "emoji": "🟦",
+        "name": "Mosaic Tile",
+        "detail": "A small colored square, part of a decorated floor."
+      },
+      {
+        "id": "roman-coin",
+        "emoji": "🪙",
+        "name": "Roman Coin",
+        "detail": "A metal coin with an emperor's face engraved on it."
+      },
+      {
+        "id": "fish-bones",
+        "emoji": "🐟",
+        "name": "Fish Bones",
+        "detail": "Small fish bones found near the house's kitchen."
+      }
+    ],
+    "reasoningQuestion": "Amphorae with olive oil, mosaics, a coin, and fish bones near a river. What do these clues tell us about who lived here?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They were very poor nomads with no fixed home",
+        "correct": false
+      },
+      {
+        "id": "b",
+        "text": "They were a well-off Roman family who ate well and traded using money",
+        "correct": true
+      },
+      {
+        "id": "c",
+        "text": "They were robots built in the future",
+        "correct": false
+      }
+    ],
+    "explanation": "Archaeologists reason like this: decorated mosaics and oil amphorae show wealth; the coin shows they used money to buy things; fish bones near the river show they fished or bought fresh fish. Putting the clues together, we conclude it was a well-off family living comfortably near water."
+  },
+  {
+    "id": "stone-age-camp",
+    "emoji": "🏕️",
+    "title": "The Stone Age Camp",
+    "intro": "A dig at a very old camp, from thousands of years ago.",
+    "artifacts": [
+      {
+        "id": "flint-tools",
+        "emoji": "🔪",
+        "name": "Flint Tools",
+        "detail": "Sharp stones chipped for cutting meat and hides."
+      },
+      {
+        "id": "burnt-wood",
+        "emoji": "🔥",
+        "name": "Burnt Wood",
+        "detail": "Charcoal remains in a circle of stones."
+      },
+      {
+        "id": "animal-bones",
+        "emoji": "🦴",
+        "name": "Animal Bones",
+        "detail": "Deer and boar bones with cut marks."
+      },
+      {
+        "id": "bead-necklace",
+        "emoji": "📿",
+        "name": "Bead Necklace",
+        "detail": "Small beads made of shells, with a hole through the middle."
+      }
+    ],
+    "reasoningQuestion": "Cutting tools, a fire pit, animal bones with cut marks, and a shell necklace. What do we learn about these people?",
+    "options": [
+      {
+        "id": "a",
+        "text": "That they hunted animals, cooked with fire, and also liked making beautiful ornaments",
+        "correct": true
+      },
+      {
+        "id": "b",
+        "text": "That they lived underwater",
+        "correct": false
+      },
+      {
+        "id": "c",
+        "text": "That they only ate plants and never used tools",
+        "correct": false
+      }
+    ],
+    "explanation": "The cut marks on the bones show they used flint tools to butcher hunted animals. The fire pit shows they cooked. And the shell necklace shows that, beyond survival, they also cared about beauty and perhaps group identity — art and culture existed a very long time ago!"
+  },
+  {
+    "id": "medieval-village",
+    "emoji": "🏘️",
+    "title": "The Medieval Village",
+    "intro": "A dig in the ruins of a Middle Ages village.",
+    "artifacts": [
+      {
+        "id": "stone-wall",
+        "emoji": "🧱",
+        "name": "Wall Remains",
+        "detail": "Stacked stones that formed the base of a house."
+      },
+      {
+        "id": "iron-horseshoe",
+        "emoji": "🧲",
+        "name": "Iron Horseshoe",
+        "detail": "A U-shaped metal piece, worn from use."
+      },
+      {
+        "id": "grain-storage",
+        "emoji": "🌾",
+        "name": "Wheat Seeds",
+        "detail": "Dried seeds stored in a stone-lined pit."
+      },
+      {
+        "id": "pottery-jug",
+        "emoji": "🏺",
+        "name": "Pottery Jug",
+        "detail": "A simple clay jug for storing water."
+      }
+    ],
+    "reasoningQuestion": "Stone walls, a horseshoe, stored wheat seeds, and a water jug. What kind of life did these people have?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A farming life, growing wheat, using horses for work, and living in fixed houses",
+        "correct": true
+      },
+      {
+        "id": "b",
+        "text": "A pirate life, only sailing the seas",
+        "correct": false
+      },
+      {
+        "id": "c",
+        "text": "A city life with cars and electricity",
+        "correct": false
+      }
+    ],
+    "explanation": "The stone walls show permanent houses, not tents. The horseshoe shows they used horses to work the fields or carry things. The stored wheat seeds show farming and care about saving food for winter. The jug shows the simple daily life of a medieval farming village."
+  },
+  {
+    "id": "shipwreck",
+    "emoji": "⚓",
+    "title": "The Shipwreck",
+    "intro": "An underwater dig in the wreckage of an old ship.",
+    "artifacts": [
+      {
+        "id": "ship-anchor",
+        "emoji": "⚓",
+        "name": "Anchor",
+        "detail": "A large iron piece covered in algae and rust."
+      },
+      {
+        "id": "porcelain-plates",
+        "emoji": "🍽️",
+        "name": "Porcelain Plates",
+        "detail": "Fine decorated plates, from faraway lands."
+      },
+      {
+        "id": "spice-jars",
+        "emoji": "🫙",
+        "name": "Spice Jars",
+        "detail": "Sealed jars containing pepper and cinnamon."
+      },
+      {
+        "id": "captains-compass",
+        "emoji": "🧭",
+        "name": "Captain's Compass",
+        "detail": "A bronze compass used to guide the ship."
+      }
+    ],
+    "reasoningQuestion": "An anchor, fine porcelain plates, spice jars, and a compass. What do these clues tell us about this voyage?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It was a small fishing boat from the nearby village",
+        "correct": false
+      },
+      {
+        "id": "b",
+        "text": "It was a trading ship that sailed far away, carrying valuable spices and porcelain",
+        "correct": true
+      },
+      {
+        "id": "c",
+        "text": "It was a modern submarine",
+        "correct": false
+      }
+    ],
+    "explanation": "Fine porcelain and spices like pepper and cinnamon weren't local — they were brought from very distant lands, showing this was a trading ship traveling long sea routes. The compass confirms they needed to navigate the open ocean, far from the coast."
+  }
+]

@@ -1,0 +1,834 @@
+[
+  {
+    "id": "archaeology",
+    "emoji": "🏺",
+    "title": "考古学",
+    "intro": "在地下发现的非常古老的物品。",
+    "exhibits": [
+      {
+        "id": "amphora",
+        "emoji": "🏺",
+        "name": "希腊双耳瓶",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "一顶帽子",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "储存橄榄油或葡萄酒",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "一个玩具",
+            "correct": false
+          }
+        ],
+        "explanation": "双耳瓶是古希腊和罗马时期使用的高身双耳罐子，用于在船上和家中运输和储存橄榄油、葡萄酒和谷物。"
+      },
+      {
+        "id": "arrowhead",
+        "emoji": "🗡️",
+        "name": "箭头",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "狩猎动物",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "剪头发",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "演奏音乐",
+            "correct": false
+          }
+        ],
+        "explanation": "箭头是用石头（燧石）打磨而成，固定在木杆上。几千年前，人们用它来狩猎动物和自卫。"
+      },
+      {
+        "id": "clay-tablet",
+        "emoji": "🪧",
+        "name": "泥板",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "一个枕头",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "一个食物盘",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "书写信息和账目",
+            "correct": true
+          }
+        ],
+        "explanation": "在美索不达米亚，人们用尖芦苇在软泥板上书写，形成被称为楔形文字的符号。泥板干燥后，文字就被永久保存下来。"
+      },
+      {
+        "id": "mummy-mask",
+        "emoji": "𓆣",
+        "name": "葬礼面具",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "一个派对面具",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "在古埃及保护木乃伊的脸部",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "一面镜子",
+            "correct": false
+          }
+        ],
+        "explanation": "在古埃及，人们会在木乃伊的脸上放一个面具，以保护死者的灵魂，并帮助他们在来世被认出。"
+      }
+    ]
+  },
+  {
+    "id": "dinosaurs",
+    "emoji": "🦖",
+    "title": "恐龙",
+    "intro": "生活在数百万年前的巨型爬行动物。",
+    "exhibits": [
+      {
+        "id": "trex-tooth",
+        "emoji": "🦷",
+        "name": "霸王龙牙齿",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "撕开其他动物的肉",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "咀嚼植物",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "挖洞",
+            "correct": false
+          }
+        ],
+        "explanation": "霸王龙拥有巨大的锯齿状牙齿，长达20厘米，用来咬住和撕裂其他恐龙的肉。它是有史以来最大的掠食者之一。"
+      },
+      {
+        "id": "triceratops-horn",
+        "emoji": "🦏",
+        "name": "三角龙角",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "梳理毛发",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "抵御霸王龙等捕食者",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "飞行",
+            "correct": false
+          }
+        ],
+        "explanation": "三角龙头上有三只角，颈部还有一个大骨盾。它用这些来抵御捕食者，也可能用来与其他三角龙竞争。"
+      },
+      {
+        "id": "fossil-egg",
+        "emoji": "🥚",
+        "name": "化石蛋",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "做煎蛋卷",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "一个玩耍的球",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "在孵化前容纳恐龙宝宝",
+            "correct": true
+          }
+        ],
+        "explanation": "恐龙蛋被埋藏了数百万年，变成了石头。通过研究它们，科学家们了解了恐龙宝宝在孵化前是如何在里面成长的。"
+      },
+      {
+        "id": "pterosaur-wing",
+        "emoji": "🦴",
+        "name": "翼龙翼骨",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "在天空中飞行",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "在水下游泳",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "跑得非常快",
+            "correct": false
+          }
+        ],
+        "explanation": "翼龙不是恐龙，而是与恐龙同时代生活的会飞的爬行动物。一根很长的手指支撑着一层皮膜，起到翅膀的作用。"
+      }
+    ]
+  },
+  {
+    "id": "history",
+    "emoji": "👑",
+    "title": "历史",
+    "intro": "国王、王后和古代民族的物品。",
+    "exhibits": [
+      {
+        "id": "crown",
+        "emoji": "👑",
+        "name": "王冠",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "一顶雨帽",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "表明这个人是国王或王后",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "儿童玩具",
+            "correct": false
+          }
+        ],
+        "explanation": "王冠由黄金和宝石制成，用来表明佩戴者拥有统治王国的权力。王冠越华丽，国王或王后就越重要。"
+      },
+      {
+        "id": "sword",
+        "emoji": "⚔️",
+        "name": "中世纪剑",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "在战斗中战斗和自卫",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "切面包",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "梳头",
+            "correct": false
+          }
+        ],
+        "explanation": "中世纪骑士使用铁剑或钢剑在战斗和比武中作战。许多剑都有自己的名字，作为传家宝代代相传。"
+      },
+      {
+        "id": "old-coin",
+        "emoji": "🪙",
+        "name": "古钱币",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "衣服上的纽扣",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "墙壁装饰",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "买卖东西",
+            "correct": true
+          }
+        ],
+        "explanation": "古钱币由金属制成，上面常常刻有国王的头像。它们用于在市场上买卖商品，而不是直接以物易物。"
+      },
+      {
+        "id": "wax-seal",
+        "emoji": "📜",
+        "name": "蜡封",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "制作蜡烛照亮城堡",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "封信并证明信件是真实的",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "粘贴图画",
+            "correct": false
+          }
+        ],
+        "explanation": "在现代信封出现之前，人们把信折好，滴上热蜡，再用特制的戒指盖章。如果封蜡破损，大家就知道有人拆过信。"
+      }
+    ]
+  },
+  {
+    "id": "transport",
+    "emoji": "🚂",
+    "title": "交通工具",
+    "intro": "历史上人们的出行方式。",
+    "exhibits": [
+      {
+        "id": "steam-locomotive",
+        "emoji": "🚂",
+        "name": "蒸汽机车",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "在城市间飞行",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "在河里游泳",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "通过燃烧煤炭产生蒸汽来牵引火车",
+            "correct": true
+          }
+        ],
+        "explanation": "蒸汽机车通过燃烧煤炭加热水产生蒸汽，蒸汽推动活塞使车轮转动。它们在19世纪彻底改变了出行方式，让旅行速度大大加快。"
+      },
+      {
+        "id": "horse-carriage",
+        "emoji": "🐎",
+        "name": "马车",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "在汽车出现之前载人出行",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "飞越山脉",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "在湖中游泳",
+            "correct": false
+          }
+        ],
+        "explanation": "在汽车出现之前，马车是城市街道和道路上的主要交通工具，富裕家庭和邮政投递都会使用它。"
+      },
+      {
+        "id": "viking-ship",
+        "emoji": "🚢",
+        "name": "维京船",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "浴缸玩具",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "在海上远航",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "储存鱼类",
+            "correct": false
+          }
+        ],
+        "explanation": "维京船船体薄而灵活，配有方形帆，使其能够在波涛汹涌的海面甚至浅河中航行，足迹远至斯堪的纳维亚以外的地方。"
+      },
+      {
+        "id": "old-bicycle",
+        "emoji": "🚲",
+        "name": "老式自行车",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "在河里钓鱼",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "烹饪",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "无需燃料就能更快地出行",
+            "correct": true
+          }
+        ],
+        "explanation": "19世纪最早的自行车没有像今天这样的刹车和脚踏板。它们是最早仅靠腿部力量驱动的个人交通工具之一。"
+      }
+    ]
+  },
+  {
+    "id": "science",
+    "emoji": "🔬",
+    "title": "科学",
+    "intro": "帮助人类探索世界的仪器。",
+    "exhibits": [
+      {
+        "id": "microscope",
+        "emoji": "🔬",
+        "name": "老式显微镜",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "观察星星",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "看到肉眼看不到的微小事物",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "听到轻微的声音",
+            "correct": false
+          }
+        ],
+        "explanation": "显微镜利用镜片放大微小事物的图像，比如细胞和微生物。多亏了它，科学家们发现了肉眼看不见的生物。"
+      },
+      {
+        "id": "telescope",
+        "emoji": "🔭",
+        "name": "老式望远镜",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "近距离观察行星和恒星",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "远距离闻花香",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "让天下雨",
+            "correct": false
+          }
+        ],
+        "explanation": "望远镜利用镜片或反射镜捕捉遥远物体的光线，使其变得可见且更大。400多年前，伽利略用望远镜发现了木星的卫星。"
+      },
+      {
+        "id": "compass-science",
+        "emoji": "🧭",
+        "name": "老式指南针",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "测量温度",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "报时",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "找出北方在哪里",
+            "correct": true
+          }
+        ],
+        "explanation": "指南针有一根磁针，总是指向地球的磁北极。它对水手在看不到陆地的海上找到方向至关重要。"
+      },
+      {
+        "id": "old-battery",
+        "emoji": "🔋",
+        "name": "伏打电堆",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "保鲜食物",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "首次持续产生电力",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "点燃篝火",
+            "correct": false
+          }
+        ],
+        "explanation": "1800年，亚历山德罗·伏打将不同金属的圆盘叠放在一起，中间夹着液体，创造了历史上第一个电池，也就是我们今天使用的电池的鼻祖。"
+      }
+    ]
+  },
+  {
+    "id": "art",
+    "emoji": "🎨",
+    "title": "艺术",
+    "intro": "来自世界各地艺术家的作品和工具。",
+    "exhibits": [
+      {
+        "id": "cave-painting",
+        "emoji": "🖼️",
+        "name": "洞穴壁画",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "讲述狩猎和动物的故事",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "装饰儿童卧室",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "在商店出售",
+            "correct": false
+          }
+        ],
+        "explanation": "三万多年前，人类用彩色泥土、木炭和混有水或动物脂肪的血液，在洞穴壁上绘制动物和狩猎场景。"
+      },
+      {
+        "id": "sculpture-chisel",
+        "emoji": "🗿",
+        "name": "雕刻凿",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "剪头发",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "在石头或木头上雕刻形状",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "写信",
+            "correct": false
+          }
+        ],
+        "explanation": "雕刻家用凿子和锤子一点点凿去石头或木头，直到显现出他们想象中的形状，比如雕像或浮雕。"
+      },
+      {
+        "id": "paint-palette",
+        "emoji": "🎨",
+        "name": "画家调色板",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "盛放食物",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "像玩具一样飞",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "在绘画前调配颜色",
+            "correct": true
+          }
+        ],
+        "explanation": "调色板是画家放置少量颜料并用画笔混合、在涂到画布上之前调配出新颜色的板子。"
+      },
+      {
+        "id": "ancient-mask",
+        "emoji": "🎭",
+        "name": "非洲面具",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "在传统舞蹈和仪式中佩戴",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "御寒",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "捕鱼",
+            "correct": false
+          }
+        ],
+        "explanation": "许多非洲文化会制作木雕面具，用于舞蹈和仪式中，代表精灵、祖先，或讲述社区中的重要故事。"
+      }
+    ]
+  },
+  {
+    "id": "computers",
+    "emoji": "💻",
+    "title": "老式电脑",
+    "intro": "几十年前的电脑是什么样子的。",
+    "exhibits": [
+      {
+        "id": "punch-card",
+        "emoji": "🗃️",
+        "name": "穿孔卡片",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "派对邀请函",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "通过打孔给早期计算机下达指令",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "火车票",
+            "correct": false
+          }
+        ],
+        "explanation": "在键盘出现之前，早期计算机通过读取特定位置打孔的纸卡来工作。每种打孔图案代表一个数字、字母或指令。"
+      },
+      {
+        "id": "floppy-disk",
+        "emoji": "💾",
+        "name": "软盘",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "播放音乐",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "做爆米花",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "存储电脑文件",
+            "correct": true
+          }
+        ],
+        "explanation": "软盘将计算机文件存储在薄而柔软的磁盘上。一张普通软盘存储的数据非常少——如今一部手机的存储量比它多出成千上万倍。"
+      },
+      {
+        "id": "vacuum-tube",
+        "emoji": "💡",
+        "name": "电子管",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "控制早期计算机中的电流",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "制作圣诞灯",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "盛水",
+            "correct": false
+          }
+        ],
+        "explanation": "在如今的微型芯片出现之前，计算机使用数千根类似灯泡的玻璃管来控制电流。它们占满整个房间，而且非常炙热。"
+      },
+      {
+        "id": "mouse-early",
+        "emoji": "🖱️",
+        "name": "早期电脑鼠标",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "发出噪音吓跑猫",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "用手指向来移动屏幕上的光标",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "给桌子加热",
+            "correct": false
+          }
+        ],
+        "explanation": "第一个电脑鼠标由道格拉斯·恩格尔巴特于1964年发明。它是一个带轮子的木盒，在桌面上移动时会带动屏幕上的光标移动——在当时是一个革命性的想法。"
+      }
+    ]
+  },
+  {
+    "id": "space",
+    "emoji": "🚀",
+    "title": "太空",
+    "intro": "用于探索太空的物品。",
+    "exhibits": [
+      {
+        "id": "space-suit",
+        "emoji": "👨‍🚀",
+        "name": "宇航服",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "保护宇航员并在太空中提供呼吸用的空气",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "游得更快",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "运动健身",
+            "correct": false
+          }
+        ],
+        "explanation": "宇航服可以防护太空的真空环境、极端温度和辐射，同时提供氧气供呼吸，因为地球以外没有空气。"
+      },
+      {
+        "id": "moon-rock",
+        "emoji": "🌑",
+        "name": "月岩",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "沙滩玩具",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "帮助科学家研究月球是如何形成的",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "普通的镇纸",
+            "correct": false
+          }
+        ],
+        "explanation": "阿波罗任务的宇航员将月岩带回了地球。通过研究这些岩石，科学家们了解到月球是在40多亿年前，很可能是在一次巨大撞击之后形成的。"
+      },
+      {
+        "id": "rocket-engine",
+        "emoji": "🚀",
+        "name": "火箭发动机",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "给房子供暖",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "榨汁",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "把火箭推出地球大气层",
+            "correct": true
+          }
+        ],
+        "explanation": "火箭发动机高速燃烧燃料，从后部喷出热气体，从而以足够的力量推动火箭前进，克服地球引力。"
+      },
+      {
+        "id": "satellite",
+        "emoji": "🛰️",
+        "name": "卫星",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "绕地球轨道运行，拍照、预报天气并协助通信",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "作为宇航员永久居住的家",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "给地球加热",
+            "correct": false
+          }
+        ],
+        "explanation": "卫星绕地球运行，以多种方式帮助我们：拍摄地球照片、预报天气、传输电视和互联网信号，并帮助GPS确定我们的位置。"
+      }
+    ]
+  }
+]

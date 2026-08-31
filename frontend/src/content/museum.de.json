@@ -1,0 +1,834 @@
+[
+  {
+    "id": "archaeology",
+    "emoji": "🏺",
+    "title": "Archäologie",
+    "intro": "Sehr alte Gegenstände, die unter der Erde gefunden wurden.",
+    "exhibits": [
+      {
+        "id": "amphora",
+        "emoji": "🏺",
+        "name": "Griechische Amphore",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Ein Hut",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Öl oder Wein aufbewahren",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Ein Spielzeug",
+            "correct": false
+          }
+        ],
+        "explanation": "Amphoren waren hohe, zweihenklige Krüge, die im antiken Griechenland und Rom verwendet wurden, um Öl, Wein und Getreide auf Schiffen und in Häusern zu lagern."
+      },
+      {
+        "id": "arrowhead",
+        "emoji": "🗡️",
+        "name": "Pfeilspitze",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Tiere jagen",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Haare schneiden",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Musik machen",
+            "correct": false
+          }
+        ],
+        "explanation": "Pfeilspitzen wurden aus Stein (Feuerstein) geschlagen und an einem Holzschaft befestigt. Sie dienten vor Tausenden von Jahren der Jagd und der Verteidigung."
+      },
+      {
+        "id": "clay-tablet",
+        "emoji": "🪧",
+        "name": "Tontafel",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Ein Kissen",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Ein Essteller",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Nachrichten und Rechnungen schreiben",
+            "correct": true
+          }
+        ],
+        "explanation": "In Mesopotamien schrieben die Menschen mit einem spitzen Schilfrohr auf weichen Ton und erzeugten Zeichen, die Keilschrift genannt werden. Der Ton trocknete dann und bewahrte die Schrift für immer."
+      },
+      {
+        "id": "mummy-mask",
+        "emoji": "𓆣",
+        "name": "Totenmaske",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Eine Partymaske",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Das Gesicht der Mumie im alten Ägypten schützen",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Ein Spiegel",
+            "correct": false
+          }
+        ],
+        "explanation": "Im alten Ägypten wurde eine Maske auf das Gesicht der Mumie gelegt, um den Geist der Person zu schützen und ihr zu helfen, im Jenseits erkannt zu werden."
+      }
+    ]
+  },
+  {
+    "id": "dinosaurs",
+    "emoji": "🦖",
+    "title": "Dinosaurier",
+    "intro": "Riesige Reptilien, die vor Millionen von Jahren lebten.",
+    "exhibits": [
+      {
+        "id": "trex-tooth",
+        "emoji": "🦷",
+        "name": "T-Rex-Zahn",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Fleisch anderer Tiere reißen",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Pflanzen kauen",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Löcher graben",
+            "correct": false
+          }
+        ],
+        "explanation": "Der Tyrannosaurus rex hatte riesige, gezackte Zähne von bis zu 20 cm Länge, die zum Beißen und Zerreißen des Fleisches anderer Dinosaurier dienten. Er war einer der größten Raubtiere überhaupt."
+      },
+      {
+        "id": "triceratops-horn",
+        "emoji": "🦏",
+        "name": "Triceratops-Horn",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Sich kämmen",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Sich gegen Raubtiere wie den T-Rex verteidigen",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Fliegen",
+            "correct": false
+          }
+        ],
+        "explanation": "Der Triceratops hatte drei Hörner am Kopf und einen großen knöchernen Nackenschild. Er nutzte sie zur Verteidigung gegen Raubtiere und vielleicht auch, um mit anderen Triceratops zu konkurrieren."
+      },
+      {
+        "id": "fossil-egg",
+        "emoji": "🥚",
+        "name": "Fossiles Ei",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Omeletts machen",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Ein Spielball",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Ein Baby-Dinosaurier vor dem Schlüpfen",
+            "correct": true
+          }
+        ],
+        "explanation": "Dinosauriereier blieben Millionen von Jahren vergraben und verwandelten sich in Stein. Durch ihre Untersuchung erfahren Wissenschaftler, wie Baby-Dinosaurier darin heranwuchsen."
+      },
+      {
+        "id": "pterosaur-wing",
+        "emoji": "🦴",
+        "name": "Flugsaurier-Flügelknochen",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Durch den Himmel fliegen",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Unter Wasser schwimmen",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Sehr schnell laufen",
+            "correct": false
+          }
+        ],
+        "explanation": "Flugsaurier waren keine Dinosaurier, sondern fliegende Reptilien, die zur gleichen Zeit lebten. Ein sehr langer Finger stützte eine Hautmembran, die wie ein Flügel funktionierte."
+      }
+    ]
+  },
+  {
+    "id": "history",
+    "emoji": "👑",
+    "title": "Geschichte",
+    "intro": "Gegenstände von Königen, Königinnen und alten Völkern.",
+    "exhibits": [
+      {
+        "id": "crown",
+        "emoji": "👑",
+        "name": "Königliche Krone",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Ein Regenhut",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Zeigen, dass die Person König oder Königin war",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Ein Kinderspielzeug",
+            "correct": false
+          }
+        ],
+        "explanation": "Kronen wurden aus Gold und Edelsteinen gefertigt, um zu zeigen, dass der Träger die Macht hatte, ein Königreich zu regieren. Je reicher die Krone, desto wichtiger der König oder die Königin."
+      },
+      {
+        "id": "sword",
+        "emoji": "⚔️",
+        "name": "Mittelalterliches Schwert",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "In Schlachten kämpfen und sich verteidigen",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Brot schneiden",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Haare kämmen",
+            "correct": false
+          }
+        ],
+        "explanation": "Mittelalterliche Ritter benutzten Schwerter aus Eisen oder Stahl, um in Schlachten und Turnieren zu kämpfen. Viele hatten eigene Namen und wurden als Familienschatz vom Vater an den Sohn weitergegeben."
+      },
+      {
+        "id": "old-coin",
+        "emoji": "🪙",
+        "name": "Antike Münze",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Ein Kleidungsknopf",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Eine Wanddekoration",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Dinge kaufen und verkaufen",
+            "correct": true
+          }
+        ],
+        "explanation": "Antike Münzen wurden aus Metall gefertigt, oft mit dem Gesicht des Königs geprägt. Sie dienten zum Kaufen und Verkaufen von Waren auf dem Markt, anstatt einen Gegenstand direkt gegen einen anderen zu tauschen."
+      },
+      {
+        "id": "wax-seal",
+        "emoji": "📜",
+        "name": "Wachssiegel",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Kerzen zur Beleuchtung von Schlössern herstellen",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Briefe verschließen und ihre Echtheit beweisen",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Zeichnungen kleben",
+            "correct": false
+          }
+        ],
+        "explanation": "Vor modernen Umschlägen wurde ein Brief gefaltet, heißes Wachs daraufgetropft und mit einem besonderen Ring gestempelt. War das Siegel gebrochen, wusste man, dass jemand den Brief geöffnet hatte."
+      }
+    ]
+  },
+  {
+    "id": "transport",
+    "emoji": "🚂",
+    "title": "Transportmittel",
+    "intro": "Wie die Menschen im Laufe der Geschichte reisten.",
+    "exhibits": [
+      {
+        "id": "steam-locomotive",
+        "emoji": "🚂",
+        "name": "Dampflokomotive",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Zwischen Städten fliegen",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "In Flüssen schwimmen",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Züge ziehen, indem Kohle zu Dampf verbrannt wird",
+            "correct": true
+          }
+        ],
+        "explanation": "Dampflokomotiven verbrannten Kohle, um Wasser zu erhitzen und Dampf zu erzeugen, der Kolben antrieb und die Räder drehte. Sie revolutionierten das Reisen im 19. Jahrhundert und machten es viel schneller."
+      },
+      {
+        "id": "horse-carriage",
+        "emoji": "🐎",
+        "name": "Pferdekutsche",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Menschen befördern, bevor es Autos gab",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Über Berge fliegen",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "In Seen schwimmen",
+            "correct": false
+          }
+        ],
+        "explanation": "Bevor es Autos gab, waren von Pferden gezogene Kutschen das Hauptverkehrsmittel auf Stadtstraßen und Landstraßen, genutzt von wohlhabenden Familien und für die Postzustellung."
+      },
+      {
+        "id": "viking-ship",
+        "emoji": "🚢",
+        "name": "Wikingerschiff",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Ein Badewannenspielzeug",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Lange Strecken über das Meer segeln",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Fisch aufbewahren",
+            "correct": false
+          }
+        ],
+        "explanation": "Wikingerschiffe hatten einen dünnen, flexiblen Rumpf und ein Quadratsegel, was ihnen erlaubte, auf stürmischer See und sogar in flachen Flüssen zu segeln und weit über Skandinavien hinauszukommen."
+      },
+      {
+        "id": "old-bicycle",
+        "emoji": "🚲",
+        "name": "Altes Fahrrad",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Im Fluss fischen",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Kochen",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Sich schneller fortbewegen, ohne Kraftstoff zu verbrauchen",
+            "correct": true
+          }
+        ],
+        "explanation": "Die ersten Fahrräder aus dem 19. Jahrhundert hatten weder Bremsen noch Pedale wie die heutigen. Sie waren eine der ersten Formen persönlichen Transports, die allein durch Beinkraft angetrieben wurden."
+      }
+    ]
+  },
+  {
+    "id": "science",
+    "emoji": "🔬",
+    "title": "Wissenschaft",
+    "intro": "Instrumente, die halfen, die Welt zu entdecken.",
+    "exhibits": [
+      {
+        "id": "microscope",
+        "emoji": "🔬",
+        "name": "Altes Mikroskop",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Sterne ansehen",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Dinge sehen, die für unsere Augen zu klein sind",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Leise Geräusche hören",
+            "correct": false
+          }
+        ],
+        "explanation": "Das Mikroskop nutzt Linsen, um Bilder winziger Dinge wie Zellen und Mikroben zu vergrößern. Dank ihm entdeckten Wissenschaftler, dass es Lebewesen gibt, die mit bloßem Auge unsichtbar sind."
+      },
+      {
+        "id": "telescope",
+        "emoji": "🔭",
+        "name": "Altes Teleskop",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Planeten und Sterne aus der Nähe sehen",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Blumen aus der Ferne riechen",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Regen machen",
+            "correct": false
+          }
+        ],
+        "explanation": "Das Teleskop nutzt Linsen oder Spiegel, um Licht von sehr weit entfernten Objekten einzufangen und sie sichtbar und größer zu machen. Galileo entdeckte damit vor über 400 Jahren die Monde des Jupiter."
+      },
+      {
+        "id": "compass-science",
+        "emoji": "🧭",
+        "name": "Alter Kompass",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Temperatur messen",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Die Zeit angeben",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Herausfinden, wo Norden ist",
+            "correct": true
+          }
+        ],
+        "explanation": "Der Kompass hat eine Magnetnadel, die immer zum magnetischen Norden der Erde zeigt. Er war für Seefahrer unverzichtbar, um auf See ihren Weg zu finden, selbst wenn kein Land in Sicht war."
+      },
+      {
+        "id": "old-battery",
+        "emoji": "🔋",
+        "name": "Volta-Säule",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Lebensmittel frisch halten",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Erstmals kontinuierlich Elektrizität erzeugen",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Lagerfeuer entzünden",
+            "correct": false
+          }
+        ],
+        "explanation": "Im Jahr 1800 stapelte Alessandro Volta Scheiben aus verschiedenen Metallen mit Flüssigkeit dazwischen und schuf die erste elektrische Batterie der Geschichte, den Vorläufer unserer heutigen Batterien."
+      }
+    ]
+  },
+  {
+    "id": "art",
+    "emoji": "🎨",
+    "title": "Kunst",
+    "intro": "Werke und Werkzeuge von Künstlern aus aller Welt.",
+    "exhibits": [
+      {
+        "id": "cave-painting",
+        "emoji": "🖼️",
+        "name": "Höhlenmalerei",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Geschichten über Jagden und Tiere erzählen",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Kinderzimmer dekorieren",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "In Geschäften verkaufen",
+            "correct": false
+          }
+        ],
+        "explanation": "Vor mehr als 30.000 Jahren malten Menschen Tiere und Jagdszenen an Höhlenwände, mit farbiger Erde, Holzkohle und Blut, gemischt mit Wasser oder Tierfett."
+      },
+      {
+        "id": "sculpture-chisel",
+        "emoji": "🗿",
+        "name": "Bildhauermeißel",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Haare schneiden",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Formen in Stein oder Holz meißeln",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Briefe schreiben",
+            "correct": false
+          }
+        ],
+        "explanation": "Bildhauer verwenden einen Meißel und einen Hammer, um kleine Stücke Stein oder Holz abzutragen, bis die von ihnen vorgestellte Form, wie eine Statue oder ein Relief, sichtbar wird."
+      },
+      {
+        "id": "paint-palette",
+        "emoji": "🎨",
+        "name": "Malerpalette",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Essen servieren",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Wie ein Spielzeug fliegen",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Farben vor dem Malen mischen",
+            "correct": true
+          }
+        ],
+        "explanation": "Die Palette ist ein Brett, auf das der Maler kleine Farbmengen setzt und mit dem Pinsel mischt, um neue Farben zu schaffen, bevor er sie auf die Leinwand aufträgt."
+      },
+      {
+        "id": "ancient-mask",
+        "emoji": "🎭",
+        "name": "Afrikanische Maske",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Bei traditionellen Tänzen und Zeremonien tragen",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Vor Kälte schützen",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Fische fangen",
+            "correct": false
+          }
+        ],
+        "explanation": "Viele afrikanische Kulturen fertigen geschnitzte Holzmasken, die bei Tänzen und Zeremonien getragen werden, um Geister, Vorfahren darzustellen oder wichtige Geschichten der Gemeinschaft zu erzählen."
+      }
+    ]
+  },
+  {
+    "id": "computers",
+    "emoji": "💻",
+    "title": "Alte Computer",
+    "intro": "Wie Computer vor Jahrzehnten aussahen.",
+    "exhibits": [
+      {
+        "id": "punch-card",
+        "emoji": "🗃️",
+        "name": "Lochkarte",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Eine Partyeinladung",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Frühen Computern Anweisungen durch Löcher geben",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Eine Zugfahrkarte",
+            "correct": false
+          }
+        ],
+        "explanation": "Vor der Tastatur lasen frühe Computer Papierkarten mit Löchern an bestimmten Stellen. Jedes Lochmuster stand für eine Zahl, einen Buchstaben oder einen Befehl."
+      },
+      {
+        "id": "floppy-disk",
+        "emoji": "💾",
+        "name": "Diskette",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Musik abspielen",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Popcorn machen",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Computerdateien speichern",
+            "correct": true
+          }
+        ],
+        "explanation": "Disketten speicherten Computerdateien auf einer dünnen, flexiblen Magnetscheibe. Eine übliche Diskette speicherte sehr wenig – heute speichert ein Handy tausendfach mehr."
+      },
+      {
+        "id": "vacuum-tube",
+        "emoji": "💡",
+        "name": "Elektronenröhre",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Den Elektrizitätsfluss in frühen Computern steuern",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Weihnachtsbeleuchtung machen",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Wasser aufbewahren",
+            "correct": false
+          }
+        ],
+        "explanation": "Vor den winzigen Chips von heute nutzten Computer Tausende von Glasröhren, ähnlich Glühbirnen, um Elektrizität zu steuern. Sie füllten ganze Räume und wurden sehr heiß."
+      },
+      {
+        "id": "mouse-early",
+        "emoji": "🖱️",
+        "name": "Frühe Computermaus",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Geräusche machen, um Katzen zu vertreiben",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Den Cursor auf dem Bildschirm durch Zeigen mit der Hand bewegen",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Den Schreibtisch aufwärmen",
+            "correct": false
+          }
+        ],
+        "explanation": "Die erste Computermaus wurde 1964 von Douglas Engelbart erfunden. Es war eine Holzkiste mit Rädern, die beim Bewegen auf dem Tisch den Cursor auf dem Bildschirm bewegte – eine damals revolutionäre Idee."
+      }
+    ]
+  },
+  {
+    "id": "space",
+    "emoji": "🚀",
+    "title": "Weltraum",
+    "intro": "Gegenstände zur Erforschung des Weltraums.",
+    "exhibits": [
+      {
+        "id": "space-suit",
+        "emoji": "👨‍🚀",
+        "name": "Raumanzug",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Den Astronauten schützen und ihm Atemluft im All geben",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Schneller schwimmen",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Sport treiben",
+            "correct": false
+          }
+        ],
+        "explanation": "Der Raumanzug schützt vor dem Vakuum des Weltraums, extremen Temperaturen und Strahlung und liefert außerdem Sauerstoff zum Atmen, da es außerhalb der Erde keine Luft gibt."
+      },
+      {
+        "id": "moon-rock",
+        "emoji": "🌑",
+        "name": "Mondgestein",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Ein Strandspielzeug",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Wissenschaftlern helfen zu erforschen, wie der Mond entstand",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Ein gewöhnlicher Briefbeschwerer",
+            "correct": false
+          }
+        ],
+        "explanation": "Astronauten der Apollo-Missionen brachten Mondgestein zur Erde zurück. Durch seine Untersuchung erfuhren Wissenschaftler, dass der Mond vor über 4 Milliarden Jahren wahrscheinlich nach einer riesigen Kollision entstand."
+      },
+      {
+        "id": "rocket-engine",
+        "emoji": "🚀",
+        "name": "Raketentriebwerk",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Ein Haus heizen",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Saft machen",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Die Rakete aus der Erdatmosphäre schieben",
+            "correct": true
+          }
+        ],
+        "explanation": "Raketentriebwerke verbrennen Treibstoff mit hoher Geschwindigkeit und stoßen heiße Gase nach hinten aus, was die Rakete mit genug Kraft vorantreibt, um die Erdanziehungskraft zu überwinden."
+      },
+      {
+        "id": "satellite",
+        "emoji": "🛰️",
+        "name": "Satellit",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Die Erde umkreisen, um Fotos zu machen, das Wetter vorherzusagen und die Kommunikation zu unterstützen",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Als dauerhaftes Zuhause für Astronauten dienen",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Den Planeten aufheizen",
+            "correct": false
+          }
+        ],
+        "explanation": "Satelliten umkreisen die Erde und helfen uns auf viele Arten: Sie fotografieren den Planeten, sagen das Wetter voraus, übertragen TV- und Internetsignale und helfen dem GPS, unseren Standort zu bestimmen."
+      }
+    ]
+  }
+]

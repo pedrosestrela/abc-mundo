@@ -1,0 +1,206 @@
+[
+  {
+    "id": "roman-villa",
+    "emoji": "🏛️",
+    "title": "A Vila Romana",
+    "intro": "Escavação numa antiga casa romana encontrada perto de um rio.",
+    "artifacts": [
+      {
+        "id": "amphora-shards",
+        "emoji": "🏺",
+        "name": "Pedaços de Ânfora",
+        "detail": "Vários pedaços de barro cozido, com restos de azeite dentro."
+      },
+      {
+        "id": "mosaic-tile",
+        "emoji": "🟦",
+        "name": "Ladrilho de Mosaico",
+        "detail": "Um pequeno quadrado colorido, parte de um chão decorado."
+      },
+      {
+        "id": "roman-coin",
+        "emoji": "🪙",
+        "name": "Moeda Romana",
+        "detail": "Uma moeda de metal com o rosto de um imperador gravado."
+      },
+      {
+        "id": "fish-bones",
+        "emoji": "🐟",
+        "name": "Espinhas de Peixe",
+        "detail": "Pequenos ossos de peixe encontrados perto da cozinha da casa."
+      }
+    ],
+    "reasoningQuestion": "Ânforas com azeite, mosaicos, uma moeda e espinhas de peixe perto de um rio. O que nos dizem estas pistas sobre quem viveu aqui?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Eram nómadas muito pobres sem casa fixa",
+        "correct": false
+      },
+      {
+        "id": "b",
+        "text": "Eram uma família romana com posses, que comia bem e comerciava com dinheiro",
+        "correct": true
+      },
+      {
+        "id": "c",
+        "text": "Eram robôs construídos no futuro",
+        "correct": false
+      }
+    ],
+    "explanation": "Os arqueólogos raciocinam assim: mosaicos decorados e ânforas de azeite mostram riqueza; a moeda mostra que usavam dinheiro para comprar coisas; as espinhas de peixe perto do rio mostram que pescavam ou compravam peixe fresco. Juntando as pistas, concluímos que era uma família com posses que vivia bem perto de água."
+  },
+  {
+    "id": "stone-age-camp",
+    "emoji": "🏕️",
+    "title": "O Acampamento da Idade da Pedra",
+    "intro": "Escavação num acampamento muito antigo, de milhares de anos atrás.",
+    "artifacts": [
+      {
+        "id": "flint-tools",
+        "emoji": "🔪",
+        "name": "Ferramentas de Sílex",
+        "detail": "Pedras afiadas talhadas para cortar carne e peles."
+      },
+      {
+        "id": "burnt-wood",
+        "emoji": "🔥",
+        "name": "Madeira Queimada",
+        "detail": "Restos de carvão num círculo de pedras."
+      },
+      {
+        "id": "animal-bones",
+        "emoji": "🦴",
+        "name": "Ossos de Animais",
+        "detail": "Ossos de veado e javali com marcas de corte."
+      },
+      {
+        "id": "bead-necklace",
+        "emoji": "📿",
+        "name": "Colar de Contas",
+        "detail": "Pequenas contas feitas de conchas, com um furo no meio."
+      }
+    ],
+    "reasoningQuestion": "Ferramentas de corte, uma fogueira, ossos de animais com marcas e um colar de conchas. O que aprendemos sobre esta gente?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Que caçavam animais, cozinhavam com fogo e também gostavam de fazer adornos bonitos",
+        "correct": true
+      },
+      {
+        "id": "b",
+        "text": "Que viviam debaixo de água",
+        "correct": false
+      },
+      {
+        "id": "c",
+        "text": "Que só comiam plantas e nunca usavam ferramentas",
+        "correct": false
+      }
+    ],
+    "explanation": "As marcas de corte nos ossos mostram que usavam ferramentas de sílex para retalhar a carne dos animais caçados. A fogueira mostra que cozinhavam. E o colar de conchas mostra que, além de sobreviver, também se preocupavam com beleza e talvez identidade do grupo — a arte e a cultura já existiam há muito tempo!"
+  },
+  {
+    "id": "medieval-village",
+    "emoji": "🏘️",
+    "title": "A Aldeia Medieval",
+    "intro": "Escavação nas ruínas de uma aldeia da Idade Média.",
+    "artifacts": [
+      {
+        "id": "stone-wall",
+        "emoji": "🧱",
+        "name": "Restos de Parede",
+        "detail": "Pedras empilhadas que formavam a base de uma casa."
+      },
+      {
+        "id": "iron-horseshoe",
+        "emoji": "🧲",
+        "name": "Ferradura de Ferro",
+        "detail": "Uma peça de metal em forma de U, gasta pelo uso."
+      },
+      {
+        "id": "grain-storage",
+        "emoji": "🌾",
+        "name": "Sementes de Trigo",
+        "detail": "Sementes secas guardadas num buraco forrado de pedra."
+      },
+      {
+        "id": "pottery-jug",
+        "emoji": "🏺",
+        "name": "Jarro de Cerâmica",
+        "detail": "Um jarro simples de barro para guardar água."
+      }
+    ],
+    "reasoningQuestion": "Paredes de pedra, uma ferradura, sementes de trigo guardadas e um jarro de água. Que tipo de vida tinham estas pessoas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Uma vida de agricultores que cultivavam trigo, usavam cavalos para trabalhar e viviam em casas fixas",
+        "correct": true
+      },
+      {
+        "id": "b",
+        "text": "Uma vida de piratas que só andavam no mar",
+        "correct": false
+      },
+      {
+        "id": "c",
+        "text": "Uma vida na cidade com carros e eletricidade",
+        "correct": false
+      }
+    ],
+    "explanation": "As paredes de pedra mostram casas permanentes, não tendas. A ferradura mostra que usavam cavalos para trabalhar os campos ou transportar coisas. As sementes de trigo guardadas mostram agricultura e a preocupação em guardar comida para o inverno. O jarro mostra o dia a dia simples de uma aldeia agrícola medieval."
+  },
+  {
+    "id": "shipwreck",
+    "emoji": "⚓",
+    "title": "O Naufrágio",
+    "intro": "Escavação subaquática nos destroços de um velho navio.",
+    "artifacts": [
+      {
+        "id": "ship-anchor",
+        "emoji": "⚓",
+        "name": "Âncora",
+        "detail": "Uma grande peça de ferro coberta de algas e ferrugem."
+      },
+      {
+        "id": "porcelain-plates",
+        "emoji": "🍽️",
+        "name": "Pratos de Porcelana",
+        "detail": "Pratos finos e decorados, vindos de terras distantes."
+      },
+      {
+        "id": "spice-jars",
+        "emoji": "🫙",
+        "name": "Jarras de Especiarias",
+        "detail": "Jarras seladas com pimenta e canela dentro."
+      },
+      {
+        "id": "captains-compass",
+        "emoji": "🧭",
+        "name": "Bússola do Capitão",
+        "detail": "Uma bússola de bronze usada para guiar o navio."
+      }
+    ],
+    "reasoningQuestion": "Uma âncora, pratos de porcelana finos, jarras de especiarias e uma bússola. O que nos dizem estas pistas sobre esta viagem?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Era um pequeno barco de pesca da aldeia ao lado",
+        "correct": false
+      },
+      {
+        "id": "b",
+        "text": "Era um navio de comércio que viajava para longe, trazendo especiarias e porcelana valiosas",
+        "correct": true
+      },
+      {
+        "id": "c",
+        "text": "Era um submarino moderno",
+        "correct": false
+      }
+    ],
+    "explanation": "A porcelana fina e as especiarias como pimenta e canela não vinham do local — eram trazidas de terras muito distantes, o que mostra que era um navio de comércio, viajando por rotas marítimas longas. A bússola confirma que precisavam de se orientar em alto mar, longe da costa."
+  }
+]

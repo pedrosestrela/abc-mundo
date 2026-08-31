@@ -1,0 +1,206 @@
+[
+  {
+    "id": "roman-villa",
+    "emoji": "🏛️",
+    "title": "La Villa Romana",
+    "intro": "Uno scavo in un'antica casa romana trovata vicino a un fiume.",
+    "artifacts": [
+      {
+        "id": "amphora-shards",
+        "emoji": "🏺",
+        "name": "Frammenti di Anfora",
+        "detail": "Diversi pezzi di argilla cotta, con residui di olio d'oliva all'interno."
+      },
+      {
+        "id": "mosaic-tile",
+        "emoji": "🟦",
+        "name": "Tessera di Mosaico",
+        "detail": "Un piccolo quadrato colorato, parte di un pavimento decorato."
+      },
+      {
+        "id": "roman-coin",
+        "emoji": "🪙",
+        "name": "Moneta Romana",
+        "detail": "Una moneta di metallo con il volto di un imperatore inciso."
+      },
+      {
+        "id": "fish-bones",
+        "emoji": "🐟",
+        "name": "Lische di Pesce",
+        "detail": "Piccole lische di pesce trovate vicino alla cucina della casa."
+      }
+    ],
+    "reasoningQuestion": "Anfore con olio, mosaici, una moneta e lische di pesce vicino a un fiume. Cosa ci dicono questi indizi su chi ha vissuto qui?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Erano nomadi molto poveri senza una casa fissa",
+        "correct": false
+      },
+      {
+        "id": "b",
+        "text": "Erano una famiglia romana benestante, che mangiava bene e commerciava con il denaro",
+        "correct": true
+      },
+      {
+        "id": "c",
+        "text": "Erano robot costruiti nel futuro",
+        "correct": false
+      }
+    ],
+    "explanation": "Gli archeologi ragionano così: mosaici decorati e anfore d'olio mostrano ricchezza; la moneta mostra che usavano il denaro per comprare; le lische di pesce vicino al fiume mostrano che pescavano o compravano pesce fresco. Mettendo insieme gli indizi, concludiamo che era una famiglia benestante che viveva comodamente vicino all'acqua."
+  },
+  {
+    "id": "stone-age-camp",
+    "emoji": "🏕️",
+    "title": "L'Accampamento dell'Età della Pietra",
+    "intro": "Uno scavo in un accampamento molto antico, di migliaia di anni fa.",
+    "artifacts": [
+      {
+        "id": "flint-tools",
+        "emoji": "🔪",
+        "name": "Utensili di Selce",
+        "detail": "Pietre affilate scheggiate per tagliare carne e pelli."
+      },
+      {
+        "id": "burnt-wood",
+        "emoji": "🔥",
+        "name": "Legno Bruciato",
+        "detail": "Resti di carbone in un cerchio di pietre."
+      },
+      {
+        "id": "animal-bones",
+        "emoji": "🦴",
+        "name": "Ossa di Animali",
+        "detail": "Ossa di cervo e cinghiale con segni di taglio."
+      },
+      {
+        "id": "bead-necklace",
+        "emoji": "📿",
+        "name": "Collana di Perline",
+        "detail": "Piccole perline fatte di conchiglie, con un foro al centro."
+      }
+    ],
+    "reasoningQuestion": "Utensili da taglio, un focolare, ossa di animali con segni e una collana di conchiglie. Cosa impariamo su queste persone?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Che cacciavano animali, cucinavano con il fuoco e amavano anche creare bei ornamenti",
+        "correct": true
+      },
+      {
+        "id": "b",
+        "text": "Che vivevano sott'acqua",
+        "correct": false
+      },
+      {
+        "id": "c",
+        "text": "Che mangiavano solo piante e non usavano mai utensili",
+        "correct": false
+      }
+    ],
+    "explanation": "I segni di taglio sulle ossa mostrano che usavano utensili di selce per macellare gli animali cacciati. Il focolare mostra che cucinavano. E la collana di conchiglie mostra che, oltre a sopravvivere, si preoccupavano anche della bellezza e forse dell'identità del gruppo: arte e cultura esistevano già da moltissimo tempo!"
+  },
+  {
+    "id": "medieval-village",
+    "emoji": "🏘️",
+    "title": "Il Villaggio Medievale",
+    "intro": "Uno scavo tra le rovine di un villaggio del Medioevo.",
+    "artifacts": [
+      {
+        "id": "stone-wall",
+        "emoji": "🧱",
+        "name": "Resti di Muro",
+        "detail": "Pietre impilate che formavano la base di una casa."
+      },
+      {
+        "id": "iron-horseshoe",
+        "emoji": "🧲",
+        "name": "Ferro di Cavallo",
+        "detail": "Un pezzo di metallo a forma di U, consumato dall'uso."
+      },
+      {
+        "id": "grain-storage",
+        "emoji": "🌾",
+        "name": "Semi di Grano",
+        "detail": "Semi essiccati conservati in una buca rivestita di pietra."
+      },
+      {
+        "id": "pottery-jug",
+        "emoji": "🏺",
+        "name": "Brocca di Ceramica",
+        "detail": "Una semplice brocca di argilla per conservare l'acqua."
+      }
+    ],
+    "reasoningQuestion": "Muri di pietra, un ferro di cavallo, semi di grano conservati e una brocca d'acqua. Che tipo di vita conducevano queste persone?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Una vita da contadini, coltivavano grano, usavano cavalli per lavorare e vivevano in case stabili",
+        "correct": true
+      },
+      {
+        "id": "b",
+        "text": "Una vita da pirati, navigando solo in mare",
+        "correct": false
+      },
+      {
+        "id": "c",
+        "text": "Una vita di città con auto ed elettricità",
+        "correct": false
+      }
+    ],
+    "explanation": "I muri di pietra mostrano case permanenti, non tende. Il ferro di cavallo mostra che usavano i cavalli per lavorare i campi o trasportare cose. I semi di grano conservati mostrano l'agricoltura e la cura nel conservare il cibo per l'inverno. La brocca mostra la semplice vita quotidiana di un villaggio agricolo medievale."
+  },
+  {
+    "id": "shipwreck",
+    "emoji": "⚓",
+    "title": "Il Relitto",
+    "intro": "Uno scavo subacqueo nel relitto di una vecchia nave.",
+    "artifacts": [
+      {
+        "id": "ship-anchor",
+        "emoji": "⚓",
+        "name": "Ancora",
+        "detail": "Un grande pezzo di ferro coperto di alghe e ruggine."
+      },
+      {
+        "id": "porcelain-plates",
+        "emoji": "🍽️",
+        "name": "Piatti di Porcellana",
+        "detail": "Piatti fini e decorati, provenienti da terre lontane."
+      },
+      {
+        "id": "spice-jars",
+        "emoji": "🫙",
+        "name": "Vasi di Spezie",
+        "detail": "Vasi sigillati con pepe e cannella all'interno."
+      },
+      {
+        "id": "captains-compass",
+        "emoji": "🧭",
+        "name": "Bussola del Capitano",
+        "detail": "Una bussola di bronzo usata per guidare la nave."
+      }
+    ],
+    "reasoningQuestion": "Un'ancora, piatti di porcellana fini, vasi di spezie e una bussola. Cosa ci dicono questi indizi su questo viaggio?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Era una piccola barca da pesca del villaggio vicino",
+        "correct": false
+      },
+      {
+        "id": "b",
+        "text": "Era una nave mercantile che viaggiava lontano, trasportando spezie e porcellana preziose",
+        "correct": true
+      },
+      {
+        "id": "c",
+        "text": "Era un moderno sottomarino",
+        "correct": false
+      }
+    ],
+    "explanation": "La porcellana fine e le spezie come pepe e cannella non erano locali: provenivano da terre molto lontane, il che dimostra che si trattava di una nave mercantile che percorreva lunghe rotte marittime. La bussola conferma che dovevano orientarsi in mare aperto, lontano dalla costa."
+  }
+]

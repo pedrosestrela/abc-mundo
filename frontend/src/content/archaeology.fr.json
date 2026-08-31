@@ -1,0 +1,206 @@
+[
+  {
+    "id": "roman-villa",
+    "emoji": "🏛️",
+    "title": "La Villa Romaine",
+    "intro": "Une fouille dans une ancienne maison romaine trouvée près d'une rivière.",
+    "artifacts": [
+      {
+        "id": "amphora-shards",
+        "emoji": "🏺",
+        "name": "Éclats d'amphore",
+        "detail": "Plusieurs morceaux d'argile cuite, avec des résidus d'huile d'olive à l'intérieur."
+      },
+      {
+        "id": "mosaic-tile",
+        "emoji": "🟦",
+        "name": "Carreau de mosaïque",
+        "detail": "Un petit carré coloré, faisant partie d'un sol décoré."
+      },
+      {
+        "id": "roman-coin",
+        "emoji": "🪙",
+        "name": "Pièce romaine",
+        "detail": "Une pièce de métal avec le visage d'un empereur gravé dessus."
+      },
+      {
+        "id": "fish-bones",
+        "emoji": "🐟",
+        "name": "Arêtes de poisson",
+        "detail": "De petites arêtes de poisson trouvées près de la cuisine de la maison."
+      }
+    ],
+    "reasoningQuestion": "Des amphores d'huile d'olive, des mosaïques, une pièce et des arêtes de poisson près d'une rivière. Que nous disent ces indices sur les habitants ?",
+    "options": [
+      {
+        "id": "a",
+        "text": "C'était des nomades très pauvres sans domicile fixe",
+        "correct": false
+      },
+      {
+        "id": "b",
+        "text": "C'était une famille romaine aisée, qui mangeait bien et commerçait avec de l'argent",
+        "correct": true
+      },
+      {
+        "id": "c",
+        "text": "C'était des robots construits dans le futur",
+        "correct": false
+      }
+    ],
+    "explanation": "Les archéologues raisonnent ainsi : des mosaïques décorées et des amphores d'huile montrent la richesse ; la pièce montre qu'ils utilisaient de l'argent pour acheter ; des arêtes de poisson près de la rivière montrent qu'ils pêchaient ou achetaient du poisson frais. En combinant les indices, on conclut que c'était une famille aisée vivant confortablement près de l'eau."
+  },
+  {
+    "id": "stone-age-camp",
+    "emoji": "🏕️",
+    "title": "Le Campement de l'Âge de Pierre",
+    "intro": "Une fouille dans un campement très ancien, datant de milliers d'années.",
+    "artifacts": [
+      {
+        "id": "flint-tools",
+        "emoji": "🔪",
+        "name": "Outils en silex",
+        "detail": "Des pierres tranchantes taillées pour couper la viande et les peaux."
+      },
+      {
+        "id": "burnt-wood",
+        "emoji": "🔥",
+        "name": "Bois brûlé",
+        "detail": "Restes de charbon dans un cercle de pierres."
+      },
+      {
+        "id": "animal-bones",
+        "emoji": "🦴",
+        "name": "Os d'animaux",
+        "detail": "Des os de cerf et de sanglier avec des marques de coupe."
+      },
+      {
+        "id": "bead-necklace",
+        "emoji": "📿",
+        "name": "Collier de perles",
+        "detail": "De petites perles faites de coquillages, avec un trou au milieu."
+      }
+    ],
+    "reasoningQuestion": "Des outils de coupe, un foyer, des os d'animaux marqués et un collier de coquillages. Qu'apprenons-nous sur ces gens ?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Qu'ils chassaient des animaux, cuisinaient avec le feu et aimaient aussi fabriquer de beaux ornements",
+        "correct": true
+      },
+      {
+        "id": "b",
+        "text": "Qu'ils vivaient sous l'eau",
+        "correct": false
+      },
+      {
+        "id": "c",
+        "text": "Qu'ils ne mangeaient que des plantes et n'utilisaient jamais d'outils",
+        "correct": false
+      }
+    ],
+    "explanation": "Les marques de coupe sur les os montrent qu'ils utilisaient des outils en silex pour dépecer les animaux chassés. Le foyer montre qu'ils cuisinaient. Et le collier de coquillages montre qu'au-delà de la survie, ils se souciaient aussi de beauté et peut-être de l'identité du groupe — l'art et la culture existaient déjà depuis très longtemps !"
+  },
+  {
+    "id": "medieval-village",
+    "emoji": "🏘️",
+    "title": "Le Village Médiéval",
+    "intro": "Une fouille dans les ruines d'un village du Moyen Âge.",
+    "artifacts": [
+      {
+        "id": "stone-wall",
+        "emoji": "🧱",
+        "name": "Restes de mur",
+        "detail": "Des pierres empilées qui formaient la base d'une maison."
+      },
+      {
+        "id": "iron-horseshoe",
+        "emoji": "🧲",
+        "name": "Fer à cheval",
+        "detail": "Une pièce de métal en forme de U, usée par l'usage."
+      },
+      {
+        "id": "grain-storage",
+        "emoji": "🌾",
+        "name": "Graines de blé",
+        "detail": "Des graines séchées conservées dans une fosse tapissée de pierre."
+      },
+      {
+        "id": "pottery-jug",
+        "emoji": "🏺",
+        "name": "Cruche en poterie",
+        "detail": "Une simple cruche en argile pour conserver l'eau."
+      }
+    ],
+    "reasoningQuestion": "Des murs en pierre, un fer à cheval, des graines de blé stockées et une cruche d'eau. Quel genre de vie menaient ces gens ?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Une vie de fermiers, cultivant le blé, utilisant des chevaux pour travailler et vivant dans des maisons fixes",
+        "correct": true
+      },
+      {
+        "id": "b",
+        "text": "Une vie de pirates, naviguant seulement en mer",
+        "correct": false
+      },
+      {
+        "id": "c",
+        "text": "Une vie urbaine avec des voitures et de l'électricité",
+        "correct": false
+      }
+    ],
+    "explanation": "Les murs en pierre montrent des maisons permanentes, pas des tentes. Le fer à cheval montre qu'ils utilisaient des chevaux pour travailler les champs ou transporter des choses. Les graines de blé stockées montrent l'agriculture et le souci de conserver de la nourriture pour l'hiver. La cruche montre la vie quotidienne simple d'un village agricole médiéval."
+  },
+  {
+    "id": "shipwreck",
+    "emoji": "⚓",
+    "title": "Le Naufrage",
+    "intro": "Une fouille sous-marine dans l'épave d'un vieux navire.",
+    "artifacts": [
+      {
+        "id": "ship-anchor",
+        "emoji": "⚓",
+        "name": "Ancre",
+        "detail": "Une grande pièce en fer recouverte d'algues et de rouille."
+      },
+      {
+        "id": "porcelain-plates",
+        "emoji": "🍽️",
+        "name": "Assiettes en porcelaine",
+        "detail": "De fines assiettes décorées, venues de terres lointaines."
+      },
+      {
+        "id": "spice-jars",
+        "emoji": "🫙",
+        "name": "Pots d'épices",
+        "detail": "Des pots scellés contenant du poivre et de la cannelle."
+      },
+      {
+        "id": "captains-compass",
+        "emoji": "🧭",
+        "name": "Boussole du capitaine",
+        "detail": "Une boussole en bronze utilisée pour guider le navire."
+      }
+    ],
+    "reasoningQuestion": "Une ancre, de fines assiettes en porcelaine, des pots d'épices et une boussole. Que nous disent ces indices sur ce voyage ?",
+    "options": [
+      {
+        "id": "a",
+        "text": "C'était un petit bateau de pêche du village voisin",
+        "correct": false
+      },
+      {
+        "id": "b",
+        "text": "C'était un navire marchand voyageant loin, transportant des épices et de la porcelaine précieuses",
+        "correct": true
+      },
+      {
+        "id": "c",
+        "text": "C'était un sous-marin moderne",
+        "correct": false
+      }
+    ],
+    "explanation": "La porcelaine fine et les épices comme le poivre et la cannelle n'étaient pas locales — elles venaient de terres très lointaines, montrant qu'il s'agissait d'un navire marchand parcourant de longues routes maritimes. La boussole confirme qu'ils devaient s'orienter en haute mer, loin des côtes."
+  }
+]

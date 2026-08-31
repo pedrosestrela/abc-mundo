@@ -1,0 +1,834 @@
+[
+  {
+    "id": "archaeology",
+    "emoji": "🏺",
+    "title": "Archaeology",
+    "intro": "Very old objects found buried underground.",
+    "exhibits": [
+      {
+        "id": "amphora",
+        "emoji": "🏺",
+        "name": "Greek Amphora",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "A hat",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Storing oil or wine",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "A toy",
+            "correct": false
+          }
+        ],
+        "explanation": "Amphorae were tall two-handled jars used in ancient Greece and Rome to carry and store olive oil, wine and grain on ships and in homes."
+      },
+      {
+        "id": "arrowhead",
+        "emoji": "🗡️",
+        "name": "Arrowhead",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Hunting animals",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Cutting hair",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Making music",
+            "correct": false
+          }
+        ],
+        "explanation": "Arrowheads were chipped from stone (flint) and attached to a wooden shaft. They were used for hunting animals and for defense, thousands of years ago."
+      },
+      {
+        "id": "clay-tablet",
+        "emoji": "🪧",
+        "name": "Clay Tablet",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "A pillow",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "A food plate",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Writing messages and accounts",
+            "correct": true
+          }
+        ],
+        "explanation": "In Mesopotamia, people wrote with a pointed reed on soft clay, making marks called cuneiform. The clay then dried, keeping the writing safe forever."
+      },
+      {
+        "id": "mummy-mask",
+        "emoji": "𓆣",
+        "name": "Funerary Mask",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "A party mask",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Protecting the mummy's face in Ancient Egypt",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "A mirror",
+            "correct": false
+          }
+        ],
+        "explanation": "In Ancient Egypt, a mask was placed over the mummy's face to protect the person's spirit and help them be recognized in the afterlife."
+      }
+    ]
+  },
+  {
+    "id": "dinosaurs",
+    "emoji": "🦖",
+    "title": "Dinosaurs",
+    "intro": "Giant reptiles that lived millions of years ago.",
+    "exhibits": [
+      {
+        "id": "trex-tooth",
+        "emoji": "🦷",
+        "name": "T-Rex Tooth",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Tearing meat from other animals",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Chewing plants",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Digging holes",
+            "correct": false
+          }
+        ],
+        "explanation": "Tyrannosaurus rex had huge, serrated teeth up to 20 cm long, made for biting and tearing the flesh of other dinosaurs. It was one of the largest predators ever."
+      },
+      {
+        "id": "triceratops-horn",
+        "emoji": "🦏",
+        "name": "Triceratops Horn",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Combing itself",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Defending against predators like T-Rex",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Flying",
+            "correct": false
+          }
+        ],
+        "explanation": "Triceratops had three horns on its head and a large bony frill on its neck. It used them to defend itself from predators and perhaps to compete with other Triceratops."
+      },
+      {
+        "id": "fossil-egg",
+        "emoji": "🥚",
+        "name": "Fossilized Egg",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Making omelettes",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "A ball to play with",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Holding a baby dinosaur before it hatched",
+            "correct": true
+          }
+        ],
+        "explanation": "Dinosaur eggs stayed buried for millions of years and turned to stone. By studying them, scientists learn how baby dinosaurs grew inside before hatching."
+      },
+      {
+        "id": "pterosaur-wing",
+        "emoji": "🦴",
+        "name": "Pterosaur Wing Bone",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Flying through the sky",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Swimming underwater",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Running very fast",
+            "correct": false
+          }
+        ],
+        "explanation": "Pterosaurs weren't dinosaurs, but flying reptiles that lived at the same time. A very long finger supported a skin membrane that worked like a wing."
+      }
+    ]
+  },
+  {
+    "id": "history",
+    "emoji": "👑",
+    "title": "History",
+    "intro": "Objects from kings, queens and ancient peoples.",
+    "exhibits": [
+      {
+        "id": "crown",
+        "emoji": "👑",
+        "name": "Royal Crown",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "A rain hat",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Showing the person was king or queen",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "A child's toy",
+            "correct": false
+          }
+        ],
+        "explanation": "Crowns were made of gold and precious stones to show that the wearer had the power to rule a kingdom. The richer the crown, the more important the king or queen."
+      },
+      {
+        "id": "sword",
+        "emoji": "⚔️",
+        "name": "Medieval Sword",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Fighting and defending in battles",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Cutting bread",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Combing hair",
+            "correct": false
+          }
+        ],
+        "explanation": "Medieval knights used iron or steel swords to fight in battles and tournaments. Many had their own names and were passed from father to son as a family treasure."
+      },
+      {
+        "id": "old-coin",
+        "emoji": "🪙",
+        "name": "Ancient Coin",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "A clothing button",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "A wall decoration",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Buying and selling things",
+            "correct": true
+          }
+        ],
+        "explanation": "Ancient coins were made of metal, often stamped with the king's face. They were used to buy and sell goods at the market, instead of directly trading one object for another."
+      },
+      {
+        "id": "wax-seal",
+        "emoji": "📜",
+        "name": "Wax Seal",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Making candles to light castles",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Closing letters and proving they were genuine",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Sticking drawings",
+            "correct": false
+          }
+        ],
+        "explanation": "Before modern envelopes, a letter was folded and hot wax dripped onto it, then stamped with a special ring. If the seal was broken, everyone knew someone had opened the letter."
+      }
+    ]
+  },
+  {
+    "id": "transport",
+    "emoji": "🚂",
+    "title": "Transportation",
+    "intro": "How people traveled throughout history.",
+    "exhibits": [
+      {
+        "id": "steam-locomotive",
+        "emoji": "🚂",
+        "name": "Steam Locomotive",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Flying between cities",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Swimming in rivers",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Pulling trains by burning coal to make steam",
+            "correct": true
+          }
+        ],
+        "explanation": "Steam locomotives burned coal to heat water and create steam, which pushed pistons and turned the wheels. They revolutionized travel in the 19th century, making it much faster."
+      },
+      {
+        "id": "horse-carriage",
+        "emoji": "🐎",
+        "name": "Horse Carriage",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Carrying people before cars existed",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Flying over mountains",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Swimming in lakes",
+            "correct": false
+          }
+        ],
+        "explanation": "Before cars existed, horse-drawn carriages were the main way to travel on city streets and roads, used by wealthy families and for delivering mail."
+      },
+      {
+        "id": "viking-ship",
+        "emoji": "🚢",
+        "name": "Viking Ship",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "A bathtub toy",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Sailing long distances across the sea",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Storing fish",
+            "correct": false
+          }
+        ],
+        "explanation": "Viking ships had a thin, flexible hull and a square sail, which let them sail in rough seas and even shallow rivers, reaching far beyond Scandinavia."
+      },
+      {
+        "id": "old-bicycle",
+        "emoji": "🚲",
+        "name": "Old Bicycle",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Fishing in the river",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Cooking",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Getting around faster without using fuel",
+            "correct": true
+          }
+        ],
+        "explanation": "The earliest bicycles, from the 19th century, had no brakes or pedals like today's bikes. They were one of the first personal transport methods powered only by leg strength."
+      }
+    ]
+  },
+  {
+    "id": "science",
+    "emoji": "🔬",
+    "title": "Science",
+    "intro": "Instruments that helped discover the world.",
+    "exhibits": [
+      {
+        "id": "microscope",
+        "emoji": "🔬",
+        "name": "Old Microscope",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Looking at stars",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Seeing things too tiny for our eyes to see",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Hearing quiet sounds",
+            "correct": false
+          }
+        ],
+        "explanation": "The microscope uses lenses to magnify images of tiny things, like cells and microbes. Thanks to it, scientists discovered that there are living things invisible to the naked eye."
+      },
+      {
+        "id": "telescope",
+        "emoji": "🔭",
+        "name": "Old Telescope",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Seeing planets and stars up close",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Smelling flowers from a distance",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Making it rain",
+            "correct": false
+          }
+        ],
+        "explanation": "The telescope uses lenses or mirrors to capture light from very distant objects and make them visible and bigger. Galileo used a telescope to discover Jupiter's moons over 400 years ago."
+      },
+      {
+        "id": "compass-science",
+        "emoji": "🧭",
+        "name": "Old Compass",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Measuring temperature",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Telling time",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Finding which way is North",
+            "correct": true
+          }
+        ],
+        "explanation": "The compass has a magnetic needle that always points to Earth's magnetic North. It was essential for sailors to find their way at sea, even with no land in sight."
+      },
+      {
+        "id": "old-battery",
+        "emoji": "🔋",
+        "name": "Voltaic Pile",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Keeping food fresh",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Creating a continuous flow of electricity for the first time",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Lighting bonfires",
+            "correct": false
+          }
+        ],
+        "explanation": "In 1800, Alessandro Volta stacked discs of different metals with liquid between them and created the first electric battery in history, the ancestor of the batteries we use today."
+      }
+    ]
+  },
+  {
+    "id": "art",
+    "emoji": "🎨",
+    "title": "Art",
+    "intro": "Works and tools from artists around the world.",
+    "exhibits": [
+      {
+        "id": "cave-painting",
+        "emoji": "🖼️",
+        "name": "Cave Painting",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Telling stories about hunts and animals",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Decorating children's bedrooms",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Selling in shops",
+            "correct": false
+          }
+        ],
+        "explanation": "More than 30,000 years ago, humans painted animals and hunting scenes on cave walls using colored earth, charcoal and blood mixed with water or animal fat."
+      },
+      {
+        "id": "sculpture-chisel",
+        "emoji": "🗿",
+        "name": "Sculptor's Chisel",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Cutting hair",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Carving shapes into stone or wood",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Writing letters",
+            "correct": false
+          }
+        ],
+        "explanation": "Sculptors use a chisel and a hammer to chip away small pieces of stone or wood until they reveal the shape they imagined, like a statue or a relief."
+      },
+      {
+        "id": "paint-palette",
+        "emoji": "🎨",
+        "name": "Painter's Palette",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Serving food",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Flying like a toy",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Mixing colors before painting",
+            "correct": true
+          }
+        ],
+        "explanation": "The palette is a board where a painter places small amounts of paint and mixes them with a brush to create new colors before applying them to the canvas."
+      },
+      {
+        "id": "ancient-mask",
+        "emoji": "🎭",
+        "name": "African Mask",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Wearing in traditional dances and ceremonies",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Protecting from the cold",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Catching fish",
+            "correct": false
+          }
+        ],
+        "explanation": "Many African cultures create carved wooden masks worn in dances and ceremonies to represent spirits, ancestors, or to tell important stories of the community."
+      }
+    ]
+  },
+  {
+    "id": "computers",
+    "emoji": "💻",
+    "title": "Old Computers",
+    "intro": "What computers were like decades ago.",
+    "exhibits": [
+      {
+        "id": "punch-card",
+        "emoji": "🗃️",
+        "name": "Punch Card",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "A party invitation",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Giving instructions to early computers through holes",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "A train ticket",
+            "correct": false
+          }
+        ],
+        "explanation": "Before keyboards, early computers read paper cards with holes punched in specific positions. Each pattern of holes represented a number, letter, or instruction."
+      },
+      {
+        "id": "floppy-disk",
+        "emoji": "💾",
+        "name": "Floppy Disk",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Playing music",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Cooking popcorn",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Storing computer files",
+            "correct": true
+          }
+        ],
+        "explanation": "Floppy disks stored computer files on a thin, flexible magnetic disk. A typical floppy disk held very little — today a phone stores thousands of times more."
+      },
+      {
+        "id": "vacuum-tube",
+        "emoji": "💡",
+        "name": "Vacuum Tube",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Controlling the flow of electricity in early computers",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Making Christmas lights",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Holding water",
+            "correct": false
+          }
+        ],
+        "explanation": "Before today's tiny chips, computers used thousands of glass tubes, similar to light bulbs, to control electricity. They filled entire rooms and got very hot."
+      },
+      {
+        "id": "mouse-early",
+        "emoji": "🖱️",
+        "name": "Early Computer Mouse",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Making noise to scare away cats",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Moving the on-screen cursor by pointing with a hand",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Warming up the desk",
+            "correct": false
+          }
+        ],
+        "explanation": "The first computer mouse was invented in 1964 by Douglas Engelbart. It was a wooden box with wheels that moved the on-screen cursor as it moved across the desk — a revolutionary idea at the time."
+      }
+    ]
+  },
+  {
+    "id": "space",
+    "emoji": "🚀",
+    "title": "Space",
+    "intro": "Objects used to explore space.",
+    "exhibits": [
+      {
+        "id": "space-suit",
+        "emoji": "👨‍🚀",
+        "name": "Space Suit",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Protecting the astronaut and giving air to breathe in space",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Swimming faster",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Playing sports",
+            "correct": false
+          }
+        ],
+        "explanation": "The space suit protects against the vacuum of space, extreme temperatures and radiation, while also supplying oxygen to breathe, since there is no air outside Earth."
+      },
+      {
+        "id": "moon-rock",
+        "emoji": "🌑",
+        "name": "Moon Rock",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "A beach toy",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Helping scientists study how the Moon was formed",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "An ordinary paperweight",
+            "correct": false
+          }
+        ],
+        "explanation": "Apollo mission astronauts brought Moon rocks back to Earth. By studying them, scientists learned that the Moon formed over 4 billion years ago, likely after a giant collision."
+      },
+      {
+        "id": "rocket-engine",
+        "emoji": "🚀",
+        "name": "Rocket Engine",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Heating a house",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Making juice",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Pushing the rocket out of Earth's atmosphere",
+            "correct": true
+          }
+        ],
+        "explanation": "Rocket engines burn fuel at high speed, expelling hot gases out the back, which pushes the rocket forward with enough force to overcome Earth's gravity."
+      },
+      {
+        "id": "satellite",
+        "emoji": "🛰️",
+        "name": "Satellite",
+        "guessQuestion": null,
+        "options": [
+          {
+            "id": "a",
+            "text": "Orbiting Earth to take photos, forecast weather and help communications",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Serving as a permanent home for astronauts",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Heating up the planet",
+            "correct": false
+          }
+        ],
+        "explanation": "Satellites orbit Earth and help us in many ways: they photograph the planet, forecast weather, transmit TV and internet signals, and help GPS know where we are."
+      }
+    ]
+  }
+]

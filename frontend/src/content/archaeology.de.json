@@ -1,0 +1,206 @@
+[
+  {
+    "id": "roman-villa",
+    "emoji": "🏛️",
+    "title": "Die Römische Villa",
+    "intro": "Eine Ausgrabung in einem antiken römischen Haus in der Nähe eines Flusses.",
+    "artifacts": [
+      {
+        "id": "amphora-shards",
+        "emoji": "🏺",
+        "name": "Amphorenscherben",
+        "detail": "Mehrere Stücke gebrannten Tons mit Olivenölresten im Inneren."
+      },
+      {
+        "id": "mosaic-tile",
+        "emoji": "🟦",
+        "name": "Mosaikfliese",
+        "detail": "Ein kleines farbiges Quadrat, Teil eines verzierten Bodens."
+      },
+      {
+        "id": "roman-coin",
+        "emoji": "🪙",
+        "name": "Römische Münze",
+        "detail": "Eine Metallmünze mit dem eingravierten Gesicht eines Kaisers."
+      },
+      {
+        "id": "fish-bones",
+        "emoji": "🐟",
+        "name": "Fischgräten",
+        "detail": "Kleine Fischgräten, die in der Nähe der Hausküche gefunden wurden."
+      }
+    ],
+    "reasoningQuestion": "Amphoren mit Olivenöl, Mosaike, eine Münze und Fischgräten in der Nähe eines Flusses. Was sagen uns diese Hinweise über die Bewohner?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Es waren sehr arme Nomaden ohne festen Wohnsitz",
+        "correct": false
+      },
+      {
+        "id": "b",
+        "text": "Es war eine wohlhabende römische Familie, die gut aß und mit Geld handelte",
+        "correct": true
+      },
+      {
+        "id": "c",
+        "text": "Es waren Roboter, die in der Zukunft gebaut wurden",
+        "correct": false
+      }
+    ],
+    "explanation": "Archäologen schließen so: verzierte Mosaike und Ölamphoren zeigen Reichtum; die Münze zeigt, dass sie mit Geld einkauften; Fischgräten nahe dem Fluss zeigen, dass sie fischten oder frischen Fisch kauften. Zusammen ergibt das eine wohlhabende Familie, die bequem am Wasser lebte."
+  },
+  {
+    "id": "stone-age-camp",
+    "emoji": "🏕️",
+    "title": "Das Steinzeitlager",
+    "intro": "Eine Ausgrabung an einem sehr alten Lager, aus Tausenden von Jahren zurück.",
+    "artifacts": [
+      {
+        "id": "flint-tools",
+        "emoji": "🔪",
+        "name": "Feuersteinwerkzeuge",
+        "detail": "Scharfe Steine, geschlagen zum Schneiden von Fleisch und Fellen."
+      },
+      {
+        "id": "burnt-wood",
+        "emoji": "🔥",
+        "name": "Verbranntes Holz",
+        "detail": "Kohlereste in einem Steinkreis."
+      },
+      {
+        "id": "animal-bones",
+        "emoji": "🦴",
+        "name": "Tierknochen",
+        "detail": "Hirsch- und Wildschweinknochen mit Schnittspuren."
+      },
+      {
+        "id": "bead-necklace",
+        "emoji": "📿",
+        "name": "Perlenkette",
+        "detail": "Kleine Perlen aus Muscheln mit einem Loch in der Mitte."
+      }
+    ],
+    "reasoningQuestion": "Schneidwerkzeuge, eine Feuerstelle, Tierknochen mit Schnittspuren und eine Muschelkette. Was erfahren wir über diese Menschen?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dass sie Tiere jagten, mit Feuer kochten und auch gerne schönen Schmuck herstellten",
+        "correct": true
+      },
+      {
+        "id": "b",
+        "text": "Dass sie unter Wasser lebten",
+        "correct": false
+      },
+      {
+        "id": "c",
+        "text": "Dass sie nur Pflanzen aßen und nie Werkzeuge benutzten",
+        "correct": false
+      }
+    ],
+    "explanation": "Die Schnittspuren an den Knochen zeigen, dass sie Feuersteinwerkzeuge nutzten, um erlegte Tiere zu zerteilen. Die Feuerstelle zeigt, dass sie kochten. Und die Muschelkette zeigt, dass es ihnen neben dem Überleben auch um Schönheit und vielleicht Gruppenidentität ging — Kunst und Kultur gab es schon sehr lange!"
+  },
+  {
+    "id": "medieval-village",
+    "emoji": "🏘️",
+    "title": "Das Mittelalterliche Dorf",
+    "intro": "Eine Ausgrabung in den Ruinen eines mittelalterlichen Dorfes.",
+    "artifacts": [
+      {
+        "id": "stone-wall",
+        "emoji": "🧱",
+        "name": "Mauerreste",
+        "detail": "Aufgeschichtete Steine, die das Fundament eines Hauses bildeten."
+      },
+      {
+        "id": "iron-horseshoe",
+        "emoji": "🧲",
+        "name": "Eisenhufeisen",
+        "detail": "Ein U-förmiges Metallstück, abgenutzt vom Gebrauch."
+      },
+      {
+        "id": "grain-storage",
+        "emoji": "🌾",
+        "name": "Weizenkörner",
+        "detail": "Getrocknete Samen, gelagert in einer steinausgekleideten Grube."
+      },
+      {
+        "id": "pottery-jug",
+        "emoji": "🏺",
+        "name": "Tonkrug",
+        "detail": "Ein einfacher Tonkrug zum Aufbewahren von Wasser."
+      }
+    ],
+    "reasoningQuestion": "Steinmauern, ein Hufeisen, gelagerte Weizenkörner und ein Wasserkrug. Was für ein Leben führten diese Menschen?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ein Bauernleben, sie bauten Weizen an, nutzten Pferde zur Arbeit und lebten in festen Häusern",
+        "correct": true
+      },
+      {
+        "id": "b",
+        "text": "Ein Piratenleben, nur auf See",
+        "correct": false
+      },
+      {
+        "id": "c",
+        "text": "Ein Stadtleben mit Autos und Elektrizität",
+        "correct": false
+      }
+    ],
+    "explanation": "Die Steinmauern zeigen dauerhafte Häuser, keine Zelte. Das Hufeisen zeigt, dass sie Pferde nutzten, um Felder zu bearbeiten oder Dinge zu transportieren. Die gelagerten Weizenkörner zeigen Landwirtschaft und die Sorge, Nahrung für den Winter aufzubewahren. Der Krug zeigt das einfache Alltagsleben eines mittelalterlichen Bauerndorfes."
+  },
+  {
+    "id": "shipwreck",
+    "emoji": "⚓",
+    "title": "Das Schiffswrack",
+    "intro": "Eine Unterwasserausgrabung im Wrack eines alten Schiffs.",
+    "artifacts": [
+      {
+        "id": "ship-anchor",
+        "emoji": "⚓",
+        "name": "Anker",
+        "detail": "Ein großes Eisenstück, bedeckt mit Algen und Rost."
+      },
+      {
+        "id": "porcelain-plates",
+        "emoji": "🍽️",
+        "name": "Porzellanteller",
+        "detail": "Feine verzierte Teller, aus fernen Ländern."
+      },
+      {
+        "id": "spice-jars",
+        "emoji": "🫙",
+        "name": "Gewürzkrüge",
+        "detail": "Versiegelte Krüge mit Pfeffer und Zimt darin."
+      },
+      {
+        "id": "captains-compass",
+        "emoji": "🧭",
+        "name": "Kompass des Kapitäns",
+        "detail": "Ein Bronzekompass, der zur Steuerung des Schiffs diente."
+      }
+    ],
+    "reasoningQuestion": "Ein Anker, feine Porzellanteller, Gewürzkrüge und ein Kompass. Was sagen uns diese Hinweise über diese Reise?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Es war ein kleines Fischerboot aus dem nahen Dorf",
+        "correct": false
+      },
+      {
+        "id": "b",
+        "text": "Es war ein Handelsschiff, das weit reiste und wertvolle Gewürze und Porzellan transportierte",
+        "correct": true
+      },
+      {
+        "id": "c",
+        "text": "Es war ein modernes U-Boot",
+        "correct": false
+      }
+    ],
+    "explanation": "Feines Porzellan und Gewürze wie Pfeffer und Zimt stammten nicht von hier — sie wurden aus sehr fernen Ländern gebracht, was zeigt, dass es sich um ein Handelsschiff auf langen Seerouten handelte. Der Kompass bestätigt, dass sie sich auf hoher See, weit von der Küste entfernt, orientieren mussten."
+  }
+]
