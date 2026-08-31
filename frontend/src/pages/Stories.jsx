@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { getStories } from "../content/index.js";
+import { getStories, getCompleteTales } from "../content/index.js";
 import { getLangPair, getProfile, pingProgress, recordSkillEvent } from "../storage.js";
 import MascotBubble from "../components/mascots/MascotBubble.jsx";
 import SpeakButton from "../components/SpeakButton.jsx";
@@ -35,10 +35,21 @@ function splitWords(text) {
 export default function Stories() {
   const { t } = useTranslation();
   const pair = getLangPair() || { mother: "pt", secondary: "en" };
+  const [tab, setTab] = useState("short");
 
-  const [motherStories, setMotherStories] = useState([]);
-  const [secondaryStories, setSecondaryStories] = useState([]);
-  const [loading, setLoading] = useState(true);
+  // Short stories are the largest per-language dataset and are lazy-loaded
+  // (see content/index.js getStories), so they're fetched asynchronously.
+  const [motherShort, setMotherShort] = useState([]);
+  const [secondaryShort, setSecondaryShort] = useState([]);
+  const [shortLoading, setShortLoading] = useState(true);
+
+  // Complete tales are a much smaller dataset and load synchronously.
+  const motherComplete = getCompleteTales(pair.mother);
+  const secondaryComplete = getCompleteTales(pair.secondary);
+
+  const motherStories = tab === "complete" ? motherComplete : motherShort;
+  const secondaryStories = tab === "complete" ? secondaryComplete : secondaryShort;
+  const loading = tab === "short" && shortLoading;
   const count = Math.min(motherStories.length, secondaryStories.length);
 
   const [openIndex, setOpenIndex] = useState(null);
@@ -48,13 +59,13 @@ export default function Stories() {
 
   useEffect(() => {
     let cancelled = false;
-    setLoading(true);
+    setShortLoading(true);
     Promise.all([getStories(pair.mother), getStories(pair.secondary)]).then(
       ([mother, secondary]) => {
         if (cancelled) return;
-        setMotherStories(mother);
-        setSecondaryStories(secondary);
-        setLoading(false);
+        setMotherShort(mother);
+        setSecondaryShort(secondary);
+        setShortLoading(false);
         setOpenIndex(null);
         setPageIndex(0);
       }
@@ -85,6 +96,12 @@ export default function Stories() {
     setActiveWord(-1);
     setPoked(false);
   }, [openIndex, pageIndex]);
+
+  function switchTab(next) {
+    setTab(next);
+    setOpenIndex(null);
+    setPageIndex(0);
+  }
 
   function openStory(index) {
     setOpenIndex(index);
@@ -227,6 +244,14 @@ export default function Stories() {
       <MascotBubble character="pipa" mood="happy" langCode={pair.mother}>
         {t("modules.storiesMascotIntro")}
       </MascotBubble>
+      <div className="phonics-tabs">
+        <button type="button" className={"phonics-tab" + (tab === "short" ? " selected" : "")} onClick={() => switchTab("short")}>
+          <span className="phonics-tab-inner">📖 {t("modules.storiesTabShort")}</span>
+        </button>
+        <button type="button" className={"phonics-tab" + (tab === "complete" ? " selected" : "")} onClick={() => switchTab("complete")}>
+          <span className="phonics-tab-inner">📜 {t("modules.storiesTabComplete")}</span>
+        </button>
+      </div>
       <div className="song-list">
         {Array.from({ length: count }).map((_, i) => {
           const s = secondaryStories[i];

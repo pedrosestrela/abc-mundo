@@ -1,0 +1,552 @@
+[
+  {
+    "id": "three-little-pigs",
+    "title": "I Tre Porcellini",
+    "emoji": "🐷",
+    "pages": [
+      {
+        "text": "Tre porcellini lasciarono casa per costruire le proprie casette.",
+        "emoji": "🐷"
+      },
+      {
+        "text": "Il primo porcellino era pigro e costruì la casa di paglia.",
+        "emoji": "🌾"
+      },
+      {
+        "text": "Il secondo porcellino costruì la sua casa con rami di legno.",
+        "emoji": "🪵"
+      },
+      {
+        "text": "Il terzo porcellino lavorò sodo e costruì la casa con mattoni.",
+        "emoji": "🧱"
+      },
+      {
+        "text": "Un lupo affamato arrivò e bussò alla porta di paglia.",
+        "emoji": "🐺"
+      },
+      {
+        "text": "Il lupo soffiò forte e la casa di paglia crollò subito.",
+        "emoji": "💨"
+      },
+      {
+        "text": "Il porcellino corse veloce dalla casa di legno del fratello.",
+        "emoji": "🏃"
+      },
+      {
+        "text": "Il lupo soffiò ancora e anche la casa di legno crollò.",
+        "emoji": "💨"
+      },
+      {
+        "text": "I due porcellini corsero verso la casa forte di mattoni.",
+        "emoji": "🧱"
+      },
+      {
+        "text": "Il lupo soffiò con tutte le forze, ma la casa resistette.",
+        "emoji": "😤"
+      },
+      {
+        "text": "Stanco e senza successo, il lupo lasciò finalmente la foresta.",
+        "emoji": "🌲"
+      },
+      {
+        "text": "I tre porcellini impararono che il lavoro accurato vale la pena.",
+        "emoji": "🎉"
+      }
+    ]
+  },
+  {
+    "id": "red-riding-hood",
+    "title": "Cappuccetto Rosso",
+    "emoji": "🐺",
+    "pages": [
+      {
+        "text": "Una bambina indossava sempre un cappotto rosso con cappuccio.",
+        "emoji": "👧"
+      },
+      {
+        "text": "Un giorno, sua madre le chiese di portare dolci alla nonna malata.",
+        "emoji": "🧁"
+      },
+      {
+        "text": "La bambina camminò da sola lungo il sentiero del grande bosco.",
+        "emoji": "🌲"
+      },
+      {
+        "text": "Un lupo furbo la incontrò e chiese dove stesse andando.",
+        "emoji": "🐺"
+      },
+      {
+        "text": "Il lupo corse avanti e arrivò per primo a casa della nonna.",
+        "emoji": "🏃"
+      },
+      {
+        "text": "Il lupo nascose la nonna e indossò i suoi vestiti.",
+        "emoji": "🛏️"
+      },
+      {
+        "text": "La bambina arrivò e notò la voce strana e gli occhi grandi.",
+        "emoji": "👀"
+      },
+      {
+        "text": "Un boscaiolo di passaggio sentì strani rumori dalla casa.",
+        "emoji": "🪓"
+      },
+      {
+        "text": "Il boscaiolo entrò veloce e scacciò il lupo spaventato.",
+        "emoji": "💪"
+      },
+      {
+        "text": "Trovarono la nonna nascosta, sana e salva dentro l'armadio.",
+        "emoji": "👵"
+      },
+      {
+        "text": "Tutti furono felici e mangiarono i dolci insieme a tavola.",
+        "emoji": "🍰"
+      },
+      {
+        "text": "La bambina imparò a non parlare mai con estranei nel bosco.",
+        "emoji": "🌟"
+      }
+    ]
+  },
+  {
+    "id": "tortoise-hare",
+    "title": "La Tartaruga e la Lepre",
+    "emoji": "🐢",
+    "pages": [
+      {
+        "text": "Una lepre veloce amava prendere in giro la lenta tartaruga ogni giorno.",
+        "emoji": "🐇"
+      },
+      {
+        "text": "Stanca delle prese in giro, la tartaruga sfidò la lepre a una corsa.",
+        "emoji": "🐢"
+      },
+      {
+        "text": "Tutti gli animali del bosco vennero a vedere la grande gara.",
+        "emoji": "🦉"
+      },
+      {
+        "text": "Al segnale, la lepre scattò e si portò subito in vantaggio.",
+        "emoji": "💨"
+      },
+      {
+        "text": "La lepre si voltò e rise della tartaruga lenta.",
+        "emoji": "😏"
+      },
+      {
+        "text": "Sicura di vincere, la lepre decise di riposare sotto un albero.",
+        "emoji": "🌳"
+      },
+      {
+        "text": "La lepre si addormentò profondamente, certa di avere tempo in abbondanza.",
+        "emoji": "😴"
+      },
+      {
+        "text": "La tartaruga continuò a camminare piano, ma senza mai fermarsi.",
+        "emoji": "🚶"
+      },
+      {
+        "text": "Passo dopo passo, la tartaruga si avvicinava sempre più al traguardo.",
+        "emoji": "🏁"
+      },
+      {
+        "text": "La lepre si svegliò all'improvviso e corse più veloce che poteva.",
+        "emoji": "😱"
+      },
+      {
+        "text": "Ma era troppo tardi, la tartaruga aveva già tagliato il traguardo.",
+        "emoji": "🎉"
+      },
+      {
+        "text": "Tutti impararono che piano ma costante si arriva lontano.",
+        "emoji": "🐢"
+      }
+    ]
+  },
+  {
+    "id": "goldilocks",
+    "title": "Riccioli d'Oro e i Tre Orsi",
+    "emoji": "🐻",
+    "pages": [
+      {
+        "text": "Una bambina dai capelli dorati passeggiava sola nel bosco.",
+        "emoji": "👧"
+      },
+      {
+        "text": "Trovò una casetta ed entrò perché la porta era aperta.",
+        "emoji": "🏠"
+      },
+      {
+        "text": "Sul tavolo c'erano tre ciotole di zuppa calda ad aspettarla.",
+        "emoji": "🥣"
+      },
+      {
+        "text": "Assaggiò la prima, ma era troppo calda per mangiarla.",
+        "emoji": "🔥"
+      },
+      {
+        "text": "Assaggiò la seconda, ma era troppo fredda per piacerle.",
+        "emoji": "❄️"
+      },
+      {
+        "text": "La terza ciotola era perfetta e la mangiò tutta.",
+        "emoji": "😋"
+      },
+      {
+        "text": "Poi provò tre sedie, solo quella piccola era comoda.",
+        "emoji": "🪑"
+      },
+      {
+        "text": "Si sedette con forza e la sedia piccola si ruppe.",
+        "emoji": "💥"
+      },
+      {
+        "text": "Stanca, salì di sopra e provò tre letti diversi.",
+        "emoji": "🛏️"
+      },
+      {
+        "text": "Il letto piccolo era perfetto e si addormentò profondamente.",
+        "emoji": "😴"
+      },
+      {
+        "text": "La famiglia di orsi tornò a casa e trovò tutto in disordine.",
+        "emoji": "🐻"
+      },
+      {
+        "text": "La bambina si svegliò spaventata, si scusò e corse a casa.",
+        "emoji": "🏃"
+      }
+    ]
+  },
+  {
+    "id": "ant-grasshopper",
+    "title": "La Formica e la Cavalletta",
+    "emoji": "🐜",
+    "pages": [
+      {
+        "text": "Nell'estate calda, una formica lavorava ogni giorno per raccogliere cibo.",
+        "emoji": "🐜"
+      },
+      {
+        "text": "Una cavalletta passava le giornate a cantare e ballare al sole.",
+        "emoji": "🎶"
+      },
+      {
+        "text": "La cavalletta rideva della formica perché lavorava tanto.",
+        "emoji": "😄"
+      },
+      {
+        "text": "La formica continuava a portare chicchi nella sua tana sicura.",
+        "emoji": "🌾"
+      },
+      {
+        "text": "Lentamente, l'estate finì e iniziò a soffiare un vento freddo.",
+        "emoji": "🍂"
+      },
+      {
+        "text": "Arrivò l'inverno con la neve, e la cavalletta non aveva più cibo.",
+        "emoji": "❄️"
+      },
+      {
+        "text": "Affamata e infreddolita, la cavalletta bussò alla porta della formica.",
+        "emoji": "🚪"
+      },
+      {
+        "text": "La formica aprì la porta e vide l'amica triste e affamata.",
+        "emoji": "😢"
+      },
+      {
+        "text": "Con gentilezza, la formica condivise il cibo che aveva conservato.",
+        "emoji": "🍞"
+      },
+      {
+        "text": "La cavalletta la ringraziò molto e promise di prepararsi anche lei.",
+        "emoji": "🙏"
+      },
+      {
+        "text": "La primavera seguente, le due amiche lavorarono insieme felici.",
+        "emoji": "🌸"
+      },
+      {
+        "text": "Impararono che pianificare in anticipo e aiutare gli altri fa bene.",
+        "emoji": "💛"
+      }
+    ]
+  },
+  {
+    "id": "gingerbread-man",
+    "title": "L'Omino di Pan di Zenzero",
+    "emoji": "🍪",
+    "pages": [
+      {
+        "text": "Una donna fece un dolce omino di pan di zenzero e lo infornò.",
+        "emoji": "🍪"
+      },
+      {
+        "text": "Quando aprì il forno, lui saltò fuori e cominciò a correre.",
+        "emoji": "🏃"
+      },
+      {
+        "text": "\"Non potete prendermi!\", gridò correndo lungo la strada.",
+        "emoji": "😄"
+      },
+      {
+        "text": "La donna lo inseguì, ma lui era troppo veloce.",
+        "emoji": "💨"
+      },
+      {
+        "text": "Un cane provò a prenderlo, ma lui continuò a correre.",
+        "emoji": "🐕"
+      },
+      {
+        "text": "Anche una mucca ci provò, ma non riuscì mai a raggiungerlo.",
+        "emoji": "🐄"
+      },
+      {
+        "text": "Arrivò a un fiume largo e non sapeva come attraversarlo.",
+        "emoji": "🌊"
+      },
+      {
+        "text": "Una volpe furba si offrì di portarlo sulla schiena.",
+        "emoji": "🦊"
+      },
+      {
+        "text": "La volpe nuotava piano, dicendo che l'acqua diventava sempre più profonda.",
+        "emoji": "🏊"
+      },
+      {
+        "text": "Lui salì sul naso della volpe per non bagnarsi.",
+        "emoji": "👃"
+      },
+      {
+        "text": "In quel momento, la volpe aprì la bocca in un attimo.",
+        "emoji": "😲"
+      },
+      {
+        "text": "L'omino imparò, troppo tardi, a non fidarsi degli sconosciuti furbi.",
+        "emoji": "🦊"
+      }
+    ]
+  },
+  {
+    "id": "mirror-of-courage",
+    "title": "Lo Specchio del Coraggio",
+    "emoji": "🪞",
+    "pages": [
+      {
+        "text": "La piccola Sara aveva sempre paura di parlare davanti alla classe.",
+        "emoji": "😟"
+      },
+      {
+        "text": "Le sue mani tremavano ogni volta che doveva presentare un lavoro.",
+        "emoji": "🤲"
+      },
+      {
+        "text": "La nonna di Sara le regalò un piccolo specchio rotondo e dorato.",
+        "emoji": "🪞"
+      },
+      {
+        "text": "\"Questo specchio mostra sempre qualcuno coraggioso\", disse la nonna sorridendo.",
+        "emoji": "👵"
+      },
+      {
+        "text": "Sara guardò lo specchio e vide solo il proprio viso.",
+        "emoji": "😕"
+      },
+      {
+        "text": "\"Ma vedo solo me stessa\", disse Sara, confusa dalla risposta.",
+        "emoji": "🤔"
+      },
+      {
+        "text": "\"Esattamente\", rispose la nonna. \"Il coraggio vive già dentro di te.\"",
+        "emoji": "💡"
+      },
+      {
+        "text": "Il giorno dopo, Sara portò lo specchio nascosto in tasca.",
+        "emoji": "🎒"
+      },
+      {
+        "text": "Prima di parlare, guardò velocemente il suo riflesso coraggioso.",
+        "emoji": "👀"
+      },
+      {
+        "text": "Respirò profondamente, sorrise e iniziò a parlare piano e chiaro.",
+        "emoji": "🗣️"
+      },
+      {
+        "text": "La classe applaudì e il cuore di Sara si riempì di orgoglio.",
+        "emoji": "👏"
+      },
+      {
+        "text": "Sara imparò che il coraggio non viene da fuori, ma da dentro.",
+        "emoji": "⭐"
+      }
+    ]
+  },
+  {
+    "id": "helping-hands-club",
+    "title": "Il Club delle Mani Amiche",
+    "emoji": "🤝",
+    "pages": [
+      {
+        "text": "Nel quartiere viveva Tom, un ragazzo pieno di buone idee.",
+        "emoji": "🧒"
+      },
+      {
+        "text": "Un giorno vide una vicina anziana in difficoltà con borse pesanti.",
+        "emoji": "🛍️"
+      },
+      {
+        "text": "Tom corse ad aiutarla a portare le borse fino alla porta.",
+        "emoji": "🚶"
+      },
+      {
+        "text": "La vicina sorrise e lo ringraziò con una fetta di torta fatta in casa.",
+        "emoji": "🍰"
+      },
+      {
+        "text": "Tom capì che aiutare gli altri lo rendeva davvero felice.",
+        "emoji": "😊"
+      },
+      {
+        "text": "Decise di creare un club con gli amici per aiutare il quartiere.",
+        "emoji": "🤝"
+      },
+      {
+        "text": "Fecero un cartellone colorato e lo chiamarono Club delle Mani Amiche.",
+        "emoji": "🎨"
+      },
+      {
+        "text": "Ogni settimana, il gruppo aiutava qualcuno diverso nel quartiere.",
+        "emoji": "📅"
+      },
+      {
+        "text": "Innaffiarono piante, portarono a spasso cani e sistemarono il parco.",
+        "emoji": "🌱"
+      },
+      {
+        "text": "I vicini iniziarono a sorridere di più e a parlare di più tra loro.",
+        "emoji": "😄"
+      },
+      {
+        "text": "Il quartiere divenne un posto più unito grazie al piccolo club.",
+        "emoji": "🏘️"
+      },
+      {
+        "text": "Tom imparò che piccoli gesti d'aiuto cambiano il mondo intorno a noi.",
+        "emoji": "🌍"
+      }
+    ]
+  },
+  {
+    "id": "quiet-voice-inside",
+    "title": "La Vocina Calma Dentro di Noi",
+    "emoji": "🌙",
+    "pages": [
+      {
+        "text": "Il piccolo Nuno era sempre molto impegnato, correndo da un posto all'altro.",
+        "emoji": "🏃"
+      },
+      {
+        "text": "Correva verso la scuola, i giochi e le case degli amici.",
+        "emoji": "⚽"
+      },
+      {
+        "text": "Ma Nuno si sentiva sempre più stanco e un po' confuso.",
+        "emoji": "😵"
+      },
+      {
+        "text": "Suo nonno se ne accorse e lo invitò a sedersi insieme in giardino.",
+        "emoji": "👴"
+      },
+      {
+        "text": "\"Chiudi gli occhi e ascolta\", disse il nonno con voce dolce.",
+        "emoji": "🌳"
+      },
+      {
+        "text": "Nuno sentì gli uccelli cantare e il vento muoversi tra le foglie.",
+        "emoji": "🐦"
+      },
+      {
+        "text": "Poi il nonno chiese: \"Cosa senti, proprio adesso?\"",
+        "emoji": "❓"
+      },
+      {
+        "text": "Nuno pensò un attimo e disse: \"Mi sento stanco, ma anche calmo.\"",
+        "emoji": "😌"
+      },
+      {
+        "text": "\"Quella è la tua vocina interiore\", spiegò il nonno con affetto.",
+        "emoji": "💗"
+      },
+      {
+        "text": "\"Sa sempre di cosa hai bisogno, se ti fermi ad ascoltarla.\"",
+        "emoji": "🧘"
+      },
+      {
+        "text": "Da quel giorno, Nuno si fermava ogni pomeriggio per respirare con calma.",
+        "emoji": "🌸"
+      },
+      {
+        "text": "Imparò che conoscere i propri sentimenti lo rendeva più felice.",
+        "emoji": "⭐"
+      }
+    ]
+  },
+  {
+    "id": "seeds-of-kindness",
+    "title": "Semi di Gentilezza",
+    "emoji": "🌻",
+    "pages": [
+      {
+        "text": "La piccola Iris pensava di essere troppo giovane per aiutare qualcuno.",
+        "emoji": "🌱"
+      },
+      {
+        "text": "Un giorno, suo nonno le regalò un sacchetto di semi di girasole.",
+        "emoji": "🌻"
+      },
+      {
+        "text": "\"Pianta un seme ogni volta che fai qualcosa di gentile\", le disse.",
+        "emoji": "👴"
+      },
+      {
+        "text": "Iris aiutò un compagno a raccogliere le matite cadute a terra.",
+        "emoji": "✏️"
+      },
+      {
+        "text": "Quel pomeriggio, piantò il suo primo seme nel piccolo giardino di casa.",
+        "emoji": "🌱"
+      },
+      {
+        "text": "Il giorno dopo, aiutò ad apparecchiare la tavola senza che glielo chiedessero.",
+        "emoji": "🍽️"
+      },
+      {
+        "text": "Piantò un altro seme e sorrise vedendo il giardino crescere.",
+        "emoji": "😊"
+      },
+      {
+        "text": "Passarono le settimane e Iris continuò a fare piccoli gesti gentili.",
+        "emoji": "💛"
+      },
+      {
+        "text": "Aiutava i vicini, condivideva i giocattoli e ascoltava gli amici tristi.",
+        "emoji": "🧸"
+      },
+      {
+        "text": "Il giardino si riempì di alti girasoli splendenti al sole.",
+        "emoji": "🌞"
+      },
+      {
+        "text": "Anche gli amici di Iris iniziarono a essere più gentili tra loro.",
+        "emoji": "🤗"
+      },
+      {
+        "text": "Iris capì che la gentilezza, come i semi, cresce quando viene condivisa.",
+        "emoji": "🌻"
+      }
+    ]
+  }
+]

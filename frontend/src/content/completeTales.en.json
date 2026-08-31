@@ -1,0 +1,552 @@
+[
+  {
+    "id": "three-little-pigs",
+    "title": "The Three Little Pigs",
+    "emoji": "🐷",
+    "pages": [
+      {
+        "text": "Three little pigs left home to build their very own houses.",
+        "emoji": "🐷"
+      },
+      {
+        "text": "The first pig was lazy and built his house from straw.",
+        "emoji": "🌾"
+      },
+      {
+        "text": "The second pig built his house from sticks and branches.",
+        "emoji": "🪵"
+      },
+      {
+        "text": "The third pig worked hard and built his house from bricks.",
+        "emoji": "🧱"
+      },
+      {
+        "text": "A hungry wolf came along and knocked on the straw door.",
+        "emoji": "🐺"
+      },
+      {
+        "text": "The wolf huffed and puffed, and the straw house fell down.",
+        "emoji": "💨"
+      },
+      {
+        "text": "The pig ran fast to his brother's house made of sticks.",
+        "emoji": "🏃"
+      },
+      {
+        "text": "The wolf huffed again, and the stick house fell down too.",
+        "emoji": "💨"
+      },
+      {
+        "text": "Both pigs ran to their brother's strong house made of bricks.",
+        "emoji": "🧱"
+      },
+      {
+        "text": "The wolf huffed with all his strength, but the house stood firm.",
+        "emoji": "😤"
+      },
+      {
+        "text": "Tired and hungry, the wolf finally left the forest for good.",
+        "emoji": "🌲"
+      },
+      {
+        "text": "The three pigs learned that careful work always pays off.",
+        "emoji": "🎉"
+      }
+    ]
+  },
+  {
+    "id": "red-riding-hood",
+    "title": "Little Red Riding Hood",
+    "emoji": "🐺",
+    "pages": [
+      {
+        "text": "A little girl always wore a warm red hooded coat.",
+        "emoji": "👧"
+      },
+      {
+        "text": "One day, her mother asked her to bring cakes to grandma.",
+        "emoji": "🧁"
+      },
+      {
+        "text": "The girl walked alone along the path through the big forest.",
+        "emoji": "🌲"
+      },
+      {
+        "text": "A clever wolf found her and asked where she was going.",
+        "emoji": "🐺"
+      },
+      {
+        "text": "The wolf ran ahead and reached grandma's house first.",
+        "emoji": "🏃"
+      },
+      {
+        "text": "The wolf hid grandma away and put on her clothes instead.",
+        "emoji": "🛏️"
+      },
+      {
+        "text": "The girl arrived and noticed the strange voice and big eyes.",
+        "emoji": "👀"
+      },
+      {
+        "text": "A woodcutter passing by heard strange noises from the house.",
+        "emoji": "🪓"
+      },
+      {
+        "text": "The woodcutter rushed in and chased the frightened wolf away.",
+        "emoji": "💪"
+      },
+      {
+        "text": "They found grandma hidden safe and sound inside the closet.",
+        "emoji": "👵"
+      },
+      {
+        "text": "Everyone was happy and shared the cakes together at the table.",
+        "emoji": "🍰"
+      },
+      {
+        "text": "The girl learned to never talk to strangers in the forest.",
+        "emoji": "🌟"
+      }
+    ]
+  },
+  {
+    "id": "tortoise-hare",
+    "title": "The Tortoise and the Hare",
+    "emoji": "🐢",
+    "pages": [
+      {
+        "text": "A fast hare loved to tease the slow tortoise every day.",
+        "emoji": "🐇"
+      },
+      {
+        "text": "Tired of the jokes, the tortoise challenged the hare to a race.",
+        "emoji": "🐢"
+      },
+      {
+        "text": "All the forest animals came to watch the big race.",
+        "emoji": "🦉"
+      },
+      {
+        "text": "At the signal, the hare shot off and got far ahead.",
+        "emoji": "💨"
+      },
+      {
+        "text": "The hare looked back and laughed at the slow tortoise.",
+        "emoji": "😏"
+      },
+      {
+        "text": "So sure of winning, the hare decided to rest under a tree.",
+        "emoji": "🌳"
+      },
+      {
+        "text": "The hare fell fast asleep, sure he had plenty of time.",
+        "emoji": "😴"
+      },
+      {
+        "text": "The tortoise kept walking slowly, but he never once stopped.",
+        "emoji": "🚶"
+      },
+      {
+        "text": "Step by step, the tortoise got closer and closer to the finish.",
+        "emoji": "🏁"
+      },
+      {
+        "text": "The hare woke up suddenly and ran as fast as he could.",
+        "emoji": "😱"
+      },
+      {
+        "text": "But it was too late, the tortoise had crossed the line first.",
+        "emoji": "🎉"
+      },
+      {
+        "text": "Everyone learned that slow and steady can also win the race.",
+        "emoji": "🐢"
+      }
+    ]
+  },
+  {
+    "id": "goldilocks",
+    "title": "Goldilocks and the Three Bears",
+    "emoji": "🐻",
+    "pages": [
+      {
+        "text": "A little girl with golden hair walked alone through the forest.",
+        "emoji": "👧"
+      },
+      {
+        "text": "She found a small house and went in since the door was open.",
+        "emoji": "🏠"
+      },
+      {
+        "text": "On the table sat three bowls of warm soup waiting.",
+        "emoji": "🥣"
+      },
+      {
+        "text": "She tasted the first, but it was much too hot.",
+        "emoji": "🔥"
+      },
+      {
+        "text": "She tasted the second, but it was much too cold.",
+        "emoji": "❄️"
+      },
+      {
+        "text": "The third bowl was just right, and she ate it all.",
+        "emoji": "😋"
+      },
+      {
+        "text": "Then she tried three chairs, but only the small one felt comfy.",
+        "emoji": "🪑"
+      },
+      {
+        "text": "She sat down hard, and the little chair broke apart.",
+        "emoji": "💥"
+      },
+      {
+        "text": "Tired now, she went upstairs and tried three different beds.",
+        "emoji": "🛏️"
+      },
+      {
+        "text": "The small bed was just right, and she fell fast asleep.",
+        "emoji": "😴"
+      },
+      {
+        "text": "The bear family came home and found everything all messed up.",
+        "emoji": "🐻"
+      },
+      {
+        "text": "The girl woke up scared, said sorry, and ran home fast.",
+        "emoji": "🏃"
+      }
+    ]
+  },
+  {
+    "id": "ant-grasshopper",
+    "title": "The Ant and the Grasshopper",
+    "emoji": "🐜",
+    "pages": [
+      {
+        "text": "In the hot summer, an ant worked hard gathering food every day.",
+        "emoji": "🐜"
+      },
+      {
+        "text": "A grasshopper spent his days singing and dancing in the sun.",
+        "emoji": "🎶"
+      },
+      {
+        "text": "The grasshopper laughed at the ant for working so hard.",
+        "emoji": "😄"
+      },
+      {
+        "text": "The ant kept carrying grains back to her safe little burrow.",
+        "emoji": "🌾"
+      },
+      {
+        "text": "Slowly, summer ended and a cold wind began to blow.",
+        "emoji": "🍂"
+      },
+      {
+        "text": "Winter arrived with snow, and the grasshopper had no food left.",
+        "emoji": "❄️"
+      },
+      {
+        "text": "Hungry and cold, the grasshopper knocked on the ant's door.",
+        "emoji": "🚪"
+      },
+      {
+        "text": "The ant opened the door and saw her sad, hungry friend.",
+        "emoji": "😢"
+      },
+      {
+        "text": "Kindly, the ant shared the food she had carefully saved.",
+        "emoji": "🍞"
+      },
+      {
+        "text": "The grasshopper thanked her warmly and promised to plan ahead too.",
+        "emoji": "🙏"
+      },
+      {
+        "text": "The next spring, the two friends worked together happily.",
+        "emoji": "🌸"
+      },
+      {
+        "text": "They learned that planning ahead and helping others is always good.",
+        "emoji": "💛"
+      }
+    ]
+  },
+  {
+    "id": "gingerbread-man",
+    "title": "The Gingerbread Man",
+    "emoji": "🍪",
+    "pages": [
+      {
+        "text": "A woman baked a sweet gingerbread man and put him in the oven.",
+        "emoji": "🍪"
+      },
+      {
+        "text": "When she opened the oven, he jumped out and started to run.",
+        "emoji": "🏃"
+      },
+      {
+        "text": "\"You can't catch me!\" he shouted, running down the road.",
+        "emoji": "😄"
+      },
+      {
+        "text": "The woman chased after him, but he was much too fast.",
+        "emoji": "💨"
+      },
+      {
+        "text": "A dog tried to catch him, but he kept on running.",
+        "emoji": "🐕"
+      },
+      {
+        "text": "A cow tried too, but she could never quite reach him.",
+        "emoji": "🐄"
+      },
+      {
+        "text": "He came to a wide river and did not know how to cross.",
+        "emoji": "🌊"
+      },
+      {
+        "text": "A clever fox offered to carry him across on her back.",
+        "emoji": "🦊"
+      },
+      {
+        "text": "The fox swam slowly, saying the water was getting deeper.",
+        "emoji": "🏊"
+      },
+      {
+        "text": "He climbed onto her nose so he would not get wet.",
+        "emoji": "👃"
+      },
+      {
+        "text": "At that moment, the fox opened her mouth with a quick snap.",
+        "emoji": "😲"
+      },
+      {
+        "text": "The gingerbread man learned, too late, not to trust clever strangers.",
+        "emoji": "🦊"
+      }
+    ]
+  },
+  {
+    "id": "mirror-of-courage",
+    "title": "The Mirror of Courage",
+    "emoji": "🪞",
+    "pages": [
+      {
+        "text": "Little Sara was always afraid to speak in front of the class.",
+        "emoji": "😟"
+      },
+      {
+        "text": "Her hands would shake whenever she had to present a project.",
+        "emoji": "🤲"
+      },
+      {
+        "text": "Sara's grandmother gave her a small round golden mirror.",
+        "emoji": "🪞"
+      },
+      {
+        "text": "\"This mirror always shows someone brave,\" grandma said with a smile.",
+        "emoji": "👵"
+      },
+      {
+        "text": "Sara looked into the mirror and saw only her own face.",
+        "emoji": "😕"
+      },
+      {
+        "text": "\"But I only see myself,\" Sara said, puzzled by the answer.",
+        "emoji": "🤔"
+      },
+      {
+        "text": "\"Exactly,\" grandma replied. \"Courage already lives inside you.\"",
+        "emoji": "💡"
+      },
+      {
+        "text": "The next day, Sara carried the mirror hidden in her pocket.",
+        "emoji": "🎒"
+      },
+      {
+        "text": "Before speaking, she quickly glanced at her brave reflection.",
+        "emoji": "👀"
+      },
+      {
+        "text": "She took a deep breath, smiled, and began to speak slowly and clearly.",
+        "emoji": "🗣️"
+      },
+      {
+        "text": "The class clapped, and Sara's heart filled with pride.",
+        "emoji": "👏"
+      },
+      {
+        "text": "Sara learned that courage doesn't come from outside, but from within.",
+        "emoji": "⭐"
+      }
+    ]
+  },
+  {
+    "id": "helping-hands-club",
+    "title": "The Helping Hands Club",
+    "emoji": "🤝",
+    "pages": [
+      {
+        "text": "In the neighborhood lived Tom, a boy full of good ideas.",
+        "emoji": "🧒"
+      },
+      {
+        "text": "One day he saw an elderly neighbor struggling with heavy bags.",
+        "emoji": "🛍️"
+      },
+      {
+        "text": "Tom ran over and helped carry the bags to her door.",
+        "emoji": "🚶"
+      },
+      {
+        "text": "The neighbor smiled and thanked him with a slice of homemade cake.",
+        "emoji": "🍰"
+      },
+      {
+        "text": "Tom realized that helping others made him feel truly happy.",
+        "emoji": "😊"
+      },
+      {
+        "text": "He decided to start a club with friends to help the neighborhood.",
+        "emoji": "🤝"
+      },
+      {
+        "text": "They made a colorful poster and called it the Helping Hands Club.",
+        "emoji": "🎨"
+      },
+      {
+        "text": "Every week, the group helped someone different around the neighborhood.",
+        "emoji": "📅"
+      },
+      {
+        "text": "They watered plants, walked dogs, and helped tidy the park.",
+        "emoji": "🌱"
+      },
+      {
+        "text": "The neighbors began to smile more and talk to each other more.",
+        "emoji": "😄"
+      },
+      {
+        "text": "The neighborhood became a friendlier place thanks to the little club.",
+        "emoji": "🏘️"
+      },
+      {
+        "text": "Tom learned that small acts of help can change the world around us.",
+        "emoji": "🌍"
+      }
+    ]
+  },
+  {
+    "id": "quiet-voice-inside",
+    "title": "The Quiet Voice Inside",
+    "emoji": "🌙",
+    "pages": [
+      {
+        "text": "Little Nuno was always very busy, running from place to place.",
+        "emoji": "🏃"
+      },
+      {
+        "text": "He rushed to school, to games, and to his friends' houses.",
+        "emoji": "⚽"
+      },
+      {
+        "text": "But Nuno began to feel more and more tired and a little confused.",
+        "emoji": "😵"
+      },
+      {
+        "text": "His grandfather noticed and invited him to sit together in the garden.",
+        "emoji": "👴"
+      },
+      {
+        "text": "\"Close your eyes and listen,\" grandpa said in a soft voice.",
+        "emoji": "🌳"
+      },
+      {
+        "text": "Nuno heard the birds singing and the wind moving through the leaves.",
+        "emoji": "🐦"
+      },
+      {
+        "text": "Then grandpa asked, \"What do you feel, right now?\"",
+        "emoji": "❓"
+      },
+      {
+        "text": "Nuno thought for a moment and said, \"I feel tired, but also calm.\"",
+        "emoji": "😌"
+      },
+      {
+        "text": "\"That is your inner voice,\" grandpa explained gently.",
+        "emoji": "💗"
+      },
+      {
+        "text": "\"It always knows what you need, if you stop to listen.\"",
+        "emoji": "🧘"
+      },
+      {
+        "text": "From that day on, Nuno paused every afternoon to breathe quietly.",
+        "emoji": "🌸"
+      },
+      {
+        "text": "He learned that knowing his own feelings helped him feel happier.",
+        "emoji": "⭐"
+      }
+    ]
+  },
+  {
+    "id": "seeds-of-kindness",
+    "title": "Seeds of Kindness",
+    "emoji": "🌻",
+    "pages": [
+      {
+        "text": "Little Iris thought she was too young to help anyone at all.",
+        "emoji": "🌱"
+      },
+      {
+        "text": "One day, her grandfather gave her a small bag of sunflower seeds.",
+        "emoji": "🌻"
+      },
+      {
+        "text": "\"Plant a seed every time you do something kind,\" he said.",
+        "emoji": "👴"
+      },
+      {
+        "text": "Iris helped a classmate pick up the pencils that had fallen.",
+        "emoji": "✏️"
+      },
+      {
+        "text": "That afternoon, she planted her very first seed in the little garden.",
+        "emoji": "🌱"
+      },
+      {
+        "text": "The next day, she helped set the table without being asked.",
+        "emoji": "🍽️"
+      },
+      {
+        "text": "She planted another seed and smiled watching the garden grow.",
+        "emoji": "😊"
+      },
+      {
+        "text": "Weeks passed, and Iris kept doing small, kind little gestures.",
+        "emoji": "💛"
+      },
+      {
+        "text": "She helped neighbors, shared toys, and listened to sad friends.",
+        "emoji": "🧸"
+      },
+      {
+        "text": "The garden filled up with tall sunflowers shining in the sun.",
+        "emoji": "🌞"
+      },
+      {
+        "text": "Iris's friends also began to be kinder to one another.",
+        "emoji": "🤗"
+      },
+      {
+        "text": "Iris realized that kindness, like seeds, grows when it is shared.",
+        "emoji": "🌻"
+      }
+    ]
+  }
+]

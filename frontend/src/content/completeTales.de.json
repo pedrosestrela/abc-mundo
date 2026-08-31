@@ -1,0 +1,552 @@
+[
+  {
+    "id": "three-little-pigs",
+    "title": "Die Drei Kleinen Schweinchen",
+    "emoji": "🐷",
+    "pages": [
+      {
+        "text": "Drei kleine Schweinchen zogen aus, um eigene Häuser zu bauen.",
+        "emoji": "🐷"
+      },
+      {
+        "text": "Das erste Schweinchen war faul und baute sein Haus aus Stroh.",
+        "emoji": "🌾"
+      },
+      {
+        "text": "Das zweite Schweinchen baute sein Haus aus Ästen und Zweigen.",
+        "emoji": "🪵"
+      },
+      {
+        "text": "Das dritte Schweinchen arbeitete fleißig und baute ein Haus aus Ziegeln.",
+        "emoji": "🧱"
+      },
+      {
+        "text": "Ein hungriger Wolf kam und klopfte an die Strohtür.",
+        "emoji": "🐺"
+      },
+      {
+        "text": "Der Wolf pustete stark, und das Strohhaus fiel sofort um.",
+        "emoji": "💨"
+      },
+      {
+        "text": "Das Schweinchen rannte schnell zum Holzhaus seines Bruders.",
+        "emoji": "🏃"
+      },
+      {
+        "text": "Der Wolf pustete erneut, und auch das Holzhaus fiel um.",
+        "emoji": "💨"
+      },
+      {
+        "text": "Beide Schweinchen rannten zum starken Ziegelhaus ihres Bruders.",
+        "emoji": "🧱"
+      },
+      {
+        "text": "Der Wolf pustete mit aller Kraft, doch das Haus blieb stehen.",
+        "emoji": "😤"
+      },
+      {
+        "text": "Müde und ohne Erfolg verließ der Wolf endlich den Wald.",
+        "emoji": "🌲"
+      },
+      {
+        "text": "Die drei Schweinchen lernten, dass sorgfältige Arbeit sich lohnt.",
+        "emoji": "🎉"
+      }
+    ]
+  },
+  {
+    "id": "red-riding-hood",
+    "title": "Rotkäppchen",
+    "emoji": "🐺",
+    "pages": [
+      {
+        "text": "Ein kleines Mädchen trug immer einen warmen roten Mantel mit Kapuze.",
+        "emoji": "👧"
+      },
+      {
+        "text": "Eines Tages bat ihre Mutter sie, der kranken Oma Kuchen zu bringen.",
+        "emoji": "🧁"
+      },
+      {
+        "text": "Das Mädchen ging allein den Weg durch den großen Wald.",
+        "emoji": "🌲"
+      },
+      {
+        "text": "Ein listiger Wolf traf sie und fragte, wohin sie gehe.",
+        "emoji": "🐺"
+      },
+      {
+        "text": "Der Wolf lief voraus und kam zuerst bei Omas Haus an.",
+        "emoji": "🏃"
+      },
+      {
+        "text": "Der Wolf versteckte Oma und zog ihre Kleidung an.",
+        "emoji": "🛏️"
+      },
+      {
+        "text": "Das Mädchen kam an und wunderte sich über Stimme und Augen.",
+        "emoji": "👀"
+      },
+      {
+        "text": "Ein vorbeikommender Holzfäller hörte seltsame Geräusche aus dem Haus.",
+        "emoji": "🪓"
+      },
+      {
+        "text": "Der Holzfäller stürmte hinein und vertrieb den erschrockenen Wolf.",
+        "emoji": "💪"
+      },
+      {
+        "text": "Sie fanden Oma sicher und wohlbehalten im Schrank versteckt.",
+        "emoji": "👵"
+      },
+      {
+        "text": "Alle waren froh und aßen die Kuchen gemeinsam am Tisch.",
+        "emoji": "🍰"
+      },
+      {
+        "text": "Das Mädchen lernte, im Wald nie mit Fremden zu sprechen.",
+        "emoji": "🌟"
+      }
+    ]
+  },
+  {
+    "id": "tortoise-hare",
+    "title": "Die Schildkröte und der Hase",
+    "emoji": "🐢",
+    "pages": [
+      {
+        "text": "Ein schneller Hase ärgerte gerne die langsame Schildkröte jeden Tag.",
+        "emoji": "🐇"
+      },
+      {
+        "text": "Müde von den Witzen, forderte die Schildkröte den Hasen zum Wettlauf heraus.",
+        "emoji": "🐢"
+      },
+      {
+        "text": "Alle Waldtiere kamen, um das große Rennen zu sehen.",
+        "emoji": "🦉"
+      },
+      {
+        "text": "Beim Startsignal schoss der Hase los und war schnell weit voraus.",
+        "emoji": "💨"
+      },
+      {
+        "text": "Der Hase schaute zurück und lachte über die langsame Schildkröte.",
+        "emoji": "😏"
+      },
+      {
+        "text": "So sicher im Sieg, beschloss der Hase, sich unter einem Baum auszuruhen.",
+        "emoji": "🌳"
+      },
+      {
+        "text": "Der Hase schlief fest ein, sicher, dass er genug Zeit hatte.",
+        "emoji": "😴"
+      },
+      {
+        "text": "Die Schildkröte lief weiter langsam, aber sie hielt niemals an.",
+        "emoji": "🚶"
+      },
+      {
+        "text": "Schritt für Schritt kam die Schildkröte dem Ziel immer näher.",
+        "emoji": "🏁"
+      },
+      {
+        "text": "Der Hase wachte plötzlich auf und rannte so schnell er konnte.",
+        "emoji": "😱"
+      },
+      {
+        "text": "Doch es war zu spät, die Schildkröte hatte zuerst das Ziel erreicht.",
+        "emoji": "🎉"
+      },
+      {
+        "text": "Alle lernten, dass langsam und stetig auch zum Ziel führt.",
+        "emoji": "🐢"
+      }
+    ]
+  },
+  {
+    "id": "goldilocks",
+    "title": "Goldlöckchen und die drei Bären",
+    "emoji": "🐻",
+    "pages": [
+      {
+        "text": "Ein Mädchen mit goldenem Haar spazierte allein durch den Wald.",
+        "emoji": "👧"
+      },
+      {
+        "text": "Sie fand ein kleines Haus und ging hinein, da die Tür offen stand.",
+        "emoji": "🏠"
+      },
+      {
+        "text": "Auf dem Tisch standen drei Schüsseln mit warmer Suppe.",
+        "emoji": "🥣"
+      },
+      {
+        "text": "Sie probierte die erste, doch sie war viel zu heiß.",
+        "emoji": "🔥"
+      },
+      {
+        "text": "Sie probierte die zweite, doch sie war viel zu kalt.",
+        "emoji": "❄️"
+      },
+      {
+        "text": "Die dritte Schüssel war genau richtig, und sie aß alles auf.",
+        "emoji": "😋"
+      },
+      {
+        "text": "Dann probierte sie drei Stühle, nur der kleine war bequem.",
+        "emoji": "🪑"
+      },
+      {
+        "text": "Sie setzte sich fest hin, und der kleine Stuhl zerbrach.",
+        "emoji": "💥"
+      },
+      {
+        "text": "Müde ging sie nach oben und probierte drei verschiedene Betten.",
+        "emoji": "🛏️"
+      },
+      {
+        "text": "Das kleine Bett war genau richtig, und sie schlief tief ein.",
+        "emoji": "😴"
+      },
+      {
+        "text": "Die Bärenfamilie kam heim und fand alles durcheinander vor.",
+        "emoji": "🐻"
+      },
+      {
+        "text": "Das Mädchen wachte erschrocken auf, entschuldigte sich und rannte heim.",
+        "emoji": "🏃"
+      }
+    ]
+  },
+  {
+    "id": "ant-grasshopper",
+    "title": "Die Ameise und die Grille",
+    "emoji": "🐜",
+    "pages": [
+      {
+        "text": "Im heißen Sommer sammelte eine Ameise jeden Tag fleißig Futter.",
+        "emoji": "🐜"
+      },
+      {
+        "text": "Eine Grille verbrachte ihre Tage singend und tanzend in der Sonne.",
+        "emoji": "🎶"
+      },
+      {
+        "text": "Die Grille lachte über die Ameise, weil sie so hart arbeitete.",
+        "emoji": "😄"
+      },
+      {
+        "text": "Die Ameise trug weiterhin Körner zu ihrem sicheren kleinen Bau.",
+        "emoji": "🌾"
+      },
+      {
+        "text": "Langsam endete der Sommer und ein kalter Wind begann zu wehen.",
+        "emoji": "🍂"
+      },
+      {
+        "text": "Der Winter kam mit Schnee, und die Grille hatte kein Futter mehr.",
+        "emoji": "❄️"
+      },
+      {
+        "text": "Hungrig und frierend klopfte die Grille an die Tür der Ameise.",
+        "emoji": "🚪"
+      },
+      {
+        "text": "Die Ameise öffnete die Tür und sah ihre traurige, hungrige Freundin.",
+        "emoji": "😢"
+      },
+      {
+        "text": "Freundlich teilte die Ameise das Futter, das sie gespart hatte.",
+        "emoji": "🍞"
+      },
+      {
+        "text": "Die Grille dankte ihr herzlich und versprach, künftig auch vorzusorgen.",
+        "emoji": "🙏"
+      },
+      {
+        "text": "Im nächsten Frühling arbeiteten die beiden Freunde glücklich zusammen.",
+        "emoji": "🌸"
+      },
+      {
+        "text": "Sie lernten, dass Vorausplanen und anderen helfen immer gut ist.",
+        "emoji": "💛"
+      }
+    ]
+  },
+  {
+    "id": "gingerbread-man",
+    "title": "Der Lebkuchenmann",
+    "emoji": "🍪",
+    "pages": [
+      {
+        "text": "Eine Frau backte einen süßen Lebkuchenmann und stellte ihn in den Ofen.",
+        "emoji": "🍪"
+      },
+      {
+        "text": "Als sie den Ofen öffnete, sprang er heraus und rannte los.",
+        "emoji": "🏃"
+      },
+      {
+        "text": "\"Ihr könnt mich nicht fangen!\", rief er und rannte die Straße entlang.",
+        "emoji": "😄"
+      },
+      {
+        "text": "Die Frau rannte ihm hinterher, doch er war viel zu schnell.",
+        "emoji": "💨"
+      },
+      {
+        "text": "Ein Hund versuchte, ihn zu fangen, doch er lief weiter.",
+        "emoji": "🐕"
+      },
+      {
+        "text": "Auch eine Kuh versuchte es, doch sie erreichte ihn nie.",
+        "emoji": "🐄"
+      },
+      {
+        "text": "Er kam an einen breiten Fluss und wusste nicht, wie er hinüber sollte.",
+        "emoji": "🌊"
+      },
+      {
+        "text": "Ein listiger Fuchs bot an, ihn auf dem Rücken hinüberzutragen.",
+        "emoji": "🦊"
+      },
+      {
+        "text": "Der Fuchs schwamm langsam und sagte, das Wasser werde immer tiefer.",
+        "emoji": "🏊"
+      },
+      {
+        "text": "Er kletterte auf die Nase des Fuchses, um nicht nass zu werden.",
+        "emoji": "👃"
+      },
+      {
+        "text": "In diesem Moment öffnete der Fuchs blitzschnell sein Maul.",
+        "emoji": "😲"
+      },
+      {
+        "text": "Der Lebkuchenmann lernte, zu spät, listigen Fremden nicht zu trauen.",
+        "emoji": "🦊"
+      }
+    ]
+  },
+  {
+    "id": "mirror-of-courage",
+    "title": "Der Spiegel des Mutes",
+    "emoji": "🪞",
+    "pages": [
+      {
+        "text": "Die kleine Sara hatte immer Angst, vor der Klasse zu sprechen.",
+        "emoji": "😟"
+      },
+      {
+        "text": "Ihre Hände zitterten jedes Mal, wenn sie ein Projekt vorstellen musste.",
+        "emoji": "🤲"
+      },
+      {
+        "text": "Saras Großmutter schenkte ihr einen kleinen runden goldenen Spiegel.",
+        "emoji": "🪞"
+      },
+      {
+        "text": "\"Dieser Spiegel zeigt immer jemanden Mutigen\", sagte Oma lächelnd.",
+        "emoji": "👵"
+      },
+      {
+        "text": "Sara schaute in den Spiegel und sah nur ihr eigenes Gesicht.",
+        "emoji": "😕"
+      },
+      {
+        "text": "\"Aber ich sehe nur mich\", sagte Sara, verwirrt über die Antwort.",
+        "emoji": "🤔"
+      },
+      {
+        "text": "\"Genau\", antwortete Oma. \"Der Mut lebt schon in dir.\"",
+        "emoji": "💡"
+      },
+      {
+        "text": "Am nächsten Tag trug Sara den Spiegel versteckt in der Tasche.",
+        "emoji": "🎒"
+      },
+      {
+        "text": "Bevor sie sprach, warf sie einen kurzen Blick auf ihr mutiges Spiegelbild.",
+        "emoji": "👀"
+      },
+      {
+        "text": "Sie atmete tief durch, lächelte und sprach langsam und klar.",
+        "emoji": "🗣️"
+      },
+      {
+        "text": "Die Klasse klatschte, und Saras Herz war voller Stolz.",
+        "emoji": "👏"
+      },
+      {
+        "text": "Sara lernte, dass Mut nicht von außen kommt, sondern von innen.",
+        "emoji": "⭐"
+      }
+    ]
+  },
+  {
+    "id": "helping-hands-club",
+    "title": "Der Klub der Helfenden Hände",
+    "emoji": "🤝",
+    "pages": [
+      {
+        "text": "In der Nachbarschaft lebte Tom, ein Junge voller guter Ideen.",
+        "emoji": "🧒"
+      },
+      {
+        "text": "Eines Tages sah er eine ältere Nachbarin, die schwere Taschen trug.",
+        "emoji": "🛍️"
+      },
+      {
+        "text": "Tom rannte hin und half ihr, die Taschen bis zur Tür zu tragen.",
+        "emoji": "🚶"
+      },
+      {
+        "text": "Die Nachbarin lächelte und bedankte sich mit einem Stück selbstgebackenem Kuchen.",
+        "emoji": "🍰"
+      },
+      {
+        "text": "Tom merkte, dass anderen zu helfen ihn wirklich glücklich machte.",
+        "emoji": "😊"
+      },
+      {
+        "text": "Er beschloss, mit Freunden einen Klub zu gründen, um der Nachbarschaft zu helfen.",
+        "emoji": "🤝"
+      },
+      {
+        "text": "Sie malten ein buntes Plakat und nannten ihn Klub der Helfenden Hände.",
+        "emoji": "🎨"
+      },
+      {
+        "text": "Jede Woche half die Gruppe jemand anderem in der Nachbarschaft.",
+        "emoji": "📅"
+      },
+      {
+        "text": "Sie gossen Pflanzen, gingen mit Hunden spazieren und räumten den Park auf.",
+        "emoji": "🌱"
+      },
+      {
+        "text": "Die Nachbarn begannen mehr zu lächeln und mehr miteinander zu reden.",
+        "emoji": "😄"
+      },
+      {
+        "text": "Die Nachbarschaft wurde dank des kleinen Klubs freundlicher.",
+        "emoji": "🏘️"
+      },
+      {
+        "text": "Tom lernte, dass kleine Hilfstaten die Welt um uns herum verändern.",
+        "emoji": "🌍"
+      }
+    ]
+  },
+  {
+    "id": "quiet-voice-inside",
+    "title": "Die Leise Stimme im Inneren",
+    "emoji": "🌙",
+    "pages": [
+      {
+        "text": "Der kleine Nuno war immer sehr beschäftigt und rannte von Ort zu Ort.",
+        "emoji": "🏃"
+      },
+      {
+        "text": "Er eilte zur Schule, zu Spielen und zu den Häusern seiner Freunde.",
+        "emoji": "⚽"
+      },
+      {
+        "text": "Doch Nuno fühlte sich immer müder und ein wenig verwirrt.",
+        "emoji": "😵"
+      },
+      {
+        "text": "Sein Großvater bemerkte es und lud ihn ein, im Garten zu sitzen.",
+        "emoji": "👴"
+      },
+      {
+        "text": "\"Schließe die Augen und höre zu\", sagte Opa mit sanfter Stimme.",
+        "emoji": "🌳"
+      },
+      {
+        "text": "Nuno hörte die Vögel singen und den Wind durch die Blätter wehen.",
+        "emoji": "🐦"
+      },
+      {
+        "text": "Dann fragte Opa: \"Was fühlst du gerade, genau jetzt?\"",
+        "emoji": "❓"
+      },
+      {
+        "text": "Nuno überlegte kurz und sagte: \"Ich fühle mich müde, aber auch ruhig.\"",
+        "emoji": "😌"
+      },
+      {
+        "text": "\"Das ist deine innere Stimme\", erklärte Opa liebevoll.",
+        "emoji": "💗"
+      },
+      {
+        "text": "\"Sie weiß immer, was du brauchst, wenn du innehältst und zuhörst.\"",
+        "emoji": "🧘"
+      },
+      {
+        "text": "Seit diesem Tag hielt Nuno jeden Nachmittag inne, um ruhig zu atmen.",
+        "emoji": "🌸"
+      },
+      {
+        "text": "Er lernte, dass seine Gefühle zu kennen ihn glücklicher machte.",
+        "emoji": "⭐"
+      }
+    ]
+  },
+  {
+    "id": "seeds-of-kindness",
+    "title": "Samen der Güte",
+    "emoji": "🌻",
+    "pages": [
+      {
+        "text": "Die kleine Iris dachte, sie sei zu jung, um jemandem zu helfen.",
+        "emoji": "🌱"
+      },
+      {
+        "text": "Eines Tages schenkte ihr Großvater ihr eine kleine Tüte Sonnenblumenkerne.",
+        "emoji": "🌻"
+      },
+      {
+        "text": "\"Pflanze einen Samen, jedes Mal wenn du etwas Nettes tust\", sagte er.",
+        "emoji": "👴"
+      },
+      {
+        "text": "Iris half einem Mitschüler, heruntergefallene Bleistifte aufzuheben.",
+        "emoji": "✏️"
+      },
+      {
+        "text": "An diesem Nachmittag pflanzte sie ihren ersten Samen im kleinen Garten.",
+        "emoji": "🌱"
+      },
+      {
+        "text": "Am nächsten Tag half sie ungefragt beim Tischdecken.",
+        "emoji": "🍽️"
+      },
+      {
+        "text": "Sie pflanzte einen weiteren Samen und lächelte beim Anblick des wachsenden Gartens.",
+        "emoji": "😊"
+      },
+      {
+        "text": "Wochen vergingen, und Iris tat weiterhin kleine, freundliche Dinge.",
+        "emoji": "💛"
+      },
+      {
+        "text": "Sie half Nachbarn, teilte Spielzeug und hörte traurigen Freunden zu.",
+        "emoji": "🧸"
+      },
+      {
+        "text": "Der Garten füllte sich mit hohen Sonnenblumen, die in der Sonne strahlten.",
+        "emoji": "🌞"
+      },
+      {
+        "text": "Auch Iris' Freunde begannen, netter zueinander zu sein.",
+        "emoji": "🤗"
+      },
+      {
+        "text": "Iris erkannte, dass Güte, wie Samen, wächst, wenn man sie teilt.",
+        "emoji": "🌻"
+      }
+    ]
+  }
+]

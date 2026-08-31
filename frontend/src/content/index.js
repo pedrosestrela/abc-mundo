@@ -95,6 +95,14 @@ import songsZh from "./songs.zh.json";
 import songsEs from "./songs.es.json";
 import songsIt from "./songs.it.json";
 
+import completeTalesPt from "./completeTales.pt.json";
+import completeTalesEn from "./completeTales.en.json";
+import completeTalesDe from "./completeTales.de.json";
+import completeTalesFr from "./completeTales.fr.json";
+import completeTalesZh from "./completeTales.zh.json";
+import completeTalesEs from "./completeTales.es.json";
+import completeTalesIt from "./completeTales.it.json";
+
 import detectivePt from "./detective.pt.json";
 import detectiveEn from "./detective.en.json";
 import detectiveDe from "./detective.de.json";
@@ -320,6 +328,7 @@ const READING = { pt: readingPt, en: readingEn, de: readingDe, fr: readingFr, zh
 const SYLLABLES = { pt: syllablesPt, en: syllablesEn, de: syllablesDe, fr: syllablesFr, zh: syllablesZh, es: syllablesEs, it: syllablesIt };
 const PHRASES = { pt: phrasesPt, en: phrasesEn, de: phrasesDe, fr: phrasesFr, zh: phrasesZh, es: phrasesEs, it: phrasesIt };
 const SONGS = { pt: songsPt, en: songsEn, de: songsDe, fr: songsFr, zh: songsZh, es: songsEs, it: songsIt };
+const COMPLETE_TALES = { pt: completeTalesPt, en: completeTalesEn, de: completeTalesDe, fr: completeTalesFr, zh: completeTalesZh, es: completeTalesEs, it: completeTalesIt };
 const FINANCIAL = { pt: financialPt, en: financialEn, de: financialDe, fr: financialFr, zh: financialZh, es: financialEs, it: financialIt };
 const PHONICS = { pt: phonicsPt, en: phonicsEn, de: phonicsDe, fr: phonicsFr, zh: phonicsZh, es: phonicsEs, it: phonicsIt };
 const MISSIONS = { pt: missionsPt, en: missionsEn, de: missionsDe, fr: missionsFr, zh: missionsZh, es: missionsEs, it: missionsIt };
@@ -417,6 +426,10 @@ export async function getStories(langCode) {
   }
   storiesCache.set(langCode, data);
   return data;
+}
+
+export function getCompleteTales(langCode) {
+  return COMPLETE_TALES[langCode] || [];
 }
 
 export function getFinancial(langCode) {
