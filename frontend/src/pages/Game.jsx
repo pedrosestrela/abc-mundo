@@ -4,6 +4,15 @@ import { getReading } from "../content/index.js";
 import { getLangPair, getProfile, getDifficultyTier, pingProgress } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
 import HelpButton from "../components/HelpButton.jsx";
+import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
+import MazeGame from "./MazeGame.jsx";
+import MemoryGame from "./MemoryGame.jsx";
+import CheckersGame from "./CheckersGame.jsx";
+import ChessGame from "./ChessGame.jsx";
+import TicTacToeGame from "./TicTacToeGame.jsx";
+import HangmanGame from "./HangmanGame.jsx";
+import WordSearchGame from "./WordSearchGame.jsx";
+import JigsawGame from "./JigsawGame.jsx";
 
 // Tier -> { poolSize: how many words to draw questions from, rounds: quiz length }
 const TIER_CONFIG = {
@@ -35,10 +44,8 @@ function buildRounds(words, tier) {
   return rounds;
 }
 
-export default function Game() {
+function QuizGame({ pair, profile }) {
   const { t } = useTranslation();
-  const pair = getLangPair() || { mother: "pt", secondary: "en" };
-  const profile = getProfile();
   const tier = getDifficultyTier(profile?.age);
   const words = getReading(pair.mother);
 
@@ -73,12 +80,7 @@ export default function Game() {
   if (!round && !finished) return null;
 
   return (
-    <div className="page">
-      <h1>{t("modules.gameTitle")} 🎮</h1>
-      <div className="help-btn-corner">
-        <HelpButton text={t("modules.gameHelp")} langCode={pair.mother} />
-      </div>
-
+    <>
       {!finished ? (
         <div className="game-card">
           <div className="game-progress">
@@ -117,6 +119,67 @@ export default function Game() {
           </button>
         </div>
       )}
+    </>
+  );
+}
+
+const TABS = [
+  { key: "quiz", emoji: "🎮", titleKey: "gameTabQuiz", helpKey: "gameHelp" },
+  { key: "maze", emoji: "🦊", titleKey: "gameTabMaze", helpKey: "mazeHelp" },
+  { key: "memory", emoji: "🃏", titleKey: "gameTabMemory", helpKey: "memoryHelp" },
+  { key: "checkers", emoji: "⚫", titleKey: "gameTabCheckers", helpKey: "checkersHelp" },
+  { key: "chess", emoji: "♟️", titleKey: "gameTabChess", helpKey: "chessHelp" },
+  { key: "tictactoe", emoji: "❌", titleKey: "gameTabTicTacToe", helpKey: "tttHelp" },
+  { key: "hangman", emoji: "🎈", titleKey: "gameTabHangman", helpKey: "hangmanHelp" },
+  { key: "wordsearch", emoji: "🔎", titleKey: "gameTabWordSearch", helpKey: "wordsearchHelp" },
+  { key: "jigsaw", emoji: "🧩", titleKey: "gameTabJigsaw", helpKey: "jigsawHelp" },
+];
+
+export default function Game() {
+  const { t } = useTranslation();
+  const pair = getLangPair() || { mother: "pt", secondary: "en" };
+  const profile = getProfile();
+  const [tab, setTab] = useState("quiz");
+  const activeTab = TABS.find((tb) => tb.key === tab) || TABS[0];
+
+  return (
+    <div className="page">
+      <h1>{t("modules.gameTitle")} 🎮</h1>
+      <div className="help-btn-corner">
+        <HelpButton text={t(`modules.${activeTab.helpKey}`)} langCode={pair.mother} />
+      </div>
+
+      <div className="phonics-tabs" role="tablist">
+        {TABS.map((tb) => (
+          <button
+            key={tb.key}
+            type="button"
+            role="tab"
+            aria-selected={tab === tb.key}
+            className={"phonics-tab" + (tab === tb.key ? " selected" : "")}
+            onClick={() => setTab(tb.key)}
+          >
+            <span className="phonics-tab-inner">
+              {tb.emoji} {t(`modules.${tb.titleKey}`)}
+              <TabSpeakIcon text={t(`modules.${tb.titleKey}`) + ". " + t(`modules.${tb.helpKey}`)} langCode={pair.mother} />
+            </span>
+          </button>
+        ))}
+      </div>
+
+      {tab === "quiz" && (
+        <div className="game-card">
+          <QuizGame pair={pair} profile={profile} />
+        </div>
+      )}
+      {tab === "maze" && <MazeGame key="maze" profileName={profile?.name} langCode={pair.mother} />}
+      {tab === "memory" && <MemoryGame key="memory" profileName={profile?.name} langCode={pair.mother} />}
+      {tab === "checkers" && <CheckersGame key="checkers" profileName={profile?.name} langCode={pair.mother} />}
+      {tab === "chess" && <ChessGame key="chess" profileName={profile?.name} langCode={pair.mother} />}
+      {tab === "tictactoe" && <TicTacToeGame key="tictactoe" profileName={profile?.name} langCode={pair.mother} />}
+      {tab === "hangman" && <HangmanGame key="hangman" pair={pair} profileName={profile?.name} />}
+      {tab === "wordsearch" && <WordSearchGame key="wordsearch" pair={pair} profile={profile} profileName={profile?.name} />}
+      {tab === "jigsaw" && <JigsawGame key="jigsaw" pair={pair} profile={profile} profileName={profile?.name} />}
     </div>
   );
 }

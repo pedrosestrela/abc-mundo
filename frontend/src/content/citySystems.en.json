@@ -61,5 +61,56 @@
     "steps": [
       "Firefighters help put out fires, rescue people and animals, and assist anyone who needs help in an emergency. They are always ready, with their truck and equipment prepared, to reach whoever needs help as fast as possible."
     ]
+  },
+  {
+    "id": "iluminacao",
+    "icon": "🔆",
+    "name": "Street Lighting",
+    "prompt": "🔆 How do street lights turn on when it gets dark?",
+    "steps": [
+      "1. Light sensors detect when the sun sets and the sky gets dark.",
+      "2. A central system automatically turns on thousands of lamps at the same time.",
+      "3. The electricity travels through the same cables that power homes.",
+      "4. The streets light up, making them safer to walk and drive at night."
+    ]
+  },
+  {
+    "id": "internet",
+    "icon": "🌐",
+    "name": "Internet & Telecom",
+    "prompt": "🌐 How does the whole city have internet at the same time?",
+    "steps": [
+      "1. Very long fiber-optic cables connect the city to a bigger network that reaches the whole country and the world.",
+      "2. Antennas and telecom towers spread across the city send wireless signal to phones and homes.",
+      "3. A data center stores and organizes all the information traveling through the network.",
+      "4. This way, thousands of people can use the internet at the same time without the network breaking down."
+    ]
+  },
+  {
+    "id": "parques",
+    "icon": "🌳",
+    "name": "Parks & Green Spaces",
+    "prompt": "🌳 Who decides where the city's parks and trees go?",
+    "steps": [
+      "City engineers and planners choose spaces for parks, gardens, and trees, so people have places to play, walk, and breathe fresher air. Trees also help cool the city down and clean the air we breathe."
+    ]
+  },
+  {
+    "id": "policia",
+    "icon": "👮",
+    "name": "Police",
+    "prompt": "👮 What do police officers do to keep the city safe?",
+    "steps": [
+      "Police officers help keep the streets safe, direct traffic, help people who are lost, and respond quickly when someone needs help in an emergency. They're always nearby so everyone feels safer."
+    ]
+  },
+  {
+    "id": "escolas",
+    "icon": "🏫",
+    "name": "Schools",
+    "prompt": "🏫 How does the city organize schools for so many children?",
+    "steps": [
+      "The city builds schools in different neighborhoods so children don't have to travel far. Teachers prepare lessons every day to help each child learn and grow."
+    ]
   }
 ]

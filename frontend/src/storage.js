@@ -124,6 +124,61 @@ export function setLangPair(pair) {
 
 // Maps a child's age to a difficulty tier used to size/scale game content:
 // tier 1 (5-6y): small pools, short quizzes; tier 2 (7-8y): medium; tier 3 (9y+): full pools, longer quizzes.
+// --- "Hora de Dormir" (Bedtime / Calm) mode ---
+// A single device-wide, parent-controlled preference (not per-profile,
+// mirroring how LANG_PAIR_KEY works) for the warm/dim low-stimulation
+// visual theme. Defaults OFF.
+
+const BEDTIME_MODE_KEY = "abcmundo.bedtimeMode";
+
+export function getBedtimeMode() {
+  try {
+    return localStorage.getItem(BEDTIME_MODE_KEY) === "1";
+  } catch {
+    return false;
+  }
+}
+
+export function setBedtimeMode(on) {
+  try {
+    localStorage.setItem(BEDTIME_MODE_KEY, on ? "1" : "0");
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+// --- Daily practice reminder ---
+// A single device-wide, parent-controlled preference (not per-profile,
+// mirroring BEDTIME_MODE_KEY above) for the local "time to practice"
+// reminder: whether it's on, what time of day, and the last date a
+// reminder was actually shown (so it only fires once per day). See
+// reminders.js for the mechanism that reads/updates this.
+
+const REMINDER_SETTINGS_KEY = "abcmundo.reminderSettings";
+
+function defaultReminderSettings() {
+  return { enabled: false, time: "17:00", lastShownDate: null };
+}
+
+export function getReminderSettings() {
+  try {
+    const raw = localStorage.getItem(REMINDER_SETTINGS_KEY);
+    return raw ? { ...defaultReminderSettings(), ...JSON.parse(raw) } : defaultReminderSettings();
+  } catch {
+    return defaultReminderSettings();
+  }
+}
+
+export function setReminderSettings(partial) {
+  const next = { ...getReminderSettings(), ...partial };
+  try {
+    localStorage.setItem(REMINDER_SETTINGS_KEY, JSON.stringify(next));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+  return next;
+}
+
 export function getDifficultyTier(age) {
   const a = Number(age);
   if (!Number.isFinite(a) || a <= 6) return 1;
@@ -160,14 +215,55 @@ export function getCompletedMissions(profileName) {
   return all[profileName || "Explorer"] || [];
 }
 
-export function completeMission(profileName, missionId) {
+export function completeMission(profileName, missionId, reaction) {
   const name = profileName || "Explorer";
   const all = loadMissionsDone();
   const done = new Set(all[name] || []);
   done.add(missionId);
   all[name] = Array.from(done);
   saveMissionsDone(all);
+  if (reaction) {
+    saveMissionReaction(name, missionId, reaction);
+  }
   return all[name];
+}
+
+// Optional "como foi?" reaction (emoji) the child picks after completing a
+// mission, stored separately from the plain completed-id list above so the
+// existing completeMission/getCompletedMissions shape never changes for
+// callers that don't care about reactions.
+const MISSION_REACTIONS_KEY = "abcmundo.missionReactions";
+
+function loadMissionReactions() {
+  try {
+    const raw = localStorage.getItem(MISSION_REACTIONS_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveMissionReactionsAll(all) {
+  try {
+    localStorage.setItem(MISSION_REACTIONS_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+function saveMissionReaction(profileName, missionId, reaction) {
+  const name = profileName || "Explorer";
+  const all = loadMissionReactions();
+  const forProfile = all[name] || {};
+  forProfile[missionId] = reaction;
+  all[name] = forProfile;
+  saveMissionReactionsAll(all);
+  return all[name];
+}
+
+export function getMissionReactions(profileName) {
+  const all = loadMissionReactions();
+  return all[profileName || "Explorer"] || {};
 }
 
 // --- World Explorer ("Passaporte do Explorador") ---
@@ -319,6 +415,121 @@ export function exploreComputingCard(profileName, cardId) {
   explored.add(cardId);
   all[name] = Array.from(explored);
   saveExploredComputing(all);
+  return all[name];
+}
+
+// Tracks which "Como funciona a Internet?" journey step ids the child has
+// tapped/explored, mirroring the exploreComputingCard/getExploredComputing
+// pair shape above.
+
+const EXPLORED_INTERNET_JOURNEY_KEY = "abcmundo.exploredInternetJourney";
+
+function loadExploredInternetJourney() {
+  try {
+    const raw = localStorage.getItem(EXPLORED_INTERNET_JOURNEY_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveExploredInternetJourney(all) {
+  try {
+    localStorage.setItem(EXPLORED_INTERNET_JOURNEY_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getExploredInternetJourney(profileName) {
+  const all = loadExploredInternetJourney();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function exploreInternetJourneyStep(profileName, stepId) {
+  const name = profileName || "Explorer";
+  const all = loadExploredInternetJourney();
+  const explored = new Set(all[name] || []);
+  explored.add(stepId);
+  all[name] = Array.from(explored);
+  saveExploredInternetJourney(all);
+  return all[name];
+}
+
+// --- Aprender a Aprender (learning strategies / metacognition) ---
+// Tracks which learning-activity ids (as "type:id") the child has completed
+// across the module's five areas (memory, attention, error, strategy,
+// teach-back), mirroring the exploredComputing pattern above.
+
+const COMPLETED_LEARNING_ACTIVITIES_KEY = "abcmundo.completedLearningActivities";
+
+function loadCompletedLearningActivities() {
+  try {
+    const raw = localStorage.getItem(COMPLETED_LEARNING_ACTIVITIES_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveCompletedLearningActivities(all) {
+  try {
+    localStorage.setItem(COMPLETED_LEARNING_ACTIVITIES_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getCompletedLearningActivities(profileName) {
+  const all = loadCompletedLearningActivities();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function completeLearningActivity(profileName, activityId) {
+  const name = profileName || "Explorer";
+  const all = loadCompletedLearningActivities();
+  const completed = new Set(all[name] || []);
+  completed.add(activityId);
+  all[name] = Array.from(completed);
+  saveCompletedLearningActivities(all);
+  return all[name];
+}
+
+// --- O Mundo por Dentro (how things work) ---
+// Tracks which part ids (as "objectId:partId") the child has explored, for
+// each object of the "how things work" module.
+
+const EXPLORED_THING_PARTS_KEY = "abcmundo.exploredThingParts";
+
+function loadExploredThingParts() {
+  try {
+    const raw = localStorage.getItem(EXPLORED_THING_PARTS_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveExploredThingParts(all) {
+  try {
+    localStorage.setItem(EXPLORED_THING_PARTS_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getExploredThingParts(profileName) {
+  const all = loadExploredThingParts();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function exploreThingPart(profileName, objectId, partId) {
+  const name = profileName || "Explorer";
+  const all = loadExploredThingParts();
+  const explored = new Set(all[name] || []);
+  explored.add(`${objectId}:${partId}`);
+  all[name] = Array.from(explored);
+  saveExploredThingParts(all);
   return all[name];
 }
 
@@ -760,5 +971,483 @@ export function addMoonDiaryEntry(profileName, entry) {
   const withId = { id: entry.id || `md-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`, ...entry };
   all[name] = [withId, ...list];
   saveMoonDiary(all);
+  return all[name];
+}
+
+// --- Ateliê: Pixel Art ---
+// Tracks which pixel-art grids the child has saved, per profile. Mirrors
+// the exploreComputingCard/getExploredComputing pair shape (list of ids),
+// but here the "id" is a self-generated save id since pixel art pieces
+// aren't drawn from a fixed content bank.
+
+const ART_PIXEL_SAVES_KEY = "abcmundo.artPixelSaves";
+
+function loadArtPixelSaves() {
+  try {
+    const raw = localStorage.getItem(ART_PIXEL_SAVES_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveArtPixelSaves(all) {
+  try {
+    localStorage.setItem(ART_PIXEL_SAVES_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getArtPixelArtSaves(profileName) {
+  const all = loadArtPixelSaves();
+  return all[profileName || "Explorer"] || [];
+}
+
+// entry: { id, grid: string[] (cell colors), createdAt }
+export function saveArtPixelArt(profileName, entry) {
+  const name = profileName || "Explorer";
+  const all = loadArtPixelSaves();
+  const list = all[name] || [];
+  const withId = {
+    id: entry.id || `pa-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+    createdAt: entry.createdAt || Date.now(),
+    ...entry,
+  };
+  all[name] = [withId, ...list];
+  saveArtPixelSaves(all);
+  return all[name];
+}
+
+// --- Ateliê: Criar Personagem (character builder) ---
+// Tracks custom characters the child has assembled and saved, per profile.
+// Same append-only shape as the pixel art saves above.
+
+const ART_CHARACTER_SAVES_KEY = "abcmundo.artCharacterSaves";
+
+function loadArtCharacterSaves() {
+  try {
+    const raw = localStorage.getItem(ART_CHARACTER_SAVES_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveArtCharacterSaves(all) {
+  try {
+    localStorage.setItem(ART_CHARACTER_SAVES_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getArtCharacterSaves(profileName) {
+  const all = loadArtCharacterSaves();
+  return all[profileName || "Explorer"] || [];
+}
+
+// entry: { id, head, eyes, mouth, color, accessory, createdAt }
+export function saveArtCharacter(profileName, entry) {
+  const name = profileName || "Explorer";
+  const all = loadArtCharacterSaves();
+  const list = all[name] || [];
+  const withId = {
+    id: entry.id || `ac-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+    createdAt: entry.createdAt || Date.now(),
+    ...entry,
+  };
+  all[name] = [withId, ...list];
+  saveArtCharacterSaves(all);
+  return all[name];
+}
+
+// --- Escola de Trânsito: explored traffic signs ---
+// Tracks which traffic-sign card ids the child has tapped/revealed (i.e. read
+// the explanation for), mirroring the exploreComputingCard/getExploredComputing
+// pair shape exactly.
+
+const EXPLORED_TRAFFIC_SIGNS_KEY = "abcmundo.exploredTrafficSigns";
+
+function loadExploredTrafficSigns() {
+  try {
+    const raw = localStorage.getItem(EXPLORED_TRAFFIC_SIGNS_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveExploredTrafficSigns(all) {
+  try {
+    localStorage.setItem(EXPLORED_TRAFFIC_SIGNS_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getExploredTrafficSigns(profileName) {
+  const all = loadExploredTrafficSigns();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function exploreTrafficSign(profileName, signId) {
+  const name = profileName || "Explorer";
+  const all = loadExploredTrafficSigns();
+  const explored = new Set(all[name] || []);
+  explored.add(signId);
+  all[name] = Array.from(explored);
+  saveExploredTrafficSigns(all);
+  return all[name];
+}
+
+// --- A Evolução do Homem: visited timeline stages ---
+// Tracks which human-evolution timeline stage ids the child has tapped/opened,
+// mirroring the exploreComputingCard/getExploredComputing pair shape exactly.
+
+const VISITED_EVOLUTION_STAGES_KEY = "abcmundo.visitedEvolutionStages";
+
+function loadVisitedEvolutionStages() {
+  try {
+    const raw = localStorage.getItem(VISITED_EVOLUTION_STAGES_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveVisitedEvolutionStages(all) {
+  try {
+    localStorage.setItem(VISITED_EVOLUTION_STAGES_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getVisitedEvolutionStages(profileName) {
+  const all = loadVisitedEvolutionStages();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function visitEvolutionStage(profileName, stageId) {
+  const name = profileName || "Explorer";
+  const all = loadVisitedEvolutionStages();
+  const visited = new Set(all[name] || []);
+  visited.add(stageId);
+  all[name] = Array.from(visited);
+  saveVisitedEvolutionStages(all);
+  return all[name];
+}
+
+// --- Sistema Solar: visited card ids ---
+// Tracks which solar-system card ids the child has tapped/opened, mirroring
+// visitEvolutionStage/getVisitedEvolutionStages exactly.
+
+const VISITED_SOLAR_SYSTEM_STAGES_KEY = "abcmundo.visitedSolarSystemStages";
+
+function loadVisitedSolarSystemStages() {
+  try {
+    const raw = localStorage.getItem(VISITED_SOLAR_SYSTEM_STAGES_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveVisitedSolarSystemStages(all) {
+  try {
+    localStorage.setItem(VISITED_SOLAR_SYSTEM_STAGES_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getVisitedSolarSystemStages(profileName) {
+  const all = loadVisitedSolarSystemStages();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function visitSolarSystemStage(profileName, stageId) {
+  const name = profileName || "Explorer";
+  const all = loadVisitedSolarSystemStages();
+  const visited = new Set(all[name] || []);
+  visited.add(stageId);
+  all[name] = Array.from(visited);
+  saveVisitedSolarSystemStages(all);
+  return all[name];
+}
+
+// --- Tech History (car, lightbulb/electricity, ways to produce electricity):
+// visited timeline/topic stage ids ---
+// Tracks which tech-history stage ids the child has tapped/opened, keyed by
+// profile + topic (e.g. "automobile", "electricity", "production"), mirroring
+// visitEvolutionStage/getVisitedEvolutionStages exactly but scoped per topic.
+
+const VISITED_TECH_HISTORY_KEY = "abcmundo.visitedTechHistory";
+
+function loadVisitedTechHistory() {
+  try {
+    const raw = localStorage.getItem(VISITED_TECH_HISTORY_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveVisitedTechHistory(all) {
+  try {
+    localStorage.setItem(VISITED_TECH_HISTORY_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getVisitedTechHistoryStages(profileName, topicId) {
+  const all = loadVisitedTechHistory();
+  const name = profileName || "Explorer";
+  return (all[name] && all[name][topicId]) || [];
+}
+
+export function visitTechHistoryStage(profileName, topicId, stageId) {
+  const name = profileName || "Explorer";
+  const all = loadVisitedTechHistory();
+  const forName = all[name] || {};
+  const visited = new Set(forName[topicId] || []);
+  visited.add(stageId);
+  forName[topicId] = Array.from(visited);
+  all[name] = forName;
+  saveVisitedTechHistory(all);
+  return forName[topicId];
+}
+
+// --- Mini Chef ---
+// Tracks which recipe ids the child has finished cooking, per profile.
+
+const COOKED_RECIPES_KEY = "abcmundo.cookedRecipes";
+
+function loadCookedRecipes() {
+  try {
+    const raw = localStorage.getItem(COOKED_RECIPES_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveCookedRecipes(all) {
+  try {
+    localStorage.setItem(COOKED_RECIPES_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getCookedRecipes(profileName) {
+  const all = loadCookedRecipes();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function cookRecipe(profileName, recipeId) {
+  const name = profileName || "Explorer";
+  const all = loadCookedRecipes();
+  const cooked = new Set(all[name] || []);
+  cooked.add(recipeId);
+  all[name] = Array.from(cooked);
+  saveCookedRecipes(all);
+  return all[name];
+}
+
+// --- Circuit Lab ---
+// Tracks which circuit challenge ids the child has successfully completed.
+
+const COMPLETED_CIRCUITS_KEY = "abcmundo.completedCircuits";
+
+function loadCompletedCircuits() {
+  try {
+    const raw = localStorage.getItem(COMPLETED_CIRCUITS_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveCompletedCircuits(all) {
+  try {
+    localStorage.setItem(COMPLETED_CIRCUITS_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+// --- Backup / device-to-device sync ---
+// Exports every localStorage key this file owns (all profiles + all their
+// per-module progress data) into one plain JSON-serializable object, and
+// merges such an object back in on the receiving device. Kept intentionally
+// dumb about the *shape* of each key's value — it just carries whatever is
+// already in localStorage across, so it never needs updating when a new
+// module's storage key is added above.
+const SYNC_STORAGE_KEYS = [
+  PROFILES_KEY,
+  ACTIVE_PROFILE_KEY,
+  LANG_PAIR_KEY,
+  MISSIONS_KEY,
+  MISSION_REACTIONS_KEY,
+  VISITED_COUNTRIES_KEY,
+  ART_PROMPTS_TRIED_KEY,
+  EXPLORED_SCIENCE_KEY,
+  EXPLORED_COMPUTING_KEY,
+  EXPLORED_INTERNET_JOURNEY_KEY,
+  COMPLETED_LEARNING_ACTIVITIES_KEY,
+  EXPLORED_THING_PARTS_KEY,
+  VISITED_ERAS_KEY,
+  EXPLORED_WHYS_KEY,
+  PROGRESS_KEY,
+  TRIED_LIFE_SKILLS_KEY,
+  COMPLETED_THINKING_KEY,
+  COMPLETED_NEWSROOM_KEY,
+  COMPLETED_ACADEMY_KEY,
+  NATURE_DIARY_KEY,
+  MOON_DIARY_KEY,
+  ART_PIXEL_SAVES_KEY,
+  ART_CHARACTER_SAVES_KEY,
+  EXPLORED_TRAFFIC_SIGNS_KEY,
+  VISITED_EVOLUTION_STAGES_KEY,
+  VISITED_SOLAR_SYSTEM_STAGES_KEY,
+  VISITED_TECH_HISTORY_KEY,
+  COOKED_RECIPES_KEY,
+  COMPLETED_CIRCUITS_KEY,
+];
+
+// Gathers every profile's full data from this device into one JSON-friendly
+// object, ready to POST to /api/sync/upload.
+export function exportAllData() {
+  const out = {};
+  for (const key of SYNC_STORAGE_KEYS) {
+    try {
+      const raw = localStorage.getItem(key);
+      if (raw !== null) out[key] = JSON.parse(raw);
+    } catch {
+      // skip unreadable key rather than fail the whole export
+    }
+  }
+  return out;
+}
+
+// Merges an object previously produced by exportAllData() (retrieved from
+// /api/sync/download/{code}) into this device's localStorage, without
+// destroying anything already here.
+//
+// Merge strategy:
+// - PROFILES_KEY (array of profile objects): profiles are merged by name.
+//   A name that doesn't exist locally is added as-is. A name that already
+//   exists locally is left untouched if the incoming profile looks
+//   identical (same JSON), otherwise the incoming one is added under a
+//   suffixed name ("Name (2)", "Name (3)", ...) so no data is silently
+//   overwritten or lost.
+// - ACTIVE_PROFILE_KEY / LANG_PAIR_KEY: left untouched if this device
+//   already has a value (these are single-value device settings, not data
+//   to merge); adopted from the import only if unset locally.
+// - Every other key is a "per-profile-name object" (profileName -> data).
+//   Local entries win; a profile name present only in the incoming data is
+//   added. If a profile name was renamed above (collision), the same
+//   renamed key is used here so its progress data stays attached to it.
+export function mergeImportedData(imported) {
+  if (!imported || typeof imported !== "object") {
+    return { importedProfiles: 0, renamedProfiles: [] };
+  }
+
+  const nameRemap = {}; // incoming name -> name actually used locally
+  const renamedProfiles = [];
+  let importedProfiles = 0;
+
+  // 1. Merge profiles first, so we know the final name for every incoming profile.
+  const localProfiles = getProfiles();
+  const localByName = new Map(localProfiles.map((p) => [p.name, p]));
+  const incomingProfiles = Array.isArray(imported[PROFILES_KEY]) ? imported[PROFILES_KEY] : [];
+
+  for (const incoming of incomingProfiles) {
+    if (!incoming || !incoming.name) continue;
+    const existing = localByName.get(incoming.name);
+    if (!existing) {
+      localProfiles.push(incoming);
+      localByName.set(incoming.name, incoming);
+      nameRemap[incoming.name] = incoming.name;
+      importedProfiles += 1;
+      continue;
+    }
+    if (JSON.stringify(existing) === JSON.stringify(incoming)) {
+      // Identical profile already present locally: nothing to do.
+      nameRemap[incoming.name] = incoming.name;
+      continue;
+    }
+    // Name collision with different data: keep both, suffix the incoming one.
+    let n = 2;
+    let candidate = `${incoming.name} (${n})`;
+    while (localByName.has(candidate)) {
+      n += 1;
+      candidate = `${incoming.name} (${n})`;
+    }
+    const renamed = { ...incoming, name: candidate };
+    localProfiles.push(renamed);
+    localByName.set(candidate, renamed);
+    nameRemap[incoming.name] = candidate;
+    renamedProfiles.push({ from: incoming.name, to: candidate });
+    importedProfiles += 1;
+  }
+  saveProfiles(localProfiles);
+
+  if (!getActiveProfileName() && localProfiles.length > 0) {
+    setActiveProfileName(localProfiles[0].name);
+  }
+
+  // 2. Merge every other per-profile-name-keyed object, honoring the same
+  // name remap so a renamed profile's progress stays with it.
+  for (const key of SYNC_STORAGE_KEYS) {
+    if (key === PROFILES_KEY || key === ACTIVE_PROFILE_KEY || key === LANG_PAIR_KEY) continue;
+    const incomingForKey = imported[key];
+    if (!incomingForKey || typeof incomingForKey !== "object") continue;
+
+    let localForKey;
+    try {
+      const raw = localStorage.getItem(key);
+      localForKey = raw ? JSON.parse(raw) : {};
+    } catch {
+      localForKey = {};
+    }
+
+    for (const [profileName, value] of Object.entries(incomingForKey)) {
+      const finalName = nameRemap[profileName] || profileName;
+      if (!(finalName in localForKey)) {
+        localForKey[finalName] = value;
+      }
+      // If it already exists locally, local data wins (no overwrite).
+    }
+
+    try {
+      localStorage.setItem(key, JSON.stringify(localForKey));
+    } catch {
+      // ignore quota / privacy-mode errors
+    }
+  }
+
+  if (!getLangPair() && imported[LANG_PAIR_KEY]) {
+    setLangPair(imported[LANG_PAIR_KEY]);
+  }
+
+  return { importedProfiles, renamedProfiles };
+}
+
+export function getCompletedCircuits(profileName) {
+  const all = loadCompletedCircuits();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function completeCircuit(profileName, challengeId) {
+  const name = profileName || "Explorer";
+  const all = loadCompletedCircuits();
+  const done = new Set(all[name] || []);
+  done.add(challengeId);
+  all[name] = Array.from(done);
+  saveCompletedCircuits(all);
   return all[name];
 }

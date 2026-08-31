@@ -1,0 +1,557 @@
+[
+  {
+    "id": "bicicleta",
+    "emoji": "🚲",
+    "category": "transporte",
+    "title": "Fahrrad",
+    "parts": [
+      {
+        "id": "pedais",
+        "emoji": "🦵",
+        "label": "Pedale",
+        "predictionPrompt": "Was, glaubst du, machen die Pedale?",
+        "explanation": "Wenn du mit den Füßen auf die Pedale drückst, drehst du ein Zahnrad. Hier beginnt die ganze Kraft, die das Fahrrad bewegt."
+      },
+      {
+        "id": "corrente",
+        "emoji": "⚙️",
+        "label": "Kette",
+        "predictionPrompt": "Was, glaubst du, macht die Kette?",
+        "explanation": "Die Kette verbindet die Pedale mit dem Hinterrad. Wenn sich das Zahnrad der Pedale dreht, zieht die Kette ein anderes Zahnrad und dreht so auch das Hinterrad."
+      },
+      {
+        "id": "rodas",
+        "emoji": "🎡",
+        "label": "Räder",
+        "predictionPrompt": "Was, glaubst du, machen die Räder?",
+        "explanation": "Die Räder drehen sich und rollen über den Boden, sie verwandeln die Kraft deiner Füße in Vorwärtsbewegung."
+      },
+      {
+        "id": "travoes",
+        "emoji": "🛑",
+        "label": "Bremsen",
+        "predictionPrompt": "Was, glaubst du, machen die Bremsen?",
+        "explanation": "Wenn du die Hebel drückst, greifen die Bremsen die Räder und lassen sie stehen bleiben, sodass das Fahrrad langsamer wird oder anhält."
+      }
+    ],
+    "summary": "Jetzt weißt du, wie es funktioniert! Die Pedale geben Kraft, die Kette trägt diese Kraft zum Hinterrad, die Räder drehen sich vorwärts, und die Bremsen stoppen alles, wenn du es brauchst."
+  },
+  {
+    "id": "carro",
+    "emoji": "🚗",
+    "category": "transporte",
+    "title": "Auto",
+    "parts": [
+      {
+        "id": "motor",
+        "emoji": "🔧",
+        "label": "Motor",
+        "predictionPrompt": "Was, glaubst du, macht der Motor?",
+        "explanation": "Der Motor verbrennt Kraftstoff oder nutzt elektrische Energie, um Kraft zu erzeugen. Er ist das Herz des Autos, das die Energie für alles erzeugt."
+      },
+      {
+        "id": "volante",
+        "emoji": "🎡",
+        "label": "Lenkrad",
+        "predictionPrompt": "Was, glaubst du, macht das Lenkrad?",
+        "explanation": "Das Lenkrad ist mit den Vorderrädern verbunden. Wenn der Fahrer es dreht, drehen sich die Räder in diese Richtung und das Auto ändert die Richtung."
+      },
+      {
+        "id": "rodas-carro",
+        "emoji": "🛞",
+        "label": "Räder",
+        "predictionPrompt": "Was, glaubst du, machen die Räder des Autos?",
+        "explanation": "Die Räder erhalten die Kraft vom Motor und drehen sich auf der Straße, sodass das Auto vorwärts fährt."
+      },
+      {
+        "id": "travoes-carro",
+        "emoji": "🛑",
+        "label": "Bremsen",
+        "predictionPrompt": "Was, glaubst du, machen die Bremsen des Autos?",
+        "explanation": "Wenn der Fahrer das Bremspedal drückt, pressen Bremsscheiben die Räder fest zusammen und das Auto wird langsamer oder hält an."
+      }
+    ],
+    "summary": "Jetzt weißt du, wie es funktioniert! Der Motor erzeugt die Kraft, das Lenkrad wählt die Richtung, die Räder tragen das Auto vorwärts, und die Bremsen stoppen alles sicher."
+  },
+  {
+    "id": "relogio",
+    "emoji": "⏰",
+    "category": "casa",
+    "title": "Uhr",
+    "parts": [
+      {
+        "id": "pilha",
+        "emoji": "🔋",
+        "label": "Batterie",
+        "predictionPrompt": "Was, glaubst du, macht die Batterie?",
+        "explanation": "Die Batterie gibt der Uhr elektrische Energie, so wie Essen uns Energie gibt. Ohne Batterie bleibt die Uhr stehen."
+      },
+      {
+        "id": "engrenagens",
+        "emoji": "⚙️",
+        "label": "Zahnräder",
+        "predictionPrompt": "Was, glaubst du, machen die Zahnräder?",
+        "explanation": "Zahnräder sind kleine gezahnte Rädchen im Inneren der Uhr. Die Energie der Batterie dreht eines, und das dreht das nächste, immer im richtigen Takt."
+      },
+      {
+        "id": "ponteiros",
+        "emoji": "🕐",
+        "label": "Zeiger",
+        "predictionPrompt": "Was, glaubst du, machen die Zeiger?",
+        "explanation": "Die Zeiger sind mit den Zahnrädern verbunden. Sie bewegen sich langsam und genau, um uns Stunden, Minuten und Sekunden zu zeigen."
+      },
+      {
+        "id": "mostrador",
+        "emoji": "🔢",
+        "label": "Zifferblatt",
+        "predictionPrompt": "Was, glaubst du, macht das Zifferblatt?",
+        "explanation": "Das Zifferblatt hat die Zahlen ringsherum. Dort lesen wir die Position der Zeiger ab, um zu wissen, wie spät es ist."
+      }
+    ],
+    "summary": "Jetzt weißt du, wie es funktioniert! Die Batterie gibt Energie, die Zahnräder drehen sich im richtigen Takt, die Zeiger bewegen sich langsam, und das Zifferblatt hilft dir, die Zeit abzulesen."
+  },
+  {
+    "id": "smartphone",
+    "emoji": "📱",
+    "category": "tecnologia",
+    "title": "Smartphone",
+    "parts": [
+      {
+        "id": "bateria-phone",
+        "emoji": "🔋",
+        "label": "Akku",
+        "predictionPrompt": "Was, glaubst du, macht der Akku?",
+        "explanation": "Der Akku speichert elektrische Energie und versorgt jeden Teil des Telefons, sodass es auch fern von der Steckdose funktioniert."
+      },
+      {
+        "id": "processador",
+        "emoji": "🧠",
+        "label": "Prozessor",
+        "predictionPrompt": "Was, glaubst du, macht der Prozessor?",
+        "explanation": "Der Prozessor ist wie das Gehirn des Telefons. Er macht Millionen Berechnungen pro Sekunde, um Apps, Spiele und Nachrichten zu öffnen."
+      },
+      {
+        "id": "ecra-tatil",
+        "emoji": "🖐️",
+        "label": "Touchscreen",
+        "predictionPrompt": "Was, glaubst du, macht der Touchscreen?",
+        "explanation": "Der Bildschirm zeigt Bilder und spürt auch die Berührung deiner Finger, damit er weiß, wo du hintippen und was du öffnen willst."
+      },
+      {
+        "id": "antena",
+        "emoji": "📶",
+        "label": "Antenne",
+        "predictionPrompt": "Was, glaubst du, macht die Antenne?",
+        "explanation": "Die Antenne sendet und empfängt unsichtbare Signale durch die Luft, verbindet das Telefon mit dem Internet und ermöglicht Anrufe."
+      }
+    ],
+    "summary": "Jetzt weißt du, wie es funktioniert! Der Akku gibt Energie, der Prozessor denkt, der Bildschirm zeigt und fühlt Berührungen, und die Antenne verbindet das Telefon mit der Welt."
+  },
+  {
+    "id": "frigorifico",
+    "emoji": "🧊",
+    "category": "casa",
+    "title": "Kühlschrank",
+    "parts": [
+      {
+        "id": "compressor",
+        "emoji": "⚙️",
+        "label": "Kompressor",
+        "predictionPrompt": "Was, glaubst du, macht der Kompressor?",
+        "explanation": "Der Kompressor ist der Motor des Kühlschranks. Er drückt ein besonderes Gas zusammen, lässt es durch Rohre fließen und sehr kalt werden."
+      },
+      {
+        "id": "gas-refrigerante",
+        "emoji": "❄️",
+        "label": "Kältemittel",
+        "predictionPrompt": "Was, glaubst du, macht das Kältemittel?",
+        "explanation": "Dieses kalte Gas fließt durch die Wände im Inneren des Kühlschranks und nimmt die Wärme von innen auf, sodass die Lebensmittel frisch bleiben."
+      },
+      {
+        "id": "termostato",
+        "emoji": "🌡️",
+        "label": "Thermostat",
+        "predictionPrompt": "Was, glaubst du, macht der Thermostat?",
+        "explanation": "Der Thermostat ist wie ein kluges Thermometer. Er misst die Temperatur im Inneren und schaltet den Kompressor ein oder aus, um sie richtig zu halten."
+      },
+      {
+        "id": "isolamento",
+        "emoji": "🚪",
+        "label": "Isolierte Tür",
+        "predictionPrompt": "Was, glaubst du, macht die isolierte Tür?",
+        "explanation": "Die Wände und die Tür des Kühlschranks haben ein besonderes Material, das die Kälte am Entweichen und die Wärme am Eindringen hindert."
+      }
+    ],
+    "summary": "Jetzt weißt du, wie es funktioniert! Der Kompressor bewegt das Gas, das Gas nimmt die Wärme von innen weg, der Thermostat hält die richtige Temperatur, und die isolierte Tür hält die Kälte drinnen."
+  },
+  {
+    "id": "elevador",
+    "emoji": "🛗",
+    "category": "casa",
+    "title": "Aufzug",
+    "parts": [
+      {
+        "id": "botoes",
+        "emoji": "🔘",
+        "label": "Knöpfe",
+        "predictionPrompt": "Was, glaubst du, machen die Knöpfe?",
+        "explanation": "Wenn du einen Knopf drückst, sagst du dem Aufzug, zu welchem Stockwerk du willst. Das System empfängt diese Anfrage."
+      },
+      {
+        "id": "motor-elevador",
+        "emoji": "⚙️",
+        "label": "Motor",
+        "predictionPrompt": "Was, glaubst du, macht der Motor des Aufzugs?",
+        "explanation": "Der Motor zieht die Stahlseile nach oben oder lässt sie nach unten gleiten, sodass die Kabine hoch- oder runterfährt."
+      },
+      {
+        "id": "cabos",
+        "emoji": "🪢",
+        "label": "Stahlseile",
+        "predictionPrompt": "Was, glaubst du, machen die Stahlseile?",
+        "explanation": "Die Seile sind sehr stark und halten die Kabine, verbinden sie mit dem Motor oben, damit sie niemals fällt."
+      },
+      {
+        "id": "cabina",
+        "emoji": "🚪",
+        "label": "Kabine",
+        "predictionPrompt": "Was, glaubst du, macht die Kabine?",
+        "explanation": "Die Kabine ist der Kasten, in den du einsteigst. Sie gleitet an senkrechten Schienen entlang und hält genau auf der Höhe jedes Stockwerks."
+      }
+    ],
+    "summary": "Jetzt weißt du, wie es funktioniert! Die Knöpfe sagen das Stockwerk, der Motor zieht die Seile, die Seile halten die Kabine, und die Kabine bringt dich genau zu dem Stockwerk, das du gewählt hast."
+  },
+  {
+    "id": "torneira",
+    "emoji": "🚰",
+    "category": "casa",
+    "title": "Wasserhahn",
+    "parts": [
+      {
+        "id": "cano",
+        "emoji": "🚿",
+        "label": "Wasserrohr",
+        "predictionPrompt": "Was, glaubst du, macht das Wasserrohr?",
+        "explanation": "Ein Rohr unter dem Wasserhahn bringt Wasser von den Leitungen des Hauses, immer unter Druck, bereit, herauszukommen."
+      },
+      {
+        "id": "valvula",
+        "emoji": "🔧",
+        "label": "Ventil",
+        "predictionPrompt": "Was, glaubst du, macht das Ventil?",
+        "explanation": "Wenn du den Griff des Wasserhahns drehst oder hebst, öffnet ein Ventil im Inneren einen Durchgang, damit Wasser fließen kann."
+      },
+      {
+        "id": "vedante",
+        "emoji": "🔘",
+        "label": "Dichtung",
+        "predictionPrompt": "Was, glaubst du, macht die Dichtung?",
+        "explanation": "Ein kleiner Gummiring schließt die Spalten fest, sodass das Wasser nur aus dem Auslauf kommt und nicht woanders tropft."
+      },
+      {
+        "id": "bica",
+        "emoji": "💧",
+        "label": "Auslauf",
+        "predictionPrompt": "Was, glaubst du, macht der Auslauf?",
+        "explanation": "Der Auslauf ist der letzte Ausgang. Dort verlässt das Wasser den Hahn, bereit, damit du deine Hände waschen oder ein Glas füllen kannst."
+      }
+    ],
+    "summary": "Jetzt weißt du, wie es funktioniert! Das Rohr bringt das Wasser, das Ventil öffnet den Durchgang, wenn du den Hahn drehst, die Dichtung verhindert Lecks, und der Auslauf lässt das Wasser heraus."
+  },
+  {
+    "id": "autoclismo",
+    "emoji": "🚽",
+    "category": "casa",
+    "title": "Toilettenspülung",
+    "parts": [
+      {
+        "id": "botao-autoclismo",
+        "emoji": "🔘",
+        "label": "Spültaste",
+        "predictionPrompt": "Was, glaubst du, macht die Spültaste?",
+        "explanation": "Wenn du die Taste drückst, öffnest du ein Ventil im Wassertank, der über oder hinter der Toilette sitzt."
+      },
+      {
+        "id": "descarga",
+        "emoji": "🌊",
+        "label": "Wasserspülung",
+        "predictionPrompt": "Was, glaubst du, passiert, wenn das Wasser hinunterströmt?",
+        "explanation": "Das im Tank gespeicherte Wasser strömt auf einmal mit Kraft hinunter und schiebt alles in der Schüssel durch das Abflussrohr hinaus."
+      },
+      {
+        "id": "boia",
+        "emoji": "🎈",
+        "label": "Schwimmer",
+        "predictionPrompt": "Was, glaubst du, macht der Schwimmer?",
+        "explanation": "Nach der Spülung steigt ein Schwimmer im Tank langsam mit dem neuen Wasser, und wenn er oben ankommt, schließt er das Ventil, das den Tank füllt."
+      },
+      {
+        "id": "sifao",
+        "emoji": "🌀",
+        "label": "Siphon",
+        "predictionPrompt": "Was, glaubst du, macht das gebogene Rohr?",
+        "explanation": "Das S-förmige Rohr hält immer etwas Wasser zurück und bildet eine Barriere, die schlechte Gerüche daran hindert, aus dem Abwasser aufzusteigen."
+      }
+    ],
+    "summary": "Jetzt weißt du, wie es funktioniert! Die Taste öffnet das Ventil, das Wasser strömt hinunter und reinigt die Schüssel, der Schwimmer füllt den Tank wieder, und der Siphon hält Wasser zurück, um Gerüche zu blockieren."
+  },
+  {
+    "id": "camara-fotografica",
+    "emoji": "📷",
+    "category": "tecnologia",
+    "title": "Fotoapparat",
+    "parts": [
+      {
+        "id": "lente",
+        "emoji": "🔍",
+        "label": "Objektiv",
+        "predictionPrompt": "Was, glaubst du, macht das Objektiv?",
+        "explanation": "Das Objektiv ist wie ein Glasauge. Es bricht das Licht, das von draußen kommt, und bündelt es im Inneren der Kamera."
+      },
+      {
+        "id": "obturador",
+        "emoji": "⏱️",
+        "label": "Verschluss",
+        "predictionPrompt": "Was, glaubst du, macht der Verschluss?",
+        "explanation": "Der Verschluss ist ein Vorhang, der sich sehr schnell öffnet und schließt und Licht nur für einen Augenblick hereinlässt, genau die richtige Zeit für das Foto."
+      },
+      {
+        "id": "sensor",
+        "emoji": "📸",
+        "label": "Sensor",
+        "predictionPrompt": "Was, glaubst du, macht der Sensor?",
+        "explanation": "Der Sensor sitzt im Inneren und erfasst das Licht, das durch das Objektiv gekommen ist, und verwandelt es in ein digitales Bild."
+      },
+      {
+        "id": "botao-camara",
+        "emoji": "🔘",
+        "label": "Auslöser",
+        "predictionPrompt": "Was, glaubst du, macht der Auslöser?",
+        "explanation": "Wenn du diesen Knopf drückst, sagst du der Kamera den genauen Moment: Verschluss öffnen, Licht hereinlassen und das Bild speichern."
+      }
+    ],
+    "summary": "Jetzt weißt du, wie es funktioniert! Das Objektiv bricht das Licht, der Verschluss öffnet sich für einen Augenblick, der Sensor erfasst das Bild, und der Auslöser wählt den richtigen Moment für das Foto."
+  },
+  {
+    "id": "painel-solar",
+    "emoji": "☀️",
+    "category": "energia",
+    "title": "Solarpanel",
+    "parts": [
+      {
+        "id": "luz-sol",
+        "emoji": "☀️",
+        "label": "Sonnenlicht",
+        "predictionPrompt": "Was, glaubst du, passiert, wenn Sonnenlicht auf das Panel trifft?",
+        "explanation": "Sonnenlicht besteht aus winzigen Energiepaketen. Wenn sie auf das Panel treffen, beginnt sich diese Energie zu verwandeln."
+      },
+      {
+        "id": "celulas",
+        "emoji": "🔲",
+        "label": "Solarzellen",
+        "predictionPrompt": "Was, glaubst du, machen die Solarzellen?",
+        "explanation": "Die Zellen bestehen aus einem besonderen Material, das Elektronen freisetzt und Strom erzeugt, wenn Licht darauf trifft."
+      },
+      {
+        "id": "inversor",
+        "emoji": "🔌",
+        "label": "Wechselrichter",
+        "predictionPrompt": "Was, glaubst du, macht der Wechselrichter?",
+        "explanation": "Der Strom, der aus dem Panel kommt, ist nicht die richtige Art für das Haus. Der Wechselrichter verwandelt ihn in die Art von Strom, die wir in den Steckdosen nutzen."
+      },
+      {
+        "id": "fios",
+        "emoji": "⚡",
+        "label": "Kabel",
+        "predictionPrompt": "Was, glaubst du, machen die elektrischen Kabel?",
+        "explanation": "Die Kabel tragen den umgewandelten Strom bis zum Haus, damit du Lichter anschalten, fernsehen oder dein Telefon aufladen kannst."
+      }
+    ],
+    "summary": "Jetzt weißt du, wie es funktioniert! Das Sonnenlicht erreicht die Zellen, die Zellen erzeugen Strom, der Wechselrichter verwandelt ihn in die richtige Art, und die Kabel tragen ihn zum Haus."
+  },
+  {
+    "id": "aspirador",
+    "emoji": "🧹",
+    "category": "casa",
+    "title": "Staubsauger",
+    "parts": [
+      {
+        "id": "motor-aspirador",
+        "emoji": "🔧",
+        "label": "Motor",
+        "predictionPrompt": "Was, glaubst du, macht der Motor des Staubsaugers?",
+        "explanation": "Der Motor dreht sich sehr schnell und erzeugt eine starke Saugkraft, die Luft (und Staub) in den Staubsauger zieht."
+      },
+      {
+        "id": "filtro",
+        "emoji": "🌬️",
+        "label": "Filter",
+        "predictionPrompt": "Was, glaubst du, macht der Filter?",
+        "explanation": "Der Filter lässt die Luft durch, hält aber Staub und Schmutz zurück, damit sie nicht wieder in den Raum gelangen."
+      },
+      {
+        "id": "escova",
+        "emoji": "🧽",
+        "label": "Bürste",
+        "predictionPrompt": "Was, glaubst du, macht die Bürste?",
+        "explanation": "Die Bürste streift über den Boden und löst Staub und Haare, damit sie leichter durch das Rohr eingesaugt werden können."
+      },
+      {
+        "id": "saco",
+        "emoji": "🗑️",
+        "label": "Staubbeutel",
+        "predictionPrompt": "Was, glaubst du, macht der Staubbeutel?",
+        "explanation": "Der ganze eingesaugte Staub wird in diesem Beutel (oder Behälter) gesammelt, bis du ihn leerst."
+      }
+    ],
+    "summary": "Jetzt weißt du, wie es funktioniert! Der Motor saugt die Luft an, die Bürste löst den Staub vom Boden, der Filter reinigt die Luft und der Beutel sammelt allen Schmutz."
+  },
+  {
+    "id": "impressora",
+    "emoji": "🖨️",
+    "category": "tecnologia",
+    "title": "Drucker",
+    "parts": [
+      {
+        "id": "cartucho",
+        "emoji": "🖋️",
+        "label": "Tintenpatrone",
+        "predictionPrompt": "Was, glaubst du, macht die Tintenpatrone?",
+        "explanation": "Die Tintenpatrone enthält die farbige oder schwarze Tinte, mit der die Buchstaben und Bilder auf das Papier gezeichnet werden."
+      },
+      {
+        "id": "cabeca-impressao",
+        "emoji": "🎯",
+        "label": "Druckkopf",
+        "predictionPrompt": "Was, glaubst du, macht der Druckkopf?",
+        "explanation": "Der Druckkopf gleitet hin und her und lässt winzige Tintentropfen genau dort fallen, wo sie gebraucht werden."
+      },
+      {
+        "id": "rolos",
+        "emoji": "🎡",
+        "label": "Walzen",
+        "predictionPrompt": "Was, glaubst du, machen die Walzen?",
+        "explanation": "Die Walzen drehen sich und ziehen das Papier langsam Blatt für Blatt in den Drucker."
+      },
+      {
+        "id": "papel",
+        "emoji": "📄",
+        "label": "Papier",
+        "predictionPrompt": "Was, glaubst du, passiert mit dem Papier?",
+        "explanation": "Das Papier läuft unter dem Druckkopf durch, bekommt die Tinte und kommt schon mit dem gedruckten Bild oder Text heraus."
+      }
+    ],
+    "summary": "Jetzt weißt du, wie es funktioniert! Die Patrone hält die Tinte bereit, der Druckkopf verteilt sie an der richtigen Stelle, die Walzen ziehen das Papier und es kommt fertig bedruckt heraus."
+  },
+  {
+    "id": "semaforo",
+    "emoji": "🚦",
+    "category": "cidade",
+    "title": "Ampel",
+    "parts": [
+      {
+        "id": "sensor-transito",
+        "emoji": "🚗",
+        "label": "Sensor",
+        "predictionPrompt": "Was, glaubst du, macht der Sensor der Ampel?",
+        "explanation": "Manche Ampeln haben einen Sensor, der Autos oder wartende Menschen erkennt, um zu wissen, wann sich das Licht ändern muss."
+      },
+      {
+        "id": "controlador",
+        "emoji": "⏱️",
+        "label": "Steuerung",
+        "predictionPrompt": "Was, glaubst du, macht die Steuerung?",
+        "explanation": "Die Steuerung ist wie ein kleiner Computer, der die Zeit zählt und entscheidet, wann jedes Licht angehen soll."
+      },
+      {
+        "id": "luzes",
+        "emoji": "🔴",
+        "label": "Lichter",
+        "predictionPrompt": "Was, glaubst du, machen die Lichter?",
+        "explanation": "Das rote, gelbe und grüne Licht leuchten der Reihe nach auf, um Autos und Menschen zu sagen, wann sie stehen bleiben oder losfahren sollen."
+      },
+      {
+        "id": "fios-semaforo",
+        "emoji": "⚡",
+        "label": "Elektrische Kabel",
+        "predictionPrompt": "Was, glaubst du, machen die elektrischen Kabel?",
+        "explanation": "Die Kabel bringen Strom zur Ampel, damit die Lichter leuchten können und die Steuerung funktioniert."
+      }
+    ],
+    "summary": "Jetzt weißt du, wie es funktioniert! Der Sensor merkt, wer wartet, die Steuerung wählt den richtigen Moment, die Lichter leuchten der Reihe nach und die Kabel liefern ihnen Strom."
+  },
+  {
+    "id": "comboio",
+    "emoji": "🚆",
+    "category": "transporte",
+    "title": "Zug",
+    "parts": [
+      {
+        "id": "motor-comboio",
+        "emoji": "🔧",
+        "label": "Motor",
+        "predictionPrompt": "Was, glaubst du, macht der Motor des Zuges?",
+        "explanation": "Der Motor verwandelt Strom oder Treibstoff in Kraft und lässt die Räder mit viel Power drehen."
+      },
+      {
+        "id": "carris",
+        "emoji": "🛤️",
+        "label": "Schienen",
+        "predictionPrompt": "Was, glaubst du, machen die Schienen?",
+        "explanation": "Die Schienen sind zwei Metallgleise, die den Zug führen und ihn immer auf dem richtigen Weg halten."
+      },
+      {
+        "id": "rodas-comboio",
+        "emoji": "🎡",
+        "label": "Räder",
+        "predictionPrompt": "Was, glaubst du, machen die Räder des Zuges?",
+        "explanation": "Die Räder des Zuges sind aus Metall und passen genau auf die Schienen, sie drehen sich, damit der Zug vorwärtsfährt, ohne zu entgleisen."
+      },
+      {
+        "id": "pantografo",
+        "emoji": "⚡",
+        "label": "Stromabnehmer",
+        "predictionPrompt": "Was, glaubst du, macht dieses Teil oben auf dem Zug?",
+        "explanation": "Der Stromabnehmer berührt die elektrischen Kabel über der Strecke und bringt den Strom bis zum Motor des Zuges."
+      }
+    ],
+    "summary": "Jetzt weißt du, wie es funktioniert! Der Motor erzeugt die Kraft, die Schienen zeigen den Weg, die Räder halten den Zug auf den Schienen und der Stromabnehmer bringt den Strom."
+  },
+  {
+    "id": "escada-rolante",
+    "emoji": "🪜",
+    "category": "cidade",
+    "title": "Rolltreppe",
+    "parts": [
+      {
+        "id": "motor-escada",
+        "emoji": "⚙️",
+        "label": "Motor",
+        "predictionPrompt": "Was, glaubst du, macht der Motor der Rolltreppe?",
+        "explanation": "Der Motor dreht sich ununterbrochen und bewegt die ganze Rolltreppe, damit die Stufen ständig nach oben oder unten laufen."
+      },
+      {
+        "id": "corrente-escada",
+        "emoji": "⛓️",
+        "label": "Kette",
+        "predictionPrompt": "Was, glaubst du, macht die Kette?",
+        "explanation": "Eine starke Kette verbindet den Motor mit den Stufen und überträgt die Bewegung auf die ganze Rolltreppe."
+      },
+      {
+        "id": "degraus",
+        "emoji": "🪜",
+        "label": "Stufen",
+        "predictionPrompt": "Was, glaubst du, machen die Stufen?",
+        "explanation": "Die Stufen sind an der Kette befestigt und bilden eine durchgehende Treppe, sie sehen unten flach aus und richten sich beim Hochfahren auf."
+      },
+      {
+        "id": "corrimao",
+        "emoji": "🤚",
+        "label": "Handlauf",
+        "predictionPrompt": "Was, glaubst du, macht der Handlauf?",
+        "explanation": "Der Handlauf bewegt sich genauso schnell wie die Stufen, damit du dich beim Rauf- oder Runterfahren sicher mit der Hand festhalten kannst."
+      }
+    ],
+    "summary": "Jetzt weißt du, wie es funktioniert! Der Motor dreht sich ununterbrochen, die Kette bewegt die Stufen, die Stufen bilden die Treppe und der Handlauf bewegt sich im gleichen Tempo, damit du dich festhalten kannst."
+  }
+]

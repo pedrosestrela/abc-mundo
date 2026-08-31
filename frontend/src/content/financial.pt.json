@@ -1,10 +1,98 @@
 [
-  { "id": "poupar-gastar", "concept": "Poupar e Gastar", "emoji": "🐷", "explanation": "Poupar é guardar dinheiro para mais tarde. Gastar é usar o dinheiro para comprar algo agora. É bom fazer um bocadinho dos dois!" },
-  { "id": "precisar-querer", "concept": "Precisar e Querer", "emoji": "🎁", "explanation": "Precisar é algo que não podemos viver sem, como comida ou sapatos. Querer é algo que gostávamos de ter, como um brinquedo novo." },
-  { "id": "moedas-notas", "concept": "Moedas e Notas de Euro", "emoji": "🪙", "explanation": "Em Portugal usamos euros. Há moedas pequenas, os cêntimos, e moedas e notas de euros. Juntos ajudam-nos a pagar as coisas." },
-  { "id": "paciencia", "concept": "A Paciência de Poupar", "emoji": "⏳", "explanation": "Às vezes temos de esperar e poupar um pouco todos os dias até termos dinheiro suficiente para comprar algo especial." },
-  { "id": "mealheiro", "concept": "O Mealheiro", "emoji": "🐖", "explanation": "Um mealheiro é uma caixinha onde guardamos as nossas moedas. Cada vez que poupamos uma moeda, ficamos mais perto do nosso objetivo." },
-  { "id": "trocar", "concept": "Fazer Troco", "emoji": "🔄", "explanation": "Quando pagamos com mais dinheiro do que o preço da coisa, recebemos troco: o dinheiro a mais que nos devolvem." },
-  { "id": "trabalho-dinheiro", "concept": "Trabalho e Dinheiro", "emoji": "🧹", "explanation": "As pessoas trabalham para ganhar dinheiro. Ajudar em casa também nos pode ensinar o valor do esforço." },
-  { "id": "partilhar", "concept": "Partilhar e Ajudar", "emoji": "🤝", "explanation": "Podemos usar um pouco do nosso dinheiro para ajudar os outros, como oferecer um presente a um amigo." }
+  {
+    "id": "poupar-gastar",
+    "concept": "Poupar e Gastar",
+    "emoji": "🐷",
+    "explanation": "Poupar é guardar dinheiro para mais tarde. Gastar é usar o dinheiro para comprar algo agora. É bom fazer um bocadinho dos dois!"
+  },
+  {
+    "id": "precisar-querer",
+    "concept": "Precisar e Querer",
+    "emoji": "🎁",
+    "explanation": "Precisar é algo que não podemos viver sem, como comida ou sapatos. Querer é algo que gostávamos de ter, como um brinquedo novo."
+  },
+  {
+    "id": "moedas-notas",
+    "concept": "Moedas e Notas de Euro",
+    "emoji": "🪙",
+    "explanation": "Em Portugal usamos euros. Há moedas pequenas, os cêntimos, e moedas e notas de euros. Juntos ajudam-nos a pagar as coisas."
+  },
+  {
+    "id": "paciencia",
+    "concept": "A Paciência de Poupar",
+    "emoji": "⏳",
+    "explanation": "Às vezes temos de esperar e poupar um pouco todos os dias até termos dinheiro suficiente para comprar algo especial."
+  },
+  {
+    "id": "mealheiro",
+    "concept": "O Mealheiro",
+    "emoji": "🐖",
+    "explanation": "Um mealheiro é uma caixinha onde guardamos as nossas moedas. Cada vez que poupamos uma moeda, ficamos mais perto do nosso objetivo."
+  },
+  {
+    "id": "trocar",
+    "concept": "Fazer Troco",
+    "emoji": "🔄",
+    "explanation": "Quando pagamos com mais dinheiro do que o preço da coisa, recebemos troco: o dinheiro a mais que nos devolvem."
+  },
+  {
+    "id": "trabalho-dinheiro",
+    "concept": "Trabalho e Dinheiro",
+    "emoji": "🧹",
+    "explanation": "As pessoas trabalham para ganhar dinheiro. Ajudar em casa também nos pode ensinar o valor do esforço."
+  },
+  {
+    "id": "partilhar",
+    "concept": "Partilhar e Ajudar",
+    "emoji": "🤝",
+    "explanation": "Podemos usar um pouco do nosso dinheiro para ajudar os outros, como oferecer um presente a um amigo."
+  },
+  {
+    "id": "orcamento",
+    "concept": "Fazer um Orçamento",
+    "emoji": "📝",
+    "explanation": "Um orçamento é um plano que mostra quanto dinheiro temos e como o vamos gastar ou poupar. Ajuda-nos a não gastar mais do que temos."
+  },
+  {
+    "id": "banco",
+    "concept": "O Banco",
+    "emoji": "🏦",
+    "explanation": "O banco é um lugar seguro onde as pessoas guardam o seu dinheiro. Também pode ajudar-nos a poupar e a fazer o dinheiro crescer."
+  },
+  {
+    "id": "comparar-precos",
+    "concept": "Comparar Preços",
+    "emoji": "🔍",
+    "explanation": "Antes de comprar, é esperto ver o preço da mesma coisa em lojas diferentes. Assim escolhemos a opção mais barata."
+  },
+  {
+    "id": "desconto",
+    "concept": "O que é um Desconto",
+    "emoji": "🏷️",
+    "explanation": "Um desconto acontece quando uma loja baixa o preço de algo por algum tempo. Mas é preciso verificar se é mesmo uma poupança real."
+  },
+  {
+    "id": "objetivo-poupanca",
+    "concept": "Ter um Objetivo de Poupança",
+    "emoji": "🎯",
+    "explanation": "Um objetivo de poupança é decidir para que queremos guardar dinheiro, como um brinquedo ou uma viagem. Ter um objetivo ajuda-nos a poupar com mais vontade."
+  },
+  {
+    "id": "dinheiro-digital",
+    "concept": "Dinheiro Digital",
+    "emoji": "💳",
+    "explanation": "Hoje em dia, o dinheiro também pode ser digital, guardado num cartão ou telemóvel em vez de moedas e notas. Continua a ser dinheiro a sério!"
+  },
+  {
+    "id": "emprestar",
+    "concept": "Pedir e Devolver Emprestado",
+    "emoji": "🤲",
+    "explanation": "Às vezes pedimos dinheiro emprestado a alguém e prometemos devolver depois. É importante cumprir sempre essa promessa."
+  },
+  {
+    "id": "valor-do-dinheiro",
+    "concept": "O Valor do Dinheiro",
+    "emoji": "⚖️",
+    "explanation": "Nem todas as coisas custam o mesmo. Saber o valor do dinheiro ajuda-nos a perceber se algo é caro ou barato para o que oferece."
+  }
 ]

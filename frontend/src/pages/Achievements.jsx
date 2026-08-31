@@ -1,7 +1,33 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { getProfile, getLangPair, getProgress, getLevel } from "../storage.js";
-import { getAlphabet } from "../content/index.js";
+import {
+  getProfile,
+  getLangPair,
+  getProgress,
+  getLevel,
+  getMasteredSkills,
+  getWeakestSkills,
+  getCompletedMissions,
+  getVisitedCountries,
+  getVisitedEras,
+  getExploredScience,
+  getTriedArtPrompts,
+  getExploredWhys,
+  getTriedLifeSkills,
+  getExploredComputing,
+} from "../storage.js";
+import HelpButton from "../components/HelpButton.jsx";
+import {
+  getAlphabet,
+  getMissions,
+  getCountries,
+  getPortugalHistory,
+  getScience,
+  getArtPrompts,
+  getWhys,
+  getLifeSkills,
+  getComputing,
+} from "../content/index.js";
 
 // Heuristics used below are intentionally forgiving: the local progress
 // engine (recordSkillEvent) is brand new and not every module writes to it
@@ -148,9 +174,103 @@ export default function Achievements() {
 
   const unlockedCount = badges.filter((b) => b.unlocked).length;
 
+  // getCountries/getPortugalHistory are async (lazy-loaded single-file
+  // datasets, see content/index.js), unlike every other getter used below
+  // in passportStats which stays synchronous. Fetch just their lengths here
+  // in a small dedicated effect and merge the totals into passportStats,
+  // rather than making the whole useMemo async — keeps the sync getters
+  // simple and avoids the Passaporte cards ever rendering NaN/undefined
+  // (they start at 0 and update once the async totals resolve).
+  const [asyncTotals, setAsyncTotals] = useState({ countries: 0, eras: 0 });
+  useEffect(() => {
+    let cancelled = false;
+    const mother = langPair?.mother || "pt";
+    Promise.all([getCountries(mother), getPortugalHistory(mother)]).then(
+      ([countries, eras]) => {
+        if (cancelled) return;
+        setAsyncTotals({ countries: countries.length, eras: eras.length });
+      }
+    );
+    return () => {
+      cancelled = true;
+    };
+  }, [langPair?.mother]);
+
+  // --- Passaporte de Competências: a read-only aggregation of every
+  // per-module tracker in storage.js, each paired with its content-derived
+  // total so it renders as "X / Y" without hardcoding any denominators.
+  const passportStats = useMemo(() => {
+    const mother = langPair?.mother || "pt";
+    const name = profile?.name;
+    return [
+      {
+        id: "missions",
+        icon: "🧭",
+        label: t("modules.passportMissions"),
+        count: getCompletedMissions(name).length,
+        total: getMissions(mother).length,
+      },
+      {
+        id: "countries",
+        icon: "🌍",
+        label: t("modules.passportCountries"),
+        count: getVisitedCountries(name).length,
+        total: asyncTotals.countries,
+      },
+      {
+        id: "eras",
+        icon: "🏰",
+        label: t("modules.passportEras"),
+        count: getVisitedEras(name).length,
+        total: asyncTotals.eras,
+      },
+      {
+        id: "science",
+        icon: "🔬",
+        label: t("modules.passportScience"),
+        count: getExploredScience(name).length,
+        total: getScience(mother).length,
+      },
+      {
+        id: "art",
+        icon: "🎨",
+        label: t("modules.passportArt"),
+        count: getTriedArtPrompts(name).length,
+        total: getArtPrompts(mother).length,
+      },
+      {
+        id: "whys",
+        icon: "❓",
+        label: t("modules.passportWhys"),
+        count: getExploredWhys(name).length,
+        total: getWhys(mother).length,
+      },
+      {
+        id: "lifeSkills",
+        icon: "🧑‍🍳",
+        label: t("modules.passportLifeSkills"),
+        count: getTriedLifeSkills(name).length,
+        total: getLifeSkills(mother).length,
+      },
+      {
+        id: "computing",
+        icon: "💻",
+        label: t("modules.passportComputing"),
+        count: getExploredComputing(name).length,
+        total: getComputing(mother).length,
+      },
+    ];
+  }, [profile?.name, langPair?.mother, t, asyncTotals]);
+
+  const masteredSkills = useMemo(() => getMasteredSkills(profile?.name), [profile?.name]);
+  const weakestSkills = useMemo(() => getWeakestSkills(profile?.name), [profile?.name]);
+
   return (
     <div className="page achievements-page">
       <h1>{t("modules.achievementsTitle")}</h1>
+      <div className="help-btn-corner">
+        <HelpButton text={t("modules.achievementsHelp")} langCode={langPair?.mother} />
+      </div>
       <p className="page-intro">{t("modules.achievementsIntro")}</p>
 
       <div className="achievements-header">
@@ -196,6 +316,55 @@ export default function Achievements() {
             <span className="achievement-label">{b.label}</span>
           </button>
         ))}
+      </div>
+
+      <div className="passport-section">
+        <h2 className="passport-title">{t("modules.passportTitle")}</h2>
+        <p className="page-intro">{t("modules.passportSubtitle")}</p>
+
+        <div className="passport-grid">
+          {passportStats.map((s) => (
+            <div key={s.id} className="passport-stat-card">
+              <span className="passport-stat-icon">{s.icon}</span>
+              <span className="passport-stat-label">{s.label}</span>
+              <span className="passport-stat-count">
+                {s.count} / {s.total}
+              </span>
+            </div>
+          ))}
+        </div>
+
+        <div className="passport-skills-row">
+          <div className="passport-skills-col">
+            <h3 className="passport-skills-title">{t("modules.passportMastered")}</h3>
+            {masteredSkills.length > 0 ? (
+              <ul className="passport-skills-list">
+                {masteredSkills.map((skill) => (
+                  <li key={skill} className="passport-skill-chip mastered">
+                    {skill}
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="passport-skills-empty">{t("modules.passportMasteredEmpty")}</p>
+            )}
+          </div>
+
+          <div className="passport-skills-col">
+            <h3 className="passport-skills-title">{t("modules.passportWeakest")}</h3>
+            {weakestSkills.length > 0 ? (
+              <ul className="passport-skills-list">
+                {weakestSkills.map((w) => (
+                  <li key={w.skill} className="passport-skill-chip weakest">
+                    {w.skill}
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="passport-skills-empty">{t("modules.passportWeakestEmpty")}</p>
+            )}
+          </div>
+        </div>
       </div>
     </div>
   );

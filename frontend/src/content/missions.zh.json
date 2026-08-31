@@ -4,258 +4,359 @@
     "emoji": "🌳",
     "text": "到外面或窗边找3片不一样的树叶。",
     "category": "自然",
-    "supervision": "自己"
+    "supervision": "自己",
+    "hook": "你知道每棵树的叶子形状都不一样吗？一起来看看你能找到多少种形状吧！"
   },
   {
     "id": "letra-c",
     "emoji": "🔎",
     "text": "在家里找5个以字母C开头的东西。",
     "category": "字母",
-    "supervision": "自己"
+    "supervision": "自己",
+    "hook": "字母C藏在你身边的很多物品名字里。小小字母侦探能全部找到吗？"
   },
   {
     "id": "medir-mesa",
     "emoji": "📏",
     "text": "用你的脚步量一量厨房的桌子,一共几步?",
     "category": "数学",
-    "supervision": "自己"
+    "supervision": "自己",
+    "hook": "在还没有尺子的年代，人们用身体来测量东西！我们也来当一次古代探险家吧！"
   },
   {
     "id": "gelo-derrete",
     "emoji": "🧊",
     "text": "把一块冰放在盘子上,看看要多久才会融化。",
     "category": "科学",
-    "supervision": "大人"
+    "supervision": "大人",
+    "hook": "冰其实是变得很冷的水。你猜它要多久才能重新变回水呢？"
   },
   {
     "id": "procura-lua",
     "emoji": "🌙",
     "text": "今晚在天上找月亮,它是什么形状的?",
     "category": "自然",
-    "supervision": "自己"
+    "supervision": "自己",
+    "hook": "月亮在一个月里会不断变换形状，就像换衣服一样。今晚它是什么形状呢？"
   },
   {
     "id": "supermercado-2euros",
     "emoji": "🛒",
     "text": "在超市里,找一样价格少于2欧元的东西。",
     "category": "金钱",
-    "supervision": "大人"
+    "supervision": "大人",
+    "hook": "认识钱的价值，从看价格标签开始。你觉得容易找到这么便宜的东西吗？"
   },
   {
     "id": "separar-meias",
     "emoji": "🧦",
     "text": "把干净的袜子按颜色分类。",
     "category": "生活技能",
-    "supervision": "自己"
+    "supervision": "自己",
+    "hook": "按颜色整理东西能训练你发现规律的眼力，就像真正的小侦探一样！"
   },
   {
     "id": "contar-passaros",
     "emoji": "🐦",
     "text": "在窗边坐5分钟,你能看到几只鸟?",
     "category": "自然",
-    "supervision": "自己"
+    "supervision": "自己",
+    "hook": "世界上有成百上千种鸟类。你能在自家附近发现几种呢？"
   },
   {
     "id": "3-palavras-livro",
     "emoji": "📚",
     "text": "选一本书,找出3个你已经会读的字。",
     "category": "阅读",
-    "supervision": "自己"
+    "supervision": "自己",
+    "hook": "阅读就像打开通往另一个世界的魔法之门。你已经能自己认出几个字了呢？"
   },
   {
     "id": "dobra-roupa",
     "emoji": "👕",
     "text": "帮忙叠5件衣服。",
     "category": "生活技能",
-    "supervision": "自己"
+    "supervision": "自己",
+    "hook": "叠衣服就像一个关于形状和大小的拼图游戏。你能叠出整整齐齐的一叠吗？"
   },
   {
     "id": "desenha-animal",
     "emoji": "🎨",
     "text": "画一只还不存在的动物,给它取个名字!",
     "category": "创意",
-    "supervision": "自己"
+    "supervision": "自己",
+    "hook": "世界上所有的动物一开始都只是一个想法。要不要由你来创造下一种呢？"
   },
   {
     "id": "salta-10",
     "emoji": "🏃",
     "text": "跳10下,然后像螃蟹一样走到门口。",
     "category": "运动",
-    "supervision": "自己"
+    "supervision": "自己",
+    "hook": "用不同的方式活动身体能让大脑变得更灵活。我们来试试吧！"
   },
   {
     "id": "objeto-vermelho",
     "emoji": "🔴",
     "text": "跑一跑,在家里找3样红色的东西。",
     "category": "运动",
-    "supervision": "自己"
+    "supervision": "自己",
+    "hook": "红色是我们眼睛最先注意到的颜色之一。家里有多少件红色的东西呢？"
   },
   {
     "id": "bate-ritmo",
     "emoji": "🥁",
     "text": "用手拍一个节奏,家里有人能重复吗?",
     "category": "音乐",
-    "supervision": "自己"
+    "supervision": "自己",
+    "hook": "音乐是从简单的声音节奏开始的。你能创造一个别人学不来的节奏吗？"
   },
   {
     "id": "ponte-papel",
     "emoji": "🌉",
     "text": "用纸或纸板在两把椅子之间搭一座桥。",
     "category": "工程",
-    "supervision": "自己"
+    "supervision": "自己",
+    "hook": "工程师在建造真正的桥梁之前，总会先测试自己的想法。我们也来当一次小小工程师吧！"
   },
   {
     "id": "flutua-afunda",
     "emoji": "🛁",
     "text": "在浴缸里,找出3样会浮起来和3样会沉下去的东西。",
     "category": "科学",
-    "supervision": "大人"
+    "supervision": "大人",
+    "hook": "不是所有重的东西都会沉，也不是所有轻的东西都会浮。我们来调查一下原因吧！"
   },
   {
     "id": "avo-brincadeira",
     "emoji": "👴",
     "text": "问问爷爷奶奶小时候玩什么游戏。",
     "category": "家庭",
-    "supervision": "自己"
+    "supervision": "自己",
+    "hook": "在还没有手机的年代，人们发明了很多有趣的游戏。去发现一个属于你家人的故事吧！"
   },
   {
     "id": "arruma-mochila",
     "emoji": "🎒",
     "text": "自己整理明天要用的书包。",
     "category": "生活技能",
-    "supervision": "自己"
+    "supervision": "自己",
+    "hook": "自己整理东西是一种能每天帮助你的超能力。我们来练习一下吧！"
   },
   {
     "id": "lanche-simples",
     "emoji": "🥪",
     "text": "在大人的帮助下准备一份简单的点心(例如三明治)。",
     "category": "烹饪",
-    "supervision": "大人"
+    "supervision": "大人",
+    "hook": "做饭是科学和艺术的结合。一起来做点美味的东西吧！"
   },
   {
     "id": "conta-colheres",
     "emoji": "🥄",
     "text": "帮忙摆餐具,数一数需要几个勺子和叉子。",
     "category": "烹饪",
-    "supervision": "自己"
+    "supervision": "自己",
+    "hook": "数一数日常用品其实就是藏在生活里的数学。帮忙摆餐具的时候数一数吧！"
   },
   {
     "id": "planta-semente",
     "emoji": "🌱",
     "text": "把种子种在装了泥土的杯子里并浇水,每天观察它。",
     "category": "自然",
-    "supervision": "大人"
+    "supervision": "大人",
+    "hook": "一颗小小的种子里藏着一整株植物哦。我们来帮助它长大吧！"
   },
   {
     "id": "atacadores",
     "emoji": "👟",
     "text": "练习自己系鞋带。",
     "category": "生活技能",
-    "supervision": "自己"
+    "supervision": "自己",
+    "hook": "系鞋带看起来很难，但多练习几次你的小手就会自己记住啦！"
   },
   {
     "id": "formas-nuvens",
     "emoji": "☁️",
     "text": "躺在草地上或坐在窗边,观察云朵5分钟,你能看到什么形状?",
     "category": "自然",
-    "supervision": "自己"
+    "supervision": "自己",
+    "hook": "云朵一直在变换形状，就像天空里的一本画册。你今天看到了什么呢？"
   },
   {
     "id": "conta-carros",
     "emoji": "🚗",
     "text": "和大人一起在马路边,数一数5分钟内有多少辆红色的车经过。",
     "category": "数学",
-    "supervision": "大人"
+    "supervision": "大人",
+    "hook": "数数和分类能帮助大脑更好地认识世界。有多少辆红色的车经过呢？"
   },
   {
     "id": "palavra-nova",
     "emoji": "🗣️",
     "text": "请一位家人教你一个其他语言的新单词。",
     "category": "家庭",
-    "supervision": "自己"
+    "supervision": "自己",
+    "hook": "每一种语言都是看世界的不同方式。你今天会学到什么新词呢？"
   },
   {
     "id": "aviao-papel",
     "emoji": "✈️",
     "text": "折一架纸飞机,试试它能飞多远,再想办法让它飞得更远!",
     "category": "工程",
-    "supervision": "自己"
+    "supervision": "自己",
+    "hook": "世界上第一架真正的飞机，也是经过了很多次尝试才成功的。你能让你的纸飞机飞得更远吗？"
   },
   {
     "id": "separa-reciclagem",
     "emoji": "♻️",
     "text": "和大人一起把家里的垃圾分类放进正确的回收箱:纸张、塑料和玻璃。",
     "category": "生活技能",
-    "supervision": "大人"
+    "supervision": "大人",
+    "hook": "垃圾分类是每天照顾地球的一种方式。你知道每样东西该放进哪个垃圾桶吗？"
   },
   {
     "id": "nota-obrigado",
     "emoji": "💌",
     "text": "写一张或画一张感谢卡给一个特别的人,并送给他/她。",
     "category": "创意",
-    "supervision": "自己"
+    "supervision": "自己",
+    "hook": "一张简单的感谢卡也能让人露出灿烂的笑容。你想写给谁呢？"
   },
   {
     "id": "sombra-contorno",
     "emoji": "🌗",
     "text": "在晴天用粉笔描出你影子的轮廓,看看它在一天中是怎么变化的。",
     "category": "科学",
-    "supervision": "自己"
+    "supervision": "自己",
+    "hook": "因为太阳在天空中的位置会改变，你的影子也会一整天不停变化。我们来看看它怎么变吧！"
   },
   {
     "id": "letras-rua",
     "emoji": "🚏",
     "text": "散步时,找出招牌或标志上5个不同的字母。",
     "category": "字母",
-    "supervision": "大人"
+    "supervision": "大人",
+    "hook": "街道上的招牌和标志里到处都藏着字母。你能把它们都找出来吗？"
   },
   {
     "id": "conta-moedas",
     "emoji": "🪙",
     "text": "数一数储钱罐或抽屉里的硬币,一共有多少钱?",
     "category": "金钱",
-    "supervision": "大人"
+    "supervision": "大人",
+    "hook": "数硬币能帮助你理解钱是怎么运作的。你猜你能数出多少钱呢？"
   },
   {
     "id": "salta-corda",
     "emoji": "🪢",
     "text": "连续跳绳20下不停,明天能打破自己的记录吗?",
     "category": "运动",
-    "supervision": "自己"
+    "supervision": "自己",
+    "hook": "跳绳能同时锻炼身体和专注力。你能连续跳到20下吗？"
   },
   {
     "id": "instrumento-caseiro",
     "emoji": "🪇",
     "text": "在大人的帮助下,用瓶子和米粒或豆子做一个乐器。",
     "category": "音乐",
-    "supervision": "大人"
+    "supervision": "大人",
+    "hook": "世界上很多乐器最初都是用简单的材料做成的。我们来做一个属于你的乐器吧！"
   },
   {
     "id": "torre-copos",
     "emoji": "🥤",
     "text": "用塑料杯搭一座尽可能高的塔,你用了多少个杯子?",
     "category": "工程",
-    "supervision": "自己"
+    "supervision": "自己",
+    "hook": "搭高塔能让你学会平衡，就像真正的建筑工程师一样。你能搭多高呢？"
   },
   {
     "id": "mapa-tesouro",
     "emoji": "🗺️",
     "text": "画一张家里的藏宝图,藏一个\"宝藏\"让别人来找。",
     "category": "创意",
-    "supervision": "自己"
+    "supervision": "自己",
+    "hook": "几百年来，地图一直帮助探险家找到神奇的地方。你要藏什么样的宝藏呢？"
   },
   {
     "id": "ajuda-receita",
     "emoji": "🍳",
     "text": "帮大人做一道简单的菜,数一数用了多少种食材。",
     "category": "烹饪",
-    "supervision": "大人"
+    "supervision": "大人",
+    "hook": "做饭是数学、科学和耐心的完美结合。我们来数数用了多少种食材吧！"
   },
   {
     "id": "imita-animais",
     "emoji": "🐾",
     "text": "模仿5种不同动物的声音和动作,看看有没有人能猜出是什么动物。",
     "category": "运动",
-    "supervision": "自己"
+    "supervision": "自己",
+    "hook": "模仿动物能帮助你更了解它们是怎样行动和交流的。你先来扮演哪种动物呢？"
+  },
+  {
+    "id": "conta-degraus",
+    "emoji": "🪜",
+    "text": "数一数你家或某栋楼两层楼之间有多少级台阶。",
+    "category": "数学",
+    "supervision": "自己",
+    "hook": "数楼梯台阶是我们每天都在用却没注意到的数学。你家里一共有多少级台阶呢？"
+  },
+  {
+    "id": "sombra-animal",
+    "emoji": "🕯️",
+    "text": "用手电筒和双手，做出3种不同的、像动物一样的影子。",
+    "category": "创意",
+    "supervision": "自己",
+    "hook": "用你的双手和一盏灯，就能做出像真的动物一样的影子。我们来试试看吧！"
+  },
+  {
+    "id": "nomes-plantas",
+    "emoji": "🌿",
+    "text": "请一位大人告诉你，家附近有哪3种植物的名字。",
+    "category": "自然",
+    "supervision": "自己",
+    "hook": "每一种植物都像人一样有自己的名字。你能在周围发现多少种植物呢？"
+  },
+  {
+    "id": "peso-objetos",
+    "emoji": "⚖️",
+    "text": "拿起家里的2件物品，只用手掂一掂，猜猜哪个更重。",
+    "category": "数学",
+    "supervision": "自己",
+    "hook": "不用秤，只靠双手，你能猜出哪个更重吗？我们来测试一下你的重量感吧！"
+  },
+  {
+    "id": "carta-familia",
+    "emoji": "✉️",
+    "text": "给住得很远的一位家人写一封短信或画一幅画。",
+    "category": "家庭",
+    "supervision": "自己",
+    "hook": "一封手写的信是可以永远珍藏的礼物。你今天想写给谁呢？"
+  },
+  {
+    "id": "torre-livros",
+    "emoji": "📖",
+    "text": "把书叠起来，搭一座尽可能高又稳的书塔。",
+    "category": "工程",
+    "supervision": "自己",
+    "hook": "小心地把书叠起来能让你学到关于平衡和重心的知识。你能叠多高呢？"
+  },
+  {
+    "id": "sons-casa",
+    "emoji": "👂",
+    "text": "闭上眼睛1分钟，数一数你在家能听到多少种不同的声音。",
+    "category": "科学",
+    "supervision": "自己",
+    "hook": "闭上眼睛仔细听：你家其实充满了平时没注意到的声音。你能分辨出几种呢？"
+  },
+  {
+    "id": "conta-historia",
+    "emoji": "📔",
+    "text": "选一件家里的物品，为它编一个简短的故事。",
+    "category": "创意",
+    "supervision": "自己",
+    "hook": "只要发挥想象力，任何一件物品都能变成一个精彩故事的开头。我们来编一个故事吧！"
   }
 ]

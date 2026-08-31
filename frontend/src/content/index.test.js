@@ -28,7 +28,6 @@ const PER_LANGUAGE_GETTERS = {
   getSyllables,
   getPhrases,
   getSongs,
-  getStories,
   getFinancial,
   getPhonics,
   getMissions,
@@ -52,9 +51,23 @@ describe.each(Object.entries(PER_LANGUAGE_GETTERS))("%s", (name, getter) => {
   });
 });
 
+describe("getStories", () => {
+  test.each(LANG_CODES)("returns a non-empty array for lang=%s", async (code) => {
+    const result = await getStories(code);
+    expect(Array.isArray(result)).toBe(true);
+    expect(result.length).toBeGreaterThan(0);
+  });
+
+  test("caches results for repeated calls with the same language", async () => {
+    const first = await getStories("pt");
+    const second = await getStories("pt");
+    expect(second).toBe(first);
+  });
+});
+
 describe("getCountries", () => {
-  test.each(LANG_CODES)("returns non-empty array with localized name/fact for lang=%s", (code) => {
-    const result = getCountries(code);
+  test.each(LANG_CODES)("returns non-empty array with localized name/fact for lang=%s", async (code) => {
+    const result = await getCountries(code);
     expect(Array.isArray(result)).toBe(true);
     expect(result.length).toBeGreaterThan(0);
     for (const c of result) {
@@ -67,8 +80,8 @@ describe("getCountries", () => {
 });
 
 describe("getPortugalHistory", () => {
-  test.each(LANG_CODES)("returns non-empty array with localized title/description for lang=%s", (code) => {
-    const result = getPortugalHistory(code);
+  test.each(LANG_CODES)("returns non-empty array with localized title/description for lang=%s", async (code) => {
+    const result = await getPortugalHistory(code);
     expect(Array.isArray(result)).toBe(true);
     expect(result.length).toBeGreaterThan(0);
     for (const e of result) {

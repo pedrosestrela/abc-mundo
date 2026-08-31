@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { getPortugalHistory } from "../content/index.js";
@@ -8,6 +8,7 @@ import HelpButton from "../components/HelpButton.jsx";
 import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
 import AgeAdvisory from "../components/AgeAdvisory.jsx";
 import Illustration from "../components/Illustrations.jsx";
+import MascotBubble from "../components/mascots/MascotBubble.jsx";
 
 function shuffle(arr) {
   const copy = [...arr];
@@ -32,7 +33,18 @@ export default function PortugalHistory() {
   const pair = getLangPair() || { mother: "pt", secondary: "en" };
   const profile = getProfile();
   const tier = getDifficultyTier(profile?.age);
-  const eras = getPortugalHistory(pair.mother);
+  const [eras, setEras] = useState([]);
+
+  useEffect(() => {
+    let cancelled = false;
+    getPortugalHistory(pair.mother).then((data) => {
+      if (!cancelled) setEras(data);
+    });
+    return () => {
+      cancelled = true;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pair.mother]);
 
   const [tab, setTab] = useState("timeline");
   const [openId, setOpenId] = useState(null);
@@ -95,6 +107,9 @@ export default function PortugalHistory() {
         <HelpButton text={tab === "quiz" ? t("modules.historyHelpQuiz") : t("modules.historyHelpTimeline")} langCode={pair.mother} />
       </div>
       <p className="page-intro">{t("modules.historyIntro")}</p>
+      <MascotBubble character="vasco" mood="happy" langCode={pair.mother}>
+        {t("modules.historyMascotIntro")}
+      </MascotBubble>
 
       {showAdvisory && (
         <AgeAdvisory

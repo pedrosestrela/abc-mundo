@@ -1,6 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { getLangPair } from "../storage.js";
+import MascotBubble from "../components/mascots/MascotBubble.jsx";
 
 // Small decorative inline SVG motifs, one per "place" theme.
 // Kept intentionally tiny/lightweight — no external assets.
@@ -128,6 +130,9 @@ const GROUPS = [
       { to: "/world", emoji: "🗺️", nav: "world", sub: "sub_world" },
       { to: "/history", emoji: "🏰", nav: "history", sub: "sub_history" },
       { to: "/science", emoji: "🔬", nav: "science", sub: "sub_science" },
+      { to: "/human-evolution", emoji: "🧬", nav: "humanEvolution", sub: "sub_humanEvolution" },
+      { to: "/solar-system", emoji: "🪐", nav: "solarSystem", sub: "sub_solarSystem" },
+      { to: "/tech-history", emoji: "🚗", nav: "techHistory", sub: "sub_techHistory" },
       { to: "/city", emoji: "🏙️", nav: "city", sub: "sub_city" },
       { to: "/nature-diary", emoji: "📔", nav: "natureDiary", sub: "sub_natureDiary" },
     ],
@@ -144,8 +149,11 @@ const GROUPS = [
       { to: "/detective", emoji: "🕵️", nav: "detective", sub: "sub_detective" },
       { to: "/whys", emoji: "❓", nav: "whys", sub: "sub_whys" },
       { to: "/computing", emoji: "💻", nav: "computing", sub: "sub_computing" },
+      { to: "/how-it-works", emoji: "🔧", nav: "howThingsWork", sub: "sub_howThingsWork" },
+      { to: "/circuit-lab", emoji: "🔌", nav: "circuitLab", sub: "sub_circuitLab" },
       { to: "/thinking", emoji: "🧠", nav: "thinking", sub: "sub_thinking" },
       { to: "/communication", emoji: "🗣️", nav: "communication", sub: "sub_communication" },
+      { to: "/learning-strategies", emoji: "🧠✨", nav: "learningStrategies", sub: "sub_learningStrategies" },
     ],
   },
   {
@@ -155,6 +163,8 @@ const GROUPS = [
     Motif: LifeMotif,
     tiles: [
       { to: "/lifeskills", emoji: "🌱", nav: "lifeskills", sub: "sub_lifeskills" },
+      { to: "/mini-chef", emoji: "👩‍🍳", nav: "miniChef", sub: "sub_miniChef" },
+      { to: "/traffic-school", emoji: "🚦", nav: "trafficSchool", sub: "sub_trafficSchool" },
     ],
   },
 ];
@@ -162,11 +172,15 @@ const GROUPS = [
 export default function Mundos() {
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const pair = getLangPair() || { mother: "pt", secondary: "en" };
 
   return (
     <div className="page mundos-page mundos-map">
       <h1 className="app-title">{t("mundos.heading")}</h1>
       <p className="mundos-map-intro">{t("mundos.mapIntro")}</p>
+      <MascotBubble character="lumi" mood="happy" langCode={pair.mother}>
+        {t("modules.mundosMascotIntro")}
+      </MascotBubble>
 
       {GROUPS.map((group, index) => {
         const { Motif } = group;

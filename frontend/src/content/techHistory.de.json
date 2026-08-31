@@ -1,0 +1,143 @@
+{
+  "automobile": [
+    {
+      "id": "carruagens",
+      "period": "Vor 1880",
+      "title": "Pferdekutschen",
+      "emoji": "🐎",
+      "description": "Jahrhundertelang benutzten wir zum Fortbewegen unsere eigenen Füße, Pferde oder von Pferden gezogene Karren und Kutschen. Reisen waren langsam, anstrengend für die Tiere, und die Straßen bestanden aus festgetretener Erde oder Stein.",
+      "keyDevelopment": "Transport mit Tierkraft, ohne Motor.",
+      "funFact": "Eine Fahrt, die heute mit dem Auto eine Stunde dauert, konnte in einer Kutsche einen ganzen Tag dauern!"
+    },
+    {
+      "id": "primeiros-prototipos",
+      "period": "1770 – 1885",
+      "title": "Die ersten Prototypen",
+      "emoji": "🚂",
+      "description": "Erfinder begannen, dampfbetriebene Fahrzeuge zu testen, große Maschinen mit Kesseln. Später baute Karl Benz 1885 eines der ersten Autos mit Verbrennungsmotor, angetrieben mit Benzin.",
+      "keyDevelopment": "Erste Dampf- und Benzinmotoren in Fahrzeugen.",
+      "funFact": "Karl Benz' erstes Auto hatte nur drei Räder!"
+    },
+    {
+      "id": "ford-t",
+      "period": "1908",
+      "title": "Der Ford Modell T und die Massenproduktion",
+      "emoji": "🚗",
+      "description": "Henry Ford hatte eine geniale Idee: Autos an einem Fließband bauen, an dem jeder Arbeiter immer dieselbe Aufgabe erledigte. Dadurch wurden Autos viel schneller herzustellen und viel billiger, sodass mehr Familien sie sich leisten konnten.",
+      "keyDevelopment": "Fließband und Massenproduktion.",
+      "funFact": "Dank des Fließbands verließ alle paar Minuten ein neuer Ford Modell T die Fabrik!"
+    },
+    {
+      "id": "carros-modernos",
+      "period": "20. Jahrhundert",
+      "title": "Moderne Autos",
+      "emoji": "🚙",
+      "description": "Im Laufe des 20. Jahrhunderts wurden Autos schneller, sicherer und komfortabler, mit Sicherheitsgurten, Airbags, Klimaanlage und Bordcomputern. Auch die Städte veränderten sich rund um das Auto, mit mehr Straßen, Garagen und Ampeln.",
+      "keyDevelopment": "Mehr Sicherheit, Komfort und Geschwindigkeit.",
+      "funFact": "Bremslichter und Sicherheitsgurte wurden erst Jahrzehnte nach dem allerersten Automobil üblich!"
+    },
+    {
+      "id": "carros-eletricos",
+      "period": "Heute",
+      "title": "Elektroautos",
+      "emoji": "🔋",
+      "description": "Heute gibt es immer mehr Elektroautos, die mit einer Batterie statt mit Kraftstoff fahren. Sie stoßen keinen Rauch aus einem Auspuff aus und können an einer speziellen Steckdose aufgeladen werden, genau wie wir ein Handy aufladen.",
+      "keyDevelopment": "Elektromotoren und wiederaufladbare Batterien.",
+      "funFact": "Interessanterweise gab es Elektroautos schon im 19. Jahrhundert — nur waren die Batterien damals sehr schwach!"
+    }
+  ],
+  "electricity": [
+    {
+      "id": "velas-candeeiros",
+      "period": "Vor dem 19. Jahrhundert",
+      "title": "Kerzen und Öllampen",
+      "emoji": "🕯️",
+      "description": "Tausende von Jahren lang benutzten Menschen, wenn es dunkel wurde, Wachskerzen und Öllampen für Licht. Es war ein schwaches, flackerndes Licht, und es bestand immer die Gefahr, einen Brand auszulösen.",
+      "keyDevelopment": "Licht, erzeugt mit einer Flamme.",
+      "funFact": "Früher lasen und arbeiteten ganze Familien beim Licht einer einzigen Kerze!"
+    },
+    {
+      "id": "primeiras-experiencias",
+      "period": "1740 – 1800",
+      "title": "Die ersten Experimente mit Elektrizität",
+      "emoji": "⚡",
+      "description": "Wissenschaftler begannen, statische Elektrizität zu untersuchen, wie die, die wir spüren, wenn wir einen Luftballon an unseren Haaren reiben. 1800 erfand Alessandro Volta die Voltasche Säule, die erste Möglichkeit, Elektrizität zu speichern und sie zu nutzen, wann immer wir wollten.",
+      "keyDevelopment": "Entdeckung und erste Speicherung von Elektrizität.",
+      "funFact": "Das Wort \"Batterie\" kommt vom Stapeln — Volta stapelte Metallscheiben übereinander!"
+    },
+    {
+      "id": "lampada-eletrica",
+      "period": "1878 – 1880",
+      "title": "Die elektrische Glühbirne",
+      "emoji": "💡",
+      "description": "Mehrere Erfinder, wie Joseph Swan und Thomas Edison, testeten Hunderte von Materialien, um einen Glühfaden zu finden, der lange leuchten konnte, ohne in der Glühbirne durchzubrennen. 1879-80 gelang es ihnen, Glühbirnen zu bauen, die viele Stunden hielten.",
+      "keyDevelopment": "Erfindung der praktischen Glühlampe.",
+      "funFact": "Man sagt, Edisons Team habe über tausend verschiedene Materialien getestet, bevor es eines fand, das gut funktionierte!"
+    },
+    {
+      "id": "eletrificacao",
+      "period": "Spätes 19. – 20. Jahrhundert",
+      "title": "Die Elektrifizierung von Häusern und Städten",
+      "emoji": "🏙️",
+      "description": "Nach und nach wurden Kraftwerke und Kabel gebaut, die Elektrizität in Häuser, Straßen und Fabriken brachten. Städte bekamen Straßenbeleuchtung, und Familien konnten zum ersten Mal elektrische Geräte zu Hause anschließen.",
+      "keyDevelopment": "Stromnetze, die Kraftwerke mit Häusern und Städten verbinden.",
+      "funFact": "Einige der weltweit ersten elektrisch beleuchteten Straßen gab es in New York und London!"
+    },
+    {
+      "id": "led-hoje",
+      "period": "Heute",
+      "title": "Die LEDs von heute",
+      "emoji": "🌟",
+      "description": "Die heutigen Lampen, LEDs genannt, verbrauchen viel weniger Energie als alte Glühbirnen und halten viel länger. Sie können auch in vielen Farben leuchten und werden in Bildschirmen, Ampeln und Weihnachtsbeleuchtung verwendet.",
+      "keyDevelopment": "Effiziente Beleuchtung mit viel weniger Energieverschwendung.",
+      "funFact": "Eine LED kann mehr als 15 Jahre lang jeden Tag brennen — viel länger als eine alte Glühbirne!"
+    }
+  ],
+  "production": [
+    {
+      "id": "hidroeletrica",
+      "title": "Wasserkraft",
+      "emoji": "💧",
+      "renewable": true,
+      "description": "In Staudämmen lässt fallendes Wasser von einem hohen zu einem niedrigen Niveau ein großes Rad drehen, die Turbine genannt wird. Diese Turbine ist mit einem Generator verbunden, der die Bewegung in Elektrizität umwandelt.",
+      "keyDevelopment": "Fallendes Wasser dreht eine Turbine.",
+      "funFact": "Portugal hat viele Staudämme an Flüssen wie dem Douro, die Strom für Tausende von Häusern erzeugen!"
+    },
+    {
+      "id": "eolica",
+      "title": "Windenergie",
+      "emoji": "🌬️",
+      "renewable": true,
+      "description": "Der Wind schiebt die riesigen Flügel der Windturbinen an und bringt sie zum Drehen. Diese Drehbewegung wird im Turm in Elektrizität umgewandelt, genau wie das Wasser bei Staudämmen.",
+      "keyDevelopment": "Der Wind dreht die Flügel einer riesigen Mühle.",
+      "funFact": "Die Flügel einer großen Windturbine können so lang sein wie ein Fußballfeld!"
+    },
+    {
+      "id": "solar",
+      "title": "Solarenergie",
+      "emoji": "☀️",
+      "renewable": true,
+      "description": "Solarzellen bestehen aus einem besonderen Material, das, wenn Sonnenlicht darauf trifft, winzige Teilchen freisetzt, die sich bewegen und einen elektrischen Strom erzeugen. Je mehr Sonne, desto mehr Strom wird erzeugt.",
+      "keyDevelopment": "Sonnenlicht wird direkt in Elektrizität umgewandelt.",
+      "funFact": "Es gibt Solarzellen, die klein genug für einen Taschenrechner sind, und andere, die groß genug sind, um ganze Felder zu bedecken!"
+    },
+    {
+      "id": "termica",
+      "title": "Thermische Energie (fossile Brennstoffe)",
+      "emoji": "🏭",
+      "renewable": false,
+      "description": "In vielen Kraftwerken werden Kohle, Gas oder Öl verbrannt, um Wasser zu erhitzen, bis es zu Dampf wird. Dieser Dampf dreht mit großer Kraft eine Turbine, die Strom erzeugt — dabei entsteht aber auch Rauch, der die Luft verschmutzt.",
+      "keyDevelopment": "Brennstoffe verbrennen, um Wasser zu erhitzen und Dampf zu erzeugen.",
+      "funFact": "Kohle, Gas und Öl brauchen Millionen von Jahren, um sich in der Erde zu bilden — deshalb können wir nicht einfach \"mehr davon machen\"!"
+    },
+    {
+      "id": "nuclear",
+      "title": "Kernenergie",
+      "emoji": "☢️",
+      "renewable": false,
+      "description": "In Kernkraftwerken werden winzige Teilchen namens Atome sehr vorsichtig gespalten, wobei viel Wärme freigesetzt wird. Diese Wärme erhitzt Wasser und erzeugt Dampf, der eine Turbine dreht, genau wie in thermischen Kraftwerken.",
+      "keyDevelopment": "Das Spalten von Atomen setzt eine riesige Menge an Wärme frei.",
+      "funFact": "Eine kleine Menge Kernbrennstoff kann so viel Energie erzeugen wie Tausende von Lkw-Ladungen Kohle!"
+    }
+  ]
+}

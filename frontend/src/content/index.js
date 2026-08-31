@@ -31,9 +31,6 @@ import phrasesZh from "./phrases.zh.json";
 import phrasesEs from "./phrases.es.json";
 import phrasesIt from "./phrases.it.json";
 
-import countries from "./countries.json";
-import portugalHistory from "./portugalHistory.json";
-
 import houseSystemsPt from "./houseSystems.pt.json";
 import houseSystemsEn from "./houseSystems.en.json";
 import houseSystemsDe from "./houseSystems.de.json";
@@ -66,6 +63,14 @@ import transportScenariosZh from "./transportScenarios.zh.json";
 import transportScenariosEs from "./transportScenarios.es.json";
 import transportScenariosIt from "./transportScenarios.it.json";
 
+import hangmanWordsPt from "./hangmanWords.pt.json";
+import hangmanWordsEn from "./hangmanWords.en.json";
+import hangmanWordsDe from "./hangmanWords.de.json";
+import hangmanWordsFr from "./hangmanWords.fr.json";
+import hangmanWordsZh from "./hangmanWords.zh.json";
+import hangmanWordsEs from "./hangmanWords.es.json";
+import hangmanWordsIt from "./hangmanWords.it.json";
+
 import missionsPt from "./missions.pt.json";
 import missionsEn from "./missions.en.json";
 import missionsDe from "./missions.de.json";
@@ -89,14 +94,6 @@ import songsFr from "./songs.fr.json";
 import songsZh from "./songs.zh.json";
 import songsEs from "./songs.es.json";
 import songsIt from "./songs.it.json";
-
-import storiesPt from "./stories.pt.json";
-import storiesEn from "./stories.en.json";
-import storiesDe from "./stories.de.json";
-import storiesFr from "./stories.fr.json";
-import storiesZh from "./stories.zh.json";
-import storiesEs from "./stories.es.json";
-import storiesIt from "./stories.it.json";
 
 import detectivePt from "./detective.pt.json";
 import detectiveEn from "./detective.en.json";
@@ -138,6 +135,14 @@ import scienceZh from "./science.zh.json";
 import scienceEs from "./science.es.json";
 import scienceIt from "./science.it.json";
 
+import humanEvolutionPt from "./humanEvolution.pt.json";
+import humanEvolutionEn from "./humanEvolution.en.json";
+import humanEvolutionDe from "./humanEvolution.de.json";
+import humanEvolutionFr from "./humanEvolution.fr.json";
+import humanEvolutionZh from "./humanEvolution.zh.json";
+import humanEvolutionEs from "./humanEvolution.es.json";
+import humanEvolutionIt from "./humanEvolution.it.json";
+
 import labSimulatorsPt from "./labSimulators.pt.json";
 import labSimulatorsEn from "./labSimulators.en.json";
 import labSimulatorsDe from "./labSimulators.de.json";
@@ -177,6 +182,38 @@ import computingSafetyFr from "./computingSafety.fr.json";
 import computingSafetyZh from "./computingSafety.zh.json";
 import computingSafetyEs from "./computingSafety.es.json";
 import computingSafetyIt from "./computingSafety.it.json";
+
+import computingPasswordsPt from "./computingPasswords.pt.json";
+import computingPasswordsEn from "./computingPasswords.en.json";
+import computingPasswordsDe from "./computingPasswords.de.json";
+import computingPasswordsFr from "./computingPasswords.fr.json";
+import computingPasswordsZh from "./computingPasswords.zh.json";
+import computingPasswordsEs from "./computingPasswords.es.json";
+import computingPasswordsIt from "./computingPasswords.it.json";
+
+import computingInternetJourneyPt from "./computingInternetJourney.pt.json";
+import computingInternetJourneyEn from "./computingInternetJourney.en.json";
+import computingInternetJourneyDe from "./computingInternetJourney.de.json";
+import computingInternetJourneyFr from "./computingInternetJourney.fr.json";
+import computingInternetJourneyZh from "./computingInternetJourney.zh.json";
+import computingInternetJourneyEs from "./computingInternetJourney.es.json";
+import computingInternetJourneyIt from "./computingInternetJourney.it.json";
+
+import howThingsWorkPt from "./howThingsWork.pt.json";
+import howThingsWorkEn from "./howThingsWork.en.json";
+import howThingsWorkDe from "./howThingsWork.de.json";
+import howThingsWorkFr from "./howThingsWork.fr.json";
+import howThingsWorkZh from "./howThingsWork.zh.json";
+import howThingsWorkEs from "./howThingsWork.es.json";
+import howThingsWorkIt from "./howThingsWork.it.json";
+
+import techHistoryPt from "./techHistory.pt.json";
+import techHistoryEn from "./techHistory.en.json";
+import techHistoryDe from "./techHistory.de.json";
+import techHistoryFr from "./techHistory.fr.json";
+import techHistoryZh from "./techHistory.zh.json";
+import techHistoryEs from "./techHistory.es.json";
+import techHistoryIt from "./techHistory.it.json";
 
 import internetSafetyPt from "./internetSafety.pt.json";
 import internetSafetyEn from "./internetSafety.en.json";
@@ -249,6 +286,14 @@ import newsroomZh from "./newsroom.zh.json";
 import newsroomEs from "./newsroom.es.json";
 import newsroomIt from "./newsroom.it.json";
 
+import learningStrategiesPt from "./learningStrategies.pt.json";
+import learningStrategiesEn from "./learningStrategies.en.json";
+import learningStrategiesDe from "./learningStrategies.de.json";
+import learningStrategiesFr from "./learningStrategies.fr.json";
+import learningStrategiesZh from "./learningStrategies.zh.json";
+import learningStrategiesEs from "./learningStrategies.es.json";
+import learningStrategiesIt from "./learningStrategies.it.json";
+
 import communicationPt from "./communication.pt.json";
 import communicationEn from "./communication.en.json";
 import communicationDe from "./communication.de.json";
@@ -257,22 +302,24 @@ import communicationZh from "./communication.zh.json";
 import communicationEs from "./communication.es.json";
 import communicationIt from "./communication.it.json";
 
-export const SUPPORTED_LANGUAGES = [
-  { code: "pt", label: "Português", flag: "🇵🇹" },
-  { code: "en", label: "English", flag: "🇬🇧" },
-  { code: "de", label: "Deutsch", flag: "🇩🇪" },
-  { code: "fr", label: "Français", flag: "🇫🇷" },
-  { code: "zh", label: "中文", flag: "🇨🇳" },
-  { code: "es", label: "Español", flag: "🇪🇸" },
-  { code: "it", label: "Italiano", flag: "🇮🇹" },
-];
+import trafficSignsPt from "./trafficSigns.pt.json";
+import trafficSignsEn from "./trafficSigns.en.json";
+import trafficSignsDe from "./trafficSigns.de.json";
+import trafficSignsFr from "./trafficSigns.fr.json";
+import trafficSignsZh from "./trafficSigns.zh.json";
+import trafficSignsEs from "./trafficSigns.es.json";
+import trafficSignsIt from "./trafficSigns.it.json";
+
+// Re-exported so existing `import { SUPPORTED_LANGUAGES } from "../content"`
+// call sites keep working unchanged. See content/languages.js for why the
+// actual list lives in its own module.
+export { SUPPORTED_LANGUAGES } from "./languages.js";
 
 const ALPHABET = { pt: alphabetPt, en: alphabetEn, de: alphabetDe, fr: alphabetFr, zh: alphabetZh, es: alphabetEs, it: alphabetIt };
 const READING = { pt: readingPt, en: readingEn, de: readingDe, fr: readingFr, zh: readingZh, es: readingEs, it: readingIt };
 const SYLLABLES = { pt: syllablesPt, en: syllablesEn, de: syllablesDe, fr: syllablesFr, zh: syllablesZh, es: syllablesEs, it: syllablesIt };
 const PHRASES = { pt: phrasesPt, en: phrasesEn, de: phrasesDe, fr: phrasesFr, zh: phrasesZh, es: phrasesEs, it: phrasesIt };
 const SONGS = { pt: songsPt, en: songsEn, de: songsDe, fr: songsFr, zh: songsZh, es: songsEs, it: songsIt };
-const STORIES = { pt: storiesPt, en: storiesEn, de: storiesDe, fr: storiesFr, zh: storiesZh, es: storiesEs, it: storiesIt };
 const FINANCIAL = { pt: financialPt, en: financialEn, de: financialDe, fr: financialFr, zh: financialZh, es: financialEs, it: financialIt };
 const PHONICS = { pt: phonicsPt, en: phonicsEn, de: phonicsDe, fr: phonicsFr, zh: phonicsZh, es: phonicsEs, it: phonicsIt };
 const MISSIONS = { pt: missionsPt, en: missionsEn, de: missionsDe, fr: missionsFr, zh: missionsZh, es: missionsEs, it: missionsIt };
@@ -282,9 +329,23 @@ const ART_PROMPTS = { pt: artPromptsPt, en: artPromptsEn, de: artPromptsDe, fr: 
 const LAB_SIMULATORS = { pt: labSimulatorsPt, en: labSimulatorsEn, de: labSimulatorsDe, fr: labSimulatorsFr, zh: labSimulatorsZh, es: labSimulatorsEs, it: labSimulatorsIt };
 const LAB_ENGINEERING = { pt: labEngineeringPt, en: labEngineeringEn, de: labEngineeringDe, fr: labEngineeringFr, zh: labEngineeringZh, es: labEngineeringEs, it: labEngineeringIt };
 const SCIENCE = { pt: sciencePt, en: scienceEn, de: scienceDe, fr: scienceFr, zh: scienceZh, es: scienceEs, it: scienceIt };
+
+const HUMAN_EVOLUTION = {
+  pt: humanEvolutionPt,
+  en: humanEvolutionEn,
+  de: humanEvolutionDe,
+  fr: humanEvolutionFr,
+  zh: humanEvolutionZh,
+  es: humanEvolutionEs,
+  it: humanEvolutionIt,
+};
 const LIFE_SKILLS = { pt: lifeSkillsPt, en: lifeSkillsEn, de: lifeSkillsDe, fr: lifeSkillsFr, zh: lifeSkillsZh, es: lifeSkillsEs, it: lifeSkillsIt };
 const COMPUTING = { pt: computingPt, en: computingEn, de: computingDe, fr: computingFr, zh: computingZh, es: computingEs, it: computingIt };
 const COMPUTING_SAFETY = { pt: computingSafetyPt, en: computingSafetyEn, de: computingSafetyDe, fr: computingSafetyFr, zh: computingSafetyZh, es: computingSafetyEs, it: computingSafetyIt };
+const COMPUTING_PASSWORDS = { pt: computingPasswordsPt, en: computingPasswordsEn, de: computingPasswordsDe, fr: computingPasswordsFr, zh: computingPasswordsZh, es: computingPasswordsEs, it: computingPasswordsIt };
+const COMPUTING_INTERNET_JOURNEY = { pt: computingInternetJourneyPt, en: computingInternetJourneyEn, de: computingInternetJourneyDe, fr: computingInternetJourneyFr, zh: computingInternetJourneyZh, es: computingInternetJourneyEs, it: computingInternetJourneyIt };
+const HOW_THINGS_WORK = { pt: howThingsWorkPt, en: howThingsWorkEn, de: howThingsWorkDe, fr: howThingsWorkFr, zh: howThingsWorkZh, es: howThingsWorkEs, it: howThingsWorkIt };
+const TECH_HISTORY = { pt: techHistoryPt, en: techHistoryEn, de: techHistoryDe, fr: techHistoryFr, zh: techHistoryZh, es: techHistoryEs, it: techHistoryIt };
 const INTERNET_SAFETY = { pt: internetSafetyPt, en: internetSafetyEn, de: internetSafetyDe, fr: internetSafetyFr, zh: internetSafetyZh, es: internetSafetyEs, it: internetSafetyIt };
 const AI_LAB = { pt: aiLabPt, en: aiLabEn, de: aiLabDe, fr: aiLabFr, zh: aiLabZh, es: aiLabEs, it: aiLabIt };
 const LEMONADE_STAND = { pt: lemonadeStandPt, en: lemonadeStandEn, de: lemonadeStandDe, fr: lemonadeStandFr, zh: lemonadeStandZh, es: lemonadeStandEs, it: lemonadeStandIt };
@@ -294,11 +355,14 @@ const FINANCIAL_ACTIVITIES = { pt: financialActivitiesPt, en: financialActivitie
 const THINKING = { pt: thinkingPt, en: thinkingEn, de: thinkingDe, fr: thinkingFr, zh: thinkingZh, es: thinkingEs, it: thinkingIt };
 const NEWSROOM = { pt: newsroomPt, en: newsroomEn, de: newsroomDe, fr: newsroomFr, zh: newsroomZh, es: newsroomEs, it: newsroomIt };
 const COMMUNICATION = { pt: communicationPt, en: communicationEn, de: communicationDe, fr: communicationFr, zh: communicationZh, es: communicationEs, it: communicationIt };
+const LEARNING_STRATEGIES = { pt: learningStrategiesPt, en: learningStrategiesEn, de: learningStrategiesDe, fr: learningStrategiesFr, zh: learningStrategiesZh, es: learningStrategiesEs, it: learningStrategiesIt };
 const RHYMES = { pt: rhymesPt, en: rhymesEn, de: rhymesDe, fr: rhymesFr, zh: rhymesZh, es: rhymesEs, it: rhymesIt };
 const HOUSE_SYSTEMS = { pt: houseSystemsPt, en: houseSystemsEn, de: houseSystemsDe, fr: houseSystemsFr, zh: houseSystemsZh, es: houseSystemsEs, it: houseSystemsIt };
 const CITY_SYSTEMS = { pt: citySystemsPt, en: citySystemsEn, de: citySystemsDe, fr: citySystemsFr, zh: citySystemsZh, es: citySystemsEs, it: citySystemsIt };
 const PACKING_CHALLENGES = { pt: packingChallengesPt, en: packingChallengesEn, de: packingChallengesDe, fr: packingChallengesFr, zh: packingChallengesZh, es: packingChallengesEs, it: packingChallengesIt };
 const TRANSPORT_SCENARIOS = { pt: transportScenariosPt, en: transportScenariosEn, de: transportScenariosDe, fr: transportScenariosFr, zh: transportScenariosZh, es: transportScenariosEs, it: transportScenariosIt };
+const HANGMAN_WORDS = { pt: hangmanWordsPt, en: hangmanWordsEn, de: hangmanWordsDe, fr: hangmanWordsFr, zh: hangmanWordsZh, es: hangmanWordsEs, it: hangmanWordsIt };
+const TRAFFIC_SIGNS = { pt: trafficSignsPt, en: trafficSignsEn, de: trafficSignsDe, fr: trafficSignsFr, zh: trafficSignsZh, es: trafficSignsEs, it: trafficSignsIt };
 
 // Normalizes zh's different shape ({hanzi,...}) to the same shape used by
 // the Latin-alphabet languages ({letter, lower, upper, exampleWord, emoji}).
@@ -332,8 +396,27 @@ export function getSongs(langCode) {
   return SONGS[langCode] || [];
 }
 
-export function getStories(langCode) {
-  return STORIES[langCode] || [];
+// Stories content is by far the largest per-language dataset (~130KB per
+// language, ~930KB combined), and has a single consumer (Stories.jsx). It is
+// lazy-loaded per language via a dynamic import (Vite code-splits each
+// stories.<lang>.json into its own tiny chunk) instead of being bundled
+// statically into this module like every other content type here, so
+// visiting any other content page no longer pulls in all 7 languages' worth
+// of story text. Results are cached per language so repeat calls (e.g.
+// re-renders, switching back to a previously-loaded language) don't re-fetch.
+const storiesCache = new Map();
+
+export async function getStories(langCode) {
+  if (storiesCache.has(langCode)) return storiesCache.get(langCode);
+  let data;
+  try {
+    const mod = await import(`./stories.${langCode}.json`);
+    data = mod.default || [];
+  } catch {
+    data = [];
+  }
+  storiesCache.set(langCode, data);
+  return data;
 }
 
 export function getFinancial(langCode) {
@@ -360,6 +443,34 @@ export function getScience(langCode) {
   return SCIENCE[langCode] || [];
 }
 
+export function getHumanEvolution(langCode) {
+  return HUMAN_EVOLUTION[langCode] || HUMAN_EVOLUTION.pt;
+}
+
+// Solar-system content has a single consumer (SolarSystem.jsx) and, at ~10KB
+// per language (~70KB combined), is one of several always-eager datasets
+// bulking out the shared chunk every lazy-loaded page pays for. Lazy-loaded
+// per language via dynamic import (same pattern as getStories above) so
+// visiting any other content page no longer pulls it in. Cached per language.
+const solarSystemCache = new Map();
+
+export async function getSolarSystem(langCode) {
+  if (solarSystemCache.has(langCode)) return solarSystemCache.get(langCode);
+  let data;
+  try {
+    const mod = await import(`./solarSystem.${langCode}.json`);
+    data = mod.default;
+  } catch {
+    data = undefined;
+  }
+  if (!data) {
+    const mod = await import("./solarSystem.pt.json");
+    data = mod.default;
+  }
+  solarSystemCache.set(langCode, data);
+  return data;
+}
+
 export function getLabSimulators(langCode) {
   return LAB_SIMULATORS[langCode] || LAB_SIMULATORS.pt;
 }
@@ -378,6 +489,22 @@ export function getComputing(langCode) {
 
 export function getComputingSafety(langCode) {
   return COMPUTING_SAFETY[langCode] || [];
+}
+
+export function getComputingPasswords(langCode) {
+  return COMPUTING_PASSWORDS[langCode] || [];
+}
+
+export function getComputingInternetJourney(langCode) {
+  return COMPUTING_INTERNET_JOURNEY[langCode] || [];
+}
+
+export function getHowThingsWork(langCode) {
+  return HOW_THINGS_WORK[langCode] || HOW_THINGS_WORK.pt || [];
+}
+
+export function getTechHistory(langCode) {
+  return TECH_HISTORY[langCode] || TECH_HISTORY.pt;
 }
 
 export function getInternetSafety(langCode) {
@@ -421,6 +548,10 @@ export function getCommunication(langCode) {
   return COMMUNICATION[langCode] || COMMUNICATION.pt;
 }
 
+export function getLearningStrategies(langCode) {
+  return LEARNING_STRATEGIES[langCode] || LEARNING_STRATEGIES.pt;
+}
+
 export function getHouseSystems(langCode) {
   return HOUSE_SYSTEMS[langCode] || [];
 }
@@ -437,13 +568,35 @@ export function getPackingChallenges(langCode) {
   return PACKING_CHALLENGES[langCode] || PACKING_CHALLENGES.pt;
 }
 
+export function getHangmanWords(langCode) {
+  return HANGMAN_WORDS[langCode] || HANGMAN_WORDS.pt;
+}
+
 export function getTransportScenarios(langCode) {
   return TRANSPORT_SCENARIOS[langCode] || TRANSPORT_SCENARIOS.pt;
 }
 
+export function getTrafficSigns(langCode) {
+  return TRAFFIC_SIGNS[langCode] || TRAFFIC_SIGNS.pt;
+}
+
 // Countries are language-agnostic in shape (name/fact are per-language
 // dictionaries inside each entry); langCode picks which strings to surface.
-export function getCountries(langCode) {
+// The whole ~316KB countries.json is a single (not per-language) file, so
+// lazy-loading it doesn't save bandwidth per language the way stories does —
+// it only keeps this ~316KB out of the eagerly-loaded shared content chunk
+// for users who never visit /world. The import promise is cached once (not
+// per-language, since it's one file) so repeated calls don't re-fetch.
+let countriesPromise = null;
+function loadCountries() {
+  if (!countriesPromise) {
+    countriesPromise = import("./countries.json").then((mod) => mod.default || []);
+  }
+  return countriesPromise;
+}
+
+export async function getCountries(langCode) {
+  const countries = await loadCountries();
   return countries.map((c) => ({
     iso: c.iso,
     flag: c.flag,
@@ -479,8 +632,18 @@ export function getWhys(langCode) {
 // Portugal history timeline entries: same language-agnostic shape as
 // countries (title/description are per-language dictionaries); langCode
 // picks which strings to surface. Falls back to pt since the content is
-// written primarily for Portuguese children.
-export function getPortugalHistory(langCode) {
+// written primarily for Portuguese children. Lazy-loaded for the same
+// reason as getCountries above (single ~74KB file, not per-language).
+let portugalHistoryPromise = null;
+function loadPortugalHistory() {
+  if (!portugalHistoryPromise) {
+    portugalHistoryPromise = import("./portugalHistory.json").then((mod) => mod.default || []);
+  }
+  return portugalHistoryPromise;
+}
+
+export async function getPortugalHistory(langCode) {
+  const portugalHistory = await loadPortugalHistory();
   return portugalHistory.map((e) => ({
     id: e.id,
     year: e.year,

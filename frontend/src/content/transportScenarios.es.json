@@ -63,5 +63,109 @@
     ],
     "correct": "ship",
     "explanation": "Para transportar cargas muy pesadas a través del océano, el barco es el más usado — más lento, pero transporta mucho más y gasta menos energía por objeto."
+  },
+  {
+    "id": "park",
+    "icon": "🚸",
+    "prompt": "Ir al parque al final de la calle.",
+    "modes": [
+      "walk",
+      "bike",
+      "car",
+      "plane"
+    ],
+    "correct": "walk",
+    "explanation": "Para un lugar tan cercano, caminar es la forma más sencilla y saludable de llegar."
+  },
+  {
+    "id": "bakery",
+    "icon": "🥖",
+    "prompt": "Ir a la panadería a comprar pan fresco por la mañana.",
+    "modes": [
+      "walk",
+      "bike",
+      "car",
+      "train"
+    ],
+    "correct": "walk",
+    "explanation": "La panadería está muy cerca; caminar es rápido y de paso respiras el aire fresco de la mañana."
+  },
+  {
+    "id": "islandferry",
+    "icon": "🏝️",
+    "prompt": "Cruzar un pequeño brazo de mar para llegar a una isla cercana a la costa.",
+    "modes": [
+      "car",
+      "train",
+      "plane",
+      "ship"
+    ],
+    "correct": "ship",
+    "explanation": "Para cruzar el agua hasta una isla cercana, un barco (o ferry) es la opción correcta — no hay carretera ni vías sobre el mar."
+  },
+  {
+    "id": "citycommute",
+    "icon": "🏢",
+    "prompt": "Ir a trabajar todos los días al otro lado de la ciudad.",
+    "modes": [
+      "walk",
+      "bike",
+      "car",
+      "plane"
+    ],
+    "correct": "car",
+    "explanation": "Para una distancia larga dentro de la ciudad, todos los días, el coche es más práctico que caminar o ir en bicicleta."
+  },
+  {
+    "id": "studyabroad",
+    "icon": "🎓",
+    "prompt": "Ir a estudiar un año a un país al otro lado del océano.",
+    "modes": [
+      "car",
+      "train",
+      "ship",
+      "plane"
+    ],
+    "correct": "plane",
+    "explanation": "Para viajar rápidamente a una distancia muy larga, cruzando el océano, el avión es la opción correcta."
+  },
+  {
+    "id": "exportcars",
+    "icon": "🚘",
+    "prompt": "Enviar cientos de coches nuevos de una fábrica para venderlos en otro continente.",
+    "modes": [
+      "car",
+      "train",
+      "plane",
+      "ship"
+    ],
+    "correct": "ship",
+    "explanation": "Para transportar carga muy pesada y voluminosa a través del océano, el barco es el más usado — lleva mucho más de una vez."
+  },
+  {
+    "id": "medicine",
+    "icon": "💊",
+    "prompt": "Enviar un medicamento urgente a un hospital al otro lado del mundo.",
+    "modes": [
+      "train",
+      "ship",
+      "car",
+      "plane"
+    ],
+    "correct": "plane",
+    "explanation": "Cuando la rapidez importa más que el precio, como en una emergencia, el avión llega mucho más rápido que el barco."
+  },
+  {
+    "id": "campingtrip",
+    "icon": "🏕️",
+    "prompt": "Ir de camping en familia a un bosque a unas horas de casa.",
+    "modes": [
+      "walk",
+      "bike",
+      "car",
+      "plane"
+    ],
+    "correct": "car",
+    "explanation": "Con tanto equipaje — tienda, sacos de dormir, comida — el coche es la opción más práctica para un viaje de este tamaño."
   }
 ]

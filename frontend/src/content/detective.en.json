@@ -173,5 +173,269 @@
     "emoji": "💻",
     "isFact": false,
     "explanation": "That's a myth and a joke! Spending a lot of time on screens can tire your eyes, but it doesn't change their shape. Still, it's important to take breaks."
+  },
+  {
+    "id": "d26",
+    "type": "observation",
+    "emoji": "👣",
+    "title": "The Case of the Footprints",
+    "scene": "Muddy footprints were found in the school hallway leading to the classroom, and the classroom window was open.",
+    "clues": [
+      {
+        "id": "c1",
+        "emoji": "👟",
+        "text": "Big muddy footprints on the floor"
+      },
+      {
+        "id": "c2",
+        "emoji": "🪟",
+        "text": "The window was open"
+      },
+      {
+        "id": "c3",
+        "emoji": "🎒",
+        "text": "A blue backpack next to the door"
+      }
+    ],
+    "question": "Which clue shows the path of whoever made the floor dirty?",
+    "correctClueId": "c1",
+    "explanation": "The footprints are the most direct clue: they show exactly the path of whoever walked in with muddy shoes. The open window or the backpack might have nothing to do with the case."
+  },
+  {
+    "id": "d27",
+    "type": "observation",
+    "emoji": "🥀",
+    "title": "The Mystery of the Wilted Plant",
+    "scene": "The classroom plant was wilted after the weekend, even though it was watered on Friday before everyone left.",
+    "clues": [
+      {
+        "id": "c1",
+        "emoji": "☀️",
+        "text": "The pot was near the window, in strong sun"
+      },
+      {
+        "id": "c2",
+        "emoji": "💧",
+        "text": "The soil was dry and cracked"
+      },
+      {
+        "id": "c3",
+        "emoji": "🪴",
+        "text": "The pot is made of red clay"
+      }
+    ],
+    "question": "Which clue best explains why the plant wilted?",
+    "correctClueId": "c2",
+    "explanation": "The dry, cracked soil shows the water evaporated quickly in the weekend heat. It was the lack of water, not the pot's color, that made the plant wilt."
+  },
+  {
+    "id": "d28",
+    "type": "observation",
+    "emoji": "🍦",
+    "title": "The Misleading Photo",
+    "scene": "A photo shows a child's hand holding an ice cream that looks gigantic, bigger than their head.",
+    "clues": [
+      {
+        "id": "c1",
+        "emoji": "📷",
+        "text": "The photo was taken very close to the ice cream"
+      },
+      {
+        "id": "c2",
+        "emoji": "🧒",
+        "text": "You can't see the rest of the child's body in the photo"
+      },
+      {
+        "id": "c3",
+        "emoji": "🍨",
+        "text": "The ice cream has several colorful scoops"
+      }
+    ],
+    "question": "Which clue explains why the ice cream looks so gigantic?",
+    "correctClueId": "c1",
+    "explanation": "When something is very close to the camera, it looks bigger than it really is. Photos only show part of reality — it's always worth thinking about what's outside the frame."
+  },
+  {
+    "id": "d29",
+    "type": "deduction",
+    "emoji": "🎂",
+    "title": "Who Ate the Cake?",
+    "setup": "The chocolate cake disappeared from the kitchen! There are three suspects.",
+    "suspects": [
+      {
+        "id": "tomas",
+        "name": "Tomas",
+        "emoji": "🧒"
+      },
+      {
+        "id": "ines",
+        "name": "Ines",
+        "emoji": "👧"
+      },
+      {
+        "id": "bobi",
+        "name": "Bobi",
+        "emoji": "🐶"
+      }
+    ],
+    "statements": [
+      "Tomas was playing ball in the garden all afternoon.",
+      "Ines had chocolate around her mouth when mom arrived.",
+      "Bobi was sleeping in his bed all day."
+    ],
+    "question": "Who ate the cake?",
+    "solutionId": "ines",
+    "explanation": "Tomas was in the garden and Bobi was sleeping — neither of them could have eaten the cake. Ines had chocolate on her mouth, a clear clue that it was her."
+  },
+  {
+    "id": "d30",
+    "type": "deduction",
+    "emoji": "🏺",
+    "title": "Who Broke the Vase?",
+    "setup": "The living-room vase broke while the parents were at work. There are three suspects.",
+    "suspects": [
+      {
+        "id": "whiskers",
+        "name": "Whiskers",
+        "emoji": "🐱"
+      },
+      {
+        "id": "maria",
+        "name": "Maria",
+        "emoji": "👧"
+      },
+      {
+        "id": "pedro",
+        "name": "Pedro",
+        "emoji": "🧒"
+      }
+    ],
+    "statements": [
+      "Whiskers the cat was locked outside all day.",
+      "Maria was at school until 5pm, when the vase was still whole.",
+      "Pedro was home alone playing ball inside the room."
+    ],
+    "question": "Who broke the vase?",
+    "solutionId": "pedro",
+    "explanation": "Whiskers was locked outside and Maria was at school when the vase was still whole — neither could have done it. Only Pedro was home playing ball inside the room."
+  },
+  {
+    "id": "d31",
+    "type": "deduction",
+    "emoji": "🍪",
+    "title": "Who Ate the Cookies?",
+    "setup": "The chocolate cookies disappeared from the jar. There are three suspects.",
+    "suspects": [
+      {
+        "id": "avo",
+        "name": "Grandma",
+        "emoji": "👵"
+      },
+      {
+        "id": "bebe",
+        "name": "Baby",
+        "emoji": "👶"
+      },
+      {
+        "id": "irmao",
+        "name": "Older brother",
+        "emoji": "🧑"
+      }
+    ],
+    "statements": [
+      "Grandma doesn't like chocolate cookies and never eats them.",
+      "The baby doesn't have teeth yet to eat hard cookies.",
+      "The older brother had cookie crumbs in his pocket."
+    ],
+    "question": "Who ate the cookies?",
+    "solutionId": "irmao",
+    "explanation": "Grandma doesn't like those cookies and the baby can't chew them — neither could have done it. The crumbs in the older brother's pocket are the clue that gives him away."
+  },
+  {
+    "id": "d32",
+    "type": "sources",
+    "emoji": "🍫",
+    "title": "Is It True? — The Magic Chocolate",
+    "claim": "A classmate said that if you eat chocolate every day you get super powers.",
+    "sourceA": {
+      "label": "A friend from school",
+      "text": "Said they heard it from another friend, but doesn't know where it was confirmed.",
+      "credible": false
+    },
+    "sourceB": {
+      "label": "A science book about the human body",
+      "text": "Explains how food affects health, but never mentions super powers.",
+      "credible": true
+    },
+    "correctSourceId": "b",
+    "explanation": "A science book is written by experts and carefully reviewed, so it's more reliable than a rumor between friends. When something seems too good to be true, it's worth checking a serious source."
+  },
+  {
+    "id": "d33",
+    "type": "sources",
+    "emoji": "📅",
+    "title": "Is It True? — The Secret Holiday",
+    "claim": "A message online says there's no school tomorrow because of a secret holiday.",
+    "sourceA": {
+      "label": "A message forwarded by strangers in a group chat",
+      "text": "No one knows who wrote it first or where the information came from.",
+      "credible": false
+    },
+    "sourceB": {
+      "label": "The school's official website",
+      "text": "Always publishes the official, confirmed school calendar.",
+      "credible": true
+    },
+    "correctSourceId": "b",
+    "explanation": "The school's official website is the source that actually decides the calendar — it's always more reliable than a message that passed through many people and could have changed along the way."
+  },
+  {
+    "id": "d34",
+    "type": "sources",
+    "emoji": "🦖",
+    "title": "Is It True? — The Living Dinosaur",
+    "claim": "Someone on social media says they saw a living dinosaur in a forest.",
+    "sourceA": {
+      "label": "A video with no explanation of where it was filmed",
+      "text": "Shows no evidence or context about the place or date.",
+      "credible": false
+    },
+    "sourceB": {
+      "label": "A natural history museum",
+      "text": "Explains that non-avian dinosaurs went extinct millions of years ago, with lots of fossil evidence.",
+      "credible": true
+    },
+    "correctSourceId": "b",
+    "explanation": "A science museum is based on lots of evidence studied by experts over many years. A single video, without explanation or context, could easily be a hoax or a trick."
+  },
+  {
+    "id": "d35",
+    "type": "aiError",
+    "emoji": "🕷️",
+    "title": "AI Got It Wrong — Spider Legs",
+    "aiQuestion": "How many legs does a spider have?",
+    "aiAnswer": "A spider has 6 legs, just like an insect.",
+    "correctAnswer": "A spider has 8 legs — that's why it's not an insect, it's an arachnid.",
+    "explanation": "The AI got it wrong! Spiders have 8 legs, not 6. Even computers and artificial intelligence can make mistakes, so it's always worth checking against what you already know or a book."
+  },
+  {
+    "id": "d36",
+    "type": "aiError",
+    "emoji": "🏙️",
+    "title": "AI Got It Wrong — Portugal's Capital",
+    "aiQuestion": "What is the capital of Portugal?",
+    "aiAnswer": "The capital of Portugal is Porto.",
+    "correctAnswer": "The capital of Portugal is Lisbon.",
+    "explanation": "The AI got it wrong! Portugal's capital is Lisbon, not Porto. Checking important facts in a book, atlas, or with an adult helps catch these mistakes."
+  },
+  {
+    "id": "d37",
+    "type": "aiError",
+    "emoji": "📅",
+    "title": "AI Got It Wrong — Days of the Week",
+    "aiQuestion": "How many days are in a week?",
+    "aiAnswer": "A week has 5 days.",
+    "correctAnswer": "A week has 7 days.",
+    "explanation": "The AI got it wrong! A week always has 7 days. It's a good reminder that it's worth thinking for yourself before accepting any answer, even from a computer."
   }
 ]

@@ -61,5 +61,56 @@
     "steps": [
       "Os bombeiros ajudam a apagar incêndios, resgatar pessoas e animais, e a socorrer quem precisa em emergências. Estão sempre prontos, com o camião e o equipamento preparados, para chegar o mais depressa possível a quem precisa de ajuda."
     ]
+  },
+  {
+    "id": "iluminacao",
+    "icon": "🔆",
+    "name": "Iluminação Pública",
+    "prompt": "🔆 Como se acendem as luzes das ruas quando escurece?",
+    "steps": [
+      "1. Sensores de luz detetam quando o sol se põe e o céu escurece.",
+      "2. Um sistema central liga automaticamente milhares de candeeiros ao mesmo tempo.",
+      "3. A eletricidade viaja pelos mesmos cabos que levam energia às casas.",
+      "4. As ruas ficam iluminadas, tornando-as mais seguras para andar e conduzir à noite."
+    ]
+  },
+  {
+    "id": "internet",
+    "icon": "🌐",
+    "name": "Internet e Telecomunicações",
+    "prompt": "🌐 Como é que a cidade toda tem internet ao mesmo tempo?",
+    "steps": [
+      "1. Cabos de fibra ótica muito longos ligam a cidade a uma rede maior, que chega a todo o país e ao mundo.",
+      "2. Antenas e torres de telecomunicações espalhadas pela cidade enviam sinal sem fios até telemóveis e casas.",
+      "3. Um centro de dados guarda e organiza toda a informação que viaja pela rede.",
+      "4. Assim, milhares de pessoas podem usar a internet ao mesmo tempo, sem que a rede pare de funcionar."
+    ]
+  },
+  {
+    "id": "parques",
+    "icon": "🌳",
+    "name": "Parques e Espaços Verdes",
+    "prompt": "🌳 Quem decide onde ficam os parques e as árvores da cidade?",
+    "steps": [
+      "Engenheiros e planeadores da cidade escolhem espaços para parques, jardins e árvores, para que as pessoas tenham lugares para brincar, passear e respirar ar mais fresco. As árvores também ajudam a arrefecer a cidade e a limpar o ar que respiramos."
+    ]
+  },
+  {
+    "id": "policia",
+    "icon": "👮",
+    "name": "Polícia",
+    "prompt": "👮 O que fazem os polícias para manter a cidade segura?",
+    "steps": [
+      "A polícia ajuda a manter as ruas seguras, orienta o trânsito, ajuda quem se perde e responde rapidamente quando alguém precisa de ajuda numa emergência. Estão sempre por perto para que todos se sintam mais seguros."
+    ]
+  },
+  {
+    "id": "escolas",
+    "icon": "🏫",
+    "name": "Escolas",
+    "prompt": "🏫 Como é que a cidade organiza escolas para tantas crianças?",
+    "steps": [
+      "A cidade constrói escolas em diferentes bairros para que as crianças não precisem de viajar muito longe. Professores preparam aulas todos os dias para ajudar cada criança a aprender e a crescer."
+    ]
   }
 ]

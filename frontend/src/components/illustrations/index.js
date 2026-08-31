@@ -8,7 +8,13 @@
 //  - animals.jsx: dog, cat, cow, lion, sheep, mouse, duck, frog
 //  - scenery.jsx: house, tree, sun, cloud, river
 //  - icons.jsx: book, pencil, star, heart, clock
+//  - humanEvolution.jsx: hominid silhouette, stone tool, fire, cave art,
+//    modern-human silhouette (used by the "A Evolução do Homem" timeline)
 export * from "./animals.jsx";
 export * from "./scenery.jsx";
 export * from "./icons.jsx";
+export * from "./humanEvolution.jsx";
+export * from "./techHistory.jsx";
+export * from "./kitchen.jsx";
+export * from "./circuits.jsx";
 export { PALETTE, STROKE, STROKE_WIDTH } from "./palette.js";

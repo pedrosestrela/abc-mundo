@@ -4,12 +4,14 @@ Minimal FastAPI + sqlite3 (stdlib) backend. Serves the built frontend as
 static files (if present) and exposes a tiny best-effort progress-ping API.
 No authentication, no ORM, kept intentionally small.
 """
+import json
 import os
+import secrets
 import sqlite3
-from datetime import datetime, timezone
-from typing import Optional
+from datetime import datetime, timedelta, timezone
+from typing import Any, Optional
 
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
@@ -35,6 +37,16 @@ def init_db() -> None:
                 module TEXT,
                 event TEXT,
                 created_at TEXT
+            )
+            """
+        )
+        conn.execute(
+            """
+            CREATE TABLE IF NOT EXISTS sync_blobs (
+                code TEXT PRIMARY KEY,
+                data TEXT,
+                created_at TEXT,
+                expires_at TEXT
             )
             """
         )
@@ -100,6 +112,128 @@ def progress_summary():
         return {"summary": []}
 
 
+SYNC_CODE_ALPHABET = "23456789ABCDEFGHJKMNPQRSTUVWXYZ"  # no 0/O/1/I to avoid confusion
+SYNC_CODE_LENGTH = 6
+SYNC_EXPIRY_HOURS = 48
+
+# Upstream client is a JSON dump of on-device profile/progress data (small).
+# 256KB is generous headroom for that while blocking a buggy/malicious
+# client from filling the disk with an unbounded blob.
+SYNC_MAX_BLOB_BYTES = 256_000
+
+# The sync code space (6 chars, 32-char alphabet = ~1.07 billion codes) is
+# only safe from brute-forcing if lookups are rate-limited; otherwise a
+# script can scan codes fast enough within the 48h expiry window to have a
+# real chance of hitting a live one and stealing another user's synced
+# profile data. Keep this in-process (no extra infra) since the app has a
+# single backend instance and abuse only needs to be slowed, not perfectly
+# blocked.
+SYNC_DOWNLOAD_RATE_LIMIT = 20
+SYNC_DOWNLOAD_RATE_WINDOW_SECONDS = 60
+_sync_download_hits: dict[str, list[float]] = {}
+
+
+def is_rate_limited(
+    hits_by_key: dict[str, list[float]],
+    key: str,
+    now_ts: float,
+    limit: int,
+    window_seconds: float,
+) -> bool:
+    """Pure sliding-window rate limiter. Mutates hits_by_key to record this
+    attempt's timestamp (whether or not it is allowed) and returns True if
+    `key` has already made >= `limit` requests within `window_seconds`
+    before `now_ts`."""
+    window_start = now_ts - window_seconds
+    recent = [t for t in hits_by_key.get(key, []) if t > window_start]
+    limited = len(recent) >= limit
+    recent.append(now_ts)
+    hits_by_key[key] = recent
+    return limited
+
+
+def client_ip(request: Request) -> str:
+    return request.client.host if request.client else "unknown"
+
+
+def generate_sync_code() -> str:
+    return "".join(secrets.choice(SYNC_CODE_ALPHABET) for _ in range(SYNC_CODE_LENGTH))
+
+
+class SyncUpload(BaseModel):
+    data: Any
+
+
+@app.post("/api/sync/upload")
+def sync_upload(payload: SyncUpload):
+    now = datetime.now(timezone.utc)
+    expires_at = now + timedelta(hours=SYNC_EXPIRY_HOURS)
+
+    serialized = json.dumps(payload.data)
+    if len(serialized.encode("utf-8")) > SYNC_MAX_BLOB_BYTES:
+        raise HTTPException(status_code=413, detail="Sync data too large")
+
+    conn = sqlite3.connect(DB_PATH)
+    try:
+        # Opportunistic cleanup of expired rows on every upload, avoiding the
+        # need for any separate scheduled-job infrastructure.
+        conn.execute("DELETE FROM sync_blobs WHERE expires_at < ?", (now.isoformat(),))
+
+        code = generate_sync_code()
+        # Extremely unlikely, but guard against a code collision.
+        for _ in range(5):
+            existing = conn.execute("SELECT 1 FROM sync_blobs WHERE code = ?", (code,)).fetchone()
+            if not existing:
+                break
+            code = generate_sync_code()
+
+        conn.execute(
+            "INSERT INTO sync_blobs (code, data, created_at, expires_at) VALUES (?, ?, ?, ?)",
+            (code, serialized, now.isoformat(), expires_at.isoformat()),
+        )
+        conn.commit()
+        return {"code": code, "expires_at": expires_at.isoformat()}
+    finally:
+        conn.close()
+
+
+@app.get("/api/sync/download/{code}")
+def sync_download(code: str, request: Request):
+    now = datetime.now(timezone.utc)
+
+    if is_rate_limited(
+        _sync_download_hits,
+        client_ip(request),
+        now.timestamp(),
+        SYNC_DOWNLOAD_RATE_LIMIT,
+        SYNC_DOWNLOAD_RATE_WINDOW_SECONDS,
+    ):
+        raise HTTPException(status_code=429, detail="Too many requests, try again later")
+
+    conn = sqlite3.connect(DB_PATH)
+    try:
+        conn.row_factory = sqlite3.Row
+        row = conn.execute(
+            "SELECT code, data, expires_at FROM sync_blobs WHERE code = ?", (code.upper(),)
+        ).fetchone()
+        if row is None:
+            raise HTTPException(status_code=404, detail="Code not found")
+
+        expires_at = row["expires_at"]
+        if expires_at < now.isoformat():
+            conn.execute("DELETE FROM sync_blobs WHERE code = ?", (row["code"],))
+            conn.commit()
+            raise HTTPException(status_code=404, detail="Code expired")
+
+        data = json.loads(row["data"])
+        # One-time-use: delete once successfully retrieved.
+        conn.execute("DELETE FROM sync_blobs WHERE code = ?", (row["code"],))
+        conn.commit()
+        return {"data": data}
+    finally:
+        conn.close()
+
+
 # Serve built frontend (if present) at "/". Must not crash if missing,
 # since this file may be imported/run before the frontend is built.
 # A catch-all (rather than StaticFiles(html=True) mounted at "/") is needed
@@ -107,6 +241,18 @@ def progress_summary():
 # index.html instead of a 404 — StaticFiles only auto-serves index.html for
 # "/", not for unknown sub-paths.
 STATIC_DIR = "static"
+
+
+def resolve_static_path(static_dir, requested_path):
+    """Resolve a client-requested path against static_dir, rejecting any
+    result that escapes it (e.g. via "../" traversal) so the SPA fallback
+    route can never be used to read arbitrary files off the container."""
+    static_root = os.path.abspath(static_dir)
+    candidate = os.path.abspath(os.path.join(static_root, requested_path))
+    is_contained = candidate == static_root or candidate.startswith(static_root + os.sep)
+    return candidate if is_contained else None
+
+
 if os.path.isdir(STATIC_DIR):
     assets_dir = os.path.join(STATIC_DIR, "assets")
     if os.path.isdir(assets_dir):
@@ -114,7 +260,7 @@ if os.path.isdir(STATIC_DIR):
 
     @app.get("/{full_path:path}")
     def spa_fallback(full_path: str):
-        candidate = os.path.join(STATIC_DIR, full_path)
-        if full_path and os.path.isfile(candidate):
+        candidate = resolve_static_path(STATIC_DIR, full_path) if full_path else None
+        if candidate and os.path.isfile(candidate):
             return FileResponse(candidate)
         return FileResponse(os.path.join(STATIC_DIR, "index.html"))

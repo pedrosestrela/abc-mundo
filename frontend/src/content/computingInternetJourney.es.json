@@ -1,0 +1,8 @@
+[
+  { "id": "step1", "icon": "📱", "label": "Tablet", "prompt": "Tocas un vídeo en la tablet. ¿Qué crees que pasa a continuación?", "explanation": "La tablet envía una petición: '¡quiero ver este vídeo!'. Esa petición tiene que salir del aparato antes de que aparezca el vídeo." },
+  { "id": "step2", "icon": "📶", "label": "Wi-Fi / Router", "prompt": "La petición llega al router de casa. ¿Cómo viaja hasta allí?", "explanation": "El Wi-Fi lleva la petición de la tablet hasta el router, sin cables, usando ondas invisibles en el aire." },
+  { "id": "step3", "icon": "🔌", "label": "Cable / Fibra", "prompt": "El router recibe la petición. ¿A dónde la envía ahora?", "explanation": "El router envía la petición por un cable (a menudo de fibra óptica) que sale de casa y viaja bajo la calle." },
+  { "id": "step4", "icon": "🌐", "label": "Internet", "prompt": "La petición viaja por muchos cables y ciudades. ¿Qué es Internet, en realidad?", "explanation": "Internet es una red gigante de cables y ordenadores conectados por todo el mundo, que se pasan mensajes unos a otros hasta llegar al lugar correcto." },
+  { "id": "step5", "icon": "🖥️", "label": "Servidor", "prompt": "La petición llega a un ordenador muy grande, en un lugar lejano. ¿Qué hace ese ordenador?", "explanation": "Se llama servidor. Guarda el vídeo que querías ver y lo prepara para enviarlo de vuelta a tu tablet." },
+  { "id": "step6", "icon": "↩️", "label": "La respuesta vuelve", "prompt": "El servidor ya preparó el vídeo. ¿Cómo llega hasta tu pantalla?", "explanation": "El vídeo vuelve por el mismo camino — cables, router, Wi-Fi — y llega a la tablet en pocos segundos. ¡No es magia, es un viaje muy rápido!" }
+]

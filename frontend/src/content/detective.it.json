@@ -173,5 +173,269 @@
     "emoji": "💻",
     "isFact": false,
     "explanation": "È un mito ed è uno scherzo! Passare molto tempo davanti agli schermi può stancare gli occhi, ma non ne cambia la forma. Comunque è importante fare delle pause."
+  },
+  {
+    "id": "d26",
+    "type": "observation",
+    "emoji": "👣",
+    "title": "Il Caso delle Impronte",
+    "scene": "Nel corridoio della scuola sono state trovate impronte di fango fino all'aula, e la finestra dell'aula era aperta.",
+    "clues": [
+      {
+        "id": "c1",
+        "emoji": "👟",
+        "text": "Grandi impronte di fango sul pavimento"
+      },
+      {
+        "id": "c2",
+        "emoji": "🪟",
+        "text": "La finestra era aperta"
+      },
+      {
+        "id": "c3",
+        "emoji": "🎒",
+        "text": "Uno zaino blu vicino alla porta"
+      }
+    ],
+    "question": "Quale indizio mostra il percorso di chi ha sporcato il pavimento?",
+    "correctClueId": "c1",
+    "explanation": "Le impronte sono l'indizio più diretto: mostrano esattamente il percorso di chi è entrato con le scarpe sporche. La finestra aperta o lo zaino potrebbero non avere nulla a che fare con il caso."
+  },
+  {
+    "id": "d27",
+    "type": "observation",
+    "emoji": "🥀",
+    "title": "Il Mistero della Pianta Appassita",
+    "scene": "La pianta dell'aula era appassita dopo il weekend, anche se era stata innaffiata venerdì prima che tutti se ne andassero.",
+    "clues": [
+      {
+        "id": "c1",
+        "emoji": "☀️",
+        "text": "Il vaso era vicino alla finestra, al sole forte"
+      },
+      {
+        "id": "c2",
+        "emoji": "💧",
+        "text": "La terra era secca e screpolata"
+      },
+      {
+        "id": "c3",
+        "emoji": "🪴",
+        "text": "Il vaso è di argilla rossa"
+      }
+    ],
+    "question": "Quale indizio spiega meglio perché la pianta è appassita?",
+    "correctClueId": "c2",
+    "explanation": "La terra secca e screpolata mostra che l'acqua è evaporata in fretta con il caldo del weekend. È stata la mancanza d'acqua, non il colore del vaso, a far appassire la pianta."
+  },
+  {
+    "id": "d28",
+    "type": "observation",
+    "emoji": "🍦",
+    "title": "La Foto Ingannevole",
+    "scene": "Una foto mostra la mano di un bambino che tiene un gelato che sembra gigante, più grande della sua testa.",
+    "clues": [
+      {
+        "id": "c1",
+        "emoji": "📷",
+        "text": "La foto è stata scattata molto vicino al gelato"
+      },
+      {
+        "id": "c2",
+        "emoji": "🧒",
+        "text": "Non si vede il resto del corpo del bambino nella foto"
+      },
+      {
+        "id": "c3",
+        "emoji": "🍨",
+        "text": "Il gelato ha diverse palline colorate"
+      }
+    ],
+    "question": "Quale indizio spiega perché il gelato sembra così gigante?",
+    "correctClueId": "c1",
+    "explanation": "Quando qualcosa è molto vicino alla fotocamera, sembra più grande di quanto sia in realtà. Le foto mostrano solo una parte della realtà — vale sempre la pena pensare a cosa c'è fuori dall'inquadratura."
+  },
+  {
+    "id": "d29",
+    "type": "deduction",
+    "emoji": "🎂",
+    "title": "Chi Ha Mangiato la Torta?",
+    "setup": "La torta al cioccolato è sparita dalla cucina! Ci sono tre sospettati.",
+    "suspects": [
+      {
+        "id": "tomas",
+        "name": "Tomas",
+        "emoji": "🧒"
+      },
+      {
+        "id": "ines",
+        "name": "Ines",
+        "emoji": "👧"
+      },
+      {
+        "id": "bobi",
+        "name": "Bobi",
+        "emoji": "🐶"
+      }
+    ],
+    "statements": [
+      "Tomas ha giocato a palla in giardino tutto il pomeriggio.",
+      "Ines aveva il cioccolato intorno alla bocca quando è arrivata la mamma.",
+      "Bobi ha dormito nella sua cuccia tutto il giorno."
+    ],
+    "question": "Chi ha mangiato la torta?",
+    "solutionId": "ines",
+    "explanation": "Tomas era in giardino e Bobi stava dormendo — nessuno dei due può aver mangiato la torta. Ines aveva il cioccolato sulla bocca, un indizio chiaro che è stata lei."
+  },
+  {
+    "id": "d30",
+    "type": "deduction",
+    "emoji": "🏺",
+    "title": "Chi Ha Rotto il Vaso?",
+    "setup": "Il vaso del salotto si è rotto mentre i genitori erano al lavoro. Ci sono tre sospettati.",
+    "suspects": [
+      {
+        "id": "whiskers",
+        "name": "Whiskers",
+        "emoji": "🐱"
+      },
+      {
+        "id": "maria",
+        "name": "Maria",
+        "emoji": "👧"
+      },
+      {
+        "id": "pedro",
+        "name": "Pedro",
+        "emoji": "🧒"
+      }
+    ],
+    "statements": [
+      "Il gatto Whiskers è stato chiuso fuori tutto il giorno.",
+      "Maria era a scuola fino alle 17, quando il vaso era ancora intero.",
+      "Pedro era a casa da solo a giocare a palla dentro il salotto."
+    ],
+    "question": "Chi ha rotto il vaso?",
+    "solutionId": "pedro",
+    "explanation": "Whiskers era chiuso fuori e Maria era a scuola quando il vaso era ancora intero — nessuno dei due può essere stato. Solo Pedro era a casa a giocare a palla dentro il salotto."
+  },
+  {
+    "id": "d31",
+    "type": "deduction",
+    "emoji": "🍪",
+    "title": "Chi Ha Mangiato i Biscotti?",
+    "setup": "I biscotti al cioccolato sono spariti dal barattolo. Ci sono tre sospettati.",
+    "suspects": [
+      {
+        "id": "avo",
+        "name": "Nonna",
+        "emoji": "👵"
+      },
+      {
+        "id": "bebe",
+        "name": "Neonato",
+        "emoji": "👶"
+      },
+      {
+        "id": "irmao",
+        "name": "Fratello maggiore",
+        "emoji": "🧑"
+      }
+    ],
+    "statements": [
+      "Alla nonna non piacciono i biscotti al cioccolato e non li mangia mai.",
+      "Il neonato non ha ancora i denti per mangiare biscotti duri.",
+      "Il fratello maggiore aveva briciole di biscotto in tasca."
+    ],
+    "question": "Chi ha mangiato i biscotti?",
+    "solutionId": "irmao",
+    "explanation": "Alla nonna non piacciono quei biscotti e il neonato non può masticarli — nessuno dei due può essere stato. Le briciole in tasca del fratello maggiore sono l'indizio che lo tradisce."
+  },
+  {
+    "id": "d32",
+    "type": "sources",
+    "emoji": "🍫",
+    "title": "Sarà Vero? — Il Cioccolato Magico",
+    "claim": "Un compagno ha detto che se mangi cioccolato ogni giorno ottieni superpoteri.",
+    "sourceA": {
+      "label": "Un amico di scuola",
+      "text": "Ha detto di averlo sentito da un altro amico, ma non sa dove sia stato confermato.",
+      "credible": false
+    },
+    "sourceB": {
+      "label": "Un libro di scienze sul corpo umano",
+      "text": "Spiega come l'alimentazione influisce sulla salute, ma non parla mai di superpoteri.",
+      "credible": true
+    },
+    "correctSourceId": "b",
+    "explanation": "Un libro di scienze è scritto da esperti e revisionato con cura, quindi è più affidabile di una voce tra amici. Quando qualcosa sembra troppo bello per essere vero, vale la pena verificarlo in una fonte seria."
+  },
+  {
+    "id": "d33",
+    "type": "sources",
+    "emoji": "📅",
+    "title": "Sarà Vero? — La Festa Segreta",
+    "claim": "Un messaggio su internet dice che domani non c'è scuola per una festa segreta.",
+    "sourceA": {
+      "label": "Un messaggio inoltrato da sconosciuti in un gruppo",
+      "text": "Nessuno sa chi l'ha scritto per primo né da dove venga l'informazione.",
+      "credible": false
+    },
+    "sourceB": {
+      "label": "Il sito ufficiale della scuola",
+      "text": "Pubblica sempre il calendario scolastico ufficiale e confermato.",
+      "credible": true
+    },
+    "correctSourceId": "b",
+    "explanation": "Il sito ufficiale della scuola è la fonte che decide davvero il calendario — è sempre più affidabile di un messaggio passato per molte persone che potrebbe essere cambiato lungo il percorso."
+  },
+  {
+    "id": "d34",
+    "type": "sources",
+    "emoji": "🦖",
+    "title": "Sarà Vero? — Il Dinosauro Vivo",
+    "claim": "Qualcuno sui social dice di aver visto un dinosauro vivo in una foresta.",
+    "sourceA": {
+      "label": "Un video senza spiegazione di dove sia stato girato",
+      "text": "Non mostra prove né contesto sul luogo o la data.",
+      "credible": false
+    },
+    "sourceB": {
+      "label": "Un museo di storia naturale",
+      "text": "Spiega che i dinosauri non aviani si sono estinti milioni di anni fa, con molte prove fossili.",
+      "credible": true
+    },
+    "correctSourceId": "b",
+    "explanation": "Un museo di scienze si basa su molte prove studiate da esperti per anni. Un solo video, senza spiegazione né contesto, può facilmente essere una bufala o un montaggio."
+  },
+  {
+    "id": "d35",
+    "type": "aiError",
+    "emoji": "🕷️",
+    "title": "L'IA Ha Sbagliato — Le Zampe del Ragno",
+    "aiQuestion": "Quante zampe ha un ragno?",
+    "aiAnswer": "Un ragno ha 6 zampe, come un insetto.",
+    "correctAnswer": "Un ragno ha 8 zampe — per questo non è un insetto, è un aracnide.",
+    "explanation": "L'IA ha sbagliato! I ragni hanno 8 zampe, non 6. Anche i computer e l'intelligenza artificiale possono sbagliare, quindi vale sempre la pena verificare con quello che già sai o con un libro."
+  },
+  {
+    "id": "d36",
+    "type": "aiError",
+    "emoji": "🏙️",
+    "title": "L'IA Ha Sbagliato — La Capitale del Portogallo",
+    "aiQuestion": "Qual è la capitale del Portogallo?",
+    "aiAnswer": "La capitale del Portogallo è Porto.",
+    "correctAnswer": "La capitale del Portogallo è Lisbona.",
+    "explanation": "L'IA ha sbagliato! La capitale del Portogallo è Lisbona, non Porto. Verificare fatti importanti in un libro, un atlante o con un adulto aiuta a scoprire questi errori."
+  },
+  {
+    "id": "d37",
+    "type": "aiError",
+    "emoji": "📅",
+    "title": "L'IA Ha Sbagliato — I Giorni della Settimana",
+    "aiQuestion": "Quanti giorni ha una settimana?",
+    "aiAnswer": "Una settimana ha 5 giorni.",
+    "correctAnswer": "Una settimana ha 7 giorni.",
+    "explanation": "L'IA ha sbagliato! Una settimana ha sempre 7 giorni. È un buon promemoria che vale la pena pensare con la propria testa prima di accettare qualsiasi risposta, anche da un computer."
   }
 ]

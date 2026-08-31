@@ -1,0 +1,143 @@
+{
+  "automobile": [
+    {
+      "id": "carruagens",
+      "period": "Before 1880",
+      "title": "Horse-Drawn Carriages",
+      "emoji": "🐎",
+      "description": "For centuries, to get around we used our own feet, horses, or carts and carriages pulled by horses. Journeys were slow, tiring for the animals, and roads were made of packed earth or stone.",
+      "keyDevelopment": "Transport powered by animals, with no engine.",
+      "funFact": "A trip that takes an hour by car today could take a whole day in a carriage!"
+    },
+    {
+      "id": "primeiros-prototipos",
+      "period": "1770 – 1885",
+      "title": "The First Prototypes",
+      "emoji": "🚂",
+      "description": "Inventors began testing steam-powered vehicles, big machines with boilers. Later, Karl Benz built one of the first cars with a combustion engine, powered by petrol, in 1885.",
+      "keyDevelopment": "First steam and petrol engines in vehicles.",
+      "funFact": "Karl Benz's first car had only three wheels!"
+    },
+    {
+      "id": "ford-t",
+      "period": "1908",
+      "title": "The Ford Model T and Mass Production",
+      "emoji": "🚗",
+      "description": "Henry Ford had a brilliant idea: build cars on an assembly line, where each worker always did the same task. That made cars much faster to build and much cheaper, so more families could afford one.",
+      "keyDevelopment": "Assembly line and mass production.",
+      "funFact": "Thanks to the assembly line, a new Ford Model T rolled off the factory every few minutes!"
+    },
+    {
+      "id": "carros-modernos",
+      "period": "20th century",
+      "title": "Modern Cars",
+      "emoji": "🚙",
+      "description": "Throughout the 20th century, cars became faster, safer, and more comfortable, with seatbelts, airbags, air conditioning, and onboard computers. Cities changed around cars too, with more roads, garages, and traffic lights.",
+      "keyDevelopment": "More safety, comfort, and speed.",
+      "funFact": "Brake lights and seatbelts only became common decades after the very first automobile!"
+    },
+    {
+      "id": "carros-eletricos",
+      "period": "Today",
+      "title": "Electric Cars",
+      "emoji": "🔋",
+      "description": "Today there are more and more electric cars, which run on a battery instead of burning fuel. They don't release smoke from an exhaust pipe and can be charged at a special plug, just like we charge a phone.",
+      "keyDevelopment": "Electric motors and rechargeable batteries.",
+      "funFact": "Interestingly, electric cars already existed in the 19th century — but batteries back then were very weak!"
+    }
+  ],
+  "electricity": [
+    {
+      "id": "velas-candeeiros",
+      "period": "Before the 19th century",
+      "title": "Candles and Oil Lamps",
+      "emoji": "🕯️",
+      "description": "For thousands of years, when it got dark, people used wax candles and oil lamps for light. It was a weak, flickering light, and there was always a risk of starting fires.",
+      "keyDevelopment": "Light made with a flame.",
+      "funFact": "Long ago, whole families would read and work by the light of a single candle!"
+    },
+    {
+      "id": "primeiras-experiencias",
+      "period": "1740 – 1800",
+      "title": "The First Experiments with Electricity",
+      "emoji": "⚡",
+      "description": "Scientists began studying static electricity, like the kind we feel when we rub a balloon on our hair. In 1800, Alessandro Volta invented the voltaic pile, the first way to store electricity and use it whenever we wanted.",
+      "keyDevelopment": "Discovery and first storage of electricity.",
+      "funFact": "The word \"battery\" comes from stacking — Volta stacked metal discs on top of each other!"
+    },
+    {
+      "id": "lampada-eletrica",
+      "period": "1878 – 1880",
+      "title": "The Electric Lightbulb",
+      "emoji": "💡",
+      "description": "Several inventors, like Joseph Swan and Thomas Edison, tested hundreds of materials to find a filament that could glow for a long time without burning out inside a bulb. By 1879-80, they managed to create bulbs that lasted many hours.",
+      "keyDevelopment": "Invention of the practical incandescent bulb.",
+      "funFact": "It's said Edison's team tested over a thousand different materials before finding one that worked well!"
+    },
+    {
+      "id": "eletrificacao",
+      "period": "Late 19th – 20th century",
+      "title": "Electrifying Homes and Cities",
+      "emoji": "🏙️",
+      "description": "Bit by bit, power plants and cables were built to carry electricity to homes, streets, and factories. Cities gained street lighting, and families could, for the first time, plug in electric appliances at home.",
+      "keyDevelopment": "Power grids connecting power plants to homes and cities.",
+      "funFact": "Some of the first electrically-lit streets in the world were in New York and London!"
+    },
+    {
+      "id": "led-hoje",
+      "period": "Today",
+      "title": "Today's LEDs",
+      "emoji": "🌟",
+      "description": "Today's bulbs, called LEDs, use much less energy than old incandescent bulbs and last much longer. They can also come in many colors and are used in screens, traffic lights, and Christmas lights.",
+      "keyDevelopment": "Efficient lighting with far less wasted energy.",
+      "funFact": "An LED can last more than 15 years switched on every day — much longer than an old bulb!"
+    }
+  ],
+  "production": [
+    {
+      "id": "hidroeletrica",
+      "title": "Hydroelectric Power",
+      "emoji": "💧",
+      "renewable": true,
+      "description": "In dams, water falling from a high level to a low level spins a big wheel called a turbine. That turbine is connected to a generator, which turns the movement into electricity.",
+      "keyDevelopment": "Falling water spins a turbine.",
+      "funFact": "Portugal has many dams on rivers like the Douro, producing electricity for thousands of homes!"
+    },
+    {
+      "id": "eolica",
+      "title": "Wind Power",
+      "emoji": "🌬️",
+      "renewable": true,
+      "description": "Wind pushes the huge blades of wind turbines, making them spin. That spinning motion is turned into electricity inside the tower, just like the water in dams.",
+      "keyDevelopment": "Wind spins the blades of a giant windmill.",
+      "funFact": "The blades of a large wind turbine can be as long as a football field!"
+    },
+    {
+      "id": "solar",
+      "title": "Solar Power",
+      "emoji": "☀️",
+      "renewable": true,
+      "description": "Solar panels are made of a special material that, when sunlight hits it, releases tiny particles that move and create an electric current. The more sun, the more electricity is produced.",
+      "keyDevelopment": "Sunlight turns directly into electricity.",
+      "funFact": "There are solar panels small enough to fit on a calculator, and big enough to cover whole fields!"
+    },
+    {
+      "id": "termica",
+      "title": "Thermal Power (Fossil Fuels)",
+      "emoji": "🏭",
+      "renewable": false,
+      "description": "In many plants, coal, gas, or oil is burned to heat water until it turns into steam. That steam, with great force, spins a turbine that produces electricity — but it also releases smoke that pollutes the air.",
+      "keyDevelopment": "Burning fuels to heat water and make steam.",
+      "funFact": "Coal, gas, and oil take millions of years to form inside the Earth — so we can't \"make more\" quickly!"
+    },
+    {
+      "id": "nuclear",
+      "title": "Nuclear Power",
+      "emoji": "☢️",
+      "renewable": false,
+      "description": "In nuclear plants, tiny particles called atoms are very carefully split apart, releasing a lot of heat. That heat warms water and creates steam, which spins a turbine, just like in thermal plants.",
+      "keyDevelopment": "Splitting atoms releases a huge amount of heat.",
+      "funFact": "A small amount of nuclear fuel can produce as much energy as thousands of truckloads of coal!"
+    }
+  ]
+}

@@ -247,8 +247,12 @@ export default function Globe3D({ countries, visited, onSelect }) {
       .globeMaterial(oceanMaterial)
       .showAtmosphere(true)
       .atmosphereColor("#7fd4ff")
-      .atmosphereAltitude(0.22)
+      .atmosphereAltitude(0.28)
       .backgroundColor("#0b1024")
+      // Smoothly interpolate polygon color/altitude changes (hover/select
+      // highlight) instead of an instant hard swap, so the country lift +
+      // glow feels like a gentle "pop" rather than a flicker.
+      .polygonsTransitionDuration(220)
       // Per-country border polygons REPLACE the old single merged-landmass
       // blob (globe.gl only supports one polygons layer at a time). Every
       // country still gets the same green fill, but now with its own visible
@@ -305,14 +309,21 @@ export default function Globe3D({ countries, visited, onSelect }) {
 
     // Lighting: keep globe.gl's default ambient light (soft fill) but boost
     // the directional "sun" so the sphere shows clear shading/depth instead
-    // of looking flat, and angle it for a pleasant terminator.
+    // of looking flat, and angle it for a pleasant terminator. A second,
+    // dimmer, cool-toned "rim" light from the opposite side keeps the dark
+    // limb of the globe from going pure black, adding a subtle sense of
+    // depth/roundness (a classic cheap 3-point-lighting trick) without any
+    // extra texture or shader work.
     const lights = globe.lights();
     const ambient = lights.find((l) => l.type === "AmbientLight") || new AmbientLight(0xffffff, 0.6);
-    ambient.intensity = 0.55;
+    ambient.intensity = 0.45;
     const sun = lights.find((l) => l.type === "DirectionalLight") || new DirectionalLight(0xffffff, 1);
-    sun.intensity = 1.1;
-    sun.position.set(1, 0.6, 1);
-    globe.lights([ambient, sun]);
+    sun.color = new Color("#fff6e0");
+    sun.intensity = 1.35;
+    sun.position.set(1.1, 0.65, 0.9);
+    const rim = new DirectionalLight(new Color("#6fb8ff"), 0.35);
+    rim.position.set(-1.2, -0.4, -0.8);
+    globe.lights([ambient, sun, rim]);
 
     // Renderer sharpness: globe.gl already enables antialias by default, but
     // pixelRatio is uncapped, which on a high-DPI tablet (iPad) both wastes

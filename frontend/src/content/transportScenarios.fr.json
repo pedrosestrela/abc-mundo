@@ -63,5 +63,109 @@
     ],
     "correct": "ship",
     "explanation": "Pour transporter des charges très lourdes à travers l'océan, le bateau est le plus utilisé — plus lent, mais il transporte beaucoup plus et consomme moins d'énergie par objet."
+  },
+  {
+    "id": "park",
+    "icon": "🚸",
+    "prompt": "Aller au parc au bout de la rue.",
+    "modes": [
+      "walk",
+      "bike",
+      "car",
+      "plane"
+    ],
+    "correct": "walk",
+    "explanation": "Pour un endroit si proche, marcher est le moyen le plus simple et le plus sain d'y arriver."
+  },
+  {
+    "id": "bakery",
+    "icon": "🥖",
+    "prompt": "Aller à la boulangerie acheter du pain frais le matin.",
+    "modes": [
+      "walk",
+      "bike",
+      "car",
+      "train"
+    ],
+    "correct": "walk",
+    "explanation": "La boulangerie est juste à côté; marcher est rapide et tu profites de l'air frais du matin."
+  },
+  {
+    "id": "islandferry",
+    "icon": "🏝️",
+    "prompt": "Traverser un petit bras de mer pour atteindre une île proche de la côte.",
+    "modes": [
+      "car",
+      "train",
+      "plane",
+      "ship"
+    ],
+    "correct": "ship",
+    "explanation": "Pour traverser l'eau jusqu'à une île proche, un bateau (ou un ferry) est le bon choix — il n'y a ni route ni rail au-dessus de la mer."
+  },
+  {
+    "id": "citycommute",
+    "icon": "🏢",
+    "prompt": "Aller travailler tous les jours de l'autre côté de la ville.",
+    "modes": [
+      "walk",
+      "bike",
+      "car",
+      "plane"
+    ],
+    "correct": "car",
+    "explanation": "Pour une longue distance à travers la ville, tous les jours, la voiture est plus pratique que marcher ou faire du vélo."
+  },
+  {
+    "id": "studyabroad",
+    "icon": "🎓",
+    "prompt": "Aller étudier un an dans un pays de l'autre côté de l'océan.",
+    "modes": [
+      "car",
+      "train",
+      "ship",
+      "plane"
+    ],
+    "correct": "plane",
+    "explanation": "Pour voyager rapidement sur une très longue distance, en traversant l'océan, l'avion est le bon choix."
+  },
+  {
+    "id": "exportcars",
+    "icon": "🚘",
+    "prompt": "Envoyer des centaines de voitures neuves d'une usine pour les vendre sur un autre continent.",
+    "modes": [
+      "car",
+      "train",
+      "plane",
+      "ship"
+    ],
+    "correct": "ship",
+    "explanation": "Pour transporter une cargaison très lourde et volumineuse à travers l'océan, le bateau est le plus utilisé — il transporte beaucoup plus à la fois."
+  },
+  {
+    "id": "medicine",
+    "icon": "💊",
+    "prompt": "Envoyer un médicament urgent à un hôpital de l'autre côté du monde.",
+    "modes": [
+      "train",
+      "ship",
+      "car",
+      "plane"
+    ],
+    "correct": "plane",
+    "explanation": "Quand la rapidité compte plus que le prix, comme dans une urgence, l'avion arrive bien plus vite qu'un bateau."
+  },
+  {
+    "id": "campingtrip",
+    "icon": "🏕️",
+    "prompt": "Aller camper en famille dans une forêt à quelques heures de la maison.",
+    "modes": [
+      "walk",
+      "bike",
+      "car",
+      "plane"
+    ],
+    "correct": "car",
+    "explanation": "Avec autant de matériel — tente, sacs de couchage, nourriture — la voiture est le choix le plus pratique pour ce type de trajet."
   }
 ]

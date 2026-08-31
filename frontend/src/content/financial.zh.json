@@ -1,10 +1,98 @@
 [
-  { "id": "poupar-gastar", "concept": "储蓄与花钱", "emoji": "🐷", "explanation": "储蓄就是把钱留到以后用。花钱就是现在用钱买东西。两样都做一点是很好的!" },
-  { "id": "precisar-querer", "concept": "需要与想要", "emoji": "🎁", "explanation": "需要是我们生活中不能缺少的东西,比如食物或鞋子。想要是我们希望拥有的东西,比如一个新玩具。" },
-  { "id": "moedas-notas", "concept": "硬币与纸币", "emoji": "🪙", "explanation": "钱有小小的硬币,也有大大的纸币。它们一起帮助我们支付想要和需要的东西。" },
-  { "id": "paciencia", "concept": "储蓄的耐心", "emoji": "⏳", "explanation": "有时候我们需要等待,每天存一点点钱,直到攒够钱买一件特别的东西。" },
-  { "id": "mealheiro", "concept": "存钱罐", "emoji": "🐖", "explanation": "存钱罐是一个用来保存硬币的小盒子。每存一枚硬币,我们就离目标更近一步。" },
-  { "id": "trocar", "concept": "找零钱", "emoji": "🔄", "explanation": "当我们付的钱比东西的价格多时,我们会拿到找零:多付的钱会还给我们。" },
-  { "id": "trabalho-dinheiro", "concept": "工作与金钱", "emoji": "🧹", "explanation": "人们通过工作来赚钱。在家里帮忙也能教会我们努力的价值。" },
-  { "id": "partilhar", "concept": "分享与帮助", "emoji": "🤝", "explanation": "我们可以用一点钱来帮助别人,比如给朋友一份礼物。" }
+  {
+    "id": "poupar-gastar",
+    "concept": "储蓄与花钱",
+    "emoji": "🐷",
+    "explanation": "储蓄就是把钱留到以后用。花钱就是现在用钱买东西。两样都做一点是很好的!"
+  },
+  {
+    "id": "precisar-querer",
+    "concept": "需要与想要",
+    "emoji": "🎁",
+    "explanation": "需要是我们生活中不能缺少的东西,比如食物或鞋子。想要是我们希望拥有的东西,比如一个新玩具。"
+  },
+  {
+    "id": "moedas-notas",
+    "concept": "硬币与纸币",
+    "emoji": "🪙",
+    "explanation": "钱有小小的硬币,也有大大的纸币。它们一起帮助我们支付想要和需要的东西。"
+  },
+  {
+    "id": "paciencia",
+    "concept": "储蓄的耐心",
+    "emoji": "⏳",
+    "explanation": "有时候我们需要等待,每天存一点点钱,直到攒够钱买一件特别的东西。"
+  },
+  {
+    "id": "mealheiro",
+    "concept": "存钱罐",
+    "emoji": "🐖",
+    "explanation": "存钱罐是一个用来保存硬币的小盒子。每存一枚硬币,我们就离目标更近一步。"
+  },
+  {
+    "id": "trocar",
+    "concept": "找零钱",
+    "emoji": "🔄",
+    "explanation": "当我们付的钱比东西的价格多时,我们会拿到找零:多付的钱会还给我们。"
+  },
+  {
+    "id": "trabalho-dinheiro",
+    "concept": "工作与金钱",
+    "emoji": "🧹",
+    "explanation": "人们通过工作来赚钱。在家里帮忙也能教会我们努力的价值。"
+  },
+  {
+    "id": "partilhar",
+    "concept": "分享与帮助",
+    "emoji": "🤝",
+    "explanation": "我们可以用一点钱来帮助别人,比如给朋友一份礼物。"
+  },
+  {
+    "id": "orcamento",
+    "concept": "制定预算",
+    "emoji": "📝",
+    "explanation": "预算是一个计划,展示我们有多少钱,以及打算怎样花钱或存钱。它能帮助我们不花超过自己拥有的钱。"
+  },
+  {
+    "id": "banco",
+    "concept": "银行",
+    "emoji": "🏦",
+    "explanation": "银行是人们存放钱的安全地方。它也能帮助我们储蓄,让钱慢慢增多。"
+  },
+  {
+    "id": "comparar-precos",
+    "concept": "比较价格",
+    "emoji": "🔍",
+    "explanation": "买东西之前,聪明的做法是看看同样的东西在不同商店的价格。这样我们就能选到更便宜的选项。"
+  },
+  {
+    "id": "desconto",
+    "concept": "什么是折扣",
+    "emoji": "🏷️",
+    "explanation": "折扣就是商店在一段时间内降低某样东西的价格。但要注意检查这是否是真正的省钱。"
+  },
+  {
+    "id": "objetivo-poupanca",
+    "concept": "设定储蓄目标",
+    "emoji": "🎯",
+    "explanation": "储蓄目标就是决定我们想为什么而存钱,比如一个玩具或一次旅行。有目标能让我们更愿意存钱。"
+  },
+  {
+    "id": "dinheiro-digital",
+    "concept": "数字货币",
+    "emoji": "💳",
+    "explanation": "如今,钱也可以是数字化的,存在卡片或手机里,而不是硬币和纸币。它仍然是真正的钱!"
+  },
+  {
+    "id": "emprestar",
+    "concept": "借钱与还钱",
+    "emoji": "🤲",
+    "explanation": "有时我们向别人借钱,并承诺以后还给他们。始终信守这个承诺非常重要。"
+  },
+  {
+    "id": "valor-do-dinheiro",
+    "concept": "金钱的价值",
+    "emoji": "⚖️",
+    "explanation": "不是所有东西都一样贵。了解金钱的价值能帮助我们判断某样东西相对于它提供的价值是贵还是便宜。"
+  }
 ]

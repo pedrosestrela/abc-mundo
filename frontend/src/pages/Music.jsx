@@ -1,6 +1,14 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { playInstrumentNote, playDrumPad, SOLFEGE_PT, NOTE_FREQS, INSTRUMENTS, DRUM_PADS } from "../music.js";
+import {
+  playInstrumentNote,
+  playDrumPad,
+  SOLFEGE_PT,
+  NOTE_FREQS,
+  INSTRUMENTS,
+  DRUM_PADS,
+  transposeNotesToRange,
+} from "../music.js";
 import { getProfile, pingProgress, getLangPair } from "../storage.js";
 import pianoSongs from "../content/pianoSongs.json";
 import SpeakButton from "../components/SpeakButton.jsx";
@@ -8,6 +16,7 @@ import MusicStaff from "../components/MusicStaff.jsx";
 import HelpButton from "../components/HelpButton.jsx";
 import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
 import InstrumentVisual, { getInstrumentFamily, DrumKitVisual } from "../components/InstrumentVisual.jsx";
+import MascotBubble from "../components/mascots/MascotBubble.jsx";
 
 const WHITE_LETTERS = ["C", "D", "E", "F", "G", "A", "B"];
 
@@ -49,6 +58,23 @@ const PAD_EMOJI = { kick: "🥁", snare: "🪘", hihat: "🎩", tom: "🛢️" }
 // the solfège names shown elsewhere in the module.
 const EAR_SCALE = ["C4", "D4", "E4", "F4", "G4", "A4", "B4"];
 
+function noteLetter(note) {
+  return note.replace(/\d+$/, "");
+}
+
+// The piano UI exposes the full two-octave C4-C6 keyboard (WHITE_KEYS /
+// BLACK_KEYS below), so its "learn to play" song matching stays exact-note.
+// Every other pitched instrument's tappable UI (InstrumentVisual) only
+// exposes one octave of natural notes (see NOTES in InstrumentVisual.jsx) —
+// a two-octave fretboard/hole layout isn't a sane tap target for a young
+// child — so for those, "did the child play the right note" is judged by
+// pitch class (letter) only, ignoring octave.
+function notesMatch(instrument, played, expected) {
+  if (!expected) return false;
+  if (!getInstrumentFamily(instrument)) return played === expected;
+  return noteLetter(played) === noteLetter(expected);
+}
+
 function randomFrom(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
 }
@@ -70,13 +96,12 @@ const WHICH_INSTRUMENT_POOL = [
   "flute",
   "violin",
   "guitar",
-  "accordion",
+  "trumpet",
   "xylophone",
   "harp",
-  "cavaquinho",
-  "portugueseGuitar",
-  "concertina",
-  "viola",
+  "clarinet",
+  "saxophone",
+  "cello",
 ];
 
 // Builds a round for level 1 (same/different): 50% chance of two identical
@@ -159,7 +184,14 @@ export default function Music({ defaultInstrument = "piano" }) {
   const [earMelodyInput, setEarMelodyInput] = useState([]);
 
   const song = pianoSongs.find((s) => s.id === songId);
-  const nextNote = playing ? song.notes[step] : null;
+  // pianoSongs.json was authored against the piano's native C4-C6 range.
+  // For every other pitched instrument, shift the whole sequence by whole
+  // octaves (never per-note, which would distort the tune) into that
+  // instrument's real sampled range, so the melody plays back faithfully
+  // instead of at whatever extreme pitch-shift the raw piano-authored notes
+  // would land at. Piano and "drum" (unpitched) pass through unchanged.
+  const instrumentNotes = useMemo(() => transposeNotesToRange(song.notes, instrument), [song, instrument]);
+  const nextNote = playing ? instrumentNotes[step] : null;
   const isDrum = instrument === "drum";
 
   function pingEar(event) {
@@ -281,14 +313,20 @@ export default function Music({ defaultInstrument = "piano" }) {
   }
 
   function handleKeyPress(note) {
-    playInstrumentNote(instrument, note);
+    // When following the song and the tapped note is the right one, play
+    // the actual (instrument-range-transposed) song pitch rather than the
+    // literal tapped note — matters for the non-piano instruments, whose UI
+    // only exposes one octave of letters, so a "C" tap should sound the
+    // real C4/C5/whichever octave the melody is on right now.
+    const matches = playing && notesMatch(instrument, note, nextNote);
+    playInstrumentNote(instrument, matches ? nextNote : note);
     setActiveNote(note);
     const profile = getProfile();
     pingProgress({ profileName: profile?.name, module: "music", event: `note_played:${instrument}:${note}` });
 
-    if (playing && note === song.notes[step]) {
+    if (matches) {
       const next = step + 1;
-      if (next >= song.notes.length) {
+      if (next >= instrumentNotes.length) {
         setPlaying(false);
         setStep(0);
       } else {
@@ -329,6 +367,9 @@ export default function Music({ defaultInstrument = "piano" }) {
         <HelpButton text={isDrum ? t("modules.musicHelpDrum") : t("modules.musicHelpPiano")} langCode={pair.mother} />
       </div>
       <p className="page-intro">{t("modules.musicIntro")}</p>
+      <MascotBubble character="milo" mood="happy" langCode={pair.mother}>
+        {t("modules.musicMascotIntro")}
+      </MascotBubble>
 
       <div className="phonics-tabs">
         <button
@@ -574,7 +615,12 @@ export default function Music({ defaultInstrument = "piano" }) {
         <>
           {getInstrumentFamily(instrument) ? (
             <div className="instrument-visual-wrap">
-              <InstrumentVisual instrument={instrument} activeNote={activeNote} onPress={handleKeyPress} />
+              <InstrumentVisual
+                instrument={instrument}
+                activeNote={activeNote}
+                highlightNote={nextNote ? noteLetter(nextNote) + "4" : null}
+                onPress={handleKeyPress}
+              />
             </div>
           ) : (
             <div className="piano-wrap">

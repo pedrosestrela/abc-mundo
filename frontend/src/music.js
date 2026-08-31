@@ -1,15 +1,30 @@
 // Background-music generator + per-instrument note player for the Music
-// page. Five instruments now play real recorded samples, each pitch-shifted
-// across the keyboard via AudioBufferSourceNode.playbackRate, with an
-// automatic fallback to the original procedurally-synthesised timbre if a
-// sample fails to load (offline-before-cache-warms, blocked network, etc):
+// page. Eleven pitched instruments play real recorded samples, each
+// pitch-shifted across the keyboard via AudioBufferSourceNode.playbackRate
+// (or, for drum pads, played back at fixed pitch like a real kit), with an
+// automatic fallback to a procedurally-synthesised timbre if a sample fails
+// to load (offline-before-cache-warms, blocked network, etc):
 //   - piano: Salamander Grand Piano, CC BY 3.0 (public/audio/piano/NOTICE.md)
-//   - xylophone, guitar, flute, violin: tonejs-instruments sample library,
-//     CC BY 3.0 (public/audio/<instrument>/NOTICE.md)
-// Every other instrument (viola, cavaquinho, portugueseGuitar, accordion,
-// concertina, harp, drum, and the looping background melody) still uses
-// layered/detuned Web Audio oscillator synthesis — no clean/verifiable
-// permissively-licensed sample pack was found for them — tuned to
+//   - xylophone, guitar, flute, violin, harp, cello, trumpet, clarinet,
+//     saxophone: tonejs-instruments sample library, CC BY 3.0
+//     (public/audio/<instrument>/NOTICE.md)
+//   - drum (pads): Sonic Pi sample library, CC0-1.0 / public domain, via
+//     the `supersonic-scsynth-samples` npm package (public/audio/drum/NOTICE.md)
+// Every instrument here is a real recorded sample. The previous synthesis-
+// only instruments (viola, cavaquinho, portugueseGuitar, accordion,
+// concertina) were removed because they were not faithful to their real
+// acoustic instruments — a genuinely thorough search (npm registry search +
+// direct package-name probing for Iberian/folk-instrument and reed sample
+// libraries) turned up no clean/verifiable permissively-licensed sample pack
+// for them. Cello, trumpet, clarinet and saxophone were added in their place
+// since real CC BY 3.0 samples exist for them in the same library already
+// used for guitar/flute/violin/harp/xylophone, and they fill genuine
+// timbre-family gaps (trumpet = the app's first brass instrument; cello =
+// second bowed-string register; clarinet/saxophone = second/third woodwind
+// timbre alongside flute) for the "Ouvido Musical" ear-training mode.
+// The looping background melody still uses layered/detuned Web Audio
+// oscillator synthesis (it's a generic accompaniment, not a named
+// instrument), as does every sample instrument's fallback voice, tuned to
 // approximate each instrument's real overtone character (see the
 // per-instrument functions below for the specific technique used for each).
 
@@ -43,12 +58,11 @@ export const INSTRUMENTS = [
   { id: "flute", icon: "🪈" },
   { id: "drum", icon: "🥁" },
   { id: "violin", icon: "🎻" },
-  { id: "cavaquinho", icon: "🪕" },
-  { id: "portugueseGuitar", icon: "🎸" },
-  { id: "accordion", icon: "🪗" },
-  { id: "concertina", icon: "🎐" },
   { id: "harp", icon: "🎶" },
-  { id: "viola", icon: "🎻" },
+  { id: "cello", icon: "🎻" },
+  { id: "trumpet", icon: "🎺" },
+  { id: "clarinet", icon: "🎷" },
+  { id: "saxophone", icon: "🎷" },
 ];
 
 // Simple tappable pads for the drum instrument — no musical scale, just a
@@ -141,6 +155,18 @@ function noteToMidi(note) {
   const m = /^([A-G]#?)(\d)$/.exec(note);
   if (!m) return null;
   return Number(m[2]) * 12 + SEMITONE_INDEX[m[1]];
+}
+
+const MIDI_LETTERS = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"];
+
+// Inverse of noteToMidi — "C4" <-> 48, etc. Used to shift whole song note
+// sequences by octaves so they land inside a given instrument's real
+// sampled range (see transposeNotesToRange below) while keeping every
+// note's letter/pitch-class (and therefore the melody's shape) intact.
+function midiToNote(midi) {
+  const octave = Math.floor(midi / 12);
+  const letter = MIDI_LETTERS[((midi % 12) + 12) % 12];
+  return `${letter}${octave}`;
 }
 
 // Matches the actual files shipped in public/audio/piano/ (A0-A7, C1-C8,
@@ -375,7 +401,90 @@ const SAMPLE_INSTRUMENTS = {
     decayEnd: 0.85,
     tail: 0.6,
   },
+  harp: {
+    base: "/audio/harp/",
+    samples: buildToneSampleList([
+      "A4", "B3", "B5", "C3", "C5", "D4", "D6", "E3", "E5", "F4", "F6", "G3", "G5",
+    ]),
+    peak: 0.3,
+    attack: 0.008,
+    decayEnd: 1.0,
+    tail: 1.1,
+  },
+  cello: {
+    base: "/audio/cello/",
+    samples: buildToneSampleList([
+      "C#3", "D3", "D#3", "E3", "F3", "F#3", "G3", "G#3", "A3", "A#3", "B3", "C4", "E4", "G4", "C5",
+    ]),
+    peak: 0.28,
+    attack: 0.07,
+    decayEnd: 0.85,
+    tail: 0.7,
+  },
+  trumpet: {
+    base: "/audio/trumpet/",
+    samples: buildToneSampleList(["C3", "F3", "A3", "A#3", "D#4", "F4", "G4", "D5", "F5", "A5", "C6"]),
+    peak: 0.24,
+    attack: 0.03,
+    decayEnd: 0.5,
+    tail: 0.3,
+  },
+  clarinet: {
+    base: "/audio/clarinet/",
+    samples: buildToneSampleList(["D3", "F3", "A#3", "D4", "F4", "A#4", "D5", "F5", "A#5", "D6", "F#6"]),
+    peak: 0.24,
+    attack: 0.05,
+    decayEnd: 0.7,
+    tail: 0.3,
+  },
+  saxophone: {
+    base: "/audio/saxophone/",
+    samples: buildToneSampleList([
+      "D3", "E3", "F3", "G3", "A#3", "B3", "C4", "D4", "E4", "F4", "G4", "A4", "B4", "C5", "D5", "G5",
+    ]),
+    peak: 0.26,
+    attack: 0.04,
+    decayEnd: 0.7,
+    tail: 0.4,
+  },
 };
+
+// Returns the [min, max] MIDI note numbers a given instrument can actually
+// sound reasonably (i.e. the span of its real recorded samples — playback
+// still works well outside this via pitch-shifting, but staying inside it
+// keeps the pitch-shift modest so the timbre stays faithful). Piano covers
+// the app's full two-octave C4-C6 keyboard natively. Returns null for an
+// instrument with no sample-based range info (e.g. "drum", which isn't
+// pitched at all).
+export function getInstrumentMidiRange(instrumentId) {
+  if (instrumentId === "piano") return { min: noteToMidi("C4"), max: noteToMidi("C6") };
+  const config = SAMPLE_INSTRUMENTS[instrumentId];
+  if (!config || !config.samples.length) return null;
+  const midis = config.samples.map((s) => s.midi);
+  return { min: Math.min(...midis), max: Math.max(...midis) };
+}
+
+// Shifts an entire song's note sequence by whole octaves (never per-note —
+// that would distort the melody's shape) so it sits as close as possible to
+// the center of `instrumentId`'s real playable range. Used so "learn to
+// play the song" plays every pitched instrument (violin, guitar, flute,
+// etc.) in a register that's actually faithful to its real samples, instead
+// of the piano-specific C4-C6 range pianoSongs.json was authored against.
+// Piano and unknown/unpitched instruments (drum) are returned unchanged.
+export function transposeNotesToRange(notes, instrumentId) {
+  const range = getInstrumentMidiRange(instrumentId);
+  if (!range || instrumentId === "piano") return notes;
+  const midis = notes.map(noteToMidi).filter((m) => m != null);
+  if (!midis.length) return notes;
+  const songCenter = (Math.min(...midis) + Math.max(...midis)) / 2;
+  const rangeCenter = (range.min + range.max) / 2;
+  const shiftOctaves = Math.round((rangeCenter - songCenter) / 12);
+  if (!shiftOctaves) return notes;
+  return notes.map((note) => {
+    const midi = noteToMidi(note);
+    return midi == null ? note : midiToNote(midi + shiftOctaves * 12);
+  });
+}
 
 // instrumentId -> file -> Promise<AudioBuffer|null>, one cache Map per
 // instrument (mirrors pianoBufferCache above).
@@ -560,21 +669,20 @@ function playViolinNote(ctx, freq, duration) {
   startStopVoice(voice, now, now + duration + 0.2);
 }
 
-function playViolaNote(ctx, freq, duration) {
-  // Bowed string like the violin, but pitched and voiced to sound like the
-  // viola's darker, larger body: the same freq is dropped an octave first
-  // (violas are read/played roughly an octave below where a violin note of
-  // the same on-screen key would sit) plus a lower lowpass cutoff (less
-  // top-end shimmer than the violin), a slower/deeper vibrato, and a softer
-  // sub-octave layer for extra body weight.
+// Fallback synth voice for cello (used only if the real sample fails to
+// load/decode) — same bowed-string technique as the violin, but the freq is
+// dropped an octave first (cello notes at the same on-screen key sit an
+// octave below the violin's) plus a lower lowpass cutoff (less top-end
+// shimmer) and a slower/deeper vibrato, for a darker, larger-body tone.
+function playCelloNote(ctx, freq, duration) {
   const now = ctx.currentTime;
-  const violaFreq = freq / 2;
-  const voice = buildVoice(ctx, violaFreq, { type: "sawtooth", detuneCents: 7, subLevel: 0.28, filterFreq: 1900, satAmount: 0.12 });
+  const celloFreq = freq / 2;
+  const voice = buildVoice(ctx, celloFreq, { type: "sawtooth", detuneCents: 7, subLevel: 0.28, filterFreq: 1900, satAmount: 0.12 });
   const vibrato = ctx.createOscillator();
   const vibratoGain = ctx.createGain();
   vibrato.type = "sine";
   vibrato.frequency.value = 5;
-  vibratoGain.gain.value = violaFreq * 0.007;
+  vibratoGain.gain.value = celloFreq * 0.007;
   vibrato.connect(vibratoGain);
   voice.oscillators.slice(0, 2).forEach((osc) => vibratoGain.connect(osc.frequency));
   const gain = ctx.createGain();
@@ -590,101 +698,73 @@ function playViolaNote(ctx, freq, duration) {
   startStopVoice(voice, now, now + duration + 0.22);
 }
 
-function playCavaquinhoNote(ctx, freq, duration) {
-  // Bright plucked timbre: layered sawtooth through a higher lowpass cutoff
-  // than the guitar (more high-frequency content, small-body "jangly"
-  // sound) and a faster decay, since a cavaquinho's strings ring out
-  // quickly. Kept a lighter sub-layer than the guitar to stay bright.
+// Fallback synth voice for trumpet — bright, brassy square/sawtooth blend
+// with a fast, punchy attack (a real trumpet note "speaks" almost
+// instantly) and a small upward pitch scoop at the very start, mimicking
+// a brass player's attack articulation.
+function playTrumpetNote(ctx, freq, duration) {
   const now = ctx.currentTime;
-  const voice = buildVoice(ctx, freq, { type: "sawtooth", detuneCents: 8, subLevel: 0.08, filterFreq: 4200, satAmount: 0.12 });
+  const sustain = Math.max(duration, 0.35);
+  const voice = buildVoice(ctx, freq, { type: "sawtooth", detuneCents: 6, subLevel: 0.08, filterFreq: freq * 5, satAmount: 0.25 });
+  voice.oscillators[0].frequency.setValueAtTime(freq * 0.97, now);
+  voice.oscillators[0].frequency.exponentialRampToValueAtTime(freq, now + 0.035);
   const gain = ctx.createGain();
   gain.gain.setValueAtTime(0, now);
-  gain.gain.linearRampToValueAtTime(0.24, now + 0.004);
-  gain.gain.exponentialRampToValueAtTime(0.001, now + Math.min(duration, 0.28));
-  voice.output.connect(gain);
-  connectWithReverb(ctx, gain, 1);
-  startStopVoice(voice, now, now + 0.35);
-}
-
-function playPortugueseGuitarNote(ctx, freq, duration) {
-  // Distinct metallic/ringing plucked timbre for the "guitarra portuguesa":
-  // detuned square waves (harder, more nasal edge than the guitar's
-  // sawtooth or the cavaquinho's soft sawtooth) through a resonant bandpass
-  // filter that emphasises upper harmonics, with a long, slowly fading ring.
-  const now = ctx.currentTime;
-  const sustain = Math.max(duration, 0.6);
-  const voice = buildVoice(ctx, freq, { type: "square", detuneCents: 5, subLevel: 0.06, filterFreq: freq * 4, satAmount: 0.1 });
-  const bandpass = ctx.createBiquadFilter();
-  bandpass.type = "bandpass";
-  bandpass.frequency.value = freq * 3;
-  bandpass.Q.value = 4;
-  const gain = ctx.createGain();
-  gain.gain.setValueAtTime(0, now);
-  gain.gain.linearRampToValueAtTime(0.16, now + 0.003);
-  gain.gain.exponentialRampToValueAtTime(0.001, now + sustain);
-  voice.output.connect(bandpass);
-  bandpass.connect(gain);
-  connectWithReverb(ctx, gain, 1);
-  startStopVoice(voice, now, now + sustain + 0.05);
-}
-
-function playAccordionNote(ctx, freq, duration) {
-  // Reed-like sustained tone: layered square waves through a lowpass
-  // filter, a slower attack than piano, and a gentle tremolo (amplitude
-  // LFO) approximating the "breathing" of accordion bellows.
-  const now = ctx.currentTime;
-  const sustain = Math.max(duration, 0.7);
-  const voice = buildVoice(ctx, freq, { type: "square", detuneCents: 4, subLevel: 0.15, filterFreq: 1800, satAmount: 0.06 });
-  const gain = ctx.createGain();
-  const tremolo = ctx.createOscillator();
-  const tremoloGain = ctx.createGain();
-  tremolo.type = "sine";
-  tremolo.frequency.value = 5;
-  tremoloGain.gain.value = 0.04;
-  tremolo.connect(tremoloGain);
-  gain.gain.setValueAtTime(0, now);
-  gain.gain.linearRampToValueAtTime(0.16, now + 0.12);
-  gain.gain.linearRampToValueAtTime(0.14, now + sustain - 0.15);
-  gain.gain.linearRampToValueAtTime(0, now + sustain + 0.1);
-  tremoloGain.connect(gain.gain);
-  voice.output.connect(gain);
-  connectWithReverb(ctx, gain, 1);
-  tremolo.start(now);
-  tremolo.stop(now + sustain + 0.15);
-  scheduledNodes.push(tremolo);
-  startStopVoice(voice, now, now + sustain + 0.15);
-}
-
-function playConcertinaNote(ctx, freq, duration) {
-  // Same reedy family as the accordion but higher/brighter: layered
-  // sawtooth (more harmonic content than the accordion's square) through a
-  // brighter filter cutoff, a snappier attack, and a faster, shallower
-  // tremolo.
-  const now = ctx.currentTime;
-  const sustain = Math.max(duration, 0.55);
-  const voice = buildVoice(ctx, freq, { type: "sawtooth", detuneCents: 5, subLevel: 0.1, filterFreq: 3000, satAmount: 0.08 });
-  const gain = ctx.createGain();
-  const tremolo = ctx.createOscillator();
-  const tremoloGain = ctx.createGain();
-  tremolo.type = "sine";
-  tremolo.frequency.value = 7.5;
-  tremoloGain.gain.value = 0.025;
-  tremolo.connect(tremoloGain);
-  gain.gain.setValueAtTime(0, now);
-  gain.gain.linearRampToValueAtTime(0.15, now + 0.05);
-  gain.gain.linearRampToValueAtTime(0.12, now + sustain - 0.12);
+  gain.gain.linearRampToValueAtTime(0.24, now + 0.02);
+  gain.gain.linearRampToValueAtTime(0.19, now + Math.max(sustain - 0.1, 0.1));
   gain.gain.linearRampToValueAtTime(0, now + sustain + 0.08);
-  tremoloGain.connect(gain.gain);
   voice.output.connect(gain);
   connectWithReverb(ctx, gain, 1);
-  tremolo.start(now);
-  tremolo.stop(now + sustain + 0.12);
-  scheduledNodes.push(tremolo);
+  startStopVoice(voice, now, now + sustain + 0.08);
+}
+
+// Fallback synth voice for clarinet — hollow, reedy tone: a square wave
+// (square waves are dominated by odd harmonics, the classic clarinet
+// "hollow" signature) with a soft, slightly delayed attack and no vibrato
+// (an unaccompanied clarinet note is usually played straight).
+function playClarinetNote(ctx, freq, duration) {
+  const now = ctx.currentTime;
+  const sustain = Math.max(duration, 0.45);
+  const voice = buildVoice(ctx, freq, { type: "square", detuneCents: 3, subLevel: 0.1, filterFreq: 2400, satAmount: 0.05 });
+  const gain = ctx.createGain();
+  gain.gain.setValueAtTime(0, now);
+  gain.gain.linearRampToValueAtTime(0.18, now + 0.08);
+  gain.gain.linearRampToValueAtTime(0.15, now + Math.max(sustain - 0.12, 0.15));
+  gain.gain.linearRampToValueAtTime(0, now + sustain + 0.1);
+  voice.output.connect(gain);
+  connectWithReverb(ctx, gain, 1);
+  startStopVoice(voice, now, now + sustain + 0.1);
+}
+
+// Fallback synth voice for saxophone — reedy but rounder/brighter than the
+// clarinet: layered sawtooth (more overtones than the clarinet's square)
+// with a light, fast vibrato and a slightly breathy soft attack.
+function playSaxophoneNote(ctx, freq, duration) {
+  const now = ctx.currentTime;
+  const sustain = Math.max(duration, 0.4);
+  const voice = buildVoice(ctx, freq, { type: "sawtooth", detuneCents: 5, subLevel: 0.14, filterFreq: 2800, satAmount: 0.1 });
+  const vibrato = ctx.createOscillator();
+  const vibratoGain = ctx.createGain();
+  vibrato.type = "sine";
+  vibrato.frequency.value = 5.8;
+  vibratoGain.gain.value = freq * 0.008;
+  vibrato.connect(vibratoGain);
+  voice.oscillators.slice(0, 2).forEach((osc) => vibratoGain.connect(osc.frequency));
+  const gain = ctx.createGain();
+  gain.gain.setValueAtTime(0, now);
+  gain.gain.linearRampToValueAtTime(0.2, now + 0.05);
+  gain.gain.linearRampToValueAtTime(0.16, now + Math.max(sustain - 0.1, 0.15));
+  gain.gain.linearRampToValueAtTime(0, now + sustain + 0.1);
+  voice.output.connect(gain);
+  connectWithReverb(ctx, gain, 1);
+  vibrato.start(now);
+  vibrato.stop(now + sustain + 0.12);
+  scheduledNodes.push(vibrato);
   startStopVoice(voice, now, now + sustain + 0.12);
 }
 
 function playHarpNote(ctx, freq, duration) {
-  // Plucked-string family like guitar/cavaquinho, but sparklier and more
+  // Plucked-string family like guitar, but sparklier and more
   // resonant: a triangle fundamental plus a slightly detuned sine an octave
   // up (the detune creates a soft shimmering beat), and a long smooth
   // exponential decay for a resonant "ring" the others don't have.
@@ -740,19 +820,118 @@ function playNoiseBurst(ctx, { filterType = "bandpass", freq = 800, q = 1, durat
   scheduledNodes.push(noise);
 }
 
-const DRUM_PAD_SOUNDS = {
-  kick: { filterType: "lowpass", freq: 120, q: 0.7, duration: 0.28, gainValue: 0.55 },
-  snare: { filterType: "highpass", freq: 900, q: 0.8, duration: 0.18, gainValue: 0.4 },
-  hihat: { filterType: "highpass", freq: 6000, q: 0.6, duration: 0.08, gainValue: 0.25 },
-  tom: { filterType: "bandpass", freq: 300, q: 1.2, duration: 0.22, gainValue: 0.45 },
-};
+// A short pitch-enveloped oscillator "body" layered under a drum's noise
+// burst — the technique real kick/tom synthesis relies on (a sine that
+// glides sharply downward in pitch reads as a resonant drum shell), which a
+// flat-frequency filtered-noise burst alone can't reproduce.
+function playPitchedThump(ctx, { startFreq, endFreq, duration, gainValue, glideTime }) {
+  const now = ctx.currentTime;
+  const osc = ctx.createOscillator();
+  osc.type = "sine";
+  osc.frequency.setValueAtTime(startFreq, now);
+  osc.frequency.exponentialRampToValueAtTime(Math.max(endFreq, 1), now + glideTime);
+  const gain = ctx.createGain();
+  gain.gain.setValueAtTime(gainValue, now);
+  gain.gain.exponentialRampToValueAtTime(0.001, now + duration);
+  osc.connect(gain);
+  connectWithReverb(ctx, gain, 1);
+  osc.start(now);
+  osc.stop(now + duration + 0.02);
+  scheduledNodes.push(osc);
+}
 
+// Per-drum-type synthesis fallback, each tuned to that drum's real acoustic
+// behaviour instead of one generic filtered-noise burst for everything:
+//   - kick: fast downward pitch sweep (150Hz -> 45Hz) for the shell "thump",
+//     plus a very short low-passed noise click for the beater attack.
+//   - snare: filtered noise "snap" (the wires) layered with a short ~190Hz
+//     tone (the shell) for body under the snap.
+//   - hihat: bright, very short high-passed/bandpassed noise only — no tonal
+//     body, since a hi-hat's sound is almost entirely metallic shimmer.
+//   - tom: same pitch-sweep idea as the kick but higher and slower (220Hz ->
+//     110Hz), so it reads as a bigger drum than the kick without being a
+//     copy of it.
+function playDrumSynth(padId) {
+  const ctx = getContext();
+  if (!ctx) return;
+  switch (padId) {
+    case "kick":
+      playPitchedThump(ctx, { startFreq: 150, endFreq: 45, duration: 0.32, gainValue: 0.6, glideTime: 0.09 });
+      playNoiseBurst(ctx, { filterType: "lowpass", freq: 400, q: 0.5, duration: 0.03, gainValue: 0.25 });
+      break;
+    case "snare":
+      playPitchedThump(ctx, { startFreq: 190, endFreq: 150, duration: 0.09, gainValue: 0.22, glideTime: 0.03 });
+      playNoiseBurst(ctx, { filterType: "bandpass", freq: 2200, q: 0.9, duration: 0.16, gainValue: 0.42 });
+      break;
+    case "hihat":
+      playNoiseBurst(ctx, { filterType: "highpass", freq: 7000, q: 0.7, duration: 0.06, gainValue: 0.22 });
+      playNoiseBurst(ctx, { filterType: "bandpass", freq: 9500, q: 3, duration: 0.09, gainValue: 0.14 });
+      break;
+    case "tom":
+    default:
+      playPitchedThump(ctx, { startFreq: 220, endFreq: 110, duration: 0.34, gainValue: 0.5, glideTime: 0.14 });
+      playNoiseBurst(ctx, { filterType: "bandpass", freq: 350, q: 1, duration: 0.08, gainValue: 0.15 });
+      break;
+  }
+}
+
+// --- Real drum samples (with synthesis fallback) ----------------------------
+// One real recorded one-shot hit per pad (Sonic Pi sample library, CC0-1.0,
+// bundled locally under public/audio/drum/ — see NOTICE.md there for full
+// provenance). Unlike the pitched instruments above, a real drum kit doesn't
+// retune per key, so these play back at a fixed rate — no
+// note-to-frequency/playbackRate math needed, just load-once-and-play.
+const DRUM_PAD_FILES = {
+  kick: { file: "kick.flac", peak: 0.6, tail: 0.6 },
+  snare: { file: "snare.flac", peak: 0.5, tail: 0.5 },
+  hihat: { file: "hihat.flac", peak: 0.4, tail: 0.4 },
+  tom: { file: "tom.flac", peak: 0.55, tail: 0.6 },
+};
+const DRUM_SAMPLE_BASE = "/audio/drum/";
+const drumBufferCache = new Map();
+
+function loadDrumBuffer(ctx, file) {
+  if (drumBufferCache.has(file)) return drumBufferCache.get(file);
+  const promise = fetch(DRUM_SAMPLE_BASE + file)
+    .then((res) => {
+      if (!res.ok) throw new Error("drum sample fetch failed: " + file);
+      return res.arrayBuffer();
+    })
+    .then((data) => new Promise((resolve, reject) => ctx.decodeAudioData(data, resolve, reject)))
+    .catch(() => null);
+  drumBufferCache.set(file, promise);
+  return promise;
+}
+
+// Plays a real recorded drum-pad hit, falling back to the synthesized noise
+// burst (playNoiseBurst) if no sample is configured for this pad or the
+// fetch/decode failed.
 export function playDrumPad(padId) {
   const ctx = getContext();
   if (!ctx) return;
   if (ctx.state === "suspended") ctx.resume();
-  const sound = DRUM_PAD_SOUNDS[padId] || DRUM_PAD_SOUNDS.tom;
-  playNoiseBurst(ctx, sound);
+  const sample = DRUM_PAD_FILES[padId];
+  if (!sample) {
+    playDrumSynth(padId);
+    return;
+  }
+  loadDrumBuffer(ctx, sample.file).then((buffer) => {
+    if (!buffer) {
+      playDrumSynth(padId);
+      return;
+    }
+    const now = ctx.currentTime;
+    const source = ctx.createBufferSource();
+    source.buffer = buffer;
+    const gain = ctx.createGain();
+    gain.gain.setValueAtTime(sample.peak, now);
+    gain.gain.exponentialRampToValueAtTime(0.001, now + buffer.duration + sample.tail);
+    source.connect(gain);
+    connectWithReverb(ctx, gain, 1);
+    source.start(now);
+    source.stop(now + buffer.duration + sample.tail + 0.05);
+    scheduledNodes.push(source);
+  });
 }
 
 // Plays a single pitched note with the given instrument's timbre. `drum`
@@ -778,26 +957,26 @@ export function playInstrumentNote(instrument, note, duration = 0.5) {
     case "violin":
       playSampledNote("violin", ctx, note, freq, duration, playViolinNote);
       break;
-    case "viola":
-      playViolaNote(ctx, freq, duration);
+    case "cello":
+      playSampledNote("cello", ctx, note, freq, duration, playCelloNote);
       break;
-    case "cavaquinho":
-      playCavaquinhoNote(ctx, freq, duration);
+    case "trumpet":
+      playSampledNote("trumpet", ctx, note, freq, duration, playTrumpetNote);
       break;
-    case "portugueseGuitar":
-      playPortugueseGuitarNote(ctx, freq, duration);
+    case "clarinet":
+      playSampledNote("clarinet", ctx, note, freq, duration, playClarinetNote);
       break;
-    case "accordion":
-      playAccordionNote(ctx, freq, duration);
-      break;
-    case "concertina":
-      playConcertinaNote(ctx, freq, duration);
+    case "saxophone":
+      playSampledNote("saxophone", ctx, note, freq, duration, playSaxophoneNote);
       break;
     case "harp":
-      playHarpNote(ctx, freq, duration);
+      playSampledNote("harp", ctx, note, freq, duration, playHarpNote);
       break;
     case "drum":
-      playNoiseBurst(ctx, { filterType: "bandpass", freq: freq / 2, q: 1, duration: 0.2, gainValue: 0.4 });
+      // Drums use pads (DRUM_PADS) rather than the musical scale in the UI;
+      // this pitched-note path exists only for API completeness, so pick
+      // the pad whose synthesized register loosely tracks the note's pitch.
+      playDrumSynth(freq > 440 ? "hihat" : freq > 300 ? "snare" : "tom");
       break;
     case "piano":
     default:
@@ -852,4 +1031,108 @@ export function stopBackgroundMusic() {
     }
   });
   scheduledNodes = [];
+}
+
+// --- "Zen" ambient background loop for quiet/contemplative games -----------
+// Separate from startBackgroundMusic() above (the Music page's upbeat looped
+// melody): this is a soft, slow, melodically-inert pad drone meant to sit
+// almost unnoticed under a board game or a treasure-hunt maze. A handful of
+// long, gently overlapping sine/triangle pad tones drawn from a calm chord
+// (no percussion, no melody to "follow"), each faded in/out over several
+// seconds so nothing ever starts or stops abruptly. Kept on its own gain
+// node (zenMasterGain) so callers can duck it (see duckZenAmbience below)
+// while a SpeakButton/HelpButton narration plays, without touching any other
+// audio in the app.
+const ZEN_CHORD = [130.81, 164.81, 196.0, 261.63]; // soft C3-E3-G3-C4 pad
+let zenMasterGain = null;
+let zenTimer = null;
+let zenVoices = [];
+
+function scheduleZenPad(ctx, freq, startTime, duration) {
+  const osc = ctx.createOscillator();
+  osc.type = "sine";
+  osc.frequency.value = freq;
+  const detuned = ctx.createOscillator();
+  detuned.type = "sine";
+  detuned.frequency.value = freq;
+  detuned.detune.value = 4;
+  const gain = ctx.createGain();
+  const peak = 0.045;
+  gain.gain.setValueAtTime(0, startTime);
+  gain.gain.linearRampToValueAtTime(peak, startTime + duration * 0.35);
+  gain.gain.linearRampToValueAtTime(peak, startTime + duration * 0.6);
+  gain.gain.linearRampToValueAtTime(0, startTime + duration);
+  osc.connect(gain);
+  detuned.connect(gain);
+  gain.connect(zenMasterGain);
+  osc.start(startTime);
+  detuned.start(startTime);
+  osc.stop(startTime + duration + 0.1);
+  detuned.stop(startTime + duration + 0.1);
+  zenVoices.push(osc, detuned);
+}
+
+// Starts the zen ambient loop. Like every other sound in this app, this must
+// only ever be called from an explicit tap (e.g. a toggle button the child
+// or parent presses) — never automatically on page load — both to respect
+// the "audio only after a tap" product rule and because browsers block
+// audio autoplay before a user gesture anyway.
+export function startZenAmbience() {
+  const ctx = getContext();
+  if (!ctx) return;
+  if (ctx.state === "suspended") ctx.resume();
+  stopZenAmbience();
+
+  zenMasterGain = ctx.createGain();
+  zenMasterGain.gain.value = 1;
+  zenMasterGain.connect(ctx.destination);
+
+  const padDuration = 6; // seconds per overlapping pad swell
+  const cycleMs = padDuration * 1000 * 0.6;
+
+  function scheduleCycle() {
+    const now = ctx.currentTime + 0.05;
+    // Pick 2 notes from the chord each cycle so the drone slowly shifts
+    // color instead of holding one static chord forever.
+    const notes = [...ZEN_CHORD].sort(() => Math.random() - 0.5).slice(0, 2);
+    notes.forEach((freq, i) => scheduleZenPad(ctx, freq, now + i * 0.4, padDuration));
+  }
+
+  scheduleCycle();
+  zenTimer = window.setInterval(scheduleCycle, cycleMs);
+}
+
+export function stopZenAmbience() {
+  if (zenTimer) {
+    window.clearInterval(zenTimer);
+    zenTimer = null;
+  }
+  zenVoices.forEach((osc) => {
+    try {
+      osc.stop();
+    } catch {
+      // already stopped
+    }
+  });
+  zenVoices = [];
+  zenMasterGain = null;
+}
+
+// Briefly lowers the zen ambient volume (e.g. while a SpeakButton/HelpButton
+// narration plays) and restores it after `ms`, so spoken audio always stays
+// clearly audible over the background pad. No-op if the ambience isn't
+// currently playing.
+export function duckZenAmbience(ms = 2500) {
+  if (!zenMasterGain) return;
+  const ctx = getContext();
+  if (!ctx) return;
+  const now = ctx.currentTime;
+  zenMasterGain.gain.cancelScheduledValues(now);
+  zenMasterGain.gain.setValueAtTime(zenMasterGain.gain.value, now);
+  zenMasterGain.gain.linearRampToValueAtTime(0.25, now + 0.15);
+  zenMasterGain.gain.linearRampToValueAtTime(1, now + ms / 1000);
+}
+
+export function isZenAmbiencePlaying() {
+  return !!zenTimer;
 }

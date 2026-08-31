@@ -61,5 +61,56 @@
     "steps": [
       "Die Feuerwehr hilft, Brände zu löschen, Menschen und Tiere zu retten und in Notfällen zu helfen. Sie ist immer bereit, mit Fahrzeug und Ausrüstung vorbereitet, um so schnell wie möglich bei denen zu sein, die Hilfe brauchen."
     ]
+  },
+  {
+    "id": "iluminacao",
+    "icon": "🔆",
+    "name": "Straßenbeleuchtung",
+    "prompt": "🔆 Wie schalten sich die Straßenlaternen ein, wenn es dunkel wird?",
+    "steps": [
+      "1. Lichtsensoren erkennen, wenn die Sonne untergeht und der Himmel dunkel wird.",
+      "2. Ein zentrales System schaltet automatisch Tausende von Laternen gleichzeitig ein.",
+      "3. Der Strom fließt durch dieselben Kabel, die auch die Häuser versorgen.",
+      "4. Die Straßen werden beleuchtet, wodurch sie nachts sicherer zum Gehen und Fahren sind."
+    ]
+  },
+  {
+    "id": "internet",
+    "icon": "🌐",
+    "name": "Internet & Telekommunikation",
+    "prompt": "🌐 Wie hat die ganze Stadt gleichzeitig Internet?",
+    "steps": [
+      "1. Sehr lange Glasfaserkabel verbinden die Stadt mit einem größeren Netz, das das ganze Land und die Welt erreicht.",
+      "2. Antennen und Sendemasten in der ganzen Stadt senden drahtlose Signale an Telefone und Häuser.",
+      "3. Ein Rechenzentrum speichert und ordnet alle Informationen, die durch das Netz reisen.",
+      "4. So können Tausende Menschen gleichzeitig das Internet nutzen, ohne dass das Netz ausfällt."
+    ]
+  },
+  {
+    "id": "parques",
+    "icon": "🌳",
+    "name": "Parks & Grünflächen",
+    "prompt": "🌳 Wer entscheidet, wo die Parks und Bäume der Stadt stehen?",
+    "steps": [
+      "Stadtplaner und Ingenieure wählen Flächen für Parks, Gärten und Bäume aus, damit Menschen Orte zum Spielen, Spazierengehen und für frischere Luft haben. Bäume helfen auch, die Stadt abzukühlen und die Luft, die wir atmen, zu reinigen."
+    ]
+  },
+  {
+    "id": "policia",
+    "icon": "👮",
+    "name": "Polizei",
+    "prompt": "👮 Was tun Polizisten, um die Stadt sicher zu halten?",
+    "steps": [
+      "Die Polizei sorgt für sichere Straßen, regelt den Verkehr, hilft Menschen, die sich verirrt haben, und reagiert schnell, wenn jemand in einem Notfall Hilfe braucht. Sie ist immer in der Nähe, damit sich alle sicherer fühlen."
+    ]
+  },
+  {
+    "id": "escolas",
+    "icon": "🏫",
+    "name": "Schulen",
+    "prompt": "🏫 Wie organisiert die Stadt Schulen für so viele Kinder?",
+    "steps": [
+      "Die Stadt baut Schulen in verschiedenen Vierteln, damit Kinder nicht weit reisen müssen. Lehrer bereiten jeden Tag Unterricht vor, um jedem Kind beim Lernen und Wachsen zu helfen."
+    ]
   }
 ]

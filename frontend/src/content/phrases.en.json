@@ -1,10 +1,142 @@
 [
-  { "phrase": "THE SUN IS YELLOW.", "emoji": "☀️", "hint": "The sun is yellow." },
-  { "phrase": "THE CAT SLEEPS.", "emoji": "🐱", "hint": "The cat sleeps." },
-  { "phrase": "I LIKE YOU.", "emoji": "❤️", "hint": "I like you." },
-  { "phrase": "THE MOON IS ROUND.", "emoji": "🌙", "hint": "The moon is round." },
-  { "phrase": "THE DOG RUNS IN THE GARDEN.", "emoji": "🐶", "hint": "The dog runs in the garden." },
-  { "phrase": "I AM HAPPY.", "emoji": "😄", "hint": "I am happy." },
-  { "phrase": "THE APPLE IS RED.", "emoji": "🍎", "hint": "The apple is red." },
-  { "phrase": "LET'S PLAY.", "emoji": "🧸", "hint": "Let's play." }
+  {
+    "phrase": "THE SUN IS YELLOW.",
+    "emoji": "☀️",
+    "hint": "The sun is yellow."
+  },
+  {
+    "phrase": "THE CAT SLEEPS.",
+    "emoji": "🐱",
+    "hint": "The cat sleeps."
+  },
+  {
+    "phrase": "I LIKE YOU.",
+    "emoji": "❤️",
+    "hint": "I like you."
+  },
+  {
+    "phrase": "THE MOON IS ROUND.",
+    "emoji": "🌙",
+    "hint": "The moon is round."
+  },
+  {
+    "phrase": "THE DOG RUNS IN THE GARDEN.",
+    "emoji": "🐶",
+    "hint": "The dog runs in the garden."
+  },
+  {
+    "phrase": "I AM HAPPY.",
+    "emoji": "😄",
+    "hint": "I am happy."
+  },
+  {
+    "phrase": "THE APPLE IS RED.",
+    "emoji": "🍎",
+    "hint": "The apple is red."
+  },
+  {
+    "phrase": "LET'S PLAY.",
+    "emoji": "🧸",
+    "hint": "Let's play."
+  },
+  {
+    "phrase": "MY MOM SINGS.",
+    "emoji": "🎤",
+    "hint": "My mom sings."
+  },
+  {
+    "phrase": "MY DAD WORKS.",
+    "emoji": "👷",
+    "hint": "My dad works."
+  },
+  {
+    "phrase": "GRANDMA MAKES COOKIES.",
+    "emoji": "🍪",
+    "hint": "Grandma makes cookies."
+  },
+  {
+    "phrase": "BROTHER STUDIES.",
+    "emoji": "📚",
+    "hint": "Brother studies."
+  },
+  {
+    "phrase": "THE GIRL GOES TO SCHOOL.",
+    "emoji": "🎒",
+    "hint": "The girl goes to school."
+  },
+  {
+    "phrase": "THE TEACHER TEACHES.",
+    "emoji": "👩‍🏫",
+    "hint": "The teacher teaches."
+  },
+  {
+    "phrase": "WHO IS YOUR FRIEND?",
+    "emoji": "🧑‍🤝‍🧑",
+    "hint": "Who is your friend?"
+  },
+  {
+    "phrase": "DO YOU LIKE PIZZA?",
+    "emoji": "🍕",
+    "hint": "Do you like pizza?"
+  },
+  {
+    "phrase": "I EAT BREAD FOR BREAKFAST.",
+    "emoji": "🍞",
+    "hint": "I eat bread for breakfast."
+  },
+  {
+    "phrase": "THE SOUP IS HOT.",
+    "emoji": "🍲",
+    "hint": "The soup is hot."
+  },
+  {
+    "phrase": "WHAT DAY IS IT TODAY?",
+    "emoji": "📅",
+    "hint": "What day is it today?"
+  },
+  {
+    "phrase": "IT IS RAINING.",
+    "emoji": "🌧️",
+    "hint": "It is raining."
+  },
+  {
+    "phrase": "IT IS VERY HOT.",
+    "emoji": "🥵",
+    "hint": "It is very hot."
+  },
+  {
+    "phrase": "THERE IS SNOW ON THE MOUNTAIN.",
+    "emoji": "⛄",
+    "hint": "There is snow on the mountain."
+  },
+  {
+    "phrase": "THE FISH SWIMS IN THE SEA.",
+    "emoji": "🐠",
+    "hint": "The fish swims in the sea."
+  },
+  {
+    "phrase": "THE BIRD SINGS IN THE TREE.",
+    "emoji": "🐦",
+    "hint": "The bird sings in the tree."
+  },
+  {
+    "phrase": "THE BUTTERFLY FLIES.",
+    "emoji": "🦋",
+    "hint": "The butterfly flies."
+  },
+  {
+    "phrase": "I AM SCARED.",
+    "emoji": "😨",
+    "hint": "I am scared."
+  },
+  {
+    "phrase": "I AM TIRED.",
+    "emoji": "😴",
+    "hint": "I am tired."
+  },
+  {
+    "phrase": "TODAY I AM SAD.",
+    "emoji": "😢",
+    "hint": "Today i am sad."
+  }
 ]

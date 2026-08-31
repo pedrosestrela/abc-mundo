@@ -1,0 +1,101 @@
+[
+  {
+    "id": "ancestral-comum",
+    "period": "il y a ~7 millions d'années",
+    "title": "Un ancêtre commun",
+    "emoji": "🌳",
+    "brainSizeCm3": 350,
+    "heightCm": 120,
+    "description": "Il y a plusieurs millions d'années, des primates vivaient en Afrique et étaient les ancêtres communs des humains et des chimpanzés d'aujourd'hui. Avec le temps, différents groupes se sont séparés et ont changé très lentement — c'est ce qu'on appelle l'évolution.",
+    "keyDevelopment": "Vie dans les arbres, en groupes, dans les forêts d'Afrique.",
+    "funFact": "Les humains et les chimpanzés partagent un ancêtre commun, mais cela ne veut pas dire que nous descendons des chimpanzés — nous sommes plutôt comme des cousins très éloignés !"
+  },
+  {
+    "id": "australopithecus",
+    "period": "il y a ~4 millions d'années",
+    "title": "Australopithèque (comme \"Lucy\")",
+    "emoji": "🚶",
+    "brainSizeCm3": 450,
+    "heightCm": 110,
+    "description": "L'Australopithèque marchait déjà debout sur deux jambes, même s'il passait encore du temps dans les arbres. L'un des squelettes les plus célèbres de ce groupe s'appelle \"Lucy\" et a été découvert en Éthiopie, en Afrique.",
+    "keyDevelopment": "Marche debout sur deux jambes (bipédie).",
+    "funFact": "Marcher sur deux jambes a libéré les mains — cela deviendra très important plus tard pour utiliser des outils !"
+  },
+  {
+    "id": "homo-habilis",
+    "period": "il y a ~2,4 millions d'années",
+    "title": "Homo habilis, l'\"homme habile\"",
+    "emoji": "🪨",
+    "brainSizeCm3": 610,
+    "heightCm": 130,
+    "description": "Homo habilis fut l'un des premiers à fabriquer volontairement des outils en pierre, en taillant des pierres pour créer des bords tranchants. Son cerveau commençait à devenir plus grand que celui de ses ancêtres.",
+    "keyDevelopment": "Fabrication et utilisation d'outils en pierre simples.",
+    "funFact": "Le nom \"habilis\" signifie \"habile\" — il lui a été donné à cause de ses outils en pierre !"
+  },
+  {
+    "id": "homo-erectus",
+    "period": "il y a ~1,9 million d'années",
+    "title": "Homo erectus, le grand voyageur",
+    "emoji": "🔥",
+    "brainSizeCm3": 900,
+    "heightCm": 165,
+    "description": "Homo erectus avait un corps assez semblable au nôtre et fut le premier à quitter l'Afrique, se répandant en Asie et en Europe. Il a aussi appris à maîtriser le feu, ce qui a tout changé : chaleur, lumière et protection contre les animaux.",
+    "keyDevelopment": "Maîtrise du feu et migration hors d'Afrique.",
+    "funFact": "Cuire les aliments avec le feu a aidé le corps à tirer plus d'énergie de la nourriture — c'est peut-être pour ça que le cerveau a pu grandir encore plus !"
+  },
+  {
+    "id": "neandertais",
+    "period": "il y a ~400 000 à 40 000 ans",
+    "title": "Les Néandertaliens, des cousins proches",
+    "emoji": "🦴",
+    "brainSizeCm3": 1500,
+    "heightCm": 165,
+    "description": "Les Néandertaliens ont vécu en Europe et en Asie en même temps que les premiers Homo sapiens, et les deux groupes se sont même parfois croisés. Les Néandertaliens forment leur propre branche de notre arbre généalogique — des parents proches, mais pas nos ancêtres directs. Ils étaient forts et intelligents, prenaient soin des malades et enterraient leurs morts.",
+    "keyDevelopment": "Vie en groupe, entraide et survie dans des climats froids.",
+    "funFact": "Beaucoup de gens aujourd'hui portent un petit peu d'ADN néandertalien, hérité de l'époque où les deux groupes se sont croisés !"
+  },
+  {
+    "id": "homo-sapiens",
+    "period": "il y a ~300 000 ans",
+    "title": "Homo sapiens, nous !",
+    "emoji": "🧠",
+    "brainSizeCm3": 1350,
+    "heightCm": 170,
+    "description": "Homo sapiens — notre propre espèce — est apparu en Afrique. Nous avions un langage de plus en plus riche, la capacité de planifier, de coopérer en grands groupes et d'imaginer des choses qui n'existaient pas encore.",
+    "keyDevelopment": "Langage complexe et pensée symbolique.",
+    "funFact": "\"Homo sapiens\" signifie \"homme sage\" en latin !"
+  },
+  {
+    "id": "arte-e-cultura",
+    "period": "il y a ~70 000 à 20 000 ans",
+    "title": "L'art dans les grottes",
+    "emoji": "🎨",
+    "brainSizeCm3": 1350,
+    "heightCm": 170,
+    "description": "Les premiers humains ont commencé à peindre des animaux et des mains sur les parois des grottes, à fabriquer des colliers de coquillages et à sculpter de petites statuettes. Cela montre l'imagination, la culture et l'envie de raconter des histoires et de transmettre des idées.",
+    "keyDevelopment": "Art, symboles et transmission culturelle.",
+    "funFact": "Au Portugal, dans la vallée du Côa, il y a des gravures d'animaux à ciel ouvert réalisées il y a plus de 20 000 ans !"
+  },
+  {
+    "id": "agricultura",
+    "period": "il y a ~12 000 ans",
+    "title": "Le grand changement : l'agriculture",
+    "emoji": "🌾",
+    "brainSizeCm3": 1350,
+    "heightCm": 168,
+    "description": "Pendant des centaines de milliers d'années, les humains ont chassé et cueilli des plantes, se déplaçant d'un endroit à l'autre. Il y a environ 12 000 ans, ils ont commencé à planter des graines et à élever des animaux, et se sont installés dans des villages fixes.",
+    "keyDevelopment": "Agriculture, élevage d'animaux et vie de village.",
+    "funFact": "C'est l'agriculture qui a rendu possible la construction des premiers villages, puis plus tard des premières villes !"
+  },
+  {
+    "id": "humanos-hoje",
+    "period": "Aujourd'hui",
+    "title": "Les humains d'aujourd'hui",
+    "emoji": "🌍",
+    "brainSizeCm3": 1350,
+    "heightCm": 170,
+    "description": "Aujourd'hui, nous sommes tous la même espèce, Homo sapiens, répandue sur toute la planète. Nous continuons à changer — pas tellement dans notre corps, mais dans nos idées, notre science et notre culture, que nous héritons et construisons ensemble, génération après génération.",
+    "keyDevelopment": "Science, technologie et culture partagée dans le monde entier.",
+    "funFact": "L'évolution ne s'est pas arrêtée — elle continue, très lentement, chez tous les êtres vivants, y compris nous !"
+  }
+]

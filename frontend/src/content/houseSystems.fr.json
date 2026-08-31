@@ -70,5 +70,44 @@
     "steps": [
       "Les panneaux solaires captent la lumière du soleil et la transforment en électricité, sans fumée ni pollution. Cette énergie peut allumer les lumières, recharger des appareils, ou même être stockée dans des batteries pour l'utiliser la nuit."
     ]
+  },
+  {
+    "id": "deteccaofumo",
+    "icon": "🚨",
+    "name": "Détecteurs de fumée",
+    "prompt": "🚨 À quoi sert cet appareil rond au plafond ?",
+    "steps": [
+      "Le détecteur de fumée a un capteur qui reconnaît la fumée dans l'air. En cas d'incendie, il émet un son très fort pour avertir tout le monde rapidement, laissant le temps de quitter la maison en sécurité."
+    ]
+  },
+  {
+    "id": "isolamento",
+    "icon": "🧱",
+    "name": "Isolation",
+    "prompt": "🧱 Pourquoi certaines maisons restent-elles plus chaudes en hiver que d'autres ?",
+    "steps": [
+      "Les murs, le toit et les fenêtres peuvent avoir des matériaux isolants spéciaux, qui empêchent la chaleur de sortir en hiver et d'entrer en été. Une maison bien isolée consomme moins d'énergie pour se chauffer ou se rafraîchir."
+    ]
+  },
+  {
+    "id": "reciclagem",
+    "icon": "♻️",
+    "name": "Le recyclage à la maison",
+    "prompt": "♻️ Comment trie-t-on les déchets à la maison avant qu'ils sortent ?",
+    "steps": [
+      "1. À la maison, nous trions les déchets dans différents bacs : papier, plastique et métal, verre, et ordures ménagères.",
+      "2. Chaque type de déchet a un bac de couleur différente dehors.",
+      "3. Quand le bac à la maison est plein, quelqu'un porte le sac au bon conteneur dans la rue.",
+      "4. Cela facilite ensuite le recyclage de tout par la ville."
+    ]
+  },
+  {
+    "id": "seguranca",
+    "icon": "🔒",
+    "name": "Sécurité de la maison",
+    "prompt": "🔒 Comment la serrure de la porte protège-t-elle ta maison ?",
+    "steps": [
+      "Les serrures et les clés font en sorte que seules les bonnes personnes puissent ouvrir la porte d'entrée. Beaucoup de maisons ont aussi des sonnettes et des judas, pour voir qui est dehors avant d'ouvrir la porte."
+    ]
   }
 ]

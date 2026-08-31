@@ -2,6 +2,9 @@ import React, { Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar.jsx";
 import SessionEndOverlay from "./components/SessionEndOverlay.jsx";
+import { useTranslation } from "react-i18next";
+import { getBedtimeMode } from "./storage.js";
+import { startReminderWatcher } from "./reminders.js";
 // Home and LanguagePicker stay eager: they are the very first screen every
 // session hits, so lazy-loading them would show a loading flash before the
 // app is even usable.
@@ -55,20 +58,45 @@ const Robots = lazyWithReload(() => import("./pages/Robots.jsx"));
 const Art = lazyWithReload(() => import("./pages/Art.jsx"));
 const Science = lazyWithReload(() => import("./pages/Science.jsx"));
 const PortugalHistory = lazyWithReload(() => import("./pages/PortugalHistory.jsx"));
+const HumanEvolution = lazyWithReload(() => import("./pages/HumanEvolution.jsx"));
+const SolarSystem = lazyWithReload(() => import("./pages/SolarSystem.jsx"));
+const TechHistory = lazyWithReload(() => import("./pages/TechHistory.jsx"));
 const LifeSkills = lazyWithReload(() => import("./pages/LifeSkills.jsx"));
+const MiniChef = lazyWithReload(() => import("./pages/MiniChef.jsx"));
+const CircuitLab = lazyWithReload(() => import("./pages/CircuitLab.jsx"));
 const Computing = lazyWithReload(() => import("./pages/Computing.jsx"));
+const HowThingsWork = lazyWithReload(() => import("./pages/HowThingsWork.jsx"));
 const City = lazyWithReload(() => import("./pages/City.jsx"));
 const Mundos = lazyWithReload(() => import("./pages/Mundos.jsx"));
 const Thinking = lazyWithReload(() => import("./pages/Thinking.jsx"));
+const LearningStrategies = lazyWithReload(() => import("./pages/LearningStrategies.jsx"));
 const NatureDiary = lazyWithReload(() => import("./pages/NatureDiary.jsx"));
 const Writing = lazyWithReload(() => import("./pages/Writing.jsx"));
 const Communication = lazyWithReload(() => import("./pages/Communication.jsx"));
+const TrafficSchool = lazyWithReload(() => import("./pages/TrafficSchool.jsx"));
 
 export default function App() {
+  const { t } = useTranslation();
+
   // A successful render means the current chunk map is good — clear the
   // reload guard so a *future* deploy can still trigger one recovery reload.
   React.useEffect(() => {
     window.sessionStorage.removeItem("chunk-reload-attempted");
+  }, []);
+
+  // Starts the local "time to practice" reminder watcher (see reminders.js
+  // for why this is a foreground/recently-open check rather than real Web
+  // Push). Safe to call on every mount — it clears its own previous timer.
+  React.useEffect(() => {
+    startReminderWatcher(t);
+  }, [t]);
+
+  // Applies the persisted "Hora de Dormir" (bedtime/calm) theme choice on
+  // first load, before BedtimeToggle mounts (it also stays in sync itself
+  // once toggled). Kept as a plain attribute set rather than state so it
+  // takes effect on the very first paint with no flash of the wrong theme.
+  React.useEffect(() => {
+    document.documentElement.setAttribute("data-theme", getBedtimeMode() ? "bedtime" : "default");
   }, []);
 
   return (
@@ -87,7 +115,6 @@ export default function App() {
             <Route path="/songs" element={<Songs />} />
             <Route path="/game" element={<Game />} />
             <Route path="/music" element={<Music />} />
-            <Route path="/piano" element={<Music defaultInstrument="piano" />} />
             <Route path="/stories" element={<Stories />} />
             <Route path="/rhymes" element={<Rhymes />} />
             <Route path="/math" element={<MathGame />} />
@@ -102,13 +129,21 @@ export default function App() {
             <Route path="/art" element={<Art />} />
             <Route path="/science" element={<Science />} />
             <Route path="/history" element={<PortugalHistory />} />
+            <Route path="/human-evolution" element={<HumanEvolution />} />
+            <Route path="/solar-system" element={<SolarSystem />} />
+            <Route path="/tech-history" element={<TechHistory />} />
             <Route path="/lifeskills" element={<LifeSkills />} />
+            <Route path="/mini-chef" element={<MiniChef />} />
+            <Route path="/circuit-lab" element={<CircuitLab />} />
             <Route path="/computing" element={<Computing />} />
+            <Route path="/how-it-works" element={<HowThingsWork />} />
             <Route path="/thinking" element={<Thinking />} />
+            <Route path="/learning-strategies" element={<LearningStrategies />} />
             <Route path="/city" element={<City />} />
             <Route path="/nature-diary" element={<NatureDiary />} />
             <Route path="/writing" element={<Writing />} />
             <Route path="/communication" element={<Communication />} />
+            <Route path="/traffic-school" element={<TrafficSchool />} />
           </Routes>
         </Suspense>
       </main>

@@ -1,0 +1,18 @@
+[
+  {"id": "stop", "emoji": "🛑", "name": "STOP-Schild", "meaning": "Du musst vollständig anhalten, bevor du weiterfährst. Schau nach beiden Seiten, bevor du weiterfährst.", "category": "driver"},
+  {"id": "cedencia-passagem", "emoji": "🔺", "name": "Vorfahrt gewähren", "meaning": "Du musst langsamer werden und die anderen zuerst fahren lassen, bevor du weiterfährst.", "category": "driver"},
+  {"id": "passadeira", "emoji": "🚶", "name": "Zebrastreifen", "meaning": "Hier ist der richtige Ort, um zu Fuß die Straße zu überqueren. Schau nach beiden Seiten, bevor du gehst.", "category": "pedestrian"},
+  {"id": "sentido-proibido", "emoji": "⛔", "name": "Einfahrt verboten", "meaning": "Du darfst hier nicht hineinfahren. Es ist wie eine geschlossene Tür nur für Autos und Fahrräder.", "category": "driver"},
+  {"id": "limite-velocidade", "emoji": "🚸", "name": "Geschwindigkeitsbegrenzung", "meaning": "Zeigt die höchste erlaubte Geschwindigkeit auf dieser Straße. Langsamer fahren ist immer sicherer in der Nähe von Häusern und Schulen.", "category": "driver"},
+  {"id": "sentido-unico", "emoji": "➡️", "name": "Einbahnstraße", "meaning": "Auf dieser Straße darf man nur in eine Richtung fahren. In die falsche Richtung zu fahren kann zu einem Zusammenstoß führen.", "category": "driver"},
+  {"id": "semaforo-vermelho", "emoji": "🔴", "name": "Rote Ampel", "meaning": "Rot bedeutet STOPP. Niemand darf fahren oder gehen, weder Autos noch Fußgänger, bis die Ampel wechselt.", "category": "pedestrian"},
+  {"id": "semaforo-amarelo", "emoji": "🟡", "name": "Gelbe Ampel", "meaning": "Gelb bedeutet, sich zum Anhalten bereit zu machen. Die Ampel wird gleich rot.", "category": "pedestrian"},
+  {"id": "semaforo-verde", "emoji": "🟢", "name": "Grüne Ampel", "meaning": "Grün bedeutet, du darfst fahren, aber schau trotzdem, bevor du losfährst.", "category": "pedestrian"},
+  {"id": "zona-escolar", "emoji": "🏫", "name": "Schulzone", "meaning": "Warnt, dass eine Schule in der Nähe ist. Autos müssen langsamer fahren, weil Kinder die Straße überqueren könnten.", "category": "pedestrian"},
+  {"id": "proibido-estacionar", "emoji": "🅿️", "name": "Parkverbot", "meaning": "Autos dürfen hier nicht stehen bleiben. Der Platz muss frei bleiben.", "category": "driver"},
+  {"id": "rotunda", "emoji": "🔄", "name": "Kreisverkehr", "meaning": "Ein runder Platz, um den die Autos herumfahren. Wer schon im Kreisverkehr ist, hat immer Vorfahrt.", "category": "driver"},
+  {"id": "ciclovia", "emoji": "🚲", "name": "Radweg", "meaning": "Ein Weg nur für Fahrräder. Autos sollten hier weder fahren noch parken.", "category": "pedestrian"},
+  {"id": "cruzamento", "emoji": "✖️", "name": "Kreuzung", "meaning": "Warnt, dass sich vorne zwei Straßen kreuzen. Du musst besonders aufpassen und langsamer werden.", "category": "driver"},
+  {"id": "lomba", "emoji": "🐫", "name": "Bodenschwelle", "meaning": "Ein kleiner Hügel auf der Straße, der die Autos zwingt, langsam zu fahren. Er schützt Menschen, die zu Fuß überqueren.", "category": "pedestrian"},
+  {"id": "perigo-geral", "emoji": "⚠️", "name": "Allgemeine Gefahrenstelle", "meaning": "Dieses Dreieck warnt vor einer Gefahr voraus. Sei besonders aufmerksam und fahre langsamer.", "category": "driver"}
+]

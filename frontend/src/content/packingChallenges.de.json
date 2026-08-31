@@ -273,5 +273,390 @@
         "correct": false
       }
     ]
+  },
+  {
+    "id": "city",
+    "icon": "🏙️",
+    "name": "Städtereise",
+    "items": [
+      {
+        "id": "comfortableshoes",
+        "icon": "👟",
+        "name": "Bequeme Schuhe",
+        "correct": true
+      },
+      {
+        "id": "citymap",
+        "icon": "🗺️",
+        "name": "Stadtplan",
+        "correct": true
+      },
+      {
+        "id": "camera",
+        "icon": "📷",
+        "name": "Kamera",
+        "correct": true
+      },
+      {
+        "id": "lightjacket",
+        "icon": "🧥",
+        "name": "Leichte Jacke",
+        "correct": true
+      },
+      {
+        "id": "swimsuit",
+        "icon": "🩱",
+        "name": "Badeanzug",
+        "correct": false
+      },
+      {
+        "id": "snowboots",
+        "icon": "🥾",
+        "name": "Schneestiefel",
+        "correct": false
+      },
+      {
+        "id": "heavycoat",
+        "icon": "🧥",
+        "name": "Schwerer Mantel",
+        "correct": false
+      },
+      {
+        "id": "umbrella-open",
+        "icon": "☔",
+        "name": "Großer Regenschirm",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "camping",
+    "icon": "🏕️",
+    "name": "Camping",
+    "items": [
+      {
+        "id": "tent",
+        "icon": "⛺",
+        "name": "Zelt",
+        "correct": true
+      },
+      {
+        "id": "sleepingbag",
+        "icon": "🛌",
+        "name": "Schlafsack",
+        "correct": true
+      },
+      {
+        "id": "flashlight",
+        "icon": "🔦",
+        "name": "Taschenlampe",
+        "correct": true
+      },
+      {
+        "id": "insectrepellent",
+        "icon": "🦟",
+        "name": "Insektenschutzmittel",
+        "correct": true
+      },
+      {
+        "id": "highheels",
+        "icon": "👠",
+        "name": "High Heels",
+        "correct": false
+      },
+      {
+        "id": "formaldress",
+        "icon": "👗",
+        "name": "Elegantes Kleid",
+        "correct": false
+      },
+      {
+        "id": "hairdryer",
+        "icon": "💇",
+        "name": "Föhn",
+        "correct": false
+      },
+      {
+        "id": "umbrella-open",
+        "icon": "☔",
+        "name": "Großer Regenschirm",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "jungle",
+    "icon": "🌴",
+    "name": "Regenwald",
+    "items": [
+      {
+        "id": "raincoat",
+        "icon": "🧥",
+        "name": "Regenjacke",
+        "correct": true
+      },
+      {
+        "id": "insectrepellent",
+        "icon": "🦟",
+        "name": "Insektenschutzmittel",
+        "correct": true
+      },
+      {
+        "id": "hikingboots",
+        "icon": "🥾",
+        "name": "Wanderstiefel",
+        "correct": true
+      },
+      {
+        "id": "waterbottle",
+        "icon": "🚰",
+        "name": "Wasserflasche",
+        "correct": true
+      },
+      {
+        "id": "snowboots",
+        "icon": "🥾",
+        "name": "Schneestiefel",
+        "correct": false
+      },
+      {
+        "id": "heavycoat",
+        "icon": "🧥",
+        "name": "Schwerer Mantel",
+        "correct": false
+      },
+      {
+        "id": "gloves",
+        "icon": "🧤",
+        "name": "Wollhandschuhe",
+        "correct": false
+      },
+      {
+        "id": "scarf",
+        "icon": "🧣",
+        "name": "Schal",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "farm",
+    "icon": "🚜",
+    "name": "Bauernhofbesuch",
+    "items": [
+      {
+        "id": "rubberboots",
+        "icon": "🥾",
+        "name": "Gummistiefel",
+        "correct": true
+      },
+      {
+        "id": "oldclothes",
+        "icon": "👕",
+        "name": "Alte Kleidung",
+        "correct": true
+      },
+      {
+        "id": "hat",
+        "icon": "👒",
+        "name": "Hut",
+        "correct": true
+      },
+      {
+        "id": "waterbottle",
+        "icon": "🚰",
+        "name": "Wasserflasche",
+        "correct": true
+      },
+      {
+        "id": "swimsuit",
+        "icon": "🩱",
+        "name": "Badeanzug",
+        "correct": false
+      },
+      {
+        "id": "highheels",
+        "icon": "👠",
+        "name": "High Heels",
+        "correct": false
+      },
+      {
+        "id": "formaldress",
+        "icon": "👗",
+        "name": "Elegantes Kleid",
+        "correct": false
+      },
+      {
+        "id": "laptop",
+        "icon": "💻",
+        "name": "Laptop",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "cruise",
+    "icon": "🛳️",
+    "name": "Kreuzfahrt",
+    "items": [
+      {
+        "id": "motionsicknesspills",
+        "icon": "💊",
+        "name": "Reisetabletten",
+        "correct": true
+      },
+      {
+        "id": "lightclothes",
+        "icon": "👕",
+        "name": "Leichte Kleidung",
+        "correct": true
+      },
+      {
+        "id": "sunglasses",
+        "icon": "🕶️",
+        "name": "Sonnenbrille",
+        "correct": true
+      },
+      {
+        "id": "camera",
+        "icon": "📷",
+        "name": "Kamera",
+        "correct": true
+      },
+      {
+        "id": "snowboots",
+        "icon": "🥾",
+        "name": "Schneestiefel",
+        "correct": false
+      },
+      {
+        "id": "heavycoat",
+        "icon": "🧥",
+        "name": "Schwerer Mantel",
+        "correct": false
+      },
+      {
+        "id": "hikingboots",
+        "icon": "🥾",
+        "name": "Wanderstiefel",
+        "correct": false
+      },
+      {
+        "id": "gloves",
+        "icon": "🧤",
+        "name": "Wollhandschuhe",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "sports",
+    "icon": "🏅",
+    "name": "Sportturnier",
+    "items": [
+      {
+        "id": "sneakers",
+        "icon": "👟",
+        "name": "Sportschuhe",
+        "correct": true
+      },
+      {
+        "id": "sportswear",
+        "icon": "🎽",
+        "name": "Sportkleidung",
+        "correct": true
+      },
+      {
+        "id": "waterbottle",
+        "icon": "🚰",
+        "name": "Wasserflasche",
+        "correct": true
+      },
+      {
+        "id": "towel",
+        "icon": "🧺",
+        "name": "Handtuch",
+        "correct": true
+      },
+      {
+        "id": "swimsuit",
+        "icon": "🩱",
+        "name": "Badeanzug",
+        "correct": false
+      },
+      {
+        "id": "heavycoat",
+        "icon": "🧥",
+        "name": "Schwerer Mantel",
+        "correct": false
+      },
+      {
+        "id": "highheels",
+        "icon": "👠",
+        "name": "High Heels",
+        "correct": false
+      },
+      {
+        "id": "umbrella-open",
+        "icon": "☔",
+        "name": "Großer Regenschirm",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "roadtrip",
+    "icon": "🚗",
+    "name": "Autoreise",
+    "items": [
+      {
+        "id": "snacks",
+        "icon": "🍪",
+        "name": "Snacks",
+        "correct": true
+      },
+      {
+        "id": "pillow",
+        "icon": "🛏️",
+        "name": "Kissen",
+        "correct": true
+      },
+      {
+        "id": "books",
+        "icon": "📚",
+        "name": "Bücher",
+        "correct": true
+      },
+      {
+        "id": "comfyclothes",
+        "icon": "👕",
+        "name": "Bequeme Kleidung",
+        "correct": true
+      },
+      {
+        "id": "swimsuit",
+        "icon": "🩱",
+        "name": "Badeanzug",
+        "correct": false
+      },
+      {
+        "id": "snowboots",
+        "icon": "🥾",
+        "name": "Schneestiefel",
+        "correct": false
+      },
+      {
+        "id": "hikingboots",
+        "icon": "🥾",
+        "name": "Wanderstiefel",
+        "correct": false
+      },
+      {
+        "id": "heavycoat",
+        "icon": "🧥",
+        "name": "Schwerer Mantel",
+        "correct": false
+      }
+    ]
   }
 ]

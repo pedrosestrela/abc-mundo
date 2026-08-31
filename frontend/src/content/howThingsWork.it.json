@@ -1,0 +1,557 @@
+[
+  {
+    "id": "bicicleta",
+    "emoji": "🚲",
+    "category": "transporte",
+    "title": "Bicicletta",
+    "parts": [
+      {
+        "id": "pedais",
+        "emoji": "🦵",
+        "label": "Pedali",
+        "predictionPrompt": "Cosa pensi che facciano i pedali?",
+        "explanation": "Quando spingi i pedali con i piedi, fai girare una ruota dentata. È qui che inizia tutta la forza che muove la bicicletta."
+      },
+      {
+        "id": "corrente",
+        "emoji": "⚙️",
+        "label": "Catena",
+        "predictionPrompt": "Cosa pensi che faccia la catena?",
+        "explanation": "La catena collega i pedali alla ruota posteriore. Quando la ruota dentata dei pedali gira, la catena tira un'altra ruota dentata e fa girare anche la ruota posteriore."
+      },
+      {
+        "id": "rodas",
+        "emoji": "🎡",
+        "label": "Ruote",
+        "predictionPrompt": "Cosa pensi che facciano le ruote?",
+        "explanation": "Le ruote girano e rotolano sul terreno, trasformando la forza dei tuoi piedi in movimento in avanti."
+      },
+      {
+        "id": "travoes",
+        "emoji": "🛑",
+        "label": "Freni",
+        "predictionPrompt": "Cosa pensi che facciano i freni?",
+        "explanation": "Quando stringi le leve, i freni afferrano le ruote e le fanno smettere di girare, così la bicicletta rallenta o si ferma."
+      }
+    ],
+    "summary": "Ora sai come funziona! I pedali danno la forza, la catena porta quella forza alla ruota posteriore, le ruote girano in avanti, e i freni fermano tutto quando ne hai bisogno."
+  },
+  {
+    "id": "carro",
+    "emoji": "🚗",
+    "category": "transporte",
+    "title": "Auto",
+    "parts": [
+      {
+        "id": "motor",
+        "emoji": "🔧",
+        "label": "Motore",
+        "predictionPrompt": "Cosa pensi che faccia il motore?",
+        "explanation": "Il motore brucia carburante o usa energia elettrica per creare forza. È il cuore dell'auto, che produce l'energia perché tutto si muova."
+      },
+      {
+        "id": "volante",
+        "emoji": "🎡",
+        "label": "Volante",
+        "predictionPrompt": "Cosa pensi che faccia il volante?",
+        "explanation": "Il volante è collegato alle ruote anteriori. Quando il conducente lo gira, le ruote girano in quella direzione e l'auto cambia direzione."
+      },
+      {
+        "id": "rodas-carro",
+        "emoji": "🛞",
+        "label": "Ruote",
+        "predictionPrompt": "Cosa pensi che facciano le ruote dell'auto?",
+        "explanation": "Le ruote ricevono la forza dal motore e girano sulla strada, facendo avanzare l'auto."
+      },
+      {
+        "id": "travoes-carro",
+        "emoji": "🛑",
+        "label": "Freni",
+        "predictionPrompt": "Cosa pensi che facciano i freni dell'auto?",
+        "explanation": "Quando il conducente preme il pedale del freno, dei dischi stringono forte le ruote e l'auto rallenta o si ferma."
+      }
+    ],
+    "summary": "Ora sai come funziona! Il motore crea la forza, il volante sceglie la direzione, le ruote portano l'auto in avanti, e i freni fermano tutto in sicurezza."
+  },
+  {
+    "id": "relogio",
+    "emoji": "⏰",
+    "category": "casa",
+    "title": "Orologio",
+    "parts": [
+      {
+        "id": "pilha",
+        "emoji": "🔋",
+        "label": "Pila",
+        "predictionPrompt": "Cosa pensi che faccia la pila?",
+        "explanation": "La pila dà energia elettrica all'orologio, proprio come il cibo dà energia a noi. Senza pila, l'orologio si ferma."
+      },
+      {
+        "id": "engrenagens",
+        "emoji": "⚙️",
+        "label": "Ingranaggi",
+        "predictionPrompt": "Cosa pensi che facciano gli ingranaggi?",
+        "explanation": "Gli ingranaggi sono piccole ruote dentate dentro l'orologio. L'energia della pila ne fa girare uno, e quello fa girare il successivo, sempre al ritmo giusto."
+      },
+      {
+        "id": "ponteiros",
+        "emoji": "🕐",
+        "label": "Lancette",
+        "predictionPrompt": "Cosa pensi che facciano le lancette?",
+        "explanation": "Le lancette sono collegate agli ingranaggi. Si muovono lentamente e con precisione per mostrarci le ore, i minuti e i secondi."
+      },
+      {
+        "id": "mostrador",
+        "emoji": "🔢",
+        "label": "Quadrante",
+        "predictionPrompt": "Cosa pensi che faccia il quadrante?",
+        "explanation": "Il quadrante ha i numeri intorno. È lì che leggiamo la posizione delle lancette per sapere che ora è."
+      }
+    ],
+    "summary": "Ora sai come funziona! La pila dà energia, gli ingranaggi girano al ritmo giusto, le lancette si muovono lentamente, e il quadrante ti aiuta a leggere l'ora."
+  },
+  {
+    "id": "smartphone",
+    "emoji": "📱",
+    "category": "tecnologia",
+    "title": "Smartphone",
+    "parts": [
+      {
+        "id": "bateria-phone",
+        "emoji": "🔋",
+        "label": "Batteria",
+        "predictionPrompt": "Cosa pensi che faccia la batteria?",
+        "explanation": "La batteria immagazzina energia elettrica e alimenta ogni parte del telefono, così funziona anche lontano da una presa."
+      },
+      {
+        "id": "processador",
+        "emoji": "🧠",
+        "label": "Processore",
+        "predictionPrompt": "Cosa pensi che faccia il processore?",
+        "explanation": "Il processore è come il cervello del telefono. Fa milioni di calcoli al secondo per aprire app, giochi e messaggi."
+      },
+      {
+        "id": "ecra-tatil",
+        "emoji": "🖐️",
+        "label": "Schermo touch",
+        "predictionPrompt": "Cosa pensi che faccia lo schermo touch?",
+        "explanation": "Lo schermo mostra immagini e sente anche il tocco delle tue dita, per sapere dove vuoi toccare e cosa vuoi aprire."
+      },
+      {
+        "id": "antena",
+        "emoji": "📶",
+        "label": "Antenna",
+        "predictionPrompt": "Cosa pensi che faccia l'antenna?",
+        "explanation": "L'antenna invia e riceve segnali invisibili nell'aria, collegando il telefono a internet e permettendo di fare chiamate."
+      }
+    ],
+    "summary": "Ora sai come funziona! La batteria dà energia, il processore pensa, lo schermo mostra e sente il tocco, e l'antenna collega il telefono al mondo."
+  },
+  {
+    "id": "frigorifico",
+    "emoji": "🧊",
+    "category": "casa",
+    "title": "Frigorifero",
+    "parts": [
+      {
+        "id": "compressor",
+        "emoji": "⚙️",
+        "label": "Compressore",
+        "predictionPrompt": "Cosa pensi che faccia il compressore?",
+        "explanation": "Il compressore è il motore del frigorifero. Comprime un gas speciale, facendolo circolare nei tubi e diventare molto freddo."
+      },
+      {
+        "id": "gas-refrigerante",
+        "emoji": "❄️",
+        "label": "Gas refrigerante",
+        "predictionPrompt": "Cosa pensi che faccia il gas refrigerante?",
+        "explanation": "Quel gas freddo circola nelle pareti dentro il frigorifero e assorbe il calore dall'interno, mantenendo il cibo fresco."
+      },
+      {
+        "id": "termostato",
+        "emoji": "🌡️",
+        "label": "Termostato",
+        "predictionPrompt": "Cosa pensi che faccia il termostato?",
+        "explanation": "Il termostato è come un termometro intelligente. Misura la temperatura all'interno e accende o spegne il compressore per mantenere il freddo giusto."
+      },
+      {
+        "id": "isolamento",
+        "emoji": "🚪",
+        "label": "Porta isolata",
+        "predictionPrompt": "Cosa pensi che faccia la porta isolata?",
+        "explanation": "Le pareti e la porta del frigorifero hanno un materiale speciale che impedisce al freddo di uscire e al calore di entrare."
+      }
+    ],
+    "summary": "Ora sai come funziona! Il compressore fa circolare il gas, il gas ruba il calore dall'interno, il termostato mantiene la temperatura giusta, e la porta isolata conserva il freddo."
+  },
+  {
+    "id": "elevador",
+    "emoji": "🛗",
+    "category": "casa",
+    "title": "Ascensore",
+    "parts": [
+      {
+        "id": "botoes",
+        "emoji": "🔘",
+        "label": "Pulsanti",
+        "predictionPrompt": "Cosa pensi che facciano i pulsanti?",
+        "explanation": "Quando premi un pulsante, dici all'ascensore a quale piano vuoi andare. Il sistema riceve quella richiesta."
+      },
+      {
+        "id": "motor-elevador",
+        "emoji": "⚙️",
+        "label": "Motore",
+        "predictionPrompt": "Cosa pensi che faccia il motore dell'ascensore?",
+        "explanation": "Il motore tira i cavi d'acciaio verso l'alto o li lascia scivolare verso il basso, facendo salire o scendere la cabina."
+      },
+      {
+        "id": "cabos",
+        "emoji": "🪢",
+        "label": "Cavi d'acciaio",
+        "predictionPrompt": "Cosa pensi che facciano i cavi d'acciaio?",
+        "explanation": "I cavi sono molto forti e sostengono la cabina, collegandola al motore in alto, così non cade mai."
+      },
+      {
+        "id": "cabina",
+        "emoji": "🚪",
+        "label": "Cabina",
+        "predictionPrompt": "Cosa pensi che faccia la cabina?",
+        "explanation": "La cabina è la scatola in cui entri. Scorre lungo binari verticali e si ferma esattamente all'altezza di ogni piano."
+      }
+    ],
+    "summary": "Ora sai come funziona! I pulsanti indicano il piano, il motore tira i cavi, i cavi sostengono la cabina, e la cabina ti porta esattamente al piano che hai scelto."
+  },
+  {
+    "id": "torneira",
+    "emoji": "🚰",
+    "category": "casa",
+    "title": "Rubinetto",
+    "parts": [
+      {
+        "id": "cano",
+        "emoji": "🚿",
+        "label": "Tubo dell'acqua",
+        "predictionPrompt": "Cosa pensi che faccia il tubo dell'acqua?",
+        "explanation": "Un tubo sotto il rubinetto porta l'acqua dalle tubature della casa, sempre sotto pressione, pronta a uscire."
+      },
+      {
+        "id": "valvula",
+        "emoji": "🔧",
+        "label": "Valvola",
+        "predictionPrompt": "Cosa pensi che faccia la valvola?",
+        "explanation": "Quando giri o alzi la manopola del rubinetto, una valvola all'interno apre un passaggio perché l'acqua possa scorrere."
+      },
+      {
+        "id": "vedante",
+        "emoji": "🔘",
+        "label": "Guarnizione",
+        "predictionPrompt": "Cosa pensi che faccia la guarnizione?",
+        "explanation": "Un piccolo anello di gomma chiude bene gli spazi, così l'acqua esce solo dal beccuccio e non gocciola altrove."
+      },
+      {
+        "id": "bica",
+        "emoji": "💧",
+        "label": "Beccuccio",
+        "predictionPrompt": "Cosa pensi che faccia il beccuccio?",
+        "explanation": "Il beccuccio è l'uscita finale. È da lì che esce l'acqua dal rubinetto, pronta per lavarti le mani o riempire un bicchiere."
+      }
+    ],
+    "summary": "Ora sai come funziona! Il tubo porta l'acqua, la valvola apre il passaggio quando giri il rubinetto, la guarnizione impedisce le perdite, e il beccuccio lascia uscire l'acqua."
+  },
+  {
+    "id": "autoclismo",
+    "emoji": "🚽",
+    "category": "casa",
+    "title": "Scarico del water",
+    "parts": [
+      {
+        "id": "botao-autoclismo",
+        "emoji": "🔘",
+        "label": "Pulsante",
+        "predictionPrompt": "Cosa pensi che faccia il pulsante dello scarico?",
+        "explanation": "Quando premi il pulsante, apri una valvola dentro il serbatoio d'acqua che si trova sopra o dietro il water."
+      },
+      {
+        "id": "descarga",
+        "emoji": "🌊",
+        "label": "Scarico dell'acqua",
+        "predictionPrompt": "Cosa pensi che succeda quando scende l'acqua?",
+        "explanation": "L'acqua conservata nel serbatoio scende tutta insieme con forza, spingendo tutto ciò che è nella tazza verso il tubo di scarico."
+      },
+      {
+        "id": "boia",
+        "emoji": "🎈",
+        "label": "Galleggiante",
+        "predictionPrompt": "Cosa pensi che faccia il galleggiante?",
+        "explanation": "Dopo lo scarico, un galleggiante dentro il serbatoio sale lentamente con l'acqua nuova e, quando arriva in cima, chiude la valvola che riempie il serbatoio."
+      },
+      {
+        "id": "sifao",
+        "emoji": "🌀",
+        "label": "Sifone",
+        "predictionPrompt": "Cosa pensi che faccia il tubo a forma di curva?",
+        "explanation": "Il tubo a forma di S conserva sempre un po' d'acqua, creando una barriera che impedisce ai cattivi odori di salire dalle fogne."
+      }
+    ],
+    "summary": "Ora sai come funziona! Il pulsante apre la valvola, l'acqua scende con forza e pulisce la tazza, il galleggiante riempie di nuovo il serbatoio, e il sifone conserva acqua per bloccare gli odori."
+  },
+  {
+    "id": "camara-fotografica",
+    "emoji": "📷",
+    "category": "tecnologia",
+    "title": "Macchina fotografica",
+    "parts": [
+      {
+        "id": "lente",
+        "emoji": "🔍",
+        "label": "Obiettivo",
+        "predictionPrompt": "Cosa pensi che faccia l'obiettivo?",
+        "explanation": "L'obiettivo è come un occhio di vetro. Piega la luce che arriva dal mondo esterno e la mette a fuoco dentro la macchina."
+      },
+      {
+        "id": "obturador",
+        "emoji": "⏱️",
+        "label": "Otturatore",
+        "predictionPrompt": "Cosa pensi che faccia l'otturatore?",
+        "explanation": "L'otturatore è una tendina che si apre e si chiude velocissima, lasciando entrare la luce solo per un istante, il tempo giusto per scattare la foto."
+      },
+      {
+        "id": "sensor",
+        "emoji": "📸",
+        "label": "Sensore",
+        "predictionPrompt": "Cosa pensi che faccia il sensore?",
+        "explanation": "Il sensore è dentro e cattura la luce che è passata attraverso l'obiettivo, trasformandola in un'immagine digitale."
+      },
+      {
+        "id": "botao-camara",
+        "emoji": "🔘",
+        "label": "Pulsante di scatto",
+        "predictionPrompt": "Cosa pensi che faccia il pulsante di scatto?",
+        "explanation": "Quando premi questo pulsante, dici alla macchina il momento esatto: apri l'otturatore, lascia entrare la luce, e salva la foto."
+      }
+    ],
+    "summary": "Ora sai come funziona! L'obiettivo piega la luce, l'otturatore si apre per un istante, il sensore cattura l'immagine, e il pulsante sceglie il momento giusto per scattare la foto."
+  },
+  {
+    "id": "painel-solar",
+    "emoji": "☀️",
+    "category": "energia",
+    "title": "Pannello solare",
+    "parts": [
+      {
+        "id": "luz-sol",
+        "emoji": "☀️",
+        "label": "Luce del sole",
+        "predictionPrompt": "Cosa pensi che succeda quando la luce del sole colpisce il pannello?",
+        "explanation": "La luce del sole è fatta di piccoli pacchetti di energia. Quando colpiscono il pannello, quell'energia inizia a trasformarsi."
+      },
+      {
+        "id": "celulas",
+        "emoji": "🔲",
+        "label": "Celle fotovoltaiche",
+        "predictionPrompt": "Cosa pensi che facciano le celle fotovoltaiche?",
+        "explanation": "Le celle sono fatte di un materiale speciale che, quando la luce lo colpisce, libera elettroni e crea elettricità."
+      },
+      {
+        "id": "inversor",
+        "emoji": "🔌",
+        "label": "Inverter",
+        "predictionPrompt": "Cosa pensi che faccia l'inverter?",
+        "explanation": "L'elettricità che esce dal pannello non è del tipo giusto per la casa. L'inverter la trasforma nel tipo di elettricità che usiamo nelle prese."
+      },
+      {
+        "id": "fios",
+        "emoji": "⚡",
+        "label": "Fili elettrici",
+        "predictionPrompt": "Cosa pensi che facciano i fili elettrici?",
+        "explanation": "I fili portano l'elettricità già trasformata fino alla casa, così puoi accendere le luci, guardare la TV o caricare il telefono."
+      }
+    ],
+    "summary": "Ora sai come funziona! La luce del sole arriva alle celle, le celle creano elettricità, l'inverter la trasforma nel tipo giusto, e i fili la portano fino a casa."
+  },
+  {
+    "id": "aspirador",
+    "emoji": "🧹",
+    "category": "casa",
+    "title": "Aspirapolvere",
+    "parts": [
+      {
+        "id": "motor-aspirador",
+        "emoji": "🔧",
+        "label": "Motore",
+        "predictionPrompt": "Secondo te cosa fa il motore dell'aspirapolvere?",
+        "explanation": "Il motore gira molto velocemente e crea una forte aspirazione, che attira l'aria (e la polvere) dentro l'aspirapolvere."
+      },
+      {
+        "id": "filtro",
+        "emoji": "🌬️",
+        "label": "Filtro",
+        "predictionPrompt": "Secondo te cosa fa il filtro?",
+        "explanation": "Il filtro lascia passare l'aria ma trattiene la polvere e lo sporco, così non tornano fuori nella stanza."
+      },
+      {
+        "id": "escova",
+        "emoji": "🧽",
+        "label": "Spazzola",
+        "predictionPrompt": "Secondo te cosa fa la spazzola?",
+        "explanation": "La spazzola sfiora il pavimento e stacca la polvere e i peli, così vengono aspirati più facilmente dal tubo."
+      },
+      {
+        "id": "saco",
+        "emoji": "🗑️",
+        "label": "Sacchetto della polvere",
+        "predictionPrompt": "Secondo te cosa fa il sacchetto della polvere?",
+        "explanation": "Tutta la polvere aspirata viene raccolta dentro questo sacchetto (o contenitore), finché non lo svuoti."
+      }
+    ],
+    "summary": "Ora sai come funziona! Il motore aspira l'aria, la spazzola stacca la polvere dal pavimento, il filtro pulisce l'aria e il sacchetto raccoglie tutto lo sporco."
+  },
+  {
+    "id": "impressora",
+    "emoji": "🖨️",
+    "category": "tecnologia",
+    "title": "Stampante",
+    "parts": [
+      {
+        "id": "cartucho",
+        "emoji": "🖋️",
+        "label": "Cartuccia d'inchiostro",
+        "predictionPrompt": "Secondo te cosa fa la cartuccia d'inchiostro?",
+        "explanation": "La cartuccia contiene l'inchiostro colorato o nero che disegnerà le lettere e le immagini sul foglio."
+      },
+      {
+        "id": "cabeca-impressao",
+        "emoji": "🎯",
+        "label": "Testina di stampa",
+        "predictionPrompt": "Secondo te cosa fa la testina di stampa?",
+        "explanation": "La testina scorre da un lato all'altro e lascia cadere piccole gocce d'inchiostro esattamente dove serve."
+      },
+      {
+        "id": "rolos",
+        "emoji": "🎡",
+        "label": "Rulli",
+        "predictionPrompt": "Secondo te cosa fanno i rulli?",
+        "explanation": "I rulli girano e tirano lentamente il foglio dentro la stampante, uno alla volta."
+      },
+      {
+        "id": "papel",
+        "emoji": "📄",
+        "label": "Foglio",
+        "predictionPrompt": "Secondo te cosa succede al foglio?",
+        "explanation": "Il foglio passa sotto la testina di stampa, riceve l'inchiostro ed esce già stampato con il disegno o il testo."
+      }
+    ],
+    "summary": "Ora sai come funziona! La cartuccia contiene l'inchiostro, la testina lo distribuisce nel punto giusto, i rulli tirano il foglio e questo esce pronto con ciò che hai stampato."
+  },
+  {
+    "id": "semaforo",
+    "emoji": "🚦",
+    "category": "cidade",
+    "title": "Semaforo",
+    "parts": [
+      {
+        "id": "sensor-transito",
+        "emoji": "🚗",
+        "label": "Sensore",
+        "predictionPrompt": "Secondo te cosa fa il sensore del semaforo?",
+        "explanation": "Alcuni semafori hanno un sensore che rileva le auto o le persone in attesa, per sapere quando cambiare la luce."
+      },
+      {
+        "id": "controlador",
+        "emoji": "⏱️",
+        "label": "Centralina",
+        "predictionPrompt": "Secondo te cosa fa la centralina?",
+        "explanation": "La centralina è come un piccolo computer che conta il tempo e decide quando ogni luce deve accendersi."
+      },
+      {
+        "id": "luzes",
+        "emoji": "🔴",
+        "label": "Luci",
+        "predictionPrompt": "Secondo te cosa fanno le luci?",
+        "explanation": "Le luci rossa, gialla e verde si accendono in ordine, per dire ad auto e persone quando fermarsi o avanzare."
+      },
+      {
+        "id": "fios-semaforo",
+        "emoji": "⚡",
+        "label": "Fili elettrici",
+        "predictionPrompt": "Secondo te cosa fanno i fili elettrici?",
+        "explanation": "I fili portano elettricità fino al semaforo, così le luci possono accendersi e la centralina può funzionare."
+      }
+    ],
+    "summary": "Ora sai come funziona! Il sensore capisce chi sta aspettando, la centralina decide il momento giusto, le luci si accendono in ordine e i fili danno loro energia."
+  },
+  {
+    "id": "comboio",
+    "emoji": "🚆",
+    "category": "transporte",
+    "title": "Treno",
+    "parts": [
+      {
+        "id": "motor-comboio",
+        "emoji": "🔧",
+        "label": "Motore",
+        "predictionPrompt": "Secondo te cosa fa il motore del treno?",
+        "explanation": "Il motore trasforma elettricità o carburante in forza, facendo girare le ruote con molta potenza."
+      },
+      {
+        "id": "carris",
+        "emoji": "🛤️",
+        "label": "Binari",
+        "predictionPrompt": "Secondo te cosa fanno i binari?",
+        "explanation": "I binari sono due rotaie di metallo che guidano il treno, mantenendolo sempre sul percorso giusto."
+      },
+      {
+        "id": "rodas-comboio",
+        "emoji": "🎡",
+        "label": "Ruote",
+        "predictionPrompt": "Secondo te cosa fanno le ruote del treno?",
+        "explanation": "Le ruote del treno sono di metallo e si incastrano perfettamente nei binari, girando per far avanzare il treno senza uscire dal percorso."
+      },
+      {
+        "id": "pantografo",
+        "emoji": "⚡",
+        "label": "Pantografo",
+        "predictionPrompt": "Secondo te cosa fa questo pezzo sopra il treno?",
+        "explanation": "Il pantografo tocca i cavi elettrici sopra la linea e porta l'elettricità fino al motore del treno."
+      }
+    ],
+    "summary": "Ora sai come funziona! Il motore crea la forza, i binari guidano il percorso, le ruote tengono il treno sui binari e il pantografo porta l'elettricità."
+  },
+  {
+    "id": "escada-rolante",
+    "emoji": "🪜",
+    "category": "cidade",
+    "title": "Scala mobile",
+    "parts": [
+      {
+        "id": "motor-escada",
+        "emoji": "⚙️",
+        "label": "Motore",
+        "predictionPrompt": "Secondo te cosa fa il motore della scala mobile?",
+        "explanation": "Il motore gira senza fermarsi e muove tutta la scala, così i gradini possono salire o scendere di continuo."
+      },
+      {
+        "id": "corrente-escada",
+        "emoji": "⛓️",
+        "label": "Catena",
+        "predictionPrompt": "Secondo te cosa fa la catena?",
+        "explanation": "Una catena robusta collega il motore ai gradini, trasmettendo il movimento a tutta la scala."
+      },
+      {
+        "id": "degraus",
+        "emoji": "🪜",
+        "label": "Gradini",
+        "predictionPrompt": "Secondo te cosa fanno i gradini?",
+        "explanation": "I gradini sono fissati alla catena e formano una scala continua, apparendo piatti in basso e sollevandosi mentre salgono."
+      },
+      {
+        "id": "corrimao",
+        "emoji": "🤚",
+        "label": "Corrimano",
+        "predictionPrompt": "Secondo te cosa fa il corrimano?",
+        "explanation": "Il corrimano si muove alla stessa velocità dei gradini, così puoi appoggiare la mano in sicurezza mentre sali o scendi."
+      }
+    ],
+    "summary": "Ora sai come funziona! Il motore non smette mai di girare, la catena muove i gradini, i gradini formano la scala e il corrimano avanza allo stesso ritmo per potertici appoggiare."
+  }
+]

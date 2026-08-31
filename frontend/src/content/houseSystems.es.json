@@ -70,5 +70,44 @@
     "steps": [
       "Los paneles solares captan la luz del sol y la convierten en electricidad, sin humo ni contaminación. Esa energía puede encender las luces, cargar aparatos, o incluso guardarse en baterías para usarla de noche."
     ]
+  },
+  {
+    "id": "deteccaofumo",
+    "icon": "🚨",
+    "name": "Detectores de humo",
+    "prompt": "🚨 ¿Para qué sirve ese aparato redondo en el techo?",
+    "steps": [
+      "El detector de humo tiene un sensor que reconoce el humo en el aire. Si hay un incendio, hace un sonido muy fuerte para avisar rápidamente a todos, dando tiempo para salir de casa a salvo."
+    ]
+  },
+  {
+    "id": "isolamento",
+    "icon": "🧱",
+    "name": "Aislamiento",
+    "prompt": "🧱 ¿Por qué algunas casas se mantienen más calientes en invierno que otras?",
+    "steps": [
+      "Las paredes, el tejado y las ventanas pueden tener materiales especiales de aislamiento, que impiden que el calor salga en invierno y entre en verano. Una casa bien aislada gasta menos energía en calentarse o enfriarse."
+    ]
+  },
+  {
+    "id": "reciclagem",
+    "icon": "♻️",
+    "name": "Reciclaje en casa",
+    "prompt": "♻️ ¿Cómo se organiza la basura en casa antes de salir?",
+    "steps": [
+      "1. En casa separamos la basura en distintos contenedores: papel, plástico y metal, vidrio, y basura general.",
+      "2. Cada tipo de basura tiene un contenedor de un color diferente en la calle.",
+      "3. Cuando el cubo de casa se llena, alguien lleva la bolsa al contenedor correcto en la calle.",
+      "4. Así es más fácil para la ciudad reciclarlo todo después."
+    ]
+  },
+  {
+    "id": "seguranca",
+    "icon": "🔒",
+    "name": "Seguridad del hogar",
+    "prompt": "🔒 ¿Cómo mantiene la cerradura de la puerta segura tu casa?",
+    "steps": [
+      "Las cerraduras y las llaves hacen que solo las personas correctas puedan abrir la puerta de casa. Muchas casas también tienen timbres y mirillas, para ver quién está fuera antes de abrir la puerta."
+    ]
   }
 ]

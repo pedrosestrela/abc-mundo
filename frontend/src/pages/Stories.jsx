@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { getStories } from "../content/index.js";
 import { getLangPair, getProfile, pingProgress, recordSkillEvent } from "../storage.js";
+import MascotBubble from "../components/mascots/MascotBubble.jsx";
 import SpeakButton from "../components/SpeakButton.jsx";
 import HelpButton from "../components/HelpButton.jsx";
 import { playDrumPad } from "../music.js";
@@ -34,14 +35,35 @@ function splitWords(text) {
 export default function Stories() {
   const { t } = useTranslation();
   const pair = getLangPair() || { mother: "pt", secondary: "en" };
-  const motherStories = getStories(pair.mother);
-  const secondaryStories = getStories(pair.secondary);
+
+  const [motherStories, setMotherStories] = useState([]);
+  const [secondaryStories, setSecondaryStories] = useState([]);
+  const [loading, setLoading] = useState(true);
   const count = Math.min(motherStories.length, secondaryStories.length);
 
   const [openIndex, setOpenIndex] = useState(null);
   const [pageIndex, setPageIndex] = useState(0);
   const [activeWord, setActiveWord] = useState(-1);
   const [poked, setPoked] = useState(false);
+
+  useEffect(() => {
+    let cancelled = false;
+    setLoading(true);
+    Promise.all([getStories(pair.mother), getStories(pair.secondary)]).then(
+      ([mother, secondary]) => {
+        if (cancelled) return;
+        setMotherStories(mother);
+        setSecondaryStories(secondary);
+        setLoading(false);
+        setOpenIndex(null);
+        setPageIndex(0);
+      }
+    );
+    return () => {
+      cancelled = true;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pair.mother, pair.secondary]);
 
   const motherStory = openIndex !== null ? motherStories[openIndex] : null;
   const secondaryStory = openIndex !== null ? secondaryStories[openIndex] : null;
@@ -102,6 +124,15 @@ export default function Stories() {
       else break;
     }
     setActiveWord(idx);
+  }
+
+  if (loading) {
+    return (
+      <div className="page">
+        <h1>{t("modules.storiesTitle")} 📚</h1>
+        <p>...</p>
+      </div>
+    );
   }
 
   if (openIndex !== null && motherStory && secondaryStory) {
@@ -193,11 +224,26 @@ export default function Stories() {
       <div className="help-btn-corner">
         <HelpButton text={t("modules.storiesHelpMain")} langCode={pair.mother} />
       </div>
+      <MascotBubble character="pipa" mood="happy" langCode={pair.mother}>
+        {t("modules.storiesMascotIntro")}
+      </MascotBubble>
       <div className="song-list">
         {Array.from({ length: count }).map((_, i) => {
           const s = secondaryStories[i];
           return (
-            <div className="song-card story-card" key={s.id} onClick={() => openStory(i)}>
+            <div
+              className="song-card story-card"
+              key={s.id}
+              role="button"
+              tabIndex={0}
+              onClick={() => openStory(i)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  openStory(i);
+                }
+              }}
+            >
               <div className="story-card-emoji">{s.emoji}</div>
               <h2>{s.title}</h2>
             </div>

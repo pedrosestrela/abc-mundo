@@ -29,6 +29,66 @@
       "title": "Ein Kleines Huhn",
       "emoji": "🐔",
       "text": "Ein kleines Huhn im Hof so froh,\nLegt die Eier, immerzu so,\nEins, zwei, drei, vier, fünf,\nZähl die Eier, was für ein Sinn!"
+    },
+    {
+      "id": "leng-06",
+      "title": "Ene Mene Muh",
+      "emoji": "🔢",
+      "text": "Ene, mene, muh,\nund raus bist du,\nmit dem Pfeffer, mit dem Salz,\nene, mene, muh, und raus bist du!"
+    },
+    {
+      "id": "leng-07",
+      "title": "Eins, Zwei, Polizei",
+      "emoji": "🚓",
+      "text": "Eins, zwei, Polizei,\ndrei, vier, Offizier,\nfünf, sechs, alte Hex',\nsieben, acht, gute Nacht!"
+    },
+    {
+      "id": "leng-08",
+      "title": "Ringel, Ringel, Reihe",
+      "emoji": "🌸",
+      "text": "Ringel, Ringel, Reihe,\nsind der Kinder dreie,\nsitzen unterm Hollerbusch,\nmachen alle husch, husch, husch!"
+    },
+    {
+      "id": "leng-09",
+      "title": "Backe, Backe Kuchen",
+      "emoji": "🍰",
+      "text": "Backe, backe Kuchen,\nder Bäcker hat gerufen,\nwer will guten Kuchen backen,\nder muss haben sieben Sachen!"
+    },
+    {
+      "id": "leng-10",
+      "title": "Häschen in der Grube",
+      "emoji": "🐰",
+      "text": "Häschen in der Grube saß und schlief,\narmes Häschen, bist du krank,\ndass du nicht mehr hüpfen kannst?"
+    },
+    {
+      "id": "leng-11",
+      "title": "Ich und Du",
+      "emoji": "🐄",
+      "text": "Ich und du,\nMüllers Kuh,\nMüllers Esel,\ndas bist du!"
+    },
+    {
+      "id": "leng-12",
+      "title": "Fuchs, du hast die Gans gestohlen",
+      "emoji": "🦊",
+      "text": "Fuchs, du hast die Gans gestohlen,\ngib sie wieder her,\nsonst wird dich der Jäger holen,\nmit dem Schießgewehr!"
+    },
+    {
+      "id": "leng-13",
+      "title": "Es tanzt ein Bi-ba-Butzemann",
+      "emoji": "👻",
+      "text": "Es tanzt ein Bi-ba-Butzemann,\nin unserm Haus herum, fidum,\ner rüttelt sich, er schüttelt sich,\ner wirft sein Säckchen hinter sich!"
+    },
+    {
+      "id": "leng-14",
+      "title": "Zehn kleine Zappelmänner",
+      "emoji": "🕺",
+      "text": "Zehn kleine Zappelmänner tanzen im Kreis,\neins, zwei, drei, vier, so ganz leis,\nfünf, sechs, sieben, acht,\nneun, zehn, gute Nacht!"
+    },
+    {
+      "id": "leng-15",
+      "title": "Sonne, Mond und Sterne",
+      "emoji": "⭐",
+      "text": "Sonne, Mond und Sterne,\nzählen wir so gerne,\neins, zwei, drei, vier, fünf,\nwer lacht zuerst, der ist flink!"
     }
   ],
   "travalinguas": [
@@ -61,6 +121,66 @@
       "title": "Der Krabbenkorb",
       "emoji": "🦀",
       "text": "In Ulm und um Ulm und um Ulm herum."
+    },
+    {
+      "id": "tt-6",
+      "title": "Fischers Fritz",
+      "emoji": "🐟",
+      "text": "Fischers Fritz fischt frische Fische, frische Fische fischt Fischers Fritz."
+    },
+    {
+      "id": "tt-7",
+      "title": "Blaukraut",
+      "emoji": "🥬",
+      "text": "Blaukraut bleibt Blaukraut und Brautkleid bleibt Brautkleid."
+    },
+    {
+      "id": "tt-8",
+      "title": "Zwetschgenzweige",
+      "emoji": "🍑",
+      "text": "Zwischen zwei Zwetschgenzweigen sitzen zwei zwitschernde Schwalben."
+    },
+    {
+      "id": "tt-9",
+      "title": "Zehn Ziegen",
+      "emoji": "🐐",
+      "text": "Zehn Ziegen ziehen zehn Zentner Zucker zum Zoo."
+    },
+    {
+      "id": "tt-10",
+      "title": "Der Braunbär",
+      "emoji": "🐻",
+      "text": "Der Braunbär brummt beim Bierbrauer."
+    },
+    {
+      "id": "tt-11",
+      "title": "Schnecken",
+      "emoji": "🐌",
+      "text": "Schnecken erschrecken, wenn Schnecken an Schnecken schlecken."
+    },
+    {
+      "id": "tt-12",
+      "title": "Fliegende Fliegen",
+      "emoji": "🪰",
+      "text": "Wenn Fliegen hinter Fliegen fliegen, fliegen Fliegen Fliegen nach."
+    },
+    {
+      "id": "tt-13",
+      "title": "Kleine Kinder",
+      "emoji": "🧒",
+      "text": "Kleine Kinder können keinen Kirschkern knacken."
+    },
+    {
+      "id": "tt-14",
+      "title": "Acht Ameisen",
+      "emoji": "🐜",
+      "text": "Acht Ameisen ackern am Ameisenhaufen."
+    },
+    {
+      "id": "tt-15",
+      "title": "Wäsche Waschen",
+      "emoji": "🧺",
+      "text": "Wir Wiener Waschweiber würden weiße Wäsche waschen, wenn wir wüssten, wo weiches, warmes Wasser wäre."
     }
   ],
   "rimas": [
@@ -99,6 +219,60 @@
       "title": "Gute Nacht, Mond",
       "emoji": "🌙",
       "text": "Gute Nacht, du runder Mond,\nZündest Sterne, die dort wohnen,\nSchläft die Erde, schläft der Sand,\nBis die Sonne kommt ins Land."
+    },
+    {
+      "id": "rima-07",
+      "title": "Der frühe Vogel",
+      "emoji": "🐦",
+      "text": "Der Vogel singt im Morgenlicht,\nEr kündet an, der Tag erwacht,\nEr fliegt so hoch, hat keine Furcht,\nHinauf zum Himmel, blau und sacht."
+    },
+    {
+      "id": "rima-08",
+      "title": "Der goldene Herbst",
+      "emoji": "🍂",
+      "text": "Die Blätter fallen sanft herab,\nSie malen bunt den Waldesgrund,\nDer Wind spielt fröhlich Tag für Tag,\nMit jedem Blatt zu jeder Stund."
+    },
+    {
+      "id": "rima-09",
+      "title": "Der kalte Winter",
+      "emoji": "❄️",
+      "text": "Der Winter bringt die kalte Luft,\nBedeckt die Erde weiß und rein,\nWir trinken heiße Schokolad',\nUnd schaun die Flocken fallen fein."
+    },
+    {
+      "id": "rima-10",
+      "title": "Der Frühling kommt",
+      "emoji": "🌸",
+      "text": "Der Frühling weckt mit sanftem Klang,\nDie Bäume blühn, die Wiese lacht,\nEs duftet süß das Feld entlang,\nEin warmer Tag hat uns erwacht."
+    },
+    {
+      "id": "rima-11",
+      "title": "Sommer am Strand",
+      "emoji": "🏖️",
+      "text": "Im Sommer geht's ans Meer hinaus,\nZum Spielen dort im Sand so fein,\nDie Sonne lacht, die Welle braust,\nEin Ruf, dabei zu sein."
+    },
+    {
+      "id": "rima-12",
+      "title": "Mein treuer Hund",
+      "emoji": "🐶",
+      "text": "Mein Hund, der läuft und bellt so froh,\nDem Ball hinterher im Sprung,\nEr wedelt, wird nie müde so,\nMein bester Freund, so jung."
+    },
+    {
+      "id": "rima-13",
+      "title": "Der goldene Fisch",
+      "emoji": "🐠",
+      "text": "Im Becken schwimmt er, sanft und klein,\nEin Fischlein in der Sonne Schein,\nEr liebt das Wasser, hin und her,\nSchwimmt leise, sacht, nicht schwer."
+    },
+    {
+      "id": "rima-14",
+      "title": "Liebe Oma",
+      "emoji": "👵",
+      "text": "Oma erzählt uns jede Nacht,\nMit leiser Stimme, warmer Hand,\nSie hat ein Bonbon stets gebracht,\nVoll Liebe für das ganze Land."
+    },
+    {
+      "id": "rima-15",
+      "title": "Waldspaziergang",
+      "emoji": "🌳",
+      "text": "Im Wald da weht der Wind so sacht,\nZwischen den Bäumen, hoch und grün,\nDas Eichhorn springt, hat's nie bedacht,\nDer Fluss fließt weiter, stets bemüht."
     }
   ]
 }

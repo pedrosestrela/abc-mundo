@@ -4,16 +4,44 @@
     "emoji": "🌉",
     "prompt": "🐻 The bear needs to cross the river. Build a bridge!",
     "materials": [
-      { "id": "wood", "emoji": "🪵", "label": "Wood" },
-      { "id": "stone", "emoji": "🧱", "label": "Stone" },
-      { "id": "rope", "emoji": "🧵", "label": "Rope" },
-      { "id": "paper", "emoji": "📄", "label": "Paper" }
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Wood"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Stone"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Rope"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Paper"
+      }
     ],
     "outcomes": {
-      "wood": { "success": true, "text": "Wood is strong and light. The bridge holds the bear and it crosses safely!" },
-      "stone": { "success": false, "text": "Stone is too heavy for a simple bridge and it collapses before the bear crosses." },
-      "rope": { "success": false, "text": "Rope alone sags under the bear's weight — it falls into the water!" },
-      "paper": { "success": false, "text": "The paper tears as soon as the bear puts a paw on it." }
+      "wood": {
+        "success": true,
+        "text": "Wood is strong and light. The bridge holds the bear and it crosses safely!"
+      },
+      "stone": {
+        "success": false,
+        "text": "Stone is too heavy for a simple bridge and it collapses before the bear crosses."
+      },
+      "rope": {
+        "success": false,
+        "text": "Rope alone sags under the bear's weight — it falls into the water!"
+      },
+      "paper": {
+        "success": false,
+        "text": "The paper tears as soon as the bear puts a paw on it."
+      }
     }
   },
   "tower": {
@@ -21,16 +49,44 @@
     "emoji": "🗼",
     "prompt": "🚩 Build a tower tall enough to touch the flag!",
     "materials": [
-      { "id": "wood", "emoji": "🪵", "label": "Wood" },
-      { "id": "stone", "emoji": "🧱", "label": "Stone" },
-      { "id": "rope", "emoji": "🧵", "label": "Rope" },
-      { "id": "paper", "emoji": "📄", "label": "Paper" }
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Wood"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Stone"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Rope"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Paper"
+      }
     ],
     "outcomes": {
-      "wood": { "success": true, "text": "Wooden blocks stack up firmly — the tower reaches the flag!" },
-      "stone": { "success": true, "text": "Stone is heavy but stable at the base — the tower stands firm and reaches the flag!" },
-      "rope": { "success": false, "text": "Rope can't stand up on its own — the tower never rises." },
-      "paper": { "success": false, "text": "Paper bends under the weight and the tower collapses." }
+      "wood": {
+        "success": true,
+        "text": "Wooden blocks stack up firmly — the tower reaches the flag!"
+      },
+      "stone": {
+        "success": true,
+        "text": "Stone is heavy but stable at the base — the tower stands firm and reaches the flag!"
+      },
+      "rope": {
+        "success": false,
+        "text": "Rope can't stand up on its own — the tower never rises."
+      },
+      "paper": {
+        "success": false,
+        "text": "Paper bends under the weight and the tower collapses."
+      }
     }
   },
   "boat": {
@@ -38,16 +94,179 @@
     "emoji": "⛵",
     "prompt": "⛵ Build a boat that floats and carries the toys to the other shore!",
     "materials": [
-      { "id": "wood", "emoji": "🪵", "label": "Wood" },
-      { "id": "stone", "emoji": "🧱", "label": "Stone" },
-      { "id": "rope", "emoji": "🧵", "label": "Rope" },
-      { "id": "paper", "emoji": "📄", "label": "Paper" }
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Wood"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Stone"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Rope"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Paper"
+      }
     ],
     "outcomes": {
-      "wood": { "success": true, "text": "Wood floats really well — the boat sails smoothly!" },
-      "stone": { "success": false, "text": "Stone is too dense and sinks as soon as it touches the water." },
-      "rope": { "success": false, "text": "Rope doesn't form a hull — water gets in and the boat sinks." },
-      "paper": { "success": false, "text": "Paper soaks up water, goes soft, and dissolves." }
+      "wood": {
+        "success": true,
+        "text": "Wood floats really well — the boat sails smoothly!"
+      },
+      "stone": {
+        "success": false,
+        "text": "Stone is too dense and sinks as soon as it touches the water."
+      },
+      "rope": {
+        "success": false,
+        "text": "Rope doesn't form a hull — water gets in and the boat sinks."
+      },
+      "paper": {
+        "success": false,
+        "text": "Paper soaks up water, goes soft, and dissolves."
+      }
+    }
+  },
+  "dam": {
+    "title": "The Beaver's Dam",
+    "emoji": "🦫",
+    "prompt": "🦫 The beaver wants to hold back the river. Build a dam!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Wood"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Stone"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Rope"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Paper"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "Wood lets water seep through small gaps — the dam gives way."
+      },
+      "stone": {
+        "success": true,
+        "text": "Stacked stone is heavy and forms a solid wall — the dam holds the river back!"
+      },
+      "rope": {
+        "success": false,
+        "text": "Rope can't stop water, which slips right through the strands."
+      },
+      "paper": {
+        "success": false,
+        "text": "The paper dissolves as soon as it touches the water."
+      }
+    }
+  },
+  "catapult": {
+    "title": "The Catapult",
+    "emoji": "🎯",
+    "prompt": "🎯 Build a catapult to launch the ball over the wall!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Wood"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Stone"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Rope"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Paper"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": true,
+        "text": "The wooden arm is strong and bendy — it flexes and flings the ball far away!"
+      },
+      "stone": {
+        "success": false,
+        "text": "Stone is too stiff to bend like an arm — it can't launch anything."
+      },
+      "rope": {
+        "success": false,
+        "text": "Rope is flexible but doesn't push the ball — it just falls to the side."
+      },
+      "paper": {
+        "success": false,
+        "text": "Paper bends and tears, with no force to launch the ball."
+      }
+    }
+  },
+  "crane": {
+    "title": "The Lifting Crane",
+    "emoji": "🏗️",
+    "prompt": "🏗️ Build a crane to lift the heavy box!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Wood"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Stone"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Rope"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Paper"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": true,
+        "text": "The wooden arm is light and strong — it lifts the box with ease!"
+      },
+      "stone": {
+        "success": false,
+        "text": "Stone is too heavy for its own arm to rise — the crane can't move."
+      },
+      "rope": {
+        "success": false,
+        "text": "Rope bends without a rigid arm — it can't lift the box."
+      },
+      "paper": {
+        "success": false,
+        "text": "The paper tears the moment the box is attached."
+      }
     }
   }
 }

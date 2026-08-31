@@ -1,15 +1,178 @@
 {
-  "budget": 1000,
-  "items": [
-    { "id": "apple", "emoji": "🍎", "name": "Pomme", "price": 80 },
-    { "id": "banana", "emoji": "🍌", "name": "Banane", "price": 60 },
-    { "id": "juice", "emoji": "🧃", "name": "Jus", "price": 150 },
-    { "id": "bread", "emoji": "🍞", "name": "Pain", "price": 120 },
-    { "id": "cheese", "emoji": "🧀", "name": "Fromage", "price": 250 },
-    { "id": "cookie", "emoji": "🍪", "name": "Biscuit", "price": 100 },
-    { "id": "icecream", "emoji": "🍦", "name": "Glace", "price": 200 },
-    { "id": "ball", "emoji": "⚽", "name": "Ballon", "price": 500 },
-    { "id": "book", "emoji": "📖", "name": "Livre", "price": 350 },
-    { "id": "toycar", "emoji": "🚗", "name": "Petite Voiture", "price": 450 }
+  "scenarios": [
+    {
+      "id": "grocery",
+      "emoji": "🛒",
+      "storeName": "Épicerie",
+      "budget": 1000,
+      "items": [
+        {
+          "id": "apple",
+          "emoji": "🍎",
+          "name": "Pomme",
+          "price": 80
+        },
+        {
+          "id": "banana",
+          "emoji": "🍌",
+          "name": "Banane",
+          "price": 60
+        },
+        {
+          "id": "juice",
+          "emoji": "🧃",
+          "name": "Jus",
+          "price": 150
+        },
+        {
+          "id": "bread",
+          "emoji": "🍞",
+          "name": "Pain",
+          "price": 120
+        },
+        {
+          "id": "cheese",
+          "emoji": "🧀",
+          "name": "Fromage",
+          "price": 250
+        },
+        {
+          "id": "cookie",
+          "emoji": "🍪",
+          "name": "Biscuit",
+          "price": 100
+        },
+        {
+          "id": "icecream",
+          "emoji": "🍦",
+          "name": "Glace",
+          "price": 200
+        },
+        {
+          "id": "ball",
+          "emoji": "⚽",
+          "name": "Ballon",
+          "price": 500
+        },
+        {
+          "id": "book",
+          "emoji": "📖",
+          "name": "Livre",
+          "price": 350
+        },
+        {
+          "id": "toycar",
+          "emoji": "🚗",
+          "name": "Petite Voiture",
+          "price": 450
+        }
+      ]
+    },
+    {
+      "id": "stationery",
+      "emoji": "✏️",
+      "storeName": "Papeterie",
+      "budget": 800,
+      "items": [
+        {
+          "id": "pencil",
+          "emoji": "✏️",
+          "name": "Crayon",
+          "price": 50
+        },
+        {
+          "id": "eraser",
+          "emoji": "🧽",
+          "name": "Gomme",
+          "price": 40
+        },
+        {
+          "id": "notebook",
+          "emoji": "📓",
+          "name": "Cahier",
+          "price": 180
+        },
+        {
+          "id": "crayons",
+          "emoji": "🖍️",
+          "name": "Crayons de Couleur",
+          "price": 220
+        },
+        {
+          "id": "ruler",
+          "emoji": "📏",
+          "name": "Règle",
+          "price": 90
+        },
+        {
+          "id": "glue",
+          "emoji": "🧴",
+          "name": "Colle",
+          "price": 70
+        },
+        {
+          "id": "scissors",
+          "emoji": "✂️",
+          "name": "Ciseaux",
+          "price": 150
+        },
+        {
+          "id": "stickers",
+          "emoji": "⭐",
+          "name": "Autocollants",
+          "price": 120
+        }
+      ]
+    },
+    {
+      "id": "toystore",
+      "emoji": "🧸",
+      "storeName": "Magasin de Jouets",
+      "budget": 1500,
+      "items": [
+        {
+          "id": "kite",
+          "emoji": "🪁",
+          "name": "Cerf-volant",
+          "price": 300
+        },
+        {
+          "id": "puzzle",
+          "emoji": "🧩",
+          "name": "Puzzle",
+          "price": 380
+        },
+        {
+          "id": "yoyo",
+          "emoji": "🪀",
+          "name": "Yo-yo",
+          "price": 150
+        },
+        {
+          "id": "robot",
+          "emoji": "🤖",
+          "name": "Robot",
+          "price": 600
+        },
+        {
+          "id": "doll",
+          "emoji": "🪆",
+          "name": "Poupée",
+          "price": 420
+        },
+        {
+          "id": "blocks",
+          "emoji": "🧱",
+          "name": "Blocs",
+          "price": 350
+        },
+        {
+          "id": "balloon",
+          "emoji": "🎈",
+          "name": "Ballon Gonflable",
+          "price": 50
+        }
+      ]
+    }
   ]
 }

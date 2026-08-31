@@ -1,10 +1,11 @@
-import React, { Suspense, lazy, useMemo, useState } from "react";
+import React, { Suspense, lazy, useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { getCountries, getPackingChallenges, getTransportScenarios } from "../content/index.js";
 import { getLangPair, getProfile, getVisitedCountries, visitCountry, getDifficultyTier, pingProgress, recordSkillEvent } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
 import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
 import HelpButton from "../components/HelpButton.jsx";
+import MascotBubble from "../components/mascots/MascotBubble.jsx";
 
 const TRANSPORT_MODE_META = {
   walk: { emoji: "🚶", labelKey: "worldModeWalk" },
@@ -71,12 +72,70 @@ function shuffle(arr) {
   return copy;
 }
 
-function buildQuizRounds(countries, tier, mode) {
+// Randomly picks one of a country's animal entries (it may have a primary
+// `animal` and an `additionalAnimal`) so repeated quizzes surface variety.
+function pickAnimal(c) {
+  const opts = [c.animal, c.additionalAnimal].filter(Boolean);
+  if (!opts.length) return null;
+  return opts[Math.floor(Math.random() * opts.length)];
+}
+
+// Attribute getters used both to build the quiz pool (countries that have
+// this field) and to read the correct value for a round.
+const QUIZ_FIELD_GETTERS = {
+  flag: (c) => c.flag,
+  capital: (c) => c.capital,
+  food: (c) => c.food,
+  landmark: (c) => c.landmark,
+  climate: (c) => c.climate,
+  language: (c) => c.language,
+  animal: (c) => pickAnimal(c)?.name,
+  landmarkReverse: (c) => c.landmark,
+  animalReverse: (c) => pickAnimal(c)?.name,
+};
+
+// Types where the country is shown as the clue and the child guesses the
+// attribute (flag/capital/animal/food/landmark/climate/language).
+const QUIZ_FORWARD_TYPES = ["flag", "capital", "animal", "food", "landmark", "climate", "language"];
+// Types where the attribute is shown as the clue and the child guesses the
+// country ("Em que país encontras a Torre de Belém?").
+const QUIZ_REVERSE_TYPES = ["landmarkReverse", "animalReverse"];
+
+// Simpler recognition-only types for the youngest tier; the full mix
+// (including the harder reverse/attribute types) unlocks from tier 2 up.
+function quizTypesForTier(tier) {
+  if (tier === 1) return ["flag", "capital"];
+  return [...QUIZ_FORWARD_TYPES, ...QUIZ_REVERSE_TYPES];
+}
+
+function buildQuizRounds(countries, tier, type) {
   const count = tier === 1 ? 5 : tier === 2 ? 8 : 10;
-  const pool = shuffle(countries).slice(0, Math.min(count, countries.length));
-  return pool.map((correct) => {
-    const distractors = shuffle(countries.filter((c) => c.iso !== correct.iso)).slice(0, 2);
-    return { correct, options: shuffle([correct, ...distractors]), mode };
+  const getter = QUIZ_FIELD_GETTERS[type] || QUIZ_FIELD_GETTERS.flag;
+  const pool = countries.filter((c) => {
+    const v = getter(c);
+    return v !== undefined && v !== null && v !== "";
+  });
+  const shuffledPool = shuffle(pool).slice(0, Math.min(count, pool.length));
+  const reverse = QUIZ_REVERSE_TYPES.includes(type);
+
+  return shuffledPool.map((correct) => {
+    const value = getter(correct);
+    if (reverse) {
+      // The clue (e.g. a landmark name) is shown; options are countries.
+      const distractors = shuffle(countries.filter((c) => c.iso !== correct.iso)).slice(0, 2);
+      return { type, correct, value, options: shuffle([correct, ...distractors]) };
+    }
+    // The country is shown; options are attribute values (text), one of
+    // which is correct. Distractors are real values sampled from other
+    // countries in the dataset, never invented text.
+    const otherValues = pool.filter((c) => c.iso !== correct.iso && getter(c) !== value);
+    const distractorValues = shuffle(otherValues).slice(0, 2).map((c) => getter(c));
+    const options = shuffle([value, ...distractorValues]).map((label, i) => ({
+      key: `${correct.iso}-${type}-${i}`,
+      label,
+      correct: label === value,
+    }));
+    return { type, correct, value, options };
   });
 }
 
@@ -85,7 +144,18 @@ export default function World() {
   const pair = getLangPair() || { mother: "pt", secondary: "en" };
   const profile = getProfile();
   const tier = getDifficultyTier(profile?.age);
-  const countries = getCountries(pair.mother);
+  const [countries, setCountries] = useState([]);
+
+  useEffect(() => {
+    let cancelled = false;
+    getCountries(pair.mother).then((data) => {
+      if (!cancelled) setCountries(data);
+    });
+    return () => {
+      cancelled = true;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pair.mother]);
 
   const [tab, setTab] = useState("explore");
   const [selected, setSelected] = useState(null);
@@ -97,6 +167,13 @@ export default function World() {
   const [step, setStep] = useState(0);
   const [score, setScore] = useState(0);
   const [feedback, setFeedback] = useState(null);
+  // Anti-guessing (same pattern as MathGame/Phonics): once an option is
+  // clicked wrong it stays visible but disabled, so the child can't just
+  // spam through every option. Full XP is only awarded within the first
+  // couple of attempts.
+  const [wrongKeys, setWrongKeys] = useState(() => new Set());
+  const [wrongCount, setWrongCount] = useState(0);
+  const quizTypes = useMemo(() => quizTypesForTier(tier), [tier]);
 
   // --- Trip planner ("Planeia uma Viagem") ---
   const defaultFrom = countries.find((c) => c.iso === "PT") || countries[0];
@@ -176,27 +253,76 @@ export default function World() {
     setStep(0);
     setScore(0);
     setFeedback(null);
+    setWrongKeys(new Set());
+    setWrongCount(0);
+  }
+
+  // Works for both "forward" rounds (options are {key,label,correct}) and
+  // "reverse" rounds (options are country objects) — optionKey() picks the
+  // right identity, isCorrectOption() the right correctness check.
+  function optionKey(option) {
+    return option.iso ?? option.key;
+  }
+  function isCorrectOption(round, option) {
+    return option.iso !== undefined ? option.iso === round.correct.iso : !!option.correct;
   }
 
   function handleAnswer(option) {
     if (feedback) return;
     const round = rounds[step];
-    const correct = option.iso === round.correct.iso;
+    const key = optionKey(option);
+    if (wrongKeys.has(key)) return;
+    const correct = isCorrectOption(round, option);
     setFeedback(correct ? "correct" : "wrong");
-    if (correct) setScore((s) => s + 1);
+    if (correct) {
+      setScore((s) => s + 1);
+      // Full skill/XP credit only if answered right within the first
+      // couple of attempts, not after guessing through every option.
+      recordSkillEvent(profile?.name, "world-quiz", wrongCount < 2);
+    } else {
+      setWrongKeys((prev) => new Set(prev).add(key));
+      setWrongCount((c) => c + 1);
+    }
     pingProgress({
       profileName: profile?.name,
       module: "world",
       event: `quiz_${quizMode}_${correct ? "correct" : "wrong"}`,
     });
-    setTimeout(() => {
-      setFeedback(null);
-      setStep((s) => s + 1);
-    }, 900);
+    if (correct) {
+      setTimeout(() => {
+        setFeedback(null);
+        setWrongKeys(new Set());
+        setWrongCount(0);
+        setStep((s) => s + 1);
+      }, 900);
+    } else {
+      setTimeout(() => setFeedback(null), 500);
+    }
   }
 
   const quizFinished = quizMode && step >= rounds.length;
   const round = rounds[step];
+
+  const QUIZ_TYPE_META = {
+    flag: { icon: "🏴", labelKey: "worldFlagQuiz", promptKey: "worldFlagPrompt" },
+    capital: { icon: "🏛️", labelKey: "worldCapitalQuiz", promptKey: "worldCapitalPrompt" },
+    animal: { icon: "🐾", labelKey: "worldAnimalQuiz", promptKey: "worldAnimalPrompt" },
+    food: { icon: "🍽️", labelKey: "worldFoodQuiz", promptKey: "worldFoodPrompt" },
+    landmark: { icon: "🏰", labelKey: "worldLandmarkQuiz", promptKey: "worldLandmarkPrompt" },
+    climate: { icon: "🌡️", labelKey: "worldClimateQuiz", promptKey: "worldClimatePrompt" },
+    language: { icon: "🗣️", labelKey: "worldLanguageQuiz", promptKey: "worldLanguagePrompt" },
+    landmarkReverse: { icon: "🧭", labelKey: "worldLandmarkReverseQuiz", promptKey: "worldLandmarkReversePrompt" },
+    animalReverse: { icon: "🔎", labelKey: "worldAnimalReverseQuiz", promptKey: "worldAnimalReversePrompt" },
+  };
+
+  function quizPrompt(r) {
+    if (!r) return "";
+    const meta = QUIZ_TYPE_META[r.type];
+    if (QUIZ_REVERSE_TYPES.includes(r.type)) {
+      return t(`modules.${meta.promptKey}`, { value: r.value });
+    }
+    return t(`modules.${meta.promptKey}`, { country: r.correct.name });
+  }
 
   const helpTextByTab = {
     globe: t("modules.worldHelpGlobe"),
@@ -211,6 +337,9 @@ export default function World() {
   return (
     <div className="page">
       <h1>{t("modules.worldTitle")} 🗺️</h1>
+      <MascotBubble character="vasco" mood="happy" langCode={pair.mother}>
+        {t("modules.worldMascotIntro")}
+      </MascotBubble>
 
       <div className="phonics-tabs">
         <button type="button" className={"phonics-tab" + (tab === "globe" ? " selected" : "")} onClick={() => setTab("globe")}>
@@ -480,12 +609,14 @@ export default function World() {
 
       {tab === "quiz" && !quizMode && (
         <div className="world-quiz-picker">
-          <button type="button" className="big-btn" onClick={() => startQuiz("flag")}>
-            🏴 {t("modules.worldFlagQuiz")}
-          </button>
-          <button type="button" className="big-btn" onClick={() => startQuiz("capital")}>
-            🏛️ {t("modules.worldCapitalQuiz")}
-          </button>
+          {quizTypes.map((qtype) => {
+            const meta = QUIZ_TYPE_META[qtype];
+            return (
+              <button type="button" className="big-btn" key={qtype} onClick={() => startQuiz(qtype)}>
+                {meta.icon} {t(`modules.${meta.labelKey}`)}
+              </button>
+            );
+          })}
         </div>
       )}
 
@@ -494,20 +625,38 @@ export default function World() {
           <div className="game-progress">
             {step + 1} / {rounds.length} · ⭐ {score}
           </div>
-          <div className="game-emoji">{quizMode === "flag" ? round.correct.flag : "🏛️ " + round.correct.capital}</div>
-          <p className="page-intro">{quizMode === "flag" ? t("modules.worldFlagPrompt") : t("modules.worldCapitalPrompt")}</p>
+          <div className="game-emoji">
+            {QUIZ_REVERSE_TYPES.includes(round.type)
+              ? QUIZ_TYPE_META[round.type].icon
+              : round.type === "flag"
+              ? round.correct.flag
+              : QUIZ_TYPE_META[round.type].icon}
+          </div>
+          <p className="page-intro">
+            {quizPrompt(round)}
+            <SpeakButton text={quizPrompt(round)} langCode={pair.mother} />
+          </p>
           <div className="game-options">
-            {round.options.map((opt) => (
-              <button
-                key={opt.iso}
-                type="button"
-                className={"big-btn game-option" + (feedback && opt.iso === round.correct.iso ? " correct" : "")}
-                onClick={() => handleAnswer(opt)}
-                disabled={!!feedback}
-              >
-                {opt.name}
-              </button>
-            ))}
+            {round.options.map((opt) => {
+              const key = optionKey(opt);
+              const label = opt.iso !== undefined ? opt.name : opt.label;
+              const isCorrect = isCorrectOption(round, opt);
+              return (
+                <button
+                  key={key}
+                  type="button"
+                  className={
+                    "big-btn game-option" +
+                    (feedback && isCorrect ? " correct" : "") +
+                    (wrongKeys.has(key) ? " disabled" : "")
+                  }
+                  onClick={() => handleAnswer(opt)}
+                  disabled={!!feedback || wrongKeys.has(key)}
+                >
+                  {label}
+                </button>
+              );
+            })}
           </div>
         </div>
       )}

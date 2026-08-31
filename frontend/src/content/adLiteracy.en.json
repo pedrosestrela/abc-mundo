@@ -1,10 +1,114 @@
 [
-  { "id": "ad1", "emoji": "🌟", "text": "🌟🌟🌟 THE BEST TOY IN THE WORLD!!! Today only!!!", "isAd": true, "explanation": "\"Best in the world\" is an opinion — nobody can prove that. And \"today only\" tries to rush you into buying fast." },
-  { "id": "fact1", "emoji": "📏", "text": "This toy is 20 centimeters tall.", "isAd": false, "explanation": "This is a fact: you can grab a ruler and check the measurement." },
-  { "id": "ad2", "emoji": "😱", "text": "You'll love this MORE than anything you've ever tried!", "isAd": true, "explanation": "Nobody knows what you'll feel. It's an exaggerated opinion meant to excite you." },
-  { "id": "fact2", "emoji": "🔋", "text": "This flashlight uses two AA batteries.", "isAd": false, "explanation": "This is a fact you can check by opening the flashlight." },
-  { "id": "ad3", "emoji": "⏰", "text": "Last units left! Buy NOW before it's gone!", "isAd": true, "explanation": "Creating urgency (\"last units\", \"now\") is an advertising technique to make you decide without thinking." },
-  { "id": "fact3", "emoji": "🍫", "text": "This chocolate bar weighs 100 grams.", "isAd": false, "explanation": "It's a fact: you can weigh the bar on a scale." },
-  { "id": "ad4", "emoji": "🏆", "text": "The number 1 flavor chosen by ALL kids!", "isAd": true, "explanation": "\"All kids\" is an exaggeration — it's impossible to ask every child in the world." },
-  { "id": "fact4", "emoji": "🎨", "text": "This crayon is red.", "isAd": false, "explanation": "It's a simple fact that anyone can see and confirm." }
+  {
+    "id": "ad1",
+    "emoji": "🌟",
+    "text": "🌟🌟🌟 THE BEST TOY IN THE WORLD!!! Today only!!!",
+    "isAd": true,
+    "explanation": "\"Best in the world\" is an opinion — nobody can prove that. And \"today only\" tries to rush you into buying fast."
+  },
+  {
+    "id": "fact1",
+    "emoji": "📏",
+    "text": "This toy is 20 centimeters tall.",
+    "isAd": false,
+    "explanation": "This is a fact: you can grab a ruler and check the measurement."
+  },
+  {
+    "id": "ad2",
+    "emoji": "😱",
+    "text": "You'll love this MORE than anything you've ever tried!",
+    "isAd": true,
+    "explanation": "Nobody knows what you'll feel. It's an exaggerated opinion meant to excite you."
+  },
+  {
+    "id": "fact2",
+    "emoji": "🔋",
+    "text": "This flashlight uses two AA batteries.",
+    "isAd": false,
+    "explanation": "This is a fact you can check by opening the flashlight."
+  },
+  {
+    "id": "ad3",
+    "emoji": "⏰",
+    "text": "Last units left! Buy NOW before it's gone!",
+    "isAd": true,
+    "explanation": "Creating urgency (\"last units\", \"now\") is an advertising technique to make you decide without thinking."
+  },
+  {
+    "id": "fact3",
+    "emoji": "🍫",
+    "text": "This chocolate bar weighs 100 grams.",
+    "isAd": false,
+    "explanation": "It's a fact: you can weigh the bar on a scale."
+  },
+  {
+    "id": "ad4",
+    "emoji": "🏆",
+    "text": "The number 1 flavor chosen by ALL kids!",
+    "isAd": true,
+    "explanation": "\"All kids\" is an exaggeration — it's impossible to ask every child in the world."
+  },
+  {
+    "id": "fact4",
+    "emoji": "🎨",
+    "text": "This crayon is red.",
+    "isAd": false,
+    "explanation": "It's a simple fact that anyone can see and confirm."
+  },
+  {
+    "id": "ad5",
+    "emoji": "🎉",
+    "text": "FREE if you buy now! Don't miss this one-time chance!",
+    "isAd": true,
+    "explanation": "\"Free\" next to \"buy now\" is a technique to make you decide fast, without really thinking if you need it."
+  },
+  {
+    "id": "fact5",
+    "emoji": "🧮",
+    "text": "This box has 12 crayons.",
+    "isAd": false,
+    "explanation": "This is a fact: you can open the box and count the crayons."
+  },
+  {
+    "id": "ad6",
+    "emoji": "👑",
+    "text": "Be the envy of all your friends with this AMAZING toy!",
+    "isAd": true,
+    "explanation": "Promising you'll be \"the envy of everyone\" is an exaggerated opinion meant to make you want it by comparing yourself to others."
+  },
+  {
+    "id": "fact6",
+    "emoji": "📐",
+    "text": "This toy box measures 30 by 20 centimeters.",
+    "isAd": false,
+    "explanation": "This is a fact you can confirm with a measuring tape."
+  },
+  {
+    "id": "ad7",
+    "emoji": "🥇",
+    "text": "Approved by the world's greatest champions!",
+    "isAd": true,
+    "explanation": "Saying it's \"approved by champions\" without proof is a technique to make it seem more trustworthy than it really is."
+  },
+  {
+    "id": "fact7",
+    "emoji": "🎈",
+    "text": "This pack has 10 balloons.",
+    "isAd": false,
+    "explanation": "This is a simple fact: just count the balloons in the pack."
+  },
+  {
+    "id": "ad8",
+    "emoji": "💥",
+    "text": "You won't believe what this toy does! Watch NOW!!!",
+    "isAd": true,
+    "explanation": "Phrases like \"you won't believe\" create exaggerated curiosity to keep you watching, even without saying anything concrete."
+  },
+  {
+    "id": "fact8",
+    "emoji": "🚗",
+    "text": "This toy car has four wheels.",
+    "isAd": false,
+    "explanation": "This is a simple fact that anyone can see and confirm."
+  }
 ]

@@ -1,6 +1,186 @@
-import React from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { getProfile, getProgress, getLevel, getMasteredSkills, getWeakestSkills } from "../storage.js";
+import {
+  getProfile,
+  getProgress,
+  getLevel,
+  getMasteredSkills,
+  getWeakestSkills,
+  exportAllData,
+  mergeImportedData,
+  getReminderSettings,
+  setReminderSettings,
+} from "../storage.js";
+import HelpButton from "../components/HelpButton.jsx";
+
+function ReminderSection({ t, langCode }) {
+  const [settings, setSettings] = useState(() => getReminderSettings());
+  const supported = typeof Notification !== "undefined";
+  const [permission, setPermission] = useState(supported ? Notification.permission : "unsupported");
+
+  async function handleToggle(enabled) {
+    if (enabled && supported && Notification.permission === "default") {
+      const result = await Notification.requestPermission();
+      setPermission(result);
+      if (result !== "granted") {
+        setSettings(setReminderSettings({ enabled: false }));
+        return;
+      }
+    }
+    setSettings(setReminderSettings({ enabled }));
+  }
+
+  function handleTimeChange(time) {
+    setSettings(setReminderSettings({ time }));
+  }
+
+  return (
+    <section className="parent-section reminder-section">
+      <h2>
+        {t("modules.reminderTitle")}
+        <HelpButton text={t("modules.reminderHelp")} langCode={langCode} />
+      </h2>
+
+      <div className="reminder-controls">
+        <label className="reminder-toggle-row">
+          <input type="checkbox" checked={settings.enabled} onChange={(e) => handleToggle(e.target.checked)} />
+          {t("modules.reminderEnableLabel")}
+        </label>
+
+        <label className="reminder-time-row">
+          {t("modules.reminderTimeLabel")}
+          <input
+            type="time"
+            className="reminder-time-input"
+            value={settings.time}
+            onChange={(e) => handleTimeChange(e.target.value)}
+            disabled={!settings.enabled}
+          />
+        </label>
+      </div>
+
+      {!supported && (
+        <p className="reminder-warning" role="alert">
+          {t("modules.reminderUnsupported")}
+        </p>
+      )}
+      {supported && permission === "denied" && (
+        <p className="reminder-warning" role="alert">
+          {t("modules.reminderPermissionDenied")}
+        </p>
+      )}
+
+      <p className="reminder-limitation-note">{t("modules.reminderLimitationNote")}</p>
+    </section>
+  );
+}
+
+function SyncSection({ t, langCode }) {
+  const [exportState, setExportState] = useState({ status: "idle" }); // idle | loading | done | error
+  const [importCode, setImportCode] = useState("");
+  const [importState, setImportState] = useState({ status: "idle" }); // idle | loading | done | error
+
+  async function handleExport() {
+    setExportState({ status: "loading" });
+    try {
+      const resp = await fetch("/api/sync/upload", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ data: exportAllData() }),
+      });
+      if (!resp.ok) throw new Error("upload failed");
+      const body = await resp.json();
+      setExportState({ status: "done", code: body.code });
+    } catch {
+      setExportState({ status: "error" });
+    }
+  }
+
+  async function handleImport() {
+    const code = importCode.trim().toUpperCase();
+    if (!code) return;
+    setImportState({ status: "loading" });
+    try {
+      const resp = await fetch(`/api/sync/download/${encodeURIComponent(code)}`);
+      if (resp.status === 404) {
+        setImportState({ status: "error", reason: "notfound" });
+        return;
+      }
+      if (!resp.ok) throw new Error("download failed");
+      const body = await resp.json();
+      const result = mergeImportedData(body.data);
+      setImportState({ status: "done", result });
+      setImportCode("");
+    } catch {
+      setImportState({ status: "error", reason: "network" });
+    }
+  }
+
+  return (
+    <section className="parent-section sync-section">
+      <h2>
+        {t("modules.syncTitle")}
+        <HelpButton text={t("modules.syncHelp")} langCode={langCode} />
+      </h2>
+
+      <div className="sync-export">
+        <button type="button" className="sync-export-btn" onClick={handleExport} disabled={exportState.status === "loading"}>
+          {exportState.status === "loading" ? t("modules.syncExportLoading") : t("modules.syncExportButton")}
+        </button>
+        {exportState.status === "done" && (
+          <div className="sync-code-box" role="status">
+            <div className="sync-code-label">{t("modules.syncCodeLabel")}</div>
+            <div className="sync-code-value">{exportState.code}</div>
+            <p className="sync-code-explain">{t("modules.syncExportExplain")}</p>
+          </div>
+        )}
+        {exportState.status === "error" && (
+          <p className="sync-error" role="alert">
+            {t("modules.syncExportError")}
+          </p>
+        )}
+      </div>
+
+      <div className="sync-import">
+        <h3>{t("modules.syncImportTitle")}</h3>
+        <div className="sync-import-row">
+          <input
+            type="text"
+            className="sync-import-input"
+            placeholder={t("modules.syncImportPlaceholder")}
+            value={importCode}
+            onChange={(e) => setImportCode(e.target.value)}
+            maxLength={6}
+          />
+          <button
+            type="button"
+            className="sync-import-btn"
+            onClick={handleImport}
+            disabled={importState.status === "loading" || !importCode.trim()}
+          >
+            {importState.status === "loading" ? t("modules.syncImportLoading") : t("modules.syncImportButton")}
+          </button>
+        </div>
+        {importState.status === "done" && (
+          <div className="sync-success" role="status">
+            <p>{t("modules.syncImportSuccess")}</p>
+            <p>{t("modules.syncImportSuccessDetail", { count: importState.result.importedProfiles })}</p>
+            {importState.result.renamedProfiles.length > 0 && (
+              <p className="sync-muted">{t("modules.syncImportRenamedDetail")}</p>
+            )}
+          </div>
+        )}
+        {importState.status === "error" && (
+          <p className="sync-error" role="alert">
+            {importState.reason === "notfound"
+              ? t("modules.syncImportErrorNotFound")
+              : t("modules.syncImportErrorNetwork")}
+          </p>
+        )}
+      </div>
+    </section>
+  );
+}
 
 function humanizeSkill(skill) {
   return skill
@@ -11,8 +191,16 @@ function humanizeSkill(skill) {
     .join(" ");
 }
 
+function formatReportDate(locale) {
+  try {
+    return new Date().toLocaleDateString(locale, { year: "numeric", month: "long", day: "numeric" });
+  } catch {
+    return new Date().toLocaleDateString();
+  }
+}
+
 export default function ParentDashboard() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const profile = getProfile();
   const progress = getProgress(profile?.name);
 
@@ -31,6 +219,11 @@ export default function ParentDashboard() {
   return (
     <div className="page parent-page">
       <h1>{t("modules.parentsTitle")}</h1>
+
+      <div className="no-print">
+        <ReminderSection t={t} langCode={i18n.language} />
+        <SyncSection t={t} langCode={i18n.language} />
+      </div>
 
       {!profile ? (
         <p className="parent-empty">{t("modules.parentsEmpty")}</p>
@@ -55,6 +248,16 @@ export default function ParentDashboard() {
             <p className="parent-empty">{t("modules.parentsEmpty")}</p>
           ) : (
             <>
+              <div className="parent-actions no-print">
+                <button type="button" className="parent-export-btn" onClick={() => window.print()}>
+                  🖨️ {t("modules.parentsExportPdf")}
+                </button>
+              </div>
+
+              <p className="parent-report-date print-only">
+                {t("modules.parentsReportGenerated", { defaultValue: "Relatório gerado em" })} {formatReportDate(i18n.language)}
+              </p>
+
               <section className="parent-section">
                 <h2>{t("modules.parentsSummary")}</h2>
                 <div className="parent-summary-grid">

@@ -3,7 +3,12 @@
     "id": "school",
     "icon": "🏫",
     "prompt": "Ir à escola ao fundo da rua.",
-    "modes": ["walk", "bike", "car", "plane"],
+    "modes": [
+      "walk",
+      "bike",
+      "car",
+      "plane"
+    ],
     "correct": "walk",
     "explanation": "Para distâncias muito curtas, andar a pé é rápido, saudável e não gasta energia nenhuma!"
   },
@@ -11,7 +16,12 @@
     "id": "grandparents",
     "icon": "🏘️",
     "prompt": "Visitar os avós, que moram no bairro ao lado.",
-    "modes": ["bike", "car", "train", "ship"],
+    "modes": [
+      "bike",
+      "car",
+      "train",
+      "ship"
+    ],
     "correct": "bike",
     "explanation": "Para uma distância curta dentro da cidade, a bicicleta é uma ótima escolha: rápida e sem poluição."
   },
@@ -19,7 +29,12 @@
     "id": "othercity",
     "icon": "🏙️",
     "prompt": "Ir a outra cidade do país para as férias.",
-    "modes": ["walk", "train", "car", "ship"],
+    "modes": [
+      "walk",
+      "train",
+      "car",
+      "ship"
+    ],
     "correct": "train",
     "explanation": "Para viajar entre cidades, o comboio é confortável, rápido e não podias ir a pé nem de bicicleta tão longe."
   },
@@ -27,7 +42,12 @@
     "id": "othercontinent",
     "icon": "🌍",
     "prompt": "Ir a outro continente para conhecer um novo país.",
-    "modes": ["bike", "car", "train", "plane"],
+    "modes": [
+      "bike",
+      "car",
+      "train",
+      "plane"
+    ],
     "correct": "plane",
     "explanation": "Para cruzar oceanos e continentes rapidamente, o avião é o meio de transporte certo."
   },
@@ -35,8 +55,117 @@
     "id": "cargo",
     "icon": "📦",
     "prompt": "Enviar um contentor cheio de brinquedos para outro continente.",
-    "modes": ["car", "train", "plane", "ship"],
+    "modes": [
+      "car",
+      "train",
+      "plane",
+      "ship"
+    ],
     "correct": "ship",
     "explanation": "Para transportar cargas muito pesadas através do oceano, o navio é o mais usado — é mais lento, mas transporta muito mais e gasta menos energia por objeto."
+  },
+  {
+    "id": "park",
+    "icon": "🚸",
+    "prompt": "Ir ao parque ao fundo da rua.",
+    "modes": [
+      "walk",
+      "bike",
+      "car",
+      "plane"
+    ],
+    "correct": "walk",
+    "explanation": "Para um sítio tão perto, andar a pé é a forma mais simples e saudável de chegar lá."
+  },
+  {
+    "id": "bakery",
+    "icon": "🥖",
+    "prompt": "Ir à padaria comprar pão fresco pela manhã.",
+    "modes": [
+      "walk",
+      "bike",
+      "car",
+      "train"
+    ],
+    "correct": "walk",
+    "explanation": "A padaria fica logo ali; ir a pé é rápido e ainda apanhas ar fresco de manhã."
+  },
+  {
+    "id": "islandferry",
+    "icon": "🏝️",
+    "prompt": "Atravessar um pequeno braço de mar até uma ilha perto da costa.",
+    "modes": [
+      "car",
+      "train",
+      "plane",
+      "ship"
+    ],
+    "correct": "ship",
+    "explanation": "Para cruzar água até uma ilha próxima, um navio (ou ferry) é o meio certo — não há estrada nem carris por cima do mar."
+  },
+  {
+    "id": "citycommute",
+    "icon": "🏢",
+    "prompt": "Ir trabalhar todos os dias do outro lado da cidade.",
+    "modes": [
+      "walk",
+      "bike",
+      "car",
+      "plane"
+    ],
+    "correct": "car",
+    "explanation": "Para uma distância grande dentro da cidade, todos os dias, o carro é mais prático do que ir a pé ou de bicicleta."
+  },
+  {
+    "id": "studyabroad",
+    "icon": "🎓",
+    "prompt": "Ir estudar um ano para um país do outro lado do oceano.",
+    "modes": [
+      "car",
+      "train",
+      "ship",
+      "plane"
+    ],
+    "correct": "plane",
+    "explanation": "Para viajar rapidamente para muito longe, atravessando o oceano, o avião é a escolha certa."
+  },
+  {
+    "id": "exportcars",
+    "icon": "🚘",
+    "prompt": "Enviar centenas de carros novos de uma fábrica para venda noutro continente.",
+    "modes": [
+      "car",
+      "train",
+      "plane",
+      "ship"
+    ],
+    "correct": "ship",
+    "explanation": "Para transportar cargas muito pesadas e volumosas através do oceano, o navio é o mais usado — leva muito mais de cada vez."
+  },
+  {
+    "id": "medicine",
+    "icon": "💊",
+    "prompt": "Enviar um medicamento urgente para um hospital do outro lado do mundo.",
+    "modes": [
+      "train",
+      "ship",
+      "car",
+      "plane"
+    ],
+    "correct": "plane",
+    "explanation": "Quando a rapidez é mais importante do que o preço, como numa emergência, o avião chega muito mais depressa do que o navio."
+  },
+  {
+    "id": "campingtrip",
+    "icon": "🏕️",
+    "prompt": "Ir acampar com a família numa floresta a algumas horas de casa.",
+    "modes": [
+      "walk",
+      "bike",
+      "car",
+      "plane"
+    ],
+    "correct": "car",
+    "explanation": "Com tanta bagagem — tenda, sacos-cama, comida — o carro é o mais prático para uma viagem deste tamanho."
   }
 ]

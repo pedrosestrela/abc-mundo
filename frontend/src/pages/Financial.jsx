@@ -151,7 +151,13 @@ export default function Financial() {
   const promptCoins = useMemo(() => round.prompt.coins, [round]);
 
   // --- Lemonade Stand state ---
-  const lemonade = getLemonadeStand(pair.mother);
+  // Multiple business scenarios (lemonade / orange juice / hot chocolate)
+  // live under `scenarios`; one is picked at random per playthrough, mirroring
+  // the weekly-budget tab's scenario-rotation pattern below.
+  const lemonadePool = getLemonadeStand(pair.mother).scenarios;
+  const [lemonade, setLemonade] = useState(
+    () => lemonadePool[Math.floor(Math.random() * lemonadePool.length)]
+  );
   const [lemonAdvisoryDone, setLemonAdvisoryDone] = useState(tier >= 2);
   const [lemonRound, setLemonRound] = useState(1);
   const [lemonPrice, setLemonPrice] = useState(null);
@@ -191,6 +197,7 @@ export default function Financial() {
   }
 
   function handleRestartLemonade() {
+    setLemonade(lemonadePool[Math.floor(Math.random() * lemonadePool.length)]);
     setLemonRound(1);
     setLemonPrice(null);
     setLemonResult(null);
@@ -199,7 +206,13 @@ export default function Financial() {
   }
 
   // --- Shopping / budget game state ---
-  const shopping = getShopping(pair.mother);
+  // Multiple store scenarios (grocery / stationery / toy shop) live under
+  // `scenarios`; one is picked at random per playthrough, same rotation
+  // pattern as the lemonade stand and weekly-budget tabs.
+  const shoppingPool = getShopping(pair.mother).scenarios;
+  const [shopping, setShopping] = useState(
+    () => shoppingPool[Math.floor(Math.random() * shoppingPool.length)]
+  );
   const [cart, setCart] = useState([]);
   const [shopFeedback, setShopFeedback] = useState(null);
 
@@ -230,6 +243,7 @@ export default function Financial() {
   }
 
   function handleResetShopping() {
+    setShopping(shoppingPool[Math.floor(Math.random() * shoppingPool.length)]);
     setCart([]);
     setShopFeedback(null);
   }
@@ -306,9 +320,14 @@ export default function Financial() {
     setWnFirstTry(true);
   }
 
-  // Save vs Spend: one consequence-based scenario. No "wrong" choice - each
-  // pick shows a concrete tradeoff explanation instead of a right/wrong mark.
-  const saveSpend = activities.savingsDecision;
+  // Save vs Spend: one consequence-based scenario, picked at random from a
+  // pool for replay variety (same rotation pattern as lemonade/shopping).
+  // No "wrong" choice - each pick shows a concrete tradeoff explanation
+  // instead of a right/wrong mark.
+  const savingsDecisionsPool = activities.savingsDecisions;
+  const [saveSpend, setSaveSpend] = useState(
+    () => savingsDecisionsPool[Math.floor(Math.random() * savingsDecisionsPool.length)]
+  );
   const [ssChoice, setSsChoice] = useState(null);
 
   function handleSaveSpendChoose(item) {
@@ -319,6 +338,7 @@ export default function Financial() {
   }
 
   function handleSaveSpendRestart() {
+    setSaveSpend(savingsDecisionsPool[Math.floor(Math.random() * savingsDecisionsPool.length)]);
     setSsChoice(null);
   }
 
@@ -451,6 +471,69 @@ export default function Financial() {
     setSafeAnswered(false);
   }
 
+  // Semana do Dinheiro (weekly budget simulator): tap through a fictional
+  // week, paying fixed obligations, handling a surprise expense, and making
+  // optional want-vs-need choices while tracking progress toward a savings
+  // goal. Tier-2+ content, soft-gated via AgeAdvisory like Simple Interest.
+  const weeklyBudgetPool = activities.weeklyBudget;
+  const [wbAdvisoryDone, setWbAdvisoryDone] = useState(tier >= 2);
+  const [wbScenario, setWbScenario] = useState(
+    () => weeklyBudgetPool[Math.floor(Math.random() * weeklyBudgetPool.length)]
+  );
+  const [wbDayIndex, setWbDayIndex] = useState(0);
+  const [wbBalance, setWbBalance] = useState(wbScenario.allowance);
+  const [wbShortfall, setWbShortfall] = useState(false);
+  const [wbDone, setWbDone] = useState(false);
+
+  const wbDay = wbScenario.days[wbDayIndex];
+  const wbFinished = wbDone || wbDayIndex >= wbScenario.days.length;
+
+  function wbFinishWeek(finalBalance) {
+    setWbDone(true);
+    const goalReached = finalBalance >= wbScenario.goal.amount;
+    recordSkillEvent(profile?.name, "financial-weekly-budget", goalReached);
+    pingProgress({
+      profileName: profile?.name,
+      module: "financial",
+      event: `financial_weekly_budget:${goalReached ? "goal_reached" : "goal_missed"}`,
+    });
+  }
+
+  function wbAdvanceDay(newBalance, spentMoreThanHad) {
+    if (spentMoreThanHad) setWbShortfall(true);
+    setWbBalance(newBalance);
+    if (wbDayIndex + 1 >= wbScenario.days.length) {
+      wbFinishWeek(newBalance);
+    } else {
+      setWbDayIndex((i) => i + 1);
+    }
+  }
+
+  function handleWbPayExpense() {
+    const spentMoreThanHad = wbBalance < wbDay.amount;
+    const newBalance = Math.max(0, wbBalance - wbDay.amount);
+    wbAdvanceDay(newBalance, spentMoreThanHad);
+  }
+
+  function handleWbOptionalChoice(buy) {
+    if (!buy) {
+      wbAdvanceDay(wbBalance, false);
+      return;
+    }
+    const spentMoreThanHad = wbBalance < wbDay.amount;
+    const newBalance = Math.max(0, wbBalance - wbDay.amount);
+    wbAdvanceDay(newBalance, spentMoreThanHad);
+  }
+
+  function handleWbRestart() {
+    const next = weeklyBudgetPool[Math.floor(Math.random() * weeklyBudgetPool.length)];
+    setWbScenario(next);
+    setWbDayIndex(0);
+    setWbBalance(next.allowance);
+    setWbShortfall(false);
+    setWbDone(false);
+  }
+
   return (
     <div className="page">
       <h1>{t("modules.financialTitle")} 💰</h1>
@@ -569,6 +652,16 @@ export default function Financial() {
             <TabSpeakIcon text={t("modules.financialSafetyTitle")} langCode={pair.mother} />
           </span>
         </button>
+        <button
+          type="button"
+          className={"phonics-tab" + (activeTab === "weeklybudget" ? " selected" : "")}
+          onClick={() => setActiveTab("weeklybudget")}
+        >
+          <span className="phonics-tab-inner">
+            📅 {t("modules.financialWeeklyBudgetTitle")}
+            <TabSpeakIcon text={t("modules.financialWeeklyBudgetTitle")} langCode={pair.mother} />
+          </span>
+        </button>
       </div>
 
       {activeTab === "concepts" && (
@@ -579,7 +672,19 @@ export default function Financial() {
               const m = motherConcepts[i];
               const s = secondaryConcepts[i];
               return (
-                <div className="reading-card" key={m.id} onClick={() => handleViewConcept(m)}>
+                <div
+                  className="reading-card"
+                  key={m.id}
+                  role="button"
+                  tabIndex={0}
+                  onClick={() => handleViewConcept(m)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" || e.key === " ") {
+                      e.preventDefault();
+                      handleViewConcept(m);
+                    }
+                  }}
+                >
                   <div className="reading-emoji">{m.emoji}</div>
                   <div className="reading-words">
                     <div className="reading-word-row">
@@ -669,7 +774,9 @@ export default function Financial() {
             />
           ) : (
             <div className="game-card">
-              <p className="page-intro">{t("modules.financialLemonadeIntro")}</p>
+              <p className="page-intro">
+                {t("modules.financialLemonadeIntro")} {lemonade.emoji} {lemonade.productName}
+              </p>
               {!lemonDone ? (
                 <>
                   <div className="game-progress">
@@ -758,7 +865,9 @@ export default function Financial() {
         <>
           <h2 className="section-title">{t("modules.financialShoppingTitle")} 🛒</h2>
           <div className="game-card">
-            <p className="page-intro">{t("modules.financialShoppingIntro")}</p>
+            <p className="page-intro">
+              {t("modules.financialShoppingIntro")} {shopping.emoji} {shopping.storeName}
+            </p>
             <div className="game-progress">
               {t("modules.financialShoppingBudget")}: {formatValue(shopping.budget)} · {t("modules.financialShoppingRemaining")}:{" "}
               {formatValue(Math.max(0, remainingBudget))}
@@ -1160,6 +1269,88 @@ export default function Financial() {
               </div>
             )}
           </div>
+        </>
+      )}
+
+      {activeTab === "weeklybudget" && (
+        <>
+          <h2 className="section-title">{t("modules.financialWeeklyBudgetTitle")} 📅</h2>
+          {tier === 1 && !wbAdvisoryDone ? (
+            <AgeAdvisory
+              langCode={pair.mother}
+              onAccept={() => setWbAdvisoryDone(true)}
+              onDecline={() => setActiveTab("concepts")}
+            />
+          ) : (
+            <div className="game-card">
+              <p className="page-intro">
+                {t("modules.financialWeeklyBudgetIntro")}
+                <SpeakButton text={t("modules.financialWeeklyBudgetIntro")} langCode={pair.mother} />
+              </p>
+              <div className="game-progress">
+                {t("modules.financialWeeklyBudgetAllowance")}: {formatValue(wbScenario.allowance)}
+                {" · "}
+                {t("modules.financialWeeklyBudgetGoal")}: {wbScenario.goal.emoji} {wbScenario.goal.name} (
+                {formatValue(wbScenario.goal.amount)})
+              </div>
+              <div className="game-progress">
+                {t("modules.financialWeeklyBudgetBalance")}: {formatValue(wbBalance)}
+              </div>
+
+              {!wbFinished ? (
+                <>
+                  <div className="game-progress">
+                    {t("modules.financialWeeklyBudgetDay")} {wbDayIndex + 1} / {wbScenario.days.length} ·{" "}
+                    {wbDay.dayLabel}
+                  </div>
+                  <div className="game-emoji">{wbDay.emoji}</div>
+                  {wbDay.type === "surprise" && (
+                    <p className="game-feedback wrong">⚠️ {t("modules.financialWeeklyBudgetSurpriseLabel")}</p>
+                  )}
+                  <p className="page-intro">
+                    {wbDay.label} {wbDay.type !== "optional" ? `— ${formatValue(wbDay.amount)}` : ""}
+                    <SpeakButton text={wbDay.label} langCode={pair.mother} />
+                  </p>
+
+                  {wbDay.type === "optional" ? (
+                    <div className="game-options">
+                      <button type="button" className="big-btn game-option" onClick={() => handleWbOptionalChoice(true)}>
+                        🛍️ {t("modules.financialWeeklyBudgetBuy")} ({formatValue(wbDay.amount)})
+                      </button>
+                      <button type="button" className="big-btn game-option" onClick={() => handleWbOptionalChoice(false)}>
+                        🙅 {t("modules.financialWeeklyBudgetSkip")}
+                      </button>
+                    </div>
+                  ) : (
+                    <button type="button" className="big-btn" onClick={handleWbPayExpense}>
+                      ➡️ {t("modules.financialWeeklyBudgetNextDay")}
+                    </button>
+                  )}
+                </>
+              ) : (
+                <div className="game-result">
+                  <div className="game-emoji">{wbBalance >= wbScenario.goal.amount ? "🏆" : "🌱"}</div>
+                  <p className="game-score">{t("modules.financialWeeklyBudgetSummaryTitle")}</p>
+                  <p className="page-intro">
+                    {t("modules.financialWeeklyBudgetBalance")}: {formatValue(wbBalance)}
+                  </p>
+                  <p className={`game-feedback ${wbBalance >= wbScenario.goal.amount ? "correct" : "wrong"}`}>
+                    {wbBalance >= wbScenario.goal.amount
+                      ? `✅ ${t("modules.financialWeeklyBudgetGoalReached")}`
+                      : `🌱 ${t("modules.financialWeeklyBudgetGoalMissed")}`}
+                  </p>
+                  <p className="financial-explanation">
+                    {wbShortfall
+                      ? t("modules.financialWeeklyBudgetSurpriseStruggled")
+                      : t("modules.financialWeeklyBudgetSurpriseHandled")}
+                  </p>
+                  <button type="button" className="big-btn" onClick={handleWbRestart}>
+                    {t("modules.financialPlayAgain")}
+                  </button>
+                </div>
+              )}
+            </div>
+          )}
         </>
       )}
     </div>

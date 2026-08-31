@@ -1,0 +1,557 @@
+[
+  {
+    "id": "bicicleta",
+    "emoji": "🚲",
+    "category": "transporte",
+    "title": "Bicicleta",
+    "parts": [
+      {
+        "id": "pedais",
+        "emoji": "🦵",
+        "label": "Pedais",
+        "predictionPrompt": "O que achas que os pedais fazem?",
+        "explanation": "Quando empurras os pedais com os pés, fazes girar uma roda dentada. É aqui que começa toda a força que move a bicicleta."
+      },
+      {
+        "id": "corrente",
+        "emoji": "⚙️",
+        "label": "Corrente",
+        "predictionPrompt": "O que achas que a corrente faz?",
+        "explanation": "A corrente liga os pedais à roda de trás. Quando a roda dentada dos pedais gira, a corrente puxa outra roda dentada e faz a roda de trás girar também."
+      },
+      {
+        "id": "rodas",
+        "emoji": "🎡",
+        "label": "Rodas",
+        "predictionPrompt": "O que achas que as rodas fazem?",
+        "explanation": "As rodas giram e avançam sobre o chão, transformando a força dos teus pés em movimento para a frente."
+      },
+      {
+        "id": "travoes",
+        "emoji": "🛑",
+        "label": "Travões",
+        "predictionPrompt": "O que achas que os travões fazem?",
+        "explanation": "Quando apertas as manetes, os travões apertam as rodas e fazem-nas parar de girar, para a bicicleta abrandar ou parar."
+      }
+    ],
+    "summary": "E agora sabes como funciona! Os pedais dão força, a corrente leva essa força até à roda de trás, as rodas giram e avançam, e os travões param tudo quando precisas."
+  },
+  {
+    "id": "carro",
+    "emoji": "🚗",
+    "category": "transporte",
+    "title": "Carro",
+    "parts": [
+      {
+        "id": "motor",
+        "emoji": "🔧",
+        "label": "Motor",
+        "predictionPrompt": "O que achas que o motor faz?",
+        "explanation": "O motor queima combustível ou usa energia elétrica para criar força. É o coração do carro, que produz a energia para tudo se mover."
+      },
+      {
+        "id": "volante",
+        "emoji": "🎡",
+        "label": "Volante",
+        "predictionPrompt": "O que achas que o volante faz?",
+        "explanation": "O volante está ligado às rodas da frente. Quando o condutor o roda, as rodas viram para esse lado e o carro muda de direção."
+      },
+      {
+        "id": "rodas-carro",
+        "emoji": "🛞",
+        "label": "Rodas",
+        "predictionPrompt": "O que achas que as rodas do carro fazem?",
+        "explanation": "As rodas recebem a força do motor e giram sobre a estrada, fazendo o carro avançar."
+      },
+      {
+        "id": "travoes-carro",
+        "emoji": "🛑",
+        "label": "Travões",
+        "predictionPrompt": "O que achas que os travões do carro fazem?",
+        "explanation": "Quando o condutor carrega no pedal do travão, uns discos apertam as rodas com força e o carro abranda ou para."
+      }
+    ],
+    "summary": "E agora sabes como funciona! O motor cria a força, o volante escolhe a direção, as rodas levam o carro para a frente e os travões param tudo em segurança."
+  },
+  {
+    "id": "relogio",
+    "emoji": "⏰",
+    "category": "casa",
+    "title": "Relógio",
+    "parts": [
+      {
+        "id": "pilha",
+        "emoji": "🔋",
+        "label": "Pilha",
+        "predictionPrompt": "O que achas que a pilha faz?",
+        "explanation": "A pilha dá energia elétrica ao relógio, tal como a comida nos dá energia a nós. Sem pilha, o relógio para."
+      },
+      {
+        "id": "engrenagens",
+        "emoji": "⚙️",
+        "label": "Engrenagens",
+        "predictionPrompt": "O que achas que as engrenagens fazem?",
+        "explanation": "As engrenagens são rodinhas dentadas dentro do relógio. A energia da pilha faz uma girar, e essa faz girar a seguinte, sempre no ritmo certo."
+      },
+      {
+        "id": "ponteiros",
+        "emoji": "🕐",
+        "label": "Ponteiros",
+        "predictionPrompt": "O que achas que os ponteiros fazem?",
+        "explanation": "Os ponteiros estão ligados às engrenagens. Movem-se devagar e com precisão para nos mostrar as horas, os minutos e os segundos."
+      },
+      {
+        "id": "mostrador",
+        "emoji": "🔢",
+        "label": "Mostrador",
+        "predictionPrompt": "O que achas que o mostrador faz?",
+        "explanation": "O mostrador tem os números à volta. É onde lemos a posição dos ponteiros para saber que horas são."
+      }
+    ],
+    "summary": "E agora sabes como funciona! A pilha dá energia, as engrenagens giram no ritmo certo, os ponteiros movem-se devagar e o mostrador ajuda-te a ler as horas."
+  },
+  {
+    "id": "smartphone",
+    "emoji": "📱",
+    "category": "tecnologia",
+    "title": "Smartphone",
+    "parts": [
+      {
+        "id": "bateria-phone",
+        "emoji": "🔋",
+        "label": "Bateria",
+        "predictionPrompt": "O que achas que a bateria faz?",
+        "explanation": "A bateria guarda energia elétrica e alimenta todas as partes do telemóvel, para ele funcionar mesmo longe da tomada."
+      },
+      {
+        "id": "processador",
+        "emoji": "🧠",
+        "label": "Processador",
+        "predictionPrompt": "O que achas que o processador faz?",
+        "explanation": "O processador é como o cérebro do telemóvel. Faz milhões de cálculos por segundo para abrir apps, jogos e mensagens."
+      },
+      {
+        "id": "ecra-tatil",
+        "emoji": "🖐️",
+        "label": "Ecrã tátil",
+        "predictionPrompt": "O que achas que o ecrã tátil faz?",
+        "explanation": "O ecrã mostra imagens e também sente o toque dos teus dedos, para saber onde queres tocar e o que queres abrir."
+      },
+      {
+        "id": "antena",
+        "emoji": "📶",
+        "label": "Antena",
+        "predictionPrompt": "O que achas que a antena faz?",
+        "explanation": "A antena envia e recebe sinais invisíveis pelo ar, ligando o telemóvel à internet e permitindo fazer chamadas."
+      }
+    ],
+    "summary": "E agora sabes como funciona! A bateria dá energia, o processador pensa, o ecrã mostra e sente o toque, e a antena liga o telemóvel ao mundo."
+  },
+  {
+    "id": "frigorifico",
+    "emoji": "🧊",
+    "category": "casa",
+    "title": "Frigorífico",
+    "parts": [
+      {
+        "id": "compressor",
+        "emoji": "⚙️",
+        "label": "Compressor",
+        "predictionPrompt": "O que achas que o compressor faz?",
+        "explanation": "O compressor é o motor do frigorífico. Aperta um gás especial, fazendo-o circular por tubos e ficar muito frio."
+      },
+      {
+        "id": "gas-refrigerante",
+        "emoji": "❄️",
+        "label": "Gás refrigerante",
+        "predictionPrompt": "O que achas que o gás refrigerante faz?",
+        "explanation": "Esse gás frio circula por dentro das paredes do frigorífico e absorve o calor de dentro, deixando os alimentos frescos."
+      },
+      {
+        "id": "termostato",
+        "emoji": "🌡️",
+        "label": "Termóstato",
+        "predictionPrompt": "O que achas que o termóstato faz?",
+        "explanation": "O termóstato é como um termómetro inteligente. Mede a temperatura lá dentro e liga ou desliga o compressor para manter o frio certo."
+      },
+      {
+        "id": "isolamento",
+        "emoji": "🚪",
+        "label": "Porta isolada",
+        "predictionPrompt": "O que achas que a porta isolada faz?",
+        "explanation": "As paredes e a porta do frigorífico têm um material especial que impede o frio de sair e o calor de entrar."
+      }
+    ],
+    "summary": "E agora sabes como funciona! O compressor faz o gás circular, o gás rouba o calor de dentro, o termóstato mantém a temperatura certa e a porta isolada guarda o frio."
+  },
+  {
+    "id": "elevador",
+    "emoji": "🛗",
+    "category": "casa",
+    "title": "Elevador",
+    "parts": [
+      {
+        "id": "botoes",
+        "emoji": "🔘",
+        "label": "Botões",
+        "predictionPrompt": "O que achas que os botões fazem?",
+        "explanation": "Quando carregas num botão, dizes ao elevador para que andar queres ir. O sistema recebe esse pedido."
+      },
+      {
+        "id": "motor-elevador",
+        "emoji": "⚙️",
+        "label": "Motor",
+        "predictionPrompt": "O que achas que o motor do elevador faz?",
+        "explanation": "O motor puxa os cabos de aço para cima ou deixa-os deslizar para baixo, fazendo a cabina subir ou descer."
+      },
+      {
+        "id": "cabos",
+        "emoji": "🪢",
+        "label": "Cabos de aço",
+        "predictionPrompt": "O que achas que os cabos de aço fazem?",
+        "explanation": "Os cabos são muito fortes e seguram a cabina, ligando-a ao motor lá em cima, para ela nunca cair."
+      },
+      {
+        "id": "cabina",
+        "emoji": "🚪",
+        "label": "Cabina",
+        "predictionPrompt": "O que achas que a cabina faz?",
+        "explanation": "A cabina é a caixa onde entras. Desliza por carris verticais e para exatamente à altura de cada andar."
+      }
+    ],
+    "summary": "E agora sabes como funciona! Os botões dizem o andar, o motor puxa os cabos, os cabos seguram a cabina, e a cabina leva-te certinho ao andar que escolheste."
+  },
+  {
+    "id": "torneira",
+    "emoji": "🚰",
+    "category": "casa",
+    "title": "Torneira",
+    "parts": [
+      {
+        "id": "cano",
+        "emoji": "🚿",
+        "label": "Cano de água",
+        "predictionPrompt": "O que achas que o cano de água faz?",
+        "explanation": "Um cano por baixo da torneira traz água desde os canos da casa, sempre com pressão, à espera de sair."
+      },
+      {
+        "id": "valvula",
+        "emoji": "🔧",
+        "label": "Válvula",
+        "predictionPrompt": "O que achas que a válvula faz?",
+        "explanation": "Quando rodas ou levantas a manípulo da torneira, uma válvula lá dentro abre uma passagem para a água poder correr."
+      },
+      {
+        "id": "vedante",
+        "emoji": "🔘",
+        "label": "Vedante",
+        "predictionPrompt": "O que achas que o vedante faz?",
+        "explanation": "Um pequeno anel de borracha fecha bem os espaços, para a água só sair pela bica e não pingar por outro lado."
+      },
+      {
+        "id": "bica",
+        "emoji": "💧",
+        "label": "Bica",
+        "predictionPrompt": "O que achas que a bica faz?",
+        "explanation": "A bica é a saída final. É por ali que a água sai da torneira, pronta para lavares as mãos ou encheres um copo."
+      }
+    ],
+    "summary": "E agora sabes como funciona! O cano traz a água, a válvula abre a passagem quando rodas a torneira, o vedante impede fugas e a bica deixa a água sair."
+  },
+  {
+    "id": "autoclismo",
+    "emoji": "🚽",
+    "category": "casa",
+    "title": "Autoclismo",
+    "parts": [
+      {
+        "id": "botao-autoclismo",
+        "emoji": "🔘",
+        "label": "Botão",
+        "predictionPrompt": "O que achas que o botão do autoclismo faz?",
+        "explanation": "Quando carregas no botão, abres uma válvula dentro do depósito de água que fica por cima ou atrás da sanita."
+      },
+      {
+        "id": "descarga",
+        "emoji": "🌊",
+        "label": "Descarga de água",
+        "predictionPrompt": "O que achas que acontece quando a água desce?",
+        "explanation": "A água guardada no depósito desce toda de uma vez com força, empurrando tudo o que está na sanita para o cano de saída."
+      },
+      {
+        "id": "boia",
+        "emoji": "🎈",
+        "label": "Bóia",
+        "predictionPrompt": "O que achas que a bóia faz?",
+        "explanation": "Depois da descarga, uma bóia dentro do depósito sobe devagar com a água nova e, quando chega ao topo, fecha a torneira que enche o depósito."
+      },
+      {
+        "id": "sifao",
+        "emoji": "🌀",
+        "label": "Sifão",
+        "predictionPrompt": "O que achas que o tubo em forma de curva faz?",
+        "explanation": "O cano em forma de S guarda sempre um pouco de água, criando uma barreira que impede maus cheiros de subirem dos esgotos."
+      }
+    ],
+    "summary": "E agora sabes como funciona! O botão abre a válvula, a água desce com força e limpa a sanita, a bóia enche o depósito outra vez e o sifão guarda água para bloquear os cheiros."
+  },
+  {
+    "id": "camara-fotografica",
+    "emoji": "📷",
+    "category": "tecnologia",
+    "title": "Máquina fotográfica",
+    "parts": [
+      {
+        "id": "lente",
+        "emoji": "🔍",
+        "label": "Lente",
+        "predictionPrompt": "O que achas que a lente faz?",
+        "explanation": "A lente é como um olho de vidro. Dobra a luz que vem do mundo lá fora e foca-a dentro da máquina."
+      },
+      {
+        "id": "obturador",
+        "emoji": "⏱️",
+        "label": "Obturador",
+        "predictionPrompt": "O que achas que o obturador faz?",
+        "explanation": "O obturador é uma cortina que abre e fecha muito depressa, deixando entrar luz só durante um instante, o tempo certo para tirar a foto."
+      },
+      {
+        "id": "sensor",
+        "emoji": "📸",
+        "label": "Sensor",
+        "predictionPrompt": "O que achas que o sensor faz?",
+        "explanation": "O sensor está lá dentro e capta a luz que passou pela lente, transformando-a numa imagem digital."
+      },
+      {
+        "id": "botao-camara",
+        "emoji": "🔘",
+        "label": "Botão disparador",
+        "predictionPrompt": "O que achas que o botão disparador faz?",
+        "explanation": "Quando carregas neste botão, dizes à máquina o momento exato: abre o obturador, deixa entrar luz e guarda a foto."
+      }
+    ],
+    "summary": "E agora sabes como funciona! A lente dobra a luz, o obturador abre por um instante, o sensor capta a imagem e o botão escolhe o momento certo para tirar a foto."
+  },
+  {
+    "id": "painel-solar",
+    "emoji": "☀️",
+    "category": "energia",
+    "title": "Painel solar",
+    "parts": [
+      {
+        "id": "luz-sol",
+        "emoji": "☀️",
+        "label": "Luz do sol",
+        "predictionPrompt": "O que achas que acontece quando a luz do sol bate no painel?",
+        "explanation": "A luz do sol é feita de pequenos pacotes de energia. Quando batem no painel, essa energia começa a ser transformada."
+      },
+      {
+        "id": "celulas",
+        "emoji": "🔲",
+        "label": "Células fotovoltaicas",
+        "predictionPrompt": "O que achas que as células fotovoltaicas fazem?",
+        "explanation": "As células são feitas de um material especial que, quando a luz bate nele, liberta eletrões e cria eletricidade."
+      },
+      {
+        "id": "inversor",
+        "emoji": "🔌",
+        "label": "Inversor",
+        "predictionPrompt": "O que achas que o inversor faz?",
+        "explanation": "A eletricidade que sai do painel não é do tipo certo para a casa. O inversor transforma-a no tipo de eletricidade que usamos nas tomadas."
+      },
+      {
+        "id": "fios",
+        "emoji": "⚡",
+        "label": "Fios elétricos",
+        "predictionPrompt": "O que achas que os fios elétricos fazem?",
+        "explanation": "Os fios levam a eletricidade já transformada até à casa, para poderes ligar luzes, a televisão ou carregar o telemóvel."
+      }
+    ],
+    "summary": "E agora sabes como funciona! A luz do sol chega às células, as células criam eletricidade, o inversor transforma-a no tipo certo e os fios levam-na até casa."
+  },
+  {
+    "id": "aspirador",
+    "emoji": "🧹",
+    "category": "casa",
+    "title": "Aspirador",
+    "parts": [
+      {
+        "id": "motor-aspirador",
+        "emoji": "🔧",
+        "label": "Motor",
+        "predictionPrompt": "O que achas que o motor do aspirador faz?",
+        "explanation": "O motor gira muito depressa e cria uma sucção forte, puxando o ar (e o pó) para dentro do aspirador."
+      },
+      {
+        "id": "filtro",
+        "emoji": "🌬️",
+        "label": "Filtro",
+        "predictionPrompt": "O que achas que o filtro faz?",
+        "explanation": "O filtro deixa o ar passar mas prende o pó e a sujidade, para não voltarem a sair para o quarto."
+      },
+      {
+        "id": "escova",
+        "emoji": "🧽",
+        "label": "Escova",
+        "predictionPrompt": "O que achas que a escova faz?",
+        "explanation": "A escova roça no chão e solta o pó e os pelos, para serem sugados mais facilmente pelo tubo."
+      },
+      {
+        "id": "saco",
+        "emoji": "🗑️",
+        "label": "Saco de pó",
+        "predictionPrompt": "O que achas que o saco de pó faz?",
+        "explanation": "Todo o pó sugado fica guardado dentro deste saco (ou depósito), até o esvaziares."
+      }
+    ],
+    "summary": "E agora sabes como funciona! O motor suga o ar, a escova solta o pó do chão, o filtro limpa o ar e o saco guarda toda a sujidade."
+  },
+  {
+    "id": "impressora",
+    "emoji": "🖨️",
+    "category": "tecnologia",
+    "title": "Impressora",
+    "parts": [
+      {
+        "id": "cartucho",
+        "emoji": "🖋️",
+        "label": "Tinteiro",
+        "predictionPrompt": "O que achas que o tinteiro faz?",
+        "explanation": "O tinteiro guarda a tinta colorida ou preta que vai desenhar as letras e imagens no papel."
+      },
+      {
+        "id": "cabeca-impressao",
+        "emoji": "🎯",
+        "label": "Cabeça de impressão",
+        "predictionPrompt": "O que achas que a cabeça de impressão faz?",
+        "explanation": "A cabeça de impressão desliza de um lado para o outro e deixa cair gotinhas de tinta exatamente onde é preciso."
+      },
+      {
+        "id": "rolos",
+        "emoji": "🎡",
+        "label": "Rolos",
+        "predictionPrompt": "O que achas que os rolos fazem?",
+        "explanation": "Os rolos giram e puxam o papel devagar para dentro da impressora, folha a folha."
+      },
+      {
+        "id": "papel",
+        "emoji": "📄",
+        "label": "Papel",
+        "predictionPrompt": "O que achas que acontece ao papel?",
+        "explanation": "O papel passa por baixo da cabeça de impressão, recebe a tinta e sai já com o desenho ou o texto impresso."
+      }
+    ],
+    "summary": "E agora sabes como funciona! O tinteiro guarda a tinta, a cabeça de impressão espalha-a no sítio certo, os rolos puxam o papel e ele sai pronto com o que imprimiste."
+  },
+  {
+    "id": "semaforo",
+    "emoji": "🚦",
+    "category": "cidade",
+    "title": "Semáforo",
+    "parts": [
+      {
+        "id": "sensor-transito",
+        "emoji": "🚗",
+        "label": "Sensor",
+        "predictionPrompt": "O que achas que o sensor do semáforo faz?",
+        "explanation": "Alguns semáforos têm um sensor que deteta os carros ou as pessoas à espera, para saber quando é preciso mudar a luz."
+      },
+      {
+        "id": "controlador",
+        "emoji": "⏱️",
+        "label": "Controlador",
+        "predictionPrompt": "O que achas que o controlador faz?",
+        "explanation": "O controlador é como um pequeno computador que conta o tempo e decide quando cada luz deve acender."
+      },
+      {
+        "id": "luzes",
+        "emoji": "🔴",
+        "label": "Luzes",
+        "predictionPrompt": "O que achas que as luzes fazem?",
+        "explanation": "As luzes vermelha, amarela e verde acendem-se por ordem, para dizer aos carros e às pessoas quando parar ou avançar."
+      },
+      {
+        "id": "fios-semaforo",
+        "emoji": "⚡",
+        "label": "Fios elétricos",
+        "predictionPrompt": "O que achas que os fios elétricos fazem?",
+        "explanation": "Os fios levam eletricidade até ao semáforo, para as luzes poderem acender e o controlador poder funcionar."
+      }
+    ],
+    "summary": "E agora sabes como funciona! O sensor percebe quem está à espera, o controlador decide a altura certa, as luzes acendem por ordem e os fios dão-lhes energia."
+  },
+  {
+    "id": "comboio",
+    "emoji": "🚆",
+    "category": "transporte",
+    "title": "Comboio",
+    "parts": [
+      {
+        "id": "motor-comboio",
+        "emoji": "🔧",
+        "label": "Motor",
+        "predictionPrompt": "O que achas que o motor do comboio faz?",
+        "explanation": "O motor transforma energia elétrica ou combustível em força, fazendo girar as rodas com muita potência."
+      },
+      {
+        "id": "carris",
+        "emoji": "🛤️",
+        "label": "Carris",
+        "predictionPrompt": "O que achas que os carris fazem?",
+        "explanation": "Os carris são dois trilhos de metal que guiam o comboio, mantendo-o sempre no caminho certo."
+      },
+      {
+        "id": "rodas-comboio",
+        "emoji": "🎡",
+        "label": "Rodas",
+        "predictionPrompt": "O que achas que as rodas do comboio fazem?",
+        "explanation": "As rodas do comboio são de metal e encaixam perfeitamente nos carris, girando para o comboio avançar sem sair do sítio."
+      },
+      {
+        "id": "pantografo",
+        "emoji": "⚡",
+        "label": "Pantógrafo",
+        "predictionPrompt": "O que achas que esta peça no topo do comboio faz?",
+        "explanation": "O pantógrafo toca nos cabos elétricos por cima da linha e traz a eletricidade até ao motor do comboio."
+      }
+    ],
+    "summary": "E agora sabes como funciona! O motor cria a força, os carris guiam o caminho, as rodas mantêm o comboio nos carris e o pantógrafo traz a eletricidade."
+  },
+  {
+    "id": "escada-rolante",
+    "emoji": "🪜",
+    "category": "cidade",
+    "title": "Escada rolante",
+    "parts": [
+      {
+        "id": "motor-escada",
+        "emoji": "⚙️",
+        "label": "Motor",
+        "predictionPrompt": "O que achas que o motor da escada rolante faz?",
+        "explanation": "O motor gira sem parar e move toda a escada, para os degraus subirem ou descerem continuamente."
+      },
+      {
+        "id": "corrente-escada",
+        "emoji": "⛓️",
+        "label": "Corrente",
+        "predictionPrompt": "O que achas que a corrente faz?",
+        "explanation": "Uma corrente forte liga o motor aos degraus, transmitindo o movimento para toda a escada."
+      },
+      {
+        "id": "degraus",
+        "emoji": "🪜",
+        "label": "Degraus",
+        "predictionPrompt": "O que achas que os degraus fazem?",
+        "explanation": "Os degraus estão presos à corrente e formam uma escada contínua, aparecendo lisos no fundo e ficando com relevo à medida que sobem."
+      },
+      {
+        "id": "corrimao",
+        "emoji": "🤚",
+        "label": "Corrimão",
+        "predictionPrompt": "O que achas que o corrimão faz?",
+        "explanation": "O corrimão move-se à mesma velocidade dos degraus, para te apoiares com a mão em segurança enquanto sobes ou desces."
+      }
+    ],
+    "summary": "E agora sabes como funciona! O motor não para de girar, a corrente move os degraus, os degraus formam a escada e o corrimão anda ao mesmo ritmo para te apoiares."
+  }
+]

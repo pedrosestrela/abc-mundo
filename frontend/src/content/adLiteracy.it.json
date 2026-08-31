@@ -1,10 +1,114 @@
 [
-  { "id": "ad1", "emoji": "🌟", "text": "🌟🌟🌟 IL MIGLIOR GIOCATTOLO DEL MONDO!!! Solo oggi!!!", "isAd": true, "explanation": "\"Il migliore del mondo\" è un'opinione, nessuno può dimostrarlo. E \"solo oggi\" vuole spingerti a comprare in fretta." },
-  { "id": "fact1", "emoji": "📏", "text": "Questo giocattolo è alto 20 centimetri.", "isAd": false, "explanation": "Questo è un fatto: puoi prendere un righello e verificare la misura." },
-  { "id": "ad2", "emoji": "😱", "text": "Ti piacerà PIÙ di qualsiasi cosa tu abbia mai provato!", "isAd": true, "explanation": "Nessuno sa cosa proverai. È un'opinione esagerata per entusiasmarti." },
-  { "id": "fact2", "emoji": "🔋", "text": "Questa torcia usa due pile AA.", "isAd": false, "explanation": "Questo è un fatto che puoi verificare aprendo la torcia." },
-  { "id": "ad3", "emoji": "⏰", "text": "Ultimi pezzi! Compra SUBITO prima che finiscano!", "isAd": true, "explanation": "Creare urgenza (\"ultimi pezzi\", \"subito\") è una tecnica pubblicitaria per farti decidere senza pensare." },
-  { "id": "fact3", "emoji": "🍫", "text": "Questa tavoletta di cioccolato pesa 100 grammi.", "isAd": false, "explanation": "È un fatto: puoi pesare la tavoletta su una bilancia." },
-  { "id": "ad4", "emoji": "🏆", "text": "Il gusto numero 1 scelto da TUTTI i bambini!", "isAd": true, "explanation": "\"Tutti i bambini\" è un'esagerazione — è impossibile chiedere a ogni bambino del mondo." },
-  { "id": "fact4", "emoji": "🎨", "text": "Questa matita colorata è rossa.", "isAd": false, "explanation": "È un fatto semplice che chiunque può vedere e confermare." }
+  {
+    "id": "ad1",
+    "emoji": "🌟",
+    "text": "🌟🌟🌟 IL MIGLIOR GIOCATTOLO DEL MONDO!!! Solo oggi!!!",
+    "isAd": true,
+    "explanation": "\"Il migliore del mondo\" è un'opinione, nessuno può dimostrarlo. E \"solo oggi\" vuole spingerti a comprare in fretta."
+  },
+  {
+    "id": "fact1",
+    "emoji": "📏",
+    "text": "Questo giocattolo è alto 20 centimetri.",
+    "isAd": false,
+    "explanation": "Questo è un fatto: puoi prendere un righello e verificare la misura."
+  },
+  {
+    "id": "ad2",
+    "emoji": "😱",
+    "text": "Ti piacerà PIÙ di qualsiasi cosa tu abbia mai provato!",
+    "isAd": true,
+    "explanation": "Nessuno sa cosa proverai. È un'opinione esagerata per entusiasmarti."
+  },
+  {
+    "id": "fact2",
+    "emoji": "🔋",
+    "text": "Questa torcia usa due pile AA.",
+    "isAd": false,
+    "explanation": "Questo è un fatto che puoi verificare aprendo la torcia."
+  },
+  {
+    "id": "ad3",
+    "emoji": "⏰",
+    "text": "Ultimi pezzi! Compra SUBITO prima che finiscano!",
+    "isAd": true,
+    "explanation": "Creare urgenza (\"ultimi pezzi\", \"subito\") è una tecnica pubblicitaria per farti decidere senza pensare."
+  },
+  {
+    "id": "fact3",
+    "emoji": "🍫",
+    "text": "Questa tavoletta di cioccolato pesa 100 grammi.",
+    "isAd": false,
+    "explanation": "È un fatto: puoi pesare la tavoletta su una bilancia."
+  },
+  {
+    "id": "ad4",
+    "emoji": "🏆",
+    "text": "Il gusto numero 1 scelto da TUTTI i bambini!",
+    "isAd": true,
+    "explanation": "\"Tutti i bambini\" è un'esagerazione — è impossibile chiedere a ogni bambino del mondo."
+  },
+  {
+    "id": "fact4",
+    "emoji": "🎨",
+    "text": "Questa matita colorata è rossa.",
+    "isAd": false,
+    "explanation": "È un fatto semplice che chiunque può vedere e confermare."
+  },
+  {
+    "id": "ad5",
+    "emoji": "🎉",
+    "text": "GRATIS se compri adesso! Non perdere questa occasione unica!",
+    "isAd": true,
+    "explanation": "\"Gratis\" accanto a \"compra adesso\" è una tecnica per farti decidere in fretta, senza pensare davvero se ne hai bisogno."
+  },
+  {
+    "id": "fact5",
+    "emoji": "🧮",
+    "text": "Questa scatola ha 12 pastelli.",
+    "isAd": false,
+    "explanation": "Questo è un fatto: puoi aprire la scatola e contare i pastelli."
+  },
+  {
+    "id": "ad6",
+    "emoji": "👑",
+    "text": "Diventa l'invidia di tutti i tuoi amici con questo giocattolo FANTASTICO!",
+    "isAd": true,
+    "explanation": "Promettere che sarai \"l'invidia di tutti\" è un'opinione esagerata per farti desiderarlo confrontandoti con gli altri."
+  },
+  {
+    "id": "fact6",
+    "emoji": "📐",
+    "text": "Questa scatola di giocattoli misura 30 per 20 centimetri.",
+    "isAd": false,
+    "explanation": "Questo è un fatto che puoi confermare con un metro."
+  },
+  {
+    "id": "ad7",
+    "emoji": "🥇",
+    "text": "Approvato dai più grandi campioni del mondo!",
+    "isAd": true,
+    "explanation": "Dire che è \"approvato dai campioni\" senza prove è una tecnica per farlo sembrare più affidabile di quanto realmente sia."
+  },
+  {
+    "id": "fact7",
+    "emoji": "🎈",
+    "text": "Questa confezione ha 10 palloncini.",
+    "isAd": false,
+    "explanation": "Questo è un fatto semplice: basta contare i palloncini nella confezione."
+  },
+  {
+    "id": "ad8",
+    "emoji": "💥",
+    "text": "Non crederai a cosa fa questo giocattolo! Guarda SUBITO!!!",
+    "isAd": true,
+    "explanation": "Frasi come \"non crederai\" creano curiosità esagerata per tenerti a guardare, anche senza dire nulla di concreto."
+  },
+  {
+    "id": "fact8",
+    "emoji": "🚗",
+    "text": "Questa macchinina ha quattro ruote.",
+    "isAd": false,
+    "explanation": "Questo è un fatto semplice che chiunque può vedere e confermare."
+  }
 ]

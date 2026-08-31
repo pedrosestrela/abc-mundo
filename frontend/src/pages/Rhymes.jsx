@@ -4,6 +4,7 @@ import { getRhymes } from "../content/index.js";
 import { getLangPair, getProfile, pingProgress } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
 import HelpButton from "../components/HelpButton.jsx";
+import MascotBubble from "../components/mascots/MascotBubble.jsx";
 
 const TABS = [
   { key: "lengalengas", emoji: "🎈", label: "rhymesTabLengalengas" },
@@ -48,6 +49,9 @@ export default function Rhymes() {
         <HelpButton text={t("modules.rhymesHelpMain")} langCode={pair.mother} />
       </div>
       <p className="page-intro">{t("modules.rhymesIntro", "")}</p>
+      <MascotBubble character="milo" mood="happy" langCode={pair.mother}>
+        {t("modules.rhymesMascotIntro")}
+      </MascotBubble>
 
       <div className="phonics-tabs">
         {TABS.map((tabDef) => (

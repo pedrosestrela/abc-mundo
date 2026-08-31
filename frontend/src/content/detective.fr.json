@@ -173,5 +173,269 @@
     "emoji": "💻",
     "isFact": false,
     "explanation": "C'est un mythe et une blague ! Passer beaucoup de temps devant les écrans peut fatiguer les yeux, mais ne change pas leur forme. Il reste quand même important de faire des pauses."
+  },
+  {
+    "id": "d26",
+    "type": "observation",
+    "emoji": "👣",
+    "title": "L'Affaire des Empreintes",
+    "scene": "Des empreintes boueuses ont été trouvées dans le couloir de l'école jusqu'à la salle de classe, et la fenêtre de la classe était ouverte.",
+    "clues": [
+      {
+        "id": "c1",
+        "emoji": "👟",
+        "text": "De grandes empreintes boueuses sur le sol"
+      },
+      {
+        "id": "c2",
+        "emoji": "🪟",
+        "text": "La fenêtre était ouverte"
+      },
+      {
+        "id": "c3",
+        "emoji": "🎒",
+        "text": "Un sac à dos bleu près de la porte"
+      }
+    ],
+    "question": "Quel indice montre le chemin de la personne qui a sali le sol ?",
+    "correctClueId": "c1",
+    "explanation": "Les empreintes sont l'indice le plus direct : elles montrent exactement le trajet de la personne entrée avec des chaussures sales. La fenêtre ouverte ou le sac à dos n'ont peut-être rien à voir avec l'affaire."
+  },
+  {
+    "id": "d27",
+    "type": "observation",
+    "emoji": "🥀",
+    "title": "Le Mystère de la Plante Fanée",
+    "scene": "La plante de la classe était fanée après le week-end, même si elle avait été arrosée vendredi avant le départ de tout le monde.",
+    "clues": [
+      {
+        "id": "c1",
+        "emoji": "☀️",
+        "text": "Le pot était près de la fenêtre, en plein soleil"
+      },
+      {
+        "id": "c2",
+        "emoji": "💧",
+        "text": "La terre était sèche et craquelée"
+      },
+      {
+        "id": "c3",
+        "emoji": "🪴",
+        "text": "Le pot est en argile rouge"
+      }
+    ],
+    "question": "Quel indice explique le mieux pourquoi la plante a fané ?",
+    "correctClueId": "c2",
+    "explanation": "La terre sèche et craquelée montre que l'eau s'est évaporée rapidement avec la chaleur du week-end. C'est le manque d'eau, pas la couleur du pot, qui a fait faner la plante."
+  },
+  {
+    "id": "d28",
+    "type": "observation",
+    "emoji": "🍦",
+    "title": "La Photo Trompeuse",
+    "scene": "Une photo montre la main d'un enfant tenant une glace qui semble gigantesque, plus grande que sa tête.",
+    "clues": [
+      {
+        "id": "c1",
+        "emoji": "📷",
+        "text": "La photo a été prise très près de la glace"
+      },
+      {
+        "id": "c2",
+        "emoji": "🧒",
+        "text": "On ne voit pas le reste du corps de l'enfant sur la photo"
+      },
+      {
+        "id": "c3",
+        "emoji": "🍨",
+        "text": "La glace a plusieurs boules colorées"
+      }
+    ],
+    "question": "Quel indice explique pourquoi la glace paraît si gigantesque ?",
+    "correctClueId": "c1",
+    "explanation": "Quand quelque chose est très proche de l'appareil photo, ça paraît plus grand que la réalité. Les photos ne montrent qu'une partie de la réalité — il vaut toujours la peine de penser à ce qui se trouve hors du cadre."
+  },
+  {
+    "id": "d29",
+    "type": "deduction",
+    "emoji": "🎂",
+    "title": "Qui a Mangé le Gâteau ?",
+    "setup": "Le gâteau au chocolat a disparu de la cuisine ! Il y a trois suspects.",
+    "suspects": [
+      {
+        "id": "tomas",
+        "name": "Tomas",
+        "emoji": "🧒"
+      },
+      {
+        "id": "ines",
+        "name": "Ines",
+        "emoji": "👧"
+      },
+      {
+        "id": "bobi",
+        "name": "Bobi",
+        "emoji": "🐶"
+      }
+    ],
+    "statements": [
+      "Tomas jouait au ballon dans le jardin tout l'après-midi.",
+      "Ines avait du chocolat autour de la bouche quand maman est arrivée.",
+      "Bobi dormait dans son panier toute la journée."
+    ],
+    "question": "Qui a mangé le gâteau ?",
+    "solutionId": "ines",
+    "explanation": "Tomas était dans le jardin et Bobi dormait — aucun des deux n'a pu manger le gâteau. Ines avait du chocolat sur la bouche, un indice clair que c'était elle."
+  },
+  {
+    "id": "d30",
+    "type": "deduction",
+    "emoji": "🏺",
+    "title": "Qui a Cassé le Vase ?",
+    "setup": "Le vase du salon s'est cassé pendant que les parents travaillaient. Il y a trois suspects.",
+    "suspects": [
+      {
+        "id": "whiskers",
+        "name": "Whiskers",
+        "emoji": "🐱"
+      },
+      {
+        "id": "maria",
+        "name": "Maria",
+        "emoji": "👧"
+      },
+      {
+        "id": "pedro",
+        "name": "Pedro",
+        "emoji": "🧒"
+      }
+    ],
+    "statements": [
+      "Le chat Whiskers était enfermé dehors toute la journée.",
+      "Maria était à l'école jusqu'à 17h, quand le vase était encore entier.",
+      "Pedro était seul à la maison en train de jouer au ballon dans le salon."
+    ],
+    "question": "Qui a cassé le vase ?",
+    "solutionId": "pedro",
+    "explanation": "Whiskers était enfermé dehors et Maria était à l'école quand le vase était encore entier — aucun des deux n'a pu le faire. Seul Pedro était à la maison en train de jouer au ballon dans le salon."
+  },
+  {
+    "id": "d31",
+    "type": "deduction",
+    "emoji": "🍪",
+    "title": "Qui a Mangé les Biscuits ?",
+    "setup": "Les biscuits au chocolat ont disparu du pot. Il y a trois suspects.",
+    "suspects": [
+      {
+        "id": "avo",
+        "name": "Grand-mère",
+        "emoji": "👵"
+      },
+      {
+        "id": "bebe",
+        "name": "Bébé",
+        "emoji": "👶"
+      },
+      {
+        "id": "irmao",
+        "name": "Grand frère",
+        "emoji": "🧑"
+      }
+    ],
+    "statements": [
+      "Grand-mère n'aime pas les biscuits au chocolat et n'en mange jamais.",
+      "Le bébé n'a pas encore de dents pour manger des biscuits durs.",
+      "Le grand frère avait des miettes de biscuit dans sa poche."
+    ],
+    "question": "Qui a mangé les biscuits ?",
+    "solutionId": "irmao",
+    "explanation": "Grand-mère n'aime pas ces biscuits et le bébé ne peut pas les mâcher — aucun des deux n'a pu le faire. Les miettes dans la poche du grand frère sont l'indice qui le trahit."
+  },
+  {
+    "id": "d32",
+    "type": "sources",
+    "emoji": "🍫",
+    "title": "Est-ce Vrai ? — Le Chocolat Magique",
+    "claim": "Un camarade a dit que si tu manges du chocolat tous les jours, tu obtiens des super pouvoirs.",
+    "sourceA": {
+      "label": "Un ami de l'école",
+      "text": "A dit qu'il l'a entendu d'un autre ami, mais ne sait pas où ça a été confirmé.",
+      "credible": false
+    },
+    "sourceB": {
+      "label": "Un livre de science sur le corps humain",
+      "text": "Explique comment l'alimentation affecte la santé, mais ne parle jamais de super pouvoirs.",
+      "credible": true
+    },
+    "correctSourceId": "b",
+    "explanation": "Un livre de science est écrit par des experts et vérifié avec soin, il est donc plus fiable qu'une rumeur entre amis. Quand quelque chose semble trop beau pour être vrai, ça vaut la peine de vérifier dans une source sérieuse."
+  },
+  {
+    "id": "d33",
+    "type": "sources",
+    "emoji": "📅",
+    "title": "Est-ce Vrai ? — Le Jour Férié Secret",
+    "claim": "Un message sur internet dit qu'il n'y a pas d'école demain à cause d'un jour férié secret.",
+    "sourceA": {
+      "label": "Un message transféré par des inconnus dans un groupe",
+      "text": "Personne ne sait qui l'a écrit en premier ni d'où vient l'information.",
+      "credible": false
+    },
+    "sourceB": {
+      "label": "Le site officiel de l'école",
+      "text": "Publie toujours le calendrier scolaire officiel et confirmé.",
+      "credible": true
+    },
+    "correctSourceId": "b",
+    "explanation": "Le site officiel de l'école est la source qui décide vraiment du calendrier — il est toujours plus fiable qu'un message passé par beaucoup de personnes et qui a pu changer en chemin."
+  },
+  {
+    "id": "d34",
+    "type": "sources",
+    "emoji": "🦖",
+    "title": "Est-ce Vrai ? — Le Dinosaure Vivant",
+    "claim": "Quelqu'un sur les réseaux sociaux dit avoir vu un dinosaure vivant dans une forêt.",
+    "sourceA": {
+      "label": "Une vidéo sans explication du lieu de tournage",
+      "text": "Ne montre aucune preuve ni contexte sur le lieu ou la date.",
+      "credible": false
+    },
+    "sourceB": {
+      "label": "Un musée d'histoire naturelle",
+      "text": "Explique que les dinosaures non-aviens ont disparu il y a des millions d'années, avec beaucoup de preuves fossiles.",
+      "credible": true
+    },
+    "correctSourceId": "b",
+    "explanation": "Un musée de sciences s'appuie sur beaucoup de preuves étudiées par des experts pendant des années. Une seule vidéo, sans explication ni contexte, peut facilement être un canular ou un montage."
+  },
+  {
+    "id": "d35",
+    "type": "aiError",
+    "emoji": "🕷️",
+    "title": "L'IA S'est Trompée — Les Pattes de l'Araignée",
+    "aiQuestion": "Combien de pattes a une araignée ?",
+    "aiAnswer": "Une araignée a 6 pattes, comme un insecte.",
+    "correctAnswer": "Une araignée a 8 pattes — c'est pourquoi ce n'est pas un insecte, c'est un arachnide.",
+    "explanation": "L'IA s'est trompée ! Les araignées ont 8 pattes, pas 6. Même les ordinateurs et l'intelligence artificielle peuvent se tromper, il vaut donc toujours la peine de vérifier avec ce que tu sais déjà ou avec un livre."
+  },
+  {
+    "id": "d36",
+    "type": "aiError",
+    "emoji": "🏙️",
+    "title": "L'IA S'est Trompée — La Capitale du Portugal",
+    "aiQuestion": "Quelle est la capitale du Portugal ?",
+    "aiAnswer": "La capitale du Portugal est Porto.",
+    "correctAnswer": "La capitale du Portugal est Lisbonne.",
+    "explanation": "L'IA s'est trompée ! La capitale du Portugal est Lisbonne, pas Porto. Vérifier les faits importants dans un livre, un atlas ou avec un adulte aide à repérer ces erreurs."
+  },
+  {
+    "id": "d37",
+    "type": "aiError",
+    "emoji": "📅",
+    "title": "L'IA S'est Trompée — Les Jours de la Semaine",
+    "aiQuestion": "Combien de jours y a-t-il dans une semaine ?",
+    "aiAnswer": "Une semaine a 5 jours.",
+    "correctAnswer": "Une semaine a 7 jours.",
+    "explanation": "L'IA s'est trompée ! Une semaine a toujours 7 jours. C'est un bon rappel qu'il vaut la peine de réfléchir par toi-même avant d'accepter une réponse, même celle d'un ordinateur."
   }
 ]

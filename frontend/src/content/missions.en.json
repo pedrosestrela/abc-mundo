@@ -4,258 +4,359 @@
     "emoji": "🌳",
     "text": "Go outside or to the window and find 3 different leaves.",
     "category": "nature",
-    "supervision": "alone"
+    "supervision": "alone",
+    "hook": "Did you know every tree has leaves with different shapes? Let's discover how many shapes you can find!"
   },
   {
     "id": "letra-c",
     "emoji": "🔎",
     "text": "Find 5 objects at home that start with the letter C.",
     "category": "letters",
-    "supervision": "alone"
+    "supervision": "alone",
+    "hook": "The letter C is hiding in lots of words around you. Can a letter hunter find them all?"
   },
   {
     "id": "medir-mesa",
     "emoji": "📏",
     "text": "Measure the kitchen table with your own steps. How many steps is it?",
     "category": "math",
-    "supervision": "alone"
+    "supervision": "alone",
+    "hook": "Before rulers existed, people measured everything with their bodies! Let's be old-school explorers?"
   },
   {
     "id": "gelo-derrete",
     "emoji": "🧊",
     "text": "Put an ice cube on a plate. How long does it take to melt?",
     "category": "science",
-    "supervision": "adult"
+    "supervision": "adult",
+    "hook": "Ice is water that got very cold. How long do you think it takes to turn back into water?"
   },
   {
     "id": "procura-lua",
     "emoji": "🌙",
     "text": "Look for the Moon in the sky tonight. What shape is it?",
     "category": "nature",
-    "supervision": "alone"
+    "supervision": "alone",
+    "hook": "The Moon changes shape through the month, like it's always changing outfits. What shape is it tonight?"
   },
   {
     "id": "supermercado-2euros",
     "emoji": "🛒",
     "text": "At the supermarket, find something that costs less than 2€.",
     "category": "money",
-    "supervision": "adult"
+    "supervision": "adult",
+    "hook": "Learning the value of money starts with looking at prices. Do you think it's easy to find something that cheap?"
   },
   {
     "id": "separar-meias",
     "emoji": "🧦",
     "text": "Sort the clean laundry socks by color.",
     "category": "life-skills",
-    "supervision": "alone"
+    "supervision": "alone",
+    "hook": "Sorting by color trains your eye to spot patterns, just like a real detective!"
   },
   {
     "id": "contar-passaros",
     "emoji": "🐦",
     "text": "Sit by the window for 5 minutes. How many birds can you see?",
     "category": "nature",
-    "supervision": "alone"
+    "supervision": "alone",
+    "hook": "There are hundreds of kinds of birds in the world. How many can you spot right on your street?"
   },
   {
     "id": "3-palavras-livro",
     "emoji": "📚",
     "text": "Pick a book and find 3 words you already know how to read.",
     "category": "reading",
-    "supervision": "alone"
+    "supervision": "alone",
+    "hook": "Reading is like opening a magic door to other worlds. How many words can you already open on your own?"
   },
   {
     "id": "dobra-roupa",
     "emoji": "👕",
     "text": "Help fold 5 pieces of clothing.",
     "category": "life-skills",
-    "supervision": "alone"
+    "supervision": "alone",
+    "hook": "Folding clothes is a puzzle of shapes and sizes. Can you make neat, tidy piles?"
   },
   {
     "id": "desenha-animal",
     "emoji": "🎨",
     "text": "Draw an animal that doesn't exist yet. Give it a name!",
     "category": "creativity",
-    "supervision": "alone"
+    "supervision": "alone",
+    "hook": "Every animal that exists started as an idea. What if you invented the next one?"
   },
   {
     "id": "salta-10",
     "emoji": "🏃",
     "text": "Do 10 jumps, then walk like a crab all the way to the door.",
     "category": "movement",
-    "supervision": "alone"
+    "supervision": "alone",
+    "hook": "Moving your body in different ways helps your brain grow sharper. Let's give it a try!"
   },
   {
     "id": "objeto-vermelho",
     "emoji": "🔴",
     "text": "Run and find 3 red things at home.",
     "category": "movement",
-    "supervision": "alone"
+    "supervision": "alone",
+    "hook": "Red is one of the first colors your eyes notice. How many red things are there at home?"
   },
   {
     "id": "bate-ritmo",
     "emoji": "🥁",
     "text": "Clap a rhythm with your hands. Can someone at home repeat it?",
     "category": "music",
-    "supervision": "alone"
+    "supervision": "alone",
+    "hook": "Music begins with simple sound patterns. Can you create a rhythm no one can copy?"
   },
   {
     "id": "ponte-papel",
     "emoji": "🌉",
     "text": "Build a paper or cardboard bridge between two chairs.",
     "category": "engineering",
-    "supervision": "alone"
+    "supervision": "alone",
+    "hook": "Engineers always test their ideas before building real bridges. Let's be engineers today!"
   },
   {
     "id": "flutua-afunda",
     "emoji": "🛁",
     "text": "In the bath, find 3 objects that float and 3 that sink.",
     "category": "science",
-    "supervision": "adult"
+    "supervision": "adult",
+    "hook": "Not everything heavy sinks, and not everything light floats. Let's investigate why!"
   },
   {
     "id": "avo-brincadeira",
     "emoji": "👴",
     "text": "Ask a grandparent what games they played when they were little.",
     "category": "family",
-    "supervision": "alone"
+    "supervision": "alone",
+    "hook": "Before phones existed, people invented amazing games. Discover a story from your family!"
   },
   {
     "id": "arruma-mochila",
     "emoji": "🎒",
     "text": "Pack your own school bag for tomorrow, all by yourself.",
     "category": "life-skills",
-    "supervision": "alone"
+    "supervision": "alone",
+    "hook": "Organizing your own things is a superpower that helps you every day. Let's practice!"
   },
   {
     "id": "lanche-simples",
     "emoji": "🥪",
     "text": "Prepare a simple snack (e.g. a sandwich) with an adult's help.",
     "category": "cooking",
-    "supervision": "adult"
+    "supervision": "adult",
+    "hook": "Preparing food is a mix of science and art. Let's create something delicious together!"
   },
   {
     "id": "conta-colheres",
     "emoji": "🥄",
     "text": "Help set the table and count how many spoons and forks are needed.",
     "category": "cooking",
-    "supervision": "alone"
+    "supervision": "alone",
+    "hook": "Counting everyday objects is math hiding everywhere. Help set the table and count!"
   },
   {
     "id": "planta-semente",
     "emoji": "🌱",
     "text": "Plant a seed in a cup of soil and water it. Watch it every day.",
     "category": "nature",
-    "supervision": "adult"
+    "supervision": "adult",
+    "hook": "Inside a tiny seed, a whole plant is hiding. Let's help it grow!"
   },
   {
     "id": "atacadores",
     "emoji": "👟",
     "text": "Practice tying your shoelaces by yourself.",
     "category": "life-skills",
-    "supervision": "alone"
+    "supervision": "alone",
+    "hook": "Tying shoelaces seems hard, but with practice your hands learn on their own. Let's train!"
   },
   {
     "id": "formas-nuvens",
     "emoji": "☁️",
     "text": "Lie on the grass or sit by the window and watch the clouds for 5 minutes. What shapes can you see?",
     "category": "nature",
-    "supervision": "alone"
+    "supervision": "alone",
+    "hook": "Clouds keep changing shape, like a picture book in the sky. What do you see today?"
   },
   {
     "id": "conta-carros",
     "emoji": "🚗",
     "text": "With an adult near a street, count how many red cars pass by in 5 minutes.",
     "category": "math",
-    "supervision": "adult"
+    "supervision": "adult",
+    "hook": "Counting and sorting things helps your brain organize the world. How many red cars pass by?"
   },
   {
     "id": "palavra-nova",
     "emoji": "🗣️",
     "text": "Ask someone in your family to teach you one new word in a different language.",
     "category": "family",
-    "supervision": "alone"
+    "supervision": "alone",
+    "hook": "Every language is a different way of seeing the world. What new word will you discover today?"
   },
   {
     "id": "aviao-papel",
     "emoji": "✈️",
     "text": "Make a paper airplane and test how far it can fly. Try to improve it!",
     "category": "engineering",
-    "supervision": "alone"
+    "supervision": "alone",
+    "hook": "The first real airplane also began with lots of tries. Can you make yours fly farther?"
   },
   {
     "id": "separa-reciclagem",
     "emoji": "♻️",
     "text": "With an adult, sort the household trash into the right recycling bins: paper, plastic and glass.",
     "category": "life-skills",
-    "supervision": "adult"
+    "supervision": "adult",
+    "hook": "Sorting trash is a way to take care of the planet every day. Do you know which bin each thing belongs in?"
   },
   {
     "id": "nota-obrigado",
     "emoji": "💌",
     "text": "Write or draw a thank-you note for someone special and give it to them.",
     "category": "creativity",
-    "supervision": "alone"
+    "supervision": "alone",
+    "hook": "A simple written thank-you can give someone a huge smile. Who will you write to?"
   },
   {
     "id": "sombra-contorno",
     "emoji": "🌗",
     "text": "On a sunny day, trace the outline of your shadow on the ground with chalk. How does it change during the day?",
     "category": "science",
-    "supervision": "alone"
+    "supervision": "alone",
+    "hook": "Your shadow moves through the day because the Sun changes position in the sky. Let's see how it changes!"
   },
   {
     "id": "letras-rua",
     "emoji": "🚏",
     "text": "On a walk, find signs or shop names with 5 different letters of the alphabet.",
     "category": "letters",
-    "supervision": "adult"
+    "supervision": "adult",
+    "hook": "Letters are scattered all over the street, on signs and shop names. Can you find them all?"
   },
   {
     "id": "conta-moedas",
     "emoji": "🪙",
     "text": "Count the coins you find in a piggy bank or drawer. How much money is that in total?",
     "category": "money",
-    "supervision": "adult"
+    "supervision": "adult",
+    "hook": "Counting coins helps you understand how money works. How much do you think you'll find?"
   },
   {
     "id": "salta-corda",
     "emoji": "🪢",
     "text": "Jump rope 20 times in a row without stopping. Can you beat your record tomorrow?",
     "category": "movement",
-    "supervision": "alone"
+    "supervision": "alone",
+    "hook": "Jumping rope trains your body and your focus at the same time. Can you make it to 20?"
   },
   {
     "id": "instrumento-caseiro",
     "emoji": "🪇",
     "text": "With an adult's help, make a musical instrument out of a bottle and rice or beans.",
     "category": "music",
-    "supervision": "adult"
+    "supervision": "adult",
+    "hook": "Many musical instruments around the world were invented from simple materials. Let's make yours!"
   },
   {
     "id": "torre-copos",
     "emoji": "🥤",
     "text": "Build the tallest tower you can with plastic cups. How many did you use?",
     "category": "engineering",
-    "supervision": "alone"
+    "supervision": "alone",
+    "hook": "Building tall towers teaches you about balance, just like building engineers. How high can you go?"
   },
   {
     "id": "mapa-tesouro",
     "emoji": "🗺️",
     "text": "Draw a treasure map of your house and hide a \"treasure\" for someone to find.",
     "category": "creativity",
-    "supervision": "alone"
+    "supervision": "alone",
+    "hook": "Maps have helped explorers find amazing places for centuries. What treasure will you hide?"
   },
   {
     "id": "ajuda-receita",
     "emoji": "🍳",
     "text": "Help an adult prepare a simple recipe and count how many ingredients you used.",
     "category": "cooking",
-    "supervision": "adult"
+    "supervision": "adult",
+    "hook": "Cooking is a recipe of math, science and patience all mixed together. Let's count the ingredients!"
   },
   {
     "id": "imita-animais",
     "emoji": "🐾",
     "text": "Imitate the sound and movement of 5 different animals. Can someone guess which ones they are?",
     "category": "movement",
-    "supervision": "alone"
+    "supervision": "alone",
+    "hook": "Imitating animals helps you learn how they move and communicate. Who will you be first?"
+  },
+  {
+    "id": "conta-degraus",
+    "emoji": "🪜",
+    "text": "Count how many steps there are between two floors at home or in a building.",
+    "category": "math",
+    "supervision": "alone",
+    "hook": "Counting stairs is math you use every day without noticing. How many are there at your place?"
+  },
+  {
+    "id": "sombra-animal",
+    "emoji": "🕯️",
+    "text": "With a flashlight and your hands, create 3 different shadows that look like animals.",
+    "category": "creativity",
+    "supervision": "alone",
+    "hook": "With your hands and a light, you can make shadows that look like real animals. Let's try it!"
+  },
+  {
+    "id": "nomes-plantas",
+    "emoji": "🌿",
+    "text": "Ask an adult the name of 3 plants that grow near your home.",
+    "category": "nature",
+    "supervision": "alone",
+    "hook": "Every plant has its own name, just like people do. How many can you discover around you?"
+  },
+  {
+    "id": "peso-objetos",
+    "emoji": "⚖️",
+    "text": "Pick up 2 objects at home and guess which is heavier using only your hands.",
+    "category": "math",
+    "supervision": "alone",
+    "hook": "Can you tell which is heavier using only your hands, no scale? Let's test your sense of weight!"
+  },
+  {
+    "id": "carta-familia",
+    "emoji": "✉️",
+    "text": "Write or draw a short letter for a family member who lives far away.",
+    "category": "family",
+    "supervision": "alone",
+    "hook": "A handwritten letter is a gift that gets kept forever. Who will you write to today?"
+  },
+  {
+    "id": "torre-livros",
+    "emoji": "📖",
+    "text": "Stack books to build the tallest, most stable tower you can.",
+    "category": "engineering",
+    "supervision": "alone",
+    "hook": "Stacking books carefully teaches you about balance and center of gravity. How high can you go?"
+  },
+  {
+    "id": "sons-casa",
+    "emoji": "👂",
+    "text": "Close your eyes for 1 minute and count how many different sounds you can hear at home.",
+    "category": "science",
+    "supervision": "alone",
+    "hook": "Close your eyes and listen: your home is full of sounds you don't usually notice. How many can you identify?"
+  },
+  {
+    "id": "conta-historia",
+    "emoji": "📔",
+    "text": "Pick any object in your house and invent a short story about it.",
+    "category": "creativity",
+    "supervision": "alone",
+    "hook": "Any object can be the start of an amazing story, if you use your imagination. Let's make one up!"
   }
 ]

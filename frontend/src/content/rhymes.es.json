@@ -29,6 +29,66 @@
       "title": "Una Gallinita",
       "emoji": "🐔",
       "text": "Una gallinita en el corral,\nPone huevos sin parar,\nUno, dos, tres, cuatro, cinco,\nCuenta los huevos, es un buen brinco!"
+    },
+    {
+      "id": "leng-06",
+      "title": "Una, Dola",
+      "emoji": "🔢",
+      "text": "Una, dola, tela, catola,\nquila, quilete,\nestaba la reina,\nen su gabinete!"
+    },
+    {
+      "id": "leng-07",
+      "title": "Pinto, Pinto, Gorgorito",
+      "emoji": "🐄",
+      "text": "Pinto, pinto, gorgorito,\nsaca la vaca, mañana martes,\ncon las ollitas de aguardiente!"
+    },
+    {
+      "id": "leng-08",
+      "title": "Que Llueva",
+      "emoji": "🌧️",
+      "text": "Que llueva, que llueva,\nla Virgen de la Cueva,\nlos pajaritos cantan,\nlas nubes se levantan!"
+    },
+    {
+      "id": "leng-09",
+      "title": "En La Calle Veinticuatro",
+      "emoji": "🐈",
+      "text": "En la calle veinticuatro,\nhubo un choque y un contrato,\nuna vieja asustó a un gato,\ncon la punta del zapato!"
+    },
+    {
+      "id": "leng-10",
+      "title": "Matarile",
+      "emoji": "🎶",
+      "text": "Al ambo, ato, matarile, rile, rile,\nal ambo, ato, matarile, rile, ron!"
+    },
+    {
+      "id": "leng-11",
+      "title": "Antón Pirulero",
+      "emoji": "🪗",
+      "text": "Antón, Antón, Antón Pirulero,\ncada cual, cada cual, atienda su juego,\ny el que no lo atienda, pagará una prenda!"
+    },
+    {
+      "id": "leng-12",
+      "title": "Contando Estrellas",
+      "emoji": "⭐",
+      "text": "Uno, dos, tres estrellas,\nbrillando allá en el cielo,\ncuatro, cinco, seis, tan bellas,\ncuenta todas sin recelo!"
+    },
+    {
+      "id": "leng-13",
+      "title": "El Barquito Chiquito",
+      "emoji": "⛵",
+      "text": "Había una vez un barco chiquito,\nhabía una vez un barco chiquito,\nque no podía, que no podía navegar!"
+    },
+    {
+      "id": "leng-14",
+      "title": "Un Elefante",
+      "emoji": "🐘",
+      "text": "Un elefante se balanceaba,\nsobre la tela de una araña,\ncomo veía que resistía,\nfue a llamar a otro elefante!"
+    },
+    {
+      "id": "leng-15",
+      "title": "Cinco Lobitos",
+      "emoji": "🐺",
+      "text": "Cinco lobitos tiene la loba,\nblancos y negros detrás de una escoba,\ncinco tenía, cinco criaba,\ny a todos los cinco lechita les daba!"
     }
   ],
   "travalinguas": [
@@ -61,6 +121,66 @@
       "title": "Como Poco Coco Como",
       "emoji": "🥥",
       "text": "Como poco coco como, poco coco compro."
+    },
+    {
+      "id": "tt-6",
+      "title": "Pablito Clavó un Clavito",
+      "emoji": "🔨",
+      "text": "Pablito clavó un clavito, ¿qué clavito clavó Pablito?"
+    },
+    {
+      "id": "tt-7",
+      "title": "El Cielo Enladrillado",
+      "emoji": "🧱",
+      "text": "El cielo está enladrillado, ¿quién lo desenladrillará? El desenladrillador que lo desenladrille buen desenladrillador será."
+    },
+    {
+      "id": "tt-8",
+      "title": "Como Poco Coco Como",
+      "emoji": "🥥",
+      "text": "Como poco coco como, poco coco compro."
+    },
+    {
+      "id": "tt-9",
+      "title": "El Perro de San Roque",
+      "emoji": "🐕",
+      "text": "El perro de San Roque no tiene rabo porque Ramón Ramírez se lo ha robado."
+    },
+    {
+      "id": "tt-10",
+      "title": "Compadre, Cómpreme un Coco",
+      "emoji": "🥥",
+      "text": "Compadre, cómpreme un coco, compadre, no compro coco."
+    },
+    {
+      "id": "tt-11",
+      "title": "La Salsa de Sansón",
+      "emoji": "🧂",
+      "text": "Si Sansón no sazona su salsa con sal, le sale sosa la salsa a Sansón."
+    },
+    {
+      "id": "tt-12",
+      "title": "Erre con Erre",
+      "emoji": "🚂",
+      "text": "Erre con erre cigarro, erre con erre barril, rápido corren los carros cargados de azúcar del ferrocarril."
+    },
+    {
+      "id": "tt-13",
+      "title": "Poquito a Poquito",
+      "emoji": "🐢",
+      "text": "Poquito a poquito Paquito empaca poquitas copitas en pocos paquetes."
+    },
+    {
+      "id": "tt-14",
+      "title": "La Bruja Truja",
+      "emoji": "🧙",
+      "text": "Hay una bruja truja mucho más truja que la bruja que en la choza vivía."
+    },
+    {
+      "id": "tt-15",
+      "title": "Juan Junta Juncos",
+      "emoji": "🌾",
+      "text": "Juan junta juncos junto a la jaula donde el jilguero canta."
     }
   ],
   "rimas": [
@@ -99,6 +219,60 @@
       "title": "Buenas Noches, Luna",
       "emoji": "🌙",
       "text": "Buenas noches, luna llena,\nEnciende estrellas en su melena,\nDuerme la tierra, duerme la arena,\nHasta que el sol nuevo despierte serena."
+    },
+    {
+      "id": "rima-07",
+      "title": "El pájaro madrugador",
+      "emoji": "🐦",
+      "text": "El pájaro canta al amanecer,\nAnuncia que el día llegó,\nVuela alto, sin miedo a caer,\nEn el cielo azul que pintó."
+    },
+    {
+      "id": "rima-08",
+      "title": "El otoño dorado",
+      "emoji": "🍂",
+      "text": "Las hojas caen despacito,\nPintan el suelo de oro y marrón,\nEl viento juega sin descanso,\nCon cada hoja, un rincón."
+    },
+    {
+      "id": "rima-09",
+      "title": "El invierno frío",
+      "emoji": "❄️",
+      "text": "El invierno trae el frío,\nCubre la tierra de blanco algodón,\nBebemos chocolate calentito,\nMirando la nieve con emoción."
+    },
+    {
+      "id": "rima-10",
+      "title": "Llegó la primavera",
+      "emoji": "🌸",
+      "text": "La primavera despierta feliz,\nLos árboles llenos de flor,\nEl campo huele a jazmín,\nCon un cálido y nuevo calor."
+    },
+    {
+      "id": "rima-11",
+      "title": "El verano en la playa",
+      "emoji": "🏖️",
+      "text": "En verano vamos a la playa,\nA jugar en la arena y el mar,\nEl sol brilla, la ola ensaya,\nUna invitación a nadar."
+    },
+    {
+      "id": "rima-12",
+      "title": "Mi perro fiel",
+      "emoji": "🐶",
+      "text": "Mi perro corre y ladra feliz,\nDetrás de la pelota a saltar,\nMueve la cola sin desistir,\nEs mi mejor compañero sin par."
+    },
+    {
+      "id": "rima-13",
+      "title": "El pececito dorado",
+      "emoji": "🐠",
+      "text": "En la pecera nada despacio,\nUn pececito color del sol,\nLe gusta el agua sin ningún reparo,\nNadando suave, sin farol."
+    },
+    {
+      "id": "rima-14",
+      "title": "Querida abuelita",
+      "emoji": "👵",
+      "text": "Abuelita cuenta cada noche,\nCon voz suave y un abrazo tierno,\nSiempre guarda un dulce reproche,\nDe cariño que dura para siempre."
+    },
+    {
+      "id": "rima-15",
+      "title": "Paseo por el bosque",
+      "emoji": "🌳",
+      "text": "En el bosque el viento sopla,\nEntre los árboles altos y verdes,\nLa ardilla salta, nunca para,\nMientras el río su curso pierde."
     }
   ]
 }

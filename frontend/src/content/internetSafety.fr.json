@@ -118,5 +118,65 @@
       { "text": "J'y crois et je la partage tout de suite avec mes amis.", "correct": false, "feedback": "De nos jours, il existe des vidéos créées par ordinateur qui semblent vraies mais qui sont inventées. Avant d'y croire, demande à un adulte." },
       { "text": "Je demande à un adulte si cette vidéo pourrait vraiment être vraie.", "correct": true, "feedback": "Bien joué ! Tout ce que tu vois en ligne n'est pas réel — certaines vidéos sont fabriquées par ordinateur. Vérifier avec un adulte, c'est ce que fait un bon détective." }
     ]
+  },
+  {
+    "id": "is13",
+    "theme": "friend-requests",
+    "emoji": "➕",
+    "scenario": "Tu reçois une demande d'ami de quelqu'un que tu ne connais pas du tout.",
+    "options": [
+      { "text": "J'accepte, plus j'ai d'amis, mieux c'est.", "correct": false, "feedback": "Accepter des inconnus peut être risqué. Il vaut toujours mieux demander à un adulte avant d'accepter." },
+      { "text": "Je n'accepte pas et je demande à un adulte quoi faire.", "correct": true, "feedback": "Bien joué ! Il n'est prudent d'accepter que des demandes de personnes que tu connais vraiment dans la vraie vie, et toujours avec l'aide d'un adulte." }
+    ]
+  },
+  {
+    "id": "is14",
+    "theme": "downloads",
+    "emoji": "⬇️",
+    "scenario": "Tu vois un nouveau jeu qui a l'air vraiment sympa et tu veux l'installer tout seul, sans demander à personne.",
+    "options": [
+      { "text": "Je l'installe tout de suite, ça a l'air amusant.", "correct": false, "feedback": "Installer des applications inconnues tout seul peut causer des problèmes sur l'appareil. Demande toujours la permission à un adulte d'abord." },
+      { "text": "Je demande à un adulte de vérifier le jeu avec moi avant de l'installer.", "correct": true, "feedback": "Excellente idée ! Un adulte peut t'aider à voir si l'application est sûre avant que tu l'installes." }
+    ]
+  },
+  {
+    "id": "is15",
+    "theme": "purchases",
+    "emoji": "💳",
+    "scenario": "Dans un jeu, un bouton propose des pièces spéciales à un prix très bas, seulement aujourd'hui.",
+    "options": [
+      { "text": "Je clique et j'achète, c'est une offre spéciale.", "correct": false, "feedback": "Les achats dans les jeux coûtent de l'argent réel, même s'ils semblent bon marché. Demande toujours à un adulte avant d'acheter quoi que ce soit." },
+      { "text": "J'appelle un adulte avant de cliquer pour acheter quoi que ce soit.", "correct": true, "feedback": "Très sage ! Un adulte décide toujours avec toi si ça vaut la peine de dépenser de l'argent réel dans un jeu." }
+    ]
+  },
+  {
+    "id": "is16",
+    "theme": "screen-time",
+    "emoji": "⏰",
+    "scenario": "Tu joues sur la tablette depuis longtemps et tes yeux sont fatigués.",
+    "options": [
+      { "text": "Je continue à jouer encore un peu, juste un niveau de plus.", "correct": false, "feedback": "Avoir les yeux fatigués est un signe qu'il faut faire une pause. Continuer sans s'arrêter n'est pas bon pour toi." },
+      { "text": "Je fais une pause, je repose mes yeux et je vais faire autre chose.", "correct": true, "feedback": "Bien joué ! Remarquer quand tu as besoin d'une pause d'écran est une habitude vraiment saine." }
+    ]
+  },
+  {
+    "id": "is17",
+    "theme": "trusted-adult",
+    "emoji": "🙋",
+    "scenario": "Quelque chose que tu as vu en ligne t'a laissé perplexe ou mal à l'aise, mais tu n'es pas sûr que ce soit important.",
+    "options": [
+      { "text": "Je ne dis rien, ce n'est probablement rien de grave.", "correct": false, "feedback": "Même si tu penses que ce n'est rien, il vaut toujours mieux en parler. Un adulte peut t'aider à mieux comprendre la situation." },
+      { "text": "J'en parle à un adulte de confiance, même sans être sûr que c'est important.", "correct": true, "feedback": "Attitude parfaite ! En parler à un adulte de confiance dès que quelque chose te met mal à l'aise en ligne est toujours le bon choix." }
+    ]
+  },
+  {
+    "id": "is18",
+    "theme": "sharing-others",
+    "emoji": "👥",
+    "scenario": "Tu as une photo amusante avec tes amis et tu veux la publier en ligne.",
+    "options": [
+      { "text": "Je la publie tout de suite, la photo est très réussie.", "correct": false, "feedback": "Avant de publier des photos avec d'autres personnes, il est important de leur demander si elles veulent aussi que la photo soit partagée." },
+      { "text": "Je demande à mes amis et à un adulte avant de publier.", "correct": true, "feedback": "Bien joué ! Respecter les souhaits de tes amis et vérifier avec un adulte est toujours la bonne chose à faire." }
+    ]
   }
 ]

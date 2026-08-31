@@ -1,0 +1,40 @@
+{
+  "animais": [
+    { "word": "小狗", "emoji": "🐶" },
+    { "word": "小猫", "emoji": "🐱" },
+    { "word": "小鸟", "emoji": "🐦" },
+    { "word": "小鱼", "emoji": "🐟" },
+    { "word": "小马", "emoji": "🐴" },
+    { "word": "小羊", "emoji": "🐑" }
+  ],
+  "casa": [
+    { "word": "房子", "emoji": "🏠" },
+    { "word": "桌子", "emoji": "🪑" },
+    { "word": "椅子", "emoji": "🪑" },
+    { "word": "杯子", "emoji": "🥤" },
+    { "word": "书包", "emoji": "🎒" },
+    { "word": "铅笔", "emoji": "✏️" }
+  ],
+  "escola": [
+    { "word": "学校", "emoji": "🏫" },
+    { "word": "老师", "emoji": "🧑‍🏫" },
+    { "word": "同学", "emoji": "🧑‍🤝‍🧑" },
+    { "word": "课本", "emoji": "📖" },
+    { "word": "黑板", "emoji": "🖼️" }
+  ],
+  "natureza": [
+    { "word": "太阳", "emoji": "☀️" },
+    { "word": "月亮", "emoji": "🌙" },
+    { "word": "星星", "emoji": "⭐" },
+    { "word": "白云", "emoji": "☁️" },
+    { "word": "大山", "emoji": "⛰️" },
+    { "word": "河流", "emoji": "🏞️" }
+  ],
+  "comida": [
+    { "word": "米饭", "emoji": "🍚" },
+    { "word": "牛奶", "emoji": "🥛" },
+    { "word": "苹果", "emoji": "🍎" },
+    { "word": "香蕉", "emoji": "🍌" },
+    { "word": "鸡蛋", "emoji": "🥚" }
+  ]
+}

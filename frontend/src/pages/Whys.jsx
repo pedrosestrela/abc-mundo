@@ -1,9 +1,85 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { getWhys } from "../content/index.js";
-import { getLangPair, getProfile, pingProgress, exploreWhy, getExploredWhys } from "../storage.js";
+import { getLangPair, getProfile, pingProgress, exploreWhy, getExploredWhys, recordSkillEvent } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
 import HelpButton from "../components/HelpButton.jsx";
+import MascotBubble from "../components/mascots/MascotBubble.jsx";
+
+function shuffle(arr) {
+  const copy = [...arr];
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+}
+
+// Simple picture+text multiple-choice mini-quiz shown after a "why" card is
+// opened, built entirely from data already present on the whys (each
+// card's quickAnswer becomes the correct option, two other cards' quick
+// answers become distractors) — no extra per-language content needed.
+// Anti-guessing: wrong taps disable that option instead of allowing
+// repeated blind clicks. Mirrors HumanEvolution/TechHistory's StageQuiz.
+function WhyQuiz({ why, whys, pair, profile, t }) {
+  const [options] = useState(() => {
+    const others = shuffle(whys.filter((w) => w.id !== why.id && w.quickAnswer)).slice(0, 2);
+    return shuffle([why, ...others]);
+  });
+  const [wrongIds, setWrongIds] = useState([]);
+  const [solved, setSolved] = useState(false);
+
+  if (options.length < 3) return null;
+
+  function pick(option) {
+    if (solved) return;
+    if (option.id === why.id) {
+      setSolved(true);
+      recordSkillEvent(profile?.name, "whys-quiz", wrongIds.length === 0);
+      pingProgress({ profileName: profile?.name, module: "whys", event: `quiz_solved:${why.id}` });
+    } else {
+      setWrongIds((prev) => (prev.includes(option.id) ? prev : [...prev, option.id]));
+      pingProgress({ profileName: profile?.name, module: "whys", event: `quiz_attempt:${why.id}` });
+    }
+  }
+
+  const prompt = t("modules.whysQuizPrompt");
+
+  return (
+    <div className="why-tier">
+      <strong>❓ {t("modules.whysQuizTitle")}</strong>
+      <div className="why-tier-header">
+        <p>{prompt}</p>
+        <SpeakButton text={prompt} langCode={pair.mother} />
+      </div>
+      <div className="game-options">
+        {options.map((opt) => (
+          <div className="game-option-row" key={opt.id}>
+            <button
+              type="button"
+              disabled={solved || wrongIds.includes(opt.id)}
+              className={
+                "big-btn game-option" +
+                (solved && opt.id === why.id ? " correct" : "") +
+                (wrongIds.includes(opt.id) ? " wrong" : "")
+              }
+              onClick={() => pick(opt)}
+            >
+              {opt.emoji} {opt.quickAnswer}
+            </button>
+            <SpeakButton text={opt.quickAnswer} langCode={pair.mother} />
+          </div>
+        ))}
+      </div>
+      {solved && (
+        <div className="science-explanation">
+          <p className="game-result">⭐ {t("modules.whysQuizCorrect")}</p>
+          <SpeakButton text={t("modules.whysQuizCorrect")} langCode={pair.mother} />
+        </div>
+      )}
+    </div>
+  );
+}
 
 export default function Whys() {
   const { t } = useTranslation();
@@ -11,10 +87,15 @@ export default function Whys() {
   const motherWhys = getWhys(pair.mother);
   const secondaryWhys = getWhys(pair.secondary);
   const whys = motherWhys.map((m, i) => ({ ...m, secondary: secondaryWhys[i] }));
+  const whyById = {};
+  whys.forEach((w) => {
+    whyById[w.id] = w;
+  });
   const profile = getProfile();
   const [explored, setExplored] = useState(() => getExploredWhys(profile?.name));
   const [openId, setOpenId] = useState(null);
   const [tiers, setTiers] = useState({}); // { [whyId]: { more: bool, experiment: bool } }
+  const cardRefs = React.useRef({});
 
   function handleOpen(why) {
     const alreadyOpen = openId === why.id;
@@ -23,6 +104,21 @@ export default function Whys() {
       exploreWhy(profile?.name, why.id);
       pingProgress({ profileName: profile?.name, module: "whys", event: `why_explored:${why.id}` });
       setExplored((prev) => [...prev, why.id]);
+    }
+  }
+
+  function handleRelatedTap(relatedId) {
+    const target = whyById[relatedId];
+    if (!target) return;
+    setOpenId(target.id);
+    if (!explored.includes(target.id)) {
+      exploreWhy(profile?.name, target.id);
+      pingProgress({ profileName: profile?.name, module: "whys", event: `why_explored:${target.id}` });
+      setExplored((prev) => [...prev, target.id]);
+    }
+    const el = cardRefs.current[relatedId];
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "center" });
     }
   }
 
@@ -40,6 +136,9 @@ export default function Whys() {
         <HelpButton text={t("modules.whysHelpMain")} langCode={pair.secondary} />
       </div>
       <p className="page-intro">{t("modules.whysIntro")}</p>
+      <MascotBubble character="lumi" mood="thinking" langCode={pair.mother}>
+        {t("modules.whysMascotIntro")}
+      </MascotBubble>
       <div className="whys-progress">
         {t("modules.whysExplored")}: {explored.length} / {whys.length}
       </div>
@@ -48,7 +147,13 @@ export default function Whys() {
           const isOpen = openId === why.id;
           const tierState = tiers[why.id] || {};
           return (
-            <div className={`why-card${isOpen ? " why-card-open" : ""}`} key={why.id}>
+            <div
+              className={`why-card${isOpen ? " why-card-open" : ""}`}
+              key={why.id}
+              ref={(el) => {
+                cardRefs.current[why.id] = el;
+              }}
+            >
               <button type="button" className="why-question-btn" onClick={() => handleOpen(why)}>
                 <span className="why-emoji">{why.emoji}</span>
                 <span className="why-question">
@@ -115,6 +220,32 @@ export default function Whys() {
                           <SpeakButton text={why.secondary.experiment} langCode={pair.secondary} />
                         </div>
                       )}
+                    </div>
+                  )}
+
+                  {tierState.more && (
+                    <WhyQuiz key={why.id} why={why} whys={whys} pair={pair} profile={profile} t={t} />
+                  )}
+
+                  {why.relatedQuestionIds && why.relatedQuestionIds.length > 0 && (
+                    <div className="why-related">
+                      <strong>🔗 {t("modules.whysRelated")}</strong>
+                      <div className="why-related-chips">
+                        {why.relatedQuestionIds.map((relId) => {
+                          const related = whyById[relId];
+                          if (!related) return null;
+                          return (
+                            <button
+                              type="button"
+                              key={relId}
+                              className="why-related-chip"
+                              onClick={() => handleRelatedTap(relId)}
+                            >
+                              {related.emoji} {related.question}
+                            </button>
+                          );
+                        })}
+                      </div>
                     </div>
                   )}
                 </div>

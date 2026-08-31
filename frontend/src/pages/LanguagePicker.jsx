@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import i18n from "../i18n/index.js";
-import { SUPPORTED_LANGUAGES } from "../content/index.js";
+import { SUPPORTED_LANGUAGES } from "../content/languages.js";
 import { getLangPair, setLangPair, pingProgress } from "../storage.js";
 import { getProfile } from "../storage.js";
+import HelpButton from "../components/HelpButton.jsx";
 
 export default function LanguagePicker() {
   const { t } = useTranslation();
@@ -24,6 +25,9 @@ export default function LanguagePicker() {
   return (
     <div className="page">
       <h1>{t("languagePicker.title")}</h1>
+      <div className="help-btn-corner">
+        <HelpButton text={t("languagePicker.help")} langCode={mother} />
+      </div>
 
       <h3>{t("languagePicker.mother")}</h3>
       <div className="lang-grid">

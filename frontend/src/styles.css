@@ -1,14 +1,40 @@
 :root {
-  --pink: #ff6b6b;
+  /* Palette tuned to clear WCAG AA's 3:1 "large text / UI component"
+     contrast ratio against a white background (the vast majority of usages
+     across the app are bold headings, buttons, and badges, all of which
+     qualify as large text or UI components under WCAG 1.4.3/1.4.11).
+     Values are a small nudge (same hue/saturation, slightly deeper) from
+     the original palette, not a redesign - see the accessibility audit
+     notes for the handful of small/normal-weight text usages that still
+     fall short of the stricter 4.5:1 normal-text threshold and were left
+     as documented follow-up work rather than risking a broader palette
+     change. */
+  --pink: #ff5b5b;
   --yellow: #ffd93d;
-  --green: #6bcb77;
-  --blue: #4d96ff;
+  --green: #3ba849;
+  --blue: #4893ff;
   --purple: #9b5de5;
   color-scheme: light;
 }
 
 * {
   box-sizing: border-box;
+}
+
+/* Visible keyboard-focus ring for every interactive element. Nothing was
+   suppressing the browser default before this, but there was also no
+   explicit, consistent style - this guarantees a clear indicator for
+   keyboard/switch-device navigation across every custom button/link/input
+   in the app, using :focus-visible so it only shows for keyboard/assistive
+   input and not for mouse/touch clicks. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--blue, #4893ff);
+  outline-offset: 2px;
 }
 
 body {
@@ -65,6 +91,10 @@ body {
   padding: 8px 6px;
   border-radius: 12px;
   min-width: 56px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -880,45 +910,39 @@ body {
   stroke: var(--pink, #ff6b9d);
 }
 
+/* "highlight" = this is the note to play next (song-following mode);
+   distinct from "active" (a note that was just tapped), same yellow/pink
+   pairing the piano keyboard already uses for its own next-note cue. */
+.instrument-string.highlight {
+  stroke: var(--yellow, #f5c542);
+  stroke-width: 6;
+}
+
+.bowed-string.highlight {
+  stroke: var(--yellow, #f5c542);
+}
+
 .harp-string {
   stroke: var(--green, #35c46a);
 }
 
-/* Per-instrument body colors/shapes so strings-family instruments (guitar,
-   cavaquinho, guitarra portuguesa) don't all look identical. */
+/* Per-instrument body color so the strings-family guitar reads distinctly
+   from the harp/mallet families. */
 .guitar-body {
   fill: #b5651d;
   fill-opacity: 0.28;
   stroke: #b5651d;
 }
 
-.cavaquinho-body {
-  fill: #deb887;
-  fill-opacity: 0.4;
-  stroke: #deb887;
-}
-
-.portuguese-guitar-body {
-  fill: #6b3f1d;
-  fill-opacity: 0.3;
-  stroke: #6b3f1d;
-}
-
-.portuguese-guitar-fan {
-  fill: none;
-  stroke: #6b3f1d;
-  stroke-width: 2;
-  stroke-linecap: round;
-}
-
-/* Violin vs viola: same "bowed" shape, different size/color per instrument. */
+/* Violin vs cello: same "bowed" shape, different size/color per instrument
+   (cello is drawn bigger, in a darker wood tone). */
 .violin-body {
   fill: var(--purple, #8e6bd8);
   fill-opacity: 0.18;
   stroke: #8b4513;
 }
 
-.viola-body {
+.cello-body {
   fill: #6b3f1d;
   fill-opacity: 0.22;
   stroke: #6b3f1d;
@@ -953,6 +977,11 @@ body {
   filter: brightness(1.2);
 }
 
+.mallet-bar.highlight {
+  outline: 3px solid var(--yellow, #f5c542);
+  outline-offset: -3px;
+}
+
 .mallet-bar-hole {
   fill: rgba(0, 0, 0, 0.2);
   pointer-events: none;
@@ -977,79 +1006,64 @@ body {
   stroke: var(--pink, #ff6b9d);
 }
 
+.instrument-hole.highlight {
+  fill: var(--yellow, #f5c542);
+  stroke: var(--yellow, #f5c542);
+}
+
+/* Wind-family body colors so flute/clarinet/saxophone/trumpet don't look
+   identical despite sharing one hole-tappable silhouette. */
 .flute-body {
   fill: var(--yellow, #f5c542);
   fill-opacity: 0.2;
 }
 
-.bellows-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-.bellows-side {
-  fill: var(--purple, #8e6bd8);
-  fill-opacity: 0.25;
-}
-
-.accordion-side {
-  fill: #b5651d;
-  fill-opacity: 0.28;
-  stroke: #b5651d;
-}
-
-.accordion-key {
-  fill: #333;
-  stroke: #fff;
-  stroke-width: 1;
-}
-
-.concertina-side {
-  fill: var(--green, #35c46a);
+.clarinet-body {
+  fill: #2b2b2b;
   fill-opacity: 0.3;
-  stroke: var(--green, #35c46a);
+  stroke: #2b2b2b;
 }
 
-.concertina-button {
-  fill: #333;
-  stroke: #fff;
-  stroke-width: 1;
+.saxophone-body {
+  fill: #d9a441;
+  fill-opacity: 0.32;
+  stroke: #a97a1f;
 }
 
-.bellows-fold-line {
-  stroke: var(--purple, #8e6bd8);
-  stroke-width: 3;
-  transition: transform 0.2s ease;
+.trumpet-body {
+  fill: #e8c15a;
+  fill-opacity: 0.35;
+  stroke: #b8860b;
 }
 
-.bellows-wrap.pulsing .bellows-fold-line {
-  transform: scaleX(0.7);
-  transform-box: fill-box;
-  transform-origin: center;
+/* The 3 real trumpet valves: a static casing plus a piston that visually
+   drops when that valve is pressed for the currently selected note's
+   fingering combination. */
+.trumpet-valve-casing {
+  fill: #b8860b;
+  fill-opacity: 0.25;
+  stroke: #b8860b;
+  stroke-width: 1.5;
 }
 
-.bellows-buttons {
-  display: grid;
-  gap: 8px;
-  width: 100%;
+.trumpet-valve-piston {
+  fill: var(--blue, #3aa0ff);
+  fill-opacity: 0.5;
+  stroke: var(--blue, #3aa0ff);
+  stroke-width: 1.5;
+  transition: y 0.15s ease, fill 0.15s ease;
+  pointer-events: none;
 }
 
-.bellows-button {
-  height: 48px;
-  border-radius: 12px;
-  border: none;
-  background: var(--blue, #3aa0ff);
-  color: #fff;
+.trumpet-valve-piston.pressed {
+  fill: var(--pink, #ff6b9d);
+  stroke: var(--pink, #ff6b9d);
+}
+
+.trumpet-valve-caption {
+  font-size: 12px;
   font-weight: bold;
-  cursor: pointer;
-  transition: transform 0.1s ease, background 0.15s ease;
-}
-
-.bellows-button.active {
-  background: var(--pink, #ff6b9d);
-  transform: scale(0.95);
+  fill: var(--purple, #8e6bd8);
 }
 
 .drum-pads {
@@ -1158,6 +1172,10 @@ body {
   padding: 0;
   font-size: 1.1rem;
   line-height: 1.8;
+}
+
+.song-lyric-line.active {
+  font-weight: 700;
 }
 
 .story-card {
@@ -1404,12 +1422,18 @@ body {
   background: rgba(255, 255, 255, 0.6);
   border: none;
   border-radius: 50%;
-  width: 24px;
-  height: 24px;
+  /* Bumped from 24px to the 44px touch-target minimum (Apple HIG) for
+     small motor control; padding keeps the visible icon glyph the same
+     size as before. */
+  width: 44px;
+  height: 44px;
   font-size: 0.85rem;
   line-height: 1;
   cursor: pointer;
   flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .game-prompt {
@@ -1461,6 +1485,24 @@ body {
   margin: 0 auto;
 }
 
+.zen-toggle-btn {
+  font-size: 1.1rem;
+  background: #f0f0f0;
+  border: 2px solid #ccc;
+  border-radius: 999px;
+  width: 44px;
+  height: 44px;
+  line-height: 1;
+  cursor: pointer;
+  margin: 6px auto;
+  display: block;
+}
+
+.zen-toggle-on {
+  background: #e6f7ff;
+  border-color: #66c2ff;
+}
+
 .help-btn-wrap {
   position: relative;
   display: inline-block;
@@ -1501,8 +1543,8 @@ body {
 }
 
 .help-btn-bubble-speak {
-  width: 32px;
-  height: 32px;
+  width: 44px;
+  height: 44px;
   font-size: 1rem;
 }
 
@@ -1615,6 +1657,30 @@ body {
   font-size: clamp(1.4rem, 4vw, 1.9rem);
 }
 
+.parent-actions {
+  margin-bottom: 16px;
+}
+
+.parent-export-btn {
+  background: var(--purple);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 18px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+.parent-export-btn:hover {
+  filter: brightness(1.05);
+}
+
+.print-only {
+  display: none;
+}
+
 .parent-header-card {
   display: flex;
   align-items: center;
@@ -1681,6 +1747,155 @@ body {
   font-size: 1.6rem;
   font-weight: bold;
   color: var(--blue);
+}
+
+.sync-section {
+  background: #fff;
+  border-radius: 14px;
+  padding: 14px 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.sync-section h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.sync-export,
+.sync-import {
+  margin-top: 10px;
+}
+
+.sync-import h3 {
+  font-size: 0.9rem;
+  color: var(--purple);
+  margin: 14px 0 8px;
+}
+
+.sync-import-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.sync-import-input {
+  flex: 1;
+  min-width: 120px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.sync-export-btn,
+.sync-import-btn {
+  background: var(--blue);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 16px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.sync-export-btn:disabled,
+.sync-import-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.sync-code-box {
+  margin-top: 12px;
+  background: #f5f5ff;
+  border-radius: 12px;
+  padding: 14px;
+  text-align: center;
+}
+
+.sync-code-label {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.sync-code-value {
+  font-size: 2.2rem;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  color: var(--purple);
+}
+
+.sync-code-explain {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.sync-success {
+  margin-top: 10px;
+  color: #2a7a2a;
+}
+
+.sync-error {
+  margin-top: 10px;
+  color: #b3261e;
+}
+
+.sync-muted {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.reminder-section {
+  background: #fff;
+  border-radius: 14px;
+  padding: 14px 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  margin-bottom: 12px;
+}
+
+.reminder-section h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.reminder-controls {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.reminder-toggle-row,
+.reminder-time-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+}
+
+.reminder-time-input {
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  font-size: 1rem;
+}
+
+.reminder-warning {
+  margin-top: 10px;
+  color: #b3261e;
+  font-size: 0.9rem;
+}
+
+.reminder-limitation-note {
+  margin-top: 10px;
+  color: #777;
+  font-size: 0.85rem;
 }
 
 .parent-summary-label {
@@ -1853,6 +2068,101 @@ body {
   100% {
     transform: scale(1);
   }
+}
+
+.passport-section {
+  max-width: 720px;
+  margin: 24px auto 0;
+  padding: 20px;
+  border-radius: 24px;
+  background: linear-gradient(160deg, #fbf7ec, #f3ecd8);
+  border: 4px solid var(--purple, #7b4fa3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.passport-title {
+  text-align: center;
+  color: var(--purple, #7b4fa3);
+  margin: 0 0 4px;
+}
+
+.passport-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.passport-stat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-align: center;
+  padding: 14px 10px;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.08);
+  border: 2px solid #eee;
+}
+
+.passport-stat-icon {
+  font-size: 1.8rem;
+}
+
+.passport-stat-label {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.passport-stat-count {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--blue, #2f6fed);
+}
+
+.passport-skills-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.passport-skills-title {
+  color: #555;
+  font-size: 1rem;
+  margin: 0 0 8px;
+}
+
+.passport-skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.passport-skill-chip {
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 999px;
+  color: #fff;
+}
+
+.passport-skill-chip.mastered {
+  background: var(--green, #33a35a);
+}
+
+.passport-skill-chip.weakest {
+  background: var(--pink, #e0538b);
+}
+
+.passport-skills-empty {
+  color: #888;
+  font-size: 0.85rem;
 }
 
 .game-options-grid {
@@ -2044,6 +2354,29 @@ body {
   align-self: flex-start;
 }
 
+.why-related {
+  margin-top: 12px;
+  border-top: 1px dashed rgba(0, 0, 0, 0.15);
+  padding-top: 10px;
+}
+
+.why-related-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.why-related-chip {
+  border: none;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  background: var(--blue);
+  color: #fff;
+  cursor: pointer;
+}
+
 .robots-progress {
   font-weight: bold;
   color: #888;
@@ -2168,8 +2501,8 @@ body {
 }
 
 .drawing-swatch {
-  width: 28px;
-  height: 28px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   border: 3px solid transparent;
   cursor: pointer;
@@ -2186,8 +2519,8 @@ body {
 }
 
 .drawing-size-btn {
-  width: 32px;
-  height: 32px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   border: 2px solid #ddd;
   background: #fff;
@@ -2401,6 +2734,23 @@ body {
   border-color: var(--green);
 }
 
+.detective-statement-list {
+  list-style: none;
+  margin: 8px 0;
+  padding: 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.detective-statement {
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-size: 0.95rem;
+}
+
 .history-timeline {
   display: flex;
   flex-direction: column;
@@ -2502,6 +2852,16 @@ body {
 
 .computing-term-btn.done {
   border-color: var(--green);
+}
+
+.computing-term-btn.selected {
+  border-color: var(--orange, #f0a500);
+  box-shadow: 0 0 0 3px rgba(240, 165, 0, 0.35);
+}
+
+.computing-term-btn.wrong {
+  border-color: #d94848;
+  opacity: 0.5;
 }
 
 .computing-term-emoji {
@@ -2613,6 +2973,41 @@ body {
   }
   .history-era-card {
     background: #362a44;
+    color: #f0e9ff;
+  }
+  .mundos-place-village {
+    background: linear-gradient(180deg, #4a3a10 0%, #3a2d0a 100%);
+    color: #ffd98a;
+  }
+  .mundos-place-island {
+    background: linear-gradient(180deg, #0f3a40 0%, #0a2b30 100%);
+    color: #8fe4ef;
+  }
+  .mundos-place-music {
+    background: linear-gradient(180deg, #3a1e4a 0%, #2c1638 100%);
+    color: #e6bdfa;
+  }
+  .mundos-place-castle {
+    background: linear-gradient(180deg, #1c2450 0%, #141a3a 100%);
+    color: #b6c4ff;
+  }
+  .mundos-place-lab {
+    background: linear-gradient(180deg, #123a24 0%, #0c2b1a 100%);
+    color: #a7e8bd;
+  }
+  .mundos-place-life {
+    background: linear-gradient(180deg, #4a2413 0%, #391b0d 100%);
+    color: #ffc4a3;
+  }
+  .session-end-card {
+    background: #362a44;
+    color: #f0e9ff;
+  }
+  .session-end-body {
+    color: #d9cdee;
+  }
+  .session-end-activity-btn {
+    background: #2a1f38;
     color: #f0e9ff;
   }
 }
@@ -2766,33 +3161,6 @@ body {
   color: #a0431a;
 }
 
-@media (prefers-color-scheme: dark) {
-  .mundos-place-village {
-    background: linear-gradient(180deg, #4a3a10 0%, #3a2d0a 100%);
-    color: #ffd98a;
-  }
-  .mundos-place-island {
-    background: linear-gradient(180deg, #0f3a40 0%, #0a2b30 100%);
-    color: #8fe4ef;
-  }
-  .mundos-place-music {
-    background: linear-gradient(180deg, #3a1e4a 0%, #2c1638 100%);
-    color: #e6bdfa;
-  }
-  .mundos-place-castle {
-    background: linear-gradient(180deg, #1c2450 0%, #141a3a 100%);
-    color: #b6c4ff;
-  }
-  .mundos-place-lab {
-    background: linear-gradient(180deg, #123a24 0%, #0c2b1a 100%);
-    color: #a7e8bd;
-  }
-  .mundos-place-life {
-    background: linear-gradient(180deg, #4a2413 0%, #391b0d 100%);
-    color: #ffc4a3;
-  }
-}
-
 .mission-badge {
   display: inline-block;
   background: var(--yellow);
@@ -2860,6 +3228,84 @@ body {
   bottom: 2px;
   right: 2px;
   font-size: 0.7rem;
+}
+
+.mission-hook {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #6b5a1e;
+  background: #fff8e0;
+  border-radius: 12px;
+  padding: 8px 12px;
+  margin: 8px 0;
+}
+
+.mission-hook-small {
+  font-size: 0.85rem;
+  padding: 6px 10px;
+}
+
+.mission-reflection {
+  margin-top: 8px;
+}
+
+.mission-reflection-prompt {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.mission-reaction-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.mission-reaction-btn {
+  font-size: 1.8rem;
+  background: #fff;
+  border: 2px solid var(--yellow);
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.mission-reaction-btn:hover,
+.mission-reaction-btn:focus-visible {
+  transform: scale(1.1);
+}
+
+.mission-reflection-skip {
+  background: none;
+  border: none;
+  color: #888;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.mission-reaction-tag {
+  font-size: 1.1rem;
+}
+
+.mission-featured-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  max-width: 960px;
+  margin: 0 auto 16px;
+}
+
+.mission-card-featured {
+  max-width: 260px;
+  margin: 0;
+}
+
+.mission-text-small {
+  font-size: 1rem;
 }
 
 .world-grid {
@@ -3033,16 +3479,970 @@ body {
   animation: badge-pulse 1.4s ease infinite;
 }
 
-@media (prefers-color-scheme: dark) {
-  .session-end-card {
-    background: #362a44;
-    color: #f0e9ff;
+/* Country pin markers rendered by globe.gl's HTML-element layer (Globe3D.jsx).
+   A visible dot plus an expanding "radar ping" pulse ring so kids can spot
+   explorable countries on the sphere at a glance, with a distinct warmer
+   color once a country has actually been visited. */
+.globe-marker {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  transform: translate(-50%, -50%);
+}
+
+.globe-marker-dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffd23f;
+  border: 2px solid #fff;
+  box-shadow: 0 0 8px rgba(255, 210, 63, 0.9), 0 0 2px rgba(0, 0, 0, 0.4);
+  transition: background 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease;
+}
+
+.globe-marker-pulse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 210, 63, 0.55);
+  animation: globe-marker-ping 1.8s cubic-bezier(0.2, 0.6, 0.4, 1) infinite;
+}
+
+.globe-marker:hover .globe-marker-dot {
+  transform: translate(-50%, -50%) scale(1.25);
+  box-shadow: 0 0 14px rgba(255, 210, 63, 1), 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.globe-marker-visited .globe-marker-dot {
+  background: #ff7a5c;
+  box-shadow: 0 0 8px rgba(255, 122, 92, 0.9), 0 0 2px rgba(0, 0, 0, 0.4);
+}
+
+.globe-marker-visited .globe-marker-pulse {
+  background: rgba(255, 122, 92, 0.5);
+}
+
+@keyframes globe-marker-ping {
+  0% {
+    transform: translate(-50%, -50%) scale(0.6);
+    opacity: 0.8;
   }
-  .session-end-body {
-    color: #d9cdee;
+  70% {
+    opacity: 0.15;
   }
-  .session-end-activity-btn {
-    background: #2a1f38;
-    color: #f0e9ff;
+  100% {
+    transform: translate(-50%, -50%) scale(2.4);
+    opacity: 0;
   }
+}
+
+
+/* --- Robots: debug mode tappable step (cycle-through-directions) --- */
+.robots-debug-step {
+  border: 2px solid var(--red, #e74c3c);
+  background: #fff5f5;
+  border-radius: 10px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+.robots-debug-step:active {
+  transform: scale(0.95);
+}
+
+/* --- Art: pixel art grid --- */
+.pixel-art-grid {
+  display: grid;
+  gap: 2px;
+  justify-content: center;
+  margin: 12px auto;
+  background: #ddd;
+  padding: 4px;
+  border-radius: 10px;
+  max-width: 100%;
+  width: fit-content;
+}
+.pixel-art-cell {
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  padding: 0;
+}
+.pixel-art-palette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin: 10px auto;
+}
+.pixel-art-swatch {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  cursor: pointer;
+  padding: 0;
+}
+.pixel-art-swatch.active {
+  border-color: var(--green, #2ecc71);
+}
+
+/* --- Art: character builder --- */
+.char-builder-stage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  min-height: 140px;
+  background: #fff;
+  border-radius: 20px;
+  border: 3px dashed var(--green, #2ecc71);
+  margin: 12px auto;
+  max-width: 320px;
+  position: relative;
+}
+.char-builder-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 10px auto;
+}
+.char-builder-part-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 12px;
+  border-radius: 14px;
+  border: 2px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+.char-builder-part-label {
+  font-size: 0.75rem;
+  color: #666;
+}
+.char-builder-saved-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 10px auto;
+}
+.char-builder-saved-item {
+  font-size: 2.4rem;
+  background: #fff;
+  border-radius: 14px;
+  border: 2px solid #eee;
+  padding: 8px 12px;
+}
+
+/* --- Maze Treasure Hunt (original maze-chase mini-game) --- */
+.maze-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.maze-hud {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.maze-board {
+  display: flex;
+  flex-direction: column;
+  background: #2b2b45;
+  border-radius: 12px;
+  padding: 4px;
+  max-width: 100%;
+  overflow-x: auto;
+}
+.maze-row {
+  display: flex;
+}
+.maze-cell {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex: 0 0 auto;
+}
+.maze-wall {
+  background: #4b4b78;
+  border-radius: 3px;
+}
+.maze-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #ffd54f;
+  display: inline-block;
+}
+.maze-player {
+  font-size: 1.1rem;
+  line-height: 1;
+  z-index: 2;
+}
+.maze-chaser {
+  width: 18px;
+  height: 16px;
+  border-radius: 9px 9px 3px 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  position: absolute;
+}
+.maze-chaser-eye {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #fff;
+}
+.maze-chaser-teal {
+  background: #26a69a;
+}
+.maze-chaser-violet {
+  background: #8e6fd6;
+}
+.maze-chaser-coral {
+  background: #ff8a65;
+}
+.maze-dpad {
+  display: grid;
+  grid-template-columns: repeat(3, 56px);
+  grid-template-rows: repeat(2, 56px);
+  gap: 6px;
+  justify-content: center;
+}
+.maze-dpad-btn {
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 14px;
+  background: #eee6ff;
+  cursor: pointer;
+}
+.maze-dpad-up {
+  grid-column: 2;
+  grid-row: 1;
+}
+.maze-dpad-left {
+  grid-column: 1;
+  grid-row: 2;
+}
+.maze-dpad-right {
+  grid-column: 3;
+  grid-row: 2;
+}
+.maze-dpad-down {
+  grid-column: 2;
+  grid-row: 2;
+}
+.maze-result {
+  text-align: center;
+}
+
+/* --- Traffic School driving simulation ("Vamos Conduzir!") --- */
+.drive-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.drive-board {
+  display: flex;
+  flex-direction: column;
+  background: #6b6b6b;
+  border-radius: 12px;
+  padding: 4px;
+  max-width: 100%;
+  overflow-x: auto;
+}
+.drive-row {
+  display: flex;
+}
+.drive-cell {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex: 0 0 auto;
+  font-size: 1rem;
+}
+.drive-road {
+  background: #4a4a4a;
+  border-radius: 3px;
+}
+.drive-no-entry {
+  background: #7a3b3b;
+  border-radius: 3px;
+}
+.drive-car {
+  font-size: 1.2rem;
+  line-height: 1;
+  z-index: 2;
+}
+
+/* --- Memory / concentration card-matching mini-game --- */
+.memory-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.memory-hud {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.memory-theme-picker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+}
+.memory-theme-btn {
+  border: 2px solid #eee6ff;
+  background: #fff;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.memory-theme-btn.active {
+  border-color: var(--blue, #6a5acd);
+  background: #ece7ff;
+  font-weight: bold;
+}
+.memory-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 64px);
+  gap: 8px;
+  justify-content: center;
+}
+.memory-card {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  border: none;
+  background: var(--blue, #6a5acd);
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.memory-card.flipped {
+  background: #fff;
+  border: 2px solid #eee6ff;
+}
+.memory-card.matched {
+  background: #d7f5df;
+  border: 2px solid #4caf50;
+  cursor: default;
+}
+.memory-result {
+  text-align: center;
+}
+
+/* --- Tic-tac-toe ("Jogo do Galo") --- */
+.ttt-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.ttt-board {
+  display: grid;
+  grid-template-columns: repeat(3, 76px);
+  grid-template-rows: repeat(3, 76px);
+  gap: 6px;
+  margin: 8px auto;
+}
+.ttt-cell {
+  width: 76px;
+  height: 76px;
+  border-radius: 14px;
+  border: 2px solid #eee6ff;
+  background: #fff;
+  font-size: 2.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue, #6a5acd);
+}
+.ttt-cell:disabled {
+  cursor: default;
+}
+.ttt-cell.ttt-filled {
+  background: #f7f5ff;
+}
+.ttt-cell.ttt-win {
+  background: #d7f5df;
+  border-color: #4caf50;
+}
+.ttt-result {
+  text-align: center;
+}
+
+/* --- Hangman ("Jogo da Forca") --- */
+.hangman-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.hangman-word-choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+.hangman-handoff,
+.hangman-picking,
+.hangman-result {
+  text-align: center;
+}
+.hangman-balloon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+.hangman-balloon-emoji {
+  font-size: 3.2rem;
+  transition: opacity 0.3s ease;
+}
+.hangman-balloon-count {
+  font-size: 0.85rem;
+  color: #888;
+  font-weight: bold;
+}
+.hangman-word {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  min-height: 2.2rem;
+}
+.hangman-letter-slot {
+  min-width: 1.4rem;
+  border-bottom: 3px solid var(--blue, #6a5acd);
+  text-align: center;
+}
+.hangman-alphabet {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+  max-width: 420px;
+}
+.hangman-key {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  border: 2px solid #eee6ff;
+  background: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.hangman-key:disabled {
+  cursor: default;
+}
+.hangman-key-correct {
+  background: #d7f5df;
+  border-color: #4caf50;
+  color: #2e7d32;
+}
+.hangman-key-wrong {
+  background: #ffe2e2;
+  border-color: #e57373;
+  color: #c62828;
+}
+
+/* --- Word search ("Sopa de letras") --- */
+.wordsearch-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.wordsearch-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  align-items: flex-start;
+}
+.wordsearch-grid {
+  display: grid;
+  gap: 3px;
+  max-width: 340px;
+}
+.wordsearch-cell {
+  aspect-ratio: 1 / 1;
+  min-width: 28px;
+  border-radius: 6px;
+  border: 2px solid #eee6ff;
+  background: #fff;
+  font-weight: bold;
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue, #6a5acd);
+}
+.wordsearch-cell:disabled {
+  cursor: default;
+}
+.wordsearch-cell-selected {
+  background: #fff3c4;
+  border-color: #e0b400;
+}
+.wordsearch-cell-found {
+  background: #d7f5df;
+  border-color: #4caf50;
+  color: #2e7d32;
+}
+.wordsearch-bank {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 160px;
+}
+.wordsearch-bank-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: 2px solid #eee6ff;
+  background: #fff;
+}
+.wordsearch-bank-item-found {
+  background: #d7f5df;
+  border-color: #4caf50;
+}
+.wordsearch-bank-emoji {
+  font-size: 1.4rem;
+}
+.wordsearch-bank-word {
+  font-weight: bold;
+}
+.wordsearch-toast {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* --- Jigsaw / puzzle ("Quebra-cabecas") --- */
+.jigsaw-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.jigsaw-board {
+  display: grid;
+  gap: 2px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 3px solid #eee6ff;
+  background: #fff;
+}
+.jigsaw-piece {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background: #f7f5ff;
+}
+.jigsaw-piece:disabled {
+  cursor: default;
+}
+.jigsaw-piece-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+.jigsaw-piece-selected {
+  outline: 3px solid #e0b400;
+  outline-offset: -3px;
+}
+.jigsaw-piece-solved {
+  outline: 3px solid #4caf50;
+  outline-offset: -3px;
+}
+
+@media (max-width: 480px) {
+  .maze-cell {
+    width: 22px;
+    height: 22px;
+  }
+  .drive-cell {
+    width: 26px;
+    height: 26px;
+  }
+  .memory-grid {
+    grid-template-columns: repeat(3, 60px);
+  }
+  .ttt-board {
+    grid-template-columns: repeat(3, 64px);
+    grid-template-rows: repeat(3, 64px);
+  }
+  .ttt-cell {
+    width: 64px;
+    height: 64px;
+    font-size: 1.8rem;
+  }
+  .hangman-key {
+    width: 32px;
+    height: 32px;
+    font-size: 0.85rem;
+  }
+}
+
+/* --- Checkers / Damas mini-game --- */
+.checkers-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.checkers-mode-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 320px;
+}
+.checkers-hud {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.checkers-board {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 3px solid #5d4037;
+  max-width: 100%;
+}
+.checkers-row {
+  display: flex;
+}
+.checkers-cell {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 auto;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: default;
+}
+.checkers-cell.light {
+  background: #f0d9b5;
+}
+.checkers-cell.dark {
+  background: #8d5a3c;
+  cursor: pointer;
+}
+.checkers-cell.selected {
+  background: #c9a24a;
+}
+.checkers-cell.destination {
+  background: #a9c97a;
+}
+.checkers-hint {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.85);
+}
+.checkers-piece {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.35) inset, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.checkers-piece.red {
+  background: #d64541;
+  color: #fff2d0;
+}
+.checkers-piece.black {
+  background: #2b2b2b;
+  color: #ffd54f;
+}
+.checkers-result {
+  text-align: center;
+}
+.checkers-restart-link {
+  border: none;
+  background: none;
+  color: var(--blue, #6a5acd);
+  text-decoration: underline;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .checkers-cell {
+    width: 34px;
+    height: 34px;
+  }
+  .checkers-piece {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+/* Printable parent progress report: hides app chrome (nav, buttons) and
+   turns the parent dashboard into a clean, ink-friendly one/two-page
+   summary when the parent clicks "Export PDF" and uses the browser's
+   print dialog (Save as PDF). */
+@media print {
+  .navbar,
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .app-main {
+    padding: 0;
+  }
+  body,
+  .page,
+  .parent-page {
+    background: #fff !important;
+    color: #000 !important;
+  }
+  .parent-header-card,
+  .parent-summary-tile,
+  .parent-list-item,
+  .parent-empty,
+  .parent-muted {
+    box-shadow: none !important;
+    border: 1px solid #ddd;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .parent-section {
+    break-inside: avoid;
+  }
+  .parent-history-list {
+    display: none;
+  }
+}
+
+/* Circuit Lab */
+.circuit-slots {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  font-size: 2.4rem;
+  margin: 0.8rem 0;
+}
+.circuit-slot {
+  min-width: 1.4em;
+  text-align: center;
+}
+.circuit-success-glow .circuit-slot {
+  animation: circuit-glow 0.9s ease-in-out 2;
+}
+.circuit-success-spin .circuit-slot {
+  animation: circuit-spin 0.7s linear 3;
+}
+.circuit-success-shake .circuit-slot {
+  animation: circuit-buzz 0.15s linear 6;
+}
+@keyframes circuit-glow {
+  0%, 100% { filter: drop-shadow(0 0 0 transparent); transform: scale(1); }
+  50% { filter: drop-shadow(0 0 12px gold); transform: scale(1.15); }
+}
+@keyframes circuit-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.circuit-board {
+  position: relative;
+  width: min(280px, 78vw);
+  height: min(280px, 78vw);
+  margin: 1.2rem auto 0.6rem;
+  border: 6px dashed #c9932f;
+  border-radius: 28px;
+  background: rgba(201, 147, 47, 0.06);
+}
+.circuit-board-slot {
+  position: absolute;
+  width: 3.4rem;
+  height: 3.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.9rem;
+  line-height: 1;
+  border-radius: 50%;
+  border: 3px solid #c9932f;
+  background: #fffaf0;
+  transform: translate(-50%, -50%);
+  padding: 0;
+}
+button.circuit-board-slot {
+  cursor: pointer;
+}
+button.circuit-board-slot:disabled {
+  cursor: default;
+}
+.circuit-board-slot-left { left: 0; top: 50%; }
+.circuit-board-slot-right { left: 100%; top: 50%; }
+.circuit-board-slot-top { left: 50%; top: 0; }
+.circuit-board-slot-bottom { left: 50%; top: 100%; }
+.circuit-board-slot.filled {
+  background: #fff3cf;
+  border-style: solid;
+}
+.circuit-board-slot.targetable {
+  animation: circuit-target-pulse 0.9s ease-in-out infinite;
+}
+.circuit-board-slot-decorative {
+  opacity: 0.85;
+}
+@keyframes circuit-target-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(201, 147, 47, 0.55); }
+  50% { box-shadow: 0 0 0 8px rgba(201, 147, 47, 0); }
+}
+.circuit-tray {
+  margin-top: 0.6rem;
+}
+.circuit-tray-part-armed {
+  outline: 4px solid #c9932f;
+  outline-offset: 2px;
+}
+@keyframes circuit-buzz {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(3px); }
+}
+
+/* --- "Hora de Dormir" (Bedtime / Calm) mode -----------------------------
+ * A parent-controlled, warm/dim/low-stimulation theme for evening use.
+ * Nothing is hidden or disabled: every page, button and feature keeps
+ * working exactly as before — only the color palette gets warmer/dimmer
+ * and a few purely decorative looping animations get gentler.
+ *
+ * The app's accent colors are already tokenized as CSS custom properties
+ * (--pink/--yellow/--green/--blue/--purple) and used throughout styles.css
+ * for borders, text and highlight backgrounds, so re-pointing those five
+ * tokens to a warm, muted amber palette already recolors most of the app.
+ * On top of that, the two surfaces that matter most for a "make the room
+ * feel dim" effect — the page background and the bottom nav bar — get an
+ * explicit warm/dark override, and a soft brightness/saturation filter is
+ * applied to the whole app shell to knock down the many hardcoded white
+ * (#fff) card backgrounds and bright per-component colors without having
+ * to touch every one of them individually (out of scope for this task).
+ */
+:root[data-theme="bedtime"] {
+  --pink: #d98a63;
+  --yellow: #e8b756;
+  --green: #9caa6a;
+  --blue: #8a8ec2;
+  --purple: #a988a6;
+}
+
+[data-theme="bedtime"] body {
+  background: linear-gradient(180deg, #2b2118, #1f1a22);
+  color: #e8d9c5;
+}
+
+[data-theme="bedtime"] .app-shell {
+  filter: saturate(0.72) brightness(0.86) sepia(0.12);
+}
+
+[data-theme="bedtime"] .navbar {
+  background: #241b16ee;
+  border-top-color: var(--yellow);
+}
+
+[data-theme="bedtime"] .nav-link {
+  color: #d8c4ac;
+}
+
+[data-theme="bedtime"] .nav-link.active {
+  background: var(--yellow);
+  color: #241b16;
+}
+
+/* Gentler decorative motion: slow the purely ambient/looping animations
+ * (loading spinners, page-entrance settle) way down. Functional feedback
+ * animations (correct/wrong, badge-pulse on completion, circuit-lab
+ * success cues) are left untouched — they still convey the same signal,
+ * just not screamed at full brightness thanks to the filter above. */
+[data-theme="bedtime"] .page-loading,
+[data-theme="bedtime"] .globe-3d-loading {
+  animation-duration: 2.6s;
+}
+
+[data-theme="bedtime"] .mundos-place {
+  animation-duration: 1.1s;
+}
+
+[data-theme="bedtime"] .story-page-body {
+  animation-duration: 1.2s;
+}
+
+.bedtime-toggle-btn {
+  font-size: 1.1rem;
+  background: #f0f0f0;
+  border: 2px solid #ccc;
+  border-radius: 999px;
+  width: 44px;
+  height: 44px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bedtime-toggle-on {
+  background: #241b16;
+  border-color: var(--yellow, #e8b756);
+}
+
+.navbar-bedtime-toggle {
+  margin: auto 4px auto 0;
 }
