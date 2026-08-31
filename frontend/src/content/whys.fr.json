@@ -437,5 +437,173 @@
     "quickAnswer": "Les chats ont un sens de l'équilibre très précis dans l'oreille interne et une colonne vertébrale extrêmement flexible, ce qui leur permet de tourner leur corps en l'air et d'atterrir pattes en premier.",
     "moreAnswer": "Quand un chat commence à tomber, des capteurs dans son oreille interne détectent immédiatement qu'il est à l'envers. Le chat s'en sert pour tordre d'abord l'avant de son corps, puis l'arrière, grâce à sa colonne vertébrale très flexible, sans avoir besoin d'aucun point d'appui — on appelle cela le « réflexe de redressement ». Ils écartent aussi leurs pattes comme un parachute pour ralentir la chute. Malgré tout, une chute de n'importe quelle hauteur peut blesser un chat, donc ce n'est pas sûr de tester cela exprès.",
     "experiment": null
+  },
+  {
+    "id": "rabo-cachorro",
+    "emoji": "🐶",
+    "question": "Pourquoi les chiens remuent-ils la queue ?",
+    "quickAnswer": "Les chiens remuent la queue pour montrer ce qu'ils ressentent — souvent de la joie, mais parfois aussi de la nervosité ou de l'excitation.",
+    "moreAnswer": "La queue fonctionne comme un drapeau qui communique des émotions. Un mouvement large et détendu signifie souvent la joie, tandis qu'un mouvement raide et rapide peut indiquer de la tension ou de la vigilance. Même la direction compte : des études montrent que les chiens heureux remuent davantage vers la droite.",
+    "experiment": "Observe un chien que tu connais bien et remarque si sa queue change de vitesse et de direction selon la situation."
+  },
+  {
+    "id": "abelhas-mel",
+    "emoji": "🐝",
+    "question": "Comment les abeilles font-elles le miel ?",
+    "quickAnswer": "Les abeilles récoltent le nectar des fleurs, le mélangent avec des enzymes dans leur bouche et le stockent dans les rayons, où l'eau s'évapore et laisse le miel.",
+    "moreAnswer": "Une abeille vole de fleur en fleur et aspire le nectar, un liquide sucré, qu'elle transporte dans une petite poche à l'intérieur de son corps. De retour à la ruche, elle passe le nectar de bouche à bouche à une autre abeille, en le mélangeant à des enzymes qui commencent à le transformer. Il est ensuite stocké dans des rayons de cire, et les abeilles agitent leurs ailes pour évaporer l'eau en trop, jusqu'à ce qu'il épaississe en miel.",
+    "experiment": "Goûte un peu de miel pur et remarque sa texture collante et son parfum floral — ils viennent directement du nectar des fleurs."
+  },
+  {
+    "id": "borboleta-metamorfose",
+    "emoji": "🦋",
+    "question": "Pourquoi la chenille se transforme-t-elle en papillon ?",
+    "quickAnswer": "Dans le cocon, le corps de la chenille se décompose presque entièrement et se reconstruit sous une nouvelle forme, avec des ailes, pour pouvoir voler et chercher des fleurs.",
+    "moreAnswer": "Ce processus s'appelle la métamorphose complète. La chenille mange beaucoup et grandit jusqu'à former un cocon autour d'elle. À l'intérieur, la majeure partie de son corps se dissout en une sorte de bouillie, et des cellules spéciales utilisent cette matière pour construire le corps de l'adulte : pattes fines, antennes et ailes colorées. Après des jours ou des semaines, un papillon complètement différent en sort.",
+    "experiment": "Si tu trouves une chenille dans un jardin, observe-la pendant quelques jours (sans la toucher) et vois comment elle grandit avant de former son cocon."
+  },
+  {
+    "id": "aranha-teia",
+    "emoji": "🕷️",
+    "question": "Comment les araignées tissent-elles leurs toiles ?",
+    "quickAnswer": "Les araignées produisent un fil de soie liquide à l'intérieur de leur corps, qui durcit au contact de l'air, et utilisent leurs pattes pour tisser la toile en spirale.",
+    "moreAnswer": "Dans son abdomen, l'araignée possède des glandes spéciales qui produisent de la soie liquide. En sortant par de petites ouvertures appelées filières, la soie durcit instantanément au contact de l'air, formant un fil très résistant et élastique. L'araignée utilise ses pattes pour tirer et coller les fils, créant d'abord les rayons principaux puis la spirale collante qui attrape les insectes.",
+    "experiment": "Par un matin de rosée, cherche des toiles d'araignée dans le jardin — les gouttelettes d'eau rendent les fils beaucoup plus faciles à voir."
+  },
+  {
+    "id": "camaleao-cor",
+    "emoji": "🦎",
+    "question": "Pourquoi les caméléons changent-ils de couleur ?",
+    "quickAnswer": "Les caméléons changent de couleur surtout pour communiquer leur humeur et leur température, et seulement un peu pour se camoufler.",
+    "moreAnswer": "La peau du caméléon possède des couches spéciales de cellules avec de minuscules cristaux qui reflètent la lumière de différentes manières. En étirant ou en relâchant sa peau, le caméléon modifie l'espacement de ces cristaux, changeant la couleur reflétée. Ils s'en servent surtout pour montrer des émotions, comme la colère ou l'intérêt pour s'accoupler, et pour réguler leur température corporelle — les couleurs foncées absorbent plus de chaleur du soleil.",
+    "experiment": null
+  },
+  {
+    "id": "urso-hibernacao",
+    "emoji": "🐻",
+    "question": "Pourquoi les ours hibernent-ils ?",
+    "quickAnswer": "Les ours hibernent pour économiser de l'énergie pendant l'hiver, quand la nourriture est rare et qu'il fait très froid.",
+    "moreAnswer": "Avant l'hiver, les ours mangent énormément pour accumuler des graisses. Ensuite, ils se cachent dans une tanière et leur corps entre dans un état de repos profond : le rythme cardiaque et la respiration ralentissent beaucoup, et la température corporelle baisse légèrement. Ainsi, ils dépensent beaucoup moins d'énergie et peuvent survivre des mois sans manger, en utilisant seulement la graisse accumulée.",
+    "experiment": null
+  },
+  {
+    "id": "elefante-orelhas",
+    "emoji": "🐘",
+    "question": "Pourquoi les éléphants ont-ils de si grandes oreilles ?",
+    "quickAnswer": "Les grandes oreilles aident les éléphants à se rafraîchir, car elles contiennent de nombreux vaisseaux sanguins qui libèrent de la chaleur quand elles sont agitées.",
+    "moreAnswer": "Les éléphants vivent dans des climats chauds et n'ont pas beaucoup de glandes sudoripares, ils ont donc besoin d'un autre moyen de se rafraîchir. Leurs oreilles sont remplies de vaisseaux sanguins proches de la peau ; en les agitant, l'air refroidit le sang qui y circule, et ce sang plus frais circule ensuite dans le reste du corps. Les oreilles les aident aussi à entendre des sons lointains et à communiquer avec d'autres éléphants.",
+    "experiment": null
+  },
+  {
+    "id": "girafa-pescoco",
+    "emoji": "🦒",
+    "question": "Pourquoi les girafes ont-elles un si long cou ?",
+    "quickAnswer": "Le long cou permet aux girafes d'atteindre les feuilles au sommet des arbres que d'autres animaux ne peuvent pas atteindre, ce qui leur donne plus de nourriture.",
+    "moreAnswer": "Au fil de nombreuses générations, les girafes avec un cou un peu plus long pouvaient manger des feuilles plus hautes, mieux survivre et avoir plus de petits — ce processus s'appelle la sélection naturelle. Malgré sa longueur, le cou d'une girafe a le même nombre d'os que le nôtre : sept vertèbres, mais chacune bien plus grande. Le long cou aide aussi les mâles à se battre en donnant des coups de tête.",
+    "experiment": null
+  },
+  {
+    "id": "pinguim-nao-voa",
+    "emoji": "🐧",
+    "question": "Pourquoi les pingouins ne volent-ils pas ?",
+    "quickAnswer": "Au fil de millions d'années, les ailes des pingouins se sont transformées en nageoires puissantes, parfaites pour nager, mais qui ne servent plus à voler dans les airs.",
+    "moreAnswer": "Les ancêtres des pingouins pouvaient voler, mais ils vivaient dans des endroits avec beaucoup de nourriture dans l'eau et peu de prédateurs sur terre. Avec le temps, bien nager est devenu plus utile que voler, et leurs ailes sont devenues plus courtes, plus rigides et en forme de rames. Aujourd'hui, les pingouins sont d'excellents nageurs sous l'eau, utilisant leurs ailes comme de vraies nageoires.",
+    "experiment": null
+  },
+  {
+    "id": "tubarao-dentes",
+    "emoji": "🦈",
+    "question": "Pourquoi les requins ont-ils autant de dents ?",
+    "quickAnswer": "Les requins perdent constamment des dents en chassant et en mâchant, donc leur corps produit toujours de nouvelles dents prêtes à remplacer celles qui tombent.",
+    "moreAnswer": "Contrairement à nous, qui n'avons que deux dentitions dans notre vie, les requins ont plusieurs rangées de dents de rechange derrière celles qu'ils utilisent. Quand une dent casse ou tombe, une autre prend sa place en quelques jours. Au cours de sa vie, un requin peut avoir des milliers de dents différentes, ce qui aide beaucoup car chasser et manger avec des dents pointues les use rapidement.",
+    "experiment": null
+  },
+  {
+    "id": "camelo-corcunda",
+    "emoji": "🐫",
+    "question": "Pourquoi les chameaux ont-ils une bosse ?",
+    "quickAnswer": "La bosse du chameau est faite de graisse, pas d'eau, et sert de réserve d'énergie pour survivre plusieurs jours sans manger dans le désert.",
+    "moreAnswer": "Beaucoup de gens pensent que la bosse stocke de l'eau, mais c'est en fait une réserve de graisse. Quand il n'y a pas de nourriture disponible dans le désert, le corps du chameau transforme cette graisse en énergie et même en eau, grâce à un processus chimique. De plus, avoir la graisse concentrée à un seul endroit, plutôt que répartie sur le corps, aide le chameau à libérer plus facilement la chaleur par le reste de sa peau.",
+    "experiment": null
+  },
+  {
+    "id": "arrepios",
+    "emoji": "🥶",
+    "question": "Pourquoi avons-nous la chair de poule ?",
+    "quickAnswer": "La chair de poule apparaît quand de petits muscles près de nos poils se contractent, généralement à cause du froid ou d'une émotion forte, comme la peur ou un frisson d'excitation.",
+    "moreAnswer": "Chaque poil du corps possède un petit muscle autour de lui. Quand on a froid ou qu'on ressent une émotion intense, le cerveau envoie un signal qui fait se contracter ces muscles, redressant le poil et créant de petites bosses sur la peau. Chez nos ancêtres plus poilus, cela aidait à retenir plus d'air chaud près du corps ; aujourd'hui, nous n'avons plus assez de poils pour que ça fonctionne, mais le réflexe se produit toujours.",
+    "experiment": "Écoute une chanson que tu aimes beaucoup, ou pense à une scène qui donne des frissons, et regarde si tu as la chair de poule sur les bras."
+  },
+  {
+    "id": "sonhar",
+    "emoji": "💭",
+    "question": "Pourquoi rêvons-nous ?",
+    "quickAnswer": "Nous rêvons surtout pendant une phase du sommeil où le cerveau reste très actif, en triant les souvenirs et les émotions de la journée.",
+    "moreAnswer": "Pendant le sommeil, nous traversons plusieurs phases, et dans l'une d'elles, appelée REM, le cerveau est presque aussi actif que lorsque nous sommes éveillés, même si le corps reste immobile. Les scientifiques pensent que les rêves aident à traiter les émotions, à consolider les souvenirs importants et peut-être même à s'entraîner à des situations que nous pourrions rencontrer. Nous ne nous souvenons pas toujours des rêves, car nous ne nous rappelons bien que de ceux qui se produisent juste avant le réveil.",
+    "experiment": "Garde un carnet près de ton lit et, au réveil, essaie d'écrire rapidement ce dont tu as rêvé avant de l'oublier."
+  },
+  {
+    "id": "espirro",
+    "emoji": "🤧",
+    "question": "Pourquoi éternuons-nous ?",
+    "quickAnswer": "Nous éternuons quand quelque chose irrite l'intérieur du nez, comme la poussière ou le pollen, et le corps expulse cet irritant avec force par un éternuement.",
+    "moreAnswer": "À l'intérieur du nez se trouvent des capteurs très sensibles qui détectent les particules étrangères, comme la poussière, le pollen ou le poivre. Quand cela arrive, ils envoient un signal au cerveau, qui ordonne aux poumons, à la gorge et aux muscles de la poitrine d'expulser l'air avec beaucoup de force et de vitesse, emportant l'irritant avec lui. Un éternuement peut atteindre plus de 150 km/h !",
+    "experiment": "La prochaine fois que tu éternues, remarque : tes yeux se ferment toujours sans que tu puisses l'empêcher. Essaie de comprendre pourquoi."
+  },
+  {
+    "id": "unhas-crescem",
+    "emoji": "💅",
+    "question": "Pourquoi les ongles poussent-ils ?",
+    "quickAnswer": "Les ongles poussent continuellement car, à leur racine, des cellules vivantes se multiplient sans arrêt, poussant l'ongle vieux vers l'avant.",
+    "moreAnswer": "À la base de l'ongle se trouve une zone appelée matrice, où de nouvelles cellules sont produites en permanence. Ces cellules se remplissent de kératine, la même protéine dure présente dans les cheveux, et poussent vers l'avant la partie déjà formée de l'ongle. Les ongles des mains poussent plus vite que ceux des pieds, et encore plus vite sur le majeur.",
+    "experiment": "Fais une petite marque au stylo près de la base d'un ongle et mesure la distance jusqu'au bout pendant deux semaines."
+  },
+  {
+    "id": "cabelo-cresce",
+    "emoji": "💇",
+    "question": "Pourquoi les cheveux poussent-ils ?",
+    "quickAnswer": "Les cheveux poussent parce qu'à la racine de chaque mèche, des cellules se divisent constamment, poussant le cheveu hors du cuir chevelu.",
+    "moreAnswer": "Chaque cheveu naît dans un petit follicule de la peau. Au fond du follicule, des cellules vivantes se divisent rapidement et se transforment en kératine, une protéine résistante, poussant le cheveu de plus en plus vers l'extérieur. Un cheveu pousse d'environ 1 centimètre par mois, mais après avoir poussé pendant quelques années, il tombe et un nouveau cheveu commence à pousser dans le même follicule.",
+    "experiment": null
+  },
+  {
+    "id": "cocegas",
+    "emoji": "😆",
+    "question": "Pourquoi sommes-nous chatouilleux ?",
+    "quickAnswer": "Les chatouilles se produisent parce que la peau a des zones très sensibles au toucher, et le cerveau réagit par le rire, surtout quand c'est une autre personne qui nous touche.",
+    "moreAnswer": "Curieusement, on ne peut pas se chatouiller soi-même, car le cerveau sait déjà à l'avance où et comment on va se toucher. Quand une autre personne nous touche de façon inattendue à des endroits sensibles, comme les pieds ou les aisselles, le cerveau ne peut pas prévoir le toucher et réagit plus fortement, souvent par le rire. Certains scientifiques pensent que ce réflexe a pu aider nos ancêtres à protéger des zones vulnérables du corps.",
+    "experiment": "Essaie de te chatouiller toi-même la paume de la main, puis demande à quelqu'un de le faire. Sens-tu une différence ?"
+  },
+  {
+    "id": "lagrimas",
+    "emoji": "😢",
+    "question": "Pourquoi pleurons-nous des larmes ?",
+    "quickAnswer": "Nous pleurons des larmes pour protéger et nettoyer nos yeux, mais aussi en réponse à des émotions fortes, comme la tristesse, la douleur ou même la joie.",
+    "moreAnswer": "Il existe trois types de larmes : celles qui gardent les yeux humides en permanence, celles qui apparaissent pour laver quelque chose d'irritant, comme la poussière ou les vapeurs d'oignon, et les larmes émotionnelles, que seuls les humains produisent en réponse à des sentiments forts. Ces dernières ont même une composition chimique légèrement différente, avec plus d'hormones liées au stress, ce qui pourrait expliquer pourquoi pleurer nous fait parfois du bien.",
+    "experiment": null
+  },
+  {
+    "id": "barriga-ronco",
+    "emoji": "🍽️",
+    "question": "Pourquoi le ventre gargouille-t-il ?",
+    "quickAnswer": "Le ventre gargouille parce que les muscles de l'estomac et des intestins se contractent pour déplacer l'air, les liquides et les aliments, créant des bruits de gargouillis.",
+    "moreAnswer": "Le système digestif est toujours en mouvement, même quand on ne mange pas, dans un processus appelé péristaltisme, qui pousse le contenu le long du tube digestif. Quand l'estomac est vide, il y a moins de nourriture pour étouffer le son, donc l'air et les liquides qui se déplacent à l'intérieur font plus de bruit. C'est pourquoi le ventre gargouille davantage quand on a faim.",
+    "experiment": "Remarque quand ton ventre gargouille le plus : avant les repas ou après ?"
+  },
+  {
+    "id": "dentes-de-leite",
+    "emoji": "🦷",
+    "question": "Pourquoi perdons-nous nos dents de lait ?",
+    "quickAnswer": "Les dents de lait tombent parce que la bouche d'un enfant est trop petite pour les dents plus grandes et plus solides qui poussent en dessous.",
+    "moreAnswer": "À la naissance, nous avons déjà des dents de lait formées dans les gencives, et vers 6 mois elles commencent à percer. Il y en a 20 au total, mais la bouche continue de grandir et a besoin de dents plus grandes pour mieux mâcher. Sous chaque dent de lait, une dent définitive pousse lentement, et quand elle est prête, elle pousse sur la racine de la dent de lait jusqu'à ce qu'elle se dissolve, faisant tomber la dent toute seule.",
+    "experiment": "Si tu as une dent de lait qui bouge, remarque comme elle devient de plus en plus lâche au fil des jours."
+  },
+  {
+    "id": "impressao-digital",
+    "emoji": "👆",
+    "question": "Pourquoi avons-nous des empreintes digitales ?",
+    "quickAnswer": "Les empreintes digitales sont de petits reliefs sur la peau du bout des doigts qui aident à saisir les objets plus fermement et à sentir les textures.",
+    "moreAnswer": "Ces reliefs augmentent le frottement entre le doigt et les objets, rendant plus facile de tenir des choses sans qu'elles glissent, même quand les doigts sont un peu humides. Ils se forment avant même notre naissance, dans le ventre de notre mère, et le motif de chaque personne est totalement unique — même les vrais jumeaux n'ont pas les mêmes empreintes digitales.",
+    "experiment": "Frotte le bout d'un doigt avec un crayon de couleur tendre, presse-le sur du papier et observe le motif unique qu'il laisse."
   }
 ]

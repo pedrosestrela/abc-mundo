@@ -437,5 +437,173 @@
     "quickAnswer": "Os gatos têm um sentido de equilíbrio muito apurado no ouvido interno e a coluna extremamente flexível, o que lhes permite girar o corpo no ar e aterrar com as patas primeiro.",
     "moreAnswer": "Quando um gato começa a cair, sensores no ouvido interno detetam imediatamente que está de cabeça para baixo. O gato usa isso para torcer a parte da frente do corpo primeiro, depois a parte de trás, aproveitando a sua coluna vertebral muito flexível, sem precisar de nenhum ponto de apoio — chama-se a isto o \"reflexo de endireitamento\". Também esticam as patas como um paraquedas para abrandar a queda. Ainda assim, uma queda de qualquer altura pode magoar um gato, por isso não é seguro testar isto de propósito.",
     "experiment": null
+  },
+  {
+    "id": "rabo-cachorro",
+    "emoji": "🐶",
+    "question": "Porque é que os cães abanam o rabo?",
+    "quickAnswer": "Os cães abanam o rabo para mostrar como se sentem — muitas vezes alegria, mas também podem estar nervosos ou agitados.",
+    "moreAnswer": "O rabo funciona como uma bandeira que comunica emoções. Um abanar largo e solto costuma significar felicidade, enquanto um abanar rígido e rápido pode indicar tensão ou alerta. Até a direção conta: estudos mostram que cães felizes abanam mais para o lado direito.",
+    "experiment": "Observa um cão que conheces bem e repara se o rabo dele muda de velocidade e direção consoante a situação."
+  },
+  {
+    "id": "abelhas-mel",
+    "emoji": "🐝",
+    "question": "Como é que as abelhas fazem o mel?",
+    "quickAnswer": "As abelhas recolhem néctar das flores, misturam-no com enzimas na boca e guardam-no nos favos, onde a água evapora e fica o mel.",
+    "moreAnswer": "Uma abelha vai de flor em flor e suga o néctar, um líquido doce, guardando-o num pequeno saco dentro do corpo. De volta à colmeia, passa o néctar a outra abelha, boca a boca, misturando-o com enzimas que começam a transformá-lo. Depois é colocado nos favos de cera, e as abelhas abanam as asas para evaporar a água extra, até ficar espesso: o mel.",
+    "experiment": "Prova um pouco de mel puro e repara na textura pegajosa e no cheiro floral — vêm diretamente do néctar das flores."
+  },
+  {
+    "id": "borboleta-metamorfose",
+    "emoji": "🦋",
+    "question": "Porque é que a lagarta se transforma em borboleta?",
+    "quickAnswer": "Dentro do casulo, o corpo da lagarta desfaz-se quase por completo e reorganiza-se numa nova forma, com asas, para poder voar e procurar flores.",
+    "moreAnswer": "Este processo chama-se metamorfose completa. A lagarta come muito e cresce até formar um casulo à sua volta. Lá dentro, a maior parte do corpo dissolve-se numa espécie de papa, e certas células especiais usam esse material para construir o corpo do adulto: pernas finas, antenas e asas coloridas. Ao fim de dias ou semanas, sai uma borboleta completamente diferente.",
+    "experiment": "Se encontrares uma lagarta num jardim, observa-a durante alguns dias (sem lhe mexer) e vê como cresce antes de formar o casulo."
+  },
+  {
+    "id": "aranha-teia",
+    "emoji": "🕷️",
+    "question": "Como é que as aranhas fazem teias?",
+    "quickAnswer": "As aranhas produzem um fio de seda líquida dentro do corpo, que endurece ao contacto com o ar, e usam as patas para tecer a teia em forma de espiral.",
+    "moreAnswer": "Dentro do abdómen, a aranha tem glândulas especiais que produzem seda em estado líquido. Ao sair por pequenas aberturas chamadas fieiras, a seda endurece instantaneamente ao tocar no ar, formando um fio muito resistente e elástico. A aranha usa as patas para puxar e colar os fios, criando primeiro os raios principais e depois a espiral pegajosa que apanha os insetos.",
+    "experiment": "Numa manhã com orvalho, procura teias de aranha no jardim — as gotinhas de água tornam os fios muito mais fáceis de ver."
+  },
+  {
+    "id": "camaleao-cor",
+    "emoji": "🦎",
+    "question": "Porque é que os camaleões mudam de cor?",
+    "quickAnswer": "Os camaleões mudam de cor sobretudo para comunicar o seu estado de humor e temperatura, e só um pouco para se camuflarem.",
+    "moreAnswer": "Na pele do camaleão existem camadas especiais de células com minúsculos cristais que refletem a luz de formas diferentes. Ao esticar ou relaxar a pele, o camaleão muda o espaçamento desses cristais, alterando a cor que refletem. Usam isto principalmente para mostrar emoções, como raiva ou interesse em acasalar, e para regular a temperatura do corpo — cores mais escuras absorvem mais calor do sol.",
+    "experiment": null
+  },
+  {
+    "id": "urso-hibernacao",
+    "emoji": "🐻",
+    "question": "Porque é que os ursos hibernam?",
+    "quickAnswer": "Os ursos hibernam para poupar energia durante o inverno, quando há pouca comida disponível e faz muito frio.",
+    "moreAnswer": "Antes do inverno, os ursos comem muitíssimo para acumular gordura. Depois, escondem-se numa toca e o corpo entra num estado de descanso profundo: o batimento cardíaco e a respiração ficam muito mais lentos, e a temperatura corporal desce um pouco. Assim, gastam muito menos energia e conseguem sobreviver meses sem comer, usando apenas a gordura acumulada.",
+    "experiment": null
+  },
+  {
+    "id": "elefante-orelhas",
+    "emoji": "🐘",
+    "question": "Porque é que os elefantes têm orelhas tão grandes?",
+    "quickAnswer": "As orelhas grandes ajudam os elefantes a arrefecer o corpo, porque têm muitos vasos sanguíneos que libertam calor quando são abanadas.",
+    "moreAnswer": "Os elefantes vivem em climas quentes e não têm muitas glândulas de suor, por isso precisam de outra forma de arrefecer. As orelhas são cheias de vasos sanguíneos muito perto da pele; ao abaná-las, o ar arrefece o sangue que passa por dentro, e esse sangue mais fresco circula depois pelo resto do corpo. As orelhas também ajudam a ouvir sons distantes e a comunicar com outros elefantes.",
+    "experiment": null
+  },
+  {
+    "id": "girafa-pescoco",
+    "emoji": "🦒",
+    "question": "Porque é que as girafas têm o pescoço tão comprido?",
+    "quickAnswer": "O pescoço comprido permite às girafas alcançar folhas no topo das árvores que outros animais não conseguem alcançar, o que lhes garante mais comida.",
+    "moreAnswer": "Ao longo de muitas gerações, as girafas com pescoços um pouco mais compridos conseguiam comer folhas mais altas, sobreviver melhor e ter mais crias — este processo chama-se seleção natural. Apesar de ser tão comprido, o pescoço de uma girafa tem o mesmo número de ossos que o nosso: sete vértebras, só que cada uma é muito maior. O pescoço comprido também ajuda os machos a lutar entre si, batendo com a cabeça.",
+    "experiment": null
+  },
+  {
+    "id": "pinguim-nao-voa",
+    "emoji": "🐧",
+    "question": "Porque é que os pinguins não voam?",
+    "quickAnswer": "Ao longo de milhões de anos, as asas dos pinguins transformaram-se em nadadeiras fortes, perfeitas para nadar, mas já não servem para voar no ar.",
+    "moreAnswer": "Os antepassados dos pinguins conseguiam voar, mas viviam em locais com muita comida na água e poucos predadores em terra. Com o tempo, tornou-se mais vantajoso nadar bem do que voar, e as asas foram-se tornando mais curtas, rígidas e parecidas com remos. Hoje, os pinguins são excelentes nadadores debaixo de água, usando as asas como se fossem verdadeiras nadadeiras.",
+    "experiment": null
+  },
+  {
+    "id": "tubarao-dentes",
+    "emoji": "🦈",
+    "question": "Porque é que os tubarões têm tantos dentes?",
+    "quickAnswer": "Os tubarões perdem dentes constantemente ao caçar e mastigar, por isso o corpo produz sempre novos dentes prontos a substituir os que caem.",
+    "moreAnswer": "Ao contrário de nós, que só temos dois conjuntos de dentes durante a vida, os tubarões têm várias filas de dentes de reserva atrás dos que estão a usar. Quando um dente parte ou cai, outro avança para o lugar em poucos dias. Ao longo da vida, um tubarão pode ter milhares de dentes diferentes, o que ajuda muito porque caçar e comer com dentes afiados desgasta-os depressa.",
+    "experiment": null
+  },
+  {
+    "id": "camelo-corcunda",
+    "emoji": "🐫",
+    "question": "Porque é que os camelos têm bossa?",
+    "quickAnswer": "A bossa do camelo é feita de gordura, não de água, e serve como reserva de energia para sobreviver muitos dias sem comer no deserto.",
+    "moreAnswer": "Muitas pessoas pensam que a bossa guarda água, mas na verdade é uma reserva de gordura. Quando não há comida disponível no deserto, o corpo do camelo transforma essa gordura em energia e até em água, através de um processo químico. Além disso, ter a gordura concentrada numa só zona, em vez de espalhada pelo corpo, ajuda o camelo a libertar calor mais facilmente pelo resto da pele.",
+    "experiment": null
+  },
+  {
+    "id": "arrepios",
+    "emoji": "🥶",
+    "question": "Porque é que ficamos com pele de galinha?",
+    "quickAnswer": "A pele de galinha acontece quando pequenos músculos junto aos pelos se contraem, geralmente por causa do frio ou de uma emoção forte, como medo ou arrepio.",
+    "moreAnswer": "Cada pelo do corpo tem um pequeno músculo à volta. Quando temos frio ou sentimos uma emoção intensa, o cérebro envia um sinal que faz esses músculos contraírem-se, levantando o pelo e criando pequenas saliências na pele. Nos nossos antepassados peludos, isto ajudava a reter mais ar quente perto do corpo; hoje já não temos pelo suficiente para isso funcionar, mas o reflexo continua a acontecer.",
+    "experiment": "Ouve uma música que gostes muito ou pensa numa cena arrepiante e repara se sentes a pele de galinha nos braços."
+  },
+  {
+    "id": "sonhar",
+    "emoji": "💭",
+    "question": "Porque é que sonhamos?",
+    "quickAnswer": "Sonhamos principalmente durante uma fase do sono em que o cérebro continua muito ativo, organizando memórias e emoções do dia.",
+    "moreAnswer": "Durante o sono passamos por várias fases, e numa delas, chamada REM, o cérebro fica quase tão ativo como quando estamos acordados, apesar do corpo estar imóvel. Os cientistas pensam que os sonhos ajudam a processar emoções, a consolidar memórias importantes e talvez até a praticar situações que podemos enfrentar. Nem sempre nos lembramos dos sonhos, porque só recordamos bem os que acontecem perto do momento em que acordamos.",
+    "experiment": "Guarda um caderno junto à cama e, ao acordar, tenta escrever rapidamente o que sonhaste antes de esquecer."
+  },
+  {
+    "id": "espirro",
+    "emoji": "🤧",
+    "question": "Porque é que espirramos?",
+    "quickAnswer": "Espirramos quando algo irrita o interior do nariz, como poeira ou pólen, e o corpo expulsa esse irritante com força através de um espirro.",
+    "moreAnswer": "Dentro do nariz existem sensores muito sensíveis que detetam partículas estranhas, como pó, pólen ou pimenta. Quando isso acontece, enviam um sinal ao cérebro, que ordena aos pulmões, garganta e músculos do peito que expulsem o ar com muita força e velocidade, levando consigo o irritante. Um espirro pode chegar a sair a mais de 150 km por hora!",
+    "experiment": "Repara na próxima vez que espirrares — fecha sempre os olhos sem conseguires evitar. Experimenta perceber porquê."
+  },
+  {
+    "id": "unhas-crescem",
+    "emoji": "💅",
+    "question": "Porque é que as unhas crescem?",
+    "quickAnswer": "As unhas crescem continuamente porque, na sua raiz, há células vivas que se multiplicam sem parar, empurrando as unhas velhas para fora.",
+    "moreAnswer": "Na base da unha existe uma zona chamada matriz, onde novas células são produzidas o tempo todo. Estas células enchem-se de queratina, a mesma proteína dura que existe no cabelo, e vão empurrando a parte já formada da unha para a frente. As unhas das mãos crescem mais depressa do que as dos pés, e crescem ainda mais depressa no dedo médio.",
+    "experiment": "Faz uma pequena marca com caneta na base de uma unha e mede a distância até à ponta ao longo de duas semanas."
+  },
+  {
+    "id": "cabelo-cresce",
+    "emoji": "💇",
+    "question": "Porque é que o cabelo cresce?",
+    "quickAnswer": "O cabelo cresce porque, na raiz de cada fio, há células que se dividem constantemente, empurrando o cabelo para fora do couro cabeludo.",
+    "moreAnswer": "Cada fio de cabelo nasce dentro de um pequeno folículo na pele. No fundo do folículo, células vivas dividem-se rapidamente e vão-se transformando em queratina, uma proteína resistente, empurrando o fio de cabelo cada vez mais para fora. Um fio de cabelo cresce cerca de 1 centímetro por mês, mas depois de crescer durante alguns anos, cai e um novo fio começa a crescer no mesmo folículo.",
+    "experiment": null
+  },
+  {
+    "id": "cocegas",
+    "emoji": "😆",
+    "question": "Porque é que temos cócegas?",
+    "quickAnswer": "As cócegas acontecem porque a pele tem zonas muito sensíveis ao toque, e o cérebro reage com riso, sobretudo quando é outra pessoa a tocar-nos.",
+    "moreAnswer": "Curiosamente, não conseguimos fazer cócegas a nós próprios, porque o cérebro já sabe antecipadamente onde e como vamos tocar. Quando é outra pessoa a tocar-nos de forma inesperada em zonas sensíveis, como os pés ou as axilas, o cérebro não consegue prever o toque e reage de forma mais intensa, muitas vezes com riso. Alguns cientistas pensam que este reflexo pode ter ajudado os nossos antepassados a proteger zonas vulneráveis do corpo.",
+    "experiment": "Tenta fazer cócegas a ti mesmo na palma da mão e depois pede a alguém para o fazer. Sentes alguma diferença?"
+  },
+  {
+    "id": "lagrimas",
+    "emoji": "😢",
+    "question": "Porque é que choramos lágrimas?",
+    "quickAnswer": "Choramos lágrimas para proteger e limpar os olhos, mas também como resposta a emoções fortes, como tristeza, dor ou até alegria.",
+    "moreAnswer": "Existem três tipos de lágrimas: as que mantêm os olhos húmidos o tempo todo, as que aparecem para lavar algo irritante, como poeira ou cebola, e as lágrimas emocionais, que só os humanos produzem em resposta a sentimentos fortes. Estas últimas têm até uma composição química ligeiramente diferente, com mais hormonas relacionadas com o stress, o que pode explicar por que razão chorar às vezes nos faz sentir melhor.",
+    "experiment": null
+  },
+  {
+    "id": "barriga-ronco",
+    "emoji": "🍽️",
+    "question": "Porque é que a barriga ronca?",
+    "quickAnswer": "A barriga ronca porque os músculos do estômago e dos intestinos se contraem para mover ar, líquidos e comida, criando sons de gorgolejo.",
+    "moreAnswer": "O aparelho digestivo está sempre em movimento, mesmo quando não estamos a comer, num processo chamado peristalse, que empurra o conteúdo ao longo do tubo digestivo. Quando o estômago está vazio, há menos comida para abafar o som, por isso o ar e os líquidos que se movem lá dentro fazem mais barulho. É por isso que a barriga ronca mais quando temos fome.",
+    "experiment": "Repara em quando a tua barriga ronca mais: antes das refeições ou depois delas?"
+  },
+  {
+    "id": "dentes-de-leite",
+    "emoji": "🦷",
+    "question": "Porque é que perdemos os dentes de leite?",
+    "quickAnswer": "Os dentes de leite caem porque a boca de uma criança é pequena demais para os dentes maiores e mais fortes que crescem por baixo deles.",
+    "moreAnswer": "Quando nascemos, já temos dentes de leite formados dentro das gengivas, e por volta dos 6 meses começam a nascer. São 20 no total, mas a boca continua a crescer e precisa de dentes maiores para mastigar melhor. Por baixo de cada dente de leite, um dente definitivo vai crescendo lentamente e, quando está pronto, empurra a raiz do dente de leite até esta se dissolver, fazendo o dente cair sozinho.",
+    "experiment": "Se tiveres um dente de leite que já abanou, repara em como ele fica cada vez mais solto ao longo dos dias."
+  },
+  {
+    "id": "impressao-digital",
+    "emoji": "👆",
+    "question": "Porque é que temos impressões digitais?",
+    "quickAnswer": "As impressões digitais são pequenos relevos na pele das pontas dos dedos que ajudam a agarrar objetos com mais firmeza e a sentir texturas.",
+    "moreAnswer": "Esses relevos, chamados cristas papilares, aumentam o atrito entre o dedo e os objetos, tornando mais fácil segurar coisas sem que escorreguem, mesmo quando os dedos estão um pouco húmidos. Formam-se ainda antes de nascermos, dentro da barriga da mãe, e o padrão de cada pessoa é completamente único — nem gémeos idênticos têm impressões digitais iguais.",
+    "experiment": "Pinta a ponta de um dedo com lápis de cor macio, pressiona-o num papel e observa o desenho único que deixa."
   }
 ]

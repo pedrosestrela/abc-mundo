@@ -437,5 +437,173 @@
     "quickAnswer": "I gatti hanno un senso dell'equilibrio molto preciso nell'orecchio interno e una colonna vertebrale estremamente flessibile, che permette loro di girare il corpo in aria e atterrare prima con le zampe.",
     "moreAnswer": "Quando un gatto inizia a cadere, i sensori nell'orecchio interno rilevano immediatamente che è capovolto. Il gatto usa questo per torcere prima la parte anteriore del corpo, poi quella posteriore, grazie alla sua colonna vertebrale molto flessibile, senza aver bisogno di alcun punto d'appoggio: questo si chiama \"riflesso di raddrizzamento\". Allargano anche le zampe come un paracadute per rallentare la caduta. Ciononostante, una caduta da qualsiasi altezza può far male a un gatto, quindi non è sicuro provarlo apposta.",
     "experiment": null
+  },
+  {
+    "id": "rabo-cachorro",
+    "emoji": "🐶",
+    "question": "Perché i cani scodinzolano?",
+    "quickAnswer": "I cani scodinzolano per mostrare come si sentono, spesso felicità, ma a volte anche nervosismo o eccitazione.",
+    "moreAnswer": "La coda funziona come una bandiera che comunica emozioni. Un movimento ampio e rilassato di solito significa felicità, mentre uno rigido e veloce può indicare tensione o allerta. Anche la direzione conta: gli studi mostrano che i cani felici scodinzolano di più verso destra.",
+    "experiment": "Osserva un cane che conosci bene e nota se la velocità e la direzione della coda cambiano a seconda della situazione."
+  },
+  {
+    "id": "abelhas-mel",
+    "emoji": "🐝",
+    "question": "Come fanno le api il miele?",
+    "quickAnswer": "Le api raccolgono il nettare dai fiori, lo mescolano con enzimi nella bocca e lo conservano nei favi, dove l'acqua evapora lasciando il miele.",
+    "moreAnswer": "Un'ape vola di fiore in fiore succhiando il nettare, un liquido dolce, e lo porta in una piccola sacca dentro il corpo. Tornata nell'alveare, passa il nettare bocca a bocca a un'altra ape, mescolandolo con enzimi che iniziano a trasformarlo. Poi viene conservato nei favi di cera, e le api sventolano le ali per far evaporare l'acqua in eccesso finché si addensa in miele.",
+    "experiment": "Assaggia un po' di miele puro e nota la sua consistenza appiccicosa e il profumo floreale: vengono direttamente dal nettare dei fiori."
+  },
+  {
+    "id": "borboleta-metamorfose",
+    "emoji": "🦋",
+    "question": "Perché il bruco si trasforma in farfalla?",
+    "quickAnswer": "Dentro il bozzolo, il corpo del bruco si disfa quasi completamente e si riorganizza in una nuova forma, con le ali, per poter volare e cercare fiori.",
+    "moreAnswer": "Questo processo si chiama metamorfosi completa. Il bruco mangia molto e cresce fino a formare un bozzolo intorno a sé. All'interno, gran parte del corpo si dissolve in una specie di poltiglia, e cellule speciali usano quel materiale per costruire il corpo dell'adulto: zampe sottili, antenne e ali colorate. Dopo giorni o settimane, esce una farfalla completamente diversa.",
+    "experiment": "Se trovi un bruco in giardino, osservalo per qualche giorno (senza toccarlo) e guarda come cresce prima di formare il bozzolo."
+  },
+  {
+    "id": "aranha-teia",
+    "emoji": "🕷️",
+    "question": "Come fanno i ragni le ragnatele?",
+    "quickAnswer": "I ragni producono un filo di seta liquida dentro il corpo, che si indurisce a contatto con l'aria, e usano le zampe per tessere la tela a spirale.",
+    "moreAnswer": "Dentro l'addome, il ragno ha ghiandole speciali che producono seta allo stato liquido. Uscendo da piccole aperture chiamate filiere, la seta si indurisce istantaneamente a contatto con l'aria, formando un filo molto resistente ed elastico. Il ragno usa le zampe per tirare e incollare i fili, creando prima i raggi principali e poi la spirale appiccicosa che cattura gli insetti.",
+    "experiment": "In una mattina con la rugiada, cerca ragnatele in giardino: le goccioline d'acqua rendono i fili molto più facili da vedere."
+  },
+  {
+    "id": "camaleao-cor",
+    "emoji": "🦎",
+    "question": "Perché i camaleonti cambiano colore?",
+    "quickAnswer": "I camaleonti cambiano colore soprattutto per comunicare il loro umore e la loro temperatura, e solo un po' per mimetizzarsi.",
+    "moreAnswer": "Nella pelle del camaleonte ci sono strati speciali di cellule con minuscoli cristalli che riflettono la luce in modi diversi. Allungando o rilassando la pelle, il camaleonte cambia la distanza tra questi cristalli, alterando il colore riflesso. Lo usano soprattutto per mostrare emozioni, come rabbia o interesse per l'accoppiamento, e per regolare la temperatura corporea: i colori scuri assorbono più calore dal sole.",
+    "experiment": null
+  },
+  {
+    "id": "urso-hibernacao",
+    "emoji": "🐻",
+    "question": "Perché gli orsi vanno in letargo?",
+    "quickAnswer": "Gli orsi vanno in letargo per risparmiare energia durante l'inverno, quando il cibo scarseggia e fa molto freddo.",
+    "moreAnswer": "Prima dell'inverno, gli orsi mangiano moltissimo per accumulare grasso. Poi si nascondono in una tana e il loro corpo entra in uno stato di riposo profondo: il battito cardiaco e la respirazione rallentano molto, e la temperatura corporea scende leggermente. Così consumano molta meno energia e riescono a sopravvivere mesi senza mangiare, usando solo il grasso accumulato.",
+    "experiment": null
+  },
+  {
+    "id": "elefante-orelhas",
+    "emoji": "🐘",
+    "question": "Perché gli elefanti hanno orecchie così grandi?",
+    "quickAnswer": "Le grandi orecchie aiutano gli elefanti a rinfrescarsi, perché sono piene di vasi sanguigni che rilasciano calore quando vengono sventolate.",
+    "moreAnswer": "Gli elefanti vivono in climi caldi e non hanno molte ghiandole sudoripare, quindi hanno bisogno di un altro modo per raffreddarsi. Le loro orecchie sono piene di vasi sanguigni vicini alla pelle; sventolandole, l'aria raffredda il sangue che vi scorre, e quel sangue più fresco circola poi nel resto del corpo. Le orecchie li aiutano anche a sentire suoni lontani e a comunicare con altri elefanti.",
+    "experiment": null
+  },
+  {
+    "id": "girafa-pescoco",
+    "emoji": "🦒",
+    "question": "Perché le giraffe hanno il collo così lungo?",
+    "quickAnswer": "Il collo lungo permette alle giraffe di raggiungere le foglie in cima agli alberi che altri animali non possono raggiungere, dando loro più cibo.",
+    "moreAnswer": "Nel corso di molte generazioni, le giraffe con il collo un po' più lungo potevano mangiare foglie più alte, sopravvivere meglio e avere più cuccioli: questo processo si chiama selezione naturale. Nonostante sia così lungo, il collo di una giraffa ha lo stesso numero di ossa del nostro: sette vertebre, solo molto più grandi. Il collo lungo aiuta anche i maschi a combattere colpendosi con la testa.",
+    "experiment": null
+  },
+  {
+    "id": "pinguim-nao-voa",
+    "emoji": "🐧",
+    "question": "Perché i pinguini non volano?",
+    "quickAnswer": "Nel corso di milioni di anni, le ali dei pinguini si sono trasformate in pinne forti, perfette per nuotare, ma non più adatte a volare nell'aria.",
+    "moreAnswer": "Gli antenati dei pinguini sapevano volare, ma vivevano in luoghi con molto cibo in acqua e pochi predatori sulla terraferma. Col tempo, nuotare bene è diventato più vantaggioso che volare, e le ali sono diventate più corte, rigide e simili a remi. Oggi i pinguini sono eccellenti nuotatori sott'acqua, usando le ali come vere pinne.",
+    "experiment": null
+  },
+  {
+    "id": "tubarao-dentes",
+    "emoji": "🦈",
+    "question": "Perché gli squali hanno così tanti denti?",
+    "quickAnswer": "Gli squali perdono continuamente denti mentre cacciano e masticano, quindi il loro corpo produce sempre nuovi denti pronti a sostituire quelli che cadono.",
+    "moreAnswer": "A differenza nostra, che abbiamo solo due dentizioni nella vita, gli squali hanno diverse file di denti di riserva dietro quelli in uso. Quando un dente si rompe o cade, un altro prende il suo posto in pochi giorni. Nel corso della vita, uno squalo può avere migliaia di denti diversi, il che aiuta molto perché cacciare e mangiare con denti affilati li consuma rapidamente.",
+    "experiment": null
+  },
+  {
+    "id": "camelo-corcunda",
+    "emoji": "🐫",
+    "question": "Perché i cammelli hanno la gobba?",
+    "quickAnswer": "La gobba del cammello è fatta di grasso, non di acqua, e serve come riserva di energia per sopravvivere molti giorni senza cibo nel deserto.",
+    "moreAnswer": "Molte persone pensano che la gobba conservi acqua, ma in realtà è una riserva di grasso. Quando nel deserto non c'è cibo disponibile, il corpo del cammello trasforma quel grasso in energia e persino in acqua, attraverso un processo chimico. Inoltre, avere il grasso concentrato in una sola zona, invece che sparso sul corpo, aiuta il cammello a rilasciare calore più facilmente dal resto della pelle.",
+    "experiment": null
+  },
+  {
+    "id": "arrepios",
+    "emoji": "🥶",
+    "question": "Perché ci viene la pelle d'oca?",
+    "quickAnswer": "La pelle d'oca si forma quando piccoli muscoli vicino ai peli si contraggono, di solito per il freddo o per un'emozione forte, come paura o brivido di entusiasmo.",
+    "moreAnswer": "Ogni pelo del corpo ha un piccolo muscolo intorno a sé. Quando abbiamo freddo o proviamo un'emozione intensa, il cervello invia un segnale che fa contrarre quei muscoli, sollevando il pelo e creando piccole protuberanze sulla pelle. Nei nostri antenati più pelosi, questo aiutava a trattenere più aria calda vicino al corpo; oggi non abbiamo abbastanza peli perché funzioni, ma il riflesso continua a verificarsi.",
+    "experiment": "Ascolta una canzone che ti piace molto, o pensa a una scena da brivido, e nota se ti viene la pelle d'oca sulle braccia."
+  },
+  {
+    "id": "sonhar",
+    "emoji": "💭",
+    "question": "Perché sogniamo?",
+    "quickAnswer": "Sogniamo soprattutto durante una fase del sonno in cui il cervello resta molto attivo, organizzando i ricordi e le emozioni della giornata.",
+    "moreAnswer": "Durante il sonno attraversiamo diverse fasi, e in una di queste, chiamata REM, il cervello è quasi attivo come quando siamo svegli, anche se il corpo resta immobile. Gli scienziati pensano che i sogni aiutino a elaborare le emozioni, a consolidare i ricordi importanti e forse anche a esercitarsi in situazioni che potremmo affrontare. Non ricordiamo sempre i sogni, perché ricordiamo bene solo quelli che avvengono vicino al momento del risveglio.",
+    "experiment": "Tieni un quaderno accanto al letto e, al risveglio, prova a scrivere velocemente cosa hai sognato prima di dimenticarlo."
+  },
+  {
+    "id": "espirro",
+    "emoji": "🤧",
+    "question": "Perché starnutiamo?",
+    "quickAnswer": "Starnutiamo quando qualcosa irrita l'interno del naso, come polvere o polline, e il corpo espelle con forza quell'elemento irritante attraverso uno starnuto.",
+    "moreAnswer": "Dentro il naso ci sono sensori molto sensibili che rilevano particelle estranee, come polvere, polline o pepe. Quando ciò accade, inviano un segnale al cervello, che ordina ai polmoni, alla gola e ai muscoli del petto di espellere l'aria con grande forza e velocità, portando via con sé l'elemento irritante. Uno starnuto può raggiungere oltre 150 km/h!",
+    "experiment": "La prossima volta che starnutisci, nota che chiudi sempre gli occhi senza riuscire a evitarlo. Prova a capire perché."
+  },
+  {
+    "id": "unhas-crescem",
+    "emoji": "💅",
+    "question": "Perché crescono le unghie?",
+    "quickAnswer": "Le unghie crescono continuamente perché, alla loro radice, ci sono cellule vive che si moltiplicano senza sosta, spingendo in avanti l'unghia vecchia.",
+    "moreAnswer": "Alla base dell'unghia c'è una zona chiamata matrice, dove vengono prodotte continuamente nuove cellule. Queste cellule si riempiono di cheratina, la stessa proteina dura presente nei capelli, e spingono in avanti la parte già formata dell'unghia. Le unghie delle mani crescono più velocemente di quelle dei piedi, e ancora più velocemente sul dito medio.",
+    "experiment": "Fai un piccolo segno con la penna vicino alla base di un'unghia e misura la distanza dalla punta per due settimane."
+  },
+  {
+    "id": "cabelo-cresce",
+    "emoji": "💇",
+    "question": "Perché crescono i capelli?",
+    "quickAnswer": "I capelli crescono perché, alla radice di ogni ciocca, le cellule si dividono costantemente, spingendo il capello fuori dal cuoio capelluto.",
+    "moreAnswer": "Ogni capello nasce dentro un piccolo follicolo nella pelle. In fondo al follicolo, cellule vive si dividono rapidamente e si trasformano in cheratina, una proteina resistente, spingendo il capello sempre più verso l'esterno. Un capello cresce circa 1 centimetro al mese, ma dopo essere cresciuto per alcuni anni, cade e un nuovo capello inizia a crescere nello stesso follicolo.",
+    "experiment": null
+  },
+  {
+    "id": "cocegas",
+    "emoji": "😆",
+    "question": "Perché abbiamo il solletico?",
+    "quickAnswer": "Il solletico avviene perché la pelle ha zone molto sensibili al tocco, e il cervello reagisce con la risata, soprattutto quando è un'altra persona a toccarci.",
+    "moreAnswer": "Curiosamente, non possiamo farci il solletico da soli, perché il cervello sa già in anticipo dove e come ci toccheremo. Quando un'altra persona ci tocca in modo inaspettato in zone sensibili, come i piedi o le ascelle, il cervello non riesce a prevedere il tocco e reagisce in modo più intenso, spesso con la risata. Alcuni scienziati pensano che questo riflesso possa aver aiutato i nostri antenati a proteggere zone vulnerabili del corpo.",
+    "experiment": "Prova a farti il solletico da solo sul palmo della mano, poi chiedi a qualcuno di farlo. Noti qualche differenza?"
+  },
+  {
+    "id": "lagrimas",
+    "emoji": "😢",
+    "question": "Perché piangiamo lacrime?",
+    "quickAnswer": "Piangiamo lacrime per proteggere e pulire gli occhi, ma anche come risposta a emozioni forti, come tristezza, dolore o persino gioia.",
+    "moreAnswer": "Esistono tre tipi di lacrime: quelle che mantengono gli occhi umidi sempre, quelle che appaiono per lavare via qualcosa di irritante, come polvere o cipolla, e le lacrime emotive, che solo gli esseri umani producono in risposta a sentimenti forti. Queste ultime hanno persino una composizione chimica leggermente diversa, con più ormoni legati allo stress, il che potrebbe spiegare perché piangere a volte ci fa sentire meglio.",
+    "experiment": null
+  },
+  {
+    "id": "barriga-ronco",
+    "emoji": "🍽️",
+    "question": "Perché la pancia brontola?",
+    "quickAnswer": "La pancia brontola perché i muscoli dello stomaco e dell'intestino si contraggono per muovere aria, liquidi e cibo, creando suoni gorgoglianti.",
+    "moreAnswer": "L'apparato digerente è sempre in movimento, anche quando non stiamo mangiando, in un processo chiamato peristalsi, che spinge il contenuto lungo il tubo digerente. Quando lo stomaco è vuoto, c'è meno cibo ad attutire il suono, quindi l'aria e i liquidi che si muovono dentro fanno più rumore. Per questo la pancia brontola di più quando abbiamo fame.",
+    "experiment": "Nota quando la tua pancia brontola di più: prima dei pasti o dopo?"
+  },
+  {
+    "id": "dentes-de-leite",
+    "emoji": "🦷",
+    "question": "Perché perdiamo i denti da latte?",
+    "quickAnswer": "I denti da latte cadono perché la bocca di un bambino è troppo piccola per i denti più grandi e forti che crescono sotto di essi.",
+    "moreAnswer": "Quando nasciamo, abbiamo già denti da latte formati dentro le gengive, e verso i 6 mesi iniziano a spuntare. Sono 20 in totale, ma la bocca continua a crescere e ha bisogno di denti più grandi per masticare meglio. Sotto ogni dente da latte, un dente definitivo cresce lentamente e, quando è pronto, spinge sulla radice del dente da latte finché non si dissolve, facendo cadere il dente da solo.",
+    "experiment": "Se hai un dente da latte che dondola già, osserva come diventa sempre più mobile col passare dei giorni."
+  },
+  {
+    "id": "impressao-digital",
+    "emoji": "👆",
+    "question": "Perché abbiamo le impronte digitali?",
+    "quickAnswer": "Le impronte digitali sono piccoli rilievi sulla pelle dei polpastrelli che aiutano ad afferrare gli oggetti con più fermezza e a sentire le texture.",
+    "moreAnswer": "Questi rilievi aumentano l'attrito tra il dito e gli oggetti, rendendo più facile tenere le cose senza che scivolino, anche quando le dita sono un po' umide. Si formano ancor prima della nascita, dentro il grembo materno, e il disegno di ogni persona è completamente unico: nemmeno i gemelli identici hanno le stesse impronte digitali.",
+    "experiment": "Sfrega la punta di un dito con una matita colorata morbida, premila su un foglio e osserva il disegno unico che lascia."
   }
 ]
