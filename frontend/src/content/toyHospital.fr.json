@@ -1,0 +1,74 @@
+[
+  {
+    "id": "sore-arm", "characterEmoji": "🧸", "characterName": "Nounours", "complaintEmoji": "😣", "isEmotional": false,
+    "complaint": "J'ai un peu mal au bras depuis que je suis tombé de l'étagère.",
+    "choices": [
+      { "id": "rest-tell", "emoji": "🛌", "label": "Reposer le bras et le dire à un adulte", "correct": true, "feedback": "Excellent choix ! Se reposer et le dire à un adulte est toujours le premier geste le plus sûr." },
+      { "id": "ignore", "emoji": "🙈", "label": "Continuer à jouer et ne pas s'en occuper", "correct": false, "feedback": "C'est mieux de le dire à un adulte pour qu'il vérifie que tu vas bien." },
+      { "id": "bandage", "emoji": "🩹", "label": "Mettre un pansement doux dessus", "correct": true, "feedback": "Ça peut un peu aider, mais le mieux est aussi de le dire à un adulte." }
+    ]
+  },
+  {
+    "id": "tummy-ache", "characterEmoji": "🐰", "characterName": "Lapin", "complaintEmoji": "😖", "isEmotional": false,
+    "complaint": "Mon ventre fait bizarre après le déjeuner.",
+    "choices": [
+      { "id": "tell-adult", "emoji": "🗣️", "label": "Dire à un adulte comment tu te sens", "correct": true, "feedback": "Bien ! Le dire à un adulte l'aide à prendre soin de toi." },
+      { "id": "drink-water", "emoji": "💧", "label": "Boire un peu d'eau et te reposer", "correct": true, "feedback": "Bonne idée, se reposer un peu peut aider." },
+      { "id": "more-candy", "emoji": "🍬", "label": "Manger encore plus de bonbons", "correct": false, "feedback": "Si ton ventre fait bizarre, manger plus de bonbons n'aidera pas. Mieux vaut le dire à un adulte." }
+    ]
+  },
+  {
+    "id": "small-cut", "characterEmoji": "🦖", "characterName": "Dino", "complaintEmoji": "🩹", "isEmotional": false,
+    "complaint": "J'ai une petite égratignure au genou.",
+    "choices": [
+      { "id": "wash-bandage", "emoji": "🚿", "label": "La laver à l'eau et mettre un pansement", "correct": true, "feedback": "Super ! La laver et la couvrir aide à prendre soin de l'égratignure." },
+      { "id": "show-adult", "emoji": "👀", "label": "La montrer à un adulte", "correct": true, "feedback": "Bonne idée, un adulte peut t'aider à t'en occuper." },
+      { "id": "ignore-dirty", "emoji": "🙈", "label": "Ne rien faire et continuer à jouer", "correct": false, "feedback": "Il vaut mieux laver l'égratignure ou la montrer à un adulte, pour qu'elle ne s'infecte pas." }
+    ]
+  },
+  {
+    "id": "sniffles", "characterEmoji": "🐘", "characterName": "Éléphant", "complaintEmoji": "🤧", "isEmotional": false,
+    "complaint": "J'ai le nez qui coule et j'éternue beaucoup.",
+    "choices": [
+      { "id": "tissue-rest", "emoji": "🧻", "label": "Utiliser un mouchoir et te reposer", "correct": true, "feedback": "Bien ! Un mouchoir et un peu de repos t'aident à te sentir mieux." },
+      { "id": "tell-adult", "emoji": "🗣️", "label": "Dire à un adulte que tu ne te sens pas bien", "correct": true, "feedback": "Bon choix, un adulte peut prendre soin de toi." },
+      { "id": "share-toys", "emoji": "🧸", "label": "Continuer à jouer et partager les jouets sans te laver les mains", "correct": false, "feedback": "Quand tu es enrhumé, il est important de te laver les mains et de te couvrir la bouche quand tu éternues, pour ne pas répandre les microbes." }
+    ]
+  },
+  {
+    "id": "tired-eyes", "characterEmoji": "🦉", "characterName": "Hibou", "complaintEmoji": "😴", "isEmotional": false,
+    "complaint": "Mes yeux se sentent fatigués et lourds.",
+    "choices": [
+      { "id": "rest-eyes", "emoji": "😌", "label": "Reposer tes yeux et faire une petite sieste", "correct": true, "feedback": "Super ! Reposer tes yeux les aide à se sentir mieux." },
+      { "id": "tell-adult", "emoji": "🗣️", "label": "Dire à un adulte que tu es fatigué", "correct": true, "feedback": "Bonne idée, les adultes peuvent t'aider à te reposer." },
+      { "id": "bright-screen", "emoji": "📱", "label": "Continuer à regarder un écran lumineux", "correct": false, "feedback": "Regarder un écran quand tu es fatigué fatigue encore plus tes yeux. Il vaut mieux te reposer." }
+    ]
+  },
+  {
+    "id": "sad-feelings", "characterEmoji": "🐼", "characterName": "Panda", "complaintEmoji": "😢", "isEmotional": true,
+    "complaint": "Je suis triste parce que mon ami n'a pas voulu jouer avec moi.",
+    "choices": [
+      { "id": "talk-adult", "emoji": "🗣️", "label": "Parler à un adulte de ce que tu ressens", "correct": true, "feedback": "Bien ! Parler de tes sentiments à un adulte aide vraiment." },
+      { "id": "hug-comfort", "emoji": "🤗", "label": "Respirer profondément et faire un câlin à quelque chose de doux", "correct": true, "feedback": "Ça peut t'aider à te sentir un peu mieux." },
+      { "id": "keep-inside", "emoji": "🤐", "label": "Tout garder pour toi et ne rien dire", "correct": false, "feedback": "Il vaut toujours mieux partager tes sentiments avec quelqu'un en qui tu as confiance." }
+    ]
+  },
+  {
+    "id": "thirsty-tired", "characterEmoji": "🐸", "characterName": "Grenouille", "complaintEmoji": "🥵", "isEmotional": false,
+    "complaint": "J'ai tellement joué que j'ai soif et je transpire.",
+    "choices": [
+      { "id": "drink-shade", "emoji": "🥤", "label": "Boire de l'eau et te reposer à l'ombre", "correct": true, "feedback": "Super ! Boire de l'eau et te reposer aide ton corps à aller mieux." },
+      { "id": "tell-adult", "emoji": "🗣️", "label": "Dire à un adulte que tu as besoin d'une pause", "correct": true, "feedback": "Bonne idée, les adultes peuvent t'aider à faire une pause." },
+      { "id": "keep-running", "emoji": "🏃", "label": "Continuer à courir au soleil", "correct": false, "feedback": "Il vaut mieux s'arrêter, boire de l'eau et se reposer un peu à l'ombre." }
+    ]
+  },
+  {
+    "id": "bump-head", "characterEmoji": "🦁", "characterName": "Lion", "complaintEmoji": "🤕", "isEmotional": false,
+    "complaint": "Je me suis cogné la tête contre l'étagère à jouets.",
+    "choices": [
+      { "id": "tell-now", "emoji": "🚨", "label": "Le dire tout de suite à un adulte", "correct": true, "feedback": "Très bien ! Se cogner la tête est toujours une bonne raison de prévenir tout de suite un adulte." },
+      { "id": "sit-wait", "emoji": "🪑", "label": "S'asseoir calmement et attendre de l'aide", "correct": true, "feedback": "Bien, rester calme en attendant est aussi une bonne idée." },
+      { "id": "keep-jumping", "emoji": "🤸", "label": "Continuer à sauter partout", "correct": false, "feedback": "Après s'être cogné la tête, il est important de s'arrêter et de le dire tout de suite à un adulte." }
+    ]
+  }
+]

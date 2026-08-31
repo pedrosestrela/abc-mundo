@@ -4493,6 +4493,21 @@ button.circuit-board-slot:disabled {
   outline-offset: 2px;
 }
 
+/* --- "Eu Por Dentro" friendly body silhouette --- */
+.body-silhouette-part {
+  fill: var(--blue, #3aa0ff);
+  fill-opacity: 0.1;
+  stroke: var(--text, #333);
+  stroke-opacity: 0.2;
+  stroke-width: 1.5;
+}
+
+.body-diagram {
+  max-width: 260px;
+  margin: 0 auto;
+  display: block;
+}
+
 .mission-grid-cards {
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
 }

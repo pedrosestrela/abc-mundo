@@ -1,0 +1,74 @@
+[
+  {
+    "id": "sore-arm", "characterEmoji": "🧸", "characterName": "Osito", "complaintEmoji": "😣", "isEmotional": false,
+    "complaint": "Me duele un poco el brazo desde que me caí de la estantería.",
+    "choices": [
+      { "id": "rest-tell", "emoji": "🛌", "label": "Descansar el brazo y decírselo a un adulto", "correct": true, "feedback": "¡Buena elección! Descansar y decírselo a un adulto es siempre el primer paso más seguro." },
+      { "id": "ignore", "emoji": "🙈", "label": "Seguir jugando y no hacerle caso", "correct": false, "feedback": "Es mejor decírselo a un adulto para que compruebe que estás bien." },
+      { "id": "bandage", "emoji": "🩹", "label": "Ponerle una tirita suave", "correct": true, "feedback": "Eso puede ayudar un poco, pero lo mejor es también decírselo a un adulto." }
+    ]
+  },
+  {
+    "id": "tummy-ache", "characterEmoji": "🐰", "characterName": "Coneja", "complaintEmoji": "😖", "isEmotional": false,
+    "complaint": "Mi barriga se siente rara después de comer.",
+    "choices": [
+      { "id": "tell-adult", "emoji": "🗣️", "label": "Decirle a un adulto cómo te sientes", "correct": true, "feedback": "¡Bien! Decírselo a un adulto le ayuda a cuidarte." },
+      { "id": "drink-water", "emoji": "💧", "label": "Beber un poco de agua y descansar", "correct": true, "feedback": "Buena idea, descansar un poco puede ayudar." },
+      { "id": "more-candy", "emoji": "🍬", "label": "Comer más caramelos", "correct": false, "feedback": "Si tu barriga se siente rara, comer más caramelos no va a ayudar. Mejor decírselo a un adulto." }
+    ]
+  },
+  {
+    "id": "small-cut", "characterEmoji": "🦖", "characterName": "Dino", "complaintEmoji": "🩹", "isEmotional": false,
+    "complaint": "Tengo un rasguño pequeño en la rodilla.",
+    "choices": [
+      { "id": "wash-bandage", "emoji": "🚿", "label": "Lavarlo con agua y ponerle una tirita", "correct": true, "feedback": "¡Genial! Lavarlo y cubrirlo ayuda a cuidar el rasguño." },
+      { "id": "show-adult", "emoji": "👀", "label": "Enseñárselo a un adulto", "correct": true, "feedback": "Buena idea, un adulto puede ayudarte a cuidarlo." },
+      { "id": "ignore-dirty", "emoji": "🙈", "label": "No hacer nada y seguir jugando", "correct": false, "feedback": "Es mejor lavar el rasguño o enseñárselo a un adulto, para que no se infecte." }
+    ]
+  },
+  {
+    "id": "sniffles", "characterEmoji": "🐘", "characterName": "Elefante", "complaintEmoji": "🤧", "isEmotional": false,
+    "complaint": "Tengo la nariz goteando y estornudo mucho.",
+    "choices": [
+      { "id": "tissue-rest", "emoji": "🧻", "label": "Usar un pañuelo y descansar", "correct": true, "feedback": "¡Bien! Un pañuelo y un poco de descanso te ayudan a sentirte mejor." },
+      { "id": "tell-adult", "emoji": "🗣️", "label": "Decirle a un adulto que no te sientes bien", "correct": true, "feedback": "Buena elección, un adulto puede cuidarte." },
+      { "id": "share-toys", "emoji": "🧸", "label": "Seguir jugando y compartir juguetes sin lavarte las manos", "correct": false, "feedback": "Cuando estás resfriado, es importante lavarte las manos y taparte al estornudar, para no contagiar los gérmenes." }
+    ]
+  },
+  {
+    "id": "tired-eyes", "characterEmoji": "🦉", "characterName": "Búho", "complaintEmoji": "😴", "isEmotional": false,
+    "complaint": "Mis ojos se sienten cansados y pesados.",
+    "choices": [
+      { "id": "rest-eyes", "emoji": "😌", "label": "Descansar los ojos y echar una siestecita", "correct": true, "feedback": "¡Genial! Descansar los ojos les ayuda a sentirse mejor." },
+      { "id": "tell-adult", "emoji": "🗣️", "label": "Decirle a un adulto que estás cansado", "correct": true, "feedback": "Buena idea, los adultos pueden ayudarte a descansar." },
+      { "id": "bright-screen", "emoji": "📱", "label": "Seguir mirando una pantalla brillante", "correct": false, "feedback": "Mirar pantallas cuando estás cansado cansa aún más los ojos. Es mejor descansar." }
+    ]
+  },
+  {
+    "id": "sad-feelings", "characterEmoji": "🐼", "characterName": "Panda", "complaintEmoji": "😢", "isEmotional": true,
+    "complaint": "Me siento triste porque mi amigo no quiso jugar conmigo.",
+    "choices": [
+      { "id": "talk-adult", "emoji": "🗣️", "label": "Hablar con un adulto sobre cómo te sientes", "correct": true, "feedback": "¡Bien! Hablar de tus sentimientos con un adulto ayuda mucho." },
+      { "id": "hug-comfort", "emoji": "🤗", "label": "Respirar hondo y abrazar algo suavecito", "correct": true, "feedback": "Eso puede ayudarte a sentirte un poco mejor." },
+      { "id": "keep-inside", "emoji": "🤐", "label": "Guardártelo todo dentro y no decir nada", "correct": false, "feedback": "Siempre es mejor compartir tus sentimientos con alguien en quien confías." }
+    ]
+  },
+  {
+    "id": "thirsty-tired", "characterEmoji": "🐸", "characterName": "Ranita", "complaintEmoji": "🥵", "isEmotional": false,
+    "complaint": "He jugado tanto que tengo sed y estoy sudando.",
+    "choices": [
+      { "id": "drink-shade", "emoji": "🥤", "label": "Beber agua y descansar a la sombra", "correct": true, "feedback": "¡Genial! Beber agua y descansar ayuda a tu cuerpo a sentirse mejor." },
+      { "id": "tell-adult", "emoji": "🗣️", "label": "Decirle a un adulto que necesitas un descanso", "correct": true, "feedback": "Buena idea, los adultos pueden ayudarte a tomar un descanso." },
+      { "id": "keep-running", "emoji": "🏃", "label": "Seguir corriendo al sol", "correct": false, "feedback": "Es mejor parar, beber agua y descansar un poco a la sombra." }
+    ]
+  },
+  {
+    "id": "bump-head", "characterEmoji": "🦁", "characterName": "León", "complaintEmoji": "🤕", "isEmotional": false,
+    "complaint": "Me golpeé la cabeza con la estantería de juguetes.",
+    "choices": [
+      { "id": "tell-now", "emoji": "🚨", "label": "Decírselo enseguida a un adulto", "correct": true, "feedback": "¡Muy bien! Golpearse la cabeza siempre es motivo para avisar enseguida a un adulto." },
+      { "id": "sit-wait", "emoji": "🪑", "label": "Sentarte con calma y esperar ayuda", "correct": true, "feedback": "Bien, mantenerte tranquilo mientras esperas también es una buena idea." },
+      { "id": "keep-jumping", "emoji": "🤸", "label": "Seguir saltando por ahí", "correct": false, "feedback": "Después de golpearte la cabeza, es importante parar y decírselo enseguida a un adulto." }
+    ]
+  }
+]

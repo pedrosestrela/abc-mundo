@@ -1,0 +1,10 @@
+[
+  { "id": "brain", "emoji": "🧠", "label": "大脑", "shortExplain": "🧠 大脑是身体的司令官！它为你做的每件事发出指令。", "detailedExplain": "🧠 大脑通过神经发送数百万条信息，控制着你的整个身体。它帮助你思考、做梦、活动和感受情绪。" },
+  { "id": "heart", "emoji": "❤️", "label": "心脏", "shortExplain": "❤️ 咚咚，咚咚！你的心脏不停跳动，把血液送到全身。", "detailedExplain": "❤️ 心脏是一块肌肉，它通过叫做血管的管道把血液泵送出去，把氧气和能量带到身体的每个部分。" },
+  { "id": "lungs", "emoji": "🫁", "label": "肺", "shortExplain": "🫁 你呼吸的时候，肺就像两个气球一样充满空气。", "detailedExplain": "🫁 肺把空气中的氧气带进血液，并在你每次呼吸时排出身体不需要的二氧化碳。" },
+  { "id": "skeleton", "emoji": "🦴", "label": "骨骼", "shortExplain": "🦴 你的骨头组成了骨骼，它给身体提供形状和支撑。", "detailedExplain": "🦴 你的骨骼有200多块骨头，它们支撑身体，保护心脏和大脑等重要器官，并和肌肉一起帮助你活动。" },
+  { "id": "muscles", "emoji": "💪", "label": "肌肉", "shortExplain": "💪 肌肉帮助你跑步、跳跃和微笑！", "detailedExplain": "💪 肌肉一伸一缩，带动骨头运动，还能让心脏跳动、帮助食物在肚子里前进。" },
+  { "id": "digestion", "emoji": "🍽️", "label": "消化", "shortExplain": "🍽️ 你吃东西的时候，食物进入肚子，变成能量。", "detailedExplain": "🍽️ 你的消化系统把食物分解成小小的部分，供身体当作能量使用，从嘴巴开始，经过胃和肠道。" },
+  { "id": "skin", "emoji": "🧴", "label": "皮肤", "shortExplain": "🧴 你的皮肤包裹着整个身体，像一件斗篷一样保护你。", "detailedExplain": "🧴 皮肤是身体最大的器官！它保护你不受细菌和太阳伤害，还能感觉到触摸、冷和热。" },
+  { "id": "blood", "emoji": "🩸", "label": "血液", "shortExplain": "🩸 血液在你的全身流动，把食物和空气送到细胞里。", "detailedExplain": "🩸 血液把氧气和营养送到身体的每个部分，还能帮忙对抗进入身体的细菌。" }
+]

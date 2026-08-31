@@ -138,6 +138,7 @@ const GROUPS = [
       { to: "/nature-diary", emoji: "📔", nav: "natureDiary", sub: "sub_natureDiary" },
       { to: "/senses", emoji: "🖐️", nav: "senses", sub: "sub_senses" },
       { to: "/teardown", emoji: "🔍", nav: "teardown", sub: "sub_teardown" },
+      { to: "/museum", emoji: "🏛️", nav: "museum", sub: "sub_museum" },
     ],
   },
   {
@@ -168,6 +169,7 @@ const GROUPS = [
       { to: "/lifeskills", emoji: "🌱", nav: "lifeskills", sub: "sub_lifeskills" },
       { to: "/mini-chef", emoji: "👩‍🍳", nav: "miniChef", sub: "sub_miniChef" },
       { to: "/traffic-school", emoji: "🚦", nav: "trafficSchool", sub: "sub_trafficSchool" },
+      { to: "/human-body", emoji: "🫀", nav: "humanBody", sub: "sub_humanBody" },
     ],
   },
 ];

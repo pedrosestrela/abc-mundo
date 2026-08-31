@@ -1,0 +1,74 @@
+[
+  {
+    "id": "sore-arm", "characterEmoji": "🧸", "characterName": "泰迪熊", "complaintEmoji": "😣", "isEmotional": false,
+    "complaint": "我从架子上摔下来后，手臂有点疼。",
+    "choices": [
+      { "id": "rest-tell", "emoji": "🛌", "label": "休息一下，并告诉大人", "correct": true, "feedback": "很棒的选择！休息并告诉大人永远是最安全的第一步。" },
+      { "id": "ignore", "emoji": "🙈", "label": "继续玩，不理它", "correct": false, "feedback": "最好告诉大人，让他们检查你有没有事。" },
+      { "id": "bandage", "emoji": "🩹", "label": "贴一个软软的创可贴", "correct": true, "feedback": "这样可以帮一点忙，但最好也告诉大人。" }
+    ]
+  },
+  {
+    "id": "tummy-ache", "characterEmoji": "🐰", "characterName": "兔子", "complaintEmoji": "😖", "isEmotional": false,
+    "complaint": "午饭后我的肚子感觉怪怪的。",
+    "choices": [
+      { "id": "tell-adult", "emoji": "🗣️", "label": "告诉大人你的感觉", "correct": true, "feedback": "很好！告诉大人可以让他们照顾你。" },
+      { "id": "drink-water", "emoji": "💧", "label": "喝一点水，休息一下", "correct": true, "feedback": "好主意，休息一下会有帮助。" },
+      { "id": "more-candy", "emoji": "🍬", "label": "再吃更多糖果", "correct": false, "feedback": "如果肚子感觉怪怪的，吃更多糖果不会有帮助。最好告诉大人。" }
+    ]
+  },
+  {
+    "id": "small-cut", "characterEmoji": "🦖", "characterName": "恐龙", "complaintEmoji": "🩹", "isEmotional": false,
+    "complaint": "我的膝盖有一个小小的擦伤。",
+    "choices": [
+      { "id": "wash-bandage", "emoji": "🚿", "label": "用水轻轻清洗，再贴上创可贴", "correct": true, "feedback": "太棒了！清洗并包扎能照顾好擦伤。" },
+      { "id": "show-adult", "emoji": "👀", "label": "给大人看看", "correct": true, "feedback": "好主意，大人可以帮你处理。" },
+      { "id": "ignore-dirty", "emoji": "🙈", "label": "什么都不做，继续玩", "correct": false, "feedback": "最好清洗擦伤或给大人看看，这样才不会感染。" }
+    ]
+  },
+  {
+    "id": "sniffles", "characterEmoji": "🐘", "characterName": "大象", "complaintEmoji": "🤧", "isEmotional": false,
+    "complaint": "我一直流鼻涕，还打好多喷嚏。",
+    "choices": [
+      { "id": "tissue-rest", "emoji": "🧻", "label": "用纸巾擦一擦，休息一下", "correct": true, "feedback": "很好！用纸巾和休息可以让你感觉好一些。" },
+      { "id": "tell-adult", "emoji": "🗣️", "label": "告诉大人你不舒服", "correct": true, "feedback": "好选择，大人可以照顾你。" },
+      { "id": "share-toys", "emoji": "🧸", "label": "继续玩，还和别人分享玩具，也不洗手", "correct": false, "feedback": "感冒的时候，要记得洗手，打喷嚏时要遮住口鼻，这样细菌才不会传播。" }
+    ]
+  },
+  {
+    "id": "tired-eyes", "characterEmoji": "🦉", "characterName": "猫头鹰", "complaintEmoji": "😴", "isEmotional": false,
+    "complaint": "我的眼睛感觉又累又沉。",
+    "choices": [
+      { "id": "rest-eyes", "emoji": "😌", "label": "让眼睛休息一下，小睡一会儿", "correct": true, "feedback": "太棒了！让眼睛休息能让它们感觉更好。" },
+      { "id": "tell-adult", "emoji": "🗣️", "label": "告诉大人你累了", "correct": true, "feedback": "好主意，大人可以帮你休息一下。" },
+      { "id": "bright-screen", "emoji": "📱", "label": "继续盯着明亮的屏幕看", "correct": false, "feedback": "累的时候看屏幕会让眼睛更累。最好休息一下。" }
+    ]
+  },
+  {
+    "id": "sad-feelings", "characterEmoji": "🐼", "characterName": "熊猫", "complaintEmoji": "😢", "isEmotional": true,
+    "complaint": "我很难过，因为我的朋友不想和我一起玩。",
+    "choices": [
+      { "id": "talk-adult", "emoji": "🗣️", "label": "和大人聊聊你的感受", "correct": true, "feedback": "很好！和大人聊聊你的感受真的很有帮助。" },
+      { "id": "hug-comfort", "emoji": "🤗", "label": "深呼吸，抱抱软软的东西", "correct": true, "feedback": "这样可以让你感觉好一点。" },
+      { "id": "keep-inside", "emoji": "🤐", "label": "把感受都藏在心里，什么都不说", "correct": false, "feedback": "把感受和你信任的人分享，永远是更好的选择。" }
+    ]
+  },
+  {
+    "id": "thirsty-tired", "characterEmoji": "🐸", "characterName": "青蛙", "complaintEmoji": "🥵", "isEmotional": false,
+    "complaint": "我玩得太开心了，觉得又渴又出汗。",
+    "choices": [
+      { "id": "drink-shade", "emoji": "🥤", "label": "喝点水，在阴凉处休息", "correct": true, "feedback": "太棒了！喝水和休息能让身体感觉更好。" },
+      { "id": "tell-adult", "emoji": "🗣️", "label": "告诉大人你需要休息一下", "correct": true, "feedback": "好主意，大人可以帮你安排休息。" },
+      { "id": "keep-running", "emoji": "🏃", "label": "继续在太阳下奔跑", "correct": false, "feedback": "最好停下来，喝点水，在阴凉处休息一会儿。" }
+    ]
+  },
+  {
+    "id": "bump-head", "characterEmoji": "🦁", "characterName": "狮子", "complaintEmoji": "🤕", "isEmotional": false,
+    "complaint": "我的头撞到了玩具架。",
+    "choices": [
+      { "id": "tell-now", "emoji": "🚨", "label": "马上告诉大人", "correct": true, "feedback": "非常好！撞到头永远是马上告诉大人的理由。" },
+      { "id": "sit-wait", "emoji": "🪑", "label": "安静坐着，等待帮助", "correct": true, "feedback": "很好，保持冷静地等待也是一个好主意。" },
+      { "id": "keep-jumping", "emoji": "🤸", "label": "继续到处跳来跳去", "correct": false, "feedback": "撞到头之后，重要的是停下来，马上告诉大人。" }
+    ]
+  }
+]

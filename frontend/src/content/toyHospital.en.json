@@ -1,0 +1,74 @@
+[
+  {
+    "id": "sore-arm", "characterEmoji": "🧸", "characterName": "Teddy Bear", "complaintEmoji": "😣", "isEmotional": false,
+    "complaint": "My arm hurts a little bit after I fell off the shelf.",
+    "choices": [
+      { "id": "rest-tell", "emoji": "🛌", "label": "Rest it and tell a grown-up", "correct": true, "feedback": "Great choice! Resting and telling a grown-up is always the safest first step." },
+      { "id": "ignore", "emoji": "🙈", "label": "Just keep playing and ignore it", "correct": false, "feedback": "It's better to tell a grown-up so they can check if you're okay." },
+      { "id": "bandage", "emoji": "🩹", "label": "Put a soft bandage on it", "correct": true, "feedback": "That can help a little, but it's still best to tell a grown-up too." }
+    ]
+  },
+  {
+    "id": "tummy-ache", "characterEmoji": "🐰", "characterName": "Bunny", "complaintEmoji": "😖", "isEmotional": false,
+    "complaint": "My tummy feels funny after lunch.",
+    "choices": [
+      { "id": "tell-adult", "emoji": "🗣️", "label": "Tell a grown-up how you feel", "correct": true, "feedback": "Good! Telling a grown-up helps them take care of you." },
+      { "id": "drink-water", "emoji": "💧", "label": "Drink a little water and rest", "correct": true, "feedback": "Good idea, resting a little can help." },
+      { "id": "more-candy", "emoji": "🍬", "label": "Eat more candy", "correct": false, "feedback": "If your tummy feels funny, more candy won't help. Better to tell a grown-up." }
+    ]
+  },
+  {
+    "id": "small-cut", "characterEmoji": "🦖", "characterName": "Dino", "complaintEmoji": "🩹", "isEmotional": false,
+    "complaint": "I have a tiny scrape on my knee.",
+    "choices": [
+      { "id": "wash-bandage", "emoji": "🚿", "label": "Wash it with water and put on a bandage", "correct": true, "feedback": "Great! Washing it and covering it helps take care of the scrape." },
+      { "id": "show-adult", "emoji": "👀", "label": "Show it to a grown-up", "correct": true, "feedback": "Great idea, a grown-up can help you take care of it." },
+      { "id": "ignore-dirty", "emoji": "🙈", "label": "Do nothing and keep playing", "correct": false, "feedback": "It's better to wash the scrape or show it to a grown-up, so it doesn't get infected." }
+    ]
+  },
+  {
+    "id": "sniffles", "characterEmoji": "🐘", "characterName": "Elephant", "complaintEmoji": "🤧", "isEmotional": false,
+    "complaint": "My nose is running and I keep sneezing.",
+    "choices": [
+      { "id": "tissue-rest", "emoji": "🧻", "label": "Use a tissue and rest", "correct": true, "feedback": "Good! A tissue and some rest help you feel better." },
+      { "id": "tell-adult", "emoji": "🗣️", "label": "Tell a grown-up you don't feel well", "correct": true, "feedback": "Good choice, a grown-up can take care of you." },
+      { "id": "share-toys", "emoji": "🧸", "label": "Keep playing and share toys without washing hands", "correct": false, "feedback": "When you have a cold, it's important to wash your hands and cover your sneeze, so germs don't spread." }
+    ]
+  },
+  {
+    "id": "tired-eyes", "characterEmoji": "🦉", "characterName": "Owl", "complaintEmoji": "😴", "isEmotional": false,
+    "complaint": "My eyes feel tired and heavy.",
+    "choices": [
+      { "id": "rest-eyes", "emoji": "😌", "label": "Rest your eyes and take a little nap", "correct": true, "feedback": "Great! Resting your eyes helps them feel better." },
+      { "id": "tell-adult", "emoji": "🗣️", "label": "Tell a grown-up that you're tired", "correct": true, "feedback": "Good idea, grown-ups can help you get some rest." },
+      { "id": "bright-screen", "emoji": "📱", "label": "Keep looking at a bright screen", "correct": false, "feedback": "Looking at screens when you're tired makes your eyes even more tired. It's better to rest." }
+    ]
+  },
+  {
+    "id": "sad-feelings", "characterEmoji": "🐼", "characterName": "Panda", "complaintEmoji": "😢", "isEmotional": true,
+    "complaint": "I feel sad because my friend didn't want to play with me.",
+    "choices": [
+      { "id": "talk-adult", "emoji": "🗣️", "label": "Talk to a grown-up about how you feel", "correct": true, "feedback": "Good! Talking about your feelings with a grown-up really helps." },
+      { "id": "hug-comfort", "emoji": "🤗", "label": "Take a deep breath and hug something soft", "correct": true, "feedback": "That can help you feel a little better." },
+      { "id": "keep-inside", "emoji": "🤐", "label": "Keep it all inside and say nothing", "correct": false, "feedback": "It's always better to share your feelings with someone you trust." }
+    ]
+  },
+  {
+    "id": "thirsty-tired", "characterEmoji": "🐸", "characterName": "Frog", "complaintEmoji": "🥵", "isEmotional": false,
+    "complaint": "I played so much I'm thirsty and sweaty.",
+    "choices": [
+      { "id": "drink-shade", "emoji": "🥤", "label": "Drink some water and rest in the shade", "correct": true, "feedback": "Great! Drinking water and resting helps your body feel better." },
+      { "id": "tell-adult", "emoji": "🗣️", "label": "Tell a grown-up you need a break", "correct": true, "feedback": "Good idea, grown-ups can help you take a break." },
+      { "id": "keep-running", "emoji": "🏃", "label": "Keep running in the sun", "correct": false, "feedback": "It's better to stop, drink water, and rest a little in the shade." }
+    ]
+  },
+  {
+    "id": "bump-head", "characterEmoji": "🦁", "characterName": "Lion", "complaintEmoji": "🤕", "isEmotional": false,
+    "complaint": "I bumped my head on the toy shelf.",
+    "choices": [
+      { "id": "tell-now", "emoji": "🚨", "label": "Tell a grown-up right away", "correct": true, "feedback": "Well done! Bumping your head is always a reason to tell a grown-up right away." },
+      { "id": "sit-wait", "emoji": "🪑", "label": "Sit still calmly and wait for help", "correct": true, "feedback": "Good, staying calm while you wait is a good idea too." },
+      { "id": "keep-jumping", "emoji": "🤸", "label": "Keep jumping around", "correct": false, "feedback": "After bumping your head, it's important to stop and tell a grown-up right away." }
+    ]
+  }
+]

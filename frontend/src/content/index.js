@@ -350,6 +350,38 @@ import trafficSignsZh from "./trafficSigns.zh.json";
 import trafficSignsEs from "./trafficSigns.es.json";
 import trafficSignsIt from "./trafficSigns.it.json";
 
+import humanBodyPt from "./humanBody.pt.json";
+import humanBodyEn from "./humanBody.en.json";
+import humanBodyDe from "./humanBody.de.json";
+import humanBodyFr from "./humanBody.fr.json";
+import humanBodyZh from "./humanBody.zh.json";
+import humanBodyEs from "./humanBody.es.json";
+import humanBodyIt from "./humanBody.it.json";
+
+import toyHospitalPt from "./toyHospital.pt.json";
+import toyHospitalEn from "./toyHospital.en.json";
+import toyHospitalDe from "./toyHospital.de.json";
+import toyHospitalFr from "./toyHospital.fr.json";
+import toyHospitalZh from "./toyHospital.zh.json";
+import toyHospitalEs from "./toyHospital.es.json";
+import toyHospitalIt from "./toyHospital.it.json";
+
+import museumPt from "./museum.pt.json";
+import museumEn from "./museum.en.json";
+import museumDe from "./museum.de.json";
+import museumFr from "./museum.fr.json";
+import museumZh from "./museum.zh.json";
+import museumEs from "./museum.es.json";
+import museumIt from "./museum.it.json";
+
+import archaeologyPt from "./archaeology.pt.json";
+import archaeologyEn from "./archaeology.en.json";
+import archaeologyDe from "./archaeology.de.json";
+import archaeologyFr from "./archaeology.fr.json";
+import archaeologyZh from "./archaeology.zh.json";
+import archaeologyEs from "./archaeology.es.json";
+import archaeologyIt from "./archaeology.it.json";
+
 // Re-exported so existing `import { SUPPORTED_LANGUAGES } from "../content"`
 // call sites keep working unchanged. See content/languages.js for why the
 // actual list lives in its own module.
@@ -408,6 +440,10 @@ const HOW_MADE = { pt: howMadePt, en: howMadeEn, de: howMadeDe, fr: howMadeFr, z
 const FOOD_ORIGIN = { pt: foodOriginPt, en: foodOriginEn, de: foodOriginDe, fr: foodOriginFr, zh: foodOriginZh, es: foodOriginEs, it: foodOriginIt };
 const SENSES_MISSIONS = { pt: sensesMissionsPt, en: sensesMissionsEn, de: sensesMissionsDe, fr: sensesMissionsFr, zh: sensesMissionsZh, es: sensesMissionsEs, it: sensesMissionsIt };
 const OBJECT_TEARDOWN = { pt: objectTeardownPt, en: objectTeardownEn, de: objectTeardownDe, fr: objectTeardownFr, zh: objectTeardownZh, es: objectTeardownEs, it: objectTeardownIt };
+const MUSEUM = { pt: museumPt, en: museumEn, de: museumDe, fr: museumFr, zh: museumZh, es: museumEs, it: museumIt };
+const ARCHAEOLOGY = { pt: archaeologyPt, en: archaeologyEn, de: archaeologyDe, fr: archaeologyFr, zh: archaeologyZh, es: archaeologyEs, it: archaeologyIt };
+const HUMAN_BODY = { pt: humanBodyPt, en: humanBodyEn, de: humanBodyDe, fr: humanBodyFr, zh: humanBodyZh, es: humanBodyEs, it: humanBodyIt };
+const TOY_HOSPITAL = { pt: toyHospitalPt, en: toyHospitalEn, de: toyHospitalDe, fr: toyHospitalFr, zh: toyHospitalZh, es: toyHospitalEs, it: toyHospitalIt };
 
 // Normalizes zh's different shape ({hanzi,...}) to the same shape used by
 // the Latin-alphabet languages ({letter, lower, upper, exampleWord, emoji}).
@@ -643,6 +679,27 @@ export function getSensesMissions(langCode) {
 
 export function getObjectTeardown(langCode) {
   return OBJECT_TEARDOWN[langCode] || OBJECT_TEARDOWN.pt;
+}
+
+// Museu ABC: rooms of exhibits, each with a "guess first" question before
+// revealing the real explanation. Falls back to pt like the other
+// history/culture content types.
+export function getMuseum(langCode) {
+  return MUSEUM[langCode] || MUSEUM.pt;
+}
+
+// Pequeno Arqueólogo: virtual excavation scenarios, each revealing artifacts
+// then asking a reasoning question about what the clues suggest together.
+export function getArchaeology(langCode) {
+  return ARCHAEOLOGY[langCode] || ARCHAEOLOGY.pt;
+}
+
+export function getHumanBody(langCode) {
+  return HUMAN_BODY[langCode] || HUMAN_BODY.pt;
+}
+
+export function getToyHospital(langCode) {
+  return TOY_HOSPITAL[langCode] || TOY_HOSPITAL.pt;
 }
 
 // Countries are language-agnostic in shape (name/fact are per-language

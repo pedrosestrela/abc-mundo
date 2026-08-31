@@ -68,6 +68,7 @@ const Computing = lazyWithReload(() => import("./pages/Computing.jsx"));
 const HowThingsWork = lazyWithReload(() => import("./pages/HowThingsWork.jsx"));
 const Senses = lazyWithReload(() => import("./pages/Senses.jsx"));
 const Teardown = lazyWithReload(() => import("./pages/Teardown.jsx"));
+const Museum = lazyWithReload(() => import("./pages/Museum.jsx"));
 const City = lazyWithReload(() => import("./pages/City.jsx"));
 const HowMade = lazyWithReload(() => import("./pages/HowMade.jsx"));
 const Mundos = lazyWithReload(() => import("./pages/Mundos.jsx"));
@@ -77,6 +78,7 @@ const NatureDiary = lazyWithReload(() => import("./pages/NatureDiary.jsx"));
 const Writing = lazyWithReload(() => import("./pages/Writing.jsx"));
 const Communication = lazyWithReload(() => import("./pages/Communication.jsx"));
 const TrafficSchool = lazyWithReload(() => import("./pages/TrafficSchool.jsx"));
+const HumanBody = lazyWithReload(() => import("./pages/HumanBody.jsx"));
 
 export default function App() {
   const { t } = useTranslation();
@@ -142,6 +144,8 @@ export default function App() {
             <Route path="/how-it-works" element={<HowThingsWork />} />
             <Route path="/senses" element={<Senses />} />
             <Route path="/teardown" element={<Teardown />} />
+            <Route path="/museum" element={<Museum />} />
+            <Route path="/human-body" element={<HumanBody />} />
             <Route path="/thinking" element={<Thinking />} />
             <Route path="/learning-strategies" element={<LearningStrategies />} />
             <Route path="/city" element={<City />} />

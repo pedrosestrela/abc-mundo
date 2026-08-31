@@ -1,0 +1,74 @@
+[
+  {
+    "id": "sore-arm", "characterEmoji": "🧸", "characterName": "Orsacchiotto", "complaintEmoji": "😣", "isEmotional": false,
+    "complaint": "Mi fa un po' male il braccio da quando sono caduto dallo scaffale.",
+    "choices": [
+      { "id": "rest-tell", "emoji": "🛌", "label": "Riposare il braccio e dirlo a un adulto", "correct": true, "feedback": "Ottima scelta! Riposare e dirlo a un adulto è sempre il primo passo più sicuro." },
+      { "id": "ignore", "emoji": "🙈", "label": "Continuare a giocare e ignorarlo", "correct": false, "feedback": "È meglio dirlo a un adulto, così può controllare se stai bene." },
+      { "id": "bandage", "emoji": "🩹", "label": "Metterci sopra un cerotto morbido", "correct": true, "feedback": "Questo può aiutare un po', ma è comunque meglio dirlo anche a un adulto." }
+    ]
+  },
+  {
+    "id": "tummy-ache", "characterEmoji": "🐰", "characterName": "Coniglietta", "complaintEmoji": "😖", "isEmotional": false,
+    "complaint": "La mia pancia si sente strana dopo pranzo.",
+    "choices": [
+      { "id": "tell-adult", "emoji": "🗣️", "label": "Dire a un adulto come ti senti", "correct": true, "feedback": "Bene! Dirlo a un adulto lo aiuta a prendersi cura di te." },
+      { "id": "drink-water", "emoji": "💧", "label": "Bere un po' d'acqua e riposare", "correct": true, "feedback": "Buona idea, riposare un po' può aiutare." },
+      { "id": "more-candy", "emoji": "🍬", "label": "Mangiare più caramelle", "correct": false, "feedback": "Se la pancia si sente strana, mangiare più caramelle non aiuta. Meglio dirlo a un adulto." }
+    ]
+  },
+  {
+    "id": "small-cut", "characterEmoji": "🦖", "characterName": "Dino", "complaintEmoji": "🩹", "isEmotional": false,
+    "complaint": "Ho un piccolo graffio sul ginocchio.",
+    "choices": [
+      { "id": "wash-bandage", "emoji": "🚿", "label": "Lavarlo con acqua e mettere un cerotto", "correct": true, "feedback": "Ottimo! Lavarlo e coprirlo aiuta a curare il graffio." },
+      { "id": "show-adult", "emoji": "👀", "label": "Mostrarlo a un adulto", "correct": true, "feedback": "Ottima idea, un adulto può aiutarti a prendertene cura." },
+      { "id": "ignore-dirty", "emoji": "🙈", "label": "Non fare niente e continuare a giocare", "correct": false, "feedback": "È meglio lavare il graffio o mostrarlo a un adulto, così non si infetta." }
+    ]
+  },
+  {
+    "id": "sniffles", "characterEmoji": "🐘", "characterName": "Elefante", "complaintEmoji": "🤧", "isEmotional": false,
+    "complaint": "Ho il naso che cola e starnutisco tanto.",
+    "choices": [
+      { "id": "tissue-rest", "emoji": "🧻", "label": "Usare un fazzoletto e riposare", "correct": true, "feedback": "Bene! Un fazzoletto e un po' di riposo ti aiutano a sentirti meglio." },
+      { "id": "tell-adult", "emoji": "🗣️", "label": "Dire a un adulto che non ti senti bene", "correct": true, "feedback": "Ottima scelta, un adulto può prendersi cura di te." },
+      { "id": "share-toys", "emoji": "🧸", "label": "Continuare a giocare e condividere i giocattoli senza lavarti le mani", "correct": false, "feedback": "Quando sei raffreddato, è importante lavarti le mani e coprirti quando starnutisci, per non diffondere i germi." }
+    ]
+  },
+  {
+    "id": "tired-eyes", "characterEmoji": "🦉", "characterName": "Gufo", "complaintEmoji": "😴", "isEmotional": false,
+    "complaint": "I miei occhi si sentono stanchi e pesanti.",
+    "choices": [
+      { "id": "rest-eyes", "emoji": "😌", "label": "Riposare gli occhi e fare un piccolo pisolino", "correct": true, "feedback": "Ottimo! Riposare gli occhi li aiuta a sentirsi meglio." },
+      { "id": "tell-adult", "emoji": "🗣️", "label": "Dire a un adulto che sei stanco", "correct": true, "feedback": "Buona idea, gli adulti possono aiutarti a riposare." },
+      { "id": "bright-screen", "emoji": "📱", "label": "Continuare a guardare uno schermo luminoso", "correct": false, "feedback": "Guardare gli schermi quando sei stanco stanca ancora di più gli occhi. Meglio riposare." }
+    ]
+  },
+  {
+    "id": "sad-feelings", "characterEmoji": "🐼", "characterName": "Panda", "complaintEmoji": "😢", "isEmotional": true,
+    "complaint": "Mi sento triste perché il mio amico non ha voluto giocare con me.",
+    "choices": [
+      { "id": "talk-adult", "emoji": "🗣️", "label": "Parlare con un adulto di come ti senti", "correct": true, "feedback": "Bene! Parlare dei tuoi sentimenti con un adulto aiuta davvero." },
+      { "id": "hug-comfort", "emoji": "🤗", "label": "Fare un respiro profondo e abbracciare qualcosa di morbido", "correct": true, "feedback": "Questo può aiutarti a sentirti un po' meglio." },
+      { "id": "keep-inside", "emoji": "🤐", "label": "Tenere tutto dentro e non dire niente", "correct": false, "feedback": "È sempre meglio condividere i tuoi sentimenti con qualcuno di cui ti fidi." }
+    ]
+  },
+  {
+    "id": "thirsty-tired", "characterEmoji": "🐸", "characterName": "Ranocchio", "complaintEmoji": "🥵", "isEmotional": false,
+    "complaint": "Ho giocato così tanto che ho sete e sono tutto sudato.",
+    "choices": [
+      { "id": "drink-shade", "emoji": "🥤", "label": "Bere un po' d'acqua e riposare all'ombra", "correct": true, "feedback": "Ottimo! Bere acqua e riposare aiuta il tuo corpo a sentirsi meglio." },
+      { "id": "tell-adult", "emoji": "🗣️", "label": "Dire a un adulto che hai bisogno di una pausa", "correct": true, "feedback": "Buona idea, gli adulti possono aiutarti a fare una pausa." },
+      { "id": "keep-running", "emoji": "🏃", "label": "Continuare a correre al sole", "correct": false, "feedback": "È meglio fermarsi, bere acqua e riposare un po' all'ombra." }
+    ]
+  },
+  {
+    "id": "bump-head", "characterEmoji": "🦁", "characterName": "Leone", "complaintEmoji": "🤕", "isEmotional": false,
+    "complaint": "Ho battuto la testa contro lo scaffale dei giocattoli.",
+    "choices": [
+      { "id": "tell-now", "emoji": "🚨", "label": "Dirlo subito a un adulto", "correct": true, "feedback": "Bravissimo! Battere la testa è sempre un buon motivo per avvisare subito un adulto." },
+      { "id": "sit-wait", "emoji": "🪑", "label": "Sedersi con calma e aspettare aiuto", "correct": true, "feedback": "Bene, restare calmo mentre aspetti è anche una buona idea." },
+      { "id": "keep-jumping", "emoji": "🤸", "label": "Continuare a saltare in giro", "correct": false, "feedback": "Dopo aver battuto la testa, è importante fermarsi e dirlo subito a un adulto." }
+    ]
+  }
+]

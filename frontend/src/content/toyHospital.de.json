@@ -1,0 +1,74 @@
+[
+  {
+    "id": "sore-arm", "characterEmoji": "🧸", "characterName": "Teddy", "complaintEmoji": "😣", "isEmotional": false,
+    "complaint": "Mein Arm tut ein bisschen weh, seit ich vom Regal gefallen bin.",
+    "choices": [
+      { "id": "rest-tell", "emoji": "🛌", "label": "Ausruhen und einem Erwachsenen Bescheid sagen", "correct": true, "feedback": "Gute Wahl! Ausruhen und einem Erwachsenen Bescheid sagen ist immer der sicherste erste Schritt." },
+      { "id": "ignore", "emoji": "🙈", "label": "Einfach weiterspielen und es ignorieren", "correct": false, "feedback": "Es ist besser, einem Erwachsenen Bescheid zu sagen, damit er nachschauen kann, ob es dir gut geht." },
+      { "id": "bandage", "emoji": "🩹", "label": "Ein weiches Pflaster draufkleben", "correct": true, "feedback": "Das kann ein bisschen helfen, aber am besten sagst du trotzdem auch einem Erwachsenen Bescheid." }
+    ]
+  },
+  {
+    "id": "tummy-ache", "characterEmoji": "🐰", "characterName": "Häschen", "complaintEmoji": "😖", "isEmotional": false,
+    "complaint": "Mein Bauch fühlt sich nach dem Mittagessen komisch an.",
+    "choices": [
+      { "id": "tell-adult", "emoji": "🗣️", "label": "Einem Erwachsenen sagen, wie du dich fühlst", "correct": true, "feedback": "Gut! Wenn du es einem Erwachsenen sagst, kann er sich um dich kümmern." },
+      { "id": "drink-water", "emoji": "💧", "label": "Ein bisschen Wasser trinken und ausruhen", "correct": true, "feedback": "Gute Idee, ein bisschen ausruhen kann helfen." },
+      { "id": "more-candy", "emoji": "🍬", "label": "Mehr Süßigkeiten essen", "correct": false, "feedback": "Wenn dein Bauch komisch ist, helfen mehr Süßigkeiten nicht. Besser einem Erwachsenen Bescheid sagen." }
+    ]
+  },
+  {
+    "id": "small-cut", "characterEmoji": "🦖", "characterName": "Dino", "complaintEmoji": "🩹", "isEmotional": false,
+    "complaint": "Ich habe eine kleine Schürfwunde am Knie.",
+    "choices": [
+      { "id": "wash-bandage", "emoji": "🚿", "label": "Mit Wasser abwaschen und ein Pflaster drauf machen", "correct": true, "feedback": "Toll! Abwaschen und abdecken hilft, die Schürfwunde zu pflegen." },
+      { "id": "show-adult", "emoji": "👀", "label": "Einem Erwachsenen zeigen", "correct": true, "feedback": "Gute Idee, ein Erwachsener kann dir helfen, dich darum zu kümmern." },
+      { "id": "ignore-dirty", "emoji": "🙈", "label": "Nichts tun und weiterspielen", "correct": false, "feedback": "Es ist besser, die Schürfwunde zu waschen oder sie einem Erwachsenen zu zeigen, damit sie sich nicht entzündet." }
+    ]
+  },
+  {
+    "id": "sniffles", "characterEmoji": "🐘", "characterName": "Elefant", "complaintEmoji": "🤧", "isEmotional": false,
+    "complaint": "Meine Nase läuft und ich muss ständig niesen.",
+    "choices": [
+      { "id": "tissue-rest", "emoji": "🧻", "label": "Ein Taschentuch benutzen und ausruhen", "correct": true, "feedback": "Gut! Ein Taschentuch und etwas Ruhe helfen dir, dich besser zu fühlen." },
+      { "id": "tell-adult", "emoji": "🗣️", "label": "Einem Erwachsenen sagen, dass du dich nicht gut fühlst", "correct": true, "feedback": "Gute Wahl, ein Erwachsener kann sich um dich kümmern." },
+      { "id": "share-toys", "emoji": "🧸", "label": "Weiterspielen und Spielsachen teilen, ohne dir die Hände zu waschen", "correct": false, "feedback": "Wenn du erkältet bist, ist es wichtig, dir die Hände zu waschen und beim Niesen den Mund zu bedecken, damit sich die Keime nicht verbreiten." }
+    ]
+  },
+  {
+    "id": "tired-eyes", "characterEmoji": "🦉", "characterName": "Eule", "complaintEmoji": "😴", "isEmotional": false,
+    "complaint": "Meine Augen fühlen sich müde und schwer an.",
+    "choices": [
+      { "id": "rest-eyes", "emoji": "😌", "label": "Die Augen ausruhen und ein kleines Nickerchen machen", "correct": true, "feedback": "Toll! Die Augen auszuruhen hilft ihnen, sich besser zu fühlen." },
+      { "id": "tell-adult", "emoji": "🗣️", "label": "Einem Erwachsenen sagen, dass du müde bist", "correct": true, "feedback": "Gute Idee, Erwachsene können dir helfen, dich auszuruhen." },
+      { "id": "bright-screen", "emoji": "📱", "label": "Weiter auf einen hellen Bildschirm schauen", "correct": false, "feedback": "Auf Bildschirme zu schauen, wenn du müde bist, macht deine Augen noch müder. Besser ausruhen." }
+    ]
+  },
+  {
+    "id": "sad-feelings", "characterEmoji": "🐼", "characterName": "Panda", "complaintEmoji": "😢", "isEmotional": true,
+    "complaint": "Ich bin traurig, weil mein Freund nicht mit mir spielen wollte.",
+    "choices": [
+      { "id": "talk-adult", "emoji": "🗣️", "label": "Mit einem Erwachsenen darüber reden, wie du dich fühlst", "correct": true, "feedback": "Gut! Mit einem Erwachsenen über deine Gefühle zu reden hilft wirklich." },
+      { "id": "hug-comfort", "emoji": "🤗", "label": "Tief durchatmen und etwas Weiches umarmen", "correct": true, "feedback": "Das kann dir helfen, dich ein bisschen besser zu fühlen." },
+      { "id": "keep-inside", "emoji": "🤐", "label": "Alles in dir behalten und nichts sagen", "correct": false, "feedback": "Es ist immer besser, deine Gefühle mit jemandem zu teilen, dem du vertraust." }
+    ]
+  },
+  {
+    "id": "thirsty-tired", "characterEmoji": "🐸", "characterName": "Frosch", "complaintEmoji": "🥵", "isEmotional": false,
+    "complaint": "Ich habe so viel gespielt, dass ich durstig bin und schwitze.",
+    "choices": [
+      { "id": "drink-shade", "emoji": "🥤", "label": "Etwas Wasser trinken und im Schatten ausruhen", "correct": true, "feedback": "Toll! Wasser trinken und ausruhen hilft deinem Körper, sich besser zu fühlen." },
+      { "id": "tell-adult", "emoji": "🗣️", "label": "Einem Erwachsenen sagen, dass du eine Pause brauchst", "correct": true, "feedback": "Gute Idee, Erwachsene können dir helfen, eine Pause zu machen." },
+      { "id": "keep-running", "emoji": "🏃", "label": "Weiter in der Sonne herumrennen", "correct": false, "feedback": "Es ist besser anzuhalten, Wasser zu trinken und sich ein bisschen im Schatten auszuruhen." }
+    ]
+  },
+  {
+    "id": "bump-head", "characterEmoji": "🦁", "characterName": "Löwe", "complaintEmoji": "🤕", "isEmotional": false,
+    "complaint": "Ich habe mir den Kopf am Spielzeugregal gestoßen.",
+    "choices": [
+      { "id": "tell-now", "emoji": "🚨", "label": "Sofort einem Erwachsenen Bescheid sagen", "correct": true, "feedback": "Sehr gut! Wenn man sich den Kopf stößt, sollte man immer sofort einem Erwachsenen Bescheid sagen." },
+      { "id": "sit-wait", "emoji": "🪑", "label": "Ruhig sitzen bleiben und auf Hilfe warten", "correct": true, "feedback": "Gut, ruhig zu bleiben, während du wartest, ist auch eine gute Idee." },
+      { "id": "keep-jumping", "emoji": "🤸", "label": "Weiter herumhüpfen", "correct": false, "feedback": "Nachdem man sich den Kopf gestoßen hat, ist es wichtig, aufzuhören und sofort einem Erwachsenen Bescheid zu sagen." }
+    ]
+  }
+]

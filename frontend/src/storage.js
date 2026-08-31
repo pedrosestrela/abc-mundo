@@ -572,6 +572,78 @@ export function exploreTeardownPart(profileName, objectId, partId) {
   return all[name];
 }
 
+// --- Eu Por Dentro (human body organs) + Hospital dos Brinquedos ---
+// Same "explored ids per profile" pattern as the object-teardown module
+// above, kept as its own key since it's a separate module.
+
+const EXPLORED_BODY_ORGANS_KEY = "abcmundo.exploredBodyOrgans";
+
+function loadExploredBodyOrgans() {
+  try {
+    const raw = localStorage.getItem(EXPLORED_BODY_ORGANS_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveExploredBodyOrgans(all) {
+  try {
+    localStorage.setItem(EXPLORED_BODY_ORGANS_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getExploredBodyOrgans(profileName) {
+  const all = loadExploredBodyOrgans();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function exploreBodyOrgan(profileName, organId) {
+  const name = profileName || "Explorer";
+  const all = loadExploredBodyOrgans();
+  const explored = new Set(all[name] || []);
+  explored.add(organId);
+  all[name] = Array.from(explored);
+  saveExploredBodyOrgans(all);
+  return all[name];
+}
+
+const COMPLETED_HOSPITAL_SCENARIOS_KEY = "abcmundo.completedHospitalScenarios";
+
+function loadCompletedHospitalScenarios() {
+  try {
+    const raw = localStorage.getItem(COMPLETED_HOSPITAL_SCENARIOS_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveCompletedHospitalScenarios(all) {
+  try {
+    localStorage.setItem(COMPLETED_HOSPITAL_SCENARIOS_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getCompletedHospitalScenarios(profileName) {
+  const all = loadCompletedHospitalScenarios();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function completeHospitalScenario(profileName, scenarioId) {
+  const name = profileName || "Explorer";
+  const all = loadCompletedHospitalScenarios();
+  const done = new Set(all[name] || []);
+  done.add(scenarioId);
+  all[name] = Array.from(done);
+  saveCompletedHospitalScenarios(all);
+  return all[name];
+}
+
 // --- Os Cinco Sentidos (senses missions) ---
 // Real-world, trust-based missions like the main Missions module: the child
 // does something away from the screen, then confirms "Já fiz!" — no
@@ -1358,6 +1430,82 @@ function saveCompletedCircuits(all) {
   }
 }
 
+// --- Museu ABC ---
+// Tracks which exhibit ids (as "roomId:exhibitId") the child has opened and
+// guessed on, per profile. Same shape/pattern as exploredTeardownParts above.
+
+const EXPLORED_MUSEUM_EXHIBITS_KEY = "abcmundo.exploredMuseumExhibits";
+
+function loadExploredMuseumExhibits() {
+  try {
+    const raw = localStorage.getItem(EXPLORED_MUSEUM_EXHIBITS_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveExploredMuseumExhibits(all) {
+  try {
+    localStorage.setItem(EXPLORED_MUSEUM_EXHIBITS_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getExploredMuseumExhibits(profileName) {
+  const all = loadExploredMuseumExhibits();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function exploreMuseumExhibit(profileName, roomId, exhibitId) {
+  const name = profileName || "Explorer";
+  const all = loadExploredMuseumExhibits();
+  const explored = new Set(all[name] || []);
+  explored.add(`${roomId}:${exhibitId}`);
+  all[name] = Array.from(explored);
+  saveExploredMuseumExhibits(all);
+  return all[name];
+}
+
+// --- Pequeno Arqueólogo (excavation) ---
+// Tracks which excavation scenario ids the child has fully dug (all
+// artifacts revealed + reasoning question answered), per profile.
+
+const COMPLETED_EXCAVATIONS_KEY = "abcmundo.completedExcavations";
+
+function loadCompletedExcavations() {
+  try {
+    const raw = localStorage.getItem(COMPLETED_EXCAVATIONS_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveCompletedExcavations(all) {
+  try {
+    localStorage.setItem(COMPLETED_EXCAVATIONS_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function getCompletedExcavations(profileName) {
+  const all = loadCompletedExcavations();
+  return all[profileName || "Explorer"] || [];
+}
+
+export function completeExcavation(profileName, scenarioId) {
+  const name = profileName || "Explorer";
+  const all = loadCompletedExcavations();
+  const done = new Set(all[name] || []);
+  done.add(scenarioId);
+  all[name] = Array.from(done);
+  saveCompletedExcavations(all);
+  return all[name];
+}
+
 // --- Backup / device-to-device sync ---
 // Exports every localStorage key this file owns (all profiles + all their
 // per-module progress data) into one plain JSON-serializable object, and
@@ -1395,6 +1543,8 @@ const SYNC_STORAGE_KEYS = [
   VISITED_TECH_HISTORY_KEY,
   COOKED_RECIPES_KEY,
   COMPLETED_CIRCUITS_KEY,
+  EXPLORED_MUSEUM_EXHIBITS_KEY,
+  COMPLETED_EXCAVATIONS_KEY,
 ];
 
 // Gathers every profile's full data from this device into one JSON-friendly
