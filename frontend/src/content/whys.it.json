@@ -285,5 +285,157 @@
       "dormir",
       "bocejo"
     ]
+  },
+  {
+    "id": "trovao-relampago",
+    "emoji": "⛈️",
+    "question": "Perché vediamo il lampo prima di sentire il tuono?",
+    "quickAnswer": "La luce viaggia molto più velocemente del suono, quindi vediamo il lampo quasi istantaneamente, ma il suono del tuono impiega un po' più tempo ad arrivare.",
+    "moreAnswer": "La luce viaggia a circa 300.000 chilometri al secondo, mentre il suono viaggia solo a 340 metri al secondo, molto più lentamente. Il lampo e il tuono avvengono esattamente nello stesso momento, ma poiché la luce arriva quasi istantaneamente e il suono impiega più tempo, vediamo prima e sentiamo dopo. Più tempo passa tra i due, più lontano è il temporale.",
+    "experiment": "Durante il prossimo temporale (a distanza sicura), conta i secondi tra il lampo e il tuono. Ogni 3 secondi corrispondono a circa 1 chilometro di distanza."
+  },
+  {
+    "id": "neve-branca",
+    "emoji": "❄️",
+    "question": "Perché la neve è bianca?",
+    "quickAnswer": "La neve è fatta di moltissimi cristalli di ghiaccio trasparenti che riflettono la luce in tutte le direzioni, e questa miscela di tutti i colori appare bianca ai nostri occhi.",
+    "moreAnswer": "Ogni fiocco di neve è in realtà trasparente come un normale cristallo di ghiaccio. Ma la neve è fatta di milioni di cristalli minuscoli, pieni di piccole superfici e spazi d'aria. Quando la luce del sole colpisce questi cristalli, rimbalza in tutte le direzioni ed esce di nuovo senza essere assorbita. Poiché la luce bianca contiene tutti i colori, e tutti escono mescolati, vediamo la neve come bianca.",
+    "experiment": "Osserva un cubetto di ghiaccio intero (trasparente) e poi un bicchiere pieno di ghiaccio tritato: nota come sembra più bianco quanto più è tritato."
+  },
+  {
+    "id": "terramotos",
+    "emoji": "🌍",
+    "question": "Perché avvengono i terremoti?",
+    "quickAnswer": "La superficie della Terra è fatta di enormi placche di roccia che si muovono molto lentamente, e quando scivolano o si scontrano improvvisamente, lo sentiamo come un terremoto.",
+    "moreAnswer": "La crosta terrestre è divisa in gigantesche placche tettoniche che galleggiano lentamente sopra uno strato più caldo e morbido sottostante. I bordi di queste placche a volte si incastrano tra loro, e la tensione si accumula finché improvvisamente scivolano con forza. Questo improvviso rilascio di energia fa tremare il suolo: è il terremoto. La maggior parte avviene vicino ai confini tra le placche.",
+    "experiment": null
+  },
+  {
+    "id": "vulcoes",
+    "emoji": "🌋",
+    "question": "Perché i vulcani entrano in eruzione?",
+    "quickAnswer": "Sotto la Terra c'è roccia così calda da essere fusa, chiamata magma; quando la pressione del gas al suo interno diventa troppo alta, il magma sale ed esplode in superficie.",
+    "moreAnswer": "All'interno della Terra fa così caldo che parte della roccia si scioglie, formando il magma, più leggero della roccia solida circostante e quindi tende a salire. Nel magma ci sono gas disciolti, come in una bottiglia di bibita chiusa. Quando il magma sale e la pressione diminuisce, i gas si espandono improvvisamente, e se non riescono a fuoriuscire lentamente, l'esplosione spinge il magma fuori dal cratere: è l'eruzione. La lava è quello stesso magma una volta arrivato in superficie.",
+    "experiment": null
+  },
+  {
+    "id": "mares-oceano",
+    "emoji": "🌊",
+    "question": "Perché ci sono le maree nell'oceano?",
+    "quickAnswer": "Le maree sono causate principalmente dalla forza di gravità della Luna, che tira l'acqua degli oceani, facendola salire e scendere due volte al giorno.",
+    "moreAnswer": "La Luna esercita una forza di attrazione su tutto sulla Terra, inclusa l'acqua degli oceani, tirandola leggermente verso di sé e creando un'alta marea sul lato della Terra più vicino alla Luna. Allo stesso tempo, si forma un'altra alta marea sul lato opposto, a causa della rotazione terrestre. Anche il Sole influenza le maree, sebbene meno della Luna, e quando i due si allineano, le maree diventano ancora più forti.",
+    "experiment": null
+  },
+  {
+    "id": "estacoes-do-ano",
+    "emoji": "🍂",
+    "question": "Perché ci sono le stagioni?",
+    "quickAnswer": "Le stagioni esistono perché la Terra è leggermente inclinata mentre viaggia intorno al Sole, facendo sì che ogni emisfero riceva più o meno luce solare durante l'anno.",
+    "moreAnswer": "L'asse terrestre è inclinato di circa 23 gradi, e mantiene questa inclinazione mentre orbita intorno al Sole durante un anno. Durante una parte dell'orbita, l'emisfero nord è più rivolto verso il Sole e riceve più luce e calore: lì è estate, mentre nell'emisfero sud è inverno. Sei mesi dopo, la situazione si inverte. Non è la distanza dal Sole a cambiare le stagioni, è l'angolo con cui arriva la luce.",
+    "experiment": null
+  },
+  {
+    "id": "ima-atrai",
+    "emoji": "🧲",
+    "question": "Perché i magneti attirano il metallo?",
+    "quickAnswer": "I magneti creano un campo magnetico invisibile capace di allineare i piccoli magneti naturali all'interno di certi metalli, come il ferro, attirandoli verso di sé.",
+    "moreAnswer": "All'interno di metalli come il ferro esistono zone microscopiche chiamate domini magnetici, che funzionano come piccolissimi magneti che puntano in direzioni diverse. Quando un magnete si avvicina, il suo campo magnetico fa allineare questi domini tutti nella stessa direzione, trasformando temporaneamente il metallo in un altro magnete che viene attratto. Non tutti i metalli reagiscono così: l'alluminio o il rame, per esempio, non sono attratti dai magneti.",
+    "experiment": "Passa un magnete sopra vari oggetti di metallo in casa (monete, graffette, cucchiai) e annota quali vengono attirati e quali no."
+  },
+  {
+    "id": "bolhas-sabao",
+    "emoji": "🫧",
+    "question": "Perché le bolle di sapone sono rotonde?",
+    "quickAnswer": "Le bolle di sapone sono rotonde perché l'acqua cerca sempre di occupare la minor superficie possibile per una certa quantità d'aria, e la sfera è la forma che lo ottiene.",
+    "moreAnswer": "L'acqua ha una proprietà chiamata tensione superficiale, che fa sì che le molecole in superficie si attraggano tra loro, come una pelle elastica tesa. Il sapone aiuta questa sottile pellicola d'acqua a stirarsi ancora di più senza scoppiare. Tra tutte le forme possibili, la sfera è quella che racchiude un dato volume d'aria usando la minor superficie, quindi è verso questa forma che la bolla tende naturalmente.",
+    "experiment": "Fai bolle di sapone con una cannuccia o un anello e osserva come restano sempre rotonde, anche se l'anello che usi ha un'altra forma."
+  },
+  {
+    "id": "espelho-inverte",
+    "emoji": "🪞",
+    "question": "Perché lo specchio inverte l'immagine?",
+    "quickAnswer": "Lo specchio non scambia la sinistra con la destra: scambia il davanti con il dietro. È questa inversione all'indietro a far sembrare che sinistra e destra siano cambiate.",
+    "moreAnswer": "Quando ti guardi allo specchio, la luce che esce da te colpisce la superficie e torna esattamente nella direzione da cui è venuta, come una palla che rimbalza su un muro. Questo inverte la profondità: ciò che era vicino allo specchio resta vicino, ma davanti e dietro si scambiano di posto. Poiché di solito ruotiamo attorno a un asse verticale per guardarci allo specchio (invece di piegarci), la nostra mente interpreta questo scambio come sinistra-destra, ma in realtà è davanti-dietro.",
+    "experiment": "Scrivi la parola \"AMORE\" su un foglio e guardala allo specchio: nota come le lettere si invertono, ma la parola resta orizzontale."
+  },
+  {
+    "id": "fogo-arde",
+    "emoji": "🔥",
+    "question": "Perché il fuoco brucia e dà luce?",
+    "quickAnswer": "Il fuoco è una reazione chimica chiamata combustione, in cui un materiale si combina rapidamente con l'ossigeno dell'aria, rilasciando calore e luce.",
+    "moreAnswer": "Perché ci sia il fuoco servono tre cose: combustibile (come legna o gas), ossigeno e calore sufficiente per avviare la reazione. Quando queste tre cose si uniscono, le molecole del combustibile si rompono e si ricombinano con l'ossigeno, rilasciando molta energia in una volta, sotto forma di calore e luce. Le fiamme che vediamo sono gas molto caldi che brillano durante questa reazione.",
+    "experiment": null
+  },
+  {
+    "id": "ferrugem-metal",
+    "emoji": "🔩",
+    "question": "Perché il metallo arrugginisce?",
+    "quickAnswer": "Il ferro arrugginisce quando reagisce con l'ossigeno dell'aria in presenza di acqua, formando una nuova sostanza rossastra e friabile chiamata ossido di ferro.",
+    "moreAnswer": "Quando il ferro è a contatto con acqua e aria allo stesso tempo, inizia una reazione chimica lenta: gli atomi di ferro si combinano con l'ossigeno, formando ossido di ferro, meglio conosciuto come ruggine. A differenza del ferro originale, che è forte, la ruggine è debole e si sgretola facilmente, quindi gli oggetti arrugginiti perdono progressivamente resistenza. Per questo si dipingono o si verniciano gli oggetti di metallo, per proteggerli dall'aria e dall'acqua.",
+    "experiment": "Metti un chiodo di ferro in un bicchiere con un po' d'acqua e un altro chiodo asciutto in un altro bicchiere. Osserva per qualche giorno quale arrugginisce prima."
+  },
+  {
+    "id": "pao-mofo",
+    "emoji": "🍞",
+    "question": "Perché il pane fa la muffa?",
+    "quickAnswer": "La muffa è un fungo le cui spore sono sempre nell'aria; quando si posano su pane umido e caldo, trovano condizioni perfette per crescere e formare le macchie verdi o nere.",
+    "moreAnswer": "L'aria intorno a noi è piena di spore fungine, così piccole che non riusciamo a vederle. Quando si posano sulla superficie del pane, se c'è umidità e una temperatura tiepida, iniziano a germinare e a diffondere filamenti sottilissimi dentro il pane, nutrendosi dei suoi zuccheri e amidi. Dopo qualche giorno, si formano strutture che producono nuove spore, che vediamo come le macchie colorate di muffa.",
+    "experiment": "Conserva una fetta di pane in un sacchetto chiuso in un luogo buio e un'altra in frigorifero. Osserva per una settimana quale fa la muffa per prima (non aprire né annusare il sacchetto dopo la comparsa della muffa)."
+  },
+  {
+    "id": "cebola-lagrimas",
+    "emoji": "🧅",
+    "question": "Perché la cipolla ci fa piangere?",
+    "quickAnswer": "Tagliando una cipolla si libera un gas che irrita gli occhi, e il corpo produce lacrime automaticamente per cercare di lavarlo via e proteggere gli occhi.",
+    "moreAnswer": "Dentro le cellule della cipolla ci sono sostanze che, quando la cipolla viene tagliata, si mescolano e formano un gas irritante che sale fino agli occhi. Toccando la superficie umida degli occhi, questo gas si trasforma in una specie di acido lieve, che irrita i nervi sensibili. Il cervello risponde subito facendo produrre più lacrime per diluire e lavare via l'irritante.",
+    "experiment": "Prova a tagliare una cipolla vicino all'acqua corrente, o dopo averla messa qualche minuto in frigorifero, e vedi se piangi di meno."
+  },
+  {
+    "id": "estrelas-nao-caem",
+    "emoji": "🌌",
+    "question": "Perché le stelle non cadono dal cielo?",
+    "quickAnswer": "Le stelle non cadono perché sono estremamente lontane e ognuna si muove nello spazio, senza essere davvero \"attaccata\" al cielo come sembra.",
+    "moreAnswer": "Viste dalla Terra, le stelle sembrano fisse su un grande soffitto scuro, ma in realtà si trovano a distanze enormi, misurate in anni luce, e si muovono costantemente nello spazio ad alta velocità. Ciò che a volte vediamo \"cadere\" sono le stelle cadenti, che non sono stelle vere, ma piccoli pezzi di roccia o polvere che entrano nell'atmosfera terrestre e bruciano, creando una scia di luce.",
+    "experiment": "In una notte serena, osserva lo stesso gruppo di stelle a distanza di due settimane: vedrai che resta quasi nello stesso posto, perché è troppo lontano per notarne il movimento."
+  },
+  {
+    "id": "sol-quente",
+    "emoji": "☀️",
+    "question": "Perché il Sole è così caldo?",
+    "quickAnswer": "Il Sole è un'enorme palla di gas dove avvengono continue reazioni nucleari nel suo nucleo, rilasciando una quantità gigantesca di energia sotto forma di calore e luce.",
+    "moreAnswer": "Al centro del Sole, la pressione e la temperatura sono così alte che gli atomi di idrogeno si fondono tra loro, formando elio, in un processo chiamato fusione nucleare. Ogni volta che ciò accade, viene rilasciata un'enorme quantità di energia. Questa energia impiega migliaia di anni per viaggiare dal nucleo alla superficie del Sole, e poi solo circa 8 minuti per raggiungere la Terra, dove sentiamo il suo calore.",
+    "experiment": null
+  },
+  {
+    "id": "terra-gira",
+    "emoji": "🌐",
+    "question": "Perché la Terra gira?",
+    "quickAnswer": "La Terra gira perché, sin dalla sua formazione miliardi di anni fa, ha continuato a ruotare con il movimento che aveva già quando si è formata, e nello spazio non c'è nulla a frenarla.",
+    "moreAnswer": "Molto tempo fa, il Sistema Solare si è formato da un'enorme nube di gas e polvere in rotazione. Quando la Terra si è formata dentro quella nube, ha ereditato parte di quel movimento rotatorio. Nello spazio non ci sono aria né attrito a frenare il movimento, quindi la Terra continua a girare su se stessa senza fermarsi, compiendo un giro completo ogni 24 ore: questo crea il giorno e la notte.",
+    "experiment": null
+  },
+  {
+    "id": "sal-derrete-gelo",
+    "emoji": "🧂",
+    "question": "Perché il sale scioglie il ghiaccio?",
+    "quickAnswer": "Il sale abbassa la temperatura a cui l'acqua congela, quindi, quando viene sparso sul ghiaccio, questo inizia a sciogliersi anche con temperature sotto zero.",
+    "moreAnswer": "L'acqua pura congela a 0°C, ma quando mescoliamo sale nell'acqua, rendiamo più difficile la formazione di cristalli di ghiaccio organizzati, e la temperatura di congelamento scende. Quando si sparge sale su una strada ghiacciata, esso si mescola con il sottile strato di acqua liquida sempre presente sulla superficie del ghiaccio, abbassando il punto di congelamento di quell'acqua e facendo sciogliere il ghiaccio più facilmente, anche nei giorni freddi.",
+    "experiment": "Riempi due bicchieri con cubetti di ghiaccio. Versa sale solo in uno di essi e osserva quale si scioglie più velocemente."
+  },
+  {
+    "id": "plantas-verdes",
+    "emoji": "🌱",
+    "question": "Perché le piante sono verdi?",
+    "quickAnswer": "Le piante sono verdi perché le loro foglie hanno la clorofilla, una sostanza che assorbe la luce rossa e blu del Sole, ma riflette la luce verde, quella che i nostri occhi vedono.",
+    "moreAnswer": "La clorofilla è essenziale per la fotosintesi, il processo attraverso cui le piante usano la luce solare, l'acqua e l'anidride carbonica per produrre il proprio cibo (zucchero) e rilasciare ossigeno. La clorofilla assorbe molto bene i colori rosso e blu della luce solare per usare quell'energia, ma assorbe a malapena il verde: quella luce viene riflessa verso i nostri occhi, ed è per questo che vediamo le piante verdi.",
+    "experiment": "In autunno, osserva come alcune foglie cambiano dal verde al giallo o all'arancione: questo accade perché la clorofilla si decompone e altri colori già presenti diventano visibili."
+  },
+  {
+    "id": "gatos-caem-de-pe",
+    "emoji": "🐈",
+    "question": "Perché i gatti cadono sempre in piedi?",
+    "quickAnswer": "I gatti hanno un senso dell'equilibrio molto preciso nell'orecchio interno e una colonna vertebrale estremamente flessibile, che permette loro di girare il corpo in aria e atterrare prima con le zampe.",
+    "moreAnswer": "Quando un gatto inizia a cadere, i sensori nell'orecchio interno rilevano immediatamente che è capovolto. Il gatto usa questo per torcere prima la parte anteriore del corpo, poi quella posteriore, grazie alla sua colonna vertebrale molto flessibile, senza aver bisogno di alcun punto d'appoggio: questo si chiama \"riflesso di raddrizzamento\". Allargano anche le zampe come un paracadute per rallentare la caduta. Ciononostante, una caduta da qualsiasi altezza può far male a un gatto, quindi non è sicuro provarlo apposta.",
+    "experiment": null
   }
 ]

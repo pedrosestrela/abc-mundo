@@ -285,5 +285,157 @@
       "dormir",
       "bocejo"
     ]
+  },
+  {
+    "id": "trovao-relampago",
+    "emoji": "⛈️",
+    "question": "Pourquoi voyons-nous l'éclair avant d'entendre le tonnerre ?",
+    "quickAnswer": "La lumière voyage beaucoup plus vite que le son, donc on voit l'éclair presque instantanément, mais le son du tonnerre met un peu plus de temps à nous parvenir.",
+    "moreAnswer": "La lumière voyage à environ 300 000 kilomètres par seconde, tandis que le son ne voyage qu'à 340 mètres par seconde — beaucoup, beaucoup plus lentement. L'éclair et le tonnerre se produisent exactement en même temps, mais comme la lumière arrive presque instantanément et que le son met du temps, on voit d'abord et on entend ensuite. Plus il s'écoule de temps entre les deux, plus l'orage est loin.",
+    "experiment": "Lors du prochain orage (à distance sûre), compte les secondes entre l'éclair et le tonnerre. Chaque tranche de 3 secondes équivaut à environ 1 kilomètre de distance."
+  },
+  {
+    "id": "neve-branca",
+    "emoji": "❄️",
+    "question": "Pourquoi la neige est-elle blanche ?",
+    "quickAnswer": "La neige est faite de très nombreux cristaux de glace transparents qui reflètent la lumière dans toutes les directions, et ce mélange de toutes les couleurs paraît blanc à nos yeux.",
+    "moreAnswer": "Chaque flocon de neige est en fait aussi transparent qu'un cristal de glace ordinaire. Mais la neige est faite de millions de minuscules cristaux, pleins de petites surfaces et d'espaces d'air. Quand la lumière du soleil frappe ces cristaux, elle rebondit dans toutes les directions et ressort sans être absorbée. Comme la lumière blanche contient toutes les couleurs, et qu'elles ressortent toutes mélangées, nous voyons la neige comme blanche.",
+    "experiment": "Observe un glaçon entier (transparent) puis un verre plein de glace pilée — remarque comme ça paraît plus blanc plus c'est pilé."
+  },
+  {
+    "id": "terramotos",
+    "emoji": "🌍",
+    "question": "Pourquoi y a-t-il des tremblements de terre ?",
+    "quickAnswer": "La surface de la Terre est faite d'énormes plaques de roche qui bougent très lentement, et quand elles glissent ou entrent en collision soudainement, on ressent ça comme un tremblement de terre.",
+    "moreAnswer": "La croûte terrestre est divisée en plaques tectoniques géantes qui flottent lentement au-dessus d'une couche plus chaude et molle en dessous. Les bords de ces plaques se coincent parfois les uns contre les autres, et la tension s'accumule jusqu'à ce qu'elles glissent soudainement avec force. Cette libération soudaine d'énergie fait trembler le sol — c'est le tremblement de terre. La plupart se produisent près des frontières entre les plaques.",
+    "experiment": null
+  },
+  {
+    "id": "vulcoes",
+    "emoji": "🌋",
+    "question": "Pourquoi les volcans entrent-ils en éruption ?",
+    "quickAnswer": "Sous la Terre, il y a une roche si chaude qu'elle est fondue, appelée magma ; quand la pression du gaz à l'intérieur devient trop forte, le magma monte et explose à la surface.",
+    "moreAnswer": "À l'intérieur de la Terre, il fait si chaud qu'une partie de la roche fond, formant le magma, plus léger que la roche solide autour, donc il a tendance à monter. Le magma contient des gaz dissous, comme dans une bouteille de soda fermée. Quand le magma monte et que la pression diminue, les gaz se dilatent soudainement, et s'ils ne peuvent pas s'échapper lentement, l'explosion pousse le magma vers l'extérieur par le cratère — c'est l'éruption. La lave est ce même magma une fois arrivé à la surface.",
+    "experiment": null
+  },
+  {
+    "id": "mares-oceano",
+    "emoji": "🌊",
+    "question": "Pourquoi y a-t-il des marées dans l'océan ?",
+    "quickAnswer": "Les marées sont principalement causées par la gravité de la Lune, qui attire l'eau des océans, la faisant monter et descendre deux fois par jour.",
+    "moreAnswer": "La Lune exerce une force d'attraction sur tout ce qui se trouve sur Terre, y compris l'eau des océans, la tirant légèrement vers elle et créant une marée haute du côté de la Terre le plus proche de la Lune. En même temps, une autre marée haute se forme du côté opposé, à cause de la rotation de la Terre. Le Soleil influence aussi les marées, bien que moins que la Lune, et quand les deux s'alignent, les marées deviennent encore plus fortes.",
+    "experiment": null
+  },
+  {
+    "id": "estacoes-do-ano",
+    "emoji": "🍂",
+    "question": "Pourquoi y a-t-il des saisons ?",
+    "quickAnswer": "Il y a des saisons parce que la Terre est légèrement inclinée pendant qu'elle voyage autour du Soleil, ce qui fait que chaque hémisphère reçoit plus ou moins de lumière solaire au cours de l'année.",
+    "moreAnswer": "L'axe de la Terre est incliné d'environ 23 degrés, et elle garde cette inclinaison tout en orbitant autour du Soleil pendant une année. Pendant une partie de l'orbite, l'hémisphère nord est plus tourné vers le Soleil et reçoit plus de lumière et de chaleur — c'est l'été là-bas, tandis que c'est l'hiver dans l'hémisphère sud. Six mois plus tard, la situation s'inverse. Ce n'est pas la distance au Soleil qui change les saisons, c'est l'angle sous lequel la lumière arrive.",
+    "experiment": null
+  },
+  {
+    "id": "ima-atrai",
+    "emoji": "🧲",
+    "question": "Pourquoi les aimants attirent-ils le métal ?",
+    "quickAnswer": "Les aimants créent un champ magnétique invisible capable d'aligner les petits aimants naturels à l'intérieur de certains métaux, comme le fer, en les attirant vers lui.",
+    "moreAnswer": "À l'intérieur de métaux comme le fer, il existe des zones microscopiques appelées domaines magnétiques, qui agissent comme de minuscules aimants pointant dans différentes directions. Quand un aimant s'approche, son champ magnétique aligne tous ces domaines dans la même direction, transformant temporairement le métal en un autre aimant qui est attiré. Tous les métaux ne réagissent pas ainsi — l'aluminium ou le cuivre, par exemple, ne sont pas attirés par les aimants.",
+    "experiment": "Passe un aimant sur plusieurs objets en métal à la maison (pièces, trombones, cuillères) et note lesquels sont attirés et lesquels ne le sont pas."
+  },
+  {
+    "id": "bolhas-sabao",
+    "emoji": "🫧",
+    "question": "Pourquoi les bulles de savon sont-elles rondes ?",
+    "quickAnswer": "Les bulles de savon sont rondes parce que l'eau essaie toujours d'occuper la plus petite surface possible pour une certaine quantité d'air, et la sphère est la forme qui y parvient.",
+    "moreAnswer": "L'eau a une propriété appelée tension superficielle, qui fait que les molécules à la surface s'attirent les unes vers les autres, comme une peau élastique tendue. Le savon aide ce fin film d'eau à s'étirer encore plus sans éclater. Parmi toutes les formes possibles, la sphère est celle qui enveloppe un certain volume d'air en utilisant le moins de surface possible, c'est donc vers cette forme que la bulle tend naturellement.",
+    "experiment": "Fais des bulles de savon avec une paille ou un anneau et observe comme elles sont toujours rondes, même si la forme de l'anneau utilisé est différente."
+  },
+  {
+    "id": "espelho-inverte",
+    "emoji": "🪞",
+    "question": "Pourquoi le miroir inverse-t-il l'image ?",
+    "quickAnswer": "Le miroir n'échange pas la gauche et la droite — il échange l'avant et l'arrière. C'est cette inversion vers l'arrière qui donne l'impression que la gauche et la droite ont changé.",
+    "moreAnswer": "Quand tu te regardes dans un miroir, la lumière qui vient de toi frappe la surface et repart exactement dans la direction d'où elle venait, comme une balle qui rebondit sur un mur. Cela inverse la profondeur : ce qui était près du miroir reste près, mais l'avant et l'arrière échangent leurs places. Comme on tourne généralement autour d'un axe vertical pour se regarder dans un miroir (plutôt que de se pencher), notre esprit interprète cet échange comme gauche-droite, alors qu'en réalité c'est avant-arrière.",
+    "experiment": "Écris le mot « AMOUR » sur un papier et regarde-le dans un miroir — remarque comme les lettres s'inversent, mais le mot reste horizontal."
+  },
+  {
+    "id": "fogo-arde",
+    "emoji": "🔥",
+    "question": "Pourquoi le feu brûle-t-il et donne-t-il de la lumière ?",
+    "quickAnswer": "Le feu est une réaction chimique appelée combustion, dans laquelle un matériau se combine rapidement avec l'oxygène de l'air, libérant chaleur et lumière.",
+    "moreAnswer": "Pour qu'il y ait du feu, il faut trois choses : un combustible (comme du bois ou du gaz), de l'oxygène et suffisamment de chaleur pour démarrer la réaction. Quand ces trois éléments se réunissent, les molécules du combustible se cassent et se recombinent avec l'oxygène, libérant beaucoup d'énergie d'un coup, sous forme de chaleur et de lumière. Les flammes que nous voyons sont des gaz très chauds qui brillent pendant cette réaction.",
+    "experiment": null
+  },
+  {
+    "id": "ferrugem-metal",
+    "emoji": "🔩",
+    "question": "Pourquoi le métal rouille-t-il ?",
+    "quickAnswer": "Le fer rouille quand il réagit avec l'oxygène de l'air en présence d'eau, formant une nouvelle substance rougeâtre et friable appelée oxyde de fer.",
+    "moreAnswer": "Quand le fer est en contact avec l'eau et l'air en même temps, une réaction chimique lente commence : les atomes de fer se combinent avec l'oxygène, formant de l'oxyde de fer, plus connu sous le nom de rouille. Contrairement au fer d'origine, qui est solide, la rouille est fragile et s'effrite facilement, donc les objets rouillés perdent progressivement leur résistance. C'est pourquoi on peint ou vernit les objets en métal, pour les protéger de l'air et de l'eau.",
+    "experiment": "Mets un clou en fer dans un verre avec un peu d'eau et un autre clou sec dans un autre verre. Observe pendant quelques jours lequel rouille en premier."
+  },
+  {
+    "id": "pao-mofo",
+    "emoji": "🍞",
+    "question": "Pourquoi le pain moisit-il ?",
+    "quickAnswer": "La moisissure est un champignon dont les spores flottent toujours dans l'air ; quand elles se posent sur du pain humide et chaud, elles trouvent des conditions parfaites pour se développer et former les taches vertes ou noires.",
+    "moreAnswer": "L'air autour de nous est plein de spores de champignons, si petites qu'on ne peut pas les voir. Quand elles se posent sur la surface du pain, s'il y a de l'humidité et une température tiède, elles commencent à germer et à étendre des filaments très fins à l'intérieur du pain, se nourrissant de ses sucres et amidons. Après quelques jours, des structures se forment qui produisent de nouvelles spores, que l'on voit comme les taches colorées de moisissure.",
+    "experiment": "Range une tranche de pain dans un sac fermé dans un endroit sombre et une autre au réfrigérateur. Observe pendant une semaine laquelle moisit en premier (ne pas ouvrir ni sentir le sac une fois la moisissure apparue)."
+  },
+  {
+    "id": "cebola-lagrimas",
+    "emoji": "🧅",
+    "question": "Pourquoi l'oignon nous fait-il pleurer ?",
+    "quickAnswer": "En coupant un oignon, un gaz irritant pour les yeux se libère, et le corps produit automatiquement des larmes pour essayer de le laver et de protéger les yeux.",
+    "moreAnswer": "À l'intérieur des cellules de l'oignon se trouvent des substances qui, quand l'oignon est coupé, se mélangent et forment un gaz irritant qui monte jusqu'aux yeux. En touchant la surface humide des yeux, ce gaz se transforme en une sorte d'acide doux, qui irrite les nerfs sensibles. Le cerveau répond immédiatement en faisant produire plus de larmes pour diluer et laver cet irritant.",
+    "experiment": "Essaie de couper un oignon près de l'eau courante, ou après l'avoir mis quelques minutes au réfrigérateur, et vois si tu pleures moins."
+  },
+  {
+    "id": "estrelas-nao-caem",
+    "emoji": "🌌",
+    "question": "Pourquoi les étoiles ne tombent-elles pas du ciel ?",
+    "quickAnswer": "Les étoiles ne tombent pas parce qu'elles sont extrêmement loin et chacune se déplace dans l'espace, sans être vraiment « collée » au ciel comme elle le paraît.",
+    "moreAnswer": "Vues depuis la Terre, les étoiles semblent fixées à un grand plafond sombre, mais en réalité elles sont à des distances énormes, mesurées en années-lumière, et se déplacent constamment dans l'espace à grande vitesse. Ce que nous voyons parfois « tomber » ce sont des étoiles filantes, qui ne sont pas de vraies étoiles, mais de petits morceaux de roche ou de poussière qui entrent dans l'atmosphère terrestre et brûlent, créant une traînée de lumière.",
+    "experiment": "Par une nuit claire, observe le même groupe d'étoiles à deux semaines d'intervalle — tu verras qu'il reste presque au même endroit, car il est trop loin pour que l'on remarque son mouvement."
+  },
+  {
+    "id": "sol-quente",
+    "emoji": "☀️",
+    "question": "Pourquoi le Soleil est-il si chaud ?",
+    "quickAnswer": "Le Soleil est une énorme boule de gaz où des réactions nucléaires constantes se produisent dans son noyau, libérant une quantité gigantesque d'énergie sous forme de chaleur et de lumière.",
+    "moreAnswer": "Au centre du Soleil, la pression et la température sont si élevées que des atomes d'hydrogène fusionnent entre eux, formant de l'hélium, dans un processus appelé fusion nucléaire. Chaque fois que cela se produit, une énorme quantité d'énergie est libérée. Cette énergie met des milliers d'années à voyager du noyau jusqu'à la surface du Soleil, puis seulement environ 8 minutes pour atteindre la Terre, où nous ressentons sa chaleur.",
+    "experiment": null
+  },
+  {
+    "id": "terra-gira",
+    "emoji": "🌐",
+    "question": "Pourquoi la Terre tourne-t-elle ?",
+    "quickAnswer": "La Terre tourne parce que, depuis sa formation il y a des milliards d'années, elle a conservé le mouvement qu'elle avait déjà en se formant, et dans l'espace, rien ne la freine.",
+    "moreAnswer": "Il y a très longtemps, le Système solaire s'est formé à partir d'un énorme nuage de gaz et de poussière en rotation. Quand la Terre s'est formée dans ce nuage, elle a hérité d'une partie de ce mouvement rotatif. Dans l'espace, il n'y a ni air ni frottement pour freiner le mouvement, donc la Terre continue de tourner sur elle-même sans s'arrêter, faisant un tour complet toutes les 24 heures — c'est ce qui crée le jour et la nuit.",
+    "experiment": null
+  },
+  {
+    "id": "sal-derrete-gelo",
+    "emoji": "🧂",
+    "question": "Pourquoi le sel fait-il fondre la glace ?",
+    "quickAnswer": "Le sel abaisse la température à laquelle l'eau gèle, donc quand on le répand sur de la glace, celle-ci commence à fondre même à des températures inférieures à zéro.",
+    "moreAnswer": "L'eau pure gèle à 0°C, mais quand on mélange du sel à l'eau, il devient plus difficile pour les cristaux de glace organisés de se former, et la température de congélation baisse. Quand on répand du sel sur une route verglacée, il se mélange à la fine couche d'eau liquide toujours présente à la surface de la glace, abaissant le point de congélation de cette eau et faisant fondre la glace plus facilement, même par temps froid.",
+    "experiment": "Remplis deux verres de glaçons. Verse du sel dans un seul des deux et observe lequel fond le plus vite."
+  },
+  {
+    "id": "plantas-verdes",
+    "emoji": "🌱",
+    "question": "Pourquoi les plantes sont-elles vertes ?",
+    "quickAnswer": "Les plantes sont vertes parce que leurs feuilles contiennent de la chlorophylle, une substance qui absorbe la lumière rouge et bleue du Soleil, mais reflète la lumière verte, celle que nos yeux voient.",
+    "moreAnswer": "La chlorophylle est essentielle à la photosynthèse, le processus par lequel les plantes utilisent la lumière du soleil, l'eau et le dioxyde de carbone pour produire leur propre nourriture (sucre) et libérer de l'oxygène. La chlorophylle absorbe très bien les couleurs rouge et bleue de la lumière du soleil pour utiliser cette énergie, mais elle absorbe à peine le vert — cette lumière est réfléchie vers nos yeux, c'est pourquoi nous voyons les plantes vertes.",
+    "experiment": "En automne, observe comment certaines feuilles passent du vert au jaune ou à l'orange — cela se produit parce que la chlorophylle se décompose et que d'autres couleurs déjà présentes deviennent visibles."
+  },
+  {
+    "id": "gatos-caem-de-pe",
+    "emoji": "🐈",
+    "question": "Pourquoi les chats retombent-ils toujours sur leurs pattes ?",
+    "quickAnswer": "Les chats ont un sens de l'équilibre très précis dans l'oreille interne et une colonne vertébrale extrêmement flexible, ce qui leur permet de tourner leur corps en l'air et d'atterrir pattes en premier.",
+    "moreAnswer": "Quand un chat commence à tomber, des capteurs dans son oreille interne détectent immédiatement qu'il est à l'envers. Le chat s'en sert pour tordre d'abord l'avant de son corps, puis l'arrière, grâce à sa colonne vertébrale très flexible, sans avoir besoin d'aucun point d'appui — on appelle cela le « réflexe de redressement ». Ils écartent aussi leurs pattes comme un parachute pour ralentir la chute. Malgré tout, une chute de n'importe quelle hauteur peut blesser un chat, donc ce n'est pas sûr de tester cela exprès.",
+    "experiment": null
   }
 ]

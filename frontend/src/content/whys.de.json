@@ -285,5 +285,157 @@
       "dormir",
       "bocejo"
     ]
+  },
+  {
+    "id": "trovao-relampago",
+    "emoji": "⛈️",
+    "question": "Warum sehen wir den Blitz, bevor wir den Donner hören?",
+    "quickAnswer": "Licht ist viel schneller als Schall, deshalb sehen wir den Blitz fast sofort, aber der Donner braucht etwas länger, um bei uns anzukommen.",
+    "moreAnswer": "Licht bewegt sich mit etwa 300.000 Kilometern pro Sekunde, während sich Schall nur mit 340 Metern pro Sekunde bewegt – viel, viel langsamer. Blitz und Donner passieren genau gleichzeitig, aber da das Licht fast sofort ankommt und der Schall länger braucht, sehen wir zuerst und hören danach. Je mehr Zeit zwischen beiden vergeht, desto weiter entfernt ist das Gewitter.",
+    "experiment": "Zähle beim nächsten Gewitter (aus sicherer Entfernung) die Sekunden zwischen Blitz und Donner. Alle 3 Sekunden entsprechen etwa 1 Kilometer Entfernung."
+  },
+  {
+    "id": "neve-branca",
+    "emoji": "❄️",
+    "question": "Warum ist Schnee weiß?",
+    "quickAnswer": "Schnee besteht aus unzähligen winzigen, durchsichtigen Eiskristallen, die Licht in alle Richtungen reflektieren, und diese Mischung aller Farben erscheint unseren Augen weiß.",
+    "moreAnswer": "Jede Schneeflocke ist eigentlich so durchsichtig wie ein gewöhnlicher Eiskristall. Aber Schnee besteht aus Millionen winziger Kristalle voller kleiner Oberflächen und Lufträume. Trifft Sonnenlicht auf diese Kristalle, prallt es in alle Richtungen ab und kommt wieder heraus, ohne absorbiert zu werden. Da weißes Licht alle Farben enthält und diese alle vermischt herauskommen, erscheint uns der Schnee weiß.",
+    "experiment": "Betrachte einen ganzen (durchsichtigen) Eiswürfel und dann ein Glas voll zerstoßenem Eis – schau, wie es umso weißer wirkt, je zerkleinerter es ist."
+  },
+  {
+    "id": "terramotos",
+    "emoji": "🌍",
+    "question": "Warum gibt es Erdbeben?",
+    "quickAnswer": "Die Erdoberfläche besteht aus riesigen Gesteinsplatten, die sich sehr langsam bewegen, und wenn sie plötzlich rutschen oder zusammenstoßen, spüren wir das als Erdbeben.",
+    "moreAnswer": "Die Erdkruste ist in riesige tektonische Platten unterteilt, die langsam über einer heißeren, weicheren Schicht darunter schwimmen. Die Ränder dieser Platten verhaken sich manchmal ineinander, und die Spannung baut sich auf, bis sie plötzlich mit großer Kraft rutschen. Diese plötzliche Energiefreisetzung lässt den Boden beben – das ist das Erdbeben. Die meisten passieren nahe den Plattengrenzen.",
+    "experiment": null
+  },
+  {
+    "id": "vulcoes",
+    "emoji": "🌋",
+    "question": "Warum brechen Vulkane aus?",
+    "quickAnswer": "Tief unter der Erde gibt es so heißes Gestein, dass es geschmolzen ist, Magma genannt; wenn der Gasdruck darin zu groß wird, steigt das Magma auf und bricht an der Oberfläche aus.",
+    "moreAnswer": "Im Erdinneren ist es so heiß, dass Gestein schmilzt und Magma bildet, das leichter als das feste Gestein drumherum ist und daher aufsteigt. Im Magma sind Gase gelöst, wie in einer verschlossenen Limonadenflasche. Steigt das Magma auf und sinkt der Druck, dehnen sich die Gase plötzlich aus, und wenn sie nicht langsam entweichen können, drückt die Explosion das Magma durch den Krater nach draußen – das ist der Ausbruch. Lava ist dieses Magma, sobald es die Oberfläche erreicht.",
+    "experiment": null
+  },
+  {
+    "id": "mares-oceano",
+    "emoji": "🌊",
+    "question": "Warum gibt es Gezeiten im Ozean?",
+    "quickAnswer": "Gezeiten werden hauptsächlich durch die Anziehungskraft des Mondes verursacht, die am Meerwasser zieht und es zweimal täglich steigen und fallen lässt.",
+    "moreAnswer": "Der Mond übt eine Anziehungskraft auf alles auf der Erde aus, auch auf das Meerwasser, und zieht es leicht zu sich hin, wodurch auf der mondnächsten Seite der Erde Flut entsteht. Gleichzeitig bildet sich auf der gegenüberliegenden Seite eine weitere Flut, wegen der Erdrotation. Auch die Sonne beeinflusst die Gezeiten, wenn auch weniger als der Mond, und wenn beide auf einer Linie stehen, werden die Gezeiten noch stärker.",
+    "experiment": null
+  },
+  {
+    "id": "estacoes-do-ano",
+    "emoji": "🍂",
+    "question": "Warum gibt es Jahreszeiten?",
+    "quickAnswer": "Es gibt Jahreszeiten, weil die Erde leicht geneigt ist, während sie um die Sonne wandert, wodurch jede Hemisphäre im Laufe des Jahres mehr oder weniger Sonnenlicht bekommt.",
+    "moreAnswer": "Die Erdachse ist etwa 23 Grad geneigt, und diese Neigung behält sie bei, während sie im Laufe eines Jahres um die Sonne kreist. Während eines Teils der Umlaufbahn ist die Nordhalbkugel stärker der Sonne zugewandt und bekommt mehr Licht und Wärme – dort ist Sommer, während auf der Südhalbkugel Winter ist. Sechs Monate später ist es umgekehrt. Nicht die Entfernung zur Sonne ändert die Jahreszeiten, sondern der Winkel, in dem das Licht ankommt.",
+    "experiment": null
+  },
+  {
+    "id": "ima-atrai",
+    "emoji": "🧲",
+    "question": "Warum ziehen Magnete Metall an?",
+    "quickAnswer": "Magnete erzeugen ein unsichtbares Magnetfeld, das die winzigen natürlichen Magnete in bestimmten Metallen wie Eisen ausrichten und anziehen kann.",
+    "moreAnswer": "In Metallen wie Eisen gibt es mikroskopisch kleine Bereiche, die magnetische Domänen genannt werden und wie winzige Magnete in verschiedene Richtungen zeigen. Nähert sich ein Magnet, richtet sein Magnetfeld diese Domänen alle in dieselbe Richtung aus und verwandelt das Metall vorübergehend in einen weiteren Magneten, der angezogen wird. Nicht alle Metalle reagieren so – Aluminium oder Kupfer zum Beispiel werden nicht von Magneten angezogen.",
+    "experiment": "Führe einen Magneten über verschiedene Metallgegenstände zu Hause (Münzen, Büroklammern, Löffel) und notiere, welche angezogen werden und welche nicht."
+  },
+  {
+    "id": "bolhas-sabao",
+    "emoji": "🫧",
+    "question": "Warum sind Seifenblasen rund?",
+    "quickAnswer": "Seifenblasen sind rund, weil Wasser für eine bestimmte Menge Luft immer die kleinstmögliche Oberfläche einnehmen will, und die Kugel ist die Form, die das erreicht.",
+    "moreAnswer": "Wasser hat eine Eigenschaft namens Oberflächenspannung, die dazu führt, dass sich die Moleküle an der Oberfläche gegenseitig anziehen, wie eine gespannte elastische Haut. Seife hilft diesem dünnen Wasserfilm, sich noch weiter zu dehnen, ohne zu platzen. Von allen möglichen Formen umschließt die Kugel ein bestimmtes Luftvolumen mit der geringsten Oberfläche, daher nimmt eine Blase natürlicherweise immer diese Form an.",
+    "experiment": "Mach Seifenblasen mit einem Strohhalm oder einem Reifen und schau, wie sie immer rund sind, egal welche Form der Reifen hat."
+  },
+  {
+    "id": "espelho-inverte",
+    "emoji": "🪞",
+    "question": "Warum spiegelverkehrt ein Spiegel das Bild?",
+    "quickAnswer": "Ein Spiegel vertauscht nicht links mit rechts – er vertauscht vorne mit hinten. Diese Umkehrung nach hinten lässt es so aussehen, als hätten sich links und rechts geändert.",
+    "moreAnswer": "Wenn du in einen Spiegel schaust, trifft das Licht, das von dir kommt, auf die Oberfläche und springt genau in die Richtung zurück, aus der es kam, wie ein Ball, der von einer Wand abprallt. Das kehrt die Tiefe um: Was nah am Spiegel war, bleibt nah, aber vorne und hinten tauschen die Plätze. Da wir uns meist um eine senkrechte Achse drehen, um uns im Spiegel zu betrachten (statt uns zu neigen), deutet unser Gehirn diesen Tausch als links-rechts, obwohl er eigentlich vorne-hinten ist.",
+    "experiment": "Schreib das Wort „LIEBE“ auf ein Blatt und schau es dir im Spiegel an – schau, wie die Buchstaben spiegelverkehrt sind, das Wort aber waagerecht bleibt."
+  },
+  {
+    "id": "fogo-arde",
+    "emoji": "🔥",
+    "question": "Warum brennt Feuer und gibt Licht ab?",
+    "quickAnswer": "Feuer ist eine chemische Reaktion namens Verbrennung, bei der sich ein Stoff schnell mit Sauerstoff aus der Luft verbindet und dabei Wärme und Licht freisetzt.",
+    "moreAnswer": "Damit Feuer entsteht, braucht man drei Dinge: Brennstoff (wie Holz oder Gas), Sauerstoff und genug Wärme, um die Reaktion zu starten. Kommen diese drei zusammen, brechen die Moleküle des Brennstoffs auf und verbinden sich neu mit Sauerstoff, wobei auf einmal viel Energie in Form von Wärme und Licht freigesetzt wird. Die Flammen, die wir sehen, sind sehr heiße Gase, die während dieser Reaktion leuchten.",
+    "experiment": null
+  },
+  {
+    "id": "ferrugem-metal",
+    "emoji": "🔩",
+    "question": "Warum rostet Metall?",
+    "quickAnswer": "Eisen rostet, wenn es in Gegenwart von Wasser mit Sauerstoff aus der Luft reagiert und dabei eine neue rötliche, bröckelige Substanz namens Eisenoxid bildet.",
+    "moreAnswer": "Wenn Eisen gleichzeitig mit Wasser und Luft in Kontakt kommt, beginnt eine langsame chemische Reaktion: Eisenatome verbinden sich mit Sauerstoff und bilden Eisenoxid, besser bekannt als Rost. Anders als das ursprüngliche, feste Eisen ist Rost schwach und bröckelt leicht, weshalb verrostete Gegenstände nach und nach an Festigkeit verlieren. Deshalb werden Metallgegenstände gestrichen oder lackiert, um sie vor Luft und Wasser zu schützen.",
+    "experiment": "Stecke einen Eisennagel in ein Glas mit etwas Wasser und einen trockenen Nagel in ein anderes Glas. Beobachte über einige Tage, welcher zuerst rostet."
+  },
+  {
+    "id": "pao-mofo",
+    "emoji": "🍞",
+    "question": "Warum schimmelt Brot?",
+    "quickAnswer": "Schimmel ist ein Pilz, dessen Sporen immer in der Luft schweben; landen sie auf feuchtem, warmem Brot, finden sie perfekte Bedingungen zum Wachsen und bilden die grünen oder schwarzen Flecken.",
+    "moreAnswer": "Die Luft um uns ist voller Pilzsporen, so winzig, dass wir sie nicht sehen können. Landen sie auf der Oberfläche von Brot, beginnen sie bei Feuchtigkeit und warmer Temperatur zu keimen und feinste Fäden durch das Brot zu verbreiten, wobei sie sich von dessen Zuckern und Stärke ernähren. Nach einigen Tagen bilden sich Strukturen, die neue Sporen erzeugen, die wir als bunte Schimmelflecken sehen.",
+    "experiment": "Bewahre eine Scheibe Brot in einem verschlossenen Beutel an einem dunklen Ort auf und eine andere im Kühlschrank. Beobachte eine Woche lang, welche zuerst schimmelt (den Beutel nach Schimmelbefall nicht öffnen oder daran riechen)."
+  },
+  {
+    "id": "cebola-lagrimas",
+    "emoji": "🧅",
+    "question": "Warum lässt uns Zwiebel weinen?",
+    "quickAnswer": "Beim Schneiden einer Zwiebel wird ein Gas freigesetzt, das die Augen reizt, und der Körper produziert automatisch Tränen, um es abzuwaschen und die Augen zu schützen.",
+    "moreAnswer": "In den Zellen der Zwiebel gibt es Stoffe, die sich beim Schneiden vermischen und ein reizendes Gas bilden, das zu den Augen aufsteigt. Berührt es die feuchte Oberfläche der Augen, verwandelt sich dieses Gas in eine Art milde Säure, die empfindliche Nerven reizt. Das Gehirn reagiert sofort, indem es mehr Tränen produzieren lässt, um den Reizstoff zu verdünnen und wegzuspülen.",
+    "experiment": "Versuch, eine Zwiebel in der Nähe von fließendem Wasser zu schneiden, oder nachdem sie ein paar Minuten im Kühlschrank war, und schau, ob du weniger weinst."
+  },
+  {
+    "id": "estrelas-nao-caem",
+    "emoji": "🌌",
+    "question": "Warum fallen Sterne nicht vom Himmel?",
+    "quickAnswer": "Sterne fallen nicht, weil sie extrem weit entfernt sind und sich jeder von ihnen im Weltraum bewegt, ohne wirklich am Himmel „festzukleben“, wie es scheint.",
+    "moreAnswer": "Von der Erde aus gesehen wirken Sterne wie an einer großen dunklen Decke befestigt, aber tatsächlich sind sie in gewaltigen, in Lichtjahren gemessenen Entfernungen und bewegen sich ständig mit hoher Geschwindigkeit durch den Weltraum. Was wir manchmal „fallen“ sehen, sind Sternschnuppen, die gar keine echten Sterne sind, sondern kleine Gesteins- oder Staubstücke, die in die Erdatmosphäre eintreten und verglühen, wobei sie einen Lichtstreifen erzeugen.",
+    "experiment": "Beobachte an einer klaren Nacht dieselbe Sterngruppe im Abstand von zwei Wochen – du wirst sehen, dass sie fast am gleichen Fleck bleibt, weil sie zu weit weg ist, als dass wir die Bewegung bemerken könnten."
+  },
+  {
+    "id": "sol-quente",
+    "emoji": "☀️",
+    "question": "Warum ist die Sonne so heiß?",
+    "quickAnswer": "Die Sonne ist eine riesige Gaskugel, in deren Kern ständig Kernreaktionen stattfinden, die eine gigantische Menge Energie als Wärme und Licht freisetzen.",
+    "moreAnswer": "Im Zentrum der Sonne sind Druck und Temperatur so hoch, dass Wasserstoffatome miteinander verschmelzen und Helium bilden, ein Vorgang namens Kernfusion. Jedes Mal, wenn das passiert, wird eine riesige Menge Energie frei. Diese Energie braucht Tausende von Jahren, um vom Kern zur Sonnenoberfläche zu wandern, und dann nur etwa 8 Minuten, um die Erde zu erreichen, wo wir ihre Wärme spüren.",
+    "experiment": null
+  },
+  {
+    "id": "terra-gira",
+    "emoji": "🌐",
+    "question": "Warum dreht sich die Erde?",
+    "quickAnswer": "Die Erde dreht sich, weil sie seit ihrer Entstehung vor Milliarden von Jahren die Drehbewegung beibehalten hat, die sie schon bei ihrer Entstehung hatte, und im Weltraum nichts sie bremst.",
+    "moreAnswer": "Vor langer Zeit entstand das Sonnensystem aus einer riesigen, sich drehenden Wolke aus Gas und Staub. Als sich die Erde in dieser Wolke bildete, erbte sie einen Teil dieser Drehbewegung. Im Weltraum gibt es weder Luft noch Reibung, die die Bewegung bremsen könnten, daher dreht sich die Erde ununterbrochen um sich selbst und macht alle 24 Stunden eine volle Umdrehung – das erzeugt Tag und Nacht.",
+    "experiment": null
+  },
+  {
+    "id": "sal-derrete-gelo",
+    "emoji": "🧂",
+    "question": "Warum schmilzt Salz Eis?",
+    "quickAnswer": "Salz senkt die Temperatur, bei der Wasser gefriert, daher beginnt Eis, wenn Salz darauf gestreut wird, sogar bei Temperaturen unter null zu schmelzen.",
+    "moreAnswer": "Reines Wasser gefriert bei 0 °C, aber wenn wir Salz ins Wasser mischen, wird es schwieriger für geordnete Eiskristalle, sich zu bilden, und die Gefriertemperatur sinkt. Streut man Salz auf eine vereiste Straße, vermischt es sich mit der dünnen Schicht flüssigen Wassers, die immer auf der Eisoberfläche vorhanden ist, senkt deren Gefrierpunkt und lässt das Eis leichter schmelzen, selbst an kalten Tagen.",
+    "experiment": "Fülle zwei Becher mit Eiswürfeln. Streue nur in einen davon Salz und schau, welcher zuerst schmilzt."
+  },
+  {
+    "id": "plantas-verdes",
+    "emoji": "🌱",
+    "question": "Warum sind Pflanzen grün?",
+    "quickAnswer": "Pflanzen sind grün, weil ihre Blätter Chlorophyll enthalten, einen Stoff, der rotes und blaues Sonnenlicht absorbiert, aber grünes Licht reflektiert, das unsere Augen sehen.",
+    "moreAnswer": "Chlorophyll ist wesentlich für die Fotosynthese, den Vorgang, bei dem Pflanzen Sonnenlicht, Wasser und Kohlendioxid nutzen, um ihre eigene Nahrung (Zucker) herzustellen und Sauerstoff freizusetzen. Chlorophyll absorbiert die roten und blauen Farben des Sonnenlichts sehr gut, um diese Energie zu nutzen, aber grün wird kaum absorbiert – dieses Licht wird zu unseren Augen zurückgeworfen, weshalb wir Pflanzen grün sehen.",
+    "experiment": "Beobachte im Herbst, wie manche Blätter von Grün zu Gelb oder Orange wechseln – das passiert, weil das Chlorophyll abgebaut wird und andere Farben, die schon da waren, sichtbar werden."
+  },
+  {
+    "id": "gatos-caem-de-pe",
+    "emoji": "🐈",
+    "question": "Warum landen Katzen immer auf den Pfoten?",
+    "quickAnswer": "Katzen haben einen sehr feinen Gleichgewichtssinn im Innenohr und eine extrem flexible Wirbelsäule, wodurch sie ihren Körper in der Luft drehen und mit den Pfoten zuerst landen können.",
+    "moreAnswer": "Wenn eine Katze zu fallen beginnt, erkennen Sensoren im Innenohr sofort, dass sie kopfüber ist. Die Katze dreht dank ihrer sehr flexiblen Wirbelsäule zuerst den Vorderkörper, dann den Hinterkörper, ohne sich an irgendetwas abstoßen zu müssen – das nennt man den „Aufrichtreflex“. Sie spreizen auch die Beine wie einen Fallschirm, um den Fall zu bremsen. Trotzdem kann ein Sturz aus jeder Höhe eine Katze verletzen, daher ist es nicht sicher, das absichtlich zu testen.",
+    "experiment": null
   }
 ]

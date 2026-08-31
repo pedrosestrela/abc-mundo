@@ -285,5 +285,157 @@
       "dormir",
       "bocejo"
     ]
+  },
+  {
+    "id": "trovao-relampago",
+    "emoji": "⛈️",
+    "question": "Why do we see lightning before hearing thunder?",
+    "quickAnswer": "Light travels much faster than sound, so we see the lightning flash almost instantly, but the sound of thunder takes a bit longer to reach us.",
+    "moreAnswer": "Light travels at about 300,000 kilometers per second, while sound travels at only 340 meters per second — much, much slower. The lightning and thunder happen at exactly the same time, but since light arrives almost instantly and sound takes longer, we see it first and hear it after. The more time that passes between the two, the farther away the storm is.",
+    "experiment": "During the next thunderstorm (from a safe distance), count the seconds between the lightning and the thunder. Every 3 seconds equals about 1 kilometer of distance."
+  },
+  {
+    "id": "neve-branca",
+    "emoji": "❄️",
+    "question": "Why is snow white?",
+    "quickAnswer": "Snow is made of many tiny transparent ice crystals that reflect light in all directions, and that mix of all colors looks white to our eyes.",
+    "moreAnswer": "Each snowflake is actually as transparent as a regular ice crystal. But snow is made of millions of tiny crystals, full of small surfaces and air spaces. When sunlight hits these crystals, it bounces off in every direction and comes back out without being absorbed. Since white light contains all colors, and they all come out mixed together, we see snow as white.",
+    "experiment": "Look at a whole (transparent) ice cube, then a cup full of crushed ice — notice how it looks whiter the more crushed it is."
+  },
+  {
+    "id": "terramotos",
+    "emoji": "🌍",
+    "question": "Why do earthquakes happen?",
+    "quickAnswer": "Earth's surface is made of huge rock plates that move very slowly, and when they suddenly slip or collide, we feel that as an earthquake.",
+    "moreAnswer": "Earth's crust is divided into giant tectonic plates that float slowly over a hotter, softer layer below. The edges of these plates sometimes get stuck against each other, and tension builds up until they suddenly slip with great force. This sudden release of energy makes the ground shake — that's the earthquake. Most of them happen near the boundaries between plates.",
+    "experiment": null
+  },
+  {
+    "id": "vulcoes",
+    "emoji": "🌋",
+    "question": "Why do volcanoes erupt?",
+    "quickAnswer": "Deep underground there's rock so hot it's melted, called magma; when the gas pressure inside it gets too high, the magma rises and bursts out at the surface.",
+    "moreAnswer": "Inside the Earth it's so hot that some rock melts, forming magma, which is lighter than the solid rock around it and so tends to rise. Magma has dissolved gases in it, like a sealed soda bottle. As the magma rises and pressure drops, the gases suddenly expand, and if they can't escape slowly, the explosion pushes the magma out through the crater — that's the eruption. Lava is that same magma once it reaches the surface.",
+    "experiment": null
+  },
+  {
+    "id": "mares-oceano",
+    "emoji": "🌊",
+    "question": "Why does the ocean have tides?",
+    "quickAnswer": "Tides are mainly caused by the Moon's gravity, which pulls on the ocean water, making it rise and fall twice a day.",
+    "moreAnswer": "The Moon exerts a pulling force on everything on Earth, including ocean water, tugging it slightly toward itself and creating a high tide on the side of Earth closest to the Moon. At the same time, another high tide forms on the opposite side, because of Earth's rotation. The Sun also affects tides, though less than the Moon, and when the two line up, tides become even stronger.",
+    "experiment": null
+  },
+  {
+    "id": "estacoes-do-ano",
+    "emoji": "🍂",
+    "question": "Why do we have seasons?",
+    "quickAnswer": "We have seasons because Earth is slightly tilted as it travels around the Sun, causing each hemisphere to get more or less sunlight throughout the year.",
+    "moreAnswer": "Earth's axis is tilted about 23 degrees, and it keeps this tilt as it orbits the Sun over a year. During part of the orbit, the northern hemisphere faces more toward the Sun and gets more light and heat — it's summer there, while it's winter in the southern hemisphere. Six months later, it's the other way around. It's not the distance to the Sun that changes the seasons, it's the angle at which the light arrives.",
+    "experiment": null
+  },
+  {
+    "id": "ima-atrai",
+    "emoji": "🧲",
+    "question": "Why do magnets attract metal?",
+    "quickAnswer": "Magnets create an invisible magnetic field that can line up the tiny natural magnets inside certain metals, like iron, pulling them toward it.",
+    "moreAnswer": "Inside metals like iron, there are microscopic areas called magnetic domains, which act like tiny magnets pointing in different directions. When a magnet comes close, its magnetic field makes those domains line up in the same direction, temporarily turning the metal into another magnet that gets pulled in. Not all metals react this way — aluminum or copper, for example, aren't attracted by magnets.",
+    "experiment": "Pass a magnet over several metal objects at home (coins, paperclips, spoons) and note which ones are attracted and which aren't."
+  },
+  {
+    "id": "bolhas-sabao",
+    "emoji": "🫧",
+    "question": "Why are soap bubbles round?",
+    "quickAnswer": "Soap bubbles are round because water always tries to take up the smallest possible surface for a certain amount of air, and a sphere is the shape that achieves that.",
+    "moreAnswer": "Water has a property called surface tension, which makes the molecules on the surface pull toward each other, like a stretched elastic skin. Soap helps this thin film of water stretch even further without popping. Of all possible shapes, a sphere is the one that encloses a given volume of air using the least amount of surface, so that's the shape a bubble naturally settles into.",
+    "experiment": "Blow soap bubbles with a straw or a hoop and notice how they're always round, even if the shape of the hoop you use is different."
+  },
+  {
+    "id": "espelho-inverte",
+    "emoji": "🪞",
+    "question": "Why do mirrors flip images?",
+    "quickAnswer": "A mirror doesn't swap left for right — it swaps front for back. That backward flip is what makes it look like left and right changed.",
+    "moreAnswer": "When you look in a mirror, the light coming off you hits the surface and bounces back exactly the way it came, like a ball bouncing off a wall. This reverses depth: what was close to the mirror stays close, but front and back swap places. Since we usually turn around a vertical axis to look at ourselves in a mirror (instead of leaning over), our mind interprets that swap as left-right, but it's really front-back.",
+    "experiment": "Write the word \"LOVE\" on paper and look at it in a mirror — notice how the letters flip, but the word stays horizontal."
+  },
+  {
+    "id": "fogo-arde",
+    "emoji": "🔥",
+    "question": "Why does fire burn and give off light?",
+    "quickAnswer": "Fire is a chemical reaction called combustion, in which a material combines quickly with oxygen from the air, releasing heat and light.",
+    "moreAnswer": "For fire to exist, three things are needed: fuel (like wood or gas), oxygen, and enough heat to start the reaction. When these three things come together, the fuel's molecules break apart and recombine with oxygen, releasing a lot of energy at once, in the form of heat and light. The flames we see are very hot gases glowing during that reaction.",
+    "experiment": null
+  },
+  {
+    "id": "ferrugem-metal",
+    "emoji": "🔩",
+    "question": "Why does metal rust?",
+    "quickAnswer": "Iron rusts when it reacts with oxygen in the air in the presence of water, forming a new reddish, crumbly substance called iron oxide.",
+    "moreAnswer": "When iron is in contact with both water and air, a slow chemical reaction begins: iron atoms combine with oxygen, forming iron oxide, better known as rust. Unlike the original iron, which is strong, rust is weak and crumbles easily, so rusted objects gradually lose strength. That's why metal objects are painted or varnished, to protect them from air and water.",
+    "experiment": "Put an iron nail in a cup with a bit of water and another dry nail in a different cup. Watch over a few days to see which one rusts first."
+  },
+  {
+    "id": "pao-mofo",
+    "emoji": "🍞",
+    "question": "Why does bread grow mold?",
+    "quickAnswer": "Mold is a fungus whose spores are always floating in the air; when they land on warm, damp bread, they find perfect conditions to grow and form green or black patches.",
+    "moreAnswer": "The air around us is full of fungal spores, so tiny we can't see them. When they land on the surface of bread, if there's moisture and a warm temperature, they start to germinate and spread very thin threads through the bread, feeding on its sugars and starches. After a few days, structures form that produce new spores, which we see as the colored mold patches.",
+    "experiment": "Store a slice of bread in a closed bag in a dark spot and another in the fridge. Watch over a week to see which grows mold first (don't open or smell the bag once mold appears)."
+  },
+  {
+    "id": "cebola-lagrimas",
+    "emoji": "🧅",
+    "question": "Why does onion make us cry?",
+    "quickAnswer": "Cutting an onion releases a gas that irritates the eyes, and the body automatically produces tears to try to wash it away and protect them.",
+    "moreAnswer": "Inside onion cells there are substances that, when the onion is cut, mix together and form an irritating gas that rises up toward the eyes. When it touches the moist surface of the eyes, this gas turns into a kind of mild acid, which irritates sensitive nerves. The brain responds right away by ordering more tears to dilute and wash away the irritant.",
+    "experiment": "Try cutting an onion near running water, or after putting it in the fridge for a few minutes, and see if you cry less."
+  },
+  {
+    "id": "estrelas-nao-caem",
+    "emoji": "🌌",
+    "question": "Why don't stars fall from the sky?",
+    "quickAnswer": "Stars don't fall because they're extremely far away and each one moves through space, without being \"stuck\" to the sky like they appear to be.",
+    "moreAnswer": "Seen from Earth, stars seem fixed on a big dark ceiling, but in reality they're at enormous distances, measured in light-years, and constantly moving through space at great speed. What we sometimes see \"falling\" are shooting stars, which aren't real stars at all, but small bits of rock or dust that enter Earth's atmosphere and burn up, creating a streak of light.",
+    "experiment": "On a clear night, look at the same group of stars two weeks apart — you'll see they're still in almost the same spot, because they're too far away for us to notice their movement."
+  },
+  {
+    "id": "sol-quente",
+    "emoji": "☀️",
+    "question": "Why is the Sun so hot?",
+    "quickAnswer": "The Sun is a huge ball of gas where constant nuclear reactions happen in its core, releasing a gigantic amount of energy as heat and light.",
+    "moreAnswer": "At the Sun's center, pressure and temperature are so high that hydrogen atoms fuse together, forming helium, in a process called nuclear fusion. Every time this happens, a huge amount of energy is released. That energy takes thousands of years to travel from the core to the Sun's surface, and then only about 8 minutes to reach Earth, where we feel its heat.",
+    "experiment": null
+  },
+  {
+    "id": "terra-gira",
+    "emoji": "🌐",
+    "question": "Why does the Earth spin?",
+    "quickAnswer": "The Earth spins because, since it formed billions of years ago, it kept rotating with the motion it already had when it took shape, and in space there's nothing to stop it.",
+    "moreAnswer": "A long time ago, the Solar System formed out of a huge spinning cloud of gas and dust. When Earth formed inside that cloud, it inherited part of that spinning motion. In space, there's no air or friction to slow the motion down, so Earth keeps spinning on its own without stopping, making one full turn every 24 hours — that's what creates day and night.",
+    "experiment": null
+  },
+  {
+    "id": "sal-derrete-gelo",
+    "emoji": "🧂",
+    "question": "Why does salt melt ice?",
+    "quickAnswer": "Salt lowers the temperature at which water freezes, so when it's spread on ice, the ice starts melting even at temperatures below zero.",
+    "moreAnswer": "Pure water freezes at 0°C, but when we mix salt into water, it becomes harder for organized ice crystals to form, and the freezing temperature drops. When salt is spread on an icy road, it mixes with the thin layer of liquid water that's always present on the surface of ice, lowering that water's freezing point and making the ice melt more easily, even on cold days.",
+    "experiment": "Fill two cups with ice cubes. Sprinkle salt on only one of them and see which melts faster."
+  },
+  {
+    "id": "plantas-verdes",
+    "emoji": "🌱",
+    "question": "Why are plants green?",
+    "quickAnswer": "Plants are green because their leaves have chlorophyll, a substance that absorbs the red and blue light from the Sun, but reflects green light, which is what our eyes see.",
+    "moreAnswer": "Chlorophyll is essential for photosynthesis, the process by which plants use sunlight, water, and carbon dioxide to make their own food (sugar) and release oxygen. Chlorophyll absorbs the red and blue colors of sunlight very well to use that energy, but it barely absorbs green — that light is reflected back to our eyes, which is why we see plants as green.",
+    "experiment": "In autumn, watch how some leaves change from green to yellow or orange — that happens because the chlorophyll breaks down and other colors that were already there become visible."
+  },
+  {
+    "id": "gatos-caem-de-pe",
+    "emoji": "🐈",
+    "question": "Why do cats always land on their feet?",
+    "quickAnswer": "Cats have a very sharp sense of balance in their inner ear and an extremely flexible spine, which lets them twist their body in the air and land paws-first.",
+    "moreAnswer": "When a cat starts to fall, sensors in its inner ear immediately detect that it's upside down. The cat uses this to twist the front of its body first, then the back, thanks to its very flexible spine, without needing anything to push off of — this is called the \"righting reflex.\" They also spread their legs out like a parachute to slow the fall. Even so, a fall from any height can hurt a cat, so it's not safe to test this on purpose.",
+    "experiment": null
   }
 ]

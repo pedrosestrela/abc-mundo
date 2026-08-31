@@ -285,5 +285,157 @@
       "dormir",
       "bocejo"
     ]
+  },
+  {
+    "id": "trovao-relampago",
+    "emoji": "⛈️",
+    "question": "¿Por qué vemos el relámpago antes de oír el trueno?",
+    "quickAnswer": "La luz viaja mucho más rápido que el sonido, así que vemos el destello del relámpago casi al instante, pero el sonido del trueno tarda un poco más en llegar.",
+    "moreAnswer": "La luz viaja a unos 300.000 kilómetros por segundo, mientras que el sonido viaja a solo 340 metros por segundo, mucho más lento. El relámpago y el trueno ocurren exactamente al mismo tiempo, pero como la luz llega casi al instante y el sonido tarda, vemos primero y oímos después. Cuanto más tiempo pasa entre ambos, más lejos está la tormenta.",
+    "experiment": "En la próxima tormenta (a una distancia segura), cuenta los segundos entre el relámpago y el trueno. Cada 3 segundos equivalen a aproximadamente 1 kilómetro de distancia."
+  },
+  {
+    "id": "neve-branca",
+    "emoji": "❄️",
+    "question": "¿Por qué la nieve es blanca?",
+    "quickAnswer": "La nieve está formada por muchísimos cristales de hielo transparentes que reflejan la luz en todas las direcciones, y esa mezcla de todos los colores parece blanca a nuestros ojos.",
+    "moreAnswer": "Cada copo de nieve es en realidad tan transparente como un cristal de hielo común. Pero la nieve está formada por millones de cristales diminutos, llenos de pequeñas superficies y espacios de aire. Cuando la luz del sol golpea esos cristales, rebota en todas direcciones y sale de nuevo sin ser absorbida. Como la luz blanca contiene todos los colores, y todos salen mezclados, vemos la nieve como blanca.",
+    "experiment": "Observa un cubito de hielo entero (transparente) y luego un vaso lleno de hielo triturado: fíjate en cómo se ve más blanco cuanto más triturado está."
+  },
+  {
+    "id": "terramotos",
+    "emoji": "🌍",
+    "question": "¿Por qué ocurren los terremotos?",
+    "quickAnswer": "La superficie de la Tierra está hecha de enormes placas de roca que se mueven muy despacio, y cuando resbalan o chocan de repente, lo sentimos como un terremoto.",
+    "moreAnswer": "La corteza terrestre está dividida en gigantescas placas tectónicas que flotan lentamente sobre una capa más caliente y blanda debajo. Los bordes de estas placas a veces quedan atascados entre sí, y la tensión se va acumulando hasta que, de repente, resbalan con fuerza. Esa liberación súbita de energía hace temblar el suelo: es el terremoto. La mayoría ocurre cerca de los límites entre placas.",
+    "experiment": null
+  },
+  {
+    "id": "vulcoes",
+    "emoji": "🌋",
+    "question": "¿Por qué entran en erupción los volcanes?",
+    "quickAnswer": "Bajo la Tierra hay roca tan caliente que está derretida, llamada magma; cuando la presión del gas dentro de ella se vuelve muy grande, el magma sube y estalla en la superficie.",
+    "moreAnswer": "En el interior de la Tierra hace tanto calor que parte de la roca se derrite, formando magma, que es más ligero que la roca sólida a su alrededor y por eso tiende a subir. Dentro del magma hay gases disueltos, como en una botella de refresco cerrada. Cuando el magma sube y la presión baja, los gases se expanden de repente, y si no pueden escapar despacio, la explosión empuja el magma hacia afuera por el cráter: es la erupción. La lava es ese mismo magma al llegar a la superficie.",
+    "experiment": null
+  },
+  {
+    "id": "mares-oceano",
+    "emoji": "🌊",
+    "question": "¿Por qué hay mareas en el océano?",
+    "quickAnswer": "Las mareas son causadas principalmente por la fuerza de gravedad de la Luna, que tira del agua de los océanos, haciéndola subir y bajar dos veces al día.",
+    "moreAnswer": "La Luna ejerce una fuerza de atracción sobre todo en la Tierra, incluida el agua de los océanos, tirando de ella ligeramente hacia sí y creando una marea alta en el lado de la Tierra más cercano a la Luna. Al mismo tiempo, se forma otra marea alta en el lado opuesto, debido al movimiento de rotación de la Tierra. El Sol también influye en las mareas, aunque menos que la Luna, y cuando ambos se alinean, las mareas se vuelven aún más fuertes.",
+    "experiment": null
+  },
+  {
+    "id": "estacoes-do-ano",
+    "emoji": "🍂",
+    "question": "¿Por qué existen las estaciones del año?",
+    "quickAnswer": "Las estaciones existen porque la Tierra está ligeramente inclinada mientras viaja alrededor del Sol, haciendo que cada hemisferio reciba más o menos luz solar a lo largo del año.",
+    "moreAnswer": "El eje de la Tierra está inclinado unos 23 grados, y mantiene esa inclinación mientras orbita alrededor del Sol durante un año. Durante una parte de la órbita, el hemisferio norte queda más orientado hacia el Sol y recibe más luz y calor: allí es verano, mientras que en el hemisferio sur es invierno. Seis meses después, la situación se invierte. No es la distancia al Sol lo que cambia las estaciones, es el ángulo en que llega la luz.",
+    "experiment": null
+  },
+  {
+    "id": "ima-atrai",
+    "emoji": "🧲",
+    "question": "¿Por qué los imanes atraen el metal?",
+    "quickAnswer": "Los imanes crean un campo magnético invisible que consigue alinear los pequeños imanes naturales dentro de ciertos metales, como el hierro, atrayéndolos hacia sí.",
+    "moreAnswer": "Dentro de metales como el hierro existen zonas microscópicas llamadas dominios magnéticos, que funcionan como pequeñísimos imanes apuntando en direcciones distintas. Cuando un imán se acerca, su campo magnético hace que esos dominios se alineen todos en la misma dirección, convirtiendo temporalmente el metal en otro imán que es atraído. No todos los metales reaccionan así: el aluminio o el cobre, por ejemplo, no son atraídos por los imanes.",
+    "experiment": "Pasa un imán sobre varios objetos de metal en casa (monedas, clips, cucharas) y anota cuáles son atraídos y cuáles no."
+  },
+  {
+    "id": "bolhas-sabao",
+    "emoji": "🫧",
+    "question": "¿Por qué las pompas de jabón son redondas?",
+    "quickAnswer": "Las pompas de jabón son redondas porque el agua siempre intenta ocupar la menor superficie posible para una cierta cantidad de aire, y la esfera es la forma que logra eso.",
+    "moreAnswer": "El agua tiene una propiedad llamada tensión superficial, que hace que las moléculas de la superficie se atraigan entre sí, como una piel elástica estirada. El jabón ayuda a que esta fina película de agua se estire aún más sin reventar. De todas las formas posibles, la esfera es la que envuelve un volumen determinado de aire usando la menor superficie, así que es hacia esa forma que la pompa tiende naturalmente.",
+    "experiment": "Haz pompas de jabón con una pajita o un aro y observa cómo siempre quedan redondas, aunque el aro que uses tenga otra forma."
+  },
+  {
+    "id": "espelho-inverte",
+    "emoji": "🪞",
+    "question": "¿Por qué el espejo invierte la imagen?",
+    "quickAnswer": "El espejo no intercambia la izquierda por la derecha, intercambia el frente por la espalda. Esa inversión hacia atrás es la que hace parecer que la izquierda y la derecha cambiaron.",
+    "moreAnswer": "Cuando te miras en un espejo, la luz que sale de ti golpea la superficie y regresa exactamente en la dirección de donde vino, como una pelota que rebota en una pared. Esto invierte la profundidad: lo que estaba más cerca del espejo sigue cerca, pero el frente y el fondo intercambian posición. Como solemos girar alrededor de un eje vertical para mirarnos al espejo (en vez de inclinarnos), nuestra mente interpreta ese cambio como izquierda-derecha, pero en realidad es frente-fondo.",
+    "experiment": "Escribe la palabra \"AMOR\" en un papel y mírala en el espejo: fíjate en cómo las letras se invierten, pero la palabra sigue en horizontal."
+  },
+  {
+    "id": "fogo-arde",
+    "emoji": "🔥",
+    "question": "¿Por qué el fuego arde y da luz?",
+    "quickAnswer": "El fuego es una reacción química llamada combustión, en la que un material se combina rápidamente con el oxígeno del aire, liberando calor y luz.",
+    "moreAnswer": "Para que haya fuego se necesitan tres cosas: combustible (como madera o gas), oxígeno y suficiente calor para iniciar la reacción. Cuando estas tres cosas se juntan, las moléculas del combustible se rompen y se recombinan con el oxígeno, liberando mucha energía de golpe, en forma de calor y luz. Las llamas que vemos son gases muy calientes que brillan durante esa reacción.",
+    "experiment": null
+  },
+  {
+    "id": "ferrugem-metal",
+    "emoji": "🔩",
+    "question": "¿Por qué se oxida el metal?",
+    "quickAnswer": "El hierro se oxida cuando reacciona con el oxígeno del aire en presencia de agua, formando una nueva sustancia rojiza y quebradiza llamada óxido de hierro.",
+    "moreAnswer": "Cuando el hierro está en contacto con agua y aire al mismo tiempo, comienza una reacción química lenta: los átomos de hierro se combinan con el oxígeno, formando óxido de hierro, más conocido como óxido u herrumbre. A diferencia del hierro original, que es fuerte, el óxido es débil y se desmorona fácilmente, por lo que los objetos oxidados van perdiendo resistencia. Por eso se pintan o barnizan los objetos de metal, para protegerlos del aire y del agua.",
+    "experiment": "Pon un clavo de hierro en un vaso con un poco de agua y otro clavo seco en otro vaso. Observa durante unos días cuál se oxida primero."
+  },
+  {
+    "id": "pao-mofo",
+    "emoji": "🍞",
+    "question": "¿Por qué el pan cría moho?",
+    "quickAnswer": "El moho es un hongo cuyas esporas siempre están en el aire; cuando se posan en un pan húmedo y cálido, encuentran condiciones perfectas para crecer y formar las manchas verdes o negras.",
+    "moreAnswer": "El aire que nos rodea está lleno de esporas de hongos, tan pequeñas que no podemos verlas. Cuando se posan en la superficie de un pan, si hay humedad y una temperatura templada, empiezan a germinar y a extender filamentos finísimos por dentro del pan, alimentándose de sus azúcares y almidones. Tras unos días, se forman estructuras que producen esporas nuevas, que vemos como las manchas coloridas de moho.",
+    "experiment": "Guarda una rebanada de pan en una bolsa cerrada en un lugar oscuro y otra en el refrigerador. Observa durante una semana cuál cría moho primero (no abras ni huelas la bolsa después de que aparezca moho)."
+  },
+  {
+    "id": "cebola-lagrimas",
+    "emoji": "🧅",
+    "question": "¿Por qué la cebolla nos hace llorar?",
+    "quickAnswer": "Al cortar una cebolla se libera un gas que irrita los ojos, y el cuerpo produce lágrimas automáticamente para intentar lavarlo y proteger los ojos.",
+    "moreAnswer": "Dentro de las células de la cebolla hay sustancias que, al cortar la cebolla, se mezclan y forman un gas irritante que sube hasta los ojos. Al tocar la superficie húmeda de los ojos, ese gas se transforma en una especie de ácido suave, que irrita los nervios sensibles. El cerebro responde de inmediato haciendo producir más lágrimas para diluir y lavar ese irritante.",
+    "experiment": "Prueba a cortar una cebolla cerca de agua corriendo, o después de meterla unos minutos en el refrigerador, y comprueba si lloras menos."
+  },
+  {
+    "id": "estrelas-nao-caem",
+    "emoji": "🌌",
+    "question": "¿Por qué las estrellas no caen del cielo?",
+    "quickAnswer": "Las estrellas no caen porque están extremadamente lejos y cada una se mueve por el espacio, sin estar realmente \"pegadas\" al cielo como parece.",
+    "moreAnswer": "Vistas desde la Tierra, las estrellas parecen fijas en un gran techo oscuro, pero en realidad están a distancias enormes, medidas en años luz, y se mueven constantemente por el espacio a gran velocidad. Lo que a veces vemos \"caer\" son estrellas fugaces, que no son estrellas de verdad, sino pequeños trozos de roca o polvo que entran en la atmósfera terrestre y arden, creando una estela de luz.",
+    "experiment": "En una noche despejada, observa el mismo grupo de estrellas con dos semanas de diferencia: verás que sigue casi en el mismo lugar, porque está demasiado lejos para notar su movimiento."
+  },
+  {
+    "id": "sol-quente",
+    "emoji": "☀️",
+    "question": "¿Por qué el Sol es tan caliente?",
+    "quickAnswer": "El Sol es una enorme bola de gas donde suceden reacciones nucleares constantes en su núcleo, liberando una cantidad gigantesca de energía en forma de calor y luz.",
+    "moreAnswer": "En el centro del Sol, la presión y la temperatura son tan altas que los átomos de hidrógeno se fusionan entre sí, formando helio, en un proceso llamado fusión nuclear. Cada vez que esto ocurre, se libera una cantidad enorme de energía. Esa energía tarda miles de años en viajar desde el núcleo hasta la superficie del Sol, y luego solo unos 8 minutos en llegar a la Tierra, donde sentimos su calor.",
+    "experiment": null
+  },
+  {
+    "id": "terra-gira",
+    "emoji": "🌐",
+    "question": "¿Por qué gira la Tierra?",
+    "quickAnswer": "La Tierra gira porque, desde su formación hace miles de millones de años, siguió rotando con el movimiento que ya tenía al formarse, y en el espacio no hay nada que la frene.",
+    "moreAnswer": "Hace mucho tiempo, el Sistema Solar se formó a partir de una enorme nube de gas y polvo en rotación. Cuando la Tierra se formó dentro de esa nube, heredó parte de ese movimiento giratorio. En el espacio no hay aire ni fricción que frenen el movimiento, así que la Tierra sigue girando sobre sí misma sin parar, dando una vuelta completa cada 24 horas: eso es lo que crea el día y la noche.",
+    "experiment": null
+  },
+  {
+    "id": "sal-derrete-gelo",
+    "emoji": "🧂",
+    "question": "¿Por qué la sal derrite el hielo?",
+    "quickAnswer": "La sal baja la temperatura a la que el agua se congela, así que, al esparcirla sobre el hielo, este empieza a derretirse incluso con temperaturas bajo cero.",
+    "moreAnswer": "El agua pura se congela a 0°C, pero cuando mezclamos sal en el agua, dificultamos la formación de cristales de hielo organizados, y la temperatura de congelación baja. Cuando se esparce sal sobre una carretera helada, se mezcla con la fina capa de agua líquida que siempre existe en la superficie del hielo, bajando el punto de congelación de esa agua y haciendo que el hielo se derrita más fácilmente, incluso en días fríos.",
+    "experiment": "Llena dos vasos con cubitos de hielo. Echa sal solo en uno de ellos y observa cuál se derrite más rápido."
+  },
+  {
+    "id": "plantas-verdes",
+    "emoji": "🌱",
+    "question": "¿Por qué son verdes las plantas?",
+    "quickAnswer": "Las plantas son verdes porque sus hojas tienen clorofila, una sustancia que absorbe la luz roja y azul del Sol, pero refleja la luz verde, que es la que ven nuestros ojos.",
+    "moreAnswer": "La clorofila es esencial para la fotosíntesis, el proceso mediante el cual las plantas usan la luz del sol, el agua y el dióxido de carbono para producir su propio alimento (azúcar) y liberar oxígeno. La clorofila absorbe muy bien los colores rojo y azul de la luz solar para usar esa energía, pero apenas absorbe el verde: esa luz se refleja de vuelta a nuestros ojos, y por eso vemos las plantas verdes.",
+    "experiment": "En otoño, observa cómo algunas hojas cambian de verde a amarillo o naranja: esto ocurre porque la clorofila se descompone y otros colores que ya estaban ahí se vuelven visibles."
+  },
+  {
+    "id": "gatos-caem-de-pe",
+    "emoji": "🐈",
+    "question": "¿Por qué los gatos siempre caen de pie?",
+    "quickAnswer": "Los gatos tienen un sentido del equilibrio muy preciso en el oído interno y una columna extremadamente flexible, lo que les permite girar el cuerpo en el aire y aterrizar con las patas primero.",
+    "moreAnswer": "Cuando un gato empieza a caer, sensores en el oído interno detectan de inmediato que está boca abajo. El gato usa eso para girar primero la parte delantera del cuerpo y luego la trasera, aprovechando su columna vertebral muy flexible, sin necesitar ningún punto de apoyo: a esto se le llama \"reflejo de enderezamiento\". También estiran las patas como un paracaídas para frenar la caída. Aun así, una caída desde cualquier altura puede lastimar a un gato, así que no es seguro probar esto a propósito.",
+    "experiment": null
   }
 ]
