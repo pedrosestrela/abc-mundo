@@ -1,0 +1,111 @@
+[
+  {
+    "id": "papel",
+    "icon": "📄",
+    "name": "Carta",
+    "prompt": "📄 Da dove viene la carta di questo quaderno?",
+    "steps": [
+      "1. Alberi a crescita rapida (come l'eucalipto) vengono tagliati in foreste gestite apposta.",
+      "2. I tronchi arrivano in una fabbrica e vengono trasformati in piccoli trucioli di legno.",
+      "3. I trucioli vengono cotti con acqua e sostanze chimiche fino a formare una poltiglia di fibre, la pasta di cellulosa.",
+      "4. La pasta viene stesa su enormi macchine, pressata e asciugata in fogli sottili e continui.",
+      "5. La carta viene tagliata, imballata e inviata a negozi, scuole e uffici."
+    ]
+  },
+  {
+    "id": "roupa",
+    "icon": "👕",
+    "name": "Vestiti",
+    "prompt": "👕 Come nasce una semplice maglietta di cotone?",
+    "steps": [
+      "1. Il cotone cresce nei campi, dentro piccole capsule bianche e soffici.",
+      "2. Le capsule vengono raccolte e le fibre di cotone separate dai semi.",
+      "3. Le fibre vengono filate in fili lunghi e resistenti.",
+      "4. I fili vengono tessuti in grandi rotoli di tessuto in una fabbrica tessile.",
+      "5. Il tessuto viene tagliato e cucito, diventando una maglietta.",
+      "6. I vestiti vengono etichettati, imballati e inviati ai negozi."
+    ]
+  },
+  {
+    "id": "chocolate",
+    "icon": "🍫",
+    "name": "Cioccolato",
+    "prompt": "🍫 Da dove viene il cioccolato che ti piace tanto?",
+    "steps": [
+      "1. Il cacao cresce su alberi tropicali, dentro grandi baccelli colorati.",
+      "2. I baccelli vengono aperti e i semi di cacao fermentano per alcuni giorni, guadagnando sapore.",
+      "3. I semi si seccano al sole e poi vengono tostati, proprio come il caffè.",
+      "4. Vengono macinati fino a diventare una pasta, a cui si aggiunge zucchero e, a volte, latte.",
+      "5. La miscela viene temperata e modellata in tavolette o gocce di cioccolato.",
+      "6. Il cioccolato viene imballato e viaggia verso negozi in tutto il mondo."
+    ]
+  },
+  {
+    "id": "tijolo",
+    "icon": "🧱",
+    "name": "Mattone",
+    "prompt": "🧱 Come si trasforma l'argilla in un muro?",
+    "steps": [
+      "1. L'argilla viene estratta da una cava a cielo aperto.",
+      "2. Viene mescolata con acqua fino a formare un impasto morbido e modellabile.",
+      "3. L'impasto viene pressato in stampi a forma di mattone.",
+      "4. I mattoni si asciugano all'aria e poi entrano in un forno enorme, cuocendo ad altissime temperature.",
+      "5. Dopo la cottura e il raffreddamento, diventano duri e resistenti, pronti a costruire muri."
+    ]
+  },
+  {
+    "id": "vidro",
+    "icon": "🪟",
+    "name": "Vetro",
+    "prompt": "🪟 Di cosa è fatta una finestra trasparente?",
+    "steps": [
+      "1. Sabbia di silice molto pura viene mescolata con soda e calcare.",
+      "2. La miscela viene riscaldata in un forno a oltre 1500°C, fino a sciogliersi in un liquido.",
+      "3. Il vetro fuso viene versato su uno strato di stagno liquido, per diventare perfettamente liscio.",
+      "4. Si raffredda lentamente, poco a poco, per non incrinarsi.",
+      "5. Viene tagliato nella misura giusta e trasformato in finestre, bicchieri o bottiglie."
+    ]
+  },
+  {
+    "id": "lapis",
+    "icon": "✏️",
+    "name": "Matita",
+    "prompt": "✏️ Come si fa una matita di grafite e legno?",
+    "steps": [
+      "1. La grafite in polvere viene mescolata con argilla e acqua, formando una pasta cotta fino a indurirsi in una mina sottile.",
+      "2. Assi di legno morbido (come il cedro) vengono tagliate con lunghe scanalature.",
+      "3. La mina di grafite viene posta dentro le scanalature.",
+      "4. Due assi vengono incollate insieme, con la mina in mezzo, formando un lungo blocco.",
+      "5. Una macchina taglia il blocco in matite singole, esagonali o rotonde.",
+      "6. Le matite vengono dipinte, stampate con il nome del marchio e temperate per la vendita."
+    ]
+  },
+  {
+    "id": "livro",
+    "icon": "📚",
+    "name": "Libro",
+    "prompt": "📚 Come arriva una storia sulle pagine di un libro? 🌳 albero → legno → pasta → carta → stampa → libro → biblioteca.",
+    "steps": [
+      "1. Un albero viene tagliato in una foresta gestita apposta.",
+      "2. Il legno viene trasformato in piccoli trucioli e poi in pasta di cellulosa.",
+      "3. La pasta viene essiccata e trasformata in fogli di carta.",
+      "4. Uno scrittore scrive la storia, e una tipografia stampa il testo e le immagini sulla carta.",
+      "5. I fogli stampati vengono tagliati, piegati e incollati o cuciti, formando il libro.",
+      "6. Il libro viaggia verso librerie e biblioteche, in attesa di un lettore."
+    ]
+  },
+  {
+    "id": "bicicleta",
+    "icon": "🚲",
+    "name": "Bicicletta",
+    "prompt": "🚲 Da dove vengono tutti i pezzi di una bicicletta?",
+    "steps": [
+      "1. Il minerale di ferro viene estratto dalla terra e trasformato in acciaio nelle acciaierie.",
+      "2. L'acciaio o l'alluminio viene modellato in tubi, che formano il telaio della bicicletta.",
+      "3. Fabbriche separate producono le ruote, i pneumatici in gomma, la catena e i freni.",
+      "4. Tutti i pezzi vanno verso una linea di montaggio.",
+      "5. Operai e robot assemblano telaio, ruote, sellino e manubrio, pezzo per pezzo.",
+      "6. La bicicletta viene testata, verniciata e inviata al negozio, pronta per pedalare."
+    ]
+  }
+]

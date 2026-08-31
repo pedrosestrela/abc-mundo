@@ -134,7 +134,10 @@ const GROUPS = [
       { to: "/solar-system", emoji: "🪐", nav: "solarSystem", sub: "sub_solarSystem" },
       { to: "/tech-history", emoji: "🚗", nav: "techHistory", sub: "sub_techHistory" },
       { to: "/city", emoji: "🏙️", nav: "city", sub: "sub_city" },
+      { to: "/how-made", emoji: "🏭", nav: "howMade", sub: "sub_howMade" },
       { to: "/nature-diary", emoji: "📔", nav: "natureDiary", sub: "sub_natureDiary" },
+      { to: "/senses", emoji: "🖐️", nav: "senses", sub: "sub_senses" },
+      { to: "/teardown", emoji: "🔍", nav: "teardown", sub: "sub_teardown" },
     ],
   },
   {

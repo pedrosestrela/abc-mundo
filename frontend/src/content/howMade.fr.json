@@ -1,0 +1,111 @@
+[
+  {
+    "id": "papel",
+    "icon": "📄",
+    "name": "Papier",
+    "prompt": "📄 D'où vient le papier de ce cahier ?",
+    "steps": [
+      "1. Des arbres à croissance rapide (comme l'eucalyptus) sont coupés dans des forêts gérées pour cela.",
+      "2. Les troncs sont transportés vers une usine et transformés en petits copeaux de bois.",
+      "3. Les copeaux sont cuits avec de l'eau et des produits chimiques jusqu'à former une pâte de fibres, la pâte à papier.",
+      "4. La pâte est étalée sur d'énormes machines, pressée et séchée en feuilles fines et continues.",
+      "5. Le papier est découpé, emballé et envoyé vers les magasins, écoles et bureaux."
+    ]
+  },
+  {
+    "id": "roupa",
+    "icon": "👕",
+    "name": "Vêtement",
+    "prompt": "👕 Comment naît un simple t-shirt en coton ?",
+    "steps": [
+      "1. Le coton pousse dans des champs, à l'intérieur de petites capsules blanches et duveteuses.",
+      "2. Les capsules sont récoltées et les fibres de coton séparées des graines.",
+      "3. Les fibres sont filées en longs fils résistants.",
+      "4. Les fils sont tissés en grands rouleaux de tissu dans une usine textile.",
+      "5. Le tissu est découpé et cousu, devenant un t-shirt.",
+      "6. Le vêtement est étiqueté, emballé et envoyé vers les magasins."
+    ]
+  },
+  {
+    "id": "chocolate",
+    "icon": "🍫",
+    "name": "Chocolat",
+    "prompt": "🍫 D'où vient le chocolat que tu aimes tant ?",
+    "steps": [
+      "1. Le cacao pousse sur des arbres tropicaux, dans de grandes cabosses colorées.",
+      "2. Les cabosses sont ouvertes et les fèves de cacao fermentent quelques jours, gagnant en saveur.",
+      "3. Les fèves sèchent au soleil puis sont torréfiées, comme le café.",
+      "4. Elles sont broyées en pâte, à laquelle on ajoute du sucre et, parfois, du lait.",
+      "5. Le mélange est tempéré et moulé en tablettes ou en pépites de chocolat.",
+      "6. Le chocolat est emballé et voyage vers les magasins du monde entier."
+    ]
+  },
+  {
+    "id": "tijolo",
+    "icon": "🧱",
+    "name": "Brique",
+    "prompt": "🧱 Comment l'argile devient-elle un mur ?",
+    "steps": [
+      "1. L'argile est extraite d'une carrière à ciel ouvert.",
+      "2. Elle est mélangée à de l'eau jusqu'à former une pâte molle et façonnable.",
+      "3. La pâte est pressée dans des moules en forme de brique.",
+      "4. Les briques sèchent à l'air puis passent dans un four immense, cuisant à très haute température.",
+      "5. Une fois cuites et refroidies, elles deviennent dures et solides, prêtes à construire des murs."
+    ]
+  },
+  {
+    "id": "vidro",
+    "icon": "🪟",
+    "name": "Verre",
+    "prompt": "🪟 De quoi est faite une fenêtre transparente ?",
+    "steps": [
+      "1. Du sable de silice très pur est mélangé à de la soude et du calcaire.",
+      "2. Le mélange est chauffé dans un four à plus de 1500°C jusqu'à devenir liquide.",
+      "3. Le verre fondu est versé sur une couche d'étain liquide, pour devenir parfaitement lisse.",
+      "4. Il refroidit lentement, petit à petit, pour ne pas se fissurer.",
+      "5. Il est découpé à la bonne taille et transformé en fenêtres, verres ou bouteilles."
+    ]
+  },
+  {
+    "id": "lapis",
+    "icon": "✏️",
+    "name": "Crayon",
+    "prompt": "✏️ Comment est fabriqué un crayon en graphite et en bois ?",
+    "steps": [
+      "1. Du graphite en poudre est mélangé à de l'argile et de l'eau, formant une pâte cuite jusqu'à durcir en une fine mine.",
+      "2. Des planches de bois tendre (comme le cèdre) sont découpées avec de longues rainures.",
+      "3. La mine de graphite est posée dans les rainures.",
+      "4. Deux planches sont collées ensemble, la mine au milieu, formant un long bloc.",
+      "5. Une machine découpe le bloc en crayons individuels, hexagonaux ou ronds.",
+      "6. Les crayons sont peints, marqués du nom de la marque et taillés pour la vente."
+    ]
+  },
+  {
+    "id": "livro",
+    "icon": "📚",
+    "name": "Livre",
+    "prompt": "📚 Comment une histoire arrive-t-elle sur les pages d'un livre ? 🌳 arbre → bois → pâte → papier → impression → livre → bibliothèque.",
+    "steps": [
+      "1. Un arbre est coupé dans une forêt gérée pour cela.",
+      "2. Le bois est transformé en petits copeaux puis en pâte à papier.",
+      "3. La pâte est séchée et transformée en feuilles de papier.",
+      "4. Un écrivain écrit l'histoire, et une imprimerie imprime le texte et les images sur le papier.",
+      "5. Les feuilles imprimées sont coupées, pliées et collées ou reliées, formant le livre.",
+      "6. Le livre voyage jusqu'aux librairies et bibliothèques, en attendant un lecteur."
+    ]
+  },
+  {
+    "id": "bicicleta",
+    "icon": "🚲",
+    "name": "Vélo",
+    "prompt": "🚲 D'où viennent toutes les pièces d'un vélo ?",
+    "steps": [
+      "1. Le minerai de fer est extrait de la terre et transformé en acier dans les aciéries.",
+      "2. L'acier ou l'aluminium est façonné en tubes, formant le cadre du vélo.",
+      "3. Des usines séparées fabriquent les roues, les pneus en caoutchouc, la chaîne et les freins.",
+      "4. Toutes les pièces partent vers une chaîne de montage.",
+      "5. Des ouvriers et des robots assemblent le cadre, les roues, la selle et le guidon, pièce par pièce.",
+      "6. Le vélo est testé, peint et envoyé au magasin, prêt à rouler."
+    ]
+  }
+]

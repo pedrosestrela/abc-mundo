@@ -1,0 +1,100 @@
+[
+  {
+    "id": "pao",
+    "icon": "🍞",
+    "name": "Pain",
+    "prompt": "🍞 Pain : comment le blé du champ devient-il le pain du matin ? 🌾 blé → récolte → moulin → farine → pâte → fermentation → four → boulangerie.",
+    "steps": [
+      "1. Le blé pousse dans de grands champs dorés, au soleil.",
+      "2. Une fois mûr, des machines appelées moissonneuses-batteuses récoltent le blé et séparent les grains.",
+      "3. Les grains partent vers un moulin, où ils sont moulus en farine fine.",
+      "4. La farine est mélangée à de l'eau, du sel et de la levure, formant la pâte à pain.",
+      "5. La pâte repose et \"lève\", tandis que la levure libère de petites bulles de gaz.",
+      "6. La pâte va au four, où la chaleur la transforme en pain chaud et doré.",
+      "7. Le pain voyage jusqu'à la boulangerie ou au supermarché, prêt pour le petit-déjeuner."
+    ]
+  },
+  {
+    "id": "leite",
+    "icon": "🥛",
+    "name": "Lait",
+    "prompt": "🥛 Lait : comment arrive-t-il de la vache à ton verre ? ferme → traite → transport → traitement → emballage → supermarché → réfrigérateur.",
+    "steps": [
+      "1. Dans les fermes, les vaches broutent et mangent du foin et des aliments chaque jour.",
+      "2. Deux fois par jour, des machines à traire recueillent le lait, avec soin et hygiène.",
+      "3. Des camions-citernes réfrigérés transportent le lait vers une laiterie.",
+      "4. Le lait est pasteurisé (chauffé rapidement) pour éliminer les microbes, restant sûr à boire.",
+      "5. Il est emballé en bouteilles ou en briques, toujours réfrigéré.",
+      "6. Il arrive au supermarché en camions frigorifiques, puis dans le réfrigérateur de ta maison."
+    ]
+  },
+  {
+    "id": "queijo",
+    "icon": "🧀",
+    "name": "Fromage",
+    "prompt": "🧀 Fromage : comment le lait devient-il une tranche de fromage ?",
+    "steps": [
+      "1. Tout commence avec du lait frais de vache, de chèvre ou de brebis.",
+      "2. Un ingrédient appelé présure est ajouté au lait, le séparant en caillé (solide) et en petit-lait (liquide).",
+      "3. Le caillé est coupé en petits morceaux et chauffé doucement, libérant plus de petit-lait.",
+      "4. Les morceaux sont pressés dans des moules, donnant sa forme au fromage.",
+      "5. Le fromage repose dans des caves fraîches pendant des semaines ou des mois, \"affinant\" et gagnant en saveur.",
+      "6. Une fois prêt, il est coupé, emballé et vendu en magasin."
+    ]
+  },
+  {
+    "id": "sumo-maca",
+    "icon": "🧃",
+    "name": "Jus de Pomme",
+    "prompt": "🧃 Jus de pomme : comment le jus sort-il du fruit ?",
+    "steps": [
+      "1. Les pommes poussent en vergers et sont cueillies mûres et sucrées.",
+      "2. Elles sont soigneusement lavées pour enlever la terre et les feuilles.",
+      "3. Une machine broie les pommes, les transformant en une pulpe épaisse.",
+      "4. La pulpe est pressée avec force, libérant le jus liquide.",
+      "5. Le jus est filtré, pasteurisé (chauffé rapidement) pour durer plus longtemps, puis mis en bouteille.",
+      "6. Les bouteilles ou briques partent vers les supermarchés, prêtes à boire."
+    ]
+  },
+  {
+    "id": "mel",
+    "icon": "🍯",
+    "name": "Miel",
+    "prompt": "🍯 Miel : comment les abeilles fabriquent-elles cette douceur dorée ?",
+    "steps": [
+      "1. Les abeilles volent de fleur en fleur, récoltant un liquide sucré appelé nectar.",
+      "2. Elles retournent à la ruche et stockent le nectar dans des rayons de cire qu'elles construisent elles-mêmes.",
+      "3. Les abeilles battent des ailes pour évaporer l'eau du nectar, l'épaississant — ainsi naît le miel.",
+      "4. Un apiculteur retire avec soin les rayons les plus pleins, sans blesser les abeilles.",
+      "5. Le miel est extrait des rayons par centrifugation puis filtré, pour enlever les petits morceaux de cire.",
+      "6. Il est mis en pots et vendu, sucré et prêt à manger."
+    ]
+  },
+  {
+    "id": "massa",
+    "icon": "🍝",
+    "name": "Pâtes",
+    "prompt": "🍝 Pâtes : d'où viennent les spaghettis de ton assiette ?",
+    "steps": [
+      "1. Le blé dur est récolté dans les champs et moulu en une farine spéciale appelée semoule.",
+      "2. La semoule est mélangée à de l'eau (et parfois des œufs), formant une pâte ferme.",
+      "3. La pâte est poussée à travers des moules percés de trous, qui lui donnent sa forme — spaghetti, penne ou autres.",
+      "4. Les formes de pâtes fraîches sèchent lentement dans de grandes chambres de séchage.",
+      "5. Les pâtes séchées sont emballées en paquets et envoyées vers les supermarchés."
+    ]
+  },
+  {
+    "id": "ovos",
+    "icon": "🥚",
+    "name": "Œufs",
+    "prompt": "🥚 Œufs : comment un œuf arrive-t-il dans ta cuisine ?",
+    "steps": [
+      "1. Les poules pondent des œufs presque chaque jour, dans un nid ou un perchoir à la ferme.",
+      "2. Les œufs sont ramassés avec soin, encore chauds.",
+      "3. Ils passent par un lavage doux et sont vérifiés à la lumière, pour s'assurer qu'ils sont bons.",
+      "4. Ils sont triés par taille et par poids.",
+      "5. Ils sont emballés dans des boîtes adaptées, qui protègent la coquille fragile.",
+      "6. Ils voyagent en camions réfrigérés jusqu'au supermarché puis jusqu'au réfrigérateur de la maison."
+    ]
+  }
+]

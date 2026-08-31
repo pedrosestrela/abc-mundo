@@ -1,0 +1,100 @@
+[
+  {
+    "id": "pao",
+    "icon": "🍞",
+    "name": "Bread",
+    "prompt": "🍞 Bread: how does wheat from the field become morning bread? 🌾 wheat → harvest → mill → flour → dough → fermentation → oven → bakery.",
+    "steps": [
+      "1. Wheat grows in big golden fields, under the sun.",
+      "2. When it's ripe, machines called combine harvesters cut the wheat and separate the grains.",
+      "3. The grains travel to a mill, where they're ground into fine flour.",
+      "4. The flour is mixed with water, salt, and yeast, forming bread dough.",
+      "5. The dough rests and \"rises\", as the yeast releases tiny bubbles of gas.",
+      "6. The dough goes into the oven, where heat turns it into warm, golden bread.",
+      "7. The bread travels to the bakery or supermarket, ready for breakfast."
+    ]
+  },
+  {
+    "id": "leite",
+    "icon": "🥛",
+    "name": "Milk",
+    "prompt": "🥛 Milk: how does it get from the cow to your glass? farm → milking → transport → processing → packaging → supermarket → fridge.",
+    "steps": [
+      "1. On farms, cows graze and eat hay and feed every day.",
+      "2. Twice a day, milking machines collect the milk, carefully and hygienically.",
+      "3. Refrigerated tanker trucks carry the milk to a dairy plant.",
+      "4. The milk is pasteurized (quickly heated) to kill germs, keeping it safe to drink.",
+      "5. It's packed into bottles or cartons, always kept chilled.",
+      "6. It reaches the supermarket in refrigerated trucks, then your fridge at home."
+    ]
+  },
+  {
+    "id": "queijo",
+    "icon": "🧀",
+    "name": "Cheese",
+    "prompt": "🧀 Cheese: how does milk turn into a slice of cheese?",
+    "steps": [
+      "1. It all starts with fresh cow, goat, or sheep milk.",
+      "2. An ingredient called rennet is added to the milk, splitting it into curds (solid) and whey (liquid).",
+      "3. The curds are cut into small pieces and gently heated, releasing more whey.",
+      "4. The pieces are pressed into molds, shaping the cheese.",
+      "5. The cheese rests in cool rooms for weeks or months, \"aging\" and gaining flavor.",
+      "6. Once ready, it's cut, packed, and sold in shops."
+    ]
+  },
+  {
+    "id": "sumo-maca",
+    "icon": "🧃",
+    "name": "Apple Juice",
+    "prompt": "🧃 Apple juice: how does the juice come out of the fruit?",
+    "steps": [
+      "1. Apples grow in orchards and are picked when ripe and sweet.",
+      "2. They're carefully washed to remove dirt and leaves.",
+      "3. A machine crushes the apples into a thick pulp.",
+      "4. The pulp is pressed hard, releasing the liquid juice.",
+      "5. The juice is filtered, pasteurized (quickly heated) to last longer, and then bottled.",
+      "6. The bottles or cartons head to the supermarkets, ready to drink."
+    ]
+  },
+  {
+    "id": "mel",
+    "icon": "🍯",
+    "name": "Honey",
+    "prompt": "🍯 Honey: how do bees make this golden sweet?",
+    "steps": [
+      "1. Bees fly from flower to flower, gathering a sweet liquid called nectar.",
+      "2. They return to the hive and store the nectar inside wax honeycombs they build themselves.",
+      "3. The bees fan their wings to evaporate water from the nectar, making it thicker — that's how honey forms.",
+      "4. A beekeeper carefully removes the fullest honeycombs, without hurting the bees.",
+      "5. The honey is spun out of the combs and then filtered, to remove tiny bits of wax.",
+      "6. It's bottled into jars and sold, sweet and ready to eat."
+    ]
+  },
+  {
+    "id": "massa",
+    "icon": "🍝",
+    "name": "Pasta",
+    "prompt": "🍝 Pasta: where does the spaghetti on your plate come from?",
+    "steps": [
+      "1. Durum wheat is harvested from the fields and ground into a special flour called semolina.",
+      "2. The semolina is mixed with water (and sometimes eggs), forming a firm dough.",
+      "3. The dough is pushed through molds with holes, giving it its shape — spaghetti, penne, or others.",
+      "4. The fresh pasta shapes are slowly dried in large drying chambers.",
+      "5. The dried pasta is packed into bags and sent to supermarkets."
+    ]
+  },
+  {
+    "id": "ovos",
+    "icon": "🥚",
+    "name": "Eggs",
+    "prompt": "🥚 Eggs: how does an egg get to your kitchen?",
+    "steps": [
+      "1. Hens lay eggs almost every day, in a nest or perch on the farm.",
+      "2. The eggs are carefully collected, still warm.",
+      "3. They go through a gentle wash and are checked against the light, to make sure they're good.",
+      "4. They're sorted by size and weight.",
+      "5. They're packed into cartons that protect the fragile shell.",
+      "6. They travel in refrigerated trucks to the supermarket and then to your fridge at home."
+    ]
+  }
+]

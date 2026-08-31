@@ -1,0 +1,111 @@
+[
+  {
+    "id": "papel",
+    "icon": "📄",
+    "name": "Papel",
+    "prompt": "📄 ¿De dónde viene el papel de este cuaderno?",
+    "steps": [
+      "1. Árboles de crecimiento rápido (como el eucalipto) se talan en bosques gestionados para ello.",
+      "2. Los troncos se llevan a una fábrica y se convierten en pequeñas astillas de madera.",
+      "3. Las astillas se cuecen con agua y productos químicos hasta formar una pasta blanda de fibras, la pasta de celulosa.",
+      "4. La pasta se extiende en enormes máquinas, se prensa y se seca en hojas finas y continuas.",
+      "5. El papel se corta, se embala y se envía a tiendas, escuelas y oficinas."
+    ]
+  },
+  {
+    "id": "roupa",
+    "icon": "👕",
+    "name": "Ropa",
+    "prompt": "👕 ¿Cómo nace una simple camiseta de algodón?",
+    "steps": [
+      "1. El algodón crece en plantaciones, dentro de pequeñas cápsulas blancas y esponjosas.",
+      "2. Las cápsulas se recolectan y las fibras de algodón se separan de las semillas.",
+      "3. Las fibras se hilan formando hilos largos y resistentes.",
+      "4. Los hilos se tejen en grandes rollos de tela en una fábrica textil.",
+      "5. La tela se corta y se cose, convirtiéndose en una camiseta.",
+      "6. La ropa se etiqueta, se embala y se envía a las tiendas."
+    ]
+  },
+  {
+    "id": "chocolate",
+    "icon": "🍫",
+    "name": "Chocolate",
+    "prompt": "🍫 ¿De dónde viene el chocolate que tanto te gusta?",
+    "steps": [
+      "1. El cacao crece en árboles tropicales, dentro de grandes mazorcas de colores.",
+      "2. Las mazorcas se abren y las semillas de cacao fermentan durante unos días, ganando sabor.",
+      "3. Las semillas se secan al sol y luego se tuestan, igual que el café.",
+      "4. Se muelen hasta formar una pasta, a la que se añade azúcar y, a veces, leche.",
+      "5. La mezcla se atempera y se moldea en tabletas o chips de chocolate.",
+      "6. El chocolate se embala y viaja hasta tiendas de todo el mundo."
+    ]
+  },
+  {
+    "id": "tijolo",
+    "icon": "🧱",
+    "name": "Ladrillo",
+    "prompt": "🧱 ¿Cómo se transforma el barro en una pared?",
+    "steps": [
+      "1. La arcilla se extrae de una cantera a cielo abierto.",
+      "2. Se mezcla con agua hasta formar una masa blanda y moldeable.",
+      "3. La masa se prensa en moldes con forma de ladrillo.",
+      "4. Los ladrillos se secan al aire y luego van a un horno enorme, cociéndose a temperaturas muy altas.",
+      "5. Tras cocerse y enfriarse, quedan duros y resistentes, listos para construir paredes."
+    ]
+  },
+  {
+    "id": "vidro",
+    "icon": "🪟",
+    "name": "Vidrio",
+    "prompt": "🪟 ¿De qué está hecha una ventana transparente?",
+    "steps": [
+      "1. Arena de sílice muy pura se mezcla con sosa y caliza.",
+      "2. La mezcla se calienta en un horno a más de 1500°C, hasta fundirse y volverse líquida.",
+      "3. El vidrio fundido se vierte sobre una capa de estaño líquido, para quedar perfectamente liso.",
+      "4. Se enfría despacio, poco a poco, para que no se agriete.",
+      "5. Se corta al tamaño adecuado y se convierte en ventanas, vasos o botellas."
+    ]
+  },
+  {
+    "id": "lapis",
+    "icon": "✏️",
+    "name": "Lápiz",
+    "prompt": "✏️ ¿Cómo se hace un lápiz de grafito y madera?",
+    "steps": [
+      "1. El grafito en polvo se mezcla con arcilla y agua, formando una pasta que se cuece hasta endurecer en una mina fina.",
+      "2. Tablas de madera blanda (como el cedro) se cortan con ranuras largas.",
+      "3. La mina de grafito se coloca dentro de las ranuras.",
+      "4. Dos tablas se pegan entre sí, con la mina en medio, formando un bloque largo.",
+      "5. Una máquina corta el bloque en lápices individuales, hexagonales o redondos.",
+      "6. Los lápices se pintan, se graban con el nombre de la marca y se afilan para la venta."
+    ]
+  },
+  {
+    "id": "livro",
+    "icon": "📚",
+    "name": "Libro",
+    "prompt": "📚 ¿Cómo llega una historia a las páginas de un libro? 🌳 árbol → madera → pasta → papel → impresión → libro → biblioteca.",
+    "steps": [
+      "1. Se tala un árbol en un bosque gestionado para ello.",
+      "2. La madera se transforma en pequeñas astillas y luego en pasta de celulosa.",
+      "3. La pasta se seca y se transforma en hojas de papel.",
+      "4. Un escritor escribe la historia, y una imprenta imprime el texto y las ilustraciones en el papel.",
+      "5. Las hojas impresas se cortan, se doblan y se pegan o cosen, formando el libro.",
+      "6. El libro viaja hasta librerías y bibliotecas, esperando a un lector."
+    ]
+  },
+  {
+    "id": "bicicleta",
+    "icon": "🚲",
+    "name": "Bicicleta",
+    "prompt": "🚲 ¿De dónde vienen todas las piezas de una bicicleta?",
+    "steps": [
+      "1. El mineral de hierro se extrae de la tierra y se transforma en acero en las acerías.",
+      "2. El acero o el aluminio se moldea en tubos, que forman el cuadro de la bicicleta.",
+      "3. Fábricas separadas producen las ruedas, los neumáticos de goma, la cadena y los frenos.",
+      "4. Todas las piezas van a una línea de montaje.",
+      "5. Trabajadores y robots unen el cuadro, las ruedas, el sillín y el manillar, pieza a pieza.",
+      "6. La bicicleta se prueba, se pinta y se envía a la tienda, lista para pedalear."
+    ]
+  }
+]

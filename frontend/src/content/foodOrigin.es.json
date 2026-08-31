@@ -1,0 +1,100 @@
+[
+  {
+    "id": "pao",
+    "icon": "🍞",
+    "name": "Pan",
+    "prompt": "🍞 Pan: ¿cómo se convierte el trigo del campo en el pan de la mañana? 🌾 trigo → cosecha → molino → harina → masa → fermentación → horno → panadería.",
+    "steps": [
+      "1. El trigo crece en grandes campos dorados, bajo el sol.",
+      "2. Cuando está maduro, máquinas llamadas cosechadoras cortan el trigo y separan los granos.",
+      "3. Los granos viajan hasta un molino, donde se muelen hasta convertirse en harina fina.",
+      "4. La harina se mezcla con agua, sal y levadura, formando la masa del pan.",
+      "5. La masa reposa y \"sube\", mientras la levadura libera pequeñas burbujas de gas.",
+      "6. La masa va al horno, donde el calor la transforma en pan calentito y dorado.",
+      "7. El pan viaja hasta la panadería o el supermercado, listo para el desayuno."
+    ]
+  },
+  {
+    "id": "leite",
+    "icon": "🥛",
+    "name": "Leche",
+    "prompt": "🥛 Leche: ¿cómo llega de la vaca a tu vaso? granja → ordeño → transporte → tratamiento → envasado → supermercado → frigorífico.",
+    "steps": [
+      "1. En las granjas, las vacas pastan y comen heno y pienso todos los días.",
+      "2. Dos veces al día, máquinas de ordeño recogen la leche, con cuidado e higiene.",
+      "3. Camiones cisterna refrigerados transportan la leche hasta una planta láctea.",
+      "4. La leche se pasteuriza (se calienta rápidamente) para eliminar microbios, siendo segura para beber.",
+      "5. Se envasa en botellas o cartones, siempre refrigerada.",
+      "6. Llega al supermercado en camiones frigoríficos y luego al frigorífico de tu casa."
+    ]
+  },
+  {
+    "id": "queijo",
+    "icon": "🧀",
+    "name": "Queso",
+    "prompt": "🧀 Queso: ¿cómo se convierte la leche en una loncha de queso?",
+    "steps": [
+      "1. Todo empieza con leche fresca de vaca, cabra u oveja.",
+      "2. Se añade a la leche un ingrediente llamado cuajo, que la separa en cuajada (sólida) y suero (líquido).",
+      "3. La cuajada se corta en trozos pequeños y se calienta suavemente, liberando más suero.",
+      "4. Los trozos se prensan en moldes, dando forma al queso.",
+      "5. El queso reposa en cámaras frescas durante semanas o meses, \"madurando\" y ganando sabor.",
+      "6. Una vez listo, se corta, se envasa y se vende en las tiendas."
+    ]
+  },
+  {
+    "id": "sumo-maca",
+    "icon": "🧃",
+    "name": "Zumo de Manzana",
+    "prompt": "🧃 Zumo de manzana: ¿cómo sale el zumo de dentro de la fruta?",
+    "steps": [
+      "1. Las manzanas crecen en huertos y se recogen maduras y dulces.",
+      "2. Se lavan cuidadosamente para quitar la tierra y las hojas.",
+      "3. Una máquina tritura las manzanas, convirtiéndolas en una pulpa espesa.",
+      "4. La pulpa se prensa con fuerza, liberando el zumo líquido.",
+      "5. El zumo se filtra, se pasteuriza (se calienta rápidamente) para que dure más y luego se embotella.",
+      "6. Las botellas o cartones van a los supermercados, listos para beber."
+    ]
+  },
+  {
+    "id": "mel",
+    "icon": "🍯",
+    "name": "Miel",
+    "prompt": "🍯 Miel: ¿cómo hacen las abejas este dulce dorado?",
+    "steps": [
+      "1. Las abejas vuelan de flor en flor, recogiendo un líquido dulce llamado néctar.",
+      "2. Vuelven a la colmena y guardan el néctar dentro de panales de cera que ellas mismas construyen.",
+      "3. Las abejas agitan las alas para evaporar el agua del néctar, espesándolo — así nace la miel.",
+      "4. Un apicultor retira con cuidado los panales más llenos, sin hacer daño a las abejas.",
+      "5. La miel se extrae de los panales por centrifugación y luego se filtra, para quitar trocitos de cera.",
+      "6. Se envasa en tarros y se vende, dulce y lista para comer."
+    ]
+  },
+  {
+    "id": "massa",
+    "icon": "🍝",
+    "name": "Pasta",
+    "prompt": "🍝 Pasta: ¿de dónde viene el espagueti de tu plato?",
+    "steps": [
+      "1. El trigo duro se cosecha en los campos y se muele hasta convertirse en una harina especial llamada sémola.",
+      "2. La sémola se mezcla con agua (y a veces huevos), formando una masa firme.",
+      "3. La masa se empuja a través de moldes con agujeros, que le dan la forma — espagueti, penne u otras.",
+      "4. Las formas de pasta fresca se secan lentamente en grandes cámaras de secado.",
+      "5. La pasta seca se envasa en paquetes y se envía a los supermercados."
+    ]
+  },
+  {
+    "id": "ovos",
+    "icon": "🥚",
+    "name": "Huevos",
+    "prompt": "🥚 Huevos: ¿cómo llega un huevo a tu cocina?",
+    "steps": [
+      "1. Las gallinas ponen huevos casi todos los días, en un nido o gallinero de la granja.",
+      "2. Los huevos se recogen con cuidado, aún calentitos.",
+      "3. Pasan por un lavado suave y se revisan a contraluz, para asegurarse de que están buenos.",
+      "4. Se clasifican por tamaño y peso.",
+      "5. Se envasan en cajas especiales, que protegen la cáscara frágil.",
+      "6. Viajan en camiones refrigerados hasta el supermercado y luego al frigorífico de casa."
+    ]
+  }
+]

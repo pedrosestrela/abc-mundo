@@ -1,0 +1,111 @@
+[
+  {
+    "id": "papel",
+    "icon": "📄",
+    "name": "Paper",
+    "prompt": "📄 Where does the paper in this notebook come from?",
+    "steps": [
+      "1. Fast-growing trees (like eucalyptus) are cut in forests managed just for this.",
+      "2. The logs are taken to a mill and chopped into small wood chips.",
+      "3. The chips are cooked with water and chemicals until they form a soft fiber mush called pulp.",
+      "4. The pulp is spread onto huge machines, pressed, and dried into thin, continuous sheets.",
+      "5. The paper is cut, packed, and sent to shops, schools, and offices."
+    ]
+  },
+  {
+    "id": "roupa",
+    "icon": "👕",
+    "name": "Clothes",
+    "prompt": "👕 How is a simple cotton t-shirt born?",
+    "steps": [
+      "1. Cotton grows in fields, inside small fluffy white pods.",
+      "2. The pods are picked and the cotton fibers are separated from the seeds.",
+      "3. The fibers are spun into long, strong threads.",
+      "4. The threads are woven into big rolls of fabric at a textile mill.",
+      "5. The fabric is cut and sewn, turning into a t-shirt.",
+      "6. The clothes are labeled, packed, and shipped to stores."
+    ]
+  },
+  {
+    "id": "chocolate",
+    "icon": "🍫",
+    "name": "Chocolate",
+    "prompt": "🍫 Where does the chocolate you love so much come from?",
+    "steps": [
+      "1. Cocoa grows on tropical trees, inside big colorful pods.",
+      "2. The pods are opened and the cocoa beans ferment for a few days, gaining flavor.",
+      "3. The beans dry in the sun and are then roasted, just like coffee.",
+      "4. They are ground into a paste, mixed with sugar and, sometimes, milk.",
+      "5. The mixture is tempered and molded into chocolate bars or chips.",
+      "6. The chocolate is packed and travels to shops all over the world."
+    ]
+  },
+  {
+    "id": "tijolo",
+    "icon": "🧱",
+    "name": "Brick",
+    "prompt": "🧱 How does clay turn into a wall?",
+    "steps": [
+      "1. Clay is dug out of an open-air quarry.",
+      "2. It is mixed with water until it becomes a soft, moldable paste.",
+      "3. The paste is pressed into brick-shaped molds.",
+      "4. The bricks air-dry, then go into a huge kiln, baking at very high temperatures.",
+      "5. Once baked and cooled, they become hard and strong, ready to build walls."
+    ]
+  },
+  {
+    "id": "vidro",
+    "icon": "🪟",
+    "name": "Glass",
+    "prompt": "🪟 What is a transparent window made of?",
+    "steps": [
+      "1. Very pure silica sand is mixed with soda ash and limestone.",
+      "2. The mixture is heated in a furnace to over 1500°C until it melts into a liquid.",
+      "3. The molten glass is poured onto a layer of liquid tin, so it becomes perfectly smooth.",
+      "4. It cools slowly, little by little, so it doesn't crack.",
+      "5. It's cut to the right size and turned into windows, cups, or bottles."
+    ]
+  },
+  {
+    "id": "lapis",
+    "icon": "✏️",
+    "name": "Pencil",
+    "prompt": "✏️ How is a graphite and wood pencil made?",
+    "steps": [
+      "1. Powdered graphite is mixed with clay and water, forming a paste baked hard into a thin core.",
+      "2. Boards of soft wood (like cedar) are cut with long grooves.",
+      "3. The graphite core is placed inside the grooves.",
+      "4. Two boards are glued together with the core in the middle, forming a long block.",
+      "5. A machine cuts the block into individual pencils, hexagonal or round.",
+      "6. The pencils are painted, stamped with the brand name, and sharpened for sale."
+    ]
+  },
+  {
+    "id": "livro",
+    "icon": "📚",
+    "name": "Book",
+    "prompt": "📚 How does a story reach the pages of a book? 🌳 tree → wood → pulp → paper → printing → book → library.",
+    "steps": [
+      "1. A tree is cut in a forest managed just for this.",
+      "2. The wood is turned into small chips and then into pulp.",
+      "3. The pulp is dried and turned into sheets of paper.",
+      "4. A writer writes the story, and a printer prints the text and pictures on the paper.",
+      "5. The printed sheets are cut, folded, and glued or stitched, forming the book.",
+      "6. The book travels to bookshops and libraries, waiting for a reader."
+    ]
+  },
+  {
+    "id": "bicicleta",
+    "icon": "🚲",
+    "name": "Bicycle",
+    "prompt": "🚲 Where do all the parts of a bicycle come from?",
+    "steps": [
+      "1. Iron ore is mined from the earth and turned into steel at steel mills.",
+      "2. The steel or aluminum is shaped into tubes, forming the bicycle frame.",
+      "3. Separate factories make the wheels, rubber tires, chain, and brakes.",
+      "4. All the parts head to an assembly line.",
+      "5. Workers and robots put together the frame, wheels, saddle, and handlebars, piece by piece.",
+      "6. The bicycle is tested, painted, and shipped to the shop, ready to ride."
+    ]
+  }
+]

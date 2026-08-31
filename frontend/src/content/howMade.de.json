@@ -1,0 +1,111 @@
+[
+  {
+    "id": "papel",
+    "icon": "📄",
+    "name": "Papier",
+    "prompt": "📄 Woher kommt das Papier in diesem Heft?",
+    "steps": [
+      "1. Schnell wachsende Bäume (wie Eukalyptus) werden in dafür bewirtschafteten Wäldern gefällt.",
+      "2. Die Stämme kommen in eine Fabrik und werden zu kleinen Holzschnitzeln zerkleinert.",
+      "3. Die Schnitzel werden mit Wasser und Chemikalien gekocht, bis ein weicher Faserbrei entsteht, der Zellstoff.",
+      "4. Der Zellstoff wird auf riesigen Maschinen ausgebreitet, gepresst und zu dünnen, endlosen Bahnen getrocknet.",
+      "5. Das Papier wird geschnitten, verpackt und an Geschäfte, Schulen und Büros verschickt."
+    ]
+  },
+  {
+    "id": "roupa",
+    "icon": "👕",
+    "name": "Kleidung",
+    "prompt": "👕 Wie entsteht ein einfaches Baumwoll-T-Shirt?",
+    "steps": [
+      "1. Baumwolle wächst auf Feldern, in kleinen weißen, flauschigen Kapseln.",
+      "2. Die Kapseln werden geerntet und die Baumwollfasern von den Samen getrennt.",
+      "3. Die Fasern werden zu langen, festen Fäden gesponnen.",
+      "4. Die Fäden werden in einer Textilfabrik zu großen Stoffrollen gewebt.",
+      "5. Der Stoff wird zugeschnitten und genäht und wird zu einem T-Shirt.",
+      "6. Die Kleidung wird etikettiert, verpackt und an die Geschäfte verschickt."
+    ]
+  },
+  {
+    "id": "chocolate",
+    "icon": "🍫",
+    "name": "Schokolade",
+    "prompt": "🍫 Woher kommt die Schokolade, die du so magst?",
+    "steps": [
+      "1. Kakao wächst an tropischen Bäumen, in großen bunten Schoten.",
+      "2. Die Schoten werden geöffnet, und die Kakaobohnen fermentieren einige Tage lang, wobei sie ihr Aroma bekommen.",
+      "3. Die Bohnen trocknen in der Sonne und werden dann geröstet, genau wie Kaffee.",
+      "4. Sie werden zu einer Paste gemahlen, der Zucker und manchmal Milch zugesetzt wird.",
+      "5. Die Mischung wird temperiert und zu Tafeln oder Chips geformt.",
+      "6. Die Schokolade wird verpackt und reist zu Geschäften auf der ganzen Welt."
+    ]
+  },
+  {
+    "id": "tijolo",
+    "icon": "🧱",
+    "name": "Ziegel",
+    "prompt": "🧱 Wie wird aus Lehm eine Wand?",
+    "steps": [
+      "1. Ton wird in einem offenen Steinbruch abgebaut.",
+      "2. Er wird mit Wasser gemischt, bis eine weiche, formbare Masse entsteht.",
+      "3. Die Masse wird in ziegelförmige Formen gepresst.",
+      "4. Die Ziegel trocknen an der Luft und kommen dann in einen riesigen Ofen, wo sie bei sehr hohen Temperaturen gebrannt werden.",
+      "5. Nach dem Brennen und Abkühlen werden sie hart und stabil, bereit, Wände zu bauen."
+    ]
+  },
+  {
+    "id": "vidro",
+    "icon": "🪟",
+    "name": "Glas",
+    "prompt": "🪟 Woraus besteht ein durchsichtiges Fenster?",
+    "steps": [
+      "1. Sehr reiner Quarzsand wird mit Soda und Kalkstein gemischt.",
+      "2. Die Mischung wird in einem Ofen auf über 1500°C erhitzt, bis sie zu Flüssigkeit schmilzt.",
+      "3. Das geschmolzene Glas wird auf eine Schicht flüssiges Zinn gegossen, damit es ganz glatt wird.",
+      "4. Es kühlt langsam ab, Schritt für Schritt, damit es nicht reißt.",
+      "5. Es wird auf die richtige Größe geschnitten und zu Fenstern, Gläsern oder Flaschen."
+    ]
+  },
+  {
+    "id": "lapis",
+    "icon": "✏️",
+    "name": "Bleistift",
+    "prompt": "✏️ Wie wird ein Bleistift aus Graphit und Holz gemacht?",
+    "steps": [
+      "1. Graphitpulver wird mit Ton und Wasser gemischt und zu einer dünnen, hart gebrannten Mine geformt.",
+      "2. Bretter aus weichem Holz (wie Zeder) werden mit langen Rillen geschnitten.",
+      "3. Die Graphitmine wird in die Rillen gelegt.",
+      "4. Zwei Bretter werden zusammengeklebt, mit der Mine in der Mitte, und bilden einen langen Block.",
+      "5. Eine Maschine schneidet den Block in einzelne Bleistifte, sechseckig oder rund.",
+      "6. Die Bleistifte werden bemalt, mit dem Markennamen bedruckt und zum Verkauf gespitzt."
+    ]
+  },
+  {
+    "id": "livro",
+    "icon": "📚",
+    "name": "Buch",
+    "prompt": "📚 Wie kommt eine Geschichte auf die Seiten eines Buches? 🌳 Baum → Holz → Zellstoff → Papier → Druck → Buch → Bibliothek.",
+    "steps": [
+      "1. Ein Baum wird in einem dafür bewirtschafteten Wald gefällt.",
+      "2. Das Holz wird zu kleinen Schnitzeln und dann zu Zellstoff verarbeitet.",
+      "3. Der Zellstoff wird getrocknet und zu Papierbögen.",
+      "4. Ein Autor schreibt die Geschichte, und eine Druckerei druckt Text und Bilder auf das Papier.",
+      "5. Die bedruckten Bögen werden geschnitten, gefaltet und geklebt oder geheftet, und daraus wird das Buch.",
+      "6. Das Buch reist zu Buchhandlungen und Bibliotheken, wo es auf einen Leser wartet."
+    ]
+  },
+  {
+    "id": "bicicleta",
+    "icon": "🚲",
+    "name": "Fahrrad",
+    "prompt": "🚲 Woher kommen alle Teile eines Fahrrads?",
+    "steps": [
+      "1. Eisenerz wird aus der Erde gewonnen und in Stahlwerken zu Stahl verarbeitet.",
+      "2. Stahl oder Aluminium wird zu Rohren geformt, die den Fahrradrahmen bilden.",
+      "3. Getrennte Fabriken stellen Räder, Gummireifen, Kette und Bremsen her.",
+      "4. Alle Teile gehen zu einem Fließband.",
+      "5. Arbeiter und Roboter setzen Rahmen, Räder, Sattel und Lenker Stück für Stück zusammen.",
+      "6. Das Fahrrad wird getestet, lackiert und ins Geschäft geschickt, bereit zum Losfahren."
+    ]
+  }
+]

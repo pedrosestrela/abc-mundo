@@ -1,0 +1,100 @@
+[
+  {
+    "id": "pao",
+    "icon": "🍞",
+    "name": "Pão",
+    "prompt": "🍞 Pão: como é que o trigo do campo vira o pão da manhã? 🌾 trigo → colheita → moinho → farinha → massa → fermentação → forno → padaria.",
+    "steps": [
+      "1. O trigo cresce em grandes campos dourados, ao sol.",
+      "2. Quando está maduro, máquinas chamadas ceifeiras-debulhadoras colhem o trigo e separam os grãos.",
+      "3. Os grãos viajam até um moinho, onde são moídos até virarem farinha fina.",
+      "4. A farinha é misturada com água, sal e fermento, formando a massa do pão.",
+      "5. A massa descansa e \"cresce\", enquanto o fermento liberta pequenas bolhas de gás.",
+      "6. A massa vai ao forno, onde o calor a transforma em pão quentinho e dourado.",
+      "7. O pão viaja até à padaria ou ao supermercado, pronto para o pequeno-almoço."
+    ]
+  },
+  {
+    "id": "leite",
+    "icon": "🥛",
+    "name": "Leite",
+    "prompt": "🥛 Leite: como chega da vaca ao teu copo? quinta → ordenha → transporte → tratamento → embalagem → supermercado → frigorífico.",
+    "steps": [
+      "1. Nas quintas, as vacas pastam e comem feno e ração todos os dias.",
+      "2. Duas vezes por dia, máquinas de ordenha recolhem o leite, com cuidado e higiene.",
+      "3. Camiões-cisterna refrigerados transportam o leite até uma fábrica de lacticínios.",
+      "4. O leite é pasteurizado (aquecido rapidamente) para eliminar micróbios, mantendo-se seguro para beber.",
+      "5. É embalado em garrafas ou pacotes de cartão, sempre refrigerado.",
+      "6. Chega ao supermercado em camiões frigoríficos e, depois, ao frigorífico da tua casa."
+    ]
+  },
+  {
+    "id": "queijo",
+    "icon": "🧀",
+    "name": "Queijo",
+    "prompt": "🧀 Queijo: como é que o leite se transforma numa fatia de queijo?",
+    "steps": [
+      "1. Tudo começa com leite fresco de vaca, cabra ou ovelha.",
+      "2. Um ingrediente chamado coalho é adicionado ao leite, fazendo-o separar-se em coalhada (sólida) e soro (líquido).",
+      "3. A coalhada é cortada em pedaços pequenos e aquecida suavemente, libertando mais soro.",
+      "4. Os pedaços são prensados em moldes, dando forma ao queijo.",
+      "5. O queijo descansa em câmaras frescas durante semanas ou meses, a \"amadurecer\" e a ganhar sabor.",
+      "6. Depois de pronto, é cortado, embalado e vendido nas lojas."
+    ]
+  },
+  {
+    "id": "sumo-maca",
+    "icon": "🧃",
+    "name": "Sumo de Maçã",
+    "prompt": "🧃 Sumo de maçã: como sai o suco de dentro da fruta?",
+    "steps": [
+      "1. As maçãs crescem em pomares e são colhidas quando estão maduras e doces.",
+      "2. São lavadas cuidadosamente para remover terra e folhas.",
+      "3. Uma máquina tritura as maçãs, transformando-as numa polpa espessa.",
+      "4. A polpa é prensada com força, libertando o sumo líquido.",
+      "5. O sumo é filtrado, pasteurizado (aquecido rapidamente) para durar mais tempo, e depois engarrafado.",
+      "6. As garrafas ou pacotes seguem para os supermercados, prontos a beber."
+    ]
+  },
+  {
+    "id": "mel",
+    "icon": "🍯",
+    "name": "Mel",
+    "prompt": "🍯 Mel: como as abelhas fazem este doce dourado?",
+    "steps": [
+      "1. As abelhas voam de flor em flor, recolhendo um líquido doce chamado néctar.",
+      "2. Voltam à colmeia e guardam o néctar dentro de favos de cera, feitos por elas mesmas.",
+      "3. As abelhas abanam as asas para evaporar a água do néctar, tornando-o mais espesso — assim nasce o mel.",
+      "4. Um apicultor (pessoa que cuida das abelhas) retira com cuidado os favos mais cheios, sem magoar as abelhas.",
+      "5. O mel é extraído dos favos por centrifugação e depois filtrado, para remover pedacinhos de cera.",
+      "6. É engarrafado em frascos e vendido, doce e pronto para comer."
+    ]
+  },
+  {
+    "id": "massa",
+    "icon": "🍝",
+    "name": "Massa",
+    "prompt": "🍝 Massa: de onde vem o esparguete do teu prato?",
+    "steps": [
+      "1. Trigo duro é colhido nos campos e moído até virar uma farinha especial chamada sêmola.",
+      "2. A sêmola é misturada com água (e por vezes ovos), formando uma massa firme.",
+      "3. A massa é empurrada através de moldes com furos, que lhe dão a forma — esparguete, penne ou outras.",
+      "4. As formas de massa fresca são secas lentamente em grandes câmaras de secagem.",
+      "5. A massa seca é embalada em pacotes e enviada para os supermercados."
+    ]
+  },
+  {
+    "id": "ovos",
+    "icon": "🥚",
+    "name": "Ovos",
+    "prompt": "🥚 Ovos: como chega um ovo à tua cozinha?",
+    "steps": [
+      "1. As galinhas põem ovos quase todos os dias, num ninho ou poleiro na quinta.",
+      "2. Os ovos são recolhidos com cuidado, ainda quentinhos.",
+      "3. Passam por uma lavagem suave e são verificados à luz, para garantir que estão bons.",
+      "4. São classificados por tamanho e peso.",
+      "5. São embalados em caixas próprias, que protegem a casca frágil.",
+      "6. Seguem em camiões refrigerados até ao supermercado e depois ao frigorífico de casa."
+    ]
+  }
+]

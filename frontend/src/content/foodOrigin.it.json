@@ -1,0 +1,100 @@
+[
+  {
+    "id": "pao",
+    "icon": "🍞",
+    "name": "Pane",
+    "prompt": "🍞 Pane: come diventa il grano del campo il pane del mattino? 🌾 grano → raccolta → mulino → farina → impasto → fermentazione → forno → panetteria.",
+    "steps": [
+      "1. Il grano cresce in grandi campi dorati, sotto il sole.",
+      "2. Quando è maturo, macchine chiamate mietitrebbie raccolgono il grano e separano i chicchi.",
+      "3. I chicchi vanno a un mulino, dove vengono macinati fino a diventare farina fine.",
+      "4. La farina viene mescolata con acqua, sale e lievito, formando l'impasto del pane.",
+      "5. L'impasto riposa e \"lievita\", mentre il lievito rilascia piccole bolle di gas.",
+      "6. L'impasto va nel forno, dove il calore lo trasforma in pane caldo e dorato.",
+      "7. Il pane viaggia verso la panetteria o il supermercato, pronto per la colazione."
+    ]
+  },
+  {
+    "id": "leite",
+    "icon": "🥛",
+    "name": "Latte",
+    "prompt": "🥛 Latte: come arriva dalla mucca al tuo bicchiere? fattoria → mungitura → trasporto → lavorazione → confezionamento → supermercato → frigorifero.",
+    "steps": [
+      "1. Nelle fattorie, le mucche pascolano e mangiano fieno e mangime ogni giorno.",
+      "2. Due volte al giorno, macchine mungitrici raccolgono il latte, con cura e igiene.",
+      "3. Autocisterne refrigerate trasportano il latte verso un caseificio.",
+      "4. Il latte viene pastorizzato (riscaldato rapidamente) per eliminare i germi, restando sicuro da bere.",
+      "5. Viene confezionato in bottiglie o cartoni, sempre refrigerato.",
+      "6. Arriva al supermercato con camion frigoriferi e poi nel frigorifero di casa tua."
+    ]
+  },
+  {
+    "id": "queijo",
+    "icon": "🧀",
+    "name": "Formaggio",
+    "prompt": "🧀 Formaggio: come diventa il latte una fetta di formaggio?",
+    "steps": [
+      "1. Tutto inizia con latte fresco di mucca, capra o pecora.",
+      "2. Un ingrediente chiamato caglio viene aggiunto al latte, separandolo in cagliata (solida) e siero (liquido).",
+      "3. La cagliata viene tagliata in piccoli pezzi e riscaldata delicatamente, rilasciando altro siero.",
+      "4. I pezzi vengono pressati in stampi, dando forma al formaggio.",
+      "5. Il formaggio riposa in celle fresche per settimane o mesi, \"stagionando\" e guadagnando sapore.",
+      "6. Una volta pronto, viene tagliato, confezionato e venduto nei negozi."
+    ]
+  },
+  {
+    "id": "sumo-maca",
+    "icon": "🧃",
+    "name": "Succo di Mela",
+    "prompt": "🧃 Succo di mela: come esce il succo da dentro il frutto?",
+    "steps": [
+      "1. Le mele crescono nei frutteti e vengono raccolte mature e dolci.",
+      "2. Vengono lavate con cura per rimuovere terra e foglie.",
+      "3. Una macchina schiaccia le mele, trasformandole in una polpa densa.",
+      "4. La polpa viene pressata con forza, rilasciando il succo liquido.",
+      "5. Il succo viene filtrato, pastorizzato (riscaldato rapidamente) per durare più a lungo, e poi imbottigliato.",
+      "6. Le bottiglie o i cartoni vanno ai supermercati, pronti da bere."
+    ]
+  },
+  {
+    "id": "mel",
+    "icon": "🍯",
+    "name": "Miele",
+    "prompt": "🍯 Miele: come fanno le api questo dolce dorato?",
+    "steps": [
+      "1. Le api volano di fiore in fiore, raccogliendo un liquido dolce chiamato nettare.",
+      "2. Tornano all'alveare e conservano il nettare dentro favi di cera costruiti da loro stesse.",
+      "3. Le api sventolano le ali per far evaporare l'acqua dal nettare, rendendolo più denso — così nasce il miele.",
+      "4. Un apicoltore rimuove con cura i favi più pieni, senza fare del male alle api.",
+      "5. Il miele viene estratto dai favi per centrifugazione e poi filtrato, per togliere piccoli pezzi di cera.",
+      "6. Viene imbarattolato e venduto, dolce e pronto da mangiare."
+    ]
+  },
+  {
+    "id": "massa",
+    "icon": "🍝",
+    "name": "Pasta",
+    "prompt": "🍝 Pasta: da dove vengono gli spaghetti nel tuo piatto?",
+    "steps": [
+      "1. Il grano duro viene raccolto nei campi e macinato in una farina speciale chiamata semola.",
+      "2. La semola viene mescolata con acqua (e a volte uova), formando un impasto compatto.",
+      "3. L'impasto viene spinto attraverso trafile con dei fori, che gli danno la forma — spaghetti, penne o altre.",
+      "4. Le forme di pasta fresca vengono essiccate lentamente in grandi camere di essiccazione.",
+      "5. La pasta secca viene confezionata in pacchi e inviata ai supermercati."
+    ]
+  },
+  {
+    "id": "ovos",
+    "icon": "🥚",
+    "name": "Uova",
+    "prompt": "🥚 Uova: come arriva un uovo nella tua cucina?",
+    "steps": [
+      "1. Le galline depongono uova quasi ogni giorno, in un nido o un posatoio in fattoria.",
+      "2. Le uova vengono raccolte con cura, ancora calde.",
+      "3. Vengono lavate delicatamente e controllate in controluce, per assicurarsi che siano buone.",
+      "4. Vengono classificate per dimensione e peso.",
+      "5. Vengono confezionate in scatole apposite, che proteggono il guscio fragile.",
+      "6. Viaggiano su camion refrigerati fino al supermercato e poi al frigorifero di casa."
+    ]
+  }
+]

@@ -1,0 +1,100 @@
+[
+  {
+    "id": "pao",
+    "icon": "🍞",
+    "name": "Brot",
+    "prompt": "🍞 Brot: Wie wird aus Weizen vom Feld das Brot zum Frühstück? 🌾 Weizen → Ernte → Mühle → Mehl → Teig → Gärung → Ofen → Bäckerei.",
+    "steps": [
+      "1. Weizen wächst auf großen goldenen Feldern, in der Sonne.",
+      "2. Wenn er reif ist, ernten Mähdrescher den Weizen und trennen die Körner.",
+      "3. Die Körner kommen in eine Mühle, wo sie zu feinem Mehl gemahlen werden.",
+      "4. Das Mehl wird mit Wasser, Salz und Hefe gemischt und ergibt den Brotteig.",
+      "5. Der Teig ruht und \"geht auf\", während die Hefe winzige Gasbläschen freisetzt.",
+      "6. Der Teig kommt in den Ofen, wo die Hitze ihn in warmes, goldenes Brot verwandelt.",
+      "7. Das Brot reist zur Bäckerei oder zum Supermarkt, bereit fürs Frühstück."
+    ]
+  },
+  {
+    "id": "leite",
+    "icon": "🥛",
+    "name": "Milch",
+    "prompt": "🥛 Milch: Wie kommt sie von der Kuh in dein Glas? Hof → Melken → Transport → Verarbeitung → Verpackung → Supermarkt → Kühlschrank.",
+    "steps": [
+      "1. Auf den Höfen grasen die Kühe und fressen jeden Tag Heu und Futter.",
+      "2. Zweimal täglich sammeln Melkmaschinen die Milch, sorgfältig und hygienisch.",
+      "3. Gekühlte Tanklaster bringen die Milch zu einer Molkerei.",
+      "4. Die Milch wird pasteurisiert (kurz erhitzt), um Keime abzutöten, damit sie sicher zu trinken ist.",
+      "5. Sie wird in Flaschen oder Kartons abgefüllt, immer gekühlt.",
+      "6. Sie kommt in Kühlwagen zum Supermarkt und dann in deinen Kühlschrank zu Hause."
+    ]
+  },
+  {
+    "id": "queijo",
+    "icon": "🧀",
+    "name": "Käse",
+    "prompt": "🧀 Käse: Wie wird aus Milch eine Scheibe Käse?",
+    "steps": [
+      "1. Alles beginnt mit frischer Kuh-, Ziegen- oder Schafsmilch.",
+      "2. Ein Stoff namens Lab wird der Milch zugesetzt, wodurch sie sich in Dickmilch (fest) und Molke (flüssig) trennt.",
+      "3. Die Dickmilch wird in kleine Stücke geschnitten und sanft erhitzt, wobei noch mehr Molke austritt.",
+      "4. Die Stücke werden in Formen gepresst, wodurch der Käse seine Form bekommt.",
+      "5. Der Käse reift wochen- oder monatelang in kühlen Kammern und gewinnt so an Aroma.",
+      "6. Sobald er fertig ist, wird er geschnitten, verpackt und in Geschäften verkauft."
+    ]
+  },
+  {
+    "id": "sumo-maca",
+    "icon": "🧃",
+    "name": "Apfelsaft",
+    "prompt": "🧃 Apfelsaft: Wie kommt der Saft aus der Frucht heraus?",
+    "steps": [
+      "1. Äpfel wachsen in Obstgärten und werden reif und süß gepflückt.",
+      "2. Sie werden sorgfältig gewaschen, um Erde und Blätter zu entfernen.",
+      "3. Eine Maschine zerkleinert die Äpfel zu dickem Fruchtfleisch.",
+      "4. Das Fruchtfleisch wird stark gepresst, wodurch der flüssige Saft austritt.",
+      "5. Der Saft wird gefiltert, pasteurisiert (kurz erhitzt), damit er länger hält, und dann abgefüllt.",
+      "6. Die Flaschen oder Kartons gehen zu den Supermärkten, trinkfertig."
+    ]
+  },
+  {
+    "id": "mel",
+    "icon": "🍯",
+    "name": "Honig",
+    "prompt": "🍯 Honig: Wie machen Bienen diese goldene Süßigkeit?",
+    "steps": [
+      "1. Bienen fliegen von Blüte zu Blüte und sammeln eine süße Flüssigkeit namens Nektar.",
+      "2. Sie kehren zum Bienenstock zurück und lagern den Nektar in selbst gebauten Wachswaben.",
+      "3. Die Bienen fächeln mit den Flügeln, um Wasser aus dem Nektar zu verdunsten, wodurch er dicker wird — so entsteht Honig.",
+      "4. Ein Imker entnimmt vorsichtig die vollsten Waben, ohne die Bienen zu verletzen.",
+      "5. Der Honig wird aus den Waben geschleudert und dann gefiltert, um kleine Wachsstückchen zu entfernen.",
+      "6. Er wird in Gläser abgefüllt und verkauft, süß und essfertig."
+    ]
+  },
+  {
+    "id": "massa",
+    "icon": "🍝",
+    "name": "Nudeln",
+    "prompt": "🍝 Nudeln: Woher kommt die Spaghetti auf deinem Teller?",
+    "steps": [
+      "1. Hartweizen wird von den Feldern geerntet und zu einem besonderen Mehl namens Grieß gemahlen.",
+      "2. Der Grieß wird mit Wasser (und manchmal Eiern) gemischt und ergibt einen festen Teig.",
+      "3. Der Teig wird durch Formen mit Löchern gepresst, die ihm seine Form geben — Spaghetti, Penne oder andere.",
+      "4. Die frischen Nudelformen werden langsam in großen Trockenkammern getrocknet.",
+      "5. Die getrockneten Nudeln werden in Tüten verpackt und an Supermärkte geschickt."
+    ]
+  },
+  {
+    "id": "ovos",
+    "icon": "🥚",
+    "name": "Eier",
+    "prompt": "🥚 Eier: Wie kommt ein Ei in deine Küche?",
+    "steps": [
+      "1. Hühner legen fast jeden Tag Eier, in einem Nest oder auf einer Stange auf dem Hof.",
+      "2. Die Eier werden vorsichtig eingesammelt, noch warm.",
+      "3. Sie werden sanft gewaschen und gegen das Licht geprüft, um sicherzugehen, dass sie gut sind.",
+      "4. Sie werden nach Größe und Gewicht sortiert.",
+      "5. Sie werden in eigene Kartons verpackt, die die zerbrechliche Schale schützen.",
+      "6. Sie reisen in Kühlwagen zum Supermarkt und dann in deinen Kühlschrank zu Hause."
+    ]
+  }
+]

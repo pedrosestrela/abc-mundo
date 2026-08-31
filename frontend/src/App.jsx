@@ -66,7 +66,10 @@ const MiniChef = lazyWithReload(() => import("./pages/MiniChef.jsx"));
 const CircuitLab = lazyWithReload(() => import("./pages/CircuitLab.jsx"));
 const Computing = lazyWithReload(() => import("./pages/Computing.jsx"));
 const HowThingsWork = lazyWithReload(() => import("./pages/HowThingsWork.jsx"));
+const Senses = lazyWithReload(() => import("./pages/Senses.jsx"));
+const Teardown = lazyWithReload(() => import("./pages/Teardown.jsx"));
 const City = lazyWithReload(() => import("./pages/City.jsx"));
+const HowMade = lazyWithReload(() => import("./pages/HowMade.jsx"));
 const Mundos = lazyWithReload(() => import("./pages/Mundos.jsx"));
 const Thinking = lazyWithReload(() => import("./pages/Thinking.jsx"));
 const LearningStrategies = lazyWithReload(() => import("./pages/LearningStrategies.jsx"));
@@ -137,9 +140,12 @@ export default function App() {
             <Route path="/circuit-lab" element={<CircuitLab />} />
             <Route path="/computing" element={<Computing />} />
             <Route path="/how-it-works" element={<HowThingsWork />} />
+            <Route path="/senses" element={<Senses />} />
+            <Route path="/teardown" element={<Teardown />} />
             <Route path="/thinking" element={<Thinking />} />
             <Route path="/learning-strategies" element={<LearningStrategies />} />
             <Route path="/city" element={<City />} />
+            <Route path="/how-made" element={<HowMade />} />
             <Route path="/nature-diary" element={<NatureDiary />} />
             <Route path="/writing" element={<Writing />} />
             <Route path="/communication" element={<Communication />} />

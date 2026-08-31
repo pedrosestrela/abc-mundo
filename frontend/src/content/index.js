@@ -310,6 +310,38 @@ import communicationZh from "./communication.zh.json";
 import communicationEs from "./communication.es.json";
 import communicationIt from "./communication.it.json";
 
+import sensesMissionsPt from "./sensesMissions.pt.json";
+import sensesMissionsEn from "./sensesMissions.en.json";
+import sensesMissionsDe from "./sensesMissions.de.json";
+import sensesMissionsFr from "./sensesMissions.fr.json";
+import sensesMissionsZh from "./sensesMissions.zh.json";
+import sensesMissionsEs from "./sensesMissions.es.json";
+import sensesMissionsIt from "./sensesMissions.it.json";
+
+import objectTeardownPt from "./objectTeardown.pt.json";
+import objectTeardownEn from "./objectTeardown.en.json";
+import objectTeardownDe from "./objectTeardown.de.json";
+import objectTeardownFr from "./objectTeardown.fr.json";
+import objectTeardownZh from "./objectTeardown.zh.json";
+import objectTeardownEs from "./objectTeardown.es.json";
+import objectTeardownIt from "./objectTeardown.it.json";
+
+import howMadePt from "./howMade.pt.json";
+import howMadeEn from "./howMade.en.json";
+import howMadeDe from "./howMade.de.json";
+import howMadeFr from "./howMade.fr.json";
+import howMadeZh from "./howMade.zh.json";
+import howMadeEs from "./howMade.es.json";
+import howMadeIt from "./howMade.it.json";
+
+import foodOriginPt from "./foodOrigin.pt.json";
+import foodOriginEn from "./foodOrigin.en.json";
+import foodOriginDe from "./foodOrigin.de.json";
+import foodOriginFr from "./foodOrigin.fr.json";
+import foodOriginZh from "./foodOrigin.zh.json";
+import foodOriginEs from "./foodOrigin.es.json";
+import foodOriginIt from "./foodOrigin.it.json";
+
 import trafficSignsPt from "./trafficSigns.pt.json";
 import trafficSignsEn from "./trafficSigns.en.json";
 import trafficSignsDe from "./trafficSigns.de.json";
@@ -372,6 +404,10 @@ const PACKING_CHALLENGES = { pt: packingChallengesPt, en: packingChallengesEn, d
 const TRANSPORT_SCENARIOS = { pt: transportScenariosPt, en: transportScenariosEn, de: transportScenariosDe, fr: transportScenariosFr, zh: transportScenariosZh, es: transportScenariosEs, it: transportScenariosIt };
 const HANGMAN_WORDS = { pt: hangmanWordsPt, en: hangmanWordsEn, de: hangmanWordsDe, fr: hangmanWordsFr, zh: hangmanWordsZh, es: hangmanWordsEs, it: hangmanWordsIt };
 const TRAFFIC_SIGNS = { pt: trafficSignsPt, en: trafficSignsEn, de: trafficSignsDe, fr: trafficSignsFr, zh: trafficSignsZh, es: trafficSignsEs, it: trafficSignsIt };
+const HOW_MADE = { pt: howMadePt, en: howMadeEn, de: howMadeDe, fr: howMadeFr, zh: howMadeZh, es: howMadeEs, it: howMadeIt };
+const FOOD_ORIGIN = { pt: foodOriginPt, en: foodOriginEn, de: foodOriginDe, fr: foodOriginFr, zh: foodOriginZh, es: foodOriginEs, it: foodOriginIt };
+const SENSES_MISSIONS = { pt: sensesMissionsPt, en: sensesMissionsEn, de: sensesMissionsDe, fr: sensesMissionsFr, zh: sensesMissionsZh, es: sensesMissionsEs, it: sensesMissionsIt };
+const OBJECT_TEARDOWN = { pt: objectTeardownPt, en: objectTeardownEn, de: objectTeardownDe, fr: objectTeardownFr, zh: objectTeardownZh, es: objectTeardownEs, it: objectTeardownIt };
 
 // Normalizes zh's different shape ({hanzi,...}) to the same shape used by
 // the Latin-alphabet languages ({letter, lower, upper, exampleWord, emoji}).
@@ -591,6 +627,22 @@ export function getTransportScenarios(langCode) {
 
 export function getTrafficSigns(langCode) {
   return TRAFFIC_SIGNS[langCode] || TRAFFIC_SIGNS.pt;
+}
+
+export function getHowMade(langCode) {
+  return HOW_MADE[langCode] || HOW_MADE.pt;
+}
+
+export function getFoodOrigin(langCode) {
+  return FOOD_ORIGIN[langCode] || FOOD_ORIGIN.pt;
+}
+
+export function getSensesMissions(langCode) {
+  return SENSES_MISSIONS[langCode] || SENSES_MISSIONS.pt;
+}
+
+export function getObjectTeardown(langCode) {
+  return OBJECT_TEARDOWN[langCode] || OBJECT_TEARDOWN.pt;
 }
 
 // Countries are language-agnostic in shape (name/fact are per-language
