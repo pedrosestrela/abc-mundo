@@ -789,7 +789,11 @@ function playHarpNote(ctx, freq, duration) {
   osc1.connect(gain);
   osc2.connect(gain2);
   gain2.connect(gain);
-  gain.connect(ctx.destination);
+  // Route through the shared reverb send like every other instrument (this
+  // used to go straight to ctx.destination, the one voice in the whole file
+  // that skipped connectWithReverb) so the harp gets the same touch of room
+  // ambience instead of sounding drier/flatter than everything else.
+  connectWithReverb(ctx, gain, 1);
   osc1.start(now);
   osc2.start(now);
   osc1.stop(now + sustain + 0.1);
@@ -951,10 +955,13 @@ function playCavaquinhoNote(ctx, freq, duration) {
   // sound) and a faster decay, since a cavaquinho's strings ring out
   // quickly. Kept a lighter sub-layer than the guitar to stay bright.
   const now = ctx.currentTime;
-  const voice = buildVoice(ctx, freq, { type: "sawtooth", detuneCents: 8, subLevel: 0.08, filterFreq: 4200, satAmount: 0.12 });
+  // filterFreq trimmed down from 4200 -> 3800: the original cutoff let
+  // enough high-order sawtooth harmonics through to read as slightly buzzy
+  // next to the sample-based plucked instruments.
+  const voice = buildVoice(ctx, freq, { type: "sawtooth", detuneCents: 8, subLevel: 0.08, filterFreq: 3800, satAmount: 0.12 });
   const gain = ctx.createGain();
   gain.gain.setValueAtTime(0, now);
-  gain.gain.linearRampToValueAtTime(0.24, now + 0.004);
+  gain.gain.linearRampToValueAtTime(0.22, now + 0.004);
   gain.gain.exponentialRampToValueAtTime(0.001, now + Math.min(duration, 0.28));
   voice.output.connect(gain);
   connectWithReverb(ctx, gain, 1);
@@ -968,14 +975,20 @@ function playPortugueseGuitarNote(ctx, freq, duration) {
   // filter that emphasises upper harmonics, with a long, slowly fading ring.
   const now = ctx.currentTime;
   const sustain = Math.max(duration, 0.6);
+  // Q trimmed from 4 -> 2.8: at Q4 the resonant peak on top of a square
+  // wave's odd harmonics rang noticeably harsh/nasal; 2.8 keeps the
+  // metallic "guitarra portuguesa" ring without the edge. Peak gain raised
+  // 0.16 -> 0.19 to match the other instruments' loudness (this voice was
+  // sitting well below piano/guitar/etc. and felt weak switching between
+  // instruments).
   const voice = buildVoice(ctx, freq, { type: "square", detuneCents: 5, subLevel: 0.06, filterFreq: freq * 4, satAmount: 0.1 });
   const bandpass = ctx.createBiquadFilter();
   bandpass.type = "bandpass";
   bandpass.frequency.value = freq * 3;
-  bandpass.Q.value = 4;
+  bandpass.Q.value = 2.8;
   const gain = ctx.createGain();
   gain.gain.setValueAtTime(0, now);
-  gain.gain.linearRampToValueAtTime(0.16, now + 0.003);
+  gain.gain.linearRampToValueAtTime(0.19, now + 0.003);
   gain.gain.exponentialRampToValueAtTime(0.001, now + sustain);
   voice.output.connect(bandpass);
   bandpass.connect(gain);
@@ -998,8 +1011,8 @@ function playAccordionNote(ctx, freq, duration) {
   tremoloGain.gain.value = 0.04;
   tremolo.connect(tremoloGain);
   gain.gain.setValueAtTime(0, now);
-  gain.gain.linearRampToValueAtTime(0.16, now + 0.12);
-  gain.gain.linearRampToValueAtTime(0.14, now + sustain - 0.15);
+  gain.gain.linearRampToValueAtTime(0.2, now + 0.12);
+  gain.gain.linearRampToValueAtTime(0.17, now + sustain - 0.15);
   gain.gain.linearRampToValueAtTime(0, now + sustain + 0.1);
   tremoloGain.connect(gain.gain);
   voice.output.connect(gain);
@@ -1026,8 +1039,8 @@ function playConcertinaNote(ctx, freq, duration) {
   tremoloGain.gain.value = 0.025;
   tremolo.connect(tremoloGain);
   gain.gain.setValueAtTime(0, now);
-  gain.gain.linearRampToValueAtTime(0.15, now + 0.05);
-  gain.gain.linearRampToValueAtTime(0.12, now + sustain - 0.12);
+  gain.gain.linearRampToValueAtTime(0.19, now + 0.05);
+  gain.gain.linearRampToValueAtTime(0.15, now + sustain - 0.12);
   gain.gain.linearRampToValueAtTime(0, now + sustain + 0.08);
   tremoloGain.connect(gain.gain);
   voice.output.connect(gain);
