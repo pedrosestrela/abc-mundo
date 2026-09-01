@@ -20,6 +20,7 @@ const CATEGORY_ICONS = {
   eletricidade: "🔌",
   casa: "🏠",
   seguranca: "🛟",
+  convivio: "🤝",
 };
 
 // Every language file uses its own supervision word pair (see

@@ -24,5 +24,17 @@
   {"id": "usar-tesoura", "emoji": "✂️", "category": "casa", "title": "小心使用剪刀", "explanation": "不小心的话剪刀可能会割伤你。使用剪刀时，尤其是锋利的剪刀，一定要有大人在旁边。", "supervision": "大人"},
   {"id": "microondas-seguranca", "emoji": "♨️", "category": "cozinha", "title": "和大人一起使用微波炉", "explanation": "微波炉能很快加热食物，但盘子和食物可能会变得非常烫。使用时一定要请大人帮忙。", "supervision": "大人"},
   {"id": "vela-fosforos", "emoji": "🕯️", "category": "seguranca", "title": "绝不能自己点蜡烛或火柴", "explanation": "火可能非常危险。绝对不要自己点蜡烛、火柴或打火机——一定要请大人帮忙。", "supervision": "大人"},
-  {"id": "alimentar-animal", "emoji": "🐾", "category": "casa", "title": "喂养你的宠物", "explanation": "每天用合适的分量喂养你的宠物，能让它保持健康快乐。", "supervision": "自己"}
+  {"id": "alimentar-animal", "emoji": "🐾", "category": "casa", "title": "喂养你的宠物", "explanation": "每天用合适的分量喂养你的宠物，能让它保持健康快乐。", "supervision": "自己"},
+  {"id": "dizer-por-favor-obrigado", "emoji": "🙏", "category": "convivio", "title": "说\"请\"和\"谢谢\"", "explanation": "使用\"请\"和\"谢谢\"这样的词语，表示对别人的尊重，也让你周围的一切变得更友善。", "supervision": "自己"},
+  {"id": "pedir-desculpa", "emoji": "🤗", "category": "convivio", "title": "犯错时道歉", "explanation": "每个人都会犯错。真诚地道歉说明你在乎别人的感受，也有助于解决问题。", "supervision": "自己"},
+  {"id": "esperar-a-vez", "emoji": "⏳", "category": "convivio", "title": "耐心等待轮到自己", "explanation": "无论是排队还是玩游戏，耐心等待轮到自己，表示对别人的尊重，也是和大家一起玩的重要部分。", "supervision": "自己"},
+  {"id": "partilhar-brinquedos", "emoji": "🧩", "category": "convivio", "title": "分享玩具", "explanation": "和朋友或兄弟姐妹分享你的玩具，会让大家玩得更开心，也能帮你交到朋友。", "supervision": "自己"},
+  {"id": "cumprimentar", "emoji": "👋", "category": "convivio", "title": "向别人问好", "explanation": "面带微笑说\"你好\"和\"再见\"，表示你很友善，也能让对话有个好的开始。", "supervision": "自己"},
+  {"id": "bons-modos-mesa", "emoji": "🍴", "category": "convivio", "title": "有良好的餐桌礼仪", "explanation": "闭着嘴巴吃饭、不满嘴食物说话、需要东西时礼貌地请别人递给你，这些好习惯让大家吃饭更愉快。", "supervision": "自己"},
+  {"id": "ouvir-sem-interromper", "emoji": "👂", "category": "convivio", "title": "不打断别人说话", "explanation": "在回答之前等别人把话说完，表示尊重，也能帮你更好地理解对方的意思。", "supervision": "自己"},
+  {"id": "protetor-solar", "emoji": "🧴", "category": "seguranca", "title": "涂防晒霜", "explanation": "如果长时间在太阳下没有保护，皮肤会被晒伤。出门前请大人帮你涂防晒霜。", "supervision": "大人", "steps": ["请大人帮忙。", "把防晒霜涂在所有裸露的皮肤上。", "涂完后等几分钟再去晒太阳。", "游泳或出很多汗之后要再涂一次。"]},
+  {"id": "nao-falar-estranhos", "emoji": "🙅", "category": "seguranca", "title": "绝不跟陌生人走", "explanation": "无论对方看起来多友善，都不可以跟不认识的人走。如果有陌生人跟你说话，要马上走开，并告诉信任的大人。", "supervision": "自己"},
+  {"id": "cinto-seguranca", "emoji": "🚗", "category": "seguranca", "title": "一直系好安全带", "explanation": "如果车子突然刹车，安全带能保护你。即使是很短的车程，也一定要系好安全带。", "supervision": "自己"},
+  {"id": "por-lixo-caixote", "emoji": "🗑️", "category": "casa", "title": "把垃圾丢进垃圾桶", "explanation": "把包装纸和剩饭剩菜丢进垃圾桶，而不是留在地上，能让一切保持干净整齐。", "supervision": "自己"},
+  {"id": "varrer-chao", "emoji": "🧹", "category": "casa", "title": "帮忙扫地", "explanation": "用小扫帚扫地能帮助保持家里干净，也是帮助家人的好方法。", "supervision": "自己", "steps": ["拿起扫帚和簸箕。", "把灰尘和碎屑扫成一堆。", "用簸箕把它们收起来。", "把垃圾丢进垃圾桶。"]}
 ]
