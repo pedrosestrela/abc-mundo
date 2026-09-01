@@ -109,10 +109,14 @@ Generated on 2026-09-01 with Piper TTS.
   technique as `pt/` (see above).
 - Coverage: all 21 songs in `songs.it.json`.
 
-## `zh/` — not yet generated (Mandarin Chinese)
+## `zh/` — partially generated (Mandarin Chinese, 3 of 21 songs)
 
-Attempted on 2026-09-01 but not completed — left out entirely rather than
-partially generated, so `zh/` still falls back to Web Speech for every song.
+Attempted repeatedly on 2026-09-01. Most songs consistently fail to
+synthesize (see blocker below); 3 succeeded and are included
+(`cancao-do-abc`, `letras-saltitantes`, `amigos-do-alfabeto`) — the
+remaining 18 fall back to Web Speech, exactly like any other
+song/language without a real-audio file (`Songs.jsx` already handles
+this per-song, nothing else needed to be built for the fallback).
 
 - Voice model candidate: `zh_CN-chaowen-medium` (CC0, same
   `piper-voices` repo). The model itself downloaded fine and is
@@ -125,10 +129,25 @@ partially generated, so `zh/` still falls back to Web Speech for every song.
   either crash or silently produce empty phonemes depending on install
   state at the moment of each call). This is a local tooling problem, not
   a licensing or content issue.
-- To finish `zh/` later: regenerate on a machine/environment with a clean
-  Python install (no broken `torch`), run `pip install "piper-tts[zh]"`,
-  then reuse `zh_CN-chaowen-medium` with the same per-line + silence +
-  `--length-scale 1.18` technique as the other languages.
+- Retried on the same date after `torch` finished installing cleanly
+  (`torch==2.13.0+cpu` confirmed present) — 3 songs synthesized
+  successfully (see above), but most others fail consistently and
+  reproducibly (not flaky — the same song fails every retry, 3
+  attempts each) with `wave.Error: # channels not specified` (Piper
+  writes zero audio frames for that line). This is specific to certain
+  lyric text going through g2pW, not a general breakage — short/simple
+  lines seem to work, others don't. This is a genuine Piper +
+  zh_CN-chaowen-medium + g2pW compatibility issue on this platform for
+  specific inputs, not a torch problem — needs real debugging (e.g.
+  testing g2pW's phoneme output directly per failing line, or trying a
+  different zh voice model) rather than a simple retry.
+- To finish `zh/` later: on a machine where `python -m piper -m
+  zh_CN-chaowen-medium.onnx -f test.wav` (piped a short Chinese
+  sentence) reliably produces valid non-empty audio, reuse the same
+  per-line + silence + `--length-scale 1.18` technique as the other
+  languages. If that still fails, try a different Piper zh voice model
+  from `rhasspy/piper-voices` (verify its license the same way as the
+  others) rather than continuing to fight `zh_CN-chaowen-medium`.
 
 ## All languages
 
