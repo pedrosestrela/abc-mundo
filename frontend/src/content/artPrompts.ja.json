@@ -1,0 +1,182 @@
+[
+  {
+    "id": "animal-novo",
+    "emoji": "🦄",
+    "prompt": "まだこの世にいない動物を描いてみよう。名前をつけてね!",
+    "category": "draw"
+  },
+  {
+    "id": "cor-nova",
+    "emoji": "🌈",
+    "prompt": "もし新しい色を作れるとしたら、何という名前にする?何が特別な色にする?",
+    "category": "imagine"
+  },
+  {
+    "id": "casa-sonhos",
+    "emoji": "🏰",
+    "prompt": "夢の家を描いてみよう。",
+    "category": "draw"
+  },
+  {
+    "id": "super-heroi",
+    "emoji": "🦸",
+    "prompt": "スーパーヒーローのキャラクターと、その力を考えてみよう。",
+    "category": "imagine"
+  },
+  {
+    "id": "voar-um-dia",
+    "emoji": "🕊️",
+    "prompt": "1日だけ空を飛べるとしたら、何をするか描いてみよう。",
+    "category": "draw"
+  },
+  {
+    "id": "construir-caixas",
+    "emoji": "📦",
+    "prompt": "家にあるもの(ブロック、箱、あるものなんでも)で何かを作ってみよう。",
+    "category": "build"
+  },
+  {
+    "id": "planeta-novo",
+    "emoji": "🪐",
+    "prompt": "新しい星を考えてみよう。そこにはだれが住んでいて、どんな場所?",
+    "category": "imagine"
+  },
+  {
+    "id": "monstro-simpatico",
+    "emoji": "👹",
+    "prompt": "友だちを作りたいだけの、やさしいモンスターを描いてみよう。",
+    "category": "draw"
+  },
+  {
+    "id": "historia-tres-palavras",
+    "emoji": "📖",
+    "prompt": "「雲」「くつ」「ドラゴン」の3つの言葉を使って、短いお話を作ってみよう。",
+    "category": "story"
+  },
+  {
+    "id": "maquina-doida",
+    "emoji": "⚙️",
+    "prompt": "家にあるもので、へんてこな機械を作ってみよう。何のための機械かな?",
+    "category": "build"
+  },
+  {
+    "id": "jardim-magico",
+    "emoji": "🌻",
+    "prompt": "花が音楽をかなでる、魔法の庭を描いてみよう。",
+    "category": "draw"
+  },
+  {
+    "id": "carta-futuro",
+    "emoji": "✉️",
+    "prompt": "20年後の自分について、お話を作ってみよう。",
+    "category": "story"
+  },
+  {
+    "id": "roupa-maluca",
+    "emoji": "👗",
+    "prompt": "特別な日に着てみたい、へんてこな服を描いてみよう。",
+    "category": "draw"
+  },
+  {
+    "id": "castelo-areia",
+    "emoji": "🏖️",
+    "prompt": "見つけたもの(砂、ブロック、クッションなど)でお城を作ってみよう。",
+    "category": "build"
+  },
+  {
+    "id": "amigo-imaginario",
+    "emoji": "👻",
+    "prompt": "そうぞうの中の友だちを考えてみよう。名前は?何をするのが好きかな?",
+    "category": "imagine"
+  },
+  {
+    "id": "cidade-nuvens",
+    "emoji": "☁️",
+    "prompt": "雲の上にうかぶ街を描いてみよう。",
+    "category": "draw"
+  },
+  {
+    "id": "aventura-oceano",
+    "emoji": "🐙",
+    "prompt": "海の底で、不思議な生き物との冒険を考えてみよう。",
+    "category": "story"
+  },
+  {
+    "id": "forte-almofadas",
+    "emoji": "🛋️",
+    "prompt": "クッションと毛布でとりでを作ってみよう。ひみつの名前をつけてね。",
+    "category": "build"
+  },
+  {
+    "id": "autorretrato-super",
+    "emoji": "🖼️",
+    "prompt": "マンガのキャラクターになった自分を描いてみよう。",
+    "category": "draw"
+  },
+  {
+    "id": "musica-inventada",
+    "emoji": "🎶",
+    "prompt": "今日の一日について、短い歌を作ってみよう。だれかにうたってあげてもいいね!",
+    "category": "imagine"
+  },
+  {
+    "id": "familia-animais",
+    "emoji": "🐾",
+    "prompt": "あなたの家族を描いてみよう。でも、それぞれの人がちがう動物になっているよ。",
+    "category": "draw"
+  },
+  {
+    "id": "invisivel-um-dia",
+    "emoji": "🫥",
+    "prompt": "1日だけ透明人間になれるとしたら、何をする?",
+    "category": "imagine"
+  },
+  {
+    "id": "objeto-fala",
+    "emoji": "🧸",
+    "prompt": "いちばん好きなおもちゃが命を持って話し出すお話を作ってみよう。",
+    "category": "story"
+  },
+  {
+    "id": "barco-reciclado",
+    "emoji": "🚢",
+    "prompt": "リサイクル素材(ペットボトル、コルク、段ボール)で船を作って、浮くかためしてみよう。",
+    "category": "build"
+  },
+  {
+    "id": "fundo-mar-desenho",
+    "emoji": "🐠",
+    "prompt": "まだだれも探検したことのない、海の底にあると思うものを描いてみよう。",
+    "category": "draw"
+  },
+  {
+    "id": "maquina-tempo",
+    "emoji": "⏳",
+    "prompt": "タイムマシンがあったら、どの時代に旅行したい?それはどうして?",
+    "category": "imagine"
+  },
+  {
+    "id": "meia-perdida",
+    "emoji": "🧦",
+    "prompt": "せんたく機の中で消えてしまう靴下がどこに行くのか、お話を作ってみよう。",
+    "category": "story"
+  },
+  {
+    "id": "pista-berlindes",
+    "emoji": "🎢",
+    "prompt": "段ボールの筒や箱を使って、ビー玉が転がるコースを作ってみよう。",
+    "category": "build"
+  },
+  {
+    "id": "eu-idoso",
+    "emoji": "🧓",
+    "prompt": "とてもおじいさん・おばあさんになったときの自分を描いてみよう。",
+    "category": "draw"
+  },
+  {
+    "id": "controlar-tempo",
+    "emoji": "🌦️",
+    "prompt": "天気(雨、晴れ、雪)を自分で決められるとしたら、今日はどれを選ぶ?それはどうして?",
+    "category": "imagine"
+  }
+]

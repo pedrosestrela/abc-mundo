@@ -1,0 +1,122 @@
+[
+  {
+    "id": "hearing-eyes-closed",
+    "sense": "hearing",
+    "emoji": "👂",
+    "supervision": "sozinho",
+    "text": "20秒間、目を閉じてみよう。ちがう音がいくつ聞き分けられるかな?",
+    "hook": "目を閉じると、耳がもっとよく聞こえるようになるよ。やってみよう!"
+  },
+  {
+    "id": "hearing-loud-soft",
+    "sense": "hearing",
+    "emoji": "👂",
+    "supervision": "sozinho",
+    "text": "家の中で大きな音と小さな音を見つけてみよう。どっちが好き?",
+    "hook": "音は雷のように大きかったり、ささやき声のように小さかったりするよ。"
+  },
+  {
+    "id": "hearing-nature",
+    "sense": "hearing",
+    "emoji": "👂",
+    "supervision": "sozinho",
+    "text": "外や窓のそばに行って、1分間耳をすませてみよう。どんな自然の音が聞こえる?",
+    "hook": "風、鳥、雨…自然には自然だけのオーケストラがあるんだ!"
+  },
+  {
+    "id": "smell-foods",
+    "sense": "smell",
+    "emoji": "👃",
+    "supervision": "adulto",
+    "text": "大人と一緒に、目を閉じて、においだけで食べ物を3つ当ててみよう。",
+    "hook": "鼻は何千ものちがうにおいを覚えられるんだ。あなたの鼻を試してみよう!"
+  },
+  {
+    "id": "smell-flowers",
+    "sense": "smell",
+    "emoji": "👃",
+    "supervision": "sozinho",
+    "text": "花やくだもののにおいをかいでみよう。そのにおいを自分の言葉でどう表す?",
+    "hook": "どの花もどのくだものも、それぞれ特別なにおいを持っているよ。言葉で表せるかな?"
+  },
+  {
+    "id": "smell-house",
+    "sense": "smell",
+    "emoji": "👃",
+    "supervision": "sozinho",
+    "text": "家の中を歩いて、いちばんいいにおいと、いちばん不思議なにおいを見つけよう。",
+    "hook": "家のどの部屋にもちがうにおいがあるよ。においの探偵になろう!"
+  },
+  {
+    "id": "touch-textures",
+    "sense": "touch",
+    "emoji": "✋",
+    "supervision": "sozinho",
+    "text": "家の中で、ざらざらしたもの、ふわふわしたもの、冷たいものを見つけよう。",
+    "hook": "あなたの手はいろいろなさわり心地を感じられるよ。探検してみよう!"
+  },
+  {
+    "id": "touch-blind",
+    "sense": "touch",
+    "emoji": "✋",
+    "supervision": "adulto",
+    "text": "目を閉じて、大人に3つのものをわたしてもらい、さわって何かを当ててみよう。",
+    "hook": "見えないとき、手が目のかわりになるよ。全部当てられるかな?"
+  },
+  {
+    "id": "touch-temperature",
+    "sense": "touch",
+    "emoji": "✋",
+    "supervision": "adulto",
+    "text": "気をつけながら、冷たいもの、ぬるいもの、あたたかいもの、温度のちがう3つのものをさわってみよう。",
+    "hook": "肌は冷たいかあたたかいかを感じられるよ。熱いものは、いつも大人に手伝ってもらおうね!"
+  },
+  {
+    "id": "taste-flavors",
+    "sense": "taste",
+    "emoji": "👅",
+    "supervision": "adulto",
+    "text": "大人と一緒に、あまいもの、すっぱいもの、しょっぱいものを味わってみよう。",
+    "hook": "舌はあまい、すっぱい、しょっぱい、にがいなど、いろいろな味を感じられるよ。"
+  },
+  {
+    "id": "taste-eyes-closed",
+    "sense": "taste",
+    "emoji": "👅",
+    "supervision": "adulto",
+    "text": "目を閉じて、大人が選んだ食べ物を味わって、何かを当ててみよう。",
+    "hook": "食べ物を見ないと、味覚だけが働くことになるよ。当てられると思う?"
+  },
+  {
+    "id": "taste-describe",
+    "sense": "taste",
+    "emoji": "👅",
+    "supervision": "sozinho",
+    "text": "いちばん好きなくだものを味わって、その味を3つの言葉で表してみよう。",
+    "hook": "味を言葉で表すのは楽しいチャレンジだよ。やってみよう!"
+  },
+  {
+    "id": "sight-colors",
+    "sense": "sight",
+    "emoji": "👀",
+    "supervision": "sozinho",
+    "text": "今、まわりに赤いものがいくつ見えるか数えてみよう。",
+    "hook": "目は何百万もの色を見ているけれど、いっぺんに1つしか気づかないこともあるんだ。"
+  },
+  {
+    "id": "sight-details",
+    "sense": "sight",
+    "emoji": "👀",
+    "supervision": "sozinho",
+    "text": "葉っぱか石を1分間じっくり見てみよう。どんな細かいところに気づいた?",
+    "hook": "よく見てみると、ひと目では気づかなかった細かいところを見つけられるよ。"
+  },
+  {
+    "id": "sight-far-near",
+    "sense": "sight",
+    "emoji": "👀",
+    "supervision": "sozinho",
+    "text": "自分からとても遠いものと、とても近いものを見つけよう。",
+    "hook": "目は近くのものと遠くのもの、どちらにもピントを合わせられるよ。その魔法を試してみよう!"
+  }
+]

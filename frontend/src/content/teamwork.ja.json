@@ -1,0 +1,72 @@
+{
+  "characters": [
+    {
+      "id": "tomas",
+      "name": "Tomás",
+      "icon": "💪",
+      "trait": "とても力が強い"
+    },
+    {
+      "id": "ines",
+      "name": "Inês",
+      "icon": "🎨",
+      "trait": "絵を描くのがとても上手"
+    },
+    {
+      "id": "rui",
+      "name": "Rui",
+      "icon": "🏃",
+      "trait": "とても走るのが速い"
+    },
+    {
+      "id": "maria",
+      "name": "Maria",
+      "icon": "📋",
+      "trait": "整理整頓がとても得意"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "heavy-boxes",
+      "icon": "📦",
+      "task": "引っ越しの重い箱を車まで運ぶ。",
+      "correct": "tomas",
+      "explanation": "トマスはとても力が強いから、重いものを持ち上げるのにぴったりだよ。"
+    },
+    {
+      "id": "event-poster",
+      "icon": "🖼️",
+      "task": "学校のパーティーのポスターを描く。",
+      "correct": "ines",
+      "explanation": "イネスは絵を描くのがとても上手だから、いちばんすてきなポスターを作れるよ。"
+    },
+    {
+      "id": "urgent-message",
+      "icon": "✉️",
+      "task": "廊下のつきあたりの部屋に、急いで大事な伝言を届ける。",
+      "correct": "rui",
+      "explanation": "ルイはとても走るのが速いから、いちばん早くそこに着けるよ。"
+    },
+    {
+      "id": "group-schedule",
+      "icon": "🗓️",
+      "task": "グループの活動で、だれが何をいつやるかを決める。",
+      "correct": "maria",
+      "explanation": "マリアは整理整頓がとても得意だから、みんなのためにわかりやすい計画を立てられるよ。"
+    },
+    {
+      "id": "move-table",
+      "icon": "🪑",
+      "task": "重いテーブルを部屋の反対側に動かす。",
+      "correct": "tomas",
+      "explanation": "トマスはとても力が強いから、テーブルを楽々動かせるよ。"
+    },
+    {
+      "id": "decorate-drawing",
+      "icon": "🖍️",
+      "task": "教室をかざるための、すてきな絵を描く。",
+      "correct": "ines",
+      "explanation": "イネスは絵を描くのがとても上手だから、いちばんすてきな絵を描けるよ。"
+    }
+  ]
+}

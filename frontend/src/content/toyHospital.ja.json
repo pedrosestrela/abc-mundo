@@ -1,0 +1,74 @@
+[
+  {
+    "id": "sore-arm", "characterEmoji": "🧸", "characterName": "くまさん", "complaintEmoji": "😣", "isEmotional": false,
+    "complaint": "たなから落ちてから、うでが少しいたいよ。",
+    "choices": [
+      { "id": "rest-tell", "emoji": "🛌", "label": "うでを休めて大人に伝える", "correct": true, "feedback": "いい選択だね!休んで大人に伝えるのは、いつだっていちばん安全な最初のステップだよ。" },
+      { "id": "ignore", "emoji": "🙈", "label": "気にせず遊び続ける", "correct": false, "feedback": "大人に伝えて、大丈夫か見てもらうほうがいいよ。" },
+      { "id": "bandage", "emoji": "🩹", "label": "やさしくばんそうこうをはる", "correct": true, "feedback": "それも少し助けになるけれど、やっぱり大人にも伝えるのがいちばんだよ。" }
+    ]
+  },
+  {
+    "id": "tummy-ache", "characterEmoji": "🐰", "characterName": "うさぎさん", "complaintEmoji": "😖", "isEmotional": false,
+    "complaint": "お昼を食べてから、おなかがへんな感じがするよ。",
+    "choices": [
+      { "id": "tell-adult", "emoji": "🗣️", "label": "どんな気分か大人に伝える", "correct": true, "feedback": "いいね!大人に伝えると、あなたの世話をしやすくなるよ。" },
+      { "id": "drink-water", "emoji": "💧", "label": "水を少し飲んで休む", "correct": true, "feedback": "いい考えだね。少し休むと助けになるよ。" },
+      { "id": "more-candy", "emoji": "🍬", "label": "もっとお菓子を食べる", "correct": false, "feedback": "おなかがへんな感じがするときは、もっとお菓子を食べても助けにならないよ。大人に伝えるほうがいいね。" }
+    ]
+  },
+  {
+    "id": "small-cut", "characterEmoji": "🦖", "characterName": "ディノ", "complaintEmoji": "🩹", "isEmotional": false,
+    "complaint": "ひざに小さなすりきずがあるよ。",
+    "choices": [
+      { "id": "wash-bandage", "emoji": "🚿", "label": "水で洗ってばんそうこうをはる", "correct": true, "feedback": "いいね!よく洗って覆うと、すりきずの手当てになるよ。" },
+      { "id": "show-adult", "emoji": "👀", "label": "大人に見せる", "correct": true, "feedback": "すごくいい考えだね。大人が手当てを手伝ってくれるよ。" },
+      { "id": "ignore-dirty", "emoji": "🙈", "label": "何もせずに遊び続ける", "correct": false, "feedback": "ばい菌が入らないように、きずを洗うか大人に見せるほうがいいよ。" }
+    ]
+  },
+  {
+    "id": "sniffles", "characterEmoji": "🐘", "characterName": "ぞうさん", "complaintEmoji": "🤧", "isEmotional": false,
+    "complaint": "鼻水が出て、くしゃみがたくさん出るよ。",
+    "choices": [
+      { "id": "tissue-rest", "emoji": "🧻", "label": "ティッシュを使って休む", "correct": true, "feedback": "いいね!ティッシュを使って休むと、気分がよくなるよ。" },
+      { "id": "tell-adult", "emoji": "🗣️", "label": "気分がよくないと大人に伝える", "correct": true, "feedback": "いい選択だね。大人が世話をしてくれるよ。" },
+      { "id": "share-toys", "emoji": "🧸", "label": "手を洗わずに遊んでおもちゃを貸し借りする", "correct": false, "feedback": "かぜのときは、ばい菌を広げないように、手を洗ってくしゃみのときは口をおおうことが大切だよ。" }
+    ]
+  },
+  {
+    "id": "tired-eyes", "characterEmoji": "🦉", "characterName": "ふくろうさん", "complaintEmoji": "😴", "isEmotional": false,
+    "complaint": "目が疲れて重い感じがするよ。",
+    "choices": [
+      { "id": "rest-eyes", "emoji": "😌", "label": "目を休めて少しお昼寝する", "correct": true, "feedback": "いいね!目を休めると、気分がよくなるよ。" },
+      { "id": "tell-adult", "emoji": "🗣️", "label": "疲れていると大人に言う", "correct": true, "feedback": "いい考えだね。大人が休むのを手伝ってくれるよ。" },
+      { "id": "bright-screen", "emoji": "📱", "label": "明るい画面を見続ける", "correct": false, "feedback": "疲れているときに画面を見ると、目がもっと疲れてしまうよ。休むほうがいいね。" }
+    ]
+  },
+  {
+    "id": "sad-feelings", "characterEmoji": "🐼", "characterName": "パンダさん", "complaintEmoji": "😢", "isEmotional": true,
+    "complaint": "友だちが一緒に遊んでくれなくて、悲しい気持ちだよ。",
+    "choices": [
+      { "id": "talk-adult", "emoji": "🗣️", "label": "どんな気持ちか大人に話す", "correct": true, "feedback": "いいね!気持ちを大人に話すと、とても助けになるよ。" },
+      { "id": "hug-comfort", "emoji": "🤗", "label": "深呼吸して、ふわふわしたものをだきしめる", "correct": true, "feedback": "それをすると、少し気分がよくなるかもしれないね。" },
+      { "id": "keep-inside", "emoji": "🤐", "label": "何も言わずに自分の中にためこむ", "correct": false, "feedback": "気持ちは、信頼できるだれかと分かち合うほうがいつもいいよ。" }
+    ]
+  },
+  {
+    "id": "thirsty-tired", "characterEmoji": "🐸", "characterName": "かえるさん", "complaintEmoji": "🥵", "isEmotional": false,
+    "complaint": "たくさん遊んだから、のどがかわいて、汗びっしょりだよ。",
+    "choices": [
+      { "id": "drink-shade", "emoji": "🥤", "label": "水を飲んで日かげで休む", "correct": true, "feedback": "いいね!水を飲んで休むと、体が元気を取りもどせるよ。" },
+      { "id": "tell-adult", "emoji": "🗣️", "label": "休みたいと大人に言う", "correct": true, "feedback": "いい考えだね。大人が休むのを手伝ってくれるよ。" },
+      { "id": "keep-running", "emoji": "🏃", "label": "日なたで走り続ける", "correct": false, "feedback": "立ち止まって水を飲み、日かげで少し休むほうがいいよ。" }
+    ]
+  },
+  {
+    "id": "bump-head", "characterEmoji": "🦁", "characterName": "ライオンさん", "complaintEmoji": "🤕", "isEmotional": false,
+    "complaint": "おもちゃだなに頭をぶつけちゃったよ。",
+    "choices": [
+      { "id": "tell-now", "emoji": "🚨", "label": "すぐに大人に伝える", "correct": true, "feedback": "とてもよくできたね!頭をぶつけたときは、いつもすぐに大人に伝える理由になるよ。" },
+      { "id": "sit-wait", "emoji": "🪑", "label": "落ち着いてすわって助けを待つ", "correct": true, "feedback": "いいね。待っている間、落ち着いていることもいい考えだよ。" },
+      { "id": "keep-jumping", "emoji": "🤸", "label": "そのまま飛びはね続ける", "correct": false, "feedback": "頭をぶつけたあとは、立ち止まってすぐに大人に伝えることが大切だよ。" }
+    ]
+  }
+]
