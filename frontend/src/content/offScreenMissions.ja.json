@@ -1,0 +1,16 @@
+[
+  { "id": "draw-letters", "template": "紙に大きな{letter}の文字を{number}個、色えんぴつを変えながら書いてみよう。" },
+  { "id": "find-object", "template": "おうちの中で{letter}からはじまるものをさがしてみよう。" },
+  { "id": "count-object", "template": "おうちで同じもの{number}個をみつけて、こえに出して数えよう。" },
+  { "id": "trace-finger", "template": "指で{letter}の文字を空中に書いてから、家族の人の背中にも書いてみよう。" },
+  { "id": "letter-hunt-book", "template": "本や雑誌をひらいて、{letter}からはじまることば{number}個をさがしてみよう。" },
+  { "id": "build-letter", "template": "ねんど、毛糸、アイスの棒などで{letter}の文字を作ってみよう。" },
+  { "id": "count-steps", "template": "いちばん近いドアまで、大きな一歩を{number}回、声に出して数えながら歩こう。" },
+  { "id": "letter-snack", "template": "おやつの準備を手伝って、くだものを{number}個お皿にならべよう。" },
+  { "id": "family-word", "template": "家族に{letter}からはじまることばを聞いて、それを絵にかいてみよう。" },
+  { "id": "letter-walk", "template": "お散歩のときに、{letter}からはじまるもの{number}個をさがしてみよう。" },
+  { "id": "sing-count", "template": "{number}まで数えるうたや、となえうたを歌ったり作ったりしてみよう。" },
+  { "id": "letter-shape", "template": "ひもやリボンを使って、床に{letter}の形を作ってみよう。" },
+  { "id": "sort-toys", "template": "おもちゃ{number}個を色ごとに分けて、それぞれいくつあるか数えよう。" },
+  { "id": "letter-sound", "template": "{letter}の音からはじまることばを{number}個、ひとつずつ言ってみよう。" }
+]

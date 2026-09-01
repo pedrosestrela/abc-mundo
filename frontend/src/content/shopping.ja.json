@@ -1,0 +1,53 @@
+{
+  "scenarios": [
+    {
+      "id": "grocery",
+      "emoji": "🛒",
+      "storeName": "食料品店",
+      "budget": 1000,
+      "items": [
+        { "id": "apple", "emoji": "🍎", "name": "りんご", "price": 80 },
+        { "id": "banana", "emoji": "🍌", "name": "バナナ", "price": 60 },
+        { "id": "juice", "emoji": "🧃", "name": "ジュース", "price": 150 },
+        { "id": "bread", "emoji": "🍞", "name": "パン", "price": 120 },
+        { "id": "cheese", "emoji": "🧀", "name": "チーズ", "price": 250 },
+        { "id": "cookie", "emoji": "🍪", "name": "クッキー", "price": 100 },
+        { "id": "icecream", "emoji": "🍦", "name": "アイスクリーム", "price": 200 },
+        { "id": "ball", "emoji": "⚽", "name": "ボール", "price": 500 },
+        { "id": "book", "emoji": "📖", "name": "本", "price": 350 },
+        { "id": "toycar", "emoji": "🚗", "name": "おもちゃの車", "price": 450 }
+      ]
+    },
+    {
+      "id": "stationery",
+      "emoji": "✏️",
+      "storeName": "文房具店",
+      "budget": 800,
+      "items": [
+        { "id": "pencil", "emoji": "✏️", "name": "えんぴつ", "price": 50 },
+        { "id": "eraser", "emoji": "🧽", "name": "消しゴム", "price": 40 },
+        { "id": "notebook", "emoji": "📓", "name": "ノート", "price": 180 },
+        { "id": "crayons", "emoji": "🖍️", "name": "クレヨン", "price": 220 },
+        { "id": "ruler", "emoji": "📏", "name": "じょうぎ", "price": 90 },
+        { "id": "glue", "emoji": "🧴", "name": "のり", "price": 70 },
+        { "id": "scissors", "emoji": "✂️", "name": "はさみ", "price": 150 },
+        { "id": "stickers", "emoji": "⭐", "name": "シール", "price": 120 }
+      ]
+    },
+    {
+      "id": "toystore",
+      "emoji": "🧸",
+      "storeName": "おもちゃ屋さん",
+      "budget": 1500,
+      "items": [
+        { "id": "kite", "emoji": "🪁", "name": "たこ", "price": 300 },
+        { "id": "puzzle", "emoji": "🧩", "name": "パズル", "price": 380 },
+        { "id": "yoyo", "emoji": "🪀", "name": "ヨーヨー", "price": 150 },
+        { "id": "robot", "emoji": "🤖", "name": "ロボット", "price": 600 },
+        { "id": "doll", "emoji": "🪆", "name": "人形", "price": 420 },
+        { "id": "blocks", "emoji": "🧱", "name": "ブロック", "price": 350 },
+        { "id": "balloon", "emoji": "🎈", "name": "風船", "price": 50 }
+      ]
+    }
+  ]
+}

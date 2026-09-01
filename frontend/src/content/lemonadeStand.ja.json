@@ -1,0 +1,55 @@
+{
+  "scenarios": [
+    {
+      "id": "lemonade",
+      "emoji": "🍋",
+      "productName": "レモネードスタンド",
+      "ingredients": [
+        { "id": "lemons", "emoji": "🍋", "name": "レモン", "cost": 20 },
+        { "id": "sugar", "emoji": "🍬", "name": "さとう", "cost": 15 },
+        { "id": "water", "emoji": "💧", "name": "水", "cost": 5 },
+        { "id": "cups", "emoji": "🥤", "name": "コップ", "cost": 10 }
+      ],
+      "priceOptions": [50, 75, 100, 150],
+      "tips": [
+        "ねだんが安すぎると、たくさん売れるけど1つずつのもうけは少ないよ。",
+        "ねだんが高すぎると、1つずつのもうけは多いけど買わない人も出てくるよ。",
+        "利益とは、材料のお金をはらったあとに残るお金のことだよ。"
+      ]
+    },
+    {
+      "id": "orangejuice",
+      "emoji": "🍊",
+      "productName": "オレンジジューススタンド",
+      "ingredients": [
+        { "id": "oranges", "emoji": "🍊", "name": "オレンジ", "cost": 25 },
+        { "id": "sugar", "emoji": "🍬", "name": "さとう", "cost": 15 },
+        { "id": "water", "emoji": "💧", "name": "水", "cost": 5 },
+        { "id": "cups", "emoji": "🥤", "name": "コップ", "cost": 10 }
+      ],
+      "priceOptions": [60, 90, 120, 160],
+      "tips": [
+        "夏はのどがかわく人が多くて、冷たい飲みものがほしくなるよ!",
+        "オレンジはレモンより少し高いから、材料費が高くなるよ。",
+        "暑くて晴れた日は、たくさんのコップが売れるかもしれないよ。"
+      ]
+    },
+    {
+      "id": "hotchocolate",
+      "emoji": "🍫",
+      "productName": "ホットチョコレートスタンド",
+      "ingredients": [
+        { "id": "cocoa", "emoji": "🍫", "name": "ココア", "cost": 30 },
+        { "id": "milk", "emoji": "🥛", "name": "牛乳", "cost": 20 },
+        { "id": "sugar", "emoji": "🍬", "name": "さとう", "cost": 15 },
+        { "id": "cups", "emoji": "🥤", "name": "コップ", "cost": 10 }
+      ],
+      "priceOptions": [80, 100, 130, 180],
+      "tips": [
+        "冬は体をあたためる温かい飲みものが人気だよ。",
+        "ココアと牛乳は高いから、良いねだんで売る必要があるよ。",
+        "寒い日には、思ったよりたくさんホットチョコレートが売れるかもしれないよ!"
+      ]
+    }
+  ]
+}
