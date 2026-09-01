@@ -1,0 +1,557 @@
+[
+  {
+    "id": "bicicleta",
+    "emoji": "🚲",
+    "category": "transporte",
+    "title": "自転車",
+    "parts": [
+      {
+        "id": "pedais",
+        "emoji": "🦵",
+        "label": "ペダル",
+        "predictionPrompt": "ペダルは何をすると思う?",
+        "explanation": "足でペダルを踏むと、歯車が回ります。自転車を動かす力はここから始まります。"
+      },
+      {
+        "id": "corrente",
+        "emoji": "⚙️",
+        "label": "チェーン",
+        "predictionPrompt": "チェーンは何をすると思う?",
+        "explanation": "チェーンはペダルと後ろの車輪をつないでいます。ペダルの歯車が回ると、チェーンが別の歯車を引っ張り、後ろの車輪も回します。"
+      },
+      {
+        "id": "rodas",
+        "emoji": "🎡",
+        "label": "車輪",
+        "predictionPrompt": "車輪は何をすると思う?",
+        "explanation": "車輪は回転して地面を進み、足の力を前に進む動きに変えます。"
+      },
+      {
+        "id": "travoes",
+        "emoji": "🛑",
+        "label": "ブレーキ",
+        "predictionPrompt": "ブレーキは何をすると思う?",
+        "explanation": "レバーを握ると、ブレーキが車輪をつかんで回転を止め、自転車がゆっくりになったり止まったりします。"
+      }
+    ],
+    "summary": "これで仕組みがわかったね!ペダルが力を生み、チェーンがその力を後ろの車輪に伝え、車輪が回って前に進み、必要なときはブレーキがすべてを止めます。"
+  },
+  {
+    "id": "carro",
+    "emoji": "🚗",
+    "category": "transporte",
+    "title": "車",
+    "parts": [
+      {
+        "id": "motor",
+        "emoji": "🔧",
+        "label": "エンジン",
+        "predictionPrompt": "エンジンは何をすると思う?",
+        "explanation": "エンジンは燃料を燃やしたり電気エネルギーを使ったりして力を作ります。すべてを動かすエネルギーを生む、車の心臓です。"
+      },
+      {
+        "id": "volante",
+        "emoji": "🎡",
+        "label": "ハンドル",
+        "predictionPrompt": "ハンドルは何をすると思う?",
+        "explanation": "ハンドルは前輪とつながっています。運転する人がハンドルを回すと、車輪もその方向に向き、車の向きが変わります。"
+      },
+      {
+        "id": "rodas-carro",
+        "emoji": "🛞",
+        "label": "車輪",
+        "predictionPrompt": "車の車輪は何をすると思う?",
+        "explanation": "車輪はエンジンの力を受け取り、道路の上で回転して、車を前に進めます。"
+      },
+      {
+        "id": "travoes-carro",
+        "emoji": "🛑",
+        "label": "ブレーキ",
+        "predictionPrompt": "車のブレーキは何をすると思う?",
+        "explanation": "運転する人がブレーキペダルを踏むと、ディスクが車輪を強くはさみ、車がゆっくりになったり止まったりします。"
+      }
+    ],
+    "summary": "これで仕組みがわかったね!エンジンが力を作り、ハンドルが方向を決め、車輪が車を前に進め、ブレーキが安全にすべてを止めます。"
+  },
+  {
+    "id": "relogio",
+    "emoji": "⏰",
+    "category": "casa",
+    "title": "時計",
+    "parts": [
+      {
+        "id": "pilha",
+        "emoji": "🔋",
+        "label": "電池",
+        "predictionPrompt": "電池は何をすると思う?",
+        "explanation": "食べ物が私たちにエネルギーをくれるように、電池は時計に電気エネルギーを与えます。電池がないと時計は止まります。"
+      },
+      {
+        "id": "engrenagens",
+        "emoji": "⚙️",
+        "label": "歯車",
+        "predictionPrompt": "歯車は何をすると思う?",
+        "explanation": "歯車は時計の中にある小さな歯のついた車です。電池のエネルギーで1つが回り、それが次の歯車を回し、いつも正しい速さで動きます。"
+      },
+      {
+        "id": "ponteiros",
+        "emoji": "🕐",
+        "label": "針",
+        "predictionPrompt": "針は何をすると思う?",
+        "explanation": "針は歯車とつながっています。ゆっくり正確に動いて、時、分、秒を教えてくれます。"
+      },
+      {
+        "id": "mostrador",
+        "emoji": "🔢",
+        "label": "文字盤",
+        "predictionPrompt": "文字盤は何をすると思う?",
+        "explanation": "文字盤には周りに数字があります。針の位置を読んで、今何時かを知る場所です。"
+      }
+    ],
+    "summary": "これで仕組みがわかったね!電池がエネルギーを与え、歯車が正しい速さで回り、針がゆっくり動き、文字盤で時間を読み取れます。"
+  },
+  {
+    "id": "smartphone",
+    "emoji": "📱",
+    "category": "tecnologia",
+    "title": "スマートフォン",
+    "parts": [
+      {
+        "id": "bateria-phone",
+        "emoji": "🔋",
+        "label": "バッテリー",
+        "predictionPrompt": "バッテリーは何をすると思う?",
+        "explanation": "バッテリーは電気エネルギーをためて、スマートフォンのすべての部分に電気を送ります。だからコンセントから離れていても使えます。"
+      },
+      {
+        "id": "processador",
+        "emoji": "🧠",
+        "label": "プロセッサー",
+        "predictionPrompt": "プロセッサーは何をすると思う?",
+        "explanation": "プロセッサーはスマートフォンの脳のようなものです。1秒間に何百万回も計算をして、アプリやゲーム、メッセージを開きます。"
+      },
+      {
+        "id": "ecra-tatil",
+        "emoji": "🖐️",
+        "label": "タッチスクリーン",
+        "predictionPrompt": "タッチスクリーンは何をすると思う?",
+        "explanation": "画面は映像を映すだけでなく、指が触れたことも感じ取り、どこをタップしたいのか、何を開きたいのかを知ります。"
+      },
+      {
+        "id": "antena",
+        "emoji": "📶",
+        "label": "アンテナ",
+        "predictionPrompt": "アンテナは何をすると思う?",
+        "explanation": "アンテナは空気中を通して目に見えない信号を送ったり受け取ったりし、スマートフォンをインターネットにつなぎ、電話ができるようにします。"
+      }
+    ],
+    "summary": "これで仕組みがわかったね!バッテリーがエネルギーを与え、プロセッサーが考え、画面が映像を映しタッチを感じ取り、アンテナがスマートフォンを世界とつなぎます。"
+  },
+  {
+    "id": "frigorifico",
+    "emoji": "🧊",
+    "category": "casa",
+    "title": "冷蔵庫",
+    "parts": [
+      {
+        "id": "compressor",
+        "emoji": "⚙️",
+        "label": "コンプレッサー",
+        "predictionPrompt": "コンプレッサーは何をすると思う?",
+        "explanation": "コンプレッサーは冷蔵庫のエンジンです。特別な気体を圧縮し、パイプの中を流れさせて、とても冷たくします。"
+      },
+      {
+        "id": "gas-refrigerante",
+        "emoji": "❄️",
+        "label": "冷媒ガス",
+        "predictionPrompt": "冷媒ガスは何をすると思う?",
+        "explanation": "その冷たいガスは冷蔵庫の壁の中を流れて、中の熱を吸い取り、食べ物を新鮮に保ちます。"
+      },
+      {
+        "id": "termostato",
+        "emoji": "🌡️",
+        "label": "サーモスタット",
+        "predictionPrompt": "サーモスタットは何をすると思う?",
+        "explanation": "サーモスタットは賢い温度計のようなものです。中の温度をはかり、コンプレッサーのオンオフを切り替えて、ちょうどよい温度を保ちます。"
+      },
+      {
+        "id": "isolamento",
+        "emoji": "🚪",
+        "label": "断熱ドア",
+        "predictionPrompt": "断熱ドアは何をすると思う?",
+        "explanation": "冷蔵庫の壁とドアには特別な素材が使われていて、冷気が逃げるのと熱が入ってくるのを防ぎます。"
+      }
+    ],
+    "summary": "これで仕組みがわかったね!コンプレッサーがガスを動かし、ガスが中の熱を奪い、サーモスタットが正しい温度を保ち、断熱ドアが冷気を閉じ込めます。"
+  },
+  {
+    "id": "elevador",
+    "emoji": "🛗",
+    "category": "casa",
+    "title": "エレベーター",
+    "parts": [
+      {
+        "id": "botoes",
+        "emoji": "🔘",
+        "label": "ボタン",
+        "predictionPrompt": "ボタンは何をすると思う?",
+        "explanation": "ボタンを押すと、行きたい階をエレベーターに伝えます。システムがその要求を受け取ります。"
+      },
+      {
+        "id": "motor-elevador",
+        "emoji": "⚙️",
+        "label": "モーター",
+        "predictionPrompt": "エレベーターのモーターは何をすると思う?",
+        "explanation": "モーターが鋼鉄のケーブルを引き上げたり、ゆっくりゆるめたりして、かごを上げ下げします。"
+      },
+      {
+        "id": "cabos",
+        "emoji": "🪢",
+        "label": "鋼鉄のケーブル",
+        "predictionPrompt": "鋼鉄のケーブルは何をすると思う?",
+        "explanation": "ケーブルはとても頑丈で、かごを支え、上にあるモーターとつなぎ、かごが落ちないようにします。"
+      },
+      {
+        "id": "cabina",
+        "emoji": "🚪",
+        "label": "かご",
+        "predictionPrompt": "かごは何をすると思う?",
+        "explanation": "かごはあなたが乗り込む箱です。垂直なレールに沿って動き、各階の高さでぴったり止まります。"
+      }
+    ],
+    "summary": "これで仕組みがわかったね!ボタンが行き先の階を伝え、モーターがケーブルを引っ張り、ケーブルがかごを支え、かごが選んだ階まで運んでくれます。"
+  },
+  {
+    "id": "torneira",
+    "emoji": "🚰",
+    "category": "casa",
+    "title": "蛇口",
+    "parts": [
+      {
+        "id": "cano",
+        "emoji": "🚿",
+        "label": "水道管",
+        "predictionPrompt": "水道管は何をすると思う?",
+        "explanation": "蛇口の下にあるパイプが家の配管から水を運んできて、いつも圧力をかけて出る準備をしています。"
+      },
+      {
+        "id": "valvula",
+        "emoji": "🔧",
+        "label": "バルブ",
+        "predictionPrompt": "バルブは何をすると思う?",
+        "explanation": "蛇口のハンドルを回したり持ち上げたりすると、中のバルブが開いて水が通る道ができます。"
+      },
+      {
+        "id": "vedante",
+        "emoji": "🔘",
+        "label": "パッキン",
+        "predictionPrompt": "パッキンは何をすると思う?",
+        "explanation": "小さなゴムの輪がすき間をしっかり塞ぎ、水が注ぎ口だけから出て、ほかの場所から漏れないようにします。"
+      },
+      {
+        "id": "bica",
+        "emoji": "💧",
+        "label": "注ぎ口",
+        "predictionPrompt": "注ぎ口は何をすると思う?",
+        "explanation": "注ぎ口は最後の出口です。水が蛇口から出てくる場所で、手を洗ったりコップに水を入れたりできます。"
+      }
+    ],
+    "summary": "これで仕組みがわかったね!水道管が水を運び、蛇口を回すとバルブが道を開き、パッキンが漏れを防ぎ、注ぎ口から水が出てきます。"
+  },
+  {
+    "id": "autoclismo",
+    "emoji": "🚽",
+    "category": "casa",
+    "title": "トイレの水洗レバー",
+    "parts": [
+      {
+        "id": "botao-autoclismo",
+        "emoji": "🔘",
+        "label": "水洗ボタン",
+        "predictionPrompt": "水洗ボタンは何をすると思う?",
+        "explanation": "ボタンを押すと、便器の上や後ろにある水タンクの中のバルブが開きます。"
+      },
+      {
+        "id": "descarga",
+        "emoji": "🌊",
+        "label": "水の流れ",
+        "predictionPrompt": "水が一気に流れると何が起こると思う?",
+        "explanation": "タンクにためられた水が一気に勢いよく流れ落ち、便器の中のものをすべて排水管へ押し流します。"
+      },
+      {
+        "id": "boia",
+        "emoji": "🎈",
+        "label": "浮き玉",
+        "predictionPrompt": "浮き玉は何をすると思う?",
+        "explanation": "水を流したあと、タンクの中の浮き玉が新しい水と一緒にゆっくり上がり、てっぺんに着くとタンクに水を入れるバルブを閉じます。"
+      },
+      {
+        "id": "sifao",
+        "emoji": "🌀",
+        "label": "排水トラップ",
+        "predictionPrompt": "曲がったパイプは何をすると思う?",
+        "explanation": "S字型のパイプにはいつも少し水がたまっていて、下水からの嫌なにおいが上がってこないようにふさいでいます。"
+      }
+    ],
+    "summary": "これで仕組みがわかったね!ボタンがバルブを開き、水が勢いよく流れて便器をきれいにし、浮き玉がタンクに水を満たし、トラップが水をためてにおいをふせぎます。"
+  },
+  {
+    "id": "camara-fotografica",
+    "emoji": "📷",
+    "category": "tecnologia",
+    "title": "カメラ",
+    "parts": [
+      {
+        "id": "lente",
+        "emoji": "🔍",
+        "label": "レンズ",
+        "predictionPrompt": "レンズは何をすると思う?",
+        "explanation": "レンズはガラスの目のようなものです。外の世界から来る光を曲げて、カメラの中に焦点を合わせます。"
+      },
+      {
+        "id": "obturador",
+        "emoji": "⏱️",
+        "label": "シャッター",
+        "predictionPrompt": "シャッターは何をすると思う?",
+        "explanation": "シャッターはとても速く開閉するカーテンのようなもので、写真を撮るのにちょうどいい一瞬だけ光を入れます。"
+      },
+      {
+        "id": "sensor",
+        "emoji": "📸",
+        "label": "センサー",
+        "predictionPrompt": "センサーは何をすると思う?",
+        "explanation": "センサーは中にあり、レンズを通ってきた光を受け取って、デジタル画像に変えます。"
+      },
+      {
+        "id": "botao-camara",
+        "emoji": "🔘",
+        "label": "シャッターボタン",
+        "predictionPrompt": "シャッターボタンは何をすると思う?",
+        "explanation": "このボタンを押すと、カメラに正確な瞬間を伝えます。シャッターを開き、光を入れ、写真を保存します。"
+      }
+    ],
+    "summary": "これで仕組みがわかったね!レンズが光を曲げ、シャッターが一瞬だけ開き、センサーが画像を記録し、ボタンが写真を撮る瞬間を選びます。"
+  },
+  {
+    "id": "painel-solar",
+    "emoji": "☀️",
+    "category": "energia",
+    "title": "太陽光パネル",
+    "parts": [
+      {
+        "id": "luz-sol",
+        "emoji": "☀️",
+        "label": "太陽の光",
+        "predictionPrompt": "太陽の光がパネルに当たると何が起こると思う?",
+        "explanation": "太陽の光は小さなエネルギーの粒でできています。それがパネルに当たると、そのエネルギーが変化し始めます。"
+      },
+      {
+        "id": "celulas",
+        "emoji": "🔲",
+        "label": "太陽電池",
+        "predictionPrompt": "太陽電池は何をすると思う?",
+        "explanation": "太陽電池は特別な素材でできていて、光が当たると電子を放出して電気を作ります。"
+      },
+      {
+        "id": "inversor",
+        "emoji": "🔌",
+        "label": "インバーター",
+        "predictionPrompt": "インバーターは何をすると思う?",
+        "explanation": "パネルから出てくる電気は、そのままでは家で使えるタイプではありません。インバーターがコンセントで使う電気のタイプに変えます。"
+      },
+      {
+        "id": "fios",
+        "emoji": "⚡",
+        "label": "電線",
+        "predictionPrompt": "電線は何をすると思う?",
+        "explanation": "電線は変換された電気を家まで運び、明かりをつけたり、テレビを見たり、スマートフォンを充電したりできるようにします。"
+      }
+    ],
+    "summary": "これで仕組みがわかったね!太陽の光が電池に届き、電池が電気を作り、インバーターが正しいタイプに変え、電線が家まで運びます。"
+  },
+  {
+    "id": "aspirador",
+    "emoji": "🧹",
+    "category": "casa",
+    "title": "掃除機",
+    "parts": [
+      {
+        "id": "motor-aspirador",
+        "emoji": "🔧",
+        "label": "モーター",
+        "predictionPrompt": "掃除機のモーターは何をすると思う?",
+        "explanation": "モーターがとても速く回転して強い吸い込む力を作り、空気(とほこり)を掃除機の中へ引き込みます。"
+      },
+      {
+        "id": "filtro",
+        "emoji": "🌬️",
+        "label": "フィルター",
+        "predictionPrompt": "フィルターは何をすると思う?",
+        "explanation": "フィルターは空気を通しますが、ほこりや汚れをつかまえて、部屋に吹き戻さないようにします。"
+      },
+      {
+        "id": "escova",
+        "emoji": "🧽",
+        "label": "ブラシ",
+        "predictionPrompt": "ブラシは何をすると思う?",
+        "explanation": "ブラシが床をこすってほこりや毛を浮かせ、管を通して吸い込みやすくします。"
+      },
+      {
+        "id": "saco",
+        "emoji": "🗑️",
+        "label": "ダストバッグ",
+        "predictionPrompt": "ダストバッグは何をすると思う?",
+        "explanation": "吸い込んだほこりはすべて、この袋(または容器)の中にたまり、空にするまで保管されます。"
+      }
+    ],
+    "summary": "これで仕組みがわかったね!モーターが空気を吸い込み、ブラシが床のほこりを浮かせ、フィルターが空気をきれいにし、袋がすべての汚れをためます。"
+  },
+  {
+    "id": "impressora",
+    "emoji": "🖨️",
+    "category": "tecnologia",
+    "title": "プリンター",
+    "parts": [
+      {
+        "id": "cartucho",
+        "emoji": "🖋️",
+        "label": "インクカートリッジ",
+        "predictionPrompt": "インクカートリッジは何をすると思う?",
+        "explanation": "インクカートリッジには、紙に文字や絵を描くための色つきや黒のインクが入っています。"
+      },
+      {
+        "id": "cabeca-impressao",
+        "emoji": "🎯",
+        "label": "印刷ヘッド",
+        "predictionPrompt": "印刷ヘッドは何をすると思う?",
+        "explanation": "印刷ヘッドは左右に動きながら、必要な場所にちょうどインクの小さな粒を落とします。"
+      },
+      {
+        "id": "rolos",
+        "emoji": "🎡",
+        "label": "ローラー",
+        "predictionPrompt": "ローラーは何をすると思う?",
+        "explanation": "ローラーが回転して、紙を1枚ずつゆっくりとプリンターの中に引き込みます。"
+      },
+      {
+        "id": "papel",
+        "emoji": "📄",
+        "label": "紙",
+        "predictionPrompt": "紙には何が起こると思う?",
+        "explanation": "紙は印刷ヘッドの下を通り、インクを受け取って、絵や文字が印刷された状態で出てきます。"
+      }
+    ],
+    "summary": "これで仕組みがわかったね!カートリッジがインクをためて、印刷ヘッドが正しい場所に広げ、ローラーが紙を引き込み、印刷されたものが出てきます。"
+  },
+  {
+    "id": "semaforo",
+    "emoji": "🚦",
+    "category": "cidade",
+    "title": "信号機",
+    "parts": [
+      {
+        "id": "sensor-transito",
+        "emoji": "🚗",
+        "label": "センサー",
+        "predictionPrompt": "信号機のセンサーは何をすると思う?",
+        "explanation": "一部の信号機には、待っている車や人を感じ取るセンサーがあり、いつ信号を変える必要があるかを知ります。"
+      },
+      {
+        "id": "controlador",
+        "emoji": "⏱️",
+        "label": "制御装置",
+        "predictionPrompt": "制御装置は何をすると思う?",
+        "explanation": "制御装置は時間を数えて、それぞれの明かりをいつつけるか決める小さなコンピューターのようなものです。"
+      },
+      {
+        "id": "luzes",
+        "emoji": "🔴",
+        "label": "信号灯",
+        "predictionPrompt": "信号灯は何をすると思う?",
+        "explanation": "赤、黄、緑の明かりが順番につき、車や人に止まるか進むかを教えます。"
+      },
+      {
+        "id": "fios-semaforo",
+        "emoji": "⚡",
+        "label": "電線",
+        "predictionPrompt": "電線は何をすると思う?",
+        "explanation": "電線が信号機に電気を運び、明かりがつき、制御装置が動くようにします。"
+      }
+    ],
+    "summary": "これで仕組みがわかったね!センサーが待っている人に気づき、制御装置が正しいタイミングを決め、信号灯が順番につき、電線がすべてに電気を送ります。"
+  },
+  {
+    "id": "comboio",
+    "emoji": "🚆",
+    "category": "transporte",
+    "title": "電車",
+    "parts": [
+      {
+        "id": "motor-comboio",
+        "emoji": "🔧",
+        "label": "モーター",
+        "predictionPrompt": "電車のモーターは何をすると思う?",
+        "explanation": "モーターは電気や燃料を力に変え、大きなパワーで車輪を回します。"
+      },
+      {
+        "id": "carris",
+        "emoji": "🛤️",
+        "label": "レール",
+        "predictionPrompt": "レールは何をすると思う?",
+        "explanation": "レールは2本の金属の線路で、電車を導き、いつも正しい道の上にとどまるようにします。"
+      },
+      {
+        "id": "rodas-comboio",
+        "emoji": "🎡",
+        "label": "車輪",
+        "predictionPrompt": "電車の車輪は何をすると思う?",
+        "explanation": "電車の車輪は金属でできていて、レールにぴったりはまり、回転して電車を線路から外れずに進ませます。"
+      },
+      {
+        "id": "pantografo",
+        "emoji": "⚡",
+        "label": "パンタグラフ",
+        "predictionPrompt": "電車の上にあるこの部品は何をすると思う?",
+        "explanation": "パンタグラフは線路の上にある電線に触れて、電気を電車のモーターまで運びます。"
+      }
+    ],
+    "summary": "これで仕組みがわかったね!モーターが力を作り、レールが道を導き、車輪が電車をレールの上にとどめ、パンタグラフが電気を運びます。"
+  },
+  {
+    "id": "escada-rolante",
+    "emoji": "🪜",
+    "category": "cidade",
+    "title": "エスカレーター",
+    "parts": [
+      {
+        "id": "motor-escada",
+        "emoji": "⚙️",
+        "label": "モーター",
+        "predictionPrompt": "エスカレーターのモーターは何をすると思う?",
+        "explanation": "モーターが休みなく回り続けてエスカレーター全体を動かし、段が絶え間なく上がったり下がったりします。"
+      },
+      {
+        "id": "corrente-escada",
+        "emoji": "⛓️",
+        "label": "チェーン",
+        "predictionPrompt": "チェーンは何をすると思う?",
+        "explanation": "頑丈なチェーンがモーターと段をつなぎ、動きをエスカレーター全体に伝えます。"
+      },
+      {
+        "id": "degraus",
+        "emoji": "🪜",
+        "label": "ステップ",
+        "predictionPrompt": "ステップは何をすると思う?",
+        "explanation": "ステップはチェーンに取りつけられていて、一続きの階段になります。下では平らに見えて、上がるにつれて段差ができます。"
+      },
+      {
+        "id": "corrimao",
+        "emoji": "🤚",
+        "label": "手すり",
+        "predictionPrompt": "手すりは何をすると思う?",
+        "explanation": "手すりはステップと同じ速さで動くので、上り下りするあいだ安全に手を置くことができます。"
+      }
+    ],
+    "summary": "これで仕組みがわかったね!モーターが回り続け、チェーンがステップを動かし、ステップが階段を作り、手すりが同じ速さで動いてつかまることができます。"
+  }
+]

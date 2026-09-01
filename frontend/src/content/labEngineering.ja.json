@@ -1,0 +1,104 @@
+{
+  "bridge": {
+    "title": "くまさんの橋",
+    "emoji": "🌉",
+    "prompt": "🐻 くまが川をわたりたいよ。橋を作ってあげよう!",
+    "materials": [
+      { "id": "wood", "emoji": "🪵", "label": "木材" },
+      { "id": "stone", "emoji": "🧱", "label": "石" },
+      { "id": "rope", "emoji": "🧵", "label": "ロープ" },
+      { "id": "paper", "emoji": "📄", "label": "紙" }
+    ],
+    "outcomes": {
+      "wood": { "success": true, "text": "木は丈夫で軽いよ。橋はくまの重さにたえて、無事にわたれた!" },
+      "stone": { "success": false, "text": "石はかんたんな橋には重すぎて、くまがわたる前にくずれてしまう。" },
+      "rope": { "success": false, "text": "ロープだけだとくまの重さでたわんでしまい、川に落ちてしまう!" },
+      "paper": { "success": false, "text": "くまが足をのせたとたん、紙は破れてしまう。" }
+    }
+  },
+  "tower": {
+    "title": "いちばん高いタワー",
+    "emoji": "🗼",
+    "prompt": "🚩 旗にとどくくらい高いタワーを作ろう!",
+    "materials": [
+      { "id": "wood", "emoji": "🪵", "label": "木材" },
+      { "id": "stone", "emoji": "🧱", "label": "石" },
+      { "id": "rope", "emoji": "🧵", "label": "ロープ" },
+      { "id": "paper", "emoji": "📄", "label": "紙" }
+    ],
+    "outcomes": {
+      "wood": { "success": true, "text": "木のブロックはしっかり積み重なる。タワーは旗にとどいた!" },
+      "stone": { "success": true, "text": "石は重いけれど土台が安定していて、タワーはしっかり立ち、旗にとどいた!" },
+      "rope": { "success": false, "text": "ロープは自分で立つことができず、タワーはいつまでも高くならない。" },
+      "paper": { "success": false, "text": "紙は重さでたわんでしまい、タワーはくずれてしまう。" }
+    }
+  },
+  "boat": {
+    "title": "浮かぶボート",
+    "emoji": "⛵",
+    "prompt": "⛵ おもちゃを向こう岸まで運ぶ、浮かぶボートを作ろう!",
+    "materials": [
+      { "id": "wood", "emoji": "🪵", "label": "木材" },
+      { "id": "stone", "emoji": "🧱", "label": "石" },
+      { "id": "rope", "emoji": "🧵", "label": "ロープ" },
+      { "id": "paper", "emoji": "📄", "label": "紙" }
+    ],
+    "outcomes": {
+      "wood": { "success": true, "text": "木はとてもよく浮くよ。ボートはすいすい進む!" },
+      "stone": { "success": false, "text": "石は重すぎて、水に触れたとたん沈んでしまう。" },
+      "rope": { "success": false, "text": "ロープでは船体を作れず、水が入ってボートは沈んでしまう。" },
+      "paper": { "success": false, "text": "紙は水をすってやわらかくなり、とけてしまう。" }
+    }
+  },
+  "dam": {
+    "title": "ビーバーのダム",
+    "emoji": "🦫",
+    "prompt": "🦫 ビーバーは川の水をせき止めたいよ。ダムを作ってあげよう!",
+    "materials": [
+      { "id": "wood", "emoji": "🪵", "label": "木材" },
+      { "id": "stone", "emoji": "🧱", "label": "石" },
+      { "id": "rope", "emoji": "🧵", "label": "ロープ" },
+      { "id": "paper", "emoji": "📄", "label": "紙" }
+    ],
+    "outcomes": {
+      "wood": { "success": false, "text": "木のすき間から水がしみ出てしまい、ダムはくずれてしまう。" },
+      "stone": { "success": true, "text": "積み重ねた石は重く、しっかりした壁になる。ダムは川の水をせき止めた!" },
+      "rope": { "success": false, "text": "ロープは水を止められず、糸のあいだを水がすり抜けてしまう。" },
+      "paper": { "success": false, "text": "紙は水に触れたとたんとけてしまう。" }
+    }
+  },
+  "catapult": {
+    "title": "カタパルト",
+    "emoji": "🎯",
+    "prompt": "🎯 壁の向こうへボールを飛ばすカタパルトを作ろう!",
+    "materials": [
+      { "id": "wood", "emoji": "🪵", "label": "木材" },
+      { "id": "stone", "emoji": "🧱", "label": "石" },
+      { "id": "rope", "emoji": "🧵", "label": "ロープ" },
+      { "id": "paper", "emoji": "📄", "label": "紙" }
+    ],
+    "outcomes": {
+      "wood": { "success": true, "text": "木のうでは丈夫でしなる。曲がってボールを遠くまで飛ばせた!" },
+      "stone": { "success": false, "text": "石はうでのようにしなるには硬すぎて、何も飛ばせない。" },
+      "rope": { "success": false, "text": "ロープはやわらかいけれどボールを押し出せず、そのまま横に落ちてしまう。" },
+      "paper": { "success": false, "text": "紙は曲がって破れてしまい、ボールを飛ばす力がない。" }
+    }
+  },
+  "crane": {
+    "title": "持ち上げクレーン",
+    "emoji": "🏗️",
+    "prompt": "🏗️ 重い箱を持ち上げるクレーンを作ろう!",
+    "materials": [
+      { "id": "wood", "emoji": "🪵", "label": "木材" },
+      { "id": "stone", "emoji": "🧱", "label": "石" },
+      { "id": "rope", "emoji": "🧵", "label": "ロープ" },
+      { "id": "paper", "emoji": "📄", "label": "紙" }
+    ],
+    "outcomes": {
+      "wood": { "success": true, "text": "木のうでは軽くて丈夫。箱を楽々と持ち上げた!" },
+      "stone": { "success": false, "text": "石は重すぎて、うで自体を持ち上げられず、クレーンは動かない。" },
+      "rope": { "success": false, "text": "ロープはかたいうでがなくてたわんでしまい、箱を持ち上げられない。" },
+      "paper": { "success": false, "text": "紙は箱をつけたしゅんかんに破れてしまう。" }
+    }
+  }
+}
