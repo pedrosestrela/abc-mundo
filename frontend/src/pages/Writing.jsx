@@ -5,6 +5,8 @@ import { getLangPair, getProfile, getDifficultyTier, recordSkillEvent, pingProgr
 import SpeakButton from "../components/SpeakButton.jsx";
 import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
 import HelpButton from "../components/HelpButton.jsx";
+import MascotBubble from "../components/mascots/MascotBubble.jsx";
+import { pickLine } from "../components/mascots/reactionLines.js";
 import { getStrokes, BASIC_STROKES, evaluateAttempt, pathLength } from "../content/strokeOrder.js";
 
 const DIGITS = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
@@ -335,7 +337,7 @@ const TraceCanvas = React.forwardRef(function TraceCanvas(
 // show specific, warm feedback plus an off-screen paper-activity nudge.
 // Never blocks progress — `onComplete` always fires and the parent always
 // advances, regardless of attempt quality.
-function TracePractice({ strokes, guideChar, guideFontFamily, guideStroke, offScreenText, onComplete }) {
+function TracePractice({ strokes, guideChar, guideFontFamily, guideStroke, offScreenText, onComplete, pair }) {
   const { t } = useTranslation();
   const [playToken, setPlayToken] = useState(1); // 1 => auto-play once on mount
   const [playing, setPlaying] = useState(false);
@@ -385,6 +387,20 @@ function TracePractice({ strokes, guideChar, guideFontFamily, guideStroke, offSc
         <p className="writing-feedback">
           {feedback.emoji} {t(`modules.${feedback.key}`)}
         </p>
+      )}
+      {done && feedback && pair && (
+        <MascotBubble
+          character="tomas"
+          reaction={quality === "goodCoverage" || quality === "goodStart" ? "happy" : "encouraging"}
+          langCode={pair.mother}
+        >
+          {pickLine(
+            t(
+              quality === "goodCoverage" || quality === "goodStart" ? "mascotLines.writingCorrect" : "mascotLines.writingEncouraging",
+              { returnObjects: true }
+            )
+          )}
+        </MascotBubble>
       )}
       {done && offScreenText && (
         <p className="writing-offscreen-suggestion">
@@ -600,6 +616,9 @@ export default function Writing() {
     <div className="page">
       <h1>{t("modules.writingTitle")} ✏️</h1>
       <p className="page-intro">{t("modules.writingIntro")}</p>
+      <MascotBubble character="tomas" reaction="curious" langCode={pair.mother}>
+        {t("mascotLines.writingOpening")}
+      </MascotBubble>
 
       <div className="phonics-tabs writing-section-tabs">
         <button
@@ -699,6 +718,7 @@ export default function Writing() {
             guideStroke={guideByMode[mode].stroke}
             offScreenText={lettersOffScreen}
             onComplete={handleComplete}
+            pair={pair}
           />
         </>
       )}
@@ -740,6 +760,7 @@ export default function Writing() {
             guideStroke="3px #d0d8f0"
             offScreenText={numbersOffScreen}
             onComplete={handleComplete}
+            pair={pair}
           />
         </>
       )}
@@ -773,6 +794,7 @@ export default function Writing() {
             guideStroke="3px #d8d8f0"
             offScreenText={basicOffScreen}
             onComplete={handleComplete}
+            pair={pair}
           />
         </>
       )}
