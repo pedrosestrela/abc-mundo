@@ -9,11 +9,12 @@ import HelpButton from "../components/HelpButton.jsx";
 import MascotBubble from "../components/mascots/MascotBubble.jsx";
 import { playRealAudio, segmentIndexForProgress } from "../audioPlayback.js";
 
-// Real recorded-voice audio for songs (ElevenLabs, generated offline and
-// bundled as static files — see frontend/public/audio/songs/NOTICE.md).
-// Only covers a subset of songs/languages (free-tier character budget), so
-// every lookup falls back to the existing Web Speech synthesis path below
-// when no file exists for a given song+language.
+// Real recorded-voice audio for songs (pt/ via Piper TTS, pt_PT voice,
+// generated locally; en/ via ElevenLabs — see
+// frontend/public/audio/songs/NOTICE.md for the full per-language
+// provenance). Only covers a subset of songs/languages, so every lookup
+// falls back to the existing Web Speech synthesis path below when no file
+// exists for a given song+language.
 const REAL_AUDIO = import.meta.glob("/public/audio/songs/*/*.mp3", { eager: true, query: "?url", import: "default" });
 function realAudioUrl(songId, langCode) {
   const key = `/public/audio/songs/${langCode}/${songId}.mp3`;
