@@ -24,13 +24,30 @@ const INGREDIENTS = [
   { id: "ham", emoji: "🍖", key: "miniChefIngHam" },
   { id: "milk", emoji: "🥛", key: "miniChefIngMilk" },
   { id: "honey", emoji: "🍯", key: "miniChefIngHoney" },
+  { id: "avocado", emoji: "🥑", key: "miniChefIngAvocado" },
+  { id: "tomato", emoji: "🍅", key: "miniChefIngTomato" },
+  { id: "oats", emoji: "🌾", key: "miniChefIngOats" },
+  { id: "yogurt", emoji: "🍶", key: "miniChefIngYogurt" },
+  { id: "cucumber", emoji: "🥒", key: "miniChefIngCucumber" },
+  { id: "crackers", emoji: "🍘", key: "miniChefIngCrackers" },
+  { id: "chocolate", emoji: "🍫", key: "miniChefIngChocolate" },
 ];
 const INGREDIENT_BY_ID = Object.fromEntries(INGREDIENTS.map((i) => [i.id, i]));
+
+// Themes group the growing recipe list into tabs, the same tap-to-filter
+// pattern LifeSkills.jsx uses for its own categories.
+const THEME_ICONS = {
+  frutas: "🍓",
+  lanches: "🥪",
+  breakfast: "🌅",
+  nobake: "🧊",
+};
 
 const RECIPES = [
   {
     id: "fruit-salad",
     emoji: "🥗",
+    theme: "frutas",
     Illustration: IllustrationBowl,
     titleKey: "miniChefRecipeSaladTitle",
     correct: ["apple", "banana", "strawberry", "orange"],
@@ -41,6 +58,7 @@ const RECIPES = [
   {
     id: "sandwich",
     emoji: "🥪",
+    theme: "lanches",
     Illustration: IllustrationBread,
     titleKey: "miniChefRecipeSandwichTitle",
     correct: ["bread", "butter", "cheese", "ham"],
@@ -51,12 +69,112 @@ const RECIPES = [
   {
     id: "smoothie",
     emoji: "🥤",
+    theme: "frutas",
     Illustration: IllustrationCup,
     titleKey: "miniChefRecipeSmoothieTitle",
     correct: ["banana", "strawberry", "milk", "honey"],
     distractors: ["bread", "cheese"],
     stepKeys: ["miniChefSmoothieStep1", "miniChefSmoothieStep2", "miniChefSmoothieStep3", "miniChefSmoothieStep4"],
     whyKey: "miniChefSmoothieWhy",
+  },
+  {
+    id: "avocado-toast",
+    emoji: "🥑",
+    theme: "breakfast",
+    Illustration: IllustrationBread,
+    titleKey: "miniChefRecipeAvocadoToastTitle",
+    correct: ["bread", "avocado", "tomato"],
+    distractors: ["honey", "cheese"],
+    stepKeys: ["miniChefAvocadoToastStep1", "miniChefAvocadoToastStep2", "miniChefAvocadoToastStep3", "miniChefAvocadoToastStep4"],
+    whyKey: "miniChefAvocadoToastWhy",
+  },
+  {
+    id: "oatmeal-fruit",
+    emoji: "🥣",
+    theme: "breakfast",
+    Illustration: IllustrationBowl,
+    titleKey: "miniChefRecipeOatmealTitle",
+    correct: ["oats", "milk", "banana", "honey"],
+    distractors: ["bread", "cheese"],
+    stepKeys: ["miniChefOatmealStep1", "miniChefOatmealStep2", "miniChefOatmealStep3", "miniChefOatmealStep4"],
+    whyKey: "miniChefOatmealWhy",
+  },
+  {
+    id: "honey-banana-toast",
+    emoji: "🍞",
+    theme: "breakfast",
+    Illustration: IllustrationBread,
+    titleKey: "miniChefRecipeHoneyBananaToastTitle",
+    correct: ["bread", "butter", "banana", "honey"],
+    distractors: ["cheese", "ham"],
+    stepKeys: ["miniChefHoneyBananaToastStep1", "miniChefHoneyBananaToastStep2", "miniChefHoneyBananaToastStep3", "miniChefHoneyBananaToastStep4"],
+    whyKey: "miniChefHoneyBananaToastWhy",
+  },
+  {
+    id: "veggie-wrap",
+    emoji: "🌯",
+    theme: "lanches",
+    Illustration: IllustrationBread,
+    titleKey: "miniChefRecipeVeggieWrapTitle",
+    correct: ["bread", "cheese", "ham", "cucumber", "tomato"],
+    distractors: ["banana", "honey"],
+    stepKeys: ["miniChefVeggieWrapStep1", "miniChefVeggieWrapStep2", "miniChefVeggieWrapStep3", "miniChefVeggieWrapStep4"],
+    whyKey: "miniChefVeggieWrapWhy",
+  },
+  {
+    id: "yogurt-granola",
+    emoji: "🍨",
+    theme: "lanches",
+    Illustration: IllustrationBowl,
+    titleKey: "miniChefRecipeYogurtGranolaTitle",
+    correct: ["yogurt", "oats", "banana", "strawberry"],
+    distractors: ["ham", "cheese"],
+    stepKeys: ["miniChefYogurtGranolaStep1", "miniChefYogurtGranolaStep2", "miniChefYogurtGranolaStep3", "miniChefYogurtGranolaStep4"],
+    whyKey: "miniChefYogurtGranolaWhy",
+  },
+  {
+    id: "crackers-cheese",
+    emoji: "🧀",
+    theme: "lanches",
+    Illustration: IllustrationBowl,
+    titleKey: "miniChefRecipeCrackersCheeseTitle",
+    correct: ["crackers", "cheese", "tomato", "cucumber"],
+    distractors: ["honey", "milk"],
+    stepKeys: ["miniChefCrackersCheeseStep1", "miniChefCrackersCheeseStep2", "miniChefCrackersCheeseStep3", "miniChefCrackersCheeseStep4"],
+    whyKey: "miniChefCrackersCheeseWhy",
+  },
+  {
+    id: "oat-choc-balls",
+    emoji: "🍫",
+    theme: "nobake",
+    Illustration: IllustrationBowl,
+    titleKey: "miniChefRecipeOatChocBallsTitle",
+    correct: ["oats", "chocolate", "honey", "milk"],
+    distractors: ["bread", "tomato"],
+    stepKeys: ["miniChefOatChocBallsStep1", "miniChefOatChocBallsStep2", "miniChefOatChocBallsStep3", "miniChefOatChocBallsStep4"],
+    whyKey: "miniChefOatChocBallsWhy",
+  },
+  {
+    id: "frozen-yogurt-bark",
+    emoji: "🍓",
+    theme: "nobake",
+    Illustration: IllustrationBowl,
+    titleKey: "miniChefRecipeFrozenYogurtBarkTitle",
+    correct: ["yogurt", "strawberry", "banana", "honey"],
+    distractors: ["bread", "cheese"],
+    stepKeys: ["miniChefFrozenYogurtBarkStep1", "miniChefFrozenYogurtBarkStep2", "miniChefFrozenYogurtBarkStep3", "miniChefFrozenYogurtBarkStep4"],
+    whyKey: "miniChefFrozenYogurtBarkWhy",
+  },
+  {
+    id: "fruit-yogurt-parfait",
+    emoji: "🥤",
+    theme: "nobake",
+    Illustration: IllustrationCup,
+    titleKey: "miniChefRecipeFruitYogurtParfaitTitle",
+    correct: ["yogurt", "apple", "orange", "honey"],
+    distractors: ["ham", "cheese"],
+    stepKeys: ["miniChefFruitYogurtParfaitStep1", "miniChefFruitYogurtParfaitStep2", "miniChefFruitYogurtParfaitStep3", "miniChefFruitYogurtParfaitStep4"],
+    whyKey: "miniChefFruitYogurtParfaitWhy",
   },
 ];
 
@@ -198,9 +316,18 @@ export default function MiniChef() {
   const [openId, setOpenId] = useState(null);
   const [stage, setStage] = useState("ingredients"); // ingredients -> steps -> why -> done
   const [version, setVersion] = useState(0);
+  const [theme, setTheme] = useState("all");
 
   const cooked = useMemo(() => getCookedRecipes(profile?.name), [profile?.name, version]);
   const openRecipe = RECIPES.find((r) => r.id === openId);
+  const themes = useMemo(() => Array.from(new Set(RECIPES.map((r) => r.theme))), []);
+  const visibleRecipes = theme === "all" ? RECIPES : RECIPES.filter((r) => r.theme === theme);
+  const themeLabelKey = {
+    frutas: "miniChefThemeFrutas",
+    lanches: "miniChefThemeLanches",
+    breakfast: "miniChefThemeBreakfast",
+    nobake: "miniChefThemeNobake",
+  };
 
   function openRecipeCard(recipe) {
     const nowOpen = recipe.id !== openId;
@@ -231,8 +358,32 @@ export default function MiniChef() {
       </MascotBubble>
 
       {!openRecipe && (
+        <div className="phonics-tabs">
+          <button
+            type="button"
+            className={"phonics-tab" + (theme === "all" ? " selected" : "")}
+            onClick={() => setTheme("all")}
+          >
+            <span className="phonics-tab-inner">🌟 {t("modules.miniChefThemeAll")}</span>
+          </button>
+          {themes.map((th) => (
+            <button
+              key={th}
+              type="button"
+              className={"phonics-tab" + (theme === th ? " selected" : "")}
+              onClick={() => setTheme(th)}
+            >
+              <span className="phonics-tab-inner">
+                {THEME_ICONS[th] || "🍽️"} {t(`modules.${themeLabelKey[th]}`)}
+              </span>
+            </button>
+          ))}
+        </div>
+      )}
+
+      {!openRecipe && (
         <div className="computing-grid">
-          {RECIPES.map((r) => {
+          {visibleRecipes.map((r) => {
             const done = cooked.includes(r.id);
             return (
               <button
