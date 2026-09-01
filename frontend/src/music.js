@@ -1,5 +1,5 @@
 // Background-music generator + per-instrument note player for the Music
-// page. Eleven pitched instruments play real recorded samples, each
+// page. Most pitched instruments play real recorded samples, each
 // pitch-shifted across the keyboard via AudioBufferSourceNode.playbackRate
 // (or, for drum pads, played back at fixed pitch like a real kit), with an
 // automatic fallback to a procedurally-synthesised timbre if a sample fails
@@ -10,18 +10,18 @@
 //     (public/audio/<instrument>/NOTICE.md)
 //   - drum (pads): Sonic Pi sample library, CC0-1.0 / public domain, via
 //     the `supersonic-scsynth-samples` npm package (public/audio/drum/NOTICE.md)
-// Every instrument here is a real recorded sample. The previous synthesis-
-// only instruments (viola, cavaquinho, portugueseGuitar, accordion,
-// concertina) were removed because they were not faithful to their real
-// acoustic instruments — a genuinely thorough search (npm registry search +
+// cavaquinho, portugueseGuitar, accordion and concertina are synthesis-only
+// (no real sample pack): a genuinely thorough search (npm registry search +
 // direct package-name probing for Iberian/folk-instrument and reed sample
 // libraries) turned up no clean/verifiable permissively-licensed sample pack
-// for them. Cello, trumpet, clarinet and saxophone were added in their place
-// since real CC BY 3.0 samples exist for them in the same library already
-// used for guitar/flute/violin/harp/xylophone, and they fill genuine
-// timbre-family gaps (trumpet = the app's first brass instrument; cello =
-// second bowed-string register; clarinet/saxophone = second/third woodwind
-// timbre alongside flute) for the "Ouvido Musical" ear-training mode.
+// for them, but they're kept — synthesized rather than dropped — since
+// they're specifically requested Portuguese traditional instruments and the
+// accordion family. Cello, trumpet, clarinet and saxophone use real CC BY
+// 3.0 samples from the same library already used for guitar/flute/violin/
+// harp/xylophone, filling genuine timbre-family gaps (trumpet = the app's
+// first brass instrument; cello = second bowed-string register;
+// clarinet/saxophone = second/third woodwind timbre alongside flute) for
+// the "Ouvido Musical" ear-training mode.
 // The looping background melody still uses layered/detuned Web Audio
 // oscillator synthesis (it's a generic accompaniment, not a named
 // instrument), as does every sample instrument's fallback voice, tuned to
@@ -63,6 +63,10 @@ export const INSTRUMENTS = [
   { id: "trumpet", icon: "🎺" },
   { id: "clarinet", icon: "🎷" },
   { id: "saxophone", icon: "🎷" },
+  { id: "cavaquinho", icon: "🪕" },
+  { id: "portugueseGuitar", icon: "🎸" },
+  { id: "accordion", icon: "🪗" },
+  { id: "concertina", icon: "🎐" },
 ];
 
 // Simple tappable pads for the drum instrument — no musical scale, just a
@@ -934,6 +938,106 @@ export function playDrumPad(padId) {
   });
 }
 
+// The four instruments below have no clean, permissively-licensed real
+// sample pack available (checked: npm registry + direct probing of
+// Iberian/folk-instrument and reed sample libraries turned up nothing
+// verifiable) — kept as synthesis-only rather than dropped, since they were
+// specifically requested (Portuguese traditional instruments + accordion
+// family) and a good synthesized voice beats not having the instrument.
+
+function playCavaquinhoNote(ctx, freq, duration) {
+  // Bright plucked timbre: layered sawtooth through a higher lowpass cutoff
+  // than the guitar (more high-frequency content, small-body "jangly"
+  // sound) and a faster decay, since a cavaquinho's strings ring out
+  // quickly. Kept a lighter sub-layer than the guitar to stay bright.
+  const now = ctx.currentTime;
+  const voice = buildVoice(ctx, freq, { type: "sawtooth", detuneCents: 8, subLevel: 0.08, filterFreq: 4200, satAmount: 0.12 });
+  const gain = ctx.createGain();
+  gain.gain.setValueAtTime(0, now);
+  gain.gain.linearRampToValueAtTime(0.24, now + 0.004);
+  gain.gain.exponentialRampToValueAtTime(0.001, now + Math.min(duration, 0.28));
+  voice.output.connect(gain);
+  connectWithReverb(ctx, gain, 1);
+  startStopVoice(voice, now, now + 0.35);
+}
+
+function playPortugueseGuitarNote(ctx, freq, duration) {
+  // Distinct metallic/ringing plucked timbre for the "guitarra portuguesa":
+  // detuned square waves (harder, more nasal edge than the guitar's
+  // sawtooth or the cavaquinho's soft sawtooth) through a resonant bandpass
+  // filter that emphasises upper harmonics, with a long, slowly fading ring.
+  const now = ctx.currentTime;
+  const sustain = Math.max(duration, 0.6);
+  const voice = buildVoice(ctx, freq, { type: "square", detuneCents: 5, subLevel: 0.06, filterFreq: freq * 4, satAmount: 0.1 });
+  const bandpass = ctx.createBiquadFilter();
+  bandpass.type = "bandpass";
+  bandpass.frequency.value = freq * 3;
+  bandpass.Q.value = 4;
+  const gain = ctx.createGain();
+  gain.gain.setValueAtTime(0, now);
+  gain.gain.linearRampToValueAtTime(0.16, now + 0.003);
+  gain.gain.exponentialRampToValueAtTime(0.001, now + sustain);
+  voice.output.connect(bandpass);
+  bandpass.connect(gain);
+  connectWithReverb(ctx, gain, 1);
+  startStopVoice(voice, now, now + sustain + 0.05);
+}
+
+function playAccordionNote(ctx, freq, duration) {
+  // Reed-like sustained tone: layered square waves through a lowpass
+  // filter, a slower attack than piano, and a gentle tremolo (amplitude
+  // LFO) approximating the "breathing" of accordion bellows.
+  const now = ctx.currentTime;
+  const sustain = Math.max(duration, 0.7);
+  const voice = buildVoice(ctx, freq, { type: "square", detuneCents: 4, subLevel: 0.15, filterFreq: 1800, satAmount: 0.06 });
+  const gain = ctx.createGain();
+  const tremolo = ctx.createOscillator();
+  const tremoloGain = ctx.createGain();
+  tremolo.type = "sine";
+  tremolo.frequency.value = 5;
+  tremoloGain.gain.value = 0.04;
+  tremolo.connect(tremoloGain);
+  gain.gain.setValueAtTime(0, now);
+  gain.gain.linearRampToValueAtTime(0.16, now + 0.12);
+  gain.gain.linearRampToValueAtTime(0.14, now + sustain - 0.15);
+  gain.gain.linearRampToValueAtTime(0, now + sustain + 0.1);
+  tremoloGain.connect(gain.gain);
+  voice.output.connect(gain);
+  connectWithReverb(ctx, gain, 1);
+  tremolo.start(now);
+  tremolo.stop(now + sustain + 0.15);
+  scheduledNodes.push(tremolo);
+  startStopVoice(voice, now, now + sustain + 0.15);
+}
+
+function playConcertinaNote(ctx, freq, duration) {
+  // Same reedy family as the accordion but higher/brighter: layered
+  // sawtooth (more harmonic content than the accordion's square) through a
+  // brighter filter cutoff, a snappier attack, and a faster, shallower
+  // tremolo.
+  const now = ctx.currentTime;
+  const sustain = Math.max(duration, 0.55);
+  const voice = buildVoice(ctx, freq, { type: "sawtooth", detuneCents: 5, subLevel: 0.1, filterFreq: 3000, satAmount: 0.08 });
+  const gain = ctx.createGain();
+  const tremolo = ctx.createOscillator();
+  const tremoloGain = ctx.createGain();
+  tremolo.type = "sine";
+  tremolo.frequency.value = 7.5;
+  tremoloGain.gain.value = 0.025;
+  tremolo.connect(tremoloGain);
+  gain.gain.setValueAtTime(0, now);
+  gain.gain.linearRampToValueAtTime(0.15, now + 0.05);
+  gain.gain.linearRampToValueAtTime(0.12, now + sustain - 0.12);
+  gain.gain.linearRampToValueAtTime(0, now + sustain + 0.08);
+  tremoloGain.connect(gain.gain);
+  voice.output.connect(gain);
+  connectWithReverb(ctx, gain, 1);
+  tremolo.start(now);
+  tremolo.stop(now + sustain + 0.12);
+  scheduledNodes.push(tremolo);
+  startStopVoice(voice, now, now + sustain + 0.12);
+}
+
 // Plays a single pitched note with the given instrument's timbre. `drum`
 // falls back to a generic percussive hit (no pitch), since drums use pads
 // instead of a musical scale in the UI.
@@ -971,6 +1075,18 @@ export function playInstrumentNote(instrument, note, duration = 0.5) {
       break;
     case "harp":
       playSampledNote("harp", ctx, note, freq, duration, playHarpNote);
+      break;
+    case "cavaquinho":
+      playCavaquinhoNote(ctx, freq, duration);
+      break;
+    case "portugueseGuitar":
+      playPortugueseGuitarNote(ctx, freq, duration);
+      break;
+    case "accordion":
+      playAccordionNote(ctx, freq, duration);
+      break;
+    case "concertina":
+      playConcertinaNote(ctx, freq, duration);
       break;
     case "drum":
       // Drums use pads (DRUM_PADS) rather than the musical scale in the UI;

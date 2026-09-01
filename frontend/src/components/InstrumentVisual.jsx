@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { SOLFEGE_PT } from "../music.js";
 
 // Shared <defs> (gradients/filters) reused by every instrument body so the
@@ -25,6 +25,8 @@ function InstrumentDefs() {
 // this component at all instead of the shared piano keyboard.
 export const INSTRUMENT_FAMILY = {
   guitar: "strings",
+  cavaquinho: "strings",
+  portugueseGuitar: "strings",
   violin: "bowed",
   cello: "bowed",
   flute: "wind",
@@ -33,6 +35,8 @@ export const INSTRUMENT_FAMILY = {
   trumpet: "wind",
   harp: "harp",
   xylophone: "mallet",
+  accordion: "bellows",
+  concertina: "bellows",
 };
 
 export function getInstrumentFamily(instrumentId) {
@@ -53,6 +57,8 @@ function noteLabel(note) {
 // be added the same way the bowed/wind families are.
 const STRINGS_CONFIG = {
   guitar: { width: 320, height: 220, inset: 4, rx: 22, bodyClass: "guitar-body", stringInset: 18, shape: "figure8" },
+  cavaquinho: { width: 220, height: 170, inset: 4, rx: 30, bodyClass: "cavaquinho-body", stringInset: 26, shape: "figure8" },
+  portugueseGuitar: { width: 300, height: 240, inset: 4, rx: 0, bodyClass: "portuguese-guitar-body", stringInset: 30, shape: "round" },
 };
 
 function StringsVisual({ notes, activeNote, highlightNote, onPress, instrument }) {
@@ -85,6 +91,12 @@ function StringsVisual({ notes, activeNote, highlightNote, onPress, instrument }
           <rect x={4} y={4} width={width - 8} height={height - 8} rx={cfg.rx} className={"instrument-body " + bodyClass} filter="url(#iv-shadow)" />
           <rect x={4} y={4} width={width - 8} height={height - 8} rx={cfg.rx} fill="url(#iv-sheen)" />
         </>
+      )}
+      {instrument === "portugueseGuitar" && (
+        <path
+          d={`M ${width / 2 - 34} 6 L ${width / 2 - 12} 26 L ${width / 2} 6 L ${width / 2 + 12} 26 L ${width / 2 + 34} 6`}
+          className="portuguese-guitar-fan"
+        />
       )}
       {notes.map((note, i) => {
         const y = gap * (i + 1);
@@ -302,6 +314,121 @@ function TrumpetVisual({ notes, activeNote, highlightNote, onPress }) {
   );
 }
 
+// Accordion/concertina silhouette with tappable buttons and a bellows shape
+// that visually squeezes when a note is played.
+// Accordion: wide side panels, a wide zig-zag bellows, and a piano-like row
+// of small keys hinted along the right panel — its distinguishing visual
+// trait vs the concertina.
+// Concertina: small hexagonal end panels, a narrower bellows, and buttons
+// on both ends instead of piano keys.
+const BELLOWS_CONFIG = {
+  accordion: { width: 320, height: 190, sideWidth: 70, folds: 7, panelShape: "rect", bodyClass: "accordion-side" },
+  concertina: { width: 260, height: 170, sideWidth: 56, folds: 4, panelShape: "hex", bodyClass: "concertina-side" },
+};
+
+function BellowsVisual({ notes, activeNote, highlightNote, onPress, instrument }) {
+  const [pulsing, setPulsing] = useState(false);
+  useEffect(() => {
+    if (!activeNote) return;
+    setPulsing(true);
+    const timer = window.setTimeout(() => setPulsing(false), 280);
+    return () => window.clearTimeout(timer);
+  }, [activeNote]);
+
+  const cfg = BELLOWS_CONFIG[instrument] || BELLOWS_CONFIG.accordion;
+  const { width, height, sideWidth, folds, panelShape, bodyClass } = cfg;
+  const cols = 4;
+  const foldStart = sideWidth + 6;
+  const foldEnd = width - sideWidth - 6;
+
+  const hexPoints = (cx, cy, w, h) => {
+    const hw = w / 2;
+    const hh = h / 2;
+    const cut = hw * 0.4;
+    return [
+      [cx - hw + cut, cy - hh],
+      [cx + hw - cut, cy - hh],
+      [cx + hw, cy],
+      [cx + hw - cut, cy + hh],
+      [cx - hw + cut, cy + hh],
+      [cx - hw, cy],
+    ]
+      .map((p) => p.join(","))
+      .join(" ");
+  };
+
+  return (
+    <div className={"bellows-wrap bellows-wrap-" + instrument + (pulsing ? " pulsing" : "")}>
+      <svg
+        className={"instrument-visual-svg bellows-visual bellows-visual-" + instrument}
+        viewBox={`0 0 ${width} ${height}`}
+        width="100%"
+        role="img"
+        aria-label="Fole"
+      >
+        <InstrumentDefs />
+        {panelShape === "hex" ? (
+          <>
+            <polygon points={hexPoints(sideWidth / 2, height / 2, sideWidth, height - 30)} className={"instrument-body " + bodyClass} />
+            <polygon points={hexPoints(width - sideWidth / 2, height / 2, sideWidth, height - 30)} className={"instrument-body " + bodyClass} />
+          </>
+        ) : (
+          <>
+            <rect x={0} y={20} width={sideWidth} height={height - 40} rx={10} className={"instrument-body " + bodyClass} />
+            <rect x={width - sideWidth} y={20} width={sideWidth} height={height - 40} rx={10} className={"instrument-body " + bodyClass} />
+          </>
+        )}
+        <g className="bellows-folds">
+          {Array.from({ length: folds }, (_, i) => (
+            <line
+              key={i}
+              x1={foldStart + i * ((foldEnd - foldStart) / (folds - 1))}
+              y1={24}
+              x2={foldStart + i * ((foldEnd - foldStart) / (folds - 1))}
+              y2={height - 24}
+              className="bellows-fold-line"
+            />
+          ))}
+        </g>
+        {instrument === "accordion" &&
+          Array.from({ length: 5 }, (_, i) => (
+            <rect
+              key={i}
+              x={width - sideWidth + 10}
+              y={30 + i * 22}
+              width={14}
+              height={12}
+              rx={2}
+              className="accordion-key"
+            />
+          ))}
+        {instrument === "concertina" && (
+          <>
+            {Array.from({ length: 3 }, (_, i) => (
+              <circle key={"l" + i} cx={sideWidth / 2} cy={50 + i * 32} r={5} className="concertina-button" />
+            ))}
+            {Array.from({ length: 3 }, (_, i) => (
+              <circle key={"r" + i} cx={width - sideWidth / 2} cy={50 + i * 32} r={5} className="concertina-button" />
+            ))}
+          </>
+        )}
+      </svg>
+      <div className="bellows-buttons" style={{ gridTemplateColumns: `repeat(${cols}, 1fr)` }}>
+        {notes.map((note) => (
+          <button
+            key={note}
+            type="button"
+            className={"bellows-button" + (activeNote === note ? " active" : "") + (highlightNote === note ? " highlight" : "")}
+            onClick={() => onPress(note)}
+          >
+            {noteLabel(note)}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 // Angled/vertical fan of strings for the harp — deliberately not horizontal,
 // so it reads as visually distinct from the flat-body "strings" family.
 function HarpVisual({ notes, activeNote, highlightNote, onPress }) {
@@ -478,5 +605,7 @@ export default function InstrumentVisual({ instrument, activeNote, highlightNote
   }
   if (family === "harp") return <HarpVisual notes={NOTES} activeNote={activeNote} highlightNote={highlightNote} onPress={onPress} />;
   if (family === "mallet") return <MalletVisual notes={NOTES} activeNote={activeNote} highlightNote={highlightNote} onPress={onPress} />;
+  if (family === "bellows")
+    return <BellowsVisual notes={NOTES} activeNote={activeNote} highlightNote={highlightNote} onPress={onPress} instrument={instrument} />;
   return null;
 }
