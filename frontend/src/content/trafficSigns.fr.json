@@ -14,5 +14,13 @@
   {"id": "ciclovia", "emoji": "🚲", "name": "Piste Cyclable", "meaning": "Un chemin réservé aux vélos. Les voitures ne doivent ni rouler ni se garer ici.", "category": "pedestrian"},
   {"id": "cruzamento", "emoji": "✖️", "name": "Carrefour", "meaning": "Prévient que deux routes vont se croiser devant. Il faut être plus attentif et ralentir.", "category": "driver"},
   {"id": "lomba", "emoji": "🐫", "name": "Ralentisseur", "meaning": "Une petite bosse sur la route qui oblige les voitures à ralentir. Elle protège les personnes qui traversent à pied.", "category": "pedestrian"},
-  {"id": "perigo-geral", "emoji": "⚠️", "name": "Danger Général", "meaning": "Ce triangle prévient qu'il y a un danger devant. Fais très attention et ralentis.", "category": "driver"}
+  {"id": "perigo-geral", "emoji": "⚠️", "name": "Danger Général", "meaning": "Ce triangle prévient qu'il y a un danger devant. Fais très attention et ralentis.", "category": "driver"},
+  {"id": "passagem-nivel", "emoji": "🚂", "name": "Passage à Niveau", "meaning": "Prévient que la route croise une voie ferrée. Arrête-toi toujours et regarde bien avant de traverser — un train ne peut pas s'arrêter vite.", "category": "driver"},
+  {"id": "proibido-bicicletas", "emoji": "🚳", "name": "Vélos Interdits", "meaning": "Les vélos ne peuvent pas circuler ici. Il faut utiliser un autre chemin, comme la piste cyclable.", "category": "pedestrian"},
+  {"id": "hospital", "emoji": "🏥", "name": "Hôpital", "meaning": "Prévient qu'un hôpital est proche. Les voitures doivent faire plus attention et éviter de klaxonner, pour ne pas déranger les personnes malades.", "category": "driver"},
+  {"id": "estrada-prioritaria", "emoji": "🛣️", "name": "Route Prioritaire", "meaning": "Montre que cette route a la priorité sur les autres qui la croisent. Ceux qui viennent des routes secondaires doivent attendre.", "category": "driver"},
+  {"id": "altura-limitada", "emoji": "📏", "name": "Hauteur Limitée", "meaning": "Prévient que les véhicules hauts, comme les camions, ne passent pas ici. Ça évite qu'ils heurtent un pont ou un tunnel bas.", "category": "driver"},
+  {"id": "proibido-ultrapassar", "emoji": "🚫", "name": "Dépassement Interdit", "meaning": "Il est interdit de dépasser d'autres véhicules sur cette route, car cela peut être dangereux, comme près des virages.", "category": "driver"},
+  {"id": "ilheu-seguranca", "emoji": "🚏", "name": "Refuge pour Piétons", "meaning": "Une petite île au milieu de la route où tu peux attendre en sécurité si tu ne peux pas traverser d'un coup.", "category": "pedestrian"},
+  {"id": "capacete-obrigatorio", "emoji": "⛑️", "name": "Casque Obligatoire", "meaning": "Prévient que toute personne à vélo ou en trottinette doit toujours porter un casque, pour protéger sa tête en cas de chute.", "category": "pedestrian"}
 ]

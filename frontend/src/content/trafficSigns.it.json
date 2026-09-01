@@ -14,5 +14,13 @@
   {"id": "ciclovia", "emoji": "🚲", "name": "Pista Ciclabile", "meaning": "È un percorso solo per biciclette. Le auto non devono circolare né parcheggiare qui.", "category": "pedestrian"},
   {"id": "cruzamento", "emoji": "✖️", "name": "Incrocio", "meaning": "Avvisa che due strade si incroceranno più avanti. Bisogna prestare più attenzione e rallentare.", "category": "driver"},
   {"id": "lomba", "emoji": "🐫", "name": "Dosso Artificiale", "meaning": "C'è un piccolo dosso sulla strada che obbliga le auto ad andare piano. Serve a proteggere chi attraversa a piedi.", "category": "pedestrian"},
-  {"id": "perigo-geral", "emoji": "⚠️", "name": "Pericolo Generico", "meaning": "Questo triangolo avvisa che c'è un pericolo più avanti. Presta molta attenzione e rallenta.", "category": "driver"}
+  {"id": "perigo-geral", "emoji": "⚠️", "name": "Pericolo Generico", "meaning": "Questo triangolo avvisa che c'è un pericolo più avanti. Presta molta attenzione e rallenta.", "category": "driver"},
+  {"id": "passagem-nivel", "emoji": "🚂", "name": "Passaggio a Livello", "meaning": "Avvisa che la strada incrocia una linea ferroviaria. Fermati sempre e guarda bene prima di attraversare — un treno non può frenare velocemente.", "category": "driver"},
+  {"id": "proibido-bicicletas", "emoji": "🚳", "name": "Divieto di Transito per Biciclette", "meaning": "Le biciclette non possono circolare qui. Bisogna usare un altro percorso, come la pista ciclabile.", "category": "pedestrian"},
+  {"id": "hospital", "emoji": "🏥", "name": "Ospedale", "meaning": "Avvisa che c'è un ospedale vicino. Le auto devono fare più attenzione ed evitare di suonare il clacson, per non disturbare chi è malato.", "category": "driver"},
+  {"id": "estrada-prioritaria", "emoji": "🛣️", "name": "Strada con Diritto di Precedenza", "meaning": "Mostra che questa strada ha la precedenza sulle altre che la incrociano. Chi arriva dalle strade secondarie deve aspettare.", "category": "driver"},
+  {"id": "altura-limitada", "emoji": "📏", "name": "Altezza Limitata", "meaning": "Avvisa che i veicoli alti, come i camion, non passano da qui. Serve a evitare che sbattano contro un ponte o una galleria bassa.", "category": "driver"},
+  {"id": "proibido-ultrapassar", "emoji": "🚫", "name": "Divieto di Sorpasso", "meaning": "Non è permesso sorpassare altri veicoli su questa strada, perché può essere pericoloso, ad esempio vicino alle curve.", "category": "driver"},
+  {"id": "ilheu-seguranca", "emoji": "🚏", "name": "Isola Salvagente per Pedoni", "meaning": "È una piccola isola in mezzo alla strada dove puoi aspettare in sicurezza se non riesci ad attraversare tutto insieme.", "category": "pedestrian"},
+  {"id": "capacete-obrigatorio", "emoji": "⛑️", "name": "Casco Obbligatorio", "meaning": "Avvisa che chi va in bicicletta o monopattino deve sempre indossare il casco, per proteggere la testa in caso di caduta.", "category": "pedestrian"}
 ]

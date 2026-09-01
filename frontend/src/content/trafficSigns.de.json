@@ -14,5 +14,13 @@
   {"id": "ciclovia", "emoji": "🚲", "name": "Radweg", "meaning": "Ein Weg nur für Fahrräder. Autos sollten hier weder fahren noch parken.", "category": "pedestrian"},
   {"id": "cruzamento", "emoji": "✖️", "name": "Kreuzung", "meaning": "Warnt, dass sich vorne zwei Straßen kreuzen. Du musst besonders aufpassen und langsamer werden.", "category": "driver"},
   {"id": "lomba", "emoji": "🐫", "name": "Bodenschwelle", "meaning": "Ein kleiner Hügel auf der Straße, der die Autos zwingt, langsam zu fahren. Er schützt Menschen, die zu Fuß überqueren.", "category": "pedestrian"},
-  {"id": "perigo-geral", "emoji": "⚠️", "name": "Allgemeine Gefahrenstelle", "meaning": "Dieses Dreieck warnt vor einer Gefahr voraus. Sei besonders aufmerksam und fahre langsamer.", "category": "driver"}
+  {"id": "perigo-geral", "emoji": "⚠️", "name": "Allgemeine Gefahrenstelle", "meaning": "Dieses Dreieck warnt vor einer Gefahr voraus. Sei besonders aufmerksam und fahre langsamer.", "category": "driver"},
+  {"id": "passagem-nivel", "emoji": "🚂", "name": "Bahnübergang", "meaning": "Warnt, dass die Straße eine Bahnstrecke kreuzt. Halte immer an und schau genau, bevor du überquerst — ein Zug kann nicht schnell bremsen.", "category": "driver"},
+  {"id": "proibido-bicicletas", "emoji": "🚳", "name": "Fahrräder verboten", "meaning": "Fahrräder dürfen hier nicht fahren. Du musst einen anderen Weg nehmen, wie den Radweg.", "category": "pedestrian"},
+  {"id": "hospital", "emoji": "🏥", "name": "Krankenhaus", "meaning": "Warnt, dass ein Krankenhaus in der Nähe ist. Autos sollten besonders vorsichtig sein und nicht hupen, um kranke Menschen nicht zu stören.", "category": "driver"},
+  {"id": "estrada-prioritaria", "emoji": "🛣️", "name": "Vorfahrtstraße", "meaning": "Zeigt, dass diese Straße Vorfahrt vor anderen hat, die sie kreuzen. Fahrzeuge von Nebenstraßen müssen warten.", "category": "driver"},
+  {"id": "altura-limitada", "emoji": "📏", "name": "Höhenbegrenzung", "meaning": "Warnt, dass hohe Fahrzeuge, wie Lastwagen, hier nicht durchpassen. Das verhindert, dass sie gegen eine niedrige Brücke oder einen Tunnel stoßen.", "category": "driver"},
+  {"id": "proibido-ultrapassar", "emoji": "🚫", "name": "Überholverbot", "meaning": "Auf dieser Straße darfst du andere Fahrzeuge nicht überholen, weil es gefährlich sein kann, zum Beispiel in Kurven.", "category": "driver"},
+  {"id": "ilheu-seguranca", "emoji": "🚏", "name": "Fußgängerschutzinsel", "meaning": "Eine kleine Insel in der Mitte der Straße, wo du sicher warten kannst, wenn du nicht auf einmal ganz hinüberkommst.", "category": "pedestrian"},
+  {"id": "capacete-obrigatorio", "emoji": "⛑️", "name": "Helmpflicht", "meaning": "Warnt, dass jeder, der Fahrrad oder Roller fährt, immer einen Helm tragen muss, um den Kopf bei einem Sturz zu schützen.", "category": "pedestrian"}
 ]

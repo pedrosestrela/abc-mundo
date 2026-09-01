@@ -14,5 +14,13 @@
   {"id": "ciclovia", "emoji": "🚲", "name": "Cycle Lane", "meaning": "A path just for bicycles. Cars should not drive or park here.", "category": "pedestrian"},
   {"id": "cruzamento", "emoji": "✖️", "name": "Crossroads", "meaning": "Warns that two roads will cross ahead. You need to pay extra attention and slow down.", "category": "driver"},
   {"id": "lomba", "emoji": "🐫", "name": "Speed Bump", "meaning": "A small bump in the road that makes cars go slowly. It helps protect people crossing on foot.", "category": "pedestrian"},
-  {"id": "perigo-geral", "emoji": "⚠️", "name": "General Danger", "meaning": "This triangle warns there is a danger ahead. Pay close attention and slow down.", "category": "driver"}
+  {"id": "perigo-geral", "emoji": "⚠️", "name": "General Danger", "meaning": "This triangle warns there is a danger ahead. Pay close attention and slow down.", "category": "driver"},
+  {"id": "passagem-nivel", "emoji": "🚂", "name": "Level Crossing", "meaning": "Warns that the road crosses a train track. Always stop and look carefully before crossing — a train cannot stop quickly.", "category": "driver"},
+  {"id": "proibido-bicicletas", "emoji": "🚳", "name": "No Bicycles", "meaning": "Bicycles cannot ride here. You need to use another path, like the cycle lane.", "category": "pedestrian"},
+  {"id": "hospital", "emoji": "🏥", "name": "Hospital", "meaning": "Warns that a hospital is nearby. Cars should be extra careful and avoid honking, so they don't disturb people who are sick.", "category": "driver"},
+  {"id": "estrada-prioritaria", "emoji": "🛣️", "name": "Priority Road", "meaning": "Shows that this road has priority over others that cross it. Traffic from side roads must wait.", "category": "driver"},
+  {"id": "altura-limitada", "emoji": "📏", "name": "Height Limit", "meaning": "Warns that tall vehicles, like trucks, don't fit through here. It helps prevent them from hitting a low bridge or tunnel.", "category": "driver"},
+  {"id": "proibido-ultrapassar", "emoji": "🚫", "name": "No Overtaking", "meaning": "You're not allowed to overtake other vehicles on this road, because it can be dangerous, like near curves.", "category": "driver"},
+  {"id": "ilheu-seguranca", "emoji": "🚏", "name": "Pedestrian Refuge Island", "meaning": "A small island in the middle of the road where you can wait safely if you can't cross all the way at once.", "category": "pedestrian"},
+  {"id": "capacete-obrigatorio", "emoji": "⛑️", "name": "Helmet Required", "meaning": "Warns that anyone riding a bike or scooter must always wear a helmet, to protect their head in case of a fall.", "category": "pedestrian"}
 ]

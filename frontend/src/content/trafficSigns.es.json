@@ -14,5 +14,13 @@
   {"id": "ciclovia", "emoji": "🚲", "name": "Carril Bici", "meaning": "Es un camino solo para bicicletas. Los coches no deben circular ni aparcar aquí.", "category": "pedestrian"},
   {"id": "cruzamento", "emoji": "✖️", "name": "Cruce", "meaning": "Avisa que dos carreteras se van a cruzar más adelante. Hay que prestar más atención y reducir la velocidad.", "category": "driver"},
   {"id": "lomba", "emoji": "🐫", "name": "Badén", "meaning": "Hay un pequeño montículo en la carretera que obliga a los coches a ir despacio. Sirve para proteger a quien cruza a pie.", "category": "pedestrian"},
-  {"id": "perigo-geral", "emoji": "⚠️", "name": "Peligro General", "meaning": "Este triángulo avisa de que hay un peligro más adelante. Presta mucha atención y reduce la velocidad.", "category": "driver"}
+  {"id": "perigo-geral", "emoji": "⚠️", "name": "Peligro General", "meaning": "Este triángulo avisa de que hay un peligro más adelante. Presta mucha atención y reduce la velocidad.", "category": "driver"},
+  {"id": "passagem-nivel", "emoji": "🚂", "name": "Paso a Nivel", "meaning": "Avisa de que la carretera cruza una vía de tren. Detente siempre y mira bien antes de cruzar — un tren no puede frenar rápido.", "category": "driver"},
+  {"id": "proibido-bicicletas", "emoji": "🚳", "name": "Prohibido Bicicletas", "meaning": "Las bicicletas no pueden circular por aquí. Hay que usar otro camino, como el carril bici.", "category": "pedestrian"},
+  {"id": "hospital", "emoji": "🏥", "name": "Hospital", "meaning": "Avisa de que hay un hospital cerca. Los coches deben tener más cuidado y evitar tocar el claxon, para no molestar a quien está enfermo.", "category": "driver"},
+  {"id": "estrada-prioritaria", "emoji": "🛣️", "name": "Carretera con Prioridad", "meaning": "Muestra que esta carretera tiene prioridad sobre las demás que se cruzan con ella. Quien viene de las carreteras secundarias debe esperar.", "category": "driver"},
+  {"id": "altura-limitada", "emoji": "📏", "name": "Altura Limitada", "meaning": "Avisa de que los vehículos altos, como los camiones, no caben por aquí. Sirve para evitar que choquen contra un puente o túnel bajo.", "category": "driver"},
+  {"id": "proibido-ultrapassar", "emoji": "🚫", "name": "Prohibido Adelantar", "meaning": "No está permitido adelantar a otros vehículos en esta carretera, porque puede ser peligroso, como cerca de curvas.", "category": "driver"},
+  {"id": "ilheu-seguranca", "emoji": "🚏", "name": "Refugio para Peatones", "meaning": "Es una pequeña isla en medio de la carretera donde puedes esperar con seguridad si no consigues cruzar de una vez.", "category": "pedestrian"},
+  {"id": "capacete-obrigatorio", "emoji": "⛑️", "name": "Casco Obligatorio", "meaning": "Avisa de que quien va en bicicleta o patinete debe usar siempre casco, para proteger la cabeza en caso de caída.", "category": "pedestrian"}
 ]

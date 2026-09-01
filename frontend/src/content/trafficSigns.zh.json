@@ -14,5 +14,13 @@
   {"id": "ciclovia", "emoji": "🚲", "name": "自行车道", "meaning": "这是一条只给自行车使用的道路。汽车不应该在这里行驶或停车。", "category": "pedestrian"},
   {"id": "cruzamento", "emoji": "✖️", "name": "十字路口", "meaning": "提醒前方有两条道路会交叉。需要更加注意并减速。", "category": "driver"},
   {"id": "lomba", "emoji": "🐫", "name": "减速带", "meaning": "路上有一个小土坡，迫使汽车慢慢行驶。它可以保护步行过马路的人。", "category": "pedestrian"},
-  {"id": "perigo-geral", "emoji": "⚠️", "name": "一般危险", "meaning": "这个三角形提醒前方有危险。要特别注意并减速。", "category": "driver"}
+  {"id": "perigo-geral", "emoji": "⚠️", "name": "一般危险", "meaning": "这个三角形提醒前方有危险。要特别注意并减速。", "category": "driver"},
+  {"id": "passagem-nivel", "emoji": "🚂", "name": "铁路道口", "meaning": "提醒这条路和铁路交叉。过铁轨前一定要先停下来，仔细看清楚——火车没办法很快停下来。", "category": "driver"},
+  {"id": "proibido-bicicletas", "emoji": "🚳", "name": "禁止自行车通行", "meaning": "自行车不能从这里通过，需要走另一条路，比如自行车道。", "category": "pedestrian"},
+  {"id": "hospital", "emoji": "🏥", "name": "医院", "meaning": "提醒附近有医院。汽车要特别小心，尽量不要按喇叭，以免打扰生病的人。", "category": "driver"},
+  {"id": "estrada-prioritaria", "emoji": "🛣️", "name": "优先通行道路", "meaning": "表示这条路比与它交叉的其他道路优先通行，从旁边小路来的车辆需要等待。", "category": "driver"},
+  {"id": "altura-limitada", "emoji": "📏", "name": "限高标志", "meaning": "提醒像卡车这样的高大车辆无法通过这里，这样可以避免撞到低矮的桥梁或隧道。", "category": "driver"},
+  {"id": "proibido-ultrapassar", "emoji": "🚫", "name": "禁止超车", "meaning": "在这条路上不可以超车，因为可能很危险，比如在弯道附近。", "category": "driver"},
+  {"id": "ilheu-seguranca", "emoji": "🚏", "name": "行人安全岛", "meaning": "这是马路中间的一小块安全区域，如果你不能一次走完全部马路，可以在这里安全等待。", "category": "pedestrian"},
+  {"id": "capacete-obrigatorio", "emoji": "⛑️", "name": "必须戴头盔", "meaning": "提醒骑自行车或滑板车的人一定要戴头盔，这样摔倒时可以保护头部。", "category": "pedestrian"}
 ]

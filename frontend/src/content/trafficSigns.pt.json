@@ -14,5 +14,13 @@
   {"id": "ciclovia", "emoji": "🚲", "name": "Ciclovia", "meaning": "É um caminho só para bicicletas. Os carros não devem andar nem estacionar aqui.", "category": "pedestrian"},
   {"id": "cruzamento", "emoji": "✖️", "name": "Cruzamento", "meaning": "Avisa que duas estradas se vão cruzar à frente. É preciso ter mais atenção e abrandar.", "category": "driver"},
   {"id": "lomba", "emoji": "🐫", "name": "Lomba", "meaning": "Há um pequeno monte na estrada que obriga os carros a andar devagar. Serve para proteger quem atravessa a pé.", "category": "pedestrian"},
-  {"id": "perigo-geral", "emoji": "⚠️", "name": "Perigo Geral", "meaning": "Este triângulo avisa que há um perigo à frente. Presta muita atenção e abranda.", "category": "driver"}
+  {"id": "perigo-geral", "emoji": "⚠️", "name": "Perigo Geral", "meaning": "Este triângulo avisa que há um perigo à frente. Presta muita atenção e abranda.", "category": "driver"},
+  {"id": "passagem-nivel", "emoji": "🚂", "name": "Passagem de Nível", "meaning": "Avisa que a estrada cruza uma linha de comboio. Pára sempre e olha bem antes de atravessar — um comboio não consegue travar depressa.", "category": "driver"},
+  {"id": "proibido-bicicletas", "emoji": "🚳", "name": "Proibido Bicicletas", "meaning": "As bicicletas não podem circular por aqui. É preciso usar outro caminho, como a ciclovia.", "category": "pedestrian"},
+  {"id": "hospital", "emoji": "🏥", "name": "Hospital", "meaning": "Avisa que há um hospital perto. Os carros devem ter mais cuidado e evitar buzinar, para não incomodar quem está doente.", "category": "driver"},
+  {"id": "estrada-prioritaria", "emoji": "🛣️", "name": "Estrada com Prioridade", "meaning": "Mostra que esta estrada tem prioridade sobre as outras que se cruzam com ela. Quem vem das estradas secundárias tem de esperar.", "category": "driver"},
+  {"id": "altura-limitada", "emoji": "📏", "name": "Altura Limitada", "meaning": "Avisa que veículos altos, como camiões, não cabem por aqui. Serve para evitar que batam numa ponte ou túnel baixo.", "category": "driver"},
+  {"id": "proibido-ultrapassar", "emoji": "🚫", "name": "Proibido Ultrapassar", "meaning": "Não é permitido ultrapassar outros veículos nesta estrada, porque pode ser perigoso, como perto de curvas.", "category": "driver"},
+  {"id": "ilheu-seguranca", "emoji": "🚏", "name": "Refúgio para Peões", "meaning": "É uma pequena ilha no meio da estrada onde podes esperar em segurança se não conseguires atravessar tudo de uma vez.", "category": "pedestrian"},
+  {"id": "capacete-obrigatorio", "emoji": "⛑️", "name": "Capacete Obrigatório", "meaning": "Avisa que quem anda de bicicleta ou trotinete deve usar sempre um capacete, para proteger a cabeça em caso de queda.", "category": "pedestrian"}
 ]
