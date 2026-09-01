@@ -13,6 +13,7 @@ import {
 } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
 import HelpButton from "../components/HelpButton.jsx";
+import MascotBubble from "../components/mascots/MascotBubble.jsx";
 
 // Deterministic-per-day pick of one off-screen mission template, so the
 // child sees the same one all day (not a new random one on every reload)
@@ -91,6 +92,9 @@ export default function DailyMission() {
       <div className="help-btn-corner">
         <HelpButton text={t("dailyMission.help")} langCode={pair.mother} />
       </div>
+      <MascotBubble character="milo" reaction="happy" langCode={pair.mother}>
+        {t("mascotLines.dailyMissionOpening")}
+      </MascotBubble>
 
       <div className="reading-list">
         {bundle.letters.map((letter, i) => (
@@ -160,6 +164,10 @@ export default function DailyMission() {
           🔢 {t("dailyMission.goToMath")}
         </button>
       </div>
+
+      <MascotBubble character="milo" reaction="resting" langCode={pair.mother}>
+        {t("mascotLines.dailyMissionClosing")}
+      </MascotBubble>
 
       <button type="button" className="big-btn" onClick={handleComplete}>
         ✅ {t("dailyMission.complete")}
