@@ -1,0 +1,16 @@
+[
+  { "id": "draw-letters", "template": "Desenha {number} {letter}s grandes no papel, com lápis de cor diferentes." },
+  { "id": "find-object", "template": "Procura em casa uma coisa que comece pela letra {letter}." },
+  { "id": "count-object", "template": "Encontra {number} objetos iguais em casa e conta-os em voz alta." },
+  { "id": "trace-finger", "template": "Desenha a letra {letter} no ar com o dedo, e depois nas costas de alguém da família." },
+  { "id": "letter-hunt-book", "template": "Abre um livro ou revista e procura {number} palavras que comecem pela letra {letter}." },
+  { "id": "build-letter", "template": "Usa massa de moldar, lã ou paus de gelado para construir a letra {letter}." },
+  { "id": "count-steps", "template": "Dá {number} passos grandes até à porta mais próxima, contando alto." },
+  { "id": "letter-snack", "template": "Ajuda a preparar um lanche e organiza {number} pedaços de fruta num prato." },
+  { "id": "family-word", "template": "Pergunta a alguém da família uma palavra que comece pela letra {letter} e desenha-a." },
+  { "id": "letter-walk", "template": "Numa caminhada ou passeio, tenta encontrar {number} coisas que comecem pela letra {letter}." },
+  { "id": "sing-count", "template": "Canta ou inventa uma lengalenga contando até {number}." },
+  { "id": "letter-shape", "template": "Com um cordel ou fita, forma a letra {letter} no chão." },
+  { "id": "sort-toys", "template": "Separa {number} brinquedos por cor e conta quantos há de cada." },
+  { "id": "letter-sound", "template": "Diz {number} palavras que comecem com o som da letra {letter}, uma de cada vez." }
+]

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import i18n from "../i18n/index.js";
-import { getProfiles, setProfile, pingProgress } from "../storage.js";
+import { getProfiles, getProfile, setProfile, pingProgress, getLangPair } from "../storage.js";
 // PLACEHOLDER smoke-test integration (illustration/mascot library task) —
 // future agents working on Home.jsx are free to remove, replace, or build on this.
 import MascotBubble from "../components/mascots/MascotBubble.jsx";
@@ -23,16 +23,54 @@ export default function Home() {
   const [name, setName] = useState("");
   const [avatar, setAvatar] = useState(AVATARS[0]);
   const [age, setAge] = useState(AGES[0]);
+  // Once a profile with an already-chosen language pair is picked, show a
+  // small guided "hub" of three big choices right here instead of jumping
+  // straight into a module — this is the new Phase 1 daily-guided-path
+  // entry point. First-time profiles (no language pair yet) still go
+  // straight to language setup, unchanged.
+  const [hubProfile, setHubProfile] = useState(null);
 
   function selectProfile(profile) {
     setProfile(profile);
     pingProgress({ profileName: profile.name, module: "home", event: "profile_selected" });
-    navigate("/languages");
+    if (getLangPair()) {
+      setHubProfile(profile);
+    } else {
+      navigate("/languages");
+    }
   }
 
   function handleStart() {
     const profile = { name: name.trim() || "Explorer", avatar, age };
     selectProfile(profile);
+  }
+
+  if (hubProfile) {
+    return (
+      <div className="page home-page">
+        <h1 className="app-title">ABC Mundo 🌍✨</h1>
+        <div className="help-btn-corner">
+          <HelpButton text={t("home.helpHub")} langCode={i18n.language} />
+        </div>
+        <h2>{t("home.hubGreeting", { name: hubProfile.name })}</h2>
+
+        <div className="reading-list">
+          <button type="button" className="big-btn" onClick={() => navigate("/daily-mission")}>
+            ▶️ {t("home.continueAdventure")}
+          </button>
+          <button type="button" className="big-btn" onClick={() => navigate("/daily-mission")}>
+            🌟 {t("home.todaysMission")}
+          </button>
+          <button type="button" className="big-btn" onClick={() => navigate("/mundos")}>
+            🗺️ {t("home.chooseWorld")}
+          </button>
+        </div>
+
+        <button type="button" className="nav-link" onClick={() => setHubProfile(null)}>
+          ← {t("home.switchProfile")}
+        </button>
+      </div>
+    );
   }
 
   if (!showForm) {

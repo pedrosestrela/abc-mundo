@@ -5,7 +5,7 @@ const resources = {
   pt: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Início", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Leitura", phrases: "Frases", songs: "Canções", game: "Jogo", piano: "Piano", music: "Música", language: "Idiomas" , stories: "Histórias" , rhymes: "Lengalengas" , math: "Matemática" , financial: "Dinheiro" , parents: "Pais" , achievements: "Conquistas" , phonics: "Sons" , missions: "Missões" , world: "Mundo" , detective: "Detetive" , whys: "Porquês" , robots: "Robôs" , art: "Ateliê" , science: "Ciência" , history: "História" , lifeskills: "Vida"  , computing: "Cibercidade" , howThingsWork: "Como Funciona Isto" , city: "Como Funciona?" , howMade: "Como É Feito?" , mundos: "Mundos" , thinking: "Pensar", achievementsNav: "Eu", natureDiary: "Diário" , writing: "Escrita", communication: "Comunicação", learningStrategies: "Aprender a Aprender", trafficSchool: "Escola de Trânsito", humanEvolution: "Evolução Humana", solarSystem: "Sistema Solar", techHistory: "Inventos que Mudaram o Mundo", miniChef: "Mini Cozinheiro", circuitLab: "Laboratório de Circuitos", senses: "Sentidos", teardown: "O Que Há Dentro?", humanBody: "Corpo Humano", museum: "Museu ABC", zeroWaste: "Zero Desperdício", teamwork: "Equipa", freeCreation: "Criador Livre"},
+      nav: { home: "Início", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Leitura", phrases: "Frases", songs: "Canções", game: "Jogo", piano: "Piano", music: "Música", language: "Idiomas" , stories: "Histórias" , rhymes: "Lengalengas" , math: "Matemática" , financial: "Dinheiro" , parents: "Pais" , achievements: "Conquistas" , phonics: "Sons" , missions: "Missões" , world: "Mundo" , detective: "Detetive" , whys: "Porquês" , robots: "Robôs" , art: "Ateliê" , science: "Ciência" , history: "História" , lifeskills: "Vida"  , computing: "Cibercidade" , howThingsWork: "Como Funciona Isto" , city: "Como Funciona?" , howMade: "Como É Feito?" , mundos: "Mundos" , thinking: "Pensar", achievementsNav: "Eu", natureDiary: "Diário" , writing: "Escrita", communication: "Comunicação", learningStrategies: "Aprender a Aprender", trafficSchool: "Escola de Trânsito", humanEvolution: "Evolução Humana", solarSystem: "Sistema Solar", techHistory: "Inventos que Mudaram o Mundo", miniChef: "Mini Cozinheiro", circuitLab: "Laboratório de Circuitos", senses: "Sentidos", teardown: "O Que Há Dentro?", humanBody: "Corpo Humano", museum: "Museu ABC", zeroWaste: "Zero Desperdício", teamwork: "Equipa", freeCreation: "Criador Livre", dailyMission: "Missão de Hoje"},
       home: {
         pickProfile: "Escolhe o teu perfil",
         newProfile: "Novo perfil",
@@ -17,6 +17,11 @@ const resources = {
         chooseAvatar: "Escolhe um avatar",
         chooseAge: "Quantos anos tens?",
         helpMain: "Toca no teu boneco para começares a aprender! Se ainda não o vês na lista, toca no botão com o sinal de mais.",
+        hubGreeting: "Olá, {{name}}! O que vamos fazer hoje?",
+        helpHub: "Toca em Continuar Aventura para a missão de hoje, ou escolhe um mundo para explorar.",
+        continueAdventure: "Continuar Aventura",
+        todaysMission: "Missão de Hoje",
+        chooseWorld: "Escolher Mundo",
       },
       languagePicker: {
         title: "Escolhe os teus idiomas",
@@ -24,6 +29,19 @@ const resources = {
         secondary: "Idioma a aprender",
         continue: "Continuar",
         help: "Toca numa bandeira para escolheres a tua língua principal, depois toca noutra bandeira para escolheres a língua que queres aprender. No fim, toca na seta verde para continuar.",
+      },
+      dailyMission: {
+        title: "Missão de Hoje",
+        intro: "Uma letra, uma sílaba, uma palavra e um número — só para hoje!",
+        help: "Toca nos cartões para ouvires cada um. Toca em 'Já fiz!' no fim quando terminares.",
+        alreadyDone: "✅ Já fizeste a missão de hoje, volta amanhã!",
+        allDone: "Já exploraste todas as letras por aqui — boa exploração! 🌟",
+        offScreenTitle: "Missão fora do ecrã",
+        goToAlphabet: "Ir para Alfabeto",
+        goToSyllables: "Ir para Sílabas",
+        goToReading: "Ir para Leitura",
+        goToMath: "Ir para Matemática",
+        complete: "Já fiz!",
       },
       modules: {
         alphabetTitle: "Alfabeto",
@@ -1280,7 +1298,7 @@ const resources = {
   en: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Home", alphabet: "Alphabet", syllables: "Syllables", reading: "Reading", phrases: "Phrases", songs: "Songs", game: "Game", piano: "Piano", music: "Music", language: "Languages" , stories: "Stories" , rhymes: "Rhymes" , math: "Math" , financial: "Money" , parents: "Parents" , achievements: "Achievements" , phonics: "Sounds" , missions: "Missions" , world: "World" , detective: "Detective" , whys: "Whys" , robots: "Robots" , art: "Art Studio" , science: "Science" , history: "History" , lifeskills: "Life Skills"  , computing: "Cybercity" , howThingsWork: "How Things Work" , city: "How It Works" , howMade: "How Is It Made?" , mundos: "Worlds" , thinking: "Think", achievementsNav: "Me", natureDiary: "Diary" , writing: "Writing", communication: "Communication", learningStrategies: "Learn to Learn", trafficSchool: "Traffic School", humanEvolution: "Human Evolution", solarSystem: "Solar System", techHistory: "Inventions That Changed the World", miniChef: "Mini Chef", circuitLab: "Circuit Lab", senses: "Senses", teardown: "What's Inside?", museum: "ABC Museum", zeroWaste: "Zero Waste", teamwork: "Teamwork", freeCreation: "Free Creator"},
+      nav: { home: "Home", alphabet: "Alphabet", syllables: "Syllables", reading: "Reading", phrases: "Phrases", songs: "Songs", game: "Game", piano: "Piano", music: "Music", language: "Languages" , stories: "Stories" , rhymes: "Rhymes" , math: "Math" , financial: "Money" , parents: "Parents" , achievements: "Achievements" , phonics: "Sounds" , missions: "Missions" , world: "World" , detective: "Detective" , whys: "Whys" , robots: "Robots" , art: "Art Studio" , science: "Science" , history: "History" , lifeskills: "Life Skills"  , computing: "Cybercity" , howThingsWork: "How Things Work" , city: "How It Works" , howMade: "How Is It Made?" , mundos: "Worlds" , thinking: "Think", achievementsNav: "Me", natureDiary: "Diary" , writing: "Writing", communication: "Communication", learningStrategies: "Learn to Learn", trafficSchool: "Traffic School", humanEvolution: "Human Evolution", solarSystem: "Solar System", techHistory: "Inventions That Changed the World", miniChef: "Mini Chef", circuitLab: "Circuit Lab", senses: "Senses", teardown: "What's Inside?", museum: "ABC Museum", zeroWaste: "Zero Waste", teamwork: "Teamwork", freeCreation: "Free Creator", dailyMission: "Today's Mission"},
       home: {
         pickProfile: "Pick your profile",
         newProfile: "New profile",
@@ -1292,6 +1310,11 @@ const resources = {
         chooseAvatar: "Choose an avatar",
         chooseAge: "How old are you?",
         helpMain: "Tap your character to start learning! If you don't see it in the list yet, tap the plus button.",
+        hubGreeting: "Hi, {{name}}! What shall we do today?",
+        helpHub: "Tap Continue Adventure for today's mission, or choose a world to explore.",
+        continueAdventure: "Continue Adventure",
+        todaysMission: "Today's Mission",
+        chooseWorld: "Choose a World",
       },
       languagePicker: {
         title: "Choose your languages",
@@ -1299,6 +1322,19 @@ const resources = {
         secondary: "Language to learn",
         continue: "Continue",
         help: "Tap a flag to choose your main language, then tap another flag for the language you want to learn. Then tap the green arrow to continue.",
+      },
+      dailyMission: {
+        title: "Today's Mission",
+        intro: "One letter, one syllable, one word, and one number — just for today!",
+        help: "Tap the cards to hear each one. Tap 'Done!' at the end when you finish.",
+        alreadyDone: "✅ You already did today's mission, come back tomorrow!",
+        allDone: "You've explored every letter here — great exploring! 🌟",
+        offScreenTitle: "Off-screen mission",
+        goToAlphabet: "Go to Alphabet",
+        goToSyllables: "Go to Syllables",
+        goToReading: "Go to Reading",
+        goToMath: "Go to Math",
+        complete: "Done!",
       },
       modules: {
         alphabetTitle: "Alphabet",
@@ -2555,7 +2591,7 @@ const resources = {
   de: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Start", alphabet: "Alphabet", syllables: "Silben", reading: "Lesen", phrases: "Sätze", songs: "Lieder", game: "Spiel", piano: "Klavier", music: "Musik", language: "Sprachen" , stories: "Geschichten" , rhymes: "Reime" , math: "Mathe" , financial: "Geld" , parents: "Eltern" , achievements: "Erfolge" , phonics: "Laute" , missions: "Missionen" , world: "Welt" , detective: "Detektiv" , whys: "Warums" , robots: "Roboter" , art: "Atelier" , science: "Wissenschaft" , history: "Geschichte" , lifeskills: "Lebenskompetenz"  , computing: "Cyberstadt" , howThingsWork: "Wie Es Funktioniert" , city: "Wie Funktioniert Das?" , howMade: "Wie Wird Das Gemacht?" , mundos: "Welten" , thinking: "Denken", achievementsNav: "Ich", natureDiary: "Tagebuch" , writing: "Schreiben", communication: "Kommunikation", learningStrategies: "Lernen Lernen", trafficSchool: "Verkehrsschule", humanEvolution: "Menschliche Evolution", solarSystem: "Sonnensystem", techHistory: "Erfindungen, die die Welt Veränderten", miniChef: "Mini Koch", circuitLab: "Schaltkreis-Labor", senses: "Sinne", teardown: "Was Steckt Drin?", humanBody: "Menschlicher Körper", museum: "ABC-Museum", zeroWaste: "Null Verschwendung", teamwork: "Teamarbeit", freeCreation: "Freies Schaffen"},
+      nav: { home: "Start", alphabet: "Alphabet", syllables: "Silben", reading: "Lesen", phrases: "Sätze", songs: "Lieder", game: "Spiel", piano: "Klavier", music: "Musik", language: "Sprachen" , stories: "Geschichten" , rhymes: "Reime" , math: "Mathe" , financial: "Geld" , parents: "Eltern" , achievements: "Erfolge" , phonics: "Laute" , missions: "Missionen" , world: "Welt" , detective: "Detektiv" , whys: "Warums" , robots: "Roboter" , art: "Atelier" , science: "Wissenschaft" , history: "Geschichte" , lifeskills: "Lebenskompetenz"  , computing: "Cyberstadt" , howThingsWork: "Wie Es Funktioniert" , city: "Wie Funktioniert Das?" , howMade: "Wie Wird Das Gemacht?" , mundos: "Welten" , thinking: "Denken", achievementsNav: "Ich", natureDiary: "Tagebuch" , writing: "Schreiben", communication: "Kommunikation", learningStrategies: "Lernen Lernen", trafficSchool: "Verkehrsschule", humanEvolution: "Menschliche Evolution", solarSystem: "Sonnensystem", techHistory: "Erfindungen, die die Welt Veränderten", miniChef: "Mini Koch", circuitLab: "Schaltkreis-Labor", senses: "Sinne", teardown: "Was Steckt Drin?", humanBody: "Menschlicher Körper", museum: "ABC-Museum", zeroWaste: "Null Verschwendung", teamwork: "Teamarbeit", freeCreation: "Freies Schaffen", dailyMission: "Heutige Mission"},
       home: {
         pickProfile: "Wähle dein Profil",
         newProfile: "Neues Profil",
@@ -2567,6 +2603,11 @@ const resources = {
         chooseAvatar: "Wähle einen Avatar",
         chooseAge: "Wie alt bist du?",
         helpMain: "Tippe auf deine Figur, um mit dem Lernen zu beginnen! Siehst du sie noch nicht in der Liste, tippe auf den Plus-Knopf.",
+        hubGreeting: "Hallo, {{name}}! Was machen wir heute?",
+        helpHub: "Tippe auf Abenteuer fortsetzen für die heutige Mission, oder wähle eine Welt zum Erkunden.",
+        continueAdventure: "Abenteuer fortsetzen",
+        todaysMission: "Heutige Mission",
+        chooseWorld: "Welt wählen",
       },
       languagePicker: {
         title: "Wähle deine Sprachen",
@@ -2574,6 +2615,19 @@ const resources = {
         secondary: "Zu lernende Sprache",
         continue: "Weiter",
         help: "Tippe auf eine Flagge, um deine Hauptsprache zu wählen, dann tippe auf eine weitere Flagge für die Sprache, die du lernen möchtest. Tippe danach auf den grünen Pfeil, um weiterzugehen.",
+      },
+      dailyMission: {
+        title: "Heutige Mission",
+        intro: "Ein Buchstabe, eine Silbe, ein Wort und eine Zahl — nur für heute!",
+        help: "Tippe auf die Karten, um jede zu hören. Tippe am Ende auf 'Fertig!', wenn du fertig bist.",
+        alreadyDone: "✅ Du hast die heutige Mission schon gemacht, komm morgen wieder!",
+        allDone: "Du hast schon alle Buchstaben hier erkundet — gut gemacht! 🌟",
+        offScreenTitle: "Mission ohne Bildschirm",
+        goToAlphabet: "Zum Alphabet",
+        goToSyllables: "Zu den Silben",
+        goToReading: "Zum Lesen",
+        goToMath: "Zur Mathematik",
+        complete: "Fertig!",
       },
       modules: {
         alphabetTitle: "Alphabet",
@@ -3830,7 +3884,7 @@ const resources = {
   fr: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Accueil", alphabet: "Alphabet", syllables: "Syllabes", reading: "Lecture", phrases: "Phrases", songs: "Chansons", game: "Jeu", piano: "Piano", music: "Musique", language: "Langues" , stories: "Histoires" , rhymes: "Comptines" , math: "Maths" , financial: "Argent" , parents: "Parents" , achievements: "Réussites" , phonics: "Sons" , missions: "Missions" , world: "Monde" , detective: "Détective" , whys: "Pourquoi" , robots: "Robots" , art: "Atelier" , science: "Sciences" , history: "Histoire" , lifeskills: "Vie Pratique"  , computing: "Cybercité" , howThingsWork: "Comment Ça Marche" , city: "Comment Ça Marche ?" , howMade: "Comment C'est Fabriqué ?" , mundos: "Mondes" , thinking: "Penser", achievementsNav: "Moi", natureDiary: "Journal" , writing: "Écriture", communication: "Communication", learningStrategies: "Apprendre à Apprendre", trafficSchool: "École de la Route", humanEvolution: "Évolution Humaine", solarSystem: "Système Solaire", techHistory: "Inventions qui Ont Changé le Monde", miniChef: "Petit Chef", circuitLab: "Labo des Circuits", senses: "Sens", teardown: "Qu'y a-t-il Dedans ?", humanBody: "Corps Humain", museum: "Musée ABC", zeroWaste: "Zéro Déchet", teamwork: "Équipe", freeCreation: "Créateur Libre"},
+      nav: { home: "Accueil", alphabet: "Alphabet", syllables: "Syllabes", reading: "Lecture", phrases: "Phrases", songs: "Chansons", game: "Jeu", piano: "Piano", music: "Musique", language: "Langues" , stories: "Histoires" , rhymes: "Comptines" , math: "Maths" , financial: "Argent" , parents: "Parents" , achievements: "Réussites" , phonics: "Sons" , missions: "Missions" , world: "Monde" , detective: "Détective" , whys: "Pourquoi" , robots: "Robots" , art: "Atelier" , science: "Sciences" , history: "Histoire" , lifeskills: "Vie Pratique"  , computing: "Cybercité" , howThingsWork: "Comment Ça Marche" , city: "Comment Ça Marche ?" , howMade: "Comment C'est Fabriqué ?" , mundos: "Mondes" , thinking: "Penser", achievementsNav: "Moi", natureDiary: "Journal" , writing: "Écriture", communication: "Communication", learningStrategies: "Apprendre à Apprendre", trafficSchool: "École de la Route", humanEvolution: "Évolution Humaine", solarSystem: "Système Solaire", techHistory: "Inventions qui Ont Changé le Monde", miniChef: "Petit Chef", circuitLab: "Labo des Circuits", senses: "Sens", teardown: "Qu'y a-t-il Dedans ?", humanBody: "Corps Humain", museum: "Musée ABC", zeroWaste: "Zéro Déchet", teamwork: "Équipe", freeCreation: "Créateur Libre", dailyMission: "Mission du jour"},
       home: {
         pickProfile: "Choisis ton profil",
         newProfile: "Nouveau profil",
@@ -3842,6 +3896,11 @@ const resources = {
         chooseAvatar: "Choisis un avatar",
         chooseAge: "Quel âge as-tu ?",
         helpMain: "Touche ton personnage pour commencer à apprendre ! S'il n'est pas encore dans la liste, touche le bouton avec le signe plus.",
+        hubGreeting: "Salut, {{name}} ! Que fait-on aujourd'hui ?",
+        helpHub: "Touche Continuer l'aventure pour la mission du jour, ou choisis un monde à explorer.",
+        continueAdventure: "Continuer l'aventure",
+        todaysMission: "Mission du jour",
+        chooseWorld: "Choisir un monde",
       },
       languagePicker: {
         title: "Choisis tes langues",
@@ -3849,6 +3908,19 @@ const resources = {
         secondary: "Langue à apprendre",
         continue: "Continuer",
         help: "Touche un drapeau pour choisir ta langue principale, puis touche un autre drapeau pour la langue que tu veux apprendre. Touche ensuite la flèche verte pour continuer.",
+      },
+      dailyMission: {
+        title: "Mission du jour",
+        intro: "Une lettre, une syllabe, un mot et un nombre — juste pour aujourd'hui !",
+        help: "Touche les cartes pour les entendre. Touche 'C'est fait !' à la fin quand tu as terminé.",
+        alreadyDone: "✅ Tu as déjà fait la mission d'aujourd'hui, reviens demain !",
+        allDone: "Tu as exploré toutes les lettres ici — bravo pour ton exploration ! 🌟",
+        offScreenTitle: "Mission sans écran",
+        goToAlphabet: "Aller à l'Alphabet",
+        goToSyllables: "Aller aux Syllabes",
+        goToReading: "Aller à la Lecture",
+        goToMath: "Aller aux Maths",
+        complete: "C'est fait !",
       },
       modules: {
         alphabetTitle: "Alphabet",
@@ -5105,7 +5177,7 @@ const resources = {
   zh: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "首页", alphabet: "字母表", syllables: "音节", reading: "阅读", phrases: "句子", songs: "歌曲", game: "游戏", piano: "钢琴", music: "音乐", language: "语言" , stories: "故事" , rhymes: "童谣" , math: "数学" , financial: "金钱" , parents: "家长" , achievements: "成就" , phonics: "语音" , missions: "任务" , world: "世界" , detective: "侦探" , whys: "为什么" , robots: "机器人" , art: "创意工坊" , science: "科学" , history: "历史" , lifeskills: "生活技能"  , computing: "电脑城" , howThingsWork: "东西是怎么运作的" , city: "如何运作？" , howMade: "东西是怎么做出来的？" , mundos: "世界" , thinking: "思考", achievementsNav: "我", natureDiary: "日记" , writing: "书写", communication: "沟通", learningStrategies: "Aprender a Aprender", trafficSchool: "交通学校", humanEvolution: "人类进化", solarSystem: "太阳系", techHistory: "改变世界的发明", miniChef: "小小厨师", circuitLab: "电路实验室", senses: "五感", teardown: "里面有什么？", humanBody: "人体", museum: "ABC博物馆", zeroWaste: "零浪费", teamwork: "团队合作", freeCreation: "自由创作"},
+      nav: { home: "首页", alphabet: "字母表", syllables: "音节", reading: "阅读", phrases: "句子", songs: "歌曲", game: "游戏", piano: "钢琴", music: "音乐", language: "语言" , stories: "故事" , rhymes: "童谣" , math: "数学" , financial: "金钱" , parents: "家长" , achievements: "成就" , phonics: "语音" , missions: "任务" , world: "世界" , detective: "侦探" , whys: "为什么" , robots: "机器人" , art: "创意工坊" , science: "科学" , history: "历史" , lifeskills: "生活技能"  , computing: "电脑城" , howThingsWork: "东西是怎么运作的" , city: "如何运作？" , howMade: "东西是怎么做出来的？" , mundos: "世界" , thinking: "思考", achievementsNav: "我", natureDiary: "日记" , writing: "书写", communication: "沟通", learningStrategies: "Aprender a Aprender", trafficSchool: "交通学校", humanEvolution: "人类进化", solarSystem: "太阳系", techHistory: "改变世界的发明", miniChef: "小小厨师", circuitLab: "电路实验室", senses: "五感", teardown: "里面有什么？", humanBody: "人体", museum: "ABC博物馆", zeroWaste: "零浪费", teamwork: "团队合作", freeCreation: "自由创作", dailyMission: "今日任务"},
       home: {
         pickProfile: "选择你的档案",
         newProfile: "新档案",
@@ -5117,6 +5189,11 @@ const resources = {
         chooseAvatar: "选择一个头像",
         chooseAge: "你几岁了？",
         helpMain: "点一下你的头像开始学习吧！如果还没在列表里看到,点一下加号按钮。",
+        hubGreeting: "你好,{{name}}!今天我们做什么?",
+        helpHub: "点一下继续冒险开始今天的任务,或者选择一个世界去探索。",
+        continueAdventure: "继续冒险",
+        todaysMission: "今日任务",
+        chooseWorld: "选择世界",
       },
       languagePicker: {
         title: "选择你的语言",
@@ -5124,6 +5201,19 @@ const resources = {
         secondary: "正在学习的语言",
         continue: "继续",
         help: "点一下国旗选择你的主要语言,然后再点一下另一面国旗选择你想学习的语言。最后点一下绿色箭头继续。",
+      },
+      dailyMission: {
+        title: "今日任务",
+        intro: "一个字母、一个音节、一个单词和一个数字——只是今天的任务!",
+        help: "点一下卡片可以听发音。完成后点一下「完成啦!」。",
+        alreadyDone: "✅ 你已经完成了今天的任务,明天再来吧!",
+        allDone: "你已经探索了这里所有的字母——探索得真棒!🌟",
+        offScreenTitle: "离屏任务",
+        goToAlphabet: "去字母表",
+        goToSyllables: "去音节",
+        goToReading: "去阅读",
+        goToMath: "去数学",
+        complete: "完成啦!",
       },
       modules: {
         alphabetTitle: "字母表",
@@ -6380,7 +6470,7 @@ const resources = {
   es: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Inicio", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Lectura", phrases: "Frases", songs: "Canciones", game: "Juego", piano: "Piano", music: "Música", language: "Idiomas" , stories: "Cuentos" , rhymes: "Rimas" , math: "Matemáticas" , financial: "Dinero" , parents: "Padres" , achievements: "Logros" , phonics: "Sonidos" , missions: "Misiones" , world: "Mundo" , detective: "Detective" , whys: "Porqués" , robots: "Robots" , art: "Taller" , science: "Ciencia" , history: "Historia" , lifeskills: "Vida Práctica"  , computing: "Ciberciudad" , howThingsWork: "Cómo Funcionan las Cosas" , city: "¿Cómo Funciona?" , howMade: "¿Cómo Se Hace?" , mundos: "Mundos" , thinking: "Pensar", achievementsNav: "Yo", natureDiary: "Diario" , writing: "Escritura", communication: "Comunicación", learningStrategies: "Imparare a Imparare", trafficSchool: "Escuela Vial", humanEvolution: "Evolución Humana", solarSystem: "Sistema Solar", techHistory: "Inventos que Cambiaron el Mundo", miniChef: "Mini Chef", circuitLab: "Laboratorio de Circuitos", senses: "Sentidos", teardown: "¿Qué Hay Dentro?", humanBody: "Cuerpo Humano", museum: "Museo ABC", zeroWaste: "Cero Desperdicio", teamwork: "Equipo", freeCreation: "Creador Libre"},
+      nav: { home: "Inicio", alphabet: "Alfabeto", syllables: "Sílabas", reading: "Lectura", phrases: "Frases", songs: "Canciones", game: "Juego", piano: "Piano", music: "Música", language: "Idiomas" , stories: "Cuentos" , rhymes: "Rimas" , math: "Matemáticas" , financial: "Dinero" , parents: "Padres" , achievements: "Logros" , phonics: "Sonidos" , missions: "Misiones" , world: "Mundo" , detective: "Detective" , whys: "Porqués" , robots: "Robots" , art: "Taller" , science: "Ciencia" , history: "Historia" , lifeskills: "Vida Práctica"  , computing: "Ciberciudad" , howThingsWork: "Cómo Funcionan las Cosas" , city: "¿Cómo Funciona?" , howMade: "¿Cómo Se Hace?" , mundos: "Mundos" , thinking: "Pensar", achievementsNav: "Yo", natureDiary: "Diario" , writing: "Escritura", communication: "Comunicación", learningStrategies: "Imparare a Imparare", trafficSchool: "Escuela Vial", humanEvolution: "Evolución Humana", solarSystem: "Sistema Solar", techHistory: "Inventos que Cambiaron el Mundo", miniChef: "Mini Chef", circuitLab: "Laboratorio de Circuitos", senses: "Sentidos", teardown: "¿Qué Hay Dentro?", humanBody: "Cuerpo Humano", museum: "Museo ABC", zeroWaste: "Cero Desperdicio", teamwork: "Equipo", freeCreation: "Creador Libre", dailyMission: "Misión de Hoy"},
       home: {
         pickProfile: "Elige tu perfil",
         newProfile: "Nuevo perfil",
@@ -6392,6 +6482,11 @@ const resources = {
         chooseAvatar: "Elige un avatar",
         chooseAge: "¿Cuántos años tienes?",
         helpMain: "¡Toca tu personaje para empezar a aprender! Si todavía no lo ves en la lista, toca el botón con el signo más.",
+        hubGreeting: "¡Hola, {{name}}! ¿Qué hacemos hoy?",
+        helpHub: "Toca Continuar Aventura para la misión de hoy, o elige un mundo para explorar.",
+        continueAdventure: "Continuar Aventura",
+        todaysMission: "Misión de Hoy",
+        chooseWorld: "Elegir Mundo",
       },
       languagePicker: {
         title: "Elige tus idiomas",
@@ -6399,6 +6494,19 @@ const resources = {
         secondary: "Idioma a aprender",
         continue: "Continuar",
         help: "Toca una bandera para elegir tu idioma principal, luego toca otra bandera para el idioma que quieres aprender. Después toca la flecha verde para continuar.",
+      },
+      dailyMission: {
+        title: "Misión de Hoy",
+        intro: "¡Una letra, una sílaba, una palabra y un número — solo por hoy!",
+        help: "Toca las tarjetas para escuchar cada una. Toca '¡Ya lo hice!' al final cuando termines.",
+        alreadyDone: "✅ Ya hiciste la misión de hoy, ¡vuelve mañana!",
+        allDone: "Ya exploraste todas las letras de aquí — ¡buena exploración! 🌟",
+        offScreenTitle: "Misión fuera de pantalla",
+        goToAlphabet: "Ir a Alfabeto",
+        goToSyllables: "Ir a Sílabas",
+        goToReading: "Ir a Lectura",
+        goToMath: "Ir a Matemáticas",
+        complete: "¡Ya lo hice!",
       },
       modules: {
         alphabetTitle: "Alfabeto",
@@ -7655,7 +7763,7 @@ const resources = {
   it: {
     translation: {
       appName: "ABC Mundo",
-      nav: { home: "Home", alphabet: "Alfabeto", syllables: "Sillabe", reading: "Lettura", phrases: "Frasi", songs: "Canzoni", game: "Gioco", piano: "Piano", music: "Musica", language: "Lingue" , stories: "Storie" , rhymes: "Filastrocche" , math: "Matematica" , financial: "Denaro" , parents: "Genitori" , achievements: "Traguardi" , phonics: "Suoni" , missions: "Missioni" , world: "Mondo" , detective: "Detective" , whys: "Perché" , robots: "Robots" , art: "Atelier" , science: "Scienza" , history: "Storia" , lifeskills: "Vita Pratica"  , computing: "Cybercittà" , howThingsWork: "Come Funzionano le Cose" , city: "Come Funziona?" , howMade: "Come Si Fa?" , mundos: "Mondi" , thinking: "Pensare", achievementsNav: "Io", natureDiary: "Diario" , writing: "Scrittura", communication: "Comunicazione", learningStrategies: "学会学习", trafficSchool: "Scuola Guida", humanEvolution: "Evoluzione Umana", solarSystem: "Sistema Solare", techHistory: "Invenzioni che Hanno Cambiato il Mondo", miniChef: "Piccolo Chef", circuitLab: "Laboratorio Circuiti", senses: "Sensi", teardown: "Cosa C'è Dentro?", humanBody: "Corpo Umano", museum: "Museo ABC", zeroWaste: "Zero Sprechi", teamwork: "Squadra", freeCreation: "Creatore Libero"},
+      nav: { home: "Home", alphabet: "Alfabeto", syllables: "Sillabe", reading: "Lettura", phrases: "Frasi", songs: "Canzoni", game: "Gioco", piano: "Piano", music: "Musica", language: "Lingue" , stories: "Storie" , rhymes: "Filastrocche" , math: "Matematica" , financial: "Denaro" , parents: "Genitori" , achievements: "Traguardi" , phonics: "Suoni" , missions: "Missioni" , world: "Mondo" , detective: "Detective" , whys: "Perché" , robots: "Robots" , art: "Atelier" , science: "Scienza" , history: "Storia" , lifeskills: "Vita Pratica"  , computing: "Cybercittà" , howThingsWork: "Come Funzionano le Cose" , city: "Come Funziona?" , howMade: "Come Si Fa?" , mundos: "Mondi" , thinking: "Pensare", achievementsNav: "Io", natureDiary: "Diario" , writing: "Scrittura", communication: "Comunicazione", learningStrategies: "学会学习", trafficSchool: "Scuola Guida", humanEvolution: "Evoluzione Umana", solarSystem: "Sistema Solare", techHistory: "Invenzioni che Hanno Cambiato il Mondo", miniChef: "Piccolo Chef", circuitLab: "Laboratorio Circuiti", senses: "Sensi", teardown: "Cosa C'è Dentro?", humanBody: "Corpo Umano", museum: "Museo ABC", zeroWaste: "Zero Sprechi", teamwork: "Squadra", freeCreation: "Creatore Libero", dailyMission: "Missione di Oggi"},
       home: {
         pickProfile: "Scegli il tuo profilo",
         newProfile: "Nuovo profilo",
@@ -7667,6 +7775,11 @@ const resources = {
         chooseAvatar: "Scegli un avatar",
         chooseAge: "Quanti anni hai?",
         helpMain: "Tocca il tuo personaggio per iniziare a imparare! Se non lo vedi ancora nella lista, tocca il pulsante con il segno più.",
+        hubGreeting: "Ciao, {{name}}! Cosa facciamo oggi?",
+        helpHub: "Tocca Continua Avventura per la missione di oggi, oppure scegli un mondo da esplorare.",
+        continueAdventure: "Continua Avventura",
+        todaysMission: "Missione di Oggi",
+        chooseWorld: "Scegli un Mondo",
       },
       languagePicker: {
         title: "Scegli le tue lingue",
@@ -7674,6 +7787,19 @@ const resources = {
         secondary: "Lingua da imparare",
         continue: "Continua",
         help: "Tocca una bandiera per scegliere la tua lingua principale, poi tocca un'altra bandiera per la lingua che vuoi imparare. Poi tocca la freccia verde per continuare.",
+      },
+      dailyMission: {
+        title: "Missione di Oggi",
+        intro: "Una lettera, una sillaba, una parola e un numero — solo per oggi!",
+        help: "Tocca le carte per ascoltarle. Tocca 'Fatto!' alla fine quando hai finito.",
+        alreadyDone: "✅ Hai già fatto la missione di oggi, torna domani!",
+        allDone: "Hai esplorato tutte le lettere qui — bella esplorazione! 🌟",
+        offScreenTitle: "Missione senza schermo",
+        goToAlphabet: "Vai all'Alfabeto",
+        goToSyllables: "Vai alle Sillabe",
+        goToReading: "Vai alla Lettura",
+        goToMath: "Vai alla Matematica",
+        complete: "Fatto!",
       },
       modules: {
         alphabetTitle: "Alfabeto",

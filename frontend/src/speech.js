@@ -3,6 +3,7 @@
 // "pt" voice that might default to pt-BR) instead of leaving it to the browser default.
 
 import { duckZenAmbience, isZenAmbiencePlaying } from "./music.js";
+import { getLangPair } from "./storage.js";
 
 const LANG_TO_BCP47 = {
   pt: "pt-PT",
@@ -99,7 +100,26 @@ function buildUtterance(text, langCode) {
   // langCode is usually one of our short app codes ("pt", "en", ...), but
   // callers may also pass an already-fully-qualified BCP-47 tag directly
   // (e.g. a country's nativeLangCode like "ja-JP") — use it as-is.
-  const bcp47 = langCode && langCode.includes("-") ? langCode : LANG_TO_BCP47[langCode] || "en-US";
+  let bcp47;
+  if (langCode && langCode.includes("-")) {
+    bcp47 = langCode;
+  } else if (langCode && LANG_TO_BCP47[langCode]) {
+    bcp47 = LANG_TO_BCP47[langCode];
+  } else {
+    // langCode is missing/empty or not one of our recognized short codes.
+    // This is almost always a caller bug (forgot to pass langCode, or passed
+    // something that isn't a real 2-letter app code) — surface it in the
+    // console so it's easy to spot in dev, and NEVER silently fall back to
+    // English in this PT-first app: fall back to the child's own mother
+    // tongue (from the saved language pair) instead, defaulting to "pt"
+    // only if no language pair has been chosen yet.
+    console.warn(
+      `speech.js: unrecognized langCode "${langCode}" — falling back to the mother language instead of English.`
+    );
+    const pair = getLangPair();
+    const motherCode = pair?.mother && LANG_TO_BCP47[pair.mother] ? pair.mother : "pt";
+    bcp47 = LANG_TO_BCP47[motherCode];
+  }
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = bcp47;
   const voice = pickVoice(bcp47);

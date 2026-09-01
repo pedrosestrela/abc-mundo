@@ -1629,6 +1629,8 @@ export function saveFreeStory(profileName, entry) {
   return all[name];
 }
 
+const DAILY_PATH_KEY = "abcmundo.dailyPath";
+
 // --- Backup / device-to-device sync ---
 // Exports every localStorage key this file owns (all profiles + all their
 // per-module progress data) into one plain JSON-serializable object, and
@@ -1671,6 +1673,7 @@ const SYNC_STORAGE_KEYS = [
   COMPLETED_ZERO_WASTE_KEY,
   COMPLETED_TEAMWORK_KEY,
   FREE_STORIES_KEY,
+  DAILY_PATH_KEY,
 ];
 
 // Gathers every profile's full data from this device into one JSON-friendly
@@ -1790,6 +1793,69 @@ export function mergeImportedData(imported) {
   }
 
   return { importedProfiles, renamedProfiles };
+}
+
+// --- Missão de Hoje (daily guided path) ---
+// Tracks, per profile, how many "days" of the daily curriculum sequencer
+// (see content/dailyPath.js) have been completed, plus the date the child
+// last completed today's mission — so revisiting the same day shows the
+// "already done, come back tomorrow" state instead of repeating content.
+// Deliberately a plain date-string comparison (todayStr(), reused from the
+// XP/streak engine above), not `new Date()` math, to keep this simple and
+// timezone-boring.
+
+function loadDailyPath() {
+  try {
+    const raw = localStorage.getItem(DAILY_PATH_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveDailyPath(all) {
+  try {
+    localStorage.setItem(DAILY_PATH_KEY, JSON.stringify(all));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+function defaultDailyPathState() {
+  return { index: 0, lastCompletedDate: null };
+}
+
+// { index, lastCompletedDate } — `index` is how many days of the path this
+// profile has completed, used by dailyPath.js to pick which letters/number
+// come next.
+export function getDailyPathState(profileName) {
+  const all = loadDailyPath();
+  return all[profileName || "Explorer"] || defaultDailyPathState();
+}
+
+// True if today's mission was already marked done for this profile.
+export function getDailyMissionStatus(profileName) {
+  const state = getDailyPathState(profileName);
+  return { doneToday: state.lastCompletedDate === todayStr(), index: state.index };
+}
+
+// Marks today's mission complete: advances the day index by one (so
+// tomorrow's bundle picks the next letters/number) and stamps today's date
+// so the page shows the "already done" state if revisited. Safe to call
+// more than once on the same day — it only advances the index the first
+// time that day.
+export function completeDailyMission(profileName) {
+  const name = profileName || "Explorer";
+  const all = loadDailyPath();
+  const state = all[name] || defaultDailyPathState();
+  const today = todayStr();
+  if (state.lastCompletedDate !== today) {
+    state.index = (state.index || 0) + 1;
+    state.lastCompletedDate = today;
+  }
+  all[name] = state;
+  saveDailyPath(all);
+  return state;
 }
 
 export function getCompletedCircuits(profileName) {

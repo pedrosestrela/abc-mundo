@@ -1,0 +1,16 @@
+[
+  { "id": "draw-letters", "template": "Draw {number} big letter {letter}s on paper, using different coloured pencils." },
+  { "id": "find-object", "template": "Look around the house for something that starts with the letter {letter}." },
+  { "id": "count-object", "template": "Find {number} matching objects at home and count them out loud." },
+  { "id": "trace-finger", "template": "Trace the letter {letter} in the air with your finger, then on a family member's back." },
+  { "id": "letter-hunt-book", "template": "Open a book or magazine and find {number} words that start with the letter {letter}." },
+  { "id": "build-letter", "template": "Use play dough, yarn, or craft sticks to build the letter {letter}." },
+  { "id": "count-steps", "template": "Take {number} big steps to the nearest door, counting out loud." },
+  { "id": "letter-snack", "template": "Help make a snack and arrange {number} pieces of fruit on a plate." },
+  { "id": "family-word", "template": "Ask someone in your family for a word that starts with {letter} and draw it." },
+  { "id": "letter-walk", "template": "On a walk, try to spot {number} things that start with the letter {letter}." },
+  { "id": "sing-count", "template": "Sing or make up a little rhyme counting to {number}." },
+  { "id": "letter-shape", "template": "Using string or ribbon, shape the letter {letter} on the floor." },
+  { "id": "sort-toys", "template": "Sort {number} toys by colour and count how many of each." },
+  { "id": "letter-sound", "template": "Say {number} words that start with the sound of the letter {letter}, one at a time." }
+]
