@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { getAlphabet } from "../content/index.js";
-import { getLangPair, getProfile, recordSkillEvent, pingProgress } from "../storage.js";
+import { getLangPair, getProfile, getDifficultyTier, recordSkillEvent, pingProgress } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
 import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
 import HelpButton from "../components/HelpButton.jsx";
@@ -10,6 +10,36 @@ import { getStrokes } from "../content/strokeOrder.js";
 const DIGITS = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
 const LETTER_MODES = ["upper", "lower", "hand", "print"];
+
+// "Corrida de Letras" (Letter Race): a lightweight timed game mode layered
+// on top of the same TraceCanvas/StrokeGuide used by regular practice — no
+// new drawing/canvas code, just a sequence of 5 random targets timed with a
+// simple stopwatch and a star rating on the results screen. Age-tier aware:
+// younger children get a more generous time window for 3 stars.
+const RACE_LENGTH = 5;
+
+// Tier -> seconds-per-target thresholds for 3/2/1 stars (lower = better).
+const RACE_STAR_THRESHOLDS = {
+  1: { three: 9, two: 15 },
+  2: { three: 6, two: 10 },
+  3: { three: 4, two: 7 },
+};
+
+function pickRaceTargets(alphabet, count) {
+  const pool = alphabet.length > 0 ? alphabet : [];
+  const picks = [];
+  for (let i = 0; i < count && pool.length > 0; i++) {
+    picks.push(pool[Math.floor(Math.random() * pool.length)]);
+  }
+  return picks;
+}
+
+function starsForAvgSeconds(avgSeconds, tier) {
+  const th = RACE_STAR_THRESHOLDS[tier] || RACE_STAR_THRESHOLDS[2];
+  if (avgSeconds <= th.three) return 3;
+  if (avgSeconds <= th.two) return 2;
+  return 1;
+}
 
 // Tracing canvas: adapted from DrawingCanvas.jsx (Art.jsx's drawing surface)
 // but simplified for tracing practice — one pen colour, no palette, and a
@@ -142,13 +172,107 @@ function TraceCanvas({ guideChar, guideFontFamily, guideStroke, resetKey }) {
   );
 }
 
+function RaceMode({ alphabet, pair, profile, tier }) {
+  const { t } = useTranslation();
+  const [targets, setTargets] = useState(() => pickRaceTargets(alphabet, RACE_LENGTH));
+  const [step, setStep] = useState(0);
+  const [resetKey, setResetKey] = useState(0);
+  const [stepStart, setStepStart] = useState(() => Date.now());
+  const [times, setTimes] = useState([]);
+  const [finished, setFinished] = useState(false);
+  const [logged, setLogged] = useState(false);
+
+  const current = targets[step];
+  const totalSeconds = times.reduce((sum, s) => sum + s, 0);
+  const avgSeconds = times.length > 0 ? totalSeconds / times.length : 0;
+  const stars = finished ? starsForAvgSeconds(avgSeconds, tier) : 0;
+
+  if (finished && !logged) {
+    setLogged(true);
+    recordSkillEvent(profile?.name, "writing-race", stars >= 2);
+    pingProgress({
+      profileName: profile?.name,
+      module: "writing",
+      event: `race_complete:${stars}stars`,
+    });
+  }
+
+  function handleRaceDone() {
+    const elapsed = (Date.now() - stepStart) / 1000;
+    const nextTimes = [...times, elapsed];
+    setTimes(nextTimes);
+    if (step + 1 >= targets.length) {
+      setFinished(true);
+    } else {
+      setStep((s) => s + 1);
+      setStepStart(Date.now());
+      setResetKey((k) => k + 1);
+    }
+  }
+
+  function restart() {
+    setTargets(pickRaceTargets(alphabet, RACE_LENGTH));
+    setStep(0);
+    setResetKey((k) => k + 1);
+    setStepStart(Date.now());
+    setTimes([]);
+    setFinished(false);
+    setLogged(false);
+  }
+
+  if (finished) {
+    return (
+      <div className="game-card">
+        <div className="game-emoji">🏁</div>
+        <p className="game-result writing-race-stars">{"⭐".repeat(stars)}{"☆".repeat(3 - stars)}</p>
+        <p className="page-intro">
+          {t("modules.writingRaceTime").replace("{sec}", totalSeconds.toFixed(1))}
+        </p>
+        <button type="button" className="big-btn" onClick={restart}>
+          {t("modules.writingRacePlayAgain")} 🔁
+        </button>
+      </div>
+    );
+  }
+
+  if (!current) return null;
+
+  return (
+    <>
+      <div className="game-progress writing-race-progress">
+        🏁 {step + 1} / {targets.length}
+      </div>
+      <div className="writing-target-row">
+        <div className="writing-target-card">
+          <div className="writing-target-letter">{current.upper}</div>
+          <div className="writing-target-word">
+            {current.emoji} {current.exampleWord}
+            <SpeakButton text={current.exampleWord} langCode={pair.mother} />
+          </div>
+        </div>
+      </div>
+      <TraceCanvas
+        key={`race-${step}`}
+        guideChar={current.upper}
+        guideFontFamily="inherit"
+        guideStroke="3px #d8d8f0"
+        resetKey={resetKey}
+      />
+      <button type="button" className="big-btn writing-done-btn" onClick={handleRaceDone}>
+        ✅ {t("modules.writingDone")}
+      </button>
+    </>
+  );
+}
+
 export default function Writing() {
   const { t } = useTranslation();
   const pair = getLangPair() || { mother: "pt", secondary: "en" };
   const profile = getProfile();
+  const tier = getDifficultyTier(profile?.age);
   const alphabet = useMemo(() => getAlphabet(pair.mother), [pair.mother]);
 
-  const [section, setSection] = useState("letters"); // "letters" | "numbers"
+  const [section, setSection] = useState("letters"); // "letters" | "numbers" | "race"
   const [letterIndex, setLetterIndex] = useState(0);
   const [digitIndex, setDigitIndex] = useState(0);
   const [mode, setMode] = useState("upper");
@@ -240,7 +364,24 @@ export default function Writing() {
         >
           🔢 {t("modules.writingNumbers")}
         </button>
+        <button
+          type="button"
+          className={"phonics-tab" + (section === "race" ? " selected" : "")}
+          onClick={() => setSection("race")}
+        >
+          🏁 {t("modules.writingRace")}
+        </button>
       </div>
+
+      {section === "race" && (
+        <>
+          <div className="help-btn-corner">
+            <HelpButton text={t("modules.writingRaceHelp")} langCode={pair.mother} />
+          </div>
+          <p className="page-intro">{t("modules.writingRaceIntro")}</p>
+          <RaceMode key={`race-mode-${alphabet.length}`} alphabet={alphabet} pair={pair} profile={profile} tier={tier} />
+        </>
+      )}
 
       {section === "letters" && (
         <>

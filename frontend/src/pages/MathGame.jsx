@@ -826,7 +826,124 @@ const HELP_KEY_BY_ACTIVITY = {
   addsub: "mathHelpAddSub",
   multiplication: "mathHelpMultiplication",
   division: "mathHelpDivision",
+  balloons: "mathHelpBalloons",
 };
+
+const BALLOON_COLORS = ["#ff6b6b", "#4dabf7", "#ffd43b", "#69db7c", "#da77f2", "#ff922b"];
+const BALLOON_ROUNDS = 8;
+
+// "Balões da Matemática" (Math Balloon Pop): a different game FEEL from the
+// multiple-choice QuizRunner above — the same round shape (an arithmetic
+// problem + a set of number options, reusing buildAddSubRounds) is instead
+// presented as gently bobbing balloons the child taps to pop. Pure CSS
+// animation on absolutely-positioned buttons, no canvas/engine needed.
+function BalloonGame({ rounds, profile, t, onDone }) {
+  const [step, setStep] = useState(0);
+  const [score, setScore] = useState(0);
+  const [popped, setPopped] = useState(() => new Set());
+  const [wrongTries, setWrongTries] = useState(0);
+  const [feedback, setFeedback] = useState(null);
+  const [layout] = useState(() =>
+    rounds.map((round) =>
+      round.options.map((_, i) => ({
+        left: 8 + ((i * 23) % 80) + Math.floor(Math.random() * 8),
+        top: 10 + ((i * 19) % 65) + Math.floor(Math.random() * 8),
+        color: BALLOON_COLORS[(i + Math.floor(Math.random() * BALLOON_COLORS.length)) % BALLOON_COLORS.length],
+        duration: 2.4 + Math.random() * 1.6,
+        delay: Math.random() * -2,
+      }))
+    )
+  );
+
+  const round = rounds[step];
+  const finished = step >= rounds.length;
+
+  if (!round && !finished) return null;
+
+  if (finished) {
+    return (
+      <div className="game-card">
+        <div className="game-emoji">🏆</div>
+        <p className="game-result">
+          {t("modules.mathScore")}: {score} / {rounds.length}
+        </p>
+        <button type="button" className="big-btn" onClick={onDone}>
+          {t("modules.mathPlayAgain")} 🔁
+        </button>
+      </div>
+    );
+  }
+
+  function handlePop(option, idx) {
+    if (feedback || popped.has(idx)) return;
+    const correct = option === round.correct;
+    if (correct) {
+      setFeedback("correct");
+      setScore((s) => s + 1);
+      recordSkillEvent(profile?.name, "math-balloons", wrongTries < 2);
+      pingProgress({ profileName: profile?.name, module: "math_balloons", event: "quiz_correct" });
+      setTimeout(() => {
+        setFeedback(null);
+        setPopped(new Set());
+        setWrongTries(0);
+        setStep((s) => s + 1);
+      }, 700);
+    } else {
+      setPopped((prev) => new Set(prev).add(idx));
+      setWrongTries((c) => c + 1);
+      pingProgress({ profileName: profile?.name, module: "math_balloons", event: "quiz_wrong" });
+    }
+  }
+
+  const objetoLabel = t(`modules.${round.scenarioObjKey}`);
+  const scenarioKey = round.op === "+" ? "mathScenarioAdd" : "mathScenarioSub";
+  const scenarioText = fillScenario(t(`modules.${scenarioKey}`), {
+    character: round.character,
+    a: round.a,
+    b: round.b,
+    objeto: objetoLabel,
+  });
+
+  return (
+    <div className="game-card">
+      <div className="game-progress">
+        {step + 1} / {rounds.length} · ⭐ {score}
+      </div>
+      <p className="math-scenario-text">
+        {round.scenarioEmoji} {scenarioText}
+      </p>
+      <div className="game-emoji math-expression">
+        {round.a} {round.op} {round.b} = ?
+      </div>
+      <p className="math-count-label">{t("modules.mathBalloonsInstru")}</p>
+      <div className="balloon-field">
+        {round.options.map((opt, i) => {
+          const pos = layout[step][i];
+          const isPopped = popped.has(i);
+          const isCorrectPop = feedback === "correct" && opt === round.correct;
+          return (
+            <button
+              key={i}
+              type="button"
+              className={"balloon" + (isPopped ? " balloon-popped" : "") + (isCorrectPop ? " balloon-correct" : "")}
+              style={{
+                left: pos.left + "%",
+                top: pos.top + "%",
+                background: pos.color,
+                animationDuration: pos.duration + "s",
+                animationDelay: pos.delay + "s",
+              }}
+              disabled={isPopped || !!feedback}
+              onClick={() => handlePop(opt, i)}
+            >
+              <span className="balloon-number">{isPopped ? "💥" : opt}</span>
+            </button>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
 
 export default function MathGame() {
   const { t } = useTranslation();
@@ -863,9 +980,10 @@ export default function MathGame() {
     { key: "addsub", label: t("modules.mathAddSub"), emoji: "➕" },
     { key: "multiplication", label: t("modules.mathMultiplication"), emoji: "✖️" },
     { key: "division", label: t("modules.mathDivision"), emoji: "➗" },
+    { key: "balloons", label: t("modules.mathBalloons"), emoji: "🎈" },
   ];
 
-  const GATED_ACTIVITIES = ["addsub", "multiplication", "division"];
+  const GATED_ACTIVITIES = ["addsub", "multiplication", "division", "balloons"];
 
   function switchActivity(key) {
     if (GATED_ACTIVITIES.includes(key) && tier === 1 && !addSubConfirmed) {
@@ -1119,6 +1237,16 @@ export default function MathGame() {
             />
           )}
         </>
+      )}
+
+      {activity === "balloons" && (
+        <BalloonGame
+          key={"balloons-" + seed}
+          rounds={buildAddSubRounds(tier).slice(0, BALLOON_ROUNDS)}
+          profile={profile}
+          t={t}
+          onDone={restart}
+        />
       )}
     </div>
   );
