@@ -1,5 +1,7 @@
 [
   { "word": "SOL", "emoji": "☀️", "hint": "S de Sol" },
+  { "word": "MALA", "emoji": "🧳", "hint": "M de Mala" },
+  { "word": "MIMO", "emoji": "🥰", "hint": "M de Mimo" },
   { "word": "GATO", "emoji": "🐱", "hint": "G de Gato" },
   { "word": "BOLA", "emoji": "⚽", "hint": "B de Bola" },
   { "word": "CASA", "emoji": "🏠", "hint": "C de Casa" },

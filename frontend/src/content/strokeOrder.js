@@ -176,3 +176,133 @@ export function getStrokes(char) {
   const key = /^[a-zA-Z]$/.test(char) ? char.toUpperCase() : char;
   return STROKE_ORDER[key] || null;
 }
+
+// --- Pre-letter "basic strokes" practice ---
+//
+// Before attempting real letters, young children build the fine-motor
+// control they need by tracing simple, generic shapes: straight lines,
+// curves, circles, waves, zigzags. These are not tied to any language/
+// alphabet content (unlike STROKE_ORDER above), so they live here as a
+// flat list the "Traços Básicos" practice mode iterates over directly.
+// Each entry uses the same [x, y] 0-100 polyline format as STROKE_ORDER,
+// so it renders through the same StrokeGuide/animation/validation code.
+export const BASIC_STROKES = [
+  {
+    id: "line-h",
+    emoji: "➖",
+    labelKey: "writingBasicLineH",
+    strokes: [[[15, 50], [85, 50]]],
+  },
+  {
+    id: "line-v",
+    emoji: "🎋",
+    labelKey: "writingBasicLineV",
+    strokes: [[[50, 15], [50, 85]]],
+  },
+  {
+    id: "diagonal",
+    emoji: "📐",
+    labelKey: "writingBasicDiagonal",
+    strokes: [[[20, 20], [80, 80]]],
+  },
+  {
+    id: "curve",
+    emoji: "🌙",
+    labelKey: "writingBasicCurve",
+    strokes: [[[75, 25], [58, 14], [40, 18], [27, 35], [25, 55], [33, 74], [50, 84], [68, 80]]],
+  },
+  {
+    id: "circle",
+    emoji: "⭕",
+    labelKey: "writingBasicCircle",
+    strokes: [[[50, 15], [30, 25], [20, 50], [30, 75], [50, 85], [70, 75], [80, 50], [70, 25], [50, 15]]],
+  },
+  {
+    id: "zigzag",
+    emoji: "⚡",
+    labelKey: "writingBasicZigzag",
+    strokes: [[[15, 20], [40, 80], [60, 20], [85, 80]]],
+  },
+  {
+    id: "wave",
+    emoji: "🌊",
+    labelKey: "writingBasicWave",
+    strokes: [[[10, 50], [22, 25], [35, 50], [48, 75], [61, 50], [74, 25], [90, 50]]],
+  },
+];
+
+// --- Lightweight attempt validation ---
+//
+// Not a shape-matching algorithm (that would be overkill for a 5-year-old's
+// wobbly-but-genuine attempt, and would risk frustrating false negatives).
+// Just enough signal to tell "no real attempt" (a tap, a tiny scribble)
+// apart from "a real attempt was made", and to surface one specific,
+// encouraging observation about it.
+
+function dist(a, b) {
+  return Math.hypot(a[0] - b[0], a[1] - b[1]);
+}
+
+export function pathLength(points) {
+  let total = 0;
+  for (let i = 1; i < points.length; i++) total += dist(points[i - 1], points[i]);
+  return total;
+}
+
+// Interpolates extra points along each segment so straight 2-point strokes
+// (e.g. a simple line or capital I) get evenly spaced samples too, not just
+// their two endpoints — otherwise coverage checks against them would be
+// nearly meaningless.
+function densify(points, step = 6) {
+  const out = [];
+  for (let i = 0; i < points.length - 1; i++) {
+    const [x1, y1] = points[i];
+    const [x2, y2] = points[i + 1];
+    const segLen = Math.hypot(x2 - x1, y2 - y1);
+    const steps = Math.max(1, Math.round(segLen / step));
+    for (let s = 0; s < steps; s++) {
+      const t = s / steps;
+      out.push([x1 + (x2 - x1) * t, y1 + (y2 - y1) * t]);
+    }
+  }
+  out.push(points[points.length - 1]);
+  return out;
+}
+
+// drawnPoints: array of {x, y} in the same normalized 0-100 space as the
+// guide strokes (see Writing.jsx, which converts canvas pixel coords).
+// Returns { quality, totalLength, startDist, coverage } where quality is
+// one of "tooShort" | "goodStart" | "goodCoverage" | "attempt" — used to
+// pick which specific, positive feedback message to show. Never returns a
+// "wrong"/failure quality; the caller always lets the child proceed.
+export function evaluateAttempt(drawnPoints, strokes) {
+  if (!strokes || strokes.length === 0 || !drawnPoints || drawnPoints.length < 2) {
+    return { quality: "tooShort", totalLength: 0, startDist: Infinity, coverage: 0 };
+  }
+
+  const drawnXY = drawnPoints.map((p) => [p.x, p.y]);
+  const totalLength = pathLength(drawnXY);
+  const guideStart = strokes[0][0];
+  const startDist = dist(drawnXY[0], guideStart);
+
+  const guideSamples = strokes.flatMap((s) => densify(s));
+  const threshold = 14;
+  const covered = guideSamples.filter((gp) => drawnXY.some((dp) => dist(dp, gp) <= threshold)).length;
+  const coverage = guideSamples.length > 0 ? covered / guideSamples.length : 0;
+
+  const guideLen = strokes.reduce((sum, s) => sum + pathLength(s), 0);
+  const minLength = Math.max(12, guideLen * 0.25);
+
+  let quality;
+  if (totalLength < minLength) {
+    quality = "tooShort";
+  } else if (startDist <= 16) {
+    quality = "goodStart";
+  } else if (coverage >= 0.35) {
+    quality = "goodCoverage";
+  } else {
+    quality = "attempt";
+  }
+
+  return { quality, totalLength, startDist, coverage };
+}

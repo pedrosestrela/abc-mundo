@@ -9,6 +9,38 @@ function labelFor(code) {
   return SUPPORTED_LANGUAGES.find((l) => l.code === code)?.label || code;
 }
 
+// Same "vowels + easiest, most frequent consonants first" pedagogical order
+// as content/dailyPath.js's PRIORITY_LETTERS (the source of truth for this
+// product decision) — kept as a small local mirror rather than importing
+// dailyPath.js, since dailyPath.js is about the daily-mission sequencer, not
+// letter-grid display, and this list is tiny/stable.
+const PRIORITY_LETTERS = ["A", "E", "I", "O", "U", "M", "P", "L", "S", "T"];
+
+// Reorders the letter grid tiles (priority letters first, in that order,
+// then the rest as-is) WITHOUT touching the underlying motherLetters array
+// or its indices — tiles still carry their original array index so tapping
+// one still correctly selects the matching secondary-language letter.
+function beginnerTileOrder(letters) {
+  const withIndex = letters.map((l, i) => ({ l, i }));
+  const byUpper = new Map(withIndex.map((e) => [e.l.upper, e]));
+  const ordered = [];
+  const seen = new Set();
+  for (const letter of PRIORITY_LETTERS) {
+    const entry = byUpper.get(letter);
+    if (entry && !seen.has(letter)) {
+      ordered.push(entry);
+      seen.add(letter);
+    }
+  }
+  for (const entry of withIndex) {
+    if (!seen.has(entry.l.upper)) {
+      ordered.push(entry);
+      seen.add(entry.l.upper);
+    }
+  }
+  return ordered;
+}
+
 function shuffle(arr) {
   const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
@@ -91,6 +123,8 @@ export default function Alphabet() {
   const motherLetters = getAlphabet(pair.mother);
   const secondaryLetters = getAlphabet(pair.secondary);
   const [index, setIndex] = useState(0);
+  const [beginnerFirst, setBeginnerFirst] = useState(true);
+  const tileOrder = beginnerFirst ? beginnerTileOrder(motherLetters) : motherLetters.map((l, i) => ({ l, i }));
 
   const motherLetter = motherLetters[index];
   const secondaryLetter = secondaryLetters[index];
@@ -165,8 +199,25 @@ export default function Alphabet() {
 
       <LetterQuiz key={motherLetter.upper} letters={motherLetters} target={motherLetter} pair={pair} profile={getProfile()} t={t} />
 
+      <div className="phonics-tabs">
+        <button
+          type="button"
+          className={"phonics-tab" + (beginnerFirst ? " selected" : "")}
+          onClick={() => setBeginnerFirst(true)}
+        >
+          🌱 {t("modules.alphabetBeginnerFirst")}
+        </button>
+        <button
+          type="button"
+          className={"phonics-tab" + (!beginnerFirst ? " selected" : "")}
+          onClick={() => setBeginnerFirst(false)}
+        >
+          🔤 {t("modules.alphabetFullOrder")}
+        </button>
+      </div>
+
       <div className="letter-grid">
-        {motherLetters.map((l, i) => (
+        {tileOrder.map(({ l, i }) => (
           <button
             key={l.letter + i}
             type="button"
