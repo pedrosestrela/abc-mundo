@@ -5,51 +5,75 @@
     "emoji": "🐷",
     "pages": [
       {
-        "text": "Three little pigs left home to build their very own houses.",
+        "text": "Once upon a time, three little pigs left their mother's house to build homes of their own.",
         "emoji": "🐷"
       },
       {
-        "text": "The first pig was lazy and built his house from straw.",
+        "text": "The first pig was lazy and quickly built his house out of straw.",
         "emoji": "🌾"
       },
       {
-        "text": "The second pig built his house from sticks and branches.",
+        "text": "The second pig was also in a hurry and built his house out of sticks.",
         "emoji": "🪵"
       },
       {
-        "text": "The third pig worked hard and built his house from bricks.",
+        "text": "The third pig worked slowly and carefully, building a strong house of bricks.",
         "emoji": "🧱"
       },
       {
-        "text": "A hungry wolf came along and knocked on the straw door.",
+        "text": "One day, a big hungry wolf came prowling through the forest.",
         "emoji": "🐺"
       },
       {
-        "text": "The wolf huffed and puffed, and the straw house fell down.",
+        "text": "The wolf knocked on the straw door and called, \"Little pig, little pig, let me come in!\"",
+        "emoji": "🚪"
+      },
+      {
+        "text": "\"Not by the hair of my chinny-chin-chin!\" answered the pig from inside.",
+        "emoji": "🙅"
+      },
+      {
+        "text": "\"Then I'll huff, and I'll puff, and I'll blow your house in!\" growled the wolf.",
+        "emoji": "😠"
+      },
+      {
+        "text": "The wolf huffed and puffed with all his might, and the straw house fell right down.",
         "emoji": "💨"
       },
       {
-        "text": "The pig ran fast to his brother's house made of sticks.",
+        "text": "The first pig ran as fast as he could to his brother's stick house.",
         "emoji": "🏃"
       },
       {
-        "text": "The wolf huffed again, and the stick house fell down too.",
+        "text": "The wolf knocked again: \"Little pigs, little pigs, let me come in!\"",
+        "emoji": "🚪"
+      },
+      {
+        "text": "The pigs refused, and the wolf huffed and puffed until the stick house tumbled down too.",
         "emoji": "💨"
       },
       {
-        "text": "Both pigs ran to their brother's strong house made of bricks.",
+        "text": "Both pigs dashed off, frightened, to their brother's strong brick house.",
+        "emoji": "🏃"
+      },
+      {
+        "text": "The wolf demanded to be let in, but all three pigs shouted \"No!\" together.",
         "emoji": "🧱"
       },
       {
-        "text": "The wolf huffed with all his strength, but the house stood firm.",
+        "text": "The wolf huffed and puffed with every bit of strength he had, but the brick house did not budge.",
         "emoji": "😤"
       },
       {
-        "text": "Tired and hungry, the wolf finally left the forest for good.",
+        "text": "Furious, the wolf climbed onto the roof to sneak down the chimney, and landed straight in a pot of hot water.",
+        "emoji": "🔥"
+      },
+      {
+        "text": "Yelping in surprise, the wolf ran off into the forest and was never seen again.",
         "emoji": "🌲"
       },
       {
-        "text": "The three pigs learned that careful work always pays off.",
+        "text": "The three little pigs learned that careful, patient work always keeps you safe in the end.",
         "emoji": "🎉"
       }
     ]
@@ -60,51 +84,83 @@
     "emoji": "🐺",
     "pages": [
       {
-        "text": "A little girl always wore a warm red hooded coat.",
+        "text": "A little girl always wore a warm red hooded cloak, so everyone called her Little Red Riding Hood.",
         "emoji": "👧"
       },
       {
-        "text": "One day, her mother asked her to bring cakes to grandma.",
-        "emoji": "🧁"
+        "text": "One day, her mother said, \"Take this basket of cakes to your grandmother, for she is unwell.\"",
+        "emoji": "🧺"
       },
       {
-        "text": "The girl walked alone along the path through the big forest.",
+        "text": "\"Stay on the path and do not talk to strangers,\" her mother warned kindly.",
+        "emoji": "🗺️"
+      },
+      {
+        "text": "The girl walked alone along the trail through the big, shadowy forest.",
         "emoji": "🌲"
       },
       {
-        "text": "A clever wolf found her and asked where she was going.",
+        "text": "A clever wolf appeared and asked, \"Where are you going with that basket, little girl?\"",
         "emoji": "🐺"
       },
       {
-        "text": "The wolf ran ahead and reached grandma's house first.",
+        "text": "\"To my grandmother's house, just past those tall trees,\" she answered, trusting him.",
+        "emoji": "🌳"
+      },
+      {
+        "text": "The wolf dashed off down a shortcut and reached grandma's cottage first.",
         "emoji": "🏃"
       },
       {
-        "text": "The wolf hid grandma away and put on her clothes instead.",
+        "text": "He locked grandma safely in the closet and put on her nightcap and gown.",
+        "emoji": "🧥"
+      },
+      {
+        "text": "When Little Red Riding Hood knocked, the wolf called out in a thin voice, \"Come in, dear.\"",
+        "emoji": "🚪"
+      },
+      {
+        "text": "\"Grandmother, what big ears you have!\" she said, feeling puzzled.",
+        "emoji": "👂"
+      },
+      {
+        "text": "\"All the better to hear you with,\" said the wolf, pulling the blanket to his chin.",
         "emoji": "🛏️"
       },
       {
-        "text": "The girl arrived and noticed the strange voice and big eyes.",
+        "text": "\"Grandmother, what big eyes you have!\" she went on, growing more uneasy.",
         "emoji": "👀"
       },
       {
-        "text": "A woodcutter passing by heard strange noises from the house.",
+        "text": "\"All the better to see you with,\" said the wolf, sitting up slowly.",
+        "emoji": "😬"
+      },
+      {
+        "text": "\"Grandmother, what big teeth you have!\" she cried, stepping back.",
+        "emoji": "🦷"
+      },
+      {
+        "text": "\"All the better to... hug you with!\" shouted the wolf, leaping up from the bed.",
+        "emoji": "😲"
+      },
+      {
+        "text": "She ran out screaming, and a woodcutter working nearby heard the commotion.",
         "emoji": "🪓"
       },
       {
-        "text": "The woodcutter rushed in and chased the frightened wolf away.",
+        "text": "The woodcutter rushed in and chased the startled wolf far away from the house.",
         "emoji": "💪"
       },
       {
-        "text": "They found grandma hidden safe and sound inside the closet.",
+        "text": "They found grandma safe and sound, hidden in the closet.",
         "emoji": "👵"
       },
       {
-        "text": "Everyone was happy and shared the cakes together at the table.",
+        "text": "Everyone sat down together and shared the cakes, grateful and happy to be safe.",
         "emoji": "🍰"
       },
       {
-        "text": "The girl learned to never talk to strangers in the forest.",
+        "text": "Little Red Riding Hood learned to never again linger and talk with strangers in the forest.",
         "emoji": "🌟"
       }
     ]
@@ -115,51 +171,75 @@
     "emoji": "🐢",
     "pages": [
       {
-        "text": "A fast hare loved to tease the slow tortoise every day.",
+        "text": "A very fast hare loved to tease the tortoise for being so slow.",
         "emoji": "🐇"
       },
       {
-        "text": "Tired of the jokes, the tortoise challenged the hare to a race.",
-        "emoji": "🐢"
-      },
-      {
-        "text": "All the forest animals came to watch the big race.",
-        "emoji": "🦉"
-      },
-      {
-        "text": "At the signal, the hare shot off and got far ahead.",
-        "emoji": "💨"
-      },
-      {
-        "text": "The hare looked back and laughed at the slow tortoise.",
+        "text": "\"You'll never get anywhere at that pace!\" the hare laughed every single day.",
         "emoji": "😏"
       },
       {
-        "text": "So sure of winning, the hare decided to rest under a tree.",
+        "text": "Tired of the jokes, the tortoise said, \"Then let's have a race, and we shall see.\"",
+        "emoji": "🐢"
+      },
+      {
+        "text": "The hare laughed even louder, but happily agreed to the challenge.",
+        "emoji": "😆"
+      },
+      {
+        "text": "All the forest animals gathered to watch, with the owl and the fox as judges.",
+        "emoji": "🦉"
+      },
+      {
+        "text": "\"Ready, set, go!\" called the fox, and the race began.",
+        "emoji": "🦊"
+      },
+      {
+        "text": "The hare shot off like an arrow and was soon far, far ahead.",
+        "emoji": "💨"
+      },
+      {
+        "text": "Glancing back and seeing the tortoise so far behind, he laughed, \"I have plenty of time!\"",
+        "emoji": "😏"
+      },
+      {
+        "text": "So sure of winning, the hare decided to rest a while under a shady tree.",
         "emoji": "🌳"
       },
       {
-        "text": "The hare fell fast asleep, sure he had plenty of time.",
+        "text": "He closed his eyes just to rest his legs, and soon fell fast asleep.",
         "emoji": "😴"
       },
       {
-        "text": "The tortoise kept walking slowly, but he never once stopped.",
+        "text": "The tortoise, slow but steady, kept walking one careful step at a time.",
         "emoji": "🚶"
       },
       {
-        "text": "Step by step, the tortoise got closer and closer to the finish.",
-        "emoji": "🏁"
+        "text": "He passed right by the sleeping hare, quiet as could be, and carried on.",
+        "emoji": "🤫"
       },
       {
-        "text": "The hare woke up suddenly and ran as fast as he could.",
+        "text": "As the sun began to set, the tortoise drew closer and closer to the finish line.",
+        "emoji": "🌅"
+      },
+      {
+        "text": "Suddenly, the hare woke with a start and looked around in confusion.",
         "emoji": "😱"
       },
       {
-        "text": "But it was too late, the tortoise had crossed the line first.",
+        "text": "He ran as fast as his legs would carry him, but the finish line was already in sight ahead.",
+        "emoji": "💨"
+      },
+      {
+        "text": "The tortoise crossed the line first, to cheers and applause from all the animals.",
         "emoji": "🎉"
       },
       {
-        "text": "Everyone learned that slow and steady can also win the race.",
+        "text": "The hare arrived out of breath and embarrassed, but shook the tortoise's paw with a warm smile.",
+        "emoji": "🤝"
+      },
+      {
+        "text": "Everyone learned that slow and steady, with patience, wins the race.",
         "emoji": "🐢"
       }
     ]
@@ -170,52 +250,80 @@
     "emoji": "🐻",
     "pages": [
       {
-        "text": "A little girl with golden hair walked alone through the forest.",
+        "text": "A little girl with golden hair, named Goldilocks, wandered alone through the forest.",
         "emoji": "👧"
       },
       {
-        "text": "She found a small house and went in since the door was open.",
+        "text": "She found a cosy little house, and since the door stood open, she stepped inside to look around.",
         "emoji": "🏠"
       },
       {
-        "text": "On the table sat three bowls of warm soup waiting.",
-        "emoji": "🥣"
-      },
-      {
-        "text": "She tasted the first, but it was much too hot.",
-        "emoji": "🔥"
-      },
-      {
-        "text": "She tasted the second, but it was much too cold.",
-        "emoji": "❄️"
-      },
-      {
-        "text": "The third bowl was just right, and she ate it all.",
-        "emoji": "😋"
-      },
-      {
-        "text": "Then she tried three chairs, but only the small one felt comfy.",
-        "emoji": "🪑"
-      },
-      {
-        "text": "She sat down hard, and the little chair broke apart.",
-        "emoji": "💥"
-      },
-      {
-        "text": "Tired now, she went upstairs and tried three different beds.",
-        "emoji": "🛏️"
-      },
-      {
-        "text": "The small bed was just right, and she fell fast asleep.",
-        "emoji": "😴"
-      },
-      {
-        "text": "The bear family came home and found everything all messed up.",
+        "text": "The house belonged to three bears: Papa Bear, Mama Bear, and Baby Bear.",
         "emoji": "🐻"
       },
       {
-        "text": "The girl woke up scared, said sorry, and ran home fast.",
+        "text": "On the table sat three bowls of porridge, still steaming warm.",
+        "emoji": "🥣"
+      },
+      {
+        "text": "She tasted the first bowl, Papa Bear's, but it was much too hot.",
+        "emoji": "🔥"
+      },
+      {
+        "text": "She tasted the second, Mama Bear's, but it was much too cold.",
+        "emoji": "❄️"
+      },
+      {
+        "text": "The third, Baby Bear's, was just right, and she ate every last spoonful.",
+        "emoji": "😋"
+      },
+      {
+        "text": "Next she tried Papa Bear's big chair, but it was much too hard.",
+        "emoji": "🪑"
+      },
+      {
+        "text": "She tried Mama Bear's chair, but it was much too soft.",
+        "emoji": "🛋️"
+      },
+      {
+        "text": "Baby Bear's little chair was just right, but it broke the moment she sat down.",
+        "emoji": "💥"
+      },
+      {
+        "text": "Tired from her long walk, she went upstairs and found three beds in a row.",
+        "emoji": "🪜"
+      },
+      {
+        "text": "Papa Bear's bed was much too hard, and Mama Bear's was much too soft.",
+        "emoji": "🛏️"
+      },
+      {
+        "text": "Baby Bear's little bed was just right, and she fell fast asleep right away.",
+        "emoji": "😴"
+      },
+      {
+        "text": "Soon after, the three bears came home, hungry from their morning walk.",
+        "emoji": "🚶"
+      },
+      {
+        "text": "\"Someone's been eating my porridge!\" said Papa Bear in his great big voice.",
+        "emoji": "😮"
+      },
+      {
+        "text": "\"And someone broke my chair!\" whimpered Baby Bear, staring at the pieces.",
+        "emoji": "😢"
+      },
+      {
+        "text": "They went upstairs and found Goldilocks fast asleep in Baby Bear's bed.",
+        "emoji": "👀"
+      },
+      {
+        "text": "She woke up startled to see the three bears staring at her, said a quick sorry, and ran straight out the door.",
         "emoji": "🏃"
+      },
+      {
+        "text": "Goldilocks learned that it's always best to ask before entering someone else's home.",
+        "emoji": "⭐"
       }
     ]
   },
@@ -225,51 +333,71 @@
     "emoji": "🐜",
     "pages": [
       {
-        "text": "In the hot summer, an ant worked hard gathering food every day.",
+        "text": "In the hot summer sun, a hardworking ant gathered food every single day without rest.",
         "emoji": "🐜"
       },
       {
-        "text": "A grasshopper spent his days singing and dancing in the sun.",
+        "text": "Nearby, a grasshopper spent his days singing, dancing, and playing his little fiddle.",
         "emoji": "🎶"
       },
       {
-        "text": "The grasshopper laughed at the ant for working so hard.",
-        "emoji": "😄"
+        "text": "\"Come and play with me!\" the grasshopper called, lounging carefree in the sunshine.",
+        "emoji": "☀️"
       },
       {
-        "text": "The ant kept carrying grains back to her safe little burrow.",
+        "text": "\"I can't, I must store food for winter,\" the ant replied, never pausing her work.",
         "emoji": "🌾"
       },
       {
-        "text": "Slowly, summer ended and a cold wind began to blow.",
+        "text": "The grasshopper laughed, \"Winter is so far away! Why worry so much?\"",
+        "emoji": "😄"
+      },
+      {
+        "text": "Day after day, the ant kept carrying tiny grains back to her safe little burrow.",
+        "emoji": "🏠"
+      },
+      {
+        "text": "Slowly, the leaves began to fall and the wind turned cold and sharp.",
         "emoji": "🍂"
       },
       {
-        "text": "Winter arrived with snow, and the grasshopper had no food left.",
+        "text": "Autumn passed quickly, and one morning the first snow blanketed the whole forest.",
         "emoji": "❄️"
       },
       {
-        "text": "Hungry and cold, the grasshopper knocked on the ant's door.",
+        "text": "With no food stored away at all, the grasshopper felt the cold and hunger creep in.",
+        "emoji": "🥶"
+      },
+      {
+        "text": "Shivering, he knocked on the ant's door, feeling ashamed and afraid to ask.",
         "emoji": "🚪"
       },
       {
-        "text": "The ant opened the door and saw her sad, hungry friend.",
+        "text": "The ant opened the door and saw her friend, sad and trembling with cold.",
         "emoji": "😢"
       },
       {
-        "text": "Kindly, the ant shared the food she had carefully saved.",
+        "text": "Without hesitation, she welcomed him in and warmed him by her cosy little fire.",
+        "emoji": "🔥"
+      },
+      {
+        "text": "Kindly, she shared the grains she had carefully saved all through the summer.",
         "emoji": "🍞"
       },
       {
-        "text": "The grasshopper thanked her warmly and promised to plan ahead too.",
+        "text": "The grasshopper thanked her warmly and promised to plan ahead from that day on.",
         "emoji": "🙏"
       },
       {
-        "text": "The next spring, the two friends worked together happily.",
+        "text": "They spent the rest of winter together, telling stories by the fireside.",
+        "emoji": "🏡"
+      },
+      {
+        "text": "The following spring, the two friends worked side by side, happier than ever.",
         "emoji": "🌸"
       },
       {
-        "text": "They learned that planning ahead and helping others is always good.",
+        "text": "They learned that planning ahead, and helping one another, always makes life better.",
         "emoji": "💛"
       }
     ]
@@ -280,52 +408,68 @@
     "emoji": "🍪",
     "pages": [
       {
-        "text": "A woman baked a sweet gingerbread man and put him in the oven.",
+        "text": "An old woman baked a sweet gingerbread man and set him in the oven to bake.",
         "emoji": "🍪"
       },
       {
-        "text": "When she opened the oven, he jumped out and started to run.",
+        "text": "When she opened the oven door, he suddenly jumped out and started to run.",
         "emoji": "🏃"
       },
       {
-        "text": "\"You can't catch me!\" he shouted, running down the road.",
+        "text": "\"Run, run, as fast as you can! You can't catch me, I'm the Gingerbread Man!\" he shouted.",
         "emoji": "😄"
       },
       {
-        "text": "The woman chased after him, but he was much too fast.",
+        "text": "The old woman chased him around the kitchen, but he was far too quick.",
         "emoji": "💨"
       },
       {
-        "text": "A dog tried to catch him, but he kept on running.",
+        "text": "Down the road, a dog tried to catch him, but he sang his little rhyme and kept on running.",
         "emoji": "🐕"
       },
       {
-        "text": "A cow tried too, but she could never quite reach him.",
+        "text": "A cow grazing nearby tried too, but could never quite catch up.",
         "emoji": "🐄"
       },
       {
-        "text": "He came to a wide river and did not know how to cross.",
+        "text": "A horse in the field neighed and galloped after him, but the gingerbread man was too swift.",
+        "emoji": "🐴"
+      },
+      {
+        "text": "At last he reached a wide, rushing river and did not know how to cross.",
         "emoji": "🌊"
       },
       {
-        "text": "A clever fox offered to carry him across on her back.",
+        "text": "A clever fox appeared and said, \"Climb onto my back, and I'll carry you across.\"",
         "emoji": "🦊"
       },
       {
-        "text": "The fox swam slowly, saying the water was getting deeper.",
+        "text": "The gingerbread man, a little unsure but with no other choice, climbed on.",
+        "emoji": "🤔"
+      },
+      {
+        "text": "The fox swam slowly, saying the water was getting deeper and deeper.",
         "emoji": "🏊"
       },
       {
-        "text": "He climbed onto her nose so he would not get wet.",
+        "text": "\"Climb onto my neck, so you don't get wet,\" she said, and he climbed higher.",
         "emoji": "👃"
       },
       {
-        "text": "At that moment, the fox opened her mouth with a quick snap.",
+        "text": "A little further on, she warned, \"Climb onto my nose, or you'll get soaked!\"",
         "emoji": "😲"
       },
       {
-        "text": "The gingerbread man learned, too late, not to trust clever strangers.",
+        "text": "The moment he reached her nose, the fox opened her mouth with a quick snap.",
+        "emoji": "😲"
+      },
+      {
+        "text": "In that instant, the Gingerbread Man realized, too late, that the fox was far too clever to trust.",
         "emoji": "🦊"
+      },
+      {
+        "text": "The tale of the Gingerbread Man was told for years after, and everyone learned to be wary of strangers who seem a little too helpful.",
+        "emoji": "⭐"
       }
     ]
   },

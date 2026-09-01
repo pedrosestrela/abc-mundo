@@ -5,51 +5,75 @@
     "emoji": "🐷",
     "pages": [
       {
-        "text": "Três porquinhos saíram de casa para construir as suas próprias casinhas.",
+        "text": "Era uma vez três porquinhos que saíram de casa da mãe para construir as suas próprias casinhas.",
         "emoji": "🐷"
       },
       {
-        "text": "O primeiro porquinho era preguiçoso e construiu a casa com palha.",
+        "text": "O primeiro porquinho era preguiçoso e construiu depressa uma casa de palha.",
         "emoji": "🌾"
       },
       {
-        "text": "O segundo porquinho construiu a sua casa com ramos de madeira.",
+        "text": "O segundo porquinho também teve pressa e construiu a casa com ramos de madeira.",
         "emoji": "🪵"
       },
       {
-        "text": "O terceiro porquinho trabalhou muito e construiu a casa com tijolos.",
+        "text": "O terceiro porquinho trabalhou com calma e construiu uma casa forte de tijolos.",
         "emoji": "🧱"
       },
       {
-        "text": "Um lobo com fome apareceu e bateu à porta de palha.",
+        "text": "Um dia, um lobo com muita fome apareceu a rondar a floresta.",
         "emoji": "🐺"
       },
       {
-        "text": "O lobo soprou com força e a casa de palha caiu logo.",
+        "text": "O lobo bateu à porta de palha e disse: \"Porquinho, porquinho, deixa-me entrar!\"",
+        "emoji": "🚪"
+      },
+      {
+        "text": "\"Não, não, não! Nem que seja pelo pelo do meu queixinho!\", respondeu o porquinho.",
+        "emoji": "🙅"
+      },
+      {
+        "text": "\"Então vou soprar e a tua casa vou derrubar!\", gritou o lobo zangado.",
+        "emoji": "😠"
+      },
+      {
+        "text": "O lobo soprou com toda a força e a casa de palha caiu logo.",
         "emoji": "💨"
       },
       {
-        "text": "O porquinho correu para a casa de madeira do seu irmão.",
+        "text": "O porquinho fugiu a correr para a casa de madeira do seu irmão.",
         "emoji": "🏃"
       },
       {
-        "text": "O lobo soprou outra vez e a casa de madeira também caiu.",
+        "text": "O lobo bateu outra vez: \"Porquinhos, porquinhos, deixem-me entrar!\"",
+        "emoji": "🚪"
+      },
+      {
+        "text": "Os porquinhos disseram que não, e o lobo soprou até a casa de madeira cair também.",
         "emoji": "💨"
       },
       {
-        "text": "Os dois porquinhos correram para a casa forte de tijolos.",
+        "text": "Os dois porquinhos correram assustados para a casa forte de tijolos.",
+        "emoji": "🏃"
+      },
+      {
+        "text": "O lobo pediu para entrar, mas os três porquinhos, juntos, disseram que não.",
         "emoji": "🧱"
       },
       {
-        "text": "O lobo soprou com todas as forças mas a casa não caiu.",
+        "text": "O lobo soprou e soprou com todas as forças, mas a casa de tijolos não se mexeu.",
         "emoji": "😤"
       },
       {
-        "text": "Cansado e sem sucesso, o lobo foi embora da floresta.",
+        "text": "Furioso, o lobo tentou descer pela chaminé, mas caiu direto num caldeirão de água quente.",
+        "emoji": "🔥"
+      },
+      {
+        "text": "Assustado, o lobo fugiu a correr para bem longe e nunca mais voltou.",
         "emoji": "🌲"
       },
       {
-        "text": "Os três porquinhos aprenderam que o trabalho com cuidado vale a pena.",
+        "text": "Os três porquinhos aprenderam que o trabalho feito com cuidado protege e vale sempre a pena.",
         "emoji": "🎉"
       }
     ]
@@ -60,51 +84,83 @@
     "emoji": "🐺",
     "pages": [
       {
-        "text": "Uma menina usava sempre um casaco vermelho com um capuz.",
+        "text": "Uma menina usava sempre um casaco vermelho com capuz, por isso todos a chamavam Capuchinho Vermelho.",
         "emoji": "👧"
       },
       {
-        "text": "Um dia, a mãe pediu-lhe para levar bolos à avó doente.",
-        "emoji": "🧁"
+        "text": "Um dia, a mãe pediu-lhe: \"Leva este cesto de bolos à tua avó, que está doente.\"",
+        "emoji": "🧺"
       },
       {
-        "text": "A menina caminhou sozinha pelo caminho da floresta grande.",
+        "text": "\"Vai direita pelo caminho e não fales com estranhos\", avisou a mãe com cuidado.",
+        "emoji": "🗺️"
+      },
+      {
+        "text": "A menina caminhou sozinha pelo trilho da floresta grande e escura.",
         "emoji": "🌲"
       },
       {
-        "text": "Um lobo esperto encontrou-a e perguntou para onde ia.",
+        "text": "Um lobo esperto apareceu e perguntou: \"Para onde vais com esse cesto, menina?\"",
         "emoji": "🐺"
       },
       {
-        "text": "O lobo correu à frente e chegou primeiro à casa da avó.",
+        "text": "\"Vou a casa da minha avó, que mora depois daquelas árvores altas\", respondeu ela, confiante.",
+        "emoji": "🌳"
+      },
+      {
+        "text": "O lobo correu por um atalho e chegou primeiro à casa da avó.",
         "emoji": "🏃"
       },
       {
-        "text": "O lobo escondeu a avó e vestiu-se com a sua roupa.",
+        "text": "O lobo escondeu a avó no armário e vestiu-se com a sua touca e camisa de dormir.",
+        "emoji": "🧥"
+      },
+      {
+        "text": "Quando o Capuchinho chegou, bateu à porta e o lobo respondeu com voz fininha: \"Entra, querida.\"",
+        "emoji": "🚪"
+      },
+      {
+        "text": "\"Avó, que orelhas tão grandes tens!\", disse a menina, estranhando.",
+        "emoji": "👂"
+      },
+      {
+        "text": "\"São para te ouvir melhor\", respondeu o lobo, puxando o cobertor até ao queixo.",
         "emoji": "🛏️"
       },
       {
-        "text": "A menina chegou e estranhou a voz e os olhos grandes.",
+        "text": "\"Avó, que olhos tão grandes tens!\", continuou ela, cada vez mais desconfiada.",
         "emoji": "👀"
       },
       {
-        "text": "Um caçador que passava ouviu barulhos estranhos vindos da casa.",
+        "text": "\"São para te ver melhor\", disse o lobo, sentando-se devagar.",
+        "emoji": "😬"
+      },
+      {
+        "text": "\"Avó, que dentes tão grandes tens!\", exclamou o Capuchinho, dando um passo atrás.",
+        "emoji": "🦷"
+      },
+      {
+        "text": "\"São para te... abraçar melhor!\", gritou o lobo, saltando da cama de um salto.",
+        "emoji": "😲"
+      },
+      {
+        "text": "A menina fugiu a gritar, e um caçador que passava perto ouviu o barulho.",
         "emoji": "🪓"
       },
       {
-        "text": "O caçador entrou depressa e afastou o lobo assustado.",
+        "text": "O caçador entrou depressa e afastou o lobo assustado para bem longe da casa.",
         "emoji": "💪"
       },
       {
-        "text": "Encontraram a avó escondida, segura e sã dentro do armário.",
+        "text": "Encontraram a avó, sã e salva, escondida dentro do armário.",
         "emoji": "👵"
       },
       {
-        "text": "Todos ficaram felizes e comeram os bolos juntos à mesa.",
+        "text": "Todos se sentaram à mesa e comeram os bolos juntos, felizes por estarem em segurança.",
         "emoji": "🍰"
       },
       {
-        "text": "A menina aprendeu a nunca falar com estranhos na floresta.",
+        "text": "O Capuchinho Vermelho aprendeu a nunca mais se demorar a falar com estranhos na floresta.",
         "emoji": "🌟"
       }
     ]
@@ -115,51 +171,75 @@
     "emoji": "🐢",
     "pages": [
       {
-        "text": "Uma lebre rápida gostava de gozar com a tartaruga lenta.",
+        "text": "Uma lebre muito rápida gostava de gozar com a tartaruga por ser tão lenta.",
         "emoji": "🐇"
       },
       {
-        "text": "Cansada das piadas, a tartaruga desafiou a lebre para uma corrida.",
-        "emoji": "🐢"
-      },
-      {
-        "text": "Todos os animais da floresta vieram assistir à grande corrida.",
-        "emoji": "🦉"
-      },
-      {
-        "text": "Ao sinal, a lebre disparou e ficou muito à frente.",
-        "emoji": "💨"
-      },
-      {
-        "text": "A lebre olhou para trás e riu-se da tartaruga devagar.",
+        "text": "\"Nunca chegarás a lado nenhum a esse passo!\", ria-se a lebre todos os dias.",
         "emoji": "😏"
       },
       {
-        "text": "Tão segura da vitória, a lebre decidiu descansar debaixo de uma árvore.",
+        "text": "Cansada das piadas, a tartaruga disse: \"Então vamos fazer uma corrida e vamos ver.\"",
+        "emoji": "🐢"
+      },
+      {
+        "text": "A lebre riu-se ainda mais alto, mas aceitou o desafio na hora.",
+        "emoji": "😆"
+      },
+      {
+        "text": "Todos os animais da floresta vieram ver a grande corrida entre a coruja e a raposa como juízes.",
+        "emoji": "🦉"
+      },
+      {
+        "text": "\"Preparar, apontar, já!\", gritou a raposa, e a corrida começou.",
+        "emoji": "🦊"
+      },
+      {
+        "text": "A lebre disparou como uma seta e ficou muito à frente em poucos segundos.",
+        "emoji": "💨"
+      },
+      {
+        "text": "Olhou para trás, viu a tartaruga bem longe, e riu-se: \"Tenho tempo de sobra!\"",
+        "emoji": "😏"
+      },
+      {
+        "text": "Tão segura da vitória, a lebre decidiu descansar um pouco debaixo de uma árvore fresquinha.",
         "emoji": "🌳"
       },
       {
-        "text": "A lebre adormeceu profundamente, confiante de que tinha tempo de sobra.",
+        "text": "Fechou os olhos só para descansar as pernas, e adormeceu profundamente.",
         "emoji": "😴"
       },
       {
-        "text": "A tartaruga continuou a andar devagar, mas sem nunca parar.",
+        "text": "A tartaruga, devagar mas sem parar, continuou a andar passo a passo pelo caminho.",
         "emoji": "🚶"
       },
       {
-        "text": "Passo a passo, a tartaruga aproximou-se cada vez mais da meta.",
-        "emoji": "🏁"
+        "text": "Passou pela árvore onde a lebre dormia, sem fazer barulho, e seguiu em frente.",
+        "emoji": "🤫"
       },
       {
-        "text": "A lebre acordou de repente e correu o mais rápido possível.",
+        "text": "O sol começou a descer e a tartaruga aproximou-se cada vez mais da meta.",
+        "emoji": "🌅"
+      },
+      {
+        "text": "De repente, a lebre acordou sobressaltada e olhou em volta, confusa.",
         "emoji": "😱"
       },
       {
-        "text": "Mas já era tarde, a tartaruga tinha cruzado a linha primeiro.",
+        "text": "Correu o mais rápido que pôde, mas já se via a linha de chegada ao longe.",
+        "emoji": "💨"
+      },
+      {
+        "text": "A tartaruga cruzou a linha primeiro, no meio dos aplausos de todos os animais.",
         "emoji": "🎉"
       },
       {
-        "text": "Todos aprenderam que devagar e sempre também se chega longe.",
+        "text": "A lebre chegou ofegante, envergonhada, mas felicitou a tartaruga com um sorriso sincero.",
+        "emoji": "🤝"
+      },
+      {
+        "text": "Todos aprenderam que devagar e sempre, com paciência, também se chega longe.",
         "emoji": "🐢"
       }
     ]
@@ -170,52 +250,80 @@
     "emoji": "🐻",
     "pages": [
       {
-        "text": "Uma menina de cabelo dourado passeava sozinha pela floresta.",
+        "text": "Uma menina de cabelo dourado, chamada Cachinhos Dourados, passeava sozinha pela floresta.",
         "emoji": "👧"
       },
       {
-        "text": "Encontrou uma casinha e entrou porque a porta estava aberta.",
+        "text": "Encontrou uma casinha acolhedora e, como a porta estava aberta, entrou para ver quem morava ali.",
         "emoji": "🏠"
       },
       {
-        "text": "Na mesa havia três tigelas de sopa quente à espera.",
-        "emoji": "🥣"
-      },
-      {
-        "text": "Provou a primeira, mas estava demasiado quente para comer.",
-        "emoji": "🔥"
-      },
-      {
-        "text": "Provou a segunda, mas estava demasiado fria para gostar.",
-        "emoji": "❄️"
-      },
-      {
-        "text": "A terceira tigela estava perfeita e ela comeu tudo.",
-        "emoji": "😋"
-      },
-      {
-        "text": "Depois experimentou três cadeiras, mas só a pequena era confortável.",
-        "emoji": "🪑"
-      },
-      {
-        "text": "Sentou-se com força e a cadeira pequena partiu-se.",
-        "emoji": "💥"
-      },
-      {
-        "text": "Cansada, subiu ao quarto e experimentou três camas diferentes.",
-        "emoji": "🛏️"
-      },
-      {
-        "text": "A cama pequena era perfeita e ela adormeceu profundamente.",
-        "emoji": "😴"
-      },
-      {
-        "text": "A família de ursos voltou a casa e encontrou tudo mexido.",
+        "text": "Na verdade, a casa era de três ursos: o Papá Urso, a Mamã Ursa e o Ursinho Bebé.",
         "emoji": "🐻"
       },
       {
-        "text": "A menina acordou assustada, pediu desculpa e fugiu para casa.",
+        "text": "Na mesa havia três tigelas de papas de aveia, ainda a fumegar.",
+        "emoji": "🥣"
+      },
+      {
+        "text": "Provou a primeira tigela, a do Papá Urso, mas estava demasiado quente.",
+        "emoji": "🔥"
+      },
+      {
+        "text": "Provou a segunda, a da Mamã Ursa, mas estava demasiado fria.",
+        "emoji": "❄️"
+      },
+      {
+        "text": "A terceira, a do Ursinho Bebé, estava perfeita, e ela comeu tudo até ao fundo.",
+        "emoji": "😋"
+      },
+      {
+        "text": "Depois experimentou a cadeira grande do Papá Urso, mas era demasiado dura.",
+        "emoji": "🪑"
+      },
+      {
+        "text": "Experimentou a cadeira média da Mamã Ursa, mas era demasiado mole.",
+        "emoji": "🛋️"
+      },
+      {
+        "text": "A cadeira pequena do Ursinho Bebé era perfeita, mas partiu-se quando ela se sentou.",
+        "emoji": "💥"
+      },
+      {
+        "text": "Cansada de tanto passear, subiu ao quarto e viu três camas em fila.",
+        "emoji": "🪜"
+      },
+      {
+        "text": "A cama do Papá Urso era demasiado dura, e a da Mamã Ursa demasiado mole.",
+        "emoji": "🛏️"
+      },
+      {
+        "text": "A cama pequena do Ursinho Bebé era perfeita, e ela adormeceu profundamente ali mesmo.",
+        "emoji": "😴"
+      },
+      {
+        "text": "Pouco depois, os três ursos voltaram a casa, cheios de fome depois do passeio.",
+        "emoji": "🚶"
+      },
+      {
+        "text": "\"Alguém provou as minhas papas!\", disse o Papá Urso com a sua voz grande.",
+        "emoji": "😮"
+      },
+      {
+        "text": "\"E alguém partiu a minha cadeira!\", choramingou o Ursinho Bebé, ao ver os pedaços.",
+        "emoji": "😢"
+      },
+      {
+        "text": "Subiram ao quarto e encontraram Cachinhos Dourados a dormir na cama pequena.",
+        "emoji": "👀"
+      },
+      {
+        "text": "A menina acordou assustada com os três ursos a olhar para ela, pediu imensa desculpa e fugiu porta fora.",
         "emoji": "🏃"
+      },
+      {
+        "text": "Cachinhos Dourados aprendeu que devemos sempre pedir licença antes de entrar em casa alheia.",
+        "emoji": "⭐"
       }
     ]
   },
@@ -225,51 +333,71 @@
     "emoji": "🐜",
     "pages": [
       {
-        "text": "No verão quente, uma formiga trabalhava a juntar comida todos os dias.",
+        "text": "No verão quente, uma formiga trabalhadora juntava comida todos os dias sem descanso.",
         "emoji": "🐜"
       },
       {
-        "text": "Um gafanhoto passava os dias a cantar e a dançar ao sol.",
+        "text": "Perto dali, um gafanhoto passava os dias a cantar, a dançar e a tocar a sua pequena flauta.",
         "emoji": "🎶"
       },
       {
-        "text": "O gafanhoto ria-se da formiga por trabalhar tanto no calor.",
-        "emoji": "😄"
+        "text": "\"Vem brincar comigo!\", chamava o gafanhoto, deitado ao sol despreocupado.",
+        "emoji": "☀️"
       },
       {
-        "text": "A formiga continuava a levar grãos para a sua toca segura.",
+        "text": "\"Não posso, tenho de guardar comida para o inverno\", respondia a formiga, sem parar de trabalhar.",
         "emoji": "🌾"
       },
       {
-        "text": "Devagar, o verão terminou e o vento frio começou a soprar.",
+        "text": "O gafanhoto ria-se: \"Ainda há tanto tempo até ao inverno! Porque te preocupas tanto?\"",
+        "emoji": "😄"
+      },
+      {
+        "text": "A formiga continuava, dia após dia, a levar grãozinhos para a sua toca segura.",
+        "emoji": "🏠"
+      },
+      {
+        "text": "Devagar, as folhas começaram a cair e o vento ficou mais frio.",
         "emoji": "🍂"
       },
       {
-        "text": "O inverno chegou com neve e o gafanhoto não tinha comida.",
+        "text": "O outono passou depressa, e um dia a primeira neve cobriu toda a floresta.",
         "emoji": "❄️"
       },
       {
-        "text": "Com fome e frio, o gafanhoto bateu à porta da formiga.",
+        "text": "O gafanhoto, sem comida guardada nenhuma, sentiu o frio e a fome apertarem.",
+        "emoji": "🥶"
+      },
+      {
+        "text": "Com as patinhas geladas, bateu à porta da toca da formiga, envergonhado.",
         "emoji": "🚪"
       },
       {
-        "text": "A formiga abriu a porta e viu o amigo triste e faminto.",
+        "text": "A formiga abriu a porta e viu o amigo triste, tremendo de frio.",
         "emoji": "😢"
       },
       {
-        "text": "Com bondade, a formiga partilhou a comida que tinha guardado.",
+        "text": "Sem hesitar, convidou-o a entrar e aqueceu-o junto ao lume da sua casinha.",
+        "emoji": "🔥"
+      },
+      {
+        "text": "Com bondade, partilhou os grãos que tinha guardado durante todo o verão.",
         "emoji": "🍞"
       },
       {
-        "text": "O gafanhoto agradeceu muito e prometeu ajudar a preparar-se no futuro.",
+        "text": "O gafanhoto agradeceu de coração e prometeu ajudar a preparar-se melhor no futuro.",
         "emoji": "🙏"
       },
       {
-        "text": "Na primavera seguinte, os dois amigos trabalharam juntos com alegria.",
+        "text": "Passaram o resto do inverno juntos, contando histórias à lareira.",
+        "emoji": "🏡"
+      },
+      {
+        "text": "Na primavera seguinte, os dois amigos trabalharam lado a lado com alegria.",
         "emoji": "🌸"
       },
       {
-        "text": "Aprenderam que planear com cuidado e ajudar os outros faz bem.",
+        "text": "Aprenderam que planear com cuidado e ajudar os outros faz sempre bem a todos.",
         "emoji": "💛"
       }
     ]
@@ -280,52 +408,68 @@
     "emoji": "🍪",
     "pages": [
       {
-        "text": "Uma senhora fez um boneco de gengibre doce e o pôs no forno.",
+        "text": "Uma senhora idosa fez um boneco doce de gengibre e pô-lo a cozer no forno.",
         "emoji": "🍪"
       },
       {
-        "text": "Quando abriu o forno, o boneco saltou e começou a correr.",
+        "text": "Quando abriu a porta do forno, o boneco saltou de repente e começou a correr.",
         "emoji": "🏃"
       },
       {
-        "text": "\"Não me apanhas!\", gritou o boneco, correndo pela estrada fora.",
+        "text": "\"Corre, corre, o mais depressa que puderes! Não me apanhas, sou o Boneco de Gengibre!\", gritou ele.",
         "emoji": "😄"
       },
       {
-        "text": "A senhora correu atrás dele, mas o boneco era rápido demais.",
+        "text": "A senhora correu atrás dele pela cozinha, mas o boneco era rápido demais.",
         "emoji": "💨"
       },
       {
-        "text": "Um cão tentou apanhá-lo, mas o boneco continuou a fugir.",
+        "text": "Pela estrada fora, um cão tentou apanhá-lo, mas o boneco repetiu a sua cantiga e continuou a fugir.",
         "emoji": "🐕"
       },
       {
-        "text": "Uma vaca também tentou, mas nunca conseguiu alcançá-lo.",
+        "text": "Uma vaca a pastar também tentou, mas nunca conseguiu alcançá-lo.",
         "emoji": "🐄"
       },
       {
-        "text": "Chegou a um rio largo e não sabia como atravessar.",
+        "text": "Um cavalo no campo relinchou e correu atrás dele, mas o boneco era veloz demais.",
+        "emoji": "🐴"
+      },
+      {
+        "text": "Chegou por fim a um rio largo e caudaloso, e não sabia como atravessar.",
         "emoji": "🌊"
       },
       {
-        "text": "Uma raposa esperta ofereceu-se para o levar às costas.",
+        "text": "Uma raposa esperta apareceu e disse: \"Sobe para as minhas costas, eu levo-te à outra margem.\"",
         "emoji": "🦊"
       },
       {
-        "text": "A raposa nadou devagar, dizendo que a água estava cada vez mais funda.",
+        "text": "O boneco, desconfiado mas sem outra escolha, subiu para o lombo da raposa.",
+        "emoji": "🤔"
+      },
+      {
+        "text": "A raposa nadou devagar, dizendo que a água ia ficando cada vez mais funda.",
         "emoji": "🏊"
       },
       {
-        "text": "O boneco subiu para o nariz da raposa para não se molhar.",
+        "text": "\"Sobe para o meu pescoço, se não te molhas todo\", disse ela, e o boneco subiu.",
         "emoji": "👃"
       },
       {
-        "text": "Nesse momento, a raposa abriu a boca com um salto rápido.",
+        "text": "Um pouco mais à frente, a raposa avisou: \"Sobe para o meu focinho, para não te molhares!\"",
         "emoji": "😲"
       },
       {
-        "text": "O boneco aprendeu, tarde demais, a não confiar em estranhos espertos.",
+        "text": "Assim que o boneco chegou ao focinho da raposa, ela abriu a boca com um salto rápido.",
+        "emoji": "😲"
+      },
+      {
+        "text": "Nesse momento, o Boneco de Gengibre percebeu, tarde demais, que a raposa era esperta demais para confiar.",
         "emoji": "🦊"
+      },
+      {
+        "text": "A história do Boneco de Gengibre ficou conhecida na aldeia, e todos aprenderam a ter cuidado com desconhecidos simpáticos demais.",
+        "emoji": "⭐"
       }
     ]
   },

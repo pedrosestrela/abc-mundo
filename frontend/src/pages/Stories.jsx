@@ -31,6 +31,23 @@ const PAGE_SCENES = [
   { gradient: "linear-gradient(160deg, #fff0e0 0%, #ffd3ad 100%)", deco: "🦋" },
 ];
 
+// Resolves a bilingual EN/PT title suffix for a story, on top of whichever
+// title is already shown from the child's chosen mother/secondary language
+// pair. Only adds whichever of PT/EN isn't already visible from that pair,
+// so e.g. a pt/en pair never shows the same title twice.
+function resolveBilingualTitle(storyId, motherCode, secondaryCode, ptList, enList) {
+  const extras = [];
+  if (motherCode !== "pt" && secondaryCode !== "pt") {
+    const pt = ptList.find((s) => s.id === storyId);
+    if (pt) extras.push(pt.title);
+  }
+  if (motherCode !== "en" && secondaryCode !== "en") {
+    const en = enList.find((s) => s.id === storyId);
+    if (en) extras.push(en.title);
+  }
+  return extras.length ? extras.join(" / ") : "";
+}
+
 // Splits a page's text into words while keeping track of each word's start
 // character offset, so a `charIndex` reported by the Web Speech API's
 // `onboundary` event can be matched back to a word to highlight.
@@ -64,6 +81,15 @@ export default function Stories() {
   const loading = tab === "short" && shortLoading;
   const count = Math.min(motherStories.length, secondaryStories.length);
 
+  // Bilingual EN/PT titles: fetched purely to read `.title` by id, regardless
+  // of the child's chosen language pair (see resolveBilingualTitle above).
+  const ptCompleteAll = getCompleteTales("pt");
+  const enCompleteAll = getCompleteTales("en");
+  const [ptShortAll, setPtShortAll] = useState([]);
+  const [enShortAll, setEnShortAll] = useState([]);
+  const ptTitleList = tab === "complete" ? ptCompleteAll : ptShortAll;
+  const enTitleList = tab === "complete" ? enCompleteAll : enShortAll;
+
   const [openIndex, setOpenIndex] = useState(null);
   const [pageIndex, setPageIndex] = useState(0);
   const [activeWord, setActiveWord] = useState(-1);
@@ -89,6 +115,20 @@ export default function Stories() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pair.mother, pair.secondary]);
 
+  // Fetch PT + EN short-story titles (cached lazy-loaded chunks, so this is
+  // cheap) purely to build bilingual titles regardless of the chosen pair.
+  useEffect(() => {
+    let cancelled = false;
+    Promise.all([getStories("pt"), getStories("en")]).then(([pt, en]) => {
+      if (cancelled) return;
+      setPtShortAll(pt);
+      setEnShortAll(en);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
   const motherStory = openIndex !== null ? motherStories[openIndex] : null;
   const secondaryStory = openIndex !== null ? secondaryStories[openIndex] : null;
 
@@ -109,6 +149,25 @@ export default function Stories() {
     setActiveWord(-1);
     setPoked(false);
   }, [openIndex, pageIndex]);
+
+  // Briefly toggles a "turning" class on the page whenever it changes, to
+  // drive a book-like page-flip CSS animation (see .story-page-body.turning
+  // in styles.css). Skips the very first render of an opened story so the
+  // book doesn't "flip" when it first opens.
+  const [turning, setTurning] = useState(false);
+  const isFirstPageRender = React.useRef(true);
+  useEffect(() => {
+    if (isFirstPageRender.current) {
+      isFirstPageRender.current = false;
+      return;
+    }
+    setTurning(true);
+    const timer = setTimeout(() => setTurning(false), 380);
+    return () => clearTimeout(timer);
+  }, [pageIndex]);
+  useEffect(() => {
+    isFirstPageRender.current = true;
+  }, [openIndex]);
 
   function switchTab(next) {
     setTab(next);
@@ -191,17 +250,19 @@ export default function Stories() {
     const mPage = motherStory.pages[pageIndex];
     const sPage = secondaryStory.pages[pageIndex];
     const scene = PAGE_SCENES[pageIndex % PAGE_SCENES.length];
+    const bilingualTitle = resolveBilingualTitle(secondaryStory.id, pair.mother, pair.secondary, ptTitleList, enTitleList);
 
     return (
       <div className="page">
         <h1>
           {secondaryStory.emoji} {secondaryStory.title}
+          {bilingualTitle ? <span className="story-title-bilingual"> ({bilingualTitle})</span> : null}
         </h1>
         <div className="help-btn-corner">
           <HelpButton text={t("modules.storiesHelpReader")} langCode={pair.mother} />
         </div>
         <div className="story-reader" style={{ background: scene.gradient }}>
-          <div className="story-page-body">
+          <div className={`story-page-body${turning ? " turning" : ""}`}>
             <div className="story-page-scene">
               <span
                 className={`story-page-deco${poked ? " poked" : ""}`}
@@ -298,6 +359,7 @@ export default function Stories() {
       <div className="song-list">
         {Array.from({ length: count }).map((_, i) => {
           const s = secondaryStories[i];
+          const bilingualTitle = resolveBilingualTitle(s.id, pair.mother, pair.secondary, ptTitleList, enTitleList);
           return (
             <div
               className="song-card story-card"
@@ -313,7 +375,10 @@ export default function Stories() {
               }}
             >
               <div className="story-card-emoji">{s.emoji}</div>
-              <h2>{s.title}</h2>
+              <h2>
+                {s.title}
+                {bilingualTitle ? <span className="story-title-bilingual"> ({bilingualTitle})</span> : null}
+              </h2>
             </div>
           );
         })}
