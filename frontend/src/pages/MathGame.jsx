@@ -7,6 +7,7 @@ import SpeakButton from "../components/SpeakButton.jsx";
 import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
 import AgeAdvisory from "../components/AgeAdvisory.jsx";
 import MascotBubble from "../components/mascots/MascotBubble.jsx";
+import { pickLine } from "../components/mascots/reactionLines.js";
 
 // Small rotating pool of mascot-style character names used only as plain
 // text inside scenario sentences (no illustration import - keeps this page
@@ -288,7 +289,7 @@ function buildDivisionRounds(tier) {
   return rounds;
 }
 
-function QuizRunner({ rounds, renderPrompt, moduleEvent, skillId, profile, t, onDone }) {
+function QuizRunner({ rounds, renderPrompt, moduleEvent, skillId, profile, pair, t, onDone }) {
   const [step, setStep] = useState(0);
   const [score, setScore] = useState(0);
   const [feedback, setFeedback] = useState(null);
@@ -364,6 +365,11 @@ function QuizRunner({ rounds, renderPrompt, moduleEvent, skillId, profile, t, on
               </button>
             ))}
           </div>
+          {feedback && pair && (
+            <MascotBubble character="nina" reaction={feedback === "correct" ? "happy" : "encouraging"} langCode={pair.mother}>
+              {pickLine(t(feedback === "correct" ? "mascotLines.mathCorrect" : "mascotLines.mathEncouraging", { returnObjects: true }))}
+            </MascotBubble>
+          )}
         </>
       ) : (
         <>
@@ -371,6 +377,11 @@ function QuizRunner({ rounds, renderPrompt, moduleEvent, skillId, profile, t, on
           <p className="game-result">
             {t("modules.mathScore")}: {score} / {rounds.length}
           </p>
+          {pair && (
+            <MascotBubble character="nina" reaction="resting" langCode={pair.mother}>
+              {t("mascotLines.genericClosing")}
+            </MascotBubble>
+          )}
           <button type="button" className="big-btn" onClick={handleRestart}>
             {t("modules.mathPlayAgain")} 🔁
           </button>
@@ -1057,8 +1068,8 @@ export default function MathGame() {
       <div className="help-btn-corner">
         <HelpButton text={t(`modules.${helpKeyFor(activity)}`)} langCode={pair.mother} />
       </div>
-      <MascotBubble character="tomas" mood="happy" langCode={pair.mother}>
-        {t("modules.mathGameMascotIntro")}
+      <MascotBubble character="nina" reaction="curious" langCode={pair.mother}>
+        {t("mascotLines.mathOpening")}
       </MascotBubble>
 
       <div className="game-options">
@@ -1097,6 +1108,7 @@ export default function MathGame() {
           key={"counting-" + seed}
           rounds={buildCountingRounds(tier)}
           profile={profile}
+          pair={pair}
           t={t}
           moduleEvent="math_counting"
           onDone={restart}
@@ -1112,6 +1124,7 @@ export default function MathGame() {
             key={"numbers-" + seed}
             rounds={buildNumberRounds(tier)}
             profile={profile}
+            pair={pair}
             t={t}
             moduleEvent="math_numbers"
             onDone={restart}
@@ -1147,6 +1160,7 @@ export default function MathGame() {
               key={"addsub-choice-" + seed}
               rounds={buildAddSubRounds(tier)}
               profile={profile}
+              pair={pair}
               t={t}
               moduleEvent="math_addsub"
               skillId="math-addsub"
@@ -1177,6 +1191,7 @@ export default function MathGame() {
               key={"addsub-count-" + seed}
               rounds={buildCountingModeAddSubRounds()}
               profile={profile}
+              pair={pair}
               t={t}
               moduleEvent="math_addsub"
               skillId="math-addsub"
@@ -1210,6 +1225,7 @@ export default function MathGame() {
               key={"multiplication-choice-" + seed}
               rounds={buildMultiplicationRounds(tier)}
               profile={profile}
+              pair={pair}
               t={t}
               moduleEvent="math_multiplication"
               skillId="math-multiplication"
@@ -1234,6 +1250,7 @@ export default function MathGame() {
               key={"multiplication-groups-" + seed}
               rounds={buildMultiplicationCountingRounds(tier)}
               profile={profile}
+              pair={pair}
               t={t}
               moduleEvent="math_multiplication"
               skillId="math-multiplication"
@@ -1267,6 +1284,7 @@ export default function MathGame() {
               key={"division-choice-" + seed}
               rounds={buildDivisionRounds(tier)}
               profile={profile}
+              pair={pair}
               t={t}
               moduleEvent="math_division"
               skillId="math-division"
@@ -1285,6 +1303,7 @@ export default function MathGame() {
               key={"division-share-" + seed}
               rounds={buildDivisionCountingRounds(tier)}
               profile={profile}
+              pair={pair}
               t={t}
               moduleEvent="math_division"
               skillId="math-division"
@@ -1309,6 +1328,7 @@ export default function MathGame() {
           key={"stories-" + seed}
           rounds={buildMathStoryRounds()}
           profile={profile}
+          pair={pair}
           t={t}
           moduleEvent="math_stories"
           skillId="math-stories"

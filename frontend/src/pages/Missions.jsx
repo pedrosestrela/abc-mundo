@@ -166,8 +166,8 @@ export default function Missions() {
         <IllustrationSun size={36} />
         <IllustrationTree size={36} />
       </div>
-      <MascotBubble character="lumi" mood="happy" langCode={pair.mother}>
-        {t("modules.missionsMascotIntro")}
+      <MascotBubble character="milo" reaction="happy" langCode={pair.mother}>
+        {t("mascotLines.missionsOpening")}
       </MascotBubble>
 
       <div className="mission-card mission-card-today">
