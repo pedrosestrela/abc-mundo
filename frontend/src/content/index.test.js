@@ -38,8 +38,8 @@ const PER_LANGUAGE_GETTERS = {
 };
 
 describe("SUPPORTED_LANGUAGES", () => {
-  test("includes all 7 expected language codes", () => {
-    expect(LANG_CODES.sort()).toEqual(["de", "en", "es", "fr", "it", "pt", "zh"]);
+  test("includes all 8 expected language codes", () => {
+    expect(LANG_CODES.sort()).toEqual(["de", "en", "es", "fr", "it", "ja", "pt", "zh"]);
   });
 });
 
