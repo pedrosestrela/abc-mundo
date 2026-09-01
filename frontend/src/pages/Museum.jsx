@@ -13,10 +13,31 @@ import {
 } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
 import HelpButton from "../components/HelpButton.jsx";
+import museumPhotos from "../content/museumPhotos.json";
+import archaeologyPhotos from "../content/archaeologyPhotos.json";
 
 // Lazy-loaded: only pulls in this component's three.js/OrbitControls import
 // when the child actually opens the 3D room view for a museum room.
 const Museum3D = lazy(() => import("../components/Museum3D.jsx"));
+
+// Real, offline-bundled photos (Wikimedia Commons, license-verified) for a
+// pilot subset of museum/archaeology items — mirrors the CountryPhotoStrip
+// pattern used in World.jsx. Falls back to nothing (the emoji still renders
+// on its own) when no photo is mapped for an item.
+function ArtifactPhoto({ id, name, t, photoMap }) {
+  const entry = photoMap[id];
+  if (!entry) return null;
+  return (
+    <figure className="world-photo">
+      <img src={entry.photo} alt={name} width={400} height={300} loading="lazy" />
+      {entry.credit && (
+        <figcaption className="world-photo-credit">
+          📷 {t("modules.museumArtifactPhoto")} · {entry.credit.author} · {entry.credit.license}
+        </figcaption>
+      )}
+    </figure>
+  );
+}
 
 // --- Museu ABC: rooms of tappable exhibits, "guess first" pattern ---
 
@@ -30,6 +51,7 @@ function ExhibitCard({ exhibit, chosenOptionId, onGuess, t, mother }) {
         {exhibit.emoji} {exhibit.name}
         <SpeakButton text={exhibit.name} langCode={mother} />
       </p>
+      <ArtifactPhoto id={exhibit.id} name={exhibit.name} t={t} photoMap={museumPhotos} />
 
       {!guessed && (
         <>
@@ -229,6 +251,7 @@ function DigScenario({ scenario, t, mother, profile, onComplete, completed }) {
                 <div className="mission-badge computing-topic-badge">
                   {a.emoji} {a.name}
                 </div>
+                <ArtifactPhoto id={a.id} name={a.name} t={t} photoMap={archaeologyPhotos} />
                 <p className="game-result">
                   {a.detail}
                   <SpeakButton text={a.detail} langCode={mother} />

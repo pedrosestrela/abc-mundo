@@ -1,0 +1,23 @@
+{
+  "amphora": { "photo": "/images/museum/amphora.jpg", "credit": { "author": "Metropolitan Museum of Art", "license": "CC0" } },
+  "mummy-mask": { "photo": "/images/museum/mummy-mask.jpg", "credit": { "author": "Metropolitan Museum of Art", "license": "CC0" } },
+  "arrowhead": { "photo": "/images/museum/arrowhead.jpg", "credit": { "author": "Gary Todd", "license": "CC0" } },
+  "triceratops-horn": { "photo": "/images/museum/triceratops-horn.jpg", "credit": { "author": "Tim Evanson", "license": "CC BY-SA 2.0" } },
+  "fossil-egg": { "photo": "/images/museum/fossil-egg.jpg", "credit": { "author": "Harshit khunt18", "license": "CC BY-SA 4.0" } },
+  "pterosaur-wing": { "photo": "/images/museum/pterosaur-wing.jpg", "credit": { "author": "Gary Todd", "license": "CC0" } },
+  "sword": { "photo": "/images/museum/sword.jpg", "credit": { "author": "Metropolitan Museum of Art", "license": "CC0" } },
+  "old-coin": { "photo": "/images/museum/old-coin.jpg", "credit": { "author": "Metropolitan Museum of Art", "license": "CC0" } },
+  "wax-seal": { "photo": "/images/museum/wax-seal.jpg", "credit": { "author": "Sussex Archaeological Society / Liz Wilson (PAS)", "license": "CC BY-SA 4.0" } },
+  "viking-ship": { "photo": "/images/museum/viking-ship.jpg", "credit": { "author": "Peulle", "license": "CC BY-SA 4.0" } },
+  "horse-carriage": { "photo": "/images/museum/horse-carriage.jpg", "credit": { "author": "Oleg Yunakov", "license": "CC BY-SA 4.0" } },
+  "steam-locomotive": { "photo": "/images/museum/steam-locomotive.jpg", "credit": { "author": "Uwe Aranas", "license": "CC BY-SA 3.0" } },
+  "old-battery": { "photo": "/images/museum/old-battery.jpg", "credit": { "author": "Tiia Monto", "license": "CC BY 4.0" } },
+  "cave-painting": { "photo": "/images/museum/cave-painting.jpg", "credit": { "author": "HTO", "license": "Public domain" } },
+  "punch-card": { "photo": "/images/museum/punch-card.jpg", "credit": { "author": "Erik Pitti", "license": "CC BY 2.0" } },
+  "floppy-disk": { "photo": "/images/museum/floppy-disk.jpg", "credit": { "author": "Swtpc6800 (Michael Holley)", "license": "Public domain" } },
+  "vacuum-tube": { "photo": "/images/museum/vacuum-tube.jpg", "credit": { "author": "Mister rf", "license": "CC BY-SA 4.0" } },
+  "space-suit": { "photo": "/images/museum/space-suit.jpg", "credit": { "author": "Tim Evanson", "license": "CC BY-SA 2.0" } },
+  "moon-rock": { "photo": "/images/museum/moon-rock.jpg", "credit": { "author": "Mitch Ames", "license": "CC BY-SA 4.0" } },
+  "rocket-engine": { "photo": "/images/museum/rocket-engine.jpg", "credit": { "author": "Mike Peel (www.mikepeel.net)", "license": "CC BY-SA 4.0" } },
+  "satellite": { "photo": "/images/museum/satellite.jpg", "credit": { "author": "Rept0n1x", "license": "CC BY-SA 3.0" } }
+}
