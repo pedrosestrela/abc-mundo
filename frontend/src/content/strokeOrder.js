@@ -168,12 +168,130 @@ export const STROKE_ORDER = {
   ],
 };
 
-// Look up stroke data for a character regardless of case (digits pass
-// through unchanged). Returns null if no stroke data exists (e.g. lowercase
-// letters and cursive/hand forms, which are not yet covered).
+// Lowercase letter-formation strokes, keyed by uppercase letter name (the
+// key is just an identifier — the coordinates below are genuine lowercase
+// shapes, not the uppercase path reused at a smaller size). Coordinates use
+// the same 0-100 normalized space as STROKE_ORDER, but with room reserved
+// for ascenders/descenders: x-height band is roughly y 42-88 (the part
+// matching a bare "o"/"a"/"e" shape), ascenders (b, d, f, h, k, l, t) reach
+// up to y 12, and descenders (g, j, p, q, y) reach down to y 100.
+export const STROKE_ORDER_LOWER = {
+  A: [
+    [[65, 55], [55, 45], [42, 42], [32, 50], [30, 65], [35, 80], [48, 88], [60, 85], [65, 72], [65, 55]],
+    [[65, 40], [65, 88]],
+  ],
+  B: [
+    [[30, 12], [30, 88]],
+    [[30, 55], [45, 45], [58, 48], [64, 65], [58, 82], [45, 88], [30, 80]],
+  ],
+  C: [
+    [[70, 50], [60, 42], [45, 42], [35, 50], [32, 65], [35, 80], [45, 88], [60, 88], [70, 80]],
+  ],
+  D: [
+    [[65, 12], [65, 88]],
+    [[65, 55], [55, 45], [42, 42], [32, 50], [30, 65], [35, 80], [48, 88], [60, 85], [65, 72]],
+  ],
+  E: [
+    [[32, 68], [68, 68], [65, 50], [50, 42], [36, 48], [30, 62], [33, 78], [46, 88], [60, 85], [68, 76]],
+  ],
+  F: [
+    [[62, 15], [52, 10], [42, 15], [38, 28], [38, 88]],
+    [[28, 45], [55, 45]],
+  ],
+  G: [
+    [[65, 55], [55, 45], [42, 42], [32, 50], [30, 66], [35, 80], [48, 88], [60, 85], [65, 72], [65, 50]],
+    [[65, 60], [65, 96], [58, 100], [46, 98]],
+  ],
+  H: [
+    [[28, 12], [28, 88]],
+    [[28, 58], [35, 46], [48, 42], [58, 46], [62, 58], [62, 88]],
+  ],
+  I: [
+    [[50, 20], [50, 22]],
+    [[50, 42], [50, 88]],
+  ],
+  J: [
+    [[58, 20], [58, 22]],
+    [[58, 42], [58, 92], [50, 100], [40, 98]],
+  ],
+  K: [
+    [[28, 12], [28, 88]],
+    [[62, 42], [30, 62]],
+    [[30, 62], [64, 88]],
+  ],
+  L: [
+    [[50, 12], [50, 88]],
+  ],
+  M: [
+    [[28, 88], [28, 42]],
+    [[28, 42], [32, 48], [42, 50], [48, 44], [50, 42], [50, 88]],
+    [[50, 42], [54, 48], [64, 50], [70, 44], [72, 42], [72, 88]],
+  ],
+  N: [
+    [[28, 88], [28, 42]],
+    [[28, 42], [35, 44], [48, 42], [58, 46], [62, 58], [62, 88]],
+  ],
+  O: [
+    [[65, 55], [55, 45], [42, 42], [32, 50], [30, 65], [35, 80], [48, 88], [60, 85], [65, 72], [65, 55]],
+  ],
+  P: [
+    [[30, 42], [30, 100]],
+    [[30, 50], [45, 42], [58, 46], [62, 58], [58, 68], [45, 70], [30, 65]],
+  ],
+  Q: [
+    [[65, 55], [55, 45], [42, 42], [32, 50], [30, 65], [35, 80], [48, 88], [60, 85], [65, 72], [65, 45]],
+    [[65, 50], [65, 100]],
+  ],
+  R: [
+    [[32, 42], [32, 88]],
+    [[32, 50], [40, 43], [52, 42], [58, 46]],
+  ],
+  S: [
+    [[62, 48], [50, 42], [38, 45], [33, 53], [40, 63], [55, 68], [62, 78], [55, 86], [42, 88], [32, 80]],
+  ],
+  T: [
+    [[45, 20], [45, 82], [52, 88], [60, 86]],
+    [[30, 42], [62, 42]],
+  ],
+  U: [
+    [[30, 42], [30, 70], [36, 84], [48, 88], [60, 82], [62, 70], [62, 42]],
+    [[62, 60], [62, 88]],
+  ],
+  V: [
+    [[30, 42], [48, 88]],
+    [[48, 88], [66, 42]],
+  ],
+  W: [
+    [[26, 42], [36, 88]],
+    [[36, 88], [48, 55]],
+    [[48, 55], [60, 88]],
+    [[60, 88], [72, 42]],
+  ],
+  X: [
+    [[30, 42], [66, 88]],
+    [[66, 42], [30, 88]],
+  ],
+  Y: [
+    [[30, 42], [50, 75]],
+    [[66, 42], [42, 100]],
+  ],
+  Z: [
+    [[30, 42], [64, 42]],
+    [[64, 42], [30, 88]],
+    [[30, 88], [64, 88]],
+  ],
+};
+
+// Look up stroke data for a character. Digits pass through unchanged.
+// Letters are case-sensitive: a lowercase letter returns its own genuine
+// lowercase stroke shape (STROKE_ORDER_LOWER), while an uppercase letter
+// returns the uppercase shape (STROKE_ORDER) — the two are never mixed, so
+// the traced guide path always matches the case actually being practiced.
+// Returns null if no stroke data exists for the character at all.
 export function getStrokes(char) {
   if (char == null) return null;
-  const key = /^[a-zA-Z]$/.test(char) ? char.toUpperCase() : char;
+  if (/^[a-z]$/.test(char)) return STROKE_ORDER_LOWER[char.toUpperCase()] || null;
+  const key = /^[A-Z]$/.test(char) ? char.toUpperCase() : char;
   return STROKE_ORDER[key] || null;
 }
 
