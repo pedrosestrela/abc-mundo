@@ -109,27 +109,34 @@ Generated on 2026-09-01 with Piper TTS.
   technique as `pt/` (see above).
 - Coverage: all 21 songs in `songs.it.json`.
 
-## `zh/` — Piper TTS (Mandarin Chinese)
+## `zh/` — not yet generated (Mandarin Chinese)
 
-Generated on 2026-09-01 with Piper TTS.
+Attempted on 2026-09-01 but not completed — left out entirely rather than
+partially generated, so `zh/` still falls back to Web Speech for every song.
 
-- Voice model: `zh_CN-chaowen-medium` (Mandarin Chinese, medium quality,
-  22,050Hz), downloaded from `rhasspy/piper-voices` on Hugging Face. Model
-  license: **CC0** (public domain — dataset:
-  [OHF-Voice/voice-datasets](https://github.com/OHF-Voice/voice-datasets),
-  see the model card at
-  `rhasspy/piper-voices/zh/zh_CN/chaowen/medium/MODEL_CARD`).
-- Same per-line synthesis + ~400ms silence splice + `--length-scale 1.18`
-  technique as `pt/` (see above).
-- Coverage: all 21 songs in `songs.zh.json`.
+- Voice model candidate: `zh_CN-chaowen-medium` (CC0, same
+  `piper-voices` repo). The model itself downloaded fine and is
+  appropriately licensed.
+- Blocker: Piper's Chinese phonemizer (`g2pW`) requires the `transformers`
+  Python package, which on this generation machine detects a broken/
+  partially-installed `torch` package (an environment issue unrelated to
+  this app or its content — a `torch` install was mid-flight from other
+  concurrent activity on the shared machine, causing the phonemizer to
+  either crash or silently produce empty phonemes depending on install
+  state at the moment of each call). This is a local tooling problem, not
+  a licensing or content issue.
+- To finish `zh/` later: regenerate on a machine/environment with a clean
+  Python install (no broken `torch`), run `pip install "piper-tts[zh]"`,
+  then reuse `zh_CN-chaowen-medium` with the same per-line + silence +
+  `--length-scale 1.18` technique as the other languages.
 
 ## All languages
 
 - The lyrics themselves are original content written for this app.
 - Portuguese (`pt/`, 22 songs), English (`en/`, 21 of 22 songs), German
   (`de/`, 21 songs), French (`fr/`, 21 songs), Spanish (`es/`, 21 songs),
-  Italian (`it/`, 21 songs), and Mandarin Chinese (`zh/`, 21 songs) are all
-  now covered with real recorded-voice narration.
+  and Italian (`it/`, 21 songs) are covered with real recorded-voice
+  narration. Mandarin Chinese (`zh/`) is not yet covered — see above.
 - `Songs.jsx` automatically prefers a real audio file when one exists for a
   given song+language and falls back to Web Speech otherwise — no missing
   file ever blocks playback.
