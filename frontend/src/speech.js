@@ -13,6 +13,7 @@ const LANG_TO_BCP47 = {
   zh: "zh-CN",
   es: "es-ES",
   it: "it-IT",
+  ja: "ja-JP",
 };
 
 let cachedVoices = [];

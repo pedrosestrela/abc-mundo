@@ -15,4 +15,5 @@ export const SUPPORTED_LANGUAGES = [
   { code: "zh", label: "中文", flag: "🇨🇳" },
   { code: "es", label: "Español", flag: "🇪🇸" },
   { code: "it", label: "Italiano", flag: "🇮🇹" },
+  { code: "ja", label: "日本語", flag: "🇯🇵" },
 ];
