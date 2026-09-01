@@ -1,0 +1,306 @@
+[
+  {
+    "id": "nr-cao-parque",
+    "emoji": "🐕",
+    "facts": "🐕 犬。 🏞️ 公園で。 🕐 朝に。 🎾 ボールをみつけた。",
+    "questions": [
+      { "type": "who", "question": "このニュースのしゅじんこうはだれ?", "options": ["犬", "ねこ", "こども"], "correctIndex": 0 },
+      { "type": "what", "question": "何がおこった?", "options": ["ボールをみつけた", "まいごになった", "大きな声でほえた"], "correctIndex": 0 },
+      { "type": "where", "question": "どこでおこった?", "options": ["公園で", "学校で", "おうちで"], "correctIndex": 0 },
+      { "type": "when", "question": "いつおこった?", "options": ["朝に", "夜に", "しゅうまつに"], "correctIndex": 0 }
+    ],
+    "factCheck": {
+      "statement": "犬はボールをみつけてとてもうれしかった。",
+      "isFact": false,
+      "explanation": "これはそうぞうだよ。ニュースはボールをみつけたと言っているけど、どう感じたかは言っていない。うれしかったとおもっているだけなんだ。"
+    }
+  },
+  {
+    "id": "nr-queques-escola",
+    "emoji": "🧁",
+    "facts": "👩‍🍳 りょうりにん。 🏫 学校で。 🕒 午後に。 🧁 カップケーキを50こつくった。",
+    "questions": [
+      { "type": "who", "question": "このニュースのしゅじんこうはだれ?", "options": ["りょうりにん", "にわし", "しょうぼうし"], "correctIndex": 0 },
+      { "type": "what", "question": "何がおこった?", "options": ["カップケーキを50こつくった", "絵をかいた", "お皿をあらった"], "correctIndex": 0 },
+      { "type": "where", "question": "どこでおこった?", "options": ["学校で", "びょういんで", "公園で"], "correctIndex": 0 },
+      { "type": "when", "question": "いつおこった?", "options": ["午後に", "あさはやくに", "よなかすぎに"], "correctIndex": 0 }
+    ],
+    "factCheck": {
+      "statement": "カップケーキはとてもおいしかった。",
+      "isFact": false,
+      "explanation": "これはそうぞうだよ。50このカップケーキをつくったのはわかるけど、まだだれも味を言っていないんだ。"
+    }
+  },
+  {
+    "id": "nr-gato-arvore",
+    "emoji": "🐱",
+    "facts": "🚒 消防士たち。 🌳 高い木で。 🕐 お昼に。 🐱 ねこをたすけた。",
+    "questions": [
+      { "type": "who", "question": "このニュースのしゅじんこうはだれ?", "options": ["消防士たち", "先生たち", "お医者さんたち"], "correctIndex": 0 },
+      { "type": "what", "question": "何がおこった?", "options": ["ねこをたすけた", "火をけした", "木をうえた"], "correctIndex": 0 },
+      { "type": "where", "question": "どこでおこった?", "options": ["高い木で", "車の中で", "家の屋根で"], "correctIndex": 0 },
+      { "type": "when", "question": "いつおこった?", "options": ["お昼に", "夜あけに", "よなかに"], "correctIndex": 0 }
+    ],
+    "factCheck": {
+      "statement": "ねこは高いところがこわくてこわがっていた。",
+      "isFact": false,
+      "explanation": "これはそうぞうだよ。ねこが高い木にいたのはわかるけど、なぜなのか、どう感じていたかはだれも言っていないんだ。"
+    }
+  },
+  {
+    "id": "nr-tartarugas-praia",
+    "emoji": "🐢",
+    "facts": "👧👦 こどもたちのグループ。 🏖️ ビーチで。 🌅 夕日のときに。 🐢 赤ちゃんウミガメをはなした。",
+    "questions": [
+      { "type": "who", "question": "このニュースのしゅじんこうはだれ?", "options": ["こどもたちのグループ", "かいぞくのグループ", "りょうしのグループ"], "correctIndex": 0 },
+      { "type": "what", "question": "何がおこった?", "options": ["赤ちゃんウミガメをはなした", "すなのお城をつくった", "貝がらをひろった"], "correctIndex": 0 },
+      { "type": "where", "question": "どこでおこった?", "options": ["ビーチで", "山で", "川で"], "correctIndex": 0 },
+      { "type": "when", "question": "いつおこった?", "options": ["夕日のときに", "日の出のときに", "よなかに"], "correctIndex": 0 }
+    ],
+    "factCheck": {
+      "statement": "ウミガメたちは自由になってとてもよろこんでいた。",
+      "isFact": false,
+      "explanation": "これはそうぞうだよ。ウミガメははなたれたけど、動物がどう感じているかはだれにもほんとうにはわからないんだ。"
+    }
+  },
+  {
+    "id": "nr-cenouras-campo",
+    "emoji": "🥕",
+    "facts": "👨‍🌾 のうか。 🌾 畑で。 🌧️ 雨のあとに。 🥕 にんじんをたくさんしゅうかくした。",
+    "questions": [
+      { "type": "who", "question": "このニュースのしゅじんこうはだれ?", "options": ["のうか", "りょうし", "パイロット"], "correctIndex": 0 },
+      { "type": "what", "question": "何がおこった?", "options": ["にんじんをたくさんしゅうかくした", "花をうえた", "たまごをうった"], "correctIndex": 0 },
+      { "type": "where", "question": "どこでおこった?", "options": ["畑で", "市場で", "町で"], "correctIndex": 0 },
+      { "type": "when", "question": "いつおこった?", "options": ["雨のあとに", "雪あらしのあいだに", "冬の前に"], "correctIndex": 0 }
+    ],
+    "factCheck": {
+      "statement": "のうかはちょうど200本のにんじんをしゅうかくした。",
+      "isFact": false,
+      "explanation": "これはそうぞうだよ。ニュースは「たくさんのにんじん」と言っているけど、正確な数は言っていない。200本かどうかはわからないんだ。"
+    }
+  },
+  {
+    "id": "nr-astronauta-espaco",
+    "emoji": "🛰️",
+    "facts": "👩‍🚀 うちゅうひこうし。 🛰️ うちゅうステーションで。 📅 月曜日に。 📸 地球の写真をとった。",
+    "questions": [
+      { "type": "who", "question": "このニュースのしゅじんこうはだれ?", "options": ["うちゅうひこうし", "バレエダンサー", "けんきゅうしつのかがくしゃ"], "correctIndex": 0 },
+      { "type": "what", "question": "何がおこった?", "options": ["地球の写真をとった", "月に着陸した", "ロケットをなおした"], "correctIndex": 0 },
+      { "type": "where", "question": "どこでおこった?", "options": ["うちゅうステーションで", "空港で", "地球のてんもんだいで"], "correctIndex": 0 },
+      { "type": "when", "question": "いつおこった?", "options": ["月曜日に", "クリスマスに", "大みそかに"], "correctIndex": 0 }
+    ],
+    "factCheck": {
+      "statement": "うちゅうひこうしが月曜日に地球の写真をとった。",
+      "isFact": true,
+      "explanation": "これは事実だよ。ニュースにそのまま書かれていて、そうぞうする必要はないんだ。"
+    }
+  },
+  {
+    "id": "nr-biblioteca-escola",
+    "emoji": "📚",
+    "facts": "👨‍🏫 先生。 🏫 きょうしつで。 📅 金曜日に。 📚 あたらしい図書室をひらいた。",
+    "questions": [
+      { "type": "who", "question": "このニュースのしゅじんこうはだれ?", "options": ["先生", "べつの町の図書館員", "有名な作家"], "correctIndex": 0 },
+      { "type": "what", "question": "何がおこった?", "options": ["あたらしい図書室をひらいた", "本を書いた", "コンサートをきかくした"], "correctIndex": 0 },
+      { "type": "where", "question": "どこでおこった?", "options": ["きょうしつで", "たいいくかんで", "校庭で"], "correctIndex": 0 },
+      { "type": "when", "question": "いつおこった?", "options": ["金曜日に", "夏休みに", "クリスマスの日に"], "correctIndex": 0 }
+    ],
+    "factCheck": {
+      "statement": "先生が金曜日にきょうしつであたらしい図書室をひらいた。",
+      "isFact": true,
+      "explanation": "これは事実だよ。ニュースに書いてあるとおりで、なにもそうぞうする必要はないんだ。"
+    }
+  },
+  {
+    "id": "nr-panificaria-bairro",
+    "emoji": "🍞",
+    "facts": "👨‍🍳 パンやさん。 🏘️ 町内で。 🌅 夜明けに。 🍞 パンを100こつくった。",
+    "questions": [
+      { "type": "who", "question": "このニュースのとうじょうじんぶつはだれ?", "options": ["パンやさん", "しょうぼうし", "お医者さん"], "correctIndex": 0 },
+      { "type": "what", "question": "何がおこった?", "options": ["パンを100こつくった", "かべをぬった", "車をなおした"], "correctIndex": 0 },
+      { "type": "where", "question": "どこでおこった?", "options": ["町内で", "ビーチで", "空港で"], "correctIndex": 0 },
+      { "type": "when", "question": "いつおこった?", "options": ["夜明けに", "よなかに", "夏に"], "correctIndex": 0 }
+    ],
+    "factCheck": {
+      "statement": "パンは町内でいちばんおいしかった。",
+      "isFact": false,
+      "explanation": "これはそうぞうだよ。100このパンをつくったのはわかるけど、だれも味くらべをしていないんだ。"
+    }
+  },
+  {
+    "id": "nr-ciclista-montanha",
+    "emoji": "🚵",
+    "facts": "🚵 サイクリスト。 ⛰️ 山で。 🕓 午後4時に。 🏁 レースをおえた。",
+    "questions": [
+      { "type": "who", "question": "このニュースのとうじょうじんぶつはだれ?", "options": ["サイクリスト", "水泳選手", "ランナー"], "correctIndex": 0 },
+      { "type": "what", "question": "何がおこった?", "options": ["レースをおえた", "自転車をなくした", "湖におちた"], "correctIndex": 0 },
+      { "type": "where", "question": "どこでおこった?", "options": ["山で", "川で", "町で"], "correctIndex": 0 },
+      { "type": "when", "question": "いつおこった?", "options": ["午後4時に", "夜あけに", "よなかに"], "correctIndex": 0 }
+    ],
+    "factCheck": {
+      "statement": "サイクリストはレースのあととてもつかれていた。",
+      "isFact": false,
+      "explanation": "これはそうぞうだよ。レースをおえたのはわかるけど、あとでどう感じたかはだれも言っていないんだ。"
+    }
+  },
+  {
+    "id": "nr-pintora-mural",
+    "emoji": "🎨",
+    "facts": "🧑‍🎨 がか。 🏫 学校のかべで。 📅 土曜日に。 🎨 カラフルなかべ絵をかいた。",
+    "questions": [
+      { "type": "who", "question": "このニュースのとうじょうじんぶつはだれ?", "options": ["がか", "先生", "かしゅ"], "correctIndex": 0 },
+      { "type": "what", "question": "何がおこった?", "options": ["カラフルなかべ絵をかいた", "ベンチをつくった", "花をうえた"], "correctIndex": 0 },
+      { "type": "where", "question": "どこでおこった?", "options": ["学校のかべで", "公園で", "ビーチで"], "correctIndex": 0 },
+      { "type": "when", "question": "いつおこった?", "options": ["土曜日に", "クリスマス休みに", "新学期のはじめの日に"], "correctIndex": 0 }
+    ],
+    "factCheck": {
+      "statement": "がかは土曜日に学校のかべにカラフルなかべ絵をかいた。",
+      "isFact": true,
+      "explanation": "これは事実だよ。ニュースにそのまま書かれていて、なにもそうぞうする必要はないんだ。"
+    }
+  },
+  {
+    "id": "nr-vendedor-flores",
+    "emoji": "💐",
+    "facts": "🧑‍🌾 花売りの人。 🏙️ 町の広場で。 🕘 午前9時に。 💐 花たばをぜんぶ売った。",
+    "questions": [
+      { "type": "who", "question": "このニュースのとうじょうじんぶつはだれ?", "options": ["花売りの人", "新聞売りの人", "ろじょうの音楽家"], "correctIndex": 0 },
+      { "type": "what", "question": "何がおこった?", "options": ["花たばをぜんぶ売った", "植物に水をあげた", "自転車を買った"], "correctIndex": 0 },
+      { "type": "where", "question": "どこでおこった?", "options": ["町の広場で", "びょういんで", "駅で"], "correctIndex": 0 },
+      { "type": "when", "question": "いつおこった?", "options": ["午前9時に", "夕日のときに", "よなかに"], "correctIndex": 0 }
+    ],
+    "factCheck": {
+      "statement": "その花は町でいちばんきれいだった。",
+      "isFact": false,
+      "explanation": "これはそうぞうだよ。花たばをぜんぶ売ったのはわかるけど、だれも町のほかの花とくらべていないんだ。"
+    }
+  },
+  {
+    "id": "nr-cientista-laboratorio",
+    "emoji": "🔬",
+    "facts": "👩‍🔬 かがくしゃ。 🏢 けんきゅうしつで。 📅 水曜日に。 🔬 あたらしい種類の岩をはっけんした。",
+    "questions": [
+      { "type": "who", "question": "このニュースのとうじょうじんぶつはだれ?", "options": ["かがくしゃ", "きしゃ", "かんごし"], "correctIndex": 0 },
+      { "type": "what", "question": "何がおこった?", "options": ["あたらしい種類の岩をはっけんした", "ロボットをつくった", "病気をなおした"], "correctIndex": 0 },
+      { "type": "where", "question": "どこでおこった?", "options": ["けんきゅうしつで", "はくぶつかんで", "山で"], "correctIndex": 0 },
+      { "type": "when", "question": "いつおこった?", "options": ["水曜日に", "たんじょう日に", "休みのあいだに"], "correctIndex": 0 }
+    ],
+    "factCheck": {
+      "statement": "かがくしゃは水曜日にけんきゅうしつであたらしい種類の岩をはっけんした。",
+      "isFact": true,
+      "explanation": "これは事実だよ。ニュースに書いてあるとおりで、なにもそうぞうする必要はないんだ。"
+    }
+  },
+  {
+    "id": "nr-musico-rua",
+    "emoji": "🎸",
+    "facts": "🧑‍🎤 音楽家。 🚏 バスていで。 🕔 午後5時に。 🎸 3曲えんそうした。",
+    "questions": [
+      { "type": "who", "question": "このニュースのとうじょうじんぶつはだれ?", "options": ["音楽家", "運転手", "けいさつかん"], "correctIndex": 0 },
+      { "type": "what", "question": "何がおこった?", "options": ["3曲えんそうした", "バスにのりおくれた", "チケットを売った"], "correctIndex": 0 },
+      { "type": "where", "question": "どこでおこった?", "options": ["バスていで", "えいがかんで", "スーパーで"], "correctIndex": 0 },
+      { "type": "when", "question": "いつおこった?", "options": ["午後5時に", "あさはやくに", "お昼に"], "correctIndex": 0 }
+    ],
+    "factCheck": {
+      "statement": "みんなは音楽家の曲がとても気にいった。",
+      "isFact": false,
+      "explanation": "これはそうぞうだよ。3曲えんそうしたのはわかるけど、みんながどう思ったかはだれも言っていないんだ。"
+    }
+  },
+  {
+    "id": "nr-veterinario-clinica",
+    "emoji": "🐾",
+    "facts": "👨‍⚕️ じゅうい。 🏥 動物びょういんで。 🕚 午前11時に。 🐾 子犬をちりょうした。",
+    "questions": [
+      { "type": "who", "question": "このニュースのとうじょうじんぶつはだれ?", "options": ["じゅうい", "しかい", "びようし"], "correctIndex": 0 },
+      { "type": "what", "question": "何がおこった?", "options": ["子犬をちりょうした", "かみをきった", "屋根をなおした"], "correctIndex": 0 },
+      { "type": "where", "question": "どこでおこった?", "options": ["動物びょういんで", "学校で", "スタジアムで"], "correctIndex": 0 },
+      { "type": "when", "question": "いつおこった?", "options": ["午前11時に", "夜に", "休みの日に"], "correctIndex": 0 }
+    ],
+    "factCheck": {
+      "statement": "子犬はじゅういをとてもこわがっていた。",
+      "isFact": false,
+      "explanation": "これはそうぞうだよ。ちりょうされたのはわかるけど、子犬がどう感じたかはだれも言っていないんだ。"
+    }
+  },
+  {
+    "id": "nr-piloto-aviao",
+    "emoji": "✈️",
+    "facts": "👩‍✈️ パイロット。 ✈️ 空港で。 🕖 午前7時に。 ✈️ 飛行機を安全に着陸させた。",
+    "questions": [
+      { "type": "who", "question": "このニュースのとうじょうじんぶつはだれ?", "options": ["パイロット", "先生", "お医者さん"], "correctIndex": 0 },
+      { "type": "what", "question": "何がおこった?", "options": ["飛行機を安全に着陸させた", "にもつをなくした", "チケットを買った"], "correctIndex": 0 },
+      { "type": "where", "question": "どこでおこった?", "options": ["空港で", "駅で", "港で"], "correctIndex": 0 },
+      { "type": "when", "question": "いつおこった?", "options": ["午前7時に", "夕日のときに", "よなかに"], "correctIndex": 0 }
+    ],
+    "factCheck": {
+      "statement": "パイロットは午前7時に空港で飛行機を安全に着陸させた。",
+      "isFact": true,
+      "explanation": "これは事実だよ。ニュースにそのまま書かれていて、なにもそうぞうする必要はないんだ。"
+    }
+  },
+  {
+    "id": "nr-apicultora-quintal",
+    "emoji": "🐝",
+    "facts": "👩‍🌾 ようほうか。 🏡 うら庭で。 🕑 午後2時に。 🍯 あたらしいはちみつをあつめた。",
+    "questions": [
+      { "type": "who", "question": "このニュースのとうじょうじんぶつはだれ?", "options": ["ようほうか", "にわし", "さいほうし"], "correctIndex": 0 },
+      { "type": "what", "question": "何がおこった?", "options": ["あたらしいはちみつをあつめた", "トマトをうえた", "家をたてた"], "correctIndex": 0 },
+      { "type": "where", "question": "どこでおこった?", "options": ["うら庭で", "森で", "市場で"], "correctIndex": 0 },
+      { "type": "when", "question": "いつおこった?", "options": ["午後2時に", "夜明けに", "冬に"], "correctIndex": 0 }
+    ],
+    "factCheck": {
+      "statement": "あたらしいはちみつは、いままでつくった中でいちばんあまかった。",
+      "isFact": false,
+      "explanation": "これはそうぞうだよ。あたらしいはちみつをあつめたのはわかるけど、だれもあじみやくらべをしていないんだ。"
+    }
+  },
+  {
+    "id": "nr-carteiro-bicicleta",
+    "emoji": "📮",
+    "facts": "🚴 ゆうびんはいたつの人。 🏘️ メインどおりで。 🕙 午前10時に。 📬 手紙を30つうとどけた。",
+    "questions": [
+      { "type": "who", "question": "このニュースのとうじょうじんぶつはだれ?", "options": ["ゆうびんはいたつの人", "のうか", "りょうし"], "correctIndex": 0 },
+      { "type": "what", "question": "何がおこった?", "options": ["手紙を30つうとどけた", "自転車をなおした", "新聞を売った"], "correctIndex": 0 },
+      { "type": "where", "question": "どこでおこった?", "options": ["メインどおりで", "畑で", "ビーチで"], "correctIndex": 0 },
+      { "type": "when", "question": "いつおこった?", "options": ["午前10時に", "よなかに", "しゅうまつに"], "correctIndex": 0 }
+    ],
+    "factCheck": {
+      "statement": "ゆうびんはいたつの人は午前10時にメインどおりで手紙を30つうとどけた。",
+      "isFact": true,
+      "explanation": "これは事実だよ。ニュースに書いてあるとおりで、なにもそうぞうする必要はないんだ。"
+    }
+  },
+  {
+    "id": "nr-nadadora-piscina",
+    "emoji": "🏊",
+    "facts": "🏊‍♀️ 水泳選手。 🏊 市民プールで。 🕕 午前6時に。 🥇 あたらしい記録をだした。",
+    "questions": [
+      { "type": "who", "question": "このニュースのとうじょうじんぶつはだれ?", "options": ["水泳選手", "たいそう選手", "テニス選手"], "correctIndex": 0 },
+      { "type": "what", "question": "何がおこった?", "options": ["あたらしい記録をだした", "ゴーグルをなくした", "じゅぎょうをおしえた"], "correctIndex": 0 },
+      { "type": "where", "question": "どこでおこった?", "options": ["市民プールで", "たいいくかんで", "海で"], "correctIndex": 0 },
+      { "type": "when", "question": "いつおこった?", "options": ["午前6時に", "夕方に", "休みの日に"], "correctIndex": 0 }
+    ],
+    "factCheck": {
+      "statement": "水泳選手は記録をだしてとてもほこらしかった。",
+      "isFact": false,
+      "explanation": "これはそうぞうだよ。記録をだしたのはわかるけど、どう感じたかはだれも言っていないんだ。"
+    }
+  },
+  {
+    "id": "nr-marceneiro-oficina",
+    "emoji": "🪑",
+    "facts": "👨‍🔧 だいく。 🏚️ こうぼうで。 🕓 午後4時に。 🪑 あたらしいいすをつくった。",
+    "questions": [
+      { "type": "who", "question": "このニュースのとうじょうじんぶつはだれ?", "options": ["だいく", "でんきこうじの人", "がか"], "correctIndex": 0 },
+      { "type": "what", "question": "何がおこった?", "options": ["あたらしいいすをつくった", "かべをぬった", "でんきをなおした"], "correctIndex": 0 },
+      { "type": "where", "question": "どこでおこった?", "options": ["こうぼうで", "庭で", "となりの人のガレージで"], "correctIndex": 0 },
+      { "type": "when", "question": "いつおこった?", "options": ["午後4時に", "夜明けに", "日曜日の夜に"], "correctIndex": 0 }
+    ],
+    "factCheck": {
+      "statement": "あたらしいいすはとてもすわりごこちがよかった。",
+      "isFact": false,
+      "explanation": "これはそうぞうだよ。いすをつくったのはわかるけど、だれもすわってすわりごこちを言っていないんだ。"
+    }
+  }
+]
