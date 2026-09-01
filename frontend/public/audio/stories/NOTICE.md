@@ -16,11 +16,11 @@ quota) on 2026-09-01.
   `stories/pt/<id>.mp3` / `completeTales`'s tales share the same
   `stories/pt/<id>.mp3` naming (both content sets narrate into this one
   `stories/pt/` folder, keyed by story id).
-- Only Portuguese is covered. Every other language, and any story id with
-  no generated file (see the coverage note recorded in the commit that
-  added this audio), falls back to the browser's built-in Web Speech API
-  (`speechSynthesis`), same as before — `Stories.jsx` automatically prefers
-  a real audio file when one exists and falls back otherwise, so nothing is
-  ever silently broken.
+- Coverage: all 130 short stories (`stories.pt.json`) and all 10 complete
+  tales (`completeTales.pt.json`) have real Portuguese narration — 140
+  files total. Every other language falls back to the browser's built-in
+  Web Speech API (`speechSynthesis`), same as before — `Stories.jsx`
+  automatically prefers a real audio file when one exists and falls back
+  otherwise, so nothing is ever silently broken.
 - `.wav` output from Piper was converted to `.mp3` with `ffmpeg` (via the
   `imageio-ffmpeg` bundled binary) to keep file sizes reasonable for a PWA.

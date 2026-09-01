@@ -11,8 +11,8 @@ quota) on 2026-09-01.
   22,050Hz), downloaded from the `rhasspy/piper-voices` repository on
   Hugging Face. Model license: **CC0** (public domain), so the generated
   audio has no usage restrictions.
-- One file per item, across all three categories (lengalengas,
-  travalínguas, rimas), keyed by item id: `rhymes/pt/<id>.mp3`.
+- Coverage: all 56 items, across all three categories (20 lengalengas, 15
+  travalínguas, 21 rimas), each as `rhymes/pt/<id>.mp3`.
 - Only Portuguese is covered. Every other language falls back to the
   browser's built-in Web Speech API (`speechSynthesis`), same as before —
   `Rhymes.jsx` automatically prefers a real audio file when one exists and
