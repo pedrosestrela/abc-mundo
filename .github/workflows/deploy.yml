@@ -1,8 +1,15 @@
 name: Deploy
 
+# The Fly.io "deploy" job below only runs on a manual dispatch now -- the
+# account has an unpaid invoice (Fly no longer has a truly free tier without
+# a card on file) and the app moved to GitHub Pages (see deploy-pages.yml)
+# instead of paying it. Lint & Test still runs on every push as CI signal.
+# Re-enable by adding `push: branches: [main]` back once/if Fly billing is
+# sorted and this deploy target is wanted again.
 on:
   push:
     branches: [main]
+  workflow_dispatch:
 
 jobs:
   test:
@@ -44,6 +51,7 @@ jobs:
   deploy:
     name: Deploy to Fly.io
     needs: test
+    if: github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     concurrency: deploy-group
     steps:

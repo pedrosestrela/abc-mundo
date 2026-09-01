@@ -222,7 +222,7 @@ export default function ParentDashboard() {
 
       <div className="no-print">
         <ReminderSection t={t} langCode={i18n.language} />
-        <SyncSection t={t} langCode={i18n.language} />
+        {import.meta.env.VITE_ENABLE_SYNC !== "false" && <SyncSection t={t} langCode={i18n.language} />}
       </div>
 
       {!profile ? (

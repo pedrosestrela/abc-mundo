@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>ABC Mundo</title>
+    <!--
+      GitHub Pages is pure static hosting — a direct link or a page refresh
+      on any client-side route (e.g. /abc-mundo/writing) has no server-side
+      rewrite to fall back to index.html, so GitHub serves this 404.html
+      instead. Standard "spa-github-pages" trick: encode the intended path
+      into a query string and redirect to the real index.html, which then
+      restores it via the matching script in index.html before react-router
+      ever sees a mismatched URL.
+    -->
+    <script>
+      var base = "/abc-mundo/";
+      var path = location.pathname.slice(base.length);
+      location.replace(base + "?spa-redirect=" + encodeURIComponent(path) + location.search.replace(/^\?/, "&") + location.hash);
+    </script>
+  </head>
+  <body></body>
+</html>

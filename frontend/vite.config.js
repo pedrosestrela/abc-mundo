@@ -1,7 +1,14 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
+// GitHub Pages serves this as a project site (https://<user>.github.io/abc-mundo/),
+// so every asset URL needs the "/abc-mundo/" prefix -- set via GH_PAGES=true in
+// the Pages deploy workflow. The Fly.io build (still the default) keeps base "/"
+// since that container serves the app at its own domain root.
+const base = process.env.GH_PAGES === "true" ? "/abc-mundo/" : "/";
+
 export default defineConfig({
+  base,
   plugins: [react()],
   server: {
     proxy: {

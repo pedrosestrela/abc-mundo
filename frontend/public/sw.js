@@ -34,7 +34,11 @@ self.addEventListener("fetch", (event) => {
           }
           return response;
         })
-        .catch(() => caches.match(request).then((cached) => cached || caches.match("/index.html")))
+        .catch(() =>
+          caches
+            .match(request)
+            .then((cached) => cached || caches.match(new URL("index.html", self.registration.scope).pathname))
+        )
     );
     return;
   }
