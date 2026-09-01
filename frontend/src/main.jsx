@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import "./i18n/index.js";
 import App from "./App.jsx";
+import AccessGate from "./components/AccessGate.jsx";
 import "./styles.css";
 
 // Second half of the 404.html SPA-redirect trick (see public/404.html):
@@ -31,10 +32,16 @@ import "./styles.css";
 // ("/" for the Fly.io build, "/abc-mundo/" for the Pages build).
 const basename = import.meta.env.BASE_URL.replace(/\/$/, "");
 
+// Only the public GitHub Pages build shows the access gate (see
+// AccessGate.jsx) -- set via VITE_ENABLE_GATE=true in deploy-pages.yml.
+const gateEnabled = import.meta.env.VITE_ENABLE_GATE === "true";
+
+const app = (
+  <BrowserRouter basename={basename}>
+    <App />
+  </BrowserRouter>
+);
+
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <BrowserRouter basename={basename}>
-      <App />
-    </BrowserRouter>
-  </React.StrictMode>
+  <React.StrictMode>{gateEnabled ? <AccessGate>{app}</AccessGate> : app}</React.StrictMode>
 );

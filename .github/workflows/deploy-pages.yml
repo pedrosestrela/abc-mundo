@@ -36,6 +36,7 @@ jobs:
         env:
           GH_PAGES: "true"
           VITE_ENABLE_SYNC: "false"
+          VITE_ENABLE_GATE: "true"
         run: npm run build
 
       - uses: actions/upload-pages-artifact@v3
