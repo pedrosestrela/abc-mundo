@@ -148,21 +148,21 @@ export default function Alphabet() {
       <div className="letter-card">
         <div className="letter-forms">
           <div className="letter-form">
-            <div className="letter-big">
+            <div className="letter-big letter-come-alive" key={"mother-print-" + motherLetter.upper}>
               <span>{motherLetter.upper}</span>
               <span className="letter-lower">{motherLetter.lower}</span>
             </div>
             <div className="letter-form-label">{t("modules.printForm")}</div>
           </div>
           <div className="letter-form">
-            <div className="letter-big font-handwritten">
+            <div className="letter-big font-handwritten letter-come-alive" key={"mother-hand-" + motherLetter.upper}>
               <span>{motherLetter.upper}</span>
               <span className="letter-lower">{motherLetter.lower}</span>
             </div>
             <div className="letter-form-label">{t("modules.handwrittenForm")}</div>
           </div>
         </div>
-        <div className="letter-emoji">{motherLetter.emoji}</div>
+        <div className="letter-emoji letter-emoji-alive" key={"mother-emoji-" + motherLetter.upper}>{motherLetter.emoji}</div>
         <div className="letter-word">
           {motherLetter.exampleWord}
           <SpeakButton text={motherLetter.pronunciationHint} langCode={pair.mother} />
@@ -175,21 +175,21 @@ export default function Alphabet() {
       <div className="letter-card secondary">
         <div className="letter-forms">
           <div className="letter-form">
-            <div className="letter-big">
+            <div className="letter-big letter-come-alive" key={"secondary-print-" + secondaryLetter.upper}>
               <span>{secondaryLetter.upper}</span>
               <span className="letter-lower">{secondaryLetter.lower}</span>
             </div>
             <div className="letter-form-label">{t("modules.printForm")}</div>
           </div>
           <div className="letter-form">
-            <div className="letter-big font-handwritten">
+            <div className="letter-big font-handwritten letter-come-alive" key={"secondary-hand-" + secondaryLetter.upper}>
               <span>{secondaryLetter.upper}</span>
               <span className="letter-lower">{secondaryLetter.lower}</span>
             </div>
             <div className="letter-form-label">{t("modules.handwrittenForm")}</div>
           </div>
         </div>
-        <div className="letter-emoji">{secondaryLetter.emoji}</div>
+        <div className="letter-emoji letter-emoji-alive" key={"secondary-emoji-" + secondaryLetter.upper}>{secondaryLetter.emoji}</div>
         <div className="letter-word">
           {secondaryLetter.exampleWord}
           <SpeakButton text={secondaryLetter.pronunciationHint} langCode={pair.secondary} />
