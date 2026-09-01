@@ -8,6 +8,19 @@ import HelpButton from "../components/HelpButton.jsx";
 import MascotBubble from "../components/mascots/MascotBubble.jsx";
 import TeachBackPrompt from "../components/TeachBackPrompt.jsx";
 import RelatedLinks from "../components/RelatedLinks.jsx";
+import { speakSequence } from "../speech.js";
+import { playRealAudio } from "../audioPlayback.js";
+
+// Real recorded-voice narration for whys (Piper TTS, generated offline and
+// bundled as static files — see frontend/public/audio/whys/NOTICE.md). Each
+// file narrates question + quickAnswer + moreAnswer (+ experiment). Only
+// covers Portuguese so far; falls back to speaking the currently-revealed
+// tiers in sequence via Web Speech when no file exists.
+const REAL_AUDIO = import.meta.glob("/public/audio/whys/*/*.mp3", { eager: true, query: "?url", import: "default" });
+function realAudioUrl(whyId, langCode) {
+  const key = `/public/audio/whys/${langCode}/${whyId}.mp3`;
+  return REAL_AUDIO[key] || null;
+}
 
 function shuffle(arr) {
   const copy = [...arr];
@@ -98,7 +111,27 @@ export default function Whys() {
   const [explored, setExplored] = useState(() => getExploredWhys(profile?.name));
   const [openId, setOpenId] = useState(null);
   const [tiers, setTiers] = useState({}); // { [whyId]: { more: bool, experiment: bool } }
+  const [readingWhole, setReadingWhole] = useState(null); // whyId currently playing, or null
   const cardRefs = React.useRef({});
+
+  // Reads a whole "why" card front-to-back (question + quick answer + more
+  // answer + experiment, in the mother language). Prefers a real recorded
+  // audio file when available; falls back to speaking the tiers that are
+  // currently revealed on screen, in sequence, via Web Speech otherwise.
+  async function playWholeWhy(why, tierState) {
+    if (readingWhole) return;
+    setReadingWhole(why.id);
+    const audioUrl = realAudioUrl(why.id, pair.mother);
+    if (audioUrl) {
+      await playRealAudio(audioUrl);
+    } else {
+      const texts = [why.question, why.quickAnswer];
+      if (tierState.more) texts.push(why.moreAnswer);
+      if (tierState.experiment && why.experiment) texts.push(why.experiment);
+      await speakSequence(texts, pair.mother);
+    }
+    setReadingWhole(null);
+  }
 
   function handleOpen(why) {
     const alreadyOpen = openId === why.id;
@@ -180,6 +213,15 @@ export default function Whys() {
               </button>
               {isOpen && (
                 <div className="why-detail">
+                  <button
+                    type="button"
+                    className="big-btn"
+                    onClick={() => playWholeWhy(why, tierState)}
+                    disabled={readingWhole === why.id}
+                  >
+                    ▶️ {t("modules.play")}
+                    {realAudioUrl(why.id, pair.mother) ? " 🎙️" : ""}
+                  </button>
                   <div className="why-tier">
                     <strong>⚡ {t("modules.whysQuickAnswer")}</strong>
                     <div className="why-tier-header">

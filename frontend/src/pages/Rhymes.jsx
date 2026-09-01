@@ -5,6 +5,30 @@ import { getLangPair, getProfile, pingProgress } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
 import HelpButton from "../components/HelpButton.jsx";
 import MascotBubble from "../components/mascots/MascotBubble.jsx";
+import { playRealAudio } from "../audioPlayback.js";
+
+// Real recorded-voice narration for rhymes (Piper TTS, generated offline
+// and bundled as static files — see frontend/public/audio/rhymes/NOTICE.md).
+// Only covers Portuguese so far; falls back to the regular SpeakButton
+// (Web Speech) when no file exists for a given item+language.
+const REAL_AUDIO = import.meta.glob("/public/audio/rhymes/*/*.mp3", { eager: true, query: "?url", import: "default" });
+function realAudioUrl(itemId, langCode) {
+  const key = `/public/audio/rhymes/${langCode}/${itemId}.mp3`;
+  return REAL_AUDIO[key] || null;
+}
+
+// A SpeakButton look-alike that plays a real recorded audio file when one
+// is available for this item+language, falling back to the plain
+// SpeakButton (Web Speech synthesis) otherwise.
+function RhymeSpeakButton({ item, langCode }) {
+  const audioUrl = realAudioUrl(item.id, langCode);
+  if (!audioUrl) return <SpeakButton text={item.text} langCode={langCode} />;
+  return (
+    <button type="button" className="speak-btn" onClick={() => playRealAudio(audioUrl)} aria-label="play">
+      🔊🎙️
+    </button>
+  );
+}
 
 const TABS = [
   { key: "lengalengas", emoji: "🎈", label: "rhymesTabLengalengas" },
@@ -82,11 +106,11 @@ export default function Rhymes() {
               <h2>{s.title}</h2>
               <div className="story-page-row">
                 <span className="story-page-text">{s.text}</span>
-                <SpeakButton text={s.text} langCode={pair.secondary} />
+                <RhymeSpeakButton item={s} langCode={pair.secondary} />
               </div>
               <div className="story-page-row secondary">
                 <span className="story-page-text">{m.text}</span>
-                <SpeakButton text={m.text} langCode={pair.mother} />
+                <RhymeSpeakButton item={m} langCode={pair.mother} />
               </div>
             </div>
           );

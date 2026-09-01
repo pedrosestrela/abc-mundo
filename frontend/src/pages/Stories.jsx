@@ -6,6 +6,18 @@ import MascotBubble from "../components/mascots/MascotBubble.jsx";
 import SpeakButton from "../components/SpeakButton.jsx";
 import HelpButton from "../components/HelpButton.jsx";
 import { playDrumPad } from "../music.js";
+import { speakSequence } from "../speech.js";
+import { playRealAudio, segmentIndexForProgress } from "../audioPlayback.js";
+
+// Real recorded-voice narration for stories (Piper TTS, generated offline
+// and bundled as static files — see frontend/public/audio/stories/NOTICE.md).
+// Only covers Portuguese so far, so lookups fall back to speechSynthesis
+// (read page-by-page via speakSequence) when no file exists.
+const REAL_AUDIO = import.meta.glob("/public/audio/stories/*/*.mp3", { eager: true, query: "?url", import: "default" });
+function realAudioUrl(storyId, langCode) {
+  const key = `/public/audio/stories/${langCode}/${storyId}.mp3`;
+  return REAL_AUDIO[key] || null;
+}
 
 // A small rotation of pleasant page backgrounds + a decorative "scene" emoji
 // pair, cycled by page index so the book feels illustrated rather than a
@@ -56,6 +68,7 @@ export default function Stories() {
   const [pageIndex, setPageIndex] = useState(0);
   const [activeWord, setActiveWord] = useState(-1);
   const [poked, setPoked] = useState(false);
+  const [readingWhole, setReadingWhole] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
@@ -119,6 +132,27 @@ export default function Stories() {
 
   function goNext(totalPages) {
     setPageIndex((i) => Math.min(totalPages - 1, i + 1));
+  }
+
+  // Reads the whole open story front-to-back, turning pages as it goes.
+  // Prefers a real recorded-voice audio file (one per story+language) when
+  // available, syncing page turns to elapsed playback time; falls back to
+  // speaking each page's text in sequence via Web Speech otherwise.
+  async function playWholeStory(story, langCode, pages) {
+    if (readingWhole) return;
+    setReadingWhole(true);
+    const audioUrl = realAudioUrl(story.id, langCode);
+    const texts = pages.map((p) => p.text);
+    if (audioUrl) {
+      await playRealAudio(audioUrl, {
+        onProgress: (frac) => setPageIndex(segmentIndexForProgress(texts, frac)),
+      });
+    } else {
+      await speakSequence(texts, langCode, {
+        onLineStart: (idx) => setPageIndex(idx),
+      });
+    }
+    setReadingWhole(false);
   }
 
   function pokeDeco() {
@@ -215,6 +249,15 @@ export default function Stories() {
             {t("modules.storiesPage")} {pageIndex + 1} {t("modules.storiesPageOf")} {totalPages}
           </div>
           <div className="story-nav">
+            <button
+              type="button"
+              className="big-btn"
+              onClick={() => playWholeStory(secondaryStory, pair.secondary, secondaryStory.pages)}
+              disabled={readingWhole}
+            >
+              ▶️ {t("modules.play")}
+              {realAudioUrl(secondaryStory.id, pair.secondary) ? " 🎙️" : ""}
+            </button>
             <button type="button" className="big-btn" onClick={goPrev} disabled={pageIndex === 0}>
               ◀ {t("modules.storiesPrev")}
             </button>

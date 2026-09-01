@@ -7,6 +7,7 @@ import { startBackgroundMusic, stopBackgroundMusic } from "../music.js";
 import Illustration from "../components/Illustrations.jsx";
 import HelpButton from "../components/HelpButton.jsx";
 import MascotBubble from "../components/mascots/MascotBubble.jsx";
+import { playRealAudio, segmentIndexForProgress } from "../audioPlayback.js";
 
 // Real recorded-voice audio for songs (ElevenLabs, generated offline and
 // bundled as static files — see frontend/public/audio/songs/NOTICE.md).
@@ -48,37 +49,7 @@ export default function Songs() {
 
   useEffect(() => stopBackgroundMusic, []);
 
-async function playRealAudio(url, song, key, setPlaying) {
-    return new Promise((resolve) => {
-      const audio = new Audio(url);
-      // No word-boundary events from a recorded file, so lines are
-      // highlighted proportionally to elapsed time weighted by line
-      // length — an approximation, not a real karaoke sync, but still
-      // gives a "follow along" cue during real sung/narrated playback.
-      const weights = song.lyrics.map((l) => Math.max(l.length, 8));
-      const total = weights.reduce((a, b) => a + b, 0);
-      audio.addEventListener("timeupdate", () => {
-        if (!audio.duration) return;
-        const elapsedFrac = audio.currentTime / audio.duration;
-        let acc = 0;
-        let lineIndex = 0;
-        for (let i = 0; i < weights.length; i++) {
-          acc += weights[i];
-          if (elapsedFrac <= acc / total) {
-            lineIndex = i;
-            break;
-          }
-          lineIndex = i;
-        }
-        setPlaying((prev) => (prev && prev.key === key ? { ...prev, lineIndex, wordIndex: -1 } : prev));
-      });
-      audio.addEventListener("ended", resolve);
-      audio.addEventListener("error", resolve);
-      audio.play().catch(resolve);
-    });
-  }
-
-  async function handlePlay(song, langCode) {
+async function handlePlay(song, langCode) {
     const profile = getProfile();
     const key = `${song.id}:${langCode}`;
     const audioUrl = realAudioUrl(song.id, langCode);
@@ -90,7 +61,16 @@ async function playRealAudio(url, song, key, setPlaying) {
     setPlaying({ key, lineIndex: 0, wordIndex: -1 });
     startBackgroundMusic();
     if (audioUrl) {
-      await playRealAudio(audioUrl, song, key, setPlaying);
+      // No word-boundary events from a recorded file, so lines are
+      // highlighted proportionally to elapsed time weighted by line
+      // length — an approximation, not a real karaoke sync, but still
+      // gives a "follow along" cue during real sung/narrated playback.
+      await playRealAudio(audioUrl, {
+        onProgress: (frac) => {
+          const lineIndex = segmentIndexForProgress(song.lyrics, frac);
+          setPlaying((prev) => (prev && prev.key === key ? { ...prev, lineIndex, wordIndex: -1 } : prev));
+        },
+      });
     } else {
       await speakSequence(song.lyrics, langCode, {
         onLineStart: (lineIndex) => setPlaying({ key, lineIndex, wordIndex: -1 }),
