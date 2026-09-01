@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { getPhonics } from "../content/index.js";
+import { SUPPORTED_LANGUAGES } from "../content/languages.js";
 import { getLangPair, getProfile, getDifficultyTier, recordSkillEvent, pingProgress } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
 import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
@@ -112,9 +113,17 @@ export default function Phonics() {
   const profile = getProfile();
   const tier = getDifficultyTier(profile?.age);
   const config = TIER_CONFIG[tier] || TIER_CONFIG[1];
-  const words = getPhonics(pair.mother);
 
   const [game, setGame] = useState("initial");
+  const [practiceLang, setPracticeLang] = useState("mother"); // "mother" | "secondary"
+
+  const hasSecondary = !!pair.secondary && pair.secondary !== pair.mother;
+  const activeCode = practiceLang === "secondary" && hasSecondary ? pair.secondary : pair.mother;
+  const effectivePair = useMemo(() => ({ ...pair, mother: activeCode }), [pair, activeCode]);
+  const words = getPhonics(activeCode);
+
+  const motherLangInfo = SUPPORTED_LANGUAGES.find((l) => l.code === pair.mother);
+  const secondaryLangInfo = SUPPORTED_LANGUAGES.find((l) => l.code === pair.secondary);
 
   const helpTextByGame = {
     initial: t("modules.phonicsHelpInitial"),
@@ -135,6 +144,25 @@ export default function Phonics() {
       <MascotBubble character="lumi" reaction="curious" langCode={pair.mother}>
         {t("mascotLines.phonicsOpening")}
       </MascotBubble>
+
+      {hasSecondary && (
+        <div className="phonics-tabs phonics-lang-toggle">
+          <button
+            type="button"
+            className={"phonics-tab" + (practiceLang === "mother" ? " selected" : "")}
+            onClick={() => setPracticeLang("mother")}
+          >
+            {motherLangInfo?.flag || "🗣️"} {motherLangInfo?.label || pair.mother}
+          </button>
+          <button
+            type="button"
+            className={"phonics-tab" + (practiceLang === "secondary" ? " selected" : "")}
+            onClick={() => setPracticeLang("secondary")}
+          >
+            {secondaryLangInfo?.flag || "🌍"} {secondaryLangInfo?.label || pair.secondary}
+          </button>
+        </div>
+      )}
 
       <div className="phonics-tabs">
         <button type="button" className={"phonics-tab" + (game === "initial" ? " selected" : "")} onClick={() => setGame("initial")}>
@@ -168,11 +196,15 @@ export default function Phonics() {
       </div>
 
       {game === "initial" && (
-        <InitialSoundGame rounds={initialRounds} pair={pair} profile={profile} t={t} />
+        <InitialSoundGame key={`initial-${activeCode}`} rounds={initialRounds} pair={effectivePair} profile={profile} t={t} />
       )}
-      {game === "rhyme" && <RhymeGame rounds={rhymeRounds} pair={pair} profile={profile} t={t} />}
-      {game === "syllables" && <SyllableGame rounds={syllableRounds} pair={pair} profile={profile} t={t} />}
-      {game === "oddOneOut" && <OddOneOutGame rounds={oddRounds} pair={pair} profile={profile} t={t} />}
+      {game === "rhyme" && <RhymeGame key={`rhyme-${activeCode}`} rounds={rhymeRounds} pair={effectivePair} profile={profile} t={t} />}
+      {game === "syllables" && (
+        <SyllableGame key={`syllables-${activeCode}`} rounds={syllableRounds} pair={effectivePair} profile={profile} t={t} />
+      )}
+      {game === "oddOneOut" && (
+        <OddOneOutGame key={`odd-${activeCode}`} rounds={oddRounds} pair={effectivePair} profile={profile} t={t} />
+      )}
     </div>
   );
 }
