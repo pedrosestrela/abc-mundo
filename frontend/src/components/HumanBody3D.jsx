@@ -28,11 +28,13 @@ const ORGAN_POSITIONS_3D = {
   brain: { x: 0, y: 1.62, z: 0.12 },
   heart: { x: -0.12, y: 1.05, z: 0.24 },
   lungs: { x: 0.14, y: 1.08, z: 0.22 },
-  skeleton: { x: 0, y: 0.55, z: 0.05 },
-  muscles: { x: -0.3, y: 0.95, z: 0.1 },
-  digestion: { x: 0, y: 0.82, z: 0.24 },
+  stomach: { x: 0.12, y: 0.88, z: 0.22 },
+  liver: { x: -0.14, y: 0.85, z: 0.2 },
+  kidneys: { x: 0.18, y: 0.8, z: 0.05 },
+  intestines: { x: 0, y: 0.75, z: 0.22 },
+  bladder: { x: 0, y: 0.6, z: 0.15 },
   skin: { x: 0.32, y: 0.9, z: 0.05 },
-  blood: { x: 0, y: 0.15, z: 0.05 },
+  blood: { x: -0.32, y: 0.9, z: 0.05 },
 };
 
 // Small canvas-texture emoji sprite so each organ marker reads clearly at a
@@ -132,7 +134,12 @@ export default function HumanBody3D({ organs, activeId, exploredIds, onSelect })
     // --- Organ markers: emoji sprites, raycast-clickable ---
     const markerGroup = new Group();
     const markerEntries = [];
-    for (const organ of organsRef.current) {
+    // Only "organ" items get a 3D hotspot on the figure itself (bones and
+    // tendons don't map onto sensible body-surface positions the same way
+    // and are already reachable as tappable chips in HumanBody.jsx below
+    // the 3D view), same split as the 2D BodyDiagram.
+    const organItems = organsRef.current.filter((o) => (o.category || "organ") === "organ");
+    for (const organ of organItems) {
       const pos = ORGAN_POSITIONS_3D[organ.id] || { x: 0, y: 0.9, z: 0.2 };
       const explored = exploredRef.current.includes(organ.id);
       const { sprite, material, texture } = makeEmojiSprite(organ.emoji, explored);

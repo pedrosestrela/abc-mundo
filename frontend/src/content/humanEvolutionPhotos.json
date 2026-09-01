@@ -1,0 +1,90 @@
+{
+  "ancestral-comum": {
+    "photo": "/images/human-evolution/ancestral-comum.jpg",
+    "width": 598,
+    "height": 900,
+    "credit": {
+      "author": "Ryan Somma",
+      "license": "CC BY-SA 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Skulls_of_our_Ancestors.jpg"
+    },
+    "alt": "Crânios de vários ancestrais humanos lado a lado"
+  },
+  "australopithecus": {
+    "photo": "/images/human-evolution/australopithecus.jpg",
+    "width": 373,
+    "height": 900,
+    "credit": {
+      "author": "120 (Wikimedia Commons)",
+      "license": "CC BY 2.5",
+      "url": "https://commons.wikimedia.org/wiki/File:Reconstruction_of_the_fossil_skeleton_of_%22Lucy%22_the_Australopithecus_afarensis.jpg"
+    },
+    "alt": "Reconstrução do esqueleto fóssil de Lucy, Australopithecus afarensis"
+  },
+  "homo-habilis": {
+    "photo": "/images/human-evolution/homo-habilis.jpg",
+    "width": 900,
+    "height": 675,
+    "credit": {
+      "author": "Daderot",
+      "license": "CC0",
+      "url": "https://commons.wikimedia.org/wiki/File:Homo_habilis_skull_-_Naturmuseum_Senckenberg_-_DSC02097.JPG"
+    },
+    "alt": "Crânio de Homo habilis, museu Senckenberg"
+  },
+  "homo-erectus": {
+    "photo": "/images/human-evolution/homo-erectus.jpg",
+    "width": 900,
+    "height": 675,
+    "credit": {
+      "author": "Rept0n1x",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Homo_erectus_skull_cast,_World_Museum_Liverpool.JPG"
+    },
+    "alt": "Réplica do crânio de Homo erectus, World Museum Liverpool"
+  },
+  "neandertais": {
+    "photo": "/images/human-evolution/neandertais.jpg",
+    "width": 600,
+    "height": 900,
+    "credit": {
+      "author": "Werner Ustorf",
+      "license": "CC BY-SA 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Neanderthal_man_reconstruction,_Natural_History_Museum,_London.jpg"
+    },
+    "alt": "Reconstrução de um Neandertal, Museu de História Natural de Londres"
+  },
+  "homo-sapiens": {
+    "photo": "/images/human-evolution/homo-sapiens.jpg",
+    "width": 675,
+    "height": 900,
+    "credit": {
+      "author": "Rept0n1x",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Homo_sapiens_sapiens_(Cro-Magnon_Man),_World_Museum_Liverpool_(1).JPG"
+    },
+    "alt": "Crânio de Homo sapiens (Homem de Cro-Magnon), World Museum Liverpool"
+  },
+  "arte-e-cultura": {
+    "photo": "/images/human-evolution/arte-e-cultura.jpg",
+    "width": 720,
+    "height": 472,
+    "credit": {
+      "author": "Desconhecido (fotografia de domínio público)",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Lascaux_painting.jpg"
+    },
+    "alt": "Pintura rupestre da gruta de Lascaux"
+  },
+  "agricultura": {
+    "photo": "/images/human-evolution/agricultura.jpg",
+    "width": 900,
+    "height": 600,
+    "credit": {
+      "author": "A.Aida88",
+      "license": "CC0",
+      "url": "https://commons.wikimedia.org/wiki/File:Neolithic_period1.jpg"
+    },
+    "alt": "Artefactos e ferramentas do período Neolítico"
+  }
+}

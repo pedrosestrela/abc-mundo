@@ -23,6 +23,34 @@ import {
   IllustrationPowerPlant,
   IllustrationNuclearPlant,
 } from "../components/illustrations/techHistory.jsx";
+import techHistoryPhotos from "../content/techHistoryPhotos.json";
+
+// Real, offline-bundled photos (Wikimedia Commons, license-verified) for a
+// subset of the 15 stages — not all of them have one yet. Falls back to
+// nothing (the emoji/illustration content still renders on its own) when
+// absent for a given stage id. Mirrors CountryPhotoStrip in World.jsx.
+function TechPhoto({ stageId, alt }) {
+  const entry = techHistoryPhotos[stageId];
+  if (!entry) return null;
+  return (
+    <div className="world-photo-strip">
+      <figure className="world-photo">
+        <img
+          src={entry.photo}
+          alt={entry.alt || alt}
+          width={entry.width || 400}
+          height={entry.height || 300}
+          loading="lazy"
+        />
+        {entry.credit && (
+          <figcaption className="world-photo-credit">
+            📷 {entry.credit.author} · {entry.credit.license}
+          </figcaption>
+        )}
+      </figure>
+    </div>
+  );
+}
 
 // Picks which hand-authored illustration best matches a given stage id, one
 // mapping per topic so every card gets a relevant visual.
@@ -360,6 +388,7 @@ export default function TechHistory() {
                       <Illustration size={96} />
                     </div>
                   )}
+                  <TechPhoto stageId={stage.id} alt={stage.title} />
                   <p className="mission-text">
                     {stage.description}
                     <SpeakButton text={stage.description} langCode={pair.mother} />

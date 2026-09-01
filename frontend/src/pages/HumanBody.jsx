@@ -32,12 +32,45 @@ const ORGAN_POSITIONS = {
   brain: { x: 160, y: 48 },
   heart: { x: 137, y: 148 },
   lungs: { x: 183, y: 150 },
-  skeleton: { x: 160, y: 260 },
-  muscles: { x: 95, y: 190 },
-  digestion: { x: 160, y: 195 },
+  stomach: { x: 175, y: 185 },
+  liver: { x: 145, y: 195 },
+  kidneys: { x: 190, y: 205 },
+  intestines: { x: 160, y: 210 },
+  bladder: { x: 160, y: 235 },
   skin: { x: 225, y: 190 },
-  blood: { x: 160, y: 330 },
+  blood: { x: 95, y: 190 },
 };
+
+// A tappable image/emoji "chip" used for the Bones and Tendons sections,
+// which don't map onto specific spots on the small 2D silhouette the way
+// organs do — grouped as a simple labelled grid instead, reusing the same
+// onSelect/explored/active interaction as the diagram hotspots.
+function BodyChip({ item, active, explored, onSelect }) {
+  return (
+    <button
+      type="button"
+      className={"body-chip" + (active ? " active" : "") + (explored ? " explored" : "")}
+      onClick={() => onSelect(item)}
+    >
+      {item.image ? (
+        <img
+          className="body-chip-img"
+          src={item.image}
+          alt={item.imageAlt || item.label}
+          loading="lazy"
+          onError={(e) => {
+            e.currentTarget.style.display = "none";
+          }}
+        />
+      ) : (
+        <span className="body-chip-emoji" aria-hidden="true">
+          {item.emoji}
+        </span>
+      )}
+      <span className="body-chip-label">{item.label}</span>
+    </button>
+  );
+}
 
 function BodyDiagram({ organs, activeId, exploredIds, onSelect }) {
   return (
@@ -56,7 +89,9 @@ function BodyDiagram({ organs, activeId, exploredIds, onSelect }) {
       <rect x="136" y="212" width="20" height="120" rx="10" className="body-silhouette-part" />
       <rect x="164" y="212" width="20" height="120" rx="10" className="body-silhouette-part" />
 
-      {organs.map((organ) => {
+      {organs
+        .filter((organ) => (organ.category || "organ") === "organ")
+        .map((organ) => {
         const pos = ORGAN_POSITIONS[organ.id] || { x: 160, y: 200 };
         const active = organ.id === activeId;
         const explored = exploredIds.includes(organ.id);
@@ -106,6 +141,8 @@ function BodyTab({ pair, profile, tier, t }) {
   }
 
   const explainText = active ? (tier <= 1 ? active.shortExplain : active.detailedExplain) : "";
+  const bones = organs.filter((o) => o.category === "bone");
+  const tendons = organs.filter((o) => o.category === "tendon");
 
   return (
     <>
@@ -124,6 +161,7 @@ function BodyTab({ pair, profile, tier, t }) {
       </div>
 
       <div className="game-card">
+        <h3 className="body-category-heading">{t("modules.humanBodyOrgans")}</h3>
         {view === "simple" ? (
           <BodyDiagram organs={organs} activeId={activeId} exploredIds={explored} onSelect={handleSelect} />
         ) : (
@@ -132,11 +170,56 @@ function BodyTab({ pair, profile, tier, t }) {
           </Suspense>
         )}
 
+        {bones.length > 0 && (
+          <>
+            <h3 className="body-category-heading">{t("modules.humanBodyBones")}</h3>
+            <div className="body-chip-grid">
+              {bones.map((item) => (
+                <BodyChip
+                  key={item.id}
+                  item={item}
+                  active={item.id === activeId}
+                  explored={explored.includes(item.id)}
+                  onSelect={handleSelect}
+                />
+              ))}
+            </div>
+          </>
+        )}
+
+        {tendons.length > 0 && (
+          <>
+            <h3 className="body-category-heading">{t("modules.humanBodyTendons")}</h3>
+            <div className="body-chip-grid">
+              {tendons.map((item) => (
+                <BodyChip
+                  key={item.id}
+                  item={item}
+                  active={item.id === activeId}
+                  explored={explored.includes(item.id)}
+                  onSelect={handleSelect}
+                />
+              ))}
+            </div>
+          </>
+        )}
+
         {active && (
           <div className="science-explanation">
             <div className="mission-badge computing-topic-badge">
               {active.emoji} {active.label}
             </div>
+            {active.image && (
+              <img
+                className="body-explanation-img"
+                src={active.image}
+                alt={active.imageAlt || active.label}
+                loading="lazy"
+                onError={(e) => {
+                  e.currentTarget.style.display = "none";
+                }}
+              />
+            )}
             <p className="game-result">
               {explainText}
               <SpeakButton text={explainText} langCode={pair.mother} />

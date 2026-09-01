@@ -13,6 +13,34 @@ import {
   IllustrationFire,
   IllustrationCaveArt,
 } from "../components/illustrations/humanEvolution.jsx";
+import humanEvolutionPhotos from "../content/humanEvolutionPhotos.json";
+
+// Real, offline-bundled photos (Wikimedia Commons, license-verified) for a
+// subset of the 9 stages — not all of them have one yet. Falls back to
+// nothing (the emoji/illustration content still renders on its own) when
+// absent for a given stage id. Mirrors CountryPhotoStrip in World.jsx.
+function EvolutionPhoto({ stageId, alt }) {
+  const entry = humanEvolutionPhotos[stageId];
+  if (!entry) return null;
+  return (
+    <div className="world-photo-strip">
+      <figure className="world-photo">
+        <img
+          src={entry.photo}
+          alt={entry.alt || alt}
+          width={entry.width || 400}
+          height={entry.height || 300}
+          loading="lazy"
+        />
+        {entry.credit && (
+          <figcaption className="world-photo-credit">
+            📷 {entry.credit.author} · {entry.credit.license}
+          </figcaption>
+        )}
+      </figure>
+    </div>
+  );
+}
 
 // Picks which of the 5 human-evolution illustrations best fits a given
 // timeline stage, so every stage still gets a relevant visual without
@@ -274,6 +302,7 @@ export default function HumanEvolution() {
                       <div className="history-era-illustration">
                         <Illustration size={96} />
                       </div>
+                      <EvolutionPhoto stageId={stage.id} alt={stage.title} />
                       <p className="mission-text">
                         {stage.description}
                         <SpeakButton text={stage.description} langCode={pair.mother} />

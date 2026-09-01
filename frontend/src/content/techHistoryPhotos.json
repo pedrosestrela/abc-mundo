@@ -1,0 +1,156 @@
+{
+  "carruagens": {
+    "photo": "/images/tech-history/carruagens.jpg",
+    "width": 428,
+    "height": 197,
+    "credit": {
+      "author": "Unattributed",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Horse-drawn_carriage,_early_19th_century.jpg"
+    },
+    "alt": "Charrete puxada por cavalos do século XIX"
+  },
+  "primeiros-prototipos": {
+    "photo": "/images/tech-history/primeiros-prototipos.jpg",
+    "width": 675,
+    "height": 900,
+    "credit": {
+      "author": "Damian B Oh",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:1886_Benz_Patent-Motorwagen_Replica_(1).jpg"
+    },
+    "alt": "Réplica do Benz Patent-Motorwagen de 1886, o primeiro automóvel"
+  },
+  "ford-t": {
+    "photo": "/images/tech-history/ford-t.jpg",
+    "width": 900,
+    "height": 598,
+    "credit": {
+      "author": "Berthold Werner",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Ford_Model_T_BW_2018-07-15_13-17-32.jpg"
+    },
+    "alt": "Ford Modelo T, o primeiro carro produzido em massa"
+  },
+  "carros-eletricos": {
+    "photo": "/images/tech-history/carros-eletricos.jpg",
+    "width": 900,
+    "height": 600,
+    "credit": {
+      "author": "Steven Baltakatei Sandoval",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Electric_car_charging_station_equipment,_Vancouver,_WA,_March_2020.jpg"
+    },
+    "alt": "Carro elétrico a carregar numa estação de carregamento"
+  },
+  "velas-candeeiros": {
+    "photo": "/images/tech-history/velas-candeeiros.jpg",
+    "width": 900,
+    "height": 841,
+    "credit": {
+      "author": "Lisafern",
+      "license": "CC0",
+      "url": "https://commons.wikimedia.org/wiki/File:Antique_Oil_Lanterns_Public_Domain.jpg"
+    },
+    "alt": "Candeeiros antigos a óleo"
+  },
+  "primeiras-experiencias": {
+    "photo": "/images/tech-history/primeiras-experiencias.jpg",
+    "width": 900,
+    "height": 900,
+    "credit": {
+      "author": "Rama",
+      "license": "CC BY-SA 3.0 fr",
+      "url": "https://commons.wikimedia.org/wiki/File:Volta_battery-MHS_373-IMG_3840-gradient.jpg"
+    },
+    "alt": "Pilha de Volta, uma das primeiras experiências com eletricidade"
+  },
+  "lampada-eletrica": {
+    "photo": "/images/tech-history/lampada-eletrica.jpg",
+    "width": 614,
+    "height": 900,
+    "credit": {
+      "author": "Thomas Edison (reimpressão de Norris Peters Co.)",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Light_bulb_Edison_2.jpg"
+    },
+    "alt": "Desenho histórico da lâmpada elétrica de Edison"
+  },
+  "eletrificacao": {
+    "photo": "/images/tech-history/eletrificacao.jpg",
+    "width": 900,
+    "height": 598,
+    "credit": {
+      "author": "Dimitǎr Boevski",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Transmission_towers_of_overhead_power_lines_near_Skravena,_Bulgaria_01.jpg"
+    },
+    "alt": "Torres de linhas de transmissão elétrica"
+  },
+  "led-hoje": {
+    "photo": "/images/tech-history/led-hoje.jpg",
+    "width": 900,
+    "height": 512,
+    "credit": {
+      "author": "Geoffrey.landis (Wikipédia em inglês)",
+      "license": "CC BY 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:LED_bulbs.jpg"
+    },
+    "alt": "Lâmpadas LED modernas"
+  },
+  "hidroeletrica": {
+    "photo": "/images/tech-history/hidroeletrica.jpg",
+    "width": 900,
+    "height": 660,
+    "credit": {
+      "author": "Egor Kovarsky",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Bratsk_Hydroelectric_Power_Station_in_october.jpg"
+    },
+    "alt": "Central hidroelétrica de Bratsk"
+  },
+  "eolica": {
+    "photo": "/images/tech-history/eolica.jpg",
+    "width": 900,
+    "height": 600,
+    "credit": {
+      "author": "Matthew T Rader",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Roscoe_Wind_Farm_in_West_Texas.jpg"
+    },
+    "alt": "Parque eólico com turbinas de vento no Texas"
+  },
+  "solar": {
+    "photo": "/images/tech-history/solar.jpg",
+    "width": 900,
+    "height": 506,
+    "credit": {
+      "author": "China News Service",
+      "license": "CC BY 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Solar_Panel_Array_in_Laos_Laowotaiyangban.jpg"
+    },
+    "alt": "Painéis solares fotovoltaicos"
+  },
+  "termica": {
+    "photo": "/images/tech-history/termica.jpg",
+    "width": 900,
+    "height": 675,
+    "credit": {
+      "author": "Arnoldius",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Coal_power_plant_Herne_snow.jpg"
+    },
+    "alt": "Central termoelétrica a carvão"
+  },
+  "nuclear": {
+    "photo": "/images/tech-history/nuclear.jpg",
+    "width": 900,
+    "height": 600,
+    "credit": {
+      "author": "Vsatinet",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Cooling_towers_of_a_nuclear_power_plant.jpg"
+    },
+    "alt": "Torres de arrefecimento de uma central nuclear"
+  }
+}
