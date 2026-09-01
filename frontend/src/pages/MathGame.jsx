@@ -397,7 +397,7 @@ function QuizRunner({ rounds, renderPrompt, moduleEvent, skillId, profile, pair,
 // they believe they've reached the right count, then confirms. Tap-only
 // (no HTML5 drag-and-drop) since real drag-and-drop is unreliable on
 // touch/iOS Safari for this age group.
-function CountingModeQuiz({ rounds, moduleEvent, skillId, profile, t, onDone }) {
+function CountingModeQuiz({ rounds, moduleEvent, skillId, profile, pair, t, onDone }) {
   const [step, setStep] = useState(0);
   const [score, setScore] = useState(0);
   const [removed, setRemoved] = useState(() => new Set());
@@ -540,6 +540,11 @@ function CountingModeQuiz({ rounds, moduleEvent, skillId, profile, t, onDone }) 
       >
         {t("modules.mathConfirm")} ✅
       </button>
+      {feedback && pair && (
+        <MascotBubble character="nina" reaction={feedback === "correct" ? "happy" : "encouraging"} langCode={pair.mother}>
+          {pickLine(t(feedback === "correct" ? "mascotLines.mathCorrect" : "mascotLines.mathEncouraging", { returnObjects: true }))}
+        </MascotBubble>
+      )}
     </div>
   );
 }
@@ -548,7 +553,7 @@ function CountingModeQuiz({ rounds, moduleEvent, skillId, profile, t, onDone }) 
 // of `perGroup` icons each (e.g. "3 groups of 4 apples") and taps every icon
 // in turn to build a running total, making "multiplication is repeated
 // addition of equal groups" visible instead of an abstract fact to recall.
-function MultiplicationCountingQuiz({ rounds, moduleEvent, skillId, profile, t, onDone }) {
+function MultiplicationCountingQuiz({ rounds, moduleEvent, skillId, profile, pair, t, onDone }) {
   const [step, setStep] = useState(0);
   const [score, setScore] = useState(0);
   const [tapped, setTapped] = useState(() => new Set());
@@ -661,6 +666,11 @@ function MultiplicationCountingQuiz({ rounds, moduleEvent, skillId, profile, t, 
       >
         {t("modules.mathConfirm")} ✅
       </button>
+      {feedback && pair && (
+        <MascotBubble character="nina" reaction={feedback === "correct" ? "happy" : "encouraging"} langCode={pair.mother}>
+          {pickLine(t(feedback === "correct" ? "mascotLines.mathCorrect" : "mascotLines.mathEncouraging", { returnObjects: true }))}
+        </MascotBubble>
+      )}
     </div>
   );
 }
@@ -669,7 +679,7 @@ function MultiplicationCountingQuiz({ rounds, moduleEvent, skillId, profile, t, 
 // in a pool and `friends` buckets. Tap an object, then tap a bucket, to
 // distribute items one at a time (partitive division) until every object is
 // placed, revealing "each friend gets N" - no drag-and-drop, tap-only.
-function DivisionCountingQuiz({ rounds, moduleEvent, skillId, profile, t, onDone }) {
+function DivisionCountingQuiz({ rounds, moduleEvent, skillId, profile, pair, t, onDone }) {
   const [step, setStep] = useState(0);
   const [score, setScore] = useState(0);
   // assignments[i] = bucket index the i-th item was placed into, or null
@@ -829,6 +839,11 @@ function DivisionCountingQuiz({ rounds, moduleEvent, skillId, profile, t, onDone
       >
         {t("modules.mathConfirm")} ✅
       </button>
+      {feedback && pair && (
+        <MascotBubble character="nina" reaction={feedback === "correct" ? "happy" : "encouraging"} langCode={pair.mother}>
+          {pickLine(t(feedback === "correct" ? "mascotLines.mathCorrect" : "mascotLines.mathEncouraging", { returnObjects: true }))}
+        </MascotBubble>
+      )}
     </div>
   );
 }
@@ -876,7 +891,7 @@ const BALLOON_ROUNDS = 8;
 // problem + a set of number options, reusing buildAddSubRounds) is instead
 // presented as gently bobbing balloons the child taps to pop. Pure CSS
 // animation on absolutely-positioned buttons, no canvas/engine needed.
-function BalloonGame({ rounds, profile, t, onDone }) {
+function BalloonGame({ rounds, profile, pair, t, onDone }) {
   const [step, setStep] = useState(0);
   const [score, setScore] = useState(0);
   const [popped, setPopped] = useState(() => new Set());
@@ -930,7 +945,9 @@ function BalloonGame({ rounds, profile, t, onDone }) {
     } else {
       setPopped((prev) => new Set(prev).add(idx));
       setWrongTries((c) => c + 1);
+      setFeedback("wrong");
       pingProgress({ profileName: profile?.name, module: "math_balloons", event: "quiz_wrong" });
+      setTimeout(() => setFeedback(null), 900);
     }
   }
 
@@ -980,6 +997,11 @@ function BalloonGame({ rounds, profile, t, onDone }) {
           );
         })}
       </div>
+      {feedback && pair && (
+        <MascotBubble character="nina" reaction={feedback === "correct" ? "happy" : "encouraging"} langCode={pair.mother}>
+          {pickLine(t(feedback === "correct" ? "mascotLines.mathCorrect" : "mascotLines.mathEncouraging", { returnObjects: true }))}
+        </MascotBubble>
+      )}
     </div>
   );
 }
@@ -1318,6 +1340,7 @@ export default function MathGame() {
           key={"balloons-" + seed}
           rounds={buildAddSubRounds(tier).slice(0, BALLOON_ROUNDS)}
           profile={profile}
+          pair={pair}
           t={t}
           onDone={restart}
         />

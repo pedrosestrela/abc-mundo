@@ -341,6 +341,7 @@ function BuildGame({ rounds, pair, profile, t }) {
   const [wrongIds, setWrongIds] = useState([]);
   const [wrongTaps, setWrongTaps] = useState(0);
   const [complete, setComplete] = useState(false);
+  const [feedback, setFeedback] = useState(null);
 
   if (rounds.length === 0) return <p>{t("modules.phonicsScore")}</p>;
   const round = rounds[roundIndex];
@@ -350,6 +351,7 @@ function BuildGame({ rounds, pair, profile, t }) {
     setWrongIds([]);
     setWrongTaps(0);
     setComplete(false);
+    setFeedback(null);
   }
 
   function handleTapChip(chip) {
@@ -361,6 +363,7 @@ function BuildGame({ rounds, pair, profile, t }) {
       if (next >= round.target.syllables.length) {
         const success = wrongTaps <= 1;
         setComplete(true);
+        setFeedback(success ? "correct" : "wrong");
         if (success) setScore((s) => s + 1);
         recordSkillEvent(profile?.name, "syllable-build", success);
         pingProgress({ profileName: profile?.name, module: "syllables", event: `build:${success ? "correct" : "wrong"}` });
@@ -413,6 +416,11 @@ function BuildGame({ rounds, pair, profile, t }) {
           </button>
         ))}
       </div>
+      {feedback && pair && (
+        <MascotBubble character="lumi" reaction={feedback === "correct" ? "happy" : "encouraging"} langCode={pair.mother}>
+          {pickLine(t(feedback === "correct" ? "mascotLines.syllablesCorrect" : "mascotLines.syllablesEncouraging", { returnObjects: true }))}
+        </MascotBubble>
+      )}
       {!done && (
         <p className="game-round-count">
           {roundIndex + 1} / {rounds.length}
@@ -434,6 +442,7 @@ function MissingGame({ rounds, pair, profile, t }) {
   const [wrongOptions, setWrongOptions] = useState([]);
   const [attempts, setAttempts] = useState(0);
   const [solved, setSolved] = useState(false);
+  const [feedback, setFeedback] = useState(null);
 
   if (rounds.length === 0) return <p>{t("modules.phonicsScore")}</p>;
   const round = rounds[roundIndex];
@@ -444,6 +453,7 @@ function MissingGame({ rounds, pair, profile, t }) {
     if (option === correct) {
       const success = attempts < 2;
       setSolved(true);
+      setFeedback("correct");
       if (success) setScore((s) => s + 1);
       recordSkillEvent(profile?.name, "syllable-missing", success);
       pingProgress({ profileName: profile?.name, module: "syllables", event: `missing:${success ? "correct" : "wrong"}` });
@@ -454,11 +464,14 @@ function MissingGame({ rounds, pair, profile, t }) {
           setWrongOptions([]);
           setAttempts(0);
           setSolved(false);
+          setFeedback(null);
         }
       }, 900);
     } else {
       setWrongOptions((w) => [...w, option]);
       setAttempts((n) => n + 1);
+      setFeedback("wrong");
+      setTimeout(() => setFeedback(null), 900);
     }
   }
 
@@ -469,6 +482,7 @@ function MissingGame({ rounds, pair, profile, t }) {
     setWrongOptions([]);
     setAttempts(0);
     setSolved(false);
+    setFeedback(null);
     setKey((k) => k + 1);
   }
 
@@ -499,6 +513,11 @@ function MissingGame({ rounds, pair, profile, t }) {
           </button>
         ))}
       </div>
+      {feedback && pair && (
+        <MascotBubble character="lumi" reaction={feedback === "correct" ? "happy" : "encouraging"} langCode={pair.mother}>
+          {pickLine(t(feedback === "correct" ? "mascotLines.syllablesCorrect" : "mascotLines.syllablesEncouraging", { returnObjects: true }))}
+        </MascotBubble>
+      )}
       {!done && (
         <p className="game-round-count">
           {roundIndex + 1} / {rounds.length}
@@ -519,6 +538,7 @@ function SplitGame({ rounds, pair, profile, t }) {
   const [wrongOptions, setWrongOptions] = useState([]);
   const [attempts, setAttempts] = useState(0);
   const [solved, setSolved] = useState(false);
+  const [feedback, setFeedback] = useState(null);
 
   if (rounds.length === 0) return <p>{t("modules.phonicsScore")}</p>;
   const round = rounds[roundIndex];
@@ -529,6 +549,7 @@ function SplitGame({ rounds, pair, profile, t }) {
     if (option === correct) {
       const success = attempts < 2;
       setSolved(true);
+      setFeedback("correct");
       if (success) setScore((s) => s + 1);
       recordSkillEvent(profile?.name, "syllable-split", success);
       pingProgress({ profileName: profile?.name, module: "syllables", event: `split:${success ? "correct" : "wrong"}` });
@@ -539,11 +560,14 @@ function SplitGame({ rounds, pair, profile, t }) {
           setWrongOptions([]);
           setAttempts(0);
           setSolved(false);
+          setFeedback(null);
         }
       }, 900);
     } else {
       setWrongOptions((w) => [...w, option]);
       setAttempts((n) => n + 1);
+      setFeedback("wrong");
+      setTimeout(() => setFeedback(null), 900);
     }
   }
 
@@ -554,6 +578,7 @@ function SplitGame({ rounds, pair, profile, t }) {
     setWrongOptions([]);
     setAttempts(0);
     setSolved(false);
+    setFeedback(null);
     setKey((k) => k + 1);
   }
 
@@ -578,6 +603,11 @@ function SplitGame({ rounds, pair, profile, t }) {
           </button>
         ))}
       </div>
+      {feedback && pair && (
+        <MascotBubble character="lumi" reaction={feedback === "correct" ? "happy" : "encouraging"} langCode={pair.mother}>
+          {pickLine(t(feedback === "correct" ? "mascotLines.syllablesCorrect" : "mascotLines.syllablesEncouraging", { returnObjects: true }))}
+        </MascotBubble>
+      )}
       {!done && (
         <p className="game-round-count">
           {roundIndex + 1} / {rounds.length}
@@ -598,6 +628,7 @@ function DigraphGame({ rounds, pair, profile, t }) {
   const [wrongOptions, setWrongOptions] = useState([]);
   const [attempts, setAttempts] = useState(0);
   const [solved, setSolved] = useState(false);
+  const [feedback, setFeedback] = useState(null);
 
   if (rounds.length === 0) return <p>{t("modules.phonicsScore")}</p>;
   const round = rounds[roundIndex];
@@ -608,6 +639,7 @@ function DigraphGame({ rounds, pair, profile, t }) {
     if (opt === round.correctChunk) {
       const success = attempts < 2;
       setSolved(true);
+      setFeedback("correct");
       if (success) setScore((s) => s + 1);
       recordSkillEvent(profile?.name, "syllable-digraph", success);
       pingProgress({ profileName: profile?.name, module: "syllables", event: `digraph:${success ? "correct" : "wrong"}` });
@@ -618,11 +650,14 @@ function DigraphGame({ rounds, pair, profile, t }) {
           setWrongOptions([]);
           setAttempts(0);
           setSolved(false);
+          setFeedback(null);
         }
       }, 900);
     } else {
       setWrongOptions((w) => [...w, key]);
       setAttempts((n) => n + 1);
+      setFeedback("wrong");
+      setTimeout(() => setFeedback(null), 900);
     }
   }
 
@@ -633,6 +668,7 @@ function DigraphGame({ rounds, pair, profile, t }) {
     setWrongOptions([]);
     setAttempts(0);
     setSolved(false);
+    setFeedback(null);
     setKey((k) => k + 1);
   }
 
@@ -660,6 +696,11 @@ function DigraphGame({ rounds, pair, profile, t }) {
           );
         })}
       </div>
+      {feedback && pair && (
+        <MascotBubble character="lumi" reaction={feedback === "correct" ? "happy" : "encouraging"} langCode={pair.mother}>
+          {pickLine(t(feedback === "correct" ? "mascotLines.syllablesCorrect" : "mascotLines.syllablesEncouraging", { returnObjects: true }))}
+        </MascotBubble>
+      )}
       {!done && (
         <p className="game-round-count">
           {roundIndex + 1} / {rounds.length}
