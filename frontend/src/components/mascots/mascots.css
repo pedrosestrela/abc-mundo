@@ -33,9 +33,72 @@
   60% { transform: translateY(1px); }
 }
 
+/* Reaction micro-animations — small, calm, and finite-feeling (short
+   durations, gentle easing) rather than fast or attention-grabbing. Applied
+   on the wrapping .mascot-bubble via MascotBubble's `reaction` prop, on top
+   of whatever mood-driven animation is already on .mascot-bob/.mascot-twinkle. */
+.mascot-reaction-curious .mascot-bubble__figure {
+  animation: mascot-curious-anim 1.8s ease-in-out infinite;
+  transform-origin: 50% 85%;
+}
+
+@keyframes mascot-curious-anim {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-4deg); }
+  75% { transform: rotate(4deg); }
+}
+
+.mascot-reaction-encouraging .mascot-bubble__figure {
+  animation: mascot-encouraging-anim 1.6s ease-in-out 1;
+}
+
+@keyframes mascot-encouraging-anim {
+  0%, 100% { transform: scale(1); }
+  40% { transform: scale(1.05); }
+  70% { transform: scale(0.99); }
+}
+
+.mascot-reaction-thinking .mascot-bubble__figure {
+  animation: mascot-thinking-anim 2.4s ease-in-out infinite;
+  transform-origin: 50% 85%;
+}
+
+@keyframes mascot-thinking-anim {
+  0%, 100% { transform: rotate(0deg) translateY(0); }
+  50% { transform: rotate(-2deg) translateY(-1px); }
+}
+
+.mascot-reaction-resting .mascot-bubble__figure {
+  opacity: 0.92;
+}
+
+.mascot-reaction-resting .mascot-bob {
+  animation: mascot-rest-anim 3.6s ease-in-out infinite;
+}
+
+@keyframes mascot-rest-anim {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-1.5px); }
+}
+
+.mascot-reaction-happy .mascot-bubble__figure {
+  animation: mascot-happy-pop-anim 0.7s ease-out 1;
+}
+
+@keyframes mascot-happy-pop-anim {
+  0% { transform: scale(1); }
+  35% { transform: scale(1.08) translateY(-3px); }
+  100% { transform: scale(1) translateY(0); }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .mascot-bob,
-  .mascot-twinkle {
+  .mascot-twinkle,
+  .mascot-reaction-curious .mascot-bubble__figure,
+  .mascot-reaction-encouraging .mascot-bubble__figure,
+  .mascot-reaction-thinking .mascot-bubble__figure,
+  .mascot-reaction-resting .mascot-bob,
+  .mascot-reaction-happy .mascot-bubble__figure {
     animation: none;
   }
 }
