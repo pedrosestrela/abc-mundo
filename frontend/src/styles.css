@@ -3507,6 +3507,22 @@ body {
   margin: 8px 0;
 }
 
+.mission-text.secondary {
+  color: var(--pink);
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.country-card-secondary {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 2px dashed var(--pink);
+}
+
+.country-card-secondary h3 {
+  color: var(--pink);
+}
+
 .mission-supervision {
   font-size: 0.85rem;
   color: #888;
@@ -3739,6 +3755,12 @@ body {
   font-size: 0.7rem;
   font-weight: bold;
   text-align: center;
+}
+
+.world-tile-name.secondary {
+  color: var(--pink);
+  font-weight: normal;
+  display: block;
 }
 
 .country-card {

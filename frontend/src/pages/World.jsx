@@ -111,6 +111,38 @@ function CountryPhotoStrip({ iso, t }) {
   );
 }
 
+// Renders the secondary-language sub-section for the currently selected
+// country card, mirroring how Reading.jsx/Alphabet.jsx present their
+// secondary-language block (mother tongue stays primary above).
+function CountrySecondaryCard({ selected, secondaryCountries, pair, t }) {
+  const secondary = secondaryCountries.find((c) => c.iso === selected.iso);
+  if (!secondary) return null;
+  return (
+    <div className="country-card-secondary">
+      <h3>
+        {secondary.name}
+        <SpeakButton text={secondary.name} langCode={pair.secondary} />
+      </h3>
+      <p className="mission-text secondary">
+        {secondary.fact}
+        <SpeakButton text={secondary.fact} langCode={pair.secondary} />
+      </p>
+      {secondary.tradition && (
+        <p className="mission-text secondary">
+          {t("modules.worldTradition")}: 🎉 {secondary.tradition}
+          <SpeakButton text={secondary.tradition} langCode={pair.secondary} />
+        </p>
+      )}
+      {secondary.climate && (
+        <p className="mission-text secondary">
+          {t("modules.worldClimate")}: 🌡️ {secondary.climate}
+          <SpeakButton text={secondary.climate} langCode={pair.secondary} />
+        </p>
+      )}
+    </div>
+  );
+}
+
 function shuffle(arr) {
   const copy = [...arr];
   for (let i = copy.length - 1; i > 0; i--) {
@@ -386,6 +418,7 @@ export default function World() {
   const profile = getProfile();
   const tier = getDifficultyTier(profile?.age);
   const [countries, setCountries] = useState([]);
+  const [secondaryCountries, setSecondaryCountries] = useState([]);
 
   useEffect(() => {
     let cancelled = false;
@@ -397,6 +430,17 @@ export default function World() {
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pair.mother]);
+
+  useEffect(() => {
+    let cancelled = false;
+    getCountries(pair.secondary).then((data) => {
+      if (!cancelled) setSecondaryCountries(data);
+    });
+    return () => {
+      cancelled = true;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pair.secondary]);
 
   const [tab, setTab] = useState("explore");
   const [selected, setSelected] = useState(null);
@@ -430,6 +474,7 @@ export default function World() {
 
   // --- Packing ("Faz a Mala") ---
   const packingDestinations = getPackingChallenges(pair.mother);
+  const packingDestinationsSecondary = getPackingChallenges(pair.secondary);
   const [packingDestId, setPackingDestId] = useState(null);
   const [packedItems, setPackedItems] = useState(new Set());
   const [packingChecked, setPackingChecked] = useState(false);
@@ -461,9 +506,11 @@ export default function World() {
 
   // --- Transport ("Como Chegamos Lá?") ---
   const transportScenarios = getTransportScenarios(pair.mother);
+  const transportScenariosSecondary = getTransportScenarios(pair.secondary);
   const [transportStep, setTransportStep] = useState(0);
   const [transportFeedback, setTransportFeedback] = useState(null);
   const transportScenario = transportScenarios[transportStep];
+  const transportScenarioSecondary = transportScenariosSecondary[transportStep];
   const transportFinished = transportStep >= transportScenarios.length;
 
   function answerTransport(mode) {
@@ -755,6 +802,12 @@ export default function World() {
                   )}
                 </p>
               )}
+              <CountrySecondaryCard
+                selected={selected}
+                secondaryCountries={secondaryCountries}
+                pair={pair}
+                t={t}
+              />
             </div>
           )}
         </>
@@ -868,6 +921,12 @@ export default function World() {
                   )}
                 </p>
               )}
+              <CountrySecondaryCard
+                selected={selected}
+                secondaryCountries={secondaryCountries}
+                pair={pair}
+                t={t}
+              />
             </div>
           )}
         </>
@@ -1081,12 +1140,26 @@ export default function World() {
 
       {tab === "packing" && packingDest && (
         <div className="game-card">
-          <div className="game-emoji">{packingDest.icon} {packingDest.name}</div>
+          <div className="game-emoji">
+            {packingDest.icon} {packingDest.name}
+            <SpeakButton text={packingDest.name} langCode={pair.mother} />
+          </div>
+          {(() => {
+            const secondaryDest = packingDestinationsSecondary.find((d) => d.id === packingDest.id);
+            return secondaryDest ? (
+              <p className="mission-text secondary">
+                {secondaryDest.icon} {secondaryDest.name}
+                <SpeakButton text={secondaryDest.name} langCode={pair.secondary} />
+              </p>
+            ) : null;
+          })()}
           <div className="world-grid">
-            {packingDest.items.map((it) => {
+            {packingDest.items.map((it, i) => {
               const picked = packedItems.has(it.id);
               const showFeedback = packingChecked;
               const good = showFeedback && picked === it.correct;
+              const secondaryDest = packingDestinationsSecondary.find((d) => d.id === packingDest.id);
+              const secondaryItem = secondaryDest?.items[i];
               return (
                 <button
                   key={it.id}
@@ -1101,6 +1174,9 @@ export default function World() {
                 >
                   <span className="world-tile-flag">{it.icon}</span>
                   <span className="world-tile-name">{it.name}</span>
+                  {secondaryItem && (
+                    <span className="world-tile-name secondary">{secondaryItem.name}</span>
+                  )}
                 </button>
               );
             })}
@@ -1135,6 +1211,12 @@ export default function World() {
             {transportScenario.prompt}
             <SpeakButton text={transportScenario.prompt} langCode={pair.mother} />
           </p>
+          {transportScenarioSecondary && (
+            <p className="mission-text secondary">
+              {transportScenarioSecondary.prompt}
+              <SpeakButton text={transportScenarioSecondary.prompt} langCode={pair.secondary} />
+            </p>
+          )}
           <div className="game-options">
             {transportScenario.modes.map((mode) => (
               <button
