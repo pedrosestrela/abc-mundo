@@ -186,8 +186,8 @@ export default function Mundos() {
     <div className="page mundos-page mundos-map">
       <h1 className="app-title">{t("mundos.heading")}</h1>
       <p className="mundos-map-intro">{t("mundos.mapIntro")}</p>
-      <MascotBubble character="lumi" mood="happy" langCode={pair.mother}>
-        {t("modules.mundosMascotIntro")}
+      <MascotBubble character="lumi" reaction="curious" langCode={pair.mother}>
+        {t("mascotLines.mundosFraming")}
       </MascotBubble>
 
       {GROUPS.map((group, index) => {

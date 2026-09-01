@@ -46,6 +46,8 @@ export default function Home() {
   }
 
   if (hubProfile) {
+    const hour = new Date().getHours();
+    const timeOfDayKey = hour < 12 ? "homeMorning" : hour < 19 ? "homeAfternoon" : "homeEvening";
     return (
       <div className="page home-page">
         <h1 className="app-title">ABC Mundo 🌍✨</h1>
@@ -53,6 +55,9 @@ export default function Home() {
           <HelpButton text={t("home.helpHub")} langCode={i18n.language} />
         </div>
         <h2>{t("home.hubGreeting", { name: hubProfile.name })}</h2>
+        <MascotBubble character="milo" reaction="happy" langCode={i18n.language}>
+          {t(`mascotLines.${timeOfDayKey}`, { name: hubProfile.name })}
+        </MascotBubble>
 
         <div className="reading-list">
           <button type="button" className="big-btn" onClick={() => navigate("/daily-mission")}>
