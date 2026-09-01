@@ -3804,13 +3804,91 @@ body {
   gap: 12px;
 }
 
+.globe-3d-wrap {
+  position: relative;
+  max-width: 640px;
+  margin: 0 auto 16px;
+}
+
 .globe-3d-container {
   max-width: 640px;
   height: 360px;
-  margin: 0 auto 16px;
+  margin: 0 auto;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  /* Let the browser hand pinch/drag gestures straight to the WebGL canvas
+     (globe.gl's OrbitControls) instead of intercepting them for native
+     page-zoom/scroll/pan — without this, pinch-to-zoom on a touch device
+     fights the browser instead of rotating/zooming the globe. */
+  touch-action: none;
+}
+
+/* Zoom +/- and recenter buttons overlaid on the globe: a touch-friendly
+   fallback to pinch-to-zoom, since young children's motor control makes a
+   precise two-finger pinch unreliable. Big, high-contrast, thumb-sized. */
+.globe-3d-controls {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 2;
+}
+
+.globe-3d-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  background: rgba(11, 16, 36, 0.72);
+  color: #fff;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.globe-3d-btn:hover,
+.globe-3d-btn:focus-visible {
+  background: rgba(11, 16, 36, 0.9);
+  transform: scale(1.08);
+}
+
+.globe-3d-btn:active {
+  transform: scale(0.95);
+}
+
+.globe-3d-btn-recenter {
+  font-size: 1.35rem;
+}
+
+/* The country-detail card shown right after a globe tap: same full data
+   (facts/photos/animal/tradition/etc.) as the Explore tab's card, styled a
+   touch richer/more "reveal" so tapping a country on the 3D globe feels at
+   least as rewarding as picking it from the flat list. */
+.country-card-globe {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid rgba(124, 92, 255, 0.25);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  animation: country-card-globe-reveal 0.32s ease;
+}
+
+@keyframes country-card-globe-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 .page-loading {
@@ -3836,23 +3914,31 @@ body {
    explorable countries on the sphere at a glance, with a distinct warmer
    color once a country has actually been visited. */
 .globe-marker {
+  /* Bigger, more forgiving tap target than the visible dot itself — small
+     hands/fingers don't need pixel-perfect precision to hit a country
+     marker. The container is the actual clickable hit-area (it carries the
+     click listener in Globe3D.jsx); the dot inside stays visually smaller
+     so the globe doesn't look cluttered with oversized circles. */
   position: relative;
-  width: 18px;
-  height: 18px;
+  width: 40px;
+  height: 40px;
   transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .globe-marker-dot {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 12px;
-  height: 12px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   transform: translate(-50%, -50%);
   background: #ffd23f;
-  border: 2px solid #fff;
-  box-shadow: 0 0 8px rgba(255, 210, 63, 0.9), 0 0 2px rgba(0, 0, 0, 0.4);
+  border: 3px solid #fff;
+  box-shadow: 0 0 10px rgba(255, 210, 63, 0.9), 0 0 3px rgba(0, 0, 0, 0.4);
   transition: background 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease;
 }
 
@@ -3860,8 +3946,8 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 12px;
-  height: 12px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   transform: translate(-50%, -50%);
   background: rgba(255, 210, 63, 0.55);

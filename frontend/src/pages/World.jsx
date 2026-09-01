@@ -664,7 +664,7 @@ export default function World() {
             <Globe3D countries={countries} visited={visited} onSelect={openCountry} />
           </Suspense>
           {selected && (
-            <div className="mission-card country-card">
+            <div className="mission-card country-card country-card-globe">
               <div className="mission-emoji">{selected.flag}</div>
               <h2>
                 {selected.name}

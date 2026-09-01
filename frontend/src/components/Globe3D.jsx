@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Globe from "globe.gl";
 import {
   MeshStandardMaterial,
@@ -210,6 +210,16 @@ function landFillColor(feature) {
 // zoomable Earth with shaded ocean + filled continents plus one clickable,
 // pulsing marker per explored country.
 
+// Zoom bounds expressed as globe.gl "altitude" (camera distance as a
+// multiple of the globe radius): low altitude = zoomed in close (good for
+// tapping one country), high altitude = zoomed out (see the whole planet).
+// Kept generous at both ends so a child can never zoom through the globe
+// nor lose it off-screen entirely.
+const MIN_ALTITUDE = 0.35;
+const MAX_ALTITUDE = 4.2;
+const DEFAULT_ALTITUDE = 2.2;
+const ZOOM_STEP_FACTOR = 0.68;
+
 export default function Globe3D({ countries, visited, onSelect }) {
   const containerRef = useRef(null);
   const globeRef = useRef(null);
@@ -218,6 +228,8 @@ export default function Globe3D({ countries, visited, onSelect }) {
   const countriesRef = useRef(countries);
   countriesRef.current = countries;
   const hoveredIdRef = useRef(null);
+  const autoRotateResumeTimerRef = useRef(null);
+  const [ready, setReady] = useState(false);
 
   useEffect(() => {
     if (!containerRef.current) return;
@@ -358,11 +370,46 @@ export default function Globe3D({ countries, visited, onSelect }) {
     }
     animateClouds();
 
-    globe.controls().autoRotate = true;
-    globe.controls().autoRotateSpeed = 0.6;
-    globe.controls().enableDamping = true;
-    globe.controls().dampingFactor = 0.08;
+    const controls = globe.controls();
+    controls.autoRotate = true;
+    controls.autoRotateSpeed = 0.6;
+    controls.enableDamping = true;
+    controls.dampingFactor = 0.08;
+    // Zoom, explicitly: globe.gl's OrbitControls defaults to enableZoom=true,
+    // but we pin it here (and set forgiving min/max distance) so a child can
+    // pinch/scroll all the way in to comfortably tap a country and back out
+    // to see the whole planet, without zooming through the globe or losing
+    // it off-screen. minDistance/maxDistance are in the same camera-distance
+    // units as altitude*radius+radius, so they're derived from the same
+    // MIN_ALTITUDE/MAX_ALTITUDE constants used by the zoom buttons below.
+    controls.enableZoom = true;
+    controls.zoomSpeed = 0.7;
+    // Panning is disabled on purpose: for a kid-facing globe, rotate + zoom
+    // is enough interaction to reason about, and pan easily leaves a small
+    // child in a confusing, off-center, hard-to-recover state.
+    controls.enablePan = false;
+    const globeRadiusForControls = globe.getGlobeRadius();
+    controls.minDistance = globeRadiusForControls * (1 + MIN_ALTITUDE);
+    controls.maxDistance = globeRadiusForControls * (1 + MAX_ALTITUDE);
+
+    // Pause auto-rotate while the child is actively dragging/zooming (so
+    // their own rotation isn't fighting the idle auto-rotate), and resume
+    // it automatically a couple seconds after they let go.
+    function pauseAutoRotate() {
+      controls.autoRotate = false;
+      if (autoRotateResumeTimerRef.current) clearTimeout(autoRotateResumeTimerRef.current);
+    }
+    function scheduleAutoRotateResume() {
+      if (autoRotateResumeTimerRef.current) clearTimeout(autoRotateResumeTimerRef.current);
+      autoRotateResumeTimerRef.current = setTimeout(() => {
+        controls.autoRotate = true;
+      }, 2500);
+    }
+    controls.addEventListener("start", pauseAutoRotate);
+    controls.addEventListener("end", scheduleAutoRotateResume);
+
     globeRef.current = globe;
+    setReady(true);
 
     function handleResize() {
       if (containerRef.current) globe.width(containerRef.current.clientWidth);
@@ -372,12 +419,37 @@ export default function Globe3D({ countries, visited, onSelect }) {
     return () => {
       window.removeEventListener("resize", handleResize);
       if (animationFrameId) cancelAnimationFrame(animationFrameId);
+      if (autoRotateResumeTimerRef.current) clearTimeout(autoRotateResumeTimerRef.current);
+      controls.removeEventListener("start", pauseAutoRotate);
+      controls.removeEventListener("end", scheduleAutoRotateResume);
       cloudGeometry.dispose();
       cloudMaterial.dispose();
       if (containerRef.current) containerRef.current.innerHTML = "";
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  // Touch-friendly step-zoom buttons: a more forgiving fallback to
+  // pinch-to-zoom, since young children's motor control makes a precise
+  // two-finger pinch unreliable. Steps by a fixed altitude factor from the
+  // globe's *current* point of view, clamped to the same bounds as the
+  // OrbitControls min/maxDistance above.
+  function stepZoom(factor) {
+    const globe = globeRef.current;
+    if (!globe) return;
+    const current = globe.pointOfView();
+    const nextAltitude = Math.min(
+      MAX_ALTITUDE,
+      Math.max(MIN_ALTITUDE, current.altitude * factor)
+    );
+    globe.pointOfView({ lat: current.lat, lng: current.lng, altitude: nextAltitude }, 400);
+  }
+
+  function recenter() {
+    const globe = globeRef.current;
+    if (!globe) return;
+    globe.pointOfView({ lat: 15, lng: 0, altitude: DEFAULT_ALTITUDE }, 900);
+  }
 
   useEffect(() => {
     if (globeRef.current) {
@@ -386,5 +458,40 @@ export default function Globe3D({ countries, visited, onSelect }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [visited]);
 
-  return <div ref={containerRef} className="globe-3d-container" />;
+  return (
+    <div className="globe-3d-wrap">
+      <div ref={containerRef} className="globe-3d-container" />
+      {ready && (
+        <div className="globe-3d-controls" role="group" aria-label="Controlos do globo">
+          <button
+            type="button"
+            className="globe-3d-btn"
+            onClick={() => stepZoom(1 / ZOOM_STEP_FACTOR)}
+            aria-label="Aproximar"
+            title="Aproximar"
+          >
+            🔍➕
+          </button>
+          <button
+            type="button"
+            className="globe-3d-btn"
+            onClick={() => stepZoom(ZOOM_STEP_FACTOR)}
+            aria-label="Afastar"
+            title="Afastar"
+          >
+            🔍➖
+          </button>
+          <button
+            type="button"
+            className="globe-3d-btn globe-3d-btn-recenter"
+            onClick={recenter}
+            aria-label="Recentrar"
+            title="Recentrar"
+          >
+            🏠
+          </button>
+        </div>
+      )}
+    </div>
+  );
 }
