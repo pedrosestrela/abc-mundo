@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 import { getProfile, getDifficultyTier, pingProgress, recordSkillEvent, getLangPair } from "../storage.js";
 import HelpButton from "../components/HelpButton.jsx";
+import SpeakButton from "../components/SpeakButton.jsx";
 import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
 import AgeAdvisory from "../components/AgeAdvisory.jsx";
 import MascotBubble from "../components/mascots/MascotBubble.jsx";
@@ -827,7 +829,33 @@ const HELP_KEY_BY_ACTIVITY = {
   multiplication: "mathHelpMultiplication",
   division: "mathHelpDivision",
   balloons: "mathHelpBalloons",
+  stories: "mathHelpStories",
 };
+
+// Everyday "math story" mini-scenarios: unlike the addsub scenario system
+// above (random numbers + a rotating character/object template), these are a
+// small, fixed, hand-written set so the numbers and wording always make
+// concrete real-world sense together (e.g. always exactly "2 apples + 1
+// apple", never a randomly generated absurd combination) — a light-touch way
+// to give the child a handful of everyday story problems to connect counting
+// to, per the product owner's request. Each entry's `promptKey` is a full,
+// already-numbered sentence in i18n (not templated), and `correct`/`emoji`
+// drive the same multiple-choice QuizRunner used by every other mode here.
+const MATH_STORIES = [
+  { promptKey: "mathStory1", correct: 3, emoji: "🍎" },
+  { promptKey: "mathStory2", correct: 3, emoji: "⭐" },
+  { promptKey: "mathStory3", correct: 5, emoji: "⚽" },
+  { promptKey: "mathStory4", correct: 4, emoji: "🍪" },
+  { promptKey: "mathStory5", correct: 7, emoji: "🌸" },
+  { promptKey: "mathStory6", correct: 5, emoji: "🪙" },
+];
+
+function buildMathStoryRounds() {
+  return MATH_STORIES.map((story) => ({
+    ...story,
+    options: numberOptions(story.correct, story.correct + 5, 3),
+  }));
+}
 
 const BALLOON_COLORS = ["#ff6b6b", "#4dabf7", "#ffd43b", "#69db7c", "#da77f2", "#ff922b"];
 const BALLOON_ROUNDS = 8;
@@ -945,6 +973,24 @@ function BalloonGame({ rounds, profile, t, onDone }) {
   );
 }
 
+// Connective nudge shown in the Números tab, linking number-recognition
+// practice to actual handwriting practice (Writing.jsx, owned by another
+// agent). Writing.jsx doesn't currently accept a pre-selected character via
+// query param, so this is the lighter-weight version: a plain link with a
+// hint telling the child what to look for once there, rather than deep
+// linking to a specific digit.
+function WriteNumberLink({ t }) {
+  const navigate = useNavigate();
+  return (
+    <div className="game-card math-write-link-card">
+      <p className="page-intro">{t("modules.mathWriteNumberHint")}</p>
+      <button type="button" className="big-btn" onClick={() => navigate("/writing")}>
+        ✏️ {t("modules.mathWriteNumberCta")}
+      </button>
+    </div>
+  );
+}
+
 export default function MathGame() {
   const { t } = useTranslation();
   const pair = getLangPair() || { mother: "pt", secondary: "en" };
@@ -981,9 +1027,15 @@ export default function MathGame() {
     { key: "multiplication", label: t("modules.mathMultiplication"), emoji: "✖️" },
     { key: "division", label: t("modules.mathDivision"), emoji: "➗" },
     { key: "balloons", label: t("modules.mathBalloons"), emoji: "🎈" },
+    { key: "stories", label: t("modules.mathStories"), emoji: "📔" },
   ];
 
-  const GATED_ACTIVITIES = ["addsub", "multiplication", "division", "balloons"];
+  // Only multiplication/division are age-gated for the youngest tier (per
+  // product owner: they're conceptually harder — repeated groups/sharing —
+  // than counting, number recognition, or simple add/subtract). Contar,
+  // Números, Soma-Subtração and Balões (which reuses add/sub rounds) stay
+  // available to every tier without an advisory.
+  const GATED_ACTIVITIES = ["multiplication", "division"];
 
   function switchActivity(key) {
     if (GATED_ACTIVITIES.includes(key) && tier === 1 && !addSubConfirmed) {
@@ -1055,17 +1107,20 @@ export default function MathGame() {
       )}
 
       {activity === "numbers" && (
-        <QuizRunner
-          key={"numbers-" + seed}
-          rounds={buildNumberRounds(tier)}
-          profile={profile}
-          t={t}
-          moduleEvent="math_numbers"
-          onDone={restart}
-          renderPrompt={(round) => (
-            <div className="game-emoji">{round.emoji.repeat(round.correct)}</div>
-          )}
-        />
+        <>
+          <QuizRunner
+            key={"numbers-" + seed}
+            rounds={buildNumberRounds(tier)}
+            profile={profile}
+            t={t}
+            moduleEvent="math_numbers"
+            onDone={restart}
+            renderPrompt={(round) => (
+              <div className="game-emoji">{round.emoji.repeat(round.correct)}</div>
+            )}
+          />
+          <WriteNumberLink t={t} />
+        </>
       )}
 
       {activity === "addsub" && (
@@ -1246,6 +1301,30 @@ export default function MathGame() {
           profile={profile}
           t={t}
           onDone={restart}
+        />
+      )}
+
+      {activity === "stories" && (
+        <QuizRunner
+          key={"stories-" + seed}
+          rounds={buildMathStoryRounds()}
+          profile={profile}
+          t={t}
+          moduleEvent="math_stories"
+          skillId="math-stories"
+          onDone={restart}
+          renderPrompt={(round) => {
+            const storyText = t(`modules.${round.promptKey}`);
+            return (
+              <>
+                <div className="game-emoji">{round.emoji}</div>
+                <p className="math-scenario-text">
+                  {storyText}
+                  <SpeakButton text={storyText} langCode={pair.mother} />
+                </p>
+              </>
+            );
+          }}
         />
       )}
     </div>
