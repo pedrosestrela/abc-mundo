@@ -193,5 +193,243 @@
       "license": "CC BY-SA 2.5 nl",
       "url": "https://commons.wikimedia.org/wiki/File%3AMount_kenya.JPG"
     }
+  },
+  "GB": {
+    "animalPhoto": "/images/countries/gb-animal.jpg",
+    "landmarkPhoto": "/images/countries/gb-landmark.jpg",
+    "animalCredit": {
+      "author": "Farbades420",
+      "license": "CC0",
+      "url": "https://commons.wikimedia.org/wiki/File:Landseer_Lion_and_Nelson%27s_Column.jpg"
+    },
+    "landmarkCredit": {
+      "author": "Julian Herzog (Website)",
+      "license": "CC BY 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Big_Ben_Elizabeth_Tower_London_2023_01.jpg"
+    }
+  },
+  "CA": {
+    "animalPhoto": "/images/countries/ca-animal.jpg",
+    "landmarkPhoto": "/images/countries/ca-landmark.jpg",
+    "animalCredit": {
+      "author": "Judy Gallagher",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:North_American_Beaver_-_Castor_canadensis,_Pocahontas_State_Park,_Chesterfield,_Virginia_(38456504706).jpg"
+    },
+    "landmarkCredit": {
+      "author": "Helen Filatova",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Niagara-Falls-Horseshoe-Falls-view.jpg"
+    }
+  },
+  "KR": {
+    "animalPhoto": "/images/countries/kr-animal.jpg",
+    "landmarkPhoto": "/images/countries/kr-landmark.jpg",
+    "animalCredit": {
+      "author": "Derek and Julie Ramsey (Ram-Man), edit by Chris_huh",
+      "license": "Public domain / CC BY-SA 2.5",
+      "url": "https://commons.wikimedia.org/wiki/File:Amur_Tiger_Panthera_tigris_altaica_Eye_2112px_edit.jpg"
+    },
+    "landmarkCredit": {
+      "author": "Frank Schulenburg",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Gyeonghoeru_(Royal_Banquet_Hall)_at_Gyeongbokgung_Palace,_Seoul.jpg"
+    }
+  },
+  "GR": {
+    "animalPhoto": "/images/countries/gr-animal.jpg",
+    "landmarkPhoto": "/images/countries/gr-landmark.jpg",
+    "animalCredit": {
+      "author": "Zeynel Cebeci",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Athene_noctua_-_Little_owl_01.jpg"
+    },
+    "landmarkCredit": {
+      "author": "Jebulon",
+      "license": "CC0",
+      "url": "https://commons.wikimedia.org/wiki/File:Restoration_work_Parthenon_facade_Acropolis_Athens_Greece.jpg"
+    }
+  },
+  "SE": {
+    "animalPhoto": "/images/countries/se-animal.jpg",
+    "landmarkPhoto": "/images/countries/se-landmark.jpg",
+    "animalCredit": {
+      "author": "Ryan Hagerty, U.S. Fish and Wildlife Service",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Moose_wild_animal_mammal_alces_alces.jpg"
+    },
+    "landmarkCredit": {
+      "author": "Arild Vågen",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Stockholms_slott_August_2015_01.jpg"
+    }
+  },
+  "NL": {
+    "animalPhoto": "/images/countries/nl-animal.jpg",
+    "landmarkPhoto": "/images/countries/nl-landmark.jpg",
+    "animalCredit": {
+      "author": "Keith Weller, USDA Agricultural Research Service",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Cow_female_black_white.jpg"
+    },
+    "landmarkCredit": {
+      "author": "John Samuel",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Kinderdijk_windmills_01.jpg"
+    }
+  },
+  "PL": {
+    "animalPhoto": "/images/countries/pl-animal.jpg",
+    "landmarkPhoto": "/images/countries/pl-landmark.jpg",
+    "animalCredit": {
+      "author": "Charles J. Sharp",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:European_bison_(Bison_bonasus)_female_Bia%C5%82owieza.jpg"
+    },
+    "landmarkCredit": {
+      "author": "Ввласенко",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Wawel_Castle_view_from_south._Krakow,_Poland.jpg"
+    }
+  },
+  "IE": {
+    "animalPhoto": "/images/countries/ie-animal.jpg",
+    "landmarkPhoto": "/images/countries/ie-landmark.jpg",
+    "animalCredit": {
+      "author": "Gareth James",
+      "license": "CC BY-SA 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Red_deer_stag_in_Margam_Park_-_geograph.org.uk_-_3793419.jpg"
+    },
+    "landmarkCredit": {
+      "author": "Suicasmo",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Cliffs_of_Moher_20160818-1.jpg"
+    }
+  },
+  "NZ": {
+    "animalPhoto": "/images/countries/nz-animal.jpg",
+    "landmarkPhoto": "/images/countries/nz-landmark.jpg",
+    "animalCredit": {
+      "author": "anna-mac",
+      "license": "CC BY 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Apteryx_rowi_2.jpg"
+    },
+    "landmarkCredit": {
+      "author": "Michal Klajban",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Aoraki,_Aoraki_-_Mount_Cook_National_Park,_New_Zealand_02.jpg"
+    }
+  },
+  "CH": {
+    "animalPhoto": "/images/countries/ch-animal.jpg",
+    "landmarkPhoto": "/images/countries/ch-landmark.jpg",
+    "animalCredit": {
+      "author": "Isiwal",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Alpensteinbock_Capra_ibex-0801.jpg"
+    },
+    "landmarkCredit": {
+      "author": "Liridon",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Matterhorn,_March_2019_(01).jpg"
+    }
+  },
+  "AT": {
+    "animalPhoto": "/images/countries/at-animal.jpg",
+    "landmarkPhoto": "/images/countries/at-landmark.jpg",
+    "animalCredit": {
+      "author": "Uoaei1",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Capreolus_capreolus_Wien_Zentralfriedhof_20161230_01.jpg"
+    },
+    "landmarkCredit": {
+      "author": "Martin Falbisoner",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Schoenbrunn_Palace_as_seen_from_Neptune_Fountain,_September_2016.jpg"
+    }
+  },
+  "RU": {
+    "animalPhoto": "/images/countries/ru-animal.jpg",
+    "landmarkPhoto": "/images/countries/ru-landmark.jpg",
+    "animalCredit": {
+      "author": "Robert F. Tobler",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Kamchatka_Brown_Bear_near_Dvuhyurtochnoe_on_2015-07-23.jpg"
+    },
+    "landmarkCredit": {
+      "author": "Godot13",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Saint_Basil%27s_Cathedral_(Moscow,_2004).jpg"
+    }
+  },
+  "IS": {
+    "animalPhoto": "/images/countries/is-animal.jpg",
+    "landmarkPhoto": "/images/countries/is-landmark.jpg",
+    "animalCredit": {
+      "author": "Andreas Tille",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:IcelandicHorseInWinter.jpg"
+    },
+    "landmarkCredit": {
+      "author": "Jakub Hałun",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Gullfoss,_Iceland,_20230501_0945_3798.jpg"
+    }
+  },
+  "TH": {
+    "animalPhoto": "/images/countries/th-animal.jpg",
+    "landmarkPhoto": "/images/countries/th-landmark.jpg",
+    "animalCredit": {
+      "author": "Bernard DUPONT",
+      "license": "CC BY-SA 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Asian_Elephant_(Elephas_maximus)_(7852943934).jpg"
+    },
+    "landmarkCredit": {
+      "author": "Jakub Hałun",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:20160727_Grand_Palace_Bangkok_5405.jpg"
+    }
+  },
+  "ID": {
+    "animalPhoto": "/images/countries/id-animal.jpg",
+    "landmarkPhoto": "/images/countries/id-landmark.jpg",
+    "animalCredit": {
+      "author": "Thomas Fuhrmann",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Bornean_orangutan_(Pongo_pygmaeus),_Tanjung_Putting_National_Park_02.jpg"
+    },
+    "landmarkCredit": {
+      "author": "CEphoto, Uwe Aranas",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Borobudur-Temple-Park_Indonesia_Stupas-of-Borobudur-04.jpg"
+    }
+  },
+  "BE": {
+    "animalPhoto": "/images/countries/be-animal.jpg",
+    "landmarkPhoto": "/images/countries/be-landmark.jpg",
+    "animalCredit": {
+      "author": "LieseDC",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Brabants_Trekpaard_Stappend_Opwijk_2014.JPG"
+    },
+    "landmarkCredit": {
+      "author": "Celuici",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand-Place,_Brussels_-_panorama,_June_2018.jpg"
+    }
+  },
+  "TR": {
+    "animalPhoto": "/images/countries/tr-animal.jpg",
+    "landmarkPhoto": "/images/countries/tr-landmark.jpg",
+    "animalCredit": {
+      "author": "Helen Filatova",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Turkish_Van.jpg"
+    },
+    "landmarkCredit": {
+      "author": "Arild Vågen",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Hagia_Sophia_Mars_2013.jpg"
+    }
   }
 }
