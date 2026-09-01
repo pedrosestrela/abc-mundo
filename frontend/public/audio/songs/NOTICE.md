@@ -4,20 +4,51 @@ The `.mp3` files under `pt/` and `en/` are narration of this app's own
 original song lyrics (see `frontend/src/content/songs.pt.json` /
 `songs.en.json`), from two different sources:
 
-## `pt/` — Piper TTS (European Portuguese)
+## `pt/` — Piper TTS (European Portuguese), pitch-shifted stopgap for a female voice
 
-Regenerated on 2026-09-01 with [Piper TTS](https://github.com/rhasspy/piper)
+Regenerated again on 2026-09-01 with [Piper TTS](https://github.com/rhasspy/piper)
 (open-source, runs fully on-device — no account, no API key, no
-per-character cost, no ongoing quota), replacing an earlier ElevenLabs
-version whose `pt` voice rendered with a Brazilian-Portuguese-leaning
-accent — wrong for this PT-first app.
+per-character cost, no ongoing quota). The product owner reported that the
+`pt_PT-tugão-medium` voice used previously sounds male and asked for a
+female European-Portuguese voice instead.
+
+**Voice search performed before regenerating (all dead ends for a genuine
+free/well-licensed female PT-PT voice):**
+- `rhasspy/piper-voices` (the official Piper voice pack) ships exactly one
+  `pt_PT` voice — `tugão` — and it is male. No alternative in that pack.
+- `OpenVoiceOS/pipertts_pt-PT_*` on Hugging Face has a genuinely female
+  European-Portuguese voice (`dii`), but it is licensed
+  **CC BY-NC-ND 4.0** — non-commercial and no-derivatives — which fails
+  this project's licensing bar (this app may eventually be used more
+  broadly). Two other pt-PT entries in the same collection (`voice3`,
+  `voice4`) ship with an empty model card and no stated license at all
+  (i.e. all-rights-reserved by default), so they're unusable regardless of
+  gender.
+- `facebook/mms-tts-por` (Meta's Massively Multilingual Speech project) is
+  **CC-BY-NC 4.0** (non-commercial only) and is a single generic
+  Portuguese voice not specifically PT-PT, of undocumented gender — fails
+  the license bar even before the gender question.
+- Coqui/VITS models trained on Portuguese Common Voice/CML-TTS data:
+  no ready-to-use pretrained checkpoint with a permissive license and a
+  documented female PT-PT speaker was found on Hugging Face; CML-TTS
+  itself is a CC-BY 4.0 *dataset* (usable), but there is no free compute
+  in this environment to train a new voice model from it, which is out of
+  scope for this pass.
+
+**Decision — explicitly-flagged stopgap, not a genuine female voice:**
+with no free, well-licensed, genuinely-female PT-PT voice available, the
+existing CC0 `pt_PT-tugão-medium` output is now **pitch-shifted up
+~3 semitones** (`ffmpeg` `asetrate`/`atempo`, tempo restored so pacing is
+unchanged) as a stopgap. This is a modified male voice, not a real female
+voice — it is disclosed here so nobody mistakes it for one. If a genuine
+free/licensable female PT-PT voice (Piper-compatible `.onnx`, or a trained
+Coqui/VITS checkpoint) becomes available later, swap it in and drop the
+pitch shift.
 
 - Voice model: `pt_PT-tugão-medium` (European Portuguese, medium quality,
   22,050Hz), downloaded from the `rhasspy/piper-voices` repository on
   Hugging Face. Model license: **CC0** (public domain — see the model card
-  at `rhasspy/piper-voices/pt/pt_PT/tugão/medium/MODEL_CARD`), so the
-  generated audio has no usage restrictions. Same voice already used for
-  `stories/pt/` — see that folder's NOTICE.md.
+  at `rhasspy/piper-voices/pt/pt_PT/tugão/medium/MODEL_CARD`).
 - Rhythm/pacing: each song's `lyrics` array (already short per-line phrases
   in `songs.pt.json`) is synthesized as **separate Piper calls per line**
   and concatenated with ~400ms of silence between lines, instead of
@@ -28,8 +59,11 @@ accent — wrong for this PT-first app.
   narration TTS, not melody-aware singing synthesis — no free/local tool
   can make it actually sing a tune — but the per-line pacing meaningfully
   reduces the "flat news-reader" feel of one continuous spoken paragraph.
-- `.wav` output from Piper was converted to `.mp3` with `ffmpeg` (via the
-  `imageio-ffmpeg` bundled binary) to keep file sizes reasonable for a PWA.
+- Pitch shift: after the per-line splice, the combined `.wav` is pitch-shifted
+  with `ffmpeg -af "asetrate=22050*1.19,aresample=22050,atempo=1/1.19"`
+  (≈3 semitones up, kept subtle/natural rather than a cartoonish
+  chipmunk effect) then converted to `.mp3` (via the `imageio-ffmpeg`
+  bundled binary) to keep file sizes reasonable for a PWA.
 - Coverage: all 22 songs in `songs.pt.json`.
 
 ## `en/` — ElevenLabs (unchanged)
