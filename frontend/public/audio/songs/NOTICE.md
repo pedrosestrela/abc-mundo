@@ -47,12 +47,89 @@ complaint that prompted the `pt/` redo above.
 - Coverage: 21 of 22 songs — "Hino Nacional (A Portuguesa)" hit the
   free-tier character quota and is not yet generated.
 
-## Both languages
+## `de/` — Piper TTS (German)
+
+Generated on 2026-09-01 with Piper TTS.
+
+- Voice model: `de_DE-thorsten-medium` (German, medium quality, 22,050Hz),
+  downloaded from `rhasspy/piper-voices` on Hugging Face. Model license:
+  **CC0** (public domain — dataset:
+  [Thorsten-Voice](https://github.com/thorstenMueller/Thorsten-Voice), see
+  the model card at `rhasspy/piper-voices/de/de_DE/thorsten/medium/MODEL_CARD`).
+- Same per-line synthesis + ~400ms silence splice + `--length-scale 1.18`
+  technique as `pt/` (see above).
+- Coverage: all 21 songs in `songs.de.json` (this language's song list has
+  21 entries, not 22 — no German equivalent of the PT/EN national anthem
+  track).
+
+## `fr/` — Piper TTS (French)
+
+Generated on 2026-09-01 with Piper TTS.
+
+- Voice model: `fr_FR-siwis-medium` (French, medium quality, 22,050Hz),
+  downloaded from `rhasspy/piper-voices` on Hugging Face. Model license:
+  **CC-BY 4.0** (dataset: [SIWIS French Speech
+  Synthesis](https://datashare.is.ed.ac.uk/handle/10283/2353), University
+  of Edinburgh — see the model card at
+  `rhasspy/piper-voices/fr/fr_FR/siwis/medium/MODEL_CARD`). No CC0/public-domain
+  French voice of comparable (medium) quality was available in the
+  `piper-voices` repo at generation time; CC-BY permits this use, attribution
+  recorded here.
+- Same per-line synthesis + ~400ms silence splice + `--length-scale 1.18`
+  technique as `pt/` (see above).
+- Coverage: all 21 songs in `songs.fr.json`.
+
+## `es/` — Piper TTS (Spanish)
+
+Generated on 2026-09-01 with Piper TTS.
+
+- Voice model: `es_ES-davefx-medium` (European Spanish, medium quality,
+  22,050Hz), downloaded from `rhasspy/piper-voices` on Hugging Face. Model
+  license: **CC0** (public domain — dataset:
+  [OHF-Voice/voice-datasets](https://github.com/OHF-Voice/voice-datasets),
+  see the model card at
+  `rhasspy/piper-voices/es/es_ES/davefx/medium/MODEL_CARD`).
+- Same per-line synthesis + ~400ms silence splice + `--length-scale 1.18`
+  technique as `pt/` (see above).
+- Coverage: all 21 songs in `songs.es.json`.
+
+## `it/` — Piper TTS (Italian)
+
+Generated on 2026-09-01 with Piper TTS.
+
+- Voice model: `it_IT-serena-medium` (Italian, medium quality, 22,050Hz),
+  downloaded from `rhasspy/piper-voices` on Hugging Face. Model license:
+  **CC-BY 4.0** (dataset:
+  [serena-synthetic-it-27h](https://huggingface.co/datasets/committa/serena-synthetic-it-27h),
+  see the model card at
+  `rhasspy/piper-voices/it/it_IT/serena/medium/MODEL_CARD`). The other
+  medium-quality Italian voice (`paola`) had an unclear/unverifiable
+  dataset license, so `serena` was used instead; attribution recorded here.
+- Same per-line synthesis + ~400ms silence splice + `--length-scale 1.18`
+  technique as `pt/` (see above).
+- Coverage: all 21 songs in `songs.it.json`.
+
+## `zh/` — Piper TTS (Mandarin Chinese)
+
+Generated on 2026-09-01 with Piper TTS.
+
+- Voice model: `zh_CN-chaowen-medium` (Mandarin Chinese, medium quality,
+  22,050Hz), downloaded from `rhasspy/piper-voices` on Hugging Face. Model
+  license: **CC0** (public domain — dataset:
+  [OHF-Voice/voice-datasets](https://github.com/OHF-Voice/voice-datasets),
+  see the model card at
+  `rhasspy/piper-voices/zh/zh_CN/chaowen/medium/MODEL_CARD`).
+- Same per-line synthesis + ~400ms silence splice + `--length-scale 1.18`
+  technique as `pt/` (see above).
+- Coverage: all 21 songs in `songs.zh.json`.
+
+## All languages
 
 - The lyrics themselves are original content written for this app.
-- Only Portuguese (`pt/`, 22 songs) and English (`en/`, 21 of 22 songs) are
-  covered. The other 5 languages still use the browser's built-in Web
-  Speech API (`speechSynthesis`), same as before.
+- Portuguese (`pt/`, 22 songs), English (`en/`, 21 of 22 songs), German
+  (`de/`, 21 songs), French (`fr/`, 21 songs), Spanish (`es/`, 21 songs),
+  Italian (`it/`, 21 songs), and Mandarin Chinese (`zh/`, 21 songs) are all
+  now covered with real recorded-voice narration.
 - `Songs.jsx` automatically prefers a real audio file when one exists for a
   given song+language and falls back to Web Speech otherwise — no missing
   file ever blocks playback.

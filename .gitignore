@@ -10,3 +10,4 @@ android/app/build/
 *.keystore
 *.jks
 .env.local
+frontend/public/audio/songs/.voices/
