@@ -4,6 +4,9 @@ import { getHouseSystems, getCitySystems } from "../content/index.js";
 import { getLangPair, getProfile, pingProgress, recordSkillEvent } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
 import HelpButton from "../components/HelpButton.jsx";
+import MascotBubble from "../components/mascots/MascotBubble.jsx";
+import { pickLine } from "../components/mascots/reactionLines.js";
+import { getVascoLines } from "../content/vascoLines.js";
 import TeachBackPrompt from "../components/TeachBackPrompt.jsx";
 
 function shuffle(arr) {
@@ -28,6 +31,7 @@ function SystemQuiz({ item, items, pair, profile, t, skillId, eventPrefix }) {
   });
   const [wrongIds, setWrongIds] = useState([]);
   const [solved, setSolved] = useState(false);
+  const [lastResult, setLastResult] = useState(null); // null | "correct" | "wrong"
 
   if (options.length < 3) return null;
 
@@ -35,10 +39,12 @@ function SystemQuiz({ item, items, pair, profile, t, skillId, eventPrefix }) {
     if (solved) return;
     if (option.id === item.id) {
       setSolved(true);
+      setLastResult("correct");
       recordSkillEvent(profile?.name, skillId, wrongIds.length === 0);
       pingProgress({ profileName: profile?.name, module: "city", event: `${eventPrefix}_quiz_solved:${item.id}` });
     } else {
       setWrongIds((prev) => (prev.includes(option.id) ? prev : [...prev, option.id]));
+      setLastResult("wrong");
       pingProgress({ profileName: profile?.name, module: "city", event: `${eventPrefix}_quiz_attempt:${item.id}` });
     }
   }
@@ -73,10 +79,18 @@ function SystemQuiz({ item, items, pair, profile, t, skillId, eventPrefix }) {
           </div>
         ))}
       </div>
+      {lastResult && !solved && (
+        <MascotBubble character="vasco" reaction="encouraging" size={56}>
+          {pickLine(getVascoLines("city", pair.mother).encouraging)}
+        </MascotBubble>
+      )}
       {solved && (
         <div className="science-explanation">
           <p className="game-result">⭐ {t("modules.cityQuizCorrect")}</p>
           <SpeakButton text={t("modules.cityQuizCorrect")} langCode={pair.mother} />
+          <MascotBubble character="vasco" reaction="happy" langCode={pair.mother}>
+            {`${pickLine(getVascoLines("city", pair.mother).correct)} ${pickLine(getVascoLines("city", pair.mother).closing)}`}
+          </MascotBubble>
         </div>
       )}
     </div>
@@ -93,6 +107,9 @@ export default function City() {
   const [tab, setTab] = useState("house");
   const [openHouseId, setOpenHouseId] = useState(null);
   const [openCityId, setOpenCityId] = useState(null);
+  // Picked once per page visit so the greeting doesn't reshuffle on every
+  // unrelated re-render.
+  const [openingLine] = useState(() => pickLine(getVascoLines("city", pair.mother).opening));
 
   function handleOpenHouse(item) {
     const nowOpen = item.id !== openHouseId;
@@ -117,6 +134,9 @@ export default function City() {
         <HelpButton text={t("modules.cityHelpMain")} langCode={pair.mother} />
       </div>
       <p className="page-intro">{t("modules.cityIntro")}</p>
+      <MascotBubble character="vasco" reaction="curious" langCode={pair.mother}>
+        {openingLine}
+      </MascotBubble>
 
       <div className="game-options city-tabs">
         <button

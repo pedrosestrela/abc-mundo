@@ -7,6 +7,8 @@ import SpeakButton from "../components/SpeakButton.jsx";
 import HelpButton from "../components/HelpButton.jsx";
 import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
 import MascotBubble from "../components/mascots/MascotBubble.jsx";
+import { pickLine } from "../components/mascots/reactionLines.js";
+import { getVascoLines } from "../content/vascoLines.js";
 import TeachBackPrompt from "../components/TeachBackPrompt.jsx";
 import RelatedLinks from "../components/RelatedLinks.jsx";
 
@@ -726,6 +728,11 @@ function ScienceQuickfire({ cards, pair, t, tier, profile }) {
                 : "❌ " + t("modules.sciencePredictionWrong")}
             </p>
           )}
+          {feedback && feedback !== "timeout" && (
+            <MascotBubble character="vasco" reaction={feedback === "correct" ? "happy" : "encouraging"} size={56}>
+              {pickLine(getVascoLines("science", pair.mother)[feedback === "correct" ? "correct" : "encouraging"])}
+            </MascotBubble>
+          )}
         </div>
       )}
 
@@ -736,6 +743,9 @@ function ScienceQuickfire({ cards, pair, t, tier, profile }) {
             {t("modules.scienceQuickDone")}: {score} / {rounds.length}
           </p>
           <p className="mission-text">🔥 {t("modules.scienceQuickBest", { count: bestStreak })}</p>
+          <MascotBubble character="vasco" reaction="happy" langCode={pair.mother}>
+            {pickLine(getVascoLines("science", pair.mother).closing)}
+          </MascotBubble>
           <button type="button" className="big-btn" onClick={start}>
             🔁 {t("modules.gamePlayAgain")}
           </button>

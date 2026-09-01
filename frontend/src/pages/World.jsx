@@ -7,6 +7,8 @@ import SpeakButton from "../components/SpeakButton.jsx";
 import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
 import HelpButton from "../components/HelpButton.jsx";
 import MascotBubble from "../components/mascots/MascotBubble.jsx";
+import { pickLine } from "../components/mascots/reactionLines.js";
+import { getVascoLines } from "../content/vascoLines.js";
 import countryPhotos from "../content/countryPhotos.json";
 
 const TRANSPORT_MODE_META = {
@@ -351,6 +353,11 @@ function WorldFlagFlash({ countries, pair, t, tier, profile }) {
                 : "❌ " + t("modules.sciencePredictionWrong")}
             </p>
           )}
+          {feedback && feedback !== "timeout" && (
+            <MascotBubble character="vasco" reaction={feedback === "correct" ? "happy" : "encouraging"} size={56}>
+              {pickLine(getVascoLines("world", pair.mother)[feedback === "correct" ? "correct" : "encouraging"])}
+            </MascotBubble>
+          )}
         </div>
       )}
 
@@ -361,6 +368,9 @@ function WorldFlagFlash({ countries, pair, t, tier, profile }) {
             {t("modules.worldFlashDone")}: {score} / {rounds.length}
           </p>
           <p className="mission-text">🔥 {t("modules.worldFlashBest", { count: bestStreak })}</p>
+          <MascotBubble character="vasco" reaction="happy" langCode={pair.mother}>
+            {pickLine(getVascoLines("world", pair.mother).closing)}
+          </MascotBubble>
           <button type="button" className="big-btn" onClick={start}>
             🔁 {t("modules.gamePlayAgain")}
           </button>
@@ -914,6 +924,11 @@ export default function World() {
               );
             })}
           </div>
+          {feedback && (
+            <MascotBubble character="vasco" reaction={feedback === "correct" ? "happy" : "encouraging"} size={56}>
+              {pickLine(getVascoLines("world", pair.mother)[feedback === "correct" ? "correct" : "encouraging"])}
+            </MascotBubble>
+          )}
         </div>
       )}
 
@@ -923,6 +938,9 @@ export default function World() {
           <p className="game-result">
             {score} / {rounds.length}
           </p>
+          <MascotBubble character="vasco" reaction="happy" langCode={pair.mother}>
+            {pickLine(getVascoLines("world", pair.mother).closing)}
+          </MascotBubble>
           <button type="button" className="big-btn" onClick={() => startQuiz(quizMode)}>
             🔁 {t("modules.gamePlayAgain")}
           </button>
@@ -1140,6 +1158,11 @@ export default function World() {
               {transportScenario.explanation}
             </p>
           )}
+          {transportFeedback && (
+            <MascotBubble character="vasco" reaction={transportFeedback === "correct" ? "happy" : "encouraging"} size={56}>
+              {pickLine(getVascoLines("world", pair.mother)[transportFeedback === "correct" ? "correct" : "encouraging"])}
+            </MascotBubble>
+          )}
         </div>
       )}
 
@@ -1147,6 +1170,9 @@ export default function World() {
         <div className="game-card">
           <div className="game-emoji">🏆</div>
           <p className="game-result">{t("modules.worldTransportDone")}</p>
+          <MascotBubble character="vasco" reaction="happy" langCode={pair.mother}>
+            {pickLine(getVascoLines("world", pair.mother).closing)}
+          </MascotBubble>
           <button
             type="button"
             className="big-btn"

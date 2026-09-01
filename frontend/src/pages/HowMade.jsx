@@ -5,6 +5,9 @@ import { getHowMade, getFoodOrigin } from "../content/index.js";
 import { getLangPair, getProfile, pingProgress, recordSkillEvent } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
 import HelpButton from "../components/HelpButton.jsx";
+import MascotBubble from "../components/mascots/MascotBubble.jsx";
+import { pickLine } from "../components/mascots/reactionLines.js";
+import { getVascoLines } from "../content/vascoLines.js";
 import TeachBackPrompt from "../components/TeachBackPrompt.jsx";
 import RelatedLinks from "../components/RelatedLinks.jsx";
 
@@ -29,6 +32,7 @@ function ChainQuiz({ item, items, pair, profile, t, skillId, eventPrefix }) {
   });
   const [wrongIds, setWrongIds] = useState([]);
   const [solved, setSolved] = useState(false);
+  const [lastResult, setLastResult] = useState(null); // null | "correct" | "wrong"
 
   if (options.length < 3) return null;
 
@@ -36,10 +40,12 @@ function ChainQuiz({ item, items, pair, profile, t, skillId, eventPrefix }) {
     if (solved) return;
     if (option.id === item.id) {
       setSolved(true);
+      setLastResult("correct");
       recordSkillEvent(profile?.name, skillId, wrongIds.length === 0);
       pingProgress({ profileName: profile?.name, module: "how-made", event: `${eventPrefix}_quiz_solved:${item.id}` });
     } else {
       setWrongIds((prev) => (prev.includes(option.id) ? prev : [...prev, option.id]));
+      setLastResult("wrong");
       pingProgress({ profileName: profile?.name, module: "how-made", event: `${eventPrefix}_quiz_attempt:${item.id}` });
     }
   }
@@ -74,10 +80,18 @@ function ChainQuiz({ item, items, pair, profile, t, skillId, eventPrefix }) {
           </div>
         ))}
       </div>
+      {lastResult && !solved && (
+        <MascotBubble character="vasco" reaction="encouraging" size={56}>
+          {pickLine(getVascoLines("howMade", pair.mother).encouraging)}
+        </MascotBubble>
+      )}
       {solved && (
         <div className="science-explanation">
           <p className="game-result">⭐ {t("modules.howMadeQuizCorrect")}</p>
           <SpeakButton text={t("modules.howMadeQuizCorrect")} langCode={pair.mother} />
+          <MascotBubble character="vasco" reaction="happy" langCode={pair.mother}>
+            {`${pickLine(getVascoLines("howMade", pair.mother).correct)} ${pickLine(getVascoLines("howMade", pair.mother).closing)}`}
+          </MascotBubble>
         </div>
       )}
     </div>
@@ -94,6 +108,9 @@ export default function HowMade() {
   const [tab, setTab] = useState("howMade");
   const [openHowMadeId, setOpenHowMadeId] = useState(null);
   const [openFoodId, setOpenFoodId] = useState(null);
+  // Picked once per page visit so the greeting doesn't reshuffle on every
+  // unrelated re-render.
+  const [openingLine] = useState(() => pickLine(getVascoLines("howMade", pair.mother).opening));
 
   function handleOpenHowMade(item) {
     const nowOpen = item.id !== openHowMadeId;
@@ -130,6 +147,9 @@ export default function HowMade() {
         <HelpButton text={t("modules.howMadeHelpMain")} langCode={pair.mother} />
       </div>
       <p className="page-intro">{t("modules.howMadeIntro")}</p>
+      <MascotBubble character="vasco" reaction="curious" langCode={pair.mother}>
+        {openingLine}
+      </MascotBubble>
 
       <div className="game-options city-tabs">
         <button
