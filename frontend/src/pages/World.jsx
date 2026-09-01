@@ -1,4 +1,4 @@
-import React, { Suspense, lazy, useEffect, useMemo, useState } from "react";
+import React, { Suspense, lazy, useEffect, useMemo, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router-dom";
 import { getCountries, getPackingChallenges, getTransportScenarios } from "../content/index.js";
@@ -7,6 +7,7 @@ import SpeakButton from "../components/SpeakButton.jsx";
 import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
 import HelpButton from "../components/HelpButton.jsx";
 import MascotBubble from "../components/mascots/MascotBubble.jsx";
+import countryPhotos from "../content/countryPhotos.json";
 
 const TRANSPORT_MODE_META = {
   walk: { emoji: "🚶", labelKey: "worldModeWalk" },
@@ -63,6 +64,50 @@ const PHASE_EMOJI = { day: "☀️", night: "🌙", dusk: "🌆" };
 const Globe3D = lazy(() => import("../components/Globe3D.jsx"));
 
 const CONTINENTS = ["europe", "asia", "africa", "north-america", "south-america", "oceania"];
+
+// Real, offline-bundled photos (Wikimedia Commons, license-verified) for a
+// pilot set of countries — not all 53 have one yet. Falls back to nothing
+// (the emoji/fact content still renders on its own) when absent.
+function CountryPhotoStrip({ iso, t }) {
+  const photos = countryPhotos[iso];
+  if (!photos) return null;
+  return (
+    <div className="world-photo-strip">
+      {photos.animalPhoto && (
+        <figure className="world-photo">
+          <img
+            src={photos.animalPhoto}
+            alt={t("modules.worldAnimal")}
+            width={400}
+            height={300}
+            loading="lazy"
+          />
+          {photos.animalCredit && (
+            <figcaption className="world-photo-credit">
+              📷 {photos.animalCredit.author} · {photos.animalCredit.license}
+            </figcaption>
+          )}
+        </figure>
+      )}
+      {photos.landmarkPhoto && (
+        <figure className="world-photo">
+          <img
+            src={photos.landmarkPhoto}
+            alt={t("modules.worldLandmark")}
+            width={400}
+            height={300}
+            loading="lazy"
+          />
+          {photos.landmarkCredit && (
+            <figcaption className="world-photo-credit">
+              📷 {photos.landmarkCredit.author} · {photos.landmarkCredit.license}
+            </figcaption>
+          )}
+        </figure>
+      )}
+    </div>
+  );
+}
 
 function shuffle(arr) {
   const copy = [...arr];
@@ -138,6 +183,191 @@ function buildQuizRounds(countries, tier, type) {
     }));
     return { type, correct, value, options };
   });
+}
+
+function flashRoundCount(tier) {
+  if (tier === 1) return 8;
+  if (tier === 2) return 12;
+  return 16;
+}
+
+function flashOptionCount(tier) {
+  return tier === 1 ? 3 : 4;
+}
+
+function flashDurationMs(tier) {
+  if (tier === 1) return 8000;
+  if (tier === 2) return 6000;
+  return 4500;
+}
+
+function buildFlashRounds(countries, tier) {
+  const count = flashRoundCount(tier);
+  const optCount = flashOptionCount(tier);
+  const pool = shuffle(countries).slice(0, Math.min(count, countries.length));
+  return pool.map((correct) => {
+    const distractors = shuffle(countries.filter((c) => c.iso !== correct.iso)).slice(0, optCount - 1);
+    return { correct, options: shuffle([correct, ...distractors]) };
+  });
+}
+
+// "Bandeira Relâmpago" — flags flash by fast, child taps the matching
+// country name against the clock. Distinct in pace/feel from the untimed
+// "Jogo" quiz tab: streak counter, celebratory bursts, short per-round timer.
+function WorldFlagFlash({ countries, pair, t, tier, profile }) {
+  const [phase, setPhase] = useState("idle"); // idle | playing | done
+  const [rounds, setRounds] = useState([]);
+  const [step, setStep] = useState(0);
+  const [score, setScore] = useState(0);
+  const [streak, setStreak] = useState(0);
+  const [bestStreak, setBestStreak] = useState(0);
+  const [feedback, setFeedback] = useState(null); // null | "correct" | "wrong" | "timeout"
+  const [pct, setPct] = useState(100);
+  const timerIdRef = useRef(null);
+  const deadlineRef = useRef(0);
+
+  function start() {
+    setRounds(buildFlashRounds(countries, tier));
+    setStep(0);
+    setScore(0);
+    setStreak(0);
+    setBestStreak(0);
+    setFeedback(null);
+    setPct(100);
+    setPhase("playing");
+  }
+
+  useEffect(() => {
+    if (phase !== "playing" || feedback) return undefined;
+    const duration = flashDurationMs(tier);
+    deadlineRef.current = Date.now() + duration;
+    setPct(100);
+    const id = setInterval(() => {
+      const remain = deadlineRef.current - Date.now();
+      setPct(Math.max(0, Math.round((remain / duration) * 100)));
+      if (remain <= 0) {
+        clearInterval(id);
+        setFeedback((prev) => prev || "timeout");
+      }
+    }, 100);
+    timerIdRef.current = id;
+    return () => clearInterval(id);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [phase, step]);
+
+  useEffect(() => {
+    if (!feedback) return undefined;
+    if (feedback === "timeout") {
+      setStreak(0);
+      pingProgress({ profileName: profile?.name, module: "world", event: `flash_timeout:${rounds[step]?.correct.iso}` });
+      recordSkillEvent(profile?.name, "world-flagflash", false);
+    }
+    const id = setTimeout(() => {
+      setFeedback(null);
+      setStep((s) => s + 1);
+    }, 800);
+    return () => clearTimeout(id);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [feedback]);
+
+  function answer(option) {
+    if (feedback) return;
+    clearInterval(timerIdRef.current);
+    const round = rounds[step];
+    const correct = option.iso === round.correct.iso;
+    setFeedback(correct ? "correct" : "wrong");
+    if (correct) {
+      setScore((s) => s + 1);
+      setStreak((s) => {
+        const next = s + 1;
+        setBestStreak((b) => Math.max(b, next));
+        return next;
+      });
+    } else {
+      setStreak(0);
+    }
+    recordSkillEvent(profile?.name, "world-flagflash", correct);
+    pingProgress({ profileName: profile?.name, module: "world", event: `flash_${correct ? "correct" : "wrong"}:${round.correct.iso}` });
+  }
+
+  const finished = phase === "playing" && step >= rounds.length;
+  useEffect(() => {
+    if (finished) {
+      pingProgress({ profileName: profile?.name, module: "world", event: `flash_finished:${score}/${rounds.length}` });
+      setPhase("done");
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [finished]);
+
+  const round = rounds[step];
+
+  return (
+    <>
+      <p className="page-intro">{t("modules.worldFlashIntro")}</p>
+      {phase === "idle" && (
+        <div className="world-quiz-picker">
+          <button type="button" className="big-btn" onClick={start}>
+            ⚡ {t("modules.worldFlashStart")}
+          </button>
+        </div>
+      )}
+
+      {phase === "playing" && round && (
+        <div className="game-card">
+          <div className="game-progress">
+            {step + 1} / {rounds.length} · ⭐ {score}
+          </div>
+          <div className="quickfire-timerbar">
+            <div className={"quickfire-timerbar-fill" + (pct <= 30 ? " low" : "")} style={{ width: `${pct}%` }} />
+          </div>
+          {streak >= 2 && (
+            <p className={"quickfire-streak" + (feedback === "correct" ? " quickfire-streak-burst" : "")}>
+              🔥 {t("modules.worldFlashStreak", { count: streak })}
+            </p>
+          )}
+          <div className="game-emoji" style={{ fontSize: "3.5rem" }}>{round.correct.flag}</div>
+          <div className="game-options">
+            {round.options.map((opt) => (
+              <button
+                key={opt.iso}
+                type="button"
+                className={
+                  "big-btn game-option" +
+                  (feedback && opt.iso === round.correct.iso ? " correct" : "")
+                }
+                onClick={() => answer(opt)}
+                disabled={!!feedback}
+              >
+                {opt.name}
+              </button>
+            ))}
+          </div>
+          {feedback && (
+            <p className="game-result">
+              {feedback === "timeout"
+                ? "⏰ " + t("modules.worldFlashTimeout")
+                : feedback === "correct"
+                ? (streak >= 3 ? "🎉 " : "✅ ") + t("modules.sciencePredictionCorrect")
+                : "❌ " + t("modules.sciencePredictionWrong")}
+            </p>
+          )}
+        </div>
+      )}
+
+      {phase === "done" && (
+        <div className="game-card">
+          <div className="game-emoji">🏆</div>
+          <p className="game-result">
+            {t("modules.worldFlashDone")}: {score} / {rounds.length}
+          </p>
+          <p className="mission-text">🔥 {t("modules.worldFlashBest", { count: bestStreak })}</p>
+          <button type="button" className="big-btn" onClick={start}>
+            🔁 {t("modules.gamePlayAgain")}
+          </button>
+        </div>
+      )}
+    </>
+  );
 }
 
 export default function World() {
@@ -349,6 +579,7 @@ export default function World() {
     timezone: t("modules.worldHelpTimezone"),
     packing: t("modules.worldHelpPacking"),
     transport: t("modules.worldHelpTransport"),
+    flash: t("modules.worldHelpFlash"),
   };
 
   return (
@@ -401,6 +632,12 @@ export default function World() {
             <TabSpeakIcon text={`${t("modules.worldTransportTab")}. ${helpTextByTab.transport}`} langCode={pair.mother} />
           </span>
         </button>
+        <button type="button" className={"phonics-tab" + (tab === "flash" ? " selected" : "")} onClick={() => setTab("flash")}>
+          <span className="phonics-tab-inner">
+            ⚡ {t("modules.worldFlashTab")}
+            <TabSpeakIcon text={`${t("modules.worldFlashTab")}. ${helpTextByTab.flash}`} langCode={pair.mother} />
+          </span>
+        </button>
       </div>
 
       <div className="help-btn-corner">
@@ -440,6 +677,7 @@ export default function World() {
               {selected.emojiScene && (
                 <div className="world-emoji-scene">{selected.emojiScene.join(" ")}</div>
               )}
+              <CountryPhotoStrip iso={selected.iso} t={t} />
               <p className="mission-text">
                 {selected.fact}
                 <SpeakButton text={selected.fact} langCode={pair.mother} />
@@ -552,6 +790,7 @@ export default function World() {
               {selected.emojiScene && (
                 <div className="world-emoji-scene">{selected.emojiScene.join(" ")}</div>
               )}
+              <CountryPhotoStrip iso={selected.iso} t={t} />
               <p className="mission-text">
                 {selected.fact}
                 <SpeakButton text={selected.fact} langCode={pair.mother} />
@@ -919,6 +1158,10 @@ export default function World() {
             🔁 {t("modules.gamePlayAgain")}
           </button>
         </div>
+      )}
+
+      {tab === "flash" && (
+        <WorldFlagFlash countries={countries} pair={pair} t={t} tier={tier} profile={profile} />
       )}
     </div>
   );

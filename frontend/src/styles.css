@@ -2703,6 +2703,87 @@ body {
   color: var(--blue, #3b3b6d);
 }
 
+.writing-race-progress {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.writing-race-stars {
+  font-size: 2.2rem;
+  letter-spacing: 4px;
+}
+
+.reading-memory-grid {
+  grid-template-columns: repeat(4, 72px);
+}
+
+.reading-memory-card {
+  width: 72px;
+  height: 72px;
+  font-size: 1.6rem;
+}
+
+.balloon-field {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  height: 300px;
+  margin: 12px auto;
+  border-radius: 18px;
+  background: linear-gradient(#dff1ff, #f4faff);
+  overflow: hidden;
+}
+
+.balloon {
+  position: absolute;
+  width: 64px;
+  height: 76px;
+  border: none;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: inset -6px -6px 0 rgba(0, 0, 0, 0.08);
+  animation-name: balloon-bob;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.balloon-number {
+  pointer-events: none;
+}
+
+.balloon:disabled {
+  cursor: default;
+}
+
+.balloon-popped {
+  opacity: 0.4;
+  transform: scale(0.7);
+  animation: none;
+}
+
+.balloon-correct {
+  transform: scale(1.3);
+  opacity: 0;
+  animation: none;
+}
+
+@keyframes balloon-bob {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-16px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .writing-count-row {
   display: flex;
   flex-wrap: wrap;
@@ -3531,6 +3612,35 @@ body {
   text-align: center;
   font-size: 1.8rem;
   margin: 8px 0;
+}
+
+.world-photo-strip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.world-photo {
+  margin: 0;
+  max-width: 45%;
+}
+
+.world-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.world-photo-credit {
+  font-size: 0.65rem;
+  opacity: 0.65;
+  text-align: center;
+  margin-top: 2px;
 }
 
 .world-quiz-picker {
@@ -4598,4 +4708,79 @@ button.circuit-board-slot:disabled {
 
 .mission-grid-cards {
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+
+/* --- Quick-fire mini-games (science quickfire, flag flash, order-time) --- */
+.quickfire-timerbar {
+  height: 10px;
+  width: 100%;
+  max-width: 320px;
+  margin: 6px auto 10px;
+  background: #eee;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.quickfire-timerbar-fill {
+  height: 100%;
+  background: var(--green, #4caf50);
+  transition: width 0.2s linear, background 0.2s linear;
+}
+
+.quickfire-timerbar-fill.low {
+  background: var(--pink, #ff6f91);
+}
+
+.quickfire-streak {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 4px 0;
+}
+
+.quickfire-streak-burst {
+  animation: quickfire-pop 0.4s ease;
+}
+
+@keyframes quickfire-pop {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.25); }
+  100% { transform: scale(1); }
+}
+
+.order-time-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 420px;
+  margin: 10px auto;
+}
+
+.order-time-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 3px solid var(--border, #ddd);
+  background: var(--card-bg, #fff);
+  font-size: 1.1rem;
+  cursor: pointer;
+  text-align: left;
+}
+
+.order-time-card.picked {
+  border-color: var(--yellow, #f5c542);
+  box-shadow: 0 0 0 3px rgba(245, 197, 66, 0.35);
+}
+
+.order-time-card.correct-pos {
+  border-color: var(--green, #4caf50);
+  background: rgba(76, 175, 80, 0.1);
+}
+
+.order-time-card-slot {
+  font-weight: 700;
+  opacity: 0.6;
+  min-width: 1.5em;
 }

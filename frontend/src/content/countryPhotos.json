@@ -1,0 +1,197 @@
+{
+  "PT": {
+    "animalPhoto": "/images/countries/pt-animal.jpg",
+    "landmarkPhoto": "/images/countries/pt-landmark.jpg",
+    "landmarkCredit": {
+      "author": "Alvesgaspar",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File%3ATorre_Bel%C3%A9m_April_2009-4a.jpg"
+    }
+  },
+  "ES": {
+    "animalPhoto": "/images/countries/es-animal.jpg",
+    "landmarkPhoto": "/images/countries/es-landmark.jpg",
+    "animalCredit": {
+      "author": "Panarria",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File%3AToro-elPuerto.jpg"
+    },
+    "landmarkCredit": {
+      "author": "Alvesgaspar",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File%3ASagrada_Familia_March_2015-10a.jpg"
+    }
+  },
+  "FR": {
+    "animalPhoto": "/images/countries/fr-animal.jpg",
+    "landmarkPhoto": "/images/countries/fr-landmark.jpg",
+    "animalCredit": {
+      "author": "Dennis G. Jarvis",
+      "license": "CC BY-SA 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File%3AFrance-001717_-_Gallic_Rooster_(15030544244).jpg"
+    },
+    "landmarkCredit": {
+      "author": "Tristan Nitot",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File%3ATour_eiffel_at_sunrise_from_the_trocadero.jpg"
+    }
+  },
+  "DE": {
+    "animalPhoto": "/images/countries/de-animal.jpg",
+    "landmarkPhoto": "/images/countries/de-landmark.jpg",
+    "animalCredit": {
+      "author": "Christoph Müller (http://www.christophmueller.org)",
+      "license": "CC BY 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File%3AWhite_tailed_eagle_raftsund_square_crop.jpg"
+    },
+    "landmarkCredit": {
+      "author": "א (Aleph)",
+      "license": "CC BY-SA 2.5",
+      "url": "https://commons.wikimedia.org/wiki/File%3ABrandenburg_Gate_Quadriga_at_Night.jpg"
+    }
+  },
+  "IT": {
+    "animalPhoto": "/images/countries/it-animal.jpg",
+    "landmarkPhoto": "/images/countries/it-landmark.jpg",
+    "animalCredit": {
+      "author": "Petar Milošević",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File%3ASienese_She-Wolf_at_Siena_Duomo.jpg"
+    },
+    "landmarkCredit": {
+      "author": "Diliff",
+      "license": "CC BY-SA 2.5",
+      "url": "https://commons.wikimedia.org/wiki/File%3AColosseum_in_Rome%2C_Italy_-_April_2007.jpg"
+    }
+  },
+  "US": {
+    "animalPhoto": "/images/countries/us-animal.jpg",
+    "landmarkPhoto": "/images/countries/us-landmark.jpg",
+    "animalCredit": {
+      "author": "Paul Friel",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File%3ABald_Eagle_-_%22Helga%22_-_Haliaeetus_leucocephalus2.jpg"
+    }
+  },
+  "BR": {
+    "animalPhoto": "/images/countries/br-animal.jpg",
+    "landmarkPhoto": "/images/countries/br-landmark.jpg",
+    "animalCredit": {
+      "author": "Roger Culos",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File%3AAra_macao_MHNT.ZOO.2010.11.148.26.jpg"
+    },
+    "landmarkCredit": {
+      "author": "Nico Kaiser",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File%3ACristo_Redentor_-_Rio_de_Janeiro%2C_Brasil.jpg"
+    }
+  },
+  "CN": {
+    "animalPhoto": "/images/countries/cn-animal.jpg",
+    "landmarkPhoto": "/images/countries/cn-landmark.jpg",
+    "animalCredit": {
+      "author": "Aaron Logan",
+      "license": "CC BY 1.0",
+      "url": "https://commons.wikimedia.org/wiki/File%3ALightmatter_panda.jpg"
+    },
+    "landmarkCredit": {
+      "author": "Jakub Hałun",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File%3A20090529_Great_Wall_8185.jpg"
+    }
+  },
+  "JP": {
+    "animalPhoto": "/images/countries/jp-animal.jpg",
+    "landmarkPhoto": "/images/countries/jp-landmark.jpg",
+    "animalCredit": {
+      "author": "KENPEI",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File%3AVulpes_vulpes_japonica1.jpg"
+    }
+  },
+  "IN": {
+    "animalPhoto": "/images/countries/in-animal.jpg",
+    "landmarkPhoto": "/images/countries/in-landmark.jpg",
+    "animalCredit": {
+      "author": "Stephenekka",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File%3APanthera_tigris_tigris_Tidoba_20150306.jpg"
+    },
+    "landmarkCredit": {
+      "author": "Dhirad, picture edited by J. A. Knudsen",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File%3ATaj_Mahal_in_March_2004.jpg"
+    }
+  },
+  "EG": {
+    "animalPhoto": "/images/countries/eg-animal.jpg",
+    "landmarkPhoto": "/images/countries/eg-landmark.jpg",
+    "animalCredit": {
+      "author": "B. Simpson Cairocamels",
+      "license": "CC BY 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File%3ADromedary_camel_dahab_egypt.jpg"
+    },
+    "landmarkCredit": {
+      "author": "Ricardo Liberato",
+      "license": "CC BY-SA 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File%3AAll_Gizah_Pyramids.jpg"
+    }
+  },
+  "ZA": {
+    "animalPhoto": "/images/countries/za-animal.jpg",
+    "landmarkPhoto": "/images/countries/za-landmark.jpg",
+    "animalCredit": {
+      "author": "Yathin S Krishnappa",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File%3APanthera_leo_yawn_(Kgalagadi%2C_2012).jpg"
+    },
+    "landmarkCredit": {
+      "author": "Dietmar Rabich",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File%3ACape_Town_(ZA)%2C_Table_Mountain_--_2024_--_2821.jpg"
+    }
+  },
+  "AU": {
+    "animalPhoto": "/images/countries/au-animal.jpg",
+    "landmarkPhoto": "/images/countries/au-landmark.jpg",
+    "animalCredit": {
+      "author": "Fernando Losada Rodríguez",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File%3AMacropus_rufus.002_-_Zoo_Aquarium_de_Madrid.JPG"
+    },
+    "landmarkCredit": {
+      "author": "Mfield, Matthew Field, http://www.photography.mattfield.com",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File%3ASydney_opera_house_side_view.jpg"
+    }
+  },
+  "MX": {
+    "animalPhoto": "/images/countries/mx-animal.jpg",
+    "landmarkPhoto": "/images/countries/mx-landmark.jpg",
+    "animalCredit": {
+      "author": "Richard Bartz, Munich aka Makro Freak",
+      "license": "CC BY-SA 2.5",
+      "url": "https://commons.wikimedia.org/wiki/File%3ASteinadler_Aquila_chrysaetos_closeup2_Richard_Bartz.jpg"
+    },
+    "landmarkCredit": {
+      "author": "Fcb981",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File%3AEl_Castillo_Stitch_2008_Edit_2.jpg"
+    }
+  },
+  "KE": {
+    "animalPhoto": "/images/countries/ke-animal.jpg",
+    "landmarkPhoto": "/images/countries/ke-landmark.jpg",
+    "animalCredit": {
+      "author": "Lip Kee Yap",
+      "license": "CC BY-SA 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File%3APlains_Zebra_(Equus_burchelli).jpg"
+    },
+    "landmarkCredit": {
+      "author": "Ruud Zwart",
+      "license": "CC BY-SA 2.5 nl",
+      "url": "https://commons.wikimedia.org/wiki/File%3AMount_kenya.JPG"
+    }
+  }
+}
