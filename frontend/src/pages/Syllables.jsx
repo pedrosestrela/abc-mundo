@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { getSyllables } from "../content/index.js";
 import { getLangPair, getProfile, getDifficultyTier, pingProgress, recordSkillEvent } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
+import SyllableSpeakButton from "../components/SyllableSpeakButton.jsx";
 import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
 import HelpButton from "../components/HelpButton.jsx";
 
@@ -28,6 +29,17 @@ function shuffle(arr) {
 }
 
 const TIER_ROUNDS = { 1: 4, 2: 6, 3: 8 };
+
+// Same "vowels + easiest, most frequent consonants first" pedagogical set as
+// content/dailyPath.js's PRIORITY_LETTERS (the source of truth) — mirrored
+// locally like Alphabet.jsx does, since this is about list display, not the
+// daily-mission sequencer itself.
+const PRIORITY_LETTERS = ["A", "E", "I", "O", "U", "M", "P", "L", "S", "T"];
+
+function isBeginnerSyllable(entry) {
+  const first = entry?.syllable?.[0]?.toUpperCase();
+  return first ? PRIORITY_LETTERS.includes(first) : false;
+}
 
 function multiSyllableWords(words) {
   return words.filter((w) => Array.isArray(w.syllables) && w.syllables.length >= 2);
@@ -117,6 +129,15 @@ export default function Syllables() {
   const fragments = DIGRAPH_FRAGMENTS[pair.mother] || [];
 
   const [mode, setMode] = useState("list");
+  const [beginnerFirst, setBeginnerFirst] = useState(true);
+  const beginnerIndexes = useMemo(() => {
+    const idxs = [];
+    for (let i = 0; i < Math.min(motherSyllables.length, secondarySyllables.length); i++) {
+      if (isBeginnerSyllable(motherSyllables[i])) idxs.push(i);
+    }
+    return idxs;
+  }, [motherSyllables, secondarySyllables]);
+  const hasBeginnerSubset = beginnerIndexes.length > 0 && beginnerIndexes.length < listCount;
 
   const helpTextByMode = {
     list: t("modules.syllablesHelpMain"),
@@ -195,8 +216,27 @@ export default function Syllables() {
       </div>
 
       {mode === "list" && (
-        <div className="reading-list">
-          {Array.from({ length: listCount }).map((_, i) => {
+        <>
+          {hasBeginnerSubset && (
+            <div className="phonics-tabs">
+              <button
+                type="button"
+                className={"phonics-tab" + (beginnerFirst ? " selected" : "")}
+                onClick={() => setBeginnerFirst(true)}
+              >
+                🌱 {t("modules.syllablesBeginnerFirst")}
+              </button>
+              <button
+                type="button"
+                className={"phonics-tab" + (!beginnerFirst ? " selected" : "")}
+                onClick={() => setBeginnerFirst(false)}
+              >
+                🧩 {t("modules.syllablesFullList")}
+              </button>
+            </div>
+          )}
+          <div className="reading-list">
+          {(beginnerFirst && hasBeginnerSubset ? beginnerIndexes : Array.from({ length: listCount }, (_, i) => i)).map((i) => {
             const m = motherSyllables[i];
             const s = secondarySyllables[i];
             return (
@@ -228,6 +268,7 @@ export default function Syllables() {
                           <span className="syllable-part">{chunk}</span>
                         </React.Fragment>
                       ))}
+                      <SyllableSpeakButton syllables={m.syllables} langCode={pair.mother} />
                     </div>
                   )}
                   <div className="reading-word-row secondary">
@@ -243,13 +284,15 @@ export default function Syllables() {
                           <span className="syllable-part">{chunk}</span>
                         </React.Fragment>
                       ))}
+                      <SyllableSpeakButton syllables={s.syllables} langCode={pair.secondary} />
                     </div>
                   )}
                 </div>
               </div>
             );
           })}
-        </div>
+          </div>
+        </>
       )}
 
       {mode === "build" && <BuildGame rounds={orderRounds} pair={pair} profile={profile} t={t} />}
@@ -338,6 +381,7 @@ function BuildGame({ rounds, pair, profile, t }) {
       <div className="game-prompt-row">
         <span className="game-option-emoji">{round.target.emoji}</span>
         <SpeakButton text={round.target.exampleWord} langCode={pair.mother} />
+        <SyllableSpeakButton syllables={round.target.syllables} langCode={pair.mother} />
       </div>
       <div className="syllable-slots">
         {round.target.syllables.map((s, i) => (
@@ -423,6 +467,7 @@ function MissingGame({ rounds, pair, profile, t }) {
       <div className="game-prompt-row">
         <span className="game-option-emoji">{round.target.emoji}</span>
         <SpeakButton text={round.target.exampleWord} langCode={pair.mother} />
+        <SyllableSpeakButton syllables={round.target.syllables} langCode={pair.mother} />
       </div>
       <div className="syllable-slots">
         {round.target.syllables.map((s, i) => (
@@ -508,6 +553,7 @@ function SplitGame({ rounds, pair, profile, t }) {
         <span className="game-option-emoji">{round.target.emoji}</span>
         <span className="game-prompt">{round.target.exampleWord}</span>
         <SpeakButton text={round.target.exampleWord} langCode={pair.mother} />
+        <SyllableSpeakButton syllables={round.target.syllables} langCode={pair.mother} />
       </div>
       <div className="game-options">
         {round.options.map((opt, i) => (
@@ -586,6 +632,7 @@ function DigraphGame({ rounds, pair, profile, t }) {
         <span className="game-option-emoji">{round.target.emoji}</span>
         <span className="game-prompt">{round.target.exampleWord}</span>
         <SpeakButton text={round.target.exampleWord} langCode={pair.mother} />
+        <SyllableSpeakButton syllables={round.target.syllables} langCode={pair.mother} />
       </div>
       <div className="game-options">
         {round.options.map((opt, i) => {

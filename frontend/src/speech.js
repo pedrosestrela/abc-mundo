@@ -221,3 +221,16 @@ export async function speakSequence(lines, langCode, options = {}) {
     if (zenWasPlaying) duckZenAmbience(0);
   }
 }
+
+// Speaks a word's syllable chunks (e.g. ["BA", "NA", "NA"]) one at a time
+// with a short pause between each, so "banana" is heard as "ba... na... na"
+// instead of run together as one word. Thin wrapper over speakSequence with
+// defaults tuned for syllable segmentation (a shorter, snappier pause than
+// song lyrics, and a normal narration rate/pitch rather than speakSequence's
+// warmer song defaults) — used by Syllables.jsx/Phonics.jsx wherever a word
+// broken into syllable chunks is read aloud.
+export async function speakSyllables(syllables, langCode, options = {}) {
+  const { pauseMs = 350, rate = 0.85, pitch = 1.1, onSyllableStart } = options;
+  if (!Array.isArray(syllables) || syllables.length === 0) return;
+  return speakSequence(syllables, langCode, { pauseMs, rate, pitch, onLineStart: onSyllableStart });
+}
