@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router-dom";
 import { getScience, getLabSimulators, getLabEngineering } from "../content/index.js";
@@ -554,6 +554,197 @@ function EngineeringChallenge({ id, data, pair, profile, bumpVersion }) {
   );
 }
 
+function shuffle(arr) {
+  const copy = [...arr];
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+}
+
+// Convention (see science.*.json): prediction_options[0] is always the
+// correct answer for every fact card — used here to turn the same content
+// into a scored quick-fire round without touching the data files.
+function buildQuickfireRounds(cards, tier) {
+  const count = tier === 1 ? 8 : tier === 2 ? 12 : 16;
+  const pool = shuffle(cards).slice(0, Math.min(count, cards.length));
+  return pool.map((card) => ({
+    card,
+    correct: card.prediction_options[0],
+    options: shuffle(card.prediction_options),
+  }));
+}
+
+function quickfireDurationMs(tier) {
+  if (tier === 1) return 9000;
+  if (tier === 2) return 7000;
+  return 5500;
+}
+
+// "Cientista Maluco" — fast-paced multiple-choice round layered on top of
+// the existing fact cards: same content, very different feel (timer,
+// streak counter, celebratory bursts) than the calm card-browsing tab.
+function ScienceQuickfire({ cards, pair, t, tier, profile }) {
+  const [phase, setPhase] = useState("idle"); // idle | playing | done
+  const [rounds, setRounds] = useState([]);
+  const [step, setStep] = useState(0);
+  const [score, setScore] = useState(0);
+  const [streak, setStreak] = useState(0);
+  const [bestStreak, setBestStreak] = useState(0);
+  const [feedback, setFeedback] = useState(null); // null | "correct" | "wrong" | "timeout"
+  const [pct, setPct] = useState(100);
+  const timerIdRef = useRef(null);
+  const deadlineRef = useRef(0);
+
+  function start() {
+    setRounds(buildQuickfireRounds(cards, tier));
+    setStep(0);
+    setScore(0);
+    setStreak(0);
+    setBestStreak(0);
+    setFeedback(null);
+    setPct(100);
+    setPhase("playing");
+  }
+
+  useEffect(() => {
+    if (phase !== "playing" || feedback) return undefined;
+    const duration = quickfireDurationMs(tier);
+    deadlineRef.current = Date.now() + duration;
+    setPct(100);
+    const id = setInterval(() => {
+      const remain = deadlineRef.current - Date.now();
+      setPct(Math.max(0, Math.round((remain / duration) * 100)));
+      if (remain <= 0) {
+        clearInterval(id);
+        setFeedback((prev) => prev || "timeout");
+      }
+    }, 100);
+    timerIdRef.current = id;
+    return () => clearInterval(id);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [phase, step]);
+
+  useEffect(() => {
+    if (!feedback) return undefined;
+    if (feedback === "timeout") {
+      setStreak(0);
+      pingProgress({ profileName: profile?.name, module: "science", event: `quickfire_timeout:${rounds[step]?.card.id}` });
+      recordSkillEvent(profile?.name, "science-quickfire", false);
+    }
+    const id = setTimeout(() => {
+      setFeedback(null);
+      setStep((s) => s + 1);
+    }, 900);
+    return () => clearTimeout(id);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [feedback]);
+
+  function answer(option) {
+    if (feedback) return;
+    clearInterval(timerIdRef.current);
+    const round = rounds[step];
+    const correct = option === round.correct;
+    setFeedback(correct ? "correct" : "wrong");
+    if (correct) {
+      setScore((s) => s + 1);
+      setStreak((s) => {
+        const next = s + 1;
+        setBestStreak((b) => Math.max(b, next));
+        return next;
+      });
+    } else {
+      setStreak(0);
+    }
+    recordSkillEvent(profile?.name, "science-quickfire", correct);
+    pingProgress({ profileName: profile?.name, module: "science", event: `quickfire_${correct ? "correct" : "wrong"}:${round.card.id}` });
+  }
+
+  const finished = phase === "playing" && step >= rounds.length;
+  useEffect(() => {
+    if (finished) {
+      pingProgress({ profileName: profile?.name, module: "science", event: `quickfire_finished:${score}/${rounds.length}` });
+      setPhase("done");
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [finished]);
+
+  const round = rounds[step];
+
+  return (
+    <>
+      <p className="page-intro">{t("modules.scienceQuickIntro")}</p>
+      {phase === "idle" && (
+        <div className="world-quiz-picker">
+          <button type="button" className="big-btn" onClick={start}>
+            ⚡ {t("modules.scienceQuickStart")}
+          </button>
+        </div>
+      )}
+
+      {phase === "playing" && round && (
+        <div className="game-card science-card">
+          <div className="game-progress">
+            {step + 1} / {rounds.length} · ⭐ {score}
+          </div>
+          <div className="quickfire-timerbar">
+            <div className={"quickfire-timerbar-fill" + (pct <= 30 ? " low" : "")} style={{ width: `${pct}%` }} />
+          </div>
+          {streak >= 2 && (
+            <p className={"quickfire-streak" + (feedback === "correct" ? " quickfire-streak-burst" : "")}>
+              🔥 {t("modules.scienceQuickStreak", { count: streak })}
+            </p>
+          )}
+          <div className="game-emoji">{round.card.emoji}</div>
+          <p className="mission-text">
+            {round.card.question}
+            <SpeakButton text={round.card.question} langCode={pair.mother} />
+          </p>
+          <div className="game-options">
+            {round.options.map((opt) => (
+              <button
+                key={opt}
+                type="button"
+                className={
+                  "big-btn game-option" +
+                  (feedback && opt === round.correct ? " correct" : "")
+                }
+                onClick={() => answer(opt)}
+                disabled={!!feedback}
+              >
+                {opt}
+              </button>
+            ))}
+          </div>
+          {feedback && (
+            <p className="game-result">
+              {feedback === "timeout"
+                ? "⏰ " + t("modules.scienceQuickTimeout")
+                : feedback === "correct"
+                ? (streak >= 3 ? "🎉 " : "✅ ") + t("modules.sciencePredictionCorrect")
+                : "❌ " + t("modules.sciencePredictionWrong")}
+            </p>
+          )}
+        </div>
+      )}
+
+      {phase === "done" && (
+        <div className="game-card science-card">
+          <div className="game-emoji">🏆</div>
+          <p className="game-result">
+            {t("modules.scienceQuickDone")}: {score} / {rounds.length}
+          </p>
+          <p className="mission-text">🔥 {t("modules.scienceQuickBest", { count: bestStreak })}</p>
+          <button type="button" className="big-btn" onClick={start}>
+            🔁 {t("modules.gamePlayAgain")}
+          </button>
+        </div>
+      )}
+    </>
+  );
+}
+
 export default function Science() {
   const { t } = useTranslation();
   const pair = getLangPair() || { mother: "pt", secondary: "en" };
@@ -624,6 +815,12 @@ export default function Science() {
           <span className="phonics-tab-inner">
             🏗️ {t("modules.scienceLabEngTab")}
             <TabSpeakIcon text={`${t("modules.scienceLabEngTab")}. ${t("modules.scienceLabEngIntro")}`} langCode={pair.mother} />
+          </span>
+        </button>
+        <button type="button" className={"phonics-tab" + (tab === "quick" ? " selected" : "")} onClick={() => setTab("quick")}>
+          <span className="phonics-tab-inner">
+            ⚡ {t("modules.scienceQuickTab")}
+            <TabSpeakIcon text={`${t("modules.scienceQuickTab")}. ${t("modules.scienceQuickIntro")}`} langCode={pair.mother} />
           </span>
         </button>
       </div>
@@ -756,6 +953,10 @@ export default function Science() {
             </React.Fragment>
           ))}
         </>
+      )}
+
+      {tab === "quick" && (
+        <ScienceQuickfire cards={cards} pair={pair} t={t} tier={tier} profile={profile} />
       )}
     </div>
   );

@@ -28,6 +28,125 @@ function buildQuizRounds(eras, tier) {
   });
 }
 
+function orderEraCount(tier) {
+  if (tier === 1) return 4;
+  if (tier === 2) return 5;
+  return 6;
+}
+
+// "Ordena o Tempo" — pick N eras from the 29-era timeline (kept in the
+// original chronological order they're fetched in), shuffle their display
+// order, and let the child tap two cards to swap them until every card
+// sits in its correct chronological slot. Tap-to-swap keeps this simple
+// (no drag-and-drop library) while still feeling like a real puzzle.
+function HistoryOrderGame({ eras, pair, t, tier, profile }) {
+  const [phase, setPhase] = useState("idle"); // idle | playing | done
+  const [targetOrder, setTargetOrder] = useState([]);
+  const [order, setOrder] = useState([]);
+  const [selectedIdx, setSelectedIdx] = useState(null);
+  const [swaps, setSwaps] = useState(0);
+
+  function start() {
+    const n = Math.min(orderEraCount(tier), eras.length);
+    const chosenIdx = shuffle(eras.map((_, i) => i)).slice(0, n).sort((a, b) => a - b);
+    const target = chosenIdx.map((i) => eras[i]);
+    let display = shuffle(target);
+    // Avoid a trivially-already-solved shuffle when possible.
+    if (n > 1) {
+      let attempts = 0;
+      while (display.every((e, i) => e.id === target[i].id) && attempts < 5) {
+        display = shuffle(target);
+        attempts += 1;
+      }
+    }
+    setTargetOrder(target);
+    setOrder(display);
+    setSelectedIdx(null);
+    setSwaps(0);
+    setPhase("playing");
+  }
+
+  const solved = order.length > 0 && order.every((e, i) => e.id === targetOrder[i]?.id);
+
+  useEffect(() => {
+    if (phase === "playing" && solved) {
+      const efficient = swaps <= Math.max(1, targetOrder.length - 1);
+      recordSkillEvent(profile?.name, "history-order", efficient);
+      pingProgress({ profileName: profile?.name, module: "history", event: `order_solved:${swaps}/${targetOrder.length}` });
+      setPhase("done");
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [solved, phase]);
+
+  function tapCard(idx) {
+    if (phase !== "playing") return;
+    if (selectedIdx === null) {
+      setSelectedIdx(idx);
+      return;
+    }
+    if (selectedIdx === idx) {
+      setSelectedIdx(null);
+      return;
+    }
+    setOrder((prev) => {
+      const next = [...prev];
+      [next[selectedIdx], next[idx]] = [next[idx], next[selectedIdx]];
+      return next;
+    });
+    setSwaps((s) => s + 1);
+    setSelectedIdx(null);
+  }
+
+  return (
+    <>
+      <p className="page-intro">{t("modules.historyOrderIntro")}</p>
+      {phase === "idle" && (
+        <div className="world-quiz-picker">
+          <button type="button" className="big-btn" onClick={start}>
+            🧭 {t("modules.historyOrderStart")}
+          </button>
+        </div>
+      )}
+
+      {phase === "playing" && (
+        <div className="game-card">
+          <p className="mission-text">{t("modules.historyOrderHint")}</p>
+          <div className="order-time-grid">
+            {order.map((era, idx) => (
+              <button
+                key={era.id}
+                type="button"
+                className={
+                  "order-time-card" +
+                  (selectedIdx === idx ? " picked" : "") +
+                  (era.id === targetOrder[idx]?.id ? " correct-pos" : "")
+                }
+                onClick={() => tapCard(idx)}
+              >
+                <span className="order-time-card-slot">{idx + 1}.</span>
+                <span>{era.emoji}</span>
+                <span>{era.title}</span>
+                {era.id === targetOrder[idx]?.id && <span aria-hidden="true">✅</span>}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {phase === "done" && (
+        <div className="game-card">
+          <div className="game-emoji">🕰️✨</div>
+          <p className="game-result">{t("modules.historyOrderDone")}</p>
+          <p className="mission-text">{t("modules.historyOrderSwaps", { count: swaps })}</p>
+          <button type="button" className="big-btn" onClick={start}>
+            🔁 {t("modules.gamePlayAgain")}
+          </button>
+        </div>
+      )}
+    </>
+  );
+}
+
 export default function PortugalHistory() {
   const { t } = useTranslation();
   const pair = getLangPair() || { mother: "pt", secondary: "en" };
@@ -104,7 +223,16 @@ export default function PortugalHistory() {
     <div className="page">
       <h1>{t("modules.historyTitle")} 🏰</h1>
       <div className="help-btn-corner">
-        <HelpButton text={tab === "quiz" ? t("modules.historyHelpQuiz") : t("modules.historyHelpTimeline")} langCode={pair.mother} />
+        <HelpButton
+          text={
+            tab === "quiz"
+              ? t("modules.historyHelpQuiz")
+              : tab === "order"
+              ? t("modules.historyHelpOrder")
+              : t("modules.historyHelpTimeline")
+          }
+          langCode={pair.mother}
+        />
       </div>
       <p className="page-intro">{t("modules.historyIntro")}</p>
       <MascotBubble character="vasco" mood="happy" langCode={pair.mother}>
@@ -144,6 +272,12 @@ export default function PortugalHistory() {
           <span className="phonics-tab-inner">
             🎮 {t("modules.historyQuiz")}
             <TabSpeakIcon text={`${t("modules.historyQuiz")}. ${t("modules.historyHelpQuiz")}`} langCode={pair.mother} />
+          </span>
+        </button>
+        <button type="button" className={"phonics-tab" + (tab === "order" ? " selected" : "")} onClick={() => setTab("order")}>
+          <span className="phonics-tab-inner">
+            🧭 {t("modules.historyOrderTab")}
+            <TabSpeakIcon text={`${t("modules.historyOrderTab")}. ${t("modules.historyHelpOrder")}`} langCode={pair.mother} />
           </span>
         </button>
       </div>
@@ -242,6 +376,10 @@ export default function PortugalHistory() {
             🔁 {t("modules.gamePlayAgain")}
           </button>
         </div>
+      )}
+
+      {tab === "order" && (
+        <HistoryOrderGame eras={eras} pair={pair} t={t} tier={tier} profile={profile} />
       )}
     </div>
   );
