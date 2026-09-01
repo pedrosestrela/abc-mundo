@@ -1,0 +1,422 @@
+[
+  {
+    "id": "cm-sandes",
+    "emoji": "🥪",
+    "task": "ロボットにチーズハムサンドの作り方を説明しよう。",
+    "steps": [
+      {
+        "id": "cm-sandes-1",
+        "precise": "パンを2まいとる。",
+        "vague": "パンをとる。",
+        "vagueQuestion": "なんまい?どんなパン?"
+      },
+      {
+        "id": "cm-sandes-2",
+        "precise": "パン1まいの上に、チーズ1まいとハム1まいをのせる。",
+        "vague": "チーズをのせる。",
+        "vagueQuestion": "どこにチーズをのせる?チーズだけ?それとも他にも?"
+      },
+      {
+        "id": "cm-sandes-3",
+        "precise": "もう1まいのパンでふたをして、サンドイッチを半分に切る。",
+        "vague": "サンドイッチをとじる。",
+        "vagueQuestion": "どうやってとじる?そのあと切る?切らない?"
+      }
+    ],
+    "distractors": [
+      "テレビをつける。",
+      "そとであそびにいく。"
+    ],
+    "successMessage": "ロボットはかんぺきなサンドイッチを作ったよ! 🥪✅"
+  },
+  {
+    "id": "cm-brinquedo",
+    "emoji": "🧸",
+    "task": "ロボットにおもちゃのかたづけかたを説明しよう。",
+    "steps": [
+      {
+        "id": "cm-brinquedo-1",
+        "precise": "おもちゃ箱をみつける。",
+        "vague": "箱をとってくる。",
+        "vagueQuestion": "どの箱?どこにある?"
+      },
+      {
+        "id": "cm-brinquedo-2",
+        "precise": "床にあるおもちゃをひろう。",
+        "vague": "おもちゃをひろう。",
+        "vagueQuestion": "どのおもちゃ?どこにある?"
+      },
+      {
+        "id": "cm-brinquedo-3",
+        "precise": "おもちゃを箱の中に入れて、ふたをしめる。",
+        "vague": "おもちゃをしまう。",
+        "vagueQuestion": "どこにしまう?ふたはしめる?しめない?"
+      }
+    ],
+    "distractors": [
+      "はをみがく。",
+      "コートをきる。"
+    ],
+    "successMessage": "ロボットはかんぺきにおもちゃをかたづけたよ! 🧸✅"
+  },
+  {
+    "id": "cm-dentes",
+    "emoji": "🦷",
+    "task": "ロボットにはのみがきかたを説明しよう。",
+    "steps": [
+      {
+        "id": "cm-dentes-1",
+        "precise": "はブラシにはみがきこをつける。",
+        "vague": "ブラシをつかう。",
+        "vagueQuestion": "さいしょにブラシに何かつける?"
+      },
+      {
+        "id": "cm-dentes-2",
+        "precise": "やさしいうごきで、2分間すべての歯をみがく。",
+        "vague": "はをみがく。",
+        "vagueQuestion": "どのくらいのあいだ?ブラシはどうやってうごかす?"
+      },
+      {
+        "id": "cm-dentes-3",
+        "precise": "水で口をすすいで、ブラシをきれいにする。",
+        "vague": "ぜんぶあらう。",
+        "vagueQuestion": "何をあらう?口?ブラシ?りょうほう?"
+      }
+    ],
+    "distractors": [
+      "ベッドをととのえる。",
+      "あさごはんをたべる。"
+    ],
+    "successMessage": "ロボットはかんぺきにはをみがいたよ! 🦷✨"
+  },
+  {
+    "id": "cm-casaco",
+    "emoji": "🧥",
+    "task": "ロボットにコートのきかたを説明しよう。",
+    "steps": [
+      {
+        "id": "cm-casaco-1",
+        "precise": "フックにかかっているコートをみつける。",
+        "vague": "コートをとってくる。",
+        "vagueQuestion": "コートはどこにある?"
+      },
+      {
+        "id": "cm-casaco-2",
+        "precise": "うでをコートのそでに1本ずついれる。",
+        "vague": "コートをきる。",
+        "vagueQuestion": "どうやってきる?かたうでずつ?それとも両方いっしょに?"
+      },
+      {
+        "id": "cm-casaco-3",
+        "precise": "コートのファスナーかボタンをとめる。",
+        "vague": "コートをとめる。",
+        "vagueQuestion": "何でとめる?ファスナー、ボタン、マジックテープ?"
+      }
+    ],
+    "distractors": [
+      "おもちゃをかたづける。",
+      "あさごはんをたべる。"
+    ],
+    "successMessage": "ロボットはかんぺきにコートをきたよ! 🧥✅"
+  },
+  {
+    "id": "cm-atacadores",
+    "emoji": "👟",
+    "task": "ロボットにくつひものむすびかたを説明しよう。",
+    "steps": [
+      {
+        "id": "cm-atacadores-1",
+        "precise": "くつひものりょうはしをクロスさせる。",
+        "vague": "くつひもを何かする。",
+        "vagueQuestion": "くつひもで何をする?"
+      },
+      {
+        "id": "cm-atacadores-2",
+        "precise": "それぞれのはしで輪っかをつくる。",
+        "vague": "輪っかをつくる。",
+        "vagueQuestion": "いくつ輪っかをつくる?何でつくる?"
+      },
+      {
+        "id": "cm-atacadores-3",
+        "precise": "かたほうの輪っかをもういっぽうの下にとおして、つよくひっぱる。",
+        "vague": "しめる。",
+        "vagueQuestion": "何をしめる?どうやって?"
+      }
+    ],
+    "distractors": [
+      "テレビをつける。",
+      "そとであそびにいく。"
+    ],
+    "successMessage": "ロボットはかんぺきにくつひもをむすんだよ! 👟✅"
+  },
+  {
+    "id": "cm-cama",
+    "emoji": "🛏️",
+    "task": "ロボットにベッドのなおしかたを説明しよう。",
+    "steps": [
+      {
+        "id": "cm-cama-1",
+        "precise": "下のシーツをぴんとはるまでひっぱる。",
+        "vague": "ベッドをなおす。",
+        "vagueQuestion": "さいしょに何をなおす?"
+      },
+      {
+        "id": "cm-cama-2",
+        "precise": "毛布をひろげて、ベッドの上のはしにそろえる。",
+        "vague": "毛布をおく。",
+        "vagueQuestion": "どこにおく?何にそろえる?"
+      },
+      {
+        "id": "cm-cama-3",
+        "precise": "まくらをベッドのあたまのほうにおく。",
+        "vague": "まくらをおく。",
+        "vagueQuestion": "まくらはどこにおく?"
+      }
+    ],
+    "distractors": [
+      "りんごをたべる。",
+      "トイレにいく。"
+    ],
+    "successMessage": "ロボットはかんぺきにベッドをなおしたよ! 🛏️✅"
+  },
+  {
+    "id": "cm-planta",
+    "emoji": "🌱",
+    "task": "ロボットに植物への水やりのしかたを説明しよう。",
+    "steps": [
+      {
+        "id": "cm-planta-1",
+        "precise": "じょうろに水を半分までいれる。",
+        "vague": "水をとってくる。",
+        "vagueQuestion": "どのくらいの水?何にいれる?"
+      },
+      {
+        "id": "cm-planta-2",
+        "precise": "葉っぱではなく土の上に、ゆっくり水をそそぐ。",
+        "vague": "植物に水をかける。",
+        "vagueQuestion": "どこにかける?ゆっくり?はやく?"
+      },
+      {
+        "id": "cm-planta-3",
+        "precise": "うえ木ばちから水があふれていないか確認して、とめる。",
+        "vague": "とめる。",
+        "vagueQuestion": "いつとめる?じゅうぶんかどうやってわかる?"
+      }
+    ],
+    "distractors": [
+      "ラジオをつける。",
+      "くつをはく。"
+    ],
+    "successMessage": "ロボットはかんぺきに水やりをしたよ! 🌱✅"
+  },
+  {
+    "id": "cm-tshirt",
+    "emoji": "👕",
+    "task": "ロボットにTシャツのたたみかたを説明しよう。",
+    "steps": [
+      {
+        "id": "cm-tshirt-1",
+        "precise": "Tシャツを平らな場所に、おもてを上にしてひろげる。",
+        "vague": "Tシャツをテーブルにおく。",
+        "vagueQuestion": "どうやっておく?どちらの面を上にする?"
+      },
+      {
+        "id": "cm-tshirt-2",
+        "precise": "そでをそれぞれ、Tシャツの本体の上にたたみこむ。",
+        "vague": "そでをたたむ。",
+        "vagueQuestion": "どちらの方向にたたむ?"
+      },
+      {
+        "id": "cm-tshirt-3",
+        "precise": "下のはしをえりに届くまで上にたたむ。",
+        "vague": "Tシャツを半分にたたむ。",
+        "vagueQuestion": "どこまでたたむ?"
+      }
+    ],
+    "distractors": [
+      "まどをあける。",
+      "おふろにはいる。"
+    ],
+    "successMessage": "ロボットはかんぺきにTシャツをたたんだよ! 👕✅"
+  },
+  {
+    "id": "cm-telefone",
+    "emoji": "📞",
+    "task": "ロボットにていねいな電話のかけかたを説明しよう。",
+    "steps": [
+      {
+        "id": "cm-telefone-1",
+        "precise": "「おはようございます」か「こんにちは」と、じぶんの名前を言う。",
+        "vague": "話す。",
+        "vagueQuestion": "さいしょに何を言う?"
+      },
+      {
+        "id": "cm-telefone-2",
+        "precise": "相手にいま話す時間があるかたずねる。",
+        "vague": "何かたずねる。",
+        "vagueQuestion": "何をたずねる?"
+      },
+      {
+        "id": "cm-telefone-3",
+        "precise": "さいごにお礼を言って、「さようなら」と言う。",
+        "vague": "電話をきる。",
+        "vagueQuestion": "何も言わずにそのままきる?"
+      }
+    ],
+    "distractors": [
+      "ドアをしめる。",
+      "手をあらいにいく。"
+    ],
+    "successMessage": "ロボットはかんぺきに電話をかけたよ! 📞✅"
+  },
+  {
+    "id": "cm-caminho",
+    "emoji": "🚪",
+    "task": "ロボットにリビングからキッチンへの行きかたを説明しよう。",
+    "steps": [
+      {
+        "id": "cm-caminho-1",
+        "precise": "右がわのドアからリビングを出る。",
+        "vague": "リビングを出る。",
+        "vagueQuestion": "どのドアから出る?"
+      },
+      {
+        "id": "cm-caminho-2",
+        "precise": "ろうかをつきあたりまでいく。",
+        "vague": "ろうかをあるく。",
+        "vagueQuestion": "どこまであるく?"
+      },
+      {
+        "id": "cm-caminho-3",
+        "precise": "左にまがると、キッチンは一つ目のドア。",
+        "vague": "まがって入る。",
+        "vagueQuestion": "どちらにまがる?どのドア?"
+      }
+    ],
+    "distractors": [
+      "目をとじる。",
+      "なわとびをする。"
+    ],
+    "successMessage": "ロボットはかんぺきにキッチンへついたよ! 🚪✅"
+  },
+  {
+    "id": "cm-dia",
+    "emoji": "📅",
+    "task": "ロボットに学校での一日の話しかたを説明しよう。",
+    "steps": [
+      {
+        "id": "cm-dia-1",
+        "precise": "何時に学校についたかを言う。",
+        "vague": "朝のことを話す。",
+        "vagueQuestion": "朝のこと、具体的には何を言う?"
+      },
+      {
+        "id": "cm-dia-2",
+        "precise": "じゅぎょうであったおもしろいことを一つ話す。",
+        "vague": "じゅぎょうについて話す。",
+        "vagueQuestion": "じゅぎょうで何があった?"
+      },
+      {
+        "id": "cm-dia-3",
+        "precise": "一日の終わりにどう感じたか、なぜかを言う。",
+        "vague": "一日がどうだったか言う。",
+        "vagueQuestion": "よかった?わるかった?なぜ?"
+      }
+    ],
+    "distractors": [
+      "かばんをかたづける。",
+      "ねる。"
+    ],
+    "successMessage": "ロボットはかんぺきに一日のことをわかったよ! 📅✅"
+  },
+  {
+    "id": "cm-mesa",
+    "emoji": "🍽️",
+    "task": "ロボットにテーブルの準備のしかたを説明しよう。",
+    "steps": [
+      {
+        "id": "cm-mesa-1",
+        "precise": "それぞれのいすの前にお皿をおく。",
+        "vague": "お皿をおく。",
+        "vagueQuestion": "お皿はどこにおく?"
+      },
+      {
+        "id": "cm-mesa-2",
+        "precise": "お皿の左にフォーク、右にナイフをおく。",
+        "vague": "食器をおく。",
+        "vagueQuestion": "フォークはどちらがわ?ナイフは?"
+      },
+      {
+        "id": "cm-mesa-3",
+        "precise": "それぞれのお皿の右上にコップをおく。",
+        "vague": "コップをおく。",
+        "vagueQuestion": "コップはどこにおく?"
+      }
+    ],
+    "distractors": [
+      "パソコンをつける。",
+      "かみをとかす。"
+    ],
+    "successMessage": "ロボットはかんぺきにテーブルの準備をしたよ! 🍽️✅"
+  },
+  {
+    "id": "cm-maos",
+    "emoji": "🧼",
+    "task": "ロボットに正しい手のあらいかたを説明しよう。",
+    "steps": [
+      {
+        "id": "cm-maos-1",
+        "precise": "ぬるま湯で手をぬらす。",
+        "vague": "じゃぐちにいく。",
+        "vagueQuestion": "じゃぐちで何をする?"
+      },
+      {
+        "id": "cm-maos-2",
+        "precise": "せっけんで20秒間、手をこする。",
+        "vague": "せっけんをつかう。",
+        "vagueQuestion": "どのくらいのあいだこする?"
+      },
+      {
+        "id": "cm-maos-3",
+        "precise": "手をよくすすいで、タオルでふく。",
+        "vague": "おわる。",
+        "vagueQuestion": "どうやっておわる?すすぐ?ふく?"
+      }
+    ],
+    "distractors": [
+      "テレビをつける。",
+      "学校にいく。"
+    ],
+    "successMessage": "ロボットはかんぺきに手をあらったよ! 🧼✅"
+  },
+  {
+    "id": "cm-mochila",
+    "emoji": "🎒",
+    "task": "ロボットにランドセルの準備のしかたを説明しよう。",
+    "steps": [
+      {
+        "id": "cm-mochila-1",
+        "precise": "時間わりで明日の教科書をたしかめる。",
+        "vague": "時間わりを見る。",
+        "vagueQuestion": "時間わりで何をさがす?"
+      },
+      {
+        "id": "cm-mochila-2",
+        "precise": "ただしい教科書とノートをランドセルにいれる。",
+        "vague": "ランドセルをいっぱいにする。",
+        "vagueQuestion": "何でいっぱいにする?"
+      },
+      {
+        "id": "cm-mochila-3",
+        "precise": "ふでばこと水とうをよこのポケットにいれる。",
+        "vague": "のこりをしまう。",
+        "vagueQuestion": "「のこり」って何?どこにしまう?"
+      }
+    ],
+    "distractors": [
+      "アイスをたべる。",
+      "ボールであそぶ。"
+    ],
+    "successMessage": "ロボットはかんぺきにランドセルの準備をしたよ! 🎒✅"
+  }
+]
