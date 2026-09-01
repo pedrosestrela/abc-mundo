@@ -1,0 +1,559 @@
+{
+  "wantsNeeds": [
+    {
+      "id": "wn1",
+      "emoji": "🍞",
+      "name": "食べるためのパン",
+      "isNeed": true
+    },
+    {
+      "id": "wn2",
+      "emoji": "🧸",
+      "name": "新しいおもちゃ",
+      "isNeed": false
+    },
+    {
+      "id": "wn3",
+      "emoji": "👟",
+      "name": "足にはくくつ",
+      "isNeed": true
+    },
+    {
+      "id": "wn4",
+      "emoji": "🍬",
+      "name": "あめ",
+      "isNeed": false
+    },
+    {
+      "id": "wn5",
+      "emoji": "🧥",
+      "name": "冬用のコート",
+      "isNeed": true
+    },
+    {
+      "id": "wn6",
+      "emoji": "🎮",
+      "name": "新しいテレビゲーム",
+      "isNeed": false
+    },
+    {
+      "id": "wn7",
+      "emoji": "💧",
+      "name": "飲むための水",
+      "isNeed": true
+    },
+    {
+      "id": "wn8",
+      "emoji": "🃏",
+      "name": "コレクションカード",
+      "isNeed": false
+    },
+    {
+      "id": "wn9",
+      "emoji": "🛏️",
+      "name": "寝るためのベッド",
+      "isNeed": true
+    },
+    {
+      "id": "wn10",
+      "emoji": "🍦",
+      "name": "おかわりのアイスクリーム",
+      "isNeed": false
+    },
+    {
+      "id": "wn11",
+      "emoji": "🥕",
+      "name": "食べるための野菜",
+      "isNeed": true
+    },
+    {
+      "id": "wn12",
+      "emoji": "🎪",
+      "name": "サーカスのチケット",
+      "isNeed": false
+    },
+    {
+      "id": "wn13",
+      "emoji": "🧴",
+      "name": "手を洗うせっけん",
+      "isNeed": true
+    },
+    {
+      "id": "wn14",
+      "emoji": "🎧",
+      "name": "新しいヘッドホン",
+      "isNeed": false
+    },
+    {
+      "id": "wn15",
+      "emoji": "🩹",
+      "name": "切り傷のためのばんそうこう",
+      "isNeed": true
+    },
+    {
+      "id": "wn16",
+      "emoji": "🎨",
+      "name": "3セット目のペン",
+      "isNeed": false
+    }
+  ],
+  "savingsDecisions": [
+    {
+      "id": "ss1",
+      "scenarioText": "今週おこづかいで600円もらったよ。お店で、とても気に入ったおもちゃと本を見つけた。でも、どちらか1つしか買えないよ。",
+      "budget": 600,
+      "items": [
+        {
+          "id": "toy",
+          "emoji": "🧸",
+          "name": "おもちゃ",
+          "price": 500
+        },
+        {
+          "id": "book",
+          "emoji": "📖",
+          "name": "本",
+          "price": 350
+        }
+      ]
+    },
+    {
+      "id": "ss2",
+      "scenarioText": "プレゼントに800円もらったよ。大好きなボードゲームとスケート靴を見つけたけど、お金は1つ分しかないよ。",
+      "budget": 800,
+      "items": [
+        {
+          "id": "boardgame",
+          "emoji": "🎲",
+          "name": "ボードゲーム",
+          "price": 600
+        },
+        {
+          "id": "skates",
+          "emoji": "🛼",
+          "name": "スケート靴",
+          "price": 750
+        }
+      ]
+    },
+    {
+      "id": "ss3",
+      "scenarioText": "1か月かけて1000円貯めたよ。お店で、おもちゃの自転車と携帯ゲーム機を見つけた。どちらか1つしか選べないよ。",
+      "budget": 1000,
+      "items": [
+        {
+          "id": "bike",
+          "emoji": "🚲",
+          "name": "おもちゃの自転車",
+          "price": 900
+        },
+        {
+          "id": "console",
+          "emoji": "🎮",
+          "name": "携帯ゲーム機",
+          "price": 950
+        }
+      ]
+    }
+  ],
+  "piggyBank": {
+    "intro": "毎週、貯金箱に硬貨を少し入れることができるよ。お金が少しずつ増えていくのを見てみよう!",
+    "coinTurns": [
+      50,
+      20,
+      100,
+      30,
+      50,
+      40,
+      60
+    ],
+    "goal": 300,
+    "outro": "見た?がまん強く少しずつ貯めることが、たくさんの貯金に変わっていくんだよ!"
+  },
+  "discountAds": [
+    {
+      "id": "da1",
+      "emoji": "🛴",
+      "product": "おもちゃのキックボード",
+      "fakeOriginalPrice": 4000,
+      "discountPercent": 50,
+      "sellingPrice": 2000,
+      "usualPrice": 2000,
+      "isGoodDeal": false,
+      "explanation": "「もとの値段」4000円は、大きな割引に見せるために作られたものだよ。でもほかのお店では、このキックボードはいつも2000円なんだ——ぜんぜんお得になっていないよ!"
+    },
+    {
+      "id": "da2",
+      "emoji": "📖",
+      "product": "冒険の本",
+      "fakeOriginalPrice": 1000,
+      "discountPercent": 30,
+      "sellingPrice": 700,
+      "usualPrice": 1000,
+      "isGoodDeal": true,
+      "explanation": "この割引は本当だよ:この本は本当にいつも1000円で、今は700円になっているんだ。本当に300円お得だよ!"
+    },
+    {
+      "id": "da3",
+      "emoji": "🎧",
+      "product": "カラフルなヘッドホン",
+      "fakeOriginalPrice": 6000,
+      "discountPercent": 70,
+      "sellingPrice": 1800,
+      "usualPrice": 1800,
+      "isGoodDeal": false,
+      "explanation": "70%オフはすごそうに見えるけど、「いつもの値段」6000円は作られたものだよ。この機種はどのお店でもいつも1800円くらいなんだ。"
+    },
+    {
+      "id": "da4",
+      "emoji": "🧩",
+      "product": "100ピースのパズル",
+      "fakeOriginalPrice": 1500,
+      "discountPercent": 20,
+      "sellingPrice": 1200,
+      "usualPrice": 1500,
+      "isGoodDeal": true,
+      "explanation": "このパズルはここ数週間本当に1500円で、今は1200円になっているよ。これは本当の300円割引だよ。"
+    },
+    {
+      "id": "da5",
+      "emoji": "🎮",
+      "product": "ゲームのコントローラー",
+      "fakeOriginalPrice": 3000,
+      "discountPercent": 25,
+      "sellingPrice": 2250,
+      "usualPrice": 2250,
+      "isGoodDeal": false,
+      "explanation": "「もとの値段」3000円は作られたものだよ。このコントローラーはどのお店でもいつも2250円で、本当の割引はないんだ。"
+    },
+    {
+      "id": "da6",
+      "emoji": "👕",
+      "product": "プリントTシャツ",
+      "fakeOriginalPrice": 1200,
+      "discountPercent": 40,
+      "sellingPrice": 720,
+      "usualPrice": 720,
+      "isGoodDeal": true,
+      "explanation": "この割引は本当だよ:このTシャツは本当に1200円で、今は720円になっているんだ。本当に480円お得だよ!"
+    },
+    {
+      "id": "da7",
+      "emoji": "🚲",
+      "product": "小さな自転車",
+      "fakeOriginalPrice": 15000,
+      "discountPercent": 60,
+      "sellingPrice": 6000,
+      "usualPrice": 6000,
+      "isGoodDeal": false,
+      "explanation": "60%オフはすごそうに見えるけど、「もとの値段」15000円は最初からなかったんだ。この自転車はいつも6000円くらいだよ。"
+    },
+    {
+      "id": "da8",
+      "emoji": "🧸",
+      "product": "巨大なぬいぐるみ",
+      "fakeOriginalPrice": 2500,
+      "discountPercent": 15,
+      "sellingPrice": 2125,
+      "usualPrice": 2500,
+      "isGoodDeal": false,
+      "explanation": "販売価格2125円は、いつもの値段2500円よりたった375円安いだけだよ——15%オフという表示ほどはお得ではないんだ。"
+    }
+  ],
+  "interestExample": {
+    "principal": 1000,
+    "yearlyBonus": 100,
+    "years": 2,
+    "intro": "銀行にお金を預けると、時々、そのまま置いておいたことへのお礼として少し多くお金をくれることがあるよ。これを利子と呼ぶんだ。",
+    "explanation": "銀行に1000円を預けて、1年ごとに100円多くもらえるとすると、1年後には1100円になるよ。2年後には1200円になるよ。預けている間に、お金が自然に増えていくんだ!"
+  },
+  "weeklyBudget": [
+    {
+      "id": "wb1",
+      "allowance": 1000,
+      "goal": {
+        "emoji": "📖",
+        "name": "新しい本",
+        "amount": 500
+      },
+      "days": [
+        {
+          "id": "d1",
+          "dayLabel": "月曜日",
+          "type": "expense",
+          "emoji": "🚌",
+          "label": "交通費",
+          "amount": 100
+        },
+        {
+          "id": "d2",
+          "dayLabel": "火曜日",
+          "type": "optional",
+          "emoji": "🍦",
+          "label": "アイスクリームを買いたい?",
+          "amount": 100
+        },
+        {
+          "id": "d3",
+          "dayLabel": "水曜日",
+          "type": "surprise",
+          "emoji": "🚰",
+          "label": "水とうをなくしてしまった!新しいのを買う必要があるよ。",
+          "amount": 200
+        },
+        {
+          "id": "d4",
+          "dayLabel": "木曜日",
+          "type": "expense",
+          "emoji": "🥪",
+          "label": "おやつ",
+          "amount": 150
+        }
+      ]
+    },
+    {
+      "id": "wb2",
+      "allowance": 800,
+      "goal": {
+        "emoji": "🧸",
+        "name": "新しいおもちゃ",
+        "amount": 400
+      },
+      "days": [
+        {
+          "id": "d1",
+          "dayLabel": "月曜日",
+          "type": "expense",
+          "emoji": "🚌",
+          "label": "交通費",
+          "amount": 80
+        },
+        {
+          "id": "d2",
+          "dayLabel": "火曜日",
+          "type": "expense",
+          "emoji": "🥪",
+          "label": "おやつ",
+          "amount": 120
+        },
+        {
+          "id": "d3",
+          "dayLabel": "水曜日",
+          "type": "optional",
+          "emoji": "🃏",
+          "label": "コレクションカードを買いたい?",
+          "amount": 100
+        },
+        {
+          "id": "d4",
+          "dayLabel": "木曜日",
+          "type": "surprise",
+          "emoji": "🎒",
+          "label": "リュックが破れてしまった!新しいかばんを買う必要があるよ。",
+          "amount": 150
+        }
+      ]
+    },
+    {
+      "id": "wb3",
+      "allowance": 1200,
+      "goal": {
+        "emoji": "🎁",
+        "name": "特別なプレゼント",
+        "amount": 600
+      },
+      "days": [
+        {
+          "id": "d1",
+          "dayLabel": "月曜日",
+          "type": "expense",
+          "emoji": "🚌",
+          "label": "交通費",
+          "amount": 100
+        },
+        {
+          "id": "d2",
+          "dayLabel": "火曜日",
+          "type": "surprise",
+          "emoji": "✏️",
+          "label": "ペンをなくしてしまった!新しいのを買う必要があるよ。",
+          "amount": 150
+        },
+        {
+          "id": "d3",
+          "dayLabel": "水曜日",
+          "type": "optional",
+          "emoji": "📗",
+          "label": "マンガ雑誌を買いたい?",
+          "amount": 250
+        },
+        {
+          "id": "d4",
+          "dayLabel": "木曜日",
+          "type": "expense",
+          "emoji": "🥪",
+          "label": "おやつ",
+          "amount": 200
+        }
+      ]
+    },
+    {
+      "id": "wb4",
+      "allowance": 900,
+      "goal": {
+        "emoji": "🎧",
+        "name": "ヘッドホン",
+        "amount": 450
+      },
+      "days": [
+        {
+          "id": "d1",
+          "dayLabel": "月曜日",
+          "type": "expense",
+          "emoji": "🚌",
+          "label": "交通費",
+          "amount": 90
+        },
+        {
+          "id": "d2",
+          "dayLabel": "火曜日",
+          "type": "surprise",
+          "emoji": "🌂",
+          "label": "雨が降って、かさをなくしてしまった!新しいのを買う必要があるよ。",
+          "amount": 120
+        },
+        {
+          "id": "d3",
+          "dayLabel": "水曜日",
+          "type": "optional",
+          "emoji": "🍿",
+          "label": "映画館でポップコーンを買いたい?",
+          "amount": 100
+        },
+        {
+          "id": "d4",
+          "dayLabel": "木曜日",
+          "type": "expense",
+          "emoji": "🥪",
+          "label": "おやつ",
+          "amount": 130
+        }
+      ]
+    },
+    {
+      "id": "wb5",
+      "allowance": 1100,
+      "goal": {
+        "emoji": "🎨",
+        "name": "絵の具セット",
+        "amount": 550
+      },
+      "days": [
+        {
+          "id": "d1",
+          "dayLabel": "月曜日",
+          "type": "expense",
+          "emoji": "🚌",
+          "label": "交通費",
+          "amount": 100
+        },
+        {
+          "id": "d2",
+          "dayLabel": "火曜日",
+          "type": "expense",
+          "emoji": "🥪",
+          "label": "おやつ",
+          "amount": 140
+        },
+        {
+          "id": "d3",
+          "dayLabel": "水曜日",
+          "type": "surprise",
+          "emoji": "🧦",
+          "label": "くつ下に穴があいてしまった!新しいのを買う必要があるよ。",
+          "amount": 130
+        },
+        {
+          "id": "d4",
+          "dayLabel": "木曜日",
+          "type": "optional",
+          "emoji": "🍭",
+          "label": "巨大なペロペロキャンディを買いたい?",
+          "amount": 90
+        }
+      ]
+    }
+  ],
+  "safety": [
+    {
+      "id": "fs1",
+      "emoji": "💳",
+      "scenario": "オンラインで知り合った人が、おうちの人の銀行カードの番号を教えてほしいと言ってきた。",
+      "isSafe": false,
+      "explanation": "大人に助けを求めよう!カードの番号は秘密で、オンラインでも知らない人に絶対に教えないよ。"
+    },
+    {
+      "id": "fs2",
+      "emoji": "🛍️",
+      "scenario": "オンラインのお店で何か買いたいので、支払う前におうちの人に助けを求めた。",
+      "isSafe": true,
+      "explanation": "よくできたね!オンラインで買う前におうちの人に助けを求めることは、だまされるのを防いでくれるよ。"
+    },
+    {
+      "id": "fs3",
+      "emoji": "🏆",
+      "scenario": "「賞品が当たりました!受け取るには今すぐカードの情報を送ってください」というメッセージが届いて、送ろうとしている。",
+      "isSafe": false,
+      "explanation": "大人に助けを求めよう!カードの情報を求める賞品は、ほとんどいつも詐欺だよ——絶対にその情報を送らないよ。"
+    },
+    {
+      "id": "fs4",
+      "emoji": "🔢",
+      "scenario": "カードの暗証番号は、自分とおうちの人しか知らない。",
+      "isSafe": true,
+      "explanation": "いいね!暗証番号は、信頼できる家族だけが知っているべき秘密だよ。"
+    },
+    {
+      "id": "fs5",
+      "emoji": "🤝",
+      "scenario": "学校の友だちが「ためしにやってみたいだけ」とおうちの人のカードの暗証番号を聞いてきたので、教えてしまった。",
+      "isSafe": false,
+      "explanation": "大人に助けを求めよう!暗証番号はだれにも、友だちにも絶対に教えないよ。"
+    },
+    {
+      "id": "fs6",
+      "emoji": "👨‍👩‍👧",
+      "scenario": "信頼できる大人がそばにいっしょにいながら、オンラインで買い物をしている。",
+      "isSafe": true,
+      "explanation": "完ぺき!信頼できる大人がそばにいるオンライン買い物は、いちばん安全な方法だよ。"
+    },
+    {
+      "id": "fs7",
+      "emoji": "⏰",
+      "scenario": "「今すぐ支払わないとアカウントを失います!」というメッセージが届いて、だれにも聞かずに急いで支払ってしまった。",
+      "isSafe": false,
+      "explanation": "大人に助けを求めよう!急がせるメッセージはたいてい詐欺だよ。支払う前はいつも聞こう。"
+    },
+    {
+      "id": "fs8",
+      "emoji": "🕵️",
+      "scenario": "すごくお得な無料のお金の話を見つけて、信じる前におうちの人に本当か聞いた。",
+      "isSafe": true,
+      "explanation": "とても賢いね!うますぎる話はたいてい本物じゃないよ。先に聞くことで自分を守れるんだ。"
+    },
+    {
+      "id": "fs9",
+      "emoji": "📱",
+      "scenario": "「ゲームを試すため」だけと言っておうちの人のカード番号を求めるアプリをインストールした。",
+      "isSafe": false,
+      "explanation": "大人に助けを求めよう!本物のゲームは、ためすためにカードの情報なんて必要ないよ。"
+    },
+    {
+      "id": "fs10",
+      "emoji": "🔒",
+      "scenario": "オンラインのお店のアドレスにかぎのマークがついているのを見て、買う前におうちの人に安全か確認してもらった。",
+      "isSafe": true,
+      "explanation": "よくできたね!買う前に、サイトが安全かおうちの人といっしょに確認するのはいい習慣だよ。"
+    }
+  ]
+}
