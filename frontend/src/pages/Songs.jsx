@@ -8,6 +8,17 @@ import Illustration from "../components/Illustrations.jsx";
 import HelpButton from "../components/HelpButton.jsx";
 import MascotBubble from "../components/mascots/MascotBubble.jsx";
 
+// Real recorded-voice audio for songs (ElevenLabs, generated offline and
+// bundled as static files — see frontend/public/audio/songs/NOTICE.md).
+// Only covers a subset of songs/languages (free-tier character budget), so
+// every lookup falls back to the existing Web Speech synthesis path below
+// when no file exists for a given song+language.
+const REAL_AUDIO = import.meta.glob("/public/audio/songs/*/*.mp3", { eager: true, query: "?url", import: "default" });
+function realAudioUrl(songId, langCode) {
+  const key = `/public/audio/songs/${langCode}/${songId}.mp3`;
+  return REAL_AUDIO[key] || null;
+}
+
 // Splits a lyric line into words while keeping track of each word's start
 // character offset, so a `charIndex` reported by the Web Speech API's
 // `onboundary` event can be matched back to a word to highlight. Mirrors the
@@ -37,27 +48,66 @@ export default function Songs() {
 
   useEffect(() => stopBackgroundMusic, []);
 
+async function playRealAudio(url, song, key, setPlaying) {
+    return new Promise((resolve) => {
+      const audio = new Audio(url);
+      // No word-boundary events from a recorded file, so lines are
+      // highlighted proportionally to elapsed time weighted by line
+      // length — an approximation, not a real karaoke sync, but still
+      // gives a "follow along" cue during real sung/narrated playback.
+      const weights = song.lyrics.map((l) => Math.max(l.length, 8));
+      const total = weights.reduce((a, b) => a + b, 0);
+      audio.addEventListener("timeupdate", () => {
+        if (!audio.duration) return;
+        const elapsedFrac = audio.currentTime / audio.duration;
+        let acc = 0;
+        let lineIndex = 0;
+        for (let i = 0; i < weights.length; i++) {
+          acc += weights[i];
+          if (elapsedFrac <= acc / total) {
+            lineIndex = i;
+            break;
+          }
+          lineIndex = i;
+        }
+        setPlaying((prev) => (prev && prev.key === key ? { ...prev, lineIndex, wordIndex: -1 } : prev));
+      });
+      audio.addEventListener("ended", resolve);
+      audio.addEventListener("error", resolve);
+      audio.play().catch(resolve);
+    });
+  }
+
   async function handlePlay(song, langCode) {
     const profile = getProfile();
-    pingProgress({ profileName: profile?.name, module: "songs", event: `song_played:${song.id}:${langCode}` });
     const key = `${song.id}:${langCode}`;
+    const audioUrl = realAudioUrl(song.id, langCode);
+    pingProgress({
+      profileName: profile?.name,
+      module: "songs",
+      event: `song_played:${song.id}:${langCode}:${audioUrl ? "real" : "synth"}`,
+    });
     setPlaying({ key, lineIndex: 0, wordIndex: -1 });
     startBackgroundMusic();
-    await speakSequence(song.lyrics, langCode, {
-      onLineStart: (lineIndex) => setPlaying({ key, lineIndex, wordIndex: -1 }),
-      onWordBoundary: (charIndex) => {
-        setPlaying((prev) => {
-          if (!prev || prev.key !== key) return prev;
-          const words = splitWords(song.lyrics[prev.lineIndex] || "");
-          let wordIndex = -1;
-          for (let w = 0; w < words.length; w++) {
-            if (words[w].start <= charIndex) wordIndex = w;
-            else break;
-          }
-          return { ...prev, wordIndex };
-        });
-      },
-    });
+    if (audioUrl) {
+      await playRealAudio(audioUrl, song, key, setPlaying);
+    } else {
+      await speakSequence(song.lyrics, langCode, {
+        onLineStart: (lineIndex) => setPlaying({ key, lineIndex, wordIndex: -1 }),
+        onWordBoundary: (charIndex) => {
+          setPlaying((prev) => {
+            if (!prev || prev.key !== key) return prev;
+            const words = splitWords(song.lyrics[prev.lineIndex] || "");
+            let wordIndex = -1;
+            for (let w = 0; w < words.length; w++) {
+              if (words[w].start <= charIndex) wordIndex = w;
+              else break;
+            }
+            return { ...prev, wordIndex };
+          });
+        },
+      });
+    }
     stopBackgroundMusic();
     setPlaying((prev) => (prev && prev.key === key ? null : prev));
   }
@@ -107,9 +157,10 @@ export default function Songs() {
                 type="button"
                 className="big-btn"
                 onClick={() => handlePlay(m, pair.mother)}
-                disabled={!isSpeechAvailable()}
+                disabled={!isSpeechAvailable() && !realAudioUrl(m.id, pair.mother)}
               >
                 ▶️ {t("modules.play")}
+                {realAudioUrl(m.id, pair.mother) ? " 🎙️" : ""}
               </button>
               {pair.secondary !== pair.mother ? (
                 <>
@@ -121,9 +172,10 @@ export default function Songs() {
                     type="button"
                     className="big-btn secondary-btn"
                     onClick={() => handlePlay(s, pair.secondary)}
-                    disabled={!isSpeechAvailable()}
+                    disabled={!isSpeechAvailable() && !realAudioUrl(s.id, pair.secondary)}
                   >
                     ▶️ {t("modules.play")}
+                    {realAudioUrl(s.id, pair.secondary) ? " 🎙️" : ""}
                   </button>
                 </>
               ) : null}
