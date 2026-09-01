@@ -1,0 +1,42 @@
+{
+  "animais": [
+    { "word": "ネコ", "emoji": "🐱" },
+    { "word": "イヌ", "emoji": "🐶" },
+    { "word": "アヒル", "emoji": "🦆" },
+    { "word": "サカナ", "emoji": "🐟" },
+    { "word": "ウサギ", "emoji": "🐰" },
+    { "word": "ニワトリ", "emoji": "🐔" }
+  ],
+  "casa": [
+    { "word": "ツクエ", "emoji": "🪑" },
+    { "word": "イス", "emoji": "🪑" },
+    { "word": "ドア", "emoji": "🚪" },
+    { "word": "マド", "emoji": "🪟" },
+    { "word": "ベッド", "emoji": "🛏️" },
+    { "word": "コップ", "emoji": "🥤" }
+  ],
+  "escola": [
+    { "word": "ホン", "emoji": "📖" },
+    { "word": "エンピツ", "emoji": "✏️" },
+    { "word": "ペン", "emoji": "🖊️" },
+    { "word": "ランドセル", "emoji": "🎒" },
+    { "word": "モノサシ", "emoji": "📏" },
+    { "word": "コクバン", "emoji": "🖼️" }
+  ],
+  "natureza": [
+    { "word": "タイヨウ", "emoji": "☀️" },
+    { "word": "ツキ", "emoji": "🌙" },
+    { "word": "キ", "emoji": "🌳" },
+    { "word": "ハナ", "emoji": "🌸" },
+    { "word": "カワ", "emoji": "🏞️" },
+    { "word": "ヤマ", "emoji": "⛰️" }
+  ],
+  "comida": [
+    { "word": "パン", "emoji": "🍞" },
+    { "word": "ギュウニュウ", "emoji": "🥛" },
+    { "word": "リンゴ", "emoji": "🍎" },
+    { "word": "バナナ", "emoji": "🍌" },
+    { "word": "チーズ", "emoji": "🧀" },
+    { "word": "スープ", "emoji": "🍲" }
+  ]
+}

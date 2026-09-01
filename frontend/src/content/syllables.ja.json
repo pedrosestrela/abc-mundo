@@ -1,0 +1,434 @@
+[
+  {
+    "syllable": "あ",
+    "exampleWord": "あさ (manhã)",
+    "emoji": "🌅",
+    "hint": "a",
+    "syllables": ["あ", "さ"],
+    "digraph": false
+  },
+  {
+    "syllable": "い",
+    "exampleWord": "いえ (casa)",
+    "emoji": "🏠",
+    "hint": "i",
+    "syllables": ["い", "え"],
+    "digraph": false
+  },
+  {
+    "syllable": "う",
+    "exampleWord": "うた (canção)",
+    "emoji": "🎵",
+    "hint": "u",
+    "syllables": ["う", "た"],
+    "digraph": false
+  },
+  {
+    "syllable": "え",
+    "exampleWord": "えき (estação)",
+    "emoji": "🚉",
+    "hint": "e",
+    "syllables": ["え", "き"],
+    "digraph": false
+  },
+  {
+    "syllable": "お",
+    "exampleWord": "おに (monstro)",
+    "emoji": "👹",
+    "hint": "o",
+    "syllables": ["お", "に"],
+    "digraph": false
+  },
+  {
+    "syllable": "か",
+    "exampleWord": "かお (rosto)",
+    "emoji": "😀",
+    "hint": "ka",
+    "syllables": ["か", "お"],
+    "digraph": false
+  },
+  {
+    "syllable": "き",
+    "exampleWord": "きつね (raposa)",
+    "emoji": "🦊",
+    "hint": "ki",
+    "syllables": ["き", "つ", "ね"],
+    "digraph": false
+  },
+  {
+    "syllable": "く",
+    "exampleWord": "くつ (sapato)",
+    "emoji": "👟",
+    "hint": "ku",
+    "syllables": ["く", "つ"],
+    "digraph": false
+  },
+  {
+    "syllable": "け",
+    "exampleWord": "けいと (lã)",
+    "emoji": "🧶",
+    "hint": "ke",
+    "syllables": ["け", "い", "と"],
+    "digraph": false
+  },
+  {
+    "syllable": "こ",
+    "exampleWord": "こども (criança)",
+    "emoji": "🧒",
+    "hint": "ko",
+    "syllables": ["こ", "ど", "も"],
+    "digraph": false
+  },
+  {
+    "syllable": "さ",
+    "exampleWord": "さかな (peixe)",
+    "emoji": "🐟",
+    "hint": "sa",
+    "syllables": ["さ", "か", "な"],
+    "digraph": false
+  },
+  {
+    "syllable": "し",
+    "exampleWord": "しろ (branco)",
+    "emoji": "⚪",
+    "hint": "shi",
+    "syllables": ["し", "ろ"],
+    "digraph": false
+  },
+  {
+    "syllable": "す",
+    "exampleWord": "すいか (melancia)",
+    "emoji": "🍉",
+    "hint": "su",
+    "syllables": ["す", "い", "か"],
+    "digraph": false
+  },
+  {
+    "syllable": "せ",
+    "exampleWord": "せかい (mundo)",
+    "emoji": "🌍",
+    "hint": "se",
+    "syllables": ["せ", "か", "い"],
+    "digraph": false
+  },
+  {
+    "syllable": "そ",
+    "exampleWord": "そら (céu)",
+    "emoji": "🌤️",
+    "hint": "so",
+    "syllables": ["そ", "ら"],
+    "digraph": false
+  },
+  {
+    "syllable": "た",
+    "exampleWord": "たいよう (sol)",
+    "emoji": "☀️",
+    "hint": "ta",
+    "syllables": ["た", "い", "よ", "う"],
+    "digraph": false
+  },
+  {
+    "syllable": "ち",
+    "exampleWord": "ちず (mapa)",
+    "emoji": "🗺️",
+    "hint": "chi",
+    "syllables": ["ち", "ず"],
+    "digraph": false
+  },
+  {
+    "syllable": "つ",
+    "exampleWord": "つき (lua)",
+    "emoji": "🌙",
+    "hint": "tsu",
+    "syllables": ["つ", "き"],
+    "digraph": false
+  },
+  {
+    "syllable": "て",
+    "exampleWord": "てぶくろ (luva)",
+    "emoji": "🧤",
+    "hint": "te",
+    "syllables": ["て", "ぶ", "く", "ろ"],
+    "digraph": false
+  },
+  {
+    "syllable": "と",
+    "exampleWord": "とけい (relógio)",
+    "emoji": "⏰",
+    "hint": "to",
+    "syllables": ["と", "け", "い"],
+    "digraph": false
+  },
+  {
+    "syllable": "な",
+    "exampleWord": "なつ (verão)",
+    "emoji": "🏖️",
+    "hint": "na",
+    "syllables": ["な", "つ"],
+    "digraph": false
+  },
+  {
+    "syllable": "に",
+    "exampleWord": "にじ (arco-íris)",
+    "emoji": "🌈",
+    "hint": "ni",
+    "syllables": ["に", "じ"],
+    "digraph": false
+  },
+  {
+    "syllable": "ぬ",
+    "exampleWord": "ぬま (pântano)",
+    "emoji": "🐸",
+    "hint": "nu",
+    "syllables": ["ぬ", "ま"],
+    "digraph": false
+  },
+  {
+    "syllable": "ね",
+    "exampleWord": "ねこ (gato)",
+    "emoji": "🐱",
+    "hint": "ne",
+    "syllables": ["ね", "こ"],
+    "digraph": false
+  },
+  {
+    "syllable": "の",
+    "exampleWord": "のはら (campo)",
+    "emoji": "🌾",
+    "hint": "no",
+    "syllables": ["の", "は", "ら"],
+    "digraph": false
+  },
+  {
+    "syllable": "は",
+    "exampleWord": "はな (flor)",
+    "emoji": "🌸",
+    "hint": "ha",
+    "syllables": ["は", "な"],
+    "digraph": false
+  },
+  {
+    "syllable": "ひ",
+    "exampleWord": "ひこうき (avião)",
+    "emoji": "✈️",
+    "hint": "hi",
+    "syllables": ["ひ", "こ", "う", "き"],
+    "digraph": false
+  },
+  {
+    "syllable": "ふ",
+    "exampleWord": "ふうせん (balão)",
+    "emoji": "🎈",
+    "hint": "fu",
+    "syllables": ["ふ", "う", "せ", "ん"],
+    "digraph": false
+  },
+  {
+    "syllable": "へ",
+    "exampleWord": "へび (cobra)",
+    "emoji": "🐍",
+    "hint": "he",
+    "syllables": ["へ", "び"],
+    "digraph": false
+  },
+  {
+    "syllable": "ほ",
+    "exampleWord": "ほし (estrela)",
+    "emoji": "⭐",
+    "hint": "ho",
+    "syllables": ["ほ", "し"],
+    "digraph": false
+  },
+  {
+    "syllable": "ま",
+    "exampleWord": "まど (janela)",
+    "emoji": "🪟",
+    "hint": "ma",
+    "syllables": ["ま", "ど"],
+    "digraph": false
+  },
+  {
+    "syllable": "み",
+    "exampleWord": "みかん (tangerina)",
+    "emoji": "🍊",
+    "hint": "mi",
+    "syllables": ["み", "か", "ん"],
+    "digraph": false
+  },
+  {
+    "syllable": "む",
+    "exampleWord": "むし (inseto)",
+    "emoji": "🐞",
+    "hint": "mu",
+    "syllables": ["む", "し"],
+    "digraph": false
+  },
+  {
+    "syllable": "め",
+    "exampleWord": "めだま (olho)",
+    "emoji": "👁️",
+    "hint": "me",
+    "syllables": ["め", "だ", "ま"],
+    "digraph": false
+  },
+  {
+    "syllable": "も",
+    "exampleWord": "もり (floresta)",
+    "emoji": "🌳",
+    "hint": "mo",
+    "syllables": ["も", "り"],
+    "digraph": false
+  },
+  {
+    "syllable": "や",
+    "exampleWord": "やさい (vegetal)",
+    "emoji": "🥕",
+    "hint": "ya",
+    "syllables": ["や", "さ", "い"],
+    "digraph": false
+  },
+  {
+    "syllable": "ゆ",
+    "exampleWord": "ゆき (neve)",
+    "emoji": "❄️",
+    "hint": "yu",
+    "syllables": ["ゆ", "き"],
+    "digraph": false
+  },
+  {
+    "syllable": "よ",
+    "exampleWord": "よる (noite)",
+    "emoji": "🌃",
+    "hint": "yo",
+    "syllables": ["よ", "る"],
+    "digraph": false
+  },
+  {
+    "syllable": "ら",
+    "exampleWord": "らいおん (leão)",
+    "emoji": "🦁",
+    "hint": "ra",
+    "syllables": ["ら", "い", "お", "ん"],
+    "digraph": false
+  },
+  {
+    "syllable": "り",
+    "exampleWord": "りんご (maçã)",
+    "emoji": "🍎",
+    "hint": "ri",
+    "syllables": ["り", "ん", "ご"],
+    "digraph": false
+  },
+  {
+    "syllable": "る",
+    "exampleWord": "はねつるべ (poço com corda)",
+    "emoji": "🪣",
+    "hint": "ru",
+    "syllables": ["つ", "る", "べ"],
+    "digraph": false
+  },
+  {
+    "syllable": "れ",
+    "exampleWord": "れいぞうこ (frigorífico)",
+    "emoji": "🧊",
+    "hint": "re",
+    "syllables": ["れ", "い", "ぞ", "う", "こ"],
+    "digraph": false
+  },
+  {
+    "syllable": "ろ",
+    "exampleWord": "ろうそく (vela)",
+    "emoji": "🕯️",
+    "hint": "ro",
+    "syllables": ["ろ", "う", "そ", "く"],
+    "digraph": false
+  },
+  {
+    "syllable": "わ",
+    "exampleWord": "わに (jacaré)",
+    "emoji": "🐊",
+    "hint": "wa",
+    "syllables": ["わ", "に"],
+    "digraph": false
+  },
+  {
+    "syllable": "きゃ",
+    "exampleWord": "きゃく (visitante)",
+    "emoji": "🧑‍🤝‍🧑",
+    "hint": "kya",
+    "syllables": ["きゃ", "く"],
+    "digraph": true
+  },
+  {
+    "syllable": "しゃ",
+    "exampleWord": "でんしゃ (comboio)",
+    "emoji": "🚃",
+    "hint": "sha",
+    "syllables": ["で", "ん", "しゃ"],
+    "digraph": true
+  },
+  {
+    "syllable": "ちゃ",
+    "exampleWord": "おちゃ (chá)",
+    "emoji": "🍵",
+    "hint": "cha",
+    "syllables": ["お", "ちゃ"],
+    "digraph": true
+  },
+  {
+    "syllable": "にゃ",
+    "exampleWord": "こんにゃく (konjac)",
+    "emoji": "🍢",
+    "hint": "nya",
+    "syllables": ["こ", "ん", "にゃ", "く"],
+    "digraph": true
+  },
+  {
+    "syllable": "ひゃ",
+    "exampleWord": "ひゃく (cem)",
+    "emoji": "💯",
+    "hint": "hya",
+    "syllables": ["ひゃ", "く"],
+    "digraph": true
+  },
+  {
+    "syllable": "みゃ",
+    "exampleWord": "みゃく (pulso)",
+    "emoji": "💓",
+    "hint": "mya",
+    "syllables": ["みゃ", "く"],
+    "digraph": true
+  },
+  {
+    "syllable": "りゃ",
+    "exampleWord": "りゃくず (esboço)",
+    "emoji": "✏️",
+    "hint": "rya",
+    "syllables": ["りゃ", "く", "ず"],
+    "digraph": true
+  },
+  {
+    "syllable": "ぎゃ",
+    "exampleWord": "ぎゃく (o contrário)",
+    "emoji": "🔄",
+    "hint": "gya",
+    "syllables": ["ぎゃ", "く"],
+    "digraph": true
+  },
+  {
+    "syllable": "じゃ",
+    "exampleWord": "じゃがいも (batata)",
+    "emoji": "🥔",
+    "hint": "ja",
+    "syllables": ["じゃ", "が", "い", "も"],
+    "digraph": true
+  },
+  {
+    "syllable": "びゃ",
+    "exampleWord": "さんびゃく (trezentos)",
+    "emoji": "3️⃣",
+    "hint": "bya",
+    "syllables": ["さ", "ん", "びゃ", "く"],
+    "digraph": true
+  }
+]
