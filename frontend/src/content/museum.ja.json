@@ -1,0 +1,450 @@
+[
+  {
+    "id": "archaeology",
+    "emoji": "🏺",
+    "title": "考古学",
+    "intro": "地面の下から見つかった、とても古い物。",
+    "exhibits": [
+      {
+        "id": "amphora",
+        "emoji": "🏺",
+        "name": "ギリシャのアンフォラ",
+        "guessQuestion": null,
+        "options": [
+          {"id": "a", "text": "帽子", "correct": false},
+          {"id": "b", "text": "オリーブオイルやワインを入れる", "correct": true},
+          {"id": "c", "text": "おもちゃ", "correct": false}
+        ],
+        "explanation": "アンフォラは古代ギリシャやローマで使われた、二つの取っ手のある背の高いつぼで、船や家でオリーブオイル、ワイン、穀物を運んだり保存したりするために使われました。"
+      },
+      {
+        "id": "arrowhead",
+        "emoji": "🗡️",
+        "name": "矢じり",
+        "guessQuestion": null,
+        "options": [
+          {"id": "a", "text": "動物を狩る", "correct": true},
+          {"id": "b", "text": "髪を切る", "correct": false},
+          {"id": "c", "text": "音楽を演奏する", "correct": false}
+        ],
+        "explanation": "矢じりは石(火打ち石)を削って作られ、木の柄に取り付けられました。何千年も前、動物を狩ったり、身を守ったりするために使われました。"
+      },
+      {
+        "id": "clay-tablet",
+        "emoji": "🪧",
+        "name": "粘土板",
+        "guessQuestion": null,
+        "options": [
+          {"id": "a", "text": "枕", "correct": false},
+          {"id": "b", "text": "食べ物の皿", "correct": false},
+          {"id": "c", "text": "メッセージや記録を書く", "correct": true}
+        ],
+        "explanation": "メソポタミアでは、人々は先のとがった葦のペンで、やわらかい粘土にくさび形文字と呼ばれる印を書いていました。その後粘土が乾くと、その文字は永遠に残りました。"
+      },
+      {
+        "id": "mummy-mask",
+        "emoji": "𓆣",
+        "name": "葬送用マスク",
+        "guessQuestion": null,
+        "options": [
+          {"id": "a", "text": "お祭りのマスク", "correct": false},
+          {"id": "b", "text": "古代エジプトでミイラの顔を守る", "correct": true},
+          {"id": "c", "text": "鏡", "correct": false}
+        ],
+        "explanation": "古代エジプトでは、その人の魂を守り、死後の世界でも見分けられるようにするために、ミイラの顔にマスクをかぶせました。"
+      }
+    ]
+  },
+  {
+    "id": "dinosaurs",
+    "emoji": "🦖",
+    "title": "恐竜",
+    "intro": "何百万年も前に生きていた巨大な爬虫類。",
+    "exhibits": [
+      {
+        "id": "trex-tooth",
+        "emoji": "🦷",
+        "name": "ティラノサウルスの歯",
+        "guessQuestion": null,
+        "options": [
+          {"id": "a", "text": "他の動物の肉を引きちぎる", "correct": true},
+          {"id": "b", "text": "植物をかむ", "correct": false},
+          {"id": "c", "text": "穴を掘る", "correct": false}
+        ],
+        "explanation": "ティラノサウルスは長さ20cmにもなる巨大でギザギザの歯を持ち、他の恐竜の肉にかみついて引きちぎるために使っていました。史上最大級の捕食者の一つでした。"
+      },
+      {
+        "id": "triceratops-horn",
+        "emoji": "🦏",
+        "name": "トリケラトプスの角",
+        "guessQuestion": null,
+        "options": [
+          {"id": "a", "text": "毛づくろいをする", "correct": false},
+          {"id": "b", "text": "ティラノサウルスのような捕食者から身を守る", "correct": true},
+          {"id": "c", "text": "飛ぶ", "correct": false}
+        ],
+        "explanation": "トリケラトプスは頭に三本の角と、首の周りに大きな骨の襟を持っていました。捕食者から身を守るため、また他のトリケラトプスと競うためにも使っていたと考えられています。"
+      },
+      {
+        "id": "fossil-egg",
+        "emoji": "🥚",
+        "name": "化石になった卵",
+        "guessQuestion": null,
+        "options": [
+          {"id": "a", "text": "オムレツを作る", "correct": false},
+          {"id": "b", "text": "遊ぶためのボール", "correct": false},
+          {"id": "c", "text": "生まれる前の赤ちゃん恐竜を守る", "correct": true}
+        ],
+        "explanation": "恐竜の卵は何百万年も土の中に埋まり、石に変わりました。それを研究することで、科学者たちは赤ちゃん恐竜が卵の中でどう育ったかを知ることができます。"
+      },
+      {
+        "id": "pterosaur-wing",
+        "emoji": "🦴",
+        "name": "翼竜の翼の骨",
+        "guessQuestion": null,
+        "options": [
+          {"id": "a", "text": "空を飛ぶ", "correct": true},
+          {"id": "b", "text": "水中を泳ぐ", "correct": false},
+          {"id": "c", "text": "とても速く走る", "correct": false}
+        ],
+        "explanation": "翼竜は恐竜ではなく、同じ時代に生きていた空飛ぶ爬虫類でした。とても長い一本の指が、翼のように働く皮膜を支えていました。"
+      }
+    ]
+  },
+  {
+    "id": "history",
+    "emoji": "👑",
+    "title": "歴史",
+    "intro": "王や女王、古代の人々の持ち物。",
+    "exhibits": [
+      {
+        "id": "crown",
+        "emoji": "👑",
+        "name": "王冠",
+        "guessQuestion": null,
+        "options": [
+          {"id": "a", "text": "雨よけの帽子", "correct": false},
+          {"id": "b", "text": "その人が王や女王であることを示す", "correct": true},
+          {"id": "c", "text": "子どものおもちゃ", "correct": false}
+        ],
+        "explanation": "王冠は、身につける人が王国を治める権力を持っていることを示すために、金や宝石で作られました。王冠が豪華であるほど、王や女王の重要性も高いとされました。"
+      },
+      {
+        "id": "sword",
+        "emoji": "⚔️",
+        "name": "中世の剣",
+        "guessQuestion": null,
+        "options": [
+          {"id": "a", "text": "戦いで戦い、身を守る", "correct": true},
+          {"id": "b", "text": "パンを切る", "correct": false},
+          {"id": "c", "text": "髪をとかす", "correct": false}
+        ],
+        "explanation": "中世の騎士は、戦いや馬上槍試合で戦うために鉄や鋼の剣を使いました。多くの剣には固有の名前があり、家族の宝物として父から息子へと受け継がれました。"
+      },
+      {
+        "id": "old-coin",
+        "emoji": "🪙",
+        "name": "古い硬貨",
+        "guessQuestion": null,
+        "options": [
+          {"id": "a", "text": "服のボタン", "correct": false},
+          {"id": "b", "text": "壁の飾り", "correct": false},
+          {"id": "c", "text": "物を売り買いする", "correct": true}
+        ],
+        "explanation": "古い硬貨は金属で作られ、多くの場合王の顔が刻まれていました。物と物を直接交換する代わりに、市場で物を売り買いするために使われました。"
+      },
+      {
+        "id": "wax-seal",
+        "emoji": "📜",
+        "name": "ろうの封印",
+        "guessQuestion": null,
+        "options": [
+          {"id": "a", "text": "城を照らすろうそくを作る", "correct": false},
+          {"id": "b", "text": "手紙を閉じて、本物であることを証明する", "correct": true},
+          {"id": "c", "text": "絵をはる", "correct": false}
+        ],
+        "explanation": "現代の封筒がなかった時代、手紙は折りたたまれ、熱いろうがたらされて、特別な指輪で印が押されました。もし封印が破れていたら、誰かがその手紙を開けたとわかりました。"
+      }
+    ]
+  },
+  {
+    "id": "transport",
+    "emoji": "🚂",
+    "title": "乗り物の歴史",
+    "intro": "時代とともに人々はどうやって移動してきたか。",
+    "exhibits": [
+      {
+        "id": "steam-locomotive",
+        "emoji": "🚂",
+        "name": "蒸気機関車",
+        "guessQuestion": null,
+        "options": [
+          {"id": "a", "text": "町から町へ飛ぶ", "correct": false},
+          {"id": "b", "text": "川を泳ぐ", "correct": false},
+          {"id": "c", "text": "石炭を燃やして蒸気を作り、列車を引っぱる", "correct": true}
+        ],
+        "explanation": "蒸気機関車は石炭を燃やして水を熱し、蒸気を作りました。その蒸気がピストンを押して車輪を回しました。19世紀に旅をずっと速くし、移動の仕方を大きく変えました。"
+      },
+      {
+        "id": "horse-carriage",
+        "emoji": "🐎",
+        "name": "馬車",
+        "guessQuestion": null,
+        "options": [
+          {"id": "a", "text": "車ができる前に人を運ぶ", "correct": true},
+          {"id": "b", "text": "山の上を飛ぶ", "correct": false},
+          {"id": "c", "text": "湖を泳ぐ", "correct": false}
+        ],
+        "explanation": "車が存在する前、馬に引かれた馬車は町の道や街道での主な移動手段で、裕福な家族や郵便の配達に使われていました。"
+      },
+      {
+        "id": "viking-ship",
+        "emoji": "🚢",
+        "name": "バイキング船",
+        "guessQuestion": null,
+        "options": [
+          {"id": "a", "text": "お風呂のおもちゃ", "correct": false},
+          {"id": "b", "text": "海を長い距離航海する", "correct": true},
+          {"id": "c", "text": "魚を保存する", "correct": false}
+        ],
+        "explanation": "バイキング船は薄くしなやかな船体と四角い帆を持っていて、荒れた海でも浅い川でも航海することができ、スカンジナビアからとても遠くまで到達しました。"
+      },
+      {
+        "id": "old-bicycle",
+        "emoji": "🚲",
+        "name": "昔の自転車",
+        "guessQuestion": null,
+        "options": [
+          {"id": "a", "text": "川で魚を釣る", "correct": false},
+          {"id": "b", "text": "料理をする", "correct": false},
+          {"id": "c", "text": "ガソリンを使わずに速く移動する", "correct": true}
+        ],
+        "explanation": "19世紀の初期の自転車には、今日のようなブレーキやペダルはありませんでした。それでも、脚の力だけで動く最初の個人用移動手段の一つでした。"
+      }
+    ]
+  },
+  {
+    "id": "science",
+    "emoji": "🔬",
+    "title": "科学",
+    "intro": "世界の発見を助けた道具たち。",
+    "exhibits": [
+      {
+        "id": "microscope",
+        "emoji": "🔬",
+        "name": "昔の顕微鏡",
+        "guessQuestion": null,
+        "options": [
+          {"id": "a", "text": "星を見る", "correct": false},
+          {"id": "b", "text": "目では見えないほど小さいものを見る", "correct": true},
+          {"id": "c", "text": "小さな音を聞く", "correct": false}
+        ],
+        "explanation": "顕微鏡はレンズを使って、細胞や微生物のような小さなものの姿を拡大します。顕微鏡のおかげで、科学者たちは肉眼では見えない生き物がいることを発見しました。"
+      },
+      {
+        "id": "telescope",
+        "emoji": "🔭",
+        "name": "昔の望遠鏡",
+        "guessQuestion": null,
+        "options": [
+          {"id": "a", "text": "惑星や星を近くで見る", "correct": true},
+          {"id": "b", "text": "遠くから花のにおいをかぐ", "correct": false},
+          {"id": "c", "text": "雨を降らせる", "correct": false}
+        ],
+        "explanation": "望遠鏡はレンズや鏡を使って、とても遠くにある物からの光を集め、見えるように大きくします。ガリレオは400年以上前、望遠鏡を使って木星の衛星を発見しました。"
+      },
+      {
+        "id": "compass-science",
+        "emoji": "🧭",
+        "name": "昔のコンパス",
+        "guessQuestion": null,
+        "options": [
+          {"id": "a", "text": "気温を測る", "correct": false},
+          {"id": "b", "text": "時間を数える", "correct": false},
+          {"id": "c", "text": "北の方角を知る", "correct": true}
+        ],
+        "explanation": "コンパスは、いつも地球の磁北を指す磁針を持っています。陸地が見えない海の上でも、船乗りが進む方向を見つけるために欠かせないものでした。"
+      },
+      {
+        "id": "old-battery",
+        "emoji": "🔋",
+        "name": "ボルタ電堆",
+        "guessQuestion": null,
+        "options": [
+          {"id": "a", "text": "食べ物を新鮮に保つ", "correct": false},
+          {"id": "b", "text": "初めて連続した電気の流れを作る", "correct": true},
+          {"id": "c", "text": "たき火をつける", "correct": false}
+        ],
+        "explanation": "1800年、アレッサンドロ・ボルタは違う種類の金属の円盤を液体をはさんで積み重ね、歴史上初めての電池を作り出しました。今日使われている電池の祖先です。"
+      }
+    ]
+  },
+  {
+    "id": "art",
+    "emoji": "🎨",
+    "title": "芸術",
+    "intro": "世界中の芸術家たちの作品と道具。",
+    "exhibits": [
+      {
+        "id": "cave-painting",
+        "emoji": "🖼️",
+        "name": "洞窟壁画",
+        "guessQuestion": null,
+        "options": [
+          {"id": "a", "text": "狩りや動物の物語を伝える", "correct": true},
+          {"id": "b", "text": "子ども部屋を飾る", "correct": false},
+          {"id": "c", "text": "お店で売る", "correct": false}
+        ],
+        "explanation": "3万年以上前、人間は色のついた土や炭、水や動物の脂と混ぜた血を使って、洞窟の壁に動物や狩りの場面を描いていました。"
+      },
+      {
+        "id": "sculpture-chisel",
+        "emoji": "🗿",
+        "name": "彫刻家ののみ",
+        "guessQuestion": null,
+        "options": [
+          {"id": "a", "text": "髪を切る", "correct": false},
+          {"id": "b", "text": "石や木に形を彫る", "correct": true},
+          {"id": "c", "text": "手紙を書く", "correct": false}
+        ],
+        "explanation": "彫刻家はのみとハンマーを使って、石や木の小さなかけらを少しずつ取り除き、思い描いた形―像やレリーフなど―を作り出します。"
+      },
+      {
+        "id": "paint-palette",
+        "emoji": "🎨",
+        "name": "画家のパレット",
+        "guessQuestion": null,
+        "options": [
+          {"id": "a", "text": "料理を出す", "correct": false},
+          {"id": "b", "text": "おもちゃのように飛ぶ", "correct": false},
+          {"id": "c", "text": "絵を描く前に色を混ぜる", "correct": true}
+        ],
+        "explanation": "パレットは、画家が少量の絵の具を置いて筆で混ぜ、キャンバスに塗る前に新しい色を作るための板です。"
+      },
+      {
+        "id": "ancient-mask",
+        "emoji": "🎭",
+        "name": "アフリカの仮面",
+        "guessQuestion": null,
+        "options": [
+          {"id": "a", "text": "伝統的な踊りや儀式で身につける", "correct": true},
+          {"id": "b", "text": "寒さから身を守る", "correct": false},
+          {"id": "c", "text": "魚を捕まえる", "correct": false}
+        ],
+        "explanation": "アフリカの多くの文化では、精霊や祖先を表したり、共同体の大切な物語を伝えたりするために、踊りや儀式で身につける彫刻された木の仮面を作ってきました。"
+      }
+    ]
+  },
+  {
+    "id": "computers",
+    "emoji": "💻",
+    "title": "昔のコンピューター",
+    "intro": "何十年も前、コンピューターはどんなものだったか。",
+    "exhibits": [
+      {
+        "id": "punch-card",
+        "emoji": "🗃️",
+        "name": "パンチカード",
+        "guessQuestion": null,
+        "options": [
+          {"id": "a", "text": "パーティーの招待状", "correct": false},
+          {"id": "b", "text": "穴を通して昔のコンピューターに指示を与える", "correct": true},
+          {"id": "c", "text": "電車の切符", "correct": false}
+        ],
+        "explanation": "キーボードが登場する前、初期のコンピューターは決まった位置に穴を開けた紙のカードを読み取りました。穴のパターンごとに、数字や文字、命令を表していました。"
+      },
+      {
+        "id": "floppy-disk",
+        "emoji": "💾",
+        "name": "フロッピーディスク",
+        "guessQuestion": null,
+        "options": [
+          {"id": "a", "text": "音楽を聞く", "correct": false},
+          {"id": "b", "text": "ポップコーンを作る", "correct": false},
+          {"id": "c", "text": "コンピューターのファイルを保存する", "correct": true}
+        ],
+        "explanation": "フロッピーディスクは、薄くてやわらかい磁気ディスクの中にコンピューターのファイルを保存していました。一枚のフロッピーディスクにはごくわずかしか保存できず、今のスマートフォンはその何千倍も保存できます。"
+      },
+      {
+        "id": "vacuum-tube",
+        "emoji": "💡",
+        "name": "真空管",
+        "guessQuestion": null,
+        "options": [
+          {"id": "a", "text": "初期のコンピューターで電気の流れを制御する", "correct": true},
+          {"id": "b", "text": "クリスマスの飾り電球を作る", "correct": false},
+          {"id": "c", "text": "水を入れておく", "correct": false}
+        ],
+        "explanation": "今日の小さなチップができる前、コンピューターは電気を制御するために電球に似た何千本ものガラス管を使っていました。部屋いっぱいを占め、とても熱くなりました。"
+      },
+      {
+        "id": "mouse-early",
+        "emoji": "🖱️",
+        "name": "最初のコンピューターマウス",
+        "guessQuestion": null,
+        "options": [
+          {"id": "a", "text": "音を出して猫を追い払う", "correct": false},
+          {"id": "b", "text": "手で動かして画面上のカーソルを動かす", "correct": true},
+          {"id": "c", "text": "机を温める", "correct": false}
+        ],
+        "explanation": "最初のコンピューターマウスは1964年にダグラス・エンゲルバートによって発明されました。木の箱に車輪がついたもので、机の上で動かすと画面上のカーソルが動きました―当時としては画期的なアイデアでした。"
+      }
+    ]
+  },
+  {
+    "id": "space",
+    "emoji": "🚀",
+    "title": "宇宙",
+    "intro": "宇宙を探査するために使われた道具。",
+    "exhibits": [
+      {
+        "id": "space-suit",
+        "emoji": "👨‍🚀",
+        "name": "宇宙服",
+        "guessQuestion": null,
+        "options": [
+          {"id": "a", "text": "宇宙飛行士を守り、宇宙で吸う空気を与える", "correct": true},
+          {"id": "b", "text": "速く泳ぐ", "correct": false},
+          {"id": "c", "text": "スポーツをする", "correct": false}
+        ],
+        "explanation": "宇宙服は宇宙の真空や極端な温度、放射線から守るとともに、地球の外には空気がないため、呼吸するための酸素も供給します。"
+      },
+      {
+        "id": "moon-rock",
+        "emoji": "🌑",
+        "name": "月の石",
+        "guessQuestion": null,
+        "options": [
+          {"id": "a", "text": "ビーチで遊ぶおもちゃ", "correct": false},
+          {"id": "b", "text": "月がどうやってできたかを科学者が研究する助けになる", "correct": true},
+          {"id": "c", "text": "普通の文鎮", "correct": false}
+        ],
+        "explanation": "アポロ計画の宇宙飛行士たちは月の石を地球に持ち帰りました。それを研究することで、科学者たちは月が40億年以上前に、おそらく巨大な衝突の後にできたことを知りました。"
+      },
+      {
+        "id": "rocket-engine",
+        "emoji": "🚀",
+        "name": "ロケットエンジン",
+        "guessQuestion": null,
+        "options": [
+          {"id": "a", "text": "家を温める", "correct": false},
+          {"id": "b", "text": "ジュースを作る", "correct": false},
+          {"id": "c", "text": "ロケットを地球の大気圏の外へ押し出す", "correct": true}
+        ],
+        "explanation": "ロケットエンジンは燃料を高速で燃やし、熱いガスを後ろに噴き出します。それがロケットを前へ押し、地球の重力に打ち勝つのに十分な力を生み出します。"
+      },
+      {
+        "id": "satellite",
+        "emoji": "🛰️",
+        "name": "人工衛星",
+        "guessQuestion": null,
+        "options": [
+          {"id": "a", "text": "地球を回りながら写真を撮り、天気を予測し、通信を助ける", "correct": true},
+          {"id": "b", "text": "宇宙飛行士がずっと暮らす家になる", "correct": false},
+          {"id": "c", "text": "地球を温める", "correct": false}
+        ],
+        "explanation": "人工衛星は地球のまわりを回り、多くの形で私たちを助けています。地球の写真を撮り、天気を予測し、テレビやインターネットの信号を送り、GPSが私たちの位置を知る手助けをします。"
+      }
+    ]
+  }
+]

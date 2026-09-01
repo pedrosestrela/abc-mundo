@@ -1,0 +1,171 @@
+[
+  {
+    "id": "school",
+    "icon": "🏫",
+    "prompt": "通りの先にある学校に行く。",
+    "modes": [
+      "walk",
+      "bike",
+      "car",
+      "plane"
+    ],
+    "correct": "walk",
+    "explanation": "とても近い距離なら、歩くのが速くて健康的で、エネルギーを全く使いません!"
+  },
+  {
+    "id": "grandparents",
+    "icon": "🏘️",
+    "prompt": "隣の地区に住むおじいちゃんおばあちゃんを訪ねる。",
+    "modes": [
+      "bike",
+      "car",
+      "train",
+      "ship"
+    ],
+    "correct": "bike",
+    "explanation": "町の中の短い距離なら、自転車はとてもよい選択です。速くて、汚染も出しません。"
+  },
+  {
+    "id": "othercity",
+    "icon": "🏙️",
+    "prompt": "休暇で国内の別の町に行く。",
+    "modes": [
+      "walk",
+      "train",
+      "car",
+      "ship"
+    ],
+    "correct": "train",
+    "explanation": "町と町の間を移動するなら、電車は快適で速く、歩きや自転車ではそんなに遠くまで行けません。"
+  },
+  {
+    "id": "othercontinent",
+    "icon": "🌍",
+    "prompt": "新しい国を訪れるために別の大陸に行く。",
+    "modes": [
+      "bike",
+      "car",
+      "train",
+      "plane"
+    ],
+    "correct": "plane",
+    "explanation": "海や大陸をすばやく越えるには、飛行機が正しい交通手段です。"
+  },
+  {
+    "id": "cargo",
+    "icon": "📦",
+    "prompt": "おもちゃがいっぱい入ったコンテナを別の大陸に送る。",
+    "modes": [
+      "car",
+      "train",
+      "plane",
+      "ship"
+    ],
+    "correct": "ship",
+    "explanation": "とても重い荷物を海を越えて運ぶには、船が最もよく使われます。速さは遅くても、一度にずっと多く運べ、荷物一つあたりのエネルギーも少なくてすみます。"
+  },
+  {
+    "id": "park",
+    "icon": "🚸",
+    "prompt": "通りの先にある公園に行く。",
+    "modes": [
+      "walk",
+      "bike",
+      "car",
+      "plane"
+    ],
+    "correct": "walk",
+    "explanation": "こんなに近い場所なら、歩くのがいちばん簡単で健康的な行き方です。"
+  },
+  {
+    "id": "bakery",
+    "icon": "🥖",
+    "prompt": "朝、焼きたてのパンを買いにパン屋へ行く。",
+    "modes": [
+      "walk",
+      "bike",
+      "car",
+      "train"
+    ],
+    "correct": "walk",
+    "explanation": "パン屋はすぐそこ。歩けば早いし、朝の新鮮な空気も吸えます。"
+  },
+  {
+    "id": "islandferry",
+    "icon": "🏝️",
+    "prompt": "海の狭い部分を渡って、海岸近くの島へ行く。",
+    "modes": [
+      "car",
+      "train",
+      "plane",
+      "ship"
+    ],
+    "correct": "ship",
+    "explanation": "近くの島まで水を渡るなら、船(またはフェリー)が正しい選択です。海の上には道路も線路もありません。"
+  },
+  {
+    "id": "citycommute",
+    "icon": "🏢",
+    "prompt": "毎日、町の反対側にある職場へ行く。",
+    "modes": [
+      "walk",
+      "bike",
+      "car",
+      "plane"
+    ],
+    "correct": "car",
+    "explanation": "町の中で毎日長い距離を移動するなら、車のほうが歩きや自転車より実用的です。"
+  },
+  {
+    "id": "studyabroad",
+    "icon": "🎓",
+    "prompt": "海の向こうの国で1年間留学する。",
+    "modes": [
+      "car",
+      "train",
+      "ship",
+      "plane"
+    ],
+    "correct": "plane",
+    "explanation": "海を越えてとても遠くまですばやく移動するなら、飛行機が正しい選択です。"
+  },
+  {
+    "id": "exportcars",
+    "icon": "🚘",
+    "prompt": "工場から何百台もの新車を、別の大陸で売るために送る。",
+    "modes": [
+      "car",
+      "train",
+      "plane",
+      "ship"
+    ],
+    "correct": "ship",
+    "explanation": "とても重くてかさばる荷物を海を越えて運ぶには、船が最もよく使われます。一度にずっと多く運べます。"
+  },
+  {
+    "id": "medicine",
+    "icon": "💊",
+    "prompt": "地球の反対側にある病院に、急いで薬を送る。",
+    "modes": [
+      "train",
+      "ship",
+      "car",
+      "plane"
+    ],
+    "correct": "plane",
+    "explanation": "緊急事態のように費用より速さが大切なときは、飛行機のほうが船よりずっと早く着きます。"
+  },
+  {
+    "id": "campingtrip",
+    "icon": "🏕️",
+    "prompt": "家から数時間の森に、家族でキャンプに行く。",
+    "modes": [
+      "walk",
+      "bike",
+      "car",
+      "plane"
+    ],
+    "correct": "car",
+    "explanation": "テント、寝袋、食料など荷物がたくさんあるので、このくらいの旅には車がいちばん実用的です。"
+  }
+]

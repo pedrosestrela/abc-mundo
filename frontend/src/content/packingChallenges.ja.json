@@ -1,0 +1,182 @@
+[
+  {
+    "id": "beach",
+    "icon": "🏖️",
+    "name": "ビーチ",
+    "items": [
+      {"id": "swimsuit", "icon": "🩱", "name": "水着", "correct": true},
+      {"id": "sunscreen", "icon": "🧴", "name": "日焼け止め", "correct": true},
+      {"id": "sunglasses", "icon": "🕶️", "name": "サングラス", "correct": true},
+      {"id": "flipflops", "icon": "🩴", "name": "ビーチサンダル", "correct": true},
+      {"id": "coat", "icon": "🧥", "name": "冬のコート", "correct": false},
+      {"id": "snowboots", "icon": "🥾", "name": "スノーブーツ", "correct": false},
+      {"id": "gloves", "icon": "🧤", "name": "手袋", "correct": false},
+      {"id": "scarf", "icon": "🧣", "name": "マフラー", "correct": false}
+    ]
+  },
+  {
+    "id": "mountain",
+    "icon": "🏔️",
+    "name": "山",
+    "items": [
+      {"id": "jacket", "icon": "🧥", "name": "暖かいジャケット", "correct": true},
+      {"id": "hikingboots", "icon": "🥾", "name": "登山靴", "correct": true},
+      {"id": "backpack", "icon": "🎒", "name": "リュックサック", "correct": true},
+      {"id": "waterbottle", "icon": "🚰", "name": "水筒", "correct": true},
+      {"id": "swimsuit", "icon": "🩱", "name": "水着", "correct": false},
+      {"id": "flipflops", "icon": "🩴", "name": "ビーチサンダル", "correct": false},
+      {"id": "umbrella-open", "icon": "☔", "name": "大きな傘", "correct": false},
+      {"id": "highheels", "icon": "👠", "name": "ハイヒール", "correct": false}
+    ]
+  },
+  {
+    "id": "rainy",
+    "icon": "🌧️",
+    "name": "雨の町",
+    "items": [
+      {"id": "umbrella", "icon": "☂️", "name": "傘", "correct": true},
+      {"id": "raincoat", "icon": "🧥", "name": "レインコート", "correct": true},
+      {"id": "rainboots", "icon": "🥾", "name": "長靴", "correct": true},
+      {"id": "sweater", "icon": "🧶", "name": "暖かいセーター", "correct": true},
+      {"id": "swimsuit", "icon": "🩱", "name": "水着", "correct": false},
+      {"id": "sunglasses", "icon": "🕶️", "name": "サングラス", "correct": false},
+      {"id": "flipflops", "icon": "🩴", "name": "ビーチサンダル", "correct": false},
+      {"id": "sunhat", "icon": "👒", "name": "日よけ帽子", "correct": false}
+    ]
+  },
+  {
+    "id": "desert",
+    "icon": "🏜️",
+    "name": "砂漠",
+    "items": [
+      {"id": "sunhat", "icon": "👒", "name": "日よけ帽子", "correct": true},
+      {"id": "sunglasses", "icon": "🕶️", "name": "サングラス", "correct": true},
+      {"id": "lightclothes", "icon": "👕", "name": "軽い服", "correct": true},
+      {"id": "waterbottle", "icon": "🚰", "name": "水筒", "correct": true},
+      {"id": "snowboots", "icon": "🥾", "name": "スノーブーツ", "correct": false},
+      {"id": "heavycoat", "icon": "🧥", "name": "厚手のコート", "correct": false},
+      {"id": "umbrella", "icon": "☂️", "name": "傘", "correct": false},
+      {"id": "gloves", "icon": "🧤", "name": "毛糸の手袋", "correct": false}
+    ]
+  },
+  {
+    "id": "snow",
+    "icon": "❄️",
+    "name": "雪",
+    "items": [
+      {"id": "coat", "icon": "🧥", "name": "冬のコート", "correct": true},
+      {"id": "gloves", "icon": "🧤", "name": "手袋", "correct": true},
+      {"id": "snowboots", "icon": "🥾", "name": "スノーブーツ", "correct": true},
+      {"id": "scarf", "icon": "🧣", "name": "マフラー", "correct": true},
+      {"id": "swimsuit", "icon": "🩱", "name": "水着", "correct": false},
+      {"id": "flipflops", "icon": "🩴", "name": "ビーチサンダル", "correct": false},
+      {"id": "shorts", "icon": "🩳", "name": "半ズボン", "correct": false},
+      {"id": "sunhat", "icon": "👒", "name": "日よけ帽子", "correct": false}
+    ]
+  },
+  {
+    "id": "city",
+    "icon": "🏙️",
+    "name": "都市観光",
+    "items": [
+      {"id": "comfortableshoes", "icon": "👟", "name": "履き心地のよい靴", "correct": true},
+      {"id": "citymap", "icon": "🗺️", "name": "町の地図", "correct": true},
+      {"id": "camera", "icon": "📷", "name": "カメラ", "correct": true},
+      {"id": "lightjacket", "icon": "🧥", "name": "軽いジャケット", "correct": true},
+      {"id": "swimsuit", "icon": "🩱", "name": "水着", "correct": false},
+      {"id": "snowboots", "icon": "🥾", "name": "スノーブーツ", "correct": false},
+      {"id": "heavycoat", "icon": "🧥", "name": "厚手のコート", "correct": false},
+      {"id": "umbrella-open", "icon": "☔", "name": "大きな傘", "correct": false}
+    ]
+  },
+  {
+    "id": "camping",
+    "icon": "🏕️",
+    "name": "キャンプ",
+    "items": [
+      {"id": "tent", "icon": "⛺", "name": "テント", "correct": true},
+      {"id": "sleepingbag", "icon": "🛌", "name": "寝袋", "correct": true},
+      {"id": "flashlight", "icon": "🔦", "name": "懐中電灯", "correct": true},
+      {"id": "insectrepellent", "icon": "🦟", "name": "虫よけ", "correct": true},
+      {"id": "highheels", "icon": "👠", "name": "ハイヒール", "correct": false},
+      {"id": "formaldress", "icon": "👗", "name": "おしゃれなドレス", "correct": false},
+      {"id": "hairdryer", "icon": "💇", "name": "ドライヤー", "correct": false},
+      {"id": "umbrella-open", "icon": "☔", "name": "大きな傘", "correct": false}
+    ]
+  },
+  {
+    "id": "jungle",
+    "icon": "🌴",
+    "name": "熱帯雨林",
+    "items": [
+      {"id": "raincoat", "icon": "🧥", "name": "レインコート", "correct": true},
+      {"id": "insectrepellent", "icon": "🦟", "name": "虫よけ", "correct": true},
+      {"id": "hikingboots", "icon": "🥾", "name": "登山靴", "correct": true},
+      {"id": "waterbottle", "icon": "🚰", "name": "水筒", "correct": true},
+      {"id": "snowboots", "icon": "🥾", "name": "スノーブーツ", "correct": false},
+      {"id": "heavycoat", "icon": "🧥", "name": "厚手のコート", "correct": false},
+      {"id": "gloves", "icon": "🧤", "name": "毛糸の手袋", "correct": false},
+      {"id": "scarf", "icon": "🧣", "name": "マフラー", "correct": false}
+    ]
+  },
+  {
+    "id": "farm",
+    "icon": "🚜",
+    "name": "農場見学",
+    "items": [
+      {"id": "rubberboots", "icon": "🥾", "name": "長靴", "correct": true},
+      {"id": "oldclothes", "icon": "👕", "name": "古い服", "correct": true},
+      {"id": "hat", "icon": "👒", "name": "帽子", "correct": true},
+      {"id": "waterbottle", "icon": "🚰", "name": "水筒", "correct": true},
+      {"id": "swimsuit", "icon": "🩱", "name": "水着", "correct": false},
+      {"id": "highheels", "icon": "👠", "name": "ハイヒール", "correct": false},
+      {"id": "formaldress", "icon": "👗", "name": "おしゃれなドレス", "correct": false},
+      {"id": "laptop", "icon": "💻", "name": "ノートパソコン", "correct": false}
+    ]
+  },
+  {
+    "id": "cruise",
+    "icon": "🛳️",
+    "name": "クルーズ",
+    "items": [
+      {"id": "motionsicknesspills", "icon": "💊", "name": "酔い止め薬", "correct": true},
+      {"id": "lightclothes", "icon": "👕", "name": "軽い服", "correct": true},
+      {"id": "sunglasses", "icon": "🕶️", "name": "サングラス", "correct": true},
+      {"id": "camera", "icon": "📷", "name": "カメラ", "correct": true},
+      {"id": "snowboots", "icon": "🥾", "name": "スノーブーツ", "correct": false},
+      {"id": "heavycoat", "icon": "🧥", "name": "厚手のコート", "correct": false},
+      {"id": "hikingboots", "icon": "🥾", "name": "登山靴", "correct": false},
+      {"id": "gloves", "icon": "🧤", "name": "毛糸の手袋", "correct": false}
+    ]
+  },
+  {
+    "id": "sports",
+    "icon": "🏅",
+    "name": "スポーツ大会",
+    "items": [
+      {"id": "sneakers", "icon": "👟", "name": "運動靴", "correct": true},
+      {"id": "sportswear", "icon": "🎽", "name": "スポーツウェア", "correct": true},
+      {"id": "waterbottle", "icon": "🚰", "name": "水筒", "correct": true},
+      {"id": "towel", "icon": "🧺", "name": "タオル", "correct": true},
+      {"id": "swimsuit", "icon": "🩱", "name": "水着", "correct": false},
+      {"id": "heavycoat", "icon": "🧥", "name": "厚手のコート", "correct": false},
+      {"id": "highheels", "icon": "👠", "name": "ハイヒール", "correct": false},
+      {"id": "umbrella-open", "icon": "☔", "name": "大きな傘", "correct": false}
+    ]
+  },
+  {
+    "id": "roadtrip",
+    "icon": "🚗",
+    "name": "ドライブ旅行",
+    "items": [
+      {"id": "snacks", "icon": "🍪", "name": "おやつ", "correct": true},
+      {"id": "pillow", "icon": "🛏️", "name": "まくら", "correct": true},
+      {"id": "books", "icon": "📚", "name": "本", "correct": true},
+      {"id": "comfyclothes", "icon": "👕", "name": "楽な服", "correct": true},
+      {"id": "swimsuit", "icon": "🩱", "name": "水着", "correct": false},
+      {"id": "snowboots", "icon": "🥾", "name": "スノーブーツ", "correct": false},
+      {"id": "hikingboots", "icon": "🥾", "name": "登山靴", "correct": false},
+      {"id": "heavycoat", "icon": "🧥", "name": "厚手のコート", "correct": false}
+    ]
+  }
+]
