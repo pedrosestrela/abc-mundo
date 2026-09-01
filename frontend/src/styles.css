@@ -39,7 +39,7 @@ textarea:focus-visible,
 
 body {
   margin: 0;
-  font-family: "Comic Sans MS", "Trebuchet MS", system-ui, sans-serif;
+  font-family: "Baloo 2", system-ui, sans-serif;
   background: linear-gradient(180deg, #fff7e6, #ffe9f0);
   color: #333;
 }
@@ -52,7 +52,7 @@ body {
 
 .app-main {
   flex: 1;
-  padding: 16px 16px 96px;
+  padding: 20px 18px 100px;
   max-width: 900px;
   margin: 0 auto;
   width: 100%;
