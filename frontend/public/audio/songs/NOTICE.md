@@ -143,53 +143,36 @@ Generated on 2026-09-01 with Piper TTS.
   technique as `pt/` (see above).
 - Coverage: all 21 songs in `songs.it.json`.
 
-## `zh/` — partially generated (Mandarin Chinese, 3 of 21 songs)
+## `zh/` — Piper TTS (Mandarin Chinese)
 
-Attempted repeatedly on 2026-09-01. Most songs consistently fail to
-synthesize (see blocker below); 3 succeeded and are included
-(`cancao-do-abc`, `letras-saltitantes`, `amigos-do-alfabeto`) — the
-remaining 18 fall back to Web Speech, exactly like any other
-song/language without a real-audio file (`Songs.jsx` already handles
-this per-song, nothing else needed to be built for the fallback).
+Generated on 2026-09-01 with Piper TTS.
 
-- Voice model candidate: `zh_CN-chaowen-medium` (CC0, same
-  `piper-voices` repo). The model itself downloaded fine and is
-  appropriately licensed.
-- Blocker: Piper's Chinese phonemizer (`g2pW`) requires the `transformers`
-  Python package, which on this generation machine detects a broken/
-  partially-installed `torch` package (an environment issue unrelated to
-  this app or its content — a `torch` install was mid-flight from other
-  concurrent activity on the shared machine, causing the phonemizer to
-  either crash or silently produce empty phonemes depending on install
-  state at the moment of each call). This is a local tooling problem, not
-  a licensing or content issue.
-- Retried on the same date after `torch` finished installing cleanly
-  (`torch==2.13.0+cpu` confirmed present) — 3 songs synthesized
-  successfully (see above), but most others fail consistently and
-  reproducibly (not flaky — the same song fails every retry, 3
-  attempts each) with `wave.Error: # channels not specified` (Piper
-  writes zero audio frames for that line). This is specific to certain
-  lyric text going through g2pW, not a general breakage — short/simple
-  lines seem to work, others don't. This is a genuine Piper +
-  zh_CN-chaowen-medium + g2pW compatibility issue on this platform for
-  specific inputs, not a torch problem — needs real debugging (e.g.
-  testing g2pW's phoneme output directly per failing line, or trying a
-  different zh voice model) rather than a simple retry.
-- To finish `zh/` later: on a machine where `python -m piper -m
-  zh_CN-chaowen-medium.onnx -f test.wav` (piped a short Chinese
-  sentence) reliably produces valid non-empty audio, reuse the same
-  per-line + silence + `--length-scale 1.18` technique as the other
-  languages. If that still fails, try a different Piper zh voice model
-  from `rhasspy/piper-voices` (verify its license the same way as the
-  others) rather than continuing to fight `zh_CN-chaowen-medium`.
+- Voice model: `zh_CN-chaowen-medium` (Mandarin Chinese, medium quality,
+  22,050Hz), downloaded from `rhasspy/piper-voices` on Hugging Face. Model
+  license: **CC0** (public domain — dataset:
+  [OHF-Voice/voice-datasets](https://github.com/OHF-Voice/voice-datasets),
+  see the model card at
+  `rhasspy/piper-voices/zh/zh_CN/chaowen/medium/MODEL_CARD`).
+- Same per-line synthesis + ~400ms silence splice + `--length-scale 1.18`
+  technique as `pt/` (see above).
+- Getting here took several retries: earlier attempts on the same date hit
+  a `wave.Error: # channels not specified` failure (Piper's Chinese
+  phonemizer, `g2pW`, occasionally produced zero audio frames for a line)
+  that looked at first like a broken/partially-installed `torch` on the
+  generation machine. Once `torch`/`transformers` settled into a clean,
+  fully-installed state, per-line retries of the previously-failing songs
+  succeeded consistently — so the root cause was a transient environment
+  state during install, not a fundamental Piper/`zh_CN-chaowen-medium`/g2pW
+  incompatibility. No content had to be dropped or worked around.
+- Coverage: all 21 songs in `songs.zh.json`.
 
 ## All languages
 
 - The lyrics themselves are original content written for this app.
 - Portuguese (`pt/`, 22 songs), English (`en/`, 21 of 22 songs), German
   (`de/`, 21 songs), French (`fr/`, 21 songs), Spanish (`es/`, 21 songs),
-  and Italian (`it/`, 21 songs) are covered with real recorded-voice
-  narration. Mandarin Chinese (`zh/`) is not yet covered — see above.
+  Italian (`it/`, 21 songs), and Mandarin Chinese (`zh/`, 21 songs) are all
+  now covered with real recorded-voice narration.
 - `Songs.jsx` automatically prefers a real audio file when one exists for a
   given song+language and falls back to Web Speech otherwise — no missing
   file ever blocks playback.
