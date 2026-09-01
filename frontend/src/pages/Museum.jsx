@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { Suspense, lazy, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { getMuseum, getArchaeology } from "../content/index.js";
 import {
@@ -14,6 +14,10 @@ import {
 import SpeakButton from "../components/SpeakButton.jsx";
 import HelpButton from "../components/HelpButton.jsx";
 
+// Lazy-loaded: only pulls in this component's three.js/OrbitControls import
+// when the child actually opens the 3D room view for a museum room.
+const Museum3D = lazy(() => import("../components/Museum3D.jsx"));
+
 // --- Museu ABC: rooms of tappable exhibits, "guess first" pattern ---
 
 function ExhibitCard({ exhibit, chosenOptionId, onGuess, t, mother }) {
@@ -21,7 +25,7 @@ function ExhibitCard({ exhibit, chosenOptionId, onGuess, t, mother }) {
   const chosen = guessed ? exhibit.options.find((o) => o.id === chosenOptionId) : null;
 
   return (
-    <div className="game-card">
+    <div className="game-card" id={`exhibit-${exhibit.id}`}>
       <p className="mission-text">
         {exhibit.emoji} {exhibit.name}
         <SpeakButton text={exhibit.name} langCode={mother} />
@@ -64,6 +68,8 @@ function MuseumTab({ t, mother, profile }) {
   const [roomId, setRoomId] = useState(null);
   const [openExhibitId, setOpenExhibitId] = useState(null);
   const [version, setVersion] = useState(0);
+  const [view, setView] = useState("simple");
+  const room = rooms.find((r) => r.id === roomId);
 
   const explored = useMemo(() => getExploredMuseumExhibits(profile?.name), [profile?.name, version]);
   // Session-only map of which option the child picked per exhibit id, so the
@@ -120,6 +126,29 @@ function MuseumTab({ t, mother, profile }) {
         {room.intro}
         <SpeakButton text={room.intro} langCode={mother} />
       </p>
+
+      <div className="tab-row" role="tablist">
+        <button type="button" className={"tab-btn" + (view === "simple" ? " active" : "")} onClick={() => setView("simple")}>
+          🔲 {t("modules.view2D")}
+        </button>
+        <button type="button" className={"tab-btn" + (view === "3d" ? " active" : "")} onClick={() => setView("3d")}>
+          🌐 {t("modules.view3D")}
+        </button>
+      </div>
+
+      {view === "3d" && (
+        <Suspense fallback={<div className="globe-3d-container globe-3d-loading">🏛️</div>}>
+          <Museum3D
+            exhibits={room.exhibits.map((e) => ({ ...e, explKey: `${room.id}:${e.id}` }))}
+            exploredIds={explored}
+            onSelect={(exhibit) => {
+              const el = document.getElementById(`exhibit-${exhibit.id}`);
+              if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+            }}
+          />
+        </Suspense>
+      )}
+
       <div className="teardown-part-list">
         {room.exhibits.map((exhibit) => (
           <ExhibitCard

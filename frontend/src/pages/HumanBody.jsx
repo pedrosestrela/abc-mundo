@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { Suspense, lazy, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { getHumanBody, getToyHospital } from "../content/index.js";
 import {
@@ -16,6 +16,11 @@ import SpeakButton from "../components/SpeakButton.jsx";
 import HelpButton from "../components/HelpButton.jsx";
 import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
 import MascotBubble from "../components/mascots/MascotBubble.jsx";
+
+// Lazy-loaded: pulls in three.js's OrbitControls (only the pieces this
+// component imports, not the whole globe.gl bundle), only needed when the
+// child actually opens the 3D body view.
+const HumanBody3D = lazy(() => import("../components/HumanBody3D.jsx"));
 
 // A friendly, simplified front-view child silhouette (flat shapes only, no
 // external art assets — same convention as Illustrations.jsx /
@@ -87,6 +92,7 @@ function BodyTab({ pair, profile, tier, t }) {
   const organs = getHumanBody(pair.mother);
   const [activeId, setActiveId] = useState(null);
   const [version, setVersion] = useState(0);
+  const [view, setView] = useState("simple");
   const explored = useMemo(() => getExploredBodyOrgans(profile?.name), [profile?.name, version]);
   const active = organs.find((o) => o.id === activeId);
   const allExplored = organs.length > 0 && organs.every((o) => explored.includes(o.id));
@@ -108,8 +114,23 @@ function BodyTab({ pair, profile, tier, t }) {
         {t("modules.humanBodyExplored")} ({explored.length}/{organs.length})
       </h2>
 
+      <div className="tab-row" role="tablist">
+        <button type="button" className={"tab-btn" + (view === "simple" ? " active" : "")} onClick={() => setView("simple")}>
+          🔲 {t("modules.view2D")}
+        </button>
+        <button type="button" className={"tab-btn" + (view === "3d" ? " active" : "")} onClick={() => setView("3d")}>
+          🌐 {t("modules.view3D")}
+        </button>
+      </div>
+
       <div className="game-card">
-        <BodyDiagram organs={organs} activeId={activeId} exploredIds={explored} onSelect={handleSelect} />
+        {view === "simple" ? (
+          <BodyDiagram organs={organs} activeId={activeId} exploredIds={explored} onSelect={handleSelect} />
+        ) : (
+          <Suspense fallback={<div className="globe-3d-container globe-3d-loading">🫀</div>}>
+            <HumanBody3D organs={organs} activeId={activeId} exploredIds={explored} onSelect={handleSelect} />
+          </Suspense>
+        )}
 
         {active && (
           <div className="science-explanation">
