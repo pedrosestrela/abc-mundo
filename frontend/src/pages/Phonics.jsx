@@ -5,6 +5,8 @@ import { getLangPair, getProfile, getDifficultyTier, recordSkillEvent, pingProgr
 import SpeakButton from "../components/SpeakButton.jsx";
 import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
 import HelpButton from "../components/HelpButton.jsx";
+import MascotBubble from "../components/mascots/MascotBubble.jsx";
+import { pickLine } from "../components/mascots/reactionLines.js";
 
 function shuffle(arr) {
   const a = [...arr];
@@ -130,6 +132,9 @@ export default function Phonics() {
     <div className="page">
       <h1>{t("modules.phonicsTitle")} 👂</h1>
       <p className="page-intro">{t("modules.phonicsIntro", "")}</p>
+      <MascotBubble character="lumi" reaction="curious" langCode={pair.mother}>
+        {t("mascotLines.phonicsOpening")}
+      </MascotBubble>
 
       <div className="phonics-tabs">
         <button type="button" className={"phonics-tab" + (game === "initial" ? " selected" : "")} onClick={() => setGame("initial")}>
@@ -180,13 +185,31 @@ function useRoundState() {
   return { roundIndex, setRoundIndex, score, setScore, feedback, setFeedback, done, setDone };
 }
 
-function ScoreFooter({ score, total, done, onReplay, t }) {
+// Small, shared "reaction to this answer" bubble used by every Phonics
+// mini-game below: reads the round's `feedback` state ("correct" | "wrong")
+// and shows a calm, varied mascot line — never a scolding tone.
+function FeedbackMascot({ feedback, pair, t }) {
+  if (!feedback) return null;
+  const correct = feedback === "correct";
+  return (
+    <MascotBubble character="lumi" reaction={correct ? "happy" : "encouraging"} langCode={pair.mother}>
+      {pickLine(t(correct ? "mascotLines.phonicsCorrect" : "mascotLines.phonicsEncouraging", { returnObjects: true }))}
+    </MascotBubble>
+  );
+}
+
+function ScoreFooter({ score, total, done, onReplay, pair, t }) {
   if (!done) return null;
   return (
     <div className="game-card">
       <p>
         {t("modules.phonicsScore")}: {score} / {total}
       </p>
+      {pair && (
+        <MascotBubble character="lumi" reaction="resting" langCode={pair.mother}>
+          {t("mascotLines.phonicsClosing")}
+        </MascotBubble>
+      )}
       <button type="button" className="big-btn" onClick={onReplay}>
         {t("modules.phonicsPlayAgain")}
       </button>
@@ -254,7 +277,8 @@ function InitialSoundGame({ rounds, pair, profile, t }) {
           {roundIndex + 1} / {rounds.length}
         </p>
       )}
-      <ScoreFooter score={score} total={rounds.length} done={done} onReplay={replay} t={t} />
+      <FeedbackMascot feedback={feedback} pair={pair} t={t} />
+      <ScoreFooter score={score} total={rounds.length} done={done} onReplay={replay} pair={pair} t={t} />
     </div>
   );
 }
@@ -317,7 +341,8 @@ function RhymeGame({ rounds, pair, profile, t }) {
           {roundIndex + 1} / {rounds.length}
         </p>
       )}
-      <ScoreFooter score={score} total={rounds.length} done={done} onReplay={replay} t={t} />
+      <FeedbackMascot feedback={feedback} pair={pair} t={t} />
+      <ScoreFooter score={score} total={rounds.length} done={done} onReplay={replay} pair={pair} t={t} />
     </div>
   );
 }
@@ -377,7 +402,8 @@ function SyllableGame({ rounds, pair, profile, t }) {
           {roundIndex + 1} / {rounds.length}
         </p>
       )}
-      <ScoreFooter score={score} total={rounds.length} done={done} onReplay={replay} t={t} />
+      <FeedbackMascot feedback={feedback} pair={pair} t={t} />
+      <ScoreFooter score={score} total={rounds.length} done={done} onReplay={replay} pair={pair} t={t} />
     </div>
   );
 }
@@ -435,7 +461,8 @@ function OddOneOutGame({ rounds, pair, profile, t }) {
           {roundIndex + 1} / {rounds.length}
         </p>
       )}
-      <ScoreFooter score={score} total={rounds.length} done={done} onReplay={replay} t={t} />
+      <FeedbackMascot feedback={feedback} pair={pair} t={t} />
+      <ScoreFooter score={score} total={rounds.length} done={done} onReplay={replay} pair={pair} t={t} />
     </div>
   );
 }

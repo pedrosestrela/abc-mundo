@@ -6,6 +6,8 @@ import SpeakButton from "../components/SpeakButton.jsx";
 import SyllableSpeakButton from "../components/SyllableSpeakButton.jsx";
 import TabSpeakIcon from "../components/TabSpeakIcon.jsx";
 import HelpButton from "../components/HelpButton.jsx";
+import MascotBubble from "../components/mascots/MascotBubble.jsx";
+import { pickLine } from "../components/mascots/reactionLines.js";
 
 // Consonant-cluster/digraph fragments used to pick out the "special sound"
 // syllable inside a `digraph: true` word, per mother-tongue language.
@@ -175,6 +177,9 @@ export default function Syllables() {
     <div className="page">
       <h1>{t("modules.syllablesTitle")} 🧩</h1>
       <p className="page-intro">{t("modules.syllablesIntro")}</p>
+      <MascotBubble character="lumi" reaction="curious" langCode={pair.mother}>
+        {t("mascotLines.syllablesOpening")}
+      </MascotBubble>
 
       <div className="phonics-tabs">
         <button type="button" className={"phonics-tab" + (mode === "list" ? " selected" : "")} onClick={() => setMode("list")}>
@@ -305,13 +310,18 @@ export default function Syllables() {
   );
 }
 
-function ScoreFooter({ score, total, done, onReplay, t }) {
+function ScoreFooter({ score, total, done, onReplay, pair, t }) {
   if (!done) return null;
   return (
     <div className="game-card">
       <p>
         {t("modules.phonicsScore")}: {score} / {total}
       </p>
+      {pair && (
+        <MascotBubble character="lumi" reaction="resting" langCode={pair.mother}>
+          {t("mascotLines.genericClosing")}
+        </MascotBubble>
+      )}
       <button type="button" className="big-btn" onClick={onReplay}>
         {t("modules.phonicsPlayAgain")}
       </button>
@@ -408,7 +418,7 @@ function BuildGame({ rounds, pair, profile, t }) {
           {roundIndex + 1} / {rounds.length}
         </p>
       )}
-      <ScoreFooter score={score} total={rounds.length} done={done} onReplay={replay} t={t} />
+      <ScoreFooter score={score} total={rounds.length} done={done} onReplay={replay} pair={pair} t={t} />
     </div>
   );
 }
@@ -494,7 +504,7 @@ function MissingGame({ rounds, pair, profile, t }) {
           {roundIndex + 1} / {rounds.length}
         </p>
       )}
-      <ScoreFooter score={score} total={rounds.length} done={done} onReplay={replay} t={t} />
+      <ScoreFooter score={score} total={rounds.length} done={done} onReplay={replay} pair={pair} t={t} />
     </div>
   );
 }
@@ -573,7 +583,7 @@ function SplitGame({ rounds, pair, profile, t }) {
           {roundIndex + 1} / {rounds.length}
         </p>
       )}
-      <ScoreFooter score={score} total={rounds.length} done={done} onReplay={replay} t={t} />
+      <ScoreFooter score={score} total={rounds.length} done={done} onReplay={replay} pair={pair} t={t} />
     </div>
   );
 }
@@ -655,7 +665,7 @@ function DigraphGame({ rounds, pair, profile, t }) {
           {roundIndex + 1} / {rounds.length}
         </p>
       )}
-      <ScoreFooter score={score} total={rounds.length} done={done} onReplay={replay} t={t} />
+      <ScoreFooter score={score} total={rounds.length} done={done} onReplay={replay} pair={pair} t={t} />
     </div>
   );
 }

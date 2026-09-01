@@ -5,6 +5,8 @@ import { getLangPair, getProfile, getDifficultyTier, pingProgress, recordSkillEv
 import SpeakButton from "../components/SpeakButton.jsx";
 import HelpButton from "../components/HelpButton.jsx";
 import { IllustrationBook } from "../components/illustrations/index.js";
+import MascotBubble from "../components/mascots/MascotBubble.jsx";
+import { pickLine } from "../components/mascots/reactionLines.js";
 
 function shuffle(arr) {
   const a = [...arr];
@@ -76,6 +78,9 @@ function WordQuiz({ words, target, pair, profile, t }) {
         <div className="science-explanation">
           <p className="game-result">⭐ {t("modules.readingQuizCorrect")}</p>
           <SpeakButton text={t("modules.readingQuizCorrect")} langCode={pair.mother} />
+          <MascotBubble character="lumi" reaction="happy" langCode={pair.mother}>
+            {pickLine(t("mascotLines.mathCorrect", { returnObjects: true }))}
+          </MascotBubble>
         </div>
       )}
     </div>
@@ -236,6 +241,9 @@ export default function Reading() {
         <HelpButton text={mode === "browse" ? t("modules.readingHelpMain") : t("modules.readingMemoryHelp")} langCode={pair.mother} />
       </div>
       <IllustrationBook size={40} />
+      <MascotBubble character="lumi" reaction="curious" langCode={pair.mother}>
+        {t("mascotLines.readingOpening")}
+      </MascotBubble>
 
       <div className="phonics-tabs">
         <button type="button" className={"phonics-tab" + (mode === "browse" ? " selected" : "")} onClick={() => setMode("browse")}>
