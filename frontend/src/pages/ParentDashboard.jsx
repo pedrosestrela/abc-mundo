@@ -12,6 +12,7 @@ import {
   setReminderSettings,
 } from "../storage.js";
 import HelpButton from "../components/HelpButton.jsx";
+import MascotBubble from "../components/mascots/MascotBubble.jsx";
 
 function ReminderSection({ t, langCode }) {
   const [settings, setSettings] = useState(() => getReminderSettings());
@@ -191,6 +192,27 @@ function humanizeSkill(skill) {
     .join(" ");
 }
 
+function buildParentSummaryLine(t, { name, streak, mastered, weakest, attempts }) {
+  if (!attempts) {
+    return t("mascotLines.parentSummaryDefault", { name });
+  }
+  if (weakest && weakest.length > 0) {
+    const top = weakest[0];
+    return t("mascotLines.parentSummaryWithWeakest", {
+      name,
+      skill: humanizeSkill(top.skill),
+      accuracy: Math.round(top.accuracy * 100),
+    });
+  }
+  if (mastered && mastered.length > 0) {
+    return t("mascotLines.parentSummaryWithMastered", { name, count: mastered.length });
+  }
+  if (streak > 0) {
+    return t("mascotLines.parentSummaryStreakOnly", { name, streak });
+  }
+  return t("mascotLines.parentSummaryGeneral", { name, attempts });
+}
+
 function formatReportDate(locale) {
   try {
     return new Date().toLocaleDateString(locale, { year: "numeric", month: "long", day: "numeric" });
@@ -243,6 +265,16 @@ export default function ParentDashboard() {
               </div>
             </div>
           </div>
+
+          <MascotBubble character="milo" reaction="resting" langCode={i18n.language} className="parent-mascot-summary">
+            {buildParentSummaryLine(t, {
+              name: profile.name,
+              streak: progress.streak || 0,
+              mastered,
+              weakest,
+              attempts: totalAttempts,
+            })}
+          </MascotBubble>
 
           {!hasData ? (
             <p className="parent-empty">{t("modules.parentsEmpty")}</p>
