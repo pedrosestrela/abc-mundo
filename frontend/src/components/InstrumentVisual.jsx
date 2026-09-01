@@ -1,6 +1,25 @@
 import React from "react";
 import { SOLFEGE_PT } from "../music.js";
 
+// Shared <defs> (gradients/filters) reused by every instrument body so the
+// whole family reads as one visual system instead of flat single-color
+// shapes. IDs are scoped with an "iv-" prefix to avoid collisions with the
+// Illustrations.jsx library, which may render on the same page.
+function InstrumentDefs() {
+  return (
+    <defs>
+      <radialGradient id="iv-sheen" cx="30%" cy="22%" r="80%">
+        <stop offset="0%" stopColor="#ffffff" stopOpacity="0.55" />
+        <stop offset="45%" stopColor="#ffffff" stopOpacity="0.08" />
+        <stop offset="100%" stopColor="#ffffff" stopOpacity="0" />
+      </radialGradient>
+      <filter id="iv-shadow" x="-30%" y="-30%" width="160%" height="160%">
+        <feDropShadow dx="0" dy="2" stdDeviation="2.2" floodColor="#00000028" />
+      </filter>
+    </defs>
+  );
+}
+
 // Maps each pitched (non-keyboard, non-drum) instrument id to a visual
 // "family" — used both here and by the caller to decide whether to render
 // this component at all instead of the shared piano keyboard.
@@ -48,16 +67,24 @@ function StringsVisual({ notes, activeNote, highlightNote, onPress, instrument }
       role="img"
       aria-label="Cordas"
     >
+      <InstrumentDefs />
       {shape === "round" ? (
-        <ellipse
-          cx={width / 2}
-          cy={height / 2}
-          rx={width / 2 - 8}
-          ry={height / 2 - 6}
-          className={"instrument-body " + bodyClass}
-        />
+        <>
+          <ellipse
+            cx={width / 2}
+            cy={height / 2}
+            rx={width / 2 - 8}
+            ry={height / 2 - 6}
+            className={"instrument-body " + bodyClass}
+            filter="url(#iv-shadow)"
+          />
+          <ellipse cx={width / 2} cy={height / 2} rx={width / 2 - 8} ry={height / 2 - 6} fill="url(#iv-sheen)" />
+        </>
       ) : (
-        <rect x={4} y={4} width={width - 8} height={height - 8} rx={cfg.rx} className={"instrument-body " + bodyClass} />
+        <>
+          <rect x={4} y={4} width={width - 8} height={height - 8} rx={cfg.rx} className={"instrument-body " + bodyClass} filter="url(#iv-shadow)" />
+          <rect x={4} y={4} width={width - 8} height={height - 8} rx={cfg.rx} fill="url(#iv-sheen)" />
+        </>
       )}
       {notes.map((note, i) => {
         const y = gap * (i + 1);
@@ -97,6 +124,7 @@ function BowedVisual({ notes, activeNote, highlightNote, onPress, instrument }) 
   const mid = width / 2;
   return (
     <svg className={"instrument-visual-svg bowed-visual bowed-visual-" + instrument} viewBox={`0 0 ${width} ${height}`} width="100%" role="img" aria-label="Cordas de arco">
+      <InstrumentDefs />
       <path
         d={`M ${mid} 10
             C ${mid - 70} 30, ${mid - 90} 70, ${mid - waist} ${height / 2}
@@ -104,6 +132,15 @@ function BowedVisual({ notes, activeNote, highlightNote, onPress, instrument }) 
             C ${mid + 70} ${height - 30}, ${mid + 90} ${height - 90}, ${mid + waist} ${height / 2}
             C ${mid + 90} 70, ${mid + 70} 30, ${mid} 10 Z`}
         className={"instrument-body " + bodyClass}
+        filter="url(#iv-shadow)"
+      />
+      <path
+        d={`M ${mid} 10
+            C ${mid - 70} 30, ${mid - 90} 70, ${mid - waist} ${height / 2}
+            C ${mid - 90} ${height - 90}, ${mid - 70} ${height - 30}, ${mid} ${height - 10}
+            C ${mid + 70} ${height - 30}, ${mid + 90} ${height - 90}, ${mid + waist} ${height / 2}
+            C ${mid + 90} 70, ${mid + 70} 30, ${mid} 10 Z`}
+        fill="url(#iv-sheen)"
       />
       <ellipse cx={mid - waist - 6} cy={height / 2} rx={4} ry={16} className="bowed-fhole" />
       <ellipse cx={mid + waist + 6} cy={height / 2} rx={4} ry={16} className="bowed-fhole" />
@@ -165,7 +202,9 @@ function WindVisual({ notes, activeNote, highlightNote, onPress, instrument }) {
       role="img"
       aria-label="Instrumento de sopro"
     >
-      <rect x={10} y={height / 2 - 22} width={width - 20} height={44} rx={22} className={"instrument-body " + cfg.bodyClass} />
+      <InstrumentDefs />
+      <rect x={10} y={height / 2 - 22} width={width - 20} height={44} rx={22} className={"instrument-body " + cfg.bodyClass} filter="url(#iv-shadow)" />
+      <rect x={10} y={height / 2 - 22} width={width - 20} height={44} rx={22} fill="url(#iv-sheen)" />
       {notes.map((note, i) => {
         const cx = gap * (i + 1);
         const active = (activeNote === note ? " active" : "") + (highlightNote === note ? " highlight" : "");
@@ -221,9 +260,11 @@ function TrumpetVisual({ notes, activeNote, highlightNote, onPress }) {
       role="img"
       aria-label="Trompete"
     >
-      <rect x={10} y={38} width={width - 20} height={30} rx={15} className="instrument-body trumpet-body" />
+      <InstrumentDefs />
+      <rect x={10} y={38} width={width - 20} height={30} rx={15} className="instrument-body trumpet-body" filter="url(#iv-shadow)" />
       {/* Bell flare on the right */}
-      <path d={`M ${width - 34} 30 L ${width - 6} 8 L ${width - 6} 96 L ${width - 34} 74 Z`} className="instrument-body trumpet-body" />
+      <path d={`M ${width - 34} 30 L ${width - 6} 8 L ${width - 6} 96 L ${width - 34} 74 Z`} className="instrument-body trumpet-body" filter="url(#iv-shadow)" />
+      <rect x={10} y={38} width={width - 20} height={30} rx={15} fill="url(#iv-sheen)" />
       {/* The 3 valves, drawn as pistons on top of the tube body */}
       {valveXs.map((cx, i) => {
         const pressed = valveCombo[i];
@@ -271,9 +312,15 @@ function HarpVisual({ notes, activeNote, highlightNote, onPress }) {
   const bottomGap = (width - 60) / (notes.length - 1 || 1);
   return (
     <svg className="instrument-visual-svg harp-visual" viewBox={`0 0 ${width} ${height}`} width="100%" role="img" aria-label="Harpa">
+      <InstrumentDefs />
       <path
         d={`M 10 20 C 40 10, ${width - 30} 30, ${width - 20} 200 L ${width - 60} 210 C ${width - 90} 90, 30 60, 10 20 Z`}
         className="instrument-body harp-frame"
+        filter="url(#iv-shadow)"
+      />
+      <path
+        d={`M 10 20 C 40 10, ${width - 30} 30, ${width - 20} 200 L ${width - 60} 210 C ${width - 90} 90, 30 60, 10 20 Z`}
+        fill="url(#iv-sheen)"
       />
       {notes.map((note, i) => {
         const bx = bottomStartX + bottomGap * i;
@@ -315,7 +362,8 @@ function MalletVisual({ notes, activeNote, highlightNote, onPress }) {
   const maxBarHeight = height - 40;
   return (
     <svg className="instrument-visual-svg mallet-visual" viewBox={`0 0 ${width} ${height}`} width="100%" role="img" aria-label="Xilofone">
-      <rect x={4} y={height - 26} width={width - 8} height={18} rx={8} className="instrument-body mallet-frame" />
+      <InstrumentDefs />
+      <rect x={4} y={height - 26} width={width - 8} height={18} rx={8} className="instrument-body mallet-frame" filter="url(#iv-shadow)" />
       {notes.map((note, i) => {
         const barHeight = maxBarHeight - i * (maxBarHeight / (notes.length + 1.5));
         const bx = barGap * i + (barGap - barWidth) / 2;
@@ -333,6 +381,7 @@ function MalletVisual({ notes, activeNote, highlightNote, onPress }) {
                 "mallet-bar" + (activeNote === note ? " active" : "") + (highlightNote === note ? " highlight" : "")
               }
             />
+            <rect x={bx + 3} y={by + 3} width={barWidth - 6} height={barHeight * 0.28} rx={4} fill="#fff" opacity="0.2" pointerEvents="none" />
             <circle cx={bx + barWidth / 2} cy={by + 14} r={3.5} className="mallet-bar-hole" />
             <text x={bx + barWidth / 2} y={height - 4} textAnchor="middle" className="instrument-note-label">
               {noteLabel(note)}
