@@ -5012,3 +5012,43 @@ button.circuit-board-slot:disabled {
     animation: none !important;
   }
 }
+
+/* Mundos "living map" polish: per-section mascot cameos + tactile tile hover. */
+.mundos-place-cameo {
+  max-width: 460px;
+  margin: 4px auto 14px;
+}
+
+.mundos-place-cameo .mascot-bubble__balloon {
+  padding: 8px 12px;
+}
+
+.mundos-place-cameo .mascot-bubble__text {
+  font-size: 0.9rem;
+}
+
+.mundos-tile-tactile {
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.mundos-tile-tactile:hover,
+.mundos-tile-tactile:focus-visible {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.mundos-tile-tactile:active {
+  transform: translateY(-1px) scale(1.01);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mundos-tile-tactile {
+    transition: none;
+  }
+
+  .mundos-tile-tactile:hover,
+  .mundos-tile-tactile:focus-visible,
+  .mundos-tile-tactile:active {
+    transform: none;
+  }
+}

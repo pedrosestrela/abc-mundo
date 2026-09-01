@@ -89,6 +89,7 @@ const GROUPS = [
     place: "placeRead",
     theme: "village",
     Motif: VillageMotif,
+    cameo: { character: "lumi", reaction: "curious", line: "mascotLines.mundosCameoRead" },
     tiles: [
       { to: "/languages", emoji: "🌐", nav: "language", sub: "sub_language" },
       { to: "/phonics", emoji: "👂", nav: "phonics", sub: "sub_phonics" },
@@ -106,6 +107,7 @@ const GROUPS = [
     place: "placeNumbers",
     theme: "island",
     Motif: IslandMotif,
+    cameo: { character: "nina", reaction: "happy", line: "mascotLines.mundosCameoNumbers" },
     tiles: [
       { to: "/math", emoji: "🔢", nav: "math", sub: "sub_math" },
       { to: "/financial", emoji: "💰", nav: "financial", sub: "sub_financial" },
@@ -116,6 +118,7 @@ const GROUPS = [
     place: "placeMusic",
     theme: "music",
     Motif: MusicMotif,
+    cameo: { character: "milo", reaction: "happy", line: "mascotLines.mundosCameoMusic" },
     tiles: [
       { to: "/songs", emoji: "🎵", nav: "songs", sub: "sub_songs" },
       { to: "/music", emoji: "🎶", nav: "music", sub: "sub_music" },
@@ -126,6 +129,7 @@ const GROUPS = [
     place: "placeWorld",
     theme: "castle",
     Motif: CastleMotif,
+    cameo: { character: "vasco", reaction: "curious", line: "mascotLines.mundosCameoWorld" },
     tiles: [
       { to: "/world", emoji: "🗺️", nav: "world", sub: "sub_world" },
       { to: "/history", emoji: "🏰", nav: "history", sub: "sub_history" },
@@ -146,6 +150,7 @@ const GROUPS = [
     place: "placeCreate",
     theme: "lab",
     Motif: LabMotif,
+    cameo: { character: "bit", reaction: "thinking", line: "mascotLines.mundosCameoCreate" },
     tiles: [
       { to: "/game", emoji: "🎮", nav: "game", sub: "sub_game" },
       { to: "/robots", emoji: "🤖", nav: "robots", sub: "sub_robots" },
@@ -166,6 +171,7 @@ const GROUPS = [
     place: "placeLife",
     theme: "life",
     Motif: LifeMotif,
+    cameo: { character: "milo", reaction: "encouraging", line: "mascotLines.mundosCameoLife" },
     tiles: [
       { to: "/lifeskills", emoji: "🌱", nav: "lifeskills", sub: "sub_lifeskills" },
       { to: "/mini-chef", emoji: "👩‍🍳", nav: "miniChef", sub: "sub_miniChef" },
@@ -207,12 +213,23 @@ export default function Mundos() {
             <div className="mundos-place-inner">
               <h2 className="mundos-place-title">{t(`mundos.${group.place}`)}</h2>
               <h3 className="mundos-group-heading">{t(`mundos.${group.heading}`)}</h3>
+              {group.cameo && (
+                <MascotBubble
+                  character={group.cameo.character}
+                  reaction={group.cameo.reaction}
+                  langCode={pair.mother}
+                  size={52}
+                  className="mundos-place-cameo"
+                >
+                  {t(group.cameo.line)}
+                </MascotBubble>
+              )}
               <div className="mundos-tile-grid">
                 {group.tiles.map((tile) => (
                   <button
                     key={tile.to}
                     type="button"
-                    className="mission-card mundos-tile"
+                    className="mission-card mundos-tile mundos-tile-tactile"
                     onClick={() => navigate(tile.to)}
                   >
                     <div className="mission-emoji">{tile.emoji}</div>
