@@ -72,6 +72,7 @@ const Museum = lazyWithReload(() => import("./pages/Museum.jsx"));
 const City = lazyWithReload(() => import("./pages/City.jsx"));
 const HowMade = lazyWithReload(() => import("./pages/HowMade.jsx"));
 const Mundos = lazyWithReload(() => import("./pages/Mundos.jsx"));
+const DailyMission = lazyWithReload(() => import("./pages/DailyMission.jsx"));
 const Thinking = lazyWithReload(() => import("./pages/Thinking.jsx"));
 const LearningStrategies = lazyWithReload(() => import("./pages/LearningStrategies.jsx"));
 const NatureDiary = lazyWithReload(() => import("./pages/NatureDiary.jsx"));
@@ -115,6 +116,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/languages" element={<LanguagePicker />} />
             <Route path="/mundos" element={<Mundos />} />
+            <Route path="/daily-mission" element={<DailyMission />} />
             <Route path="/phonics" element={<Phonics />} />
             <Route path="/alphabet" element={<Alphabet />} />
             <Route path="/syllables" element={<Syllables />} />

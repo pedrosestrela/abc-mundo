@@ -31,6 +31,14 @@ import phrasesZh from "./phrases.zh.json";
 import phrasesEs from "./phrases.es.json";
 import phrasesIt from "./phrases.it.json";
 
+// Off-screen mission templates for "Missão de Hoje" (see dailyPath.js).
+// TODO: only pt + en have real, hand-written templates so far. de/fr/zh/es/it
+// currently reuse the pt templates (still readable/usable via TTS in the
+// child's secondary language flows, but not actually translated) — a future
+// pass should add real translations for the other 5 languages.
+import offScreenMissionsPt from "./offScreenMissions.pt.json";
+import offScreenMissionsEn from "./offScreenMissions.en.json";
+
 import houseSystemsPt from "./houseSystems.pt.json";
 import houseSystemsEn from "./houseSystems.en.json";
 import houseSystemsDe from "./houseSystems.de.json";
@@ -481,6 +489,15 @@ export function getAlphabet(langCode) {
 
 export function getReading(langCode) {
   return READING[langCode] || [];
+}
+
+const OFF_SCREEN_MISSIONS = { pt: offScreenMissionsPt, en: offScreenMissionsEn };
+
+// Returns the off-screen mission templates for langCode, falling back to pt
+// (untranslated but functional) for languages that don't have their own
+// templates yet — see the TODO on the imports above.
+export function getOffScreenMissions(langCode) {
+  return OFF_SCREEN_MISSIONS[langCode] || OFF_SCREEN_MISSIONS.pt;
 }
 
 export function getSyllables(langCode) {
