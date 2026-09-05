@@ -1,16 +1,98 @@
 [
-  { "id": "draw-letters", "template": "Desenha {number} {letter}s grandes no papel, com lápis de cor diferentes." },
-  { "id": "find-object", "template": "Procura em casa uma coisa que comece pela letra {letter}." },
-  { "id": "count-object", "template": "Encontra {number} objetos iguais em casa e conta-os em voz alta." },
-  { "id": "trace-finger", "template": "Desenha a letra {letter} no ar com o dedo, e depois nas costas de alguém da família." },
-  { "id": "letter-hunt-book", "template": "Abre um livro ou revista e procura {number} palavras que comecem pela letra {letter}." },
-  { "id": "build-letter", "template": "Usa massa de moldar, lã ou paus de gelado para construir a letra {letter}." },
-  { "id": "count-steps", "template": "Dá {number} passos grandes até à porta mais próxima, contando alto." },
-  { "id": "letter-snack", "template": "Ajuda a preparar um lanche e organiza {number} pedaços de fruta num prato." },
-  { "id": "family-word", "template": "Pergunta a alguém da família uma palavra que comece pela letra {letter} e desenha-a." },
-  { "id": "letter-walk", "template": "Numa caminhada ou passeio, tenta encontrar {number} coisas que comecem pela letra {letter}." },
-  { "id": "sing-count", "template": "Canta ou inventa uma lengalenga contando até {number}." },
-  { "id": "letter-shape", "template": "Com um cordel ou fita, forma a letra {letter} no chão." },
-  { "id": "sort-toys", "template": "Separa {number} brinquedos por cor e conta quantos há de cada." },
-  { "id": "letter-sound", "template": "Diz {number} palavras que comecem com o som da letra {letter}, uma de cada vez." }
+  {
+    "id": "draw-letters",
+    "template": "Desenha {number} {letter}s grandes no papel, com lápis de cor diferentes."
+  },
+  {
+    "id": "find-object",
+    "template": "Procura em casa uma coisa que comece pela letra {letter}."
+  },
+  {
+    "id": "count-object",
+    "template": "Encontra {number} objetos iguais em casa e conta-os em voz alta."
+  },
+  {
+    "id": "trace-finger",
+    "template": "Desenha a letra {letter} no ar com o dedo, e depois nas costas de alguém da família."
+  },
+  {
+    "id": "letter-hunt-book",
+    "template": "Abre um livro ou revista e procura {number} palavras que comecem pela letra {letter}."
+  },
+  {
+    "id": "build-letter",
+    "template": "Usa massa de moldar, lã ou paus de gelado para construir a letra {letter}."
+  },
+  {
+    "id": "count-steps",
+    "template": "Dá {number} passos grandes até à porta mais próxima, contando alto."
+  },
+  {
+    "id": "letter-snack",
+    "template": "Ajuda a preparar um lanche e organiza {number} pedaços de fruta num prato."
+  },
+  {
+    "id": "family-word",
+    "template": "Pergunta a alguém da família uma palavra que comece pela letra {letter} e desenha-a."
+  },
+  {
+    "id": "letter-walk",
+    "template": "Numa caminhada ou passeio, tenta encontrar {number} coisas que comecem pela letra {letter}."
+  },
+  {
+    "id": "sing-count",
+    "template": "Canta ou inventa uma lengalenga contando até {number}."
+  },
+  {
+    "id": "letter-shape",
+    "template": "Com um cordel ou fita, forma a letra {letter} no chão."
+  },
+  {
+    "id": "sort-toys",
+    "template": "Separa {number} brinquedos por cor e conta quantos há de cada."
+  },
+  {
+    "id": "letter-sound",
+    "template": "Diz {number} palavras que comecem com o som da letra {letter}, uma de cada vez."
+  },
+  {
+    "id": "organize-collection",
+    "template": "Escolhe uma coleção de brinquedos ou cromos e organiza-a por tamanho ou tipo."
+  },
+  {
+    "id": "draw-family",
+    "template": "Desenha um membro da tua família e mostra o desenho a essa pessoa."
+  },
+  {
+    "id": "blanket-fort",
+    "template": "Constrói um esconderijo com cobertores e almofadas e lê lá dentro um livro."
+  },
+  {
+    "id": "water-plant",
+    "template": "Rega uma planta lá de casa e conta {number} folhas que ela tem."
+  },
+  {
+    "id": "fold-laundry-game",
+    "template": "Ajuda a dobrar roupa e transforma isso num jogo: quem dobra {number} peças primeiro?"
+  },
+  {
+    "id": "secret-handshake",
+    "template": "Inventa um cumprimento secreto com {number} passos e ensina-o a alguém da família."
+  },
+  {
+    "id": "postcard-grandparent",
+    "template": "Desenha e escreve um postal para um avô, avó ou amigo especial."
+  },
+  {
+    "id": "shoelace-practice",
+    "template": "Pratica atar os atacadores dos sapatos {number} vezes seguidas."
+  },
+  {
+    "id": "weather-rhyme",
+    "template": "Olha pela janela e inventa uma rima curta sobre o tempo que está lá fora."
+  },
+  {
+    "id": "tidy-shelf",
+    "template": "Arruma uma prateleira ou gaveta, guardando {number} coisas no sítio certo."
+  }
 ]

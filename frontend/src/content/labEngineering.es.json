@@ -268,5 +268,455 @@
         "text": "El papel se rasga en cuanto se le sujeta la caja."
       }
     }
+  },
+  "seesaw": {
+    "title": "El Sube y Baja del Conejo",
+    "emoji": "⚖️",
+    "prompt": "🐰 El conejo y la ardilla quieren jugar en el sube y baja. ¡Construye uno!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Madera"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Piedra"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Cuerda"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papel"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": true,
+        "text": "La madera es rígida y ligera — ¡el sube y baja se balancea perfectamente arriba y abajo!"
+      },
+      "stone": {
+        "success": false,
+        "text": "La piedra pesa demasiado de un solo lado — el sube y baja no puede subir."
+      },
+      "rope": {
+        "success": false,
+        "text": "La cuerda se dobla y no forma una tabla firme — nadie puede sentarse."
+      },
+      "paper": {
+        "success": false,
+        "text": "El papel se dobla en cuanto alguien se sienta."
+      }
+    }
+  },
+  "slide": {
+    "title": "El Tobogán de la Montaña",
+    "emoji": "🛝",
+    "prompt": "🐿️ La ardilla quiere bajar la montaña jugando. ¡Construye un tobogán!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Madera"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Piedra"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Cuerda"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papel"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": true,
+        "text": "La madera es lisa y resistente — ¡la ardilla se desliza suavemente hasta abajo!"
+      },
+      "stone": {
+        "success": false,
+        "text": "La piedra es áspera y demasiado pesada para formar una rampa lisa."
+      },
+      "rope": {
+        "success": false,
+        "text": "La cuerda no forma una superficie plana — no hay por dónde deslizarse."
+      },
+      "paper": {
+        "success": false,
+        "text": "El papel se rasga con el peso de la ardilla al deslizarse."
+      }
+    }
+  },
+  "kite": {
+    "title": "La Cometa de Papel",
+    "emoji": "🪁",
+    "prompt": "🐦 El pajarito quiere un amigo que vuele a su lado. ¡Construye una cometa!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Madera"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Piedra"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Cuerda"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papel"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "La madera es demasiado pesada — la cometa nunca despega del suelo."
+      },
+      "stone": {
+        "success": false,
+        "text": "La piedra cae directo, sin ninguna posibilidad de volar."
+      },
+      "rope": {
+        "success": false,
+        "text": "La cuerda sola no tiene superficie para atrapar el viento."
+      },
+      "paper": {
+        "success": true,
+        "text": "El papel es ligero y atrapa el viento fácilmente — ¡la cometa vuela alto en el cielo!"
+      }
+    }
+  },
+  "windmill": {
+    "title": "El Molino de Viento",
+    "emoji": "🌬️",
+    "prompt": "🐭 El ratón quiere ver las aspas girar con el viento. ¡Construye un molino de viento!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Madera"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Piedra"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Cuerda"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papel"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "Las aspas de madera son demasiado pesadas — el viento no puede moverlas."
+      },
+      "stone": {
+        "success": false,
+        "text": "La piedra no se mueve ni con el viento más fuerte."
+      },
+      "rope": {
+        "success": false,
+        "text": "La cuerda no tiene superficie para que el viento empuje."
+      },
+      "paper": {
+        "success": true,
+        "text": "¡Las aspas de papel son ligeras y giran fácilmente con solo una brisa suave!"
+      }
+    }
+  },
+  "zipline": {
+    "title": "La Tirolina de la Selva",
+    "emoji": "🪢",
+    "prompt": "🐒 El mono quiere deslizarse de árbol en árbol. ¡Construye una tirolina!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Madera"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Piedra"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Cuerda"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papel"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "La madera rígida no se puede atar a los árboles para formar una línea tensa."
+      },
+      "stone": {
+        "success": false,
+        "text": "La piedra no se puede tensar entre los árboles."
+      },
+      "rope": {
+        "success": true,
+        "text": "¡La cuerda tensada entre los árboles aguanta el peso del mono, que se desliza feliz hasta el otro lado!"
+      },
+      "paper": {
+        "success": false,
+        "text": "El papel se rasga en cuanto el mono se cuelga de él."
+      }
+    }
+  },
+  "swing": {
+    "title": "El Columpio del Árbol",
+    "emoji": "⛓️",
+    "prompt": "🐶 El perro quiere columpiarse en un árbol del jardín. ¡Construye un columpio!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Madera"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Piedra"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Cuerda"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papel"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "La madera rígida no se dobla alrededor de la rama para sujetar el columpio."
+      },
+      "stone": {
+        "success": false,
+        "text": "La piedra es demasiado pesada y rompe la rama del árbol."
+      },
+      "rope": {
+        "success": true,
+        "text": "¡La cuerda es fuerte y flexible — se ata a la rama y el columpio funciona muy bien!"
+      },
+      "paper": {
+        "success": false,
+        "text": "El papel se rasga en cuanto alguien se sienta en el columpio."
+      }
+    }
+  },
+  "wall": {
+    "title": "La Muralla del Castillo",
+    "emoji": "🛡️",
+    "prompt": "🐴 El caballo quiere proteger el castillo de los vientos fuertes. ¡Construye una muralla!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Madera"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Piedra"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Cuerda"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papel"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "La madera es demasiado ligera y el viento fuerte derriba la muralla."
+      },
+      "stone": {
+        "success": true,
+        "text": "¡Los bloques de piedra apilados forman una pared pesada y sólida que resiste el viento!"
+      },
+      "rope": {
+        "success": false,
+        "text": "La cuerda no forma una pared — el viento pasa libremente."
+      },
+      "paper": {
+        "success": false,
+        "text": "El papel se lo lleva la primera ráfaga de viento."
+      }
+    }
+  },
+  "well": {
+    "title": "El Pozo de la Aldea",
+    "emoji": "🪣",
+    "prompt": "🐔 La gallina quiere agua fresca de la aldea. ¡Construye un pozo!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Madera"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Piedra"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Cuerda"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papel"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "La madera se pudre con la humedad de la tierra y el pozo se derrumba."
+      },
+      "stone": {
+        "success": true,
+        "text": "¡Las piedras apiladas en círculo forman paredes firmes que no se derrumban con la tierra alrededor!"
+      },
+      "rope": {
+        "success": false,
+        "text": "La cuerda sola no sujeta la tierra alrededor del agujero."
+      },
+      "paper": {
+        "success": false,
+        "text": "El papel se disuelve con la humedad de la tierra."
+      }
+    }
+  },
+  "waterwheel": {
+    "title": "La Rueda de Agua del Molino",
+    "emoji": "🌊",
+    "prompt": "🐟 El pez quiere ver la rueda girar con la corriente del río. ¡Construye una rueda de agua!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Madera"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Piedra"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Cuerda"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papel"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": true,
+        "text": "¡Las paletas de madera son ligeras pero fuertes — la corriente del río las empuja y la rueda gira sin parar!"
+      },
+      "stone": {
+        "success": false,
+        "text": "La piedra es demasiado pesada — la corriente del río no puede moverla."
+      },
+      "rope": {
+        "success": false,
+        "text": "La cuerda no tiene paletas para que el agua empuje."
+      },
+      "paper": {
+        "success": false,
+        "text": "El papel se disuelve en cuanto toca el agua que corre."
+      }
+    }
+  },
+  "parachute": {
+    "title": "El Paracaídas del Osito de Peluche",
+    "emoji": "🪂",
+    "prompt": "🧸 El osito de peluche quiere saltar del tejado sin hacerse daño. ¡Construye un paracaídas!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Madera"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Piedra"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Cuerda"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papel"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "La madera es demasiado pesada y cae directo, sin frenar la caída."
+      },
+      "stone": {
+        "success": false,
+        "text": "La piedra cae como una piedra — sin ninguna posibilidad de flotar en el aire."
+      },
+      "rope": {
+        "success": false,
+        "text": "La cuerda sola no tiene superficie para atrapar el aire."
+      },
+      "paper": {
+        "success": true,
+        "text": "¡El papel es ligero y se abre como una tela, atrapando el aire y bajando despacio hasta el suelo!"
+      }
+    }
   }
 }

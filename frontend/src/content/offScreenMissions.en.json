@@ -1,16 +1,98 @@
 [
-  { "id": "draw-letters", "template": "Draw {number} big letter {letter}s on paper, using different coloured pencils." },
-  { "id": "find-object", "template": "Look around the house for something that starts with the letter {letter}." },
-  { "id": "count-object", "template": "Find {number} matching objects at home and count them out loud." },
-  { "id": "trace-finger", "template": "Trace the letter {letter} in the air with your finger, then on a family member's back." },
-  { "id": "letter-hunt-book", "template": "Open a book or magazine and find {number} words that start with the letter {letter}." },
-  { "id": "build-letter", "template": "Use play dough, yarn, or craft sticks to build the letter {letter}." },
-  { "id": "count-steps", "template": "Take {number} big steps to the nearest door, counting out loud." },
-  { "id": "letter-snack", "template": "Help make a snack and arrange {number} pieces of fruit on a plate." },
-  { "id": "family-word", "template": "Ask someone in your family for a word that starts with {letter} and draw it." },
-  { "id": "letter-walk", "template": "On a walk, try to spot {number} things that start with the letter {letter}." },
-  { "id": "sing-count", "template": "Sing or make up a little rhyme counting to {number}." },
-  { "id": "letter-shape", "template": "Using string or ribbon, shape the letter {letter} on the floor." },
-  { "id": "sort-toys", "template": "Sort {number} toys by colour and count how many of each." },
-  { "id": "letter-sound", "template": "Say {number} words that start with the sound of the letter {letter}, one at a time." }
+  {
+    "id": "draw-letters",
+    "template": "Draw {number} big letter {letter}s on paper, using different coloured pencils."
+  },
+  {
+    "id": "find-object",
+    "template": "Look around the house for something that starts with the letter {letter}."
+  },
+  {
+    "id": "count-object",
+    "template": "Find {number} matching objects at home and count them out loud."
+  },
+  {
+    "id": "trace-finger",
+    "template": "Trace the letter {letter} in the air with your finger, then on a family member's back."
+  },
+  {
+    "id": "letter-hunt-book",
+    "template": "Open a book or magazine and find {number} words that start with the letter {letter}."
+  },
+  {
+    "id": "build-letter",
+    "template": "Use play dough, yarn, or craft sticks to build the letter {letter}."
+  },
+  {
+    "id": "count-steps",
+    "template": "Take {number} big steps to the nearest door, counting out loud."
+  },
+  {
+    "id": "letter-snack",
+    "template": "Help make a snack and arrange {number} pieces of fruit on a plate."
+  },
+  {
+    "id": "family-word",
+    "template": "Ask someone in your family for a word that starts with {letter} and draw it."
+  },
+  {
+    "id": "letter-walk",
+    "template": "On a walk, try to spot {number} things that start with the letter {letter}."
+  },
+  {
+    "id": "sing-count",
+    "template": "Sing or make up a little rhyme counting to {number}."
+  },
+  {
+    "id": "letter-shape",
+    "template": "Using string or ribbon, shape the letter {letter} on the floor."
+  },
+  {
+    "id": "sort-toys",
+    "template": "Sort {number} toys by colour and count how many of each."
+  },
+  {
+    "id": "letter-sound",
+    "template": "Say {number} words that start with the sound of the letter {letter}, one at a time."
+  },
+  {
+    "id": "organize-collection",
+    "template": "Pick a collection of toys or cards and organise it by size or type."
+  },
+  {
+    "id": "draw-family",
+    "template": "Draw a member of your family and show them the drawing."
+  },
+  {
+    "id": "blanket-fort",
+    "template": "Build a hideout with blankets and pillows and read a book inside it."
+  },
+  {
+    "id": "water-plant",
+    "template": "Water a plant at home and count {number} leaves it has."
+  },
+  {
+    "id": "fold-laundry-game",
+    "template": "Help fold the laundry and turn it into a game: who folds {number} pieces first?"
+  },
+  {
+    "id": "secret-handshake",
+    "template": "Invent a secret handshake with {number} steps and teach it to someone in your family."
+  },
+  {
+    "id": "postcard-grandparent",
+    "template": "Draw and write a postcard for a grandparent or a special friend."
+  },
+  {
+    "id": "shoelace-practice",
+    "template": "Practise tying your shoelaces {number} times in a row."
+  },
+  {
+    "id": "weather-rhyme",
+    "template": "Look out the window and make up a short rhyme about the weather outside."
+  },
+  {
+    "id": "tidy-shelf",
+    "template": "Tidy a shelf or drawer, putting {number} things back in the right place."
+  }
 ]

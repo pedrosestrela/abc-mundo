@@ -268,5 +268,455 @@
         "text": "Le papier se déchire dès que la caisse y est attachée."
       }
     }
+  },
+  "seesaw": {
+    "title": "La Balançoire à Bascule du Lapin",
+    "emoji": "⚖️",
+    "prompt": "🐰 Le lapin et l'écureuil veulent jouer sur une balançoire à bascule. Construis-en une !",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Bois"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Pierre"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Corde"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papier"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": true,
+        "text": "Le bois est rigide et léger — la bascule s'équilibre parfaitement de haut en bas !"
+      },
+      "stone": {
+        "success": false,
+        "text": "La pierre est trop lourde d'un seul côté — la bascule ne peut pas monter."
+      },
+      "rope": {
+        "success": false,
+        "text": "La corde plie et ne forme pas une planche solide — personne ne peut s'asseoir."
+      },
+      "paper": {
+        "success": false,
+        "text": "Le papier plie dès que quelqu'un s'assoit."
+      }
+    }
+  },
+  "slide": {
+    "title": "Le Toboggan de la Montagne",
+    "emoji": "🛝",
+    "prompt": "🐿️ L'écureuil veut descendre la montagne en s'amusant. Construis un toboggan !",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Bois"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Pierre"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Corde"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papier"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": true,
+        "text": "Le bois est lisse et solide — l'écureuil glisse doucement jusqu'en bas !"
+      },
+      "stone": {
+        "success": false,
+        "text": "La pierre est rugueuse et trop lourde pour former une rampe lisse."
+      },
+      "rope": {
+        "success": false,
+        "text": "La corde ne forme pas de surface plate — il n'y a rien pour glisser."
+      },
+      "paper": {
+        "success": false,
+        "text": "Le papier se déchire sous le poids de l'écureuil qui glisse."
+      }
+    }
+  },
+  "kite": {
+    "title": "Le Cerf-volant en Papier",
+    "emoji": "🪁",
+    "prompt": "🐦 Le petit oiseau veut un ami qui vole à ses côtés. Construis un cerf-volant !",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Bois"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Pierre"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Corde"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papier"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "Le bois est trop lourd — le cerf-volant ne décolle jamais du sol."
+      },
+      "stone": {
+        "success": false,
+        "text": "La pierre tombe tout droit, sans aucune chance de voler."
+      },
+      "rope": {
+        "success": false,
+        "text": "La corde seule n'a pas de surface pour attraper le vent."
+      },
+      "paper": {
+        "success": true,
+        "text": "Le papier est léger et attrape le vent facilement — le cerf-volant s'envole haut dans le ciel !"
+      }
+    }
+  },
+  "windmill": {
+    "title": "Le Moulin à Vent",
+    "emoji": "🌬️",
+    "prompt": "🐭 La souris veut voir les pales tourner avec le vent. Construis un moulin à vent !",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Bois"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Pierre"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Corde"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papier"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "Les pales en bois sont trop lourdes — le vent ne peut pas les bouger."
+      },
+      "stone": {
+        "success": false,
+        "text": "La pierre ne bouge pas, même avec le vent le plus fort."
+      },
+      "rope": {
+        "success": false,
+        "text": "La corde n'a pas de surface pour que le vent la pousse."
+      },
+      "paper": {
+        "success": true,
+        "text": "Les pales en papier sont légères et tournent facilement avec juste une petite brise !"
+      }
+    }
+  },
+  "zipline": {
+    "title": "La Tyrolienne de la Jungle",
+    "emoji": "🪢",
+    "prompt": "🐒 Le singe veut filer d'arbre en arbre. Construis une tyrolienne !",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Bois"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Pierre"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Corde"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papier"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "Le bois rigide ne peut pas s'attacher aux arbres pour former une ligne tendue."
+      },
+      "stone": {
+        "success": false,
+        "text": "La pierre ne peut pas être tendue entre les arbres."
+      },
+      "rope": {
+        "success": true,
+        "text": "La corde tendue entre les arbres supporte le poids du singe, qui glisse joyeusement jusqu'à l'autre côté !"
+      },
+      "paper": {
+        "success": false,
+        "text": "Le papier se déchire dès que le singe s'y accroche."
+      }
+    }
+  },
+  "swing": {
+    "title": "La Balançoire de l'Arbre",
+    "emoji": "⛓️",
+    "prompt": "🐶 Le chien veut se balancer dans un arbre du jardin. Construis une balançoire !",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Bois"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Pierre"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Corde"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papier"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "Le bois rigide ne peut pas se plier autour de la branche pour tenir la balançoire."
+      },
+      "stone": {
+        "success": false,
+        "text": "La pierre est trop lourde et casse la branche de l'arbre."
+      },
+      "rope": {
+        "success": true,
+        "text": "La corde est solide et souple — elle s'enroule autour de la branche et la balançoire fonctionne très bien !"
+      },
+      "paper": {
+        "success": false,
+        "text": "Le papier se déchire dès que quelqu'un s'assoit sur la balançoire."
+      }
+    }
+  },
+  "wall": {
+    "title": "La Muraille du Château",
+    "emoji": "🛡️",
+    "prompt": "🐴 Le cheval veut protéger le château des vents forts. Construis une muraille !",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Bois"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Pierre"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Corde"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papier"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "Le bois est trop léger et le vent fort renverse la muraille."
+      },
+      "stone": {
+        "success": true,
+        "text": "Des blocs de pierre empilés forment un mur lourd et solide qui résiste au vent !"
+      },
+      "rope": {
+        "success": false,
+        "text": "La corde ne forme pas de mur — le vent passe librement."
+      },
+      "paper": {
+        "success": false,
+        "text": "Le papier s'envole dès la première rafale de vent."
+      }
+    }
+  },
+  "well": {
+    "title": "Le Puits du Village",
+    "emoji": "🪣",
+    "prompt": "🐔 La poule veut de l'eau fraîche du village. Construis un puits !",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Bois"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Pierre"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Corde"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papier"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "Le bois pourrit avec l'humidité de la terre et le puits s'effondre."
+      },
+      "stone": {
+        "success": true,
+        "text": "Les pierres empilées en cercle forment des murs solides qui ne s'effondrent pas avec la terre autour !"
+      },
+      "rope": {
+        "success": false,
+        "text": "La corde seule ne retient pas la terre autour du trou."
+      },
+      "paper": {
+        "success": false,
+        "text": "Le papier se dissout avec l'humidité de la terre."
+      }
+    }
+  },
+  "waterwheel": {
+    "title": "La Roue à Eau du Moulin",
+    "emoji": "🌊",
+    "prompt": "🐟 Le poisson veut voir la roue tourner avec le courant de la rivière. Construis une roue à eau !",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Bois"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Pierre"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Corde"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papier"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": true,
+        "text": "Les palettes en bois sont légères mais solides — le courant de la rivière les pousse et la roue tourne sans arrêt !"
+      },
+      "stone": {
+        "success": false,
+        "text": "La pierre est trop lourde — le courant de la rivière ne peut pas la bouger."
+      },
+      "rope": {
+        "success": false,
+        "text": "La corde n'a pas de palettes pour que l'eau pousse."
+      },
+      "paper": {
+        "success": false,
+        "text": "Le papier se dissout dès qu'il touche l'eau qui coule."
+      }
+    }
+  },
+  "parachute": {
+    "title": "Le Parachute de l'Ours en Peluche",
+    "emoji": "🪂",
+    "prompt": "🧸 L'ours en peluche veut sauter du toit sans se faire mal. Construis un parachute !",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Bois"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Pierre"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Corde"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papier"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "Le bois est trop lourd et tombe tout droit, sans ralentir la chute."
+      },
+      "stone": {
+        "success": false,
+        "text": "La pierre tombe comme une pierre — sans aucune chance de flotter dans l'air."
+      },
+      "rope": {
+        "success": false,
+        "text": "La corde seule n'a pas de surface pour attraper l'air."
+      },
+      "paper": {
+        "success": true,
+        "text": "Le papier est léger et s'ouvre comme un tissu, attrapant l'air et descendant doucement jusqu'au sol !"
+      }
+    }
   }
 }

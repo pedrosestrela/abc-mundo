@@ -268,5 +268,455 @@
         "text": "The paper tears the moment the box is attached."
       }
     }
+  },
+  "seesaw": {
+    "title": "The Rabbit's Seesaw",
+    "emoji": "⚖️",
+    "prompt": "🐰 The rabbit and the squirrel want to play on a seesaw. Build one!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Wood"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Stone"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Rope"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Paper"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": true,
+        "text": "Wood is stiff and light — the seesaw balances perfectly up and down!"
+      },
+      "stone": {
+        "success": false,
+        "text": "Stone is too heavy on one side — the seesaw can't go up at all."
+      },
+      "rope": {
+        "success": false,
+        "text": "Rope bends and can't form a firm plank — no one can sit on it."
+      },
+      "paper": {
+        "success": false,
+        "text": "Paper bends as soon as someone sits down."
+      }
+    }
+  },
+  "slide": {
+    "title": "The Mountain Slide",
+    "emoji": "🛝",
+    "prompt": "🐿️ The squirrel wants to slide down the mountain for fun. Build a slide!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Wood"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Stone"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Rope"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Paper"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": true,
+        "text": "Wood is smooth and sturdy — the squirrel glides gently all the way down!"
+      },
+      "stone": {
+        "success": false,
+        "text": "Stone is rough and too heavy to shape into a smooth ramp."
+      },
+      "rope": {
+        "success": false,
+        "text": "Rope doesn't form a flat surface — there's nothing to slide on."
+      },
+      "paper": {
+        "success": false,
+        "text": "Paper tears under the squirrel's weight as it slides."
+      }
+    }
+  },
+  "kite": {
+    "title": "The Paper Kite",
+    "emoji": "🪁",
+    "prompt": "🐦 The little bird wants a friend to fly beside it. Build a kite!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Wood"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Stone"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Rope"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Paper"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "Wood is too heavy — the kite never leaves the ground."
+      },
+      "stone": {
+        "success": false,
+        "text": "Stone falls straight down, with no chance of flying."
+      },
+      "rope": {
+        "success": false,
+        "text": "Rope alone has no surface to catch the wind."
+      },
+      "paper": {
+        "success": true,
+        "text": "Paper is light and catches the wind easily — the kite soars high into the sky!"
+      }
+    }
+  },
+  "windmill": {
+    "title": "The Windmill",
+    "emoji": "🌬️",
+    "prompt": "🐭 The mouse wants to see the blades spin in the wind. Build a windmill!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Wood"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Stone"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Rope"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Paper"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "Wooden blades are too heavy — the wind can't move them."
+      },
+      "stone": {
+        "success": false,
+        "text": "Stone doesn't budge even in the strongest wind."
+      },
+      "rope": {
+        "success": false,
+        "text": "Rope has no surface for the wind to push against."
+      },
+      "paper": {
+        "success": true,
+        "text": "Paper blades are light and spin easily with just a gentle breeze!"
+      }
+    }
+  },
+  "zipline": {
+    "title": "The Jungle Zipline",
+    "emoji": "🪢",
+    "prompt": "🐒 The monkey wants to zoom from tree to tree. Build a zipline!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Wood"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Stone"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Rope"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Paper"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "Stiff wood can't be tied to the trees to form a taut line."
+      },
+      "stone": {
+        "success": false,
+        "text": "Stone can't be stretched between the trees."
+      },
+      "rope": {
+        "success": true,
+        "text": "The rope stretched tight between the trees holds the monkey's weight, who glides happily to the other side!"
+      },
+      "paper": {
+        "success": false,
+        "text": "Paper tears the moment the monkey hangs from it."
+      }
+    }
+  },
+  "swing": {
+    "title": "The Tree Swing",
+    "emoji": "⛓️",
+    "prompt": "🐶 The dog wants to swing from a tree in the garden. Build a swing!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Wood"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Stone"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Rope"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Paper"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "Stiff wood can't bend around the branch to hold the swing up."
+      },
+      "stone": {
+        "success": false,
+        "text": "Stone is too heavy and breaks the tree branch."
+      },
+      "rope": {
+        "success": true,
+        "text": "Rope is strong and flexible — it wraps around the branch and the swing works perfectly!"
+      },
+      "paper": {
+        "success": false,
+        "text": "Paper rips the moment someone sits on the swing."
+      }
+    }
+  },
+  "wall": {
+    "title": "The Castle Wall",
+    "emoji": "🛡️",
+    "prompt": "🐴 The horse wants to protect the castle from strong winds. Build a wall!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Wood"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Stone"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Rope"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Paper"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "Wood is too light and the strong wind knocks the wall down."
+      },
+      "stone": {
+        "success": true,
+        "text": "Stacked stone blocks form a heavy, solid wall that stands up to the wind!"
+      },
+      "rope": {
+        "success": false,
+        "text": "Rope doesn't form a wall — the wind passes right through."
+      },
+      "paper": {
+        "success": false,
+        "text": "Paper blows away with the very first gust of wind."
+      }
+    }
+  },
+  "well": {
+    "title": "The Village Well",
+    "emoji": "🪣",
+    "prompt": "🐔 The hen wants fresh water from the village. Build a well!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Wood"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Stone"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Rope"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Paper"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "Wood rots in the damp earth and the well collapses."
+      },
+      "stone": {
+        "success": true,
+        "text": "Stones stacked in a circle form firm walls that don't cave in with the surrounding earth!"
+      },
+      "rope": {
+        "success": false,
+        "text": "Rope alone can't hold back the earth around the hole."
+      },
+      "paper": {
+        "success": false,
+        "text": "Paper dissolves in the damp earth."
+      }
+    }
+  },
+  "waterwheel": {
+    "title": "The Mill's Water Wheel",
+    "emoji": "🌊",
+    "prompt": "🐟 The fish wants to see the wheel spin with the river's current. Build a water wheel!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Wood"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Stone"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Rope"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Paper"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": true,
+        "text": "Wooden paddles are light but strong — the river's current pushes them and the wheel spins nonstop!"
+      },
+      "stone": {
+        "success": false,
+        "text": "Stone is too heavy — the river's current can't move it."
+      },
+      "rope": {
+        "success": false,
+        "text": "Rope has no paddles for the water to push."
+      },
+      "paper": {
+        "success": false,
+        "text": "Paper dissolves the moment it touches the flowing water."
+      }
+    }
+  },
+  "parachute": {
+    "title": "The Teddy Bear's Parachute",
+    "emoji": "🪂",
+    "prompt": "🧸 The teddy bear wants to jump off the roof without getting hurt. Build a parachute!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Wood"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Stone"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Rope"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Paper"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "Wood is too heavy and falls straight down, without slowing the fall at all."
+      },
+      "stone": {
+        "success": false,
+        "text": "Stone falls like a rock — with no chance of floating in the air."
+      },
+      "rope": {
+        "success": false,
+        "text": "Rope alone has no surface to catch the air."
+      },
+      "paper": {
+        "success": true,
+        "text": "Paper is light and opens up like a sheet, catching the air and floating gently down to the ground!"
+      }
+    }
   }
 }

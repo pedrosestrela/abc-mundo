@@ -950,7 +950,7 @@ export default function Science() {
       {tab === "eng" && (
         <>
           <p className="page-intro">{t("modules.scienceLabEngIntro")}</p>
-          {["bridge", "tower", "boat", "dam", "catapult", "crane"].map((id) => (
+          {["bridge", "tower", "boat", "dam", "catapult", "crane", "seesaw", "slide", "kite", "windmill", "zipline", "swing", "wall", "well", "waterwheel", "parachute"].map((id) => (
             <React.Fragment key={id}>
               <h2 className="songs-heading">{engineering[id].title}</h2>
               <EngineeringChallenge

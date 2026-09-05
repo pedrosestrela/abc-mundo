@@ -268,5 +268,455 @@
         "text": "La carta si strappa non appena la scatola viene agganciata."
       }
     }
+  },
+  "seesaw": {
+    "title": "L'Altalena a Bilico del Coniglio",
+    "emoji": "⚖️",
+    "prompt": "🐰 Il coniglio e lo scoiattolo vogliono giocare sull'altalena a bilico. Costruiscine una!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Legno"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Pietra"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Corda"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Carta"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": true,
+        "text": "Il legno è rigido e leggero — l'altalena si bilancia perfettamente su e giù!"
+      },
+      "stone": {
+        "success": false,
+        "text": "La pietra è troppo pesante da un lato solo — l'altalena non riesce a salire."
+      },
+      "rope": {
+        "success": false,
+        "text": "La corda si piega e non forma un'asse solida — nessuno può sedersi."
+      },
+      "paper": {
+        "success": false,
+        "text": "La carta si piega non appena qualcuno si siede."
+      }
+    }
+  },
+  "slide": {
+    "title": "Lo Scivolo della Montagna",
+    "emoji": "🛝",
+    "prompt": "🐿️ Lo scoiattolo vuole scendere la montagna giocando. Costruisci uno scivolo!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Legno"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Pietra"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Corda"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Carta"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": true,
+        "text": "Il legno è liscio e resistente — lo scoiattolo scivola dolcemente fino in fondo!"
+      },
+      "stone": {
+        "success": false,
+        "text": "La pietra è ruvida e troppo pesante per formare una rampa liscia."
+      },
+      "rope": {
+        "success": false,
+        "text": "La corda non forma una superficie piatta — non c'è niente su cui scivolare."
+      },
+      "paper": {
+        "success": false,
+        "text": "La carta si strappa sotto il peso dello scoiattolo che scivola."
+      }
+    }
+  },
+  "kite": {
+    "title": "L'Aquilone di Carta",
+    "emoji": "🪁",
+    "prompt": "🐦 L'uccellino vuole un amico che voli accanto a lui. Costruisci un aquilone!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Legno"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Pietra"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Corda"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Carta"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "Il legno è troppo pesante — l'aquilone non si stacca mai da terra."
+      },
+      "stone": {
+        "success": false,
+        "text": "La pietra cade dritta, senza alcuna possibilità di volare."
+      },
+      "rope": {
+        "success": false,
+        "text": "La corda da sola non ha superficie per catturare il vento."
+      },
+      "paper": {
+        "success": true,
+        "text": "La carta è leggera e cattura il vento facilmente — l'aquilone vola alto nel cielo!"
+      }
+    }
+  },
+  "windmill": {
+    "title": "Il Mulino a Vento",
+    "emoji": "🌬️",
+    "prompt": "🐭 Il topo vuole vedere le pale girare con il vento. Costruisci un mulino a vento!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Legno"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Pietra"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Corda"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Carta"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "Le pale di legno sono troppo pesanti — il vento non riesce a muoverle."
+      },
+      "stone": {
+        "success": false,
+        "text": "La pietra non si muove nemmeno con il vento più forte."
+      },
+      "rope": {
+        "success": false,
+        "text": "La corda non ha una superficie su cui il vento possa spingere."
+      },
+      "paper": {
+        "success": true,
+        "text": "Le pale di carta sono leggere e girano facilmente con solo una brezza leggera!"
+      }
+    }
+  },
+  "zipline": {
+    "title": "La Teleferica della Giungla",
+    "emoji": "🪢",
+    "prompt": "🐒 La scimmia vuole sfrecciare da un albero all'altro. Costruisci una teleferica!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Legno"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Pietra"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Corda"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Carta"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "Il legno rigido non può essere legato agli alberi per formare una linea tesa."
+      },
+      "stone": {
+        "success": false,
+        "text": "La pietra non può essere tesa tra gli alberi."
+      },
+      "rope": {
+        "success": true,
+        "text": "La corda tesa tra gli alberi regge il peso della scimmia, che scivola felice fino all'altro lato!"
+      },
+      "paper": {
+        "success": false,
+        "text": "La carta si strappa non appena la scimmia vi si appende."
+      }
+    }
+  },
+  "swing": {
+    "title": "L'Altalena dell'Albero",
+    "emoji": "⛓️",
+    "prompt": "🐶 Il cane vuole dondolarsi su un albero del giardino. Costruisci un'altalena!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Legno"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Pietra"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Corda"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Carta"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "Il legno rigido non si piega intorno al ramo per reggere l'altalena."
+      },
+      "stone": {
+        "success": false,
+        "text": "La pietra è troppo pesante e spezza il ramo dell'albero."
+      },
+      "rope": {
+        "success": true,
+        "text": "La corda è forte e flessibile — si avvolge intorno al ramo e l'altalena funziona benissimo!"
+      },
+      "paper": {
+        "success": false,
+        "text": "La carta si strappa non appena qualcuno si siede sull'altalena."
+      }
+    }
+  },
+  "wall": {
+    "title": "Le Mura del Castello",
+    "emoji": "🛡️",
+    "prompt": "🐴 Il cavallo vuole proteggere il castello dai venti forti. Costruisci un muro!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Legno"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Pietra"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Corda"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Carta"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "Il legno è troppo leggero e il vento forte abbatte il muro."
+      },
+      "stone": {
+        "success": true,
+        "text": "Blocchi di pietra impilati formano un muro pesante e solido che resiste al vento!"
+      },
+      "rope": {
+        "success": false,
+        "text": "La corda non forma un muro — il vento passa liberamente."
+      },
+      "paper": {
+        "success": false,
+        "text": "La carta vola via alla prima raffica di vento."
+      }
+    }
+  },
+  "well": {
+    "title": "Il Pozzo del Villaggio",
+    "emoji": "🪣",
+    "prompt": "🐔 La gallina vuole acqua fresca dal villaggio. Costruisci un pozzo!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Legno"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Pietra"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Corda"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Carta"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "Il legno marcisce con l'umidità della terra e il pozzo crolla."
+      },
+      "stone": {
+        "success": true,
+        "text": "Le pietre impilate in cerchio formano pareti solide che non crollano con la terra intorno!"
+      },
+      "rope": {
+        "success": false,
+        "text": "La corda da sola non trattiene la terra intorno al buco."
+      },
+      "paper": {
+        "success": false,
+        "text": "La carta si dissolve con l'umidità della terra."
+      }
+    }
+  },
+  "waterwheel": {
+    "title": "La Ruota ad Acqua del Mulino",
+    "emoji": "🌊",
+    "prompt": "🐟 Il pesce vuole vedere la ruota girare con la corrente del fiume. Costruisci una ruota ad acqua!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Legno"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Pietra"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Corda"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Carta"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": true,
+        "text": "Le pale di legno sono leggere ma resistenti — la corrente del fiume le spinge e la ruota gira senza sosta!"
+      },
+      "stone": {
+        "success": false,
+        "text": "La pietra è troppo pesante — la corrente del fiume non riesce a muoverla."
+      },
+      "rope": {
+        "success": false,
+        "text": "La corda non ha pale su cui l'acqua possa spingere."
+      },
+      "paper": {
+        "success": false,
+        "text": "La carta si dissolve non appena tocca l'acqua che scorre."
+      }
+    }
+  },
+  "parachute": {
+    "title": "Il Paracadute dell'Orsacchiotto",
+    "emoji": "🪂",
+    "prompt": "🧸 L'orsacchiotto vuole saltare dal tetto senza farsi male. Costruisci un paracadute!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Legno"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Pietra"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Corda"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Carta"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "Il legno è troppo pesante e cade dritto, senza rallentare la caduta."
+      },
+      "stone": {
+        "success": false,
+        "text": "La pietra cade come un sasso — senza alcuna possibilità di fluttuare nell'aria."
+      },
+      "rope": {
+        "success": false,
+        "text": "La corda da sola non ha superficie per catturare l'aria."
+      },
+      "paper": {
+        "success": true,
+        "text": "La carta è leggera e si apre come un telo, catturando l'aria e scendendo lentamente fino a terra!"
+      }
+    }
   }
 }

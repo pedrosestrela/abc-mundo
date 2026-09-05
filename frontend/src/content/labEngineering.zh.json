@@ -268,5 +268,455 @@
         "text": "箱子刚绑上去，纸就断了。"
       }
     }
+  },
+  "seesaw": {
+    "title": "兔子的跷跷板",
+    "emoji": "⚖️",
+    "prompt": "🐰 小兔子和小松鼠想玩跷跷板。搭一个跷跷板吧！",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "木头"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "石头"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "绳子"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "纸"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": true,
+        "text": "木头又硬又轻——跷跷板可以稳稳地上下摇摆！"
+      },
+      "stone": {
+        "success": false,
+        "text": "石头一边太重了——跷跷板动不起来。"
+      },
+      "rope": {
+        "success": false,
+        "text": "绳子会弯曲，做不成结实的板子——没办法坐上去。"
+      },
+      "paper": {
+        "success": false,
+        "text": "纸一坐上去就弯了。"
+      }
+    }
+  },
+  "slide": {
+    "title": "山坡滑梯",
+    "emoji": "🛝",
+    "prompt": "🐿️ 小松鼠想从山坡上滑下来玩。搭一个滑梯吧！",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "木头"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "石头"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "绳子"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "纸"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": true,
+        "text": "木头又光滑又结实——小松鼠可以顺畅地滑到底！"
+      },
+      "stone": {
+        "success": false,
+        "text": "石头又粗糙又太重，做不成光滑的斜坡。"
+      },
+      "rope": {
+        "success": false,
+        "text": "绳子不能做出平滑的表面——没办法滑下去。"
+      },
+      "paper": {
+        "success": false,
+        "text": "纸承受不住小松鼠滑下来的重量，破掉了。"
+      }
+    }
+  },
+  "kite": {
+    "title": "纸风筝",
+    "emoji": "🪁",
+    "prompt": "🐦 小鸟想要一个能陪它一起飞的朋友。做一个风筝吧！",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "木头"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "石头"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "绳子"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "纸"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "木头太重了——风筝根本飞不起来。"
+      },
+      "stone": {
+        "success": false,
+        "text": "石头直直地掉下去，完全飞不起来。"
+      },
+      "rope": {
+        "success": false,
+        "text": "绳子本身没有表面可以兜住风。"
+      },
+      "paper": {
+        "success": true,
+        "text": "纸又轻又能抓住风——风筝飞得又高又远！"
+      }
+    }
+  },
+  "windmill": {
+    "title": "风车",
+    "emoji": "🌬️",
+    "prompt": "🐭 小老鼠想看风车的叶片在风中转动。搭一个风车吧！",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "木头"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "石头"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "绳子"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "纸"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "木头做的叶片太重了——风吹不动它。"
+      },
+      "stone": {
+        "success": false,
+        "text": "石头就算刮大风也纹丝不动。"
+      },
+      "rope": {
+        "success": false,
+        "text": "绳子没有表面可以让风推动。"
+      },
+      "paper": {
+        "success": true,
+        "text": "纸做的叶片又轻又薄，只要一点点微风就能转动！"
+      }
+    }
+  },
+  "zipline": {
+    "title": "丛林滑索",
+    "emoji": "🪢",
+    "prompt": "🐒 小猴子想从一棵树飞快滑到另一棵树。搭一条滑索吧！",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "木头"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "石头"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "绳子"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "纸"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "硬邦邦的木头没办法绑在树上拉成一条绷紧的线。"
+      },
+      "stone": {
+        "success": false,
+        "text": "石头没办法在树与树之间拉紧。"
+      },
+      "rope": {
+        "success": true,
+        "text": "绳子在树与树之间拉得紧紧的，撑住了猴子的重量，它开心地滑到了对面！"
+      },
+      "paper": {
+        "success": false,
+        "text": "猴子一挂上去，纸就破掉了。"
+      }
+    }
+  },
+  "swing": {
+    "title": "大树秋千",
+    "emoji": "⛓️",
+    "prompt": "🐶 小狗想在花园的大树上荡秋千。做一个秋千吧！",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "木头"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "石头"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "绳子"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "纸"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "硬邦邦的木头没办法绕着树枝弯曲来固定秋千。"
+      },
+      "stone": {
+        "success": false,
+        "text": "石头太重了，把树枝都压断了。"
+      },
+      "rope": {
+        "success": true,
+        "text": "绳子又结实又灵活——绑在树枝上，秋千荡得很好！"
+      },
+      "paper": {
+        "success": false,
+        "text": "一坐上秋千，纸马上就破了。"
+      }
+    }
+  },
+  "wall": {
+    "title": "城堡围墙",
+    "emoji": "🛡️",
+    "prompt": "🐴 小马想保护城堡不受强风侵袭。搭一堵围墙吧！",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "木头"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "石头"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "绳子"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "纸"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "木头太轻了，大风一吹围墙就倒了。"
+      },
+      "stone": {
+        "success": true,
+        "text": "堆起来的石块形成又重又结实的墙，能挡住大风！"
+      },
+      "rope": {
+        "success": false,
+        "text": "绳子做不成墙——风可以轻松穿过去。"
+      },
+      "paper": {
+        "success": false,
+        "text": "第一阵风吹来，纸就飞走了。"
+      }
+    }
+  },
+  "well": {
+    "title": "村庄水井",
+    "emoji": "🪣",
+    "prompt": "🐔 小鸡想喝村里新鲜的水。挖一口水井吧！",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "木头"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "石头"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "绳子"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "纸"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "木头在潮湿的泥土里会腐烂，井壁就塌了。"
+      },
+      "stone": {
+        "success": true,
+        "text": "石头一圈一圈叠起来，形成结实的井壁，周围的泥土不会塌下来！"
+      },
+      "rope": {
+        "success": false,
+        "text": "绳子一个人撑不住洞口周围的泥土。"
+      },
+      "paper": {
+        "success": false,
+        "text": "纸碰到潮湿的泥土就化掉了。"
+      }
+    }
+  },
+  "waterwheel": {
+    "title": "磨坊水车",
+    "emoji": "🌊",
+    "prompt": "🐟 小鱼想看水车随着河水的水流转动。搭一个水车吧！",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "木头"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "石头"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "绳子"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "纸"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": true,
+        "text": "木头做的桨叶又轻又结实——河水一冲，水车就不停地转起来！"
+      },
+      "stone": {
+        "success": false,
+        "text": "石头太重了——河水的水流推不动它。"
+      },
+      "rope": {
+        "success": false,
+        "text": "绳子没有桨叶可以让水推动。"
+      },
+      "paper": {
+        "success": false,
+        "text": "纸一碰到流动的水就化掉了。"
+      }
+    }
+  },
+  "parachute": {
+    "title": "泰迪熊的降落伞",
+    "emoji": "🪂",
+    "prompt": "🧸 泰迪熊想从屋顶跳下来又不受伤。做一个降落伞吧！",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "木头"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "石头"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "绳子"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "纸"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "木头太重了，直直地掉下去，一点也没有减慢速度。"
+      },
+      "stone": {
+        "success": false,
+        "text": "石头像石头一样直接掉下去，完全没办法飘在空中。"
+      },
+      "rope": {
+        "success": false,
+        "text": "绳子本身没有表面可以兜住空气。"
+      },
+      "paper": {
+        "success": true,
+        "text": "纸又轻又能像布一样张开，兜住空气，慢慢飘到地面！"
+      }
+    }
   }
 }

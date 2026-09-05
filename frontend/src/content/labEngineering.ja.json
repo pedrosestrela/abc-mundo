@@ -4,16 +4,44 @@
     "emoji": "🌉",
     "prompt": "🐻 くまが川をわたりたいよ。橋を作ってあげよう!",
     "materials": [
-      { "id": "wood", "emoji": "🪵", "label": "木材" },
-      { "id": "stone", "emoji": "🧱", "label": "石" },
-      { "id": "rope", "emoji": "🧵", "label": "ロープ" },
-      { "id": "paper", "emoji": "📄", "label": "紙" }
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "木材"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "石"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "ロープ"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "紙"
+      }
     ],
     "outcomes": {
-      "wood": { "success": true, "text": "木は丈夫で軽いよ。橋はくまの重さにたえて、無事にわたれた!" },
-      "stone": { "success": false, "text": "石はかんたんな橋には重すぎて、くまがわたる前にくずれてしまう。" },
-      "rope": { "success": false, "text": "ロープだけだとくまの重さでたわんでしまい、川に落ちてしまう!" },
-      "paper": { "success": false, "text": "くまが足をのせたとたん、紙は破れてしまう。" }
+      "wood": {
+        "success": true,
+        "text": "木は丈夫で軽いよ。橋はくまの重さにたえて、無事にわたれた!"
+      },
+      "stone": {
+        "success": false,
+        "text": "石はかんたんな橋には重すぎて、くまがわたる前にくずれてしまう。"
+      },
+      "rope": {
+        "success": false,
+        "text": "ロープだけだとくまの重さでたわんでしまい、川に落ちてしまう!"
+      },
+      "paper": {
+        "success": false,
+        "text": "くまが足をのせたとたん、紙は破れてしまう。"
+      }
     }
   },
   "tower": {
@@ -21,16 +49,44 @@
     "emoji": "🗼",
     "prompt": "🚩 旗にとどくくらい高いタワーを作ろう!",
     "materials": [
-      { "id": "wood", "emoji": "🪵", "label": "木材" },
-      { "id": "stone", "emoji": "🧱", "label": "石" },
-      { "id": "rope", "emoji": "🧵", "label": "ロープ" },
-      { "id": "paper", "emoji": "📄", "label": "紙" }
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "木材"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "石"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "ロープ"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "紙"
+      }
     ],
     "outcomes": {
-      "wood": { "success": true, "text": "木のブロックはしっかり積み重なる。タワーは旗にとどいた!" },
-      "stone": { "success": true, "text": "石は重いけれど土台が安定していて、タワーはしっかり立ち、旗にとどいた!" },
-      "rope": { "success": false, "text": "ロープは自分で立つことができず、タワーはいつまでも高くならない。" },
-      "paper": { "success": false, "text": "紙は重さでたわんでしまい、タワーはくずれてしまう。" }
+      "wood": {
+        "success": true,
+        "text": "木のブロックはしっかり積み重なる。タワーは旗にとどいた!"
+      },
+      "stone": {
+        "success": true,
+        "text": "石は重いけれど土台が安定していて、タワーはしっかり立ち、旗にとどいた!"
+      },
+      "rope": {
+        "success": false,
+        "text": "ロープは自分で立つことができず、タワーはいつまでも高くならない。"
+      },
+      "paper": {
+        "success": false,
+        "text": "紙は重さでたわんでしまい、タワーはくずれてしまう。"
+      }
     }
   },
   "boat": {
@@ -38,16 +94,44 @@
     "emoji": "⛵",
     "prompt": "⛵ おもちゃを向こう岸まで運ぶ、浮かぶボートを作ろう!",
     "materials": [
-      { "id": "wood", "emoji": "🪵", "label": "木材" },
-      { "id": "stone", "emoji": "🧱", "label": "石" },
-      { "id": "rope", "emoji": "🧵", "label": "ロープ" },
-      { "id": "paper", "emoji": "📄", "label": "紙" }
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "木材"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "石"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "ロープ"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "紙"
+      }
     ],
     "outcomes": {
-      "wood": { "success": true, "text": "木はとてもよく浮くよ。ボートはすいすい進む!" },
-      "stone": { "success": false, "text": "石は重すぎて、水に触れたとたん沈んでしまう。" },
-      "rope": { "success": false, "text": "ロープでは船体を作れず、水が入ってボートは沈んでしまう。" },
-      "paper": { "success": false, "text": "紙は水をすってやわらかくなり、とけてしまう。" }
+      "wood": {
+        "success": true,
+        "text": "木はとてもよく浮くよ。ボートはすいすい進む!"
+      },
+      "stone": {
+        "success": false,
+        "text": "石は重すぎて、水に触れたとたん沈んでしまう。"
+      },
+      "rope": {
+        "success": false,
+        "text": "ロープでは船体を作れず、水が入ってボートは沈んでしまう。"
+      },
+      "paper": {
+        "success": false,
+        "text": "紙は水をすってやわらかくなり、とけてしまう。"
+      }
     }
   },
   "dam": {
@@ -55,16 +139,44 @@
     "emoji": "🦫",
     "prompt": "🦫 ビーバーは川の水をせき止めたいよ。ダムを作ってあげよう!",
     "materials": [
-      { "id": "wood", "emoji": "🪵", "label": "木材" },
-      { "id": "stone", "emoji": "🧱", "label": "石" },
-      { "id": "rope", "emoji": "🧵", "label": "ロープ" },
-      { "id": "paper", "emoji": "📄", "label": "紙" }
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "木材"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "石"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "ロープ"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "紙"
+      }
     ],
     "outcomes": {
-      "wood": { "success": false, "text": "木のすき間から水がしみ出てしまい、ダムはくずれてしまう。" },
-      "stone": { "success": true, "text": "積み重ねた石は重く、しっかりした壁になる。ダムは川の水をせき止めた!" },
-      "rope": { "success": false, "text": "ロープは水を止められず、糸のあいだを水がすり抜けてしまう。" },
-      "paper": { "success": false, "text": "紙は水に触れたとたんとけてしまう。" }
+      "wood": {
+        "success": false,
+        "text": "木のすき間から水がしみ出てしまい、ダムはくずれてしまう。"
+      },
+      "stone": {
+        "success": true,
+        "text": "積み重ねた石は重く、しっかりした壁になる。ダムは川の水をせき止めた!"
+      },
+      "rope": {
+        "success": false,
+        "text": "ロープは水を止められず、糸のあいだを水がすり抜けてしまう。"
+      },
+      "paper": {
+        "success": false,
+        "text": "紙は水に触れたとたんとけてしまう。"
+      }
     }
   },
   "catapult": {
@@ -72,16 +184,44 @@
     "emoji": "🎯",
     "prompt": "🎯 壁の向こうへボールを飛ばすカタパルトを作ろう!",
     "materials": [
-      { "id": "wood", "emoji": "🪵", "label": "木材" },
-      { "id": "stone", "emoji": "🧱", "label": "石" },
-      { "id": "rope", "emoji": "🧵", "label": "ロープ" },
-      { "id": "paper", "emoji": "📄", "label": "紙" }
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "木材"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "石"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "ロープ"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "紙"
+      }
     ],
     "outcomes": {
-      "wood": { "success": true, "text": "木のうでは丈夫でしなる。曲がってボールを遠くまで飛ばせた!" },
-      "stone": { "success": false, "text": "石はうでのようにしなるには硬すぎて、何も飛ばせない。" },
-      "rope": { "success": false, "text": "ロープはやわらかいけれどボールを押し出せず、そのまま横に落ちてしまう。" },
-      "paper": { "success": false, "text": "紙は曲がって破れてしまい、ボールを飛ばす力がない。" }
+      "wood": {
+        "success": true,
+        "text": "木のうでは丈夫でしなる。曲がってボールを遠くまで飛ばせた!"
+      },
+      "stone": {
+        "success": false,
+        "text": "石はうでのようにしなるには硬すぎて、何も飛ばせない。"
+      },
+      "rope": {
+        "success": false,
+        "text": "ロープはやわらかいけれどボールを押し出せず、そのまま横に落ちてしまう。"
+      },
+      "paper": {
+        "success": false,
+        "text": "紙は曲がって破れてしまい、ボールを飛ばす力がない。"
+      }
     }
   },
   "crane": {
@@ -89,16 +229,494 @@
     "emoji": "🏗️",
     "prompt": "🏗️ 重い箱を持ち上げるクレーンを作ろう!",
     "materials": [
-      { "id": "wood", "emoji": "🪵", "label": "木材" },
-      { "id": "stone", "emoji": "🧱", "label": "石" },
-      { "id": "rope", "emoji": "🧵", "label": "ロープ" },
-      { "id": "paper", "emoji": "📄", "label": "紙" }
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "木材"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "石"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "ロープ"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "紙"
+      }
     ],
     "outcomes": {
-      "wood": { "success": true, "text": "木のうでは軽くて丈夫。箱を楽々と持ち上げた!" },
-      "stone": { "success": false, "text": "石は重すぎて、うで自体を持ち上げられず、クレーンは動かない。" },
-      "rope": { "success": false, "text": "ロープはかたいうでがなくてたわんでしまい、箱を持ち上げられない。" },
-      "paper": { "success": false, "text": "紙は箱をつけたしゅんかんに破れてしまう。" }
+      "wood": {
+        "success": true,
+        "text": "木のうでは軽くて丈夫。箱を楽々と持ち上げた!"
+      },
+      "stone": {
+        "success": false,
+        "text": "石は重すぎて、うで自体を持ち上げられず、クレーンは動かない。"
+      },
+      "rope": {
+        "success": false,
+        "text": "ロープはかたいうでがなくてたわんでしまい、箱を持ち上げられない。"
+      },
+      "paper": {
+        "success": false,
+        "text": "紙は箱をつけたしゅんかんに破れてしまう。"
+      }
+    }
+  },
+  "seesaw": {
+    "title": "うさぎさんのシーソー",
+    "emoji": "⚖️",
+    "prompt": "🐰 うさぎとりすがシーソーであそびたいよ。シーソーを作ってあげよう!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "木材"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "石"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "ロープ"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "紙"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": true,
+        "text": "木はかたくて軽い——シーソーはうまく上下にゆれるよ!"
+      },
+      "stone": {
+        "success": false,
+        "text": "石はかたむいた方が重すぎて、シーソーが上がらないよ。"
+      },
+      "rope": {
+        "success": false,
+        "text": "ロープは曲がってしまって、しっかりした板にならない——だれもすわれないよ。"
+      },
+      "paper": {
+        "success": false,
+        "text": "紙はだれかがすわるとすぐに曲がってしまうよ。"
+      }
+    }
+  },
+  "slide": {
+    "title": "山のすべりだい",
+    "emoji": "🛝",
+    "prompt": "🐿️ りすが山をすべって遊びたいよ。すべりだいを作ってあげよう!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "木材"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "石"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "ロープ"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "紙"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": true,
+        "text": "木はなめらかでじょうぶ——りすはすーっと下まですべれるよ!"
+      },
+      "stone": {
+        "success": false,
+        "text": "石はざらざらして重すぎて、なめらかな坂が作れないよ。"
+      },
+      "rope": {
+        "success": false,
+        "text": "ロープでは平らな面が作れない——すべる場所がないよ。"
+      },
+      "paper": {
+        "success": false,
+        "text": "紙はりすがすべる重さでやぶれてしまうよ。"
+      }
+    }
+  },
+  "kite": {
+    "title": "紙のたこ",
+    "emoji": "🪁",
+    "prompt": "🐦 小さな鳥がいっしょに飛ぶ友だちをほしがっているよ。たこを作ってあげよう!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "木材"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "石"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "ロープ"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "紙"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "木は重すぎて、たこは地面からうかばないよ。"
+      },
+      "stone": {
+        "success": false,
+        "text": "石はまっすぐ落ちてしまって、まったく飛べないよ。"
+      },
+      "rope": {
+        "success": false,
+        "text": "ロープだけでは風をとらえる面がないよ。"
+      },
+      "paper": {
+        "success": true,
+        "text": "紙は軽くて風をうまくとらえる——たこは空高くまいあがるよ!"
+      }
+    }
+  },
+  "windmill": {
+    "title": "風車",
+    "emoji": "🌬️",
+    "prompt": "🐭 ねずみが風で羽根が回るのを見たいよ。風車を作ってあげよう!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "木材"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "石"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "ロープ"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "紙"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "木の羽根は重すぎて、風では動かせないよ。"
+      },
+      "stone": {
+        "success": false,
+        "text": "石はどんなに強い風でもびくともしないよ。"
+      },
+      "rope": {
+        "success": false,
+        "text": "ロープには風がおせる面がないよ。"
+      },
+      "paper": {
+        "success": true,
+        "text": "紙の羽根は軽くて、やさしい風でもかんたんに回るよ!"
+      }
+    }
+  },
+  "zipline": {
+    "title": "ジャングルのロープすべり",
+    "emoji": "🪢",
+    "prompt": "🐒 さるが木から木へすばやくすべりたいよ。ロープすべりを作ってあげよう!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "木材"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "石"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "ロープ"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "紙"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "かたい木は木にしばりつけて、ぴんとはったラインを作れないよ。"
+      },
+      "stone": {
+        "success": false,
+        "text": "石は木と木の間にはることができないよ。"
+      },
+      "rope": {
+        "success": true,
+        "text": "木と木の間にぴんとはったロープはさるの重さをささえて、むこう側までうれしそうにすべれるよ!"
+      },
+      "paper": {
+        "success": false,
+        "text": "さるがぶらさがったしゅんかん、紙はやぶれてしまうよ。"
+      }
+    }
+  },
+  "swing": {
+    "title": "木のブランコ",
+    "emoji": "⛓️",
+    "prompt": "🐶 犬が庭の木でブランコにのりたいよ。ブランコを作ってあげよう!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "木材"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "石"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "ロープ"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "紙"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "かたい木はえだのまわりに曲げられなくて、ブランコを支えられないよ。"
+      },
+      "stone": {
+        "success": false,
+        "text": "石は重すぎて、木のえだが折れてしまうよ。"
+      },
+      "rope": {
+        "success": true,
+        "text": "ロープはじょうぶでやわらかい——えだにまきつけるとブランコがよく動くよ!"
+      },
+      "paper": {
+        "success": false,
+        "text": "紙はだれかがすわるとすぐにやぶれてしまうよ。"
+      }
+    }
+  },
+  "wall": {
+    "title": "お城のかべ",
+    "emoji": "🛡️",
+    "prompt": "🐴 馬が強い風からお城を守りたいよ。かべを作ってあげよう!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "木材"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "石"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "ロープ"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "紙"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "木は軽すぎて、強い風でかべがたおれてしまうよ。"
+      },
+      "stone": {
+        "success": true,
+        "text": "石を積み上げると、重くてしっかりしたかべになって風にも負けないよ!"
+      },
+      "rope": {
+        "success": false,
+        "text": "ロープではかべが作れない——風がそのまま通りぬけてしまうよ。"
+      },
+      "paper": {
+        "success": false,
+        "text": "紙は風がふいたしゅんかんに飛んでいってしまうよ。"
+      }
+    }
+  },
+  "well": {
+    "title": "村の井戸",
+    "emoji": "🪣",
+    "prompt": "🐔 にわとりが村のきれいな水をほしがっているよ。井戸を作ってあげよう!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "木材"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "石"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "ロープ"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "紙"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "木はしめった土の中でくさってしまい、井戸がくずれてしまうよ。"
+      },
+      "stone": {
+        "success": true,
+        "text": "石を丸く積み上げると、まわりの土がくずれないじょうぶなかべになるよ!"
+      },
+      "rope": {
+        "success": false,
+        "text": "ロープだけでは穴のまわりの土をささえられないよ。"
+      },
+      "paper": {
+        "success": false,
+        "text": "紙はしめった土の中でとけてしまうよ。"
+      }
+    }
+  },
+  "waterwheel": {
+    "title": "水車",
+    "emoji": "🌊",
+    "prompt": "🐟 魚が川の流れで水車が回るのを見たいよ。水車を作ってあげよう!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "木材"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "石"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "ロープ"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "紙"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": true,
+        "text": "木の羽根は軽くてじょうぶ——川の流れがおして、水車はずっと回りつづけるよ!"
+      },
+      "stone": {
+        "success": false,
+        "text": "石は重すぎて、川の流れでは動かせないよ。"
+      },
+      "rope": {
+        "success": false,
+        "text": "ロープには水がおせる羽根がないよ。"
+      },
+      "paper": {
+        "success": false,
+        "text": "紙は流れる水にふれたしゅんかんにとけてしまうよ。"
+      }
+    }
+  },
+  "parachute": {
+    "title": "くまのぬいぐるみのパラシュート",
+    "emoji": "🪂",
+    "prompt": "🧸 くまのぬいぐるみが屋根からけがをせずにジャンプしたいよ。パラシュートを作ってあげよう!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "木材"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "石"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "ロープ"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "紙"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "木は重すぎてまっすぐ落ちてしまい、まったくスピードがゆるまないよ。"
+      },
+      "stone": {
+        "success": false,
+        "text": "石は石のようにそのまま落ちてしまい、空にうくチャンスはまったくないよ。"
+      },
+      "rope": {
+        "success": false,
+        "text": "ロープだけでは空気をとらえる面がないよ。"
+      },
+      "paper": {
+        "success": true,
+        "text": "紙は軽くて布のように広がり、空気をとらえてゆっくり地面まで下りられるよ!"
+      }
     }
   }
 }

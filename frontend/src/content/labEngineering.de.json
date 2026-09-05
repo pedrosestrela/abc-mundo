@@ -268,5 +268,455 @@
         "text": "Das Papier reißt, sobald die Kiste befestigt wird."
       }
     }
+  },
+  "seesaw": {
+    "title": "Die Wippe des Hasen",
+    "emoji": "⚖️",
+    "prompt": "🐰 Der Hase und das Eichhörnchen wollen auf einer Wippe spielen. Baue eine!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Holz"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Stein"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Seil"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papier"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": true,
+        "text": "Holz ist steif und leicht — die Wippe schwingt perfekt auf und ab!"
+      },
+      "stone": {
+        "success": false,
+        "text": "Stein ist auf einer Seite zu schwer — die Wippe kann nicht hochgehen."
+      },
+      "rope": {
+        "success": false,
+        "text": "Seil biegt sich und bildet kein festes Brett — niemand kann sich hinsetzen."
+      },
+      "paper": {
+        "success": false,
+        "text": "Papier biegt sich, sobald sich jemand hinsetzt."
+      }
+    }
+  },
+  "slide": {
+    "title": "Die Bergrutsche",
+    "emoji": "🛝",
+    "prompt": "🐿️ Das Eichhörnchen möchte spielend den Berg hinunterrutschen. Baue eine Rutsche!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Holz"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Stein"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Seil"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papier"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": true,
+        "text": "Holz ist glatt und stabil — das Eichhörnchen gleitet sanft ganz nach unten!"
+      },
+      "stone": {
+        "success": false,
+        "text": "Stein ist rau und zu schwer, um eine glatte Rampe zu formen."
+      },
+      "rope": {
+        "success": false,
+        "text": "Seil bildet keine flache Fläche — es gibt nichts zum Rutschen."
+      },
+      "paper": {
+        "success": false,
+        "text": "Papier reißt unter dem Gewicht des rutschenden Eichhörnchens."
+      }
+    }
+  },
+  "kite": {
+    "title": "Der Papierdrachen",
+    "emoji": "🪁",
+    "prompt": "🐦 Der kleine Vogel möchte einen Freund, der neben ihm fliegt. Baue einen Drachen!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Holz"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Stein"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Seil"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papier"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "Holz ist zu schwer — der Drachen hebt nie vom Boden ab."
+      },
+      "stone": {
+        "success": false,
+        "text": "Stein fällt gerade nach unten, ohne jede Chance zu fliegen."
+      },
+      "rope": {
+        "success": false,
+        "text": "Ein Seil allein hat keine Fläche, um den Wind einzufangen."
+      },
+      "paper": {
+        "success": true,
+        "text": "Papier ist leicht und fängt den Wind leicht ein — der Drachen steigt hoch in den Himmel!"
+      }
+    }
+  },
+  "windmill": {
+    "title": "Die Windmühle",
+    "emoji": "🌬️",
+    "prompt": "🐭 Die Maus möchte sehen, wie sich die Flügel im Wind drehen. Baue eine Windmühle!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Holz"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Stein"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Seil"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papier"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "Flügel aus Holz sind zu schwer — der Wind kann sie nicht bewegen."
+      },
+      "stone": {
+        "success": false,
+        "text": "Stein bewegt sich nicht einmal beim stärksten Wind."
+      },
+      "rope": {
+        "success": false,
+        "text": "Ein Seil hat keine Fläche, gegen die der Wind drücken kann."
+      },
+      "paper": {
+        "success": true,
+        "text": "Flügel aus Papier sind leicht und drehen sich schon bei einer sanften Brise!"
+      }
+    }
+  },
+  "zipline": {
+    "title": "Die Dschungel-Seilbahn",
+    "emoji": "🪢",
+    "prompt": "🐒 Der Affe möchte von Baum zu Baum sausen. Baue eine Seilrutsche!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Holz"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Stein"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Seil"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papier"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "Steifes Holz lässt sich nicht an die Bäume binden, um eine straffe Linie zu bilden."
+      },
+      "stone": {
+        "success": false,
+        "text": "Stein kann nicht zwischen den Bäumen gespannt werden."
+      },
+      "rope": {
+        "success": true,
+        "text": "Das straff zwischen den Bäumen gespannte Seil trägt das Gewicht des Affen, der glücklich auf die andere Seite gleitet!"
+      },
+      "paper": {
+        "success": false,
+        "text": "Papier reißt in dem Moment, in dem sich der Affe daran festhält."
+      }
+    }
+  },
+  "swing": {
+    "title": "Die Baumschaukel",
+    "emoji": "⛓️",
+    "prompt": "🐶 Der Hund möchte an einem Baum im Garten schaukeln. Baue eine Schaukel!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Holz"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Stein"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Seil"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papier"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "Steifes Holz lässt sich nicht um den Ast biegen, um die Schaukel zu halten."
+      },
+      "stone": {
+        "success": false,
+        "text": "Stein ist zu schwer und bricht den Ast des Baumes."
+      },
+      "rope": {
+        "success": true,
+        "text": "Seil ist stark und flexibel — es wickelt sich um den Ast und die Schaukel funktioniert bestens!"
+      },
+      "paper": {
+        "success": false,
+        "text": "Papier reißt, sobald sich jemand auf die Schaukel setzt."
+      }
+    }
+  },
+  "wall": {
+    "title": "Die Schlossmauer",
+    "emoji": "🛡️",
+    "prompt": "🐴 Das Pferd möchte das Schloss vor starken Winden schützen. Baue eine Mauer!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Holz"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Stein"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Seil"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papier"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "Holz ist zu leicht und der starke Wind wirft die Mauer um."
+      },
+      "stone": {
+        "success": true,
+        "text": "Aufeinandergestapelte Steinblöcke bilden eine schwere, feste Mauer, die dem Wind standhält!"
+      },
+      "rope": {
+        "success": false,
+        "text": "Ein Seil bildet keine Mauer — der Wind weht einfach hindurch."
+      },
+      "paper": {
+        "success": false,
+        "text": "Papier fliegt schon beim ersten Windstoß davon."
+      }
+    }
+  },
+  "well": {
+    "title": "Der Dorfbrunnen",
+    "emoji": "🪣",
+    "prompt": "🐔 Das Huhn möchte frisches Wasser aus dem Dorf. Baue einen Brunnen!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Holz"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Stein"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Seil"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papier"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "Holz verrottet in der feuchten Erde und der Brunnen stürzt ein."
+      },
+      "stone": {
+        "success": true,
+        "text": "Im Kreis gestapelte Steine bilden feste Wände, die mit der Erde ringsum nicht einstürzen!"
+      },
+      "rope": {
+        "success": false,
+        "text": "Ein Seil allein hält die Erde rund um das Loch nicht zurück."
+      },
+      "paper": {
+        "success": false,
+        "text": "Papier löst sich in der feuchten Erde auf."
+      }
+    }
+  },
+  "waterwheel": {
+    "title": "Das Mühlrad",
+    "emoji": "🌊",
+    "prompt": "🐟 Der Fisch möchte sehen, wie sich das Rad mit der Flussströmung dreht. Baue ein Wasserrad!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Holz"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Stein"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Seil"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papier"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": true,
+        "text": "Schaufeln aus Holz sind leicht, aber stark — die Flussströmung schiebt sie an und das Rad dreht sich ohne Unterbrechung!"
+      },
+      "stone": {
+        "success": false,
+        "text": "Stein ist zu schwer — die Flussströmung kann ihn nicht bewegen."
+      },
+      "rope": {
+        "success": false,
+        "text": "Ein Seil hat keine Schaufeln, gegen die das Wasser drücken kann."
+      },
+      "paper": {
+        "success": false,
+        "text": "Papier löst sich auf, sobald es das fließende Wasser berührt."
+      }
+    }
+  },
+  "parachute": {
+    "title": "Der Fallschirm des Teddybären",
+    "emoji": "🪂",
+    "prompt": "🧸 Der Teddybär möchte vom Dach springen, ohne sich wehzutun. Baue einen Fallschirm!",
+    "materials": [
+      {
+        "id": "wood",
+        "emoji": "🪵",
+        "label": "Holz"
+      },
+      {
+        "id": "stone",
+        "emoji": "🧱",
+        "label": "Stein"
+      },
+      {
+        "id": "rope",
+        "emoji": "🧵",
+        "label": "Seil"
+      },
+      {
+        "id": "paper",
+        "emoji": "📄",
+        "label": "Papier"
+      }
+    ],
+    "outcomes": {
+      "wood": {
+        "success": false,
+        "text": "Holz ist zu schwer und fällt geradewegs nach unten, ohne den Fall zu bremsen."
+      },
+      "stone": {
+        "success": false,
+        "text": "Stein fällt wie ein Stein — ohne jede Chance, in der Luft zu schweben."
+      },
+      "rope": {
+        "success": false,
+        "text": "Ein Seil allein hat keine Fläche, um die Luft einzufangen."
+      },
+      "paper": {
+        "success": true,
+        "text": "Papier ist leicht und öffnet sich wie ein Tuch, fängt die Luft ein und schwebt sanft zu Boden!"
+      }
+    }
   }
 }
