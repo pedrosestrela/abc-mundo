@@ -1,0 +1,226 @@
+[
+  {
+    "id": "volcano",
+    "emoji": "🌋",
+    "title": "Il vulcano di bicarbonato",
+    "materials": ["Bicarbonato di sodio", "Aceto", "Bottiglia piccola o bicchiere", "Colorante alimentare (facoltativo)", "Vassoio"],
+    "steps": [
+      "1. Metti la bottiglia dentro un vassoio, per raccogliere quello che trabocca.",
+      "2. Versa 2 cucchiai di bicarbonato dentro la bottiglia.",
+      "3. Aggiungi qualche goccia di colorante se vuoi.",
+      "4. Versa lentamente aceto dentro la bottiglia e osserva la schiuma uscire."
+    ],
+    "whyItWorks": "Il bicarbonato (una base) reagisce con l'aceto (un acido) e libera anidride carbonica, che forma la schiuma.",
+    "image": "volcano.jpg",
+    "imageAlt": "Schiuma che esce da un recipiente con bicarbonato e aceto"
+  },
+  {
+    "id": "oil-water",
+    "emoji": "🧴",
+    "title": "Strati di olio e acqua",
+    "materials": ["Olio vegetale", "Acqua", "Colorante alimentare", "Bicchiere trasparente"],
+    "steps": [
+      "1. Riempi a metà un bicchiere trasparente con acqua.",
+      "2. Aggiungi colorante all'acqua e mescola.",
+      "3. Versa lentamente olio vegetale sopra l'acqua.",
+      "4. Osserva i due strati formarsi senza mescolarsi."
+    ],
+    "whyItWorks": "L'olio è meno denso dell'acqua e non si mescola con essa, quindi galleggia sopra in uno strato separato.",
+    "image": "oil-water.jpg",
+    "imageAlt": "Strati di olio e acqua colorata che non si mescolano in un bicchiere"
+  },
+  {
+    "id": "dancing-raisins",
+    "emoji": "🍇",
+    "title": "L'uvetta ballerina",
+    "materials": ["Acqua frizzante", "Uvetta", "Bicchiere trasparente"],
+    "steps": [
+      "1. Riempi un bicchiere trasparente con acqua frizzante.",
+      "2. Fai cadere 5 o 6 chicchi di uvetta dentro il bicchiere.",
+      "3. Osserva l'uvetta salire e scendere da sola."
+    ],
+    "whyItWorks": "Le bollicine di gas si attaccano all'uvetta e la fanno galleggiare; quando le bollicine scoppiano in superficie, l'uvetta torna ad affondare.",
+    "image": null,
+    "imageAlt": null
+  },
+  {
+    "id": "walking-rainbow",
+    "emoji": "🌈",
+    "title": "L'arcobaleno che cammina",
+    "materials": ["6 bicchieri trasparenti", "Carta assorbente", "Acqua", "Colorante alimentare (3 colori)"],
+    "steps": [
+      "1. Metti 3 bicchieri con acqua colorata (un colore diverso in ognuno) e 3 bicchieri vuoti, alternati in fila.",
+      "2. Piega strisce di carta assorbente e metti un'estremità in un bicchiere pieno e l'altra nel bicchiere vuoto accanto.",
+      "3. Aspetta e osserva l'acqua 'camminare' lungo la carta fino ai bicchieri vuoti.",
+      "4. Guarda i colori mescolarsi e creare nuovi colori nei bicchieri centrali."
+    ],
+    "whyItWorks": "La carta assorbe l'acqua per capillarità, facendola salire lungo le fibre fino al bicchiere vuoto.",
+    "image": null,
+    "imageAlt": null
+  },
+  {
+    "id": "magic-milk",
+    "emoji": "🥛",
+    "title": "Esplosione di colori nel latte",
+    "materials": ["Latte intero", "Colorante alimentare (vari colori)", "Detersivo per piatti", "Piatto fondo", "Cotton fioc"],
+    "steps": [
+      "1. Versa il latte in un piatto fondo, abbastanza da coprire il fondo.",
+      "2. Metti varie gocce di coloranti di colori diversi sulla superficie del latte.",
+      "3. Immergi la punta di un cotton fioc nel detersivo per piatti.",
+      "4. Tocca il centro delle gocce di colore con il cotton fioc e osserva l'esplosione di colori."
+    ],
+    "whyItWorks": "Il detersivo rompe il grasso del latte e si diffonde velocemente sulla superficie, spingendo il colorante e creando vortici di colore.",
+    "image": null,
+    "imageAlt": "Colori che si diffondono in un piatto di latte con detersivo"
+  },
+  {
+    "id": "sugar-crystal",
+    "emoji": "🍬",
+    "title": "Cristalli di zucchero su un filo",
+    "materials": ["Zucchero", "Acqua", "Filo di cotone", "Matita", "Bicchiere"],
+    "steps": [
+      "1. Chiedi a un adulto di scaldare l'acqua e sciogliervi molto zucchero, finché non se ne scioglie più.",
+      "2. Lascia raffreddare un po' l'acqua e versala in un bicchiere.",
+      "3. Lega un filo di cotone a una matita e appoggia la matita sul bicchiere, con il filo dentro il liquido.",
+      "4. Aspetta alcuni giorni e osserva i cristalli crescere sul filo."
+    ],
+    "whyItWorks": "Man mano che l'acqua si raffredda ed evapora, non riesce più a mantenere sciolto tanto zucchero, e lo zucchero in eccesso forma cristalli solidi sul filo.",
+    "image": "sugar-crystal.jpg",
+    "imageAlt": "Cristalli di zucchero formati su un filo"
+  },
+  {
+    "id": "invisible-ink",
+    "emoji": "✉️",
+    "title": "Inchiostro invisibile al limone",
+    "materials": ["Succo di limone", "Cotton fioc o pennello sottile", "Carta bianca", "Lampada accesa"],
+    "steps": [
+      "1. Spremi un po' di succo di limone in una ciotolina.",
+      "2. Usa un cotton fioc per scrivere o disegnare sulla carta con il succo di limone.",
+      "3. Lascia asciugare completamente, finché non diventa invisibile.",
+      "4. Chiedi a un adulto di avvicinare la carta (senza toccarla) a una lampada accesa e calda, finché il messaggio non appare in marrone."
+    ],
+    "whyItWorks": "Il succo di limone indebolisce la carta; quando viene riscaldata, quelle parti si scuriscono più in fretta del resto, rivelando il disegno.",
+    "image": null,
+    "imageAlt": null
+  },
+  {
+    "id": "lava-lamp",
+    "emoji": "🫧",
+    "title": "La lampada di lava fatta in casa",
+    "materials": ["Bottiglia trasparente", "Acqua", "Olio vegetale", "Colorante alimentare", "Compressa effervescente"],
+    "steps": [
+      "1. Riempi un quarto della bottiglia con acqua e il resto con olio vegetale.",
+      "2. Aggiungi qualche goccia di colorante alimentare.",
+      "3. Spezza una compressa effervescente in pezzi e lasciane cadere uno dentro la bottiglia.",
+      "4. Osserva le bollicine colorate salire e scendere."
+    ],
+    "whyItWorks": "La compressa reagisce con l'acqua e libera gas, che sale attraverso l'olio trasportando bollicine d'acqua colorata; quando il gas esce, le bollicine tornano a scendere.",
+    "image": null,
+    "imageAlt": "Bollicine colorate che salgono in una bottiglia di olio e acqua"
+  },
+  {
+    "id": "static-balloon",
+    "emoji": "🎈",
+    "title": "Il palloncino elettrico e l'acqua",
+    "materials": ["Palloncino", "Acqua del rubinetto", "Capelli o panno di lana"],
+    "steps": [
+      "1. Gonfia il palloncino e chiudilo con un nodo.",
+      "2. Strofina il palloncino sui tuoi capelli asciutti o su un panno di lana per circa 20 secondi.",
+      "3. Apri il rubinetto finché esce un filo sottile d'acqua.",
+      "4. Avvicina il palloncino al filo d'acqua, senza toccarlo, e osserva cosa succede."
+    ],
+    "whyItWorks": "Strofinare il palloncino lo carica di elettricità statica, che attira le molecole d'acqua e fa piegare il filo verso il palloncino.",
+    "image": null,
+    "imageAlt": "Un palloncino che piega un filo d'acqua del rubinetto"
+  },
+  {
+    "id": "egg-float",
+    "emoji": "🥚",
+    "title": "L'uovo che galleggia in acqua salata",
+    "materials": ["2 bicchieri alti", "Acqua", "Sale", "2 uova"],
+    "steps": [
+      "1. Riempi un bicchiere con acqua normale del rubinetto.",
+      "2. Riempi un altro bicchiere con acqua e mescola varie cucchiaiate di sale fino a scioglierlo.",
+      "3. Metti con cura un uovo in ogni bicchiere.",
+      "4. Osserva: l'uovo affonda nell'acqua normale, ma galleggia nell'acqua salata."
+    ],
+    "whyItWorks": "L'acqua salata è più densa dell'acqua normale, quindi riesce a spingere l'uovo verso l'alto e farlo galleggiare.",
+    "image": null,
+    "imageAlt": "Un uovo che galleggia in un bicchiere di acqua salata e un altro affondato in acqua normale"
+  },
+  {
+    "id": "naked-egg",
+    "emoji": "🐣",
+    "title": "L'uovo nudo nell'aceto",
+    "materials": ["Uovo crudo", "Bicchiere", "Aceto"],
+    "steps": [
+      "1. Metti con cura un uovo crudo dentro un bicchiere.",
+      "2. Copri completamente l'uovo con l'aceto.",
+      "3. Lascia riposare l'uovo 2-3 giorni, senza toccarlo.",
+      "4. Tira fuori l'uovo con cura e senti come il guscio è sparito, lasciando un uovo 'di gomma'."
+    ],
+    "whyItWorks": "L'aceto è un acido che scioglie lentamente il carbonato di calcio del guscio, lasciando solo la sottile membrana sottostante.",
+    "image": "naked-egg.jpg",
+    "imageAlt": "Uovo senza guscio dopo un bagno nell'aceto, con la membrana visibile"
+  },
+  {
+    "id": "sink-or-float",
+    "emoji": "🪣",
+    "title": "Affonda o galleggia?",
+    "materials": ["Bacinella con acqua", "Vari piccoli oggetti di casa (moneta, tappo, bottone, foglia, gomma, tappo di plastica)"],
+    "steps": [
+      "1. Riempi una bacinella con acqua.",
+      "2. Prima di provare ogni oggetto, prova a indovinare se galleggerà o affonderà.",
+      "3. Metti ogni oggetto nell'acqua, uno alla volta, e osserva cosa succede.",
+      "4. Raggruppa gli oggetti in due gruppi: 'galleggia' e 'affonda'."
+    ],
+    "whyItWorks": "Un oggetto galleggia quando è meno denso dell'acqua e affonda quando è più denso di essa.",
+    "image": null,
+    "imageAlt": "Vari piccoli oggetti, alcuni che galleggiano e altri affondati in una bacinella d'acqua"
+  },
+  {
+    "id": "homemade-compass",
+    "emoji": "🧭",
+    "title": "Bussola fatta in casa",
+    "materials": ["Ago da cucito", "Calamita", "Tappo di sughero o pezzo di gommapiuma", "Ciotola con acqua"],
+    "steps": [
+      "1. Strofina l'ago su una calamita sempre nella stessa direzione, circa 20-30 volte.",
+      "2. Infila con cura l'ago attraverso un tappo di sughero o un pezzo di gommapiuma.",
+      "3. Fai galleggiare il tappo al centro di una ciotola con acqua.",
+      "4. Osserva l'ago girare da solo finché non punta sempre nella stessa direzione."
+    ],
+    "whyItWorks": "Strofinare l'ago sulla calamita lo trasforma in una piccola calamita, che si allinea con il campo magnetico terrestre, puntando sempre verso nord e sud.",
+    "image": null,
+    "imageAlt": null
+  },
+  {
+    "id": "cabbage-indicator",
+    "emoji": "🥬",
+    "title": "L'indicatore di cavolo rosso",
+    "materials": ["Cavolo rosso", "Acqua calda", "Colino", "2 bicchieri trasparenti", "Aceto", "Bicarbonato di sodio"],
+    "steps": [
+      "1. Chiedi a un adulto di tagliare il cavolo rosso a pezzetti e coprirli con acqua calda.",
+      "2. Aspetta 15 minuti finché l'acqua diventa viola, poi filtrala in un recipiente.",
+      "3. Versa un po' del liquido viola in due bicchieri separati.",
+      "4. Aggiungi aceto in un bicchiere e bicarbonato nell'altro, e osserva i colori cambiare."
+    ],
+    "whyItWorks": "Il succo di cavolo rosso cambia colore a seconda che il liquido sia acido (come l'aceto, diventa rosa) o basico (come il bicarbonato, diventa verde o blu).",
+    "image": "cabbage-indicator.jpg",
+    "imageAlt": "Bicchieri con liquido di cavolo rosso che cambia colore con aceto e bicarbonato"
+  },
+  {
+    "id": "rubber-band-car",
+    "emoji": "🚗",
+    "title": "L'auto di cartone a elastico",
+    "materials": ["Piccola scatola di cartone", "4 tappi di bottiglia (ruote)", "2 cannucce", "2 spiedini sottili", "Elastico", "Nastro adesivo"],
+    "steps": [
+      "1. Fissa due cannucce sotto la scatola di cartone, una davanti e una dietro, con il nastro adesivo.",
+      "2. Infila uno spiedino sottile al centro di ogni tappo e inseriscilo nelle cannucce per fare le ruote.",
+      "3. Lega un elastico teso tra la parte davanti e quella dietro della scatola, attorno a uno degli assi.",
+      "4. Avvolgi l'asse per attorcigliare l'elastico, appoggia l'auto a terra e lasciala andare da sola."
+    ],
+    "whyItWorks": "L'elastico attorcigliato immagazzina energia elastica, che si libera srotolandosi e fa girare le ruote, spingendo l'auto in avanti.",
+    "image": null,
+    "imageAlt": null
+  }
+]

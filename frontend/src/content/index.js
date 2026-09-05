@@ -376,6 +376,15 @@ import objectTeardownEs from "./objectTeardown.es.json";
 import objectTeardownIt from "./objectTeardown.it.json";
 import objectTeardownJa from "./objectTeardown.ja.json";
 
+import homeExperimentsPt from "./homeExperiments.pt.json";
+import homeExperimentsEn from "./homeExperiments.en.json";
+import homeExperimentsDe from "./homeExperiments.de.json";
+import homeExperimentsFr from "./homeExperiments.fr.json";
+import homeExperimentsZh from "./homeExperiments.zh.json";
+import homeExperimentsEs from "./homeExperiments.es.json";
+import homeExperimentsIt from "./homeExperiments.it.json";
+import homeExperimentsJa from "./homeExperiments.ja.json";
+
 import howMadePt from "./howMade.pt.json";
 import howMadeEn from "./howMade.en.json";
 import howMadeDe from "./howMade.de.json";
@@ -477,6 +486,7 @@ const ART_PROMPTS = { pt: artPromptsPt, en: artPromptsEn, de: artPromptsDe, fr: 
 const LAB_SIMULATORS = { pt: labSimulatorsPt, en: labSimulatorsEn, de: labSimulatorsDe, fr: labSimulatorsFr, zh: labSimulatorsZh, es: labSimulatorsEs, it: labSimulatorsIt, ja: labSimulatorsJa };
 const LAB_ENGINEERING = { pt: labEngineeringPt, en: labEngineeringEn, de: labEngineeringDe, fr: labEngineeringFr, zh: labEngineeringZh, es: labEngineeringEs, it: labEngineeringIt, ja: labEngineeringJa };
 const SCIENCE = { pt: sciencePt, en: scienceEn, de: scienceDe, fr: scienceFr, zh: scienceZh, es: scienceEs, it: scienceIt, ja: scienceJa };
+const HOME_EXPERIMENTS = { pt: homeExperimentsPt, en: homeExperimentsEn, de: homeExperimentsDe, fr: homeExperimentsFr, zh: homeExperimentsZh, es: homeExperimentsEs, it: homeExperimentsIt, ja: homeExperimentsJa };
 
 const HUMAN_EVOLUTION = {
   pt: humanEvolutionPt,
@@ -613,6 +623,15 @@ export function getArtPrompts(langCode) {
 
 export function getScience(langCode) {
   return SCIENCE[langCode] || [];
+}
+
+// Real, safe, step-by-step at-home science experiments for the Science
+// module's "Experiências" tab — different from the interactive lab
+// simulators/engineering challenges above: these are actual physical
+// experiments with a materials list and numbered steps, some with a real
+// photo (see frontend/public/images/experiments/NOTICE.md for sourcing).
+export function getHomeExperiments(langCode) {
+  return HOME_EXPERIMENTS[langCode] || HOME_EXPERIMENTS.pt;
 }
 
 export function getHumanEvolution(langCode) {

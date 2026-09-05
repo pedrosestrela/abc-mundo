@@ -1,0 +1,304 @@
+[
+  {
+    "id": "volcano",
+    "emoji": "🌋",
+    "title": "Vulcão de bicarbonato",
+    "materials": [
+      "Bicarbonato de sódio",
+      "Vinagre",
+      "Garrafa pequena ou copo",
+      "Corante alimentar (opcional)",
+      "Tabuleiro"
+    ],
+    "steps": [
+      "1. Coloca a garrafa dentro de um tabuleiro, para apanhar o que transborda.",
+      "2. Deita 2 colheres de bicarbonato de sódio dentro da garrafa.",
+      "3. Pinga algumas gotas de corante alimentar, se quiseres.",
+      "4. Deita vinagre devagar dentro da garrafa e observa a espuma a sair."
+    ],
+    "whyItWorks": "O bicarbonato (uma base) reage com o vinagre (um ácido) e liberta gás dióxido de carbono, que forma a espuma.",
+    "image": "volcano.jpg",
+    "imageAlt": "Espuma a sair de um recipiente com bicarbonato de sódio e vinagre"
+  },
+  {
+    "id": "oil-water",
+    "emoji": "🧴",
+    "title": "Camadas de óleo e água",
+    "materials": [
+      "Óleo vegetal",
+      "Água",
+      "Corante alimentar",
+      "Copo transparente"
+    ],
+    "steps": [
+      "1. Enche metade de um copo transparente com água.",
+      "2. Pinga corante alimentar na água e mexe.",
+      "3. Deita devagar óleo vegetal por cima da água.",
+      "4. Observa as duas camadas que se formam, sem se misturarem."
+    ],
+    "whyItWorks": "O óleo é menos denso do que a água e não se mistura com ela, por isso flutua por cima em camadas separadas.",
+    "image": "oil-water.jpg",
+    "imageAlt": "Camadas de óleo e água colorida que não se misturam num copo"
+  },
+  {
+    "id": "dancing-raisins",
+    "emoji": "🍇",
+    "title": "Passas dançarinas",
+    "materials": [
+      "Água com gás",
+      "Passas",
+      "Copo transparente"
+    ],
+    "steps": [
+      "1. Enche um copo transparente com água com gás.",
+      "2. Deixa cair 5 a 6 passas dentro do copo.",
+      "3. Observa as passas a subir e a descer sozinhas."
+    ],
+    "whyItWorks": "As bolhas de gás agarram-se às passas e fazem-nas flutuar; quando as bolhas rebentam à superfície, as passas voltam a afundar.",
+    "imageAlt": null,
+    "image": null
+  },
+  {
+    "id": "walking-rainbow",
+    "emoji": "🌈",
+    "title": "Arco-íris a caminhar",
+    "materials": [
+      "6 copos transparentes",
+      "Papel de cozinha",
+      "Água",
+      "Corante alimentar (3 cores)"
+    ],
+    "steps": [
+      "1. Coloca 3 copos com água colorida (uma cor diferente em cada um) e 3 copos vazios, alternados em fila.",
+      "2. Dobra tiras de papel de cozinha e coloca uma ponta num copo cheio e a outra ponta no copo vazio ao lado.",
+      "3. Espera e observa a água a \"andar\" pelo papel até aos copos vazios.",
+      "4. Vê as cores a misturarem-se e a criar novas cores nos copos do meio."
+    ],
+    "whyItWorks": "O papel absorve a água por capilaridade, puxando-a para cima e ao longo das fibras até chegar ao copo vazio.",
+    "imageAlt": null,
+    "image": null
+  },
+  {
+    "id": "magic-milk",
+    "emoji": "🥛",
+    "title": "Explosão de cores no leite",
+    "materials": [
+      "Leite gordo",
+      "Corante alimentar (várias cores)",
+      "Detergente da loiça",
+      "Prato fundo",
+      "Cotonete"
+    ],
+    "steps": [
+      "1. Deita leite num prato fundo, até cobrir o fundo.",
+      "2. Pinga várias gotas de corante alimentar de cores diferentes na superfície do leite.",
+      "3. Mergulha a ponta de um cotonete em detergente da loiça.",
+      "4. Toca com o cotonete no meio das gotas de cor e observa a explosão de cores."
+    ],
+    "whyItWorks": "O detergente quebra a gordura do leite e espalha-se rapidamente pela superfície, empurrando o corante e criando redemoinhos de cor.",
+    "imageAlt": "Cores a espalharem-se num prato de leite com detergente",
+    "image": null
+  },
+  {
+    "id": "sugar-crystal",
+    "emoji": "🍬",
+    "title": "Cristais de açúcar num fio",
+    "materials": [
+      "Açúcar",
+      "Água",
+      "Fio de algodão",
+      "Lápis",
+      "Copo"
+    ],
+    "steps": [
+      "1. Pede a um adulto para aquecer água e dissolver muito açúcar nela, até não se dissolver mais.",
+      "2. Deixa a água arrefecer um pouco e deita-a num copo.",
+      "3. Amarra um fio de algodão a um lápis e pousa o lápis sobre o copo, com o fio dentro do líquido.",
+      "4. Espera alguns dias e observa os cristais a crescerem no fio."
+    ],
+    "whyItWorks": "À medida que a água arrefece e evapora, já não consegue manter tanto açúcar dissolvido, e o açúcar a mais forma cristais sólidos no fio.",
+    "image": "sugar-crystal.jpg",
+    "imageAlt": "Cristais de açúcar formados num fio"
+  },
+  {
+    "id": "invisible-ink",
+    "emoji": "✉️",
+    "title": "Tinta invisível de limão",
+    "materials": [
+      "Sumo de limão",
+      "Cotonete ou pincel fino",
+      "Papel branco",
+      "Candeeiro com lâmpada acesa"
+    ],
+    "steps": [
+      "1. Espreme um pouco de sumo de limão para uma taça pequena.",
+      "2. Usa um cotonete para escrever ou desenhar algo no papel com o sumo de limão.",
+      "3. Deixa secar completamente, até ficar invisível.",
+      "4. Pede a um adulto para segurar o papel perto (sem tocar) de uma lâmpada acesa e quente, até a mensagem aparecer a castanho."
+    ],
+    "whyItWorks": "O sumo de limão enfraquece o papel; quando aquecido, essas partes escurecem mais depressa do que o resto, revelando o desenho.",
+    "imageAlt": null,
+    "image": null
+  },
+  {
+    "id": "lava-lamp",
+    "emoji": "🫧",
+    "title": "Lava lamp caseira",
+    "materials": [
+      "Garrafa transparente",
+      "Água",
+      "Óleo vegetal",
+      "Corante alimentar",
+      "Comprimido efervescente"
+    ],
+    "steps": [
+      "1. Enche um quarto da garrafa com água e o resto com óleo vegetal.",
+      "2. Pinga algumas gotas de corante alimentar.",
+      "3. Parte um comprimido efervescente em pedaços e deixa cair um pedaço dentro da garrafa.",
+      "4. Observa as bolhas coloridas a subir e a descer."
+    ],
+    "whyItWorks": "O comprimido reage com a água e liberta gás, que sobe através do óleo transportando bolhas de água colorida; quando o gás escapa, as bolhas voltam a descer.",
+    "imageAlt": "Bolhas coloridas a subir numa garrafa com óleo e água",
+    "image": null
+  },
+  {
+    "id": "static-balloon",
+    "emoji": "🎈",
+    "title": "Balão elétrico e água",
+    "materials": [
+      "Balão",
+      "Água da torneira",
+      "Cabelo ou pano de lã"
+    ],
+    "steps": [
+      "1. Enche o balão de ar e fecha-o.",
+      "2. Esfrega o balão no teu cabelo seco ou num pano de lã durante uns 20 segundos.",
+      "3. Abre a torneira até sair um fio fino de água.",
+      "4. Aproxima o balão do fio de água, sem tocar, e observa o que acontece."
+    ],
+    "whyItWorks": "Esfregar o balão carrega-o com eletricidade estática, que atrai as moléculas de água e faz o fio de água curvar-se em direção ao balão.",
+    "imageAlt": "Balão a curvar um fio de água da torneira",
+    "image": null
+  },
+  {
+    "id": "egg-float",
+    "emoji": "🥚",
+    "title": "Ovo a flutuar em água salgada",
+    "materials": [
+      "2 copos altos",
+      "Água",
+      "Sal",
+      "2 ovos"
+    ],
+    "steps": [
+      "1. Enche um copo com água normal da torneira.",
+      "2. Enche outro copo com água e mistura várias colheres de sal até se dissolver.",
+      "3. Coloca um ovo com cuidado em cada copo.",
+      "4. Observa: o ovo afunda-se na água normal, mas flutua na água salgada."
+    ],
+    "whyItWorks": "A água salgada é mais densa do que a água normal, por isso consegue empurrar o ovo para cima e fazê-lo flutuar.",
+    "imageAlt": "Um ovo a flutuar num copo de água salgada e outro afundado num copo de água normal",
+    "image": null
+  },
+  {
+    "id": "naked-egg",
+    "emoji": "🐣",
+    "title": "Ovo nu em vinagre",
+    "materials": [
+      "Ovo cru",
+      "Copo",
+      "Vinagre"
+    ],
+    "steps": [
+      "1. Coloca um ovo cru com cuidado dentro de um copo.",
+      "2. Cobre o ovo completamente com vinagre.",
+      "3. Deixa o ovo em repouso durante 2 a 3 dias, sem mexer.",
+      "4. Retira o ovo com cuidado e sente como a casca desapareceu, ficando um ovo \"de borracha\"."
+    ],
+    "whyItWorks": "O vinagre é um ácido que dissolve lentamente o carbonato de cálcio da casca do ovo, deixando só a membrana fina por baixo.",
+    "image": "naked-egg.jpg",
+    "imageAlt": "Ovo sem casca depois de ficar em vinagre, com a membrana à mostra"
+  },
+  {
+    "id": "sink-or-float",
+    "emoji": "🪣",
+    "title": "Afunda ou flutua?",
+    "materials": [
+      "Bacia com água",
+      "Vários objetos pequenos de casa (moeda, rolha, botão, folha, borracha, tampa de plástico)"
+    ],
+    "steps": [
+      "1. Enche uma bacia com água.",
+      "2. Antes de testar cada objeto, tenta adivinhar se vai flutuar ou afundar.",
+      "3. Coloca cada objeto na água, um de cada vez, e observa o que acontece.",
+      "4. Agrupa os objetos em dois grupos: \"flutua\" e \"afunda\"."
+    ],
+    "whyItWorks": "Um objeto flutua quando é menos denso do que a água e afunda-se quando é mais denso do que ela.",
+    "imageAlt": "Vários objetos pequenos, alguns a flutuar e outros afundados numa bacia de água",
+    "image": null
+  },
+  {
+    "id": "homemade-compass",
+    "emoji": "🧭",
+    "title": "Bússola caseira",
+    "materials": [
+      "Agulha de costura",
+      "Íman",
+      "Rolha ou pedaço de esferovite",
+      "Tigela com água"
+    ],
+    "steps": [
+      "1. Esfrega a agulha num íman sempre na mesma direção, umas 20 a 30 vezes.",
+      "2. Espeta a agulha com cuidado através de uma rolha ou pedaço de esferovite.",
+      "3. Coloca a rolha a flutuar no meio de uma tigela com água.",
+      "4. Observa a agulha a rodar sozinha até apontar sempre para a mesma direção."
+    ],
+    "whyItWorks": "Esfregar a agulha no íman transforma-a num pequeno íman, que se alinha com o campo magnético da Terra, apontando sempre para norte e sul.",
+    "imageAlt": null,
+    "image": null
+  },
+  {
+    "id": "cabbage-indicator",
+    "emoji": "🥬",
+    "title": "Indicador de repolho roxo",
+    "materials": [
+      "Repolho roxo",
+      "Água quente",
+      "Coador",
+      "2 copos transparentes",
+      "Vinagre",
+      "Bicarbonato de sódio"
+    ],
+    "steps": [
+      "1. Pede a um adulto para cortar o repolho roxo em pedaços pequenos e cobri-los com água quente.",
+      "2. Espera 15 minutos até a água ficar roxa e depois coa para um recipiente.",
+      "3. Deita um pouco do líquido roxo em dois copos separados.",
+      "4. Junta vinagre a um copo e bicarbonato de sódio ao outro, e observa as cores mudarem."
+    ],
+    "whyItWorks": "O suco de repolho roxo muda de cor consoante o líquido é ácido (como o vinagre, fica rosa) ou básico (como o bicarbonato, fica verde ou azul).",
+    "image": "cabbage-indicator.jpg",
+    "imageAlt": "Copos com líquido de repolho roxo a mudar de cor com vinagre e bicarbonato"
+  },
+  {
+    "id": "rubber-band-car",
+    "emoji": "🚗",
+    "title": "Carro de cartão com elástico",
+    "materials": [
+      "Caixa de cartão pequena",
+      "4 tampas de garrafa (rodas)",
+      "2 palhinhas",
+      "2 paus de espetada finos",
+      "Elástico",
+      "Fita-cola"
+    ],
+    "steps": [
+      "1. Fixa duas palhinhas por baixo da caixa de cartão, uma à frente e outra atrás, com fita-cola.",
+      "2. Espeta um pau fino no meio de cada tampa de garrafa e encaixa nas palhinhas para fazer as rodas.",
+      "3. Prende um elástico esticado entre a frente e a parte de trás da caixa, à volta de um dos eixos.",
+      "4. Enrola o eixo para torcer o elástico, pousa o carro no chão e larga-o para ele avançar sozinho."
+    ],
+    "whyItWorks": "O elástico torcido guarda energia elástica, que se liberta ao desenrolar e faz as rodas girarem, empurrando o carro para a frente.",
+    "imageAlt": null,
+    "image": null
+  }
+]

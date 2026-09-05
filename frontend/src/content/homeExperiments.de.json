@@ -1,0 +1,304 @@
+[
+  {
+    "id": "volcano",
+    "emoji": "🌋",
+    "title": "Backpulver-Vulkan",
+    "materials": [
+      "Backpulver oder Natron",
+      "Essig",
+      "Kleine Flasche oder Becher",
+      "Lebensmittelfarbe (optional)",
+      "Tablett"
+    ],
+    "steps": [
+      "1. Stelle die Flasche in ein Tablett, damit nichts überläuft.",
+      "2. Gib 2 Löffel Natron in die Flasche.",
+      "3. Träufle ein paar Tropfen Lebensmittelfarbe hinein, wenn du magst.",
+      "4. Gieße langsam Essig in die Flasche und beobachte den Schaum."
+    ],
+    "whyItWorks": "Natron (eine Base) reagiert mit Essig (einer Säure) und setzt Kohlendioxid-Gas frei, das den Schaum bildet.",
+    "image": "volcano.jpg",
+    "imageAlt": "Schaum, der aus einem Behälter mit Natron und Essig austritt"
+  },
+  {
+    "id": "oil-water",
+    "emoji": "🧴",
+    "title": "Öl- und Wasserschichten",
+    "materials": [
+      "Pflanzenöl",
+      "Wasser",
+      "Lebensmittelfarbe",
+      "Durchsichtiges Glas"
+    ],
+    "steps": [
+      "1. Fülle ein durchsichtiges Glas zur Hälfte mit Wasser.",
+      "2. Gib Lebensmittelfarbe ins Wasser und rühre um.",
+      "3. Gieße langsam Pflanzenöl auf das Wasser.",
+      "4. Beobachte, wie sich zwei Schichten bilden, ohne sich zu mischen."
+    ],
+    "whyItWorks": "Öl ist weniger dicht als Wasser und mischt sich nicht damit, deshalb schwimmt es als eigene Schicht obenauf.",
+    "image": "oil-water.jpg",
+    "imageAlt": "Schichten aus Öl und gefärbtem Wasser, die sich in einem Glas nicht vermischen"
+  },
+  {
+    "id": "dancing-raisins",
+    "emoji": "🍇",
+    "title": "Tanzende Rosinen",
+    "materials": [
+      "Sprudelwasser",
+      "Rosinen",
+      "Durchsichtiges Glas"
+    ],
+    "steps": [
+      "1. Fülle ein durchsichtiges Glas mit Sprudelwasser.",
+      "2. Wirf 5 bis 6 Rosinen ins Glas.",
+      "3. Beobachte, wie die Rosinen von selbst auf- und absteigen."
+    ],
+    "whyItWorks": "Gasblasen setzen sich an den Rosinen fest und lassen sie schweben; wenn die Blasen an der Oberfläche platzen, sinken die Rosinen wieder.",
+    "imageAlt": "Rosinen, die in einem Glas Sprudelwasser schweben",
+    "image": null
+  },
+  {
+    "id": "walking-rainbow",
+    "emoji": "🌈",
+    "title": "Der wandernde Regenbogen",
+    "materials": [
+      "6 durchsichtige Becher",
+      "Küchenpapier",
+      "Wasser",
+      "Lebensmittelfarbe (3 Farben)"
+    ],
+    "steps": [
+      "1. Stelle 3 Becher mit gefärbtem Wasser (je eine andere Farbe) und 3 leere Becher abwechselnd in eine Reihe.",
+      "2. Falte Streifen aus Küchenpapier und lege ein Ende in einen vollen Becher, das andere Ende in den leeren daneben.",
+      "3. Warte und beobachte, wie das Wasser über das Papier zu den leeren Bechern \"wandert\".",
+      "4. Beobachte, wie sich die Farben mischen und in den mittleren Bechern neue Farben entstehen."
+    ],
+    "whyItWorks": "Das Papier saugt das Wasser durch Kapillarwirkung auf und zieht es an den Fasern entlang nach oben bis zum leeren Becher.",
+    "imageAlt": "Becher, die durch Streifen aus Küchenpapier verbunden sind, während gefärbtes Wasser aufsteigt",
+    "image": null
+  },
+  {
+    "id": "magic-milk",
+    "emoji": "🥛",
+    "title": "Farbexplosion in Milch",
+    "materials": [
+      "Vollmilch",
+      "Lebensmittelfarbe (mehrere Farben)",
+      "Spülmittel",
+      "Flacher Teller",
+      "Wattestäbchen"
+    ],
+    "steps": [
+      "1. Gieße Milch in einen flachen Teller, sodass der Boden bedeckt ist.",
+      "2. Gib mehrere Tropfen unterschiedlicher Lebensmittelfarbe auf die Oberfläche der Milch.",
+      "3. Tauche die Spitze eines Wattestäbchens in Spülmittel.",
+      "4. Berühre mit dem Wattestäbchen die Mitte der Farbtropfen und beobachte die Farbexplosion."
+    ],
+    "whyItWorks": "Das Spülmittel bricht das Fett in der Milch auf und breitet sich schnell über die Oberfläche aus, wodurch es die Farbe verdrängt und Wirbel entstehen.",
+    "imageAlt": "Farben, die sich in einem Teller Milch mit Spülmittel ausbreiten",
+    "image": null
+  },
+  {
+    "id": "sugar-crystal",
+    "emoji": "🍬",
+    "title": "Zuckerkristalle an einem Faden",
+    "materials": [
+      "Zucker",
+      "Wasser",
+      "Baumwollfaden",
+      "Bleistift",
+      "Glas"
+    ],
+    "steps": [
+      "1. Bitte einen Erwachsenen, Wasser zu erhitzen und darin so viel Zucker aufzulösen, bis sich nichts mehr löst.",
+      "2. Lass das Wasser etwas abkühlen und gieße es in ein Glas.",
+      "3. Binde einen Baumwollfaden an einen Bleistift und lege den Bleistift über das Glas, sodass der Faden in der Flüssigkeit hängt.",
+      "4. Warte einige Tage und beobachte, wie Kristalle am Faden wachsen."
+    ],
+    "whyItWorks": "Während das Wasser abkühlt und verdunstet, kann es nicht mehr so viel Zucker gelöst halten, und der überschüssige Zucker bildet feste Kristalle am Faden.",
+    "image": "sugar-crystal.jpg",
+    "imageAlt": "Zuckerkristalle, die an einem Faden gewachsen sind"
+  },
+  {
+    "id": "invisible-ink",
+    "emoji": "✉️",
+    "title": "Unsichtbare Zitronentinte",
+    "materials": [
+      "Zitronensaft",
+      "Wattestäbchen oder feiner Pinsel",
+      "Weißes Papier",
+      "Lampe mit warmer Glühbirne"
+    ],
+    "steps": [
+      "1. Presse etwas Zitronensaft in eine kleine Schale.",
+      "2. Schreibe oder male mit einem Wattestäbchen etwas mit dem Zitronensaft auf das Papier.",
+      "3. Lass es vollständig trocknen, bis es unsichtbar wird.",
+      "4. Bitte einen Erwachsenen, das Papier nahe (ohne es zu berühren) an eine warme, leuchtende Glühbirne zu halten, bis die Botschaft braun erscheint."
+    ],
+    "whyItWorks": "Zitronensaft schwächt das Papier; beim Erwärmen werden diese Stellen schneller braun als der Rest, wodurch die Zeichnung sichtbar wird.",
+    "imageAlt": "Eine geheime Nachricht mit Zitronensaft, die auf einem Blatt Papier sichtbar wird",
+    "image": null
+  },
+  {
+    "id": "lava-lamp",
+    "emoji": "🫧",
+    "title": "Selbstgemachte Lavalampe",
+    "materials": [
+      "Durchsichtige Flasche",
+      "Wasser",
+      "Pflanzenöl",
+      "Lebensmittelfarbe",
+      "Brausetablette"
+    ],
+    "steps": [
+      "1. Fülle ein Viertel der Flasche mit Wasser und den Rest mit Pflanzenöl.",
+      "2. Gib ein paar Tropfen Lebensmittelfarbe hinzu.",
+      "3. Brich eine Brausetablette in Stücke und wirf ein Stück in die Flasche.",
+      "4. Beobachte, wie die bunten Blasen auf- und absteigen."
+    ],
+    "whyItWorks": "Die Tablette reagiert mit dem Wasser und setzt Gas frei, das durch das Öl aufsteigt und Blasen aus gefärbtem Wasser mit sich trägt; entweicht das Gas, sinken die Blasen wieder.",
+    "imageAlt": "Bunte Blasen, die in einer Flasche mit Öl und Wasser aufsteigen",
+    "image": null
+  },
+  {
+    "id": "static-balloon",
+    "emoji": "🎈",
+    "title": "Statischer Luftballon und Wasser",
+    "materials": [
+      "Luftballon",
+      "Leitungswasser",
+      "Haare oder ein Wolltuch"
+    ],
+    "steps": [
+      "1. Blase den Ballon auf und verknote ihn.",
+      "2. Reibe den Ballon etwa 20 Sekunden lang an deinen trockenen Haaren oder an einem Wolltuch.",
+      "3. Öffne den Wasserhahn, bis ein dünner Wasserstrahl fließt.",
+      "4. Bringe den Ballon nah an den Wasserstrahl, ohne ihn zu berühren, und beobachte, was passiert."
+    ],
+    "whyItWorks": "Das Reiben lädt den Ballon mit statischer Elektrizität auf, die die Wassermoleküle anzieht und den Wasserstrahl zum Ballon hinbiegt.",
+    "imageAlt": "Ein Luftballon, der einen dünnen Wasserstrahl aus dem Hahn biegt",
+    "image": null
+  },
+  {
+    "id": "egg-float",
+    "emoji": "🥚",
+    "title": "Ei schwimmt in Salzwasser",
+    "materials": [
+      "2 hohe Gläser",
+      "Wasser",
+      "Salz",
+      "2 Eier"
+    ],
+    "steps": [
+      "1. Fülle ein Glas mit normalem Leitungswasser.",
+      "2. Fülle ein anderes Glas mit Wasser und rühre mehrere Löffel Salz ein, bis es sich auflöst.",
+      "3. Lege vorsichtig ein Ei in jedes Glas.",
+      "4. Beobachte: Das Ei sinkt im normalen Wasser, schwimmt aber im Salzwasser."
+    ],
+    "whyItWorks": "Salzwasser ist dichter als normales Wasser, deshalb kann es das Ei nach oben drücken und es schwimmen lassen.",
+    "imageAlt": "Ein Ei schwimmt in einem Glas Salzwasser, ein anderes sinkt in einem Glas normalem Wasser",
+    "image": null
+  },
+  {
+    "id": "naked-egg",
+    "emoji": "🐣",
+    "title": "Nacktes Ei in Essig",
+    "materials": [
+      "Rohes Ei",
+      "Glas",
+      "Essig"
+    ],
+    "steps": [
+      "1. Lege vorsichtig ein rohes Ei in ein Glas.",
+      "2. Bedecke das Ei vollständig mit Essig.",
+      "3. Lass das Ei 2 bis 3 Tage ruhen, ohne es zu bewegen.",
+      "4. Nimm das Ei vorsichtig heraus und fühle, wie die Schale verschwunden ist und ein \"gummiartiges\" Ei zurückbleibt."
+    ],
+    "whyItWorks": "Essig ist eine Säure, die das Kalziumkarbonat der Eierschale langsam auflöst und nur die dünne Membran darunter übrig lässt.",
+    "image": "naked-egg.jpg",
+    "imageAlt": "Ein Ei ohne Schale nach dem Einlegen in Essig, mit sichtbarer Membran"
+  },
+  {
+    "id": "sink-or-float",
+    "emoji": "🪣",
+    "title": "Sinkt oder schwimmt es?",
+    "materials": [
+      "Schüssel mit Wasser",
+      "Verschiedene kleine Haushaltsgegenstände (Münze, Korken, Knopf, Blatt, Radiergummi, Plastikdeckel)"
+    ],
+    "steps": [
+      "1. Fülle eine Schüssel mit Wasser.",
+      "2. Rate vor jedem Test, ob der Gegenstand schwimmen oder sinken wird.",
+      "3. Lege jeden Gegenstand nacheinander ins Wasser und beobachte, was passiert.",
+      "4. Sortiere die Gegenstände in zwei Gruppen: \"schwimmt\" und \"sinkt\"."
+    ],
+    "whyItWorks": "Ein Gegenstand schwimmt, wenn er weniger dicht ist als Wasser, und sinkt, wenn er dichter ist.",
+    "imageAlt": "Mehrere kleine Gegenstände, manche schwimmend und manche gesunken in einer Schüssel Wasser",
+    "image": null
+  },
+  {
+    "id": "homemade-compass",
+    "emoji": "🧭",
+    "title": "Selbstgebauter Kompass",
+    "materials": [
+      "Nähnadel",
+      "Magnet",
+      "Korken oder Stück Styropor",
+      "Schüssel mit Wasser"
+    ],
+    "steps": [
+      "1. Reibe die Nadel etwa 20- bis 30-mal immer in dieselbe Richtung an einem Magneten.",
+      "2. Stecke die Nadel vorsichtig durch einen Korken oder ein Stück Styropor.",
+      "3. Lass den Korken in der Mitte einer Schüssel mit Wasser schwimmen.",
+      "4. Beobachte, wie sich die Nadel von selbst dreht, bis sie immer in dieselbe Richtung zeigt."
+    ],
+    "whyItWorks": "Das Reiben der Nadel am Magneten macht sie zu einem kleinen Magneten, der sich am Erdmagnetfeld ausrichtet und immer nach Norden und Süden zeigt.",
+    "imageAlt": "Eine Nadel steckt in einem Korken, der in einer Schüssel Wasser schwimmt und als Kompass dient",
+    "image": null
+  },
+  {
+    "id": "cabbage-indicator",
+    "emoji": "🥬",
+    "title": "Rotkohl-Indikator",
+    "materials": [
+      "Rotkohl",
+      "Heißes Wasser",
+      "Sieb",
+      "2 durchsichtige Becher",
+      "Essig",
+      "Natron"
+    ],
+    "steps": [
+      "1. Bitte einen Erwachsenen, den Rotkohl in kleine Stücke zu schneiden und mit heißem Wasser zu übergießen.",
+      "2. Warte 15 Minuten, bis das Wasser violett wird, und gieße es dann durch ein Sieb in ein Gefäß.",
+      "3. Gieße etwas von der violetten Flüssigkeit in zwei getrennte Becher.",
+      "4. Gib in einen Becher Essig und in den anderen Natron und beobachte, wie sich die Farben ändern."
+    ],
+    "whyItWorks": "Rotkohlsaft ändert seine Farbe je nachdem, ob die Flüssigkeit sauer (wie Essig, wird pink) oder basisch (wie Natron, wird grün oder blau) ist.",
+    "image": "cabbage-indicator.jpg",
+    "imageAlt": "Becher mit Rotkohlflüssigkeit, die sich mit Essig und Natron verfärbt"
+  },
+  {
+    "id": "rubber-band-car",
+    "emoji": "🚗",
+    "title": "Pappauto mit Gummiband",
+    "materials": [
+      "Kleine Pappschachtel",
+      "4 Flaschendeckel (Räder)",
+      "2 Trinkhalme",
+      "2 dünne Spießstäbchen",
+      "Gummiband",
+      "Klebeband"
+    ],
+    "steps": [
+      "1. Klebe zwei Trinkhalme unter die Pappschachtel, einen vorne und einen hinten.",
+      "2. Stecke ein dünnes Stäbchen durch die Mitte jedes Flaschendeckels und schiebe es in die Trinkhalme, um die Räder zu bilden.",
+      "3. Spanne ein Gummiband zwischen Vorder- und Rückseite der Schachtel, um eine der Achsen.",
+      "4. Drehe die Achse, um das Gummiband zu verdrillen, stelle das Auto auf den Boden und lass es los, damit es von selbst rollt."
+    ],
+    "whyItWorks": "Das verdrillte Gummiband speichert elastische Energie, die beim Aufdrehen freigesetzt wird und die Räder dreht, wodurch das Auto vorwärts geschoben wird.",
+    "imageAlt": "Ein kleines Pappauto aus Flaschendeckeln und einem Gummiband",
+    "image": null
+  }
+]

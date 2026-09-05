@@ -1,0 +1,304 @@
+[
+  {
+    "id": "volcano",
+    "emoji": "🌋",
+    "title": "Baking soda volcano",
+    "materials": [
+      "Baking soda",
+      "Vinegar",
+      "Small bottle or cup",
+      "Food coloring (optional)",
+      "Tray"
+    ],
+    "steps": [
+      "1. Place the bottle inside a tray, to catch any overflow.",
+      "2. Pour 2 spoons of baking soda into the bottle.",
+      "3. Add a few drops of food coloring, if you like.",
+      "4. Slowly pour vinegar into the bottle and watch the foam come out."
+    ],
+    "whyItWorks": "Baking soda (a base) reacts with vinegar (an acid) and releases carbon dioxide gas, which forms the foam.",
+    "image": "volcano.jpg",
+    "imageAlt": "Foam coming out of a container with baking soda and vinegar"
+  },
+  {
+    "id": "oil-water",
+    "emoji": "🧴",
+    "title": "Oil and water layers",
+    "materials": [
+      "Vegetable oil",
+      "Water",
+      "Food coloring",
+      "Clear cup"
+    ],
+    "steps": [
+      "1. Fill half of a clear cup with water.",
+      "2. Add food coloring to the water and stir.",
+      "3. Slowly pour vegetable oil on top of the water.",
+      "4. Watch the two layers form without mixing."
+    ],
+    "whyItWorks": "Oil is less dense than water and does not mix with it, so it floats on top in a separate layer.",
+    "image": "oil-water.jpg",
+    "imageAlt": "Layers of oil and colored water that do not mix in a cup"
+  },
+  {
+    "id": "dancing-raisins",
+    "emoji": "🍇",
+    "title": "Dancing raisins",
+    "materials": [
+      "Sparkling water",
+      "Raisins",
+      "Clear cup"
+    ],
+    "steps": [
+      "1. Fill a clear cup with sparkling water.",
+      "2. Drop 5 to 6 raisins into the cup.",
+      "3. Watch the raisins rise and sink on their own."
+    ],
+    "whyItWorks": "Gas bubbles stick to the raisins and make them float; when the bubbles pop at the surface, the raisins sink again.",
+    "imageAlt": null,
+    "image": null
+  },
+  {
+    "id": "walking-rainbow",
+    "emoji": "🌈",
+    "title": "Walking rainbow",
+    "materials": [
+      "6 clear cups",
+      "Paper towels",
+      "Water",
+      "Food coloring (3 colors)"
+    ],
+    "steps": [
+      "1. Set up 3 cups with colored water (a different color in each) and 3 empty cups, alternating in a row.",
+      "2. Fold paper towel strips and put one end in a full cup and the other end in the empty cup next to it.",
+      "3. Wait and watch the water \"walk\" along the paper towel to the empty cups.",
+      "4. Watch the colors mix and create new colors in the middle cups."
+    ],
+    "whyItWorks": "The paper absorbs the water through capillary action, pulling it upward along the fibers until it reaches the empty cup.",
+    "imageAlt": null,
+    "image": null
+  },
+  {
+    "id": "magic-milk",
+    "emoji": "🥛",
+    "title": "Color explosion in milk",
+    "materials": [
+      "Whole milk",
+      "Food coloring (several colors)",
+      "Dish soap",
+      "Shallow bowl",
+      "Cotton swab"
+    ],
+    "steps": [
+      "1. Pour milk into a shallow bowl, enough to cover the bottom.",
+      "2. Add several drops of different food coloring on the surface of the milk.",
+      "3. Dip the tip of a cotton swab in dish soap.",
+      "4. Touch the swab to the middle of the colored drops and watch the color explosion."
+    ],
+    "whyItWorks": "The soap breaks up the fat in the milk and spreads quickly across the surface, pushing the coloring and creating swirls of color.",
+    "imageAlt": "Colors spreading in a bowl of milk with dish soap",
+    "image": null
+  },
+  {
+    "id": "sugar-crystal",
+    "emoji": "🍬",
+    "title": "Sugar crystals on a string",
+    "materials": [
+      "Sugar",
+      "Water",
+      "Cotton string",
+      "Pencil",
+      "Cup"
+    ],
+    "steps": [
+      "1. Ask an adult to heat water and dissolve lots of sugar into it, until no more will dissolve.",
+      "2. Let the water cool a little and pour it into a cup.",
+      "3. Tie a cotton string to a pencil and rest the pencil across the cup, with the string in the liquid.",
+      "4. Wait a few days and watch crystals grow on the string."
+    ],
+    "whyItWorks": "As the water cools and evaporates, it can no longer hold as much dissolved sugar, and the extra sugar forms solid crystals on the string.",
+    "image": "sugar-crystal.jpg",
+    "imageAlt": "Sugar crystals grown on a string"
+  },
+  {
+    "id": "invisible-ink",
+    "emoji": "✉️",
+    "title": "Invisible lemon ink",
+    "materials": [
+      "Lemon juice",
+      "Cotton swab or thin brush",
+      "White paper",
+      "Lamp with a warm lightbulb"
+    ],
+    "steps": [
+      "1. Squeeze a little lemon juice into a small bowl.",
+      "2. Use a cotton swab to write or draw something on the paper with the lemon juice.",
+      "3. Let it dry completely, until it becomes invisible.",
+      "4. Ask an adult to hold the paper close to (without touching) a warm, lit lightbulb until the message turns brown."
+    ],
+    "whyItWorks": "Lemon juice weakens the paper; when warmed, those parts turn brown faster than the rest, revealing the drawing.",
+    "imageAlt": null,
+    "image": null
+  },
+  {
+    "id": "lava-lamp",
+    "emoji": "🫧",
+    "title": "Homemade lava lamp",
+    "materials": [
+      "Clear bottle",
+      "Water",
+      "Vegetable oil",
+      "Food coloring",
+      "Effervescent tablet"
+    ],
+    "steps": [
+      "1. Fill a quarter of the bottle with water and the rest with vegetable oil.",
+      "2. Add a few drops of food coloring.",
+      "3. Break an effervescent tablet into pieces and drop one piece into the bottle.",
+      "4. Watch the colorful bubbles rise and fall."
+    ],
+    "whyItWorks": "The tablet reacts with the water and releases gas, which rises through the oil carrying bubbles of colored water; when the gas escapes, the bubbles sink again.",
+    "imageAlt": "Colorful bubbles rising in a bottle of oil and water",
+    "image": null
+  },
+  {
+    "id": "static-balloon",
+    "emoji": "🎈",
+    "title": "Static balloon and water",
+    "materials": [
+      "Balloon",
+      "Tap water",
+      "Hair or a wool cloth"
+    ],
+    "steps": [
+      "1. Blow up the balloon and tie it closed.",
+      "2. Rub the balloon on your dry hair or a wool cloth for about 20 seconds.",
+      "3. Turn on the tap until a thin stream of water flows.",
+      "4. Bring the balloon close to the water stream, without touching it, and watch what happens."
+    ],
+    "whyItWorks": "Rubbing the balloon charges it with static electricity, which attracts the water molecules and makes the water stream bend toward the balloon.",
+    "imageAlt": "A balloon bending a thin stream of water from a tap",
+    "image": null
+  },
+  {
+    "id": "egg-float",
+    "emoji": "🥚",
+    "title": "Egg floating in salt water",
+    "materials": [
+      "2 tall cups",
+      "Water",
+      "Salt",
+      "2 eggs"
+    ],
+    "steps": [
+      "1. Fill one cup with plain tap water.",
+      "2. Fill another cup with water and stir in several spoons of salt until dissolved.",
+      "3. Carefully place one egg in each cup.",
+      "4. Watch: the egg sinks in the plain water, but floats in the salt water."
+    ],
+    "whyItWorks": "Salt water is denser than plain water, so it can push the egg upward and make it float.",
+    "imageAlt": "One egg floating in a cup of salt water and another sunk in a cup of plain water",
+    "image": null
+  },
+  {
+    "id": "naked-egg",
+    "emoji": "🐣",
+    "title": "Naked egg in vinegar",
+    "materials": [
+      "Raw egg",
+      "Cup",
+      "Vinegar"
+    ],
+    "steps": [
+      "1. Carefully place a raw egg inside a cup.",
+      "2. Cover the egg completely with vinegar.",
+      "3. Let the egg sit for 2 to 3 days, without stirring.",
+      "4. Carefully take out the egg and feel how the shell is gone, leaving a \"rubbery\" egg."
+    ],
+    "whyItWorks": "Vinegar is an acid that slowly dissolves the calcium carbonate in the eggshell, leaving only the thin membrane underneath.",
+    "image": "naked-egg.jpg",
+    "imageAlt": "An egg with its shell removed after sitting in vinegar, showing the membrane"
+  },
+  {
+    "id": "sink-or-float",
+    "emoji": "🪣",
+    "title": "Sink or float?",
+    "materials": [
+      "Basin of water",
+      "Various small household objects (coin, cork, button, leaf, eraser, plastic lid)"
+    ],
+    "steps": [
+      "1. Fill a basin with water.",
+      "2. Before testing each object, guess whether it will float or sink.",
+      "3. Place each object in the water, one at a time, and watch what happens.",
+      "4. Sort the objects into two groups: \"floats\" and \"sinks\"."
+    ],
+    "whyItWorks": "An object floats when it is less dense than water and sinks when it is denser than it.",
+    "imageAlt": "Several small objects, some floating and some sunk in a basin of water",
+    "image": null
+  },
+  {
+    "id": "homemade-compass",
+    "emoji": "🧭",
+    "title": "Homemade compass",
+    "materials": [
+      "Sewing needle",
+      "Magnet",
+      "Cork or piece of foam",
+      "Bowl of water"
+    ],
+    "steps": [
+      "1. Rub the needle on a magnet always in the same direction, 20 to 30 times.",
+      "2. Carefully push the needle through a cork or piece of foam.",
+      "3. Float the cork in the middle of a bowl of water.",
+      "4. Watch the needle turn on its own until it always points in the same direction."
+    ],
+    "whyItWorks": "Rubbing the needle on the magnet turns it into a small magnet, which aligns with Earth's magnetic field, always pointing north and south.",
+    "imageAlt": null,
+    "image": null
+  },
+  {
+    "id": "cabbage-indicator",
+    "emoji": "🥬",
+    "title": "Red cabbage indicator",
+    "materials": [
+      "Red cabbage",
+      "Hot water",
+      "Strainer",
+      "2 clear cups",
+      "Vinegar",
+      "Baking soda"
+    ],
+    "steps": [
+      "1. Ask an adult to chop the red cabbage into small pieces and cover them with hot water.",
+      "2. Wait 15 minutes until the water turns purple, then strain it into a container.",
+      "3. Pour a little of the purple liquid into two separate cups.",
+      "4. Add vinegar to one cup and baking soda to the other, and watch the colors change."
+    ],
+    "whyItWorks": "Red cabbage juice changes color depending on whether the liquid is acidic (like vinegar, it turns pink) or basic (like baking soda, it turns green or blue).",
+    "image": "cabbage-indicator.jpg",
+    "imageAlt": "Cups with red cabbage liquid changing color with vinegar and baking soda"
+  },
+  {
+    "id": "rubber-band-car",
+    "emoji": "🚗",
+    "title": "Rubber band cardboard car",
+    "materials": [
+      "Small cardboard box",
+      "4 bottle caps (wheels)",
+      "2 straws",
+      "2 thin skewer sticks",
+      "Rubber band",
+      "Tape"
+    ],
+    "steps": [
+      "1. Tape two straws under the cardboard box, one at the front and one at the back.",
+      "2. Push a thin stick through the middle of each bottle cap and slide it into the straws to make the wheels.",
+      "3. Stretch a rubber band between the front and back of the box, around one of the axles.",
+      "4. Wind up the axle to twist the rubber band, put the car on the ground and let go so it rolls forward on its own."
+    ],
+    "whyItWorks": "The twisted rubber band stores elastic energy, which is released as it untwists and spins the wheels, pushing the car forward.",
+    "imageAlt": null,
+    "image": null
+  }
+]

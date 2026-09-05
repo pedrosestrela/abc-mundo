@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router-dom";
-import { getScience, getLabSimulators, getLabEngineering } from "../content/index.js";
+import { getScience, getLabSimulators, getLabEngineering, getHomeExperiments } from "../content/index.js";
 import { getLangPair, getProfile, getExploredScience, exploreScienceCard, recordSkillEvent, pingProgress, getDifficultyTier } from "../storage.js";
 import SpeakButton from "../components/SpeakButton.jsx";
 import HelpButton from "../components/HelpButton.jsx";
@@ -556,6 +556,73 @@ function EngineeringChallenge({ id, data, pair, profile, bumpVersion }) {
   );
 }
 
+function HomeExperimentCard({ experiment, pair, t, profile }) {
+  const [open, setOpen] = useState(false);
+  const [imgFailed, setImgFailed] = useState(false);
+  const imgSrc = experiment.image ? `/images/experiments/${experiment.image}` : null;
+
+  function toggleOpen() {
+    const next = !open;
+    setOpen(next);
+    if (next) {
+      recordSkillEvent(profile?.name, "science-home-experiment", true);
+      pingProgress({ profileName: profile?.name, module: "science", event: `home_experiment_open:${experiment.id}` });
+    }
+  }
+
+  const fullText = `${experiment.title}. ${experiment.steps.join(" ")} ${experiment.whyItWorks}`;
+
+  return (
+    <div className="game-card science-card">
+      {imgSrc && !imgFailed ? (
+        <img
+          src={imgSrc}
+          alt={experiment.imageAlt || experiment.title}
+          loading="lazy"
+          style={{ width: "100%", maxWidth: 320, borderRadius: 12, display: "block", margin: "0 auto 8px" }}
+          onError={() => setImgFailed(true)}
+        />
+      ) : (
+        <div className="game-emoji">{experiment.emoji}</div>
+      )}
+      <p className="mission-text">
+        {experiment.title}
+        <SpeakButton text={fullText} langCode={pair.mother} />
+      </p>
+
+      {!open && (
+        <button type="button" className="big-btn" onClick={toggleOpen}>
+          🔎 {t("modules.scienceSeeSteps")}
+        </button>
+      )}
+
+      {open && (
+        <div className="science-explanation">
+          <p className="mission-badge science-topic-badge">🧾 {t("modules.scienceMaterialsLabel")}</p>
+          <ul>
+            {experiment.materials.map((m, i) => (
+              <li key={i}>{m}</li>
+            ))}
+          </ul>
+          <p className="mission-badge science-topic-badge">👣 {t("modules.scienceStepsLabel")}</p>
+          <ol>
+            {experiment.steps.map((s, i) => (
+              <li key={i}>{s}</li>
+            ))}
+          </ol>
+          <p className="mission-badge science-topic-badge">💡 {t("modules.scienceWhyItWorksLabel")}</p>
+          <p className="game-result">{experiment.whyItWorks}</p>
+          <div>
+            <button type="button" className="big-btn" onClick={toggleOpen}>
+              ➡️
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
 function shuffle(arr) {
   const copy = [...arr];
   for (let i = copy.length - 1; i > 0; i--) {
@@ -762,6 +829,7 @@ export default function Science() {
   const cards = getScience(pair.mother);
   const simulators = getLabSimulators(pair.mother);
   const engineering = getLabEngineering(pair.mother);
+  const homeExperiments = getHomeExperiments(pair.mother);
   const tier = getDifficultyTier(profile?.age);
   const [tab, setTab] = useState("facts");
   const [openId, setOpenId] = useState(null);
@@ -825,6 +893,12 @@ export default function Science() {
           <span className="phonics-tab-inner">
             🏗️ {t("modules.scienceLabEngTab")}
             <TabSpeakIcon text={`${t("modules.scienceLabEngTab")}. ${t("modules.scienceLabEngIntro")}`} langCode={pair.mother} />
+          </span>
+        </button>
+        <button type="button" className={"phonics-tab" + (tab === "home" ? " selected" : "")} onClick={() => setTab("home")}>
+          <span className="phonics-tab-inner">
+            🧪 {t("modules.scienceExperimentsTab")}
+            <TabSpeakIcon text={`${t("modules.scienceExperimentsTab")}. ${t("modules.scienceExperimentsIntro")}`} langCode={pair.mother} />
           </span>
         </button>
         <button type="button" className={"phonics-tab" + (tab === "quick" ? " selected" : "")} onClick={() => setTab("quick")}>
@@ -961,6 +1035,15 @@ export default function Science() {
                 bumpVersion={() => setVersion((v) => v + 1)}
               />
             </React.Fragment>
+          ))}
+        </>
+      )}
+
+      {tab === "home" && (
+        <>
+          <p className="page-intro">{t("modules.scienceExperimentsIntro")}</p>
+          {homeExperiments.map((experiment) => (
+            <HomeExperimentCard key={experiment.id} experiment={experiment} pair={pair} t={t} profile={profile} />
           ))}
         </>
       )}

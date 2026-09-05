@@ -1,0 +1,226 @@
+[
+  {
+    "id": "volcano",
+    "emoji": "🌋",
+    "title": "Le volcan de bicarbonate",
+    "materials": ["Bicarbonate de soude", "Vinaigre", "Petite bouteille ou verre", "Colorant alimentaire (facultatif)", "Plateau"],
+    "steps": [
+      "1. Place la bouteille dans un plateau, pour récupérer ce qui déborde.",
+      "2. Verse 2 cuillères de bicarbonate dans la bouteille.",
+      "3. Ajoute quelques gouttes de colorant si tu veux.",
+      "4. Verse doucement du vinaigre dans la bouteille et observe la mousse sortir."
+    ],
+    "whyItWorks": "Le bicarbonate (une base) réagit avec le vinaigre (un acide) et libère du dioxyde de carbone, ce qui forme la mousse.",
+    "image": "volcano.jpg",
+    "imageAlt": "De la mousse sortant d'un récipient de bicarbonate et vinaigre"
+  },
+  {
+    "id": "oil-water",
+    "emoji": "🧴",
+    "title": "Les couches d'huile et d'eau",
+    "materials": ["Huile végétale", "Eau", "Colorant alimentaire", "Verre transparent"],
+    "steps": [
+      "1. Remplis un verre transparent à moitié d'eau.",
+      "2. Ajoute du colorant à l'eau et mélange.",
+      "3. Verse doucement de l'huile végétale sur l'eau.",
+      "4. Observe les deux couches se former sans se mélanger."
+    ],
+    "whyItWorks": "L'huile est moins dense que l'eau et ne se mélange pas avec elle, donc elle flotte dessus en couche séparée.",
+    "image": "oil-water.jpg",
+    "imageAlt": "Couches d'huile et d'eau colorée qui ne se mélangent pas dans un verre"
+  },
+  {
+    "id": "dancing-raisins",
+    "emoji": "🍇",
+    "title": "Les raisins secs dansants",
+    "materials": ["Eau gazeuse", "Raisins secs", "Verre transparent"],
+    "steps": [
+      "1. Remplis un verre transparent d'eau gazeuse.",
+      "2. Laisse tomber 5 à 6 raisins secs dans le verre.",
+      "3. Observe les raisins monter et descendre tout seuls."
+    ],
+    "whyItWorks": "Les bulles de gaz s'accrochent aux raisins secs et les font flotter ; quand les bulles éclatent en surface, les raisins recoulent.",
+    "image": null,
+    "imageAlt": null
+  },
+  {
+    "id": "walking-rainbow",
+    "emoji": "🌈",
+    "title": "L'arc-en-ciel qui marche",
+    "materials": ["6 verres transparents", "Essuie-tout", "Eau", "Colorant alimentaire (3 couleurs)"],
+    "steps": [
+      "1. Place 3 verres d'eau colorée (une couleur différente dans chacun) et 3 verres vides, en alternant dans une rangée.",
+      "2. Plie des bandes d'essuie-tout et place une extrémité dans un verre plein et l'autre dans le verre vide voisin.",
+      "3. Attends et observe l'eau 'marcher' le long du papier jusqu'aux verres vides.",
+      "4. Regarde les couleurs se mélanger et créer de nouvelles couleurs dans les verres du milieu."
+    ],
+    "whyItWorks": "Le papier absorbe l'eau par capillarité, la faisant remonter le long des fibres jusqu'au verre vide.",
+    "image": null,
+    "imageAlt": null
+  },
+  {
+    "id": "magic-milk",
+    "emoji": "🥛",
+    "title": "L'explosion de couleurs dans le lait",
+    "materials": ["Lait entier", "Colorant alimentaire (plusieurs couleurs)", "Liquide vaisselle", "Assiette creuse", "Coton-tige"],
+    "steps": [
+      "1. Verse du lait dans une assiette creuse, assez pour couvrir le fond.",
+      "2. Dépose plusieurs gouttes de colorants de couleurs différentes sur la surface du lait.",
+      "3. Trempe la pointe d'un coton-tige dans du liquide vaisselle.",
+      "4. Touche le milieu des gouttes de couleur avec le coton-tige et observe l'explosion de couleurs."
+    ],
+    "whyItWorks": "Le savon décompose la graisse du lait et se répand rapidement à la surface, poussant le colorant et créant des tourbillons de couleur.",
+    "image": null,
+    "imageAlt": "Des couleurs qui se répandent dans une assiette de lait avec du liquide vaisselle"
+  },
+  {
+    "id": "sugar-crystal",
+    "emoji": "🍬",
+    "title": "Des cristaux de sucre sur un fil",
+    "materials": ["Sucre", "Eau", "Fil de coton", "Crayon", "Verre"],
+    "steps": [
+      "1. Demande à un adulte de chauffer de l'eau et d'y dissoudre beaucoup de sucre, jusqu'à ce qu'il n'en dissolve plus.",
+      "2. Laisse l'eau refroidir un peu et verse-la dans un verre.",
+      "3. Attache un fil de coton à un crayon et pose le crayon sur le verre, avec le fil dans le liquide.",
+      "4. Attends quelques jours et observe les cristaux grandir sur le fil."
+    ],
+    "whyItWorks": "En refroidissant et en s'évaporant, l'eau ne peut plus retenir autant de sucre dissous, et le sucre en trop forme des cristaux solides sur le fil.",
+    "image": "sugar-crystal.jpg",
+    "imageAlt": "Cristaux de sucre formés sur un fil"
+  },
+  {
+    "id": "invisible-ink",
+    "emoji": "✉️",
+    "title": "L'encre invisible au citron",
+    "materials": ["Jus de citron", "Coton-tige ou pinceau fin", "Papier blanc", "Lampe allumée"],
+    "steps": [
+      "1. Presse un peu de jus de citron dans un petit bol.",
+      "2. Utilise un coton-tige pour écrire ou dessiner sur le papier avec le jus de citron.",
+      "3. Laisse sécher complètement, jusqu'à ce que ce soit invisible.",
+      "4. Demande à un adulte de tenir le papier près (sans toucher) d'une lampe allumée et chaude, jusqu'à ce que le message apparaisse en brun."
+    ],
+    "whyItWorks": "Le jus de citron fragilise le papier ; en chauffant, ces parties brunissent plus vite que le reste, révélant le dessin.",
+    "image": null,
+    "imageAlt": null
+  },
+  {
+    "id": "lava-lamp",
+    "emoji": "🫧",
+    "title": "La lampe à lave maison",
+    "materials": ["Bouteille transparente", "Eau", "Huile végétale", "Colorant alimentaire", "Comprimé effervescent"],
+    "steps": [
+      "1. Remplis un quart de la bouteille d'eau et le reste d'huile végétale.",
+      "2. Ajoute quelques gouttes de colorant alimentaire.",
+      "3. Casse un comprimé effervescent en morceaux et laisse tomber un morceau dans la bouteille.",
+      "4. Observe les bulles colorées monter et descendre."
+    ],
+    "whyItWorks": "Le comprimé réagit avec l'eau et libère du gaz, qui monte à travers l'huile en transportant des bulles d'eau colorée ; quand le gaz s'échappe, les bulles redescendent.",
+    "image": null,
+    "imageAlt": "Des bulles colorées qui montent dans une bouteille d'huile et d'eau"
+  },
+  {
+    "id": "static-balloon",
+    "emoji": "🎈",
+    "title": "Le ballon électrique et l'eau",
+    "materials": ["Ballon", "Eau du robinet", "Cheveux ou tissu en laine"],
+    "steps": [
+      "1. Gonfle le ballon et ferme-le.",
+      "2. Frotte le ballon sur tes cheveux secs ou un tissu en laine pendant environ 20 secondes.",
+      "3. Ouvre le robinet jusqu'à obtenir un filet d'eau fin.",
+      "4. Approche le ballon du filet d'eau, sans le toucher, et observe ce qui se passe."
+    ],
+    "whyItWorks": "Frotter le ballon le charge en électricité statique, qui attire les molécules d'eau et fait courber le filet vers le ballon.",
+    "image": null,
+    "imageAlt": "Un ballon courbant un filet d'eau du robinet"
+  },
+  {
+    "id": "egg-float",
+    "emoji": "🥚",
+    "title": "L'œuf qui flotte dans l'eau salée",
+    "materials": ["2 grands verres", "Eau", "Sel", "2 œufs"],
+    "steps": [
+      "1. Remplis un verre d'eau normale du robinet.",
+      "2. Remplis un autre verre d'eau et mélange plusieurs cuillères de sel jusqu'à dissolution.",
+      "3. Place délicatement un œuf dans chaque verre.",
+      "4. Observe : l'œuf coule dans l'eau normale, mais flotte dans l'eau salée."
+    ],
+    "whyItWorks": "L'eau salée est plus dense que l'eau normale, donc elle peut pousser l'œuf vers le haut et le faire flotter.",
+    "image": null,
+    "imageAlt": "Un œuf flottant dans un verre d'eau salée et un autre coulé dans un verre d'eau normale"
+  },
+  {
+    "id": "naked-egg",
+    "emoji": "🐣",
+    "title": "L'œuf nu dans le vinaigre",
+    "materials": ["Œuf cru", "Verre", "Vinaigre"],
+    "steps": [
+      "1. Place délicatement un œuf cru dans un verre.",
+      "2. Couvre complètement l'œuf de vinaigre.",
+      "3. Laisse reposer l'œuf 2 à 3 jours, sans y toucher.",
+      "4. Retire l'œuf avec précaution et sens comment la coquille a disparu, laissant un œuf 'en caoutchouc'."
+    ],
+    "whyItWorks": "Le vinaigre est un acide qui dissout lentement le carbonate de calcium de la coquille, ne laissant que la fine membrane en dessous.",
+    "image": "naked-egg.jpg",
+    "imageAlt": "Œuf sans coquille après un bain de vinaigre, avec la membrane visible"
+  },
+  {
+    "id": "sink-or-float",
+    "emoji": "🪣",
+    "title": "Ça coule ou ça flotte ?",
+    "materials": ["Bassine d'eau", "Plusieurs petits objets de la maison (pièce, bouchon, bouton, feuille, gomme, couvercle en plastique)"],
+    "steps": [
+      "1. Remplis une bassine d'eau.",
+      "2. Avant de tester chaque objet, essaie de deviner s'il va flotter ou couler.",
+      "3. Place chaque objet dans l'eau, un par un, et observe ce qui se passe.",
+      "4. Range les objets en deux groupes : 'flotte' et 'coule'."
+    ],
+    "whyItWorks": "Un objet flotte quand il est moins dense que l'eau et coule quand il est plus dense qu'elle.",
+    "image": null,
+    "imageAlt": "Plusieurs petits objets, certains flottant et d'autres coulés dans une bassine d'eau"
+  },
+  {
+    "id": "homemade-compass",
+    "emoji": "🧭",
+    "title": "La boussole maison",
+    "materials": ["Aiguille à coudre", "Aimant", "Bouchon de liège ou morceau de mousse", "Bol d'eau"],
+    "steps": [
+      "1. Frotte l'aiguille sur un aimant toujours dans la même direction, environ 20 à 30 fois.",
+      "2. Pique délicatement l'aiguille à travers un bouchon ou un morceau de mousse.",
+      "3. Fais flotter le bouchon au milieu d'un bol d'eau.",
+      "4. Observe l'aiguille tourner seule jusqu'à toujours pointer dans la même direction."
+    ],
+    "whyItWorks": "Frotter l'aiguille sur l'aimant en fait un petit aimant, qui s'aligne avec le champ magnétique de la Terre, pointant toujours vers le nord et le sud.",
+    "image": null,
+    "imageAlt": null
+  },
+  {
+    "id": "cabbage-indicator",
+    "emoji": "🥬",
+    "title": "L'indicateur au chou rouge",
+    "materials": ["Chou rouge", "Eau chaude", "Passoire", "2 verres transparents", "Vinaigre", "Bicarbonate de soude"],
+    "steps": [
+      "1. Demande à un adulte de couper le chou rouge en petits morceaux et de les couvrir d'eau chaude.",
+      "2. Attends 15 minutes que l'eau devienne violette, puis filtre-la dans un récipient.",
+      "3. Verse un peu du liquide violet dans deux verres séparés.",
+      "4. Ajoute du vinaigre dans un verre et du bicarbonate dans l'autre, et observe les couleurs changer."
+    ],
+    "whyItWorks": "Le jus de chou rouge change de couleur selon que le liquide est acide (comme le vinaigre, devient rose) ou basique (comme le bicarbonate, devient vert ou bleu).",
+    "image": "cabbage-indicator.jpg",
+    "imageAlt": "Verres avec du liquide de chou rouge changeant de couleur avec du vinaigre et du bicarbonate"
+  },
+  {
+    "id": "rubber-band-car",
+    "emoji": "🚗",
+    "title": "La voiture en carton à élastique",
+    "materials": ["Petite boîte en carton", "4 bouchons de bouteille (roues)", "2 pailles", "2 brochettes fines", "Élastique", "Ruban adhésif"],
+    "steps": [
+      "1. Fixe deux pailles sous la boîte en carton, une à l'avant et une à l'arrière, avec du ruban adhésif.",
+      "2. Plante une brochette fine au centre de chaque bouchon et insère-la dans les pailles pour faire les roues.",
+      "3. Attache un élastique tendu entre l'avant et l'arrière de la boîte, autour d'un des essieux.",
+      "4. Enroule l'essieu pour tordre l'élastique, pose la voiture au sol et lâche-la pour qu'elle avance seule."
+    ],
+    "whyItWorks": "L'élastique tordu stocke de l'énergie élastique, qui se libère en se déroulant et fait tourner les roues, poussant la voiture vers l'avant.",
+    "image": null,
+    "imageAlt": null
+  }
+]
